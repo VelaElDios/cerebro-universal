@@ -12,18 +12,24 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from google import genai
-from google.genai import types
+from google.genai import errors, types
 
 RAIZ = Path(__file__).resolve().parent.parent
 CARPETA_SALIDA = RAIZ / "notas-gemini"
 ARCHIVO_TEMAS = RAIZ / "config" / "temas.md"
-MODELO = os.environ.get("GEMINI_MODEL", "gemini-flash-latest")
 ZONA = ZoneInfo("Europe/Madrid")
+
+# Plan A, B y C: si un modelo está saturado o no existe, pasa al siguiente
+MODELOS = [m.strip() for m in os.environ.get(
+    "GEMINI_MODELS", "gemini-flash-latest,gemini-3.5-flash-lite,gemini-2.5-flash"
+).split(",") if m.strip()]
+ESPERAS = [0, 30, 90]  # segundos de espera antes de cada intento con el mismo modelo
 
 MAX_NOTAS_CONTEXTO = 15     # notas recientes que Gemini lee enteras
 MAX_CHARS_POR_NOTA = 1500   # recorte por nota para no gastar tokens de más
@@ -108,7 +114,7 @@ def parsear_respuesta(texto: str) -> dict:
     return datos
 
 
-def guardar_nota(datos: dict) -> Path:
+def guardar_nota(datos: dict, modelo: str) -> Path:
     ahora = datetime.now(ZONA)
     carpeta = CARPETA_SALIDA / ahora.strftime("%Y-%m-%d")
     carpeta.mkdir(parents=True, exist_ok=True)
@@ -123,13 +129,48 @@ def guardar_nota(datos: dict) -> Path:
         "---",
         f"titulo: {json.dumps(datos['titulo'], ensure_ascii=False)}",
         "createdBy: gemini",
-        f"model: {MODELO}",
+        f"model: {modelo}",
         f"createdAt: {ahora.strftime('%Y-%m-%d %H:%M')}",
         f"tags: {json.dumps(tags, ensure_ascii=False)}",
         "---",
     ])
     ruta.write_text(f"{frontmatter}\n\n{datos['contenido'].strip()}\n", encoding="utf-8")
     return ruta
+
+
+def pedir_a_gemini(cliente, prompt: str) -> tuple[dict, str]:
+    """Prueba cada modelo con varios intentos. Devuelve (datos, modelo que respondió)."""
+    config = types.GenerateContentConfig(
+        response_mime_type="application/json",
+        temperature=0.9,
+        automatic_function_calling=types.AutomaticFunctionCallingConfig(disable=True),
+    )
+
+    for modelo in MODELOS:
+        for intento, espera in enumerate(ESPERAS, start=1):
+            if espera:
+                print(f"  Esperando {espera}s antes de reintentar...")
+                time.sleep(espera)
+            print(f"Modelo {modelo}, intento {intento}/{len(ESPERAS)}")
+            try:
+                respuesta = cliente.models.generate_content(model=modelo, contents=prompt, config=config)
+                return parsear_respuesta(respuesta.text), modelo
+
+            except errors.ServerError as e:
+                # 500/503: Google saturado -> esperar y reintentar el mismo modelo
+                print(f"  Servidor ocupado ({e.code}): {e.message}")
+
+            except errors.ClientError as e:
+                if e.code in (404, 429):
+                    # Modelo inexistente o cupo agotado -> pasar directamente al siguiente
+                    print(f"  {e.code} con {modelo}: {e.message}. Paso al siguiente modelo.")
+                    break
+                raise  # 400/401/403: key mal puesta o petición rota, no tiene sentido reintentar
+
+            except (json.JSONDecodeError, ValueError) as e:
+                print(f"  Respuesta ilegible: {e}")
+
+    sys.exit("Ningún modelo ha respondido. Se volverá a intentar en la próxima ejecución.")
 
 
 def main():
@@ -141,18 +182,9 @@ def main():
     print(f"Notas en el cerebro: {len(notas)}")
 
     cliente = genai.Client(api_key=clave)
-    respuesta = cliente.models.generate_content(
-        model=MODELO,
-        contents=construir_prompt(notas),
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            temperature=0.9,
-        ),
-    )
-
-    datos = parsear_respuesta(respuesta.text)
-    ruta = guardar_nota(datos)
-    print(f"Nota creada: {ruta.relative_to(RAIZ)}")
+    datos, modelo = pedir_a_gemini(cliente, construir_prompt(notas))
+    ruta = guardar_nota(datos, modelo)
+    print(f"Nota creada con {modelo}: {ruta.relative_to(RAIZ)}")
 
 
 if __name__ == "__main__":
