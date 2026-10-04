@@ -135,7 +135,8 @@ class CompatibleOpenAI(Proveedor):
             })
         except urllib.error.HTTPError as e:
             detalle = e.read().decode("utf-8", errors="replace")[:300]
-            if e.code in (400, 402, 404, 413, 429):
+            # 403 aquí suele ser "este modelo tiene restricciones", no "tu key está mal" (eso es 401)
+            if e.code in (400, 402, 403, 404, 413, 429):
                 raise SaltarModelo(f"{e.code} {detalle}")
             if e.code >= 500:
                 raise Saturado(f"{e.code} {detalle}")
@@ -176,4 +177,6 @@ def pedir_rol(rol: str, config: dict, proveedores: dict, sistema: str, mensaje: 
             return texto, nombre, modelo
         except SaltarModelo as e:
             print(f"[{nombre}] {e}")
+        except Exception as e:  # cualquier otro fallo de este proveedor: probar el siguiente
+            print(f"[{nombre}] Error inesperado, paso al siguiente proveedor: {e}")
     raise RuntimeError(f"Ninguna IA ha podido hacer de {rol}. Se reintentará en la próxima ejecución.")

@@ -180,8 +180,16 @@ Archivos tocados: {', '.join(cambios) or 'ninguno'}
 # ARCHIVOS DEL BORRADOR
 {nucleo.volcar(nucleo.leer_carpeta(borrador))}"""
 
-    texto, ia, modelo = prov.pedir_rol("revisor", config, proveedores,
-                                       SISTEMA_REVISOR.format(maximo=maximo), mensaje)
+    try:
+        texto, ia, modelo = prov.pedir_rol("revisor", config, proveedores,
+                                           SISTEMA_REVISOR.format(maximo=maximo), mensaje)
+    except RuntimeError as e:
+        # El trabajo del constructor no se pierde: queda en el borrador, sin revisar
+        nucleo.anotar(bitacora, "⚠️ Revisor no disponible",
+                      f"{e}\n\nEl paso del constructor queda en `borrador/` sin revisar. "
+                      f"Prueba: {'✅ compila' if ok else '❌ falla'}. Se revisará en el próximo paso.")
+        print(e)
+        return
     revision = nucleo.parsear(texto)
     correcciones = nucleo.aplicar(borrador, revision["archivos"], revision["borrar"], maximo)
     if correcciones:
