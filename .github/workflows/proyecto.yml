@@ -26,12 +26,27 @@ jobs:
       - name: Descargar el repo
         uses: actions/checkout@v5
 
+      # Antes de instalar LaTeX: si el proyecto está pausado o terminado, no se hace nada
+      - name: Comprobar el estado del proyecto
+        id: estado
+        run: |
+          estado=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1] + "/proyecto.json", encoding="utf-8-sig")).get("estado", "en-construccion"))' "$PROYECTO")
+          echo "Estado de $PROYECTO: $estado"
+          if [ "$estado" = "en-construccion" ]; then
+            echo "activo=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "activo=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::$PROYECTO está '$estado': no se hace nada."
+          fi
+
       - name: Preparar Python
+        if: steps.estado.outputs.activo == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Instalar LaTeX
+        if: steps.estado.outputs.activo == 'true'
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq --no-install-recommends \
@@ -40,9 +55,11 @@ jobs:
             texlive-fonts-recommended
 
       - name: Instalar librerías
+        if: steps.estado.outputs.activo == 'true'
         run: pip install google-genai
 
       - name: Avanzar el proyecto
+        if: steps.estado.outputs.activo == 'true'
         run: python scripts/proyecto.py "$PROYECTO"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -50,6 +67,7 @@ jobs:
           PYTHONUNBUFFERED: "1"
 
       - name: Subir el avance
+        if: steps.estado.outputs.activo == 'true'
         run: |
           git config user.name "cerebro-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
