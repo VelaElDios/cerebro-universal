@@ -2,7 +2,7 @@ name: Cerebro - Proyectos
 
 on:
   schedule:
-    - cron: "47 */2 * * *"   # cada 2 horas, en el minuto 47
+    - cron: "47 * * * *"   # cada hora, en el minuto 47
   workflow_dispatch:
     inputs:
       proyecto:
