@@ -5,3 +5,21 @@ __pycache__/
 node_modules/
 .obsidian/
 venv/
+
+# LaTeX: archivos temporales de compilacion
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+*.toc
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+*.synctex.gz
+*.lof
+*.lot
+
+# El PDF del borrador no se sube (el de final/ si)
+proyectos/*/borrador/*.pdf

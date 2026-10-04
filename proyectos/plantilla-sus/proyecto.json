@@ -1,0 +1,7 @@
+{
+  "nombre": "plantilla-sus",
+  "estado": "en-construccion",
+  "archivo_principal": "anexo-sus.tex",
+  "comando_prueba": "latexmk -lualatex -interaction=nonstopmode -halt-on-error -file-line-error anexo-sus.tex",
+  "max_archivos_por_paso": 3
+}
