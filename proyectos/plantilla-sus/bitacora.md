@@ -94,3 +94,33 @@ La prueba automática falla porque no existe `anexo-sus.tex`. El motor Lua está
 - Crear `graficas/barras.tex`: barras por participante con línea en 68; usar `sus.imprimir_coordenadas_barras` y `sus.imprimir_etiquetas_barras`.
 - Definir colores en un único sitio (p.ej. `sus-colores.tex` o al inicio de cada gráfica) para cambiarlos fácilmente.
 - Todas las gráficas deben ser `\input{}`-ables desde el anexo y desde la defensa (Fase 2).
+
+## 2026-10-04 20:50 · Constructor (gemini · gemini-flash-latest)
+
+He creado la definición centralizada de la paleta de colores para las gráficas (`graficas/colores.tex`) y las dos primeras gráficas TikZ modulares (`graficas/donut.tex` y `graficas/rango.tex`). Ambas gráficas leen dinámicamente los valores calculados por `sus-calculos.lua` y están preparadas para ser incluidas con `\input{}` tanto en el documento del anexo como en Beamer.
+
+**Archivos:** `graficas/colores.tex`, `graficas/donut.tex`, `graficas/rango.tex`
+
+**Siguiente:** Crear las gráficas restantes (`graficas/velocimetro.tex` y `graficas/barras.tex`) y crear el archivo `contenido-sus.tex` con los 10 apartados especificados.
+
+## 2026-10-04 20:50 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- graficas/colores.tex: define paleta centralizada (susRojo, susAmarillo, susVerde, susPrincipal, susReferencia, etc.) correcta y usable desde otras gráficas.
+- graficas/donut.tex: usa \directlua{sus.get_stat_raw("media")} para el ángulo, \directlua{sus.get_stat("media",1)}, sus.get_stat("nota_media"), sus.get_stat("adjetivo_media"), sus.get_stat("aceptabilidad_media"); las funciones existen en sus-calculos.lua y devuelven valores formateados/escapados.
+- graficas/rango.tex: usa sus.get_stat_raw para minimo, maximo, media; pinta zonas de aceptabilidad (rojo 0-50, amarillo 50-70, verde 70-100), línea de referencia en 68, rango mín-máx y marcador de media; sintaxis TikZ correcta.
+- sus-calculos.lua: ya verificado en revisión anterior (cálculos SUS, Sauro-Lewis, Bangor 2009/2008, exportación JSON, escape LaTeX, ejemplo con tex.print).
+- Prueba automática: falla porque no existe anexo-sus.tex (documento principal).
+
+Lo creado por el constructor está bien: la paleta de colores es única y reutilizable, y las dos gráficas (donut y rango) leen correctamente los valores calculados por Lua y son modulares (\input{}). Sin embargo, el proyecto **no compila** porque faltan los archivos principales que integran todo. La prueba automática falla por ausencia de anexo-sus.tex.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Crear anexo-sus.tex: documento completo con preámbulo (LuaLaTeX, babel spanish, pgfplots, tcolorbox, etc.), carga de sus-calculos.lua (\directlua{dofile("sus-calculos.lua")}), carga del CSV (sus.cargar_csv("datos/respuestas.csv")), impresión de errores (sus.imprimir_errores()), y los 10 apartados en orden (objetivo, qué es SUS, tabla preguntas, tabla puntuaciones, cálculo con fórmula y ejemplo via sus.imprimir_ejemplo_primer_participante(), transformación con tablas de fuentes, intro resultados, tabla perfiles via sus.imprimir_tabla_perfiles(), tabla resultados via sus.imprimir_tabla_resultados(), interpretación con media/nota/adjetivo/aceptabilidad automáticas, referencias con \printbibliography).
+- Crear contenido-sus.tex: mismo cuerpo que anexo-sus.tex pero SIN preámbulo ni \begin{document}/\end{document}, solo el contenido para \input{} desde la plantilla del TFG.
+- Crear graficas/velocimetro.tex: semicírculo con zonas rojo (0-50), amarillo (50-70), verde (70-100), aguja en la media (sus.get_stat_raw("media")), usando colores de graficas/colores.tex.
+- Crear graficas/barras.tex: gráfico de barras por participante (sus.imprimir_coordenadas_barras y sus.imprimir_etiquetas_barras) con línea de referencia en 68, usando colores centralizados.
+- Verificar que anexo-sus.tex compila con LuaLaTeX sin errores y genera resultados.json.

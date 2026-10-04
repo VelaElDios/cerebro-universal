@@ -1,0 +1,40 @@
+% ============================================================================
+% graficas/donut.tex
+% Gráfica Donut: Media SUS en grande, arco proporcional, nota y adjetivo
+% Puede incluirse con \input{graficas/donut.tex} en documentos y presentaciones
+% ============================================================================
+
+\input{graficas/colores.tex}
+
+\begin{tikzpicture}[scale=0.9, every node/.style={transform shape}]
+  % Cálculo de ángulo para el arco proporcional (0 a 360 grados)
+  \edef\mediaRaw{\directlua{sus.get_stat_raw("media")}}
+  \pgfmathsetmacro{\anguloMedia}{\mediaRaw * 3.6}
+  \pgfmathsetmacro{\anguloFin}{90 - \anguloMedia}
+
+  % Selección dinámica del color según aceptabilidad
+  \pgfmathsetmacro{\colorDonut}{
+    \mediaRaw >= 70 ? "susVerde" : (\mediaRaw >= 50 ? "susAmarillo" : "susRojo")
+  }
+
+  % Anillo de fondo (100% de la escala)
+  \draw[line width=12mm, susGrisFondo] (0,0) circle (2.2cm);
+
+  % Arco de puntuación obtenida
+  \ifdim\anguloMedia pt>0.5pt
+    \draw[line width=12mm, \colorDonut] (90:2.2cm) arc (90:\anguloFin:2.2cm);
+  \fi
+
+  % Textos centrales
+  \node[align=center] at (0, 0.25) {
+    {\fontsize{26}{30}\selectfont\bfseries \directlua{sus.get_stat("media", 1)}}\\[2pt]
+    {\footnotesize\color{gray} sobre 100}
+  };
+
+  % Calificación y adjetivo Bangor / Sauro-Lewis en la parte inferior
+  \node[align=center, text=susTexto] at (0, -3.2) {
+    {\large\bfseries Nota: \directlua{sus.get_stat("nota_media")}}\\[3pt]
+    {\normalsize\itshape \directlua{sus.get_stat("adjetivo_media")}}\\[2pt]
+    {\footnotesize\bfseries (\directlua{sus.get_stat("aceptabilidad_media")})}
+  };
+\end{tikzpicture}
