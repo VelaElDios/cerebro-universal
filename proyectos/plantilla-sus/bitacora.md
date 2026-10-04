@@ -37,3 +37,12 @@ Ninguna. El código Lua entregado por el constructor es funcional y correcto par
 - Crear el archivo `contenido-sus.tex` con el contenido particionado para `\input{}` desde la plantilla del TFG.
 - Crear los 4 archivos de gráficas TikZ en la carpeta `graficas/`: `donut.tex`, `rango.tex`, `velocimetro.tex`, `barras.tex`. Estas deben ser modulares y usar las coordenadas/estadísticas exportadas por el motor Lua.
 - Integrar la carga del CSV y la impresión de errores/estadísticas en los nuevos archivos .tex.
+
+## Revisión humana (Javier)
+
+Auditoría de sus-calculos.lua ejecutándolo con el CSV real. Cálculos, Sauro-Lewis y aceptabilidad: correctos. Errores a corregir con prioridad máxima:
+
+1. Adjetivos de Bangor et al. (2009) incorrectos. El artículo da la puntuación MEDIA de cada adjetivo, no rangos: El peor imaginable 12,5 · Horrible 20,3 · Pobre 35,7 · OK 50,9 · Bueno 71,4 · Excelente 85,5 · El mejor imaginable 90,9. Asignar el adjetivo cuya media esté más cerca, es decir, con los puntos medios entre medias consecutivas como límites: ≥88,2 El mejor imaginable · ≥78,45 Excelente · ≥61,15 Bueno · ≥43,3 OK · ≥28,0 Pobre · ≥16,4 Horrible · resto El peor imaginable. El documento debe explicar este criterio y mostrar la tabla de medias. Resultado esperado con el CSV de ejemplo: U1 y U4 El mejor imaginable, U2 Excelente, U3 y U5 Bueno.
+2. imprimir_ejemplo_primer_participante rompe la compilación ("missing \item"): no usar \n dentro de tex.sprint. Usar tex.print con una línea por elemento, o \par explícitos.
+3. Los textos del CSV (id, perfil, comentario) se insertan sin escapar: un & o % en un comentario rompe el documento. Añadir una función que escape \ & % $ # _ { } ~ ^ antes de imprimirlos.
+4. Al revisor: no escribas "verificado" sin mostrar la operación. U1 da 95, no 90.
