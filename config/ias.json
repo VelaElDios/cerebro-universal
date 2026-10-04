@@ -3,7 +3,11 @@
     "gemini": {
       "tipo": "gemini",
       "clave_env": "GEMINI_API_KEY",
-      "modelos": ["gemini-flash-latest", "gemini-3.5-flash-lite", "gemini-2.5-flash"]
+      "modelos": [
+        "gemini-flash-latest",
+        "gemini-3.5-flash-lite",
+        "gemini-2.5-flash"
+      ]
     },
     "openrouter": {
       "tipo": "openai",
@@ -12,10 +16,28 @@
       "modelos": [],
       "autodescubrir_gratis": true,
       "max_autodescubiertos": 4
+    },
+    "openrouter-grandes": {
+      "tipo": "openai",
+      "clave_env": "OPENROUTER_API_KEY",
+      "url": "https://openrouter.ai/api/v1",
+      "modelos": [
+        "nvidia/nemotron-3-ultra-550b-a55b:free",
+        "thinkingmachines/inkling:free",
+        "nvidia/nemotron-3-super-120b-a12b:free"
+      ],
+      "autodescubrir_gratis": false
     }
   },
   "roles": {
-    "constructor": ["gemini", "openrouter"],
-    "revisor": ["openrouter", "gemini"]
+    "constructor": [
+      "gemini",
+      "openrouter"
+    ],
+    "revisor": [
+      "openrouter-grandes",
+      "openrouter",
+      "gemini"
+    ]
   }
 }

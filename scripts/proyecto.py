@@ -57,10 +57,21 @@ Cómo trabajas:
 - Sé exigente pero concreto. No pidas cambios por gusto personal.
 - Marca TERMINADO solo si se cumplen TODOS los criterios de "terminado" de la spec.
 
+Comprobaciones (OBLIGATORIO):
+- La prueba puede incluir un test automático que recalcula los valores por su cuenta. Si la prueba
+  falla, el veredicto es "cambios": nunca apruebes algo que no pasa la prueba.
+- Nunca digas que un cálculo, un valor o una tabla es "correcto", "verificado" o "comprobado" sin
+  mostrar en COMPROBACIONES la operación completa o la cita de la fuente con la que lo has comparado.
+  Ejemplo: "U1: impares (5−1)+(5−1)+(4−1)+(5−1)+(5−1)=19; pares (5−1)+(5−1)+(5−2)+(5−1)+(5−1)=19;
+  (19+19)×2,5=95 → coincide con el documento".
+- Lo que no hayas comprobado, dilo: "no comprobado". Un "aprobado" sin comprobaciones no cuenta.
+
 Responde EXACTAMENTE con este formato:
 
 <<<VEREDICTO>>>
 aprobado   (o: cambios)
+<<<COMPROBACIONES>>>
+- una línea por cada cosa comprobada, con su operación o su cita
 <<<COMENTARIOS>>>
 Qué está bien, qué está mal y qué has corregido tú.
 <<<ARCHIVO ruta/relativa.ext>>>
@@ -70,6 +81,29 @@ contenido COMPLETO corregido (opcional, solo si corriges algo)
 - tareas concretas para el próximo paso del constructor
 <<<TERMINADO>>>
 no   (o: si)"""
+
+
+def muestra_operaciones(comprobaciones: str) -> bool:
+    """True si al menos una línea de COMPROBACIONES enseña una operación o un valor comparado
+    (un número junto a =, ≥, ≤, →, +, ×, −...). Un "todo verificado" a secas no vale."""
+    return any(re.search(r"\d", l) and re.search(r"[=≥≤<>→+×*/−]", l)
+               for l in comprobaciones.splitlines())
+
+
+def guardar_cfg(cfg_ruta: Path, cfg: dict):
+    cfg_ruta.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+
+def pausar(cfg_ruta: Path, cfg: dict, bitacora: Path):
+    """Freno: al llegar a max_pasos el proyecto se pausa y se avisa en la bitácora."""
+    cfg["estado"] = "pausado"
+    guardar_cfg(cfg_ruta, cfg)
+    nucleo.anotar(bitacora, "⏸️ Proyecto pausado",
+                  f"Se ha llegado al máximo de pasos ({cfg['pasos']} de {cfg['max_pasos']}). "
+                  "El workflow no hará nada más hasta que Javier lo revise.\n\n"
+                  "Para continuar: en `proyecto.json`, subir `max_pasos` y volver a poner "
+                  "`\"estado\": \"en-construccion\"`.")
+    print(f"Proyecto pausado: {cfg['pasos']}/{cfg['max_pasos']} pasos.")
 
 
 def probar(cfg: dict, carpeta: Path) -> tuple[bool, str]:
@@ -121,14 +155,38 @@ def main():
 
     carpeta = nucleo.RAIZ / sys.argv[1]
     cfg_ruta = carpeta / "proyecto.json"
-    cfg = json.loads(cfg_ruta.read_text(encoding="utf-8"))
-    if cfg.get("estado") == "terminado":
-        print("Proyecto terminado. No hay nada que hacer.")
+    cfg = json.loads(cfg_ruta.read_text(encoding="utf-8-sig"))
+    bitacora = carpeta / "bitacora.md"
+    estado_proyecto = cfg.get("estado", "en-construccion")
+    if estado_proyecto != "en-construccion":
+        print(f"Proyecto {estado_proyecto}. No hay nada que hacer.")
         return
 
+    # ---------- 0. FRENO ----------
+    # Cada ejecución cuenta un paso. Al llegar a max_pasos el proyecto se pausa.
+    cfg["pasos"] = cfg.get("pasos", 0)
+    max_pasos = cfg.get("max_pasos")
+    if max_pasos is not None and cfg["pasos"] >= max_pasos:
+        pausar(cfg_ruta, cfg, bitacora)  # p. ej. si alguien bajó max_pasos a mano
+        return
+    cfg["pasos"] += 1
+    guardar_cfg(cfg_ruta, cfg)
+    print(f"Paso {cfg['pasos']}" + (f" de {max_pasos}" if max_pasos is not None else ""))
+
+    try:
+        dar_paso(carpeta, cfg, cfg_ruta, bitacora)
+    finally:
+        # Si este era el último paso permitido, se pausa ya: así la próxima ejecución
+        # del workflow lo ve antes de instalar LaTeX y no gasta minutos.
+        if (cfg.get("estado") == "en-construccion" and max_pasos is not None
+                and cfg["pasos"] >= max_pasos):
+            pausar(cfg_ruta, cfg, bitacora)
+
+
+def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
+    """Un paso completo: constructor → prueba → revisor → promoción a final/."""
     spec = (carpeta / "spec.md").read_text(encoding="utf-8")
     borrador, final = carpeta / "borrador", carpeta / "final"
-    bitacora = carpeta / "bitacora.md"
     borrador.mkdir(exist_ok=True)
     maximo = cfg.get("max_archivos_por_paso", 3)
 
@@ -199,23 +257,34 @@ Archivos tocados: {', '.join(cambios) or 'ninguno'}
     r = revision["secciones"]
     veredicto = r.get("VEREDICTO", "cambios").strip().lower()
     terminado = r.get("TERMINADO", "no").strip().lower().startswith("s")
+    comprobaciones = r.get("COMPROBACIONES", "").strip()
+
+    # Un revisor que aprueba sin enseñar las operaciones no prueba nada (lección aprendida):
+    # su aprobado y su "terminado" no cuentan.
+    aviso_comprobaciones = ""
+    if not muestra_operaciones(comprobaciones) and (veredicto.startswith("aprobado") or terminado):
+        aviso_comprobaciones = ("\n\n⚠️ **El revisor aprueba sin mostrar operaciones en COMPROBACIONES:** "
+                                "su aprobado y su \"terminado\" no cuentan en este paso.")
+        veredicto = f"cambios (había dicho: {veredicto})"
+        terminado = False
 
     # ---------- 4. PROMOCIÓN A FINAL ----------
     promocionado = ok and (veredicto.startswith("aprobado") or bool(correcciones))
     if promocionado:
         nucleo.promocionar(borrador, final)
 
-    estado = "✅ compila" if ok else "❌ falla la prueba"
+    resultado = "✅ compila" if ok else "❌ falla la prueba"
     nucleo.anotar(bitacora, f"Revisor ({ia} · {modelo})",
-                  f"**Veredicto:** {veredicto} · **Prueba:** {estado}"
+                  f"**Veredicto:** {veredicto} · **Prueba:** {resultado}"
                   f"{' · copiado a `final/`' if promocionado else ''}\n\n"
+                  f"**Comprobaciones:**\n{comprobaciones or '(ninguna)'}{aviso_comprobaciones}\n\n"
                   f"{r.get('COMENTARIOS', '(sin comentarios)')}\n\n"
                   f"**Correcciones del revisor:** {', '.join(f'`{c}`' for c in correcciones) or 'ninguna'}\n\n"
                   f"**Tareas para el constructor:**\n{r.get('TAREAS', '- ninguna')}")
 
     if terminado and ok:
         cfg["estado"] = "terminado"
-        cfg_ruta.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        guardar_cfg(cfg_ruta, cfg)
         nucleo.anotar(bitacora, "🎉 Proyecto terminado", "El revisor da por cumplidos todos los criterios de la spec.")
         print("¡Proyecto terminado!")
 
