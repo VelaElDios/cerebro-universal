@@ -1,0 +1,52 @@
+% ============================================================================
+% graficas/velocimetro.tex
+% Gráfica de velocímetro tipo tacómetro con zonas de aceptabilidad y aguja
+% ============================================================================
+
+\input{graficas/colores.tex}
+
+\begin{tikzpicture}[scale=1.1, every node/.style={transform shape}]
+  \edef\mediaRaw{\directlua{sus.get_stat_raw("media")}}
+
+  % Coordenadas angulares:
+  % 0 SUS = 180 grados (izquierda)
+  % 50 SUS = 90 grados (arriba)
+  % 70 SUS = 54 grados
+  % 100 SUS = 0 grados (derecha)
+  % Fórmula de mapeo: angulo = 180 - (puntuacion * 1.8)
+
+  % Zona No Aceptable: 0 a 50 (180 a 90 deg)
+  \draw[line width=11mm, susRojo!85] (180:2.1cm) arc (180:90:2.1cm);
+
+  % Zona Marginal: 50 a 70 (90 a 54 deg)
+  \draw[line width=11mm, susAmarillo!90] (90:2.1cm) arc (90:54:2.1cm);
+
+  % Zona Aceptable: 70 a 100 (54 a 0 deg)
+  \draw[line width=11mm, susVerde!85] (54:2.1cm) arc (54:0:2.1cm);
+
+  % Marcas y etiquetas principales de la escala
+  \foreach \val in {0, 20, 40, 50, 60, 70, 80, 100} {
+    \pgfmathsetmacro{\ang}{180 - (\val * 1.8)}
+    \draw[white, thick] (\ang:1.55cm) -- (\ang:2.65cm);
+    \node[font=\scriptsize\bfseries, text=susTexto] at (\ang:2.95cm) {\val};
+  }
+
+  % Etiquetas descriptivas de las zonas
+  \node[font=\scriptsize\bfseries, text=susRojo!80!black] at (135:1.25cm) {No aceptable};
+  \node[font=\tiny\bfseries, text=susAmarillo!90!black, rotate=-18] at (72:1.25cm) {Marginal};
+  \node[font=\scriptsize\bfseries, text=susVerde!80!black] at (27:1.25cm) {Aceptable};
+
+  % Cálculo del ángulo de la aguja según la media obtenida
+  \pgfmathsetmacro{\angAguja}{180 - (\mediaRaw * 1.8)}
+
+  % Dibujo de la aguja indicadora
+  \draw[line width=2.4pt, susPrincipal, line cap=round] (0,0) -- (\angAguja:2.35cm);
+  \fill[susPrincipal] (0,0) circle (5pt);
+  \fill[white] (0,0) circle (2pt);
+
+  % Lectura numérica y nota al pie del velocímetro
+  \node[align=center, below] at (0, -0.3) {
+    {\fontsize{18}{22}\selectfont\bfseries \directlua{sus.get_stat("media", 1)}}\\[2pt]
+    {\small\bfseries \directlua{sus.get_stat("aceptabilidad_media")}}
+  };
+\end{tikzpicture}

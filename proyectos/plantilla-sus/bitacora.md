@@ -124,3 +124,32 @@ Lo creado por el constructor está bien: la paleta de colores es única y reutil
 - Crear graficas/velocimetro.tex: semicírculo con zonas rojo (0-50), amarillo (50-70), verde (70-100), aguja en la media (sus.get_stat_raw("media")), usando colores de graficas/colores.tex.
 - Crear graficas/barras.tex: gráfico de barras por participante (sus.imprimir_coordenadas_barras y sus.imprimir_etiquetas_barras) con línea de referencia en 68, usando colores centralizados.
 - Verificar que anexo-sus.tex compila con LuaLaTeX sin errores y genera resultados.json.
+
+## 2026-10-05 00:34 · Constructor (gemini · gemini-flash-latest)
+
+He creado las dos gráficas restantes en TikZ/pgfplots (`graficas/velocimetro.tex` y `graficas/barras.tex`) y el documento principal `anexo-sus.tex` con los 10 apartados especificados en la guía del profesor, preámbulo para LuaLaTeX en español, tablas normativas completas (Sauro-Lewis 2016, Bangor et al. 2008 y 2009), integración automática con `sus-calculos.lua` y bibliografía con BibLaTeX.
+
+**Archivos:** `graficas/velocimetro.tex`, `graficas/barras.tex`, `anexo-sus.tex`
+
+**Siguiente:** Crear `contenido-sus.tex` (para posibilitar la inclusión limpia mediante `\input{contenido-sus.tex}` dentro de la plantilla del TFG) y verificar la compilación automática con LuaLaTeX y la comprobación de `resultados.json`.
+
+## 2026-10-05 00:35 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Error de compilación: `attempt to index a nil value (global 'sus')` en línea 32 de `anexo-sus.tex`. El módulo Lua se carga con `dofile` pero su valor de retorno (la tabla `sus`) no se asigna a variable global, por lo que las llamadas posteriores a `sus.cargar_csv`, `sus.get_stat`, etc. fallan.
+- Cálculos SUS verificados en revisión anterior: U1=95.0, U2=87.5, U3=75.0, U4=95.0, U5=72.5; media=85.0, desviación muestral=10.7529, min=72.5, max=95.0 ✓
+- Escalas normativas: Sauro-Lewis 2016, Bangor 2009 (adjetivos con puntos medios), Bangor 2008 (aceptabilidad) coinciden con fuentes ✓
+- Exportación `resultados.json` con formato exacto (punto decimal, 4 decimales en desviación) implementada en Lua ✓
+- Gráficas (donut, rango, velocímetro, barras) leen valores vía `sus.get_stat_raw`/`sus.get_stat` y usan paleta centralizada `graficas/colores.tex` ✓
+- Estructura de 10 apartados en orden correcto, tablas normativas completas, bibliografía con BibLaTeX ✓
+
+El motor Lua (`sus-calculos.lua`) está correcto y completo. Las gráficas están bien hechas y modulares. El documento principal `anexo-sus.tex` tiene la estructura y contenido correctos. **El único fallo es técnico**: `dofile("sus-calculos.lua")` devuelve la tabla `sus` pero no se asigna a variable global, por lo que `sus` es `nil` en las llamadas posteriores. Basta con capturar el retorno: `sus = dofile("sus-calculos.lua")`.
+
+**Correcciones del revisor:** `anexo-sus.tex`
+
+**Tareas para el constructor:**
+- Crear `contenido-sus.tex` con el mismo cuerpo que `anexo-sus.tex` pero SIN preámbulo ni `\begin{document}`/`\end{document}`, solo el contenido para `\input{}` desde la plantilla del TFG.
+- Verificar que la compilación con LuaLaTeX funciona y genera `resultados.json` correcto.
+- (Fase 2 futura) Crear `defensa-sus.tex` en Beamer con 2-3 diapositivas usando las mismas gráficas.

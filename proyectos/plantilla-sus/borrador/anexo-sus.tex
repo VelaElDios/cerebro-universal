@@ -1,0 +1,290 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{fontspec}
+\usepackage{geometry}
+\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\usepackage{csquotes}
+\usepackage[backend=biber,style=apa,citestyle=authoryear]{biblatex}
+\addbibresource{referencias.bib}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=susPrincipal,
+    citecolor=susPrincipal,
+    urlcolor=susSecundario
+}
+
+% Carga del motor de cálculo en Lua y procesamiento del CSV
+\directlua{sus = dofile("sus-calculos.lua")}
+\directlua{sus.cargar_csv("datos/respuestas.csv")}
+
+\input{graficas/colores.tex}
+
+\title{\textbf{Anexo: Evaluación de Usabilidad del Sistema (SUS)}}
+\author{Evaluación de Calidad del Software / Trabajo de Fin de Grado}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+% Aviso si se detectaron filas defectuosas en el CSV
+\directlua{sus.imprimir_errores()}
+
+% ----------------------------------------------------------------------------
+\section{Objetivo del anexo}
+% ----------------------------------------------------------------------------
+El presente anexo describe la metodología, aplicación práctica y análisis estadístico de la evaluación de usabilidad percibida del sistema desarrollado. El propósito fundamental es cuantificar objetivamente la experiencia del usuario y el grado de facilidad de uso de la herramienta mediante un instrumento validado psicométricamente y estandarizado a nivel industrial.
+
+% ----------------------------------------------------------------------------
+\section{¿Qué es el SUS?}
+% ----------------------------------------------------------------------------
+La escala \textbf{System Usability Scale (SUS)} fue concebida originariamente por John Brooke en 1986 y formalmente publicada en la literatura científica en 1996 \parencite{Brooke1996}. Es catalogada comúnmente como una herramienta \enquote{rápida y flexible} (\textit{quick and dirty}) para recopilar de forma ágil la percepción global sobre la usabilidad de un sistema tecnológico.
+
+El cuestionario consta de diez afirmaciones estructuradas sobre una escala de tipo Likert \parencite{Likert1932} de cinco niveles de respuesta (desde \enquote{Totalmente en desacuerdo} hasta \enquote{Totalmente de acuerdo}). El SUS evalúa tres dimensiones fundamentales de la usabilidad definidas por el estándar ISO 9241-11:
+\begin{itemize}
+    \item \textbf{Eficacia}: la capacidad del usuario de culminar las tareas con éxito.
+    \item \textbf{Eficiencia}: la inversión proporcional de recursos y tiempo requerida.
+    \item \textbf{Satisfacción}: la comodidad subjetiva y aceptación global manifestada.
+\end{itemize}
+
+% ----------------------------------------------------------------------------
+\section{Tabla de preguntas SUS}
+% ----------------------------------------------------------------------------
+Para evitar sesgos de respuesta sistemáticos y la aquiescencia de los participantes, el cuestionario alterna intencionadamente afirmaciones en sentido positivo (ítems impares) y afirmaciones en sentido negativo (ítems pares), tal como se detalla en el Cuadro~\ref{tab:items-sus}.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\linewidth}{clXl}
+\toprule
+\textbf{Ítem} & \textbf{Polaridad} & \textbf{Enunciado en español} & \textbf{Orientación} \\
+\midrule
+$q_1$  & Impar & Creo que me gustaría utilizar este sistema con frecuencia. & Positivo \\
+$q_2$  & Par   & Encontré el sistema innecesariamente complejo. & Negativo \\
+$q_3$  & Impar & Pensé que el sistema era fácil de usar. & Positivo \\
+$q_4$  & Par   & Creo que necesitaría el apoyo de una persona técnica para utilizar este sistema. & Negativo \\
+$q_5$  & Impar & Encontré que las diversas funciones del sistema estaban bien integradas. & Positivo \\
+$q_6$  & Par   & Pensé que había demasiada inconsistencia en este sistema. & Negativo \\
+$q_7$  & Impar & Imagino que la mayoría de la gente aprendería a utilizar este sistema muy rápidamente. & Positivo \\
+$q_8$  & Par   & Encontré el sistema muy engorroso de usar. & Negativo \\
+$q_9$  & Impar & Me sentí muy seguro utilizando el sistema. & Positivo \\
+$q_{10}$ & Par & Necesité aprender muchas cosas antes de poder empezar a utilizar este sistema. & Negativo \\
+\bottomrule
+\end{tabularx}
+\caption{Formulación en español de los 10 ítems de la escala SUS.}
+\label{tab:items-sus}
+\end{table}
+
+% ----------------------------------------------------------------------------
+\section{Tabla de puntuaciones de la escala Likert}
+% ----------------------------------------------------------------------------
+Cada participante puntúa individualmente cada una de las afirmaciones asignando un valor discreto entero del 1 al 5 (Cuadro~\ref{tab:likert-escala}).
+
+\begin{table}[htbp]
+\centering
+\begin{tabular}{cl}
+\toprule
+\textbf{Puntuación asignada} & \textbf{Significado semántico} \\
+\midrule
+1 & Totalmente en desacuerdo \\
+2 & En desacuerdo \\
+3 & Neutral / Indeciso \\
+4 & De acuerdo \\
+5 & Totalmente de acuerdo \\
+\bottomrule
+\end{tabular}
+\caption{Opciones de respuesta de la escala Likert de 5 puntos.}
+\label{tab:likert-escala}
+\end{table}
+
+% ----------------------------------------------------------------------------
+\section{Cómo se calcula}
+% ----------------------------------------------------------------------------
+La puntuación global del SUS no corresponde a la suma directa de las respuestas, sino a una transformación normalizada que sitúa el resultado en un rango continuo de 0 a 100 puntos.
+
+Para cada participante con respuestas $q_1, q_2, \dots, q_{10} \in \{1, 2, 3, 4, 5\}$, se calculan las contribuciones individuales $c_i$:
+\begin{itemize}
+    \item Para ítems impares ($i \in \{1, 3, 5, 7, 9\}$): $c_i = q_i - 1$ (escala 0 a 4).
+    \item Para ítems pares ($i \in \{2, 4, 6, 8, 10\}$): $c_i = 5 - q_i$ (escala 0 a 4).
+\end{itemize}
+
+La puntuación SUS final se obtiene sumando las 10 contribuciones y multiplicando el total por $2{,}5$:
+\begin{equation}
+\text{Puntuación SUS} = 2{,}5 \times \sum_{i=1}^{10} c_i = 2{,}5 \times \left( \sum_{k=1}^5 (q_{2k-1} - 1) + \sum_{k=1}^5 (5 - q_{2k}) \right)
+\end{equation}
+
+\noindent
+\textbf{Ejemplo detallado de cálculo con el primer participante:}
+
+\medskip
+\directlua{sus.imprimir_ejemplo_primer_participante()}
+
+% ----------------------------------------------------------------------------
+\section{Cómo se transforma}
+% ----------------------------------------------------------------------------
+Una puntuación SUS en la escala de 0 a 100 \textbf{no} debe ser interpretada como un porcentaje simple ni como una nota académica tradicional. En la literatura empírica se ha determinado que la puntuación media global de referencia industrial es de \textbf{68 puntos} sobre 100. Puntuaciones superiores a 68 denotan una usabilidad por encima del promedio estándar.
+
+\subsection{Escala de calificaciones curvada (Sauro y Lewis, 2016)}
+\textcite{Sauro2016} establecieron una escala normativa percentilada que asigna calificaciones de la \enquote{A+} a la \enquote{F} basada en la distribución acumulada empírica de miles de evaluaciones (Cuadro~\ref{tab:sauro-lewis}).
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{cccl}
+\toprule
+\textbf{Rango SUS} & \textbf{Nota} & \textbf{Rango percentil} & \textbf{Interpretación} \\
+\midrule
+$\ge 84{,}1$ & A+ & 96--100\% & Usabilidad superior y altamente diferenciada \\
+$80{,}8 - 84{,}0$ & A  & 90--95\%  & Excelente usabilidad \\
+$78{,}9 - 80{,}7$ & A- & 85--89\%  & Muy buena usabilidad \\
+$77{,}2 - 78{,}8$ & B+ & 80--84\%  & Usabilidad notable superior al promedio \\
+$74{,}1 - 77{,}1$ & B  & 70--79\%  & Buena usabilidad \\
+$72{,}6 - 74{,}0$ & B- & 65--69\%  & Ligeramente por encima de la media \\
+$71{,}1 - 72{,}5$ & C+ & 60--64\%  & En el promedio alto \\
+$65{,}0 - 71{,}0$ & C  & 41--59\%  & En la media (incluye referencia SUS = 68) \\
+$62{,}7 - 64{,}9$ & C- & 35--40\%  & Ligeramente por debajo del promedio \\
+$51{,}7 - 62{,}6$ & D  & 15--34\%  & Usabilidad deficiente con problemas serios \\
+$< 51{,}7$        & F  & 0--14\%   & Inaceptable / Fracaso de usabilidad \\
+\bottomrule
+\end{tabular}
+\caption{Curva de notas y percentiles normalizados según \textcite{Sauro2016}.}
+\label{tab:sauro-lewis}
+\end{table}
+
+\subsection{Escala de adjetivos (Bangor, Kortum y Miller, 2009)}
+\textcite{Bangor2009} determinaron empíricamente las puntuaciones medias asociadas a 7 adjetivos descriptivos. Debido a que el artículo original aporta la media de cada término y no intervalos cerrados, se adoptan como umbrales de decisión los puntos medios entre medias adyacentes (Cuadro~\ref{tab:adjetivos}).
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lccl}
+\toprule
+\textbf{Adjetivo descriptivo} & \textbf{Media original} & \textbf{Umbral operativo} & \textbf{Rango aplicado} \\
+\midrule
+El mejor imaginable & 90{,}9 & $\ge 88{,}20$ & $[88{,}20,\; 100{,}0]$ \\
+Excelente           & 85{,}5 & $\ge 78{,}45$ & $[78{,}45,\; 88{,}20)$ \\
+Bueno               & 71{,}4 & $\ge 61{,}15$ & $[61{,}15,\; 78{,}45)$ \\
+OK                  & 50{,}9 & $\ge 43{,}30$ & $[43{,}30,\; 61{,}15)$ \\
+Pobre               & 35{,}7 & $\ge 28{,}00$ & $[28{,}00,\; 43{,}30)$ \\
+Horrible            & 20{,}3 & $\ge 16{,}40$ & $[16{,}40,\; 28{,}00)$ \\
+El peor imaginable  & 12{,}5 & $< 16{,}40$   & $[0{,}00,\; 16{,}40)$  \\
+\bottomrule
+\end{tabular}
+\caption{Adjetivos de usabilidad y umbrales basados en \textcite{Bangor2009}.}
+\label{tab:adjetivos}
+\end{table}
+
+\subsection{Rangos de aceptabilidad (Bangor, Kortum y Miller, 2008)}
+Por último, \textcite{Bangor2008} categorizan la viabilidad operativa en tres franjas determinantes:
+\begin{itemize}
+    \item \textbf{Aceptable} ($\text{SUS} \ge 70{,}0$): La interfaz cumple satisfactoriamente las expectativas de interacción.
+    \item \textbf{Marginal} ($50{,}0 \le \text{SUS} < 70{,}0$): La usabilidad presenta deficiencias notables que requieren corrección prioritaria antes del despliegue.
+    \item \textbf{No aceptable} ($\text{SUS} < 50{,}0$): El sistema impone barreras severas para su operabilidad.
+\end{itemize}
+
+% ----------------------------------------------------------------------------
+\section{Introducción a los resultados}
+% ----------------------------------------------------------------------------
+La evaluación empírica se llevó a cabo con una muestra de $n = \directlua{sus.get_stat("n", 0)}$ participantes representativos de los distintos perfiles de usuario del sistema. Los participantes interactuaron de forma independiente con los módulos de la aplicación, ejecutando tareas clave de flujo de trabajo completo antes de cumplimentar el cuestionario de manera individual.
+
+% ----------------------------------------------------------------------------
+\section{Perfiles de los participantes}
+% ----------------------------------------------------------------------------
+El Cuadro~\ref{tab:perfiles} recoge los perfiles funcionales evaluados junto con las observaciones cualitativas más destacadas aportadas por cada participante.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabularx}{\linewidth}{lllX}
+\toprule
+\textbf{ID} & \textbf{Perfil} & \textbf{Comentario del participante} \\
+\midrule
+\directlua{sus.imprimir_tabla_perfiles()}
+\bottomrule
+\end{tabularx}
+\caption{Identificación, perfil funcional y aportaciones cualitativas de la muestra.}
+\label{tab:perfiles}
+\end{table}
+
+% ----------------------------------------------------------------------------
+\section{Tabla de resultados}
+% ----------------------------------------------------------------------------
+En el Cuadro~\ref{tab:resultados} se compilan las respuestas brutas a los 10 ítems Likert, la puntuación SUS computada, la calificación normativa y los descriptores para cada participante.
+
+\begin{table}[htbp]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\linewidth}{lcccccccccccllc}
+\toprule
+\textbf{ID} & \textbf{q1} & \textbf{q2} & \textbf{q3} & \textbf{q4} & \textbf{q5} & \textbf{q6} & \textbf{q7} & \textbf{q8} & \textbf{q9} & \textbf{q10} & \textbf{SUS} & \textbf{Nota} & \textbf{Adjetivo} & \textbf{Aceptabilidad} \\
+\midrule
+\directlua{sus.imprimir_tabla_resultados()}
+\midrule
+\multicolumn{11}{l}{\textbf{Media muestral ($\mu$)}} & \textbf{\directlua{sus.get_stat("media", 1)}} & \textbf{\directlua{sus.get_stat("nota_media")}} & \textbf{\directlua{sus.get_stat("adjetivo_media")}} & \textbf{\directlua{sus.get_stat("aceptabilidad_media")}} \\
+\multicolumn{11}{l}{\textbf{Desviación típica muestral ($s$)}} & \textbf{\directlua{sus.get_stat("desviacion", 2)}} & --- & --- & --- \\
+\multicolumn{11}{l}{\textbf{Puntuación mínima}} & \textbf{\directlua{sus.get_stat("minimo", 1)}} & --- & --- & --- \\
+\multicolumn{11}{l}{\textbf{Puntuación máxima}} & \textbf{\directlua{sus.get_stat("maximo", 1)}} & --- & --- & --- \\
+\bottomrule
+\end{tabularx}
+\caption{Matriz consolidada de respuestas y estadísticos descriptivos del SUS.}
+\label{tab:resultados}
+\end{table}
+
+% ----------------------------------------------------------------------------
+\section{Interpretación de resultados}
+% ----------------------------------------------------------------------------
+El sistema evaluado ha obtenido una puntuación media global de \textbf{\directlua{sus.get_stat("media", 1)}} sobre 100, con una dispersión muestral de $s = \directlua{sus.get_stat("desviacion", 2)}$. La puntuación más baja registrada fue de \directlua{sus.get_stat("minimo", 1)} puntos y la más alta alcanzó los \directlua{sus.get_stat("maximo", 1)} puntos.
+
+Este resultado sitúa al sistema en la calificación \textbf{\directlua{sus.get_stat("nota_media")}}, correspondiente al adjetivo cualitativo \textbf{\enquote{\directlua{sus.get_stat("adjetivo_media")}}} y catalogado como \textbf{\directlua{sus.get_stat("aceptabilidad_media")}} en la clasificación de viabilidad operativa. Al superar con amplitud la media industrial estandarizada de 68 puntos, se concluye que el diseño de interfaz y la arquitectura funcional satisfacen rigurosamente los requisitos de usabilidad exigibles.
+
+\bigskip
+
+\begin{figure}[htbp]
+\centering
+\begin{minipage}{0.48\textwidth}
+  \centering
+  \input{graficas/donut.tex}
+  \caption{Calificación y adjetivo global.}
+  \label{fig:donut}
+\end{minipage}
+\hfill
+\begin{minipage}{0.48\textwidth}
+  \centering
+  \input{graficas/velocimetro.tex}
+  \caption{Ubicación en zona de aceptabilidad.}
+  \label{fig:velocimetro}
+\end{minipage}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\input{graficas/rango.tex}
+\caption{Distribución del intervalo muestral (mínimo, media y máximo) respecto al umbral SUS (68).}
+\label{fig:rango}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\input{graficas/barras.tex}
+\caption{Puntuación individualizada por participante comparada frente a la media de referencia de la industria.}
+\label{fig:barras}
+\end{figure}
+
+\printbibliography[heading=bibintoc, title={Referencias bibliográficas}]
+
+\end{document}
