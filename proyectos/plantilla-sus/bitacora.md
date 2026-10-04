@@ -46,3 +46,4 @@ Auditoría de sus-calculos.lua ejecutándolo con el CSV real. Cálculos, Sauro-L
 2. imprimir_ejemplo_primer_participante rompe la compilación ("missing \item"): no usar \n dentro de tex.sprint. Usar tex.print con una línea por elemento, o \par explícitos.
 3. Los textos del CSV (id, perfil, comentario) se insertan sin escapar: un & o % en un comentario rompe el documento. Añadir una función que escape \ & % $ # _ { } ~ ^ antes de imprimirlos.
 4. Al revisor: no escribas "verificado" sin mostrar la operación. U1 da 95, no 90.
+5. Nuevo requisito (ver spec.md, sección "Exportar resultados.json"): al compilar, el documento debe escribir `resultados.json` con puntuación, nota, adjetivo y aceptabilidad de cada participante y las estadísticas. Un test externo lo recalcula desde el CSV y la prueba falla si algo no coincide.

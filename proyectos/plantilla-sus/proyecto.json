@@ -2,6 +2,6 @@
   "nombre": "plantilla-sus",
   "estado": "en-construccion",
   "archivo_principal": "anexo-sus.tex",
-  "comando_prueba": "latexmk -lualatex -interaction=nonstopmode -halt-on-error -file-line-error anexo-sus.tex",
+  "comando_prueba": "rm -f resultados.json && latexmk -g -lualatex -interaction=nonstopmode -halt-on-error -file-line-error anexo-sus.tex && python3 ../verificar.py",
   "max_archivos_por_paso": 3
 }

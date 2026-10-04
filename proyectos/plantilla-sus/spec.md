@@ -60,7 +60,12 @@ U2,Encargado,4,2,5,1,5,1,4,2,4,1,"Interfaz limpia y ágil"
    - Incluir la fórmula en notación matemática y un ejemplo resuelto con el primer participante.
 6. **Cómo se transforma**:
    - Escala de notas curvada de **Sauro y Lewis (2016)** (A+ a F) en tabla.
-   - Adjetivos de **Bangor, Kortum y Miller (2009)**.
+   - Adjetivos de **Bangor, Kortum y Miller (2009)**. El artículo da la puntuación **media** de cada
+     adjetivo, no rangos: El peor imaginable 12,5 · Horrible 20,3 · Pobre 35,7 · OK 50,9 · Bueno 71,4 ·
+     Excelente 85,5 · El mejor imaginable 90,9. Se asigna el adjetivo cuya media está más cerca, es decir,
+     con los puntos medios como límites: ≥88,2 El mejor imaginable · ≥78,45 Excelente · ≥61,15 Bueno ·
+     ≥43,3 OK · ≥28,0 Pobre · ≥16,4 Horrible · resto El peor imaginable. El documento explica este
+     criterio y muestra la tabla de medias.
    - Rangos de aceptabilidad de **Bangor, Kortum y Miller (2008)**: no aceptable / marginal / aceptable.
    - Mencionar que la media de referencia del SUS es 68.
    - Los valores de las tablas deben coincidir con las fuentes originales: el revisor debe comprobarlos.
@@ -99,6 +104,36 @@ final/
 └── referencias.bib
 ```
 
+## Exportar `resultados.json` (obligatorio, lo comprueba el test)
+
+Al compilar, `sus-calculos.lua` debe escribir `resultados.json` en la carpeta del documento (junto a
+`anexo-sus.tex`) con los valores que se imprimen en el documento. Un test automático externo
+(`verificar.py`, que las IAs no pueden ver ni modificar) recalcula todo desde el CSV y lo compara:
+si no cuadra, la prueba falla.
+
+Formato exacto (números con punto decimal, sin redondear; textos idénticos a los de abajo):
+
+```json
+{
+  "participantes": [
+    {"id": "U1", "puntuacion": 95.0, "nota": "A+",
+     "adjetivo": "El mejor imaginable", "aceptabilidad": "Aceptable"}
+  ],
+  "estadisticas": {"n": 5, "media": 85.0, "desviacion": 10.7529,
+                   "minimo": 72.5, "maximo": 95.0}
+}
+```
+
+- `participantes`: uno por cada fila válida del CSV, en el mismo orden. Las filas con respuestas
+  inválidas no se incluyen (el documento avisa de ellas).
+- `nota`: A+, A, A-, B+, B, B-, C+, C, C-, D o F (Sauro y Lewis, 2016).
+- `adjetivo`: exactamente uno de `El peor imaginable`, `Horrible`, `Pobre`, `OK`, `Bueno`,
+  `Excelente`, `El mejor imaginable`.
+- `aceptabilidad`: exactamente uno de `No aceptable`, `Marginal`, `Aceptable`.
+- `desviacion`: desviación típica **muestral** (dividiendo entre n − 1).
+- Escribirlo desde Lua con `io.open(..., "w")`, en UTF-8. Recordatorio: nada de `%` ni `\` dentro
+  de `\directlua{...}`; la función va en `sus-calculos.lua` y desde el `.tex` solo se llama.
+
 ## Criterios de "terminado"
 
 - Compila con LuaLaTeX sin errores.
@@ -106,3 +141,4 @@ final/
 - Los cálculos coinciden con hacerlos a mano para todos los participantes de ejemplo.
 - Las tablas de transformación coinciden con las fuentes citadas.
 - Los 10 apartados están, en el orden indicado.
+- `resultados.json` se genera al compilar y pasa `verificar.py`.
