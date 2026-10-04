@@ -8,6 +8,22 @@ sus.datos = {}
 sus.stats = {}
 sus.errores = {}
 
+-- Función auxiliar para escapar caracteres especiales de LaTeX
+function sus.escapar_latex(str)
+    if not str then return "" end
+    str = string.gsub(str, "\\", "\\textbackslash{}")
+    str = string.gsub(str, "%%", "\\%%")
+    str = string.gsub(str, "%$", "\\$")
+    str = string.gsub(str, "&", "\\&")
+    str = string.gsub(str, "#", "\\#")
+    str = string.gsub(str, "_", "\\_")
+    str = string.gsub(str, "{", "\\{")
+    str = string.gsub(str, "}", "\\}")
+    str = string.gsub(str, "~", "\\textasciitilde{}")
+    str = string.gsub(str, "%^", "\\textasciicircum{}")
+    return str
+end
+
 -- Función auxiliar para formatear números con coma decimal (español)
 function sus.formato_decimal(num, decimales)
     if not num then return "" end
@@ -31,12 +47,11 @@ local function parse_csv_line(line)
             if not fin then fin = longitud end
             local val = line:sub(c + 1, fin - 1):gsub('""', '"')
             table.insert(campos, val)
-            c = fin + 2 -- salta comilla de cierre y posible coma
+            c = fin + 2
         else
             local fin = line:find(',', c)
             if not fin then fin = longitud + 1 end
             local val = line:sub(c, fin - 1)
-            -- Trim espacios blancos en los extremos
             val = val:match("^%s*(.-)%s*$")
             table.insert(campos, val)
             c = fin + 1
@@ -46,7 +61,6 @@ local function parse_csv_line(line)
 end
 
 -- Determina la nota curvada según Sauro y Lewis (2016)
--- TODO: Revisor, comprobar correspondencia de percentiles y rangos según Sauro & Lewis (2016)
 function sus.obtener_nota(puntuacion)
     if puntuacion >= 84.1 then return "A+"
     elseif puntuacion >= 80.8 then return "A"
@@ -61,15 +75,23 @@ function sus.obtener_nota(puntuacion)
     else return "F" end
 end
 
--- Determina el adjetivo descriptivo según Bangor, Kortum y Miller (2009)
--- TODO: Revisor, comprobar umbrales exactos de los 7 adjetivos de Bangor et al. (2009)
+-- Determina el adjetivo según Bangor, Kortum y Miller (2009)
+-- Medias originales: El peor imaginable 12.5, Horrible 20.3, Pobre 35.7, OK 50.9, Bueno 71.4, Excelente 85.5, El mejor imaginable 90.9
+-- Puntos medios como límites:
+-- >= 88.2: El mejor imaginable
+-- >= 78.45: Excelente
+-- >= 61.15: Bueno
+-- >= 43.3: OK
+-- >= 28.0: Pobre
+-- >= 16.4: Horrible
+-- resto: El peor imaginable
 function sus.obtener_adjetivo(puntuacion)
-    if puntuacion >= 85.5 then return "El mejor imaginable"
-    elseif puntuacion >= 72.6 then return "Excelente"
-    elseif puntuacion >= 62.7 then return "Bueno"
-    elseif puntuacion >= 51.7 then return "Regular (OK)"
-    elseif puntuacion >= 35.7 then return "Pobre"
-    elseif puntuacion >= 20.5 then return "Malo"
+    if puntuacion >= 88.2 then return "El mejor imaginable"
+    elseif puntuacion >= 78.45 then return "Excelente"
+    elseif puntuacion >= 61.15 then return "Bueno"
+    elseif puntuacion >= 43.3 then return "OK"
+    elseif puntuacion >= 28.0 then return "Pobre"
+    elseif puntuacion >= 16.4 then return "Horrible"
     else return "El peor imaginable" end
 end
 
@@ -82,6 +104,30 @@ function sus.obtener_aceptabilidad(puntuacion)
     else
         return "No aceptable"
     end
+end
+
+-- Exporta resultados a resultados.json según formato especificado
+function sus.exportar_json()
+    local archivo, err = io.open("resultados.json", "w")
+    if not archivo then
+        return
+    end
+    
+    archivo:write("{\n  \"participantes\": [\n")
+    for i, reg in ipairs(sus.datos) do
+        local coma = (i < #sus.datos) and "," or ""
+        archivo:write(string.format(
+            '    {"id": "%s", "puntuacion": %.1f, "nota": "%s",\n     "adjetivo": "%s", "aceptabilidad": "%s"}%s\n',
+            reg.id, reg.puntuacion, reg.nota, reg.adjetivo, reg.aceptabilidad, coma
+        ))
+    end
+    archivo:write("  ],\n  \"estadisticas\": ")
+    archivo:write(string.format(
+        '{"n": %d, "media": %.1f, "desviacion": %.4f,\n                   "minimo": %.1f, "maximo": %.1f}\n',
+        sus.stats.n, sus.stats.media, sus.stats.desviacion, sus.stats.minimo, sus.stats.maximo
+    ))
+    archivo:write("}\n")
+    archivo:close()
 end
 
 -- Carga y procesa el archivo CSV
@@ -99,14 +145,13 @@ function sus.cargar_csv(ruta)
 
     for linea in archivo:lines() do
         linea_num = linea_num + 1
-        -- Ignorar líneas vacías
         if linea:match("%S") then
             if not cabecera_leida then
                 cabecera_leida = true
             else
                 local campos = parse_csv_line(linea)
                 if #campos < 12 then
-                    table.insert(sus.errores, string.format("Línea %d: se esperaban al menos 12 columnas (id, perfil, q1..q10), encontradas %d.", linea_num, #campos))
+                    table.insert(sus.errores, string.format("Línea %d: se esperaban al menos 12 columnas.", linea_num))
                 else
                     local id = campos[1]
                     local perfil = campos[2]
@@ -116,7 +161,7 @@ function sus.cargar_csv(ruta)
                     for i = 1, 10 do
                         local val = tonumber(campos[2 + i])
                         if not val or val < 1 or val > 5 or math.floor(val) ~= val then
-                            table.insert(sus.errores, string.format("Línea %d (usuario '%s'): pregunta q%d tiene un valor inválido ('%s'). Debe ser un entero entre 1 y 5.", linea_num, id, i, tostring(campos[2 + i])))
+                            table.insert(sus.errores, string.format("Línea %d (usuario '%s'): pregunta q%d inválida.", linea_num, id, i))
                             linea_valida = false
                         else
                             respuestas[i] = val
@@ -126,9 +171,6 @@ function sus.cargar_csv(ruta)
                     local comentario = campos[13] or ""
 
                     if linea_valida then
-                        -- Cálculo de aportaciones SUS
-                        -- Ítems impares: respuesta - 1
-                        -- Ítems pares: 5 - respuesta
                         local suma_contrib = 0
                         local contribuciones = {}
                         for i = 1, 10 do
@@ -167,7 +209,6 @@ function sus.cargar_csv(ruta)
         return false
     end
 
-    -- Cálculo de estadísticas globales
     local suma = 0
     local min_val = 100
     local max_val = 0
@@ -182,7 +223,6 @@ function sus.cargar_csv(ruta)
     local n = #sus.datos
     local media = suma / n
 
-    -- Desviación típica muestral (dividida por n - 1 si n > 1)
     local varianza = 0
     if n > 1 then
         local suma_cuad = 0
@@ -204,26 +244,27 @@ function sus.cargar_csv(ruta)
         aceptabilidad_media = sus.obtener_aceptabilidad(media)
     }
 
+    -- Generar resultados.json automáticamente al compilar
+    sus.exportar_json()
+
     return true
 end
 
 -- ============================================================================
--- Funciones expuestas a LaTeX mediante tex.sprint
+-- Funciones expuestas a LaTeX mediante tex.print / tex.sprint
 -- ============================================================================
 
--- Comprueba si hay errores y genera un aviso visible
 function sus.imprimir_errores()
     if #sus.errores > 0 then
         local txt = "\\begin{tcolorbox}[colback=red!10!white,colframe=red!75!black,title={Errores detectados en respuestas.csv}]\\begin{itemize}"
         for _, err in ipairs(sus.errores) do
-            txt = txt .. "\\item " .. err
+            txt = txt .. "\\item " .. sus.escapar_latex(err)
         end
         txt = txt .. "\\end{itemize}\\end{tcolorbox}"
         tex.sprint(txt)
     end
 end
 
--- Devolver un valor escalar estadístico
 function sus.get_stat(campo, decimales)
     if not sus.stats[campo] then
         tex.sprint("---")
@@ -233,104 +274,89 @@ function sus.get_stat(campo, decimales)
     if type(val) == "number" then
         tex.sprint(sus.formato_decimal(val, decimales or 1))
     else
-        tex.sprint(tostring(val))
+        tex.sprint(sus.escapar_latex(tostring(val)))
     end
 end
 
--- Devolver un valor numérico crudo con punto decimal para TikZ
 function sus.get_stat_raw(campo)
     local val = sus.stats[campo] or 0
     tex.sprint(string.format("%.2f", val))
 end
 
--- Imprime la tabla de perfiles de participantes
 function sus.imprimir_tabla_perfiles()
     for _, reg in ipairs(sus.datos) do
-        local id_tex = reg.id
-        local perfil_tex = reg.perfil
+        local id_tex = sus.escapar_latex(reg.id)
+        local perfil_tex = sus.escapar_latex(reg.perfil)
         local comentario_tex = reg.comentario
-        if comentario_tex == "" then comentario_tex = "---" end
+        if comentario_tex == "" then 
+            comentario_tex = "---" 
+        else 
+            comentario_tex = sus.escapar_latex(comentario_tex) 
+        end
         local fila = string.format("%s & %s & %s \\\\ \\hline", id_tex, perfil_tex, comentario_tex)
         tex.sprint(fila)
     end
 end
 
--- Imprime la tabla completa de resultados con las 10 respuestas individuales
 function sus.imprimir_tabla_resultados()
     for _, reg in ipairs(sus.datos) do
         local r = reg.respuestas
         local fila = string.format("%s & %d & %d & %d & %d & %d & %d & %d & %d & %d & %d & %s & %s & %s & %s \\\\",
-            reg.id,
+            sus.escapar_latex(reg.id),
             r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9], r[10],
             sus.formato_decimal(reg.puntuacion, 1),
-            reg.nota,
-            reg.adjetivo,
-            reg.aceptabilidad
+            sus.escapar_latex(reg.nota),
+            sus.escapar_latex(reg.adjetivo),
+            sus.escapar_latex(reg.aceptabilidad)
         )
         tex.sprint(fila)
     end
 end
 
--- Imprime el desglose paso a paso del primer participante para el ejemplo de cálculo
 function sus.imprimir_ejemplo_primer_participante()
     if #sus.datos == 0 then
-        tex.sprint("No hay datos disponibles para el ejemplo.")
+        tex.print("No hay datos disponibles para el ejemplo.")
         return
     end
     local p = sus.datos[1]
-    local texto = string.format(
-        "A modo de demostración, se detalla el cálculo para el participante \\textbf{%s} (%s):\n\n" ..
-        "\\begin{itemize}\n" ..
-        "  \\item \\textbf{Respuestas brutas}: $q_1=%d,\\; q_2=%d,\\; q_3=%d,\\; q_4=%d,\\; q_5=%d,\\; q_6=%d,\\; q_7=%d,\\; q_8=%d,\\; q_9=%d,\\; q_{10}=%d$.\n" ..
-        "  \\item \\textbf{Contribuciones de ítems impares} ($q_i - 1$):\n" ..
-        "    $c_1 = %d - 1 = %d$,\\quad $c_3 = %d - 1 = %d$,\\quad $c_5 = %d - 1 = %d$,\\quad $c_7 = %d - 1 = %d$,\\quad $c_9 = %d - 1 = %d$.\n" ..
-        "  \\item \\textbf{Contribuciones de ítems pares} ($5 - q_i$):\n" ..
-        "    $c_2 = 5 - %d = %d$,\\quad $c_4 = 5 - %d = %d$,\\quad $c_6 = 5 - %d = %d$,\\quad $c_8 = 5 - %d = %d$,\\quad $c_{10} = 5 - %d = %d$.\n" ..
-        "  \\item \\textbf{Suma de contribuciones}:\n" ..
-        "    \\[ \\sum_{i=1}^{10} c_i = %d + %d + %d + %d + %d + %d + %d + %d + %d + %d = %d \\]\n" ..
-        "  \\item \\textbf{Puntuación SUS final}:\n" ..
-        "    \\[ \\text{SUS} = %d \\times 2{,}5 = \\mathbf{%s} \\]\n" ..
-        "\\end{itemize}\n" ..
-        "Esta puntuación de %s equivale a una calificación \\textbf{%s}, adjetivo \\textbf{%s} y aceptabilidad \\textbf{%s}.",
-        p.id, p.perfil,
+    
+    tex.print(string.format("A modo de demostración, se detalla el cálculo para el participante \\textbf{%s} (%s):", sus.escapar_latex(p.id), sus.escapar_latex(p.perfil)))
+    tex.print("\\begin{itemize}")
+    tex.print(string.format("  \\item \\textbf{Respuestas brutas}: $q_1=%d,\\; q_2=%d,\\; q_3=%d,\\; q_4=%d,\\; q_5=%d,\\; q_6=%d,\\; q_7=%d,\\; q_8=%d,\\; q_9=%d,\\; q_{10}=%d$.",
         p.respuestas[1], p.respuestas[2], p.respuestas[3], p.respuestas[4], p.respuestas[5],
-        p.respuestas[6], p.respuestas[7], p.respuestas[8], p.respuestas[9], p.respuestas[10],
-        p.respuestas[1], p.contribuciones[1],
-        p.respuestas[3], p.contribuciones[3],
-        p.respuestas[5], p.contribuciones[5],
-        p.respuestas[7], p.contribuciones[7],
-        p.respuestas[9], p.contribuciones[9],
-        p.respuestas[2], p.contribuciones[2],
-        p.respuestas[4], p.contribuciones[4],
-        p.respuestas[6], p.contribuciones[6],
-        p.respuestas[8], p.contribuciones[8],
-        p.respuestas[10], p.contribuciones[10],
+        p.respuestas[6], p.respuestas[7], p.respuestas[8], p.respuestas[9], p.respuestas[10]))
+    tex.print(string.format("  \\item \\textbf{Contribuciones de ítems impares} ($q_i - 1$): " ..
+        "$c_1 = %d - 1 = %d$,\\quad $c_3 = %d - 1 = %d$,\\quad $c_5 = %d - 1 = %d$,\\quad $c_7 = %d - 1 = %d$,\\quad $c_9 = %d - 1 = %d$.",
+        p.respuestas[1], p.contribuciones[1], p.respuestas[3], p.contribuciones[3],
+        p.respuestas[5], p.contribuciones[5], p.respuestas[7], p.contribuciones[7],
+        p.respuestas[9], p.contribuciones[9]))
+    tex.print(string.format("  \\item \\textbf{Contribuciones de ítems pares} ($5 - q_i$): " ..
+        "$c_2 = 5 - %d = %d$,\\quad $c_4 = 5 - %d = %d$,\\quad $c_6 = 5 - %d = %d$,\\quad $c_8 = 5 - %d = %d$,\\quad $c_{10} = 5 - %d = %d$.",
+        p.respuestas[2], p.contribuciones[2], p.respuestas[4], p.contribuciones[4],
+        p.respuestas[6], p.contribuciones[6], p.respuestas[8], p.contribuciones[8],
+        p.respuestas[10], p.contribuciones[10]))
+    tex.print(string.format("  \\item \\textbf{Suma de contribuciones}: " ..
+        "\\[ \\sum_{i=1}^{10} c_i = %d + %d + %d + %d + %d + %d + %d + %d + %d + %d = %d \\]",
         p.contribuciones[1], p.contribuciones[2], p.contribuciones[3], p.contribuciones[4], p.contribuciones[5],
         p.contribuciones[6], p.contribuciones[7], p.contribuciones[8], p.contribuciones[9], p.contribuciones[10],
-        p.suma_contrib,
-        p.suma_contrib,
-        sus.formato_decimal(p.puntuacion, 1),
-        sus.formato_decimal(p.puntuacion, 1),
-        p.nota,
-        p.adjetivo,
-        p.aceptabilidad
-    )
-    tex.sprint(texto)
+        p.suma_contrib))
+    tex.print(string.format("  \\item \\textbf{Puntuación SUS final}: " ..
+        "\\[ \\text{SUS} = %d \\times 2{,}5 = \\mathbf{%s} \\]",
+        p.suma_contrib, sus.formato_decimal(p.puntuacion, 1)))
+    tex.print(string.format("\\end{itemize} Esta puntuación de %s equivale a una calificación \\textbf{%s}, adjetivo \\textbf{%s} y aceptabilidad \\textbf{%s}.",
+        sus.formato_decimal(p.puntuacion, 1), sus.escapar_latex(p.nota), sus.escapar_latex(p.adjetivo), sus.escapar_latex(p.aceptabilidad)))
 end
 
--- Exporta coordenadas de las barras individuales para pgfplots/TikZ
 function sus.imprimir_coordenadas_barras()
-    for i, reg in ipairs(sus.datos) do
-        -- Formato: (id, puntuacion)
-        tex.sprint(string.format("(%s, %.2f) ", reg.id, reg.puntuacion))
+    for _, reg in ipairs(sus.datos) do
+        tex.sprint(string.format("(%s, %.2f) ", sus.escapar_latex(reg.id), reg.puntuacion))
     end
 end
 
--- Exporta etiquetas de participantes para el eje simbólico de pgfplots
 function sus.imprimir_etiquetas_barras()
     local lista = {}
     for _, reg in ipairs(sus.datos) do
-        table.insert(lista, reg.id)
+        table.insert(lista, sus.escapar_latex(reg.id))
     end
     tex.sprint(table.concat(lista, ", "))
 end
