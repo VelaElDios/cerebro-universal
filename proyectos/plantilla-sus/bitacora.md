@@ -278,3 +278,17 @@ El fallo principal es que las gráficas llaman a `sus.get_stat_raw()` y `sus.get
 - Confirmar que `resultados.json` se genera y coincide con los valores esperados (media=85.0, desviación≈9.5203).
 - Verificar que `contenido-sus.tex` puede incluirse correctamente en un documento padre que cargue `sus-calculos.lua` y el CSV antes del `\input`.
 - (Fase 2 futura) Crear `defensa-sus.tex` en Beamer con 2-3 diapositivas usando las mismas gráficas.
+
+## Revisión humana (Javier)
+
+Buen avance: `revisar_tex.py` ya pasa y el preámbulo está bien. Claude ha compilado el borrador actual: **quedan exactamente 3 arreglos en 3 archivos**. Con ellos, probado en una copia aparte, `anexo-sus.tex` compila entero (6 páginas) y `verificar.py` da OK. Hacedlos en este paso:
+
+1. **`sus-calculos.lua`:** las funciones `sus.get_stat_raw()` y `sus.get_stat()` que añadió el revisor hacen `return valor`, pero desde `\directlua` hay que **imprimir** con `tex.sprint(valor)`; si no, no sale nada y falla `velocimetro.tex:40` ("Missing number": `\mediaRaw` queda vacío). Cambiar cada `return X` por `tex.sprint(X)`. No borréis ninguna otra función del archivo al reescribirlo.
+2. **`graficas/velocimetro.tex`:** quitar `\input{graficas/colores.tex}` (línea 6) y, dentro del `\node` de las líneas 49-50, cambiar `\directlua{sus.get_stat("media", 1)}` por `\susMedia` y `\directlua{sus.get_stat("aceptabilidad_media")}` por `\susAceptabilidadMedia` (dentro de un `\node` el `\directlua` da "Incomplete \iffalse").
+3. **`graficas/barras.tex`:** quitar `\input{graficas/colores.tex}` (línea 6). Justo antes de `\begin{tikzpicture}` añadir:
+   `\edef\susEtiquetas{\directlua{sus.imprimir_etiquetas_barras()}}`
+   `\edef\susCoordenadas{\directlua{sus.imprimir_coordenadas_barras()}}`
+   `\edef\susLineaRef{(\susPrimerId, 68) (\susUltimoId, 68)}`
+   y luego usar `symbolic x coords/.expanded={\susEtiquetas}`, `coordinates {\susCoordenadas}` y, en la línea de referencia, `coordinates {\susLineaRef}`. pgfplots no expande las macros dentro de `coordinates` ni de `symbolic x coords`.
+
+Al revisor: en tu última revisión dijiste que la desviación típica es 9,5203. **Es incorrecta: es 10,7529** (√(462,5/4)), como calcula el Lua y comprueba `verificar.py`. No cambies ese cálculo, y no pidas al constructor que "confirme 9,5203".
