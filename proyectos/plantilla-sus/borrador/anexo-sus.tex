@@ -20,16 +20,18 @@
 
 \usepackage{hyperref}
 
-% Carga del motor de cálculo en Lua y procesamiento del CSV
-\directlua{sus = dofile("sus-calculos.lua")}
-\directlua{sus.cargar_csv("datos/respuestas.csv")}
+% Carga del motor de cálculo en Lua y procesamiento del CSV (asignando la tabla global 'sus')
+\directlua{
+  sus = dofile("sus-calculos.lua")
+  sus.cargar_csv("datos/respuestas.csv")
+}
 
 % Definición de macros con los valores calculados para uso seguro en el documento
 \directlua{
   local s = sus.stats
   local d = sus.datos
   local function def(name, value)
-    tex.sprint(string.format("\\def\\%s{%s}", name, value))
+    tex.sprint("\\def\\" .. name .. "{" .. value .. "}")
   end
   def("susN", s.n)
   def("susMedia", sus.formato_decimal(s.media, 1))
@@ -39,7 +41,6 @@
   def("susNotaMedia", sus.escapar_latex(s.nota_media))
   def("susAdjetivoMedia", sus.escapar_latex(s.adjetivo_media))
   def("susAceptabilidadMedia", sus.escapar_latex(s.aceptabilidad_media))
-  % Primer participante para el ejemplo
   if #d > 0 then
     local p = d[1]
     def("susEjId", sus.escapar_latex(p.id))

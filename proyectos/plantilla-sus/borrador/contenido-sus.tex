@@ -8,7 +8,7 @@
   local s = sus.stats
   local d = sus.datos
   local function def(name, value)
-    tex.sprint(string.format("\\def\\%s{%s}", name, value))
+    tex.sprint("\\def\\" .. name .. "{" .. value .. "}")
   end
   def("susN", s.n)
   def("susMedia", sus.formato_decimal(s.media, 1))
