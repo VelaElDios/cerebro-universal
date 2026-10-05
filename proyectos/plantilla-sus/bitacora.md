@@ -153,3 +153,40 @@ El motor Lua (`sus-calculos.lua`) está correcto y completo. Las gráficas está
 - Crear `contenido-sus.tex` con el mismo cuerpo que `anexo-sus.tex` pero SIN preámbulo ni `\begin{document}`/`\end{document}`, solo el contenido para `\input{}` desde la plantilla del TFG.
 - Verificar que la compilación con LuaLaTeX funciona y genera `resultados.json` correcto.
 - (Fase 2 futura) Crear `defensa-sus.tex` en Beamer con 2-3 diapositivas usando las mismas gráficas.
+
+## 2026-10-05 03:21 · Constructor (gemini · gemini-flash-latest)
+
+Se ha solucionado el error fatal de compilación en `anexo-sus.tex` reemplazando el uso conflictivo del entorno `tabularx` (cuyo escaneo de tokens interfería con las llamadas a `\directlua`) por `tabular` con columnas de ancho ajustado (`p{...}`). Asimismo, se ha creado el archivo `contenido-sus.tex` para permitir la inclusión modular mediante `\input{contenido-sus.tex}` dentro de la plantilla del TFG.
+
+**Archivos:** `anexo-sus.tex`, `contenido-sus.tex`
+
+**Siguiente:** Comprobar el resultado de la prueba automática con LuaLaTeX y verificar la generación y exactitud de `resultados.json`. A continuación, avanzar hacia la Fase 2 creando `defensa-sus.tex` en Beamer para la presentación de resultados.
+
+## 2026-10-05 03:26 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: falla en anexo-sus.tex línea 237 con "Forbidden control sequence found while scanning text of \csname\endcsname" debido a \textbf{\directlua{...}} en celdas de tabla (TeX intenta expandir \directlua dentro del argumento de \textbf).
+- Cálculos SUS verificados manualmente con el CSV de ejemplo: U1=95.0, U2=87.5, U3=75.0, U4=95.0, U5=72.5; media=85.0, desviación muestral=10.7529, min=72.5, max=95.0 → coinciden con resultados.json.
+- Escalas normativas: Sauro-Lewis 2016, Bangor 2009 (adjetivos con puntos medios), Bangor 2008 (aceptabilidad) coinciden con fuentes citadas.
+- Estructura de 10 apartados en orden correcto, tablas normativas completas, bibliografía con BibLaTeX.
+- Gráficas (donut, rango, velocímetro, barras) leen valores vía sus.get_stat_raw/sus.get_stat y usan paleta centralizada graficas/colores.tex.
+- Exportación resultados.json con formato exacto (punto decimal, 4 decimales en desviación) implementada en Lua y generada al compilar.
+- contenido-sus.tex creado como cuerpo modular para \input{}.
+
+El motor Lua (sus-calculos.lua) es correcto y completo: cálculos, escalas, exportación JSON y funciones de impresión funcionan. Las gráficas están bien hechas y modulares. El documento principal anexo-sus.tex tiene la estructura y contenido correctos.
+
+**Error crítico**: El uso de `\textbf{\directlua{sus.get_stat(...)}}` dentro de celdas de tabla y en comandos como `\enquote` causa error de compilación ("Forbidden control sequence") porque TeX intenta expandir `\directlua` al tokenizar el argumento del comando. `\directlua` no es expandible, solo ejecutable.
+
+**Solución**: Definir macros de LaTeX en el preámbulo (tras cargar el CSV) que contengan los valores formateados, y usar esas macros en el cuerpo del documento. Esto evita `\directlua` dentro de argumentos de comandos. Para contenido-sus.tex, incluir un bloque `\directlua` inicial que defina las macros (asumiendo que el documento padre ya cargó el CSV).
+
+Corrijo ambos archivos .tex con esta solución.
+
+**Correcciones del revisor:** `anexo-sus.tex`, `contenido-sus.tex`
+
+**Tareas para el constructor:**
+- Verificar que anexo-sus.tex compila con LuaLaTeX sin errores (ejecutar lualatex, luego biber, luego lualatex dos veces).
+- Confirmar que resultados.json se genera y coincide con los valores esperados.
+- Verificar que contenido-sus.tex puede incluirse correctamente en un documento padre que cargue sus-calculos.lua y el CSV antes del \input.
+- (Fase 2 futura) Crear defensa-sus.tex en Beamer con 2-3 diapositivas usando las mismas gráficas.

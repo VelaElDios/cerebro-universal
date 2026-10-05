@@ -1,30 +1,9 @@
-\documentclass[11pt,a4paper]{article}
-
-\usepackage[spanish,es-tabla]{babel}
-\usepackage{fontspec}
-\usepackage{geometry}
-\geometry{top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm}
-
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{tcolorbox}
-\usepackage{tikz}
-\usepackage{pgfplots}
-\pgfplotsset{compat=1.18}
-
-\usepackage{csquotes}
-\usepackage[backend=biber,style=apa,citestyle=authoryear]{biblatex}
-\addbibresource{referencias.bib}
-
-\usepackage{hyperref}
-
-% Carga del motor de cálculo en Lua y procesamiento del CSV
-\directlua{sus = dofile("sus-calculos.lua")}
-\directlua{sus.cargar_csv("datos/respuestas.csv")}
-
-% Definición de macros con los valores calculados para uso seguro en el documento
+% ============================================================================
+% contenido-sus.tex
+% Contenido modular del anexo SUS para ser incluido mediante \input{} en el TFG
+% Requiere que el documento padre haya cargado sus-calculos.lua y el CSV.
+% Este bloque define macros con los valores calculados.
+% ============================================================================
 \directlua{
   local s = sus.stats
   local d = sus.datos
@@ -39,7 +18,6 @@
   def("susNotaMedia", sus.escapar_latex(s.nota_media))
   def("susAdjetivoMedia", sus.escapar_latex(s.adjetivo_media))
   def("susAceptabilidadMedia", sus.escapar_latex(s.aceptabilidad_media))
-  % Primer participante para el ejemplo
   if #d > 0 then
     local p = d[1]
     def("susEjId", sus.escapar_latex(p.id))
@@ -50,24 +28,6 @@
     def("susEjAceptabilidad", sus.escapar_latex(p.aceptabilidad))
   end
 }
-
-\input{graficas/colores.tex}
-
-% Colores para hyperref (requieren que colores.tex se haya cargado)
-\hypersetup{
-    colorlinks=true,
-    linkcolor=susPrincipal,
-    citecolor=susPrincipal,
-    urlcolor=susSecundario
-}
-
-\title{\textbf{Anexo: Evaluación de Usabilidad del Sistema (SUS)}}
-\author{Evaluación de Calidad del Software / Trabajo de Fin de Grado}
-\date{\today}
-
-\begin{document}
-
-\maketitle
 
 % Aviso si se detectaron filas defectuosas en el CSV
 \directlua{sus.imprimir_errores()}
@@ -312,7 +272,3 @@ Este resultado sitúa al sistema en la calificación \textbf{\susNotaMedia}, cor
 \caption{Puntuación individualizada por participante comparada frente a la media de referencia de la industria.}
 \label{fig:barras}
 \end{figure}
-
-\printbibliography[heading=bibintoc, title={Referencias bibliográficas}]
-
-\end{document}
