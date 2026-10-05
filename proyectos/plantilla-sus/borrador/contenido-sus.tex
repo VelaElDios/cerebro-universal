@@ -1,33 +1,8 @@
 % ============================================================================
 % contenido-sus.tex
 % Contenido modular del anexo SUS para ser incluido mediante \input{} en el TFG
-% Requiere que el documento padre haya cargado sus-calculos.lua y el CSV.
-% Este bloque define macros con los valores calculados.
+% Requiere que el documento padre haya cargado sus-calculos.lua, el CSV y definido macros.
 % ============================================================================
-\directlua{
-  local s = sus.stats
-  local d = sus.datos
-  local function def(name, value)
-    tex.sprint("\\def\\" .. name .. "{" .. value .. "}")
-  end
-  def("susN", s.n)
-  def("susMedia", sus.formato_decimal(s.media, 1))
-  def("susDesviacion", sus.formato_decimal(s.desviacion, 2))
-  def("susMinimo", sus.formato_decimal(s.minimo, 1))
-  def("susMaximo", sus.formato_decimal(s.maximo, 1))
-  def("susNotaMedia", sus.escapar_latex(s.nota_media))
-  def("susAdjetivoMedia", sus.escapar_latex(s.adjetivo_media))
-  def("susAceptabilidadMedia", sus.escapar_latex(s.aceptabilidad_media))
-  if #d > 0 then
-    local p = d[1]
-    def("susEjId", sus.escapar_latex(p.id))
-    def("susEjPerfil", sus.escapar_latex(p.perfil))
-    def("susEjPuntuacion", sus.formato_decimal(p.puntuacion, 1))
-    def("susEjNota", sus.escapar_latex(p.nota))
-    def("susEjAdjetivo", sus.escapar_latex(p.adjetivo))
-    def("susEjAceptabilidad", sus.escapar_latex(p.aceptabilidad))
-  end
-}
 
 % Aviso si se detectaron filas defectuosas en el CSV
 \directlua{sus.imprimir_errores()}

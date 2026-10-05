@@ -1,14 +1,14 @@
 % ============================================================================
 % graficas/rango.tex
 % Gráfica de Rango SUS: barra de 0 a 100, línea de referencia 68 y rango mín-máx
-% ============================================================================
-
-\input{graficas/colores.tex}
+-- Colores se cargan en el preámbulo principal (graficas/colores.tex)
+-- ============================================================================
 
 \begin{tikzpicture}[x=0.095cm, y=1cm]
-  \edef\minRaw{\directlua{sus.get_stat_raw("minimo")}}
-  \edef\maxRaw{\directlua{sus.get_stat_raw("maximo")}}
-  \edef\mediaRaw{\directlua{sus.get_stat_raw("media")}}
+  % Usar macros definidas por sus.definir_macros() (valores con punto decimal)
+  \pgfmathsetmacro{\minRaw}{\susMinimoRaw}
+  \pgfmathsetmacro{\maxRaw}{\susMaximoRaw}
+  \pgfmathsetmacro{\mediaRaw}{\susMediaRaw}
 
   % Fondo de aceptabilidad en la barra horizontal (y de 0 a 0.7)
   \fill[susRojo!25] (0,0) rectangle (50,0.7);
@@ -33,16 +33,16 @@
 
   % Extremo mínimo
   \draw[susPrincipal, line width=1.2pt] (\minRaw, 0.15) -- (\minRaw, 0.55);
-  \node[susPrincipal, below, font=\scriptsize\bfseries] at (\minRaw, -0.45) {Mín: \directlua{sus.get_stat("minimo", 1)}};
+  \node[susPrincipal, below, font=\scriptsize\bfseries] at (\minRaw, -0.45) {Mín: \susMinimo};
   \draw[->, >=stealth, susPrincipal, thin] (\minRaw, -0.42) -- (\minRaw, 0.1);
 
   % Extremo máximo
   \draw[susPrincipal, line width=1.2pt] (\maxRaw, 0.15) -- (\maxRaw, 0.55);
-  \node[susPrincipal, below, font=\scriptsize\bfseries] at (\maxRaw, -0.45) {Máx: \directlua{sus.get_stat("maximo", 1)}};
+  \node[susPrincipal, below, font=\scriptsize\bfseries] at (\maxRaw, -0.45) {Máx: \susMaximo};
   \draw[->, >=stealth, susPrincipal, thin] (\maxRaw, -0.42) -- (\maxRaw, 0.1);
 
   % Marcador de la media muestral obtenida
   \fill[susPrincipal] (\mediaRaw, 0.35) circle (3pt);
-  \node[susPrincipal, above, font=\small\bfseries] at (\mediaRaw, 0.75) {Media: \directlua{sus.get_stat("media", 1)}};
+  \node[susPrincipal, above, font=\small\bfseries] at (\mediaRaw, 0.75) {Media: \susMedia};
   \draw[->, >=stealth, susPrincipal, thick] (\mediaRaw, 0.72) -- (\mediaRaw, 0.45);
 \end{tikzpicture}

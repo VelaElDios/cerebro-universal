@@ -13,48 +13,23 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
+\usetikzlibrary{babel}
 
 \usepackage{csquotes}
 \usepackage[backend=biber,style=apa,citestyle=authoryear]{biblatex}
 \addbibresource{referencias.bib}
 
 \usepackage{hyperref}
+\input{graficas/colores.tex}
 
-% Carga del motor de cálculo en Lua y procesamiento del CSV (asignando la tabla global 'sus')
+% Carga del motor de cálculo en Lua, procesamiento del CSV y definición de macros
 \directlua{
   sus = dofile("sus-calculos.lua")
   sus.cargar_csv("datos/respuestas.csv")
+  sus.definir_macros()
 }
 
-% Definición de macros con los valores calculados para uso seguro en el documento
-\directlua{
-  local s = sus.stats
-  local d = sus.datos
-  local function def(name, value)
-    tex.sprint("\\def\\" .. name .. "{" .. value .. "}")
-  end
-  def("susN", s.n)
-  def("susMedia", sus.formato_decimal(s.media, 1))
-  def("susDesviacion", sus.formato_decimal(s.desviacion, 2))
-  def("susMinimo", sus.formato_decimal(s.minimo, 1))
-  def("susMaximo", sus.formato_decimal(s.maximo, 1))
-  def("susNotaMedia", sus.escapar_latex(s.nota_media))
-  def("susAdjetivoMedia", sus.escapar_latex(s.adjetivo_media))
-  def("susAceptabilidadMedia", sus.escapar_latex(s.aceptabilidad_media))
-  if #d > 0 then
-    local p = d[1]
-    def("susEjId", sus.escapar_latex(p.id))
-    def("susEjPerfil", sus.escapar_latex(p.perfil))
-    def("susEjPuntuacion", sus.formato_decimal(p.puntuacion, 1))
-    def("susEjNota", sus.escapar_latex(p.nota))
-    def("susEjAdjetivo", sus.escapar_latex(p.adjetivo))
-    def("susEjAceptabilidad", sus.escapar_latex(p.aceptabilidad))
-  end
-}
-
-\input{graficas/colores.tex}
-
-% Colores para hyperref (requieren que colores.tex se haya cargado)
+% Colores para hyperref
 \hypersetup{
     colorlinks=true,
     linkcolor=susPrincipal,

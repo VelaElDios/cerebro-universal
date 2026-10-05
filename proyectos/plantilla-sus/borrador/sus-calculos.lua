@@ -35,7 +35,6 @@ end
 -- Parser simple de líneas CSV respetando comillas dobles
 local function parse_csv_line(line)
     local campos = {}
-    local pattern = '([^",]+)|"([^"]*)"'
     local c = 1
     local longitud = #line
     while c <= longitud do
@@ -76,15 +75,6 @@ function sus.obtener_nota(puntuacion)
 end
 
 -- Determina el adjetivo según Bangor, Kortum y Miller (2009)
--- Medias originales: El peor imaginable 12.5, Horrible 20.3, Pobre 35.7, OK 50.9, Bueno 71.4, Excelente 85.5, El mejor imaginable 90.9
--- Puntos medios como límites:
--- >= 88.2: El mejor imaginable
--- >= 78.45: Excelente
--- >= 61.15: Bueno
--- >= 43.3: OK
--- >= 28.0: Pobre
--- >= 16.4: Horrible
--- resto: El peor imaginable
 function sus.obtener_adjetivo(puntuacion)
     if puntuacion >= 88.2 then return "El mejor imaginable"
     elseif puntuacion >= 78.45 then return "Excelente"
@@ -244,10 +234,53 @@ function sus.cargar_csv(ruta)
         aceptabilidad_media = sus.obtener_aceptabilidad(media)
     }
 
-    -- Generar resultados.json automáticamente al compilar
     sus.exportar_json()
-
     return true
+end
+
+-- ============================================================================
+-- Definición segura de macros LaTeX (evita código Lua directo en los .tex)
+-- ============================================================================
+function sus.definir_macros()
+    local s = sus.stats
+    local d = sus.datos
+    local function def(name, value)
+        tex.sprint("\\def\\" .. name .. "{" .. tostring(value) .. "}")
+    end
+    
+    def("susN", s.n or 0)
+    def("susMedia", sus.formato_decimal(s.media, 1))
+    def("susDesviacion", sus.formato_decimal(s.desviacion, 2))
+    def("susMinimo", sus.formato_decimal(s.minimo, 1))
+    def("susMaximo", sus.formato_decimal(s.maximo, 1))
+    def("susNotaMedia", sus.escapar_latex(s.nota_media))
+    def("susAdjetivoMedia", sus.escapar_latex(s.adjetivo_media))
+    def("susAceptabilidadMedia", sus.escapar_latex(s.aceptabilidad_media))
+    
+    -- Color para el donut según la media
+    local m = s.media or 0
+    local color_donut = "susRojo"
+    if m >= 70 then color_donut = "susVerde"
+    elseif m >= 50 then color_donut = "susAmarillo" end
+    def("susColorMedia", color_donut)
+
+    -- Valores brutos para pgfplots y gráficos (punto decimal)
+    def("susMediaRaw", string.format("%.2f", s.media or 0))
+    def("susMinimoRaw", string.format("%.2f", s.minimo or 0))
+    def("susMaximoRaw", string.format("%.2f", s.maximo or 0))
+
+    if #d > 0 then
+        local p = d[1]
+        def("susEjId", sus.escapar_latex(p.id))
+        def("susEjPerfil", sus.escapar_latex(p.perfil))
+        def("susEjPuntuacion", sus.formato_decimal(p.puntuacion, 1))
+        def("susEjNota", sus.escapar_latex(p.nota))
+        def("susEjAdjetivo", sus.escapar_latex(p.adjetivo))
+        def("susEjAceptabilidad", sus.escapar_latex(p.aceptabilidad))
+        
+        def("susPrimerId", sus.escapar_latex(d[1].id))
+        def("susUltimoId", sus.escapar_latex(d[#d].id))
+    end
 end
 
 -- ============================================================================
@@ -263,24 +296,6 @@ function sus.imprimir_errores()
         txt = txt .. "\\end{itemize}\\end{tcolorbox}"
         tex.sprint(txt)
     end
-end
-
-function sus.get_stat(campo, decimales)
-    if not sus.stats[campo] then
-        tex.sprint("---")
-        return
-    end
-    local val = sus.stats[campo]
-    if type(val) == "number" then
-        tex.sprint(sus.formato_decimal(val, decimales or 1))
-    else
-        tex.sprint(sus.escapar_latex(tostring(val)))
-    end
-end
-
-function sus.get_stat_raw(campo)
-    local val = sus.stats[campo] or 0
-    tex.sprint(string.format("%.2f", val))
 end
 
 function sus.imprimir_tabla_perfiles()
@@ -359,6 +374,31 @@ function sus.imprimir_etiquetas_barras()
         table.insert(lista, sus.escapar_latex(reg.id))
     end
     tex.sprint(table.concat(lista, ", "))
+end
+
+-- ============================================================================
+-- Funciones para gráficas: devuelven valores crudos (punto decimal) o formateados
+-- ============================================================================
+function sus.get_stat_raw(key)
+    local s = sus.stats
+    if key == "media" then return string.format("%.2f", s.media or 0)
+    elseif key == "minimo" then return string.format("%.2f", s.minimo or 0)
+    elseif key == "maximo" then return string.format("%.2f", s.maximo or 0)
+    elseif key == "desviacion" then return string.format("%.4f", s.desviacion or 0)
+    else return "0" end
+end
+
+function sus.get_stat(key, decimales)
+    local s = sus.stats
+    decimales = decimales or 1
+    if key == "media" then return sus.formato_decimal(s.media, decimales)
+    elseif key == "minimo" then return sus.formato_decimal(s.minimo, decimales)
+    elseif key == "maximo" then return sus.formato_decimal(s.maximo, decimales)
+    elseif key == "desviacion" then return sus.formato_decimal(s.desviacion, decimales)
+    elseif key == "nota_media" then return sus.escapar_latex(s.nota_media)
+    elseif key == "adjetivo_media" then return sus.escapar_latex(s.adjetivo_media)
+    elseif key == "aceptabilidad_media" then return sus.escapar_latex(s.aceptabilidad_media)
+    else return "" end
 end
 
 return sus
