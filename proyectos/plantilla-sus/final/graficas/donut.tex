@@ -1,0 +1,33 @@
+% ============================================================================
+% graficas/donut.tex
+% Gráfica Donut: Media SUS en grande, arco proporcional, nota y adjetivo
+% Puede incluirse con \input{graficas/donut.tex} en documentos y presentaciones
+-- Colores se cargan en el preámbulo principal (graficas/colores.tex)
+-- ============================================================================
+
+\begin{tikzpicture}[scale=0.9, every node/.style={transform shape}]
+  % Usar macros definidas por sus.definir_macros() (valores con punto decimal)
+  \pgfmathsetmacro{\anguloMedia}{\susMediaRaw * 3.6}
+  \pgfmathsetmacro{\anguloFin}{90 - \anguloMedia}
+
+  % Anillo de fondo (100% de la escala)
+  \draw[line width=12mm, susGrisFondo] (0,0) circle (2.2cm);
+
+  % Arco de puntuación obtenida (usa color definido en macro \susColorMedia)
+  \ifdim\anguloMedia pt>0.5pt
+    \draw[line width=12mm, \susColorMedia] (90:2.2cm) arc (90:\anguloFin:2.2cm);
+  \fi
+
+  % Textos centrales
+  \node[align=center] at (0, 0.25) {
+    {\fontsize{26}{30}\selectfont\bfseries \susMedia}\\[2pt]
+    {\footnotesize\color{gray} sobre 100}
+  };
+
+  % Calificación y adjetivo Bangor / Sauro-Lewis en la parte inferior
+  \node[align=center, text=susTexto] at (0, -3.2) {
+    {\large\bfseries Nota: \susNotaMedia}\\[3pt]
+    {\normalsize\itshape \susAdjetivoMedia}\\[2pt]
+    {\footnotesize\bfseries (\susAceptabilidadMedia)}
+  };
+\end{tikzpicture}

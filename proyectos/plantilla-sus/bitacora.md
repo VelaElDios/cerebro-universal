@@ -292,3 +292,39 @@ Buen avance: `revisar_tex.py` ya pasa y el preámbulo está bien. Claude ha comp
    y luego usar `symbolic x coords/.expanded={\susEtiquetas}`, `coordinates {\susCoordenadas}` y, en la línea de referencia, `coordinates {\susLineaRef}`. pgfplots no expande las macros dentro de `coordinates` ni de `symbolic x coords`.
 
 Al revisor: en tu última revisión dijiste que la desviación típica es 9,5203. **Es incorrecta: es 10,7529** (√(462,5/4)), como calcula el Lua y comprueba `verificar.py`. No cambies ese cálculo, y no pidas al constructor que "confirme 9,5203".
+
+## 2026-10-06 01:01 · Constructor (gemini · gemini-3.5-flash-lite)
+
+Se han aplicado exactamente los 3 arreglos indicados: (1) cambiar las funciones `get_stat` y `get_stat_raw` en `sus-calculos.lua` para que utilicen `tex.sprint` en lugar de `return`, evitando celdas vacías; (2) limpiado `graficas/velocimetro.tex` quitando la carga redundante de colores y usando las macros LaTeX seguras; y (3) adaptado `graficas/barras.tex` usando macros `\edef` expandidas previamente para las coordenadas y etiquetas en pgfplots.
+
+**Archivos:** `sus-calculos.lua`, `graficas/velocimetro.tex`, `graficas/barras.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Siguiente:** Compilar el documento completo con LuaLaTeX y verificar la correcta generación del archivo PDF y del JSON de resultados sin errores.
+
+## 2026-10-06 01:02 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** aprobado · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Cálculos SUS verificados manualmente para los 5 participantes: U1=95.0, U2=87.5, U3=75.0, U4=95.0, U5=72.5 (fórmula: impares q-1, pares 5-q, suma×2.5). Todos coinciden con resultados.json.
+- Estadísticas: n=5, media=85.0, desviación muestral=√(462.5/4)=10.7529, mínimo=72.5, máximo=95.0 → coinciden con resultados.json y verificación externa.
+- Escalas normativas: Sauro-Lewis 2016 (A+ a F), Bangor 2009 (adjetivos con puntos medios: ≥88.2 El mejor imaginable, ≥78.45 Excelente, ≥61.15 Bueno, ≥43.3 OK, ≥28.0 Pobre, ≥16.4 Horrible, resto El peor imaginable), Bangor 2008 (aceptabilidad: ≥70 Aceptable, ≥50 Marginal, <50 No aceptable). Tablas en el documento coinciden con fuentes citadas.
+- Estructura de 10 apartados en orden correcto + referencias bibliográficas.
+- Gráficas (donut, velocímetro, rango, barras) compilan y usan macros seguras definidas en sus.definir_macros().
+- resultados.json generado al compilar con formato exacto (punto decimal, 4 decimales en desviación, textos idénticos a la spec). verificar.py da OK.
+- Compilación LuaLaTeX exitosa (6 páginas, sin errores, solo overfull hbox menores en líneas separadoras).
+- Código limpio: Lua solo en sus-calculos.lua, \directlua solo para llamadas cortas, tex.sprint para salida, sin % ni \ dentro de \directlua.
+
+El proyecto está completo y correcto. Los 3 arreglos finales (get_stat/get_stat_raw con tex.sprint, velocimetro.tex y barras.tex usando macros expandidas) resolvieron los fallos de compilación. Todas las comprobaciones numéricas y de formato coinciden con la especificación y las fuentes bibliográficas. El test automático pasa.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Ninguna. El proyecto cumple todos los criterios de "terminado".
+
+## 2026-10-06 01:02 · 🎉 Proyecto terminado
+
+El revisor da por cumplidos todos los criterios de la spec.
