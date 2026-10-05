@@ -222,3 +222,15 @@ El único fallo es técnico: el uso de `%s` dentro de un string en `\directlua` 
 - Confirmar que resultados.json se genera y coincide con los valores esperados.
 - Verificar que contenido-sus.tex puede incluirse correctamente en un documento padre que cargue sus-calculos.lua y el CSV antes del \input.
 - (Fase 2 futura) Crear defensa-sus.tex en Beamer con 2-3 diapositivas usando las mismas gráficas.
+
+## Revisión humana (Javier)
+
+Compilado de verdad con el mismo TeX Live que usa GitHub. Lleváis 4 pasos sin compilar porque cada arreglo mete código Lua dentro de `\directlua{...}`. Ahora falla en `anexo-sus.tex:53` con `attempt to get length of a number value`: dentro de `\directlua` TeX convierte `#` en `##` y `\\` en otra cosa, así que `#d` llega a Lua como `##d`. Prioridad máxima, en este orden:
+
+1. **Regla sin excepciones:** dentro de `\directlua{...}` solo puede ir UNA llamada corta a una función de `sus-calculos.lua`, sin `%`, `\`, `#`, `~` ni llaves internas. Ejemplo válido: `\directlua{sus.definir_macros()}`. Nada de `local`, `function`, `tex.sprint` ni cadenas.
+2. Mover el bloque de las líneas 29-53 de `anexo-sus.tex` (el que define `\susN`, `\susMedia`, etc.) a una función `sus.definir_macros()` en `sus-calculos.lua`, y llamarla con `\directlua{sus.definir_macros()}` justo después de cargar el CSV. Lo mismo en `contenido-sus.tex`: quitar su bloque `\directlua` largo de la línea 7. Probado: con esto ese error desaparece.
+3. Que `sus.definir_macros()` defina también los valores numéricos en crudo para las gráficas, con punto decimal (por ejemplo `\susMediaRaw`, `\susMinimoRaw`, `\susMaximoRaw`) y el nombre del color según la aceptabilidad (`\susColorMedia` = susVerde, susAmarillo o susRojo). Así las gráficas no necesitan `\directlua` ni `\pgfmathsetmacro` con cadenas.
+4. Las gráficas (`donut`, `rango`, `velocimetro`, `barras`) no pueden usar `\directlua` dentro de `\edef`, `\pgfmathsetmacro`, `\ifdim` ni opciones de TikZ: usar solo las macros del punto 3. En `donut.tex`, el `\pgfmathsetmacro{\colorDonut}{... ? "susVerde" : ...}` no funciona: usar `\susColorMedia`.
+5. `graficas/colores.tex` hace `\usepackage{xcolor}` y lo cargan `barras.tex` (en mitad del documento): error "Can be used only in preamble". Quitar ese `\usepackage` (xcolor ya lo carga tikz), cargar `colores.tex` una sola vez en el preámbulo de `anexo-sus.tex` y quitar los `\input{graficas/colores.tex}` de las gráficas.
+6. Borrar el archivo basura `anexo-sus.bcf-SAVE-ERROR`.
+7. Al revisor: lee estos puntos y no metas código en `\directlua` en tus correcciones. Aprueba solo si la prueba pasa.
