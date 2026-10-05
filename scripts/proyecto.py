@@ -3,7 +3,8 @@ Orquestador de proyectos del Cerebro Universal.
 
 Cada ejecución da UN paso:
   1. CONSTRUCTOR avanza el borrador un poco (según spec, bitácora y errores)
-  2. Se ejecuta la prueba (compilar LaTeX, tests...) sobre el borrador
+  2. Se ejecuta la prueba (compilar LaTeX, tests...) sobre el borrador. Si falla, el
+     constructor recibe el error y lo intenta arreglar (hasta max_intentos en total)
   3. REVISOR (otra IA) revisa, corrige lo evidente y deja tareas
   4. Si el borrador compila y está aprobado, se copia a final/
 
@@ -104,6 +105,25 @@ def pausar(cfg_ruta: Path, cfg: dict, bitacora: Path):
                   "Para continuar: en `proyecto.json`, subir `max_pasos` y volver a poner "
                   "`\"estado\": \"en-construccion\"`.")
     print(f"Proyecto pausado: {cfg['pasos']}/{cfg['max_pasos']} pasos.")
+
+
+def resumen_prueba(ok: bool, informe: str) -> str:
+    """Una línea para la bitácora: ✅ o ❌ con el primer error que encuentre en el informe."""
+    if ok:
+        return "✅ pasa la prueba"
+    lineas = [l.strip() for l in informe.splitlines()]
+    candidatas = []
+    if "Errores:" in lineas:
+        candidatas = lineas[lineas.index("Errores:") + 1:]
+    elif "Final de la salida:" in lineas:
+        candidatas = [l for l in lineas[lineas.index("Final de la salida:") + 1:]
+                      if re.search(r"ERROR|FALLID|Error|error|^-", l)] or lineas[-3:]
+    else:
+        candidatas = lineas[1:]
+    # Mejor una línea con archivo:línea o "!" (error de TeX) que el ruido de alrededor
+    importantes = [l for l in candidatas if re.search(r"^!|^\S+\.(tex|sty|cls|lua):\d+:|ERROR|FALLID", l)]
+    primera = next((l for l in importantes + candidatas if l), "falla")
+    return "❌ " + (primera[:150] + "…" if len(primera) > 150 else primera)
 
 
 def probar(cfg: dict, carpeta: Path) -> tuple[bool, str]:
@@ -211,15 +231,56 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     paso = nucleo.parsear(texto)
     cambios = nucleo.aplicar(borrador, paso["archivos"], paso["borrar"], maximo)
     s = paso["secciones"]
+    print(f"Constructor: {len(cambios)} cambios")
+
+    # ---------- 2. PRUEBA + INTENTOS DE ARREGLO ----------
+    # Si la prueba falla, el constructor recibe el error en el momento y puede corregirlo
+    # (hasta max_intentos en total) en vez de esperar al siguiente paso.
+    ok, prueba = probar(cfg, borrador)
+    intentos = [f"intento 1: {resumen_prueba(ok, prueba)}"]
+    print(f"Prueba tras constructor: {'OK' if ok else 'FALLA'}")
+    max_intentos = cfg.get("max_intentos", 3)
+
+    for n in range(2, max_intentos + 1):
+        if ok:
+            break
+        mensaje = f"""# TU PASO NO PASA LA PRUEBA (intento {n} de {max_intentos})
+Corrige SOLO lo necesario para que la prueba pase. No añadas funcionalidades nuevas.
+Lee el error con atención: indica archivo y línea. Si un arreglo anterior no funcionó, prueba otro enfoque.
+
+# LO QUE HABÍAS HECHO EN ESTE PASO
+{s.get('RESUMEN', '')}
+
+# RESULTADO DE LA PRUEBA
+{prueba}
+
+# SPEC DEL PROYECTO
+{spec}
+
+# ARCHIVOS ACTUALES DEL BORRADOR
+{nucleo.volcar(nucleo.leer_carpeta(borrador))}"""
+        try:
+            texto, ia, modelo = prov.pedir_rol("constructor", config, proveedores,
+                                               SISTEMA_CONSTRUCTOR.format(maximo=maximo), mensaje)
+        except RuntimeError as e:
+            intentos.append(f"intento {n}: no hay IA disponible ({e})")
+            break
+        arreglo = nucleo.parsear(texto)
+        nuevos = nucleo.aplicar(borrador, arreglo["archivos"], arreglo["borrar"], maximo)
+        if not nuevos:
+            intentos.append(f"intento {n}: el constructor no cambió ningún archivo")
+            break
+        cambios += [c for c in nuevos if c not in cambios]
+        ok, prueba = probar(cfg, borrador)
+        intentos.append(f"intento {n}: {resumen_prueba(ok, prueba)} "
+                        f"(tocó {', '.join(f'`{c}`' for c in nuevos)})")
+        print(f"Prueba tras intento {n}: {'OK' if ok else 'FALLA'}")
+
     nucleo.anotar(bitacora, f"Constructor ({ia} · {modelo})",
                   f"{s.get('RESUMEN', '(sin resumen)')}\n\n"
                   f"**Archivos:** {', '.join(f'`{c}`' for c in cambios) or 'ninguno'}\n\n"
+                  f"**Intentos:**\n" + "\n".join(f"- {i}" for i in intentos) + "\n\n"
                   f"**Siguiente:** {s.get('SIGUIENTE', '-')}")
-    print(f"Constructor: {len(cambios)} cambios")
-
-    # ---------- 2. PRUEBA ----------
-    ok, prueba = probar(cfg, borrador)
-    print(f"Prueba tras constructor: {'OK' if ok else 'FALLA'}")
 
     # ---------- 3. REVISOR ----------
     mensaje = f"""# SPEC DEL PROYECTO
@@ -231,6 +292,8 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
 # LO QUE ACABA DE HACER EL CONSTRUCTOR
 {s.get('RESUMEN', '')}
 Archivos tocados: {', '.join(cambios) or 'ninguno'}
+Intentos de compilar/probar en este paso:
+{chr(10).join(intentos)}
 
 # RESULTADO DE LA PRUEBA
 {prueba}
@@ -267,6 +330,9 @@ Archivos tocados: {', '.join(cambios) or 'ninguno'}
                                 "su aprobado y su \"terminado\" no cuentan en este paso.")
         veredicto = f"cambios (había dicho: {veredicto})"
         terminado = False
+    elif not ok and veredicto.startswith("aprobado"):
+        # Nunca se aprueba algo que no pasa la prueba
+        veredicto = f"cambios (había dicho: {veredicto}, pero la prueba falla)"
 
     # ---------- 4. PROMOCIÓN A FINAL ----------
     promocionado = ok and (veredicto.startswith("aprobado") or bool(correcciones))
