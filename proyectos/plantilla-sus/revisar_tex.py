@@ -14,6 +14,7 @@ lo que va tras %, interpreta las \\...), así que solo se permiten llamadas simp
 
 Nada de local, function, if, for, tex.sprint con cadenas, %, \\, # ni ~.
 (Usarlo dentro de \\edef o \\pgfmathsetmacro sí funciona en LuaTeX: no se revisa.)
+También avisa de líneas que empiezan por -- o == (comentarios de Lua que LaTeX imprime).
 
 Sale con código 1 e imprime archivo:línea de cada problema, o con 0 si todo está bien.
 Uso:  python3 revisar_tex.py   (desde cualquier carpeta)
@@ -61,6 +62,12 @@ def revisar(ruta: Path) -> list[str]:
             muestra = " ".join(contenido.split())[:90]
             problemas.append(f"{nombre}:{num}: \\directlua con código Lua dentro "
                              f"(solo se permiten llamadas a funciones de sus-calculos.lua): {muestra}")
+
+    # Comentarios escritos como en Lua (-- ...) o líneas de ===: LaTeX los imprime como texto
+    for num, linea in enumerate(texto.splitlines(), start=1):
+        if re.match(r"\s*(--|==)", linea):
+            problemas.append(f"{nombre}:{num}: línea que empieza por '{linea.strip()[:2]}': LaTeX la imprime "
+                             f"como texto (en LaTeX los comentarios empiezan por %): {linea.strip()[:60]}")
     return problemas
 
 

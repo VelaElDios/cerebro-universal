@@ -73,8 +73,10 @@ U2,Encargado,4,2,5,1,5,1,4,2,4,1,"Interfaz limpia y ágil"
 8. **Perfiles**: tabla generada desde el CSV con id, perfil y comentario.
 9. **Tabla de resultados**: por participante, sus 10 respuestas, su puntuación SUS, nota, adjetivo y aceptabilidad. Al final: media, desviación típica, mínimo y máximo.
 10. **Interpretación de resultados**: texto plantilla que incluye automáticamente la media, la nota y la aceptabilidad calculadas, con huecos para el análisis cualitativo.
+    - Las frases de valoración **se eligen en Lua según los datos**: si la media está por encima o por debajo de 68, y un texto distinto para aceptable, marginal y no aceptable. Nunca una conclusión fija ("satisface rigurosamente...") que sería falsa con otros datos.
+    - Los huecos para el análisis del autor se marcan visibles en rojo, por ejemplo `\textcolor{red}{[Completar: tareas con más problemas]}`.
 
-Más un apartado de **referencias bibliográficas** con todas las fuentes citadas.
+Más un apartado de **referencias bibliográficas** con todas las fuentes citadas. Ninguna figura ni tabla puede quedar en medio de la bibliografía: `\usepackage{placeins}` y `\FloatBarrier` justo antes de `\printbibliography`.
 
 ## Gráficas (reutilizables en el anexo y en la defensa)
 
@@ -111,7 +113,7 @@ Al compilar, `sus-calculos.lua` debe escribir `resultados.json` en la carpeta de
 (`verificar.py`, que las IAs no pueden ver ni modificar) recalcula todo desde el CSV y lo compara:
 si no cuadra, la prueba falla.
 
-Formato exacto (números con punto decimal, sin redondear; textos idénticos a los de abajo):
+Formato exacto (números con punto decimal y **sin redondear**: escribir media, desviación, mínimo, máximo y puntuaciones con `%.6f`, nunca `%.1f`; textos idénticos a los de abajo):
 
 ```json
 {
@@ -142,3 +144,6 @@ Formato exacto (números con punto decimal, sin redondear; textos idénticos a l
 - Las tablas de transformación coinciden con las fuentes citadas.
 - Los 10 apartados están, en el orden indicado.
 - `resultados.json` se genera al compilar y pasa `verificar.py`.
+- Pasa `probar_datos_raros.py`: compila y cuadra también con `pruebas/respuestas-raras.csv` (media con decimales, notas bajas, caracteres especiales, una fila inválida).
+- En el PDF no aparece texto de comentarios ni código (`revisar_tex.py` lo comprueba en parte), ni figuras dentro de la bibliografía, y las etiquetas de las gráficas no se pisan.
+- La Fase 2 está hecha: `defensa-sus.tex` compila (la prueba lo compila si existe).

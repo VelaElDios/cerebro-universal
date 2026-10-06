@@ -328,3 +328,23 @@ El proyecto está completo y correcto. Los 3 arreglos finales (get_stat/get_stat
 ## 2026-10-06 01:02 · 🎉 Proyecto terminado
 
 El revisor da por cumplidos todos los criterios de la spec.
+
+## Revisión humana (Javier)
+
+**Proyecto reabierto.** El revisor lo marcó terminado, pero Claude ha probado el PDF con otros datos y quedan fallos que el revisor no puede ver (no mira el PDF). Además hay dos pruebas nuevas: `probar_datos_raros.py` (vuelve a compilar con `pruebas/respuestas-raras.csv`: media 38,75, notas bajas, `& % $ # _ { } ~ ^` y comillas, una fila inválida) y `revisar_tex.py` ahora también falla si una línea empieza por `--` o `==`. La spec está actualizada. Arreglos, en este orden (los marcados con ✔ los ha probado Claude en una copia y funcionan):
+
+1. ✔ **Comentarios impresos como texto:** `graficas/donut.tex` líneas 5-6 y `graficas/rango.tex` líneas 4-5 empiezan por `--` (comentario de Lua). En el PDF sale «-- Colores se cargan en el preámbulo...». En LaTeX los comentarios empiezan por `%`.
+2. ✔ **JSON redondeado:** `sus.exportar_json()` escribe media, mínimo, máximo y puntuaciones con `%.1f`. Con los datos raros la media es 38,75 y el JSON dice 38.8 → falla la prueba. Usar `%.6f` en todos los números (la desviación también).
+3. ✔ **Figura dentro de la bibliografía:** la Figura 4 (barras) cae en medio de las referencias (página 6, entre Bangor 2009 y Brooke). Añadir `\usepackage{placeins}` en el preámbulo y `\FloatBarrier` justo antes de `\printbibliography`.
+4. ✔ **Línea del 68 en `barras.tex`:** sale como dos barras punteadas en U1 y en el último participante, porque el `\addplot` hereda el estilo `ybar`. Sustituir ese `\addplot` por una línea de lado a lado (probado):
+   `\draw[susReferencia, dashed, line width=1.3pt] ({rel axis cs:0,0} |- {axis cs:\susPrimerId,68}) -- ({rel axis cs:1,0} |- {axis cs:\susPrimerId,68}) node[pos=1, above left, font=\scriptsize\bfseries] {Referencia SUS (68)};`
+   y quitar el `\node` antiguo de «Media estándar de referencia (68)», que se pisa con las barras. Que la etiqueta no tape los números de las barras.
+5. ✔ **Coma decimal en fórmulas:** `$s = \susDesviacion$` sale «s = 10, 75» (espacio tras la coma). Añadir `\usepackage{icomma}` en el preámbulo.
+6. ✔ **Espacio tras macros:** «30,0puntos». Escribir `\susMinimo{} puntos` y `\susMaximo{} puntos` (y revisar cualquier macro seguida de texto).
+7. **Conclusión fija en el apartado 10:** siempre dice «al superar con amplitud la media de 68... satisfacen rigurosamente los requisitos», aunque la media sea 38,75 y No aceptable. Generar las frases de valoración en Lua según los datos (encima/debajo de 68; texto distinto para aceptable, marginal y no aceptable) mediante una función de `sus-calculos.lua` (p. ej. `sus.imprimir_conclusion()`), y dejar los huecos del análisis del autor en rojo: `\textcolor{red}{[Completar: ...]}`. Lo mismo en `contenido-sus.tex`.
+8. **Velocímetro:** las etiquetas «No aceptable», «Marginal» y «Aceptable» se pisan con los números de la escala y entre sí. Colocarlas fuera del arco o más pequeñas para que se lean.
+9. Borrar el archivo basura con `<<<BORRAR anexo-sus.bcf-SAVE-ERROR>>>`.
+10. Menor: `sus.escapar_latex` cambia `\` por `\textbackslash{}` y después escapa sus llaves (sale `\textbackslash\{\}`). Escapar `\` con un marcador temporal o al final.
+11. **Fase 2** (cuando 1-10 pasen la prueba): `defensa-sus.tex` en Beamer, 2-3 diapositivas (resultado global con el donut, rango y velocímetro, conclusiones) reutilizando `graficas/*.tex` y `sus-calculos.lua`. La prueba ya la compila si existe.
+
+Al revisor: no marques terminado mientras falte algo de esta lista o la Fase 2. Si la prueba falla, el veredicto es "cambios".

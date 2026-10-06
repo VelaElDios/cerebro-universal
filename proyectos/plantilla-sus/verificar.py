@@ -13,6 +13,7 @@ Qué hace:
   3. Si algo no cuadra, imprime cada diferencia y sale con código 1. Si todo cuadra, sale con 0.
 
 Uso (desde cualquier carpeta):  python3 verificar.py
+También:  python3 verificar.py RUTA_CSV RUTA_JSON   (lo usa probar_datos_raros.py)
 Solo usa la biblioteca estándar de Python.
 """
 
@@ -79,10 +80,10 @@ def aceptabilidad(p):
 # Cálculo independiente desde el CSV
 # ---------------------------------------------------------------------------
 
-def calcular_esperado():
+def calcular_esperado(ruta_csv=None):
     """Devuelve (participantes, estadísticas, errores_csv) calculados desde el CSV."""
     participantes, errores = [], []
-    with open(CSV, encoding="utf-8-sig", newline="") as f:
+    with open(ruta_csv or CSV, encoding="utf-8-sig", newline="") as f:
         for num, fila in enumerate(csv.DictReader(f), start=2):
             pid = (fila.get("id") or "").strip()
             respuestas = []
@@ -133,11 +134,14 @@ def comparar(nombre, esperado, obtenido, fallos):
 
 
 def main():
+    global CSV, JSON
+    if len(sys.argv) == 3:  # rutas alternativas (prueba con datos raros)
+        CSV, JSON = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve()
     if not CSV.exists():
-        print(f"ERROR: no existe {CSV.relative_to(CARPETA)}")
+        print(f"ERROR: no existe {CSV}")
         return 1
     if not JSON.exists():
-        print(f"ERROR: no existe {JSON.relative_to(CARPETA)}. "
+        print(f"ERROR: no existe {JSON.name}. "
               "El documento debe exportarlo al compilar (ver spec.md).")
         return 1
 

@@ -23,3 +23,6 @@ venv/
 
 # El PDF del borrador no se sube (el de final/ si)
 proyectos/*/borrador/*.pdf
+
+# Descargas de Claude (se guardan en el vault pero no se suben)
+Claude outputs/
