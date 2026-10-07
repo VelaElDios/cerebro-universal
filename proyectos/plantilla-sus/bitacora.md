@@ -395,3 +395,48 @@ El builder ha corregido correctamente los items 1 y 2 (comentarios Lua impresos 
 7. Borrar archivo basura `anexo-sus.bcf-SAVE-ERROR` si existe.
 8. Corregir `sus.escapar_latex`: usar marcador temporal para `\` o escaparlo al final para evitar `\textbackslash\{\}`.
 9. Crear `defensa-sus.tex` (Beamer, 2-3 diapositivas) reutilizando graficas/*.tex y sus-calculos.lua.
+
+## 2026-10-08 00:28 · Constructor (gemini · gemini-3.5-flash-lite)
+
+Se ha mejorado `sus-calculos.lua` corrigiendo la función `escapar_latex` para evitar el doble escape de llaves en `\textbackslash`, y se ha implementado `sus.imprimir_conclusion()` para generar la interpretación dinámica según la media y la aceptabilidad, marcando huecos cualitativos en rojo. Además, se han actualizado `anexo-sus.tex` y `contenido-sus.tex` añadiendo los paquetes `icomma` y `placeins` con `\FloatBarrier` antes de la bibliografía, espaciado correcto en macros (`\susMinimo{} puntos`) y llamada a la nueva conclusión dinámica.
+
+**Archivos:** `sus-calculos.lua`, `anexo-sus.tex`, `contenido-sus.tex`
+
+**Intentos:**
+- intento 1: ❌ ./anexo-sus.tex:262: LaTeX Error: Something's wrong--perhaps a missing \item.
+- intento 2: ✅ pasa la prueba (tocó `sus-calculos.lua`)
+
+**Siguiente:** En el siguiente paso:
+1. Actualizar `graficas/barras.tex` con la solución `\draw` para cruzar todo el eje en la línea 68 y limpiar el nodo superpuesto.
+2. Ajustar `graficas/velocimetro.tex` para que las etiquetas de las zonas de aceptabilidad no se pisen con los números de la escala.
+3. Crear `defensa-sus.tex` en Beamer (Fase 2) reutilizando las gráficas y estadísticas de `sus-calculos.lua`.
+
+## 2026-10-08 00:29 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila
+
+**Comprobaciones:**
+- Compilación LuaLaTeX: OK (6 páginas, sin errores)
+- Test datos normales: OK (5 participantes, media 85.0, DT 10.7529, min 72.5, max 95.0)
+- Test datos raros: OK (4 participantes, media 38.75, DT 31.72, min 0.0, max 75.0)
+- JSON con 6 decimales: OK (formato %.6f en sus.exportar_json)
+- Paquete icomma en preámbulo: OK (anexo-sus.tex y contenido-sus.tex)
+- Paquete placeins + \FloatBarrier antes de bibliografía: OK (anexo-sus.tex)
+- Espacio tras macros: OK (\susMinimo{} puntos y \susMaximo{} puntos en ambos .tex)
+- Conclusión dinámica en Lua: OK (sus.imprimir_conclusion() implementada y llamada)
+- escapar_latex corregido: OK (usa marcador @@BACKSLASH@@ para evitar \textbackslash\{\})
+- Comentarios Lua (--) en gráficas: OK (donut.tex y rango.tex usan %)
+- graficas/barras.tex: PENDIENTE — sigue usando \addplot para línea de referencia (produce dos barras punteadas en U1 y último participante), no la solución con \draw que cruza todo el eje
+- graficas/velocimetro.tex: PENDIENTE — etiquetas "No aceptable", "Marginal", "Aceptable" en radio 1.25cm se pisan con marcas de escala (radio 2.95cm) y entre sí
+- Archivo basura anexo-sus.bcf-SAVE-ERROR: NO VERIFICADO (no aparece en listado, pero no se confirma borrado explícito)
+- Fase 2 (defensa-sus.tex): NO EXISTE
+
+El builder ha resuelto correctamente los items 1, 2, 3, 5, 6, 7, 10 de la lista anterior (comentarios Lua, JSON 6 decimales, icomma, placeins/FloatBarrier, espaciado macros, conclusión dinámica, escapar_latex). Los tests automáticos pasan. Quedan 4 items críticos pendientes que los tests no detectan pero son criterios de "terminado" en la spec: (1) barras.tex usa \addplot en lugar de \draw para la línea de referencia, (2) velocimetro.tex tiene etiquetas solapadas, (3) falta defensa-sus.tex (Fase 2), (4) archivo basura sin confirmar borrado. El proyecto NO está terminado.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+1. Corregir graficas/barras.tex: reemplazar el \addplot de la línea de referencia por \draw que cruce todo el eje horizontal (solución probada por Claudio en bitácora).
+2. Ajustar graficas/velocimetro.tex: mover/redimensionar etiquetas "No aceptable", "Marginal", "Aceptable" para que no se pisen con números de la escala ni entre sí (ej. colocarlas fuera del arco o reducir tamaño/fuente).
+3. Crear defensa-sus.tex en Beamer (2-3 diapositivas) reutilizando graficas/*.tex y sus-calculos.lua (resultado global con donut, rango y velocímetro, conclusiones).
+4. Confirmar borrado de anexo-sus.bcf-SAVE-ERROR si existe.

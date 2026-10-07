@@ -1,0 +1,461 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{apa/apasortcite//global/global}
+    \entry{Bangor2008}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94606260166acdc7254a0c869dad3cb}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe57e0a1f81b28a398e283890bf7239}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{fullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{bibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorbibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authornamehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{authorfullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Interaction}
+      \field{number}{6}
+      \field{title}{An Empirical Evaluation of the System Usability Scale}
+      \field{volume}{24}
+      \field{year}{2008}
+      \field{pages}{574\bibrangedash 594}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1080/10447310802205776
+      \endverb
+    \endentry
+    \entry{Bangor2009}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94606260166acdc7254a0c869dad3cb}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe57e0a1f81b28a398e283890bf7239}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{fullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{bibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorbibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authornamehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{authorfullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Usability Studies}
+      \field{number}{3}
+      \field{title}{Determining What Individual {SUS} Scores Mean: Adding an Adjective Rating Scale}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{114\bibrangedash 123}
+      \range{pages}{10}
+    \endentry
+    \entry{Brooke1996}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=813064283275c281401d7a7483420c67}{%
+           family={Brooke},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=f4dd6dd0057b9630f3f5689c42ce3347}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Patrick\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d72440e8326b04d0098a1a8e6ccab8bd}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1f4dafc57c52d245931082f48131fad3}{%
+           family={McClelland},
+           familyi={M\bibinitperiod},
+           given={Ian\bibnamedelima Lyall},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=53a489c557b52c80bdfe5964b39ea821}{%
+           family={Weerdmeester},
+           familyi={W\bibinitperiod},
+           given={Bernard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, UK}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{813064283275c281401d7a7483420c67}
+      \strng{fullhash}{813064283275c281401d7a7483420c67}
+      \strng{bibnamehash}{813064283275c281401d7a7483420c67}
+      \strng{authorbibnamehash}{813064283275c281401d7a7483420c67}
+      \strng{authornamehash}{813064283275c281401d7a7483420c67}
+      \strng{authorfullhash}{813064283275c281401d7a7483420c67}
+      \strng{editorbibnamehash}{c2a779a854096200a0ed9b9da5935499}
+      \strng{editornamehash}{161df31cfda2ca59b22c7e189ab9aca4}
+      \strng{editorfullhash}{c2a779a854096200a0ed9b9da5935499}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Usability Evaluation in Industry}
+      \field{title}{{SUS}: A `Quick and Dirty' Usability Scale}
+      \field{year}{1996}
+      \field{pages}{189\bibrangedash 194}
+      \range{pages}{6}
+    \endentry
+    \entry{Likert1932}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=85b07393f98f1590e08d998667417f9b}{%
+           family={Likert},
+           familyi={L\bibinitperiod},
+           given={Rensis},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{fullhash}{85b07393f98f1590e08d998667417f9b}
+      \strng{bibnamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authorbibnamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authornamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authorfullhash}{85b07393f98f1590e08d998667417f9b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Archives of Psychology}
+      \field{number}{140}
+      \field{title}{A Technique for the Measurement of Attitudes}
+      \field{volume}{22}
+      \field{year}{1932}
+      \field{pages}{1\bibrangedash 55}
+      \range{pages}{55}
+    \endentry
+    \entry{Sauro2016}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f24e1723133e0393dfd185716f640bed}{%
+           family={Sauro},
+           familyi={S\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{fullhash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{bibnamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authorbibnamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authornamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authorfullhash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{978-0128023082}
+      \field{title}{Quantifying the User Experience: Practical Statistics for User Research}
+      \field{year}{2016}
+    \endentry
+  \enddatalist
+  \datalist[entry]{apa/global//global/global}
+    \entry{Bangor2008}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94606260166acdc7254a0c869dad3cb}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe57e0a1f81b28a398e283890bf7239}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{fullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{bibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorbibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authornamehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{authorfullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \field{extraname}{1}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Human-Computer Interaction}
+      \field{number}{6}
+      \field{title}{An Empirical Evaluation of the System Usability Scale}
+      \field{volume}{24}
+      \field{year}{2008}
+      \field{pages}{574\bibrangedash 594}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1080/10447310802205776
+      \endverb
+    \endentry
+    \entry{Bangor2009}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=05ed7926f59ed51998e7d806c8a2ca30}{%
+           family={Bangor},
+           familyi={B\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d94606260166acdc7254a0c869dad3cb}{%
+           family={Kortum},
+           familyi={K\bibinitperiod},
+           given={Philip\bibnamedelima T.},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe57e0a1f81b28a398e283890bf7239}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima T.},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{fullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{bibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authorbibnamehash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \strng{authornamehash}{016daf70c51e6b1558f266b3057c8426}
+      \strng{authorfullhash}{9b3b856c49af6cb05ea7a3368f5b9118}
+      \field{extraname}{2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Usability Studies}
+      \field{number}{3}
+      \field{title}{Determining What Individual {SUS} Scores Mean: Adding an Adjective Rating Scale}
+      \field{volume}{4}
+      \field{year}{2009}
+      \field{pages}{114\bibrangedash 123}
+      \range{pages}{10}
+    \endentry
+    \entry{Brooke1996}{inbook}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=813064283275c281401d7a7483420c67}{%
+           family={Brooke},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \name{editor}{4}{}{%
+        {{hash=f4dd6dd0057b9630f3f5689c42ce3347}{%
+           family={Jordan},
+           familyi={J\bibinitperiod},
+           given={Patrick\bibnamedelima W.},
+           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=d72440e8326b04d0098a1a8e6ccab8bd}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Bruce},
+           giveni={B\bibinitperiod}}}%
+        {{hash=1f4dafc57c52d245931082f48131fad3}{%
+           family={McClelland},
+           familyi={M\bibinitperiod},
+           given={Ian\bibnamedelima Lyall},
+           giveni={I\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=53a489c557b52c80bdfe5964b39ea821}{%
+           family={Weerdmeester},
+           familyi={W\bibinitperiod},
+           given={Bernard},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {London, UK}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{813064283275c281401d7a7483420c67}
+      \strng{fullhash}{813064283275c281401d7a7483420c67}
+      \strng{bibnamehash}{813064283275c281401d7a7483420c67}
+      \strng{authorbibnamehash}{813064283275c281401d7a7483420c67}
+      \strng{authornamehash}{813064283275c281401d7a7483420c67}
+      \strng{authorfullhash}{813064283275c281401d7a7483420c67}
+      \strng{editorbibnamehash}{c2a779a854096200a0ed9b9da5935499}
+      \strng{editornamehash}{161df31cfda2ca59b22c7e189ab9aca4}
+      \strng{editorfullhash}{c2a779a854096200a0ed9b9da5935499}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Usability Evaluation in Industry}
+      \field{title}{{SUS}: A `Quick and Dirty' Usability Scale}
+      \field{year}{1996}
+      \field{pages}{189\bibrangedash 194}
+      \range{pages}{6}
+    \endentry
+    \entry{Likert1932}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=85b07393f98f1590e08d998667417f9b}{%
+           family={Likert},
+           familyi={L\bibinitperiod},
+           given={Rensis},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{fullhash}{85b07393f98f1590e08d998667417f9b}
+      \strng{bibnamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authorbibnamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authornamehash}{85b07393f98f1590e08d998667417f9b}
+      \strng{authorfullhash}{85b07393f98f1590e08d998667417f9b}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Archives of Psychology}
+      \field{number}{140}
+      \field{title}{A Technique for the Measurement of Attitudes}
+      \field{volume}{22}
+      \field{year}{1932}
+      \field{pages}{1\bibrangedash 55}
+      \range{pages}{55}
+    \endentry
+    \entry{Sauro2016}{book}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=f24e1723133e0393dfd185716f640bed}{%
+           family={Sauro},
+           familyi={S\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f106a761a58d4041d103c16ce4f11cf1}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={James\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Cambridge, MA}%
+      }
+      \list{publisher}{1}{%
+        {Morgan Kaufmann}%
+      }
+      \strng{namehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{fullhash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{bibnamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authorbibnamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authornamehash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \strng{authorfullhash}{2bd800a0c0f35e9bdff73ae39f24dbb0}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2nd}
+      \field{isbn}{978-0128023082}
+      \field{title}{Quantifying the User Experience: Practical Statistics for User Research}
+      \field{year}{2016}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

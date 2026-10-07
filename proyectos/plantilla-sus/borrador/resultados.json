@@ -1,16 +1,16 @@
 {
   "participantes": [
-    {"id": "U1", "puntuacion": 95.0, "nota": "A+",
+    {"id": "U1", "puntuacion": 95.000000, "nota": "A+",
      "adjetivo": "El mejor imaginable", "aceptabilidad": "Aceptable"},
-    {"id": "U2", "puntuacion": 87.5, "nota": "A+",
+    {"id": "U2", "puntuacion": 87.500000, "nota": "A+",
      "adjetivo": "Excelente", "aceptabilidad": "Aceptable"},
-    {"id": "U3", "puntuacion": 75.0, "nota": "B",
+    {"id": "U3", "puntuacion": 75.000000, "nota": "B",
      "adjetivo": "Bueno", "aceptabilidad": "Aceptable"},
-    {"id": "U4", "puntuacion": 95.0, "nota": "A+",
+    {"id": "U4", "puntuacion": 95.000000, "nota": "A+",
      "adjetivo": "El mejor imaginable", "aceptabilidad": "Aceptable"},
-    {"id": "U5", "puntuacion": 72.5, "nota": "C+",
+    {"id": "U5", "puntuacion": 72.500000, "nota": "C+",
      "adjetivo": "Bueno", "aceptabilidad": "Aceptable"}
   ],
-  "estadisticas": {"n": 5, "media": 85.000000, "desviacion": 10.7529,
-                   "minimo": 72.5, "maximo": 95.0}
+  "estadisticas": {"n": 5, "media": 85.000000, "desviacion": 10.752907,
+                   "minimo": 72.500000, "maximo": 95.000000}
 }

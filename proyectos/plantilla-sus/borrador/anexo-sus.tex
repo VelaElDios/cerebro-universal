@@ -9,6 +9,8 @@
 \usepackage{array}
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{icomma}
+\usepackage{placeins}
 \usepackage{tcolorbox}
 \usepackage{tikz}
 \usepackage{pgfplots}
@@ -252,9 +254,12 @@ En el Cuadro~\ref{tab:resultados} se compilan las respuestas brutas a los 10 ít
 % ----------------------------------------------------------------------------
 \section{Interpretación de resultados}
 % ----------------------------------------------------------------------------
-El sistema evaluado ha obtenido una puntuación media global de \textbf{\susMedia} sobre 100, con una dispersión muestral de $s = \susDesviacion$. La puntuación más baja registrada fue de \susMinimo puntos y la más alta alcanzó los \susMaximo puntos.
+El sistema evaluado ha obtenido una puntuación media global de \textbf{\susMedia} sobre 100, con una dispersión muestral de $s = \susDesviacion$. La puntuación más baja registrada fue de \susMinimo{} puntos y la más alta alcanzó los \susMaximo{} puntos.
 
-Este resultado sitúa al sistema en la calificación \textbf{\susNotaMedia}, correspondiente al adjetivo cualitativo \textbf{\enquote{\susAdjetivoMedia}} y catalogado como \textbf{\susAceptabilidadMedia} en la clasificación de viabilidad operativa. Al superar con amplitud la media industrial estandarizada de 68 puntos, se concluye que el diseño de interfaz y la arquitectura funcional satisfacen rigurosamente los requisitos de usabilidad exigibles.
+Este resultado sitúa al sistema en la calificación \textbf{\susNotaMedia}, correspondiente al adjetivo cualitativo \textbf{\enquote{\susAdjetivoMedia}} y catalogado como \textbf{\susAceptabilidadMedia} en la clasificación de viabilidad operativa.
+
+\medskip
+\directlua{sus.imprimir_conclusion()}
 
 \bigskip
 
@@ -289,6 +294,7 @@ Este resultado sitúa al sistema en la calificación \textbf{\susNotaMedia}, cor
 \label{fig:barras}
 \end{figure}
 
+\FloatBarrier
 \printbibliography[heading=bibintoc, title={Referencias bibliográficas}]
 
 \end{document}

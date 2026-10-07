@@ -11,7 +11,8 @@ sus.errores = {}
 -- Función auxiliar para escapar caracteres especiales de LaTeX
 function sus.escapar_latex(str)
     if not str then return "" end
-    str = string.gsub(str, "\\", "\\textbackslash{}")
+    -- Usar marcador temporal para la barra invertida antes de procesar llaves
+    str = string.gsub(str, "\\", "@@BACKSLASH@@")
     str = string.gsub(str, "%%", "\\%%")
     str = string.gsub(str, "%$", "\\$")
     str = string.gsub(str, "&", "\\&")
@@ -21,6 +22,7 @@ function sus.escapar_latex(str)
     str = string.gsub(str, "}", "\\}")
     str = string.gsub(str, "~", "\\textasciitilde{}")
     str = string.gsub(str, "%^", "\\textasciicircum{}")
+    str = string.gsub(str, "@@BACKSLASH@@", "\\textbackslash{}")
     return str
 end
 
@@ -96,7 +98,7 @@ function sus.obtener_aceptabilidad(puntuacion)
     end
 end
 
--- Exporta resultados a resultados.json según formato especificado (sin redondear estadísticos generales)
+-- Exporta resultados a resultados.json según formato especificado (sin redondear)
 function sus.exportar_json()
     local archivo, err = io.open("resultados.json", "w")
     if not archivo then
@@ -107,13 +109,13 @@ function sus.exportar_json()
     for i, reg in ipairs(sus.datos) do
         local coma = (i < #sus.datos) and "," or ""
         archivo:write(string.format(
-            '    {"id": "%s", "puntuacion": %.1f, "nota": "%s",\n     "adjetivo": "%s", "aceptabilidad": "%s"}%s\n',
+            '    {"id": "%s", "puntuacion": %.6f, "nota": "%s",\n     "adjetivo": "%s", "aceptabilidad": "%s"}%s\n',
             reg.id, reg.puntuacion, reg.nota, reg.adjetivo, reg.aceptabilidad, coma
         ))
     end
     archivo:write("  ],\n  \"estadisticas\": ")
     archivo:write(string.format(
-        '{"n": %d, "media": %.6f, "desviacion": %.4f,\n                   "minimo": %.1f, "maximo": %.1f}\n',
+        '{"n": %d, "media": %.6f, "desviacion": %.6f,\n                   "minimo": %.6f, "maximo": %.6f}\n',
         sus.stats.n, sus.stats.media, sus.stats.desviacion, sus.stats.minimo, sus.stats.maximo
     ))
     archivo:write("}\n")
@@ -284,12 +286,11 @@ end
 
 function sus.imprimir_errores()
     if #sus.errores > 0 then
-        local txt = "\\begin{tcolorbox}[colback=red!10!white,colframe=red!75!black,title={Errores detectados en respuestas.csv}]\\begin{itemize}"
+        tex.print("\\begin{tcolorbox}[colback=red!10!white,colframe=red!75!black,title={Errores detectados en respuestas.csv}]\\begin{itemize}")
         for _, err in ipairs(sus.errores) do
-            txt = txt .. "\\item " .. sus.escapar_latex(err)
+            tex.print("\\item " .. sus.escapar_latex(err))
         end
-        txt = txt .. "\\end{itemize}\\end{tcolorbox}"
-        tex.sprint(txt)
+        tex.print("\\end{itemize}\\end{tcolorbox}")
     end
 end
 
@@ -304,7 +305,7 @@ function sus.imprimir_tabla_perfiles()
             comentario_tex = sus.escapar_latex(comentario_tex) 
         end
         local fila = string.format("%s & %s & %s \\\\ \\hline", id_tex, perfil_tex, comentario_tex)
-        tex.sprint(fila)
+        tex.print(fila)
     end
 end
 
@@ -319,7 +320,7 @@ function sus.imprimir_tabla_resultados()
             sus.escapar_latex(reg.adjetivo),
             sus.escapar_latex(reg.aceptabilidad)
         )
-        tex.sprint(fila)
+        tex.print(fila)
     end
 end
 
@@ -369,6 +370,36 @@ function sus.imprimir_etiquetas_barras()
         table.insert(lista, sus.escapar_latex(reg.id))
     end
     tex.sprint(table.concat(lista, ", "))
+end
+
+-- ============================================================================
+-- Interpretación dinámica de resultados según datos (con tex.print para seguridad)
+-- ============================================================================
+function sus.imprimir_conclusion()
+    local s = sus.stats
+    local media = s.media or 0
+
+    if media >= 68 then
+        tex.print("Al situarse por encima del umbral normativo estándar de 68 puntos, la usabilidad global del sistema se considera superior a la media de la industria. ")
+    else
+        tex.print("Al situarse por debajo de la media estándar de referencia de 68 puntos, los resultados indican la existencia de barreras de uso relevantes en el sistema evaluado. ")
+    end
+
+    if s.aceptabilidad_media == "Aceptable" then
+        tex.print("La calificación de aceptabilidad \\textbf{Aceptable} confirma que los usuarios logran completar los flujos habituales sin fricción crítica, cumpliendo satisfactoriamente los criterios funcionales requeridos. ")
+    elseif s.aceptabilidad_media == "Marginal" then
+        tex.print("La calificación de aceptabilidad \\textbf{Marginal} advierte de que, si bien la interacción es viable, se precisan ajustes de diseño prioritarios y optimización de flujos antes de su despliegue definitivo. ")
+    else
+        tex.print("La clasificación de \\textbf{No aceptable} señala que el sistema impone dificultades sustanciales que comprometen la adopción del producto y demandan un rediseño en profundidad. ")
+    end
+
+    tex.print("\\medskip")
+    tex.print("\\noindent\\textbf{Análisis cualitativo del evaluador:}")
+    tex.print("\\begin{itemize}")
+    tex.print("  \\item \\textbf{Puntos fuertes destacados}: \\textcolor{red}{[Completar: aspectos positivos y tareas ejecutadas con mayor agilidad]}.")
+    tex.print("  \\item \\textbf{Principales dificultades detectadas}: \\textcolor{red}{[Completar: tareas con más problemas o dudas manifestadas]}.")
+    tex.print("  \\item \\textbf{Acciones de mejora propuestas}: \\textcolor{red}{[Completar: cambios de interfaz, retroalimentación o simplificación de flujos]}.")
+    tex.print("\\end{itemize}")
 end
 
 -- ============================================================================
