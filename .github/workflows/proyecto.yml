@@ -19,7 +19,7 @@ concurrency:
 jobs:
   avanzar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     env:
       PROYECTO: ${{ github.event.inputs.proyecto || 'proyectos/plantilla-sus' }}
     steps:
@@ -65,6 +65,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           PYTHONUNBUFFERED: "1"
+          PRESUPUESTO_MINUTOS: "50"
 
       - name: Subir el avance
         if: steps.estado.outputs.activo == 'true'
