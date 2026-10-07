@@ -348,3 +348,50 @@ El revisor da por cumplidos todos los criterios de la spec.
 11. **Fase 2** (cuando 1-10 pasen la prueba): `defensa-sus.tex` en Beamer, 2-3 diapositivas (resultado global con el donut, rango y velocímetro, conclusiones) reutilizando `graficas/*.tex` y `sus-calculos.lua`. La prueba ya la compila si existe.
 
 Al revisor: no marques terminado mientras falte algo de esta lista o la Fase 2. Si la prueba falla, el veredicto es "cambios".
+
+## 2026-10-07 04:01 · Constructor (gemini · gemini-3.5-flash-lite)
+
+Se han solucionado los errores en los archivos `graficas/donut.tex` y `graficas/rango.tex` reemplazando los comentarios con doble guion (`--`) que LaTeX interpretaba erróneamente como texto impreso por comentarios estándar con porcentaje (`%`).
+
+**Archivos:** `graficas/donut.tex`, `graficas/rango.tex`, `sus-calculos.lua`
+
+**Intentos:**
+- intento 1: ❌ PRUEBA CON DATOS RAROS FALLIDA: resultados.json no cuadra con pruebas/respuestas-raras.csv
+- intento 2: ✅ pasa la prueba (tocó `sus-calculos.lua`)
+
+**Siguiente:** Compilar nuevamente el borrador para verificar que el corrector detecte cero líneas inválidas comenzando por `--` y comprobar la correcta compilación completa del documento.
+
+## 2026-10-07 04:02 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila
+
+**Comprobaciones:**
+- Compilación LuaLaTeX: OK (6 páginas, sin errores)
+- Test datos normales: OK (5 participantes, media 85.0, DT 10.7529, min 72.5, max 95.0)
+- Test datos raros: OK (4 participantes, media 38.75, DT 31.72, min 0.0, max 75.0)
+- Comentarios `--` en donut.tex y rango.tex: CORREGIDOS a `%` (builder lo hizo)
+- JSON con 6 decimales: CORREGIDO (builder lo hizo, test pasa)
+- FloatBarrier antes de bibliografía: NO ESTÁ en anexo-sus.tex
+- Línea de referencia en barras.tex: SIGUE USANDO \addplot (produce dos barras punteadas), no la solución con \draw
+- Paquete icomma: NO ESTÁ en preámbulo
+- Espacio tras macros: \susMinimo puntos (falta {}) en anexo-sus.tex y contenido-sus.tex
+- Conclusión fija en apartado 10: SIGUE HARDCODEADA ("Al superar con amplitud..."), no generada en Lua según datos
+- Etiquetas velocímetro: SIN CAMBIOS (se pisan con números)
+- Archivo basura: NO VERIFICADO (no aparece en listado pero no se confirma borrado)
+- escapar_latex: SIGUE CON BUG (escapa \ y luego sus llaves → \textbackslash\{\})
+- Fase 2 (defensa-sus.tex): NO EXISTE
+
+El builder ha corregido correctamente los items 1 y 2 (comentarios Lua impresos como texto y redondeo JSON). Los tests automáticos pasan. Sin embargo, quedan **9 items pendientes** de la lista del revisor humano (Javier) que los tests no detectan pero que son criterios de "terminado" en la spec. El proyecto NO está terminado.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+1. Añadir `\usepackage{placeins}` en preámbulo de anexo-sus.tex y `\FloatBarrier` justo antes de `\printbibliography`.
+2. Corregir graficas/barras.tex: reemplazar el `\addplot` de la línea de referencia por `\draw` que cruce todo el eje (solución probada por Claudio).
+3. Añadir `\usepackage{icomma}` en preámbulo para coma decimal sin espacio en fórmulas.
+4. Cambiar `\susMinimo puntos` → `\susMinimo{} puntos` y `\susMaximo puntos` → `\susMaximo{} puntos` en anexo-sus.tex y contenido-sus.tex (y revisar otras macros seguidas de texto).
+5. Implementar conclusión dinámica en Lua: crear `sus.imprimir_conclusion()` que genere frases según media vs 68 y aceptabilidad (Aceptable/Marginal/No aceptable), y llamar desde apartado 10 en ambos .tex. Dejar huecos en rojo: `\textcolor{red}{[Completar: ...]}`.
+6. Corregir graficas/velocimetro.tex: mover/redimensionar etiquetas "No aceptable", "Marginal", "Aceptable" para que no se pisen con números ni entre sí.
+7. Borrar archivo basura `anexo-sus.bcf-SAVE-ERROR` si existe.
+8. Corregir `sus.escapar_latex`: usar marcador temporal para `\` o escaparlo al final para evitar `\textbackslash\{\}`.
+9. Crear `defensa-sus.tex` (Beamer, 2-3 diapositivas) reutilizando graficas/*.tex y sus-calculos.lua.

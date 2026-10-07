@@ -11,6 +11,6 @@
     {"id": "U5", "puntuacion": 72.5, "nota": "C+",
      "adjetivo": "Bueno", "aceptabilidad": "Aceptable"}
   ],
-  "estadisticas": {"n": 5, "media": 85.0, "desviacion": 10.7529,
+  "estadisticas": {"n": 5, "media": 85.000000, "desviacion": 10.7529,
                    "minimo": 72.5, "maximo": 95.0}
 }

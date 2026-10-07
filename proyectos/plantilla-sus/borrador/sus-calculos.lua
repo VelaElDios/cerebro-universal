@@ -96,7 +96,7 @@ function sus.obtener_aceptabilidad(puntuacion)
     end
 end
 
--- Exporta resultados a resultados.json según formato especificado
+-- Exporta resultados a resultados.json según formato especificado (sin redondear estadísticos generales)
 function sus.exportar_json()
     local archivo, err = io.open("resultados.json", "w")
     if not archivo then
@@ -113,7 +113,7 @@ function sus.exportar_json()
     end
     archivo:write("  ],\n  \"estadisticas\": ")
     archivo:write(string.format(
-        '{"n": %d, "media": %.1f, "desviacion": %.4f,\n                   "minimo": %.1f, "maximo": %.1f}\n',
+        '{"n": %d, "media": %.6f, "desviacion": %.4f,\n                   "minimo": %.1f, "maximo": %.1f}\n',
         sus.stats.n, sus.stats.media, sus.stats.desviacion, sus.stats.minimo, sus.stats.maximo
     ))
     archivo:write("}\n")
@@ -244,13 +244,6 @@ end
 function sus.definir_macros()
     local s = sus.stats
     local d = sus.datos
-    local function def(name, value)
-        tex.sprint("\\def\\" .. name + "{" .. tostring(value) .. "}")
-    end
-    -- Corrección directa usando formato tex.sprint para evitar problemas de concatenación
-    for k, v in pairs(s) do
-        -- Se definen individualmente abajo de forma robusta
-    end
     
     tex.sprint("\\def\\susN{" .. tostring(s.n or 0) .. "}")
     tex.sprint("\\def\\susMedia{" .. sus.formato_decimal(s.media, 1) .. "}")
@@ -379,7 +372,7 @@ function sus.imprimir_etiquetas_barras()
 end
 
 -- ============================================================================
--- Funciones para gráficas: imprimen directamente con tex.sprint (CORREGIDO)
+-- Funciones para gráficas
 -- ============================================================================
 function sus.get_stat_raw(key)
     local s = sus.stats
