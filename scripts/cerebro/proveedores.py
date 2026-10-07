@@ -14,6 +14,24 @@ import urllib.error
 import urllib.request
 
 ESPERAS = [0, 30, 90]  # segundos antes de cada intento con el mismo modelo
+TIEMPO_MAX_RESPUESTA = 180  # segundos máximos esperando a que una IA conteste (si no, se salta el modelo)
+
+# Hora límite (time.monotonic) para todo el paso. La pone proyecto.py con fijar_limite().
+# Así ninguna llamada ni espera se pasa del tiempo que GitHub Actions deja al job.
+_LIMITE = None
+
+
+def fijar_limite(segundos_desde_ahora: float):
+    global _LIMITE
+    _LIMITE = time.monotonic() + segundos_desde_ahora
+
+
+def tiempo_restante() -> float:
+    return float("inf") if _LIMITE is None else _LIMITE - time.monotonic()
+
+
+class TiempoAgotado(Exception):
+    """Se acaba el tiempo del paso: no se empieza ninguna llamada ni espera más."""
 
 
 class Saturado(Exception):
@@ -44,6 +62,9 @@ class Proveedor:
         """Prueba cada modelo con reintentos. Devuelve (texto, modelo que respondió)."""
         for modelo in self.modelos():
             for intento, espera in enumerate(ESPERAS, start=1):
+                # Hace falta tiempo para la espera y para una respuesta completa
+                if tiempo_restante() < espera + 60:
+                    raise TiempoAgotado(f"Sin tiempo para llamar a {self.nombre} ({modelo})")
                 if espera:
                     print(f"  Esperando {espera}s...")
                     time.sleep(espera)
@@ -67,7 +88,9 @@ class Gemini(Proveedor):
         from google.genai import errors, types
 
         if not hasattr(self, "_cliente"):
-            self._cliente = genai.Client(api_key=self.clave)
+            # Sin timeout, una llamada colgada esperaba para siempre (pasó: 26 min parada)
+            self._cliente = genai.Client(api_key=self.clave,
+                                         http_options=types.HttpOptions(timeout=TIEMPO_MAX_RESPUESTA * 1000))
         try:
             r = self._cliente.models.generate_content(
                 model=modelo,
@@ -85,6 +108,11 @@ class Gemini(Proveedor):
             if e.code in (400, 404, 429):
                 raise SaltarModelo(f"{e.code} {e.message}")
             raise  # 401/403: key mal puesta, no tiene sentido reintentar
+        except Exception as e:
+            # Timeout (httpx.ReadTimeout...) o conexión cortada: este modelo no contesta, al siguiente
+            if "timeout" in type(e).__name__.lower() or "timeout" in str(e).lower():
+                raise SaltarModelo(f"no contestó en {TIEMPO_MAX_RESPUESTA}s")
+            raise
 
 
 class CompatibleOpenAI(Proveedor):
@@ -120,7 +148,7 @@ class CompatibleOpenAI(Proveedor):
                 "X-Title": "cerebro-universal",
             },
         )
-        with urllib.request.urlopen(peticion, timeout=300) as r:
+        with urllib.request.urlopen(peticion, timeout=TIEMPO_MAX_RESPUESTA) as r:
             return json.loads(r.read().decode("utf-8"))
 
     def _llamar(self, modelo, sistema, mensaje):
@@ -141,7 +169,11 @@ class CompatibleOpenAI(Proveedor):
             if e.code >= 500:
                 raise Saturado(f"{e.code} {detalle}")
             raise RuntimeError(f"{self.nombre} respondió {e.code}: {detalle}")
-        except (urllib.error.URLError, TimeoutError) as e:
+        except TimeoutError:
+            raise SaltarModelo(f"no contestó en {TIEMPO_MAX_RESPUESTA}s")
+        except urllib.error.URLError as e:
+            if "timed out" in str(e).lower():
+                raise SaltarModelo(f"no contestó en {TIEMPO_MAX_RESPUESTA}s")
             raise Saturado(str(e))
 
         if "error" in datos:  # algunos proveedores devuelven 200 con un error dentro
@@ -175,6 +207,8 @@ def pedir_rol(rol: str, config: dict, proveedores: dict, sistema: str, mensaje: 
         try:
             texto, modelo = p.pedir(sistema, mensaje)
             return texto, nombre, modelo
+        except TiempoAgotado:
+            raise  # no tiene sentido probar otro proveedor: se acabó el tiempo del paso
         except SaltarModelo as e:
             print(f"[{nombre}] {e}")
         except Exception as e:  # cualquier otro fallo de este proveedor: probar el siguiente

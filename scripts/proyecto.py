@@ -21,6 +21,19 @@ from pathlib import Path
 from cerebro import nucleo
 from cerebro import proveedores as prov
 
+# ---------- Cronómetro ----------
+# GitHub Actions corta el job a los 30 min (timeout-minutes del workflow) y entonces se pierde
+# TODO el paso. Instalar LaTeX y subir el avance se llevan unos 3-4 min, así que el script tiene
+# un presupuesto propio y, al acercarse, deja de llamar a IAs y termina guardando lo que haya.
+PRESUPUESTO_MIN = float(os.environ.get("PRESUPUESTO_MINUTOS", "22"))
+MIN_PARA_INTENTO = 6 * 60   # segundos que hacen falta para otro intento del constructor + su prueba
+MIN_PARA_REVISOR = 4 * 60   # segundos que hacen falta para que el revisor conteste
+
+
+class SinConstructor(Exception):
+    """El constructor no ha podido dar el paso (sin IA disponible o sin tiempo)."""
+
+
 FORMATO_CONSTRUCTOR = """Responde EXACTAMENTE con este formato, sin nada fuera de los bloques:
 
 <<<RESUMEN>>>
@@ -135,11 +148,13 @@ def probar(cfg: dict, carpeta: Path) -> tuple[bool, str]:
     if principal and not (carpeta / principal).exists():
         return False, f"Todavía no existe el archivo principal {principal}."
     entorno = {**os.environ, "max_print_line": "1000"}  # que LaTeX no corte las líneas del log a 79 caracteres
+    # Máximo 5 min, y nunca más de lo que queda de paso (con 30 s de margen)
+    limite = int(max(30, min(300, prov.tiempo_restante() - 30)))
     try:
         r = subprocess.run(comando, shell=True, cwd=carpeta, capture_output=True,
-                           text=True, timeout=600, errors="replace", env=entorno)
+                           text=True, timeout=limite, errors="replace", env=entorno)
     except subprocess.TimeoutExpired:
-        return False, "La prueba tardó más de 10 minutos y se canceló."
+        return False, f"La prueba tardó más de {limite} s y se canceló (¿algo se queda colgado al compilar?)."
 
     salida = (r.stdout + "\n" + r.stderr).splitlines()
     # Si hay un .log de LaTeX, es la fuente más fiable de errores
@@ -193,8 +208,15 @@ def main():
     guardar_cfg(cfg_ruta, cfg)
     print(f"Paso {cfg['pasos']}" + (f" de {max_pasos}" if max_pasos is not None else ""))
 
+    prov.fijar_limite(PRESUPUESTO_MIN * 60)
     try:
         dar_paso(carpeta, cfg, cfg_ruta, bitacora)
+    except SinConstructor as e:
+        # Si no hay IA (p. ej. Gemini saturado), el paso no cuenta y no se toca nada:
+        # se reintenta en la próxima ejecución sin gastar del freno.
+        cfg["pasos"] -= 1
+        guardar_cfg(cfg_ruta, cfg)
+        print(f"Paso no dado, no cuenta: {e}")
     finally:
         # Si este era el último paso permitido, se pausa ya: así la próxima ejecución
         # del workflow lo ve antes de instalar LaTeX y no gasta minutos.
@@ -226,8 +248,11 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
 # ARCHIVOS ACTUALES DEL BORRADOR
 {nucleo.volcar(nucleo.leer_carpeta(borrador))}"""
 
-    texto, ia, modelo = prov.pedir_rol("constructor", config, proveedores,
-                                       SISTEMA_CONSTRUCTOR.format(maximo=maximo), mensaje)
+    try:
+        texto, ia, modelo = prov.pedir_rol("constructor", config, proveedores,
+                                           SISTEMA_CONSTRUCTOR.format(maximo=maximo), mensaje)
+    except (RuntimeError, prov.TiempoAgotado) as e:
+        raise SinConstructor(str(e))
     paso = nucleo.parsear(texto)
     cambios = nucleo.aplicar(borrador, paso["archivos"], paso["borrar"], maximo)
     s = paso["secciones"]
@@ -243,6 +268,10 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
 
     for n in range(2, max_intentos + 1):
         if ok:
+            break
+        if prov.tiempo_restante() < MIN_PARA_INTENTO + MIN_PARA_REVISOR:
+            intentos.append(f"intento {n}: no se hace, queda poco tiempo de paso (⏱️ "
+                            f"{int(prov.tiempo_restante() // 60)} min); se sigue en el próximo paso")
             break
         mensaje = f"""# TU PASO NO PASA LA PRUEBA (intento {n} de {max_intentos})
 Corrige SOLO lo necesario para que la prueba pase. No añadas funcionalidades nuevas.
@@ -262,8 +291,8 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
         try:
             texto, ia, modelo = prov.pedir_rol("constructor", config, proveedores,
                                                SISTEMA_CONSTRUCTOR.format(maximo=maximo), mensaje)
-        except RuntimeError as e:
-            intentos.append(f"intento {n}: no hay IA disponible ({e})")
+        except (RuntimeError, prov.TiempoAgotado) as e:
+            intentos.append(f"intento {n}: no hay IA disponible a tiempo ({e})")
             break
         arreglo = nucleo.parsear(texto)
         nuevos = nucleo.aplicar(borrador, arreglo["archivos"], arreglo["borrar"], maximo)
@@ -302,9 +331,12 @@ Intentos de compilar/probar en este paso:
 {nucleo.volcar(nucleo.leer_carpeta(borrador))}"""
 
     try:
+        if prov.tiempo_restante() < MIN_PARA_REVISOR:
+            raise prov.TiempoAgotado(f"⏱️ Solo quedan {int(prov.tiempo_restante())} s de paso: "
+                                     "no da tiempo a que conteste el revisor.")
         texto, ia, modelo = prov.pedir_rol("revisor", config, proveedores,
                                            SISTEMA_REVISOR.format(maximo=maximo), mensaje)
-    except RuntimeError as e:
+    except (RuntimeError, prov.TiempoAgotado) as e:
         # El trabajo del constructor no se pierde: queda en el borrador, sin revisar
         nucleo.anotar(bitacora, "⚠️ Revisor no disponible",
                       f"{e}\n\nEl paso del constructor queda en `borrador/` sin revisar. "
