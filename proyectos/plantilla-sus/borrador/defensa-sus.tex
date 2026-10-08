@@ -1,3 +1,8 @@
+% ============================================================================
+% defensa-sus.tex
+% Presentación Beamer: 3 diapositivas de resultados SUS
+% ============================================================================
+
 \documentclass[10pt,aspectratio=169]{beamer}
 
 \usepackage[spanish,es-tabla]{babel}
@@ -8,6 +13,10 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{babel}
+
+% Tema y configuración visual de la presentación
+\usetheme{Madrid}
+\usecolortheme{whale}
 
 % Tema y configuración visual de la presentación
 \usetheme{Madrid}
@@ -87,17 +96,7 @@
 % Diapositiva 3: Conclusiones e interpretación de la evaluación
 % ----------------------------------------------------------------------------
 \begin{frame}{Conclusiones de la Evaluación SUS}
-  \begin{itemize}
-    \setlength{\itemsep}{10pt}
-    \item \textbf{Cumplimiento del estándar industrial:}
-      La media obtenida de \textbf{\susMedia} se compara favorablemente frente a los \textbf{68 puntos} de referencia normativos.
-    \item \textbf{Viabilidad operativa confirmada:}
-      El sistema se consolida en la franja \textbf{\susAceptabilidadMedia}, demostrando que el flujo funcional básico resulta claro y productivo.
-    \item \textbf{Consistencia de los resultados:}
-      Rango comprendido entre \textbf{\susMinimo{} y \susMaximo{} puntos}, con una dispersión controlada ($s = \susDesviacion$) a través de perfiles técnicos y de negocio.
-    \item \textbf{Próximas iteraciones de diseño:}
-      Reforzar la asistencia contextual y simplificar acciones poco frecuentes identificadas en los comentarios cualitativos.
-  \end{itemize}
+  \directlua{sus.imprimir_conclusiones_defensa()}
 \end{frame}
 
 \end{document}

@@ -375,6 +375,7 @@ end
 -- ============================================================================
 -- Interpretación dinámica de resultados según datos (con tex.print para seguridad)
 -- ============================================================================
+
 function sus.imprimir_conclusion()
     local s = sus.stats
     local media = s.media or 0
@@ -403,28 +404,34 @@ function sus.imprimir_conclusion()
 end
 
 -- ============================================================================
--- Funciones para gráficas
+-- Conclusiones dinámicas para la defensa Beamer
 -- ============================================================================
-function sus.get_stat_raw(key)
-    local s = sus.stats
-    if key == "media" then tex.sprint(string.format("%.2f", s.media or 0))
-    elseif key == "minimo" then tex.sprint(string.format("%.2f", s.minimo or 0))
-    elseif key == "maximo" then tex.sprint(string.format("%.2f", s.maximo or 0))
-    elseif key == "desviacion" then tex.sprint(string.format("%.4f", s.desviacion or 0))
-    else tex.sprint("0") end
-end
 
-function sus.get_stat(key, decimales)
+function sus.imprimir_conclusiones_defensa()
     local s = sus.stats
-    decimales = decimales or 1
-    if key == "media" then tex.sprint(sus.formato_decimal(s.media, decimales))
-    elseif key == "minimo" then tex.sprint(sus.formato_decimal(s.minimo, decimales))
-    elseif key == "maximo" then tex.sprint(sus.formato_decimal(s.maximo, decimales))
-    elseif key == "desviacion" then tex.sprint(sus.formato_decimal(s.desviacion, decimales))
-    elseif key == "nota_media" then tex.sprint(sus.escapar_latex(s.nota_media))
-    elseif key == "adjetivo_media" then tex.sprint(sus.escapar_latex(s.adjetivo_media))
-    elseif key == "aceptabilidad_media" then tex.sprint(sus.escapar_latex(s.aceptabilidad_media))
-    else tex.sprint("") end
+    local media = s.media or 0
+    local acept = s.aceptabilidad_media or "Desconocida"
+
+    tex.print("\\begin{block}{Conclusiones de la Evaluación SUS}")
+    tex.print("\\begin{itemize}")
+    
+    if media >= 68 then
+        tex.print(string.format("  \\item La media muestral de \\textbf{%.1f} se sitúa por encima del valor estándar de referencia industrial (68 puntos).", media))
+    else
+        tex.print(string.format("  \\item La media muestral de \\textbf{%.1f} se sitúa por debajo del valor estándar de referencia industrial (68 puntos).", media))
+    end
+    
+    if acept == "Aceptable" then
+        tex.print("  \\item La aceptabilidad global es \\textbf{Aceptable}, indicando que los usuarios completan los flujos de interacción satisfactoriamente.")
+    elseif acept == "Marginal" then
+        tex.print("  \\item La aceptabilidad global es \\textbf{Marginal}, reflejando deficiencias de usabilidad que requieren corrección.")
+    else
+        tex.print("  \\item La aceptabilidad global es \\textbf{No aceptable}, evidenciando barreras severas en la operabilidad del sistema.")
+    end
+    
+    tex.print("  \\item \\textbf{Calificación obtenida}: nota " .. sus.escapar_latex(s.nota_media) .. " con adjetivo \\enquote{" .. sus.escapar_latex(s.adjetivo_media) .. "}.")
+    tex.print("\\end{itemize}")
+    tex.print("\\end{block}")
 end
 
 return sus
