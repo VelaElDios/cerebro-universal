@@ -98,9 +98,17 @@ def parsear(respuesta: str) -> dict:
 
 # ---------- Escribir en el proyecto ----------
 
-def ruta_segura(base: Path, relativa: str) -> Path:
-    """Impide que una IA escriba fuera de su carpeta (../../loquesea)."""
-    destino = (base / relativa).resolve()
+NOMBRE_VALIDO = re.compile(r"^[\w][\w.\-]*$")  # letras/números al inicio; sin espacios
+
+
+def ruta_segura(base: Path, relativa: str, estricta: bool = True) -> Path:
+    """Impide que una IA escriba fuera de su carpeta (../../loquesea) o invente nombres raros
+    (p. ej. «- borrado de archivos temporales»): cada parte de la ruta debe ser un nombre
+    normal y el archivo tener extensión."""
+    partes = relativa.strip().replace("\\", "/").split("/")
+    if estricta and (not all(NOMBRE_VALIDO.match(x) for x in partes) or "." not in partes[-1]):
+        raise ValueError(f"Nombre de archivo no válido: {relativa!r}")
+    destino = (base / relativa.strip()).resolve()
     if base.resolve() not in destino.parents:
         raise ValueError(f"Ruta fuera de la carpeta permitida: {relativa}")
     return destino
@@ -119,7 +127,7 @@ def aplicar(base: Path, archivos: dict[str, str], borrar: list[str], maximo: int
         cambiados.append(relativa)
     for relativa in borrar:
         try:
-            destino = ruta_segura(base, relativa)
+            destino = ruta_segura(base, relativa, estricta=False)
         except ValueError as e:
             print(f"  Ignorado: {e}")
             continue
