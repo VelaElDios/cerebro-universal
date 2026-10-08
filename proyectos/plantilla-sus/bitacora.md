@@ -545,3 +545,16 @@ El proyecto está muy avanzado y cumple casi todos los criterios de la spec: cá
 - Ejecutar la suite completa de pruebas automáticas (`verificar.py` y `probar_datos_raros.py`) para confirmar que todo compila y cuadra con datos normales y raros
 - Verificar visualmente que las etiquetas del velocímetro no se solapan con la escala numérica ni entre sí (radio 1.15/0.92/1.15 cm vs escala a 2.95 cm)
 - Confirmar que `probar_datos_raros.py` pasa con las diapositivas: compila defensa-sus.tex con datos raros, extrae texto del PDF y comprueba que no aparecen palabras prohibidas ("favorablemente", "confirmad", "satisfac", "supera", "por encima", "excelente", "productiv", "rigurosamente", "cumplimiento") y que sí aparece "No aceptable"
+
+## Revisión humana (Javier)
+
+**Ya casi está.** Claude ha compilado el borrador: el anexo pasa todo y las conclusiones de las diapositivas ya salen de los datos (con los datos raros dicen «por debajo de 68», «No aceptable», «nota F»). Solo faltan estos arreglos, probados por Claude en una copia aparte; con el 1 pasan todas las pruebas, incluida `probar_datos_raros.py` con las diapositivas:
+
+1. **`defensa-sus.tex` no compila** («Undefined control sequence» en la línea 100): `sus.imprimir_conclusiones_defensa()` usa `\enquote{...}` pero el preámbulo de `defensa-sus.tex` no carga `csquotes`. Añadir `\usepackage{csquotes}` en el preámbulo (por ejemplo justo antes de `\usepackage{tikz}`).
+2. En `sus.imprimir_conclusiones_defensa()` la media sale con punto («38.8»): usar `sus.formato_decimal(media, 1)` en vez de `string.format("%.1f", media)` para que salga «38,8», como en el resto del documento.
+3. La diapositiva de conclusiones repite el título: el `\frame` ya se llama «Conclusiones de la Evaluación SUS» y la función imprime además un `\begin{block}{Conclusiones de la Evaluación SUS}`. Quitar ese `block` de la función (dejar solo el `itemize`).
+4. Borrar el archivo basura que se creó por error en el paso anterior: `<<<BORRAR - borrado de archivos temporales>>>` (el bloque BORRAR va solo en su línea, con ese nombre exacto).
+
+**Muy importante al reescribir `sus-calculos.lua`:** el archivo tiene que quedar COMPLETO, con todas sus funciones. En el paso anterior se perdió `get_stat_raw` y rompió el velocímetro. Si solo hay que cambiar `imprimir_conclusiones_defensa`, copiad el resto del archivo tal cual.
+
+Al revisor: con estos 4 puntos y todas las pruebas en verde, el proyecto cumple la spec y puede marcarse terminado.
