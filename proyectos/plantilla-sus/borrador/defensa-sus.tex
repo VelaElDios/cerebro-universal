@@ -9,14 +9,11 @@
 \usepackage{fontspec}
 \usepackage{icomma}
 \usepackage{booktabs}
+\usepackage{csquotes}
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \usetikzlibrary{babel}
-
-% Tema y configuración visual de la presentación
-\usetheme{Madrid}
-\usecolortheme{whale}
 
 % Tema y configuración visual de la presentación
 \usetheme{Madrid}
@@ -96,7 +93,9 @@
 % Diapositiva 3: Conclusiones e interpretación de la evaluación
 % ----------------------------------------------------------------------------
 \begin{frame}{Conclusiones de la Evaluación SUS}
-  \directlua{sus.imprimir_conclusiones_defensa()}
+  \begin{itemize}
+    \directlua{sus.imprimir_conclusiones_defensa()}
+  \end{itemize}
 \end{frame}
 
 \end{document}

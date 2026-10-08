@@ -4,7 +4,8 @@
 % ============================================================================
 
 \begin{tikzpicture}[scale=1.1, every node/.style={transform shape}]
-  \edef\mediaRaw{\directlua{sus.get_stat_raw("media")}}
+  % Usar macro definida por sus.definir_macros() (valor con punto decimal)
+  \pgfmathsetmacro{\mediaRaw}{\susMediaRaw}
 
   % Coordenadas angulares:
   % 0 SUS = 180 grados (izquierda)

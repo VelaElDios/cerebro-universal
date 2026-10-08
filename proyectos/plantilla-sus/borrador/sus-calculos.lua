@@ -411,14 +411,12 @@ function sus.imprimir_conclusiones_defensa()
     local s = sus.stats
     local media = s.media or 0
     local acept = s.aceptabilidad_media or "Desconocida"
+    local media_str = sus.formato_decimal(media, 1)
 
-    tex.print("\\begin{block}{Conclusiones de la Evaluación SUS}")
-    tex.print("\\begin{itemize}")
-    
     if media >= 68 then
-        tex.print(string.format("  \\item La media muestral de \\textbf{%.1f} se sitúa por encima del valor estándar de referencia industrial (68 puntos).", media))
+        tex.print(string.format("  \\item La media muestral de \\textbf{%s} se sitúa por encima del valor estándar de referencia industrial (68 puntos).", media_str))
     else
-        tex.print(string.format("  \\item La media muestral de \\textbf{%.1f} se sitúa por debajo del valor estándar de referencia industrial (68 puntos).", media))
+        tex.print(string.format("  \\item La media muestral de \\textbf{%s} se sitúa por debajo del valor estándar de referencia industrial (68 puntos).", media_str))
     end
     
     if acept == "Aceptable" then
@@ -430,8 +428,6 @@ function sus.imprimir_conclusiones_defensa()
     end
     
     tex.print("  \\item \\textbf{Calificación obtenida}: nota " .. sus.escapar_latex(s.nota_media) .. " con adjetivo \\enquote{" .. sus.escapar_latex(s.adjetivo_media) .. "}.")
-    tex.print("\\end{itemize}")
-    tex.print("\\end{block}")
 end
 
 return sus
