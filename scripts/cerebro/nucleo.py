@@ -22,7 +22,9 @@ ZONA = ZoneInfo("Europe/Madrid")
 
 EXTENSIONES_TEXTO = {".tex", ".bib", ".lua", ".csv", ".md", ".txt", ".sty", ".cls", ".py", ".json", ".js", ".html", ".css"}
 IGNORAR_COPIA = ("*.aux", "*.log", "*.fls", "*.fdb_latexmk", "*.out", "*.toc", "*.bbl",
-                 "*.blg", "*.bcf", "*.run.xml", "*.synctex.gz", "*.lof", "*.lot")
+                 "*.blg", "*.bcf", "*.run.xml", "*.synctex.gz", "*.lof", "*.lot",
+                 # Beamer y restos de Biber cuando falla (*.bbl-SAVE-ERROR, *.bcf-SAVE-ERROR)
+                 "*.nav", "*.snm", "*.vrb", "*-SAVE-ERROR")
 MAX_CHARS_ARCHIVO = 20000
 
 CABECERA = re.compile(r"^<<<([A-ZÁÉÍÓÚ_]+)(?:\s+(.+?))?>>>\s*$")

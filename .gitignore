@@ -26,3 +26,9 @@ proyectos/*/borrador/*.pdf
 
 # Descargas de Claude (se guardan en el vault pero no se suben)
 Claude outputs/
+
+# Temporales de Beamer y restos de Biber
+*.nav
+*.snm
+*.vrb
+*-SAVE-ERROR

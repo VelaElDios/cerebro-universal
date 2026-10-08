@@ -94,6 +94,13 @@ Colores definidos en un único sitio para cambiarlos fácilmente.
 `defensa-sus.tex` en Beamer: 2-3 diapositivas de resultados usando las mismas gráficas,
 en la línea de las capturas de ejemplo del profesor (resultado global, rango, conclusiones).
 
+- Las conclusiones de las diapositivas **salen de los datos**, igual que el apartado 10 del anexo:
+  frases elegidas en `sus-calculos.lua` según la media frente a 68 y la aceptabilidad (por ejemplo
+  `sus.imprimir_conclusiones_defensa()`, que imprime los `\item`). Nada de frases fijas como
+  "se compara favorablemente" o "viabilidad confirmada": con una media de 38,75 serían falsas.
+  `probar_datos_raros.py` compila las diapositivas con datos malos y falla si aparecen.
+- Las etiquetas de las gráficas no se pueden pisar entre sí ni con las barras o la escala.
+
 ## Estructura de archivos
 
 ```

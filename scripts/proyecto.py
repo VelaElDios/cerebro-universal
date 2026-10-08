@@ -104,6 +104,22 @@ def muestra_operaciones(comprobaciones: str) -> bool:
                for l in comprobaciones.splitlines())
 
 
+def dejar_de_seguir_ignorados(carpeta: Path):
+    """Saca del repo (git rm --cached) los archivos del proyecto que ya están en .gitignore,
+    p. ej. temporales que se subieron antes de ignorarlos. Solo en GitHub Actions."""
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    try:
+        r = subprocess.run(["git", "ls-files", "-ci", "--exclude-standard", "--", str(carpeta)],
+                           capture_output=True, text=True, cwd=nucleo.RAIZ, timeout=60)
+        rutas = [l for l in r.stdout.splitlines() if l.strip()]
+        if rutas:
+            subprocess.run(["git", "rm", "--cached", "-q", "--", *rutas], cwd=nucleo.RAIZ, timeout=60)
+            print(f"Quitados del repo por estar en .gitignore: {', '.join(rutas)}")
+    except Exception as e:  # la limpieza nunca debe tumbar el paso
+        print(f"No pude limpiar archivos ignorados: {e}")
+
+
 def guardar_cfg(cfg_ruta: Path, cfg: dict):
     cfg_ruta.write_text(json.dumps(cfg, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
@@ -218,6 +234,7 @@ def main():
         guardar_cfg(cfg_ruta, cfg)
         print(f"Paso no dado, no cuenta: {e}")
     finally:
+        dejar_de_seguir_ignorados(carpeta)
         # Si este era el último paso permitido, se pausa ya: así la próxima ejecución
         # del workflow lo ve antes de instalar LaTeX y no gasta minutos.
         if (cfg.get("estado") == "en-construccion" and max_pasos is not None

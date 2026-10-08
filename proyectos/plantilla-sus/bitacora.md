@@ -489,3 +489,15 @@ El proyecto cumple **todos** los criterios de "terminado" de la especificación.
 ## 2026-10-08 04:22 · 🎉 Proyecto terminado
 
 El revisor da por cumplidos todos los criterios de la spec.
+
+## Revisión humana (Javier)
+
+**Reabierto.** Muy buen trabajo: el anexo está completo y se adapta a los datos (lo ha comprobado Claude compilando con los datos raros). Faltan pocas cosas, todas en la Fase 2 y en las gráficas:
+
+1. **Conclusiones de `defensa-sus.tex` escritas fijas.** Con los datos raros (media 38,75, nota F, No aceptable) la última diapositiva dice «la media de 38,8 se compara **favorablemente** frente a los 68 puntos», «**viabilidad operativa confirmada**» y «el flujo funcional resulta claro y **productivo**». Es falso con esos datos. Hacedlo igual que el apartado 10 del anexo: una función en `sus-calculos.lua` (p. ej. `sus.imprimir_conclusiones_defensa()`) que elija las frases según la media frente a 68 y la aceptabilidad (Aceptable / Marginal / No aceptable) e imprima los `\item` con `tex.print`, y en la diapositiva solo `\directlua{sus.imprimir_conclusiones_defensa()}` dentro del `itemize`. El título «Cumplimiento del estándar industrial» tampoco vale si no se cumple: que también dependa de los datos.
+   **`probar_datos_raros.py` ahora lo comprueba:** compila las diapositivas con los datos raros, lee el texto del PDF y falla si en las conclusiones aparece «favorablemente», «confirmad», «satisfac», «supera», «por encima», «excelente», «productiv», «rigurosamente» o «cumplimiento», o si no aparece «No aceptable».
+2. **Velocímetro:** las etiquetas de las zonas siguen pequeñas y apretadas (en el anexo y en la diapositiva). Que se lean bien sin pisarse.
+3. **Diapositiva del rango:** la etiqueta «Media global SUS (68)» se monta con el resto. Que no se pise.
+4. Borrad los temporales que se colaron: `<<<BORRAR anexo-sus.bbl-SAVE-ERROR>>>`, `<<<BORRAR defensa-sus.nav>>>` y `<<<BORRAR defensa-sus.snm>>>`. (Ya están en `.gitignore` y no se copian a `final/`, así que no volverán.)
+
+Al revisor: no marques terminado hasta que pase `probar_datos_raros.py` con las diapositivas incluidas.
