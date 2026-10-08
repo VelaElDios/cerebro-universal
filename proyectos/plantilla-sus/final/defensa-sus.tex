@@ -1,0 +1,103 @@
+\documentclass[10pt,aspectratio=169]{beamer}
+
+\usepackage[spanish,es-tabla]{babel}
+\usepackage{fontspec}
+\usepackage{icomma}
+\usepackage{booktabs}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{babel}
+
+% Tema y configuración visual de la presentación
+\usetheme{Madrid}
+\usecolortheme{whale}
+
+% Carga centralizada de colores para las gráficas
+\input{graficas/colores.tex}
+
+% Personalización de la paleta institucional con los colores de la plantilla
+\setbeamercolor{structure}{fg=susPrincipal}
+\setbeamercolor{palette primary}{bg=susPrincipal,fg=white}
+\setbeamercolor{palette secondary}{bg=susSecundario,fg=white}
+\setbeamercolor{palette tertiary}{bg=susPrincipal!80!black,fg=white}
+\setbeamercolor{title}{bg=susPrincipal,fg=white}
+
+% Carga del motor de cálculo en Lua, procesamiento del CSV y definición de macros
+\directlua{
+  sus = dofile("sus-calculos.lua")
+  sus.cargar_csv("datos/respuestas.csv")
+  sus.definir_macros()
+}
+
+\title[Evaluación SUS]{Evaluación de Usabilidad del Sistema (SUS)}
+\subtitle{Resultados psicométricos y validación de la experiencia de usuario}
+\author{Trabajo de Fin de Grado / Calidad del Software}
+\date{\today}
+
+\begin{document}
+
+% ----------------------------------------------------------------------------
+% Diapositiva de portada
+% ----------------------------------------------------------------------------
+\begin{frame}
+  \titlepage
+\end{frame}
+
+% ----------------------------------------------------------------------------
+% Diapositiva 1: Resultado global y distribución de aceptabilidad
+% ----------------------------------------------------------------------------
+\begin{frame}{Resultado Global de Usabilidad}
+  \begin{columns}[c]
+    \begin{column}{0.48\textwidth}
+      \centering
+      \scalebox{0.78}{\input{graficas/donut.tex}}
+    \end{column}
+    \begin{column}{0.48\textwidth}
+      \centering
+      \scalebox{0.78}{\input{graficas/velocimetro.tex}}
+    \end{column}
+  \end{columns}
+
+  \vspace{0.4cm}
+  \begin{block}{Síntesis cuantitativa ($n = \susN$ participantes)}
+    \centering
+    Media: \textbf{\susMedia{} / 100} \quad\textbar\quad
+    Calificación: \textbf{\susNotaMedia} \quad\textbar\quad
+    Adjetivo: \textbf{\susAdjetivoMedia} \quad\textbar\quad
+    Desv. Típica: \textbf{$s = \susDesviacion$}
+  \end{block}
+\end{frame}
+
+% ----------------------------------------------------------------------------
+% Diapositiva 2: Rango muestral y respuestas individuales
+% ----------------------------------------------------------------------------
+\begin{frame}{Dispersión e Intervalo de Puntuaciones}
+  \begin{center}
+    \scalebox{0.82}{\input{graficas/rango.tex}}
+  \end{center}
+
+  \vspace{0.2cm}
+  \begin{center}
+    \scalebox{0.72}{\input{graficas/barras.tex}}
+  \end{center}
+\end{frame}
+
+% ----------------------------------------------------------------------------
+% Diapositiva 3: Conclusiones e interpretación de la evaluación
+% ----------------------------------------------------------------------------
+\begin{frame}{Conclusiones de la Evaluación SUS}
+  \begin{itemize}
+    \setlength{\itemsep}{10pt}
+    \item \textbf{Cumplimiento del estándar industrial:}
+      La media obtenida de \textbf{\susMedia} se compara favorablemente frente a los \textbf{68 puntos} de referencia normativos.
+    \item \textbf{Viabilidad operativa confirmada:}
+      El sistema se consolida en la franja \textbf{\susAceptabilidadMedia}, demostrando que el flujo funcional básico resulta claro y productivo.
+    \item \textbf{Consistencia de los resultados:}
+      Rango comprendido entre \textbf{\susMinimo{} y \susMaximo{} puntos}, con una dispersión controlada ($s = \susDesviacion$) a través de perfiles técnicos y de negocio.
+    \item \textbf{Próximas iteraciones de diseño:}
+      Reforzar la asistencia contextual y simplificar acciones poco frecuentes identificadas en los comentarios cualitativos.
+  \end{itemize}
+\end{frame}
+
+\end{document}

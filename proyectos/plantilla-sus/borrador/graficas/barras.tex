@@ -5,7 +5,6 @@
 
 \edef\susEtiquetas{\directlua{sus.imprimir_etiquetas_barras()}}
 \edef\susCoordenadas{\directlua{sus.imprimir_coordenadas_barras()}}
-\edef\susLineaRef{(\susPrimerId, 68) (\susUltimoId, 68)}
 
 \begin{tikzpicture}
   \begin{axis}[
@@ -34,13 +33,10 @@
       line width=0.8pt
     ] coordinates {\susCoordenadas};
 
-    % Línea de referencia estándar de la industria (SUS = 68)
-    \addplot[
-      color=susReferencia,
-      dashed,
-      line width=1.3pt
-    ] coordinates {\susLineaRef};
+    % Línea de referencia horizontal que cruza todo el ancho del eje (SUS = 68)
+    \pgfmathsetmacro{\yRef}{68/105}
+    \draw[susReferencia, dashed, line width=1.2pt] (rel axis cs:0, \yRef) -- (rel axis cs:1, \yRef);
     \node[susReferencia, fill=white, fill opacity=0.85, text opacity=1, inner sep=2pt, font=\scriptsize\bfseries] 
-      at (rel axis cs:0.22, 0.69) {Media estándar de referencia (68)};
+      at (rel axis cs:0.25, \yRef) {Media estándar de referencia (68)};
   \end{axis}
 \end{tikzpicture}

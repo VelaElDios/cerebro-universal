@@ -22,17 +22,17 @@
   % Zona Aceptable: 70 a 100 (54 a 0 deg)
   \draw[line width=11mm, susVerde!85] (54:2.1cm) arc (54:0:2.1cm);
 
-  % Marcas y etiquetas principales de la escala
+  % Marcas y etiquetas numéricas exteriores de la escala
   \foreach \val in {0, 20, 40, 50, 60, 70, 80, 100} {
     \pgfmathsetmacro{\ang}{180 - (\val * 1.8)}
     \draw[white, thick] (\ang:1.55cm) -- (\ang:2.65cm);
     \node[font=\scriptsize\bfseries, text=susTexto] at (\ang:2.95cm) {\val};
   }
 
-  % Etiquetas descriptivas de las zonas
-  \node[font=\scriptsize\bfseries, text=susRojo!80!black] at (135:1.25cm) {No aceptable};
-  \node[font=\tiny\bfseries, text=susAmarillo!90!black, rotate=-18] at (72:1.25cm) {Marginal};
-  \node[font=\scriptsize\bfseries, text=susVerde!80!black] at (27:1.25cm) {Aceptable};
+  % Etiquetas descriptivas de las zonas escalonadas hacia el interior para evitar solapes
+  \node[font=\tiny\bfseries, text=susRojo!85!black] at (138:1.15cm) {No aceptable};
+  \node[font=\fontsize{5}{6}\selectfont\bfseries, text=susAmarillo!90!black, rotate=-18] at (72:0.92cm) {Marginal};
+  \node[font=\tiny\bfseries, text=susVerde!85!black] at (25:1.15cm) {Aceptable};
 
   % Cálculo del ángulo de la aguja según la media obtenida
   \pgfmathsetmacro{\angAguja}{180 - (\mediaRaw * 1.8)}
@@ -42,7 +42,7 @@
   \fill[susPrincipal] (0,0) circle (5pt);
   \fill[white] (0,0) circle (2pt);
 
-  % Lectura numérica y nota al pie del velocímetro (usando macros seguras)
+  % Lectura numérica y nota al pie del velocímetro
   \node[align=center, below] at (0, -0.3) {
     {\fontsize{18}{22}\selectfont\bfseries \susMedia}\\[2pt]
     {\small\bfseries \susAceptabilidadMedia}

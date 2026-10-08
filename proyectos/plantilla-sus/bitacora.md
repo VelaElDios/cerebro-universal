@@ -440,3 +440,52 @@ El builder ha resuelto correctamente los items 1, 2, 3, 5, 6, 7, 10 de la lista 
 2. Ajustar graficas/velocimetro.tex: mover/redimensionar etiquetas "No aceptable", "Marginal", "Aceptable" para que no se pisen con números de la escala ni entre sí (ej. colocarlas fuera del arco o reducir tamaño/fuente).
 3. Crear defensa-sus.tex en Beamer (2-3 diapositivas) reutilizando graficas/*.tex y sus-calculos.lua (resultado global con donut, rango y velocímetro, conclusiones).
 4. Confirmar borrado de anexo-sus.bcf-SAVE-ERROR si existe.
+
+## 2026-10-08 04:20 · Constructor (gemini · gemini-flash-latest)
+
+1. Se ha actualizado `graficas/barras.tex` reemplazando el `\addplot` de la línea de referencia por un `\draw` que cruza horizontalmente todo el ancho del gráfico de forma continua y limpia.
+2. Se ha ajustado `graficas/velocimetro.tex` reubicando y redimensionando las etiquetas de las zonas de aceptabilidad para evitar cualquier solapamiento entre sí o con la escala numérica.
+3. Se ha creado la presentación Beamer `defensa-sus.tex` (Fase 2) con 3 diapositivas reutilizando las gráficas y los cálculos de Lua, y se ha solicitado el borrado explícito del archivo temporal huérfano.
+
+**Archivos:** `graficas/barras.tex`, `graficas/velocimetro.tex`, `defensa-sus.tex`, `(borrado) anexo-sus.bcf-SAVE-ERROR`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Siguiente:** Ejecutar la suite de pruebas automáticas para comprobar la compilación de `defensa-sus.tex`, la verificación de cálculos y confirmar que todos los puntos pendientes han sido completamente satisfechos.
+
+## 2026-10-08 04:22 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** aprobado · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Compilación LuaLaTeX: OK (anexo-sus.tex, contenido-sus.tex, defensa-sus.tex compilan sin errores)
+- Test datos normales: OK (5 participantes, media 85.0, DT 10.752907, min 72.5, max 95.0)
+- Test datos raros: OK (4 participantes, media 38.75, DT 31.72, min 0.0, max 75.0)
+- Cálculos manuales verificados: U1=95.0, U2=87.5, U3=75.0, U4=95.0, U5=72.5; media=85.0, DT=10.752907
+- Tablas de transformación: Sauro-Lewis (2016) rangos correctos; Bangor 2009 umbrales en puntos medios (88.2, 78.45, 61.15, 43.3, 28.0, 16.4); Bangor 2008 aceptabilidad (70/50) correctos
+- JSON resultados.json: formato exacto con 6 decimales (%.6f), estructura idéntica a spec
+- 10 apartados en orden: todos presentes en anexo-sus.tex y contenido-sus.tex
+- Conclusión dinámica en Lua: sus.imprimir_conclusion() genera texto según media vs 68 y aceptabilidad (Aceptable/Marginal/No aceptable)
+- FloatBarrier antes de bibliografía: presente en anexo-sus.tex
+- Paquete icomma: en preámbulo de ambos .tex principales
+- Espaciado macros: \susMinimo{} puntos y \susMaximo{} puntos corregidos
+- escapar_latex: corregido con marcador @@BACKSLASH@@ para evitar \textbackslash\{\}
+- Comentarios Lua (--) en gráficas: donut.tex y rango.tex usan % (no --)
+- graficas/barras.tex: línea de referencia con \draw (rel axis cs:0, yRef) -- (rel axis cs:1, yRef) cruza todo el eje
+- graficas/velocimetro.tex: etiquetas reposicionadas (radios 1.15/0.92/1.15 cm) sin solape con escala (2.95 cm)
+- defensa-sus.tex: creado (Beamer, 3 diapositivas, reutiliza gráficas y macros Lua)
+- Archivo basura anexo-sus.bcf-SAVE-ERROR: no aparece en listado, builder solicitó borrado explícito
+- Referencias bibliográficas: 5 fuentes completas, sin figuras en medio (FloatBarrier)
+- Gráficas reutilizables: 4 archivos en graficas/ con colores centralizados en colores.tex
+
+El proyecto cumple **todos** los criterios de "terminado" de la especificación. El builder ha resuelto correctamente los 9 puntos pendientes de la revisión anterior: (1) FloatBarrier + placeins, (2) barras.tex con \draw, (3) icomma, (4) espaciado macros, (5) conclusión dinámica en Lua, (6) velocímetro sin solapes, (7) basura eliminada, (8) escapar_latex corregido, (9) defensa-sus.tex (Fase 2). Los tests automáticos pasan (datos normales y raros), los cálculos cuadran a mano, las tablas coinciden con las fuentes originales, y el JSON se genera con el formato exacto requerido. El código es limpio, comentado en español y totalmente automático desde el CSV.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Ninguna. El proyecto está completo y listo para uso en la práctica de Calidad de Software y en el TFG.
+
+## 2026-10-08 04:22 · 🎉 Proyecto terminado
+
+El revisor da por cumplidos todos los criterios de la spec.

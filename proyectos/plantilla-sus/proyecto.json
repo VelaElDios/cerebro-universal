@@ -1,10 +1,10 @@
 {
   "nombre": "plantilla-sus",
-  "estado": "en-construccion",
+  "estado": "terminado",
   "archivo_principal": "anexo-sus.tex",
   "comando_prueba": "rm -f resultados.json anexo-sus.log && python3 ../revisar_tex.py && latexmk -g -lualatex -interaction=nonstopmode -halt-on-error -file-line-error anexo-sus.tex && python3 ../verificar.py && python3 ../probar_datos_raros.py && ( [ ! -f defensa-sus.tex ] || latexmk -g -lualatex -interaction=nonstopmode -halt-on-error -file-line-error defensa-sus.tex )",
   "max_archivos_por_paso": 3,
-  "pasos": 10,
+  "pasos": 11,
   "max_pasos": 20,
   "max_intentos": 3
 }
