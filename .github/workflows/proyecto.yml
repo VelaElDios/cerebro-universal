@@ -1,13 +1,15 @@
 name: Cerebro - Proyectos
 
+# Un solo workflow para todos los proyectos: en cada ejecución avanza UN proyecto
+# (el que lleve más tiempo sin ejecutarse) e instala solo lo que ese proyecto necesita.
 on:
   schedule:
-    - cron: "47 * * * *"  
+    - cron: "47 */3 * * *"   # respaldo: el disparador principal es el cron externo (cron-job.org)
   workflow_dispatch:
     inputs:
       proyecto:
-        description: "Carpeta del proyecto"
-        default: "proyectos/plantilla-sus"
+        description: "Carpeta del proyecto (vacío = el que toque por turno)"
+        default: ""
 
 permissions:
   contents: write
@@ -20,47 +22,35 @@ jobs:
   avanzar:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    env:
-      PROYECTO: ${{ github.event.inputs.proyecto || 'proyectos/plantilla-sus' }}
     steps:
       - name: Descargar el repo
         uses: actions/checkout@v5
 
-      # Antes de instalar LaTeX: si el proyecto está pausado o terminado, no se hace nada
-      - name: Comprobar el estado del proyecto
-        id: estado
-        run: |
-          estado=$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1] + "/proyecto.json", encoding="utf-8-sig")).get("estado", "en-construccion"))' "$PROYECTO")
-          echo "Estado de $PROYECTO: $estado"
-          if [ "$estado" = "en-construccion" ]; then
-            echo "activo=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "activo=false" >> "$GITHUB_OUTPUT"
-            echo "::notice::$PROYECTO está '$estado': no se hace nada."
-          fi
-
       - name: Preparar Python
-        if: steps.estado.outputs.activo == 'true'
         uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
-      - name: Instalar LaTeX
-        if: steps.estado.outputs.activo == 'true'
+      # Elige el proyecto y qué instalar. Si no hay ninguno en construcción, no se hace nada más.
+      - name: Elegir proyecto
+        id: elegir
+        run: python scripts/elegir_proyecto.py "$PROYECTO_PEDIDO"
+        env:
+          PROYECTO_PEDIDO: ${{ github.event.inputs.proyecto }}
+
+      - name: Instalar paquetes del sistema
+        if: steps.elegir.outputs.activo == 'true' && steps.elegir.outputs.apt != ''
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq --no-install-recommends \
-            latexmk biber texlive-luatex texlive-latex-recommended texlive-latex-extra \
-            texlive-pictures texlive-science texlive-lang-spanish texlive-bibtex-extra \
-            texlive-fonts-recommended
+          sudo apt-get install -y -qq --no-install-recommends ${{ steps.elegir.outputs.apt }}
 
-      - name: Instalar librerías
-        if: steps.estado.outputs.activo == 'true'
-        run: pip install google-genai
+      - name: Instalar librerías de Python
+        if: steps.elegir.outputs.activo == 'true'
+        run: pip install google-genai ${{ steps.elegir.outputs.pip }}
 
       - name: Avanzar el proyecto
-        if: steps.estado.outputs.activo == 'true'
-        run: python scripts/proyecto.py "$PROYECTO"
+        if: steps.elegir.outputs.activo == 'true'
+        run: python scripts/proyecto.py "${{ steps.elegir.outputs.proyecto }}"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
@@ -68,15 +58,15 @@ jobs:
           PRESUPUESTO_MINUTOS: "50"
 
       - name: Subir el avance
-        if: steps.estado.outputs.activo == 'true'
+        if: steps.elegir.outputs.activo == 'true'
         run: |
           git config user.name "cerebro-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add proyectos
+          git add proyectos memoria
           if git diff --staged --quiet; then
             echo "Sin cambios"
             exit 0
           fi
-          git commit -m "proyecto: avance en $(basename "$PROYECTO") $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M')"
+          git commit -m "proyecto: avance en $(basename "${{ steps.elegir.outputs.proyecto }}") $(TZ=Europe/Madrid date '+%Y-%m-%d %H:%M')"
           git pull --rebase
           git push
