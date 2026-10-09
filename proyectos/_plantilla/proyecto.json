@@ -1,0 +1,12 @@
+{
+  "nombre": "nombre-del-proyecto",
+  "estado": "pausado",
+  "temas": ["python"],
+  "necesita": ["python-tests"],
+  "archivo_principal": "",
+  "comando_prueba": "python3 ../verificar.py",
+  "max_archivos_por_paso": 3,
+  "pasos": 0,
+  "max_pasos": 10,
+  "max_intentos": 3
+}

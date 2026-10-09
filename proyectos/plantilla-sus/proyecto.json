@@ -1,6 +1,16 @@
 {
   "nombre": "plantilla-sus",
   "estado": "terminado",
+  "temas": [
+    "latex",
+    "lua",
+    "tikz",
+    "pgfplots",
+    "beamer"
+  ],
+  "necesita": [
+    "latex"
+  ],
   "archivo_principal": "anexo-sus.tex",
   "comando_prueba": "rm -f resultados.json anexo-sus.log && python3 ../revisar_tex.py && latexmk -g -lualatex -interaction=nonstopmode -halt-on-error -file-line-error anexo-sus.tex && python3 ../verificar.py && python3 ../probar_datos_raros.py && ( [ ! -f defensa-sus.tex ] || latexmk -g -lualatex -interaction=nonstopmode -halt-on-error -file-line-error defensa-sus.tex )",
   "max_archivos_por_paso": 3,

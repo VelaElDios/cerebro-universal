@@ -1,0 +1,23 @@
+{
+  "_explicacion": "Qué instalar según lo que diga \"necesita\" en el proyecto.json. Python y google-genai siempre están. Un proyecto también puede pedir paquetes sueltos con \"apt\" y \"pip\".",
+  "latex": {
+    "apt": [
+      "latexmk",
+      "biber",
+      "texlive-luatex",
+      "texlive-latex-recommended",
+      "texlive-latex-extra",
+      "texlive-pictures",
+      "texlive-science",
+      "texlive-lang-spanish",
+      "texlive-bibtex-extra",
+      "texlive-fonts-recommended",
+      "poppler-utils"
+    ]
+  },
+  "python-tests": {
+    "pip": [
+      "pytest"
+    ]
+  }
+}

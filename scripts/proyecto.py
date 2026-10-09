@@ -7,8 +7,12 @@ Cada ejecución da UN paso:
      constructor recibe el error y lo intenta arreglar (hasta max_intentos en total)
   3. REVISOR (otra IA) revisa, corrige lo evidente y deja tareas
   4. Si el borrador compila y está aprobado, se copia a final/
+  5. Si se arregló un fallo, el revisor puede proponer una lección para memoria/
 
-Uso:  python scripts/proyecto.py proyectos/plantilla-sus
+Las IAs reciben en cada mensaje las lecciones de memoria/ que encajan con los "temas" del
+proyecto y con el error del momento (ver cerebro/memoria.py).
+
+Uso:  python scripts/proyecto.py proyectos/<nombre>
 """
 
 import json
@@ -18,7 +22,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from cerebro import nucleo
+from cerebro import memoria, nucleo
 from cerebro import proveedores as prov
 
 # ---------- Cronómetro ----------
@@ -57,6 +61,9 @@ Cómo trabajas:
 - Rutas relativas a la carpeta del borrador. Comentarios del código en español.
 - No inventes datos de fuentes bibliográficas: si no estás seguro de un valor, déjalo marcado
   con un comentario TODO para que el revisor lo compruebe.
+- Si reescribes un archivo, conserva TODO lo que ya funcionaba (funciones, secciones...).
+- Lee las LECCIONES DE LA MEMORIA: son errores que ya se resolvieron antes, en este u otros
+  proyectos. No los repitas.
 
 """ + FORMATO_CONSTRUCTOR
 
@@ -94,7 +101,16 @@ contenido COMPLETO corregido (opcional, solo si corriges algo)
 <<<TAREAS>>>
 - tareas concretas para el próximo paso del constructor
 <<<TERMINADO>>>
-no   (o: si)"""
+no   (o: si)
+<<<LECCION>>>
+(OPCIONAL. Solo si en este paso se arregló un error que podría repetirse en otros proyectos y
+que NO está ya en las lecciones de la memoria. Si no, omite este bloque.)
+titulo: frase corta que resuma la regla
+temas: temas separados por comas (p. ej. latex, lua, python)
+claves: palabras exactas del mensaje de error, separadas por comas
+problema: qué fallaba y por qué
+solucion: qué hay que hacer
+ejemplo: código mínimo correcto (opcional)"""
 
 
 def muestra_operaciones(comprobaciones: str) -> bool:
@@ -164,6 +180,7 @@ def probar(cfg: dict, carpeta: Path) -> tuple[bool, str]:
     if principal and not (carpeta / principal).exists():
         return False, f"Todavía no existe el archivo principal {principal}."
     entorno = {**os.environ, "max_print_line": "1000"}  # que LaTeX no corte las líneas del log a 79 caracteres
+    entorno["PYTHONDONTWRITEBYTECODE"] = "1"  # sin .pyc: un archivo reescrito en el mismo segundo no usa la versión vieja
     # Máximo 5 min, y nunca más de lo que queda de paso (con 30 s de margen)
     limite = int(max(30, min(300, prov.tiempo_restante() - 30)))
     try:
@@ -215,6 +232,8 @@ def main():
 
     # ---------- 0. FRENO ----------
     # Cada ejecución cuenta un paso. Al llegar a max_pasos el proyecto se pausa.
+    # Para que el workflow vaya rotando: se elige el proyecto que lleve más tiempo sin ejecutarse
+    cfg["ultima_ejecucion"] = nucleo.ahora().isoformat(timespec="seconds")
     cfg["pasos"] = cfg.get("pasos", 0)
     max_pasos = cfg.get("max_pasos")
     if max_pasos is not None and cfg["pasos"] >= max_pasos:
@@ -250,14 +269,22 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     maximo = cfg.get("max_archivos_por_paso", 3)
 
     config, proveedores = prov.cargar(nucleo.RAIZ / "config" / "ias.json")
+    # Un proyecto puede cambiar qué IAs hacen cada rol ("roles" en su proyecto.json)
+    config = {**config, "roles": {**config.get("roles", {}), **cfg.get("roles", {})}}
+    temas = cfg.get("temas", [])
+    nombre = carpeta.name
 
     # ---------- 1. CONSTRUCTOR ----------
     ok_antes, prueba_antes = probar(cfg, borrador)
+    reciente = nucleo.bitacora_reciente(bitacora)
     mensaje = f"""# SPEC DEL PROYECTO
 {spec}
 
+# LECCIONES DE LA MEMORIA (errores ya resueltos: no los repitas)
+{memoria.seleccionar(temas, prueba_antes + reciente[-3000:])}
+
 # BITÁCORA RECIENTE (incluye las tareas del revisor)
-{nucleo.bitacora_reciente(bitacora)}
+{reciente}
 
 # ESTADO DE LA PRUEBA DEL BORRADOR
 {prueba_antes}
@@ -300,6 +327,9 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
 # RESULTADO DE LA PRUEBA
 {prueba}
 
+# LECCIONES DE LA MEMORIA (puede que este error ya se haya resuelto antes)
+{memoria.seleccionar(temas, prueba)}
+
 # SPEC DEL PROYECTO
 {spec}
 
@@ -331,6 +361,9 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
     # ---------- 3. REVISOR ----------
     mensaje = f"""# SPEC DEL PROYECTO
 {spec}
+
+# LECCIONES DE LA MEMORIA (ya guardadas: no las repitas en LECCION)
+{memoria.seleccionar(temas, prueba + chr(10).join(intentos))}
 
 # BITÁCORA RECIENTE
 {nucleo.bitacora_reciente(bitacora)}
@@ -396,6 +429,17 @@ Intentos de compilar/probar en este paso:
                   f"{r.get('COMENTARIOS', '(sin comentarios)')}\n\n"
                   f"**Correcciones del revisor:** {', '.join(f'`{c}`' for c in correcciones) or 'ninguna'}\n\n"
                   f"**Tareas para el constructor:**\n{r.get('TAREAS', '- ninguna')}")
+
+    # ---------- 5. MEMORIA ----------
+    # Si en este paso se arregló un fallo y la prueba pasa, la lección que proponga el revisor
+    # se guarda como "propuesta" (una persona la confirma luego).
+    hubo_fallo = not ok_antes or any("❌" in i for i in intentos)
+    if ok and (hubo_fallo or correcciones) and r.get("LECCION", "").strip():
+        guardada = memoria.guardar_propuesta(r["LECCION"], nombre)
+        if guardada:
+            nucleo.anotar(bitacora, "🧠 Lección propuesta para la memoria",
+                          f"[[{guardada}]] (pendiente de confirmar en `memoria/lecciones/`).")
+            print(f"Lección propuesta: {guardada}")
 
     if terminado and ok:
         cfg["estado"] = "terminado"
