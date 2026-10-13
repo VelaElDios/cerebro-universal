@@ -62,6 +62,8 @@ Cómo trabajas:
 - No inventes datos de fuentes bibliográficas: si no estás seguro de un valor, déjalo marcado
   con un comentario TODO para que el revisor lo compruebe.
 - Si reescribes un archivo, conserva TODO lo que ya funcionaba (funciones, secciones...).
+- Si el proyecto tiene FUENTES, cada dato (cifras, fechas, nombres, versiones) sale de ellas.
+  Lo que no esté en las fuentes no se escribe: no lo inventes ni lo "redondees".
 - Lee las LECCIONES DE LA MEMORIA: son errores que ya se resolvieron antes, en este u otros
   proyectos. No los repitas.
 
@@ -86,6 +88,9 @@ Comprobaciones (OBLIGATORIO):
   Ejemplo: "U1: impares (5−1)+(5−1)+(4−1)+(5−1)+(5−1)=19; pares (5−1)+(5−1)+(5−2)+(5−1)+(5−1)=19;
   (19+19)×2,5=95 → coincide con el documento".
 - Lo que no hayas comprobado, dilo: "no comprobado". Un "aprobado" sin comprobaciones no cuenta.
+- Si el proyecto tiene FUENTES, contrasta con ellas los datos del borrador y cita la línea de la
+  fuente en COMPROBACIONES (p. ej. "80 pruebas → guia.md §7: «80 pruebas automatizadas»").
+  Un dato que no está en las fuentes es un error: corrígelo o quítalo.
 
 Responde EXACTAMENTE con este formato:
 
@@ -134,6 +139,19 @@ def dejar_de_seguir_ignorados(carpeta: Path):
             print(f"Quitados del repo por estar en .gitignore: {', '.join(rutas)}")
     except Exception as e:  # la limpieza nunca debe tumbar el paso
         print(f"No pude limpiar archivos ignorados: {e}")
+
+
+def leer_fuentes(carpeta: Path, cfg: dict) -> str:
+    """Archivos de solo lectura que el proyecto pasa a las IAs ("fuentes" en proyecto.json):
+    datos, guías, documentación... Están fuera de borrador/, así que las IAs no pueden cambiarlos."""
+    trozos = []
+    for relativa in cfg.get("fuentes", []):
+        ruta = carpeta / relativa
+        if ruta.is_file():
+            trozos.append(f"<<<FUENTE {relativa}>>>\n{ruta.read_text(encoding='utf-8', errors='replace')}\n<<<FIN>>>")
+        else:
+            trozos.append(f"(falta la fuente {relativa})")
+    return "\n\n".join(trozos)
 
 
 def guardar_cfg(cfg_ruta: Path, cfg: dict):
@@ -273,13 +291,16 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     config = {**config, "roles": {**config.get("roles", {}), **cfg.get("roles", {})}}
     temas = cfg.get("temas", [])
     nombre = carpeta.name
+    fuentes = leer_fuentes(carpeta, cfg)
+    bloque_fuentes = (f"\n# FUENTES DEL PROYECTO (solo lectura: son la única verdad sobre los datos)\n{fuentes}\n"
+                      if fuentes else "")
 
     # ---------- 1. CONSTRUCTOR ----------
     ok_antes, prueba_antes = probar(cfg, borrador)
     reciente = nucleo.bitacora_reciente(bitacora)
     mensaje = f"""# SPEC DEL PROYECTO
 {spec}
-
+{bloque_fuentes}
 # LECCIONES DE LA MEMORIA (errores ya resueltos: no los repitas)
 {memoria.seleccionar(temas, prueba_antes + reciente[-3000:])}
 
@@ -310,8 +331,17 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     print(f"Prueba tras constructor: {'OK' if ok else 'FALLA'}")
     max_intentos = cfg.get("max_intentos", 3)
 
+    # En proyectos largos (p. ej. un documento por capítulos) la prueba falla durante muchos pasos
+    # solo porque falta trabajo: ahí no hay que "arreglar" nada. Con "reintentar_si" (una expresión
+    # regular) solo se reintenta cuando el fallo la cumple, p. ej. un error de compilación.
+    reintentar_si = cfg.get("reintentar_si")
+
     for n in range(2, max_intentos + 1):
         if ok:
+            break
+        if reintentar_si and not re.search(reintentar_si, prueba, flags=re.M):
+            intentos.append(f"intento {n}: no se hace, el fallo es por trabajo pendiente "
+                            f"(no cumple «reintentar_si»); lo revisa el revisor")
             break
         if prov.tiempo_restante() < MIN_PARA_INTENTO + MIN_PARA_REVISOR:
             intentos.append(f"intento {n}: no se hace, queda poco tiempo de paso (⏱️ "
@@ -361,7 +391,7 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
     # ---------- 3. REVISOR ----------
     mensaje = f"""# SPEC DEL PROYECTO
 {spec}
-
+{bloque_fuentes}
 # LECCIONES DE LA MEMORIA (ya guardadas: no las repitas en LECCION)
 {memoria.seleccionar(temas, prueba + chr(10).join(intentos))}
 

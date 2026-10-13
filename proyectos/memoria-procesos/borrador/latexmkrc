@@ -1,0 +1,3 @@
+# Compila con LuaLaTeX (pdf_mode 4) y BibTeX, sin tener que elegirlo en el editor.
+$pdf_mode = 4;
+$bibtex_use = 2;
