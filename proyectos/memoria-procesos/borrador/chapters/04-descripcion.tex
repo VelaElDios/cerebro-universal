@@ -1,20 +1,237 @@
 \chapter{Descripción de la Aplicación}
 \label{cap:descripcion}
 
-% Guía de la plantilla:
-% - Requisitos: lista de requisitos funcionales (RF) y no funcionales (RNF).
-% - Arquitectura de la solución.
-% - Desarrollo del proyecto: tabla resumen de los sprints (el detalle va en el Anexo A).
-% - La aplicación: descripción tipo manual de usuario, con capturas.
+\section{Requisitos del sistema}
 
-\section{Requisitos}
-\lipsum[1]
+El alcance del proyecto se estructura en requisitos funcionales (RF) y no funcionales (RNF), derivados directamente de la especificación oficial de la asignatura \cite{enunciado}. La Tabla \ref{tab:requisitos} resume estos requisitos y su estado de cumplimiento al cierre del Sprint 1.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{1.5cm} L{8.0cm} L{3.5cm}@{}}
+\toprule
+\textbf{Código} & \textbf{Descripción del requisito} & \textbf{Estado de entrega} \\
+\midrule
+RF-1 & Backend sirve frontend desde el mismo origen sin CORS & Cumplido (Hito 1) \\
+RF-2 & Desacoplamiento estricto en tres capas (API, lógica y datos) & Cumplido (Hito 1) \\
+RF-3 & Registro de usuario local con contraseña de al menos 8 caracteres & Cumplido (Hito 2) \\
+RF-4 & Confirmación de registro por correo electrónico (estado pendiente) & Pospuesto (Hito 4) \\
+RF-5 & Autenticación local y mantenimiento de sesión persistente & Cumplido (Hito 2) \\
+RF-6 & Inicio de sesión externo mediante proveedor OAuth & Pospuesto (Hito 4) \\
+RF-7 & Cierre de sesión con destrucción en servidor e invalidación & Cumplido (Hito 2) \\
+RF-8 & Roles de usuario y administrador & Cumplido (Hito 3) \\
+RF-9 & Listado de usuarios con email, rol y estado (solo admin) & Cumplido (Hito 3) \\
+RF-10 & Comprobación de estado activo reservada al administrador & Cumplido (Hito 3) \\
+RF-11 & Eliminación de cuenta por el propio usuario o por administrador & Cumplido (Hito 3) \\
+RF-12 & Baja lógica sin reactivación y protección del último admin & Cumplido (Hito 3) \\
+\midrule
+RNF-1 & Persistencia relacional resistente a reinicios en PostgreSQL & Cumplido (Hito 3) \\
+RNF-2 & Secretos desacoplados en variables de entorno y Secret Manager & Cumplido (Hito 3) \\
+RNF-3 & Derivación segura de contraseñas con función de hash bcrypt & Cumplido (Hito 2) \\
+RNF-4 & Control de acceso y rutas protegidas en servidor (401 y 403) & Cumplido (Hito 2) \\
+RNF-5 & Despliegue en la nube accesible mediante URL pública & Cumplido (Hitos 1 y 4) \\
+RNF-6 & Batería de pruebas automatizadas ejecutables con un solo comando & Cumplido (Hito 1) \\
+RNF-7 & Registro de actividad en JSON estructurado por salida estándar & Cumplido (Hito 3) \\
+RNF-8 & Control de versiones con GitHub Flow e integración continua & Cumplido (Hitos 1–3) \\
+\bottomrule
+\end{tabular}
+\caption{Requisitos funcionales y no funcionales del Sprint 1.}
+\label{tab:requisitos}
+\end{table}
 
 \section{Arquitectura de la solución}
-\lipsum[2]
+
+La arquitectura del sistema sigue un modelo desacoplado en tres niveles en el servidor, acompañado por la separación entre interfaz y cliente en el navegador. La Figura \ref{fig:arquitectura} ilustra la comunicación y las fronteras de responsabilidad del sistema.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    box/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.8cm, align=center, minimum height=1cm, font=\small},
+    clientbox/.style={rectangle, draw=azul, fill=blanco, rounded corners, text width=5.8cm, align=center, minimum height=1cm, font=\small},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
+]
+    % Navegador
+    \node[clientbox] (gui) {\textbf{Presentación (GUI)}\\\texttt{public/js/ui.js}: Vistas y navegación hash};
+    \node[clientbox, below=0.6cm of gui] (client) {\textbf{Cliente de comunicación}\\\texttt{public/js/api.js}: Peticiones fetch y errores};
+    
+    % Servidor
+    \node[box, below=1cm of client] (api) {\textbf{Capa API}\\\texttt{src/api/}: Rutas Express, middlewares y sesiones};
+    \node[box, below=0.6cm of api] (logic) {\textbf{Lógica de negocio}\\\texttt{src/services/}: Reglas de negocio e identidades};
+    \node[box, below=0.6cm of logic] (data) {\textbf{Acceso a datos}\\\texttt{src/repositories/}: Repositorio PostgreSQL / Memoria};
+    
+    % Base de datos
+    \node[box, fill=gris75!40, below=0.8cm of data] (db) {\textbf{PostgreSQL (Neon, Frankfurt)}\\Tablas: \texttt{users}, \texttt{session}, \texttt{schema\_migrations}};
+
+    % Flechas
+    \draw[arrow] (gui) -- (client);
+    \draw[arrow] (client) -- node[right, font=\footnotesize] {HTTP / JSON} (api);
+    \draw[arrow] (api) -- (logic);
+    \draw[arrow] (logic) -- (data);
+    \draw[arrow] (data) -- (db);
+
+\end{tikzpicture}
+\caption{Arquitectura en capas y flujo de interacción del sistema.}
+\label{fig:arquitectura}
+\end{figure}
+
+Las fronteras de comunicación entre módulos están rigurosamente delimitadas:
+\begin{itemize}
+    \item \textbf{Frontera GUI -- Cliente:} La interfaz \texttt{public/js/ui.js} no invoca directamente funciones de red; delega toda interacción en el cliente \texttt{public/js/api.js}.
+    \item \textbf{Frontera API -- Lógica:} Los controladores de \texttt{src/api/users.js} y \texttt{src/api/auth.js} procesan peticiones HTTP e invocan los métodos de \texttt{userService}, sin contener reglas de negocio.
+    \item \textbf{Frontera Lógica -- Datos:} El servicio \texttt{userService} invoca operaciones definidas en el contrato del repositorio sin conocer si la persistencia es volátil o relacional.
+    \item \textbf{Conexión global:} El archivo \texttt{src/app.js} es el único punto donde se inyectan las dependencias entre capas.
+\end{itemize}
+
+\subsection{Modelo de datos}
+
+La persistencia relacional en PostgreSQL se articula mediante migraciones SQL versionadas que definen tres tablas principales:
+\begin{itemize}
+    \item \textbf{\texttt{users}:} Almacena las identidades del sistema. Contiene los campos \texttt{id} (UUID, clave primaria), \texttt{email} (TEXT, único), \texttt{password\_hash} (TEXT, hash bcrypt), \texttt{role} (\texttt{'user'} o \texttt{'admin'}), \texttt{status} (\texttt{'pending'}, \texttt{'active'} o \texttt{'deleted'}), \texttt{auth\_provider} (\texttt{'local'} o \texttt{'google'}), \texttt{created\_at} (TIMESTAMPTZ) y \texttt{deleted\_at} (TIMESTAMPTZ).
+    \item \textbf{\texttt{session}:} Estructurada según el estándar de \texttt{connect-pg-simple}, con campos \texttt{sid}, \texttt{sess} (JSON con datos serializados) y \texttt{expire}.
+    \item \textbf{\texttt{schema\_migrations}:} Registra los ficheros de migración ejecutados secuencialmente.
+\end{itemize}
+
+Un usuario se considera activo en el sistema cuando su atributo \texttt{status} es igual a \texttt{'active'}, lo que certifica que la cuenta no ha sido dada de baja ni permanece pendiente de confirmación.
+
+\subsection{Ciclo de sesión y control de acceso}
+
+El ciclo de vida de la autenticación se apoya en cookies de sesión firmadas:
+\begin{enumerate}
+    \item El cliente envía credenciales mediante \texttt{POST /api/auth/login}.
+    \item La lógica valida la existencia del usuario y compara la contraseña mediante \texttt{bcryptjs}.
+    \item Ante el éxito, Express regenera la sesión para evitar ataques de fijación de sesión, asigna el identificador del usuario y guarda el registro en la base de datos relacional.
+    \item El servidor emite una cookie \texttt{grada.sid} con directivas \texttt{httpOnly}, \texttt{sameSite=lax} y una caducidad de 7 días.
+    \item Al recargar la aplicación, el cliente invoca \texttt{GET /api/auth/me}. Si el usuario hubiera sido eliminado con posterioridad, la sesión queda automáticamente invalidada.
+    \item Al solicitar \texttt{POST /api/auth/logout}, la sesión se destruye en la tabla \texttt{session} del servidor y se limpia la cookie del navegador.
+\end{enumerate}
+
+\subsection{Especificación de la API}
+
+La Tabla \ref{tab:api} detalla las operaciones provistas por la capa API bajo el prefijo común \texttt{/api}.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{1.5cm} L{3.5cm} L{2.0cm} L{6.0cm}@{}}
+\toprule
+\textbf{Método} & \textbf{Ruta} & \textbf{Acceso} & \textbf{Propósito} \\
+\midrule
+GET & \texttt{/api/health} & Público & Comprobación de salud del servidor \\
+POST & \texttt{/api/auth/register} & Público & Registro con email y contraseña (mínimo 8) \\
+POST & \texttt{/api/auth/login} & Público & Inicio de sesión con credenciales locales \\
+POST & \texttt{/api/auth/logout} & Público & Destrucción de la sesión en el servidor \\
+GET & \texttt{/api/auth/me} & Sesión & Obtención del usuario con sesión activa \\
+GET & \texttt{/api/users} & Admin & Listado de usuarios (email, rol y estado) \\
+GET & \texttt{/api/users/:id/active} & Admin & Comprobación del estado activo \\
+PATCH & \texttt{/api/users/:id/role} & Admin & Modificación de rol de usuario \\
+DELETE & \texttt{/api/users/:id} & Propio / Admin & Baja lógica de cuenta de usuario \\
+\bottomrule
+\end{tabular}
+\caption{Endpoints expuestos por la API REST.}
+\label{tab:api}
+\end{table}
+
+\section{Decisiones técnicas y de diseño}
+
+Cada decisión técnica adoptada en el proyecto responde a requisitos funcionales y de seguridad:
+\begin{itemize}
+    \item \textbf{Node.js 22 y Express 5:} Permite unificar JavaScript en cliente y servidor, aprovechando la captura nativa de excepciones asíncronas en Express 5 \cite{express,nodejs}.
+    \item \textbf{Frontend sin framework compilado:} Elimina la necesidad de transpilación, asegura la entrega desde el mismo origen y delimita nítidamente la capa visual (\texttt{ui.js}) de la capa cliente (\texttt{api.js}).
+    \item \textbf{Patrón repositorio e inyección de dependencias:} Se implementaron dos repositorios intercambiables (\texttt{memoryUserRepository} y \texttt{postgresUserRepository}) bajo la misma interfaz. Esto posibilitó migrar al almacenamiento relacional sin modificar la lógica de negocio.
+    \item \textbf{Baja lógica (\texttt{status = 'deleted'}):} Evita la eliminación física de registros para preservar auditorías y previene que una cuenta dada de baja vuelva a autenticarse.
+    \item \textbf{Ofuscación de mensajes de autenticación:} Se devuelve el mismo mensaje ante correos no registrados o contraseñas inválidas, evitando la enumeración de usuarios.
+    \item \textbf{Inicialización del primer administrador (\texttt{ensureAdmin}):} Configurado al arrancar mediante \texttt{ADMIN\_EMAIL} y \texttt{ADMIN\_PASSWORD}. Se ejecuta de forma idempotente sin almacenar credenciales en el código fuente.
+    \item \textbf{Protección del último administrador:} La lógica impide degradar o eliminar al último administrador, garantizando que el sistema nunca quede huérfano de gestión.
+    \item \textbf{Logging estructurado en JSON:} Emisión por salida estándar hacia Cloud Logging, enmascarando contraseñas, secretos y tokens de sesión.
+\end{itemize}
 
 \section{Desarrollo del proyecto}
-\lipsum[3]
 
-\section{La Grada Colchonera}
-\lipsum[4]
+El desarrollo se organizó en torno al Sprint 1, articulando la implementación en los hitos pedagógicos semanales. La Tabla \ref{tab:resumen-sprint} sintetiza las dimensiones generales del ciclo, cuyo desglose detallado se analiza en el Anexo \ref{anx:desarrollo}.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{2.2cm} L{3.3cm} L{4.5cm} L{3.0cm}@{}}
+\toprule
+\textbf{Ciclo} & \textbf{Periodo} & \textbf{Objetivo central} & \textbf{Estado final} \\
+\midrule
+Sprint 1 & 29/09/2026 -- 27/10/2026 & Base SaaS con gestión de usuarios, CI/CD y despliegue cloud & 16 PBIs hechos (3 pospuestos a Hito 4) \\
+\bottomrule
+\end{tabular}
+\caption{Resumen del Sprint 1 del proyecto.}
+\label{tab:resumen-sprint}
+\end{table}
+
+\section{Manual de usuario: La Grada Colchonera}
+
+La interacción con \textit{La Grada Colchonera} se realiza a través de su interfaz web de estética rojiblanca. A continuación se describe el funcionamiento de los flujos de usuario principales.
+
+\subsection{Página de inicio y registro}
+
+Al acceder a la URL principal, la aplicación muestra el estado operativo del servicio y los accesos públicos, tal como se observa en la Figura \ref{fig:app-inicio}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/app-01-inicio.png}
+\caption{Pantalla de inicio de la aplicación con comprobación del estado del servidor.}
+\label{fig:app-inicio}
+\end{figure}
+
+El formulario de registro valida que el correo posea un formato válido y que la contraseña cuente con una longitud de al menos 8 caracteres. Si el usuario incumple estas restricciones o introduce un correo ya registrado, el sistema bloquea el envío y muestra un mensaje explicativo, según ilustra la Figura \ref{fig:app-registro}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/app-02-registro-validacion.png}
+\caption{Formulario de registro con mensaje de error de validación.}
+\label{fig:app-registro}
+\end{figure}
+
+\subsection{Inicio de sesión y gestión de cuenta}
+
+Si se introducen credenciales incorrectas, la aplicación notifica el error de manera homogénea para preservar la seguridad, como se aprecia en la Figura \ref{fig:app-login-error}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/app-03-entrar-error.png}
+\caption{Notificación de error ante credenciales incorrectas en el inicio de sesión.}
+\label{fig:app-login-error}
+\end{figure}
+
+Una vez autenticado, el usuario accede a la sección \textit{Mi cuenta}, ilustrada en la Figura \ref{fig:app-perfil}. En este panel se visualizan los datos del perfil y se ofrece la posibilidad de solicitar la baja definitiva de la cuenta mediante baja lógica.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/app-04-perfil.png}
+\caption{Vista de Mi cuenta con datos de usuario y opción de baja de servicio.}
+\label{fig:app-perfil}
+\end{figure}
+
+\subsection{Panel de administración y control de acceso}
+
+Si un usuario sin privilegios intenta acceder a rutas administrativas, el servidor deniega la operación con código 403 y la interfaz redirige la navegación, como se refleja en la Figura \ref{fig:app-sin-permiso}.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/app-05-usuario-sin-permiso.png}
+\caption{Redirección y denegación de acceso ante un intento de navegación no autorizada.}
+\label{fig:app-sin-permiso}
+\end{figure}
+
+Por el contrario, al identificarse con rol de administrador, se habilita el panel de gestión mostrado en la Figura \ref{fig:app-admin}. En esta vista se presentan todos los usuarios con sus atributos de correo, rol, estado y fecha de alta, permitiendo modificar privilegios o revocar accesos.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/app-06-panel-admin.png}
+\caption{Panel de administración con listado y gestión de usuarios.}
+\label{fig:app-admin}
+\end{figure}
+
+En dispositivos móviles, la interfaz se adapta responsivamente presentando a cada usuario como una tarjeta individualizada, garantizando la usabilidad de las acciones en pantallas estrechas (Figura \ref{fig:app-admin-movil}).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.35\textwidth]{figs/capturas/app-07-panel-admin-movil.png}
+\caption{Panel de administración en móvil: cada usuario como tarjeta.}
+\label{fig:app-admin-movil}
+\end{figure}

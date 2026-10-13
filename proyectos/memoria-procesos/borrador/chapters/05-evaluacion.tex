@@ -1,15 +1,29 @@
 \chapter{Evaluación}
 \label{cap:evaluacion}
 
-% Guía de la plantilla: diseño de la evaluación, resultados y discusión.
-% En este trabajo: cómo se ha comprobado que la aplicación cumple los requisitos
-% (pruebas automatizadas, CI, revisión frente al enunciado, comprobación del despliegue).
-
 \section{Diseño de la evaluación}
-\lipsum[1]
+
+La evaluación de la calidad y del cumplimiento de la especificación se diseñó como un proceso multicapa continuo y reproducible. El marco de verificación descansa en cuatro pilares metodológicos:
+\begin{enumerate}
+    \item \textbf{Pruebas unitarias e integración en local:} Uso del ejecutor nativo \texttt{node:test} con el simulador de base de datos en memoria \texttt{pg-mem}, lo que permite ejecutar la suite completa en el entorno de desarrollo mediante el comando unificado \texttt{npm test}.
+    \item \textbf{Integración continua en GitHub Actions:} Ejecución del flujo de trabajo automatizado en cada pull request y push hacia la rama \texttt{main}. Dicho flujo despliega un servicio PostgreSQL 17 real para ejecutar las pruebas contra la base de datos auténtica y valida la construcción de la imagen de producción en Docker mediante un contenedor \texttt{node:22-alpine}.
+    \item \textbf{Comprobación del despliegue en Google Cloud Run:} El flujo de despliegue valida la salud del servicio desplegado mediante un smoke test que realiza hasta 20 intentos de consulta contra el endpoint \texttt{/api/health}.
+    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría manual exhaustiva documentada en \texttt{docs/revision-entrega.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
+\end{enumerate}
 
 \section{Resultados}
-\lipsum[2]
+
+La ejecución de las pruebas y la infraestructura arrojaron los resultados cuantitativos reflejados a continuación:
+\begin{itemize}
+    \item \textbf{Batería de pruebas automatizadas:} Un total de 80 pruebas automatizadas (79 ejecutables en entorno local y 1 prueba de extremo a extremo que se ejecuta exclusivamente en el CI contra PostgreSQL 17). De ellas, 26 corresponden a pruebas unitarias de la lógica de negocio en \texttt{userService}, evaluando registros duplicados, cuentas pendientes, control del último administrador y permisos. Las restantes cubren autenticación (10), API de usuarios (11), contratos de repositorios (12), logger (6), configuración (5), migraciones (3), interfaz (3), arranque (2) y salud (1).
+    \item \textbf{Métricas del código fuente:} El servidor en \texttt{src/} cuenta con 1.128 líneas de JavaScript; el frontend en \texttt{public/} suma 657 líneas; y las pruebas en \texttt{tests/} alcanzan 992 líneas repartidas en 13 ficheros. Se crearon 2 migraciones SQL (\texttt{users} y \texttt{session}).
+    \item \textbf{Actividad en GitHub:} Se contabilizan 65 commits en \texttt{main} (33 de trabajo y 32 fusiones de pull request), 33 pull requests integrados y 33 ramas gestionadas. Se registraron 71 ejecuciones de GitHub Actions (el workflow CI completó 65 ejecuciones).
+    \item \textbf{Despliegue productivo:} El último commit en \texttt{main} (\texttt{978098e}, PR \#32, 12/10/2026) se desplegó en Google Cloud Run en 58 s de forma automática.
+    \item \textbf{Consumo de recursos en Neon (a fecha 12/10/2026):} 0,27 CU-h de cómputo (frente a 100 CU-h disponibles), 0,03 GB de almacenamiento (sobre un límite de 1 GB) y 0 GB de transferencia sobre un límite mensual de 5 GB \cite{neonlimits}.
+\end{itemize}
 
 \section{Discusión}
-\lipsum[3]
+
+El diseño de la evaluación proporciona garantías sólidas respecto a la integridad funcional del software: ninguna rama pudo fusionarse sin que la batería completa de pruebas resultara exitosa en un entorno PostgreSQL idéntico al de producción. Asimismo, la revisión frase a frase permitió identificar discrepancias sutiles antes del cierre, como la restricción del endpoint de verificación de usuario activo, que originalmente estaba abierto al propio usuario y fue restringido al administrador en el PR \#30 para ceñirse fielmente al enunciado \cite{enunciado}.
+
+No obstante, como observación crítica sobre el proceso, debe señalarse que los 33 commits de desarrollo quedaron registrados con fecha 12/10/2026. Si bien la estructura del historial es estrictamente incremental y respeta el flujo de ramas y pull requests individuales por tarea, la concentración temporal en una única jornada debe considerarse con transparencia ante la evaluación docente, al contrastarla con la expectativa pedagógica de un avance espaciado en el tiempo.
