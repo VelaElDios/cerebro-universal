@@ -938,3 +938,33 @@ El borrador está casi listo: estructura completa, contenido fiel a las fuentes,
 - Verificar que no quedan advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
 - Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
 - Asegurar que los mínimos de palabras por capítulo/anexo se cumplen
+
+## 2026-10-13 20:21 · Constructor (openrouter · nvidia/nemotron-3.5-lightning:free)
+
+(sin resumen)
+
+**Archivos:** ninguno
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 1 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Siguiente:** -
+
+## 2026-10-13 20:24 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Overfull hbox de 213 pt en caption de fig:pipeline-cicd (chapters/03-propuesta.tex líneas 83-84): flechas Unicode «→» no se parten y desbordan el margen. Solución: reemplazar por «->» ASCII.
+- Resto de comprobaciones ya validadas por revisor anterior: 80 pruebas, 65 commits, 33 PRs, 33 ramas, 1128 líneas src, 657 public, 992 tests, 2 migraciones, 7+3 capturas, 71 ejecuciones GH Actions, 19 PBIs, 32 tareas, 16 hechos, 3 pendientes, 84% DoneTonic, consumo Neon, 58s despliegue, commit 978098e, 26 pruebas userService, desglose pruebas, evolución PBIs, Project IDs, 512 MiB, 0-2 instancias, 20 intentos health, cookie 7 días, bcrypt coste 10, min 8 chars, 13 ficheros tests, breakcites cargado, tabla herramientas alineada, caption trazabilidad corregida, include/portada.tex eliminado, bibliografía 9 entradas con doble llave y year, 12 figuras y 12 tablas con caption/label/ref, mínimos palabras cumplidos, sin lipsum/DNI/??, compila LuaLaTeX.
+
+El único fallo que impide pasar `verificar.py` es el overfull hbox en el caption de la figura del pipeline (fig:pipeline-cicd). El caption contiene flechas Unicode «→» que LaTeX no puede partir, desbordando 213 pt. La solución es reemplazar «→» por «->» (ASCII) para que LaTeX pueda hacer el salto de línea. El constructor no aplicó esta corrección en su último intento (no tocó archivos). Corrijo yo el archivo chapters/03-propuesta.tex.
+
+**Correcciones del revisor:** `chapters/03-propuesta.tex`
+
+**Tareas para el constructor:**
+- Compilar la memoria con LuaLaTeX y ejecutar `verificar.py` para confirmar que el overfull hbox se ha resuelto y no quedan otros problemas
+- Verificar que no quedan advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
+- Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
+- Asegurar que los mínimos de palabras por capítulo/anexo se cumplen

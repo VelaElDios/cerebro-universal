@@ -69,7 +69,7 @@ El pipeline de integración y despliegue continuo, implementado con GitHub Actio
     \node[node] (push) {push / pull\_request};
     \node[nodewide, below=1.2cm of push] (ci) {CI (workflow de GitHub Actions)\\Job \textit{Pruebas}: PostgreSQL 17 + \texttt{npm test}\\Job \textit{Imagen Docker}: build + \texttt{curl /api/health}};
     \node[decision, below=1.5cm of ci] (dec) {¿push a \texttt{main} y CI en verde?};
-    \node[node, below=1.5cm of dec] (deploy) {Despliegue Cloud Run\\1. checkout commit probado\\2. auth Google (WIF)\\3. docker build + push Artifact Registry\\4. \texttt{gcloud run deploy} (0–2 inst., 512 MiB)\\5. smoke test: 20 intentos \texttt{/api/health}};
+    \node[node, below=1.5cm of dec] (deploy) {Despliegue Cloud Run\\1. checkout commit probado\\2. auth Google (WIF)\\3. docker build + push Artifact Registry\\4. \texttt{gcloud run deploy} (0--2 inst., 512 MiB)\\5. smoke test: 20 intentos \texttt{/api/health}};
     \node[node, right=3.2cm of deploy] (render) {Render (paralelo)\\despliega \texttt{main} según \texttt{render.yaml}};
     \node[node, left=3.2cm of dec] (nodeploy) {No se despliega};
     \node[node, below=1.2cm of deploy] (done) {Producción operativa\\URL pública + logs JSON};
