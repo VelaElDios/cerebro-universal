@@ -263,3 +263,39 @@ Solución: usar `\sloppy` local o `sloppypar` en párrafos problemáticos, y par
 - Confirmar que el total de tablas es ≥5 y figuras ≥6 (actualmente 10 y 10).
 - Asegurar que todas las cifras del texto aparecen en las fuentes (test de números >20).
 - Si `verificar.py` pasa, marcar TERMINADO=si en el siguiente paso.
+
+## 2026-10-13 06:20 · Constructor (gemini · gemini-flash-latest)
+
+Se resuelven los tres desbordes de margen detectados por el verificador:
+1) En `include/extra.tex`, se incorpora el paquete `xurl` para que las direcciones web largas puedan dividirse automáticamente en cualquier punto sin sobrepasar el ancho de línea.
+2) En `elements/preambulo.tex`, se reduce a 14pt el tamaño de fuente de «TRABAJO DE PROCESOS DE INGENIERÍA DEL SOFTWARE» en la segunda portada para que encaje estrictamente dentro del ancho útil de la página.
+3) En `chapters/a3-uso-ia.tex`, se refina la redacción del ítem de auditoría manual para evitar la concentración de términos monoespaciados al final de línea y eliminar el desbordamiento de 56 pt.
+
+**Archivos:** `include/extra.tex`, `elements/preambulo.tex`, `chapters/a3-uso-ia.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Siguiente:** Ejecutar la verificación del proyecto para comprobar que la compilación con LuaLaTeX no emite overfull hboxes y que verificar.py supera todos los controles de formato, citas y fuentes.
+
+## 2026-10-13 06:21 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: LuaLaTeX compila y genera PDF de 51 páginas, pero `verificar.py` falla con 3 desbordes de margen (35, 32, 56 pt) en los mismos párrafos que antes.
+- Fuentes: todas las cifras clave contrastadas con guia.md y gestion.md (80 pruebas, 19 PBIs, 65 commits, commit 978098e 12/10/2026, 0,27 CU-h Neon, 16 PBIs hechos, 33 PRs, 4 releases, 58 s despliegue, 1.128/657/992 líneas).
+- Estructura: 10 figuras (≥6) y 10 tablas (≥5) con caption, label y \ref; bibliografía 9 entradas @misc coincidentes con guia.md §10; resumen ~137 palabras + palabras clave; segunda portada correcta; declaración autoría sin DNI con ref a Anexo C; sin textos \lipsum.
+- Los 3 desbordes persisten: (1) preambulo.tex líneas 29-30 título segunda portada; (2) a2-material.tex líneas 6-7 URLs largas; (3) a3-uso-ia.tex líneas 22-23 textos \texttt{}.
+
+El contenido está completo y correcto frente a las fuentes. Los 3 desbordes de margen impiden que `verificar.py` pase. Las correcciones del constructor (xurl, reducir 18pt→14pt, reescribir párrafo) no han sido suficientes. Hay que actuar más agresivamente: (1) en la segunda portada, reducir aún más el tamaño o partir el título en más líneas; (2) en a2-material, forzar salto de línea en cada URL y usar \sloppypar real; (3) en a3-uso-ia, permitir cortes en \texttt{} con \allowbreak o cambiar a \textsf{} con hifenación. Corrijo los 3 archivos directamente.
+
+**Correcciones del revisor:** `elements/preambulo.tex`, `chapters/a2-material.tex`, `chapters/a3-uso-ia.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` (compilar con LuaLaTeX y correr `verificar.py`) para confirmar que los 3 desbordes de margen están resueltos.
+- Verificar que no quedan textos \lipsum en ningún archivo.
+- Confirmar que el total de tablas es ≥5 y figuras ≥6 (actualmente 10 y 10).
+- Asegurar que todas las cifras del texto aparecen en las fuentes (test de números >20).
+- Si `verificar.py` pasa, marcar TERMINADO=si en el siguiente paso.
