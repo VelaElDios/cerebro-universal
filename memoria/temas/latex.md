@@ -16,3 +16,4 @@ Lecciones sobre latex (este archivo se genera solo).
 - [[pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida|pgfplots: symbolic x coords necesita la lista ya expandida]]
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
 - [[una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp|Una función llamada desde \directlua debe imprimir con tex.sprint, no con return]]
+- [[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Verificación de números en memoria LaTeX contra fuentes únicas]] · ⚠️ propuesta

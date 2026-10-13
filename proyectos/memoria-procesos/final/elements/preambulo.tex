@@ -1,0 +1,110 @@
+% -------------------------------
+% Plantilla del TFG en la ESIIAB-UCLM. Versión 0.0 (Preliminar)
+%
+% Luis de la Ossa
+% 
+% Compilar con XeLaTeX 
+% -------------------------------
+
+
+% -------------------------------
+% Segunda portada
+% -------------------------------
+\cleardoublepage
+\setcounter{page}{1} \null
+
+\begin{textblock*}{3cm}(3cm,2cm) 
+\begin{flushleft}
+\includegraphics[height=2cm]{figs/logouclm.png}
+\end{flushleft}
+\end{textblock*}
+
+
+\begin{textblock*}{2.5cm}(15.95cm,2.45cm) 
+\begin{flushright}
+\includegraphics[height=1.4cm]{figs/euroinf.jpg}
+\end{flushright}
+\end{textblock*}
+
+\begin{textblock*}{4cm}(13.5cm,2cm)  % Ancho ajustado a 4cm para evitar overfull hbox
+\begin{flushright}
+\includegraphics[height=2cm,keepaspectratio]{figs/logoesii.png}
+\end{flushright}
+\end{textblock*}
+
+
+
+\begin{textblock*}{\textwidth}(3cm,8cm) 
+\begin{center}\doublespacing 
+{\fontsize{14pt}{3pt}\selectfont \bft{TRABAJO DE PROCESOS DE\\ INGENIERÍA DEL SOFTWARE}}
+
+\medskip
+{\fontsize{18pt}{4pt}\selectfont Grado en Ingeniería Informática}
+
+\medskip
+{\fontsize{16pt}{4pt}\selectfont \espec}
+\end{center}
+\end{textblock*}
+
+
+\begin{textblock*}{\textwidth}(3cm,14cm) 
+\begin{center}\setstretch{2}
+{\fontsize{22pt}{4pt}\selectfont \bft{\titulo}}
+\end{center}
+\end{textblock*}
+
+
+\begin{textblock*}{\textwidth}(3cm,20.5cm) 
+\begin{flushleft}\doublespacing
+{\fontsize{14pt}{4pt}\selectfont \bft{Autor:} \autor}
+
+\ifdefined\director{\fontsize{14pt}{4pt}\selectfont \bft{Tutor:} \director}\fi
+
+\ifdefined\codirector{\fontsize{14pt}{4pt}\selectfont \bft{Co-Tutor:} \codirector}\fi
+\end{flushleft}
+\end{textblock*}
+
+
+\begin{textblock*}{\linewidth}(3cm,25cm) 
+\begin{flushright}
+{\fontsize{14pt}{4pt}\selectfont \fecha}
+\end{flushright}
+\end{textblock*}
+
+
+% -------------------------------
+% Declaración de autoría
+% -------------------------------
+\cleardoublepage
+\thispagestyle{plain}
+\begin{center}
+\Large{\bft{Declaración de autoría}}
+\end{center}
+\vskip1cm
+
+Yo, \autor declaro que soy el autor del trabajo titulado ``\titulo'', que el citado trabajo no infringe las leyes en vigor sobre propiedad intelectual, y que todo el material no original contenido en dicho trabajo está apropiadamente atribuido a sus legítimos autores, detallándose asimismo el uso responsable de la inteligencia artificial en el Anexo C (\ref{anx:ia}).
+
+\vspace*{2cm}
+\begin{center}
+Albacete, \fecha
+
+\vskip3cm
+
+Fdo.: \autor
+\end{center}
+
+
+% -------------------------------
+% Resumen
+% -------------------------------
+\cleardoublepage
+\thispagestyle{plain}
+\begin{center}
+\Large{\bft{Resumen}}
+\end{center}
+\vskip1cm
+
+Esta memoria describe el diseño, la implementación y el proceso de desarrollo del Sprint 1 del proyecto La Grada Colchonera, una aplicación SaaS organizada en capas con gestión de usuarios, desarrollada como parte de la asignatura Procesos de Ingeniería del Software. El trabajo abarca desde la estructuración inicial de un servidor Express con Node.js y una base de datos relacional en PostgreSQL hasta el establecimiento de un flujo de trabajo riguroso basado en Scrum mediante DoneTonic, control de versiones con GitHub Flow, integración continua y despliegue automático en la nube a través de Google Cloud Run. Se detallan exhaustivamente la arquitectura en capas del sistema, el modelo de datos, la gestión segura de sesiones y contraseñas mediante hash, así como la evaluación de la calidad mediante pruebas automatizadas y la revisión de requisitos funcionales y no funcionales.
+
+\medskip
+\noindent\textbf{Palabras clave:} SaaS, Scrum, GitHub Flow, Node.js, PostgreSQL, Google Cloud Run, Ingeniería del Software.

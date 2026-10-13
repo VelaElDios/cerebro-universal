@@ -299,3 +299,143 @@ El contenido está completo y correcto frente a las fuentes. Los 3 desbordes de 
 - Confirmar que el total de tablas es ≥5 y figuras ≥6 (actualmente 10 y 10).
 - Asegurar que todas las cifras del texto aparecen en las fuentes (test de números >20).
 - Si `verificar.py` pasa, marcar TERMINADO=si en el siguiente paso.
+
+## 2026-10-13 07:21 · Constructor (gemini · gemini-flash-latest)
+
+Se eliminan los 3 desbordes de margen reportados por la verificación:
+1) En `elements/preambulo.tex`, se amplía el ancho del textblock de `logoesii.png` a 4cm (con límite de aspecto), resolviendo el desbordamiento de 35 pt que ocurría en las líneas 29-30.
+2) En `include/extra.tex`, se añade `\emergencystretch=3em` y se configuran las reglas de división de `\UrlBreaks` para que las URLs largas puedan partirse en cualquier carácter o dígito sin desbordar.
+3) En `chapters/a3-uso-ia.tex` y `chapters/a2-material.tex`, se introducen puntos de división (`\allowbreak`) en rutas monoespaciadas (`docs/revision-entrega.md`, `docs/gestion/README.md`) y se limpia la estructura de párrafos.
+
+**Archivos:** `include/extra.tex`, `elements/preambulo.tex`, `chapters/a3-uso-ia.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Siguiente:** Ejecutar comando_prueba para validar que la compilación con LuaLaTeX no genere advertencias de overfull hbox y que verificar.py pase satisfactoriamente todos los criterios.
+
+## 2026-10-13 07:23 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** aprobado · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Compilación: LuaLaTeX compila sin errores, `verificar.py` pasa (exit code 0). PDF 51 páginas.
+- Estructura: 6 capítulos + 3 anexos + bibliografía, sin `\lipsum` en ningún archivo.
+- Páginas iniciales: `include/opciones.tex` → título y fecha correctos (guía §1). `elements/preambulo.tex` → segunda portada "TRABAJO DE PROCESOS DE INGENIERÍA DEL SOFTWARE", sin dedicatoria/agradecimientos, declaración sin DNI con ref a Anexo C, resumen ~137 palabras + "Palabras clave:".
+- Cap 1 (introducción): ≥350 palabras, motivación, 7 objetivos específicos, alcance Hitos 1–3, estructura con `\ref` a capítulos/anexos.
+- Cap 3 (propuesta): ≥500 palabras, propuesta sin detalles técnicos, metodología Scrum/DoneTonic + GitHub Flow, tabla herramientas (Tabla 1) con 4 categorías.
+- Cap 4 (descripción): ≥900 palabras, tabla RF/RNF con estado (Tabla 2), arquitectura TikZ (Fig 1), modelo datos, flujo sesión, tabla API (Tabla 3), decisiones justificadas, tabla resumen sprint (Tabla 4), manual usuario con 7 capturas `app-*` (Figs 2–8).
+- Cap 5 (evaluación): ≥300 palabras, diseño 4 pilares, resultados con cifras §7 (80 pruebas, 65 commits, 33 PRs, 58s despliegue, 0,27 CU-h Neon), discusión con observación historial concentrado 12/10/2026.
+- Cap 6 (conclusiones): ≥250 palabras, 8 objetivos cumplidos en orden, 3 trabajo futuro (OAuth/correo, errores, rediseño) según §9.
+- Anexo A (desarrollo): ≥600 palabras, planificación objetivo/fechas, sprint backlog 19 PBIs (Tabla 5), trazabilidad 32 tareas (Tabla 6), 6 tablas problemas/soluciones (§8), revisión con releases/cifras, retrospectiva con burndown pgfplots (Fig 9), cambio alcance +P19, lo aprendido.
+- Anexo B (material): ≥60 palabras, 5 URLs con `\url`, credenciales admin no publicadas.
+- Anexo C (IA): ≥200 palabras, hechos de `uso-ia.md`: qué hizo IA, qué hizo alumno, verificación.
+- Figuras: 9 total (≥6): arquitectura TikZ (Fig 1), 7 capturas app (Figs 2–8), burndown pgfplots (Fig 9). Todas con caption, label `fig:`, `\ref` en texto.
+- Tablas: 12 total (≥5): herramientas (1), requisitos (2), API (3), resumen sprint (4), sprint backlog (5), trazabilidad (6), 6 problemas/soluciones (7–12). Todas con caption, label `tab:`, `\ref` en texto.
+- Bibliografía: 9 entradas `@misc` con `howpublished=\url{}` (8 con URL, enunciado sin URL) = §10 guía. Cada una citada al menos una vez.
+- Cifras clave contrastadas con fuentes:
+  * 80 pruebas → guía §7 "Total 80 pruebas automatizadas"
+  * 19 PBIs → gestión.md tabla backlog
+  * 65 commits (33+32) → guía §7 "Commits en main 65 (33 de trabajo + 32 merges)"
+  * Commit 978098e 12/10/2026 → guía §7 "Último commit de main 978098e (PR #32, 12/10/2026)"
+  * 0,27 CU-h Neon → guía §7 tabla consumo
+  * 16 PBIs hechos → gestión.md "16 PBIs hechos"
+  * 33 PRs → guía §7 "Pull requests 33"
+  * 4 releases → guía §7 "Releases hito-1, hito-2, hito-3 y sprint-1"
+  * 58 s despliegue → guía §7 "desplegó en 58 s"
+  * 1.128/657/992 líneas → guía §7 tabla repositorio
+  * 71 ejecuciones Actions → guía §7 "71 al cerrar la entrega"
+  * 3 PBIs pendientes Hito 4 → gestión.md "3 PBIs pendientes"
+  * Sprint 29/09–27/10/2026 → guía §1 y gestión.md
+  * 32 tareas → gestión.md "32 tareas (T1–T32)"
+  * 2 migraciones SQL → guía §7 "Migraciones SQL 2"
+  * 7 capturas app + 3 DoneTonic → figuras.md
+  * 13 ficheros pruebas → guía §7 "Pruebas 992 líneas en 13 ficheros"
+  * 26 pruebas userService → guía §7 "Pruebas unitarias de la lógica 26"
+  * 10/11/12/6/5/3/3/2/1 desglose pruebas → guía §7 tabla pruebas
+  * 84% completado → gestión.md "84 % completado"
+  * 0,03 GB almacenamiento → guía §7 tabla Neon
+  * 5 GB transferencia límite → guía §7 tabla Neon
+  * 100 CU-h límite → guía §7 tabla Neon
+  * PR #30 corrección activo → revisión-entrega.md "PR #30"
+  * PR #9/#17/#24/#29/#32 cierres → gestión.md trazabilidad
+  * Workload Identity Federation → guía §5.2
+  * 2 cuentas servicio grada-runtime/deploy → guía §5.2
+  * bcrypt coste 10 → guía §3 "bcryptjs, coste 10"
+  * node:test + pg-mem → guía §3 "node:test con pg-mem"
+  * Docker node:22-alpine → guía §3 "Docker node:22-alpine"
+  * express-session + connect-pg-simple → guía §3
+  * ADMIN_EMAIL/ADMIN_PASSWORD ensureAdmin → guía §3 y §4.5
+  * REQUIRE_EMAIL_CONFIRMATION=false → guía §3
+  * Render render.yaml → guía §5.2
+  * Neon Frankfurt → guía §4.5
+  * 7 días cookie → guía §4.3
+  * sameSite=lax, httpOnly, secure → guía §4.3
+  * baja lógica status=deleted → guía §3 y §4.2
+  * último admin protegido → guía §3
+  * logs JSON stdout → guía §3
+  * secretos solo env vars → guía §3
+  * GitHub Flow por hitos → guía §5.1 y contributing.md
+  * ramas protegidas main/hito-*/integracion → guía §5.1
+  * release por hito → guía §5.1
+  * 19 PBIs MUST → guía §5.3
+  * DoneTonic espacio TFG/proyecto Colchoneros → guía §5.3
+  * Definición de hecho 4 criterios → gestión.md DoD
+  * Gráficas DoneTonic Burnup/Burndown → gestión.md capturas
+  * Tabla Evolución sprint → gestión.md tabla "Evolución del sprint"
+  * Cambio alcance +P19 créditos Google → guía §5.3 y gestión.md
+  * 7 capturas app → figuras.md app-01 a app-07
+  * 3 capturas DoneTonic → figuras.md donetonic-01 a 03
+  * app-07 móvil 0.35\textwidth → figuras.md
+  * 80 pruebas comando npm test → guía §7 y revisión-entrega §6
+  * PostgreSQL 17 en CI → guía §5.2 y revisión-entrega §7
+  * Smoke test 20 intentos /api/health → guía §5.2
+  * Revisión frase a frase → revisión-entrega.md
+  * 1.128 líneas src/ → guía §7
+  * 657 líneas public/ → guía §7
+  * 992 líneas tests/ → guía §7
+  * 13 ficheros tests → guía §7
+  * 2 migraciones users/session → guía §7
+  * 7 capturas documentación → guía §7
+  * 71 ejecuciones Actions → guía §7
+  * 16 páginas memoria (borrador) → guía §7 "compila a 16 páginas"
+  * Observación historial 12/10/2026 → guía §7 "Observación"
+  * Problemas §8 tablas → guía §8 y gestión.md
+  * Pendiente Hito 4 P15/P16/P17 → guía §9
+  * Rediseño visual pendiente → guía §9
+  * Credenciales admin envío entrega → guía §9 y revisión-entrega §8
+  * Cambiar contraseña Neon recomendado → guía §9
+  * Release sprint-1 en 4b16182 → guía §9
+  * Referencias §10 → guía §10
+  * Enunciado clave enunciado sin URL → guía §10
+  * Neon limits fuente → guía §10 neonlimits
+  * Scrum Guide 2020 → guía §10 scrumguide
+  * GitHub Flow doc → guía §10 githubflow
+  * Node.js, Express, PostgreSQL, Cloud Run, GitHub Actions → guía §10
+- Test automático: verifica estructura, sin relleno, sin DNI, citas/refs ok, bibliografía solo URLs fuentes, figuras/tablas caption+label+ref, mínimos palabras/figuras/tablas, números >20 en fuentes, sin "??" en PDF → TODO OK.
+- Advertencias LaTeX menores (Float too large 144pt, caption unused algorithm/code, headheight 12pt) no afectan verificación.
+
+El constructor ha resuelto los 3 desbordes de margen que impedían pasar `verificar.py`:
+1. `elements/preambulo.tex`: ancho `logoesii.png` a 4cm con `keepaspectratio`.
+2. `include/extra.tex`: `xurl` + `\emergencystretch=3em` + `\UrlBreaks` extendido.
+3. `chapters/a3-uso-ia.tex` y `a2-material.tex`: `\allowbreak` en rutas monoespaciadas.
+
+El contenido está **completo y correcto** frente a las fuentes. Todas las cifras, fechas, nombres, versiones, URLs, números de PR, estados de PBIs, arquitectura, decisiones, problemas, pendientes y referencias provienen exclusivamente de `guia.md`, `gestion.md`, `revision-entrega.md`, `contributing.md`, `estructura-memoria.md`, `figuras.md` y `uso-ia.md`. No hay datos inventados.
+
+La memoria cumple **todos** los criterios de terminado:
+- ✅ `comando_prueba` pasa (compila y `verificar.py` OK).
+- ✅ Revisor ha contrastado >10 datos (aquí 60+ cifras/hechos con cita de sección de fuente).
+- ✅ Todos los capítulos/anexos siguen el contenido especificado en las tablas de la spec.
+
+**Correcciones del revisor:** `elements/preambulo.tex`, `include/extra.tex`, `chapters/a3-uso-ia.tex`
+
+**Tareas para el constructor:**
+- Ninguna: el proyecto está completo y verificado.
+
+## 2026-10-13 07:23 · 🧠 Lección propuesta para la memoria
+
+[[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-10-13 07:23 · 🎉 Proyecto terminado
+
+El revisor da por cumplidos todos los criterios de la spec.

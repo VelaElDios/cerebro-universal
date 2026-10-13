@@ -1,0 +1,25 @@
+\chapter{Conclusiones y Trabajo Futuro}
+\label{cap:conclusiones}
+
+\section{Conclusiones}
+
+El desarrollo del Sprint 1 ha permitido materializar con éxito los objetivos planteados al inicio de la memoria, combinando la construcción de una aplicación funcional con la adhesión estricta a un proceso riguroso de ingeniería del software:
+\begin{itemize}
+    \item \textbf{Objetivo principal:} Se diseñó, implementó y desplegó en producción la arquitectura base de un servicio SaaS con gestión integral de usuarios, automatizando por completo el flujo desde la codificación hasta la entrega en la nube.
+    \item \textbf{Diseño arquitectural desacoplado:} Se estructuró el backend en capas bien diferenciadas (API, lógica y datos) servidas desde el mismo origen que el cliente web, garantizando la independencia y modularidad del sistema.
+    \item \textbf{Gestión de identidades y sesiones:} Se implementó la autenticación local con derivación de contraseñas mediante \texttt{bcryptjs} y almacenamiento de sesiones persistentes en base de datos resistente a reinicios.
+    \item \textbf{Control de acceso basado en roles:} Se implantó la autorización diferenciada para usuarios y administradores, con baja lógica y protección de rutas en el servidor.
+    \item \textbf{Persistencia relacional y configuración:} Se integró PostgreSQL en la nube mediante migraciones SQL versionadas y se aislaron los secretos en variables de entorno y Secret Manager.
+    \item \textbf{Garantía de calidad mediante pruebas:} Se consolidó una suite de 80 pruebas automatizadas que cubren casos nominales y de error, ejecutables mediante un único comando.
+    \item \textbf{Automatización del ciclo de entrega (CI/CD):} Se implantaron flujos de trabajo en GitHub Actions con validación en contenedores Docker y despliegue automático en Google Cloud Run y Render.
+    \item \textbf{Procesos ágiles y trazabilidad:} Se gestionó el backlog en DoneTonic cumpliendo la disciplina de GitHub Flow, vinculando cada tarea a su rama y pull request.
+\end{itemize}
+
+\section{Trabajo futuro}
+
+De cara a las siguientes fases del proyecto (particularmente el Hito 4), se identifican tres líneas prioritarias de evolución técnica:
+\begin{enumerate}
+    \item \textbf{Autenticación federada y verificación por correo (P15 y P16):} Incorporar el inicio de sesión con proveedores externos OAuth (Google) y el flujo de confirmación de cuentas mediante un servicio de correo transaccional (activando \texttt{REQUIRE\_EMAIL\_CONFIRMATION=true}).
+    \item \textbf{Manejo avanzado de errores y feedback interactivo (P17):} Perfeccionar el sistema de retroalimentación al usuario en la interfaz, unificando los códigos de error y mejorando la recuperación ante fallos de conectividad.
+    \item \textbf{Rediseño visual y expansión funcional:} Evolucionar la estética de la interfaz hacia una experiencia comunitaria más rica una vez que se incorporen las funcionalidades de publicación e interacción social.
+\end{enumerate}

@@ -1,0 +1,78 @@
+% -------------------------------
+% Plantilla del TFG en la ESIIAB-UCLM. Versión 0.0 (Preliminar)
+% Luis de la Ossa
+%
+% Adaptada para la memoria del trabajo de Procesos de Ingeniería del Software
+% (La Grada Colchonera). Se compila con LuaLaTeX (latexmkrc) y también con XeLaTeX.
+% -------------------------------
+\documentclass[12pt, a4paper]{book}
+
+% -------------------------------
+% Información y opciones del documento
+% -------------------------------
+\input{include/opciones}
+
+% -------------------------------
+% Configuración de la plantilla (no tocar) y paquetes añadidos para esta memoria
+% -------------------------------
+\input{include/configuracion}
+\input{include/extra}
+
+\begin{document}
+
+% -------------------------------
+% Portada
+% -------------------------------
+\input{elements/portada}
+
+% -------------------------------
+% Fuente del documento (Carlito: libre y con las mismas medidas que Calibri)
+% -------------------------------
+\setmainfont{Carlito}
+
+% -------------------------------
+% Preámbulo: segunda portada, declaración, resumen
+% -------------------------------
+\frontmatter
+\input{elements/preambulo}
+
+% -------------------------------
+% Índices
+% -------------------------------
+\tableofcontents
+\listoffigures
+\listoftables
+%\listofalgorithms   % Solo si hay algoritmos
+%\listofcodes        % Solo si hay listados de código
+\cleardoublepage
+
+% -------------------------------
+% Capítulos
+% -------------------------------
+\mainmatter
+\pagestyle{fancy}
+
+\input{chapters/01-introduccion}
+% \input{chapters/02-antecedentes}   % La plantilla indica que no es necesario en este trabajo
+\input{chapters/03-propuesta}
+\input{chapters/04-descripcion}
+\input{chapters/05-evaluacion}
+\input{chapters/06-conclusiones}
+
+% -------------------------------
+% Anexos
+% -------------------------------
+\appendix
+\input{chapters/a1-desarrollo}
+\input{chapters/a2-material}
+\input{chapters/a3-uso-ia}
+
+% -------------------------------
+% Bibliografía
+% -------------------------------
+\cleardoublepage
+\bibliographystyle{apalike}
+\bibliography{bib/ref}
+\addcontentsline{toc}{chapter}{Referencia bibliográfica}
+
+\end{document}

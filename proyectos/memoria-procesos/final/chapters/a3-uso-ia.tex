@@ -1,0 +1,28 @@
+\chapter{Uso Responsable de la Inteligencia Artificial}
+\label{anx:ia}
+
+De acuerdo con las directrices académicas sobre honestidad y rigor en la autoría de trabajos universitarios, este anexo documenta con absoluta transparencia el uso de asistentes basados en modelos de inteligencia artificial a lo largo de las distintas etapas del proyecto.
+
+\section{Uso de la inteligencia artificial en el desarrollo del software}
+
+Durante la ejecución técnica del Sprint 1 se utilizó el modelo Claude (Cowork) como asistente de desarrollo para agilizar las tareas de implementación. Su papel abarcó la redacción del código fuente en JavaScript, la preparación de ficheros de configuración, la elaboración de la documentación técnica y la generación de los mensajes de confirmación de cambios. Dichos commits quedaron registrados con la autoría formal del alumno y el correspondiente metadato de colaboración (\texttt{Co-Authored-By}). Asimismo, el asistente gestionó en el navegador la apertura y fusión de los pull requests y la actualización de los estados en el tablero ágil de DoneTonic.
+
+No obstante, el control del entorno productivo y la gobernanza del proyecto recayeron en todo momento en el alumno:
+\begin{itemize}
+    \item La creación, administración y custodia de credenciales en las plataformas de infraestructura (Neon para PostgreSQL, Render y Google Cloud Run) fueron realizadas personalmente por el alumno.
+    \item El aseguramiento de la calidad técnica no se delegó en la generación sintética de la IA, sino en una suite de 80 pruebas automatizadas ejecutadas obligatoriamente en el pipeline de integración continua ante cada cambio propuesto.
+    \item El alumno llevó a cabo una auditoría manual frente a las especificaciones oficiales (\texttt{docs/\allowbreak revision-\allowbreak entrega.md}), detectando y corrigiendo oportunamente una discrepancia de permisos en la comprobación de usuarios activos (PR \#30).
+\end{itemize}
+
+\section{Uso de la inteligencia artificial en la redacción de la memoria}
+
+Para la composición de esta memoria técnica se empleó un flujo automatizado denominado «Cerebro Universal», orquestado sobre GitHub Actions y sustentado en modelos de lenguaje gratuitos. En dicho sistema, una IA constructora generó las secciones del documento y una IA revisora analizó la consistencia de cada avance.
+
+La fidelidad de la información redactada se garantizó mediante estrictas salvaguardas metodológicas:
+\begin{itemize}
+    \item Los modelos operaron exclusivamente sobre la información factual contenida en la guía del proyecto y los documentos reales del repositorio, quedando descartada cualquier inferencia externa no contrastada.
+    \item Un proceso de verificación algorítmica independiente comprobó que el documento compilase sin fallos, sin marcadores de relleno de plantilla, con todas las citas bibliográficas resueltas y certificando que ningún dato cuantitativo superior a 20 careciese de respaldo en las fuentes.
+    \item Claude intervino en la preparación de la estructura inicial de la plantilla en LuaLaTeX, las fuentes de datos y las pruebas de comprobación sintáctica.
+\end{itemize}
+
+El alumno asume la autoría y responsabilidad íntegra sobre el contenido final expuesto en la presente memoria, habiendo revisado minuciosamente el texto para certificar su rigor técnico y su estricta correspondencia con el trabajo desarrollado.

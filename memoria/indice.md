@@ -6,13 +6,14 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 ## Temas
 
-[[beamer]] · [[datos]] · [[general]] · [[latex]] · [[lua]] · [[overleaf]] · [[pgfplots]] · [[revision]] · [[tablas]] · [[tikz]]
+[[beamer]] · [[datos]] · [[general]] · [[latex]] · [[lua]] · [[overleaf]] · [[pgfplots]] · [[python]] · [[revision]] · [[tablas]] · [[tikz]] · [[verificacion]]
 
-## Pendientes de revisar (1)
+## Pendientes de revisar (2)
 
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
+- [[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Verificación de números en memoria LaTeX contra fuentes únicas]] · ⚠️ propuesta
 
-## Todas (18)
+## Todas (19)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
 - [[coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
@@ -32,3 +33,4 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
 - [[un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p|Un revisor que dice «verificado» sin mostrar la operación no prueba nada]]
 - [[una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp|Una función llamada desde \directlua debe imprimir con tex.sprint, no con return]]
+- [[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Verificación de números en memoria LaTeX contra fuentes únicas]] · ⚠️ propuesta

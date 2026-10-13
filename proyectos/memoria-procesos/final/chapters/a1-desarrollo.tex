@@ -1,0 +1,243 @@
+\chapter{Desarrollo del Proyecto}
+\label{anx:desarrollo}
+
+\section{Sprint 1}
+
+\subsection{Planificación del Sprint 1}
+
+\subsubsection{Objetivo y fechas}
+El Sprint 1 se planificó del 29/09/2026 al 27/10/2026 con el objetivo de entregar la base de una aplicación SaaS con gestión de usuarios, arquitectura en capas, proceso Scrum en DoneTonic, flujo GitHub Flow, integración y despliegue continuos (CI/CD) en Google Cloud Run y Render, y una batería de pruebas automatizadas. El alcance formal, según directriz docente, se limitó a los Hitos 1, 2 y 3 del enunciado \cite{enunciado}.
+
+\subsubsection{Sprint Backlog}
+El Product Backlog inicial contenía 16 PBIs (P1–P14, P18) correspondientes a los Hitos 1–3. Durante el sprint se añadió el PBI P19 (despliegue en Google Cloud Run) tras la concesión de créditos educativos de Google Cloud, elevando el total a 17 PBIs en el alcance de la entrega. La Tabla \ref{tab:sprint-backlog} muestra el sprint backlog con sus hitos y estado final.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{0.7cm} L{1.0cm} L{6.8cm} L{2.2cm}@{}}
+\toprule
+\textbf{PBI} & \textbf{Hito} & \textbf{Título} & \textbf{Estado} \\
+\midrule
+P1 & H1 & Repositorio GitHub y flujo GitHub Flow & Hecho \\
+P2 & H1 & Integración continua (CI) & Hecho \\
+P3 & H1 & Despliegue continuo en URL pública & Hecho \\
+P4 & H1 & Lógica de gestión de usuarios (en memoria) & Hecho \\
+P5 & H1 & Pruebas unitarias automatizadas de la lógica & Hecho \\
+P6 & H1 & Capa API de usuarios & Hecho \\
+P7 & H2 & Frontend: interfaz y cliente de comunicación separados & Hecho \\
+P8 & H2 & Registro e inicio de sesión locales & Hecho \\
+P9 & H2 & Cierre de sesión y mantenimiento de la sesión & Hecho \\
+P10 & H2 & Rutas protegidas en el servidor & Hecho \\
+P11 & H3 & Persistencia en base de datos real & Hecho \\
+P12 & H3 & Gestión de secretos con variables de entorno & Hecho \\
+P13 & H3 & Roles de usuario y administrador & Hecho \\
+P14 & H3 & Registro (log) de la actividad & Hecho \\
+P15 & H4 & Inicio de sesión con proveedor externo (OAuth) & Siguiente entrega \\
+P16 & H4 & Confirmación de cuenta por correo electrónico & Siguiente entrega \\
+P17 & H4 & Manejo de errores y feedback al usuario & Siguiente entrega \\
+P18 & H4 & README completo y revisión de la entrega & Hecho \\
+P19 & H4 & Despliegue continuo en Google Cloud Run & Hecho \\
+\bottomrule
+\end{tabular}
+\caption{Sprint Backlog del Sprint 1 (19 PBIs, 16 hechos en el alcance).}
+\label{tab:sprint-backlog}
+\end{table}
+
+\subsubsection{Trazabilidad}
+Cada PBI se desglosó en 1–2 tareas técnicas (T1–T32), cada una con su rama \texttt{hito-N/Tx-descripcion}, pull request \texttt{[Tx] ...} hacia \texttt{hito-N/integracion} y fusión tras CI en verde. Los cierres de hito fueron PR \#9 (Hito 1), \#17 (Hito 2), \#24 (Hito 3), \#29 (cierre sprint) y \#32 (revisión final). La trazabilidad completa tarea → rama → PR figura en \texttt{docs/gestion/README.md} y en la Tabla \ref{tab:trazabilidad} (extracto).
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{0.7cm} L{0.7cm} L{4.2cm} L{3.2cm} L{1.3cm}@{}}
+\toprule
+\textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\
+\midrule
+P1 & T1 & Crear repositorio y estructura base & \#1 & Hecho \\
+P1 & T2 & Configurar GitHub Flow & \#2 & Hecho \\
+P2 & T3 & Workflow de CI con GitHub Actions & \#3 & Hecho \\
+P3 & T4 & Despliegue automático en proveedor cloud & \#4, \#10 & Hecho \\
+P4 & T5 & Modelo de usuario y repositorio en memoria & \#5 & Hecho \\
+P4 & T6 & Servicio de gestión de usuarios & \#6 & Hecho \\
+P5 & T7 & Framework de pruebas y al menos 5 pruebas & \#7 & Hecho \\
+P6 & T8 & Endpoints de la API de usuarios & \#8 & Hecho \\
+P7 & T9 & Cliente de comunicación con la API & \#11 & Hecho \\
+P7 & T10 & Interfaz de usuario: vistas y navegación & \#12 & Hecho \\
+P8 & T11 & Registro y login en el backend (con hash) & \#13 & Hecho \\
+P8 & T12 & Formularios de registro y login en el frontend & \#14 & Hecho \\
+P9 & T13 & Mantener la sesión al recargar y cerrar sesión & \#15 & Hecho \\
+P10 & T14 & Middleware de autenticación y protección de rutas & \#16 & Hecho \\
+P11 & T15 & Elegir y configurar la base de datos & \#18 & Hecho \\
+P11 & T16 & Repositorio de BD sustituyendo al de memoria & \#19 & Hecho \\
+P12 & T17 & Sacar los secretos a variables de entorno & \#20 & Hecho \\
+P13 & T18 & Roles, autorización y primer administrador & \#21 & Hecho \\
+P13 & T19 & Panel de administración y baja de cuenta & \#22 & Hecho \\
+P14 & T20 & Configurar el logging de la actividad relevante & \#23 & Hecho \\
+P18 & T27 & Completar el README & \#25 & Hecho \\
+P18 & T28 & Etiquetas de hito y revisión final & \#26 & Hecho \\
+P18 & T31 & Revisión frase a frase contra el enunciado & \#30 & Hecho \\
+P18 & T32 & Carpeta de la memoria en LuaLaTeX & \#31 & Hecho \\
+P19 & T29 & Contenerizar la aplicación con Docker & \#27 & Hecho \\
+P19 & T30 & Despliegue continuo en Cloud Run con GitHub Actions & \#28 & Hecho \\
+\bottomrule
+\end{tabular}
+\caption{Trazabilidad tarea → rama → PR (extracto de 32 tareas).}
+\label{tab:trazabilidad}
+\end{table}
+
+\subsection{Desarrollo del sprint}
+
+Los problemas técnicos surgidos y sus soluciones, extraídos de la documentación del proyecto y la guía general (§8), se resumen en las Tablas \ref{tab:prob-desarrollo}, \ref{tab:prob-despliegue}, \ref{tab:prob-git}, \ref{tab:prob-alcance}, \ref{tab:prob-latex} y \ref{tab:prob-donetonic}.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
+\midrule
+\texttt{pg-mem} no admitía \texttt{CREATE TABLE IF NOT EXISTS} ni funciones de sesión & Consulta a \texttt{information\_schema}; prueba de sesiones solo contra PostgreSQL real en CI \\
+Cookie \texttt{secure} no guardada en local con \texttt{NODE\_ENV=production} sobre HTTP & Comportamiento esperado por seguridad; capturas locales en modo desarrollo \\
+\texttt{pkill -f "node src/server.js"} cerraba la shell invocadora & Arranque del proceso de servidor con \texttt{setsid} desde script \\
+Tabla de administración no cabía en 640 px; botón \textit{Eliminar} oculto & Contenedor ampliado; en móvil, cada usuario se muestra como tarjeta (Fig. \ref{fig:app-admin-movil}) \\
+Capturas Playwright en GitHub salían sin estilos por recursos bloqueados & Descartadas; capturas de la propia aplicación generadas correctamente \\
+Docker Hub bloqueado en entorno en la nube & Simulación local (\texttt{npm ci --omit=dev}); validación real en job del CI \\
+\bottomrule
+\end{tabular}
+\caption{Problemas y soluciones en desarrollo y pruebas (guía §8).}
+\label{tab:prob-desarrollo}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
+\midrule
+Script de preparación falló en Artifact Registry por propagación de IAM & Reejecución parametrizada con \texttt{PROJECT\_ID}; script idempotente \\
+Secreto \texttt{database-url} mal introducido en Cloud Run & Creación de una nueva versión del secreto (v2) con \texttt{gcloud secrets} \\
+URL pública de Cloud Run devolvía código 404 & Primer despliegue pendiente; operativa tras finalizar el workflow \\
+Cadena de conexión de Neon compartida en chat & Recomendación de rotar clave; aplazada en lista de tareas pendientes \\
+\bottomrule
+\end{tabular}
+\caption{Problemas y soluciones en despliegue Google Cloud (guía §8).}
+\label{tab:prob-despliegue}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
+\midrule
+\texttt{git push --all} rechazado en ramas de integración (\textit{non-fast-forward}) & Sincronización mediante \texttt{git fetch} y \texttt{git branch -f} \\
+Entorno cloud sin permisos de escritura directa en GitHub & Exportación de commits vía \texttt{git bundle}; push desde local \\
+Bundle requería commit base ausente en repositorio local & Regeneración tomando como base el commit disponible \texttt{4b16182} \\
+Subida de bundle con mismo nombre sobrescribía versión anterior & Asignación de nombres de fichero unívocos \\
+Fusiones en interfaz web fallaban por comprobaciones incompletas & Espera a la validación de checks y confirmación explícita \\
+\bottomrule
+\end{tabular}
+\caption{Problemas y soluciones en Git y GitHub (guía §8).}
+\label{tab:prob-git}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
+\midrule
+Requisitos de OAuth y confirmación por correo pertenecientes a Hito 4 & Alcance limitado a Hitos 1–3 por el docente; código guardado \\
+Endpoint \texttt{/api/users/:id/active} accesible a usuarios estándar & Restricción exclusiva al rol administrador (PR \#30) tras revisión \\
+Documentos de revisión redactados a partir de PBIs y no del PDF & Reescritura sistemática de \texttt{docs/revision-entrega.md} \\
+\bottomrule
+\end{tabular}
+\caption{Problemas y soluciones en alcance y revisión (guía §8).}
+\label{tab:prob-alcance}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
+\midrule
+Error de escritura de auxiliares en subcarpetas al compilar en \texttt{build/} & Configuración de \texttt{.latexmkrc} con creación recursiva de directorios \\
+Ausencia de librerías LuaLaTeX en entorno de pruebas & Instalación de dependencias; compilación validada en GitHub Actions \\
+\bottomrule
+\end{tabular}
+\caption{Problemas y soluciones en memoria LaTeX (guía §8).}
+\label{tab:prob-latex}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
+\midrule
+Menús apilados y clics JS ineficaces en interfaz Flutter de DoneTonic & Automatización por coordenadas comprobando árbol de accesibilidad \\
+Renderizado distorsionado al forzar tamaño de ventana en Flutter & Capturas realizadas con resolución nativa de 800 px \\
+\bottomrule
+\end{tabular}
+\caption{Problemas y soluciones en DoneTonic (guía §8).}
+\label{tab:prob-donetonic}
+\end{table}
+
+\subsection{Revisión del sprint}
+
+Al cierre del Sprint 1 (12/10/2026, commit \texttt{978098e}, PR \#32) se entregaron:
+\begin{itemize}
+    \item Cuatro releases publicadas en GitHub: \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3} y \texttt{sprint-1}.
+    \item Servicio web desplegado y plenamente operativo en Google Cloud Run y Render, según se referencia en el Anexo \ref{anx:material}.
+    \item Batería de 80 pruebas automatizadas validadas en el CI contra PostgreSQL 17.
+    \item 16 PBIs completados correspondientes al alcance de la entrega (3 PBIs pospuestos a Hito 4).
+    \item 65 commits en la rama principal (33 de trabajo y 32 de integración de PRs) y 71 ejecuciones de GitHub Actions.
+    \item Consumo en el plan gratuito de Neon a fecha 12/10/2026: 0,27 CU-h de cómputo (límite 100 CU-h), 0,03 GB de almacenamiento (límite 1 GB) y 0 GB de transferencia sobre 5 GB \cite{neonlimits}.
+\end{itemize}
+
+\subsection{Retrospectiva}
+
+\subsubsection{Burndown del Sprint 1}
+La Figura \ref{fig:burndown} muestra la evolución de PBIs pendientes del alcance de la entrega (16 PBIs: P1–P14, P18, P19) según la tabla «Evolución del sprint» de \texttt{docs/gestion/README.md}. El escalón «+P19» refleja el cambio de alcance al añadir el despliegue en Cloud Run.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.9\textwidth,
+    height=7cm,
+    xlabel={Momento del sprint},
+    ylabel={PBIs pendientes},
+    xtick={1,2,3,4,5,6},
+    xticklabels={Inicio, Hito 1, Hito 2, Hito 3, +P19, Cierre},
+    ymin=0, ymax=16,
+    grid=major,
+    legend pos=north east,
+    mark=*,
+    thick
+]
+\addplot coordinates {(1,15) (2,9) (3,5) (4,1) (5,2) (6,0)};
+\addlegendentry{PBIs pendientes}
+\end{axis}
+\end{tikzpicture}
+\caption{Burndown del Sprint 1: evolución de PBIs pendientes del alcance de la entrega.}
+\label{fig:burndown}
+\end{figure}
+
+\subsubsection{Cambio de alcance}
+Durante el sprint, el profesor repartió créditos de Google Cloud para educación. Para aprovecharlos se añadió el PBI \textbf{P19} (despliegue continuo en Google Cloud Run) con sus tareas T29 y T30. Render se mantuvo como despliegue alternativo. Este cambio se refleja en el burndown como un incremento temporal de PBIs pendientes (de 1 a 2) antes del cierre final.
+
+\subsubsection{Lo aprendido}
+\begin{itemize}
+    \item La disciplina de GitHub Flow (rama por tarea, PR, CI obligatorio) garantiza que no se integra código roto, pero exige sincronización continua de ramas locales para evitar conflictos de avance rápido.
+    \item El patrón repositorio con inyección de dependencias permitió sustituir el almacenamiento en memoria por PostgreSQL sin modificar una sola línea de la capa de lógica, respaldado por pruebas de contrato idénticas.
+    \item La auditoría manual frase a frase frente al enunciado oficial demostró ser indispensable, localizando discrepancias de acceso que habían pasado inadvertidas en la formulación de los PBIs.
+    \item La concentración cronológica de commits en una jornada (12/10/2026) preserva la trazabilidad estructural del proceso, si bien se reconoce la conveniencia pedagógica de una cadencia temporal más distribuida.
+    \item Todo secreto compartido involuntariamente en canales de comunicación debe ser rotado como buena práctica de seguridad.
+\end{itemize}

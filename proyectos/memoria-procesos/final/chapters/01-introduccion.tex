@@ -1,0 +1,40 @@
+\chapter{Introducción, Motivación y Objetivos}
+\label{cap:introduccion}
+
+\section{Motivación}
+
+El desarrollo de software en entornos modernos trasciende la mera codificación de funcionalidades: exige la articulación de procesos de ingeniería rigurosos y reproducibles que conecten de manera fluida el espacio de trabajo local con el entorno productivo. En este marco formativo se encuadra la asignatura Procesos de Ingeniería del Software, correspondiente al curso 2026-2027 del Grado en Ingeniería Informática. El propósito pedagógico de la asignatura no radica únicamente en construir un producto funcional, sino de forma prioritaria en evaluar exhaustivamente el proceso de ingeniería aplicado \cite{enunciado}: desde la descomposición sistemática de requisitos y la trazabilidad de tareas, hasta el flujo de integración continua, el control de versiones y el despliegue automático en la nube.
+
+La aplicación que articula este proyecto se denomina \textit{La Grada Colchonera}. Se concibe como una plataforma social tipo red social orientada a la afición colchonera, donde compartir opiniones e interactuar en torno a la actualidad deportiva. Es fundamental subrayar que se trata de un proyecto de aficionado sin relación oficial con el Club Atlético de Madrid, por lo que carece de escudos, logotipos o cualquier elemento gráfico institucional bajo propiedad intelectual del club deportivo.
+
+En esta primera fase correspondiente al Sprint 1, el foco de la aplicación radica en establecer una base sólida de software como servicio (\textit{Software as a Service}, SaaS). Dicha base implementa la gestión integral de cuentas de usuario sobre una arquitectura organizada en capas desacopladas, asegurando los pilares de seguridad, persistencia y mantenibilidad antes de acometer en entregas posteriores las funcionalidades sociales complejas.
+
+\section{Objetivos}
+
+El objetivo principal del proyecto consiste en diseñar, implementar y desplegar la estructura base de una aplicación SaaS modular con gestión de usuarios, sustentada en un ciclo de vida guiado por la metodología ágil Scrum y un pipeline automatizado de integración y entrega continuas sin intervención manual.
+
+Para alcanzar el objetivo principal, se establecen los siguientes objetivos específicos:
+\begin{enumerate}
+    \item \textbf{Diseño arquitectural desacoplado:} Organizar el servidor en capas independientes de API, lógica de negocio y persistencia, garantizando que el backend sirve los recursos estáticos del frontend desde el mismo origen para evitar problemas de compartición de recursos de orígenes cruzados.
+    \item \textbf{Gestión segura de identidades y sesiones:} Proporcionar un sistema de autenticación local con derivación criptográfica de contraseñas mediante funciones de hash seguro y gestión de sesiones persistentes en base de datos que sobrevivan a reinicios del servicio.
+    \item \textbf{Control de acceso basado en roles:} Establecer un esquema de autorización con al menos dos niveles (usuario estándar y administrador), permitiendo la baja lógica de cuentas y garantizando la protección de rutas críticas estrictamente en el lado del servidor.
+    \item \textbf{Persistencia relacional y gestión de configuración:} Integrar un sistema gestor de bases de datos relacional mediante migraciones de esquema versionadas y desacoplar por completo los secretos y variables de entorno del repositorio de código.
+    \item \textbf{Garantía de calidad mediante pruebas:} Elaborar un conjunto exhaustivo de pruebas automatizadas que cubran casos nominales y de error de la capa de lógica, ejecutables mediante un único comando en el entorno de desarrollo y en integración continua.
+    \item \textbf{Automatización del ciclo de entrega (CI/CD):} Diseñar e implantar flujos de trabajo en la nube que compilen contenedores, validen las pruebas ante una base de datos real y desplieguen automáticamente en producción tras cada integración exitosa en la rama principal.
+    \item \textbf{Adopción de procesos ágiles y trazabilidad:} Gestionar el desarrollo mediante un backlog estructurado en DoneTonic y aplicar la disciplina de GitHub Flow con ramas dedicadas por tarea y revisiones en pull requests.
+\end{enumerate}
+
+\section{Alcance de la entrega}
+
+El calendario docente del Sprint 1 abarca del 29/09/2026 al 27/10/2026. Aunque la especificación inicial del enunciado contemplaba cuatro hitos semanales, la directriz docente para esta primera entrega limitó formalmente el alcance a los Hitos 1, 2 y 3 \cite{enunciado}. De este modo, los requisitos vinculados al Hito 4 —principalmente el inicio de sesión federado mediante proveedores externos OAuth, la confirmación de registros por correo electrónico transaccional y el refinamiento avanzado del control de errores— quedan pospuestos para la siguiente entrega del proyecto.
+
+\section{Estructura de la memoria}
+
+La presente memoria se organiza según la estructura recomendada por la Escuela Superior de Ingeniería Informática de Albacete:
+\begin{itemize}
+    \item El \textbf{Capítulo \ref{cap:propuesta}} expone la propuesta conceptual de la solución sin entrar en detalles tecnológicos, detalla la metodología de trabajo adoptada (Scrum y GitHub Flow) y clasifica las herramientas empleadas.
+    \item El \textbf{Capítulo \ref{cap:descripcion}} aborda la especificación de requisitos funcionales y no funcionales, describe la arquitectura del sistema y sus capas, analiza las decisiones de diseño y documenta la aplicación a modo de manual de uso guiado con capturas de pantalla.
+    \item El \textbf{Capítulo \ref{cap:evaluacion}} presenta el diseño y ejecución de la evaluación técnica, los resultados cuantitativos de cobertura y verificación, así como una discusión honesta sobre las garantías y limitaciones del proceso.
+    \item El \textbf{Capítulo \ref{cap:conclusiones}} contrasta el grado de cumplimiento de los objetivos planteados y traza las líneas principales de trabajo futuro.
+    \item Los anexos complementan el documento: el \textbf{Anexo \ref{anx:desarrollo}} desglosa la planificación, incidencias y evolución métrica del Sprint 1; el \textbf{Anexo \ref{anx:material}} recopila los enlaces y repositorios del proyecto; y el \textbf{Anexo \ref{anx:ia}} detalla el uso responsable y transparente de asistentes de inteligencia artificial.
+\end{itemize}
