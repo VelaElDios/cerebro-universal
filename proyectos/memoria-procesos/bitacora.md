@@ -610,3 +610,47 @@ El contenido es excelente y fiel a las fuentes. El único fallo es el overfull h
 - Verificar que no quedan advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
 - Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
 - Asegurar que los mínimos de palabras por capítulo/anexo se cumplen
+
+## 2026-10-13 16:29 · Constructor (gemini · gemini-flash-latest)
+
+Voy a compilar la memoria con LuaLaTeX para localizar el error "Overfull hbox de 70 pt" detectado por verificar.py, identificado en Memoria.log líneas 18-19, y luego corregirlo según las indicaciones del revisor (reducir anchos de columna en la longtable, usar \small, o ajustar TikZ).
+
+**Archivos:** `Memoria.tex`
+
+**Intentos:**
+- intento 1: ❌ ! LaTeX Error: File `include/portada.tex' not found.
+- intento 2: ❌ VERIFICACIÓN FALLIDA: 1 problema(s) (tocó `Memoria.tex`)
+- intento 3: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Siguiente:** -
+
+## 2026-10-13 16:33 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test automático falla: "Overfull \hbox (70.0pt too wide) in paragraph at lines 18--19" → desborde horizontal en tabla, imagen o párrafo largo
+- Candidato principal: nodo TikZ en 03-propuesta.tex con `text width=5.2cm` y contenido `\texttt{.github/workflows/ci.yml}` (≈30 chars monoespaciado \small ≈ 180pt > 148pt = 5.2cm) → desborde ~32pt, cercano a 70pt
+- Candidato secundario: longtable `tab:trazabilidad` en a1-desarrollo.tex, columna "Estado" 1.5cm con "Siguiente entrega" (15 chars ≈ 75pt > 43pt = 1.5cm) que no cabe y fuerza desborde
+- Candidato terciario: URLs en a2-material.tex aunque `xurl` y `sloppypar` deberían manejarlo
+- Bibliografía: 9 entradas con autores corporativos en doble llave y `year=s.f.` donde procede → OK (guia.md §10)
+- Cifras clave verificadas: 80 pruebas (guia.md §7), 15 PBIs iniciales / 16 finales (gestion.md tabla Evolución), 19 PBIs totales, 32 tareas, 65 commits, 33 PRs, 978098e (PR #32, 12/10/2026), 58s despliegue, 0,27 CU-h Neon (guia.md §7, neonlimits)
+- Estructura capítulos/anexos según spec y estructura-memoria.md → OK
+- Figuras: 12 (arquitectura TikZ, pipeline TikZ, burndown pgfplots, 7 app, 2 DoneTonic) ≥6; Tablas: 12 ≥5; todas con caption, label, ref → OK
+- Resumen ≥120 palabras + palabras clave; declaración autoría con coma y ref correcta a Anexo~\ref{anx:ia} → OK
+- Título sin \, final; \espec no modificado; headheight=15pt en extra.tex → OK
+
+El contenido es excelente y fiel a las fuentes en todos los aspectos sustantivos. El único fallo que impide pasar la prueba es el **overfull hbox de 70pt** detectado por `verificar.py`. Los tres puntos críticos son:
+1. **03-propuesta.tex**: El nodo "CI" del diagrama TikZ tiene `text width=5.2cm` pero contiene `\texttt{.github/workflows/ci.yml}` que en monoespaciado \small supera ese ancho.
+2. **a1-desarrollo.tex**: La longtable `tab:trazabilidad` tiene la columna "Estado" a 1.5cm donde "Siguiente entrega" no cabe, forzando desborde.
+3. **a2-material.tex**: Las URLs largas en `itemize` anidado dentro de `sloppypar` pueden desbordar pese a `xurl`.
+
+Corrijo los tres archivos: aumento `text width` del nodo CI a 6.5cm y uso `\seqsplit` para la ruta larga; amplio la columna "Estado" a 2.2cm y pongo `\small` en la longtable; aseguro cortes de URL con `\UrlBreaks` ya definido en extra.tex.
+
+**Correcciones del revisor:** `chapters/03-propuesta.tex`, `chapters/a1-desarrollo.tex`, `chapters/a2-material.tex`
+
+**Tareas para el constructor:**
+- Compilar la memoria con LuaLaTeX y ejecutar verificar.py para confirmar que el overfull hbox de 70pt se ha resuelto
+- Verificar que no quedan advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
+- Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
+- Asegurar que los mínimos de palabras por capítulo/anexo se cumplen
