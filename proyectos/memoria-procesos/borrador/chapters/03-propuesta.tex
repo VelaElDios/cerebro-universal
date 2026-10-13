@@ -61,15 +61,15 @@ El pipeline de integración y despliegue continuo, implementado con GitHub Actio
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=1.2cm, font=\small},
-    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=3cm, align=center, font=\small},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.2cm, align=center, minimum height=1.2cm, font=\small},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=3.2cm, align=center, font=\small},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     \node[node] (push) {push / pull\_request};
     \node[node, below=1.2cm of push] (ci) {CI (\texttt{.github/workflows/ci.yml})\\Job \textit{Pruebas}: PostgreSQL 17 + \texttt{npm test}\\Job \textit{Imagen Docker}: build + \texttt{curl /api/health}};
     \node[decision, below=1.5cm of ci] (dec) {¿push a \texttt{main} y CI en verde?};
     \node[node, below=1.5cm of dec] (deploy) {Despliegue Cloud Run (\texttt{deploy-cloud-run.yml})\\1. checkout commit probado\\2. auth Google (WIF)\\3. docker build + push Artifact Registry\\4. \texttt{gcloud run deploy} (0–2 inst., 512 MiB)\\5. smoke test: 20 intentos \texttt{/api/health}};
-    \node[node, right=3cm of deploy] (render) {Render (paralelo)\\despliega \texttt{main} según \texttt{render.yaml}};
+    \node[node, right=3.2cm of deploy] (render) {Render (paralelo)\\despliega \texttt{main} según \texttt{render.yaml}};
     \node[node, below=1.2cm of deploy] (done) {Producción operativa\\URL pública + logs JSON};
 
     \draw[arrow] (push) -- (ci);

@@ -572,3 +572,41 @@ El builder debe compilar, buscar en `Memoria.log` la línea `Overfull \hbox (70.
 - Compilar y localizar el overfull hbox de 70 pt en Memoria.log (líneas 18-19 del archivo correspondiente).
 - Corregir la tabla/imagen/párrafo que desborda: ajustar anchos de columna, usar `\small`, permitir cortes en texto monoespaciado o reducir `text width` en TikZ.
 - Volver a ejecutar `comando_prueba` hasta que `verificar.py` pase sin errores.
+
+## 2026-10-13 15:25 · Constructor (openrouter · nvidia/nemotron-3.5-lightning:free)
+
+Vamos a compilar la memoria para localizar el error "Overfull hbox de 70 pt" detectado por verificar.py, identificado en Memoria.log líneas 18-19, y corregirlo según las indicaciones del revisor (reducir anchos de columna en la longtable, usar \small, o ajustar TikZ).
+
+**Archivos:** `Memoria.log`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 1 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Siguiente:** Compilar Memoria.tex con LuaLaTeX y ejecutar verificar.py para localizar el overfull hbox.
+
+## 2026-10-13 15:33 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test automático falla: "Overfull \hbox (70.0pt too wide) in paragraph at lines 18--19" → indica desborde en tabla, imagen o párrafo largo
+- Candidato principal: nodo TikZ en 03-propuesta.tex con `text width=4.5cm` y contenido `\texttt{.github/workflows/ci.yml}` (≈30 chars monoespaciado ≈ 180pt > 128pt = 4.5cm) → desborde ~52pt, cercano a 70pt
+- Candidato secundario: longtable `tab:trazabilidad` en a1-desarrollo.tex (columna "Estado" 1.3cm con "Siguiente entrega" que no cabe)
+- Candidato terciario: URLs en a2-material.tex aunque xurl y sloppypar deberían manejarlo
+- Bibliografía: 9 entradas con autores corporativos en doble llave y year=s.f. donde procede → OK (guia.md §10)
+- Cifras clave verificadas: 80 pruebas (guia.md §7), 15 PBIs iniciales / 16 finales (gestion.md tabla Evolución), 19 PBIs totales, 32 tareas, 65 commits, 33 PRs, 978098e (PR #32, 12/10/2026), 58s despliegue, 0,27 CU-h Neon (guia.md §7, neonlimits)
+- Estructura capítulos/anexos según spec y estructura-memoria.md → OK
+- Figuras: 12 (arquitectura TikZ, pipeline TikZ, burndown pgfplots, 7 app, 2 DoneTonic) ≥6; Tablas: 12 ≥5; todas con caption, label, ref → OK
+- Resumen ≥120 palabras + palabras clave; declaración autoría con coma y ref correcta a Anexo~\ref{anx:ia} → OK
+- Título sin \, final; \espec no modificado; headheight=15pt en extra.tex → OK
+
+El contenido es excelente y fiel a las fuentes. El único fallo es el overfull hbox de 70pt detectado por verificar.py. El culpable más probable es el diagrama TikZ del pipeline CI/CD en 03-propuesta.tex: el nodo con `text width=4.5cm` contiene `\texttt{.github/workflows/ci.yml}` que en monoespaciado \small supera ese ancho. También la longtable de trazabilidad en a1-desarrollo.tex tiene columna "Estado" de 1.3cm donde "Siguiente entrega" no cabe bien. Corrijo ambos archivos y a2-material.tex por seguridad.
+
+**Correcciones del revisor:** `chapters/03-propuesta.tex`, `chapters/a1-desarrollo.tex`, `chapters/a2-material.tex`
+
+**Tareas para el constructor:**
+- Compilar la memoria con LuaLaTeX y ejecutar verificar.py para confirmar que el overfull hbox de 70pt se ha resuelto
+- Verificar que no quedan advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
+- Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
+- Asegurar que los mínimos de palabras por capítulo/anexo se cumplen
