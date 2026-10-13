@@ -34,8 +34,8 @@
   "comando_prueba": "rm -f Memoria.log Memoria.pdf && latexmk -g -lualatex -interaction=nonstopmode -halt-on-error -file-line-error Memoria.tex && python3 ../verificar.py",
   "reintentar_si": "^(!|\\S+\\.(tex|sty|cls|bib):\\d+:)|Fatal error|Emergency stop|Todavía no existe",
   "max_archivos_por_paso": 3,
-  "pasos": 12,
+  "pasos": 13,
   "max_pasos": 18,
   "max_intentos": 3,
-  "ultima_ejecucion": "2026-10-13T17:18:18+02:00"
+  "ultima_ejecucion": "2026-10-13T18:18:45+02:00"
 }

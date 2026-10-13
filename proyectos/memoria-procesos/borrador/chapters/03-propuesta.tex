@@ -67,17 +67,18 @@ El pipeline de integración y despliegue continuo, implementado con GitHub Actio
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     \node[node] (push) {push / pull\_request};
-    \node[nodewide, below=1.2cm of push] (ci) {CI (\url{.github/workflows/ci.yml})\\Job \textit{Pruebas}: PostgreSQL 17 + \texttt{npm test}\\Job \textit{Imagen Docker}: build + \texttt{curl /api/health}};
+    \node[nodewide, below=1.2cm of push] (ci) {CI (\texttt{.github/workflows/ci.yml})\\Job \textit{Pruebas}: PostgreSQL 17 + \texttt{npm test}\\Job \textit{Imagen Docker}: build + \texttt{curl /api/health}};
     \node[decision, below=1.5cm of ci] (dec) {¿push a \texttt{main} y CI en verde?};
     \node[node, below=1.5cm of dec] (deploy) {Despliegue Cloud Run (\texttt{deploy-cloud-run.yml})\\1. checkout commit probado\\2. auth Google (WIF)\\3. docker build + push Artifact Registry\\4. \texttt{gcloud run deploy} (0–2 inst., 512 MiB)\\5. smoke test: 20 intentos \texttt{/api/health}};
     \node[node, right=3.2cm of deploy] (render) {Render (paralelo)\\despliega \texttt{main} según \texttt{render.yaml}};
+    \node[node, left=3.2cm of dec] (nodeploy) {No se despliega};
     \node[node, below=1.2cm of deploy] (done) {Producción operativa\\URL pública + logs JSON};
 
     \draw[arrow] (push) -- (ci);
     \draw[arrow] (ci) -- (dec);
     \draw[arrow] (dec) -- node[left, font=\footnotesize] {sí} (deploy);
     \draw[arrow] (deploy) -- (done);
-    \draw[arrow] (dec) -| node[above, font=\footnotesize] {no} ++(-2,0) |- (ci);
+    \draw[arrow] (dec) -- node[above, font=\footnotesize] {no} (nodeploy);
     \draw[arrow] (deploy) -- (render);
 \end{tikzpicture}
 \caption{Pipeline de CI/CD: push/PR → CI (Pruebas + Imagen Docker) → si main y verde → Despliegue Cloud Run (5 pasos) + Render en paralelo.}
@@ -96,8 +97,8 @@ Para sustentar las distintas dimensiones del proyecto se seleccionó un conjunto
 \textbf{Categoría} & \textbf{Herramienta} & \textbf{Propósito en el proyecto} \\
 \midrule
 \multirow{2}{*}{\textbf{Gestión ágil}} 
-    & DoneTonic & Gestión de backlog, PBIs y tareas en tablero Kanban y burndown \cite{scrumguide}. \\
-    & GitHub Projects & Control de ramas protegidas y revisión en pull requests \cite{githubflow}. \\
+    & DoneTonic & Backlog, sprint, tablero de tareas y gráficas (Burnup, Burndown, Velocity) \cite{scrumguide}. \\
+    & GitHub & Repositorio público, ramas protegidas, pull requests, releases y GitHub Actions \cite{githubflow}. \\
 \midrule
 \multirow{4}{*}{\textbf{Desarrollo}} 
     & Node.js 22 & Entorno de ejecución para unificar JavaScript en cliente y servidor \cite{nodejs}. \\
