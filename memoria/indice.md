@@ -8,16 +8,17 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 [[beamer]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[lua]] · [[memoria]] · [[overleaf]] · [[pgfplots]] · [[revision]] · [[tablas]] · [[tikz]]
 
-## Pendientes de revisar (0)
+## Pendientes de revisar (1)
 
-Ninguna.
+- [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]] · ⚠️ propuesta
 
-## Todas (22)
+## Todas (23)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
 - [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
 - [[coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - [[con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]]
+- [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]] · ⚠️ propuesta
 - [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]]
 - [[en-un-tex-los-comentarios-son-con-no-con|En un .tex los comentarios son con %, no con --]]
 - [[enquote-necesita-el-paquete-csquotes|\enquote necesita el paquete csquotes]]

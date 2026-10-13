@@ -5,10 +5,15 @@
 
 % Utilidades para tablas y texto
 \usepackage{booktabs}
+\usepackage{longtable}
 \usepackage{csquotes}
 \usepackage{icomma}
 \usepackage{placeins}
 \usepackage{xurl}
+\usepackage{breakcites}  % permite partir citas largas entre líneas (evita overfull hbox con [Universidad de Castilla-La Mancha, 2026])
+
+% Altura de cabecera recomendada por fancyhdr
+\setlength{\headheight}{15pt}
 
 % Permitir cortes en URLs en cualquier letra o dígito para evitar desbordes
 \expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks%

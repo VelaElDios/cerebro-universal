@@ -61,27 +61,27 @@ El pipeline de integración y despliegue continuo, implementado con GitHub Actio
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=1.1cm, font=\small},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=6.5cm, align=center, minimum height=1.1cm, font=\small},
-    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=3.0cm, align=center, font=\small},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.9cm, font=\footnotesize},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.9cm, font=\footnotesize},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=2.2cm, align=center, font=\footnotesize},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    \node[node] (push) {push / pull\_request};
-    \node[nodewide, below=1.1cm of push] (ci) {CI (GitHub Actions)\\Job \textit{Pruebas}: PostgreSQL 17 + \texttt{npm test}\\Job \textit{Imagen Docker}: build + \texttt{curl /api/health}};
-    \node[decision, below=1.4cm of ci] (dec) {¿push a \texttt{main} y CI en verde?};
-    \node[node, below=1.4cm of dec] (deploy) {Despliegue Cloud Run\\1. checkout commit probado\\2. auth Google (WIF)\\3. docker build + push Artifact Registry\\4. \texttt{gcloud run deploy} (0--2 inst., 512 MiB)\\5. smoke test: 20 intentos \texttt{/api/health}};
-    \node[node, right=3.0cm of deploy] (render) {Render (paralelo)\\despliega \texttt{main} según \texttt{render.yaml}};
-    \node[node, left=3.0cm of dec] (nodeploy) {No se despliega};
-    \node[node, below=1.1cm of deploy] (done) {Producción operativa\\URL pública + logs JSON};
+    \node[node] (push) {push / PR};
+    \node[nodewide, below=0.7cm of push] (ci) {CI: PostgreSQL 17 + tests\\+ build Docker};
+    \node[decision, below=0.8cm of ci] (dec) {¿push a main\\y CI verde?};
+    \node[node, below=0.8cm of dec] (deploy) {Cloud Run\\1. checkout\\2. auth WIF\\3. build/push\\4. deploy\\5. smoke test};
+    \node[node, right=1.8cm of deploy] (render) {Render (paralelo)};
+    \node[node, left=1.8cm of dec] (nodeploy) {Sin despliegue};
+    \node[node, below=0.7cm of deploy] (done) {Producción};
 
     \draw[arrow] (push) -- (ci);
     \draw[arrow] (ci) -- (dec);
-    \draw[arrow] (dec) -- node[left, font=\footnotesize] {sí} (deploy);
+    \draw[arrow] (dec) -- node[left, font=\scriptsize] {sí} (deploy);
     \draw[arrow] (deploy) -- (done);
-    \draw[arrow] (dec) -- node[above, font=\footnotesize] {no} (nodeploy);
+    \draw[arrow] (dec) -- node[above, font=\scriptsize] {no} (nodeploy);
     \draw[arrow] (deploy) -- (render);
 \end{tikzpicture}
-\caption{Pipeline CI/CD: push/PR -> CI (Pruebas + Docker) -> si main y verde -> Despliegue Cloud Run (5 pasos) + Render en paralelo.}
+\caption{Pipeline CI/CD: push/PR -> CI -> si main y verde -> Cloud Run + Render.}
 \label{fig:pipeline-cicd}
 \end{figure}
 

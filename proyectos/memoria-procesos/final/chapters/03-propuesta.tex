@@ -27,6 +27,15 @@ Para velar por la integridad técnica del producto se definió una estricta Defi
 
 Por su parte, un hito del sprint se considera completado cuando su rama integradora se ha fusionado en la rama principal, el software se encuentra desplegado de forma operativa en la nube y se ha emitido la correspondiente etiqueta de versión (\textit{release}).
 
+La Figura \ref{fig:donetonic-tablero} muestra el tablero del Sprint 1 en DoneTonic al cierre de la entrega, con los PBIs de los Hitos 1–3, P18 y P19 en verde (hechos) y los tres PBIs del Hito 4 pendientes para la siguiente entrega.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/donetonic-01-tablero-sprint.png}
+\caption{Tablero del Sprint 1 en DoneTonic: cada fila es un PBI con sus tareas por columnas de estado; los PBIs en verde están hechos.}
+\label{fig:donetonic-tablero}
+\end{figure}
+
 \subsection{Flujo de versiones: GitHub Flow adaptado}
 
 El desarrollo colaborativo y la gestión del código fuente siguieron las directrices de GitHub Flow \cite{githubflow}, estructuradas de forma jerárquica para reflejar los hitos pedagógicos:
@@ -45,6 +54,37 @@ El ciclo operativo de cada cambio se rigió por las normas estipuladas en la gu�
     \item Fusión del pull request y transición automática de la tarea a estado \textit{HECHO} en el tablero ágil.
 \end{enumerate}
 
+\subsection{Pipeline de CI/CD}
+
+El pipeline de integración y despliegue continuo, implementado con GitHub Actions, se describe en la Figura \ref{fig:pipeline-cicd}. El flujo ejecuta las pruebas contra PostgreSQL 17 real, construye la imagen Docker y, solo en \texttt{main} con CI en verde, despliega automáticamente en Google Cloud Run mediante Workload Identity Federation.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.9cm, font=\footnotesize},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.9cm, font=\footnotesize},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=2.2cm, align=center, font=\footnotesize},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
+]
+    \node[node] (push) {push / PR};
+    \node[nodewide, below=0.7cm of push] (ci) {CI: PostgreSQL 17 + tests\\+ build Docker};
+    \node[decision, below=0.8cm of ci] (dec) {¿push a main\\y CI verde?};
+    \node[node, below=0.8cm of dec] (deploy) {Cloud Run\\1. checkout\\2. auth WIF\\3. build/push\\4. deploy\\5. smoke test};
+    \node[node, right=1.8cm of deploy] (render) {Render (paralelo)};
+    \node[node, left=1.8cm of dec] (nodeploy) {Sin despliegue};
+    \node[node, below=0.7cm of deploy] (done) {Producción};
+
+    \draw[arrow] (push) -- (ci);
+    \draw[arrow] (ci) -- (dec);
+    \draw[arrow] (dec) -- node[left, font=\scriptsize] {sí} (deploy);
+    \draw[arrow] (deploy) -- (done);
+    \draw[arrow] (dec) -- node[above, font=\scriptsize] {no} (nodeploy);
+    \draw[arrow] (deploy) -- (render);
+\end{tikzpicture}
+\caption{Pipeline CI/CD: push/PR -> CI -> si main y verde -> Cloud Run + Render.}
+\label{fig:pipeline-cicd}
+\end{figure}
+
 \section{Herramientas}
 
 Para sustentar las distintas dimensiones del proyecto se seleccionó un conjunto de herramientas y tecnologías de acuerdo con los requisitos técnicos exigidos en la asignatura. La Tabla \ref{tab:herramientas} sintetiza las herramientas empleadas, estructuradas según su ámbito de aplicación en el ciclo de vida del software.
@@ -57,8 +97,8 @@ Para sustentar las distintas dimensiones del proyecto se seleccionó un conjunto
 \textbf{Categoría} & \textbf{Herramienta} & \textbf{Propósito en el proyecto} \\
 \midrule
 \multirow{2}{*}{\textbf{Gestión ágil}} 
-    & DoneTonic & Gestión de backlog, PBIs y tareas en tablero Kanban y burndown \cite{scrumguide}. \\
-    & GitHub Projects & Control de ramas protegidas y revisión en pull requests \cite{githubflow}. \\
+    & DoneTonic & Backlog, sprint, tablero de tareas y gráficas \cite{scrumguide}. \\
+    & GitHub & Repositorio público, ramas protegidas, pull requests, releases y GitHub Actions \cite{githubflow}. \\
 \midrule
 \multirow{4}{*}{\textbf{Desarrollo}} 
     & Node.js 22 & Entorno de ejecución para unificar JavaScript en cliente y servidor \cite{nodejs}. \\

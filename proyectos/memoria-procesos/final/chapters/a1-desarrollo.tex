@@ -9,7 +9,7 @@
 El Sprint 1 se planificó del 29/09/2026 al 27/10/2026 con el objetivo de entregar la base de una aplicación SaaS con gestión de usuarios, arquitectura en capas, proceso Scrum en DoneTonic, flujo GitHub Flow, integración y despliegue continuos (CI/CD) en Google Cloud Run y Render, y una batería de pruebas automatizadas. El alcance formal, según directriz docente, se limitó a los Hitos 1, 2 y 3 del enunciado \cite{enunciado}.
 
 \subsubsection{Sprint Backlog}
-El Product Backlog inicial contenía 16 PBIs (P1–P14, P18) correspondientes a los Hitos 1–3. Durante el sprint se añadió el PBI P19 (despliegue en Google Cloud Run) tras la concesión de créditos educativos de Google Cloud, elevando el total a 17 PBIs en el alcance de la entrega. La Tabla \ref{tab:sprint-backlog} muestra el sprint backlog con sus hitos y estado final.
+El Product Backlog inicial contenía 15 PBIs (P1–P14, P18) correspondientes los Hitos 1–3. Durante el sprint se añadió el PBI P19 (despliegue en Google Cloud Run) tras la concesión de créditos educativos de Google Cloud, elevando el total a 16 PBIs en el alcance de la entrega. La Tabla \ref{tab:sprint-backlog} muestra el sprint backlog con sus hitos y estado final.
 
 \begin{table}[htbp]
 \centering
@@ -44,15 +44,15 @@ P19 & H4 & Despliegue continuo en Google Cloud Run & Hecho \\
 \end{table}
 
 \subsubsection{Trazabilidad}
-Cada PBI se desglosó en 1–2 tareas técnicas (T1–T32), cada una con su rama \texttt{hito-N/Tx-descripcion}, pull request \texttt{[Tx] ...} hacia \texttt{hito-N/integracion} y fusión tras CI en verde. Los cierres de hito fueron PR \#9 (Hito 1), \#17 (Hito 2), \#24 (Hito 3), \#29 (cierre sprint) y \#32 (revisión final). La trazabilidad completa tarea → rama → PR figura en \texttt{docs/gestion/README.md} y en la Tabla \ref{tab:trazabilidad} (extracto).
+Cada PBI se desglosó en 1–2 tareas técnicas (T1–T32), cada una con su rama \texttt{hito-N/Tx-descripcion}, pull request \texttt{[Tx] ...} hacia \texttt{hito-N/integracion} y fusión tras CI en verde. Los cierres de hito fueron PR \#9 (Hito 1), \#17 (Hito 2), \#24 (Hito 3), \#29 (cierre sprint) y \#32 (revisión final). La trazabilidad completa tarea → rama → PR figura en \texttt{docs/gestion/README.md} y en la Tabla \ref{tab:trazabilidad} (tareas de los PBIs hechos).
 
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{0.7cm} L{0.7cm} L{4.2cm} L{3.2cm} L{1.3cm}@{}}
+{\small
+\begin{longtable}{@{}L{0.7cm} L{1.0cm} L{5.5cm} L{3.5cm} L{2.5cm}@{}}
+\caption{Trazabilidad tarea → PR de los PBIs hechos (P1–P14, P18 y P19; 26 tareas).}\label{tab:trazabilidad}\\
 \toprule
-\textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\
-\midrule
+\textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\ \midrule \endfirsthead
+\toprule
+\textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\ \midrule \endhead
 P1 & T1 & Crear repositorio y estructura base & \#1 & Hecho \\
 P1 & T2 & Configurar GitHub Flow & \#2 & Hecho \\
 P2 & T3 & Workflow de CI con GitHub Actions & \#3 & Hecho \\
@@ -80,10 +80,8 @@ P18 & T32 & Carpeta de la memoria en LuaLaTeX & \#31 & Hecho \\
 P19 & T29 & Contenerizar la aplicación con Docker & \#27 & Hecho \\
 P19 & T30 & Despliegue continuo en Cloud Run con GitHub Actions & \#28 & Hecho \\
 \bottomrule
-\end{tabular}
-\caption{Trazabilidad tarea → rama → PR (extracto de 32 tareas).}
-\label{tab:trazabilidad}
-\end{table}
+\end{longtable}
+}
 
 \subsection{Desarrollo del sprint}
 
@@ -195,7 +193,7 @@ Al cierre del Sprint 1 (12/10/2026, commit \texttt{978098e}, PR \#32) se entrega
 \begin{itemize}
     \item Cuatro releases publicadas en GitHub: \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3} y \texttt{sprint-1}.
     \item Servicio web desplegado y plenamente operativo en Google Cloud Run y Render, según se referencia en el Anexo \ref{anx:material}.
-    \item Batería de 80 pruebas automatizadas validadas en el CI contra PostgreSQL 17.
+    \item Batería de 80 pruebas automatizadas validadas al CI contra PostgreSQL 17.
     \item 16 PBIs completados correspondientes al alcance de la entrega (3 PBIs pospuestos a Hito 4).
     \item 65 commits en la rama principal (33 de trabajo y 32 de integración de PRs) y 71 ejecuciones de GitHub Actions.
     \item Consumo en el plan gratuito de Neon a fecha 12/10/2026: 0,27 CU-h de cómputo (límite 100 CU-h), 0,03 GB de almacenamiento (límite 1 GB) y 0 GB de transferencia sobre 5 GB \cite{neonlimits}.
@@ -228,6 +226,16 @@ La Figura \ref{fig:burndown} muestra la evolución de PBIs pendientes del alcanc
 \end{tikzpicture}
 \caption{Burndown del Sprint 1: evolución de PBIs pendientes del alcance de la entrega.}
 \label{fig:burndown}
+\end{figure}
+
+\subsubsection{Seguimiento visual en DoneTonic}
+La Figura \ref{fig:donetonic-graficas} muestra las gráficas Sprint Burnup y Sprint Burndown de DoneTonic (84\% completado, 3 PBIs pendientes del Hito 4), tal como se captura en el panel de seguimiento del proyecto.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/donetonic-02-graficas-sprint.png}
+\caption{Sprint Burnup y Sprint Burndown en DoneTonic (84\% completado, 3 PBIs pendientes).}
+\label{fig:donetonic-graficas}
 \end{figure}
 
 \subsubsection{Cambio de alcance}
