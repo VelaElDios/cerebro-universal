@@ -439,3 +439,43 @@ La memoria cumple **todos** los criterios de terminado:
 ## 2026-10-13 07:23 · 🎉 Proyecto terminado
 
 El revisor da por cumplidos todos los criterios de la spec.
+
+## 2026-10-13 · Revisión humana (Javier)
+
+Claude ha compilado `final/` y lo ha leído entero. La base está muy bien (compila, 51 páginas y
+los datos cuadran con las fuentes), pero hay que corregir esto. `verificar.py` ahora comprueba
+los puntos 2, 3, 4 y 5, así que la prueba vuelve a fallar hasta que estén hechos.
+
+1. **Dato erróneo en `chapters/a1-desarrollo.tex` (línea 12).** Dice «El Product Backlog inicial
+   contenía 16 PBIs (P1–P14, P18) […] elevando el total a 17 PBIs». P1–P14 y P18 son **15**, y con
+   P19 son **16** (`gestion.md`, tabla «Evolución del sprint»: Inicio 15 pendientes; cierre 16 hechos).
+   Corregirlo así.
+2. **La tabla de trazabilidad (`tab:trazabilidad`) no cabe en la página** (el log dice «Float too large
+   … 145 pt»: se corta la última fila). Pasarla a `longtable` (añadir `\usepackage{longtable}` en
+   `include/extra.tex`), con la cabecera repetida en cada página. La columna «Tarea» se parte en
+   «Ta-rea»: darle más ancho. El título dice «tarea → rama → PR» pero no hay columna de rama:
+   o se añade (con `\texttt{\footnotesize …}`) o el título pasa a ser «tarea → PR». Solo están las
+   tareas de los PBIs hechos: decirlo en el título en vez de «extracto».
+3. **Faltan figuras que pide la spec:**
+   - Un diagrama TikZ del **pipeline de CI/CD** (guía §5.2: push/PR → CI con jobs *Pruebas* e
+     *Imagen Docker* → si es `main` y está en verde → despliegue en Cloud Run en 5 pasos), en el
+     capítulo 3 o en la evaluación, citado con `\ref`.
+   - Al menos una **captura de DoneTonic** (`figs/capturas/donetonic-*.png`): el tablero o el backlog
+     en la metodología (cap. 2) y la de las gráficas en la retrospectiva del Anexo A, junto al burndown.
+4. **Bibliografía:** las citas salen como «[de Castilla-La Mancha, ]» y «[Neon, ]».
+   - `enunciado`: `author = {{Universidad de Castilla-La Mancha}}` (doble llave: es un autor
+     corporativo) y `year = {2026}`.
+   - Las páginas web sin fecha: `year = {s.f.}` (sin fecha). Los autores corporativos (GitHub,
+     Google Cloud, OpenJS Foundation, Neon, The PostgreSQL Global Development Group, Express) también
+     con doble llave.
+5. **Detalles del preámbulo** (`elements/preambulo.tex` e `include/opciones.tex`):
+   - Declaración: «Yo, \autor, declaro…» (falta la coma) y «en el Anexo~\ref{anx:ia}» (ahora sale
+     «Anexo C (C)»).
+   - El título sale con un espacio antes de las comillas de cierre porque `\titulo` acaba en `\,`:
+     quitar ese `\,` de `\titulo` en `include/opciones.tex`.
+   - `\espec` lo cambió el constructor a «Ingeniería del Software» y la spec decía no tocarlo. Se deja
+     así hasta que Javier lo confirme: no volver a cambiarlo.
+6. **Aviso de cabecera:** el log avisa 10 veces de `\headheight is too small (12.0pt)`. Añadir
+   `\setlength{\headheight}{15pt}` en `include/extra.tex`.
+
+Al terminar, el revisor tiene que comprobar estos 6 puntos uno a uno en COMPROBACIONES.

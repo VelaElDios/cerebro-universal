@@ -130,6 +130,8 @@ def guardar_propuesta(bloque: str, proyecto: str) -> str | None:
     Si ya existe una con el mismo título, suma una vez. Devuelve el nombre o None."""
     campos, actual = {}, None
     for linea in bloque.splitlines():
+        if linea.strip().startswith("<<<"):   # restos del formato de bloques (p. ej. «<<<FIN>>>>»)
+            continue
         m = re.match(r"^\s*(titulo|título|temas|claves|problema|solucion|solución|ejemplo)\s*:\s*(.*)$",
                      linea, re.I)
         if m:
@@ -182,6 +184,10 @@ def reindexar():
         return f"- [[{l['nombre']}|{l.get('titulo', l['nombre'])}]]{marca}"
 
     TEMAS.mkdir(parents=True, exist_ok=True)
+    # Temas que se quedaron sin lecciones (p. ej. al editar una): se borra su nota generada
+    for nota in TEMAS.glob("*.md"):
+        if nota.stem not in por_tema and "(este archivo se genera solo)" in nota.read_text(encoding="utf-8"):
+            nota.unlink()
     for tema, ls in por_tema.items():
         (TEMAS / f"{tema}.md").write_text(
             f"# {tema}\n\nLecciones sobre {tema} (este archivo se genera solo).\n\n"

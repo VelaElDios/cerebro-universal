@@ -73,11 +73,14 @@ texto aparece en las fuentes.
 - Figuras mínimas: arquitectura en capas (TikZ), pipeline de CI/CD o flujo de ramas (TikZ), burndown
   (pgfplots), al menos 3 capturas de la aplicación y 1 de DoneTonic.
 - Capturas con `\includegraphics[width=0.9\textwidth]{figs/capturas/…}` (la del móvil, 0.35\textwidth).
+- Tablas de más de media página con `longtable` (no caben en un `table` y se cortan).
 - Nada puede salirse del margen: tablas con columnas de ancho fijo (`L{4cm}`, definidas en la plantilla)
   o `\small`.
 
 ### Bibliografía (`bib/ref.bib`, BibTeX con estilo apalike)
 - Solo las referencias de §10 de la guía. Formato `@misc` con `howpublished = {\url{…}}`.
+- Todas con `year` (`year = {s.f.}` si la fuente no da fecha) y los autores que son organizaciones con
+  doble llave: `author = {{GitHub}}`.
 - El enunciado de la asignatura con la clave `enunciado` (sin URL, es un PDF de la asignatura).
 - Cada referencia se cita al menos una vez con `\cite{…}` donde corresponda.
 

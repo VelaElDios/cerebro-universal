@@ -39,6 +39,14 @@ RESUMEN_MIN = 120
 FIGURAS_MIN = 6
 TABLAS_MIN = 5
 OVERFULL_MAX_PT = 30
+# Figuras que tienen que estar (patrón en el código de los capítulos, mínimo, qué es)
+FIGURAS_OBLIGATORIAS = [
+    (r"\\begin\{tikzpicture\}", 3, "dibujos TikZ (arquitectura en capas, pipeline de CI/CD o flujo de ramas, "
+                                    "y el del burndown)"),
+    (r"\\begin\{axis\}", 1, "gráfica pgfplots (burndown)"),
+    (r"figs/capturas/app-", 3, "capturas de la aplicación"),
+    (r"figs/capturas/donetonic-", 1, "captura de DoneTonic"),
+]
 NUMERO_LIBRE = 20          # los números hasta este valor no hace falta que estén en las fuentes
 
 RELLENO = [
@@ -128,6 +136,9 @@ def comprobar_log():
         return
     for m in re.finditer(r"(Citation|Reference) [`'](.+?)' on page \d+ undefined", log):
         fallo(f"Memoria.log: {'cita' if m.group(1) == 'Citation' else 'referencia'} sin resolver: {m.group(2)}")
+    for m in re.finditer(r"Float too large for page by ([\d.]+)pt", log):
+        fallo(f"Memoria.log: una tabla o figura no cabe en la página (sobran {float(m.group(1)):.0f} pt): "
+              "si es una tabla larga, usa longtable en vez de table")
     if "Empty `thebibliography'" in log:
         fallo("La bibliografía sale vacía: hay que citar las referencias con \\cite en el texto")
     for m in re.finditer(r"Overfull \\hbox \(([\d.]+)pt too wide\) (.*)", log):
@@ -158,15 +169,15 @@ def comprobar_bibliografia(textos: dict[str, str], fuentes: str):
                 if clave not in entradas:
                     fallo(f"{nombre}:{linea_de(texto, m.start())}: \\cite{{{clave}}} no existe en bib/ref.bib")
     for clave, cuerpo in entradas.items():
-        if clave == "enunciado":   # el PDF del enunciado de la asignatura no tiene URL
-            continue
         urls = re.findall(r"https?://[^\s}\"]+", cuerpo)
-        if not urls:
+        if not urls and clave != "enunciado":   # el PDF del enunciado de la asignatura no tiene URL
             fallo(f"bib/ref.bib: {clave} no tiene URL (en howpublished o url); "
                   "solo valen referencias que estén en las fuentes")
         for url in urls:
             if url.rstrip("/.") not in fuentes:
                 fallo(f"bib/ref.bib: {clave}: la URL {url} no aparece en las fuentes (¿inventada?)")
+        if not re.search(r"\byear\s*=", cuerpo):
+            fallo(f"bib/ref.bib: {clave} no tiene year (si la fuente no da fecha, year = {{s.f.}})")
         if clave not in citadas:
             fallo(f"bib/ref.bib: {clave} no se cita en ningún sitio (cítala con \\cite o quítala)")
 
@@ -201,6 +212,10 @@ def comprobar_flotantes(textos: dict[str, str]):
                     if e not in referidas:
                         fallo(f"{nombre}:{n}: la {('figura' if tipo == 'figure' else 'tabla')} {e} "
                               "no se cita en el texto (usa \\ref{" + e + "})")
+    codigo = "\n".join(v for k, v in textos.items() if k.startswith("chapters/"))
+    for patron, minimo, que in FIGURAS_OBLIGATORIAS:
+        if len(re.findall(patron, codigo)) < minimo:
+            fallo(f"Faltan {que}: se piden al menos {minimo}")
     if figuras < FIGURAS_MIN:
         fallo(f"Hay {figuras} figuras y se piden al menos {FIGURAS_MIN}")
     if tablas < TABLAS_MIN:
@@ -299,6 +314,10 @@ def comprobar_pdf():
                            text=True, errors="replace").stdout
     if "??" in texto:
         fallo("El PDF contiene «??»: hay referencias o citas rotas")
+    for m in re.finditer(r"\[[^\[\]\n]{0,60}, \]|\[de [A-Z][^\]\n]{0,40}\]", texto):
+        fallo(f"El PDF tiene una cita mal formada «{m.group(0)}»: falta el año o el autor corporativo va sin "
+              "doble llave (author = {{Universidad de Castilla-La Mancha}})")
+        break
     if "Lorem ipsum" in texto or "Nam dui ligula" in texto:
         fallo("El PDF contiene texto de relleno (lipsum)")
 

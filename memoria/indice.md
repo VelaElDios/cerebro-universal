@@ -6,16 +6,16 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 ## Temas
 
-[[beamer]] · [[datos]] · [[general]] · [[latex]] · [[lua]] · [[overleaf]] · [[pgfplots]] · [[python]] · [[revision]] · [[tablas]] · [[tikz]] · [[verificacion]]
+[[beamer]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[lua]] · [[memoria]] · [[overleaf]] · [[pgfplots]] · [[revision]] · [[tablas]] · [[tikz]]
 
-## Pendientes de revisar (2)
+## Pendientes de revisar (0)
 
-- [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
-- [[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Verificación de números en memoria LaTeX contra fuentes únicas]] · ⚠️ propuesta
+Ninguna.
 
-## Todas (19)
+## Todas (21)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
+- [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
 - [[coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - [[con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]]
 - [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]]
@@ -30,7 +30,8 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 - [[nombres-de-archivo-normales-sin-espacios-y-con-extension|Nombres de archivo normales: sin espacios y con extensión]]
 - [[pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d|pgfplots: línea horizontal de referencia de lado a lado con \draw]]
 - [[pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida|pgfplots: symbolic x coords necesita la lista ya expandida]]
-- [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
+- [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]]
+- [[tablas-largas-longtable-no-table|Tablas largas: longtable, no table]]
 - [[un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p|Un revisor que dice «verificado» sin mostrar la operación no prueba nada]]
 - [[una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp|Una función llamada desde \directlua debe imprimir con tex.sprint, no con return]]
-- [[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Verificación de números en memoria LaTeX contra fuentes únicas]] · ⚠️ propuesta
+- [[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Cada cifra de un documento sale de las fuentes, también las pequeñas]]
