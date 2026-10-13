@@ -171,3 +171,50 @@ He corregido yo:
 ## 2026-10-13 03:26 · 🧠 Lección propuesta para la memoria
 
 [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-10-13 04:23 · Constructor (gemini · gemini-flash-latest)
+
+He redactado completamente el Anexo C sobre el uso responsable de la inteligencia artificial (`chapters/a3-uso-ia.tex`), eliminando el texto de relleno `\lipsum` y detallando la participación de la IA tanto en el desarrollo del software como en la redacción de la memoria. Asimismo, he corregido en `chapters/a1-desarrollo.tex` las referencias pendientes a las tablas de incidencias y ajustado sus dimensiones y el salto de línea de URLs para evitar desbordamientos del margen. Finalmente, he ajustado el ancho y padding lateral de la tabla de herramientas en `chapters/03-propuesta.tex` para eliminar el exceso de anchura.
+
+**Archivos:** `chapters/a3-uso-ia.tex`, `chapters/a1-desarrollo.tex`, `chapters/03-propuesta.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 6 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Siguiente:** Qué debería hacerse en el próximo paso:
+Revisar las advertencias de desbordamiento de margen en `chapters/04-descripcion.tex` (ajustar las dimensiones de las tablas y del diagrama TikZ para que ninguna línea exceda el ancho útil) y verificar la ejecución de `verificar.py`.
+
+## 2026-10-13 04:28 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: LuaLaTeX compila y genera PDF de 51 páginas, pero `verificar.py` falla con 6 desbordes de margen (35, 32, 56, 32, 51, 81 pt).
+- Tablas capítulo 4: `tab:requisitos` (L{1.5}+L{8.0}+L{3.5}=13.0cm), `tab:api` (L{1.5}+L{3.5}+L{2.0}+L{6.0}=13.0cm), `tab:resumen-sprint` (L{2.2}+L{3.3}+L{4.5}+L{3.0}=13.0cm) → suman 13.0cm pero con padding lateral superan \linewidth (~15.5cm - 2\tabcolsep). TikZ `fig:arquitectura` nodos `text width=5.8cm` → desbordan 56 pt.
+- Anexos A1: `tab:sprint-backlog` (L{0.8}+L{1.2}+L{7.0}+L{2.5}=11.5cm), `tab:trazabilidad` (L{0.8}+L{0.8}+L{4.5}+L{3.5}+L{1.5}=11.1cm), 6 tablas problemas (L{5.5}+L{7.8}=13.3cm) → desbordan 32-81 pt.
+- Contenido vs fuentes: Capítulos 1, 3, 4, 5, 6 y anexos A1, A2, A3 tienen texto real (sin \lipsum). Cifras clave contrastadas: 80 pruebas (guia.md §7), 19 PBIs (gestion.md), 65 commits (guia.md §7), 12/10/2026 commit 978098e (guia.md §7), 0,27 CU-h Neon (guia.md §7), 16 PBIs hechos (gestion.md), 33 PRs (guia.md §7), 4 releases (guia.md §7), 58 s despliegue (guia.md §7), 1.128/657/992 líneas (guia.md §7).
+- Bibliografía: 9 entradas @misc con howpublished=\url{} (8 con URL, enunciado sin URL) → coincide con guia.md §10.
+- Figuras: 7 capturas app-* + 1 donetonic + 1 arquitectura TikZ + 1 burndown pgfplots = 10 figuras (≥6). Tablas: herramientas, requisitos, API, resumen sprint, sprint backlog, trazabilidad, 6 problemas = 10 tablas (≥5).
+- Resumen: ~137 palabras + "Palabras clave:" → cumple ≥120.
+- Segunda portada: "TRABAJO DE PROCESOS DE INGENIERÍA DEL SOFTWARE" → cumple spec.
+- Declaración autoría: sin DNI, referencia Anexo C (\ref{anx:ia}) → cumple spec.
+- Estructura capítulos y anexos: sigue `estructura-memoria.md` y tablas de la spec.
+
+Lo bueno: Todo el contenido está escrito (sin \lipsum), bien referenciado a las fuentes, con cifras correctas y estructura completa. La bibliografía coincide exactamente con guia.md §10. Las figuras y tablas superan los mínimos.
+
+Lo malo: 6 desbordes de margen impiden que `verificar.py` pase. Las tablas y nodos TikZ superan \linewidth por padding lateral y anchos excesivos. Hay que reducir anchos de columna, usar `@{}` en preámbulo tabular para eliminar padding, y reducir `text width` de nodos TikZ.
+
+He corregido yo directamente 3 archivos para eliminar los desbordes:
+1. `chapters/04-descripcion.tex`: tablas requisitos, API, resumen sprint y arquitectura TikZ.
+2. `chapters/a1-desarrollo.tex`: tablas sprint backlog, trazabilidad y 6 tablas de problemas.
+3. `chapters/03-propuesta.tex`: tabla herramientas (ya casi bien, ajuste final).
+
+**Correcciones del revisor:** `chapters/04-descripcion.tex`, `chapters/a1-desarrollo.tex`, `chapters/03-propuesta.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` (compilar con LuaLaTeX y correr `verificar.py`) para confirmar que los 6 desbordes de margen están resueltos.
+- Verificar que no quedan textos \lipsum en ningún archivo.
+- Confirmar que el total de tablas es ≥5 y figuras ≥6 (actualmente 10 y 10).
+- Asegurar que todas las cifras del texto aparecen en las fuentes (test de números >20).
+- Si `verificar.py` pasa, marcar TERMINADO=si en el siguiente paso.

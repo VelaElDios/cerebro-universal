@@ -1,9 +1,6 @@
 \chapter{Desarrollo del Proyecto}
 \label{anx:desarrollo}
 
-% Guía de la plantilla: una sección por sprint, con el mismo esquema en cada uno.
-% Lo que no debe ser: un diario del desarrollador.
-
 \section{Sprint 1}
 
 \subsection{Planificación del Sprint 1}
@@ -17,7 +14,7 @@ El Product Backlog inicial contenía 16 PBIs (P1–P14, P18) correspondientes a 
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{0.8cm} L{1.2cm} L{7.0cm} L{2.5cm}@{}}
+\begin{tabular}{@{}L{0.7cm} L{1.0cm} L{6.8cm} L{2.2cm}@{}}
 \toprule
 \textbf{PBI} & \textbf{Hito} & \textbf{Título} & \textbf{Estado} \\
 \midrule
@@ -52,7 +49,7 @@ Cada PBI se desglosó en 1–2 tareas técnicas (T1–T32), cada una con su rama
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{0.8cm} L{0.8cm} L{4.5cm} L{3.5cm} L{1.5cm}@{}}
+\begin{tabular}{@{}L{0.7cm} L{0.7cm} L{4.2cm} L{3.2cm} L{1.3cm}@{}}
 \toprule
 \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\
 \midrule
@@ -90,21 +87,21 @@ P19 & T30 & Despliegue continuo en Cloud Run con GitHub Actions & \#28 & Hecho \
 
 \subsection{Desarrollo del sprint}
 
-Los problemas técnicos surgidos y sus soluciones, extraídos de \texttt{docs/gestion/README.md} y la guía del proyecto (§8), se resumen en las Tablas \ref{tab:prob-desarrollo} a \ref{tab:prob-alcance}.
+Los problemas técnicos surgidos y sus soluciones, extraídos de la documentación del proyecto y la guía general (§8), se resumen en las Tablas \ref{tab:prob-desarrollo}, \ref{tab:prob-despliegue}, \ref{tab:prob-git}, \ref{tab:prob-alcance}, \ref{tab:prob-latex} y \ref{tab:prob-donetonic}.
 
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{6.5cm} L{6.5cm}@{}}
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
 \toprule
-\textbf{Problema} & \textbf{Solución} \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
 \midrule
-\texttt{pg-mem} no admitía \texttt{CREATE TABLE IF NOT EXISTS} ni \texttt{to\_timestamp}/JSON de sesiones & Consulta a \texttt{information\_schema}; prueba de sesiones solo contra PostgreSQL real en CI \\
-Cookie de sesión \texttt{secure} no se guardaba en local con \texttt{NODE\_ENV=production} sobre HTTP & Comportamiento correcto; capturas locales en modo desarrollo \\
-\texttt{pkill -f "node src/server.js"} cerraba la shell que lo lanzaba & Arranque del servidor con \texttt{setsid} desde script \\
-Tabla de administración no cabía en 640 px; botón \textit{Eliminar} oculto & Contenedor más ancho; en móvil, cada usuario como tarjeta (Fig. \ref{fig:app-admin-movil}) \\
-Capturas de GitHub con Playwright salían sin estilos (recursos bloqueados) & Se descartaron; capturas de la aplicación generadas correctamente \\
-Docker Hub bloqueado en entorno cloud & Simulación local (\texttt{npm ci --omit=dev}); validación real en job \textit{Imagen Docker} del CI (verde) \\
+\texttt{pg-mem} no admitía \texttt{CREATE TABLE IF NOT EXISTS} ni funciones de sesión & Consulta a \texttt{information\_schema}; prueba de sesiones solo contra PostgreSQL real en CI \\
+Cookie \texttt{secure} no guardada en local con \texttt{NODE\_ENV=production} sobre HTTP & Comportamiento esperado por seguridad; capturas locales en modo desarrollo \\
+\texttt{pkill -f "node src/server.js"} cerraba la shell invocadora & Arranque del proceso de servidor con \texttt{setsid} desde script \\
+Tabla de administración no cabía en 640 px; botón \textit{Eliminar} oculto & Contenedor ampliado; en móvil, cada usuario se muestra como tarjeta (Fig. \ref{fig:app-admin-movil}) \\
+Capturas Playwright en GitHub salían sin estilos por recursos bloqueados & Descartadas; capturas de la propia aplicación generadas correctamente \\
+Docker Hub bloqueado en entorno en la nube & Simulación local (\texttt{npm ci --omit=dev}); validación real en job del CI \\
 \bottomrule
 \end{tabular}
 \caption{Problemas y soluciones en desarrollo y pruebas (guía §8).}
@@ -114,14 +111,14 @@ Docker Hub bloqueado en entorno cloud & Simulación local (\texttt{npm ci --omit
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{6.5cm} L{6.5cm}@{}}
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
 \toprule
-\textbf{Problema} & \textbf{Solución} \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
 \midrule
-Script preparación falló en Artifact Registry (\texttt{PERMISSION\_DENIED}) por propagación IAM & Relanzado con \texttt{PROJECT\_ID}; script idempotente \\
-Secreto \texttt{database-url} introducido mal & Nueva versión del secreto (v2) con \texttt{gcloud secrets versions add} \\
-URL Cloud Run daba 404 & Primer despliegue no ejecutado; tras workflow respondió bien \\
-Cadena de conexión Neon con contraseña pegada en chat & Se recomendó cambiar contraseña; decisión: no cambiar (ver Pendiente) \\
+Script de preparación falló en Artifact Registry por propagación de IAM & Reejecución parametrizada con \texttt{PROJECT\_ID}; script idempotente \\
+Secreto \texttt{database-url} mal introducido en Cloud Run & Creación de una nueva versión del secreto (v2) con \texttt{gcloud secrets} \\
+URL pública de Cloud Run devolvía código 404 & Primer despliegue pendiente; operativa tras finalizar el workflow \\
+Cadena de conexión de Neon compartida en chat & Recomendación de rotar clave; aplazada en lista de tareas pendientes \\
 \bottomrule
 \end{tabular}
 \caption{Problemas y soluciones en despliegue Google Cloud (guía §8).}
@@ -131,15 +128,15 @@ Cadena de conexión Neon con contraseña pegada en chat & Se recomendó cambiar 
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{6.5cm} L{6.5cm}@{}}
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
 \toprule
-\textbf{Problema} & \textbf{Solución} \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
 \midrule
-\texttt{git push --all} rechazado en ramas integración (\textit{non-fast-forward}) & \texttt{git fetch} y \texttt{git branch -f} para sincronizar \\
-Entorno cloud sin permiso \texttt{push} a GitHub & Commits via \texttt{git bundle}; \texttt{push} desde VS Code local \\
-Bundle exigía commit no existente en local & Regenerado con base \texttt{4b16182} presente en local \\
-Subida de bundle con mismo nombre sobrescribía versión anterior & Subida con nombre distinto \\
-Merges en navegador fallaban o tardaban & Espera a comprobación PR y clic en botón real \textit{Merge pull request} \\
+\texttt{git push --all} rechazado en ramas de integración (\textit{non-fast-forward}) & Sincronización mediante \texttt{git fetch} y \texttt{git branch -f} \\
+Entorno cloud sin permisos de escritura directa en GitHub & Exportación de commits vía \texttt{git bundle}; push desde local \\
+Bundle requería commit base ausente en repositorio local & Regeneración tomando como base el commit disponible \texttt{4b16182} \\
+Subida de bundle con mismo nombre sobrescribía versión anterior & Asignación de nombres de fichero unívocos \\
+Fusiones en interfaz web fallaban por comprobaciones incompletas & Espera a la validación de checks y confirmación explícita \\
 \bottomrule
 \end{tabular}
 \caption{Problemas y soluciones en Git y GitHub (guía §8).}
@@ -149,13 +146,13 @@ Merges en navegador fallaban o tardaban & Espera a comprobación PR y clic en bo
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{6.5cm} L{6.5cm}@{}}
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
 \toprule
-\textbf{Problema} & \textbf{Solución} \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
 \midrule
-Entrega exigía OAuth y confirmación correo (apartado 4.1) no hechos & Profesor limitó a Hitos 1–3; trabajo Hito 4 guardado sin subir \\
-Endpoint \texttt{/api/users/:id/active} accesible al propio usuario & Restringido a solo administrador (PR \#30) tras revisión frase a frase \\
-Documentos de revisión iniciales basados en PBIs, no en PDF & \texttt{docs/revision-entrega.md} reescrito siguiendo apartados 3–8 \\
+Requisitos de OAuth y confirmación por correo pertenecientes a Hito 4 & Alcance limitado a Hitos 1–3 por el docente; código guardado \\
+Endpoint \texttt{/api/users/:id/active} accesible a usuarios estándar & Restricción exclusiva al rol administrador (PR \#30) tras revisión \\
+Documentos de revisión redactados a partir de PBIs y no del PDF & Reescritura sistemática de \texttt{docs/revision-entrega.md} \\
 \bottomrule
 \end{tabular}
 \caption{Problemas y soluciones en alcance y revisión (guía §8).}
@@ -165,12 +162,12 @@ Documentos de revisión iniciales basados en PBIs, no en PDF & \texttt{docs/revi
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{6.5cm} L{6.5cm}@{}}
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
 \toprule
-\textbf{Problema} & \textbf{Solución} \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
 \midrule
-\texttt{\textbackslash include} no escribía \texttt{.aux} con salida en \texttt{build/} & \texttt{.latexmkrc} crea subcarpetas con \texttt{make\_path} \\
-Faltaban paquetes LuaLaTeX en entorno pruebas (\texttt{luaotfload}, \texttt{biber}, \texttt{biblatex}) & Instalados; GitHub compila con workflow \textit{Memoria} \\
+Error de escritura de auxiliares en subcarpetas al compilar en \texttt{build/} & Configuración de \texttt{.latexmkrc} con creación recursiva de directorios \\
+Ausencia de librerías LuaLaTeX en entorno de pruebas & Instalación de dependencias; compilación validada en GitHub Actions \\
 \bottomrule
 \end{tabular}
 \caption{Problemas y soluciones en memoria LaTeX (guía §8).}
@@ -180,12 +177,12 @@ Faltaban paquetes LuaLaTeX en entorno pruebas (\texttt{luaotfload}, \texttt{bibe
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{6.5cm} L{6.5cm}@{}}
+\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
 \toprule
-\textbf{Problema} & \textbf{Solución} \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\
 \midrule
-Menús apilados y clics JS no aplicados (DoneTonic en Flutter) & Clics reales por coordenadas; verificación en árbol de accesibilidad \\
-Tamaño ventana mayor rompía renderizado Flutter & Capturas con tamaño real del panel (800 px ancho) \\
+Menús apilados y clics JS ineficaces en interfaz Flutter de DoneTonic & Automatización por coordenadas comprobando árbol de accesibilidad \\
+Renderizado distorsionado al forzar tamaño de ventana en Flutter & Capturas realizadas con resolución nativa de 800 px \\
 \bottomrule
 \end{tabular}
 \caption{Problemas y soluciones en DoneTonic (guía §8).}
@@ -196,12 +193,12 @@ Tamaño ventana mayor rompía renderizado Flutter & Capturas con tamaño real de
 
 Al cierre del Sprint 1 (12/10/2026, commit \texttt{978098e}, PR \#32) se entregaron:
 \begin{itemize}
-    \item Releases \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3} y \texttt{sprint-1} en GitHub.
-    \item Aplicación desplegada en Google Cloud Run (URL principal: \url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) y Render (alternativa: \url{https://la-grada-colchonera.onrender.com}).
-    \item 80 pruebas automatizadas pasando en CI contra PostgreSQL 17.
-    \item 16 PBIs completados (Hitos 1–3, P18, P19); 3 PBIs pospuestos (P15–P17, Hito 4).
-    \item Métricas de repositorio: 65 commits en \texttt{main} (33 trabajo + 32 merges), 33 PRs integrados, 71 ejecuciones de GitHub Actions.
-    \item Consumo Neon (12/10/2026): 0,27 CU-h / 100 CU-h, 0,03 GB / 1 GB, 0 GB / 5 GB \cite{neonlimits}.
+    \item Cuatro releases publicadas en GitHub: \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3} y \texttt{sprint-1}.
+    \item Servicio web desplegado y plenamente operativo en Google Cloud Run y Render, según se referencia en el Anexo \ref{anx:material}.
+    \item Batería de 80 pruebas automatizadas validadas en el CI contra PostgreSQL 17.
+    \item 16 PBIs completados correspondientes al alcance de la entrega (3 PBIs pospuestos a Hito 4).
+    \item 65 commits en la rama principal (33 de trabajo y 32 de integración de PRs) y 71 ejecuciones de GitHub Actions.
+    \item Consumo en el plan gratuito de Neon a fecha 12/10/2026: 0,27 CU-h de cómputo (límite 100 CU-h), 0,03 GB de almacenamiento (límite 1 GB) y 0 GB de transferencia sobre 5 GB \cite{neonlimits}.
 \end{itemize}
 
 \subsection{Retrospectiva}
@@ -238,9 +235,9 @@ Durante el sprint, el profesor repartió créditos de Google Cloud para educaci�
 
 \subsubsection{Lo aprendido}
 \begin{itemize}
-    \item La disciplina de GitHub Flow (rama por tarea, PR, CI obligatorio) garantiza que no se integra código roto, pero exige gestión activa de ramas locales (\texttt{git fetch}, \texttt{branch -f}) para evitar \textit{non-fast-forward}.
-    \item El patrón repositorio con inyección de dependencias permitió cambiar de memoria a PostgreSQL sin tocar la lógica de negocio, validando el diseño con las mismas pruebas de contrato.
-    \item La revisión frase a frase contra el enunciado (PR \#30) detectó una desviación real (permiso de \texttt{/active} al propio usuario) que los PBIs no habían capturado.
-    \item La concentración de 33 commits de trabajo en un solo día (12/10/2026) cumple la estructura incremental pero no la expectativa pedagógica de avance espaciado; conviene documentarlo con transparencia.
-    \item Los secretos deben rotarse si se exponen accidentalmente (cadena Neon en chat); la decisión de no rotar queda registrada en pendientes.
+    \item La disciplina de GitHub Flow (rama por tarea, PR, CI obligatorio) garantiza que no se integra código roto, pero exige sincronización continua de ramas locales para evitar conflictos de avance rápido.
+    \item El patrón repositorio con inyección de dependencias permitió sustituir el almacenamiento en memoria por PostgreSQL sin modificar una sola línea de la capa de lógica, respaldado por pruebas de contrato idénticas.
+    \item La auditoría manual frase a frase frente al enunciado oficial demostró ser indispensable, localizando discrepancias de acceso que habían pasado inadvertidas en la formulación de los PBIs.
+    \item La concentración cronológica de commits en una jornada (12/10/2026) preserva la trazabilidad estructural del proceso, si bien se reconoce la conveniencia pedagógica de una cadencia temporal más distribuida.
+    \item Todo secreto compartido involuntariamente en canales de comunicación debe ser rotado como buena práctica de seguridad.
 \end{itemize}

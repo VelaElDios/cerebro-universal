@@ -52,28 +52,28 @@ Para sustentar las distintas dimensiones del proyecto se seleccionó un conjunto
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{L{3cm} L{3.2cm} L{7.2cm}}
+\begin{tabular}{@{}L{2.4cm} L{2.8cm} L{7.2cm}@{}}
 \toprule
-\textbf{Categoría} & \textbf{Herramienta / Tecnología} & \textbf{Propósito en el proyecto} \\
+\textbf{Categoría} & \textbf{Herramienta} & \textbf{Propósito en el proyecto} \\
 \midrule
 \multirow{2}{*}{\textbf{Gestión ágil}} 
-    & DoneTonic & Gestión del backlog, asignación de PBIs y tareas en tablero Kanban, y seguimiento del burndown del sprint \cite{scrumguide}. \\
-    & GitHub Projects / PRs & Trazabilidad de cambios, control de ramas protegidas y revisión colaborativa de código \cite{githubflow}. \\
+    & DoneTonic & Gestión de backlog, PBIs y tareas en tablero Kanban y burndown \cite{scrumguide}. \\
+    & GitHub Projects & Control de ramas protegidas y revisión en pull requests \cite{githubflow}. \\
 \midrule
 \multirow{4}{*}{\textbf{Desarrollo}} 
-    & Node.js 22 & Entorno de ejecución en servidor para unificar JavaScript en backend y frontend \cite{nodejs}. \\
-    & Express 5 & Framework web minimalista para articular la capa API y gestionar errores asíncronos \cite{express}. \\
-    & PostgreSQL (Neon) & Sistema gestor de bases de datos relacional serverless con capa gratuita en nube \cite{postgresql,neonlimits}. \\
+    & Node.js 22 & Entorno de ejecución para unificar JavaScript en cliente y servidor \cite{nodejs}. \\
+    & Express 5 & Framework web minimalista con gestión nativa de errores asíncronos \cite{express}. \\
+    & PostgreSQL (Neon) & Base de datos relacional serverless con capa gratuita en la nube \cite{postgresql,neonlimits}. \\
     & Playwright & Automatización de navegador para generar capturas de interfaz homogéneas. \\
 \midrule
 \multirow{3}{*}{\textbf{Despliegue y CI/CD}} 
-    & GitHub Actions & Automatización del pipeline de pruebas continuas, construcción Docker y entrega \cite{githubactions}. \\
-    & Google Cloud Run & Plataforma PaaS de contenedores con autoescalado para el despliegue principal \cite{cloudrun}. \\
-    & Render & Plataforma en la nube utilizada como proveedor alternativo de despliegue continuo. \\
+    & GitHub Actions & Pipeline de pruebas automáticas, empaquetado Docker y entrega \cite{githubactions}. \\
+    & Google Cloud Run & Plataforma PaaS de contenedores serverless para el despliegue principal \cite{cloudrun}. \\
+    & Render & Plataforma PaaS alternativa configurada con \texttt{render.yaml}. \\
 \midrule
-\multirow{2}{*}{\textbf{Documentación y soporte}} 
-    & LuaLaTeX & Motor tipográfico para la composición y maquetación de la memoria técnica del proyecto. \\
-    & Claude (Cowork) & Asistente inteligente utilizado en la preparación de código, artefactos y documentación técnica. \\
+\multirow{2}{*}{\textbf{Documentación}} 
+    & LuaLaTeX & Motor tipográfico para la maquetación de la memoria técnica. \\
+    & Claude (Cowork) & Asistente inteligente para la generación de código, pruebas y documentación. \\
 \bottomrule
 \end{tabular}
 \caption{Clasificación de herramientas empleadas en el proyecto.}
