@@ -1,16 +1,83 @@
 \chapter{Propuesta de Solución, Metodología y Herramientas}
 \label{cap:propuesta}
 
-% Guía de la plantilla:
-% - Propuesta de solución: explicar la idea ANTES de su desarrollo, sin detalles técnicos.
-% - Metodología: qué proceso se sigue y por qué (Scrum, GitHub Flow...). Puede incluir la planificación inicial.
-% - Herramientas: gestión del proyecto, desarrollo y documentación.
-
 \section{Propuesta de solución}
-\lipsum[1]
+
+La propuesta de solución responde a la necesidad de construir una base sólida para una plataforma SaaS comunitaria con capacidad de ampliación futura. Antes de abordar las particularidades de implementación o la elección concreta de librerías, la solución se concibe como un sistema distribuido estructurado bajo el principio de separación de responsabilidades en tres capas fundamentales: una capa de interfaz de usuario con navegación ligera, una capa intermedia que encapsula las reglas de negocio y políticas de autorización, y una capa de persistencia encargada de conservar el estado del sistema.
+
+En el plano funcional, la solución propone un mecanismo de autenticación en el que los usuarios pueden registrarse y acceder al servicio de forma segura, garantizando la preservación de la sesión durante su navegación mediante identificadores almacenados en el servidor. Asimismo, se plantea un modelo de autorización diferenciado que distinga a los usuarios estándar de aquellos con privilegios administrativos. Los administradores disponen de visibilidad global sobre las cuentas existentes y ostentan la capacidad de revocar accesos, mientras que los usuarios conservan el control para solicitar su propia baja del sistema. Para asegurar una experiencia coherente, la solución postula que ninguna decisión de seguridad ni comprobación de permisos dependa exclusivamente de la interfaz del cliente: cualquier petición debe ser rigurosamente validada en el servidor antes de modificar el estado persistente.
 
 \section{Metodología}
-\lipsum[2]
+
+Para articular el desarrollo y garantizar la transparencia del progreso, se adoptó el marco de trabajo ágil Scrum \cite{scrumguide}, adaptado a las condiciones de un proyecto individual de ingeniería del software.
+
+\subsection{Gestión con Scrum en DoneTonic}
+
+La planificación y seguimiento del proyecto se centralizaron en la plataforma DoneTonic, dentro del espacio de trabajo \textit{TFG} y el proyecto \textit{Colchoneros}. El ciclo de trabajo corresponde al denominado \textbf{Sprint 1}, planificado entre el 29/09/2026 y el 27/10/2026.
+
+A partir del análisis detallado del enunciado de la asignatura \cite{enunciado}, se elaboró un \textit{Product Backlog} compuesto por 19 elementos de la lista de producto (PBIs, numerados de P1 a P19), desglosados en un total de 32 tareas técnicas (T1 a T32). Puesto que todos los requisitos recogidos en el enunciado poseen carácter prescriptivo para la evaluación del software, la totalidad de los PBIs se catalogó con prioridad obligatoria (\textit{MUST}).
+
+Para velar por la integridad técnica del producto se definió una estricta Definición de Hecho (\textit{Definition of Done}, DoD). Se consideró que una tarea técnica estaba completada exclusivamente cuando satisfacía los siguientes cuatro criterios concurrentes:
+\begin{enumerate}
+    \item El código fuente reside en su rama de trabajo específica y se vincula formalmente a un pull request que referencia la tarea.
+    \item Todas las pruebas automatizadas superan satisfactoriamente la validación en el entorno de integración continua (verificación del check \textit{Pruebas}).
+    \item El pull request correspondiente ha sido revisado y fusionado en la rama de integración del hito.
+    \item La documentación de soporte (como guías de despliegue o ficheros de configuración de ejemplo) ha sido actualizada coherentemente si la tarea lo requería.
+\end{enumerate}
+
+Por su parte, un hito del sprint se considera completado cuando su rama integradora se ha fusionado en la rama principal, el software se encuentra desplegado de forma operativa en la nube y se ha emitido la correspondiente etiqueta de versión (\textit{release}).
+
+\subsection{Flujo de versiones: GitHub Flow adaptado}
+
+El desarrollo colaborativo y la gestión del código fuente siguieron las directrices de GitHub Flow \cite{githubflow}, estructuradas de forma jerárquica para reflejar los hitos pedagógicos:
+\begin{itemize}
+    \item \textbf{Rama principal (\texttt{main}):} Representa en todo momento el código estable y listo para producción. Se encuentra protegida en GitHub, imposibilitando modificaciones directas y exigiendo obligatoriamente la resolución favorable del pipeline de integración continua.
+    \item \textbf{Ramas de integración de hito (\texttt{hito-N/integracion}):} Actúan como puntos de convergencia para el conjunto de tareas pertenecientes a un mismo bloque temático semanal antes de su incorporación definitiva a la rama principal.
+    \item \textbf{Ramas de tarea (\texttt{hito-N/Tx-descripcion}):} Creadas a partir de la rama de integración correspondiente para acometer de forma aislada una única tarea del backlog.
+\end{itemize}
+
+El ciclo operativo de cada cambio se rigió por las normas estipuladas en la guía de contribución del repositorio:
+\begin{enumerate}
+    \item Selección de la tarea \texttt{Tx} en el tablero de DoneTonic y creación de la rama técnica asociada.
+    \item Generación de commits con mensajes descriptivos en tiempo imperativo y prefijo identificativo (por ejemplo, \texttt{[Tx] Descripción del cambio}).
+    \item Ejecución local de la batería de pruebas unitarias y de integración (\texttt{npm test}) previo a la publicación de cambios.
+    \item Apertura de un pull request hacia la rama de integración del hito y verificación del paso exitoso del CI en GitHub Actions.
+    \item Fusión del pull request y transición automática de la tarea a estado \textit{HECHO} en el tablero ágil.
+\end{enumerate}
 
 \section{Herramientas}
-\lipsum[3]
+
+Para sustentar las distintas dimensiones del proyecto se seleccionó un conjunto de herramientas y tecnologías de acuerdo con los requisitos técnicos exigidos en la asignatura. La Tabla \ref{tab:herramientas} sintetiza las herramientas empleadas, estructuradas según su ámbito de aplicación en el ciclo de vida del software.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{L{3cm} L{3.2cm} L{7.2cm}}
+\toprule
+\textbf{Categoría} & \textbf{Herramienta / Tecnología} & \textbf{Propósito en el proyecto} \\
+\midrule
+\multirow{2}{*}{\textbf{Gestión ágil}} 
+    & DoneTonic & Gestión del backlog, asignación de PBIs y tareas en tablero Kanban, y seguimiento del burndown del sprint \cite{scrumguide}. \\
+    & GitHub Projects / PRs & Trazabilidad de cambios, control de ramas protegidas y revisión colaborativa de código \cite{githubflow}. \\
+\midrule
+\multirow{4}{*}{\textbf{Desarrollo}} 
+    & Node.js 22 & Entorno de ejecución en servidor para unificar JavaScript en backend y frontend \cite{nodejs}. \\
+    & Express 5 & Framework web minimalista para articular la capa API y gestionar errores asíncronos \cite{express}. \\
+    & PostgreSQL (Neon) & Sistema gestor de bases de datos relacional serverless con capa gratuita en nube \cite{postgresql,neonlimits}. \\
+    & Playwright & Automatización de navegador para generar capturas de interfaz homogéneas. \\
+\midrule
+\multirow{3}{*}{\textbf{Despliegue y CI/CD}} 
+    & GitHub Actions & Automatización del pipeline de pruebas continuas, construcción Docker y entrega \cite{githubactions}. \\
+    & Google Cloud Run & Plataforma PaaS de contenedores con autoescalado para el despliegue principal \cite{cloudrun}. \\
+    & Render & Plataforma en la nube utilizada como proveedor alternativo de despliegue continuo. \\
+\midrule
+\multirow{2}{*}{\textbf{Documentación y soporte}} 
+    & LuaLaTeX & Motor tipográfico para la composición y maquetación de la memoria técnica del proyecto. \\
+    & Claude (Cowork) & Asistente inteligente utilizado en la preparación de código, artefactos y documentación técnica. \\
+\bottomrule
+\end{tabular}
+\caption{Clasificación de herramientas empleadas en el proyecto.}
+\label{tab:herramientas}
+\end{table}
+
+La combinación de estas herramientas permitió orquestar un entorno homogéneo y plenamente automatizado, reduciendo al mínimo las dependencias manuales y proporcionando trazabilidad absoluta desde la definición de requisitos hasta la verificación del despliegue en producción.
