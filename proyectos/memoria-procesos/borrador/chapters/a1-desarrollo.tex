@@ -9,7 +9,7 @@
 El Sprint 1 se planificó del 29/09/2026 al 27/10/2026 con el objetivo de entregar la base de una aplicación SaaS con gestión de usuarios, arquitectura en capas, proceso Scrum en DoneTonic, flujo GitHub Flow, integración y despliegue continuos (CI/CD) en Google Cloud Run y Render, y una batería de pruebas automatizadas. El alcance formal, según directriz docente, se limitó a los Hitos 1, 2 y 3 del enunciado \cite{enunciado}.
 
 \subsubsection{Sprint Backlog}
-El Product Backlog inicial contenía 15 PBIs (P1–P14, P18) correspondientes a los Hitos 1–3. Durante el sprint se añadió el PBI P19 (despliegue en Google Cloud Run) tras la concesión de créditos educativos de Google Cloud, elevando el total a 16 PBIs en el alcance de la entrega. La Tabla \ref{tab:sprint-backlog} muestra el sprint backlog con sus hitos y estado final.
+El Product Backlog inicial contenía 15 PBIs (P1–P14, P18) correspondientes los Hitos 1–3. Durante el sprint se añadió el PBI P19 (despliegue en Google Cloud Run) tras la concesión de créditos educativos de Google Cloud, elevando el total a 16 PBIs en el alcance de la entrega. La Tabla \ref{tab:sprint-backlog} muestra el sprint backlog con sus hitos y estado final.
 
 \begin{table}[htbp]
 \centering
@@ -48,7 +48,7 @@ Cada PBI se desglosó en 1–2 tareas técnicas (T1–T32), cada una con su rama
 
 {\small
 \begin{longtable}{@{}L{0.7cm} L{1.0cm} L{5.5cm} L{3.5cm} L{2.5cm}@{}}
-\caption{Trazabilidad tarea → PR (PBIs hechos: P1–P14, P18, P19; 26 tareas).}\label{tab:trazabilidad}\\
+\caption{Trazabilidad tarea → PR de los PBIs hechos (P1–P14, P18 y P19; 26 tareas).}\label{tab:trazabilidad}\\
 \toprule
 \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\ \midrule \endfirsthead
 \toprule
@@ -193,7 +193,7 @@ Al cierre del Sprint 1 (12/10/2026, commit \texttt{978098e}, PR \#32) se entrega
 \begin{itemize}
     \item Cuatro releases publicadas en GitHub: \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3} y \texttt{sprint-1}.
     \item Servicio web desplegado y plenamente operativo en Google Cloud Run y Render, según se referencia en el Anexo \ref{anx:material}.
-    \item Batería de 80 pruebas automatizadas validadas en el CI contra PostgreSQL 17.
+    \item Batería de 80 pruebas automatizadas validadas al CI contra PostgreSQL 17.
     \item 16 PBIs completados correspondientes al alcance de la entrega (3 PBIs pospuestos a Hito 4).
     \item 65 commits en la rama principal (33 de trabajo y 32 de integración de PRs) y 71 ejecuciones de GitHub Actions.
     \item Consumo en el plan gratuito de Neon a fecha 12/10/2026: 0,27 CU-h de cómputo (límite 100 CU-h), 0,03 GB de almacenamiento (límite 1 GB) y 0 GB de transferencia sobre 5 GB \cite{neonlimits}.
