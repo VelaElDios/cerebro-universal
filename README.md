@@ -45,6 +45,7 @@ proyectos/_plantilla/   punto de partida para un proyecto nuevo (nunca se ejecut
 | `necesita` | Entornos de `config/entornos.json` a instalar. También se pueden pedir paquetes sueltos con `apt` y `pip`. |
 | `comando_prueba` | Lo que se ejecuta dentro de `borrador/` para comprobar el paso (0 = bien). |
 | `fuentes` | Opcional. Archivos de la carpeta del proyecto (fuera de `borrador/`) que se pasan a las IAs como única verdad: datos, guías, documentación. |
+| `protegidos` | Opcional. Patrones de archivos de `borrador/` que las IAs no pueden escribir ni borrar (plantilla, imágenes...), p. ej. `figs/*`. |
 | `reintentar_si` | Opcional. Expresión regular: si la prueba falla, el constructor solo reintenta cuando el fallo la cumple (p. ej. un error de compilación). Útil cuando la prueba falla durante muchos pasos porque falta trabajo. |
 | `archivo_principal` | Opcional. Si no existe todavía, la prueba falla sin ejecutarse. |
 | `pasos` / `max_pasos` | Freno: al llegar al máximo el proyecto se pausa. |

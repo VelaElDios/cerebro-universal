@@ -11,6 +11,7 @@ contenido completo
 <<<FIN>>>
 """
 
+import fnmatch
 import re
 import shutil
 from datetime import datetime
@@ -114,9 +115,22 @@ def ruta_segura(base: Path, relativa: str, estricta: bool = True) -> Path:
     return destino
 
 
-def aplicar(base: Path, archivos: dict[str, str], borrar: list[str], maximo: int) -> list[str]:
+def protegido(relativa: str, protegidos: list[str]) -> bool:
+    """True si la ruta coincide con algún patrón de "protegidos" (p. ej. "figs/*")."""
+    r = relativa.strip().replace("\\", "/").lstrip("./")
+    return any(fnmatch.fnmatch(r, patron) for patron in protegidos)
+
+
+def aplicar(base: Path, archivos: dict[str, str], borrar: list[str], maximo: int,
+            protegidos: list[str] = ()) -> list[str]:
+    """Escribe y borra los archivos que pide una IA. Los "protegidos" del proyecto no se tocan:
+    se apunta en la lista de cambios para que salga en la bitácora."""
     cambiados = []
     for relativa, contenido in list(archivos.items())[:maximo]:
+        if protegido(relativa, protegidos):
+            print(f"  Ignorado (protegido): {relativa}")
+            cambiados.append(f"(protegido, no se escribió) {relativa}")
+            continue
         try:
             destino = ruta_segura(base, relativa)
         except ValueError as e:
@@ -126,6 +140,9 @@ def aplicar(base: Path, archivos: dict[str, str], borrar: list[str], maximo: int
         destino.write_text(contenido, encoding="utf-8")
         cambiados.append(relativa)
     for relativa in borrar:
+        if protegido(relativa, protegidos):
+            cambiados.append(f"(protegido, no se borró) {relativa}")
+            continue
         try:
             destino = ruta_segura(base, relativa, estricta=False)
         except ValueError as e:

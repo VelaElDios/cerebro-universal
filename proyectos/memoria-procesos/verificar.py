@@ -143,8 +143,12 @@ def comprobar_log():
         fallo("La bibliografía sale vacía: hay que citar las referencias con \\cite en el texto")
     for m in re.finditer(r"Overfull \\hbox \(([\d.]+)pt too wide\) (.*)", log):
         if float(m.group(1)) > OVERFULL_MAX_PT:
-            fallo(f"Memoria.log: algo se sale {float(m.group(1)):.0f} pt del margen ({m.group(2).strip()[:80]}); "
-                  "estrecha la tabla o la imagen")
+            # El archivo es el último «(./ruta.tex» abierto antes del aviso; las 2 líneas siguientes dicen qué se sale
+            archivo = (re.findall(r"\(\./([^\s()]+\.tex)", log[:m.start()]) or ["?"])[-1]
+            texto = " ".join(log[m.end():].strip().splitlines()[:2])[:120]
+            fallo(f"{archivo}: algo se sale {float(m.group(1)):.0f} pt del margen ({m.group(2).strip()[:40]}): «{texto}». "
+                  "Si es una tabla o imagen, estréchala; si es texto con una cita o una ruta larga que no se parte, "
+                  "revisa las lecciones de la memoria")
 
 
 # ---------- 4. Bibliografía ----------

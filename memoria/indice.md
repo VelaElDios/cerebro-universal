@@ -12,7 +12,7 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 Ninguna.
 
-## Todas (21)
+## Todas (22)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
 - [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
@@ -33,5 +33,6 @@ Ninguna.
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]]
 - [[tablas-largas-longtable-no-table|Tablas largas: longtable, no table]]
 - [[un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p|Un revisor que dice «verificado» sin mostrar la operación no prueba nada]]
+- [[una-cita-con-autor-largo-se-sale-del-margen-breakcites|Una cita con autor largo se sale del margen: breakcites]]
 - [[una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp|Una función llamada desde \directlua debe imprimir con tex.sprint, no con return]]
 - [[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Cada cifra de un documento sale de las fuentes, también las pequeñas]]

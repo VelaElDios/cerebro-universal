@@ -705,3 +705,34 @@ Corrijo los tres archivos: aumento `text width` del nodo CI a 7.5cm y uso `\url{
 - Verificar que no quedan advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
 - Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
 - Asegurar que los mínimos de palabras por capítulo/anexo se cumplen
+
+## 2026-10-13 · Revisión humana (Javier)
+
+Claude ha compilado el borrador. De la revisión anterior está todo hecho salvo esto:
+
+1. **El desborde de 70 pt NO es el TikZ ni la longtable.** Es el texto de `chapters/03-propuesta.tex`,
+   línea 18: `\cite{enunciado}` sale como «[Universidad de Castilla-La Mancha, 2026]» y LaTeX mete cada
+   cita en una caja que no se puede partir, así que se sale del margen. Arreglo (probado: con esto
+   `verificar.py` pasa): añadir al final de `include/extra.tex`
+   `\usepackage{breakcites}` (con un comentario que diga para qué es). No cambiar nada más por esto.
+   `verificar.py` ahora dice en qué archivo está cada desborde y qué texto se sale.
+2. **`Memoria.tex` e `include/portada.tex`.** El constructor cambió `Memoria.tex` para usar una copia
+   nueva de la portada en `include/portada.tex`, y la spec decía que `Memoria.tex` no se toca. Claude ha
+   devuelto `Memoria.tex` a su versión (`\input{elements/portada}`). Hay que borrar la copia:
+   `<<<BORRAR include/portada.tex>>>`. Desde ahora hay archivos **protegidos** (`protegidos` en
+   `proyecto.json`): `Memoria.tex`, `latexmkrc`, `include/configuracion.tex`, `include/colores.tex`,
+   `elements/portada.tex` y `figs/*`. Si una IA intenta escribirlos, se ignora y sale en la bitácora.
+3. **Figura del pipeline (`fig:pipeline-cicd`, `03-propuesta.tex`):**
+   - La flecha «no» vuelve al nodo CI y lo atraviesa. Además no es lo que dice la guía (§5.2): si no es un
+     push a `main` o el CI no está en verde, **simplemente no se despliega**. Que «no» lleve a un nodo a la
+     izquierda del rombo, «No se despliega», sin volver al CI.
+   - En el nodo CI, `\url{.github/workflows/ci.yml}` dibuja un recuadro rojo que se sale del nodo: usar
+     `\texttt{.github/workflows/ci.yml}`.
+4. **Tabla de herramientas (`tab:herramientas`):** «GitHub Projects» y «tablero Kanban» **no están en las
+   fuentes**. Según la guía §6, GitHub se usó para el repositorio público, ramas protegidas, pull requests y
+   releases, y DoneTonic para el backlog, el sprint, el tablero de tareas y las gráficas. Cambiar esas filas
+   para que digan solo eso.
+5. **Caption de `tab:trazabilidad`:** dice «32 tareas» pero la tabla tiene 26 (las de los PBIs hechos).
+   Que diga «tareas de los PBIs hechos (P1–P14, P18 y P19)», sin el 32.
+
+El revisor tiene que comprobar estos 5 puntos uno a uno en COMPROBACIONES.

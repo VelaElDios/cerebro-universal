@@ -141,6 +141,11 @@ def dejar_de_seguir_ignorados(carpeta: Path):
         print(f"No pude limpiar archivos ignorados: {e}")
 
 
+def reales(cambios: list[str]) -> list[str]:
+    """Cambios de verdad (sin los intentos de tocar archivos protegidos)."""
+    return [c for c in cambios if not c.startswith("(protegido")]
+
+
 def leer_fuentes(carpeta: Path, cfg: dict) -> str:
     """Archivos de solo lectura que el proyecto pasa a las IAs ("fuentes" en proyecto.json):
     datos, guías, documentación... Están fuera de borrador/, así que las IAs no pueden cambiarlos."""
@@ -291,6 +296,8 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     config = {**config, "roles": {**config.get("roles", {}), **cfg.get("roles", {})}}
     temas = cfg.get("temas", [])
     nombre = carpeta.name
+    # Archivos que las IAs no pueden escribir ni borrar (plantilla, imágenes...): "protegidos" en proyecto.json
+    protegidos = cfg.get("protegidos", [])
     fuentes = leer_fuentes(carpeta, cfg)
     bloque_fuentes = (f"\n# FUENTES DEL PROYECTO (solo lectura: son la única verdad sobre los datos)\n{fuentes}\n"
                       if fuentes else "")
@@ -300,7 +307,7 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     reciente = nucleo.bitacora_reciente(bitacora)
     mensaje = f"""# SPEC DEL PROYECTO
 {spec}
-{bloque_fuentes}
+{bloque_fuentes}{chr(10) + "# ARCHIVOS PROTEGIDOS (no los escribas ni los borres: se ignoran)" + chr(10) + ", ".join(protegidos) + chr(10) if protegidos else ""}
 # LECCIONES DE LA MEMORIA (errores ya resueltos: no los repitas)
 {memoria.seleccionar(temas, prueba_antes + reciente[-3000:])}
 
@@ -319,7 +326,7 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     except (RuntimeError, prov.TiempoAgotado) as e:
         raise SinConstructor(str(e))
     paso = nucleo.parsear(texto)
-    cambios = nucleo.aplicar(borrador, paso["archivos"], paso["borrar"], maximo)
+    cambios = nucleo.aplicar(borrador, paso["archivos"], paso["borrar"], maximo, protegidos)
     s = paso["secciones"]
     print(f"Constructor: {len(cambios)} cambios")
 
@@ -373,8 +380,8 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
             intentos.append(f"intento {n}: no hay IA disponible a tiempo ({e})")
             break
         arreglo = nucleo.parsear(texto)
-        nuevos = nucleo.aplicar(borrador, arreglo["archivos"], arreglo["borrar"], maximo)
-        if not nuevos:
+        nuevos = nucleo.aplicar(borrador, arreglo["archivos"], arreglo["borrar"], maximo, protegidos)
+        if not reales(nuevos):
             intentos.append(f"intento {n}: el constructor no cambió ningún archivo")
             break
         cambios += [c for c in nuevos if c not in cambios]
@@ -426,8 +433,8 @@ Intentos de compilar/probar en este paso:
         print(e)
         return
     revision = nucleo.parsear(texto)
-    correcciones = nucleo.aplicar(borrador, revision["archivos"], revision["borrar"], maximo)
-    if correcciones:
+    correcciones = nucleo.aplicar(borrador, revision["archivos"], revision["borrar"], maximo, protegidos)
+    if reales(correcciones):
         ok, prueba = probar(cfg, borrador)
         print(f"Prueba tras correcciones: {'OK' if ok else 'FALLA'}")
 
@@ -449,7 +456,7 @@ Intentos de compilar/probar en este paso:
         veredicto = f"cambios (había dicho: {veredicto}, pero la prueba falla)"
 
     # ---------- 4. PROMOCIÓN A FINAL ----------
-    promocionado = ok and (veredicto.startswith("aprobado") or bool(correcciones))
+    promocionado = ok and (veredicto.startswith("aprobado") or bool(reales(correcciones)))
     if promocionado:
         nucleo.promocionar(borrador, final)
 
@@ -472,7 +479,7 @@ Intentos de compilar/probar en este paso:
     patron = cfg.get("reintentar_si")
     arreglado = bool(patron) and not re.search(patron, prueba, flags=re.M) and any(
         re.search(patron, x, flags=re.M) for x in [prueba_antes, *pruebas_del_paso])
-    if (ok and (hubo_fallo or correcciones) or arreglado) and r.get("LECCION", "").strip():
+    if (ok and (hubo_fallo or reales(correcciones)) or arreglado) and r.get("LECCION", "").strip():
         guardada = memoria.guardar_propuesta(r["LECCION"], nombre)
         if guardada:
             nucleo.anotar(bitacora, "🧠 Lección propuesta para la memoria",
