@@ -36,7 +36,7 @@
 
 \begin{textblock*}{\textwidth}(3cm,8cm) 
 \begin{center}\doublespacing 
-{\fontsize{18pt}{4pt}\selectfont \bft{TRABAJO FIN DE GRADO}}
+{\fontsize{18pt}{4pt}\selectfont \bft{TRABAJO DE PROCESOS DE INGENIERÍA DEL SOFTWARE}}
 
 \medskip
 {\fontsize{18pt}{4pt}\selectfont Grado en Ingeniería Informática}
@@ -73,20 +73,6 @@
 
 
 % -------------------------------
-% Dedicatoria
-% -------------------------------
-\cleardoublepage
-\thispagestyle{empty}
-
-\vspace*{9cm}  
-\begin{flushright} \em 
-Aquí va la dedicatoria que cada cual \\ 
-quiera escribir. El ancho se controla \\ 
-manualmente
-\end{flushright}
-
-
-% -------------------------------
 % Declaración de autoría
 % -------------------------------
 \cleardoublepage
@@ -96,11 +82,11 @@ manualmente
 \end{center}
 \vskip1cm
 
-Yo, \quad \ldots \quad, con DNI \quad \ldots \quad, declaro que soy el único autor del trabajo fin de grado titulado ``\quad \ldots \quad'', que el citado trabajo no infringe las leyes en vigor sobre propiedad intelectual, y que todo el material no original contenido en dicho trabajo está apropiadamente atribuido a sus legítimos autores.
+Yo, \autor declaro que soy el autor del trabajo titulado ``\titulo'', que el citado trabajo no infringe las leyes en vigor sobre propiedad intelectual, y que todo el material no original contenido en dicho trabajo está apropiadamente atribuido a sus legítimos autores, detallándose asimismo el uso responsable de la inteligencia artificial en el Anexo C (\ref{anx:ia}).
 
 \vspace*{2cm}
 \begin{center}
-Albacete, a \quad \ldots \quad de \quad \ldots \quad de 20 \ldots
+Albacete, \fecha
 
 \vskip3cm
 
@@ -118,16 +104,7 @@ Fdo.: \autor
 \end{center}
 \vskip1cm
 
-\lipsum[1]
+Esta memoria describe el diseño, la implementación y el proceso de desarrollo del Sprint 1 del proyecto La Grada Colchonera, una aplicación SaaS organizada en capas con gestión de usuarios, desarrollada como parte de la asignatura Procesos de Ingeniería del Software. El trabajo abarca desde la estructuración inicial de un servidor Express con Node.js y una base de datos relacional en PostgreSQL hasta el establecimiento de un flujo de trabajo riguroso basado en Scrum mediante DoneTonic, control de versiones con GitHub Flow, integración continua y despliegue automático en la nube a través de Google Cloud Run. Se detallan exhaustivamente la arquitectura en capas del sistema, el modelo de datos, la gestión segura de sesiones y contraseñas mediante hash, así como la evaluación de la calidad mediante pruebas automatizadas y la revisión de requisitos funcionales y no funcionales.
 
-% -------------------------------
-% Agradecimientos
-% -------------------------------
-\cleardoublepage
-\thispagestyle{plain}
-\begin{center}
-\Large{\bft{Agradecimientos}}
-\end{center}
-\vskip1cm
-
-\lipsum[1]
+\medskip
+\noindent\textbf{Palabras clave:} SaaS, Scrum, GitHub Flow, Node.js, PostgreSQL, Google Cloud Run, Ingeniería del Software.
