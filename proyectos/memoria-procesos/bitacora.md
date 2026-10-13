@@ -479,3 +479,42 @@ los puntos 2, 3, 4 y 5, así que la prueba vuelve a fallar hasta que estén hech
    `\setlength{\headheight}{15pt}` en `include/extra.tex`.
 
 Al terminar, el revisor tiene que comprobar estos 6 puntos uno a uno en COMPROBACIONES.
+
+## 2026-10-13 13:12 · Constructor (gemini · gemini-flash-latest)
+
+Se corrigen las entradas bibliográficas en `bib/ref.bib` (autores corporativos con doble llave y campo `year` en todas las referencias), se incorpora `longtable` y el ajuste de `\headheight` a 15pt en `include/extra.tex`, y se retira el espaciado fino final de `\titulo` en `include/opciones.tex`.
+
+**Archivos:** `bib/ref.bib`, `include/extra.tex`, `include/opciones.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 4 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Siguiente:** Modificar `elements/preambulo.tex`, `chapters/03-propuesta.tex` y `chapters/a1-desarrollo.tex` para actualizar la declaración de autoría, incluir el diagrama TikZ del pipeline de CI/CD, añadir las capturas de DoneTonic y convertir la tabla de trazabilidad a longtable corrigiendo las cifras de PBIs.
+
+## 2026-10-13 13:17 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test automático: falla con 4 errores (tabla desbordada 145pt, margen 70pt, faltan 3 diagramas TikZ, falta captura DoneTonic)
+- PBI count en a1-desarrollo.tex: dice «16 PBIs iniciales (P1–P14, P18) → 17 con P19»; fuentes (gestion.md tabla Evolución) dicen 15 al inicio y 16 al cierre → ERROR confirmado
+- Trazabilidad (tab:trazabilidad): 32 filas en table normal → log «Float too large 145pt» → requiere longtable
+- Figuras TikZ mínimas: arquitectura (04-descripcion fig:arquitectura ✓), burndown (a1-desarrollo fig:burndown ✓), **falta pipeline CI/CD o flujo ramas** → ERROR confirmado
+- Capturas DoneTonic: 0 en documento; fuentes (figuras.md) listan 3 disponibles → ERROR confirmado
+- Bibliografía: builder corrigió autores corporativos con doble llave y year=s.f. → OK (ver bib/ref.bib)
+- include/extra.tex: builder añadió longtable, headheight=15pt, xurl, emergencystretch → OK
+- include/opciones.tex: builder quitó \, final de \titulo → OK
+- elements/preambulo.tex: «Yo, \autor declaro» (falta coma), «Anexo C (\ref{anx:ia})» sale «Anexo C (C)» → ERROR confirmado
+- Resumen: ≥120 palabras + palabras clave → OK
+- Capítulos y anexos: estructura según spec → OK salvo correcciones arriba
+
+El builder resolvió bien la bibliografía, headheight, URLs y el espacio final del título. Quedan 4 fallos del test + 2 detalles del preámbulo + 1 dato erróneo en a1-desarrollo. Los problemas críticos son: (1) tabla de trazabilidad que no cabe → longtable; (2) cifra de PBIs incorrecta (15/16 no 16/17); (3) falta diagrama TikZ del pipeline CI/CD (guía §5.2); (4) falta al menos una captura de DoneTonic (figuras.md tiene 3); (5) declaración de autoría sin coma y referencia al anexo mal formateada. Corrijo yo los 3 archivos más urgentes; el builder hará el resto.
+
+**Correcciones del revisor:** `chapters/a1-desarrollo.tex`, `chapters/03-propuesta.tex`, `elements/preambulo.tex`
+
+**Tareas para el constructor:**
+- Verificar que `verificar.py` pasa tras compilar con los 3 archivos corregidos
+- Revisar que no queden advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
+- Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
+- Asegurar que los mínimos de palabras por capítulo/anexo se cumplen

@@ -27,6 +27,15 @@ Para velar por la integridad técnica del producto se definió una estricta Defi
 
 Por su parte, un hito del sprint se considera completado cuando su rama integradora se ha fusionado en la rama principal, el software se encuentra desplegado de forma operativa en la nube y se ha emitido la correspondiente etiqueta de versión (\textit{release}).
 
+La Figura \ref{fig:donetonic-tablero} muestra el tablero del Sprint 1 en DoneTonic al cierre de la entrega, con los PBIs de los Hitos 1–3, P18 y P19 en verde (hechos) y los tres PBIs del Hito 4 pendientes para la siguiente entrega.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/donetonic-01-tablero-sprint.png}
+\caption{Tablero del Sprint 1 en DoneTonic: cada fila es un PBI con sus tareas por columnas de estado; los PBIs en verde están hechos.}
+\label{fig:donetonic-tablero}
+\end{figure}
+
 \subsection{Flujo de versiones: GitHub Flow adaptado}
 
 El desarrollo colaborativo y la gestión del código fuente siguieron las directrices de GitHub Flow \cite{githubflow}, estructuradas de forma jerárquica para reflejar los hitos pedagógicos:
@@ -44,6 +53,35 @@ El ciclo operativo de cada cambio se rigió por las normas estipuladas en la gu�
     \item Apertura de un pull request hacia la rama de integración del hito y verificación del paso exitoso del CI en GitHub Actions.
     \item Fusión del pull request y transición automática de la tarea a estado \textit{HECHO} en el tablero ágil.
 \end{enumerate}
+
+\subsection{Pipeline de CI/CD}
+
+El pipeline de integración y despliegue continuo, implementado con GitHub Actions, se describe en la Figura \ref{fig:pipeline-cicd}. El flujo ejecuta las pruebas contra PostgreSQL 17 real, construye la imagen Docker y, solo en \texttt{main} con CI en verde, despliega automáticamente en Google Cloud Run mediante Workload Identity Federation.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=1.2cm, font=\small},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=3cm, align=center, font=\small},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
+]
+    \node[node] (push) {push / pull\_request};
+    \node[node, below=1.2cm of push] (ci) {CI (\texttt{.github/workflows/ci.yml})\\Job \textit{Pruebas}: PostgreSQL 17 + \texttt{npm test}\\Job \textit{Imagen Docker}: build + \texttt{curl /api/health}};
+    \node[decision, below=1.5cm of ci] (dec) {¿push a \texttt{main} y CI en verde?};
+    \node[node, below=1.5cm of dec] (deploy) {Despliegue Cloud Run (\texttt{deploy-cloud-run.yml})\\1. checkout commit probado\\2. auth Google (WIF)\\3. docker build + push Artifact Registry\\4. \texttt{gcloud run deploy} (0–2 inst., 512 MiB)\\5. smoke test: 20 intentos \texttt{/api/health}};
+    \node[node, right=3cm of deploy] (render) {Render (paralelo)\\despliega \texttt{main} según \texttt{render.yaml}};
+    \node[node, below=1.2cm of deploy] (done) {Producción operativa\\URL pública + logs JSON};
+
+    \draw[arrow] (push) -- (ci);
+    \draw[arrow] (ci) -- (dec);
+    \draw[arrow] (dec) -- node[left, font=\footnotesize] {sí} (deploy);
+    \draw[arrow] (deploy) -- (done);
+    \draw[arrow] (dec) -| node[above, font=\footnotesize] {no} ++(-2,0) |- (ci);
+    \draw[arrow] (deploy) -- (render);
+\end{tikzpicture}
+\caption{Pipeline de CI/CD: push/PR → CI (Pruebas + Imagen Docker) → si main y verde → Despliegue Cloud Run (5 pasos) + Render en paralelo.}
+\label{fig:pipeline-cicd}
+\end{figure}
 
 \section{Herramientas}
 
