@@ -654,3 +654,54 @@ Corrijo los tres archivos: aumento `text width` del nodo CI a 6.5cm y uso `\seqs
 - Verificar que no quedan advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
 - Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
 - Asegurar que los mínimos de palabras por capítulo/anexo se cumplen
+
+## 2026-10-13 17:32 · Constructor (gemini · gemini-flash-latest)
+
+Vamos a compilar la memoria con LuaLaTeX para localizar el error "Overfull hbox de 70 pt" detectado por verificar.py, identificado en Memoria.log líneas 18-19, y corregirlo según las indicaciones del revisor (reducir anchos de columna en la longtable, usar \small, o ajustar TikZ).
+
+**Archivos:** `Memoria.tex`
+
+**Intentos:**
+- intento 1: ❌ ! LaTeX Error: File `include/portada.tex' not found.
+- intento 2: ❌ VERIFICACIÓN FALLIDA: 1 problema(s) (tocó `Memoria.tex`)
+
+El error indica que falta el archivo `include/portada.tex`. Necesito compilar desde la carpeta correcta o asegurarme de que todos los archivos de inclusión existen. El directorio parece tener la estructura correcta, pero hay un problema de ruta o archivo faltante. Voy a verificar la estructura de carpetas y asegurarme de que todos los archivos necesarios están presentes antes de intentar compilar nuevamente.
+
+**Archivos:** `Memoria.tex`, `include/portada.tex`, `chapters/03-propuesta.tex`
+
+**Intentos:**
+- intento 1: ❌ ! LaTeX Error: File `include/portada.tex' not found.
+- intento 2: ❌ ./chapters/03-propuesta.tex:70: Undefined control sequence. (tocó `include/portada.tex`)
+- intento 3: ❌ VERIFICACIÓN FALLIDA: 1 problema(s) (tocó `chapters/03-propuesta.tex`)
+
+**Siguiente:** Compilar la memoria con LuaLaTeX y ejecutar verificar.py para localizar el overfull hbox. Primero, verificar que todos los archivos de inclusión existen en las rutas indicadas.
+
+## 2026-10-13 17:38 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test automático falla: "Overfull \hbox (70.0pt too wide) in paragraph at lines 18--19" persiste tras los intentos previos.
+- Candidato principal: nodo TikZ "CI" en 03-propuesta.tex con `text width=5.2cm` y contenido `\texttt{.github/workflows/ci.yml}` (≈30 chars monoespaciado \small ≈ 165pt > 147pt = 5.2cm) → desborde ~18pt, pero con las tres líneas del nodo el desborde acumulado alcanza ~70pt.
+- Candidato secundario: longtable `tab:trazabilidad` en a1-desarrollo.tex, suma de anchos 12.9cm (≤ \linewidth ≈15.5cm), pero la columna "Estado" 2.2cm con "Siguiente entrega" (15 chars ≈ 75pt > 62pt = 2.2cm) fuerza micro-desbordes.
+- Candidato terciario: URLs en a2-material.tex pese a `xurl` y `sloppypar`.
+- Cifras clave verificadas contra fuentes: 80 pruebas (guia.md §7), 15 PBIs iniciales / 16 finales (gestion.md tabla Evolución), 19 PBIs totales, 32 tareas, 65 commits, 33 PRs, 978098e (PR #32, 12/10/2026), 58s despliegue, 0,27 CU-h Neon (guia.md §7, neonlimits).
+- Estructura capítulos/anexos según spec y estructura-memoria.md → OK.
+- Figuras: 12 (arquitectura TikZ, pipeline TikZ, burndown pgfplots, 7 app, 2 DoneTonic) ≥6; Tablas: 12 ≥5; todas con caption, label, ref → OK.
+- Resumen ≥120 palabras + palabras clave; declaración autoría con coma y ref correcta a Anexo~\ref{anx:ia} → OK.
+- Título sin \, final; \espec no modificado; headheight=15pt en extra.tex → OK.
+
+El contenido es excelente y fiel a las fuentes en todos los aspectos sustantivos. El único fallo que impide pasar la prueba es el **overfull hbox de 70pt** detectado por `verificar.py` en el log de LaTeX. Los tres puntos críticos son:
+1. **03-propuesta.tex**: El nodo "CI" del diagrama TikZ tiene `text width=5.2cm` pero contiene `\texttt{.github/workflows/ci.yml}` que en monoespaciado \small supera ese ancho, y las tres líneas del nodo acumulan desborde.
+2. **a1-desarrollo.tex**: La longtable `tab:trazabilidad` tiene la columna "Estado" a 2.2cm donde "Siguiente entrega" no cabe holgadamente, forzando micro-desbordes.
+3. **a2-material.tex**: Las URLs largas en `itemize` anidado dentro de `sloppypar` pueden desbordar pese a `xurl`.
+
+Corrijo los tres archivos: aumento `text width` del nodo CI a 7.5cm y uso `\url{...}` (corta automáticamente gracias a `xurl` cargado en extra.tex); amplio la columna "Estado" a 2.5cm, pongo `\small` en la longtable y uso `@{}` para eliminar padding lateral; aseguro cortes de URL con `\UrlBreaks` ya definido en extra.tex y añado `\emergencystretch` local.
+
+**Correcciones del revisor:** `chapters/03-propuesta.tex`, `chapters/a1-desarrollo.tex`, `chapters/a2-material.tex`
+
+**Tareas para el constructor:**
+- Compilar la memoria con LuaLaTeX y ejecutar verificar.py para confirmar que el overfull hbox de 70pt se ha resuelto
+- Verificar que no quedan advertencias LaTeX relevantes (overfull hbox, Float too large, caption unused)
+- Confirmar que el PDF final tiene todas las figuras/tablas con caption, label y \ref
+- Asegurar que los mínimos de palabras por capítulo/anexo se cumplen
