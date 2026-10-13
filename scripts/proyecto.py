@@ -327,6 +327,7 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     # Si la prueba falla, el constructor recibe el error en el momento y puede corregirlo
     # (hasta max_intentos en total) en vez de esperar al siguiente paso.
     ok, prueba = probar(cfg, borrador)
+    pruebas_del_paso = [prueba]   # para saber luego si en este paso se arregló algún fallo
     intentos = [f"intento 1: {resumen_prueba(ok, prueba)}"]
     print(f"Prueba tras constructor: {'OK' if ok else 'FALLA'}")
     max_intentos = cfg.get("max_intentos", 3)
@@ -378,6 +379,7 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
             break
         cambios += [c for c in nuevos if c not in cambios]
         ok, prueba = probar(cfg, borrador)
+        pruebas_del_paso.append(prueba)
         intentos.append(f"intento {n}: {resumen_prueba(ok, prueba)} "
                         f"(tocó {', '.join(f'`{c}`' for c in nuevos)})")
         print(f"Prueba tras intento {n}: {'OK' if ok else 'FALLA'}")
@@ -464,7 +466,13 @@ Intentos de compilar/probar en este paso:
     # Si en este paso se arregló un fallo y la prueba pasa, la lección que proponga el revisor
     # se guarda como "propuesta" (una persona la confirma luego).
     hubo_fallo = not ok_antes or any("❌" in i for i in intentos)
-    if ok and (hubo_fallo or correcciones) and r.get("LECCION", "").strip():
+    # En proyectos largos la prueba falla hasta el final por trabajo pendiente. Ahí también vale
+    # una lección si en este paso hubo un fallo "de verdad" (cumple reintentar_si, p. ej. un error
+    # de compilación) y al acabar el paso ya no está.
+    patron = cfg.get("reintentar_si")
+    arreglado = bool(patron) and not re.search(patron, prueba, flags=re.M) and any(
+        re.search(patron, x, flags=re.M) for x in [prueba_antes, *pruebas_del_paso])
+    if (ok and (hubo_fallo or correcciones) or arreglado) and r.get("LECCION", "").strip():
         guardada = memoria.guardar_propuesta(r["LECCION"], nombre)
         if guardada:
             nucleo.anotar(bitacora, "🧠 Lección propuesta para la memoria",
