@@ -2,8 +2,12 @@
 Adaptadores de IA: cada proveedor sabe hablar con su API y nada más.
 
 Para añadir una IA nueva:
-- Si su API es compatible con OpenAI (Groq, OpenRouter, Mistral, Cerebras... casi todas),
+- Si su API es compatible con OpenAI (OpenRouter, NVIDIA NIM, Groq... casi todas),
   NO hay que tocar código: se añade en config/ias.json con "tipo": "openai" y su URL.
+- Opciones por proveedor en config/ias.json:
+    "max_tokens": tope de lo que puede escribir la IA (algunas APIs cortan pronto si no se dice)
+    "tiempo_max": segundos de espera por respuesta (por defecto 180; los modelos grandes tardan más)
+    "extra": campos que se añaden tal cual a la petición (opciones propias de cada API)
 - Si no lo es, se añade aquí una clase nueva con el método _llamar() y se registra en TIPOS.
 """
 
@@ -51,6 +55,11 @@ class Proveedor:
     @property
     def disponible(self) -> bool:
         return bool(self.clave)
+
+    @property
+    def tiempo_max(self) -> float:
+        """Lo que se espera a una respuesta: el del proveedor, pero nunca más de lo que queda de paso."""
+        return max(30, min(self.cfg.get("tiempo_max", TIEMPO_MAX_RESPUESTA), tiempo_restante() - 30))
 
     def modelos(self) -> list[str]:
         return list(self.cfg.get("modelos", []))
@@ -137,7 +146,7 @@ class CompatibleOpenAI(Proveedor):
         print(f"  Modelos gratis encontrados en {self.nombre}: {elegidos}")
         return elegidos
 
-    def _http(self, metodo: str, ruta: str, cuerpo: dict | None = None) -> dict:
+    def _http(self, metodo: str, ruta: str, cuerpo: dict | None = None, espera: float = 60) -> dict:
         peticion = urllib.request.Request(
             self.cfg["url"].rstrip("/") + ruta,
             method=metodo,
@@ -148,19 +157,24 @@ class CompatibleOpenAI(Proveedor):
                 "X-Title": "cerebro-universal",
             },
         )
-        with urllib.request.urlopen(peticion, timeout=TIEMPO_MAX_RESPUESTA) as r:
+        with urllib.request.urlopen(peticion, timeout=espera) as r:
             return json.loads(r.read().decode("utf-8"))
 
     def _llamar(self, modelo, sistema, mensaje):
+        cuerpo = {
+            "model": modelo,
+            "temperature": 0.4,
+            "messages": [
+                {"role": "system", "content": sistema},
+                {"role": "user", "content": mensaje},
+            ],
+        }
+        if self.cfg.get("max_tokens"):
+            cuerpo["max_tokens"] = self.cfg["max_tokens"]
+        cuerpo.update(self.cfg.get("extra", {}))
+        espera = self.tiempo_max
         try:
-            datos = self._http("POST", "/chat/completions", {
-                "model": modelo,
-                "temperature": 0.4,
-                "messages": [
-                    {"role": "system", "content": sistema},
-                    {"role": "user", "content": mensaje},
-                ],
-            })
+            datos = self._http("POST", "/chat/completions", cuerpo, espera=espera)
         except urllib.error.HTTPError as e:
             detalle = e.read().decode("utf-8", errors="replace")[:300]
             # 403 aquí suele ser "este modelo tiene restricciones", no "tu key está mal" (eso es 401)
@@ -170,18 +184,23 @@ class CompatibleOpenAI(Proveedor):
                 raise Saturado(f"{e.code} {detalle}")
             raise RuntimeError(f"{self.nombre} respondió {e.code}: {detalle}")
         except TimeoutError:
-            raise SaltarModelo(f"no contestó en {TIEMPO_MAX_RESPUESTA}s")
+            raise SaltarModelo(f"no contestó en {espera:.0f}s")
         except urllib.error.URLError as e:
             if "timed out" in str(e).lower():
-                raise SaltarModelo(f"no contestó en {TIEMPO_MAX_RESPUESTA}s")
+                raise SaltarModelo(f"no contestó en {espera:.0f}s")
             raise Saturado(str(e))
 
         if "error" in datos:  # algunos proveedores devuelven 200 con un error dentro
             raise Saturado(str(datos["error"])[:300])
         try:
-            return datos["choices"][0]["message"]["content"]
+            eleccion = datos["choices"][0]
+            texto = eleccion["message"]["content"]
         except (KeyError, IndexError, TypeError):
             raise SaltarModelo(f"Respuesta con formato inesperado: {str(datos)[:200]}")
+        if eleccion.get("finish_reason") == "length":
+            # Se quedó sin espacio para escribir: un archivo cortado a medias rompe el proyecto
+            raise SaltarModelo("la respuesta se cortó por max_tokens (sube max_tokens en config/ias.json)")
+        return texto
 
 
 TIPOS = {"gemini": Gemini, "openai": CompatibleOpenAI}
