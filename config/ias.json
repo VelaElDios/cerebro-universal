@@ -5,8 +5,7 @@
       "clave_env": "GEMINI_API_KEY",
       "modelos": [
         "gemini-flash-latest",
-        "gemini-3.5-flash-lite",
-        "gemini-2.5-flash"
+        "gemini-3.5-flash-lite"
       ]
     },
     "nvidia-constructor": {
@@ -14,9 +13,10 @@
       "clave_env": "NVIDIA_API_KEY",
       "url": "https://integrate.api.nvidia.com/v1",
       "modelos": [
-        "qwen/qwen3.5-397b-a17b",
-        "deepseek-ai/deepseek-v4-flash",
-        "minimaxai/minimax-m2.7"
+        "moonshotai/kimi-k2.6",
+        "z-ai/glm-5.3",
+        "deepseek-ai/deepseek-v4.1-flash",
+        "minimaxai/minimax-m3.1-flash"
       ],
       "max_tokens": 32768,
       "tiempo_max": 420
@@ -26,9 +26,10 @@
       "clave_env": "NVIDIA_API_KEY",
       "url": "https://integrate.api.nvidia.com/v1",
       "modelos": [
-        "deepseek-ai/deepseek-v4-flash",
-        "qwen/qwen3.5-397b-a17b",
-        "minimaxai/minimax-m2.7"
+        "nvidia/nemotron-3-ultra-550b-a55b",
+        "deepseek-ai/deepseek-v4.1-flash",
+        "z-ai/glm-5.3",
+        "moonshotai/kimi-k2.6"
       ],
       "max_tokens": 32768,
       "tiempo_max": 420
@@ -39,8 +40,7 @@
       "url": "https://openrouter.ai/api/v1",
       "modelos": [
         "nvidia/nemotron-3-ultra-550b-a55b:free",
-        "thinkingmachines/inkling:free",
-        "nvidia/nemotron-3-super-120b-a12b:free"
+        "nvidia/nemotron-3.5-super-vl:free"
       ],
       "autodescubrir_gratis": false,
       "tiempo_max": 240
@@ -61,8 +61,8 @@
       "openrouter-grandes"
     ],
     "revisor": [
-      "openrouter-grandes",
       "nvidia-revisor",
+      "openrouter-grandes",
       "gemini",
       "openrouter"
     ]
