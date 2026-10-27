@@ -22,7 +22,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from cerebro import memoria, nucleo
+from cerebro import memoria, nucleo, repos
 from cerebro import proveedores as prov
 
 # ---------- Cronómetro ----------
@@ -149,14 +149,8 @@ def reales(cambios: list[str]) -> list[str]:
 def leer_fuentes(carpeta: Path, cfg: dict) -> str:
     """Archivos de solo lectura que el proyecto pasa a las IAs ("fuentes" en proyecto.json):
     datos, guías, documentación... Están fuera de borrador/, así que las IAs no pueden cambiarlos."""
-    trozos = []
-    for relativa in cfg.get("fuentes", []):
-        ruta = carpeta / relativa
-        if ruta.is_file():
-            trozos.append(f"<<<FUENTE {relativa}>>>\n{ruta.read_text(encoding='utf-8', errors='replace')}\n<<<FIN>>>")
-        else:
-            trozos.append(f"(falta la fuente {relativa})")
-    return "\n\n".join(trozos)
+    # Pueden ser archivos del proyecto o de un repo público ("repo:nombre/ruta", ver cerebro/repos.py)
+    return repos.texto_fuentes(carpeta, cfg)
 
 
 def guardar_cfg(cfg_ruta: Path, cfg: dict):
@@ -298,7 +292,22 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     nombre = carpeta.name
     # Archivos que las IAs no pueden escribir ni borrar (plantilla, imágenes...): "protegidos" en proyecto.json
     protegidos = cfg.get("protegidos", [])
+    # Repos públicos: se descargan de nuevo en cada paso y se copian al borrador sus imágenes
+    try:
+        info_repos = repos.preparar(carpeta, cfg)
+    except repos.RepoNoDisponible as e:
+        raise SinConstructor(str(e))
+    copiados = repos.copiar(carpeta, cfg)
+    for linea in info_repos:
+        print(f"Repo: {linea}")
+    if copiados:
+        print(f"Copiados del repo al borrador: {len(copiados)}")
     fuentes = leer_fuentes(carpeta, cfg)
+    print(f"Fuentes: {len(fuentes)} caracteres")
+    imagenes = repos.lista_imagenes(carpeta, cfg) if cfg.get("copiar") else ""
+    if imagenes:
+        fuentes += ("\n\n<<<FUENTE imágenes disponibles en borrador/ (copiadas del repo; no se pueden modificar)>>>\n"
+                    + imagenes + "\n<<<FIN>>>")
     bloque_fuentes = (f"\n# FUENTES DEL PROYECTO (solo lectura: son la única verdad sobre los datos)\n{fuentes}\n"
                       if fuentes else "")
 
@@ -395,7 +404,10 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
                   f"{s.get('RESUMEN', '(sin resumen)')}\n\n"
                   f"**Archivos:** {', '.join(f'`{c}`' for c in cambios) or 'ninguno'}\n\n"
                   f"**Intentos:**\n" + "\n".join(f"- {i}" for i in intentos) + "\n\n"
-                  f"**Siguiente:** {s.get('SIGUIENTE', '-')}")
+                  + (f"**Repos leídos:** {' · '.join(info_repos)}"
+                     + (f" ({len(copiados)} archivos nuevos o cambiados copiados al borrador)" if copiados else "")
+                     + "\n\n" if info_repos else "")
+                  + f"**Siguiente:** {s.get('SIGUIENTE', '-')}")
 
     # ---------- 3. REVISOR ----------
     mensaje = f"""# SPEC DEL PROYECTO

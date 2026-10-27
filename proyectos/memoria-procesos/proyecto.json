@@ -1,6 +1,6 @@
 {
   "nombre": "memoria-procesos",
-  "estado": "terminado",
+  "estado": "pausado",
   "temas": [
     "latex",
     "memoria",
@@ -13,14 +13,25 @@
   "apt": [
     "fonts-crosextra-carlito"
   ],
+  "repos": {
+    "saas": "https://github.com/VelaElDios/la-grada-colchonera-saas"
+  },
   "fuentes": [
-    "fuentes/guia.md",
-    "fuentes/gestion.md",
-    "fuentes/revision-entrega.md",
-    "fuentes/contributing.md",
+    "repo:saas/docs/documentacion-tecnica.md",
+    "repo:saas/docs/gestion/README.md",
+    "repo:saas/docs/revision-entrega.md",
+    "repo:saas/docs/hito4-configuracion.md",
+    "repo:saas/CONTRIBUTING.md",
+    "repo:saas/@arbol",
+    "repo:saas/memoria/bibliografia.bib",
     "fuentes/estructura-memoria.md",
-    "fuentes/figuras.md",
     "fuentes/uso-ia.md"
+  ],
+  "copiar": [
+    {
+      "desde": "repo:saas/docs/capturas/**/*.png",
+      "a": "figs/capturas"
+    }
   ],
   "protegidos": [
     "Memoria.tex",
@@ -35,7 +46,7 @@
   "reintentar_si": "^(!|\\S+\\.(tex|sty|cls|bib):\\d+:)|Fatal error|Emergency stop|Todavía no existe",
   "max_archivos_por_paso": 3,
   "pasos": 18,
-  "max_pasos": 18,
+  "max_pasos": 32,
   "max_intentos": 3,
   "ultima_ejecucion": "2026-10-13T22:18:19+02:00"
 }

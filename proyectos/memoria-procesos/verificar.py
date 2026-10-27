@@ -20,6 +20,7 @@ Comprueba que:
 Sale con 0 si todo va bien y con 1 si algo falla. Cada fallo indica archivo y línea cuando puede.
 """
 
+import json
 import re
 import shutil
 import subprocess
@@ -27,13 +28,15 @@ import sys
 from pathlib import Path
 
 BORRADOR = Path.cwd()
-FUENTES = Path(__file__).resolve().parent / "fuentes"
+CARPETA = Path(__file__).resolve().parent            # carpeta del proyecto
+RAIZ = CARPETA.parents[1]                            # raíz del cerebro
+FUENTES = CARPETA / "fuentes"
 PRINCIPAL = BORRADOR / "Memoria.tex"
 
 CAPITULOS = ["01-introduccion", "03-propuesta", "04-descripcion", "05-evaluacion", "06-conclusiones"]
 ANEXOS = ["a1-desarrollo", "a2-material", "a3-uso-ia"]
-PALABRAS_MIN = {"01-introduccion": 350, "03-propuesta": 500, "04-descripcion": 900,
-                "05-evaluacion": 300, "06-conclusiones": 250, "a1-desarrollo": 600,
+PALABRAS_MIN = {"01-introduccion": 400, "03-propuesta": 600, "04-descripcion": 1500,
+                "05-evaluacion": 400, "06-conclusiones": 300, "a1-desarrollo": 900,
                 "a2-material": 60, "a3-uso-ia": 200}
 RESUMEN_MIN = 120
 FIGURAS_MIN = 6
@@ -41,11 +44,12 @@ TABLAS_MIN = 5
 OVERFULL_MAX_PT = 30
 # Figuras que tienen que estar (patrón en el código de los capítulos, mínimo, qué es)
 FIGURAS_OBLIGATORIAS = [
-    (r"\\begin\{tikzpicture\}", 3, "dibujos TikZ (arquitectura en capas, pipeline de CI/CD o flujo de ramas, "
-                                    "y el del burndown)"),
+    (r"\\begin\{tikzpicture\}", 5, "dibujos TikZ (arquitectura en capas, pipeline de CI/CD, burndown y al "
+                                    "menos 2 diagramas de secuencia: p. ej. confirmación por correo y Google)"),
     (r"\\begin\{axis\}", 1, "gráfica pgfplots (burndown)"),
-    (r"figs/capturas/app-", 3, "capturas de la aplicación"),
-    (r"figs/capturas/donetonic-", 1, "captura de DoneTonic"),
+    (r"figs/capturas/app[-/]", 3, "capturas de la aplicación"),
+    (r"figs/capturas/donetonic[-/]", 1, "captura de DoneTonic"),
+    (r"figs/capturas/hito4/", 3, "capturas del Hito 4 (correo, Google, errores)"),
 ]
 NUMERO_LIBRE = 20          # los números hasta este valor no hace falta que estén en las fuentes
 
@@ -326,8 +330,20 @@ def comprobar_pdf():
         fallo("El PDF contiene texto de relleno (lipsum)")
 
 
+def leer_fuentes() -> str:
+    """Las mismas fuentes que leen las IAs: las de proyecto.json, incluidas las de repos públicos."""
+    cfg = json.loads((CARPETA / "proyecto.json").read_text(encoding="utf-8-sig"))
+    if not cfg.get("fuentes"):
+        return "\n".join(leer(p) for p in sorted(FUENTES.glob("*.md")))
+    sys.path.insert(0, str(RAIZ / "scripts"))
+    from cerebro import repos
+    if not repos.repos_listos(CARPETA, cfg):   # p. ej. si se ejecuta a mano, fuera del cerebro
+        repos.preparar(CARPETA, cfg)
+    return repos.texto_fuentes(CARPETA, cfg)
+
+
 def main():
-    fuentes = "\n".join(leer(p) for p in sorted(FUENTES.glob("*.md")))
+    fuentes = leer_fuentes()
     if not fuentes:
         print(f"ERROR: no hay fuentes en {FUENTES}")
         return 1

@@ -1,8 +1,16 @@
 {
   "nombre": "nombre-del-proyecto",
   "estado": "pausado",
-  "temas": ["python"],
-  "necesita": ["python-tests"],
+  "temas": [
+    "python"
+  ],
+  "necesita": [
+    "python-tests"
+  ],
+  "repos": {},
+  "fuentes": [],
+  "copiar": [],
+  "protegidos": [],
   "archivo_principal": "",
   "comando_prueba": "python3 ../verificar.py",
   "max_archivos_por_paso": 3,

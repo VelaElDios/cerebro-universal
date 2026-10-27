@@ -1152,3 +1152,17 @@ El borrador está completo y correcto. La prueba automática (verificar.py) pasa
 ## 2026-10-13 22:23 · 🎉 Proyecto terminado
 
 El revisor da por cumplidos todos los criterios de la spec.
+
+## 2026-10-27 · Preparación de la versión 2 (Claude, a petición de Javier)
+
+- El Sprint 1 está cerrado (Hitos 1–4). Desde ahora la fuente es **el repositorio del proyecto**
+  (`repos` en `proyecto.json`): el cerebro lo descarga en cada paso y lee la documentación técnica, la
+  gestión, la revisión de la entrega, la configuración del Hito 4, CONTRIBUTING y la lista de archivos.
+  Las capturas de `docs/capturas/` se copian solas a `borrador/figs/capturas/` (32 de momento).
+- Las fuentes antiguas (`fuentes/guia.md`, `gestion.md`, `revision-entrega.md`, `contributing.md`,
+  `figuras.md`) ya no se usan: estaban desfasadas (decían que el Hito 4 estaba pendiente).
+- `spec.md` reescrita para la versión 2: actualizar la memoria con el Sprint 1 completo, diagramas de
+  secuencia en TikZ, capturas nuevas, sin explicar el juego y sin adornos en el estilo.
+- `verificar.py` lee las mismas fuentes que las IAs (también las del repo) y pide más: 5 dibujos TikZ,
+  capturas del Hito 4 y más palabras.
+- Queda **pausado** hasta que Javier suba las capturas de DoneTonic al repo.

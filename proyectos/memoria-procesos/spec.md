@@ -1,117 +1,126 @@
-# Spec: memoria de La Grada Colchonera (Procesos de Ingeniería del Software)
+# Spec: memoria de La Grada Colchonera, Sprint 1 completo (Procesos de Ingeniería del Software)
 
 ## Qué es
 
 La memoria del trabajo de la asignatura Procesos de Ingeniería del Software (PIS), curso 2026-2027,
-con el formato de un TFG de la ESIIAB-UCLM. Describe el **Sprint 1** de *La Grada Colchonera*: la base
-de una aplicación SaaS con gestión de usuarios, su arquitectura y, sobre todo, el **proceso**
+con el formato de un TFG de la ESIIAB-UCLM. Describe el **Sprint 1 completo (Hitos 1 a 4)** de
+*La Grada Colchonera*: la base de una aplicación SaaS en capas (cuentas, sesión, roles, persistencia,
+correo, inicio de sesión con Google, manejo de errores, despliegue), y sobre todo el **proceso**
 (Scrum en DoneTonic, GitHub Flow, CI/CD y despliegue en Google Cloud Run).
 
-El borrador ya tiene la plantilla oficial de la escuela adaptada y compilando, con los capítulos
-vacíos (texto `\lipsum` de relleno) y las capturas reales en `figs/capturas/`. Hay que rellenarla.
+**Versión 2.** El borrador ya tiene una memoria completa de los Hitos 1–3 escrita con fuentes antiguas
+(una guía del 12/10/2026). Ahora el Sprint 1 está cerrado y la fuente es **el repositorio del proyecto**,
+que el cerebro descarga en cada paso. Hay que **actualizar** la memoria, no rehacerla desde cero:
+corregir lo que haya cambiado, añadir el Hito 4 y la prueba técnica, y usar las capturas nuevas.
+
+**El juego no se explica en esta memoria.** El producto evolucionó a un juego después del Sprint 1;
+como mucho se menciona en una frase en el trabajo futuro, sin describirlo.
 
 ## Fuentes: la única verdad
 
-Las fuentes se te pasan en cada mensaje (`fuentes/`, fuera del borrador, no se pueden cambiar):
+Se te pasan en cada mensaje. Las del repositorio (`repo:saas/...`) son siempre la última versión:
 
 | Fuente | Contenido |
 |---|---|
-| `guia.md` | Guía completa del proyecto: objetivo, requisitos, decisiones, arquitectura, procesos, herramientas, cifras, problemas, pendiente y referencias. **Es la fuente principal.** |
-| `gestion.md` | Gestión en DoneTonic: backlog, definición de hecho, trazabilidad tarea → rama → PR y evolución del sprint (tabla para el burndown) |
-| `revision-entrega.md` | Revisión de los requisitos del enunciado, uno a uno, con su evidencia |
-| `contributing.md` | Flujo de trabajo con ramas, commits y PR |
-| `estructura-memoria.md` | Qué debe tener cada capítulo según el profesor |
-| `figuras.md` | Qué muestra cada captura de `figs/capturas/` |
-| `uso-ia.md` | Hechos para el anexo de uso de la IA |
+| `repo:saas/docs/documentacion-tecnica.md` | **Fuente principal.** Escrita para la memoria: requisitos (RF/RNF), metodología, arquitectura, diseño, flujos con diagramas de secuencia (Mermaid), seguridad, pruebas, CI/CD, errores, problemas, métricas y conclusiones. Su §1 dice qué sección alimenta cada capítulo. |
+| `repo:saas/docs/gestion/README.md` | Gestión en DoneTonic: backlog, trazabilidad tarea → rama → PR y evolución del sprint |
+| `repo:saas/docs/revision-entrega.md` | Revisión de los requisitos del enunciado, uno a uno, con su evidencia |
+| `repo:saas/docs/hito4-configuracion.md` | Configuración del Hito 4 (correo y Google) |
+| `repo:saas/CONTRIBUTING.md` | Flujo de trabajo con ramas, commits y PR |
+| `repo:saas/@arbol` | Lista de archivos del repositorio (estructura del código) |
+| `repo:saas/memoria/bibliografia.bib` | Referencias bibliográficas del proyecto (las únicas URLs que valen en `bib/ref.bib`) |
+| `fuentes/estructura-memoria.md` | Qué debe tener cada capítulo según el profesor |
+| `fuentes/uso-ia.md` | Hechos para el anexo de uso de la IA |
+| imágenes disponibles | Lista de capturas copiadas del repo a `figs/capturas/` con lo que muestra cada una |
 
 **Regla de oro:** cada dato (cifras, fechas, nombres, versiones, URLs, números de PR) sale de las
-fuentes, copiado tal cual. Si algo no está en las fuentes, **no se escribe** (ni horas, ni puntos de
-historia, ni usuarios, ni opiniones de terceros). El test comprueba que todo número mayor que 20 del
-texto aparece en las fuentes.
+fuentes, copiado tal cual. Si algo no está en las fuentes, **no se escribe**. Si el borrador tiene un
+dato de la versión anterior que ya no aparece en las fuentes (por ejemplo, número de pruebas o líneas
+de código, o «el Hito 4 queda pendiente»), se actualiza con el de las fuentes. El test comprueba que
+todo número mayor que 20 del texto aparece en las fuentes; los pequeños los comprueba el revisor.
 
 ## Qué no se toca
 
-- `include/configuracion.tex`, `include/colores.tex` y `elements/portada.tex`: son de la plantilla.
-  Los paquetes nuevos (TikZ, pgfplots, booktabs...) van en `include/extra.tex`.
-- `latexmkrc`, `figs/` (logos y capturas) y `Memoria.tex` (ya incluye todos los capítulos).
+- Archivos protegidos (se ignoran si se intentan escribir): `Memoria.tex`, `latexmkrc`,
+  `include/configuracion.tex`, `include/colores.tex`, `elements/portada.tex` y `figs/*`.
+- Los paquetes nuevos van en `include/extra.tex`.
 - `\espec` en `include/opciones.tex`: lo confirma Javier.
 
 ## Qué hay que hacer
 
+### Capturas
+- Las capturas buenas son las nuevas: `figs/capturas/app/`, `figs/capturas/hito4/`,
+  `figs/capturas/donetonic/`, `figs/capturas/produccion/` y `figs/capturas/prueba-tecnica/`.
+  Las antiguas (`figs/capturas/app-*.png`, `figs/capturas/donetonic-*.png`) se sustituyen por las nuevas
+  equivalentes en todos los capítulos.
+- Imágenes verticales (móvil): `width=0.35\textwidth`. El resto: `width=0.9\textwidth` como máximo.
+
+### Diagramas
+- Los diagramas de la documentación técnica están en Mermaid: se redibujan en **TikZ** (no se pueden
+  usar imágenes de Mermaid). Hacen falta al menos: arquitectura en capas (actualizada), pipeline de CI/CD
+  (actualizado con §11), burndown con pgfplots (con los datos de la evolución del sprint) y **al menos dos
+  diagramas de secuencia**: confirmación de la cuenta por correo (§7.1–7.2) e inicio de sesión con Google
+  (§7.4). Un diagrama de secuencia en TikZ: participantes como nodos arriba, líneas de vida discontinuas
+  y flechas horizontales con etiqueta, de arriba abajo.
+
 ### Datos y páginas iniciales
-- `include/opciones.tex`: `\titulo` = `La Grada Colchonera: base SaaS y proceso de desarrollo\,`;
-  `\fecha` = `Octubre, 2026\,`. El autor ya está puesto. Sin director ni codirector.
-- `elements/preambulo.tex`:
-  - Segunda portada: «TRABAJO FIN DE GRADO» pasa a ser «TRABAJO DE PROCESOS DE INGENIERÍA DEL SOFTWARE».
-  - Quitar la dedicatoria y los agradecimientos (son personales: si los quiere, los escribe Javier).
-  - Declaración de autoría sin DNI ni huecos: «Yo, \autor, declaro que soy el autor del trabajo
-    titulado “\titulo”…», que el material no original está atribuido y que el uso de la IA se detalla
-    en el Anexo C (`\ref{anx:ia}`). Lugar y fecha: «Albacete, \fecha».
-  - **Resumen** (≥ 120 palabras) seguido de una línea *Palabras clave*.
+- `include/opciones.tex`: título y fecha se mantienen salvo que las fuentes digan otra cosa del Sprint 1.
+- `elements/preambulo.tex`: actualizar el **Resumen** (≥ 120 palabras) y las *Palabras clave* con el
+  Sprint 1 completo.
 
 ### Capítulos (en `chapters/`)
 
-| Archivo | Contenido (sección de la guía) | Mínimo |
+| Archivo | Contenido (sección de `documentacion-tecnica.md`) | Mínimo |
 |---|---|---|
-| `01-introduccion.tex` | Motivación (§1: la asignatura evalúa la aplicación y el proceso; la aplicación). Objetivo principal y objetivos específicos (sacados de los hitos y requisitos). Alcance de la entrega (Hitos 1–3). Estructura de la memoria (capítulos y anexos con `\ref`). | 350 palabras |
-| `03-propuesta.tex` | Propuesta de solución sin detalles técnicos (§1). Metodología: Scrum en DoneTonic (sprint, backlog, definición de hecho) y GitHub Flow por hitos (§3 Proceso, §5, contributing). Herramientas (§6) en una tabla, agrupadas en gestión, desarrollo, despliegue y documentación. | 500 palabras |
-| `04-descripcion.tex` | Requisitos (§2) como tabla RF/RNF con su estado. Arquitectura (§4): figura TikZ de las capas, modelo de datos, flujo de la sesión y tabla de la API. Decisiones técnicas y de diseño (§3) justificadas. Desarrollo del proyecto: tabla resumen del sprint (fechas, objetivo, PBIs, estado) remitiendo al Anexo A. La aplicación tipo manual de usuario con las capturas `app-*`. | 900 palabras |
-| `05-evaluacion.tex` | Diseño de la evaluación: pruebas automatizadas, CI en cada PR contra PostgreSQL 17, revisión frase a frase contra el enunciado y comprobación del despliegue (§5.2, §7, revision-entrega). Resultados con las cifras de §7. Discusión: qué garantiza todo esto y qué no (historial concentrado en un día, §7 «Observación»). | 300 palabras |
-| `06-conclusiones.tex` | Conclusiones en el orden de los objetivos del capítulo 1, diciendo cómo se ha cumplido cada uno. Trabajo futuro: 3 ideas de §9 (Hito 4: OAuth y confirmación por correo; manejo de errores; rediseño visual). | 250 palabras |
+| `01-introduccion.tex` | Motivación y contexto (§2.1), objetivos (§2.2, solo los del Sprint 1), alcance: Hitos 1–4 y cierre del sprint (§2.3, sin contar el juego), estructura de la memoria con `\ref`. | 400 palabras |
+| `03-propuesta.tex` | Propuesta de solución sin detalles técnicos. Metodología: Scrum en DoneTonic, definición de hecho, GitHub Flow por hitos (§4.1–4.3, gestión, CONTRIBUTING). Herramientas (tabla). Captura de DoneTonic. | 600 palabras |
+| `04-descripcion.tex` | Requisitos RF/RNF del Sprint 1 (§3.1 y §3.3, sin los del juego §3.2). Arquitectura (§5) y diseño (§6: módulos, modelo de datos, frontend, API). Flujos principales con los diagramas de secuencia (§7.1–7.9, sin §7.10–7.11 del juego). Seguridad (§8). Resumen del sprint remitiendo al Anexo A. La aplicación tipo manual de usuario con las capturas de `app/` y `hito4/`. | 1500 palabras |
+| `05-evaluacion.tex` | Pruebas (§10, solo las del Sprint 1 si se distinguen), CI/CD (§11), registro de actividad y manejo de errores (§12), revisión frente al enunciado (revision-entrega), prueba técnica (§7.13, capturas de `prueba-tecnica/`) y comprobación en producción (capturas de `produccion/`). Resultados con cifras y discusión. | 400 palabras |
+| `06-conclusiones.tex` | Conclusiones en el orden de los objetivos del capítulo 1. Trabajo futuro (§15), sin describir el juego. | 300 palabras |
 
 ### Anexos
 
 | Archivo | Contenido | Mínimo |
 |---|---|---|
-| `a1-desarrollo.tex` | Sprint 1 con el esquema de la plantilla. Planificación: objetivo, fechas, tabla del sprint backlog (P1–P19 con hito y estado) y trazabilidad. Desarrollo del sprint: problemas y soluciones de §8 (tablas, no un diario). Revisión: qué se entregó (releases, cifras). Retrospectiva: burndown con pgfplots usando la tabla «Evolución del sprint» de `gestion.md`, el cambio de alcance (+P19) y lo aprendido. | 600 palabras |
-| `a2-material.tex` | Enlaces: repositorio, aplicación (Cloud Run y Render), releases y documentación del repositorio (§10). Con `\url`. | 60 palabras |
-| `a3-uso-ia.tex` | Uso responsable de la IA con los hechos de `uso-ia.md`: qué hizo la IA, qué hizo el alumno y cómo se verificó. | 200 palabras |
+| `a1-desarrollo.tex` | Sprint 1 con el esquema de la plantilla: planificación (objetivo, fechas, sprint backlog, trazabilidad §4.4), desarrollo por hitos (problema-solución de §13, en tablas, no un diario), revisión (entregas, cronología §4.6, métricas §14) y retrospectiva (burndown §4.5, captura de las gráficas de DoneTonic, cambio de alcance). | 900 palabras |
+| `a2-material.tex` | Enlaces: repositorio, aplicación, releases y documentación del repositorio. Con `\url`. | 60 palabras |
+| `a3-uso-ia.tex` | Uso responsable de la IA con los hechos de `uso-ia.md` y lo que digan las fuentes del repo sobre la IA. | 200 palabras |
 
-### Figuras y tablas
-- Al menos **6 figuras** y **5 tablas**, cada una con `\caption`, `\label` (`fig:…`, `tab:…`) y citada en el
-  texto con `\ref`.
-- Figuras mínimas: arquitectura en capas (TikZ), pipeline de CI/CD o flujo de ramas (TikZ), burndown
-  (pgfplots), al menos 3 capturas de la aplicación y 1 de DoneTonic.
-- Capturas con `\includegraphics[width=0.9\textwidth]{figs/capturas/…}` (la del móvil, 0.35\textwidth).
-- Tablas de más de media página con `longtable` (no caben en un `table` y se cortan).
-- Nada puede salirse del margen: tablas con columnas de ancho fijo (`L{4cm}`, definidas en la plantilla)
-  o `\small`.
-
-### Bibliografía (`bib/ref.bib`, BibTeX con estilo apalike)
-- Solo las referencias de §10 de la guía. Formato `@misc` con `howpublished = {\url{…}}`.
-- Todas con `year` (`year = {s.f.}` si la fuente no da fecha) y los autores que son organizaciones con
-  doble llave: `author = {{GitHub}}`.
-- El enunciado de la asignatura con la clave `enunciado` (sin URL, es un PDF de la asignatura).
-- Cada referencia se cita al menos una vez con `\cite{…}` donde corresponda.
+### Figuras, tablas y bibliografía
+- Al menos **6 figuras** y **5 tablas**, cada una con `\caption`, `\label` (`fig:…`, `tab:…`) y citada con `\ref`.
+- Obligatorio: 5 dibujos TikZ (los 4 de arriba + otro diagrama de secuencia o de despliegue), 3 capturas de
+  `app/`, 3 de `hito4/` y 1 de DoneTonic.
+- Tablas de más de media página con `longtable`. Nada fuera del margen.
+- Bibliografía (`bib/ref.bib`, apalike): solo referencias cuyas URLs estén en las fuentes; todas con
+  `year` (`{s.f.}` si no hay fecha) y los autores que son organizaciones con doble llave. Cada una citada.
 
 ## Estilo
 
-- Español, impersonal («se ha desarrollado», «se decidió»), claro y sin adornos ni frases de relleno.
-- Explicar el porqué de cada decisión (la guía lo da siempre).
+- Español, impersonal, claro y **sin adornos**: nada de «trasciende», «exhaustivo», «riguroso», «de
+  forma integral», «es fundamental subrayar». Frases cortas que expliquen el porqué de cada decisión.
 - Rutas, comandos y nombres de código en `\texttt{}`, escapando `_`, `#`, `%`, `&` y `$`.
-- La aplicación es un proyecto de aficionado sin relación oficial con el Club Atlético de Madrid:
-  decirlo así una vez (introducción) y no usar escudos ni logos.
+- Proyecto de aficionado sin relación oficial con el Club Atlético de Madrid: decirlo una vez.
 
 ## Cómo se comprueba
 
-`comando_prueba` compila con LuaLaTeX y ejecuta `verificar.py` (fuera del borrador), que comprueba:
-estructura, que no queda relleno ni DNI, que no hay referencias ni citas rotas, que la bibliografía
-solo tiene URLs de las fuentes, figuras y tablas con caption, label y `\ref`, mínimos de palabras,
-figuras y tablas, que ningún número mayor que 20 falta en las fuentes y que el PDF no tiene «??».
+`comando_prueba` compila con LuaLaTeX y ejecuta `verificar.py`, que comprueba contra las mismas fuentes
+(incluido el repo): estructura, sin relleno ni DNI, sin referencias ni citas rotas, bibliografía, figuras
+y tablas con caption, label y `\ref`, figuras obligatorias, mínimos de palabras, números > 20 en las
+fuentes, nada fuera del margen y el PDF sin «??».
 
 ## Orden de trabajo sugerido (máximo 3 archivos por paso)
 
-1. `include/opciones.tex`, `elements/preambulo.tex` (con el resumen) y `bib/ref.bib`.
-2. `include/extra.tex` (TikZ y pgfplots), `01-introduccion.tex` y `03-propuesta.tex`.
-3. `04-descripcion.tex`.
-4. `05-evaluacion.tex` y `06-conclusiones.tex`.
-5. `a1-desarrollo.tex`.
-6. `a2-material.tex` y `a3-uso-ia.tex`.
-7. Repasar lo que diga el revisor hasta que `verificar.py` pase.
+1. `04-descripcion.tex` (requisitos, arquitectura y capturas nuevas).
+2. `include/extra.tex` si hace falta y los diagramas de secuencia en `04-descripcion.tex`.
+3. `05-evaluacion.tex` y `a1-desarrollo.tex`.
+4. `01-introduccion.tex`, `03-propuesta.tex` y `06-conclusiones.tex`.
+5. `elements/preambulo.tex` (resumen), `a2-material.tex` y `a3-uso-ia.tex`.
+6. Repasar lo que diga el revisor hasta que `verificar.py` pase.
 
 ## Criterios de terminado
 
 - [ ] `comando_prueba` pasa (compila y `verificar.py` OK).
-- [ ] El revisor ha contrastado con las fuentes, en COMPROBACIONES, al menos 10 datos repartidos por los
-      capítulos (cifra o hecho → sección de la fuente).
-- [ ] Todos los capítulos y anexos siguen el contenido de las tablas de arriba.
+- [ ] Ningún capítulo dice que el Hito 4 está pendiente; el Hito 4 y la prueba técnica están descritos.
+- [ ] El revisor ha contrastado con las fuentes, en COMPROBACIONES, al menos 15 datos repartidos por los
+      capítulos (cifra o hecho → sección de la fuente), incluidos números pequeños.
+- [ ] El juego no se describe.

@@ -36,6 +36,15 @@ proyectos/_plantilla/   punto de partida para un proyecto nuevo (nunca se ejecut
 3. En `proyecto.json`: `nombre`, `temas` (para elegir lecciones), `necesita` (qué instalar),
    `comando_prueba` y, al final, `"estado": "en-construccion"`.
 
+## Trabajar sobre un repo (p. ej. escribir la memoria de un proyecto)
+
+1. Copiar `proyectos/_plantilla/` y poner en `proyecto.json` el repo en `repos` y en `fuentes` qué
+   documentos leer (`repo:nombre/...`). Si tiene capturas, `copiar`.
+2. Escribir las normas en `spec.md` (qué hay que producir y con qué reglas) y el test en `verificar.py`.
+   Un test puede comprobar datos contra las mismas fuentes que leen las IAs con `cerebro.repos.texto_fuentes()`
+   (ver `proyectos/memoria-procesos/verificar.py`).
+3. `"estado": "en-construccion"`. Cada paso lee la última versión del repo y lo apunta en la bitácora.
+
 ## proyecto.json
 
 | Campo | Para qué |
@@ -44,7 +53,9 @@ proyectos/_plantilla/   punto de partida para un proyecto nuevo (nunca se ejecut
 | `temas` | Temas del proyecto (`latex`, `python`...): deciden qué lecciones de `memoria/` reciben las IAs. |
 | `necesita` | Entornos de `config/entornos.json` a instalar. También se pueden pedir paquetes sueltos con `apt` y `pip`. |
 | `comando_prueba` | Lo que se ejecuta dentro de `borrador/` para comprobar el paso (0 = bien). |
-| `fuentes` | Opcional. Archivos de la carpeta del proyecto (fuera de `borrador/`) que se pasan a las IAs como única verdad: datos, guías, documentación. |
+| `repos` | Opcional. Repos públicos de GitHub que el cerebro lee: `{"saas": "https://github.com/usuario/repo"}`. Se descargan de nuevo en cada paso (siempre la última versión) en `.repos/`, que no se sube. |
+| `fuentes` | Opcional. Lo que se pasa a las IAs como única verdad: archivos del proyecto (`fuentes/normas.md`) o de un repo (`repo:saas/README.md`, `repo:saas/docs/**/*.md`, y `repo:saas/@arbol` para la lista de archivos). Admiten `*` y `**`. |
+| `copiar` | Opcional. Archivos de un repo que se copian solos a `borrador/` (p. ej. capturas): `[{"desde": "repo:saas/docs/capturas/**/*.png", "a": "figs/capturas"}]`. Las IAs reciben la lista con lo que muestra cada imagen (su texto alternativo en los Markdown del repo). |
 | `protegidos` | Opcional. Patrones de archivos de `borrador/` que las IAs no pueden escribir ni borrar (plantilla, imágenes...), p. ej. `figs/*`. |
 | `reintentar_si` | Opcional. Expresión regular: si la prueba falla, el constructor solo reintenta cuando el fallo la cumple (p. ej. un error de compilación). Útil cuando la prueba falla durante muchos pasos porque falta trabajo. |
 | `archivo_principal` | Opcional. Si no existe todavía, la prueba falla sin ejecutarse. |

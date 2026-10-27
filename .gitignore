@@ -32,3 +32,6 @@ Claude outputs/
 *.snm
 *.vrb
 *-SAVE-ERROR
+
+# Repos públicos que descarga el cerebro en cada paso (cerebro/repos.py)
+proyectos/*/.repos/
