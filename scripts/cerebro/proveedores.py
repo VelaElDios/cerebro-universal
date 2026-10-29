@@ -8,9 +8,12 @@ Para añadir una IA nueva:
     "max_tokens": tope de lo que puede escribir la IA (algunas APIs cortan pronto si no se dice)
     "tiempo_max": segundos de espera por respuesta (por defecto 180; los modelos grandes tardan más)
     "extra": campos que se añaden tal cual a la petición (opciones propias de cada API)
+    "stream": true → la respuesta llega a trozos. Con mensajes muy largos algunas APIs (NVIDIA) cortan
+              la conexión si tardan minutos en contestar de golpe; a trozos, la conexión no se queda parada
 - Si no lo es, se añade aquí una clase nueva con el método _llamar() y se registra en TIPOS.
 """
 
+import http.client
 import json
 import os
 import time
@@ -96,10 +99,12 @@ class Gemini(Proveedor):
         from google import genai
         from google.genai import errors, types
 
-        if not hasattr(self, "_cliente"):
+        espera = int(self.tiempo_max)
+        if getattr(self, "_espera_cliente", None) != espera:
             # Sin timeout, una llamada colgada esperaba para siempre (pasó: 26 min parada)
             self._cliente = genai.Client(api_key=self.clave,
-                                         http_options=types.HttpOptions(timeout=TIEMPO_MAX_RESPUESTA * 1000))
+                                         http_options=types.HttpOptions(timeout=espera * 1000))
+            self._espera_cliente = espera
         try:
             r = self._cliente.models.generate_content(
                 model=modelo,
@@ -120,7 +125,7 @@ class Gemini(Proveedor):
         except Exception as e:
             # Timeout (httpx.ReadTimeout...) o conexión cortada: este modelo no contesta, al siguiente
             if "timeout" in type(e).__name__.lower() or "timeout" in str(e).lower():
-                raise SaltarModelo(f"no contestó en {TIEMPO_MAX_RESPUESTA}s")
+                raise SaltarModelo(f"no contestó en {espera}s")
             raise
 
 
@@ -174,6 +179,8 @@ class CompatibleOpenAI(Proveedor):
         cuerpo.update(self.cfg.get("extra", {}))
         espera = self.tiempo_max
         try:
+            if self.cfg.get("stream"):
+                return self._llamar_a_trozos(cuerpo, espera)
             datos = self._http("POST", "/chat/completions", cuerpo, espera=espera)
         except urllib.error.HTTPError as e:
             detalle = e.read().decode("utf-8", errors="replace")[:300]
@@ -189,6 +196,10 @@ class CompatibleOpenAI(Proveedor):
             if "timed out" in str(e).lower():
                 raise SaltarModelo(f"no contestó en {espera:.0f}s")
             raise Saturado(str(e))
+        except (http.client.HTTPException, ConnectionError, OSError) as e:
+            # «Remote end closed connection without response»: la API cortó (pasa con NVIDIA y mensajes
+            # muy largos). Se salta este modelo, no el proveedor entero.
+            raise SaltarModelo(f"la conexión se cortó: {type(e).__name__}: {e}")
 
         if "error" in datos:  # algunos proveedores devuelven 200 con un error dentro
             raise Saturado(str(datos["error"])[:300])
@@ -201,6 +212,49 @@ class CompatibleOpenAI(Proveedor):
             # Se quedó sin espacio para escribir: un archivo cortado a medias rompe el proyecto
             raise SaltarModelo("la respuesta se cortó por max_tokens (sube max_tokens en config/ias.json)")
         return texto
+
+
+    def _llamar_a_trozos(self, cuerpo: dict, espera: float) -> str:
+        """Petición con "stream": la respuesta llega en eventos «data: {...}» (formato SSE de OpenAI)."""
+        cuerpo = {**cuerpo, "stream": True}
+        peticion = urllib.request.Request(
+            self.cfg["url"].rstrip("/") + "/chat/completions",
+            method="POST",
+            data=json.dumps(cuerpo).encode(),
+            headers={
+                "Authorization": f"Bearer {self.clave}",
+                "Content-Type": "application/json",
+                "Accept": "text/event-stream",
+                "X-Title": "cerebro-universal",
+            },
+        )
+        limite = time.monotonic() + espera
+        partes, fin = [], None
+        with urllib.request.urlopen(peticion, timeout=espera) as r:
+            for linea in r:
+                if time.monotonic() > limite:
+                    raise SaltarModelo(f"no terminó de contestar en {espera:.0f}s")
+                linea = linea.decode("utf-8", errors="replace").strip()
+                if not linea.startswith("data:"):
+                    continue   # líneas vacías y comentarios «: keep-alive»
+                dato = linea[5:].strip()
+                if dato == "[DONE]":
+                    break
+                try:
+                    evento = json.loads(dato)
+                except ValueError:
+                    continue
+                if "error" in evento:
+                    raise Saturado(str(evento["error"])[:300])
+                for eleccion in evento.get("choices") or []:
+                    trozo = (eleccion.get("delta") or {}).get("content")
+                    if trozo:
+                        partes.append(trozo)
+                    if eleccion.get("finish_reason"):
+                        fin = eleccion["finish_reason"]
+        if fin == "length":
+            raise SaltarModelo("la respuesta se cortó por max_tokens (sube max_tokens en config/ias.json)")
+        return "".join(partes)
 
 
 TIPOS = {"gemini": Gemini, "openai": CompatibleOpenAI}
