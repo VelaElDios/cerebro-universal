@@ -1275,3 +1275,24 @@ Se ha corregido el error de sintaxis en `chapters/04-descripcion.tex` donde una 
 Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-10-29 23:04 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Corrijo el error de compilación en `chapters/04-descripcion.tex`: el paquete `pgf-umlsd` define el entorno `sequencediagram` (minúsculas), no `sequenceDiagram`. Reescribo el archivo completo con los 5 diagramas de secuencia obligatorios usando el entorno correcto, y completo todas las secciones requeridas (requisitos, arquitectura, modelo de datos, módulos, API, flujos, seguridad, aplicación con capturas).
+
+**Archivos:** `chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:387: LaTeX Error: Environment alt undefined.
+- intento 2: ❌ ./chapters/04-descripcion.tex:359: Package tikz Error: A node must have a (possibly empty) label text. (tocó `chapters/04-descripcion.tex`)
+- intento 3: no se hace, queda poco tiempo de paso (⏱️ 4 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** El siguiente paso es completar el capítulo del juego (`chapters/04b-juego.tex`) con: concepto con cita a Vampire Survivors, manual de usuario con capturas de juego/, sistemas (tabla), arquitectura del juego (fig:arquitectura-juego en TikZ), servidor y anti-trampas con los diagramas de secuencia fig:sec-partida y fig:sec-contratar (documentación técnica §7.10-7.11), logros (tabla 29 logros + 10 equipaciones), evolución por 6 fases (tabla con etiquetas DoneTonic). También hay que asegurar que la bibliografía incluya `vampiresurvivors` (ya está en bib/ref.bib).
+
+## 2026-10-29 23:08 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
