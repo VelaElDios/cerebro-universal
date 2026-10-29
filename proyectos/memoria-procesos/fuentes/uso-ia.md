@@ -2,8 +2,9 @@
 
 Hechos para el anexo «Uso responsable de la inteligencia artificial».
 
-## En el desarrollo de la aplicación (Sprint 1)
-- Se usó Claude (Cowork) como asistente: escribió el código, los documentos y los commits (con autoría del alumno y el trailer `Co-Authored-By`), creó y fusionó los PRs y actualizó DoneTonic en el navegador.
+## En el desarrollo de la aplicación (Sprint 1 y Sprint 2)
+- Todo el proyecto, los dos sprints (incluido el juego), se hizo con Claude (Cowork), con el modelo Claude Opus 5.5 en esfuerzo alto.
+- Claude hizo de asistente: escribió el código, los documentos y los commits (con autoría del alumno y el trailer `Co-Authored-By`), creó y fusionó los PRs y actualizó DoneTonic en el navegador.
 - Las cuentas y las credenciales (Neon, Render y Google Cloud) las creó y configuró el alumno.
 - El alumno revisó la entrega del Sprint 1 frase a frase contra el enunciado (`docs/revision-entrega.md`), lo que llevó a corregir el permiso de «comprobar si un usuario está activo» (PR #30).
 - La calidad del código se apoya en las pruebas automáticas que se ejecutan en el CI en cada PR, no en la palabra de la IA.
