@@ -33,23 +33,54 @@ RAIZ = CARPETA.parents[1]                            # raíz del cerebro
 FUENTES = CARPETA / "fuentes"
 PRINCIPAL = BORRADOR / "Memoria.tex"
 
-CAPITULOS = ["01-introduccion", "03-propuesta", "04-descripcion", "05-evaluacion", "06-conclusiones"]
-ANEXOS = ["a1-desarrollo", "a2-material", "a3-uso-ia"]
-PALABRAS_MIN = {"01-introduccion": 400, "03-propuesta": 600, "04-descripcion": 1500,
-                "05-evaluacion": 400, "06-conclusiones": 300, "a1-desarrollo": 900,
-                "a2-material": 60, "a3-uso-ia": 200}
-RESUMEN_MIN = 120
-FIGURAS_MIN = 6
-TABLAS_MIN = 5
+CAPITULOS = ["01-introduccion", "03-propuesta", "04-descripcion", "04b-juego", "05-evaluacion",
+             "06-conclusiones"]
+ANEXOS = ["a1-desarrollo", "a4-trazabilidad", "a2-material", "a3-uso-ia"]
+PALABRAS_MIN = {"01-introduccion": 600, "03-propuesta": 900, "04-descripcion": 3000, "04b-juego": 1800,
+                "05-evaluacion": 1200, "06-conclusiones": 500, "a1-desarrollo": 2500,
+                "a4-trazabilidad": 150, "a2-material": 60, "a3-uso-ia": 250}
+RESUMEN_MIN = 150
+ABSTRACT_MIN = 120
+FIGURAS_MIN = 30
+TABLAS_MIN = 15
 OVERFULL_MAX_PT = 30
 # Figuras que tienen que estar (patrón en el código de los capítulos, mínimo, qué es)
 FIGURAS_OBLIGATORIAS = [
-    (r"\\begin\{tikzpicture\}", 5, "dibujos TikZ (arquitectura en capas, pipeline de CI/CD, burndown y al "
-                                    "menos 2 diagramas de secuencia: p. ej. confirmación por correo y Google)"),
-    (r"\\begin\{axis\}", 1, "gráfica pgfplots (burndown)"),
-    (r"figs/capturas/app[-/]", 3, "capturas de la aplicación"),
-    (r"figs/capturas/donetonic[-/]", 1, "captura de DoneTonic"),
-    (r"figs/capturas/hito4/", 3, "capturas del Hito 4 (correo, Google, errores)"),
+    (r"figs/capturas/app/", 4, "capturas de la aplicación (figs/capturas/app/)"),
+    (r"figs/capturas/hito4/", 4, "capturas del Hito 4 (figs/capturas/hito4/: correo, Google, errores)"),
+    (r"figs/capturas/juego/", 8, "capturas del juego (figs/capturas/juego/)"),
+    (r"figs/capturas/donetonic/", 5, "capturas de DoneTonic (figs/capturas/donetonic/: backlog, tableros y "
+                                     "gráficas de los dos sprints)"),
+    (r"figs/capturas/produccion/", 2, "capturas de producción (figs/capturas/produccion/)"),
+    (r"figs/capturas/prueba-tecnica/", 1, "capturas de la prueba técnica (figs/capturas/prueba-tecnica/)"),
+]
+# Figuras con una etiqueta fija: (label, qué tiene que llevar dentro, qué es)
+DIBUJO = r"\\begin\{(tikzpicture|sequencediagram)\}"
+FIGURAS_CON_ETIQUETA = [
+    ("fig:capas", DIBUJO, "diagrama de capas (TikZ)"),
+    ("fig:modelo-datos", DIBUJO, "modelo de datos entidad-relación (TikZ), con las tablas del juego"),
+    ("fig:sec-registro", DIBUJO, "diagrama de secuencia del registro (§7.1)"),
+    ("fig:sec-confirmacion", DIBUJO, "diagrama de secuencia de la confirmación por correo (§7.2)"),
+    ("fig:sec-login", DIBUJO, "diagrama de secuencia del inicio de sesión local (§7.3)"),
+    ("fig:sec-google", DIBUJO, "diagrama de secuencia del inicio de sesión con Google (§7.4)"),
+    ("fig:sec-baja", DIBUJO, "diagrama de secuencia de la baja (§7.8)"),
+    ("fig:sec-partida", DIBUJO, "diagrama de secuencia de una partida del juego (§7.10)"),
+    ("fig:sec-contratar", DIBUJO, "diagrama de secuencia de contratar con concurrencia optimista (§7.11)"),
+    ("fig:pipeline", DIBUJO, "pipeline de integración y despliegue continuos (§7.12 y §11)"),
+    ("fig:burndown-s1", r"\\begin\{axis\}", "burndown del Sprint 1 con pgfplots"),
+    ("fig:burndown-s2", r"\\begin\{axis\}", "burndown REAL del Sprint 2 por fechas de los PR, con pgfplots"),
+]
+# Identificadores que tienen que aparecer: (patrón con {n}, desde, hasta, dónde, qué)
+IDENTIFICADORES = [
+    ("RF-{n:02d}", 1, 13, None, "requisito funcional"),
+    ("RJ-{n:02d}", 1, 20, None, "requisito del juego"),
+    ("RNF-{n:02d}", 1, 12, None, "requisito no funcional"),
+    ("P{n}", 1, 48, "chapters/a4-trazabilidad.tex", "PBI"),
+    ("T{n}", 1, 82, "chapters/a4-trazabilidad.tex", "tarea"),
+]
+PROHIBIDO = [
+    (r"figs/capturas/(app|donetonic)-", "captura ANTIGUA (figs/capturas/app-… o donetonic-…): usa las nuevas de "
+                                        "figs/capturas/app/, hito4/, juego/, donetonic/…"),
 ]
 NUMERO_LIBRE = 20          # los números hasta este valor no hace falta que estén en las fuentes
 
@@ -116,7 +147,7 @@ def comprobar_estructura():
         if not re.search(r"\\(input|include)\{chapters/%s(\.tex)?\}" % re.escape(n), principal):
             fallo(f"Memoria.tex no incluye chapters/{n} (\\input{{chapters/{n}}})")
     pos_ap = principal.find("\\appendix")
-    pos_a1 = principal.find("chapters/a1-desarrollo")
+    pos_a1 = min((p for p in (principal.find(f"chapters/{n}") for n in ANEXOS) if p >= 0), default=-1)
     if pos_ap < 0 or (pos_a1 >= 0 and pos_ap > pos_a1):
         fallo("Memoria.tex: \\appendix tiene que ir justo antes de los anexos (chapters/a1-…)")
 
@@ -222,8 +253,21 @@ def comprobar_flotantes(textos: dict[str, str]):
                               "no se cita en el texto (usa \\ref{" + e + "})")
     codigo = "\n".join(v for k, v in textos.items() if k.startswith("chapters/"))
     for patron, minimo, que in FIGURAS_OBLIGATORIAS:
-        if len(re.findall(patron, codigo)) < minimo:
-            fallo(f"Faltan {que}: se piden al menos {minimo}")
+        hay = len(set(re.findall(patron + r"[^}]*", codigo)))
+        if hay < minimo:
+            fallo(f"Faltan {que}: hay {hay} distintas y se piden al menos {minimo}")
+    cuerpos = re.findall(r"\\begin\{figure\*?\}(.*?)\\end\{figure\*?\}", codigo, flags=re.S)
+    for etiqueta, patron, que in FIGURAS_CON_ETIQUETA:
+        con = [c for c in cuerpos if "\\label{%s}" % etiqueta in c]
+        if not con:
+            fallo(f"Falta la figura {etiqueta}: {que}")
+        elif not re.search(patron, con[0]):
+            fallo(f"La figura {etiqueta} tiene que ser un dibujo ({que}), no una imagen")
+    for patron, que in PROHIBIDO:
+        for nombre, texto in textos.items():
+            for m in re.finditer(patron, texto):
+                fallo(f"{nombre}:{linea_de(texto, m.start())}: {que}")
+                break
     if figuras < FIGURAS_MIN:
         fallo(f"Hay {figuras} figuras y se piden al menos {FIGURAS_MIN}")
     if tablas < TABLAS_MIN:
@@ -246,12 +290,28 @@ def comprobar_palabras(textos: dict[str, str]) -> int:
         if cuantas < minimo:
             fallo(f"chapters/{n}.tex: {cuantas} palabras, mínimo {minimo}")
     pre = textos.get("elements/preambulo.tex", "")
-    m = re.search(r"\{Resumen\}\}(.*?)(\\cleardoublepage|\Z)", pre, flags=re.S)
-    if not m:
-        fallo("elements/preambulo.tex: no encuentro el Resumen")
-    elif palabras(m.group(1)) < RESUMEN_MIN:
-        fallo(f"elements/preambulo.tex: el Resumen tiene {palabras(m.group(1))} palabras, mínimo {RESUMEN_MIN}")
+    for titulo, minimo, clave in (("Resumen", RESUMEN_MIN, "Palabras clave"), ("Abstract", ABSTRACT_MIN, "Keywords")):
+        m = re.search(r"\{%s\}\}(.*?)(\\cleardoublepage|\Z)" % titulo, pre, flags=re.S)
+        if not m:
+            fallo(f"elements/preambulo.tex: no encuentro el {titulo} (página con \\bft{{{titulo}}}, como el Resumen)")
+            continue
+        if palabras(m.group(1)) < minimo:
+            fallo(f"elements/preambulo.tex: el {titulo} tiene {palabras(m.group(1))} palabras, mínimo {minimo}")
+        if clave not in m.group(1):
+            fallo(f"elements/preambulo.tex: al {titulo} le faltan las «{clave}»")
     return total
+
+
+def comprobar_identificadores(textos: dict[str, str]):
+    todo = "\n".join(textos.values())
+    for patron, desde, hasta, donde, que in IDENTIFICADORES:
+        texto = textos.get(donde, "") if donde else todo
+        faltan = [patron.format(n=n) for n in range(desde, hasta + 1)
+                  if not re.search(r"(?<![A-Za-z0-9])%s(?![0-9])" % re.escape(patron.format(n=n)), texto)]
+        if faltan:
+            lugar = f" en {donde}" if donde else ""
+            fallo(f"Falta{'n' if len(faltan) > 1 else ''} {len(faltan)} {que}(s){lugar}: {', '.join(faltan[:12])}"
+                  + (" …" if len(faltan) > 12 else ""))
 
 
 # ---------- 7. Números ----------
@@ -354,6 +414,7 @@ def main():
     comprobar_bibliografia(textos, fuentes)
     figuras, tablas = comprobar_flotantes(textos)
     total = comprobar_palabras(textos)
+    comprobar_identificadores(textos)
     comprobar_numeros(textos, fuentes)
     comprobar_pdf()
 

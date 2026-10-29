@@ -1,6 +1,6 @@
 {
   "nombre": "memoria-procesos",
-  "estado": "pausado",
+  "estado": "en-construccion",
   "temas": [
     "latex",
     "memoria",
@@ -24,8 +24,12 @@
     "repo:saas/CONTRIBUTING.md",
     "repo:saas/@arbol",
     "repo:saas/memoria/bibliografia.bib",
+    "repo:saas/memoria/main.tex",
+    "repo:saas/memoria/capitulos/*.tex",
+    "repo:saas/memoria/anexos/*.tex",
     "fuentes/estructura-memoria.md",
-    "fuentes/uso-ia.md"
+    "fuentes/uso-ia.md",
+    "fuentes/bibliografia-extra.md"
   ],
   "copiar": [
     {
@@ -38,6 +42,7 @@
     "latexmkrc",
     "include/configuracion.tex",
     "include/colores.tex",
+    "include/opciones.tex",
     "elements/portada.tex",
     "figs/*"
   ],
@@ -46,7 +51,7 @@
   "reintentar_si": "^(!|\\S+\\.(tex|sty|cls|bib):\\d+:)|Fatal error|Emergency stop|Todavía no existe",
   "max_archivos_por_paso": 3,
   "pasos": 18,
-  "max_pasos": 32,
+  "max_pasos": 50,
   "max_intentos": 3,
   "ultima_ejecucion": "2026-10-13T22:18:19+02:00"
 }

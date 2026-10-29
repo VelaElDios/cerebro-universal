@@ -1166,3 +1166,27 @@ El revisor da por cumplidos todos los criterios de la spec.
 - `verificar.py` lee las mismas fuentes que las IAs (también las del repo) y pide más: 5 dibujos TikZ,
   capturas del Hito 4 y más palabras.
 - Queda **pausado** hasta que Javier suba las capturas de DoneTonic al repo.
+
+## 2026-10-29 · Preparación de la versión 3 (Claude, a petición de Javier)
+
+- Los dos sprints están cerrados (Sprint 1: Hitos 1–4; Sprint 2: la lógica del juego) y DoneTonic ya
+  tiene todo. **Ahora el juego SÍ se explica**: la memoria tiene que cubrir el proyecto entero y ser lo más
+  completa posible. Todo está en `spec.md` (versión 3).
+- Se sigue usando la **plantilla oficial del TFG** (la que pidió el profesor). La estructura de memoria que
+  hay en el repo (`repo:saas/memoria/`) se pasa solo como guía de contenidos.
+- `Memoria.tex`: capítulo nuevo `chapters/04b-juego.tex` («El juego (Sprint 2)», entre la descripción y la
+  evaluación) y anexo nuevo `chapters/a4-trazabilidad.tex`. Están creados vacíos para que compile.
+- `include/opciones.tex` (ahora protegido): título «La Grada Colchonera: juego web survivor en pixel art
+  sobre una aplicación SaaS en capas». `include/extra.tex`: `pgf-umlsd` para los diagramas de secuencia.
+- Fuentes nuevas: la documentación técnica y la gestión del repo ya cubren los dos sprints (13 diagramas de
+  secuencia, 29 historias de usuario, trazabilidad, índice de capturas). `fuentes/bibliografia-extra.md`
+  con OAuth 2.0 (RFC 6749), bcrypt y *Vampire Survivors*, comprobadas.
+- `verificar.py` (versión 3): más palabras, ≥ 30 figuras y ≥ 15 tablas, figuras con etiqueta fija (capas,
+  modelo de datos, 7 diagramas de secuencia, pipeline y los 2 burndown), capturas por carpeta, todos los
+  RF/RJ/RNF, todos los PBIs (P1–P48) y tareas (T1–T82) en el anexo de trazabilidad, y el Abstract.
+
+## Revisión humana (Javier)
+
+Prioridad: seguir el «Orden de trabajo sugerido» de `spec.md`, empezando por `chapters/04-descripcion.tex`.
+Reescribe cada archivo entero con el contenido nuevo: no lo des por bueno porque ya compile. Copia los datos
+de las fuentes tal cual (sobre todo los números pequeños: PBIs, tareas, fechas, número de PR).
