@@ -1,5 +1,71 @@
-% Capítulo nuevo de la versión 3: el juego (Sprint 2). Ver spec.md.
 \chapter{El juego (Sprint 2)}
 \label{cap:juego}
 
-% Por escribir: concepto, cómo se juega, sistemas, arquitectura, anti-trampas, logros y fases.
+\section{Concepto}
+
+La evolución del proyecto en el Sprint 2 transformó la base SaaS inicial en un videojuego web de tipo \textit{survivor} (género popularizado por \textit{Vampire Survivors} \cite{vampiresurvivors}), ambientado en la historia y la cultura del Atlético de España. El jugador controla a un deportista histórico del club en un escenario bidimensional de perspectiva isométrica (cámara 3/4) donde las armas atacan de forma automática. El objetivo consiste en sobrevivir a oleadas continuas de rivales y jefes emblemáticos, recolectando experiencia, subiendo de nivel y eligiendo mejoras tácticas para prolongar la resistencia en el tiempo.
+
+El proyecto mantiene su condición de iniciativa de aficionado sin vinculación oficial con el Club Atlético de Madrid, evitando el uso de elementos protegidos por propiedad intelectual y reinterpretando la iconografía rojiblanca a través de gráficos de estilo \textit{pixel art} generados algorítmicamente.
+
+\section{Cómo se juega (manual de usuario)}
+
+La experiencia de juego se estructura en torno a una serie de pantallas y mecánicas accesibles desde el menú principal:
+\begin{enumerate}
+    \item \textbf{Identificación y Acceso:} Con una sesión activa, la ruta \texttt{\#/jugar} da acceso al menú principal del juego. En el primer acceso se solicita un mote único y la elección de una cara para el avatar.
+    \item \textbf{Menú del Juego:} Permite acceder al Vestuario (selección de jugadores y equipaciones), Entrenamiento, Contratar, Logros, Combinaciones, Dirección (entrenadores), Ranking y Ajustes.
+    \item \textbf{Controles:} El desplazamiento se realiza mediante las teclas WASD o flechas del teclado, o mediante un joystick táctil flotante en dispositivos móviles. La pulsación de \texttt{Espacio} o \texttt{E} activa la habilidad definitiva (\textit{ulti}) del entrenador, \texttt{Esc} o \texttt{P} abre la pausa, \texttt{F} alterna la pantalla completa y las teclas numéricas \texttt{1} a \texttt{3} seleccionan las mejoras al subir de nivel.
+    \item \textbf{Dinámica de Partida:} Cada 30 segundos se genera una nueva oleada de adversarios y cada dos minutos aparece un jefe principal. Los rivales derrotados otorgan experiencia; al acumular la suficiente, el nivel asciende y se despliega un panel con tres mejoras aleatorias.
+    \item \textbf{Ambientes Temporales:} La partida evoluciona a lo largo del tiempo a través de cinco ambientes diferenciados que modifican el escenario cada cinco minutos: pretemporada, Final de la Copa del Rey, Final de Liga, Final de la Champions y Final del Mundial.
+    \item \textbf{Fin de Partida:} Al agotarse los puntos de vida del personaje, se muestra una pantalla detallada con estadísticas de daño por habilidad, duración, bajas y recompensas obtenidas para el club.
+\end{enumerate}
+
+\section{Sistemas del juego}
+
+El equilibrio y la variedad del juego descansan sobre múltiples sistemas interconectados definidos en el motor y en los ficheros de configuración:
+\begin{itemize}
+    \item \textbf{Jugadores:} Catálogo de 36 personajes históricos (4 porteros, 9 defensas, 13 medios y 10 delanteros) con estadísticas base y habilidades propias.
+    \item \textbf{Rarezas:} Clasificación en Leyenda, Épico, Raro y Común, determinando el número de habilidades accesibles y la probabilidad de obtención en los contratos.
+    \item \textbf{Entrenadores:} Dos figuras técnicas (Cholo Simeone y Luis Aragonés) que otorgan bonificaciones pasivas y disponen de una habilidad definitiva (\textit{ulti}).
+    \item \textbf{Armas y Habilidades:} 24 habilidades ofensivas, defensivas y de movilidad con cinco niveles de progresión, limitadas por restricciones temporales de aparición (\texttt{desdeMinuto}) y tiempos de recarga (\texttt{cdMin}).
+    \item \textbf{Pasivas y Sinergias:} 14 mejoras pasivas y 24 combinaciones estratégicas (\textit{metas}) que otorgan bonificaciones al acumular determinadas habilidades, desbloqueando a su vez 6 poderes definitivos (\textit{ULTRAS}).
+    \item \textbf{Rivales y Jefes:} 16 equipos rivales con comportamientos ofensivos diferenciados y 10 jefes principales dotados de tres fases de combate, escoltas y mecánicas de furia.
+    \item \textbf{Mundo Procedural:} Generación infinita de mapas basados en semillas aleatorias, con biomas, obstáculos macizos y colisiones basadas en la posición de los pies de los personajes.
+    \item \textbf{Gestión de Club y Servidor:} Persistencia de plantillas, contratos de fichaje adquiridos mediante fichas obtenidas al vencer jefes, y puntos de entrenamiento asignados a cuatro atributos principales (Vida, Defensa, Disparo y Suerte).
+    \item \textbf{Logros y Sonido:} 29 logros vinculados a hitos históricos del club que desbloquean equipaciones especiales, acompañados de un motor de audio sintetizado por Web Audio (música chiptune y efectos de grada).
+\end{itemize}
+
+\section{Arquitectura del juego}
+
+La arquitectura del juego separa estrictamente la simulación pura y determinista de la capa de presentación y renderizado, tal como esquematiza la Figura \ref{fig:arquitectura-juego}.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    box/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.2cm, align=center, minimum height=0.9cm, font=\small},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
+]
+    \node[box] (sim) {\textbf{Simulación pura (sin DOM)}\\\texttt{mundo.js}, paso fijo 1/60 s, semilla, armas, jefes};
+    \node[box, below=0.6cm of sim] (pres) {\textbf{Presentación y Renderizado}\\\texttt{juego.js}, \texttt{render.js}, sprites 16×20, Web Audio};
+    \node[box, below=0.6cm of pres] (srv) {\textbf{Servidor y Anti-trampas}\\\texttt{juegoService.js}, persistencia, validación de partidas};
+
+    \draw[arrow] (sim) -- (pres);
+    \draw[arrow] (pres) -- node[right, font=\footnotesize] {POST /api/juego} (srv);
+\end{tikzpicture}
+\caption{Arquitectura del juego: separación entre simulación, presentación y servidor.}
+\label{fig:arquitectura-juego}
+\end{figure}
+
+El motor de simulación opera mediante un paso de tiempo fijo de 1/60 s y un generador de números pseudoaleatorios con semilla, garantizando la reproducibilidad exacta de las partidas sin depender de la tasa de fotogramas por segundo (\textit{FPS}) del navegador.
+
+\section{Servidor y validación anti-trampas}
+
+Para preservar la integridad del ranking de la grada y evitar manipulaciones en el progreso del club, el servidor implementa un riguroso mecanismo anti-trampas:
+\begin{itemize}
+    \item \textbf{Control de partidas en curso:} Al iniciar una partida, el servidor registra el identificador y el reloj de inicio.
+    \item \textbf{Validación de resultados:} Al finalizar, se rechazan resultados con duraciones imposibles, tiempos superiores al transcurrido o métricas de jefes, nivel y bajas que excedan los límites biológicos y estadísticos admisibles por el motor.
+    \item \textbf{Concurrencia optimista:} Las operaciones de actualización sobre el perfil del club emplean un control de versión numérico (\texttt{version}) para evitar condiciones de carrera en peticiones simultáneas de fichajes o entrenamiento.
+\end{itemize}
+
+\section{Logros y evolución por fases}
+
+El sistema de logros registra hitos estadísticos y ofrece contexto histórico sobre el club. El desarrollo del Sprint 2 se estructuró secuencialmente en seis fases operativas en DoneTonic (P20 a P48), abarcando desde el rediseño inicial de la interfaz y el motor del \textit{survivor}, pasando por el club persistente en servidor, la introducción de sinergias y mundos procedurales, hasta el pulido de rarezas, equilibrado de combate, integración de logros y refuerzo de la calidad técnica.

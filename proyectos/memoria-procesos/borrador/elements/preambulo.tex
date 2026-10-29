@@ -104,7 +104,22 @@ Fdo.: \autor
 \end{center}
 \vskip1cm
 
-Esta memoria describe el diseño, la implementación y el proceso de desarrollo del Sprint 1 del proyecto La Grada Colchonera, una aplicación SaaS organizada en capas con gestión de usuarios, desarrollada como parte de la asignatura Procesos de Ingeniería del Software. El trabajo abarca desde la estructuración inicial de un servidor Express con Node.js y una base de datos relacional en PostgreSQL hasta el establecimiento de un flujo de trabajo riguroso basado en Scrum mediante DoneTonic, control de versiones con GitHub Flow, integración continua y despliegue automático en la nube a través de Google Cloud Run. Se detallan exhaustivamente la arquitectura en capas del sistema, el modelo de datos, la gestión segura de sesiones y contraseñas mediante hash, así como la evaluación de la calidad mediante pruebas automatizadas y la revisión de requisitos funcionales y no funcionales.
+Esta memoria describe el diseño, la implementación y el proceso de desarrollo completo del proyecto \textit{La Grada Colchonera}, una aplicación SaaS organizada en capas con gestión de usuarios y un juego web de tipo \textit{survivor} en pixel art, desarrollado como parte de la asignatura Procesos de Ingeniería del Software (curso 2026-2027). El trabajo abarca dos sprints: el Sprint 1 (29/09–27/10/2026, Hitos 1–4) construye la base SaaS con cuentas, sesión, roles, PostgreSQL, correo, Google OAuth, errores, logs, CI/CD y despliegue en Google Cloud Run; el Sprint 2 (23/10–29/10/2026) implementa la lógica del juego: motor survivor con oleadas, jefes, armas automáticas, mejoras, mundo procedural, club persistente en servidor con validación anti-trampas, logros con historia del Atlético de Madrid, música chiptune y sonidos de grada. Se detalla exhaustivamente la arquitectura en capas, el modelo de datos, la gestión segura de sesiones y contraseñas mediante bcrypt, la metodología Scrum en DoneTonic, GitHub Flow, trazabilidad requisito → PBI → tarea → PR, y la evaluación con 276 pruebas automatizadas y revisión frase a frase contra el enunciado.
 
 \medskip
-\noindent\textbf{Palabras clave:} SaaS, Scrum, GitHub Flow, Node.js, PostgreSQL, Google Cloud Run, Ingeniería del Software.
+\noindent\textbf{Palabras clave:} SaaS, Scrum, GitHub Flow, Node.js, PostgreSQL, Google Cloud Run, survivor, pixel art, anti-cheat, Ingeniería del Software.
+
+% -------------------------------
+% Abstract
+% -------------------------------
+\cleardoublepage
+\thispagestyle{plain}
+\begin{center}
+\Large{\bft{Abstract}}
+\end{center}
+\vskip1cm
+
+This memoir describes the design, implementation, and development process of the \textit{La Grada Colchonera} project, a layered SaaS application with user management and a web \textit{survivor}-style game in pixel art, developed for the Software Engineering Processes course (2026-2027). The work spans two sprints: Sprint 1 (29/09–27/10/2026, Milestones 1–4) builds the SaaS foundation with accounts, sessions, roles, PostgreSQL, email, Google OAuth, error handling, logging, CI/CD, and deployment on Google Cloud Run; Sprint 2 (23/10–29/10/2026) implements the game logic: survivor engine with waves, bosses, automatic weapons, upgrades, procedural world, server-persisted club with anti-cheat validation, achievements tied to Atlético de Madrid history, chiptune music, and crowd sounds. The memoir thoroughly details the layered architecture, data model, secure session and password management with bcrypt, Scrum methodology in DoneTonic, GitHub Flow, requirement → PBI → task → PR traceability, and evaluation with 276 automated tests and phrase-by-phrase review against the specification.
+
+\medskip
+\noindent\textbf{Keywords:} SaaS, Scrum, GitHub Flow, Node.js, PostgreSQL, Google Cloud Run, survivor, pixel art, anti-cheat, Software Engineering.

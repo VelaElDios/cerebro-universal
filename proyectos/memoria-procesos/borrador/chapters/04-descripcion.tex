@@ -3,235 +3,916 @@
 
 \section{Requisitos del sistema}
 
-El alcance del proyecto se estructura en requisitos funcionales (RF) y no funcionales (RNF), derivados directamente de la especificación oficial de la asignatura \cite{enunciado}. La Tabla \ref{tab:requisitos} resume estos requisitos y su estado de cumplimiento al cierre del Sprint 1.
+El alcance del proyecto se estructura en requisitos funcionales del Sprint 1 (RF), requisitos funcionales del juego Sprint 2 (RJ) y requisitos no funcionales (RNF), derivados directamente de la especificación oficial y de la documentación técnica \cite{enunciado,documentacion-tecnica}. Las tablas siguientes resumen cada requisito con su identificador, descripción, PBI asociado y dónde se cumple en el código.
 
 \begin{table}[htbp]
 \centering
 \small
-\begin{tabular}{@{}L{1.3cm} L{7.5cm} L{3.2cm}@{}}
+\begin{longtable}{@{}L{1.1cm} L{8.5cm} L{1.5cm} L{3.5cm}@{}}
+\caption{Requisitos funcionales del Sprint 1 (Hitos 1–4).}\label{tab:rf-sprint1}\\
 \toprule
-\textbf{Código} & \textbf{Descripción del requisito} & \textbf{Estado de entrega} \\
-\midrule
-RF-1 & Backend sirve frontend desde el mismo origen sin CORS & Cumplido (Hito 1) \\
-RF-2 & Desacoplamiento estricto en tres capas (API, lógica y datos) & Cumplido (Hito 1) \\
-RF-3 & Registro de usuario local con contraseña de al menos 8 caracteres & Cumplido (Hito 2) \\
-RF-4 & Confirmación de registro por correo electrónico (estado pendiente) & Pospuesto (Hito 4) \\
-RF-5 & Autenticación local y mantenimiento de sesión persistente & Cumplido (Hito 2) \\
-RF-6 & Inicio de sesión externo mediante proveedor OAuth & Pospuesto (Hito 4) \\
-RF-7 & Cierre de sesión con destrucción en servidor e invalidación & Cumplido (Hito 2) \\
-RF-8 & Roles de usuario y administrador & Cumplido (Hito 3) \\
-RF-9 & Listado de usuarios con email, rol y estado (solo admin) & Cumplido (Hito 3) \\
-RF-10 & Comprobación de estado activo reservada al administrador & Cumplido (Hito 3) \\
-RF-11 & Eliminación de cuenta por el propio usuario o por administrador & Cumplido (Hito 3) \\
-RF-12 & Baja lógica sin reactivación y protección del último admin & Cumplido (Hito 3) \\
-\midrule
-RNF-1 & Persistencia relacional resistente a reinicios en PostgreSQL & Cumplido (Hito 3) \\
-RNF-2 & Secretos desacoplados en variables de entorno y Secret Manager & Cumplido (Hito 3) \\
-RNF-3 & Derivación segura de contraseñas con función de hash bcrypt & Cumplido (Hito 2) \\
-RNF-4 & Control de acceso y rutas protegidas en servidor (401 y 403) & Cumplido (Hito 2) \\
-RNF-5 & Despliegue en la nube accesible mediante URL pública & Cumplido (Hitos 1 y 4) \\
-RNF-6 & Batería de pruebas automatizadas ejecutables con un solo comando & Cumplido (Hito 1) \\
-RNF-7 & Registro de actividad en JSON estructurado por salida estándar & Cumplido (Hito 3) \\
-RNF-8 & Control de versiones con GitHub Flow e integración continua & Cumplido (Hitos 1–3) \\
+\textbf{Id} & \textbf{Requisito} & \textbf{PBI} & \textbf{Dónde se cumple} \\ \midrule \endfirsthead
+\toprule
+\textbf{Id} & \textbf{Requisito} & \textbf{PBI} & \textbf{Dónde se cumple} \\ \midrule \endhead
+RF-01 & Registro con email y contraseña (validación, email único, contraseña ≥ 8) & P8 & \texttt{userService.register}, \texttt{POST /api/auth/register}, \texttt{vista registro.js} \\
+RF-02 & Inicio de sesión local, mismo mensaje si email no existe o contraseña incorrecta & P8 & \texttt{userService.authenticate}, \texttt{POST /api/auth/login} \\
+RF-03 & Mantener sesión al recargar y cerrarla en el servidor & P9 & \texttt{express-session} + tabla \texttt{session}, \texttt{GET /api/auth/me}, \texttt{POST /api/auth/logout} \\
+RF-04 & Rutas protegidas en el servidor (401 sin sesión) & P10 & \texttt{requireAuth} \\
+RF-05 & Persistencia en base de datos real (PostgreSQL) & P11 & \texttt{postgresUserRepository}, migraciones \\
+RF-06 & Roles usuario y administrador, con primer administrador & P13 & \texttt{requireRole}, \texttt{requireSelfOrRole}, \texttt{userService.ensureAdmin} \\
+RF-07 & Listar usuarios, ver si activo, cambiar roles (solo admin) & P13 & \texttt{GET /api/users}, \texttt{GET /api/users/:id/active}, \texttt{PATCH /api/users/:id/role}, \texttt{vista admin.js} \\
+RF-08 & Baja (y admin elimina); nunca eliminar último admin; tras baja se puede volver con mismo email & P13 & \texttt{DELETE /api/users/:id} (baja lógica), \texttt{vistas perfil.js y admin.js} \\
+RF-09 & Registro de actividad relevante & P14 & \texttt{src/logger.js}, \texttt{requestLogger} \\
+RF-10 & Confirmación de cuenta por correo, con reenvío & P16 & \texttt{accountConfirmationService}, \texttt{tokenSigner}, \texttt{mailer}, \texttt{GET /api/auth/confirm}, \texttt{POST /api/auth/resend-confirmation} \\
+RF-11 & Inicio de sesión con proveedor externo (Google, OAuth 2.0) & P15 & \texttt{googleOAuth.js}, \texttt{GET /api/auth/google}, \texttt{GET /api/auth/google/callback}, \texttt{userService.loginWithOAuth} \\
+RF-12 & Manejo de errores con información clara al usuario & P17 & \texttt{errorHandler.js}, \texttt{componentes.js}, \texttt{avisos.js}, \texttt{api.js} (timeout) \\
+RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & \texttt{domainPolicy.js}, \texttt{POST /api/prueba/dominio} \\
 \bottomrule
-\end{tabular}
-\caption{Requisitos funcionales y no funcionales del Sprint 1.}
-\label{tab:requisitos}
+\end{longtable}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{longtable}{@{}L{1.1cm} L{8.5cm} L{1.5cm} L{3.5cm}@{}}
+\caption{Requisitos funcionales del juego (Sprint 2).}\label{tab:rj-sprint2}\\
+\toprule
+\textbf{Id} & \textbf{Requisito} & \textbf{PBI} & \textbf{Dónde se cumple} \\ \midrule \endfirsthead
+\toprule
+\textbf{Id} & \textbf{Requisito} & \textbf{PBI} & \textbf{Dónde se cumple} \\ \midrule \endhead
+RJ-01 & Con sesión, inicio es menú del juego; sin sesión no se juega y progreso ligado a cuenta & P20, P29 & \texttt{ui.js} (ruta \texttt{\#/jugar}), \texttt{requireAuth} en \texttt{/api/juego}, tablas \texttt{juego\_perfiles} y \texttt{juego\_records} \\
+RJ-02 & Partida survivor infinita: oleadas, experiencia, mejoras al subir nivel, dificultad creciente & P21, P24, P34 & \texttt{mundo.js}, \texttt{oleadas.js}, \texttt{mejoras.js}, \texttt{config.js} \\
+RJ-03 & Gráficos pixel art generados por código y cámara 3/4 & P22, P45 & \texttt{sprites.js}, \texttt{render.js}, \texttt{render-mundo.js} \\
+RJ-04 & Elegir jugador (36, stats por posición, habilidades propias, rareza por historia) y entrenador (2, con ulti) & P23, P38 & \texttt{Vestuario y Dirección (juego.js)}, \texttt{config.js}, \texttt{ulti.js} \\
+RJ-05 & Armas automáticas 5 niveles, pasivas, habilidades que suben desde cierto minuto & P24, P39 & \texttt{armas.js}, \texttt{mejoras.js}, \texttt{combate.js} \\
+RJ-06 & Rivales con comportamiento propio (embisten, disparan, rodean obstáculos, élites) & P25 & \texttt{rivales.js}, \texttt{oleadas.js} \\
+RJ-07 & Jefes 3 fases, avisos ataque, escolta, furia, jugada estrella & P26, P46 & \texttt{jefes.js}, \texttt{oleadas.js} \\
+RJ-08 & Mundo procedural con terreno, obstáculos macizos, colisiones exactas & P27, P35, P41 & \texttt{terreno.js}, \texttt{mundo.js} \\
+RJ-09 & Ambientes cambian cada 5 min (pretemporada a Final Mundial) & P36 & \texttt{config.js}, \texttt{render-mundo.js}, \texttt{musica.js} \\
+RJ-10 & Jugable teclado, ratón, táctil; pausa, pantalla completa, ajustes & P28 & \texttt{entrada.js}, \texttt{ajustes.js}, \texttt{juego.js} \\
+RJ-11 & Club guardado en servidor con validación anti-trampas cada partida & P29 & \texttt{juegoService.finalizarPartida}, migración 003 \\
+RJ-12 & Fichar jugadores con fichas contrato (1 por 3 jefes), sorteadas por rareza & P30, P38 & \texttt{club.js}, \texttt{POST /api/juego/contratar}, \texttt{firma.js} \\
+RJ-13 & Entrenar jugadores con puntos por bajas y jefes & P31 & \texttt{club.js}, \texttt{POST /api/juego/entrenar} \\
+RJ-14 & Ranking grada con mejor partida cada usuario (sin email) & P32 & \texttt{juego\_records}, \texttt{GET /api/juego/ranking} \\
+RJ-15 & Combinaciones y ULTRAS, pantalla con requisitos & P33, P40 & \texttt{ultras.js}, \texttt{render-ultras.js}, pantalla Combinaciones \\
+RJ-16 & Modo pruebas solo administradores & P34 & \texttt{POST /api/juego/desbloquear}, \texttt{scripts/desbloquear-juego.js} \\
+RJ-17 & Mote único y avatar, en cabecera, Mi cuenta y ranking & P37 & \texttt{PUT /api/juego/identidad}, migración 004 \\
+RJ-18 & Logros con historia Atleti, validados en servidor, equipaciones desbloqueables & P42 & \texttt{logros.js}, \texttt{juegoService} \\
+RJ-19 & Pantalla fin con estadísticas y daño por habilidad & P43 & \texttt{fin-ui.js}, \texttt{combate.js} \\
+RJ-20 & Música chiptune, efectos, grada, ajustes volumen & P44 & \texttt{audio.js}, \texttt{musica.js}, \texttt{ajustes.js} \\
+\bottomrule
+\end{longtable}
+\end{table}
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{longtable}{@{}L{1.1cm} L{8.5cm} L{5.0cm}@{}}
+\caption{Requisitos no funcionales.}\label{tab:rnf}\\
+\toprule
+\textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endfirsthead
+\toprule
+\textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endhead
+RNF-01 & Seguridad credenciales y sesiones & Hash bcrypt, cookie \texttt{httpOnly}+\texttt{secure}+\texttt{sameSite}, regeneración sesión, permisos servidor, consultas parametrizadas (§8) \\
+RNF-02 & Secretos fuera del código & Variables entorno; Secret Manager producción; app no arranca si falta secreto obligatorio \\
+RNF-03 & Separación en capas & API → lógica → datos/integraciones, inyección dependencias (§5) \\
+RNF-04 & Pruebas automáticas y CI obligatorio & 276 pruebas con \texttt{node:test}; ramas protegidas exigen CI verde \\
+RNF-05 & Despliegue continuo URL pública & Cloud Run (principal) y Render (alternativo), sin intervención manual \\
+RNF-06 & Disponibilidad y coste & Escala a cero (capas gratuitas y créditos educación); si versión no arranca, sirve anterior \\
+RNF-07 & Accesibilidad & HTML semántico, foco gestionado, \texttt{aria-live} avisos, errores \texttt{aria-describedby}, teclado, \texttt{prefers-reduced-motion} \\
+RNF-08 & Responsive & Diseño adaptable: admin tarjetas en móvil; joystick táctil juego \\
+RNF-09 & Rendimiento juego & 60 FPS portátil normal: paso fijo, búsqueda espacial celdas, texturas cacheadas y precargadas \\
+RNF-10 & Trazabilidad & Requisito → PBI → tarea → rama → PR → release (§4.4) \\
+RNF-11 & Privacidad & Política pública; ranking no muestra email; logs ocultan datos sensibles \\
+RNF-12 & Mantenibilidad & Sin frameworks ni compilación frontend; equilibrio juego en \texttt{config.js}; módulos pequeños comentados \\
+\bottomrule
+\end{longtable}
 \end{table}
 
 \section{Arquitectura de la solución}
 
-La arquitectura del sistema sigue un modelo desacoplado en tres niveles en el servidor, acompañado por la separación entre interfaz y cliente en el navegador. La Figura \ref{fig:arquitectura} ilustra la comunicación y las fronteras de responsabilidad del sistema.
+La arquitectura del sistema sigue un modelo cliente-servidor en capas. El servidor (Node.js + Express) sirve también el frontend estático, así que todo vive en el mismo origen. La Figura \ref{fig:capas} muestra la vista general con las capas y sus responsabilidades.
 
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    box/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.2cm, align=center, minimum height=1cm, font=\small},
-    clientbox/.style={rectangle, draw=azul, fill=blanco, rounded corners, text width=5.2cm, align=center, minimum height=1cm, font=\small},
+    box/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.8cm, align=center, minimum height=1cm, font=\small},
+    clientbox/.style={rectangle, draw=azul, fill=blanco, rounded corners, text width=4.8cm, align=center, minimum height=1cm, font=\small},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Navegador
-    \node[clientbox] (gui) {\textbf{Presentación (GUI)}\\\texttt{public/js/ui.js}: Vistas y navegación hash};
-    \node[clientbox, below=0.6cm of gui] (client) {\textbf{Cliente de comunicación}\\\texttt{public/js/api.js}: Peticiones fetch y errores};
+    \node[clientbox] (gui) {\textbf{Presentación (GUI)}\\\texttt{public/js/ui.js}: Vistas, navegación hash, formularios, avisos};
+    \node[clientbox, below=0.6cm of gui] (client) {\textbf{Cliente API}\\\texttt{public/js/api.js}: Único \texttt{fetch}, timeout 15s, \texttt{ApiError}, sesión caducada};
+    \node[clientbox, below=0.6cm of client] (game) {\textbf{Juego (Canvas + Web Audio)}\\\texttt{public/js/game/}: Simulación, render, audio, HUD, entrada};
     
     % Servidor
-    \node[box, below=1cm of client] (api) {\textbf{Capa API}\\\texttt{src/api/}: Rutas Express, middlewares y sesiones};
-    \node[box, below=0.6cm of api] (logic) {\textbf{Lógica de negocio}\\\texttt{src/services/}: Reglas de negocio e identidades};
-    \node[box, below=0.6cm of logic] (data) {\textbf{Acceso a datos}\\\texttt{src/repositories/}: Repositorio PostgreSQL / Memoria};
+    \node[box, below=1cm of game] (api) {\textbf{Capa API (\texttt{src/api/})}\\\texttt{auth.js, users.js, juego.js, currentUser.js, errorHandler.js, requestLogger}};
+    \node[box, below=0.6cm of api] (logic) {\textbf{Lógica (\texttt{src/services/})}\\\texttt{userService, accountConfirmationService, tokenSigner, passwordHasher, juegoService, domainPolicy}};
+    \node[box, below=0.6cm of logic] (data) {\textbf{Datos (\texttt{src/repositories/})}\\\texttt{memoryUserRepository, postgresUserRepository, memoryJuegoRepository, postgresJuegoRepository}};
+    \node[box, below=0.6cm of data] (int) {\textbf{Integraciones (\texttt{src/integrations/})}\\\texttt{mailer.js (SMTP)}, \texttt{googleOAuth.js (OAuth 2.0)}};
     
-    % Base de datos
-    \node[box, fill=gris75!40, below=0.8cm of data] (db) {\textbf{PostgreSQL (Neon, Frankfurt)}\\Tablas: \texttt{users}, \texttt{session}, \texttt{schema\_migrations}};
+    % Base de datos y servicios externos
+    \node[box, fill=gris75!40, below=0.8cm of data] (db) {\textbf{PostgreSQL (Neon, Frankfurt)}\\Tablas: \texttt{users}, \texttt{session}, \texttt{juego\_perfiles}, \texttt{juego\_records}, \texttt{schema\_migrations}};
+    \node[box, fill=gris75!40, right=2.5cm of int] (smtp) {\textbf{SMTP Gmail}\\Correo confirmación};
+    \node[box, fill=gris75!40, right=2.5cm of smtp] (google) {\textbf{Google OAuth 2.0}\\Login federado};
 
     % Flechas
     \draw[arrow] (gui) -- (client);
-    \draw[arrow] (client) -- node[right, font=\footnotesize] {HTTP / JSON} (api);
+    \draw[arrow] (client) -- node[right, font=\footnotesize] {HTTP + JSON + cookie sesión} (api);
+    \draw[arrow] (game) -- (client);
     \draw[arrow] (api) -- (logic);
     \draw[arrow] (logic) -- (data);
+    \draw[arrow] (logic) -- (int);
     \draw[arrow] (data) -- (db);
-
+    \draw[arrow] (int) -- (smtp);
+    \draw[arrow] (int) -- (google);
+    \draw[arrow, dashed] (logic) -- node[left, font=\footnotesize] {reglas compartidas} ++(-2.5cm,0) node[box, anchor=east] (rules) {\texttt{club.js, config.js, logros.js}};
 \end{tikzpicture}
-\caption{Arquitectura en capas y flujo de interacción del sistema.}
-\label{fig:arquitectura}
+\caption{Arquitectura en capas: navegador (presentación, cliente API, juego) y servidor (API, lógica, datos, integraciones).}
+\label{fig:capas}
 \end{figure}
 
-Las fronteras de comunicación entre módulos están rigurosamente delimitadas:
-\begin{itemize}
-    \item \textbf{Frontera GUI -- Cliente:} La interfaz \texttt{public/js/ui.js} no invoca directamente funciones de red; delega toda interacción en el cliente \texttt{public/js/api.js}.
-    \item \textbf{Frontera API -- Lógica:} Los controladores de \texttt{src/api/users.js} y \texttt{src/api/auth.js} procesan peticiones HTTP e invocan los métodos de \texttt{userService}, sin contener reglas de negocio.
-    \item \textbf{Frontera Lógica -- Datos:} El servicio \texttt{userService} invoca operaciones definidas en el contrato del repositorio sin conocer si la persistencia es volátil o relacional.
-    \item \textbf{Conexión global:} El archivo \texttt{src/app.js} es el único punto donde se inyectan las dependencias entre capas.
-\end{itemize}
+\subsection{Decisiones de diseño}
 
-\subsection{Modelo de datos}
+Cada decisión técnica adoptada responde a requisitos funcionales y de seguridad, explicando el porqué frente a alternativas (fuente: documentación técnica §5.2).
 
-La persistencia relacional en PostgreSQL se articula mediante migraciones SQL versionadas que definen tres tablas principales:
-\begin{itemize}
-    \item \textbf{\texttt{users}:} Almacena las identidades del sistema. Contiene los campos \texttt{id} (UUID, clave primaria), \texttt{email} (TEXT, único), \texttt{password\_hash} (TEXT, hash bcrypt), \texttt{role} (\texttt{'user'} o \texttt{'admin'}), \texttt{status} (\texttt{'pending'}, \texttt{'active'} o \texttt{'deleted'}), \texttt{auth\_provider} (\texttt{'local'} o \texttt{'google'}), \texttt{created\_at} (TIMESTAMPTZ) y \texttt{deleted\_at} (TIMESTAMPTZ).
-    \item \textbf{\texttt{session}:} Estructurada según el estándar de \texttt{connect-pg-simple}, con campos \texttt{sid}, \texttt{sess} (JSON con datos serializados) y \texttt{expire}.
-    \item \textbf{\texttt{schema\_migrations}:} Registra los ficheros de migración ejecutados secuencialmente.
-\end{itemize}
-
-Un usuario se considera activo en el sistema cuando su atributo \texttt{status} es igual a \texttt{'active'}, lo que certifica que la cuenta no ha sido dada de baja ni permanece pendiente de confirmación.
-
-\subsection{Ciclo de sesión y control de acceso}
-
-El ciclo de vida de la autenticación se apoya en cookies de sesión firmadas:
-\begin{enumerate}
-    \item El cliente envía credenciales mediante \texttt{POST /api/auth/login}.
-    \item La lógica valida la existencia del usuario y compara la contraseña mediante \texttt{bcryptjs}.
-    \item Ante el éxito, Express regenera la sesión para evitar ataques de fijación de sesión, asigna el identificador del usuario y guarda el registro en la base de datos relacional.
-    \item El servidor emite una cookie \texttt{grada.sid} con directivas \texttt{httpOnly}, \texttt{sameSite=lax} y una caducidad de 7 días.
-    \item Al recargar la aplicación, el cliente invoca \texttt{GET /api/auth/me}. Si el usuario hubiera sido eliminado con posterioridad, la sesión queda automáticamente invalidada.
-    \item Al solicitar \texttt{POST /api/auth/logout}, la sesión se destruye en la tabla \texttt{session} del servidor y se limpia la cookie del navegador.
-\end{enumerate}
-
-\subsection{Especificación de la API}
-
-La Tabla \ref{tab:api} detalla las operaciones provistas por la capa API bajo el prefijo común \texttt{/api}.
-
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{1.3cm} L{3.2cm} L{1.8cm} L{5.5cm}@{}}
+\begin{longtable}{@{}L{3.0cm} L{4.0cm} L{7.5cm}@{}}
+\caption{Decisiones de diseño principales.}\label{tab:decisiones}\\
 \toprule
-\textbf{Método} & \textbf{Ruta} & \textbf{Acceso} & \textbf{Propósito} \\
-\midrule
-GET & \texttt{/api/health} & Público & Comprobación de salud del servidor \\
-POST & \texttt{/api/auth/register} & Público & Registro con email y contraseña (mínimo 8) \\
-POST & \texttt{/api/auth/login} & Público & Inicio de sesión con credenciales locales \\
-POST & \texttt{/api/auth/logout} & Público & Destrucción de la sesión en el servidor \\
-GET & \texttt{/api/auth/me} & Sesión & Obtención del usuario con sesión activa \\
-GET & \texttt{/api/users} & Admin & Listado de usuarios (email, rol y estado) \\
-GET & \texttt{/api/users/:id/active} & Admin & Comprobación del estado activo \\
-PATCH & \texttt{/api/users/:id/role} & Admin & Modificación de rol de usuario \\
-DELETE & \texttt{/api/users/:id} & Propio / Admin & Baja lógica de cuenta de usuario \\
-\bottomrule
-\end{tabular}
-\caption{Endpoints expuestos por la API REST.}
-\label{tab:api}
-\end{table}
-
-\section{Decisiones técnicas y de diseño}
-
-Cada decisión técnica adoptada en el proyecto responde a requisitos funcionales y de seguridad:
-\begin{itemize}
-    \item \textbf{Node.js 22 y Express 5:} Permite unificar JavaScript en cliente y servidor, aprovechando la captura nativa de excepciones asíncronas en Express 5 \cite{express,nodejs}.
-    \item \textbf{Frontend sin framework compilado:} Elimina la necesidad de transpilación, asegura la entrega desde el mismo origen y delimita nítidamente la capa visual (\texttt{ui.js}) de la capa cliente (\texttt{api.js}).
-    \item \textbf{Patrón repositorio e inyección de dependencias:} Se implementaron dos repositorios intercambiables (\texttt{memoryUserRepository} y \texttt{postgresUserRepository}) bajo la misma interfaz. Esto posibilitó migrar al almacenamiento relacional sin modificar la lógica de negocio.
-    \item \textbf{Baja lógica (\texttt{status = 'deleted'}):} Evita la eliminación física de registros para preservar auditorías y previene que una cuenta dada de baja vuelva a autenticarse.
-    \item \textbf{Ofuscación de mensajes de autenticación:} Se devuelve el mismo mensaje ante correos no registrados o contraseñas inválidas, evitando la enumeración de usuarios.
-    \item \textbf{Inicialización del primer administrador (\texttt{ensureAdmin}):} Configurado al arrancar mediante \texttt{ADMIN\_EMAIL} y \texttt{ADMIN\_PASSWORD}. Se ejecuta de forma idempotente sin almacenar credenciales en el código fuente.
-    \item \textbf{Protección del último administrador:} La lógica impide degradar o eliminar al último administrador, garantizando que el sistema nunca quede huérfano de gestión.
-    \item \textbf{Logging estructurado en JSON:} Emisión por salida estándar hacia Cloud Logging, enmascarando contraseñas, secretos y tokens de sesión.
-\end{itemize}
-
-\section{Desarrollo del proyecto}
-
-El desarrollo se organizó en torno al Sprint 1, articulando la implementación en los hitos pedagógicos semanales. La Tabla \ref{tab:resumen-sprint} sintetiza las dimensiones generales del ciclo, cuyo desglose detallado se analiza en el Anexo \ref{anx:desarrollo}.
-
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{2.0cm} L{3.0cm} L{4.2cm} L{2.8cm}@{}}
+\textbf{Decisión} & \textbf{Alternativas} & \textbf{Por qué} \\ \midrule \endfirsthead
 \toprule
-\textbf{Ciclo} & \textbf{Periodo} & \textbf{Objetivo central} & \textbf{Estado final} \\
-\midrule
-Sprint 1 & 29/09/2026 -- 27/10/2026 & Base SaaS con gestión de usuarios, CI/CD y despliegue cloud & 16 PBIs hechos (3 pospuestos a Hito 4) \\
+\textbf{Decisión} & \textbf{Alternativas} & \textbf{Por qué} \\ \midrule \endhead
+Express 5 sin framework frontend & React, Vue, Next.js & Proyecto individual didáctico: capas visibles como ficheros, sin compilación, backend sirve frontend (sin CORS), frontera interfaz/cliente en dos ficheros. Express 5 pasa errores \texttt{async} a manejador común \\
+Repositorio dos implementaciones (memoria y PostgreSQL) & Solo PostgreSQL; ORM & Arranque y pruebas sin BD; mismas pruebas pasan en ambas, demuestra lógica independiente del almacenamiento (patrón Repository) \\
+Inyección dependencias por parámetro & Módulos globales, singletons & Cada servicio recibe dependencias (\texttt{userRepository, passwordHasher, mailer, tokenSigner, reloj, azar}); pruebas usan versiones falsas sin trucos \\
+Sesiones en servidor (\texttt{express-session} + PostgreSQL) & JWT en navegador & Cerrar sesión o eliminar cuenta invalida al momento; cookie \texttt{httpOnly} sin datos; sesiones sobreviven a reinicios y despliegues \\
+Bajas lógicas (\texttt{status = deleted}) con email libre & Borrar fila; bloquear email siempre & Conserva historial y auditoría; cuenta no entra, sesión deja de valer, pero email y mote libres para nueva cuenta (índice único parcial migración 005) \\
+Token confirmación firmado (HMAC) sin guardar en BD & Token aleatorio en tabla & Sin tabla ni limpieza; caduca solo; no se puede fabricar ni modificar sin secreto \\
+OAuth 2.0 escrito con \texttt{fetch} & Passport.js u otra librería & Flujo corto y entendible (\texttt{state}, intercambio código, email verificado); menos dependencias, fácil probar con cliente falso \\
+Primer administrador por variables entorno & Script SQL, insertar a mano & Sin contraseñas en código ni scripts; idempotente (si existe, no se toca) \\
+Migraciones SQL propias & ORM con migraciones & Pocas tablas; SQL legible y versionado, con registro de aplicadas \\
+Cloud Run principal, Render alternativo & Solo uno & Cloud Run aprovecha créditos educación, escala a cero, Secret Manager, acceso sin claves (WIF); Render primer despliegue, respaldo \\
+Reglas juego compartidas cliente/servidor & Reglas duplicadas & Servidor importa \texttt{club.js, config.js, logros.js}: una sola fuente verdad para fichajes, entrenamiento, logros \\
+Concurrencia optimista perfil juego (\texttt{version}) & Bloqueos, transacciones largas & Dos peticiones simultáneas no gastan dos veces misma ficha; segunda se reintenta con datos nuevos \\
+Simulación juego pura y determinista & Lógica mezclada con dibujo & Paso fijo 1/60 s y azar con semilla: se prueba en Node sin navegador, resultado no depende de FPS \\
+Gráficos y sonido generados con código & Imágenes y ficheros audio & Sin problemas derechos (nada oficial), carga instantánea, fácil variar (equipaciones, selecciones, intensidad música) \\
 \bottomrule
-\end{tabular}
-\caption{Resumen del Sprint 1 del proyecto.}
-\label{tab:resumen-sprint}
-\end{table}
+\end{longtable}
 
-\section{Manual de usuario: La Grada Colchonera}
+\section{Modelo de datos}
 
-La interacción con \textit{La Grada Colchonera} se realiza a través de su interfaz web de estética rojiblanca. A continuación se describe el funcionamiento de los flujos de usuario principales.
-
-\subsection{Página de inicio y registro}
-
-Al acceder a la URL principal, la aplicación muestra el estado operativo del servicio y los accesos públicos, tal como se observa en la Figura \ref{fig:app-inicio}.
+La Figura \ref{fig:modelo-datos} muestra el diagrama entidad-relación con las tablas del juego incluidas.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/capturas/app-01-inicio.png}
-\caption{Pantalla de inicio de la aplicación con comprobación del estado del servidor.}
+\begin{tikzpicture}[
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.2cm, font=\small},
+    attr/.style={font=\small},
+    pk/.style={font=\small, underline},
+    fk/.style={font=\small, italic},
+    rel/.style={diamond, draw=tema, fill=gris95, aspect=2, font=\small},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
+]
+    % Entidades
+    \node[entity] (users) {
+        \textbf{users}\\
+        \texttt{id} PK (UUID)\\
+        \texttt{email} UK (parcial, no deleted)\\
+        \texttt{password\_hash} (null si Google)\\
+        \texttt{role} (user|admin)\\
+        \texttt{status} (pending|active|deleted)\\
+        \texttt{auth\_provider} (local|google)\\
+        \texttt{created\_at}\\
+        \texttt{deleted\_at}\\
+        \texttt{apodo}\\
+        \texttt{apodo\_clave} UK\\
+        \texttt{avatar}
+    };
+    \node[entity, below=2.5cm of users] (session) {
+        \textbf{session}\\
+        \texttt{sid} PK\\
+        \texttt{sess} JSON\\
+        \texttt{expire}
+    };
+    \node[entity, right=4.5cm of users] (perfiles) {
+        \textbf{juego\_perfiles}\\
+        \texttt{user\_id} PK,FK\\
+        \texttt{datos} JSONB\\
+        \texttt{version} (optimista)\\
+        \texttt{updated\_at}
+    };
+    \node[entity, below=2.5cm of perfiles] (records) {
+        \textbf{juego\_records}\\
+        \texttt{user\_id} PK,FK\\
+        \texttt{alias}\\
+        \texttt{avatar}\\
+        \texttt{personaje}\\
+        \texttt{entrenador}\\
+        \texttt{tiempo}\\
+        \texttt{nivel}\\
+        \texttt{jefes}\\
+        \texttt{bajas}\\
+        \texttt{created\_at}
+    };
+
+    % Relaciones
+    \draw[arrow] (users) -- node[left, font=\footnotesize] {1..1} (perfiles);
+    \draw[arrow] (users) -- node[left, font=\footnotesize] {1..1} (records);
+    \draw[arrow] (users) -- node[above, font=\footnotesize] {1..*} (session);
+\end{tikzpicture}
+\caption{Modelo de datos entidad-relación con tablas de usuarios, sesiones, perfiles de juego y records.}
+\label{fig:modelo-datos}
+\end{figure}
+
+\textbf{Detalles clave} (fuente: documentación técnica §6.2):
+\begin{itemize}
+    \item \texttt{users}: una fila por cuenta. \texttt{email} normalizado (minúsculas, sin espacios) y único \textbf{entre cuentas no eliminadas} (índice parcial migración 005), así que tras baja se puede volver con mismo email. \texttt{password\_hash} nulo en cuentas Google. \texttt{apodo\_clave} = mote normalizado (sin mayúsculas ni tildes) con índice único.
+    \item \texttt{session}: gestiona \texttt{connect-pg-simple}. Guarda \texttt{userId} y, durante acceso Google, el \texttt{state}.
+    \item \texttt{juego\_perfiles.datos} (JSONB): plantilla (\texttt{jugadores} con jefes, bajas, partidas, stats entrenamiento), contadores (\texttt{jefesTotal, partidas, contratos}), logros con fecha y partida en curso (\texttt{partidaActual}). \texttt{version} sube en cada escritura (concurrencia optimista).
+    \item \texttt{juego\_records}: mejor partida de cada usuario (más tiempo; empate → más nivel), con mote y avatar para ranking.
+\end{itemize}
+
+\textbf{Estados de una cuenta} (diagrama de estados, documentación técnica §6.2):
+\begin{itemize}
+    \item \texttt{pending} → \texttt{active}: enlace correo o primer acceso Google con mismo email.
+    \item \texttt{active} → \texttt{deleted}: baja propia o admin.
+    \item \texttt{pending} → \texttt{deleted}: admin elimina.
+    \item \texttt{deleted}: fila conservada, no puede entrar, sesión deja de valer, sale ranking, suelta email y mote → nueva cuenta posible (también con Google).
+\end{itemize}
+
+\section{Diseño detallado}
+
+\subsection{Backend: módulos}
+
+\begin{longtable}{@{}L{3.5cm} L{11.0cm}@{}}
+\caption{Módulos del backend.}\label{tab:backend-modulos}\\
+\toprule
+\textbf{Módulo} & \textbf{Qué hace} \\ \midrule \endfirsthead
+\toprule
+\textbf{Módulo} & \textbf{Qué hace} \\ \midrule \endhead
+\texttt{server.js} & Punto entrada: carga config, llama \texttt{bootstrap}, escucha \texttt{PORT}, para ordenado con \texttt{SIGTERM} \\
+\texttt{bootstrap.js} & Elige PostgreSQL (si \texttt{DATABASE\_URL}) o memoria, aplica migraciones, crea/promociona primer admin, crea correo (SMTP o registro) \\
+\texttt{app.js} & Construye app Express: JSON, sesión, \texttt{/api} y estáticos \texttt{public/} \\
+\texttt{config.js, loadConfig.js} & Leen y validan variables entorno; en producción exigen secretos \\
+\texttt{logger.js} & Logs JSON por línea, niveles, ocultación datos sensibles \\
+\texttt{api/index.js} & Monta router: \texttt{requestLogger, currentUser, /health, /auth, /prueba, /users, /juego} (con \texttt{requireAuth}), 404, manejador errores \\
+\texttt{api/auth.js} & Registro, confirmación, reenvío, login, Google, logout, \texttt{me} \\
+\texttt{api/users.js} & Admin usuarios (\texttt{requireRole('admin')}, \texttt{requireSelfOrRole('admin')}) \\
+\texttt{api/juego.js} & Perfil, partidas, contratos, entrenamiento, identidad, ranking, modo pruebas \\
+\texttt{api/currentUser.js} & Middlewares identidad, autenticación, autorización \\
+\texttt{api/errorHandler.js} & Traduce errores tipados a HTTP \texttt{\{error: \{code, message\}\}} \\
+\texttt{services/userService.js} & Reglas usuarios: registro, autenticación, OAuth, roles, bajas, último admin, primer admin \\
+\texttt{services/accountConfirmationService.js} & Crea y envía enlace confirmación, confirma, reenvía \\
+\texttt{services/tokenSigner.js} & Tokens firmados HMAC-SHA256 con caducidad \\
+\texttt{services/passwordHasher.js} & bcrypt (coste 10; pruebas coste 4) \\
+\texttt{services/juegoService.js} & Reglas servidor juego: perfiles, partidas, validación anti-trampas, recompensas, logros, contratos, entrenamiento, identidad, ranking \\
+\texttt{services/domainPolicy.js} & Prueba técnica: dominios permitidos \\
+\texttt{services/errors.js} & Errores tipados: \texttt{ValidationError, UnauthorizedError, ForbiddenError, AccountPendingError, NotFoundError, ConflictError, ServiceUnavailableError} \\
+\texttt{repositories/*} & \texttt{memoryUserRepository, postgresUserRepository, memoryJuegoRepository, postgresJuegoRepository} \\
+\texttt{integrations/mailer.js} & Correo SMTP (\texttt{nodemailer}) o registro si sin \texttt{SMTP\_URL} \\
+\texttt{integrations/googleOAuth.js} & URL autorización Google e intercambio código por perfil \\
+\texttt{db/migrate.js, db/migrations/*.sql} & Migraciones versionadas (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras baja) \\
+\bottomrule
+\end{longtable}
+
+\subsection{Frontend}
+
+\begin{itemize}
+    \item \textbf{SPA con rutas hash} (\texttt{public/js/ui.js}): \texttt{\#/} inicio, \texttt{\#/entrar}, \texttt{\#/registro}, \texttt{\#/perfil}, \texttt{\#/jugar}, \texttt{\#/admin}, vista 404 «Fuera de juego». Cada ruta declara si protegida, solo invitados o solo admin; interfaz redirige, \textbf{protección real en servidor}.
+    \item \textbf{Vistas} (\texttt{ui/vistas/*.js}): cada una exporta \texttt{mount(root, context)} y devuelve función limpieza. Carga bajo demanda con \texttt{import()}.
+    \item \textbf{Estado} (\texttt{ui/estado.js}): usuario actual; cabecera (\texttt{ui/cabecera.js}) se repinta al cambiar (mote, avatar, enlaces según rol).
+    \item \textbf{Formularios} (\texttt{ui/formulario.js}): validación al escribir (una vez tocado campo) y al enviar, errores \texttt{aria-describedby}, botón «Mostrar contraseña», envío doble bloqueado con rueda carga.
+    \item \textbf{Avisos} (\texttt{ui/avisos.js}): mensajes temporales zona \texttt{aria-live}; errores \texttt{role="alert"}. Los de redirección (\texttt{?aviso=...}) se leen al cargar y quitan de URL.
+    \item \textbf{Componentes} (\texttt{ui/componentes.js}): rueda carga, estado vacío, estado error con \textbf{Reintentar} y \texttt{mensajeDeError} que traduce cualquier error a texto legible y registra en consola.
+    \item \textbf{Diálogos} (\texttt{ui/modal.js}): confirmación accesible con \texttt{<dialog>} nativo (sustituye \texttt{window.confirm}): foco a botón seguro, \texttt{Esc} cierra, foco vuelve. Usado antes de acción destructiva.
+    \item \textbf{Cliente} (\texttt{api.js}): único sitio con \texttt{fetch}; timeout 15s con \texttt{AbortController}; convierte respuestas error en \texttt{ApiError} (estado, código, mensaje); si \texttt{401} con sesión, avisa sesión caducada.
+    \item \textbf{Sistema diseño} (\texttt{public/css/}): tokens (colores, espacios, radios), base, componentes, vistas; tipografía Plus Jakarta Sans autoalojada; modo oscuro rojiblanco; responsive (tabla admin → tarjetas móvil).
+\end{itemize}
+
+\subsection{API}
+
+Lista completa de rutas con acceso y contrato en \texttt{README.md\#api}. Resumen en Tabla \ref{tab:api-resumen}.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{2.5cm} L{5.5cm} L{3.5cm}@{}}
+\toprule
+\textbf{Grupo} & \textbf{Rutas} & \textbf{Acceso} \\
+\midrule
+Salud & \texttt{GET /api/health} & Público \\
+Autenticación & \texttt{POST register, POST login, POST logout, GET me, GET confirm, POST resend-confirmation, GET providers, GET google, GET google/callback} & Público (salvo \texttt{me}) \\
+Usuarios & \texttt{GET /users, GET /users/:id/active, PATCH /users/:id/role, DELETE /users/:id} & Admin (baja: propio o admin) \\
+Juego & \texttt{GET perfil, POST partidas, POST partidas/:id/fin, POST contratar, POST entrenar, PUT identidad, GET ranking, POST desbloquear} & Sesión (\texttt{desbloquear}: admin) \\
+Prueba técnica & \texttt{POST /api/prueba/dominio} & Público \\
+\bottomrule
+\end{tabular}
+\caption{Resumen de endpoints de la API.}
+\label{tab:api-resumen}
+\end{table}
+
+\section{Flujos con diagramas de secuencia}
+
+Los flujos principales del Sprint 1 y del juego (Sprint 2) se representan con diagramas de secuencia usando \texttt{pgf-umlsd}. Los diagramas grandes van dentro de \texttt{\textbackslash resizebox\{\textbackslash textwidth\}\{!\}\{...\}} para que no se salgan.
+
+\subsection{Registro con email y contraseña}
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+    \newthread{U}{Usuario}
+    \newinst{V}{Vista registro.js}
+    \newinst{C}{api.js}
+    \newinst{A}{API /api/auth/register}
+    \newinst{S}{userService}
+    \newinst{H}{passwordHasher}
+    \newinst{R}{userRepository}
+    \newinst{AC}{accountConfirmation}
+    \newinst{M}{mailer (SMTP)}
+    \begin{call}{U}{Escribe email y contraseña}{V}{}
+    \end{call}
+    \begin{call}{V}{Valida (email formato, ≥8 chars)}{V}{}
+    \end{call}
+    \begin{call}{V}{register(email, password)}{C}{}
+    \end{call}
+    \begin{call}{C}{POST \{email, password\}}{A}{}
+    \end{call}
+    \begin{call}{A}{register()}{S}{}
+    \end{call}
+    \begin{call}{S}{Normaliza email y valida}{S}{}
+    \end{call}
+    \begin{call}{S}{findByEmail(email)}{R}{}
+    \end{call}
+    \begin{sdblock}{alt}{Ya existe}
+        \begin{call}{S}{ConflictError}{A}{}
+        \end{call}
+        \begin{call}{A}{409 CONFLICT}{C}{}
+        \end{call}
+        \begin{call}{C}{ApiError → mensaje formulario}{V}{}
+        \end{call}
+    \end{sdblock}
+    \begin{sdblock}{else}{Nuevo}
+        \begin{call}{S}{hash(password) (bcrypt)}{H}{}
+        \end{call}
+        \begin{call}{S}{create(role user, status pending, provider local)}{R}{}
+        \end{call}
+        \begin{call}{A}{enviarConfirmacion(user)}{AC}{}
+        \end{call}
+        \begin{call}{AC}{token = firma HMAC \{userId, propósito, caducidad 24h\}}{AC}{}
+        \end{call}
+        \begin{call}{AC}{send(to, asunto, enlace /api/auth/confirm?token=...)}{M}{}
+        \end{call}
+        \begin{sdblock}{alt}{Correo falla}
+            \begin{call}{M}{error (log mail.failed)}{AC}{}
+            \end{call}
+            \begin{call}{A}{201 + aviso «no se pudo enviar, pide otro»}{C}{}
+            \end{call}
+        \end{sdblock}
+        \begin{sdblock}{else}{Enviado}
+            \begin{call}{A}{201 + «te hemos enviado un correo»}{C}{}
+            \end{call}
+        \end{sdblock}
+        \begin{call}{C}{Aviso éxito y paso a Entrar}{V}{}
+        \end{call}
+    \end{sdblock}
+\end{sequencediagram}%
+}
+\caption{Registro con email y contraseña.}
+\label{fig:sec-registro}
+\end{figure}
+
+\subsection{Confirmación con el enlace del correo}
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+    \newthread{U}{Usuario}
+    \newinst{A}{API GET /api/auth/confirm}
+    \newinst{AC}{accountConfirmation}
+    \newinst{T}{tokenSigner}
+    \newinst{S}{userService}
+    \newinst{W}{Interfaz (ui.js)}
+    \begin{call}{U}{Abre enlace (token)}{A}{}
+    \end{call}
+    \begin{call}{A}{confirmar(token)}{AC}{}
+    \end{call}
+    \begin{call}{AC}{verify(token, propósito)}{T}{}
+    \end{call}
+    \begin{sdblock}{alt}{Firma mala, caducado o propósito distinto}
+        \begin{call}{T}{null}{AC}{}
+        \end{call}
+        \begin{call}{A}{303 → /?aviso=enlace-no-valido\#/entrar (log user.confirm\_failed)}{U}{}
+        \end{call}
+    \end{sdblock}
+    \begin{sdblock}{else}{Válido}
+        \begin{call}{T}{\{userId\}}{AC}{}
+        \end{call}
+        \begin{call}{AC}{activar(userId) (si pending)}{S}{}
+        \end{call}
+        \begin{call}{A}{303 → /?aviso=cuenta-confirmada\#/entrar (log user.confirmed)}{U}{}
+        \end{call}
+    \end{sdblock}
+    \begin{call}{U}{Carga la web}{W}{}
+    \end{call}
+    \begin{call}{W}{Lee ?aviso, muestra aviso y lo quita de URL}{W}{}
+    \end{call}
+\end{sequencediagram}%
+}
+\caption{Confirmación de cuenta con el enlace del correo.}
+\label{fig:sec-confirmacion}
+\end{figure}
+
+\subsection{Inicio de sesión local (incluye cuenta pendiente y reenvío)}
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+    \newthread{U}{Usuario}
+    \newinst{V}{Vista entrar.js}
+    \newinst{C}{api.js}
+    \newinst{A}{API /api/auth}
+    \newinst{S}{userService}
+    \begin{call}{U}{Email y contraseña}{V}{}
+    \end{call}
+    \begin{call}{V}{login(email, password)}{C}{}
+    \end{call}
+    \begin{call}{C}{POST /login}{A}{}
+    \end{call}
+    \begin{call}{A}{authenticate()}{S}{}
+    \end{call}
+    \begin{sdblock}{alt}{Email desconocido o contraseña mala}
+        \begin{call}{S}{UnauthorizedError}{A}{}
+        \end{call}
+        \begin{call}{A}{401 «Email o contraseña incorrectos» (log auth.login\_failed)}{C}{}
+        \end{call}
+    \end{sdblock}
+    \begin{sdblock}{else}{Cuenta eliminada}
+        \begin{call}{S}{ForbiddenError}{A}{}
+        \end{call}
+        \begin{call}{A}{403 FORBIDDEN}{C}{}
+        \end{call}
+    \end{sdblock}
+    \begin{sdblock}{else}{Cuenta pendiente}
+        \begin{call}{S}{AccountPendingError}{A}{}
+        \end{call}
+        \begin{call}{A}{403 ACCOUNT\_PENDING}{C}{}
+        \end{call}
+        \begin{call}{C}{Muestra «Reenviar correo confirmación»}{V}{}
+        \end{call}
+        \begin{call}{U}{Pulsa Reenviar}{V}{}
+        \end{call}
+        \begin{call}{V}{resendConfirmation(email)}{C}{}
+        \end{call}
+        \begin{call}{C}{POST /resend-confirmation}{A}{}
+        \end{call}
+        \begin{call}{A}{202 (mismo mensaje exista o no cuenta)}{C}{}
+        \end{call}
+    \end{sdblock}
+    \begin{sdblock}{else}{Correcto}
+        \begin{call}{A}{Regenera sesión y guarda userId}{A}{}
+        \end{call}
+        \begin{call}{A}{200 usuario + cookie grada.sid (httpOnly)}{C}{}
+        \end{call}
+        \begin{call}{C}{ponerUsuario() → \#/jugar}{V}{}
+        \end{call}
+    \end{sdblock}
+\end{sequencediagram}%
+}
+\caption{Inicio de sesión local con cuenta pendiente y reenvío de confirmación.}
+\label{fig:sec-login}
+\end{figure}
+
+\subsection{Inicio de sesión con Google (OAuth 2.0, código de autorización)}
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+    \newthread{U}{Navegador}
+    \newinst{A}{API /api/auth}
+    \newinst{SS}{Sesión (PostgreSQL)}
+    \newinst{G}{Google}
+    \newinst{S}{userService}
+    \newinst{R}{userRepository}
+    \begin{call}{U}{GET /google}{A}{}
+    \end{call}
+    \begin{call}{A}{state aleatorio (24 bytes hex)}{SS}{}
+    \end{call}
+    \begin{call}{A}{303 → accounts.google.com (client\_id, redirect\_uri, scope email, state)}{U}{}
+    \end{call}
+    \begin{call}{U}{Inicia sesión y acepta}{G}{}
+    \end{call}
+    \begin{call}{G}{302 → /api/auth/google/callback?code\&state}{U}{}
+    \end{call}
+    \begin{call}{U}{GET /google/callback?code\&state}{A}{}
+    \end{call}
+    \begin{call}{A}{Compara state y lo borra (un solo uso)}{SS}{}
+    \end{call}
+    \begin{sdblock}{alt}{state falso, ausente, reutilizado / usuario canceló}
+        \begin{call}{A}{303 → /?aviso=google-error | google-cancelado}{U}{}
+        \end{call}
+    \end{sdblock}
+    \begin{sdblock}{else}{state correcto}
+        \begin{call}{A}{POST token (code + client\_secret, desde servidor)}{G}{}
+        \end{call}
+        \begin{call}{G}{id perfil: email y email\_verified}{A}{}
+        \end{call}
+        \begin{call}{A}{loginWithOAuth(google, email, verificado)}{S}{}
+        \end{call}
+        \begin{sdblock}{alt}{Email sin verificar}
+            \begin{call}{S}{error → 303 aviso=google-rechazado}{A}{}
+            \end{call}
+        \end{sdblock}
+        \begin{sdblock}{else}{No existía (o solo cuenta eliminada)}
+            \begin{call}{S}{create(active, provider google, sin contraseña)}{R}{}
+            \end{call}
+        \end{sdblock}
+        \begin{sdblock}{else}{Existía pendiente}
+            \begin{call}{S}{update(status active)}{R}{}
+            \end{call}
+        \end{sdblock}
+        \begin{call}{A}{Regenera sesión con userId}{SS}{}
+        \end{call}
+        \begin{call}{A}{303 → /?aviso=google-cuenta-creada | google-ok\#/jugar}{U}{}
+        \end{call}
+    \end{sdblock}
+\end{sequencediagram}%
+}
+\caption{Inicio de sesión con Google (OAuth 2.0, flujo código de autorización).}
+\label{fig:sec-google}
+\end{figure}
+
+\subsection{Baja de cuenta}
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+    \newthread{U}{Usuario}
+    \newinst{V}{Vista perfil.js}
+    \newinst{D}{Diálogo confirmación}
+    \newinst{A}{DELETE /api/users/:id}
+    \newinst{S}{userService}
+    \begin{call}{U}{«Eliminar mi cuenta»}{V}{}
+    \end{call}
+    \begin{call}{V}{¿Eliminar tu cuenta?}{D}{}
+    \end{call}
+    \begin{call}{U}{Sí, eliminar}{D}{}
+    \end{call}
+    \begin{call}{D}{DELETE (requireSelfOrRole('admin'))}{A}{}
+    \end{call}
+    \begin{call}{A}{deleteUser(actor, id)}{S}{}
+    \end{call}
+    \begin{sdblock}{alt}{Es último administrador}
+        \begin{call}{S}{403}{A}{}
+        \end{call}
+    \end{sdblock}
+    \begin{sdblock}{else}{}
+        \begin{call}{S}{status deleted, deleted\_at = ahora, suelta mote (baja lógica)}{S}{}
+        \end{call}
+        \begin{call}{A}{juegoService.olvidarCuenta(id): sale del ranking}{A}{}
+        \end{call}
+        \begin{call}{A}{204 (log user.deleted) → aviso y vuelta inicio}{V}{}
+        \end{call}
+        \begin{call}{A}{Nota: sesión deja de valer en siguiente petición (currentUser ya no la acepta)}{A}{}
+        \end{call}
+    \end{sdblock}
+\end{sequencediagram}%
+}
+\caption{Baja de cuenta (lógica) con protección del último administrador.}
+\label{fig:sec-baja}
+\end{figure}
+
+\subsection{Una partida del juego (inicio, juego y fin con validación) — Sprint 2}
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+    \newthread{J}{Jugador}
+    \newinst{G}{juego.js (navegador)}
+    \newinst{SIM}{mundo.js (simulación)}
+    \newinst{C}{api.js}
+    \newinst{A}{API /api/juego}
+    \newinst{JS}{juegoService}
+    \newinst{R}{juegoRepository}
+    \begin{call}{J}{Jugar (jugador y entrenador elegidos)}{G}{}
+    \end{call}
+    \begin{call}{G}{iniciar(personaje, entrenador)}{C}{}
+    \end{call}
+    \begin{call}{C}{POST /partidas}{A}{}
+    \end{call}
+    \begin{call}{A}{iniciarPartida()}{JS}{}
+    \end{call}
+    \begin{call}{JS}{perfil + version}{R}{}
+    \end{call}
+    \begin{call}{JS}{¿Está en tu plantilla? partidaActual = \{id, inicio = reloj servidor\}}{JS}{}
+    \end{call}
+    \begin{call}{JS}{guardarPerfil(version)}{R}{}
+    \end{call}
+    \begin{call}{A}{201 \{partidaId, stats entrenamiento\}}{G}{}
+    \end{call}
+    \begin{sdblock}{loop}{Cada fotograma (paso fijo 1/60 s)}
+        \begin{call}{G}{avanzar(entrada)}{SIM}{}
+        \end{call}
+        \begin{call}{SIM}{eventos (oleada, jefe, mejora, logro...)}{G}{}
+        \end{call}
+        \begin{call}{G}{Dibujo, HUD, sonido y música}{G}{}
+        \end{call}
+    \end{sdblock}
+    \begin{call}{SIM}{estado fin (te eliminan)}{G}{}
+    \end{call}
+    \begin{call}{G}{terminar(id, tiempo, nivel, jefes, bajas, logros)}{C}{}
+    \end{call}
+    \begin{call}{C}{POST /partidas/:id/fin}{A}{}
+    \end{call}
+    \begin{call}{A}{finalizarPartida()}{JS}{}
+    \end{call}
+    \begin{call}{JS}{¿Es partida en curso? ¿tiempo ≤ transcurrido + 15s? ¿jefes, nivel, bajas creíbles?}{JS}{}
+    \end{call}
+    \begin{sdblock}{alt}{Resultado imposible}
+        \begin{call}{JS}{400 «El resultado no es creíble»}{A}{}
+        \end{call}
+    \end{sdblock}
+    \begin{sdblock}{else}{Válido}
+        \begin{call}{JS}{Reparte jefes, bajas, puntos, fichas; logros creíbles + logros plantilla}{JS}{}
+        \end{call}
+        \begin{call}{JS}{guardarPerfil(version) (reintenta si otra petición ganó)}{R}{}
+        \end{call}
+        \begin{call}{JS}{guardarRecord() si es mejor partida}{R}{}
+        \end{call}
+        \begin{call}{A}{200 \{recompensas, logrosNuevos, record, perfil\}}{G}{}
+        \end{call}
+        \begin{call}{G}{Pantalla fin con estadísticas y logros}{J}{}
+        \end{call}
+    \end{sdblock}
+\end{sequencediagram}%
+}
+\caption{Una partida del juego: inicio, simulación y fin con validación anti-trampas en servidor.}
+\label{fig:sec-partida}
+\end{figure}
+
+\subsection{Contratar con ficha (concurrencia optimista) — Sprint 2}
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+    \newinst{P1}{Petición 1}
+    \newinst{P2}{Petición 2 (doble clic)}
+    \newinst{JS}{juegoService}
+    \newinst{DB}{juego\_perfiles}
+    \begin{call}{P1}{contratar()}{JS}{}
+    \end{call}
+    \begin{call}{P2}{contratar()}{JS}{}
+    \end{call}
+    \begin{call}{JS}{SELECT datos, version (v = 7)}{DB}{}
+    \end{call}
+    \begin{call}{JS}{SELECT datos, version (v = 7)}{DB}{}
+    \end{call}
+    \begin{call}{JS}{P1: 1 ficha → sortea jugador}{JS}{}
+    \end{call}
+    \begin{call}{JS}{P2: 1 ficha → sortea jugador}{JS}{}
+    \end{call}
+    \begin{call}{JS}{P1: UPDATE ... WHERE version = 7 → 1 fila (v = 8)}{DB}{}
+    \end{call}
+    \begin{call}{JS}{P2: UPDATE ... WHERE version = 7 → 0 filas}{DB}{}
+    \end{call}
+    \begin{call}{JS}{P2 reintenta: SELECT (v = 8, 0 fichas)}{DB}{}
+    \end{call}
+    \begin{call}{JS}{409 «No tienes fichas de contrato»}{P2}{}
+    \end{call}
+    \begin{call}{JS}{200 \{fichado, logrosNuevos, perfil\}}{P1}{}
+    \end{call}
+\end{sequencediagram}%
+}
+\caption{Contratar con concurrencia optimista: doble clic no gasta dos fichas.}
+\label{fig:sec-contratar}
+\end{figure}
+
+\section{Seguridad}
+
+La Tabla \ref{tab:seguridad} resume las amenazas y medidas implementadas (fuente: documentación técnica §8).
+
+\begin{longtable}{@{}L{3.0cm} L{5.5cm} L{6.0cm}@{}}
+\caption{Resumen de seguridad: amenazas y medidas.}\label{tab:seguridad}\\
+\toprule
+\textbf{Amenaza} & \textbf{Medida} & \textbf{Dónde} \\ \midrule \endfirsthead
+\toprule
+\textbf{Amenaza} & \textbf{Medida} & \textbf{Dónde} \\ \midrule \endhead
+Robo contraseñas & Solo hash \textbf{bcrypt} (sal, coste 10). Nunca contraseña ni cifrado reversible & \texttt{passwordHasher.js} \\
+Fuerza bruta / enumeración & Mismo mensaje email no existe / contraseña incorrecta; reenvío responde igual exista o no; intentos fallidos log con IP & \texttt{userService.js}, \texttt{auth.js} \\
+Robo/fijación sesión & Cookie \texttt{httpOnly}, \texttt{sameSite=lax}, \texttt{secure} producción; sesión \textbf{regenerada} al entrar, destruida al salir; sesiones en servidor & \texttt{app.js}, \texttt{auth.js} \\
+Sesión cuenta eliminada & En cada petición recarga usuario; si no activo, sesión deja de valer & \texttt{currentUser.js} \\
+Escalada privilegios & Roles comprobados en servidor (401/403); interfaz solo oculta; siempre queda un admin & \texttt{currentUser.js}, \texttt{userService.js} \\
+Enlaces falsificados & Token HMAC-SHA256 clave derivada, comparación tiempo constante, propósito y caducidad (24h) & \texttt{tokenSigner.js} \\
+CSRF en OAuth & \texttt{state} aleatorio, guardado en sesión, un solo uso & \texttt{auth.js} \\
+Robo secreto Google & Código cambiado por perfil en servidor; \texttt{client\_secret} nunca llega a navegador; solo email verificado & \texttt{googleOAuth.js} \\
+Inyección SQL & Consultas parametrizadas & \texttt{postgres*Repository.js} \\
+XSS & DOM con \texttt{textContent} (helper \texttt{h()}); prueba lo comprueba; correos escapan HTML & \texttt{dom.js}, \texttt{frontend.test.js}, \texttt{accountConfirmationService.js} \\
+Secretos expuestos & Solo variables entorno; Secret Manager con cuenta servicio mínimo privilegio; \texttt{.env} ignorado; GitHub accede Google Cloud sin claves (WIF) & \texttt{loadConfig.js}, workflows \\
+Datos sensibles en logs & Contraseñas, hashes, cookies, tokens, secretos → \texttt{[oculto]} & \texttt{logger.js} \\
+Trampas en juego & Reloj servidor, límites creíbles, logros verificables, concurrencia optimista & \texttt{juegoService.js} \\
+Privacidad & Política pública; ranking no muestra emails & \texttt{privacidad.html}, \texttt{juegoService.ranking} \\
+\bottomrule
+\end{longtable}
+
+\section{Resumen de los sprints}
+
+La Tabla \ref{tab:resumen-sprints} resume ambos sprints; el detalle está en el Anexo \ref{anx:desarrollo}.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{@{}L{2.0cm} L{3.0cm} L{5.0cm} L{3.5cm}@{}}
+\toprule
+\textbf{Sprint} & \textbf{Periodo} & \textbf{Objetivo} & \textbf{Resultado} \\
+\midrule
+Sprint 1 & 29/09/2026 – 27/10/2026 & Base SaaS: cuentas, sesión, roles, PostgreSQL, correo, Google, errores, logs, CI/CD, Cloud Run & 19 PBIs (P1–P19), 32 tareas (T1–T32), 4 releases (hito-1 a hito-4, sprint-1) \\
+Sprint 2 & 23/10/2026 – 29/10/2026 & Lógica juego survivor: concepto, sistemas, arquitectura, anti-trampas, logros, evolución 6 fases & 29 PBIs (P20–P48), 50 tareas (T33–T82), 11 PRs fase/arreglo (#36, #44–#56) \\
+\bottomrule
+\end{tabular}
+\caption{Resumen de los dos sprints del proyecto.}
+\label{tab:resumen-sprints}
+\end{table}
+
+\section{La aplicación: manual de usuario}
+
+La interacción con \textit{La Grada Colchonera} se realiza a través de su interfaz web. A continuación se describen los flujos principales con capturas de la aplicación real.
+
+\subsection{Cuentas y sesión (Sprint 1)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/app/01-inicio.png}
+\caption{Página de inicio sin sesión: botones «Crear cuenta para jugar» / «Ya tengo cuenta», cómo se juega, estado servidor.}
 \label{fig:app-inicio}
 \end{figure}
 
-El formulario de registro valida que el correo posea un formato válido y que la contraseña cuente con una longitud de al menos 8 caracteres. Si el usuario incumple estas restricciones o introduce un correo ya registrado, el sistema bloquea el envío y muestra un mensaje explicativo, según ilustra la Figura \ref{fig:app-registro}.
-
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/capturas/app-02-registro-validacion.png}
-\caption{Formulario de registro con mensaje de error de validación.}
+\includegraphics[width=0.9\textwidth]{figs/capturas/app/02-registro-validacion.png}
+\caption{Registro con email y contraseña no válidos: campos en rojo y errores explicados.}
 \label{fig:app-registro}
 \end{figure}
 
-\subsection{Inicio de sesión y gestión de cuenta}
-
-Si se introducen credenciales incorrectas, la aplicación notifica el error de manera homogénea para preservar la seguridad, como se aprecia en la Figura \ref{fig:app-login-error}.
-
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/capturas/app-03-entrar-error.png}
-\caption{Notificación de error ante credenciales incorrectas en el inicio de sesión.}
+\includegraphics[width=0.9\textwidth]{figs/capturas/app/03-entrar-error.png}
+\caption{Inicio de sesión con contraseña incorrecta: «Email o contraseña incorrectos».}
 \label{fig:app-login-error}
 \end{figure}
 
-Una vez autenticado, el usuario accede a la sección \textit{Mi cuenta}, ilustrada en la Figura \ref{fig:app-perfil}. En este panel se visualizan los datos del perfil y se ofrece la posibilidad de solicitar la baja definitiva de la cuenta mediante baja lógica.
-
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/capturas/app-04-perfil.png}
-\caption{Vista de Mi cuenta con datos de usuario y opción de baja de servicio.}
+\includegraphics[width=0.9\textwidth]{figs/capturas/app/04-perfil.png}
+\caption{Mi cuenta: mote, avatar, email, rol Aficionado, estado Activa, fecha alta, cerrar sesión, darse de baja.}
 \label{fig:app-perfil}
 \end{figure}
 
-\subsection{Panel de administración y control de acceso}
-
-Si un usuario sin privilegios intenta acceder a rutas administrativas, el servidor deniega la operación con código 403 y la interfaz redirige la navegación, como se refleja en la Figura \ref{fig:app-sin-permiso}.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/app/05-confirmar-baja.png}
+\caption{Diálogo «¿Eliminar tu cuenta?» antes de darse de baja.}
+\label{fig:app-confirmar-baja}
+\end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/capturas/app-05-usuario-sin-permiso.png}
-\caption{Redirección y denegación de acceso ante un intento de navegación no autorizada.}
+\includegraphics[width=0.9\textwidth]{figs/capturas/app/06-usuario-sin-permiso.png}
+\caption{Usuario normal intenta \texttt{\#/admin}: vuelve a Mi cuenta con aviso «Esa página es solo para administradores».}
 \label{fig:app-sin-permiso}
 \end{figure}
 
-Por el contrario, al identificarse con rol de administrador, se habilita el panel de gestión mostrado en la Figura \ref{fig:app-admin}. En esta vista se presentan todos los usuarios con sus atributos de correo, rol, estado y fecha de alta, permitiendo modificar privilegios o revocar accesos.
-
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/capturas/app-06-panel-admin.png}
-\caption{Panel de administración con listado y gestión de usuarios.}
-\label{fig:app-admin}
+\includegraphics[width=0.9\textwidth]{figs/capturas/app/07-panel-admin.png}
+\caption{Panel administración: contadores, buscador, tabla email, rol, estado, alta, acciones.}
+\label{fig:app-panel-admin}
 \end{figure}
 
-En dispositivos móviles, la interfaz se adapta responsivamente presentando a cada usuario como una tarjeta individualizada, garantizando la usabilidad de las acciones en pantallas estrechas (Figura \ref{fig:app-admin-movil}).
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.35\textwidth]{figs/capturas/app/11-panel-admin-movil.png}
+\caption{Panel administración en móvil: cada usuario como tarjeta (responsive).}
+\label{fig:app-admin-movil}
+\end{figure}
+
+\subsection{Hito 4: correo y Google}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.35\textwidth]{figs/capturas/app-07-panel-admin-movil.png}
-\caption{Panel de administración en móvil: cada usuario como tarjeta.}
-\label{fig:app-admin-movil}
+\includegraphics[width=0.9\textwidth]{figs/capturas/hito4/01-entrar-google.png}
+\caption{Pantalla entrar con botón «Entrar con Google».}
+\label{fig:hito4-google}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/hito4/02-registro-correo-enviado.png}
+\caption{Registro: aviso cuenta creada y correo confirmación enviado.}
+\label{fig:hito4-correo-enviado}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/hito4/03-cuenta-pendiente-reenvio.png}
+\caption{Login cuenta pendiente: error y botón «Reenviar correo confirmación».}
+\label{fig:hito4-pendiente-reenvio}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/hito4/05-enlace-invalido.png}
+\caption{Enlace manipulado: aviso rojo, cuenta sigue pendiente.}
+\label{fig:hito4-enlace-invalido}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/hito4/06-cuenta-confirmada.png}
+\caption{Enlace correcto: aviso verde cuenta confirmada.}
+\label{fig:hito4-confirmada}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/hito4/08-google-cuenta-creada.png}
+\caption{Cuenta creada con Google: aviso «Cuenta creada con tu cuenta de Google».}
+\label{fig:hito4-google-creada}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/hito4/09-error-con-reintento.png}
+\caption{Fallo servidor cargando panel: «No hemos podido cargarlo» con botón Reintentar.}
+\label{fig:hito4-error-reintento}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/hito4/10-panel-admin-estados.png}
+\caption{Panel admin con cuentas activas, pendientes, eliminadas, locales y Google.}
+\label{fig:hito4-admin-estados}
+\end{figure}
+
+\subsection{El juego (Sprint 2)}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/01-menu.png}
+\caption{Menú del juego (inicio con sesión): jugador paseando, ficha aficionado, tus tiempos, menú lateral.}
+\label{fig:juego-menu}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/02-vestuario.png}
+\caption{Vestuario: lista jugadores con filtros, ficha Griezmann con stats y habilidades, equipaciones.}
+\label{fig:juego-vestuario}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/03-partida.png}
+\caption{Partida en curso: mundo procedural, rivales, armas automáticas, HUD.}
+\label{fig:juego-partida}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/04-mejora.png}
+\caption{Subida de nivel: elegir una de tres mejoras.}
+\label{fig:juego-mejora}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/05-jefe.png}
+\caption{Jefe Vinicius Jr. en campo con barra de vida.}
+\label{fig:juego-jefe}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/06-fin.png}
+\caption{Fin partida: tiempo, estadísticas, daño por habilidad, logro nuevo.}
+\label{fig:juego-fin}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/08-contratar.png}
+\caption{Mercado fichajes con fichas de contrato.}
+\label{fig:juego-contratar}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/12-ranking.png}
+\caption{Ranking grada: mejor partida cada aficionado (mote y avatar, nunca email).}
+\label{fig:juego-ranking}
 \end{figure}
