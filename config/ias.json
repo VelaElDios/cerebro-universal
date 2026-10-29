@@ -13,9 +13,7 @@
       "clave_env": "NVIDIA_API_KEY",
       "url": "https://integrate.api.nvidia.com/v1",
       "modelos": [
-        "moonshotai/kimi-k2.6",
         "z-ai/glm-5.3",
-        "deepseek-ai/deepseek-v4.1-flash",
         "minimaxai/minimax-m3.1-flash"
       ],
       "max_tokens": 32768,
@@ -27,9 +25,7 @@
       "url": "https://integrate.api.nvidia.com/v1",
       "modelos": [
         "nvidia/nemotron-3-ultra-550b-a55b",
-        "deepseek-ai/deepseek-v4.1-flash",
-        "z-ai/glm-5.3",
-        "moonshotai/kimi-k2.6"
+        "z-ai/glm-5.3"
       ],
       "max_tokens": 32768,
       "tiempo_max": 420
