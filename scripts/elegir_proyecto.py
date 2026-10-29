@@ -64,6 +64,9 @@ def main():
     salida = {"activo": "false", "proyecto": "", "apt": "", "pip": ""}
 
     if forzado:
+        # Vale «proyectos/<nombre>» o solo «<nombre>»
+        if not (RAIZ / forzado / "proyecto.json").exists() and (RAIZ / "proyectos" / forzado / "proyecto.json").exists():
+            forzado = f"proyectos/{forzado}"
         cfg_ruta = RAIZ / forzado / "proyecto.json"
         if not cfg_ruta.exists():
             print(f"::error::No existe {forzado}/proyecto.json")
