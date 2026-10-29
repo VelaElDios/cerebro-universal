@@ -96,6 +96,34 @@ entrega cuenta 16 (P1–P14, P18 y P19); 32 + 50 = 82 tareas; 276 pruebas.
   `prueba-tecnica/`. Las antiguas (`figs/capturas/app-*.png`, `figs/capturas/donetonic-*.png`) ya no
   valen. Verticales (móvil): `width=0.35\textwidth`; el resto, `width=0.9\textwidth` como máximo.
 - Diagramas de secuencia grandes: dentro de `\resizebox{\textwidth}{!}{...}` para que no se salgan.
+- **Cómo se escribe un diagrama de secuencia** (ejemplo compilado y probado con esta plantilla). El
+  entorno es `sequencediagram` (en minúsculas; **no** existen `sequenceDiagram` ni un entorno `alt`: para alternativas, `sdblock`): participantes con
+  `\newthread`/`\newinst`, llamadas anidadas con `call` (origen, mensaje, destino, respuesta), mensajes
+  sueltos con `\mess` y bloques alternativos con `sdblock`. Sin nodos TikZ vacíos.
+
+```latex
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+  \newthread{nav}{Navegador}
+  \newinst[2]{api}{API (Express)}
+  \newinst[2]{srv}{userService}
+  \newinst[2]{bd}{PostgreSQL}
+  \begin{call}{nav}{POST /api/auth/login}{api}{200 o 401}
+    \begin{call}{api}{authenticate(email, contraseña)}{srv}{usuario}
+      \begin{call}{srv}{SELECT por email}{bd}{fila}
+      \end{call}
+    \end{call}
+  \end{call}
+  \begin{sdblock}{alt}{cuenta pendiente}
+    \mess{api}{403 + enlace de reenvío}{nav}
+  \end{sdblock}
+\end{sequencediagram}}
+\caption{Inicio de sesión local.}
+\label{fig:sec-login}
+\end{figure}
+```
 - Tablas de más de media página con `longtable`. Nada fuera del margen.
 - Bibliografía (`bib/ref.bib`, `apalike`): Scrum Guide, Express, Node.js, PostgreSQL, OAuth 2.0
   (RFC 6749), bcrypt, GitHub Flow, GitHub Actions, Google Cloud Run, *Vampire Survivors* (género
@@ -119,7 +147,7 @@ caption, label y `\ref`, figuras con etiqueta fija, capturas mínimas por carpet
 el texto, todos los PBIs y tareas en el anexo de trazabilidad, mínimos de palabras, Resumen y
 Abstract, números > 20 en las fuentes, nada fuera del margen y el PDF sin «??».
 
-## Orden de trabajo sugerido (máximo 3 archivos por paso)
+## Orden de trabajo sugerido (máximo 2 archivos por paso)
 
 1. `04-descripcion.tex`: requisitos, arquitectura (`fig:capas`), modelo de datos (`fig:modelo-datos`) y API.
 2. `04-descripcion.tex`: flujos con los 5 diagramas de secuencia, seguridad y la aplicación con capturas.
