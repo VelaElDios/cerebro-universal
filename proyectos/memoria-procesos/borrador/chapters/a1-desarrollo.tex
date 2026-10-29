@@ -1,23 +1,22 @@
 \chapter{Desarrollo del Proyecto}
 \label{anx:desarrollo}
 
-\section{Sprint 1}
+\section{Sprint 1 (Hitos 1–4)}
 
 \subsection{Planificación del Sprint 1}
 
 \subsubsection{Objetivo y fechas}
-El Sprint 1 se planificó del 29/09/2026 al 27/10/2026 con el objetivo de entregar la base de una aplicación SaaS con gestión de usuarios, arquitectura en capas, proceso Scrum en DoneTonic, flujo GitHub Flow, integración y despliegue continuos (CI/CD) en Google Cloud Run y Render, y una batería de pruebas automatizadas. El alcance formal, según directriz docente, se limitó a los Hitos 1, 2 y 3 del enunciado \cite{enunciado}.
+El Sprint 1 se planificó del 29/09/2026 al 27/10/2026 con el objetivo de entregar la base de una aplicación SaaS con gestión de usuarios, arquitectura en capas, proceso Scrum en DoneTonic, flujo GitHub Flow, integración y despliegue continuos (CI/CD) en Google Cloud Run y Render, y una batería de pruebas automatizadas. El alcance formal, según directriz docente, se limitó inicialmente a los Hitos 1, 2 y 3 del enunciado (documentacion-tecnica.md §2.3).
 
 \subsubsection{Sprint Backlog}
-El Product Backlog inicial contenía 15 PBIs (P1–P14, P18) correspondientes los Hitos 1–3. Durante el sprint se añadió el PBI P19 (despliegue en Google Cloud Run) tras la concesión de créditos educativos de Google Cloud, elevando el total a 16 PBIs en el alcance de la entrega. La Tabla \ref{tab:sprint-backlog} muestra el sprint backlog con sus hitos y estado final.
+El Product Backlog inicial contenía 15 PBIs (P1–P14, P18) correspondientes a los Hitos 1–3. Durante el sprint se añadió el PBI \textbf{P19} (despliegue en Google Cloud Run) tras la concesión de créditos educativos de Google Cloud, elevando el total a 16 PBIs en el alcance de la entrega (gestion/README.md §4.1). La Tabla \ref{tab:sprint1-backlog} muestra el sprint backlog con sus hitos y estado final.
 
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{0.7cm} L{1.0cm} L{6.8cm} L{2.2cm}@{}}
+\begin{longtable}{@{}L{0.7cm} L{1.0cm} L{7.5cm} L{2.2cm}@{}}
+\caption{Sprint Backlog del Sprint 1 (19 PBIs, 16 en alcance de entrega).}\label{tab:sprint1-backlog}\\
 \toprule
-\textbf{PBI} & \textbf{Hito} & \textbf{Título} & \textbf{Estado} \\
-\midrule
+\textbf{PBI} & \textbf{Hito} & \textbf{Título} & \textbf{Estado} \\ \midrule \endfirsthead
+\toprule
+\textbf{PBI} & \textbf{Hito} & \textbf{Título} & \textbf{Estado} \\ \midrule \endhead
 P1 & H1 & Repositorio GitHub y flujo GitHub Flow & Hecho \\
 P2 & H1 & Integración continua (CI) & Hecho \\
 P3 & H1 & Despliegue continuo en URL pública & Hecho \\
@@ -32,23 +31,23 @@ P11 & H3 & Persistencia en base de datos real & Hecho \\
 P12 & H3 & Gestión de secretos con variables de entorno & Hecho \\
 P13 & H3 & Roles de usuario y administrador & Hecho \\
 P14 & H3 & Registro (log) de la actividad & Hecho \\
-P15 & H4 & Inicio de sesión con proveedor externo (OAuth) & Siguiente entrega \\
-P16 & H4 & Confirmación de cuenta por correo electrónico & Siguiente entrega \\
-P17 & H4 & Manejo de errores y feedback al usuario & Siguiente entrega \\
+P15 & H4 & Inicio de sesión con proveedor externo (OAuth) & Hecho \\
+P16 & H4 & Confirmación de cuenta por correo electrónico & Hecho \\
+P17 & H4 & Manejo de errores y feedback al usuario & Hecho \\
 P18 & H4 & README completo y revisión de la entrega & Hecho \\
 P19 & H4 & Despliegue continuo en Google Cloud Run & Hecho \\
 \bottomrule
-\end{tabular}
-\caption{Sprint Backlog del Sprint 1 (19 PBIs, 16 hechos en el alcance).}
-\label{tab:sprint-backlog}
-\end{table}
+\end{longtable}
+
+\subsubsection{Historias de usuario y criterios de aceptación (Sprint 1)}
+Los PBIs del Sprint 1 derivan directamente de los requisitos del enunciado; cada uno tiene su historia de usuario y criterios en DoneTonic. Por brevedad, se remite a \texttt{docs/gestion/README.md} (sección «Sprint 1: backlog, trazabilidad y evolución») donde se listan los 19 PBIs con sus títulos.
 
 \subsubsection{Trazabilidad}
-Cada PBI se desglosó en 1–2 tareas técnicas (T1–T32), cada una con su rama \texttt{hito-N/Tx-descripcion}, pull request \texttt{[Tx] ...} hacia \texttt{hito-N/integracion} y fusión tras CI en verde. Los cierres de hito fueron PR \#9 (Hito 1), \#17 (Hito 2), \#24 (Hito 3), \#29 (cierre sprint) y \#32 (revisión final). La trazabilidad completa tarea → rama → PR figura en \texttt{docs/gestion/README.md} y en la Tabla \ref{tab:trazabilidad} (tareas de los PBIs hechos).
+Cada PBI se desglosó en 1–2 tareas técnicas (T1–T32), cada una con su rama \texttt{hito-N/Tx-descripcion}, pull request \texttt{[Tx] ...} hacia \texttt{hito-N/integracion} y fusión tras CI en verde. Los cierres de hito fueron PR \#9 (Hito 1), \#17 (Hito 2), \#24 (Hito 3), \#29 (cierre sprint) y \#32 (revisión final). La trazabilidad completa tarea → rama → PR figura en \texttt{docs/gestion/README.md} y en la Tabla \ref{tab:sprint1-trazabilidad} (tareas de los 19 PBIs).
 
 {\small
 \begin{longtable}{@{}L{0.7cm} L{1.0cm} L{5.5cm} L{3.5cm} L{2.5cm}@{}}
-\caption{Trazabilidad tarea → PR de los PBIs hechos (P1–P14, P18 y P19; 26 tareas).}\label{tab:trazabilidad}\\
+\caption{Trazabilidad tarea → PR del Sprint 1 (32 tareas).}\label{tab:sprint1-trazabilidad}\\
 \toprule
 \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\ \midrule \endfirsthead
 \toprule
@@ -73,6 +72,12 @@ P12 & T17 & Sacar los secretos a variables de entorno & \#20 & Hecho \\
 P13 & T18 & Roles, autorización y primer administrador & \#21 & Hecho \\
 P13 & T19 & Panel de administración y baja de cuenta & \#22 & Hecho \\
 P14 & T20 & Configurar el logging de la actividad relevante & \#23 & Hecho \\
+P15 & T21 & Registrar la aplicación OAuth en Google & \#40 & Hecho \\
+P15 & T22 & Flujo de inicio de sesión con OAuth & \#40 & Hecho \\
+P16 & T23 & Servicio de correo & \#38 & Hecho \\
+P16 & T24 & Flujo de confirmación de la cuenta & \#39 & Hecho \\
+P17 & T25 & Errores en el backend & \#37–\#41 & Hecho \\
+P17 & T26 & Mensajes de error en el frontend & \#37–\#41 & Hecho \\
 P18 & T27 & Completar el README & \#25 & Hecho \\
 P18 & T28 & Etiquetas de hito y revisión final & \#26 & Hecho \\
 P18 & T31 & Revisión frase a frase contra el enunciado & \#30 & Hecho \\
@@ -83,126 +88,106 @@ P19 & T30 & Despliegue continuo en Cloud Run con GitHub Actions & \#28 & Hecho \
 \end{longtable}
 }
 
-\subsection{Desarrollo del sprint}
+\subsection{Desarrollo del Sprint 1: problemas y soluciones}
 
-Los problemas técnicos surgidos y sus soluciones, extraídos de la documentación del proyecto y la guía general (§8), se resumen en las Tablas \ref{tab:prob-desarrollo}, \ref{tab:prob-despliegue}, \ref{tab:prob-git}, \ref{tab:prob-alcance}, \ref{tab:prob-latex} y \ref{tab:prob-donetonic}.
+Los problemas técnicos surgidos y sus soluciones, extraídos de la documentación del proyecto (documentacion-tecnica.md §13), se resumen en las Tablas \ref{tab:prob-desarrollo} a \ref{tab:prob-donetonic}.
 
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
+\caption{Problemas y soluciones en desarrollo y pruebas.}\label{tab:prob-desarrollo}\\
 \toprule
-\textbf{Problema detectado} & \textbf{Solución adoptada} \\
-\midrule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endfirsthead
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
 \texttt{pg-mem} no admitía \texttt{CREATE TABLE IF NOT EXISTS} ni funciones de sesión & Consulta a \texttt{information\_schema}; prueba de sesiones solo contra PostgreSQL real en CI \\
 Cookie \texttt{secure} no guardada en local con \texttt{NODE\_ENV=production} sobre HTTP & Comportamiento esperado por seguridad; capturas locales en modo desarrollo \\
 \texttt{pkill -f "node src/server.js"} cerraba la shell invocadora & Arranque del proceso de servidor con \texttt{setsid} desde script \\
 Tabla de administración no cabía en 640 px; botón \textit{Eliminar} oculto & Contenedor ampliado; en móvil, cada usuario se muestra como tarjeta (Fig. \ref{fig:app-admin-movil}) \\
 Capturas Playwright en GitHub salían sin estilos por recursos bloqueados & Descartadas; capturas de la propia aplicación generadas correctamente \\
 Docker Hub bloqueado en entorno en la nube & Simulación local (\texttt{npm ci --omit=dev}); validación real en job del CI \\
+JSON mal formado devolvía HTML de Express & Manejador propio tras parser: 400 JSON en toda la API (prueba técnica) \\
+Correo no salía desde Cloud Run (puerto 25/587 bloqueado) & SMTP Gmail puerto 465 con contraseña de aplicación en Secret Manager \\
+\texttt{redirect\_uri\_mismatch} en Google OAuth & Registrar las dos URLs de Cloud Run y localhost en cliente Google; usar \texttt{PUBLIC\_URL} \\
+Ramas Hito 4 dependían unas de otras & Reubicar (rebase) sobre \texttt{main} real antes de abrir PRs, cada una con CI verde \\
 \bottomrule
-\end{tabular}
-\caption{Problemas y soluciones en desarrollo y pruebas (guía §8).}
-\label{tab:prob-desarrollo}
-\end{table}
+\end{longtable}
 
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
+\caption{Problemas y soluciones en despliegue Google Cloud.}\label{tab:prob-despliegue}\\
 \toprule
-\textbf{Problema detectado} & \textbf{Solución adoptada} \\
-\midrule
-Script de preparación falló en Artifact Registry por propagación de IAM & Reejecución parametrizada con \texttt{PROJECT\_ID}; script idempotente \\
-Secreto \texttt{database-url} mal introducido en Cloud Run & Creación de una nueva versión del secreto (v2) con \texttt{gcloud secrets} \\
-URL pública de Cloud Run devolvía código 404 & Primer despliegue pendiente; operativa tras finalizar el workflow \\
-Cadena de conexión de Neon compartida en chat & Recomendación de rotar clave; aplazada en lista de tareas pendientes \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endfirsthead
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
+Script preparación falló en Artifact Registry por propagación IAM & Reejecución parametrizada con \texttt{PROJECT\_ID}; script idempotente \\
+Secreto \texttt{database-url} mal introducido en Cloud Run & Nueva versión del secreto (v2) con \texttt{gcloud secrets} \\
+URL pública Cloud Run devolvía 404 & Primer despliegue pendiente; operativa tras finalizar workflow \\
+Cadena de conexión Neon compartida en chat & Recomendación rotar clave; aplazada en lista de tareas pendientes \\
 \bottomrule
-\end{tabular}
-\caption{Problemas y soluciones en despliegue Google Cloud (guía §8).}
-\label{tab:prob-despliegue}
-\end{table}
+\end{longtable}
 
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
+\caption{Problemas y soluciones en Git y GitHub.}\label{tab:prob-git}\\
 \toprule
-\textbf{Problema detectado} & \textbf{Solución adoptada} \\
-\midrule
-\texttt{git push --all} rechazado en ramas de integración (\textit{non-fast-forward}) & Sincronización mediante \texttt{git fetch} y \texttt{git branch -f} \\
-Entorno cloud sin permisos de escritura directa en GitHub & Exportación de commits vía \texttt{git bundle}; push desde local \\
-Bundle requería commit base ausente en repositorio local & Regeneración tomando como base el commit disponible \texttt{4b16182} \\
-Subida de bundle con mismo nombre sobrescribía versión anterior & Asignación de nombres de fichero unívocos \\
-Fusiones en interfaz web fallaban por comprobaciones incompletas & Espera a la validación de checks y confirmación explícita \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endfirsthead
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
+\texttt{git push --all} rechazado en ramas integración (non-fast-forward) & Sincronización mediante \texttt{git fetch} y \texttt{git branch -f} \\
+Entorno cloud sin permisos escritura directa en GitHub & Exportación commits vía \texttt{git bundle}; push desde local \\
+Bundle requería commit base ausente en repo local & Regeneración tomando base commit \texttt{4b16182} \\
+Subida bundle con mismo nombre sobrescribía versión anterior & Asignación nombres de fichero unívocos \\
+Fusiones en interfaz web fallaban por comprobaciones incompletas & Espera a validación checks y confirmación explícita \\
 \bottomrule
-\end{tabular}
-\caption{Problemas y soluciones en Git y GitHub (guía §8).}
-\label{tab:prob-git}
-\end{table}
+\end{longtable}
 
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
+\caption{Problemas y soluciones en alcance y revisión.}\label{tab:prob-alcance}\\
 \toprule
-\textbf{Problema detectado} & \textbf{Solución adoptada} \\
-\midrule
-Requisitos de OAuth y confirmación por correo pertenecientes a Hito 4 & Alcance limitado a Hitos 1–3 por el docente; código guardado \\
-Endpoint \texttt{/api/users/:id/active} accesible a usuarios estándar & Restricción exclusiva al rol administrador (PR \#30) tras revisión \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endfirsthead
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
+Requisitos OAuth y confirmación correo pertenecientes a Hito 4 & Alcance limitado a Hitos 1–3 por docente; código guardado \\
+Endpoint \texttt{/api/users/:id/active} accesible a usuarios estándar & Restricción exclusiva a rol administrador (PR \#30) tras revisión \\
 Documentos de revisión redactados a partir de PBIs y no del PDF & Reescritura sistemática de \texttt{docs/revision-entrega.md} \\
 \bottomrule
-\end{tabular}
-\caption{Problemas y soluciones en alcance y revisión (guía §8).}
-\label{tab:prob-alcance}
-\end{table}
+\end{longtable}
 
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
+\caption{Problemas y soluciones en memoria LaTeX.}\label{tab:prob-latex}\\
 \toprule
-\textbf{Problema detectado} & \textbf{Solución adoptada} \\
-\midrule
-Error de escritura de auxiliares en subcarpetas al compilar en \texttt{build/} & Configuración de \texttt{.latexmkrc} con creación recursiva de directorios \\
-Ausencia de librerías LuaLaTeX en entorno de pruebas & Instalación de dependencias; compilación validada en GitHub Actions \\
-\bottomrule
-\end{tabular}
-\caption{Problemas y soluciones en memoria LaTeX (guía §8).}
-\label{tab:prob-latex}
-\end{table}
-
-\begin{table}[htbp]
-\centering
-\small
-\begin{tabular}{@{}L{5.0cm} L{7.3cm}@{}}
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endfirsthead
 \toprule
-\textbf{Problema detectado} & \textbf{Solución adoptada} \\
-\midrule
-Menús apilados y clics JS ineficaces en interfaz Flutter de DoneTonic & Automatización por coordenadas comprobando árbol de accesibilidad \\
-Renderizado distorsionado al forzar tamaño de ventana en Flutter & Capturas realizadas con resolución nativa de 800 px \\
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
+Error escritura auxiliares en subcarpetas al compilar en \texttt{build/} & Configuración \texttt{.latexmkrc} con creación recursiva directorios \\
+Ausencia librerías LuaLaTeX en entorno pruebas & Instalación dependencias; compilación validada en GitHub Actions \\
 \bottomrule
-\end{tabular}
-\caption{Problemas y soluciones en DoneTonic (guía §8).}
-\label{tab:prob-donetonic}
-\end{table}
+\end{longtable}
 
-\subsection{Revisión del sprint}
+\begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
+\caption{Problemas y soluciones en DoneTonic.}\label{tab:prob-donetonic}\\
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endfirsthead
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
+Menús apilados y clics JS ineficaces en interfaz Flutter & Automatización por coordenadas comprobando árbol accesibilidad \\
+Renderizado distorsionado al forzar tamaño ventana en Flutter & Capturas realizadas con resolución nativa de 800 px \\
+\bottomrule
+\end{longtable}
 
-Al cierre del Sprint 1 (12/10/2026, commit \texttt{978098e}, PR \#32) se entregaron:
+\subsection{Revisión del Sprint 1}
+
+Al cierre del Sprint 1 (27/10/2026, commit final, PR \#32 y posteriores) se entregaron:
 \begin{itemize}
-    \item Cuatro releases publicadas en GitHub: \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3} y \texttt{sprint-1}.
-    \item Servicio web desplegado y plenamente operativo en Google Cloud Run y Render, según se referencia en el Anexo \ref{anx:material}.
-    \item Batería de 80 pruebas automatizadas validadas al CI contra PostgreSQL 17.
-    \item 16 PBIs completados correspondientes al alcance de la entrega (3 PBIs pospuestos a Hito 4).
-    \item 65 commits en la rama principal (33 de trabajo y 32 de integración de PRs) y 71 ejecuciones de GitHub Actions.
-    \item Consumo en el plan gratuito de Neon a fecha 12/10/2026: 0,27 CU-h de cómputo (límite 100 CU-h), 0,03 GB de almacenamiento (límite 1 GB) y 0 GB de transferencia sobre 5 GB \cite{neonlimits}.
+    \item Cinco releases publicadas en GitHub: \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3}, \texttt{hito-4}, \texttt{sprint-1}.
+    \item Servicio web desplegado y operativo en Google Cloud Run y Render (Anexo \ref{anx:material}).
+    \item Batería de 276 pruebas automatizadas validadas en CI contra PostgreSQL 17.
+    \item 19 PBIs completados (16 de alcance inicial + 3 Hito 4 + P19).
+    \item Más de 50 PRs fusionados, 82 tareas totales (32 Sprint 1 + 50 Sprint 2).
+    \item Consumo en plan gratuito Neon (12/10/2026): 0,27 CU-h cómputo (límite 100), 0,03 GB almacenamiento (límite 1 GB), 0 GB transferencia (límite 5 GB) (documentacion-tecnica.md §14, neonlimits).
 \end{itemize}
 
-\subsection{Retrospectiva}
+\subsection{Retrospectiva del Sprint 1}
 
 \subsubsection{Burndown del Sprint 1}
-La Figura \ref{fig:burndown} muestra la evolución de PBIs pendientes del alcance de la entrega (16 PBIs: P1–P14, P18, P19) según la tabla «Evolución del sprint» de \texttt{docs/gestion/README.md}. El escalón «+P19» refleja el cambio de alcance al añadir el despliegue en Cloud Run.
+La Figura \ref{fig:burndown-s1} muestra la evolución de PBIs pendientes del alcance de la entrega (16 PBIs: P1–P14, P18, P19) según la tabla «Evolución del sprint» de \texttt{docs/gestion/README.md}. El escalón «+P19» refleja el cambio de alcance al añadir el despliegue en Cloud Run.
 
 \begin{figure}[htbp]
 \centering
@@ -225,17 +210,17 @@ La Figura \ref{fig:burndown} muestra la evolución de PBIs pendientes del alcanc
 \end{axis}
 \end{tikzpicture}
 \caption{Burndown del Sprint 1: evolución de PBIs pendientes del alcance de la entrega.}
-\label{fig:burndown}
+\label{fig:burndown-s1}
 \end{figure}
 
 \subsubsection{Seguimiento visual en DoneTonic}
-La Figura \ref{fig:donetonic-graficas} muestra las gráficas Sprint Burnup y Sprint Burndown de DoneTonic (84\% completado, 3 PBIs pendientes del Hito 4), tal como se captura en el panel de seguimiento del proyecto.
+La Figura \ref{fig:donetonic-graficas-s1} muestra las gráficas Sprint Burnup y Sprint Burndown de DoneTonic para el Sprint 1 (captura \texttt{figs/capturas/donetonic/02-graficas-sprint.png}).
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth]{figs/capturas/donetonic-02-graficas-sprint.png}
-\caption{Sprint Burnup y Sprint Burndown en DoneTonic (84\% completado, 3 PBIs pendientes).}
-\label{fig:donetonic-graficas}
+\includegraphics[width=0.9\textwidth]{figs/capturas/donetonic/02-graficas-sprint.png}
+\caption{Sprint Burnup y Sprint Burndown en DoneTonic (Sprint 1).}
+\label{fig:donetonic-graficas-s1}
 \end{figure}
 
 \subsubsection{Cambio de alcance}
@@ -248,4 +233,183 @@ Durante el sprint, el profesor repartió créditos de Google Cloud para educaci�
     \item La auditoría manual frase a frase frente al enunciado oficial demostró ser indispensable, localizando discrepancias de acceso que habían pasado inadvertidas en la formulación de los PBIs.
     \item La concentración cronológica de commits en una jornada (12/10/2026) preserva la trazabilidad estructural del proceso, si bien se reconoce la conveniencia pedagógica de una cadencia temporal más distribuida.
     \item Todo secreto compartido involuntariamente en canales de comunicación debe ser rotado como buena práctica de seguridad.
+\end{itemize}
+
+\section{Sprint 2 (Lógica del juego)}
+
+\subsection{Planificación del Sprint 2}
+
+\subsubsection{Objetivo y fechas}
+El Sprint 2 se planificó del 23/10/2026 al 29/10/2026, tras el cierre del Sprint 1, cuando el profesor fijó que el Sprint 2 sería la lógica del juego. El juego ya estaba desarrollado en seis fases (23/10–26/10), por lo que el sprint recoge ese trabajo como backlog: 29 PBIs (P20–P48) y 50 tareas (T33–T82), con una etiqueta por fase (gestion/README.md §4.4).
+
+\subsubsection{Sprint Backlog}
+La Tabla \ref{tab:sprint2-backlog} resume los PBIs del Sprint 2 con su etiqueta, título, tareas, PRs y fecha de finalización (hecho = día fusión último PR del PBI).
+
+{\small
+\begin{longtable}{@{}L{0.7cm} L{2.2cm} L{5.5cm} L{1.5cm} L{2.0cm} L{1.8cm} L{1.5cm}@{}}
+\caption{Sprint Backlog del Sprint 2 (29 PBIs, 50 tareas).}\label{tab:sprint2-backlog}\\
+\toprule
+\textbf{PBI} & \textbf{Etiqueta} & \textbf{Título} & \textbf{Tareas} & \textbf{PRs} & \textbf{Hecho} & \textbf{Estado} \\ \midrule \endfirsthead
+\toprule
+\textbf{PBI} & \textbf{Etiqueta} & \textbf{Título} & \textbf{Tareas} & \textbf{PRs} & \textbf{Hecho} & \textbf{Estado} \\ \midrule \endhead
+P20 & Base del juego & Rediseño interfaz web y menú juego & T33, T34 & \#36, \#45 & 24/10/2026 & Hecho \\
+P21 & Base del juego & Motor partida survivor & T35, T36 & \#36 & 23/10/2026 & Hecho \\
+P22 & Base del juego & Gráficos pixel art y cámara 3/4 & T37, T38 & \#44, \#46 & 24/10/2026 & Hecho \\
+P23 & Base del juego & Jugadores, entrenadores y Vestuario & T39–T41 & \#44, \#48 & 24/10/2026 & Hecho \\
+P24 & Base del juego & Armas, habilidades y mejoras & T42, T43 & \#36, \#48 & 24/10/2026 & Hecho \\
+P25 & Base del juego & Rivales con comportamiento propio & T44, T45 & \#44, \#45, \#47 & 24/10/2026 & Hecho \\
+P26 & Base del juego & Jefes con fases & T46, T47 & \#45, \#48 & 24/10/2026 & Hecho \\
+P27 & Base del juego & Mapa con terreno y obstáculos & T48, T49 & \#45, \#47 & 24/10/2026 & Hecho \\
+P28 & Base del juego & Controles, pantalla completa y ajustes & T50, T51 & \#36, \#47 & 24/10/2026 & Hecho \\
+P29 & Fase 2 Club & Progreso juego guardado en servidor & T52, T53 & \#49 & 24/10/2026 & Hecho \\
+P30 & Fase 2 Club & Contratos: fichar jugadores & T54 & \#49 & 24/10/2026 & Hecho \\
+P31 & Fase 2 Club & Entrenamiento de jugadores & T55 & \#49, \#50 & 24/10/2026 & Hecho \\
+P32 & Fase 2 Club & Ranking de la grada & T56 & \#49 & 24/10/2026 & Hecho \\
+P33 & Fase 3 Ultras & Combinaciones y ULTRAS & T57, T58 & \#50 & 24/10/2026 & Hecho \\
+P34 & Fase 3 Ultras & Dificultad equilibrada y modo pruebas & T59, T60 & \#50 & 24/10/2026 & Hecho \\
+P35 & Fase 4 Mundo & Mundo procedural natural & T61 & \#52 & 24/10/2026 & Hecho \\
+P36 & Fase 4 Mundo & Ambientes por finales & T62 & \#52 & 24/10/2026 & Hecho \\
+P37 & Fase 4 Mundo & Mote y avatar & T63 & \#52 & 24/10/2026 & Hecho \\
+P38 & Fase 5 Rarezas & Rarezas por historia rojiblanca y fichajes & T64, T65 & \#53 & 26/10/2026 & Hecho \\
+P39 & Fase 5 Rarezas & Habilidades niveladas por minuto & T66 & \#53 & 26/10/2026 & Hecho \\
+P40 & Fase 5 Rarezas & Combinaciones y ultras a la vista & T67 & \#53 & 26/10/2026 & Hecho \\
+P41 & Fase 5 Rarezas & Colisiones exactas & T68 & \#53 & 26/10/2026 & Hecho \\
+P42 & Fase 6 Logros y sonido & Logros con historia y equipaciones & T69, T70 & \#54 & 26/10/2026 & Hecho \\
+P43 & Fase 6 Logros y sonido & Pantalla fin con estadísticas & T71 & \#54 & 26/10/2026 & Hecho \\
+P44 & Fase 6 Logros y sonido & Música chiptune y grada & T72–T74 & \#54 & 26/10/2026 & Hecho \\
+P45 & Fase 6 Logros y sonido & Muñecos con más detalle & T75 & \#54 & 26/10/2026 & Hecho \\
+P46 & Fase 6 Logros y sonido & Jefes más duros & T76 & \#54 & 26/10/2026 & Hecho \\
+P47 & Calidad & Corrección errores detectados & T77–T79 & \#51, \#55, \#56 & 29/10/2026 & Hecho \\
+P48 & Calidad & Documentación y gestión Sprint 2 & T80–T82 & \#55 & 29/10/2026 & Hecho \\
+\bottomrule
+\end{longtable}
+}
+
+\subsubsection{Historias de usuario y criterios de aceptación (Sprint 2)}
+Cada PBI del Sprint 2 tiene en DoneTonic su historia de usuario y criterios de aceptación (gestion/README.md, sección «Historias de usuario y criterios de aceptación»). La Tabla \ref{tab:sprint2-hu} resume las 29 historias con sus criterios principales.
+
+{\small
+\begin{longtable}{@{}L{0.7cm} L{13.5cm}@{}}
+\caption{Historias de usuario Sprint 2 (resumen).}\label{tab:sprint2-hu}\\
+\toprule
+\textbf{PBI} & \textbf{Historia de usuario y criterios clave} \\ \midrule \endfirsthead
+\toprule
+\textbf{PBI} & \textbf{Historia de usuario y criterios clave} \\ \midrule \endhead
+P20 & Como aficionado quiero una web con aspecto de juego, clara en móvil y ordenador, para que entrar a jugar sea lo primero al iniciar sesión. Criterios: sistema diseño propio (tokens CSS, tipografía Plus Jakarta Sans), modo oscuro rojiblanco, responsive, con sesión inicio = menú juego, cabecera solo Jugar/Mi cuenta (y Admin), pantallas cuentas Sprint 1 funcionan igual. \\
+P21 & Como jugador quiero partida supervivencia contra oleadas infinitas, armas automáticas, moverme y elegir mejoras. Criterios: simulación pura paso fijo 1/60 s con semilla, oleadas cada 30 s, experiencia y 3 mejoras al subir nivel, dificultad creciente, pausa/fin/vuelta menú, pausa al cambiar pestaña. \\
+P22 & Como jugador quiero estilo visual propio con muñecos chibi Atleti, sin imágenes oficiales. Criterios: muñecos 16×20 código, caché fotogramas, cámara 3/4 con inercia/inclinación/destellos/aplastado, respeta prefers-reduced-motion. \\
+P23 & Como jugador quiero elegir entre leyendas Atleti y entrenador, cada uno con su estilo. Criterios: 36 jugadores (stats por posición + rasgos), habilidades propias por jugador, 2 entrenadores (Simeone +daño+vida ulti «Partido a partido», Aragonés +velocidad+experiencia ulti «Furia Roja»), Vestuario con filtro posición y ficha. \\
+P24 & Como jugador quiero muchas armas/habilidades que suban nivel y combinen. Criterios: 24 armas (disparo, cuerpo a cuerpo, movilidad) 5 niveles, pasivas, mejoras extra sin límite, porteros no aprenden armas disparo. \\
+P25 & Como jugador quiero rivales variados que obliguen a moverme. Criterios: 16 equipos genéricos desbloqueados por oleadas, unos embisten con «!», otros disparan balones, rodean gradas/paredes. \\
+P26 & Como jugador quiero jefes famosos con ataques propios cada pocas oleadas. Criterios: jefe cada 4 oleadas aleatorio sin repetir, 3 fases (66\% y 33\%): más ataques, menos espera, más velocidad, avisos en suelo antes de golpear. \\
+P27 & Como jugador quiero campo con barro, lluvia, gradas, estructuras. Criterios: barro frena, lluvia acelera balones, gradas no se atraviesan, mapa procedural biomas/estructuras distinto cada partida, premios por campo con flechas en borde pantalla. \\
+P28 & Como jugador quiero jugar con teclado/dedo y ajustar sonido/gráficos. Criterios: teclado WASD/flechas, joystick táctil flotante móvil, pantalla completa (botón/F), pausa con ajustes, ajustes guardados navegador (volumen, efectos, números daño, zoom, joystick). \\
+P29 & Como jugador quiero club y partidas guardados en mi cuenta. Criterios: tablas juego\_perfiles y juego\_records (migración 003) ligadas a usuario, API /api/juego protegida sesión, servidor valida cada resultado con reloj propio (anti-trampas), rechaza imposibles, concurrencia optimista. \\
+P30 & Como jugador quiero ganar fichas contrato venciendo jefes y canjearlas por jugadores. Criterios: plantilla inicial 4 comunes (uno por posición), 1 ficha por 3 jefes vencidos en cuenta, contrato nunca repite jugador, probabilidad por rareza. \\
+P31 & Como jugador quiero entrenar jugadores con puntos que ganan. Criterios: puntos por jefes (1 cada 3 con ese jugador) y por bajas (cada vez más caros), 4 stats (Vida, Defensa, Disparo, Suerte) máx 20, solo puntos libres, validado servidor. \\
+P32 & Como jugador quiero compararme con resto de aficionados. Criterios: una fila por usuario con mejor partida (tiempo; empate → nivel), nunca muestra correo, pestañas Mis partidas y La grada. \\
+P33 & Como jugador quiero que juntar habilidades desbloquee combinaciones y poderes definitivos. Criterios: 24 combinaciones con nombre y bonus, 6 ULTRAS al completar combinaciones (Puskás, Balón Oro, Zamora…), efecto visual propio, daño parte porcentual (reducido jefes). \\
+P34 & Como jugador quiero juego difícil pero justo; como admin probar todo sin jugar horas. Criterios: tramo final más duro min 9, rivales curtidos min 12, ayuda inicial apaga min 8, modo pruebas solo admin (todos jugadores/puntos sin tocar ranking). \\
+P35 & Como jugador quiero mundo distinto cada partida con barrios, estadios, parques, mesetas. Criterios: ruidos suaves distrito/altura/humedad encajan sin cortes, estadios con gradas mirando campo, plazas tiendas, mesetas escaleras, casi todo mapa alcanzable desde salida (con pruebas). \\
+P36 & Como jugador quiero que cada 5 min partida cambie de escenario. Criterios: 5 ambientes (pretemporada → Copa Rey → Liga → Champions → Mundial), cambian luz/césped/afición/carteles, rivales más fuertes, en Mundial camisetas selección. \\
+P37 & Como jugador quiero mote y cara propios para ranking y cabecera. Criterios: mote 3–16 chars único sin mayúsculas/tiles (409 si cogido), avatar cara jugador fichado o entrenador, migración 004, PUT /api/juego/identidad. \\
+P38 & Como aficionado quiero rareza refleje historia Atleti y fichar se sienta especial. Criterios: 36 jugadores en 4 rarezas (Común, Raro, Épico, Leyenda) según historia club, más rareza = más habilidades y menos probabilidad contrato, animación firma contrato pixel art. \\
+P39 & Como jugador quiero habilidades fuertes no rompan partida al principio. Criterios: niveles bloqueados hasta minuto (desdeMinuto) y recarga mínima (cdMin), regate/entrada rasante/contragolpe reequilibrados. \\
+P40 & Como jugador quiero ver combinaciones/ultras y qué me falta. Criterios: pantalla Combinaciones con nombre, bonus, requisitos, ultra a la que cuentan, filtros Todas/Con tu jugador/Conseguidas. \\
+P41 & Como jugador quiero que lo que veo sea lo que choca. Criterios: edificios/gradas/bancos chocan en todo dibujo, muñecos chocan por pies (vista 3/4), copa árboles transparente. \\
+P42 & Como aficionado quiero logros con datos curiosos Atleti que desbloqueen equipaciones. Criterios: 29 logros con dato real descubierto al conseguirlo, servidor solo apunta logros comprobables, 10 equipaciones elegibles en Vestuario. \\
+P43 & Como jugador quiero ver al final qué funcionó. Criterios: tiempo, ambiente, bajas, jefes, daño total, golpe máximo, críticos, daño recibido, vida recuperada, barras daño por habilidad (armas, ultras, ulti, quemaduras), jefes vencidos con coste, logros nuevos. \\
+P44 & Como jugador quiero música y ambiente estadio. Criterios: fanfarria propia por competición, canción fondo anima con tiempo/jefes, grada murmura/canta según cercanía, volumen música aparte efectos, todo sintetizado (sin ficheros). \\
+P45 & Como aficionado quiero reconocer jugadores y jefes en campo. Criterios: sombreado, orejas, nariz, peinados nuevos, rasgos propios (brazalete capitán, cinta, pecas, barba, pendientes, tatuajes). \\
+P46 & Como jugador quiero jefes reto de verdad a partir del segundo. Criterios: escolta élites desde segundo jefe, refuerzos al cambiar fase, furia si tardas, jugada estrella por jefe en fase 3, primero asequible. \\
+P47 & Como usuario quiero errores arreglados con pruebas que eviten regresión. Criterios: cada error se reproduce con prueba antes de arreglar, arreglos pasan CI y se despliegan. \\
+P48 & Como responsable quiero Sprint 2 revisable desde repositorio. Criterios: README con capturas juego y DoneTonic, documentación técnica para memoria con diagramas, backlog/tablero/gráficas Sprint 2 en DoneTonic. \\
+\bottomrule
+\end{longtable}
+}
+
+\subsection{Desarrollo del Sprint 2: problemas y soluciones}
+
+Los problemas detectados durante el Sprint 2 y sus soluciones (documentacion-tecnica.md §13, filas Sprint 2) se resumen en la Tabla \ref{tab:prob-sprint2}.
+
+\begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
+\caption{Problemas y soluciones Sprint 2.}\label{tab:prob-sprint2}\\
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endfirsthead
+\toprule
+\textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
+Juego no cargaba tras cambio (variable usada antes de existir) & Arreglo inmediato (PR \#51) y prueba que importa todos módulos juego \\
+Jugadores se escondían detrás de tejados (colisión no coincidía con dibujo 3/4) & Colisión por pies y obstáculos que chocan en todo su dibujo (PR \#53, T68) \\
+Tirones al pintar suelo (muchas texturas por píxel mismo fotograma) & Una textura por celda y ambiente, máx 1 por fotograma y por adelantado (PR \#52) \\
+Simulación lenta con muchos rivales (búsqueda claves texto, muchas celdas) & Búsqueda por radio con claves numéricas: ~4,5× más rápida (PR \#52) \\
+Regate hacía jugador intocable demasiado pronto (subía sin límite) & Niveles que no salen hasta cierto minuto y recarga mínima (PR \#53, T66) \\
+Equilibrio difícil ajustar a mano (muchas variables) & Todo equilibrio en \texttt{config.js} y calibración con bot partidas simuladas (PR \#50, T59) \\
+Eliminar cuenta (sobre todo Google) impedía volver a entrar con ese email & Migración 005: email único solo entre no eliminadas (índice parcial); \texttt{findByEmail} ignora eliminadas; al eliminar suelta mote y sale ranking; pruebas nuevo caso completo (PR \#56) \\
+Primer clic «Reenviar correo» se perdía tras error login & Campo vacío no tocado no da error al salir; tras fallo servidor contraseña se vacía sin marcar error (PR \#55) \\
+\bottomrule
+\end{longtable}
+
+\subsection{Revisión del Sprint 2}
+
+Al cierre del Sprint 2 (29/10/2026) se entregaron:
+\begin{itemize}
+    \item 29 PBIs completados, 50 tareas, 13 PRs fusionados (\#36, \#44–\#56).
+    \item Código integrado en \texttt{main}, desplegado en Cloud Run y Render.
+    \item Documentación actualizada: README con capturas juego y DoneTonic, documentación técnica (§9, §13, §14, §16), backlog y seguimiento Sprint 2 en DoneTonic.
+    \item 276 pruebas automáticas en \texttt{main} (140 Sprint 1 + 136 juego).
+\end{itemize}
+
+\subsection{Retrospectiva del Sprint 2}
+
+\subsubsection{Burndown real del Sprint 2}
+La Figura \ref{fig:burndown-s2} muestra la evolución real de PBIs pendientes según la fecha de fusión del último PR de cada PBI (gestion/README.md, tabla «Evolución del Sprint 2»). A diferencia de las gráficas de DoneTonic (que salen en recta porque el backlog se registró al cerrar el sprint el 29/10), este burndown refleja el trabajo real día a día.
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.9\textwidth,
+    height=7cm,
+    xlabel={Fecha},
+    ylabel={PBIs pendientes},
+    xtick={1,2,3,4,5,6,7},
+    xticklabels={23/10, 24/10, 25/10, 26/10, 27/10, 28/10, 29/10},
+    ymin=0, ymax=29,
+    grid=major,
+    legend pos=north east,
+    mark=*,
+    thick
+]
+\addplot coordinates {(1,28) (2,11) (3,11) (4,2) (5,2) (6,2) (7,0)};
+\addlegendentry{PBIs pendientes}
+\end{axis}
+\end{tikzpicture}
+\caption{Burndown real del Sprint 2 (PBIs pendientes por fecha de PR).}
+\label{fig:burndown-s2}
+\end{figure}
+
+\subsubsection{Seguimiento visual en DoneTonic}
+Las Figuras \ref{fig:donetonic-tablero-s2} y \ref{fig:donetonic-graficas-s2} muestran el tablero y las gráficas del Sprint 2 en DoneTonic (capturas \texttt{figs/capturas/donetonic/04-tablero-sprint2.png} y \texttt{06-graficas-sprint2.png}). Las gráficas aparecen como una recta porque el backlog del Sprint 2 se registró en DoneTonic al cerrar el sprint (29/10/2026), marcando todos los PBIs como hechos ese día.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/donetonic/04-tablero-sprint2.png}
+\caption{Tablero del Sprint 2 en DoneTonic (29 PBIs con etiquetas de fase).}
+\label{fig:donetonic-tablero-s2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/donetonic/06-graficas-sprint2.png}
+\caption{Sprint Burndown y Burnup del Sprint 2 en DoneTonic (recta por registro tardío).}
+\label{fig:donetonic-graficas-s2}
+\end{figure}
+
+\subsubsection{Lo aprendido}
+\begin{itemize}
+    \item La arquitectura en capas y la inyección de dependencias permitieron montar el juego entero sobre la base SaaS sin tocar la lógica existente: el servidor importa \texttt{club.js}, \texttt{config.js}, \texttt{logros.js} (reglas compartidas) y valida con concurrencia optimista.
+    \item La simulación determinista (paso fijo, semilla) facilitó pruebas reproducibles en Node sin navegador y calibración de dificultad con un bot.
+    \item Generar gráficos y sonido por código evitó problemas de derechos, permitió carga instantánea y variar equipaciones/selecciones/intensidad musical fácilmente.
+    \item El registro tardío en DoneTonic del Sprint 2 distorsiona sus gráficas; la trazabilidad real debe reconstruirse con fechas de PR (como se hace en este anexo).
+    \item Los errores de usabilidad (clic perdido en reenvío, baja con Google) aparecieron al hacer capturas reales; la comprobación visual manual es imprescindible.
 \end{itemize}
