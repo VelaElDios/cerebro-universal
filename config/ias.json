@@ -15,8 +15,8 @@
       "modelos": [
         "mistralai/mistral-large-4-1t-a52b",
         "z-ai/glm-5.3-flash",
-        "deepseek-ai/deepseek-v4.1-flash",
-        "minimaxai/minimax-m3.1-flash"
+        "minimaxai/minimax-m3.1-flash",
+        "deepseek-ai/deepseek-v4.1-flash"
       ],
       "max_tokens": 32768,
       "tiempo_max": 420,
@@ -28,8 +28,7 @@
       "url": "https://integrate.api.nvidia.com/v1",
       "modelos": [
         "nvidia/nemotron-3-ultra-550b-a55b",
-        "mistralai/mistral-large-4-1t-a52b",
-        "nvidia/nemotron-3-super-120b-a12b"
+        "mistralai/mistral-large-4-1t-a52b"
       ],
       "max_tokens": 32768,
       "tiempo_max": 420,
