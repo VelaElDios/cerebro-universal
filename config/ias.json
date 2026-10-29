@@ -6,7 +6,11 @@
       "modelos": [
         "gemini-flash-latest"
       ],
-      "tiempo_max": 300
+      "tiempo_max": 300,
+      "esperas": [
+        0,
+        20
+      ]
     },
     "nvidia-constructor": {
       "tipo": "openai",
@@ -14,13 +18,15 @@
       "url": "https://integrate.api.nvidia.com/v1",
       "modelos": [
         "mistralai/mistral-large-4-1t-a52b",
-        "z-ai/glm-5.3-flash",
-        "minimaxai/minimax-m3.1-flash",
-        "deepseek-ai/deepseek-v4.1-flash"
+        "minimaxai/minimax-m3.1-flash"
       ],
       "max_tokens": 32768,
-      "tiempo_max": 420,
-      "stream": true
+      "tiempo_max": 1200,
+      "stream": true,
+      "esperas": [
+        0,
+        20
+      ]
     },
     "nvidia-revisor": {
       "tipo": "openai",
@@ -31,8 +37,12 @@
         "mistralai/mistral-large-4-1t-a52b"
       ],
       "max_tokens": 32768,
-      "tiempo_max": 420,
-      "stream": true
+      "tiempo_max": 900,
+      "stream": true,
+      "esperas": [
+        0,
+        20
+      ]
     },
     "openrouter-grandes": {
       "tipo": "openai",
@@ -43,8 +53,12 @@
         "nvidia/nemotron-3.5-super-vl:free"
       ],
       "autodescubrir_gratis": false,
-      "tiempo_max": 420,
-      "stream": true
+      "tiempo_max": 900,
+      "stream": true,
+      "esperas": [
+        0,
+        20
+      ]
     },
     "openrouter": {
       "tipo": "openai",
@@ -60,7 +74,11 @@
       "modelos": [
         "gemini-3.5-flash-lite"
       ],
-      "tiempo_max": 300
+      "tiempo_max": 300,
+      "esperas": [
+        0,
+        20
+      ]
     }
   },
   "roles": {

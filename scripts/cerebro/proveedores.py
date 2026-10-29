@@ -7,6 +7,7 @@ Para añadir una IA nueva:
 - Opciones por proveedor en config/ias.json:
     "max_tokens": tope de lo que puede escribir la IA (algunas APIs cortan pronto si no se dice)
     "tiempo_max": segundos de espera por respuesta (por defecto 180; los modelos grandes tardan más)
+    "esperas": segundos antes de cada intento con el mismo modelo (por defecto [0, 30, 90])
     "extra": campos que se añaden tal cual a la petición (opciones propias de cada API)
     "stream": true → la respuesta llega a trozos. Con mensajes muy largos algunas APIs (NVIDIA) cortan
               la conexión si tardan minutos en contestar de golpe; a trozos, la conexión no se queda parada
@@ -72,15 +73,16 @@ class Proveedor:
 
     def pedir(self, sistema: str, mensaje: str) -> tuple[str, str]:
         """Prueba cada modelo con reintentos. Devuelve (texto, modelo que respondió)."""
+        esperas = self.cfg.get("esperas", ESPERAS)   # p. ej. [0, 20]: menos espera con un 503
         for modelo in self.modelos():
-            for intento, espera in enumerate(ESPERAS, start=1):
+            for intento, espera in enumerate(esperas, start=1):
                 # Hace falta tiempo para la espera y para una respuesta completa
                 if tiempo_restante() < espera + 60:
                     raise TiempoAgotado(f"Sin tiempo para llamar a {self.nombre} ({modelo})")
                 if espera:
                     print(f"  Esperando {espera}s...")
                     time.sleep(espera)
-                print(f"[{self.nombre}] {modelo} · intento {intento}/{len(ESPERAS)}")
+                print(f"[{self.nombre}] {modelo} · intento {intento}/{len(esperas)}")
                 try:
                     texto = self._llamar(modelo, sistema, mensaje)
                     if texto and texto.strip():
