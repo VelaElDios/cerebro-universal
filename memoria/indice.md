@@ -6,14 +6,15 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 ## Temas
 
-[[beamer]] · [[bibliografia]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[longtable]] · [[lua]] · [[memoria]] · [[overleaf]] · [[pgfplots]] · [[referencias]] · [[revision]] · [[tablas]] · [[tikz]]
+[[beamer]] · [[bibliografia]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[longtable]] · [[lua]] · [[memoria]] · [[overfull]] · [[overleaf]] · [[pgfplots]] · [[referencias]] · [[revision]] · [[tablas]] · [[texttt]] · [[tikz]]
 
-## Pendientes de revisar (2)
+## Pendientes de revisar (3)
 
 - [[citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesta
+- [[los-identificadores-largos-en-texttt-no-se-parten-solos-usar|Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando]] · ⚠️ propuesta
 - [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
 
-## Todas (25)
+## Todas (26)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
 - [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
@@ -27,6 +28,7 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 - [[escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en|Escapar los textos que vienen de datos antes de meterlos en LaTeX]]
 - [[figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]]
 - [[forzar-lualatex-con-latexmkrc|Forzar LuaLaTeX con latexmkrc]]
+- [[los-identificadores-largos-en-texttt-no-se-parten-solos-usar|Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando]] · ⚠️ propuesta
 - [[los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e|Los textos de conclusión deben salir de los datos, no estar escritos fijos]]
 - [[no-meter-codigo-lua-dentro-de-directlua|No meter código Lua dentro de \directlua]]
 - [[no-meter-saltos-de-linea-n-dentro-de-tex-sprint|No meter saltos de línea \n dentro de tex.sprint]]

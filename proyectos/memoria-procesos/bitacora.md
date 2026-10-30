@@ -2025,3 +2025,88 @@ El resto son tareas para el constructor.
 - En todos los capítulos y anexos, añadir `\ref{tab:...}` a TODAS las longtables que tengan `\caption` y `\label` (el test exige caption+label+ref). Revisar tablas: tab:rf-sprint1, tab:rj-sprint2, tab:rnf, tab:decisiones-diseno, tab:sistemas-juego, tab:workflows, tab:pruebas-por-fichero, tab:metricas, tab:sprint1-backlog, tab:sprint1-trazabilidad, tab:prob-desarrollo, tab:prob-despliegue, tab:prob-git, tab:prob-alcance, tab:prob-latex, tab:prob-donetonic, tab:sprint2-backlog, tab:sprint2-hu, tab:trazabilidad-completa.
 - Ejecutar `biber` y compilar con LuaLaTeX (latexmk) hasta que `verificar.py` pase sin errores.
 - Revisar `chapters/04-descripcion.tex` para asegurar que no queden errores de compilación (Misplaced \noalign) y que todos los diagramas de secuencia compilen.
+
+## 2026-10-30 22:39 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+El fallo fatal de compilación está en `chapters/a1-desarrollo.tex` (línea 162: `\texttextbf` en lugar de `\textbf`), así que reescribo ese anexo completo: corrijo el comando, añado `\ref` a todas sus tablas, incluyo los dos burndown con pgfplots (`fig:burndown-s1`, `fig:burndown-s2`), la tabla de las 29 historias de usuario del Sprint 2, los problemas/soluciones solo de la §13 de las fuentes (sin datos inventados) y añado 6 capturas más de DoneTonic para superar el mínimo de 5. Como segundo archivo reescribo `chapters/a4-trazabilidad.tex` con la tabla completa de las 82 tareas (T1–T82) y sus PRs, que es lo que exige el test.
+
+**Archivos:** `chapters/a1-desarrollo.tex`, `chapters/a4-trazabilidad.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/a1-desarrollo.tex:145: Extra alignment tab has been changed to \cr.
+- intento 2: ❌ ./chapters/a1-desarrollo.tex:375: Package luatex.def Error: File `figs/capturas/donetonic/04-graficas-sprint2.png' not found: using draft setting. (tocó `chapters/a1-desarrollo.tex`)
+- intento 3: ❌ VERIFICACIÓN FALLIDA: 11 problema(s) (tocó `chapters/a1-desarrollo.tex`)
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** Ejecutar `latexmk` (LuaLaTeX) + `biber` y correr `verificar.py` para ver si ya compila sin el error de `\texttextbf` y qué queda: probablemente (1) añadir `\ref` a las longtables de `04-descripcion.tex` que aún no lo tengan (p. ej. tabla del modelo de datos/API) y comprobar que sus 5 diagramas de secuencia compilan; (2) revisar que haya capturas suficientes de `app/` (4) y `hito4/` (4) en `04-descripcion.tex`; (3) quitar la URL inventada de Render en `a2-material.tex` (solo está en fuentes la de Cloud Run); (4) comprobar que `elements/preambulo.tex` cumple los mínimos de palabras del Resumen y el Abstract; (5) si `verificar.py` sigue quejándose de tablas sin `\ref`, recorrer `03-propuesta.tex`, `04b-juego.tex` y `05-evaluacion.tex` añadiéndolos.
+
+## 2026-10-30 22:56 · Revisor (nvidia-revisor · mistralai/mistral-large-4-1t-a52b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Fechas Sprint 1 «29/09/2026 – 27/10/2026» → documentacion-tecnica.md §2 tabla inicial: «Sprint 1 | 29/09/2026 – 27/10/2026» (01-introduccion, a1) ✔
+- Fechas Sprint 2 «23/10/2026 – 29/10/2026» → documentacion-tecnica.md §2: «Sprint 2 | 23/10/2026 – 29/10/2026» ✔
+- «19 PBIs (P1–P19) y 32 tareas (T1–T32)» → gestion/README.md cabecera: «19 PBIs (P1–P19) y 32 tareas (T1–T32)» ✔
+- «29 PBIs (P20–P48) y 50 tareas (T33–T82)» → gestion/README.md cabecera Sprint 2 ✔
+- «48 PBIs y 82 tareas» en el Product Backlog → gestion/README.md: «Product Backlog | 48 PBIs y 82 tareas, todos hechos» (06-conclusiones); 32+50=82 ✔
+- «276 pruebas» → documentacion-tecnica.md §10.2 Total: «276 … 140 del Sprint 1 … y 136 del juego»; 140+136=276 ✔ (05-evaluacion, 01, preambulo)
+- «23 endpoints» → documentacion-tecnica.md §14: «Endpoints de la API | 23» (05 tab:metricas) ✔
+- «5 migraciones» → documentacion-tecnica.md §14 «Migraciones | 5» y §6.1 lista 001–005 (contadas: 5) ✔
+- «Más de 50» PRs → documentacion-tecnica.md §14 «Pull requests | Más de 50» (05) ✔
+- Releases «hito-1, hito-2, hito-3, hito-4, sprint-1» → documentacion-tecnica.md §14 (a2 corregido por mí, a4) ✔
+- Cierres de hito «#9, #17, #24, #29, #32» → documentacion-tecnica.md §4.4 «Cierres de hito: #9 (Hito 1), #17 (Hito 2), #24 (Hito 3), #29 … y #32» (a1) ✔
+- Datos burndown S1 [15,9,5,1,2,0] → documentacion-tecnica.md §4.5 mermaid `line [15, 9, 5, 1, 2, 0]`; fig:burndown-s1 usa (1,15)(2,9)(3,5)(4,1)(5,2)(6,0) ✔
+- 16 PBIs del alcance de la entrega: P1–P14 = 14, +P18 +P19 = 16 → gestion/README.md «16 en total» (a1) ✔
+- Datos burndown S2 [28,11,11,2,2,2,0] → gestion/README.md mermaid `line [28, 11, 11, 2, 2, 2, 0]`; fig:burndown-s2 en a1 no visible en el recorte: no comprobado
+- Fechas de PR del Sprint 2 (#36 23/10; #44–#52 24/10; #53/#54 26/10; #55 27/10; #56 29/10) → gestion/README.md tabla «PR | Fase | Fecha de fusión» (a1 cronología) ✔
+- URL de la app → documentacion-tecnica.md §2 «https://la-grada-colchonera-1081564062572.europe-southwest1.run.app» (05, a2) ✔
+- URL del repositorio → documentacion-tecnica.md §2 «https://github.com/VelaElDios/la-grada-colchonera-saas» (a2) ✔
+- bcrypt coste 10 → documentacion-tecnica.md §6.1 «bcrypt (coste 10; en las pruebas, 4)» (06-conclusiones) ✔
+- Token HMAC con caducidad 24 h → documentacion-tecnica.md §7.1 «caducidad 24 h» y §8 ✔
+- Timeout de 15 s en api.js → documentacion-tecnica.md §5.1 «timeout de 15 s» (04, 05) ✔
+- Paso fijo 1/60 s → documentacion-tecnica.md §5.2 «Paso fijo de 1/60 s» (04b; 01 dice «60 hercios», equivalente a «60 FPS» de RNF-09) ✔
+- Oleada cada 30 s, jefe cada 4 oleadas, primero a los 1:30 → documentacion-tecnica.md §9.2 (04b usa «1:30») ✔
+- 5 ambientes cada 5 minutos → documentacion-tecnica.md §9.2 «cada 5 minutos cambia la pantalla: pretemporada → … → Final del Mundial» (contados: 5) ✔
+- Mote de 3 a 16 caracteres → gestion/README.md P37 (04b) ✔
+- 8 secretos de Secret Manager → documentacion-tecnica.md §11 «los 8 secretos de Secret Manager» (05 tab:workflows) ✔
+- PostgreSQL 17 en el CI → documentacion-tecnica.md §10.1 y §11 (05) ✔
+- Imagen Node 22 Alpine → documentacion-tecnica.md §11 «Node 22 (Alpine)» (05 «node:22-alpine») ✔
+- Contenido del juego 36/2/24/14/24/6/16/10/5/26/29/10 → documentacion-tecnica.md §14 última fila (04b, 05) ✔
+- Rarezas Leyenda 8 + Épico 8 + Raro 8 + Común 12 = 36 → documentacion-tecnica.md §9.3 ✔
+- Posiciones 4+9+13+10 = 36 jugadores → documentacion-tecnica.md §9.3 ✔
+- 29 módulos del juego → documentacion-tecnica.md §14; @arbol lista 29 ficheros en public/js/game/ (contados uno a uno: 29) ✔
+- Muñecos de 16×20 píxeles → documentacion-tecnica.md §9.4 (04b) ✔
+- Búsqueda por celdas «unas 4,5 veces más rápida» → documentacion-tecnica.md §9.4 y §13 ✔
+- Anti-trampas: margen 15 s, tope 4 h, jefes ≤ 3+t/50, nivel ≤ 8+t/3, bajas ≤ 20·t+50 → documentacion-tecnica.md §9.5 ✔
+- Migración 005 (email único solo entre no eliminadas) → documentacion-tecnica.md §13 última fila grande ✔
+- P19 añadido por los créditos de educación de Google Cloud → documentacion-tecnica.md §4.1 y §13 (a1) ✔
+- Gráficas del Sprint 2 en recta porque el backlog se registró al cerrar (29/10) → gestion/README.md nota «Sobre las gráficas del Sprint 2»; en a1 no visible en el recorte: no comprobado
+- URL de Render «la-grada-colchonera.onrender.com» → NO aparece en ninguna fuente ✘ → la corrijo yo en a2-material.tex
+- Número «422» (04b-juego.tex:256) → no aparece en las fuentes ✘ → tarea para el constructor
+- Número «1996» (04b-juego.tex:296) → no aparece en las fuentes (la fuente dice «Doblete del 96», doc-tec §9.6) ✘ → tarea para el constructor
+- Capturas de donetonic usadas: 01-tablero-sprint, 02-graficas-sprint, 03-backlog = 3 distintas < 5 ✘ → tarea para el constructor
+- «80 pruebas» en a3-uso-ia.tex → revision-entrega.md §6 «npm test (80 pruebas)» (dato trazable pero del Sprint 1; el total actual es 276 según doc-tec §10.2) → tarea para el constructor
+- Resumen con «Palabras clave» y Abstract con «Keywords» presentes en elements/preambulo.tex; resumen ≈ 160 palabras (>150) y abstract ≈ 150 (>120), el test lo verifica ✔
+
+La prueba falla con 11 problemas, así que el veredicto es «cambios». Lo que está bien: la estructura de capítulos/anexos sigue la plantilla, los datos principales (fechas, PBIs, tareas, 276 pruebas, métricas) coinciden con las fuentes (ver COMPROBACIONES), los burndown de pgfplots usan los datos exactos de §4.5 y de gestion.md, y a4-trazabilidad cubre las 82 tareas con sus PRs.
+
+Lo que está mal y no puedo arreglar yo (archivos recortados en el borrador o fuera de mi límite de 2 archivos): (1) dos «Float too large» (82 pt y 469 pt): el longtable `tab:sistemas-juego` de 04b-juego.tex está anidado dentro de `\begin{table}` (inválido) y hay otro flotante demasiado alto en 04-descripcion.tex; (2) overfull en 04-descripcion.tex línea 46-47 (`juegoService.finalizarPartida` en \texttt); (3) solo 3 capturas de donetonic (faltan 2); (4) el test cuenta solo 4 tablas con caption+label+ref (hay que revisar que todas las longtable tengan `\caption{...}\label{...}` y un `\ref` en el texto, y sacar las que estén dentro de `table`); (5) los números 422 y 1996 de 04b-juego.tex no están en las fuentes.
+
+Lo que he corregido yo directamente (2 archivos): en `chapters/05-evaluacion.tex` he puesto `\allowbreak` dentro de los `\texttt` largos que causaban los 4 overfull (nombres de ficheros de la tabla de pruebas, la lista de eventos de log, la lista de errores tipados y `POST /api/prueba/dominio`), y he ensanchado la primera columna de la tabla de pruebas; en `chapters/a2-material.tex` he eliminado la URL de Render (no está en las fuentes) y he completado las releases con `hito-4` y he añadido el enlace de DoneTonic que pide la spec.
+
+**Correcciones del revisor:** `chapters/05-evaluacion.tex`, `chapters/a2-material.tex`
+
+**Tareas para el constructor:**
+- En `chapters/04b-juego.tex`: quitar el `\begin{table}[htbp] … \end{table}` que envuelve el `longtable` de `tab:sistemas-juego` (es inválido y causa el «Float too large» de 469 pt y que el test no cuente la tabla); dejar el longtable suelto. Sustituir el número «422» (línea ~256) por un dato de las fuentes o eliminarlo, y «1996» (línea ~296) por «Doblete del 96» (así aparece en documentacion-tecnica.md §9.6; el año 1996 no está en las fuentes).
+- Localizar el otro «Float too large» (82 pt) en `chapters/04-descripcion.tex` (probablemente otro longtable dentro de `table` o una figura muy alta) y corregirlo; en la línea 46–47, partir `\texttt{juegoService.finalizarPartida}` con `\allowbreak` tras el punto.
+- En `chapters/a1-desarrollo.tex` (sección del Sprint 2): añadir al menos 2 capturas más de `figs/capturas/donetonic/` (p. ej. `04-tablero-sprint2.png` y `06-graficas-sprint2.png`, con `\caption`, `\label` y `\ref`), y dejar por escrito que las gráficas de DoneTonic del Sprint 2 salen en recta porque el backlog se registró al cerrar el sprint (29/10) — gestion/README.md, nota «Sobre las gráficas del Sprint 2». Comprobar que `fig:burndown-s2` usa los datos [28, 11, 11, 2, 2, 2, 0].
+- Revisar por qué verificar.py cuenta solo 4 tablas con caption+label+ref: todas las longtable de 04-descripcion, 04b, 05, a1 y a4 deben tener `\caption{...}\label{tab:...}` en la primera fila y un `\ref{tab:...}` en el texto de algún capítulo; sacar de dentro de `table` cualquier longtable anidado.
+- En `chapters/a3-uso-ia.tex`: cambiar «80 pruebas» por «276 pruebas» (el 80 es el dato del Sprint 1 en revision-entrega.md §6; el total del proyecto es 276 según documentacion-tecnica.md §10.2).
+- Verificar que existen con sintaxis pgf-umlsd válida: `fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja` (en 04-descripcion.tex) y `fig:sec-partida`, `fig:sec-contratar` (en 04b-juego.tex), además de `fig:capas`, `fig:modelo-datos`, `fig:pipeline`, `fig:burndown-s1`, `fig:burndown-s2`.
+- Ejecutar `latexmk` (LuaLaTeX) + biber y `verificar.py` hasta que pasen los 11 problemas actuales.
+
+## 2026-10-30 22:56 · 🧠 Lección propuesta para la memoria
+
+[[los-identificadores-largos-en-texttt-no-se-parten-solos-usar]] (pendiente de confirmar en `memoria/lecciones/`).

@@ -1,92 +1,115 @@
 \chapter{Trazabilidad}
 \label{anx:trazabilidad}
 
-Este anexo presenta la trazabilidad completa desde los requisitos (funcionales y no funcionales) hasta los \textit{Pull Requests} que los implementan, pasando por los PBIs y las tareas técnicas. La trazabilidad cubre los dos sprints: Sprint 1 (Hitos 1–4, PBIs P1–P19, tareas T1–T32) y Sprint 2 (PBIs P20–P48, tareas T33–T82).
-
-La correspondencia requisito → PBI se extrae de la documentación técnica (§3, tablas de requisitos). La correspondencia PBI → tarea → PR se extrae de \texttt{docs/gestion/README.md} (tablas de trazabilidad de ambos sprints). En el Sprint 1 cada tarea tiene su PR individual; en el Sprint 2 cada tarea indica el PR en su descripción de DoneTonic (un PR por fase y arreglos).
+Este anexo presenta la trazabilidad completa desde los requisitos hasta los pull requests que los implementan, pasando por los PBIs y las tareas técnicas de los dos sprints: Sprint 1 (Hitos 1--4, PBIs P1--P19, tareas T1--T32) y Sprint 2 (PBIs P20--P48, tareas T33--T82). La correspondencia requisito--PBI sale de la sección 3 de \texttt{docs/documentacion-tecnica.md} (tablas de RF, RJ y RNF); la correspondencia PBI--tarea--PR sale de las tablas de trazabilidad de \texttt{docs/gestion/README.md}. En el Sprint 1 cada tarea tiene su rama propia y su PR individual hacia la rama del hito; en el Sprint 2 cada tarea indica en su descripción de DoneTonic el PR donde está (un PR por fase y uno por arreglo). Los requisitos no funcionales son transversales y se resumen al principio de la tabla; después, una fila por cada una de las 82 tareas. La Tabla~\ref{tab:trazabilidad-completa} es la matriz completa.
 
 {\small
-\begin{longtable}{@{}L{1.2cm}@{}L{0.8cm}@{}L{0.8cm}@{}L{4.5cm}@{}L{3.0cm}@{}}
-\caption{Trazabilidad completa: Requisito → PBI → Tarea → PR.}\label{tab:trazabilidad-completa}\\
+\begin{longtable}{@{}L{1.7cm} L{0.8cm} L{0.9cm} L{7.0cm} L{3.2cm}@{}}
+\caption{Trazabilidad completa: requisito $\rightarrow$ PBI $\rightarrow$ tarea $\rightarrow$ PR.}\label{tab:trazabilidad-completa}\\
 \toprule
-\textbf{Requisito} & \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción tarea} & \textbf{PR} \\ \midrule \endfirsthead
+\textbf{Requisito} & \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción de la tarea} & \textbf{PR} \\ \midrule \endfirsthead
 \toprule
-\textbf{Requisito} & \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción tarea} & \textbf{PR} \\ \midrule \endhead
-% Sprint 1
-RF-01 & P8 & T11 & Registro y login en el backend (con hash) & \#13 \\
-RF-01 & P8 & T12 & Formularios de registro y login en el frontend & \#14 \\
-RF-02 & P8 & T11 & Registro y login en el backend (con hash) & \#13 \\
-RF-02 & P8 & T12 & Formularios de registro y login en el frontend & \#14 \\
+\textbf{Requisito} & \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción de la tarea} & \textbf{PR} \\ \midrule \endhead
+% --- Requisitos no funcionales (transversales) ---
+RNF-01 & P8, P9, P10, P13 & T11--T14, T18, T19 & Seguridad de credenciales y sesiones: bcrypt, cookie httpOnly/secure/sameSite, regeneración de sesión, permisos en el servidor, consultas parametrizadas & \#13--\#16, \#21, \#22 \\
+RNF-02 & P12 & T17 & Secretos fuera del código: variables de entorno y Secret Manager & \#20 \\
+RNF-03 & P4, P6, P11 & T5, T6, T8, T15, T16 & Separación en capas API/lógica/datos con inyección de dependencias & \#5, \#6, \#8, \#18, \#19 \\
+RNF-04 & P2, P5 & T3, T7 & Pruebas automáticas con \texttt{node:test} y CI obligatorio en ramas protegidas & \#3, \#7 \\
+RNF-05 & P3, P19 & T4, T29, T30 & Despliegue continuo en URL pública (Render y Cloud Run) & \#4, \#10, \#27, \#28 \\
+RNF-06 & P3, P19 & T4, T29, T30 & Disponibilidad y coste: escala a cero, capas gratuitas y créditos de educación & \#4, \#10, \#27, \#28 \\
+RNF-07 & P7, P8, P17 & T9, T10, T12, T25, T26 & Accesibilidad: HTML semántico, foco, \texttt{aria-live}, \texttt{aria-describedby}, teclado, \texttt{prefers-reduced-motion} & \#11, \#12, \#14, \#37--\#41 \\
+RNF-08 & P7, P28 & T9, T10, T50, T51 & Responsive: panel de administración en tarjetas en el móvil y joystick táctil & \#11, \#12, \#36, \#47 \\
+RNF-09 & P21, P22, P27 & T35--T38, T48, T49 & Rendimiento del juego: paso fijo, búsqueda espacial por celdas, texturas cacheadas & \#36, \#44, \#46, \#45, \#47 \\
+RNF-10 & Todos & T1--T82 & Trazabilidad requisito--PBI--tarea--rama--PR--release & \#1--\#56 \\
+RNF-11 & P16, P17, P32 & T23, T24, T26, T56 & Privacidad: política pública, ranking sin correo, logs que ocultan datos sensibles & \#38, \#39, \#37--\#41, \#49 \\
+RNF-12 & P4, P6, P11, P24 & T5, T6, T8, T15, T16, T42, T43 & Mantenibilidad: sin frameworks en el frontend, equilibrio en \texttt{config.js}, módulos pequeños & \#5, \#6, \#8, \#18, \#19, \#36, \#48 \\
+% --- Sprint 1: una fila por tarea ---
+— & P1 & T1 & Crear repositorio y estructura base & \#1 \\
+— & P1 & T2 & Configurar GitHub Flow & \#2 \\
+RNF-04 & P2 & T3 & Workflow de CI con GitHub Actions & \#3 \\
+RNF-05, RNF-06 & P3 & T4 & Despliegue automático en proveedor cloud gratuito & \#4, \#10 \\
+RNF-03 & P4 & T5 & Modelo de usuario y repositorio en memoria & \#5 \\
+RNF-03 & P4 & T6 & Servicio de gestión de usuarios & \#6 \\
+RNF-04 & P5 & T7 & Framework de pruebas y al menos 5 pruebas & \#7 \\
+RNF-03 & P6 & T8 & Endpoints de la API de usuarios & \#8 \\
+RNF-07, RNF-08 & P7 & T9 & Cliente de comunicación con la API & \#11 \\
+RNF-07, RNF-08 & P7 & T10 & Interfaz de usuario: vistas y navegación & \#12 \\
+RF-01, RF-02 & P8 & T11 & Registro y login en el backend (con hash) & \#13 \\
+RF-01, RF-02 & P8 & T12 & Formularios de registro y login en el frontend & \#14 \\
 RF-03 & P9 & T13 & Mantener la sesión al recargar y cerrar sesión & \#15 \\
 RF-04 & P10 & T14 & Middleware de autenticación y protección de rutas & \#16 \\
 RF-05 & P11 & T15 & Elegir y configurar la base de datos & \#18 \\
 RF-05 & P11 & T16 & Repositorio de BD sustituyendo al de memoria & \#19 \\
-RF-06 & P13 & T18 & Roles, autorización y primer administrador & \#21 \\
-RF-06 & P13 & T19 & Panel de administración y baja de cuenta & \#22 \\
-RF-07 & P13 & T18 & Roles, autorización y primer administrador & \#21 \\
-RF-07 & P13 & T19 & Panel de administración y baja de cuenta & \#22 \\
-RF-08 & P13 & T18 & Roles, autorización y primer administrador & \#21 \\
-RF-08 & P13 & T19 & Panel de administración y baja de cuenta & \#22 \\
+RNF-02 & P12 & T17 & Sacar los secretos a variables de entorno & \#20 \\
+RF-06, RF-07, RF-08 & P13 & T18 & Roles, autorización y primer administrador (backend) & \#21 \\
+RF-06, RF-07, RF-08 & P13 & T19 & Panel de administración y baja de cuenta (frontend) & \#22 \\
 RF-09 & P14 & T20 & Configurar el logging de la actividad relevante & \#23 \\
-RF-10 & P16 & T23 & Servicio de correo & \#38 \\
-RF-10 & P16 & T24 & Flujo de confirmación de la cuenta & \#39 \\
 RF-11 & P15 & T21 & Registrar la aplicación OAuth en Google & \#40 \\
 RF-11 & P15 & T22 & Flujo de inicio de sesión con OAuth & \#40 \\
-RF-12 & P17 & T25 & Errores en el backend & \#37–\#41 \\
-RF-12 & P17 & T26 & Mensajes de error en el frontend & \#37–\#41 \\
-RF-13 & Prueba & — & (Prueba técnica, sin PBI propio) & \#34 \\
-RNF-01 & P8,P9,P10,P13 & T11–T14,T18,T19 & Seguridad credenciales/sesiones (bcrypt, cookie, regeneración, permisos) & \#13–\#16,\#21,\#22 \\
-RNF-02 & P12 & T17 & Sacar los secretos a variables de entorno & \#20 \\
-RNF-03 & P4,P6,P11 & T5,T6,T8,T15,T16 & Separación capas API/lógica/datos, inyección dependencias & \#5,\#6,\#8,\#18,\#19 \\
-RNF-04 & P5 & T7 & Framework pruebas y al menos 5 pruebas & \#7 \\
-RNF-04 & P2 & T3 & Workflow CI con GitHub Actions & \#3 \\
-RNF-05 & P3,P19 & T4,T10,T29,T30 & Despliegue continuo URL pública (Render, Cloud Run) & \#4,\#10,\#27,\#28 \\
-RNF-06 & P3,P19 & T4,T10,T29,T30 & Disponibilidad y coste (escala a cero, créditos) & \#4,\#10,\#27,\#28 \\
-RNF-07 & P7,P8,P17 & T9,T10,T12,T25,T26 & Accesibilidad (HTML semántico, foco, aria-live, aria-describedby, teclado, prefers-reduced-motion) & \#11,\#12,\#14,\#37–\#41 \\
-RNF-08 & P7,P28 & T9,T10,T50,T51 & Responsive (admin tarjetas móvil, joystick táctil) & \#11,\#12,\#36,\#47 \\
-RNF-09 & P21,P22,P27 & T35,T36,T37,T38,T48,T49 & Rendimiento juego (paso fijo, búsqueda espacial, texturas cacheadas) & \#36,\#44,\#46,\#45,\#47 \\
-RNF-10 & Todos & T1–T82 & Trazabilidad requisito→PBI→tarea→rama→PR→release & \#1–\#56 \\
-RNF-11 & P16,P17,P32 & T23,T24,T26,T56 & Privacidad (política pública, ranking sin email, logs ocultan sensibles) & \#38,\#39,\#37–\#41,\#49 \\
-RNF-12 & P4,P6,P11,P24 & T5,T6,T8,T15,T16,T42,T43 & Mantenibilidad (sin frameworks frontend, equilibrio en config.js, módulos pequeños) & \#5,\#6,\#8,\#18,\#19,\#36,\#48 \\
-% Sprint 2 - Requisitos funcionales juego (RJ)
-RJ-01 & P20,P29 & T33,T34,T52,T53 & Menú juego con sesión, API juego protegida, tablas perfiles/records & \#36,\#45,\#49 \\
-RJ-02 & P21,P24,P34 & T35,T36,T42,T43,T59,T60 & Motor survivor: oleadas, experiencia, mejoras, dificultad & \#36,\#48,\#50 \\
-RJ-03 & P22,P45 & T37,T38,T75 & Gráficos pixel art código, cámara 3/4, muñecos detalle & \#44,\#46,\#54 \\
-RJ-04 & P23,P38 & T39,T40,T41,T64,T65 & Jugadores (36), entrenadores (2), Vestuario, Dirección, rarezas & \#44,\#48,\#53 \\
-RJ-05 & P24,P39 & T42,T43,T66 & Armas 5 niveles, pasivas, habilidades niveladas por minuto & \#36,\#48,\#53 \\
-RJ-06 & P25 & T44,T45 & Rivales 16 equipos, embisten/disparan/rodean, élites & \#44,\#45,\#47 \\
-RJ-07 & P26,P46 & T46,T47,T76 & Jefes 3 fases, avisos, escolta, furia, jugada estrella & \#45,\#48,\#54 \\
-RJ-08 & P27,P35,P41 & T48,T49,T61,T68 & Mundo procedural, terreno, obstáculos macizos, colisiones exactas & \#45,\#47,\#52,\#53 \\
-RJ-09 & P36 & T62 & Ambientes cambian cada 5 min (5 finales) & \#52 \\
-RJ-10 & P28 & T50,T51 & Controles teclado/ratón/táctil, pausa, pantalla completa, ajustes & \#36,\#47 \\
-RJ-11 & P29 & T52,T53 & Club guardado servidor, validación anti-trampas partida & \#49 \\
-RJ-12 & P30,P38 & T54,T64,T65 & Fichar jugadores con fichas contrato (1 por 3 jefes), rareza & \#49,\#53 \\
-RJ-13 & P31 & T55 & Entrenar jugadores con puntos por bajas/jefes & \#49,\#50 \\
-RJ-14 & P32 & T56 & Ranking grada mejor partida usuario (sin email) & \#49 \\
-RJ-15 & P33,P40 & T57,T58,T67 & Combinaciones (24) y ULTRAS (6), pantalla requisitos & \#50,\#53 \\
-RJ-16 & P34 & T60 & Modo pruebas solo admin & \#50 \\
-RJ-17 & P37 & T63 & Mote único y avatar (migración 004, PUT identidad) & \#52 \\
-RJ-18 & P42 & T69,T70 & Logros 29 con historia Atleti, validados servidor, 10 equipaciones & \#54 \\
-RJ-19 & P43 & T71 & Pantalla fin con estadísticas y daño por habilidad & \#54 \\
-RJ-20 & P44 & T72,T73,T74 & Música chiptune, efectos, grada, ajustes volumen & \#54 \\
-% PBIs y tareas del Sprint 1 que el test exige (P1, P18, P47, P48)
-P1 & P1 & T1 & Crear repositorio y estructura base & \#1 \\
-P1 & P1 & T2 & Configurar GitHub Flow & \#2 \\
-P18 & P18 & T27 & Completar el README & \#25 \\
-P18 & P18 & T28 & Etiquetas de hito y revisión final & \#26 \\
-P18 & P18 & T31 & Revisión frase a frase contra el enunciado & \#30 \\
-P18 & P18 & T32 & Carpeta de la memoria en LuaLaTeX & \#31 \\
-P47 & P47 & T77 & El juego no cargaba (variable usada antes de existir) & \#51 \\
-P47 & P47 & T78 & El primer clic en «Reenviar el correo» se perdía tras un error & \#55 \\
-P47 & P47 & T79 & No se podía volver tras eliminar la cuenta (Google) & \#56 \\
-P48 & P48 & T80 & README del Sprint 2 con capturas del juego y de DoneTonic & \#55 \\
-P48 & P48 & T81 & Documentación técnica para la memoria & \#55 \\
-P48 & P48 & T82 & Backlog y seguimiento del Sprint 2 en DoneTonic & — (DoneTonic) \\
+RF-10 & P16 & T23 & Servicio de correo & \#38 \\
+RF-10 & P16 & T24 & Flujo de confirmación de la cuenta & \#39 \\
+RF-12 & P17 & T25 & Errores en el backend & \#37--\#41 \\
+RF-12 & P17 & T26 & Mensajes de error en el frontend & \#37--\#41 \\
+— & P18 & T27 & Completar el README & \#25 \\
+— & P18 & T28 & Etiquetas de hito y revisión final & \#26 \\
+— & P18 & T31 & Revisión frase a frase contra el enunciado y README final & \#30 \\
+— & P18 & T32 & Carpeta de la memoria en LuaLaTeX & \#31 \\
+RNF-05, RNF-06 & P19 & T29 & Contenerizar la aplicación con Docker & \#27 \\
+RNF-05, RNF-06 & P19 & T30 & Despliegue continuo en Cloud Run con GitHub Actions & \#28 \\
+RF-13 & — & — & Prueba técnica: solo dominios de correo permitidos (\texttt{domainPolicy.js}) & \#34 \\
+% --- Sprint 2: una fila por tarea ---
+RJ-01 & P20 & T33 & Sistema de diseño: tokens, tipografía y modo oscuro rojiblanco & \#36 \\
+RJ-01 & P20 & T34 & Menú del juego como inicio con sesión (hub con el jugador paseando) & \#36, \#45 \\
+RJ-02 & P21 & T35 & Simulación de paso fijo con semilla (\texttt{mundo.js}) & \#36 \\
+RJ-02 & P21 & T36 & Oleadas, experiencia y mejoras al subir de nivel & \#36 \\
+RJ-03 & P22 & T37 & Muñecos chibi generados por código (\texttt{sprites.js}) & \#44 \\
+RJ-03 & P22 & T38 & Cámara 3/4, inercia y sensación de movimiento y golpes & \#46 \\
+RJ-04 & P23 & T39 & Jugadores con estadísticas por posición y habilidades propias & \#44, \#48 \\
+RJ-04 & P23 & T40 & Entrenadores con ulti y pantalla Dirección & \#44 \\
+RJ-04 & P23 & T41 & Vestuario renovado con filtros y ficha & \#48 \\
+RJ-02, RJ-05 & P24 & T42 & Armas con 5 niveles: disparo, cuerpo a cuerpo y movilidad & \#36, \#48 \\
+RJ-02, RJ-05 & P24 & T43 & Pasivas y mejoras extra & \#36 \\
+RJ-06 & P25 & T44 & 16 equipos rivales que se desbloquean por oleadas & \#44 \\
+RJ-06 & P25 & T45 & Rivales que embisten, disparan y rodean obstáculos & \#45, \#47 \\
+RJ-07 & P26 & T46 & Jefes con tres fases y avisos de ataque & \#45 \\
+RJ-07 & P26 & T47 & Seis jefes nuevos con habilidades propias & \#48 \\
+RJ-08 & P27 & T48 & Barro, lluvia, gradas y premios & \#45 \\
+RJ-08 & P27 & T49 & Mapa procedural con biomas y estructuras & \#47 \\
+RJ-10 & P28 & T50 & Entrada por teclado y joystick táctil & \#36 \\
+RJ-10 & P28 & T51 & Pantalla completa, pausa y ajustes en partida & \#47 \\
+RJ-01, RJ-11 & P29 & T52 & Migración 003 y repositorios del juego (memoria y PostgreSQL) & \#49 \\
+RJ-01, RJ-11 & P29 & T53 & API del juego con validación anti-trampas & \#49 \\
+RJ-12 & P30 & T54 & Fichas por jefes y sorteo de contratos por rareza & \#49 \\
+RJ-13 & P31 & T55 & Puntos y estadísticas de entrenamiento & \#49, \#50 \\
+RJ-14 & P32 & T56 & Ranking multijugador con la mejor partida de cada usuario & \#49 \\
+RJ-15 & P33 & T57 & Combinaciones con nombre y bonus & \#50 \\
+RJ-15 & P33 & T58 & Seis ULTRAS con efectos visuales & \#50 \\
+RJ-02, RJ-16 & P34 & T59 & Curvas de dificultad calibradas con un bot & \#50 \\
+RJ-02, RJ-16 & P34 & T60 & Modo pruebas para administradores & \#50 \\
+RJ-08 & P35 & T61 & Generación del terreno por ruidos (\texttt{terreno.js}) & \#52 \\
+RJ-09 & P36 & T62 & Cinco ambientes con cambio de luz, afición y fuerza & \#52 \\
+RJ-17 & P37 & T63 & Migración 004, API de identidad y pantalla Tu ficha & \#52 \\
+RJ-04, RJ-12 & P38 & T64 & Rarezas por historia y 36 jugadores & \#53 \\
+RJ-04, RJ-12 & P38 & T65 & Animación de la firma del contrato & \#53 \\
+RJ-05 & P39 & T66 & Niveles bloqueados por minuto y recarga mínima & \#53 \\
+RJ-15 & P40 & T67 & Pantalla de combinaciones y ultras con filtros & \#53 \\
+RJ-08 & P41 & T68 & Hitbox por los pies y obstáculos macizos & \#53 \\
+RJ-18 & P42 & T69 & Logros validados en el servidor (\texttt{logros.js}) & \#54 \\
+RJ-18 & P42 & T70 & Pantalla Logros y equipaciones en el Vestuario & \#54 \\
+RJ-19 & P43 & T71 & Atribución del daño por fuente y pantalla de fin (\texttt{fin-ui.js}) & \#54 \\
+RJ-20 & P44 & T72 & Secuenciador chiptune y fanfarrias (\texttt{musica.js}) & \#54 \\
+RJ-20 & P44 & T73 & La grada: murmullo y cánticos según la cercanía & \#54 \\
+RJ-20 & P44 & T74 & Efectos de sonido nuevos y ajuste de música & \#54 \\
+RJ-03 & P45 & T75 & Rasgos y sombreado en \texttt{sprites.js} & \#54 \\
+RJ-07 & P46 & T76 & Escolta, furia y jugada estrella & \#54 \\
+— & P47 & T77 & El juego no cargaba (variable usada antes de existir) & \#51 \\
+— & P47 & T78 & El primer clic en «Reenviar el correo» se perdía tras un error & \#55 \\
+— & P47 & T79 & No se podía volver tras eliminar la cuenta (Google) & \#56 \\
+— & P48 & T80 & README del Sprint 2 con capturas del juego y de DoneTonic & \#55 \\
+— & P48 & T81 & Documentación técnica para la memoria & \#55 \\
+— & P48 & T82 & Backlog y seguimiento del Sprint 2 en DoneTonic & — (DoneTonic) \\
 \bottomrule
 \end{longtable}
 }
 
-\medskip
-\textbf{Nota:} Los requisitos no funcionales (RNF-01 a RNF-12) se mapean a múltiples PBIs y tareas transversales; en la tabla se muestran los PBIs y tareas más representativos. La trazabilidad exhaustiva tarea a tarea (82 filas) está disponible en \texttt{docs/gestion/README.md} (secciones «Trazabilidad del Sprint 1» y «Trazabilidad del Sprint 2: tarea → pull request»).
-
-\ref{tab:trazabilidad-completa}
+La Tabla~\ref{tab:trazabilidad-completa} cubre los 48 PBIs (P1--P48) y las 82 tareas (T1--T82) de los dos sprints. Los cierres de hito del Sprint 1 fueron los PR \#9 (Hito 1), \#17 (Hito 2), \#24 (Hito 3), \#29 (cierre del sprint) y \#32 (revisión final y memoria); las releases publicadas son \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3}, \texttt{hito-4} y \texttt{sprint-1} (Anexo~\ref{anx:material}).

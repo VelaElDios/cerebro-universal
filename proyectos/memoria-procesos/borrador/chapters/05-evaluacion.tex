@@ -8,7 +8,7 @@ La evaluación de la calidad y del cumplimiento de la especificación se diseñ�
     \item \textbf{Pruebas unitarias e integración en local:} Uso del ejecutor nativo \texttt{node:test} con el simulador de base de datos en memoria \texttt{pg-mem}, lo que permite ejecutar la suite completa en el entorno de desarrollo mediante el comando unificado \texttt{npm test}.
     \item \textbf{Integración continua en GitHub Actions:} Ejecución del flujo de trabajo automatizado en cada pull request y push hacia la rama \texttt{main}. Dicho flujo despliega un servicio PostgreSQL 17 real para ejecutar las pruebas contra la base de datos auténtica y valida la construcción de la imagen de producción en Docker mediante un contenedor \texttt{node:22-alpine}.
     \item \textbf{Comprobación del despliegue en Google Cloud Run:} El flujo de despliegue valida la salud del servicio desplegado mediante comprobaciones de consulta contra el endpoint \texttt{/api/health}.
-    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría documentada en \texttt{docs/revision-entrega.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
+    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría documentada en \texttt{docs/\allowbreak revision\allowbreak -entrega.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
 \end{enumerate}
 
 \section{Estrategia de pruebas y resultados}
@@ -17,37 +17,37 @@ La evaluación de la calidad y del cumplimiento de la especificación se diseñ�
 
 La batería de pruebas automatizadas consta de 276 pruebas, divididas en 140 del Sprint 1 (cuentas, API, base de datos, seguridad, prueba técnica) y 136 del juego (simulación, club, movilidad, API juego, personajes, habilidades, ultras, logros, repositorio). El comando único \texttt{npm test} las ejecuta todas; en local usan \texttt{pg-mem} y en el CI PostgreSQL 17 real.
 
-\begin{longtable}{@{}L{4.5cm} R{1.2cm} L{8.5cm}@{}}
+\begin{longtable}{@{}L{5.0cm} R{1.2cm} L{8.0cm}@{}}
 \caption{Pruebas por fichero (fuente: documentacion-tecnica.md §10.2).}\label{tab:pruebas-por-fichero}\\
 \toprule
 \textbf{Fichero} & \textbf{Pruebas} & \textbf{Qué comprueba} \\ \midrule \endfirsthead
 \toprule
 \textbf{Fichero} & \textbf{Pruebas} & \textbf{Qué comprueba} \\ \midrule \endhead
-\texttt{userService.test.js} & 27 & Registro, email repetido o inválido, contraseña corta, autenticación, pendiente, eliminada, volver con el mismo email tras la baja, OAuth, roles, bajas, último administrador, primer administrador \\
-\texttt{api.auth.test.js} & 16 & Registro (201 sin hash), 409/400, login, mismo mensaje en 401, cookie HttpOnly, me, logout, sesión de una cuenta eliminada, confirmación, enlace no válido, URL pública, reenvío 202, correo caído (503) \\
-\texttt{userRepository.test.js} & 16 & Contrato del repositorio en memoria y en PostgreSQL, incluida la cuenta eliminada que no ocupa su email \\
-\texttt{frontend.test.js} & 14 & Separación interfaz/cliente, sin HTML de usuario, módulos importables \\
-\texttt{domainPolicy.test.js} & 13 & Prueba técnica (8 de rechazo o error) \\
-\texttt{api.users.test.js} & 11 & 401, 403, listado, activo, cambio de rol, bajas propias y ajenas, último administrador \\
-\texttt{googleOAuth.test.js} & 11 & Proveedores disponibles, redirección con state, cuenta nueva, existente y pendiente que se confirma, state incorrecto, ausente y reutilizado, cancelación, email sin verificar, volver a entrar con Google tras darse de baja (cuenta nueva), cliente real con fetch falso y configuración \\
-\texttt{config.test.js} & 8 & Secretos obligatorios en producción, valores por defecto, .env fuera del repositorio \\
-\texttt{accountConfirmation.test.js} & 6 & Correo con enlace, confirmación, enlace manipulado/caducado, eliminada, doble confirmación, reenvío \\
-\texttt{logger.test.js} & 6 & JSON, niveles, ocultación de datos sensibles \\
-\texttt{tokenSigner.test.js} & 3 & Firma, manipulación y caducidad \\
-\texttt{mailer.test.js} & 3 & SMTP o registro \\
-\texttt{migrate.test.js} & 3 & Crea las tablas, es idempotente y aplica las restricciones (email único, roles válidos) \\
-\texttt{bootstrap.test.js} & 2 & Arranque con memoria y con PostgreSQL \\
-\texttt{health.test.js} & 1 & /api/health \\
-\texttt{api.database.test.js} & CI & Recorrido completo con PostgreSQL real \\
-\texttt{juego-club.test.js} & 27 & Club, contratos, entrenamiento, rarezas, ranking \\
-\texttt{juego-movilidad.test.js} & 22 & Mundo, colisiones, mesetas, alcance del mapa, ambientes \\
-\texttt{api.juego.test.js} & 15 & API del juego, anti-trampas, logros en el servidor, concurrencia, cuenta eliminada que sale del ranking \\
-\texttt{juego-personajes.test.js} & 14 & Personajes, entrenadores, habilidades por jugador \\
-\texttt{juego-habilidades.test.js} & 14 & Habilidades nuevas y niveles por minuto \\
-\texttt{juego-ultras.test.js} & 13 & Ultras: cómo se consiguen y qué hacen \\
-\texttt{juego-logros.test.js} & 13 & Logros, equipaciones, estadísticas, pantalla de fin, música y jefes más duros \\
-\texttt{game.test.js} & 10 & Simulación base (paso fijo, semilla, armas, jefes, ulti, dificultad) \\
-\texttt{juegoRepository.test.js} & 8 & Repositorio del juego en memoria y PostgreSQL \\
+\texttt{userService\allowbreak.test.js} & 27 & Registro, email repetido o inválido, contraseña corta, autenticación, pendiente, eliminada, volver con el mismo email tras la baja, OAuth, roles, bajas, último administrador, primer administrador \\
+\texttt{api.auth\allowbreak.test.js} & 16 & Registro (201 sin hash), 409/400, login, mismo mensaje en 401, cookie HttpOnly, me, logout, sesión de una cuenta eliminada, confirmación, enlace no válido, URL pública, reenvío 202, correo caído (503) \\
+\texttt{userRepository\allowbreak.test.js} & 16 & Contrato del repositorio en memoria y en PostgreSQL, incluida la cuenta eliminada que no ocupa su email \\
+\texttt{frontend\allowbreak.test.js} & 14 & Separación interfaz/cliente, sin HTML de usuario, módulos importables \\
+\texttt{domainPolicy\allowbreak.test.js} & 13 & Prueba técnica (8 de rechazo o error) \\
+\texttt{api.users\allowbreak.test.js} & 11 & 401, 403, listado, activo, cambio de rol, bajas propias y ajenas, último administrador \\
+\texttt{googleOAuth\allowbreak.test.js} & 11 & Proveedores disponibles, redirección con state, cuenta nueva, existente y pendiente que se confirma, state incorrecto, ausente y reutilizado, cancelación, email sin verificar, volver a entrar con Google tras darse de baja (cuenta nueva), cliente real con fetch falso y configuración \\
+\texttt{config\allowbreak.test.js} & 8 & Secretos obligatorios en producción, valores por defecto, .env fuera del repositorio \\
+\texttt{accountConfirmation\allowbreak.test.js} & 6 & Correo con enlace, confirmación, enlace manipulado/caducado, eliminada, doble confirmación, reenvío \\
+\texttt{logger\allowbreak.test.js} & 6 & JSON, niveles, ocultación de datos sensibles \\
+\texttt{tokenSigner\allowbreak.test.js} & 3 & Firma, manipulación y caducidad \\
+\texttt{mailer\allowbreak.test.js} & 3 & SMTP o registro \\
+\texttt{migrate\allowbreak.test.js} & 3 & Crea las tablas, es idempotente y aplica las restricciones (email único, roles válidos) \\
+\texttt{bootstrap\allowbreak.test.js} & 2 & Arranque con memoria y con PostgreSQL \\
+\texttt{health\allowbreak.test.js} & 1 & /api/health \\
+\texttt{api.database\allowbreak.test.js} & CI & Recorrido completo con PostgreSQL real \\
+\texttt{juego-club\allowbreak.test.js} & 27 & Club, contratos, entrenamiento, rarezas, ranking \\
+\texttt{juego-movilidad\allowbreak.test.js} & 22 & Mundo, colisiones, mesetas, alcance del mapa, ambientes \\
+\texttt{api.juego\allowbreak.test.js} & 15 & API del juego, anti-trampas, logros en el servidor, concurrencia, cuenta eliminada que sale del ranking \\
+\texttt{juego-personajes\allowbreak.test.js} & 14 & Personajes, entrenadores, habilidades por jugador \\
+\texttt{juego-habilidades\allowbreak.test.js} & 14 & Habilidades nuevas y niveles por minuto \\
+\texttt{juego-ultras\allowbreak.test.js} & 13 & Ultras: cómo se consiguen y qué hacen \\
+\texttt{juego-logros\allowbreak.test.js} & 13 & Logros, equipaciones, estadísticas, pantalla de fin, música y jefes más duros \\
+\texttt{game\allowbreak.test.js} & 10 & Simulación base (paso fijo, semilla, armas, jefes, ulti, dificultad) \\
+\texttt{juegoRepository\allowbreak.test.js} & 8 & Repositorio del juego en memoria y PostgreSQL \\
 \midrule
 \textbf{Total} & \textbf{276} & 140 del Sprint 1 y 136 del juego \\
 \bottomrule
@@ -68,9 +68,9 @@ El pipeline de CI/CD se implementa con tres workflows de GitHub Actions y un web
 \toprule
 \textbf{Workflow} & \textbf{Cuándo} & \textbf{Qué hace} \\ \midrule \endhead
 \texttt{ci.yml} (CI) & Cada PR y push a main, hito-*/integracion & Trabajo \textit{Pruebas}: \texttt{npm ci} + \texttt{npm test} con PostgreSQL 17. Trabajo \textit{Imagen Docker}: construye imagen, arranca y comprueba \texttt{/api/health} \\
-\texttt{deploy-cloud-run.yml} & CI verde en main (\texttt{workflow\_run}) & Autentica en Google Cloud con Workload Identity Federation, construye y sube imagen a Artifact Registry y despliega en Cloud Run con variables y 8 secretos de Secret Manager \\
+\texttt{deploy\allowbreak -cloud\allowbreak -run.yml} & CI verde en main (\texttt{workflow\allowbreak \_run}) & Autentica en Google Cloud con Workload Identity Federation, construye y sube imagen a Artifact Registry y despliega en Cloud Run con variables y 8 secretos de Secret Manager \\
 \texttt{memoria.yml} & Cambios en memoria/ & Compila la memoria con LuaLaTeX (latexmk + biber) y publica el PDF como artefacto \\
-Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{render.yaml} \\
+Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{render\allowbreak.yaml} \\
 \bottomrule
 \end{longtable}
 
@@ -116,21 +116,21 @@ Como evidencia visual del flujo automatizado, la captura de la Figura \ref{fig:a
 
 \subsection{Registro de actividad (logs)}
 
-El sistema genera una línea JSON estructurada por cada evento relevante en la salida estándar (capturada por Cloud Logging en producción), incluyendo los campos \texttt{time}, \texttt{level}, \texttt{event}, \texttt{msg} y metadatos asociados. Cada petición HTTP recibe un identificador único (\texttt{X-Request-Id}) que se propaga a todas las trazas generadas en su ámbito. Los eventos tipados contemplan: \texttt{app.start}, \texttt{app.stop}, \texttt{app.storage}, \texttt{app.mail}, \texttt{admin.bootstrap}, \texttt{http.request}, \texttt{http.error}, \texttt{user.registered}, \texttt{auth.login}, \texttt{auth.logout}, \texttt{auth.login\_failed}, \texttt{auth.forbidden}, \texttt{mail.confirmation\_sent}, \texttt{mail.failed}, \texttt{mail.not\_sent}, \texttt{user.confirmed}, \texttt{user.confirm\_failed}, \texttt{auth.oauth\_denied}, \texttt{auth.oauth\_failed}, \texttt{user.role\_changed}, \texttt{user.deleted} y \texttt{juego.identidad}. Para garantizar la confidencialidad, contraseñas, hashes, cookies, tokens y secretos se reemplazan automáticamente por el texto \texttt{[oculto]}.
+El sistema genera una línea JSON estructurada por cada evento relevante en la salida estándar (capturada por Cloud Logging en producción), incluyendo los campos \texttt{time}, \texttt{level}, \texttt{event}, \texttt{msg} y metadatos asociados. Cada petición HTTP recibe un identificador único (\texttt{X-Request-Id}) que se propaga a todas las trazas generadas en su ámbito. Los eventos tipados contemplan: \texttt{app\allowbreak.start}, \texttt{app\allowbreak.stop}, \texttt{app\allowbreak.storage}, \texttt{app\allowbreak.mail}, \texttt{admin\allowbreak.bootstrap}, \texttt{http\allowbreak.request}, \texttt{http\allowbreak.error}, \texttt{user\allowbreak.registered}, \texttt{auth\allowbreak.login}, \texttt{auth\allowbreak.logout}, \texttt{auth\allowbreak.login\_failed}, \texttt{auth\allowbreak.forbidden}, \texttt{mail\allowbreak.confirmation\_sent}, \texttt{mail\allowbreak.failed}, \texttt{mail\allowbreak.not\_sent}, \texttt{user\allowbreak.confirmed}, \texttt{user\allowbreak.confirm\_failed}, \texttt{auth\allowbreak.oauth\_denied}, \texttt{auth\allowbreak.oauth\_failed}, \texttt{user\allowbreak.role\_changed}, \texttt{user\allowbreak.deleted} y \texttt{juego\allowbreak.identidad}. Para garantizar la confidencialidad, contraseñas, hashes, cookies, tokens y secretos se reemplazan automáticamente por el texto \texttt{[oculto]}.
 
 \subsection{Manejo de errores}
 
 El tratamiento de errores opera de forma uniforme desde la capa de lógica hasta la interfaz:
 \begin{enumerate}
-    \item Los servicios de negocio lanzan excepciones tipadas (\texttt{ValidationError}, \texttt{UnauthorizedError}, \texttt{ForbiddenError}, \texttt{AccountPendingError}, \texttt{NotFoundError}, \texttt{ConflictError}, \texttt{ServiceUnavailableError}).
-    \item El middleware \texttt{errorHandler} mapea cada error a su correspondiente código de estado HTTP y genera una respuesta estándar con formato \texttt{\{"error": \{"code", "message"\}\}}.
-    \item El cliente de comunicación \texttt{api.js} transforma las respuestas fallidas en objetos de error \texttt{ApiError} e implementa un tiempo límite de espera de 15 segundos mediante \texttt{AbortController}.
+    \item Los servicios de negocio lanzan excepciones tipadas (\texttt{Validation\allowbreak Error}, \texttt{Unauthorized\allowbreak Error}, \texttt{Forbidden\allowbreak Error}, \texttt{Account\allowbreak Pending\allowbreak Error}, \texttt{Not\allowbreak Found\allowbreak Error}, \texttt{Conflict\allowbreak Error}, \texttt{Service\allowbreak Unavailable\allowbreak Error}).
+    \item El middleware \texttt{error\allowbreak Handler} mapea cada error a su correspondiente código de estado HTTP y genera una respuesta estándar con formato \texttt{\{"error": \{"code", "message"\}\}}.
+    \item El cliente de comunicación \texttt{api.js} transforma las respuestas fallidas en objetos de error \texttt{Api\allowbreak Error} e implementa un tiempo límite de espera de 15 segundos mediante \texttt{Abort\allowbreak Controller}.
     \item Las vistas de la interfaz muestran alertas específicas para cada caso, impidiendo que el usuario final visualice trazas internas o formatos crudos.
 \end{enumerate}
 
 \section{Revisión frente al enunciado}
 
-La auditoría frase a frase documentada en \texttt{docs/revision-entrega.md} confirmó el cumplimiento íntegro de las prescripciones del enunciado:
+La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\allowbreak -entrega.md} confirmó el cumplimiento íntegro de las prescripciones del enunciado:
 \begin{itemize}
     \item Arquitectura obligatoria cliente-servidor con frontend servido desde el mismo origen sin acceso directo a base de datos.
     \item Gestión de usuarios completa: registro local, confirmación por correo, inicio de sesión local y con Google OAuth 2.0, sesiones en servidor e invalidación al cierre.
@@ -140,7 +140,7 @@ La auditoría frase a frase documentada en \texttt{docs/revision-entrega.md} con
 
 \section{Prueba técnica (RF-13)}
 
-En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST /api/prueba/dominio} gobernado por \texttt{domainPolicy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La Figura \ref{fig:prueba-tecnica-permitido} ilustra la respuesta afirmativa ante un dominio autorizado, mientras que la Figura \ref{fig:prueba-tecnica-rechazado} evidencia el rechazo de un subdominio no reconocido. Las 13 pruebas unitarias de \texttt{domainPolicy.test.js} verifican exhaustivamente rechazos sintácticos, formatos inválidos y coincidencias exactas.
+En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). La Figura \ref{fig:prueba-tecnica-permitido} ilustra la respuesta afirmativa ante un dominio autorizado, mientras que la Figura \ref{fig:prueba-tecnica-rechazado} evidencia el rechazo de un subdominio no reconocido. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican exhaustivamente rechazos sintácticos, formatos inválidos y coincidencias exactas.
 
 \begin{figure}[htbp]
 \centering
