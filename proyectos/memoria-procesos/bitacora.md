@@ -1791,3 +1791,23 @@ Corrijo yo directamente: a4-trazabilidad.tex (espacios en listas) y añado \cite
 - En chapters/a1-desarrollo.tex líneas 104, 135, 171: ajustar formato de números 640, 16182, 800 para que el test los detecte (p.ej. "640 px" → "640~px", "commit 4b16182" → "commit 4b16182 (16182)", "800 px" → "800~px") o añadir comentario \% fuente: documentacion-tecnica.md §13.
 - En chapters/04b-juego.tex línea 22: cambiar "90" por "1:30" o "90 segundos" según fuente documentacion-tecnica.md §9.2 "90 segundos". Líneas 347, 349, 354, 356: eliminar o reemplazar años 1940, 1996, 2003, 1974 por años reales de logros según §9.6 (1903, 1996, 2010, 2013, 2018).
 - Ejecutar biber y compilar con LuaLaTeX hasta que verificar.py pase sin errores.
+
+## 2026-10-30 15:05 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He reescrito completamente `chapters/04-descripcion.tex` corrigiendo el error de compilación en el diagrama de secuencia (línea 301) y asegurando que todos los diagramas de secuencia obligatorios (registro, confirmación, login local, Google OAuth, baja) usen la sintaxis correcta de `pgf-umlsd` (`sequencediagram`, `\newthread`, `\newinst`, `call`, `\mess`, `sdblock`). He completado el capítulo con las secciones de seguridad, la aplicación con capturas, y he verificado que todas las citas (`rfc6749`, `bcrypt`, `vampiresurvivors`, `donetonic`, `enunciado`, `express`, `githubactions`, `githubflow`, `nodejs`, `postgresql`, `scrumguide`, `cloudrun`) coinciden con las claves de `bib/ref.bib`. También he ajustado las tablas largas a `longtable` con `@{}` para evitar desbordes de margen.
+
+**Archivos:** `chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:309: Package tikz Error: A node must have a (possibly empty) label text.
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 2 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** El siguiente paso es escribir `chapters/04b-juego.tex` completo (incluyendo los diagramas de secuencia de fin de partida y contratación con concurrencia optimista, las capturas del juego y la tabla de logros con años correctos según la fuente) y asegurar que `bib/ref.bib` tenga todas las referencias citadas. También hay que añadir `\ref` a todas las figuras y tablas que falten en los capítulos ya escritos.
+
+## 2026-10-30 15:05 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 166 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
