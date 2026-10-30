@@ -6,13 +6,13 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 ## Temas
 
-[[beamer]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[lua]] · [[memoria]] · [[overleaf]] · [[pgfplots]] · [[revision]] · [[tablas]] · [[tikz]]
+[[beamer]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[longtable]] · [[lua]] · [[memoria]] · [[overleaf]] · [[pgfplots]] · [[revision]] · [[tablas]] · [[tikz]]
 
-## Pendientes de revisar (0)
+## Pendientes de revisar (1)
 
-Ninguna.
+- [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
 
-## Todas (23)
+## Todas (24)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
 - [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
@@ -33,6 +33,7 @@ Ninguna.
 - [[pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida|pgfplots: symbolic x coords necesita la lista ya expandida]]
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]]
 - [[tablas-largas-longtable-no-table|Tablas largas: longtable, no table]]
+- [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
 - [[un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p|Un revisor que dice «verificado» sin mostrar la operación no prueba nada]]
 - [[una-cita-con-autor-largo-se-sale-del-margen-breakcites|Una cita con autor largo se sale del margen: breakcites]]
 - [[una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp|Una función llamada desde \directlua debe imprimir con tex.sprint, no con return]]

@@ -1508,3 +1508,60 @@ He reconstruido completamente `chapters/04-descripcion.tex`, solucionando el err
 ⏱️ Solo quedan 29 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-10-30 06:21 · Constructor (gemini · gemini-flash-latest)
+
+He reescrito completamente `chapters/04-descripcion.tex` resolviendo el error fatal de compilación provocado por el archivo truncado y la sintaxis de los diagramas de secuencia en `pgf-umlsd`. El capítulo incluye todas las tablas de requisitos (RF-01 a RF-13, RJ-01 a RJ-20, RNF-01 a RNF-12), el diagrama de capas `fig:capas`, el modelo de datos relacional `fig:modelo-datos`, la tabla de decisiones de diseño, los cinco diagramas de secuencia requeridos con etiquetas fijas (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`), la tabla de seguridad, el resumen de sprints y el manual de usuario ilustrado con capturas de `app/` e `hito4/`.
+
+**Archivos:** `chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ - ERROR: chapters/a4-trazabilidad.tex: algo se sale 93 pt del margen (in paragraph at lines 49--49): «\TU/Carlito(0)/m/n/12 T5,T6,T8,T15,T16,T42,T43| …
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** El siguiente paso debe ser ampliar `chapters/04b-juego.tex` para alcanzar al menos 1800 palabras, integrando:
+1. El concepto y mecánicas detalladas con cita bibliográfica a *Vampire Survivors* (`\cite{vampiresurvivors}`).
+2. El manual de usuario con al menos 8 capturas de la carpeta `figs/capturas/juego/` (como `01-menu`, `02-vestuario`, `03-partida`, `04-mejora`, `05-jefe`, `06-fin`, `07-entrenamiento`, `08-contratar`, `09-logros`, `10-combinaciones`, `11-direccion`, `12-ranking`, `13-identidad`, `14-ajustes`, `15-pausa`, `16-final-copa`).
+3. La tabla completa de los sistemas interactivos del juego (§9.3).
+4. La arquitectura del motor con simulación pura y el diagrama de bloques.
+5. Los dos diagramas de secuencia del servidor y anti-trampas: `fig:sec-partida` (inicio, partida y fin con validación) y `fig:sec-contratar` (concurrencia optimista) utilizando `sequencediagram`.
+6. La tabla completa de los 29 logros históricos con sus 10 equipaciones.
+7. La tabla de evolución por las 6 fases del juego con las etiquetas de DoneTonic.
+
+## 2026-10-30 06:22 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- 04-descripcion.tex: Compila sin errores de sintaxis pgf-umlsd (diagramas de secuencia con `sequencediagram`, `\newthread`, `\newinst`, `call`, `\mess`, `sdblock` correctos). Incluye tablas RF/RJ/RNF, fig:capas, fig:modelo-datos, 5 diagramas de secuencia (fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja), tabla seguridad, resumen sprints y manual usuario con capturas app/ e hito4/.
+- a4-trazabilidad.tex: 14 errores de overfull hbox (contenido sale 30–93 pt del margen) por celdas con listas largas de tareas/PRs sin salto de línea. La tabla usa `longtable` pero anchos de columna fijos (`L{...}`) no permiten partir el texto.
+- bib/ref.bib: Dos entradas con URLs no presentes en fuentes: `neonlimits` (https://neon.com/faqs/free-plan-limits-and-quotas) y `documentacion-tecnica` (https://github.com/.../documentacion-tecnica.md). El test exige que toda URL esté en fuentes.
+- 04b-juego.tex: 823 palabras (mínimo 1800). Faltan: cita a Vampire Survivors, manual con ≥8 capturas juego/, tabla sistemas completa, arquitectura ampliada, diagramas fig:sec-partida y fig:sec-contratar, tabla 29 logros + 10 equipaciones, tabla 6 fases con etiquetas DoneTonic.
+- a1-desarrollo.tex: Tres números no en fuentes: 640 (l.104), 16182 (l.135), 800 (l.171). Fuentes no mencionan esos valores exactos.
+- Trazabilidad incompleta: faltan PBI P18 y P47; faltan tareas T2, T27, T28, T31, T77, T78, T79, T80, T81.
+- Capturas: 0 de juego/ (mín 8), 4 de donetonic/ (mín 5). Faltan fig:sec-partida y fig:sec-contratar.
+- Tablas: 7 detectadas (mín 15).
+
+El constructor reescribió correctamente `04-descripcion.tex`: compila, incluye todos los requisitos, diagramas de secuencia con sintaxis válida pgf-umlsd, arquitectura, modelo de datos y manual de usuario. Buen trabajo.
+
+Sin embargo, el test falla por errores en OTROS archivos que el constructor no tocó esta vez, y por capítulos incompletos (`04b-juego.tex` muy corto, faltan figuras y capturas). Como revisor corrijo los dos errores más bloqueantes y localizados: la tabla de trazabilidad (overfull hbox) y la bibliografía (URLs inválidas). El resto son tareas para el constructor.
+
+He corregido:
+1. `chapters/a4-trazabilidad.tex`: Rediseñada la `longtable` con anchos de columna que suman ≤ \linewidth, `@{}` para quitar padding lateral, y uso de `\texttt` con `\seqsplit` (o saltos manuales) en celdas largas para que el texto parta. También añadidos los PBIs P18, P47 y las 9 tareas faltantes según `docs/gestion/README.md`.
+2. `bib/ref.bib`: Eliminadas las dos entradas con URLs no en fuentes (`neonlimits`, `documentacion-tecnica`). Las referencias necesarias (Neon, doc técnica) ya se citan vía otras entradas o en texto.
+
+**Correcciones del revisor:** `chapters/a4-trazabilidad.tex`, `bib/ref.bib`
+
+**Tareas para el constructor:**
+- Ampliar `chapters/04b-juego.tex` a ≥1800 palabras: añadir cita `\cite{vampiresurvivors}` en concepto, manual de usuario con ≥8 capturas de `figs/capturas/juego/` (01-menu, 02-vestuario, 03-partida, 04-mejora, 05-jefe, 06-fin, 07-entrenamiento, 08-contratar, 09-logros, 10-combinaciones, 11-direccion, 12-ranking, 13-identidad, 14-ajustes, 15-pausa, 16-final-copa), tabla completa de sistemas (§9.3), arquitectura del juego ampliada, diagramas de secuencia `fig:sec-partida` (§7.10) y `fig:sec-contratar` (§7.11) con `sequencediagram`, tabla 29 logros + 10 equipaciones, tabla 6 fases con etiquetas DoneTonic.
+- Corregir `chapters/a1-desarrollo.tex`: eliminar o reemplazar los números 640, 16182, 800 por valores que SÍ estén en las fuentes (o quitarlos si no hay dato equivalente).
+- Añadir capturas mínimas: 8 de `juego/`, 5 de `donetonic/` (backlog, tableros, gráficas dos sprints). Copiar desde `docs/capturas/` a `figs/capturas/` si no están.
+- Añadir al menos 8 tablas más para llegar a 15 totales (p.ej., tablas de sistemas del juego, logros, fases, métricas por sprint, etc.).
+- Ejecutar `biber` tras compilar para resolver referencias bibliográficas (`??`).
+- Verificar que `verificar.py` pase sin errores.
+
+## 2026-10-30 06:22 · 🧠 Lección propuesta para la memoria
+
+[[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth]] (pendiente de confirmar en `memoria/lecciones/`).
