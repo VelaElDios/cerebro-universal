@@ -3,23 +3,33 @@
 
 \section{Conclusiones}
 
-El desarrollo del Sprint 1 ha permitido materializar con éxito los objetivos planteados al inicio de la memoria, combinando la construcción de una aplicación funcional con la adhesión estricta a un proceso riguroso de ingeniería del software:
+El proyecto \textit{La Grada Colchonera} ha permitido cumplir con éxito tanto el objetivo principal como la totalidad de los objetivos específicos formulados en el Capítulo~\ref{cap:introduccion}, combinando la construcción de una aplicación web completa y funcional con la aplicación rigurosa de las disciplinas de la Ingeniería del Software:
 \begin{itemize}
-    \item \textbf{Objetivo principal:} Se diseñó, implementó y desplegó en producción la arquitectura base de un servicio SaaS con gestión integral de usuarios, automatizando por completo el flujo desde la codificación hasta la entrega en la nube.
-    \item \textbf{Diseño arquitectural desacoplado:} Se estructuró el backend en capas bien diferenciadas (API, lógica y datos) servidas desde el mismo origen que el cliente web, garantizando la independencia y modularidad del sistema.
-    \item \textbf{Gestión de identidades y sesiones:} Se implementó la autenticación local con derivación de contraseñas mediante \texttt{bcryptjs} y almacenamiento de sesiones persistentes en base de datos resistente a reinicios.
-    \item \textbf{Control de acceso basado en roles:} Se implantó la autorización diferenciada para usuarios y administradores, con baja lógica y protección de rutas en el servidor.
-    \item \textbf{Persistencia relacional y configuración:} Se integró PostgreSQL en la nube mediante migraciones SQL versionadas y se aislaron los secretos en variables de entorno y Secret Manager.
-    \item \textbf{Garantía de calidad mediante pruebas:} Se consolidó una suite de 80 pruebas automatizadas que cubren casos nominales y de error, ejecutables mediante un único comando.
-    \item \textbf{Automatización del ciclo de entrega (CI/CD):} Se implantaron flujos de trabajo en GitHub Actions con validación en contenedores Docker y despliegue automático en Google Cloud Run y Render.
-    \item \textbf{Procesos ágiles y trazabilidad:} Se gestionó el backlog en DoneTonic cumpliendo la disciplina de GitHub Flow, vinculando cada tarea a su rama y pull request.
+    \item \textbf{Cumplimiento del objetivo principal:} Se diseñó, implementó, verificó y desplegó en producción sobre Google Cloud Run un sistema SaaS en capas con gestión segura de usuarios y un videojuego interactivo web \textit{survivor} en pixel art, cuyo progreso y marcas se consolidan de forma fidedigna y persistente en el servidor.
+    \item \textbf{Arquitectura desacoplada y modular (Objetivo específico 1):} La estricta separación entre la presentación web, el cliente de API (\texttt{api.js}), las rutas HTTP en Express 5, la lógica de negocio (\texttt{src/services}) y los repositorios de datos permitió desarrollar el Sprint 1 y añadir la lógica completa del juego en el Sprint 2 sin desestabilizar la infraestructura previa, verificando la portabilidad entre memoria y PostgreSQL.
+    \item \textbf{Gestión de identidades y seguridad por diseño (Objetivo específico 2):} Se implementó un subsistema robusto con contraseñas derivadas mediante \texttt{bcrypt} (coste 10), confirmación transaccional con tokens HMAC-SHA256, autenticación externa con Google OAuth 2.0 (RFC 6749), sesiones respaldadas en base de datos y autorización por roles (\textit{user} y \textit{admin}) con protección estricta del último administrador.
+    \item \textbf{Persistencia relacional e integridad (Objetivo específico 3):} El esquema relacional en PostgreSQL sobre Neon gestiona de forma transparente el ciclo de vida de usuarios, sesiones y clubes mediante cinco migraciones SQL versionadas, incorporando índices únicos parciales para posibilitar el retorno de usuarios tras una baja voluntaria.
+    \item \textbf{Lógica del videojuego y equidad anti-trampas (Objetivo específico 4):} El motor determinista de paso fijo (60 Hz) garantiza partidas justas e independientes del hardware, mientras que el servidor valida las partidas finalizadas contrastando los tiempos reales de juego con límites estadísticos admisibles, actualizando el club bajo concurrencia optimista.
+    \item \textbf{Disciplina metodológica y CI/CD (Objetivo específico 5):} La metodología Scrum articulada en DoneTonic (48 PBIs y 82 tareas cerradas) y el flujo GitHub Flow con integración continua en GitHub Actions aseguraron que cada cambio incorporado a \texttt{main} cumpliese la Definición de Hecho y se desplegase automáticamente en la nube.
+    \item \textbf{Verificación sistemática (Objetivo específico 6):} Se alcanzó una suite de 276 pruebas automáticas sobre \texttt{node:test} que evalúan exhaustivamente tanto los caminos felices como los escenarios de error, complementada con la auditoría frase a frase frente a las directrices de la asignatura.
 \end{itemize}
+
+\subsection{Lecciones aprendidas}
+
+El desarrollo del proyecto aportó valiosas enseñanzas metodológicas y técnicas:
+\begin{enumerate}
+    \item \textbf{Granularidad de tareas y control de flujo:} Descomponer los requisitos en tareas técnicas breves asociadas a ramas y pull requests individuales previene discrepancias de integración y facilita la detección temprana de anomalías.
+    \item \textbf{Automatización del despliegue desde fases tempranas:} Disponer de un pipeline de CI/CD operativo desde el inicio del proyecto reduce la incertidumbre en las entregas y evita sorpresas de configuración en el entorno productivo.
+    \item \textbf{Pruebas prioritarias de casos de error:} Enfocar la verificación en las condiciones de contorno y rechazo (claves duplicadas, sesiones expiradas, resultados inverosímiles) genera una base de código más resiliente que limitarse al camino nominal.
+    \item \textbf{Verificación visual y funcional continua:} Las pruebas de extremo a extremo y las revisiones manuales en navegador resultan indispensables para identificar fallos de experiencia de usuario sutiles, como el desplazamiento de botones tras mensajes de validación.
+\end{enumerate}
 
 \section{Trabajo futuro}
 
-De cara a las siguientes fases del proyecto (particularmente el Hito 4), se identifican tres líneas prioritarias de evolución técnica:
+Para la evolución posterior de \textit{La Grada Colchonera} se proponen las siguientes líneas de trabajo:
 \begin{enumerate}
-    \item \textbf{Autenticación federada y verificación por correo (P15 y P16):} Incorporar el inicio de sesión con proveedores externos OAuth (Google) y el flujo de confirmación de cuentas mediante un servicio de correo transaccional (activando \texttt{REQUIRE\_EMAIL\_CONFIRMATION=true}).
-    \item \textbf{Manejo avanzado de errores y feedback interactivo (P17):} Perfeccionar el sistema de retroalimentación al usuario en la interfaz, unificando los códigos de error y mejorando la recuperación ante fallos de conectividad.
-    \item \textbf{Rediseño visual y expansión funcional:} Evolucionar la estética de la interfaz hacia una experiencia comunitaria más rica una vez que se incorporen las funcionalidades de publicación e interacción social.
+    \item \textbf{Multijugador cooperativo en tiempo real:} Implementar un subsistema multijugador síncrono que admita grupos de juego (\textit{parties}) de hasta 4 jugadores simultáneos sobre WebSockets, gobernados por un servidor autoritativo que sincronice la simulación del mundo.
+    \item \textbf{Ampliación de contenidos y clasificación por temporadas:} Diseñar nuevos personajes, jefes mayores y equipaciones históricas, complementando el ranking actual con clasificaciones periódicas por temporadas competitivas y por ambiente alcanzado.
+    \item \textbf{Recuperación de credenciales y limitación de tasa (\textit{rate limiting}):} Incorporar el flujo de restablecimiento de contraseñas por correo electrónico y añadir protección perimetral frente a ataques de denegación de servicio o fuerza bruta mediante limitadores de peticiones por dirección IP.
+    \item \textbf{Pruebas de extremo a extremo automatizadas y PWA:} Integrar tests automatizados de interfaz con Playwright en el flujo de CI para medir la cobertura de código en cliente, y empaquetar el juego como aplicación web progresiva (\textit{Progressive Web App}, PWA) instalable en dispositivos móviles.
 \end{enumerate}
