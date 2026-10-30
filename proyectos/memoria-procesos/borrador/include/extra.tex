@@ -37,3 +37,14 @@
 % Diagramas de secuencia (sequencediagram, \newthread, \newinst, call, \mess)
 \usepackage{pgf-umlsd}
 \pgfplotsset{compat=1.18}
+
+% -------------------------------
+% Corrección puntual: \hline dentro de nodos TikZ
+% -------------------------------
+% En el texto de un \node, \hline provoca "Misplaced \noalign" porque no hay
+% una alineación activa. Fuera de TikZ se conserva el \hline original.
+% Dentro de tikzpicture se trata como un salto de línea.
+\usepackage{etoolbox}
+\let\lgcHlineOriginal\hline
+\AtBeginEnvironment{tikzpicture}{\renewcommand{\hline}{\leavevmode\\}}
+\AtEndEnvironment{tikzpicture}{\let\hline\lgcHlineOriginal}

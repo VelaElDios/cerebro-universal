@@ -101,7 +101,7 @@ Los problemas técnicos surgidos y sus soluciones, extraídos de la documentaci�
 \texttt{pg-mem} no admitía \texttt{CREATE TABLE IF NOT EXISTS} ni funciones de sesión & Consulta a \texttt{information\_schema}; prueba de sesiones solo contra PostgreSQL real en CI \\
 Cookie \texttt{secure} no guardada en local con \texttt{NODE\_ENV=production} sobre HTTP & Comportamiento esperado por seguridad; capturas locales en modo desarrollo \\
 \texttt{pkill -f "node src/server.js"} cerraba la shell invocadora & Arranque del proceso de servidor con \texttt{setsid} desde script \\
-Tabla de administración no cabía en 640 px; botón \textit{Eliminar} oculto & Contenedor ampliado; en móvil, cada usuario se muestra como tarjeta (Fig. \ref{fig:app-admin-movil}) \\
+Tabla de administración no cabía en 640~px; botón \textit{Eliminar} oculto & Contenedor ampliado; en móvil, cada usuario se muestra como tarjeta (Fig. \ref{fig:app-admin-movil}) \\
 Capturas Playwright en GitHub salían sin estilos por recursos bloqueados & Descartadas; capturas de la propia aplicación generadas correctamente \\
 Docker Hub bloqueado en entorno en la nube & Simulación local (\texttt{npm ci --omit=dev}); validación real en job del CI \\
 JSON mal formado devolvía HTML de Express & Manejador propio tras parser: 400 JSON en toda la API (prueba técnica) \\
@@ -132,7 +132,7 @@ Cadena de conexión Neon compartida en chat & Recomendación rotar clave; aplaza
 \textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
 \texttt{git push --all} rechazado en ramas integración (non-fast-forward) & Sincronización mediante \texttt{git fetch} y \texttt{git branch -f} \\
 Entorno cloud sin permisos escritura directa en GitHub & Exportación commits vía \texttt{git bundle}; push desde local \\
-Bundle requería commit base ausente en repo local & Regeneración tomando base commit \texttt{4b16182} \\
+Bundle requería commit base ausente en repo local & Regeneración tomando base commit 4b16182 (16182) \\
 Subida bundle con mismo nombre sobrescribía versión anterior & Asignación nombres de fichero unívocos \\
 Fusiones en interfaz web fallaban por comprobaciones incompletas & Espera a validación checks y confirmación explícita \\
 \bottomrule
@@ -168,7 +168,7 @@ Ausencia librerías LuaLaTeX en entorno pruebas & Instalación dependencias; com
 \toprule
 \textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
 Menús apilados y clics JS ineficaces en interfaz Flutter & Automatización por coordenadas comprobando árbol accesibilidad \\
-Renderizado distorsionado al forzar tamaño ventana en Flutter & Capturas realizadas con resolución nativa de 800 px \\
+Renderizado distorsionado al forzar tamaño ventana en Flutter & Capturas realizadas con resolución nativa de 800~px \\
 \bottomrule
 \end{longtable}
 
@@ -295,121 +295,57 @@ Cada PBI del Sprint 2 tiene en DoneTonic su historia de usuario y criterios de a
 \textbf{PBI} & \textbf{Historia de usuario y criterios clave} \\ \midrule \endfirsthead
 \toprule
 \textbf{PBI} & \textbf{Historia de usuario y criterios clave} \\ \midrule \endhead
-P20 & Como aficionado quiero una web con aspecto de juego, clara en móvil y ordenador, para que entrar a jugar sea lo primero que vea al iniciar sesión. Criterios: tokens CSS, modo oscuro rojiblanco, responsive, inicio = menú juego con sesión, cabeceras según rol, pantallas Sprint 1 funcionan. \\
-P21 & Como jugador quiero una partida survivor contra oleadas infinitas, armas automáticas y mejoras al subir de nivel. Criterios: simulación pura paso fijo 1/60 s con semilla, oleadas cada 30 s, experiencia y 3 mejoras al subir, dificultad creciente, pausa y fin, pausa al cambiar pestaña. \\
-P22 & Como jugador quiero estilo visual propio con muñecos chibi del Atleti generados por código. Criterios: muñecos 16×20 px código, caché fotogramas, cámara 3/4 con inercia e inclinación, respeta prefers-reduced-motion. \\
-P23 & Como jugador quiero elegir entre leyendas del Atleti y entrenador con estilo propio. Criterios: stats por posición retocadas por rasgos, habilidades según forma de jugar, 2 entrenadores con bonus y ulti, Vestuario con filtro y ficha. \\
-P24 & Como jugador quiero muchas armas y habilidades que suban de nivel y se combinen. Criterios: 24 armas (disparo, melé, movilidad) 5 niveles, pasivas, mejoras extra sin límite al maxear, porteros sin armas de disparo. \\
-P25 & Como jugador quiero rivales variados que me obliguen a moverme. Criterios: 16 equipos desbloqueados por oleadas, unos embisten con «!» y otros disparan, rodean gradas y paredes. \\
-P26 & Como jugador quiero jefes famosos con ataques propios cada pocas oleadas. Criterios: 1 jefe cada 4 oleadas al azar sin repetir, 3 fases (66\%, 33\%), avisos en suelo, escolta desde 2º, furia, jugada estrella fase 3. \\
-P27 & Como jugador quiero campo con barro, lluvia, gradas y estructuras. Criterios: barro frena, lluvia acelera balones, gradas no se atraviesan, mapa procedural con biomas y estructuras, casi todo alcanzable, premios con flechas en borde. \\
-P28 & Como jugador quiero jugar con teclado o dedo y ajustar sonido/gráficos. Criterios: WASD/flechas y joystick táctil, pantalla completa (F), pausa con ajustes, ajustes guardados en navegador (volumen, efectos, daño, zoom, joystick). \\
-P29 & Como jugador quiero que mi club y partidas se guarden en mi cuenta. Criterios: tablas juego\_perfiles y juego\_records (migración 003), API /api/juego protegida, servidor valida con reloj propio (anti-trampas), concurrencia optimista. \\
-P30 & Como jugador quiero ganar fichas venciendo jefes y canjearlas por jugadores. Criterios: plantilla inicial 4 comunes (1 por posición), 1 ficha por 3 jefes, contrato no repite jugador, probabilidad por rareza. \\
-P31 & Como jugador quiero entrenar a mis jugadores con puntos ganados. Criterios: puntos por jefes (1 cada 3) y bajas (cada vez más caros), 4 stats (Vida, Defensa, Disparo, Suerte) máx 20, solo puntos libres, validado en servidor. \\
-P32 & Como jugador quiero compararme con el resto en un ranking. Criterios: 1 fila por usuario con mejor partida (tiempo; empate = nivel), nunca muestra correo, pestañas Mis partidas y La grada. \\
-P33 & Como jugador quiero que juntar habilidades desbloquee combinaciones y ultras. Criterios: 24 combinaciones con nombre y bonus, 6 ultras al completar combinaciones (Puskás, Balón de Oro, Zamora…), efecto visual y daño porcentual reducido contra jefes. \\
-P34 & Como jugador quiero dificultad justa y como admin probar sin jugar horas. Criterios: tramo final más duro min 9, rivales curtidos min 12, ayuda inicial 8 min, modo pruebas solo admin (desbloqueo sin tocar ranking). \\
-P35 & Como jugador quiero mundo distinto cada partida con barrios, estadios, parques, mesetas. Criterios: ruidos suaves para distrito/altura/humedad, estadios con gradas, plazas con tiendas, mesetas con escaleras, casi todo alcanzable (pruebas). \\
-P36 & Como jugador quiero que cada 5 min cambie el escenario por finales. Criterios: Pretemporada → Copa → Liga → Champions → Mundial; cambian luz, césped, afición, carteles; rivales más fuertes; en Mundial camisetas de selección. \\
-P37 & Como jugador quiero mote y cara propios en ranking y cabecera. Criterios: mote 3–16 chars único sin mayúsculas/tiles (409 si cogido), avatar con cara de jugador/entrenador fichado, migración 004, PUT /api/juego/identidad. \\
-P38 & Como aficionado quiero rareza según historia en el Atleti y fichar se sienta especial. Criterios: 36 jugadores en 4 rarezas (Común, Raro, Épico, Leyenda) según historia, más rareza = más habilidades y menos probabilidad, animación firma pixel art. \\
-P39 & Como jugador quiero que habilidades fuertes no rompan la partida al principio. Criterios: niveles bloqueados por \texttt{desdeMinuto} y \texttt{cdMin}, regate/entrada/contragolpe reequilibrados. \\
-P40 & Como jugador quiero ver qué combinaciones y ultras existen y qué me falta. Criterios: pantalla Combinaciones con nombre, bonus, requisitos, ultra a la que cuentan, filtros Todas/Con tu jugador/Conseguidas. \\
-P41 & Como jugador quiero que lo que veo sea lo que choca. Criterios: edificios/gradas/bancos chocan en todo su dibujo, muñecos chocan por los pies (3/4), copa árboles transparente. \\
-P42 & Como aficionado quiero logros con datos curiosos del Atleti que desbloqueen equipaciones. Criterios: 29 logros con dato real, servidor solo apunta los comprobables, 10 equipaciones en Vestuario. \\
-P43 & Como jugador quiero ver al final qué ha funcionado para mejorar. Criterios: tiempo, ambiente, bajas, jefes, daño total, golpe máx, críticos, daño recibido, vida recuperada, barras daño por habilidad (armas, ultras, ulti, quemaduras), jefes vencidos con coste, logros nuevos. \\
-P44 & Como jugador quiero música y ambiente de estadio. Criterios: fanfarria por competición, canción fondo que se anima con tiempo y jefes, grada murmura y canta cerca, volumen música aparte de efectos, todo sintetizado. \\
-P45 & Como aficionado quiero reconocer a jugadores y jefes en el campo. Criterios: sombreado, orejas, nariz, peinados, rasgos: brazalete capitán, cinta, pecas, barba, pendientes, tatuajes. \\
-P46 & Como jugador quiero que jefes sean reto de verdad a partir del 2º. Criterios: escolta élites desde 2º y refuerzos al cambiar fase, furia si tardas, jugada estrella por jefe en fase 3, 1º asequible. \\
-P47 & Como usuario quiero que errores de probadores se arreglen con pruebas que eviten regresión. Criterios: cada error se reproduce con prueba antes de arreglar, arreglos pasan CI y se despliegan. \\
-P48 & Como responsable quiero que todo el Sprint 2 se revise desde el repositorio. Criterios: README con capturas juego y DoneTonic, documentación técnica con diagramas, backlog/tablero/gráficas Sprint 2 en DoneTonic. \\
-\bottomrule
-\end{longtable}
-}
-
-\subsubsection{Trazabilidad}
-Las tareas de cada PBI indican en su descripción de DoneTonic el PR donde está el trabajo (ver Tabla \ref{tab:sprint2-trazabilidad} y \texttt{docs/gestion/README.md} sección «Trazabilidad del Sprint 2: tarea → pull request»).
-
-{\small
-\begin{longtable}{@{}L{0.7cm} L{1.0cm} L{5.5cm} L{3.5cm} L{2.5cm}@{}}
-\caption{Trazabilidad tarea → PR del Sprint 2 (50 tareas).}\label{tab:sprint2-trazabilidad}\\
-\toprule
-\textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\ \midrule \endfirsthead
-\toprule
-\textbf{PBI} & \textbf{Tarea} & \textbf{Descripción} & \textbf{PR} & \textbf{Estado} \\ \midrule \endhead
-P20 & T33 & Sistema de diseño: tokens, tipografía y modo oscuro rojiblanco & \#36 & Hecho \\
-P20 & T34 & Menú del juego como inicio con sesión (hub con jugador paseando) & \#36, \#45 & Hecho \\
-P21 & T35 & Simulación de paso fijo con semilla (mundo.js) & \#36 & Hecho \\
-P21 & T36 & Oleadas, experiencia y mejoras al subir de nivel & \#36 & Hecho \\
-P22 & T37 & Muñecos chibi generados por código (sprites.js) & \#44 & Hecho \\
-P22 & T38 & Cámara 3/4, inercia y sensación de movimiento y golpes & \#46 & Hecho \\
-P23 & T39 & Jugadores con estadísticas por posición y habilidades propias & \#44, \#48 & Hecho \\
-P23 & T40 & Entrenadores con ulti y pantalla Dirección & \#44 & Hecho \\
-P23 & T41 & Vestuario renovado con filtros y ficha & \#48 & Hecho \\
-P24 & T42 & Armas con 5 niveles: disparo, cuerpo a cuerpo y movilidad & \#36, \#48 & Hecho \\
-P24 & T43 & Pasivas y mejoras extra & \#36 & Hecho \\
-P25 & T44 & 16 equipos rivales que se desbloquean por oleadas & \#44 & Hecho \\
-P25 & T45 & Rivales que embisten, disparan y rodean obstáculos & \#45, \#47 & Hecho \\
-P26 & T46 & Jefes con tres fases y avisos de ataque & \#45 & Hecho \\
-P26 & T47 & Seis jefes nuevos con habilidades propias & \#48 & Hecho \\
-P27 & T48 & Barro, lluvia, gradas y premios & \#45 & Hecho \\
-P27 & T49 & Mapa procedural con biomas y estructuras & \#47 & Hecho \\
-P28 & T50 & Entrada por teclado y joystick táctil & \#36 & Hecho \\
-P28 & T51 & Pantalla completa, pausa y ajustes en partida & \#47 & Hecho \\
-P29 & T52 & Migración 003 y repositorios del juego (memoria y PostgreSQL) & \#49 & Hecho \\
-P29 & T53 & API del juego con validación anti-trampas & \#49 & Hecho \\
-P30 & T54 & Fichas por jefes y sorteo de contratos por rareza & \#49 & Hecho \\
-P31 & T55 & Puntos y estadísticas de entrenamiento & \#49, \#50 & Hecho \\
-P32 & T56 & Ranking multijugador con la mejor partida de cada usuario & \#49 & Hecho \\
-P33 & T57 & Combinaciones con nombre y bonus & \#50 & Hecho \\
-P33 & T58 & Seis ULTRAS con efectos visuales & \#50 & Hecho \\
-P34 & T59 & Curvas de dificultad calibradas con un bot & \#50 & Hecho \\
-P34 & T60 & Modo pruebas para administradores & \#50 & Hecho \\
-P35 & T61 & Generación del terreno por ruidos (terreno.js) & \#52 & Hecho \\
-P36 & T62 & Cinco ambientes con cambio de luz, afición y fuerza & \#52 & Hecho \\
-P37 & T63 & Migración 004, API de identidad y pantalla Tu ficha & \#52 & Hecho \\
-P38 & T64 & Rarezas por historia y 36 jugadores & \#53 & Hecho \\
-P38 & T65 & Animación de la firma del contrato & \#53 & Hecho \\
-P39 & T66 & Niveles bloqueados por minuto y recarga mínima & \#53 & Hecho \\
-P40 & T67 & Pantalla de combinaciones y ultras con filtros & \#53 & Hecho \\
-P41 & T68 & Hitbox por los pies y obstáculos macizos & \#53 & Hecho \\
-P42 & T69 & Logros validados en el servidor (logros.js) & \#54 & Hecho \\
-P42 & T70 & Pantalla Logros y equipaciones en el Vestuario & \#54 & Hecho \\
-P43 & T71 & Atribución del daño por fuente y pantalla de fin (fin-ui.js) & \#54 & Hecho \\
-P44 & T72 & Secuenciador chiptune y fanfarrias (musica.js) & \#54 & Hecho \\
-P44 & T73 & La grada: murmullo y cánticos según la cercanía & \#54 & Hecho \\
-P44 & T74 & Efectos de sonido nuevos y ajuste de música & \#54 & Hecho \\
-P45 & T75 & Rasgos y sombreado en sprites.js & \#54 & Hecho \\
-P46 & T76 & Escolta, furia y jugada estrella & \#54 & Hecho \\
-P47 & T77 & El juego no cargaba (variable usada antes de existir) & \#51 & Hecho \\
-P47 & T78 & El primer clic en «Reenviar el correo» se perdía tras un error & \#55 & Hecho \\
-P47 & T79 & No se podía volver tras eliminar la cuenta (Google) & \#56 & Hecho \\
-P48 & T80 & README del Sprint 2 con capturas del juego y de DoneTonic & \#55 & Hecho \\
-P48 & T81 & Documentación técnica para la memoria & \#55 & Hecho \\
-P48 & T82 & Backlog y seguimiento del Sprint 2 en DoneTonic & — (DoneTonic) & Hecho \\
+P20 & Como aficionado quiero una web con aspecto de juego, clara en móvil y ordenador, para que entrar a jugar sea lo primero que vea al iniciar sesión. Criterios: sistema de diseño propio, modo oscuro rojiblanco, responsive, menú de juego como inicio con sesión. \\
+P21 & Como jugador quiero una partida de supervivencia contra oleadas infinitas, con armas automáticas y elección de mejoras. Criterios: simulación determinista paso fijo 1/60 s, oleadas cada 30 s, experiencia, mejoras al subir nivel, dificultad creciente, pausa y fin de partida. \\
+P22 & Como jugador quiero un estilo visual propio con muñecos chibi del Atleti generados por código. Criterios: muñecos 16×20 px sin imágenes, cámara 3/4 con inercia, respeta prefers-reduced-motion. \\
+P23 & Como jugador quiero elegir entre leyendas del Atleti y un entrenador con su estilo. Criterios: 36 jugadores por posición con rasgos propios, 2 entrenadores con bonificaciones y ulti, Vestuario con filtros y ficha. \\
+P24 & Como jugador quiero muchas armas y habilidades que suban de nivel y se combinen. Criterios: 24 habilidades con 5 niveles, pasivas, mejoras extra, porteros sin armas de disparo. \\
+P25 & Como jugador quiero rivales variados que me obliguen a moverme. Criterios: 16 equipos, embestida y disparo, rodean obstáculos, élites blindado/veloz/furioso. \\
+P26 & Como jugador quiero jefes famosos con ataques propios cada pocas oleadas. Criterios: 10 jefes, 3 fases (66\% y 33\%), escoltas, avisos de ataque, jugada estrella en fase 3. \\
+P27 & Como jugador quiero un campo con barro, lluvia, gradas y estructuras. Criterios: barro frena, lluvia acelera balones, gradas no se atraviesan, mapa procedural con biomas, premios por el campo. \\
+P28 & Como jugador quiero jugar con teclado, ratón y táctil, con pausa y pantalla completa. Criterios: WASD/flechas, joystick táctil, F pantalla completa, Esc/P pausa, ajustes guardados en navegador. \\
+P29 & Como jugador quiero que mi club y partidas se guarden en mi cuenta. Criterios: tablas juego_perfiles y juego_records, API /api/juego protegida, validación anti-trampas con reloj servidor, concurrencia optimista. \\
+P30 & Como jugador quiero ganar fichas de contrato venciendo jefes y canjearlas por jugadores. Criterios: plantilla inicial 4 comunes, 1 ficha por 3 jefes, sorteo ponderado por rareza, sin repetir jugador. \\
+P31 & Como jugador quiero entrenar a mis jugadores con puntos de partida. Criterios: puntos por jefes (1 cada 3) y bajas, 4 stats (Vida, Defensa, Disparo, Suerte) tope 20, validado en servidor. \\
+P32 & Como jugador quiero compararme con el resto en un ranking. Criterios: mejor partida por usuario (tiempo, luego nivel), sin mostrar email, pestañas Mis partidas y La grada. \\
+P33 & Como jugador quiero que juntar habilidades desbloquee combinaciones y poderes ULTRAS. Criterios: 24 combinaciones con bonus, 6 ULTRAS automáticas al completar combinaciones, daño porcentual reducido contra jefes. \\
+P34 & Como jugador quiero dificultad justa y como admin probar sin jugar horas. Criterios: tramo final duro desde min 9, rivales curtidos min 12, ayuda inicial 8 min, modo pruebas solo admin. \\
+P35 & Como jugador quiero un mundo distinto cada partida con barrios, estadios, parques. Criterios: ruido armónico continuo, gradas orientadas, plazas, mesetas con escaleras, casi todo alcanzable. \\
+P36 & Como jugador quiero que cada 5 min el escenario cambie de final en final. Criterios: 5 ambientes (pretemporada, Copa, Liga, Champions, Mundial), cambian luz, césped, afición, fuerza rivales, camisetas de selección en Mundial. \\
+P37 & Como jugador quiero un mote y avatar propios en ranking y cabecera. Criterios: mote 3–16 chars único normalizado, avatar de jugador/entrenador fichado, migración 004, PUT /api/juego/identidad. \\
+P38 & Como aficionado quiero que la rareza refleje la historia en el Atleti y fichar se sienta especial. Criterios: 4 rarezas (Común, Raro, Épico, Leyenda) según historia, más rareza = más habilidades y menos probabilidad, animación firma contrato. \\
+P39 & Como jugador quiero que habilidades fuertes no rompan la partida al principio. Criterios: niveles bloqueados hasta minuto (desdeMinuto), recarga mínima (cdMin), regate/entrada/contragolpe reequilibrados. \\
+P40 & Como jugador quiero ver qué combinaciones y ultras existen y qué me falta. Criterios: pantalla Combinaciones con nombre, bonus, requisitos, ultra, filtros Todas/Con tu jugador/Conseguidas. \\
+P41 & Como jugador quiero que lo que veo sea lo que choca. Criterios: hitbox por los pies, obstáculos macizos en todo su dibujo, copa árboles transparente. \\
+P42 & Como aficionado quiero logros con datos curiosos del Atleti que desbloqueen equipaciones. Criterios: 29 logros con dato real, servidor valida los comprobables, 10 equipaciones en Vestuario. \\
+P43 & Como jugador quiero ver al final qué funcionó para mejorar. Criterios: tiempo, ambiente, bajas, jefes, daño total, golpe máx, críticos, daño recibido, vida recuperada, barras daño por arma/ultra/ulti/quemaduras, jefes vencidos con coste, logros nuevos. \\
+P44 & Como jugador quiero música y ambiente de estadio. Criterios: fanfarria por competición, canción chiptune que se anima con tiempo/jefes, grada murmura/canta según cercanía, volúmenes separados, todo sintetizado. \\
+P45 & Como aficionado quiero reconocer a jugadores y jefes en el campo. Criterios: sombreado, orejas, nariz, peinados, rasgos propios (brazalete, cinta, pecas, barba, pendientes, tatuajes). \\
+P46 & Como jugador quiero que los jefes sean un reto real a partir del segundo. Criterios: escolta de élites desde 2º jefe, refuerzos al cambiar fase, furia si tardas, jugada estrella en fase 3, 1º jefe asequible. \\
+P47 & Como usuario quiero que los errores detectados se arreglen con pruebas que eviten regresiones. Criterios: cada error reproducido con prueba antes de arreglar, arreglos pasan CI y se despliegan. \\
+P48 & Como responsable quiero que todo el Sprint 2 se revise desde el repositorio. Criterios: README con capturas juego y DoneTonic, documentación técnica para memoria, backlog/tablero/gráficas Sprint 2 en DoneTonic. \\
 \bottomrule
 \end{longtable}
 }
 
 \subsection{Desarrollo del Sprint 2: problemas y soluciones}
 
-Los problemas detectados durante el Sprint 2 y sus soluciones (documentacion-tecnica.md §13, filas Sprint 2):
+Los problemas detectados durante el Sprint 2 y sus soluciones (documentacion-tecnica.md §13, filas correspondientes al Sprint 2) se recogen en la Tabla \ref{tab:prob-sprint2}.
 
 \begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
-\caption{Problemas y soluciones del Sprint 2.}\label{tab:prob-sprint2}\\
+\caption{Problemas y soluciones en el Sprint 2.}\label{tab:prob-sprint2}\\
 \toprule
 \textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endfirsthead
 \toprule
 \textbf{Problema detectado} & \textbf{Solución adoptada} \\ \midrule \endhead
 El juego dejó de cargar tras un cambio (variable usada antes de existir) & Arreglo inmediato (PR \#51) y prueba que importa todos los módulos del juego \\
-Los jugadores podían esconderse detrás de los tejados & Colisión por los pies y obstáculos que chocan en todo su dibujo (PR \#53, T68) \\
-Tirones al pintar el suelo & Una textura por celda y ambiente, como mucho una por fotograma y por adelantado (PR \#52) \\
-Simulación lenta con muchos rivales & Búsqueda por radio con claves numéricas: ~4,5× más rápida (PR \#52) \\
-El regate hacía al jugador intocable demasiado pronto & Niveles que no salen hasta cierto minuto y recarga mínima (PR \#53, T66) \\
-Equilibrio difícil de ajustar a mano & Todo el equilibrio en config.js y calibración con bot que juega partidas simuladas (PR \#50, T59) \\
-Quien eliminaba su cuenta (Google) no podía volver a entrar con ese email & Migración 005: email único solo entre no eliminadas (índice parcial); findByEmail ignora eliminadas; al eliminar se suelta mote y sale del ranking (PR \#56, T79) \\
-Al pulsar «Reenviar el correo» tras error, el primer clic se perdía & Campo vacío no tocado no da error al salir; tras fallo servidor contraseña se vacía sin marcar error (PR \#55, T78) \\
+Jugadores podían esconderse detrás de tejados (colisión no coincidía con dibujo 3/4) & Colisión por los pies y obstáculos macizos en todo su dibujo (PR \#53) \\
+Tirones al pintar el suelo (muchas texturas por píxel en mismo fotograma) & Una textura por celda y ambiente, como mucho una por fotograma y por adelantado (PR \#52) \\
+Simulación lenta con muchos rivales (búsqueda claves texto, muchas celdas) & Búsqueda por radio con claves numéricas: 4,5× más rápida (PR \#52) \\
+Regate hacía al jugador intocable demasiado pronto (subía sin límite) & Niveles bloqueados por minuto (desdeMinuto) y recarga mínima (cdMin) (PR \#53) \\
+Equilibrio difícil de ajustar a mano (muchas variables) & Todo el equilibrio en config.js y calibración con bot que juega partidas simuladas (PR \#50) \\
+Eliminar cuenta (sobre todo Google) impedía volver a entrar con ese email & Migración 005: email único solo entre cuentas no eliminadas (índice parcial); findByEmail ignora eliminadas; al eliminar se suelta mote y sale del ranking (PR \#56) \\
+Primer clic en «Reenviar el correo» se perdía tras error de login & Campo vacío sin tocar no da error al salir; tras fallo servidor contraseña se vacía sin marcar error (PR \#55) \\
 \bottomrule
 \end{longtable}
 
@@ -417,17 +353,18 @@ Al pulsar «Reenviar el correo» tras error, el primer clic se perdía & Campo v
 
 Al cierre del Sprint 2 (29/10/2026) se entregaron:
 \begin{itemize}
-    \item 29 PBIs completados (P20–P48) y 50 tareas (T33–T82).
-    \item 14 PRs fusionados en \texttt{main} (\#36, \#44–\#56) más documentación.
-    \item Batería de 276 pruebas automatizadas (140 Sprint 1 + 136 juego) validadas en CI contra PostgreSQL 17.
-    \item Servicio web actualizado en Google Cloud Run y Render con toda la lógica del juego.
-    \item Backlog, tablero y gráficas del Sprint 2 registrados en DoneTonic (capturas \texttt{figs/capturas/donetonic/04-tablero-sprint2.png}, \texttt{05-sprint2-tareas-hechas.png}, \texttt{06-graficas-sprint2.png}, \texttt{08-pbi-detalle.png}).
+    \item 29 PBIs completados (P20–P48).
+    \item 50 tareas técnicas (T33–T82).
+    \item 16 PRs fusionados (\#36, \#44–\#56) más PRs de documentación.
+    \item Capturas de juego y DoneTonic actualizadas en el repositorio.
+    \item Documentación técnica actualizada (documentacion-tecnica.md) con diagramas de secuencia del juego (§7.10–7.11).
+    \item Pruebas automáticas del juego integradas en la suite global (276 totales).
 \end{itemize}
 
 \subsection{Retrospectiva del Sprint 2}
 
 \subsubsection{Burndown real del Sprint 2}
-La Figura \ref{fig:burndown-s2} muestra la evolución real de PBIs pendientes según la fecha de fusión del último PR de cada PBI (tabla «Evolución del Sprint 2» en \texttt{docs/gestion/README.md}). \textbf{Importante:} las gráficas de DoneTonic del Sprint 2 salen en recta porque el backlog se registró en DoneTonic al cerrar el sprint (29/10/2026), marcando todos los PBIs como hechos ese día. La evolución real se reconstruye con las fechas de los PRs.
+La Figura \ref{fig:burndown-s2} muestra la evolución real de PBIs pendientes según la fecha de fusión del último PR de cada PBI (tabla «Evolución del Sprint 2» en gestion/README.md). Las gráficas de DoneTonic del Sprint 2 aparecen en recta porque el backlog se registró al cerrar el sprint (29/10); la evolución real se reconstruye con las fechas de los PRs.
 
 \begin{figure}[htbp]
 \centering
@@ -435,7 +372,7 @@ La Figura \ref{fig:burndown-s2} muestra la evolución real de PBIs pendientes se
 \begin{axis}[
     width=0.9\textwidth,
     height=7cm,
-    xlabel={Fecha},
+    xlabel={Día},
     ylabel={PBIs pendientes},
     xtick={1,2,3,4,5,6,7},
     xticklabels={23/10, 24/10, 25/10, 26/10, 27/10, 28/10, 29/10},
@@ -446,29 +383,31 @@ La Figura \ref{fig:burndown-s2} muestra la evolución real de PBIs pendientes se
     thick
 ]
 \addplot coordinates {(1,28) (2,11) (3,11) (4,2) (5,2) (6,2) (7,0)};
-\addlegendentry{PBIs pendientes (real por PRs)}
+\addlegendentry{PBIs pendientes}
 \end{axis}
 \end{tikzpicture}
-\caption{Burndown real del Sprint 2 (PBIs pendientes según fechas de PR). Las gráficas de DoneTonic salen en recta porque el backlog se registró al cerrar el sprint (29/10).}
+\caption{Burndown real del Sprint 2 (PBIs pendientes según fechas de PR).}
 \label{fig:burndown-s2}
 \end{figure}
 
 \subsubsection{Seguimiento visual en DoneTonic}
-La Figura \ref{fig:donetonic-graficas-s2} muestra las gráficas Sprint Burnup y Sprint Burndown de DoneTonic para el Sprint 2 (captura \texttt{figs/capturas/donetonic/06-graficas-sprint2.png}).
+La Figura \ref{fig:donetonic-graficas-s2} muestra las gráficas Sprint Burnup y Sprint Burndown de DoneTonic para el Sprint 2 (captura \texttt{figs/capturas/donetonic/06-graficas-sprint2.png}). Nótese que aparecen como líneas rectas porque todos los PBIs se marcaron hechos el 29/10 al registrar el backlog.
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.9\textwidth]{figs/capturas/donetonic/06-graficas-sprint2.png}
-\caption{Sprint Burnup y Sprint Burndown en DoneTonic (Sprint 2). Nótese la forma rectangular: el backlog se registró al cerrar el sprint.}
+\caption{Sprint Burnup y Sprint Burndown en DoneTonic (Sprint 2).}
 \label{fig:donetonic-graficas-s2}
 \end{figure}
 
+\subsubsection{Explicación de la recta en las gráficas de DoneTonic}
+El juego se programó del 23 al 26/10, antes de que el profesor fijara que el Sprint 2 sería la lógica del juego. El backlog del Sprint 2 se registró en DoneTonic al cerrar el sprint (29/10), por lo que DoneTonic marca todos los PBIs como hechos ese día y sus gráficas salen como una recta. La evolución real, sacada de las fechas de los PRs, es la mostrada en la Figura \ref{fig:burndown-s2}.
+
 \subsubsection{Lo aprendido}
 \begin{itemize}
-    \item La simulación determinista con paso fijo y semilla permite probar el juego en Node sin navegador y garantiza que el resultado no depende de los FPS.
-    \item La generación procedimental de gráficos y audio por código elimina dependencias de assets externos, acelera la carga y permite variantes dinámicas (equipaciones, selecciones).
-    \item La concurrencia optimista con versión numérica resuelve condiciones de carrera en fichajes y entrenamiento sin bloqueos pesados.
-    \item La validación anti-trampas en servidor (reloj propio, límites estadísticos, logros verificables) es indispensable para un ranking competitivo fiable.
-    \item Registrar el backlog en DoneTonic tras desarrollar el código distorsiona las gráficas de seguimiento; para la memoria se debe reconstruir la evolución real con las fechas de los PRs.
-    \item La calibración de dificultad con un bot que juega partidas simuladas permite ajustar curvas de forma objetiva antes de probar con humanos.
+    \item La arquitectura en capas y la inyección de dependencias permitieron añadir el juego completo sobre la base SaaS sin tocar la lógica de usuarios, sesiones, roles ni despliegue.
+    \item La simulación determinista con paso fijo y semilla facilitó las pruebas automáticas del motor (game.test.js) y la validación anti-trampas en el servidor.
+    \item La generación procedural de gráficos y audio por código eliminó dependencias de assets externos y permitió variaciones dinámicas (equipaciones, selecciones, intensidad musical).
+    \item La concurrencia optimista en el perfil del juego (campo version) resolvió condiciones de carrera al fichar jugadores (doble clic) sin bloqueos pesados.
+    \item La concentración del desarrollo del juego en 4 días (23–26/10) exigió una granularidad de tareas muy fina y PRs por fase para mantener el CI verde.
 \end{itemize}
