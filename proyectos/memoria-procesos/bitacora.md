@@ -2110,3 +2110,43 @@ Lo que he corregido yo directamente (2 archivos): en `chapters/05-evaluacion.tex
 ## 2026-10-30 22:56 · 🧠 Lección propuesta para la memoria
 
 [[los-identificadores-largos-en-texttt-no-se-parten-solos-usar]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-10-30 23:25 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+He corregido dos puntos de la bitácora usando solo archivos completos y no protegidos: en `a2-material.tex` añado una sección con 5 capturas distintas de DoneTonic (con `\caption`, `\label` y `\ref`) para llegar al mínimo exigido, y en `a3-uso-ia.tex` actualizo el anexo de uso de IA a los dos sprints y cambio «80 pruebas» por «276 pruebas», que es el total real del proyecto según la documentación técnica.
+
+**Archivos:** `chapters/a2-material.tex`, `chapters/a3-uso-ia.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 6 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** Corregir los errores de compilación que quedan: en `chapters/04b-juego.tex` quitar el `\begin{table}...\end{table}` que envuelve el `longtable` de `tab:sistemas-juego` y sustituir los números no trazables «422» y «1996» por datos de las fuentes («Doblete del 96»); en `chapters/04-descripcion.tex` localizar el «Float too large» de 82 pt y partir `\texttt{juegoService.finalizarPartida}` con `\allowbreak`. Después revisar por qué el test cuenta solo 4 tablas y ejecutar `latexmk` + `verificar.py` hasta que pasen.
+
+## 2026-10-30 23:30 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- El constructor modificó `chapters/a2-material.tex` (añadió 5 capturas de DoneTonic con caption/label/ref) y `chapters/a3-uso-ia.tex` (cambió "80 pruebas" por "276 pruebas" y actualizó a dos sprints). Ambos cambios son correctos y trazables a fuentes: capturas en `@arbol` y `docs/gestion/README.md`; 276 pruebas en `documentacion-tecnica.md` §10.2 y §14.
+- La prueba sigue fallando con 6 problemas que **no están en los archivos tocados por el constructor**:
+  1. `Float too large 469 pt` en línea 205 → `chapters/04b-juego.tex` (longtable `tab:sistemas-juego` envuelto en `\begin{table}`).
+  2. `Float too large 82 pt` en línea 527 → `chapters/04-descripcion.tex` (otro longtable o figura dentro de `table`).
+  3. Overfull hbox 48 pt en `chapters/04-descripcion.tex` líneas 46-47: `\texttt{juegoService.finalizarPartida}` sin `\allowbreak`.
+  4. Solo 4 tablas contadas (mínimo 15): faltan `\caption`+`\label`+`\ref` en varias longtable (p.ej. `tab:sistemas-juego`, tablas de requisitos, trazabilidad, métricas).
+  5. Número «422» en `chapters/04b-juego.tex:256` no está en fuentes.
+  6. Número «1996» en `chapters/04b-juego.tex:296` no está en fuentes (fuente dice «Doblete del 96» en §9.6).
+- Comprobación de fuentes: 276 pruebas → `documentacion-tecnica.md` §10.2 tabla y §14; capturas DoneTonic → `@arbol` lista 8 archivos en `docs/capturas/donetonic/`; «Doblete del 96» → `documentacion-tecnica.md` §9.6 tabla logros.
+
+Lo que hizo el constructor está bien: `a2-material.tex` ahora tiene 5 capturas de DoneTonic (mínimo 5) con caption/label/ref, y `a3-uso-ia.tex` refleja correctamente los dos sprints y 276 pruebas. Sin embargo, **no tocó los archivos que causan los 6 errores de la prueba** (04-descripcion.tex, 04b-juego.tex). Los errores son estructurales y requieren cambios en esos capítulos. El constructor debe corregirlos en el siguiente paso.
+
+**Correcciones del revisor:** `chapters/04b-juego.tex`, `chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- En `chapters/04b-juego.tex`: eliminar el envoltorio `\begin{table}[htbp] ... \end{table}` que rodea al `longtable` de `tab:sistemas-juego` (línea ~205), dejando el `longtable` suelto; sustituir el número «422» (línea ~256) por un dato de las fuentes o eliminarlo; sustituir «1996» (línea ~296) por «Doblete del 96» (texto exacto de `documentacion-tecnica.md` §9.6).
+- En `chapters/04-descripcion.tex`: localizar el «Float too large 82 pt» (línea 527) y corregir (probablemente otro `longtable` dentro de `table` o figura muy alta); en líneas 46-47, partir `\texttt{juegoService.finalizarPartida}` con `\allowbreak` tras el punto: `\texttt{juegoService\allowbreak.finalizarPartida}`.
+- Revisar todas las `longtable` de los capítulos 04, 04b, 05, a1, a4: asegurar que cada una tiene `\caption{...}\label{tab:...}` en la primera fila y al menos un `\ref{tab:...}` en el texto; sacar cualquier `longtable` que esté anidado dentro de `\begin{table}`.
+- Verificar que existen y compilan los 10 diagramas de secuencia con `pgf-umlsd` (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`, `fig:sec-partida`, `fig:sec-contratar`, `fig:capas`, `fig:modelo-datos`, `fig:pipeline`) y los 2 burndown con `pgfplots` (`fig:burndown-s1`, `fig:burndown-s2`).
+- Ejecutar `latexmk` (LuaLaTeX) + `biber` y `verificar.py` hasta que pasen los 6 problemas actuales.
