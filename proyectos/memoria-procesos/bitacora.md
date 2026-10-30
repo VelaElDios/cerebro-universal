@@ -1811,3 +1811,23 @@ He reescrito completamente `chapters/04-descripcion.tex` corrigiendo el error de
 ⏱️ Solo quedan 166 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-10-30 16:47 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a reescribir completamente `chapters/04-descripcion.tex` corrigiendo el error de compilación en los diagramas de secuencia (sintaxis pgf-umlsd correcta), añadiendo las 5 figuras obligatorias con sus `\ref`, citando `\cite{rfc6749}` en la sección OAuth, referenciando todas las tablas y figuras, y usando `longtable` con `@{}` para evitar desbordes de margen.
+
+**Archivos:** `chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:341: Package tikz Error: A node must have a (possibly empty) label text.
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 1 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** El siguiente paso es escribir `chapters/04b-juego.tex` completo, incluyendo los diagramas de secuencia de fin de partida (`fig:sec-partida`) y contratación con concurrencia optimista (`fig:sec-contratar`), las capturas del juego (8 mínimas de `juego/`), la tabla de logros con años correctos según la fuente (§9.6), y asegurando que `bib/ref.bib` tenga todas las referencias citadas. También hay que añadir `\ref` a todas las figuras y tablas que falten en los capítulos ya escritos.
+
+## 2026-10-30 16:47 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 86 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
