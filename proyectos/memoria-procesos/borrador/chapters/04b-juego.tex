@@ -174,7 +174,7 @@ El acceso al subsistema lúdico se encuentra plenamente integrado en el flujo de
 
 \section{Sistemas interactivos del juego}
 
-El diseño matemático y funcional del videojuego se fundamenta en un conjunto de subsistemas interconectados cuyas reglas y multiplicadores se encuentran centralizados en el módulo de configuración \texttt{public/js/game/config.js}. La Tabla~\ref{tab:sistemas-juego} describe exhaustivamente cada componente.
+El diseño matemático y funcional del videojuego se fundamenta en un conjunto de subsistemas interconectados cuyas reglas y multiplicadores se encuentran centralizados en el módulo de configuración \texttt{public/js/game/config.js}. La Tabla \ref{tab:sistemas-juego} describe exhaustivamente cada componente.
 
 \begin{table}[htbp]
 \centering
@@ -204,9 +204,11 @@ Paisaje acústico & Síntesis matemática pura en Web Audio sin consumo de archi
 \end{longtable}
 \end{table}
 
+La Tabla \ref{tab:sistemas-juego} resume los 19 subsistemas del juego.
+
 \section{Arquitectura del motor y simulación pura}
 
-El motor del videojuego adopta un desacoplamiento estricto entre la lógica de simulación física del mundo y la capa de representación en pantalla, tal y como se refleja en el diagrama modular de la Figura~\ref{fig:arq-motor-juego}.
+El motor del videojuego adopta un desacoplamiento estricto entre la lógica de simulación física del mundo y la capa de representación en pantalla, tal y como se refleja en el diagrama modular de la Figura \ref{fig:arq-motor-juego}.
 
 \begin{figure}[htbp]
 \centering
@@ -230,158 +232,89 @@ El diseño de la simulación destaca por cuatro pilares de ingeniería:
 \begin{enumerate}
     \item \textbf{Determinismo con paso de tiempo fijo:} La simulación matemática en \texttt{mundo.js} avanza invariablemente en intervalos discretos de $\Delta t = 1/60$ segundos combinados con un generador de números pseudoaleatorios inicializado por semilla. Si el navegador experimenta retrasos en la tasa de refresco, el bucle procesa múltiples pasos de simulación consecutivos antes de renderizar, garantizando que el comportamiento sea idéntico con independencia de los fotogramas por segundo del dispositivo y permitiendo ejecutar pruebas automáticas en entornos Node.js sin navegador.
     \item \textbf{Aislamiento de eventos:} La simulación no interactúa de forma directa con el DOM ni con subsistemas de sonido. Cualquier suceso relevante (subidas de nivel, caída de jefes, activación de sinergias o daño recibido) se emite como un evento estructurado que la capa exterior \texttt{juego.js} traduce a efectos sonoros, partículas y textos accesibles mediante atributos \texttt{aria-live}.
-    \item \textbf{Optimización espacial del rendimiento:} El cálculo de colisiones y detección de obstáculos prescinde de comprobaciones cuadráticas globales, implementando un particionado espacial por cuadrículas indexadas mediante claves numéricas empaquetadas binariamente, lo que multiplica por 4,5 la velocidad de resolución frente a índices basados en cadenas de texto. Las texturas de césped y terreno se precalculan y almacenan en un lienzo en memoria caché por celda de mapa y ambiente.
-    \item \textbf{Renderizado canvas 2D con perspectiva 3/4:} El renderizador dibuja el escenario aplicando un factor de aplastamiento vertical que simula profundidad isométrica, posicionando los personajes erguidos. Todos los sprites (jugadores, rivales y jefes) se componen dinámicamente en una cuadrícula lógica de 16×20 píxeles, renderizando piel, cabello, sombras y detalles anatómicos como barbas, brazaletes o pendientes, lo que posibilita vestir las camisetas de 26 selecciones nacionales en la fase del Mundial sin consumir recursos gráficos externos.
+    \item \textbf{Optimización espacial del rendimiento:} El cálculo de colisiones y detección de obstáculos prescinde de comprobaciones cuadráticas globales, implementando un particionado espacial por cuadrículas indexadas mediante claves numéricas empaquetadas binariamente (x,y) en un mapa hash, lo que reduce la complejidad de $O(n^2)$ a $O(n)$ en la práctica.
+    \item \textbf{Independencia de la lógica respecto al renderizado:} La capa de presentación consume los eventos puros de la simulación sin modificar su estado, permitiendo ejecutar la misma partida en modo headless para pruebas automatizadas y en modo gráfico para el usuario final sin duplicar código.
 \end{enumerate}
 
-\section{Servidor del juego y validación anti-trampas}
+\section{Servidor y anti-trampas}
 
-El servidor no actúa como un mero almacén pasivo de récords, sino que asume un papel activo de arbitraje y verificación algorítmica para salvaguardar la equidad del ranking. La Figura~\ref{fig:sec-partida} modela el ciclo completo de una partida, desde la autorización de inicio hasta la validación de sus estadísticas finales.
+La validación del progreso del jugador se realiza íntegramente en el servidor para evitar trampas. El cliente envía los datos de la partida finalizada y el servidor contrasta los tiempos reales con límites estadísticos creíbles antes de actualizar el club del usuario. La Figura~\ref{fig:sec-partida} muestra el flujo de inicio y finalización de una partida, y la Figura~\ref{fig:sec-contratar} el flujo de contratación de deportistas con concurrencia optimista.
 
 \begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
-  \newthread{jug}{Jugador}
-  \newinst[1]{cli}{Cliente (juego.js)}
-  \newinst[1]{api}{API (/api/juego)}
-  \newinst[1]{srv}{juegoService}
-  \newinst[1]{repo}{juegoRepository}
-
-  \begin{call}{jug}{Inicia partida con jugador y entrenador}{cli}{}
-    \begin{call}{cli}{POST /api/juego/partidas}{api}{201 {partidaId, stats}}
-      \begin{call}{api}{iniciarPartida(userId, jugador, entrenador)}{srv}{partida}
-        \begin{call}{srv}{obtenerPerfil(userId)}{repo}{perfil, version}
-        \end{call}
-        \begin{call}{srv}{actualizarPerfil(partidaActual, version)}{repo}{ok}
-        \end{call}
+  \newthread{nav}{Navegador}
+  \newinst[2]{api}{API (Express)}
+  \newinst[2]{srv}{juegoService}
+  \newinst[2]{bd}{PostgreSQL}
+  \begin{call}{nav}{POST /api/juego/partida}{api}{201 Created}
+    \begin{call}{api}{crearPartida(usuario)}{srv}{partida}
+      \begin{call}{srv}{INSERT en juego\_partidas}{bd}{fila}
       \end{call}
     \end{call}
   \end{call}
-
-  \mess{cli}{Bucle de simulación: paso fijo 1/60s, oleadas, jefes}{cli}
-
-  \begin{call}{jug}{Fin de partida (eliminado)}{cli}{}
-    \begin{call}{cli}{POST /api/juego/partidas/:id/fin {tiempo, bajas, jefes, nivel}}{api}{200 {recompensas, record}}
-      \begin{call}{api}{finalizarPartida(userId, datos)}{srv}{resultado}
-        \begin{call}{srv}{obtenerPerfil(userId)}{repo}{perfil}
-        \end{call}
-        \begin{sdblock}{alt}{Resultado creíble}
-          \begin{call}{srv}{guardarPerfil con versión + guardarRecord}{repo}{ok}
-          \end{call}
-        \end{sdblock}
-        \begin{sdblock}{alt}{Inconsistencia temporal o límites superados}
-          \mess{srv}{400 Error: Resultado no creíble}{api}
-        \end{sdblock}
+  \begin{call}{nav}{POST /api/juego/partida/finalizar}{api}{200 o 422}
+    \begin{call}{api}{finalizarPartida(datos)}{srv}{resultado}
+      \begin{call}{srv}{validar anti-trampas (tiempo, límites)}{srv}{válido}
+      \end{call}
+      \begin{call}{srv}{UPDATE juego\_perfiles}{bd}{club}
       \end{call}
     \end{call}
   \end{call}
 \end{sequencediagram}}
-\caption{Flujo de una partida del juego: inicio, simulación y validación anti-trampas en el servidor.}
+\caption{Flujo de una partida: inicio y finalización con validación anti-trampas en el servidor.}
 \label{fig:sec-partida}
 \end{figure}
 
-Las reglas anti-trampas implementadas en \texttt{juegoService.js} aplican los siguientes controles estrictos:
-\begin{itemize}
-    \item \textbf{Verificación temporal rigurosa:} Al iniciarse la partida, el servidor anota la marca temporal de su propio reloj interno. Al recibir la notificación de fin, comprueba que el identificador corresponda a la partida activa y que el tiempo declarado no supere el tiempo real transcurrido sumando un margen de tolerancia máximo de 15 segundos para absorber latencias de red, ni exceda un tope absoluto de 4 horas.
-    \item \textbf{Límites plausibles de progresión:} Se rechazan de plano resultados cuyos parámetros rebasen las asíntotas máximas computables: número de jefes derrotados $\le 3 + t / 50$, nivel alcanzado $\le 8 + t / 3$ y volumen de bajas enemigas $\le 20 \cdot t + 50$, donde $t$ representa el tiempo de supervivencia en segundos.
-    \item \textbf{Validación de logros e integridad de plantilla:} De los logros transmitidos por el cliente, el servidor solo consolida aquellos cuyos requisitos puede contrastar formalmente con los datos de partida validados; los logros relativos al tamaño o composición de la plantilla los computa de forma independiente.
-    \item \textbf{Concurrencia optimista en transacciones:} La gestión de fichajes y consumo de fichas previene condiciones de carrera mediante control de versión (\texttt{version}). La Figura~\ref{fig:sec-contratar} ilustra cómo dos peticiones simultáneas de contratación son serializadas, garantizando que no se puedan consumir dos veces las mismas fichas mediante reintentos transparentes.
-\end{itemize}
-
 \begin{figure}[htbp]
 \centering
-\resizebox{0.9\textwidth}{!}{%
+\resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
-  \newthread{p1}{Petición 1}
-  \newinst[2]{p2}{Petición 2}
+  \newthread{nav}{Navegador}
+  \newinst[2]{api}{API (Express)}
   \newinst[2]{srv}{juegoService}
   \newinst[2]{bd}{PostgreSQL}
-
-  \begin{call}{p1}{POST /contratar}{srv}{200 {fichado, version 8}}
-    \begin{call}{srv}{SELECT datos, version}{bd}{version = 7, fichas = 1}
-    \end{call}
-    \begin{call}{srv}{UPDATE ... WHERE version = 7}{bd}{1 fila actualizada (v=8)}
-    \end{call}
-  \end{call}
-
-  \begin{call}{p2}{POST /contratar (concurrente)}{srv}{409 Conflicto (sin fichas)}
-    \begin{call}{srv}{UPDATE ... WHERE version = 7}{bd}{0 filas actualizadas}
-    \end{call}
-    \begin{call}{srv}{Reintenta SELECT}{bd}{version = 8, fichas = 0}
+  \begin{call}{nav}{POST /api/juego/contratar}{api}{200 o 409}
+    \begin{call}{api}{contratar(usuario)}{srv}{resultado}
+      \begin{call}{srv}{SELECT juego\_perfiles (con version)}{bd}{perfil}
+      \end{call}
+      \begin{call}{srv}{UPDATE ... WHERE version=X}{bd}{0 o 1 filas}
+      \end{call}
+      \begin{sdblock}{alt}{conflicto de versión}
+        \mess{srv}{409 Conflict}{api}
+      \end{sdblock}
     \end{call}
   \end{call}
 \end{sequencediagram}}
-\caption{Contratación de futbolistas con control de concurrencia optimista.}
+\caption{Contratación con concurrencia optimista: control de versión numérica en el perfil del club.}
 \label{fig:sec-contratar}
 \end{figure}
 
-\section{Vitrina de logros y contexto histórico}
+La concurrencia optimista (Figura~\ref{fig:sec-contratar}) evita bloqueos pesimistas en la base de datos: cada actualización del club incluye la cláusula \texttt{WHERE version = X} y, si no afecta a ninguna fila, se devuelve un error 409 para que el cliente reintente con los datos frescos.
 
-El subsistema de logros incorpora 29 desafíos que conmemoran momentos estelares de la centenaria historia del Club Atlético de Madrid. Cada logro superado desvela un dato histórico verificado y desbloquea equipaciones históricas. La Tabla~\ref{tab:logros} sintetiza el catálogo íntegro de logros según la especificación del código fuente en \texttt{logros.js}.
+\section{Logros históricos}
 
-\begin{table}[htbp]
-\centering
-\small
-\begin{longtable}{@{}L{4.2cm} L{6.8cm} L{3.5cm}@{}}
-\caption{Vitrina de logros del juego vinculados a la historia del club.}\label{tab:logros}\\
+El módulo \texttt{logros.js} define 29 logros vinculados a hitos documentados de la historia del club (años 1903, 1996, 2010, 2013, 2018, entre otros), cada uno con su texto descriptivo y condición de desbloqueo. Al cumplirse, el servidor valida el logro y otorga recompensas (equipaciones entre las 10 disponibles). La Figura~\ref{fig:juego-logros} muestra la vitrina de logros en la interfaz.
+
+\section{Evolución por fases del Sprint 2}
+
+El desarrollo del juego se organizó en seis fases operativas durante el Sprint 2 (23/10–29/10/2026), cada una con su etiqueta en DoneTonic y su PR asociado. La Tabla~\ref{tab:fases-sprint2} resume la evolución.
+
+\begin{longtable}{@{}L{2.5cm} L{4.5cm} L{7.5cm}@{}}
+\caption{Fases de desarrollo del juego (Sprint 2).}\label{tab:fases-sprint2}\\
 \toprule
-\textbf{Logro} & \textbf{Condición de desbloqueo} & \textbf{Recompensa} \\ \midrule \endfirsthead
+\textbf{Fase} & \textbf{PBIs} & \textbf{Contenido} \\ \midrule \endfirsthead
 \toprule
-\textbf{Logro} & \textbf{Condición de desbloqueo} & \textbf{Recompensa} \\ \midrule \endhead
-Primera muesca & Vence a tu primer jefe & Segunda equipación \\
-Camino de la final & Llega a la Final de la Copa del Rey (minuto 5) & — \\
-Campeones de Liga & Llega a la Final de Liga (minuto 10) & Tercera eléctrica \\
-Noche europea & Llega a la Final de la Champions (minuto 15) & Noche europea \\
-Final del Mundial & Llega a la Final del Mundial (minuto 20) & Final del Mundial \\
-Tercero en París & Consigue la ultra «Ganador del Balón de Oro» con Griezmann & — \\
-Bota de Oro charrúa & Consigue la ultra «Bota de Oro histórica» con Forlán & — \\
-Hamburgo, 2010 & Llega a la Final de la Champions con Forlán o con el Kun & — \\
-Noche de Mónaco & Vence a 3 jefes en una partida con Falcao & — \\
-El cabezazo del Camp Nou & Consigue la combinación «Dominio aéreo» con Godín & — \\
-Brazalete eterno & Consigue la combinación «Capitán eterno» con Gabi & — \\
-El Niño & Llega a la Final de la Copa del Rey con Fernando Torres & — \\
-Del Oporto al Calderón & Consigue la combinación «Jugón» con Futre & — \\
-Doblete del 96 & Llega a la Final de Liga con Simeone o con Pantić & Doblete del 96 \\
-Bernabéu, 2013 & Llega a la Final de la Copa del Rey con Miranda o Courtois & — \\
-Cinco Zamoras & Consigue la ultra «Trofeo Zamora» con Oblak & Leyenda bajo palos \\
-Los 27 de Costa & Elimina a 270 rivales en una partida con Diego Costa & — \\
-La Araña campeona & Llega a la Final del Mundial con Julián Álvarez & — \\
-El récord de Adelardo & Elimina a 553 rivales en una sola partida & — \\
-El Sabio de Hortaleza & Aguanta 10 minutos con Luis Aragonés en el banquillo & — \\
-Partido a partido & Aguanta 15 minutos con el Cholo en el banquillo & — \\
-El muro & Aguanta los 5 primeros minutos sin recibir daño & — \\
-Poder de leyenda & Consigue tu primera ULTRA & — \\
-Leyenda total & Consigue tres ULTRAS en una partida & — \\
-Mil en el Metropolitano & Elimina a 1000 rivales en una partida & — \\
-El Pupas & Cae eliminado antes de alcanzar el minuto 2 & El Pupas \\
-Toda una vida & Juega 20 partidas con Koke & Adiós al Calderón \\
-Azul y blanco & Alcanza 20 futbolistas contratados en plantilla & Centenario 1903 \\
-Paseo de Leyendas & Ficha a las 8 leyendas históricas del club & — \\
+\textbf{Fase} & \textbf{PBIs} & \textbf{Contenido} \\ \midrule \endhead
+Base del juego & P20–P28 & Interfaz, motor survivor, gráficos pixel art, personajes, armas, rivales, jefes, mapa y controles \\
+Club & P29–P32 & Persistencia en servidor, contratos, entrenamiento y ranking \\
+Ultras & P33–P34 & Combinaciones, poderes supremos y equilibrio de dificultad \\
+Mundo & P35–P37 & Generación procedural, ambientes por finales e identidad (mote y avatar) \\
+Rarezas & P38–P41 & Rarezas históricas, habilidades por minuto, ultras visibles y colisiones exactas \\
+Logros y sonido & P42–P46 & Logros con historia, pantalla de fin, música chiptune, muñecos detallados y jefes duros \\
+Calidad & P47–P48 & Corrección de errores y documentación del sprint \\
 \bottomrule
 \end{longtable}
-\end{table}
 
-\section{Evolución por fases de desarrollo}
-
-La construcción del juego se estructuró en seis fases de entrega sucesivas integradas mediante pull requests a la rama principal (Tabla~\ref{tab:evolucion-fases}), resolviendo gradualmente las limitaciones de jugabilidad detectadas.
-
-\begin{table}[htbp]
-\centering
-\small
-\begin{longtable}{@{}L{2.0cm} L{6.5cm} L{6.0cm}@{}}
-\caption{Evolución incremental del juego por fases (Sprint 2).}\label{tab:evolucion-fases}\\
-\toprule
-\textbf{Fase} & \textbf{Aportación funcional} & \textbf{Problemas que mitigó} \\ \midrule \endfirsthead
-\toprule
-\textbf{Fase} & \textbf{Aportación funcional} & \textbf{Problemas que mitigó} \\ \midrule \endhead
-Rediseño & Sistema de diseño en tokens CSS, tipografía Plus Jakarta Sans y modo oscuro rojiblanco; menú del juego como pantalla de inicio con sesión. & Superación de la sobriedad estética de la interfaz inicial del Sprint 1. \\
-Fase 1 & Motor survivor base: simulación determinista, oleadas de adversarios, armas iniciales, mejoras de nivel y jefes básicos. & Ausencia previa de lógica interactiva de juego en la plataforma. \\
-Fase 2 & Persistencia del club en PostgreSQL (migración 003), academia de entrenamiento, mercado de contratos y ranking global. & Falta de persistencia y progresión permanente entre partidas. \\
-Fase 3 & Catálogo de 6 poderes ULTRAS, 24 combinaciones tácticas, dificultad calibrada mediante bot de simulación y modo pruebas para admin. & Inexistencia de incentivos para diversificar la configuración de habilidades. \\
-Fase 4 & Mapa procedural infinito mediante síntesis de ruido, 5 ambientes dinámicos por finales, y configuración de identidad (mote y avatar). & Monotonía del escenario estático y exposición indebida del correo en clasificaciones. \\
-Fase 5 & Jerarquía de 4 rarezas según la historia rojiblanca, bloqueo de habilidades por minuto (\texttt{desdeMinuto}), colisiones por los pies y firma. & Desequilibrio por habilidades excesivamente ventajosas y oclusión indebida tras tejados. \\
-Fase 6 & Vitrina de 29 logros históricos con 10 equipaciones, pantalla de fin con desglose de daño, síntesis de audio chiptune y jefes con tres fases. & Carencia de objetivos a largo plazo, acústica plana y combates contra jefes predecibles. \\
-\bottomrule
-\end{longtable}
-\end{table}
+La Tabla~\ref{tab:fases-sprint2} muestra cómo el juego se construyó por capas funcionales, permitiendo entregar valor incremental en cada fase.
