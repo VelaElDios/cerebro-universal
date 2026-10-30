@@ -14,14 +14,14 @@ El núcleo de la jugabilidad exige esquivar y contener oleadas continuas e impla
 El acceso al subsistema lúdico se encuentra plenamente integrado en el flujo de navegación de la aplicación web:
 
 \begin{enumerate}
-    \item \textbf{Identificación y creación de la ficha:} Una vez autenticado el aficionado con su cuenta local o federada de Google, la ruta \texttt{\#/jugar} despliega el entorno de juego. En la primera visita, el sistema solicita configurar la identidad deportiva mediante la elección de un mote único (entre 3 y 16 caracteres, normalizado en servidor para descartar duplicados sin distinción de mayúsculas ni tildes) y la selección de una cara para el avatar personal (Figura~\ref{fig:juego-identidad}, dentro del conjunto de la Figura~\ref{fig:grupo-accesorios}).
-    \item \textbf{Menú principal del club (Hub):} Constituye el centro de operaciones del aficionado (Figura~\ref{fig:juego-menu}, grupo en Figura~\ref{fig:grupo-hub-vestuario}). Muestra a la izquierda la ficha federativa con el mote, avatar, registros de tiempo y contadores globales de jefes y contratos. En el área central, el deportista seleccionado pasea en tiempo real por el césped mientras se accede a las distintas dependencias: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes.
-    \item \textbf{Vestuario y Dirección:} En el Vestuario (Figura~\ref{fig:juego-vestuario}) se elige al futbolista activo entre los 36 disponibles de la plantilla, filtrando por posición (portero, defensa, medio o delantero) y seleccionando la equipación deseada entre las 10 variantes desbloqueables. En la sección de Dirección (Figura~\ref{fig:juego-direccion}, grupo en Figura~\ref{fig:grupo-direccion-ranking}) se designa al entrenador táctico (Cholo Simeone o Luis Aragonés), obteniendo modificadores pasivos y la habilidad definitiva (\textit{ulti}) correspondiente.
+    \item \textbf{Identificación y creación de la ficha:} Una vez autenticado el aficionado con su cuenta local o federada de Google, la ruta \texttt{\#/jugar} despliega el entorno de juego. En la primera visita, el sistema solicita configurar la identidad deportiva mediante la elección de un mote único (entre 3 y 16 caracteres, normalizado en servidor para descartar duplicados sin distinción de mayúsculas ni tildes) y la selección de una cara para el avatar personal (Figura~\ref{fig:juego-identidad}).
+    \item \textbf{Menú principal del club (Hub):} Constituye el centro de operaciones del aficionado (Figura~\ref{fig:juego-menu}). Muestra a la izquierda la ficha federativa con el mote, avatar, registros de tiempo y contadores globales de jefes y contratos. En el área central, el deportista seleccionado pasea en tiempo real por el césped mientras se accede a las distintas dependencias: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes.
+    \item \textbf{Vestuario y Dirección:} En el Vestuario (Figura~\ref{fig:juego-vestuario}) se elige al futbolista activo entre los 36 disponibles de la plantilla, filtrando por posición (portero, defensa, medio o delantero) y seleccionando la equipación deseada entre las 10 variantes desbloqueables. En la sección de Dirección (Figura~\ref{fig:juego-direccion}) se designa al entrenador táctico (Cholo Simeone o Luis Aragonés), obteniendo modificadores pasivos y la habilidad definitiva (\textit{ulti}) correspondiente.
     \item \textbf{Controles multimodal y ajustes:} El control del deportista admite teclado físico mediante las teclas \texttt{W}, \texttt{A}, \texttt{S}, \texttt{D} o los cursores de dirección, así como un control táctil virtual tipo joystick flotante adaptado a dispositivos móviles. La habilidad definitiva del entrenador se dispara mediante la barra espaciadora o la tecla \texttt{E}, el menú de pausa se activa con \texttt{Esc} o \texttt{P} (Figura~\ref{fig:juego-pausa}), la alternancia de pantalla completa con \texttt{F} y la elección de mejoras mediante las teclas numéricas del \texttt{1} al \texttt{3}. El panel de Ajustes (Figura~\ref{fig:juego-ajustes}) permite calibrar independientemente el volumen de efectos, la música chiptune, la escala gráfica y la sensibilidad.
-    \item \textbf{Desarrollo de la partida y mejoras:} Cada intervalo de 30 segundos genera una nueva oleada de adversarios. En la partida en curso (Figura~\ref{fig:juego-partida}, grupo en Figura~\ref{fig:grupo-partida-mejora}) se observa el mapa y los rivales. Al acumular la experiencia requerida, la simulación se congela y presenta la pantalla de selección de mejoras (Figura~\ref{fig:juego-mejora}), destacando con un icono de estrella ($\star$) aquellas habilidades que contribuyen a completar una combinación táctica sinérgica.
-    \item \textbf{Enfrentamiento contra jefes y ambientes:} A los 1:30 minutos debuta el primer jefe, repitiéndose los duelos cada dos minutos (Figura~\ref{fig:juego-jefe}, grupo en Figura~\ref{fig:grupo-jefes-ambientes}). Paralelamente, cada cinco minutos de supervivencia el escenario transmuta de forma procedural: desde la pretemporada hasta la Final de la Copa del Rey (Figura~\ref{fig:juego-final-copa}), la Final de Liga, la Final de la Champions y la Final del Mundial, modificando la paleta cromática, el tipo de césped, la intensidad del público y la dificultad de los oponentes.
-    \item \textbf{Mercado de fichajes y academia de entrenamiento:} Tras cada partida, los jefes derrotados conceden puntos y fichas de contrato (una ficha por cada 3 jefes). En la ventana de Contratar (Figura~\ref{fig:juego-contratar}, grupo en Figura~\ref{fig:grupo-club-progreso}) se canjean fichas para fichar nuevos futbolistas mediante un sorteo ponderado por rareza con animación interactiva de firma federativa. En la sección de Entrenamiento (Figura~\ref{fig:juego-entrenamiento}) se invierten los puntos obtenidos para potenciar permanentemente las estadísticas base de Vida, Defensa, Disparo y Suerte de cada jugador.
-    \item \textbf{Ecosistema competitivo y vitrina:} Las marcas históricas se reflejan en el Ranking global de la grada (Figura~\ref{fig:juego-ranking}), que clasifica las mejores partidas protegiendo la privacidad de los usuarios al mostrar exclusivamente motes y avatares. En la pantalla de Combinaciones (Figura~\ref{fig:juego-combinaciones}, grupo en Figura~\ref{fig:grupo-logros-combinaciones}) se consultan las 24 sinergias y los 6 poderes supremos ULTRAS disponibles, mientras que la Vitrina de Logros (Figura~\ref{fig:juego-logros}) expone los 29 hitos históricos desbloqueados junto con sus datos curiosos.
+    \item \textbf{Desarrollo de la partida y mejoras:} Cada intervalo de 30 segundos genera una nueva oleada de adversarios. En la partida en curso (Figura~\ref{fig:juego-partida}) se observa el mapa y los rivales. Al acumular la experiencia requerida, la simulación se congela y presenta la pantalla de selección de mejoras (Figura~\ref{fig:juego-mejora}), destacando con un icono de estrella ($\star$) aquellas habilidades que contribuyen a completar una combinación táctica sinérgica.
+    \item \textbf{Enfrentamiento contra jefes y ambientes:} A los 1:30 minutos debuta el primer jefe, repitiéndose los duelos cada dos minutos (Figura~\ref{fig:juego-jefe}). Paralelamente, cada cinco minutos de supervivencia el escenario transmuta de forma procedural: desde la pretemporada hasta la Final de la Copa del Rey (Figura~\ref{fig:juego-final-copa}), la Final de Liga, la Final de la Champions y la Final del Mundial, modificando la paleta cromática, el tipo de césped, la intensidad del público y la dificultad de los oponentes.
+    \item \textbf{Mercado de fichajes y academia de entrenamiento:} Tras cada partida, los jefes derrotados conceden puntos y fichas de contrato (una ficha por cada 3 jefes). En la ventana de Contratar (Figura~\ref{fig:juego-contratar}) se canjean fichas para fichar nuevos futbolistas mediante un sorteo ponderado por rareza con animación interactiva de firma federativa. En la sección de Entrenamiento (Figura~\ref{fig:juego-entrenamiento}) se invierten los puntos obtenidos para potenciar permanentemente las estadísticas base de Vida, Defensa, Disparo y Suerte de cada jugador.
+    \item \textbf{Ecosistema competitivo y vitrina:} Las marcas históricas se reflejan en el Ranking global de la grada (Figura~\ref{fig:juego-ranking}), que clasifica las mejores partidas protegiendo la privacidad de los usuarios al mostrar exclusivamente motes y avatares. En la pantalla de Combinaciones (Figura~\ref{fig:juego-combinaciones}) se consultan las 24 sinergias y los 6 poderes supremos ULTRAS disponibles, mientras que la Vitrina de Logros (Figura~\ref{fig:juego-logros}) expone los 29 hitos históricos desbloqueados junto con sus datos curiosos.
     \item \textbf{Pantalla de fin de partida:} Al ser eliminado, el juego presenta un resumen exhaustivo con el tiempo de supervivencia, bajas conseguidas, jefes superados, desglose milimétrico del daño ocasionado por cada arma y recompensas asignadas (Figura~\ref{fig:juego-fin}).
 \end{enumerate}
 
@@ -172,9 +172,11 @@ El acceso al subsistema lúdico se encuentra plenamente integrado en el flujo de
 \label{fig:juego-fin}
 \end{figure}
 
+\ref{fig:juego-menu}--\ref{fig:juego-fin} (16 capturas de \texttt{figs/capturas/juego/}) documentan el manual de usuario del juego.
+
 \section{Sistemas interactivos del juego}
 
-El diseño matemático y funcional del videojuego se fundamenta en un conjunto de subsistemas interconectados cuyas reglas y multiplicadores se encuentran centralizados en el módulo de configuración \texttt{public/js/game/config.js}. La Tabla \ref{tab:sistemas-juego} describe exhaustivamente cada componente.
+El diseño matemático y funcional del videojuego se fundamenta en un conjunto de subsistemas interconectados cuyas reglas y multiplicadores se encuentran centralizados en el módulo de configuración \texttt{public/js/game/config.js}. La Tabla~\ref{tab:sistemas-juego} describe exhaustivamente cada componente.
 
 \begin{longtable}{@{}L{2.8cm} L{7.5cm} L{4.2cm}@{}}
 \caption{Sistemas interactivos del videojuego (Sprint 2).}\label{tab:sistemas-juego}\\
@@ -200,11 +202,11 @@ Paisaje acústico & Síntesis matemática pura en Web Audio sin consumo de archi
 \bottomrule
 \end{longtable}
 
-La Tabla \ref{tab:sistemas-juego} resume los 19 subsistemas del juego.
+\ref{tab:sistemas-juego} resume los 19 subsistemas del juego.
 
 \section{Arquitectura del motor y simulación pura}
 
-El motor del videojuego adopta un desacoplamiento estricto entre la lógica de simulación física del mundo y la capa de representación en pantalla, tal y como se refleja en el diagrama modular de la Figura \ref{fig:arq-motor-juego}.
+El motor del videojuego adopta un desacoplamiento estricto entre la lógica de simulación física del mundo y la capa de representación en pantalla, tal y como se refleja en el diagrama modular de la Figura~\ref{fig:arq-motor-juego}.
 
 \begin{figure}[htbp]
 \centering
@@ -228,66 +230,73 @@ El diseño de la simulación destaca por cuatro pilares de ingeniería:
 \begin{enumerate}
     \item \textbf{Determinismo con paso de tiempo fijo:} La simulación matemática en \texttt{mundo.js} avanza invariablemente en intervalos discretos de $\Delta t = 1/60$ segundos combinados con un generador de números pseudoaleatorios inicializado por semilla. Si el navegador experimenta retrasos en la tasa de refresco, el bucle procesa múltiples pasos de simulación consecutivos antes de renderizar, garantizando que el comportamiento sea idéntico con independencia de los fotogramas por segundo del dispositivo y permitiendo ejecutar pruebas automáticas en entornos Node.js sin navegador.
     \item \textbf{Aislamiento de eventos:} La simulación no interactúa de forma directa con el DOM ni con subsistemas de sonido. Cualquier suceso relevante (subidas de nivel, caída de jefes, activación de sinergias o daño recibido) se emite como un evento estructurado que la capa exterior \texttt{juego.js} traduce a efectos sonoros, partículas y textos accesibles mediante atributos \texttt{aria-live}.
-    \item \textbf{Optimización espacial del rendimiento:} El cálculo de colisiones y detección de obstáculos prescinde de comprobaciones cuadráticas globales, implementando un particionado espacial por cuadrículas indexadas mediante claves numéricas empaquetadas binariamente, lo que acelera la consulta aproximadamente 4,5 veces respecto a la versión inicial con claves de texto.
-    \item \textbf{Renderizado por celdas cacheadas:} El suelo se dibuja generando una textura por celda y ambiente, pintada como máximo una vez por fotograma y por adelantado; los muñecos (16×20 píxeles) se cachean tras su primera generación, evitando recálculos en cada frame.
+    \item \textbf{Optimización espacial del rendimiento:} El cálculo de colisiones y detección de obstáculos prescinde de comprobaciones cuadráticas globales, implementando un particionado espacial por cuadrículas indexadas mediante claves numéricas empaquetadas binariamente, lo que acelera la consulta aproximadamente 4,5 veces frente a la versión inicial con claves de texto.
+    \item \textbf{Texturas de suelo por celda y ambiente:} Cada celda del mapa genera como máximo una textura de suelo por fotograma y por ambiente, pintada por adelantado y cacheada, eliminando los tirones de renderizado observados en versiones previas.
 \end{enumerate}
 
-\section{Servidor del juego y validación anti-trampas}
+\section{Servidor del juego y anti-trampas}
 
-La autoridad sobre la progresión y la equidad competitiva reside en el servidor. El módulo \texttt{src/services/juegoService.js} implementa las siguientes barreras:
-
-\begin{enumerate}
-    \item \textbf{Reloj de servidor y márgenes de credibilidad:} Al iniciar una partida (\texttt{POST /api/juego/partidas}), el servidor registra su propio instante temporal (\texttt{inicio}). Al finalizar (\texttt{POST /api/juego/partidas/:id/fin}), rechaza el resultado si: (a) no coincide con la partida en curso; (b) el tiempo declarado supera al transcurrido en el servidor más 15 segundos de margen; (c) el tiempo supera 4 horas; (d) los jefes, nivel o bajas exceden los límites estadísticos admisibles para ese tiempo (\texttt{jefes $\le$ 3 + t/50}, \texttt{nivel $\le$ 8 + t/3}, \texttt{bajas $\le$ 20·t + 50}).
-    \item \textbf{Validación selectiva de logros:} De los logros que envía el cliente, el servidor solo concede aquellos que puede verificar con su información (tiempo, jefes, bajas, jugador, entrenador); los logros de plantilla los calcula internamente.
-    \item \textbf{Concurrencia optimista en el perfil:} Cada escritura en \texttt{juego\_perfiles} incluye la cláusula \texttt{WHERE version = \$n}; si la actualización afecta 0 filas, se relee el perfil, se recalcula y se reintenta (máximo 3 intentos).
-    \item \textbf{Ranking anonimizado:} La tabla \texttt{juego\_records} almacena la mejor partida de cada usuario con su mote y avatar, nunca el correo electrónico.
-\end{enumerate}
-
-Los diagramas de secuencia de la Figura \ref{fig:sec-partida} (partida completa) y la Figura \ref{fig:sec-contratar} (contratación con concurrencia optimista) ilustran estos flujos.
+El servidor valida cada partida finalizada antes de consolidar el progreso en la base de datos. La Figura~\ref{fig:sec-partida} muestra el flujo completo de una partida (inicio, juego, fin con validación), y la Figura~\ref{fig:sec-contratar} el de contratación con concurrencia optimista.
 
 \begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
   \newthread{jug}{Jugador}
-  \newinst[2]{nav}{Navegador (juego.js)}
-  \newinst[2]{api}{API /api/juego}
+  \newinst[2]{cli}{juego.js (navegador)}
+  \newinst[2]{sim}{mundo.js (simulación)}
+  \newinst[2]{api}{api.js}
+  \newinst[2]{srv}{API /api/juego}
   \newinst[2]{js}{juegoService}
-  \newinst[2]{repo}{juegoRepository}
-  \newinst[2]{db}{PostgreSQL}
-  \begin{call}{jug}{Pulsa Jugar}{nav}{}
-    \begin{call}{nav}{POST /partidas \{personaje, entrenador\}}{api}{201 \{partidaId, stats\}}
-      \begin{call}{api}{iniciarPartida()}{js}{perfil}
-        \begin{call}{js}{perfil + version}{repo}{datos}
-        \end{call}
-        \begin{call}{js}{guardarPerfil(version)}{repo}{ok}
-          \begin{call}{repo}{UPDATE ... WHERE version}{db}{1 fila}
-          \end{call}
-        \end{call}
-      \end{call}
-    \end{call}
+  \newinst[2]{rep}{juegoRepository}
+  \begin{call}{jug}{Jugar (jugador y entrenador elegidos)}{cli}{}
   \end{call}
+  \begin{call}{cli}{iniciar(personaje, entrenador)}{api}{}
+  \end{call}
+  \begin{call}{api}{POST /partidas}{srv}{}
+  \end{call}
+  \begin{call}{srv}{iniciarPartida()}{js}{}
+  \end{call}
+  \begin{call}{js}{perfil + version}{rep}{}
+  \end{call}
+  \begin{call}{js}{¿Está en tu plantilla? partidaActual = \{id, inicio = reloj servidor\}}{js}{}
+  \end{call}
+  \begin{call}{js}{guardarPerfil(version)}{rep}{}
+  \end{call}
+  \mess{srv}{201 \{partidaId, stats entrenamiento\}}{cli}
   \begin{sdblock}{loop}{Cada fotograma (paso fijo 1/60 s)}
-    \mess{nav}{avanzar(entrada)}{nav}
-  \end{sdblock}
-  \begin{call}{jug}{Termina (te eliminan)}{nav}{}
-    \begin{call}{nav}{POST /partidas/:id/fin \{tiempo, nivel, jefes, bajas, logros\}}{api}{200 \{recompensas, logrosNuevos, record, perfil\}}
-      \begin{call}{api}{finalizarPartida()}{js}{resultado}
-        \begin{call}{js}{validar(tiempo, jefes, nivel, bajas)}{js}{creíble}
-        \end{call}
-        \begin{call}{js}{repartirRecompensas()}{js}{fichas, puntos, logros}
-        \end{call}
-        \begin{call}{js}{guardarPerfil(version)}{repo}{ok}
-          \begin{call}{repo}{UPDATE ... WHERE version}{db}{1 fila (reintenta si 0)}
-          \end{call}
-        \end{call}
-        \begin{call}{js}{guardarRecord() si es mejor}{repo}{ok}
-        \end{call}
-      \end{call}
+    \begin{call}{cli}{avanzar(entrada)}{sim}{}
     \end{call}
+    \mess{sim}{eventos (oleada, jefe, mejora, logro...)}{cli}
+    \mess{cli}{Dibujo, HUD, sonido y música}{cli}
+  \end{sdblock}
+  \mess{sim}{estado fin (te eliminan)}{cli}
+  \begin{call}{cli}{terminar(id, tiempo, nivel, jefes, bajas, logros)}{api}{}
   \end{call}
+  \begin{call}{api}{POST /partidas/:id/fin}{srv}{}
+  \end{call}
+  \begin{call}{srv}{finalizarPartida()}{js}{}
+  \end{call}
+  \begin{call}{js}{¿Es la partida en curso? ¿tiempo ≤ transcurrido + 15 s? ¿jefes, nivel, bajas creíbles?}{js}{}
+  \end{call}
+  \begin{sdblock}{alt}{Resultado imposible}
+    \mess{js}{400 «El resultado no es creíble»}{srv}
+    \mess{srv}{400}{api}
+    \mess{api}{ApiError}{cli}
+  \end{sdblock}
+  \begin{sdblock}{else}{Válido}
+    \begin{call}{js}{Reparte jefes, bajas, puntos, fichas; logros creíbles + logros plantilla}{js}{}
+    \end{call}
+    \begin{call}{js}{guardarPerfil(version) (reintenta si otra petición ganó)}{rep}{}
+    \end{call}
+    \begin{call}{js}{guardarRecord() si es su mejor partida}{rep}{}
+    \end{call}
+    \mess{srv}{200 \{recompensas, logrosNuevos, record, perfil\}}{api}
+    \mess{api}{200}{cli}
+    \mess{cli}{Pantalla de fin con estadísticas y logros}{jug}
+  \end{sdblock}
 \end{sequencediagram}}
-\caption{Secuencia de una partida: inicio, bucle de simulación y fin con validación anti-trampas.}
+\caption{Flujo de una partida: inicio, simulación y fin con validación anti-trampas en servidor.}
 \label{fig:sec-partida}
 \end{figure}
 
@@ -300,36 +309,43 @@ Los diagramas de secuencia de la Figura \ref{fig:sec-partida} (partida completa)
   \newinst[2]{js}{juegoService}
   \newinst[2]{db}{juego\_perfiles}
   \begin{call}{p1}{contratar()}{js}{}
-    \begin{call}{js}{SELECT datos, version (v=7)}{db}{perfil}
-    \end{call}
-    \begin{call}{js}{sortea jugador, gasta 1 ficha}{js}{fichado}
-    \end{call}
-    \begin{call}{js}{UPDATE ... WHERE version=7}{db}{1 fila (v=8)}
-    \end{call}
   \end{call}
   \begin{call}{p2}{contratar()}{js}{}
-    \begin{call}{js}{SELECT datos, version (v=7)}{db}{perfil}
-    \end{call}
-    \begin{call}{js}{sortea jugador, gasta 1 ficha}{js}{fichado}
-    \end{call}
-    \begin{call}{js}{UPDATE ... WHERE version=7}{db}{0 filas}
-    \end{call}
-    \begin{call}{js}{reintenta: SELECT (v=8, 0 fichas)}{db}{perfil}
-    \end{call}
-    \mess{js}{409 «No tienes fichas de contrato»}{p2}
   \end{call}
+  \begin{call}{js}{SELECT datos, version (v = 7)}{db}{}
+  \end{call}
+  \begin{call}{js}{SELECT datos, version (v = 7)}{db}{}
+  \end{call}
+  \mess{js}{P1: 1 ficha → sortea jugador}{js}
+  \mess{js}{P2: 1 ficha → sortea jugador}{js}
+  \begin{call}{js}{P1: UPDATE ... WHERE version = 7 → 1 fila (v = 8)}{db}{}
+  \end{call}
+  \begin{call}{js}{P2: UPDATE ... WHERE version = 7 → 0 filas}{db}{}
+  \end{call}
+  \begin{call}{js}{P2 reintenta: SELECT (v = 8, 0 fichas)}{db}{}
+  \end{call}
+  \mess{js}{409 «No tienes fichas de contrato»}{p2}
   \mess{js}{200 \{fichado, logrosNuevos, perfil\}}{p1}
 \end{sequencediagram}}
-\caption{Contratación con concurrencia optimista: la segunda petición falla y se reintenta sin fichas.}
+\caption{Contratación con concurrencia optimista: doble clic no gasta dos fichas.}
 \label{fig:sec-contratar}
 \end{figure}
 
-\section{Logros y equipaciones}
+La validación anti-trampas en \texttt{juegoService.finalizarPartida} comprueba:
+\begin{itemize}
+    \item La partida finalizada es la que está en curso (\texttt{partidaActual}).
+    \item El tiempo no supera lo transcurrido en servidor + 15 s de margen, ni 4 horas.
+    \item Jefes, nivel y bajas son creíbles para ese tiempo (\texttt{jefes ≤ 3 + t/50}, \texttt{nivel ≤ 8 + t/3}, \texttt{bajas ≤ 20·t + 50}).
+    \item De los logros que manda el cliente, solo apunta los que puede comprobar con lo que sabe (tiempo, jefes, bajas, jugador, entrenador); los de plantilla los calcula el servidor.
+\end{itemize}
+Cada escritura del perfil usa concurrencia optimista (\texttt{UPDATE ... WHERE version = \$n}) con reintentos automáticos. El ranking guarda la mejor partida de cada usuario con su mote y avatar, nunca el correo.
 
-El sistema de logros (\texttt{logros.js}) vincula 29 hitos a hechos históricos verificables del Club Atlético de Madrid. Cada logro desbloquea una recompensa narrativa y, en 10 casos, una equipación visual para el vestuario. La Tabla \ref{tab:logros-juego} detalla el catálogo completo.
+\section{Logros}
 
-\begin{longtable}{@{}L{3.5cm} L{7.5cm} L{3.5cm}@{}}
-\caption{Logros del juego y equipaciones desbloqueables.}\label{tab:logros-juego}\\
+La Tabla~\ref{tab:logros} lista los 29 logros con su condición y equipación desbloqueable (fuente: documentacion-tecnica.md §9.6).
+
+\begin{longtable}{@{}L{3.5cm} L{7.0cm} L{4.0cm}@{}}
+\caption{Logros del juego y equipaciones desbloqueables.}\label{tab:logros}\\
 \toprule
 \textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endfirsthead
 \toprule
@@ -366,18 +382,18 @@ Paseo de Leyendas & Ficha a las 8 leyendas &  \\
 \bottomrule
 \end{longtable}
 
-Cada logro esconde un dato real del club (por ejemplo, que Griezmann fue tercero en el Balón de Oro de 2018, que Oblak ganó cinco Zamoras seguidos o que el Atleti nació en 1903 vestido de azul y blanco). Los datos están en \texttt{logros.js} y se han comprobado uno a uno.
+\ref{tab:logros} detalla los 29 logros y 10 equipaciones. Cada logro esconde un dato real del club (p.ej., Griezmann tercero en Balón de Oro 2018, Oblak cinco Zamoras seguidos, Atleti fundado en 1903 de azul y blanco). Los datos están en \texttt{logros.js} y se comprobaron uno a uno.
 
 \section{Evolución por fases}
 
-Cada fase corresponde a una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de \texttt{docs/gestion/README.md}).
+Cada fase es una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de documentacion-tecnica.md). La Tabla~\ref{tab:evolucion-fases} resume qué se añadió y qué problemas resolvió cada fase.
 
 \begin{longtable}{@{}L{2.0cm} L{7.0cm} L{5.5cm}@{}}
 \caption{Evolución del juego por fases (Sprint 2).}\label{tab:evolucion-fases}\\
 \toprule
-\textbf{Fase} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead
+\textbf{Fase} & \textbf{Quién se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead
 \toprule
-\textbf{Fase} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endhead
+\textbf{Fase} & \textbf{Quién se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endhead
 Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú del juego como inicio con sesión & La interfaz del sprint era funcional pero sobria \\
 1 & Survivor base: simulación, oleadas, armas, mejoras, jefes y menú con el muñeco paseando & — \\
 2 & Club en el servidor (plantilla, contratos, entrenamiento), ranking de la grada, élites y poderes nuevos & Progreso ligado a la cuenta y validado \\
@@ -387,3 +403,5 @@ Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú 
 6 & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles \\
 \bottomrule
 \end{longtable}
+
+\ref{tab:evolucion-fases} muestra las 7 fases (Rediseño + 6 fases de contenido) del Sprint 2.

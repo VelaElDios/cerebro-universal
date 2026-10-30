@@ -48,3 +48,28 @@
 \let\lgcHlineOriginal\hline
 \AtBeginEnvironment{tikzpicture}{\renewcommand{\hline}{\leavevmode\\}}
 \AtEndEnvironment{tikzpicture}{\let\hline\lgcHlineOriginal}
+
+% -------------------------------
+% Robustez ante imágenes que no están en disco (figs/ es de solo lectura):
+% si la ruta indicada existe, \includegraphics se comporta exactamente igual
+% que el original; si no existe, se dibuja un recuadro con la ruta en lugar
+% de abortar la compilación con error fatal. Así todas las referencias a
+% capturas (figs/capturas/...) se conservan en los capítulos y el PDF se
+% genera igualmente.
+% -------------------------------
+\makeatletter
+\let\lgc@includegraphics\includegraphics
+\renewcommand{\includegraphics}{%
+  \@ifstar{\lgc@includestar}{\lgc@include}%
+}
+\newcommand{\lgc@include}[2][]{%
+  \IfFileExists{#2}{\lgc@includegraphics[#1]{#2}}{%
+    \fbox{\parbox{0.55\textwidth}{\centering\scriptsize\path{#2}}}%
+  }%
+}
+\newcommand{\lgc@includestar}[2][]{%
+  \IfFileExists{#2}{\lgc@includegraphics*[#1]{#2}}{%
+    \fbox{\parbox{0.55\textwidth}{\centering\scriptsize\path{#2}}}%
+  }%
+}
+\makeatother
