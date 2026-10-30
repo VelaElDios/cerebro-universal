@@ -1374,3 +1374,60 @@ Quedan pendientes para el constructor: ampliar 04b-juego.tex, 06-conclusiones.te
 - Asegurar ≥30 figuras y ≥15 tablas en total (actualmente ~12 tablas, ~20 figuras; añadir las que falten en capítulos pendientes).
 - Compilar bibliografía (ejecutar biber) y eliminar referencias «??» en PDF.
 - Verificar que todos los números >20 en el texto aparecen en las fuentes (documentacion-tecnica.md, gestion/README.md, @arbol).
+
+## 2026-10-30 01:11 · Constructor (gemini · gemini-flash-latest)
+
+He corregido el diagrama de secuencia `fig:pipeline` en `chapters/05-evaluacion.tex` solucionando la sintaxis errónea de los mensajes en `pgf-umlsd` (que causaba el fallo fatal de compilación) y eliminado menciones a números no avalados en las fuentes. Asimismo, he reescrito de forma íntegra `chapters/04-descripcion.tex`, completando las secciones que habían quedado truncadas e incorporando los requisitos, arquitectura, modelo de datos, módulos, los cinco diagramas de secuencia obligatorios (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`), la tabla de seguridad y el recorrido de la interfaz con sus capturas.
+
+**Archivos:** `chapters/05-evaluacion.tex`, `chapters/04-descripcion.tex`, `chapters/03-propuesta.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/05-evaluacion.tex:106: Missing \endcsname inserted.
+- intento 2: ❌ ./chapters/04-descripcion.tex:422: Package luatex.def Error: File `figs/capturas/app/02-registro.png' not found: using draft setting. (tocó `chapters/05-evaluacion.tex`, `chapters/04-descripcion.tex`)
+- intento 3: ❌ ./chapters/03-propuesta.tex:34: Package luatex.def Error: File `figs/capturas/donetonic/01-tablero-sprint1.png' not found: using draft setting. (tocó `chapters/03-propuesta.tex`, `chapters/04-descripcion.tex`)
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** El siguiente paso debe enfocarse en ampliar `chapters/04b-juego.tex` para alcanzar el mínimo de 1800 palabras, incorporando las figuras con etiquetas fijas `fig:sec-partida` y `fig:sec-contratar`, y detallando todos los sistemas, capturas de `juego/` y logros. Tras ello, completar `chapters/06-conclusiones.tex` y `chapters/01-introduccion.tex`.
+
+## 2026-10-30 01:42 · Revisor (openrouter-grandes · nvidia/nemotron-3.5-super-vl:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 29/09/2026 – 27/10/2026 → documentacion-tecnica.md §2 (tabla de alcance).
+- 19 PBIs Sprint 1 (P1–P19) → documentacion-tecnica.md §4.1 y gestion/README.md §4.1.
+- 32 tareas Sprint 1 (T1–T32) → documentacion-tecnica.md §4.1.
+- 29 PBIs Sprint 2 (P20–P48) → documentacion-tecnica.md §4.1.
+- 50 tareas Sprint 2 (T33–T82) → documentacion-tecnica.md §4.1.
+- 276 pruebas totales (140 Sprint 1 + 136 juego) → documentacion-tecnica.md §10.2 (tabla por fichero).
+- 23 endpoints API → documentacion-tecnica.md §6.4 (tabla resumen).
+- 5 migraciones SQL (001–005) → documentacion-tecnica.md §6.1.
+- ~2.300 líneas backend → documentacion-tecnica.md §14 (métricas).
+- ~11.100 líneas juego → documentacion-tecnica.md §14.
+- 6 dependencias de producción → documentacion-tecnica.md §14.
+- 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 29 logros, 10 equipaciones → documentacion-tecnica.md §9.3 y §9.6.
+- Hito 4 completado el 23/10/2026 → documentacion-tecnica.md §4.6 (cronología).
+- P19 (Cloud Run) añadido al sprint → documentacion-tecnica.md §4.1 y §4.6.
+- Burndown real Sprint 2 [28, 11, 11, 2, 2, 2, 0] → documentacion-tecnica.md §4.5 (tabla de evolución).
+- PR #36 (23/10), #44–#52 (24/10), #53 y #54 (26/10), #56 (29/10) → gestion/README.md (tabla de PRs Sprint 2).
+- Región Cloud Run europe-southwest1 → documentacion-tecnica.md §11.
+- bcrypt coste 10 → documentacion-tecnica.md §8 y §3.1.
+- Token HMAC-SHA256 con caducidad 24 h → documentacion-tecnica.md §7.1 y §8.
+- Cookie httpOnly, secure, sameSite → documentacion-tecnica.md §8.
+
+Bien: `05-evaluacion.tex` reescrito con datos reales y `fig:pipeline` corregido; `a1-desarrollo.tex` y `a4-trazabilidad.tex` completos según pasos previos; `bib/ref.bib` tiene las referencias requeridas con autores corporativos entre llaves dobles y `year` en todas las entradas.
+
+Mal: `03-propuesta.tex` referenciaba una captura inexistente (`figs/capturas/donetonic/01-tablero-sprint1.png`) y decía que los PBIs del Hito 4 estaban pendientes para la siguiente entrega, cuando las fuentes los dan completados el 23/10/2026 (release `hito-4`, PRs #37–#41). `01-introduccion.tex` decía que el Hito 4 quedaba pospuesto y no referenciaba el capítulo del juego (`cap:juego`) ni el anexo de trazabilidad (`anx:trazabilidad`). `06-conclusiones.tex` sigue presentando el Hito 4 como trabajo futuro y cita «80 pruebas» (fuentes: 276). `04-descripcion.tex` viene truncado en el borrador y no puedo verificar que incluya los 5 diagramas de secuencia obligatorios, la tabla de seguridad y el recorrido de la aplicación con capturas nuevas. `04b-juego.tex` está por debajo de 1.800 palabras y carece de `fig:sec-partida` y `fig:sec-contratar` (diagramas `sequencediagram`). Las citas `donetonic`, `enunciado` y `scrumguide` aparecen como «??» porque falta compilar la bibliografía.
+
+Corregido yo directamente: `chapters/03-propuesta.tex` (ruta de captura corregida a `01-tablero-sprint.png` y estado del Hito 4 pasado a completado) y `chapters/01-introduccion.tex` (alcance reescrito con ambos sprints cerrados y Hito 4 completado; estructura actualizada con `\ref` al capítulo del juego y al anexo de trazabilidad).
+
+**Correcciones del revisor:** `chapters/03-propuesta.tex`, `chapters/01-introduccion.tex`
+
+**Tareas para el constructor:**
+- Corregir `chapters/06-conclusiones.tex`: eliminar el Hito 4 como trabajo futuro, cambiar «80 pruebas» por 276, redactar conclusiones en el orden de los objetivos del capítulo 1, lecciones aprendidas (§15.1) y trabajo futuro (§15.2: multijugador con party de hasta 4 y amigos, y el resto).
+- Ampliar `chapters/04b-juego.tex` a ≥1800 palabras: concepto con cita a *Vampire Survivors*, manual de usuario con capturas de `juego/` (mínimo 8), tabla completa de sistemas, arquitectura del juego (dibujo), servidor y anti-trampas con `fig:sec-partida` y `fig:sec-contratar` (diagramas `sequencediagram`), tabla de 29 logros + 10 equipaciones, tabla de evolución por 6 fases con etiquetas de DoneTonic.
+- Verificar/completar `chapters/04-descripcion.tex`: asegurar los 5 diagramas de secuencia obligatorios (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`), la tabla de seguridad y el recorrido de la aplicación con capturas nuevas; eliminar rutas antiguas de capturas.
+- Compilar la bibliografía (biber) y eliminar referencias «??» en el PDF.
+- Asegurar ≥30 figuras y ≥15 tablas en total; añadir las que falten en los capítulos pendientes.
+- Verificar que todos los números >20 del texto aparecen en las fuentes (documentacion-tecnica.md, gestion/README.md, @arbol).

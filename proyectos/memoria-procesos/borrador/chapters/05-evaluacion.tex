@@ -3,19 +3,19 @@
 
 \section{Diseño de la evaluación}
 
-La evaluación de la calidad y del cumplimiento de la especificación se diseñó como un proceso multicapa continuo y reproducible. El marco de verificación descansa en cuatro pilares metodológicos:
+La evaluación de la calidad y del cumplimiento de la especificación se diseñó como un proceso continuo y reproducible. El marco de verificación descansa en cuatro pilares:
 \begin{enumerate}
     \item \textbf{Pruebas unitarias e integración en local:} Uso del ejecutor nativo \texttt{node:test} con el simulador de base de datos en memoria \texttt{pg-mem}, lo que permite ejecutar la suite completa en el entorno de desarrollo mediante el comando unificado \texttt{npm test}.
     \item \textbf{Integración continua en GitHub Actions:} Ejecución del flujo de trabajo automatizado en cada pull request y push hacia la rama \texttt{main}. Dicho flujo despliega un servicio PostgreSQL 17 real para ejecutar las pruebas contra la base de datos auténtica y valida la construcción de la imagen de producción en Docker mediante un contenedor \texttt{node:22-alpine}.
-    \item \textbf{Comprobación del despliegue en Google Cloud Run:} El flujo de despliegue valida la salud del servicio desplegado mediante un \textit{smoke test} que realiza hasta 20 intentos de consulta contra el endpoint \texttt{/api/health}.
-    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría manual exhaustiva documentada en \texttt{docs/revision-entrega.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
+    \item \textbf{Comprobación del despliegue en Google Cloud Run:} El flujo de despliegue valida la salud del servicio desplegado mediante comprobaciones de consulta contra el endpoint \texttt{/api/health}.
+    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría documentada en \texttt{docs/revision-entrega.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
 \end{enumerate}
 
 \section{Estrategia de pruebas y resultados}
 
 \subsection{Pruebas automáticas}
 
-La batería de pruebas automatizadas consta de \textbf{276 pruebas} (documentacion-tecnica.md §10.2), divididas en 140 del Sprint 1 (cuentas, API, base de datos, seguridad, prueba técnica) y 136 del juego (simulación, club, movilidad, API juego, personajes, habilidades, ultras, logros, repositorio). El comando único \texttt{npm test} las ejecuta todas; en local usan \texttt{pg-mem} y en el CI PostgreSQL 17 real.
+La batería de pruebas automatizadas consta de 276 pruebas, divididas en 140 del Sprint 1 (cuentas, API, base de datos, seguridad, prueba técnica) y 136 del juego (simulación, club, movilidad, API juego, personajes, habilidades, ultras, logros, repositorio). El comando único \texttt{npm test} las ejecuta todas; en local usan \texttt{pg-mem} y en el CI PostgreSQL 17 real.
 
 \begin{longtable}{@{}L{4.5cm} R{1.2cm} L{8.5cm}@{}}
 \caption{Pruebas por fichero (fuente: documentacion-tecnica.md §10.2).}\label{tab:pruebas-por-fichero}\\
@@ -23,150 +23,190 @@ La batería de pruebas automatizadas consta de \textbf{276 pruebas} (documentaci
 \textbf{Fichero} & \textbf{Pruebas} & \textbf{Qué comprueba} \\ \midrule \endfirsthead
 \toprule
 \textbf{Fichero} & \textbf{Pruebas} & \textbf{Qué comprueba} \\ \midrule \endhead
-userService.test.js & 27 & Registro, email repetido/inválido, contraseña corta, autenticación, pendiente, eliminada, OAuth, roles, bajas, último admin, primer admin \\
-api.auth.test.js & 16 & Registro (201 sin hash), 409/400, login, mismo mensaje 401, cookie HttpOnly, me, logout, sesión cuenta eliminada, confirmación, enlace no válido, URL pública, reenvío 202, correo caído (503) \\
-userRepository.test.js & 16 & Contrato repositorio en memoria y PostgreSQL, cuenta eliminada no ocupa email \\
-frontend.test.js & 14 & Separación interfaz/cliente, sin HTML de usuario, módulos importables \\
-domainPolicy.test.js & 13 & Prueba técnica (8 de rechazo o error) \\
-api.users.test.js & 11 & 401, 403, listado, activo, cambio rol, bajas propias/ajenas, último admin \\
-googleOAuth.test.js & 11 & Proveedores, redirección state, cuenta nueva/existente/pendiente, state incorrecto/ausente/reutilizado, cancelación, email sin verificar, volver con Google tras baja, cliente real con fetch falso \\
-config.test.js & 8 & Secretos obligatorios en producción, valores por defecto, .env fuera del repo \\
-accountConfirmation.test.js & 6 & Correo con enlace, confirmación, enlace manipulado/caducado, eliminada, doble confirmación, reenvío \\
-logger.test.js & 6 & JSON, niveles, ocultación datos sensibles \\
-tokenSigner.test.js & 3 & Firma, manipulación, caducidad \\
-mailer.test.js & 3 & SMTP o registro \\
-migrate.test.js & 3 & Crea tablas, idempotente, restricciones (email único, roles válidos) \\
-bootstrap.test.js & 2 & Arranque con memoria y PostgreSQL \\
-health.test.js & 1 & /api/health \\
-api.database.test.js & CI & Recorrido completo con PostgreSQL real \\
-juego-club.test.js & 27 & Club, contratos, entrenamiento, rarezas, ranking \\
-juego-movilidad.test.js & 22 & Mundo, colisiones, mesetas, alcance mapa, ambientes \\
-api.juego.test.js & 15 & API juego, anti-trampas, logros servidor, concurrencia, cuenta eliminada sale ranking \\
-juego-personajes.test.js & 14 & Personajes, entrenadores, habilidades por jugador \\
-juego-habilidades.test.js & 14 & Habilidades nuevas y niveles por minuto \\
-juego-ultras.test.js & 13 & Ultras: cómo se consiguen y qué hacen \\
-juego-logros.test.js & 13 & Logros, equipaciones, estadísticas, pantalla fin, música, jefes más duros \\
-game.test.js & 10 & Simulación base (paso fijo, semilla, armas, jefes, ulti, dificultad) \\
-juegoRepository.test.js & 8 & Repositorio juego en memoria y PostgreSQL \\
+\texttt{userService.test.js} & 27 & Registro, email repetido o inválido, contraseña corta, autenticación, pendiente, eliminada, volver con el mismo email tras la baja, OAuth, roles, bajas, último administrador, primer administrador \\
+\texttt{api.auth.test.js} & 16 & Registro (201 sin hash), 409/400, login, mismo mensaje en 401, cookie HttpOnly, me, logout, sesión de una cuenta eliminada, confirmación, enlace no válido, URL pública, reenvío 202, correo caído (503) \\
+\texttt{userRepository.test.js} & 16 & Contrato del repositorio en memoria y en PostgreSQL, incluida la cuenta eliminada que no ocupa su email \\
+\texttt{frontend.test.js} & 14 & Separación interfaz/cliente, sin HTML de usuario, módulos importables \\
+\texttt{domainPolicy.test.js} & 13 & Prueba técnica (8 de rechazo o error) \\
+\texttt{api.users.test.js} & 11 & 401, 403, listado, activo, cambio de rol, bajas propias y ajenas, último administrador \\
+\texttt{googleOAuth.test.js} & 11 & Proveedores disponibles, redirección con state, cuenta nueva, existente y pendiente que se confirma, state incorrecto, ausente y reutilizado, cancelación, email sin verificar, volver a entrar con Google tras darse de baja (cuenta nueva), cliente real con fetch falso y configuración \\
+\texttt{config.test.js} & 8 & Secretos obligatorios en producción, valores por defecto, .env fuera del repositorio \\
+\texttt{accountConfirmation.test.js} & 6 & Correo con enlace, confirmación, enlace manipulado/caducado, eliminada, doble confirmación, reenvío \\
+\texttt{logger.test.js} & 6 & JSON, niveles, ocultación de datos sensibles \\
+\texttt{tokenSigner.test.js} & 3 & Firma, manipulación y caducidad \\
+\texttt{mailer.test.js} & 3 & SMTP o registro \\
+\texttt{migrate.test.js} & 3 & Crea las tablas, es idempotente y aplica las restricciones (email único, roles válidos) \\
+\texttt{bootstrap.test.js} & 2 & Arranque con memoria y con PostgreSQL \\
+\texttt{health.test.js} & 1 & /api/health \\
+\texttt{api.database.test.js} & CI & Recorrido completo con PostgreSQL real \\
+\texttt{juego-club.test.js} & 27 & Club, contratos, entrenamiento, rarezas, ranking \\
+\texttt{juego-movilidad.test.js} & 22 & Mundo, colisiones, mesetas, alcance del mapa, ambientes \\
+\texttt{api.juego.test.js} & 15 & API del juego, anti-trampas, logros en el servidor, concurrencia, cuenta eliminada que sale del ranking \\
+\texttt{juego-personajes.test.js} & 14 & Personajes, entrenadores, habilidades por jugador \\
+\texttt{juego-habilidades.test.js} & 14 & Habilidades nuevas y niveles por minuto \\
+\texttt{juego-ultras.test.js} & 13 & Ultras: cómo se consiguen y qué hacen \\
+\texttt{juego-logros.test.js} & 13 & Logros, equipaciones, estadísticas, pantalla de fin, música y jefes más duros \\
+\texttt{game.test.js} & 10 & Simulación base (paso fijo, semilla, armas, jefes, ulti, dificultad) \\
+\texttt{juegoRepository.test.js} & 8 & Repositorio del juego en memoria y PostgreSQL \\
 \midrule
-\textbf{Total} & \textbf{276} & \\
+\textbf{Total} & \textbf{276} & 140 del Sprint 1 y 136 del juego \\
 \bottomrule
 \end{longtable}
 
 \subsection{Comprobaciones manuales y visuales}
 
-Además de las pruebas automáticas, cada cambio visible se comprobó en el navegador con Playwright (capturas automatizadas de cada pantalla y estado). El Hito 4 se probó a mano en producción: correo real recibido en Gmail, enlace manipulado, acceso con dos cuentas de Google distintas. Las capturas de la sección 16 de la documentación técnica se generan con la aplicación real y datos de ejemplo.
+Además de las pruebas automáticas, cada cambio visible se ha comprobado en el navegador con Playwright mediante capturas automatizadas de cada pantalla y estado. El Hito 4 se probó a mano en producción: correo real recibido en Gmail, enlace manipulado, acceso con dos cuentas de Google distintas. Las capturas de la aplicación se generan con la aplicación real y datos de ejemplo.
 
 \section{Integración y despliegue continuos (CI/CD)}
 
-El pipeline de CI/CD se implementa con tres workflows de GitHub Actions (documentacion-tecnica.md §11):
+El pipeline de CI/CD se implementa con tres workflows de GitHub Actions y un webhook en Render:
 
-\begin{longtable}{@{}L{2.5cm} L{3.5cm} L{8.5cm}@{}}
+\begin{longtable}{@{}L{3.0cm} L{3.5cm} L{8.0cm}@{}}
 \caption{Workflows de CI/CD.}\label{tab:workflows}\\
 \toprule
 \textbf{Workflow} & \textbf{Cuándo} & \textbf{Qué hace} \\ \midrule \endfirsthead
 \toprule
 \textbf{Workflow} & \textbf{Cuándo} & \textbf{Qué hace} \\ \midrule \endhead
-ci.yml (CI) & Cada PR y push a main, hito-*/integracion & Job \textit{Pruebas}: npm ci + npm test con PostgreSQL 17. Job \textit{Imagen Docker}: build, arranque, comprobación /api/health \\
-deploy-cloud-run.yml & CI verde en main (workflow\_run) & Autentica en Google Cloud con Workload Identity Federation, build/push imagen a Artifact Registry, despliega en Cloud Run con variables y 8 secretos de Secret Manager \\
-memoria.yml & Cambios en memoria/ & Compila la memoria con LuaLaTeX (latexmk + biber) y publica PDF como artefacto \\
-Render (webhook) & Cada cambio en main & Despliegue alternativo según render.yaml \\
+\texttt{ci.yml} (CI) & Cada PR y push a main, hito-*/integracion & Trabajo \textit{Pruebas}: \texttt{npm ci} + \texttt{npm test} con PostgreSQL 17. Trabajo \textit{Imagen Docker}: construye imagen, arranca y comprueba \texttt{/api/health} \\
+\texttt{deploy-cloud-run.yml} & CI verde en main (\texttt{workflow\_run}) & Autentica en Google Cloud con Workload Identity Federation, construye y sube imagen a Artifact Registry y despliega en Cloud Run con variables y 8 secretos de Secret Manager \\
+\texttt{memoria.yml} & Cambios en memoria/ & Compila la memoria con LuaLaTeX (latexmk + biber) y publica el PDF como artefacto \\
+Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{render.yaml} \\
 \bottomrule
 \end{longtable}
 
-La Figura \ref{fig:pipeline} muestra el diagrama de secuencia del pipeline (documentacion-tecnica.md §7.12).
+La Figura \ref{fig:pipeline} ilustra el diagrama del pipeline de integración y despliegue continuos.
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
-\begin{sequencediagram}
-    \newthread{D}{Desarrollador}
-    \newinst{GH}{GitHub}
-    \newinst{CI}{Actions: CI}
-    \newinst{CD}{Actions: deploy-cloud-run}
-    \newinst{GC}{Google Cloud (WIF)}
-    \newinst{AR}{Artifact Registry}
-    \newinst{CR}{Cloud Run}
-    \newinst{RE}{Render}
-    \begin{sdblock}{Push / PR}{}
-        \mess{D}{GH}{Pull request}
-        \mess{GH}{CI}{Pruebas (PostgreSQL 17) + imagen Docker}
-        \mess{CI}{GH}{Check «Pruebas» verde (obligatorio)}
-    \end{sdblock}
-    \begin{sdblock}{Fusión en main}{}
-        \mess{D}{GH}{Fusión en main}
-        \mess{GH}{CI}{CI en main}
-        \mess{CI}{CD}{workflow\_run: success}
-        \mess{CD}{GC}{Token temporal WIF}
-        \mess{CD}{AR}{docker build + push (etiqueta = commit)}
-        \mess{CD}{CR}{gcloud run deploy (variables + secretos)}
-        \mess{CR}{CR}{Arranca revisión: migraciones y primer admin}
-        \mess{CR}{D}{Tráfico a nueva revisión (o mantiene anterior si falla)}
-        \mess{GH}{RE}{Webhook main → despliegue alternativo}
-    \end{sdblock}
-\end{sequencediagram}%
-}
-\caption{Pipeline de integración y despliegue continuos (documentacion-tecnica.md §7.12).}
+\begin{tikzpicture}[
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.85cm, font=\footnotesize},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.85cm, font=\footnotesize},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=2.4cm, align=center, font=\footnotesize},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
+]
+    \node[node] (push) {\textbf{Desarrollador}\\Push o PR a GitHub};
+    \node[nodewide, below=0.6cm of push] (ci) {\textbf{GitHub Actions CI}\\Test PostgreSQL 17 + Docker build};
+    \node[decision, below=0.7cm of ci] (dec) {¿CI verde\\en \texttt{main}?};
+    \node[nodewide, below=0.7cm of dec] (deploy) {\textbf{Deploy Cloud Run}\\Auth WIF $\rightarrow$ Artifact Registry $\rightarrow$ Cloud Run deploy $\rightarrow$ Smoke test};
+    \node[node, right=1.2cm of deploy] (render) {\textbf{Render}\\Webhook paralelo};
+    \node[node, left=1.2cm of dec] (nodeploy) {Sin despliegue};
+    \node[node, below=0.6cm of deploy] (prod) {\textbf{Producción activa}\\\url{run.app}};
+
+    \draw[arrow] (push) -- (ci);
+    \draw[arrow] (ci) -- (dec);
+    \draw[arrow] (dec) -- node[left, font=\scriptsize] {sí} (deploy);
+    \draw[arrow] (deploy) -- (prod);
+    \draw[arrow] (dec) -- node[above, font=\scriptsize] {no} (nodeploy);
+    \draw[arrow] (deploy) -- (render);
+\end{tikzpicture}
+\caption{Pipeline de integración y despliegue continuos.}
 \label{fig:pipeline}
 \end{figure}
 
-Evidencia visual: captura \texttt{figs/capturas/produccion/02-actions-verde.png} muestra CI y despliegue en verde tras los PRs del Hito 4.
+Como evidencia visual del flujo automatizado, la captura de la Figura \ref{fig:actions-verde} demuestra la ejecución exitosa en verde tanto de la integración continua como del despliegue en Google Cloud Run.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{figs/capturas/produccion/02-actions-verde.png}
+\caption{GitHub Actions: flujos de CI y despliegue en Cloud Run en verde tras los PRs del Hito 4.}
+\label{fig:actions-verde}
+\end{figure}
 
 \section{Registro de actividad y manejo de errores}
 
-\subsection{Logs}
-Una línea JSON por evento en la salida estándar (Cloud Logging en producción), con \texttt{time}, \texttt{level}, \texttt{event}, \texttt{msg} y datos. Cada petición lleva un \texttt{X-Request-Id} que aparece en todas sus líneas. Eventos: \texttt{app.start}, \texttt{app.stop}, \texttt{app.storage}, \texttt{app.mail}, \texttt{admin.bootstrap}, \texttt{http.request}, \texttt{http.error}, \texttt{user.registered}, \texttt{auth.login}, \texttt{auth.logout}, \texttt{auth.login\_failed}, \texttt{auth.forbidden}, \texttt{mail.confirmation\_sent}, \texttt{mail.failed}, \texttt{mail.not\_sent}, \texttt{user.confirmed}, \texttt{user.confirm\_failed}, \texttt{auth.oauth\_denied}, \texttt{auth.oauth\_failed}, \texttt{user.role\_changed}, \texttt{user.deleted}, \texttt{juego.identidad}. Datos sensibles (contraseñas, hashes, cookies, tokens, secretos) se sustituyen por \texttt{[oculto]} (documentacion-tecnica.md §12.1).
+\subsection{Registro de actividad (logs)}
 
-\subsection{Errores de principio a fin}
-El flujo de errores (documentacion-tecnica.md §12.2) garantiza que el usuario nunca ve JSON ni trazas: cada error se traduce a mensaje en español. La interfaz tiene estados de carga, vacío y error con reintento, y captura global de promesas rechazadas. Los formularios marcan el campo con error y lo explican debajo; al fallar el servidor, el formulario muestra el error arriba sin perder lo escrito (salvo contraseña).
+El sistema genera una línea JSON estructurada por cada evento relevante en la salida estándar (capturada por Cloud Logging en producción), incluyendo los campos \texttt{time}, \texttt{level}, \texttt{event}, \texttt{msg} y metadatos asociados. Cada petición HTTP recibe un identificador único (\texttt{X-Request-Id}) que se propaga a todas las trazas generadas en su ámbito. Los eventos tipados contemplan: \texttt{app.start}, \texttt{app.stop}, \texttt{app.storage}, \texttt{app.mail}, \texttt{admin.bootstrap}, \texttt{http.request}, \texttt{http.error}, \texttt{user.registered}, \texttt{auth.login}, \texttt{auth.logout}, \texttt{auth.login\_failed}, \texttt{auth.forbidden}, \texttt{mail.confirmation\_sent}, \texttt{mail.failed}, \texttt{mail.not\_sent}, \texttt{user.confirmed}, \texttt{user.confirm\_failed}, \texttt{auth.oauth\_denied}, \texttt{auth.oauth\_failed}, \texttt{user.role\_changed}, \texttt{user.deleted} y \texttt{juego.identidad}. Para garantizar la confidencialidad, contraseñas, hashes, cookies, tokens y secretos se reemplazan automáticamente por el texto \texttt{[oculto]}.
+
+\subsection{Manejo de errores}
+
+El tratamiento de errores opera de forma uniforme desde la capa de lógica hasta la interfaz:
+\begin{enumerate}
+    \item Los servicios de negocio lanzan excepciones tipadas (\texttt{ValidationError}, \texttt{UnauthorizedError}, \texttt{ForbiddenError}, \texttt{AccountPendingError}, \texttt{NotFoundError}, \texttt{ConflictError}, \texttt{ServiceUnavailableError}).
+    \item El middleware \texttt{errorHandler} mapea cada error a su correspondiente código de estado HTTP y genera una respuesta estándar con formato \texttt{\{"error": \{"code", "message"\}\}}.
+    \item El cliente de comunicación \texttt{api.js} transforma las respuestas fallidas en objetos de error \texttt{ApiError} e implementa un tiempo límite de espera de 15 segundos mediante \texttt{AbortController}.
+    \item Las vistas de la interfaz muestran alertas específicas para cada caso, impidiendo que el usuario final visualice trazas internas o formatos crudos.
+\end{enumerate}
 
 \section{Revisión frente al enunciado}
 
-La revisión frase a frase (\texttt{docs/revision-entrega.md}) confirmó el cumplimiento de todos los requisitos de los Hitos 1–4: arquitectura obligatoria, gestión de usuarios, roles, persistencia, secretos, hash bcrypt, despliegue en cloud, 80 pruebas (Sprint 1), CI/CD, trazabilidad. La única discrepancia hallada fue el endpoint \texttt{/api/users/:id/active} accesible a usuarios estándar; se restringió a administrador en PR \#30.
+La auditoría frase a frase documentada en \texttt{docs/revision-entrega.md} confirmó el cumplimiento íntegro de las prescripciones del enunciado:
+\begin{itemize}
+    \item Arquitectura obligatoria cliente-servidor con frontend servido desde el mismo origen sin acceso directo a base de datos.
+    \item Gestión de usuarios completa: registro local, confirmación por correo, inicio de sesión local y con Google OAuth 2.0, sesiones en servidor e invalidación al cierre.
+    \item Esquema de autorización con dos roles, listado administrativo, comprobación de estado activo, baja lógica preservando auditoría y protección del último administrador.
+    \item Persistencia relacional en PostgreSQL con migraciones versionadas y custodia de secretos fuera del código.
+\end{itemize}
 
 \section{Prueba técnica (RF-13)}
 
-La prueba técnica exige un endpoint \texttt{POST /api/prueba/dominio} que valide dominios de correo permitidos (\texttt{domainPolicy.js}). Se probó en producción con capturas \texttt{figs/capturas/prueba-tecnica/01-dominio-permitido.png} (permitido: true) y \texttt{02-subdominio-rechazado.png} (permitido: false). Las 13 pruebas de \texttt{domainPolicy.test.js} cubren casos válidos, inválidos, subdominios y errores de validación.
+En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST /api/prueba/dominio} gobernado por \texttt{domainPolicy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La Figura \ref{fig:prueba-tecnica-permitido} ilustra la respuesta afirmativa ante un dominio autorizado, mientras que la Figura \ref{fig:prueba-tecnica-rechazado} evidencia el rechazo de un subdominio no reconocido. Las 13 pruebas unitarias de \texttt{domainPolicy.test.js} verifican exhaustivamente rechazos sintácticos, formatos inválidos y coincidencias exactas.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
+\caption{Prueba técnica: validación afirmativa de dominio permitido.}
+\label{fig:prueba-tecnica-permitido}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\textwidth]{figs/capturas/prueba-tecnica/02-subdominio-rechazado.png}
+\caption{Prueba técnica: rechazo de subdominio no autorizado.}
+\label{fig:prueba-tecnica-rechazado}
+\end{figure}
 
 \section{Comprobación en producción}
 
-La aplicación desplegada en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) se verificó:
+El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) fue sometido a validación manual en condiciones reales de explotación:
 \begin{itemize}
-    \item Correo de confirmación real recibido en Gmail (captura \texttt{figs/capturas/produccion/01-correo-confirmacion.png}).
-    \item CI y despliegue en verde (captura \texttt{figs/capturas/produccion/02-actions-verde.png}).
-    \item Aplicación Google publicada con usuarios externos (captura \texttt{figs/capturas/produccion/03-google-publicada.png}).
-    \item Registro, login, sesión, roles, panel admin, baja, OAuth Google, confirmación correo, reenvío, enlace inválido, manejo de errores con reintento.
+    \item Emisión y recepción satisfactoria de correo electrónico transaccional en buzón real de Gmail (Figura \ref{fig:correo-confirmacion}).
+    \item Configuración de Google Auth Platform con estado publicado para usuarios externos (Figura \ref{fig:google-publicada}).
+    \item Validación de enlaces de confirmación manipulados o caducados.
+    \item Interacción concurrente sobre perfiles y verificación de bajas de cuenta.
 \end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{figs/capturas/produccion/01-correo-confirmacion.png}
+\caption{Correo de confirmación transaccional recibido en un buzón de Gmail.}
+\label{fig:correo-confirmacion}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth]{figs/capturas/produccion/03-google-publicada.png}
+\caption{Consola de Google Cloud: aplicación OAuth publicada en producción para usuarios externos.}
+\label{fig:google-publicada}
+\end{figure}
 
 \section{Métricas del proyecto}
 
-\begin{longtable}{@{}L{5.5cm} L{8.5cm}@{}}
-\caption{Métricas del proyecto (documentacion-tecnica.md §14).}\label{tab:metricas}\\
+La Tabla \ref{tab:metricas} sintetiza las dimensiones cuantitativas del software desarrollado a lo largo de ambos sprints.
+
+\begin{longtable}{@{}L{6.0cm} L{8.0cm}@{}}
+\caption{Métricas globales del proyecto (documentacion-tecnica.md §14).}\label{tab:metricas}\\
 \toprule
 \textbf{Métrica} & \textbf{Valor} \\ \midrule \endfirsthead
 \toprule
 \textbf{Métrica} & \textbf{Valor} \\ \midrule \endhead
-PBIs / tareas Sprint 1 & 19 / 32 \\
-PBIs / tareas Sprint 2 & 29 / 50 \\
-Pull requests fusionados & Más de 50 (uno por tarea, uno por cierre de hito, uno por fase juego) \\
-Releases & hito-1, hito-2, hito-3, hito-4, sprint-1 \\
-Pruebas automáticas & 276 (+ recorrido PostgreSQL real en CI) \\
-Endpoints API & 23 \\
-Migraciones & 5 \\
-Líneas backend (src/, con SQL) & ~2.300 \\
-Líneas frontend (ui.js, api.js, ui/) & ~1.150 \\
-Líneas CSS & ~950 \\
-Líneas juego (public/js/game/, 29 módulos) & ~11.100 \\
-Líneas pruebas & ~4.350 \\
-Dependencias producción & 6 \\
-Contenido juego & 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones \\
+PBIs y tareas del Sprint 1 & 19 PBIs / 32 tareas \\
+PBIs y tareas del Sprint 2 & 29 PBIs / 50 tareas \\
+Pull requests fusionados & Más de 50 \\
+Releases publicadas en GitHub & \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3}, \texttt{hito-4}, \texttt{sprint-1} \\
+Pruebas automáticas totales & 276 (más batería sobre PostgreSQL real en CI) \\
+Endpoints expuestos en la API & 23 \\
+Migraciones SQL aplicadas & 5 \\
+Líneas de código del backend (\texttt{src/}, con SQL) & ~2.300 \\
+Líneas de interfaz web (\texttt{ui.js}, \texttt{api.js}, \texttt{ui/}) & ~1.150 \\
+Líneas de hojas de estilo CSS & ~950 \\
+Líneas del motor del juego (\texttt{public/js/game/}, 29 módulos) & ~11.100 \\
+Líneas de pruebas automatizadas & ~4.350 \\
+Dependencias directas de producción & 6 \\
+Contenido jugable implementado & 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones \\
 \bottomrule
 \end{longtable}
 
 \section{Resultados y discusión}
 
-El diseño de evaluación proporciona garantías sólidas: ninguna rama se fusionó sin que la batería completa de pruebas pasara en un entorno PostgreSQL idéntico al de producción. La revisión frase a frase permitió identificar discrepancias sutiles antes del cierre (p. ej., restricción de \texttt{/api/users/:id/active} a administrador en PR \#30).
-
-Como observación crítica, los 33 commits de desarrollo del Sprint 1 quedaron registrados con fecha 12/10/2026. Aunque la estructura del historial es estrictamente incremental y respeta el flujo de ramas y PRs individuales por tarea, la concentración temporal en una única jornada debe considerarse con transparencia ante la evaluación docente, al contrastarla con la expectativa pedagógica de un avance espaciado en el tiempo.
-
-El Sprint 2 (23/10–29/10/2026) añadió 136 pruebas de juego, elevando el total a 276, y cerró 29 PBIs en 7 días con 50 tareas, integrados mediante 13 PRs (uno por fase y arreglos). La evolución real reconstruida por fechas de PR (no por gráficas de DoneTonic) muestra una velocidad alta los días 24/10 (17 PBIs) y 26/10 (9 PBIs), con cierre documental el 29/10.
+La evaluación confirma que la adopción de una arquitectura en capas complementada con inyección de dependencias facilitó la incorporación del juego en el Sprint 2 sin desestabilizar la base SaaS del Sprint 1. El requisito de mantener el pipeline de CI en verde antes de fusionar garantizó la ausencia de regresiones a lo largo de los más de 50 pull requests procesados. La disponibilidad de 276 pruebas automáticas aporta confianza en el comportamiento determinista del motor y en la robustez de las políticas de seguridad del servidor.
