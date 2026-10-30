@@ -6,16 +6,18 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 ## Temas
 
-[[beamer]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[longtable]] · [[lua]] · [[memoria]] · [[overleaf]] · [[pgfplots]] · [[revision]] · [[tablas]] · [[tikz]]
+[[beamer]] · [[bibliografia]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[longtable]] · [[lua]] · [[memoria]] · [[overleaf]] · [[pgfplots]] · [[referencias]] · [[revision]] · [[tablas]] · [[tikz]]
 
-## Pendientes de revisar (1)
+## Pendientes de revisar (2)
 
+- [[citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesta
 - [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
 
-## Todas (24)
+## Todas (25)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
 - [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
+- [[citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesta
 - [[coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - [[con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]]
 - [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]]
