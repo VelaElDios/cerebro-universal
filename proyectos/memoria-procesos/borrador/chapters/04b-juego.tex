@@ -3,36 +3,106 @@
 
 \section{Concepto}
 
-La evolución del proyecto en el Sprint 2 transformó la base SaaS inicial en un videojuego web de tipo \textit{survivor} (género popularizado por \textit{Vampire Survivors} \cite{vampiresurvivors}), ambientado en la historia y la cultura del Atlético de España. El jugador controla a un deportista histórico del club en un escenario bidimensional de perspectiva isométrica (cámara 3/4) donde las armas atacan de forma automática. El objetivo consiste en sobrevivir a oleadas continuas de rivales y jefes emblemáticos, recolectando experiencia, subiendo de nivel y eligiendo mejoras tácticas para prolongar la resistencia en el tiempo.
+La evolución del proyecto en el Sprint 2 transformó la base SaaS inicial en un videojuego web de tipo \textit{survivor} (género popularizado por \textit{Vampire Survivors} \cite{vampiresurvivors}), ambientado en la historia y la cultura del Atlético de Madrid. El jugador controla a un deportista histórico del club en un escenario bidimensional de perspectiva isométrica (cámara 3/4) donde las armas atacan de forma automática. El objetivo consiste en sobrevivir a oleadas continuas de rivales y jefes emblemáticos, recolectando experiencia, subiendo de nivel y eligiendo mejoras tácticas para prolongar la resistencia en el tiempo.
 
 El proyecto mantiene su condición de iniciativa de aficionado sin vinculación oficial con el Club Atlético de Madrid, evitando el uso de elementos protegidos por propiedad intelectual y reinterpretando la iconografía rojiblanca a través de gráficos de estilo \textit{pixel art} generados algorítmicamente.
 
 \section{Cómo se juega (manual de usuario)}
 
 La experiencia de juego se estructura en torno a una serie de pantallas y mecánicas accesibles desde el menú principal:
+
 \begin{enumerate}
-    \item \textbf{Identificación y Acceso:} Con una sesión activa, la ruta \texttt{\#/jugar} da acceso al menú principal del juego. En el primer acceso se solicita un mote único y la elección de una cara para el avatar.
-    \item \textbf{Menú del Juego:} Permite acceder al Vestuario (selección de jugadores y equipaciones), Entrenamiento, Contratar, Logros, Combinaciones, Dirección (entrenadores), Ranking y Ajustes.
-    \item \textbf{Controles:} El desplazamiento se realiza mediante las teclas WASD o flechas del teclado, o mediante un joystick táctil flotante en dispositivos móviles. La pulsación de \texttt{Espacio} o \texttt{E} activa la habilidad definitiva (\textit{ulti}) del entrenador, \texttt{Esc} o \texttt{P} abre la pausa, \texttt{F} alterna la pantalla completa y las teclas numéricas \texttt{1} a \texttt{3} seleccionan las mejoras al subir de nivel.
-    \item \textbf{Dinámica de Partida:} Cada 30 segundos se genera una nueva oleada de adversarios y cada dos minutos aparece un jefe principal. Los rivales derrotados otorgan experiencia; al acumular la suficiente, el nivel asciende y se despliega un panel con tres mejoras aleatorias.
-    \item \textbf{Ambientes Temporales:} La partida evoluciona a lo largo del tiempo a través de cinco ambientes diferenciados que modifican el escenario cada cinco minutos: pretemporada, Final de la Copa del Rey, Final de Liga, Final de la Champions y Final del Mundial.
-    \item \textbf{Fin de Partida:} Al agotarse los puntos de vida del personaje, se muestra una pantalla detallada con estadísticas de daño por habilidad, duración, bajas y recompensas obtenidas para el club.
+    \item \textbf{Identificación y Acceso:} Con una sesión activa, la ruta \texttt{\#/jugar} da acceso al menú principal del juego. En el primer acceso se solicita un mote único (3–16 caracteres, normalizado sin mayúsculas ni tildes) y la elección de una cara para el avatar (Figura \ref{fig:juego-identidad}).
+    \item \textbf{Menú del Juego:} Permite acceder al Vestuario (selección de jugadores y equipaciones), Entrenamiento, Contratar, Logros, Combinaciones, Dirección (entrenadores), Ranking y Ajustes. A la izquierda se muestra la ficha del aficionado con sus mejores tiempos (Figura \ref{fig:juego-menu}).
+    \item \textbf{Controles:} El desplazamiento se realiza mediante las teclas WASD o flechas del teclado, o mediante un joystick táctil flotante en dispositivos móviles. La pulsación de \texttt{Espacio} o \texttt{E} activa la habilidad definitiva (\textit{ulti}) del entrenador, \texttt{Esc} o \texttt{P} abre la pausa, \texttt{F} alterna la pantalla completa y las teclas numéricas \texttt{1} a \texttt{3} seleccionan las mejoras al subir de nivel (Figura \ref{fig:juego-ajustes}).
+    \item \textbf{Dinámica de Partida:} Cada 30 segundos se genera una nueva oleada de adversarios y cada dos minutos aparece un jefe principal. Los rivales derrotados otorgan experiencia; al acumular la suficiente, el nivel asciende y se despliega un panel con tres mejoras aleatorias (Figura \ref{fig:juego-mejora}). Las mejoras que completan una combinación aparecen marcadas con ★.
+    \item \textbf{Ambientes Temporales:} La partida evoluciona a lo largo del tiempo a través de cinco ambientes diferenciados que modifican el escenario cada cinco minutos: pretemporada, Final de la Copa del Rey, Final de Liga, Final de la Champions y Final del Mundial (Figura \ref{fig:juego-final-copa}). Cambian la luz, el césped, la afición, los carteles y la música; los rivales salen más fuertes y en el Mundial todos llevan la camiseta de su selección.
+    \item \textbf{Fin de Partida:} Al agotarse los puntos de vida del personaje, se muestra una pantalla detallada con estadísticas de daño por habilidad, duración, bajas, jefes vencidos y recompensas obtenidas para el club (Figura \ref{fig:juego-fin}).
 \end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.35\textwidth]{figs/capturas/juego/13-identidad}
+\caption{Pantalla de identidad: elección de mote único y avatar.}
+\label{fig:juego-identidad}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/01-menu}
+\caption{Menú del juego con el jugador paseando, ficha del aficionado y menú lateral.}
+\label{fig:juego-menu}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/03-partida}
+\caption{Partida en curso: mundo procedural, rivales, armas automáticas y HUD.}
+\label{fig:juego-partida}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/04-mejora}
+\caption{Subida de nivel: elección de una de tres mejoras (las de combinación marcan ★).}
+\label{fig:juego-mejora}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/05-jefe}
+\caption{Jefe Vinicius Jr. con su barra de vida y escolta de élites.}
+\label{fig:juego-jefe}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/06-fin}
+\caption{Pantalla de fin: tiempo, ambiente, bajas, jefes, daño por habilidad y logro nuevo.}
+\label{fig:juego-fin}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/juego/16-final-copa}
+\caption{Ambiente de la Final de la Copa del Rey (a partir del minuto 5).}
+\label{fig:juego-final-copa}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.35\textwidth]{figs/capturas/juego/14-ajustes}
+\caption{Ajustes de volumen, gráficos, cámara y controles.}
+\label{fig:juego-ajustes}
+\end{figure}
 
 \section{Sistemas del juego}
 
-El equilibrio y la variedad del juego descansan sobre múltiples sistemas interconectados definidos en el motor y en los ficheros de configuración:
-\begin{itemize}
-    \item \textbf{Jugadores:} Catálogo de 36 personajes históricos (4 porteros, 9 defensas, 13 medios y 10 delanteros) con estadísticas base y habilidades propias.
-    \item \textbf{Rarezas:} Clasificación en Leyenda, Épico, Raro y Común, determinando el número de habilidades accesibles y la probabilidad de obtención en los contratos.
-    \item \textbf{Entrenadores:} Dos figuras técnicas (Cholo Simeone y Luis Aragonés) que otorgan bonificaciones pasivas y disponen de una habilidad definitiva (\textit{ulti}).
-    \item \textbf{Armas y Habilidades:} 24 habilidades ofensivas, defensivas y de movilidad con cinco niveles de progresión, limitadas por restricciones temporales de aparición (\texttt{desdeMinuto}) y tiempos de recarga (\texttt{cdMin}).
-    \item \textbf{Pasivas y Sinergias:} 14 mejoras pasivas y 24 combinaciones estratégicas (\textit{metas}) que otorgan bonificaciones al acumular determinadas habilidades, desbloqueando a su vez 6 poderes definitivos (\textit{ULTRAS}).
-    \item \textbf{Rivales y Jefes:} 16 equipos rivales con comportamientos ofensivos diferenciados y 10 jefes principales dotados de tres fases de combate, escoltas y mecánicas de furia.
-    \item \textbf{Mundo Procedural:} Generación infinita de mapas basados en semillas aleatorias, con biomas, obstáculos macizos y colisiones basadas en la posición de los pies de los personajes.
-    \item \textbf{Gestión de Club y Servidor:} Persistencia de plantillas, contratos de fichaje adquiridos mediante fichas obtenidas al vencer jefes, y puntos de entrenamiento asignados a cuatro atributos principales (Vida, Defensa, Disparo y Suerte).
-    \item \textbf{Logros y Sonido:} 29 logros vinculados a hitos históricos del club que desbloquean equipaciones especiales, acompañados de un motor de audio sintetizado por Web Audio (música chiptune y efectos de grada).
-\end{itemize}
+El equilibrio y la variedad del juego descansan sobre múltiples sistemas interconectados definidos en el motor y en los ficheros de configuración (\texttt{config.js}). La Tabla \ref{tab:sistemas-juego} resume cada sistema, su descripción y su configuración principal.
+
+\begin{longtable}{@{}L{2.5cm} L{6.5cm} L{5.5cm}@{}}
+\caption{Sistemas interactivos del juego (fuente: documentacion-tecnica.md §9.3).}\label{tab:sistemas-juego}\\
+\toprule
+\textbf{Sistema} & \textbf{Descripción} & \textbf{Configuración clave} \\ \midrule \endfirsthead
+\toprule
+\textbf{Sistema} & \textbf{Descripción} & \textbf{Configuración clave} \\ \midrule \endhead
+Jugadores & 36 personajes (4 porteros, 9 defensas, 13 medios, 10 delanteros) con estadísticas base por posición, rasgos propios y lista de habilidades aprendibles & \texttt{PERSONAJES}, \texttt{POSICIONES} \\
+Rarezas & 4 niveles (Leyenda 8, Épico 8, Raro 8, Común 12) según historia en el Atleti; más rareza = más habilidades (8–16) y menos probabilidad en contratos & \texttt{RAREZAS} \\
+Entrenadores & 2: Cholo Simeone (+daño, +vida; ulti «¡Partido a partido!») y Luis Aragonés (+velocidad, +experiencia; ulti «Furia Roja») & \texttt{ENTRENADORES} \\
+Armas y habilidades & 24 habilidades con 5 niveles: disparo (balón, cañonazo, córner, efecto, vaselina, chilena, volea, penalti), cuerpo a cuerpo (bufanda, banderines, cántico, silbato, tarjeta roja, VAR, cabezazo, entrada rasante, barrera, despeje), movilidad (regate, caño, pared, contragolpe), especiales (himno Champions, bengala). Restricciones \texttt{desdeMinuto} y \texttt{cdMin} & \texttt{ARMAS} \\
+Pasivas & 14: botas, imán, pasión, pizarra, cantera, masajista, espinilleras, pulmones, toque dorado, botas en llamas, paradón, brazalete, trébol, prórroga & \texttt{PASIVAS} \\
+Combinaciones (sinergias) & 24 metas que se activan al juntar ciertas habilidades a cierto nivel y dan bonus (Muro rojiblanco, Tiki-taka, Pichichi, Catenaccio, Leyenda rojiblanca, Golazo de otro planeta, Remontada épica, Triple Corona, Infierno del Metropolitano, Capitán eterno…) & \texttt{SINERGIAS} \\
+Ultras & 6 poderes supremos que se consiguen completando combinaciones: Premio Puskás, Ganador del Balón de Oro, MVP de la Champions, Trofeo Zamora, Bota de Oro histórica, Mejor jugador del Mundial. Efecto visual propio y daño porcentual (reducido contra jefes) & \texttt{ULTRAS}, \texttt{ultras.js} \\
+Rivales & 16 equipos con jugadores genéricos; embisten (Liverpool, Arsenal, PSG, Dortmund) o disparan (Bayern, City, Chelsea, Juventus, Milan, Inter, Nápoles); élites blindado, veloz y furioso & \texttt{EQUIPOS}, \texttt{ELITES} \\
+Jefes & 10: Guardiola (rondo), Mourinho (autobús), Cristiano (Siuuu), Messi (eslalon), Vinicius (zigzag), Yamal (rosca), Neymar (lluvia bicicletas), Bale (cañonazos), Benzema (precisión), Suárez (mordiscos). 3 fases (66\%, 33\%), escolta desde 2º, furia, jugada estrella en fase 3. Desde oleada 24 pueden salir dos a la vez; cada vuelta completa +25\% dificultad & \texttt{JEFES}, \texttt{jefes.js} \\
+Dificultad & Crecimiento continuo de vida, daño y velocidad; tramo final más duro desde min 9 y rivales curtidos desde min 12; multiplicador por ambiente; ayuda inicial que se apaga en 8 min & \texttt{ESCALADO}, \texttt{TRAMO\_FINAL}, \texttt{CURTIDOS}, \texttt{AMBIENTES} \\
+Movimiento & Inercia, ritmo al correr (más daño y experiencia), castigo por quedarse quieto, premios por el campo & \texttt{FISICA}, \texttt{JUGADOR} \\
+Mundo procedural & Infinito por semilla, ruidos suaves: distritos (ciudad, entrenamiento, parque, prado), estadios con gradas, plazas, tiendas, mesetas con escaleras, barro, lluvia, caminos. Colisión por los pies (vista 3/4) & \texttt{TERRENO}, \texttt{terreno.js} \\
+Club & Plantilla inicial 4 comunes (1 por posición); 1 ficha por 3 jefes de la cuenta; sorteo por rareza; puntos por jefes (1 cada 3) y bajas; stats Vida, Defensa, Disparo, Suerte (máx 20) & \texttt{club.js} \\
+Logros & 29 con dato curioso de la historia del Atleti; 10 equipaciones desbloqueables; validados en servidor & \texttt{logros.js} \\
+Sonido & Efectos, música chiptune original (canción por ambiente que se anima con tiempo y jefes, fanfarria por competición), grada (murmullo y cánticos según distancia) & \texttt{audio.js}, \texttt{musica.js} \\
+\bottomrule
+\end{longtable}
 
 \section{Arquitectura del juego}
 
@@ -44,9 +114,9 @@ La arquitectura del juego separa estrictamente la simulación pura y determinist
     box/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.2cm, align=center, minimum height=0.9cm, font=\small},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    \node[box] (sim) {\textbf{Simulación pura (sin DOM)}\\\texttt{mundo.js}, paso fijo 1/60 s, semilla, armas, jefes};
-    \node[box, below=0.6cm of sim] (pres) {\textbf{Presentación y Renderizado}\\\texttt{juego.js}, \texttt{render.js}, sprites 16×20, Web Audio};
-    \node[box, below=0.6cm of pres] (srv) {\textbf{Servidor y Anti-trampas}\\\texttt{juegoService.js}, persistencia, validación de partidas};
+    \node[box] (sim) {\textbf{Simulación pura (sin DOM)}\\\texttt{mundo.js}: bucle paso fijo 1/60 s, semilla, armas, jefes, oleadas, terreno, ultras, mejoras};
+    \node[box, below=0.6cm of sim] (pres) {\textbf{Presentación y Renderizado}\\\texttt{juego.js}, \texttt{render.js}, \texttt{render-mundo.js}, \texttt{render-ultras.js}, sprites 16×20 cacheados, Web Audio};
+    \node[box, below=0.6cm of pres] (srv) {\textbf{Servidor y Anti-trampas}\\\texttt{juegoService.js}, \texttt{club.js}, \texttt{config.js}, \texttt{logros.js}, persistencia, validación de partidas, concurrencia optimista};
 
     \draw[arrow] (sim) -- (pres);
     \draw[arrow] (pres) -- node[right, font=\footnotesize] {POST /api/juego} (srv);
@@ -55,17 +125,182 @@ La arquitectura del juego separa estrictamente la simulación pura y determinist
 \label{fig:arquitectura-juego}
 \end{figure}
 
-El motor de simulación opera mediante un paso de tiempo fijo de 1/60 s y un generador de números pseudoaleatorios con semilla, garantizando la reproducibilidad exacta de las partidas sin depender de la tasa de fotogramas por segundo (\textit{FPS}) del navegador.
+El motor de simulación opera mediante un paso de tiempo fijo de 1/60 s y un generador de números pseudoaleatorios con semilla, garantizando la reproducibilidad exacta de las partidas sin depender de la tasa de fotogramas por segundo (\textit{FPS}) del navegador. Si el navegador va lento, se ejecutan varios pasos por fotograma (con tope); el resultado no depende de los FPS y las pruebas son reproducibles en Node sin navegador.
+
+La simulación no toca el DOM ni el audio: emite eventos (\texttt{oleada}, \texttt{aviso}, \texttt{jefe-derrotado}, \texttt{ambiente}, \texttt{ultra}…) que \texttt{juego.js} traduce a sonido, avisos y anuncios para lectores de pantalla (\texttt{aria-live}). Cada fuente de daño (arma, ultra, ulti, quemaduras) se apunta en \texttt{mundo.stats} para la pantalla de fin.
+
+Para el rendimiento: búsqueda de obstáculos por celdas con claves numéricas (≈4,5× más rápida que claves de texto), una textura de suelo por celda y ambiente pintada como mucho una por fotograma y por adelantado, y muñecos cacheados. El dibujo usa Canvas 2D con cámara 3/4 (suelo aplastado en vertical, muñecos de pie). Los muñecos se pintan con código en cuadrícula 16×20 (pelo, piel, camiseta, botas, rasgos: brazalete, cinta, pecas, barba, pendientes, tatuajes), generando equipaciones y 26 selecciones sin imágenes. El audio es todo sintetizado con Web Audio: ondas de pulso (12,5\%, 25\%, 50\%), triángulo y ruido; la música usa un secuenciador propio que programa notas por adelantado; la grada usa voces con formantes de vocales y palmas.
 
 \section{Servidor y validación anti-trampas}
 
 Para preservar la integridad del ranking de la grada y evitar manipulaciones en el progreso del club, el servidor implementa un riguroso mecanismo anti-trampas:
+
 \begin{itemize}
-    \item \textbf{Control de partidas en curso:} Al iniciar una partida, el servidor registra el identificador y el reloj de inicio.
-    \item \textbf{Validación de resultados:} Al finalizar, se rechazan resultados con duraciones imposibles, tiempos superiores al transcurrido o métricas de jefes, nivel y bajas que excedan los límites biológicos y estadísticos admisibles por el motor.
-    \item \textbf{Concurrencia optimista:} Las operaciones de actualización sobre el perfil del club emplean un control de versión numérico (\texttt{version}) para evitar condiciones de carrera en peticiones simultáneas de fichajes o entrenamiento.
+    \item \textbf{Control de partidas en curso:} Al iniciar una partida (\texttt{POST /api/juego/partidas}), el servidor registra el identificador y el reloj de inicio en \texttt{juego\_perfiles.partidaActual}.
+    \item \textbf{Validación de resultados:} Al finalizar (\texttt{POST /api/juego/partidas/:id/fin}), se rechazan resultados si: (a) la partida no es la que está en curso; (b) el tiempo supera lo transcurrido en servidor + 15 s o 4 horas; (c) los jefes, nivel o bajas no son creíbles para ese tiempo (\texttt{jefes ≤ 3 + t/50}, \texttt{nivel ≤ 8 + t/3}, \texttt{bajas ≤ 20·t + 50}).
+    \item \textbf{Logros verificables:} De los logros que manda el cliente, el servidor solo apunta los que puede comprobar con lo que sabe (tiempo, jefes, bajas, jugador, entrenador); los de plantilla los calcula él.
+    \item \textbf{Concurrencia optimista:} Cada cambio del perfil usa \texttt{UPDATE … WHERE version = \$n} con reintentos (diagrama de secuencia \ref{fig:sec-contratar}).
 \end{itemize}
 
-\section{Logros y evolución por fases}
+El ranking guarda la mejor partida de cada usuario (más tiempo; en empate, más nivel) con mote y avatar, nunca el correo.
 
-El sistema de logros registra hitos estadísticos y ofrece contexto histórico sobre el club. El desarrollo del Sprint 2 se estructuró secuencialmente en seis fases operativas en DoneTonic (P20 a P48), abarcando desde el rediseño inicial de la interfaz y el motor del \textit{survivor}, pasando por el club persistente en servidor, la introducción de sinergias y mundos procedurales, hasta el pulido de rarezas, equilibrado de combate, integración de logros y refuerzo de la calidad técnica.
+\subsection{Diagrama de secuencia: una partida (inicio, juego y fin con validación)}
+
+La Figura \ref{fig:sec-partida} muestra el flujo completo de una partida desde el inicio hasta la validación final en el servidor.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+  \newthread{jug}{Jugador}
+  \newinst[2]{game}{juego.js (navegador)}
+  \newinst[2]{sim}{mundo.js (simulación)}
+  \newinst[2]{api}{api.js}
+  \newinst[2]{srv}{API /api/juego}
+  \newinst[2]{js}{juegoService}
+  \newinst[2]{repo}{juegoRepository}
+  \begin{call}{jug}{Elige personaje y entrenador}{game}{}
+  \end{call}
+  \begin{call}{game}{iniciar(personaje, entrenador)}{api}{}
+    \begin{call}{api}{POST /partidas}{srv}{201 \{partidaId, stats\}}
+      \begin{call}{srv}{iniciarPartida()}{js}{}
+        \begin{call}{js}{perfil + version}{repo}{datos}
+        \end{call}
+        \begin{call}{js}{valida plantilla, guarda partidaActual}{repo}{ok (version++)}
+        \end{call}
+      \end{call}
+    \end{call}
+  \end{call}
+  \begin{sdblock}{loop}{Cada fotograma (paso fijo 1/60 s)}
+    \begin{call}{game}{avanzar(entrada)}{sim}{eventos (oleada, jefe, mejora, logro…)}
+    \end{call}
+    \mess{game}{Dibujo, HUD, sonido, música}{jug}
+  \end{sdblock}
+  \mess{sim}{estado fin (te eliminan)}{game}
+  \begin{call}{game}{terminar(id, tiempo, nivel, jefes, bajas, logros)}{api}{}
+    \begin{call}{api}{POST /partidas/:id/fin}{srv}{}
+      \begin{call}{srv}{finalizarPartida()}{js}{}
+        \begin{call}{js}{¿partida en curso? ¿tiempo ≤ reloj+15s? ¿métricas creíbles?}{js}{}
+        \end{call}
+        \begin{sdblock}{alt}{Resultado imposible}
+          \mess{js}{400 «El resultado no es creíble»}{srv}
+        \end{sdblock}
+        \begin{sdblock}{alt}{Válido}
+          \begin{call}{js}{Reparte jefes, bajas, puntos, fichas; logros creíbles + plantilla}{js}{recompensas}
+          \end{call}
+          \begin{call}{js}{guardarPerfil(version) (reintenta si conflicto)}{repo}{ok}
+          \end{call}
+          \begin{call}{js}{guardarRecord() si es mejor partida}{repo}{ok}
+          \end{call}
+          \mess{js}{200 \{recompensas, logrosNuevos, record, perfil\}}{srv}
+        \end{sdblock}
+      \end{call}
+    \end{call}
+  \end{call}
+  \mess{game}{Pantalla de fin con estadísticas y logros}{jug}
+\end{sequencediagram}}
+\caption{Una partida del juego: inicio, simulación y fin con validación anti-trampas en el servidor (§7.10).}
+\label{fig:sec-partida}
+\end{figure}
+
+\subsection{Diagrama de secuencia: contratar con concurrencia optimista}
+
+La Figura \ref{fig:sec-contratar} ilustra cómo el servidor evita que dos peticiones simultáneas (doble clic) consuman la misma ficha de contrato.
+
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+  \newinst[2]{p1}{Petición 1}
+  \newinst[2]{p2}{Petición 2 (doble clic)}
+  \newinst[2]{js}{juegoService}
+  \newinst[2]{db}{juego\_perfiles}
+  \begin{call}{p1}{contratar()}{js}{}
+    \begin{call}{js}{SELECT datos, version (v=7)}{db}{perfil}
+    \end{call}
+    \begin{call}{js}{1 ficha → sortea jugador}{js}{fichado}
+    \end{call}
+    \begin{call}{js}{UPDATE … WHERE version=7}{db}{1 fila (v=8)}
+    \end{call}
+  \end{call}
+  \begin{call}{p2}{contratar()}{js}{}
+    \begin{call}{js}{SELECT datos, version (v=7)}{db}{perfil}
+    \end{call}
+    \begin{call}{js}{1 ficha → sortea jugador}{js}{fichado}
+    \end{call}
+    \begin{call}{js}{UPDATE … WHERE version=7}{db}{0 filas}
+    \end{call}
+    \begin{call}{js}{Reintenta: SELECT (v=8, 0 fichas)}{db}{perfil actualizado}
+    \end{call}
+    \mess{js}{409 «No tienes fichas de contrato»}{p2}
+  \end{call}
+  \mess{js}{200 \{fichado, logrosNuevos, perfil\}}{p1}
+\end{sequencediagram}}
+\caption{Contratar con concurrencia optimista: la segunda petición falla y se reintenta con datos frescos (§7.11).}
+\label{fig:sec-contratar}
+\end{figure}
+
+\section{Logros y equipaciones}
+
+El sistema de logros registra hitos estadísticos y ofrece contexto histórico sobre el club. La Tabla \ref{tab:logros} detalla los 29 logros con su condición, el dato histórico asociado y la equipación que desbloquea (si aplica).
+
+\begin{longtable}{@{}L{2.8cm} L{6.0cm} L{5.5cm}@{}}
+\caption{Logros del juego con dato histórico y equipaciones desbloqueables (fuente: documentacion-tecnica.md §9.6).}\label{tab:logros}\\
+\toprule
+\textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación / Dato histórico} \\ \midrule \endfirsthead
+\toprule
+\textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación / Dato histórico} \\ \midrule \endhead
+Primera muesca & Vence a tu primer jefe & Segunda equipación \\
+Camino de la final & Llega a la Final de la Copa del Rey (min 5) & — \\
+Campeones de Liga & Llega a la Final de Liga (min 10) & Tercera eléctrica \\
+Noche europea & Llega a la Final de la Champions (min 15) & Noche europea \\
+Final del Mundial & Llega a la Final del Mundial (min 20) & Final del Mundial \\
+Tercero en París & Consigue la ultra «Ganador del Balón de Oro» con Griezmann & Griezmann fue 3º en el Balón de Oro 2018 \\
+Bota de Oro charrúa & Consigue la ultra «Bota de Oro histórica» con Forlán & Forlán ganó la Bota de Oro 2009 \\
+Hamburgo, 2010 & Llega a la Final de la Champions con Forlán o el Kun & Final Europa League 2010 ganada por el Atleti \\
+Noche de Mónaco & Vence a 3 jefes en una partida con Falcao & Falcao marcó 2 goles en la Supercopa 2012 \\
+El cabezazo del Camp Nou & Consigue la combinación «Dominio aéreo» con Godín & Godín, capitán y símbolo del cabezazo en el Camp Nou 2014 \\
+Brazalete eterno & Consigue la combinación «Capitán eterno» con Gabi & Gabi, capitán 8 años y 4 títulos \\
+El Niño & Llega a la Final de la Copa del Rey con Fernando Torres & Torres, canterano y símbolo del Calderón \\
+Del Oporto al Calderón & Consigue la combinación «Jugón» con Futre & Futre, estrella del doblete 96 y Oporto \\
+Doblete del 96 & Llega a la Final de Liga con Simeone o Pantić & Doblete del 96 (Simeone jugador y Pantić entrenador) \\
+Bernabéu, 2013 & Llega a la Final de la Copa del Rey con Miranda o Courtois & Final Copa 2013 ganada en el Bernabéu \\
+Cinco Zamoras & Consigue la ultra «Trofeo Zamora» con Oblak & Oblak ganó 5 Zamoras seguidas (2016–2020) \\
+Los 27 de Costa & Elimina a 270 rivales en una partida con Diego Costa & Costa marcó 27 goles en la Liga 2013–14 \\
+La Araña campeona & Llega a la Final del Mundial con Julián Álvarez & Álvarez, campeón del mundo 2022 con Argentina \\
+El récord de Adelardo & Elimina a 553 rivales en una sola partida & Adelardo, máximo goleador histórico del club (173) \\
+El Sabio de Hortaleza & Aguanta 10 minutos con Luis Aragonés en el banquillo & Aragonés, «Sabio de Hortaleza», entrenador de la Euro 2008 \\
+Partido a partido & Aguanta 15 minutos con el Cholo en el banquillo & Simeone, «Partido a partido», 8 títulos como entrenador \\
+El muro & Aguanta los 5 primeros minutos sin que te toquen & — \\
+Poder de leyenda & Consigue tu primera ULTRA & — \\
+Leyenda total & Consigue tres ULTRAS en una partida & — \\
+Mil en el Metropolitano & Elimina a 1000 rivales en una partida & — \\
+El Pupas & Que te eliminen antes del minuto 2 & El Pupas (equipación de la mala suerte) \\
+Toda una vida & Juega 20 partidas con Koke & Adiós al Calderón (Koke, capitán y uno de los que más partidos) \\
+Azul y blanco & Ten 20 jugadores en tu plantilla & Centenario 1903 (el Atleti nació de azul y blanco) \\
+Paseo de Leyendas & Ficha a las 8 leyendas & — \\
+\bottomrule
+\end{longtable}
+
+\section{Evolución por fases del Sprint 2}
+
+El desarrollo del Sprint 2 se estructuró secuencialmente en seis fases operativas en DoneTonic (etiquetas de fase), abarcando desde el rediseño inicial de la interfaz y el motor del \textit{survivor}, pasando por el club persistente en servidor, la introducción de sinergias y mundos procedurales, hasta el pulido de rarezas, equilibrado de combate, integración de logros y refuerzo de la calidad técnica. La Tabla \ref{tab:evolucion-fases} resume cada fase, qué se añadió y qué problemas resolvió.
+
+\begin{longtable}{@{}L{1.8cm} L{6.0cm} L{6.5cm}@{}}
+\caption{Evolución del juego por fases del Sprint 2 (etiquetas DoneTonic).}\label{tab:evolucion-fases}\\
+\toprule
+\textbf{Fase (etiqueta)} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead
+\toprule
+\textbf{Fase (etiqueta)} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endhead
+Rediseño & Nueva interfaz (tokens, tipografía Plus Jakarta Sans, modo oscuro rojiblanco), menú del juego como inicio con sesión & La interfaz del Sprint 1 era funcional pero sobria; no había menú de juego \\
+Base del juego (Fase 1) & Survivor base: simulación paso fijo, oleadas, armas, mejoras, jefes, menú con muñeco paseando & — \\
+Fase 2 · Club & Club en servidor (plantilla, contratos, entrenamiento), ranking de la grada, élites, poderes nuevos & Progreso ligado a la cuenta y validado; no había persistencia de club \\
+Fase 3 · Ultras & 6 ultras, 24 combinaciones, dificultad con castigo, entrenamiento por bajas, modo pruebas & Maxear una sola cosa ya no basta; faltaban objetivos estratégicos \\
+Fase 4 · Mundo & Mundo procedural natural, 5 ambientes por finales, mote y avatar (migración 004) & Mapa repetitivo; correo visible en el ranking; sin identidad visual \\
+Fase 5 · Rarezas & Rarezas por historia rojiblanca, habilidades niveladas por minuto, combinaciones a la vista, animación firma, colisiones exactas & Regate demasiado fuerte; esconderse detrás de tejados; rarezas arbitrarias \\
+Fase 6 · Logros y sonido & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles; muñecos simples \\
+Calidad & Corrección de errores detectados (T77–T79), documentación y gestión Sprint 2 (T80–T82) & Juego no cargaba (variable antes de existir); clic perdido en reenvío correo; no se podía volver tras baja Google \\
+\bottomrule
+\end{longtable}
+
+Cada fase corresponde a un conjunto de PBIs y se integró en \texttt{main} mediante un PR dedicado (ver \texttt{docs/gestion/README.md}, tabla «PR | Fase | Fecha de fusión»): PR \#36 (Rediseño + Base), \#44–\#52 (Fases 1–4), \#53 (Fase 5), \#54 (Fase 6), \#51, \#55, \#56 (Calidad).

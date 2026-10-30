@@ -1565,3 +1565,29 @@ He corregido:
 ## 2026-10-30 06:22 · 🧠 Lección propuesta para la memoria
 
 [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-10-30 08:04 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a ampliar `chapters/04b-juego.tex` para alcanzar las 1800 palabras mínimas, integrando la cita a Vampire Survivors, el manual de usuario con capturas, la tabla completa de sistemas, la arquitectura ampliada, los diagramas de secuencia fig:sec-partida y fig:sec-contratar, la tabla de 29 logros con 10 equipaciones y la tabla de 6 fases con etiquetas DoneTonic. También corregiré los números inventados en a1-desarrollo.tex.
+
+**Archivos:** `chapters/04b-juego.tex`, `chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04b-juego.tex:201: Package tikz Error: A node must have a (possibly empty) label text.
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 4 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** El siguiente paso debe ser:
+1. Ejecutar la compilación para verificar que los cambios en 04b-juego.tex y a1-desarrollo.tex compilan correctamente
+2. Corregir la tabla de trazabilidad (a4-trazabilidad.tex) para eliminar los overfull hbox restantes (usar @{} y anchos que sumen ≤ \linewidth, y \seqsplit o saltos manuales en celdas largas)
+3. Añadir las capturas mínimas requeridas: 8 de juego/ (ya referenciadas en 04b-juego.tex), 5 de donetonic/ (referenciar en a1-desarrollo.tex las que faltan: backlog, tablero sprint2, gráficas sprint2, detalle PBI)
+4. Añadir más tablas para llegar a 15 totales (actualmente tenemos: rf-sprint1, rj-sprint2, rnf, decisiones-diseno, metricas, workflows, pruebas-por-fichero, sistemas-juego, logros, evolucion-fases, sprint1-backlog, sprint1-trazabilidad, prob-desarrollo, prob-despliegue, prob-git, prob-alcance, prob-latex, prob-donetonic, sprint2-backlog, sprint2-hu, sprint2-trazabilidad, prob-sprint2 = 22 tablas, ya superamos el mínimo)
+5. Ejecutar biber para resolver referencias bibliográficas
+6. Verificar que verificar.py pase sin errores
+
+## 2026-10-30 08:08 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
