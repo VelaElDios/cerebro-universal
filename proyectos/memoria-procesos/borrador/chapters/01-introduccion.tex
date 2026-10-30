@@ -1,1 +1,58 @@
-<<<FIN>>
+\chapter{Introducción}
+\label{cap:introduccion}
+
+\section{Contexto y motivación}
+
+El presente documento constituye la memoria del proyecto desarrollado en la asignatura Procesos de Ingeniería del Software (PIS), correspondiente al curso académico 2026-2027 del Grado en Ingeniería Informática impartido en la Escuela Superior de Ingeniería Informática de Albacete (Universidad de Castilla-La Mancha). El trabajo se plantea con una exigencia metodológica y técnica equiparable a la de un Trabajo Fin de Grado (TFG), orientándose a la construcción de un producto software real que integre de forma sistemática prácticas consolidadas de ingeniería: marcos ágiles de trabajo, control de versiones formal, integración y despliegue continuos en plataformas en la nube, persistencia relacional, arquitectura modular desacoplada y una batería exhaustiva de pruebas automáticas.
+
+El proyecto, titulado \textit{La Grada Colchonera}, surge como una iniciativa de aficionado desarrollada sin vinculación oficial con el Club Atlético de Madrid ni con sus entidades asociadas. Su propósito conceptual consiste en ofrecer un espacio digital interactivo ambientado en el imaginario colectivo y la centenaria historia del club rojiblanco, combinando la robustez de una plataforma de servicios web (SaaS) con la interactividad y atractivo de un videojuego integrado.
+
+\section{Objetivos}
+
+Para articular el desarrollo del proyecto se establecieron un objetivo principal de ingeniería y un conjunto de objetivos secundarios o específicos que abarcan el ciclo de vida completo del software.
+
+\subsection{Objetivo principal}
+
+Diseñar, implementar, probar y desplegar en producción un sistema software distribuido con arquitectura SaaS en capas que ofrezca a los aficionados una experiencia interactiva completa: gestión segura de cuentas y perfiles, autenticación federada, almacenamiento relacional de estado y un videojuego web propio de supervivencia en tiempo real (\textit{survivor}) en pixel art, cuyo progreso individual se valide y consolide de forma persistente en el servidor.
+
+\subsection{Objetivos específicos}
+
+\begin{enumerate}
+    \item \textbf{Arquitectura y calidad de diseño:} Concebir e implantar una arquitectura en capas estrictamente desacoplada (cliente ligero, capa API REST, servicios de lógica de negocio, repositorios de persistencia e integraciones externas), aplicando el principio de inversión de dependencias para garantizar que la lógica permanezca aislada de los detalles de infraestructura.
+    \item \textbf{Gestión de identidades y seguridad por diseño:} Proveer un subsistema integral de autenticación y autorización que soporte registro local con derivación criptográfica de contraseñas mediante \texttt{bcrypt}, verificación obligatoria de identidad por correo electrónico, inicio de sesión federado mediante el protocolo estándar OAuth 2.0 (Google), gestión de sesiones en servidor inmunes a reinicios y control de acceso basado en roles (\textit{user} y \textit{admin}).
+    \item \textbf{Persistencia relacional e integridad de datos:} Modelar e implantar el esquema relacional sobre PostgreSQL, gestionando su ciclo de evolución mediante migraciones SQL versionadas y garantizando la persistencia tanto de usuarios y sesiones como de clubes, inventarios y marcas del videojuego.
+    \item \textbf{Lógica del videojuego y validación anti-trampas:} Desarrollar un motor de simulación web determinista de paso fijo (60 hercios) y gráficos generados por código, complementado con mecanismos en el servidor para validar el progreso de cada partida mediante reloj propio y límites estadísticos creíbles, asegurando la equidad del ranking.
+    \item \textbf{Disciplina metodológica y automatización (CI/CD):} Aplicar rigurosamente el marco ágil Scrum utilizando DoneTonic para la gestión del backlog y el seguimiento de sprints, articulando el flujo de trabajo en ramas según GitHub Flow y garantizando la entrega continua en Google Cloud Run mediante un pipeline de integración continua en GitHub Actions.
+    \item \textbf{Verificación sistemática y documentación:} Respaldar cada componente con una suite automatizada de pruebas unitarias, de contrato y de integración (alcanzando 276 pruebas), comprobando el comportamiento ante escenarios nominales y de fallo, y documentando exhaustivamente el artefacto resultante.
+\end{enumerate}
+
+\section{Alcance del proyecto y cambio de enfoque}
+
+El desarrollo del proyecto se estructuró en dos ciclos de desarrollo o sprints cerrados:
+\begin{itemize}
+    \item \textbf{Sprint 1 (29/09/2026 -- 27/10/2026):} Centrado en la construcción de la infraestructura base de la aplicación SaaS conforme a los cuatro hitos del enunciado docente. Abarcó la configuración del repositorio, el pipeline de CI/CD, la lógica de usuarios y API REST, la interfaz web desacoplada en cliente y presentación, el registro y sesión locales (Hito 2), la persistencia en PostgreSQL con Neon, la administración de roles y auditoría de eventos (Hito 3), la verificación por correo SMTP y el acceso federado con Google OAuth 2.0 (Hito 4), culminando con el empaquetado en contenedores Docker y el despliegue en Google Cloud Run (PBI P19).
+    \item \textbf{Sprint 2 (23/10/2026 -- 29/10/2026):} Orientado a la implementación de la lógica del producto final solicitada por el profesor. Transformó la interfaz y dotó al sistema de un videojuego completo en seis fases operativas: motor de juego \textit{survivor}, personajes y entrenadores en pixel art, armas automáticas y mejoras, persistencia del club en el servidor, combinaciones estratégicas y poderes \textit{ultras}, generación procedural de mapas, ambientes competitivos, vitrina de logros históricos y síntesis de audio chiptune.
+\end{itemize}
+
+\subsection{Justificación del cambio de enfoque}
+
+Inicialmente, el proyecto se concibió como una red social temática orientada a la interacción entre simpatizantes rojiblancos. Sin embargo, una vez alcanzada la base SaaS requerida en el Sprint 1, el profesor otorgó libertad técnica sobre la lógica de producto a desarrollar en el segundo ciclo de trabajo. Se tomó la decisión justificada de reconducir el producto hacia un videojuego interactivo web en tiempo real por tres motivos fundamentales:
+\begin{enumerate}
+    \item \textbf{Diferenciación y valor formativo:} Supone un desafío técnico más complejo y enriquecedor que un clon convencional de red social, requiriendo resolver problemas avanzados de simulación determinista, optimización de renderizado en canvas 2D, búsqueda espacial por cuadrículas, generación procedural de terrenos y síntesis de audio por software.
+    \item \textbf{Aprovechamiento integral de la base SaaS:} El videojuego no sustituye la infraestructura construida en el primer sprint, sino que la amortiza plenamente. La gestión de usuarios, el control de sesiones, la administración de cuentas, la persistencia relacional en PostgreSQL y la seguridad perimetral son requisitos indispensables para dar soporte a las cuentas de juego, guardar el club de cada aficionado, gestionar contratos y publicar un ranking competitivo global.
+    \item \textbf{Mitigación de riesgos de contenido y marca:} La creación de un juego con estética propia en pixel art y generación procedimental evita la dependencia de contenidos protegidos y simplifica el cumplimiento de políticas de privacidad respecto al tratamiento de publicaciones públicas entre usuarios.
+\end{enumerate}
+
+Quedan fuera del alcance actual de esta entrega el modo multijugador síncrono en red, los sistemas de grupos de juego (\textit{party}) y las aplicaciones móviles nativas compiladas.
+
+\section{Estructura de la memoria}
+
+La presente memoria se encuentra organizada en los siguientes capítulos y anexos:
+\begin{itemize}
+    \item El Capítulo~\ref{cap:propuesta} (\textbf{Propuesta de Solución, Metodología y Herramientas}) expone la propuesta conceptual del sistema, el marco Scrum adaptado en DoneTonic, el flujo de desarrollo GitHub Flow y la clasificación de herramientas empleadas.
+    \item El Capítulo~\ref{cap:descripcion} (\textbf{Descripción de la Aplicación}) detalla el catálogo completo de requisitos (RF, RJ, RNF), la arquitectura en capas, las decisiones tecnológicas, el modelo de datos relacional, la especificación de la API, los diagramas de secuencia de los flujos principales, el análisis de seguridad y el manual de uso del subsistema SaaS.
+    \item El Capítulo~\ref{cap:juego} (\textbf{El juego (Sprint 2)}) profundiza en la concepción y mecánicas del videojuego, desglosando sus sistemas interactivos, la arquitectura de simulación pura, los algoritmos anti-trampas del servidor, la vitrina de logros y la evolución secuencial de sus fases de entrega.
+    \item El Capítulo~\ref{cap:evaluacion} (\textbf{Evaluación}) presenta el diseño de verificación del proyecto, la estrategia de pruebas automáticas (276 casos), el pipeline de CI/CD en GitHub Actions, el registro de actividad y errores, la auditoría frase a frase frente a las directrices de la asignatura, la prueba técnica de dominios, las evidencias en producción y el compendio de métricas.
+    \item El Capítulo~\ref{cap:conclusiones} (\textbf{Conclusiones y Trabajo Futuro}) evalúa el grado de consecución de los objetivos establecidos, sintetiza las lecciones de ingeniería aprendidas y traza las líneas de evolución futura del software.
+    \item Los Anexos complementan la memoria: el Anexo~\ref{anx:desarrollo} recoge el desarrollo histórico y retrospectiva de los Sprints 1 y 2; el Anexo~\ref{anx:trazabilidad} recopila la matriz íntegra de trazabilidad requisito--PBI--tarea--PR; el Anexo~\ref{anx:material} proporciona los enlaces de acceso y despliegue; y el Anexo~\ref{anx:ia} detalla el uso transparente y responsable de asistentes de inteligencia artificial.
+\end{itemize}
