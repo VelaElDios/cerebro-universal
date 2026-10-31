@@ -3,7 +3,7 @@ titulo: "Rutas de capturas y nombres de archivo deben coincidir exactamente con 
 temas: ["latex", "figuras", "rutas"]
 claves: ["no existe la imagen", "figs/capturas/app/01-registro.png", "figs/capturas/hito4/01-correo-recibido.png"]
 estado: "propuesta"
-veces: 1
+veces: 2
 fecha: "2026-10-31"
 proyectos: ["memoria-procesos"]
 ---
