@@ -7,7 +7,7 @@ Durante el Sprint 2 el proyecto incorporó sobre la base SaaS previa un videojue
 
 La propuesta adapta estas mecánicas a la identidad histórica del Club Atlético de Madrid, como proyecto de aficionados sin vinculación oficial con la entidad. Para no usar logotipos ni imágenes protegidas, los 36 futbolistas y los 2 entrenadores se representan en \textit{pixel art} generado por código. El núcleo del juego consiste en esquivar oleadas continuas de rivales de 16 clubes; al derrotarlos se obtienen balones de experiencia que suben de nivel y ofrecen tres mejoras. Cada dos minutos aparecen jefes con tres fases, y el escenario cambia cada cinco minutos entre cinco finales históricas.
 
-El motor del juego está escrito en JavaScript vanilla, sin frameworks, y se ejecuta en el navegador sobre un elemento \texttt{canvas} 2D. La simulación es determinista: avanza en pasos fijos de 1/60 s con un generador de números pseudoaleatorios inicializado por semilla, lo que garantiza que la misma partida se pueda reproducir exactamente y permite probar la lógica en Node.js sin necesidad de navegador. La separación estricta entre simulación (módulo \texttt{mundo.js}) y presentación (módulos \texttt{render.js}, \texttt{sprites.js}, \texttt{audio.js}) facilita la validación anti-trampas en el servidor, que reutiliza las mismas reglas de equilibrio (\texttt{config.js}, \texttt{club.js}, \texttt{logros.js}) para comprobar que los resultados enviados por el cliente son creíbles.
+El motor del juego está escrito en JavaScript vanilla, sin frameworks, y se ejecuta en el navegador sobre un elemento \texttt{canvas} 2D. La simulación es determinista: avanza en pasos fijos de 1/60 s con un generador de números pseudoaleatorios inicializado por semilla, lo que garantiza que la misma partida se pueda reproducir exactamente y permite probar la lógica en Node.js sin necesidad de navegador. La separación estricta entre simulación (módulo \texttt{mundo.js}) y presentación (módulos \texttt{render.js}, \texttt{sprites.js}, \texttt{audio.js}) facilita la validación anti-trampas en el servidor, que reutiliza las mismas reglas de equilibrio (\texttt{config.js}, \texttt{club.js}, \texttt{logros.js}) para comprobar que los resultados enviados por el cliente son creíbles. El protocolo OAuth 2.0 usado para el inicio de sesión con Google se basa en el estándar RFC 6749 \cite{rfc6749}.
 
 \section{Cómo se juega (manual de usuario)}
 
@@ -263,7 +263,7 @@ El progreso del juego se guarda en el servidor, no en el navegador. Al terminar 
     \mess{api}{409 reintentar con datos nuevos}{jug}
   \end{sdblock}
 \end{sequencediagram}}
-\caption{Flujo de una partida: el servidor valida tiempos y límites antes de actualizar el club (sección 7.10).}
+\caption{Flujo de una partida: el servidor valida tiempos y límites antes de actualizar el club (sección 7.10 de documentacion-tecnica.md).}
 \label{fig:sec-partida}
 \end{figure}
 
@@ -292,7 +292,7 @@ El progreso del juego se guarda en el servidor, no en el navegador. Al terminar 
     \mess{api}{409 refrescar club}{cli}
   \end{sdblock}
 \end{sequencediagram}}
-\caption{Contratar con concurrencia optimista: si la versión cambió, el servidor responde 409 (sección 7.11).}
+\caption{Contratar con concurrencia optimista: si la versión cambió, el servidor responde 409 (sección 7.11 de documentacion-tecnica.md).}
 \label{fig:sec-contratar}
 \end{figure}
 
@@ -301,6 +301,48 @@ Las reglas del club, las rarezas y los logros se comparten entre cliente y servi
 \section{Logros}
 
 La vitrina de logros (Figura~\ref{fig:juego-logros}) muestra los 29 hitos definidos en \texttt{logros.js}, cada uno con un dato de la historia del club. Los logros se validan en el servidor dentro de \texttt{juegoService} al finalizar la partida, para que no se puedan desbloquear enviando datos falsos desde el navegador. Al completar determinados logros se desbloquean las 10 equipaciones del vestuario.
+
+La Tabla~\ref{tab:logros-detalle} lista los 29 logros con su condición y equipación asociada (fuente: documentacion-tecnica.md §9.6).
+
+\begin{longtable}{@{}L{3.5cm} L{7.0cm} L{3.5cm}@{}}
+\caption{Logros del juego: condición y equipación desbloqueable.}\label{tab:logros-detalle}\\
+\toprule
+\textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endfirsthead
+\toprule
+\textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endhead
+Primera muesca & Vence a tu primer jefe & Segunda \\
+Camino de la final & Llega a la Final de la Copa del Rey (minuto 5) & — \\
+Campeones de Liga & Llega a la Final de Liga (minuto 10) & Tercera eléctrica \\
+Noche europea & Llega a la Final de la Champions (minuto 15) & Noche europea \\
+Final del Mundial & Llega a la Final del Mundial (minuto 20) & Final del Mundial \\
+Tercero en París & Consigue la ultra «Ganador del Balón de Oro» con Griezmann & — \\
+Bota de Oro charrúa & Consigue la ultra «Bota de Oro histórica» con Forlán & — \\
+Hamburgo, 2010 & Llega a la Final de la Champions con Forlán o con el Kun & — \\
+Noche de Mónaco & Vence a 3 jefes en una partida con Falcao & — \\
+El cabezazo del Camp Nou & Consigue la combinación «Dominio aéreo» con Godín & — \\
+Brazalete eterno & Consigue la combinación «Capitán eterno» con Gabi & — \\
+El Niño & Llega a la Final de la Copa del Rey con Fernando Torres & — \\
+Del Oporto al Calderón & Consigue la combinación «Jugón» con Futre & — \\
+Doblete del 96 & Llega a la Final de Liga con Simeone o con Pantić & Doblete del 96 \\
+Bernabéu, 2013 & Llega a la Final de la Copa del Rey con Miranda o con Courtois & — \\
+Cinco Zamoras & Consigue la ultra «Trofeo Zamora» con Oblak & Leyenda bajo palos \\
+Los 27 de Costa & Elimina a 270 rivales en una partida con Diego Costa & — \\
+La Araña campeona & Llega a la Final del Mundial con Julián Álvarez & — \\
+El récord de Adelardo & Elimina a 553 rivales en una sola partida & — \\
+El Sabio de Hortaleza & Aguanta 10 minutos con Luis Aragonés en el banquillo & — \\
+Partido a partido & Aguanta 15 minutos con el Cholo en el banquillo & — \\
+El muro & Aguanta los 5 primeros minutos sin que te toquen & — \\
+Poder de leyenda & Consigue tu primera ULTRA & — \\
+Leyenda total & Consigue tres ULTRAS en una partida & — \\
+Mil en el Metropolitano & Elimina a 1000 rivales en una partida & — \\
+El Pupas & Que te eliminen antes del minuto 2 & El Pupas \\
+Toda una vida & Juega 20 partidas con Koke & Adiós al Calderón \\
+Azul y blanco & Ten 20 jugadores en tu plantilla & Centenario 1903 \\
+Paseo de Leyendas & Ficha a las 8 leyendas & — \\
+\bottomrule
+\end{longtable}
+
+Cada logro esconde un dato real del club (por ejemplo, que Griezmann fue tercero en el Balón de Oro de 2018, que Oblak ganó cinco Zamoras seguidos o que el Atleti nació en 1903 vestido de azul y blanco). Los datos están en \texttt{logros.js} y se han comprobado uno a uno.
 
 \section{Evolución por fases}
 
@@ -322,8 +364,8 @@ Calidad & P47--P48 & Corrección de errores, documentación y gestión del sprin
 \bottomrule
 \end{longtable}
 
-La Tabla~\ref{tab:fases-sprint2} explica por qué el backlog del Sprint 2 se registró al cerrar el sprint (29/10/2026): las fases se desarrollaron del 23 al 26/10 y el seguimiento formal se volcó después en DoneTonic.
+La Tabla~\ref{tab:fases-sprint2} explica por qué el backlog del Sprint 2 se registró al cerrar el sprint (29/10/2026): las fases se desarrollaron del 23 al 26/10 y el seguimiento formal se volcó después en DoneTonic. Las gráficas de DoneTonic del Sprint 2 salen en recta porque el backlog se registró al cerrar el sprint; la evolución real se reconstruye con las fechas de los PRs (véase Anexo~\ref{anx:desarrollo}).
 
 \section{Resumen del Sprint 2}
 
-El Sprint 2 entregó 29 PBIs (P20--P48) y 50 tareas (T33--T82) en una semana (23/10--29/10/2026). Se integró en \texttt{main} mediante 14 pull requests (uno por fase y arreglos), todos con CI en verde. El juego resultante es un \textit{survivor} completo con progresión persistente, validación anti-trampas, 36 jugadores históricos, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ULTRAS, 16 equipos rivales, 10 jefes, mundo procedural infinito, 5 ambientes, 29 logros, 10 equipaciones, música chiptune y sonidos de grada sintetizados. Todo el código del juego (~11.100 líneas en 29 módulos) está cubierto por 136 pruebas automáticas.
+El Sprint 2 entregó 29 PBIs (P20--P48) y 50 tareas (T33--T82) en una semana (23/10--29/10/2026). Se integraron 14 pull requests de fase (\#36, \#44--\#54) y 3 de arreglo (\#51, \#55, \#56). El juego completo incluye: 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ULTRAS, 16 equipos rivales, 10 jefes, mundo procedural con 5 ambientes, 29 logros, 10 equipaciones, música chiptune y sonidos de grada sintetizados. Todo validado en servidor con anti-trampas y concurrencia optimista.
