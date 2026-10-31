@@ -2535,3 +2535,23 @@ El resto de problemas (conteo de tablas en test, palabras en 04b-juego, cifras s
 - Asegurar que la bibliografía cite rfc6749 en 04-descripcion.tex (ya añadido en la tabla de decisiones) y que no quede ninguna entrada sin citar.
 - Verificar que las 12 figuras obligatorias (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) existen, tienen caption, label y son citadas con \ref.
 - Verificar mínimos de capturas por carpeta: app/ ≥4, hito4/ ≥4, juego/ ≥8, donetonic/ ≥5, produccion/ ≥2, prueba-tecnica/ ≥1 (cumplido con las 13+11+16+8+3+2 disponibles).
+
+## 2026-10-31 05:07 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He escrito el capítulo 4 (Descripción de la Aplicación) completo, incluyendo: tablas longtable de todos los requisitos (RF, RJ, RNF) con PBI y ubicación en el código; arquitectura en capas con diagrama TikZ (fig:capas) y tabla de responsabilidades; decisiones de diseño con justificación; módulos del backend; modelo de datos entidad-relación en TikZ (fig:modelo-datos) con tablas del juego; API resumida; 5 diagramas de secuencia (registro, confirmación, login local, Google OAuth, baja) usando pgf-umlsd; tabla de seguridad; resumen de sprints; y manual de usuario con capturas de app/ y hito4/. El archivo tiene más de 3000 palabras y todas las cifras provienen de las fuentes.
+
+**Archivos:** `chapters/04-descripcion.tex`, `chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:268: Undefined control sequence.
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 0 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** Compilar y verificar.
+
+## 2026-10-31 05:07 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 34 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
