@@ -6,15 +6,16 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 ## Temas
 
-[[beamer]] · [[bibliografia]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[longtable]] · [[lua]] · [[memoria]] · [[overfull]] · [[overleaf]] · [[pgfplots]] · [[referencias]] · [[revision]] · [[tablas]] · [[texttt]] · [[tikz]]
+[[beamer]] · [[bibliografia]] · [[bibtex]] · [[datos]] · [[general]] · [[latex]] · [[longtable]] · [[lua]] · [[memoria]] · [[overfull]] · [[overleaf]] · [[pgf-umlsd]] · [[pgfplots]] · [[referencias]] · [[revision]] · [[secuencia]] · [[tablas]] · [[texttt]] · [[tikz]]
 
-## Pendientes de revisar (3)
+## Pendientes de revisar (4)
 
 - [[citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesta
 - [[los-identificadores-largos-en-texttt-no-se-parten-solos-usar|Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando]] · ⚠️ propuesta
+- [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesta
 - [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
 
-## Todas (26)
+## Todas (27)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
 - [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
@@ -33,6 +34,7 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 - [[no-meter-codigo-lua-dentro-de-directlua|No meter código Lua dentro de \directlua]]
 - [[no-meter-saltos-de-linea-n-dentro-de-tex-sprint|No meter saltos de línea \n dentro de tex.sprint]]
 - [[nombres-de-archivo-normales-sin-espacios-y-con-extension|Nombres de archivo normales: sin espacios y con extensión]]
+- [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesta
 - [[pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d|pgfplots: línea horizontal de referencia de lado a lado con \draw]]
 - [[pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida|pgfplots: symbolic x coords necesita la lista ya expandida]]
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]]

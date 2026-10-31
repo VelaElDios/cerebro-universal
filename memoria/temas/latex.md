@@ -16,6 +16,7 @@ Lecciones sobre latex (este archivo se genera solo).
 - [[los-identificadores-largos-en-texttt-no-se-parten-solos-usar|Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando]] · ⚠️ propuesta
 - [[no-meter-codigo-lua-dentro-de-directlua|No meter código Lua dentro de \directlua]]
 - [[no-meter-saltos-de-linea-n-dentro-de-tex-sprint|No meter saltos de línea \n dentro de tex.sprint]]
+- [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesta
 - [[pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d|pgfplots: línea horizontal de referencia de lado a lado con \draw]]
 - [[pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida|pgfplots: symbolic x coords necesita la lista ya expandida]]
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]]
