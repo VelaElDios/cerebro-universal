@@ -4396,3 +4396,29 @@ El constructor corrigió rutas de capturas y desbordes de margen, pero la compil
 ## 2026-10-31 10:44 · 🧠 Lección propuesta para la memoria
 
 [[pgf-umlsd-y-comandos-fragiles-en-sequencediagram]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-10-31 11:43 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He escrito el capítulo completo 04-descripcion.tex con todos los requisitos (RF, RJ, RNF en longtable), arquitectura (diagrama de capas en TikZ fig:capas), modelo de datos (entidad-relación en TikZ fig:modelo-datos), módulos del backend, API, los 5 diagramas de secuencia obligatorios (registro, confirmación, login local, Google OAuth, baja) usando sequencediagram, tabla de seguridad, resumen de sprints y manual de usuario con capturas de app/ y hito4/. Todos los datos provienen de documentacion-tecnica.md y las capturas listadas en la sección 16. El archivo está listo para compilar con la plantilla.
+
+**Archivos:** `chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./Memoria.tex:21: File ended while scanning use of \@writefile.
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 6 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** Escribir el capítulo 04b-juego.tex completo (concepto, manual de usuario con capturas, sistemas, arquitectura del juego, servidor y anti-trampas con diagramas de secuencia fig:sec-partida y fig:sec-contratar, logros, evolución por fases) y actualizar bib/ref.bib con las referencias extra (RFC 6749, bcrypt, Vampire Survivors, DoneTonic).
+
+## 2026-10-31 11:48 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-10-31 11:48 · ⏸️ Proyecto pausado
+
+Se ha llegado al máximo de pasos (50 de 50). El workflow no hará nada más hasta que Javier lo revise.
+
+Para continuar: en `proyecto.json`, subir `max_pasos` y volver a poner `"estado": "en-construccion"`.
