@@ -2236,3 +2236,128 @@ He corregido directamente los dos archivos críticos (04-descripcion.tex y 04b-j
 - Asegurar que las capturas mínimas por carpeta están referenciadas: 4 `app/`, 4 `hito4/`, 8 `juego/`, 5 `donetonic/`, 2 `produccion/`, 1 `prueba-tecnica/`.
 - Revisar que todos los RF/RJ/RNF aparecen en el texto (capítulos 04 y 04b) y que la trazabilidad del anexo a4 cubre P1–P48 y T1–T82.
 - Si `verificar.py` sigue fallando, corregir los errores restantes (máximo 2 archivos por paso) y volver a compilar.
+
+## 2026-10-31 02:02 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He reescrito `chapters/04-descripcion.tex` completo para corregir el error fatal de compilación de la línea 246 (`\texttt{\textwidth}` trataba un registro de longitud como texto y producía "Missing number, treated as zero", abortando LuaLaTeX sin PDF). En su lugar se usa `\string\textwidth` dentro de `\texttt`. El archivo conserva todo lo que funcionaba (tablas de requisitos RF/RJ/RNF, `fig:capas`, tabla de decisiones, módulos del backend, `fig:modelo-datos`) y completa lo que faltaba según la spec: frontend, tabla de la API, los cinco diagramas de secuencia obligatorios con sintaxis `pgf-umlsd` válida dentro de `\resizebox{\textwidth}{!}{...}` (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`), los demás flujos en texto, la tabla de seguridad (14 amenazas), el resumen de los dos sprints y el manual de usuario con capturas de `app/` (7) y `hito4/` (5). Todas las `longtable` van sin envoltorio `table`, con `\caption`/`\label` y `\ref`, y los identificadores largos llevan `\allowbreak` para no salirse del margen.
+
+**Archivos:** `chapters/04-descripcion.tex`, `chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:36: Missing } inserted.
+- intento 2: ❌ ./chapters/04b-juego.tex:298: Missing \endcsname inserted. (tocó `chapters/04-descripcion.tex`)
+- intento 3: ❌ ./chapters/04b-juego.tex:281: Missing \endcsname inserted. (tocó `chapters/04b-juego.tex`)
+
+**Repos leídos:** saas @ d0fa157 2026-10-29 19:39:49 +0100
+
+**Siguiente:** Ejecutar `latexmk` (LuaLaTeX) + `bibtex` + `verificar.py` para comprobar que el error fatal de `04-descripcion.tex:246` ya no ocurre y que las citas y referencias (`anx:desarrollo`, `anx:ia`) se resuelven en pasadas sucesivas. Si aparecen nuevos errores (p. ej. en `chapters/04b-juego.tex`: sintaxis `pgf-umlsd` de `fig:sec-partida`/`fig:sec-contratar`, `longtable` dentro de `table`, o números no trazables como «422»/«1996»), corregirlos en el siguiente paso con máximo 2 archivos, y después comprobar que `verificar.py` cuenta ≥15 tablas con caption/label/ref, ≥30 figuras, las capturas mínimas por carpeta y todos los RF/RJ/RNF, P1–P48 y T1–T82.
+
+## 2026-10-31 02:03 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación fallida: error fatal en `chapters/04b-juego.tex:281` (Missing \endcsname inserted) dentro de un entorno `sequencediagram` de `pgf-umlsd`. La sintaxis del diagrama de secuencia (probablemente `fig:sec-partida` o `fig:sec-contratar`) contiene un identificador no válido (guiones bajos, dos puntos, o caracteres especiales en nombres de hilos/instancias).
+- 13 citas bibliográficas indefinidas (bcrypt, cloudrun, donetonic, enunciado, express, githubactions, githubflow, nodejs, postgresql, rfc6749, scrumguide). El `Memoria.tex` protegido usa `biblatex` + `biber` con `\addbibresource{bibliografia.bib}`, pero `bibliografia.bib` no contiene las entradas requeridas; sí están en `bib/ref.bib`.
+- El test `verificar.py` no se ejecuta porque no se genera PDF.
+
+Qué está bien: el builder ha reescrito `04-descripcion.tex` y `04b-juego.tex` corrigiendo el error de `\texttt{\textwidth}` y completando los contenidos exigidos (requisitos, arquitectura, flujos, juego, etc.). Las tablas `longtable` ya no están dentro de `table`, llevan `\caption`/`\label` y se citan con `\ref`. Los diagramas de secuencia obligatorios en `04-descripcion` (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`) usan sintaxis `pgf-umlsd` válida y caben en `\resizebox{\textwidth}{!}{...}`.
+
+Qué está mal:
+1. En `04b-juego.tex` los dos diagramas de secuencia del juego (`fig:sec-partida`, `fig:sec-contratar`) provocan "Missing \endcsname". En `pgf-umlsd` los nombres de hilo/instancia (`\newthread{...}`, `\newinst{...}`) deben ser identificadores simples (sin `_`, `:`, `.`, espacios). Revisar las etiquetas usadas en esos diagramas.
+2. La bibliografía no resuelve porque `bibliografia.bib` (la que lee `Memoria.tex`) no tiene las 13 entradas. Hay que volcar el contenido de `bib/ref.bib` a `bibliografia.bib` (o añadir las que falten) y compilar con `latexmk` + `biber`.
+
+He corregido directamente `bibliografia.bib` con las entradas completas de `bib/ref.bib`. El diagrama de secuencia debe corregirlo el builder en el siguiente paso.
+<<<ARCHIVO bibliografia.bib>>
+% Bibliografía de la memoria (BibTeX, estilo apalike).
+% Solo referencias que aparecen en las fuentes del proyecto.
+
+@misc{express,
+  author = {{Express}},
+  title = {Express, Node.js web application framework},
+  year = {s.f.},
+  howpublished = {\url{https://expressjs.com/}}
+}
+
+@misc{githubflow,
+  author = {{GitHub}},
+  title = {GitHub flow},
+  year = {s.f.},
+  howpublished = {\url{https://docs.github.com/en/get-started/using-github/github-flow}}
+}
+
+@misc{nodejs,
+  author = {{OpenJS Foundation}},
+  title = {Node.js},
+  year = {s.f.},
+  howpublished = {\url{https://nodejs.org/}}
+}
+
+@misc{postgresql,
+  author = {{The PostgreSQL Global Development Group}},
+  title = {PostgreSQL},
+  year = {s.f.},
+  howpublished = {\url{https://www.postgresql.org/}}
+}
+
+@misc{cloudrun,
+  author = {{Google Cloud}},
+  title = {Cloud Run documentation},
+  year = {s.f.},
+  howpublished = {\url{https://cloud.google.com/run/docs}}
+}
+
+@misc{githubactions,
+  author = {{GitHub}},
+  title = {GitHub Actions documentation},
+  year = {s.f.},
+  howpublished = {\url{https://docs.github.com/en/actions}}
+}
+
+@misc{scrumguide,
+  author = {Schwaber, K. and Sutherland, J.},
+  title = {The Scrum Guide},
+  year = {2020},
+  howpublished = {\url{https://scrumguides.org/scrum-guide.html}}
+}
+
+@misc{enunciado,
+  author = {{Universidad de Castilla-La Mancha}},
+  title = {Especificación del Proyecto. Procesos de Ingeniería del Software, curso 2026-2027 (Sprint 1)},
+  year = {2026}
+}
+
+@misc{rfc6749,
+  author = {Hardt, D. (ed.)},
+  title = {The OAuth 2.0 Authorization Framework},
+  year = {2012},
+  howpublished = {RFC 6749, Internet Engineering Task Force (IETF), \url{https://www.rfc-editor.org/rfc/rfc6749}}
+}
+
+@misc{bcrypt,
+  author = {Provos, N. and Mazières, D.},
+  title = {A Future-Adaptable Password Scheme},
+  year = {1999},
+  howpublished = {Proceedings of the FREENIX Track, 1999 USENIX Annual Technical Conference, \url{https://www.usenix.org/legacy/events/usenix99/provos/provos.pdf}}
+}
+
+@misc{vampiresurvivors,
+  author = {{poncle}},
+  title = {Vampire Survivors [videojuego]},
+  year = {2022},
+  howpublished = {Acceso anticipado 17/12/2021; versión 1.0 20/10/2022, \url{https://store.steampowered.com/app/1794680/Vampire_Survivors/}}
+}
+
+@misc{donetonic,
+  author = {{DoneTonic}},
+  title = {Herramienta de gestión de proyectos ágiles usada para el backlog},
+  year = {s.f.},
+  howpublished = {\url{https://app.donetonic.com}}
+}
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Corregir los dos diagramas de secuencia en `chapters/04b-juego.tex` (`fig:sec-partida` y `fig:sec-contratar`): usar solo identificadores ASCII simples en `\newthread`/`\newinst` (p. ej. `jugador`, `mundo`, `api`, `servicio`, `bd`), sin guiones bajos ni dos puntos. Mantener la estructura `call`/`mess`/`sdblock` y envolver en `\resizebox{\textwidth}{!}{...}`.
+- Tras corregir, compilar con `latexmk` (LuaLaTeX) y `biber` para resolver las citas, y ejecutar `verificar.py` para confirmar que pasa.
+- Verificar que `verificar.py` cuenta ≥15 tablas con `\caption`+`\label`+`\ref`, ≥30 figuras, capturas mínimas por carpeta, todos los RF/RJ/RNF en el texto, y trazabilidad completa P1–P48 y T1–T82 en el anexo A4.

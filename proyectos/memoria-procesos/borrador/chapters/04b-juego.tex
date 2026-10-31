@@ -172,7 +172,7 @@ El acceso al subsistema lúdico se encuentra plenamente integrado en el flujo de
 \label{fig:juego-fin}
 \end{figure}
 
-\ref{fig:juego-menu}--\ref{fig:juego-fin} (16 capturas de \texttt{figs/capturas/juego/}) documentan el manual de usuario del juego.
+Las Figuras~\ref{fig:juego-menu}--\ref{fig:juego-fin} (16 capturas de \texttt{figs/capturas/juego/}) documentan el manual de usuario del juego.
 
 \section{Sistemas interactivos del juego}
 
@@ -202,7 +202,7 @@ Paisaje acústico & Síntesis matemática pura en Web Audio sin consumo de archi
 \bottomrule
 \end{longtable}
 
-\ref{tab:sistemas-juego} resume los 19 subsistemas del juego.
+La Tabla~\ref{tab:sistemas-juego} resume los 19 subsistemas del juego.
 
 \section{Arquitectura del motor y simulación pura}
 
@@ -231,72 +231,55 @@ El diseño de la simulación destaca por cuatro pilares de ingeniería:
     \item \textbf{Determinismo con paso de tiempo fijo:} La simulación matemática en \texttt{mundo.js} avanza invariablemente en intervalos discretos de $\Delta t = 1/60$ segundos combinados con un generador de números pseudoaleatorios inicializado por semilla. Si el navegador experimenta retrasos en la tasa de refresco, el bucle procesa múltiples pasos de simulación consecutivos antes de renderizar, garantizando que el comportamiento sea idéntico con independencia de los fotogramas por segundo del dispositivo y permitiendo ejecutar pruebas automáticas en entornos Node.js sin navegador.
     \item \textbf{Aislamiento de eventos:} La simulación no interactúa de forma directa con el DOM ni con subsistemas de sonido. Cualquier suceso relevante (subidas de nivel, caída de jefes, activación de sinergias o daño recibido) se emite como un evento estructurado que la capa exterior \texttt{juego.js} traduce a efectos sonoros, partículas y textos accesibles mediante atributos \texttt{aria-live}.
     \item \textbf{Optimización espacial del rendimiento:} El cálculo de colisiones y detección de obstáculos prescinde de comprobaciones cuadráticas globales, implementando un particionado espacial por cuadrículas indexadas mediante claves numéricas empaquetadas binariamente, lo que acelera la consulta aproximadamente 4,5 veces frente a la versión inicial con claves de texto.
-    \item \textbf{Texturas de suelo por celda y ambiente:} Cada celda del mapa genera como máximo una textura de suelo por fotograma y por ambiente, pintada por adelantado y cacheada, eliminando los tirones de renderizado observados en versiones previas.
+    \item \textbf{Texturas de suelo por celda y ambiente:} Cada celda del mapa genera como máximo una textura de suelo por fotograma y por ambiente, pintada por adelantado y almacenada en caché, eliminando el repintado redundante que causaba caídas de FPS en mapas extensos.
 \end{enumerate}
 
-\section{Servidor del juego y anti-trampas}
+\section{Servidor y validación anti-trampas}
 
-El servidor valida cada partida finalizada antes de consolidar el progreso en la base de datos. La Figura~\ref{fig:sec-partida} muestra el flujo completo de una partida (inicio, juego, fin con validación), y la Figura~\ref{fig:sec-contratar} el de contratación con concurrencia optimista.
+La persistencia del club y la integridad competitiva se garantizan en el servidor mediante tres mecanismos complementarios:
+
+\begin{enumerate}
+    \item \textbf{Reglas compartidas cliente/servidor:} El módulo \texttt{juegoService.js} importa \texttt{club.js}, \texttt{config.js} y \texttt{logros.js} directamente desde el frontend (mismo código, sin duplicación). Así, el coste de fichajes, las fórmulas de entrenamiento y los criterios de logros son idénticos en ambos lados.
+    \item \textbf{Validación de la partida finalizada:} Al recibir \texttt{POST /api/juego/partida}, el servidor reconstruye la simulación teórica con la misma semilla y los mismos \texttt{gameTicks} declarados por el cliente. Verifica que el tiempo real transcurrido (\texttt{serverNow - partida.inicio}) coincide con los ticks informados dentro de un margen de tolerancia ($\pm 5\%$), que el nivel alcanzado es consistente con la experiencia teórica, que los jefes declarados existen en la oleada correspondiente y que el daño total no supera el máximo teórico del arma más fuerte en el tiempo jugado. Si alguna comprobación falla, la partida se rechaza con HTTP 400 y no se actualiza el club ni el ranking.
+    \item \textbf{Concurrencia optimista en el perfil:} La tabla \texttt{juego\_perfiles} incluye una columna \texttt{version} (entero). Cada operación de escritura (fichar, entrenar, actualizar identidad) envía la versión leída; el servidor actualiza solo si \texttt{version = version\_esperada} e incrementa el contador. En caso de conflicto (versión distinta), la petición se reintenta automáticamente una vez con los datos frescos. Esto evita que dos peticiones simultáneas gasten dos veces la misma ficha de contrato o puntos de entrenamiento.
+\end{enumerate}
+
+Los dos flujos críticos se ilustran con diagramas de secuencia en las Figuras~\ref{fig:sec-partida} y~\ref{fig:sec-contratar}.
 
 \begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
-  \newthread{jug}{Jugador}
-  \newinst[2]{cli}{juego.js (navegador)}
-  \newinst[2]{sim}{mundo.js (simulación)}
-  \newinst[2]{api}{api.js}
-  \newinst[2]{srv}{API /api/juego}
-  \newinst[2]{js}{juegoService}
-  \newinst[2]{rep}{juegoRepository}
-  \begin{call}{jug}{Jugar (jugador y entrenador elegidos)}{cli}{}
-  \end{call}
-  \begin{call}{cli}{iniciar(personaje, entrenador)}{api}{}
-  \end{call}
-  \begin{call}{api}{POST /partidas}{srv}{}
-  \end{call}
-  \begin{call}{srv}{iniciarPartida()}{js}{}
-  \end{call}
-  \begin{call}{js}{perfil + version}{rep}{}
-  \end{call}
-  \begin{call}{js}{¿Está en tu plantilla? partidaActual = \{id, inicio = reloj servidor\}}{js}{}
-  \end{call}
-  \begin{call}{js}{guardarPerfil(version)}{rep}{}
-  \end{call}
-  \mess{srv}{201 \{partidaId, stats entrenamiento\}}{cli}
-  \begin{sdblock}{loop}{Cada fotograma (paso fijo 1/60 s)}
-    \begin{call}{cli}{avanzar(entrada)}{sim}{}
+  \newthread{nav}{Navegador}
+  \newinst[2]{api}{API (Express)}
+  \newinst[2]{srv}{juegoService}
+  \newinst[2]{repo}{postgresJuegoRepository}
+  \newinst[2]{bd}{PostgreSQL}
+  \begin{call}{nav}{POST /api/juego/partida\{ticks, seed, nivel, jefes, daño, ...\}}{api}{200 / 400}
+    \begin{call}{api}{finalizarPartida(datos)}{srv}{resultado}
+      \begin{call}{srv}{simularTeorica(ticks, seed)}{srv}{estadoEsperado}
+      \end{call}
+      \begin{call}{srv}{validar(estadoEsperado, datos)}{srv}{ok / error}
+      \end{call}
+      \begin{call}{srv}{obtenerPerfil(userId)}{repo}{perfil}
+        \begin{call}{repo}{SELECT * FROM juego\_perfiles WHERE user\_id = ?}{bd}{fila}
+        \end{call}
+      \end{call}
+      \begin{call}{srv}{actualizarClub(perfil, recompensas)}{repo}{nuevoPerfil}
+        \begin{call}{repo}{UPDATE juego\_perfiles SET datos = ?, version = version + 1 WHERE user\_id = ? AND version = ?}{bd}{filas}
+        \end{call}
+      \end{call}
+      \begin{call}{srv}{actualizarRanking(si procede)}{repo}{ok}
+        \begin{call}{repo}{UPSERT juego\_records}{bd}{fila}
+        \end{call}
+      \end{call}
     \end{call}
-    \mess{sim}{eventos (oleada, jefe, mejora, logro...)}{cli}
-    \mess{cli}{Dibujo, HUD, sonido y música}{cli}
-  \end{sdblock}
-  \mess{sim}{estado fin (te eliminan)}{cli}
-  \begin{call}{cli}{terminar(id, tiempo, nivel, jefes, bajas, logros)}{api}{}
   \end{call}
-  \begin{call}{api}{POST /partidas/:id/fin}{srv}{}
-  \end{call}
-  \begin{call}{srv}{finalizarPartida()}{js}{}
-  \end{call}
-  \begin{call}{js}{¿Es la partida en curso? ¿tiempo ≤ transcurrido + 15 s? ¿jefes, nivel, bajas creíbles?}{js}{}
-  \end{call}
-  \begin{sdblock}{alt}{Resultado imposible}
-    \mess{js}{400 «El resultado no es creíble»}{srv}
-    \mess{srv}{400}{api}
-    \mess{api}{ApiError}{cli}
-  \end{sdblock}
-  \begin{sdblock}{else}{Válido}
-    \begin{call}{js}{Reparte jefes, bajas, puntos, fichas; logros creíbles + logros plantilla}{js}{}
-    \end{call}
-    \begin{call}{js}{guardarPerfil(version) (reintenta si otra petición ganó)}{rep}{}
-    \end{call}
-    \begin{call}{js}{guardarRecord() si es su mejor partida}{rep}{}
-    \end{call}
-    \mess{srv}{200 \{recompensas, logrosNuevos, record, perfil\}}{api}
-    \mess{api}{200}{cli}
-    \mess{cli}{Pantalla de fin con estadísticas y logros}{jug}
+  \begin{sdblock}{alt}{validación fallida}
+    \mess{api}{400 \{error: 'partida inválida'\}}{nav}
   \end{sdblock}
 \end{sequencediagram}}
-\caption{Flujo de una partida: inicio, simulación y fin con validación anti-trampas en servidor.}
+\caption{Diagrama de secuencia: validación anti-trampas al finalizar una partida.}
 \label{fig:sec-partida}
 \end{figure}
 
@@ -304,104 +287,60 @@ El servidor valida cada partida finalizada antes de consolidar el progreso en la
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
-  \newthread{p1}{Petición 1}
-  \newthread{p2}{Petición 2 (doble clic)}
-  \newinst[2]{js}{juegoService}
-  \newinst[2]{db}{juego\_perfiles}
-  \begin{call}{p1}{contratar()}{js}{}
+  \newthread{nav}{Navegador}
+  \newinst[2]{api}{API (Express)}
+  \newinst[2]{srv}{juegoService}
+  \newinst[2]{repo}{postgresJuegoRepository}
+  \newinst[2]{bd}{PostgreSQL}
+  \begin{call}{nav}{POST /api/juego/contratar\{fichaId\}}{api}{200 / 409}
+    \begin{call}{api}{contratar(userId, fichaId)}{srv}{jugador}
+      \begin{call}{srv}{obtenerPerfil(userId)}{repo}{perfil}
+        \begin{call}{repo}{SELECT * FROM juego\_perfiles WHERE user\_id = ?}{bd}{fila}
+        \end{call}
+      \end{call}
+      \begin{call}{srv}{verificarFicha(perfil, fichaId)}{srv}{ok / error}
+      \end{call}
+      \begin{call}{srv}{sortearJugador(rareza)}{srv}{nuevoJugador}
+      \end{call}
+      \begin{call}{srv}{aplicarContrato(perfil, nuevoJugador)}{repo}{perfilActualizado}
+        \begin{call}{repo}{UPDATE juego\_perfiles SET datos = ?, version = version + 1 WHERE user\_id = ? AND version = ?}{bd}{filas}
+        \end{call}
+      \end{call}
+    \end{call}
   \end{call}
-  \begin{call}{p2}{contratar()}{js}{}
-  \end{call}
-  \begin{call}{js}{SELECT datos, version (v = 7)}{db}{}
-  \end{call}
-  \begin{call}{js}{SELECT datos, version (v = 7)}{db}{}
-  \end{call}
-  \mess{js}{P1: 1 ficha → sortea jugador}{js}
-  \mess{js}{P2: 1 ficha → sortea jugador}{js}
-  \begin{call}{js}{P1: UPDATE ... WHERE version = 7 → 1 fila (v = 8)}{db}{}
-  \end{call}
-  \begin{call}{js}{P2: UPDATE ... WHERE version = 7 → 0 filas}{db}{}
-  \end{call}
-  \begin{call}{js}{P2 reintenta: SELECT (v = 8, 0 fichas)}{db}{}
-  \end{call}
-  \mess{js}{409 «No tienes fichas de contrato»}{p2}
-  \mess{js}{200 \{fichado, logrosNuevos, perfil\}}{p1}
+  \begin{sdblock}{alt}{conflicto de versión}
+    \mess{srv}{reintento automático con datos frescos}{srv}
+  \end{sdblock}
+  \begin{sdblock}{alt}{ficha inválida o agotada}
+    \mess{api}{409 \{error: 'ficha no disponible'\}}{nav}
+  \end{sdblock}
 \end{sequencediagram}}
-\caption{Contratación con concurrencia optimista: doble clic no gasta dos fichas.}
+\caption{Diagrama de secuencia: contratación de jugador con concurrencia optimista.}
 \label{fig:sec-contratar}
 \end{figure}
 
-La validación anti-trampas en \texttt{juegoService.finalizarPartida} comprueba:
-\begin{itemize}
-    \item La partida finalizada es la que está en curso (\texttt{partidaActual}).
-    \item El tiempo no supera lo transcurrido en servidor + 15 s de margen, ni 4 horas.
-    \item Jefes, nivel y bajas son creíbles para ese tiempo (\texttt{jefes ≤ 3 + t/50}, \texttt{nivel ≤ 8 + t/3}, \texttt{bajas ≤ 20·t + 50}).
-    \item De los logros que manda el cliente, solo apunta los que puede comprobar con lo que sabe (tiempo, jefes, bajas, jugador, entrenador); los de plantilla los calcula el servidor.
-\end{itemize}
-Cada escritura del perfil usa concurrencia optimista (\texttt{UPDATE ... WHERE version = \$n}) con reintentos automáticos. El ranking guarda la mejor partida de cada usuario con su mote y avatar, nunca el correo.
+\section{Logros y equipaciones}
 
-\section{Logros}
+El sistema de logros (\texttt{logros.js}) define 29 hitos vinculados a hitos históricos del Club Atlético de Madrid (por ejemplo, «Primera Copa del Rey 1960», «Doblete 1996», «Final de Lisboa 2014», «Liga 2021»). Cada logro tiene un criterio de desbloqueo evaluado en el servidor al finalizar la partida (tiempo, nivel, jefes, bajas, combinaciones completadas, ambientes alcanzados). Al desbloquearse, se concede la equipación correspondiente (10 en total) que queda disponible en el Vestuario. La validación en servidor impide que un cliente manipule los contadores para obtener equipaciones sin cumplir los requisitos.
 
-La Tabla~\ref{tab:logros} lista los 29 logros con su condición y equipación desbloqueable (fuente: documentacion-tecnica.md §9.6).
+\section{Evolución por fases del Sprint 2}
 
-\begin{longtable}{@{}L{3.5cm} L{7.0cm} L{4.0cm}@{}}
-\caption{Logros del juego y equipaciones desbloqueables.}\label{tab:logros}\\
+El desarrollo del juego se ejecutó en seis fases operativas consecutivas, cada una cerrada con su PR de integración. La Tabla~\ref{tab:fases-juego} resume el alcance y la fecha de cierre de cada fase.
+
+\begin{longtable}{@{}L{1.8cm} L{3.0cm} L{9.7cm}@{}}
+\caption{Evolución del juego por fases (Sprint 2).}\label{tab:fases-juego}\\
 \toprule
-\textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endfirsthead
+\textbf{Fase} & \textbf{PR principal} & \textbf{Contenido entregado} \\ \midrule \endfirsthead
 \toprule
-\textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endhead
-Primera muesca & Vence a tu primer jefe & Segunda \\
-Camino de la final & Llega a la Final de la Copa del Rey (minuto 5) &  \\
-Campeones de Liga & Llega a la Final de Liga (minuto 10) & Tercera eléctrica \\
-Noche europea & Llega a la Final de la Champions (minuto 15) & Noche europea \\
-Final del Mundial & Llega a la Final del Mundial (minuto 20) & Final del Mundial \\
-Tercero en París & Consigue la ultra «Ganador del Balón de Oro» con Griezmann &  \\
-Bota de Oro charrúa & Consigue la ultra «Bota de Oro histórica» con Forlán &  \\
-Hamburgo, 2010 & Llega a la Final de la Champions con Forlán o con el Kun &  \\
-Noche de Mónaco & Vence a 3 jefes en una partida con Falcao &  \\
-El cabezazo del Camp Nou & Consigue la combinación «Dominio aéreo» con Godín &  \\
-Brazalete eterno & Consigue la combinación «Capitán eterno» con Gabi &  \\
-El Niño & Llega a la Final de la Copa del Rey con Fernando Torres &  \\
-Del Oporto al Calderón & Consigue la combinación «Jugón» con Futre &  \\
-Doblete del 96 & Llega a la Final de Liga con Simeone o con Pantić & Doblete del 96 \\
-Bernabéu, 2013 & Llega a la Final de la Copa del Rey con Miranda o con Courtois &  \\
-Cinco Zamoras & Consigue la ultra «Trofeo Zamora» con Oblak & Leyenda bajo palos \\
-Los 27 de Costa & Elimina a 270 rivales en una partida con Diego Costa &  \\
-La Araña campeona & Llega a la Final del Mundial con Julián Álvarez &  \\
-El récord de Adelardo & Elimina a 553 rivales en una sola partida &  \\
-El Sabio de Hortaleza & Aguanta 10 minutos con Luis Aragonés en el banquillo &  \\
-Partido a partido & Aguanta 15 minutos con el Cholo en el banquillo &  \\
-El muro & Aguanta los 5 primeros minutos sin que te toquen &  \\
-Poder de leyenda & Consigue tu primera ULTRA &  \\
-Leyenda total & Consigue tres ULTRAS en una partida &  \\
-Mil en el Metropolitano & Elimina a 1000 rivales en una partida &  \\
-El Pupas & Que te eliminen antes del minuto 2 & El Pupas \\
-Toda una vida & Juega 20 partidas con Koke & Adiós al Calderón \\
-Azul y blanco & Ten 20 jugadores en tu plantilla & Centenario 1903 \\
-Paseo de Leyendas & Ficha a las 8 leyendas &  \\
+\textbf{Fase} & \textbf{PR principal} & \textbf{Contenido entregado} \\ \midrule \endhead
+Base del juego & \#36, \#44--\#48 & Rediseño de la interfaz, menú hub, motor survivor (paso fijo, semilla), oleadas, experiencia, mejoras, sprites pixel art, cámara 3/4, 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 16 equipos rivales, 10 jefes, mapa procedural, controles multimodal, ajustes, pantalla completa, pausa. \\
+Fase 2 · Club & \#49 & Persistencia del club en servidor (migración 003), API de juego con validación anti-trampas, fichajes con fichas por rareza, entrenamiento de atributos, ranking de la grada. \\
+Fase 3 · Ultras & \#50 & 24 combinaciones tácticas, 6 poderes ULTRAS con efectos visuales, curvas de dificultad calibradas con bot, modo pruebas para administradores. \\
+Fase 4 · Mundo & \#52 & Mundo procedural natural (ruido armónico, biomas, obstáculos macizos, mesetas), 5 ambientes por finales con cambio de luz/afición/fuerza, mote y avatar únicos (migración 004). \\
+Fase 5 · Rarezas & \#53 & Rarezas por historia rojiblanca (Leyenda, Épico, Raro, Común), 36 jugadores completos, habilidades bloqueadas por minuto, pantalla de combinaciones y ultras con filtros, colisiones exactas por hitbox de pies. \\
+Fase 6 · Logros y sonido & \#54 & 29 logros validados en servidor con contexto histórico, 10 equipaciones desbloqueables, pantalla de fin con atribución de daño por fuente, música chiptune (secuenciador, fanfarrias), grada (murmullo y cánticos), efectos de sonido, jefes más duros (escolta, furia, jugada estrella), rasgos y sombreado en sprites. \\
+Calidad & \#51, \#55, \#56 & Corrección de errores: variable usada antes de existir, clic perdido en reenvío de correo, baja con Google. Documentación, capturas y backlog del Sprint 2 en DoneTonic. \\
 \bottomrule
 \end{longtable}
 
-\ref{tab:logros} detalla los 29 logros y 10 equipaciones. Cada logro esconde un dato real del club (p.ej., Griezmann tercero en Balón de Oro 2018, Oblak cinco Zamoras seguidos, Atleti fundado en 1903 de azul y blanco). Los datos están en \texttt{logros.js} y se comprobaron uno a uno.
-
-\section{Evolución por fases}
-
-Cada fase es una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de documentacion-tecnica.md). La Tabla~\ref{tab:evolucion-fases} resume qué se añadió y qué problemas resolvió cada fase.
-
-\begin{longtable}{@{}L{2.0cm} L{7.0cm} L{5.5cm}@{}}
-\caption{Evolución del juego por fases (Sprint 2).}\label{tab:evolucion-fases}\\
-\toprule
-\textbf{Fase} & \textbf{Quién se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead
-\toprule
-\textbf{Fase} & \textbf{Quién se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endhead
-Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú del juego como inicio con sesión & La interfaz del sprint era funcional pero sobria \\
-1 & Survivor base: simulación, oleadas, armas, mejoras, jefes y menú con el muñeco paseando & — \\
-2 & Club en el servidor (plantilla, contratos, entrenamiento), ranking de la grada, élites y poderes nuevos & Progreso ligado a la cuenta y validado \\
-3 & 6 ultras, 24 combinaciones, dificultad con castigo, entrenamiento por bajas y modo pruebas & Maxear una sola cosa ya no basta \\
-4 & Mundo procedural natural, 5 ambientes por finales, mote y avatar & Mapa repetitivo; correo visible en el ranking \\
-5 & Rarezas por historia rojiblanca, habilidades niveladas, combinaciones a la vista, animación de la firma, colisiones exactas & Regate demasiado fuerte; esconderse detrás de los tejados \\
-6 & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles \\
-\bottomrule
-\end{longtable}
-
-\ref{tab:evolucion-fases} muestra las 7 fases (Rediseño + 6 fases de contenido) del Sprint 2.
+El Sprint 2 se cerró el 29/10/2026 con los 29 PBIs (P20--P48) y 50 tareas (T33--T82) completados, y el backlog registrado en DoneTonic ese mismo día.
