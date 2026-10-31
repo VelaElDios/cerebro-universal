@@ -12,6 +12,15 @@
 \usepackage{xurl}
 \usepackage{breakcites}  % permite partir citas largas entre líneas (evita overfull hbox con [Universidad de Castilla-La Mancha, 2026])
 
+% Marcadores de claves usados en el diagrama entidad-relación (fig:modelo-datos).
+% Se definen con \providecommand para no pisar nada si ya existieran.
+\providecommand{\pk}{\textsc{PK}}
+\providecommand{\fk}{\textsc{FK}}
+\providecommand{\uk}{\textsc{UK}}
+% \attr lista los atributos de una entidad en el diagrama ER.
+% Acepta argumento opcional: \attr{nombre} o \attr nombre (el texto queda suelto).
+\providecommand{\attr}[1][]{\texttt{#1}}
+
 % Altura de cabecera recomendada por fancyhdr
 \setlength{\headheight}{15pt}
 

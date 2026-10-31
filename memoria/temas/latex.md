@@ -19,6 +19,7 @@ Lecciones sobre latex (este archivo se genera solo).
 - [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesta
 - [[pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d|pgfplots: línea horizontal de referencia de lado a lado con \draw]]
 - [[pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida|pgfplots: symbolic x coords necesita la lista ya expandida]]
+- [[rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact|Rutas de capturas y nombres de archivo deben coincidir exactamente con figs/capturas/]] · ⚠️ propuesta
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]]
 - [[tablas-largas-longtable-no-table|Tablas largas: longtable, no table]]
 - [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
