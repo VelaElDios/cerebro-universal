@@ -82,3 +82,107 @@
   }%
 }
 \makeatother
+
+% -------------------------------
+% pgf-umlsd: evitar "Missing \endcsname inserted" al cerrar sequencediagram
+% -------------------------------
+% pgf-umlsd puede reutilizar textos de participantes, mensajes y bloques como
+% nombres internos (\csname ... \endcsname). Si esos textos llevan comandos
+% robustos (\texttt, \emph, \textbackslash, \allowbreak...), aparece \protect
+% dentro del \csname y LuaLaTeX aborta con "Missing \endcsname inserted" justo
+% al leer el \end{sequencediagram}.
+%
+% Solución: dentro del entorno sequencediagram se convierten localmente esos
+% comandos en macros expandibles seguras:
+%   - \lgc@umlsd@plain{texto} imprime el texto tal cual (para comandos de un
+%     argumento: \texttt, \emph, \url...).
+%   - \lgc@umlsd@noop no expande a nada (para comandos sin argumento:
+%     \allowbreak, \textbackslash...), de modo que dentro de un \csname no
+%     queda ningún token no expandible.
+% Además, se parchea \newthread, \newinst, \call, \mess y sdblock para que
+% sus argumentos se expandan con \lgc@umlsd@plain antes de pasarlos a pgf-umlsd.
+% Fuera del entorno no cambia nada.
+% -------------------------------
+\makeatletter
+\long\def\lgc@umlsd@plain#1{#1}
+\def\lgc@umlsd@noop{}
+
+% Guardar originales
+\let\lgc@orig@newthread\newthread
+\let\lgc@orig@newinst\newinst
+\let\lgc@orig@call\call
+\let\lgc@orig@mess\mess
+\let\lgc@orig@sdblock\sdblock
+\let\lgc@orig@endsdblock\endsdblock
+
+\AtBeginEnvironment{sequencediagram}{%
+  % 1. Neutralizar comandos frágiles comunes
+  \let\texttt\lgc@umlsd@plain
+  \let\textit\lgc@umlsd@plain
+  \let\textbf\lgc@umlsd@plain
+  \let\textsc\lgc@umlsd@plain
+  \let\textsl\lgc@umlsd@plain
+  \let\textsf\lgc@umlsd@plain
+  \let\textrm\lgc@umlsd@plain
+  \let\textup\lgc@umlsd@plain
+  \let\textnormal\lgc@umlsd@plain
+  \let\emph\lgc@umlsd@plain
+  \let\text\lgc@umlsd@plain
+  \let\underline\lgc@umlsd@plain
+  \let\url\lgc@umlsd@plain
+  \let\path\lgc@umlsd@plain
+  \let\enquote\lgc@umlsd@plain
+  \let\textquote\lgc@umlsd@plain
+  \let\textsubscript\lgc@umlsd@plain
+  \let\textsuperscript\lgc@umlsd@plain
+  \let\mathrm\lgc@umlsd@plain
+  \let\mathbf\lgc@umlsd@plain
+  \let\mathit\lgc@umlsd@plain
+  \let\mathcal\lgc@umlsd@plain
+  \let\operatorname\lgc@umlsd@plain
+  \let\allowbreak\lgc@umlsd@noop
+  \let\newline\lgc@umlsd@noop
+  \let\textbackslash\lgc@umlsd@noop
+  \let\textbar\lgc@umlsd@noop
+  \let\textasciicircum\lgc@umlsd@noop
+  \let\textasciitilde\lgc@umlsd@noop
+  \let\textbraceleft\lgc@umlsd@noop
+  \let\textbraceright\lgc@umlsd@noop
+  \let\textless\lgc@umlsd@noop
+  \let\textgreater\lgc@umlsd@noop
+  \let\textquotedbl\lgc@umlsd@noop
+  \let\textbullet\lgc@umlsd@noop
+  \let\textendash\lgc@umlsd@noop
+  \let\textemdash\lgc@umlsd@noop
+  \let\protect\lgc@umlsd@noop
+  \let\~\lgc@umlsd@noop
+  \let\'\lgc@umlsd@noop
+  \let\`\lgc@umlsd@noop
+  \let\=\lgc@umlsd@noop
+  \let\^\lgc@umlsd@noop
+  \let\.\lgc@umlsd@noop
+  \let\u\lgc@umlsd@noop
+  \let\v\lgc@umlsd@noop
+  \let\H\lgc@umlsd@noop
+  \let\c\lgc@umlsd@noop
+  \let\d\lgc@umlsd@noop
+  \let\b\lgc@umlsd@noop
+  \let\k\lgc@umlsd@noop
+  % 2. Parchear macros de pgf-umlsd para expandir argumentos de forma segura
+  \renewcommand{\newthread}[2][]{\lgc@orig@newthread[{#1}]{\lgc@umlsd@plain{#2}}}%
+  \renewcommand{\newinst}[3][]{\lgc@orig@newinst[{#1}]{#2}{\lgc@umlsd@plain{#3}}}%
+  \renewcommand{\call}[4]{\lgc@orig@call{\lgc@umlsd@plain{#1}}{\lgc@umlsd@plain{#2}}{\lgc@umlsd@plain{#3}}{\lgc@umlsd@plain{#4}}}%
+  \renewcommand{\mess}[3]{\lgc@orig@mess{\lgc@umlsd@plain{#1}}{\lgc@umlsd@plain{#2}}{\lgc@umlsd@plain{#3}}}%
+  \renewcommand{\sdblock}[2]{\lgc@orig@sdblock{\lgc@umlsd@plain{#1}}{\lgc@umlsd@plain{#2}}}%
+  \renewcommand{\endsdblock}{\lgc@orig@endsdblock}%
+}
+\AtEndEnvironment{sequencediagram}{%
+  % Restaurar originales por si hay entornos anidados (no debería)
+  \let\newthread\lgc@orig@newthread
+  \let\newinst\lgc@orig@newinst
+  \let\call\lgc@orig@call
+  \let\mess\lgc@orig@mess
+  \let\sdblock\lgc@orig@sdblock
+  \let\endsdblock\lgc@orig@endsdblock
+}
+\makeatother
