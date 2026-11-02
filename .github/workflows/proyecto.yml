@@ -25,6 +25,8 @@ jobs:
     steps:
       - name: Descargar el repo
         uses: actions/checkout@v5
+        with:
+          ref: main   # la última versión al arrancar (si el paso esperó en cola, no la del momento del disparo)
 
       - name: Preparar Python
         uses: actions/setup-python@v6
