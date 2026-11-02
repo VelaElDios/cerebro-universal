@@ -15,7 +15,7 @@ La evaluación de la calidad y del cumplimiento de la especificación se diseñ�
 
 \subsection{Pruebas automáticas}
 
-La batería de pruebas automatizadas consta de 276 pruebas, divididas en 140 del Sprint 1 (cuentas, API, base de datos, seguridad, prueba técnica) y 136 del juego (simulación, club, movilidad, API juego, personajes, habilidades, ultras, logros, repositorio). El comando único \texttt{npm test} las ejecuta todas; en local usan \texttt{pg-mem} y en el CI PostgreSQL 17 real.
+La batería de pruebas automatizadas consta de 276 pruebas, divididas en 140 del Sprint 1 (cuentas, API, base de datos, seguridad, prueba técnica) y 136 del juego (simulación, club, movilidad, API juego, personajes, habilidades, ultras, logros, repositorio). El comando único \texttt{npm test} las ejecuta todas; en local usan \texttt{pg-mem} y en el CI PostgreSQL 17 real. La Tabla~\ref{tab:pruebas-por-fichero} detalla la distribución de pruebas por fichero y la funcionalidad específica comprobada en cada caso.
 
 \begin{longtable}{@{}L{5.0cm} R{1.2cm} L{8.0cm}@{}}
 \caption{Pruebas por fichero (fuente: documentacion-tecnica.md §10.2).}\label{tab:pruebas-por-fichero}\\
@@ -59,7 +59,7 @@ Además de las pruebas automáticas, cada cambio visible se ha comprobado en el 
 
 \section{Integración y despliegue continuos (CI/CD)}
 
-El pipeline de CI/CD se implementa con tres workflows de GitHub Actions y un webhook en Render:
+El pipeline de CI/CD se implementa con tres workflows de GitHub Actions y un webhook en Render. La Tabla~\ref{tab:workflows} describe los workflows de integración continua y despliegue con sus eventos de activación y tareas asociadas.
 
 \begin{longtable}{@{}L{3.0cm} L{3.5cm} L{8.0cm}@{}}
 \caption{Workflows de CI/CD.}\label{tab:workflows}\\

@@ -342,30 +342,23 @@ Paseo de Leyendas & Ficha a las 8 leyendas & — \\
 \bottomrule
 \end{longtable}
 
-Cada logro esconde un dato real del club (por ejemplo, que Griezmann fue tercero en el Balón de Oro de 2018, que Oblak ganó cinco Zamoras seguidos o que el Atleti nació en 1903 vestido de azul y blanco). Los datos están en \texttt{logros.js} y se han comprobado uno a uno.
-
 \section{Evolución por fases}
 
-El Sprint 2 se organizó en seis fases operativas más la fase de calidad, reflejadas en las etiquetas de DoneTonic. La Tabla~\ref{tab:fases-sprint2} recoge la evolución.
+Cada fase es una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de documentacion-tecnica.md).
 
-\begin{longtable}{@{}L{3.2cm} L{2.2cm} L{8.9cm}@{}}
-\caption{Evolución del Sprint 2 por fases (etiquetas de DoneTonic).}\label{tab:fases-sprint2}\\
+\begin{longtable}{@{}L{2.0cm} L{6.0cm} L{6.0cm}@{}}
+\caption{Evolución del juego por fases (Sprint 2).}\label{tab:evolucion-fases}\\
 \toprule
-\textbf{Fase} & \textbf{PBIs} & \textbf{Contenido} \\ \midrule \endfirsthead
+\textbf{Fase} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead
 \toprule
-\textbf{Fase} & \textbf{PBIs} & \textbf{Contenido} \\ \midrule \endhead
-Base del juego & P20--P28 & Interfaz, motor survivor, pixel art, personajes, armas, rivales, jefes, mapa y controles. \\
-Fase 2 · Club & P29--P32 & Progreso en servidor, contratos, entrenamiento y ranking. \\
-Fase 3 · Ultras & P33--P34 & Combinaciones, 6 ULTRAS, dificultad y modo pruebas. \\
-Fase 4 · Mundo & P35--P37 & Mundo procedural, 5 ambientes, mote y avatar. \\
-Fase 5 · Rarezas & P38--P41 & Rarezas por historia, fichajes, habilidades por minuto, combinaciones visibles y colisiones exactas. \\
-Fase 6 · Logros y sonido & P42--P46 & 29 logros, equipaciones, pantalla de fin, música chiptune, sprites detallados y jefes más duros. \\
-Calidad & P47--P48 & Corrección de errores, documentación y gestión del sprint. \\
+\textbf{Fase} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endhead
+Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú del juego como inicio con sesión & La interfaz del sprint era funcional pero sobria \\
+1 & Survivor base: simulación, oleadas, armas, mejoras, jefes y menú con el muñeco paseando & — \\
+2 & Club en el servidor (plantilla, contratos, entrenamiento), ranking de la grada, élites y poderes nuevos & Progreso ligado a la cuenta y validado \\
+3 & 6 ultras, 24 combinaciones, dificultad con castigo, entrenamiento por bajas y modo pruebas & Maxear una sola cosa ya no basta \\
+4 & Mundo procedural natural, 5 ambientes por finales, mote y avatar & Mapa repetitivo; correo visible en el ranking \\
+5 & Rarezas por historia rojiblanca, habilidades niveladas, combinaciones a la vista, animación de la firma, colisiones exactas & Regate demasiado fuerte; esconderse detrás de los tejados \\
+6 & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles \\
+7 & Muñecos chibi de 32x32 (sin piernas) con rasgos propios, mapa con mucho más detalle y luz por ambiente, menú rediseñado (paneles translúcidos, centro despejado y botón de entrada), 5 habilidades (carambola, presión alta, la ola, fuera de juego y ruleta), 2 pasivas (visión de juego y partidos grandes), 5 combinaciones y mejores efectos de todas las habilidades & Muñecos casi iguales entre sí; mapa plano; menú estático; efectos poco legibles \\
 \bottomrule
 \end{longtable}
-
-La Tabla~\ref{tab:fases-sprint2} explica por qué el backlog del Sprint 2 se registró al cerrar el sprint (29/10/2026): las fases se desarrollaron del 23 al 26/10 y el seguimiento formal se volcó después en DoneTonic. Las gráficas de DoneTonic del Sprint 2 salen en recta porque el backlog se registró al cerrar el sprint; la evolución real se reconstruye con las fechas de los PRs (véase Anexo~\ref{anx:desarrollo}).
-
-\section{Resumen del Sprint 2}
-
-El Sprint 2 entregó 29 PBIs (P20--P48) y 50 tareas (T33--T82) en una semana (23/10--29/10/2026). Se integraron 14 pull requests de fase (\#36, \#44--\#54) y 3 de arreglo (\#51, \#55, \#56). El juego completo incluye: 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ULTRAS, 16 equipos rivales, 10 jefes, mundo procedural con 5 ambientes, 29 logros, 10 equipaciones, música chiptune y sonidos de grada sintetizados. Todo validado en servidor con anti-trampas y concurrencia optimista.
