@@ -234,7 +234,7 @@ def comprobar_flotantes(textos: dict[str, str]):
             ruta = m.group(1).strip()
             if not any((BORRADOR / (ruta + ext)).exists() for ext in ("", ".png", ".pdf", ".jpg")):
                 fallo(f"{nombre}:{linea_de(texto, m.start())}: no existe la imagen {ruta}")
-        for tipo in ("figure", "table"):
+        for tipo in ("figure", "table", "longtable"):   # las longtable también son tablas
             for m in re.finditer(r"\\begin\{%s\*?\}(.*?)\\end\{%s\*?\}" % (tipo, tipo), texto, flags=re.S):
                 n = linea_de(texto, m.start())
                 cuerpo = m.group(1)

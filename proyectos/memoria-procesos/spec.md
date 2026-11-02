@@ -52,7 +52,7 @@ entrega cuenta 16 (P1–P14, P18 y P19); 32 + 50 = 82 tareas; 276 pruebas.
   **`04b-juego`** (capítulo nuevo, entre la descripción y la evaluación), `05-evaluacion`,
   `06-conclusiones` y los anexos `a1-desarrollo`, **`a4-trazabilidad`** (nuevo), `a2-material` y
   `a3-uso-ia`.
-- Los paquetes nuevos van en `include/extra.tex`. Ya están `tikz`, `pgfplots`, `longtable`,
+- `include/extra.tex` está protegido: si hace falta un paquete, se pide en la bitácora. Nunca se arregla un error redefiniendo comandos de LaTeX. Ya están `tikz`, `pgfplots`, `longtable`,
   `booktabs` y **`pgf-umlsd`** (diagramas de secuencia: `sequencediagram`, `\newthread`, `\newinst`,
   `call`, `\mess`).
 - La bibliografía es BibTeX con `apalike` (`bib/ref.bib`), como manda la plantilla.
@@ -100,6 +100,10 @@ entrega cuenta 16 (P1–P14, P18 y P19); 32 + 50 = 82 tareas; 276 pruebas.
   entorno es `sequencediagram` (en minúsculas; **no** existen `sequenceDiagram` ni un entorno `alt`: para alternativas, `sdblock`): participantes con
   `\newthread`/`\newinst`, llamadas anidadas con `call` (origen, mensaje, destino, respuesta), mensajes
   sueltos con `\mess` y bloques alternativos con `sdblock`. Sin nodos TikZ vacíos.
+  **En los textos de `\mess`, `call`, `callself` y `\newinst` no puede ir `\#`, `\_`, `\&`, `\%`, `\$`,
+  `\{`, `\}`, ningún comando (`\texttt`…) ni `#`, `&`, `_`, `$` sueltos, y en `\mess` tampoco paréntesis.
+  Todo participante que se use tiene que estar declarado con `\newthread`/`\newinst` en ese diagrama.**
+  `revisar_umlsd.py` lo comprueba antes de compilar y dice todos los fallos a la vez.
 
 ```latex
 \begin{figure}[htbp]

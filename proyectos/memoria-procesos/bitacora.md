@@ -4422,3 +4422,40 @@ El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se 
 Se ha llegado al máximo de pasos (50 de 50). El workflow no hará nada más hasta que Javier lo revise.
 
 Para continuar: en `proyecto.json`, subir `max_pasos` y volver a poner `"estado": "en-construccion"`.
+
+## 2026-11-02 · Revisión humana (Javier)
+
+Claude ha compilado el borrador (paso 50). **Llevaba muchos pasos sin compilar por dos motivos que no se
+veían en el error:**
+
+- `include/extra.tex` tenía tres «arreglos» añadidos por las IAs (redefinir `\hline` en TikZ, sustituir
+  `\includegraphics` por un recuadro si falta la imagen y parchear `\newthread`/`\call`/`\mess` dentro de
+  `sequencediagram`). **El parche de pgf-umlsd metía a LuaLaTeX en un bucle infinito** en el primer diagrama
+  de secuencia (la compilación no terminaba nunca y el paso se quedaba sin tiempo). Claude ha dejado
+  `extra.tex` como estaba (tikz, pgfplots, pgf-umlsd, longtable, booktabs, xurl, breakcites…) y ahora es un
+  **archivo protegido**. Si hace falta un paquete nuevo, pedirlo en la bitácora; no se arreglan errores
+  redefiniendo comandos de LaTeX. Una imagen que no existe tiene que dar error, no un recuadro.
+- Caracteres que pgf-umlsd no admite en los textos de los diagramas. Ahora `revisar_umlsd.py` lo comprueba
+  ANTES de compilar y dice todos los fallos a la vez.
+
+Con extra.tex limpio y los diagramas arreglados, la memoria compila entera (120 páginas) y `verificar.py`
+solo da 18 fallos. Esto es lo que queda, en este orden:
+
+1. **Diagramas de secuencia de `chapters/04-descripcion.tex`** (sin esto no compila):
+   - l. 377, 380 y 459: quitar `\#` («303 /?aviso=cuenta-confirmada /entrar»).
+   - l. 412, 451 y 489: quitar `\_` («403 ACCOUNT PENDING», «client secret», «email verified», «deleted at»).
+   - l. 414 y 419: sin paréntesis en `\mess` («202, mismo mensaje exista o no», «ponerUsuario → /jugar») y
+     sin `#` suelto.
+   - l. 443 y 444: sin `&` («code y state»).
+   - l. 399 y 401: los participantes `repo` y `hasher` se usan sin declarar: añadir
+     `\newinst[2]{repo}{userRepository}` y `\newinst[2]{hasher}{passwordHasher}` en ese diagrama.
+2. **Citar los diagramas en el texto** con una frase cada uno (fig:sec-registro, fig:sec-confirmacion,
+   fig:sec-login, fig:sec-google, fig:sec-baja) y las tablas tab:pruebas-por-fichero y tab:workflows de
+   `05-evaluacion.tex`.
+3. **Capturas de móvil demasiado grandes** (`04-descripcion.tex` l. ~719 y ~726, «Float too large» de 1377 y
+   243 pt): `11-panel-admin-movil` y `12-perfil-movil` con `width=0.35\textwidth` (son verticales).
+4. **Rutas largas en `\texttt` que se salen del margen** (`04-descripcion.tex` l. 172–181 y 526): en la tabla
+   de módulos, poner la ruta con `\path{services/accountConfirmationService.js}` (xurl la parte) o dar más
+   ancho a esa columna.
+
+Al terminar, el revisor comprueba estos 4 puntos uno a uno en COMPROBACIONES.
