@@ -1,6 +1,6 @@
 {
   "nombre": "memoria-procesos",
-  "estado": "en-construccion",
+  "estado": "pausado",
   "temas": [
     "latex",
     "memoria",
@@ -51,8 +51,8 @@
   "comando_prueba": "rm -f Memoria.log Memoria.pdf && python3 ../revisar_umlsd.py && latexmk -g -lualatex -interaction=nonstopmode -halt-on-error -file-line-error Memoria.tex && python3 ../verificar.py",
   "reintentar_si": "^(!|\\S+\\.(tex|sty|cls|bib):\\d+:)|Fatal error|Emergency stop|Todavía no existe",
   "max_archivos_por_paso": 2,
-  "pasos": 64,
+  "pasos": 65,
   "max_pasos": 65,
   "max_intentos": 3,
-  "ultima_ejecucion": "2026-11-03T10:18:47+01:00"
+  "ultima_ejecucion": "2026-11-03T11:18:19+01:00"
 }

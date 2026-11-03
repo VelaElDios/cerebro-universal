@@ -8672,3 +8672,29 @@ Reescritura completa de los capítulos 4 y 4b para corregir los errores de sinta
 Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-03 12:00 · Constructor (openrouter-grandes · nvidia/nemotron-3.5-super-vl:free)
+
+Se reescribe completamente `chapters/04-descripcion.tex` para corregir el error de compilación (TikZ con `\\` dentro de nodo sin entorno de alineación) y cumplir la spec: añade `\label{cap:descripcion}`, las tres tablas `longtable` de requisitos (RF, RJ, RNF), la arquitectura con `fig:capas` (TikZ), el modelo de datos con `fig:modelo-datos` (TikZ ER), tablas de módulos/frontend/API, los cinco diagramas de secuencia obligatorios (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`) con sintaxis correcta de `pgf-umlsd` (sin paréntesis ni comandos prohibidos en `\mess`/`call`), tabla de seguridad, resumen de sprints y manual de usuario con capturas mínimas de `app/`, `hito4/`, `juego/`, `donetonic/`, `produccion/` y `prueba-tecnica/`. Se incluyen citas `\cite{bcrypt}` y `\cite{rfc6749}`.
+
+**Archivos:** `chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:327: Undefined control sequence.
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 7 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ eb25eb8 2026-11-02 11:08:29 +0100
+
+**Siguiente:** El siguiente paso debe ser reescribir completamente `chapters/04b-juego.tex` con el capítulo del juego (concepto, manual con capturas de `juego/`, sistemas, arquitectura, servidor y anti-trampas con `fig:sec-partida` y `fig:sec-contratar`, logros y evolución por fases), mínimo 1800 palabras, y añadir `\label{cap:juego}`. Después completar `chapters/a1-desarrollo.tex` y `chapters/a4-trazabilidad.tex`, revisar `chapters/05-evaluacion.tex`, y ejecutar `comando_prueba` hasta que pase.
+
+## 2026-11-03 12:07 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-03 12:07 · ⏸️ Proyecto pausado
+
+Se ha llegado al máximo de pasos (65 de 65). El workflow no hará nada más hasta que Javier lo revise.
+
+Para continuar: en `proyecto.json`, subir `max_pasos` y volver a poner `"estado": "en-construccion"`.
