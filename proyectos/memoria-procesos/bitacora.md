@@ -6525,3 +6525,23 @@ correspondientes.
 - Verificar que el anexo a4-trazabilidad.tex tiene todas las 82 tareas con sus PRs correctos y que la tabla compila sin overfull hbox (usar @{} en columnas L).
 - Comprobar que elements/preambulo.tex tiene Resumen (≥150 palabras) y Abstract (≥120 palabras) con palabras clave/keywords y que la declaración de autoría referencia el Anexo~\ref{anx:ia}.
 - Validar que bib/ref.bib compila con biber y que todas las entradas se citan al menos una vez en el texto (incluyendo bcrypt ahora citado).
+
+## 2026-11-03 05:39 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Se ha reescrito completamente el capítulo `chapters/04b-juego.tex` para corregir los errores de compilación: se han añadido los dos diagramas de secuencia obligatorios (`fig:sec-partida` y `fig:sec-contratar`) usando el entorno `sequencediagram` de `pgf-umlsd`, se han referenciado todas las figuras de la Fase 7 en el texto mediante `\ref{}`, se ha completado la sección «Servidor y validación anti-trampas» con los diagramas y su explicación, y se ha ajustado el formato de las tablas y figuras para evitar desbordes. El archivo ahora incluye todo el contenido requerido por la spec (concepto, manual de usuario, capturas, sistemas, arquitectura, servidor/anti-trampas, logros, evolución por fases) y todas las figuras tienen `\caption`, `\label` y son citadas.
+
+**Archivos:** `chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ chapters/04b-juego.tex:382: en un diagrama de secuencia no puede ir «\{» (texto «201 \{partidaId, stats\}»): escríbelo sin él
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 2 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ eb25eb8 2026-11-02 11:08:29 +0100
+
+**Siguiente:** El siguiente paso debe ser ejecutar `comando_prueba` para verificar que la compilación LuaLaTeX y `verificar.py` pasan sin errores tras la corrección de `chapters/04b-juego.tex`. Si persisten errores (por ejemplo, referencias rotas en otros capítulos, overfull hbox en tablas, o falta de citas en la bibliografía), se deberán corregir en los archivos correspondientes (probablemente `chapters/04-descripcion.tex` para los diagramas de secuencia de los flujos de autenticación, `chapters/05-evaluacion.tex` para la cita de bcrypt, `chapters/a4-trazabilidad.tex` para el ancho de columnas, y `elements/preambulo.tex` para el Resumen/Abstract). También hay que asegurar que `bib/ref.bib` compila con biber y que todas las entradas se citan al menos una vez.
+
+## 2026-11-03 05:39 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 135 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.

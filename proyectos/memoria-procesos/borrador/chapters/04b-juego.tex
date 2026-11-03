@@ -196,6 +196,8 @@ La Fase 7 (etiqueta \textit{Calidad} en DoneTonic, P45--P46) renovó el pixel ar
 \label{fig:grupo-f7-sprites}
 \end{figure}
 
+Como se aprecia en la Figura~\ref{fig:grupo-f7-sprites}, los muñecos pasan de ser genéricos a tener rasgos distintivos (peinados, barbas, complexión, accesorios).
+
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}[b]{0.45\textwidth}
@@ -214,6 +216,8 @@ La Fase 7 (etiqueta \textit{Calidad} en DoneTonic, P45--P46) renovó el pixel ar
 \caption{Menú rediseñado en escritorio y móvil (Fase 7).}
 \label{fig:grupo-f7-menu}
 \end{figure}
+
+La Figura~\ref{fig:grupo-f7-menu} muestra el nuevo menú con paneles translúcidos y el botón de entrada centrado, tanto en escritorio como en móvil.
 
 \begin{figure}[htbp]
 \centering
@@ -234,6 +238,8 @@ La Fase 7 (etiqueta \textit{Calidad} en DoneTonic, P45--P46) renovó el pixel ar
 \label{fig:grupo-f7-mapa-partida}
 \end{figure}
 
+La Figura~\ref{fig:grupo-f7-mapa-partida} compara los ambientes del mapa y muestra una partida con el nuevo pixel art.
+
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}[b]{0.45\textwidth}
@@ -252,6 +258,8 @@ La Fase 7 (etiqueta \textit{Calidad} en DoneTonic, P45--P46) renovó el pixel ar
 \caption{Jefe y habilidad nueva ``fuera de juego'' (Fase 7).}
 \label{fig:grupo-f7-jefe-habilidad}
 \end{figure}
+
+En la Figura~\ref{fig:grupo-f7-jefe-habilidad} se ve un jefe (Mourinho) en su primera fase y la nueva habilidad ``fuera de juego'' con sus banderines.
 
 \begin{figure}[htbp]
 \centering
@@ -272,6 +280,8 @@ La Fase 7 (etiqueta \textit{Calidad} en DoneTonic, P45--P46) renovó el pixel ar
 \label{fig:grupo-f7-efectos-combinaciones}
 \end{figure}
 
+La Figura~\ref{fig:grupo-f7-efectos-combinaciones} muestra los nuevos efectos de partículas y la pantalla de combinaciones actualizada.
+
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}[b]{0.45\textwidth}
@@ -290,6 +300,8 @@ La Fase 7 (etiqueta \textit{Calidad} en DoneTonic, P45--P46) renovó el pixel ar
 \caption{Menú de pausa rediseñado y confirmación de salida (Fase 7).}
 \label{fig:grupo-f7-pausa}
 \end{figure}
+
+Finalmente, la Figura~\ref{fig:grupo-f7-pausa} presenta el menú de pausa con el árbol de habilidades y la confirmación al salir.
 
 Todas las capturas de la Fase 7 (12 imágenes de \texttt{figs/capturas/fase7/}) se citan en el texto mediante \texttt{\textbackslash ref} a sus etiquetas.
 
@@ -349,18 +361,99 @@ La simulación avanza en pasos fijos de $\Delta t = 1/60$ segundos con un genera
 
 \section{Servidor y validación anti-trampas}
 
-El progreso del juego se guarda en el servidor, no en el navegador. Al terminar una partida, el cliente envía las estadísticas a \texttt{POST /api/juego/partidas/:id/fin}; el servicio \texttt{juegoService.finalizarPartida} valida con su propio reloj que el tiempo declarado no sea inferior al real y aplica límites estadísticos creíbles (daño, bajas, jefes y nivel). Después actualiza el club con concurrencia optimista: el perfil tiene un campo \texttt{version} y el \texttt{UPDATE} incluye \texttt{WHERE version = ...}; si no afecta a una fila, responde 409 y el cliente reintenta con los datos nuevos. La Figura~\ref{fig:sec-partida} muestra el flujo de una partida y la Figura~\ref{fig:sec-contratar} el de contratar con control de concurrencia.
+El progreso del juego se guarda en el servidor, no en el navegador. Al terminar una partida, el cliente envía las estadísticas a \texttt{POST /api/juego/partidas/:id/fin}; el servicio \texttt{juegoService.finalizarPartida} valida con su propio reloj que el tiempo declarado no sea inferior al real y aplica límites estadísticos creíbles (daño, bajas, jefes y nivel). Después actualiza el club con concurrencia optimista: el perfil tiene un campo \texttt{version} y el \texttt{UPDATE} incluye \texttt{WHERE version = ...}; si no afecta a una fila, responde 409 y el cliente reintenta con los datos nuevos. La Figura~\ref{fig:sec-partida} muestra el flujo de una partida y la Figura~\ref{fig:sec-contratar} el de contratar con concurrencia optimista.
 
-Las reglas del club, las rarezas y los logros se comparten entre cliente y servidor importando los mismos módulos (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}), de modo que el servidor no acepta datos que no pueda recalcular.
+\subsection{Flujo de una partida (inicio, juego y fin con validación)}
 
-\section{Logros}
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+  \newthread{jug}{Jugador}
+  \newinst[2]{nav}{Navegador (juego.js)}
+  \newinst[2]{sim}{mundo.js (simulación)}
+  \newinst[2]{api}{api.js}
+  \newinst[2]{srv}{API /api/juego}
+  \newinst[2]{js}{juegoService}
+  \newinst[2]{repo}{juegoRepository}
+  \begin{call}{jug}{Elige personaje y entrenador}{nav}{}
+  \end{call}
+  \begin{call}{nav}{iniciar(personaje, entrenador)}{api}{}
+    \begin{call}{api}{POST /partidas}{srv}{201 \{partidaId, stats\}}
+      \begin{call}{srv}{iniciarPartida()}{js}{}
+        \begin{call}{js}{perfil + version}{repo}{datos}
+        \end{call}
+        \begin{call}{js}{guardarPerfil(version)}{repo}{ok}
+        \end{call}
+      \end{call}
+    \end{call}
+  \end{call}
+  \begin{sdblock}{loop}{Cada fotograma (paso fijo 1/60 s)}
+    \begin{call}{nav}{avanzar(entrada)}{sim}{eventos}
+    \end{call}
+    \mess{nav}{Dibujo, HUD, sonido}{jug}
+  \end{sdblock}
+  \begin{call}{nav}{terminar(id, tiempo, nivel, jefes, bajas, logros)}{api}{}
+    \begin{call}{api}{POST /partidas/:id/fin}{srv}{200 \{recompensas, logrosNuevos, record, perfil\}}
+      \begin{call}{srv}{finalizarPartida()}{js}{}
+        \begin{call}{js}{validar con reloj y límites}{js}{válido}
+        \end{call}
+        \begin{call}{js}{repartir jefes, bajas, puntos, fichas}{js}{}
+        \end{call}
+        \begin{call}{js}{guardarPerfil(version) (reintenta si 409)}{repo}{ok}
+        \end{call}
+        \begin{call}{js}{guardarRecord() si es mejor}{repo}{ok}
+        \end{call}
+      \end{call}
+    \end{call}
+  \end{call}
+  \mess{nav}{Pantalla de fin con estadísticas}{jug}
+\end{sequencediagram}}
+\caption{Flujo de una partida: inicio, simulación determinista y fin con validación anti-trampas en el servidor.}
+\label{fig:sec-partida}
+\end{figure}
 
-La vitrina de logros (Figura~\ref{fig:juego-logros}) muestra los 29 hitos definidos en \texttt{logros.js}, cada uno con un dato de la historia del club. Los logros se validan en el servidor dentro de \texttt{juegoService} al finalizar la partida, para que no se puedan desbloquear enviando datos falsos desde el navegador. Al completar determinados logros se desbloquean las 10 equipaciones del vestuario.
+\subsection{Contratar con una ficha (concurrencia optimista)}
 
-La Tabla~\ref{tab:logros-detalle} lista los 29 logros con su condición y equipación asociada (fuente: documentacion-tecnica.md §9.6).
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+  \newinst[2]{p1}{Petición 1}
+  \newinst[2]{p2}{Petición 2 (doble clic)}
+  \newinst[2]{js}{juegoService}
+  \newinst[2]{db}{juego\_perfiles}
+  \begin{call}{p1}{contratar()}{js}{}
+    \begin{call}{js}{SELECT datos, version (v=7)}{db}{datos}
+    \end{call}
+    \begin{call}{js}{1 ficha → sortea jugador}{js}{}
+    \end{call}
+    \begin{call}{js}{UPDATE ... WHERE version=7}{db}{1 fila (v=8)}
+    \end{call}
+  \end{call}
+  \begin{call}{p2}{contratar()}{js}{}
+    \begin{call}{js}{SELECT datos, version (v=7)}{db}{datos}
+    \end{call}
+    \begin{call}{js}{1 ficha → sortea jugador}{js}{}
+    \end{call}
+    \begin{call}{js}{UPDATE ... WHERE version=7}{db}{0 filas}
+    \end{call}
+    \begin{call}{js}{reintenta: SELECT (v=8, 0 fichas)}{db}{datos}
+    \end{call}
+    \mess{js}{409 «No tienes fichas de contrato»}{p2}
+  \end{call}
+  \mess{js}{200 \{fichado, logrosNuevos, perfil\}}{p1}
+\end{sequencediagram}}
+\caption{Concurrencia optimista al contratar: la segunda petición falla con 409 y el cliente reintenta.}
+\label{fig:sec-contratar}
+\end{figure}
 
-\begin{longtable}{@{}L{3.5cm} L{7.0cm} L{3.5cm}@{}}
-\caption{Logros del juego: condición y equipación desbloqueable.}\label{tab:logros-detalle}\\
+\section{Logros y equipaciones}
+
+Los 29 logros vinculan hitos de juego a hechos históricos del Atlético de Madrid; al conseguirse desbloquean 10 equipaciones para el vestuario. La Tabla~\ref{tab:logros} resume cada logro, su condición y la equipación que desbloquea (si la hay). El servidor valida los logros que dependen de datos de partida (tiempo, jefes, bajas, personaje, entrenador); los de plantilla los calcula él.
+
+\begin{longtable}{@{}L{3.5cm} L{8.0cm} L{3.0cm}@{}}
+\caption{Logros, condición de obtención y equipación desbloqueable.}\label{tab:logros}\\
 \toprule
 \textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endfirsthead
 \toprule
@@ -397,12 +490,14 @@ Paseo de Leyendas & Ficha a las 8 leyendas & — \\
 \bottomrule
 \end{longtable}
 
+Cada logro esconde un dato real del club (por ejemplo, que Griezmann fue tercero en el Balón de Oro de 2018, que Oblak ganó cinco Zamoras seguidos o que el Atleti nació en 1903 vestido de azul y blanco). Los datos están en \texttt{logros.js} y se han comprobado uno a uno.
+
 \section{Evolución por fases}
 
-Cada fase es una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de documentacion-tecnica.md). La Tabla~\ref{tab:evolucion-fases} resume la evolución.
+Cada fase corresponde a una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de la documentación técnica). La Tabla~\ref{tab:fases-juego} resume qué se añadió en cada fase y qué problemas resolvió.
 
-\begin{longtable}{@{}L{1.8cm} L{6.5cm} L{6.0cm}@{}}
-\caption{Evolución del juego por fases (Sprint 2).}\label{tab:evolucion-fases}\\
+\begin{longtable}{@{}L{1.5cm} L{6.5cm} L{6.5cm}@{}}
+\caption{Evolución del juego por fases (Sprint 2).}\label{tab:fases-juego}\\
 \toprule
 \textbf{Fase} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead
 \toprule
@@ -414,8 +509,6 @@ Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú 
 4 & Mundo procedural natural, 5 ambientes por finales, mote y avatar & Mapa repetitivo; correo visible en el ranking \\
 5 & Rarezas por historia rojiblanca, habilidades niveladas, combinaciones a la vista, animación de la firma, colisiones exactas & Regate demasiado fuerte; esconderse detrás de los tejados \\
 6 & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles \\
-7 & Muñecos chibi 32×32 (sin piernas) con rasgos propios, mapa con más detalle y luz por ambiente, menú rediseñado (paneles translúcidos, centro despejado, botón de entrada), 5 habilidades (carambola, presión alta, la ola, fuera de juego, ruleta), 2 pasivas (visión de juego, partidos grandes), 5 combinaciones y mejores efectos de todas las habilidades & Muñecos casi iguales; mapa plano; menú estático; efectos poco legibles \\
+7 & Muñecos chibi 32×32 (sin piernas) con rasgos propios, mapa con mucho más detalle y luz por ambiente, menú rediseñado (paneles translúcidos, centro despejado y botón de entrada), 5 habilidades (carambola, presión alta, la ola, fuera de juego y ruleta), 2 pasivas (visión de juego y partidos grandes), 5 combinaciones y mejores efectos de todas las habilidades & Muñecos casi iguales entre sí; mapa plano; menú estático; efectos poco legibles \\
 \bottomrule
 \end{longtable}
-
-La Tabla~\ref{tab:evolucion-fases} muestra la evolución secuencial de las 7 fases más el rediseño inicial, tal como se registraron en DoneTonic con sus etiquetas correspondientes.
