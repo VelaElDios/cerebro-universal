@@ -16,6 +16,7 @@ Lecciones sobre latex (este archivo se genera solo).
 - [[los-identificadores-largos-en-texttt-no-se-parten-solos-usar|Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando]] · ⚠️ propuesta
 - [[no-meter-codigo-lua-dentro-de-directlua|No meter código Lua dentro de \directlua]]
 - [[no-meter-saltos-de-linea-n-dentro-de-tex-sprint|No meter saltos de línea \n dentro de tex.sprint]]
+- [[numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente|Números de métricas deben copiarse exactamente de la fuente única]] · ⚠️ propuesta
 - [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesta
 - [[pgf-umlsd-y-comandos-fragiles-en-sequencediagram|pgf-umlsd y comandos frágiles en sequencediagram]] · ⚠️ propuesta
 - [[pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d|pgfplots: línea horizontal de referencia de lado a lado con \draw]]
