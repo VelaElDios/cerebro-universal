@@ -9,6 +9,15 @@ texto
 <<<ARCHIVO ruta/del/archivo.tex>>>
 contenido completo
 <<<FIN>>>
+
+Para cambiar solo un trozo de un archivo que ya existe (sin reescribirlo entero):
+
+<<<CAMBIAR ruta/del/archivo.tex>>>
+<<<BUSCAR>>>
+texto exacto que hay ahora (una sola vez en el archivo)
+<<<POR>>>
+texto nuevo
+<<<FIN>>>
 """
 
 import fnmatch
@@ -26,7 +35,14 @@ IGNORAR_COPIA = ("*.aux", "*.log", "*.fls", "*.fdb_latexmk", "*.out", "*.toc", "
                  "*.blg", "*.bcf", "*.run.xml", "*.synctex.gz", "*.lof", "*.lot",
                  # Beamer y restos de Biber cuando falla (*.bbl-SAVE-ERROR, *.bcf-SAVE-ERROR)
                  "*.nav", "*.snm", "*.vrb", "*-SAVE-ERROR")
-MAX_CHARS_ARCHIVO = 20000
+# Hasta 150.000 caracteres por archivo en los mensajes. Con 20.000 (lo de antes) los capítulos largos
+# llegaban recortados a las IAs, que al reescribirlos enteros perdían o se inventaban el resto.
+MAX_CHARS_ARCHIVO = 150_000
+MARCA_RECORTE = "[... archivo recortado ...]"
+# Un archivo que una IA reescribe entero y queda mucho más corto que el actual casi siempre está cortado
+ENCOGER_MAX = 0.6        # el nuevo tiene que tener al menos el 60 % de los caracteres del actual
+ENCOGER_DESDE = 6000     # ... si el actual tiene más de esto
+MAX_CAMBIOS = 40         # bloques BUSCAR/POR por respuesta
 
 CABECERA = re.compile(r"^<<<([A-ZÁÉÍÓÚ_]+)(?:\s+(.+?))?>>>\s*$")
 
@@ -46,7 +62,7 @@ def leer_carpeta(carpeta: Path) -> dict[str, str]:
         if p.is_file() and p.suffix.lower() in EXTENSIONES_TEXTO:
             texto = p.read_text(encoding="utf-8", errors="replace")
             if len(texto) > MAX_CHARS_ARCHIVO:
-                texto = texto[:MAX_CHARS_ARCHIVO] + "\n[... archivo recortado ...]"
+                texto = texto[:MAX_CHARS_ARCHIVO] + "\n" + MARCA_RECORTE
             archivos[p.relative_to(carpeta).as_posix()] = texto
     return archivos
 
@@ -70,9 +86,11 @@ def _quitar_vallas(texto: str) -> str:
 
 
 def parsear(respuesta: str) -> dict:
-    """Devuelve {"secciones": {NOMBRE: texto}, "archivos": {ruta: contenido}, "borrar": [rutas]}."""
-    resultado = {"secciones": {}, "archivos": {}, "borrar": []}
+    """Devuelve {"secciones": {NOMBRE: texto}, "archivos": {ruta: contenido}, "borrar": [rutas],
+    "cambios": [(ruta, buscar, por)]}."""
+    resultado = {"secciones": {}, "archivos": {}, "borrar": [], "cambios": []}
     actual, argumento, buffer = None, None, []
+    estado = {"ruta": None, "buscar": None}   # dentro de un bloque CAMBIAR
 
     def cerrar():
         if actual is None:
@@ -80,7 +98,12 @@ def parsear(respuesta: str) -> dict:
         contenido = "\n".join(buffer)
         if actual == "ARCHIVO" and argumento:
             resultado["archivos"][argumento.strip()] = _quitar_vallas(contenido) + "\n"
-        elif actual != "FIN":
+        elif actual == "BUSCAR" and estado["ruta"]:
+            estado["buscar"] = contenido.strip("\n")
+        elif actual == "POR" and estado["ruta"] and estado["buscar"]:
+            resultado["cambios"].append((estado["ruta"], estado["buscar"], contenido.strip("\n")))
+            estado["buscar"] = None
+        elif actual not in ("FIN", "BUSCAR", "POR"):
             resultado["secciones"][actual] = contenido.strip()
 
     for linea in respuesta.splitlines():
@@ -91,6 +114,13 @@ def parsear(respuesta: str) -> dict:
             if actual == "BORRAR" and argumento:
                 resultado["borrar"].append(argumento.strip())
                 actual = None
+            elif actual == "CAMBIAR":
+                estado["ruta"], estado["buscar"] = (argumento or "").strip() or None, None
+                actual = None
+            elif actual == "FIN":
+                estado["ruta"] = None
+            elif actual not in ("BUSCAR", "POR"):
+                estado["ruta"] = None
         else:
             buffer.append(linea)
     cerrar()
@@ -136,6 +166,16 @@ def aplicar(base: Path, archivos: dict[str, str], borrar: list[str], maximo: int
         except ValueError as e:
             print(f"  Ignorado: {e}")
             continue
+        if MARCA_RECORTE in contenido:
+            cambiados.append(f"(rechazado: copia el aviso de archivo recortado; usa CAMBIAR) {relativa}")
+            continue
+        if destino.is_file():
+            antes = len(destino.read_text(encoding="utf-8", errors="replace"))
+            if antes > ENCOGER_DESDE and len(contenido) < ENCOGER_MAX * antes:
+                print(f"  Rechazado (encoge de {antes} a {len(contenido)} caracteres): {relativa}")
+                cambiados.append(f"(rechazado: el archivo nuevo es mucho más corto que el actual, "
+                                 f"{len(contenido)} de {antes} caracteres; para cambiar un trozo usa CAMBIAR) {relativa}")
+                continue
         destino.parent.mkdir(parents=True, exist_ok=True)
         destino.write_text(contenido, encoding="utf-8")
         cambiados.append(relativa)
@@ -152,6 +192,64 @@ def aplicar(base: Path, archivos: dict[str, str], borrar: list[str], maximo: int
             destino.unlink()
             cambiados.append(f"(borrado) {relativa}")
     return cambiados
+
+
+def aplicar_cambios(base: Path, cambios: list[tuple[str, str, str]], protegidos: list[str] = ()) -> list[str]:
+    """Aplica bloques CAMBIAR (buscar → por). El texto buscado tiene que estar exactamente una vez;
+    si no, ese cambio no se aplica y se apunta para que la IA lo sepa."""
+    resultado = []
+    for ruta, buscar, por in cambios[:MAX_CAMBIOS]:
+        if protegido(ruta, protegidos):
+            resultado.append(f"(protegido, no se cambió) {ruta}")
+            continue
+        try:
+            destino = ruta_segura(base, ruta, estricta=False)
+        except ValueError as e:
+            resultado.append(f"(no aplicado: {e}) {ruta}")
+            continue
+        if not destino.is_file():
+            resultado.append(f"(no aplicado: no existe el archivo) {ruta}")
+            continue
+        texto = destino.read_text(encoding="utf-8", errors="replace")
+        veces = texto.count(buscar)
+        if veces == 0:
+            # Segunda oportunidad: sin los espacios del final de cada línea
+            limpio = lambda s: "\n".join(l.rstrip() for l in s.split("\n"))
+            if limpio(texto).count(limpio(buscar)) == 1:
+                texto, buscar, veces = limpio(texto), limpio(buscar), 1
+        if veces != 1:
+            motivo = "no encuentro el texto" if veces == 0 else f"el texto aparece {veces} veces"
+            resultado.append(f"(no aplicado: {motivo}: «{buscar.strip()[:60]}») {ruta}")
+            continue
+        destino.write_text(texto.replace(buscar, por, 1), encoding="utf-8")
+        resultado.append(f"(cambio) {ruta}")
+    return resultado
+
+
+def foto(base: Path) -> dict[str, bytes]:
+    """Copia en memoria de los archivos de texto de una carpeta, para poder deshacer un paso."""
+    if not base.exists():
+        return {}
+    return {p.relative_to(base).as_posix(): p.read_bytes() for p in base.rglob("*")
+            if p.is_file() and p.suffix.lower() in EXTENSIONES_TEXTO}
+
+
+def restaurar(base: Path, copia: dict[str, bytes]) -> list[str]:
+    """Deja los archivos de texto como en la copia: los cambiados vuelven atrás y los nuevos se borran."""
+    tocados = []
+    for relativa, contenido in foto(base).items():
+        if relativa not in copia:
+            (base / relativa).unlink()
+            tocados.append(relativa)
+        elif contenido != copia[relativa]:
+            (base / relativa).write_bytes(copia[relativa])
+            tocados.append(relativa)
+    for relativa, contenido in copia.items():
+        if not (base / relativa).exists():
+            (base / relativa).parent.mkdir(parents=True, exist_ok=True)
+            (base / relativa).write_bytes(contenido)
+            tocados.append(relativa)
+    return tocados
 
 
 def promocionar(origen: Path, destino: Path):

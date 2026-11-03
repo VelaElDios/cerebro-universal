@@ -45,10 +45,25 @@ Qué has hecho en este paso y por qué (2-4 frases).
 <<<ARCHIVO ruta/relativa.ext>>>
 contenido COMPLETO del archivo
 <<<FIN>>>
+<<<CAMBIAR ruta/relativa.ext>>>
+<<<BUSCAR>>>
+texto EXACTO que hay ahora en el archivo (copiado tal cual, una sola vez en el archivo)
+<<<POR>>>
+texto nuevo que lo sustituye
+<<<BUSCAR>>>
+(puedes poner más parejas BUSCAR/POR del mismo archivo)
+<<<POR>>>
+...
+<<<FIN>>>
 <<<SIGUIENTE>>>
 Qué debería hacerse en el próximo paso.
 
-Puedes repetir el bloque ARCHIVO (máximo {maximo} archivos). Para borrar uno: <<<BORRAR ruta/relativa.ext>>>"""
+- ARCHIVO: archivo nuevo o pequeño, escrito COMPLETO (máximo {maximo} archivos por respuesta).
+- CAMBIAR: para tocar un trozo de un archivo que ya existe. ÚSALO SIEMPRE en archivos de más de
+  150 líneas: reescribirlos enteros mete errores en lo que ya estaba bien. Un BUSCAR que no aparece
+  exactamente una vez no se aplica (se te dirá). Puedes repetir el bloque CAMBIAR.
+- Para borrar un archivo: <<<BORRAR ruta/relativa.ext>>>
+- Si un paso hace que deje de compilar algo que compilaba, se DESHACE entero automáticamente."""
 
 SISTEMA_CONSTRUCTOR = """Eres el CONSTRUCTOR de un proyecto dentro de "Cerebro Universal", un sistema donde
 varias IAs de empresas distintas colaboran. Otra IA revisará cada paso que des.
@@ -57,7 +72,8 @@ Cómo trabajas:
 - Cada ejecución haces UN paso pequeño y bien hecho que acerque el proyecto a la spec.
 - Prioridad: 1) si la prueba/compilación falla, arreglarla; 2) atender las tareas que dejó el
   revisor en la bitácora; 3) avanzar con lo siguiente de la spec.
-- Escribe siempre archivos COMPLETOS. Nunca fragmentos, nunca "... resto igual ...".
+- Con ARCHIVO, el archivo va COMPLETO: nunca fragmentos ni "... resto igual ...". Para arreglar o
+  ampliar un trozo de un archivo largo, usa CAMBIAR en vez de reescribirlo.
 - Rutas relativas a la carpeta del borrador. Comentarios del código en español.
 - No inventes datos de fuentes bibliográficas: si no estás seguro de un valor, déjalo marcado
   con un comentario TODO para que el revisor lo compruebe.
@@ -75,7 +91,8 @@ de otra empresa, acaba de dar un paso. Tu trabajo es que el resultado sea correc
 Cómo trabajas:
 - Comprueba: que compila/pasa la prueba, que cumple la spec, que los cálculos y datos son
   correctos, y que el código es limpio y entendible.
-- Errores claros y localizados: corrígelos tú directamente (archivos COMPLETOS, máximo {maximo}).
+- Errores claros y localizados: corrígelos tú directamente con bloques CAMBIAR (o ARCHIVO completo
+  si es un archivo pequeño, máximo {maximo}). Si tu corrección rompe la compilación, se deshace.
 - Lo que suponga más trabajo: déjalo como tarea concreta para el constructor.
 - Sé exigente pero concreto. No pidas cambios por gusto personal.
 - Marca TERMINADO solo si se cumplen TODOS los criterios de "terminado" de la spec.
@@ -100,8 +117,11 @@ aprobado   (o: cambios)
 - una línea por cada cosa comprobada, con su operación o su cita
 <<<COMENTARIOS>>>
 Qué está bien, qué está mal y qué has corregido tú.
-<<<ARCHIVO ruta/relativa.ext>>>
-contenido COMPLETO corregido (opcional, solo si corriges algo)
+<<<CAMBIAR ruta/relativa.ext>>>
+<<<BUSCAR>>>
+texto exacto actual (opcional, solo si corriges algo)
+<<<POR>>>
+texto corregido
 <<<FIN>>>
 <<<TAREAS>>>
 - tareas concretas para el próximo paso del constructor
@@ -142,8 +162,25 @@ def dejar_de_seguir_ignorados(carpeta: Path):
 
 
 def reales(cambios: list[str]) -> list[str]:
-    """Cambios de verdad (sin los intentos de tocar archivos protegidos)."""
-    return [c for c in cambios if not c.startswith("(protegido")]
+    """Cambios de verdad (sin los intentos de tocar protegidos, ni los rechazados o no aplicados)."""
+    return [c for c in cambios if not c.startswith(("(protegido", "(no aplicado", "(rechazado", "(deshecho"))]
+
+
+def rompe(cfg: dict, ok: bool, prueba: str) -> bool:
+    """True si la prueba falla «de verdad»: un error de compilación (cumple reintentar_si) o algo que se
+    queda colgado. En proyectos sin reintentar_si, cualquier fallo."""
+    if ok:
+        return False
+    if "tardó más de" in prueba:
+        return True
+    patron = cfg.get("reintentar_si")
+    return bool(re.search(patron, prueba, flags=re.M)) if patron else True
+
+
+def aplicar_respuesta(borrador: Path, paso: dict, maximo: int, protegidos: list[str]) -> list[str]:
+    """Archivos completos, borrados y bloques CAMBIAR de una respuesta."""
+    return (nucleo.aplicar(borrador, paso["archivos"], paso["borrar"], maximo, protegidos)
+            + nucleo.aplicar_cambios(borrador, paso.get("cambios", []), protegidos))
 
 
 def leer_fuentes(carpeta: Path, cfg: dict) -> str:
@@ -335,7 +372,8 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     except (RuntimeError, prov.TiempoAgotado) as e:
         raise SinConstructor(str(e))
     paso = nucleo.parsear(texto)
-    cambios = nucleo.aplicar(borrador, paso["archivos"], paso["borrar"], maximo, protegidos)
+    foto_antes = nucleo.foto(borrador)   # para deshacer el paso si rompe lo que funcionaba
+    cambios = aplicar_respuesta(borrador, paso, maximo, protegidos)
     s = paso["secciones"]
     print(f"Constructor: {len(cambios)} cambios")
 
@@ -389,7 +427,7 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
             intentos.append(f"intento {n}: no hay IA disponible a tiempo ({e})")
             break
         arreglo = nucleo.parsear(texto)
-        nuevos = nucleo.aplicar(borrador, arreglo["archivos"], arreglo["borrar"], maximo, protegidos)
+        nuevos = aplicar_respuesta(borrador, arreglo, maximo, protegidos)
         if not reales(nuevos):
             intentos.append(f"intento {n}: el constructor no cambió ningún archivo")
             break
@@ -399,6 +437,16 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
         intentos.append(f"intento {n}: {resumen_prueba(ok, prueba)} "
                         f"(tocó {', '.join(f'`{c}`' for c in nuevos)})")
         print(f"Prueba tras intento {n}: {'OK' if ok else 'FALLA'}")
+
+    # ¿El paso ha roto algo que funcionaba? Entonces se deshace entero: mejor no avanzar que retroceder.
+    if rompe(cfg, ok, prueba) and not rompe(cfg, ok_antes, prueba_antes):
+        deshechos = nucleo.restaurar(borrador, foto_antes)
+        intentos.append(f"↩️ **paso deshecho**: antes compilaba y ahora no ({resumen_prueba(ok, prueba)[2:]}). "
+                        f"Se han devuelto {len(deshechos)} archivos a como estaban. "
+                        "Para arreglar o ampliar archivos largos usa bloques CAMBIAR.")
+        ok, prueba = ok_antes, prueba_antes
+        cambios = [f"(deshecho) {c}" for c in cambios]
+        print("Paso deshecho: rompía la compilación")
 
     nucleo.anotar(bitacora, f"Constructor ({ia} · {modelo})",
                   f"{s.get('RESUMEN', '(sin resumen)')}\n\n"
@@ -445,10 +493,17 @@ Intentos de compilar/probar en este paso:
         print(e)
         return
     revision = nucleo.parsear(texto)
-    correcciones = nucleo.aplicar(borrador, revision["archivos"], revision["borrar"], maximo, protegidos)
+    foto_revisor = nucleo.foto(borrador)
+    correcciones = aplicar_respuesta(borrador, revision, maximo, protegidos)
     if reales(correcciones):
+        ok_previo, prueba_previa = ok, prueba
         ok, prueba = probar(cfg, borrador)
         print(f"Prueba tras correcciones: {'OK' if ok else 'FALLA'}")
+        if rompe(cfg, ok, prueba) and not rompe(cfg, ok_previo, prueba_previa):
+            nucleo.restaurar(borrador, foto_revisor)
+            correcciones = [f"(deshecho: rompía la compilación) {c}" for c in correcciones]
+            ok, prueba = ok_previo, prueba_previa
+            print("Correcciones del revisor deshechas: rompían la compilación")
 
     r = revision["secciones"]
     veredicto = r.get("VEREDICTO", "cambios").strip().lower()
