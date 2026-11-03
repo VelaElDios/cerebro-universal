@@ -8564,3 +8564,90 @@ correspondientes.
 ⏱️ Solo quedan 194 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-03 08:35 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Se corrigen los seis textos inválidos dentro de los diagramas de secuencia que rompían `revisar_umlsd.py`: se eliminan `_`, `&`, `#` y los paréntesis en `\mess`, sustituyéndolos por palabras planas (p. ej. «cuenta pendiente» en vez de `ACCOUNT_PENDING`, «tabla juego perfiles» en vez de `juego_perfiles`). No se toca ningún dato: solo se cambia la redacción de los mensajes de los diagramas para que cumplan las reglas del entorno `sequencediagram`.
+
+**Archivos:** `chapters/04-descripcion.tex`, `chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:58: LaTeX Error: \begin{callanother} on input line 58 ended by \end{call}.
+- intento 2: ❌ ./chapters/04-descripcion.tex:95: Extra }, or forgotten \endgroup. (tocó `chapters/04-descripcion.tex`, `chapters/04b-juego.tex`)
+- intento 3: ❌ VERIFICACIÓN FALLIDA: 22 problema(s) (tocó `chapters/04-descripcion.tex`, `chapters/04b-juego.tex`)
+
+**Repos leídos:** saas @ eb25eb8 2026-11-02 11:08:29 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para comprobar que ya no aparecen los errores de `revisar_umlsd.py` en `chapters/04-descripcion.tex` y `chapters/04b-juego.tex` y que la compilación con LuaLaTeX sigue en marcha; después atender lo que señale el revisor en la bitácora y verificar que siguen presentes las etiquetas fijas `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`, `fig:sec-partida` y `fig:sec-contratar` con su `\caption`, `\label` y `\ref` en el texto.
+
+## 2026-11-03 08:41 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 19 PBIs (P1–P19) y 32 tareas (T1–T32) → docs/gestion/README.md tabla "Backlog y estado del Sprint 1"
+- Sprint 2: 29 PBIs (P20–P48) y 50 tareas (T33–T82) → docs/gestion/README.md tabla "Backlog y estado del Sprint 2"
+- Fechas Sprint 1: 29/09/2026–27/10/2026 → docs/gestion/README.md "Sprint 1"
+- Fechas Sprint 2: 23/10/2026–29/10/2026 → docs/gestion/README.md "Sprint 2"
+- Requisitos funcionales Sprint 1: RF-01 a RF-13 → documentacion-tecnica.md §3.1 tabla
+- Requisitos funcionales juego: RJ-01 a RJ-20 → documentacion-tecnica.md §3.2 tabla
+- Requisitos no funcionales: RNF-01 a RNF-12 → documentacion-tecnica.md §3.3 tabla
+- Arquitectura en capas: API → lógica → datos/integraciones → documentacion-tecnica.md §5.1 diagrama y tabla
+- Modelo de datos: users, session, juego_perfiles, juego_records → documentacion-tecnica.md §6.2 diagrama ER
+- Flujos de secuencia: 7.1–7.13 en documentacion-tecnica.md §7
+- Seguridad: tabla de amenazas y medidas → documentacion-tecnica.md §8
+- Juego: concepto, sistemas, arquitectura, anti-trampas, logros, evolución → documentacion-tecnica.md §9
+- Pruebas: 305 totales (276 en main + CI) → documentacion-tecnica.md §10.2 tabla por fichero
+- CI/CD: workflows ci.yml, deploy-cloud-run.yml, memoria.yml → documentacion-tecnica.md §11 tabla
+- Logs: eventos JSON, X-Request-Id, ocultación → documentacion-tecnica.md §12.1
+- Errores: pipeline tipado → documentacion-tecnica.md §12.2 diagrama
+- Problemas y soluciones: 13 filas → documentacion-tecnica.md §13 tabla
+- Métricas: 19 filas → documentacion-tecnica.md §14 tabla
+- Conclusiones y trabajo futuro: §15.1 y §15.2 → documentacion-tecnica.md §15
+- Capturas disponibles: 13 app/, 11 hito4/, 16 juego/, 5 donetonic/, 2 produccion/, 1 prueba-tecnica/ → documentacion-tecnica.md §16
+- Bibliografía extra: RFC 6749, bcrypt, Vampire Survivors, DoneTonic → bibliografia-extra.md
+- Uso de IA: hechos para anexo → uso-ia.md
+- Estructura memoria oficial: 6 capítulos + 4 anexos → estructura-memoria.md
+- Plantilla LaTeX: Memoria.tex incluye capítulos 01, 03, 04, 04b, 05, 06 y anexos a1, a4, a2, a3 → Memoria.tex
+- Figuras obligatorias: fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2 → spec
+- Mínimo palabras: cap1 600, cap3 900, cap4 3000, cap4b 1800, cap5 1200, cap6 500, anexo a1 2500, anexo a4 150, anexo a2 60, anexo a3 250 → spec
+- Resumen ≥150 palabras, Abstract ≥120 palabras → spec
+- Números >20 deben estar en fuentes → spec
+
+El borrador actual tiene graves carencias que hacen fallar la verificación automática (22 errores). Los problemas principales son:
+
+1. **Capítulos 4 y 4b casi vacíos**: `04-descripcion.tex` solo contiene 3 diagramas de secuencia (223 palabras, mínimo 3000) y `04b-juego.tex` solo 2 diagramas (186 palabras, mínimo 1800). Faltan todo el texto explicativo, tablas de requisitos, arquitectura, modelo de datos, API, seguridad, manual de usuario, capturas, etc.
+
+2. **Figuras obligatorias ausentes**: No están `fig:capas` (arquitectura capas TikZ), `fig:modelo-datos` (ER TikZ), `fig:sec-registro`, `fig:sec-confirmacion`. Los diagramas de secuencia existentes (`fig:sec-login`, `fig:sec-google`, `fig:sec-baja`, `fig:sec-partida`, `fig:sec-contratar`) no se citan en el texto (`\ref` faltante).
+
+3. **Capturas mínimas no incluidas**: El test exige al menos 4 de `app/`, 4 de `hito4/`, 8 de `juego/`, 5 de `donetonic/`, 2 de `produccion/`, 1 de `prueba-tecnica/`. Actualmente hay 0 referenciadas.
+
+4. **Bibliografía sin citar**: `rfc6749`, `bcrypt`, `vampiresurvivors` están en `bib/ref.bib` pero no se usan `\cite` en el texto.
+
+5. **Referencias rotas**: `\ref{cap:descripcion}` y `\ref{cap:juego}` en `01-introduccion.tex` no tienen `\label` correspondiente en los capítulos 4 y 4b.
+
+6. **Anexo a1-desarrollo.tex incompleto**: El archivo se corta a mitad de la tabla de historias de usuario del Sprint 2.
+
+7. **Faltan diagramas de secuencia**: Según spec, en cap.4 deben estar registro (§7.1) y confirmación (§7.2) además de los ya puestos.
+
+8. **Tablas de requisitos**: Deben aparecer en `04-descripcion.tex` las tres tablas `longtable` (RF, RJ, RNF) con PBI y dónde se cumple.
+
+9. **Burndown charts**: `fig:burndown-s1` y `fig:burndown-s2` (pgfplots) deben estar en anexo a1.
+
+10. **Pipeline CI/CD**: `fig:pipeline` (TikZ) debe estar en cap.5.
+
+El constructor corrigió solo la sintaxis de los diagramas de secuencia (eliminando `_`, `&`, `#`, paréntesis en `\mess`), pero no abordó el contenido faltante. Se requiere reescritura masiva de los capítulos 4, 4b, 5, anexos a1 y a4, y añadir todas las figuras, tablas, capturas y citas.
+
+**Correcciones del revisor:** `chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Reescribir completamente `chapters/04-descripcion.tex` con el contenido completo proporcionado arriba (requisitos en tablas longtable, arquitectura con fig:capas, modelo de datos con fig:modelo-datos, módulos backend, frontend, API, todos los flujos de secuencia con sus figuras y referencias, seguridad, resumen de sprints, manual de usuario con capturas). Asegurar que cada figura tiene \caption, \label y se cita con \ref en el texto.
+- Reescribir completamente `chapters/04b-juego.tex` con el contenido del juego (concepto, manual de usuario con capturas de juego/, sistemas, arquitectura con diagrama, servidor y anti-trampas con fig:sec-partida y fig:sec-contratar, logros, evolución por fases). Mínimo 1800 palabras.
+- Completar `chapters/a1-desarrollo.tex` (añadir la retrospectiva del Sprint 2 con burndown real pgfplots fig:burndown-s2, explicar la recta de DoneTonic, y asegurar que ambas secciones de sprint tienen el mismo esquema: planificación, desarrollo, revisión, retrospectiva).
+- Verificar `chapters/a4-trazabilidad.tex`: que la tabla longtable incluye todos los 48 PBIs y 82 tareas con sus PRs correctos, y que compila sin overfull hbox (usar @{} en columnas L).
+- Revisar `chapters/05-evaluacion.tex`: añadir cita \cite{bcrypt} en la tabla de seguridad (RNF-01), asegurar que las métricas coinciden con documentacion-tecnica.md §14, y que fig:pipeline está presente y citada.
+- Añadir \label{cap:descripcion} al inicio de `chapters/04-descripcion.tex` y \label{cap:juego} al inicio de `chapters/04b-juego.tex` para resolver referencias rotas cap:descripcion y cap:juego.
+- Añadir \cite{rfc6749} en el flujo de Google OAuth (cap.4 o cap.4b), \cite{bcrypt} en seguridad (RNF-01), \cite{vampiresurvivors} en concepto del juego (cap.4b), \cite{donetonic} en metodología (cap.3).
+- Incluir todas las capturas mínimas requeridas (4 app/, 4 hito4/, 8 juego/, 5 donetonic/, 2 produccion/, 1 prueba-tecnica/) con \includegraphics y rutas correctas figs/capturas/<carpeta>/.
+- Añadir figuras obligatorias faltantes: fig:capas (TikZ), fig:modelo-datos (TikZ), fig:sec-registro, fig:sec-confirmacion, fig:sec-sesion, fig:sec-protegida, fig:sec-cambiar-rol, fig:sec-arranque, fig:pipeline (TikZ), fig:burndown-s1 (pgfplots), fig:burndown-s2 (pgfplots).
+- Ejecutar `comando_prueba` y corregir hasta que pase (compila y verificar.py OK).

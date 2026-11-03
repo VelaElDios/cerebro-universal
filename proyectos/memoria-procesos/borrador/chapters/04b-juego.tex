@@ -1,556 +1,84 @@
-\chapter{El juego (Sprint 2)}
-\label{cap:juego}
+% Corrección de los diagramas de secuencia del capítulo del juego:
+% dentro de \begin{call}...\end{call} las llamadas anidadas van con
+% \begin{call}...\end{call}, no con el comando \call. En \mess no hay
+% paréntesis y en los textos no hay _.
 
-\section{Concepto y género survivor}
-
-Durante el Sprint 2 el proyecto incorporó sobre la base SaaS previa un videojuego web perteneciente al género \textit{survivor}, popularizado por el título \textit{Vampire Survivors} \cite{vampiresurvivors}. En este género, el usuario controla el desplazamiento y el posicionamiento de un personaje sobre un plano bidimensional con cámara 3/4, mientras que las armas y habilidades ofensivas se activan y disparan de forma automática.
-
-La propuesta adapta estas mecánicas a la identidad histórica del Club Atlético de Madrid, como proyecto de aficionados sin vinculación oficial con la entidad. Para no usar logotipos ni imágenes protegidas, los 36 futbolistas y los 2 entrenadores se representan en \textit{pixel art} generado por código. El núcleo del juego consiste en esquivar oleadas continuas de rivales de 16 equipos; al derrotarlos se obtienen balones de experiencia que suben de nivel y ofrecen tres mejoras. Cada dos minutos aparecen jefes con tres fases, y el escenario cambia cada cinco minutos entre cinco finales históricas.
-
-El motor del juego está escrito en JavaScript sin frameworks ni paso de compilación, y se ejecuta en el navegador sobre un elemento \texttt{canvas} 2D. La simulación es determinista: avanza en pasos fijos de 1/60 s con un generador de números pseudoaleatorios inicializado por semilla, lo que garantiza que la misma partida se pueda reproducir exactamente y permite probar la lógica en Node.js sin necesidad de navegador. La separación estricta entre simulación (módulo \texttt{mundo.js}) y presentación (módulos \texttt{render.js}, \texttt{sprites.js}, \texttt{audio.js}) facilita la validación anti-trampas en el servidor, que reutiliza las mismas reglas de equilibrio (\texttt{config.js}, \texttt{club.js}, \texttt{logros.js}) para comprobar que los resultados enviados por el cliente son creíbles. El protocolo OAuth 2.0 usado para el inicio de sesión con Google se basa en el estándar RFC 6749 \cite{rfc6749}. La derivación de claves para contraseñas utiliza \texttt{bcrypt} \cite{bcrypt}.
-
-\section{Cómo se juega (manual de usuario)}
-
-El acceso al juego está integrado en la navegación web:
-
-\begin{enumerate}
-    \item \textbf{Identificación:} con sesión iniciada, la ruta \texttt{\#/jugar} abre el juego; en la primera visita se configura el mote único (entre 3 y 16 caracteres) y el avatar (Figura~\ref{fig:juego-identidad}).
-    \item \textbf{Menú principal (Hub):} muestra la ficha federativa, los registros y los contadores, y da acceso a Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes (Figura~\ref{fig:juego-menu}).
-    \item \textbf{Vestuario y Dirección:} se elige uno de los 36 futbolistas filtrando por posición y se selecciona la equipación entre las 10 desbloqueables (Figura~\ref{fig:juego-vestuario}); en Dirección (Figura~\ref{fig:juego-direccion}) se elige entre Cholo Simeone y Luis Aragonés, con su \textit{ulti}.
-    \item \textbf{Controles:} teclado con \texttt{W}, \texttt{A}, \texttt{S}, \texttt{D} o cursores; joystick táctil en móvil; \texttt{Espacio} o \texttt{E} para la \textit{ulti}; \texttt{Esc} o \texttt{P} para pausa (Figura~\ref{fig:juego-pausa}); \texttt{F} para pantalla completa; teclas \texttt{1}--\texttt{3} para elegir mejora; ajustes de volumen y escala en el panel de Ajustes (Figura~\ref{fig:juego-ajustes}).
-    \item \textbf{Partida:} cada 30 segundos llega una oleada; al subir de nivel se elige una de tres mejoras (Figura~\ref{fig:juego-partida} y Figura~\ref{fig:juego-mejora}); a los 1:30 minutos llega el primer jefe y se repite cada dos minutos (Figura~\ref{fig:juego-jefe}); cada cinco minutos cambia el ambiente (Figura~\ref{fig:juego-final-copa}).
-    \item \textbf{Club:} tras la partida, una ficha de contrato por cada 3 jefes permite fichar en Contratar (Figura~\ref{fig:juego-contratar}) y los puntos sirven para entrenar atributos en Entrenamiento (Figura~\ref{fig:juego-entrenamiento}).
-    \item \textbf{Meta y comunidad:} el Ranking (Figura~\ref{fig:juego-ranking}) muestra la mejor partida de cada usuario solo con mote y avatar; en Combinaciones (Figura~\ref{fig:juego-combinaciones}) se ven las 24 sinergias y los 6 ULTRAS; en Logros (Figura~\ref{fig:juego-logros}) están los 29 hitos históricos.
-    \item \textbf{Fin de partida:} pantalla con tiempo, bajas, jefes, daño por habilidad y recompensas (Figura~\ref{fig:juego-fin}).
-\end{enumerate}
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/01-menu.png}
-  \caption{Menú principal del juego (Hub con el jugador paseando).}
-  \label{fig:juego-menu}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/02-vestuario.png}
-  \caption{Vestuario con plantilla y selección de equipaciones.}
-  \label{fig:juego-vestuario}
-\end{subfigure}
-\caption{Menú principal y vestuario del club.}
-\label{fig:grupo-hub-vestuario}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/03-partida.png}
-  \caption{Partida en curso con HUD y oleada de rivales.}
-  \label{fig:juego-partida}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/04-mejora.png}
-  \caption{Selección táctica de una de tres mejoras.}
-  \label{fig:juego-mejora}
-\end{subfigure}
-\caption{Desarrollo de la partida y sistema de mejoras.}
-\label{fig:grupo-partida-mejora}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/05-jefe.png}
-  \caption{Combate contra jefe con barra de salud segmentada.}
-  \label{fig:juego-jefe}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/16-final-copa.png}
-  \caption{Ambiente avanzado: Final de la Copa del Rey.}
-  \label{fig:juego-final-copa}
-\end{subfigure}
-\caption{Jefes tácticos y ambientación dinámica por finales.}
-\label{fig:grupo-jefes-ambientes}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/07-entrenamiento.png}
-  \caption{Academia de entrenamiento de atributos.}
-  \label{fig:juego-entrenamiento}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/08-contratar.png}
-  \caption{Mercado de fichajes con fichas de contrato.}
-  \label{fig:juego-contratar}
-\end{subfigure}
-\caption{Progresión permanente del club: entrenamiento y contratos.}
-\label{fig:grupo-club-progreso}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/09-logros.png}
-  \caption{Vitrina de logros con contexto histórico del club.}
-  \label{fig:juego-logros}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/10-combinaciones.png}
-  \caption{Catálogo de combinaciones tácticas y poderes ULTRAS.}
-  \label{fig:juego-combinaciones}
-\end{subfigure}
-\caption{Sistemas de metas históricas y sinergias de juego.}
-\label{fig:grupo-logros-combinaciones}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/11-direccion.png}
-  \caption{Dirección táctica con selección de entrenadores.}
-  \label{fig:juego-direccion}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/12-ranking.png}
-  \caption{Ranking comunitario de la grada (anonimizado).}
-  \label{fig:juego-ranking}
-\end{subfigure}
-\caption{Cuerpo técnico y clasificación pública.}
-\label{fig:grupo-direccion-ranking}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.32\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/13-identidad.png}
-  \caption{Configuración de mote y avatar.}
-  \label{fig:juego-identidad}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.32\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/14-ajustes.png}
-  \caption{Panel de ajustes y volumen.}
-  \label{fig:juego-ajustes}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.32\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/juego/15-pausa.png}
-  \caption{Menú de pausa en partida.}
-  \label{fig:juego-pausa}
-\end{subfigure}
-\caption{Interfaces accesorias de identidad, ajustes y pausa.}
-\label{fig:grupo-accesorios}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.85\textwidth]{figs/capturas/juego/06-fin.png}
-\caption{Pantalla de fin de partida con estadísticas completas y desglose de daño.}
-\label{fig:juego-fin}
-\end{figure}
-
-Las Figuras~\ref{fig:juego-menu}--\ref{fig:juego-fin} (16 capturas de \texttt{figs/capturas/juego/}) documentan el manual de usuario del juego. Como se muestra en la Figura~\ref{fig:grupo-hub-vestuario}, el menú principal y el vestuario son las pantallas de entrada; la Figura~\ref{fig:grupo-partida-mejora} ilustra la partida y las mejoras; la Figura~\ref{fig:grupo-jefes-ambientes} muestra jefes y ambientes; la Figura~\ref{fig:grupo-club-progreso} cubre entrenamiento y fichajes; la Figura~\ref{fig:grupo-logros-combinaciones} presenta logros y combinaciones; la Figura~\ref{fig:grupo-direccion-ranking} muestra dirección y ranking; y la Figura~\ref{fig:grupo-accesorios} agrupa identidad, ajustes y pausa.
-
-\subsection{Capturas de la Fase 7 (pixel art renovado, menú, mapa, habilidades)}
-
-La Fase 7, documentada en la versión del 02/11/2026 de la documentación técnica y añadida tras el cierre del Sprint 2, renovó el pixel art a estilo chibi 32×32 sin piernas, rediseñó el menú con paneles translúcidos, mejoró el mapa con sombras y paletas por ambiente, y añadió 5 habilidades nuevas con sus efectos. Las Figuras~\ref{fig:f7-sprites}--\ref{fig:f7-pausa-grupo} documentan estos cambios.
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/01-sprites-antes.png}
-  \caption{Muñecos antes: todos muy parecidos.}
-  \label{fig:f7-sprites}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/02-sprites-despues.png}
-  \caption{Muñecos después: estilo chibi 32×32 sin piernas, rasgos propios.}
-  \label{fig:f7-sprites-despues}
-\end{subfigure}
-\caption{Comparativa de sprites antes y después de la Fase 7.}
-\label{fig:grupo-f7-sprites}
-\end{figure}
-
-Como se aprecia en la Figura~\ref{fig:grupo-f7-sprites}, los muñecos pasan de ser genéricos a tener rasgos distintivos (peinados, barbas, complexión, accesorios).
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/03-menu.png}
-  \caption{Menú nuevo: panel translúcido, título rojiblanco, muñeco centrado, botón de entrada.}
-  \label{fig:f7-menu}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/04-menu-movil.png}
-  \caption{Menú en móvil.}
-  \label{fig:f7-menu-movil}
-\end{subfigure}
-\caption{Menú rediseñado en escritorio y móvil (Fase 7).}
-\label{fig:grupo-f7-menu}
-\end{figure}
-
-La Figura~\ref{fig:grupo-f7-menu} muestra el nuevo menú con paneles translúcidos y el botón de entrada centrado, tanto en escritorio como en móvil.
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/05-mapa-ambientes.png}
-  \caption{Comparación de los cinco ambientes del mapa antes (arriba) y después (abajo).}
-  \label{fig:f7-mapa-ambientes}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/06-partida.png}
-  \caption{Partida con el mapa y pixel art nuevos.}
-  \label{fig:f7-partida}
-\end{subfigure}
-\caption{Mapa procedural y partida con mejoras visuales de la Fase 7.}
-\label{fig:grupo-f7-mapa-partida}
-\end{figure}
-
-La Figura~\ref{fig:grupo-f7-mapa-partida} compara los ambientes del mapa y muestra una partida con el nuevo pixel art.
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/07-jefe.png}
-  \caption{Mourinho en su primera fase con barra de vida.}
-  \label{fig:f7-jefe}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/08-habilidades-nuevas.png}
-  \caption{Línea de fuera de juego con banderines sobre rivales cazados.}
-  \label{fig:f7-habilidades-nuevas}
-\end{subfigure}
-\caption{Jefe y habilidad nueva ``fuera de juego'' (Fase 7).}
-\label{fig:grupo-f7-jefe-habilidad}
-\end{figure}
-
-En la Figura~\ref{fig:grupo-f7-jefe-habilidad} se ve un jefe (Mourinho) en su primera fase y la nueva habilidad ``fuera de juego'' con sus banderines.
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/09-efectos.png}
-  \caption{Estelas, brillos y números de daño de habilidades de disparo.}
-  \label{fig:f7-efectos}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/10-combinaciones.png}
-  \caption{Pantalla de combinaciones y ULTRAS.}
-  \label{fig:f7-combinaciones}
-\end{subfigure}
-\caption{Efectos visuales y pantalla de combinaciones (Fase 7).}
-\label{fig:grupo-f7-efectos-combinaciones}
-\end{figure}
-
-La Figura~\ref{fig:grupo-f7-efectos-combinaciones} muestra los nuevos efectos de partículas y la pantalla de combinaciones actualizada.
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/11-pausa.png}
-  \caption{Pausa con árbol de habilidades, combinaciones y ULTRAS.}
-  \label{fig:f7-pausa}
-\end{subfigure}
-\hfill
-\begin{subfigure}[b]{0.45\textwidth}
-  \centering
-  \includegraphics[width=\textwidth]{figs/capturas/fase7/12-pausa-salir.png}
-  \caption{Confirmación al salir: lo conseguido se guarda.}
-  \label{fig:f7-pausa-grupo}
-\end{subfigure}
-\caption{Menú de pausa rediseñado y confirmación de salida (Fase 7).}
-\label{fig:grupo-f7-pausa}
-\end{figure}
-
-Finalmente, la Figura~\ref{fig:grupo-f7-pausa} presenta el menú de pausa con el árbol de habilidades y la confirmación al salir.
-
-Todas las capturas de la Fase 7 (12 imágenes de \texttt{figs/capturas/fase7/}) se citan en el texto mediante \texttt{\textbackslash ref} a sus etiquetas.
-
-\section{Sistemas interactivos del juego}
-
-Las reglas y multiplicadores del juego están centralizados en \texttt{public/js/game/config.js}. La Tabla~\ref{tab:sistemas-juego} resume los sistemas.
-
-\begin{longtable}{@{}L{2.8cm} L{7.5cm} L{4.2cm}@{}}
-\caption{Sistemas interactivos del videojuego (Sprint 2).}\label{tab:sistemas-juego}\\
-\toprule
-\textbf{Sistema} & \textbf{Descripción funcional} & \textbf{Constantes clave en código} \\ \midrule \endfirsthead
-\toprule
-\textbf{Sistema} & \textbf{Descripción funcional} & \textbf{Constantes clave en código} \\ \midrule \endhead
-Jugadores & 36 futbolistas en 4 posiciones (4 porteros, 9 defensas, 13 medios y 10 delanteros) con atributos base, rasgos y habilidades compatibles. & \texttt{PERSONAJES}, \texttt{POSICIONES} \\
-Rarezas históricas & Leyenda (8), Épico (8), Raro (8) y Común (12); a mayor rareza, más habilidades (de 8 a 16) y menor probabilidad en contratos. & \texttt{RAREZAS} \\
-Cuerpo técnico & 2 entrenadores: Cholo Simeone (+daño, +vida; \textit{ulti} «¡Partido a partido!») y Luis Aragonés (+velocidad, +experiencia; \textit{ulti} «Furia Roja»). & \texttt{ENTRENADORES}, \texttt{ulti.js} \\
-Armamento y habilidades & 24 armas y habilidades con 5 niveles; las de alto impacto no suben hasta cierto minuto y tienen recarga mínima. & \texttt{ARMAS}, \texttt{desdeMinuto}, \texttt{cdMin} \\
-Pasivas deportivas & 14 potenciadores continuos (botas, imán, pasión, pizarra, cantera, masajista, espinilleras, pulmones, toque dorado, botas en llamas, paradón, brazalete, trébol y prórroga). & \texttt{PASIVAS} \\
-Combinaciones tácticas & 24 «metas» que se activan al juntar ciertas habilidades a cierto nivel y dan un bonus. & \texttt{SINERGIAS} \\
-Poderes ULTRAS & 6 que se consiguen solas al completar varias combinaciones, con efecto visual propio y daño en parte porcentual, menor contra jefes. & \texttt{ULTRAS}, \texttt{ultras.js} \\
-Equipos rivales & 16 equipos con jugadores genéricos; unos embisten y otros disparan, más élites blindados, veloces y furiosos. & \texttt{EQUIPOS}, \texttt{ELITES} \\
-Jefes mayores & 10 figuras con tres fases por vida (66\,\% y 33\,\%), escolta de élites desde el segundo jefe, furia si tardas en ganarles y una jugada estrella en la fase 3. & \texttt{JEFES}, \texttt{jefes.js} \\
-Curva de dificultad & Escalado de vida, daño y velocidad; tramo final más duro desde el minuto 9 y rivales «curtidos» desde el 12; multiplicador por ambiente. & \texttt{ESCALADO}, \texttt{TRAMO\_FINAL}, \texttt{CURTIDOS}, \texttt{AMBIENTES} \\
-Física y movilidad & Desplazamiento con inercia, ritmo al correr con más daño y experiencia, castigo por quedarse quieto y premios por el campo. & \texttt{FISICA}, \texttt{JUGADOR} \\
-Mundo procedural & Terreno infinito por semilla con ruidos suaves: distritos, estadios con gradas, plazas, mesetas con escaleras, barro, lluvia y caminos. & \texttt{TERRENO}, \texttt{terreno.js} \\
-Gestión de club & Plantilla inicial de 4 comunes, uno por posición; una ficha de contrato por cada 3 jefes; puntos por jefes y por bajas; estadísticas Vida, Defensa, Disparo y Suerte con máximo 20. & \texttt{club.js} \\
-Logros y equipaciones & 29 hitos vinculados a la historia del club que desbloquean 10 equipaciones. & \texttt{logros.js} \\
-Paisaje acústico & Música chiptune y efectos sintetizados con Web Audio, sin ficheros de sonido; murmullo y cánticos de la grada. & \texttt{audio.js}, \texttt{musica.js} \\
-\bottomrule
-\end{longtable}
-
-La Tabla~\ref{tab:sistemas-juego} resume los quince subsistemas del juego.
-
-\section{Arquitectura del motor y simulación pura}
-
-El motor separa la simulación de la presentación, como muestra la Figura~\ref{fig:arq-motor-juego}.
-
-\begin{figure}[htbp]
-\centering
-\begin{tikzpicture}[
-    box/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.8cm, align=center, minimum height=0.9cm, font=\small},
-    clientbox/.style={rectangle, draw=azul, fill=blanco, rounded corners, text width=4.8cm, align=center, minimum height=0.9cm, font=\small},
-    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
-]
-    \node[box] (sim) {\textbf{Simulación pura determinista}\\Módulo \texttt{mundo.js}: bucle de paso fijo (1/60 s), generador con semilla, colisiones, \texttt{combate.js}, \texttt{armas.js}, \texttt{jefes.js}, \texttt{terreno.js}};
-    \node[clientbox, below=0.6cm of sim] (pres) {\textbf{Presentación y renderizado}\\Módulos \texttt{juego.js}, \texttt{render.js}, \texttt{render-mundo.js}, sprites 16x20 cacheados, HUD y Web Audio};
-    \node[box, below=0.6cm of pres] (srv) {\textbf{Servidor y anti-trampas}\\Módulo \texttt{juegoService.js}, importación compartida de \texttt{club.js}, \texttt{config.js} y \texttt{logros.js}, validación y persistencia PostgreSQL};
-
-    \draw[arrow] (sim) -- node[right, font=\footnotesize] {Eventos puros} (pres);
-    \draw[arrow] (pres) -- node[right, font=\footnotesize] {HTTP / JSON} (srv);
-\end{tikzpicture}
-\caption{Arquitectura del motor del juego: separación entre simulación determinista y presentación.}
-\label{fig:arq-motor-juego}
-\end{figure}
-
-\subsection{Determinismo y paso fijo}
-
-El módulo \texttt{mundo.js} implementa un bucle de simulación con paso fijo de 1/60 s. Si el navegador va lento, se ejecutan varios pasos por fotograma (con un tope de 5) para no desincronizar la lógica. El generador de números aleatorios (\texttt{util.js}) usa una semilla por partida, de modo que la misma semilla produce exactamente la misma secuencia de eventos. Esto permite:
-\begin{itemize}
-    \item Probar la simulación en Node.js sin navegador (pruebas \texttt{game.test.js}, \texttt{juego-movilidad.test.js}, etc.).
-    \item Reproducir partidas para depuración.
-    \item Validar en el servidor que los tiempos y eventos son coherentes con la semilla y el reloj del servidor.
-\end{itemize}
-
-\subsection{Eventos puros}
-
-La simulación no toca el DOM ni el audio: emite eventos (\texttt{oleada}, \texttt{aviso}, \texttt{jefe-derrotado}, \texttt{ambiente}, \texttt{ultra}…) que \texttt{juego.js} traduce a sonido, avisos visuales y anuncios para lectores de pantalla (\texttt{aria-live}).
-
-\subsection{Estadísticas de daño}
-
-Cada fuente de daño (arma, ultra, ulti, quemaduras) se apunta en \texttt{mundo.stats} para la pantalla de fin (Figura~\ref{fig:juego-fin}).
-
-\subsection{Rendimiento}
-
-\begin{itemize}
-    \item Búsqueda de obstáculos por celdas con claves numéricas (unas 4,5 veces más rápida que la versión con claves de texto).
-    \item Una textura de suelo por celda y ambiente, pintada como mucho una por fotograma y por adelantado.
-    \item Muñecos cacheados (sprites 16×20 con 4 fotogramas de caminata).
-\end{itemize}
-
-\subsection{Dibujo pixel art (Fase 6 y 7)}
-
-Hasta la Fase 6 los muñecos eran de 16×20 píxeles con piernas. En la Fase 7 se rediseñaron a estilo chibi 32×32 sin piernas (cabeza grande, cuerpo y zapatones), con 18 peinados, 6 tipos de barba, mandíbula, complexión, estatura, gesto, gafas, cinta, guantes, brazalete, etc. Cada persona tiene sus rasgos y camina con 4 fotogramas. Así se generan las equipaciones y las camisetas de 26 selecciones sin imágenes. El mapa (Fase 7) se pinta con píxeles de 2 unidades en \texttt{render-suelo.js} y \texttt{render-obstaculos.js}, con las paletas de cada ambiente en \texttt{render-paletas.js}, y los efectos de las habilidades en \texttt{render-habilidades.js} (partículas con tope y azar propio en \texttt{efectos.js}, para que encenderlas o apagarlas no cambie la partida).
-
-\subsection{Audio sintetizado}
-
-Todo el audio se genera con Web Audio API: ondas de pulso (12,5\,\%, 25\,\% y 50\,\%), triángulo y ruido. La música es un secuenciador propio que programa las notas por adelantado; la grada usa voces con formantes de vocales y palmas. No hay ficheros de audio, solo código.
-
-\section{Servidor del juego y anti-trampas}
-
-El servidor valida cada partida finalizada mediante \texttt{juegoService.finalizarPartida}:
-
-\begin{enumerate}
-    \item Al \textbf{empezar}, el servidor guarda la partida en curso con su propio reloj (\texttt{partidaActual} en \texttt{juego\_perfiles.datos}).
-    \item Al \textbf{terminar}, rechaza el resultado si:
-    \begin{itemize}
-        \item La partida no es la que está en curso.
-        \item El tiempo supera lo transcurrido en el servidor (con 15 s de margen) o 4 horas.
-        \item Los jefes, el nivel o las bajas no son creíbles para ese tiempo (\texttt{jefes ≤ 3 + t/50}, \texttt{nivel ≤ 8 + t/3}, \texttt{bajas ≤ 20·t + 50}).
-    \end{itemize}
-    \item De los \textbf{logros} que manda el cliente, solo apunta los que puede comprobar con lo que sabe (tiempo, jefes, bajas, jugador y entrenador); los de plantilla los calcula él.
-    \item Cada cambio del perfil usa \textbf{concurrencia optimista} (\texttt{UPDATE … WHERE version = \$n}) con reintentos (diagrama de la Figura~\ref{fig:sec-contratar}).
-    \item El \textbf{ranking} guarda la mejor partida de cada usuario con su mote y avatar, nunca el correo.
-\end{enumerate}
-
-\subsection{Diagrama de secuencia: una partida (inicio, juego y fin con validación)}
-
+% --- fig:sec-partida ---
 \begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
-  \newthread{jug}{Jugador}
-  \newinst[2]{juego}{juego.js (navegador)}
-  \newinst[2]{sim}{mundo.js (simulación)}
-  \newinst[2]{api}{api.js}
+  \newthread{j}{Jugador}
+  \newinst[2]{g}{juego.js en navegador}
+  \newinst[2]{sim}{mundo.js simulacion}
+  \newinst[2]{cli}{api.js}
+  \newinst[2]{api}{API /api/juego}
   \newinst[2]{srv}{juegoService}
   \newinst[2]{repo}{juegoRepository}
-  \begin{call}{jug}{Jugar (personaje, entrenador)}{juego}{}
-  \end{call}
-  \begin{call}{juego}{iniciar(personaje, entrenador)}{api}{partidaId, stats}
-    \begin{call}{api}{POST /api/juego/partidas}{srv}{partidaId, stats}
-      \begin{call}{srv}{iniciarPartida()}{repo}{perfil, version}
-      \end{call}
-      \begin{call}{srv}{guardarPerfil(version)}{repo}{ok}
-      \end{call}
+  \begin{call}{j}{jugar con jugador y entrenador}{g}{ok}
+    \begin{call}{g}{iniciar partida}{cli}{ok}
+    \end{call}
+    \begin{call}{cli}{POST partidas}{api}{201}
+    \end{call}
+    \begin{call}{api}{iniciarPartida}{srv}{partida}
+    \end{call}
+    \begin{call}{srv}{lee perfil y version}{repo}{perfil}
+    \end{call}
+    \begin{call}{srv}{guarda partida en curso}{repo}{ok}
     \end{call}
   \end{call}
-  \begin{sdblock}{loop}{Cada fotograma (paso fijo 1/60 s)}
-    \begin{call}{juego}{avanzar(entrada)}{sim}{eventos}
+  \begin{sdblock}{loop}{cada fotograma con paso fijo}
+    \begin{call}{g}{avanzar con entrada}{sim}{eventos}
     \end{call}
-    \mess{juego}{Dibujo, HUD, sonido}{juego}
+    \mess{sim}{estado fin, te eliminan}{g}
   \end{sdblock}
-  \mess{sim}{estado fin (te eliminan)}{juego}
-  \begin{call}{juego}{terminar(id, tiempo, nivel, jefes, bajas, logros)}{api}{recompensas}
-    \begin{call}{api}{POST /api/juego/partidas/:id/fin}{srv}{recompensas}
-      \begin{call}{srv}{finalizarPartida()}{repo}{perfil, version}
-        \begin{call}{srv}{validar: reloj, límites creíbles}{srv}{ok}
-        \end{call}
-        \begin{call}{srv}{repartir: jefes, bajas, puntos, fichas}{srv}{logros}
-        \end{call}
-        \begin{call}{srv}{guardarPerfil(version) (reintenta si conflicto)}{repo}{ok}
-        \end{call}
-        \begin{call}{srv}{guardarRecord() si es mejor}{repo}{ok}
-        \end{call}
-      \end{call}
+  \begin{call}{g}{terminar con estadisticas}{cli}{ok}
+    \begin{call}{cli}{POST partidas id fin}{api}{200 o 400}
     \end{call}
+    \begin{call}{api}{finalizarPartida}{srv}{validacion}
+    \end{call}
+    \begin{sdblock}{alt}{resultado imposible}
+      \mess{srv}{400 resultado no creible}{api}
+    \end{sdblock}
+    \begin{sdblock}{else}{resultado valido}
+      \begin{call}{srv}{reparte recompensas y guarda}{repo}{perfil}
+      \end{call}
+      \mess{api}{200 con recompensas y logros}{g}
+    \end{sdblock}
   \end{call}
-  \mess{juego}{Pantalla de fin con stats y logros}{jug}
 \end{sequencediagram}}
-\caption{Una partida del juego: inicio, simulación y fin con validación anti-trampas.}
+\caption{Una partida del juego con validación en el servidor.}
 \label{fig:sec-partida}
 \end{figure}
 
-\subsection{Diagrama de secuencia: contratar con concurrencia optimista}
-
+% --- fig:sec-contratar ---
 \begin{figure}[htbp]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
-  \newinst[2]{p1}{Petición 1}
-  \newinst[2]{p2}{Petición 2 (doble clic)}
+  \newthread{p1}{Peticion 1}
+  \newthread{p2}{Peticion 2 doble clic}
   \newinst[2]{srv}{juegoService}
-  \newinst[2]{db}{juego\_perfiles}
-  \begin{call}{p1}{contratar()}{srv}{}
-    \begin{call}{srv}{SELECT datos, version (v=7)}{db}{datos, v=7}
-    \end{call}
-    \begin{call}{srv}{1 ficha → sortea jugador}{srv}{fichado}
-    \end{call}
-    \begin{call}{srv}{UPDATE … WHERE version=7}{db}{1 fila, v=8}
-    \end{call}
+  \newinst[2]{bd}{tabla juego perfiles}
+  \begin{call}{p1}{contratar}{srv}{ok}
   \end{call}
-  \begin{call}{p2}{contratar()}{srv}{}
-    \begin{call}{srv}{SELECT datos, version (v=7)}{db}{datos, v=7}
-    \end{call}
-    \begin{call}{srv}{1 ficha → sortea jugador}{srv}{fichado}
-    \end{call}
-    \begin{call}{srv}{UPDATE … WHERE version=7}{db}{0 filas}
-    \end{call}
-    \begin{call}{srv}{reintenta: SELECT (v=8, 0 fichas)}{db}{datos, v=8}
-    \end{call}
-    \mess{srv}{409 «No tienes fichas de contrato»}{p2}
+  \begin{call}{p2}{contratar}{srv}{ok}
   \end{call}
-  \mess{srv}{200 {fichado, logrosNuevos, perfil}}{p1}
+  \begin{call}{srv}{SELECT datos y version}{bd}{v7}
+  \end{call}
+  \begin{call}{srv}{SELECT datos y version}{bd}{v7}
+  \end{call}
+  \mess{srv}{p1 gasta una ficha y sortea}{bd}
+  \mess{srv}{p2 gasta una ficha y sortea}{bd}
+  \begin{call}{srv}{UPDATE donde version es 7 p1}{bd}{1 fila v8}
+  \end{call}
+  \begin{call}{srv}{UPDATE donde version es 7 p2}{bd}{0 filas}
+  \end{call}
+  \begin{call}{srv}{p2 reintenta con datos nuevos}{bd}{v8 sin fichas}
+  \end{call}
+  \mess{srv}{409 no tienes fichas de contrato}{p2}
+  \mess{srv}{200 fichado y perfil}{p1}
 \end{sequencediagram}}
-\caption{Contratar con una ficha: concurrencia optimista evita gastar dos veces la misma ficha.}
+\caption{Contratar con concurrencia optimista.}
 \label{fig:sec-contratar}
 \end{figure}
-
-\section{Logros}
-
-La Tabla~\ref{tab:logros} lista los 29 logros con su condición y la equipación que desbloquean (si aplica). Cada logro esconde un dato real del club (por ejemplo, que Griezmann fue tercero en el Balón de Oro de 2018, que Oblak ganó cinco Zamoras seguidos o que el Atleti nació en 1903 vestido de azul y blanco). Los datos están en \texttt{logros.js} y se han comprobado uno a uno.
-
-\begin{longtable}{@{}L{3.5cm} L{7.0cm} L{3.0cm}@{}}
-\caption{Logros del juego y equipaciones desbloqueables.}\label{tab:logros}\\
-\toprule
-\textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endfirsthead
-\toprule
-\textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endhead
-Primera muesca & Vence a tu primer jefe & Segunda \\
-Camino de la final & Llega a la Final de la Copa del Rey (minuto 5) & \\
-Campeones de Liga & Llega a la Final de Liga (minuto 10) & Tercera eléctrica \\
-Noche europea & Llega a la Final de la Champions (minuto 15) & Noche europea \\
-Final del Mundial & Llega a la Final del Mundial (minuto 20) & Final del Mundial \\
-Tercero en París & Consigue la ultra «Ganador del Balón de Oro» con Griezmann & \\
-Bota de Oro charrúa & Consigue la ultra «Bota de Oro histórica» con Forlán & \\
-Hamburgo, 2010 & Llega a la Final de la Champions con Forlán o con el Kun & \\
-Noche de Mónaco & Vence a 3 jefes en una partida con Falcao & \\
-El cabezazo del Camp Nou & Consigue la combinación «Dominio aéreo» con Godín & \\
-Brazalete eterno & Consigue la combinación «Capitán eterno» con Gabi & \\
-El Niño & Llega a la Final de la Copa del Rey con Fernando Torres & \\
-Del Oporto al Calderón & Consigue la combinación «Jugón» con Futre & \\
-Doblete del 96 & Llega a la Final de Liga con Simeone o con Pantić & Doblete del 96 \\
-Bernabéu, 2013 & Llega a la Final de la Copa del Rey con Miranda o con Courtois & \\
-Cinco Zamoras & Consigue la ultra «Trofeo Zamora» con Oblak & Leyenda bajo palos \\
-Los 27 de Costa & Elimina a 270 rivales en una partida con Diego Costa & \\
-La Araña campeona & Llega a la Final del Mundial con Julián Álvarez & \\
-El récord de Adelardo & Elimina a 553 rivales en una sola partida & \\
-El Sabio de Hortaleza & Aguanta 10 minutos con Luis Aragonés en el banquillo & \\
-Partido a partido & Aguanta 15 minutos con el Cholo en el banquillo & \\
-El muro & Aguanta los 5 primeros minutos sin que te toquen & \\
-Poder de leyenda & Consigue tu primera ULTRA & \\
-Leyenda total & Consigue tres ULTRAS en una partida & \\
-Mil en el Metropolitano & Elimina a 1000 rivales en una partida & \\
-El Pupas & Que te eliminen antes del minuto 2 & El Pupas \\
-Toda una vida & Juega 20 partidas con Koke & Adiós al Calderón \\
-Azul y blanco & Ten 20 jugadores en tu plantilla & Centenario 1903 \\
-Paseo de Leyendas & Ficha a las 8 leyendas & \\
-\bottomrule
-\end{longtable}
-
-\section{Evolución por fases}
-
-Cada fase es una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de la documentación técnica).
-
-\begin{longtable}{@{}L{2.0cm} L{7.0cm} L{5.5cm}@{}}
-\caption{Evolución del juego por fases (Sprint 2).}\label{tab:evolucion-fases}\\
-\toprule
-\textbf{Fase} & \textbf{Quién se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead
-\toprule
-\textbf{Fase} & \textbf{Quién se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endhead
-Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú del juego como inicio con sesión & La interfaz del sprint era funcional pero sobria \\
-1 & Survivor base: simulación, oleadas, armas, mejoras, jefes y menú con el muñeco paseando & — \\
-2 & Club en el servidor (plantilla, contratos, entrenamiento), ranking de la grada, élites y poderes nuevos & Progreso ligado a la cuenta y validado \\
-3 & 6 ultras, 24 combinaciones, dificultad con castigo, entrenamiento por bajas y modo pruebas & Maxear una sola cosa ya no basta \\
-4 & Mundo procedural natural, 5 ambientes por finales, mote y avatar & Mapa repetitivo; correo visible en el ranking \\
-5 & Rarezas por historia rojiblanca, habilidades niveladas, combinaciones a la vista, animación de la firma, colisiones exactas & Regate demasiado fuerte; esconderse detrás de los tejados \\
-6 & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles \\
-7 & Muñecos chibi 32×32 (sin piernas) con rasgos propios, mapa con mucho más detalle y luz por ambiente, menú rediseñado (paneles translúcidos, centro despejado y botón de entrada), 5 habilidades (carambola, presión alta, la ola, fuera de juego y ruleta), 2 pasivas (visión de juego y partidos grandes), 5 combinaciones y mejores efectos de todas las habilidades & Muñecos casi iguales entre sí; mapa plano; menú estático; efectos poco legibles \\
-\bottomrule
-\end{longtable}
-
-La Tabla~\ref{tab:evolucion-fases} resume las siete fases (incluyendo el rediseño inicial) y los problemas que cada una abordó.
