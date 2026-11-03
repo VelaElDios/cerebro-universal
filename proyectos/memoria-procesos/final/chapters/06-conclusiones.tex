@@ -3,23 +3,35 @@
 
 \section{Conclusiones}
 
-El desarrollo del Sprint 1 ha permitido materializar con éxito los objetivos planteados al inicio de la memoria, combinando la construcción de una aplicación funcional con la adhesión estricta a un proceso riguroso de ingeniería del software:
-\begin{itemize}
-    \item \textbf{Objetivo principal:} Se diseñó, implementó y desplegó en producción la arquitectura base de un servicio SaaS con gestión integral de usuarios, automatizando por completo el flujo desde la codificación hasta la entrega en la nube.
-    \item \textbf{Diseño arquitectural desacoplado:} Se estructuró el backend en capas bien diferenciadas (API, lógica y datos) servidas desde el mismo origen que el cliente web, garantizando la independencia y modularidad del sistema.
-    \item \textbf{Gestión de identidades y sesiones:} Se implementó la autenticación local con derivación de contraseñas mediante \texttt{bcryptjs} y almacenamiento de sesiones persistentes en base de datos resistente a reinicios.
-    \item \textbf{Control de acceso basado en roles:} Se implantó la autorización diferenciada para usuarios y administradores, con baja lógica y protección de rutas en el servidor.
-    \item \textbf{Persistencia relacional y configuración:} Se integró PostgreSQL en la nube mediante migraciones SQL versionadas y se aislaron los secretos en variables de entorno y Secret Manager.
-    \item \textbf{Garantía de calidad mediante pruebas:} Se consolidó una suite de 80 pruebas automatizadas que cubren casos nominales y de error, ejecutables mediante un único comando.
-    \item \textbf{Automatización del ciclo de entrega (CI/CD):} Se implantaron flujos de trabajo en GitHub Actions con validación en contenedores Docker y despliegue automático en Google Cloud Run y Render.
-    \item \textbf{Procesos ágiles y trazabilidad:} Se gestionó el backlog en DoneTonic cumpliendo la disciplina de GitHub Flow, vinculando cada tarea a su rama y pull request.
-\end{itemize}
+Se repasan los objetivos en el orden del Capítulo~\ref{cap:introduccion}.
+
+\textbf{Objetivo principal.} Se ha cumplido. La aplicación está desplegada en una URL pública de Google Cloud Run (Anexo~\ref{anx:material}). Los aficionados se registran con email o entran con Google, juegan, y su club, sus partidas y sus logros se guardan en el servidor. Los dos sprints están cerrados: el Sprint 1 con sus 19 PBIs y el Sprint 2 con sus 29, todos hechos.
+
+\textbf{Producto.} Los cuatro hitos del Sprint 1 están completos, desplegados y comprobados en producción (Capítulo~\ref{cap:evaluacion}), con trazabilidad desde el backlog hasta la release (Anexo~\ref{anx:trazabilidad}). Encima de esa base está el juego del Sprint 2 (Capítulo~\ref{cap:juego}). Pasar de red social a juego fue una buena decisión: reutiliza toda la base del sprint y ha obligado a resolver problemas técnicos interesantes, como el determinismo de la simulación, el rendimiento, la validación en el servidor, la generación procedural y el audio sintetizado.
+
+\textbf{Proceso.} Todo el trabajo pasó por el mismo camino: PBI en DoneTonic, tarea, rama, pull request con el CI en verde y despliegue automático. Ese camino se puede seguir hacia atrás desde cualquier pull request, y las gráficas de DoneTonic y los burndown del Anexo~\ref{anx:desarrollo} muestran cómo avanzó cada sprint. El cambio de alcance del Sprint 1 (el PBI P19, para aprovechar los créditos de Google Cloud) se registró como un PBI más, en lugar de hacerse por fuera del proceso.
+
+\textbf{Calidad.} La arquitectura en capas con inyección de dependencias permitió cambiar de memoria a PostgreSQL, añadir correo y Google y montar un juego entero encima sin tocar la lógica existente. Probar primero los casos de error y exigir el CI en verde para fusionar evitó regresiones durante todo el desarrollo: al cierre hay 276 pruebas automáticas.
+
+\textbf{Documentación.} La gestión, la documentación técnica, la revisión de la entrega y esta memoria están en el repositorio, junto al código. Quien revise el proyecto puede ir de un requisito a su PBI, de ahí a la tarea, a la rama y al pull request, y ver las pruebas que lo cubren, sin salir de GitHub ni pedir acceso a ninguna herramienta.
+
+\subsection{Lecciones aprendidas}
+
+\begin{enumerate}
+    \item Dividir pronto el trabajo en tareas pequeñas: una rama y un pull request por tarea hacen que cada cambio sea fácil de revisar y de deshacer.
+    \item Automatizar el despliegue desde el primer día: así cada entrega es un pull request más y no un trabajo aparte al final.
+    \item Documentar las decisiones mientras se toman, no al final: la documentación técnica y esta memoria salen de lo que ya estaba escrito en el repositorio.
+    \item Comprobar visualmente cada cambio de interfaz. Así apareció, por ejemplo, el primer clic perdido en «Reenviar el correo»: al salir del campo de contraseña aparecía su error, la página se movía y el clic caía fuera del botón (Anexo~\ref{anx:desarrollo}).
+\end{enumerate}
 
 \section{Trabajo futuro}
+\label{sec:trabajo-futuro}
 
-De cara a las siguientes fases del proyecto (particularmente el Hito 4), se identifican tres líneas prioritarias de evolución técnica:
 \begin{enumerate}
-    \item \textbf{Autenticación federada y verificación por correo (P15 y P16):} Incorporar el inicio de sesión con proveedores externos OAuth (Google) y el flujo de confirmación de cuentas mediante un servicio de correo transaccional (activando \texttt{REQUIRE\_EMAIL\_CONFIRMATION=true}).
-    \item \textbf{Manejo avanzado de errores y feedback interactivo (P17):} Perfeccionar el sistema de retroalimentación al usuario en la interfaz, unificando los códigos de error y mejorando la recuperación ante fallos de conectividad.
-    \item \textbf{Rediseño visual y expansión funcional:} Evolucionar la estética de la interfaz hacia una experiencia comunitaria más rica una vez que se incorporen las funcionalidades de publicación e interacción social.
+    \item \textbf{Multijugador:} lista de amigos y partidas en grupo (\textit{party}) de hasta 4 jugadores, con WebSockets y un servidor autoritativo.
+    \item \textbf{Más contenido:} jugadores, jefes, equipaciones y logros, y mejores sprites para los jugadores menos conocidos.
+    \item \textbf{Ranking por temporadas y por ambiente.}
+    \item \textbf{Seguridad de las cuentas:} recuperación de la contraseña por correo y límite de intentos de inicio de sesión (\textit{rate limiting}).
+    \item \textbf{Pruebas de extremo a extremo} automatizadas en el CI (Playwright) y medición de la cobertura.
+    \item \textbf{Aplicación instalable (PWA)} para jugar desde el móvil como una app.
 \end{enumerate}

@@ -3,27 +3,212 @@
 
 \section{Diseño de la evaluación}
 
-La evaluación de la calidad y del cumplimiento de la especificación se diseñó como un proceso multicapa continuo y reproducible. El marco de verificación descansa en cuatro pilares metodológicos:
+La evaluación de la calidad y del cumplimiento de la especificación se diseñó como un proceso continuo y reproducible. El marco de verificación descansa en cuatro pilares:
 \begin{enumerate}
     \item \textbf{Pruebas unitarias e integración en local:} Uso del ejecutor nativo \texttt{node:test} con el simulador de base de datos en memoria \texttt{pg-mem}, lo que permite ejecutar la suite completa en el entorno de desarrollo mediante el comando unificado \texttt{npm test}.
     \item \textbf{Integración continua en GitHub Actions:} Ejecución del flujo de trabajo automatizado en cada pull request y push hacia la rama \texttt{main}. Dicho flujo despliega un servicio PostgreSQL 17 real para ejecutar las pruebas contra la base de datos auténtica y valida la construcción de la imagen de producción en Docker mediante un contenedor \texttt{node:22-alpine}.
-    \item \textbf{Comprobación del despliegue en Google Cloud Run:} El flujo de despliegue valida la salud del servicio desplegado mediante un smoke test que realiza hasta 20 intentos de consulta contra el endpoint \texttt{/api/health}.
-    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría manual exhaustiva documentada en \texttt{docs/revision-entrega.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
+    \item \textbf{Comprobación del despliegue en Google Cloud Run:} El flujo de despliegue valida la salud del servicio desplegado mediante comprobaciones de consulta contra el endpoint \path{/api/health}.
+    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría documentada en \texttt{docs/\allowbreak revision\allowbreak -entrega.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
 \end{enumerate}
 
-\section{Resultados}
+\section{Estrategia de pruebas y resultados}
 
-La ejecución de las pruebas y la infraestructura arrojaron los resultados cuantitativos reflejados a continuación:
+\subsection{Pruebas automáticas}
+
+La batería de pruebas automatizadas consta de 276 pruebas, divididas en 140 del Sprint 1 (cuentas, API, base de datos, seguridad, prueba técnica) y 136 del juego (simulación, club, movilidad, API juego, personajes, habilidades, ultras, logros, repositorio). El comando único \texttt{npm test} las ejecuta todas; en local usan \texttt{pg-mem} y en el CI PostgreSQL 17 real. La Tabla~\ref{tab:pruebas-por-fichero} detalla la distribución de pruebas por fichero y la funcionalidad específica comprobada en cada caso.
+
+\begin{longtable}{@{}L{5.0cm} R{1.2cm} L{8.0cm}@{}}
+\caption{Pruebas por fichero.}\label{tab:pruebas-por-fichero}\\
+\toprule
+\textbf{Fichero} & \textbf{Pruebas} & \textbf{Qué comprueba} \\ \midrule \endfirsthead
+\toprule
+\textbf{Fichero} & \textbf{Pruebas} & \textbf{Qué comprueba} \\ \midrule \endhead
+\texttt{userService\allowbreak.test.js} & 27 & Registro, email repetido o inválido, contraseña corta, autenticación, pendiente, eliminada, volver con el mismo email tras la baja, OAuth, roles, bajas, último administrador, primer administrador \\
+\texttt{api.auth\allowbreak.test.js} & 16 & Registro (201 sin hash), 409/400, login, mismo mensaje en 401, cookie HttpOnly, me, logout, sesión de una cuenta eliminada, confirmación, enlace no válido, URL pública, reenvío 202, correo caído (503) \\
+\texttt{userRepository\allowbreak.test.js} & 16 & Contrato del repositorio en memoria y en PostgreSQL, incluida la cuenta eliminada que no ocupa su email \\
+\texttt{frontend\allowbreak.test.js} & 14 & Separación interfaz/cliente, sin HTML de usuario, módulos importables \\
+\texttt{domainPolicy\allowbreak.test.js} & 13 & Prueba técnica (8 de rechazo o error) \\
+\texttt{api.users\allowbreak.test.js} & 11 & 401, 403, listado, activo, cambio de rol, bajas propias y ajenas, último administrador \\
+\texttt{googleOAuth\allowbreak.test.js} & 11 & Proveedores disponibles, redirección con state, cuenta nueva, existente y pendiente que se confirma, state incorrecto, ausente y reutilizado, cancelación, email sin verificar, volver a entrar con Google tras darse de baja (cuenta nueva), cliente real con fetch falso y configuración \\
+\texttt{config\allowbreak.test.js} & 8 & Secretos obligatorios en producción, valores por defecto, .env fuera del repositorio \\
+\texttt{accountConfirmation\allowbreak.test.js} & 6 & Correo con enlace, confirmación, enlace manipulado/caducado, eliminada, doble confirmación, reenvío \\
+\texttt{logger\allowbreak.test.js} & 6 & JSON, niveles, ocultación de datos sensibles \\
+\texttt{tokenSigner\allowbreak.test.js} & 3 & Firma, manipulación y caducidad \\
+\texttt{mailer\allowbreak.test.js} & 3 & SMTP o registro \\
+\texttt{migrate\allowbreak.test.js} & 3 & Crea las tablas, es idempotente y aplica las restricciones (email único, roles válidos) \\
+\texttt{bootstrap\allowbreak.test.js} & 2 & Arranque con memoria y con PostgreSQL \\
+\texttt{health\allowbreak.test.js} & 1 & /api/health \\
+\texttt{api.database\allowbreak.test.js} & CI & Recorrido completo con PostgreSQL real \\
+\texttt{juego-club\allowbreak.test.js} & 27 & Club, contratos, entrenamiento, rarezas, ranking \\
+\texttt{juego-movilidad\allowbreak.test.js} & 22 & Mundo, colisiones, mesetas, alcance del mapa, ambientes \\
+\texttt{api.juego\allowbreak.test.js} & 15 & API del juego, anti-trampas, logros en el servidor, concurrencia, cuenta eliminada que sale del ranking \\
+\texttt{juego-personajes\allowbreak.test.js} & 14 & Personajes, entrenadores, habilidades por jugador \\
+\texttt{juego-habilidades\allowbreak.test.js} & 14 & Habilidades nuevas y niveles por minuto \\
+\texttt{juego-ultras\allowbreak.test.js} & 13 & Ultras: cómo se consiguen y qué hacen \\
+\texttt{juego-logros\allowbreak.test.js} & 13 & Logros, equipaciones, estadísticas, pantalla de fin, música y jefes más duros \\
+\texttt{game\allowbreak.test.js} & 10 & Simulación base (paso fijo, semilla, armas, jefes, ulti, dificultad) \\
+\texttt{juegoRepository\allowbreak.test.js} & 8 & Repositorio del juego en memoria y PostgreSQL \\
+\midrule
+\textbf{Total} & \textbf{276} & 140 del Sprint 1 y 136 del juego \\
+\bottomrule
+\end{longtable}
+
+\subsection{Comprobaciones manuales y visuales}
+
+Además de las pruebas automáticas, cada cambio visible se ha comprobado en el navegador con Playwright mediante capturas automatizadas de cada pantalla y estado. El Hito 4 se probó a mano en producción: correo real recibido en Gmail, enlace manipulado, acceso con dos cuentas de Google distintas. Las capturas de la aplicación se generan con la aplicación real y datos de ejemplo.
+
+\section{Integración y despliegue continuos (CI/CD)}
+
+El pipeline de CI/CD se implementa con tres workflows de GitHub Actions y un webhook en Render. La Tabla~\ref{tab:workflows} describe los workflows de integración continua y despliegue con sus eventos de activación y tareas asociadas.
+
+\begin{longtable}{@{}L{3.0cm} L{3.5cm} L{8.0cm}@{}}
+\caption{Workflows de CI/CD.}\label{tab:workflows}\\
+\toprule
+\textbf{Workflow} & \textbf{Cuándo} & \textbf{Qué hace} \\ \midrule \endfirsthead
+\toprule
+\textbf{Workflow} & \textbf{Cuándo} & \textbf{Qué hace} \\ \midrule \endhead
+\path{ci.yml} (CI) & Cada PR y push a main, hito-*/integracion & Trabajo \textit{Pruebas}: \texttt{npm ci} + \texttt{npm test} con PostgreSQL 17. Trabajo \textit{Imagen Docker}: construye imagen, arranca y comprueba \path{/api/health} \\
+\texttt{deploy\allowbreak -cloud\allowbreak -run.yml} & CI verde en main (\texttt{workflow\allowbreak \_run}) & Autentica en Google Cloud con Workload Identity Federation, construye y sube imagen a Artifact Registry y despliega en Cloud Run con variables y 8 secretos de Secret Manager \\
+\path{memoria.yml} & Cambios en memoria/ & Compila la memoria con LuaLaTeX (latexmk + biber) y publica el PDF como artefacto \\
+Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{render\allowbreak.yaml} \\
+\bottomrule
+\end{longtable}
+
+La Figura \ref{fig:pipeline} ilustra el diagrama del pipeline de integración y despliegue continuos.
+
+\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=\linewidth}
+\begin{tikzpicture}[
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.85cm, font=\footnotesize},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.85cm, font=\footnotesize},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=2.4cm, align=center, font=\footnotesize},
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
+]
+    \node[node] (push) {\textbf{Desarrollador}\\Push o PR a GitHub};
+    \node[nodewide, below=0.6cm of push] (ci) {\textbf{GitHub Actions CI}\\Test PostgreSQL 17 + Docker build};
+    \node[decision, below=0.7cm of ci] (dec) {¿CI verde\\en \texttt{main}?};
+    \node[nodewide, below=0.7cm of dec] (deploy) {\textbf{Deploy Cloud Run}\\Auth WIF $\rightarrow$ Artifact Registry $\rightarrow$ Cloud Run deploy $\rightarrow$ Smoke test};
+    \node[node, right=1.2cm of deploy] (render) {\textbf{Render}\\Webhook paralelo};
+    \node[node, left=1.2cm of dec] (nodeploy) {Sin despliegue};
+    \node[node, below=0.6cm of deploy] (prod) {\textbf{Producción activa}\\\url{run.app}};
+
+    \draw[arrow] (push) -- (ci);
+    \draw[arrow] (ci) -- (dec);
+    \draw[arrow] (dec) -- node[left, font=\scriptsize] {sí} (deploy);
+    \draw[arrow] (deploy) -- (prod);
+    \draw[arrow] (dec) -- node[above, font=\scriptsize] {no} (nodeploy);
+    \draw[arrow] (deploy) -- (render);
+\end{tikzpicture}
+\end{adjustbox}
+\caption{Pipeline de integración y despliegue continuos.}
+\label{fig:pipeline}
+\end{figure}
+
+Como evidencia visual del flujo automatizado, la captura de la Figura \ref{fig:actions-verde} demuestra la ejecución exitosa en verde tanto de la integración continua como del despliegue en Google Cloud Run.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/02-actions-verde.png}
+\caption{GitHub Actions: flujos de CI y despliegue en Cloud Run en verde tras los PRs del Hito 4.}
+\label{fig:actions-verde}
+\end{figure}
+
+\section{Registro de actividad y manejo de errores}
+
+\subsection{Registro de actividad (logs)}
+
+El sistema genera una línea JSON estructurada por cada evento relevante en la salida estándar (capturada por Cloud Logging en producción), incluyendo los campos \texttt{time}, \texttt{level}, \texttt{event}, \texttt{msg} y metadatos asociados. Cada petición HTTP recibe un identificador único (\texttt{X-Request-Id}) que se propaga a todas las trazas generadas en su ámbito. Los eventos tipados contemplan: \texttt{app\allowbreak.start}, \texttt{app\allowbreak.stop}, \texttt{app\allowbreak.storage}, \texttt{app\allowbreak.mail}, \texttt{admin\allowbreak.bootstrap}, \texttt{http\allowbreak.request}, \texttt{http\allowbreak.error}, \texttt{user\allowbreak.registered}, \texttt{auth\allowbreak.login}, \texttt{auth\allowbreak.logout}, \texttt{auth\allowbreak.login\_failed}, \texttt{auth\allowbreak.forbidden}, \texttt{mail\allowbreak.confirmation\_sent}, \texttt{mail\allowbreak.failed}, \texttt{mail\allowbreak.not\_sent}, \texttt{user\allowbreak.confirmed}, \texttt{user\allowbreak.confirm\_failed}, \texttt{auth\allowbreak.oauth\_denied}, \texttt{auth\allowbreak.oauth\_failed}, \texttt{user\allowbreak.role\_changed}, \texttt{user\allowbreak.deleted} y \texttt{juego\allowbreak.identidad}. Para garantizar la confidencialidad, contraseñas, hashes, cookies, tokens y secretos se reemplazan automáticamente por el texto \texttt{[oculto]}.
+
+\subsection{Manejo de errores}
+
+El tratamiento de errores opera de forma uniforme desde la capa de lógica hasta la interfaz:
+\begin{enumerate}
+    \item Los servicios de negocio lanzan excepciones tipadas (\texttt{Validation\allowbreak Error}, \texttt{Unauthorized\allowbreak Error}, \texttt{Forbidden\allowbreak Error}, \texttt{Account\allowbreak Pending\allowbreak Error}, \texttt{Not\allowbreak Found\allowbreak Error}, \texttt{Conflict\allowbreak Error}, \texttt{Service\allowbreak Unavailable\allowbreak Error}).
+    \item El middleware \texttt{error\allowbreak Handler} mapea cada error a su correspondiente código de estado HTTP y genera una respuesta estándar con formato \texttt{\{"error": \{"code", "message"\}\}}.
+    \item El cliente de comunicación \path{api.js} transforma las respuestas fallidas en objetos de error \texttt{Api\allowbreak Error} e implementa un tiempo límite de espera de 15 segundos mediante \texttt{Abort\allowbreak Controller}.
+    \item Las vistas de la interfaz muestran alertas específicas para cada caso, impidiendo que el usuario final visualice trazas internas o formatos crudos.
+\end{enumerate}
+
+\section{Revisión frente al enunciado}
+
+La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\allowbreak -entrega.md} confirmó el cumplimiento íntegro de las prescripciones del enunciado:
 \begin{itemize}
-    \item \textbf{Batería de pruebas automatizadas:} Un total de 80 pruebas automatizadas (79 ejecutables en entorno local y 1 prueba de extremo a extremo que se ejecuta exclusivamente en el CI contra PostgreSQL 17). De ellas, 26 corresponden a pruebas unitarias de la lógica de negocio en \texttt{userService}, evaluando registros duplicados, cuentas pendientes, control del último administrador y permisos. Las restantes cubren autenticación (10), API de usuarios (11), contratos de repositorios (12), logger (6), configuración (5), migraciones (3), interfaz (3), arranque (2) y salud (1).
-    \item \textbf{Métricas del código fuente:} El servidor en \texttt{src/} cuenta con 1.128 líneas de JavaScript; el frontend en \texttt{public/} suma 657 líneas; y las pruebas en \texttt{tests/} alcanzan 992 líneas repartidas en 13 ficheros. Se crearon 2 migraciones SQL (\texttt{users} y \texttt{session}).
-    \item \textbf{Actividad en GitHub:} Se contabilizan 65 commits en \texttt{main} (33 de trabajo y 32 fusiones de pull request), 33 pull requests integrados y 33 ramas gestionadas. Se registraron 71 ejecuciones de GitHub Actions (el workflow CI completó 65 ejecuciones).
-    \item \textbf{Despliegue productivo:} El último commit en \texttt{main} (\texttt{978098e}, PR \#32, 12/10/2026) se desplegó en Google Cloud Run en 58 s de forma automática.
-    \item \textbf{Consumo de recursos en Neon (a fecha 12/10/2026):} 0,27 CU-h de cómputo (frente a 100 CU-h disponibles), 0,03 GB de almacenamiento (sobre un límite de 1 GB) y 0 GB de transferencia sobre un límite mensual de 5 GB \cite{neonlimits}.
+    \item Arquitectura obligatoria cliente-servidor con frontend servido desde el mismo origen sin acceso directo a base de datos.
+    \item Gestión de usuarios completa: registro local, confirmación por correo, inicio de sesión local y con Google OAuth 2.0, sesiones en servidor e invalidación al cierre.
+    \item Esquema de autorización con dos roles, listado administrativo, comprobación de estado activo, baja lógica preservando auditoría y protección del último administrador.
+    \item Persistencia relacional en PostgreSQL con migraciones versionadas y custodia de secretos fuera del código.
 \end{itemize}
 
-\section{Discusión}
+\section{Prueba técnica (RF-13)}
 
-El diseño de la evaluación proporciona garantías sólidas respecto a la integridad funcional del software: ninguna rama pudo fusionarse sin que la batería completa de pruebas resultara exitosa en un entorno PostgreSQL idéntico al de producción. Asimismo, la revisión frase a frase permitió identificar discrepancias sutiles antes del cierre, como la restricción del endpoint de verificación de usuario activo, que originalmente estaba abierto al propio usuario y fue restringido al administrador en el PR \#30 para ceñirse fielmente al enunciado \cite{enunciado}.
+En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). La Figura \ref{fig:prueba-tecnica-permitido} ilustra la respuesta afirmativa ante un dominio autorizado, mientras que la Figura \ref{fig:prueba-tecnica-rechazado} evidencia el rechazo de un subdominio no reconocido. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
 
-No obstante, como observación crítica sobre el proceso, debe señalarse que los 33 commits de desarrollo quedaron registrados con fecha 12/10/2026. Si bien la estructura del historial es estrictamente incremental y respeta el flujo de ramas y pull requests individuales por tarea, la concentración temporal en una única jornada debe considerarse con transparencia ante la evaluación docente, al contrastarla con la expectativa pedagógica de un avance espaciado en el tiempo.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
+\caption{Prueba técnica: validación afirmativa de dominio permitido.}
+\label{fig:prueba-tecnica-permitido}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.7\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/02-subdominio-rechazado.png}
+\caption{Prueba técnica: rechazo de subdominio no autorizado.}
+\label{fig:prueba-tecnica-rechazado}
+\end{figure}
+
+\section{Comprobación en producción}
+
+El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) fue sometido a validación manual en condiciones reales de explotación:
+\begin{itemize}
+    \item Emisión y recepción satisfactoria de correo electrónico transaccional en buzón real de Gmail (Figura \ref{fig:correo-confirmacion}).
+    \item Configuración de Google Auth Platform con estado publicado para usuarios externos (Figura \ref{fig:google-publicada}).
+    \item Validación de enlaces de confirmación manipulados o caducados.
+    \item Interacción concurrente sobre perfiles y verificación de bajas de cuenta.
+\end{itemize}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/01-correo-confirmacion.png}
+\caption{Correo de confirmación transaccional recibido en un buzón de Gmail.}
+\label{fig:correo-confirmacion}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.75\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/03-google-publicada.png}
+\caption{Consola de Google Cloud: aplicación OAuth publicada en producción para usuarios externos.}
+\label{fig:google-publicada}
+\end{figure}
+
+\section{Métricas del proyecto}
+
+La Tabla \ref{tab:metricas} sintetiza las dimensiones cuantitativas del software desarrollado a lo largo de ambos sprints.
+
+\begin{longtable}{@{}L{6.0cm} L{8.0cm}@{}}
+\caption{Métricas globales del proyecto.}\label{tab:metricas}\\
+\toprule
+\textbf{Métrica} & \textbf{Valor} \\ \midrule \endfirsthead
+\toprule
+\textbf{Métrica} & \textbf{Valor} \\ \midrule \endhead
+PBIs y tareas del Sprint 1 & 19 PBIs / 32 tareas \\
+PBIs y tareas del Sprint 2 & 29 PBIs / 50 tareas \\
+Pull requests fusionados & Más de 50 \\
+Releases publicadas en GitHub & \path{hito-1}, \path{hito-2}, \path{hito-3}, \path{hito-4}, \path{sprint-1} \\
+Pruebas automáticas totales & 276 (más batería sobre PostgreSQL real en CI) \\
+Endpoints expuestos en la API & 23 \\
+Migraciones SQL aplicadas & 5 \\
+Líneas de código del backend (\path{src/}, con SQL) & ~2.300 \\
+Líneas de interfaz web (\path{ui.js}, \path{api.js}, \path{ui/}) & ~1.150 \\
+Líneas de hojas de estilo CSS & ~950 \\
+Líneas del motor del juego (\path{public/js/game/}, 35 módulos) & ~14.800 \\
+Líneas de pruebas automatizadas & ~5.050 \\
+Dependencias directas de producción & 6 \\
+Contenido jugable implementado & 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones \\
+\bottomrule
+\end{longtable}
+
+\section{Resultados y discusión}
+
+La evaluación confirma que la adopción de una arquitectura en capas complementada con inyección de dependencias facilitó la incorporación del juego en el Sprint 2 sin desestabilizar la base SaaS del Sprint 1. El requisito de mantener el pipeline de CI en verde antes de fusionar garantizó la ausencia de regresiones a lo largo de los más de 50 pull requests procesados. La disponibilidad de 276 pruebas automáticas aporta confianza en el comportamiento determinista del motor y en la robustez de las políticas de seguridad del servidor.

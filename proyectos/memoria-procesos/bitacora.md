@@ -8698,3 +8698,23 @@ El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se 
 Se ha llegado al máximo de pasos (65 de 65). El workflow no hará nada más hasta que Javier lo revise.
 
 Para continuar: en `proyecto.json`, subir `max_pasos` y volver a poner `"estado": "en-construccion"`.
+
+## 2026-11-03 · 🎉 Terminado a mano (Claude, a petición de Javier)
+
+El cerebro llegó al tope de 65 pasos sin terminar: las IAs reescribían `chapters/04-descripcion.tex`
+entero (casi 800 líneas) y en cada paso metían un fallo nuevo (`\end{call>` en vez de `\end{call}`, `%` sin
+escapar, `_` sin escapar en `\texttt`, `\newthread` dentro de `\texttt` en el texto). Javier decidió que
+Claude terminara la memoria y mejorara el cerebro para que no vuelva a pasar.
+
+Lo que hizo Claude en el borrador:
+- Arregló esos errores de compilación y la maquetación: rutas largas con `\path` (se parten), tablas de
+  requisitos más estrechas, módulos y API en `longtable`, dibujos TikZ con `adjustbox` (ancho máximo),
+  imágenes con altura máxima, y una frase que cita cada figura que no se citaba.
+- Quitó del texto las referencias internas a «documentación técnica §…».
+- Copió las 29 historias de usuario del Sprint 2 tal cual están en DoneTonic (las IAs las habían resumido con
+  errores: «Como profesor…», «tope de nivel 20»).
+- Reescribió la introducción, las conclusiones y el anexo del uso de la IA con un estilo más sencillo y
+  ciñéndose a las fuentes (el tercer motivo del cambio a juego estaba inventado).
+- `verificar.py`: «\\todo» (salto de línea + «todo») ya no cuenta como marca de pendiente.
+
+Resultado: compila (128 páginas), `verificar.py` OK (75 figuras, 28 tablas, ~15.200 palabras). Copiado a `final/`.

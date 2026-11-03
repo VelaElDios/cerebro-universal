@@ -3,33 +3,35 @@
 
 \section{Conclusiones}
 
-El proyecto \textit{La Grada Colchonera} ha permitido cumplir con éxito tanto el objetivo principal como la totalidad de los objetivos específicos formulados en el Capítulo~\ref{cap:introduccion}, combinando la construcción de una aplicación web completa y funcional con la aplicación rigurosa de las disciplinas de la Ingeniería del Software:
-\begin{itemize}
-    \item \textbf{Cumplimiento del objetivo principal:} Se diseñó, implementó, verificó y desplegó en producción sobre Google Cloud Run un sistema SaaS en capas con gestión segura de usuarios y un videojuego interactivo web \textit{survivor} en pixel art, cuyo progreso y marcas se consolidan de forma fidedigna y persistente en el servidor.
-    \item \textbf{Arquitectura desacoplada y modular (Objetivo específico 1):} La estricta separación entre la presentación web, el cliente de API (\texttt{api.js}), las rutas HTTP en Express 5, la lógica de negocio (\texttt{src/services}) y los repositorios de datos permitió desarrollar el Sprint 1 y añadir la lógica completa del juego en el Sprint 2 sin desestabilizar la infraestructura previa, verificando la portabilidad entre memoria y PostgreSQL.
-    \item \textbf{Gestión de identidades y seguridad por diseño (Objetivo específico 2):} Se implementó un subsistema robusto con contraseñas derivadas mediante \texttt{bcrypt} (coste 10), confirmación transaccional con tokens HMAC-SHA256, autenticación externa con Google OAuth 2.0 (RFC 6749), sesiones respaldadas en base de datos y autorización por roles (\textit{user} y \textit{admin}) con protección estricta del último administrador.
-    \item \textbf{Persistencia relacional e integridad (Objetivo específico 3):} El esquema relacional en PostgreSQL sobre Neon gestiona de forma transparente el ciclo de vida de usuarios, sesiones y clubes mediante cinco migraciones SQL versionadas, incorporando índices únicos parciales para posibilitar el retorno de usuarios tras una baja voluntaria.
-    \item \textbf{Lógica del videojuego y equidad anti-trampas (Objetivo específico 4):} El motor determinista de paso fijo (60 Hz) garantiza partidas justas e independientes del hardware, mientras que el servidor valida las partidas finalizadas contrastando los tiempos reales de juego con límites estadísticos admisibles, actualizando el club bajo concurrencia optimista.
-    \item \textbf{Disciplina metodológica y CI/CD (Objetivo específico 5):} La metodología Scrum articulada en DoneTonic (48 PBIs y 82 tareas cerradas) y el flujo GitHub Flow con integración continua en GitHub Actions aseguraron que cada cambio incorporado a \texttt{main} cumpliese la Definición de Hecho y se desplegase automáticamente en la nube.
-    \item \textbf{Verificación sistemática (Objetivo específico 6):} Se alcanzó una suite de 276 pruebas automáticas sobre \texttt{node:test} que evalúan exhaustivamente tanto los caminos felices como los escenarios de error, complementada con la auditoría frase a frase frente a las directrices de la asignatura.
-\end{itemize}
+Se repasan los objetivos en el orden del Capítulo~\ref{cap:introduccion}.
+
+\textbf{Objetivo principal.} Se ha cumplido. La aplicación está desplegada en una URL pública de Google Cloud Run (Anexo~\ref{anx:material}). Los aficionados se registran con email o entran con Google, juegan, y su club, sus partidas y sus logros se guardan en el servidor. Los dos sprints están cerrados: el Sprint 1 con sus 19 PBIs y el Sprint 2 con sus 29, todos hechos.
+
+\textbf{Producto.} Los cuatro hitos del Sprint 1 están completos, desplegados y comprobados en producción (Capítulo~\ref{cap:evaluacion}), con trazabilidad desde el backlog hasta la release (Anexo~\ref{anx:trazabilidad}). Encima de esa base está el juego del Sprint 2 (Capítulo~\ref{cap:juego}). Pasar de red social a juego fue una buena decisión: reutiliza toda la base del sprint y ha obligado a resolver problemas técnicos interesantes, como el determinismo de la simulación, el rendimiento, la validación en el servidor, la generación procedural y el audio sintetizado.
+
+\textbf{Proceso.} Todo el trabajo pasó por el mismo camino: PBI en DoneTonic, tarea, rama, pull request con el CI en verde y despliegue automático. Ese camino se puede seguir hacia atrás desde cualquier pull request, y las gráficas de DoneTonic y los burndown del Anexo~\ref{anx:desarrollo} muestran cómo avanzó cada sprint. El cambio de alcance del Sprint 1 (el PBI P19, para aprovechar los créditos de Google Cloud) se registró como un PBI más, en lugar de hacerse por fuera del proceso.
+
+\textbf{Calidad.} La arquitectura en capas con inyección de dependencias permitió cambiar de memoria a PostgreSQL, añadir correo y Google y montar un juego entero encima sin tocar la lógica existente. Probar primero los casos de error y exigir el CI en verde para fusionar evitó regresiones durante todo el desarrollo: al cierre hay 276 pruebas automáticas.
+
+\textbf{Documentación.} La gestión, la documentación técnica, la revisión de la entrega y esta memoria están en el repositorio, junto al código. Quien revise el proyecto puede ir de un requisito a su PBI, de ahí a la tarea, a la rama y al pull request, y ver las pruebas que lo cubren, sin salir de GitHub ni pedir acceso a ninguna herramienta.
 
 \subsection{Lecciones aprendidas}
 
-El desarrollo del proyecto aportó valiosas enseñanzas metodológicas y técnicas:
 \begin{enumerate}
-    \item \textbf{Granularidad de tareas y control de flujo:} Descomponer los requisitos en tareas técnicas breves asociadas a ramas y pull requests individuales previene discrepancias de integración y facilita la detección temprana de anomalías.
-    \item \textbf{Automatización del despliegue desde fases tempranas:} Disponer de un pipeline de CI/CD operativo desde el inicio del proyecto reduce la incertidumbre en las entregas y evita sorpresas de configuración en el entorno productivo.
-    \item \textbf{Pruebas prioritarias de casos de error:} Enfocar la verificación en las condiciones de contorno y rechazo (claves duplicadas, sesiones expiradas, resultados inverosímiles) genera una base de código más resiliente que limitarse al camino nominal.
-    \item \textbf{Verificación visual y funcional continua:} Las pruebas de extremo a extremo y las revisiones manuales en navegador resultan indispensables para identificar fallos de experiencia de usuario sutiles, como el desplazamiento de botones tras mensajes de validación.
+    \item Dividir pronto el trabajo en tareas pequeñas: una rama y un pull request por tarea hacen que cada cambio sea fácil de revisar y de deshacer.
+    \item Automatizar el despliegue desde el primer día: así cada entrega es un pull request más y no un trabajo aparte al final.
+    \item Documentar las decisiones mientras se toman, no al final: la documentación técnica y esta memoria salen de lo que ya estaba escrito en el repositorio.
+    \item Comprobar visualmente cada cambio de interfaz. Así apareció, por ejemplo, el primer clic perdido en «Reenviar el correo»: al salir del campo de contraseña aparecía su error, la página se movía y el clic caía fuera del botón (Anexo~\ref{anx:desarrollo}).
 \end{enumerate}
 
 \section{Trabajo futuro}
+\label{sec:trabajo-futuro}
 
-Para la evolución posterior de \textit{La Grada Colchonera} se proponen las siguientes líneas de trabajo:
 \begin{enumerate}
-    \item \textbf{Multijugador cooperativo en tiempo real:} Implementar un subsistema multijugador síncrono que admita grupos de juego (\textit{parties}) de hasta 4 jugadores simultáneos sobre WebSockets, gobernados por un servidor autoritativo que sincronice la simulación del mundo.
-    \item \textbf{Ampliación de contenidos y clasificación por temporadas:} Diseñar nuevos personajes, jefes mayores y equipaciones históricas, complementando el ranking actual con clasificaciones periódicas por temporadas competitivas y por ambiente alcanzado.
-    \item \textbf{Recuperación de credenciales y limitación de tasa (\textit{rate limiting}):} Incorporar el flujo de restablecimiento de contraseñas por correo electrónico y añadir protección perimetral frente a ataques de denegación de servicio o fuerza bruta mediante limitadores de peticiones por dirección IP.
-    \item \textbf{Pruebas de extremo a extremo automatizadas y PWA:} Integrar tests automatizados de interfaz con Playwright en el flujo de CI para medir la cobertura de código en cliente, y empaquetar el juego como aplicación web progresiva (\textit{Progressive Web App}, PWA) instalable en dispositivos móviles.
+    \item \textbf{Multijugador:} lista de amigos y partidas en grupo (\textit{party}) de hasta 4 jugadores, con WebSockets y un servidor autoritativo.
+    \item \textbf{Más contenido:} jugadores, jefes, equipaciones y logros, y mejores sprites para los jugadores menos conocidos.
+    \item \textbf{Ranking por temporadas y por ambiente.}
+    \item \textbf{Seguridad de las cuentas:} recuperación de la contraseña por correo y límite de intentos de inicio de sesión (\textit{rate limiting}).
+    \item \textbf{Pruebas de extremo a extremo} automatizadas en el CI (Playwright) y medición de la cobertura.
+    \item \textbf{Aplicación instalable (PWA)} para jugar desde el móvil como una app.
 \end{enumerate}

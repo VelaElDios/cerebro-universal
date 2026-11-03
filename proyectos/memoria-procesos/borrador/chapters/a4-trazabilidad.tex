@@ -1,7 +1,7 @@
 \chapter{Trazabilidad}
 \label{anx:trazabilidad}
 
-Este anexo presenta la trazabilidad completa desde los requisitos hasta los pull requests que los implementan, pasando por los PBIs y las tareas técnicas de los dos sprints: Sprint 1 (Hitos 1--4, PBIs P1--P19, tareas T1--T32) y Sprint 2 (PBIs P20--P48, tareas T33--T82). La correspondencia requisito--PBI sale de la sección 3 de \texttt{docs/documentacion-tecnica.md} (tablas de RF, RJ y RNF); la correspondencia PBI--tarea--PR sale de las tablas de trazabilidad de \texttt{docs/gestion/README.md}. En el Sprint 1 cada tarea tiene su rama propia y su PR individual hacia la rama del hito; en el Sprint 2 cada tarea indica en su descripción de DoneTonic el PR donde está (un PR por fase y uno por arreglo). Los requisitos no funcionales son transversales y se resumen al principio de la tabla; después, una fila por cada una de las 82 tareas. La Tabla~\ref{tab:trazabilidad-completa} es la matriz completa.
+Este anexo presenta la trazabilidad completa desde los requisitos hasta los pull requests que los implementan, pasando por los PBIs y las tareas técnicas de los dos sprints: Sprint 1 (Hitos 1--4, PBIs P1--P19, tareas T1--T32) y Sprint 2 (PBIs P20--P48, tareas T33--T82). La correspondencia requisito--PBI sale de la sección 3 de \path{docs/documentacion-tecnica.md} (tablas de RF, RJ y RNF); la correspondencia PBI--tarea--PR sale de las tablas de trazabilidad de \path{docs/gestion/README.md}. En el Sprint 1 cada tarea tiene su rama propia y su PR individual hacia la rama del hito; en el Sprint 2 cada tarea indica en su descripción de DoneTonic el PR donde está (un PR por fase y uno por arreglo). Los requisitos no funcionales son transversales y se resumen al principio de la tabla; después, una fila por cada una de las 82 tareas. La Tabla~\ref{tab:trazabilidad-completa} es la matriz completa.
 
 {\small
 \begin{longtable}{@{}L{1.7cm} L{0.8cm} L{0.9cm} L{7.0cm} L{3.2cm}@{}}
@@ -14,15 +14,15 @@ Este anexo presenta la trazabilidad completa desde los requisitos hasta los pull
 RNF-01 & P8, P9, P10, P13 & T11--T14, T18, T19 & Seguridad de credenciales y sesiones: bcrypt, cookie httpOnly/secure/sameSite, regeneración de sesión, permisos en el servidor, consultas parametrizadas & \#13--\#16, \#21, \#22 \\
 RNF-02 & P12 & T17 & Secretos fuera del código: variables de entorno y Secret Manager & \#20 \\
 RNF-03 & P4, P6, P11 & T5, T6, T8, T15, T16 & Separación en capas API/lógica/datos con inyección de dependencias & \#5, \#6, \#8, \#18, \#19 \\
-RNF-04 & P2, P5 & T3, T7 & Pruebas automáticas con \texttt{node:test} y CI obligatorio en ramas protegidas & \#3, \#7 \\
+RNF-04 & P2, P5 & T3, T7 & Pruebas automáticas con \path{node:test} y CI obligatorio en ramas protegidas & \#3, \#7 \\
 RNF-05 & P3, P19 & T4, T29, T30 & Despliegue continuo en URL pública (Render y Cloud Run) & \#4, \#10, \#27, \#28 \\
 RNF-06 & P3, P19 & T4, T29, T30 & Disponibilidad y coste: escala a cero, capas gratuitas y créditos de educación & \#4, \#10, \#27, \#28 \\
-RNF-07 & P7, P8, P17 & T9, T10, T12, T25, T26 & Accesibilidad: HTML semántico, foco, \texttt{aria-live}, \texttt{aria-describedby}, teclado, \texttt{prefers-reduced-motion} & \#11, \#12, \#14, \#37--\#41 \\
+RNF-07 & P7, P8, P17 & T9, T10, T12, T25, T26 & Accesibilidad: HTML semántico, foco, \path{aria-live}, \path{aria-describedby}, teclado, \path{prefers-reduced-motion} & \#11, \#12, \#14, \#37--\#41 \\
 RNF-08 & P7, P28 & T9, T10, T50, T51 & Responsive: panel de administración en tarjetas en el móvil y joystick táctil & \#11, \#12, \#36, \#47 \\
 RNF-09 & P21, P22, P27 & T35--T38, T48, T49 & Rendimiento del juego: paso fijo, búsqueda espacial por celdas, texturas cacheadas & \#36, \#44, \#46, \#45, \#47 \\
 RNF-10 & Todos & T1--T82 & Trazabilidad requisito--PBI--tarea--rama--PR--release & \#1--\#56 \\
 RNF-11 & P16, P17, P32 & T23, T24, T26, T56 & Privacidad: política pública, ranking sin correo, logs que ocultan datos sensibles & \#38, \#39, \#37--\#41, \#49 \\
-RNF-12 & P4, P6, P11, P24 & T5, T6, T8, T15, T16, T42, T43 & Mantenibilidad: sin frameworks en el frontend, equilibrio en \texttt{config.js}, módulos pequeños & \#5, \#6, \#8, \#18, \#19, \#36, \#48 \\
+RNF-12 & P4, P6, P11, P24 & T5, T6, T8, T15, T16, T42, T43 & Mantenibilidad: sin frameworks en el frontend, equilibrio en \path{config.js}, módulos pequeños & \#5, \#6, \#8, \#18, \#19, \#36, \#48 \\
 % --- Sprint 1: una fila por tarea ---
 — & P1 & T1 & Crear repositorio y estructura base & \#1 \\
 — & P1 & T2 & Configurar GitHub Flow & \#2 \\
@@ -56,13 +56,13 @@ RF-12 & P17 & T26 & Mensajes de error en el frontend & \#37--\#41 \\
 — & P18 & T32 & Carpeta de la memoria en LuaLaTeX & \#31 \\
 RNF-05, RNF-06 & P19 & T29 & Contenerizar la aplicación con Docker & \#27 \\
 RNF-05, RNF-06 & P19 & T30 & Despliegue continuo en Cloud Run con GitHub Actions & \#28 \\
-RF-13 & — & — & Prueba técnica: solo dominios de correo permitidos (\texttt{domainPolicy.js}) & \#34 \\
+RF-13 & — & — & Prueba técnica: solo dominios de correo permitidos (\path{domainPolicy.js}) & \#34 \\
 % --- Sprint 2: una fila por tarea ---
 RJ-01 & P20 & T33 & Sistema de diseño: tokens, tipografía y modo oscuro rojiblanco & \#36 \\
 RJ-01 & P20 & T34 & Menú del juego como inicio con sesión (hub con el jugador paseando) & \#36, \#45 \\
-RJ-02 & P21 & T35 & Simulación de paso fijo con semilla (\texttt{mundo.js}) & \#36 \\
+RJ-02 & P21 & T35 & Simulación de paso fijo con semilla (\path{mundo.js}) & \#36 \\
 RJ-02 & P21 & T36 & Oleadas, experiencia y mejoras al subir de nivel & \#36 \\
-RJ-03 & P22 & T37 & Muñecos chibi generados por código (\texttt{sprites.js}) & \#44 \\
+RJ-03 & P22 & T37 & Muñecos chibi generados por código (\path{sprites.js}) & \#44 \\
 RJ-03 & P22 & T38 & Cámara 3/4, inercia y sensación de movimiento y golpes & \#46 \\
 RJ-04 & P23 & T39 & Jugadores con estadísticas por posición y habilidades propias & \#44, \#48 \\
 RJ-04 & P23 & T40 & Entrenadores con ulti y pantalla Dirección & \#44 \\
@@ -86,7 +86,7 @@ RJ-15 & P33 & T57 & Combinaciones con nombre y bonus & \#50 \\
 RJ-15 & P33 & T58 & Seis ULTRAS con efectos visuales & \#50 \\
 RJ-02, RJ-16 & P34 & T59 & Curvas de dificultad calibradas con un bot & \#50 \\
 RJ-02, RJ-16 & P34 & T60 & Modo pruebas para administradores & \#50 \\
-RJ-08 & P35 & T61 & Generación del terreno por ruidos (\texttt{terreno.js}) & \#52 \\
+RJ-08 & P35 & T61 & Generación del terreno por ruidos (\path{terreno.js}) & \#52 \\
 RJ-09 & P36 & T62 & Cinco ambientes con cambio de luz, afición y fuerza & \#52 \\
 RJ-17 & P37 & T63 & Migración 004, API de identidad y pantalla Tu ficha & \#52 \\
 RJ-04, RJ-12 & P38 & T64 & Rarezas por historia y 36 jugadores & \#53 \\
@@ -94,13 +94,13 @@ RJ-04, RJ-12 & P38 & T65 & Animación de la firma del contrato & \#53 \\
 RJ-05 & P39 & T66 & Niveles bloqueados por minuto y recarga mínima & \#53 \\
 RJ-15 & P40 & T67 & Pantalla de combinaciones y ultras con filtros & \#53 \\
 RJ-08 & P41 & T68 & Hitbox por los pies y obstáculos macizos & \#53 \\
-RJ-18 & P42 & T69 & Logros validados en el servidor (\texttt{logros.js}) & \#54 \\
+RJ-18 & P42 & T69 & Logros validados en el servidor (\path{logros.js}) & \#54 \\
 RJ-18 & P42 & T70 & Pantalla Logros y equipaciones en el Vestuario & \#54 \\
-RJ-19 & P43 & T71 & Atribución del daño por fuente y pantalla de fin (\texttt{fin-ui.js}) & \#54 \\
-RJ-20 & P44 & T72 & Secuenciador chiptune y fanfarrias (\texttt{musica.js}) & \#54 \\
+RJ-19 & P43 & T71 & Atribución del daño por fuente y pantalla de fin (\path{fin-ui.js}) & \#54 \\
+RJ-20 & P44 & T72 & Secuenciador chiptune y fanfarrias (\path{musica.js}) & \#54 \\
 RJ-20 & P44 & T73 & La grada: murmullo y cánticos según la cercanía & \#54 \\
 RJ-20 & P44 & T74 & Efectos de sonido nuevos y ajuste de música & \#54 \\
-RJ-03 & P45 & T75 & Rasgos y sombreado en \texttt{sprites.js} & \#54 \\
+RJ-03 & P45 & T75 & Rasgos y sombreado en \path{sprites.js} & \#54 \\
 RJ-07 & P46 & T76 & Escolta, furia y jugada estrella & \#54 \\
 — & P47 & T77 & El juego no cargaba (variable usada antes de existir) & \#51 \\
 — & P47 & T78 & El primer clic en «Reenviar el correo» se perdía tras un error & \#55 \\

@@ -91,7 +91,7 @@ RELLENO = [
     (r"\\quad\s*\\ldots|\\ldots\s*\\quad", "hueco «… » de la plantilla"),
     (r"\bDNI\b", "DNI (dato personal: no va en un repo público)"),
     (r"Nombre del (co)?director", "director de ejemplo"),
-    (r"\\pcite|\\ps\b|\\fs\b|\\todo\b|\\missingfigure", "marca de pendiente de la plantilla"),
+    (r"(?<!\\)\\(pcite|ps|fs|todo|missingfigure)\b", "marca de pendiente de la plantilla"),   # no «\\todo» (salto de línea + «todo»)
     (r"\bTODO\b|\bPENDIENTE\b", "TODO o PENDIENTE"),
     (r"Lorem ipsum", "texto de relleno"),
 ]
