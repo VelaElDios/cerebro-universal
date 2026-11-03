@@ -344,9 +344,9 @@ Paseo de Leyendas & Ficha a las 8 leyendas & — \\
 
 \section{Evolución por fases}
 
-Cada fase es una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de documentacion-tecnica.md).
+Cada fase es una etiqueta del Sprint 2 en DoneTonic (sección 4.4 de documentacion-tecnica.md). La Tabla~\ref{tab:evolucion-fases} resume qué se añadió en cada fase y qué problemas resolvió.
 
-\begin{longtable}{@{}L{2.0cm} L{6.0cm} L{6.0cm}@{}}
+\begin{longtable}{@{}L{1.5cm} L{5.5cm} L{7.0cm}@{}}
 \caption{Evolución del juego por fases (Sprint 2).}\label{tab:evolucion-fases}\\
 \toprule
 \textbf{Fase} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead
@@ -359,6 +359,121 @@ Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú 
 4 & Mundo procedural natural, 5 ambientes por finales, mote y avatar & Mapa repetitivo; correo visible en el ranking \\
 5 & Rarezas por historia rojiblanca, habilidades niveladas, combinaciones a la vista, animación de la firma, colisiones exactas & Regate demasiado fuerte; esconderse detrás de los tejados \\
 6 & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles \\
-7 & Muñecos chibi de 32x32 (sin piernas) con rasgos propios, mapa con mucho más detalle y luz por ambiente, menú rediseñado (paneles translúcidos, centro despejado y botón de entrada), 5 habilidades (carambola, presión alta, la ola, fuera de juego y ruleta), 2 pasivas (visión de juego y partidos grandes), 5 combinaciones y mejores efectos de todas las habilidades & Muñecos casi iguales entre sí; mapa plano; menú estático; efectos poco legibles \\
+7 & Muñecos chibi de 32×32 (sin piernas) con rasgos propios, mapa con mucho más detalle y luz por ambiente, menú rediseñado (paneles translúcidos, centro despejado y botón de entrada), 5 habilidades (carambola, presión alta, la ola, fuera de juego y ruleta), 2 pasivas (visión de juego y partidos grandes), 5 combinaciones y mejores efectos de todas las habilidades & Muñecos casi iguales entre sí; mapa plano; menú estático; efectos poco legibles \\
 \bottomrule
 \end{longtable}
+
+Como se muestra en la Tabla~\ref{tab:evolucion-fases}, el juego evolucionó desde un \textit{survivor} básico hasta una experiencia completa con progresión persistente, contenido histórico y pulido audiovisual.
+
+\section{Capturas de la Fase 7}
+
+Las Figuras~\ref{fig:f7-sprites-antes} a \ref{fig:f7-pausa-salir} documentan los cambios visuales y de interfaz de la Fase 7.
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/01-sprites-antes.png}
+  \caption{Muñecos antes: todos muy parecidos.}
+  \label{fig:f7-sprites-antes}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/02-sprites-despues.png}
+  \caption{Muñecos después: estilo chibi sin piernas, rasgos propios.}
+  \label{fig:f7-sprites-despues}
+\end{subfigure}
+\caption{Comparativa de sprites antes y después de la Fase 7.}
+\label{fig:f7-sprites}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/03-menu.png}
+  \caption{Menú nuevo (translúcido, botón de entrada) en escritorio.}
+  \label{fig:f7-menu}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/04-menu-movil.png}
+  \caption{El menú en un móvil.}
+  \label{fig:f7-menu-movil}
+\end{subfigure}
+\caption{Menú rediseñado en la Fase 7.}
+\label{fig:f7-menu-grupo}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/fase7/05-mapa-ambientes.png}
+\caption{Los cinco ambientes del mapa, antes (arriba) y después (abajo).}
+\label{fig:f7-mapa-ambientes}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/06-partida.png}
+  \caption{Partida con el mapa nuevo.}
+  \label{fig:f7-partida}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/07-jefe.png}
+  \caption{Mourinho en su primera fase, con su barra de vida.}
+  \label{fig:f7-jefe}
+\end{subfigure}
+\caption{Partida y jefe con el pixel art nuevo.}
+\label{fig:f7-partida-jefe}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/08-habilidades-nuevas.png}
+  \caption{Línea de fuera de juego con banderines sobre los rivales cazados.}
+  \label{fig:f7-habilidades-nuevas}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/09-efectos.png}
+  \caption{Estelas, brillos y números de daño de las habilidades de disparo.}
+  \label{fig:f7-efectos}
+\end{subfigure}
+\caption{Habilidades y efectos nuevos en la Fase 7.}
+\label{fig:f7-habilidades-efectos}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth]{figs/capturas/fase7/10-combinaciones.png}
+\caption{Pantalla de combinaciones y ultras.}
+\label{fig:f7-combinaciones}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/11-pausa.png}
+  \caption{Pausa con el árbol de habilidades → combinaciones → ultras.}
+  \label{fig:f7-pausa}
+\end{subfigure}
+\hfill
+\begin{subfigure}[b]{0.45\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figs/capturas/fase7/12-pausa-salir.png}
+  \caption{Confirmación al salir: lo conseguido en la partida se guarda.}
+  \label{fig:f7-pausa-salir}
+\end{subfigure}
+\caption{Pausa y salida en la Fase 7.}
+\label{fig:f7-pausa-grupo}
+\end{figure}
