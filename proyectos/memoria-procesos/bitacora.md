@@ -8651,3 +8651,24 @@ El constructor corrigió solo la sintaxis de los diagramas de secuencia (elimina
 - Incluir todas las capturas mínimas requeridas (4 app/, 4 hito4/, 8 juego/, 5 donetonic/, 2 produccion/, 1 prueba-tecnica/) con \includegraphics y rutas correctas figs/capturas/<carpeta>/.
 - Añadir figuras obligatorias faltantes: fig:capas (TikZ), fig:modelo-datos (TikZ), fig:sec-registro, fig:sec-confirmacion, fig:sec-sesion, fig:sec-protegida, fig:sec-cambiar-rol, fig:sec-arranque, fig:pipeline (TikZ), fig:burndown-s1 (pgfplots), fig:burndown-s2 (pgfplots).
 - Ejecutar `comando_prueba` y corregir hasta que pase (compila y verificar.py OK).
+
+## 2026-11-03 11:02 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Reescritura completa de los capítulos 4 y 4b para corregir los errores de sintaxis en diagramas de secuencia (paréntesis, llaves, guiones bajos, # en \mess/\call) y añadir todo el contenido requerido: tablas de requisitos (RF, RJ, RNF) en longtable, arquitectura con fig:capas (TikZ), modelo de datos con fig:modelo-datos (TikZ ER), módulos backend, frontend, API, 7 flujos de secuencia con etiquetas fijas y referencias \ref, tabla de seguridad, resumen de sprints, manual de usuario con capturas; y en 4b-juego: concepto, manual con capturas, sistemas, arquitectura, servidor/anti-trampas con fig:sec-partida y fig:sec-contratar, logros y evolución por fases. Se incluyen citas bibliográficas (rfc6749, bcrypt, vampiresurvivors, donetonic) y todas las capturas mínimas exigidas.
+
+**Archivos:** `chapters/04-descripcion.tex`, `chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ chapters/04-descripcion.tex:402: en \mess no puede haber paréntesis (texto «error (log mail.failed)»): quítalos, p. ej. «ponerUsuario → /jugar»
+- intento 2: ❌ ./chapters/04-descripcion.tex:125: LaTeX Error: Something's wrong--perhaps a missing \item. (tocó `chapters/04-descripcion.tex`)
+- intento 3: no se hace, queda poco tiempo de paso (⏱️ 6 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ eb25eb8 2026-11-02 11:08:29 +0100
+
+**Siguiente:** El siguiente paso debe ser completar el anexo de desarrollo (a1-desarrollo.tex) añadiendo la retrospectiva del Sprint 2 con el burndown real (pgfplots) y la explicación de la recta de DoneTonic, y verificar que el anexo de trazabilidad (a4-trazabilidad.tex) compila sin overfull hbox (usar @{} en columnas L). Después, revisar el capítulo 5 (evaluación) para añadir la cita \cite{bcrypt} en la tabla de seguridad, asegurar que las métricas coinciden con la fuente y que fig:pipeline está presente y citada. Finalmente, ejecutar comando_prueba y corregir hasta que pase.
+
+## 2026-11-03 11:08 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
