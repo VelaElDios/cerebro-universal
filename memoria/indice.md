@@ -8,7 +8,7 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 
 [[beamer]] · [[bibliografia]] · [[bibtex]] · [[datos]] · [[figuras]] · [[general]] · [[latex]] · [[longtable]] · [[lua]] · [[memoria]] · [[metricas]] · [[overfull]] · [[overleaf]] · [[pgf-umlsd]] · [[pgfplots]] · [[referencias]] · [[revision]] · [[rutas]] · [[secuencia]] · [[sequencediagram]] · [[tablas]] · [[texttt]] · [[tikz]] · [[verificacion]]
 
-## Pendientes de revisar (7)
+## Pendientes de revisar (8)
 
 - [[citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesta
 - [[los-identificadores-largos-en-texttt-no-se-parten-solos-usar|Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando]] · ⚠️ propuesta
@@ -17,8 +17,9 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 - [[pgf-umlsd-y-comandos-fragiles-en-sequencediagram|pgf-umlsd y comandos frágiles en sequencediagram]] · ⚠️ propuesta
 - [[rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact|Rutas de capturas y nombres de archivo deben coincidir exactamente con figs/capturas/]] · ⚠️ propuesta
 - [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
+- [[todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto|Todas las figuras y tablas deben tener \ref en el texto]] · ⚠️ propuesta
 
-## Todas (30)
+## Todas (31)
 
 - [[al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba|Al reescribir un archivo, conservar todo lo que ya funcionaba]]
 - [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
@@ -46,6 +47,7 @@ Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]]
 - [[tablas-largas-longtable-no-table|Tablas largas: longtable, no table]]
 - [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
+- [[todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto|Todas las figuras y tablas deben tener \ref en el texto]] · ⚠️ propuesta
 - [[un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p|Un revisor que dice «verificado» sin mostrar la operación no prueba nada]]
 - [[una-cita-con-autor-largo-se-sale-del-margen-breakcites|Una cita con autor largo se sale del margen: breakcites]]
 - [[una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp|Una función llamada desde \directlua debe imprimir con tex.sprint, no con return]]

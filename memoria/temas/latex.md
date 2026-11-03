@@ -25,5 +25,6 @@ Lecciones sobre latex (este archivo se genera solo).
 - [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]]
 - [[tablas-largas-longtable-no-table|Tablas largas: longtable, no table]]
 - [[tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth|Tablas longtable anchas: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesta
+- [[todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto|Todas las figuras y tablas deben tener \ref en el texto]] · ⚠️ propuesta
 - [[una-cita-con-autor-largo-se-sale-del-margen-breakcites|Una cita con autor largo se sale del margen: breakcites]]
 - [[una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp|Una función llamada desde \directlua debe imprimir con tex.sprint, no con return]]
