@@ -1,5 +1,16 @@
+---
+tipo: "tema"
+titulo: "overleaf"
+notas: 1
+---
 # overleaf
 
-Lecciones sobre overleaf (este archivo se genera solo).
+Nodo del mapa del Cerebro con todo lo que se sabe de «overleaf» (este archivo se genera solo).
 
-- [[forzar-lualatex-con-latexmkrc|Forzar LuaLaTeX con latexmkrc]]
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/forzar-lualatex-con-latexmkrc|Forzar LuaLaTeX con latexmkrc]]
+
+## Temas relacionados
+
+[[latex]]

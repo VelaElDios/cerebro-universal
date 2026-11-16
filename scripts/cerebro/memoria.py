@@ -172,34 +172,6 @@ def guardar_propuesta(bloque: str, proyecto: str) -> str | None:
 
 
 def reindexar():
-    """Rehace memoria/temas/<tema>.md y memoria/indice.md (para navegar y para el grafo)."""
-    lecciones = todas()
-    por_tema: dict[str, list[dict]] = {}
-    for l in lecciones:
-        for t in l["temas"]:
-            por_tema.setdefault(t.lower(), []).append(l)
-
-    def linea(l):
-        marca = "" if l.get("estado") == "confirmada" else " · ⚠️ propuesta"
-        return f"- [[{l['nombre']}|{l.get('titulo', l['nombre'])}]]{marca}"
-
-    TEMAS.mkdir(parents=True, exist_ok=True)
-    # Temas que se quedaron sin lecciones (p. ej. al editar una): se borra su nota generada
-    for nota in TEMAS.glob("*.md"):
-        if nota.stem not in por_tema and "(este archivo se genera solo)" in nota.read_text(encoding="utf-8"):
-            nota.unlink()
-    for tema, ls in por_tema.items():
-        (TEMAS / f"{tema}.md").write_text(
-            f"# {tema}\n\nLecciones sobre {tema} (este archivo se genera solo).\n\n"
-            + "\n".join(linea(l) for l in ls) + "\n", encoding="utf-8")
-    pendientes = [l for l in lecciones if l.get("estado") != "confirmada"]
-    (CARPETA / "indice.md").write_text(
-        "# Memoria del Cerebro\n\n"
-        "Lecciones aprendidas por las IAs en todos los proyectos. Antes de cada paso se les pasan "
-        "las que encajan con el proyecto y con el error del momento. Este archivo se genera solo.\n\n"
-        "Para confirmar una lección propuesta: abrirla, revisarla y cambiar `estado` a `confirmada`.\n\n"
-        f"## Temas\n\n{' · '.join(f'[[{t}]]' for t in sorted(por_tema))}\n\n"
-        f"## Pendientes de revisar ({len(pendientes)})\n\n"
-        + ("\n".join(linea(l) for l in pendientes) or "Ninguna.")
-        + f"\n\n## Todas ({len(lecciones)})\n\n" + "\n".join(linea(l) for l in lecciones) + "\n",
-        encoding="utf-8")
+    """Rehace los índices y los mapas (memoria/temas, indice.md, CEREBRO.md, mapas/): ver cerebro/mapas.py."""
+    from . import mapas   # aquí dentro: mapas también importa este módulo
+    mapas.generar()

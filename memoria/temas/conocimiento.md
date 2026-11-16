@@ -1,0 +1,20 @@
+---
+tipo: "tema"
+titulo: "conocimiento"
+notas: 2
+---
+# conocimiento
+
+Nodo del mapa del Cerebro con todo lo que se sabe de «conocimiento» (este archivo se genera solo).
+
+## Proyectos
+
+- 📁 [[proyectos/aprendizaje/bitacora|aprendizaje]]
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/confianza-del-conocimiento-verificado-o-propuesto|Confianza del conocimiento (verificado o propuesto)]]
+
+## Temas relacionados
+
+[[cerebro]]

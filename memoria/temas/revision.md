@@ -1,5 +1,16 @@
+---
+tipo: "tema"
+titulo: "revision"
+notas: 1
+---
 # revision
 
-Lecciones sobre revision (este archivo se genera solo).
+Nodo del mapa del Cerebro con todo lo que se sabe de «revision» (este archivo se genera solo).
 
-- [[un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p|Un revisor que dice «verificado» sin mostrar la operación no prueba nada]]
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p|Un revisor que dice «verificado» sin mostrar la operación no prueba nada]]
+
+## Temas relacionados
+
+[[general]]

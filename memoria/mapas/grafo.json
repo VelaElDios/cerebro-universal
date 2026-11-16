@@ -1,0 +1,1812 @@
+{
+ "generado": "2026-11-16T12:21:18+01:00",
+ "nodos": [
+  {
+   "id": "proyecto:aprendizaje",
+   "tipo": "proyecto",
+   "titulo": "aprendizaje",
+   "estado": "en-construccion",
+   "temas": [
+    "conocimiento"
+   ],
+   "ruta": "proyectos/aprendizaje/bitacora.md"
+  },
+  {
+   "id": "proyecto:memoria-procesos",
+   "tipo": "proyecto",
+   "titulo": "memoria-procesos",
+   "estado": "en-construccion",
+   "temas": [
+    "latex",
+    "memoria",
+    "tikz",
+    "pgfplots"
+   ],
+   "ruta": "proyectos/memoria-procesos/estado.md"
+  },
+  {
+   "id": "proyecto:plantilla-sus",
+   "tipo": "proyecto",
+   "titulo": "plantilla-sus",
+   "estado": "terminado",
+   "temas": [
+    "latex",
+    "lua",
+    "tikz",
+    "pgfplots",
+    "beamer"
+   ],
+   "ruta": "proyectos/plantilla-sus/estado.md"
+  },
+  {
+   "id": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "tipo": "leccion",
+   "titulo": "Al reescribir un archivo, conservar todo lo que ya funcionaba",
+   "temas": [
+    "general"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba.md"
+  },
+  {
+   "id": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "tipo": "leccion",
+   "titulo": "BibTeX: autores corporativos con doble llave y year en todas las entradas",
+   "temas": [
+    "latex",
+    "bibtex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas.md"
+  },
+  {
+   "id": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "tipo": "leccion",
+   "titulo": "Citas a fuentes no bibliográficas en el texto",
+   "temas": [
+    "latex",
+    "bibliografia",
+    "referencias"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/citas-a-fuentes-no-bibliograficas-en-el-texto.md"
+  },
+  {
+   "id": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "tipo": "leccion",
+   "titulo": "Coma decimal en fórmulas: paquete icomma",
+   "temas": [
+    "latex"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/coma-decimal-en-formulas-paquete-icomma.md"
+  },
+  {
+   "id": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "tipo": "leccion",
+   "titulo": "Con babel en español, TikZ necesita \\usetikzlibrary{babel}",
+   "temas": [
+    "latex",
+    "tikz"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel.md"
+  },
+  {
+   "id": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "tipo": "leccion",
+   "titulo": "Diagrama TikZ ancho: reducir text width y offsets para caber en \\textwidth",
+   "temas": [
+    "latex",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md"
+  },
+  {
+   "id": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "tipo": "leccion",
+   "titulo": "\\directlua no funciona dentro del texto de un \\node: usar macros",
+   "temas": [
+    "latex",
+    "lua",
+    "tikz"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro.md"
+  },
+  {
+   "id": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "tipo": "leccion",
+   "titulo": "En un .tex los comentarios son con %, no con --",
+   "temas": [
+    "latex",
+    "lua"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/en-un-tex-los-comentarios-son-con-no-con.md"
+  },
+  {
+   "id": "leccion:enquote-necesita-el-paquete-csquotes",
+   "tipo": "leccion",
+   "titulo": "\\enquote necesita el paquete csquotes",
+   "temas": [
+    "latex",
+    "beamer"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/enquote-necesita-el-paquete-csquotes.md"
+  },
+  {
+   "id": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "tipo": "leccion",
+   "titulo": "Escapar los textos que vienen de datos antes de meterlos en LaTeX",
+   "temas": [
+    "latex",
+    "lua",
+    "datos"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en.md"
+  },
+  {
+   "id": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "tipo": "leccion",
+   "titulo": "Figuras flotando dentro de la bibliografía: \\FloatBarrier antes",
+   "temas": [
+    "latex"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante.md"
+  },
+  {
+   "id": "leccion:forzar-lualatex-con-latexmkrc",
+   "tipo": "leccion",
+   "titulo": "Forzar LuaLaTeX con latexmkrc",
+   "temas": [
+    "latex",
+    "overleaf"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/forzar-lualatex-con-latexmkrc.md"
+  },
+  {
+   "id": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "tipo": "leccion",
+   "titulo": "Los identificadores largos en \\texttt no se parten solos: usar \\allowbreak dentro del comando",
+   "temas": [
+    "latex",
+    "overfull",
+    "texttt"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/los-identificadores-largos-en-texttt-no-se-parten-solos-usar.md"
+  },
+  {
+   "id": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "tipo": "leccion",
+   "titulo": "Los textos de conclusión deben salir de los datos, no estar escritos fijos",
+   "temas": [
+    "general",
+    "datos"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e.md"
+  },
+  {
+   "id": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "tipo": "leccion",
+   "titulo": "No meter código Lua dentro de \\directlua",
+   "temas": [
+    "latex",
+    "lua"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/no-meter-codigo-lua-dentro-de-directlua.md"
+  },
+  {
+   "id": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "tipo": "leccion",
+   "titulo": "No meter saltos de línea \\n dentro de tex.sprint",
+   "temas": [
+    "latex",
+    "lua"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/no-meter-saltos-de-linea-n-dentro-de-tex-sprint.md"
+  },
+  {
+   "id": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "tipo": "leccion",
+   "titulo": "Nombres de archivo normales: sin espacios y con extensión",
+   "temas": [
+    "general"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/nombres-de-archivo-normales-sin-espacios-y-con-extension.md"
+  },
+  {
+   "id": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "tipo": "leccion",
+   "titulo": "Números de métricas deben copiarse exactamente de la fuente única",
+   "temas": [
+    "latex",
+    "verificacion",
+    "metricas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente.md"
+  },
+  {
+   "id": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "tipo": "leccion",
+   "titulo": "Números en diagramas de secuencia deben coincidir con la especificación",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "secuencia"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp.md"
+  },
+  {
+   "id": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "tipo": "leccion",
+   "titulo": "pgf-umlsd y comandos frágiles en sequencediagram",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "sequencediagram"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/pgf-umlsd-y-comandos-fragiles-en-sequencediagram.md"
+  },
+  {
+   "id": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "tipo": "leccion",
+   "titulo": "pgfplots: línea horizontal de referencia de lado a lado con \\draw",
+   "temas": [
+    "latex",
+    "tikz",
+    "pgfplots"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d.md"
+  },
+  {
+   "id": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "tipo": "leccion",
+   "titulo": "pgfplots: symbolic x coords necesita la lista ya expandida",
+   "temas": [
+    "latex",
+    "tikz",
+    "pgfplots"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida.md"
+  },
+  {
+   "id": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "tipo": "leccion",
+   "titulo": "Rutas de capturas y nombres de archivo deben coincidir exactamente con figs/capturas/",
+   "temas": [
+    "latex",
+    "figuras",
+    "rutas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact.md"
+  },
+  {
+   "id": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "tipo": "leccion",
+   "titulo": "Rutas largas en \\texttt{} causan overfull hbox",
+   "temas": [
+    "latex",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/rutas-largas-en-texttt-causan-overfull-hbox.md"
+  },
+  {
+   "id": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "tipo": "leccion",
+   "titulo": "Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \\linewidth",
+   "temas": [
+    "latex",
+    "tablas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth.md"
+  },
+  {
+   "id": "leccion:tablas-largas-longtable-no-table",
+   "tipo": "leccion",
+   "titulo": "Tablas largas: longtable, no table",
+   "temas": [
+    "latex",
+    "tablas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/tablas-largas-longtable-no-table.md"
+  },
+  {
+   "id": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "tipo": "leccion",
+   "titulo": "Tablas longtable anchas: usar @{} y anchos que sumen ≤ \\linewidth",
+   "temas": [
+    "latex",
+    "tablas",
+    "longtable"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth.md"
+  },
+  {
+   "id": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "tipo": "leccion",
+   "titulo": "Todas las figuras y tablas deben tener \\ref en el texto",
+   "temas": [
+    "latex",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto.md"
+  },
+  {
+   "id": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "tipo": "leccion",
+   "titulo": "Un revisor que dice «verificado» sin mostrar la operación no prueba nada",
+   "temas": [
+    "general",
+    "revision"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p.md"
+  },
+  {
+   "id": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "tipo": "leccion",
+   "titulo": "Una cita con autor largo se sale del margen: breakcites",
+   "temas": [
+    "latex",
+    "bibtex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/una-cita-con-autor-largo-se-sale-del-margen-breakcites.md"
+  },
+  {
+   "id": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "tipo": "leccion",
+   "titulo": "Una función llamada desde \\directlua debe imprimir con tex.sprint, no con return",
+   "temas": [
+    "latex",
+    "lua"
+   ],
+   "proyectos": [
+    "plantilla-sus"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp.md"
+  },
+  {
+   "id": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "tipo": "leccion",
+   "titulo": "Cada cifra de un documento sale de las fuentes, también las pequeñas",
+   "temas": [
+    "general",
+    "memoria"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/lecciones/verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic.md"
+  },
+  {
+   "id": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "tipo": "concepto",
+   "titulo": "Cómo trabaja el cerebro (constructor, prueba, revisor)",
+   "temas": [
+    "cerebro",
+    "orquestador"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/como-trabaja-el-cerebro-constructor-prueba-revisor.md"
+  },
+  {
+   "id": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "tipo": "concepto",
+   "titulo": "Confianza del conocimiento (verificado o propuesto)",
+   "temas": [
+    "cerebro",
+    "conocimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/confianza-del-conocimiento-verificado-o-propuesto.md"
+  },
+  {
+   "id": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
+   "tipo": "decision",
+   "titulo": "Deshacer el paso entero si rompe la compilación",
+   "temas": [
+    "cerebro",
+    "orquestador"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/deshacer-el-paso-entero-si-rompe-la-compilacion.md"
+  },
+  {
+   "id": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "tipo": "decision",
+   "titulo": "Los datos de entrenamiento van a un repo privado",
+   "temas": [
+    "cerebro",
+    "datos",
+    "ia-local"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/los-datos-de-entrenamiento-van-a-un-repo-privado.md"
+  },
+  {
+   "id": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "tipo": "decision",
+   "titulo": "Tocar trozos con CAMBIAR en vez de reescribir archivos enteros",
+   "temas": [
+    "cerebro",
+    "orquestador"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md"
+  },
+  {
+   "id": "receta:agrupar-capturas-con-subfigure",
+   "tipo": "receta",
+   "titulo": "Agrupar capturas con subfigure",
+   "temas": [
+    "figuras",
+    "latex",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/agrupar-capturas-con-subfigure.md"
+  },
+  {
+   "id": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
+   "tipo": "receta",
+   "titulo": "Cómo dar instrucciones al cerebro sin tocar el borrador",
+   "temas": [
+    "bitacora",
+    "cerebro"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador.md"
+  },
+  {
+   "id": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
+   "tipo": "receta",
+   "titulo": "Cómo se empieza un proyecto nuevo en el cerebro",
+   "temas": [
+    "cerebro",
+    "proyectos"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-se-empieza-un-proyecto-nuevo-en-el-cerebro.md"
+  },
+  {
+   "id": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "tipo": "receta",
+   "titulo": "Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)",
+   "temas": [
+    "latex",
+    "plantilla",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm.md"
+  },
+  {
+   "id": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "tipo": "receta",
+   "titulo": "Comprobar la maquetación de un TFG automáticamente",
+   "temas": [
+    "latex",
+    "tfg",
+    "verificacion"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente.md"
+  },
+  {
+   "id": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "tipo": "receta",
+   "titulo": "Diagramas de secuencia con pgf-umlsd",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "secuencia",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md"
+  },
+  {
+   "id": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "tipo": "receta",
+   "titulo": "Figuras que comparten página con el texto (parámetros de flotantes)",
+   "temas": [
+    "figuras",
+    "latex",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot.md"
+  },
+  {
+   "id": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "tipo": "receta",
+   "titulo": "Que la última fila de una longtable no se quede sola en otra página",
+   "temas": [
+    "latex",
+    "longtable",
+    "tablas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra.md"
+  },
+  {
+   "id": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "tipo": "receta",
+   "titulo": "Quitar las páginas en blanco entre capítulos",
+   "temas": [
+    "latex",
+    "plantilla",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos.md"
+  },
+  {
+   "id": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "tipo": "receta",
+   "titulo": "Tablas de LaTeX que no se pisan (columnas p y addlinespace)",
+   "temas": [
+    "latex",
+    "tablas",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace.md"
+  },
+  {
+   "id": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "tipo": "receta",
+   "titulo": "Títulos en negro y negrita en la plantilla ESIIAB-UCLM",
+   "temas": [
+    "latex",
+    "plantilla",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm.md"
+  },
+  {
+   "id": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "tipo": "receta",
+   "titulo": "Una imagen en un solo sitio, y en el resto una referencia",
+   "temas": [
+    "figuras",
+    "latex",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia.md"
+  },
+  {
+   "id": "tema:conocimiento",
+   "tipo": "tema",
+   "titulo": "conocimiento",
+   "peso": 2,
+   "ruta": "memoria/temas/conocimiento.md"
+  },
+  {
+   "id": "tema:latex",
+   "tipo": "tema",
+   "titulo": "latex",
+   "peso": 39,
+   "ruta": "memoria/temas/latex.md"
+  },
+  {
+   "id": "tema:memoria",
+   "tipo": "tema",
+   "titulo": "memoria",
+   "peso": 2,
+   "ruta": "memoria/temas/memoria.md"
+  },
+  {
+   "id": "tema:tikz",
+   "tipo": "tema",
+   "titulo": "tikz",
+   "peso": 8,
+   "ruta": "memoria/temas/tikz.md"
+  },
+  {
+   "id": "tema:pgfplots",
+   "tipo": "tema",
+   "titulo": "pgfplots",
+   "peso": 4,
+   "ruta": "memoria/temas/pgfplots.md"
+  },
+  {
+   "id": "tema:lua",
+   "tipo": "tema",
+   "titulo": "lua",
+   "peso": 7,
+   "ruta": "memoria/temas/lua.md"
+  },
+  {
+   "id": "tema:beamer",
+   "tipo": "tema",
+   "titulo": "beamer",
+   "peso": 2,
+   "ruta": "memoria/temas/beamer.md"
+  },
+  {
+   "id": "tema:general",
+   "tipo": "tema",
+   "titulo": "general",
+   "peso": 5,
+   "ruta": "memoria/temas/general.md"
+  },
+  {
+   "id": "tema:bibtex",
+   "tipo": "tema",
+   "titulo": "bibtex",
+   "peso": 2,
+   "ruta": "memoria/temas/bibtex.md"
+  },
+  {
+   "id": "tema:bibliografia",
+   "tipo": "tema",
+   "titulo": "bibliografia",
+   "peso": 1,
+   "ruta": "memoria/temas/bibliografia.md"
+  },
+  {
+   "id": "tema:referencias",
+   "tipo": "tema",
+   "titulo": "referencias",
+   "peso": 1,
+   "ruta": "memoria/temas/referencias.md"
+  },
+  {
+   "id": "tema:datos",
+   "tipo": "tema",
+   "titulo": "datos",
+   "peso": 3,
+   "ruta": "memoria/temas/datos.md"
+  },
+  {
+   "id": "tema:overleaf",
+   "tipo": "tema",
+   "titulo": "overleaf",
+   "peso": 1,
+   "ruta": "memoria/temas/overleaf.md"
+  },
+  {
+   "id": "tema:overfull",
+   "tipo": "tema",
+   "titulo": "overfull",
+   "peso": 1,
+   "ruta": "memoria/temas/overfull.md"
+  },
+  {
+   "id": "tema:texttt",
+   "tipo": "tema",
+   "titulo": "texttt",
+   "peso": 1,
+   "ruta": "memoria/temas/texttt.md"
+  },
+  {
+   "id": "tema:verificacion",
+   "tipo": "tema",
+   "titulo": "verificacion",
+   "peso": 3,
+   "ruta": "memoria/temas/verificacion.md"
+  },
+  {
+   "id": "tema:metricas",
+   "tipo": "tema",
+   "titulo": "metricas",
+   "peso": 1,
+   "ruta": "memoria/temas/metricas.md"
+  },
+  {
+   "id": "tema:pgf-umlsd",
+   "tipo": "tema",
+   "titulo": "pgf-umlsd",
+   "peso": 4,
+   "ruta": "memoria/temas/pgf-umlsd.md"
+  },
+  {
+   "id": "tema:secuencia",
+   "tipo": "tema",
+   "titulo": "secuencia",
+   "peso": 2,
+   "ruta": "memoria/temas/secuencia.md"
+  },
+  {
+   "id": "tema:sequencediagram",
+   "tipo": "tema",
+   "titulo": "sequencediagram",
+   "peso": 1,
+   "ruta": "memoria/temas/sequencediagram.md"
+  },
+  {
+   "id": "tema:figuras",
+   "tipo": "tema",
+   "titulo": "figuras",
+   "peso": 4,
+   "ruta": "memoria/temas/figuras.md"
+  },
+  {
+   "id": "tema:rutas",
+   "tipo": "tema",
+   "titulo": "rutas",
+   "peso": 1,
+   "ruta": "memoria/temas/rutas.md"
+  },
+  {
+   "id": "tema:tablas",
+   "tipo": "tema",
+   "titulo": "tablas",
+   "peso": 5,
+   "ruta": "memoria/temas/tablas.md"
+  },
+  {
+   "id": "tema:longtable",
+   "tipo": "tema",
+   "titulo": "longtable",
+   "peso": 2,
+   "ruta": "memoria/temas/longtable.md"
+  },
+  {
+   "id": "tema:revision",
+   "tipo": "tema",
+   "titulo": "revision",
+   "peso": 1,
+   "ruta": "memoria/temas/revision.md"
+  },
+  {
+   "id": "tema:cerebro",
+   "tipo": "tema",
+   "titulo": "cerebro",
+   "peso": 7,
+   "ruta": "memoria/temas/cerebro.md"
+  },
+  {
+   "id": "tema:orquestador",
+   "tipo": "tema",
+   "titulo": "orquestador",
+   "peso": 3,
+   "ruta": "memoria/temas/orquestador.md"
+  },
+  {
+   "id": "tema:ia-local",
+   "tipo": "tema",
+   "titulo": "ia-local",
+   "peso": 1,
+   "ruta": "memoria/temas/ia-local.md"
+  },
+  {
+   "id": "tema:tfg",
+   "tipo": "tema",
+   "titulo": "tfg",
+   "peso": 8,
+   "ruta": "memoria/temas/tfg.md"
+  },
+  {
+   "id": "tema:bitacora",
+   "tipo": "tema",
+   "titulo": "bitacora",
+   "peso": 1,
+   "ruta": "memoria/temas/bitacora.md"
+  },
+  {
+   "id": "tema:proyectos",
+   "tipo": "tema",
+   "titulo": "proyectos",
+   "peso": 1,
+   "ruta": "memoria/temas/proyectos.md"
+  },
+  {
+   "id": "tema:plantilla",
+   "tipo": "tema",
+   "titulo": "plantilla",
+   "peso": 3,
+   "ruta": "memoria/temas/plantilla.md"
+  }
+ ],
+ "aristas": [
+  {
+   "de": "proyecto:aprendizaje",
+   "a": "tema:conocimiento",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:memoria-procesos",
+   "a": "tema:latex",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:memoria-procesos",
+   "a": "tema:memoria",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:memoria-procesos",
+   "a": "tema:tikz",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:memoria-procesos",
+   "a": "tema:pgfplots",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:plantilla-sus",
+   "a": "tema:latex",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:plantilla-sus",
+   "a": "tema:lua",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:plantilla-sus",
+   "a": "tema:tikz",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:plantilla-sus",
+   "a": "tema:pgfplots",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:plantilla-sus",
+   "a": "tema:beamer",
+   "tipo": "usa"
+  },
+  {
+   "de": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "a": "tema:general",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:bibtex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "a": "tema:bibliografia",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "a": "tema:referencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "tema:lua",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "tema:lua",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:enquote-necesita-el-paquete-csquotes",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:enquote-necesita-el-paquete-csquotes",
+   "a": "tema:beamer",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:enquote-necesita-el-paquete-csquotes",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "a": "tema:lua",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:forzar-lualatex-con-latexmkrc",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:forzar-lualatex-con-latexmkrc",
+   "a": "tema:overleaf",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:forzar-lualatex-con-latexmkrc",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "a": "tema:overfull",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "a": "tema:texttt",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "a": "tema:general",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "a": "tema:lua",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "a": "tema:lua",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "a": "tema:general",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "tema:secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "a": "tema:rutas",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:tablas-largas-longtable-no-table",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:tablas-largas-longtable-no-table",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:tablas-largas-longtable-no-table",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "a": "tema:general",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "a": "tema:revision",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "a": "tema:bibtex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "a": "tema:lua",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "a": "tema:general",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "a": "tema:cerebro",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "a": "tema:orquestador",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "a": "tema:cerebro",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "a": "tema:conocimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
+   "a": "tema:cerebro",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
+   "a": "tema:orquestador",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
+   "a": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "a": "tema:cerebro",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "a": "tema:ia-local",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "a": "tema:cerebro",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "a": "tema:orquestador",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-con-subfigure",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-con-subfigure",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-con-subfigure",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-con-subfigure",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:agrupar-capturas-con-subfigure",
+   "a": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
+   "a": "tema:bitacora",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
+   "a": "tema:cerebro",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
+   "a": "tema:cerebro",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
+   "a": "tema:proyectos",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "a": "tema:plantilla",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "a": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "a": "tema:secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "a": "tema:plantilla",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "a": "tema:plantilla",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  }
+ ]
+}

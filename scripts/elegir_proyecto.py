@@ -11,6 +11,7 @@ Uso:  python scripts/elegir_proyecto.py [proyectos/<nombre>]
 """
 
 import json
+from datetime import datetime, timedelta, timezone
 import os
 import sys
 from pathlib import Path
@@ -25,6 +26,14 @@ def leer_json(ruta: Path) -> dict:
 def activo(cfg: dict) -> bool:
     if cfg.get("estado", "en-construccion") != "en-construccion":
         return False
+    # "cada_horas": no se ejecuta más a menudo (p. ej. el aprendizaje, para no frenar a los demás)
+    if cfg.get("cada_horas") and cfg.get("ultima_ejecucion"):
+        try:
+            hace = datetime.now(timezone.utc) - datetime.fromisoformat(cfg["ultima_ejecucion"])
+            if hace < timedelta(hours=float(cfg["cada_horas"])):
+                return False
+        except ValueError:
+            pass
     maximo = cfg.get("max_pasos")
     return maximo is None or cfg.get("pasos", 0) < maximo
 

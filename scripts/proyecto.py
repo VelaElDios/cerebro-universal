@@ -22,7 +22,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from cerebro import memoria, nucleo, repos
+from cerebro import aprender, conocimiento, dataset, mapas, memoria, nucleo, repos
 from cerebro import proveedores as prov
 
 # ---------- Cronómetro ----------
@@ -82,6 +82,9 @@ Cómo trabajas:
   Lo que no esté en las fuentes no se escribe: no lo inventes ni lo "redondees".
 - Lee las LECCIONES DE LA MEMORIA: son errores que ya se resolvieron antes, en este u otros
   proyectos. No los repitas.
+- Lee la FICHA DEL PROYECTO y el CONOCIMIENTO DEL CEREBRO: es lo que ya saben las IAs que trabajaron
+  antes que tú (cómo se hacen las cosas aquí, qué se decidió y por qué, datos comprobados). Si algo
+  está ahí, hazlo igual y no lo vuelvas a deducir ni lo inventes.
 
 """ + FORMATO_CONSTRUCTOR
 
@@ -136,7 +139,15 @@ temas: temas separados por comas (p. ej. latex, lua, python)
 claves: palabras exactas del mensaje de error, separadas por comas
 problema: qué fallaba y por qué
 solucion: qué hay que hacer
-ejemplo: código mínimo correcto (opcional)"""
+ejemplo: código mínimo correcto (opcional)
+<<<ESTADO>>>
+(OBLIGATORIO) La FICHA DEL PROYECTO reescrita entera (máximo 40 líneas): es lo primero que leerá la próxima
+IA, sea cual sea. Con estos apartados en Markdown:
+## Qué es
+## Decisiones y convenciones (cómo se hacen aquí las cosas y por qué)
+## Estado (qué está hecho y qué no, con el resultado de la prueba)
+## Siguiente
+""" + "\n" + conocimiento.FORMATO
 
 
 def muestra_operaciones(comprobaciones: str) -> bool:
@@ -182,6 +193,13 @@ def aplicar_respuesta(borrador: Path, paso: dict, maximo: int, protegidos: list[
     """Archivos completos, borrados y bloques CAMBIAR de una respuesta."""
     return (nucleo.aplicar(borrador, paso["archivos"], paso["borrar"], maximo, protegidos)
             + nucleo.aplicar_cambios(borrador, paso.get("cambios", []), protegidos))
+
+
+def pedir(rol: str, config: dict, proveedores: dict, sistema: str, mensaje: str, proyecto: str,
+          etapa: str) -> tuple[str, str, str, int]:
+    """Pide a una IA y apunta la llamada para los datos de entrenamiento (cerebro/dataset.py)."""
+    texto, ia, modelo = prov.pedir_rol(rol, config, proveedores, sistema, mensaje)
+    return texto, ia, modelo, dataset.registrar(proyecto, rol, etapa, ia, modelo, sistema, mensaje, texto)
 
 
 def leer_fuentes(carpeta: Path, cfg: dict) -> str:
@@ -285,6 +303,19 @@ def main():
         print(f"Proyecto {estado_proyecto}. No hay nada que hacer.")
         return
 
+    if cfg.get("tipo") == "aprender":   # leer documentos y guardar conocimiento (cerebro/aprender.py)
+        cfg["ultima_ejecucion"] = nucleo.ahora().isoformat(timespec="seconds")
+        guardar_cfg(cfg_ruta, cfg)
+        prov.fijar_limite(PRESUPUESTO_MIN * 60)
+        try:
+            print(aprender.ejecutar(carpeta, cfg, cfg_ruta, bitacora))
+        except Exception as e:
+            nucleo.anotar(bitacora, "⚠️ Aprendizaje no hecho", str(e)[:500])
+            print(f"Aprendizaje no hecho: {e}")
+        finally:
+            print("Datos de entrenamiento: " + dataset.subir(carpeta.name))
+        return
+
     # ---------- 0. FRENO ----------
     # Cada ejecución cuenta un paso. Al llegar a max_pasos el proyecto se pausa.
     # Para que el workflow vaya rotando: se elige el proyecto que lleve más tiempo sin ejecutarse
@@ -309,6 +340,8 @@ def main():
         print(f"Paso no dado, no cuenta: {e}")
     finally:
         dejar_de_seguir_ignorados(carpeta)
+        mapas.generar()
+        print("Datos de entrenamiento: " + dataset.subir(carpeta.name))
         # Si este era el último paso permitido, se pausa ya: así la próxima ejecución
         # del workflow lo ve antes de instalar LaTeX y no gasta minutos.
         if (cfg.get("estado") == "en-construccion" and max_pasos is not None
@@ -358,9 +391,14 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     # ---------- 1. CONSTRUCTOR ----------
     ok_antes, prueba_antes = probar(cfg, borrador)
     reciente = nucleo.bitacora_reciente(bitacora)
+    bloque_cerebro = (f"\n# FICHA DEL PROYECTO (el traspaso de la IA anterior: léela primero)\n"
+                      f"{conocimiento.leer_estado(carpeta)}\n\n"
+                      f"# CONOCIMIENTO DEL CEREBRO (lo que ya se sabe: úsalo en vez de deducirlo o inventarlo)\n"
+                      f"{conocimiento.seleccionar(temas, spec[:4000] + reciente[-4000:] + prueba_antes, nombre)}\n\n"
+                      f"# MAPA DEL CEREBRO (todo lo que hay, por temas)\n{conocimiento.mapa_textual()}\n")
     mensaje = f"""# SPEC DEL PROYECTO
 {spec}
-{bloque_reglas}{bloque_fuentes}{chr(10) + "# ARCHIVOS PROTEGIDOS (no los escribas ni los borres: se ignoran)" + chr(10) + ", ".join(protegidos) + chr(10) if protegidos else ""}
+{bloque_cerebro}{bloque_reglas}{bloque_fuentes}{chr(10) + "# ARCHIVOS PROTEGIDOS (no los escribas ni los borres: se ignoran)" + chr(10) + ", ".join(protegidos) + chr(10) if protegidos else ""}
 # LECCIONES DE LA MEMORIA (errores ya resueltos: no los repitas)
 {memoria.seleccionar(temas, prueba_antes + reciente[-3000:])}
 
@@ -374,10 +412,12 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
 {nucleo.volcar(nucleo.leer_carpeta(borrador))}"""
 
     try:
-        texto, ia, modelo = prov.pedir_rol("constructor", config, proveedores,
-                                           SISTEMA_CONSTRUCTOR.format(maximo=maximo), mensaje)
+        texto, ia, modelo, idx_constructor = pedir("constructor", config, proveedores,
+                                                   SISTEMA_CONSTRUCTOR.format(maximo=maximo), mensaje,
+                                                   nombre, "constructor")
     except (RuntimeError, prov.TiempoAgotado) as e:
         raise SinConstructor(str(e))
+    llamadas = [idx_constructor]
     paso = nucleo.parsear(texto)
     foto_antes = nucleo.foto(borrador)   # para deshacer el paso si rompe lo que funcionaba
     cambios = aplicar_respuesta(borrador, paso, maximo, protegidos)
@@ -428,8 +468,9 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
 # ARCHIVOS ACTUALES DEL BORRADOR
 {nucleo.volcar(nucleo.leer_carpeta(borrador))}"""
         try:
-            texto, ia, modelo = prov.pedir_rol("constructor", config, proveedores,
-                                               SISTEMA_CONSTRUCTOR.format(maximo=maximo), mensaje)
+            texto, ia, modelo, idx = pedir("constructor", config, proveedores,
+                                           SISTEMA_CONSTRUCTOR.format(maximo=maximo), mensaje, nombre, f"intento {n}")
+            llamadas.append(idx)
         except (RuntimeError, prov.TiempoAgotado) as e:
             intentos.append(f"intento {n}: no hay IA disponible a tiempo ({e})")
             break
@@ -454,6 +495,9 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
         ok, prueba = ok_antes, prueba_antes
         cambios = [f"(deshecho) {c}" for c in cambios]
         print("Paso deshecho: rompía la compilación")
+    for idx in llamadas:   # para entrenar: qué pasó con estas respuestas
+        dataset.resultado(idx, prueba_ok=ok, deshecho=any("paso deshecho" in i for i in intentos),
+                          prueba=resumen_prueba(ok, prueba))
 
     nucleo.anotar(bitacora, f"Constructor ({ia} · {modelo})",
                   f"{s.get('RESUMEN', '(sin resumen)')}\n\n"
@@ -470,6 +514,15 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
 {bloque_reglas}{bloque_fuentes}
 # LECCIONES DE LA MEMORIA (ya guardadas: no las repitas en LECCION)
 {memoria.seleccionar(temas, prueba + chr(10).join(intentos))}
+
+# FICHA DEL PROYECTO (la actual: reescríbela en ESTADO)
+{conocimiento.leer_estado(carpeta)}
+
+# CONOCIMIENTO DEL CEREBRO (ya guardado: no lo repitas en CONOCIMIENTO; amplíalo con el mismo título)
+{conocimiento.seleccionar(temas, spec[:4000] + s.get('RESUMEN', '') + prueba, nombre)}
+
+# MAPA DEL CEREBRO
+{conocimiento.mapa_textual()}
 
 # BITÁCORA RECIENTE
 {nucleo.bitacora_reciente(bitacora)}
@@ -490,8 +543,8 @@ Intentos de compilar/probar en este paso:
         if prov.tiempo_restante() < MIN_PARA_REVISOR:
             raise prov.TiempoAgotado(f"⏱️ Solo quedan {int(prov.tiempo_restante())} s de paso: "
                                      "no da tiempo a que conteste el revisor.")
-        texto, ia, modelo = prov.pedir_rol("revisor", config, proveedores,
-                                           SISTEMA_REVISOR.format(maximo=maximo), mensaje)
+        texto, ia, modelo, idx_revisor = pedir("revisor", config, proveedores,
+                                               SISTEMA_REVISOR.format(maximo=maximo), mensaje, nombre, "revisor")
     except (RuntimeError, prov.TiempoAgotado) as e:
         # El trabajo del constructor no se pierde: queda en el borrador, sin revisar
         nucleo.anotar(bitacora, "⚠️ Revisor no disponible",
@@ -529,6 +582,10 @@ Intentos de compilar/probar en este paso:
         # Nunca se aprueba algo que no pasa la prueba
         veredicto = f"cambios (había dicho: {veredicto}, pero la prueba falla)"
 
+    dataset.resultado(idx_revisor, veredicto=veredicto, terminado=terminado, prueba_ok=ok)
+    for idx in llamadas:
+        dataset.resultado(idx, veredicto_revisor=veredicto)
+
     # ---------- 4. PROMOCIÓN A FINAL ----------
     promocionado = ok and (veredicto.startswith("aprobado") or bool(reales(correcciones)))
     if promocionado:
@@ -559,6 +616,17 @@ Intentos de compilar/probar en este paso:
             nucleo.anotar(bitacora, "🧠 Lección propuesta para la memoria",
                           f"[[{guardada}]] (pendiente de confirmar en `memoria/lecciones/`).")
             print(f"Lección propuesta: {guardada}")
+
+    # ---------- 6. CONOCIMIENTO: la ficha del proyecto y lo aprendido en este paso ----------
+    if conocimiento.guardar_estado(carpeta, r.get("ESTADO", ""), temas):
+        print("Ficha del proyecto actualizada")
+    if r.get("CONOCIMIENTO", "").strip():
+        verificacion = fuentes + "\n" + "\n".join(nucleo.leer_carpeta(borrador).values())
+        guardadas = conocimiento.guardar(r["CONOCIMIENTO"], nombre, verificacion=verificacion, temas_extra=[])
+        if guardadas:
+            nucleo.anotar(bitacora, "🧠 Conocimiento guardado",
+                          " · ".join(f"[[{g}]]" for g in guardadas))
+            print(f"Conocimiento: {len(guardadas)} notas")
 
     if terminado and ok:
         cfg["estado"] = "terminado"

@@ -1,0 +1,1030 @@
+{
+ "nodes": [
+  {
+   "id": "proyecto:memoria-procesos",
+   "type": "file",
+   "file": "proyectos/memoria-procesos/estado.md",
+   "x": 308,
+   "y": 370,
+   "width": 380,
+   "height": 130,
+   "color": "6"
+  },
+  {
+   "id": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "type": "file",
+   "file": "memoria/lecciones/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas.md",
+   "x": -1533,
+   "y": -534,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "type": "file",
+   "file": "memoria/lecciones/citas-a-fuentes-no-bibliograficas-en-el-texto.md",
+   "x": -1628,
+   "y": -1578,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "type": "file",
+   "file": "memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md",
+   "x": 1605,
+   "y": 204,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "type": "file",
+   "file": "memoria/lecciones/los-identificadores-largos-en-texttt-no-se-parten-solos-usar.md",
+   "x": 1907,
+   "y": 2545,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "type": "file",
+   "file": "memoria/lecciones/numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente.md",
+   "x": 65,
+   "y": -2079,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "type": "file",
+   "file": "memoria/lecciones/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp.md",
+   "x": 1718,
+   "y": -1151,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "type": "file",
+   "file": "memoria/lecciones/pgf-umlsd-y-comandos-fragiles-en-sequencediagram.md",
+   "x": 1247,
+   "y": -1777,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "type": "file",
+   "file": "memoria/lecciones/rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact.md",
+   "x": 2070,
+   "y": 1667,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "type": "file",
+   "file": "memoria/lecciones/rutas-largas-en-texttt-causan-overfull-hbox.md",
+   "x": 1008,
+   "y": -1055,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "type": "file",
+   "file": "memoria/lecciones/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth.md",
+   "x": -933,
+   "y": 1840,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:tablas-largas-longtable-no-table",
+   "type": "file",
+   "file": "memoria/lecciones/tablas-largas-longtable-no-table.md",
+   "x": -1347,
+   "y": 1596,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "type": "file",
+   "file": "memoria/lecciones/tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth.md",
+   "x": -757,
+   "y": 2499,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "type": "file",
+   "file": "memoria/lecciones/todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto.md",
+   "x": -201,
+   "y": -1453,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "type": "file",
+   "file": "memoria/lecciones/una-cita-con-autor-largo-se-sale-del-margen-breakcites.md",
+   "x": -1088,
+   "y": -845,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "type": "file",
+   "file": "memoria/lecciones/verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic.md",
+   "x": 3481,
+   "y": 309,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "receta:agrupar-capturas-con-subfigure",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/agrupar-capturas-con-subfigure.md",
+   "x": 691,
+   "y": 1637,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm.md",
+   "x": -1201,
+   "y": 279,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md",
+   "x": 2041,
+   "y": -829,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot.md",
+   "x": 1048,
+   "y": 1432,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra.md",
+   "x": -307,
+   "y": 2669,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos.md",
+   "x": -1587,
+   "y": 443,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace.md",
+   "x": -376,
+   "y": 1901,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm.md",
+   "x": -1464,
+   "y": 876,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia.md",
+   "x": 487,
+   "y": 2034,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "tema:latex",
+   "type": "file",
+   "file": "memoria/temas/latex.md",
+   "x": -91,
+   "y": 346,
+   "width": 640,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:memoria",
+   "type": "file",
+   "file": "memoria/temas/memoria.md",
+   "x": 2753,
+   "y": 743,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:tikz",
+   "type": "file",
+   "file": "memoria/temas/tikz.md",
+   "x": 2358,
+   "y": -203,
+   "width": 404,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:pgfplots",
+   "type": "file",
+   "file": "memoria/temas/pgfplots.md",
+   "x": -2262,
+   "y": 1435,
+   "width": 372,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:general",
+   "type": "file",
+   "file": "memoria/temas/general.md",
+   "x": 5401,
+   "y": 130,
+   "width": 380,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:bibtex",
+   "type": "file",
+   "file": "memoria/temas/bibtex.md",
+   "x": -2888,
+   "y": -1388,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:bibliografia",
+   "type": "file",
+   "file": "memoria/temas/bibliografia.md",
+   "x": -3551,
+   "y": -2675,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:referencias",
+   "type": "file",
+   "file": "memoria/temas/referencias.md",
+   "x": -2756,
+   "y": -3351,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:overfull",
+   "type": "file",
+   "file": "memoria/temas/overfull.md",
+   "x": 3380,
+   "y": 3990,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:texttt",
+   "type": "file",
+   "file": "memoria/temas/texttt.md",
+   "x": 2592,
+   "y": 4549,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:verificacion",
+   "type": "file",
+   "file": "memoria/temas/verificacion.md",
+   "x": -500,
+   "y": -3349,
+   "width": 364,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:metricas",
+   "type": "file",
+   "file": "memoria/temas/metricas.md",
+   "x": 76,
+   "y": -4267,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:pgf-umlsd",
+   "type": "file",
+   "file": "memoria/temas/pgf-umlsd.md",
+   "x": 2166,
+   "y": -2148,
+   "width": 372,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:secuencia",
+   "type": "file",
+   "file": "memoria/temas/secuencia.md",
+   "x": 3256,
+   "y": -1970,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:sequencediagram",
+   "type": "file",
+   "file": "memoria/temas/sequencediagram.md",
+   "x": 2198,
+   "y": -3754,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:figuras",
+   "type": "file",
+   "file": "memoria/temas/figuras.md",
+   "x": 1368,
+   "y": 2792,
+   "width": 372,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:rutas",
+   "type": "file",
+   "file": "memoria/temas/rutas.md",
+   "x": 4038,
+   "y": 2521,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:tablas",
+   "type": "file",
+   "file": "memoria/temas/tablas.md",
+   "x": -1549,
+   "y": 2951,
+   "width": 380,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:longtable",
+   "type": "file",
+   "file": "memoria/temas/longtable.md",
+   "x": -1072,
+   "y": 4219,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:tfg",
+   "type": "file",
+   "file": "memoria/temas/tfg.md",
+   "x": -507,
+   "y": 1207,
+   "width": 404,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:plantilla",
+   "type": "file",
+   "file": "memoria/temas/plantilla.md",
+   "x": -2988,
+   "y": 544,
+   "width": 364,
+   "height": 110,
+   "color": "5"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "proyecto:memoria-procesos",
+   "toNode": "tema:latex",
+   "color": "6"
+  },
+  {
+   "id": "e1",
+   "fromNode": "proyecto:memoria-procesos",
+   "toNode": "tema:memoria",
+   "color": "6"
+  },
+  {
+   "id": "e2",
+   "fromNode": "proyecto:memoria-procesos",
+   "toNode": "tema:tikz",
+   "color": "6"
+  },
+  {
+   "id": "e3",
+   "fromNode": "proyecto:memoria-procesos",
+   "toNode": "tema:pgfplots",
+   "color": "6"
+  },
+  {
+   "id": "e4",
+   "fromNode": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e5",
+   "fromNode": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "toNode": "tema:bibtex",
+   "color": "1"
+  },
+  {
+   "id": "e6",
+   "fromNode": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e7",
+   "fromNode": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e8",
+   "fromNode": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "toNode": "tema:bibliografia",
+   "color": "1"
+  },
+  {
+   "id": "e9",
+   "fromNode": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "toNode": "tema:referencias",
+   "color": "1"
+  },
+  {
+   "id": "e10",
+   "fromNode": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e11",
+   "fromNode": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e12",
+   "fromNode": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e13",
+   "fromNode": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e14",
+   "fromNode": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e15",
+   "fromNode": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "toNode": "tema:overfull",
+   "color": "1"
+  },
+  {
+   "id": "e16",
+   "fromNode": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "toNode": "tema:texttt",
+   "color": "1"
+  },
+  {
+   "id": "e17",
+   "fromNode": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e18",
+   "fromNode": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e19",
+   "fromNode": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "toNode": "tema:verificacion",
+   "color": "1"
+  },
+  {
+   "id": "e20",
+   "fromNode": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "toNode": "tema:metricas",
+   "color": "1"
+  },
+  {
+   "id": "e21",
+   "fromNode": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e22",
+   "fromNode": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e23",
+   "fromNode": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "toNode": "tema:pgf-umlsd",
+   "color": "1"
+  },
+  {
+   "id": "e24",
+   "fromNode": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "toNode": "tema:secuencia",
+   "color": "1"
+  },
+  {
+   "id": "e25",
+   "fromNode": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e26",
+   "fromNode": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e27",
+   "fromNode": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "toNode": "tema:pgf-umlsd",
+   "color": "1"
+  },
+  {
+   "id": "e28",
+   "fromNode": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "toNode": "tema:sequencediagram",
+   "color": "1"
+  },
+  {
+   "id": "e29",
+   "fromNode": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e30",
+   "fromNode": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e31",
+   "fromNode": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "toNode": "tema:figuras",
+   "color": "1"
+  },
+  {
+   "id": "e32",
+   "fromNode": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "toNode": "tema:rutas",
+   "color": "1"
+  },
+  {
+   "id": "e33",
+   "fromNode": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e34",
+   "fromNode": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e35",
+   "fromNode": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "toNode": "tema:pgf-umlsd",
+   "color": "1"
+  },
+  {
+   "id": "e36",
+   "fromNode": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e37",
+   "fromNode": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e38",
+   "fromNode": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:tablas",
+   "color": "1"
+  },
+  {
+   "id": "e39",
+   "fromNode": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e40",
+   "fromNode": "leccion:tablas-largas-longtable-no-table",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e41",
+   "fromNode": "leccion:tablas-largas-longtable-no-table",
+   "toNode": "tema:tablas",
+   "color": "1"
+  },
+  {
+   "id": "e42",
+   "fromNode": "leccion:tablas-largas-longtable-no-table",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e43",
+   "fromNode": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e44",
+   "fromNode": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:tablas",
+   "color": "1"
+  },
+  {
+   "id": "e45",
+   "fromNode": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:longtable",
+   "color": "1"
+  },
+  {
+   "id": "e46",
+   "fromNode": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e47",
+   "fromNode": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e48",
+   "fromNode": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "toNode": "tema:verificacion",
+   "color": "1"
+  },
+  {
+   "id": "e49",
+   "fromNode": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e50",
+   "fromNode": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e51",
+   "fromNode": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "toNode": "tema:bibtex",
+   "color": "1"
+  },
+  {
+   "id": "e52",
+   "fromNode": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e53",
+   "fromNode": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e54",
+   "fromNode": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "toNode": "tema:memoria",
+   "color": "1"
+  },
+  {
+   "id": "e55",
+   "fromNode": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e56",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "tema:figuras",
+   "color": "3"
+  },
+  {
+   "id": "e57",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e58",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e59",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e60",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "color": "3"
+  },
+  {
+   "id": "e61",
+   "fromNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e62",
+   "fromNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "toNode": "tema:plantilla",
+   "color": "3"
+  },
+  {
+   "id": "e63",
+   "fromNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e64",
+   "fromNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e65",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e66",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "tema:pgf-umlsd",
+   "color": "3"
+  },
+  {
+   "id": "e67",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "tema:secuencia",
+   "color": "3"
+  },
+  {
+   "id": "e68",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "tema:tikz",
+   "color": "3"
+  },
+  {
+   "id": "e69",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e70",
+   "fromNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "toNode": "tema:figuras",
+   "color": "3"
+  },
+  {
+   "id": "e71",
+   "fromNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e72",
+   "fromNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e73",
+   "fromNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e74",
+   "fromNode": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e75",
+   "fromNode": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "toNode": "tema:longtable",
+   "color": "3"
+  },
+  {
+   "id": "e76",
+   "fromNode": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "toNode": "tema:tablas",
+   "color": "3"
+  },
+  {
+   "id": "e77",
+   "fromNode": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e78",
+   "fromNode": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e79",
+   "fromNode": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "toNode": "tema:plantilla",
+   "color": "3"
+  },
+  {
+   "id": "e80",
+   "fromNode": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e81",
+   "fromNode": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e82",
+   "fromNode": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e83",
+   "fromNode": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "toNode": "tema:tablas",
+   "color": "3"
+  },
+  {
+   "id": "e84",
+   "fromNode": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e85",
+   "fromNode": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e86",
+   "fromNode": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e87",
+   "fromNode": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "toNode": "tema:plantilla",
+   "color": "3"
+  },
+  {
+   "id": "e88",
+   "fromNode": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e89",
+   "fromNode": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e90",
+   "fromNode": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "toNode": "tema:figuras",
+   "color": "3"
+  },
+  {
+   "id": "e91",
+   "fromNode": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e92",
+   "fromNode": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e93",
+   "fromNode": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  }
+ ]
+}

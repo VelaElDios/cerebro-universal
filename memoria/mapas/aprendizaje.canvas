@@ -1,0 +1,32 @@
+{
+ "nodes": [
+  {
+   "id": "proyecto:aprendizaje",
+   "type": "file",
+   "file": "proyectos/aprendizaje/bitacora.md",
+   "x": -380,
+   "y": 1764,
+   "width": 380,
+   "height": 130,
+   "color": "6"
+  },
+  {
+   "id": "tema:conocimiento",
+   "type": "file",
+   "file": "memoria/temas/conocimiento.md",
+   "x": 343,
+   "y": 1215,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "proyecto:aprendizaje",
+   "toNode": "tema:conocimiento",
+   "color": "6"
+  }
+ ]
+}

@@ -35,3 +35,6 @@ Claude outputs/
 
 # Repos públicos que descarga el cerebro en cada paso (cerebro/repos.py)
 proyectos/*/.repos/
+
+# Datos de entrenamiento cuando no hay repo privado configurado (cerebro/dataset.py)
+.cerebro-datos/

@@ -1,5 +1,20 @@
+---
+tipo: "tema"
+titulo: "memoria"
+notas: 2
+---
 # memoria
 
-Lecciones sobre memoria (este archivo se genera solo).
+Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo se genera solo).
 
-- [[verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Cada cifra de un documento sale de las fuentes, también las pequeñas]]
+## Proyectos
+
+- 📁 [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Cada cifra de un documento sale de las fuentes, también las pequeñas]]
+
+## Temas relacionados
+
+[[latex]] · [[tikz]] · [[pgfplots]] · [[general]]

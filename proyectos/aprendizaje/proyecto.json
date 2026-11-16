@@ -1,0 +1,25 @@
+{
+  "nombre": "aprendizaje",
+  "tipo": "aprender",
+  "estado": "en-construccion",
+  "temas": ["conocimiento"],
+  "cada_horas": 4,
+  "apt": ["poppler-utils"],
+  "repos": {
+    "saas": "https://github.com/VelaElDios/la-grada-colchonera-saas",
+    "datos": {"url": "https://github.com/VelaElDios/cerebro-datos", "token_env": "DATOS_TOKEN", "opcional": true}
+  },
+  "aprender_de": [
+    {"entrada": "../../README.md", "temas": ["cerebro"]},
+    {"entrada": "../../memoria/reglas-tfg.md", "temas": ["tfg", "latex", "memoria"]},
+    {"entrada": "repo:saas/docs/documentacion-tecnica.md", "temas": ["saas", "grada-colchonera"], "proyecto": "memoria-procesos"},
+    {"entrada": "repo:saas/docs/gestion/README.md", "temas": ["scrum", "donetonic", "grada-colchonera"], "proyecto": "memoria-procesos"},
+    {"entrada": "repo:saas/CONTRIBUTING.md", "temas": ["github-flow", "git", "grada-colchonera"], "proyecto": "memoria-procesos"},
+    {"entrada": "repo:saas/docs/revision-entrega.md", "temas": ["procesos", "grada-colchonera"], "proyecto": "memoria-procesos"},
+    {"entrada": "repo:saas/docs/hito4-configuracion.md", "temas": ["oauth", "correo", "grada-colchonera"], "proyecto": "memoria-procesos"},
+    {"entrada": "../memoria-procesos/fuentes/estructura-memoria.md", "temas": ["tfg", "memoria"], "proyecto": "memoria-procesos"},
+    {"entrada": "../memoria-procesos/fuentes/bibliografia-extra.md", "temas": ["bibliografia"], "proyecto": "memoria-procesos"},
+    {"entrada": "../plantilla-sus/spec.md", "temas": ["sus", "usabilidad", "latex"], "proyecto": "plantilla-sus"},
+    {"entrada": "repo:datos/temarios/**/*", "temas": []}
+  ]
+}

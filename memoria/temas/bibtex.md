@@ -1,6 +1,17 @@
+---
+tipo: "tema"
+titulo: "bibtex"
+notas: 2
+---
 # bibtex
 
-Lecciones sobre bibtex (este archivo se genera solo).
+Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se genera solo).
 
-- [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
-- [[una-cita-con-autor-largo-se-sale-del-margen-breakcites|Una cita con autor largo se sale del margen: breakcites]]
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
+- ⚠️ [[memoria/lecciones/una-cita-con-autor-largo-se-sale-del-margen-breakcites|Una cita con autor largo se sale del margen: breakcites]]
+
+## Temas relacionados
+
+[[latex]]

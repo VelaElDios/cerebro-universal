@@ -1,0 +1,1872 @@
+{
+ "nodes": [
+  {
+   "id": "proyecto:aprendizaje",
+   "type": "file",
+   "file": "proyectos/aprendizaje/bitacora.md",
+   "x": 7482,
+   "y": -6597,
+   "width": 380,
+   "height": 130,
+   "color": "6"
+  },
+  {
+   "id": "proyecto:memoria-procesos",
+   "type": "file",
+   "file": "proyectos/memoria-procesos/estado.md",
+   "x": 278,
+   "y": 2651,
+   "width": 380,
+   "height": 130,
+   "color": "6"
+  },
+  {
+   "id": "proyecto:plantilla-sus",
+   "type": "file",
+   "file": "proyectos/plantilla-sus/estado.md",
+   "x": -429,
+   "y": -1063,
+   "width": 380,
+   "height": 130,
+   "color": "6"
+  },
+  {
+   "id": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "type": "file",
+   "file": "memoria/lecciones/al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba.md",
+   "x": -815,
+   "y": -3274,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "type": "file",
+   "file": "memoria/lecciones/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas.md",
+   "x": -1432,
+   "y": 3224,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "type": "file",
+   "file": "memoria/lecciones/citas-a-fuentes-no-bibliograficas-en-el-texto.md",
+   "x": -2626,
+   "y": 1815,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "type": "file",
+   "file": "memoria/lecciones/coma-decimal-en-formulas-paquete-icomma.md",
+   "x": -1513,
+   "y": -85,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "type": "file",
+   "file": "memoria/lecciones/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel.md",
+   "x": -522,
+   "y": -188,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "type": "file",
+   "file": "memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md",
+   "x": 1092,
+   "y": 1807,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "type": "file",
+   "file": "memoria/lecciones/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro.md",
+   "x": 793,
+   "y": -176,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "type": "file",
+   "file": "memoria/lecciones/en-un-tex-los-comentarios-son-con-no-con.md",
+   "x": 211,
+   "y": -883,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:enquote-necesita-el-paquete-csquotes",
+   "type": "file",
+   "file": "memoria/lecciones/enquote-necesita-el-paquete-csquotes.md",
+   "x": -1597,
+   "y": -690,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "type": "file",
+   "file": "memoria/lecciones/escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en.md",
+   "x": 700,
+   "y": -1729,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "type": "file",
+   "file": "memoria/lecciones/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante.md",
+   "x": -1861,
+   "y": 247,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:forzar-lualatex-con-latexmkrc",
+   "type": "file",
+   "file": "memoria/lecciones/forzar-lualatex-con-latexmkrc.md",
+   "x": 2065,
+   "y": -681,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "type": "file",
+   "file": "memoria/lecciones/los-identificadores-largos-en-texttt-no-se-parten-solos-usar.md",
+   "x": 2974,
+   "y": 3359,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "type": "file",
+   "file": "memoria/lecciones/los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e.md",
+   "x": 233,
+   "y": -3297,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "type": "file",
+   "file": "memoria/lecciones/no-meter-codigo-lua-dentro-de-directlua.md",
+   "x": 676,
+   "y": -731,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "type": "file",
+   "file": "memoria/lecciones/no-meter-saltos-de-linea-n-dentro-de-tex-sprint.md",
+   "x": 1359,
+   "y": -270,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "type": "file",
+   "file": "memoria/lecciones/nombres-de-archivo-normales-sin-espacios-y-con-extension.md",
+   "x": -1546,
+   "y": -2789,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "type": "file",
+   "file": "memoria/lecciones/numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente.md",
+   "x": -2373,
+   "y": 2860,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "type": "file",
+   "file": "memoria/lecciones/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp.md",
+   "x": 2541,
+   "y": 1679,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "type": "file",
+   "file": "memoria/lecciones/pgf-umlsd-y-comandos-fragiles-en-sequencediagram.md",
+   "x": 2876,
+   "y": 2296,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "type": "file",
+   "file": "memoria/lecciones/pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d.md",
+   "x": -930,
+   "y": 336,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "type": "file",
+   "file": "memoria/lecciones/pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida.md",
+   "x": -397,
+   "y": 458,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "type": "file",
+   "file": "memoria/lecciones/rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact.md",
+   "x": 737,
+   "y": 4899,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "type": "file",
+   "file": "memoria/lecciones/rutas-largas-en-texttt-causan-overfull-hbox.md",
+   "x": 2124,
+   "y": 2206,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "type": "file",
+   "file": "memoria/lecciones/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth.md",
+   "x": 1288,
+   "y": 3455,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:tablas-largas-longtable-no-table",
+   "type": "file",
+   "file": "memoria/lecciones/tablas-largas-longtable-no-table.md",
+   "x": 1739,
+   "y": 3135,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "type": "file",
+   "file": "memoria/lecciones/tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth.md",
+   "x": 2037,
+   "y": 3780,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "type": "file",
+   "file": "memoria/lecciones/todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto.md",
+   "x": -1748,
+   "y": 2317,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "type": "file",
+   "file": "memoria/lecciones/un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p.md",
+   "x": -2123,
+   "y": -3129,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "type": "file",
+   "file": "memoria/lecciones/una-cita-con-autor-largo-se-sale-del-margen-breakcites.md",
+   "x": -1580,
+   "y": 2829,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "type": "file",
+   "file": "memoria/lecciones/una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp.md",
+   "x": 1224,
+   "y": -701,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "type": "file",
+   "file": "memoria/lecciones/verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic.md",
+   "x": 172,
+   "y": -53,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "type": "file",
+   "file": "memoria/conocimiento/conceptos/como-trabaja-el-cerebro-constructor-prueba-revisor.md",
+   "x": 4007,
+   "y": -9175,
+   "width": 280,
+   "height": 80,
+   "color": "4"
+  },
+  {
+   "id": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "type": "file",
+   "file": "memoria/conocimiento/conceptos/confianza-del-conocimiento-verificado-o-propuesto.md",
+   "x": 4626,
+   "y": -7572,
+   "width": 280,
+   "height": 80,
+   "color": "4"
+  },
+  {
+   "id": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
+   "type": "file",
+   "file": "memoria/conocimiento/decisiones/deshacer-el-paso-entero-si-rompe-la-compilacion.md",
+   "x": 2864,
+   "y": -9939,
+   "width": 280,
+   "height": 80,
+   "color": "2"
+  },
+  {
+   "id": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "type": "file",
+   "file": "memoria/conocimiento/decisiones/los-datos-de-entrenamiento-van-a-un-repo-privado.md",
+   "x": 2374,
+   "y": -6154,
+   "width": 280,
+   "height": 80,
+   "color": "2"
+  },
+  {
+   "id": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "type": "file",
+   "file": "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md",
+   "x": 3297,
+   "y": -9504,
+   "width": 280,
+   "height": 80,
+   "color": "2"
+  },
+  {
+   "id": "receta:agrupar-capturas-con-subfigure",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/agrupar-capturas-con-subfigure.md",
+   "x": -60,
+   "y": 4014,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador.md",
+   "x": 779,
+   "y": -8369,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/como-se-empieza-un-proyecto-nuevo-en-el-cerebro.md",
+   "x": 1281,
+   "y": -9675,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm.md",
+   "x": -1237,
+   "y": 3921,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente.md",
+   "x": -1996,
+   "y": 3736,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md",
+   "x": 2163,
+   "y": 1292,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot.md",
+   "x": -150,
+   "y": 4429,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra.md",
+   "x": 1651,
+   "y": 4103,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos.md",
+   "x": -796,
+   "y": 3732,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace.md",
+   "x": 732,
+   "y": 3972,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm.md",
+   "x": -815,
+   "y": 4164,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "type": "file",
+   "file": "memoria/conocimiento/recetas/una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia.md",
+   "x": 299,
+   "y": 4370,
+   "width": 280,
+   "height": 80,
+   "color": "3"
+  },
+  {
+   "id": "tema:conocimiento",
+   "type": "file",
+   "file": "memoria/temas/conocimiento.md",
+   "x": 6262,
+   "y": -7030,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:latex",
+   "type": "file",
+   "file": "memoria/temas/latex.md",
+   "x": 4,
+   "y": 1796,
+   "width": 640,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:memoria",
+   "type": "file",
+   "file": "memoria/temas/memoria.md",
+   "x": 1306,
+   "y": 995,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:tikz",
+   "type": "file",
+   "file": "memoria/temas/tikz.md",
+   "x": 388,
+   "y": 699,
+   "width": 404,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:pgfplots",
+   "type": "file",
+   "file": "memoria/temas/pgfplots.md",
+   "x": -977,
+   "y": 953,
+   "width": 372,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:lua",
+   "type": "file",
+   "file": "memoria/temas/lua.md",
+   "x": 1127,
+   "y": -1575,
+   "width": 396,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:beamer",
+   "type": "file",
+   "file": "memoria/temas/beamer.md",
+   "x": -2358,
+   "y": -1854,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:general",
+   "type": "file",
+   "file": "memoria/temas/general.md",
+   "x": -851,
+   "y": -2550,
+   "width": 380,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:bibtex",
+   "type": "file",
+   "file": "memoria/temas/bibtex.md",
+   "x": -3121,
+   "y": 4115,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:bibliografia",
+   "type": "file",
+   "file": "memoria/temas/bibliografia.md",
+   "x": -4931,
+   "y": 1832,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:referencias",
+   "type": "file",
+   "file": "memoria/temas/referencias.md",
+   "x": -4843,
+   "y": 1037,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:datos",
+   "type": "file",
+   "file": "memoria/temas/datos.md",
+   "x": 1367,
+   "y": -4172,
+   "width": 364,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:overleaf",
+   "type": "file",
+   "file": "memoria/temas/overleaf.md",
+   "x": 3987,
+   "y": -1799,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:overfull",
+   "type": "file",
+   "file": "memoria/temas/overfull.md",
+   "x": 5136,
+   "y": 3795,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:texttt",
+   "type": "file",
+   "file": "memoria/temas/texttt.md",
+   "x": 4736,
+   "y": 4594,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:verificacion",
+   "type": "file",
+   "file": "memoria/temas/verificacion.md",
+   "x": -3470,
+   "y": 3188,
+   "width": 364,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:metricas",
+   "type": "file",
+   "file": "memoria/temas/metricas.md",
+   "x": -4678,
+   "y": 3559,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:pgf-umlsd",
+   "type": "file",
+   "file": "memoria/temas/pgf-umlsd.md",
+   "x": 3656,
+   "y": 1642,
+   "width": 372,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:secuencia",
+   "type": "file",
+   "file": "memoria/temas/secuencia.md",
+   "x": 4064,
+   "y": 776,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:sequencediagram",
+   "type": "file",
+   "file": "memoria/temas/sequencediagram.md",
+   "x": 5163,
+   "y": 2213,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:figuras",
+   "type": "file",
+   "file": "memoria/temas/figuras.md",
+   "x": 74,
+   "y": 5763,
+   "width": 372,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:rutas",
+   "type": "file",
+   "file": "memoria/temas/rutas.md",
+   "x": 1096,
+   "y": 7144,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:tablas",
+   "type": "file",
+   "file": "memoria/temas/tablas.md",
+   "x": 2123,
+   "y": 4623,
+   "width": 380,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:longtable",
+   "type": "file",
+   "file": "memoria/temas/longtable.md",
+   "x": 2998,
+   "y": 5313,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:revision",
+   "type": "file",
+   "file": "memoria/temas/revision.md",
+   "x": -3578,
+   "y": -4342,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:cerebro",
+   "type": "file",
+   "file": "memoria/temas/cerebro.md",
+   "x": 2622,
+   "y": -8380,
+   "width": 396,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:orquestador",
+   "type": "file",
+   "file": "memoria/temas/orquestador.md",
+   "x": 3871,
+   "y": -10336,
+   "width": 364,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:ia-local",
+   "type": "file",
+   "file": "memoria/temas/ia-local.md",
+   "x": 3537,
+   "y": -5714,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:tfg",
+   "type": "file",
+   "file": "memoria/temas/tfg.md",
+   "x": -869,
+   "y": 4880,
+   "width": 404,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:bitacora",
+   "type": "file",
+   "file": "memoria/temas/bitacora.md",
+   "x": -678,
+   "y": -8689,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:proyectos",
+   "type": "file",
+   "file": "memoria/temas/proyectos.md",
+   "x": 270,
+   "y": -10744,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:plantilla",
+   "type": "file",
+   "file": "memoria/temas/plantilla.md",
+   "x": -1887,
+   "y": 5261,
+   "width": 364,
+   "height": 110,
+   "color": "5"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "proyecto:aprendizaje",
+   "toNode": "tema:conocimiento",
+   "color": "6"
+  },
+  {
+   "id": "e1",
+   "fromNode": "proyecto:memoria-procesos",
+   "toNode": "tema:latex",
+   "color": "6"
+  },
+  {
+   "id": "e2",
+   "fromNode": "proyecto:memoria-procesos",
+   "toNode": "tema:memoria",
+   "color": "6"
+  },
+  {
+   "id": "e3",
+   "fromNode": "proyecto:memoria-procesos",
+   "toNode": "tema:tikz",
+   "color": "6"
+  },
+  {
+   "id": "e4",
+   "fromNode": "proyecto:memoria-procesos",
+   "toNode": "tema:pgfplots",
+   "color": "6"
+  },
+  {
+   "id": "e5",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:latex",
+   "color": "6"
+  },
+  {
+   "id": "e6",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:lua",
+   "color": "6"
+  },
+  {
+   "id": "e7",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:tikz",
+   "color": "6"
+  },
+  {
+   "id": "e8",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:pgfplots",
+   "color": "6"
+  },
+  {
+   "id": "e9",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:beamer",
+   "color": "6"
+  },
+  {
+   "id": "e10",
+   "fromNode": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e11",
+   "fromNode": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e12",
+   "fromNode": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e13",
+   "fromNode": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "toNode": "tema:bibtex",
+   "color": "1"
+  },
+  {
+   "id": "e14",
+   "fromNode": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e15",
+   "fromNode": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e16",
+   "fromNode": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "toNode": "tema:bibliografia",
+   "color": "1"
+  },
+  {
+   "id": "e17",
+   "fromNode": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "toNode": "tema:referencias",
+   "color": "1"
+  },
+  {
+   "id": "e18",
+   "fromNode": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e19",
+   "fromNode": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e20",
+   "fromNode": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e21",
+   "fromNode": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e22",
+   "fromNode": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e23",
+   "fromNode": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e24",
+   "fromNode": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e25",
+   "fromNode": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e26",
+   "fromNode": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e27",
+   "fromNode": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e28",
+   "fromNode": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e29",
+   "fromNode": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e30",
+   "fromNode": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e31",
+   "fromNode": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e32",
+   "fromNode": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e33",
+   "fromNode": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e34",
+   "fromNode": "leccion:enquote-necesita-el-paquete-csquotes",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e35",
+   "fromNode": "leccion:enquote-necesita-el-paquete-csquotes",
+   "toNode": "tema:beamer",
+   "color": "1"
+  },
+  {
+   "id": "e36",
+   "fromNode": "leccion:enquote-necesita-el-paquete-csquotes",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e37",
+   "fromNode": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e38",
+   "fromNode": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e39",
+   "fromNode": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "toNode": "tema:datos",
+   "color": "1"
+  },
+  {
+   "id": "e40",
+   "fromNode": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e41",
+   "fromNode": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e42",
+   "fromNode": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e43",
+   "fromNode": "leccion:forzar-lualatex-con-latexmkrc",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e44",
+   "fromNode": "leccion:forzar-lualatex-con-latexmkrc",
+   "toNode": "tema:overleaf",
+   "color": "1"
+  },
+  {
+   "id": "e45",
+   "fromNode": "leccion:forzar-lualatex-con-latexmkrc",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e46",
+   "fromNode": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e47",
+   "fromNode": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "toNode": "tema:overfull",
+   "color": "1"
+  },
+  {
+   "id": "e48",
+   "fromNode": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "toNode": "tema:texttt",
+   "color": "1"
+  },
+  {
+   "id": "e49",
+   "fromNode": "leccion:los-identificadores-largos-en-texttt-no-se-parten-solos-usar",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e50",
+   "fromNode": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e51",
+   "fromNode": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "toNode": "tema:datos",
+   "color": "1"
+  },
+  {
+   "id": "e52",
+   "fromNode": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e53",
+   "fromNode": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e54",
+   "fromNode": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e55",
+   "fromNode": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e56",
+   "fromNode": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e57",
+   "fromNode": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e58",
+   "fromNode": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e59",
+   "fromNode": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e60",
+   "fromNode": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e61",
+   "fromNode": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e62",
+   "fromNode": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "toNode": "tema:verificacion",
+   "color": "1"
+  },
+  {
+   "id": "e63",
+   "fromNode": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "toNode": "tema:metricas",
+   "color": "1"
+  },
+  {
+   "id": "e64",
+   "fromNode": "leccion:numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e65",
+   "fromNode": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e66",
+   "fromNode": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "toNode": "tema:pgf-umlsd",
+   "color": "1"
+  },
+  {
+   "id": "e67",
+   "fromNode": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "toNode": "tema:secuencia",
+   "color": "1"
+  },
+  {
+   "id": "e68",
+   "fromNode": "leccion:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e69",
+   "fromNode": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e70",
+   "fromNode": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "toNode": "tema:pgf-umlsd",
+   "color": "1"
+  },
+  {
+   "id": "e71",
+   "fromNode": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "toNode": "tema:sequencediagram",
+   "color": "1"
+  },
+  {
+   "id": "e72",
+   "fromNode": "leccion:pgf-umlsd-y-comandos-fragiles-en-sequencediagram",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e73",
+   "fromNode": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e74",
+   "fromNode": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e75",
+   "fromNode": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "toNode": "tema:pgfplots",
+   "color": "1"
+  },
+  {
+   "id": "e76",
+   "fromNode": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e77",
+   "fromNode": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e78",
+   "fromNode": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e79",
+   "fromNode": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "toNode": "tema:pgfplots",
+   "color": "1"
+  },
+  {
+   "id": "e80",
+   "fromNode": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e81",
+   "fromNode": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e82",
+   "fromNode": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "toNode": "tema:figuras",
+   "color": "1"
+  },
+  {
+   "id": "e83",
+   "fromNode": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "toNode": "tema:rutas",
+   "color": "1"
+  },
+  {
+   "id": "e84",
+   "fromNode": "leccion:rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e85",
+   "fromNode": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e86",
+   "fromNode": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "toNode": "tema:pgf-umlsd",
+   "color": "1"
+  },
+  {
+   "id": "e87",
+   "fromNode": "leccion:rutas-largas-en-texttt-causan-overfull-hbox",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e88",
+   "fromNode": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e89",
+   "fromNode": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:tablas",
+   "color": "1"
+  },
+  {
+   "id": "e90",
+   "fromNode": "leccion:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e91",
+   "fromNode": "leccion:tablas-largas-longtable-no-table",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e92",
+   "fromNode": "leccion:tablas-largas-longtable-no-table",
+   "toNode": "tema:tablas",
+   "color": "1"
+  },
+  {
+   "id": "e93",
+   "fromNode": "leccion:tablas-largas-longtable-no-table",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e94",
+   "fromNode": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e95",
+   "fromNode": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:tablas",
+   "color": "1"
+  },
+  {
+   "id": "e96",
+   "fromNode": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "tema:longtable",
+   "color": "1"
+  },
+  {
+   "id": "e97",
+   "fromNode": "leccion:tablas-longtable-anchas-usar-y-anchos-que-sumen-linewidth",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e98",
+   "fromNode": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e99",
+   "fromNode": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "toNode": "tema:verificacion",
+   "color": "1"
+  },
+  {
+   "id": "e100",
+   "fromNode": "leccion:todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e101",
+   "fromNode": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e102",
+   "fromNode": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "toNode": "tema:revision",
+   "color": "1"
+  },
+  {
+   "id": "e103",
+   "fromNode": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e104",
+   "fromNode": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e105",
+   "fromNode": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "toNode": "tema:bibtex",
+   "color": "1"
+  },
+  {
+   "id": "e106",
+   "fromNode": "leccion:una-cita-con-autor-largo-se-sale-del-margen-breakcites",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e107",
+   "fromNode": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e108",
+   "fromNode": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e109",
+   "fromNode": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e110",
+   "fromNode": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e111",
+   "fromNode": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "toNode": "tema:memoria",
+   "color": "1"
+  },
+  {
+   "id": "e112",
+   "fromNode": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "1"
+  },
+  {
+   "id": "e113",
+   "fromNode": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "toNode": "tema:cerebro",
+   "color": "4"
+  },
+  {
+   "id": "e114",
+   "fromNode": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "toNode": "tema:orquestador",
+   "color": "4"
+  },
+  {
+   "id": "e115",
+   "fromNode": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "toNode": "tema:cerebro",
+   "color": "4"
+  },
+  {
+   "id": "e116",
+   "fromNode": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "toNode": "tema:conocimiento",
+   "color": "4"
+  },
+  {
+   "id": "e117",
+   "fromNode": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
+   "toNode": "tema:cerebro",
+   "color": "2"
+  },
+  {
+   "id": "e118",
+   "fromNode": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
+   "toNode": "tema:orquestador",
+   "color": "2"
+  },
+  {
+   "id": "e119",
+   "fromNode": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
+   "toNode": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "color": "2"
+  },
+  {
+   "id": "e120",
+   "fromNode": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "toNode": "tema:cerebro",
+   "color": "2"
+  },
+  {
+   "id": "e121",
+   "fromNode": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "toNode": "tema:datos",
+   "color": "2"
+  },
+  {
+   "id": "e122",
+   "fromNode": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "toNode": "tema:ia-local",
+   "color": "2"
+  },
+  {
+   "id": "e123",
+   "fromNode": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "toNode": "tema:cerebro",
+   "color": "2"
+  },
+  {
+   "id": "e124",
+   "fromNode": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "toNode": "tema:orquestador",
+   "color": "2"
+  },
+  {
+   "id": "e125",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "tema:figuras",
+   "color": "3"
+  },
+  {
+   "id": "e126",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e127",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e128",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e129",
+   "fromNode": "receta:agrupar-capturas-con-subfigure",
+   "toNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "color": "3"
+  },
+  {
+   "id": "e130",
+   "fromNode": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
+   "toNode": "tema:bitacora",
+   "color": "3"
+  },
+  {
+   "id": "e131",
+   "fromNode": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
+   "toNode": "tema:cerebro",
+   "color": "3"
+  },
+  {
+   "id": "e132",
+   "fromNode": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
+   "toNode": "tema:cerebro",
+   "color": "3"
+  },
+  {
+   "id": "e133",
+   "fromNode": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
+   "toNode": "tema:proyectos",
+   "color": "3"
+  },
+  {
+   "id": "e134",
+   "fromNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e135",
+   "fromNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "toNode": "tema:plantilla",
+   "color": "3"
+  },
+  {
+   "id": "e136",
+   "fromNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e137",
+   "fromNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e138",
+   "fromNode": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e139",
+   "fromNode": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e140",
+   "fromNode": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "toNode": "tema:verificacion",
+   "color": "3"
+  },
+  {
+   "id": "e141",
+   "fromNode": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "toNode": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "color": "3"
+  },
+  {
+   "id": "e142",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e143",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "tema:pgf-umlsd",
+   "color": "3"
+  },
+  {
+   "id": "e144",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "tema:secuencia",
+   "color": "3"
+  },
+  {
+   "id": "e145",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "tema:tikz",
+   "color": "3"
+  },
+  {
+   "id": "e146",
+   "fromNode": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e147",
+   "fromNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "toNode": "tema:figuras",
+   "color": "3"
+  },
+  {
+   "id": "e148",
+   "fromNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e149",
+   "fromNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e150",
+   "fromNode": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e151",
+   "fromNode": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e152",
+   "fromNode": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "toNode": "tema:longtable",
+   "color": "3"
+  },
+  {
+   "id": "e153",
+   "fromNode": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "toNode": "tema:tablas",
+   "color": "3"
+  },
+  {
+   "id": "e154",
+   "fromNode": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e155",
+   "fromNode": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e156",
+   "fromNode": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "toNode": "tema:plantilla",
+   "color": "3"
+  },
+  {
+   "id": "e157",
+   "fromNode": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e158",
+   "fromNode": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e159",
+   "fromNode": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e160",
+   "fromNode": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "toNode": "tema:tablas",
+   "color": "3"
+  },
+  {
+   "id": "e161",
+   "fromNode": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e162",
+   "fromNode": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e163",
+   "fromNode": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e164",
+   "fromNode": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "toNode": "tema:plantilla",
+   "color": "3"
+  },
+  {
+   "id": "e165",
+   "fromNode": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e166",
+   "fromNode": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  },
+  {
+   "id": "e167",
+   "fromNode": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "toNode": "tema:figuras",
+   "color": "3"
+  },
+  {
+   "id": "e168",
+   "fromNode": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "toNode": "tema:latex",
+   "color": "3"
+  },
+  {
+   "id": "e169",
+   "fromNode": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "toNode": "tema:tfg",
+   "color": "3"
+  },
+  {
+   "id": "e170",
+   "fromNode": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "toNode": "proyecto:memoria-procesos",
+   "color": "3"
+  }
+ ]
+}

@@ -1,0 +1,612 @@
+{
+ "nodes": [
+  {
+   "id": "proyecto:plantilla-sus",
+   "type": "file",
+   "file": "proyectos/plantilla-sus/estado.md",
+   "x": 140,
+   "y": 77,
+   "width": 380,
+   "height": 130,
+   "color": "6"
+  },
+  {
+   "id": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "type": "file",
+   "file": "memoria/lecciones/al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba.md",
+   "x": -643,
+   "y": -1873,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "type": "file",
+   "file": "memoria/lecciones/coma-decimal-en-formulas-paquete-icomma.md",
+   "x": 1606,
+   "y": 1359,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "type": "file",
+   "file": "memoria/lecciones/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel.md",
+   "x": 404,
+   "y": 1945,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "type": "file",
+   "file": "memoria/lecciones/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro.md",
+   "x": 547,
+   "y": 1113,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "type": "file",
+   "file": "memoria/lecciones/en-un-tex-los-comentarios-son-con-no-con.md",
+   "x": 2026,
+   "y": -158,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:enquote-necesita-el-paquete-csquotes",
+   "type": "file",
+   "file": "memoria/lecciones/enquote-necesita-el-paquete-csquotes.md",
+   "x": -867,
+   "y": 152,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "type": "file",
+   "file": "memoria/lecciones/escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en.md",
+   "x": 1175,
+   "y": -1398,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "type": "file",
+   "file": "memoria/lecciones/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante.md",
+   "x": 1112,
+   "y": 1860,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:forzar-lualatex-con-latexmkrc",
+   "type": "file",
+   "file": "memoria/lecciones/forzar-lualatex-con-latexmkrc.md",
+   "x": 2491,
+   "y": 1119,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "type": "file",
+   "file": "memoria/lecciones/los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e.md",
+   "x": 115,
+   "y": -2395,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "type": "file",
+   "file": "memoria/lecciones/no-meter-codigo-lua-dentro-de-directlua.md",
+   "x": 626,
+   "y": -772,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "type": "file",
+   "file": "memoria/lecciones/no-meter-saltos-de-linea-n-dentro-de-tex-sprint.md",
+   "x": 1798,
+   "y": 431,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "type": "file",
+   "file": "memoria/lecciones/nombres-de-archivo-normales-sin-espacios-y-con-extension.md",
+   "x": -1231,
+   "y": -1435,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "type": "file",
+   "file": "memoria/lecciones/pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d.md",
+   "x": -695,
+   "y": 1099,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "type": "file",
+   "file": "memoria/lecciones/pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida.md",
+   "x": -512,
+   "y": 1532,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "type": "file",
+   "file": "memoria/lecciones/un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p.md",
+   "x": -2078,
+   "y": -1587,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "type": "file",
+   "file": "memoria/lecciones/una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp.md",
+   "x": 1723,
+   "y": -729,
+   "width": 280,
+   "height": 80,
+   "color": "1"
+  },
+  {
+   "id": "tema:latex",
+   "type": "file",
+   "file": "memoria/temas/latex.md",
+   "x": 691,
+   "y": 511,
+   "width": 640,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:tikz",
+   "type": "file",
+   "file": "memoria/temas/tikz.md",
+   "x": -359,
+   "y": 2010,
+   "width": 404,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:pgfplots",
+   "type": "file",
+   "file": "memoria/temas/pgfplots.md",
+   "x": -1495,
+   "y": 1469,
+   "width": 372,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:lua",
+   "type": "file",
+   "file": "memoria/temas/lua.md",
+   "x": 1233,
+   "y": -296,
+   "width": 396,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:beamer",
+   "type": "file",
+   "file": "memoria/temas/beamer.md",
+   "x": -1873,
+   "y": 205,
+   "width": 356,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:general",
+   "type": "file",
+   "file": "memoria/temas/general.md",
+   "x": -1409,
+   "y": -2694,
+   "width": 380,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:datos",
+   "type": "file",
+   "file": "memoria/temas/datos.md",
+   "x": 1246,
+   "y": -3225,
+   "width": 364,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:overleaf",
+   "type": "file",
+   "file": "memoria/temas/overleaf.md",
+   "x": 4224,
+   "y": 1797,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  },
+  {
+   "id": "tema:revision",
+   "type": "file",
+   "file": "memoria/temas/revision.md",
+   "x": -3723,
+   "y": -2379,
+   "width": 348,
+   "height": 110,
+   "color": "5"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:latex",
+   "color": "6"
+  },
+  {
+   "id": "e1",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:lua",
+   "color": "6"
+  },
+  {
+   "id": "e2",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:tikz",
+   "color": "6"
+  },
+  {
+   "id": "e3",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:pgfplots",
+   "color": "6"
+  },
+  {
+   "id": "e4",
+   "fromNode": "proyecto:plantilla-sus",
+   "toNode": "tema:beamer",
+   "color": "6"
+  },
+  {
+   "id": "e5",
+   "fromNode": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e6",
+   "fromNode": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e7",
+   "fromNode": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e8",
+   "fromNode": "leccion:coma-decimal-en-formulas-paquete-icomma",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e9",
+   "fromNode": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e10",
+   "fromNode": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e11",
+   "fromNode": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e12",
+   "fromNode": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e13",
+   "fromNode": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e14",
+   "fromNode": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e15",
+   "fromNode": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e16",
+   "fromNode": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e17",
+   "fromNode": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e18",
+   "fromNode": "leccion:en-un-tex-los-comentarios-son-con-no-con",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e19",
+   "fromNode": "leccion:enquote-necesita-el-paquete-csquotes",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e20",
+   "fromNode": "leccion:enquote-necesita-el-paquete-csquotes",
+   "toNode": "tema:beamer",
+   "color": "1"
+  },
+  {
+   "id": "e21",
+   "fromNode": "leccion:enquote-necesita-el-paquete-csquotes",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e22",
+   "fromNode": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e23",
+   "fromNode": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e24",
+   "fromNode": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "toNode": "tema:datos",
+   "color": "1"
+  },
+  {
+   "id": "e25",
+   "fromNode": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e26",
+   "fromNode": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e27",
+   "fromNode": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e28",
+   "fromNode": "leccion:forzar-lualatex-con-latexmkrc",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e29",
+   "fromNode": "leccion:forzar-lualatex-con-latexmkrc",
+   "toNode": "tema:overleaf",
+   "color": "1"
+  },
+  {
+   "id": "e30",
+   "fromNode": "leccion:forzar-lualatex-con-latexmkrc",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e31",
+   "fromNode": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e32",
+   "fromNode": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "toNode": "tema:datos",
+   "color": "1"
+  },
+  {
+   "id": "e33",
+   "fromNode": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e34",
+   "fromNode": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e35",
+   "fromNode": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e36",
+   "fromNode": "leccion:no-meter-codigo-lua-dentro-de-directlua",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e37",
+   "fromNode": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e38",
+   "fromNode": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e39",
+   "fromNode": "leccion:no-meter-saltos-de-linea-n-dentro-de-tex-sprint",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e40",
+   "fromNode": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e41",
+   "fromNode": "leccion:nombres-de-archivo-normales-sin-espacios-y-con-extension",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e42",
+   "fromNode": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e43",
+   "fromNode": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e44",
+   "fromNode": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "toNode": "tema:pgfplots",
+   "color": "1"
+  },
+  {
+   "id": "e45",
+   "fromNode": "leccion:pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e46",
+   "fromNode": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e47",
+   "fromNode": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "toNode": "tema:tikz",
+   "color": "1"
+  },
+  {
+   "id": "e48",
+   "fromNode": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "toNode": "tema:pgfplots",
+   "color": "1"
+  },
+  {
+   "id": "e49",
+   "fromNode": "leccion:pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e50",
+   "fromNode": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "toNode": "tema:general",
+   "color": "1"
+  },
+  {
+   "id": "e51",
+   "fromNode": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "toNode": "tema:revision",
+   "color": "1"
+  },
+  {
+   "id": "e52",
+   "fromNode": "leccion:un-revisor-que-dice-verificado-sin-mostrar-la-operacion-no-p",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  },
+  {
+   "id": "e53",
+   "fromNode": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "toNode": "tema:latex",
+   "color": "1"
+  },
+  {
+   "id": "e54",
+   "fromNode": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "toNode": "tema:lua",
+   "color": "1"
+  },
+  {
+   "id": "e55",
+   "fromNode": "leccion:una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp",
+   "toNode": "proyecto:plantilla-sus",
+   "color": "1"
+  }
+ ]
+}

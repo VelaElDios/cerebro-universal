@@ -72,4 +72,77 @@ proyecto.dar_paso(proy, json.loads((proy / "proyecto.json").read_text()), proy /
 assert "Texto bueno." in (proy / "borrador" / "doc.tex").read_text(), "no se deshizo"
 bit = (proy / "bitacora.md").read_text()
 assert "paso deshecho" in bit, bit
+
+# 5. conocimiento: citas comprobadas, ampliar una nota, elegir qué mandar
+from cerebro import conocimiento, mapas, dataset, aprender
+raiz_real = nucleo.RAIZ
+nucleo.RAIZ = Path(tempfile.mkdtemp())
+(nucleo.RAIZ / "proyectos" / "demo").mkdir(parents=True)
+(nucleo.RAIZ / "proyectos" / "demo" / "proyecto.json").write_text(json.dumps({"estado": "en-construccion", "temas": ["latex"]}))
+fuente = "La portada oficial está en elements/portada.tex y se incluye con input."
+bloque = """tipo: receta
+titulo: Cómo se pone la portada oficial
+temas: latex, tfg
+claves: portada.tex
+fuente: memoria/reglas-tfg.md
+cita: La portada oficial está en elements/portada.tex
+contenido:
+Memoria.tex hace \\input{elements/portada}. No se añade ninguna otra portada.
+---
+tipo: dato
+titulo: Número de pruebas del Sprint 1
+temas: saas
+cita: esto no está en la fuente
+contenido:
+Hay 140 pruebas automáticas en la base SaaS."""
+g = conocimiento.guardar(bloque, "demo", verificacion=fuente)
+assert len(g) == 2, g
+notas = {n["nombre"]: n for n in conocimiento.todas()}
+assert notas["como-se-pone-la-portada-oficial"]["confianza"] == "verificado"
+assert notas["numero-de-pruebas-del-sprint-1"]["confianza"] == "propuesto"
+conocimiento.guardar("tipo: receta\ntitulo: Cómo se pone la portada oficial\ntemas: plantilla\ncontenido:\nY el preámbulo no lleva logos de una segunda portada.", "otro")
+n = {n["nombre"]: n for n in conocimiento.todas()}["como-se-pone-la-portada-oficial"]
+assert "otro" in n["proyectos"] and "plantilla" in n["temas"] and "Ampliación" in n["cuerpo"], n
+sel = conocimiento.seleccionar(["latex"], "hay que arreglar portada.tex", "demo")
+assert "portada oficial" in sel.lower(), sel
+assert conocimiento.guardar_estado(nucleo.RAIZ / "proyectos" / "demo", "## Qué es\n" + "x" * 100, ["latex"])
+
+# 6. mapas: hubs de temas, grafo y canvas válidos
+nodos, aristas = mapas.generar()
+assert any(n["id"] == "tema:latex" for n in nodos) and aristas
+canvas = json.loads((nucleo.RAIZ / "memoria" / "mapas" / "cerebro.canvas").read_text(encoding="utf-8"))
+ids = {c["id"] for c in canvas["nodes"]}
+assert all(e["fromNode"] in ids and e["toNode"] in ids for e in canvas["edges"])
+assert "como-se-pone-la-portada-oficial" in (nucleo.RAIZ / "memoria" / "temas" / "latex.md").read_text(encoding="utf-8")
+assert (nucleo.RAIZ / "memoria" / "CEREBRO.md").exists()
+
+# 7. datos de entrenamiento en local (sin repo privado)
+dataset._registros.clear()
+i = dataset.registrar("demo", "constructor", "constructor", "falsa", "m", "sis", "msg", "resp")
+dataset.resultado(i, prueba_ok=True)
+import os, gzip
+os.environ.pop("DATOS_TOKEN", None)
+assert "en local" in dataset.subir("demo")
+filas = list((nucleo.RAIZ / ".cerebro-datos" / "datos").rglob("*.jsonl.gz"))
+assert filas and json.loads(gzip.open(filas[0], "rt").readline())["resultado"]["prueba_ok"] is True
+assert (nucleo.RAIZ / ".cerebro-datos" / "export" / "conocimiento.jsonl").read_text(encoding="utf-8").count("\n") >= 2
+
+# 8. aprender: trocea un documento y guarda lo que saca la IA (falsa), con la cita comprobada
+assert len(aprender.trocear("a" * 30000 + "\n\n" + "b" * 100, 14000)) == 3
+apr = nucleo.RAIZ / "proyectos" / "aprendizaje"
+apr.mkdir(parents=True)
+(apr / "doc.md").write_text("# Scrum\n\nUn sprint dura como mucho un mes y acaba con una revisión.\n", encoding="utf-8")
+cfg_apr = {"tipo": "aprender", "estado": "en-construccion", "aprender_de": [{"entrada": "doc.md", "temas": ["scrum"]}]}
+(apr / "proyecto.json").write_text(json.dumps(cfg_apr))
+prov.pedir_rol = lambda rol, *a, **k: ("<<<RESUMEN>>>\nScrum\n<<<CONOCIMIENTO>>>\ntipo: concepto\ntitulo: Duración de un sprint\n"
+                                       "cita: Un sprint dura como mucho un mes\ncontenido:\nUn sprint dura un mes como máximo.", "falsa", "m")
+prov.cargar = lambda ruta: ({"roles": {"revisor": ["x"]}}, {})
+prov.fijar_limite(30 * 60)
+aprender.ejecutar(apr, cfg_apr, apr / "proyecto.json", apr / "bitacora.md")
+nota = {n["nombre"]: n for n in conocimiento.todas()}["duracion-de-un-sprint"]
+assert nota["confianza"] == "verificado" and "scrum" in nota["temas"], nota
+assert json.loads((apr / "procesados.json").read_text())["doc.md"]["hechos"] == 1
+assert any(n["tipo"] == "fuente" for n in conocimiento.todas())
+assert "Nada nuevo" in aprender.ejecutar(apr, cfg_apr, apr / "proyecto.json", apr / "bitacora.md")
+nucleo.RAIZ = raiz_real
 print("TODO OK")

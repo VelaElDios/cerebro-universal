@@ -1,5 +1,16 @@
+---
+tipo: "tema"
+titulo: "sequencediagram"
+notas: 1
+---
 # sequencediagram
 
-Lecciones sobre sequencediagram (este archivo se genera solo).
+Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este archivo se genera solo).
 
-- [[pgf-umlsd-y-comandos-fragiles-en-sequencediagram|pgf-umlsd y comandos frágiles en sequencediagram]] · ⚠️ propuesta
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/pgf-umlsd-y-comandos-fragiles-en-sequencediagram|pgf-umlsd y comandos frágiles en sequencediagram]] · ⚠️ propuesto
+
+## Temas relacionados
+
+[[latex]] · [[pgf-umlsd]]

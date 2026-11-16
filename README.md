@@ -17,14 +17,32 @@ En cada ejecución del workflow (`.github/workflows/proyecto.yml`):
 3. Las IAs reciben las **lecciones de `memoria/`** que encajan con el proyecto y con el error del
    momento. Si en un paso se arregla un fallo, el revisor puede proponer una lección nueva.
 
+## La memoria compartida (para las IAs)
+
+El vault es la memoria de todas las IAs: dé igual cuál esté conectada, lee lo que aprendieron las anteriores
+y lo usa igual. Puerta de entrada: [`memoria/CEREBRO.md`](memoria/CEREBRO.md).
+
+- **Ficha de cada proyecto** (`proyectos/<nombre>/estado.md`): qué es, decisiones y convenciones, estado y
+  siguiente. La reescribe el revisor en cada paso y es lo primero que lee la siguiente IA.
+- **Conocimiento** (`memoria/conocimiento/`): conceptos, recetas (cómo lo hacemos), decisiones (y por qué),
+  datos y documentos aprendidos, con cabecera para máquinas y una cita literal comprobada
+  (`confianza: "verificado"`). Lo escriben el revisor (bloque `<<<CONOCIMIENTO>>>`) y el proyecto
+  `aprendizaje`, que lee la documentación de los proyectos y los temarios del repo privado `cerebro-datos`.
+- **Lecciones** (`memoria/lecciones/`): errores ya resueltos.
+- **Mapas** (`memoria/temas/` como nodos centrales, `memoria/mapas/cerebro.canvas` como mapa visual y
+  `memoria/mapas/grafo.json` para máquinas): se regeneran en cada paso.
+- **Datos para entrenar una IA local** (`scripts/cerebro/dataset.py`): cada llamada a una IA y qué pasó
+  con ella, comprimido en el repo privado `cerebro-datos` (secrets `DATOS_TOKEN` y `DATOS_REPO`), junto
+  con `export/conocimiento.jsonl`.
+
 ## Carpetas
 
 ```
 config/ias.json         qué IAs hay y cuál hace cada rol (constructor, revisor)
 config/entornos.json    qué se instala para cada "necesita" (latex, python-tests...)
 scripts/                orquestador y piezas comunes (scripts/cerebro/)
-memoria/                lecciones aprendidas (ver memoria/indice.md); en el grafo de Obsidian
-                        se ven enlazadas con sus temas y proyectos
+memoria/                CEREBRO.md (entrada), conocimiento/, lecciones/, temas/ (nodos del mapa),
+                        mapas/ (canvas y grafo.json) e indice.md
 proyectos/<nombre>/     spec.md, proyecto.json, bitacora.md, tests, borrador/ y final/
 proyectos/_plantilla/   punto de partida para un proyecto nuevo (nunca se ejecuta)
 ```

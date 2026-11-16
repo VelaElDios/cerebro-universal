@@ -1,5 +1,20 @@
+---
+tipo: "tema"
+titulo: "beamer"
+notas: 2
+---
 # beamer
 
-Lecciones sobre beamer (este archivo se genera solo).
+Nodo del mapa del Cerebro con todo lo que se sabe de «beamer» (este archivo se genera solo).
 
-- [[enquote-necesita-el-paquete-csquotes|\enquote necesita el paquete csquotes]]
+## Proyectos
+
+- 📁 [[proyectos/plantilla-sus/estado|plantilla-sus]]
+
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/enquote-necesita-el-paquete-csquotes|\enquote necesita el paquete csquotes]]
+
+## Temas relacionados
+
+[[latex]] · [[lua]] · [[tikz]] · [[pgfplots]]

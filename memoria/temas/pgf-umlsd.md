@@ -1,7 +1,22 @@
+---
+tipo: "tema"
+titulo: "pgf-umlsd"
+notas: 4
+---
 # pgf-umlsd
 
-Lecciones sobre pgf-umlsd (este archivo se genera solo).
+Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo se genera solo).
 
-- [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesta
-- [[pgf-umlsd-y-comandos-fragiles-en-sequencediagram|pgf-umlsd y comandos frágiles en sequencediagram]] · ⚠️ propuesta
-- [[rutas-largas-en-texttt-causan-overfull-hbox|Rutas largas en \texttt{} causan overfull hbox]] · ⚠️ propuesta
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
+
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/pgf-umlsd-y-comandos-fragiles-en-sequencediagram|pgf-umlsd y comandos frágiles en sequencediagram]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/rutas-largas-en-texttt-causan-overfull-hbox|Rutas largas en \texttt{} causan overfull hbox]] · ⚠️ propuesto
+
+## Temas relacionados
+
+[[latex]] · [[secuencia]] · [[sequencediagram]] · [[tikz]]
