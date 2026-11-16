@@ -596,168 +596,174 @@ Esta sección describe el uso de la aplicación SaaS (cuentas, administración, 
 
 \subsection{Inicio y registro}
 
-La figura~\ref{fig:app-inicio} muestra la página de inicio sin sesión: botones para crear cuenta o entrar.
+Al acceder a la aplicación sin sesión iniciada, el usuario encuentra la página de inicio (Figura~\ref{fig:app-inicio-registro}a), que presenta dos accesos directos: «Crear cuenta para jugar» y «Ya tengo cuenta», junto con una breve explicación de cómo se juega y el estado del servidor. Si elige registrarse, el formulario valida el email y la contraseña en cliente (mínimo 8 caracteres) y muestra los errores en línea asociados a cada campo mediante \texttt{aria-describedby} (Figura~\ref{fig:app-inicio-registro}b). Al enviar el formulario, el servidor comprueba que el email no esté ya registrado entre las cuentas activas; si lo está, devuelve un 409 y la interfaz muestra el error sin recargar la página. Si el registro es correcto, la cuenta queda en estado \texttt{pending} y se envía el correo de confirmación; la interfaz muestra el aviso «Te hemos enviado un correo de confirmación» y lleva al usuario a la pantalla de entrar.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/01-inicio.png}
-\caption{Página de inicio sin sesión: botones para crear cuenta o entrar.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/01-inicio.png}
+\subcaption{Página de inicio sin sesión.}
 \label{fig:app-inicio}
-\end{figure}
-
-La figura~\ref{fig:app-registro} muestra el registro con email y contraseña no válidos: campos en rojo y errores explicados.
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/02-registro-validacion.png}
-\caption{Registro con email y contraseña no válidos: campos en rojo y errores explicados.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/02-registro-validacion.png}
+\subcaption{Validación en cliente: email y contraseña con errores.}
 \label{fig:app-registro}
+\end{subfigure}
+\caption{Inicio y registro: página pública y validación del formulario.}
+\label{fig:app-inicio-registro}
 \end{figure}
 
-La figura~\ref{fig:app-entrar} muestra el inicio de sesión con contraseña incorrecta: «Email o contraseña incorrectos».
+En la pantalla de entrar (Figura~\ref{fig:app-entrar}), el mensaje de error es idéntico tanto si el email no existe como si la contraseña es incorrecta («Email o contraseña incorrectos»), evitando así la enumeración de cuentas. Si la cuenta está pendiente de confirmación, el servidor responde 403 \texttt{ACCOUNT\_PENDING} y la vista muestra el botón «Reenviar el correo de confirmación», que vuelve a enviar el enlace sin revelar si la cuenta existe (respuesta 202 en ambos casos).
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/03-entrar-error.png}
-\caption{Inicio de sesión con contraseña incorrecta: «Email o contraseña incorrectos».}
+\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/03-entrar-error.png}
+\caption{Inicio de sesión con credenciales incorrectas: mensaje único para no revelar cuentas.}
 \label{fig:app-entrar}
 \end{figure}
 
 \subsection{Perfil y administración}
 
-La figura~\ref{fig:app-perfil} muestra la pantalla Mi cuenta: mote, avatar, email, rol, estado, fecha de alta, cerrar sesión y darse de baja.
+Una vez dentro, el usuario accede a «Mi cuenta» (Figura~\ref{fig:app-perfil-baja}a), donde ve su mote, avatar, email, rol (\texttt{Aficionado} o \texttt{Administrador}), estado (\texttt{Activa}), fecha de alta y dos acciones: cerrar sesión y darse de baja. La baja requiere confirmación en un diálogo accesible (\texttt{<dialog>}) que devuelve el foco al botón de origen al cancelar (Figura~\ref{fig:app-perfil-baja}b); al confirmar, el servidor marca la cuenta como \texttt{deleted}, suelta el mote y el email (índice único parcial) e invalida la sesión, de modo que la siguiente petición la rechaza con 401.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.35\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/04-perfil.png}
-\caption{Mi cuenta: mote, avatar, email, rol, estado, fecha de alta, cerrar sesión y darse de baja.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/04-perfil.png}
+\subcaption{Pantalla Mi cuenta.}
 \label{fig:app-perfil}
-\end{figure}
-
-La figura~\ref{fig:app-baja} muestra el diálogo de confirmación antes de darse de baja.
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.35\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/05-confirmar-baja.png}
-\caption{Diálogo de confirmación antes de darse de baja.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/05-confirmar-baja.png}
+\subcaption{Diálogo de confirmación antes de la baja.}
 \label{fig:app-baja}
+\end{subfigure}
+\caption{Perfil del usuario y baja de cuenta.}
+\label{fig:app-perfil-baja}
 \end{figure}
 
-En la figura~\ref{fig:app-sin-permiso}, un usuario normal intenta abrir \#/admin y vuelve a Mi cuenta con el aviso de que la página es solo para administradores.
+Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la interfaz lo redirige a Mi cuenta con un aviso, pero la protección real está en el servidor: la API responde 403 \texttt{FORBIDDEN} (Figura~\ref{fig:app-sin-permiso}). El panel de administración (Figura~\ref{fig:app-admin-busqueda}a) muestra contadores totales, un buscador por email y una tabla con email, rol, estado, fecha de alta y acciones (cambiar rol, ver si está activo, eliminar). La búsqueda filtra en cliente y muestra estado vacío con botón «Limpiar búsqueda» si no hay coincidencias (Figura~\ref{fig:app-admin-busqueda}b). En móvil, la tabla se convierte en tarjetas (Figura~\ref{fig:app-responsive}a) y el menú se pliega (Figura~\ref{fig:app-responsive}b). Las rutas inexistentes muestran la página «Fuera de juego» (Figura~\ref{fig:app-404}).
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/06-usuario-sin-permiso.png}
-\caption{Un usuario normal intenta abrir \#/admin y vuelve a Mi cuenta con el aviso de que la página es solo para administradores.}
+\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/06-usuario-sin-permiso.png}
+\caption{Usuario sin permisos intenta acceder a administración: redirección y aviso.}
 \label{fig:app-sin-permiso}
 \end{figure}
 
-La figura~\ref{fig:app-admin} muestra el panel de administración: contadores, buscador y tabla con email, rol, estado, alta y acciones.
-
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/07-panel-admin.png}
-\caption{Panel de administración: contadores, buscador y tabla con email, rol, estado, alta y acciones.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/07-panel-admin.png}
+\subcaption{Panel de administración: tabla y buscador.}
 \label{fig:app-admin}
-\end{figure}
-
-La figura~\ref{fig:app-admin-busqueda} muestra el panel de administración filtrado por email.
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/08-admin-busqueda.png}
-\caption{Panel de administración filtrado por email.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/08-admin-busqueda.png}
+\subcaption{Búsqueda filtrada por email.}
+\label{fig:app-admin-busqueda}
+\end{subfigure}
+\caption{Panel de administración: vista completa y búsqueda.}
 \label{fig:app-admin-busqueda}
 \end{figure}
 
-La figura~\ref{fig:app-admin-movil} muestra el panel de administración en un móvil: cada usuario es una tarjeta.
-
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.35\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/11-panel-admin-movil.png}
-\caption{Panel de administración en un móvil: cada usuario es una tarjeta.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/11-panel-admin-movil.png}
+\subcaption{Panel en móvil: tarjetas.}
 \label{fig:app-admin-movil}
-\end{figure}
-
-La figura~\ref{fig:app-perfil-movil} muestra la pantalla Mi cuenta en un móvil con el menú plegado.
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.35\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/12-perfil-movil.png}
-\caption{Mi cuenta en un móvil con el menú plegado.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/12-perfil-movil.png}
+\subcaption{Mi cuenta en móvil: menú plegado.}
 \label{fig:app-perfil-movil}
+\end{subfigure}
+\caption{Vistas responsive: administración y perfil en móvil.}
+\label{fig:app-responsive}
 \end{figure}
-
-La figura~\ref{fig:app-404} muestra la ruta inexistente: «Fuera de juego».
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/app/13-pagina-no-encontrada.png}
-\caption{Ruta inexistente: «Fuera de juego».}
+\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/13-pagina-no-encontrada.png}
+\caption{Ruta inexistente: página «Fuera de juego».}
 \label{fig:app-404}
 \end{figure}
 
 \subsection{Hito 4: correo y Google}
 
-La figura~\ref{fig:hito4-google} muestra la pantalla de entrar con el botón Entrar con Google.
+El Hito 4 añade la confirmación por correo y el inicio de sesión con Google. En la pantalla de entrar aparece el botón «Entrar con Google» (Figura~\ref{fig:hito4-flujo}a), que inicia el flujo OAuth 2.0 con \texttt{state} anti-CSRF guardado en la sesión. Al registrarse con email y contraseña, la cuenta queda \texttt{pending} y se muestra el aviso «Te hemos enviado un correo de confirmación» (Figura~\ref{fig:hito4-flujo}b). Si el usuario intenta entrar antes de confirmar, recibe el error «Debes confirmar tu correo» con el botón «Reenviar el correo de confirmación» (Figura~\ref{fig:hito4-flujo}c); el reenvío responde 202 sin revelar si la cuenta existe. Un enlace manipulado o caducado muestra un aviso rojo y la cuenta sigue pendiente (Figura~\ref{fig:hito4-flujo}d); un enlace válido activa la cuenta y redirige a entrar con aviso verde «Cuenta confirmada, ya puedes entrar» (Figura~\ref{fig:hito4-flujo}e). Si el usuario entra con Google y el email no existía, se crea la cuenta ya activa con \texttt{authProvider: google} y aparece el aviso «Cuenta creada con tu cuenta de Google» (Figura~\ref{fig:hito4-flujo}f). El panel de administración muestra todos los estados: activas, pendientes, eliminadas, locales y de Google (Figura~\ref{fig:hito4-admin-estados}). La política de privacidad es accesible desde el pie de página (Figura~\ref{fig:hito4-privacidad}).
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/hito4/01-entrar-google.png}
-\caption{Pantalla de entrar con el botón Entrar con Google.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/01-entrar-google.png}
+\subcaption{Botón Entrar con Google.}
 \label{fig:hito4-google}
-\end{figure}
-
-La figura~\ref{fig:hito4-correo} muestra el aviso: cuenta creada y correo de confirmación enviado.
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/hito4/02-registro-correo-enviado.png}
-\caption{Aviso: cuenta creada y correo de confirmación enviado.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/02-registro-correo-enviado.png}
+\subcaption{Aviso de correo enviado tras registro.}
 \label{fig:hito4-correo}
-\end{figure}
-
-La figura~\ref{fig:hito4-pendiente} muestra el error «Debes confirmar tu correo» con el botón Reenviar el correo de confirmación.
-
-\begin{figure}[htbp]
+\end{subfigure}
+\\
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/hito4/03-cuenta-pendiente-reenvio.png}
-\caption{Error «Debes confirmar tu correo» con el botón Reenviar el correo de confirmación.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/03-cuenta-pendiente-reenvio.png}
+\subcaption{Error cuenta pendiente con botón de reenvío.}
 \label{fig:hito4-pendiente}
-\end{figure}
-
-La figura~\ref{fig:hito4-confirmada} muestra el aviso verde: cuenta confirmada, ya puedes entrar.
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/hito4/06-cuenta-confirmada.png}
-\caption{Aviso verde: cuenta confirmada, ya puedes entrar.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/05-enlace-invalido.png}
+\subcaption{Enlace manipulado o caducado.}
+\label{fig:hito4-enlace-invalido}
+\end{subfigure}
+\\
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/06-cuenta-confirmada.png}
+\subcaption{Cuenta confirmada: aviso verde.}
 \label{fig:hito4-confirmada}
-\end{figure}
-
-La figura~\ref{fig:hito4-google-creada} muestra la pantalla Mi cuenta de una cuenta nueva de Google con el aviso «Cuenta creada con tu cuenta de Google».
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/hito4/08-google-cuenta-creada.png}
-\caption{Mi cuenta de una cuenta nueva de Google con el aviso «Cuenta creada con tu cuenta de Google».}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/08-google-cuenta-creada.png}
+\subcaption{Cuenta creada vía Google.}
 \label{fig:hito4-google-creada}
+\end{subfigure}
+\caption{Flujo Hito 4: Google OAuth, confirmación por correo y reenvío.}
+\label{fig:hito4-flujo}
 \end{figure}
-
-La figura~\ref{fig:hito4-admin-estados} muestra el panel de administración con todos los estados de cuenta.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
+\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
 \caption{Panel de administración con todos los estados de cuenta.}
 \label{fig:hito4-admin-estados}
 \end{figure}
 
-La figura~\ref{fig:hito4-privacidad} muestra la página de política de privacidad.
-
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
+\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
 \caption{Página de política de privacidad.}
 \label{fig:hito4-privacidad}
 \end{figure}

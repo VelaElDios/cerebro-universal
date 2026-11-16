@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "donetonic"
-notas: 43
+notas: 44
 ---
 # donetonic
 
@@ -32,6 +32,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2|Burndown real vs. burndown de DoneTonic en Sprint 2]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza|Cinco ambientes con cambio de luz, afición y fuerza]]
 - 💡 [[memoria/conocimiento/conceptos/convencion-de-mensajes-de-commit-en-espanol-con-identificado|Convención de mensajes de commit en español con identificador de tarea]]
 - 💡 [[memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2|Convención de ramas y PRs por sprint (Sprint 1 vs Sprint 2)]]
@@ -67,4 +68,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[scrum]] · [[saas]] · [[sprint]] · [[git]] · [[github-flow]] · [[backend]] · [[diseno-juego]] · [[api]] · [[base-datos]] · [[seguridad]] · [[graficos]]
+[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[github-flow]] · [[backend]] · [[diseno-juego]] · [[api]] · [[base-datos]] · [[seguridad]] · [[graficos]]

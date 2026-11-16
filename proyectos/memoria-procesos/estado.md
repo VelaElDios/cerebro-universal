@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-16 18:57"
+actualizado: "2026-11-16 19:43"
 ---
 
 # memoria-procesos
@@ -22,16 +22,15 @@ Memoria de la asignatura Procesos de Ingeniería del Software (curso 2026-2027) 
 
 ## Estado
 Versión 4 de la spec (16/11/2026): la memoria compila y `verificar.py` pasa, pero `revisar_maquetacion.py` falla por:
-- Regla 10: 1 imagen repetida (`01-tablero-sprint.png` en chapters/03-propuesta.tex y chapters/a1-desarrollo.tex) — **en corrección con el CAMBIAR de arriba**.
-- Regla 8: 5 páginas con una sola imagen (páginas 42, 43, 44, 48, 95) — para Paso 6.
-- Regla 9: página 101 casi vacía (6 palabras) — para Paso 6.
+- Regla 8: 4 páginas con una sola imagen (páginas 42, 43, 44, 48) — **en corrección: Paso 3 reescribe manuales con subfigure (hecho parcial en 04-descripcion.tex), Paso 4 hará lo mismo en 04b-juego.tex**.
+- Regla 9: página 100 casi vacía (8 palabras) — para Paso 6.
+- Regla 10: **resuelto** (duplicado tablero Sprint 1 eliminado del anexo, referencia a canónica).
+- Regla 12: **en corrección** (frases «La figura X muestra…» eliminadas en 04-descripcion.tex; queda 04b-juego.tex).
 
 ## Siguiente
-1. Aplicar el CAMBIAR en `a1-desarrollo.tex` para eliminar el duplicado del tablero del Sprint 1 y referenciar la figura canónica del capítulo 3.
-2. Paso 3: Reescribir la sección «La aplicación: manual de usuario (SaaS)» en `chapters/04-descripcion.tex` como prosa explicativa con `subfigure` (dos por fila), eliminando las frases sueltas «La figura X muestra…».
-3. Paso 4: Lo mismo en `chapters/04b-juego.tex` para el manual del juego.
-4. Paso 5: Repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones de 1–2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
-5. Paso 6: Corregir páginas con una sola imagen (Regla 8) y página casi vacía (Regla 9).
-6. Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
+1. Paso 4: reescribir el manual del juego en `chapters/04b-juego.tex` como prosa con `subfigure` (dos por fila, `height=0.42\textheight`), eliminando frases sueltas.
+2. Paso 5: repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones cortas, eliminar repeticiones, mejorar estilo.
+3. Paso 6: corregir páginas sueltas (Regla 8) y página casi vacía (Regla 9).
+4. Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

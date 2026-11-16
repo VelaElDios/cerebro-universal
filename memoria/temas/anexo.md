@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "anexo"
-notas: 1
+notas: 2
 ---
 # anexo
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «anexo» (este archivo se 
 
 - 🧪 [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg|Contenido de los anexos por sprint en la memoria TFG]]
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra|Trazabilidad completa requisito → PBI → tarea → PR en anexo a4-trazabilidad.tex]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[anexos]] · [[memoria]] · [[scrum]] · [[tfg]] · [[memoria-procesos]] · [[sprint]]
+[[longtable]] · [[trazabilidad]] · [[anexos]] · [[memoria]] · [[scrum]] · [[tfg]] · [[memoria-procesos]] · [[sprint]]

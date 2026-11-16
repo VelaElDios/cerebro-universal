@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16T18:57:36+01:00",
+ "generado": "2026-11-16T19:43:36+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -594,6 +594,21 @@
    "ruta": "memoria/conocimiento/conceptos/audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru.md"
   },
   {
+   "id": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "tipo": "concepto",
+   "titulo": "Burndown real vs. burndown de DoneTonic en Sprint 2",
+   "temas": [
+    "donetonic",
+    "metricas",
+    "scrum"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2.md"
+  },
+  {
    "id": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
    "tipo": "concepto",
    "titulo": "Cadena de middlewares para petición protegida y autorización por roles (requireAuth, requireRole)",
@@ -1123,6 +1138,21 @@
    "ruta": "memoria/conocimiento/conceptos/sistema-de-rarezas-y-36-jugadores-pbi-p38.md"
   },
   {
+   "id": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "tipo": "concepto",
+   "titulo": "Trazabilidad completa requisito → PBI → tarea → PR en anexo a4-trazabilidad.tex",
+   "temas": [
+    "anexo",
+    "longtable",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra.md"
+  },
+  {
    "id": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
    "tipo": "dato",
    "titulo": "Arreglos críticos en Sprint 2 (PRs #51, #55, #56)",
@@ -1543,6 +1573,21 @@
    "ruta": "memoria/conocimiento/datos/migracion-004-y-endpoint-put-api-juego-identidad-para-mote-y.md"
   },
   {
+   "id": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "tipo": "dato",
+   "titulo": "Números clave del proyecto contrastados con fuentes",
+   "temas": [
+    "metricas",
+    "trazabilidad",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes.md"
+  },
+  {
    "id": "dato:prs-de-cierre-de-hito-y-sprint-en-repositorio",
    "tipo": "dato",
    "titulo": "PRs de cierre de hito y sprint en repositorio",
@@ -1948,6 +1993,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre.md"
+  },
+  {
+   "id": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
+   "tipo": "decision",
+   "titulo": "Cambio de enfoque de red social a juego justificado en la introducción",
+   "temas": [
+    "alcance",
+    "decision",
+    "memoria"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in.md"
   },
   {
    "id": "decision:comportamiento-de-cuentas-segun-metodo-de-registro-y-estado",
@@ -2571,6 +2631,21 @@
    "ruta": "memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito.md"
   },
   {
+   "id": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "tipo": "receta",
+   "titulo": "Cómo agrupar capturas con subfigure en LaTeX para manuales de usuario",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
+  },
+  {
    "id": "receta:como-agrupar-capturas-con-subfigure-en-latex",
    "tipo": "receta",
    "titulo": "Cómo agrupar capturas con subfigure en LaTeX",
@@ -2923,6 +2998,21 @@
    "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md"
   },
   {
+   "id": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
+   "tipo": "receta",
+   "titulo": "Escribir diagramas de secuencia con pgf-umlsd (sequencediagram)",
+   "temas": [
+    "diagramas",
+    "latex",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra.md"
+  },
+  {
    "id": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
    "tipo": "receta",
    "titulo": "Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)",
@@ -2979,7 +3069,8 @@
    "temas": [
     "latex",
     "maquetación",
-    "reglas-tfg"
+    "reglas-tfg",
+    "maquetacion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3417,6 +3508,22 @@
    "ruta": "memoria/conocimiento/recetas/renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel.md"
   },
   {
+   "id": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
+   "tipo": "receta",
+   "titulo": "Resumen y Abstract en elements/preambulo.tex con formato oficial",
+   "temas": [
+    "abstract",
+    "latex",
+    "preambulo",
+    "resumen"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi.md"
+  },
+  {
    "id": "receta:simulacion-de-paso-fijo-con-semilla-mundo-js",
    "tipo": "receta",
    "titulo": "Simulación de paso fijo con semilla (mundo.js)",
@@ -3525,14 +3632,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 65,
+   "peso": 68,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 26,
+   "peso": 27,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -3623,21 +3730,21 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 3,
+   "peso": 5,
    "ruta": "memoria/temas/metricas.md"
   },
   {
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -3679,7 +3786,7 @@
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -3802,6 +3909,20 @@
    "ruta": "memoria/temas/audio.md"
   },
   {
+   "id": "tema:donetonic",
+   "tipo": "tema",
+   "titulo": "donetonic",
+   "peso": 44,
+   "ruta": "memoria/temas/donetonic.md"
+  },
+  {
+   "id": "tema:scrum",
+   "tipo": "tema",
+   "titulo": "scrum",
+   "peso": 49,
+   "ruta": "memoria/temas/scrum.md"
+  },
+  {
    "id": "tema:auth",
    "tipo": "tema",
    "titulo": "auth",
@@ -3842,20 +3963,6 @@
    "titulo": "plantilla",
    "peso": 4,
    "ruta": "memoria/temas/plantilla.md"
-  },
-  {
-   "id": "tema:donetonic",
-   "tipo": "tema",
-   "titulo": "donetonic",
-   "peso": 43,
-   "ruta": "memoria/temas/donetonic.md"
-  },
-  {
-   "id": "tema:scrum",
-   "tipo": "tema",
-   "titulo": "scrum",
-   "peso": 48,
-   "ruta": "memoria/temas/scrum.md"
   },
   {
    "id": "tema:cerebro",
@@ -3917,7 +4024,7 @@
    "id": "tema:alcance",
    "tipo": "tema",
    "titulo": "alcance",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/alcance.md"
   },
   {
@@ -4103,6 +4210,20 @@
    "ruta": "memoria/temas/rareza.md"
   },
   {
+   "id": "tema:anexo",
+   "tipo": "tema",
+   "titulo": "anexo",
+   "peso": 2,
+   "ruta": "memoria/temas/anexo.md"
+  },
+  {
+   "id": "tema:trazabilidad",
+   "tipo": "tema",
+   "titulo": "trazabilidad",
+   "peso": 6,
+   "ruta": "memoria/temas/trazabilidad.md"
+  },
+  {
    "id": "tema:proyectos",
    "tipo": "tema",
    "titulo": "proyectos",
@@ -4171,13 +4292,6 @@
    "titulo": "done",
    "peso": 2,
    "ruta": "memoria/temas/done.md"
-  },
-  {
-   "id": "tema:trazabilidad",
-   "tipo": "tema",
-   "titulo": "trazabilidad",
-   "peso": 4,
-   "ruta": "memoria/temas/trazabilidad.md"
   },
   {
    "id": "tema:memoria-procesos",
@@ -4281,7 +4395,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 3,
+   "peso": 5,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -4316,7 +4430,7 @@
    "id": "tema:decision",
    "tipo": "tema",
    "titulo": "decision",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/decision.md"
   },
   {
@@ -4547,7 +4661,7 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
@@ -4579,13 +4693,6 @@
    "ruta": "memoria/temas/formula.md"
   },
   {
-   "id": "tema:anexo",
-   "tipo": "tema",
-   "titulo": "anexo",
-   "peso": 1,
-   "ruta": "memoria/temas/anexo.md"
-  },
-  {
    "id": "tema:concurrencia-optimista",
    "tipo": "tema",
    "titulo": "concurrencia-optimista",
@@ -4612,6 +4719,13 @@
    "titulo": "bootstrap",
    "peso": 1,
    "ruta": "memoria/temas/bootstrap.md"
+  },
+  {
+   "id": "tema:diagramas",
+   "tipo": "tema",
+   "titulo": "diagramas",
+   "peso": 1,
+   "ruta": "memoria/temas/diagramas.md"
   },
   {
    "id": "tema:esiiab",
@@ -4773,6 +4887,27 @@
    "titulo": "graphics",
    "peso": 1,
    "ruta": "memoria/temas/graphics.md"
+  },
+  {
+   "id": "tema:abstract",
+   "tipo": "tema",
+   "titulo": "abstract",
+   "peso": 1,
+   "ruta": "memoria/temas/abstract.md"
+  },
+  {
+   "id": "tema:preambulo",
+   "tipo": "tema",
+   "titulo": "preambulo",
+   "peso": 1,
+   "ruta": "memoria/temas/preambulo.md"
+  },
+  {
+   "id": "tema:resumen",
+   "tipo": "tema",
+   "titulo": "resumen",
+   "peso": 1,
+   "ruta": "memoria/temas/resumen.md"
   },
   {
    "id": "tema:compilacion",
@@ -5561,6 +5696,31 @@
    "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
@@ -6578,6 +6738,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "tema:anexo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -7518,6 +7703,36 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "dato:metricas-comparativas-sprint-1-vs-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:prs-de-cierre-de-hito-y-sprint-en-repositorio",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -8345,6 +8560,31 @@
   {
    "de": "decision:cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre",
    "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
+   "a": "tema:alcance",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
+   "a": "tema:decision",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
+   "a": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
    "tipo": "enlaza"
   },
   {
@@ -10183,6 +10423,36 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
    "a": "tema:latex",
    "tipo": "trata"
@@ -10863,6 +11133,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
    "a": "tema:latex",
    "tipo": "trata"
@@ -10985,6 +11275,11 @@
   {
    "de": "receta:evitar-paginas-casi-vacias-regla-9",
    "a": "tema:reglas-tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:evitar-paginas-casi-vacias-regla-9",
+   "a": "tema:maquetacion",
    "tipo": "trata"
   },
   {
@@ -11859,6 +12154,31 @@
   },
   {
    "de": "receta:renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
+   "a": "tema:abstract",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
+   "a": "tema:preambulo",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
+   "a": "tema:resumen",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },

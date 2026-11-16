@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetación» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[reglas-tfg]] · [[maquetacion]]
+[[latex]] · [[maquetacion]] · [[reglas-tfg]]

@@ -30,4 +30,7 @@ En los demás capítulos, usar `\ref{fig:...}` en lugar de `\includegraphics`.
 ## Ampliación (2026-11-16, memoria-procesos)
 Regla 10 de Javier: ninguna imagen se repite en el PDF. Se elige un capítulo canónico donde la imagen tiene más sentido (donde se explica por primera vez). En los demás capítulos se sustituye la inclusión de la imagen por una referencia cruzada (`\ref{fig:...}`) y, si es necesario, una breve mención («como se muestra en la Figura~\ref{fig:...}»). Esto evita duplicados y mantiene el PDF ligero.
 
+## Ampliación (2026-11-16, memoria-procesos)
+La Regla 10 de Javier prohíbe imágenes repetidas. La solución: elegir un capítulo canónico para cada captura (donde más sentido tiene) y en los demás capítulos/referencias usar `\ref{fig:etiqueta-canónica}`. En este proyecto: tablero Sprint 1 → Capítulo 3 (03-propuesta.tex, label fig:donetonic-tablero); tablero Sprint 2 → Anexo Desarrollo (a1-desarrollo.tex, label fig:donetonic-s2-tablero); backlog → Anexo Desarrollo (label fig:donetonic-backlog); gráficas Sprint 1 → Anexo Desarrollo (label fig:donetonic-graficas-s1); gráficas Sprint 2 → Anexo Desarrollo (label fig:donetonic-s2-graficas). El anexo Material (a2-material.tex) solo lista las figuras con \ref, no las incluye.
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

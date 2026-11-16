@@ -1,7 +1,7 @@
 ---
 tipo: "receta"
 titulo: "Evitar páginas casi vacías (Regla 9)"
-temas: ["latex", "maquetación", "reglas-tfg"]
+temas: ["latex", "maquetación", "reglas-tfg", "maquetacion"]
 claves: ["Regla 9", "página casi vacía", "sección corta"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
@@ -18,5 +18,8 @@ Si una sección (o subsección) ocupa solo una o dos líneas al final de una pá
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
 Relacionado: [[corregir-paginas-con-una-sola-imagen-regla-8]]
+
+## Ampliación (2026-11-16, memoria-procesos)
+Si una sección (subsubsection, subsection) tiene solo 1–2 líneas de texto, no merece ser sección independiente. Opciones: (1) fusionar con la sección anterior añadiendo su contenido como párrafo; (2) convertir en un ítem de una lista enumerada o con viñetas; (3) si es un anexo con solo una tabla/figura, moverla al capítulo principal y dejar el anexo solo con la referencia. En la memoria: la página 100 (8 palabras) probablemente es una subsección de una línea en conclusiones o anexos; se fusionará en Paso 6.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

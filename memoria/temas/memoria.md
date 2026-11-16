@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria"
-notas: 26
+notas: 27
 ---
 # memoria
 
@@ -30,6 +30,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in|Cambio de enfoque de red social a juego justificado en la introducción]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow|Flechas reales en captions y texto ($\rightarrow$)]]
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
 
@@ -56,4 +57,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[plantilla]] · [[grada-colchonera]] · [[scrum]] · [[figuras]] · [[anexos]] · [[saas]] · [[sprint]] · [[tablas]] · [[tikz]] · [[pgfplots]]
+[[tfg]] · [[latex]] · [[plantilla]] · [[grada-colchonera]] · [[scrum]] · [[figuras]] · [[anexos]] · [[saas]] · [[alcance]] · [[sprint]] · [[tablas]] · [[tikz]]

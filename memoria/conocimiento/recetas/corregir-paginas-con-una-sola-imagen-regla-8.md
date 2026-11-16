@@ -26,4 +26,7 @@ Para evitar páginas con una sola imagen:
 ## Ampliación (2026-11-16, memoria-procesos)
 Para evitar páginas con una sola imagen y poco texto: 1) Reducir la altura de la imagen a `height=0.42\textheight,keepaspectratio`. 2) Agrupar imágenes relacionadas en una figura con `subfigure` (dos por fila). 3) Añadir texto explicativo antes/después de la figura para que la página no quede solo con la imagen. 4) Usar `[htbp]` y relajar parámetros de flotantes (ya configurados en `include/extra.tex` con `\renewcommand{\topfraction}{0.85}`, etc.) para que LaTeX pueda colocar la figura en la misma página que el texto.
 
+## Ampliación (2026-11-16, memoria-procesos)
+Para que las figuras compartan página con texto u otras figuras: (1) reducir altura de capturas a `height=0.42\textheight,keepaspectratio`; (2) agrupar capturas relacionadas en `subfigure` (dos por fila); (3) usar `[htbp]` en todas las figuras; (4) relajar parámetros de flotantes en el preámbulo: `\renewcommand{\topfraction}{0.85}`, `\renewcommand{\bottomfraction}{0.6}`, `\renewcommand{\textfraction}{0.12}`, `\renewcommand{\floatpagefraction}{0.8}`, `\setcounter{topnumber}{3}`, `\setcounter{totalnumber}{4}`. (5) Para diagramas TikZ/pgfplots grandes, envolver en `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`. (6) Si una sección queda muy corta, fusionarla con la anterior o convertirla en lista.
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
