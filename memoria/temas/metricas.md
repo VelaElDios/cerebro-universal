@@ -23,4 +23,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[verificacion]] · [[sprint]] · [[grada-colchonera]] · [[saas]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]] · [[trazabilidad]] · [[testing]]
+[[verificacion]] · [[sprint]] · [[grada-colchonera]] · [[saas]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]] · [[trazabilidad]] · [[métricas]] · [[verificación]] · [[testing]]

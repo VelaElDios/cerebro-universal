@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Números clave del proyecto contrastados con fuentes"
-temas: ["metricas", "trazabilidad", "verificacion"]
+temas: ["metricas", "trazabilidad", "verificacion", "métricas", "verificación"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "82 tareas", "5 migraciones", "23 endpoints"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md §14 y repo:saas/docs/gestion/README.md"]
@@ -21,5 +21,17 @@ Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[metricas-c
 
 ## Ampliación (2026-11-16, memoria-procesos)
 Todos los números mayores que 20 aparecen en las fuentes. Los pequeños (19, 29, 32, 50, 5, 23, 6, 10, 14, 16, 24, 26) también se han contrastado con las tablas de la documentación técnica y la gestión. El burndown de la entrega del Sprint 1 cuenta 16 PBIs (P1–P14, P18, P19) porque P15–P17 son del Hito 4 y se entregaron después.
+
+## Ampliación (2026-11-16, memoria-procesos)
+|
+  - Sprint 1: 19 PBIs (P1–P19), 32 tareas (T1–T32). Burndown de la entrega cuenta 16 PBIs (P1–P14, P18, P19).
+  - Sprint 2: 29 PBIs (P20–P48), 50 tareas (T33–T82).
+  - Total tareas: 82.
+  - Pruebas: 322 totales (276 + CI con PostgreSQL real).
+  - Migraciones: 5 (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras baja).
+  - API: 23 endpoints.
+  - Juego: 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
+  - Dependencias producción: 6.
+  - LOC: backend ~2.300, frontend ~1.150, CSS ~950, juego ~14.800, tests ~5.050.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

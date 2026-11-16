@@ -78,7 +78,7 @@ La Figura \ref{fig:pipeline} ilustra el diagrama del pipeline de integración y 
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth}
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
     node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.85cm, font=\footnotesize},
     nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.85cm, font=\footnotesize},
@@ -109,7 +109,7 @@ Como evidencia visual del flujo automatizado, la captura de la Figura \ref{fig:a
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/02-actions-verde.png}
+\includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/02-actions-verde.png}
 \caption{GitHub Actions: flujos de CI y despliegue en Cloud Run en verde tras los PRs del Hito 4.}
 \label{fig:actions-verde}
 \end{figure}
@@ -146,14 +146,14 @@ En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\all
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
+\includegraphics[width=0.7\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
 \caption{Prueba técnica: validación afirmativa de dominio permitido.}
 \label{fig:prueba-tecnica-permitido}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/02-subdominio-rechazado.png}
+\includegraphics[width=0.7\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/02-subdominio-rechazado.png}
 \caption{Prueba técnica: rechazo de subdominio no autorizado.}
 \label{fig:prueba-tecnica-rechazado}
 \end{figure}
@@ -170,14 +170,14 @@ El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-108156406257
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/01-correo-confirmacion.png}
+\includegraphics[width=0.75\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/01-correo-confirmacion.png}
 \caption{Correo de confirmación transaccional recibido en un buzón de Gmail.}
 \label{fig:correo-confirmacion}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/03-google-publicada.png}
+\includegraphics[width=0.75\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/03-google-publicada.png}
 \caption{Consola de Google Cloud: aplicación OAuth publicada en producción para usuarios externos.}
 \label{fig:google-publicada}
 \end{figure}

@@ -25,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[anexo]] · [[longtable]] · [[done]] · [[metricas]] · [[verificacion]] · [[requisitos]] · [[gestion]] · [[juego]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[anexo]] · [[longtable]] · [[done]] · [[metricas]] · [[verificacion]] · [[métricas]] · [[verificación]] · [[requisitos]] · [[gestion]]

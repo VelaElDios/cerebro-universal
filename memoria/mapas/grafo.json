@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16T20:45:00+01:00",
+ "generado": "2026-11-16T21:31:26+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1581,7 +1581,9 @@
    "temas": [
     "metricas",
     "trazabilidad",
-    "verificacion"
+    "verificacion",
+    "métricas",
+    "verificación"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4361,6 +4363,20 @@
    "titulo": "perfil",
    "peso": 1,
    "ruta": "memoria/temas/perfil.md"
+  },
+  {
+   "id": "tema:métricas",
+   "tipo": "tema",
+   "titulo": "métricas",
+   "peso": 1,
+   "ruta": "memoria/temas/métricas.md"
+  },
+  {
+   "id": "tema:verificación",
+   "tipo": "tema",
+   "titulo": "verificación",
+   "peso": 1,
+   "ruta": "memoria/temas/verificación.md"
   },
   {
    "id": "tema:gestion-proyectos",
@@ -7773,6 +7789,16 @@
   {
    "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
    "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "tema:métricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "tema:verificación",
    "tipo": "trata"
   },
   {

@@ -9158,3 +9158,61 @@ Tareas para el constructor en el siguiente paso:
 ## 2026-11-16 20:45 · 🧠 Conocimiento guardado
 
 [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]]
+
+## 2026-11-16 21:07 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Corrijo los fallos que hacen fallar `verificar.py`: añado el `\ref` que falta a las figuras contenedoras de los manuales en `04-descripcion.tex` y `04b-juego.tex`, y limito la altura del diagrama de capas y de la captura suelta de DoneTonic para evitar el “Float too large”. No toco datos ni estructura.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 1 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba`: si queda algún “Float too large”, bajar a `height=0.42\textheight` las capturas con `0.72\textheight` de `03-propuesta.tex` y `05-evaluacion.tex`; después revisar `revisar_maquetacion.py` (Regla 8 páginas con una sola imagen y Regla 9 página casi vacía) y seguir con el Paso 5 de estilo en capítulos 01, 03, 05, 06 y anexos.
+
+## 2026-11-16 21:31 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- La compilación falla con "Float too large for page by 63.1004pt" (línea 147 del log). Esto indica que una figura o tabla supera el espacio disponible en la página.
+- Revisando los capítulos, las capturas en `03-propuesta.tex` (fig:donetonic-tablero) y `05-evaluacion.tex` (fig:actions-verde, fig:prueba-tecnica-permitido, fig:prueba-tecnica-rechazado, fig:correo-confirmacion, fig:google-publicada) usan `height=0.72\textheight`, que supera el límite de la Regla 8 (máximo `0.42\textheight`).
+- Los diagramas TikZ (pipeline en `03-propuesta.tex` y `05-evaluacion.tex`) están en `adjustbox` con `max width=\linewidth` pero sin `max totalheight`, lo que puede hacer que floten demasiado grandes.
+- Las capturas en `04-descripcion.tex` y `04b-juego.tex` ya fueron corregidas a `0.42\textheight` por el constructor.
+- Las figuras de DoneTonic en `a1-desarrollo.tex` ya usan `0.42\textheight`.
+- El test `verificar.py` pasa en estructura (59 figuras, 28 tablas, 15202 palabras, sin referencias rotas, bibliografía correcta, todos los RF/RJ/RNF/PBIs/tareas presentes), pero el PDF no compila limpio por el float grande.
+
+Qué está bien:
+- El constructor eliminó la figura duplicada del tablero Sprint 1 del anexo (Regla 10).
+- Los manuales de SaaS (04-descripcion.tex) y juego (04b-juego.tex) ya usan `subfigure` y prosa explicativa, sin frases «La figura X muestra…» (Regla 12).
+- Las capturas nuevas en esos capítulos tienen altura `0.42\textheight` (Regla 8).
+- La trazabilidad completa (anexo a4) está presente con todas las 82 tareas.
+
+Qué está mal:
+1. **Float too large**: capturas en capítulos 3 y 5 con altura `0.72\textheight` superan el límite y causan desbordamiento de 63 pt.
+2. **Diagramas TikZ sin límite de altura**: los pipelines en 03-propuesta y 05-evaluacion usan `adjustbox` solo con `max width`, sin `max totalheight`.
+3. **Página 100 casi vacía** (Regla 9) y **4 páginas con una sola imagen** (Regla 8) pendientes para el Paso 6, pero primero hay que resolver el error de compilación.
+
+Correcciones que hago yo directamente (CAMBIAR):
+- Reducir altura de capturas a `0.42\textheight` en `03-propuesta.tex` y `05-evaluacion.tex`.
+- Añadir `max totalheight=0.6\textheight` a los `adjustbox` de los diagramas TikZ en esos mismos archivos.
+- Mantener todo el resto del contenido (tablas, diagramas, texto) tal cual.
+
+Tareas para el constructor en el siguiente paso:
+- Paso 5: repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones de 1–2 líneas, eliminar repeticiones entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
+- Paso 6: corregir páginas con una sola imagen (Regla 8) y página casi vacía (Regla 9) tras los cambios actuales.
+- Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
+
+**Correcciones del revisor:** `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Tareas para el constructor:**
+- Paso 5: repasar capítulos 01, 03, 05, 06 y anexos (a1-desarrollo, a4-trazabilidad, a2-material, a3-uso-ia): fusionar secciones de 1–2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
+- Paso 6: corregir páginas con una sola imagen (Regla 8) y página casi vacía (Regla 9) tras los cambios actuales.
+- Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
+
+## 2026-11-16 21:31 · 🧠 Conocimiento guardado
+
+[[numeros-clave-del-proyecto-contrastados-con-fuentes]]

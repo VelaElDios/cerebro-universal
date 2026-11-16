@@ -9,7 +9,7 @@
 \section{Cómo se juega (manual de usuario)}
 \label{sec:juego-manual}
 
-Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \texttt{\#/jugar}. En su primera visita debe elegir un \textbf{mote} (3 a 16 caracteres, único) y una \textbf{cara} para su avatar; a partir de entonces, el menú muestra a la izquierda su ficha con el mote, el avatar y sus mejores tiempos, y a la derecha las opciones principales: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes. La figura~\ref{fig:juego-menu} muestra el menú principal y la figura~\ref{fig:juego-vestuario} el vestuario, donde el jugador puede filtrar por posición, ver la ficha de cada futbolista (estadísticas, habilidades y equipaciones) y seleccionar su personaje y equipación.
+Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \texttt{\#/jugar}. En su primera visita debe elegir un \textbf{mote} (3 a 16 caracteres, único) y una \textbf{cara} para su avatar; a partir de entonces, el menú muestra a la izquierda su ficha con el mote, el avatar y sus mejores tiempos, y a la derecha las opciones principales: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes. El menú principal y el vestuario aparecen en la Figura~\ref{fig:juego-menu-vestuario} (subfiguras~\ref{fig:juego-menu} y~\ref{fig:juego-vestuario}); en el vestuario el jugador puede filtrar por posición, ver la ficha de cada futbolista (estadísticas, habilidades y equipaciones) y seleccionar su personaje y equipación.
 
 \begin{figure}[htbp]
 \centering
@@ -32,7 +32,7 @@ Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \tex
 
 Los controles son flexibles: en teclado se usan WASD o flechas para moverse, \texttt{Espacio}/\texttt{E} para la ulti, \texttt{Esc}/\texttt{P} para pausar, \texttt{F} para pantalla completa y \texttt{1}--\texttt{3} para elegir mejora al subir de nivel; en móvil aparece un joystick táctil flotante al arrastrar. Los ajustes de volumen, gráficos, cámara y controles se guardan en \texttt{localStorage}.
 
-Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La figura~\ref{fig:juego-partida} muestra una partida en curso y la figura~\ref{fig:juego-mejora} la pantalla de subida de nivel.
+Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La partida en curso y la pantalla de subida de nivel aparecen en la Figura~\ref{fig:juego-partida-mejora} (subfiguras~\ref{fig:juego-partida} y~\ref{fig:juego-mejora}).
 
 \begin{figure}[htbp]
 \centering
@@ -53,7 +53,7 @@ Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una ol
 \label{fig:juego-partida-mejora}
 \end{figure}
 
-Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. La figura~\ref{fig:juego-jefe} muestra al jefe Vinicius Jr. y la figura~\ref{fig:juego-final-copa} el ambiente de la Final de la Copa del Rey, que se activa a partir del minuto 5; cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
+Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. El jefe Vinicius Jr. y el ambiente de la Final de la Copa del Rey aparecen en la Figura~\ref{fig:juego-jefe-ambiente} (subfiguras~\ref{fig:juego-jefe} y~\ref{fig:juego-final-copa}); este último se activa a partir del minuto 5; cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
 
 \begin{figure}[htbp]
 \centering
@@ -83,7 +83,7 @@ Cuando el jugador cae, se muestra la pantalla de fin con estadísticas detallada
 \label{fig:juego-fin}
 \end{figure}
 
-El resto de pantallas del menú permiten gestionar el club y consultar el progreso. La figura~\ref{fig:juego-entrenamiento} muestra el entrenamiento (puntos para subir vida, defensa, disparo y suerte, con botón de modo pruebas para administradores), la figura~\ref{fig:juego-contratar} el mercado de fichajes (fichas de contrato que se ganan venciendo jefes y se canjean por jugadores sorteados por rareza), la figura~\ref{fig:juego-logros} la vitrina de logros (cada uno con un dato histórico del Atlético de Madrid), la figura~\ref{fig:juego-combinaciones} las combinaciones y ultras (metas que se activan al juntar habilidades y dan bonus, con filtros para ver requisitos y progreso), la figura~\ref{fig:juego-direccion} la dirección deportiva (elección de entrenador: Cholo Simeone o Luis Aragonés, cada uno con su ulti), la figura~\ref{fig:juego-ranking} el ranking de la grada (mejor partida de cada usuario, mostrando mote y avatar, nunca el correo), la figura~\ref{fig:juego-identidad} la pantalla «Tu ficha» (para cambiar mote y avatar) y la figura~\ref{fig:juego-ajustes} los ajustes de volumen, gráficos, cámara y controles. La figura~\ref{fig:juego-pausa} muestra el menú de pausa, accesible durante la partida.
+El resto de pantallas del menú permiten gestionar el club y consultar el progreso (Figura~\ref{fig:juego-club-pantallas}). La figura~\ref{fig:juego-entrenamiento} muestra el entrenamiento (puntos para subir vida, defensa, disparo y suerte, con botón de modo pruebas para administradores), la figura~\ref{fig:juego-contratar} el mercado de fichajes (fichas de contrato que se ganan venciendo jefes y se canjean por jugadores sorteados por rareza), la figura~\ref{fig:juego-logros} la vitrina de logros (cada uno con un dato histórico del Atlético de Madrid), la figura~\ref{fig:juego-combinaciones} las combinaciones y ultras (metas que se activan al juntar habilidades y dan bonus, con filtros para ver requisitos y progreso), la figura~\ref{fig:juego-direccion} la dirección deportiva (elección de entrenador: Cholo Simeone o Luis Aragonés, cada uno con su ulti), la figura~\ref{fig:juego-ranking} el ranking de la grada (mejor partida de cada usuario, mostrando mote y avatar, nunca el correo), la figura~\ref{fig:juego-identidad} la pantalla «Tu ficha» (para cambiar mote y avatar) y la figura~\ref{fig:juego-ajustes} los ajustes de volumen, gráficos, cámara y controles. La figura~\ref{fig:juego-pausa} muestra el menú de pausa, accesible durante la partida.
 
 \begin{figure}[htbp]
 \centering
