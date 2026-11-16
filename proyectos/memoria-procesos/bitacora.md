@@ -8887,3 +8887,61 @@ Lo que he corregido yo en este paso: **nada** (el constructor debe hacer los cam
 - **Paso 5**: Repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones de 1–2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
 - **Paso 6**: Corregir páginas con una sola imagen (Regla 8): reducir `height` a `0.42\textheight`, usar `subfigure`, añadir texto alrededor. Corregir página 102 casi vacía (Regla 9): fundir con sección anterior.
 - Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
+
+## 2026-11-16 17:01 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir el archivo `chapters/a1-desarrollo.tex` para eliminar las imágenes repetidas (Regla 10) y arreglar la imagen errónea del tablero del Sprint 2. Según el revisor, debo: 1) cambiar la imagen de `fig:donetonic-s2-tablero` de `01-tablero-sprint.png` a `04-tablero-sprint2.png`; 2) eliminar las figuras duplicadas de DoneTonic que ya aparecen en otros capítulos (03-propuesta.tex y a2-material.tex) y sustituirlas por `\ref`; 3) mantener solo las figuras canónicas en este anexo.
+
+**Archivos:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\t») chapters/a1-desarrollo.tex`, `(no aplicado: no encuentro el texto: «Las Figuras~\ref{fig:donetonic-graficas-s1},~\ref{fig:doneto») chapters/a1-desarrollo.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\t») chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 2 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Paso 3: Reescribir la sección «La aplicación: manual de usuario (SaaS)» en `chapters/04-descripcion.tex` como prosa explicativa, agrupando capturas relacionadas en `subfigure` (dos por fila) con caption general y por subfigura. Eliminar todas las frases sueltas tipo «La figura X muestra...».
+
+## 2026-11-16 17:03 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- La compilación falla con referencia indefinida `fig:mat-tablero-s2` (línea 775 en el log). El label correcto según la spec es `fig:donetonic-s2-tablero`.
+- El PDF contiene "??" por referencias rotas.
+- El builder intentó corregir `a1-desarrollo.tex` pero varios bloques CAMBIAR no se aplicaron ("no encuentro el texto").
+- Regla 10 (imágenes repetidas): quedan duplicados en `a1-desarrollo.tex` que deben reemplazarse por `\ref` a las figuras canónicas (03-propuesta.tex y a2-material.tex).
+- Regla 8 y 9: no se han abordado aún (páginas con una sola imagen y página 102 casi vacía).
+
+El builder intentó corregir `a1-desarrollo.tex` para eliminar imágenes repetidas (Regla 10) y arreglar la imagen errónea del tablero Sprint 2, pero:
+1. Introdujo una referencia rota `fig:mat-tablero-s2` (label inexistente).
+2. Varios bloques CAMBIAR no se aplicaron porque el texto buscado no coincidía con el archivo actual.
+3. Quedan figuras duplicadas de DoneTonic que deben convertirse en referencias cruzadas.
+
+Lo que está bien: la portada única ya está corregida, el número de pruebas es 322 (coincide con fuentes), los glifos ★/≤ en `04b-juego.tex` se cambiaron correctamente.
+
+Lo que hay que arreglar ahora (Paso 2 continuación):
+1. Corregir la referencia rota `fig:mat-tablero-s2` → `fig:donetonic-s2-tablero`.
+2. Cambiar la imagen del tablero Sprint 2 a `04-tablero-sprint2.png` con label `fig:donetonic-s2-tablero`.
+3. Eliminar las figuras duplicadas de DoneTonic en `a1-desarrollo.tex` y usar `\ref` a las canónicas.
+4. Mantener solo las figuras canónicas en este anexo: `fig:donetonic-graficas-s1` (02-graficas-sprint), `fig:donetonic-backlog` (03-backlog), `fig:donetonic-s2-tablero` (04-tablero-sprint2), `fig:donetonic-s2-graficas` (06-graficas-sprint2).
+
+**Correcciones del revisor:** `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\t») chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Tareas para el constructor:**
+- Paso 2 (finalizar): Verificar que `a1-desarrollo.tex` compila sin referencias rotas y que todas las imágenes de DoneTonic duplicadas se han eliminado (usando `\ref` a las canónicas en 03-propuesta.tex y a2-material.tex).
+- Paso 3: Reescribir la sección «La aplicación: manual de usuario (SaaS)» en `chapters/04-descripcion.tex` como prosa explicativa, agrupando capturas relacionadas en `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`) con caption general y por subfigura. Eliminar todas las frases sueltas tipo «La figura X muestra...».
+- Paso 4: Lo mismo en `chapters/04b-juego.tex` para el manual del juego.
+- Paso 5: Repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones de 1–2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
+- Paso 6: Corregir páginas con una sola imagen (Regla 8): reducir `height` a `0.42\textheight`, usar `subfigure`, añadir texto alrededor. Corregir página 102 casi vacía (Regla 9): fundir con sección anterior.
+- Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
+
+## 2026-11-16 17:03 · 🧠 Conocimiento guardado
+
+[[como-agrupar-capturas-con-subfigure-en-latex]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]]

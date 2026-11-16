@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 61
+notas: 64
 ---
 # latex
 
@@ -16,6 +16,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-con-subfigure|Agrupar capturas con subfigure]]
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
+- 🧪 [[memoria/conocimiento/recetas/corregir-paginas-con-una-sola-imagen-regla-8|Corregir páginas con una sola imagen (Regla 8)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex|Cómo agrupar capturas con subfigure en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-estructurar-el-csv-de-entrada-para-la-plantilla-sus|Cómo estructurar el CSV de entrada para la plantilla SUS]]
 - 🧪 [[memoria/conocimiento/recetas/como-exportar-diagramas-mermaid-para-la-memoria-latex|Cómo exportar diagramas Mermaid para la memoria LaTeX]]
 - 🧪 [[memoria/conocimiento/recetas/como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg|Cómo mapear este documento a los capítulos de la memoria TFG]]
@@ -37,6 +39,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e|Escalas de transformación SUS adoptadas (Sauro-Lewis, Bangor et al.)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/fase-2-defensa-sus-tex-en-beamer-con-conclusiones-generadas|Fase 2: defensa-sus.tex en Beamer con conclusiones generadas dinámicamente]]
 - ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow|Flechas reales en captions y texto ($\rightarrow$)]]

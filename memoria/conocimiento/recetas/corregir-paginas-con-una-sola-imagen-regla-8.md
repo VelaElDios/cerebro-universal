@@ -1,0 +1,26 @@
+---
+tipo: "receta"
+titulo: "Corregir páginas con una sola imagen (Regla 8)"
+temas: ["latex", "maquetacion", "reglas-tfg"]
+claves: ["regla 8", "página sola imagen", "height", "subfigure"]
+proyectos: ["memoria-procesos"]
+fuentes: ["memoria/reglas-tfg.md"]
+confianza: "propuesto"
+fecha: "2026-11-16"
+actualizado: "2026-11-16"
+---
+
+Temas: [[latex]] · [[maquetacion]] · [[reglas-tfg]]
+
+Para evitar páginas con una sola imagen:
+1. Reducir `height` de las capturas a `0.42\textheight` como máximo (ya se usa `height=0.72\textheight` en el borrador, hay que bajarlo).
+2. Añadir `keepaspectratio` para que no se deformen.
+3. Agrupar capturas relacionadas en `subfigure` (dos por fila) para que ocupen menos alto.
+4. Añadir texto explicativo antes/después de la figura para que la página no quede solo con la imagen.
+5. Usar `[htbp]` en el entorno `figure` y relajar parámetros de flotantes (ya está en `include/extra.tex`: `\renewcommand{\topfraction}{0.85}`, etc.).
+6. Para diagramas TikZ/pgfplots grandes, envolver en `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`.
+
+> Regla 8: Ninguna página con una sola imagen: capturas como mucho a `height=0.42\textheight`; diagramas grandes con `max totalheight`; figuras `[htbp]` con parámetros de flotantes relajados.
+> — `memoria/reglas-tfg.md` (cita sin comprobar)
+
+Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

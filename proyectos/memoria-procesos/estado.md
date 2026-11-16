@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-16 16:06"
+actualizado: "2026-11-16 17:03"
 ---
 
 # memoria-procesos
@@ -22,13 +22,13 @@ Memoria de la asignatura Procesos de Ingeniería del Software (curso 2026-2027) 
 
 ## Estado
 Versión 4 de la spec (16/11/2026): la memoria compila y `verificar.py` pasa, pero `revisar_maquetacion.py` falla por:
-- Regla 10: 8 imágenes repetidas en varios capítulos (se corrige en este paso con CAMBIAR para a2-material.tex y 04-descripcion.tex; queda a1-desarrollo.tex).
+- Regla 10: 8 imágenes repetidas en varios capítulos (se corrige en este paso con CAMBIAR para a2-material.tex y 04-descripcion.tex; queda a1-desarrollo.tex — en proceso).
 - Regla 8: 5 páginas con una sola imagen (páginas 42, 43, 44, 48, 96).
 - Regla 9: página 102 casi vacía (8 palabras).
-- Error en a1-desarrollo.tex: figura `fig:donetonic-s2-tablero` usa imagen errónea (01-tablero-sprint en vez de 04-tablero-sprint2).
+- Error en a1-desarrollo.tex: figura `fig:donetonic-s2-tablero` usaba imagen errónea (01-tablero-sprint en vez de 04-tablero-sprint2) y se introdujo referencia rota `fig:mat-tablero-s2`.
 
 ## Siguiente
-1. Terminar Paso 2: corregir `a1-desarrollo.tex` (imagen errónea y duplicados restantes).
+1. Terminar Paso 2: corregir `a1-desarrollo.tex` (imagen errónea, referencia rota y duplicados restantes) — **en curso con los CAMBIAR de arriba**.
 2. Paso 3: reescribir «La aplicación» en `04-descripcion.tex` como prosa con `subfigure`.
 3. Paso 4: reescribir manual del juego en `04b-juego.tex` con `subfigure`.
 4. Paso 5: repasar capítulos y anexos (secciones cortas, párrafos repetidos, estilo).

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16T16:06:57+01:00",
+ "generado": "2026-11-16T17:03:23+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1859,6 +1859,21 @@
    "ruta": "memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente.md"
   },
   {
+   "id": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "decision",
+   "titulo": "Cada imagen aparece una sola vez en el capítulo canónico",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "reglas-tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico.md"
+  },
+  {
    "id": "decision:camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell",
    "tipo": "decision",
    "titulo": "Cámara 3/4 con inercia, inclinación y feedback visual (destellos/aplastado)",
@@ -2549,6 +2564,21 @@
    "ruta": "memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito.md"
   },
   {
+   "id": "receta:como-agrupar-capturas-con-subfigure-en-latex",
+   "tipo": "receta",
+   "titulo": "Cómo agrupar capturas con subfigure en LaTeX",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex.md"
+  },
+  {
    "id": "receta:como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica",
    "tipo": "receta",
    "titulo": "Cómo configurar SMTP saliente con Gmail (contraseña de aplicación)",
@@ -2812,6 +2842,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto.md"
+  },
+  {
+   "id": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
+   "tipo": "receta",
+   "titulo": "Corregir páginas con una sola imagen (Regla 8)",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "reglas-tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/corregir-paginas-con-una-sola-imagen-regla-8.md"
   },
   {
    "id": "receta:creacion-del-primer-administrador-mediante-variables-de-ento",
@@ -3447,7 +3492,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 61,
+   "peso": 64,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4172,6 +4217,20 @@
    "ruta": "memoria/temas/gestion.md"
   },
   {
+   "id": "tema:maquetacion",
+   "tipo": "tema",
+   "titulo": "maquetacion",
+   "peso": 3,
+   "ruta": "memoria/temas/maquetacion.md"
+  },
+  {
+   "id": "tema:reglas-tfg",
+   "tipo": "tema",
+   "titulo": "reglas-tfg",
+   "peso": 2,
+   "ruta": "memoria/temas/reglas-tfg.md"
+  },
+  {
    "id": "tema:camara",
    "tipo": "tema",
    "titulo": "camara",
@@ -4415,6 +4474,13 @@
    "titulo": "ui",
    "peso": 2,
    "ruta": "memoria/temas/ui.md"
+  },
+  {
+   "id": "tema:subcaption",
+   "tipo": "tema",
+   "titulo": "subcaption",
+   "peso": 1,
+   "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:mermaid",
@@ -7988,6 +8054,26 @@
    "tipo": "trata"
   },
   {
+   "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "a": "tema:reglas-tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell",
    "a": "tema:camara",
    "tipo": "trata"
@@ -9973,6 +10059,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica",
    "a": "tema:correo",
    "tipo": "trata"
@@ -10486,6 +10592,26 @@
    "de": "receta:convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto",
    "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
+   "a": "tema:reglas-tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:creacion-del-primer-administrador-mediante-variables-de-ento",
