@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 3
+notas: 5
 ---
 # verificacion
 
@@ -10,6 +10,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
+- 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
+
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 
@@ -18,4 +23,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[metricas]] · [[tfg]]
+[[latex]] · [[sus]] · [[usabilidad]] · [[metricas]] · [[calidad]] · [[criterios]] · [[terminado]] · [[tfg]] · [[json]] · [[lua]] · [[test]]

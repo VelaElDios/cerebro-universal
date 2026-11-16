@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 8
+notas: 9
 ---
 # tikz
 
@@ -16,6 +16,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
+
 ## Lecciones (errores ya resueltos)
 
 - ⚠️ [[memoria/lecciones/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]]
@@ -26,4 +30,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 ## Temas relacionados
 
-[[latex]] · [[pgfplots]] · [[lua]] · [[memoria]] · [[beamer]] · [[pgf-umlsd]] · [[secuencia]]
+[[latex]] · [[pgfplots]] · [[lua]] · [[memoria]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]] · [[usabilidad]] · [[pgf-umlsd]] · [[secuencia]]

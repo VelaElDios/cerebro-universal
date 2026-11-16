@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "lua"
-notas: 7
+notas: 10
 ---
 # lua
 
@@ -10,6 +10,15 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «lua» (este archivo se ge
 ## Proyectos
 
 - 📁 [[proyectos/plantilla-sus/estado|plantilla-sus]]
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
+- 🧪 [[memoria/conocimiento/recetas/trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c|Trampas técnicas comprobadas en LuaLaTeX (evitar errores de compilación)]] · ⚠️ propuesto
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/arquitectura-de-calculos-en-lualatex-para-plantilla-sus|Arquitectura de cálculos en LuaLaTeX para plantilla SUS]]
 
 ## Lecciones (errores ya resueltos)
 
@@ -22,4 +31,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «lua» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[pgfplots]] · [[beamer]] · [[datos]]
+[[latex]] · [[sus]] · [[usabilidad]] · [[tikz]] · [[pgfplots]] · [[beamer]] · [[datos]] · [[arquitectura]] · [[json]] · [[test]] · [[verificacion]] · [[compilacion]]

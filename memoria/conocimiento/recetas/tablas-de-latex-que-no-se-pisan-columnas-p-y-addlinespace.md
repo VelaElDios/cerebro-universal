@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Tablas de LaTeX que no se pisan (columnas p y addlinespace)"
-temas: ["latex", "tablas", "tfg"]
+temas: ["latex", "tablas", "tfg", "memoria"]
 claves: ["newcolumntype", "m{", "p{", "addlinespace", "arraystretch", "longtable"]
 proyectos: ["memoria-procesos"]
-fuentes: ["include/extra.tex (memoria del Sprint 1)"]
+fuentes: ["include/extra.tex (memoria del Sprint 1)", "../../memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -28,5 +28,14 @@ Además, cada fila del cuerpo termina en `\\ \addlinespace[3pt]`. Los anchos sum
 
 > Celdas alineadas arriba (p) en vez de centradas en vertical (m): las filas ya no se pisan
 > — `include/extra.tex (memoria del Sprint 1)`
+
+## Ampliación (2026-11-16, )
+Para que las tablas no tengan filas que se pisen:
+- Usar columnas `p{ancho}` (alineación superior) en lugar de `m{}` (centrada verticalmente).
+- Añadir `\addlinespace` entre filas para dar aire vertical.
+- La suma de anchos de columnas no debe superar `\linewidth`.
+- Cada columna debe ser lo bastante ancha para que palabras cortas (Id, Hito, RNF-01) no se partan.
+- Texto de la tabla en `\small`.
+- Código y rutas: usar `\path{}` (paquete `url`/`hyperref`) o `\texttt{}` + `\allowbreak` para que no se salgan del margen.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

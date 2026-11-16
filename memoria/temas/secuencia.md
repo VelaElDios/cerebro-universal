@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "secuencia"
-notas: 2
+notas: 4
 ---
 # secuencia
 
@@ -10,6 +10,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «secuencia» (este archivo
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
+- 🧪 [[memoria/conocimiento/recetas/flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf|Flujo de confirmación de cuenta por correo (GET /api/auth/confirm)]]
+- 🧪 [[memoria/conocimiento/recetas/login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p|Login local con cuenta pendiente y reenvío de confirmación (POST /api/auth/login)]]
 
 ## Lecciones (errores ya resueltos)
 
@@ -17,4 +19,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «secuencia» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[tikz]]
+[[latex]] · [[pgf-umlsd]] · [[auth]] · [[grada-colchonera]] · [[saas]] · [[tikz]]

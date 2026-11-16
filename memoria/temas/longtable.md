@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «longtable» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tablas]]
+[[latex]] · [[tablas]] · [[memoria]] · [[tfg]]

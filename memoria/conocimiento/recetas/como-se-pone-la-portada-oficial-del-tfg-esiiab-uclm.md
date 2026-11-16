@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)"
-temas: ["latex", "plantilla", "tfg"]
+temas: ["latex", "plantilla", "tfg", "memoria"]
 claves: ["portada.tex", "preambulo.tex", "Segunda portada", "textblock"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -20,5 +20,8 @@ La plantilla trae dos portadas y solo vale una: la de `elements/portada.tex` (es
 
 > Una sola portada: la oficial del TFG
 > — `memoria/reglas-tfg.md`
+
+## Ampliación (2026-11-16, )
+La portada es única y obligatoria: se usa exclusivamente `elements/portada.tex` que incluye escudo, universidad, escuela, tipo de trabajo, título, autor y fecha, todo centrado. En `Memoria.tex` se hace `\input{elements/portada}`. No se añade ninguna otra portada, incluida la «segunda portada» con logos UCLM/ESII de `elements/preambulo.tex`. Esta regla es inquebrantable y la comprueba el script de maquetación.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

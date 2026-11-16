@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[tfg]]
+[[latex]] · [[longtable]] · [[memoria]] · [[tfg]]

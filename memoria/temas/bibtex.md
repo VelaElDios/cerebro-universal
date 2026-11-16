@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "bibtex"
-notas: 2
+notas: 3
 ---
 # bibtex
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se genera solo).
+
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg|Bibliografía gestionada con BibTeX en la memoria TFG]]
 
 ## Lecciones (errores ya resueltos)
 
@@ -14,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se
 
 ## Temas relacionados
 
-[[latex]]
+[[latex]] · [[bibliografia]] · [[memoria]] · [[tfg]]

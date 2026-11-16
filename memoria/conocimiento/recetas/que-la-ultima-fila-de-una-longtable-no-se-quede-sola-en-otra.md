@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Que la última fila de una longtable no se quede sola en otra página"
-temas: ["latex", "longtable", "tablas"]
+temas: ["latex", "longtable", "tablas", "memoria", "tfg"]
 claves: ["longtable", "\\\\*", "Total", "nopagebreak"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -26,5 +26,8 @@ Si aun así se queda sola, se reduce el aire entre filas de esa tabla (`\addline
 
 > Las tablas largas van en `longtable` y su última fila (por ejemplo, el Total) no se queda sola en otra página
 > — `memoria/reglas-tfg.md`
+
+## Ampliación (2026-11-16, )
+En tablas `longtable`, para evitar que la última fila (p. ej. una fila de «Total») quede sola en la página siguiente, se debe usar `\\*` (doble barra asterisco) en las últimas 2-3 filas del cuerpo de la tabla. `\\*` prohíbe el salto de página después de esa fila, manteniendo juntas las últimas filas.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

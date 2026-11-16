@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "rutas"
-notas: 1
+notas: 2
 ---
 # rutas
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «rutas» (este archivo se genera solo).
+
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/grupos-de-rutas-de-la-api-y-sus-accesos|Grupos de rutas de la API y sus accesos]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rutas» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]]
+[[latex]] · [[figuras]] · [[api]] · [[grada-colchonera]] · [[saas]]

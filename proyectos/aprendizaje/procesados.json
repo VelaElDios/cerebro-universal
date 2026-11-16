@@ -1,0 +1,284 @@
+{
+ "../../README.md": {
+  "md5": "2518cef0cd28605deff32e7d036c3a61",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "campos-de-proyecto-json-y-su-proposito",
+   "como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte",
+   "como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
+   "como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "confianza-del-conocimiento-verificado-o-propuesto",
+   "estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
+   "los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "rotacion-de-proyectos-por-tiempo-sin-avanzar"
+  ],
+  "resumenes": [
+   "Este trozo es el README del proyecto «cerebro-universal»: un sistema donde varias IAs gratuitas de distintas empresas construyen proyectos por turnos, guardando todo en un repositorio GitHub que funciona como vault de Obsidian. Describe el flujo de trabajo orquestado por GitHub Actions (elección de proyecto, paso constructor-prueba-revisor), la estructura de memoria compartida (CEREBRO.md, fichas de proyecto, conocimiento, lecciones, mapas y dataset para IA local), cómo crear y configurar proyectos mediante `proyecto.json`, y las reglas de operación (repo público sin secretos, instrucciones ví"
+  ]
+ },
+ "../../memoria/reglas-tfg.md": {
+  "md5": "f6445135154591438f267076330ad468",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "agrupar-capturas-con-subfigure",
+   "cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
+   "flechas-reales-en-captions-y-texto-rightarrow",
+   "que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "quitar-las-paginas-en-blanco-entre-capitulos",
+   "tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia"
+  ],
+  "resumenes": [
+   "Este trozo define las reglas fijas de formato para la memoria del TFG (Sprint 3 en adelante) usando la plantilla ESIIAB-UCLM. Cubre portada única oficial, prohibición de modificar la plantilla, estilos de títulos, eliminación de páginas en blanco, reglas de tablas (columnas p, addlinespace, longtable), gestión de figuras (alturas máximas, flotantes relajados, sin repeticiones, flechas reales), contenido por sprint, prosa narrativa en lugar de listas de capturas, y verificación automática con `revisar_maquetacion.py` más revisión manual."
+  ]
+ },
+ "repo:saas/docs/documentacion-tecnica.md": {
+  "md5": "81b464aac682749269a97899c21ea52b",
+  "hechos": 7,
+  "total": 7,
+  "notas": [
+   "arquitectura-del-juego-simulacion-determinista-presentacion",
+   "arquitectura-en-capas-cliente-servidor-node-js-express-postg",
+   "arquitectura-en-capas-con-inyeccion-de-dependencias-permitio",
+   "arranque-de-la-aplicacion-configuracion-migraciones-y-primer",
+   "audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
+   "cambio-de-alcance-de-red-social-a-juego-survivor-justificaci",
+   "cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por",
+   "catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
+   "cliente-api-con-timeout-de-15-s-y-manejo-de-apierror",
+   "como-exportar-diagramas-mermaid-para-la-memoria-latex",
+   "como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg",
+   "como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi",
+   "contratacion-de-jugador-con-ficha-y-concurrencia-optimista-d",
+   "correccion-de-unicidad-de-email-tras-baja-logica-indice-parc",
+   "cronologia-detallada-del-proyecto-septiembre-octubre-2026",
+   "decisiones-de-diseno-del-backend-con-alternativas-y-justific",
+   "definicion-de-hecho-dod-para-tareas-e-hitos",
+   "desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
+   "estado-de-completitud-de-sprints-y-trazabilidad",
+   "estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
+   "estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion",
+   "fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29",
+   "flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf",
+   "flujo-de-registro-con-email-y-contrasena",
+   "formato-de-logs-json-y-eventos-registrados",
+   "frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "generacion-de-mundo-procedural-infinito-con-distritos-estadi",
+   "genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
+   "github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio",
+   "glosario-tecnico-del-proyecto-22-terminos-definidos",
+   "grupos-de-rutas-de-la-api-y-sus-accesos",
+   "inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
+   "lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
+   "login-con-google-oauth-2-0-codigo-de-autorizacion-state-en-s",
+   "login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p",
+   "manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui",
+   "manual-de-usuario-entrada-menus-controles-oleadas-ambientes",
+   "maquina-de-estados-de-la-cuenta-de-usuario",
+   "metadatos-del-proyecto-la-grada-colchonera",
+   "metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d",
+   "modulos-del-backend-y-sus-responsabilidades",
+   "optimizaciones-de-rendimiento-busqueda-por-radio-con-claves",
+   "partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con",
+   "perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante",
+   "pipeline-ci-cd-github-actions-cloud-run-con-workload-identit",
+   "pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
+   "pivote-de-red-social-a-juego-survivor-reutilizando-base-del",
+   "proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api",
+   "recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po",
+   "renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel",
+   "requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil",
+   "requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad",
+   "requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto",
+   "resumen-de-pruebas-por-fichero-322-totales",
+   "roadmap-de-trabajo-futuro-priorizado",
+   "solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto",
+   "solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex",
+   "tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re",
+   "tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr",
+   "tabla-users-con-indice-parcial-unico-para-email-entre-cuenta",
+   "validacion-anti-trampas-en-el-servidor-reloj-propio-formulas"
+  ],
+  "resumenes": [
+   "Este trozo es la cabecera de la documentación técnica del proyecto «La Grada Colchonera»: un juego web tipo *survivor* en pixel art construido sobre una base SaaS. Incluye metadatos del proyecto (autor, repositorio, URL en producción, fechas de los dos sprints), una tabla que mapea cada sección de este documento a los capítulos de la memoria TFG, el contexto y objetivos de la asignatura PIS, el alcance detallado por hitos y la justificación del cambio de enfoque (de red social a juego), y los requisitos funcionales completos del Sprint 1 (13 RF) y del Sprint 2 (20 RJ de juego) con sus PBIs, ub",
+   "Este trozo documenta los 12 requisitos no funcionales (RNF-01 a RNF-12) del proyecto La Grada Colchonera, la metodología Scrum con DoneTonic para dos sprints (Sprint 1: 29/09–27/10/2026 con 4 hitos; Sprint 2: 23/10–29/10/2026 con 6 fases de juego), la Definición de Hecho, el flujo GitHub Flow por hitos con ramas protegidas y CI obligatorio, tablas de trazabilidad completas PBI→tarea→rama→PR→release para ambos sprints, gráficas de burndown, cronología detallada y la arquitectura en capas cliente-servidor (Node.js/Express + PostgreSQL Neon + integraciones SMTP/Google OAuth) con diagrama Mermaid.",
+   "Este trozo detalla la arquitectura en capas del sistema (presentación, cliente API, API, lógica, datos, integraciones, composición), 14 decisiones de diseño con sus alternativas y justificaciones (Express 5 sin frontend, repositorio dual, inyección de dependencias, sesiones en servidor, bajas lógicas, tokens HMAC, OAuth propio, admin por variables de entorno, migraciones SQL, Cloud Run/Render, reglas compartidas, concurrencia optimista, simulación determinista, gráficos por código), los módulos del backend y sus responsabilidades, el modelo de datos (users con índice parcial único, session, ju",
+   "Este trozo documenta los flujos de autenticación y autorización (confirmación de correo, login local, OAuth Google, recuperación de sesión, peticiones protegidas, cambio de rol, baja de usuario), el arranque de la aplicación (migraciones y primer administrador), la partida del juego con validación anti-trampas, la contratación con concurrencia optimista, el pipeline de CI/CD (GitHub Actions → Cloud Run con WIF) y una prueba de dominio permitido. Incluye una tabla de amenazas y medidas de seguridad, y comienza la descripción del concepto del juego.",
+   "Este trozo describe el diseño completo del juego «La Grada Colchonera»: género survivor chibi con jugadores históricos del Atlético de Madrid, manual de usuario (menús, controles, oleadas, ambientes, fin de partida), tabla de sistemas (36 jugadores, 4 rarezas, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos rivales, 10 jefes, dificultad escalonada, movimiento con inercia, mundo procedural, club persistente, 29 logros, audio sintetizado), arquitectura separada en simulación determinista (paso fijo 1/60 s, semilla), presentación (Canvas 2D, sprites chibi 32×32 genera",
+   "Este trozo detalla la estrategia de pruebas automatizadas (322 tests en múltiples niveles: unitarias, contrato, integración, OAuth, base de datos real, frontend estático y simulación del juego), los pipelines de CI/CD con GitHub Actions (ci.yml, deploy-cloud-run.yml, memoria.yml) y despliegue en Cloud Run (Node 22 Alpine, Neon PostgreSQL, Workload Identity Federation) y Render, el formato de logs JSON estructurados con request-id y eventos, el manejo de errores de extremo a fin (errores tipados → errorHandler → ApiError → UI con reintento), una tabla de 11 problemas críticos resueltos (JSON ma",
+   "Este trozo final resume el estado completado de los dos sprints (Sprint 1 con 4 hitos y Sprint 2 con 29 PBIs), destaca decisiones arquitectónicas clave (arquitectura en capas con inyección de dependencias), la estrategia de pruebas error-first, el acierto del pivote de red social a juego, y lecciones aprendidas. Enumera trabajo futuro (multijugador, PWA, ranking, etc.) y proporciona un índice exhaustivo de capturas de pantalla organizadas por hitos, juego, fase 7, DoneTonic y prueba técnica, con fechas, requisitos trazados y descripciones. Cierra con un glosario de 22 términos técnicos del pro"
+  ]
+ },
+ "repo:saas/docs/gestion/README.md": {
+  "md5": "f4002606b3f8533bca3159ace88302e9",
+  "hechos": 4,
+  "total": 4,
+  "notas": [
+   "api-del-juego-con-validacion-anti-trampas",
+   "arreglos-criticos-en-sprint-2-prs-51-55-56",
+   "backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell",
+   "cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre",
+   "capturas-de-donetonic-disponibles-en-el-repo",
+   "cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
+   "combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito",
+   "convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto",
+   "convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
+   "datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
+   "definicion-de-hecho-dod-para-tareas-hitos-y-fases",
+   "diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio",
+   "esquema-de-progreso-guardado-en-servidor-migracion-003-tabla",
+   "estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas",
+   "fases-del-sprint-2-y-prs-asociados",
+   "fechas-pbis-y-tareas-de-los-dos-sprints",
+   "flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
+   "generacion-de-terreno-por-ruidos-terreno-js",
+   "historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
+   "metricas-comparativas-sprint-1-vs-sprint-2",
+   "migracion-004-y-endpoint-put-api-juego-identidad-para-mote-y",
+   "motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla",
+   "musica-100-sintetizada-web-audio-con-fanfarrias-por-competic",
+   "prs-de-cierre-de-hito-y-sprint-en-repositorio",
+   "registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g",
+   "renderizado-chibi-1620-px-por-codigo-con-cache-de-fotogramas",
+   "simulacion-de-paso-fijo-con-semilla-mundo-js",
+   "sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
+   "sistema-de-rarezas-y-36-jugadores-pbi-p38",
+   "sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba",
+   "trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs",
+   "url-publica-de-despliegue-continuo-google-cloud-run",
+   "validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
+   "workspace-y-equipo-en-donetonic"
+  ],
+  "resumenes": [
+   "Este trozo documenta la gestión del proyecto en DoneTonic para el TFG \"La Grada Colchonera\". Describe dos sprints: Sprint 1 (29/09–27/10/2026, 19 PBIs, 4 hitos, base SaaS) y Sprint 2 (23/10–29/10/2026, 29 PBIs, lógica del juego). Detalla el flujo de trabajo (enunciado→PBI→tareas→rama→PR→CI→deploy), la Definición de Hecho (DoD), capturas de tableros y gráficas, y la tabla completa de trazabilidad del Sprint 1 con PBIs, hitos, títulos, estado y enlaces a releases de GitHub. También aclara que el backlog del Sprint 2 se registró retroactivamente, por lo que sus gráficas en DoneTonic muestran una ",
+   "Este trozo detalla la trazabilidad completa del Sprint 1 (19 PBIs, 32 tareas) con sus ramas, PRs y hitos de cierre, muestra la evolución del burndown con cambio de alcance (se añadió P19 Cloud Run tras créditos Google Cloud), y presenta la estructura del Sprint 2: 29 PBIs (P20–P48) y 50 tareas (T33–T82) organizados en 6 fases de juego + Calidad, indicando que la lógica del juego ya estaba implementada en seis fases antes del sprint.",
+   "Este trozo detalla los 29 PBIs (P20–P48) del Sprint 2 de La Grada Colchonera, organizados en seis fases (Base del juego, Club, Ultras, Mundo, Rarezas, Logros y sonido) más Calidad. Cada PBI incluye criterios de aceptación técnicos muy concretos: motor determinista a 60 Hz con semilla, gráficos chibi 16×20 sin imágenes, cámara 3/4 con inercia, 36 jugadores en 4 rarezas, 24 combinaciones y 6 ULTRAS, mundo procedural con ruido suave, entornos que cambian cada 5 minutos (Pretemporada → Mundial), progreso guardado en servidor con validación anti-trampas, ranking sin correos, música 100 % sintetizad",
+   "Este trozo final del README de gestión detalla el backlog completo del Sprint 2: 29 PBIs desglosados en 50 tareas, cada una con su PR asociado y estado «Hecho». Incluye la tabla de 14 PRs fusionados entre el 23/10/2026 y el 29/10/2026 agrupados por fase, la evolución diaria del burndown (de 28 a 0 PBIs pendientes) con gráfico Mermaid, y una tabla comparativa de métricas entre Sprint 1 (4 semanas, 19 PBIs) y Sprint 2 (1 semana, 29 PBIs, 276 pruebas automáticas)."
+  ]
+ },
+ "repo:saas/CONTRIBUTING.md": {
+  "md5": "96b88d90cff48ae64fcbdcc5f05ec71e",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "checklist-previo-a-abrir-pull-request-npm-test-local-obligat",
+   "convencion-de-mensajes-de-commit-en-espanol-con-identificado",
+   "estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni",
+   "github-flow-como-modelo-de-ramificacion-del-proyecto",
+   "proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni",
+   "reglas-de-integracion-mediante-pull-requests-con-ci-obligato"
+  ],
+  "resumenes": [
+   "Este trozo define la guía de trabajo del repositorio siguiendo GitHub Flow: estructura de ramas (main, hito-N/integracion, hito-N/Tx-descripcion), reglas de integración mediante PRs con CI en verde, convención de commits en español con identificador de tarea DoneTonic, checklist previo a PR (npm test) y proceso de 4 pasos para cerrar un hito incluyendo etiquetado y actualización en DoneTonic."
+  ]
+ },
+ "repo:saas/docs/revision-entrega.md": {
+  "md5": "79c94301372f2c9ea40f2c7b31043235",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "control-de-acceso-basado-en-roles-y-propiedad-requireauth-re",
+   "creacion-del-primer-administrador-mediante-variables-de-ento",
+   "gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte",
+   "manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui",
+   "metricas-de-calidad-80-tests-automatizados-con-node-test-com",
+   "pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
+   "registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y",
+   "seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage"
+  ],
+  "resumenes": [
+   "Documento de verificación de la entrega del proyecto SaaS \"La Grada Colchonera\" (Hitos 1–4). Certifica que todos los requisitos obligatorios de arquitectura, gestión de usuarios, roles, seguridad, calidad, CI/CD y despliegue están cumplidos, integrados en `main` y funcionando en producción (Google Cloud Run). Incluye tabla de comprobación frase a frase con evidencias (código, tests, capturas) y guía de verificación manual en 5 minutos."
+  ]
+ },
+ "repo:saas/docs/hito4-configuracion.md": {
+  "md5": "62334c41b13867b589ea178299ead63a",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica",
+   "como-crear-cliente-oauth-de-google-para-la-grada-colchonera",
+   "como-desplegar-secretos-de-hito-4-a-cloud-run-produccion",
+   "como-probar-la-configuracion-en-local-hito-4",
+   "comportamiento-de-cuentas-segun-metodo-de-registro-y-estado",
+   "script-de-configuracion-de-secretos-hito-4-en-gcp",
+   "url-base-de-la-aplicacion-la-grada-colchonera-en-cloud-run"
+  ],
+  "resumenes": [
+   "Este trozo documenta la configuración única de dos servicios externos para el Hito 4: cliente OAuth de Google (inicio de sesión) y correo saliente SMTP con Gmail. Incluye pasos exactos en Google Cloud Console (pantalla de consentimiento, usuarios de prueba, URIs de redirección autorizadas), formato de la URL SMTP con contraseña de aplicación, prueba local con `.env`, despliegue a Cloud Run mediante script `configurar-hito4.sh` y una tabla de decisiones sobre comportamiento de cuentas según caso de registro/autenticación."
+  ]
+ },
+ "../memoria-procesos/fuentes/estructura-memoria.md": {
+  "md5": "36406971a0a75f2ecad304f2ab82cded",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg",
+   "bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf",
+   "capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
+   "capitulo-4-requisitos-arquitectura-tabla-de-sprints-y-manual",
+   "capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de",
+   "contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
+   "estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
+   "la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme"
+  ],
+  "resumenes": [
+   "Este trozo resume la estructura recomendada para la memoria del Trabajo Fin de Grado (TFG) según la presentación del profesor José Antonio Gallud Lázaro (septiembre 2026) y la plantilla de la ESIIAB-UCLM. Define 8 capítulos obligatorios (Introducción, Antecedentes, Propuesta/Metodología/Herramientas, Descripción, Evaluación, Conclusiones, Bibliografía, Anexos) con su contenido específico, exige entrega en PDF con marcadores preferiblemente en LaTeX, y detalla cómo documentar cada sprint en los anexos."
+  ]
+ },
+ "../memoria-procesos/fuentes/bibliografia-extra.md": {
+  "md5": "80263fb71ff28af4fa187a244db6cfa3",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "referencia-donetonic-como-herramienta-de-gestion-agil-del-pr",
+   "referencia-paper-original-bcrypt-para-seguridad-de-contrasen",
+   "referencia-rfc-6749-oauth-2-0-para-inicio-de-sesion-con-goog",
+   "referencia-vampire-survivors-como-antecedente-de-genero-surv"
+  ],
+  "resumenes": [
+   "Este trozo contiene cuatro referencias bibliográficas verificadas manualmente que se usan en la memoria del TFG pero no están en el repositorio: RFC 6749 (OAuth 2.0), el paper original de bcrypt, el videojuego Vampire Survivors (referencia de género survivor) y la herramienta DoneTonic (gestión ágil). Cada una incluye clave sugerida, cita completa y URL comprobada."
+  ]
+ },
+ "../plantilla-sus/spec.md": {
+  "md5": "e55b11bf9995c3878f69bd2a2f4edf5f",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "como-estructurar-el-csv-de-entrada-para-la-plantilla-sus",
+   "como-se-calcula-la-puntuacion-sus-formula-y-ejemplo",
+   "criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
+   "cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime",
+   "escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e",
+   "estructura-de-archivos-obligatoria-para-la-plantilla-sus",
+   "exportar-resultados-json-obligatorio-para-verificacion-autom",
+   "fase-2-defensa-sus-tex-en-beamer-con-conclusiones-generadas",
+   "trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c"
+  ],
+  "resumenes": [
+   "Este trozo define la especificación completa de una plantilla LaTeX para evaluación de usabilidad con SUS (System Usability Scale). La plantilla automatiza todos los cálculos (puntuaciones, estadísticas, notas, adjetivos, aceptabilidad, tablas y gráficas) a partir de un CSV de respuestas, usando LuaLaTeX para los cálculos en Lua. Incluye requisitos técnicos, estructura del anexo en 10 apartados, 4 tipos de gráficas reutilizables, exportación obligatoria de resultados.json para verificación automática, y una Fase 2 para diapositivas de defensa en Beamer con conclusiones generadas dinámicamente "
+  ]
+ },
+ "repo:datos/temarios/LEEME.md": {
+  "md5": "68b329da9893e34099c7d8ad5cb9c940",
+  "hechos": 0,
+  "total": 0,
+  "notas": []
+ }
+}

@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Quitar las páginas en blanco entre capítulos"
-temas: ["latex", "plantilla", "tfg"]
+temas: ["latex", "plantilla", "tfg", "memoria"]
 claves: ["cleardoublepage", "openright", "página en blanco"]
 proyectos: ["memoria-procesos"]
-fuentes: ["include/extra.tex (memoria del Sprint 1)"]
+fuentes: ["include/extra.tex (memoria del Sprint 1)", "../../memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -20,5 +20,8 @@ La plantilla es `book` a doble cara: cada capítulo empieza en página impar y d
 
 > Documento para leer en PDF: sin páginas en blanco entre capítulos
 > — `include/extra.tex (memoria del Sprint 1)`
+
+## Ampliación (2026-11-16, )
+La memoria se entrega en PDF sin páginas en blanco entre capítulos. Esto implica configurar la clase de documento para que no inserte páginas en blanco (p. ej. usando `oneside` o `\let\cleardoublepage\clearpage` si la plantilla usa `openright`). El script `revisar_maquetacion.py` verifica automáticamente que no haya páginas vacías entre capítulos.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

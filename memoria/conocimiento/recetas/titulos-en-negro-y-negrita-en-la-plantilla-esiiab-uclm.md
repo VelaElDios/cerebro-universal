@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Títulos en negro y negrita en la plantilla ESIIAB-UCLM"
-temas: ["latex", "plantilla", "tfg"]
+temas: ["latex", "plantilla", "tfg", "memoria"]
 claves: ["definecolor", "tema", "bfseries", "titleformat", "hidelinks"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -20,5 +20,8 @@ La plantilla pinta los títulos en azul con el color `tema`. Javier los quiere e
 
 > Títulos en negro y en negrita, sin azul
 > — `memoria/reglas-tfg.md`
+
+## Ampliación (2026-11-16, )
+Los títulos de sección y subsección deben ser negros (`\definecolor{tema}{RGB}{0,0,0}`) y en negrita (`\bfseries`). Además, los enlaces hipertexto no llevan recuadros de color: se configura `\hypersetup{hidelinks}`. Esto anula el estilo por defecto de la plantilla que usa azul para títulos y enlaces.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

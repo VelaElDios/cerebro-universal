@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "datos"
-notas: 3
+notas: 4
 ---
 # datos
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/como-estructurar-el-csv-de-entrada-para-la-plantilla-sus|Cómo estructurar el CSV de entrada para la plantilla SUS]]
 
 ## Decisiones (y por qué)
 
@@ -18,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[lua]] · [[general]] · [[cerebro]] · [[ia-local]]
+[[latex]] · [[lua]] · [[general]] · [[cerebro]] · [[ia-local]] · [[sus]] · [[usabilidad]]

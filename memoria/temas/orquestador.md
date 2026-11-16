@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "orquestador"
-notas: 3
+notas: 4
 ---
 # orquestador
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «orquestador» (este archi
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/como-trabaja-el-cerebro-constructor-prueba-revisor|Cómo trabaja el cerebro (constructor, prueba, revisor)]]
+- 💡 [[memoria/conocimiento/conceptos/rotacion-de-proyectos-por-tiempo-sin-avanzar|Rotación de proyectos por tiempo sin avanzar]] · ⚠️ propuesto
 
 ## Temas relacionados
 
