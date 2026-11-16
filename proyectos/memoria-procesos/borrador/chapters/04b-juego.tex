@@ -83,7 +83,7 @@ Cuando el jugador cae, se muestra la pantalla de fin con estadísticas detallada
 \label{fig:juego-fin}
 \end{figure}
 
-El resto de pantallas del menú permiten gestionar el club y consultar el progreso (Figura~\ref{fig:juego-club-pantallas}). La figura~\ref{fig:juego-entrenamiento} muestra el entrenamiento (puntos para subir vida, defensa, disparo y suerte, con botón de modo pruebas para administradores), la figura~\ref{fig:juego-contratar} el mercado de fichajes (fichas de contrato que se ganan venciendo jefes y se canjean por jugadores sorteados por rareza), la figura~\ref{fig:juego-logros} la vitrina de logros (cada uno con un dato histórico del Atlético de Madrid), la figura~\ref{fig:juego-combinaciones} las combinaciones y ultras (metas que se activan al juntar habilidades y dan bonus, con filtros para ver requisitos y progreso), la figura~\ref{fig:juego-direccion} la dirección deportiva (elección de entrenador: Cholo Simeone o Luis Aragonés, cada uno con su ulti), la figura~\ref{fig:juego-ranking} el ranking de la grada (mejor partida de cada usuario, mostrando mote y avatar, nunca el correo), la figura~\ref{fig:juego-identidad} la pantalla «Tu ficha» (para cambiar mote y avatar) y la figura~\ref{fig:juego-ajustes} los ajustes de volumen, gráficos, cámara y controles. La figura~\ref{fig:juego-pausa} muestra el menú de pausa, accesible durante la partida.
+El resto de pantallas del menú permiten gestionar el club y consultar el progreso (Figuras~\ref{fig:juego-club-pantallas-a} y~\ref{fig:juego-club-pantallas-b}). La figura~\ref{fig:juego-entrenamiento} muestra el entrenamiento (puntos para subir vida, defensa, disparo y suerte, con botón de modo pruebas para administradores), la figura~\ref{fig:juego-contratar} el mercado de fichajes (fichas de contrato que se ganan venciendo jefes y se canjean por jugadores sorteados por rareza), la figura~\ref{fig:juego-logros} la vitrina de logros (cada uno con un dato histórico del Atlético de Madrid), la figura~\ref{fig:juego-combinaciones} las combinaciones y ultras (metas que se activan al juntar habilidades y dan bonus, con filtros para ver requisitos y progreso), la figura~\ref{fig:juego-direccion} la dirección deportiva (elección de entrenador: Cholo Simeone o Luis Aragonés, cada uno con su ulti), la figura~\ref{fig:juego-ranking} el ranking de la grada (mejor partida de cada usuario, mostrando mote y avatar, nunca el correo), la figura~\ref{fig:juego-identidad} la pantalla «Tu ficha» (para cambiar mote y avatar) y la figura~\ref{fig:juego-ajustes} los ajustes de volumen, gráficos, cámara y controles. La figura~\ref{fig:juego-pausa} muestra el menú de pausa, accesible durante la partida.
 
 \begin{figure}[htbp]
 \centering
@@ -114,7 +114,12 @@ El resto de pantallas del menú permiten gestionar el club y consultar el progre
 \subcaption{Combinaciones y ultras con requisitos y bonus.}
 \label{fig:juego-combinaciones}
 \end{subfigure}
-\\
+\caption{Pantallas del club (I): entrenamiento, fichajes, logros y combinaciones.}
+\label{fig:juego-club-pantallas-a}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
 \begin{subfigure}{0.48\textwidth}
 \centering
 \includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/11-direccion.png}
@@ -142,8 +147,8 @@ El resto de pantallas del menú permiten gestionar el club y consultar el progre
 \subcaption{Ajustes de volumen, gráficos, cámara y controles.}
 \label{fig:juego-ajustes}
 \end{subfigure}
-\caption{Pantallas del club: entrenamiento, fichajes, logros, combinaciones, dirección, ranking, identidad y ajustes.}
-\label{fig:juego-club-pantallas}
+\caption{Pantallas del club (II): dirección, ranking, identidad y ajustes.}
+\label{fig:juego-club-pantallas-b}
 \end{figure}
 
 \begin{figure}[htbp]
@@ -189,7 +194,7 @@ La Figura~\ref{fig:juego-arquitectura} muestra la arquitectura del juego.
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth}
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
     node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.9cm, font=\small},
     nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.9cm, font=\small},

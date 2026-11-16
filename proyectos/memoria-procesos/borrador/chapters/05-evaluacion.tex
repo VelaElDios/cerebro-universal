@@ -142,25 +142,30 @@ La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\all
 
 \section{Prueba técnica (RF-13)}
 
-En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). La Figura \ref{fig:prueba-tecnica-permitido} ilustra la respuesta afirmativa ante un dominio autorizado, mientras que la Figura \ref{fig:prueba-tecnica-rechazado} evidencia el rechazo de un subdominio no reconocido. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
+En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). La Figura~\ref{fig:prueba-tecnica} recoge las dos respuestas en producción: la afirmativa ante un dominio autorizado (subfigura~\ref{fig:prueba-tecnica-permitido}) y el rechazo de un subdominio no autorizado (subfigura~\ref{fig:prueba-tecnica-rechazado}). Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
-\caption{Prueba técnica: validación afirmativa de dominio permitido.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
+\subcaption{Dominio permitido: respuesta afirmativa.}
 \label{fig:prueba-tecnica-permitido}
-\end{figure}
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.7\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/02-subdominio-rechazado.png}
-\caption{Prueba técnica: rechazo de subdominio no autorizado.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/02-subdominio-rechazado.png}
+\subcaption{Subdominio no autorizado: respuesta negativa.}
 \label{fig:prueba-tecnica-rechazado}
+\end{subfigure}
+\caption{Prueba técnica en producción: respuestas de \texttt{POST /api/prueba/dominio}.}
+\label{fig:prueba-tecnica}
 \end{figure}
 
 \section{Comprobación en producción}
 
-El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) fue sometido a validación manual en condiciones reales de explotación:
+El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) fue sometido a validación manual en condiciones reales de explotación (Figura~\ref{fig:produccion-verificacion}):
 \begin{itemize}
     \item Emisión y recepción satisfactoria de correo electrónico transaccional en buzón real de Gmail (Figura \ref{fig:correo-confirmacion}).
     \item Configuración de Google Auth Platform con estado publicado para usuarios externos (Figura \ref{fig:google-publicada}).
@@ -170,16 +175,21 @@ El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-108156406257
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/01-correo-confirmacion.png}
-\caption{Correo de confirmación transaccional recibido en un buzón de Gmail.}
-\label{fig:correo-confirmacion}
-\end{figure}
-
-\begin{figure}[htbp]
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.75\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/03-google-publicada.png}
-\caption{Consola de Google Cloud: aplicación OAuth publicada en producción para usuarios externos.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/01-correo-confirmacion.png}
+\subcaption{Correo de confirmación recibido en un buzón de Gmail.}
+\label{fig:correo-confirmacion}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/03-google-publicada.png}
+\subcaption{Aplicación OAuth publicada en producción para usuarios externos.}
 \label{fig:google-publicada}
+\end{subfigure}
+\caption{Comprobación en producción: correo real recibido y aplicación de Google publicada.}
+\label{fig:produccion-verificacion}
 \end{figure}
 
 \section{Métricas del proyecto}
