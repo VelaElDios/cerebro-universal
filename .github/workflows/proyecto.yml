@@ -57,6 +57,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           NVIDIA_API_KEY: ${{ secrets.NVIDIA_API_KEY }}
+          DATOS_TOKEN: ${{ secrets.DATOS_TOKEN }}
+          DATOS_REPO: VelaElDios/cerebro-datos
           PYTHONUNBUFFERED: "1"
           PRESUPUESTO_MINUTOS: "50"
 
