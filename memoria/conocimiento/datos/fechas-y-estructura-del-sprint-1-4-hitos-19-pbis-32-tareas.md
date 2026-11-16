@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)"
-temas: ["grada-colchonera", "saas", "scrum", "sprint"]
+temas: ["grada-colchonera", "saas", "scrum", "sprint", "hitos", "memoria-procesos", "pbi", "tareas"]
 claves: ["Sprint 1", "29/09/2026", "27/10/2026", "Hito 1", "Hito 2", "Hito 3", "Hito 4", "19 PBIs", "32 tareas", "P1-P19", "T1-T32", "MUST", "DoneTonic"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md"]

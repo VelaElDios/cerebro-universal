@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sprint"
-notas: 33
+notas: 34
 ---
 # sprint
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint» (este archivo se
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg|Contenido de los anexos por sprint en la memoria TFG]]
 - 🧪 [[memoria/conocimiento/recetas/convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto|Convención de ramas y PRs por hito/fase en el proyecto]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni|Proceso de 4 pasos para cerrar un hito y actualizar DoneTonic]]
 
@@ -54,4 +55,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint» (este archivo se
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[scrum]] · [[donetonic]] · [[alcance]] · [[requisitos]] · [[git]] · [[trazabilidad]] · [[decision]] · [[juego]] · [[cerebro]] · [[cronologia]]
+[[grada-colchonera]] · [[saas]] · [[scrum]] · [[donetonic]] · [[alcance]] · [[trazabilidad]] · [[requisitos]] · [[git]] · [[decision]] · [[hitos]] · [[memoria-procesos]] · [[juego]]

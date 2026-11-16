@@ -53,4 +53,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[memoria]] · [[latex]] · [[grada-colchonera]] · [[saas]] · [[figuras]] · [[plantilla]] · [[scrum]] · [[anexos]] · [[tablas]] · [[ia]] · [[ética]] · [[antecedentes]]
+[[memoria]] · [[latex]] · [[grada-colchonera]] · [[saas]] · [[figuras]] · [[plantilla]] · [[scrum]] · [[anexos]] · [[sprint]] · [[tablas]] · [[ia]] · [[ética]]

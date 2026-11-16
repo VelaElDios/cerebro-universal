@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Contenido de los anexos por sprint en la memoria TFG"
-temas: ["anexos", "memoria", "scrum", "tfg"]
+temas: ["anexos", "memoria", "scrum", "tfg", "anexo", "memoria-procesos", "sprint"]
 claves: ["anexos", "sprint", "planificación", "desarrollo", "revisión", "retrospectiva", "burndown", "trazabilidad"]
 proyectos: ["memoria-procesos"]
-fuentes: ["../memoria-procesos/fuentes/estructura-memoria.md"]
+fuentes: ["../memoria-procesos/fuentes/estructura-memoria.md", "fuentes/estructura-memoria.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"

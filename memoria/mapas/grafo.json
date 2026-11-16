@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16T17:03:23+01:00",
+ "generado": "2026-11-16T18:57:36+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1329,7 +1329,9 @@
    "temas": [
     "grada-colchonera",
     "saas",
-    "sprint"
+    "sprint",
+    "done",
+    "trazabilidad"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1378,7 +1380,11 @@
     "grada-colchonera",
     "saas",
     "scrum",
-    "sprint"
+    "sprint",
+    "hitos",
+    "memoria-procesos",
+    "pbi",
+    "tareas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1865,7 +1871,8 @@
    "temas": [
     "latex",
     "maquetacion",
-    "reglas-tfg"
+    "reglas-tfg",
+    "maquetación"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2570,7 +2577,8 @@
    "temas": [
     "latex",
     "maquetacion",
-    "subcaption"
+    "subcaption",
+    "figuras"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2800,7 +2808,10 @@
     "anexos",
     "memoria",
     "scrum",
-    "tfg"
+    "tfg",
+    "anexo",
+    "memoria-procesos",
+    "sprint"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2850,7 +2861,8 @@
    "temas": [
     "latex",
     "maquetacion",
-    "reglas-tfg"
+    "reglas-tfg",
+    "maquetación"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2884,7 +2896,9 @@
     "grada-colchonera",
     "metodologia",
     "saas",
-    "scrum"
+    "scrum",
+    "done",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2915,7 +2929,9 @@
    "temas": [
     "latex",
     "memoria",
-    "tfg"
+    "tfg",
+    "esiiab",
+    "estructura"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2955,6 +2971,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni.md"
+  },
+  {
+   "id": "receta:evitar-paginas-casi-vacias-regla-9",
+   "tipo": "receta",
+   "titulo": "Evitar páginas casi vacías (Regla 9)",
+   "temas": [
+    "latex",
+    "maquetación",
+    "reglas-tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9.md"
   },
   {
    "id": "receta:exportar-resultados-json-obligatorio-para-verificacion-autom",
@@ -3031,7 +3062,9 @@
     "donetonic",
     "grada-colchonera",
     "saas",
-    "scrum"
+    "scrum",
+    "github",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3492,7 +3525,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 64,
+   "peso": 65,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -3625,7 +3658,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -3891,7 +3924,7 @@
    "id": "tema:sprint",
    "tipo": "tema",
    "titulo": "sprint",
-   "peso": 33,
+   "peso": 34,
    "ruta": "memoria/temas/sprint.md"
   },
   {
@@ -4115,7 +4148,7 @@
    "id": "tema:hitos",
    "tipo": "tema",
    "titulo": "hitos",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/hitos.md"
   },
   {
@@ -4131,6 +4164,41 @@
    "titulo": "base-datos",
    "peso": 2,
    "ruta": "memoria/temas/base-datos.md"
+  },
+  {
+   "id": "tema:done",
+   "tipo": "tema",
+   "titulo": "done",
+   "peso": 2,
+   "ruta": "memoria/temas/done.md"
+  },
+  {
+   "id": "tema:trazabilidad",
+   "tipo": "tema",
+   "titulo": "trazabilidad",
+   "peso": 4,
+   "ruta": "memoria/temas/trazabilidad.md"
+  },
+  {
+   "id": "tema:memoria-procesos",
+   "tipo": "tema",
+   "titulo": "memoria-procesos",
+   "peso": 4,
+   "ruta": "memoria/temas/memoria-procesos.md"
+  },
+  {
+   "id": "tema:pbi",
+   "tipo": "tema",
+   "titulo": "pbi",
+   "peso": 1,
+   "ruta": "memoria/temas/pbi.md"
+  },
+  {
+   "id": "tema:tareas",
+   "tipo": "tema",
+   "titulo": "tareas",
+   "peso": 1,
+   "ruta": "memoria/temas/tareas.md"
   },
   {
    "id": "tema:history",
@@ -4196,13 +4264,6 @@
    "ruta": "memoria/temas/videojuegos.md"
   },
   {
-   "id": "tema:trazabilidad",
-   "tipo": "tema",
-   "titulo": "trazabilidad",
-   "peso": 3,
-   "ruta": "memoria/temas/trazabilidad.md"
-  },
-  {
    "id": "tema:correo",
    "tipo": "tema",
    "titulo": "correo",
@@ -4227,8 +4288,15 @@
    "id": "tema:reglas-tfg",
    "tipo": "tema",
    "titulo": "reglas-tfg",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/reglas-tfg.md"
+  },
+  {
+   "id": "tema:maquetación",
+   "tipo": "tema",
+   "titulo": "maquetación",
+   "peso": 3,
+   "ruta": "memoria/temas/maquetación.md"
   },
   {
    "id": "tema:camara",
@@ -4511,6 +4579,13 @@
    "ruta": "memoria/temas/formula.md"
   },
   {
+   "id": "tema:anexo",
+   "tipo": "tema",
+   "titulo": "anexo",
+   "peso": 1,
+   "ruta": "memoria/temas/anexo.md"
+  },
+  {
    "id": "tema:concurrencia-optimista",
    "tipo": "tema",
    "titulo": "concurrencia-optimista",
@@ -4539,18 +4614,25 @@
    "ruta": "memoria/temas/bootstrap.md"
   },
   {
-   "id": "tema:archivos",
+   "id": "tema:esiiab",
    "tipo": "tema",
-   "titulo": "archivos",
+   "titulo": "esiiab",
    "peso": 1,
-   "ruta": "memoria/temas/archivos.md"
+   "ruta": "memoria/temas/esiiab.md"
   },
   {
    "id": "tema:estructura",
    "tipo": "tema",
    "titulo": "estructura",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/estructura.md"
+  },
+  {
+   "id": "tema:archivos",
+   "tipo": "tema",
+   "titulo": "archivos",
+   "peso": 1,
+   "ruta": "memoria/temas/archivos.md"
   },
   {
    "id": "tema:json",
@@ -4572,6 +4654,13 @@
    "titulo": "registro",
    "peso": 1,
    "ruta": "memoria/temas/registro.md"
+  },
+  {
+   "id": "tema:github",
+   "tipo": "tema",
+   "titulo": "github",
+   "peso": 1,
+   "ruta": "memoria/temas/github.md"
   },
   {
    "id": "tema:ci",
@@ -6955,6 +7044,16 @@
   },
   {
    "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "a": "tema:done",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -7051,6 +7150,26 @@
   {
    "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
    "a": "tema:sprint",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:hitos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:pbi",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:tareas",
    "tipo": "trata"
   },
   {
@@ -8066,6 +8185,11 @@
   {
    "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
    "a": "tema:reglas-tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "a": "tema:maquetación",
    "tipo": "trata"
   },
   {
@@ -10075,6 +10199,11 @@
   },
   {
    "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -10500,6 +10629,21 @@
   },
   {
    "de": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
+   "a": "tema:anexo",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
+   "a": "tema:sprint",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -10610,6 +10754,11 @@
   },
   {
    "de": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
+   "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -10670,6 +10819,16 @@
   },
   {
    "de": "receta:definicion-de-hecho-dod-para-tareas-e-hitos",
+   "a": "tema:done",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:definicion-de-hecho-dod-para-tareas-e-hitos",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:definicion-de-hecho-dod-para-tareas-e-hitos",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -10716,6 +10875,16 @@
   {
    "de": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
    "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
+   "a": "tema:esiiab",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
+   "a": "tema:estructura",
    "tipo": "trata"
   },
   {
@@ -10801,6 +10970,31 @@
   {
    "de": "receta:estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni",
    "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:evitar-paginas-casi-vacias-regla-9",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:evitar-paginas-casi-vacias-regla-9",
+   "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:evitar-paginas-casi-vacias-regla-9",
+   "a": "tema:reglas-tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:evitar-paginas-casi-vacias-regla-9",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:evitar-paginas-casi-vacias-regla-9",
+   "a": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
    "tipo": "enlaza"
   },
   {
@@ -10961,6 +11155,16 @@
   {
    "de": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
    "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
+   "a": "tema:github",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
+   "a": "tema:memoria-procesos",
    "tipo": "trata"
   },
   {

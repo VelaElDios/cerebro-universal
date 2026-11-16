@@ -56,4 +56,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[plantilla]] · [[grada-colchonera]] · [[scrum]] · [[figuras]] · [[anexos]] · [[saas]] · [[tablas]] · [[tikz]] · [[pgfplots]] · [[general]]
+[[tfg]] · [[latex]] · [[plantilla]] · [[grada-colchonera]] · [[scrum]] · [[figuras]] · [[anexos]] · [[saas]] · [[sprint]] · [[tablas]] · [[tikz]] · [[pgfplots]]

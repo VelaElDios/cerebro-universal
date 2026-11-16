@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)"
-temas: ["latex", "memoria", "tfg"]
+temas: ["latex", "memoria", "tfg", "esiiab", "estructura"]
 claves: ["capítulos", "estructura", "introduccion", "antecedentes", "propuesta", "descripcion", "evaluacion", "conclusiones", "bibliografia", "anexos"]
 proyectos: ["memoria-procesos"]
-fuentes: ["../memoria-procesos/fuentes/estructura-memoria.md"]
+fuentes: ["../memoria-procesos/fuentes/estructura-memoria.md", "fuentes/estructura-memoria.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"

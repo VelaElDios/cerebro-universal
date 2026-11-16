@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «anexos» (este archivo se
 
 ## Temas relacionados
 
-[[memoria]] · [[tfg]] · [[ia]] · [[ética]] · [[scrum]]
+[[memoria]] · [[tfg]] · [[ia]] · [[ética]] · [[scrum]] · [[anexo]] · [[memoria-procesos]] · [[sprint]]

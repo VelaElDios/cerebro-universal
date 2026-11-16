@@ -72,4 +72,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[donetonic]] · [[saas]] · [[sprint]] · [[git]] · [[memoria]] · [[tfg]] · [[backend]] · [[github-flow]] · [[diseno-juego]] · [[api]] · [[base-datos]]
+[[grada-colchonera]] · [[donetonic]] · [[saas]] · [[sprint]] · [[git]] · [[memoria-procesos]] · [[memoria]] · [[tfg]] · [[backend]] · [[github-flow]] · [[diseno-juego]] · [[api]]

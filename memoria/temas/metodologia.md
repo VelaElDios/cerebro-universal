@@ -15,4 +15,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metodologia» (este archi
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[saas]] · [[capitulo-3]] · [[memoria]] · [[tfg]] · [[ci]] · [[git]]
+[[scrum]] · [[grada-colchonera]] · [[saas]] · [[capitulo-3]] · [[memoria]] · [[tfg]] · [[done]] · [[memoria-procesos]] · [[ci]] · [[git]]

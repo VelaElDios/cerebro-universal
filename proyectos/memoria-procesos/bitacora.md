@@ -8945,3 +8945,43 @@ Lo que hay que arreglar ahora (Paso 2 continuación):
 ## 2026-11-16 17:03 · 🧠 Conocimiento guardado
 
 [[como-agrupar-capturas-con-subfigure-en-latex]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]]
+
+## 2026-11-16 18:27 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Corrijo las referencias rotas que impiden compilar: en `04-descripcion.tex` cambio la referencia inexistente `fig:mat-tablero-s2` por la canónica `fig:donetonic-s2-tablero` (Anexo de desarrollo), y en `a1-desarrollo.tex` elimino la figura duplicada de `03-backlog.png` (que repetía el label `fig:donetonic-backlog`), añado la figura del tablero del Sprint 2 con la imagen correcta `04-tablero-sprint2.png` bajo el label `fig:donetonic-s2-tablero`, y unifico la referencia `fig:donetonic-s2-backlog` a `fig:donetonic-backlog`. Así desaparecen los «??» del PDF y el label duplicado.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 10: la imagen figs/capturas/donetonic/01-tablero-sprint.png sale 2 veces (chapters/03-propuesta.tex:34, chapters/a1-desarrollo.tex:223). Déjal…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para comprobar que ya no hay referencias rotas ni labels duplicados. Si pasa, continuar con el Paso 3: reescribir la sección «La aplicación: manual de usuario (SaaS)» en `chapters/04-descripcion.tex` como prosa explicativa con `subfigure` (dos por fila), eliminando las frases sueltas «La figura X muestra…».
+
+## 2026-11-16 18:57 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Duplicate image `figs/capturas/donetonic/01-tablero-sprint.png` still appears in `chapters/03-propuesta.tex` (label `fig:donetonic-tablero`) and `chapters/a1-desarrollo.tex` (label `fig:donetonic-tablero-s1`). Must remove the duplicate in `a1-desarrollo.tex` and reference the canonical figure.
+- Verification script passes (no broken references, all citations exist, 60 figures, 28 tables, 15214 words). Maquetación rules 8 and 9 (pages with single image / almost empty page) remain but are scheduled for Paso 6.
+- The broken reference `fig:mat-tablero-s2` in `04-descripcion.tex` was fixed to `fig:donetonic-s2-tablero` (verified by successful verification).
+- Sprint 2 board image `04-tablero-sprint2.png` correctly added in `a1-desarrollo.tex` with label `fig:donetonic-s2-tablero`.
+
+The builder's last attempt fixed the broken reference and added the correct Sprint 2 board, but the duplicate Sprint 1 board image remains in `a1-desarrollo.tex`. The text still references the local label `fig:donetonic-tablero-s1` instead of the canonical `fig:donetonic-tablero` from chapter 3. Need to remove the duplicate figure environment and update the referencing paragraph. Once that is done, Regla 10 will be satisfied for this image. Other duplicates were already fixed in previous steps (a2-material.tex, 04-descripcion.tex). Rules 8 and 9 are deferred to Paso 6.
+
+**Correcciones del revisor:** `(no aplicado: no encuentro el texto: «Las Figuras~\ref{fig:donetonic-graficas-s1},~\ref{fig:doneto») chapters/a1-desarrollo.tex`
+
+**Tareas para el constructor:**
+- Paso 2 (finalizar): Apply the above change to `a1-desarrollo.tex`, then run `comando_prueba` to confirm Regla 10 no longer flags the duplicate Sprint 1 board. (Rules 8 and 9 will still fail; they are handled in Paso 6.)
+- Paso 3: Rewrite the "La aplicación: manual de usuario (SaaS)" section in `chapters/04-descripcion.tex` as explanatory prose, grouping related screenshots into `subfigure` environments (two per row, `\begin{subfigure}{0.48\textwidth}`) with a general caption and per-subfigure captions. Eliminate all standalone "La figura X muestra…" sentences.
+- Paso 4: Same treatment for the game manual in `chapters/04b-juego.tex`.
+- Paso 5: Review chapters 01, 03, 05, 06 and annexes: merge sections of 1–2 lines, remove repeated paragraphs across chapters, improve style (no fluff, short sentences, explain the why).
+- Paso 6: Fix pages with a single image (Rule 8): reduce `height` to `0.42\textheight`, use `subfigure`, add surrounding text. Fix almost-empty page 101 (Rule 9): merge with previous section.
+- Run `comando_prueba` until both `verificar.py` and `revisar_maquetacion.py` pass.
+
+## 2026-11-16 18:57 · 🧠 Conocimiento guardado
+
+[[como-agrupar-capturas-con-subfigure-en-latex]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]

@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[reglas-tfg]] · [[subcaption]]
+[[latex]] · [[reglas-tfg]] · [[maquetación]] · [[subcaption]] · [[figuras]]

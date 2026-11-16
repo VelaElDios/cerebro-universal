@@ -4,8 +4,8 @@
    "id": "proyecto:aprendizaje",
    "type": "file",
    "file": "proyectos/aprendizaje/bitacora.md",
-   "x": -443,
-   "y": 1173,
+   "x": -461,
+   "y": 1069,
    "width": 380,
    "height": 130,
    "color": "6"
@@ -14,8 +14,8 @@
    "id": "tema:conocimiento",
    "type": "file",
    "file": "memoria/temas/conocimiento.md",
-   "x": 276,
-   "y": 621,
+   "x": 271,
+   "y": 507,
    "width": 364,
    "height": 110,
    "color": "5"

@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Estado de completitud de sprints y trazabilidad"
-temas: ["grada-colchonera", "saas", "sprint"]
+temas: ["grada-colchonera", "saas", "sprint", "done", "trazabilidad"]
 claves: ["Sprint 1", "Sprint 2", "hitos", "PBIs", "trazabilidad", "producción"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md"]
