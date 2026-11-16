@@ -23,16 +23,13 @@ import hashlib
 import json
 import os
 import re
-import shutil
-import subprocess
 from pathlib import Path
 
-from . import conocimiento, dataset, mapas, nucleo, repos
+from . import conocimiento, dataset, mapas, medios, nucleo, repos
 from . import proveedores as prov
 
 TROZO = 14_000
 MIN_PARA_TROZO = 5 * 60
-EXTENSIONES = {".md", ".txt", ".tex", ".csv", ".json", ".py", ".js", ".ts", ".html", ".sql", ".yml", ".yaml"}
 
 SISTEMA = """Eres el APRENDIZ de "Cerebro Universal", la memoria compartida de varias IAs. Lees un trozo de un
 documento y guardas lo que otra IA necesitaría saber en el futuro para trabajar sin volver a leerlo:
@@ -56,19 +53,6 @@ Responde EXACTAMENTE con estos bloques:
 
 def _md5(ruta: Path) -> str:
     return hashlib.md5(ruta.read_bytes()).hexdigest()
-
-
-def texto_de(ruta: Path) -> str | None:
-    """Texto de un archivo: PDF con pdftotext, texto plano tal cual. None si no se sabe leer."""
-    if ruta.suffix.lower() == ".pdf":
-        if not shutil.which("pdftotext"):
-            return None
-        r = subprocess.run(["pdftotext", "-layout", str(ruta), "-"], capture_output=True, text=True,
-                           errors="replace", timeout=180)
-        return r.stdout if r.returncode == 0 else None
-    if ruta.suffix.lower() in EXTENSIONES:
-        return ruta.read_text(encoding="utf-8", errors="replace")
-    return None
 
 
 def trocear(texto: str, tam: int = TROZO) -> list[str]:
@@ -117,19 +101,50 @@ def preparar_repos(carpeta: Path, cfg: dict) -> list[str]:
     return info
 
 
-def pendientes(carpeta: Path, cfg: dict, registro: dict) -> list[tuple[dict, str, Path, str]]:
-    """[(regla, etiqueta, ruta, md5)] de los archivos con trozos por aprender."""
+def _huella_texto(texto: str) -> str:
+    return hashlib.md5(texto.encode("utf-8")).hexdigest()
+
+
+def pendientes(carpeta: Path, cfg: dict, registro: dict) -> list[tuple[dict, str, Path | str, str, str]]:
+    """[(regla, etiqueta, origen, huella, tipo)] de lo que queda por aprender: archivos de cualquier tipo
+    y cada URL de los archivos de enlaces (enlaces*.txt, *.url)."""
     res = []
+
+    def anadir(regla, etiqueta, origen, huella, tipo):
+        r = registro.get(etiqueta)
+        if r and r.get("md5") == huella and (r.get("hechos", 0) >= r.get("total", 1) or r.get("error_fijo")):
+            return
+        res.append((regla, etiqueta, origen, huella, tipo))
+
     for regla in cfg.get("aprender_de", []):
         for etiqueta, ruta in repos.resolver(carpeta, regla["entrada"]):
-            if ruta.suffix.lower() not in EXTENSIONES | {".pdf"}:
+            if ruta.name.startswith(".") or ruta.name.lower() in ("leeme.md", "readme.md") and "temarios" in etiqueta:
                 continue
-            huella = _md5(ruta)
-            r = registro.get(etiqueta)
-            if r and r.get("md5") == huella and r.get("hechos", 0) >= r.get("total", 1):
-                continue
-            res.append((regla, etiqueta, ruta, huella))
+            tipo = medios.tipo_de(ruta.name)
+            if tipo == "enlaces":
+                for url in medios.enlaces_de(ruta):
+                    anadir(regla, url, url, _huella_texto(url), medios.tipo_de(url))
+            elif tipo != "desconocido":
+                anadir(regla, etiqueta, ruta, _md5(ruta), tipo)
     return res
+
+
+def _clave_transcripcion(etiqueta: str) -> str:
+    return "transcripciones/" + conocimiento.nombre_de(etiqueta)[:80] + ".md"
+
+
+def leer(carpeta: Path, etiqueta: str, origen, tipo: str, huella: str) -> tuple[str, bool]:
+    """Texto de cualquier cosa. Las transcripciones de una IA se guardan en el repo privado y se reutilizan."""
+    cache = carpeta / repos.CARPETA_REPOS / "datos" / _clave_transcripcion(etiqueta)
+    if cache.exists():
+        texto = cache.read_text(encoding="utf-8")
+        if f"huella: {huella}" in texto[:400]:
+            return texto.split("\n---\n", 1)[-1], True
+    texto, es_ia = medios.extraer(origen, tipo)
+    if es_ia:
+        dataset.adjuntar(_clave_transcripcion(etiqueta),
+                         f"origen: {etiqueta}\nhuella: {huella}\ntipo: {tipo}\nfecha: {nucleo.ahora():%Y-%m-%d}\n---\n{texto}")
+    return texto, es_ia
 
 
 def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
@@ -146,11 +161,22 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
         return "Nada nuevo que aprender."
 
     hechas_total, trozos_total, apuntes = 0, 0, []
-    for regla, etiqueta, ruta, huella in cola:
-        texto = texto_de(ruta)
-        if texto is None:
-            registro[etiqueta] = {"md5": huella, "hechos": 1, "total": 1, "notas": [], "error": "no se puede leer"}
+    for regla, etiqueta, origen, huella, tipo in cola:
+        try:
+            texto, es_ia = leer(carpeta, etiqueta, origen, tipo, huella)
+        except medios.NoSePuede as e:
+            registro[etiqueta] = {"md5": huella, "hechos": 0, "total": 1, "notas": [], "error": str(e)[:300],
+                                  "error_fijo": "no sé leer" in str(e)}
+            apuntes.append(f"- ⚠️ `{etiqueta}`: {str(e)[:200]}")
+            ruta_reg.write_text(json.dumps(registro, ensure_ascii=False, indent=1), encoding="utf-8")
             continue
+        except prov.TiempoAgotado as e:
+            apuntes.append(f"- ⏳ `{etiqueta}`: {e}")
+            break
+        except Exception as e:   # una web caída, un archivo roto...: se reintenta la próxima vez
+            apuntes.append(f"- ⚠️ `{etiqueta}`: no se pudo leer ({type(e).__name__}: {str(e)[:150]})")
+            continue
+        fuente_nota = f"{etiqueta} (transcripción de IA)" if es_ia else etiqueta
         trozos = trocear(texto)
         r = registro.get(etiqueta)
         if not r or r.get("md5") != huella:
@@ -173,7 +199,7 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
             idx = dataset.registrar(cfg_ruta.parent.name, "aprendiz", "aprender", ia, modelo, SISTEMA, mensaje, respuesta)
             secciones = nucleo.parsear(respuesta)["secciones"]
             guardadas = conocimiento.guardar(secciones.get("CONOCIMIENTO", ""), proyecto, verificacion=trozos[i],
-                                             fuente_por_defecto=etiqueta, temas_extra=temas)
+                                             fuente_por_defecto=fuente_nota, temas_extra=temas)
             dataset.resultado(idx, notas_guardadas=len(guardadas))
             r["notas"] = sorted(set(r["notas"]) | set(guardadas))
             r.setdefault("resumenes", []).append(secciones.get("RESUMEN", "").strip()[:600])
@@ -184,8 +210,12 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
             ruta_reg.write_text(json.dumps(registro, ensure_ascii=False, indent=1), encoding="utf-8")
         registro[etiqueta] = r
         if r["hechos"] >= len(trozos):
-            titulo = Path(etiqueta.split("/", 1)[-1]).stem.replace("-", " ").replace("_", " ")
-            fuente = conocimiento.guardar_fuente(titulo, etiqueta, temas, r["notas"], proyecto,
+            titulo = (etiqueta if tipo in ("web", "youtube")
+                      else Path(etiqueta.split("/", 1)[-1]).stem.replace("-", " ").replace("_", " "))
+            if not es_ia and tipo not in ("web", "youtube") and "/" in etiqueta.split(":", 1)[-1]:
+                carpeta_doc = Path(etiqueta.split(":", 1)[-1]).parent.name.strip(".")   # para que no choquen dos README
+                titulo = f"{titulo} ({carpeta_doc})" if carpeta_doc else titulo
+            fuente = conocimiento.guardar_fuente(titulo, fuente_nota, temas, r["notas"], proyecto,
                                                  resumen="\n".join(r.get("resumenes", []))[:3000])
             apuntes.append(f"- ✅ `{etiqueta}` aprendido entero: {len(r['notas'])} notas → [[{fuente}]]")
         else:

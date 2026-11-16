@@ -29,6 +29,12 @@ from pathlib import Path
 from . import nucleo
 
 _registros: list[dict] = []
+_adjuntos: dict[str, str] = {}     # otros archivos para el repo privado (p. ej. transcripciones/)
+
+
+def adjuntar(ruta_relativa: str, texto: str):
+    """Guarda un archivo más en el repo privado en la próxima subida (p. ej. la transcripción de un vídeo)."""
+    _adjuntos[ruta_relativa] = texto
 
 
 def registrar(proyecto: str, rol: str, etapa: str, proveedor: str, modelo: str, sistema: str, mensaje: str,
@@ -91,6 +97,10 @@ def _escribir_en(base: Path, proyecto: str):
     with gzip.open(destino, "at", encoding="utf-8") as f:
         for r in _registros:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
+    for rel, texto in _adjuntos.items():
+        destino_adj = base / rel
+        destino_adj.parent.mkdir(parents=True, exist_ok=True)
+        destino_adj.write_text(texto, encoding="utf-8")
     export = base / "export" / "conocimiento.jsonl"
     export.parent.mkdir(parents=True, exist_ok=True)
     export.write_text("".join(json.dumps(f, ensure_ascii=False) + "\n" for f in exportar_conocimiento()),
@@ -99,7 +109,7 @@ def _escribir_en(base: Path, proyecto: str):
 
 def subir(proyecto: str) -> str:
     """Guarda lo apuntado en el repo privado (o en local si no está configurado). Nunca tumba un paso."""
-    if not _registros:
+    if not _registros and not _adjuntos:
         return "sin llamadas que guardar"
     token, repo = os.environ.get("DATOS_TOKEN"), os.environ.get("DATOS_REPO")
     try:
@@ -108,6 +118,7 @@ def subir(proyecto: str) -> str:
             _escribir_en(local, proyecto)
             n = len(_registros)
             _registros.clear()
+            _adjuntos.clear()
             return f"{n} llamadas guardadas en local (.cerebro-datos/): falta DATOS_TOKEN/DATOS_REPO para el repo privado"
         tmp = Path(tempfile.mkdtemp())
         url = f"https://x-access-token:{token}@github.com/{repo}.git"
@@ -136,6 +147,7 @@ def subir(proyecto: str) -> str:
             raise RuntimeError("no se pudo subir tras 3 intentos")
         n = len(_registros)
         _registros.clear()
+        _adjuntos.clear()
         shutil.rmtree(tmp, ignore_errors=True)
         return f"{n} llamadas subidas al repo privado {repo}"
     except Exception as e:

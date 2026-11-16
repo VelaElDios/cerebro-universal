@@ -144,5 +144,36 @@ assert nota["confianza"] == "verificado" and "scrum" in nota["temas"], nota
 assert json.loads((apr / "procesados.json").read_text())["doc.md"]["hechos"] == 1
 assert any(n["tipo"] == "fuente" for n in conocimiento.todas())
 assert "Nada nuevo" in aprender.ejecutar(apr, cfg_apr, apr / "proyecto.json", apr / "bitacora.md")
+
+# 9. cualquier tipo de archivo: tipos, enlaces, HTML, Word, y una imagen «transcrita» (Gemini falso)
+from cerebro import medios
+assert medios.tipo_de("foto.JPG") == "imagen" and medios.tipo_de("clase.mp4") == "video"
+assert medios.tipo_de("nota.m4a") == "audio" and medios.tipo_de("enlaces.txt") == "enlaces"
+assert medios.tipo_de("https://youtu.be/abc") == "youtube" and medios.tipo_de("https://ejemplo.com/a") == "web"
+assert "Hola mundo" in medios.html_a_texto("<html><script>x=1</script><p>Hola <b>mundo</b></p></html>")
+try:
+    import docx
+    d = docx.Document(); d.add_paragraph("El patrón MVC separa modelo, vista y controlador."); d.save(str(apr / "mvc.docx"))
+    assert "MVC" in medios.extraer(apr / "mvc.docx", "office")[0]
+except ImportError:
+    print("(sin python-docx: no pruebo Word)")
+(apr / "pizarra.png").write_bytes(b"\x89PNG falso")
+(apr / "enlaces.txt").write_text("Mira esto: https://www.youtube.com/watch?v=xyz\n", encoding="utf-8")
+transcrito = []
+def falso(origen, tipo):
+    transcrito.append(tipo)
+    return "## Qué explica\nEl diagrama muestra que el cliente llama a la API y la API a la base de datos."
+medios.transcribir = falso
+prov.pedir_rol = lambda rol, *a, **k: ("<<<RESUMEN>>>\nDiagrama\n<<<CONOCIMIENTO>>>\ntipo: concepto\ntitulo: Flujo cliente API base de datos\n"
+                                       "cita: el cliente llama a la API y la API a la base de datos\ncontenido:\nEl cliente habla con la API y la API con la base de datos.", "falsa", "m")
+cfg_apr["aprender_de"] = [{"entrada": "*.png", "temas": ["arquitectura"]}, {"entrada": "enlaces.txt", "temas": ["video"]}]
+dataset._registros.clear(); dataset._adjuntos.clear()
+aprender.ejecutar(apr, cfg_apr, apr / "proyecto.json", apr / "bitacora.md")
+assert sorted(transcrito) == ["imagen", "youtube"], transcrito
+nota = {n["nombre"]: n for n in conocimiento.todas()}["flujo-cliente-api-base-de-datos"]
+assert nota["confianza"] == "verificado" and "transcripción" in nota["fuentes"][0], nota
+assert any(k.startswith("transcripciones/") for k in dataset._adjuntos)
+reg = json.loads((apr / "procesados.json").read_text())
+assert "https://www.youtube.com/watch?v=xyz" in reg and reg["pizarra.png"]["hechos"] == 1
 nucleo.RAIZ = raiz_real
 print("TODO OK")

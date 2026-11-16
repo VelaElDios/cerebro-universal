@@ -104,5 +104,10 @@
       "temas": []
     }
   ],
-  "ultima_ejecucion": "2026-11-16T12:51:07+01:00"
+  "ultima_ejecucion": "2026-11-16T12:51:07+01:00",
+  "pip": [
+    "python-docx",
+    "python-pptx",
+    "openpyxl"
+  ]
 }
