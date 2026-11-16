@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-16 19:43"
+actualizado: "2026-11-16 20:45"
 ---
 
 # memoria-procesos
@@ -21,16 +21,16 @@ Memoria de la asignatura Procesos de Ingeniería del Software (curso 2026-2027) 
 - Cada cifra sale de las fuentes, copiada tal cual (19 PBIs en el Sprint 1, pero el burndown de la entrega cuenta 16).
 
 ## Estado
-Versión 4 de la spec (16/11/2026): la memoria compila y `verificar.py` pasa, pero `revisar_maquetacion.py` falla por:
-- Regla 8: 4 páginas con una sola imagen (páginas 42, 43, 44, 48) — **en corrección: Paso 3 reescribe manuales con subfigure (hecho parcial en 04-descripcion.tex), Paso 4 hará lo mismo en 04b-juego.tex**.
+Versión 4 de la spec (16/11/2026): la memoria compila y `verificar.py` pasa, pero `revisar_maquetacion.py` fallaba por:
+- Regla 8: 4 páginas con una sola imagen (páginas 42, 43, 44, 48) — **en corrección: Paso 3 y 4 reescriben manuales con subfigure (hecho)**.
 - Regla 9: página 100 casi vacía (8 palabras) — para Paso 6.
 - Regla 10: **resuelto** (duplicado tablero Sprint 1 eliminado del anexo, referencia a canónica).
-- Regla 12: **en corrección** (frases «La figura X muestra…» eliminadas en 04-descripcion.tex; queda 04b-juego.tex).
+- Regla 12: **en corrección** (frases «La figura X muestra…» eliminadas en 04-descripcion.tex y 04b-juego.tex).
+- **Nuevo**: 27 figuras sin citar y una etiqueta duplicada — **corregido en este paso** (CAMBIAR arriba).
 
 ## Siguiente
-1. Paso 4: reescribir el manual del juego en `chapters/04b-juego.tex` como prosa con `subfigure` (dos por fila, `height=0.42\textheight`), eliminando frases sueltas.
-2. Paso 5: repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones cortas, eliminar repeticiones, mejorar estilo.
-3. Paso 6: corregir páginas sueltas (Regla 8) y página casi vacía (Regla 9).
-4. Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
+1. Paso 5: repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones cortas, eliminar repeticiones, mejorar estilo.
+2. Paso 6: corregir páginas sueltas (Regla 8) y página casi vacía (Regla 9).
+3. Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

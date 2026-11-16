@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "longtable"
-notas: 3
+notas: 4
 ---
 # longtable
 
@@ -10,6 +10,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «longtable» (este archivo
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4|Trazabilidad completa requisito → PBI → tarea → PR en anexo A4]] · ⚠️ propuesto
 
 ## Conceptos
 

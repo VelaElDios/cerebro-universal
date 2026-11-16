@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "trazabilidad"
-notas: 6
+notas: 7
 ---
 # trazabilidad
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este archivo se genera solo).
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4|Trazabilidad completa requisito → PBI → tarea → PR en anexo A4]] · ⚠️ propuesto
 
 ## Conceptos
 

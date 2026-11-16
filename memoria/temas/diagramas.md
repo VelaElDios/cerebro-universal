@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]]
+[[latex]] · [[pgf-umlsd]] · [[diagramas-secuencia]]

@@ -4,7 +4,7 @@ titulo: "Resumen y Abstract en elements/preambulo.tex con formato oficial"
 temas: ["abstract", "latex", "preambulo", "resumen"]
 claves: ["Resumen", "Abstract", "Palabras clave", "Keywords", "\\bft", "\\Large"]
 proyectos: ["memoria-procesos"]
-fuentes: ["elements/preambulo.tex (actual), spec del proyecto (Páginas iniciales)"]
+fuentes: ["elements/preambulo.tex (actual), spec del proyecto (Páginas iniciales)", "elements/preambulo.tex"]
 confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -16,5 +16,8 @@ En `elements/preambulo.tex` (tras la declaración de autoría): (1) `\cleardoubl
 
 > Resumen (≥ 150 palabras, dos sprints y juego) con «Palabras clave», y una página nueva Abstract en inglés (≥ 120 palabras) con «Keywords», mismo formato (`\Large{\bft{Abstract}}`).
 > — `elements/preambulo.tex (actual), spec del proyecto (Páginas iniciales)` (cita sin comprobar)
+
+## Ampliación (2026-11-16, memoria-procesos)
+El preámbulo oficial del TFG (elements/preambulo.tex) debe contener solo: declaración de autoría, Resumen (≥150 palabras, dos sprints y juego) con «Palabras clave», y Abstract (≥120 palabras, inglés) con «Keywords». No hay segunda portada. El formato usa \Large{\bft{Resumen}} y \Large{\bft{Abstract}} centrados, con \vskip1cm y \medskip. La declaración de autoría no se toca.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

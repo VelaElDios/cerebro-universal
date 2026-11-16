@@ -29,4 +29,7 @@ Para evitar páginas con una sola imagen y poco texto: 1) Reducir la altura de l
 ## Ampliación (2026-11-16, memoria-procesos)
 Para que las figuras compartan página con texto u otras figuras: (1) reducir altura de capturas a `height=0.42\textheight,keepaspectratio`; (2) agrupar capturas relacionadas en `subfigure` (dos por fila); (3) usar `[htbp]` en todas las figuras; (4) relajar parámetros de flotantes en el preámbulo: `\renewcommand{\topfraction}{0.85}`, `\renewcommand{\bottomfraction}{0.6}`, `\renewcommand{\textfraction}{0.12}`, `\renewcommand{\floatpagefraction}{0.8}`, `\setcounter{topnumber}{3}`, `\setcounter{totalnumber}{4}`. (5) Para diagramas TikZ/pgfplots grandes, envolver en `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`. (6) Si una sección queda muy corta, fusionarla con la anterior o convertirla en lista.
 
+## Ampliación (2026-11-16, memoria-procesos)
+Para evitar páginas con una sola imagen: 1) Limitar altura de capturas a 0.42\textheight con keepaspectratio. 2) Para diagramas TikZ/pgfplots grandes, envolver en adjustbox con max totalheight=0.6\textheight. 3) Relajar parámetros de flotantes en el preámbulo: \renewcommand{\topfraction}{0.85}, \renewcommand{\bottomfraction}{0.6}, \renewcommand{\textfraction}{0.12}, \renewcommand{\floatpagefraction}{0.8}, \setcounter{topnumber}{3}, \setcounter{totalnumber}{4}. 4) Usar [htbp] en todas las figuras. 5) Agrupar capturas relacionadas en subfigure para que ocupen menos páginas.
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

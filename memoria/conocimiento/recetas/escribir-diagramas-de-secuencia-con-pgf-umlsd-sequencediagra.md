@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Escribir diagramas de secuencia con pgf-umlsd (sequencediagram)"
-temas: ["diagramas", "latex", "pgf-umlsd"]
+temas: ["diagramas", "latex", "pgf-umlsd", "diagramas-secuencia"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock"]
 proyectos: ["memoria-procesos"]
-fuentes: ["spec del proyecto (bloque «Cómo se escribe un diagrama de secuencia»)"]
+fuentes: ["spec del proyecto (bloque «Cómo se escribe un diagrama de secuencia»)", "memoria/reglas-tfg.md (ejemplo en spec)"]
 confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -16,5 +16,8 @@ Reglas obligatorias para que compile y pase revisar_umlsd.py: (1) Entorno `seque
 
 > El entorno es sequencediagram (en minúsculas; no existen sequenceDiagram ni un entorno alt: para alternativas, sdblock). Participantes con \newthread/\newinst, llamadas anidadas con call (origen, mensaje, destino, respuesta), mensajes sueltos con \mess y bloques alternativos con sdblock.
 > — `spec del proyecto (bloque «Cómo se escribe un diagrama de secuencia»)` (cita sin comprobar)
+
+## Ampliación (2026-11-16, memoria-procesos)
+Entorno sequencediagram (minúsculas). Participantes con \newthread/\newinst. Llamadas anidadas con call (origen, mensaje, destino, respuesta). Mensajes sueltos con \mess. Bloques alternativos con sdblock. En textos de \mess, call, callself, \newinst: no \#, \_, \&, \%, \$, \{, \}, comandos (\texttt...), ni #, &, _, $ sueltos; en \mess tampoco paréntesis. Todo participante usado debe estar declarado en ese diagrama. Usar \resizebox{\textwidth}{!}{...} para que no se salgan; si ocupan casi una página, adjustbox con max totalheight=0.6\textheight.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[secuencia]] · [[sequencediagram]] · [[tikz]] · [[diagramas]]
+[[latex]] · [[secuencia]] · [[sequencediagram]] · [[tikz]] · [[diagramas]] · [[diagramas-secuencia]]

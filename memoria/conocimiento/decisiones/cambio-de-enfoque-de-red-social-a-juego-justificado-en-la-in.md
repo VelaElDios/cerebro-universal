@@ -1,7 +1,7 @@
 ---
 tipo: "decision"
 titulo: "Cambio de enfoque de red social a juego justificado en la introducción"
-temas: ["alcance", "decision", "memoria"]
+temas: ["alcance", "decision", "memoria", "introduccion"]
 claves: ["cambio de enfoque", "red social", "juego", "survivor", "Vampire Survivors"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md §2.3"]
@@ -18,5 +18,8 @@ La introducción (01-introduccion.tex) debe incluir una subsección explícita �
 > — `repo:saas/docs/documentacion-tecnica.md §2.3` (cita sin comprobar)
 
 Relacionado: [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]]
+
+## Ampliación (2026-11-16, memoria-procesos)
+En el capítulo 1 (Introducción) se debe explicar el cambio de alcance como una decisión justificada, no como un error. Los hitos del Sprint 1 no dependen de esa decisión (son la base SaaS), y el juego se ha construido encima después. Esto se cuenta en la sección «Alcance y cambio de enfoque» del capítulo 1.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

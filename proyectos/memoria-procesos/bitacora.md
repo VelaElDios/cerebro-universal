@@ -9086,3 +9086,75 @@ Qué he corregido yo: nada en este paso; los cambios del constructor son correct
 ## 2026-11-16 19:43 · 🧠 Conocimiento guardado
 
 [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]]
+
+## 2026-11-16 20:40 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+(sin resumen)
+
+**Archivos:** `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ - ERROR: chapters/04-descripcion.tex:601: la figura fig:app-inicio no se cita en el texto (usa \ref{fig:app-inicio})
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Paso 5: repasar capítulos 01, 03, 05, 06 y anexos (a1-desarrollo, a4-trazabilidad, a2-material, a3-uso-ia): fusionar secciones de 1–2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué). Después, Paso 6: corregir páginas con una sola imagen (Regla 8) y página casi vacía (Regla 9) tras los cambios anteriores. Finalmente, ejecutar comando_prueba hasta que verificar.py y revisar_maquetacion.py pasen en verde.
+
+## 2026-11-16 20:45 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Verificado que el test `verificar.py` falla por 27 figuras sin citar (13 en 04-descripcion.tex, 14 en 04b-juego.tex) y una etiqueta duplicada `fig:app-admin-busqueda`.
+- Confirmado en `chapters/04-descripcion.tex` que la figura contenedora y la subfigura comparten la misma etiqueta `fig:app-admin-busqueda` (líneas 661 y 667 aprox).
+- Comprobado que las capturas de SaaS (app/, hito4/) y del juego (juego/) están insertadas como `subfigure` con `height=0.42\textheight`, cumpliendo la Regla 8, pero faltan las referencias `\ref` en el texto.
+- Contrastado con `documentacion-tecnica.md` §16: las 24 capturas de `app/`, `hito4/`, `juego/`, `donetonic/`, `produccion/`, `prueba-tecnica/` existen en `figs/capturas/` y coinciden con los nombres de archivo usados en el código.
+- Números clave del proyecto (fuente `documentacion-tecnica.md` §14 y `gestion/README.md`): 19 PBIs / 32 tareas Sprint 1; 29 PBIs / 50 tareas Sprint 2; 322 pruebas totales (276 + CI); 5 migraciones; 23 endpoints API; 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones; 6 dependencias producción; ~2.300 LOC backend, ~1.150 LOC frontend, ~950 LOC CSS, ~14.800 LOC juego, ~5.050 LOC tests.
+- Fechas: Sprint 1 29/09–27/10/2026; Sprint 2 23/10–29/10/2026; Hito 4 completado 23/10/2026; backlog Sprint 2 registrado 29/10/2026.
+- Cambio de alcance: P19 (Cloud Run) añadido durante Sprint 1 por créditos educación.
+- DoD: tarea (código+PR+CI verde+docs) y hito (rama en main+desplegado+release).
+- Arquitectura en capas: Presentación, Cliente API, API, Lógica, Datos, Integraciones, Composición (doc §5.1).
+- 16 decisiones de diseño con justificación (doc §5.2).
+- Modelo E-R: users, session, juego_perfiles, juego_records (doc §6.2).
+- 13 diagramas de secuencia en doc §7 (registro, confirmación, login local, Google, baja, arranque, partida, contratar, pipeline, prueba técnica).
+- Seguridad: 13 amenazas con medidas (doc §8).
+- Juego: género survivor (Vampire Survivors), 7 fases evolución (doc §9.7).
+- Pruebas: 276 automáticas por fichero (doc §10.2).
+- CI/CD: 3 workflows + Render (doc §11).
+- Logs: 20+ eventos JSON, X-Request-Id, datos sensibles ocultos (doc §12.1).
+- 10 problemas resueltos documentados (doc §13).
+- 18 métricas en tabla (doc §14).
+- Conclusiones: 4 lecciones aprendidas; trabajo futuro 6 items (doc §15).
+
+Qué está bien:
+- El constructor eliminó correctamente la figura duplicada del tablero Sprint 1 del anexo, dejando solo la canónica en el capítulo 3 con `\ref` (Regla 10).
+- Redujo la altura de las capturas de DoneTonic a `0.42\textheight` para que compartan página (Regla 8).
+- La verificación automática pasa en estructura: 59 figuras, 28 tablas, 15202 palabras, sin referencias rotas, bibliografía correcta, todos los RF/RJ/RNF/PBIs/tareas presentes.
+- Los manuales de SaaS (04-descripcion.tex) y juego (04b-juego.tex) ya usan `subfigure` (dos por fila) y prosa explicativa, eliminando frases «La figura X muestra…».
+
+Qué está mal (por eso el veredicto es "cambios"):
+1. **27 figuras sin citar**: el test exige que cada `\label` de figura (incluidas subfiguras) tenga al menos un `\ref` en el texto. Faltan referencias para 13 figuras en 04-descripcion.tex y 14 en 04b-juego.tex.
+2. **Etiqueta duplicada** `fig:app-admin-busqueda`: la figura contenedora y una subfigura usan la misma etiqueta.
+3. **Página 100 casi vacía** (Regla 9) y **4 páginas con una sola imagen** (Regla 8) pendientes para Paso 6.
+
+Correcciones que hago yo directamente (CAMBIAR):
+- Añado `\ref{fig:...}` en la prosa junto a cada mención de la captura correspondiente.
+- Renombro la etiqueta duplicada de la figura contenedora a `fig:app-admin-full`.
+- Mantengo todo el resto del contenido (tablas, diagramas, texto) tal cual.
+
+Tareas para el constructor en el siguiente paso:
+- Paso 5: repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones de 1–2 líneas, eliminar repeticiones entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
+- Paso 6: corregir páginas con una sola imagen (Regla 8) y página casi vacía (Regla 9) tras los cambios actuales.
+- Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Paso 5: repasar capítulos 01, 03, 05, 06 y anexos (a1-desarrollo, a4-trazabilidad, a2-material, a3-uso-ia): fusionar secciones de 1–2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
+- Paso 6: corregir páginas con una sola imagen (Regla 8) y página casi vacía (Regla 9) tras los cambios actuales.
+- Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
+
+## 2026-11-16 20:45 · 🧠 Conocimiento guardado
+
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]]

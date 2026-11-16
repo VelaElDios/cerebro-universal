@@ -22,4 +22,7 @@ Relacionado: [[corregir-paginas-con-una-sola-imagen-regla-8]]
 ## Ampliación (2026-11-16, memoria-procesos)
 Si una sección (subsubsection, subsection) tiene solo 1–2 líneas de texto, no merece ser sección independiente. Opciones: (1) fusionar con la sección anterior añadiendo su contenido como párrafo; (2) convertir en un ítem de una lista enumerada o con viñetas; (3) si es un anexo con solo una tabla/figura, moverla al capítulo principal y dejar el anexo solo con la referencia. En la memoria: la página 100 (8 palabras) probablemente es una subsección de una línea en conclusiones o anexos; se fusionará en Paso 6.
 
+## Ampliación (2026-11-16, memoria-procesos)
+Si una sección tiene menos de 3-4 líneas de texto real, fundirla con la anterior o siguiente, o convertirla en un item de lista. Revisar el PDF página a página tras compilar. Las secciones de 1-2 líneas delatan un trabajo poco profesional.
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

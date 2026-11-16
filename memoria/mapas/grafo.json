@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-16T19:43:36+01:00",
+ "generado": "2026-11-16T20:45:00+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -600,7 +600,9 @@
    "temas": [
     "donetonic",
     "metricas",
-    "scrum"
+    "scrum",
+    "burndown",
+    "sprint"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2001,7 +2003,8 @@
    "temas": [
     "alcance",
     "decision",
-    "memoria"
+    "memoria",
+    "introduccion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2324,6 +2327,21 @@
    "ruta": "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md"
   },
   {
+   "id": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
+   "tipo": "decision",
+   "titulo": "Trazabilidad completa requisito → PBI → tarea → PR en anexo A4",
+   "temas": [
+    "anexo",
+    "longtable",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4.md"
+  },
+  {
    "id": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
    "tipo": "decision",
    "titulo": "Validación anti-trampas en servidor con reloj propio y rechazo de resultados imposibles",
@@ -2637,7 +2655,8 @@
    "temas": [
     "latex",
     "maquetacion",
-    "subcaption"
+    "subcaption",
+    "subfigure"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3004,7 +3023,8 @@
    "temas": [
     "diagramas",
     "latex",
-    "pgf-umlsd"
+    "pgf-umlsd",
+    "diagramas-secuencia"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3786,7 +3806,7 @@
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -3923,6 +3943,20 @@
    "ruta": "memoria/temas/scrum.md"
   },
   {
+   "id": "tema:burndown",
+   "tipo": "tema",
+   "titulo": "burndown",
+   "peso": 1,
+   "ruta": "memoria/temas/burndown.md"
+  },
+  {
+   "id": "tema:sprint",
+   "tipo": "tema",
+   "titulo": "sprint",
+   "peso": 35,
+   "ruta": "memoria/temas/sprint.md"
+  },
+  {
    "id": "tema:auth",
    "tipo": "tema",
    "titulo": "auth",
@@ -4026,13 +4060,6 @@
    "titulo": "alcance",
    "peso": 5,
    "ruta": "memoria/temas/alcance.md"
-  },
-  {
-   "id": "tema:sprint",
-   "tipo": "tema",
-   "titulo": "sprint",
-   "peso": 34,
-   "ruta": "memoria/temas/sprint.md"
   },
   {
    "id": "tema:pruebas",
@@ -4213,14 +4240,14 @@
    "id": "tema:anexo",
    "tipo": "tema",
    "titulo": "anexo",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/anexo.md"
   },
   {
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -4432,6 +4459,13 @@
    "titulo": "decision",
    "peso": 6,
    "ruta": "memoria/temas/decision.md"
+  },
+  {
+   "id": "tema:introduccion",
+   "tipo": "tema",
+   "titulo": "introduccion",
+   "peso": 1,
+   "ruta": "memoria/temas/introduccion.md"
   },
   {
    "id": "tema:base-de-datos",
@@ -4665,6 +4699,13 @@
    "ruta": "memoria/temas/subcaption.md"
   },
   {
+   "id": "tema:subfigure",
+   "tipo": "tema",
+   "titulo": "subfigure",
+   "peso": 1,
+   "ruta": "memoria/temas/subfigure.md"
+  },
+  {
    "id": "tema:mermaid",
    "tipo": "tema",
    "titulo": "mermaid",
@@ -4726,6 +4767,13 @@
    "titulo": "diagramas",
    "peso": 1,
    "ruta": "memoria/temas/diagramas.md"
+  },
+  {
+   "id": "tema:diagramas-secuencia",
+   "tipo": "tema",
+   "titulo": "diagramas-secuencia",
+   "peso": 1,
+   "ruta": "memoria/temas/diagramas-secuencia.md"
   },
   {
    "id": "tema:esiiab",
@@ -5710,6 +5758,16 @@
   {
    "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
    "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "tema:burndown",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "tema:sprint",
    "tipo": "trata"
   },
   {
@@ -8579,6 +8637,11 @@
   },
   {
    "de": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
+   "a": "tema:introduccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -9136,6 +9199,26 @@
    "de": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
    "a": "tema:orquestador",
    "tipo": "trata"
+  },
+  {
+   "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
+   "a": "tema:anexo",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
@@ -10439,6 +10522,11 @@
   },
   {
    "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -11145,6 +11233,11 @@
   {
    "de": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
    "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
+   "a": "tema:diagramas-secuencia",
    "tipo": "trata"
   },
   {

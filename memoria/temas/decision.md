@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «decision» (este archivo 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[alcance]] · [[donetonic]] · [[scrum]] · [[memoria]] · [[escalas]] · [[latex]] · [[sus]] · [[usabilidad]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[alcance]] · [[donetonic]] · [[scrum]] · [[memoria]] · [[introduccion]] · [[escalas]] · [[latex]] · [[sus]] · [[usabilidad]]

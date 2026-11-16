@@ -4,7 +4,7 @@ titulo: "Números clave del proyecto contrastados con fuentes"
 temas: ["metricas", "trazabilidad", "verificacion"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "82 tareas", "5 migraciones", "23 endpoints"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md"]
+fuentes: ["repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md §14 y repo:saas/docs/gestion/README.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -18,5 +18,8 @@ Cifras verificadas contra las fuentes para usar en la memoria sin inventar: 19 P
 > — `repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md` (cita sin comprobar)
 
 Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[metricas-comparativas-sprint-1-vs-sprint-2]]
+
+## Ampliación (2026-11-16, memoria-procesos)
+Todos los números mayores que 20 aparecen en las fuentes. Los pequeños (19, 29, 32, 50, 5, 23, 6, 10, 14, 16, 24, 26) también se han contrastado con las tablas de la documentación técnica y la gestión. El burndown de la entrega del Sprint 1 cuenta 16 PBIs (P1–P14, P18, P19) porque P15–P17 son del Hito 4 y se entregaron después.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

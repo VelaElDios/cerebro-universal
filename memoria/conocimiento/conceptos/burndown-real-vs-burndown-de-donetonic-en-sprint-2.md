@@ -1,10 +1,10 @@
 ---
 tipo: "concepto"
 titulo: "Burndown real vs. burndown de DoneTonic en Sprint 2"
-temas: ["donetonic", "metricas", "scrum"]
+temas: ["donetonic", "metricas", "scrum", "burndown", "sprint"]
 claves: ["burndown", "DoneTonic", "recta", "registro al cierre"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/documentacion-tecnica.md §4.5, repo:saas/docs/gestion/README.md §Evolución Sprint 2"]
+fuentes: ["repo:saas/docs/documentacion-tecnica.md §4.5, repo:saas/docs/gestion/README.md §Evolución Sprint 2", "repo:saas/docs/gestion/README.md §Evolución del Sprint 2"]
 confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
@@ -18,5 +18,8 @@ En el anexo de desarrollo (a1-desarrollo.tex) hay que mostrar DOS burndowns del 
 > — `repo:saas/docs/documentacion-tecnica.md §4.5, repo:saas/docs/gestion/README.md §Evolución Sprint 2` (cita sin comprobar)
 
 Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]]
+
+## Ampliación (2026-11-16, memoria-procesos)
+En el anexo A1 (Desarrollo) se deben mostrar ambos: la gráfica de DoneTonic (recta) y el burndown real (pgfplots con fechas de fusión de PRs: 23/10, 24/10, 26/10, 29/10). Explicar explícitamente que la recta se debe al registro tardío del backlog. La tabla de evolución real usa PBIs pendientes por fecha de último PR de cada PBI.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
