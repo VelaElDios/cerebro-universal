@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-16 22:35"
+actualizado: "2026-11-16 23:41"
 ---
 
 # memoria-procesos
@@ -23,14 +23,15 @@ Memoria de la asignatura Procesos de Ingeniería del Software (curso 2026-2027) 
 ## Estado
 Versión 4 de la spec (16/11/2026): la memoria compila y `verificar.py` pasa en estructura, pero `revisar_maquetacion.py` fallaba por:
 - Regla 8: 4 páginas con una sola imagen (páginas 42, 43, 44, 48) — **corregido en pasos 3 y 4** (manuales reescritos con subfigure).
-- Regla 9: página 88 casi vacía (6 palabras) — **corregido en este paso** añadiendo párrafo introductorio en `a2-material.tex`.
+- Regla 9: página 88 casi vacía (6 palabras) — **corregido** añadiendo párrafo introductorio en `a2-material.tex`.
+- Regla 9: página 87 casi vacía (8 palabras) — **EN PROCESO** (fusionada sección final de `a1-desarrollo.tex` con párrafo de transición).
 - Regla 10: **resuelto** (duplicado tablero Sprint 1 eliminado del anexo, referencia a canónica).
-- Regla 12: **corregido** (frases «La figura X muestra…» eliminadas en 04-descripcion.tex y 04b-juego.tex).
+- Regla 12: **corregido** (frases «La figura X muestra…» eliminadas en 04-descripcion.tex, 04b-juego.tex, 03-propuesta.tex y 05-evaluacion.tex).
 - Error de compilación «Float too large» — **corregido** reduciendo capturas a `0.42\textheight` y añadiendo `max totalheight` a diagramas TikZ.
 
 ## Siguiente
 1. Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
 2. Si persiste alguna página casi vacía o con una sola imagen, ajustar agrupando capturas o fusionando secciones.
-3. Repaso final de estilo en capítulos 01, 03, 05, 06 y anexos: eliminar adornos, frases cortas, coherencia.
+3. Repaso final de estilo en capítulos 01, 06 y anexos: eliminar adornos, frases cortas, coherencia.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

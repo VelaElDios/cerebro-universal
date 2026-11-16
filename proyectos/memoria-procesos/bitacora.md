@@ -9273,3 +9273,67 @@ El constructor solucionó el error «Float too large» dividiendo la figura de 8
 - Ejecutar `comando_prueba` para confirmar que `verificar.py` y `revisar_maquetacion.py` pasan en verde.
 - Si persiste alguna página casi vacía o con una sola imagen (Reglas 8 y 9), ajustar agrupando capturas en subfiguras o fusionando secciones cortas en los capítulos 01, 03, 05, 06 y anexos.
 - Revisar estilo global: eliminar adornos, frases cortas, explicar el porqué, coherencia entre capítulos.
+
+## 2026-11-16 23:36 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+He reescrito el capítulo 03 para que cumpla la spec: cubre los dos sprints (el Sprint 2 no aparecía), elimina los adornos y el pipeline duplicado (ahora se remite a la Figura~\ref{fig:pipeline} del capítulo 05), corrige el «Se consideró» y añade la planificación y el backlog de DoneTonic con `\ref`. En el capítulo 05 he eliminado las frases sueltas «La figura X ilustra/demuestra…» integrándolas en la prosa y he aclarado la coherencia del número de pruebas (276 en `main` al cerrar el Sprint 2; 322 con la Fase 7 posterior), dato que también aparecía como 322 en el RNF-04.
+
+**Archivos:** `chapters/03-propuesta.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 9: la página 87 del PDF está casi vacía (8 palabras): funde esa sección o línea suelta con la anterior.
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba`: con el párrafo introductorio que el revisor añadió en `a2-material.tex`, la Regla 9 (página 88 casi vacía) debería pasar en verde junto con `verificar.py`. Si persiste alguna página casi vacía o con una sola imagen, localizarla en el PDF y fusionar esa sección con la anterior o agrupar las capturas en subfiguras. Después, eliminar las frases sueltas «La figura X muestra…» que aún quedan en `chapters/04-descripcion.tex` (fig:capas, fig:modelo-datos y los cinco diagramas de secuencia) y en `chapters/04b-juego.tex` (fig:juego-arquitectura, fig:sec-partida, fig:sec-contratar), integrando cada figura en la prosa que la explica; y por último el repaso de estilo de `01-introduccion.tex`, `06-conclusiones.tex` y los anexos.
+
+## 2026-11-16 23:41 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 19 PBIs (P1–P19) y 32 tareas (T1–T32) → repo:saas/docs/documentacion-tecnica.md §4.1 y repo:saas/docs/gestion/README.md tabla «Backlog y estado del Sprint 1»
+- Sprint 2: 29 PBIs (P20–P48) y 50 tareas (T33–T82) → repo:saas/docs/documentacion-tecnica.md §4.1 y repo:saas/docs/gestion/README.md tabla «Backlog y estado del Sprint 2»
+- Fechas Sprint 1: 29/09/2026 – 27/10/2026 → repo:saas/docs/documentacion-tecnica.md §2.3
+- Fechas Sprint 2: 23/10/2026 – 29/10/2026 → repo:saas/docs/documentacion-tecnica.md §2.3
+- 13 RF (RF-01 a RF-13) → repo:saas/docs/documentacion-tecnica.md §3.1 tabla
+- 20 RJ (RJ-01 a RJ-20) → repo:saas/docs/documentacion-tecnica.md §3.2 tabla
+- 12 RNF (RNF-01 a RNF-12) → repo:saas/docs/documentacion-tecnica.md §3.3 tabla
+- 276 pruebas automáticas totales (140 Sprint 1 + 136 juego) → repo:saas/docs/documentacion-tecnica.md §10.2 tabla
+- 5 migraciones SQL (001–005) → repo:saas/docs/documentacion-tecnica.md §6.1 módulo db/migrations
+- 23 endpoints de API → repo:saas/docs/documentacion-tecnica.md §14 tabla «Métricas del proyecto»
+- Despliegue en Google Cloud Run (principal) y Render (alternativo) → repo:saas/docs/documentacion-tecnica.md §11 tabla workflows
+- 8 secretos en Secret Manager para Cloud Run → repo:saas/docs/hito4-configuracion.md §4
+- OAuth 2.0 con Google (RFC 6749) → repo:saas/docs/documentacion-tecnica.md §7.4 y fuentes/bibliografia-extra.md clave rfc6749
+- bcrypt coste 10 (4 en pruebas) → repo:saas/docs/documentacion-tecnica.md §6.1 passwordHasher.js
+- 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → repo:saas/docs/documentacion-tecnica.md §14 tabla «Contenido jugable»
+- Burndown Sprint 1: 15→9→5→1→2→0 PBIs pendientes → repo:saas/docs/gestion/README.md tabla «Evolución del Sprint 1»
+- Burndown real Sprint 2: 28→11→11→2→2→2→0 PBIs pendientes → repo:saas/docs/gestion/README.md tabla «Evolución del Sprint 2»
+- Cambio de alcance P19 (Cloud Run) durante Sprint 1 → repo:saas/docs/documentacion-tecnica.md §4.1 y repo:saas/docs/gestion/README.md § «Cambio de alcance durante el sprint»
+- Backlog Sprint 2 registrado en DoneTonic al cierre (29/10) → repo:saas/docs/gestion/README.md § «Sprint 2» y § «Evolución del Sprint 2»
+- 50 pull requests fusionados (Sprint 1: #1–#34, #37–#41; Sprint 2: #36, #44–#56) → repo:saas/docs/gestion/README.md tablas de trazabilidad
+- Releases: hito-1, hito-2, hito-3, hito-4, sprint-1 → repo:saas/docs/gestion/README.md tabla «Backlog y estado del Sprint 1»
+- Arquitectura en capas: API → lógica → datos/integraciones → repo:saas/docs/documentacion-tecnica.md §5.1 diagrama y tabla
+- Modelo de datos: users, session, juego_perfiles, juego_records → repo:saas/docs/documentacion-tecnica.md §6.2 diagrama ER
+- Seguridad: bcrypt, cookie httpOnly/secure/sameSite, HMAC tokens, state OAuth, consultas parametrizadas → repo:saas/docs/documentacion-tecnica.md §8 tabla
+- Anti-trampas: reloj servidor, límites creíbles, concurrencia optimista (version) → repo:saas/docs/documentacion-tecnica.md §9.5
+- Determinismo juego: paso fijo 1/60 s, semilla → repo:saas/docs/documentacion-tecnica.md §9.4
+- Uso IA: Claude Opus 5.5 en desarrollo; modelos gratuitos (Gemini, NVIDIA, OpenRouter) en memoria → fuentes/uso-ia.md §«En el desarrollo» y §«En la redacción»
+- Resumen ≥150 palabras y Abstract ≥120 palabras con palabras clave/keywords → elements/preambulo.tex (comprobado visualmente)
+- Regla 9: página 87 casi vacía (8 palabras) — FALLA el test
+- Regla 12: frases «La figura X muestra…» eliminadas en 04-descripcion.tex y 04b-juego.tex — PENDIENTE verificar si quedan en 03-propuesta.tex y 05-evaluacion.tex
+- Regla 10: duplicado tablero Sprint 1 eliminado del anexo, referencia a canónica — CORREGIDO
+- Regla 8: páginas con una sola imagen — CORREGIDO en pasos 3 y 4 (manuales reescritos con subfigure)
+- Error «Float too large» — CORREGIDO reduciendo capturas a 0.42\textheight y añadiendo max totalheight a diagramas TikZ
+
+El constructor reescribió los capítulos 03 y 05 integrando el Sprint 2, eliminando adornos y el pipeline duplicado (remite a fig:pipeline del cap. 05), y eliminó frases sueltas «La figura X ilustra/demuestra…» integrándolas en la prosa. También aclaró la coherencia del número de pruebas (276 en main al cerrar Sprint 2; 322 con Fase 7 posterior). Sin embargo, `revisar_maquetacion.py` sigue fallando por **Regla 9**: la página 87 del PDF tiene solo 8 palabras (casi vacía). Esto suele ocurrir al final de un capítulo o anexo donde queda solo un título de sección o una línea suelta. También queda por verificar que no queden frases «La figura X muestra…» en 03-propuesta.tex y 05-evaluacion.tex (el constructor dice que las eliminó en 05, pero hay que confirmar). He corregido `a2-material.tex` añadiendo párrafo introductorio para la página 88, pero ahora la página 87 es la que falla. Probablemente sea el final de `a1-desarrollo.tex` o el inicio de `a2-material.tex`. Hay que fusionar la sección final corta con la anterior o añadir contenido.
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a2-material.tex`, `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que `verificar.py` y `revisar_maquetacion.py` pasan en verde (especialmente Regla 9: página 87 ya no casi vacía).
+- Si persiste alguna página casi vacía o con una sola imagen (Reglas 8 y 9), localizarla en el PDF y fusionar esa sección con la anterior o agrupar capturas en subfiguras.
+- Verificar que no queden frases sueltas «La figura X muestra…» en ningún capítulo (buscar patrones «La figura», «La Figura», «Figura X muestra», «Figura X ilustra», «Figura X demuestra»).
+- Repaso final de estilo en capítulos 01, 06 y anexos: eliminar adornos, frases cortas, explicar el porqué, coherencia entre capítulos.
+- Confirmar que todas las cifras del texto aparecen en las fuentes (test automático para >20, revisión manual para pequeñas).
