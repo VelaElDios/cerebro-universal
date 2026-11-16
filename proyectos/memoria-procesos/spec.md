@@ -14,10 +14,27 @@ con la **plantilla oficial del TFG de la ESIIAB-UCLM** (la que pidió el profeso
 - Y sobre todo el **proceso**: Scrum en DoneTonic, historias de usuario, DoD, GitHub Flow, CI/CD,
   trazabilidad requisito → PBI → tarea → PR y evolución de cada sprint.
 
-**Versión 3.** El borrador tiene una memoria de los Hitos 1–3 escrita con fuentes antiguas. Ahora el
-proyecto está cerrado (dos sprints) y **el juego SÍ se explica** (antes no). Se aprovecha lo que esté
-bien, pero casi todo hay que reescribirlo y ampliarlo: la memoria final debe ser **lo más completa
-posible** (orientativamente 80–120 páginas).
+**Versión 4 (16/11/2026): rehacerla bien.** El borrador ya tiene la memoria entera (unas 128 páginas): compila,
+`verificar.py` pasa y los datos están contrastados con las fuentes. **Pero a Javier no le gusta: no parece un
+TFG profesional.** El objetivo ahora no es añadir más, sino que quede como un TFG de verdad, cuidando el texto
+y la maquetación. Los datos que ya están bien se conservan; lo que hay que rehacer es cómo se cuenta y cómo se ve:
+
+- **Cumplir todas las REGLAS OBLIGATORIAS DE JAVIER** (`memoria/reglas-tfg.md`, se te pasan en cada mensaje).
+  `revisar_maquetacion.py` (va en `comando_prueba`) las comprueba en el código y en el PDF página a página.
+- **Una sola portada:** la de `elements/portada.tex`. En `elements/preambulo.tex` hay que borrar el bloque
+  «Segunda portada» (los `textblock` con los logos, el título y el autor) y dejar la declaración de autoría, el
+  Resumen y el Abstract.
+- **Nada de cadenas de «La figura X muestra…»:** ahora hay unas 45 frases sueltas así, una por captura. Es lo
+  que más delata un trabajo poco profesional. El manual de uso (§ «La aplicación») y el del juego se escriben
+  como prosa que explica qué hace el usuario y por qué la aplicación responde así, citando las figuras dentro
+  de esa explicación. Las capturas relacionadas van juntas en una figura con `subfigure` (de `subcaption`, ya
+  cargado; dos por fila, `\begin{subfigure}{0.48\textwidth}`), con un caption general y uno por subfigura.
+- **Ninguna imagen repetida:** las capturas de producción, prueba técnica y DoneTonic salen ahora en varios
+  capítulos. Cada una va una sola vez en el sitio donde más sentido tiene, y en el resto se cita con `\ref`.
+- **Sin secciones de una o dos líneas.** Cada sección tiene al menos un párrafo de verdad; si no da para más,
+  se funde con otra.
+- **Coherencia:** el mismo dato se cuenta igual en todos los capítulos, y sin repetir párrafos enteros entre
+  capítulos (por ejemplo, la descripción del pipeline: se explica una vez y en el resto se remite a ella).
 
 ## Fuentes: la única verdad
 
@@ -94,8 +111,10 @@ entrega cuenta 16 (P1–P14, P18 y P19); 32 + 50 = 82 tareas; 276 pruebas.
 - Capturas: solo las nuevas, con su ruta: `\includegraphics[...]{figs/capturas/juego/01-menu}`. Al menos
   4 de `app/`, 4 de `hito4/`, 8 de `juego/`, 5 de `donetonic/`, 2 de `produccion/` y 1 de
   `prueba-tecnica/`. Las antiguas (`figs/capturas/app-*.png`, `figs/capturas/donetonic-*.png`) ya no
-  valen. Verticales (móvil): `width=0.35\textwidth`; el resto, `width=0.9\textwidth` como máximo.
-- Diagramas de secuencia grandes: dentro de `\resizebox{\textwidth}{!}{...}` para que no se salgan.
+  valen. Verticales (móvil): `width=0.35\textwidth`; el resto, `width=0.9\textwidth` como máximo, y siempre
+  `height=0.42\textheight,keepaspectratio` (regla 8: ninguna página con una sola imagen).
+- Diagramas de secuencia grandes: dentro de `\resizebox{\textwidth}{!}{...}` para que no se salgan, y si
+  ocupan casi una página, con `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`.
 - **Cómo se escribe un diagrama de secuencia** (ejemplo compilado y probado con esta plantilla). El
   entorno es `sequencediagram` (en minúsculas; **no** existen `sequenceDiagram` ni un entorno `alt`: para alternativas, `sdblock`): participantes con
   `\newthread`/`\newinst`, llamadas anidadas con `call` (origen, mensaje, destino, respuesta), mensajes
@@ -151,20 +170,22 @@ caption, label y `\ref`, figuras con etiqueta fija, capturas mínimas por carpet
 el texto, todos los PBIs y tareas en el anexo de trazabilidad, mínimos de palabras, Resumen y
 Abstract, números > 20 en las fuentes, nada fuera del margen y el PDF sin «??».
 
-## Orden de trabajo sugerido (máximo 2 archivos por paso)
+## Orden de trabajo (versión 4, máximo 2 archivos por paso)
 
-1. `04-descripcion.tex`: requisitos, arquitectura (`fig:capas`), modelo de datos (`fig:modelo-datos`) y API.
-2. `04-descripcion.tex`: flujos con los 5 diagramas de secuencia, seguridad y la aplicación con capturas.
-3. `04b-juego.tex` completo (con `fig:sec-partida` y `fig:sec-contratar`) y `bib/ref.bib`.
-4. `a1-desarrollo.tex` (los dos sprints) y `a4-trazabilidad.tex`.
-5. `05-evaluacion.tex`.
-6. `01-introduccion.tex`, `03-propuesta.tex` y `06-conclusiones.tex`.
-7. `elements/preambulo.tex` (Resumen y Abstract), `a2-material.tex` y `a3-uso-ia.tex`.
-8. Repasar lo que diga el revisor hasta que `verificar.py` pase.
+1. `elements/preambulo.tex`: quitar la segunda portada.
+2. Imágenes repetidas: dejar cada una en un solo sitio y poner `\ref` en el resto
+   (`04-descripcion.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex`, `a2-material.tex`).
+3. `04-descripcion.tex`, sección «La aplicación»: reescribir el manual de uso como prosa, con las capturas
+   agrupadas en subfiguras.
+4. `04b-juego.tex`: lo mismo con el manual del juego.
+5. Repasar capítulo a capítulo (`01`, `03`, `05`, `06` y anexos): secciones cortas, párrafos repetidos y estilo.
+6. Repasar lo que digan `verificar.py`, `revisar_maquetacion.py` y el revisor hasta que todo pase.
 
 ## Criterios de terminado
 
-- [ ] `comando_prueba` pasa (compila y `verificar.py` OK).
+- [ ] `comando_prueba` pasa (compila, `verificar.py` OK y `revisar_maquetacion.py` OK).
+- [ ] Se cumplen todas las reglas de `memoria/reglas-tfg.md`, también las que no mide el script.
+- [ ] Ninguna cadena de «La figura X muestra…»: las capturas se explican dentro de la prosa.
 - [ ] El juego y el Sprint 2 están descritos; ningún capítulo dice que el Hito 4 esté pendiente.
 - [ ] El anexo de desarrollo tiene las dos secciones de sprint con el mismo esquema y explica la recta
       de las gráficas del Sprint 2.

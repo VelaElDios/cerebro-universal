@@ -8718,3 +8718,19 @@ Lo que hizo Claude en el borrador:
 - `verificar.py`: «\\todo» (salto de línea + «todo») ya no cuenta como marca de pendiente.
 
 Resultado: compila (128 páginas), `verificar.py` OK (75 figuras, 28 tablas, ~15.200 palabras). Copiado a `final/`.
+
+## 2026-11-16 · 🔁 Reabierto (versión 4 de la spec)
+
+Javier reabre el proyecto: la memoria de los dos sprints no le gusta, no parece un TFG profesional. Contador de pasos a 0, con un tope de 60.
+
+## Revisión humana (Javier)
+
+Quiero que esta vez quede **como un TFG de verdad**. Seguid la spec (versión 4) y **todas mis reglas** de `memoria/reglas-tfg.md`. Lo que no quiero ver más:
+
+- Dos portadas: solo la oficial de `elements/portada.tex`. Fuera la segunda portada de `elements/preambulo.tex`.
+- Frases sueltas «La figura X muestra…» una detrás de otra. Explicad las capturas dentro de la prosa y agrupadlas.
+- Imágenes repetidas en varios capítulos.
+- Páginas con una sola imagen, páginas casi vacías y secciones de una línea.
+- Tablas con las filas pisadas.
+
+Los datos que ya están bien no se tocan: se mejora cómo se cuenta y cómo se ve.

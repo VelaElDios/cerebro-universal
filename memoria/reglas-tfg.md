@@ -28,8 +28,9 @@ Reglas fijas de Javier para cualquier memoria con formato de TFG (Sprint 3 en ad
 ## Contenido
 
 12. **Cada entrega lleva solo lo de su sprint.** Por ejemplo, la del Sprint 1 va sin el juego. El título, el Resumen, el Abstract, la Introducción, las Conclusiones y los anexos tienen que coincidir con ese alcance.
-13. **Todo tiene sentido:** cada figura y tabla se cita en el texto y se explica, no hay texto de relleno y el orden de las secciones sigue el de la plantilla.
+13. **Prosa de TFG, no listas de capturas:** nada de una frase suelta «La figura X muestra…» por cada imagen. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así. Las que van juntas se agrupan con `subfigure`.
+14. **Todo tiene sentido:** cada figura y tabla se cita en el texto y se explica, no hay texto de relleno y el orden de las secciones sigue el de la plantilla.
 
 ## Cómo se comprueba
 
-14. Antes de marcar TERMINADO, el PDF se revisa página a página, y `revisar_maquetacion.py` debe salir en verde. Lo que no mide el script (que las tablas se lean bien y que el orden tenga sentido) lo comprueba el revisor.
+15. Antes de marcar TERMINADO, el PDF se revisa página a página, y `revisar_maquetacion.py` debe salir en verde. Lo que no mide el script (que las tablas se lean bien y que el orden tenga sentido) lo comprueba el revisor.
