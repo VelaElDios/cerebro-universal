@@ -8781,3 +8781,23 @@ Lo que he corregido yo: nada en este paso (el constructor debe hacer los cambios
 - Paso 4: lo mismo en chapters/04b-juego.tex para el manual del juego.
 - Paso 5: repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones de 1-2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
 - Paso 6: ejecutar comando_prueba y corregir hasta que pase (verificar.py + revisar_maquetacion.py en verde).
+
+## 2026-11-16 15:02 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+(sin resumen)
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 2 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Paso 3: reescribir la sección «La aplicación: manual de usuario (SaaS)» de chapters/04-descripcion.tex como prosa explicativa, agrupando capturas relacionadas en subfiguras (dos por fila con subcaption) y eliminando las frases sueltas «La figura X muestra…». Las capturas de app/ (inicio, registro, login, perfil, baja, admin, móvil, 404) y hito4/ (Google, correo, pendiente, confirmada, admin estados, privacidad) deben integrarse en el texto explicando qué hace el usuario y por qué la aplicación responde así.
+
+## 2026-11-16 15:08 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.

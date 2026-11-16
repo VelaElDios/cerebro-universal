@@ -764,87 +764,12 @@ La figura~\ref{fig:hito4-privacidad} muestra la página de política de privacid
 
 \subsection{Producción}
 
-La figura~\ref{fig:prod-correo} muestra el correo de confirmación real recibido en Gmail.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/01-correo-confirmacion.png}
-\caption{Correo de confirmación real recibido en Gmail.}
-\label{fig:prod-correo}
-\end{figure}
-
-La figura~\ref{fig:prod-actions} muestra GitHub Actions: CI y despliegue en Cloud Run en verde tras los PRs del Hito 4.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/02-actions-verde.png}
-\caption{GitHub Actions: CI y despliegue en Cloud Run en verde tras los PRs del Hito 4.}
-\label{fig:prod-actions}
-\end{figure}
-
-La figura~\ref{fig:prod-google} muestra Google Auth Platform: aplicación publicada en producción para usuarios externos.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/03-google-publicada.png}
-\caption{Google Auth Platform: aplicación publicada en producción para usuarios externos.}
-\label{fig:prod-google}
-\end{figure}
+El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (figura~\ref{fig:correo-confirmacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (figura~\ref{fig:actions-verde}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (figura~\ref{fig:google-publicada}). Estas evidencias se detallan en el Capítulo~\ref{cap:evaluacion}.
 
 \subsection{Prueba técnica}
 
-La figura~\ref{fig:prueba-permitido} muestra la prueba técnica: respuesta permitido: true en la app desplegada.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.7\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
-\caption{Prueba técnica: respuesta permitido: true en la app desplegada.}
-\label{fig:prueba-permitido}
-\end{figure}
+El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La figura~\ref{fig:prueba-tecnica-permitido} muestra una respuesta afirmativa para un dominio autorizado; el rechazo de un subdominio no reconocido se documenta en el Capítulo~\ref{cap:evaluacion}.
 
 \subsection{Gestión en DoneTonic}
 
-La figura~\ref{fig:dt-tablero-s1} muestra el tablero del Sprint 1 en DoneTonic al 100~\%: los 19 PBIs hechos.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/donetonic/01-tablero-sprint.png}
-\caption{Tablero del Sprint 1 en DoneTonic al 100~\%: los 19 PBIs hechos.}
-\label{fig:dt-tablero-s1}
-\end{figure}
-
-La figura~\ref{fig:dt-graficas-s1} muestra las gráficas Sprint Burndown y Sprint Burnup del Sprint 1 en DoneTonic.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/donetonic/02-graficas-sprint.png}
-\caption{Sprint Burndown y Sprint Burnup del Sprint 1 en DoneTonic.}
-\label{fig:dt-graficas-s1}
-\end{figure}
-
-La figura~\ref{fig:dt-backlog} muestra el Product Backlog de DoneTonic con los dos sprints.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/donetonic/03-backlog.png}
-\caption{Product Backlog de DoneTonic con los dos sprints.}
-\label{fig:dt-backlog}
-\end{figure}
-
-La figura~\ref{fig:dt-tablero-s2} muestra el tablero del Sprint 2 en DoneTonic al 100~\%: los 29 PBIs hechos.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/donetonic/04-tablero-sprint2.png}
-\caption{Tablero del Sprint 2 en DoneTonic al 100~\%: los 29 PBIs hechos.}
-\label{fig:dt-tablero-s2}
-\end{figure}
-
-La figura~\ref{fig:dt-pbi-detalle} muestra el detalle del PBI P44 en DoneTonic con historia de usuario y criterios de aceptación.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
-\caption{Detalle del PBI P44 en DoneTonic con historia de usuario y criterios de aceptación.}
-\label{fig:dt-pbi-detalle}
-\end{figure}
+El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (figura~\ref{fig:donetonic-graficas-s1}, Anexo~\ref{anx:desarrollo}), el Product Backlog con los dos sprints (figura~\ref{fig:donetonic-backlog}, Anexo~\ref{anx:desarrollo}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (figura~\ref{fig:mat-tablero-s2}, Anexo~\ref{anx:material}), y el detalle de un PBI con su historia de usuario y criterios de aceptación (figura~\ref{fig:dt-pbi-detalle}). La evolución real del Sprint 2, reconstruida a partir de las fechas de fusión de los PRs, se expone en el Anexo~\ref{anx:desarrollo}.
