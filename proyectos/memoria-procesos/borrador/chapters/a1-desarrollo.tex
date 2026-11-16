@@ -362,22 +362,25 @@ La Figura~\ref{fig:burndown-s2} muestra el burndown real del Sprint 2 según las
 \label{fig:burndown-s2}
 \end{figure}
 
-Las Figuras~\ref{fig:donetonic-s2-graficas},~\ref{fig:donetonic-backlog} y~\ref{fig:donetonic-s2-tablero} son las capturas de DoneTonic del Sprint 2 (tomadas el 29/10/2026): las gráficas en recta, el backlog con los 29 PBIs hechos y el tablero al 100\,\%.
+La Figura~\ref{fig:donetonic-s2-capturas} (subfiguras~\ref{fig:donetonic-s2-graficas} y~\ref{fig:donetonic-s2-tablero}) y la Figura~\ref{fig:donetonic-backlog} son las capturas de DoneTonic del Sprint 2 (tomadas el 29/10/2026): las gráficas en recta, el backlog con los 29 PBIs hechos y el tablero al 100\,\%.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/06-graficas-sprint2.png}
-\caption{Sprint Burndown y Sprint Burnup del Sprint 2 en DoneTonic: recta porque el backlog se registró al cerrar el sprint (29/10/2026).}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/06-graficas-sprint2.png}
+\subcaption{Gráficas del Sprint 2 en recta.}
 \label{fig:donetonic-s2-graficas}
-\end{figure}
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/04-tablero-sprint2.png}
-\caption{Tablero del Sprint 2 en DoneTonic al 100\,\%: los 29 PBIs (P20--P48) con sus etiquetas de fase, todos hechos.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/04-tablero-sprint2.png}
+\subcaption{Tablero del Sprint 2 al 100\,\%.}
 \label{fig:donetonic-s2-tablero}
+\end{subfigure}
+\caption{Capturas de DoneTonic del Sprint 2 (29/10/2026): gráficas en recta y tablero al 100\,\%.}
+\label{fig:donetonic-s2-capturas}
 \end{figure}
 
-\textbf{Explicación de la recta.} El backlog del Sprint 2 se registró en DoneTonic el 29/10/2026, al cerrar el sprint, con todos los PBIs ya en estado hecho; por eso el Sprint Burndown aparece como una línea recta que cae de 29 a 0 el último día, en lugar de una curva repartida en el tiempo.
-
-\textbf{Lecciones aprendidas.} Registrar el backlog al inicio del sprint habría dado una gráfica real de seguimiento; aun así, la trazabilidad tarea--PR del Anexo~\ref{anx:trazabilidad} documenta las fechas reales de cada entrega (23, 24, 26, 27 y 29 de octubre).
+\textbf{Explicación de la recta y lecciones aprendidas.} El backlog del Sprint 2 se registró en DoneTonic el 29/10/2026, al cerrar el sprint, con todos los PBIs ya en estado hecho; por eso el Sprint Burndown aparece como una línea recta que cae de 29 a 0 el último día, en lugar de una curva repartida en el tiempo. Registrar el backlog al inicio del sprint habría dado una gráfica real de seguimiento; aun así, la trazabilidad tarea--PR del Anexo~\ref{anx:trazabilidad} documenta las fechas reales de cada entrega (23, 24, 26, 27 y 29 de octubre).
