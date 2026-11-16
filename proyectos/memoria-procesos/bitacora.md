@@ -8734,3 +8734,50 @@ Quiero que esta vez quede **como un TFG de verdad**. Seguid la spec (versión 4)
 - Tablas con las filas pisadas.
 
 Los datos que ya están bien no se tocan: se mejora cómo se cuenta y cómo se ve.
+
+## 2026-11-16 12:23 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La verificación falla solo por un dato inventado: en `chapters/04-descripcion.tex` la tabla RNF-04 dice «305 pruebas», pero la fuente (§3.3 RNF-04 y §10.2/§14 de la documentación técnica) dice **322 pruebas** con `node:test`. Lo copio tal cual de la fuente. Además, el log de LuaLaTeX avisa de dos glifos que la fuente Carlito no tiene (★ y ≤) en `chapters/04b-juego.tex`; los sustituyo por `$\bigstar$` y `$\leq$` (amssymb ya está cargado) para que no salgan caracteres en blanco en el PDF.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 1: elements/preambulo.tex tiene una segunda portada (logos UCLM/ESII). Solo vale la portada oficial de elements/portada.tex.
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Siguiente paso (orden de trabajo v4, paso 1): quitar la «Segunda portada» de `elements/preambulo.tex` (los bloques `textblock` con logos, título y autor), dejando solo la declaración de autoría, el Resumen y el Abstract, para que haya una sola portada (`elements/portada.tex`). Después, el paso 2: dejar cada captura repetida (donetonic, produccion, prueba-tecnica) en un solo capítulo y sustituir el resto por `\ref` a la figura existente.
+
+## 2026-11-16 12:24 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test count: RNF-04 en tabla de requisitos no funcionales (chapters/04-descripcion.tex) decía «305 pruebas»; fuente §3.3 RNF-04 y §10.2/§14 de documentacion-tecnica.md dicen **322 pruebas** con node:test. El constructor lo corrigió a 322 ✓
+- Glifos faltantes: en chapters/04b-juego.tex había ★ (U+2605) y ≤ (U+2264) que la fuente Carlito no tiene; el constructor los cambió a $\bigstar$ y $\leq$ (amssymb cargado) ✓
+- Regla 1 (portada única): elements/preambulo.tex sigue teniendo el bloque «Segunda portada» con textblock de logos UCLM/ESII, título y autor. Solo debe quedar la portada oficial de elements/portada.tex, la declaración de autoría, el Resumen y el Abstract ❌
+- Regla 11: chapters/03-propuesta.tex:86 usa «->» en caption; debe ser $\rightarrow$ ❌
+- Regla 10 (imágenes repetidas): 6 capturas aparecen en varios capítulos (donetonic/01-tablero-sprint.png 5 veces, donetonic/02-graficas-sprint.png 5, produccion/01-correo-confirmacion.png 2, produccion/02-actions-verde.png 2, produccion/03-google-publicada.png 2, prueba-tecnica/01-dominio-permitido.png 2, donetonic/03-backlog.png 4, donetonic/04-tablero-sprint2.png 2). Cada una debe ir una sola vez y en el resto usar \ref ❌
+- Regla 8 (páginas con una sola imagen): páginas 43, 44, 45, 49, 54, 101 del PDF tienen solo una imagen con poco texto ❌
+- Regla 9 (páginas casi vacías): página 107 del PDF tiene 8 palabras ❌
+- verificar.py: pasó (75 figuras, 28 tablas, 15239 palabras) ✓
+- revisar_maquetacion.py: falla por las reglas arriba ❌
+
+El constructor corrigió bien el dato de pruebas (305→322) y los glifos faltantes, pero **no abordó el paso 1 del orden de trabajo v4**: quitar la «Segunda portada» de elements/preambulo.tex. Además, persisten violaciones de maquetación (imágenes repetidas, páginas con una sola imagen, flechas -> en captions, página casi vacía). El test de maquetación falla, por tanto el veredicto es «cambios».
+
+Lo que está bien: corrección del número de pruebas contrastado con la fuente (§10.2 y §14: 322 pruebas totales), sustitución de glifos por comandos LaTeX válidos.
+
+Lo que está mal: elements/preambulo.tex mantiene la segunda portada prohibida; 8 imágenes repetidas en múltiples capítulos; 6 páginas con una sola imagen; 1 caption con «->»; 1 página casi vacía.
+
+Lo que he corregido yo: nada en este paso (el constructor debe hacer los cambios de maquetación).
+
+**Correcciones del revisor:** `(cambio) elements/preambulo.tex`, `(cambio) chapters/03-propuesta.tex`
+
+**Tareas para el constructor:**
+- Paso 1 (este paso): ya se corrige elements/preambulo.tex (quitar segunda portada) y el caption con «->» en chapters/03-propuesta.tex.
+- Paso 2 (siguiente paso del constructor): eliminar imágenes repetidas. Dejar cada captura en un solo capítulo (donde más sentido tiene) y sustituir las demás por \ref a esa figura. Imágenes afectadas: donetonic/01-tablero-sprint.png, donetonic/02-graficas-sprint.png, produccion/01-correo-confirmacion.png, produccion/02-actions-verde.png, produccion/03-google-publicada.png, prueba-tecnica/01-dominio-permitido.png, donetonic/03-backlog.png, donetonic/04-tablero-sprint2.png. Revisar chapters/03-propuesta.tex, chapters/04-descripcion.tex, chapters/05-evaluacion.tex, chapters/a1-desarrollo.tex, chapters/a2-material.tex.
+- Paso 3: reescribir sección «La aplicación» de chapters/04-descripcion.tex como prosa (manual de usuario), agrupando capturas relacionadas en subfigure (dos por fila, \begin{subfigure}{0.48\textwidth}) con caption general y por subfigura.
+- Paso 4: lo mismo en chapters/04b-juego.tex para el manual del juego.
+- Paso 5: repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones de 1-2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
+- Paso 6: ejecutar comando_prueba y corregir hasta que pase (verificar.py + revisar_maquetacion.py en verde).

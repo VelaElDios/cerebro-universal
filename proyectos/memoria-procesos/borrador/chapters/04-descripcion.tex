@@ -81,7 +81,7 @@ La Tabla~\ref{tab:rnf} recoge los 12 requisitos no funcionales.
 RNF-01 & \textbf{Seguridad} de credenciales y sesiones & Hash bcrypt \cite{bcrypt}, cookie \path{httpOnly} + \path{secure} + \path{sameSite}, regeneración de la sesión, permisos en el servidor, consultas parametrizadas \\
 RNF-02 & \textbf{Secretos fuera del código} & Variables de entorno; Secret Manager en producción; la app no arranca si falta un secreto obligatorio \\
 RNF-03 & \textbf{Separación en capas} & API $\rightarrow$ lógica $\rightarrow$ datos/integraciones, con inyección de dependencias \\
-RNF-04 & \textbf{Pruebas automáticas} y CI obligatorio & 305 pruebas con \path{node:test}; las ramas protegidas exigen el CI en verde \\
+RNF-04 & \textbf{Pruebas automáticas} y CI obligatorio & 322 pruebas con \path{node:test}; las ramas protegidas exigen el CI en verde \\
 RNF-05 & \textbf{Despliegue continuo} en una URL pública & Cloud Run (principal) y Render (alternativo), sin intervención manual \\
 RNF-06 & \textbf{Disponibilidad y coste} & Escala a cero (capas gratuitas y créditos de educación); si una versión no arranca, sigue sirviendo la anterior \\
 RNF-07 & \textbf{Accesibilidad} & HTML semántico, foco gestionado al navegar, \path{aria-live} en los avisos, errores de formulario enlazados con \path{aria-describedby}, manejo con teclado, \path{prefers-reduced-motion} \\

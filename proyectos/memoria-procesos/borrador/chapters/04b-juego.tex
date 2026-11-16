@@ -29,7 +29,7 @@ El menú ofrece: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinacion
 \end{itemize}
 
 \subsection{Partida: oleadas, experiencia y mejoras}
-La partida es infinita: cada 30 segundos una oleada nueva y un jefe cada cuatro oleadas (el primero a 1:30). Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación salen marcadas con ★). La Figura~\ref{fig:juego-partida} muestra una partida en curso.
+La partida es infinita: cada 30 segundos una oleada nueva y un jefe cada cuatro oleadas (el primero a 1:30). Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación salen marcadas con $\bigstar$). La Figura~\ref{fig:juego-partida} muestra una partida en curso.
 
 \begin{figure}[htbp]
 \centering
@@ -280,7 +280,7 @@ Todo sintetizado con Web Audio: ondas de pulso (12,5\%, 25\% y 50\%), triángulo
 
 \begin{itemize}
     \item Al \textbf{empezar}, el servidor guarda la partida en curso con su propio reloj.
-    \item Al \textbf{terminar}, rechaza el resultado si la partida no es la que está en curso, si el tiempo supera lo transcurrido (con 15 s de margen) o 4 horas, o si los jefes, el nivel o las bajas no son creíbles para ese tiempo (\texttt{jefes ≤ 3 + t/50}, \texttt{nivel ≤ 8 + t/3}, \texttt{bajas ≤ 20·t + 50}).
+    \item Al \textbf{terminar}, rechaza el resultado si la partida no es la que está en curso, si el tiempo supera lo transcurrido (con 15 s de margen) o 4 horas, o si los jefes, el nivel o las bajas no son creíbles para ese tiempo (\texttt{jefes $\leq$ 3 + t/50}, \texttt{nivel $\leq$ 8 + t/3}, \texttt{bajas $\leq$ 20·t + 50}).
     \item De los \textbf{logros} que manda el cliente, solo apunta los que puede comprobar con lo que sabe (tiempo, jefes, bajas, jugador y entrenador); los de plantilla los calcula él.
     \item Cada cambio del perfil usa \textbf{concurrencia optimista} (\texttt{UPDATE ... WHERE version = \$n}) con reintentos.
     \item El \textbf{ranking} guarda la mejor partida de cada usuario con su mote y avatar, nunca el correo.
