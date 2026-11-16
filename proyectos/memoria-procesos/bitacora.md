@@ -8801,3 +8801,89 @@ Lo que he corregido yo: nada en este paso (el constructor debe hacer los cambios
 Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-16 16:02 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+El test falla por una referencia indefinida `fig:dt-pbi-detalle` en `chapters/04-descripcion.tex`. La imagen `08-pbi-detalle.png` existe en `figs/capturas/donetonic/` pero no se incluye en ningún capítulo. La añado en la sección «Gestión en DoneTonic» justo antes de la frase que la referencia, con el label correcto. También reviso `chapters/03-propuesta.tex` por si hubiera flechas `->` en captions (regla 11), aunque en la versión actual ya usan `$\rightarrow$`; dejo el archivo como está para no tocar lo que funciona.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 10: la imagen figs/capturas/donetonic/01-tablero-sprint.png sale 4 veces (chapters/03-propuesta.tex:34, chapters/a1-desarrollo.tex:221, chapte…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Paso 2 del orden de trabajo v4: eliminar imágenes repetidas. Las capturas de DoneTonic, producción y prueba técnica aparecen en varios capítulos. Hay que dejar cada una en un solo sitio (donde más sentido tiene) y sustituir las demás por `\ref` a la figura existente. Archivos a revisar: `chapters/03-propuesta.tex`, `chapters/04-descripcion.tex`, `chapters/05-evaluacion.tex`, `chapters/a1-desarrollo.tex`, `chapters/a2-material.tex`. Imágenes afectadas: donetonic/01-tablero-sprint.png, donetonic/02-graficas-sprint.png, produccion/01-correo-confirmacion.png, produccion/02-actions-verde.png, produccion/03-google-publicada.png, prueba-tecnica/01-dominio-permitido.png, donetonic/03-backlog.png, donetonic/04-tablero-sprint2.png.
+
+## 2026-11-16 16:06 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test `verificar.py`: PASS (67 figuras, 28 tablas, 15239 palabras)
+- Test `revisar_maquetacion.py`: FAIL — Regla 10 (imágenes repetidas): 8 imágenes aparecen en varios capítulos; Regla 8 (página con una sola imagen): páginas 42, 43, 44, 48, 96; Regla 9 (página casi vacía): página 102 (8 palabras)
+- Regla 1 (portada única): `elements/preambulo.tex` ya no tiene la «Segunda portada» (corregido en paso anterior) ✓
+- Regla 11 (flechas): `chapters/03-propuesta.tex` usa `$\rightarrow$` en caption ✓
+- Datos contrastados con fuentes:
+  - 322 pruebas totales → `documentacion-tecnica.md` §10.2 y §14: «Total 322» ✓
+  - 19 PBIs Sprint 1, 29 PBIs Sprint 2 → `gestion/README.md` tablas backlog ✓
+  - 32 + 50 = 82 tareas → `gestion/README.md` ✓
+  - 276 pruebas en `main` al cierre → `gestion/README.md` tabla métricas ✓
+  - 5 migraciones → `documentacion-tecnica.md` §6.1 ✓
+  - 23 endpoints API → `documentacion-tecnica.md` §6.4 ✓
+  - 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → `documentacion-tecnica.md` §14 ✓
+  - Fechas Sprint 1 (29/09–27/10) y Sprint 2 (23/10–29/10) → `documentacion-tecnica.md` §2.3 ✓
+  - Cambio de alcance P19 (Cloud Run) → `documentacion-tecnica.md` §4.1 y `gestion/README.md` ✓
+  - Backlog Sprint 2 registrado al cierre (29/10) → `gestion/README.md` §4.5 ✓
+  - Burndown Sprint 1: 15→9→5→1→2→0 → `gestion/README.md` tabla evolución ✓
+  - Burndown real Sprint 2: 28→11→11→2→2→2→0 → `gestion/README.md` tabla evolución ✓
+  - 13 pruebas domainPolicy → `documentacion-tecnica.md` §10.2 ✓
+  - 27 pruebas userService → `documentacion-tecnica.md` §10.2 ✓
+  - 16 pruebas api.auth → `documentacion-tecnica.md` §10.2 ✓
+  - 6 dependencias producción → `documentacion-tecnica.md` §14 ✓
+  - URL producción → `documentacion-tecnica.md` cabecera ✓
+  - Repositorio → `documentacion-tecnica.md` cabecera ✓
+  - Autor: Javier Vela → `documentacion-tecnica.md` cabecera ✓
+  - Asignatura: PIS 2026-2027 → `documentacion-tecnica.md` cabecera ✓
+
+Qué está bien:
+- La portada única (Regla 1) ya está corregida: `elements/preambulo.tex` solo tiene declaración de autoría, Resumen y Abstract.
+- El número de pruebas se corrigió a 322 (coincide con fuentes).
+- Los glifos ★ y ≤ en `04b-juego.tex` se cambiaron a $\bigstar$ y $\leq$.
+- La referencia `fig:dt-pbi-detalle` se añadió en `04-descripcion.tex`.
+- Estructura de capítulos y anexos coincide con la spec.
+
+Qué está mal (bloquea el aprobado):
+1. **Regla 10 (imágenes repetidas)**: 8 archivos de imagen se incluyen en varios capítulos. Cada uno debe aparecer una sola vez (en su capítulo «canónico») y en los demás usar `\ref`.
+   - `donetonic/01-tablero-sprint.png`: 4 veces (03-propuesta, a1-desarrollo×2, a2-material) → canónico: **03-propuesta.tex** (fig:donetonic-tablero)
+   - `donetonic/02-graficas-sprint.png`: 4 veces (a1-desarrollo×3, a2-material) → canónico: **a1-desarrollo.tex** (fig:donetonic-graficas-s1)
+   - `donetonic/03-backlog.png`: 3 veces (a1-desarrollo×2, a2-material) → canónico: **a1-desarrollo.tex** (fig:donetonic-backlog)
+   - `donetonic/04-tablero-sprint2.png`: 2 veces (a1-desarrollo, a2-material) → canónico: **a1-desarrollo.tex** (fig:donetonic-s2-tablero) — *ojo: a1-desarrollo.tex línea 393 usa erróneamente 01-tablero-sprint.png para este label*
+   - `donetonic/06-graficas-sprint2.png`: 2 veces (a1-desarrollo, a2-material) → canónico: **a1-desarrollo.tex** (fig:donetonic-s2-graficas)
+   - `produccion/01-correo-confirmacion.png`: 2 veces (04-descripcion, 05-evaluacion) → canónico: **05-evaluacion.tex** (fig:correo-confirmacion)
+   - `produccion/02-actions-verde.png`: 2 veces (04-descripcion, 05-evaluacion) → canónico: **05-evaluacion.tex** (fig:actions-verde)
+   - `produccion/03-google-publicada.png`: 2 veces (04-descripcion, 05-evaluacion) → canónico: **05-evaluacion.tex** (fig:google-publicada)
+   - `prueba-tecnica/01-dominio-permitido.png`: 2 veces (04-descripcion, 05-evaluacion) → canónico: **05-evaluacion.tex** (fig:prueba-tecnica-permitido)
+
+2. **Regla 8 (página con una sola imagen)**: páginas 42, 43, 44, 48, 96 del PDF tienen una sola imagen con poco texto. Hay que reducir tamaño (`height=0.42\textheight` máx.), agrupar con `subfigure` o añadir texto alrededor.
+
+3. **Regla 9 (página casi vacía)**: página 102 (8 palabras). Fundir sección o línea suelta con la anterior.
+
+4. En `a1-desarrollo.tex` línea ~393: la figura `fig:donetonic-s2-tablero` usa `donetonic/01-tablero-sprint.png` pero debería usar `donetonic/04-tablero-sprint2.png` (tablero Sprint 2).
+
+Lo que he corregido yo en este paso: **nada** (el constructor debe hacer los cambios de maquetación). Solo marco los cambios necesarios en bloques CAMBIAR para los dos archivos más críticos (Paso 2 del orden de trabajo v4).
+
+**Correcciones del revisor:** `(cambio) chapters/a2-material.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- **Paso 2 (continuación)**: Eliminar imágenes repetidas restantes.
+  - En `chapters/a1-desarrollo.tex`: 
+    - Línea ~393: cambiar `\includegraphics{figs/capturas/donetonic/01-tablero-sprint.png}` (label `fig:donetonic-s2-tablero`) por `\includegraphics{figs/capturas/donetonic/04-tablero-sprint2.png}` (tablero Sprint 2 correcto).
+    - Mantener las figuras canónicas: `fig:donetonic-graficas-s1` (02-graficas-sprint), `fig:donetonic-backlog` (03-backlog), `fig:donetonic-s2-tablero` (04-tablero-sprint2), `fig:donetonic-s2-graficas` (06-graficas-sprint2), `fig:donetonic-s2-backlog` (03-backlog para Sprint 2), `fig:donetonic-tablero-s1` (01-tablero-sprint para Sprint 1 en retrospectiva) — pero esta última duplica con 03-propuesta; mejor usar `\ref{fig:donetonic-tablero}` y borrar la figura local.
+  - En `chapters/05-evaluacion.tex`: verificar que las figuras de producción y prueba técnica tienen labels correctos (`fig:correo-confirmacion`, `fig:actions-verde`, `fig:google-publicada`, `fig:prueba-tecnica-permitido`, `fig:prueba-tecnica-rechazado`) y están citadas en el texto (ya lo están).
+- **Paso 3**: Reescribir sección «La aplicación: manual de usuario (SaaS)» en `chapters/04-descripcion.tex` como prosa explicativa, agrupando capturas relacionadas en `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`) con caption general y por subfigura. Eliminar frases sueltas «La figura X muestra…».
+- **Paso 4**: Lo mismo en `chapters/04b-juego.tex` para el manual del juego.
+- **Paso 5**: Repasar capítulos 01, 03, 05, 06 y anexos: fusionar secciones de 1–2 líneas, eliminar párrafos repetidos entre capítulos, mejorar estilo (sin adornos, frases cortas, explicar el porqué).
+- **Paso 6**: Corregir páginas con una sola imagen (Regla 8): reducir `height` a `0.42\textheight`, usar `subfigure`, añadir texto alrededor. Corregir página 102 casi vacía (Regla 9): fundir con sección anterior.
+- Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.

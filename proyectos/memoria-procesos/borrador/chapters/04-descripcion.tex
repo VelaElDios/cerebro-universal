@@ -764,12 +764,21 @@ La figura~\ref{fig:hito4-privacidad} muestra la página de política de privacid
 
 \subsection{Producción}
 
-El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (figura~\ref{fig:correo-confirmacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (figura~\ref{fig:actions-verde}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (figura~\ref{fig:google-publicada}). Estas evidencias se detallan en el Capítulo~\ref{cap:evaluacion}.
+El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}).
 
 \subsection{Prueba técnica}
 
-El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La figura~\ref{fig:prueba-tecnica-permitido} muestra una respuesta afirmativa para un dominio autorizado; el rechazo de un subdominio no reconocido se documenta en el Capítulo~\ref{cap:evaluacion}.
+El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La Figura~\ref{fig:prueba-tecnica-permitido} (Capítulo~\ref{cap:evaluacion}) muestra una respuesta afirmativa para un dominio autorizado; el rechazo de un subdominio no reconocido (Figura~\ref{fig:prueba-tecnica-rechazado}) se documenta en el Capítulo~\ref{cap:evaluacion}.
 
 \subsection{Gestión en DoneTonic}
 
-El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (figura~\ref{fig:donetonic-graficas-s1}, Anexo~\ref{anx:desarrollo}), el Product Backlog con los dos sprints (figura~\ref{fig:donetonic-backlog}, Anexo~\ref{anx:desarrollo}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (figura~\ref{fig:mat-tablero-s2}, Anexo~\ref{anx:material}), y el detalle de un PBI con su historia de usuario y criterios de aceptación (figura~\ref{fig:dt-pbi-detalle}). La evolución real del Sprint 2, reconstruida a partir de las fechas de fusión de los PRs, se expone en el Anexo~\ref{anx:desarrollo}.
+El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (figura~\ref{fig:donetonic-graficas-s1}, Anexo~\ref{anx:desarrollo}), el Product Backlog con los dos sprints (figura~\ref{fig:donetonic-backlog}, Anexo~\ref{anx:desarrollo}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (figura~\ref{fig:mat-tablero-s2}, Anexo~\ref{anx:material}), y el detalle de un PBI con su historia de usuario y criterios de aceptación (figura~\ref{fig:dt-pbi-detalle}).
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
+\caption{Detalle del PBI P44 en DoneTonic: historia de usuario, criterios de aceptación y tareas.}
+\label{fig:dt-pbi-detalle}
+\end{figure}
+
+La evolución real del Sprint 2, reconstruida a partir de las fechas de fusión de los PRs, se expone en el Anexo~\ref{anx:desarrollo}.
