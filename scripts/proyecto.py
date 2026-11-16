@@ -95,7 +95,8 @@ Cómo trabajas:
   si es un archivo pequeño, máximo {maximo}). Si tu corrección rompe la compilación, se deshace.
 - Lo que suponga más trabajo: déjalo como tarea concreta para el constructor.
 - Sé exigente pero concreto. No pidas cambios por gusto personal.
-- Marca TERMINADO solo si se cumplen TODOS los criterios de "terminado" de la spec.
+- Marca TERMINADO solo si se cumplen TODOS los criterios de "terminado" de la spec y todas las
+  REGLAS OBLIGATORIAS DE JAVIER (si el proyecto las tiene).
 
 Comprobaciones (OBLIGATORIO):
 - La prueba puede incluir un test automático que recalcula los valores por su cuenta. Si la prueba
@@ -318,6 +319,12 @@ def main():
 def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     """Un paso completo: constructor → prueba → revisor → promoción a final/."""
     spec = (carpeta / "spec.md").read_text(encoding="utf-8")
+    # Reglas fijas que Javier exige (p. ej. memoria/reglas-tfg.md): "reglas" en proyecto.json
+    reglas = [(nucleo.RAIZ / r) for r in cfg.get("reglas", [])]
+    bloque_reglas = "".join(
+        f"\n# REGLAS OBLIGATORIAS DE JAVIER ({r.relative_to(nucleo.RAIZ).as_posix()}): cúmplelas todas; "
+        f"si el borrador incumple alguna, arreglarlo va antes que avanzar\n{r.read_text(encoding='utf-8')}\n"
+        for r in reglas if r.exists())
     borrador, final = carpeta / "borrador", carpeta / "final"
     borrador.mkdir(exist_ok=True)
     maximo = cfg.get("max_archivos_por_paso", 3)
@@ -353,7 +360,7 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     reciente = nucleo.bitacora_reciente(bitacora)
     mensaje = f"""# SPEC DEL PROYECTO
 {spec}
-{bloque_fuentes}{chr(10) + "# ARCHIVOS PROTEGIDOS (no los escribas ni los borres: se ignoran)" + chr(10) + ", ".join(protegidos) + chr(10) if protegidos else ""}
+{bloque_reglas}{bloque_fuentes}{chr(10) + "# ARCHIVOS PROTEGIDOS (no los escribas ni los borres: se ignoran)" + chr(10) + ", ".join(protegidos) + chr(10) if protegidos else ""}
 # LECCIONES DE LA MEMORIA (errores ya resueltos: no los repitas)
 {memoria.seleccionar(temas, prueba_antes + reciente[-3000:])}
 
@@ -417,7 +424,7 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
 
 # SPEC DEL PROYECTO
 {spec}
-
+{bloque_reglas}
 # ARCHIVOS ACTUALES DEL BORRADOR
 {nucleo.volcar(nucleo.leer_carpeta(borrador))}"""
         try:
@@ -460,7 +467,7 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
     # ---------- 3. REVISOR ----------
     mensaje = f"""# SPEC DEL PROYECTO
 {spec}
-{bloque_fuentes}
+{bloque_reglas}{bloque_fuentes}
 # LECCIONES DE LA MEMORIA (ya guardadas: no las repitas en LECCION)
 {memoria.seleccionar(temas, prueba + chr(10).join(intentos))}
 

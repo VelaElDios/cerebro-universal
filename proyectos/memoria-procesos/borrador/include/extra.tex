@@ -5,6 +5,7 @@
 
 % Utilidades para tablas y texto
 \usepackage{booktabs}
+\usepackage{etoolbox}
 \usepackage{longtable}
 \usepackage{csquotes}
 \usepackage{icomma}
@@ -47,3 +48,32 @@
 \usepackage{pgf-umlsd}
 \usepackage{adjustbox}  % max width para los dibujos TikZ
 \pgfplotsset{compat=1.18}
+
+% Enlaces sin recuadros de color
+\hypersetup{hidelinks}
+
+% Páginas en blanco (al empezar capítulo en página impar) sin cabecera ni número
+\makeatletter
+\renewcommand{\cleardoublepage}{\clearpage\if@twoside\ifodd\c@page\else
+  \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+% -------------------------------
+% Maquetación de tablas y figuras (entrega Sprint 1)
+% -------------------------------
+% Celdas alineadas arriba (p) en vez de centradas en vertical (m): las filas ya no se pisan
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\renewcommand{\arraystretch}{1.15}
+\AtBeginEnvironment{longtable}{\small}
+\AtBeginEnvironment{table}{\small}
+% Figuras y tablas: que compartan página con el texto en vez de quedarse solas
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.6}
+\renewcommand{\textfraction}{0.12}
+\renewcommand{\floatpagefraction}{0.8}
+\setcounter{topnumber}{3}
+\setcounter{totalnumber}{4}
+% Documento para leer en PDF: sin páginas en blanco entre capítulos
+\renewcommand{\cleardoublepage}{\clearpage}
