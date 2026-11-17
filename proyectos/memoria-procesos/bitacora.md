@@ -10053,3 +10053,37 @@ Qué he corregido yo:
 ## 2026-11-17 15:48 · 🧠 Conocimiento guardado
 
 [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]]
+
+## 2026-11-17 16:41 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He verificado que `elements/preambulo.tex` ya cumple con la regla 1: no contiene el bloque de «Segunda portada» (los `textblock` con logos, título y autor). El archivo solo incluye la declaración de autoría, el Resumen y el Abstract, tal como exige la plantilla oficial. Por tanto, el paso 1 está completado.
+
+**Archivos:** ninguno
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Pasar al paso 2: eliminar imágenes repetidas. Revisar `04-descripcion.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex` y `a2-material.tex` para que cada captura aparezca una sola vez (en el capítulo donde más sentido tenga) y en el resto se cite con `\ref`.
+
+## 2026-11-17 16:42 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** aprobado · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- `elements/preambulo.tex`: verificado que no contiene el bloque de «Segunda portada» (textblock con logos, título y autor). Solo incluye declaración de autoría, Resumen (≥150 palabras, dos sprints y juego) y Abstract (≥120 palabras, mismo formato). Cumple regla 1 de `memoria/reglas-tfg.md`.
+- Compilación: LaTeX compila sin errores (93 páginas, 11.9 MB). `verificar.py` OK (35 figuras, 29 tablas, 16798 palabras). `revisar_maquetacion.py` OK (reglas de maquetación cumplidas).
+
+El paso 1 está completado: `elements/preambulo.tex` ya cumplía la regla 1 (una sola portada, la de `elements/portada.tex`). No ha habido que modificar nada. La prueba automática pasa en verde. El siguiente paso es el 2: eliminar imágenes repetidas entre capítulos (`04-descripcion.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex`, `a2-material.tex`), dejando cada captura una sola vez en el sitio donde más sentido tiene y usando `\ref` en el resto.
+
+**Correcciones del revisor:** `(cambio) elements/preambulo.tex`
+
+**Tareas para el constructor:**
+- Paso 2: Revisar `chapters/04-descripcion.tex`, `chapters/05-evaluacion.tex`, `chapters/a1-desarrollo.tex` y `chapters/a2-material.tex` para identificar capturas que aparecen en varios capítulos. Dejar cada imagen una sola vez (en el capítulo donde más sentido tiene) y reemplazar las demás por `\ref{fig:...}`.
+- Verificar que las capturas de `produccion/`, `hito4/` y `donetonic/` no se repiten.
+- Ejecutar `comando_prueba` tras los cambios para confirmar que compila y pasa `verificar.py` y `revisar_maquetacion.py`.
+
+## 2026-11-17 16:42 · 🧠 Conocimiento guardado
+
+[[paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p]]
