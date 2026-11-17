@@ -68,6 +68,8 @@ respuestas = {
 prov.pedir_rol = lambda rol, *a, **k: (respuestas[rol], "falsa", "modelo")
 prov.cargar = lambda ruta: ({"roles": {}}, {})
 prov.fijar_limite(30 * 60)
+from cerebro import uso as _uso
+_uso.ruta = lambda: proy / "uso.json"     # que la prueba no escriba en el vault de verdad
 proyecto.dar_paso(proy, json.loads((proy / "proyecto.json").read_text()), proy / "proyecto.json", proy / "bitacora.md")
 assert "Texto bueno." in (proy / "borrador" / "doc.tex").read_text(), "no se deshizo"
 bit = (proy / "bitacora.md").read_text()
@@ -175,5 +177,62 @@ assert nota["confianza"] == "verificado" and "transcripción" in nota["fuentes"]
 assert any(k.startswith("transcripciones/") for k in dataset._adjuntos)
 reg = json.loads((apr / "procesados.json").read_text())
 assert "https://www.youtube.com/watch?v=xyz" in reg and reg["pizarra.png"]["hechos"] == 1
+
+# 10. embeddings (Gemini falso: vector por palabras) y búsqueda por significado
+from cerebro import embeddings, uso, jardin, preguntas
+import math, hashlib as _h
+def vec(texto):
+    v = [0.0] * embeddings.DIM
+    for w in re.findall(r"[a-záéíóúñ]{4,}", texto.lower()):
+        v[int(_h.md5(w.encode()).hexdigest(), 16) % embeddings.DIM] += 1
+    return embeddings._normalizar(v)
+import re
+embeddings._embeber = lambda textos, tarea: ([vec(t) for t in textos], "falso")
+print(embeddings.actualizar())
+vecs = embeddings.vectores()
+assert vecs and abs(embeddings.coseno(*list(vecs.values())[:1] * 2) - 1) < 0.01
+assert embeddings._desempaquetar(embeddings._empaquetar([0.5, -0.25])) == [0.5, -0.25]
+sel = conocimiento.seleccionar([], "diagrama cliente servidor base datos", "nada")
+assert "Flujo cliente API" in sel, sel
+
+# 11. uso: las notas usadas en pasos buenos suben
+uso.registrar(conocimiento.ultimas_usadas(), bien=True)
+assert uso.cargar() and uso.bonificacion(uso.cargar(), conocimiento.ultimas_usadas()[0]) > 0
+
+# 12. jardinero: cita casi igual → verificada; repetidas → fusionadas; enlaces nuevos
+(nucleo.RAIZ / "fuente.md").write_text("Los sprints de este proyecto duran dos semanas exactas, sin excepciones.", encoding="utf-8")
+conocimiento.guardar("tipo: dato\ntitulo: Duración de los sprints del proyecto\nfuente: fuente.md\n"
+                     "cita: Los sprints de este proyecto duran dos semanas exactas sin excepcion\ncontenido:\nCada sprint dura dos semanas.", "demo")
+conocimiento.guardar("tipo: dato\ntitulo: Cuánto dura cada sprint del proyecto\ncontenido:\nCada sprint del proyecto dura dos semanas.", "demo")
+n = {n["nombre"]: n for n in conocimiento.todas()}["duracion-de-los-sprints-del-proyecto"]
+assert n["confianza"] == "propuesto"
+prov.pedir_rol = lambda rol, *a, **k: ("<<<TITULO>>>\nDuración de los sprints\n<<<CONTENIDO>>>\nCada sprint del proyecto dura dos semanas exactas.\n<<<CONTRADICCION>>>\nno", "falsa", "m")
+jardin.UMBRAL_DUPLICADO = 0.5; jardin.UMBRAL_CONTRADICCION = 0.5
+jd = nucleo.RAIZ / "proyectos" / "jardinero"; jd.mkdir(parents=True)
+res = jardin.ejecutar(jd, {}, jd / "proyecto.json", jd / "bitacora.md")
+notas = {n["nombre"]: n for n in conocimiento.todas()}
+assert "duracion-de-los-sprints-del-proyecto" in notas and "cuanto-dura-cada-sprint-del-proyecto" not in notas, res
+assert notas["duracion-de-los-sprints-del-proyecto"]["confianza"] == "propuesto"   # una de las dos no estaba verificada
+assert "Citas comprobadas: 1" in res or "Notas repetidas fusionadas: 1" in res, res
+
+# 13. preguntas: contesta debajo de la nota y solo se ejecuta si hay alguna pendiente
+import elegir_proyecto
+pq = nucleo.RAIZ / "proyectos" / "preguntas"; pq.mkdir(parents=True)
+(pq / "Cuánto dura un sprint.md").write_text("¿Y quién lo decide?", encoding="utf-8")
+assert elegir_proyecto.hay_preguntas(pq)
+prov.pedir_rol = lambda rol, *a, **k: ("Dura un mes como mucho [[duracion-de-un-sprint]].", "falsa", "m")
+preguntas.ejecutar(pq, {}, pq / "proyecto.json", pq / "bitacora.md")
+assert "## Respuesta del cerebro" in (pq / "Cuánto dura un sprint.md").read_text(encoding="utf-8")
+assert not elegir_proyecto.hay_preguntas(pq)
+
+# 14. servidor MCP: sus herramientas funcionan (sin arrancar el protocolo)
+try:
+    import mcp_cerebro
+    assert "Duración" in mcp_cerebro.buscar("cuánto dura un sprint")
+    assert "Proyectos" in mcp_cerebro.mapa()
+    assert "Guardado" in mcp_cerebro.guardar_conocimiento("receta", "Cómo se pregunta al cerebro",
+                                                          "Se crea una nota en proyectos/preguntas.", temas="cerebro")
+except ImportError as e:
+    print(f"(sin el paquete mcp: no pruebo el servidor MCP: {e})")
 nucleo.RAIZ = raiz_real
 print("TODO OK")

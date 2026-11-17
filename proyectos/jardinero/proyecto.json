@@ -1,0 +1,7 @@
+{
+  "nombre": "jardinero",
+  "tipo": "jardin",
+  "estado": "en-construccion",
+  "temas": ["conocimiento"],
+  "cada_horas": 24
+}

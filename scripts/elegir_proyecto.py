@@ -38,6 +38,16 @@ def activo(cfg: dict) -> bool:
     return maximo is None or cfg.get("pasos", 0) < maximo
 
 
+def hay_preguntas(carpeta: Path) -> bool:
+    """¿Hay alguna nota en proyectos/preguntas/ sin «## Respuesta del cerebro»? (ver cerebro/preguntas.py)"""
+    for p in carpeta.rglob("*.md"):
+        if p.name.lower() in ("bitacora.md", "spec.md", "estado.md", "leeme.md", "readme.md"):
+            continue
+        if "## Respuesta del cerebro" not in p.read_text(encoding="utf-8", errors="replace"):
+            return True
+    return False
+
+
 def candidatos() -> list[tuple[str, Path, dict]]:
     """(última ejecución, carpeta, cfg) de cada proyecto activo."""
     lista = []
@@ -50,8 +60,12 @@ def candidatos() -> list[tuple[str, Path, dict]]:
         except Exception as e:
             print(f"::warning::{cfg_ruta} no se puede leer: {e}")
             continue
+        if cfg.get("tipo") == "preguntas" and not hay_preguntas(carpeta):
+            continue   # solo se ejecuta si alguien ha dejado una pregunta sin contestar
         if activo(cfg):
-            lista.append((cfg.get("ultima_ejecucion", ""), carpeta, cfg))
+            # Una pregunta pendiente va antes que todo lo demás (alguien espera la respuesta)
+            orden = "" if cfg.get("tipo") == "preguntas" else cfg.get("ultima_ejecucion", "")
+            lista.append((orden, carpeta, cfg))
     return sorted(lista, key=lambda x: x[0])  # el más antiguo (o el que nunca se ejecutó) primero
 
 

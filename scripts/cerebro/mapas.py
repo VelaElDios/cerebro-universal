@@ -174,7 +174,10 @@ buscar con RAG y, en el futuro, para entrenar una IA local. {marca}
 2. **Por tema:** `memoria/temas/<tema>.md` enlaza todo lo de ese tema: recetas, decisiones, conceptos,
    datos, lecciones y proyectos.
 3. **Por tipo:** `memoria/conocimiento/<tipo>/` y `memoria/lecciones/` (todo listado en [[indice]]).
-4. **Máquinas:** `memoria/mapas/grafo.json` tiene todas las notas (nodos) y sus relaciones (aristas).
+4. **Máquinas:** `memoria/mapas/grafo.json` tiene todas las notas (nodos) y sus relaciones (aristas), y
+   `memoria/mapas/embeddings.json` sus vectores para buscar por significado.
+5. **Desde un chat (Claude, ChatGPT...):** el servidor MCP `scripts/mcp_cerebro.py` deja buscar, leer y
+   guardar notas. Para preguntar al cerebro sin chat: una nota en `proyectos/preguntas/`.
 
 ## Tipos de nota
 
@@ -194,6 +197,8 @@ buscar con RAG y, en el futuro, para entrenar una IA local. {marca}
 - Si lo que necesitas no está, **apréndelo y guárdalo** (bloque `<<<CONOCIMIENTO>>>`) con su fuente y una cita
   literal. Nunca inventes datos: lo que no está en una fuente no se escribe.
 - Reglas fijas de Javier: [[reglas-tfg]] (memorias con formato de TFG).
+- El jardinero (`proyectos/jardinero`) pasa cada día: comprueba citas, fusiona notas repetidas, marca
+  contradicciones y enlaza lo parecido. Qué notas ayudan de verdad: [[ESTADISTICAS]].
 
 ## Ahora mismo
 
@@ -301,6 +306,30 @@ def _subgrafo(nodos, aristas, proyecto: str):
     return [n for n in nodos if n["id"] in ids], [a for a in aristas if a["de"] in ids and a["a"] in ids]
 
 
+def escribir_estadisticas(nodos: list[dict]):
+    """memoria/ESTADISTICAS.md: qué notas se usan más y cuáles acompañan pasos buenos o deshechos."""
+    from . import uso
+    datos = uso.cargar()
+    por_ruta = {n.get("ruta"): n for n in nodos}
+    filas = sorted(((d.get("usos", 0), d.get("bien", 0), d.get("mal", 0), r) for r, d in datos.items()
+                    if r in por_ruta), reverse=True)
+    def linea(u, b, m, r):
+        n = por_ruta[r]
+        destino = r[:-3] if r.endswith(".md") else r
+        return f"| [[{destino}\\|{n['titulo']}]] | {u} | {b} | {m} |"
+    cab = "| Nota | Usos | Pasos buenos | Pasos deshechos |\n|---|---|---|---|\n"
+    utiles = [f for f in filas if f[1] > f[2]][:25]
+    dudosas = [f for f in filas if f[2] > f[1]][:15]
+    sin_uso = [n for n in nodos if n["tipo"] in ("concepto", "receta", "decision", "dato") and n.get("ruta") not in datos]
+    texto = (f"# Estadísticas del Cerebro\n\n¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se "
+             f"apunta si el paso salió bien o se deshizo {MARCA}.\n\n"
+             f"- Notas que se han usado alguna vez: {len(filas)}\n- Notas que nunca se han usado: {len(sin_uso)}\n\n"
+             f"## Las más útiles\n\n" + (cab + "\n".join(linea(*f) for f in utiles) if utiles else "Todavía no hay datos.") +
+             f"\n\n## Las que acompañan pasos que se deshacen (revisarlas)\n\n" +
+             (cab + "\n".join(linea(*f) for f in dudosas) if dudosas else "Ninguna.") + "\n")
+    (_raiz() / "memoria" / "ESTADISTICAS.md").write_text(texto, encoding="utf-8")
+
+
 def generar():
     """Regenera índices, hubs de temas, CEREBRO.md, grafo.json y los canvas. Nunca tumba un paso."""
     try:
@@ -308,6 +337,7 @@ def generar():
         escribir_temas(nodos, aristas)
         escribir_indice(nodos)
         escribir_cerebro(nodos, aristas)
+        escribir_estadisticas(nodos)
         mapas = _raiz() / "memoria" / "mapas"
         mapas.mkdir(parents=True, exist_ok=True)
         (mapas / "grafo.json").write_text(json.dumps(

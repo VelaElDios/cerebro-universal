@@ -107,7 +107,9 @@ def _palabras(texto: str) -> set[str]:
 
 
 def _puntos(n: dict, temas: set[str], contexto: str, palabras_ctx: set[str], proyecto: str) -> float:
-    claves = sum(1 for c in n.get("claves", []) if c and c.lower() in contexto)
+    # Palabra entera: si no, una clave corta como «POR» casaría con «portada»
+    claves = sum(1 for c in n.get("claves", []) if c and len(c) >= 3
+                 and re.search(r"(?<![\w])" + re.escape(c.lower()) + r"(?![\w])", contexto))
     titulo = len(_palabras(n.get("titulo", "")) & palabras_ctx)
     de_tema = len(temas & {t.lower() for t in n.get("temas", [])})
     mismo = proyecto in n.get("proyectos", [])
@@ -124,15 +126,40 @@ def _cuerpo_limpio(cuerpo: str) -> str:
     return re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]+)\]\]", r"\1", texto)
 
 
-def seleccionar(temas: list[str], contexto: str, proyecto: str = "", max_chars: int = MAX_CHARS) -> str:
-    """Las notas más útiles para este proyecto y este momento, listas para meter en un mensaje."""
+_usadas: list[str] = []   # rutas de las notas mandadas en el último mensaje (para cerebro/uso.py)
+
+
+def ultimas_usadas() -> list[str]:
+    return list(_usadas)
+
+
+def seleccionar(temas: list[str], contexto: str, proyecto: str = "", max_chars: int = MAX_CHARS,
+                semantica: bool = True) -> str:
+    """Las notas más útiles para este proyecto y este momento, listas para meter en un mensaje.
+
+    Mezcla tres señales: palabras clave y temas (siempre), parecido de significado con lo que se está
+    haciendo (embeddings, si hay API) y cómo les ha ido a esas notas en pasos anteriores (uso.json)."""
+    from . import embeddings, uso
     temas_set = {t.lower() for t in temas}
     ctx = contexto.lower()
     palabras_ctx = _palabras(ctx)
-    puntuadas = sorted(((p, n) for n in todas() if n.get("tipo") != "fuente"
-                        and (p := _puntos(n, temas_set, ctx, palabras_ctx, proyecto)) > 0),
-                       key=lambda x: -x[0])
+    vecs = embeddings.vectores() if semantica else {}
+    q = embeddings.consulta(contexto) if vecs else None
+    estad = uso.cargar()
+    puntuadas = []
+    for n in todas():
+        if n.get("tipo") == "fuente":
+            continue
+        p = _puntos(n, temas_set, ctx, palabras_ctx, proyecto)
+        if q is not None and n["ruta"] in vecs:
+            c = embeddings.coseno(q, vecs[n["ruta"]])
+            p += max(0.0, c - 0.55) * 20          # coseno 0,75 → +4 puntos
+        if p <= 0:
+            continue
+        puntuadas.append((p + uso.bonificacion(estad, n["ruta"]), n))
+    puntuadas.sort(key=lambda x: -x[0])
     trozos, usados = [], 0
+    _usadas.clear()
     for _, n in puntuadas:
         marca = "verificado" if n.get("confianza") == "verificado" else "propuesto, compruébalo"
         de = ", ".join(n.get("proyectos", [])) or "general"
@@ -143,6 +170,7 @@ def seleccionar(temas: list[str], contexto: str, proyecto: str = "", max_chars: 
         if usados + len(trozo) > max_chars:
             continue
         trozos.append(trozo)
+        _usadas.append(n["ruta"])
         usados += len(trozo)
     if not trozos:
         return "(todavía no hay conocimiento guardado sobre esto: lo que aprendas, guárdalo en CONOCIMIENTO)"

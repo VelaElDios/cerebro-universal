@@ -22,7 +22,7 @@ import subprocess
 import sys
 from pathlib import Path
 
-from cerebro import aprender, conocimiento, dataset, mapas, memoria, nucleo, repos
+from cerebro import aprender, conocimiento, dataset, embeddings, jardin, mapas, memoria, nucleo, preguntas, repos, uso
 from cerebro import proveedores as prov
 
 # ---------- Cronómetro ----------
@@ -303,16 +303,22 @@ def main():
         print(f"Proyecto {estado_proyecto}. No hay nada que hacer.")
         return
 
-    if cfg.get("tipo") == "aprender":   # leer documentos y guardar conocimiento (cerebro/aprender.py)
+    # Proyectos especiales que no construyen nada: aprender documentos, cuidar el vault, contestar preguntas
+    especiales = {"aprender": (aprender.ejecutar, "Aprendizaje"), "jardin": (jardin.ejecutar, "Jardinero"),
+                  "preguntas": (preguntas.ejecutar, "Preguntas")}
+    if cfg.get("tipo") in especiales:
+        funcion, nombre_tipo = especiales[cfg["tipo"]]
         cfg["ultima_ejecucion"] = nucleo.ahora().isoformat(timespec="seconds")
         guardar_cfg(cfg_ruta, cfg)
         prov.fijar_limite(PRESUPUESTO_MIN * 60)
         try:
-            print(aprender.ejecutar(carpeta, cfg, cfg_ruta, bitacora))
+            print(funcion(carpeta, cfg, cfg_ruta, bitacora))
         except Exception as e:
-            nucleo.anotar(bitacora, "⚠️ Aprendizaje no hecho", str(e)[:500])
-            print(f"Aprendizaje no hecho: {e}")
+            nucleo.anotar(bitacora, f"⚠️ {nombre_tipo} no hecho", str(e)[:500])
+            print(f"{nombre_tipo} no hecho: {e}")
         finally:
+            print(embeddings.actualizar())
+            mapas.generar()
             print("Datos de entrenamiento: " + dataset.subir(carpeta.name))
         return
 
@@ -340,6 +346,7 @@ def main():
         print(f"Paso no dado, no cuenta: {e}")
     finally:
         dejar_de_seguir_ignorados(carpeta)
+        print(embeddings.actualizar())
         mapas.generar()
         print("Datos de entrenamiento: " + dataset.subir(carpeta.name))
         # Si este era el último paso permitido, se pausa ya: así la próxima ejecución
@@ -418,6 +425,8 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     except (RuntimeError, prov.TiempoAgotado) as e:
         raise SinConstructor(str(e))
     llamadas = [idx_constructor]
+    notas_usadas = conocimiento.ultimas_usadas()   # para medir si el conocimiento ayuda (cerebro/uso.py)
+    dataset.resultado(idx_constructor, notas_usadas=notas_usadas)
     paso = nucleo.parsear(texto)
     foto_antes = nucleo.foto(borrador)   # para deshacer el paso si rompe lo que funcionaba
     cambios = aplicar_respuesta(borrador, paso, maximo, protegidos)
@@ -495,6 +504,8 @@ Lee el error con atención: indica archivo y línea. Si un arreglo anterior no f
         ok, prueba = ok_antes, prueba_antes
         cambios = [f"(deshecho) {c}" for c in cambios]
         print("Paso deshecho: rompía la compilación")
+    deshecho = any("paso deshecho" in i for i in intentos)
+    uso.registrar(notas_usadas, bien=(ok and not deshecho) if ok or deshecho else None)
     for idx in llamadas:   # para entrenar: qué pasó con estas respuestas
         dataset.resultado(idx, prueba_ok=ok, deshecho=any("paso deshecho" in i for i in intentos),
                           prueba=resumen_prueba(ok, prueba))
