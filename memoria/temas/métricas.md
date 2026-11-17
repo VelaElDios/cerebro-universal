@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "métricas"
-notas: 3
+notas: 4
 ---
 # métricas
 
@@ -14,8 +14,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «métricas» (este archivo
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[mflops]] · [[mips]] · [[metricas]] · [[trazabilidad]] · [[verificacion]] · [[verificación]]
+[[ac]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[mflops]] · [[mips]] · [[donetonic]] · [[grada-colchonera]] · [[scrum]] · [[sprint]] · [[memoria-procesos]] · [[métrica]] · [[metricas]]

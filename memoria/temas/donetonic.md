@@ -54,7 +54,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 - 📊 [[memoria/conocimiento/datos/esquema-de-progreso-guardado-en-servidor-migracion-003-tabla|Esquema de progreso guardado en servidor (migración 003, tablas y API)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas|Estructura Sprint 2: 6 fases + Calidad, 29 PBIs, 50 tareas, fechas]]
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs y tareas de los dos sprints]]
-- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]]
 - 📊 [[memoria/conocimiento/datos/migracion-004-y-endpoint-put-api-juego-identidad-para-mote-y|Migración 004 y endpoint PUT /api/juego/identidad para mote y avatar]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
 - 📊 [[memoria/conocimiento/datos/prs-de-cierre-de-hito-y-sprint-en-repositorio|PRs de cierre de hito y sprint en repositorio]]

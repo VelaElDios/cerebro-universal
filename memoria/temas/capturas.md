@@ -13,8 +13,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]]
 
 ## Temas relacionados
 
-[[donetonic]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[latex]] · [[saas]] · [[tfg]]
+[[donetonic]] · [[memoria]] · [[trazabilidad]] · [[figuras]] · [[grada-colchonera]] · [[latex]] · [[saas]] · [[tfg]]

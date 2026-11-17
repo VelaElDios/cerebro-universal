@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T19:51:52+01:00",
+ "generado": "2026-11-17T21:05:12+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2928,12 +2928,13 @@
    "temas": [
     "capturas",
     "donetonic",
-    "memoria"
+    "memoria",
+    "trazabilidad"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md"
   },
   {
@@ -3060,7 +3061,8 @@
     "scrum",
     "sprint",
     "memoria-procesos",
-    "métrica"
+    "métrica",
+    "métricas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -8464,7 +8466,7 @@
    "id": "tema:métricas",
    "tipo": "tema",
    "titulo": "métricas",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/métricas.md"
   },
   {
@@ -9360,7 +9362,7 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -17362,6 +17364,11 @@
   },
   {
    "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -17658,6 +17665,11 @@
   {
    "de": "dato:metricas-comparativas-sprint-1-vs-sprint-2",
    "a": "tema:métrica",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:metricas-comparativas-sprint-1-vs-sprint-2",
+   "a": "tema:métricas",
    "tipo": "trata"
   },
   {

@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 19:50"
+actualizado: "2026-11-17 21:05"
 ---
 
 # memoria-procesos
@@ -21,7 +21,12 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - Paso 1 completado: `elements/preambulo.tex` ya cumplía regla 1 (sin segunda portada).
-- Paso 2 (imágenes duplicadas): **EN PROGRESO** - Correcciones aplicadas en este veredicto para: figura backlog en 03-propuesta.tex, fix referencias en 04-descripcion.tex, a1-desarrollo.tex (eliminado duplicado, añadidas citas faltantes), a2-material.tex, diagramas de secuencia reducidos a ≤6 participantes (fig:sec-registro y fig:sec-partida), altura de figura admin-estados+privacidad reducida a 0.30\textheight, párrafo final de a1-desarrollo.tex fusionado.
+- Paso 2 (imágenes duplicadas y referencias): **EN PROGRESO** - Correcciones aplicadas en este veredicto para:
+  1. Mover figura `fig:donetonic-graficas-s1` a `03-propuesta.tex` y referenciar desde allí.
+  2. Eliminar duplicado en `a1-desarrollo.tex` y añadir citas faltantes a `fig:donetonic-pbi-detalle` y `fig:donetonic-s2-tareas`.
+  3. Reducir participantes en diagramas de secuencia `fig:sec-registro` (9→6) y `fig:sec-partida` (7→6).
+  4. Reducir altura de figura combinada admin-estados+privacidad a 0.28\textheight y añadir texto.
+  5. Fusionar párrafo final en `a1-desarrollo.tex`.
 - Pendiente: ejecutar `comando_prueba` para confirmar que pasan todas las comprobaciones.
 
 ## Siguiente

@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Métricas comparativas Sprint 1 vs Sprint 2"
-temas: ["donetonic", "grada-colchonera", "scrum", "sprint", "memoria-procesos", "métrica"]
+temas: ["donetonic", "grada-colchonera", "scrum", "sprint", "memoria-procesos", "métrica", "métricas"]
 claves: ["métricas", "Sprint 1", "Sprint 2", "duración", "PBIs", "tareas", "PRs", "pruebas automáticas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]

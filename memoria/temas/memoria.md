@@ -63,7 +63,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - 📊 [[memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg|Bibliografía gestionada con BibTeX en la memoria TFG]]
 - 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo|Capturas de DoneTonic disponibles en el repo]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
-- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]]
 - 📊 [[memoria/conocimiento/datos/tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache|Tamaño del vector y bloque en bytes y líneas de caché]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
