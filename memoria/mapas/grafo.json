@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T15:48:07+01:00",
+ "generado": "2026-11-17T16:42:02+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2301,6 +2301,21 @@
    "ruta": "memoria/conocimiento/decisiones/optimizaciones-de-rendimiento-busqueda-por-radio-con-claves.md"
   },
   {
+   "id": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
+   "tipo": "decision",
+   "titulo": "Paso 1 completado: preambulo.tex ya cumple regla 1 (una sola portada)",
+   "temas": [
+    "latex",
+    "memoria",
+    "reglas-tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p.md"
+  },
+  {
    "id": "decision:pivote-de-red-social-a-juego-survivor-reutilizando-base-del",
    "tipo": "decision",
    "titulo": "Pivote de red social a juego survivor reutilizando base del Sprint 1",
@@ -3980,14 +3995,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 84,
+   "peso": 85,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 27,
+   "peso": 28,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -4841,7 +4856,7 @@
    "id": "tema:reglas-tfg",
    "tipo": "tema",
    "titulo": "reglas-tfg",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/reglas-tfg.md"
   },
   {
@@ -10429,6 +10444,31 @@
    "de": "decision:optimizaciones-de-rendimiento-busqueda-por-radio-con-claves",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
+   "a": "tema:reglas-tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
+   "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "tipo": "enlaza"
   },
   {
    "de": "decision:pivote-de-red-social-a-juego-survivor-reutilizando-base-del",

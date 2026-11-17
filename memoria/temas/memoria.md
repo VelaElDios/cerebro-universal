@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria"
-notas: 27
+notas: 28
 ---
 # memoria
 
@@ -33,6 +33,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in|Cambio de enfoque de red social a juego justificado en la introducción]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow|Flechas reales en captions y texto ($\rightarrow$)]]
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
+- ⚖️ [[memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p|Paso 1 completado: preambulo.tex ya cumple regla 1 (una sola portada)]] · ⚠️ propuesto
 
 ## Conceptos
 

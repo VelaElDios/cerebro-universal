@@ -11,17 +11,35 @@
   "ultimo": "2026-11-17",
   "usos": 1
  },
+ "memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra.md": {
+  "bien": 1,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 1
+ },
  "memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-17",
   "usos": 1
  },
- "memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente.md": {
-  "bien": 0,
+ "memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d.md": {
+  "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-17",
   "usos": 1
+ },
+ "memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes.md": {
+  "bien": 1,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 1
+ },
+ "memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente.md": {
+  "bien": 1,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 2
  },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 0,
@@ -30,9 +48,9 @@
   "usos": 1
  },
  "memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm.md": {
-  "bien": 0,
+  "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-17",
-  "usos": 1
+  "usos": 2
  }
 }

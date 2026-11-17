@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 15:48"
+actualizado: "2026-11-17 16:42"
 ---
 
 # memoria-procesos
@@ -20,16 +20,12 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- Compila (94 páginas) y `verificar.py` OK (35 figuras, 29 tablas, 16819 palabras).
-- `revisar_maquetacion.py` fallaba en **Regla 9** (página 88 casi vacía) — **he fusionado el párrafo final del anexo de trazabilidad con el introductorio para resolverlo**.
-- He corregido: 4 frases «La figura X muestra…» en `04b-juego.tex` reescritas como prosa con cita integrada; párrafo duplicado del menú de pausa eliminado en `04b-juego.tex`; nota añadida en tablas de `04b-juego.tex` sobre combinaciones (24 en Fase 3 + 5 en Fase 7 = 29 total).
-- Pendiente: confirmar que Regla 9 y 13 se resuelven tras recompilar; barrer resto de frases prohibidas en todos los capítulos; verificar imágenes no repetidas; repaso estilo global.
+- Compila (93 páginas) y `verificar.py` OK (35 figuras, 29 tablas, 16798 palabras).
+- `revisar_maquetacion.py` OK (reglas de maquetación cumplidas).
+- Paso 1 completado: `elements/preambulo.tex` ya cumplía regla 1 (sin segunda portada).
+- Pendiente: paso 2 (imágenes repetidas), paso 3 (prosa en manual de uso SaaS), paso 4 (prosa en manual del juego), paso 5 (repaso estilo global), paso 6 (barrido final hasta todo verde).
 
 ## Siguiente
-1. Ejecutar `comando_prueba`; si falla Regla 9 o 13, localizar el problema en el PDF y corregir.
-2. Barrer todos los capítulos eliminando frases «La figura X muestra…» y reescribirlas como prosa con cita integrada.
-3. Verificar que ninguna imagen se repite (cada captura una sola vez, el resto con `\ref`).
-4. Repaso final de estilo en `01`, `06` y anexos: frases cortas, sin adornos, coherencia entre capítulos.
-5. Cuando todo pase en verde y el revisor haya contrastado ≥25 datos, marcar TERMINADO.
+Paso 2: eliminar imágenes repetidas entre `04-descripcion.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex` y `a2-material.tex`. Cada captura una sola vez, el resto con `\ref`.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]
