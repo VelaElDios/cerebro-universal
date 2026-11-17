@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T14:18:19+01:00",
+ "generado": "2026-11-17T15:48:07+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -198,6 +198,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/lecciones/escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en.md"
+  },
+  {
+   "id": "leccion:evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable",
+   "tipo": "leccion",
+   "titulo": "Evitar páginas casi vacías al final de anexos con longtable",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "longtable"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable.md"
   },
   {
    "id": "leccion:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
@@ -2921,6 +2936,21 @@
    "ruta": "memoria/conocimiento/recetas/como-estructurar-el-csv-de-entrada-para-la-plantilla-sus.md"
   },
   {
+   "id": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
+   "tipo": "receta",
+   "titulo": "Cómo evitar páginas casi vacías tras una longtable",
+   "temas": [
+    "latex",
+    "longtable",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable.md"
+  },
+  {
    "id": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
    "tipo": "receta",
    "titulo": "Cómo exportar diagramas Mermaid para la memoria LaTeX",
@@ -3744,6 +3774,21 @@
    "ruta": "memoria/conocimiento/recetas/recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po.md"
   },
   {
+   "id": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
+   "tipo": "receta",
+   "titulo": "Reescribir frases «La figura X muestra…» como prosa integrada",
+   "temas": [
+    "latex",
+    "redaccion",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada.md"
+  },
+  {
    "id": "receta:registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y",
    "tipo": "receta",
    "titulo": "Registro de usuario con confirmación por correo (HMAC, 24 h) y estado pending",
@@ -3935,7 +3980,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 81,
+   "peso": 84,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4007,6 +4052,20 @@
    "titulo": "datos",
    "peso": 5,
    "ruta": "memoria/temas/datos.md"
+  },
+  {
+   "id": "tema:maquetacion",
+   "tipo": "tema",
+   "titulo": "maquetacion",
+   "peso": 9,
+   "ruta": "memoria/temas/maquetacion.md"
+  },
+  {
+   "id": "tema:longtable",
+   "tipo": "tema",
+   "titulo": "longtable",
+   "peso": 6,
+   "ruta": "memoria/temas/longtable.md"
   },
   {
    "id": "tema:overleaf",
@@ -4086,13 +4145,6 @@
    "ruta": "memoria/temas/tablas.md"
   },
   {
-   "id": "tema:longtable",
-   "tipo": "tema",
-   "titulo": "longtable",
-   "peso": 4,
-   "ruta": "memoria/temas/longtable.md"
-  },
-  {
    "id": "tema:revision",
    "tipo": "tema",
    "titulo": "revision",
@@ -4117,7 +4169,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 31,
+   "peso": 32,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -4786,13 +4838,6 @@
    "ruta": "memoria/temas/entrega.md"
   },
   {
-   "id": "tema:maquetacion",
-   "tipo": "tema",
-   "titulo": "maquetacion",
-   "peso": 7,
-   "ruta": "memoria/temas/maquetacion.md"
-  },
-  {
    "id": "tema:reglas-tfg",
    "tipo": "tema",
    "titulo": "reglas-tfg",
@@ -5444,6 +5489,13 @@
    "ruta": "memoria/temas/sesión.md"
   },
   {
+   "id": "tema:redaccion",
+   "tipo": "tema",
+   "titulo": "redaccion",
+   "peso": 1,
+   "ruta": "memoria/temas/redaccion.md"
+  },
+  {
    "id": "tema:email-confirmation",
    "tipo": "tema",
    "titulo": "email-confirmation",
@@ -5721,6 +5773,26 @@
   {
    "de": "leccion:escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en",
    "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable",
+   "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
   {
@@ -12224,6 +12296,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -13875,6 +13967,26 @@
   },
   {
    "de": "receta:recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },

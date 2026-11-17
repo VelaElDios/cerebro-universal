@@ -9,162 +9,161 @@
 \section{Cómo se juega (manual de usuario)}
 \label{sec:juego-manual}
 
-\subsection{Entrada y menú principal}
-Con sesión iniciada, la ruta \texttt{\#/jugar} abre el menú del juego (Figura~\ref{fig:juego-menu}). La primera vez se pide un \textbf{mote} (3 a 16 caracteres, único) y una \textbf{cara} para el avatar.
+Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \texttt{\#/jugar}. En su primera visita debe elegir un \textbf{mote} (3 a 16 caracteres, único) y una \textbf{cara} para su avatar; a partir de entonces, el menú muestra a la izquierda su ficha con el mote, el avatar y sus mejores tiempos, y a la derecha las opciones principales: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes. El menú principal y el vestuario se muestran en la Figura~\ref{fig:juego-menu-vestuario} (subfiguras~\ref{fig:juego-menu} y~\ref{fig:juego-vestuario}); en el vestuario el jugador puede filtrar por posición, ver la ficha de cada futbolista (estadísticas, habilidades y equipaciones) y seleccionar su personaje y equipación.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/01-menu.png}
-\caption{Menú del juego (inicio con sesión): el jugador paseando por el campo, la ficha del aficionado, tus tiempos y el menú lateral.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/01-menu.png}
+\subcaption{Menú del juego: el jugador paseando, ficha del aficionado y menú lateral.}
 \label{fig:juego-menu}
-\end{figure}
-
-El menú ofrece: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes; a la izquierda, tu ficha y tus tiempos.
-
-\subsection{Controles}
-\begin{itemize}
-    \item \textbf{Teclado:} WASD o flechas para moverse; \texttt{Espacio}/\texttt{E} para la ulti; \texttt{Esc}/\texttt{P} para pausar; \texttt{F} para pantalla completa; \texttt{1}--\texttt{3} para elegir mejora al subir de nivel.
-    \item \textbf{Móvil:} joystick táctil flotante al arrastrar.
-    \item \textbf{Ajustes:} volumen de música y efectos, gráficos, cámara, controles; se guardan en \texttt{localStorage}.
-\end{itemize}
-
-\subsection{Partida: oleadas, experiencia y mejoras}
-La partida es infinita: cada 30 segundos una oleada nueva y un jefe cada cuatro oleadas (el primero a 1:30). Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación salen marcadas con ★). La Figura~\ref{fig:juego-partida} muestra una partida en curso.
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/03-partida.png}
-\caption{Partida en curso: mundo procedural, rivales, armas automáticas y HUD.}
-\label{fig:juego-partida}
-\end{figure}
-
-La pantalla de subida de nivel (Figura~\ref{fig:juego-mejora}) permite elegir una mejora.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/04-mejora.png}
-\caption{Subida de nivel: elegir una de tres mejoras.}
-\label{fig:juego-mejora}
-\end{figure}
-
-\subsection{Jefes}
-Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en ganarles y una jugada estrella en la fase 3. La Figura~\ref{fig:juego-jefe} muestra al jefe Vinicius Jr.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/05-jefe.png}
-\caption{Jefe Vinicius Jr. en el campo con su barra de vida.}
-\label{fig:juego-jefe}
-\end{figure}
-
-\subsection{Ambientes}
-Cada 5 minutos cambia el ambiente: pretemporada → Final Copa del Rey → Final Liga → Final Champions → Final Mundial (Figura~\ref{fig:juego-final-copa}). Cambian la luz, el césped, la afición, los carteles y los rivales salen más fuertes; en el Mundial todos llevan la camiseta de su selección.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/16-final-copa.png}
-\caption{Ambiente de la Final de la Copa del Rey (a partir del minuto 5).}
-\label{fig:juego-final-copa}
-\end{figure}
-
-\subsection{Fin de partida}
-Al caer, se muestra la pantalla de estadísticas (tiempo, ambiente, bajas, jefes, daño por habilidad, golpe más fuerte, daño recibido, vida recuperada, logros nuevos) y las recompensas del club (Figura~\ref{fig:juego-fin}).
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/06-fin.png}
-\caption{Fin de la partida: tiempo, estadísticas, daño por habilidad y logro nuevo.}
-\label{fig:juego-fin}
-\end{figure}
-
-\subsection{Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking, Ajustes, Pausa}
-Las capturas \ref{fig:juego-vestuario} a \ref{fig:juego-pausa} ilustran cada pantalla.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/02-vestuario.png}
-\caption{Vestuario: lista de jugadores con filtros, ficha de Griezmann y equipaciones.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/02-vestuario.png}
+\subcaption{Vestuario: lista con filtros, ficha de Griezmann y equipaciones.}
 \label{fig:juego-vestuario}
+\end{subfigure}
+\caption{Menú principal y vestuario.}
+\label{fig:juego-menu-vestuario}
 \end{figure}
 
-La figura~\ref{fig:juego-entrenamiento} muestra el entrenamiento: puntos para subir vida, defensa, disparo y suerte; botón modo pruebas (admin).
+Los controles son flexibles: en teclado se usan WASD o flechas para moverse, \texttt{Espacio}/\texttt{E} para la ulti, \texttt{Esc}/\texttt{P} para pausar, \texttt{F} para pantalla completa y \texttt{1}--\texttt{3} para elegir mejora al subir de nivel; en móvil aparece un joystick táctil flotante al arrastrar. Los ajustes de volumen, gráficos, cámara y controles se guardan en \texttt{localStorage}.
+
+Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La Figura~\ref{fig:juego-partida-mejora} ilustra una partida en curso (subfigura~\ref{fig:juego-partida}) con el mundo procedural, rivales, armas automáticas y HUD, y la pantalla de subida de nivel (subfigura~\ref{fig:juego-mejora}) donde se elige una de tres mejoras.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/07-entrenamiento.png}
-\caption{Entrenamiento: puntos para subir vida, defensa, disparo y suerte; botón modo pruebas (admin).}
-\label{fig:juego-entrenamiento}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/03-partida.png}
+\subcaption{Partida en curso: mundo procedural, rivales, armas automáticas y HUD.}
+\label{fig:juego-partida}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/04-mejora.png}
+\subcaption{Pantalla de subida de nivel con tres mejoras.}
+\label{fig:juego-mejora}
+\end{subfigure}
+\caption{Partida y elección de mejoras.}
+\label{fig:juego-partida-mejora}
 \end{figure}
 
-La figura~\ref{fig:juego-contratar} muestra el mercado de fichajes con las fichas de contrato.
+Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. La Figura~\ref{fig:juego-jefe-ambiente} muestra al jefe Vinicius Jr. con su barra de vida (subfigura~\ref{fig:juego-jefe}) y el ambiente de la Final de la Copa del Rey (subfigura~\ref{fig:juego-final-copa}), que se activa a partir del minuto 5. Cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/08-contratar.png}
-\caption{Mercado de fichajes con las fichas de contrato.}
-\label{fig:juego-contratar}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/05-jefe.png}
+\subcaption{Jefe Vinicius Jr. con su barra de vida.}
+\label{fig:juego-jefe}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/16-final-copa.png}
+\subcaption{Ambiente de la Final de la Copa del Rey (minuto 5).}
+\label{fig:juego-final-copa}
+\end{subfigure}
+\caption{Jefe y cambio de ambiente.}
+\label{fig:juego-jefe-ambiente}
 \end{figure}
 
-La figura~\ref{fig:juego-logros} muestra la vitrina de logros, cada uno con un dato de la historia del Atleti.
+Cuando el jugador cae, la aplicación muestra la pantalla de fin con las estadísticas de la partida (tiempo, ambiente, bajas, jefes, daño por habilidad, golpe más fuerte, daño recibido, vida recuperada y logros nuevos) y las recompensas del club. La Figura~\ref{fig:juego-fin-pausa} agrupa la pantalla de fin de partida (subfigura~\ref{fig:juego-fin}), que muestra el tiempo, estadísticas, daño por habilidad y logros nuevos, y el menú de pausa (subfigura~\ref{fig:juego-pausa}), accesible con \texttt{Esc} o \texttt{P} para ajustar sonido, gráficos y controles sin salir de la partida.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/09-logros.png}
-\caption{Vitrina de logros, cada uno con un dato de la historia del Atleti.}
-\label{fig:juego-logros}
-\end{figure}
-
-La figura~\ref{fig:juego-combinaciones} muestra las metas de la grada: ultras y combinaciones con lo que pide cada una.
-
-\begin{figure}[htbp]
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/10-combinaciones.png}
-\caption{Las metas de la grada: ultras y combinaciones con lo que pide cada una.}
-\label{fig:juego-combinaciones}
-\end{figure}
-
-La figura~\ref{fig:juego-direccion} muestra la dirección deportiva: elegir entrenador (Cholo Simeone o Luis Aragonés) y su ulti.
-
-\begin{figure}[htbp]
+\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/juego/06-fin.png}
+\subcaption{Fin de la partida: tiempo, estadísticas, daño por habilidad y logro nuevo.}
+\label{fig:juego-fin}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/11-direccion.png}
-\caption{Dirección deportiva: elegir entrenador (Cholo Simeone o Luis Aragonés) y su ulti.}
-\label{fig:juego-direccion}
-\end{figure}
-
-La figura~\ref{fig:juego-ranking} muestra el ranking de la grada: mote y avatar, nunca el correo.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/12-ranking.png}
-\caption{Ranking de la grada: mote y avatar, nunca el correo.}
-\label{fig:juego-ranking}
-\end{figure}
-
-La figura~\ref{fig:juego-identidad} muestra la pantalla ``Tu ficha'': mote y avatar.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/13-identidad.png}
-\caption{Pantalla ``Tu ficha'': mote y avatar.}
-\label{fig:juego-identidad}
-\end{figure}
-
-La figura~\ref{fig:juego-ajustes} muestra los ajustes de volumen, gráficos, cámara y controles.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/14-ajustes.png}
-\caption{Ajustes de volumen, gráficos, cámara y controles.}
-\label{fig:juego-ajustes}
-\end{figure}
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/juego/15-pausa.png}
-\caption{Menú de pausa de la partida.}
+\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/juego/15-pausa.png}
+\subcaption{Menú de pausa durante la partida.}
 \label{fig:juego-pausa}
+\end{subfigure}
+\caption{Fin de la partida y menú de pausa.}
+\label{fig:juego-fin-pausa}
 \end{figure}
+
+El resto del menú gestiona el club y consulta el progreso, y cada pantalla responde a una necesidad concreta (Figuras~\ref{fig:juego-club-pantallas-a} y~\ref{fig:juego-club-pantallas-b}). En Entrenamiento (subfigura~\ref{fig:juego-entrenamiento}) el jugador gasta los puntos ganados con bajas y jefes en subir Vida, Defensa, Disparo y Suerte, y el administrador dispone además del botón de modo pruebas. En Contratar (subfigura~\ref{fig:juego-contratar}) canjea las fichas de contrato —una por cada 3 jefes vencidos— por jugadores sorteados por rareza. La vitrina de Logros (subfigura~\ref{fig:juego-logros}) presenta cada logro junto al dato histórico del club que esconde, y la pantalla de Combinaciones (subfigura~\ref{fig:juego-combinaciones}) lista las metas y las ultras con lo que pide cada una, con filtros para ver requisitos y progreso. La Dirección (subfigura~\ref{fig:juego-direccion}) permite elegir entrenador —Cholo Simeone o Luis Aragonés, cada uno con su ulti—, el Ranking de la grada (subfigura~\ref{fig:juego-ranking}) compara la mejor partida de cada usuario mostrando mote y avatar, nunca el correo, «Tu ficha» (subfigura~\ref{fig:juego-identidad}) cambia el mote y el avatar, y Ajustes (subfigura~\ref{fig:juego-ajustes}) guarda el volumen, los gráficos, la cámara y los controles.
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/07-entrenamiento.png}
+\subcaption{Entrenamiento: puntos para subir estadísticas y modo pruebas (admin).}
+\label{fig:juego-entrenamiento}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/08-contratar.png}
+\subcaption{Mercado de fichajes con fichas de contrato.}
+\label{fig:juego-contratar}
+\end{subfigure}
+\\
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/09-logros.png}
+\subcaption{Vitrina de logros con datos históricos.}
+\label{fig:juego-logros}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/10-combinaciones.png}
+\subcaption{Combinaciones y ultras con requisitos y bonus.}
+\label{fig:juego-combinaciones}
+\end{subfigure}
+\caption{Pantallas del club (I): entrenamiento, fichajes, logros y combinaciones.}
+\label{fig:juego-club-pantallas-a}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/11-direccion.png}
+\subcaption{Dirección deportiva: elección de entrenador y ulti.}
+\label{fig:juego-direccion}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/12-ranking.png}
+\subcaption{Ranking de la grada: mote y avatar, sin correo.}
+\label{fig:juego-ranking}
+\end{subfigure}
+\\
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/13-identidad.png}
+\subcaption{Pantalla ``Tu ficha'': mote y avatar.}
+\label{fig:juego-identidad}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/juego/14-ajustes.png}
+\subcaption{Ajustes de volumen, gráficos, cámara y controles.}
+\label{fig:juego-ajustes}
+\end{subfigure}
+\caption{Pantallas del club (II): dirección, ranking, identidad y ajustes.}
+\label{fig:juego-club-pantallas-b}
+\end{figure}
+
+
 
 \section{Sistemas}
 \label{sec:juego-sistemas}
@@ -180,9 +179,9 @@ La Tabla~\ref{tab:juego-sistemas} resume los sistemas del juego.
 Jugadores & 36 (4 porteros, 9 defensas, 13 medios, 10 delanteros). Posición fija estadísticas base; rasgos propios y lista de habilidades aprendibles & \path{PERSONAJES}, \path{POSICIONES} \\
 Rarezas & Según historia en el Atleti: Leyenda (8), Épico (8), Raro (8), Común (12). Más rareza = más habilidades (8 a 16) y menos probabilidad en contrato & \path{RAREZAS} \\
 Entrenadores & Cholo Simeone (+daño, +vida; ulti ``¡Partido a partido!'') y Luis Aragonés (+velocidad, +experiencia; ulti ``Furia Roja'') & \path{ENTRENADORES} \\
-Armas y habilidades & 24, con 5 niveles: disparo, cuerpo a cuerpo, movilidad, especiales. Las más fuertes no suben hasta cierto minuto (\path{desdeMinuto}) y tienen recarga mínima (\path{cdMin}) & \path{ARMAS} \\
-Pasivas & 14 (botas, imán, pasión, pizarra, cantera, masajista, espinilleras, pulmones, toque dorado, botas en llamas, paradón, brazalete, trébol, prórroga) & \path{PASIVAS} \\
-Combinaciones & 24 ``metas'' que se activan al juntar ciertas habilidades a cierto nivel y dan bonus (Muro rojiblanco, Tiki-taka, Pichichi, Catenaccio, Leyenda rojiblanca, Golazo de otro planeta, Remontada épica, Triple Corona, Infierno del Metropolitano, Capitán eterno...) & \path{SINERGIAS} \\
+Armas y habilidades & 29, con 5 niveles: disparo, cuerpo a cuerpo, movilidad, especiales. Las más fuertes no suben hasta cierto minuto (\path{desdeMinuto}) y tienen recarga mínima (\path{cdMin}) & \path{ARMAS} \\
+Pasivas & 16 (botas, imán, pasión, pizarra, cantera, masajista, espinilleras, pulmones, toque dorado, botas en llamas, paradón, brazalete, trébol, prórroga, visión de juego, partidos grandes) & \path{PASIVAS} \\
+Combinaciones & 29 ``metas'' que se activan al juntar ciertas habilidades a cierto nivel y dan bonus (Muro rojiblanco, Tiki-taka, Pichichi, Catenaccio, Leyenda rojiblanca, Golazo de otro planeta, Remontada épica, Triple Corona, Infierno del Metropolitano, Capitán eterno...); 24 en Fase 3 + 5 en Fase 7 = 29 total & \path{SINERGIAS} \\
 Ultras & 6 que se consiguen solas al completar varias combinaciones: Premio Puskás, Ganador del Balón de Oro, MVP de la Champions, Trofeo Zamora, Bota de Oro histórica, Mejor jugador del Mundial. Efecto visual propio y daño en parte porcentual (menor contra jefes) & \path{ULTRAS}, \path{ultras.js} \\
 Rivales & 16 equipos con jugadores genéricos; unos embisten (Liverpool, Arsenal, PSG, Dortmund) y otros disparan (Bayern, City, Chelsea, Juventus, Milan, Inter, Nápoles); élites blindado, veloz y furioso & \path{EQUIPOS}, \path{ELITES} \\
 Jefes & 10: Guardiola (rondo, tiki-taka), Mourinho (autobús), Cristiano (``Siuuu''), Messi (eslalon), Vinicius (zigzag), Yamal (rosca), Neymar (lluvia de bicicletas), Bale (cañonazos), Benzema (precisión), Suárez (mordiscos). Tres fases, escolta, furia, jugada estrella. Desde oleada 24 pueden salir dos a la vez y cada vuelta completa los hace 25\% más duros & \path{JEFES}, \path{jefes.js} \\
@@ -195,14 +194,16 @@ Sonido & Efectos, música chiptune original (canción por ambiente que se anima 
 \bottomrule
 \end{longtable}
 
+Los valores de la Tabla~\ref{tab:juego-sistemas} incluyen ya las 5 habilidades, 2 pasivas y 5 combinaciones añadidas en la Fase 7, sumando 29 armas, 16 pasivas y 29 combinaciones, que son los totales que recoge la Tabla~\ref{tab:metricas} del Capítulo~\ref{cap:evaluacion}.
+
 \section{Arquitectura del juego}
 \label{sec:juego-arquitectura}
 
-La Figura~\ref{fig:juego-arquitectura} muestra la arquitectura del juego.
+El juego se organiza en tres bloques separados: la simulación pura, que no toca el DOM ni el audio; la presentación (pantallas, renderizado, HUD y sonido); y el servidor, que valida las partidas y comparte con el cliente las reglas del club. Esa división es la que se dibuja en la Figura~\ref{fig:juego-arquitectura}.
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth}
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.5\textheight}
 \begin{tikzpicture}[
     node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.9cm, font=\small},
     nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.9cm, font=\small},
@@ -280,7 +281,7 @@ Todo sintetizado con Web Audio: ondas de pulso (12,5\%, 25\% y 50\%), triángulo
 
 \begin{itemize}
     \item Al \textbf{empezar}, el servidor guarda la partida en curso con su propio reloj.
-    \item Al \textbf{terminar}, rechaza el resultado si la partida no es la que está en curso, si el tiempo supera lo transcurrido (con 15 s de margen) o 4 horas, o si los jefes, el nivel o las bajas no son creíbles para ese tiempo (\texttt{jefes ≤ 3 + t/50}, \texttt{nivel ≤ 8 + t/3}, \texttt{bajas ≤ 20·t + 50}).
+    \item Al \textbf{terminar}, rechaza el resultado si la partida no es la que está en curso, si el tiempo supera lo transcurrido (con 15 s de margen) o 4 horas, o si los jefes, el nivel o las bajas no son creíbles para ese tiempo (\texttt{jefes $\leq$ 3 + t/50}, \texttt{nivel $\leq$ 8 + t/3}, \texttt{bajas $\leq$ 20·t + 50}).
     \item De los \textbf{logros} que manda el cliente, solo apunta los que puede comprobar con lo que sabe (tiempo, jefes, bajas, jugador y entrenador); los de plantilla los calcula él.
     \item Cada cambio del perfil usa \textbf{concurrencia optimista} (\texttt{UPDATE ... WHERE version = \$n}) con reintentos.
     \item El \textbf{ranking} guarda la mejor partida de cada usuario con su mote y avatar, nunca el correo.
@@ -292,7 +293,7 @@ Todo sintetizado con Web Audio: ondas de pulso (12,5\%, 25\% y 50\%), triángulo
 \subsection{Una partida del juego (inicio, juego y fin con validación)}
 \label{sec:juego-partida-seq}
 
-La Figura~\ref{fig:sec-partida} muestra el flujo de una partida con validación en el servidor.
+Una partida recorre tres momentos: al empezar, el servidor guarda la partida en curso con su propio reloj; durante el juego, el cliente avanza la simulación con paso fijo y va pintando el mundo mientras suena la música; y al terminar, el servidor valida el resultado antes de dar las recompensas. Ese recorrido completo, con la validación anti-trampas, es el que detalla paso a paso la Figura~\ref{fig:sec-partida}.
 
 \begin{figure}[htbp]
 \centering
@@ -344,7 +345,7 @@ La Figura~\ref{fig:sec-partida} muestra el flujo de una partida con validación 
 \subsection{Contratar con una ficha (concurrencia optimista)}
 \label{sec:juego-contratar-seq}
 
-La Figura~\ref{fig:sec-contratar} muestra el flujo de contratación con concurrencia optimista.
+Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el usuario pulsa dos veces, las dos peticiones leen la misma versión del perfil: la primera escribe con éxito y la segunda falla al actualizar, se reintenta con los datos nuevos —que ya no tienen fichas— y recibe un 409. Ese mecanismo de concurrencia optimista es el que se ve paso a paso en la Figura~\ref{fig:sec-contratar}.
 
 \begin{figure}[htbp]
 \centering
@@ -436,7 +437,7 @@ Cada fase es una etiqueta del Sprint 2 en DoneTonic. La Tabla~\ref{tab:juego-fas
 Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú del juego como inicio con sesión & La interfaz del sprint era funcional pero sobria \\
 1 & Survivor base: simulación, oleadas, armas, mejoras, jefes y menú con el muñeco paseando & — \\
 2 & Club en el servidor (plantilla, contratos, entrenamiento), ranking de la grada, élites y poderes nuevos & Progreso ligado a la cuenta y validado \\
-3 & 6 ultras, 24 combinaciones, dificultad con castigo, entrenamiento por bajas y modo pruebas & Maxear una sola cosa ya no basta \\
+3 & 6 ultras, 24 combinaciones (5 más en Fase 7 = 29 total), dificultad con castigo, entrenamiento por bajas y modo pruebas & Maxear una sola cosa ya no basta \\
 4 & Mundo procedural natural, 5 ambientes por finales, mote y avatar & Mapa repetitivo; correo visible en el ranking \\
 5 & Rarezas por historia rojiblanca, habilidades niveladas, combinaciones a la vista, animación de la firma, colisiones exactas & Regate demasiado fuerte; esconderse detrás de los tejados \\
 6 & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles \\

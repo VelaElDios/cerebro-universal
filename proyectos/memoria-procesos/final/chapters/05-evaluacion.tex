@@ -3,7 +3,7 @@
 
 \section{Diseño de la evaluación}
 
-La evaluación de la calidad y del cumplimiento de la especificación se diseñó como un proceso continuo y reproducible. El marco de verificación descansa en cuatro pilares:
+La evaluación comprueba el cumplimiento del enunciado de forma continua y reproducible. Usa cuatro mecanismos:
 \begin{enumerate}
     \item \textbf{Pruebas unitarias e integración en local:} Uso del ejecutor nativo \texttt{node:test} con el simulador de base de datos en memoria \texttt{pg-mem}, lo que permite ejecutar la suite completa en el entorno de desarrollo mediante el comando unificado \texttt{npm test}.
     \item \textbf{Integración continua en GitHub Actions:} Ejecución del flujo de trabajo automatizado en cada pull request y push hacia la rama \texttt{main}. Dicho flujo despliega un servicio PostgreSQL 17 real para ejecutar las pruebas contra la base de datos auténtica y valida la construcción de la imagen de producción en Docker mediante un contenedor \texttt{node:22-alpine}.
@@ -15,7 +15,7 @@ La evaluación de la calidad y del cumplimiento de la especificación se diseñ�
 
 \subsection{Pruebas automáticas}
 
-La batería de pruebas automatizadas consta de 276 pruebas, divididas en 140 del Sprint 1 (cuentas, API, base de datos, seguridad, prueba técnica) y 136 del juego (simulación, club, movilidad, API juego, personajes, habilidades, ultras, logros, repositorio). El comando único \texttt{npm test} las ejecuta todas; en local usan \texttt{pg-mem} y en el CI PostgreSQL 17 real. La Tabla~\ref{tab:pruebas-por-fichero} detalla la distribución de pruebas por fichero y la funcionalidad específica comprobada en cada caso.
+La batería consta de 276 pruebas automáticas en \texttt{main} al cerrar el Sprint 2: 140 del Sprint 1 (cuentas, API, base de datos, seguridad, prueba técnica) y 136 del juego hasta la Fase 6 (simulación, club, movilidad, API del juego, personajes, habilidades, ultras, logros, repositorio). Las 46 pruebas de la Fase 7, hecha después del cierre, elevan el total a 322. El comando único \texttt{npm test} las ejecuta todas; en local usan \texttt{pg-mem} y en el CI PostgreSQL 17 real. La Tabla~\ref{tab:pruebas-por-fichero} detalla la distribución de pruebas por fichero y la funcionalidad específica comprobada en cada caso.
 
 \begin{longtable}{@{}L{5.0cm} R{1.2cm} L{8.0cm}@{}}
 \caption{Pruebas por fichero.}\label{tab:pruebas-por-fichero}\\
@@ -49,7 +49,7 @@ La batería de pruebas automatizadas consta de 276 pruebas, divididas en 140 del
 \texttt{game\allowbreak.test.js} & 10 & Simulación base (paso fijo, semilla, armas, jefes, ulti, dificultad) \\
 \texttt{juegoRepository\allowbreak.test.js} & 8 & Repositorio del juego en memoria y PostgreSQL \\
 \midrule
-\textbf{Total} & \textbf{276} & 140 del Sprint 1 y 136 del juego \\
+\textbf{Total} & \textbf{276} & 140 del Sprint 1 y 136 del juego hasta la Fase 6; con la Fase 7, 322 \\
 \bottomrule
 \end{longtable}
 
@@ -74,11 +74,11 @@ Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{r
 \bottomrule
 \end{longtable}
 
-La Figura \ref{fig:pipeline} ilustra el diagrama del pipeline de integración y despliegue continuos.
+La Figura~\ref{fig:pipeline} resume el pipeline completo: cada PR ejecuta las pruebas contra PostgreSQL 17 y construye la imagen Docker, y solo \texttt{main} con el CI en verde despliega en Cloud Run (Render lo despliega en paralelo por webhook).
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth}
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
     node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.85cm, font=\footnotesize},
     nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.85cm, font=\footnotesize},
@@ -105,11 +105,11 @@ La Figura \ref{fig:pipeline} ilustra el diagrama del pipeline de integración y 
 \label{fig:pipeline}
 \end{figure}
 
-Como evidencia visual del flujo automatizado, la captura de la Figura \ref{fig:actions-verde} demuestra la ejecución exitosa en verde tanto de la integración continua como del despliegue en Google Cloud Run.
+Tras los PR del Hito 4, GitHub Actions muestra en verde tanto el trabajo de pruebas como el de despliegue en Cloud Run (Figura~\ref{fig:actions-verde}): el CI pasó y la nueva revisión recibió el tráfico. La captura confirma que ambos jobs (\textit{Pruebas} e \textit{Imagen Docker}) finalizaron correctamente y que el workflow de despliegue (\texttt{deploy-cloud-run.yml}) se ejecutó en cascada tras el CI exitoso en \texttt{main}.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/02-actions-verde.png}
+\includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/02-actions-verde.png}
 \caption{GitHub Actions: flujos de CI y despliegue en Cloud Run en verde tras los PRs del Hito 4.}
 \label{fig:actions-verde}
 \end{figure}
@@ -142,49 +142,53 @@ La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\all
 
 \section{Prueba técnica (RF-13)}
 
-En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). La Figura \ref{fig:prueba-tecnica-permitido} ilustra la respuesta afirmativa ante un dominio autorizado, mientras que la Figura \ref{fig:prueba-tecnica-rechazado} evidencia el rechazo de un subdominio no reconocido. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
+En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). En producción responde \texttt{permitido: true} para un dominio autorizado y \texttt{permitido: false} para un subdominio que no está en la lista. La Figura~\ref{fig:prueba-tecnica} muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
-\caption{Prueba técnica: validación afirmativa de dominio permitido.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/01-dominio-permitido.png}
+\subcaption{Dominio permitido: respuesta afirmativa.}
 \label{fig:prueba-tecnica-permitido}
-\end{figure}
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.7\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/02-subdominio-rechazado.png}
-\caption{Prueba técnica: rechazo de subdominio no autorizado.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/prueba-tecnica/02-subdominio-rechazado.png}
+\subcaption{Subdominio no autorizado: respuesta negativa.}
 \label{fig:prueba-tecnica-rechazado}
+\end{subfigure}
+\caption{Prueba técnica en producción: respuestas de \texttt{POST /api/prueba/dominio}.}
+\label{fig:prueba-tecnica}
 \end{figure}
 
 \section{Comprobación en producción}
 
-El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) fue sometido a validación manual en condiciones reales de explotación:
-\begin{itemize}
-    \item Emisión y recepción satisfactoria de correo electrónico transaccional en buzón real de Gmail (Figura \ref{fig:correo-confirmacion}).
-    \item Configuración de Google Auth Platform con estado publicado para usuarios externos (Figura \ref{fig:google-publicada}).
-    \item Validación de enlaces de confirmación manipulados o caducados.
-    \item Interacción concurrente sobre perfiles y verificación de bajas de cuenta.
-\end{itemize}
+El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) fue sometido a validación manual en condiciones reales de explotación. La Figura~\ref{fig:produccion-verificacion} muestra dos evidencias clave: la recepción del correo de confirmación transaccional en un buzón real de Gmail (subfigura~\ref{fig:correo-confirmacion}) y la configuración de Google Auth Platform con la aplicación OAuth publicada en producción para usuarios externos (subfigura~\ref{fig:google-publicada}). Además, se validaron enlaces de confirmación manipulados o caducados y se comprobó la interacción concurrente sobre perfiles y la baja de cuentas, confirmando la concurrencia optimista y la invalidez inmediata de la sesión tras la baja.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.75\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/01-correo-confirmacion.png}
-\caption{Correo de confirmación transaccional recibido en un buzón de Gmail.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/01-correo-confirmacion.png}
+\subcaption{Correo de confirmación recibido en un buzón de Gmail.}
 \label{fig:correo-confirmacion}
-\end{figure}
-
-\begin{figure}[htbp]
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.75\textwidth,height=0.72\textheight,keepaspectratio]{figs/capturas/produccion/03-google-publicada.png}
-\caption{Consola de Google Cloud: aplicación OAuth publicada en producción para usuarios externos.}
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/03-google-publicada.png}
+\subcaption{Aplicación OAuth publicada en producción para usuarios externos.}
 \label{fig:google-publicada}
+\end{subfigure}
+\caption{Comprobación en producción: correo real recibido y aplicación de Google publicada.}
+\label{fig:produccion-verificacion}
 \end{figure}
 
 \section{Métricas del proyecto}
 
-La Tabla \ref{tab:metricas} sintetiza las dimensiones cuantitativas del software desarrollado a lo largo de ambos sprints.
+La Tabla~\ref{tab:metricas} reúne las métricas del proyecto medidas al cerrar los dos sprints.
 
 \begin{longtable}{@{}L{6.0cm} L{8.0cm}@{}}
 \caption{Métricas globales del proyecto.}\label{tab:metricas}\\
@@ -205,7 +209,7 @@ Líneas de hojas de estilo CSS & ~950 \\
 Líneas del motor del juego (\path{public/js/game/}, 35 módulos) & ~14.800 \\
 Líneas de pruebas automatizadas & ~5.050 \\
 Dependencias directas de producción & 6 \\
-Contenido jugable implementado & 36 jugadores, 2 entrenadores, 24 armas, 14 pasivas, 24 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones \\
+Contenido jugable implementado & 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones (24 Fase 3 + 5 Fase 7), 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones \\
 \bottomrule
 \end{longtable}
 
