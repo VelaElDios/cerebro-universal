@@ -334,7 +334,26 @@ El Sprint 2 se cerró el 29/10/2026, día en que se registró el backlog complet
 
 \subsection{Retrospectiva}
 
-La Figura~\ref{fig:burndown-s2} muestra el burndown real del Sprint 2 según las fechas de fusión de los PR. Como el backlog se registró en DoneTonic al cerrar el sprint (29/10/2026), las gráficas de DoneTonic del Sprint 2 salen en recta: los 29 PBIs aparecen como pendientes hasta el 29/10 y pasan a hechos ese mismo día.
+La Tabla~\ref{tab:evolucion-s2} y la Figura~\ref{fig:burndown-s2} muestran la evolución real del Sprint 2 según la fecha en que se fusionó en \texttt{main} el último PR de cada PBI. Como el backlog se registró en DoneTonic al cerrar el sprint (29/10/2026), las gráficas de DoneTonic del Sprint 2 salen en recta: los 29 PBIs aparecen como pendientes hasta el 29/10 y pasan a hechos ese mismo día (Figura~\ref{fig:donetonic-s2-graficas}).
+
+{\small
+\begin{longtable}{@{}L{4.5cm} L{3.2cm} L{3.4cm} L{3.0cm}@{}}
+\caption{Evolución real del Sprint 2: PBIs pendientes según la fecha del último PR de cada uno.}\label{tab:evolucion-s2}\\
+\toprule
+\textbf{Día} & \textbf{Hechos ese día} & \textbf{Hechos (acumulado)} & \textbf{Pendientes} \\ \midrule \endfirsthead
+\toprule
+\textbf{Día} & \textbf{Hechos ese día} & \textbf{Hechos (acumulado)} & \textbf{Pendientes} \\ \midrule \endhead
+Inicio (23/10/2026) & 0 & 0 & 29 \\
+23/10 (PR \#36) & 1 & 1 & 28 \\
+24/10 (PRs \#44--\#52) & 17 & 18 & 11 \\
+25/10 & 0 & 18 & 11 \\
+26/10 (PRs \#53 y \#54) & 9 & 27 & 2 \\
+27/10 (PR \#55) & 0 & 27 & 2 \\
+28/10 & 0 & 27 & 2 \\
+29/10 (PR \#56 y documentación) & 2 & 29 & 0 \\
+\bottomrule
+\end{longtable}
+}
 
 \begin{figure}[htbp]
 \centering
@@ -345,20 +364,20 @@ La Figura~\ref{fig:burndown-s2} muestra el burndown real del Sprint 2 según las
     height=7cm,
     xlabel={Fecha},
     ylabel={PBIs pendientes},
-    xtick={1,2},
-    xticklabels={23/10/2026, 29/10/2026},
+    xtick={1,2,3,4,5,6,7},
+    xticklabels={23/10, 24/10, 25/10, 26/10, 27/10, 28/10, 29/10},
     ymin=0, ymax=30,
     grid=major,
     legend pos=north east,
     mark=*,
     thick
 ]
-\addplot coordinates {(1,29) (2,0)};
-\addlegendentry{PBIs pendientes (recta por registro al cierre)}
+\addplot coordinates {(1,28) (2,11) (3,11) (4,2) (5,2) (6,2) (7,0)};
+\addlegendentry{PBIs pendientes}
 \end{axis}
 \end{tikzpicture}
 \end{adjustbox}
-\caption{Burndown del Sprint 2: recta porque el backlog se registró al cerrar el sprint (29/10/2026).}
+\caption{Burndown real del Sprint 2: PBIs pendientes según las fechas de fusión de los PR (23/10--29/10/2026).}
 \label{fig:burndown-s2}
 \end{figure}
 
@@ -383,4 +402,8 @@ La Figura~\ref{fig:donetonic-s2-capturas} (subfiguras~\ref{fig:donetonic-s2-graf
 \label{fig:donetonic-s2-capturas}
 \end{figure}
 
-\textbf{Explicación de la recta y lecciones aprendidas.} El backlog del Sprint 2 se registró en DoneTonic el 29/10/2026, al cerrar el sprint, con todos los PBIs ya en estado hecho; por eso el Sprint Burndown aparece como una línea recta que cae de 29 a 0 el último día, en lugar de una curva repartida en el tiempo. Registrar el backlog al inicio del sprint habría dado una gráfica real de seguimiento; aun así, la trazabilidad tarea--PR del Anexo~\ref{anx:trazabilidad} documenta las fechas reales de cada entrega (23, 24, 26, 27 y 29 de octubre).
+\textbf{Explicación de la recta de DoneTonic y lecciones aprendidas.} El backlog del Sprint 2 se registró en DoneTonic el 29/10/2026, al cerrar el sprint, con los 29 PBIs ya en estado \textit{Hecho}; por eso el Sprint Burndown y el Burnup de DoneTonic aparecen como una recta que cae de 29 a 0 ese día, en lugar de reflejar la evolución real. La evolución real, reconstruida a partir de las fechas de fusión de los pull requests (Tabla~\ref{tab:evolucion-s2} y Figura~\ref{fig:burndown-s2}), muestra que el trabajo se concentró en tres días: 23/10 (PR \#36, base del survivor), 24/10 (PRs \#44--\#52, Fases 1--4, 17 PBIs) y 26/10 (PRs \#53 y \#54, Fases 5--6, 9 PBIs), cerrando con los arreglos \#55 y \#56 el 27 y 29/10. Registrar el backlog al inicio del sprint habría dado una gráfica de seguimiento útil; la trazabilidad tarea--PR del Anexo~\ref{anx:trazabilidad} documenta las fechas reales de cada entrega.
+
+El Sprint 2 se cerró con los 29 PBIs comprometidos hechos (29 de 29) y las 50 tareas, integrados en \texttt{main} con los pull requests \#36 y \#44--\#56; al cierre, la rama principal acumulaba 276 pruebas automáticas en verde (140 del Sprint 1 y 136 del juego hasta la Fase 6). Tras el cierre del sprint se completó la Fase 7 del juego (muñecos chibi de 32×32 con rasgos propios, mapa con más detalle y luz por ambiente, menú rediseñado con paneles translúcidos y botón de entrada, cinco habilidades nuevas --carambola, presión alta, la ola, fuera de juego, ruleta-- y dos pasivas --visión de juego y partidos grandes--), que eleva el total de pruebas a 322.
+
+\textbf{Lecciones aprendidas del Sprint 2.} (1) Concentrar el desarrollo en pocos días exige tareas muy pequeñas y PRs frecuentes para que el CI no se convierta en cuello de botella. (2) La simulación determinista y las pruebas de la lógica del juego en Node (sin navegador) permitieron validar equilibrio, colisiones y anti-trampas antes de probar en el navegador. (3) Compartir \path{club.js}, \path{config.js} y \path{logros.js} entre cliente y servidor evitó duplicar reglas y aseguró que fichajes, entrenamiento y logros sean consistentes. (4) La concurrencia optimista con \texttt{version} en \texttt{juego\_perfiles} resolvió los dobles clics en «Contratar» sin bloqueos. (5) Registrar el backlog en DoneTonic al inicio del sprint, no al final, es esencial para que las gráficas de seguimiento sirvan de verdad.

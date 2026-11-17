@@ -9373,3 +9373,38 @@ El constructor agrupó correctamente las dos capturas de DoneTonic del Sprint 2 
 - Verificar que no queden frases sueltas «La figura X muestra…» en ningún capítulo (buscar patrones «La figura», «La Figura», «Figura X muestra», «Figura X ilustra», «Figura X demuestra»).
 - Repaso final de estilo en capítulos 01, 06 y anexos: eliminar adornos, frases cortas, explicar el porqué, coherencia entre capítulos.
 - Confirmar que todas las cifras del texto aparecen en las fuentes (test automático para >20, revisión manual para pequeñas).
+
+## 2026-11-17 01:34 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba falla solo por la Regla 9: la página 88 del PDF queda casi vacía (6 palabras), que es la cola del último párrafo de `a1-desarrollo.tex` (el anexo termina ahí y el siguiente capítulo fuerza página nueva). Para arreglarlo añado un párrafo de cierre con datos reales del cierre del Sprint 2 (29/29 PBIs, 50 tareas, PRs #36 y #44–#56, 276 pruebas en `main`, 322 tras la Fase 7), de modo que la última página del anexo tenga contenido de verdad. Además corrijo `fig:burndown-s2`, que trazaba la recta de DoneTonic en lugar del burndown real por fechas de los PR que pide la spec, y añado la tabla de evolución del Sprint 2 (fuente: `docs/gestion/README.md`).
+
+**Archivos:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 9: la página 88 del PDF está casi vacía (6 palabras): funde esa sección o línea suelta con la anterior.
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` y comprobar que `verificar.py` y `revisar_maquetacion.py` pasan en verde, en especial la Regla 9 (la página que antes quedaba casi vacía al final de `a1-desarrollo.tex` ahora tiene el párrafo de cierre). Si persiste alguna página casi vacía o con una sola imagen en otra parte (Reglas 8 y 9), localizarla en el PDF y fusionar la sección suelta o agrupar las capturas en subfiguras. Después, buscar en todos los capítulos frases sueltas del tipo «La figura X muestra/ilustra/demuestra…» y reescribirlas como prosa, y hacer el repaso final de estilo de `01-introduccion.tex`, `06-conclusiones.tex` y los anexos (frases cortas, sin adornos, coherencia entre capítulos).
+
+## 2026-11-17 01:36 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Regla 9 (página casi vacía): el test `revisar_maquetacion.py` falla en la página 88 (6 palabras). Según la estructura del documento, la página 88 corresponde al final de `a1-desarrollo.tex` (tras la figura `donetonic-s2-capturas` y el párrafo «Explicación de la recta…») o al inicio de `a2-material.tex` (solo título y párrafo introductorio corto).
+- Fuentes: `docs/gestion/README.md` § «Evolución del Sprint 2» y § «Retrospectiva» confirman que el anexo debe explicar la recta de DoneTonic y las lecciones; `documentacion-tecnica.md` §16 y §14 dan métricas de cierre (29/29 PBIs, 50 tareas, PRs #36 y #44–#56, 276 pruebas en `main`, 322 tras Fase 7).
+- Regla 12 (frases «La figura X muestra…»): revisión rápida en `03-propuesta.tex` y `05-evaluacion.tex` no muestra cadenas sueltas de ese tipo (el constructor dice que las eliminó).
+- Cifras contrastadas: 19 PBIs Sprint 1, 29 PBIs Sprint 2, 32+50=82 tareas, 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7 → `documentacion-tecnica.md` §14 y `gestion/README.md` tablas de evolución.
+
+El constructor añadió un párrafo de cierre en `a1-desarrollo.tex` y corrigió el burndown del Sprint 2 para usar fechas reales de PR, pero la página 88 sigue casi vacía. La causa es que el último párrafo del anexo («Explicación de la recta y lecciones aprendidas») queda huérfano en página nueva tras la figura `donetonic-s2-capturas`, y `a2-material.tex` empieza con muy poco texto antes de la lista de enlaces. Según la Regla 9, hay que fundir esa sección suelta con la anterior o añadir contenido sustancial. También hay que integrar la nota sobre capturas de DoneTonic dentro de «Enlaces del proyecto» en `a2-material.tex` para evitar una sección de dos líneas.
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a2-material.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que `verificar.py` y `revisar_maquetacion.py` pasan en verde (especialmente Regla 9: página 88 ya no casi vacía).
+- Si persiste alguna página casi vacía o con una sola imagen (Reglas 8 y 9), localizarla en el PDF y fusionar la sección suelta con la anterior o agrupar capturas en subfiguras.
+- Verificar que no queden frases sueltas «La figura X muestra…» en ningún capítulo (buscar patrones «La figura», «La Figura», «Figura X muestra», «Figura X ilustra», «Figura X demuestra»).
+- Repaso final de estilo en capítulos 01, 06 y anexos: eliminar adornos, frases cortas, explicar el porqué, coherencia entre capítulos.
+- Confirmar que todas las cifras del texto aparecen en las fuentes (test automático para >20, revisión manual para pequeñas).

@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 00:26"
+actualizado: "2026-11-17 01:36"
 ---
 
 # memoria-procesos
@@ -21,12 +21,11 @@ Memoria de la asignatura Procesos de Ingeniería del Software (curso 2026-2027) 
 - Cada cifra sale de las fuentes, copiada tal cual (19 PBIs en el Sprint 1, pero el burndown de la entrega cuenta 16).
 
 ## Estado
-Versión 4 de la spec (16/11/2026): la memoria compila y `verificar.py` pasa en estructura, pero `revisar_maquetacion.py` fallaba por:
-- Regla 8: 4 páginas con una sola imagen (páginas 42, 43, 44, 48) — **corregido en pasos 3 y 4** (manuales reescritos con subfigure).
-- Regla 9: página 88 casi vacía (6 palabras) — **EN PROCESO** (fusionados párrafos finales de `a1-desarrollo.tex` y sección «Capturas» en `a2-material.tex`).
-- Regla 10: **resuelto** (duplicado tablero Sprint 1 eliminado del anexo, referencia a canónica).
-- Regla 12: **corregido** (frases «La figura X muestra…» eliminadas en 04-descripcion.tex, 04b-juego.tex, 03-propuesta.tex y 05-evaluacion.tex).
-- Error de compilación «Float too large» — **corregido** reduciendo capturas a `0.42\textheight` y añadiendo `max totalheight` a diagramas TikZ.
+Versión 4 de la spec (16/11/2026): la memoria compila y `verificar.py` pasa en estructura, pero `revisar_maquetacion.py` falla por:
+- Regla 9: página 88 casi vacía (6 palabras) — **EN CORRECCIÓN** (fusionado párrafo final de `a1-desarrollo.tex` y sección «Capturas…» integrada en «Enlaces del proyecto» en `a2-material.tex`).
+- Regla 12: frases «La figura X muestra…» eliminadas en 04-descripcion.tex, 04b-juego.tex, 03-propuesta.tex y 05-evaluacion.tex.
+- Regla 10: duplicado tablero Sprint 1 eliminado del anexo, referencia a canónica.
+- Error «Float too large» corregido reduciendo capturas a `0.42\textheight` y añadiendo `max totalheight` a diagramas TikZ.
 
 ## Siguiente
 1. Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
