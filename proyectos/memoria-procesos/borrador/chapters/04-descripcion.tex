@@ -617,13 +617,25 @@ Al acceder a la aplicación sin sesión iniciada, el usuario encuentra la págin
 \label{fig:app-inicio-registro}
 \end{figure}
 
-En la pantalla de entrar (Figura~\ref{fig:app-entrar}), el mensaje de error es idéntico tanto si el email no existe como si la contraseña es incorrecta («Email o contraseña incorrectos»), evitando así la enumeración de cuentas. Si la cuenta está pendiente de confirmación, el servidor responde 403 \texttt{ACCOUNT\_PENDING} y la vista muestra el botón «Reenviar el correo de confirmación», que vuelve a enviar el enlace sin revelar si la cuenta existe (respuesta 202 en ambos casos).
+En la pantalla de entrar (subfigura~\ref{fig:app-entrar} de la Figura~\ref{fig:app-errores-acceso}), el mensaje de error es idéntico tanto si el email no existe como si la contraseña es incorrecta («Email o contraseña incorrectos»), evitando así la enumeración de cuentas. Si la cuenta está pendiente de confirmación, el servidor responde 403 \texttt{ACCOUNT\_PENDING} y la vista muestra el botón «Reenviar el correo de confirmación», que vuelve a enviar el enlace sin revelar si la cuenta existe (respuesta 202 en ambos casos).
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/app/03-entrar-error.png}
-\caption{Inicio de sesión con credenciales incorrectas: mensaje único para no revelar cuentas.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/03-entrar-error.png}
+\subcaption{Contraseña incorrecta: «Email o contraseña incorrectos».}
 \label{fig:app-entrar}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/06-usuario-sin-permiso.png}
+\subcaption{Acceso a \texttt{\#/admin} sin rol de administrador: aviso y redirección.}
+\label{fig:app-sin-permiso}
+\end{subfigure}
+\caption{Errores de acceso: credenciales incorrectas y página solo para administradores.}
+\label{fig:app-errores-acceso}
 \end{figure}
 
 \subsection{Perfil y administración}
@@ -649,14 +661,9 @@ Una vez dentro, el usuario accede a «Mi cuenta» (Figura~\ref{fig:app-perfil}),
 \label{fig:app-perfil-baja}
 \end{figure}
 
-Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la interfaz lo redirige a Mi cuenta con un aviso, pero la protección real está en el servidor: la API responde 403 \texttt{FORBIDDEN} (Figura~\ref{fig:app-sin-permiso}). El panel de administración (Figura~\ref{fig:app-admin-full}; detalle en la Figura~\ref{fig:app-admin}) muestra contadores totales, un buscador por email y una tabla con email, rol, estado, fecha de alta y acciones (cambiar rol, ver si está activo, eliminar). La búsqueda filtra en cliente y muestra estado vacío con botón «Limpiar búsqueda» si no hay coincidencias (Figura~\ref{fig:app-admin-busqueda}). En móvil, la tabla se convierte en tarjetas (Figura~\ref{fig:app-admin-movil}) y el menú se pliega (Figura~\ref{fig:app-perfil-movil}); el conjunto se recoge en la Figura~\ref{fig:app-responsive}. Las rutas inexistentes muestran la página «Fuera de juego» (Figura~\ref{fig:app-404}).
+Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la interfaz lo redirige a Mi cuenta con un aviso, pero la protección real está en el servidor: la API responde 403 \texttt{FORBIDDEN} (Figura~\ref{fig:app-sin-permiso}). El panel de administración (Figura~\ref{fig:app-admin-full}; detalle en la Figura~\ref{fig:app-admin}) muestra contadores totales, un buscador por email y una tabla con email, rol, estado, fecha de alta y acciones (cambiar rol, ver si está activo, eliminar). La búsqueda filtra en cliente (Figura~\ref{fig:app-admin-busqueda}) y muestra estado vacío con botón «Limpiar búsqueda» si no hay coincidencias (Figura~\ref{fig:app-admin-vacio}). En móvil, la tabla se convierte en tarjetas (Figura~\ref{fig:app-admin-movil}) y el menú se pliega (Figura~\ref{fig:app-perfil-movil}); el conjunto se recoge en la Figura~\ref{fig:app-responsive}. Las rutas inexistentes muestran la página «Fuera de juego» (Figura~\ref{fig:app-estados-especiales}, subfigura~\ref{fig:app-404}).
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/app/06-usuario-sin-permiso.png}
-\caption{Usuario sin permisos intenta acceder a administración: redirección y aviso.}
-\label{fig:app-sin-permiso}
-\end{figure}
+% La captura 06-usuario-sin-permiso se agrupó con la de entrar en la Figura~\ref{fig:app-errores-acceso} (cada imagen aparece una sola vez).
 
 \begin{figure}[htbp]
 \centering
@@ -698,9 +705,21 @@ Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la i
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/app/13-pagina-no-encontrada.png}
-\caption{Ruta inexistente: página «Fuera de juego».}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/09-admin-sin-resultados.png}
+\subcaption{Búsqueda sin resultados: estado vacío con «Limpiar búsqueda».}
+\label{fig:app-admin-vacio}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/13-pagina-no-encontrada.png}
+\subcaption{Ruta inexistente: página «Fuera de juego».}
 \label{fig:app-404}
+\end{subfigure}
+\caption{Estados especiales de la interfaz: búsqueda vacía del panel y ruta inexistente.}
+\label{fig:app-estados-especiales}
 \end{figure}
 
 \subsection{Hito 4: correo y Google}
@@ -783,13 +802,25 @@ El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo p
 
 \subsection{Gestión en DoneTonic}
 
-El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (figura~\ref{fig:donetonic-graficas-s1}, Anexo~\ref{anx:desarrollo}), el Product Backlog con los dos sprints (figura~\ref{fig:donetonic-backlog}, Anexo~\ref{anx:desarrollo}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (figura~\ref{fig:donetonic-s2-tablero}, Anexo~\ref{anx:desarrollo}), y el detalle de un PBI con su historia de usuario y criterios de aceptación (figura~\ref{fig:dt-pbi-detalle}).
+El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (figura~\ref{fig:donetonic-graficas-s1}, Anexo~\ref{anx:desarrollo}), el Product Backlog con los dos sprints (figura~\ref{fig:donetonic-backlog}, Anexo~\ref{anx:desarrollo}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (figura~\ref{fig:donetonic-s2-tablero}, Anexo~\ref{anx:desarrollo}), y el detalle de un PBI con su historia de usuario, criterios de aceptación y tareas, junto con las 50 tareas del Sprint 2 en la columna Hecho (Figura~\ref{fig:dt-detalle}, subfiguras~\ref{fig:dt-pbi-detalle} y~\ref{fig:dt-s2-tareas}).
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
-\caption{Detalle del PBI P44 en DoneTonic: historia de usuario, criterios de aceptación y tareas.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
+\subcaption{Detalle del PBI P44: historia de usuario, criterios y tareas.}
 \label{fig:dt-pbi-detalle}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/05-sprint2-tareas-hechas.png}
+\subcaption{Tareas de P48 en la columna Hecho: 50 tareas del Sprint 2.}
+\label{fig:dt-s2-tareas}
+\end{subfigure}
+\caption{DoneTonic: detalle de un PBI y tareas hechas del Sprint 2.}
+\label{fig:dt-detalle}
 \end{figure}
 
 La evolución real del Sprint 2, reconstruida a partir de las fechas de fusión de los PRs, se expone en el Anexo~\ref{anx:desarrollo}.

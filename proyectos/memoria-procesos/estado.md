@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 05:38"
+actualizado: "2026-11-17 06:32"
 ---
 
 # memoria-procesos
@@ -20,13 +20,13 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- Compila (95 páginas) y `verificar.py` OK (37 figuras, 29 tablas, 16690 palabras).
-- `revisar_maquetacion.py` falla: Regla 10 (imagen duplicada `figs/capturas/juego/15-pausa.png` en 04b-juego.tex), Regla 8 (página 43 solo una imagen, 22 palabras), Regla 9 (página 89 casi vacía, 8 palabras).
-- He corregido la imagen duplicada y el label multiplicado en `04b-juego.tex` (eliminada la figura standalone redundante, queda solo la subfigura en `fig:juego-fin-pausa`).
-- Pendiente: resolver Regla 8 y 9, barrer frases prohibidas en todos los capítulos, contrastar ≥25 datos, unificar armas (24 vs 29), repaso estilo global.
+- Compila (94 páginas) y `verificar.py` OK (35 figuras, 29 tablas, 16764 palabras).
+- `revisar_maquetacion.py` falla: Regla 9 (página 88 casi vacía, 6 palabras).
+- He corregido: imagen duplicada en `04b-juego.tex` (eliminada figura standalone redundante), figuras sueltas en `04-descripcion.tex` (agrupadas en subfiguras).
+- Pendiente: resolver Regla 9, barrer frases prohibidas en todos los capítulos, contrastar ≥25 datos, unificar armas (24 vs 29), repaso estilo global.
 
 ## Siguiente
-1. Ejecutar `comando_prueba`; si falla Regla 8/9, localizar la página en el PDF y agrupar/reducir la figura suelta.
+1. Ejecutar `comando_prueba`; si falla Regla 9, localizar la página 88 en el PDF y fundir el texto suelto con el anterior.
 2. Verificar y corregir frases prohibidas "La figura X muestra..." en todos los capítulos.
 3. Contrastar ≥25 datos con fuentes y listarlos en COMPROBACIONES.
 4. Decidir unificación de armas (24 vs 29) y aplicar en 04b y 05.

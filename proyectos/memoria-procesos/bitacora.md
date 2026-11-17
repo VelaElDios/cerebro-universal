@@ -9711,3 +9711,42 @@ Además, hay que barrer todos los capítulos buscando cadenas "La figura X muest
 ## 2026-11-17 05:38 · 🧠 Conocimiento guardado
 
 [[como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[coma-decimal-en-formulas-paquete-icomma]] · [[con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel]] · [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]] · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]] · [[cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p]] · [[en-un-tex-los-comentarios-son-con-no-con]] · [[enquote-necesita-el-paquete-csquotes]] · [[figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante]]
+
+## 2026-11-17 06:30 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Sigo con las dos reglas de maquetación que fallan en `comando_prueba`. Para la Regla 8 (página 43 con una sola imagen) agrupo en `04-descripcion.tex` las cuatro figuras sueltas que el revisor localizó (entrar, sin-permiso, 404 y detalle de PBI) en tres figuras con dos `subfigure` cada una, añadiendo las capturas de `app/09` y `donetonic/05` que no se usaban, de modo que ninguna página quede con una sola imagen y ninguna imagen se repita. Para la Regla 9 (página 89 casi vacía, 8 palabras) fusiono y acorto el párrafo final de la retrospectiva del Sprint 2 en `a1-desarrollo.tex`, que es justo el texto que el paso anterior no consiguió localizar.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 9: la página 88 del PDF está casi vacía (6 palabras): funde esa sección o línea suelta con la anterior.
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` y comprobar que ya no falla ni la Regla 8 (página 43) ni la Regla 9 (página 89). Si persiste la Regla 9 y la página 89 cae en `a4-trazabilidad.tex`, acortar el párrafo final de ese anexo; si persiste la Regla 8, abrir el PDF en la página 43 e identificar la figura suelta restante. Después: (1) unificar el dato de armas/pasivas/combinaciones en la tabla de métricas de `05-evaluacion.tex` con los totales de §14 de la fuente (29 armas, 16 pasivas, 29 combinaciones, coherentes con la nota de `04b-juego.tex`); (2) barrer `05-evaluacion.tex` y los anexos buscando frases prohibidas «La figura X muestra…» y reescribirlas como prosa; (3) contrastar ≥25 datos con las fuentes y listarlos en COMPROBACIONES; (4) repaso de estilo en `01`, `06` y anexos.
+
+## 2026-11-17 06:32 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (94 páginas, PDF generado)
+- verificar.py: OK (35 figuras, 29 tablas, 16764 palabras)
+- revisar_maquetacion.py: FALLA Regla 9 (página 88 casi vacía, 6 palabras)
+- Regla 10 (imagen duplicada): corregida en intento anterior (eliminada figura standalone redundante en 04b-juego.tex)
+- Regla 8 (página con una sola imagen): corregida agrupando figuras en 04-descripcion.tex
+- Frases prohibidas "La figura X muestra...": pendiente barrido completo en todos los capítulos
+- Datos contrastados con fuentes: pendiente (requisito ≥25 datos repartidos)
+- Unificación armas (24 vs 29): pendiente decidir y aplicar coherente en 04b-juego.tex y 05-evaluacion.tex
+
+El borrador compila y pasa verificar.py, pero falla Regla 9 de maquetación: la página 88 del PDF queda casi vacía (6 palabras). Según el orden de trabajo, la página 88 corresponde al final del anexo a1-desarrollo.tex (retrospectiva Sprint 2) o al inicio de a4-trazabilidad.tex. El constructor intentó fusionar el último párrafo pero no fue suficiente. Hay que localizar exactamente qué texto cae en la página 88 y fundirlo con el anterior o eliminarlo si es cola suelta. Además, queda pendiente: (1) barrer todos los capítulos eliminando frases "La figura X muestra...", (2) contrastar ≥25 datos con fuentes en COMPROBACIONES, (3) unificar el dato de armas (24 en §9.3 vs 29 en §14 de la fuente) en tabla de sistemas y métricas.
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a4-trazabilidad.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` y comprobar que `revisar_maquetacion.py` ya no marca Regla 9 (página 88). Si persiste, abrir el PDF en la página 88, identificar el texto suelto y fundirlo con el párrafo anterior o eliminarlo.
+- Barrer **todos** los capítulos (`01`, `03`, `04`, `04b`, `05`, `06`, anexos) buscando patrones «La figura», «La Figura», «muestra», «ilustra», «demuestra», «aparece en la Figura» seguidos de `\ref` y reescribirlos como prosa con la cita dentro del párrafo (Regla 13).
+- Contrastar ≥25 datos con las fuentes (cifra/hecho → sección de la fuente) y listarlos en COMPROBACIONES del siguiente paso.
+- Unificar dato de armas: §9.3 de la fuente dice 24, §14 dice 29; decidir cuál usar en tabla de sistemas (04b) y métricas (05) para que coincida en toda la memoria (recomendación: usar 29 armas, 16 pasivas, 29 combinaciones según §14 y nota en 04b-juego.tex).
+- Repaso final de estilo en `01-introduccion.tex`, `06-conclusiones.tex` y anexos: frases cortas, sin adornos («trasciende», «exhaustivo», «riguroso»…), coherencia entre capítulos.
