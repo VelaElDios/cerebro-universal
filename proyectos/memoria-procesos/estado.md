@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 05:17"
+actualizado: "2026-11-17 05:38"
 ---
 
 # memoria-procesos
@@ -20,17 +20,15 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- Compila (95 páginas) y `verificar.py` OK (37 figuras, 29 tablas, 16473 palabras).
-- `revisar_maquetacion.py` falla: Regla 8 (página 43, solo una imagen, 22 palabras) y Regla 9 (página 89, casi vacía, 8 palabras).
-- El constructor corrigió la cita faltante de `fig:hito4-admin-estados-privacidad` y reescribió 3 frases prohibidas en `04b-juego.tex` (pendiente verificación en código).
-- He reducido a `0.30\textheight` cuatro figuras sueltas en `04-descripcion.tex` (app-entrar, app-sin-permiso, app-404, dt-pbi-detalle) para que no queden solas en página.
-- He acortado el párrafo final de `a1-desarrollo.tex` para evitar cola suelta en página 89.
-- Pendiente: verificar 3 frases prohibidas en `04b-juego.tex`; unificar 24/29 armas; repaso estilo global.
+- Compila (95 páginas) y `verificar.py` OK (37 figuras, 29 tablas, 16690 palabras).
+- `revisar_maquetacion.py` falla: Regla 10 (imagen duplicada `figs/capturas/juego/15-pausa.png` en 04b-juego.tex), Regla 8 (página 43 solo una imagen, 22 palabras), Regla 9 (página 89 casi vacía, 8 palabras).
+- He corregido la imagen duplicada y el label multiplicado en `04b-juego.tex` (eliminada la figura standalone redundante, queda solo la subfigura en `fig:juego-fin-pausa`).
+- Pendiente: resolver Regla 8 y 9, barrer frases prohibidas en todos los capítulos, contrastar ≥25 datos, unificar armas (24 vs 29), repaso estilo global.
 
 ## Siguiente
 1. Ejecutar `comando_prueba`; si falla Regla 8/9, localizar la página en el PDF y agrupar/reducir la figura suelta.
-2. Verificar y corregir las 3 frases prohibidas en `04b-juego.tex` si no están ya.
-3. Buscar en todos los capítulos más cadenas «La figura X muestra/ilustra/demuestra».
+2. Verificar y corregir frases prohibidas "La figura X muestra..." en todos los capítulos.
+3. Contrastar ≥25 datos con fuentes y listarlos en COMPROBACIONES.
 4. Decidir unificación de armas (24 vs 29) y aplicar en 04b y 05.
 5. Repaso final de estilo en 01, 06 y anexos.
 6. Cuando todo pase en verde y el revisor haya contrastado ≥25 datos, marcar TERMINADO.

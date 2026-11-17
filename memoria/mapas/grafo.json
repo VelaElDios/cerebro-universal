@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T05:17:34+01:00",
+ "generado": "2026-11-17T05:38:03+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1057,6 +1057,23 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/modulos-del-backend-y-sus-responsabilidades.md"
+  },
+  {
+   "id": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "tipo": "concepto",
+   "titulo": "Números en diagramas de secuencia deben coincidir con la especificación",
+   "temas": [
+    "codigos estado",
+    "http",
+    "latex",
+    "pgf-umlsd",
+    "sequencediagram"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp.md"
   },
   {
    "id": "concepto:perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante",
@@ -2602,13 +2619,32 @@
    "temas": [
     "bibliografia",
     "bibtex",
-    "latex"
+    "latex",
+    "apalike",
+    "autores corporativos"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas.md"
+  },
+  {
+   "id": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
+   "tipo": "receta",
+   "titulo": "Cada cifra de un documento sale de las fuentes, también las pequeñas",
+   "temas": [
+    "cifras",
+    "fuentes",
+    "numeros",
+    "test",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p.md"
   },
   {
    "id": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
@@ -2695,6 +2731,22 @@
    "ruta": "memoria/conocimiento/recetas/cliente-api-con-timeout-de-15-s-y-manejo-de-apierror.md"
   },
   {
+   "id": "receta:coma-decimal-en-formulas-paquete-icomma",
+   "tipo": "receta",
+   "titulo": "Coma decimal en fórmulas: paquete icomma",
+   "temas": [
+    "coma decimal",
+    "icomma",
+    "latex",
+    "matematicas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/coma-decimal-en-formulas-paquete-icomma.md"
+  },
+  {
    "id": "receta:combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito",
    "tipo": "receta",
    "titulo": "Combinaciones (24) y ULTRAS (6) con bonus porcentual y requisitos visibles",
@@ -2771,6 +2823,22 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte.md"
+  },
+  {
+   "id": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
+   "tipo": "receta",
+   "titulo": "Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pagina vacia",
+    "regla 9"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu.md"
   },
   {
    "id": "receta:como-crear-cliente-oauth-de-google-para-la-grada-colchonera",
@@ -2974,6 +3042,23 @@
    "ruta": "memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente.md"
   },
   {
+   "id": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "tipo": "receta",
+   "titulo": "Con babel en español, TikZ necesita \\usetikzlibrary{babel}",
+   "temas": [
+    "babel",
+    "flechas",
+    "latex",
+    "spanish",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel.md"
+  },
+  {
    "id": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
    "tipo": "receta",
    "titulo": "Contenido de los anexos por sprint en la memoria TFG",
@@ -3112,6 +3197,55 @@
    "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md"
   },
   {
+   "id": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "tipo": "receta",
+   "titulo": "\\directlua no funciona dentro del texto de un \\node: usar macros",
+   "temas": [
+    "directlua",
+    "latex",
+    "lua",
+    "node",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro.md"
+  },
+  {
+   "id": "receta:en-un-tex-los-comentarios-son-con-no-con",
+   "tipo": "receta",
+   "titulo": "En un .tex los comentarios son con %, no con --",
+   "temas": [
+    "comentarios",
+    "latex",
+    "lua",
+    "sintaxis"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/en-un-tex-los-comentarios-son-con-no-con.md"
+  },
+  {
+   "id": "receta:enquote-necesita-el-paquete-csquotes",
+   "tipo": "receta",
+   "titulo": "\\enquote necesita el paquete csquotes",
+   "temas": [
+    "comillas",
+    "csquotes",
+    "enquote",
+    "latex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/enquote-necesita-el-paquete-csquotes.md"
+  },
+  {
    "id": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
    "tipo": "receta",
    "titulo": "Escribir diagramas de secuencia con pgf-umlsd (sequencediagram)",
@@ -3211,6 +3345,23 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom.md"
+  },
+  {
+   "id": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "tipo": "receta",
+   "titulo": "Figuras flotando dentro de la bibliografía: \\FloatBarrier antes",
+   "temas": [
+    "bibliografia",
+    "figuras",
+    "floatbarrier",
+    "latex",
+    "placeins"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante.md"
   },
   {
    "id": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
@@ -3764,7 +3915,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 73,
+   "peso": 81,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -3778,7 +3929,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 10,
+   "peso": 12,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -3792,7 +3943,7 @@
    "id": "tema:lua",
    "tipo": "tema",
    "titulo": "lua",
-   "peso": 10,
+   "peso": 12,
    "ruta": "memoria/temas/lua.md"
   },
   {
@@ -3820,7 +3971,7 @@
    "id": "tema:bibliografia",
    "tipo": "tema",
    "titulo": "bibliografia",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/bibliografia.md"
   },
   {
@@ -3862,7 +4013,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -3876,7 +4027,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -3890,14 +4041,14 @@
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -4300,6 +4451,20 @@
    "ruta": "memoria/temas/modulos.md"
   },
   {
+   "id": "tema:codigos estado",
+   "tipo": "tema",
+   "titulo": "codigos estado",
+   "peso": 1,
+   "ruta": "memoria/temas/codigos estado.md"
+  },
+  {
+   "id": "tema:http",
+   "tipo": "tema",
+   "titulo": "http",
+   "peso": 1,
+   "ruta": "memoria/temas/http.md"
+  },
+  {
    "id": "tema:juego",
    "tipo": "tema",
    "titulo": "juego",
@@ -4415,7 +4580,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -4604,7 +4769,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -4804,6 +4969,41 @@
    "ruta": "memoria/temas/subcaption.md"
   },
   {
+   "id": "tema:apalike",
+   "tipo": "tema",
+   "titulo": "apalike",
+   "peso": 1,
+   "ruta": "memoria/temas/apalike.md"
+  },
+  {
+   "id": "tema:autores corporativos",
+   "tipo": "tema",
+   "titulo": "autores corporativos",
+   "peso": 1,
+   "ruta": "memoria/temas/autores corporativos.md"
+  },
+  {
+   "id": "tema:cifras",
+   "tipo": "tema",
+   "titulo": "cifras",
+   "peso": 1,
+   "ruta": "memoria/temas/cifras.md"
+  },
+  {
+   "id": "tema:numeros",
+   "tipo": "tema",
+   "titulo": "numeros",
+   "peso": 1,
+   "ruta": "memoria/temas/numeros.md"
+  },
+  {
+   "id": "tema:test",
+   "tipo": "tema",
+   "titulo": "test",
+   "peso": 2,
+   "ruta": "memoria/temas/test.md"
+  },
+  {
    "id": "tema:capitulo-3",
    "tipo": "tema",
    "titulo": "capitulo-3",
@@ -4860,6 +5060,27 @@
    "ruta": "memoria/temas/api-client.md"
   },
   {
+   "id": "tema:coma decimal",
+   "tipo": "tema",
+   "titulo": "coma decimal",
+   "peso": 1,
+   "ruta": "memoria/temas/coma decimal.md"
+  },
+  {
+   "id": "tema:icomma",
+   "tipo": "tema",
+   "titulo": "icomma",
+   "peso": 1,
+   "ruta": "memoria/temas/icomma.md"
+  },
+  {
+   "id": "tema:matematicas",
+   "tipo": "tema",
+   "titulo": "matematicas",
+   "peso": 1,
+   "ruta": "memoria/temas/matematicas.md"
+  },
+  {
    "id": "tema:builds",
    "tipo": "tema",
    "titulo": "builds",
@@ -4879,6 +5100,20 @@
    "titulo": "subfigure",
    "peso": 1,
    "ruta": "memoria/temas/subfigure.md"
+  },
+  {
+   "id": "tema:pagina vacia",
+   "tipo": "tema",
+   "titulo": "pagina vacia",
+   "peso": 1,
+   "ruta": "memoria/temas/pagina vacia.md"
+  },
+  {
+   "id": "tema:regla 9",
+   "tipo": "tema",
+   "titulo": "regla 9",
+   "peso": 1,
+   "ruta": "memoria/temas/regla 9.md"
   },
   {
    "id": "tema:mermaid",
@@ -4916,6 +5151,27 @@
    "ruta": "memoria/temas/formula.md"
   },
   {
+   "id": "tema:babel",
+   "tipo": "tema",
+   "titulo": "babel",
+   "peso": 1,
+   "ruta": "memoria/temas/babel.md"
+  },
+  {
+   "id": "tema:flechas",
+   "tipo": "tema",
+   "titulo": "flechas",
+   "peso": 1,
+   "ruta": "memoria/temas/flechas.md"
+  },
+  {
+   "id": "tema:spanish",
+   "tipo": "tema",
+   "titulo": "spanish",
+   "peso": 1,
+   "ruta": "memoria/temas/spanish.md"
+  },
+  {
    "id": "tema:concurrencia-optimista",
    "tipo": "tema",
    "titulo": "concurrencia-optimista",
@@ -4942,6 +5198,55 @@
    "titulo": "bootstrap",
    "peso": 1,
    "ruta": "memoria/temas/bootstrap.md"
+  },
+  {
+   "id": "tema:directlua",
+   "tipo": "tema",
+   "titulo": "directlua",
+   "peso": 1,
+   "ruta": "memoria/temas/directlua.md"
+  },
+  {
+   "id": "tema:node",
+   "tipo": "tema",
+   "titulo": "node",
+   "peso": 1,
+   "ruta": "memoria/temas/node.md"
+  },
+  {
+   "id": "tema:comentarios",
+   "tipo": "tema",
+   "titulo": "comentarios",
+   "peso": 1,
+   "ruta": "memoria/temas/comentarios.md"
+  },
+  {
+   "id": "tema:sintaxis",
+   "tipo": "tema",
+   "titulo": "sintaxis",
+   "peso": 1,
+   "ruta": "memoria/temas/sintaxis.md"
+  },
+  {
+   "id": "tema:comillas",
+   "tipo": "tema",
+   "titulo": "comillas",
+   "peso": 1,
+   "ruta": "memoria/temas/comillas.md"
+  },
+  {
+   "id": "tema:csquotes",
+   "tipo": "tema",
+   "titulo": "csquotes",
+   "peso": 1,
+   "ruta": "memoria/temas/csquotes.md"
+  },
+  {
+   "id": "tema:enquote",
+   "tipo": "tema",
+   "titulo": "enquote",
+   "peso": 1,
+   "ruta": "memoria/temas/enquote.md"
   },
   {
    "id": "tema:diagramas",
@@ -4986,11 +5291,18 @@
    "ruta": "memoria/temas/json.md"
   },
   {
-   "id": "tema:test",
+   "id": "tema:floatbarrier",
    "tipo": "tema",
-   "titulo": "test",
+   "titulo": "floatbarrier",
    "peso": 1,
-   "ruta": "memoria/temas/test.md"
+   "ruta": "memoria/temas/floatbarrier.md"
+  },
+  {
+   "id": "tema:placeins",
+   "tipo": "tema",
+   "titulo": "placeins",
+   "peso": 1,
+   "ruta": "memoria/temas/placeins.md"
   },
   {
    "id": "tema:registro",
@@ -6839,6 +7151,41 @@
   {
    "de": "concepto:modulos-del-backend-y-sus-responsabilidades",
    "a": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "tema:codigos estado",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "tema:http",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
    "tipo": "enlaza"
   },
   {
@@ -10663,8 +11010,53 @@
   },
   {
    "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:apalike",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:autores corporativos",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
+   "a": "tema:cifras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
+   "a": "tema:numeros",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
+   "a": "tema:test",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
+   "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
@@ -10827,6 +11219,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:coma-decimal-en-formulas-paquete-icomma",
+   "a": "tema:coma decimal",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:coma-decimal-en-formulas-paquete-icomma",
+   "a": "tema:icomma",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:coma-decimal-en-formulas-paquete-icomma",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:coma-decimal-en-formulas-paquete-icomma",
+   "a": "tema:matematicas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:coma-decimal-en-formulas-paquete-icomma",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:coma-decimal-en-formulas-paquete-icomma",
+   "a": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito",
    "a": "tema:builds",
    "tipo": "trata"
@@ -10965,6 +11387,31 @@
    "de": "receta:como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte",
    "a": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
+   "a": "tema:pagina vacia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
+   "a": "tema:regla 9",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-crear-cliente-oauth-de-google-para-la-grada-colchonera",
@@ -11342,6 +11789,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "tema:babel",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "tema:flechas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "tema:spanish",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
    "a": "tema:anexos",
    "tipo": "trata"
@@ -11622,6 +12104,101 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "tema:directlua",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "tema:lua",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "tema:node",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "a": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "tema:comentarios",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "tema:lua",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "tema:sintaxis",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:enquote-necesita-el-paquete-csquotes",
+   "a": "tema:comillas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:enquote-necesita-el-paquete-csquotes",
+   "a": "tema:csquotes",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:enquote-necesita-el-paquete-csquotes",
+   "a": "tema:enquote",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:enquote-necesita-el-paquete-csquotes",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:enquote-necesita-el-paquete-csquotes",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:enquote-necesita-el-paquete-csquotes",
+   "a": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -11829,6 +12406,41 @@
   {
    "de": "receta:exportar-resultados-json-obligatorio-para-verificacion-autom",
    "a": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "tema:bibliografia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "tema:floatbarrier",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "tema:placeins",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
    "tipo": "enlaza"
   },
   {

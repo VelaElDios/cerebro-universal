@@ -22,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[bibliografia]] · [[memoria]] · [[tfg]]
+[[latex]] · [[bibliografia]] · [[memoria]] · [[tfg]] · [[apalike]] · [[autores corporativos]]

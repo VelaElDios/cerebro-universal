@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "fuentes"
-notas: 1
+notas: 2
 ---
 # fuentes
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p|Cada cifra de un documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
 
 ## Datos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Temas relacionados
 
-[[datos]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[arma]] · [[fuente]]
+[[datos]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[arma]] · [[fuente]] · [[cifras]] · [[numeros]] · [[test]] · [[verificacion]]

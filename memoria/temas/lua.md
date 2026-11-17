@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "lua"
-notas: 10
+notas: 12
 ---
 # lua
 
@@ -13,6 +13,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «lua» (este archivo se ge
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/en-un-tex-los-comentarios-son-con-no-con|En un .tex los comentarios son con %, no con --]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c|Trampas técnicas comprobadas en LuaLaTeX (evitar errores de compilación)]] · ⚠️ propuesto
 
@@ -31,4 +33,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «lua» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[sus]] · [[usabilidad]] · [[tikz]] · [[pgfplots]] · [[beamer]] · [[datos]] · [[arquitectura]] · [[json]] · [[test]] · [[verificacion]] · [[compilacion]]
+[[latex]] · [[tikz]] · [[sus]] · [[usabilidad]] · [[pgfplots]] · [[beamer]] · [[datos]] · [[arquitectura]] · [[directlua]] · [[node]] · [[comentarios]] · [[sintaxis]]

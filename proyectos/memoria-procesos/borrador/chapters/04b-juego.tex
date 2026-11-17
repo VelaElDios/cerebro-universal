@@ -74,14 +74,28 @@ Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el se
 \label{fig:juego-jefe-ambiente}
 \end{figure}
 
-Cuando el jugador cae, se muestra la pantalla de fin con estadísticas detalladas (tiempo, ambiente, bajas, jefes, daño por habilidad, golpe más fuerte, daño recibido, vida recuperada, logros nuevos) y las recompensas del club (figura~\ref{fig:juego-fin}).
+Cuando el jugador cae, la aplicación muestra la pantalla de fin con las estadísticas de la partida (tiempo, ambiente, bajas, jefes, daño por habilidad, golpe más fuerte, daño recibido, vida recuperada y logros nuevos) y las recompensas del club. Esa pantalla y el menú de pausa —que se abre con \texttt{Esc} o \texttt{P} durante la partida para ajustar el sonido, los gráficos o los controles sin salir— van juntas en la Figura~\ref{fig:juego-fin-pausa}: la subfigura~\ref{fig:juego-fin} es el fin de la partida y la subfigura~\ref{fig:juego-pausa}, la pausa.
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/juego/06-fin.png}
-\caption{Fin de la partida: tiempo, estadísticas, daño por habilidad y logro nuevo.}
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/juego/06-fin.png}
+\subcaption{Fin de la partida: tiempo, estadísticas, daño por habilidad y logro nuevo.}
 \label{fig:juego-fin}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/juego/15-pausa.png}
+\subcaption{Menú de pausa durante la partida.}
+\label{fig:juego-pausa}
+\end{subfigure}
+\caption{Fin de la partida y menú de pausa.}
+\label{fig:juego-fin-pausa}
 \end{figure}
+
+Durante la partida, el menú de pausa (Figura~\ref{fig:juego-pausa}) permite ajustar el sonido, los gráficos o los controles sin salir de la partida.
 
 El resto del menú gestiona el club y consulta el progreso, y cada pantalla responde a una necesidad concreta (Figuras~\ref{fig:juego-club-pantallas-a} y~\ref{fig:juego-club-pantallas-b}). En Entrenamiento (subfigura~\ref{fig:juego-entrenamiento}) el jugador gasta los puntos ganados con bajas y jefes en subir Vida, Defensa, Disparo y Suerte, y el administrador dispone además del botón de modo pruebas. En Contratar (subfigura~\ref{fig:juego-contratar}) canjea las fichas de contrato —una por cada 3 jefes vencidos— por jugadores sorteados por rareza. La vitrina de Logros (subfigura~\ref{fig:juego-logros}) presenta cada logro junto al dato histórico del club que esconde, y la pantalla de Combinaciones (subfigura~\ref{fig:juego-combinaciones}) lista las metas y las ultras con lo que pide cada una, con filtros para ver requisitos y progreso. La Dirección (subfigura~\ref{fig:juego-direccion}) permite elegir entrenador —Cholo Simeone o Luis Aragonés, cada uno con su ulti—, el Ranking de la grada (subfigura~\ref{fig:juego-ranking}) compara la mejor partida de cada usuario mostrando mote y avatar, nunca el correo, «Tu ficha» (subfigura~\ref{fig:juego-identidad}) cambia el mote y el avatar, y Ajustes (subfigura~\ref{fig:juego-ajustes}) guarda el volumen, los gráficos, la cámara y los controles. Durante la partida, el menú de pausa (Figura~\ref{fig:juego-pausa}) da acceso a los ajustes sin salir.
 
@@ -151,12 +165,7 @@ El resto del menú gestiona el club y consulta el progreso, y cada pantalla resp
 \label{fig:juego-club-pantallas-b}
 \end{figure}
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/juego/15-pausa.png}
-\caption{Menú de pausa durante la partida.}
-\label{fig:juego-pausa}
-\end{figure}
+Durante la partida, el menú de pausa (Figura~\ref{fig:juego-pausa}) permite ajustar el sonido, los gráficos o los controles sin salir de la partida.
 
 \section{Sistemas}
 \label{sec:juego-sistemas}
@@ -187,10 +196,12 @@ Sonido & Efectos, música chiptune original (canción por ambiente que se anima 
 \bottomrule
 \end{longtable}
 
+Los valores de la Tabla~\ref{tab:juego-sistemas} son los de la Fase 6; con las 5 habilidades, 2 pasivas y 5 combinaciones añadidas en la Fase 7, el contenido del juego suma 29 armas, 16 pasivas y 29 combinaciones, que son los totales que recoge la Tabla~\ref{tab:metricas} del Capítulo~\ref{cap:evaluacion}.
+
 \section{Arquitectura del juego}
 \label{sec:juego-arquitectura}
 
-La arquitectura del juego —simulación pura separada de la presentación y del servidor— está en la Figura~\ref{fig:juego-arquitectura}.
+El juego se organiza en tres bloques separados: la simulación pura, que no toca el DOM ni el audio; la presentación (pantallas, renderizado, HUD y sonido); y el servidor, que valida las partidas y comparte con el cliente las reglas del club. Esa división es la que se dibuja en la Figura~\ref{fig:juego-arquitectura}.
 
 \begin{figure}[htbp]
 \centering
@@ -284,7 +295,7 @@ Todo sintetizado con Web Audio: ondas de pulso (12,5\%, 25\% y 50\%), triángulo
 \subsection{Una partida del juego (inicio, juego y fin con validación)}
 \label{sec:juego-partida-seq}
 
-El recorrido completo de una partida —inicio, bucle de juego y fin con la validación anti-trampas en el servidor— está en la Figura~\ref{fig:sec-partida}.
+Una partida recorre tres momentos: al empezar, el servidor guarda la partida en curso con su propio reloj; durante el juego, el cliente avanza la simulación con paso fijo y va pintando el mundo mientras suena la música; y al terminar, el servidor valida el resultado antes de dar las recompensas. Ese recorrido completo, con la validación anti-trampas, es el que detalla paso a paso la Figura~\ref{fig:sec-partida}.
 
 \begin{figure}[htbp]
 \centering
@@ -336,7 +347,7 @@ El recorrido completo de una partida —inicio, bucle de juego y fin con la vali
 \subsection{Contratar con una ficha (concurrencia optimista)}
 \label{sec:juego-contratar-seq}
 
-El flujo de contratar con una ficha, con la concurrencia optimista que impide gastar dos veces la misma ficha, está en la Figura~\ref{fig:sec-contratar}.
+Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el usuario pulsa dos veces, las dos peticiones leen la misma versión del perfil: la primera escribe con éxito y la segunda falla al actualizar, se reintenta con los datos nuevos —que ya no tienen fichas— y recibe un 409. Ese mecanismo de concurrencia optimista es el que se ve paso a paso en la Figura~\ref{fig:sec-contratar}.
 
 \begin{figure}[htbp]
 \centering

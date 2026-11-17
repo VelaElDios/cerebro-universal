@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 6
+notas: 7
 ---
 # verificacion
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p|Cada cifra de un documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 
@@ -24,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[calidad]] · [[criterios]] · [[terminado]] · [[trazabilidad]] · [[métricas]] · [[verificación]] · [[tfg]] · [[json]]
+[[latex]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[test]] · [[calidad]] · [[criterios]] · [[terminado]] · [[trazabilidad]] · [[métricas]] · [[verificación]] · [[cifras]]
