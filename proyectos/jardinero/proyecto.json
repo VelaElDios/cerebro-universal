@@ -2,6 +2,9 @@
   "nombre": "jardinero",
   "tipo": "jardin",
   "estado": "en-construccion",
-  "temas": ["conocimiento"],
-  "cada_horas": 24
+  "temas": [
+    "conocimiento"
+  ],
+  "cada_horas": 24,
+  "ultima_ejecucion": "2026-11-17T13:50:05+01:00"
 }

@@ -17,4 +17,6 @@ El mundo se genera proceduralmente a partir de una semilla (determinista). Usa r
 > **Mundo** | Procedural e infinito por semilla, con ruidos suaves: distritos (ciudad, entrenamiento, parque, prado), estadios con gradas, plazas y tiendas, mesetas con escaleras, barro, lluvia y caminos. Colisión por los pies (vista 3/4) | `TERRENO`, `terreno.js`
 > — `repo:saas/docs/documentacion-tecnica.md`
 
+Relacionado: [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

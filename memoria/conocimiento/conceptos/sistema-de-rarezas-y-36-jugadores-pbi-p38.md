@@ -20,6 +20,6 @@ El PR #53 corresponde a «Fase 5: rarezas, habilidades niveladas, firma y colisi
 > P38 | T64 | Rarezas por historia y 36 jugadores | [#53](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/53) | Hecho
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores]] · [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]]
+Relacionado: [[sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores]] · [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]] · [[cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

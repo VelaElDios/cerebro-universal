@@ -5,9 +5,9 @@ temas: ["builds", "diseno-juego", "donetonic", "grada-colchonera", "scrum", "ui"
 claves: ["combinaciones", "ULTRAS", "Puskás", "Balón de Oro", "Zamora", "desdeMinuto", "cdMin", "P33", "P40"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-17"
 ---
 
 Temas: [[builds]] · [[diseno-juego]] · [[donetonic]] · [[grada-colchonera]] · [[scrum]] · [[ui]]
@@ -18,7 +18,7 @@ Temas: [[builds]] · [[diseno-juego]] · [[donetonic]] · [[grada-colchonera]] �
 - Pantalla Combinaciones (P40): filtros Todas / Con tu jugador / Conseguidas; muestra requisitos, bonus y ultra destino.
 - Habilidades tienen desdeMinuto (no aparecen antes de ese minuto) y cdMin (recarga mínima) para no romper early game (P39).
 
-> 24 combinaciones con nombre propio y bonus. 6 ULTRAS que se consiguen solas al completar combinaciones (Premio Puskás, Balón de Oro, Zamora…). Efecto visual propio y daño en parte porcentual (reducido contra jefes).
-> — `repo:saas/docs/gestion/README.md` (cita sin comprobar)
+> - 24 combinaciones con nombre propio y bonus. - 6 ULTRAS que se consiguen solas al completar combinaciones (Premio Puskás, Balón de Oro, Zamora…). - Efecto visual propio y daño en parte porcentual (reducido contra jefes).
+> — `repo:saas/docs/gestion/README.md`
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

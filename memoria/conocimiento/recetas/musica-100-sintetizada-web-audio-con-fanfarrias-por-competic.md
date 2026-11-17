@@ -5,9 +5,9 @@ temas: ["audio", "chiptune", "donetonic", "grada-colchonera", "procedural-audio"
 claves: ["fanfarria", "canción de fondo", "grada murmura", "volumen música separado", "P44"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-17"
 ---
 
 Temas: [[audio]] · [[chiptune]] · [[donetonic]] · [[grada-colchonera]] · [[procedural-audio]] · [[scrum]] · [[web-audio]]
@@ -18,7 +18,7 @@ Temas: [[audio]] · [[chiptune]] · [[donetonic]] · [[grada-colchonera]] · [[p
 - Grada: generador de formantes vocales (ruido filtrado + envolventes) que sube volumen y complejidad al acercarse a gradas del mapa.
 - Controles: slider música independiente de slider efectos; persistido en localStorage (P28).
 
-> Fanfarria propia por competición y canción de fondo que se anima con el tiempo y con los jefes. La grada murmura y canta cuando te acercas a ella. Volumen de música aparte del de efectos; todo sintetizado (sin ficheros).
-> — `repo:saas/docs/gestion/README.md` (cita sin comprobar)
+> - Fanfarria propia por competición y canción de fondo que se anima con el tiempo y con los jefes. - La grada murmura y canta cuando te acercas a ella. - Volumen de música aparte del de efectos; todo sintetizado (sin ficheros).
+> — `repo:saas/docs/gestion/README.md`
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

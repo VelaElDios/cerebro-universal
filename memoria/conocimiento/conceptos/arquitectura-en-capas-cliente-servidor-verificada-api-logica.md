@@ -24,6 +24,6 @@ Esto permite testear la lógica con repositorios en memoria y cambiar de BD sin 
 > Backend: capas API, lógica y datos en módulos separados ✅ `src/api/` → `src/services/` → `src/repositories/`. La lógica recibe el repositorio por parámetro, así que no sabe si los datos están en memoria o en PostgreSQL
 > — `repo:saas/docs/revision-entrega.md` (cita sin comprobar)
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

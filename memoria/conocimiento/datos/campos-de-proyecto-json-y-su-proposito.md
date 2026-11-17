@@ -17,4 +17,4 @@ Tabla de campos (todos opcionales salvo los mínimos): `estado` (`en-construccio
 > En `proyecto.json`: `nombre`, `temas` (para elegir lecciones), `necesita` (qué instalar), `comando_prueba` y, al final, `"estado": "en-construccion"`.
 > — `../../README.md`
 
-Relacionado: [[como-se-empieza-un-proyecto-nuevo-en-el-cerebro]] · [[como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte]] · [[rotacion-de-proyectos-por-tiempo-sin-avanzar]]
+Relacionado: [[como-se-empieza-un-proyecto-nuevo-en-el-cerebro]] · [[como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte]] · [[rotacion-de-proyectos-por-tiempo-sin-avanzar]] · [[como-trabaja-el-cerebro-constructor-prueba-revisor]] · [[estructura-de-la-memoria-compartida-cerebro-md-estado-md-con]]

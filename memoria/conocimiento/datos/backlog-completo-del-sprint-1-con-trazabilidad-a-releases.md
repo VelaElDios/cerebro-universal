@@ -5,7 +5,7 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum", "sprint"]
 claves: ["P1–P19", "Hito 1–4", "releases GitHub", "trazabilidad"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -23,6 +23,8 @@ Tabla de los 19 PBIs del Sprint 1 con su hito, título, estado y enlace de entre
 > | P19 | H4 | Despliegue continuo en Google Cloud Run | Hecho | Cierre del sprint |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]]: La nota A afirma que las seis tareas del Hito 4 se marcaron hechas en DoneTonic **al cerrar el Sprint 1**. La nota B indica una **Primera entrega el 12/10/2026** (con Hitos 1–3 + P18 + P19, estos dos del Hito 4) y que el **Hito 4 se completó el 23/10/2026**, lo que sugiere que el cierre del Sprint 1 (o su entrega principal) ocurrió el 12/10, once días antes de terminar el Hito 4.

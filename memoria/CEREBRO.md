@@ -16,7 +16,10 @@ buscar con RAG y, en el futuro, para entrenar una IA local. (este archivo se gen
 2. **Por tema:** `memoria/temas/<tema>.md` enlaza todo lo de ese tema: recetas, decisiones, conceptos,
    datos, lecciones y proyectos.
 3. **Por tipo:** `memoria/conocimiento/<tipo>/` y `memoria/lecciones/` (todo listado en [[indice]]).
-4. **Máquinas:** `memoria/mapas/grafo.json` tiene todas las notas (nodos) y sus relaciones (aristas).
+4. **Máquinas:** `memoria/mapas/grafo.json` tiene todas las notas (nodos) y sus relaciones (aristas), y
+   `memoria/mapas/embeddings.json` sus vectores para buscar por significado.
+5. **Desde un chat (Claude, ChatGPT...):** el servidor MCP `scripts/mcp_cerebro.py` deja buscar, leer y
+   guardar notas. Para preguntar al cerebro sin chat: una nota en `proyectos/preguntas/`.
 
 ## Tipos de nota
 
@@ -36,10 +39,12 @@ buscar con RAG y, en el futuro, para entrenar una IA local. (este archivo se gen
 - Si lo que necesitas no está, **apréndelo y guárdalo** (bloque `<<<CONOCIMIENTO>>>`) con su fuente y una cita
   literal. Nunca inventes datos: lo que no está en una fuente no se escribe.
 - Reglas fijas de Javier: [[reglas-tfg]] (memorias con formato de TFG).
+- El jardinero (`proyectos/jardinero`) pasa cada día: comprueba citas, fusiona notas repetidas, marca
+  contradicciones y enlaza lo parecido. Qué notas ayudan de verdad: [[ESTADISTICAS]].
 
 ## Ahora mismo
 
-470 nodos y 1603 relaciones: 3 📁 proyecto, 226 🔵 tema, 32 ⚠️ leccion, 42 💡 concepto, 82 🧪 receta, 30 ⚖️ decision, 45 📊 dato, 10 📚 fuente · actualizado 2026-11-17 12:00
+472 nodos y 1739 relaciones: 5 📁 proyecto, 226 🔵 tema, 32 ⚠️ leccion, 42 💡 concepto, 82 🧪 receta, 30 ⚖️ decision, 45 📊 dato, 10 📚 fuente · actualizado 2026-11-17 14:02
 
 ## Temas principales
 

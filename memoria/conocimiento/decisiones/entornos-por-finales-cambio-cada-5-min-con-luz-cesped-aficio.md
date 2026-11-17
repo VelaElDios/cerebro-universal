@@ -5,9 +5,9 @@ temas: ["ambientes", "diseno-niveles", "donetonic", "grada-colchonera", "procedu
 claves: ["Pretemporada", "Copa del Rey", "Liga", "Champions", "Mundial", "5 minutos", "P36"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-17"
 ---
 
 Temas: [[ambientes]] · [[diseno-niveles]] · [[donetonic]] · [[grada-colchonera]] · [[procedural]] · [[scrum]]
@@ -24,7 +24,7 @@ Temas: [[ambientes]] · [[diseno-niveles]] · [[donetonic]] · [[grada-colchoner
   - Mundial: rivales usan kit de selección nacional (pixel art).
 - Sirve como medidor de progreso y curva de dificultad natural.
 
-> Pretemporada → Copa del Rey → Liga → Champions → Mundial. Cambian la luz, el césped, la afición y los carteles; los rivales salen más fuertes. En el Mundial todos llevan la camiseta de su selección.
-> — `repo:saas/docs/gestion/README.md` (cita sin comprobar)
+> - Pretemporada → Copa del Rey → Liga → Champions → Mundial. - Cambian la luz, el césped, la afición y los carteles; los rivales salen más fuertes. - En el Mundial todos llevan la camiseta de su selección.
+> — `repo:saas/docs/gestion/README.md`
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

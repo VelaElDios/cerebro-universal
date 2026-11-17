@@ -1,0 +1,32 @@
+{
+ "nodes": [
+  {
+   "id": "proyecto:jardinero",
+   "type": "file",
+   "file": "proyectos/jardinero/bitacora.md",
+   "x": -119,
+   "y": -779,
+   "width": 380,
+   "height": 130,
+   "color": "6"
+  },
+  {
+   "id": "tema:conocimiento",
+   "type": "file",
+   "file": "memoria/temas/conocimiento.md",
+   "x": 92,
+   "y": 68,
+   "width": 380,
+   "height": 110,
+   "color": "5"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "proyecto:jardinero",
+   "toNode": "tema:conocimiento",
+   "color": "6"
+  }
+ ]
+}

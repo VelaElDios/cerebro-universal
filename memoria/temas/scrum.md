@@ -9,16 +9,16 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/api-del-juego-con-validacion-anti-trampas|API del juego con validación anti-trampas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/api-del-juego-con-validacion-anti-trampas|API del juego con validación anti-trampas]]
 - 🧪 [[memoria/conocimiento/recetas/capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de|Capítulo 3: Propuesta, metodología Scrum y herramientas sin detalles técnicos]]
 - 🧪 [[memoria/conocimiento/recetas/checklist-previo-a-abrir-pull-request-npm-test-local-obligat|Checklist previo a abrir Pull Request: npm test local obligatorio]]
-- 🧪 [[memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito|Combinaciones (24) y ULTRAS (6) con bonus porcentual y requisitos visibles]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito|Combinaciones (24) y ULTRAS (6) con bonus porcentual y requisitos visibles]]
 - 🧪 [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg|Contenido de los anexos por sprint en la memoria TFG]]
 - 🧪 [[memoria/conocimiento/recetas/convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto|Convención de ramas y PRs por hito/fase en el proyecto]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/definicion-de-hecho-dod-para-tareas-e-hitos|Definición de Hecho (DoD) para tareas e hitos]]
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github|Flujo de trabajo enunciado → código → deploy (DoneTonic + GitHub)]]
 - 🧪 [[memoria/conocimiento/recetas/generacion-de-terreno-por-ruidos-terreno-js|Generación de terreno por ruidos (terreno.js)]]
-- 🧪 [[memoria/conocimiento/recetas/musica-100-sintetizada-web-audio-con-fanfarrias-por-competic|Música 100 % sintetizada (Web Audio) con fanfarrias por competición y grada reactiva]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/musica-100-sintetizada-web-audio-con-fanfarrias-por-competic|Música 100 % sintetizada (Web Audio) con fanfarrias por competición y grada reactiva]]
 - 🧪 [[memoria/conocimiento/recetas/proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni|Proceso de 4 pasos para cerrar un hito y actualizar DoneTonic]]
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-integracion-mediante-pull-requests-con-ci-obligato|Reglas de integración mediante Pull Requests con CI obligatorio]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/renderizado-chibi-1620-px-por-codigo-con-cache-de-fotogramas|Renderizado chibi 16×20 px por código con caché de fotogramas]]
@@ -29,7 +29,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre|Cambio de alcance en Sprint 1: se añade P19 Cloud Run por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell|Cámara 3/4 con inercia, inclinación y feedback visual (destellos/aplastado)]]
-- ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]]
 - ⚖️ [[memoria/conocimiento/decisiones/motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla|Motor de partida determinista a paso fijo 1/60 s con semilla]]
 - ⚖️ [[memoria/conocimiento/decisiones/registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g|Registro retroactivo del Sprint 2 en DoneTonic y efecto en gráficas]]
 - ⚖️ [[memoria/conocimiento/decisiones/sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba|Sprint 2 recoge juego ya hecho: 6 fases preexistentes como backlog]]
@@ -39,18 +39,18 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 - 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2|Burndown real vs. burndown de DoneTonic en Sprint 2]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza|Cinco ambientes con cambio de luz, afición y fuerza]]
-- 💡 [[memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2|Convención de ramas y PRs por sprint (Sprint 1 vs Sprint 2)]]
+- 💡 [[memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2|Convención de ramas y PRs por sprint (Sprint 1 vs Sprint 2)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-hecho-dod-para-tareas-hitos-y-fases|Definición de Hecho (DoD) para tareas, hitos y fases]]
-- 💡 [[memoria/conocimiento/conceptos/diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo|Diferencia nomenclatura tareas Hito 4 entre DoneTonic y repositorio]]
-- 💡 [[memoria/conocimiento/conceptos/fases-del-sprint-2-y-prs-asociados|Fases del Sprint 2 y PRs asociados]]
+- 💡 [[memoria/conocimiento/conceptos/diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo|Diferencia nomenclatura tareas Hito 4 entre DoneTonic y repositorio]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/fases-del-sprint-2-y-prs-asociados|Fases del Sprint 2 y PRs asociados]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/historias-de-usuario-y-criterios-de-aceptacion-en-donetonic|Historias de usuario y criterios de aceptación en DoneTonic para Sprint 2]]
-- 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores|Sistema de rarezas ligado a historia rojiblanca (36 jugadores, 4 rarezas)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores|Sistema de rarezas ligado a historia rojiblanca (36 jugadores, 4 rarezas)]]
 - 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-y-36-jugadores-pbi-p38|Sistema de rarezas y 36 jugadores (PBI P38)]]
 
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/arreglos-criticos-en-sprint-2-prs-51-55-56|Arreglos críticos en Sprint 2 (PRs #51, #55, #56)]]
-- 📊 [[memoria/conocimiento/datos/backlog-completo-del-sprint-1-con-trazabilidad-a-releases|Backlog completo del Sprint 1 con trazabilidad a releases]]
+- 📊 [[memoria/conocimiento/datos/backlog-completo-del-sprint-1-con-trazabilidad-a-releases|Backlog completo del Sprint 1 con trazabilidad a releases]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi|Backlog Sprint 2 con PRs, fechas de fusión y estado por PBI]]
 - 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo|Capturas de DoneTonic disponibles en el repo]]
 - 📊 [[memoria/conocimiento/datos/datos-del-burndown-sprint-1-pbis-pendientes-por-hito|Datos del burndown Sprint 1 (PBIs pendientes por hito)]]

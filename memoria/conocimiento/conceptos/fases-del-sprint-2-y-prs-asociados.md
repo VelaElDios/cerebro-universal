@@ -5,7 +5,7 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum"]
 claves: ["fase", "PR", "fusión", "fecha", "Sprint 2"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -31,6 +31,8 @@ Temas: [[donetonic]] · [[grada-colchonera]] · [[saas]] · [[scrum]]
 > | PR | Fase | Fecha de fusión |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[arreglos-criticos-en-sprint-2-prs-51-55-56]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]: La nota A afirma que en el Sprint 2 hubo «un PR por fase de juego (#36, #44–#54)», implicando que cada uno de esos 11 PRs (#44 a #54) corresponde a una fase. La nota B lista los mismos PRs pero muestra que solo #36, #49, #50, #52, #53 y #54 están etiquetados como «Fase 1» a «Fase 6»; #44–#48 y #51 son mejoras/arreglos sueltos, no fases.

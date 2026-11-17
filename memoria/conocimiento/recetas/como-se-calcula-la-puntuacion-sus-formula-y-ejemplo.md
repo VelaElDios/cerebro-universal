@@ -5,9 +5,9 @@ temas: ["calculo", "formula", "latex", "sus", "usabilidad"]
 claves: ["items impares", "items pares", "puntuación 0-100", "factor 2.5"]
 proyectos: ["plantilla-sus"]
 fuentes: ["../plantilla-sus/spec.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-17"
 ---
 
 Temas: [[calculo]] · [[formula]] · [[latex]] · [[sus]] · [[usabilidad]]
@@ -25,7 +25,7 @@ Ejemplo con participante U1 (5,1,5,1,4,2,5,1,5,1):
 
 La plantilla debe incluir la fórmula en notación matemática y este ejemplo resuelto.
 
-> Ítems impares: respuesta − 1 · Ítems pares: 5 − respuesta · Suma de las 10 contribuciones × 2,5 → puntuación de 0 a 100
-> — `../plantilla-sus/spec.md` (cita sin comprobar)
+> respuesta − 1 - Ítems pares: 5 − respuesta - Suma de las 10 contribuciones × 2,5 → puntuación de 0 a 100
+> — `../plantilla-sus/spec.md`
 
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

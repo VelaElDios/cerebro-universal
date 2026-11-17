@@ -22,6 +22,6 @@ Esto permite trazabilidad directa entre commits, tareas DoneTonic y PRs.
 > Mensajes en español, en imperativo y con el identificador de la tarea: `[T5] Añade el repositorio de usuarios en memoria`
 > — `repo:saas/CONTRIBUTING.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[github-flow-como-modelo-de-ramificacion-del-proyecto]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

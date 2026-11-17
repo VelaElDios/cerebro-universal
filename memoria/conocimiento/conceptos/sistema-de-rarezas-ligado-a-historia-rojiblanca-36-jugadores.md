@@ -5,9 +5,9 @@ temas: ["diseno-juego", "donetonic", "grada-colchonera", "progresion", "rareza",
 claves: ["Común", "Raro", "Épico", "Leyenda", "36 jugadores", "historia club", "P38"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-17"
 ---
 
 Temas: [[diseno-juego]] · [[donetonic]] · [[grada-colchonera]] · [[progresion]] · [[rareza]] · [[scrum]]
@@ -20,7 +20,9 @@ Temas: [[diseno-juego]] · [[donetonic]] · [[grada-colchonera]] · [[progresion
 - Animación de firma de contrato en pixel art al conseguir un jugador (P38).
 - Plantilla inicial: 4 comunes (uno por posición: portero, defensa, medio, delantero).
 
-> 36 jugadores en cuatro rarezas (Común, Raro, Épico, Leyenda) según su historia en el club. Más rareza = más habilidades aprendibles y menos probabilidad en un contrato.
-> — `repo:saas/docs/gestion/README.md` (cita sin comprobar)
+> - 36 jugadores en cuatro rarezas (Común, Raro, Épico, Leyenda) según su historia en el club. - Más rareza = más habilidades aprendibles y menos probabilidad en un contrato.
+> — `repo:saas/docs/gestion/README.md`
+
+Relacionado: [[sistema-de-rarezas-y-36-jugadores-pbi-p38]] · [[catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

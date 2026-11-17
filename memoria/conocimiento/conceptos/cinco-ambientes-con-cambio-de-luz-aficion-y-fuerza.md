@@ -17,4 +17,6 @@ Tarea T62 (PBI P36) define 5 ambientes visuales y jugables que alteran: iluminac
 > P36 | T62 | Cinco ambientes con cambio de luz, afición y fuerza | [#52](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/52) | Hecho
 > — `repo:saas/docs/gestion/README.md`
 
+Relacionado: [[sistema-de-rarezas-y-36-jugadores-pbi-p38]] · [[fases-del-sprint-2-y-prs-asociados]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

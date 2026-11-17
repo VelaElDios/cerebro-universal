@@ -16,7 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/resumen-de-pruebas-por-fichero-322-totales|Resumen de pruebas por fichero (322 totales)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/resumen-de-pruebas-por-fichero-322-totales|Resumen de pruebas por fichero (322 totales)]]
 
 ## Lecciones (errores ya resueltos)
 

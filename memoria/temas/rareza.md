@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rareza» (este archivo se
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores|Sistema de rarezas ligado a historia rojiblanca (36 jugadores, 4 rarezas)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores|Sistema de rarezas ligado a historia rojiblanca (36 jugadores, 4 rarezas)]]
 
 ## Temas relacionados
 

@@ -6,20 +6,22 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 
 ## Temas
 
-[[grada-colchonera]] (131) · [[saas]] (105) · [[latex]] (81) · [[scrum]] (50) · [[donetonic]] (44) · [[sprint]] (35) · [[tfg]] (31) · [[memoria]] (27) · [[tikz]] (12) · [[lua]] (12) · [[cerebro]] (12) · [[sus]] (11) · [[usabilidad]] (11) · [[procesos]] (11) · [[oauth]] (11) · [[auth]] (10) · [[git]] (10) · [[bibliografia]] (9) · [[figuras]] (9) · [[memoria-procesos]] (8) · [[correo]] (8) · [[verificacion]] (7) · [[pgf-umlsd]] (7) · [[github-flow]] (7) · [[juego]] (7) · [[trazabilidad]] (7) · [[maquetacion]] (7) · [[metricas]] (6) · [[arquitectura]] (6) · [[backend]] (6) · [[decision]] (6) · [[pgfplots]] (5) · [[general]] (5) · [[datos]] (5) · [[secuencia]] (5) · [[tablas]] (5) · [[alcance]] (5) · [[game-design]] (5) · [[seguridad]] (5) · [[requisitos]] (5) · [[bibtex]] (4) · [[longtable]] (4) · [[game-engine]] (4) · [[plantilla]] (4) · [[orquestador]] (4) · [[subcaption]] (4) · [[conocimiento]] (3) · [[beamer]] (3) · [[postgresql]] (3) · [[testing]] (3) · [[frontend]] (3) · [[ux]] (3) · [[modelo-datos]] (3) · [[anexo]] (3) · [[proyectos]] (3) · [[api]] (3) · [[reglas-tfg]] (3) · [[maquetación]] (3) · [[cloud-run]] (3) · [[despliegue]] (3) · [[metodologia]] (3) · [[sequencediagram]] (2) · [[rutas]] (2) · [[revision]] (2) · [[anexos]] (2) · [[audio]] (2) · [[middleware]] (2) · [[rbac]] (2) · [[antecedentes]] (2) · [[defensa]] (2) · [[bitacora]] (2) · [[error-handling]] (2) · [[autenticación]] (2) · [[bcrypt]] (2) · [[variables-entorno]] (2) · [[diseno-juego]] (2) · [[data]] (2) · [[calidad]] (2) · [[hitos]] (2) · [[fuentes]] (2) · [[base-datos]] (2) · [[done]] (2) · [[entrega]] (2) · [[graficos]] (2) · [[rendimiento]] (2) · [[anti-cheat]] (2) · [[test]] (2) · [[ui]] (2) · [[concurrencia-optimista]] (2) · [[estructura]] (2) · [[google]] (2) · [[ci-cd]] (2) · [[github-actions]] (2) · [[referencias]] (1) · [[overleaf]] (1) · [[overfull]] (1) · [[texttt]] (1) · [[ia]] (1) · [[ética]] (1) · [[architecture]] (1) · [[nodejs]] (1) · [[burndown]] (1) · [[capitulo-2]] (1) · [[autorizacion]] (1) · [[middlewares]] (1) · [[graficas]] (1) · [[pruebas]] (1) · [[logging]] (1) · [[observabilidad]] (1) · [[spa]] (1) · [[procedural-generation]] (1) · [[sesiones]] (1) · [[hito-4]] (1) · [[modulos]] (1) · [[codigos estado]] (1) · [[http]] (1) · [[secret-manager]] (1) · [[progresion]] (1) · [[rareza]] (1) · [[criterios]] (1) · [[terminado]] (1) · [[cronologia]] (1) · [[verificar]] (1) · [[arma]] (1) · [[fuente]] (1) · [[pbi]] (1) · [[tareas]] (1) · [[hito]] (1) · [[tarea]] (1) · [[history]] (1) · [[métrica]] (1) · [[node-test]] (1) · [[perfil]] (1) · [[métricas]] (1) · [[verificación]] (1) · [[gestion-proyectos]] (1) · [[hash]] (1) · [[autenticacion]] (1) · [[survivor-genre]] (1) · [[videojuegos]] (1) · [[gestion]] (1) · [[camara]] (1) · [[introduccion]] (1) · [[base-de-datos]] (1) · [[migracion]] (1) · [[decisiones]] (1) · [[ambientes]] (1) · [[diseno-niveles]] (1) · [[procedural]] (1) · [[escalas]] (1) · [[project-management]] (1) · [[conclusiones-dinamicas]] (1) · [[ia-local]] (1) · [[simulacion]] (1) · [[integridad]] (1) · [[email]] (1) · [[bug]] (1) · [[validacion]] (1) · [[arranque]] (1) · [[migraciones]] (1) · [[apalike]] (1) · [[autores corporativos]] (1) · [[cifras]] (1) · [[numeros]] (1) · [[capitulo-3]] (1) · [[capitulo-4]] (1) · [[manual-usuario]] (1) · [[capitulo-6]] (1) · [[conclusiones]] (1) · [[trabajo-futuro]] (1) · [[api-client]] (1) · [[coma decimal]] (1) · [[icomma]] (1) · [[matematicas]] (1) · [[builds]] (1) · [[subfigure]] (1) · [[pagina vacia]] (1) · [[regla 9]] (1) · [[mermaid]] (1) · [[capturas]] (1) · [[figura]] (1) · [[calculo]] (1) · [[formula]] (1) · [[babel]] (1) · [[flechas]] (1) · [[spanish]] (1) · [[fichas]] (1) · [[admin]] (1) · [[bootstrap]] (1) · [[directlua]] (1) · [[node]] (1) · [[comentarios]] (1) · [[sintaxis]] (1) · [[comillas]] (1) · [[csquotes]] (1) · [[enquote]] (1) · [[diagramas]] (1) · [[diagramas-secuencia]] (1) · [[esiiab]] (1) · [[archivos]] (1) · [[json]] (1) · [[floatbarrier]] (1) · [[placeins]] (1) · [[registro]] (1) · [[github]] (1) · [[estilo]] (1) · [[prosa]] (1) · [[ci]] (1) · [[chiptune]] (1) · [[procedural-audio]] (1) · [[web-audio]] (1) · [[simulación]] (1) · [[artifact-registry]] (1) · [[wif]] (1) · [[docker]] (1) · [[devops]] (1) · [[sesión]] (1) · [[email-confirmation]] (1) · [[pixel-art]] (1) · [[graphics]] (1) · [[abstract]] (1) · [[preambulo]] (1) · [[resumen]] (1) · [[compilacion]] (1) · [[trampas]] (1) · [[security]] (1)
+[[grada-colchonera]] (131) · [[saas]] (105) · [[latex]] (81) · [[scrum]] (50) · [[donetonic]] (44) · [[sprint]] (35) · [[tfg]] (31) · [[memoria]] (27) · [[tikz]] (12) · [[lua]] (12) · [[cerebro]] (12) · [[sus]] (11) · [[usabilidad]] (11) · [[procesos]] (11) · [[oauth]] (11) · [[auth]] (10) · [[git]] (10) · [[bibliografia]] (9) · [[figuras]] (9) · [[memoria-procesos]] (8) · [[correo]] (8) · [[verificacion]] (7) · [[pgf-umlsd]] (7) · [[github-flow]] (7) · [[juego]] (7) · [[trazabilidad]] (7) · [[maquetacion]] (7) · [[metricas]] (6) · [[arquitectura]] (6) · [[backend]] (6) · [[decision]] (6) · [[conocimiento]] (5) · [[pgfplots]] (5) · [[general]] (5) · [[datos]] (5) · [[secuencia]] (5) · [[tablas]] (5) · [[alcance]] (5) · [[game-design]] (5) · [[seguridad]] (5) · [[requisitos]] (5) · [[bibtex]] (4) · [[longtable]] (4) · [[game-engine]] (4) · [[plantilla]] (4) · [[orquestador]] (4) · [[subcaption]] (4) · [[beamer]] (3) · [[postgresql]] (3) · [[testing]] (3) · [[frontend]] (3) · [[ux]] (3) · [[modelo-datos]] (3) · [[anexo]] (3) · [[proyectos]] (3) · [[api]] (3) · [[reglas-tfg]] (3) · [[maquetación]] (3) · [[cloud-run]] (3) · [[despliegue]] (3) · [[metodologia]] (3) · [[sequencediagram]] (2) · [[rutas]] (2) · [[revision]] (2) · [[anexos]] (2) · [[audio]] (2) · [[middleware]] (2) · [[rbac]] (2) · [[antecedentes]] (2) · [[defensa]] (2) · [[bitacora]] (2) · [[error-handling]] (2) · [[autenticación]] (2) · [[bcrypt]] (2) · [[variables-entorno]] (2) · [[diseno-juego]] (2) · [[data]] (2) · [[calidad]] (2) · [[hitos]] (2) · [[fuentes]] (2) · [[base-datos]] (2) · [[done]] (2) · [[entrega]] (2) · [[graficos]] (2) · [[rendimiento]] (2) · [[anti-cheat]] (2) · [[test]] (2) · [[ui]] (2) · [[concurrencia-optimista]] (2) · [[estructura]] (2) · [[google]] (2) · [[ci-cd]] (2) · [[github-actions]] (2) · [[referencias]] (1) · [[overleaf]] (1) · [[overfull]] (1) · [[texttt]] (1) · [[ia]] (1) · [[ética]] (1) · [[architecture]] (1) · [[nodejs]] (1) · [[burndown]] (1) · [[capitulo-2]] (1) · [[autorizacion]] (1) · [[middlewares]] (1) · [[graficas]] (1) · [[pruebas]] (1) · [[logging]] (1) · [[observabilidad]] (1) · [[spa]] (1) · [[procedural-generation]] (1) · [[sesiones]] (1) · [[hito-4]] (1) · [[modulos]] (1) · [[codigos estado]] (1) · [[http]] (1) · [[secret-manager]] (1) · [[progresion]] (1) · [[rareza]] (1) · [[criterios]] (1) · [[terminado]] (1) · [[cronologia]] (1) · [[verificar]] (1) · [[arma]] (1) · [[fuente]] (1) · [[pbi]] (1) · [[tareas]] (1) · [[hito]] (1) · [[tarea]] (1) · [[history]] (1) · [[métrica]] (1) · [[node-test]] (1) · [[perfil]] (1) · [[métricas]] (1) · [[verificación]] (1) · [[gestion-proyectos]] (1) · [[hash]] (1) · [[autenticacion]] (1) · [[survivor-genre]] (1) · [[videojuegos]] (1) · [[gestion]] (1) · [[camara]] (1) · [[introduccion]] (1) · [[base-de-datos]] (1) · [[migracion]] (1) · [[decisiones]] (1) · [[ambientes]] (1) · [[diseno-niveles]] (1) · [[procedural]] (1) · [[escalas]] (1) · [[project-management]] (1) · [[conclusiones-dinamicas]] (1) · [[ia-local]] (1) · [[simulacion]] (1) · [[integridad]] (1) · [[email]] (1) · [[bug]] (1) · [[validacion]] (1) · [[arranque]] (1) · [[migraciones]] (1) · [[apalike]] (1) · [[autores corporativos]] (1) · [[cifras]] (1) · [[numeros]] (1) · [[capitulo-3]] (1) · [[capitulo-4]] (1) · [[manual-usuario]] (1) · [[capitulo-6]] (1) · [[conclusiones]] (1) · [[trabajo-futuro]] (1) · [[api-client]] (1) · [[coma decimal]] (1) · [[icomma]] (1) · [[matematicas]] (1) · [[builds]] (1) · [[subfigure]] (1) · [[pagina vacia]] (1) · [[regla 9]] (1) · [[mermaid]] (1) · [[capturas]] (1) · [[figura]] (1) · [[calculo]] (1) · [[formula]] (1) · [[babel]] (1) · [[flechas]] (1) · [[spanish]] (1) · [[fichas]] (1) · [[admin]] (1) · [[bootstrap]] (1) · [[directlua]] (1) · [[node]] (1) · [[comentarios]] (1) · [[sintaxis]] (1) · [[comillas]] (1) · [[csquotes]] (1) · [[enquote]] (1) · [[diagramas]] (1) · [[diagramas-secuencia]] (1) · [[esiiab]] (1) · [[archivos]] (1) · [[json]] (1) · [[floatbarrier]] (1) · [[placeins]] (1) · [[registro]] (1) · [[github]] (1) · [[estilo]] (1) · [[prosa]] (1) · [[ci]] (1) · [[chiptune]] (1) · [[procedural-audio]] (1) · [[web-audio]] (1) · [[simulación]] (1) · [[artifact-registry]] (1) · [[wif]] (1) · [[docker]] (1) · [[devops]] (1) · [[sesión]] (1) · [[email-confirmation]] (1) · [[pixel-art]] (1) · [[graphics]] (1) · [[abstract]] (1) · [[preambulo]] (1) · [[resumen]] (1) · [[compilacion]] (1) · [[trampas]] (1) · [[security]] (1)
 
-## 📁 Proyecto (3)
+## 📁 Proyecto (5)
 
 - 📁 [[proyectos/aprendizaje/bitacora|aprendizaje]]
+- 📁 [[proyectos/jardinero/bitacora|jardinero]]
 - 📁 [[proyectos/memoria-procesos/estado|memoria-procesos]]
 - 📁 [[proyectos/plantilla-sus/estado|plantilla-sus]]
+- 📁 [[proyectos/preguntas/bitacora|preguntas]]
 
 ## 🧪 Receta (82)
 
 - 🧪 [[memoria/conocimiento/recetas/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/enquote-necesita-el-paquete-csquotes|\enquote necesita el paquete csquotes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-con-subfigure|Agrupar capturas con subfigure]]
-- 🧪 [[memoria/conocimiento/recetas/api-del-juego-con-validacion-anti-trampas|API del juego con validación anti-trampas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/api-del-juego-con-validacion-anti-trampas|API del juego con validación anti-trampas]]
 - 🧪 [[memoria/conocimiento/recetas/arranque-de-la-aplicacion-configuracion-migraciones-y-primer|Arranque de la aplicación: configuración, migraciones y primer administrador (bootstrap)]]
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
@@ -30,7 +32,7 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 🧪 [[memoria/conocimiento/recetas/checklist-previo-a-abrir-pull-request-npm-test-local-obligat|Checklist previo a abrir Pull Request: npm test local obligatorio]]
 - 🧪 [[memoria/conocimiento/recetas/cliente-api-con-timeout-de-15-s-y-manejo-de-apierror|Cliente API con timeout de 15 s y manejo de ApiError]]
 - 🧪 [[memoria/conocimiento/recetas/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito|Combinaciones (24) y ULTRAS (6) con bonus porcentual y requisitos visibles]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito|Combinaciones (24) y ULTRAS (6) con bonus porcentual y requisitos visibles]]
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg|Contenido de los anexos por sprint en la memoria TFG]]
@@ -42,7 +44,7 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica|Cómo configurar SMTP saliente con Gmail (contraseña de aplicación)]]
 - 🧪 [[memoria/conocimiento/recetas/como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte|Cómo configurar un proyecto para trabajar sobre un repo externo]]
-- 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
 - 🧪 [[memoria/conocimiento/recetas/como-crear-cliente-oauth-de-google-para-la-grada-colchonera|Cómo crear cliente OAuth de Google para La Grada Colchonera]]
 - 🧪 [[memoria/conocimiento/recetas/como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador|Cómo dar instrucciones al cerebro sin tocar el borrador]]
 - 🧪 [[memoria/conocimiento/recetas/como-desplegar-secretos-de-hito-4-a-cloud-run-produccion|Cómo desplegar secretos de Hito 4 a Cloud Run (producción)]]
@@ -52,7 +54,7 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 🧪 [[memoria/conocimiento/recetas/como-probar-la-configuracion-en-local-hito-4|Cómo probar la configuración en local (Hito 4)]]
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-se-calcula-la-puntuacion-sus-formula-y-ejemplo|Cómo se calcula la puntuación SUS (fórmula y ejemplo)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-se-calcula-la-puntuacion-sus-formula-y-ejemplo|Cómo se calcula la puntuación SUS (fórmula y ejemplo)]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-empieza-un-proyecto-nuevo-en-el-cerebro|Cómo se empieza un proyecto nuevo en el cerebro]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm|Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/definicion-de-hecho-dod-para-tareas-e-hitos|Definición de Hecho (DoD) para tareas e hitos]]
@@ -63,14 +65,14 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-archivos-obligatoria-para-la-plantilla-sus|Estructura de archivos obligatoria para la plantilla SUS]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni|Estructura y nomenclatura de ramas por hito y tarea DoneTonic]]
-- 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]]
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf|Flujo de confirmación de cuenta por correo (GET /api/auth/confirm)]]
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-registro-con-email-y-contrasena|Flujo de registro con email y contraseña]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github|Flujo de trabajo enunciado → código → deploy (DoneTonic + GitHub)]]
-- 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]]
 - 🧪 [[memoria/conocimiento/recetas/generacion-de-terreno-por-ruidos-terreno-js|Generación de terreno por ruidos (terreno.js)]]
 - 🧪 [[memoria/conocimiento/recetas/github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio|GitHub Flow por hitos con ramas protegidas y CI obligatorio]]
 - 🧪 [[memoria/conocimiento/recetas/inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte|Inicio de sesión Google OAuth 2.0 con state anti-CSRF e intercambio en servidor]]
@@ -78,7 +80,7 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 🧪 [[memoria/conocimiento/recetas/login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p|Login local con cuenta pendiente y reenvío de confirmación (POST /api/auth/login)]]
 - 🧪 [[memoria/conocimiento/recetas/manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui|Manejo de errores de principio a fin: de errores tipados a UI con reintento]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/manual-de-usuario-entrada-menus-controles-oleadas-ambientes|Manual de usuario: entrada, menús, controles, oleadas, ambientes y fin de partida]]
-- 🧪 [[memoria/conocimiento/recetas/musica-100-sintetizada-web-audio-con-fanfarrias-por-competic|Música 100 % sintetizada (Web Audio) con fanfarrias por competición y grada reactiva]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/musica-100-sintetizada-web-audio-con-fanfarrias-por-competic|Música 100 % sintetizada (Web Audio) con fanfarrias por competición y grada reactiva]]
 - 🧪 [[memoria/conocimiento/recetas/partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con|Partida del juego: inicio, bucle de simulación (60 Hz) y fin con validación anti-trampas (servidor)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker|Pipeline CI/CD: GitHub Actions con PostgreSQL 17 real, Docker, despliegue automático a Cloud Run]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-cloud-run-con-workload-identit|Pipeline CI/CD: GitHub Actions → Cloud Run con Workload Identity Federation (WIF) y despliegue alternativo en Render]]
@@ -103,17 +105,17 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 
 - ⚖️ [[memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio|Arquitectura en capas con inyección de dependencias permitió cambios sin tocar lógica]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
-- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por|Cambio de alcance durante Sprint 1: añadido P19 (Cloud Run) por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre|Cambio de alcance en Sprint 1: se añade P19 Cloud Run por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-de-red-social-a-juego-survivor-justificaci|Cambio de alcance: de red social a juego survivor (justificación)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in|Cambio de enfoque de red social a juego justificado en la introducción]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/comportamiento-de-cuentas-segun-metodo-de-registro-y-estado|Comportamiento de cuentas según método de registro y estado previo]]
-- ⚖️ [[memoria/conocimiento/decisiones/correccion-de-unicidad-de-email-tras-baja-logica-indice-parc|Corrección de unicidad de email tras baja lógica: índice parcial y findByEmail ignora eliminadas]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/correccion-de-unicidad-de-email-tras-baja-logica-indice-parc|Corrección de unicidad de email tras baja lógica: índice parcial y findByEmail ignora eliminadas]]
 - ⚖️ [[memoria/conocimiento/decisiones/camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell|Cámara 3/4 con inercia, inclinación y feedback visual (destellos/aplastado)]]
 - ⚖️ [[memoria/conocimiento/decisiones/decisiones-de-diseno-del-backend-con-alternativas-y-justific|Decisiones de diseño del backend con alternativas y justificación]]
 - ⚖️ [[memoria/conocimiento/decisiones/deshacer-el-paso-entero-si-rompe-la-compilacion|Deshacer el paso entero si rompe la compilación]]
-- ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]]
 - ⚖️ [[memoria/conocimiento/decisiones/escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e|Escalas de transformación SUS adoptadas (Sauro-Lewis, Bangor et al.)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion|Evolución por fases del Sprint 2 (etiquetas DoneTonic, adiciones y problemas resueltos)]]
 - ⚖️ [[memoria/conocimiento/decisiones/fase-2-defensa-sus-tex-en-beamer-con-conclusiones-generadas|Fase 2: defensa-sus.tex en Beamer con conclusiones generadas dinámicamente]]
@@ -125,8 +127,8 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - ⚖️ [[memoria/conocimiento/decisiones/pivote-de-red-social-a-juego-survivor-reutilizando-base-del|Pivote de red social a juego survivor reutilizando base del Sprint 1]]
 - ⚖️ [[memoria/conocimiento/decisiones/proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api|Protección del último administrador al cambiar rol (PATCH /api/users/:id/role) y al darse de baja (DELETE /api/users/:id)]]
 - ⚖️ [[memoria/conocimiento/decisiones/registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g|Registro retroactivo del Sprint 2 en DoneTonic y efecto en gráficas]]
-- ⚖️ [[memoria/conocimiento/decisiones/solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto|Solución a correo no salía desde Cloud Run: SMTP Gmail puerto 465 con contraseña de aplicación]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex|Solución a JSON mal formado que devolvía HTML de error de Express]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto|Solución a correo no salía desde Cloud Run: SMTP Gmail puerto 465 con contraseña de aplicación]]
+- ⚖️ [[memoria/conocimiento/decisiones/solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex|Solución a JSON mal formado que devolvía HTML de error de Express]]
 - ⚖️ [[memoria/conocimiento/decisiones/sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba|Sprint 2 recoge juego ya hecho: 6 fases preexistentes como backlog]]
 - ⚖️ [[memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter|Tocar trozos con CAMBIAR en vez de reescribir archivos enteros]]
 - ⚖️ [[memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4|Trazabilidad completa requisito → PBI → tarea → PR en anexo A4]] · ⚠️ propuesto
@@ -147,16 +149,16 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 💡 [[memoria/conocimiento/conceptos/confianza-del-conocimiento-verificado-o-propuesto|Confianza del conocimiento (verificado o propuesto)]]
 - 💡 [[memoria/conocimiento/conceptos/control-de-acceso-basado-en-roles-y-propiedad-requireauth-re|Control de acceso basado en roles y propiedad (requireAuth, requireRole, requireSelfOrRole)]]
 - 💡 [[memoria/conocimiento/conceptos/convencion-de-mensajes-de-commit-en-espanol-con-identificado|Convención de mensajes de commit en español con identificador de tarea]]
-- 💡 [[memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2|Convención de ramas y PRs por sprint (Sprint 1 vs Sprint 2)]]
+- 💡 [[memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2|Convención de ramas y PRs por sprint (Sprint 1 vs Sprint 2)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/como-trabaja-el-cerebro-constructor-prueba-revisor|Cómo trabaja el cerebro (constructor, prueba, revisor)]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-hecho-dod-para-tareas-hitos-y-fases|Definición de Hecho (DoD) para tareas, hitos y fases]]
 - 💡 [[memoria/conocimiento/conceptos/desglose-del-alcance-del-sprint-1-por-hitos-y-fechas|Desglose del alcance del Sprint 1 por hitos y fechas]]
-- 💡 [[memoria/conocimiento/conceptos/diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo|Diferencia nomenclatura tareas Hito 4 entre DoneTonic y repositorio]]
+- 💡 [[memoria/conocimiento/conceptos/diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo|Diferencia nomenclatura tareas Hito 4 entre DoneTonic y repositorio]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer|Estrategia de pruebas error-first y CI como requisito de merge]]
 - 💡 [[memoria/conocimiento/conceptos/estrategia-de-pruebas-niveles-y-enfoque-error-first|Estrategia de pruebas: niveles y enfoque error-first]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-compartida-cerebro-md-estado-md-con|Estructura de la memoria compartida (CEREBRO.md, estado.md, conocimiento, lecciones, mapas)]]
-- 💡 [[memoria/conocimiento/conceptos/fases-del-sprint-2-y-prs-asociados|Fases del Sprint 2 y PRs asociados]]
+- 💡 [[memoria/conocimiento/conceptos/fases-del-sprint-2-y-prs-asociados|Fases del Sprint 2 y PRs asociados]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/formato-de-logs-json-y-eventos-registrados|Formato de logs JSON y eventos registrados]]
 - 💡 [[memoria/conocimiento/conceptos/frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman|Frontend SPA con rutas por hash y vistas cargadas bajo demanda]]
 - 💡 [[memoria/conocimiento/conceptos/generacion-de-mundo-procedural-infinito-con-distritos-estadi|Generación de mundo procedural infinito con distritos, estadios y colisión por pies (vista 3/4)]]
@@ -173,14 +175,14 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 💡 [[memoria/conocimiento/conceptos/perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante|Perfil de juego con JSONB y concurrencia optimista mediante versión]]
 - 💡 [[memoria/conocimiento/conceptos/rotacion-de-proyectos-por-tiempo-sin-avanzar|Rotación de proyectos por tiempo sin avanzar]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage|Seguridad: bcrypt coste 10, sin secretos en repo, Secret Manager en Cloud Run]]
-- 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores|Sistema de rarezas ligado a historia rojiblanca (36 jugadores, 4 rarezas)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores|Sistema de rarezas ligado a historia rojiblanca (36 jugadores, 4 rarezas)]]
 - 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-y-36-jugadores-pbi-p38|Sistema de rarezas y 36 jugadores (PBI P38)]]
 - 💡 [[memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra|Trazabilidad completa requisito → PBI → tarea → PR en anexo a4-trazabilidad.tex]] · ⚠️ propuesto
 
 ## 📊 Dato (45)
 
 - 📊 [[memoria/conocimiento/datos/arreglos-criticos-en-sprint-2-prs-51-55-56|Arreglos críticos en Sprint 2 (PRs #51, #55, #56)]]
-- 📊 [[memoria/conocimiento/datos/backlog-completo-del-sprint-1-con-trazabilidad-a-releases|Backlog completo del Sprint 1 con trazabilidad a releases]]
+- 📊 [[memoria/conocimiento/datos/backlog-completo-del-sprint-1-con-trazabilidad-a-releases|Backlog completo del Sprint 1 con trazabilidad a releases]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi|Backlog Sprint 2 con PRs, fechas de fusión y estado por PBI]]
 - 📊 [[memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg|Bibliografía gestionada con BibTeX en la memoria TFG]]
 - 📊 [[memoria/conocimiento/datos/campos-de-proyecto-json-y-su-proposito|Campos de proyecto.json y su propósito]]
@@ -197,7 +199,7 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas|Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)]]
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29|Fechas y estructura del Sprint 2 (6 fases de juego + Calidad, 29 PBIs, 50 tareas)]]
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs y tareas de los dos sprints]]
-- 📊 [[memoria/conocimiento/datos/grupos-de-rutas-de-la-api-y-sus-accesos|Grupos de rutas de la API y sus accesos]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/grupos-de-rutas-de-la-api-y-sus-accesos|Grupos de rutas de la API y sus accesos]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/lista-de-29-logros-con-datos-historicos-verificados-y-10-equ|Lista de 29 logros con datos históricos verificados y 10 equipaciones desbloqueables]]
 - 📊 [[memoria/conocimiento/datos/metadatos-del-proyecto-la-grada-colchonera|Metadatos del proyecto La Grada Colchonera]]
@@ -214,7 +216,7 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil|Requisitos funcionales del juego (Sprint 2) — 20 RJ con trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad|Requisitos funcionales del Sprint 1 (13 RF) con trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto|Requisitos no funcionales RNF-01 a RNF-12 del proyecto]]
-- 📊 [[memoria/conocimiento/datos/resumen-de-pruebas-por-fichero-322-totales|Resumen de pruebas por fichero (322 totales)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/resumen-de-pruebas-por-fichero-322-totales|Resumen de pruebas por fichero (322 totales)]]
 - 📊 [[memoria/conocimiento/datos/roadmap-de-trabajo-futuro-priorizado|Roadmap de trabajo futuro priorizado]]
 - 📊 [[memoria/conocimiento/datos/script-de-configuracion-de-secretos-hito-4-en-gcp|Script de configuración de secretos Hito 4 en GCP]]
 - 📊 [[memoria/conocimiento/datos/tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re|Tabla de trazabilidad Sprint 1: PBI → Hito → Título → Tareas → PRs → Release]]
@@ -273,7 +275,7 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - ⚠️ [[memoria/lecciones/una-cita-con-autor-largo-se-sale-del-margen-breakcites|Una cita con autor largo se sale del margen: breakcites]]
 - ⚠️ [[memoria/lecciones/una-funcion-llamada-desde-directlua-debe-imprimir-con-tex-sp|Una función llamada desde \directlua debe imprimir con tex.sprint, no con return]]
 
-## Pendientes de confirmar (67)
+## Pendientes de confirmar (56)
 
 - ⚠️ [[memoria/lecciones/citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/los-identificadores-largos-en-texttt-no-se-parten-solos-usar|Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando]] · ⚠️ propuesto
@@ -286,41 +288,33 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - ⚠️ [[memoria/lecciones/todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto|Todas las figuras y tablas deben tener \ref en el texto]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2|Burndown real vs. burndown de DoneTonic en Sprint 2]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2|Convención de ramas y PRs por sprint (Sprint 1 vs Sprint 2)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo|Diferencia nomenclatura tareas Hito 4 entre DoneTonic y repositorio]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estrategia-de-pruebas-niveles-y-enfoque-error-first|Estrategia de pruebas: niveles y enfoque error-first]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/fases-del-sprint-2-y-prs-asociados|Fases del Sprint 2 y PRs asociados]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/maquina-de-estados-de-la-cuenta-de-usuario|Máquina de estados de la cuenta de usuario]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/rotacion-de-proyectos-por-tiempo-sin-avanzar|Rotación de proyectos por tiempo sin avanzar]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores|Sistema de rarezas ligado a historia rojiblanca (36 jugadores, 4 rarezas)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra|Trazabilidad completa requisito → PBI → tarea → PR en anexo a4-trazabilidad.tex]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/backlog-completo-del-sprint-1-con-trazabilidad-a-releases|Backlog completo del Sprint 1 con trazabilidad a releases]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/esquema-de-progreso-guardado-en-servidor-migracion-003-tabla|Esquema de progreso guardado en servidor (migración 003, tablas y API)]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/grupos-de-rutas-de-la-api-y-sus-accesos|Grupos de rutas de la API y sus accesos]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/migracion-004-y-endpoint-put-api-juego-identidad-para-mote-y|Migración 004 y endpoint PUT /api/juego/identidad para mote y avatar]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil|Requisitos funcionales del juego (Sprint 2) — 20 RJ con trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad|Requisitos funcionales del Sprint 1 (13 RF) con trazabilidad]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/resumen-de-pruebas-por-fichero-322-totales|Resumen de pruebas por fichero (322 totales)]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in|Cambio de enfoque de red social a juego justificado en la introducción]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/correccion-de-unicidad-de-email-tras-baja-logica-indice-parc|Corrección de unicidad de email tras baja lógica: índice parcial y findByEmail ignora eliminadas]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e|Escalas de transformación SUS adoptadas (Sauro-Lewis, Bangor et al.)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/optimizaciones-de-rendimiento-busqueda-por-radio-con-claves|Optimizaciones de rendimiento: búsqueda por radio con claves numéricas y una textura por celda y fotograma]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto|Solución a correo no salía desde Cloud Run: SMTP Gmail puerto 465 con contraseña de aplicación]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex|Solución a JSON mal formado que devolvía HTML de error de Express]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4|Trazabilidad completa requisito → PBI → tarea → PR en anexo A4]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/api-del-juego-con-validacion-anti-trampas|API del juego con validación anti-trampas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p|Cada cifra de un documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito|Combinaciones (24) y ULTRAS (6) con bonus porcentual y requisitos visibles]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex|Cómo agrupar capturas con subfigure en LaTeX]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-se-calcula-la-puntuacion-sus-formula-y-ejemplo|Cómo se calcula la puntuación SUS (fórmula y ejemplo)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto|Convención de ramas y PRs por hito/fase en el proyecto]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/corregir-paginas-con-una-sola-imagen-regla-8|Corregir páginas con una sola imagen (Regla 8)]] · ⚠️ propuesto
@@ -330,12 +324,9 @@ Para confirmar algo propuesto: abrir la nota, revisarla y cambiar `confianza` a 
 - 🧪 [[memoria/conocimiento/recetas/enquote-necesita-el-paquete-csquotes|\enquote necesita el paquete csquotes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra|Escribir diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-archivos-obligatoria-para-la-plantilla-sus|Estructura de archivos obligatoria para la plantilla SUS]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-registro-con-email-y-contrasena|Flujo de registro con email y contraseña]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui|Manejo de errores de principio a fin: de errores tipados a UI con reintento]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/musica-100-sintetizada-web-audio-con-fanfarrias-por-competic|Música 100 % sintetizada (Web Audio) con fanfarrias por competición y grada reactiva]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con|Partida del juego: inicio, bucle de simulación (60 Hz) y fin con validación anti-trampas (servidor)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker|Pipeline CI/CD: GitHub Actions con PostgreSQL 17 real, Docker, despliegue automático a Cloud Run]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-docker-cloud-run-y-render|Pipeline CI/CD: GitHub Actions, Docker, Cloud Run y Render]] · ⚠️ propuesto

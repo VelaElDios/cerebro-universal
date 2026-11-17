@@ -5,7 +5,7 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum"]
 claves: ["rama", "PR", "hito-N/Tx", "main", "fase", "convención nombres"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -20,6 +20,8 @@ Razón implícita: Sprint 1 requería entregas parciales evaluables (hitos con r
 > En el Sprint 1 cada tarea tiene una rama propia `hito-N/Tx-descripcion` que se integra en la rama del hito mediante un PR `[Tx] ...`. En el Sprint 2 el trabajo se integró en `main` con **un PR por fase** del juego (#36, #44–#54), y cada tarea de DoneTonic indica en su descripción el PR donde está (`PR: #nn`).
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]]
+Relacionado: [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[fases-del-sprint-2-y-prs-asociados]]: La nota A afirma que en el Sprint 2 hubo «un PR por fase de juego (#36, #44–#54)», implicando que cada uno de esos 11 PRs (#44 a #54) corresponde a una fase. La nota B lista los mismos PRs pero muestra que solo #36, #49, #50, #52, #53 y #54 están etiquetados como «Fase 1» a «Fase 6»; #44–#48 y #51 son mejoras/arreglos sueltos, no fases.

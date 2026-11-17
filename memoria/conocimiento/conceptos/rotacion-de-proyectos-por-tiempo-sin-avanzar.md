@@ -16,3 +16,5 @@ El orquestador no ejecuta todos los proyectos a la vez. En cada run del workflow
 
 > `scripts/elegir_proyecto.py` elige el proyecto en construcción que lleve más tiempo sin avanzar e instala solo lo que ese proyecto necesita (`config/entornos.json`). Y: `ultima_ejecucion` Lo escribe el orquestador; sirve para rotar entre proyectos.
 > — `../../README.md` (cita sin comprobar)
+
+Relacionado: [[como-trabaja-el-cerebro-constructor-prueba-revisor]] · [[campos-de-proyecto-json-y-su-proposito]] · [[estructura-de-la-memoria-compartida-cerebro-md-estado-md-con]]

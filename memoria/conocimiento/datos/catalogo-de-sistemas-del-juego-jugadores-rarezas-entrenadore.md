@@ -32,6 +32,6 @@ Temas: [[data]] · [[game-design]] · [[grada-colchonera]] · [[saas]]
 > | **Jugadores** | 36 (4 porteros, 9 defensas, 13 medios, 10 delanteros). La posición fija las estadísticas base; cada jugador tiene rasgos propios y una lista de habilidades que puede aprender | `PERSONAJES`, `POSICIONES` |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]]
+Relacionado: [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores]] · [[genero-y-bucle-principal-del-juego-survivor-chibi-atletico]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

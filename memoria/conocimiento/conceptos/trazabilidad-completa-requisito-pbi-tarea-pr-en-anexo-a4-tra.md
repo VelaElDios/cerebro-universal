@@ -17,6 +17,6 @@ El anexo a4-trazabilidad.tex debe contener una `longtable` con 5 columnas: Requi
 > Tabla completa (longtable) requisito → PBI → tarea → PR de los dos sprints: todos los PBIs P1–P48 y todas las tareas T1–T82.
 > — `spec del proyecto (tabla Anexos), repo:saas/docs/documentacion-tecnica.md §3, repo:saas/docs/gestion/README.md` (cita sin comprobar)
 
-Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

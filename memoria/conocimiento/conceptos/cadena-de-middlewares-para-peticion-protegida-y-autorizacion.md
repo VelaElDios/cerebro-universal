@@ -17,4 +17,6 @@ La petición entra con cabecera `X-Request-Id`. `requestLogger` pasa a `currentU
 > C->>RL: GET /api/users (X-Request-Id) RL->>CU: siguiente CU->>CU: req.user = usuario activo de la sesión o null CU->>RA: siguiente alt req.user es null RA-->>C: 401 UNAUTHENTICATED else RA->>RR: siguiente alt rol user RR-->>C: 403 FORBIDDEN (log auth.forbidden) else rol admin RR->>H: siguiente H->>S: listUsers() S-->>H: usuarios sin datos sensibles H-->>C: 200 end end RL->>RL: log http.request (método, ruta, estado, ms, usuario)
 > — `repo:saas/docs/documentacion-tecnica.md`
 
+Relacionado: [[control-de-acceso-basado-en-roles-y-propiedad-requireauth-re]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[modulos-del-backend-y-sus-responsabilidades]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rutas» (este archivo se 
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/grupos-de-rutas-de-la-api-y-sus-accesos|Grupos de rutas de la API y sus accesos]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/grupos-de-rutas-de-la-api-y-sus-accesos|Grupos de rutas de la API y sus accesos]]
 
 ## Lecciones (errores ya resueltos)
 

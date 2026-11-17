@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «middleware» (este archiv
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex|Solución a JSON mal formado que devolvía HTML de error de Express]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex|Solución a JSON mal formado que devolvía HTML de error de Express]]
 
 ## Conceptos
 

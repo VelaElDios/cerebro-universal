@@ -24,4 +24,6 @@ Requisitos: colores definidos en un solo sitio; etiquetas sin solaparse entre s�
 > Cada gráfica en su propio archivo dentro de `graficas/`, usable con `\input{}`: · **Donut**: media SUS en grande en el centro, arco proporcional a la puntuación, nota y adjetivo debajo. · **Barra de rango**: de 0 a 100, marcando el 68 de referencia y el rango mín-máx de los participantes. · **Velocímetro**: semicírculo con zonas no aceptable (0-50, rojo), marginal (50-70, amarillo) y aceptable (70-100, verde), con la aguja en la media. · **Barras por participante**: puntuación de cada uno con una línea en 68.
 > — `../plantilla-sus/spec.md` (cita sin comprobar)
 
+Relacionado: [[criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]]
+
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

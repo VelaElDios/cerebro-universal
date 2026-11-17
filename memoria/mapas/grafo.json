@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T12:00:08+01:00",
+ "generado": "2026-11-17T14:02:22+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -10,6 +10,16 @@
     "conocimiento"
    ],
    "ruta": "proyectos/aprendizaje/bitacora.md"
+  },
+  {
+   "id": "proyecto:jardinero",
+   "tipo": "proyecto",
+   "titulo": "jardinero",
+   "estado": "en-construccion",
+   "temas": [
+    "conocimiento"
+   ],
+   "ruta": "proyectos/jardinero/bitacora.md"
   },
   {
    "id": "proyecto:memoria-procesos",
@@ -37,6 +47,16 @@
     "beamer"
    ],
    "ruta": "proyectos/plantilla-sus/estado.md"
+  },
+  {
+   "id": "proyecto:preguntas",
+   "tipo": "proyecto",
+   "titulo": "preguntas",
+   "estado": "en-construccion",
+   "temas": [
+    "conocimiento"
+   ],
+   "ruta": "proyectos/preguntas/bitacora.md"
   },
   {
    "id": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
@@ -731,7 +751,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2.md"
   },
   {
@@ -799,7 +819,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo.md"
   },
   {
@@ -858,7 +878,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/fases-del-sprint-2-y-prs-asociados.md"
   },
   {
@@ -1137,7 +1157,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores.md"
   },
   {
@@ -1201,7 +1221,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/backlog-completo-del-sprint-1-con-trazabilidad-a-releases.md"
   },
   {
@@ -1493,7 +1513,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/grupos-de-rutas-de-la-api-y-sus-accesos.md"
   },
   {
@@ -1776,7 +1796,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/resumen-de-pruebas-por-fichero-322-totales.md"
   },
   {
@@ -1973,7 +1993,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico.md"
   },
   {
@@ -2090,7 +2110,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/correccion-de-unicidad-de-email-tras-baja-logica-indice-parc.md"
   },
   {
@@ -2135,7 +2155,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio.md"
   },
   {
@@ -2326,7 +2346,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto.md"
   },
   {
@@ -2342,7 +2362,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex.md"
   },
   {
@@ -2575,7 +2595,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/api-del-juego-con-validacion-anti-trampas.md"
   },
   {
@@ -2761,7 +2781,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito.md"
   },
   {
@@ -2837,7 +2857,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu.md"
   },
   {
@@ -2997,7 +3017,7 @@
    "proyectos": [
     "plantilla-sus"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-se-calcula-la-puntuacion-sus-formula-y-ejemplo.md"
   },
   {
@@ -3324,7 +3344,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9.md"
   },
   {
@@ -3443,7 +3463,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co.md"
   },
   {
@@ -3578,7 +3598,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/musica-100-sintetizada-web-audio-con-fanfarrias-por-competic.md"
   },
   {
@@ -3908,7 +3928,7 @@
    "id": "tema:conocimiento",
    "tipo": "tema",
    "titulo": "conocimiento",
-   "peso": 3,
+   "peso": 5,
    "ruta": "memoria/temas/conocimiento.md"
   },
   {
@@ -5494,6 +5514,11 @@
    "tipo": "usa"
   },
   {
+   "de": "proyecto:jardinero",
+   "a": "tema:conocimiento",
+   "tipo": "usa"
+  },
+  {
    "de": "proyecto:memoria-procesos",
    "a": "tema:latex",
    "tipo": "usa"
@@ -5536,6 +5561,11 @@
   {
    "de": "proyecto:plantilla-sus",
    "a": "tema:beamer",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:preguntas",
+   "a": "tema:conocimiento",
    "tipo": "usa"
   },
   {
@@ -6089,6 +6119,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg",
+   "a": "concepto:capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg",
+   "a": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg",
+   "a": "concepto:convencion-de-mensajes-de-commit-en-espanol-con-identificado",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
    "a": "tema:arquitectura",
    "tipo": "trata"
@@ -6117,6 +6162,21 @@
    "de": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
    "a": "proyecto:plantilla-sus",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "a": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "a": "concepto:cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "a": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
@@ -6151,6 +6211,21 @@
   {
    "de": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
    "a": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
+   "a": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
+   "a": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
+   "a": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
    "tipo": "enlaza"
   },
   {
@@ -6194,6 +6269,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
+   "a": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
+   "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
    "a": "tema:arquitectura",
    "tipo": "trata"
@@ -6229,6 +6319,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
    "a": "tema:audio",
    "tipo": "trata"
@@ -6252,6 +6352,21 @@
    "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "a": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "a": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "a": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
@@ -6289,6 +6404,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "dato:capturas-de-donetonic-disponibles-en-el-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
    "a": "tema:auth",
    "tipo": "trata"
@@ -6317,6 +6447,21 @@
    "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
+   "a": "concepto:control-de-acceso-basado-en-roles-y-propiedad-requireauth-re",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
+   "a": "concepto:gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf",
@@ -6354,6 +6499,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf",
+   "a": "concepto:anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf",
+   "a": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf",
+   "a": "concepto:glosario-tecnico-del-proyecto-22-terminos-definidos",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -6379,6 +6539,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "concepto:cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
+   "a": "concepto:sistema-de-rarezas-y-36-jugadores-pbi-p38",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
+   "a": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -6389,6 +6564,21 @@
    "tipo": "trata"
   },
   {
+   "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "a": "concepto:estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "a": "dato:campos-de-proyecto-json-y-su-proposito",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "a": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -6397,6 +6587,21 @@
    "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
    "a": "tema:conocimiento",
    "tipo": "trata"
+  },
+  {
+   "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "a": "concepto:estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "a": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "a": "dato:campos-de-proyecto-json-y-su-proposito",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:control-de-acceso-basado-en-roles-y-propiedad-requireauth-re",
@@ -6439,6 +6644,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:control-de-acceso-basado-en-roles-y-propiedad-requireauth-re",
+   "a": "concepto:gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:control-de-acceso-basado-en-roles-y-propiedad-requireauth-re",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:convencion-de-mensajes-de-commit-en-espanol-con-identificado",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -6469,6 +6684,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:convencion-de-mensajes-de-commit-en-espanol-con-identificado",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:convencion-de-mensajes-de-commit-en-espanol-con-identificado",
+   "a": "concepto:github-flow-como-modelo-de-ramificacion-del-proyecto",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -6496,6 +6721,21 @@
   {
    "de": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
    "a": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "a": "concepto:fases-del-sprint-2-y-prs-asociados",
    "tipo": "enlaza"
   },
   {
@@ -6539,6 +6779,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "concepto:cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime",
+   "a": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime",
+   "a": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime",
+   "a": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:definicion-de-hecho-dod-para-tareas-hitos-y-fases",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -6574,6 +6829,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:definicion-de-hecho-dod-para-tareas-hitos-y-fases",
+   "a": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:definicion-de-hecho-dod-para-tareas-hitos-y-fases",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:definicion-de-hecho-dod-para-tareas-hitos-y-fases",
+   "a": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
    "a": "tema:alcance",
    "tipo": "trata"
@@ -6601,6 +6871,21 @@
   {
    "de": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
    "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
+   "a": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
+   "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
    "tipo": "enlaza"
   },
   {
@@ -6639,6 +6924,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "a": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "a": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
    "a": "tema:grada-colchonera",
    "tipo": "trata"
@@ -6666,6 +6961,16 @@
   {
    "de": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
    "a": "concepto:formato-de-logs-json-y-eventos-registrados",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
+   "a": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
+   "a": "concepto:manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui",
    "tipo": "enlaza"
   },
   {
@@ -6699,6 +7004,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "a": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "a": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
    "a": "tema:bitacora",
    "tipo": "trata"
@@ -6729,6 +7044,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
+   "a": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
+   "a": "dato:campos-de-proyecto-json-y-su-proposito",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:fases-del-sprint-2-y-prs-asociados",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -6752,6 +7077,21 @@
    "de": "concepto:fases-del-sprint-2-y-prs-asociados",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "a": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "a": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:fases-del-sprint-2-y-prs-asociados",
@@ -6789,6 +7129,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:formato-de-logs-json-y-eventos-registrados",
+   "a": "concepto:gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:formato-de-logs-json-y-eventos-registrados",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
    "a": "tema:frontend",
    "tipo": "trata"
@@ -6814,6 +7164,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "a": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
    "a": "tema:game-engine",
    "tipo": "trata"
@@ -6837,6 +7202,21 @@
    "de": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
+   "a": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
+   "a": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
+   "a": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
@@ -6866,6 +7246,21 @@
   {
    "de": "concepto:genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
    "a": "concepto:perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
+   "a": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
+   "a": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
+   "a": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
    "tipo": "enlaza"
   },
   {
@@ -6909,6 +7304,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "a": "concepto:control-de-acceso-basado-en-roles-y-propiedad-requireauth-re",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:github-flow-como-modelo-de-ramificacion-del-proyecto",
    "a": "tema:git",
    "tipo": "trata"
@@ -6931,6 +7336,16 @@
   {
    "de": "concepto:github-flow-como-modelo-de-ramificacion-del-proyecto",
    "a": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:github-flow-como-modelo-de-ramificacion-del-proyecto",
+   "a": "concepto:convencion-de-mensajes-de-commit-en-espanol-con-identificado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:github-flow-como-modelo-de-ramificacion-del-proyecto",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
    "tipo": "enlaza"
   },
   {
@@ -6979,6 +7394,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:glosario-tecnico-del-proyecto-22-terminos-definidos",
+   "a": "concepto:definicion-de-hecho-dod-para-tareas-hitos-y-fases",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:glosario-tecnico-del-proyecto-22-terminos-definidos",
+   "a": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -7024,6 +7449,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -7056,6 +7491,21 @@
   {
    "de": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
    "a": "decision:tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
+   "a": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
+   "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
+   "a": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
    "tipo": "enlaza"
   },
   {
@@ -7094,6 +7544,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "concepto:manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui",
+   "a": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui",
+   "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui",
+   "a": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:maquina-de-estados-de-la-cuenta-de-usuario",
    "a": "tema:autenticación",
    "tipo": "trata"
@@ -7124,6 +7589,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:maquina-de-estados-de-la-cuenta-de-usuario",
+   "a": "concepto:gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:maquina-de-estados-de-la-cuenta-de-usuario",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:maquina-de-estados-de-la-cuenta-de-usuario",
+   "a": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:modulos-del-backend-y-sus-responsabilidades",
    "a": "tema:backend",
    "tipo": "trata"
@@ -7151,6 +7631,16 @@
   {
    "de": "concepto:modulos-del-backend-y-sus-responsabilidades",
    "a": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "a": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
    "tipo": "enlaza"
   },
   {
@@ -7189,6 +7679,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante",
    "a": "tema:grada-colchonera",
    "tipo": "trata"
@@ -7219,6 +7724,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante",
+   "a": "concepto:gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante",
+   "a": "concepto:maquina-de-estados-de-la-cuenta-de-usuario",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante",
+   "a": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -7227,6 +7747,21 @@
    "de": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
    "a": "tema:orquestador",
    "tipo": "trata"
+  },
+  {
+   "de": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
+   "a": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
+   "a": "dato:campos-de-proyecto-json-y-su-proposito",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
+   "a": "concepto:estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage",
@@ -7269,6 +7804,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "concepto:seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage",
+   "a": "concepto:gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage",
+   "a": "concepto:control-de-acceso-basado-en-roles-y-propiedad-requireauth-re",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
    "a": "tema:diseno-juego",
    "tipo": "trata"
@@ -7302,6 +7852,21 @@
    "de": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
+   "a": "concepto:sistema-de-rarezas-y-36-jugadores-pbi-p38",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
+   "a": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:sistema-de-rarezas-y-36-jugadores-pbi-p38",
@@ -7339,6 +7904,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:sistema-de-rarezas-y-36-jugadores-pbi-p38",
+   "a": "concepto:cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:sistema-de-rarezas-y-36-jugadores-pbi-p38",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
    "a": "tema:anexo",
    "tipo": "trata"
@@ -7361,6 +7936,21 @@
   {
    "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
    "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
    "tipo": "enlaza"
   },
   {
@@ -7387,6 +7977,21 @@
    "de": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
+   "a": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
+   "a": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
@@ -7424,6 +8029,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -7456,6 +8071,21 @@
   {
    "de": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
    "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "a": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "a": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "a": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
    "tipo": "enlaza"
   },
   {
@@ -7499,6 +8129,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "a": "concepto:anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "a": "concepto:capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "a": "concepto:convencion-de-mensajes-de-commit-en-espanol-con-identificado",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:campos-de-proyecto-json-y-su-proposito",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -7521,6 +8166,16 @@
   {
    "de": "dato:campos-de-proyecto-json-y-su-proposito",
    "a": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:campos-de-proyecto-json-y-su-proposito",
+   "a": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:campos-de-proyecto-json-y-su-proposito",
+   "a": "concepto:estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
    "tipo": "enlaza"
   },
   {
@@ -7569,6 +8224,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo",
+   "a": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo",
+   "a": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo",
+   "a": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
    "a": "tema:data",
    "tipo": "trata"
@@ -7601,6 +8271,21 @@
   {
    "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
    "a": "dato:tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
+   "a": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
+   "a": "concepto:genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
+   "a": "concepto:arquitectura-del-juego-simulacion-determinista-presentacion",
    "tipo": "enlaza"
   },
   {
@@ -7651,6 +8336,21 @@
   {
    "de": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
    "a": "decision:fase-2-defensa-sus-tex-en-beamer-con-conclusiones-generadas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
+   "a": "concepto:arquitectura-de-calculos-en-lualatex-para-plantilla-sus",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
+   "a": "concepto:cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
+   "a": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
    "tipo": "enlaza"
   },
   {

@@ -5,9 +5,9 @@ temas: ["latex", "maquetacion", "reglas-tfg", "maquetación"]
 claves: ["regla 10", "imágenes repetidas", "ref cruzadas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-17"
 ---
 
 Temas: [[latex]] · [[maquetacion]] · [[reglas-tfg]]
@@ -24,8 +24,8 @@ Las capturas de DoneTonic, producción, prueba técnica y Hito 4 deben aparecer 
 - Prueba técnica permitido (`01-dominio-permitido`): canónico en **05-evaluacion.tex** (fig:prueba-tecnica-permitido)
 En los demás capítulos, usar `\ref{fig:...}` en lugar de `\includegraphics`.
 
-> Regla 10: Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone `\ref` a la figura que ya existe.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> 10. **Sin figuras repetidas:** cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone `\ref` a la figura que ya existe.
+> — `memoria/reglas-tfg.md`
 
 ## Ampliación (2026-11-16, memoria-procesos)
 Regla 10 de Javier: ninguna imagen se repite en el PDF. Se elige un capítulo canónico donde la imagen tiene más sentido (donde se explica por primera vez). En los demás capítulos se sustituye la inclusión de la imagen por una referencia cruzada (`\ref{fig:...}`) y, si es necesario, una breve mención («como se muestra en la Figura~\ref{fig:...}»). Esto evita duplicados y mantiene el PDF ligero.

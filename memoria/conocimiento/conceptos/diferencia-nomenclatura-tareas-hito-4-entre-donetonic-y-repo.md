@@ -5,7 +5,7 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum", "sprint"]
 claves: ["Hito 4", "DoneTonic", "ramas", "T21-T26", "nomenclatura"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -17,6 +17,8 @@ Discrepancia documentada: DoneTonic usa nombres descriptivos de tarea (T21 Regis
 > > **Hito 4.** En DoneTonic las tareas del Hito 4 se llaman por lo que hacen (T21 *Registrar app OAuth*, T22 *Flujo login OAuth*, T23 *Servicio correo*, T24 *Flujo confirmación*, T25 *Errores backend* y T26 *Mensajes frontend*). En el repositorio el trabajo se repartió en cinco ramas (`hito-4/T22-google-oauth` #40, `T23-correo` #38, `T24-confirmacion` #39, `T25-secretos-hito4` #37 y `T26-privacidad` #41). El manejo de errores (P17) está repartido por las cinco. Las seis tareas se marcaron como hechas en DoneTonic al cerrar el Sprint 1.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]]: La nota A afirma que las seis tareas del Hito 4 se marcaron hechas en DoneTonic **al cerrar el Sprint 1**. La nota B indica una **Primera entrega el 12/10/2026** (con Hitos 1–3 + P18 + P19, estos dos del Hito 4) y que el **Hito 4 se completó el 23/10/2026**, lo que sugiere que el cierre del Sprint 1 (o su entrega principal) ocurrió el 12/10, once días antes de terminar el Hito 4.

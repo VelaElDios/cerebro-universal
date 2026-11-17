@@ -17,6 +17,6 @@ La plantilla de la ESIIAB-UCLM exige incluir un anexo específico que documente 
 > Anexo sobre el uso responsable de la IA.
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[fuente-reglas-tfg]]
+Relacionado: [[fuente-reglas-tfg]] · [[capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[convencion-de-mensajes-de-commit-en-espanol-con-identificado]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

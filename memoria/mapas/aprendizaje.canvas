@@ -1,9 +1,32 @@
 {
-	"nodes":[
-		{"id":"proyecto:aprendizaje","type":"file","file":"proyectos/aprendizaje/bitacora.md","x":-534,"y":341,"width":380,"height":130,"color":"6"},
-		{"id":"tema:conocimiento","type":"file","file":"memoria/temas/conocimiento.md","x":188,"y":-214,"width":364,"height":110,"color":"5"}
-	],
-	"edges":[
-		{"id":"e0","fromNode":"proyecto:aprendizaje","toNode":"tema:conocimiento","color":"6","fromSide":"top","toSide":"bottom"}
-	]
+ "nodes": [
+  {
+   "id": "proyecto:aprendizaje",
+   "type": "file",
+   "file": "proyectos/aprendizaje/bitacora.md",
+   "x": -535,
+   "y": 313,
+   "width": 380,
+   "height": 130,
+   "color": "6"
+  },
+  {
+   "id": "tema:conocimiento",
+   "type": "file",
+   "file": "memoria/temas/conocimiento.md",
+   "x": 176,
+   "y": -239,
+   "width": 380,
+   "height": 110,
+   "color": "5"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e0",
+   "fromNode": "proyecto:aprendizaje",
+   "toNode": "tema:conocimiento",
+   "color": "6"
+  }
+ ]
 }

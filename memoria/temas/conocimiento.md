@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "conocimiento"
-notas: 3
+notas: 5
 ---
 # conocimiento
 
@@ -10,6 +10,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «conocimiento» (este arch
 ## Proyectos
 
 - 📁 [[proyectos/aprendizaje/bitacora|aprendizaje]]
+- 📁 [[proyectos/jardinero/bitacora|jardinero]]
+- 📁 [[proyectos/preguntas/bitacora|preguntas]]
 
 ## Conceptos
 

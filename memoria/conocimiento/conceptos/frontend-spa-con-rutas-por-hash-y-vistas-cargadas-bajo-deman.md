@@ -17,4 +17,6 @@ SPA de una página con enrutado por hash (`public/js/ui.js`): rutas `#/` (inicio
 > SPA con rutas por hash (public/js/ui.js): #/ inicio, #/entrar, #/registro, #/perfil, #/jugar y #/admin, y una vista 404 («Fuera de juego»). Cada ruta declara si es protegida, solo para invitados o solo para administradores; la interfaz redirige, pero la protección real está en el servidor.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
+Relacionado: [[modulos-del-backend-y-sus-responsabilidades]] · [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

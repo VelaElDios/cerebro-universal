@@ -22,6 +22,6 @@ Frontend (`ui.js`) solo oculta botones/enlaces; la seguridad real está en el se
 > `requireAuth` (`401`), `requireRole` y `requireSelfOrRole` (`403`). La interfaz solo oculta los enlaces
 > — `repo:saas/docs/revision-entrega.md`
 
-Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[modulos-del-backend-y-sus-responsabilidades]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -17,6 +17,6 @@ Requisito técnico: todas las referencias (libros, papers, docs técnicos, RFCs,
 > Utilizar un gestor bibliográfico (BibTeX).
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[fuente-reglas-tfg]]
+Relacionado: [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[fuente-reglas-tfg]] · [[anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg]] · [[capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf]] · [[convencion-de-mensajes-de-commit-en-espanol-con-identificado]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

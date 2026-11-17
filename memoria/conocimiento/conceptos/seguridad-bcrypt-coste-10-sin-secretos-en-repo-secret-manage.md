@@ -22,4 +22,6 @@ Temas: [[bcrypt]] · [[grada-colchonera]] · [[procesos]] · [[saas]] · [[secre
 > Solo variables de entorno: Secret Manager en Cloud Run y `.env` (ignorado por git) en local. En producción la aplicación no arranca si falta un secreto
 > — `repo:saas/docs/revision-entrega.md`
 
+Relacionado: [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[control-de-acceso-basado-en-roles-y-propiedad-requireauth-re]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
