@@ -1,11 +1,19 @@
 ---
 tipo: "tema"
 titulo: "testing"
-notas: 3
+notas: 5
 ---
 # testing
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «testing» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/verificacion-de-correccion-numerica-entre-version-base-y-opt|Verificación de corrección numérica entre versión base y optimizada ILP]]
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/verificacion-de-correccion-mediante-checksum-identico-en-las|Verificación de corrección mediante checksum idéntico en las cuatro variantes]]
 
 ## Conceptos
 
@@ -18,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «testing» (este archivo s
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[calidad]] · [[node-test]] · [[procesos]] · [[metricas]]
+[[grada-colchonera]] · [[saas]] · [[ac]] · [[calidad]] · [[node-test]] · [[procesos]] · [[metricas]] · [[validacion]] · [[floating-point]] · [[verificacion]]

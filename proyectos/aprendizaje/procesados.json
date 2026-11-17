@@ -18,23 +18,23 @@
   ]
  },
  "../../memoria/reglas-tfg.md": {
-  "md5": "f6445135154591438f267076330ad468",
+  "md5": "81cd06bc107de658853f5ab51c837272",
   "hechos": 1,
   "total": 1,
   "notas": [
-   "agrupar-capturas-con-subfigure",
-   "cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
-   "como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
-   "figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
-   "flechas-reales-en-captions-y-texto-rightarrow",
-   "que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
-   "quitar-las-paginas-en-blanco-entre-capitulos",
-   "tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
-   "titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
-   "una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia"
+   "dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
+   "diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
+   "diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
+   "figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
+   "flechas-reales-en-captions-y-texto-rightarrow-nunca",
+   "formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
+   "portada-unica-oficial-del-tfg-elements-portada-tex",
+   "sin-figuras-repetidas-usar-ref-a-la-figura-existente",
+   "sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar",
+   "tablas-largas-en-longtable-con-ultima-fila-acompanada"
   ],
   "resumenes": [
-   "Este trozo define las reglas fijas de formato para la memoria del TFG (Sprint 3 en adelante) usando la plantilla ESIIAB-UCLM. Cubre portada única oficial, prohibición de modificar la plantilla, estilos de títulos, eliminación de páginas en blanco, reglas de tablas (columnas p, addlinespace, longtable), gestión de figuras (alturas máximas, flotantes relajados, sin repeticiones, flechas reales), contenido por sprint, prosa narrativa en lugar de listas de capturas, y verificación automática con `revisar_maquetacion.py` más revisión manual."
+   "Este trozo define las reglas fijas de formato y contenido para la memoria del TFG usando la plantilla ESIIAB-UCLM. Cubre portada, tablas, figuras, diagramas, alcance por sprint, estilo de redacción y verificación automática con script. Son reglas obligatorias desde el Sprint 3; incumplir alguna impide marcar la memoria como terminada."
   ]
  },
  "repo:saas/docs/documentacion-tecnica.md": {
@@ -280,5 +280,432 @@
   "hechos": 0,
   "total": 0,
   "notas": []
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp": {
+  "md5": "621f0849e1f2b89ca368294883408647",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults",
+   "como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria",
+   "construccion-de-permutacion-aleatoria-en-ciclo-para-pointer",
+   "medicion-de-latencia-con-50-millones-de-accesos-dependientes",
+   "parametros-fijos-del-benchmark-semilla-accesos-formato-salid",
+   "prevencion-de-eliminacion-de-codigo-muerto-dce-en-benchmark",
+   "rango-de-working-set-4-kib-a-256-mib-en-potencias-de-2",
+   "tecnica-pointer-chasing-para-medir-latencia-real-de-memoria"
+  ],
+  "resumenes": [
+   "Este trozo implementa un benchmark de latencia de memoria usando la técnica de \"pointer chasing\" (persecución de punteros). Mide la latencia media de acceso variando el tamaño del working set desde 4 KiB hasta 256 MiB (potencias de 2), realizando 50 millones de accesos dependientes por medición para evitar ejecución fuera de orden (OoO) y prefetching. Incluye calentamiento (warm-up) para poblar la TLB y evitar page faults, y previene la eliminación de código muerto (DCE) forzando el uso del resultado final."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_pintarLatvsMem.py": {
+  "md5": "5ddce6b6991a139195875bcae2269de6",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "anotacion-automatica-de-valores-sobre-puntos-en-matplotlib",
+   "como-graficar-latencia-vs-working-set-con-jerarquia-de-cache",
+   "configuracion-de-ejes-log-lineal-y-etiquetas-de-potencias-de",
+   "patron-de-salto-de-latencia-en-fronteras-de-cache",
+   "tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script",
+   "uso-de-step-plot-post-superpuesto-a-linea-continua-para-most",
+   "working-set-size-vs-memory-access-latency-experiment"
+  ],
+  "resumenes": [
+   "Script de Python para la práctica de Arquitectura de Computadores que genera una gráfica de latencia de acceso a memoria frente al tamaño del working set. Incluye dos subgráficas: una vista completa de la jerarquía de memoria (L1, L2, L3, RAM) con escala logarítmica, y un zoom lineal en L1 y L2. El código usa regiones de color (axvspan) para delimitar cada nivel de caché, líneas verticales discontinuas en los límites, y superpone una línea continua con un gráfico de escalones anotado con los valores numéricos de latencia."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_3_pintarRoofLin.py": {
+  "md5": "adf4bf043310f6083b244ac5856fd2da",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "calculo-de-flops-ciclo-para-avx2-con-fma",
+   "como-generar-el-grafico-roofline-mononucleo-con-python",
+   "como-guardar-el-grafico-roofline-como-archivo-png-en-lugar-d",
+   "como-obtener-los-parametros-reales-de-tu-maquina-para-el-roo",
+   "eleccion-de-eje-x-logaritmico-logspace-2-a-3-para-cubrir-4-o",
+   "formula-del-techo-roofline-mononucleo",
+   "interpretacion-de-regiones-memory-bound-vs-compute-bound-en",
+   "parametros-de-ejemplo-del-script-cpu-4-9-ghz-ddr4-26-143-gb"
+  ],
+  "resumenes": [
+   "Script de Python para generar el modelo Roofline mononúcleo de una máquina concreta. Define la frecuencia de CPU (4.9 GHz) y el ancho de banda DRAM (26.143 GB/s), calcula el tope de cómputo teórico (32 FLOPs/ciclo con AVX2+FMA) y dibuja en escala log-log la curva techo: rampa limitada por memoria (BW × intensidad aritmética) y horizontal limitada por cómputo (GFLOPS máximos)."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_patrones.cpp": {
+  "md5": "3e3e875077a47f201abb5f95b8c2b318",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso",
+   "como-hacer-benchmark-estadistico-con-hyperfine-entre-patrone",
+   "como-interpretar-ipc-y-tasas-de-fallo-de-cache-para-cada-pat",
+   "como-medir-contadores-hardware-con-perf-stat-para-comparar-p",
+   "parametros-del-experimento-tamano-de-datos-bloque-y-repetici",
+   "patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s",
+   "patron-secuencial-localidad-espacial-y-prefetcher-hardware",
+   "patron-temporal-localidad-temporal-maxima-reutilizando-un-bl",
+   "tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache",
+   "uso-de-semilla-fija-42-en-mt19937-para-reproducibilidad-del"
+  ],
+  "resumenes": [
+   "Este trozo implementa un programa en C++ para analizar tres patrones de acceso a memoria (secuencial, temporal y aleatorio) sobre un vector de 512 MiB (2^26 enteros de 64 bits). Incluye instrucciones de compilación, ejecución, profiling con `perf stat` (ciclos, instrucciones, referencias y fallos de caché L1) y benchmarking con `hyperfine`. El código está diseñado para medir el impacto de la localidad de datos en contadores hardware."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py": {
+  "md5": "50173e94a4872a66520718573dbfb0e6",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "calculo-de-flops-por-ciclo-en-x86-con-avx2-fma",
+   "como-anotar-puntos-en-grafica-log-log-sin-solapar-etiquetas",
+   "como-obtener-parametros-de-hardware-para-el-modelo-roofline",
+   "como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log",
+   "eleccion-de-colores-para-zonas-memory-bound-y-compute-bound",
+   "punto-de-inflexion-knee-del-modelo-roofline-i-knee-gflops-ma",
+   "valores-de-ejemplo-para-cpu-del-laboratorio-frecuencia-bw-pu"
+  ],
+  "resumenes": [
+   "Script Python para la práctica de Arquitectura de Computadores (ESII) que genera el modelo Roofline mononúcleo con puntos de operación medidos. Calcula automáticamente el techo de cómputo (GFLOPS_MAX) y el punto de inflexión (I_KNEE) a partir de la frecuencia CPU y ancho de banda DRAM, dibuja las zonas memory-bound (rosa) y compute-bound (verde), y representa tres patrones de acceso (temporal, secuencial, aleatorio) con anotaciones desplazadas para evitar solapamiento."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_1_lista.cpp": {
+  "md5": "42dc215a2f93180774dd58f64f285f99",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-compilar-y-medir-lista-vs-vector-con-g-o2-hyperfine-y-p",
+   "como-fusionar-dos-bucles-en-uno-solo-para-aprovechar-localid",
+   "como-transformar-std-list-a-std-vector-con-reserva-previa-pa",
+   "parametros-del-experimento-lista-vs-vector-n-20m-media-50-0f",
+   "pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector",
+   "por-que-fusionar-bucles-de-normalizacion-y-suma-de-cuadrados"
+  ],
+  "resumenes": [
+   "Este trozo es el código base ineficiente de la Tarea 3.1 de Arquitectura de Computadores (Prácticas 3 y 4). Usa `std::list` para almacenar 20 millones de lecturas de sensor, las normaliza en un primer bucle y acumula la suma de cuadrados en un segundo bucle. El comentario explica los problemas: *pointer chasing* por nodos dispersos en heap, una asignación dinámica por `push_back`, y pérdida de localidad temporal al recorrer dos veces los datos. Incluye instrucciones para crear una versión optimizada con `std::vector`, `.reserve(N)` y fusión de bucles, y cómo compilar y medir con `hyperfine` y "
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp": {
+  "md5": "7e2985b757c60555b013a082320ff0f6",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache",
+   "compilar-con-o2-y-medir-con-perf-hyperfine-en-la-practica-ac",
+   "cuando-preferir-aos-sobre-soa-en-la-practica",
+   "parametros-fijos-del-experimento-aos-soa-tarea-3-2",
+   "transformar-aos-a-soa-en-el-laboratorio-ac-tarea-3-2"
+  ],
+  "resumenes": [
+   "Este trozo es el código base (AoS) de la práctica 3.2 de Arquitectura de Computadores: un vector de 60 millones de estructuras `Particula` de 16 bytes donde solo se suma el campo `id`, desperdiciando el 75 % del ancho de banda de caché. Incluye los TODOs para transformar a SoA, compilar con -O2 y medir con `perf`/`hyperfine`."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp": {
+  "md5": "dabd3ffdbb85dfa342ce92a1a5118258",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst",
+   "optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul",
+   "parametros-fijos-del-experimento-ilp-n-100m-tipo-double-valo",
+   "por-que-o1-evita-que-el-compilador-enmascare-la-optimizacion",
+   "romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s",
+   "uso-de-double-en-lugar-de-float-para-acumulacion-en-experime",
+   "verificacion-de-correccion-numerica-entre-version-base-y-opt"
+  ],
+  "resumenes": [
+   "Este trozo contiene el código base de la práctica 4.1 de Arquitectura de Computadores sobre Paralelismo a Nivel de Instrucción (ILP). El programa evalúa cómo una cadena de dependencias secuencial (sumA += v[i]) limita el rendimiento del pipeline al estancar las ALUs. La tarea del alumno es optimizarlo mediante desenrollado de bucle manual (unrolling factor 4) con 4 acumuladores independientes para romper la cadena de dependencias, compilando con -O1 para evitar que el compilador optimice automáticamente, y comparando rendimiento con hyperfine y perf."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_2_branchless.cpp": {
+  "md5": "814fd0eaad1c8daf022c0ca201abd343",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-forzar-un-salto-condicional-real-en-gcc-para-medir-pred",
+   "cuando-no-usar-branchless-trade-off-latencia-vs-previsibilid",
+   "parametros-fijos-del-experimento-de-branchless-tamanio-repet",
+   "patron-branchless-suma-condicional-mediante-multiplicacion-p",
+   "penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup",
+   "por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per",
+   "verificacion-de-correccion-mediante-checksum-identico-en-las"
+  ],
+  "resumenes": [
+   "Este trozo implementa un experimento de arquitectura de computadores que compara el rendimiento de código con salto condicional (`if (x >= 128)`) frente a una versión branchless usando aritmética condicional. El código genera datos aleatorios (semilla 42), los ordena, y mide cuatro configuraciones: con salto en datos desordenados/ordenados y sin salto en ambos. Los atributos `__attribute__((optimize(...)))` fuerzan al compilador a mantener el salto real para que el predictor de ramas sea probado. La verificación exige que los cuatro checksums coincidan."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Practica3.pdf": {
+  "md5": "e796343353fb637378509f8706b2f156",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "calculo-de-flops-totales-para-el-kernel-de-la-tarea-2-1",
+   "calculo-de-intensidad-aritmetica-eje-x-flops-byte-con-perf-c",
+   "calculo-del-rendimiento-real-eje-y-gflops-s-con-hyperfine",
+   "como-benchmarkear-y-perfilar-patrones-de-acceso-con-hyperfin",
+   "como-calcular-y-representar-puntos-de-patrones-en-el-grafico",
+   "como-caracterizar-la-topologia-hardware-con-lstopo-tarea-1-1",
+   "como-generar-el-modelo-roofline-del-procesador-con-lscpu-y-s",
+   "como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset",
+   "eventos-de-hardware-disponibles-en-perf-stat-para-analisis-d",
+   "fijar-ejecucion-en-un-unico-nucleo-con-taskset-para-evitar-m",
+   "mapeo-de-patrones-de-acceso-en-el-grafico-roofline",
+   "punto-de-inflexion-ridge-point-en-el-modelo-roofline",
+   "tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t"
+  ],
+  "resumenes": [
+   "Este trozo describe la Práctica 3 de Arquitectura de Computadores (curso 2026/27), centrada en la interacción software-hardware para optimizar el rendimiento. La Parte I (Lab3) cubre: caracterización de la topología hardware con `lstopo`, medición de latencia de memoria mediante *pointer chasing* y análisis de desbordes de caché, construcción del modelo Roofline del procesador usando `lscpu` y el benchmark STREAM, y evaluación de tres patrones de acceso a memoria (temporal, espacial, aleatorio) con `hyperfine` y `perf stat` para cuantificar tiempos, fallos de caché y posicionarlos en el gráfic",
+   "Este trozo define el punto de inflexión (ridge point) del modelo Roofline y detalla las fórmulas para mapear patrones de acceso (Temporal, Secuencial, Aleatorio) en la gráfica: cálculo de FLOPs totales, rendimiento real en GFLOPs/s (eje Y) e intensidad aritmética en FLOPs/Byte (eje X) usando cache-misses de perf y líneas de 64 Bytes."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Practica4.pdf": {
+  "md5": "36eb77a6d6f6004dab4dd6c16ef67b66",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "benchmarking-comparativo-con-hyperfine-warmup-y-comillas",
+   "como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per",
+   "compilar-con-o1-para-desactivar-auto-unrolling-y-reordenacio",
+   "desenrollado-manual-manual-unrolling-con-4-acumuladores-para",
+   "instalacion-y-uso-rapido-de-lstopo-hwloc-para-topologia-de-m",
+   "mapeo-de-patrones-de-acceso-en-grafico-roofline-gflops-s-y-f",
+   "parametros-fijos-del-experimento-20-millones-de-lecturas-n-m",
+   "perf-stat-con-contadores-clave-de-rendimiento-caches-ramas-t",
+   "pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector",
+   "porcentaje-de-aprovechamiento-de-linea-de-cache-en-aos-acced",
+   "predictor-de-saltos-por-que-datos-ordenados-vs-desordenados",
+   "programacion-branchless-reemplazar-if-condicional-por-aritme",
+   "punto-de-inflexion-knee-del-modelo-roofline-mononucleo",
+   "tarea-3-2-aos-vs-soa-marcada-como-opcional-en-anexo-c",
+   "transformacion-aos-a-soa-para-optimizacion-de-cache-esquema"
+  ],
+  "resumenes": [
+   "Esta práctica de Arquitectura de Computadores (Parte II) enseña a optimizar rendimiento mediante diseño cache-friendly (vector frente a lista), paralelismo a nivel de instrucción (desenrollado manual con 4 acumuladores para romper cadenas de dependencia) y programación sin saltos (branchless) para evitar fallos del predictor de ramas. Se usan hyperfine y perf con contadores hardware (cache-misses, IPC, ciclos) compilando a -O1 para desactivar optimizaciones automáticas y medir el efecto puro de las transformaciones de código.",
+   "Este trozo define las herramientas de análisis de rendimiento (lstopo, Hyperfine, Perf) con sus comandos de instalación y uso, detalla el cálculo del punto de inflexión y el mapeo de patrones de acceso en el modelo Roofline (rendimiento real en GFLOPs/s e intensidad aritmética en FLOPs/Byte a partir de contadores de caché), y describe la tarea de optimización estructural AoS→SoA con esquema de código, comparación de versiones y pregunta sobre aprovechamiento de línea de caché."
+  ]
+ },
+ "repo:datos/temarios/AC/Tema1-Introduccion/Formulas.pdf": {
+  "md5": "3283110e3c700c48d2357ea932075fd5",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-calcular-ciclos-de-reloj-de-cpu-a-partir-de-instruccion",
+   "definicion-de-mflops-millones-de-operaciones-de-punto-flotan",
+   "definicion-de-mips-millones-de-instrucciones-por-segundo",
+   "definicion-de-speedup-como-razon-de-tiempos-de-ejecucion",
+   "ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura",
+   "ley-de-amdahl-para-speedup-con-mejora-parcial",
+   "relacion-entre-frecuencia-de-reloj-y-periodo-de-ciclo"
+  ],
+  "resumenes": [
+   "Hoja de fórmulas del Tema 1 de Arquitectura de Computadores (Grado en Ingeniería Informática). Define métricas básicas de rendimiento: speedup, frecuencia y período de reloj, ciclos de CPU, tiempo de ejecución (ecuación fundamental), ley de Amdahl, y tasas de instrucciones (MIPS) y operaciones de punto flotante (MFLOPS)."
+  ]
+ },
+ "repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf": {
+  "md5": "ba66d2a3e7c326b056bca10c6a805cd9",
+  "hechos": 5,
+  "total": 5,
+  "notas": [
+   "arquitectura-epic-ia64-y-procesadores-itanium",
+   "arquitectura-sisd-componentes-y-tecnicas-ilp-segmentacion-su",
+   "benchmarks-de-referencia-top500-flops-vs-green500-mflops-w",
+   "benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig",
+   "calculo-de-cpi-dado-frecuencia-de-reloj-y-conteo-de-instrucc",
+   "calculo-de-proporcion-de-tiempo-en-fp-dado-speedup-observado",
+   "calculo-de-reduccion-de-tiempo-total-al-mejorar-un-tipo-de-i",
+   "calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas",
+   "clasificacion-de-tipos-de-computadores-segun-requisitos-de-d",
+   "como-resolver-un-problema-de-la-ley-de-amdahl-con-fraccion-m",
+   "comparacion-de-dos-implementaciones-de-la-misma-isa-cpi-y-fr",
+   "comparativa-historica-data-star-trek-60-tflops-vs-top500-219",
+   "computadores-de-referencia-para-medicion-de-rendimiento-ultr",
+   "definicion-de-mflops-millones-de-operaciones-de-punto-flotan",
+   "definicion-de-mips-millones-de-instrucciones-por-segundo",
+   "determinar-si-es-posible-alcanzar-un-speedup-objetivo-mejora",
+   "distincion-entre-arquitectura-isa-y-organizacion-microarquit",
+   "ejemplos-de-misma-isa-distinta-organizacion-y-viceversa-fami",
+   "ejercicio-de-coste-efectividad-comparacion-de-sistemas-por-r",
+   "ejercicio-de-mejora-de-disco-duro-y-ley-de-amdahl-ej-23",
+   "ejercicio-de-participacion-en-clase-mejora-de-multiplicacion",
+   "ejercicios-de-cpi-mips-y-tiempo-de-ejecucion-con-mezcla-de-i",
+   "ejercicios-de-evaluacion-de-rendimiento-basados-en-ley-de-am",
+   "formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores",
+   "funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si",
+   "ley-de-amdahl-aplicada-a-optimizacion-de-compilador-para-com",
+   "ley-de-amdahl-formula-del-tiempo-de-ejecucion-nuevo",
+   "linpack-nucleo-de-benchmark-para-sistemas-cientificos-y-base",
+   "metricas-de-rendimiento-latencia-vs-throughput-ancho-de-band",
+   "procesadores-superescalares-definicion-origen-risc-ejemplos",
+   "resultados-specpower-ssj2008-para-amd-opteron-x4-2356-2-3-gh",
+   "suite-spec-cpu-2017-metricas-specspeed-y-specrate",
+   "taxonomia-de-flynn-sisd-misd-simd-mimd-y-criterio-de-clasifi",
+   "tendencias-de-paralelismo-en-arquitectura-actual-ilp-tlp-dlp",
+   "tipos-de-benchmarks-sinteticos-reales-nucleos-reducidos-y-su"
+  ],
+  "resumenes": [
+   "Este trozo presenta el Tema 1 de Arquitectura de Computadores (curso 2026/27): define arquitectura frente a organización (ISA vs microarquitectura), introduce métricas de rendimiento (latencia, ancho de banda, tiempo de ejecución, speedup), y desarrolla la fórmula del tiempo de CPU (instrucciones × CPI × duración de ciclo) con sus factores determinantes. Incluye ejemplos comparativos de procesadores Intel/AMD y referencias a benchmarks Top500/Green500.",
+   "Este trozo del temario de Arquitectura de Computadores (curso 2026/27) cubre la Ley de Amdahl con su fórmula y dos ejercicios numéricos (uno resuelto en clase y otro para entregar en Moodle), las definiciones y fórmulas de MIPS y MFLOPS, una comparativa histórica de potencia de cálculo (Data de Star Trek vs. TOP500 2026), y una taxonomía de benchmarks: sintéticos (Dhrystone, Whetstone), núcleos (Linpack, usado en TOP500), suites (SPEC CPU2006 con SPECint/SPECfp y TPC) y computadores de referencia (UltraSPARC II, DEC VAX 11/780, UNIVAC). Incluye una tabla de resultados SPEC para un AMD Opteron ",
+   "Este trozo cubre la medición de rendimiento con suites SPEC (CPU 2017 y SPECpower ssj2008), la clasificación de tipos de computadores según su ámbito (móviles, escritorio, servidores, clusters, empotrados), las tendencias de paralelismo (ILP, TLP, DLP, multinúcleo), la taxonomía de Flynn (SISD, MISD, SIMD, MIMD) y las técnicas clásicas para mejorar el monoprocesador: segmentación (pipelining), superescalar y VLIW, con ejemplos históricos (Pentium Pro/II, IBM 4361).",
+   "Este trozo presenta la arquitectura VLIW como alternativa al superescalar, detallando su funcionamiento (compilador empaqueta operaciones en instrucciones muy largas, ejecución paralela en unidades funcionales independientes) y el ejemplo EPIC/IA64 (Itanium e Itanium2). A continuación, se enumeran una serie de ejercicios de evaluación de rendimiento: aplicación de la ley de Amdahl (ganancia de velocidad por mejora de componentes), cálculo de CPI y MIPS con mezclas de instrucciones, comparación de coste-efectividad entre sistemas, y un problema de mejora de disco duro.",
+   "Este trozo contiene dos ejercicios de Arquitectura de Computadores (curso 2026/27). El Ejercicio 22 plantea cálculos de reducción de tiempo de ejecución por tipo de instrucción (coma flotante, enteros, load/store, saltos) y cálculo de CPI dado frecuencia y conteo de instrucciones. El Ejercicio 8 aplica la ley de Amdahl a la optimización de un compilador para instrucciones de coma flotante, preguntando por speedup máximo y proporción de tiempo en FP dado un speedup observado."
+  ]
+ },
+ "repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf": {
+  "md5": "63c9dea17e2b15c620d21a9108ab77a1",
+  "hechos": 4,
+  "total": 4,
+  "notas": [
+   "calculo-de-cpi-a-partir-de-tiempos-por-tipo-de-instruccion-y",
+   "calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas",
+   "calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co",
+   "calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion",
+   "calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab",
+   "calculo-de-tiempo-de-ejecucion-nuevo-y-speedup-con-mejora-fr",
+   "como-calcular-cpi-medio-y-mips-nativo-con-mezcla-de-instrucc",
+   "como-calcular-efectividad-en-coste-rendimiento-coste-entre-d",
+   "como-calcular-el-factor-de-mejora-necesario-k-para-un-speedu",
+   "como-calcular-la-fraccion-de-uso-requerida-para-un-speedup-o",
+   "como-calcular-mips-pico-peak-mips-eligiendo-la-instruccion-m",
+   "como-convertir-porcentaje-de-ganancia-speedup-a-factor-de-sp",
+   "como-expandir-la-cuenta-de-instrucciones-al-emular-punto-flo",
+   "comparacion-de-maquinas-por-tiempo-total-de-ejecucion-de-mul",
+   "despeje-de-fraccion-de-tiempo-mejorable-dado-speedup-objetiv",
+   "factor-de-mejora-necesario-para-speedup-objetivo-dado-ejerci",
+   "igualar-mips-entre-dos-maquinas-despejando-frecuencia-de-rel",
+   "igualar-rendimiento-de-dos-maquinas-ajustando-frecuencia-de",
+   "ley-de-amdahl-aplicada-a-mejora-de-disco",
+   "ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su",
+   "limitacion-de-mejora-en-fraccion-pequena-ley-de-amdahl",
+   "paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza",
+   "resultado-numerico-disco-4-mas-rapido-para-speedup-3-requier",
+   "seleccion-de-mejora-hardware-multiplicacion-vs-memoria-ejerc",
+   "seleccion-de-mejoras-mutuamente-excluyentes-con-ley-de-amdah",
+   "speedup-combinado-de-mejoras-independientes-en-fracciones-di",
+   "speedup-combinando-multiples-mejoras-independientes",
+   "speedup-con-cambio-simultaneo-de-cpi-y-frecuencia-de-reloj",
+   "uso-de-la-ley-de-amdahl-para-dimensionar-requisitos-de-uso-d",
+   "valores-de-referencia-cpi-por-clase-de-instruccion-en-maquin",
+   "valores-de-referencia-cpi-por-clase-en-dos-implementaciones"
+  ],
+  "resumenes": [
+   "Este trozo contiene 8 ejercicios resueltos del Tema 1 de Arquitectura de Computadores (curso 2026/27). Cubre métricas fundamentales de rendimiento: efectividad en coste (rendimiento/coste), MIPS pico y nativo, CPI ponderado por mezcla de instrucciones, ley de Amdahl para speedup con mejora parcial, expansión de cuenta de instrucciones al emular punto flotante en entero, y la paradoja de que mayor MIPS no implica menor tiempo de ejecución (Ejercicio 6).",
+   "Este trozo contiene la resolución de ejercicios 8 a 15 de Arquitectura de Computadores (Tema 1), centrados en la ley de Amdahl, cálculo de speedup, métricas MIPS/CPI y comparación de mejoras de hardware. Se aplican fórmulas de aceleración fraccionaria, tiempo de ejecución ponderado y rendimiento en MIPS nativos y de pico para dos máquinas con distinto CPI y frecuencia.",
+   "Este trozo contiene siete ejercicios resueltos de evaluación de rendimiento en arquitectura de computadores (Tema 1). Cálculos de speedup mediante la ley de Amdahl (ejercicios 16, 18), speedup con cambio de CPI y frecuencia de reloj (ejercicio 17), comparación de máquinas con distinto CPI y frecuencia (ejercicios 19, 20), análisis de tiempo total de ejecución y speedups relativos (ejercicio 21), y cálculo de CPI a partir de tiempos por tipo de instrucción (ejercicio 22). Todas las soluciones aplican la fórmula fundamental: Tiempo = Instrucciones × CPI / Frecuencia.",
+   "Este trozo presenta el Ejercicio 23 resuelto: se aplica la ley de Amdahl para calcular qué fracción del tiempo de ejecución debe usar el disco (ahora 4 veces más rápido) para lograr una aceleración global de 3×. La solución establece la ecuación 3 = T / (xT/4 + (1-x)T) y obtiene x = 0.89, es decir, el disco debe utilizarse el 89 % del tiempo."
+  ]
+ },
+ "repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf": {
+  "md5": "3bc3db23facdc77c6f470300cfb0afd8",
+  "hechos": 3,
+  "total": 3,
+  "notas": [
+   "adelantamiento-forwarding-para-riesgos-raw",
+   "avance-del-temario-tema-2-secciones-2-02-3-completadas",
+   "definicion-de-latencia-e-intervalo-de-iniciacion-en-pipeline",
+   "definicion-y-proposito-de-la-segmentacion-pipeline",
+   "dependencia-de-datos-verdadera-definicion-y-ejemplo-en-bucle",
+   "dependencias-de-nombre-antidependencia-y-salida-definicion-y",
+   "dos-estrategias-genericas-para-tratar-dependencias-de-datos",
+   "eliminacion-de-dependencias-de-control-mediante-desenrollado",
+   "isa-base-risc-v-rv64g-caracteristicas-principales",
+   "limitacion-del-adelantamiento-hazard-load-use-load-use-penal",
+   "limitaciones-del-paralelismo-en-bloques-basicos-y-solucion-a",
+   "organizacion-del-banco-de-registros-en-risc-v-rv64g",
+   "pipeline-risc-v-de-5-etapas-if-id-ex-mem-wb",
+   "problemas-en-segmentacion-de-coma-flotante-riesgos-estructur",
+   "relacion-ilp-y-cpi-en-procesadores-segmentados",
+   "renombrado-de-registros-para-eliminar-dependencias-de-nombre",
+   "riesgos-de-datos-en-risc-v-raw-waw-war",
+   "riesgos-estructurales-causas-y-ejemplo-banco-de-registros",
+   "speedup-ideal-vs-real-en-pipeline-y-formula-con-detenciones",
+   "tabla-de-latencia-e-intervalo-de-iniciacion-por-unidad-funci",
+   "tecnicas-avanzadas-estaticas-y-dinamicas-para-reducir-detenc",
+   "tecnicas-estaticas-basicas-para-reducir-detenciones-en-pipel",
+   "tipos-de-dependencia-y-riesgos-asociados-en-segmentacion",
+   "tipos-de-riesgos-en-pipeline-estructurales-datos-control",
+   "tres-tipos-de-dependencias-en-codigo-datos-nombre-y-control"
+  ],
+  "resumenes": [
+   "Este trozo cubre la introducción al Tema 2 de Arquitectura de Computadores (curso 2026/2027): repaso de la ISA RISC-V (RV64G, registros, formato de instrucciones) y repaso de segmentación (pipeline de 5 etapas IF/ID/EX/MEM/WB, incremento ideal de velocidad, fórmula de speedup con detenciones, y los tres tipos de riesgos —estructurales, de datos RAW/WAW/WAR y de control— con sus técnicas de mitigación: adelantamiento, detección de riesgos de carga-uso y resolución anticipada de saltos en ID).",
+   "Este trozo cubre los fundamentos de segmentación en coma flotante (latencias, intervalos de iniciación, riesgos estructurales y de datos), la formulación del CPI como CPIideal + detenciones, y un catálogo de técnicas estáticas y dinámicas para reducir detenciones. Introduce el concepto de ILP y su relación con el CPI, las limitaciones del paralelismo en bloques básicos (15 % saltos, 5-7 instrucciones/bloque) y la necesidad de explotar paralelismo a nivel de bucle. Finalmente, define y ejemplifica los tres tipos de dependencias: de datos (verdaderas), de nombre (antidependencia y dependencia de",
+   "Este trozo final del Tema 2 cierra la clasificación de dependencias y sus riesgos asociados (RAW, WAR, WAW, control), y presenta tres técnicas clave para mitigarlas: renombrado de registros (estático o dinámico) para dependencias de nombre, desenrollado de bucles / eliminación de saltos para dependencias de control, y dos estrategias genéricas para dependencias de datos (mantener la dependencia evitando el riesgo, o eliminarla transformando el código). También muestra el índice del tema con las secciones 2.0–2.3 ya cubiertas."
+  ]
+ },
+ "repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2_Prob_RISCV_rev.pdf": {
+  "md5": "fdd4198962cd6776f42aeda1cff7bd67",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "analisis-de-dependencias-en-codigo-risc-v-raw-war-waw",
+   "calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f",
+   "identificacion-de-dependencias-loop-carried-en-bucles-c-styl",
+   "parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult",
+   "tipos-de-dependencias-en-bucles-loop-independent-vs-loop-car"
+  ],
+  "resumenes": [
+   "Este trozo contiene 10 ejercicios resueltos (o para resolver) de la asignatura Arquitectura de Computadores, Tema 2: Paralelismo a nivel de instrucción. Cubren análisis de dependencias de datos (RAW), antidependencias (WAR) y dependencias de salida (WAW) en código RISC-V y bucles estilo C, identificación de dependencias entre iteraciones (loop-carried), y cálculo de detenciones (stalls) y CPR (Ciclos Por Resultado) en un pipeline RISC-V con unidades de punto flotante segmentadas (multiplicación 3 ciclos, división 4 o 6 ciclos) y adelantamiento de operandos."
+  ]
+ },
+ "repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf": {
+  "md5": "af0c8e03bde9909e9d1621bf8cf52802",
+  "hechos": 7,
+  "total": 14,
+  "notas": [
+   "bibliografia-canonica-para-planificacion-de-instrucciones-he",
+   "bloqueo-de-fadd-d-por-peligro-waw-en-registro-f6-hasta-ciclo",
+   "calculo-de-direcciones-y-offsets-en-bucles-vectoriales-risc",
+   "campos-qj-qk-rj-rk-en-el-estado-de-unidades-funcionales-del",
+   "como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg",
+   "como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador",
+   "como-leer-la-tabla-de-estado-de-unidades-funcionales-en-el-m",
+   "comparacion-de-tecnicas-de-planificacion-estatica-desenrolla",
+   "comparativa-de-ciclos-por-dato-bucle-original-vs-desenrollad",
+   "consideraciones-del-desenrollamiento-de-bucles-sobrecarga-ta",
+   "desenrollamiento-de-bucles-4x-con-planificacion-para-elimina",
+   "desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado",
+   "deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr",
+   "deteccion-y-resolucion-de-riesgo-war-en-el-marcador-ciclos-1",
+   "diferencia-fundamental-desenrollamiento-vs-segmentacion-soft",
+   "ejemplo-de-simulacion-del-marcador-con-instrucciones-de-punt",
+   "eliminacion-de-dependencias-de-nombre-mediante-renombrado-de",
+   "estado-de-registros-resultado-register-result-status-en-el-m",
+   "estructura-del-marcador-scoreboard-en-arquitectura-de-comput",
+   "estructuras-de-datos-del-marcador-scoreboard",
+   "implementacion-historica-del-marcador-en-cdc6600-1964",
+   "kernel-de-segmentacion-software-para-bucle-de-acumulacion-in",
+   "latencias-de-ejecucion-fp-en-el-ejemplo-del-marcador-ciclos",
+   "latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador",
+   "latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo-cic",
+   "latencias-y-forwarding-en-procesador-de-referencia-para-plan",
+   "limitacion-de-la-planificacion-estatica-que-motiva-la-planif",
+   "pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard",
+   "planificacion-de-trazas-trace-scheduling-para-condicionales",
+   "planificacion-dinamica-de-instrucciones-con-marcador-scorebo",
+   "planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui",
+   "registro-de-estado-de-resultados-result-register-status-en-e",
+   "representacion-del-estado-del-marcador-scoreboard-para-instr",
+   "salto-retardado-delayed-branch-en-planificacion-estatica",
+   "saltos-retardados-delayed-branches-en-planificacion-estatica",
+   "secuencia-exacta-de-ciclos-para-cada-instruccion-en-la-simul",
+   "secuencia-exacta-de-instrucciones-y-registros-del-ejemplo-de",
+   "segmentacion-software-software-pipelining-en-bucles-sin-depe",
+   "segmentacion-software-software-pipelining-para-suma-vectoria",
+   "segmentacion-software-software-pipelining-y-planificacion-de",
+   "semantica-de-los-campos-qj-qk-rj-rk-en-el-estado-de-uf",
+   "simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo",
+   "uso-de-ciclo-8a-8b-mitades-de-ciclo-para-modelar-escritura-y",
+   "ventajas-e-inconvenientes-de-la-planificacion-dinamica-frent"
+  ],
+  "resumenes": [
+   "Este trozo presenta el Tema 3 \"Planificación de instrucciones\" del curso de Arquitectura de Computadores 2026/2027. Cubre la planificación estática (desenrollamiento de bucles, segmentación software, planificación de trazas, saltos retardados) y dinámica (Marcador, Tomasulo). Incluye bibliografía de referencia (Hennessy & Patterson, Ortega et al.), define la planificación estática como reordenación por compilador para aumentar ILP reduciendo dependencias, y detalla un ejemplo completo de desenrollamiento de bucles 4x con código RISC-V-like, latencias de unidades funcionales, forwarding y renom",
+   "Este trozo cubre dos técnicas de planificación estática de instrucciones: desenrollamiento de bucles (loop unrolling) y segmentación software (software pipelining). Se muestran ejemplos concretos en ensamblador RISC-V de suma vectorial X = X + k, comparando bucles originales, desenrollados 4 veces, y con planificación de instrucciones para eliminar detenciones. Se detallan consideraciones (sobrecarga, tamaño de código, presión de registros) y la estructura de segmentación software con código de arranque (start-up), bucle principal y finalización (finish-up), incluyendo diagramas de uso de regi",
+   "Este trozo cubre técnicas de planificación estática de instrucciones: segmentación software (software pipelining) con ejemplo en RISC-V, planificación de trazas (trace scheduling) para bucles con condicionales, comparación de técnicas estáticas (desenrollamiento, segmentación software, planificación de trazas), saltos retardados (delayed branches) y la motivación para planificación dinámica (limitación de emisión en orden).",
+   "Este trozo explica la planificación dinámica de instrucciones mediante la técnica del Marcador (Scoreboard). Describe cómo se divide la etapa ID en emisión y lectura de operandos, permitiendo ejecución fuera de orden manteniendo la corrección. Detalla los cuatro pasos del Marcador (emisión, lectura operandos, ejecución, escritura resultado), sus estructuras de datos (estado instrucciones, unidades funcionales, registros resultado) y muestra un ejemplo paso a paso con ciclos en el CDC6600.",
+   "Este trozo muestra la evolución ciclo a ciclo (ciclos 3-9) de un marcador (scoreboard) para una secuencia de instrucciones de punto flotante (cargas, multiplicación, resta, división, suma). Se detalla el estado de cada instrucción (emisión, lectura operandos, ejecución, escritura), el estado de las unidades funcionales (Entera, Mult1, Mult2, Suma, Divide) con sus campos de dependencias (Qj, Qk, Rj, Rk), y el estado de registros resultado. En el ciclo 9 la instrucción `fadd.d f6, f8, f2` aparece «Bloqueada» por riesgos WAR/WAW sobre el registro f6.",
+   "Este trozo muestra una simulación ciclo a ciclo (ciclos 10-15) del algoritmo de Tomasulo / marcador (scoreboard) para una secuencia de instrucciones de punto flotante: dos cargas (fld), una multiplicación (fmul.d), una resta (fsub.d), una división (fdiv.d) y una suma (fadd.d). Se detalla el estado de las unidades funcionales (Entera, Mult1, Mult2, Suma, Divide), el estado de las instrucciones (emisión, lectura operandos, ejecución completa, escritura resultado) y el estado de registros resultado (qué unidad funcional escribirá en cada registro). La fadd.d queda bloqueada inicialmente por pelig",
+   "Este trozo muestra la evolución ciclo a ciclo (16-22) de un marcador (scoreboard/Tomasulo) para instrucciones de punto flotante: fld, fmul.d, fsub.d, fdiv.d y fadd.d. Se detallan los estados de emisión, lectura de operandos, ejecución y escritura de resultado, junto con el estado de unidades funcionales (Mult1, Suma, Divide) y el registro de resultados. Se observa un riesgo WAR (Write After Read) en el ciclo 17 que desaparece en el ciclo 21, y la larga latencia de la división (fdiv.d inicia en ciclo 8 y aún ejecuta en ciclo 22)."
+  ]
  }
 }

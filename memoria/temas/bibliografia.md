@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "bibliografia"
-notas: 9
+notas: 10
 ---
 # bibliografia
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibliografia» (este arch
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/bibliografia-canonica-para-planificacion-de-instrucciones-he|Bibliografía canónica para Planificación de instrucciones (Hennessy & Patterson, Ortega et al.)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg|Bibliografía gestionada con BibTeX en la memoria TFG]]
 - 📊 [[memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr|Referencia DoneTonic como herramienta de gestión ágil del proyecto]]
 - 📊 [[memoria/conocimiento/datos/referencia-paper-original-bcrypt-para-seguridad-de-contrasen|Referencia paper original bcrypt para seguridad de contraseñas]]
@@ -30,4 +31,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibliografia» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[bibtex]] · [[referencias]] · [[memoria]] · [[tfg]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]] · [[bcrypt]] · [[hash]] · [[seguridad]] · [[autenticacion]]
+[[latex]] · [[bibtex]] · [[referencias]] · [[ac]] · [[hennessy-patterson]] · [[loop-unrolling]] · [[ortega-anguita-prieto]] · [[scoreboard]] · [[tomasulo]] · [[memoria]] · [[tfg]] · [[donetonic]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tablas"
-notas: 5
+notas: 7
 ---
 # tablas
 
@@ -9,8 +9,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-cod|Formato de tablas: alineación superior, ancho controlado y código con path/texttt+allowbreak]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 - 🧪 [[memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace|Tablas de LaTeX que no se pisan (columnas p y addlinespace)]]
+- 🧪 [[memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada|Tablas largas en longtable con última fila acompañada (\\*)]]
 
 ## Lecciones (errores ya resueltos)
 
@@ -20,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[memoria]] · [[tfg]]
+[[latex]] · [[memoria]] · [[tfg]] · [[longtable]]

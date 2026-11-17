@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 12
+notas: 14
 ---
 # tikz
 
@@ -19,6 +19,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista|Diagramas: ninguna línea/flecha atraviesa cajas, codos y distancia suficiente]]
+
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
@@ -33,4 +38,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 ## Temas relacionados
 
-[[latex]] · [[pgfplots]] · [[lua]] · [[pgf-umlsd]] · [[secuencia]] · [[memoria]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]] · [[usabilidad]] · [[babel]]
+[[latex]] · [[pgfplots]] · [[memoria]] · [[lua]] · [[diagramas]] · [[tfg]] · [[pgf-umlsd]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]]

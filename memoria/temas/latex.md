@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 85
+notas: 96
 ---
 # latex
 
@@ -44,12 +44,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
+- 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-cod|Formato de tablas: alineación superior, ancho controlado y código con path/texttt+allowbreak]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]]
 - 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada|Reescribir frases «La figura X muestra…» como prosa integrada]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi|Resumen y Abstract en elements/preambulo.tex con formato oficial]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace|Tablas de LaTeX que no se pisan (columnas p y addlinespace)]]
+- 🧪 [[memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada|Tablas largas en longtable con última fila acompañada (\\*)]]
 - 🧪 [[memoria/conocimiento/recetas/trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c|Trampas técnicas comprobadas en LuaLaTeX (evitar errores de compilación)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm|Títulos en negro y negrita en la plantilla ESIIAB-UCLM]]
 - 🧪 [[memoria/conocimiento/recetas/una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia|Una imagen en un solo sitio, y en el resto una referencia]]
@@ -58,11 +60,19 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]]
+- ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir|Diagramas de secuencia: máx. 6 participantes (agrupar o partir)]]
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista|Diagramas: ninguna línea/flecha atraviesa cajas, codos y distancia suficiente]]
 - ⚖️ [[memoria/conocimiento/decisiones/escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e|Escalas de transformación SUS adoptadas (Sauro-Lewis, Bangor et al.)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/fase-2-defensa-sus-tex-en-beamer-con-conclusiones-generadas|Fase 2: defensa-sus.tex en Beamer con conclusiones generadas dinámicamente]]
+- ⚖️ [[memoria/conocimiento/decisiones/figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura|Figuras: ninguna página con una sola imagen (límites de altura y flotantes relajados)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow|Flechas reales en captions y texto ($\rightarrow$)]]
+- ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow-nunca|Flechas reales en captions y texto ($\rightarrow$), nunca ->]]
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
 - ⚖️ [[memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p|Paso 1 completado: preambulo.tex ya cumple regla 1 (una sola portada)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/portada-unica-oficial-del-tfg-elements-portada-tex|Portada única oficial del TFG (elements/portada.tex)]]
+- ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
+- ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
 
 ## Conceptos
 
@@ -111,8 +121,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 ## Documentos aprendidos
 
 - 📚 [[memoria/conocimiento/fuentes/fuente-reglas-tfg|reglas tfg]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-reglas-tfg-memoria|reglas tfg (memoria)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-spec|spec]]
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[lua]] · [[sus]] · [[usabilidad]] · [[maquetacion]] · [[figuras]] · [[pgf-umlsd]] · [[pgfplots]] · [[verificacion]] · [[tablas]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[lua]] · [[figuras]] · [[sus]] · [[usabilidad]] · [[maquetacion]] · [[pgf-umlsd]] · [[tablas]] · [[pgfplots]] · [[verificacion]]

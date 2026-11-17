@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "metricas"
-notas: 6
+notas: 7
 ---
 # metricas
 
@@ -13,6 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/comparativa-de-ciclos-por-dato-bucle-original-vs-desenrollad|Comparativa de ciclos por dato: bucle original vs desenrollado vs desenrollado+planificado vs segmentación software]]
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
@@ -24,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[verificacion]] · [[sprint]] · [[grada-colchonera]] · [[saas]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]] · [[datos]] · [[fuentes]] · [[juego]] · [[verificar]]
+[[verificacion]] · [[sprint]] · [[grada-colchonera]] · [[saas]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]] · [[ac]] · [[ciclos-por-dato]] · [[planificacion-estatica]] · [[rendimiento]]

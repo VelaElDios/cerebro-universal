@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "figuras"
-notas: 9
+notas: 11
 ---
 # figuras
 
@@ -17,6 +17,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia|Una imagen en un solo sitio, y en el resto una referencia]]
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura|Figuras: ninguna página con una sola imagen (límites de altura y flotantes relajados)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 
 ## Lecciones (errores ya resueltos)
 
