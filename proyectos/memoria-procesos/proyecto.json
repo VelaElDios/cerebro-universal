@@ -55,7 +55,7 @@
   "pasos": 23,
   "max_pasos": 60,
   "max_intentos": 3,
-  "ultima_ejecucion": "2026-11-17T16:19:01+01:00",
+  "ultima_ejecucion": "2026-11-17T17:52:46+01:00",
   "reglas": [
     "memoria/reglas-tfg.md"
   ]
