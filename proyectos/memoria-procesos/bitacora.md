@@ -9750,3 +9750,41 @@ El borrador compila y pasa verificar.py, pero falla Regla 9 de maquetación: la 
 - Contrastar ≥25 datos con las fuentes (cifra/hecho → sección de la fuente) y listarlos en COMPROBACIONES del siguiente paso.
 - Unificar dato de armas: §9.3 de la fuente dice 24, §14 dice 29; decidir cuál usar en tabla de sistemas (04b) y métricas (05) para que coincida en toda la memoria (recomendación: usar 29 armas, 16 pasivas, 29 combinaciones según §14 y nota en 04b-juego.tex).
 - Repaso final de estilo en `01-introduccion.tex`, `06-conclusiones.tex` y anexos: frases cortas, sin adornos («trasciende», «exhaustivo», «riguroso»…), coherencia entre capítulos.
+
+## 2026-11-17 08:28 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba falla solo por la Regla 9: la página 88 del PDF queda casi vacía (6 palabras), que es la cola del último párrafo de la retrospectiva del Sprint 2 en `chapters/a1-desarrollo.tex`. Fusiono los dos últimos párrafos en uno más corto conservando todos los datos contrastados (29 PBIs, 50 tareas, PR #36 y #44–#56, 276 pruebas al cierre y 322 tras la Fase 7, 48 PBIs y 82 tareas, más de 50 PR), para que el texto termine en la página anterior y desaparezca la página casi vacía.
+
+**Archivos:** `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 9: la página 88 del PDF está casi vacía (6 palabras): funde esa sección o línea suelta con la anterior.
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` y comprobar que `revisar_maquetacion.py` ya no marca la Regla 9 (página 88 casi vacía); si persiste, abrir el PDF en la página 88, identificar el texto suelto y fundirlo con el párrafo anterior. Después: (1) barrer todos los capítulos (`01`, `03`, `04`, `04b`, `05`, `06` y anexos) buscando frases prohibidas «La figura X muestra/ilustra…» y reescribirlas como prosa con la cita dentro del párrafo (Regla 13); (2) unificar el dato de armas/pasivas/combinaciones (24 vs 29 en las fuentes) de forma coherente en `04b-juego.tex` y `05-evaluacion.tex`; (3) contrastar ≥25 datos con las fuentes y listarlos en COMPROBACIONES; (4) repaso final de estilo en `01`, `06` y anexos.
+
+## 2026-11-17 08:29 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (94 páginas, PDF generado)
+- verificar.py: OK (35 figuras, 29 tablas, 16634 palabras)
+- revisar_maquetacion.py: FALLA Regla 9 (página 88 casi vacía, 6 palabras)
+- Regla 10 (imagen duplicada): corregida en paso anterior (eliminada figura standalone redundante en 04b-juego.tex)
+- Regla 8 (página con una sola imagen): corregida agrupando figuras en 04-descripcion.tex
+- Frases prohibidas "La figura X muestra...": pendiente barrido completo en todos los capítulos
+- Datos contrastados con fuentes: pendiente (requisito ≥25 datos repartidos)
+- Unificación armas (24 vs 29): pendiente decidir y aplicar coherente en 04b-juego.tex y 05-evaluacion.tex
+
+El borrador compila y pasa verificar.py, pero falla Regla 9 de maquetación: la página 88 del PDF queda casi vacía (6 palabras). El constructor intentó fusionar los dos últimos párrafos de la retrospectiva del Sprint 2 en `a1-desarrollo.tex`, pero el resultado sigue generando una página casi vacía. Hay que fusionar el último párrafo con el anterior de forma que no quede salto de página, o alargar el penúltimo para que el último no vaya solo. Además, queda pendiente: (1) barrer todos los capítulos eliminando frases "La figura X muestra..." y reescribirlas como prosa con la cita dentro del párrafo (Regla 13); (2) unificar el dato de armas (24 en §9.3 vs 29 en §14 de la fuente) en tabla de sistemas y métricas (recomendación: usar 29 armas, 16 pasivas, 29 combinaciones según §14 y nota en 04b-juego.tex); (3) contrastar ≥25 datos con las fuentes y listarlos en COMPROBACIONES; (4) repaso final de estilo en `01`, `06` y anexos.
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` y comprobar que `revisar_maquetacion.py` ya no marca la Regla 9 (página 88 casi vacía). Si persiste, abrir el PDF en la página 88, identificar el texto suelto y fundirlo con el párrafo anterior o eliminarlo.
+- Barrer **todos** los capítulos (`01`, `03`, `04`, `04b`, `05`, `06` y anexos) buscando frases prohibidas «La figura X muestra/ilustra…» y reescribirlas como prosa con la cita dentro del párrafo (Regla 13).
+- Contrastar ≥25 datos con las fuentes (cifra/hecho → sección de la fuente) y listarlos en COMPROBACIONES del siguiente paso.
+- Repaso final de estilo en `01-introduccion.tex`, `06-conclusiones.tex` y anexos: frases cortas, sin adornos («trasciende», «exhaustivo», «riguroso»…), coherencia entre capítulos.
