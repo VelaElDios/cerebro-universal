@@ -59,6 +59,25 @@ def _contexto(pregunta: str) -> str:
             f"# MAPA DEL CEREBRO\n{conocimiento.mapa_textual()}")
 
 
+def enlazar_titulos(texto: str) -> str:
+    """Las IAs enlazan por título ([[Arquitectura en capas…]]) y Obsidian necesita el nombre del archivo:
+    [[titulo]] → [[nombre-del-archivo|titulo]] cuando el título es de una nota que existe."""
+    por_titulo = {}
+    for n in conocimiento.todas():
+        por_titulo[conocimiento.normalizar(n.get("titulo", ""))] = n["nombre"]
+        por_titulo[conocimiento.normalizar(n["nombre"])] = n["nombre"]
+
+    def cambiar(m):
+        dentro = m.group(1)
+        if "|" in dentro:
+            return m.group(0)
+        nombre = por_titulo.get(conocimiento.normalizar(dentro))
+        if not nombre:
+            return m.group(0)
+        return f"[[{nombre}]]" if nombre == dentro else f"[[{nombre}|{dentro}]]"
+    return re.sub(r"\[\[([^\]]+)\]\]", cambiar, texto)
+
+
 def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
     config, proveedores = prov.cargar(nucleo.RAIZ / "config" / "ias.json")
     roles = config.get("roles", {})
@@ -76,6 +95,7 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
             nucleo.anotar(bitacora, "⚠️ Pregunta sin contestar", f"`{ruta.name}`: {e}")
             break
         usadas = conocimiento.ultimas_usadas()
+        respuesta = enlazar_titulos(respuesta)
         dataset.registrar(carpeta.name, "cerebro", "pregunta", ia, modelo, SISTEMA, mensaje, respuesta)
         with ruta.open("a", encoding="utf-8") as f:
             f.write(f"\n\n{MARCA} ({nucleo.ahora():%Y-%m-%d %H:%M} · {ia} · {modelo})\n\n{respuesta.strip()}\n\n"

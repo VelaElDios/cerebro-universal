@@ -10053,3 +10053,13 @@ Qué he corregido yo:
 ## 2026-11-17 15:48 · 🧠 Conocimiento guardado
 
 [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]]
+
+## Revisión humana (Javier)
+
+He revisado el borrador del 17/11. Los **diagramas** no están bien; arregladlos siguiendo las reglas nuevas 16, 17 y 18 de `memoria/reglas-tfg.md`:
+
+- **Figura 3.1 (arquitectura en capas):** la flecha vertical de la Lógica a las Integraciones atraviesa la caja «Datos (src/repositories)». Cada flecha tiene que ir de una caja a la siguiente sin cruzar ninguna. Además, en las cajas se parten las rutas («sr-c/services», «repo-sitories»): cajas más anchas o el texto en dos líneas.
+- **Diagramas de secuencia (por ejemplo, Figura 3.3, registro):** con 9 participantes salen diminutos y no se leen. Las letras tienen que verse como mínimo como las del pie de figura. Agrupad participantes (como mucho 6) o partid el diagrama en dos. Revisad todos los diagramas de secuencia, no solo este: el de la confirmación por correo, que viene justo después, sí se lee bien y es el tamaño que quiero.
+- **Figura 4.7 (arquitectura del juego):** la caja de config.js está pisada por la de juego.js, y las flechas verticales atraviesan todas las cajas (armas.js, combate.js...). Rehacedla con las cajas separadas y las flechas entre cajas, sin cruzar ninguna.
+
+Siempre: cualquier diagrama tiene que verse claro y a buen tamaño en el PDF.

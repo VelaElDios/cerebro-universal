@@ -86,6 +86,16 @@ for rel, tex in capitulos.items():
             usos[img].append(f"{rel}:{n}")
         if "\\caption" in linea and re.search(r"(?<![<$\\])->|<-(?!>)", linea):
             fallos.append(f"Regla 11: {rel}:{n}: caption con '->'; usa $\\rightarrow$.")
+# Diagramas de secuencia con demasiados participantes: salen diminutos al escalarlos (regla 16)
+for rel, tex in capitulos.items():
+    if rel not in activos:
+        continue
+    for m in re.finditer(r"\\begin\{sequencediagram\}(.*?)\\end\{sequencediagram\}", tex, re.S):
+        participantes = len(re.findall(r"\\new(?:thread|inst)\b", m.group(1)))
+        if participantes > 6:
+            linea = tex[:m.start()].count("\n") + 1
+            fallos.append(f"Regla 16: {rel}:{linea}: diagrama de secuencia con {participantes} participantes: "
+                          "escalado sale diminuto. Como mucho 6 (agrupa participantes o pártelo en dos).")
 for img, donde in usos.items():
     if len(donde) > 1:
         fallos.append(f"Regla 10: la imagen {img} sale {len(donde)} veces ({', '.join(donde)}). "

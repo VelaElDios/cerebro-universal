@@ -17,13 +17,15 @@ import math
 import os
 import re
 import struct
+import time
 from pathlib import Path
 
 from . import nucleo
+from . import proveedores as prov
 
 MODELOS = ["gemini-embedding-001", "text-embedding-004"]
 DIM = 256
-LOTE = 50                 # notas por petición
+LOTE = 25                 # notas por petición (la capa gratuita cuenta cada nota)
 MAX_CHARS_NOTA = 6000     # lo que se manda de cada nota (título + cuerpo)
 
 _cache_consultas: dict[str, list[float]] = {}
@@ -99,13 +101,20 @@ def _embeber(textos: list[str], tarea: str) -> tuple[list[list[float]], str]:
     cliente = genai.Client(api_key=clave, http_options=types.HttpOptions(timeout=120_000))
     ultimo = None
     for modelo in MODELOS:
-        try:
-            r = cliente.models.embed_content(
-                model=modelo, contents=textos,
-                config=types.EmbedContentConfig(task_type=tarea, output_dimensionality=DIM))
-            return [_normalizar(list(e.values)[:DIM]) for e in r.embeddings], modelo
-        except Exception as e:
-            ultimo = e
+        for intento in range(3):
+            try:
+                r = cliente.models.embed_content(
+                    model=modelo, contents=textos,
+                    config=types.EmbedContentConfig(task_type=tarea, output_dimensionality=DIM))
+                return [_normalizar(list(e.values)[:DIM]) for e in r.embeddings], modelo
+            except Exception as e:
+                ultimo = e
+                # Cupo por minuto de la capa gratuita: esperar un minuto y repetir (si queda tiempo de paso)
+                if ("429" in str(e) or "RESOURCE_EXHAUSTED" in str(e)) and prov.tiempo_restante() > 5 * 60:
+                    print("  embeddings: cupo por minuto agotado, espero 65 s")
+                    time.sleep(65)
+                    continue
+                break
     _desactivado = True
     raise RuntimeError(f"la API de embeddings no responde: {str(ultimo)[:200]}")
 

@@ -25,6 +25,14 @@ Reglas fijas de Javier para cualquier memoria con formato de TFG (Sprint 3 en ad
 10. **Sin figuras repetidas:** cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone `\ref` a la figura que ya existe.
 11. Las flechas de los captions y del texto son flechas de verdad (`$\rightarrow$`), nunca `->`.
 
+## Diagramas
+
+16. **Todo diagrama se lee bien a su tamaño en el PDF:** las letras del dibujo, una vez escalado, nunca son más pequeñas que las del pie de figura (unos 8-9 pt). Si para que quepa hay que encogerlo tanto que las letras quedan diminutas, el diagrama está mal planteado:
+   - Diagramas de secuencia: **como mucho 6 participantes**. Si hay más, se agrupan (por ejemplo, «Vista + api.js» → «Frontend») o se parte en dos diagramas (lo que pasa en el navegador / lo que pasa en el servidor). `\resizebox` solo para encoger un poco, no para meter 9 columnas en el ancho de la página.
+   - Si hace falta mucho ancho, la página puede ir en horizontal (`pdflscape`) como último recurso.
+17. **Ninguna línea ni flecha atraviesa una caja o un texto, y ninguna caja pisa a otra.** Las flechas van de una caja a la siguiente (A → B, B → C), nunca de A a C pasando por encima de B; si hay que rodear, con codos (`|-`, `-|`) y separando bien las cajas (`node distance` suficiente). Las etiquetas de las flechas no se montan sobre las cajas.
+18. **Dentro de las cajas no se parten palabras ni rutas** («sr-c/services»): o la caja es más ancha (`text width`), o el texto se pone en dos líneas a mano (`\\`), o se acorta.
+
 ## Contenido
 
 12. **Cada entrega lleva solo lo de su sprint.** Por ejemplo, la del Sprint 1 va sin el juego. El título, el Resumen, el Abstract, la Introducción, las Conclusiones y los anexos tienen que coincidir con ese alcance.
