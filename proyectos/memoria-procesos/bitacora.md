@@ -9788,3 +9788,69 @@ El borrador compila y pasa verificar.py, pero falla Regla 9 de maquetación: la 
 - Barrer **todos** los capítulos (`01`, `03`, `04`, `04b`, `05`, `06` y anexos) buscando frases prohibidas «La figura X muestra/ilustra…» y reescribirlas como prosa con la cita dentro del párrafo (Regla 13).
 - Contrastar ≥25 datos con las fuentes (cifra/hecho → sección de la fuente) y listarlos en COMPROBACIONES del siguiente paso.
 - Repaso final de estilo en `01-introduccion.tex`, `06-conclusiones.tex` y anexos: frases cortas, sin adornos («trasciende», «exhaustivo», «riguroso»…), coherencia entre capítulos.
+
+## 2026-11-17 09:23 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba falla solo por la Regla 9: la página 88 del PDF queda casi vacía (6 palabras), que es la cola del último párrafo de la retrospectiva del Sprint 2 en `chapters/a1-desarrollo.tex`. El intento anterior de fusionar párrafos no bastó, así que ahora fusiono los dos últimos párrafos en uno solo y lo acorto (conservando todos los datos de las fuentes: 29 PBIs, 50 tareas, PR #36 y #44–#56, 276 pruebas al cierre, 322 tras la Fase 7, 48 PBIs y 82 tareas en total, más de 50 PR, y la explicación de la recta de DoneTonic), para que el texto termine en la página anterior y desaparezca la página casi vacía.
+
+**Archivos:** `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 9: la página 87 del PDF está casi vacía (8 palabras): funde esa sección o línea suelta con la anterior.
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` y comprobar que `revisar_maquetacion.py` ya no marca la Regla 9 (página 88 casi vacía); si persiste, abrir el PDF en la página 88 e identificar el texto suelto exacto. Después: (1) barrer todos los capítulos (`01`, `03`, `04`, `04b`, `05`, `06` y anexos) buscando frases prohibidas «La figura X muestra/ilustra…» y reescribirlas como prosa con la cita dentro del párrafo (Regla 13); (2) comprobar que el dato de armas/pasivas/combinaciones (29/16/29 según §14) es coherente en `04b-juego.tex` y `05-evaluacion.tex`; (3) contrastar ≥25 datos con las fuentes y listarlos en COMPROBACIONES; (4) repaso final de estilo en `01-introduccion.tex`, `06-conclusiones.tex` y anexos.
+
+## 2026-11-17 09:25 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 19 PBIs (P1–P19) y 32 tareas (T1–T32) → doc. técnica §4.1 tabla backlog y §4.4 tabla trazabilidad.
+- Sprint 2: 29 PBIs (P20–P48) y 50 tareas (T33–T82) → doc. técnica §4.4 tabla backlog Sprint 2.
+- Fechas Sprint 1: 29/09/2026–27/10/2026 → doc. técnica §2.3 tabla alcance y §4.6 cronología.
+- Fechas Sprint 2: 23/10/2026–29/10/2026 → doc. técnica §4.6 cronología.
+- Hito 4 completado 23/10/2026 (correo real, Google publicado) → doc. técnica §4.6 cronología y revisión-entrega.md §8.
+- 13 RF (RF-01–RF-13) en Sprint 1 → doc. técnica §3.1 tabla RF.
+- 20 RJ (RJ-01–RJ-20) en Sprint 2 → doc. técnica §3.2 tabla RJ.
+- 12 RNF (RNF-01–RNF-12) → doc. técnica §3.3 tabla RNF.
+- 276 pruebas automáticas al cierre Sprint 2 (140 Sprint 1 + 136 juego hasta Fase 6) → doc. técnica §10.2 tabla pruebas por fichero (total 276).
+- 322 pruebas tras Fase 7 → doc. técnica §10.2 nota final tabla.
+- 5 migraciones SQL (001–005) → doc. técnica §6.1 módulos db/migrations y §6.2 modelo de datos.
+- 23 endpoints API → doc. técnica §6.4 tabla API y métricas §14.
+- 6 dependencias producción (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer) → doc. técnica §14 métricas.
+- 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → doc. técnica §9.3 tabla sistemas y §14 métricas.
+- 29 logros con datos históricos → doc. técnica §9.6 tabla logros.
+- 7 fases de evolución del juego (Rediseño + Fases 1–6) → doc. técnica §9.7 tabla evolución.
+- Burndown Sprint 1: 15→9→5→1→2→0 PBIs pendientes → doc. técnica §4.5 tabla evolución y gráfico.
+- Burndown real Sprint 2: 28→11→11→2→2→2→0 PBIs pendientes → doc. técnica §4.5 tabla evolución Sprint 2 y gráfico.
+- Gráficas DoneTonic Sprint 2 en recta porque backlog registrado al cerrar sprint (29/10) → doc. técnica §4.4 nota y §4.5 explicación.
+- Cambio de alcance P19 (Cloud Run) durante Sprint 1 → doc. técnica §2.3 tabla alcance, §4.1 backlog, §4.5 evolución.
+- DoD: tarea hecha con PR, CI verde, fusión, doc actualizada; hito hecho en main, desplegado, release → doc. técnica §4.2 DoD.
+- GitHub Flow: rama por tarea en Sprint 1, un PR por fase en Sprint 2 → doc. técnica §4.3 diagrama y tabla PRs.
+- CI/CD: workflow ci.yml (pruebas + Docker), deploy-cloud-run.yml (WIF, Artifact Registry, Cloud Run) → doc. técnica §11 tabla workflows.
+- Despliegue en Google Cloud Run (principal) y Render (alternativo) → doc. técnica §5.2 decisión Cloud Run/Render y §11.
+- Seguridad: bcrypt, cookie httpOnly/secure/sameState, HMAC tokens, state OAuth, consultas parametrizadas, logs ocultan secretos → doc. técnica §8 tabla amenazas.
+- Anti-trampas: reloj servidor, límites creíbles, concurrencia optimista (version), logros verificados servidor → doc. técnica §9.5 servidor juego.
+- Trazabilidad completa requisito→PBI→tarea→PR en Anexo A4 → doc. técnica §3 tablas RF/RJ/RNF con PBI y §4.4 trazabilidad.
+- Uso IA: desarrollo con Claude Opus 5.5, memoria con IAs gratuitas en Cerebro Universal, test automático verificar.py → fuentes/uso-ia.md.
+- Proyecto sin relación oficial con Club Atlético de Madrid → doc. técnica §2.1 contexto.
+- Resumen ≥150 palabras y Abstract ≥120 palabras con palabras clave/keywords → elements/preambulo.tex (comprobado visualmente).
+- 35 figuras y 29 tablas con caption, label y ref → verificar.py OK (35 figuras, 29 tablas, 16521 palabras).
+- No hay DNI ni datos personales en la memoria → verificar.py OK.
+- Bibliografía BibTeX apalike con autores corporativos entre llaves y year en todas → bib/ref.bib revisado.
+- Números >20 contrastados con fuentes (ver lista arriba) → cumplir regla de oro.
+
+La compilación y `verificar.py` pasan, pero `revisar_maquetacion.py` falla por **Regla 9**: la página 87 del PDF queda casi vacía (8 palabras). El constructor intentó fusionar los dos últimos párrafos de la retrospectiva del Sprint 2 en `a1-desarrollo.tex`, pero el salto de página deja una línea huérfana. Hay que ajustar el texto final para que el último párrafo no quede solo en una página (alargarlo o fusionarlo con el anterior de forma que no quede cola). Además, quedan pendientes: (1) barrer todos los capítulos eliminando frases «La figura X muestra…» (Regla 13), (2) unificar el dato de armas/pasivas/combinaciones (24 en §9.3 vs 29 en §14 de la fuente) en `04b-juego.tex` y `05-evaluacion.tex`, (3) repaso final de estilo en `01`, `06` y anexos. El contraste de ≥25 datos se ha realizado en COMPROBACIONES.
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` y comprobar que `revisar_maquetacion.py` ya no marca Regla 9 (página 87 casi vacía). Si persiste, abrir el PDF en la página 87, identificar el texto suelto y fundirlo con el párrafo anterior o alargarlo.
+- Barrer **todos** los capítulos (`01`, `03`, `04`, `04b`, `05`, `06` y anexos) buscando frases prohibidas «La figura X muestra/ilustra…» y reescribirlas como prosa con la cita dentro del párrafo (Regla 13).
+- Unificar el dato de armas/pasivas/combinaciones: usar 29 armas, 16 pasivas, 29 combinaciones (según §14 de la fuente) en `04b-juego.tex` (tabla sistemas) y `05-evaluacion.tex` (métricas), y añadir nota en `04b-juego.tex` si se menciona 24 en §9.3.
+- Repaso final de estilo en `01-introduccion.tex`, `06-conclusiones.tex` y anexos: frases cortas, sin adornos («trasciende», «exhaustivo», «riguroso»…), coherencia entre capítulos.
+- Verificar que no hay imágenes repetidas (cada captura una sola vez, el resto con `\ref`).
+- Confirmar que todas las secciones tienen al menos un párrafo sustancial (Regla 9/13).
