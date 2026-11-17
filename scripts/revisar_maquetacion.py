@@ -110,14 +110,16 @@ else:
         palabras = sum(len(l.split()) for l in lineas)
         figuras = len(re.findall(r"Figura\s+[A-Z0-9]+\.\d+:", pag))
         tablas = len(re.findall(r"Tabla\s+[A-Z0-9]+\.\d+:", pag))
+        muestra = " ".join(" ".join(lineas).split()[:25])
+        donde = f" Empieza así: «{muestra}»." if muestra else ""
         if palabras == 0:
             fallos.append(f"Regla 4: la página {i} del PDF está en blanco.")
         elif figuras == 1 and tablas == 0 and palabras < 40:
             fallos.append(f"Regla 8: la página {i} del PDF tiene solo una imagen ({palabras} palabras). "
-                          "Hazla más pequeña o júntala con texto u otra figura.")
+                          "Hazla más pequeña o júntala con texto u otra figura." + donde)
         elif figuras + tablas == 0 and palabras < 15 and i < len(paginas):
             fallos.append(f"Regla 9: la página {i} del PDF está casi vacía ({palabras} palabras): "
-                          "funde esa sección o línea suelta con la anterior.")
+                          "funde esa sección o línea suelta con la anterior (o acorta el párrafo que se desborda a esa página)." + donde)
 
 if fallos:
     print("❌ Maquetación del TFG (memoria/reglas-tfg.md):")

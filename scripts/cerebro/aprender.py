@@ -181,7 +181,11 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
         r = registro.get(etiqueta)
         if not r or r.get("md5") != huella:
             r = {"md5": huella, "hechos": 0, "total": len(trozos), "notas": []}
-        temas = regla.get("temas", [])
+        temas = list(regla.get("temas", []))
+        # En temarios/, la subcarpeta es el tema (temarios/redes/tema1.pdf → «redes»)
+        m = re.search(r"temarios/([^/]+)/", str(etiqueta))
+        if m and conocimiento.nombre_de(m.group(1)) not in temas:
+            temas.append(conocimiento.nombre_de(m.group(1)))
         proyecto = regla.get("proyecto", "")
         while r["hechos"] < len(trozos):
             if prov.tiempo_restante() < MIN_PARA_TROZO:
