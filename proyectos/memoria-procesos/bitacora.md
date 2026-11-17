@@ -10260,3 +10260,46 @@ Se corrigen estos 5 puntos en los archivos afectados.
 ## 2026-11-17 21:05 · 🧠 Conocimiento guardado
 
 [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[metricas-comparativas-sprint-1-vs-sprint-2]]
+
+## 2026-11-17 22:32 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba falla solo por 3 referencias sin resolver a `fig:donetonic-graficas-s1`: esa etiqueta nunca se definió con una figura (solo se cita en `04-descripcion.tex`, `a1-desarrollo.tex` y `a2-material.tex`). La captura correspondiente (`figs/capturas/donetonic/02-graficas-sprint.png`, Burndown/Burnup del Sprint 1) es una de las mínimas exigidas y tiene más sentido en el Capítulo 3, junto al tablero y al backlog de DoneTonic. Añado la figura con su `\label` allí y la cito en el texto local, con lo que las tres referencias pendientes pasan a resolverse.
+
+**Archivos:** `(cambio) chapters/03-propuesta.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 16: chapters/04-descripcion.tex:345: diagrama de secuencia con 8 participantes: escalado sale diminuto. Como mucho 6 (agrupa participantes o p…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba`: con la figura ya definida en `03-propuesta.tex`, las 3 referencias a `fig:donetonic-graficas-s1` deben resolverse y el PDF no debe contener «??». Si pasa, corregir en `04-descripcion.tex` y `a2-material.tex` las dos citas que aún dicen «Anexo~\ref{anx:desarrollo}» junto a esa figura (ahora está en el Capítulo~\ref{cap:propuesta}); después reducir a 6 participantes el diagrama `fig:sec-registro` (ahora tiene 8: agrupar `accountConfirmation` + `mailer` en uno solo y quitar `passwordHasher`, que ya se explica en el texto) y avanzar al paso 3: reescribir la sección «La aplicación» de `04-descripcion.tex` como prosa con subfiguras.
+
+## 2026-11-17 22:49 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- fig:donetonic-graficas-s1: añadida en 03-propuesta.tex con label correcto; las 3 referencias pendientes (04-descripcion.tex, a1-desarrollo.tex, a2-material.tex) deberían resolver tras compilar
+- Regla 16: fig:sec-registro en 04-descripcion.tex tiene 8 participantes (Usuario, Frontend, API, userService, passwordHasher, userRepository, accountConfirmation, mailer) → excede el máximo de 6; hay que agrupar (ej. Frontend = Vista + api.js; accountConfirmation + mailer en uno)
+- Regla 8: página 42 (fig:hito4-admin-estados-privacidad) solo tiene 25 palabras; reducir altura a 0.28\textheight y añadir texto antes/después
+- Regla 9: página 82 (a1-desarrollo.tex) párrafo final suelto de 12 palabras; fusionar con párrafo anterior
+- Faltan \ref a fig:donetonic-pbi-detalle y fig:donetonic-s2-tareas en a1-desarrollo.tex (están definidas pero no citadas)
+- Datos contrastados: 19 PBIs S1 (doc §4), 29 PBIs S2 (doc §4), 82 tareas (doc §4), 276 pruebas en main cierre S2 (doc §14), 322 tras Fase 7 (doc §14), 5 migraciones (doc §6.1), 23 endpoints API (doc §6.4), 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones (doc §14)
+
+El constructor añadió la figura faltante `fig:donetonic-graficas-s1` en el Capítulo 3, lo que resuelve las 3 referencias rotas. Sin embargo, la compilación falla por tres infracciones de las reglas de Javier detectadas por `revisar_maquetacion.py`:
+1. **Regla 16**: El diagrama de secuencia `fig:sec-registro` tiene 8 participantes (máximo 6). Hay que agrupar: `Frontend` = Vista + api.js, y `Confirmación` = accountConfirmation + mailer; quitar `passwordHasher` (se explica en el texto).
+2. **Regla 8**: La figura combinada `admin-estados+privacidad` (página 42) queda sola con 25 palabras. Reducir altura a `0.28\textheight` y añadir frase de transición antes/después.
+3. **Regla 9**: Página 82 casi vacía en `a1-desarrollo.tex` (párrafo final de 12 palabras). Fusionar con el párrafo anterior.
+Además, faltan citas `\ref` a `fig:donetonic-pbi-detalle` y `fig:donetonic-s2-tareas` en `a1-desarrollo.tex` (están definidas en las subfiguras pero no referenciadas en el texto).
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: el texto aparece 2 veces: «El Sprint 2, desarrollado en una semana con 29 PBIs, 50 tare») chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para verificar que compila, `verificar.py` pasa y `revisar_maquetacion.py` pasa (referencias resueltas, ≥5 capturas DoneTonic, sin "??", diagramas ≤6 participantes, páginas sin imagen sola ni casi vacías).
+- Si persisten referencias rotas a `fig:donetonic-graficas-s1`, buscar todas sus ocurrencias y asegurar que la figura existe en `03-propuesta.tex` con `\label{fig:donetonic-graficas-s1}`.
+- Verificar que las 5+ capturas DoneTonic distintas aparecen en el PDF: backlog (03-backlog.png), gráficas S1 (02-graficas-sprint.png), tablero S2 (04-tablero-sprint2.png), gráficas S2 (06-graficas-sprint2.png), detalle PBI (08-pbi-detalle.png), tareas S2 (05-sprint2-tareas-hechas.png).
+- Tras pasar el test, avanzar al paso 3: reescribir la sección «La aplicación» de `04-descripcion.tex` como prosa integrada con subfiguras (eliminar frases «La figura X muestra…»).
+- Paso 4: mismo tratamiento para el manual del juego en `04b-juego.tex`.
+- Paso 5: repaso capítulo a capítulo (01, 03, 05, 06 y anexos): secciones cortas, párrafos repetidos y estilo.
+- Paso 6: barrido final con `verificar.py`, `revisar_maquetacion.py` y revisor hasta que todo pase.

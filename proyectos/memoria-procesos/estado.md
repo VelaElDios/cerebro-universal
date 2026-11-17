@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 21:05"
+actualizado: "2026-11-17 22:49"
 ---
 
 # memoria-procesos
@@ -15,18 +15,17 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Decisiones y convenciones
 - LuaLaTeX; prueba = `verificar.py` + `revisar_maquetacion.py` (reglas de Javier en `memoria/reglas-tfg.md`).
 - Una sola portada (`elements/portada.tex`); títulos negros negrita; sin páginas en blanco.
-- Tablas `p{}` + `\addlinespace`; capturas máx. `height=0.42\textheight` (si quedan solas, bajar a 0.30–0.32 o agrupar en `subfigure`); diagramas grandes con `adjustbox`/`max totalheight`.
+- Tablas `p{}` + `\addlinespace`; capturas máx. `height=0.42\textheight` (si quedan solas, bajar a 0.28–0.30 o agrupar en `subfigure`); diagramas grandes con `adjustbox`/`max totalheight`.
 - Cada imagen una sola vez; en el resto `\ref`. Prosa de TFG: nada de «La figura X muestra…» suelta.
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
 - Paso 1 completado: `elements/preambulo.tex` ya cumplía regla 1 (sin segunda portada).
 - Paso 2 (imágenes duplicadas y referencias): **EN PROGRESO** - Correcciones aplicadas en este veredicto para:
-  1. Mover figura `fig:donetonic-graficas-s1` a `03-propuesta.tex` y referenciar desde allí.
-  2. Eliminar duplicado en `a1-desarrollo.tex` y añadir citas faltantes a `fig:donetonic-pbi-detalle` y `fig:donetonic-s2-tareas`.
-  3. Reducir participantes en diagramas de secuencia `fig:sec-registro` (9→6) y `fig:sec-partida` (7→6).
-  4. Reducir altura de figura combinada admin-estados+privacidad a 0.28\textheight y añadir texto.
-  5. Fusionar párrafo final en `a1-desarrollo.tex`.
+  1. Mover figura `fig:donetonic-graficas-s1` a `03-propuesta.tex` y referenciar desde allí (hecho por constructor).
+  2. Reducir participantes en diagrama `fig:sec-registro` de 8 a 6 (agrupando Frontend y Confirmación+correo).
+  3. Reducir altura de figura combinada admin-estados+privacidad a 0.28\textheight y añadir texto.
+  4. Fusionar párrafo final en `a1-desarrollo.tex` con citas a `fig:donetonic-pbi-detalle` y `fig:donetonic-s2-tareas`.
 - Pendiente: ejecutar `comando_prueba` para confirmar que pasan todas las comprobaciones.
 
 ## Siguiente

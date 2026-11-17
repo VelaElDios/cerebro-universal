@@ -347,10 +347,8 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
   \newinst[2]{fe}{Frontend (Vista + api.js)}
   \newinst[2]{a}{API /api/auth/register}
   \newinst[2]{s}{userService}
-  \newinst[2]{h}{passwordHasher}
   \newinst[2]{r}{userRepository}
-  \newinst[2]{ac}{accountConfirmation}
-  \newinst[2]{m}{mailer SMTP}
+  \newinst[2]{cm}{Confirmación y correo}
   \begin{call}{u}{escribe email y contraseña}{fe}{ok}
   \end{call}
   \begin{call}{fe}{valida y envía POST}{a}{201 o 409}
@@ -364,13 +362,11 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
       \mess{s}{409 ConflictError}{a}
     \end{sdblock}
     \begin{sdblock}{else}{nuevo}
-      \begin{call}{s}{hash contraseña bcrypt}{h}{hash}
+      \begin{call}{s}{hash contraseña bcrypt}{s}{hash}
       \end{call}
       \begin{call}{s}{crea usuario pendiente}{r}{ok}
       \end{call}
-      \begin{call}{ac}{firma HMAC 24 h}{ac}{token}
-      \end{call}
-      \begin{call}{ac}{envía correo}{m}{ok o error}
+      \begin{call}{cm}{firma HMAC 24 h y envía correo}{cm}{ok o error}
       \end{call}
     \end{sdblock}
   \end{call}
@@ -770,14 +766,14 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \centering
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.30\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
+\includegraphics[width=\linewidth,height=0.28\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
 \subcaption{Panel con todos los estados de cuenta.}
 \label{fig:hito4-admin-estados}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.30\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
+\includegraphics[width=\linewidth,height=0.28\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
 \subcaption{Política de privacidad.}
 \label{fig:hito4-privacidad}
 \end{subfigure}
@@ -785,7 +781,7 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \label{fig:hito4-admin-estados-privacidad}
 \end{figure}
 
-El panel muestra todos los estados (activas, pendientes, eliminadas, locales y de Google) y la política de privacidad es accesible desde el pie de página.
+El panel de administración muestra todas las cuentas con sus estados (activas, pendientes, eliminadas, locales y de Google), permitiendo al administrador gestionarlas desde una sola vista. La política de privacidad, accesible desde el pie de página, cumple el requisito de transparencia sobre el tratamiento de datos personales.
 
 \subsection{Producción}
 
