@@ -344,21 +344,14 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[2]{v}{Vista registro}
-  \newinst[2]{c}{api.js}
-  \newinst[2]{a}{API registro}
+  \newinst[2]{fe}{Frontend (Vista + api.js)}
+  \newinst[2]{a}{API /api/auth/register}
   \newinst[2]{s}{userService}
-  \newinst[2]{h}{passwordHasher}
   \newinst[2]{r}{userRepository}
-  \newinst[2]{ac}{accountConfirmation}
-  \newinst[2]{m}{mailer SMTP}
-  \begin{call}{u}{escribe email y contraseña}{v}{ok}
+  \newinst[2]{cm}{Confirmación y correo}
+  \begin{call}{u}{escribe email y contraseña}{fe}{ok}
   \end{call}
-  \begin{call}{v}{valida email y contraseña}{v}{ok}
-  \end{call}
-  \begin{call}{v}{register email contraseña}{c}{ok}
-  \end{call}
-  \begin{call}{c}{POST registro}{a}{201 o 409}
+  \begin{call}{fe}{valida y envía POST}{a}{201 o 409}
     \begin{call}{a}{register}{s}{ok}
     \end{call}
     \begin{call}{s}{normaliza y valida}{s}{ok}
@@ -369,15 +362,11 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
       \mess{s}{409 ConflictError}{a}
     \end{sdblock}
     \begin{sdblock}{else}{nuevo}
-      \begin{call}{s}{hash contraseña bcrypt}{h}{hash}
+      \begin{call}{s}{hash contraseña bcrypt}{s}{hash}
       \end{call}
       \begin{call}{s}{crea usuario pendiente}{r}{ok}
       \end{call}
-      \begin{call}{ac}{envia confirmacion}{ac}{token}
-      \end{call}
-      \begin{call}{ac}{firma HMAC 24 h}{ac}{token}
-      \end{call}
-      \begin{call}{ac}{envia correo}{m}{ok o error}
+      \begin{call}{cm}{firma HMAC 24 h y envía correo}{cm}{ok o error}
       \end{call}
     \end{sdblock}
   \end{call}
@@ -773,18 +762,20 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \label{fig:hito4-flujo}
 \end{figure}
 
+El panel de administración muestra todas las cuentas con sus estados (activas, pendientes, eliminadas, locales y de Google), de modo que el administrador ve de un vistazo cuáles están pendientes de confirmar y cuáles proceden de un acceso con Google. La política de privacidad, accesible desde el pie de página de la aplicación, documenta el tratamiento de los datos personales: el correo no aparece en el ranking y los logs ocultan contraseñas, cookies y tokens. Ambas vistas se recogen en la Figura~\ref{fig:hito4-admin-estados-privacidad}.
+
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
+\includegraphics[width=\linewidth,height=0.28\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
 \subcaption{Panel con todos los estados de cuenta.}
 \label{fig:hito4-admin-estados}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
+\includegraphics[width=\linewidth,height=0.28\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
 \subcaption{Política de privacidad.}
 \label{fig:hito4-privacidad}
 \end{subfigure}
@@ -792,35 +783,18 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \label{fig:hito4-admin-estados-privacidad}
 \end{figure}
 
+Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
+
 \subsection{Producción}
 
 El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}).
 
 \subsection{Prueba técnica}
 
-El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La Figura~\ref{fig:prueba-tecnica-permitido} (Capítulo~\ref{cap:evaluacion}) muestra una respuesta afirmativa para un dominio autorizado; el rechazo de un subdominio no reconocido (Figura~\ref{fig:prueba-tecnica-rechazado}) se documenta en el Capítulo~\ref{cap:evaluacion}.
+El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado.
 
 \subsection{Gestión en DoneTonic}
 
-El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (figura~\ref{fig:donetonic-graficas-s1}, Anexo~\ref{anx:desarrollo}), el Product Backlog con los dos sprints (figura~\ref{fig:donetonic-backlog}, Anexo~\ref{anx:desarrollo}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (figura~\ref{fig:donetonic-s2-tablero}, Anexo~\ref{anx:desarrollo}), y el detalle de un PBI con su historia de usuario, criterios de aceptación y tareas, junto con las 50 tareas del Sprint 2 en la columna Hecho (Figura~\ref{fig:dt-detalle}, subfiguras~\ref{fig:dt-pbi-detalle} y~\ref{fig:dt-s2-tareas}).
-
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}{0.48\textwidth}
-\centering
-\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
-\subcaption{Detalle del PBI P44: historia de usuario, criterios y tareas.}
-\label{fig:dt-pbi-detalle}
-\end{subfigure}
-\hfill
-\begin{subfigure}{0.48\textwidth}
-\centering
-\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/05-sprint2-tareas-hechas.png}
-\subcaption{Tareas de P48 en la columna Hecho: 50 tareas del Sprint 2.}
-\label{fig:dt-s2-tareas}
-\end{subfigure}
-\caption{DoneTonic: detalle de un PBI y tareas hechas del Sprint 2.}
-\label{fig:dt-detalle}
-\end{figure}
+El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (Figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (Figura~\ref{fig:donetonic-graficas-s1}, Capítulo~\ref{cap:propuesta}), el Product Backlog con los dos sprints (Figura~\ref{fig:donetonic-backlog}, Capítulo~\ref{cap:propuesta}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (Figura~\ref{fig:donetonic-s2-tablero}, Anexo~\ref{anx:desarrollo}), y el detalle de un PBI con su historia de usuario, criterios de aceptación y tareas, junto con las 50 tareas del Sprint 2 en la columna Hecho (Figura~\ref{fig:donetonic-s2-detalle}, Anexo~\ref{anx:desarrollo}).
 
 La evolución real del Sprint 2, reconstruida a partir de las fechas de fusión de los PRs, se expone en el Anexo~\ref{anx:desarrollo}.

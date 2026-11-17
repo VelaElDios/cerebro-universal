@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T22:50:56+01:00",
+ "generado": "2026-11-17T23:55:46+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -25,7 +25,7 @@
    "id": "proyecto:memoria-procesos",
    "tipo": "proyecto",
    "titulo": "memoria-procesos",
-   "estado": "en-construccion",
+   "estado": "terminado",
    "temas": [
     "latex",
     "memoria",
@@ -527,6 +527,23 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/lecciones/verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic.md"
+  },
+  {
+   "id": "leccion:verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii",
+   "tipo": "leccion",
+   "titulo": "Verificación final de memoria TFG con plantilla oficial ESIIAB-UCLM",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg",
+    "verificacion",
+    "reglas-javier"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii.md"
   },
   {
    "id": "concepto:actualizacion-de-la-btb-tras-ejecutar-el-salto",
@@ -5868,6 +5885,22 @@
    "ruta": "memoria/conocimiento/decisiones/manejo-de-dependencias-raw-mediante-qj-qk-en-estaciones-de-r.md"
   },
   {
+   "id": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "tipo": "decision",
+   "titulo": "Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos.md"
+  },
+  {
    "id": "decision:motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla",
    "tipo": "decision",
    "titulo": "Motor de partida determinista a paso fijo 1/60 s con semilla",
@@ -10320,14 +10353,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 98,
+   "peso": 100,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 48,
+   "peso": 50,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -10432,7 +10465,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 8,
+   "peso": 10,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -10490,6 +10523,20 @@
    "titulo": "revision",
    "peso": 2,
    "ruta": "memoria/temas/revision.md"
+  },
+  {
+   "id": "tema:tfg",
+   "tipo": "tema",
+   "titulo": "tfg",
+   "peso": 45,
+   "ruta": "memoria/temas/tfg.md"
+  },
+  {
+   "id": "tema:reglas-javier",
+   "tipo": "tema",
+   "titulo": "reglas-javier",
+   "peso": 1,
+   "ruta": "memoria/temas/reglas-javier.md"
   },
   {
    "id": "tema:ac",
@@ -10560,13 +10607,6 @@
    "titulo": "ia",
    "peso": 1,
    "ruta": "memoria/temas/ia.md"
-  },
-  {
-   "id": "tema:tfg",
-   "tipo": "tema",
-   "titulo": "tfg",
-   "peso": 43,
-   "ruta": "memoria/temas/tfg.md"
   },
   {
    "id": "tema:ética",
@@ -15614,6 +15654,36 @@
   },
   {
    "de": "leccion:verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii",
+   "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii",
    "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
@@ -26400,6 +26470,46 @@
   {
    "de": "decision:manejo-de-dependencias-raw-mediante-qj-qk-en-estaciones-de-r",
    "a": "concepto:estructura-de-una-estacion-de-reserva-en-tomasulo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "dato:requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto",
    "tipo": "enlaza"
   },
   {

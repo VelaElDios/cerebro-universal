@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 22:49"
+actualizado: "2026-11-17 23:55"
 ---
 
 # memoria-procesos
@@ -20,15 +20,14 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- Paso 1 completado: `elements/preambulo.tex` ya cumplía regla 1 (sin segunda portada).
-- Paso 2 (imágenes duplicadas y referencias): **EN PROGRESO** - Correcciones aplicadas en este veredicto para:
-  1. Mover figura `fig:donetonic-graficas-s1` a `03-propuesta.tex` y referenciar desde allí (hecho por constructor).
-  2. Reducir participantes en diagrama `fig:sec-registro` de 8 a 6 (agrupando Frontend y Confirmación+correo).
-  3. Reducir altura de figura combinada admin-estados+privacidad a 0.28\textheight y añadir texto.
-  4. Fusionar párrafo final en `a1-desarrollo.tex` con citas a `fig:donetonic-pbi-detalle` y `fig:donetonic-s2-tareas`.
-- Pendiente: ejecutar `comando_prueba` para confirmar que pasan todas las comprobaciones.
+- **TERMINADO**: `comando_prueba` pasa (compila, `verificar.py` OK, `revisar_maquetacion.py` OK).
+- Se cumplen todas las reglas de `memoria/reglas-tfg.md`.
+- Ninguna cadena «La figura X muestra…» suelta: capturas explicadas en prosa con subfiguras.
+- Juego y Sprint 2 descritos; ningún capítulo dice que Hito 4 esté pendiente.
+- Anexo de desarrollo tiene dos secciones de sprint con mismo esquema y explica la recta de gráficas Sprint 2.
+- Revisor ha contrastado ≥25 datos con fuentes en COMPROBACIONES.
 
 ## Siguiente
-Ejecutar `comando_prueba` tras los cambios propuestos. Si pasa, avanzar a paso 3: reescribir sección «La aplicación» (04-descripcion.tex) como prosa integrada con subfiguras, eliminando frases sueltas «La figura X muestra…». Luego paso 4: hacer lo mismo con el manual del juego en 04b-juego.tex.
+Ninguno: la memoria está lista para entrega.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

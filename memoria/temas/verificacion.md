@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 8
+notas: 10
 ---
 # verificacion
 
@@ -14,6 +14,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/verificacion-de-correccion-numerica-entre-version-base-y-opt|Verificación de corrección numérica entre versión base y optimizada ILP]]
 
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
+
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
@@ -23,7 +27,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 - ⚠️ [[memoria/lecciones/numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente|Números de métricas deben copiarse exactamente de la fuente única]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto|Todas las figuras y tablas deben tener \ref en el texto]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii|Verificación final de memoria TFG con plantilla oficial ESIIAB-UCLM]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[test]] · [[calidad]] · [[criterios]] · [[terminado]] · [[trazabilidad]] · [[métricas]] · [[verificación]] · [[cifras]]
+[[latex]] · [[tfg]] · [[metricas]] · [[memoria]] · [[sus]] · [[usabilidad]] · [[test]] · [[reglas-javier]] · [[calidad]] · [[criterios]] · [[terminado]] · [[trazabilidad]]

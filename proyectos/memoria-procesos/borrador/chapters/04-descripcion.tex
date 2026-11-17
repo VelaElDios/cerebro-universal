@@ -762,6 +762,8 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \label{fig:hito4-flujo}
 \end{figure}
 
+El panel de administración muestra todas las cuentas con sus estados (activas, pendientes, eliminadas, locales y de Google), de modo que el administrador ve de un vistazo cuáles están pendientes de confirmar y cuáles proceden de un acceso con Google. La política de privacidad, accesible desde el pie de página de la aplicación, documenta el tratamiento de los datos personales: el correo no aparece en el ranking y los logs ocultan contraseñas, cookies y tokens. Ambas vistas se recogen en la Figura~\ref{fig:hito4-admin-estados-privacidad}.
+
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}{0.48\textwidth}
@@ -781,7 +783,7 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \label{fig:hito4-admin-estados-privacidad}
 \end{figure}
 
-El panel de administración muestra todas las cuentas con sus estados (activas, pendientes, eliminadas, locales y de Google), permitiendo al administrador gestionarlas desde una sola vista. La política de privacidad, accesible desde el pie de página, cumple el requisito de transparencia sobre el tratamiento de datos personales.
+Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
 
 \subsection{Producción}
 
@@ -789,12 +791,10 @@ El despliegue en Google Cloud Run se validó en condiciones reales: el correo de
 
 \subsection{Prueba técnica}
 
-El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La Figura~\ref{fig:prueba-tecnica-permitido} (Capítulo~\ref{cap:evaluacion}) muestra una respuesta afirmativa para un dominio autorizado; el rechazo de un subdominio no reconocido (Figura~\ref{fig:prueba-tecnica-rechazado}) se documenta en el Capítulo~\ref{cap:evaluacion}.
+El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado.
 
 \subsection{Gestión en DoneTonic}
 
-El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (figura~\ref{fig:donetonic-graficas-s1}, Anexo~\ref{anx:desarrollo}), el Product Backlog con los dos sprints (figura~\ref{fig:donetonic-backlog}, Capítulo~\ref{cap:propuesta}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (figura~\ref{fig:donetonic-s2-tablero}, Anexo~\ref{anx:desarrollo}), y el detalle de un PBI con su historia de usuario, criterios de aceptación y tareas, junto con las 50 tareas del Sprint 2 en la columna Hecho (figura~\ref{fig:donetonic-s2-capturas}, Anexo~\ref{anx:desarrollo}).
-
-% La figura con el detalle del PBI y las tareas hechas del Sprint 2 se muestra en el Anexo~\ref{anx:desarrollo} (Figura~\ref{fig:donetonic-s2-capturas}).
+El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (Figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (Figura~\ref{fig:donetonic-graficas-s1}, Capítulo~\ref{cap:propuesta}), el Product Backlog con los dos sprints (Figura~\ref{fig:donetonic-backlog}, Capítulo~\ref{cap:propuesta}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (Figura~\ref{fig:donetonic-s2-tablero}, Anexo~\ref{anx:desarrollo}), y el detalle de un PBI con su historia de usuario, criterios de aceptación y tareas, junto con las 50 tareas del Sprint 2 en la columna Hecho (Figura~\ref{fig:donetonic-s2-detalle}, Anexo~\ref{anx:desarrollo}).
 
 La evolución real del Sprint 2, reconstruida a partir de las fechas de fusión de los PRs, se expone en el Anexo~\ref{anx:desarrollo}.

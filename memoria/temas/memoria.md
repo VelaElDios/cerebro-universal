@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria"
-notas: 48
+notas: 50
 ---
 # memoria
 
@@ -42,6 +42,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow|Flechas reales en captions y texto ($\rightarrow$)]]
 - ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow-nunca|Flechas reales en captions y texto ($\rightarrow$), nunca ->]]
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
+- ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p|Paso 1 completado: preambulo.tex ya cumple regla 1 (una sola portada)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/portada-unica-oficial-del-tfg-elements-portada-tex|Portada única oficial del TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
@@ -69,6 +70,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 ## Lecciones (errores ya resueltos)
 
 - ⚠️ [[memoria/lecciones/verificacion-de-numeros-en-memoria-latex-contra-fuentes-unic|Cada cifra de un documento sale de las fuentes, también las pequeñas]]
+- ⚠️ [[memoria/lecciones/verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii|Verificación final de memoria TFG con plantilla oficial ESIIAB-UCLM]] · ⚠️ propuesto
 
 ## Documentos aprendidos
 
@@ -78,4 +80,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[ac]] · [[figuras]] · [[plantilla]] · [[scrum]] · [[tablas]] · [[tikz]] · [[grada-colchonera]] · [[cache]] · [[diagramas]] · [[anexos]]
+[[tfg]] · [[latex]] · [[ac]] · [[figuras]] · [[plantilla]] · [[scrum]] · [[tablas]] · [[tikz]] · [[grada-colchonera]] · [[cache]] · [[diagramas]] · [[verificacion]]
