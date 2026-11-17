@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 10:28"
+actualizado: "2026-11-17 12:00"
 ---
 
 # memoria-procesos
@@ -20,17 +20,16 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- Compila (93 páginas) y `verificar.py` OK (35 figuras, 29 tablas, 16502 palabras).
-- `revisar_maquetacion.py` falla: Regla 9 (página 87 casi vacía, 8 palabras) — **he acortado el último párrafo de la retrospectiva Sprint 2 en `a1-desarrollo.tex` para intentar resolverlo**.
-- He corregido: imagen duplicada en `04b-juego.tex` (eliminada figura standalone redundante), figuras sueltas en `04-descripcion.tex` (agrupadas en subfiguras), unificación de armas (29 armas, 16 pasivas, 29 combinaciones) en `04b-juego.tex` y `05-evaluacion.tex`.
-- Pendiente: resolver Regla 9 definitivamente, barrer frases prohibidas en todos los capítulos, unificar dato de combinaciones (24 en Fase 3 vs 29 total), eliminar repetición del párrafo de pausa en `04b-juego.tex`, repaso estilo global.
+- Compila (94 páginas) y `verificar.py` OK (35 figuras, 29 tablas, 16595 palabras).
+- `revisar_maquetacion.py` falla: **Regla 9** (página 88 casi vacía, 6 palabras) — **he fusionado el último párrafo de la retrospectiva Sprint 2 con el anterior en `a1-desarrollo.tex` para resolverlo**.
+- He corregido: 2 frases «La figura X muestra…» en `04-descripcion.tex` reescritas como prosa; párrafo duplicado del menú de pausa eliminado en `04b-juego.tex`; nota añadida en tabla de evolución y tabla de sistemas de `04b-juego.tex` sobre combinaciones (24 en Fase 3 + 5 en Fase 7 = 29 total).
+- Pendiente: confirmar que Regla 9 se resuelve tras recompilar; barrer resto de frases prohibidas en todos los capítulos; verificar imágenes no repetidas; repaso estilo global.
 
 ## Siguiente
-1. Ejecutar `comando_prueba`; si falla Regla 9, localizar la página 87 en el PDF y fundir el texto suelto con el anterior.
+1. Ejecutar `comando_prueba`; si falla Regla 9, localizar la página 88 en el PDF y fundir/expandir el texto suelto.
 2. Barrer todos los capítulos eliminando frases «La figura X muestra…» y reescribirlas como prosa con cita integrada (Regla 13).
-3. Unificar dato de combinaciones: nota en tabla de evolución de `04b-juego.tex` explicando 24 (Fase 3) + 5 (Fase 7) = 29 total.
-4. Eliminar repetición del párrafo del menú de pausa en `04b-juego.tex`.
-5. Repaso final de estilo en `01`, `06` y anexos.
-6. Cuando todo pase en verde y el revisor haya contrastado ≥25 datos, marcar TERMINADO.
+3. Verificar que ninguna imagen se repite (cada captura una sola vez, el resto con `\ref`).
+4. Repaso final de estilo en `01`, `06` y anexos: frases cortas, sin adornos, coherencia entre capítulos.
+5. Cuando todo pase en verde y el revisor haya contrastado ≥25 datos, marcar TERMINADO.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]
