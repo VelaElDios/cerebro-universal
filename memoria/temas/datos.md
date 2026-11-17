@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "datos"
-notas: 4
+notas: 5
 ---
 # datos
 
@@ -15,6 +15,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 - ⚖️ [[memoria/conocimiento/decisiones/los-datos-de-entrenamiento-van-a-un-repo-privado|Los datos de entrenamiento van a un repo privado]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
+
 ## Lecciones (errores ya resueltos)
 
 - ⚠️ [[memoria/lecciones/escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en|Escapar los textos que vienen de datos antes de meterlos en LaTeX]]
@@ -22,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[lua]] · [[general]] · [[cerebro]] · [[ia-local]] · [[sus]] · [[usabilidad]]
+[[latex]] · [[lua]] · [[general]] · [[fuentes]] · [[juego]] · [[verificar]] · [[cerebro]] · [[ia-local]] · [[sus]] · [[usabilidad]]

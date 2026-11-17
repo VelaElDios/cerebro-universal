@@ -99,7 +99,7 @@ RNF-12 & \textbf{Mantenibilidad} & Sin frameworks ni compilación en el frontend
 \subsection{Vista general: arquitectura en capas}
 \label{sec:vista-general}
 
-La Figura~\ref{fig:capas} muestra la arquitectura cliente-servidor en capas. El servidor (Node.js + Express) sirve también el frontend estático, por lo que todo vive en el mismo origen.
+La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servidor (Node.js + Express) sirve también el frontend estático, por lo que todo vive en el mismo origen.
 
 \begin{figure}[htbp]
 \centering
@@ -194,7 +194,7 @@ Gráficos y sonido generados con código & Imágenes y ficheros de audio & Sin p
 \section{Modelo de datos}
 \label{sec:modelo-datos}
 
-El diagrama entidad-relación de la Figura~\ref{fig:modelo-datos} muestra las tablas principales, incluyendo las del juego.
+El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tablas principales, incluidas las del juego: \texttt{users}, \texttt{session}, \texttt{juego\_perfiles} y \texttt{juego\_records}.
 
 \begin{figure}[htbp]
 \centering
@@ -337,7 +337,7 @@ Esta sección muestra los diagramas de secuencia de los flujos principales. Todo
 \subsection{Registro con email y contraseña}
 \label{sec:flujo-registro}
 
-La Figura~\ref{fig:sec-registro} muestra el flujo de registro.
+El registro recorre la cadena completa: la vista valida el email y la contraseña en el cliente, \path{api.js} envía el \texttt{POST} a la API, \path{userService} normaliza y valida, rechaza el email repetido con un 409 y crea la cuenta pendiente con la contraseña ya hasheada; después se firma el token HMAC (24 h) y el correo sale por SMTP. El recorrido está en la Figura~\ref{fig:sec-registro}.
 
 \begin{figure}[htbp]
 \centering
@@ -389,7 +389,7 @@ La Figura~\ref{fig:sec-registro} muestra el flujo de registro.
 \subsection{Confirmación con el enlace del correo}
 \label{sec:flujo-confirmacion}
 
-La Figura~\ref{fig:sec-confirmacion} muestra el flujo de confirmación.
+Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la cuenta pasa a \texttt{active} y la interfaz muestra el aviso de confirmación; si está manipulado o caducado, redirige con aviso de error y la cuenta sigue pendiente. El flujo está en la Figura~\ref{fig:sec-confirmacion}.
 
 \begin{figure}[htbp]
 \centering
@@ -427,7 +427,7 @@ La Figura~\ref{fig:sec-confirmacion} muestra el flujo de confirmación.
 \subsection{Inicio de sesión local}
 \label{sec:flujo-login}
 
-La Figura~\ref{fig:sec-login} muestra el flujo de inicio de sesión local.
+En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta; si la cuenta está pendiente responde 403 con la opción de reenviar el correo, y si es correcta regenera la sesión y devuelve la cookie \texttt{grada.sid}. El flujo está en la Figura~\ref{fig:sec-login}.
 
 \begin{figure}[htbp]
 \centering
@@ -465,7 +465,7 @@ La Figura~\ref{fig:sec-login} muestra el flujo de inicio de sesión local.
 \subsection{Inicio de sesión con Google OAuth 2.0}
 \label{sec:flujo-google}
 
-La Figura~\ref{fig:sec-google} muestra el flujo de inicio de sesión con Google.
+El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a Google; en el callback lo compara y lo borra (un solo uso) antes de cambiar el código por el perfil en el servidor, y según el email exista, esté pendiente o no exista, activa o crea la cuenta y regenera la sesión. El flujo está en la Figura~\ref{fig:sec-google}.
 
 \begin{figure}[htbp]
 \centering
@@ -509,7 +509,7 @@ La Figura~\ref{fig:sec-google} muestra el flujo de inicio de sesión con Google.
 \subsection{Darse de baja}
 \label{sec:flujo-baja}
 
-La Figura~\ref{fig:sec-baja} muestra el flujo de baja de cuenta.
+La baja pasa por un diálogo de confirmación accesible y llega al servidor protegida con \texttt{requireSelfOrRole('admin')}: se impide eliminar al último administrador, la cuenta queda como \texttt{deleted}, suelta el mote y el email, y su sesión deja de valer en la siguiente petición. El flujo está en la Figura~\ref{fig:sec-baja}.
 
 \begin{figure}[htbp]
 \centering
@@ -621,7 +621,7 @@ En la pantalla de entrar (Figura~\ref{fig:app-entrar}), el mensaje de error es i
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/03-entrar-error.png}
+\includegraphics[width=0.9\textwidth,height=0.32\textheight,keepaspectratio]{figs/capturas/app/03-entrar-error.png}
 \caption{Inicio de sesión con credenciales incorrectas: mensaje único para no revelar cuentas.}
 \label{fig:app-entrar}
 \end{figure}
@@ -653,7 +653,7 @@ Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la i
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/06-usuario-sin-permiso.png}
+\includegraphics[width=0.9\textwidth,height=0.32\textheight,keepaspectratio]{figs/capturas/app/06-usuario-sin-permiso.png}
 \caption{Usuario sin permisos intenta acceder a administración: redirección y aviso.}
 \label{fig:app-sin-permiso}
 \end{figure}
@@ -698,7 +698,7 @@ Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la i
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/13-pagina-no-encontrada.png}
+\includegraphics[width=0.9\textwidth,height=0.32\textheight,keepaspectratio]{figs/capturas/app/13-pagina-no-encontrada.png}
 \caption{Ruta inexistente: página «Fuera de juego».}
 \label{fig:app-404}
 \end{figure}
@@ -756,16 +756,21 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
-\caption{Panel de administración con todos los estados de cuenta.}
-\label{fig:hito4-admin-estados}
-\end{figure}
-
-\begin{figure}[htbp]
+\begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
-\caption{Página de política de privacidad.}
+\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
+\subcaption{Panel con todos los estados de cuenta.}
+\label{fig:hito4-admin-estados}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
+\subcaption{Política de privacidad.}
 \label{fig:hito4-privacidad}
+\end{subfigure}
+\caption{Panel de administración con todos los estados y política de privacidad.}
+\label{fig:hito4-admin-estados-privacidad}
 \end{figure}
 
 \subsection{Producción}
@@ -782,7 +787,7 @@ El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprin
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
+\includegraphics[width=0.9\textwidth,height=0.32\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
 \caption{Detalle del PBI P44 en DoneTonic: historia de usuario, criterios de aceptación y tareas.}
 \label{fig:dt-pbi-detalle}
 \end{figure}

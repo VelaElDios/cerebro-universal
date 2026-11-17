@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 01:36"
+actualizado: "2026-11-17 03:43"
 ---
 
 # memoria-procesos
@@ -10,26 +10,26 @@ actualizado: "2026-11-17 01:36"
 Temas: [[latex]] · [[memoria]] · [[tikz]] · [[pgfplots]]
 
 ## Qué es
-Memoria de la asignatura Procesos de Ingeniería del Software (curso 2026-2027) con la plantilla oficial del TFG de la ESIIAB-UCLM. Cuenta el proyecto *La Grada Colchonera* entero: el Sprint 1 (la base SaaS, P1–P19 y T1–T32) y el Sprint 2 (el juego, P20–P48 y T33–T82). La única verdad son las fuentes: el repo `la-grada-colchonera-saas` y `fuentes/`.
+Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proyecto *La Grada Colchonera*: Sprint 1 (base SaaS, P1–P19, T1–T32) y Sprint 2 (juego survivor, P20–P48, T33–T82). La única verdad son las fuentes del repo `la-grada-colchonera-saas` y `fuentes/`.
 
 ## Decisiones y convenciones
-- Se compila con LuaLaTeX; el test es `verificar.py` + `revisar_maquetacion.py` (reglas de Javier en reglas-tfg).
-- Solo la portada oficial (`elements/portada.tex`). Títulos en negro y negrita. Sin páginas en blanco.
-- Tablas con columnas `p{}` y `\addlinespace` entre filas. Capturas a `height=0.42\textheight` como mucho, agrupadas con `subfigure`.
-- Cada imagen, una sola vez; en el resto, `\ref` a la figura canónica.
-- Archivos largos: se tocan con CAMBIAR, nunca reescritos enteros.
-- Cada cifra sale de las fuentes, copiada tal cual (19 PBIs en el Sprint 1, pero el burndown de la entrega cuenta 16).
+- LuaLaTeX; prueba = `verificar.py` + `revisar_maquetacion.py` (reglas de Javier en `memoria/reglas-tfg.md`).
+- Una sola portada (`elements/portada.tex`); títulos negros negrita; sin páginas en blanco.
+- Tablas `p{}` + `\addlinespace`; capturas máx. `height=0.42\textheight` (si quedan solas, bajar a 0.30–0.32 o agrupar en `subfigure`); diagramas grandes con `adjustbox`/`max totalheight`.
+- Cada imagen una sola vez; en el resto `\ref`. Prosa de TFG: nada de «La figura X muestra…» suelta.
+- Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-Versión 4 de la spec (16/11/2026): la memoria compila y `verificar.py` pasa en estructura, pero `revisar_maquetacion.py` falla por:
-- Regla 9: página 88 casi vacía (6 palabras) — **EN CORRECCIÓN** (fusionado párrafo final de `a1-desarrollo.tex` y sección «Capturas…» integrada en «Enlaces del proyecto» en `a2-material.tex`).
-- Regla 12: frases «La figura X muestra…» eliminadas en 04-descripcion.tex, 04b-juego.tex, 03-propuesta.tex y 05-evaluacion.tex.
-- Regla 10: duplicado tablero Sprint 1 eliminado del anexo, referencia a canónica.
-- Error «Float too large» corregido reduciendo capturas a `0.42\textheight` y añadiendo `max totalheight` a diagramas TikZ.
+- Compila (96 páginas) y `verificar.py` OK (38 figuras, 29 tablas, 16.441 palabras).
+- `revisar_maquetacion.py` falla: Regla 8 (página 44, solo una imagen, 17 palabras) y Regla 9 (página 90, casi vacía, 6 palabras).
+- El revisor acaba de: acortar el párrafo de cierre de `a1-desarrollo.tex` (página 90) y, en `04-descripcion.tex`, reducir a `0.32\textheight` las figuras sueltas (app-entrar, app-sin-permiso, app-404, dt-pbi-detalle) y agrupar en `subfigure` las dos de hito4 (admin-estados + privacidad).
+- Pendiente: 3 frases «La Figura X muestra…» en `04b-juego.tex` (fig:juego-arquitectura, fig:sec-partida, fig:sec-contratar); posible discrepancia 24 vs 29 armas entre §9.3 y §14 de la fuente.
 
 ## Siguiente
-1. Ejecutar `comando_prueba` hasta que `verificar.py` y `revisar_maquetacion.py` pasen en verde.
-2. Si persiste alguna página casi vacía o con una sola imagen, ajustar agrupando capturas o fusionando secciones.
-3. Repaso final de estilo en capítulos 01, 06 y anexos: eliminar adornos, frases cortas, coherencia.
+1. Ejecutar `comando_prueba`; si falla Regla 8/9, localizar la página en el PDF y agrupar/reducir la figura suelta.
+2. Reescribir las 3 frases prohibidas de `04b-juego.tex` como prosa con `\ref`.
+3. Buscar en todos los capítulos más frases «La figura X muestra/ilustra/demuestra».
+4. Repaso de estilo en 01, 06 y anexos; unificar 24/29 armas.
+5. Cuando todo pase en verde y el revisor haya contrastado ≥25 datos, marcar TERMINADO.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

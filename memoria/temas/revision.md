@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "revision"
-notas: 1
+notas: 2
 ---
 # revision
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «revision» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «revision» (este archivo 
 
 ## Temas relacionados
 
-[[general]]
+[[general]] · [[estilo]] · [[latex]] · [[prosa]] · [[tfg]]

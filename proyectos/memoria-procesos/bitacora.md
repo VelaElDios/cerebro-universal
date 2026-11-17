@@ -9408,3 +9408,78 @@ El constructor añadió un párrafo de cierre en `a1-desarrollo.tex` y corrigió
 - Verificar que no queden frases sueltas «La figura X muestra…» en ningún capítulo (buscar patrones «La figura», «La Figura», «Figura X muestra», «Figura X ilustra», «Figura X demuestra»).
 - Repaso final de estilo en capítulos 01, 06 y anexos: eliminar adornos, frases cortas, explicar el porqué, coherencia entre capítulos.
 - Confirmar que todas las cifras del texto aparecen en las fuentes (test automático para >20, revisión manual para pequeñas).
+
+## 2026-11-17 03:27 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba falla solo por la Regla 9: la página 89 del PDF queda casi vacía (8 palabras), que es la cola del último párrafo del Anexo de desarrollo (`a1-desarrollo.tex`). Añado al final de ese anexo un párrafo de cierre con datos contrastados de las fuentes (48 PBIs y 82 tareas, más de 50 PRs, las releases, 322/276 pruebas), de modo que la última página tenga contenido real. Además, atiendo la tarea del revisor de eliminar las frases sueltas «La Figura X muestra…» en `04-descripcion.tex`, reescribiéndolas como prosa que explica qué recorre cada flujo y por qué la aplicación responde así, citando la figura dentro de la explicación.
+
+**Archivos:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 8: la página 44 del PDF tiene solo una imagen (17 palabras). Hazla más pequeña o júntala con texto u otra figura.
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` y comprobar que `verificar.py` y `revisar_maquetacion.py` pasan en verde (en especial la Regla 9: la última página del Anexo de desarrollo ya no debe quedar casi vacía). Después, eliminar las mismas frases sueltas «La figura X muestra/ilustra/demuestra…» que quedan en `chapters/04b-juego.tex` (fig:juego-arquitectura, fig:sec-partida, fig:sec-contratar) y en `chapters/05-evaluacion.tex` (fig:prueba-tecnica), reescribiéndolas como prosa; y hacer el repaso final de estilo de `01-introduccion.tex`, `06-conclusiones.tex` y los anexos (frases cortas, sin adornos, coherencia entre capítulos).
+
+## 2026-11-17 03:43 · Revisor (nvidia-revisor · mistralai/mistral-large-4-1t-a52b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 29/09/2026–27/10/2026, 19 PBIs (P1–P19), 32 tareas (T1–T32) → documentacion-tecnica.md §4.1: «Sprint 1: del 29/09/2026 al 27/10/2026. 19 PBIs (P1–P19) con 32 tareas (T1–T32)»; gestion/README.md tabla: «Sprint 1 | Del 29/09/2026 al 27/10/2026 · 19 PBIs (P1–P19) y 32 tareas (T1–T32)».
+- Sprint 2: 23/10/2026–29/10/2026, 29 PBIs (P20–P48), 50 tareas (T33–T82) → documentacion-tecnica.md §4.1: «Sprint 2: del 23/10/2026 al 29/10/2026. 29 PBIs (P20–P48) con 50 tareas (T33–T82)».
+- Product Backlog total: 48 PBIs y 82 tareas → gestion/README.md: «Product Backlog | 48 PBIs y 82 tareas, todos hechos»; 19+29=48, 32+50=82.
+- Requisitos: 13 RF (RF-01–RF-13), 20 RJ (RJ-01–RJ-20), 12 RNF (RNF-01–RNF-12) → documentacion-tecnica.md §3.1 (13 filas), §3.2 (20 filas), §3.3 (12 filas).
+- Pruebas: 322 totales = 140 Sprint 1 + 136 juego hasta Fase 6 + 46 Fase 7; 276 en main al cerrar Sprint 2 → documentacion-tecnica.md §10.2: «Total | 322 | 140 del Sprint 1 …, 136 del juego hasta la Fase 6 y 46 de la Fase 7»; gestion/README.md tabla métricas: «Pruebas automáticas en main al cerrar el sprint | 276»; 140+136=276.
+- 23 endpoints API → documentacion-tecnica.md §14: «Endpoints de la API | 23».
+- 5 migraciones (001–005) → §14 «Migraciones | 5»; §6.1 lista 001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras la baja.
+- 6 dependencias de producción → §14: «Dependencias de producción | 6 (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer)».
+- LOC: backend ~2.300, frontend ~1.150, CSS ~950, juego ~14.800 (35 módulos), tests ~5.050 → §14 tabla métricas.
+- Burndown entrega Sprint 1: pendientes 15, 9, 5, 1, 2, 0 (16 PBIs de alcance: P1–P14, P18, P19) → §4.5 tabla y gestion/README.md «Evolución del Sprint 1»: «16 en total»; 15 inicial porque P15–P17 son del Hito 4.
+- Burndown real Sprint 2: pendientes 29, 28, 11, 11, 2, 2, 2, 0 → §4.5 tabla y gestion/README.md «Evolución del Sprint 2» (23/10: 28; 24/10: 11; 26/10: 2; 29/10: 0).
+- PRs Sprint 2 por fase: #36 (23/10), #44–#52 (24/10), #53–#54 (26/10), #55 (27/10), #56 (29/10) → gestion/README.md tabla «PR | Fase | Fecha de fusión».
+- Cierres de hito Sprint 1: #9, #17, #24, #29, #32 → §4.4 «Cierres de hito: #9 (Hito 1), #17 (Hito 2), #24 (Hito 3), #29 (cierre del sprint) y #32».
+- Hito 4: PRs #37–#41, ramas reubicadas (rebase) sobre main → §4.3: «se reubicaron (rebase) sobre el main real antes de abrir los PRs (#37–#41)».
+- Cambio de alcance P19 (Cloud Run) por créditos de educación → §4.1: «se añadió el PBI P19 (despliegue en Google Cloud Run, tareas T29 y T30)».
+- URL app: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app → documentacion-tecnica.md cabecera y revision-entrega.md.
+- Repositorio: https://github.com/VelaElDios/la-grada-colchonera-saas → misma fuente.
+- Capturas DoneTonic tomadas el 29/10/2026 → gestion/README.md: «Capturas tomadas el 29/10/2026, con los dos sprints cerrados».
+- Cronología: primera entrega 12/10/2026; Hito 4 en producción 23/10/2026; fin Sprint 1 27/10/2026; fin Sprint 2 29/10/2026 → §4.6 tabla cronología.
+- bcrypt coste 10 (4 en pruebas) → §6.1 «passwordHasher.js | bcrypt (coste 10; en las pruebas, 4)»; §8 «hash bcrypt (sal, coste 10)».
+- Cookie httpOnly + secure + sameSite=lax, regeneración de sesión → §8 tabla seguridad.
+- Token HMAC-SHA256, caducidad 24 h, comparación en tiempo constante → §7.1 «caducidad 24 h», §8 «propósito y caducidad (24 h)».
+- Sesiones en servidor (express-session + PostgreSQL, tabla session) → §5.2 decisión «Sesiones en el servidor».
+- 36 jugadores = 4 porteros + 9 defensas + 13 medios + 10 delanteros → §9.3: «36 (4 porteros, 9 defensas, 13 medios, 10 delanteros)»; 4+9+13+10=36.
+- Rarezas: Leyenda 8, Épico 8, Raro 8, Común 12 → §9.3; 8+8+8+12=36.
+- 10 jefes (Guardiola, Mourinho, Cristiano, Messi, Vinicius, Yamal, Neymar, Bale, Benzema, Suárez) → §9.3 lista.
+- 29 logros y 10 equipaciones → §9.6 tabla (29 filas contadas) y §9.3 «29 … 10 equipaciones».
+- 5 ambientes (pretemporada → Copa del Rey → Liga → Champions → Mundial), cambio cada 5 min → §9.2 punto 5 y §9.3.
+- Oleada cada 30 s; jefe cada 4 oleadas, primero a 1:30 → §9.2 punto 4.
+- Paso fijo 1/60 s, azar con semilla → §9.4 «paso fijo de 1/60 s».
+- Anti-trampas: margen 15 s, máx 4 h, jefes ≤ 3 + t/50, nivel ≤ 8 + t/3, bajas ≤ 20·t + 50 → §9.5.
+- Concurrencia optimista: UPDATE … WHERE version = $n → §5.2 y §7.11.
+- 8 secretos de Secret Manager en deploy → §11: «los 8 secretos de Secret Manager».
+- CI con PostgreSQL 17 real; imagen Node 22 Alpine; Cloud Run región europe-southwest1; Neon Frankfurt; WIF → §10.1, §11.
+- Timeout api.js 15 s con AbortController → §6.3.
+- Migración 005: email único solo entre no eliminadas (índice parcial) → §6.2 y §13.
+- Discrepancia armas: §9.3 dice «24» armas/habilidades; §14 métricas dice «29 armas». La memoria usa 24 en la tabla de sistemas (04b) y 24 en métricas (05); ambos números están en las fuentes, pero conviene unificar en la próxima revisión (no bloquea el test).
+- Regla 8 (página 44, solo una imagen, 17 palabras) y Regla 9 (página 90, 6 palabras) → salida de revisar_maquetacion.py en comando_prueba: «Regla 8: la página 44 del PDF tiene solo una imagen (17 palabras)» y «Regla 9: la página 90 del PDF está casi vacía (6 palabras)».
+- Frases prohibidas pendientes en 04b-juego.tex: «La Figura~\ref{fig:juego-arquitectura} muestra…», «La Figura~\ref{fig:sec-partida} muestra…», «La Figura~\ref{fig:sec-contratar} muestra…» → regla 13 de reglas-tfg.md; no las corrige el script, las detecto yo en el código.
+
+La prueba sigue fallando por dos reglas de maquetación: la página 44 tiene una sola imagen (Regla 8) y la página 90 queda casi vacía con 6 palabras (Regla 9, cola del último párrafo de a1-desarrollo.tex). He corregido yo lo localizado: en a1-desarrollo.tex he acortado el párrafo de cierre para que no deje cola suelta, y en 04-descripcion.tex he reducido a 0.32\textheight las cinco figuras sueltas de capturas (app-entrar, app-sin-permiso, app-404, dt-pbi-detalle) y he agrupado las dos de hito4 (admin-estados y privacidad) en una figura con subfigure, para que ninguna quede sola en página. Datos contrastados con las fuentes: ver COMPROBACIONES (más de 25). Pendiente para el constructor: las tres frases «La Figura X muestra…» que quedan en 04b-juego.tex (regla 13, no la mide el script) y volver a ejecutar comando_prueba para confirmar que las páginas 44 y 90 ya no fallan; si la 44 persiste, deberá localizar en el PDF qué figura es y agruparla.
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` tras estos cambios y comprobar que `revisar_maquetacion.py` ya no marca la Regla 8 (página 44) ni la Regla 9 (página 90). Si persiste la Regla 8, abrir el PDF en la página 44, identificar qué figura queda sola y o bien agruparla en una figura con `subfigure` junto a otra captura cercana, o reducir su `height` a `0.30\textheight`; repetir hasta que ninguna página tenga una sola imagen.
+- Si persiste la Regla 9 (página casi vacía al final de `a1-desarrollo.tex`), acortar más el último párrafo o fusionarlo con el anterior («Lecciones aprendidas del Sprint 2»).
+- Corregir en `chapters/04b-juego.tex` las tres frases prohibidas por la regla 13: «La Figura~\ref{fig:juego-arquitectura} muestra la arquitectura del juego.», «La Figura~\ref{fig:sec-partida} muestra el flujo de una partida con validación en el servidor.» y «La Figura~\ref{fig:sec-contratar} muestra el flujo de contratación con concurrencia optimista.». Reescribirlas como prosa con la cita dentro del párrafo (p. ej.: «El recorrido de una partida, con la validación anti-trampas en el servidor, está en la Figura~\ref{fig:sec-partida}.»).
+- Buscar en todos los capítulos (`01`, `03`, `04`, `04b`, `05`, `06`, anexos) los patrones «La figura», «La Figura», «muestra», «ilustra», «demuestra» seguidos de `\ref` y reescribirlos como prosa.
+- Repaso final de estilo en `01-introduccion.tex`, `06-conclusiones.tex` y anexos: frases cortas, sin adornos («trasciende», «exhaustivo», «riguroso»…), coherencia entre capítulos (la descripción del pipeline se explica una vez en el Capítulo 5 y en el 3 se remite con `\ref`).
+- Unificar el dato de armas del juego: §9.3 de la fuente dice 24 armas y §14 dice 29; decidir cuál se usa en la tabla de sistemas (04b) y en métricas (05) para que coincida en toda la memoria.
+
+## 2026-11-17 03:43 · 🧠 Conocimiento guardado
+
+[[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co]] · [[discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr]]

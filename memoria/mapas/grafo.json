@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T01:36:19+01:00",
+ "generado": "2026-11-17T03:43:44+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1336,6 +1336,22 @@
    "ruta": "memoria/conocimiento/datos/datos-del-burndown-sprint-2-pbis-pendientes-por-dia.md"
   },
   {
+   "id": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "tipo": "dato",
+   "titulo": "Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)",
+   "temas": [
+    "datos",
+    "fuentes",
+    "juego",
+    "verificar"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr.md"
+  },
+  {
    "id": "dato:esquema-de-progreso-guardado-en-servidor-migracion-003-tabla",
    "tipo": "dato",
    "titulo": "Esquema de progreso guardado en servidor (migración 003, tablas y API)",
@@ -2549,6 +2565,23 @@
    "ruta": "memoria/conocimiento/recetas/arranque-de-la-aplicacion-configuracion-migraciones-y-primer.md"
   },
   {
+   "id": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "tipo": "receta",
+   "titulo": "Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height",
+   "temas": [
+    "figuras",
+    "latex",
+    "maquetacion",
+    "subcaption",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub.md"
+  },
+  {
    "id": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
    "tipo": "receta",
    "titulo": "Capítulo 3: Propuesta, metodología Scrum y herramientas sin detalles técnicos",
@@ -3186,6 +3219,23 @@
    "ruta": "memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github.md"
   },
   {
+   "id": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "tipo": "receta",
+   "titulo": "Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \\ref",
+   "temas": [
+    "estilo",
+    "latex",
+    "prosa",
+    "revision",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co.md"
+  },
+  {
    "id": "receta:generacion-de-terreno-por-ruidos-terreno-js",
    "tipo": "receta",
    "titulo": "Generación de terreno por ruidos (terreno.js)",
@@ -3654,7 +3704,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 68,
+   "peso": 70,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -3724,7 +3774,7 @@
    "id": "tema:datos",
    "tipo": "tema",
    "titulo": "datos",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/datos.md"
   },
   {
@@ -3787,7 +3837,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -3815,7 +3865,7 @@
    "id": "tema:revision",
    "tipo": "tema",
    "titulo": "revision",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/revision.md"
   },
   {
@@ -3836,7 +3886,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 29,
+   "peso": 31,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -4193,7 +4243,7 @@
    "id": "tema:juego",
    "tipo": "tema",
    "titulo": "juego",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/juego.md"
   },
   {
@@ -4300,6 +4350,20 @@
    "titulo": "hitos",
    "peso": 2,
    "ruta": "memoria/temas/hitos.md"
+  },
+  {
+   "id": "tema:fuentes",
+   "tipo": "tema",
+   "titulo": "fuentes",
+   "peso": 1,
+   "ruta": "memoria/temas/fuentes.md"
+  },
+  {
+   "id": "tema:verificar",
+   "tipo": "tema",
+   "titulo": "verificar",
+   "peso": 1,
+   "ruta": "memoria/temas/verificar.md"
   },
   {
    "id": "tema:api",
@@ -4438,7 +4502,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -4638,6 +4702,13 @@
    "ruta": "memoria/temas/migraciones.md"
   },
   {
+   "id": "tema:subcaption",
+   "tipo": "tema",
+   "titulo": "subcaption",
+   "peso": 3,
+   "ruta": "memoria/temas/subcaption.md"
+  },
+  {
    "id": "tema:capitulo-3",
    "tipo": "tema",
    "titulo": "capitulo-3",
@@ -4706,13 +4777,6 @@
    "titulo": "ui",
    "peso": 2,
    "ruta": "memoria/temas/ui.md"
-  },
-  {
-   "id": "tema:subcaption",
-   "tipo": "tema",
-   "titulo": "subcaption",
-   "peso": 2,
-   "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:subfigure",
@@ -4839,6 +4903,20 @@
    "titulo": "github",
    "peso": 1,
    "ruta": "memoria/temas/github.md"
+  },
+  {
+   "id": "tema:estilo",
+   "tipo": "tema",
+   "titulo": "estilo",
+   "peso": 1,
+   "ruta": "memoria/temas/estilo.md"
+  },
+  {
+   "id": "tema:prosa",
+   "tipo": "tema",
+   "titulo": "prosa",
+   "peso": 1,
+   "ruta": "memoria/temas/prosa.md"
   },
   {
    "id": "tema:ci",
@@ -7234,6 +7312,36 @@
   {
    "de": "dato:datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
    "a": "dato:cronologia-detallada-del-proyecto-septiembre-octubre-2026",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "tema:verificar",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
    "tipo": "enlaza"
   },
   {
@@ -10337,6 +10445,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
    "a": "tema:capitulo-3",
    "tipo": "trata"
@@ -11594,6 +11737,41 @@
   {
    "de": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
    "a": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "a": "tema:estilo",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "a": "tema:prosa",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "a": "tema:revision",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
    "tipo": "enlaza"
   },
   {

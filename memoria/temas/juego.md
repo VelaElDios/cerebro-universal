@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "juego"
-notas: 6
+notas: 7
 ---
 # juego
 
@@ -22,9 +22,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «juego» (este archivo se 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil|Requisitos funcionales del juego (Sprint 2) — 20 RJ con trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr|Tabla de trazabilidad Sprint 2: PBI → Etiqueta → Título → Tareas → PRs → Hecho → Estado]]
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[concurrencia-optimista]] · [[modelo-datos]] · [[requisitos]] · [[trazabilidad]] · [[rendimiento]] · [[fichas]] · [[anti-cheat]] · [[simulación]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[concurrencia-optimista]] · [[modelo-datos]] · [[datos]] · [[fuentes]] · [[verificar]] · [[requisitos]] · [[trazabilidad]] · [[rendimiento]] · [[fichas]]
