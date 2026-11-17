@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria-procesos"
-notas: 4
+notas: 5
 ---
 # memoria-procesos
 
@@ -15,8 +15,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas|Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)]]
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[hitos]] · [[pbi]] · [[tareas]] · [[anexos]] · [[memoria]] · [[tfg]] · [[anexo]] · [[metodologia]]
+[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[datos]] · [[fuentes]] · [[juego]] · [[verificar]] · [[metricas]] · [[hitos]] · [[pbi]] · [[tareas]]

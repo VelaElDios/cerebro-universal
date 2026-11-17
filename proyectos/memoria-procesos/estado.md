@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 03:43"
+actualizado: "2026-11-17 04:31"
 ---
 
 # memoria-procesos
@@ -20,16 +20,19 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- Compila (96 páginas) y `verificar.py` OK (38 figuras, 29 tablas, 16.441 palabras).
-- `revisar_maquetacion.py` falla: Regla 8 (página 44, solo una imagen, 17 palabras) y Regla 9 (página 90, casi vacía, 6 palabras).
-- El revisor acaba de: acortar el párrafo de cierre de `a1-desarrollo.tex` (página 90) y, en `04-descripcion.tex`, reducir a `0.32\textheight` las figuras sueltas (app-entrar, app-sin-permiso, app-404, dt-pbi-detalle) y agrupar en `subfigure` las dos de hito4 (admin-estados + privacidad).
-- Pendiente: 3 frases «La Figura X muestra…» en `04b-juego.tex` (fig:juego-arquitectura, fig:sec-partida, fig:sec-contratar); posible discrepancia 24 vs 29 armas entre §9.3 y §14 de la fuente.
+- Compila (95 páginas) y `verificar.py` OK (37 figuras, 29 tablas, 16473 palabras).
+- `revisar_maquetacion.py` falla: Regla 8 (página 43, solo una imagen, 22 palabras) y Regla 9 (página 89, casi vacía, 8 palabras).
+- El constructor corrigió la cita faltante de `fig:hito4-admin-estados-privacidad` y reescribió 3 frases prohibidas en `04b-juego.tex` (pendiente verificación en código).
+- He reducido a `0.30\textheight` cuatro figuras sueltas en `04-descripcion.tex` (app-entrar, app-sin-permiso, app-404, dt-pbi-detalle) para que no queden solas en página.
+- He acortado el párrafo final de `a1-desarrollo.tex` para evitar cola suelta en página 89.
+- Pendiente: verificar 3 frases prohibidas en `04b-juego.tex`; unificar 24/29 armas; repaso estilo global.
 
 ## Siguiente
 1. Ejecutar `comando_prueba`; si falla Regla 8/9, localizar la página en el PDF y agrupar/reducir la figura suelta.
-2. Reescribir las 3 frases prohibidas de `04b-juego.tex` como prosa con `\ref`.
-3. Buscar en todos los capítulos más frases «La figura X muestra/ilustra/demuestra».
-4. Repaso de estilo en 01, 06 y anexos; unificar 24/29 armas.
-5. Cuando todo pase en verde y el revisor haya contrastado ≥25 datos, marcar TERMINADO.
+2. Verificar y corregir las 3 frases prohibidas en `04b-juego.tex` si no están ya.
+3. Buscar en todos los capítulos más cadenas «La figura X muestra/ilustra/demuestra».
+4. Decidir unificación de armas (24 vs 29) y aplicar en 04b y 05.
+5. Repaso final de estilo en 01, 06 y anexos.
+6. Cuando todo pase en verde y el revisor haya contrastado ≥25 datos, marcar TERMINADO.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

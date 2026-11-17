@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T03:43:44+01:00",
+ "generado": "2026-11-17T04:31:59+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1343,7 +1343,9 @@
     "datos",
     "fuentes",
     "juego",
-    "verificar"
+    "verificar",
+    "memoria-procesos",
+    "metricas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3809,7 +3811,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -4366,6 +4368,13 @@
    "ruta": "memoria/temas/verificar.md"
   },
   {
+   "id": "tema:memoria-procesos",
+   "tipo": "tema",
+   "titulo": "memoria-procesos",
+   "peso": 5,
+   "ruta": "memoria/temas/memoria-procesos.md"
+  },
+  {
    "id": "tema:api",
    "tipo": "tema",
    "titulo": "api",
@@ -4385,13 +4394,6 @@
    "titulo": "done",
    "peso": 2,
    "ruta": "memoria/temas/done.md"
-  },
-  {
-   "id": "tema:memoria-procesos",
-   "tipo": "tema",
-   "titulo": "memoria-procesos",
-   "peso": 4,
-   "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
    "id": "tema:pbi",
@@ -7332,6 +7334,16 @@
   {
    "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
    "a": "tema:verificar",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "tema:metricas",
    "tipo": "trata"
   },
   {

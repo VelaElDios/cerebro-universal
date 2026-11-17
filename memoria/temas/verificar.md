@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificar» (este archivo
 
 ## Temas relacionados
 
-[[datos]] · [[fuentes]] · [[juego]]
+[[datos]] · [[fuentes]] · [[juego]] · [[memoria-procesos]] · [[metricas]]

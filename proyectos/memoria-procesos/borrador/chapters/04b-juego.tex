@@ -9,7 +9,7 @@
 \section{Cómo se juega (manual de usuario)}
 \label{sec:juego-manual}
 
-Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \texttt{\#/jugar}. En su primera visita debe elegir un \textbf{mote} (3 a 16 caracteres, único) y una \textbf{cara} para su avatar; a partir de entonces, el menú muestra a la izquierda su ficha con el mote, el avatar y sus mejores tiempos, y a la derecha las opciones principales: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes. El menú principal y el vestuario aparecen en la Figura~\ref{fig:juego-menu-vestuario} (subfiguras~\ref{fig:juego-menu} y~\ref{fig:juego-vestuario}); en el vestuario el jugador puede filtrar por posición, ver la ficha de cada futbolista (estadísticas, habilidades y equipaciones) y seleccionar su personaje y equipación.
+Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \texttt{\#/jugar}. En su primera visita debe elegir un \textbf{mote} (3 a 16 caracteres, único) y una \textbf{cara} para su avatar; a partir de entonces, el menú muestra a la izquierda su ficha con el mote, el avatar y sus mejores tiempos, y a la derecha las opciones principales: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes. El menú principal y el vestuario se ven en la Figura~\ref{fig:juego-menu-vestuario} (subfiguras~\ref{fig:juego-menu} y~\ref{fig:juego-vestuario}); en el vestuario el jugador puede filtrar por posición, ver la ficha de cada futbolista (estadísticas, habilidades y equipaciones) y seleccionar su personaje y equipación.
 
 \begin{figure}[htbp]
 \centering
@@ -32,7 +32,7 @@ Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \tex
 
 Los controles son flexibles: en teclado se usan WASD o flechas para moverse, \texttt{Espacio}/\texttt{E} para la ulti, \texttt{Esc}/\texttt{P} para pausar, \texttt{F} para pantalla completa y \texttt{1}--\texttt{3} para elegir mejora al subir de nivel; en móvil aparece un joystick táctil flotante al arrastrar. Los ajustes de volumen, gráficos, cámara y controles se guardan en \texttt{localStorage}.
 
-Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La partida en curso y la pantalla de subida de nivel aparecen en la Figura~\ref{fig:juego-partida-mejora} (subfiguras~\ref{fig:juego-partida} y~\ref{fig:juego-mejora}).
+Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La partida en curso y la pantalla de subida de nivel se ven en la Figura~\ref{fig:juego-partida-mejora} (subfiguras~\ref{fig:juego-partida} y~\ref{fig:juego-mejora}).
 
 \begin{figure}[htbp]
 \centering
@@ -53,7 +53,7 @@ Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una ol
 \label{fig:juego-partida-mejora}
 \end{figure}
 
-Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. El jefe Vinicius Jr. y el ambiente de la Final de la Copa del Rey aparecen en la Figura~\ref{fig:juego-jefe-ambiente} (subfiguras~\ref{fig:juego-jefe} y~\ref{fig:juego-final-copa}); este último se activa a partir del minuto 5; cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
+Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. El jefe Vinicius Jr. y el ambiente de la Final de la Copa del Rey se ven en la Figura~\ref{fig:juego-jefe-ambiente} (subfiguras~\ref{fig:juego-jefe} y~\ref{fig:juego-final-copa}); este último se activa a partir del minuto 5; cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
 
 \begin{figure}[htbp]
 \centering
@@ -83,7 +83,7 @@ Cuando el jugador cae, se muestra la pantalla de fin con estadísticas detallada
 \label{fig:juego-fin}
 \end{figure}
 
-El resto de pantallas del menú permiten gestionar el club y consultar el progreso (Figuras~\ref{fig:juego-club-pantallas-a} y~\ref{fig:juego-club-pantallas-b}). La figura~\ref{fig:juego-entrenamiento} muestra el entrenamiento (puntos para subir vida, defensa, disparo y suerte, con botón de modo pruebas para administradores), la figura~\ref{fig:juego-contratar} el mercado de fichajes (fichas de contrato que se ganan venciendo jefes y se canjean por jugadores sorteados por rareza), la figura~\ref{fig:juego-logros} la vitrina de logros (cada uno con un dato histórico del Atlético de Madrid), la figura~\ref{fig:juego-combinaciones} las combinaciones y ultras (metas que se activan al juntar habilidades y dan bonus, con filtros para ver requisitos y progreso), la figura~\ref{fig:juego-direccion} la dirección deportiva (elección de entrenador: Cholo Simeone o Luis Aragonés, cada uno con su ulti), la figura~\ref{fig:juego-ranking} el ranking de la grada (mejor partida de cada usuario, mostrando mote y avatar, nunca el correo), la figura~\ref{fig:juego-identidad} la pantalla «Tu ficha» (para cambiar mote y avatar) y la figura~\ref{fig:juego-ajustes} los ajustes de volumen, gráficos, cámara y controles. La figura~\ref{fig:juego-pausa} muestra el menú de pausa, accesible durante la partida.
+El resto del menú gestiona el club y consulta el progreso, y cada pantalla responde a una necesidad concreta (Figuras~\ref{fig:juego-club-pantallas-a} y~\ref{fig:juego-club-pantallas-b}). En Entrenamiento (subfigura~\ref{fig:juego-entrenamiento}) el jugador gasta los puntos ganados con bajas y jefes en subir Vida, Defensa, Disparo y Suerte, y el administrador dispone además del botón de modo pruebas. En Contratar (subfigura~\ref{fig:juego-contratar}) canjea las fichas de contrato —una por cada 3 jefes vencidos— por jugadores sorteados por rareza. La vitrina de Logros (subfigura~\ref{fig:juego-logros}) presenta cada logro junto al dato histórico del club que esconde, y la pantalla de Combinaciones (subfigura~\ref{fig:juego-combinaciones}) lista las metas y las ultras con lo que pide cada una, con filtros para ver requisitos y progreso. La Dirección (subfigura~\ref{fig:juego-direccion}) permite elegir entrenador —Cholo Simeone o Luis Aragonés, cada uno con su ulti—, el Ranking de la grada (subfigura~\ref{fig:juego-ranking}) compara la mejor partida de cada usuario mostrando mote y avatar, nunca el correo, «Tu ficha» (subfigura~\ref{fig:juego-identidad}) cambia el mote y el avatar, y Ajustes (subfigura~\ref{fig:juego-ajustes}) guarda el volumen, los gráficos, la cámara y los controles. Durante la partida, el menú de pausa (Figura~\ref{fig:juego-pausa}) da acceso a los ajustes sin salir.
 
 \begin{figure}[htbp]
 \centering
@@ -190,7 +190,7 @@ Sonido & Efectos, música chiptune original (canción por ambiente que se anima 
 \section{Arquitectura del juego}
 \label{sec:juego-arquitectura}
 
-La Figura~\ref{fig:juego-arquitectura} muestra la arquitectura del juego.
+La arquitectura del juego —simulación pura separada de la presentación y del servidor— está en la Figura~\ref{fig:juego-arquitectura}.
 
 \begin{figure}[htbp]
 \centering
@@ -284,7 +284,7 @@ Todo sintetizado con Web Audio: ondas de pulso (12,5\%, 25\% y 50\%), triángulo
 \subsection{Una partida del juego (inicio, juego y fin con validación)}
 \label{sec:juego-partida-seq}
 
-La Figura~\ref{fig:sec-partida} muestra el flujo de una partida con validación en el servidor.
+El recorrido completo de una partida —inicio, bucle de juego y fin con la validación anti-trampas en el servidor— está en la Figura~\ref{fig:sec-partida}.
 
 \begin{figure}[htbp]
 \centering
@@ -336,7 +336,7 @@ La Figura~\ref{fig:sec-partida} muestra el flujo de una partida con validación 
 \subsection{Contratar con una ficha (concurrencia optimista)}
 \label{sec:juego-contratar-seq}
 
-La Figura~\ref{fig:sec-contratar} muestra el flujo de contratación con concurrencia optimista.
+El flujo de contratar con una ficha, con la concurrencia optimista que impide gastar dos veces la misma ficha, está en la Figura~\ref{fig:sec-contratar}.
 
 \begin{figure}[htbp]
 \centering

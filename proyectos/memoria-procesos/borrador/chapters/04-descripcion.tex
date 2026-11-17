@@ -621,7 +621,7 @@ En la pantalla de entrar (Figura~\ref{fig:app-entrar}), el mensaje de error es i
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.32\textheight,keepaspectratio]{figs/capturas/app/03-entrar-error.png}
+\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/app/03-entrar-error.png}
 \caption{Inicio de sesión con credenciales incorrectas: mensaje único para no revelar cuentas.}
 \label{fig:app-entrar}
 \end{figure}
@@ -649,11 +649,11 @@ Una vez dentro, el usuario accede a «Mi cuenta» (Figura~\ref{fig:app-perfil}),
 \label{fig:app-perfil-baja}
 \end{figure}
 
-Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la interfaz lo redirige a Mi cuenta con un aviso, pero la protección real está en el servidor: la API responde 403 \texttt{FORBIDDEN} (Figura~\ref{fig:app-sin-permiso}). El panel de administración (Figura~\ref{fig:app-admin-full}; detalle en la Figura~\ref{fig:app-admin}) muestra contadores totales, un buscador por email y una tabla con email, rol, estado, fecha de alta y acciones (cambiar rol, ver si está activo, eliminar). La búsqueda filtra en cliente y muestra estado vacío con botón «Limpiar búsqueda» si no hay coincidencias (Figura~\ref{fig:app-admin-busqueda}). En móvil, la tabla se convierte en tarjetas (Figura~\ref{fig:app-admin-movil}) y el menú se pliega (Figura~\ref{fig:app-perfil-movil}); el conjunto aparece en la Figura~\ref{fig:app-responsive}. Las rutas inexistentes muestran la página «Fuera de juego» (Figura~\ref{fig:app-404}).
+Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la interfaz lo redirige a Mi cuenta con un aviso, pero la protección real está en el servidor: la API responde 403 \texttt{FORBIDDEN} (Figura~\ref{fig:app-sin-permiso}). El panel de administración (Figura~\ref{fig:app-admin-full}; detalle en la Figura~\ref{fig:app-admin}) muestra contadores totales, un buscador por email y una tabla con email, rol, estado, fecha de alta y acciones (cambiar rol, ver si está activo, eliminar). La búsqueda filtra en cliente y muestra estado vacío con botón «Limpiar búsqueda» si no hay coincidencias (Figura~\ref{fig:app-admin-busqueda}). En móvil, la tabla se convierte en tarjetas (Figura~\ref{fig:app-admin-movil}) y el menú se pliega (Figura~\ref{fig:app-perfil-movil}); el conjunto se recoge en la Figura~\ref{fig:app-responsive}. Las rutas inexistentes muestran la página «Fuera de juego» (Figura~\ref{fig:app-404}).
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.32\textheight,keepaspectratio]{figs/capturas/app/06-usuario-sin-permiso.png}
+\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/app/06-usuario-sin-permiso.png}
 \caption{Usuario sin permisos intenta acceder a administración: redirección y aviso.}
 \label{fig:app-sin-permiso}
 \end{figure}
@@ -698,14 +698,14 @@ Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la i
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.32\textheight,keepaspectratio]{figs/capturas/app/13-pagina-no-encontrada.png}
+\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/app/13-pagina-no-encontrada.png}
 \caption{Ruta inexistente: página «Fuera de juego».}
-\label{fig:app-404}
+\label{fig:app:404}
 \end{figure}
 
 \subsection{Hito 4: correo y Google}
 
-El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (Figura~\ref{fig:hito4-flujo}). En la pantalla de entrar aparece el botón «Entrar con Google» (Figura~\ref{fig:hito4-google}), que inicia el flujo OAuth 2.0 con \texttt{state} anti-CSRF guardado en la sesión. Al registrarse con email y contraseña, la cuenta queda \texttt{pending} y se muestra el aviso «Te hemos enviado un correo de confirmación» (Figura~\ref{fig:hito4-correo}). Si el usuario intenta entrar antes de confirmar, recibe el error «Debes confirmar tu correo» con el botón «Reenviar el correo de confirmación» (Figura~\ref{fig:hito4-pendiente}); el reenvío responde 202 sin revelar si la cuenta existe. Un enlace manipulado o caducado muestra un aviso rojo y la cuenta sigue pendiente (Figura~\ref{fig:hito4-enlace-invalido}); un enlace válido activa la cuenta y redirige a entrar con aviso verde «Cuenta confirmada, ya puedes entrar» (Figura~\ref{fig:hito4-confirmada}). Si el usuario entra con Google y el email no existía, se crea la cuenta ya activa con \texttt{authProvider: google} y aparece el aviso «Cuenta creada con tu cuenta de Google» (Figura~\ref{fig:hito4-google-creada}). El panel de administración muestra todos los estados: activas, pendientes, eliminadas, locales y de Google (Figura~\ref{fig:hito4-admin-estados}). La política de privacidad es accesible desde el pie de página (Figura~\ref{fig:hito4-privacidad}).
+El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (Figura~\ref{fig:hito4-flujo}). En la pantalla de entrar aparece el botón «Entrar con Google» (Figura~\ref{fig:hito4-google}), que inicia el flujo OAuth 2.0 con \texttt{state} anti-CSRF guardado en la sesión. Al registrarse con email y contraseña, la cuenta queda \texttt{pending} y se muestra el aviso «Te hemos enviado un correo de confirmación» (Figura~\ref{fig:hito4-correo}). Si el usuario intenta entrar antes de confirmar, recibe el error «Debes confirmar tu correo» con el botón «Reenviar el correo de confirmación» (Figura~\ref{fig:hito4-pendiente}); el reenvío responde 202 sin revelar si la cuenta existe. Un enlace manipulado o caducado muestra un aviso rojo y la cuenta sigue pendiente (Figura~\ref{fig:hito4-enlace-invalido}); un enlace válido activa la cuenta y redirige a entrar con aviso verde «Cuenta confirmada, ya puedes entrar» (Figura~\ref{fig:hito4-confirmada}). Si el usuario entra con Google y el email no existía, se crea la cuenta ya activa con \texttt{authProvider: google} y aparece el aviso «Cuenta creada con tu cuenta de Google» (Figura~\ref{fig:hito4-google-creada}). El panel de administración muestra todos los estados de cuenta (activas, pendientes, eliminadas, locales y de Google) y la política de privacidad es accesible desde el pie de página; ambas vistas se recogen juntas en la Figura~\ref{fig:hito4-admin-estados-privacidad} (subfiguras~\ref{fig:hito4-admin-estados} y~\ref{fig:hito4-privacidad}).
 
 \begin{figure}[htbp]
 \centering
@@ -787,7 +787,7 @@ El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprin
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.9\textwidth,height=0.32\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
+\includegraphics[width=0.9\textwidth,height=0.30\textheight,keepaspectratio]{figs/capturas/donetonic/08-pbi-detalle.png}
 \caption{Detalle del PBI P44 en DoneTonic: historia de usuario, criterios de aceptación y tareas.}
 \label{fig:dt-pbi-detalle}
 \end{figure}

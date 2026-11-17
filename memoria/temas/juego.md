@@ -28,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «juego» (este archivo se 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[concurrencia-optimista]] · [[modelo-datos]] · [[datos]] · [[fuentes]] · [[verificar]] · [[requisitos]] · [[trazabilidad]] · [[rendimiento]] · [[fichas]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[concurrencia-optimista]] · [[modelo-datos]] · [[datos]] · [[fuentes]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[requisitos]] · [[trazabilidad]]

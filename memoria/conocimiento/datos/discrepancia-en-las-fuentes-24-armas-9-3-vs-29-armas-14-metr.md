@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)"
-temas: ["datos", "fuentes", "juego", "verificar"]
+temas: ["datos", "fuentes", "juego", "verificar", "memoria-procesos", "metricas"]
 claves: ["24 armas", "29 armas", "config.js", "documentacion-tecnica.md §9.3 §14"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md"]
@@ -18,5 +18,8 @@ Ambas cifras están en la fuente, así que el test no falla, pero la memoria deb
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
 Relacionado: [[numeros-clave-del-proyecto-contrastados-con-fuentes]]
+
+## Ampliación (2026-11-17, memoria-procesos)
+La discrepancia está documentada en la bitácora 2026-11-17 03:43. La tabla de sistemas (§9.3) dice «24 armas» y la tabla de métricas (§14) dice «29 armas». En la memoria actual, la Tabla~\ref{tab:juego-sistemas} (04b-juego.tex) usa 24 y la Tabla~\ref{tab:metricas} (05-evaluacion.tex) usa 24. Hay que unificar. Lo ideal es contar en `public/js/game/config.js` el array `ARMAS` y usar esa cifra real.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
