@@ -10097,3 +10097,61 @@ He revisado el borrador del 17/11. Los **diagramas** no están bien; arregladlos
 - **Figura 4.7 (arquitectura del juego):** la caja de config.js está pisada por la de juego.js, y las flechas verticales atraviesan todas las cajas (armas.js, combate.js...). Rehacedla con las cajas separadas y las flechas entre cajas, sin cruzar ninguna.
 
 Siempre: cualquier diagrama tiene que verse claro y a buen tamaño en el PDF.
+
+## 2026-11-17 19:27 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Paso 2: eliminar imágenes duplicadas entre capítulos. Se han identificado duplicados de capturas de DoneTonic (tablero Sprint 1, backlog, detalle PBI y tareas Sprint 2) que aparecen tanto en el capítulo 3 (propuesta), capítulo 4 (descripción) y anexo A1 (desarrollo). Se decide mantener cada imagen una sola vez: tablero Sprint 1 y backlog en capítulo 3; gráficas Sprint 1, tablero Sprint 2, gráficas Sprint 2, detalle PBI y tareas Sprint 2 en anexo A1. En capítulo 4 se reemplazan las figuras duplicadas por referencias `\ref` a las figuras canónicas. También se corrige la referencia al backlog para que apunte al capítulo 3.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\t») chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\t») chapters/a1-desarrollo.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{subfigure}{0.48\textw») chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 9 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Paso 3: reescribir la sección «La aplicación» del capítulo 04-descripcion.tex como prosa integrada, agrupando capturas relacionadas en subfiguras y eliminando frases sueltas tipo «La figura X muestra…». Luego paso 4: hacer lo mismo con el manual del juego en 04b-juego.tex.
+
+## 2026-11-17 19:29 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test `comando_prueba` falla: 9 problemas (7 referencias rotas a `fig:donetonic-backlog`, faltan capturas DoneTonic - solo 4 distintas vs 5 mínimas, PDF con "??")
+- Compilación LaTeX: warnings de referencias indefinidas `fig:donetonic-backlog` en 7 ubicaciones (líneas 30, 805 en 04-descripcion.tex; 203, 205, 214, 377 en a1-desarrollo.tex; 31 en a2-material.tex)
+- Capturas DoneTonic disponibles en repo: 8 archivos (01-tablero-sprint, 02-graficas-sprint, 03-backlog, 04-tablero-sprint2, 05-sprint2-tareas-hechas, 06-graficas-sprint2, 07-graficas-backlog, 08-pbi-detalle). El test detecta solo 4 usadas en el documento.
+- El constructor intentó eliminar duplicados pero rompió las referencias: la figura `fig:donetonic-backlog` se referencia en 3 capítulos pero su definición (`\label{fig:donetonic-backlog}`) parece haber sido eliminada o movida sin actualizar las referencias.
+- Paso 1 (preambulo.tex) ya verificado y aprobado en paso anterior.
+- Reglas de Javier 16-18 (diagramas) pendientes para siguiente fase (feedback humano del 17/11).
+
+El constructor ejecutó el paso 2 (eliminar imágenes duplicadas) pero la implementación tiene fallos críticos:
+1. **Referencias rotas**: `fig:donetonic-backlog` se usa en 04-descripcion.tex, a1-desarrollo.tex y a2-material.tex pero la figura con ese label no existe en el documento compilado.
+2. **Capturas insuficientes**: El test exige ≥5 capturas distintas de DoneTonic; solo detecta 4. Faltan al menos: backlog, tablero sprint 2, gráficas sprint 2, detalle PBI, tareas sprint 2.
+3. **Cambios no aplicados**: Varios bloques `CAMBIAR` en a1-desarrollo.tex fallaron porque el texto buscado no coincidía (el archivo ya tenía otro contenido).
+4. **Estrategia de duplicados**: La decisión de mantener backlog en capítulo 3 (propuesta) es correcta, pero hay que asegurar que la figura exista allí con el label correcto y que el resto de capítulos usen `\ref{fig:donetonic-backlog}`.
+
+Lo que está bien: la idea de centralizar cada captura en un solo capítulo y referenciarla en los demás.
+Lo que está mal: ejecución incompleta, labels rotos, capturas mínimas no alcanzadas.
+
+**Correcciones del revisor:** `(no aplicado: no encuentro el texto: «\bottomrule
+\end{table}
+
+El entorno usa un mismo lenguaje en») chapters/03-propuesta.tex`, `(no aplicado: no encuentro el texto: «El Product Backlog de DoneTonic con los dos sprints se muest») chapters/04-descripcion.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a2-material.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para verificar que compila, `verificar.py` pasa y `revisar_maquetacion.py` pasa (especialmente: referencias resueltas, ≥5 capturas DoneTonic, sin "??").
+- Si persisten referencias rotas, buscar todas las ocurrencias de `fig:donetonic-backlog` y asegurar que la figura existe en 03-propuesta.tex con `\label{fig:donetonic-backlog}`.
+- Verificar que las 5+ capturas DoneTonic distintas aparecen en el PDF: backlog (03-backlog.png), gráficas S1 (02-graficas-sprint.png), tablero S2 (04-tablero-sprint2.png), gráficas S2 (06-graficas-sprint2.png), detalle PBI (08-pbi-detalle.png), tareas S2 (05-sprint2-tareas-hechas.png). Al menos 5 de estas 6.
+- Tras pasar el test, continuar con paso 3: reescribir sección «La aplicación» en 04-descripcion.tex como prosa integrada con subfiguras (eliminar frases «La figura X muestra…»).
+- Luego paso 4: mismo tratamiento para manual del juego en 04b-juego.tex.
+- Pendiente para fase posterior: arreglar diagramas según reglas 16-18 de Javier (feedback humano 17/11): fig:capas (flecha cruza caja, rutas partidas), diagramas de secuencia con >6 participantes (fig:sec-registro), fig:juego-arquitectura (cajas pisadas, flechas cruzan).
+
+## 2026-11-17 19:29 · 🧠 Conocimiento guardado
+
+[[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]]

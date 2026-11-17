@@ -4,8 +4,8 @@
    "id": "proyecto:preguntas",
    "type": "file",
    "file": "proyectos/preguntas/bitacora.md",
-   "x": -469,
-   "y": 1004,
+   "x": -478,
+   "y": 918,
    "width": 380,
    "height": 130,
    "color": "6"
@@ -14,8 +14,8 @@
    "id": "tema:conocimiento",
    "type": "file",
    "file": "memoria/temas/conocimiento.md",
-   "x": 218,
-   "y": 428,
+   "x": 213,
+   "y": 338,
    "width": 380,
    "height": 110,
    "color": "5"

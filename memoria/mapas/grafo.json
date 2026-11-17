@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T18:42:18+01:00",
+ "generado": "2026-11-17T19:29:37+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2922,6 +2922,21 @@
    "ruta": "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md"
   },
   {
+   "id": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "tipo": "dato",
+   "titulo": "Inventario de capturas DoneTonic requeridas y disponibles",
+   "temas": [
+    "capturas",
+    "donetonic",
+    "memoria"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md"
+  },
+  {
    "id": "dato:latencias-de-ejecucion-fp-en-el-ejemplo-del-marcador-ciclos",
    "tipo": "dato",
    "titulo": "Latencias de ejecución FP en el ejemplo del marcador (ciclos 16-22)",
@@ -3718,6 +3733,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md"
+  },
+  {
+   "id": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "tipo": "decision",
+   "titulo": "Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)",
+   "temas": [
+    "diagramas",
+    "latex",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1.md"
   },
   {
    "id": "decision:bloqueo-de-fadd-d-por-peligro-waw-en-registro-f6-hasta-ciclo",
@@ -5582,6 +5613,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-caracterizar-la-topologia-hardware-con-lstopo-tarea-1-1.md"
+  },
+  {
+   "id": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
+   "tipo": "receta",
+   "titulo": "Cómo centralizar capturas duplicadas entre capítulos en LaTeX",
+   "temas": [
+    "figuras",
+    "latex",
+    "memoria"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late.md"
   },
   {
    "id": "receta:como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria",
@@ -7746,21 +7792,21 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 96,
+   "peso": 98,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 46,
+   "peso": 48,
    "ruta": "memoria/temas/memoria.md"
   },
   {
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 14,
+   "peso": 15,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -7872,7 +7918,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -7893,7 +7939,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -8124,7 +8170,7 @@
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 44,
+   "peso": 45,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
@@ -9605,6 +9651,13 @@
    "ruta": "memoria/temas/cdc6600.md"
   },
   {
+   "id": "tema:capturas",
+   "tipo": "tema",
+   "titulo": "capturas",
+   "peso": 2,
+   "ruta": "memoria/temas/capturas.md"
+  },
+  {
    "id": "tema:fadd.d",
    "tipo": "tema",
    "titulo": "fadd.d",
@@ -9948,6 +10001,13 @@
    "ruta": "memoria/temas/implementaciones.md"
   },
   {
+   "id": "tema:diagramas",
+   "tipo": "tema",
+   "titulo": "diagramas",
+   "peso": 5,
+   "ruta": "memoria/temas/diagramas.md"
+  },
+  {
    "id": "tema:bloqueo-emision",
    "tipo": "tema",
    "titulo": "bloqueo-emision",
@@ -10058,13 +10118,6 @@
    "titulo": "decisiones",
    "peso": 1,
    "ruta": "memoria/temas/decisiones.md"
-  },
-  {
-   "id": "tema:diagramas",
-   "tipo": "tema",
-   "titulo": "diagramas",
-   "peso": 4,
-   "ruta": "memoria/temas/diagramas.md"
   },
   {
    "id": "tema:riesgo-war",
@@ -10800,13 +10853,6 @@
    "titulo": "linux",
    "peso": 1,
    "ruta": "memoria/temas/linux.md"
-  },
-  {
-   "id": "tema:capturas",
-   "tipo": "tema",
-   "titulo": "capturas",
-   "peso": 1,
-   "ruta": "memoria/temas/capturas.md"
   },
   {
    "id": "tema:figura",
@@ -17300,6 +17346,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:latencias-de-ejecucion-fp-en-el-ejemplo-del-marcador-ciclos",
    "a": "tema:ac",
    "tipo": "trata"
@@ -18928,6 +18994,31 @@
    "de": "decision:arquitectura-en-capas-con-inyeccion-de-dependencias-permitio",
    "a": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:bloqueo-de-fadd-d-por-peligro-waw-en-registro-f6-hasta-ciclo",
@@ -23873,6 +23964,26 @@
    "de": "receta:como-caracterizar-la-topologia-hardware-con-lstopo-tarea-1-1",
    "a": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria",

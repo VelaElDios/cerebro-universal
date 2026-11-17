@@ -1,4 +1,10 @@
 {
+ "memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-node-js-express-postg.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 1
+ },
  "memoria/conocimiento/conceptos/definicion-de-hecho-dod-para-tareas-hitos-y-fases.md": {
   "bien": 0,
   "mal": 0,
@@ -23,6 +29,24 @@
   "ultimo": "2026-11-17",
   "usos": 1
  },
+ "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 1
+ },
+ "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 1
+ },
+ "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 1
+ },
  "memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d.md": {
   "bien": 1,
   "mal": 0,
@@ -35,11 +59,17 @@
   "ultimo": "2026-11-17",
   "usos": 1
  },
+ "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 1
+ },
  "memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente.md": {
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-17",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 0,

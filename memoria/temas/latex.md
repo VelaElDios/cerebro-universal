@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 96
+notas: 98
 ---
 # latex
 
@@ -25,6 +25,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/corregir-paginas-con-una-sola-imagen-regla-8|Corregir páginas con una sola imagen (Regla 8)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex|Cómo agrupar capturas con subfigure en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas con subfigure en LaTeX para manuales de usuario]]
+- 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
 - 🧪 [[memoria/conocimiento/recetas/como-estructurar-el-csv-de-entrada-para-la-plantilla-sus|Cómo estructurar el CSV de entrada para la plantilla SUS]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
@@ -58,6 +59,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]

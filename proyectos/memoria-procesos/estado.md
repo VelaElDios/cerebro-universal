@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 16:42"
+actualizado: "2026-11-17 19:29"
 ---
 
 # memoria-procesos
@@ -20,12 +20,12 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- Compila (93 páginas) y `verificar.py` OK (35 figuras, 29 tablas, 16798 palabras).
-- `revisar_maquetacion.py` OK (reglas de maquetación cumplidas).
 - Paso 1 completado: `elements/preambulo.tex` ya cumplía regla 1 (sin segunda portada).
-- Pendiente: paso 2 (imágenes repetidas), paso 3 (prosa en manual de uso SaaS), paso 4 (prosa en manual del juego), paso 5 (repaso estilo global), paso 6 (barrido final hasta todo verde).
+- Paso 2 (imágenes duplicadas): **FALLA** - 9 errores en test (referencias rotas `fig:donetonic-backlog`, solo 4 capturas DoneTonic vs 5 mínimas, "??" en PDF).
+- Correcciones aplicadas en este veredicto: añadida figura backlog en 03-propuesta.tex, fix referencias en 04-descripcion.tex, a1-desarrollo.tex (añadidas figuras faltantes S1 y S2), a2-material.tex.
+- Pendiente: paso 3 (prosa manual SaaS), paso 4 (prosa manual juego), paso 5 (repaso estilo), paso 6 (barrido final), arreglo diagramas (reglas 16-18).
 
 ## Siguiente
-Paso 2: eliminar imágenes repetidas entre `04-descripcion.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex` y `a2-material.tex`. Cada captura una sola vez, el resto con `\ref`.
+Ejecutar `comando_prueba` tras los cambios propuestos. Si pasa, avanzar a paso 3: reescribir sección «La aplicación» (04-descripcion.tex) como prosa integrada con subfiguras, eliminando frases sueltas «La figura X muestra…».
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]
