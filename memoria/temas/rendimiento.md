@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "rendimiento"
-notas: 34
+notas: 39
 ---
 # rendimiento
 
@@ -13,6 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 - 🧪 [[memoria/conocimiento/recetas/comparacion-de-maquinas-por-tiempo-total-de-ejecucion-de-mul|Comparación de máquinas por tiempo total de ejecución de múltiples programas]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-a-partir-de-tiempos-por-tipo-de-instruccion-y|Cálculo de CPI a partir de tiempos por tipo de instrucción y frecuencia]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-dado-frecuencia-de-reloj-y-conteo-de-instrucc|Cálculo de CPI dado frecuencia de reloj y conteo de instrucciones por tipo (Ejercicio 22c)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-pipeline-con-stalls-y-tras-optimizacion|Cálculo de CPI en pipeline con stalls y tras optimización]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas|Cálculo de CPI medio, MIPS y speedup entre dos máquinas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co|Cálculo de MIPS nativos y de pico (peak MIPS) para máquinas con CPI variable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-reduccion-de-tiempo-total-al-mejorar-un-tipo-de-i|Cálculo de reducción de tiempo total al mejorar un tipo de instrucción (Ejercicio 22)]] · ⚠️ propuesto
@@ -38,9 +39,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura|Ecuación fundamental del tiempo de ejecución en arquitectura de computadores]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/impacto-de-la-frecuencia-de-saltos-en-el-ilp-y-tamano-de-blo|Impacto de la frecuencia de saltos en el ILP y tamaño de bloque básico]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aplicada-a-mejora-de-disco|Ley de Amdahl aplicada a mejora de disco]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aceleracion-maxima-limitada-por-fraccion-mejor|Ley de Amdahl: aceleración máxima limitada por fracción mejorable]]
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-formula-del-tiempo-de-ejecucion-nuevo|Ley de Amdahl: fórmula del tiempo de ejecución nuevo]]
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-mejora-en-fraccion-pequena-ley-de-amdahl|Limitación de mejora en fracción pequeña (ley de Amdahl)]]
+- 💡 [[memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-tiempo-de-ejecucion-de-programas|Mejor medida de rendimiento: tiempo de ejecución de programas reales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/metricas-de-rendimiento-latencia-vs-throughput-ancho-de-band|Métricas de rendimiento: Latencia vs Throughput (Ancho de banda)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/punto-de-inflexion-knee-del-modelo-roofline-mononucleo|Punto de inflexión (knee) del modelo Roofline mononúcleo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/punto-de-inflexion-knee-del-modelo-roofline-i-knee-gflops-ma|Punto de inflexión (knee) del modelo Roofline: I_KNEE = GFLOPS_MAX / BW_DRAM]]
@@ -50,9 +54,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/comparativa-de-ciclos-por-dato-bucle-original-vs-desenrollad|Comparativa de ciclos por dato: bucle original vs desenrollado vs desenrollado+planificado vs segmentación software]]
+- 📊 [[memoria/conocimiento/datos/calculo-de-speedup-reduccion-25-tiempo-speedup-33-3|Cálculo de speedup: reducción 25% tiempo → speedup 33,3%]]
 - 📊 [[memoria/conocimiento/datos/ejercicio-de-participacion-en-clase-mejora-de-multiplicacion|Ejercicio de participación en clase: mejora de multiplicación para speedup 5x con 96s de 120s]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/resultado-numerico-disco-4-mas-rapido-para-speedup-3-requier|Resultado numérico: disco 4× más rápido para speedup 3× requiere 89 % de uso]]
 
 ## Temas relacionados
 
-[[ac]] · [[cpi]] · [[ley-amdahl]] · [[roofline]] · [[frecuencia-reloj]] · [[arquitectura-computadores]] · [[grada-colchonera]] · [[mips]] · [[speedup]] · [[tiempo-ejecucion]] · [[ley-de-amdahl]] · [[cuellos-botella]]
+[[ac]] · [[cpi]] · [[ley-amdahl]] · [[roofline]] · [[frecuencia-reloj]] · [[arquitectura-computadores]] · [[grada-colchonera]] · [[mips]] · [[speedup]] · [[tiempo-ejecucion]] · [[bloque básico]] · [[ilp]]

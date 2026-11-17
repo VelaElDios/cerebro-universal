@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "loop-unrolling"
-notas: 7
+notas: 8
 ---
 # loop-unrolling
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «loop-unrolling» (este ar
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e|Desenrollamiento de bucle mínimo para eliminar detenciones en RISC-V]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado|Desenrollamiento de bucles (loop unrolling) 4x con renombrado de registros en RISC-V]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-4x-con-planificacion-para-elimina|Desenrollamiento de bucles 4x con planificación para eliminar detenciones (RISC-V)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/eliminacion-de-dependencias-de-nombre-mediante-renombrado-de|Eliminación de dependencias de nombre mediante renombrado de registros en desenrollamiento]] · ⚠️ propuesto
@@ -25,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «loop-unrolling» (este ar
 
 ## Temas relacionados
 
-[[ac]] · [[planificacion-estatica]] · [[risc-v]] · [[optimizacion-compilador]] · [[tradeoffs]] · [[comparativa]] · [[software-pipelining]] · [[bibliografia]] · [[hennessy-patterson]] · [[ortega-anguita-prieto]] · [[scoreboard]] · [[tomasulo]]
+[[ac]] · [[planificacion-estatica]] · [[software-pipelining]] · [[risc-v]] · [[optimizacion-compilador]] · [[tradeoffs]] · [[comparativa]] · [[bibliografia]] · [[hennessy-patterson]] · [[ortega-anguita-prieto]] · [[scoreboard]] · [[tomasulo]]

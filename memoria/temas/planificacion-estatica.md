@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "planificacion-estatica"
-notas: 12
+notas: 17
 ---
 # planificacion-estatica
 
@@ -10,7 +10,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-estatica» 
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-4x-con-planificacion-para-elimina|Desenrollamiento de bucles 4x con planificación para eliminar detenciones (RISC-V)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/desenrollamiento-y-segmentacion-software-con-latencia-fadd-d|Desenrollamiento y segmentación software con latencia fadd.d 5 ciclos (Ejercicio 5)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/desenrollar-bucle-2x-y-planificar-para-latencias-fp-dadas-ej|Desenrollar bucle 2x y planificar para latencias FP dadas (Ejercicio 1)]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollar-bucle-minimo-para-planificar-sin-detenciones-eje|Desenrollar bucle mínimo para planificar sin detenciones (Ejercicio 3)]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollar-bucle-para-eliminar-dependencias-y-maximizar-ilp|Desenrollar bucle para eliminar dependencias y maximizar ILP (Ejercicio 2)]]
 - 🧪 [[memoria/conocimiento/recetas/kernel-de-segmentacion-software-para-bucle-de-acumulacion-in|Kernel de segmentación software para bucle de acumulación inversa en RISC-V]]
+- 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-bucle-con-mul|Segmentación software (software pipelining) para bucle con mul y add (Ejercicio 4)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-suma-vectoria|Segmentación software (software pipelining) para suma vectorial en RISC-V]]
 
 ## Decisiones (y por qué)
@@ -33,4 +38,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-estatica» 
 
 ## Temas relacionados
 
-[[ac]] · [[risc-v]] · [[loop-unrolling]] · [[software-pipelining]] · [[ilp]] · [[tradeoffs]] · [[trace-scheduling]] · [[delayed-branch]] · [[comparativa]] · [[compilador]] · [[control-hardware]] · [[salto-retardado]]
+[[ac]] · [[risc-v]] · [[desenrollamiento]] · [[loop-unrolling]] · [[software-pipelining]] · [[ilp]] · [[segmentacion-software]] · [[tradeoffs]] · [[trace-scheduling]] · [[delayed-branch]] · [[comparativa]] · [[compilador]]

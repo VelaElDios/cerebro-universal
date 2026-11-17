@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "software-pipelining"
-notas: 3
+notas: 5
 ---
 # software-pipelining
 
@@ -9,6 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «software-pipelining» (es
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e|Desenrollamiento de bucle mínimo para eliminar detenciones en RISC-V]]
+- 🧪 [[memoria/conocimiento/recetas/parametros-estandar-para-ejercicios-de-segmentacion-software|Parámetros estándar para ejercicios de segmentación software en RISC-V (Tema 3)]]
 - 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-suma-vectoria|Segmentación software (software pipelining) para suma vectorial en RISC-V]]
 
 ## Conceptos
@@ -18,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «software-pipelining» (es
 
 ## Temas relacionados
 
-[[ac]] · [[planificacion-estatica]] · [[comparativa]] · [[loop-unrolling]] · [[ilp]] · [[trace-scheduling]] · [[risc-v]] · [[segmentacion-software]]
+[[ac]] · [[planificacion-estatica]] · [[loop-unrolling]] · [[pipeline]] · [[riscv]] · [[comparativa]] · [[ilp]] · [[trace-scheduling]] · [[risc-v]] · [[segmentacion-software]]

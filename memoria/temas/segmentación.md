@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "segmentación"
-notas: 2
+notas: 3
 ---
 # segmentación
 
@@ -14,7 +14,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «segmentación» (este arc
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-sisd-componentes-y-tecnicas-ilp-segmentacion-su|Arquitectura SISD: componentes y técnicas ILP (segmentación, superescalar, VLIW)]]
+- 💡 [[memoria/conocimiento/conceptos/ventaja-real-del-pipeline-mayor-throughput-instrucciones-uni|Ventaja real del pipeline: mayor throughput (instrucciones/unidad tiempo)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[ilp]] · [[monoprocesador]] · [[sisd]] · [[superescalar]] · [[vliw]] · [[ciclo-máquina]] · [[latencia]] · [[pipelining]] · [[throughput]]
+[[ac]] · [[ilp]] · [[monoprocesador]] · [[sisd]] · [[superescalar]] · [[vliw]] · [[pipeline]] · [[ciclo-máquina]] · [[latencia]] · [[pipelining]] · [[throughput]]

@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "almacenamiento"
-notas: 1
+notas: 2
 ---
 # almacenamiento
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «almacenamiento» (este archivo se genera solo).
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la|Diferencia entre buffers de carga y de almacenamiento en la simulación]]
 
 ## Datos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «almacenamiento» (este ar
 
 ## Temas relacionados
 
-[[ac]] · [[disco duro]] · [[ley de amdahl]] · [[speedup]]
+[[ac]] · [[buffers]] · [[carga]] · [[tomasulo]] · [[disco duro]] · [[ley de amdahl]] · [[speedup]]

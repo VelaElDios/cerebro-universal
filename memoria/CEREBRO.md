@@ -44,8 +44,8 @@ buscar con RAG y, en el futuro, para entrenar una IA local. (este archivo se gen
 
 ## Ahora mismo
 
-1048 nodos y 3335 relaciones: 5 📁 proyecto, 531 🔵 tema, 33 ⚠️ leccion, 128 💡 concepto, 185 🧪 receta, 58 ⚖️ decision, 81 📊 dato, 27 📚 fuente · actualizado 2026-11-17 21:05
+1371 nodos y 4454 relaciones: 5 📁 proyecto, 673 🔵 tema, 33 ⚠️ leccion, 211 💡 concepto, 238 🧪 receta, 68 ⚖️ decision, 109 📊 dato, 34 📚 fuente · actualizado 2026-11-17 22:07
 
 ## Temas principales
 
-[[ac]] (253) · [[grada-colchonera]] (131) · [[saas]] (105) · [[latex]] (98) · [[scrum]] (50) · [[memoria]] (48) · [[donetonic]] (45) · [[tfg]] (43) · [[sprint]] (35) · [[arquitectura-computadores]] (34) · [[rendimiento]] (34) · [[scoreboard]] (22) · [[roofline]] (20) · [[arquitectura]] (18) · [[pipeline]] (18) · [[ley-amdahl]] (17) · [[cpi]] (17) · [[benchmark]] (16) · [[tikz]] (15) · [[ilp]] (14) · [[lua]] (12) · [[figuras]] (12) · [[cerebro]] (12) · [[planificacion-estatica]] (12) · [[benchmarking]] (12) · [[perf]] (12) · [[sus]] (11) · [[usabilidad]] (11) · [[procesos]] (11) · [[speedup]] (11)
+[[ac]] (434) · [[grada-colchonera]] (131) · [[saas]] (105) · [[latex]] (98) · [[prediccion-saltos]] (71) · [[tomasulo]] (68) · [[arquitectura]] (54) · [[scrum]] (50) · [[memoria]] (48) · [[donetonic]] (45) · [[tfg]] (43) · [[arquitectura-computadores]] (43) · [[rendimiento]] (39) · [[pipeline]] (38) · [[sprint]] (35) · [[scoreboard]] (28) · [[ilp]] (22) · [[cpi]] (22) · [[planificacion-dinamica]] (21) · [[roofline]] (20) · [[planificacion-estatica]] (17) · [[ley-amdahl]] (17) · [[benchmark]] (16) · [[tikz]] (15) · [[speedup]] (13) · [[lua]] (12) · [[figuras]] (12) · [[dependencias]] (12) · [[cerebro]] (12) · [[simulacion]] (12)

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "speedup"
-notas: 11
+notas: 13
 ---
 # speedup
 
@@ -10,7 +10,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «speedup» (este archivo s
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas|Cálculo de CPI medio, MIPS y speedup entre dos máquinas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s|Cálculo de CPI sin BTB y speedup con BTB (miss rate 10%, solo saltos tomados, actualización con penalidad)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-proporcion-de-tiempo-en-fp-dado-speedup-observado|Cálculo de proporción de tiempo en FP dado speedup observado y factor de mejora (Ejercicio 8b)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-comparando-predictor-con-penalidad-variab|Cálculo de speedup comparando predictor con penalidad variable vs penalidad fija]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab|Cálculo de speedup máximo con ley de Amdahl (fracción mejorable y factor k)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas|Cálculo de speedup y porcentaje de mejora entre dos máquinas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-convertir-porcentaje-de-ganancia-speedup-a-factor-de-sp|Cómo convertir porcentaje de ganancia (speedup %) a factor de speedup (n)]]
@@ -29,4 +31,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «speedup» (este archivo s
 
 ## Temas relacionados
 
-[[ac]] · [[ley-amdahl]] · [[arquitectura-computadores]] · [[coma-flotante]] · [[compiladores]] · [[evaluacion-rendimiento]] · [[cpi]] · [[rendimiento]] · [[metricas-rendimiento]] · [[mejora-parcial]] · [[pipeline]] · [[almacenamiento]]
+[[ac]] · [[ley-amdahl]] · [[cpi]] · [[arquitectura-computadores]] · [[coma-flotante]] · [[compiladores]] · [[evaluacion-rendimiento]] · [[rendimiento]] · [[prediccion-saltos]] · [[metricas-rendimiento]] · [[mejora-parcial]] · [[pipeline]]

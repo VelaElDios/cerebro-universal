@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scoreboard"
-notas: 22
+notas: 28
 ---
 # scoreboard
 
@@ -9,6 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scoreboard» (este archiv
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej|Algoritmo de Marcador (Scoreboard): pasos de simulación para ejercicios]]
+- 🧪 [[memoria/conocimiento/recetas/completar-tabla-marcador-con-uf-mul-7c-add-5c-div-15c-ejerci|Completar tabla Marcador con UF mul 7c add 5c div 15c (Ejercicio 7)]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg|Cómo leer la evolución ciclo a ciclo de un marcador con cargas y operaciones FP]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador|Cómo leer la tabla de estado de instrucciones en el marcador de Tomasulo]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-unidades-funcionales-en-el-m|Cómo leer la tabla de estado de unidades funcionales en el marcador de Tomasulo]] · ⚠️ propuesto
@@ -28,19 +30,23 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scoreboard» (este archiv
 - 💡 [[memoria/conocimiento/conceptos/estado-de-registros-resultado-register-result-status-en-el-m|Estado de registros resultado (register result status) en el marcador]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-del-marcador-scoreboard-en-arquitectura-de-comput|Estructura del marcador (scoreboard) en arquitectura de computadores]]
 - 💡 [[memoria/conocimiento/conceptos/estructuras-de-datos-del-marcador-scoreboard|Estructuras de datos del Marcador (Scoreboard)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio|Marcador (Scoreboard) distingue riesgos RAW y WAR con detenciones opuestas]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-de-instrucciones-con-marcador-scorebo|Planificación dinámica de instrucciones con Marcador (Scoreboard)]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-orden-de-ejecucion-por-disponibilidad|Planificación dinámica: orden de ejecución por disponibilidad de operandos]]
 - 💡 [[memoria/conocimiento/conceptos/registro-de-estado-de-resultados-result-register-status-en-e|Registro de estado de resultados (Result Register Status) en el marcador]]
 - 💡 [[memoria/conocimiento/conceptos/representacion-del-estado-del-marcador-scoreboard-para-instr|Representación del estado del marcador (scoreboard) para instrucciones FP]]
 - 💡 [[memoria/conocimiento/conceptos/semantica-de-los-campos-qj-qk-rj-rk-en-el-estado-de-uf|Semántica de los campos Qj, Qk, Rj, Rk en el estado de UF]]
 - 💡 [[memoria/conocimiento/conceptos/simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo|Simulación ciclo a ciclo del marcador (scoreboard) de Tomasulo con instrucciones FP]]
+- 💡 [[memoria/conocimiento/conceptos/tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det|Técnica de Marcador (Scoreboard): riesgos WAR/WAW obligan a detener]]
 
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/bibliografia-canonica-para-planificacion-de-instrucciones-he|Bibliografía canónica para Planificación de instrucciones (Hennessy & Patterson, Ortega et al.)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/configuracion-de-recursos-en-ejercicio-tomasulo-ej-14-y-scor|Configuración de recursos en ejercicio Tomasulo (Ej. 14) y Scoreboard (Ej. 16)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/latencias-de-ejecucion-fp-en-el-ejemplo-del-marcador-ciclos|Latencias de ejecución FP en el ejemplo del marcador (ciclos 16-22)]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador|Latencias de unidades funcionales en el ejemplo de marcador (ciclos 3-9)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/secuencia-exacta-de-instrucciones-y-registros-del-ejemplo-de|Secuencia exacta de instrucciones y registros del ejemplo de marcador (ciclos 1-9)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura]] · [[tomasulo]] · [[arquitectura-computadores]] · [[hazard]] · [[waw]] · [[punto-flotante]] · [[fadd.d]] · [[fsub.d]] · [[simulacion]] · [[dependencias]] · [[qj]]
+[[ac]] · [[tomasulo]] · [[arquitectura]] · [[waw]] · [[arquitectura-computadores]] · [[planificacion-dinamica]] · [[punto-flotante]] · [[hazard]] · [[war]] · [[fadd.d]] · [[fsub.d]] · [[simulacion]]

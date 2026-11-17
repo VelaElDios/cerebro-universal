@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "latencias"
-notas: 2
+notas: 3
 ---
 # latencias
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «latencias» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/latencias-vliw-examen-ac-para-planificacion-bucle-polinomico|Latencias VLIW examen AC para planificación bucle polinómico]] · ⚠️ propuesto
 
 ## Datos
 
@@ -14,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latencias» (este archivo
 
 ## Temas relacionados
 
-[[ac]] · [[fadd]] · [[fdiv]] · [[fld]] · [[fmul]] · [[fsub]] · [[tomasulo]] · [[forwarding]] · [[microarquitectura]] · [[pipeline]] · [[riesgos-datos]]
+[[ac]] · [[fadd]] · [[fdiv]] · [[fld]] · [[fmul]] · [[fsub]] · [[tomasulo]] · [[forwarding]] · [[microarquitectura]] · [[pipeline]] · [[riesgos-datos]] · [[vliw]]

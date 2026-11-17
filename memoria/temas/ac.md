@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "ac"
-notas: 253
+notas: 434
 ---
 # ac
 
@@ -10,24 +10,38 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/adelantamiento-forwarding-para-riesgos-raw|Adelantamiento (forwarding) para riesgos RAW]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej|Algoritmo de Marcador (Scoreboard): pasos de simulación para ejercicios]]
+- 🧪 [[memoria/conocimiento/recetas/algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d|Algoritmo de Tomasulo: reglas de simulación para ejercicios de examen]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/anotacion-automatica-de-valores-sobre-puntos-en-matplotlib|Anotación automática de valores sobre puntos en matplotlib]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-en-codigo-risc-v-raw-war-waw|Análisis de dependencias en código RISC-V (RAW, WAR, WAW)]]
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-raw-war-waw-en-una-iteracion-del-bu|Análisis de dependencias RAW, WAR, WAW en una iteración del bucle secuencia 0,1,0,2]]
+- 🧪 [[memoria/conocimiento/recetas/analisis-en-estado-estable-de-predictor-2-bits-vs-correlacio|Análisis en estado estable de predictor 2 bits vs correlacionado (1,1) para bucle RISC-V con patrón complejo]]
+- 🧪 [[memoria/conocimiento/recetas/asignacion-de-estaciones-de-reserva-mult-1-y-mult-2-en-el-ej|Asignación de estaciones de reserva Mult 1 y Mult 2 en el ejemplo]]
 - 🧪 [[memoria/conocimiento/recetas/benchmarking-comparativo-con-hyperfine-warmup-y-comillas|Benchmarking comparativo con Hyperfine (warmup y comillas)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst|Benchmarking ILP con hyperfine y perf para medir cycles, instructions e IPC]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/comparacion-de-dos-implementaciones-de-la-misma-isa-cpi-y-fr|Comparación de dos implementaciones de la misma ISA (CPI y frecuencia distintos)]]
 - 🧪 [[memoria/conocimiento/recetas/comparacion-de-maquinas-por-tiempo-total-de-ejecucion-de-mul|Comparación de máquinas por tiempo total de ejecución de múltiples programas]]
+- 🧪 [[memoria/conocimiento/recetas/completar-tabla-marcador-con-uf-mul-7c-add-5c-div-15c-ejerci|Completar tabla Marcador con UF mul 7c add 5c div 15c (Ejercicio 7)]]
+- 🧪 [[memoria/conocimiento/recetas/completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8|Completar tabla Tomasulo con una estación por UF (Ejercicio 8)]]
+- 🧪 [[memoria/conocimiento/recetas/condicion-para-solapar-iteraciones-de-un-bucle-desenrollado|Condición para solapar iteraciones de un bucle (desenrollado / software pipelining)]]
 - 🧪 [[memoria/conocimiento/recetas/configuracion-de-ejes-log-lineal-y-etiquetas-de-potencias-de|Configuración de ejes log/lineal y etiquetas de potencias de 2 en matplotlib]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/construccion-de-permutacion-aleatoria-en-ciclo-para-pointer|Construcción de permutación aleatoria en ciclo para pointer chasing]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-cpi-base-pipeline-5-etapas-con-saltos-sin-prediccion|Cálculo CPI base pipeline 5 etapas con saltos sin predicción]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-a-partir-de-tiempos-por-tipo-de-instruccion-y|Cálculo de CPI a partir de tiempos por tipo de instrucción y frecuencia]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-dado-frecuencia-de-reloj-y-conteo-de-instrucc|Cálculo de CPI dado frecuencia de reloj y conteo de instrucciones por tipo (Ejercicio 22c)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-pipeline-con-stalls-y-tras-optimizacion|Cálculo de CPI en pipeline con stalls y tras optimización]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas|Cálculo de CPI medio, MIPS y speedup entre dos máquinas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s|Cálculo de CPI sin BTB y speedup con BTB (miss rate 10%, solo saltos tomados, actualización con penalidad)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f|Cálculo de detenciones (stalls) y CPR en pipeline RISC-V con FP segmentado]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-direcciones-y-offsets-en-bucles-vectoriales-risc|Cálculo de direcciones y offsets en bucles vectoriales RISC-V con puntero descendente]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-flops-totales-para-el-kernel-de-la-tarea-2-1|Cálculo de FLOPs totales para el kernel de la tarea 2.1]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-intensidad-aritmetica-eje-x-flops-byte-con-perf-c|Cálculo de intensidad aritmética (eje X: FLOPs/Byte) con perf cache-misses]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co|Cálculo de MIPS nativos y de pico (peak MIPS) para máquinas con CPI variable]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-penalizacion-de-salto-condicional-en-pipeline-de|Cálculo de penalización de salto condicional en pipeline de 5 etapas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-predicciones-correctas-en-bucles-anidados-con-pre|Cálculo de predicciones correctas en bucles anidados con predictores de 1, 2 y 3 bits]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-proporcion-de-tiempo-en-fp-dado-speedup-observado|Cálculo de proporción de tiempo en FP dado speedup observado y factor de mejora (Ejercicio 8b)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-reduccion-de-tiempo-total-al-mejorar-un-tipo-de-i|Cálculo de reducción de tiempo total al mejorar un tipo de instrucción (Ejercicio 22)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-comparando-predictor-con-penalidad-variab|Cálculo de speedup comparando predictor con penalidad variable vs penalidad fija]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion|Cálculo de speedup con ley de Amdahl (mejora de una fracción del tiempo)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab|Cálculo de speedup máximo con ley de Amdahl (fracción mejorable y factor k)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas|Cálculo de speedup y porcentaje de mejora entre dos máquinas]] · ⚠️ propuesto
@@ -47,6 +61,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso|Cómo compilar y ejecutar el benchmark de patrones de acceso a memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-compilar-y-medir-lista-vs-vector-con-g-o2-hyperfine-y-p|Cómo compilar y medir lista vs vector con g++ -O2, hyperfine y perf]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-convertir-porcentaje-de-ganancia-speedup-a-factor-de-sp|Cómo convertir porcentaje de ganancia (speedup %) a factor de speedup (n)]]
+- 🧪 [[memoria/conocimiento/recetas/como-disenar-un-bucle-que-haga-fallar-siempre-un-predictor-d|Cómo diseñar un bucle que haga fallar siempre un predictor de 1 bit]]
+- 🧪 [[memoria/conocimiento/recetas/como-el-predictor-de-2-bits-resuelve-el-problema-de-bucles-a|Cómo el predictor de 2 bits resuelve el problema de bucles anidados]]
+- 🧪 [[memoria/conocimiento/recetas/como-evoluciona-la-tabla-de-estaciones-de-reserva-en-tomasul|Cómo evoluciona la tabla de estaciones de reserva en Tomasulo (ciclos 7-13)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-expandir-la-cuenta-de-instrucciones-al-emular-punto-flo|Cómo expandir la cuenta de instrucciones al emular punto flotante con enteras]]
 - 🧪 [[memoria/conocimiento/recetas/como-forzar-un-salto-condicional-real-en-gcc-para-medir-pred|Cómo forzar un salto condicional real en GCC para medir predicción de ramas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-fusionar-dos-bucles-en-uno-solo-para-aprovechar-localid|Cómo fusionar dos bucles en uno solo para aprovechar localidad temporal en L1]] · ⚠️ propuesto
@@ -58,6 +75,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/como-interpretar-ipc-y-tasas-de-fallo-de-cache-para-cada-pat|Cómo interpretar IPC y tasas de fallo de caché para cada patrón]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg|Cómo leer la evolución ciclo a ciclo de un marcador con cargas y operaciones FP]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador|Cómo leer la tabla de estado de instrucciones en el marcador de Tomasulo]]
+- 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-instrucciones-en-simulacion|Cómo leer la tabla de estado de instrucciones en simulación Tomasulo]]
+- 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-tomasulo-en-ciclos-consecuti|Cómo leer la tabla de estado de Tomasulo en ciclos consecutivos]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-unidades-funcionales-en-el-m|Cómo leer la tabla de estado de unidades funcionales en el marcador de Tomasulo]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-medir-contadores-hardware-con-perf-stat-para-comparar-p|Cómo medir contadores hardware con perf stat para comparar patrones de memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per|Cómo medir impacto de cache-misses e IPC con hyperfine y perf en experimentos controlados]]
@@ -65,45 +84,79 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/como-obtener-los-parametros-reales-de-tu-maquina-para-el-roo|Cómo obtener los parámetros reales de tu máquina para el Roofline]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-obtener-parametros-de-hardware-para-el-modelo-roofline|Cómo obtener parámetros de hardware para el modelo Roofline en Linux]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-resolver-un-problema-de-la-ley-de-amdahl-con-fraccion-m|Cómo resolver un problema de la Ley de Amdahl con fracción mejorada y speedup objetivo]]
+- 🧪 [[memoria/conocimiento/recetas/como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de|Cómo se traza la ejecución ciclo a ciclo en el algoritmo de Tomasulo]]
 - 🧪 [[memoria/conocimiento/recetas/como-transformar-std-list-a-std-vector-con-reserva-previa-pa|Cómo transformar std::list a std::vector con reserva previa para mejorar localidad de caché]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log|Cómo trazar el modelo Roofline con matplotlib en escala log-log]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-manual-manual-unrolling-con-4-acumuladores-para|Desenrollado manual (Manual Unrolling) con 4 acumuladores para romper cadena de dependencia y subir IPC]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-minimo-de-bucle-para-planificacion-sin-detencio|Desenrollado mínimo de bucle para planificación sin detenciones (secuencia 0,1,0,2)]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e|Desenrollamiento de bucle mínimo para eliminar detenciones en RISC-V]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado|Desenrollamiento de bucles (loop unrolling) 4x con renombrado de registros en RISC-V]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-4x-con-planificacion-para-elimina|Desenrollamiento de bucles 4x con planificación para eliminar detenciones (RISC-V)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/desenrollamiento-y-segmentacion-software-con-latencia-fadd-d|Desenrollamiento y segmentación software con latencia fadd.d 5 ciclos (Ejercicio 5)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/desenrollar-bucle-2x-y-planificar-para-latencias-fp-dadas-ej|Desenrollar bucle 2x y planificar para latencias FP dadas (Ejercicio 1)]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollar-bucle-minimo-para-planificar-sin-detenciones-eje|Desenrollar bucle mínimo para planificar sin detenciones (Ejercicio 3)]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollar-bucle-para-eliminar-dependencias-y-maximizar-ilp|Desenrollar bucle para eliminar dependencias y maximizar ILP (Ejercicio 2)]]
 - 🧪 [[memoria/conocimiento/recetas/despeje-de-fraccion-de-tiempo-mejorable-dado-speedup-objetiv|Despeje de fracción de tiempo mejorable dado speedup objetivo y factor de mejora]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/determinar-si-es-posible-alcanzar-un-speedup-objetivo-mejora|Determinar si es posible alcanzar un speedup objetivo mejorando solo un tipo de instrucción (Ejercicio 22b)]]
+- 🧪 [[memoria/conocimiento/recetas/ejecucion-ciclo-a-ciclo-del-ejemplo-tomasulo-fld-fmul-d-fsub|Ejecución ciclo a ciclo del ejemplo Tomasulo (fld, fmul.d, fsub.d, fdiv.d, fadd.d)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/ejecucion-paso-a-paso-de-instrucciones-fp-en-tomasulo-ciclos|Ejecución paso a paso de instrucciones FP en Tomasulo (ciclos 16-20)]]
+- 🧪 [[memoria/conocimiento/recetas/ejemplo-comparativo-predictores-1-bit-vs-2-bits-vs-correlaci|Ejemplo comparativo predictores 1 bit vs 2 bits vs correlacionado (1,1) con código if(d==0)/if(d==1)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/ejemplo-de-simulacion-del-marcador-con-instrucciones-de-punt|Ejemplo de simulación del Marcador con instrucciones de punto flotante]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/ejemplo-de-transformacion-de-salto-a-instrucciones-predicada|Ejemplo de transformación de salto a instrucciones predicadas (código ensamblador)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/ejemplo-gas-4-22-predictor-dos-niveles|Ejemplo Gas(4,22) predictor dos niveles]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/ejercicio-de-coste-efectividad-comparacion-de-sistemas-por-r|Ejercicio de coste-efectividad: comparación de sistemas por rendimiento/coste]]
 - 🧪 [[memoria/conocimiento/recetas/ejercicios-de-cpi-mips-y-tiempo-de-ejecucion-con-mezcla-de-i|Ejercicios de CPI, MIPS y tiempo de ejecución con mezcla de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/ejercicios-de-evaluacion-de-rendimiento-basados-en-ley-de-am|Ejercicios de evaluación de rendimiento basados en Ley de Amdahl]]
 - 🧪 [[memoria/conocimiento/recetas/eliminacion-de-dependencias-de-control-mediante-desenrollado|Eliminación de dependencias de control mediante desenrollado y eliminación de saltos intermedios]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/eliminacion-de-dependencias-de-nombre-mediante-renombrado-de|Eliminación de dependencias de nombre mediante renombrado de registros en desenrollamiento]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/estado-inicial-ciclo-1-de-un-bucle-vector-escalar-en-tomasul|Estado inicial (ciclo 1) de un bucle vector-escalar en Tomasulo]]
+- 🧪 [[memoria/conocimiento/recetas/estado-rob-en-ciclo-de-emision-del-primer-s-d-tomasulo-espec|Estado ROB en ciclo de emisión del primer S.D (Tomasulo especulación)]]
+- 🧪 [[memoria/conocimiento/recetas/estructura-del-procesador-tomasulo-cdb-estaciones-de-reserva|Estructura del procesador Tomasulo: CDB, estaciones de reserva y buffers]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/evaluacion-de-rendimiento-de-btb-con-politica-de-solo-saltos|Evaluación de rendimiento de BTB con política de solo saltos tomados, hit rate 90%, actualización en fallo con penalidad]]
 - 🧪 [[memoria/conocimiento/recetas/factor-de-mejora-necesario-para-speedup-objetivo-dado-ejerci|Factor de mejora necesario para speedup objetivo dado (ejercicio 12)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/funcionamiento-y-actualizacion-de-la-btac-branch-target-addr|Funcionamiento y actualización de la BTAC (Branch Target Address Cache)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si|Funcionamiento y límites de la segmentación (pipelining) en SISD]]
 - 🧪 [[memoria/conocimiento/recetas/formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores|Fórmula del tiempo de ejecución de CPU y sus tres factores]]
 - 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencias-loop-carried-en-bucles-c-styl|Identificación de dependencias loop-carried en bucles (C-style y RISC-V)]]
 - 🧪 [[memoria/conocimiento/recetas/igualar-mips-entre-dos-maquinas-despejando-frecuencia-de-rel|Igualar MIPS entre dos máquinas despejando frecuencia de reloj (ejercicio 15)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/igualar-rendimiento-de-dos-maquinas-ajustando-frecuencia-de|Igualar rendimiento de dos máquinas ajustando frecuencia de reloj]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/implementacion-predictor-correlacionado-m-n-con-bhr-y-bht|Implementación predictor correlacionado (m,n) con BHR y BHT]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/instalacion-y-uso-rapido-de-lstopo-hwloc-para-topologia-de-m|Instalación y uso rápido de lstopo (hwloc) para topología de memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/kernel-de-segmentacion-software-para-bucle-de-acumulacion-in|Kernel de segmentación software para bucle de acumulación inversa en RISC-V]]
+- 🧪 [[memoria/conocimiento/recetas/latencias-vliw-examen-ac-para-planificacion-bucle-polinomico|Latencias VLIW examen AC para planificación bucle polinómico]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/mapeo-de-patrones-de-acceso-en-grafico-roofline-gflops-s-y-f|Mapeo de patrones de acceso en gráfico Roofline (GFLOPs/s y FLOPs/Byte)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/medicion-de-latencia-con-50-millones-de-accesos-dependientes|Medición de latencia con 50 millones de accesos dependientes]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/mejora-prestaciones-btb-con-politica-solo-saltos-tomados-y-a|Mejora prestaciones BTB con política solo-saltos-tomados y actualización perezosa]]
 - 🧪 [[memoria/conocimiento/recetas/optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul|Optimización ILP mediante desenrollado de bucle con 4 acumuladores independientes]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/parametros-estandar-para-ejercicios-de-segmentacion-software|Parámetros estándar para ejercicios de segmentación software en RISC-V (Tema 3)]]
 - 🧪 [[memoria/conocimiento/recetas/pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard|Pasos de ejecución en el algoritmo del Marcador (Scoreboard)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/patron-branchless-suma-condicional-mediante-multiplicacion-p|Patrón branchless: suma condicional mediante multiplicación por booleano]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/perf-stat-con-contadores-clave-de-rendimiento-caches-ramas-t|Perf stat con contadores clave de rendimiento (cachés, ramas, tiempo)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/pipeline-risc-v-de-5-etapas-if-id-ex-mem-wb|Pipeline RISC-V de 5 etapas: IF, ID, EX, MEM, WB]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/predictor-correlacionado-2-1-para-bucle-de-conteo-de-caracte|Predictor correlacionado (2,1) para bucle de conteo de caracteres en cadena "exam18]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-de-2-bits-por-instruccion-y-predictor-correlaciona|Predictor de 2-bits por instrucción y predictor correlacionado (2,1) para bucle de vector disperso (0,7,0,0,0,0,2,0)]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en|Predictor dinámico de un bit: funcionamiento y limitación en bucles anidados]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/predictor-hibrido-con-predictores-locales-de-1-bit-y-3-bits|Predictor híbrido con predictores locales de 1-bit y 3-bits más selector de 2-bits saturado]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-hibrido-mcfarling-con-contador-saturado-de-2-bits|Predictor híbrido McFarling con contador saturado de 2 bits]]
 - 🧪 [[memoria/conocimiento/recetas/prevencion-de-eliminacion-de-codigo-muerto-dce-en-benchmark|Prevención de eliminación de código muerto (DCE) en benchmark]]
+- 🧪 [[memoria/conocimiento/recetas/primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio|Primeros 3 ciclos Tomasulo con 2 add 1c y 2 mul 4c (Ejercicio 9)]]
 - 🧪 [[memoria/conocimiento/recetas/programacion-branchless-reemplazar-if-condicional-por-aritme|Programación branchless: reemplazar if condicional por aritmética con máscara 0/1]]
 - 🧪 [[memoria/conocimiento/recetas/renombrado-de-registros-para-eliminar-dependencias-de-nombre|Renombrado de registros para eliminar dependencias de nombre (estático y dinámico)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/secuencia-de-instrucciones-y-dependencias-en-el-ejemplo-toma|Secuencia de instrucciones y dependencias en el ejemplo Tomasulo del tema 3]]
+- 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-bucle-con-mul|Segmentación software (software pipelining) para bucle con mul y add (Ejercicio 4)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-suma-vectoria|Segmentación software (software pipelining) para suma vectorial en RISC-V]]
 - 🧪 [[memoria/conocimiento/recetas/seleccion-de-mejora-hardware-multiplicacion-vs-memoria-ejerc|Selección de mejora hardware: multiplicación vs memoria (ejercicio 14)]]
 - 🧪 [[memoria/conocimiento/recetas/seleccion-de-mejoras-mutuamente-excluyentes-con-ley-de-amdah|Selección de mejoras mutuamente excluyentes con ley de Amdahl (ejercicio 10)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictores-1-bit-4-bits-saturado-y-correlacio|Simulación de predictores 1 bit, 4 bits saturado y correlacionado (2,1) para dos bucles anidados con conteos fijos]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/simulacion-paso-a-paso-de-predictor-correlacionado-2-1-con-b|Simulación paso a paso de predictor correlacionado (2,1) con BHR y 4 BHTs de 2-bits]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/speedup-combinado-de-mejoras-independientes-en-fracciones-di|Speedup combinado de mejoras independientes en fracciones disjuntas (ejercicio 13)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/speedup-combinando-multiples-mejoras-independientes|Speedup combinando múltiples mejoras independientes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/speedup-con-cambio-simultaneo-de-cpi-y-frecuencia-de-reloj|Speedup con cambio simultáneo de CPI y frecuencia de reloj]]
+- 🧪 [[memoria/conocimiento/recetas/tabla-de-estado-de-estacion-de-reserva-en-tomasulo-campos-y|Tabla de estado de estación de reserva en Tomasulo: campos y lectura]]
+- 🧪 [[memoria/conocimiento/recetas/tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm|Tomasulo con CDB no simultáneo 2 RS por UF buffers carga/almacen (Ejercicio 10)]]
 - 🧪 [[memoria/conocimiento/recetas/transformacion-aos-a-soa-para-optimizacion-de-cache-esquema|Transformación AoS a SoA para optimización de caché (esquema de código)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/transformar-aos-a-soa-en-el-laboratorio-ac-tarea-3-2|Transformar AoS a SoA en el laboratorio AC (tarea 3.2)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/tres-fases-de-ejecucion-en-tomasulo-emision-ejecucion-escrit|Tres fases de ejecución en Tomasulo: Emisión, Ejecución, Escritura]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tecnicas-avanzadas-estaticas-y-dinamicas-para-reducir-detenc|Técnicas avanzadas estáticas y dinámicas para reducir detenciones]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tecnicas-estaticas-basicas-para-reducir-detenciones-en-pipel|Técnicas estáticas básicas para reducir detenciones en pipeline]]
 - 🧪 [[memoria/conocimiento/recetas/verificacion-de-correccion-numerica-entre-version-base-y-opt|Verificación de corrección numérica entre versión base y optimizada ILP]]
@@ -116,11 +169,20 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - ⚖️ [[memoria/conocimiento/decisiones/compilar-con-o2-y-medir-con-perf-hyperfine-en-la-practica-ac|Compilar con -O2 y medir con perf/hyperfine en la práctica AC]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cuando-no-usar-branchless-trade-off-latencia-vs-previsibilid|Cuándo NO usar branchless (trade-off: latencia vs. previsibilidad)]]
 - ⚖️ [[memoria/conocimiento/decisiones/deteccion-y-resolucion-de-riesgo-war-en-el-marcador-ciclos-1|Detección y resolución de riesgo WAR en el marcador (ciclos 17-21)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/diseno-de-btac-cache-asociativa-por-conjuntos-como-opcion-ma|Diseño de BTAC: caché asociativa por conjuntos como opción más usada]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/eleccion-de-colores-para-zonas-memory-bound-y-compute-bound|Elección de colores para zonas memory-bound y compute-bound]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/eleccion-de-dos-estaciones-de-multiplicacion-mult-1-y-mult-2|Elección de dos estaciones de multiplicación (Mult 1 y Mult 2) para solapar iteraciones]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/eleccion-de-eje-x-logaritmico-logspace-2-a-3-para-cubrir-4-o|Elección de eje X logarítmico (logspace -2 a 3) para cubrir 4 órdenes de magnitud]]
 - ⚖️ [[memoria/conocimiento/decisiones/fijar-ejecucion-en-un-unico-nucleo-con-taskset-para-evitar-m|Fijar ejecución en un único núcleo con taskset para evitar migración y ruido (Tarea 1.2)]]
+- ⚖️ [[memoria/conocimiento/decisiones/latencias-asumidas-para-carga-2-ciclos-y-multiplicacion-fp-3|Latencias asumidas para carga (2 ciclos) y multiplicación FP (3 ciclos) en el ejemplo docente]]
+- ⚖️ [[memoria/conocimiento/decisiones/manejo-de-dependencias-raw-mediante-qj-qk-en-estaciones-de-r|Manejo de dependencias RAW mediante Qj/Qk en estaciones de reserva]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/orden-de-emision-en-orden-in-order-issue-con-ejecucion-fuera|Orden de emisión en orden (in-order issue) con ejecución fuera de orden en el ejemplo]]
 - ⚖️ [[memoria/conocimiento/decisiones/por-que-fusionar-bucles-de-normalizacion-y-suma-de-cuadrados|Por qué fusionar bucles de normalización y suma de cuadrados en una sola pasada]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/predictor-correlacionado-1-1-en-bucle-secuencia-0-1-0-2|Predictor correlacionado (1,1) en bucle secuencia 0,1,0,2]]
+- ⚖️ [[memoria/conocimiento/decisiones/predictor-de-1-bit-inicializado-a-no-tomado-en-bucle-secuenc|Predictor de 1 bit inicializado a no tomado en bucle secuencia 0,1,0,2]]
 - ⚖️ [[memoria/conocimiento/decisiones/rango-de-working-set-4-kib-a-256-mib-en-potencias-de-2|Rango de working set: 4 KiB a 256 MiB en potencias de 2]]
+- ⚖️ [[memoria/conocimiento/decisiones/restriccion-cdb-tomasulo-no-escritura-e-inicio-ejecucion-mis|Restricción CDB Tomasulo: no escritura e inicio ejecución mismo ciclo]]
+- ⚖️ [[memoria/conocimiento/decisiones/suposicion-de-cauce-detenido-durante-huecos-de-retardo-para|Suposición de cauce detenido durante huecos de retardo para cálculo de penalización]]
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-double-en-lugar-de-float-para-acumulacion-en-experime|Uso de double en lugar de float para acumulación en experimento ILP]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-la-ley-de-amdahl-para-dimensionar-requisitos-de-uso-d|Uso de la ley de Amdahl para dimensionar requisitos de uso de disco]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-semilla-fija-42-en-mt19937-para-reproducibilidad-del|Uso de semilla fija (42) en mt19937 para reproducibilidad del patrón aleatorio]]
@@ -128,86 +190,162 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-ciclo-8a-8b-mitades-de-ciclo-para-modelar-escritura-y|Uso de «ciclo 8a / 8b» (mitades de ciclo) para modelar escritura y emisión en mismo ciclo]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/ventajas-e-inconvenientes-de-la-planificacion-dinamica-frent|Ventajas e inconvenientes de la planificación dinámica frente a estática]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/verificacion-de-correccion-mediante-checksum-identico-en-las|Verificación de corrección mediante checksum idéntico en las cuatro variantes]]
+- ⚖️ [[memoria/conocimiento/decisiones/yeh-y-patt-recomiendan-g-g-para-enteros-y-s-s-para-coma-flot|Yeh y Patt recomiendan G/g para enteros y S/s para coma flotante]] · ⚠️ propuesto
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/actualizacion-de-la-btb-tras-ejecutar-el-salto|Actualización de la BTB tras ejecutar el salto]]
+- 💡 [[memoria/conocimiento/conceptos/algoritmo-tomasulo-origen-y-objetivo-cpi1|Algoritmo Tomasulo: origen y objetivo CPI≈1]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin|Alternativas de detección de instrucción de salto en pipeline]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/antidependencia-war-y-dependencia-de-salida-waw-definiciones|Antidependencia (WAR) y dependencia de salida (WAW) definiciones]]
 - 💡 [[memoria/conocimiento/conceptos/aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache|AoS vs SoA: desperdicio de ancho de banda en caché]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-epic-ia64-y-procesadores-itanium|Arquitectura EPIC (IA64) y procesadores Itanium]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-sisd-componentes-y-tecnicas-ilp-segmentacion-su|Arquitectura SISD: componentes y técnicas ILP (segmentación, superescalar, VLIW)]]
 - 💡 [[memoria/conocimiento/conceptos/benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig|Benchmarks sintéticos Dhrystone y Whetstone: propósito y origen]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/bht-branch-history-table-tabla-separada-para-bits-de-predicc|BHT (Branch History Table): tabla separada para bits de predicción]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas|Bits de predicción en la I-caché: funcionamiento y ventajas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion|BTB (Branch Target Buffer): fusión de BTAC y bits de predicción en una sola estructura]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/btb-con-predictores-de-4-bits-campos-de-cada-entrada|BTB con predictores de 4 bits: campos de cada entrada]]
+- 💡 [[memoria/conocimiento/conceptos/buffers-de-carga-y-almacenamiento-en-tomasulo|Buffers de carga y almacenamiento en Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults|Calentamiento (warm-up) para poblar TLB y evitar page faults]]
 - 💡 [[memoria/conocimiento/conceptos/campos-qj-qk-rj-rk-en-el-estado-de-unidades-funcionales-del|Campos Qj, Qk, Rj, Rk en el estado de unidades funcionales del marcador]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/clasificacion-de-tipos-de-computadores-segun-requisitos-de-d|Clasificación de tipos de computadores según requisitos de diseño]]
+- 💡 [[memoria/conocimiento/conceptos/comparativa-tomasulo-vs-marcador-scoreboard|Comparativa Tomasulo vs Marcador (Scoreboard)]]
+- 💡 [[memoria/conocimiento/conceptos/configuracion-tomasulo-con-especulacion-para-examen-enero-20|Configuración Tomasulo con especulación para examen Enero 2012 Problema 3]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/consideraciones-del-desenrollamiento-de-bucles-sobrecarga-ta|Consideraciones del desenrollamiento de bucles: sobrecarga, tamaño de código y presión de registros]]
+- 💡 [[memoria/conocimiento/conceptos/contenido-de-una-estacion-de-reserva-en-tomasulo|Contenido de una estación de reserva en Tomasulo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario|Convención de nomenclatura en tablas de Tomasulo del temario]]
 - 💡 [[memoria/conocimiento/conceptos/cuando-preferir-aos-sobre-soa-en-la-practica|Cuándo preferir AoS sobre SoA en la práctica]]
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-flops-por-ciclo-en-x86-con-avx2-fma|Cálculo de FLOPS por ciclo en x86 con AVX2/FMA]]
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-flops-ciclo-para-avx2-con-fma|Cálculo de FLOPs/ciclo para AVX2 con FMA]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-arquitectura-de-computador-visible-al-programa|Definición de arquitectura de computador visible al programador]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-salto-y-huecos-de-retardo|Definición de latencia de salto y huecos de retardo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-e-intervalo-de-iniciacion-en-pipeline|Definición de latencia e intervalo de iniciación en pipeline]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mflops-millones-de-operaciones-de-punto-flotan|Definición de MFLOPS (Millones de Operaciones de Punto Flotante Por Segundo)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo|Definición de MIPS (Millones de Instrucciones Por Segundo)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-paralelismo-a-nivel-de-threads-tlp-frente-a-il|Definición de paralelismo a nivel de threads (TLP) frente a ILP y DLP]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-speedup-como-razon-de-tiempos-de-ejecucion|Definición de speedup como razón de tiempos de ejecución]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-y-proposito-de-la-segmentacion-pipeline|Definición y propósito de la segmentación (pipeline)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione|Dependencia de datos en pipeline → riesgo solo si instrucciones están cerca]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-verdadera-definicion-y-ejemplo-en-bucle|Dependencia de datos verdadera definición y ejemplo en bucle]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-dos-instrucciones-escriben-mismo-r|Dependencia de salida (WAW): dos instrucciones escriben mismo registro/memoria]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-antidependencia-y-salida-definicion-y|Dependencias de nombre antidependencia y salida definición y ejemplo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencias-en-bucles-risc-v-clasificacion-intra-iteracion|Dependencias en bucles RISC-V: clasificación intra-iteración vs loop-carried]]
+- 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-requiere-ausencia-de-dependencias|Desenrollamiento de bucles requiere ausencia de dependencias entre iteraciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr|Detección de riesgos WAR y WAW en marcador y bloqueo de escritura]]
+- 💡 [[memoria/conocimiento/conceptos/diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la|Diferencia entre buffers de carga y de almacenamiento en la simulación]]
 - 💡 [[memoria/conocimiento/conceptos/diferencia-fundamental-desenrollamiento-vs-segmentacion-soft|Diferencia fundamental: desenrollamiento vs segmentación software]]
 - 💡 [[memoria/conocimiento/conceptos/distincion-entre-arquitectura-isa-y-organizacion-microarquit|Distinción entre Arquitectura (ISA) y Organización (Microarquitectura)]]
 - 💡 [[memoria/conocimiento/conceptos/dos-estrategias-genericas-para-tratar-dependencias-de-datos|Dos estrategias genéricas para tratar dependencias de datos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura|Ecuación fundamental del tiempo de ejecución en arquitectura de computadores]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ejecucion-multicamino-multi-path-execution-como-alternativa|Ejecución multicamino (multi-path execution) como alternativa a la predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ejemplos-de-misma-isa-distinta-organizacion-y-viceversa-fami|Ejemplos de misma ISA distinta organización y viceversa (familia Intel/AMD)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/escritura-de-resultado-y-actualizacion-de-qi-en-registro-des|Escritura de resultado y actualización de Qi en registro destino]]
+- 💡 [[memoria/conocimiento/conceptos/esquemas-de-pipeline-con-1-2-y-3-huecos-de-retardo-para-beqz|Esquemas de pipeline con 1, 2 y 3 huecos de retardo para beqz]]
+- 💡 [[memoria/conocimiento/conceptos/estado-de-buffers-de-carga-almacenamiento-y-estaciones-de-re|Estado de buffers de carga/almacenamiento y estaciones de reserva en ejemplo Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/estado-de-registros-resultado-register-result-status-en-el-m|Estado de registros resultado (register result status) en el marcador]]
+- 💡 [[memoria/conocimiento/conceptos/estado-inicial-de-predictores-en-ejercicio-12-predictor-2-bi|Estado inicial de predictores en Ejercicio 12: predictor 2-bits (B1=00, B2=11) y correlacionado (2,1) con BHR=10 y BHTs específicas]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-de-una-estacion-de-reserva-en-tomasulo|Estructura de una estación de reserva en Tomasulo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estructura-del-marcador-scoreboard-en-arquitectura-de-comput|Estructura del marcador (scoreboard) en arquitectura de computadores]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c|Estructura y funcionamiento de predictor híbrido de torneo con predictor local 2-bit y global (1,2)]]
 - 💡 [[memoria/conocimiento/conceptos/estructuras-de-datos-del-marcador-scoreboard|Estructuras de datos del Marcador (Scoreboard)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/estructuras-hardware-para-prediccion-de-saltos-btac-bht-btb|Estructuras hardware para predicción de saltos (BTAC, BHT, BTB, I-caché con índice sucesor)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/fichero-de-registros-con-campo-qi-en-tomasulo|Fichero de registros con campo Qi en Tomasulo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/flujo-de-datos-de-carga-multiplicacion-almacenamiento-en-buf|Flujo de datos de carga → multiplicación → almacenamiento en buffers Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/formula-del-techo-roofline-mononucleo|Fórmula del techo Roofline mononúcleo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/gestion-de-buffers-de-carga-almacenamiento-con-direcciones-d|Gestión de buffers de carga/almacenamiento con direcciones decrecientes]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/idea-central-de-tomasulo-control-distribuido-con-estaciones|Idea central de Tomasulo: control distribuido con estaciones de reserva]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ilp-alto-requiere-bajo-grado-de-dependencia-entre-instruccio|ILP alto requiere bajo grado de dependencia entre instrucciones]]
+- 💡 [[memoria/conocimiento/conceptos/impacto-de-la-frecuencia-de-saltos-en-el-ilp-y-tamano-de-blo|Impacto de la frecuencia de saltos en el ILP y tamaño de bloque básico]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/implementacion-bht-para-predictor-de-2-bits-4k-entradas-80-9|Implementación BHT para predictor de 2 bits: 4K entradas, ~80-90% acierto]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/instrucciones-predicadas-convertir-dependencias-de-control-e|Instrucciones predicadas: convertir dependencias de control en dependencias de datos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/interpretacion-de-regiones-memory-bound-vs-compute-bound-en|Interpretación de regiones memory-bound vs compute-bound en el gráfico]]
 - 💡 [[memoria/conocimiento/conceptos/isa-base-risc-v-rv64g-caracteristicas-principales|ISA base RISC-V RV64G: características principales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aplicada-a-mejora-de-disco|Ley de Amdahl aplicada a mejora de disco]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aplicada-a-optimizacion-de-compilador-para-com|Ley de Amdahl aplicada a optimización de compilador para coma flotante (Ejercicio 8)]]
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su|Ley de Amdahl aplicada a speedup con mejora parcial de un subsistema]]
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-para-speedup-con-mejora-parcial|Ley de Amdahl para speedup con mejora parcial]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aceleracion-maxima-limitada-por-fraccion-mejor|Ley de Amdahl: aceleración máxima limitada por fracción mejorable]]
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-formula-del-tiempo-de-ejecucion-nuevo|Ley de Amdahl: fórmula del tiempo de ejecución nuevo]]
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-la-planificacion-estatica-que-motiva-la-planif|Limitación de la planificación estática que motiva la planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-mejora-en-fraccion-pequena-ley-de-amdahl|Limitación de mejora en fracción pequeña (ley de Amdahl)]]
 - 💡 [[memoria/conocimiento/conceptos/limitacion-del-adelantamiento-hazard-load-use-load-use-penal|Limitación del adelantamiento: hazard load-use (load-use penalty)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/linpack-nucleo-de-benchmark-para-sistemas-cientificos-y-base|Linpack: núcleo de benchmark para sistemas científicos y base del TOP500]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mapeo-de-patrones-de-acceso-en-el-grafico-roofline|Mapeo de patrones de acceso en el gráfico Roofline]]
+- 💡 [[memoria/conocimiento/conceptos/marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio|Marcador (Scoreboard) distingue riesgos RAW y WAR con detenciones opuestas]]
+- 💡 [[memoria/conocimiento/conceptos/mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt|Mecanismos de recuperación ante fallos de predicción de saltos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-tiempo-de-ejecucion-de-programas|Mejor medida de rendimiento: tiempo de ejecución de programas reales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/metricas-de-rendimiento-latencia-vs-throughput-ancho-de-band|Métricas de rendimiento: Latencia vs Throughput (Ancho de banda)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/multiples-caminos-como-tecnica-de-prediccion-de-saltos|Múltiples caminos como técnica de predicción de saltos]]
+- 💡 [[memoria/conocimiento/conceptos/notacion-xax-m-2n-para-predictores-adaptativos-de-dos-nivele|Notación XAx(m,2n) para predictores adaptativos de dos niveles (Yeh y Patt 1992)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza|Paradoja MIPS vs tiempo de ejecución: mayor MIPS no garantiza menor tiempo]]
 - 💡 [[memoria/conocimiento/conceptos/parametros-del-experimento-tamano-de-datos-bloque-y-repetici|Parámetros del experimento: tamaño de datos, bloque y repeticiones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s|Patrón aleatorio: peor caso con permutación fija de índices (semilla 42)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-de-salto-de-latencia-en-fronteras-de-cache|Patrón de salto de latencia en fronteras de caché]]
+- 💡 [[memoria/conocimiento/conceptos/patron-de-saltos-en-bucle-mips64-secuencia-0-1-0-2-examen-en|Patrón de saltos en bucle MIPS64 secuencia 0,1,0,2 (examen Enero 2012)]]
 - 💡 [[memoria/conocimiento/conceptos/patron-secuencial-localidad-espacial-y-prefetcher-hardware|Patrón secuencial: localidad espacial y prefetcher hardware]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-temporal-localidad-temporal-maxima-reutilizando-un-bl|Patrón temporal: localidad temporal máxima reutilizando un bloque que cabe en L1]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup|Penalización de fallo de predicción de salto en pipeline superscalar]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-de-trazas-trace-scheduling-para-condicionales|Planificación de trazas (trace scheduling) para condicionales en bucles]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-de-instrucciones-con-marcador-scorebo|Planificación dinámica de instrucciones con Marcador (Scoreboard)]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-orden-de-ejecucion-por-disponibilidad|Planificación dinámica: orden de ejecución por disponibilidad de operandos]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui|Planificación estática vs dinámica de instrucciones en Arquitectura de Computadores]]
+- 💡 [[memoria/conocimiento/conceptos/planteamiento-general-de-prediccion-de-saltos-con-ejecucion|Planteamiento general de predicción de saltos con ejecución especulativa]]
 - 💡 [[memoria/conocimiento/conceptos/pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector|Pointer chasing en std::list vs acceso contiguo en std::vector]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/por-que-o1-evita-que-el-compilador-enmascare-la-optimizacion|Por qué -O1 evita que el compilador enmascare la optimización manual de ILP]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per|Por qué el orden de los datos afecta al código con salto pero no al branchless]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/prediccion-dinamica-basada-en-correlacion-temporal-y-espacia|Predicción dinámica basada en correlación temporal y espacial]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/prediccion-implicita-sin-bits-de-prediccion-en-btb|Predicción implícita sin bits de predicción en BTB]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-alpha-21264-tournament-branch-prediction-combina-l|Predictor Alpha 21264 (Tournament Branch Prediction) combina local y global]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-1-1-bhr-de-1-bit-y-2-tablas-bht-de|Predictor correlacionado (1,1): BHR de 1 bit y 2 tablas BHT de 1 bit]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-general-mejora-a-predictores-no-cor|Predictor correlacionado general mejora a predictores no correlacionados]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-o-de-dos-niveles-m-n-correlacion-es|Predictor correlacionado o de dos niveles (m,n): correlación espacial e historia global]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/predictor-de-saltos-por-que-datos-ordenados-vs-desordenados|Predictor de saltos: por qué datos ordenados vs desordenados cambian rendimiento drásticamente]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-dinamico-de-2-bits-jim-smith-1981-maquina-de-4-est|Predictor dinámico de 2 bits (Jim Smith, 1981): máquina de 4 estados y inercia]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-concatenacion-vs-gshare-xor-para-indexar-b|Predictor gselect (concatenación) vs gshare (XOR) para indexar BHT]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-que-combina-dos-predictores-locales-1-bit|Predictor híbrido que combina dos predictores locales (1 bit y 3 bits) con selector de 2 bits y reglas de actualización específicas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictores-n-bits-y-optimalidad-de-n-2-en-la-practica|Predictores n bits y optimalidad de n=2 en la práctica]]
+- 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-cpi-pipeline-con-btb-que-solo-almacena-sa|Problema examen AC: CPI pipeline con BTB que solo almacena saltos tomados]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-planificacion-vliw-para-bucle-y-i-a-x-i-2|Problema examen AC: Planificación VLIW para bucle y(i)=A*x(i)² con latencias dadas]]
+- 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-tomasulo-con-especulacion-buffers-carga-a|Problema examen AC: Tomasulo con especulación, buffers carga/almacenamiento y UF múltiples]]
+- 💡 [[memoria/conocimiento/conceptos/problemas-del-marcador-scoreboard-en-planificacion-dinamica|Problemas del marcador (scoreboard) en planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/problemas-en-segmentacion-de-coma-flotante-riesgos-estructur|Problemas en segmentación de coma flotante: riesgos estructurales RAW WAW y finalización fuera de orden]]
 - 💡 [[memoria/conocimiento/conceptos/procesadores-superescalares-definicion-origen-risc-ejemplos|Procesadores superescalares: definición, origen RISC, ejemplos x86 (Pentium Pro/II)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/punto-de-inflexion-knee-del-modelo-roofline-mononucleo|Punto de inflexión (knee) del modelo Roofline mononúcleo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/punto-de-inflexion-knee-del-modelo-roofline-i-knee-gflops-ma|Punto de inflexión (knee) del modelo Roofline: I_KNEE = GFLOPS_MAX / BW_DRAM]]
 - 💡 [[memoria/conocimiento/conceptos/punto-de-inflexion-ridge-point-en-el-modelo-roofline|Punto de inflexión (ridge point) en el modelo Roofline]]
+- 💡 [[memoria/conocimiento/conceptos/recuperacion-de-fallos-de-prediccion-con-registros-temporale|Recuperación de fallos de predicción con registros temporales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/registro-de-estado-de-resultados-result-register-status-en-e|Registro de estado de resultados (Result Register Status) en el marcador]]
 - 💡 [[memoria/conocimiento/conceptos/relacion-entre-frecuencia-de-reloj-y-periodo-de-ciclo|Relación entre frecuencia de reloj y período de ciclo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/relacion-ilp-y-cpi-en-procesadores-segmentados|Relación ILP y CPI en procesadores segmentados]]
+- 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-etiquetas-de-estacion-de-reserva|Renombrado de registros vía etiquetas de estación de reserva elimina WAR y WAW]]
+- 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-qi-register-status-en-tomasulo|Renombrado de registros vía Qi (Register Status) en Tomasulo]]
+- 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-qi-en-bucle-con-reuso-de-f0-f2-f|Renombrado de registros vía Qi en bucle con reuso de f0/f2/f4]]
 - 💡 [[memoria/conocimiento/conceptos/representacion-del-estado-del-marcador-scoreboard-para-instr|Representación del estado del marcador (scoreboard) para instrucciones FP]]
+- 💡 [[memoria/conocimiento/conceptos/riesgo-raw-como-dependencia-de-datos-verdadera|Riesgo RAW como dependencia de datos verdadera]]
+- 💡 [[memoria/conocimiento/conceptos/riesgo-war-dependencia-antidependencia-datos|Riesgo WAR = dependencia antidependencia (datos)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/riesgos-de-datos-en-risc-v-raw-waw-war|Riesgos de datos en RISC-V: RAW, WAW, WAR]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/riesgos-estructurales-causas-y-ejemplo-banco-de-registros|Riesgos estructurales: causas y ejemplo banco de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-planificacion-estatica|Salto retardado (delayed branch) en planificación estática]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-risc-v-implicaciones-en-pl|Salto retardado (delayed branch) en RISC-V: implicaciones en planificación]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-con-instruccion-de-bloque-destino-riesgo-si|Salto retardado con instrucción de bloque destino: riesgo si salto no tomado]]
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-y-instrucciones-predicadas-como-alternativas|Salto retardado y instrucciones predicadas como alternativas a predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/saltos-retardados-delayed-branches-en-planificacion-estatica|Saltos retardados (delayed branches) en planificación estática]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c|Secuencia de instrucciones y latencias en ejemplo Tomasulo (ciclos 7-13)]]
 - 💡 [[memoria/conocimiento/conceptos/segmentacion-software-software-pipelining-en-bucles-sin-depe|Segmentación software (software pipelining) en bucles sin dependencias]]
 - 💡 [[memoria/conocimiento/conceptos/segmentacion-software-software-pipelining-y-planificacion-de|Segmentación software (software pipelining) y planificación de trazas (trace scheduling)]]
 - 💡 [[memoria/conocimiento/conceptos/semantica-de-los-campos-qj-qk-rj-rk-en-el-estado-de-uf|Semántica de los campos Qj, Qk, Rj, Rk en el estado de UF]]
 - 💡 [[memoria/conocimiento/conceptos/simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo|Simulación ciclo a ciclo del marcador (scoreboard) de Tomasulo con instrucciones FP]]
+- 💡 [[memoria/conocimiento/conceptos/simulacion-paso-a-paso-de-tomasulo-con-bucle-fp-fld-fmul-d-f|Simulación paso a paso de Tomasulo con bucle FP (fld/fmul.d/fsd)]]
 - 💡 [[memoria/conocimiento/conceptos/speedup-ideal-vs-real-en-pipeline-y-formula-con-detenciones|Speedup ideal vs real en pipeline y fórmula con detenciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/suite-spec-cpu-2017-metricas-specspeed-y-specrate|Suite SPEC CPU 2017: métricas SPECspeed y SPECrate]]
+- 💡 [[memoria/conocimiento/conceptos/tabla-de-actualizacion-de-contadores-de-2-bits-saturados-par|Tabla de actualización de contadores de 2-bits saturados para selector de predictor híbrido]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tarea-3-2-aos-vs-soa-marcada-como-opcional-en-anexo-c|Tarea 3.2 AoS vs SoA marcada como OPCIONAL en Anexo C]]
 - 💡 [[memoria/conocimiento/conceptos/taxonomia-de-flynn-sisd-misd-simd-mimd-y-criterio-de-clasifi|Taxonomía de Flynn (SISD, MISD, SIMD, MIMD) y criterio de clasificación]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones|Taxonomía de Flynn: clasificación por flujos de instrucciones y datos]]
+- 💡 [[memoria/conocimiento/conceptos/taxonomia-de-tecnicas-de-prediccion-de-saltos|Taxonomía de técnicas de predicción de saltos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tendencias-de-paralelismo-en-arquitectura-actual-ilp-tlp-dlp|Tendencias de paralelismo en arquitectura actual (ILP, TLP, DLP, multinúcleo)]]
 - 💡 [[memoria/conocimiento/conceptos/tipos-de-benchmarks-sinteticos-reales-nucleos-reducidos-y-su|Tipos de benchmarks: sintéticos, reales, núcleos, reducidos y suites]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tipos-de-dependencia-y-riesgos-asociados-en-segmentacion|Tipos de dependencia y riesgos asociados en segmentación]] · ⚠️ propuesto
@@ -215,26 +353,55 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/tipos-de-riesgos-en-pipeline-estructurales-datos-control|Tipos de riesgos en pipeline: estructurales, datos, control]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t|Tres patrones de acceso a memoria evaluados en la práctica (Tarea 2.1)]]
 - 💡 [[memoria/conocimiento/conceptos/tres-tipos-de-dependencias-en-codigo-datos-nombre-y-control|Tres tipos de dependencias en código: datos, nombre y control]]
+- 💡 [[memoria/conocimiento/conceptos/tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det|Técnica de Marcador (Scoreboard): riesgos WAR/WAW obligan a detener]]
+- 💡 [[memoria/conocimiento/conceptos/tecnica-de-segmentacion-software-software-pipelining|Técnica de segmentación software (software pipelining)]]
 - 💡 [[memoria/conocimiento/conceptos/tecnica-pointer-chasing-para-medir-latencia-real-de-memoria|Técnica pointer chasing para medir latencia real de memoria]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/uso-de-buffers-de-carga-en-tomasulo-load-buffers|Uso de buffers de carga en Tomasulo (Load Buffers)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en|Uso de Qi en registros flotantes para renombrado dinámico en Tomasulo]]
+- 💡 [[memoria/conocimiento/conceptos/ventaja-real-del-pipeline-mayor-throughput-instrucciones-uni|Ventaja real del pipeline: mayor throughput (instrucciones/unidad tiempo)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-de-las-instrucciones-predicadas|Ventajas e inconvenientes de las instrucciones predicadas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-del-algoritmo-tomasulo|Ventajas e inconvenientes del algoritmo Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/working-set-size-vs-memory-access-latency-experiment|Working set size vs memory access latency experiment]]
+- 💡 [[memoria/conocimiento/conceptos/indice-sucesor-en-la-i-cache-para-prediccion-de-saltos-alter|Índice sucesor en la I-caché para predicción de saltos (alternativa a BTAC)]] · ⚠️ propuesto
 
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/avance-del-temario-tema-2-secciones-2-02-3-completadas|Avance del temario Tema 2: secciones 2.0–2.3 completadas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/benchmarks-de-referencia-top500-flops-vs-green500-mflops-w|Benchmarks de referencia: Top500 (FLOPS) vs Green500 (MFLOPS/W)]]
 - 📊 [[memoria/conocimiento/datos/bibliografia-canonica-para-planificacion-de-instrucciones-he|Bibliografía canónica para Planificación de instrucciones (Hennessy & Patterson, Ortega et al.)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/bibliografia-de-referencia-para-el-tema-de-prediccion-de-sal|Bibliografía de referencia para el tema de predicción de saltos]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/campo-de-etiqueta-tag-de-4-bits-5-estaciones-de-reserva-6-bu|Campo de etiqueta (tag) de 4 bits: 5 estaciones de reserva + 6 buffers de carga]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/comparativa-de-ciclos-por-dato-bucle-original-vs-desenrollad|Comparativa de ciclos por dato: bucle original vs desenrollado vs desenrollado+planificado vs segmentación software]]
 - 📊 [[memoria/conocimiento/datos/comparativa-historica-data-star-trek-60-tflops-vs-top500-219|Comparativa histórica: Data (Star Trek) 60 TFLOPs vs TOP500 2198 PFLOPs en 2026]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/comportamiento-real-de-saltos-b1-y-b2-en-bucle-risc-v-que-re|Comportamiento real de saltos B1 y B2 en bucle RISC-V que recorre secuencia 0,1,0,2,0,3,0,4,0,5]]
 - 📊 [[memoria/conocimiento/datos/computadores-de-referencia-para-medicion-de-rendimiento-ultr|Computadores de referencia para medición de rendimiento: UltraSPARC II, DEC VAX 11/780, UNIVAC]]
+- 📊 [[memoria/conocimiento/datos/configuracion-de-recursos-en-ejercicio-tomasulo-ej-14-y-scor|Configuración de recursos en ejercicio Tomasulo (Ej. 14) y Scoreboard (Ej. 16)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/costes-de-recuperacion-de-fallos-de-prediccion-por-procesado|Costes de recuperación de fallos de predicción por procesador]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cronograma-de-emision-ejecucion-y-escritura-por-instruccion|Cronograma de emisión, ejecución y escritura por instrucción en ciclos 1-8]]
+- 📊 [[memoria/conocimiento/datos/calculo-de-speedup-reduccion-25-tiempo-speedup-33-3|Cálculo de speedup: reducción 25% tiempo → speedup 33,3%]]
+- 📊 [[memoria/conocimiento/datos/codigo-ensamblador-bucle-y-i-a-x-i-2-para-vliw-examen-ac|Código ensamblador bucle y(i)=A*x(i)² para VLIW examen AC]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/codigo-risc-v-ejercicio-10-bucle-conteo-a-en-exam18-con-salt|Código RISC-V Ejercicio 10: bucle conteo 'a' en "exam18" con saltos B1 (bne) y B2 (bnez)]]
+- 📊 [[memoria/conocimiento/datos/codigo-risc-v-ejercicio-11-bucle-fibonacci-6-elementos-con-s|Código RISC-V Ejercicio 11: bucle Fibonacci 6 elementos con saltos B1 (beqz) y B2 (bnez)]]
+- 📊 [[memoria/conocimiento/datos/codigo-risc-v-ejercicio-12-bucle-vector-disperso-0-7-0-0-0-0|Código RISC-V Ejercicio 12: bucle vector disperso (0,7,0,0,0,0,2,0) con saltos B1 (beqz), B2 (beq), j incondicional]]
+- 📊 [[memoria/conocimiento/datos/ejemplo-pentium-pro-predictor-2-2-con-historia-global-de-2-b|Ejemplo Pentium Pro: predictor (2,2) con historia global de 2 bits y ~95% precisión]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/ejemplos-reales-de-predictores-de-salto-en-procesadores-come|Ejemplos reales de predictores de salto en procesadores comerciales (PowerPC, UltraSPARC, Pentium, Pentium Pro)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/ejercicio-de-mejora-de-disco-duro-y-ley-de-amdahl-ej-23|Ejercicio de mejora de disco duro y ley de Amdahl (Ej.23)]]
 - 📊 [[memoria/conocimiento/datos/ejercicio-de-participacion-en-clase-mejora-de-multiplicacion|Ejercicio de participación en clase: mejora de multiplicación para speedup 5x con 96s de 120s]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/estadisticas-de-frecuencia-y-tipos-de-saltos-en-programas-ti|Estadísticas de frecuencia y tipos de saltos en programas típicos]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/eventos-de-hardware-disponibles-en-perf-stat-para-analisis-d|Eventos de hardware disponibles en perf stat para análisis de caché y predicción de saltos (Anexo A)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/evolucion-de-la-direccion-base-x1-en-las-dos-iteraciones-del|Evolución de la dirección base x1 en las dos iteraciones del ejemplo]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/evolucion-del-registro-base-x1-y-qi-de-registros-fp-en-el-ej|Evolución del registro base x1 y Qi de registros FP en el ejemplo Tomasulo]]
 - 📊 [[memoria/conocimiento/datos/implementacion-historica-del-marcador-en-cdc6600-1964|Implementación histórica del Marcador en CDC6600 (1964)]]
+- 📊 [[memoria/conocimiento/datos/latencia-de-carga-fp-y-multiplicacion-doble-en-la-simulacion|Latencia de carga FP y multiplicación doble en la simulación Tomasulo]]
+- 📊 [[memoria/conocimiento/datos/latencias-de-cache-asumidas-en-el-ejemplo-de-bucle-vector-es|Latencias de caché asumidas en el ejemplo de bucle vector-escalar]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-ejecucion-fp-en-el-ejemplo-del-marcador-ciclos|Latencias de ejecución FP en el ejemplo del marcador (ciclos 16-22)]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador|Latencias de unidades funcionales en el ejemplo de marcador (ciclos 3-9)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo|Latencias de unidades funcionales en el ejemplo Tomasulo]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo-cic|Latencias de unidades funcionales en el ejemplo Tomasulo (ciclos)]]
+- 📊 [[memoria/conocimiento/datos/latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d|Latencias típicas de unidades funcionales FP en ejercicios del temario (ciclos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/latencias-y-forwarding-en-procesador-de-referencia-para-plan|Latencias y forwarding en procesador de referencia para planificación estática]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/limitaciones-del-paralelismo-en-bloques-basicos-y-solucion-a|Limitaciones del paralelismo en bloques básicos y solución a nivel de bucle]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/limitacion-de-la-btb-solo-predice-saltos-ya-conocidos|Limitación de la BTB: solo predice saltos ya conocidos]]
 - 📊 [[memoria/conocimiento/datos/organizacion-del-banco-de-registros-en-risc-v-rv64g|Organización del banco de registros en RISC-V RV64G]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-de-ejemplo-del-script-cpu-4-9-ghz-ddr4-26-143-gb|Parámetros de ejemplo del script (CPU 4.9 GHz, DDR4 26.143 GB/s)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult|Parámetros de pipeline RISC-V FP para ejercicios Tema 2 (multiplicador 3 ciclos, divisor 4/6 ciclos)]] · ⚠️ propuesto
@@ -244,20 +411,30 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 📊 [[memoria/conocimiento/datos/parametros-fijos-del-experimento-de-branchless-tamanio-repet|Parámetros fijos del experimento de branchless (TAMANIO, REPETICIONES, semilla)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-fijos-del-experimento-ilp-n-100m-tipo-double-valo|Parámetros fijos del experimento ILP: N=100M, tipo double, valor 1.0f]]
 - 📊 [[memoria/conocimiento/datos/parametros-fijos-del-experimento-20-millones-de-lecturas-n-m|Parámetros fijos del experimento: 20 millones de lecturas, N múltiplo de 4, Ubuntu Linux, GCC/Clang]]
+- 📊 [[memoria/conocimiento/datos/parametros-uf-tomasulo-examen-diciembre-2010|Parámetros UF Tomasulo examen diciembre 2010]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/porcentaje-de-aprovechamiento-de-linea-de-cache-en-aos-acced|Porcentaje de aprovechamiento de línea de caché en AoS accediendo solo a id]]
+- 📊 [[memoria/conocimiento/datos/predictores-de-un-nivel-de-historia-1-2-y-3-bits-con-procesa|Predictores de un nivel de historia: 1, 2 y 3 bits con procesadores y años]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/registros-flotantes-involucrados-y-su-estado-inicial-en-el-e|Registros flotantes involucrados y su estado inicial en el ejemplo]]
 - 📊 [[memoria/conocimiento/datos/resultado-numerico-disco-4-mas-rapido-para-speedup-3-requier|Resultado numérico: disco 4× más rápido para speedup 3× requiere 89 % de uso]]
 - 📊 [[memoria/conocimiento/datos/resultados-specpower-ssj2008-para-amd-opteron-x4-2356-2-3-gh|Resultados SPECpower ssj2008 para AMD Opteron X4 2356 (2.3 GHz)]]
 - 📊 [[memoria/conocimiento/datos/secuencia-exacta-de-ciclos-para-cada-instruccion-en-la-simul|Secuencia exacta de ciclos para cada instrucción en la simulación (ciclos 1-15)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/secuencia-exacta-de-instrucciones-y-registros-del-ejemplo-de|Secuencia exacta de instrucciones y registros del ejemplo de marcador (ciclos 1-9)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/tabla-de-latencia-e-intervalo-de-iniciacion-por-unidad-funci|Tabla de latencia e intervalo de iniciación por unidad funcional en segmentación FP]]
+- 📊 [[memoria/conocimiento/datos/tabla-historica-de-predictores-en-procesadores-1989-1998|Tabla histórica de predictores en procesadores 1989-1998]]
 - 📊 [[memoria/conocimiento/datos/tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache|Tamaño del vector y bloque en bytes y líneas de caché]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script|Tamaños de caché de ejemplo y latencias medidas en el script]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/valores-concretos-de-x1-y-direcciones-de-memoria-en-la-simul|Valores concretos de x1 y direcciones de memoria en la simulación]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/valores-de-ejemplo-para-cpu-del-laboratorio-frecuencia-bw-pu|Valores de ejemplo para CPU del laboratorio (frecuencia, BW, puntos medidos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/valores-de-referencia-cpi-por-clase-de-instruccion-en-maquin|Valores de referencia: CPI por clase de instrucción en máquinas con/sin hardware FP (Ejercicio 3)]]
 - 📊 [[memoria/conocimiento/datos/valores-de-referencia-cpi-por-clase-en-dos-implementaciones|Valores de referencia: CPI por clase en dos implementaciones M1/M2 (Ejercicio 2)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/vulnerabilidades-de-seguridad-por-prediccion-especulativa-me|Vulnerabilidades de seguridad por predicción especulativa: Meltdown, Spectre, Branch Privilege Injection]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/indice-del-tema-3-planificacion-de-instrucciones-estatica-y|Índice del tema 3: Planificación de instrucciones (estática y dinámica)]]
 
 ## Documentos aprendidos
 
+- 📚 [[memoria/conocimiento/fuentes/fuente-diciembre2010-examenes|Diciembre2010 (examenes)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-enero2011-examenes|Enero2011 (examenes)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-enero2012-examenes|Enero2012 (examenes)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-formulas-tema1-introduccion|Formulas (Tema1-Introduccion)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-practica3-practicas|Practica3 (Practicas)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-practica4-practicas|Practica4 (Practicas)]]
@@ -274,7 +451,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 📚 [[memoria/conocimiento/fuentes/fuente-tema1-probsol-tema1-introduccion|Tema1 ProbSol (Tema1-Introduccion)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-tema2-2026-2027-tema2-paralelismo-a-nivel-de-instruccion|Tema2 2026 2027 (Tema2-Paralelismo a nivel de instruccion)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-tema2-prob-riscv-rev-tema2-paralelismo-a-nivel-de-instruccio|Tema2 Prob RISCV rev (Tema2-Paralelismo a nivel de instruccion)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-tema3-tema3-planificacion-de-instrucciones|Tema3 (Tema3-Planificacion de instrucciones)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-tema3-prob-tema3-planificacion-de-instrucciones|Tema3 Prob (Tema3-Planificacion de instrucciones)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-tema4-tema4-tratamiento-de-los-saltos|Tema4 (Tema4-Tratamiento de los saltos)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-tema4-prob-tema4-tratamiento-de-los-saltos|Tema4 Prob (Tema4-Tratamiento de los saltos)]]
 
 ## Temas relacionados
 
-[[arquitectura-computadores]] · [[rendimiento]] · [[scoreboard]] · [[roofline]] · [[pipeline]] · [[ley-amdahl]] · [[cpi]] · [[benchmark]] · [[ilp]] · [[arquitectura]] · [[planificacion-estatica]] · [[benchmarking]]
+[[prediccion-saltos]] · [[tomasulo]] · [[arquitectura]] · [[arquitectura-computadores]] · [[pipeline]] · [[rendimiento]] · [[scoreboard]] · [[ilp]] · [[cpi]] · [[planificacion-dinamica]] · [[roofline]] · [[planificacion-estatica]]

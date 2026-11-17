@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "riscv"
-notas: 3
+notas: 7
 ---
 # riscv
 
@@ -11,6 +11,13 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «riscv» (este archivo se 
 
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-en-codigo-risc-v-raw-war-waw|Análisis de dependencias en código RISC-V (RAW, WAR, WAW)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f|Cálculo de detenciones (stalls) y CPR en pipeline RISC-V con FP segmentado]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e|Desenrollamiento de bucle mínimo para eliminar detenciones en RISC-V]]
+- 🧪 [[memoria/conocimiento/recetas/parametros-estandar-para-ejercicios-de-segmentacion-software|Parámetros estándar para ejercicios de segmentación software en RISC-V (Tema 3)]]
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/dependencias-en-bucles-risc-v-clasificacion-intra-iteracion|Dependencias en bucles RISC-V: clasificación intra-iteración vs loop-carried]]
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-risc-v-implicaciones-en-pl|Salto retardado (delayed branch) en RISC-V: implicaciones en planificación]] · ⚠️ propuesto
 
 ## Datos
 
@@ -18,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «riscv» (este archivo se 
 
 ## Temas relacionados
 
-[[ac]] · [[paralelismo-instruccion]] · [[pipeline]] · [[iniciacion]] · [[latencia]] · [[punto-flotante]] · [[dependencias]] · [[adelantamiento]] · [[cpr]] · [[stalls]] · [[unidad-funcional-segmentada]]
+[[ac]] · [[pipeline]] · [[paralelismo-instruccion]] · [[software-pipelining]] · [[dependencias-datos]] · [[control-hazard]] · [[delayed-branch]] · [[iniciacion]] · [[latencia]] · [[punto-flotante]] · [[dependencias]] · [[adelantamiento]]

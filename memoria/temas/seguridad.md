@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "seguridad"
-notas: 5
+notas: 6
 ---
 # seguridad
 
@@ -20,6 +20,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «seguridad» (este archivo
 
 - 📊 [[memoria/conocimiento/datos/esquema-de-progreso-guardado-en-servidor-migracion-003-tabla|Esquema de progreso guardado en servidor (migración 003, tablas y API)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/referencia-paper-original-bcrypt-para-seguridad-de-contrasen|Referencia paper original bcrypt para seguridad de contraseñas]]
+- 📊 [[memoria/conocimiento/datos/vulnerabilidades-de-seguridad-por-prediccion-especulativa-me|Vulnerabilidades de seguridad por predicción especulativa: Meltdown, Spectre, Branch Privilege Injection]] · ⚠️ propuesto
 
 ## Temas relacionados
 

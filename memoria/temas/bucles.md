@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "bucles"
-notas: 4
+notas: 7
 ---
 # bucles
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bucles» (este archivo se
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/condicion-para-solapar-iteraciones-de-un-bucle-desenrollado|Condición para solapar iteraciones de un bucle (desenrollado / software pipelining)]]
 - 🧪 [[memoria/conocimiento/recetas/como-fusionar-dos-bucles-en-uno-solo-para-aprovechar-localid|Cómo fusionar dos bucles en uno solo para aprovechar localidad temporal en L1]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencias-loop-carried-en-bucles-c-styl|Identificación de dependencias loop-carried en bucles (C-style y RISC-V)]]
 
@@ -18,8 +19,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bucles» (este archivo se
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-requiere-ausencia-de-dependencias|Desenrollamiento de bucles requiere ausencia de dependencias entre iteraciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tipos-de-dependencias-en-bucles-loop-independent-vs-loop-car|Tipos de dependencias en bucles: loop-independent vs loop-carried]]
+- 💡 [[memoria/conocimiento/conceptos/tecnica-de-segmentacion-software-software-pipelining|Técnica de segmentación software (software pipelining)]]
 
 ## Temas relacionados
 
-[[ac]] · [[paralelismo-instruccion]] · [[optimizacion]] · [[dependencias]] · [[vectorizacion]] · [[temporal-locality]] · [[cpp]] · [[dependencias-entre-iteraciones]] · [[loop-carried]]
+[[ac]] · [[dependencias]] · [[ilp]] · [[planificacion]] · [[paralelismo-instruccion]] · [[optimizacion]] · [[desenrollamiento]] · [[vectorizacion]] · [[temporal-locality]] · [[cpp]] · [[dependencias-entre-iteraciones]] · [[loop-carried]]

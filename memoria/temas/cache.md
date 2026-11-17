@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "cache"
-notas: 6
+notas: 7
 ---
 # cache
 
@@ -19,9 +19,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «cache» (este archivo se 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/latencias-de-cache-asumidas-en-el-ejemplo-de-bucle-vector-es|Latencias de caché asumidas en el ejemplo de bucle vector-escalar]]
 - 📊 [[memoria/conocimiento/datos/porcentaje-de-aprovechamiento-de-linea-de-cache-en-aos-acced|Porcentaje de aprovechamiento de línea de caché en AoS accediendo solo a id]]
 - 📊 [[memoria/conocimiento/datos/tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache|Tamaño del vector y bloque en bytes y líneas de caché]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[memoria]] · [[aos]] · [[soa]] · [[arquitectura]] · [[punteros]] · [[estructuras-datos]] · [[lineas]] · [[perf]] · [[profiling]] · [[optimización]]
+[[ac]] · [[memoria]] · [[aos]] · [[soa]] · [[arquitectura]] · [[punteros]] · [[estructuras-datos]] · [[latencia]] · [[tomasulo]] · [[lineas]] · [[perf]] · [[profiling]]

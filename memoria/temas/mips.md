@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "mips"
-notas: 7
+notas: 8
 ---
 # mips
 
@@ -19,7 +19,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo|Definición de MIPS (Millones de Instrucciones Por Segundo)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza|Paradoja MIPS vs tiempo de ejecución: mayor MIPS no garantiza menor tiempo]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]
 
 ## Temas relacionados
 
-[[ac]] · [[cpi]] · [[arquitectura-computadores]] · [[evaluacion-rendimiento]] · [[rendimiento]] · [[metricas-rendimiento]] · [[métricas]] · [[compiladores]] · [[tiempo-ejecucion]] · [[speedup]] · [[pico]] · [[compilador]]
+[[ac]] · [[cpi]] · [[arquitectura-computadores]] · [[evaluacion-rendimiento]] · [[rendimiento]] · [[metricas-rendimiento]] · [[métricas]] · [[compiladores]] · [[tiempo-ejecucion]] · [[pipeline]] · [[prediccion-saltos]] · [[speedup]]

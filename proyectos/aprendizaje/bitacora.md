@@ -44,3 +44,19 @@ Trozos leídos: 35 · notas nuevas o ampliadas: 252
 - ✅ `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` aprendido entero: 25 notas → [[fuente-tema2-2026-2027-tema2-paralelismo-a-nivel-de-instruccion]]
 - ✅ `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2_Prob_RISCV_rev.pdf` aprendido entero: 5 notas → [[fuente-tema2-prob-riscv-rev-tema2-paralelismo-a-nivel-de-instruccio]]
 - ⏳ `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`: trozo 7 de 14
+
+## 2026-11-17 22:07 · 📚 Aprendizaje
+
+Trozos leídos: 21 · notas nuevas o ampliadas: 175
+
+**Repos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100 · datos @ ff0d3ac 2026-11-17 20:05:22 +0000
+
+- ✅ `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` aprendido entero: 91 notas → [[fuente-tema3-tema3-planificacion-de-instrucciones]]
+- ✅ `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf` aprendido entero: 20 notas → [[fuente-tema3-prob-tema3-planificacion-de-instrucciones]]
+- ✅ `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` aprendido entero: 51 notas → [[fuente-tema4-tema4-tratamiento-de-los-saltos]]
+- ✅ `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf` aprendido entero: 19 notas → [[fuente-tema4-prob-tema4-tratamiento-de-los-saltos]]
+- ✅ `repo:datos/temarios/AC/examenes/Diciembre2010.pdf` aprendido entero: 9 notas → [[fuente-diciembre2010-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2011.pdf` aprendido entero: 10 notas → [[fuente-enero2011-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2012.pdf` aprendido entero: 18 notas → [[fuente-enero2012-examenes]]
+- repo:datos/temarios/AC/examenes/Enero2013.pdf: sin IA disponible (Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b))
+- ⏳ `repo:datos/temarios/AC/examenes/Enero2013.pdf`: trozo 0 de 1
