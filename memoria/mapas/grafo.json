@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-17T04:31:59+01:00",
+ "generado": "2026-11-17T05:17:34+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1345,7 +1345,9 @@
     "juego",
     "verificar",
     "memoria-procesos",
-    "metricas"
+    "metricas",
+    "arma",
+    "fuente"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1381,7 +1383,8 @@
     "saas",
     "sprint",
     "done",
-    "trazabilidad"
+    "trazabilidad",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1434,7 +1437,9 @@
     "hitos",
     "memoria-procesos",
     "pbi",
-    "tareas"
+    "tareas",
+    "hito",
+    "tarea"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1531,7 +1536,9 @@
     "donetonic",
     "grada-colchonera",
     "scrum",
-    "sprint"
+    "sprint",
+    "memoria-procesos",
+    "métrica"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1925,9 +1932,14 @@
     "latex",
     "memoria",
     "sprint",
-    "tfg"
+    "tfg",
+    "entrega",
+    "memoria-procesos",
+    "scrum"
    ],
-   "proyectos": [],
+   "proyectos": [
+    "memoria-procesos"
+   ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente.md"
   },
@@ -2584,6 +2596,21 @@
    "ruta": "memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub.md"
   },
   {
+   "id": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "tipo": "receta",
+   "titulo": "BibTeX: autores corporativos con doble llave y year en todas las entradas",
+   "temas": [
+    "bibliografia",
+    "bibtex",
+    "latex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas.md"
+  },
+  {
    "id": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
    "tipo": "receta",
    "titulo": "Capítulo 3: Propuesta, metodología Scrum y herramientas sin detalles técnicos",
@@ -2874,6 +2901,21 @@
    "ruta": "memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi.md"
   },
   {
+   "id": "receta:como-se-agrupan-capturas-con-subfigure",
+   "tipo": "receta",
+   "titulo": "Cómo se agrupan capturas con subfigure",
+   "temas": [
+    "figura",
+    "latex",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure.md"
+  },
+  {
    "id": "receta:como-se-calcula-la-puntuacion-sus-formula-y-ejemplo",
    "tipo": "receta",
    "titulo": "Cómo se calcula la puntuación SUS (fórmula y ejemplo)",
@@ -3036,6 +3078,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/definicion-de-hecho-dod-para-tareas-e-hitos.md"
+  },
+  {
+   "id": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "tipo": "receta",
+   "titulo": "Diagramas de secuencia con pgf-umlsd (sequencediagram)",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "secuencia",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram.md"
   },
   {
    "id": "receta:diagramas-de-secuencia-con-pgf-umlsd",
@@ -3706,7 +3764,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 70,
+   "peso": 73,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -3720,7 +3778,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -3755,14 +3813,14 @@
    "id": "tema:bibtex",
    "tipo": "tema",
    "titulo": "bibtex",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/bibtex.md"
   },
   {
    "id": "tema:bibliografia",
    "tipo": "tema",
    "titulo": "bibliografia",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/bibliografia.md"
   },
   {
@@ -3818,14 +3876,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:secuencia",
    "tipo": "tema",
    "titulo": "secuencia",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/secuencia.md"
   },
   {
@@ -3993,7 +4051,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 49,
+   "peso": 50,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -4371,8 +4429,22 @@
    "id": "tema:memoria-procesos",
    "tipo": "tema",
    "titulo": "memoria-procesos",
-   "peso": 5,
+   "peso": 8,
    "ruta": "memoria/temas/memoria-procesos.md"
+  },
+  {
+   "id": "tema:arma",
+   "tipo": "tema",
+   "titulo": "arma",
+   "peso": 1,
+   "ruta": "memoria/temas/arma.md"
+  },
+  {
+   "id": "tema:fuente",
+   "tipo": "tema",
+   "titulo": "fuente",
+   "peso": 1,
+   "ruta": "memoria/temas/fuente.md"
   },
   {
    "id": "tema:api",
@@ -4410,11 +4482,32 @@
    "ruta": "memoria/temas/tareas.md"
   },
   {
+   "id": "tema:hito",
+   "tipo": "tema",
+   "titulo": "hito",
+   "peso": 1,
+   "ruta": "memoria/temas/hito.md"
+  },
+  {
+   "id": "tema:tarea",
+   "tipo": "tema",
+   "titulo": "tarea",
+   "peso": 1,
+   "ruta": "memoria/temas/tarea.md"
+  },
+  {
    "id": "tema:history",
    "tipo": "tema",
    "titulo": "history",
    "peso": 1,
    "ruta": "memoria/temas/history.md"
+  },
+  {
+   "id": "tema:métrica",
+   "tipo": "tema",
+   "titulo": "métrica",
+   "peso": 1,
+   "ruta": "memoria/temas/métrica.md"
   },
   {
    "id": "tema:node-test",
@@ -4499,6 +4592,13 @@
    "titulo": "gestion",
    "peso": 1,
    "ruta": "memoria/temas/gestion.md"
+  },
+  {
+   "id": "tema:entrega",
+   "tipo": "tema",
+   "titulo": "entrega",
+   "peso": 2,
+   "ruta": "memoria/temas/entrega.md"
   },
   {
    "id": "tema:maquetacion",
@@ -4613,13 +4713,6 @@
    "ruta": "memoria/temas/conclusiones-dinamicas.md"
   },
   {
-   "id": "tema:entrega",
-   "tipo": "tema",
-   "titulo": "entrega",
-   "peso": 1,
-   "ruta": "memoria/temas/entrega.md"
-  },
-  {
    "id": "tema:ia-local",
    "tipo": "tema",
    "titulo": "ia-local",
@@ -4707,7 +4800,7 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
@@ -4800,6 +4893,13 @@
    "titulo": "capturas",
    "peso": 1,
    "ruta": "memoria/temas/capturas.md"
+  },
+  {
+   "id": "tema:figura",
+   "tipo": "tema",
+   "titulo": "figura",
+   "peso": 1,
+   "ruta": "memoria/temas/figura.md"
   },
   {
    "id": "tema:calculo",
@@ -7348,6 +7448,16 @@
   },
   {
    "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "tema:arma",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "tema:fuente",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -7429,6 +7539,11 @@
   {
    "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
    "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "a": "tema:memoria-procesos",
    "tipo": "trata"
   },
   {
@@ -7549,6 +7664,16 @@
   {
    "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
    "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:hito",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:tarea",
    "tipo": "trata"
   },
   {
@@ -7769,6 +7894,16 @@
   {
    "de": "dato:metricas-comparativas-sprint-1-vs-sprint-2",
    "a": "tema:sprint",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:metricas-comparativas-sprint-1-vs-sprint-2",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:metricas-comparativas-sprint-1-vs-sprint-2",
+   "a": "tema:métrica",
    "tipo": "trata"
   },
   {
@@ -8590,6 +8725,26 @@
    "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
    "a": "tema:tfg",
    "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "a": "tema:entrega",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
@@ -10492,6 +10647,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:bibliografia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:bibtex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
    "a": "tema:capitulo-3",
    "tipo": "trata"
@@ -11062,6 +11237,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "tema:figura",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-se-calcula-la-puntuacion-sus-formula-y-ejemplo",
    "a": "tema:calculo",
    "tipo": "trata"
@@ -11375,6 +11570,31 @@
    "de": "receta:definicion-de-hecho-dod-para-tareas-e-hitos",
    "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "tema:secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",

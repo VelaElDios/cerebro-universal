@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tareas» (este archivo se
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]] · [[hitos]] · [[memoria-procesos]] · [[pbi]]
+[[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]] · [[hitos]] · [[memoria-procesos]] · [[pbi]] · [[hito]] · [[tarea]]

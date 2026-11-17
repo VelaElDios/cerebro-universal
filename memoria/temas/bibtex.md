@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "bibtex"
-notas: 3
+notas: 4
 ---
 # bibtex
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
 
 ## Datos
 

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 70
+notas: 73
 ---
 # latex
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-con-subfigure|Agrupar capturas con subfigure]]
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
 - 🧪 [[memoria/conocimiento/recetas/corregir-paginas-con-una-sola-imagen-regla-8|Corregir páginas con una sola imagen (Regla 8)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex|Cómo agrupar capturas con subfigure en LaTeX]] · ⚠️ propuesto
@@ -24,9 +25,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-exportar-diagramas-mermaid-para-la-memoria-latex|Cómo exportar diagramas Mermaid para la memoria LaTeX]]
 - 🧪 [[memoria/conocimiento/recetas/como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg|Cómo mapear este documento a los capítulos de la memoria TFG]]
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
+- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-se-calcula-la-puntuacion-sus-formula-y-ejemplo|Cómo se calcula la puntuación SUS (fórmula y ejemplo)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm|Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
+- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra|Escribir diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-archivos-obligatoria-para-la-plantilla-sus|Estructura de archivos obligatoria para la plantilla SUS]] · ⚠️ propuesto
@@ -100,4 +103,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[sus]] · [[usabilidad]] · [[lua]] · [[tikz]] · [[figuras]] · [[maquetacion]] · [[pgfplots]] · [[verificacion]] · [[pgf-umlsd]] · [[tablas]]
+[[tfg]] · [[memoria]] · [[sus]] · [[usabilidad]] · [[tikz]] · [[lua]] · [[figuras]] · [[pgf-umlsd]] · [[maquetacion]] · [[pgfplots]] · [[verificacion]] · [[tablas]]

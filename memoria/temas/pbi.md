@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pbi» (este archivo se ge
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]] · [[hitos]] · [[memoria-procesos]] · [[tareas]]
+[[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]] · [[hitos]] · [[memoria-procesos]] · [[tareas]] · [[hito]] · [[tarea]]

@@ -26,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[lua]] · [[general]] · [[fuentes]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[cerebro]] · [[ia-local]] · [[sus]] · [[usabilidad]]
+[[latex]] · [[lua]] · [[general]] · [[fuentes]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[arma]] · [[fuente]] · [[cerebro]] · [[ia-local]]

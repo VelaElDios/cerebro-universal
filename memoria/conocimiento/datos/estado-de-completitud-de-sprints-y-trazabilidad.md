@@ -1,13 +1,13 @@
 ---
 tipo: "dato"
 titulo: "Estado de completitud de sprints y trazabilidad"
-temas: ["grada-colchonera", "saas", "sprint", "done", "trazabilidad"]
+temas: ["grada-colchonera", "saas", "sprint", "done", "trazabilidad", "memoria-procesos"]
 claves: ["Sprint 1", "Sprint 2", "hitos", "PBIs", "trazabilidad", "producción"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-17"
 ---
 
 Temas: [[grada-colchonera]] · [[saas]] · [[sprint]]

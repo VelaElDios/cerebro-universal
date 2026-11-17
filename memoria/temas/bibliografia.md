@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "bibliografia"
-notas: 7
+notas: 8
 ---
 # bibliografia
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «bibliografia» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
 
 ## Datos
 
@@ -25,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibliografia» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[referencias]] · [[bibtex]] · [[memoria]] · [[tfg]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]] · [[bcrypt]] · [[hash]] · [[seguridad]] · [[autenticacion]]
+[[latex]] · [[bibtex]] · [[referencias]] · [[memoria]] · [[tfg]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]] · [[bcrypt]] · [[hash]] · [[seguridad]] · [[autenticacion]]

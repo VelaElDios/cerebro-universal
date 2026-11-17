@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scrum"
-notas: 49
+notas: 50
 ---
 # scrum
 
@@ -26,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre|Cambio de alcance en Sprint 1: se añade P19 Cloud Run por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell|Cámara 3/4 con inercia, inclinación y feedback visual (destellos/aplastado)]]
 - ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]] · ⚠️ propuesto
@@ -73,4 +74,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[donetonic]] · [[saas]] · [[sprint]] · [[git]] · [[memoria-procesos]] · [[memoria]] · [[tfg]] · [[backend]] · [[github-flow]] · [[diseno-juego]] · [[api]]
+[[grada-colchonera]] · [[donetonic]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[git]] · [[memoria]] · [[tfg]] · [[backend]] · [[github-flow]] · [[diseno-juego]] · [[api]]
