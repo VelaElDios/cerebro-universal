@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-17 19:29"
+actualizado: "2026-11-17 19:50"
 ---
 
 # memoria-procesos
@@ -21,11 +21,10 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - Paso 1 completado: `elements/preambulo.tex` ya cumplía regla 1 (sin segunda portada).
-- Paso 2 (imágenes duplicadas): **FALLA** - 9 errores en test (referencias rotas `fig:donetonic-backlog`, solo 4 capturas DoneTonic vs 5 mínimas, "??" en PDF).
-- Correcciones aplicadas en este veredicto: añadida figura backlog en 03-propuesta.tex, fix referencias en 04-descripcion.tex, a1-desarrollo.tex (añadidas figuras faltantes S1 y S2), a2-material.tex.
-- Pendiente: paso 3 (prosa manual SaaS), paso 4 (prosa manual juego), paso 5 (repaso estilo), paso 6 (barrido final), arreglo diagramas (reglas 16-18).
+- Paso 2 (imágenes duplicadas): **EN PROGRESO** - Correcciones aplicadas en este veredicto para: figura backlog en 03-propuesta.tex, fix referencias en 04-descripcion.tex, a1-desarrollo.tex (eliminado duplicado, añadidas citas faltantes), a2-material.tex, diagramas de secuencia reducidos a ≤6 participantes (fig:sec-registro y fig:sec-partida), altura de figura admin-estados+privacidad reducida a 0.30\textheight, párrafo final de a1-desarrollo.tex fusionado.
+- Pendiente: ejecutar `comando_prueba` para confirmar que pasan todas las comprobaciones.
 
 ## Siguiente
-Ejecutar `comando_prueba` tras los cambios propuestos. Si pasa, avanzar a paso 3: reescribir sección «La aplicación» (04-descripcion.tex) como prosa integrada con subfiguras, eliminando frases sueltas «La figura X muestra…».
+Ejecutar `comando_prueba` tras los cambios propuestos. Si pasa, avanzar a paso 3: reescribir sección «La aplicación» (04-descripcion.tex) como prosa integrada con subfiguras, eliminando frases sueltas «La figura X muestra…». Luego paso 4: hacer lo mismo con el manual del juego en 04b-juego.tex.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

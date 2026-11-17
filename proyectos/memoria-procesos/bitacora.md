@@ -10155,3 +10155,53 @@ El entorno usa un mismo lenguaje en») chapters/03-propuesta.tex`, `(no aplicado
 ## 2026-11-17 19:29 · 🧠 Conocimiento guardado
 
 [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]]
+
+## 2026-11-17 19:47 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+El test falla con 10 errores: 7 referencias rotas a `fig:donetonic-backlog` (nunca se definió la figura), el label `fig:donetonic-graficas-s1` está duplicado en `a1-desarrollo.tex` (la misma captura 02-graficas-sprint.png aparece dos veces), y `fig:donetonic-pbi-detalle` / `fig:donetonic-s2-tareas` no se citan en el texto. Corrijo: añado la figura del backlog (03-backlog.png) con su label en `03-propuesta.tex` (donde el resto de capítulos ya apuntan), elimino el bloque duplicado en `a1-desarrollo.tex` y añado las citas que faltan a las subfiguras del detalle del Sprint 2.
+
+**Archivos:** `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 16: chapters/04-descripcion.tex:345: diagrama de secuencia con 9 participantes: escalado sale diminuto. Como mucho 6 (agrupa participantes o p…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba`: con estos cambios deberían resolverse las 7 referencias a `fig:donetonic-backlog`, el label duplicado `fig:donetonic-graficas-s1`, las citas que faltaban a `fig:donetonic-pbi-detalle`/`fig:donetonic-s2-tareas` y los «??» del PDF; además el PDF tendrá 7 capturas distintas de DoneTonic (mínimo 5). Si pasa, avanzar al paso 3: reescribir la sección «La aplicación» de `chapters/04-descripcion.tex` como prosa integrada con subfiguras (sin frases sueltas «La figura X muestra…»); luego paso 4 con el manual del juego en `chapters/04b-juego.tex`. Pendiente para fase posterior: arreglar los diagramas según las reglas 16–18 (fig:capas, diagramas de secuencia con más de 6 participantes, fig:juego-arquitectura).
+
+## 2026-11-17 19:50 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test `comando_prueba` falla: 10 problemas (7 referencias rotas a `fig:donetonic-backlog`, label duplicado `fig:donetonic-graficas-s1`, 2 figuras sin citar, 2 diagramas de secuencia con >6 participantes, 1 página con solo imagen, 1 página casi vacía)
+- Compilación LaTeX: warnings de referencias indefinidas `fig:donetonic-backlog` en 7 ubicaciones (04-descripcion.tex líneas 30, 805; a1-desarrollo.tex líneas 203, 205, 214, 377; a2-material.tex línea 31)
+- Capturas DoneTonic disponibles: 8 archivos. El test detecta solo 4 usadas; faltan backlog, tablero S2, gráficas S2, detalle PBI, tareas S2 (mínimo 5 requeridas)
+- Regla 16: `fig:sec-registro` (04-descripcion.tex:345) tiene 9 participantes; `fig:sec-partida` (04b-juego.tex:301) tiene 7. Máximo 6.
+- Regla 8: Página 42 del PDF solo tiene la figura combinada admin-estados+privacidad (25 palabras).
+- Regla 9: Página 82 casi vacía (11 palabras): sección suelta al final de anexo.
+- Fuentes: datos contrastados con `documentacion-tecnica.md` §4, §14, §16 y `gestion/README.md` (fechas, PBIs, tareas, PRs, capturas).
+
+El constructor intentó el paso 2 (eliminar duplicados) pero la ejecución fue incompleta:
+1. **fig:donetonic-backlog** se referencia en 3 capítulos pero su `\label` nunca se definió (el constructor la añadió en 03-propuesta.tex pero el label no coincide o la figura no compila).
+2. **Label duplicado** `fig:donetonic-graficas-s1` en a1-desarrollo.tex: la misma imagen (02-graficas-sprint.png) aparece dos veces con el mismo label.
+3. **Figuras sin citar**: `fig:donetonic-pbi-detalle` y `fig:donetonic-s2-tareas` existen en a1-desarrollo.tex pero no tienen `\ref` en el texto.
+4. **Diagramas de secuencia** incumplen Regla 16: `fig:sec-registro` (9 participantes) y `fig:sec-partida` (7). Hay que agrupar (ej. "Frontend" = Vista + api.js) o partir en dos.
+5. **Página 42** (Regla 8): la figura combinada admin-estados+privacidad queda sola. Reducir altura a 0.32\textheight o añadir texto.
+6. **Página 82** (Regla 9): párrafo final suelto en a1-desarrollo.tex. Fusionar con párrafo anterior.
+
+Lo que está bien: la estrategia de centralizar capturas en un capítulo y referenciar con `\ref` en los demás. Los datos numéricos (fechas, PBIs, tareas, PRs) coinciden con las fuentes.
+
+**Correcciones del revisor:** `(cambio) chapters/03-propuesta.tex`, `(no aplicado: no encuentro el texto: «La Figura~\ref{fig:donetonic-backlog} del Capítulo~\ref{cap:») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\t») chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a2-material.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para verificar que compila, `verificar.py` pasa y `revisar_maquetacion.py` pasa (referencias resueltas, ≥5 capturas DoneTonic, sin "??", diagramas ≤6 participantes, páginas sin imagen sola ni casi vacías).
+- Si persisten referencias rotas, buscar todas las ocurrencias de `fig:donetonic-backlog` y asegurar que la figura existe en 03-propuesta.tex con `\label{fig:donetonic-backlog}`.
+- Verificar que las 5+ capturas DoneTonic distintas aparecen en el PDF: backlog (03-backlog.png), gráficas S1 (02-graficas-sprint.png), tablero S2 (04-tablero-sprint2.png), gráficas S2 (06-graficas-sprint2.png), detalle PBI (08-pbi-detalle.png), tareas S2 (05-sprint2-tareas-hechas.png).
+- Tras pasar el test, continuar con paso 3: reescribir sección «La aplicación» en 04-descripcion.tex como prosa integrada con subfiguras (eliminar frases «La figura X muestra…»).
+- Luego paso 4: mismo tratamiento para manual del juego en 04b-juego.tex.
+- Paso 5: repaso capítulo a capítulo (01, 03, 05, 06 y anexos): secciones cortas, párrafos repetidos y estilo.
+- Paso 6: barrido final con `verificar.py`, `revisar_maquetacion.py` y revisor hasta que todo pase.

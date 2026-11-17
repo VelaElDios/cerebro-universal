@@ -344,21 +344,16 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[2]{v}{Vista registro}
-  \newinst[2]{c}{api.js}
-  \newinst[2]{a}{API registro}
+  \newinst[2]{fe}{Frontend (Vista + api.js)}
+  \newinst[2]{a}{API /api/auth/register}
   \newinst[2]{s}{userService}
   \newinst[2]{h}{passwordHasher}
   \newinst[2]{r}{userRepository}
   \newinst[2]{ac}{accountConfirmation}
   \newinst[2]{m}{mailer SMTP}
-  \begin{call}{u}{escribe email y contraseña}{v}{ok}
+  \begin{call}{u}{escribe email y contraseña}{fe}{ok}
   \end{call}
-  \begin{call}{v}{valida email y contraseña}{v}{ok}
-  \end{call}
-  \begin{call}{v}{register email contraseña}{c}{ok}
-  \end{call}
-  \begin{call}{c}{POST registro}{a}{201 o 409}
+  \begin{call}{fe}{valida y envía POST}{a}{201 o 409}
     \begin{call}{a}{register}{s}{ok}
     \end{call}
     \begin{call}{s}{normaliza y valida}{s}{ok}
@@ -373,11 +368,9 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
       \end{call}
       \begin{call}{s}{crea usuario pendiente}{r}{ok}
       \end{call}
-      \begin{call}{ac}{envia confirmacion}{ac}{token}
-      \end{call}
       \begin{call}{ac}{firma HMAC 24 h}{ac}{token}
       \end{call}
-      \begin{call}{ac}{envia correo}{m}{ok o error}
+      \begin{call}{ac}{envía correo}{m}{ok o error}
       \end{call}
     \end{sdblock}
   \end{call}
@@ -777,20 +770,22 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \centering
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
+\includegraphics[width=\linewidth,height=0.30\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
 \subcaption{Panel con todos los estados de cuenta.}
 \label{fig:hito4-admin-estados}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.32\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
+\includegraphics[width=\linewidth,height=0.30\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
 \subcaption{Política de privacidad.}
 \label{fig:hito4-privacidad}
 \end{subfigure}
 \caption{Panel de administración con todos los estados y política de privacidad.}
 \label{fig:hito4-admin-estados-privacidad}
 \end{figure}
+
+El panel muestra todos los estados (activas, pendientes, eliminadas, locales y de Google) y la política de privacidad es accesible desde el pie de página.
 
 \subsection{Producción}
 

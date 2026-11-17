@@ -29,19 +29,31 @@
   "ultimo": "2026-11-17",
   "usos": 1
  },
- "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
+ "memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-17",
   "usos": 1
+ },
+ "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 2
  },
  "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-17",
-  "usos": 1
+  "usos": 2
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 2
+ },
+ "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-17",
@@ -69,7 +81,13 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-17",
-  "usos": 3
+  "usos": 4
+ },
+ "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-17",
+  "usos": 1
  },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 0,
