@@ -2,14 +2,14 @@
 
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
-- Notas que se han usado alguna vez: 23
-- Notas que nunca se han usado: 1281
+- Notas que se han usado alguna vez: 24
+- Notas que nunca se han usado: 1282
 
 ## Las más útiles
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 8 | 2 | 0 |
+| [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 9 | 2 | 0 |
 | [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 4 | 1 | 0 |
 | [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo\|Capturas de DoneTonic disponibles en el repo]] | 4 | 1 | 0 |
 | [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes\|Números clave del proyecto contrastados con fuentes]] | 3 | 2 | 0 |

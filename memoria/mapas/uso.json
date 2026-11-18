@@ -50,20 +50,26 @@
  "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-18",
-  "usos": 4
+  "ultimo": "2026-11-19",
+  "usos": 5
+ },
+ "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
  },
  "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 2
+  "ultimo": "2026-11-19",
+  "usos": 3
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 2
+  "ultimo": "2026-11-19",
+  "usos": 3
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -98,26 +104,26 @@
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 1
+  "ultimo": "2026-11-19",
+  "usos": 2
  },
  "memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente.md": {
   "bien": 2,
   "mal": 0,
-  "ultimo": "2026-11-18",
-  "usos": 8
+  "ultimo": "2026-11-19",
+  "usos": 9
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-18",
-  "usos": 2
+  "ultimo": "2026-11-19",
+  "usos": 3
  },
  "memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-18",
-  "usos": 1
+  "ultimo": "2026-11-19",
+  "usos": 2
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,

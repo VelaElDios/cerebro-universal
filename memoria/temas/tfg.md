@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tfg"
-notas: 52
+notas: 53
 ---
 # tfg
 
@@ -65,6 +65,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - 📊 [[memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg|Bibliografía gestionada con BibTeX en la memoria TFG]]
 - 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo|Capturas de DoneTonic disponibles en el repo]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-por-carpeta-con-fechas-y-requisitos|Inventario de capturas por carpeta con fechas y requisitos]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metadatos-del-proyecto-la-grada-colchonera|Metadatos del proyecto La Grada Colchonera]]
 
 ## Lecciones (errores ya resueltos)

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T23:52:29+01:00",
+ "generado": "2026-11-19T00:55:06+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -7837,6 +7837,22 @@
    "ruta": "memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra.md"
   },
   {
+   "id": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "tipo": "concepto",
+   "titulo": "Trazabilidad requisito → PBI → tarea → PR en DoneTonic y GitHub",
+   "temas": [
+    "gestión",
+    "github flow",
+    "scrum",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github.md"
+  },
+  {
    "id": "concepto:tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero",
    "tipo": "concepto",
    "titulo": "Tres mecanismos de especulación evaluados en examen AC Enero 2014",
@@ -9327,6 +9343,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md"
+  },
+  {
+   "id": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
+   "tipo": "dato",
+   "titulo": "Inventario de capturas por carpeta con fechas y requisitos",
+   "temas": [
+    "capturas",
+    "tfg",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/inventario-de-capturas-por-carpeta-con-fechas-y-requisitos.md"
   },
   {
    "id": "dato:itanium-ia64-primer-procesador-intel-no-compatible-con-x86",
@@ -20268,7 +20299,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 52,
+   "peso": 53,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -20688,7 +20719,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 50,
+   "peso": 51,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -23131,8 +23162,22 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 8,
+   "peso": 10,
    "ruta": "memoria/temas/trazabilidad.md"
+  },
+  {
+   "id": "tema:gestión",
+   "tipo": "tema",
+   "titulo": "gestión",
+   "peso": 1,
+   "ruta": "memoria/temas/gestión.md"
+  },
+  {
+   "id": "tema:github flow",
+   "tipo": "tema",
+   "titulo": "github flow",
+   "peso": 1,
+   "ruta": "memoria/temas/github flow.md"
   },
   {
    "id": "tema:caché",
@@ -23691,7 +23736,7 @@
    "id": "tema:capturas",
    "tipo": "tema",
    "titulo": "capturas",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/capturas.md"
   },
   {
@@ -47172,6 +47217,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "tema:gestión",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "tema:github flow",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "concepto:tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero",
    "a": "tema:ac",
    "tipo": "trata"
@@ -51455,6 +51525,26 @@
    "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:itanium-ia64-primer-procesador-intel-no-compatible-con-x86",

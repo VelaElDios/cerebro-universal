@@ -98,5 +98,71 @@
  },
  "f019cfbf61702583b9992ab3a318339b": {
   "ok": true
+ },
+ "a19bbc61d013636cdafc9dea3ee1414a": {
+  "ok": false,
+  "problemas": [
+   "La línea etiquetada con 'tiene su mejor partida' que sale de la tabla 'users' atraviesa y pasa por encima de una esquina de la tabla 'juego_perfiles' antes de llegar a 'juego_records'."
+  ]
+ },
+ "2433b5fe922f14fe6798ca8872c6b0c6": {
+  "ok": true
+ },
+ "1861a97d2f4d468c8d3db043c918f09c": {
+  "ok": true
+ },
+ "5b2a46b57d2feaaa7151827e49eaa617": {
+  "ok": false,
+  "problemas": [
+   "La línea vertical de puntos del componente 'API login' atraviesa visualmente las cajas de control 'alt', 'else' y 'else' correspondientes a los diferentes escenarios de respuesta."
+  ]
+ },
+ "ec676519f231c9a76aa9e500bc028032": {
+  "ok": false,
+  "problemas": [
+   "En la Figura 3.6, la etiqueta 'redirige a Google con state' se cruza y pasa por encima de la línea punteada y la caja de 'Sesión PostgreSQL'."
+  ]
+ },
+ "85f4f837cd4459b34ded4c3c54100f58": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta '403 debe quedar un admin' dentro del bloque 'alt' atraviesa y se superpone con la línea vertical punteada del componente userService."
+  ]
+ },
+ "7e908fe2eb1e419c7ac497621327f2e4": {
+  "ok": false,
+  "problemas": [
+   "La línea de la estructura loop (cada fotograma (simulacion en Frontend)) se cruza o atraviesa con el texto de los mensajes dentro del bucle como 'estado fin'."
+  ]
+ },
+ "a9ffc1aa9bcb9721dbb885416df297c6": {
+  "ok": true
+ },
+ "42192d129ab76ec5450168f91bf72f1f": {
+  "ok": true
+ },
+ "64c70961cff74010dde833253a2cd813": {
+  "ok": true
+ },
+ "dcb5675c566bbb9cac61a2c30dcb4dd5": {
+  "ok": true
+ },
+ "4777c9b97712f117ad708d8eda9e4c7d": {
+  "ok": false,
+  "problemas": [
+   "La línea desde la tabla 'users' hasta 'juego_records' atraviesa visualmente la esquina inferior izquierda de la caja de 'juego_perfiles'."
+  ]
+ },
+ "8345c0e7d2e287f707c2d6b1d77d3efc": {
+  "ok": true
+ },
+ "1c635d6a6f9ef80a787dcf2d1a4bb4f9": {
+  "ok": true
+ },
+ "a1929d765bad2535fccfd6bccbdcf04a": {
+  "ok": true
+ },
+ "cf3171a8a8d334254a113722ab748c17": {
+  "ok": true
  }
 }

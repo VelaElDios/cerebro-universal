@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scrum"
-notas: 50
+notas: 51
 ---
 # scrum
 
@@ -46,6 +46,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 - 💡 [[memoria/conocimiento/conceptos/historias-de-usuario-y-criterios-de-aceptacion-en-donetonic|Historias de usuario y criterios de aceptación en DoneTonic para Sprint 2]]
 - 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores|Sistema de rarezas ligado a historia rojiblanca (36 jugadores, 4 rarezas)]]
 - 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-y-36-jugadores-pbi-p38|Sistema de rarezas y 36 jugadores (PBI P38)]]
+- 💡 [[memoria/conocimiento/conceptos/trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github|Trazabilidad requisito → PBI → tarea → PR en DoneTonic y GitHub]] · ⚠️ propuesto
 
 ## Datos
 

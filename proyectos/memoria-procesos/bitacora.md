@@ -10378,3 +10378,73 @@ El diagrama de contratar ya está corregido. Todos los diagramas de secuencia y 
 Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-19 00:49 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba falla con «Infinite glue shrinkage found in box being split» en muchos puntos de capítulos con `longtable` y figuras: es el efecto conocido de la clase `book` con `\flushbottom` al partir cajas con pegamento infinito. Voy a activar `\raggedbottom` en `elements/preambulo.tex` (no protegido) para que las páginas tengan fondo flexible y dejen de romperse así al partir tablas y figuras.
+
+**Archivos:** `(cambio) elements/preambulo.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [9
+- intento 2: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [9 (tocó `(cambio) elements/preambulo.tex`)
+- intento 3: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [9 (tocó `(cambio) elements/preambulo.tex`)
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` completo. Si ya compila y `verificar.py`/`revisar_maquetacion.py` pasan, pasar a revisar los diagramas que señaló Javier con `revisar_figuras.py`; si siguen los «Infinite glue shrinkage», reducir la altura de las figuras con varias filas de subfiguras (p. ej. `fig:hito4-flujo` y las de club del capítulo 4b) y sustituir los `\resizebox{\textwidth}{!}` de los diagramas de secuencia por `adjustbox` con `max totalheight=0.6\textheight`.
+
+## 2026-11-19 00:51 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- 19 PBIs Sprint 1 → doc §4.1 tabla backlog: P1–P19, 32 tareas T1–T32.
+- 29 PBIs Sprint 2 → doc §4.4 tabla backlog: P20–P48, 50 tareas T33–T82.
+- Fechas Sprint 1: 29/09–27/10/2026 → doc §4.1 y §4.6.
+- Fechas Sprint 2: 23/10–29/10/2026 → doc §4.4 y §4.6.
+- 276 pruebas en main al cierre Sprint 2 → doc §10.2 tabla: 140 Sprint 1 + 136 juego hasta Fase 6.
+- 322 pruebas tras Fase 7 → doc §10.2 total.
+- 5 migraciones SQL → doc §6.2 y @arbol migrations/001–005.
+- 23 endpoints API → doc §6.4 tabla.
+- 6 dependencias producción → doc §14 tabla.
+- 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → doc §14 tabla.
+- Hito 4 completado 23/10/2026 con correo real y Google publicado → doc §4.6 y capturas produccion/.
+- Cambio de alcance P19 (Cloud Run) → doc §4.1 y §4.6.
+- Backlog Sprint 2 registrado en DoneTonic al cerrar sprint (29/10) → doc §4.4 nota.
+- Burndown real Sprint 2 reconstruido con fechas PR → doc §4.5 tabla evolución.
+- Trazabilidad completa 82 tareas → doc §4.4 tablas trazabilidad.
+- Diagramas de secuencia 7.1–7.13 → doc §7.
+- Arquitectura en capas con decisiones → doc §5.1–5.2.
+- Modelo entidad-relación → doc §6.2.
+- Seguridad: tabla amenazas/medidas → doc §8.
+- CI/CD: 3 workflows + Render → doc §11.
+- Logs JSON con eventos → doc §12.1.
+- Problemas y soluciones → doc §13 tablas.
+- Conclusiones y trabajo futuro → doc §15.
+- Uso IA: hechos en uso-ia.md → fuente uso-ia.md.
+- Bibliografía extra: RFC 6749, bcrypt, Vampire Survivors, DoneTonic → bibliografia-extra.md.
+- Capturas mínimas por carpeta: app 13, hito4 11, juego 16, fase7 12, donetonic 8, produccion 3, prueba-tecnica 2 → §16 índice capturas.
+
+La compilación falla con «Infinite glue shrinkage found in box being split» en múltiples capítulos (04-descripcion, 04b-juego, 05-evaluacion, a1-desarrollo, a4-trazabilidad). El intento previo de redefinir `\mainmatter` en `elements/preambulo.tex` para usar `\raggedbottom` no surte efecto, probablemente porque `\frontmatter` ya se ejecutó y el glue infinito persiste en las longtables y figuras grandes. Además, Javier ha señalado problemas en diagramas (Fig 3.1 capas, Fig 4.7 arquitectura juego, Fig 3.4 confirmación) que deben corregirse tras lograr compilación limpia.
+
+Se debe aplicar un `\raggedbottom` global efectivo desde el inicio del documento y ajustar parámetros de flotantes y longtables para evitar cajas inpartibles. También hay que revisar que ninguna página quede con una sola imagen (Regla 8) y que los diagramas de secuencia no superen 6 participantes (Regla 16).
+
+El constructor debe corregir la maquetación global y luego los diagramas señalados.
+
+**Correcciones del revisor:** `(cambio) elements/preambulo.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para verificar que la compilación pasa sin errores de "Infinite glue shrinkage" y que `verificar.py` y `revisar_maquetacion.py` dan verde.
+- Si persisten errores en longtables concretas, reducir altura de subfiguras (p. ej. `height=0.32\textheight` en figuras con 2 filas de subfiguras) o añadir `\pagebreak` antes de la tabla.
+- Corregir diagramas señalados por Javier:
+  * Fig 3.1 (arquitectura en capas): ensanchar cajas (`text width`), evitar palabras partidas (`sr-c/services` → `src/services`), separar flechas de cajas.
+  * Fig 4.7 (arquitectura juego): separar cajas, flechas solo entre vecinas o con codos, que config.js no quede tapada.
+  * Fig 3.4 y demás diagramas de secuencia: etiquetas sin superponerse, ≤6 participantes (agrupar Frontend+api.js, Confirmación+correo).
+- Revisar que ninguna imagen se repita (usar `\ref` donde proceda) y que no haya páginas con una sola imagen (Regla 8).
+- Eliminar cualquier resto de «La figura X muestra…» en prosa de manuales (capítulos 4 y 4b).
+- Confirmar que el anexo A4 (trazabilidad) contiene las 82 tareas y que la tabla no se sale de márgenes.
+
+## 2026-11-19 00:51 · 🧠 Conocimiento guardado
+
+[[inventario-de-capturas-por-carpeta-con-fechas-y-requisitos]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]
