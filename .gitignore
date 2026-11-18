@@ -38,3 +38,6 @@ proyectos/*/.repos/
 
 # Datos de entrenamiento cuando no hay repo privado configurado (cerebro/dataset.py)
 .cerebro-datos/
+
+# Imagen temporal de revisar_figuras.py
+proyectos/*/.figura-tmp.png
