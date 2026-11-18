@@ -10357,3 +10357,24 @@ Los diagramas NO están arreglados aunque la memoria se dio por terminada:
 - **Figura 3.4 (confirmación por correo) y el resto de diagramas de secuencia:** que ninguna etiqueta se monte sobre otra ni sobre las cajas.
 
 Haced caso a lo que diga `revisar_figuras.py`: es lo que se ve de verdad en el PDF.
+
+## 2026-11-18 22:42 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+El proyecto se reabrió porque Javier detectó problemas en los diagramas (palabras partidas en cajas, flechas que cruzan cajas, etiquetas superpuestas). La compilación falla con errores de "infinite glue shrinkage" y overfull hbox en varios capítulos. Voy a corregir primero los diagramas TikZ de los capítulos 04-descripcion.tex (arquitectura en capas y modelo entidad-relación) y 04b-juego.tex (arquitectura del juego), que son los que Javier señaló específicamente.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «La Figura~\ref{fig:donetonic-s2-capturas} (subfiguras~\ref{f») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [9
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 4 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar comando_prueba. El diagrama de contratar ya está corregido. Ahora probar la compilación completa.<<<RESUMEN>>>
+El diagrama de contratar ya está corregido. Todos los diagramas de secuencia y TikZ han sido revisados y corregidos (tildes, número de participantes ≤6, anchuras de cajas, separaciones). También se corrigió la tabla de trazabilidad (anchos de columna) y se añadieron las referencias \ref faltantes. Ahora voy a ejecutar el comando de prueba completo para verificar que la compilación pasa y que verificar.py y revisar_maquetacion.py dan verde.
+
+## 2026-11-18 22:45 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.

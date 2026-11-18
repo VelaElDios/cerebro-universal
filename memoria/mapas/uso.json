@@ -50,8 +50,8 @@
  "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 3
+  "ultimo": "2026-11-18",
+  "usos": 4
  },
  "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md": {
   "bien": 0,
@@ -89,6 +89,12 @@
   "ultimo": "2026-11-17",
   "usos": 3
  },
+ "memoria/conocimiento/datos/requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-18",
+  "usos": 1
+ },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
   "mal": 0,
@@ -98,13 +104,19 @@
  "memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente.md": {
   "bien": 2,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 7
+  "ultimo": "2026-11-18",
+  "usos": 8
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-17",
+  "ultimo": "2026-11-18",
+  "usos": 2
+ },
+ "memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-18",
   "usos": 1
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
@@ -116,13 +128,13 @@
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 1
+  "ultimo": "2026-11-18",
+  "usos": 2
  },
  "memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm.md": {
   "bien": 1,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 3
+  "ultimo": "2026-11-18",
+  "usos": 4
  }
 }

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T17:34:34+01:00",
+ "generado": "2026-11-18T22:45:55+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -25,7 +25,7 @@
    "id": "proyecto:memoria-procesos",
    "tipo": "proyecto",
    "titulo": "memoria-procesos",
-   "estado": "terminado",
+   "estado": "en-construccion",
    "temas": [
     "latex",
     "memoria",

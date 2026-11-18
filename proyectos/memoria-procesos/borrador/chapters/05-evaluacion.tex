@@ -80,18 +80,18 @@ La Figura~\ref{fig:pipeline} resume el pipeline completo: cada PR ejecuta las pr
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.85cm, font=\footnotesize},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.85cm, font=\footnotesize},
-    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=2.4cm, align=center, font=\footnotesize},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.5cm, align=center, minimum height=1.0cm, font=\footnotesize},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.0cm, align=center, minimum height=1.0cm, font=\footnotesize},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2.5, text width=2.8cm, align=center, font=\footnotesize},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     \node[node] (push) {\textbf{Desarrollador}\\Push o PR a GitHub};
-    \node[nodewide, below=0.6cm of push] (ci) {\textbf{GitHub Actions CI}\\Test PostgreSQL 17 + Docker build};
-    \node[decision, below=0.7cm of ci] (dec) {¿CI verde\\en \texttt{main}?};
-    \node[nodewide, below=0.7cm of dec] (deploy) {\textbf{Deploy Cloud Run}\\Auth WIF $\rightarrow$ Artifact Registry $\rightarrow$ Cloud Run deploy $\rightarrow$ Smoke test};
-    \node[node, right=1.2cm of deploy] (render) {\textbf{Render}\\Webhook paralelo};
-    \node[node, left=1.2cm of dec] (nodeploy) {Sin despliegue};
-    \node[node, below=0.6cm of deploy] (prod) {\textbf{Producción activa}\\\url{run.app}};
+    \node[nodewide, below=0.8cm of push] (ci) {\textbf{GitHub Actions CI}\\Test PostgreSQL 17 + Docker build};
+    \node[decision, below=0.9cm of ci] (dec) {¿CI verde en \texttt{main}?};
+    \node[nodewide, below=0.9cm of dec] (deploy) {\textbf{Deploy Cloud Run}\\Auth WIF $\rightarrow$ Artifact Registry $\rightarrow$ Cloud Run deploy $\rightarrow$ Smoke test};
+    \node[node, right=2.0cm of deploy] (render) {\textbf{Render}\\Webhook paralelo};
+    \node[node, left=2.0cm of dec] (nodeploy) {Sin despliegue};
+    \node[node, below=0.8cm of deploy] (prod) {\textbf{Producción activa}\\\url{run.app}};
 
     \draw[arrow] (push) -- (ci);
     \draw[arrow] (ci) -- (dec);

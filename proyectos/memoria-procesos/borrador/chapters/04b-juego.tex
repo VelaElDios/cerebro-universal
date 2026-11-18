@@ -203,36 +203,36 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth, max totalheight=0.5\textheight}
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.9cm, font=\small},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.9cm, font=\small},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=1.0cm, font=\small},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.8cm, align=center, minimum height=1.0cm, font=\small},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Simulación pura
+    % Simulación pura (columna izquierda)
     \node[nodewide] (mundo) {mundo.js\\bucle de paso fijo};
-    \node[node, below=0.6cm of mundo] (armas) {armas.js};
-    \node[node, below=0.6cm of armas] (combate) {combate.js};
-    \node[node, below=0.6cm of combate] (jefes) {jefes.js};
-    \node[node, below=0.6cm of jefes] (oleadas) {oleadas.js / rivales.js};
-    \node[node, below=0.6cm of oleadas] (terreno) {terreno.js};
-    \node[node, below=0.6cm of terreno] (ultras) {ultras.js / ulti.js};
-    \node[node, below=0.6cm of ultras] (mejoras) {mejoras.js};
-    \node[node, right=3.0cm of mundo] (config) {config.js\\todo el equilibrio};
-    % Presentación
-    \node[nodewide, right=5.5cm of mundo] (juego) {juego.js\\pantallas y bucle};
-    \node[node, below=0.6cm of juego] (render) {render.js / render-mundo.js / render-ultras.js};
-    \node[node, below=0.6cm of render] (sprites) {sprites.js\\muñecos chibi 32x32};
-    \node[node, below=0.6cm of sprites] (hud) {hud.js};
-    \node[node, below=0.6cm of hud] (audio) {audio.js + musica.js};
-    \node[node, below=0.6cm of audio] (ui2) {club-ui.js, fin-ui.js, firma.js};
-    \node[node, below=0.6cm of ui2] (entrada) {entrada.js};
-    % Servidor
-    \node[nodewide, right=5.5cm of juego] (js) {juegoService.js};
-    \node[node, below=0.6cm of js] (club) {club.js};
-    \node[node, below=0.6cm of club] (config2) {config.js};
-    \node[node, below=0.6cm of config2] (logros) {logros.js};
-    % Conexiones
+    \node[node, below=0.7cm of mundo] (armas) {armas.js};
+    \node[node, below=0.7cm of armas] (combate) {combate.js};
+    \node[node, below=0.7cm of combate] (jefes) {jefes.js};
+    \node[node, below=0.7cm of jefes] (oleadas) {oleadas.js / rivales.js};
+    \node[node, below=0.7cm of oleadas] (terreno) {terreno.js};
+    \node[node, below=0.7cm of terreno] (ultras) {ultras.js / ulti.js};
+    \node[node, below=0.7cm of ultras] (mejoras) {mejoras.js};
+    \node[node, right=3.5cm of mundo] (config) {config.js\\todo el equilibrio};
+    % Presentación (columna central)
+    \node[nodewide, right=6.5cm of mundo] (juego) {juego.js\\pantallas y bucle};
+    \node[node, below=0.7cm of juego] (render) {render.js / render-mundo.js / render-ultras.js};
+    \node[node, below=0.7cm of render] (sprites) {sprites.js\\muñecos chibi 32x32};
+    \node[node, below=0.7cm of sprites] (hud) {hud.js};
+    \node[node, below=0.7cm of hud] (audio) {audio.js + musica.js};
+    \node[node, below=0.7cm of audio] (ui2) {club-ui.js, fin-ui.js, firma.js};
+    \node[node, below=0.7cm of ui2] (entrada) {entrada.js};
+    % Servidor (columna derecha)
+    \node[nodewide, right=6.5cm of juego] (js) {juegoService.js};
+    \node[node, below=0.7cm of js] (club) {club.js};
+    \node[node, below=0.7cm of club] (config2) {config.js};
+    \node[node, below=0.7cm of config2] (logros) {logros.js};
+    % Conexiones - solo entre cajas vecinas o con codos
     \draw[arrow] (mundo) -- (armas);
     \draw[arrow] (mundo) -- (combate);
     \draw[arrow] (mundo) -- (jefes);
@@ -248,7 +248,7 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
     \draw[arrow] (juego) -- (ui2);
     \draw[arrow] (juego) -- (entrada);
     \draw[arrow] (juego) -- (mundo);
-    \draw[arrow] (juego) -- node[midway, above] {api.js -> /api/juego} (js);
+    \draw[arrow] (juego) -- node[midway, above, font=\footnotesize] {api.js $\rightarrow$ /api/juego} (js);
     \draw[arrow] (js) -- (club);
     \draw[arrow, dashed] (js) -- (config2);
     \draw[arrow] (js) -- (logros);
@@ -314,17 +314,17 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
     \begin{call}{srv}{guarda partida en curso}{repo}{ok}
     \end{call}
   \end{call}
-  \begin{sdblock}{loop}{cada fotograma (simulación en Frontend)}
+  \begin{sdblock}{loop}{cada fotograma (simulacion en Frontend)}
     \mess{fe}{avanzar paso fijo}{fe}
     \mess{fe}{estado fin}{fe}
   \end{sdblock}
   \begin{call}{fe}{POST partidas/id/fin}{api}{200 o 400}
-    \begin{call}{api}{finalizarPartida}{srv}{validación}
+    \begin{call}{api}{finalizarPartida}{srv}{validacion}
     \end{call}
     \begin{sdblock}{alt}{resultado imposible}
-      \mess{srv}{400 resultado no creíble}{api}
+      \mess{srv}{400 resultado no creible}{api}
     \end{sdblock}
-    \begin{sdblock}{else}{resultado válido}
+    \begin{sdblock}{else}{resultado valido}
       \begin{call}{srv}{reparte recompensas y guarda}{repo}{perfil}
       \end{call}
       \mess{api}{200 recompensas y logros}{fe}

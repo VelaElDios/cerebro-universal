@@ -105,34 +105,34 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=1.0cm, font=\small},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.0cm, align=center, minimum height=1.0cm, font=\small},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=1.1cm, font=\small},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=1.1cm, font=\small},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Navegador
     \node[nodewide] (ui) {Interfaz\\ui.js + ui/ + vistas/};
-    \node[node, below=0.6cm of ui] (cli) {Cliente de la API\\api.js (único fetch)};
-    \node[node, below=0.6cm of cli] (game) {Juego\\game/ (canvas, Web Audio)};
+    \node[node, below=0.7cm of ui] (cli) {Cliente API\\api.js (único fetch)};
+    \node[node, below=0.7cm of cli] (game) {Juego\\game/ (canvas, Web Audio)};
     % Servidor
-    \node[nodewide, right=3.5cm of ui] (api) {Capa API (src/api)\\rutas, sesión, roles,\\logs, errores};
-    \node[node, below=0.6cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación,\\tokens, juego};
-    \node[node, below=0.6cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=0.6cm of repo] (int) {Integraciones\\correo | Google};
-    \node[node, right=2.5cm of srv] (rules) {Reglas compartidas\\club.js, config.js,\\logros.js (juego)};
+    \node[nodewide, right=4.0cm of ui] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
+    \node[node, below=0.7cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación, tokens, juego};
+    \node[node, below=0.7cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
+    \node[node, below=0.7cm of repo] (int) {Integraciones\\correo | Google};
+    \node[node, right=3.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
 
     % Flechas navegador
     \draw[arrow] (ui) -- (cli);
     \draw[arrow] (game) -- (cli);
-    \draw[arrow] (cli) -- node[midway, above] {\shortstack[l]{HTTP + JSON\\cookie de sesión}} (api);
+    \draw[arrow] (cli) -- node[midway, above, font=\footnotesize] {HTTP + JSON / cookie sesión} (api);
     % Flechas servidor
     \draw[arrow] (api) -- (srv);
     \draw[arrow] (srv) -- (repo);
     \draw[arrow] (srv) -- (int);
     \draw[arrow, dashed] (srv) -- (rules);
     % BD y externos
-    \node[node, right=2.5cm of repo] (pg) {PostgreSQL\\Neon};
-    \node[node, right=2.5cm of int] (smtp) {SMTP Gmail};
-    \node[node, right=2.5cm of smtp] (goo) {Google OAuth 2.0};
+    \node[node, right=3.0cm of repo] (pg) {PostgreSQL\\Neon};
+    \node[node, right=3.0cm of int] (smtp) {SMTP Gmail};
+    \node[node, right=3.0cm of smtp] (goo) {Google OAuth 2.0};
     \draw[arrow] (repo) -- (pg);
     \draw[arrow] (int) -- (smtp);
     \draw[arrow] (int) -- (goo);
@@ -200,7 +200,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 \centering
 \begin{adjustbox}{max width=\linewidth}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.2cm, align=left, font=\small},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.3cm, align=left, font=\small, text width=4.2cm},
     attr/.style={font=\small},
     pk/.style={font=\small\bfseries},
     uk/.style={font=\small\itshape},
@@ -222,14 +222,14 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr avatar TEXT
     };
     % session
-    \node[entity, below=1.5cm of users] (session) {
+    \node[entity, below=1.6cm of users] (session) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \attr sess JSON\\
         \attr expire TIMESTAMP
     };
     % juego_perfiles
-    \node[entity, right=5.0cm of users] (perfiles) {
+    \node[entity, right=5.5cm of users] (perfiles) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \attr datos JSONB\\
@@ -237,7 +237,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr updated\_at TIMESTAMPTZ
     };
     % juego_records
-    \node[entity, below=1.5cm of perfiles] (records) {
+    \node[entity, below=1.6cm of perfiles] (records) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \attr alias TEXT\\
@@ -348,7 +348,7 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
   \newinst[2]{a}{API /api/auth/register}
   \newinst[2]{s}{userService}
   \newinst[2]{r}{userRepository}
-  \newinst[2]{cm}{Confirmación y correo}
+  \newinst[2]{cm}{Confirmación + correo}
   \begin{call}{u}{escribe email y contraseña}{fe}{ok}
   \end{call}
   \begin{call}{fe}{valida y envía POST}{a}{201 o 409}
@@ -366,7 +366,7 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
       \end{call}
       \begin{call}{s}{crea usuario pendiente}{r}{ok}
       \end{call}
-      \begin{call}{cm}{firma HMAC 24 h y envía correo}{cm}{ok o error}
+      \begin{call}{cm}{firma HMAC 24h y envia correo}{cm}{ok o error}
       \end{call}
     \end{sdblock}
   \end{call}
@@ -396,7 +396,7 @@ Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la c
   \end{call}
   \begin{call}{ac}{verifica token}{t}{valido o nulo}
   \end{call}
-  \begin{sdblock}{alt}{firma mala caducado o propósito distinto}
+  \begin{sdblock}{alt}{firma mala caducado o proposito distinto}
     \mess{t}{null}{ac}
     \mess{a}{303 enlace no valido}{u}
   \end{sdblock}
@@ -471,7 +471,7 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
   \begin{call}{a}{guarda state}{ss}{ok}
   \end{call}
   \mess{a}{redirige a Google con state}{u}
-  \begin{call}{u}{inicia sesión y acepta}{g}{ok}
+  \begin{call}{u}{inicia sesion y acepta}{g}{ok}
   \end{call}
   \mess{g}{302 callback con code y state}{u}
   \begin{call}{u}{GET callback code state}{a}{ok}
@@ -486,7 +486,7 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
     \end{call}
     \begin{call}{a}{loginWithOAuth}{s}{usuario}
     \end{call}
-    \begin{call}{a}{regenera sesión}{ss}{ok}
+    \begin{call}{a}{regenera sesion}{ss}{ok}
     \end{call}
     \mess{a}{303 ir a jugar}{u}
   \end{sdblock}
@@ -522,7 +522,7 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
   \begin{sdblock}{alt}{último administrador}
     \mess{s}{403 debe quedar un admin}{a}
   \end{sdblock}
-  \begin{sdblock}{else}{baja lógica}
+  \begin{sdblock}{else}{baja logica}
     \mess{s}{status deleted suelta mote y email}{a}
     \mess{a}{204 aviso y vuelta al inicio}{v}
   \end{sdblock}
@@ -782,6 +782,8 @@ El panel de administración muestra todas las cuentas con sus estados (activas, 
 \caption{Panel de administración con todos los estados y política de privacidad.}
 \label{fig:hito4-admin-estados-privacidad}
 \end{figure}
+
+El panel muestra todas las cuentas con sus estados (activas, pendientes, eliminadas, locales y de Google), de modo que el administrador ve de un vistazo cuáles están pendientes de confirmar y cuáles proceden de un acceso con Google. La política de privacidad, accesible desde el pie de página, documenta el tratamiento de los datos personales: el correo no aparece en el ranking y los logs ocultan contraseñas, cookies y tokens.
 
 Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
 

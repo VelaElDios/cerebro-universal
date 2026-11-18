@@ -1,0 +1,102 @@
+{
+ "1d748c89bc32bebebc1b44e7112371db": {
+  "ok": false,
+  "problemas": [
+   "En el bloque de Datos, las palabras 're-positories' están partidas con un guion debido al salto de línea.",
+   "El texto 'SMTP Gmail' en la integración inferior está cruzado por una flecha horizontal de manera que la línea pasa por encima de las letras."
+  ]
+ },
+ "e590096b76c67a5ddc770963d3abe45e": {
+  "ok": false,
+  "problemas": [
+   "La línea etiquetada como 'tiene su club' que sale de la tabla 'users' y va a la tabla 'juego_perfiles' atraviesa la tabla 'juego_perfiles' para conectar con ella (o la flecha entra en el cuerpo de la caja)."
+  ]
+ },
+ "1e523ca7922a248c21353779e5ccf7a9": {
+  "ok": false,
+  "problemas": [
+   "Figura 3.3: Las etiquetas de los bloques 'alt' y 'else' ('ya existe' / '409 ConflictError' y 'nuevo' / 'hash contraseña bcrypt' / 'crea usuario pendiente') presentan líneas y textos que se cruzan o solapan dentro de las zonas delimitadas."
+  ]
+ },
+ "bb0722e59c602401c20decd2453ce549": {
+  "ok": true
+ },
+ "0fc10a0ea4f6510cbae825369d8acd76": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta que va desde la API login hasta el objeto api.js atraviesa (pasa por encima de) el borde y contenido inferior de la caja alternativa 'else correcto'."
+  ]
+ },
+ "a10e39a325b907e486e5979cb58ce01b": {
+  "ok": false,
+  "problemas": [
+   "En la Figura 3.6, la etiqueta 'redirege a Google con state' se solapa con la línea de vida y cruza el diagrama de manera poco clara."
+  ]
+ },
+ "b3f4866dc71a00a023b54c8bb95aaf88": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta que va desde la etiqueta 'ok' (hacia la izquierda de 'userService' hacia 'API baja') cruza exactamente por encima de la línea vertical de soporte de 'userService' o intersecta de forma confusa con elementos del bloque 'alt'."
+  ]
+ },
+ "72214544073421c47eb54bb228d913ea": {
+  "ok": true
+ },
+ "74b828189cb13766c3e953c18850f4ca": {
+  "ok": true
+ },
+ "d6ad9b6c124bbc978d846fdcdc919157": {
+  "ok": true
+ },
+ "c8e5aeb504197bc815f4bcd5d2bfec8e": {
+  "ok": true
+ },
+ "537e296142be14505c0314331400c60a": {
+  "ok": true
+ },
+ "7b691e7e446498202cf0eb1f29c200ba": {
+  "ok": false,
+  "problemas": [
+   "En el diagrama de la Figura 3.1, la palabra 'positories' en la caja de 'Datos (src/re-positories)' está partida con un guion de manera extraña."
+  ]
+ },
+ "1bbc6fae80fb2c4967492adf384623c6": {
+  "ok": false,
+  "problemas": [
+   "La línea que va desde la tabla 'users' hasta la tabla 'juego_records' atraviesa y pasa por encima de parte de otra línea y del texto de la etiqueta 'tiene su mejor partida'."
+  ]
+ },
+ "f7dc4ff4aa31a52509c7375831e116ea": {
+  "ok": true
+ },
+ "e4e45c56c97e0360fd61c2e579f616e5": {
+  "ok": true
+ },
+ "113a3d5dfa688e20d79cd252cffad3e8": {
+  "ok": false,
+  "problemas": [
+   "En la Figura 3.6, la etiqueta 'state falso o cancelado' del bloque 'alt' superior se sale ligeramente del borde izquierdo de dicha caja delimitadora."
+  ]
+ },
+ "aeec83d6e95958aab1c6109d7752e92b": {
+  "ok": false,
+  "problemas": [
+   "En el bloque alt inferior, la etiqueta de la flecha de respuesta «status deleted suelta mote y email» cruza y se superpone parcialmente con la línea vertical de separación del marco y parte del texto de la condición."
+  ]
+ },
+ "598b3cb09050015442d0f90e435f185a": {
+  "ok": true
+ },
+ "60bbc4d434de9739feb233971fd0c7ee": {
+  "ok": true
+ },
+ "53ce02b799276a6e4af1c920ef71075c": {
+  "ok": true
+ },
+ "2665ab5538a19f54fe7beded14e56dd1": {
+  "ok": true
+ },
+ "f019cfbf61702583b9992ab3a318339b": {
+  "ok": true
+ }
+}
