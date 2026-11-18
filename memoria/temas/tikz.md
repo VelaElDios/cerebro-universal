@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 15
+notas: 16
 ---
 # tikz
 
@@ -24,6 +24,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 - ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista|Diagramas: ninguna línea/flecha atraviesa cajas, codos y distancia suficiente]]
+- ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
 
 ## Conceptos
 
@@ -39,4 +40,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 ## Temas relacionados
 
-[[latex]] · [[pgfplots]] · [[memoria]] · [[lua]] · [[diagramas]] · [[pgf-umlsd]] · [[tfg]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]]
+[[latex]] · [[pgfplots]] · [[memoria]] · [[diagramas]] · [[lua]] · [[pgf-umlsd]] · [[tfg]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]]

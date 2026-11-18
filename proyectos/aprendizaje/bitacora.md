@@ -133,3 +133,11 @@ Trozos leídos: 5 · notas nuevas o ampliadas: 48
 - ✅ `repo:datos/temarios/AC/examenes/Noviembre2014A.pdf` aprendido entero: 10 notas → [[fuente-noviembre2014a-examenes]]
 - ✅ `repo:datos/temarios/AC/examenes/Noviembre2014B.pdf` aprendido entero: 10 notas → [[fuente-noviembre2014b-examenes]]
 - ✅ `repo:datos/temarios/AC/examenes/Octubre2010.pdf` aprendido entero: 10 notas → [[fuente-octubre2010-examenes]]
+
+## 2026-11-18 22:48 · 📚 Aprendizaje
+
+Trozos leídos: 1 · notas nuevas o ampliadas: 8
+
+**Repos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100 · datos @ cc80251 2026-11-18 21:46:42 +0000
+
+- ✅ `../../memoria/reglas-tfg.md` aprendido entero: 8 notas → [[fuente-reglas-tfg-memoria]]

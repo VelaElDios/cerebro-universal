@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T22:45:55+01:00",
+ "generado": "2026-11-18T22:51:57+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -11422,6 +11422,21 @@
    "ruta": "memoria/conocimiento/decisiones/configuracion-de-recursos-para-tomasulo-especulativo-en-exam.md"
   },
   {
+   "id": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "tipo": "decision",
+   "titulo": "Contenido por sprint y prosa de TFG (no listas de capturas)",
+   "temas": [
+    "latex",
+    "memoria",
+    "redaccion",
+    "sprints",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md"
+  },
+  {
    "id": "decision:convencion-etiquetas-indefinido-y-sucio-para-poison-bits-en",
    "tipo": "decision",
    "titulo": "Convención etiquetas \"indefinido\" y \"sucio\" para poison bits en examen AC",
@@ -11829,6 +11844,21 @@
    "ruta": "memoria/conocimiento/decisiones/latencias-asumidas-para-carga-2-ciclos-y-multiplicacion-fp-3.md"
   },
   {
+   "id": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "tipo": "decision",
+   "titulo": "Límites y calidad de diagramas (participantes, legibilidad, routing)",
+   "temas": [
+    "diagramas",
+    "latex",
+    "memoria",
+    "tfg",
+    "tikz"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou.md"
+  },
+  {
    "id": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
    "tipo": "decision",
    "titulo": "Los datos de entrenamiento van a un repo privado",
@@ -11998,6 +12028,19 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d.md"
+  },
+  {
+   "id": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "tipo": "decision",
+   "titulo": "Portada oficial única y elementos fijos de la plantilla",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md"
   },
   {
    "id": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
@@ -15006,6 +15049,21 @@
    "ruta": "memoria/conocimiento/recetas/capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de.md"
   },
   {
+   "id": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "tipo": "receta",
+   "titulo": "Checklist final antes de marcar TERMINADO (PDF página a página + script verde)",
+   "temas": [
+    "latex",
+    "memoria",
+    "revisar_maquetacion.py",
+    "tfg",
+    "verificacion"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin.md"
+  },
+  {
    "id": "receta:checklist-previo-a-abrir-pull-request-npm-test-local-obligat",
    "tipo": "receta",
    "titulo": "Checklist previo a abrir Pull Request: npm test local obligatorio",
@@ -17761,6 +17819,19 @@
    "ruta": "memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-cod.md"
   },
   {
+   "id": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "tipo": "receta",
+   "titulo": "Formato de títulos y enlaces en la memoria",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria.md"
+  },
+  {
    "id": "receta:formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores",
    "tipo": "receta",
    "titulo": "Fórmula del tiempo de ejecución de CPU y sus tres factores",
@@ -19032,6 +19103,20 @@
    "ruta": "memoria/conocimiento/recetas/reglas-de-actualizacion-del-selector-hibrido-de-2-bits.md"
   },
   {
+   "id": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "tipo": "receta",
+   "titulo": "Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)",
+   "temas": [
+    "figuras",
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle.md"
+  },
+  {
    "id": "receta:reglas-de-integracion-mediante-pull-requests-con-ci-obligato",
    "tipo": "receta",
    "titulo": "Reglas de integración mediante Pull Requests con CI obligatorio",
@@ -19046,6 +19131,20 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/reglas-de-integracion-mediante-pull-requests-con-ci-obligato.md"
+  },
+  {
+   "id": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "tipo": "receta",
+   "titulo": "Reglas de maquetación de tablas (alineación, anchos, longtable)",
+   "temas": [
+    "latex",
+    "memoria",
+    "tablas",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable.md"
   },
   {
    "id": "receta:rellenar-tabla-de-ejecucion-tomasulo-columnas-issue-executio",
@@ -19930,6 +20029,21 @@
    "ruta": "memoria/conocimiento/recetas/valor-de-bhr-de-5-bits-para-bucles-anidados-i-6-j-0-pregunta.md"
   },
   {
+   "id": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "tipo": "receta",
+   "titulo": "Verificación automática de diagramas con scripts/revisar_figuras.py",
+   "temas": [
+    "diagramas",
+    "latex",
+    "memoria",
+    "tfg",
+    "verificacion"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig.md"
+  },
+  {
    "id": "receta:verificacion-de-correccion-numerica-entre-version-base-y-opt",
    "tipo": "receta",
    "titulo": "Verificación de corrección numérica entre versión base y optimizada ILP",
@@ -19969,21 +20083,21 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 99,
+   "peso": 107,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 51,
+   "peso": 59,
    "ruta": "memoria/temas/memoria.md"
   },
   {
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 15,
+   "peso": 16,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -20081,7 +20195,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 10,
+   "peso": 12,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -20116,7 +20230,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -20130,7 +20244,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -20144,7 +20258,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 44,
+   "peso": 52,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -24155,7 +24269,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 5,
+   "peso": 7,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -24234,6 +24348,20 @@
    "titulo": "hyperfine",
    "peso": 9,
    "ruta": "memoria/temas/hyperfine.md"
+  },
+  {
+   "id": "tema:redaccion",
+   "tipo": "tema",
+   "titulo": "redaccion",
+   "peso": 2,
+   "ruta": "memoria/temas/redaccion.md"
+  },
+  {
+   "id": "tema:sprints",
+   "tipo": "tema",
+   "titulo": "sprints",
+   "peso": 1,
+   "ruta": "memoria/temas/sprints.md"
   },
   {
    "id": "tema:base-de-datos",
@@ -24857,6 +24985,13 @@
    "titulo": "trabajo-futuro",
    "peso": 1,
    "ruta": "memoria/temas/trabajo-futuro.md"
+  },
+  {
+   "id": "tema:revisar_maquetacion.py",
+   "tipo": "tema",
+   "titulo": "revisar_maquetacion.py",
+   "peso": 1,
+   "ruta": "memoria/temas/revisar_maquetacion.py.md"
   },
   {
    "id": "tema:api-client",
@@ -25893,13 +26028,6 @@
    "titulo": "sesión",
    "peso": 1,
    "ruta": "memoria/temas/sesión.md"
-  },
-  {
-   "id": "tema:redaccion",
-   "tipo": "tema",
-   "titulo": "redaccion",
-   "peso": 1,
-   "ruta": "memoria/temas/redaccion.md"
   },
   {
    "id": "tema:email-confirmation",
@@ -57469,6 +57597,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
    "de": "decision:convencion-etiquetas-indefinido-y-sucio-para-poison-bits-en",
    "a": "tema:ac",
    "tipo": "trata"
@@ -58599,6 +58752,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
    "de": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -59047,6 +59225,21 @@
    "de": "decision:por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d",
    "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "a": "tema:tfg",
+   "tipo": "trata"
   },
   {
    "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
@@ -65185,52 +65378,42 @@
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
+   "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
+   "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
+   "a": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
+   "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:flechas-reales-en-captions-y-texto-rightarrow-nunca",
+   "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
+   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "a": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:tablas-largas-en-longtable-con-ultima-fila-acompanada",
+   "a": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "tipo": "enlaza"
   },
   {
@@ -71787,6 +71970,31 @@
    "de": "receta:capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de",
    "a": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "tema:revisar_maquetacion.py",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "tema:verificacion",
+   "tipo": "trata"
   },
   {
    "de": "receta:checklist-previo-a-abrir-pull-request-npm-test-local-obligat",
@@ -79784,6 +79992,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
    "de": "receta:formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores",
    "a": "tema:ac",
    "tipo": "trata"
@@ -83454,6 +83677,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
    "de": "receta:reglas-de-integracion-mediante-pull-requests-con-ci-obligato",
    "a": "tema:git",
    "tipo": "trata"
@@ -83497,6 +83740,26 @@
    "de": "receta:reglas-de-integracion-mediante-pull-requests-con-ci-obligato",
    "a": "concepto:github-flow-como-modelo-de-ramificacion-del-proyecto",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "a": "tema:tfg",
+   "tipo": "trata"
   },
   {
    "de": "receta:rellenar-tabla-de-ejecucion-tomasulo-columnas-issue-executio",
@@ -86032,6 +86295,31 @@
    "de": "receta:valor-de-bhr-de-5-bits-para-bucles-anidados-i-6-j-0-pregunta",
    "a": "receta:simulacion-de-predictor-correlacionante-de-2-niveles-2-1-con",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "tema:verificacion",
+   "tipo": "trata"
   },
   {
    "de": "receta:verificacion-de-correccion-numerica-entre-version-base-y-opt",
