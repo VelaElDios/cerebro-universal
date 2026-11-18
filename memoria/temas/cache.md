@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "cache"
-notas: 7
+notas: 8
 ---
 # cache
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «cache» (este archivo se 
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/mips64-usa-caches-separadas-para-instrucciones-y-datos-harva|MIPS64 usa cachés separadas para instrucciones y datos (Harvard modificada)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/parametros-del-experimento-tamano-de-datos-bloque-y-repetici|Parámetros del experimento: tamaño de datos, bloque y repeticiones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector|Pointer chasing en std::list vs acceso contiguo en std::vector]] · ⚠️ propuesto
 
@@ -25,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «cache» (este archivo se 
 
 ## Temas relacionados
 
-[[ac]] · [[memoria]] · [[aos]] · [[soa]] · [[arquitectura]] · [[punteros]] · [[estructuras-datos]] · [[latencia]] · [[tomasulo]] · [[lineas]] · [[perf]] · [[profiling]]
+[[ac]] · [[memoria]] · [[aos]] · [[soa]] · [[mips64]] · [[pipeline]] · [[arquitectura]] · [[punteros]] · [[estructuras-datos]] · [[latencia]] · [[tomasulo]] · [[lineas]]

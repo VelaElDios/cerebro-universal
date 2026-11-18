@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "software-pipelining"
-notas: 9
+notas: 11
 ---
 # software-pipelining
 
@@ -9,7 +9,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «software-pipelining» (es
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/conversion-de-codigo-vliw-compactado-a-bucle-mips64-segmenta|Conversión de código VLIW compactado a bucle MIPS64 segmentado con un resultado por iteración]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-operaciones-por-ciclo-en-vliw-con-software-pipeli|Cálculo de operaciones por ciclo en VLIW con software pipelining]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat|Desenrollado 4x y planificación mínima para bucle FP con latencias dadas]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e|Desenrollamiento de bucle mínimo para eliminar detenciones en RISC-V]]
 - 🧪 [[memoria/conocimiento/recetas/parametros-estandar-para-ejercicios-de-segmentacion-software|Parámetros estándar para ejercicios de segmentación software en RISC-V (Tema 3)]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame|Planificación VLIW de bucle con 6 unidades funcionales (examen Enero 2017)]] · ⚠️ propuesto
@@ -24,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «software-pipelining» (es
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[planificacion-estatica]] · [[riscv]] · [[loop-unrolling]] · [[vliw]] · [[segmentacion-software]] · [[comparativa]] · [[ilp]] · [[trace-scheduling]] · [[throughput]] · [[planificacion]]
+[[ac]] · [[pipeline]] · [[loop-unrolling]] · [[planificacion-estatica]] · [[vliw]] · [[riscv]] · [[segmentacion-software]] · [[comparativa]] · [[ilp]] · [[trace-scheduling]] · [[throughput]] · [[mips64]]

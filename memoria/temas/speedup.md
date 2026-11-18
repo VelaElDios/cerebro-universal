@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "speedup"
-notas: 18
+notas: 21
 ---
 # speedup
 
@@ -14,8 +14,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «speedup» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s|Cálculo de CPI sin BTB y speedup con BTB (miss rate 10%, solo saltos tomados, actualización con penalidad)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-proporcion-de-tiempo-en-fp-dado-speedup-observado|Cálculo de proporción de tiempo en FP dado speedup observado y factor de mejora (Ejercicio 8b)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-comparando-predictor-con-penalidad-variab|Cálculo de speedup comparando predictor con penalidad variable vs penalidad fija]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-reduccion-de-cpi-y-aumento-de-ciclo-d|Cálculo de speedup con reducción de CPI y aumento de ciclo de reloj (pregunta 5)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl|Cálculo de speedup entre bucle original y desenrollado en VLIW]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab|Cálculo de speedup máximo con ley de Amdahl (fracción mejorable y factor k)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-vliw-vs-mips64-segmentado-considerando-me|Cálculo de speedup VLIW vs MIPS64 segmentado considerando mejor planificación]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas|Cálculo de speedup y porcentaje de mejora entre dos máquinas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-convertir-porcentaje-de-ganancia-speedup-a-factor-de-sp|Cómo convertir porcentaje de ganancia (speedup %) a factor de speedup (n)]]
 
@@ -33,7 +35,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «speedup» (este archivo s
 
 - 📊 [[memoria/conocimiento/datos/ejercicio-de-mejora-de-disco-duro-y-ley-de-amdahl-ej-23|Ejercicio de mejora de disco duro y ley de Amdahl (Ej.23)]]
 - 📊 [[memoria/conocimiento/datos/mejora-de-rendimiento-vliw-desenrollado-3x-vs-original-exame|Mejora de rendimiento VLIW desenrollado 3x vs original (examen Enero 2018)]]
+- 📊 [[memoria/conocimiento/datos/speedup-teorico-del-desenrollado-4x-frente-a-codigo-original|Speedup teórico del desenrollado 4x frente a código original (fórmula)]]
 
 ## Temas relacionados
 
-[[ac]] · [[rendimiento]] · [[ley-amdahl]] · [[cpi]] · [[arquitectura-computadores]] · [[coma-flotante]] · [[compiladores]] · [[evaluacion-rendimiento]] · [[vliw]] · [[prediccion-saltos]] · [[metricas-rendimiento]] · [[disco]]
+[[ac]] · [[rendimiento]] · [[ley-amdahl]] · [[cpi]] · [[arquitectura-computadores]] · [[pipeline]] · [[vliw]] · [[coma-flotante]] · [[compiladores]] · [[evaluacion-rendimiento]] · [[prediccion-saltos]] · [[metricas-rendimiento]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "delayed-branch"
-notas: 6
+notas: 7
 ---
 # delayed-branch
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «delayed-branch» (este ar
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-stalls-en-bucle-mips64-con-forwarding-y-ramas-re|Análisis de stalls en bucle MIPS64 con forwarding y ramas resueltas en ID (Ejercicio 1a)]]
 - 🧪 [[memoria/conocimiento/recetas/preguntas-del-problema-1-detenciones-cpi-y-desenrollamiento|Preguntas del Problema 1: Detenciones, CPI y Desenrollamiento con salto retardado]]
 
 ## Conceptos
@@ -21,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «delayed-branch» (este ar
 
 ## Temas relacionados
 
-[[ac]] · [[planificacion]] · [[vliw]] · [[planificacion-estatica]] · [[pipeline]] · [[compilador]] · [[control-hazard]] · [[riscv]] · [[control-hardware]] · [[salto-retardado]] · [[cpi]] · [[loop-unrolling]]
+[[ac]] · [[pipeline]] · [[planificacion]] · [[vliw]] · [[planificacion-estatica]] · [[compilador]] · [[control-hazard]] · [[riscv]] · [[control-hardware]] · [[salto-retardado]] · [[forwarding]] · [[hazards]]

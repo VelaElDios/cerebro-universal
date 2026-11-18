@@ -4,7 +4,7 @@ titulo: "Definición de dependencia de datos (RAW) entre instrucciones"
 temas: ["ac", "dependencias", "pipeline"]
 claves: ["dependencia datos", "RAW", "produce resultado", "usa resultado"]
 proyectos: []
-fuentes: ["repo:datos/temarios/AC/examenes/Enero2016.pdf", "repo:datos/temarios/AC/examenes/January2016.pdf"]
+fuentes: ["repo:datos/temarios/AC/examenes/Enero2016.pdf", "repo:datos/temarios/AC/examenes/January2016.pdf", "repo:datos/temarios/AC/examenes/January2021.pdf"]
 confianza: "verificado"
 fecha: "2026-11-18"
 actualizado: "2026-11-18"
@@ -21,3 +21,6 @@ Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
 
 ## Ampliación (2026-11-18, )
 Dependencia de datos verdadera (RAW): i produce un resultado que j puede usar. i precede a j en orden de programa. Opción a). WAW = dependencia de salida (ambas escriben mismo registro). WAR = antidependencia (j escribe lo que i lee).
+
+## Ampliación (2026-11-18, )
+Dependencia de datos (RAW/true dependence): la instrucción anterior (i) produce un valor que la posterior (j) consume. Es la única dependencia real que obliga a mantener el orden; las demás (WAR, WAW) son dependencias de nombre y se eliminan con renombrado de registros.

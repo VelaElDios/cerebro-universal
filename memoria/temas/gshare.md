@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "gshare"
-notas: 1
+notas: 2
 ---
 # gshare
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «gshare» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictor-correlacionante-de-2-niveles-2-1-con|Simulación de predictor correlacionante de 2 niveles (2,1) con BHR global y BHT por entrada]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «gshare» (este archivo se
 
 ## Temas relacionados
 
-[[ac]] · [[gselect]] · [[prediccion-saltos]]
+[[ac]] · [[gselect]] · [[prediccion-saltos]] · [[bhr]] · [[bht]] · [[branch-prediction]] · [[correlating]] · [[two-level]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "compilador"
-notas: 10
+notas: 11
 ---
 # compilador
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «compilador» (este archiv
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/diferencia-entre-especulacion-software-y-hardware-falso-en-s|Diferencia entre especulación software y hardware (falso en software)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-de-instrucciones-la-hace-el-compilado|Planificación estática de instrucciones la hace el compilador]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui|Planificación estática vs dinámica de instrucciones en Arquitectura de Computadores]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]] · ⚠️ propuesto
@@ -25,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «compilador» (este archiv
 
 ## Temas relacionados
 
-[[ac]] · [[instrucciones-predicadas]] · [[prediccion-saltos]] · [[ilp]] · [[estática]] · [[planificación]] · [[estatica]] · [[planificacion]] · [[hardware]] · [[planificacion-instrucciones]] · [[delayed-branch]] · [[planificacion-estatica]]
+[[ac]] · [[prediccion-saltos]] · [[instrucciones-predicadas]] · [[ilp]] · [[especulacion]] · [[estática]] · [[planificación]] · [[estatica]] · [[planificacion]] · [[hardware]] · [[planificacion-instrucciones]] · [[delayed-branch]]

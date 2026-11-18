@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "loop unrolling"
-notas: 4
+notas: 5
 ---
 # loop unrolling
 
@@ -15,8 +15,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «loop unrolling» (este ar
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucles-loop-unrolling-en-superescalar-con-re|Desenrollado de bucles (loop unrolling) en superescalar con renombrado de registros]]
+- 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-loop-unrolling-permite-planificar|Desenrollamiento de bucles (loop unrolling) permite planificar instrucciones de distintas iteraciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/planificacion-por-software-software-pipelining-y-desenrollad|Planificación por software (software pipelining) y desenrollado de bucles]]
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[superscalar]] · [[register renaming]] · [[software pipelining]] · [[scheduling]] · [[ilp]]
+[[ac]] · [[pipeline]] · [[superscalar]] · [[ilp]] · [[register renaming]] · [[optimización]] · [[planificación]] · [[software pipelining]] · [[scheduling]]

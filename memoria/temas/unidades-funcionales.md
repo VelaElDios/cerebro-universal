@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "unidades-funcionales"
-notas: 2
+notas: 3
 ---
 # unidades-funcionales
 
@@ -11,10 +11,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «unidades-funcionales» (e
 
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-unidades-funcionales-en-el-m|Cómo leer la tabla de estado de unidades funcionales en el marcador de Tomasulo]] · ⚠️ propuesto
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/unidades-funcionales-y-ciclos-en-vliw-con-2-mem-2-fp-1-int-b|Unidades funcionales y ciclos en VLIW con 2 mem, 2 FP, 1 int/branch por ciclo]] · ⚠️ propuesto
+
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/latencias-y-segmentacion-de-unidades-funcionales-en-examen-t|Latencias y segmentación de unidades funcionales en examen Tomasulo Enero 2016]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[latencia]] · [[segmentacion]] · [[lectura-tablas]] · [[scoreboard]] · [[qj-qk-rj-rk]]
+[[ac]] · [[tomasulo]] · [[ilp]] · [[vliw]] · [[latencia]] · [[segmentacion]] · [[lectura-tablas]] · [[scoreboard]] · [[qj-qk-rj-rk]]

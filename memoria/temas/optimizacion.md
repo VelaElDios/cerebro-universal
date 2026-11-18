@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "optimizacion"
-notas: 14
+notas: 15
 ---
 # optimizacion
 
@@ -29,7 +29,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «optimizacion» (este arch
 
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-bloque-basico-test-ac-q7|Definición de bloque básico (test AC Q7)]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac|Desenrollado de bucle (loop unrolling) 3× para VLIW y compactación]]
+- 💡 [[memoria/conocimiento/conceptos/objetivo-del-desenrollamiento-de-bucles-loop-unrolling|Objetivo del desenrollamiento de bucles (loop unrolling)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[bucles]] · [[ilp]] · [[branchless]] · [[pipeline]] · [[compiladores]] · [[loop-unrolling]] · [[cpp]] · [[vliw]] · [[tradeoff]] · [[temporal-locality]] · [[memoria]]
+[[ac]] · [[bucles]] · [[pipeline]] · [[ilp]] · [[branchless]] · [[compiladores]] · [[loop-unrolling]] · [[cpp]] · [[vliw]] · [[tradeoff]] · [[temporal-locality]] · [[memoria]]

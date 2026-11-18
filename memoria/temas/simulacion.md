@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "simulacion"
-notas: 19
+notas: 20
 ---
 # simulacion
 
@@ -17,6 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «simulacion» (este archiv
 - 🧪 [[memoria/conocimiento/recetas/como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de|Cómo se traza la ejecución ciclo a ciclo en el algoritmo de Tomasulo]]
 - 🧪 [[memoria/conocimiento/recetas/como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l|Cómo simular Tomasulo especulativo con ROB de 4 entradas y latencias dadas]]
 - 🧪 [[memoria/conocimiento/recetas/ejemplo-de-simulacion-del-marcador-con-instrucciones-de-punt|Ejemplo de simulación del Marcador con instrucciones de punto flotante]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/pasos-para-simular-tomasulo-especulativo-con-rob-y-restricci|Pasos para simular Tomasulo especulativo con ROB y restricciones de timing (guía práctica)]]
 - 🧪 [[memoria/conocimiento/recetas/preguntas-problema-3-tabla-tiempos-emision-ejecucion-escritu|Preguntas Problema 3: Tabla tiempos (Emisión, Ejecución, Escritura, Finalización) y ROB ciclo 12]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/secuencia-de-instrucciones-y-dependencias-en-el-ejemplo-toma|Secuencia de instrucciones y dependencias en el ejemplo Tomasulo del tema 3]]
 - 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictores-1-bit-4-bits-saturado-y-correlacio|Simulación de predictores 1 bit, 4 bits saturado y correlacionado (2,1) para dos bucles anidados con conteos fijos]] · ⚠️ propuesto
@@ -40,4 +41,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «simulacion» (este archiv
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[rob]] · [[arquitectura]] · [[scoreboard]] · [[especulacion]] · [[punto-flotante]] · [[mips64]] · [[estaciones-reserva]] · [[instrucciones]] · [[donetonic]] · [[grada-colchonera]]
+[[ac]] · [[tomasulo]] · [[rob]] · [[arquitectura]] · [[scoreboard]] · [[especulacion]] · [[punto-flotante]] · [[mips64]] · [[estaciones-reserva]] · [[pipeline]] · [[instrucciones]] · [[donetonic]]

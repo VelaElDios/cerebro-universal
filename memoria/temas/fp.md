@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "fp"
-notas: 2
+notas: 3
 ---
 # fp
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «fp» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/planificacion-con-algoritmo-tomasulo-issue-execution-commit|Planificación con algoritmo Tomasulo: Issue, Execution, Commit con latencias y restricciones de buffers]] · ⚠️ propuesto
 
 ## Datos
 
@@ -14,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fp» (este archivo se gen
 
 ## Temas relacionados
 
-[[ac]] · [[latencia]] · [[arquitectura]] · [[scoreboard]] · [[unidad-funcional]] · [[ex]] · [[mem]] · [[pipeline]] · [[vliw]]
+[[ac]] · [[latencia]] · [[arquitectura]] · [[scoreboard]] · [[unidad-funcional]] · [[ex]] · [[mem]] · [[pipeline]] · [[vliw]] · [[planificacion-dinamica]] · [[tomasulo]]

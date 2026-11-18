@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "planificacion"
-notas: 22
+notas: 24
 ---
 # planificacion
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion» (este arc
 - 🧪 [[memoria/conocimiento/recetas/como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i|Cómo desenrollar 8x y planificar en superescalar 4-issue (2 int + 2 PF) con sumas PF 2 ciclos]]
 - 🧪 [[memoria/conocimiento/recetas/como-resolver-planificacion-vliw-con-desenrollado-y-latencia|Cómo resolver planificación VLIW con desenrollado y latencias dadas]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-3x-y-planificacion-vliw-compactada|Desenrollado de bucle 3x y planificación VLIW compactada]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-8-veces-para-superscalar-con-latencias|Desenrollado de bucle 8 veces para superscalar con latencias FP]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr|Planificación superescalar MIPS64 4 vías con latencias PF (Problema 4 Enero 2015)]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame|Planificación VLIW de bucle con 6 unidades funcionales (examen Enero 2017)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en|Planificación VLIW de bucle con latencias dadas (examen AC enero 2018)]]
@@ -25,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion» (este arc
 - 💡 [[memoria/conocimiento/conceptos/caracteristicas-del-procesador-vliw-del-examen-enero-2016-pr|Características del procesador VLIW del examen Enero 2016 Problema 3]]
 - 💡 [[memoria/conocimiento/conceptos/configuracion-vliw-del-examen-ac-enero-2017-6-unidades-laten|Configuración VLIW del examen AC enero 2017 (6 unidades, latencias y forwarding)]]
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d|Cálculo de operaciones por ciclo (IPC) en planificación VLIW de bucle]]
+- 💡 [[memoria/conocimiento/conceptos/definiciones-clave-basic-block-antidependencia-loop-unrollin|Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)]]
 - 💡 [[memoria/conocimiento/conceptos/delayed-branch-en-vliw-y-su-efecto-en-planificacion|Delayed branch en VLIW y su efecto en planificación]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa|Problema de planificación VLIW con desenrollado de bucle (examen AC enero 2016)]]
@@ -40,4 +42,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion» (este arc
 
 ## Temas relacionados
 
-[[ac]] · [[vliw]] · [[ilp]] · [[examen]] · [[delayed-branch]] · [[desenrollado-bucle]] · [[bucles]] · [[bucle]] · [[loop-unrolling]] · [[mips64]] · [[superescalar]] · [[ipc]]
+[[ac]] · [[vliw]] · [[ilp]] · [[examen]] · [[loop-unrolling]] · [[delayed-branch]] · [[desenrollado-bucle]] · [[bucles]] · [[bucle]] · [[mips64]] · [[superescalar]] · [[ipc]]

@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "renombrado"
-notas: 5
+notas: 8
 ---
 # renombrado
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «renombrado» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/planificacion-estatica-agresiva-para-vliw-4-issue-con-renomb|Planificación estática agresiva para VLIW 4-issue con renombrado y fuera de orden]]
 
 ## Decisiones (y por qué)
 
@@ -13,6 +17,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «renombrado» (este archiv
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo|Campos Qj y Qk en estaciones de reserva de Tomasulo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/el-renombrado-de-registros-evita-dependencias-de-nombre-war|El renombrado de registros evita dependencias de nombre (WAR/WAW)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estado-de-registros-resultado-register-result-status-en-el-m|Estado de registros resultado (register result status) en el marcador]]
 - 💡 [[memoria/conocimiento/conceptos/objetivo-del-algoritmo-tomasulo-test-ac-q10|Objetivo del algoritmo Tomasulo (test AC Q10)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-qi-en-bucle-con-reuso-de-f0-f2-f|Renombrado de registros vía Qi en bucle con reuso de f0/f2/f4]]
@@ -20,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «renombrado» (este archiv
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[registros]] · [[registro-estado-resultado]] · [[scoreboard]] · [[ejecucion-fuera-orden]] · [[dependencias]] · [[desenrollado]] · [[mips64]] · [[superescalar]]
+[[ac]] · [[tomasulo]] · [[dependencias]] · [[registros]] · [[estaciones-reserva]] · [[pipeline]] · [[registro-estado-resultado]] · [[scoreboard]] · [[ejecucion-fuera-orden]] · [[desenrollado]] · [[mips64]] · [[superescalar]]

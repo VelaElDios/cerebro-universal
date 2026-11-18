@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "planificacion-dinamica"
-notas: 22
+notas: 26
 ---
 # planificacion-dinamica
 
@@ -15,7 +15,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-dinamica» 
 - 🧪 [[memoria/conocimiento/recetas/completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8|Completar tabla Tomasulo con una estación por UF (Ejercicio 8)]]
 - 🧪 [[memoria/conocimiento/recetas/ejecucion-paso-a-paso-de-instrucciones-fp-en-tomasulo-ciclos|Ejecución paso a paso de instrucciones FP en Tomasulo (ciclos 16-20)]]
 - 🧪 [[memoria/conocimiento/recetas/estructura-del-procesador-tomasulo-cdb-estaciones-de-reserva|Estructura del procesador Tomasulo: CDB, estaciones de reserva y buffers]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/planificacion-con-algoritmo-tomasulo-issue-execution-commit|Planificación con algoritmo Tomasulo: Issue, Execution, Commit con latencias y restricciones de buffers]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio|Primeros 3 ciclos Tomasulo con 2 add 1c y 2 mul 4c (Ejercicio 9)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-scoreboard-vs-tomasulo-basico-pasos-de-ejecucion|Simulación Scoreboard vs Tomasulo básico: pasos de ejecución y ciclos]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm|Tomasulo con CDB no simultáneo 2 RS por UF buffers carga/almacen (Ejercicio 10)]]
 - 🧪 [[memoria/conocimiento/recetas/tres-fases-de-ejecucion-en-tomasulo-emision-ejecucion-escrit|Tres fases de ejecución en Tomasulo: Emisión, Ejecución, Escritura]] · ⚠️ propuesto
 
@@ -28,6 +30,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-dinamica» 
 - 💡 [[memoria/conocimiento/conceptos/algoritmo-tomasulo-origen-y-objetivo-cpi1|Algoritmo Tomasulo: origen y objetivo CPI≈1]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/comparativa-tomasulo-vs-marcador-scoreboard|Comparativa Tomasulo vs Marcador (Scoreboard)]]
 - 💡 [[memoria/conocimiento/conceptos/contenido-de-una-estacion-de-reserva-en-tomasulo|Contenido de una estación de reserva en Tomasulo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/diferencia-scoreboard-vs-tomasulo-en-resolucion-de-hazards-s|Diferencia Scoreboard vs Tomasulo en resolución de hazards sin especulación]]
 - 💡 [[memoria/conocimiento/conceptos/idea-central-de-tomasulo-control-distribuido-con-estaciones|Idea central de Tomasulo: control distribuido con estaciones de reserva]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-la-planificacion-estatica-que-motiva-la-planif|Limitación de la planificación estática que motiva la planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio|Marcador (Scoreboard) distingue riesgos RAW y WAR con detenciones opuestas]]
@@ -35,6 +38,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-dinamica» 
 - 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-sin-especulacion-orden-de-ejecucion-d|Planificación dinámica sin especulación: orden de ejecución dado por dependencias de datos del programa]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/problemas-del-marcador-scoreboard-en-planificacion-dinamica|Problemas del marcador (scoreboard) en planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-etiquetas-de-estacion-de-reserva|Renombrado de registros vía etiquetas de estación de reserva elimina WAR y WAW]]
+- 💡 [[memoria/conocimiento/conceptos/scoreboard-detiene-ejecucion-ante-hazards-war-y-waw|Scoreboard: detiene ejecución ante hazards WAR y WAW]]
 - 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-del-algoritmo-tomasulo|Ventajas e inconvenientes del algoritmo Tomasulo]]
 
 ## Datos
@@ -43,4 +47,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-dinamica» 
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[arquitectura]] · [[marcador]] · [[scoreboard]] · [[cdb]] · [[estacion-reserva]] · [[arquitectura-computadores]] · [[punto-flotante]] · [[tabla-temporizacion]] · [[emision-en-orden]] · [[riesgos-raw-war]]
+[[ac]] · [[tomasulo]] · [[arquitectura]] · [[scoreboard]] · [[marcador]] · [[cdb]] · [[estacion-reserva]] · [[hazards]] · [[arquitectura-computadores]] · [[punto-flotante]] · [[tabla-temporizacion]] · [[emision-en-orden]]

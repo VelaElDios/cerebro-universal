@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "emision"
-notas: 1
+notas: 2
 ---
 # emision
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «emision» (este archivo s
 
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-instrucciones-en-simulacion|Cómo leer la tabla de estado de instrucciones en simulación Tomasulo]]
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/orden-de-emision-issue-en-scoreboard-orden-de-programa|Orden de emisión (issue) en Scoreboard: orden de programa]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[ac]] · [[ejecucion]] · [[escritura]] · [[simulacion]] · [[tabla-estado]] · [[tomasulo]]
+[[ac]] · [[tomasulo]] · [[scoreboard]] · [[ejecucion]] · [[escritura]] · [[simulacion]] · [[tabla-estado]]

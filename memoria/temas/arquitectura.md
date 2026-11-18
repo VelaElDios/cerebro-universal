@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "arquitectura"
-notas: 65
+notas: 69
 ---
 # arquitectura
 
@@ -63,6 +63,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «arquitectura» (este arch
 - 💡 [[memoria/conocimiento/conceptos/prediccion-dinamica-basada-en-correlacion-temporal-y-espacia|Predicción dinámica basada en correlación temporal y espacial]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/problemas-del-marcador-scoreboard-en-planificacion-dinamica|Problemas del marcador (scoreboard) en planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/procesador-sin-soporte-para-especulacion-comportamiento-ante|Procesador sin soporte para especulación - comportamiento ante excepciones especulativas]]
+- 💡 [[memoria/conocimiento/conceptos/proposito-del-branch-target-buffer-btb-ademas-de-bits-de-pre|Propósito del Branch Target Buffer (BTB) además de bits de predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/recuperacion-de-fallos-de-prediccion-con-registros-temporale|Recuperación de fallos de predicción con registros temporales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-etiquetas-de-estacion-de-reserva|Renombrado de registros vía etiquetas de estación de reserva elimina WAR y WAW]]
 - 💡 [[memoria/conocimiento/conceptos/representacion-del-estado-del-marcador-scoreboard-para-instr|Representación del estado del marcador (scoreboard) para instrucciones FP]]
@@ -75,13 +76,16 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «arquitectura» (este arch
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/arquitecturas-load-store-arm-risc-v-y-alpha|Arquitecturas load/store: ARM, RISC-V y Alpha]]
 - 📊 [[memoria/conocimiento/datos/campo-de-etiqueta-tag-de-4-bits-5-estaciones-de-reserva-6-bu|Campo de etiqueta (tag) de 4 bits: 5 estaciones de reserva + 6 buffers de carga]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/costes-de-recuperacion-de-fallos-de-prediccion-por-procesado|Costes de recuperación de fallos de predicción por procesador]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/ejemplos-reales-de-predictores-de-salto-en-procesadores-come|Ejemplos reales de predictores de salto en procesadores comerciales (PowerPC, UltraSPARC, Pentium, Pentium Pro)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/estado-inicial-de-registros-y-restriccion-memoria-direccion|Estado inicial de registros y restricción memoria dirección 0 en examen AC Enero 2014 P3]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/itanium-ia64-primer-procesador-intel-no-compatible-con-x86|Itanium IA64: primer procesador Intel no compatible con x86]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador|Latencias de unidades funcionales en el ejemplo de marcador (ciclos 3-9)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo|Latencias de unidades funcionales en el ejemplo Tomasulo]]
 - 📊 [[memoria/conocimiento/datos/predictores-de-un-nivel-de-historia-1-2-y-3-bits-con-procesa|Predictores de un nivel de historia: 1, 2 y 3 bits con procesadores y años]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/primer-procesador-intel-no-compatible-con-x86-itanium|Primer procesador Intel no compatible con x86: Itanium]]
 - 📊 [[memoria/conocimiento/datos/secuencia-exacta-de-instrucciones-y-registros-del-ejemplo-de|Secuencia exacta de instrucciones y registros del ejemplo de marcador (ciclos 1-9)]] · ⚠️ propuesto
 
 ## Temas relacionados

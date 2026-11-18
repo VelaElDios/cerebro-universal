@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "fuera-de-orden"
-notas: 1
+notas: 2
 ---
 # fuera-de-orden
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «fuera-de-orden» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/planificacion-estatica-agresiva-para-vliw-4-issue-con-renomb|Planificación estática agresiva para VLIW 4-issue con renombrado y fuera de orden]]
 
 ## Conceptos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuera-de-orden» (este ar
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura]] · [[pipeline]] · [[tomasulo]]
+[[ac]] · [[arquitectura]] · [[pipeline]] · [[tomasulo]] · [[planificacion-estatica]] · [[renombrado]] · [[vliw]]

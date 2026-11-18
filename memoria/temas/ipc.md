@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "ipc"
-notas: 5
+notas: 6
 ---
 # ipc
 
@@ -17,7 +17,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ipc» (este archivo se ge
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d|Cálculo de operaciones por ciclo (IPC) en planificación VLIW de bucle]]
+- 💡 [[memoria/conocimiento/conceptos/metrica-de-comparacion-operaciones-por-ciclo-ipc-en-supersca|Métrica de comparación: operaciones por ciclo (IPC) en superscalar vs VLIW]]
 
 ## Temas relacionados
 
-[[ac]] · [[vliw]] · [[rendimiento]] · [[perf]] · [[metricas]] · [[planificacion]] · [[benchmarking]] · [[hyperfine]] · [[análisis]] · [[cache-miss-rate]] · [[operaciones-por-ciclo]]
+[[ac]] · [[vliw]] · [[rendimiento]] · [[perf]] · [[metricas]] · [[planificacion]] · [[superscalar]] · [[benchmarking]] · [[hyperfine]] · [[análisis]] · [[cache-miss-rate]] · [[operaciones-por-ciclo]]

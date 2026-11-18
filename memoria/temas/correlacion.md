@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "correlacion"
-notas: 2
+notas: 3
 ---
 # correlacion
 
@@ -10,6 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «correlacion» (este archi
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/interpretacion-del-bhr-en-predictor-correlacionado-m-n-test|Interpretación del BHR en predictor correlacionado (m,n) (test AC Q12)]]
+- 🧪 [[memoria/conocimiento/recetas/secuencia-h-m-para-predictor-2-bit-debilmente-no-tomado-en-b|Secuencia H/M para predictor 2-bit débilmente no tomado en bucle de 5 iteraciones (pregunta 11)]]
 
 ## Conceptos
 
@@ -17,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «correlacion» (este archi
 
 ## Temas relacionados
 
-[[ac]] · [[prediccion-saltos]] · [[arquitectura]] · [[dinamica]] · [[bhr]]
+[[ac]] · [[prediccion-saltos]] · [[arquitectura]] · [[dinamica]] · [[bhr]] · [[predictor-2-bit]]
