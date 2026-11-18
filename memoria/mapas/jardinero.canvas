@@ -5,7 +5,7 @@
    "type": "file",
    "file": "proyectos/jardinero/bitacora.md",
    "x": -288,
-   "y": -499,
+   "y": -494,
    "width": 380,
    "height": 130,
    "color": "6"
@@ -14,9 +14,9 @@
    "id": "tema:conocimiento",
    "type": "file",
    "file": "memoria/temas/conocimiento.md",
-   "x": -71,
-   "y": 358,
-   "width": 380,
+   "x": -76,
+   "y": 356,
+   "width": 388,
    "height": 110,
    "color": "5"
   }

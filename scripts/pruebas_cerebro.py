@@ -237,6 +237,7 @@ except ImportError as e:
 
 # 15. modo privado: las notas privadas no salen en lo público y solo se usan si se pide
 from cerebro import privado, control
+conocimiento.USAR_PRIVADO = False   # (el servidor MCP de la prueba 14 lo activa)
 (nucleo.RAIZ / ".cerebro-privado" / "conocimiento").mkdir(parents=True)
 assert privado.disponible()
 g = conocimiento.guardar("tipo: receta\ntitulo: Mi solución secreta de la práctica\ntemas: ac\ncontenido:\nSe resuelve con un predictor de 2 bits y una BTB.", "", privada=True)

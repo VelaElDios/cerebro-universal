@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T22:51:57+01:00",
+ "generado": "2026-11-18T23:52:29+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -10,6 +10,16 @@
     "conocimiento"
    ],
    "ruta": "proyectos/aprendizaje/bitacora.md"
+  },
+  {
+   "id": "proyecto:control",
+   "tipo": "proyecto",
+   "titulo": "control",
+   "estado": "en-construccion",
+   "temas": [
+    "conocimiento"
+   ],
+   "ruta": "proyectos/control/bitacora.md"
   },
   {
    "id": "proyecto:jardinero",
@@ -20076,7 +20086,7 @@
    "id": "tema:conocimiento",
    "tipo": "tema",
    "titulo": "conocimiento",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/conocimiento.md"
   },
   {
@@ -26243,6 +26253,11 @@
  "aristas": [
   {
    "de": "proyecto:aprendizaje",
+   "a": "tema:conocimiento",
+   "tipo": "usa"
+  },
+  {
+   "de": "proyecto:control",
    "a": "tema:conocimiento",
    "tipo": "usa"
   },
