@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "powerpc"
-notas: 1
+notas: 2
 ---
 # powerpc
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «powerpc» (este archivo se genera solo).
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/definiciones-btb-ejecucion-multicamino-especulacion-software|Definiciones: BTB, ejecución multicamino, especulación software, superescalar CPI ideal, Intel P7, multicore, PowerPC]] · ⚠️ propuesto
 
 ## Datos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «powerpc» (este archivo s
 
 ## Temas relacionados
 
-[[ac]] · [[alpha]] · [[arquitectura]] · [[gmicro]] · [[historia]] · [[pa-risc]] · [[pentium]] · [[prediccion-saltos]] · [[predictores]] · [[ultrasparc]]
+[[ac]] · [[btb]] · [[especulacion-software]] · [[intel-p7]] · [[multicamino]] · [[multicore]] · [[superescalar]] · [[alpha]] · [[arquitectura]] · [[gmicro]] · [[historia]] · [[pa-risc]]

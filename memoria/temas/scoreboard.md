@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scoreboard"
-notas: 28
+notas: 32
 ---
 # scoreboard
 
@@ -30,11 +30,15 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scoreboard» (este archiv
 - 💡 [[memoria/conocimiento/conceptos/estado-de-registros-resultado-register-result-status-en-el-m|Estado de registros resultado (register result status) en el marcador]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-del-marcador-scoreboard-en-arquitectura-de-comput|Estructura del marcador (scoreboard) en arquitectura de computadores]]
 - 💡 [[memoria/conocimiento/conceptos/estructuras-de-datos-del-marcador-scoreboard|Estructuras de datos del Marcador (Scoreboard)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/funcion-del-marcador-scoreboard-en-ejecucion-dinamica-test-a|Función del Marcador (Scoreboard) en ejecución dinámica (test AC Q9)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/manejo-de-riesgos-estructurales-en-scoreboard|Manejo de riesgos estructurales en Scoreboard]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio|Marcador (Scoreboard) distingue riesgos RAW y WAR con detenciones opuestas]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-de-instrucciones-con-marcador-scorebo|Planificación dinámica de instrucciones con Marcador (Scoreboard)]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-orden-de-ejecucion-por-disponibilidad|Planificación dinámica: orden de ejecución por disponibilidad de operandos]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-en-scoreboard-orden-de-ejecucion|Planificación en Scoreboard: orden de ejecución]]
 - 💡 [[memoria/conocimiento/conceptos/registro-de-estado-de-resultados-result-register-status-en-e|Registro de estado de resultados (Result Register Status) en el marcador]]
 - 💡 [[memoria/conocimiento/conceptos/representacion-del-estado-del-marcador-scoreboard-para-instr|Representación del estado del marcador (scoreboard) para instrucciones FP]]
+- 💡 [[memoria/conocimiento/conceptos/scoreboard-riesgos-estructurales-en-paso-de-escritura-de-res|Scoreboard: riesgos estructurales en paso de escritura de resultado (pregunta 12)]]
 - 💡 [[memoria/conocimiento/conceptos/semantica-de-los-campos-qj-qk-rj-rk-en-el-estado-de-uf|Semántica de los campos Qj, Qk, Rj, Rk en el estado de UF]]
 - 💡 [[memoria/conocimiento/conceptos/simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo|Simulación ciclo a ciclo del marcador (scoreboard) de Tomasulo con instrucciones FP]]
 - 💡 [[memoria/conocimiento/conceptos/tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det|Técnica de Marcador (Scoreboard): riesgos WAR/WAW obligan a detener]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "planificacion-dinamica"
-notas: 21
+notas: 22
 ---
 # planificacion-dinamica
 
@@ -32,6 +32,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-dinamica» 
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-la-planificacion-estatica-que-motiva-la-planif|Limitación de la planificación estática que motiva la planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio|Marcador (Scoreboard) distingue riesgos RAW y WAR con detenciones opuestas]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-de-instrucciones-con-marcador-scorebo|Planificación dinámica de instrucciones con Marcador (Scoreboard)]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-sin-especulacion-orden-de-ejecucion-d|Planificación dinámica sin especulación: orden de ejecución dado por dependencias de datos del programa]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/problemas-del-marcador-scoreboard-en-planificacion-dinamica|Problemas del marcador (scoreboard) en planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-etiquetas-de-estacion-de-reserva|Renombrado de registros vía etiquetas de estación de reserva elimina WAR y WAW]]
 - 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-del-algoritmo-tomasulo|Ventajas e inconvenientes del algoritmo Tomasulo]]

@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "penalizacion"
-notas: 1
+notas: 2
 ---
 # penalizacion
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «penalizacion» (este archivo se genera solo).
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/prediccion-fija-siempre-no-tomado-con-calculo-destino-en-id|Predicción fija "siempre no tomado" con cálculo destino en ID y resolución en EX]] · ⚠️ propuesto
 
 ## Datos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «penalizacion» (este arch
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura]] · [[ciclos]] · [[prediccion-saltos]]
+[[ac]] · [[prediccion-saltos]] · [[mips-pipeline]] · [[prediccion-fija]] · [[arquitectura]] · [[ciclos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "coma-flotante"
-notas: 4
+notas: 5
 ---
 # coma-flotante
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «coma-flotante» (este arc
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-pipeline-fp-para-bucle-media-ponderada-problema|Análisis de pipeline FP para bucle media ponderada (Problema 1) con latencias L.D=1, MUL.D=3, ADD.D=2, DIV.D=5, S.D=1]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-proporcion-de-tiempo-en-fp-dado-speedup-observado|Cálculo de proporción de tiempo en FP dado speedup observado y factor de mejora (Ejercicio 8b)]]
 
 ## Conceptos
@@ -22,4 +23,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «coma-flotante» (este arc
 
 ## Temas relacionados
 
-[[ac]] · [[compiladores]] · [[ley-amdahl]] · [[speedup]] · [[segmentacion]] · [[riesgos]] · [[unidad-funcional]]
+[[ac]] · [[compiladores]] · [[ley-amdahl]] · [[speedup]] · [[segmentacion]] · [[riesgos]] · [[unidad-funcional]] · [[adelantamiento]] · [[mips64]] · [[pipeline]]

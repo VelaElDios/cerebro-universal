@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "hardware"
-notas: 6
+notas: 7
 ---
 # hardware
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «hardware» (este archivo 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-flops-por-ciclo-en-x86-con-avx2-fma|Cálculo de FLOPS por ciclo en x86 con AVX2/FMA]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-vs-dinamica-de-codigo|Planificación estática vs dinámica de código]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui|Planificación estática vs dinámica de instrucciones en Arquitectura de Computadores]]
 
 ## Datos
@@ -24,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «hardware» (este archivo 
 
 ## Temas relacionados
 
-[[ac]] · [[avx2]] · [[fma]] · [[simd]] · [[compilador]] · [[ilp]] · [[planificacion-instrucciones]] · [[arquitectura-computadores]] · [[roofline]] · [[cache-sizes]] · [[latency-measurements]] · [[cachés]]
+[[ac]] · [[avx2]] · [[fma]] · [[simd]] · [[compiler]] · [[scheduling]] · [[compilador]] · [[ilp]] · [[planificacion-instrucciones]] · [[arquitectura-computadores]] · [[roofline]] · [[cache-sizes]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "estacion-reserva"
-notas: 3
+notas: 4
 ---
 # estacion-reserva
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estacion-reserva» (este 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/contenido-de-una-estacion-de-reserva-en-tomasulo|Contenido de una estación de reserva en Tomasulo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/contenido-de-una-estacion-de-reserva-en-tomasulo-test-ac-q11|Contenido de una estación de reserva en Tomasulo (test AC Q11)]] · ⚠️ propuesto
 
 ## Temas relacionados
 

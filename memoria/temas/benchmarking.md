@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "benchmarking"
-notas: 12
+notas: 13
 ---
 # benchmarking
 
@@ -25,6 +25,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «benchmarking» (este arch
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/comparacion-de-eficiencia-frecuencial-entre-procesadores-usa|Comparación de eficiencia frecuencial entre procesadores usando benchmark de juego 3D]]
 - 💡 [[memoria/conocimiento/conceptos/suite-spec-cpu-2017-metricas-specspeed-y-specrate|Suite SPEC CPU 2017: métricas SPECspeed y SPECrate]]
 
 ## Datos

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "raw"
-notas: 3
+notas: 6
 ---
 # raw
 
@@ -13,9 +13,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «raw» (este archivo se ge
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/dependencias-en-codigo-mips64-fp-l-d-mul-s-add-s-s-d|Dependencias en código MIPS64 FP: L.D → MUL.S → ADD.S → S.D]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencias-en-el-bucle-de-ejemplo-vliw-examen-ac-2018|Dependencias en el bucle de ejemplo VLIW (examen AC 2018)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-qi-register-status-en-tomasulo|Renombrado de registros vía Qi (Register Status) en Tomasulo]]
+- 💡 [[memoria/conocimiento/conceptos/riesgo-raw-read-after-write-y-su-causa|Riesgo RAW (Read After Write) y su causa]]
 - 💡 [[memoria/conocimiento/conceptos/riesgos-de-datos-en-risc-v-raw-waw-war|Riesgos de datos en RISC-V: RAW, WAW, WAR]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[waw]] · [[pipeline]] · [[renombrado-registros]] · [[tomasulo]] · [[hazard datos]] · [[war]] · [[adelantamiento]] · [[forwarding]]
+[[ac]] · [[waw]] · [[pipeline]] · [[dependencias]] · [[war]] · [[mips64]] · [[punto-flotante]] · [[ilp]] · [[vliw]] · [[renombrado-registros]] · [[tomasulo]] · [[dependencia de datos]]

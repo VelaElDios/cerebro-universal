@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tomasulo"
-notas: 68
+notas: 111
 ---
 # tomasulo
 
@@ -12,22 +12,33 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tomasulo» (este archivo 
 - 🧪 [[memoria/conocimiento/recetas/algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d|Algoritmo de Tomasulo: reglas de simulación para ejercicios de examen]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/asignacion-de-estaciones-de-reserva-mult-1-y-mult-2-en-el-ej|Asignación de estaciones de reserva Mult 1 y Mult 2 en el ejemplo]]
 - 🧪 [[memoria/conocimiento/recetas/completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8|Completar tabla Tomasulo con una estación por UF (Ejercicio 8)]]
+- 🧪 [[memoria/conocimiento/recetas/como-abordar-la-simulacion-tomasulo-con-rob-para-examen-ac|Cómo abordar la simulación Tomasulo con ROB para examen AC]]
 - 🧪 [[memoria/conocimiento/recetas/como-evoluciona-la-tabla-de-estaciones-de-reserva-en-tomasul|Cómo evoluciona la tabla de estaciones de reserva en Tomasulo (ciclos 7-13)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador|Cómo leer la tabla de estado de instrucciones en el marcador de Tomasulo]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-instrucciones-en-simulacion|Cómo leer la tabla de estado de instrucciones en simulación Tomasulo]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-tomasulo-en-ciclos-consecuti|Cómo leer la tabla de estado de Tomasulo en ciclos consecutivos]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-unidades-funcionales-en-el-m|Cómo leer la tabla de estado de unidades funcionales en el marcador de Tomasulo]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul|Cómo rellenar la tabla de estado de instrucciones en Tomasulo sin especulación]]
+- 🧪 [[memoria/conocimiento/recetas/como-rellenar-la-tabla-de-estado-en-tomasulo-con-especulacio|Cómo rellenar la tabla de estado en Tomasulo con especulación y ROB]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de|Cómo se traza la ejecución ciclo a ciclo en el algoritmo de Tomasulo]]
+- 🧪 [[memoria/conocimiento/recetas/como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l|Cómo simular Tomasulo especulativo con ROB de 4 entradas y latencias dadas]]
+- 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r|Diagrama pipeline superscalar: ejecución fuera de orden con renombramiento y escritura fuera de orden]]
 - 🧪 [[memoria/conocimiento/recetas/ejecucion-ciclo-a-ciclo-del-ejemplo-tomasulo-fld-fmul-d-fsub|Ejecución ciclo a ciclo del ejemplo Tomasulo (fld, fmul.d, fsub.d, fdiv.d, fadd.d)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/ejecucion-paso-a-paso-de-instrucciones-fp-en-tomasulo-ciclos|Ejecución paso a paso de instrucciones FP en Tomasulo (ciclos 16-20)]]
 - 🧪 [[memoria/conocimiento/recetas/estado-inicial-ciclo-1-de-un-bucle-vector-escalar-en-tomasul|Estado inicial (ciclo 1) de un bucle vector-escalar en Tomasulo]]
 - 🧪 [[memoria/conocimiento/recetas/estado-rob-en-ciclo-de-emision-del-primer-s-d-tomasulo-espec|Estado ROB en ciclo de emisión del primer S.D (Tomasulo especulación)]]
 - 🧪 [[memoria/conocimiento/recetas/estructura-del-procesador-tomasulo-cdb-estaciones-de-reserva|Estructura del procesador Tomasulo: CDB, estaciones de reserva y buffers]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/preguntas-problema-3-tabla-tiempos-emision-ejecucion-escritu|Preguntas Problema 3: Tabla tiempos (Emisión, Ejecución, Escritura, Finalización) y ROB ciclo 12]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio|Primeros 3 ciclos Tomasulo con 2 add 1c y 2 mul 4c (Ejercicio 9)]]
 - 🧪 [[memoria/conocimiento/recetas/secuencia-de-instrucciones-y-dependencias-en-el-ejemplo-toma|Secuencia de instrucciones y dependencias en el ejemplo Tomasulo del tema 3]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-ejecucion-tomasulo-con-tabla-de-ciclos-issue-e|Simulación de ejecución Tomasulo con tabla de ciclos (issue, execution, write, commit)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-basica-con-restricciones-de-bus-y-recurs|Simulación Tomasulo básica con restricciones de bus y recurso (examen Enero 2017)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-con-especulacion-parametros-clave-y-rest|Simulación Tomasulo con especulación: parámetros clave y restricciones de temporización]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-especulativa-con-rob-de-4-entradas-exame|Simulación Tomasulo especulativa con ROB de 4 entradas (examen Enero 2017)]]
 - 🧪 [[memoria/conocimiento/recetas/tabla-de-estado-de-estacion-de-reserva-en-tomasulo-campos-y|Tabla de estado de estación de reserva en Tomasulo: campos y lectura]]
 - 🧪 [[memoria/conocimiento/recetas/tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm|Tomasulo con CDB no simultáneo 2 RS por UF buffers carga/almacen (Ejercicio 10)]]
 - 🧪 [[memoria/conocimiento/recetas/tres-fases-de-ejecucion-en-tomasulo-emision-ejecucion-escrit|Tres fases de ejecución en Tomasulo: Emisión, Ejecución, Escritura]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/volcado-de-rob-reorder-buffer-en-ciclo-de-finalizacion-de-pr|Volcado de ROB (Reorder Buffer) en ciclo de finalización de primera carga en Tomasulo especulativo]]
 
 ## Decisiones (y por qué)
 
@@ -41,31 +52,53 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tomasulo» (este archivo 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/algoritmo-tomasulo-origen-y-objetivo-cpi1|Algoritmo Tomasulo: origen y objetivo CPI≈1]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/bits-venenosos-en-carga-especulativa-excepcion-diferida-hast|Bits venenosos en carga especulativa: excepción diferida hasta uso del registro]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/buffer-de-carga-en-tomasulo-especulativo|Buffer de carga en Tomasulo especulativo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/buffers-de-carga-y-almacenamiento-en-tomasulo|Buffers de carga y almacenamiento en Tomasulo]]
+- 💡 [[memoria/conocimiento/conceptos/bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo|Bus Común de Datos (CDB) en el algoritmo de Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/comparativa-tomasulo-vs-marcador-scoreboard|Comparativa Tomasulo vs Marcador (Scoreboard)]]
-- 💡 [[memoria/conocimiento/conceptos/configuracion-tomasulo-con-especulacion-para-examen-enero-20|Configuración Tomasulo con especulación para examen Enero 2012 Problema 3]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion|Comportamiento de bits de veneno (poison bits) ante excepción en instrucción no especulativa]]
+- 💡 [[memoria/conocimiento/conceptos/comportamiento-de-bits-de-veneno-ante-instruccion-no-especul|Comportamiento de bits de veneno ante instrucción no especulativa que usa registro con poison bit activo]]
+- 💡 [[memoria/conocimiento/conceptos/configuracion-tomasulo-con-especulacion-para-examen-enero-20|Configuración Tomasulo con especulación para examen Enero 2012 Problema 3]]
 - 💡 [[memoria/conocimiento/conceptos/contenido-de-una-estacion-de-reserva-en-tomasulo|Contenido de una estación de reserva en Tomasulo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/contenido-de-una-estacion-de-reserva-en-tomasulo-test-ac-q11|Contenido de una estación de reserva en Tomasulo (test AC Q11)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario|Convención de nomenclatura en tablas de Tomasulo del temario]]
 - 💡 [[memoria/conocimiento/conceptos/diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la|Diferencia entre buffers de carga y de almacenamiento en la simulación]]
 - 💡 [[memoria/conocimiento/conceptos/escritura-de-resultado-y-actualizacion-de-qi-en-registro-des|Escritura de resultado y actualización de Qi en registro destino]]
+- 💡 [[memoria/conocimiento/conceptos/especulacion-con-bits-venenosos-programa-continua-y-finaliza|Especulación con bits venenosos: programa continúa y finaliza dando error ante excepción no recuperable]]
+- 💡 [[memoria/conocimiento/conceptos/estaciones-de-reserva-almacenan-etiquetas-para-control-de-ri|Estaciones de reserva almacenan etiquetas para control de riesgos]]
 - 💡 [[memoria/conocimiento/conceptos/estado-de-buffers-de-carga-almacenamiento-y-estaciones-de-re|Estado de buffers de carga/almacenamiento y estaciones de reserva en ejemplo Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/estado-de-registros-resultado-register-result-status-en-el-m|Estado de registros resultado (register result status) en el marcador]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-una-estacion-de-reserva-en-tomasulo|Estructura de una estación de reserva en Tomasulo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/fichero-de-registros-con-campo-qi-en-tomasulo|Fichero de registros con campo Qi en Tomasulo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/flujo-de-datos-de-carga-multiplicacion-almacenamiento-en-buf|Flujo de datos de carga → multiplicación → almacenamiento en buffers Tomasulo]]
+- 💡 [[memoria/conocimiento/conceptos/funcion-del-marcador-scoreboard-en-ejecucion-dinamica-test-a|Función del Marcador (Scoreboard) en ejecución dinámica (test AC Q9)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/gestion-de-buffers-de-carga-almacenamiento-con-direcciones-d|Gestión de buffers de carga/almacenamiento con direcciones decrecientes]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/idea-central-de-tomasulo-control-distribuido-con-estaciones|Idea central de Tomasulo: control distribuido con estaciones de reserva]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-la-planificacion-estatica-que-motiva-la-planif|Limitación de la planificación estática que motiva la planificación dinámica]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/nomenclatura-del-campo-value-en-entradas-del-rob-tomasulo-co|Nomenclatura del campo Value en entradas del ROB (Tomasulo con especulación)]]
+- 💡 [[memoria/conocimiento/conceptos/objetivo-del-algoritmo-tomasulo-test-ac-q10|Objetivo del algoritmo Tomasulo (test AC Q10)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-sin-especulacion-orden-de-ejecucion-d|Planificación dinámica sin especulación: orden de ejecución dado por dependencias de datos del programa]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-orden-de-ejecucion-por-disponibilidad|Planificación dinámica: orden de ejecución por disponibilidad de operandos]]
 - 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-tomasulo-con-especulacion-buffers-carga-a|Problema examen AC: Tomasulo con especulación, buffers carga/almacenamiento y UF múltiples]]
+- 💡 [[memoria/conocimiento/conceptos/procesador-tomasulo-con-especulacion-caracteristicas-de-late|Procesador Tomasulo con especulación - características de latencia y recursos (examen enero 2025)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-etiquetas-de-estacion-de-reserva|Renombrado de registros vía etiquetas de estación de reserva elimina WAR y WAW]]
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-qi-register-status-en-tomasulo|Renombrado de registros vía Qi (Register Status) en Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-qi-en-bucle-con-reuso-de-f0-f2-f|Renombrado de registros vía Qi en bucle con reuso de f0/f2/f4]]
 - 💡 [[memoria/conocimiento/conceptos/representacion-del-estado-del-marcador-scoreboard-para-instr|Representación del estado del marcador (scoreboard) para instrucciones FP]]
+- 💡 [[memoria/conocimiento/conceptos/restricciones-de-uso-del-bus-de-datos-comun-y-recursos-en-to|Restricciones de uso del Bus de Datos Común y recursos en Tomasulo especulativo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/restriccion-de-escritura-en-cdb-en-tomasulo-no-mismo-ciclo|Restricción de escritura en CDB en Tomasulo (no mismo ciclo)]]
+- 💡 [[memoria/conocimiento/conceptos/restriccion-de-reuso-de-recurso-en-ciclo-siguiente-tomasulo|Restricción de reuso de recurso en ciclo siguiente (Tomasulo examen)]]
+- 💡 [[memoria/conocimiento/conceptos/riesgos-estructurales-en-tomasulo-solo-en-escritura-de-resul|Riesgos estructurales en Tomasulo solo en escritura de resultado]]
 - 💡 [[memoria/conocimiento/conceptos/secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c|Secuencia de instrucciones y latencias en ejemplo Tomasulo (ciclos 7-13)]]
 - 💡 [[memoria/conocimiento/conceptos/semantica-de-los-campos-qj-qk-rj-rk-en-el-estado-de-uf|Semántica de los campos Qj, Qk, Rj, Rk en el estado de UF]]
+- 💡 [[memoria/conocimiento/conceptos/significado-del-campo-value-en-entrada-rob-con-formato-m-4-r|Significado del campo Value en entrada ROB con formato M(4+R3)]]
 - 💡 [[memoria/conocimiento/conceptos/simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo|Simulación ciclo a ciclo del marcador (scoreboard) de Tomasulo con instrucciones FP]]
 - 💡 [[memoria/conocimiento/conceptos/simulacion-paso-a-paso-de-tomasulo-con-bucle-fp-fld-fmul-d-f|Simulación paso a paso de Tomasulo con bucle FP (fld/fmul.d/fsd)]]
+- 💡 [[memoria/conocimiento/conceptos/tomasulo-especulativo-excepcion-en-instruccion-especulativa|Tomasulo especulativo: excepción en instrucción especulativa se maneja en commit (pregunta 16)]]
+- 💡 [[memoria/conocimiento/conceptos/tomasulo-sin-especulacion-detenciones-en-escritura-por-riesg|Tomasulo sin especulación: detenciones en escritura por riesgos estructurales en el CDB]]
+- 💡 [[memoria/conocimiento/conceptos/tomasulo-resultados-via-cdb-riesgos-estructurales-en-escritu|Tomasulo: resultados via CDB, riesgos estructurales en escritura, especulación commit]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/tomasulo-resultados-via-common-data-bus-cdb|Tomasulo: resultados via Common Data Bus (CDB)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/uso-de-buffers-de-carga-en-tomasulo-load-buffers|Uso de buffers de carga en Tomasulo (Load Buffers)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en|Uso de Qi en registros flotantes para renombrado dinámico en Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-del-algoritmo-tomasulo|Ventajas e inconvenientes del algoritmo Tomasulo]]
@@ -75,18 +108,28 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tomasulo» (este archivo 
 - 📊 [[memoria/conocimiento/datos/bibliografia-canonica-para-planificacion-de-instrucciones-he|Bibliografía canónica para Planificación de instrucciones (Hennessy & Patterson, Ortega et al.)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/campo-de-etiqueta-tag-de-4-bits-5-estaciones-de-reserva-6-bu|Campo de etiqueta (tag) de 4 bits: 5 estaciones de reserva + 6 buffers de carga]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/configuracion-de-recursos-en-ejercicio-tomasulo-ej-14-y-scor|Configuración de recursos en ejercicio Tomasulo (Ej. 14) y Scoreboard (Ej. 16)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/configuracion-hardware-tomasulo-con-especulacion-para-examen|Configuración hardware Tomasulo con especulación para examen Enero 2016 Problema 3]]
 - 📊 [[memoria/conocimiento/datos/cronograma-de-emision-ejecucion-y-escritura-por-instruccion|Cronograma de emisión, ejecución y escritura por instrucción en ciclos 1-8]]
 - 📊 [[memoria/conocimiento/datos/evolucion-de-la-direccion-base-x1-en-las-dos-iteraciones-del|Evolución de la dirección base x1 en las dos iteraciones del ejemplo]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/evolucion-del-registro-base-x1-y-qi-de-registros-fp-en-el-ej|Evolución del registro base x1 y Qi de registros FP en el ejemplo Tomasulo]]
+- 📊 [[memoria/conocimiento/datos/examen-arquitectura-computadores-enero-2017-problema-3-tomas|Examen Arquitectura Computadores Enero 2017 - Problema 3 (Tomasulo y VLIW)]]
 - 📊 [[memoria/conocimiento/datos/latencia-de-carga-fp-y-multiplicacion-doble-en-la-simulacion|Latencia de carga FP y multiplicación doble en la simulación Tomasulo]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-cache-asumidas-en-el-ejemplo-de-bucle-vector-es|Latencias de caché asumidas en el ejemplo de bucle vector-escalar]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo|Latencias de unidades funcionales en el ejemplo Tomasulo]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo-cic|Latencias de unidades funcionales en el ejemplo Tomasulo (ciclos)]]
+- 📊 [[memoria/conocimiento/datos/latencias-y-segmentacion-de-unidades-funcionales-en-examen-t|Latencias y segmentación de unidades funcionales en examen Tomasulo Enero 2016]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-tomasulo-con-especulacion-para-problema-3-ac-ener|Parámetros Tomasulo con especulación para Problema 3 (AC Enero 2025)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-uf-tomasulo-examen-diciembre-2010|Parámetros UF Tomasulo examen diciembre 2010]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/peticion-de-instantanea-rob-en-ciclo-6-para-examen-enero-202|Petición de instantánea ROB en ciclo 6 para examen Enero 2026 Problema 2b]]
 - 📊 [[memoria/conocimiento/datos/registros-flotantes-involucrados-y-su-estado-inicial-en-el-e|Registros flotantes involucrados y su estado inicial en el ejemplo]]
+- 📊 [[memoria/conocimiento/datos/secuencia-de-10-instrucciones-mips64-fp-para-ejercicio-3-tom|Secuencia de 10 instrucciones MIPS64 FP para ejercicio 3 Tomasulo]]
+- 📊 [[memoria/conocimiento/datos/secuencia-de-10-instrucciones-para-simulacion-tomasulo-probl|Secuencia de 10 instrucciones para simulación Tomasulo Problema 3]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/secuencia-de-instrucciones-fp-del-examen-para-tomasulo-10-in|Secuencia de instrucciones FP del examen para Tomasulo (10 instrucciones)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/secuencia-de-instrucciones-mips64-para-simulacion-tomasulo-p|Secuencia de instrucciones MIPS64 para simulación Tomasulo Problema 3a]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/secuencia-de-instrucciones-para-simulacion-tomasulo-problema|Secuencia de instrucciones para simulación Tomasulo Problema 2 Enero 2026]]
 - 📊 [[memoria/conocimiento/datos/secuencia-exacta-de-ciclos-para-cada-instruccion-en-la-simul|Secuencia exacta de ciclos para cada instrucción en la simulación (ciclos 1-15)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/valores-concretos-de-x1-y-direcciones-de-memoria-en-la-simul|Valores concretos de x1 y direcciones de memoria en la simulación]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura]] · [[planificacion-dinamica]] · [[scoreboard]] · [[simulacion]] · [[punto-flotante]] · [[buffers]] · [[estaciones-reserva]] · [[registros]] · [[pipeline]] · [[latencia]] · [[cdb]]
+[[ac]] · [[arquitectura]] · [[especulacion]] · [[planificacion-dinamica]] · [[simulacion]] · [[rob]] · [[scoreboard]] · [[cdb]] · [[pipeline]] · [[examen]] · [[estaciones-reserva]] · [[punto-flotante]]

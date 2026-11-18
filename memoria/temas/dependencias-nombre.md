@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «dependencias-nombre» (es
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/eliminacion-de-dependencias-de-nombre-mediante-renombrado-de|Eliminación de dependencias de nombre mediante renombrado de registros en desenrollamiento]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/eliminacion-de-dependencias-de-nombre-mediante-renombrado-de|Eliminación de dependencias de nombre mediante renombrado de registros en desenrollamiento]]
 
 ## Temas relacionados
 
-[[ac]] · [[loop-unrolling]] · [[optimizacion-compilador]] · [[renombrado-registros]] · [[war]] · [[waw]]
+[[ac]] · [[loop-unrolling]] · [[optimizacion-compilador]] · [[renombrado-registros]] · [[war]] · [[waw]] · [[dependencias]] · [[register-renaming]]

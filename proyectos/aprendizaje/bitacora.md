@@ -60,3 +60,25 @@ Trozos leídos: 21 · notas nuevas o ampliadas: 175
 - ✅ `repo:datos/temarios/AC/examenes/Enero2012.pdf` aprendido entero: 18 notas → [[fuente-enero2012-examenes]]
 - repo:datos/temarios/AC/examenes/Enero2013.pdf: sin IA disponible (Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b))
 - ⏳ `repo:datos/temarios/AC/examenes/Enero2013.pdf`: trozo 0 de 1
+
+## 2026-11-18 03:04 · 📚 Aprendizaje
+
+Trozos leídos: 29 · notas nuevas o ampliadas: 252
+
+**Repos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100 · datos @ c49d603 2026-11-17 22:55:57 +0000
+
+- ✅ `repo:datos/temarios/AC/examenes/Enero2013.pdf` aprendido entero: 10 notas → [[fuente-enero2013-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2014.pdf` aprendido entero: 18 notas → [[fuente-enero2014-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2015.pdf` aprendido entero: 18 notas → [[fuente-enero2015-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2016.pdf` aprendido entero: 18 notas → [[fuente-enero2016-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2017.pdf` aprendido entero: 17 notas → [[fuente-enero2017-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2018.pdf` aprendido entero: 13 notas → [[fuente-enero2018-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2022.pdf` aprendido entero: 16 notas → [[fuente-enero2022-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2025.pdf` aprendido entero: 18 notas → [[fuente-enero2025-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Enero2026.pdf` aprendido entero: 19 notas → [[fuente-enero2026-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/January 2025.pdf` aprendido entero: 20 notas → [[fuente-january-2025-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/January2016.pdf` aprendido entero: 17 notas → [[fuente-january2016-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/January2017.pdf` aprendido entero: 15 notas → [[fuente-january2017-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/January2018.pdf` aprendido entero: 16 notas → [[fuente-january2018-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/January2019.pdf` aprendido entero: 17 notas → [[fuente-january2019-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/January2020.pdf` aprendido entero: 20 notas → [[fuente-january2020-examenes]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "benchmark"
-notas: 16
+notas: 17
 ---
 # benchmark
 
@@ -11,6 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «benchmark» (este archivo
 
 - 🧪 [[memoria/conocimiento/recetas/comparacion-de-maquinas-por-tiempo-total-de-ejecucion-de-mul|Comparación de máquinas por tiempo total de ejecución de múltiples programas]]
 - 🧪 [[memoria/conocimiento/recetas/construccion-de-permutacion-aleatoria-en-ciclo-para-pointer|Construcción de permutación aleatoria en ciclo para pointer chasing]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-para-comparar-dos-computadores-con-mismo-isa|Cálculo de MIPS para comparar dos computadores con mismo ISA]]
 - 🧪 [[memoria/conocimiento/recetas/como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria|Cómo compilar y ejecutar el benchmark de latencia de memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-compilar-y-medir-lista-vs-vector-con-g-o2-hyperfine-y-p|Cómo compilar y medir lista vs vector con g++ -O2, hyperfine y perf]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-obtener-los-parametros-reales-de-tu-maquina-para-el-roo|Cómo obtener los parámetros reales de tu máquina para el Roofline]] · ⚠️ propuesto
@@ -37,4 +38,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «benchmark» (este archivo
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura-computadores]] · [[parametros]] · [[compilacion]] · [[hyperfine]] · [[perf]] · [[lscpu]] · [[stream]] · [[page-fault]] · [[tlb]] · [[warmup]] · [[experimento]]
+[[ac]] · [[arquitectura-computadores]] · [[parametros]] · [[compilacion]] · [[hyperfine]] · [[perf]] · [[rendimiento]] · [[lscpu]] · [[stream]] · [[page-fault]] · [[tlb]] · [[warmup]]

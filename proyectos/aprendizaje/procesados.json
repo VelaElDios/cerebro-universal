@@ -959,8 +959,418 @@
  },
  "repo:datos/temarios/AC/examenes/Enero2013.pdf": {
   "md5": "33e0d479a6f84537ff085eb8c8ff3937",
-  "hechos": 0,
+  "hechos": 1,
   "total": 1,
-  "notas": []
+  "notas": [
+   "como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad",
+   "como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i",
+   "como-resolver-segmentacion-software-software-pipelining-en-m",
+   "como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l",
+   "definicion-de-mips-millones-de-instrucciones-por-segundo-y-c",
+   "definiciones-btb-ejecucion-multicamino-especulacion-software",
+   "dependencias-en-codigo-mips64-fp-l-d-mul-s-add-s-s-d",
+   "ley-de-amdahl-aplicada-a-mejora-de-disco-fraccion-de-uso-par",
+   "prediccion-fija-siempre-no-tomado-con-calculo-destino-en-id",
+   "tomasulo-resultados-via-cdb-riesgos-estructurales-en-escritu"
+  ],
+  "resumenes": [
+   "Examen final de Arquitectura de Computadores (Enero 2013) con 20 preguntas tipo test y 4 problemas. El test cubre métricas de rendimiento (MIPS, ley de Amdahl, coste-efectividad), dependencias en MIPS64, algoritmo de Tomasulo (CDB, riesgos estructurales), predicción de saltos (BTB, ejecución multicamino, especulación software/hardware), superescalar (CPI ideal, etapa issue), microarquitectura Intel P7, multicore (UMA/NUMA) y PowerPC (RISC). Los problemas requieren: segmentación software con salto retardado y adelantamiento; análisis de predictores (1-bit, 4-bit, correlacionado (1,2)) sobre sec"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Enero2014.pdf": {
+  "md5": "52ee6205df9387555ef5f0a84b7be4d8",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "analisis-de-codigo-con-especulacion-estatica-para-examen-ac",
+   "calculo-de-cpi-en-implementacion-multiciclo-mips-con-mezcla",
+   "convencion-etiquetas-indefinido-y-sucio-para-poison-bits-en",
+   "criterio-de-desenrollamiento-de-bucles-loop-unrolling",
+   "definicion-de-riesgo-raw-read-after-write",
+   "eliminacion-de-dependencias-de-datos-mediante-renombramiento",
+   "especulacion-con-poison-bits-propagacion-y-excepcion-diferid",
+   "especulacion-estatica-con-cargas-especulativas-lw-en-mips64",
+   "estado-inicial-de-registros-y-restriccion-memoria-direccion",
+   "interpretacion-de-speedup-del-200",
+   "mecanismo-cooperacion-hardware-software-sin-distincion-instr",
+   "mejor-medida-de-rendimiento-de-un-computador",
+   "objetivo-de-la-segmentacion-software-software-pipelining",
+   "procesador-sin-soporte-para-especulacion-comportamiento-ante",
+   "salto-retardado-delayed-branch-como-planificacion-estatica",
+   "seleccion-de-entrada-en-bht-branch-history-table",
+   "tomasulo-resultados-via-common-data-bus-cdb",
+   "tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero"
+  ],
+  "resumenes": [
+   "Examen de Arquitectura de Computadores (Enero 2014) con test de 30 preguntas y dos problemas. El test cubre métricas de rendimiento (tiempo de ejecución, MIPS, CPI, speedup), riesgos de pipeline (RAW, WAR, WAW), dependencias y renombramiento, desenrollamiento de bucles, algoritmo de Tomasulo (CDB, ROB, especulación), predicción de saltos (BHT, BTB, gshare, BHR), superescalar (CPI ideal), arquitecturas comerciales (Intel P6/P7, HyperTransport AMD, ARM), GPU (cambio de contexto sin penalización), clústeres, MPI, CC-NUMA y Cloud. El Problema 1 pide analizar dependencias, aplicar segmentación soft",
+   "Este trozo contiene el Problema 3 del examen de Arquitectura de Computadores (Enero 2014). Evalúa tres mecanismos de especulación estática en un procesador MIPS64: (a) sin soporte para especulación, (b) cooperación hardware/software sin distinguir instrucciones normales de especulativas, y (c) especulación con poison bits. El código incluye cargas especulativas (LW*) a dirección 0 (prohibida, lanza excepción) y saltos condicionales. Se proporciona estado inicial de registros (R1=10, R2=0, R3=0, R4=4, R5=5, R6=6, R7=7, R8=8, R9=9) y tablas para resolver cada caso indicando qué instrucciones lan"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Enero2015.pdf": {
+  "md5": "c8708ca589352379542b1e17b5fd478b",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "calculo-de-cpi-en-bucle-desenrollado-superescalar-con-ancho",
+   "calculo-de-tiempo-de-ejecucion-con-cpi-ic-y-duracion-de-cicl",
+   "como-resolver-el-problema-3-de-especulacion-con-poison-bits",
+   "dependencias-de-nombre-war-waw-se-eliminan-con-renombramient",
+   "desenrollado-6-y-renombrado-de-registros-pf-para-superescala",
+   "especulacion-con-bits-venenosos-programa-continua-y-finaliza",
+   "especulacion-estatica-con-poison-bits-en-mips64-lw",
+   "estaciones-de-reserva-almacenan-etiquetas-para-control-de-ri",
+   "estado-inicial-de-registros-y-memoria-para-problema-3-enero",
+   "latencias-de-ejecucion-fp-en-superescalar-mips64-del-examen",
+   "planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr",
+   "predictor-gselect-indexa-la-bht-con-xor-de-bits-del-pc-y-del",
+   "salto-retardado-delayed-branch-en-planificacion-superescalar",
+   "segmentacion-software-software-pipelining-transforma-bucles",
+   "speedup-con-ley-de-amdahl-para-mejora-parcial-de-tarjeta-gra",
+   "tomasulo-sin-especulacion-detenciones-en-escritura-por-riesg",
+   "ventana-de-instrucciones-almacena-instrucciones-activas-deco",
+   "waw-corresponde-a-dependencia-de-salida"
+  ],
+  "resumenes": [
+   "Este trozo contiene el examen ordinario de Arquitectura de Computadores de enero de 2015. Incluye un test de 30 preguntas sobre métricas de rendimiento (CPI, speedup, MIPS), dependencias e ILP, algoritmo de Tomasulo (con y sin especulación), predicción de saltos, arquitectura de procesadores modernos (Haswell, Cortex-A9, PowerPC), y modelos de computación paralela (Grid, Cluster, MPP, MPI). También presenta dos problemas: uno de análisis de pipeline y desenrollamiento de bucles en MIPS64, y otro de configuración de Tomasulo con especulación, ROB y estaciones de reserva.",
+   "Este trozo contiene dos problemas de un examen de Arquitectura de Computadores (curso 2014/15). El Problema 3 trata sobre especulación estática con poison bits en MIPS64: se da un código con cargas especulativas (LW*) y saltos, donde el acceso a la dirección de memoria 0 lanza excepción; hay que resolver dos casos (sin ayuda para especulación y con poison bits) indicando qué instrucciones lanzan excepción, si termina el programa y el estado final de registros. El Problema 4 es de planificación en un superescalar MIPS64 de 4 vías (2 enteras/memoria + 2 PF) con latencias dadas (suma PF 2 ciclos,"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Enero2016.pdf": {
+  "md5": "6689fdc06df71c8145b0a841d5f90848",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "analisis-de-dependencias-en-bucle-mips-con-acceso-a-memoria",
+   "aplicacion-de-la-ley-de-amdahl-para-mejora-de-coma-flotante",
+   "calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia",
+   "caracteristicas-del-procesador-vliw-del-examen-enero-2016-pr",
+   "codigo-del-bucle-y-valores-iniciales-de-registros-para-vliw",
+   "como-abordar-la-simulacion-tomasulo-con-rob-para-examen-ac",
+   "configuracion-hardware-tomasulo-con-especulacion-para-examen",
+   "definicion-de-dependencia-de-datos-raw-entre-instrucciones",
+   "definicion-de-procesador-vliw",
+   "diferencia-entre-arquitectura-y-organizacion-de-computadores",
+   "eliminacion-de-dependencias-de-nombre-mediante-renombramient",
+   "latencias-y-segmentacion-de-unidades-funcionales-en-examen-t",
+   "parametros-temporales-de-pipeline-para-vliw-problema-3b",
+   "planificacion-estatica-de-instrucciones-la-hace-el-compilado",
+   "restricciones-de-uso-del-bus-de-datos-comun-y-recursos-en-to",
+   "riesgos-estructurales-en-tomasulo-solo-en-escritura-de-resul",
+   "secuencia-de-instrucciones-mips64-para-simulacion-tomasulo-p",
+   "waw-corresponde-a-dependencia-de-salida"
+  ],
+  "resumenes": [
+   "Examen de Arquitectura de Computadores (Enero 2016) con 30 preguntas tipo test y un problema de desenrollamiento de bucles en MIPS64. Cubre CPI, ley de Amdahl, arquitectura vs organización, VLIW, dependencias de datos (RAW, WAR, WAW), renombramiento, planificación estática, Tomasulo, segmentación software, predictores de dos niveles, BTAC, gselect, especulación con ROB y poison bits, superescalar, ARM, potencia, multicore, taxonomía de Flynn, cloud, SMP/UMA y TLP.",
+   "Este trozo contiene dos problemas de un examen de Arquitectura de Computadores (curso 2015/16). El primero pide simular la ejecución de 10 instrucciones MIPS64 en un procesador con especulación hardware según Tomasulo, detallando ciclos por etapa (emisión, ejecución, escritura resultado, terminación) y el contenido del ROB en un ciclo concreto. El segundo problema requiere planificar código para un procesador VLIW de 4 operaciones por instrucción, desenrollando 4 veces un bucle con 10 instrucciones, y calcular operaciones por ciclo."
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Enero2017.pdf": {
+  "md5": "765d883795f96ac13b77b0723ac92279",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "calculo-de-bits-totales-en-predictor-2-2-con-3-entradas-por",
+   "calculo-de-mejora-necesaria-con-ley-de-amdahl-fraccion-mejor",
+   "calculo-de-mips-para-dos-maquinas-con-mismo-isa-y-mezcla-de",
+   "calculo-de-operaciones-por-ciclo-en-vliw-con-software-pipeli",
+   "definicion-de-arquitectura-frente-a-organizacion-del-computa",
+   "definiciones-de-dependencias-de-datos-raw-war-antidependenci",
+   "dependencias-en-bucle-vectorial-dependencia-de-datos-a-trave",
+   "examen-arquitectura-computadores-enero-2017-problema-3-tomas",
+   "planificacion-dinamica-de-instrucciones-el-hardware-reordena",
+   "planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame",
+   "restriccion-de-escritura-en-cdb-en-tomasulo-no-mismo-ciclo",
+   "restriccion-de-reuso-de-recurso-en-ciclo-siguiente-tomasulo",
+   "riesgos-estructurales-en-marcador-scoreboard-fase-de-emision",
+   "segmentacion-software-software-pipelining-modifica-codigo-pa",
+   "simulacion-tomasulo-basica-con-restricciones-de-bus-y-recurs",
+   "simulacion-tomasulo-especulativa-con-rob-de-4-entradas-exame",
+   "tecnicas-estaticas-de-ilp-soportadas-principalmente-por-el-c"
+  ],
+  "resumenes": [
+   "Este trozo contiene el examen ordinario de Arquitectura de Computadores (curso 2016/17): 30 preguntas tipo test sobre arquitectura vs organización, rendimiento (Amdahl, MIPS), dependencias e ILP (estático/dinámico, scoreboard, Tomasulo, predicción de saltos), superescalar, multicore, ARM, Sunway, potencia, cloud/grid, SIMD y MPI; y el enunciado completo del Problema 1 (pipeline MIPS64 con FP, detección de riesgos, CPI, desenrollamiento de bucles y speedup) y el inicio del Problema 2.",
+   "Este trozo contiene dos problemas de un examen de Arquitectura de Computadores (curso 2016/17, convocatoria de enero 2017). El primero pide simular la ejecución de un código MIPS64 con el algoritmo de Tomasulo (versión básica y especulativa con ROB de 4 entradas), detallando ciclos de emisión, ejecución, escritura de resultado y terminación bajo restricciones concretas de latencias y uso de bus/recursos. El segundo problema consiste en planificar un bucle para un procesador VLIW con 6 unidades de ejecución (2 enteras, 2 memoria, 2 punto flotante) y latencias dadas, rellenando una tabla de asig"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Enero2018.pdf": {
+  "md5": "79893092eabfc5601e352dd670592906",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "bucle-mips64-para-contar-ocurrencias-de-un-caracter-en-caden",
+   "calculo-de-mips-con-cpi-ponderado-y-frecuencia-de-reloj",
+   "dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema",
+   "desenrollado-de-bucle-3x-y-planificacion-vliw-compactada",
+   "implementacion-bht-con-contadores-saturados-de-2-bits",
+   "ley-de-amdahl-aplicada-a-mejora-de-una-fraccion-del-tiempo-d",
+   "mejora-de-rendimiento-vliw-desenrollado-3x-vs-original-exame",
+   "modelo-de-programacion-simt-en-gpgpu",
+   "numero-de-bhr-en-predictor-correlacionado-de-dos-niveles-2-1",
+   "planificacion-vliw-para-bucle-con-latencias-mem-2-add-d-1-mu",
+   "predictor-correlacionado-2-1-estructura-y-funcionamiento",
+   "ratio-ventas-procesadores-desktop-vs-moviles-en-2017",
+   "segmentacion-software-software-pipelining-para-bucle-encript"
+  ],
+  "resumenes": [
+   "Este trozo contiene el examen ordinario de Arquitectura de Computadores (curso 2017/18) con 30 preguntas tipo test y el inicio del Problema 1. El test abarca ley de Amdahl, cálculo de MIPS, conceptos de organización, VLIW, dependencias (datos, salida, anti), técnicas de pipeline (desenrollamiento, predicción, especulación), bloque básico, Scoreboard, algoritmo de Tomasulo (CDB, especulación, buffer de carga), predicción de saltos correlacionada (2,1) y BHT, recuperación ante fallo de predicción, superscalar (etapa finalización, orden de emisión, estructuras), microarquitectura P6 (ROB), datos ",
+   "Este trozo contiene dos problemas de un examen de Arquitectura de Computadores (Enero 2018). El Problema 2 pide analizar el comportamiento real y la predicción con un predictor correlacionado (2,1) para dos saltos en un bucle MIPS64 que cuenta letras 'a' en la cadena \"exam18\". El Problema 3 pide planificar un bucle para VLIW de 4 operaciones con latencias dadas (MEM=2, ADD.D=1, MUL.D=2), calcular operaciones por ciclo, desenrollar 3 veces y re-planificar compactando, y comparar el rendimiento."
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Enero2022.pdf": {
+  "md5": "ef533f5b8cf4fcecbaa27d2ab2d91e84",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "analisis-de-detenciones-stalls-en-bucle-con-media-ponderada",
+   "analisis-de-pipeline-fp-para-bucle-media-ponderada-problema",
+   "calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f",
+   "comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion",
+   "cpi-tras-desenrollado-y-planificacion-de-bucle",
+   "dependencias-en-bucle-mips-de-carga-modificacion-almacenamie",
+   "desenrollado-de-bucle-minimo-para-planificacion-sin-detencio",
+   "diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r",
+   "diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-sin-r",
+   "diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e",
+   "dimensionado-de-btb-implicita-ancho-y-bits-totales-para-1024",
+   "ejecucion-multicamino-multi-path-execution-frente-a-predicci",
+   "ley-de-amdahl-para-mejora-de-subsistema-disco-6x-mas-rapido",
+   "secuencia-de-aciertos-fallos-en-predictor-2-bits-inicializad",
+   "simulacion-tomasulo-con-especulacion-parametros-clave-y-rest",
+   "volcado-de-rob-reorder-buffer-en-ciclo-de-finalizacion-de-pr"
+  ],
+  "resumenes": [
+   "Examen de Arquitectura de Computadores (curso 2021/22) con 30 preguntas tipo test sobre paralelismo, taxonomía de Flynn, cálculo de MIPS pico, ley de Amdahl, dependencias en bucles MIPS, adelantamiento en pipeline, riesgos WAW/WAR/RAW, marcador vs Tomasulo, segmentación software, desenrollamiento de bucles, predicción de saltos (2 bits, BTB, BHT), ejecución multicamino, especulación software, bits de veneno, etapa commit en Tomasulo, CPI ideal superescalar, etapa de predicción en superescalar, inconvenientes superescalar, características VLIW, modelos memoria multicore (UMA/NUMA), microarquite",
+   "Este trozo contiene los problemas 1 (continuación), 2 y 3 del examen ordinario de Arquitectura de Computadores (curso 2021/22). El problema 1 pide analizar detenciones en un bucle de media ponderada, desenrollarlo para eliminar stalls y recalcular CPI. El problema 2 es una simulación completa de Tomasulo con especulación en MIPS64 (latencias: LD/ST=1, MUL=6, ADD=4, ROB=4 entradas, 2 RS/unidad, 2 load buffers, restricciones de CDB y recursos). El problema 3 requiere diagramas de pipeline para un superscalar grado 4 con 5 unidades funcionales en tres modalidades: en orden, fuera de orden sin ren"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Enero2025.pdf": {
+  "md5": "04137cd47fe5bbea28851de51cd599a6",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "calculo-de-mejora-necesaria-con-la-ley-de-amdahl-test-ac-q3",
+   "calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4",
+   "codigo-mips64-y-secuencia-de-entrada-para-problema-2-conteo",
+   "comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14",
+   "contenido-de-una-estacion-de-reserva-en-tomasulo-test-ac-q11",
+   "cpi-con-penalizacion-de-saltos-resueltos-en-id-test-ac-q13",
+   "definicion-de-bloque-basico-test-ac-q7",
+   "estado-inicial-predictores-para-problema-2-1-bit-y-2-niveles",
+   "funcion-del-marcador-scoreboard-en-ejecucion-dinamica-test-a",
+   "interpretacion-del-bhr-en-predictor-correlacionado-m-n-test",
+   "objetivo-del-algoritmo-tomasulo-test-ac-q10",
+   "parametros-del-procesador-para-problema-1-ac-enero-2025",
+   "parametros-tomasulo-con-especulacion-para-problema-3-ac-ener",
+   "preguntas-del-problema-1-detenciones-cpi-y-desenrollamiento",
+   "preguntas-del-problema-2-traza-prediccion-1-bit-y-correlacio",
+   "preguntas-problema-3-tabla-tiempos-emision-ejecucion-escritu",
+   "proposito-de-la-segmentacion-software-software-pipelining-te",
+   "secuencia-de-10-instrucciones-para-simulacion-tomasulo-probl"
+  ],
+  "resumenes": [
+   "Este trozo contiene el examen final de Arquitectura de Computadores (curso 2024/25, convocatoria ordinaria): 30 preguntas tipo test y el enunciado del Problema 1. El test cubre conceptos fundamentales: diferencia ISA/organización, CPI y ley de Amdahl, cálculo de MIPS pico, dependencias en pipeline (RAW, WAR, WAW), bloques básicos, segmentación software, Marcador (Scoreboard), algoritmo Tomasulo, predictores de salto correlacionados y BTB, bits de veneno y ROB, superscalar y VLIW, eficiencia energética y benchmarks, arquitecturas RISC/CISC y registro-registro, sistemas empotrados en tiempo real",
+   "Este trozo contiene tres problemas completos de un examen de Arquitectura de Computadores (Enero 2025). El Problema 1 (continuación) pide analizar detenciones, CPI y desenrollamiento de bucles con salto retardado en un procesador con características específicas de pipeline y unidades funcionales. El Problema 2 evalúa predicción de saltos (predictor de 1 bit y correlacionado de dos niveles (1,1)) sobre un bucle MIPS64 que cuenta ceros y pares en una secuencia dada (0,1,0,2,0,3). El Problema 3 requiere simular la ejecución en un procesador Tomasulo con especulación, ROB, latencias FP concretas ("
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Enero2026.pdf": {
+  "md5": "c775a4a916262a487f05eca54932cbd1",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "accion-ante-fallo-en-btb-con-salto-tomado-real-predecir-nt-p",
+   "aplicacion-de-la-ley-de-amdahl-para-acelerar-una-fraccion-de",
+   "bits-venenosos-en-carga-especulativa-excepcion-diferida-hast",
+   "bucle-escalar-original-para-optimizacion-vliw-enero-2026-pro",
+   "calculo-de-mips-a-partir-de-mezcla-de-instrucciones-cpi-y-fr",
+   "calculo-speedup-vliw-vs-escalar-para-examen-enero-2026-probl",
+   "clasificacion-de-dependencias-en-bucle-antidependencia-war-e",
+   "compatibilidad-binaria-vliw-2-0-con-latencia-fadd-d-aumentad",
+   "configuracion-tomasulo-con-especulacion-para-examen-enero-20",
+   "definicion-de-dependencia-de-nombre-waw-y-war",
+   "especificacion-vliw-1-0-para-examen-enero-2026-problema-3",
+   "formulas-de-rendimiento-cpi-tiempo-mips-mflops-speedup-amdah",
+   "latencias-vliw-1-0-para-examen-enero-2026-problema-3",
+   "peticion-de-instantanea-rob-en-ciclo-6-para-examen-enero-202",
+   "planificacion-estatica-el-compilador-reordena-para-reducir-d",
+   "predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce",
+   "secuencia-de-instrucciones-para-simulacion-tomasulo-problema",
+   "segmentacion-software-software-pipelining-para-bucle-conteo",
+   "traza-de-predictor-correlacionado-1-1-con-historia-global-de"
+  ],
+  "resumenes": [
+   "Este trozo es un examen de Arquitectura de Computadores (curso 2025/26) que incluye 30 preguntas tipo test y un problema de segmentación software. El test cubre: distinción ISA/ORG, ley de Amdahl, cálculo de MIPS, clasificación de dependencias (RAW/WAR/WAW), planificación estática vs dinámica, funcionamiento de Scoreboard y Tomasulo, riesgos en pipeline RISC-V, predictores de salto (1 bit, BTB, correlacionado), Tomasulo especulativo con bits venenosos, características de superescalar y VLIW, cuota de mercado RISC-V, disipación de potencia, arquitecturas load-store, comparación ARM/RISC-V, clas",
+   "Este trozo contiene dos problemas completos de un examen de Arquitectura de Computadores (Enero 2026). El Problema 2 pide simular la ejecución de 7 instrucciones FP en un Tomasulo con especulación (ROB 4 entradas, 2 RS/unidad FP, 2 load buffers, latencias: load/store 2c, fmul 5c, fadd 2c, fdiv 10c, CDB exclusivo, recursos liberados al ciclo siguiente) y mostrar el ROB en ciclo 6. El Problema 3 pide optimizar un bucle Y[i]=(X[i]+K)*X[i] en VLIW 1.0 (5 slots: Mem1, Mem2, PF1, PF2, Int/Salto, fully pipelined, latencias PF→PF 3, PF→fsd 3, fld→PF 1, delayed branch 1 ciclo), desenrollar 4×, planific"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/January 2025.pdf": {
+  "md5": "710ec66818c19f05e8e28b8d82de7ec0",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "calculo-de-numero-minimo-de-instrucciones-largas-en-vliw-dad",
+   "calculo-de-speedup-por-desenrollado-de-bucle-en-superescalar",
+   "caracteristicas-de-arquitectura-simd-frente-a-mimd",
+   "comparacion-de-eficiencia-frecuencial-entre-procesadores-usa",
+   "comportamiento-de-bits-de-veneno-ante-instruccion-no-especul",
+   "ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad",
+   "estados-iniciales-de-predictores-en-ejercicio-2-un-nivel-y-d",
+   "etiquetado-de-saltos-b1-b2-b3-en-bucle-contador-ceros-pares",
+   "interpretacion-del-bhr-en-predictor-correlativo-2-3",
+   "nomenclatura-del-campo-value-en-entradas-del-rob-tomasulo-co",
+   "planificacion-de-bucle-jacobsthal-en-pipeline-mips64-con-uni",
+   "predictor-correlacionante-de-dos-niveles-1-1-con-bhr-global",
+   "predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est",
+   "procesador-tomasulo-con-especulacion-caracteristicas-de-late",
+   "secuencia-de-10-instrucciones-mips64-fp-para-ejercicio-3-tom",
+   "secuencia-de-datos-y-codigo-mips64-para-ejercicio-2-de-predi",
+   "significado-del-campo-value-en-entrada-rob-con-formato-m-4-r",
+   "simulacion-de-ejecucion-tomasulo-con-tabla-de-ciclos-issue-e",
+   "slowdown-en-procesadores-con-multithreading-frente-a-monocor",
+   "transicion-de-predictor-de-3-bits-inicializado-en-100-a-001"
+  ],
+  "resumenes": [
+   "Este trozo es el examen final de Arquitectura de Computadores (enero 2025) con 30 preguntas tipo test y un ejercicio de planificación de bucles. El test cubre: ISA vs organización, dependencias de CPI, ley de Amdahl, cálculo de MIPS, dependencias en pipeline, bloques básicos, planificación por software, Scoreboard, Tomasulo, estaciones de reserva, predictores correlativos y BTB, contadores de 3 bits, instrucciones especulativas, formato de entrada ROB, bits de veneno, CPI ideal en superescalar, etapas commit/issue, speedup por desenrollado, eficiencia VLIW, eficiencia frecuencial en benchmarks",
+   "Este trozo contiene dos ejercicios del examen final de Arquitectura de Computadores (enero 2025). El ejercicio 2 pide analizar la predicción de saltos (predictor de un nivel de 1 bit y predictor correlacionante de dos niveles (1,1)) sobre un bucle MIPS64 que cuenta ceros y pares en la secuencia 0,1,0,2,0,3. El ejercicio 3 pide simular la ejecución en un procesador Tomasulo con especulación (latencias: carga/almacén 1 ciclo, FP mul 5, FP add 2, CDB exclusivo, recursos liberados no reutilizables hasta el siguiente ciclo) y rellenar el ROB en el ciclo 12 con una nomenclatura concreta para el camp"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/January2016.pdf": {
+  "md5": "d744cbf6bff38224877e622b2fd039c6",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw",
+   "calculo-de-tiempo-de-ejecucion-a-partir-de-instrucciones-cpi",
+   "caracteristicas-clave-de-procesadores-vliw",
+   "como-resolver-planificacion-vliw-con-desenrollado-y-latencia",
+   "definicion-de-dependencia-de-datos-raw-entre-instrucciones",
+   "delayed-branch-en-vliw-y-su-efecto-en-planificacion",
+   "dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr",
+   "dependencias-en-fragmento-de-codigo-fp-mips-l-d-add-s-add-s",
+   "diferencia-entre-arquitectura-y-organizacion-de-computadores",
+   "eliminacion-de-dependencias-de-nombre-mediante-renombrado-de",
+   "factor-de-mejora-necesario-segun-ley-de-amdahl-para-un-speed",
+   "forwarding-en-vliw-estatico-y-latencias-efectivas",
+   "parametros-de-temporizacion-vliw-examen-enero-2016",
+   "planificacion-estatica-vs-dinamica-de-codigo",
+   "problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa",
+   "valores-iniciales-de-registros-del-bucle-examen-enero-2016",
+   "waw-hazard-corresponde-a-dependencia-de-salida"
+  ],
+  "resumenes": [
+   "Este trozo contiene el examen final de Arquitectura de Computadores de enero 2016: 30 preguntas tipo test (unidades 1-8 y 5-8) y tres ejercicios. El test cubre CPI/tiempo ejecución, ley de Amdahl, arquitectura vs organización, VLIW, dependencias de datos (RAW, WAW, WAR), renombrado de registros, algoritmo Tomasulo, planificación estática/dinámica, predicción de saltos (dos niveles, gselect, BTAC), Tomasulo especulativo con bits de veneno, buffer de reordenación (ROB), superescalar CPI ideal, etapa commit, ARM, disipación potencia, Pentium II/Celeron/Xeon, multicore, taxonomía Flynn (GPU=SIMD),",
+   "Este trozo contiene el Ejercicio 3 de un examen de arquitectura de computadores (enero 2016). Plantea un problema de planificación VLIW: un bucle con instrucciones de punto flotante (carga, almacenamiento, ADD.D, MUL.D, DIV.D) e enteras (DADDUI, BNEZ) que debe desenrollarse 4 veces y planificarse en un procesador VLIW de 4 operaciones/ciclo con forwarding y salto retardado. Se dan latencias: 2 ciclos en MEM para carga/almacenamiento, 2 ciclos en EX para aritmética, 1 ciclo para el resto. Se pide el diagrama de ciclos 1-20 y las operaciones por ciclo alcanzadas."
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/January2017.pdf": {
+  "md5": "5a2fb9da24e789564b2dc9da01623555",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "analisis-de-dependencias-en-bucle-con-indices-de-array-pregu",
+   "calculo-de-bits-en-predictor-correlacionado-de-dos-niveles-p",
+   "calculo-de-factor-de-mejora-con-ley-de-amdahl-pregunta-3-exa",
+   "calculo-de-mips-para-dos-procesadores-con-distinto-cpi-y-fre",
+   "calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d",
+   "codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017",
+   "configuracion-vliw-del-examen-ac-enero-2017-6-unidades-laten",
+   "definicion-de-arquitectura-de-computadores-frente-a-organiza",
+   "dependencia-de-salida-waw-y-antidependencia-war-definiciones",
+   "instrucciones-predicadas-eliminan-saltos-y-prediccion-pregun",
+   "salto-retardado-delayed-branch-con-1-slot-de-retardo-en-vliw",
+   "scoreboard-riesgos-estructurales-en-paso-de-escritura-de-res",
+   "tabla-de-planificacion-vliw-vacia-del-examen-6-columnas-fila",
+   "tecnicas-ilp-estaticas-vs-dinamicas-pregunta-7-y-9",
+   "tomasulo-especulativo-excepcion-en-instruccion-especulativa"
+  ],
+  "resumenes": [
+   "Este trozo contiene el examen final de Arquitectura de Computadores de enero 2017, con 30 preguntas tipo test y dos ejercicios prácticos. El test cubre: arquitectura vs organización, ley de Amdahl, cálculo de MIPS, dependencias de datos (RAW, WAR, WAW), técnicas ILP estáticas/dinámicas, planificación por software, algoritmo Scoreboard, predictores de salto correlacionados, instrucciones predicadas, versión especulativa de Tomasulo con bits de veneno y ROB, superscalar y CPI ideal, commit stage, multicore, ARM, Sunway, disipación de potencia, tipos de procesadores, GRID/Cloud/SaaS, y clasificac",
+   "Este trozo contiene el Ejercicio 3 del examen final de Arquitectura de Computadores (enero 2017). Plantea la planificación (scheduling) de un bucle en un procesador VLIW con 6 unidades de ejecución: 2 enteras (latencia 1), 2 de memoria (latencia 3, totalmente segmentadas), 2 de punto flotante (una suma y otra multiplicación, latencia 4). El procesador soporta forwarding y salto retardado con 1 slot de retardo. El bucle incluye 12 instrucciones: cargas, almacenamientos, operaciones FP, aritmética entera de actualización de índices y un salto condicional. Se pide rellenar una tabla de planificac"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/January2018.pdf": {
+  "md5": "3f611fd8e3a9a8b09d788156ec7b481f",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "buffer-de-carga-en-tomasulo-especulativo",
+   "bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo",
+   "calculo-de-mips-a-partir-de-frecuencia-cpi-por-tipo-y-mezcla",
+   "calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl",
+   "definicion-de-dependencia-de-salida-waw-entre-dos-instruccio",
+   "dependencias-en-el-bucle-de-ejemplo-vliw-examen-ac-2018",
+   "desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac",
+   "implementacion-de-la-bht-en-predictor-dinamico-de-2-bits",
+   "manejo-de-riesgos-estructurales-en-scoreboard",
+   "metrica-operaciones-por-ciclo-opc-en-vliw",
+   "numero-de-bhr-en-un-predictor-correlacionador-de-dos-niveles",
+   "parametros-de-temporizacion-del-ejercicio-vliw-examen-enero",
+   "planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en",
+   "proposito-del-desenrollado-de-bucles-loop-unrolling",
+   "que-es-un-bloque-basico-basic-block-en-ilp",
+   "recuperacion-ante-fallo-de-prediccion-de-salto-misprediction"
+  ],
+  "resumenes": [
+   "Examen final de Arquitectura de Computadores (enero 2018) con 30 preguntas tipo test y dos ejercicios prácticos. El test cubre: ley de Amdahl, cálculo de MIPS, organización vs arquitectura, VLIW, dependencias (datos, salida, anti), técnicas ILP (desenrollado, predicción, especulación), bloques básicos, Scoreboard, Tomasulo (CDB, versión especulativa, bits veneno), predictores de salto (BHT, correlacionador 2,1), superscalar (commit, políticas de issue, estructuras), Intel P6 (ROB), multicore, CORTEX-A9, hilos, SIMD, cloud y GPGPU/SIMT. Los ejercicios piden: análisis de dependencias y pipelinin",
+   "Este trozo contiene el Ejercicio 3 de un examen de Arquitectura de Computadores (enero 2018). Pide planificar un bucle para un procesador VLIW de 4 operaciones por instrucción (sin restricciones de tipo por ALU), calcular operaciones por ciclo, desenrollar 3 veces el bucle y compactar el código VLIW, y finalmente calcular el speedup entre la versión original y la desenrollada. Se dan latencias: 2 ciclos MEM para carga/almacenamiento, 1 ciclo EX para ADD.D, 2 ciclos EX para MUL.D, y no hay salto retardado."
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/January2019.pdf": {
+  "md5": "80fd3e5fdd5813b7e2da1530c9e5b4d9",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "calculo-de-bits-en-predictor-de-dos-niveles-n-m-con-k-entrad",
+   "codigo-del-bucle-vliw-para-planificacion-cargas-fp-mul-s-add",
+   "configuracion-vliw-de-6-unidades-funcionales-con-latencias-a",
+   "desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para",
+   "especulacion-en-hardware-resultado-definitivo-en-el-paso-de",
+   "instruccion-especulativa-ejecutada-antes-de-saber-si-realmen",
+   "paso-de-commit-en-superscalar-actualizacion-de-registros",
+   "planificacion-dinamica-sin-especulacion-orden-de-ejecucion-d",
+   "planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d",
+   "predictor-hibrido-de-dos-predictores-locales-con-selector-po",
+   "procesadores-superscalar-son-maquinas-sisd",
+   "simulacion-paso-a-paso-del-predictor-hibrido-para-el-bucle-d",
+   "speedup-no-tiene-unidades-de-medida",
+   "trace-scheduling-traza-secuencia-mas-probable-de-bloques-bas",
+   "uso-de-delayed-branch-con-1-delay-slot-en-vliw-para-ocultar",
+   "ventana-de-instrucciones-en-superscalar-instrucciones-decodi",
+   "vliw-el-compilador-empaqueta-varias-operaciones-en-una-instr"
+  ],
+  "resumenes": [
+   "Este trozo contiene un examen final de Arquitectura de Computadores (enero 2019) con 30 preguntas tipo test y un ejercicio de algoritmo de Tomasulo (con y sin especulación). El test cubre: ley de Amdahl, speedup, cálculo de MIPS, clasificación de procesadores (SISD/SIMD/MIMD), VLIW, superscalar, dependencias en pipeline, planificación por software, trace scheduling, planificación dinámica, predicción de saltos de dos niveles, especulación, bits de veneno, ROB, paso de commit, ventana de instrucciones, recuperación tras fallo de predicción, disipación de potencia, microarquitectura Intel P6, SM",
+   "Este trozo contiene dos ejercicios de un examen de Arquitectura de Computadores (enero 2019). El ejercicio 2 plantea un predictor de saltos híbrido que combina un predictor local de 1 bit y otro de 3 bits por instrucción de salto, seleccionados mediante un contador saturante de 2 bits por salto; se pide simular su comportamiento para las dos ramas (B1, B2) de un bucle MIPS64 que recorre los seis primeros números de Fibonacci. El ejercicio 3 pide planificar (schedule) un bucle en un procesador VLIW con 6 unidades funcionales (2 enteras, 2 memoria, 1 FP adder, 1 FP multiplier) con latencias dada"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/January2020.pdf": {
+  "md5": "5b97434610dd410c952e4aa5e6d8349f",
+  "hechos": 2,
+  "total": 2,
+  "notas": [
+   "aplicacion-de-la-ley-de-amdahl-para-speedup-global-mejorando",
+   "calculo-de-coste-efectividad-rendimiento-precio-entre-dos-co",
+   "calculo-de-mips-para-comparar-dos-computadores-con-mismo-isa",
+   "como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul",
+   "como-rellenar-la-tabla-de-estado-en-tomasulo-con-especulacio",
+   "definicion-de-procesador-vliw",
+   "dependencia-de-salida-waw-en-pipeline-con-forwarding",
+   "desenrollado-de-bucles-loop-unrolling-en-superescalar-con-re",
+   "distincion-entre-arquitectura-organizacion-y-tecnologia-en-p",
+   "planificacion-en-scoreboard-orden-de-ejecucion",
+   "planificacion-en-superescalar-3-vias-entero-salto-memoria-fp",
+   "planificacion-por-software-software-pipelining-y-desenrollad",
+   "predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y",
+   "resultados-reales-de-saltos-b1-y-b2-en-bucles-anidados-con-r",
+   "riesgo-raw-read-after-write-y-su-causa",
+   "secuencia-de-instrucciones-fp-del-examen-para-tomasulo-10-in",
+   "simulacion-paso-a-paso-del-predictor-hibrido-con-contadores",
+   "superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr",
+   "tecnica-de-mejora-de-rendimiento-en-sisd",
+   "uso-de-ranura-de-retardo-de-1-ciclo-en-superescalar-para-ocu"
+  ],
+  "resumenes": [
+   "Este trozo contiene un examen final de Arquitectura de Computadores (enero 2020) con 30 preguntas tipo test y dos ejercicios prácticos. El test cubre conceptos fundamentales: distinción arquitectura/organización/tecnología, VLIW, SISD/ILP, cálculo de MIPS y speedup (ley de Amdahl), coste-efectividad, riesgos de pipeline (RAW/WAR/WAW), forwarding, planificación por software, Scoreboard, predicción de saltos de dos niveles, especulación con poison bits, Reorder Buffer, desambiguación de memoria, VLIW, superscalar, arquitecturas load/store, multicore, GPU/TPU, computación cuántica, multihilo, CUD",
+   "Este trozo contiene tres ejercicios de un examen de Arquitectura de Computadores (enero 2020): (1) completar tablas de estado de instrucciones para el algoritmo de Tomasulo sin y con especulación (ROB de 6 entradas) para una secuencia de 10 instrucciones FP; (2) analizar el comportamiento real de dos saltos anidados (B1, B2) con R1=2, R2=4 y simular un predictor híbrido que combina predictores locales de 1 y 2 bits con un contador de selección de 2 bits por salto; (3) planificar código en un superescalar 3-vías (entero/salto, memoria, FP) con latencias ADD.D=2, MUL.D=4, forwarding y ranura de "
+  ]
  }
 }

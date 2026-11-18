@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "planificacion-estatica"
-notas: 17
+notas: 18
 ---
 # planificacion-estatica
 
@@ -26,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-estatica» 
 
 - 💡 [[memoria/conocimiento/conceptos/consideraciones-del-desenrollamiento-de-bucles-sobrecarga-ta|Consideraciones del desenrollamiento de bucles: sobrecarga, tamaño de código y presión de registros]]
 - 💡 [[memoria/conocimiento/conceptos/diferencia-fundamental-desenrollamiento-vs-segmentacion-soft|Diferencia fundamental: desenrollamiento vs segmentación software]]
+- 💡 [[memoria/conocimiento/conceptos/forwarding-en-vliw-estatico-y-latencias-efectivas|Forwarding en VLIW estático y latencias efectivas]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-de-trazas-trace-scheduling-para-condicionales|Planificación de trazas (trace scheduling) para condicionales en bucles]]
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-planificacion-estatica|Salto retardado (delayed branch) en planificación estática]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/saltos-retardados-delayed-branches-en-planificacion-estatica|Saltos retardados (delayed branches) en planificación estática]] · ⚠️ propuesto
@@ -38,4 +39,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion-estatica» 
 
 ## Temas relacionados
 
-[[ac]] · [[risc-v]] · [[desenrollamiento]] · [[loop-unrolling]] · [[software-pipelining]] · [[ilp]] · [[segmentacion-software]] · [[tradeoffs]] · [[trace-scheduling]] · [[delayed-branch]] · [[comparativa]] · [[compilador]]
+[[ac]] · [[risc-v]] · [[desenrollamiento]] · [[loop-unrolling]] · [[software-pipelining]] · [[ilp]] · [[segmentacion-software]] · [[tradeoffs]] · [[trace-scheduling]] · [[delayed-branch]] · [[comparativa]] · [[forwarding]]

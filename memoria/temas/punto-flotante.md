@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "punto-flotante"
-notas: 10
+notas: 11
 ---
 # punto-flotante
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «punto-flotante» (este ar
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/dependencias-en-codigo-mips64-fp-l-d-mul-s-add-s-s-d|Dependencias en código MIPS64 FP: L.D → MUL.S → ADD.S → S.D]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/representacion-del-estado-del-marcador-scoreboard-para-instr|Representación del estado del marcador (scoreboard) para instrucciones FP]]
 - 💡 [[memoria/conocimiento/conceptos/secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c|Secuencia de instrucciones y latencias en ejemplo Tomasulo (ciclos 7-13)]]
 - 💡 [[memoria/conocimiento/conceptos/simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo|Simulación ciclo a ciclo del marcador (scoreboard) de Tomasulo con instrucciones FP]]
@@ -28,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «punto-flotante» (este ar
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[scoreboard]] · [[arquitectura]] · [[latencia]] · [[simulacion]] · [[planificacion-dinamica]] · [[uf]] · [[iniciacion]] · [[paralelismo-instruccion]] · [[pipeline]] · [[riscv]]
+[[ac]] · [[tomasulo]] · [[scoreboard]] · [[arquitectura]] · [[latencia]] · [[simulacion]] · [[planificacion-dinamica]] · [[dependencias]] · [[mips64]] · [[raw]] · [[uf]] · [[iniciacion]]

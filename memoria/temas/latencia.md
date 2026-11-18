@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latencia"
-notas: 11
+notas: 13
 ---
 # latencia
 
@@ -28,8 +28,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latencia» (este archivo 
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador|Latencias de unidades funcionales en el ejemplo de marcador (ciclos 3-9)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo|Latencias de unidades funcionales en el ejemplo Tomasulo]]
 - 📊 [[memoria/conocimiento/datos/latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d|Latencias típicas de unidades funcionales FP en ejercicios del temario (ciclos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/latencias-y-segmentacion-de-unidades-funcionales-en-examen-t|Latencias y segmentación de unidades funcionales en examen Tomasulo Enero 2016]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult|Parámetros de pipeline RISC-V FP para ejercicios Tema 2 (multiplicador 3 ciclos, divisor 4/6 ciclos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-temporales-de-pipeline-para-vliw-problema-3b|Parámetros temporales de pipeline para VLIW Problema 3b]]
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[punto-flotante]] · [[throughput]] · [[scoreboard]] · [[arquitectura]] · [[carga]] · [[multiplicacion]] · [[ancho-de-banda]] · [[rendimiento]] · [[cache]] · [[fadd.d]]
+[[ac]] · [[tomasulo]] · [[punto-flotante]] · [[throughput]] · [[scoreboard]] · [[arquitectura]] · [[fp]] · [[carga]] · [[multiplicacion]] · [[pipeline]] · [[ancho-de-banda]] · [[rendimiento]]

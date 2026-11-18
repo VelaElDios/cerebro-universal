@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "correlacion"
-notas: 1
+notas: 2
 ---
 # correlacion
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «correlacion» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/interpretacion-del-bhr-en-predictor-correlacionado-m-n-test|Interpretación del BHR en predictor correlacionado (m,n) (test AC Q12)]]
 
 ## Conceptos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «correlacion» (este archi
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura]] · [[dinamica]] · [[prediccion-saltos]]
+[[ac]] · [[prediccion-saltos]] · [[arquitectura]] · [[dinamica]] · [[bhr]]

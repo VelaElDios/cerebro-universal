@@ -1,11 +1,16 @@
 ---
 tipo: "tema"
 titulo: "metricas"
-notas: 7
+notas: 9
 ---
 # metricas
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw|Cálculo de operaciones por ciclo (IPC) en planificación VLIW]]
+- 🧪 [[memoria/conocimiento/recetas/metrica-operaciones-por-ciclo-opc-en-vliw|Métrica operaciones por ciclo (OPC) en VLIW]]
 
 ## Conceptos
 
@@ -25,4 +30,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[verificacion]] · [[sprint]] · [[grada-colchonera]] · [[saas]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]] · [[ac]] · [[ciclos-por-dato]] · [[planificacion-estatica]] · [[rendimiento]]
+[[ac]] · [[verificacion]] · [[sprint]] · [[rendimiento]] · [[grada-colchonera]] · [[saas]] · [[ipc]] · [[vliw]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]]

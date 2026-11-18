@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "compilador"
-notas: 7
+notas: 10
 ---
 # compilador
 
@@ -15,11 +15,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «compilador» (este archiv
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-de-instrucciones-la-hace-el-compilado|Planificación estática de instrucciones la hace el compilador]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui|Planificación estática vs dinámica de instrucciones en Arquitectura de Computadores]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-planificacion-estatica|Salto retardado (delayed branch) en planificación estática]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-y-instrucciones-predicadas-como-alternativas|Salto retardado y instrucciones predicadas como alternativas a predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-de-las-instrucciones-predicadas|Ventajas e inconvenientes de las instrucciones predicadas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/vliw-el-compilador-empaqueta-varias-operaciones-en-una-instr|VLIW: el compilador empaqueta varias operaciones en una instrucción larga]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[instrucciones-predicadas]] · [[prediccion-saltos]] · [[ilp]] · [[hardware]] · [[planificacion-instrucciones]] · [[delayed-branch]] · [[planificacion-estatica]] · [[arquitectura]] · [[delay-slot]] · [[salto-retardado]] · [[ensamblador]]
+[[ac]] · [[instrucciones-predicadas]] · [[prediccion-saltos]] · [[ilp]] · [[estática]] · [[planificación]] · [[estatica]] · [[planificacion]] · [[hardware]] · [[planificacion-instrucciones]] · [[delayed-branch]] · [[planificacion-estatica]]
