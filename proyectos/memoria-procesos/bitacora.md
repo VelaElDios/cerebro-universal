@@ -10344,3 +10344,16 @@ La compilación y los tests automáticos (verificar.py y revisar_maquetacion.py)
 ## 2026-11-17 23:55 · 🎉 Proyecto terminado
 
 El revisor da por cumplidos todos los criterios de la spec.
+
+## 2026-11-18 · 🔁 Reabierto: los diagramas siguen mal
+
+Javier ha revisado la memoria «terminada» y los diagramas que señaló siguen igual. Las IAs no ven el PDF; por eso ahora la prueba incluye `revisar_figuras.py`: convierte en imagen cada página con un diagrama y Gemini lo mira (regla 19). El paso no pasa hasta que todos los diagramas estén bien.
+
+## Revisión humana (Javier)
+
+Los diagramas NO están arreglados aunque la memoria se dio por terminada:
+- **Figura 3.1 (arquitectura en capas):** siguen las palabras partidas dentro de las cajas («sr-c/services», «repo-sitories», «úni-co fetch», «com-partidas»): poned las cajas más anchas o el texto en dos líneas a mano. Comprobad que ninguna flecha cruza la caja de Datos.
+- **Figura 4.7 (arquitectura del juego):** la caja de config.js sigue tapada por la de juego.js y las flechas verticales atraviesan todas las cajas (armas.js, combate.js...). Rehacedla: cajas separadas, flechas solo entre cajas vecinas o en codo por fuera.
+- **Figura 3.4 (confirmación por correo) y el resto de diagramas de secuencia:** que ninguna etiqueta se monte sobre otra ni sobre las cajas.
+
+Haced caso a lo que diga `revisar_figuras.py`: es lo que se ve de verdad en el PDF.
