@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "hazards"
-notas: 13
+notas: 15
 ---
 # hazards
 
@@ -19,8 +19,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «hazards» (este archivo s
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-nombre-name-dependency-entre-in|Definición de dependencia de nombre (name dependency) entre instrucciones]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist|Dependencia de datos no siempre causa hazard; depende de distancia en pipeline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/diferencia-entre-dependencia-de-datos-raw-antidependencia-wa|Diferencia entre dependencia de datos (RAW), antidependencia (WAR) y dependencia de salida (WAW)]]
 - 💡 [[memoria/conocimiento/conceptos/diferencia-scoreboard-vs-tomasulo-en-resolucion-de-hazards-s|Diferencia Scoreboard vs Tomasulo en resolución de hazards sin especulación]]
+- 💡 [[memoria/conocimiento/conceptos/forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d|Forwarding (adelantamiento) no resuelve todos los riesgos de datos en MIPS multiciclo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/hazard-war-corresponde-a-antidependencia-dependencia-de-nomb|Hazard WAR corresponde a antidependencia (dependencia de nombre)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/planificacion-en-superescalar-grado-2-con-latencias-mem-2-y|Planificación en superescalar grado 2 con latencias MEM=2 y EX=2]]
 - 💡 [[memoria/conocimiento/conceptos/que-es-un-riesgo-war-y-a-que-dependencia-corresponde|Qué es un riesgo WAR y a qué dependencia corresponde]]
@@ -31,4 +33,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «hazards» (este archivo s
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[dependencias]] · [[planificacion-dinamica]] · [[scoreboard]] · [[planificacion-instrucciones]] · [[mips64]] · [[forwarding]] · [[tomasulo]] · [[superescalar]] · [[war]] · [[punto-flotante]]
+[[ac]] · [[pipeline]] · [[dependencias]] · [[forwarding]] · [[planificacion-dinamica]] · [[scoreboard]] · [[planificacion-instrucciones]] · [[mips64]] · [[tomasulo]] · [[mips]] · [[superescalar]] · [[war]]

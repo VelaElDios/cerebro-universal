@@ -121,3 +121,15 @@ Trozos leídos: 22 · notas nuevas o ampliadas: 196
 - ✅ `repo:datos/temarios/AC/examenes/Junio2025.pdf` aprendido entero: 17 notas → [[fuente-junio2025-examenes]]
 - ✅ `repo:datos/temarios/AC/examenes/Junio2026.pdf` aprendido entero: 20 notas → [[fuente-junio2026-examenes]]
 - ✅ `repo:datos/temarios/AC/examenes/Noviembre2011.pdf` aprendido entero: 10 notas → [[fuente-noviembre2011-examenes]]
+
+## 2026-11-18 17:29 · 📚 Aprendizaje
+
+Trozos leídos: 5 · notas nuevas o ampliadas: 48
+
+**Repos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100 · datos @ 99183d8 2026-11-18 14:04:44 +0000
+
+- ✅ `repo:datos/temarios/AC/examenes/Noviembre2012.pdf` aprendido entero: 10 notas → [[fuente-noviembre2012-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Noviembre2013.pdf` aprendido entero: 8 notas → [[fuente-noviembre2013-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Noviembre2014A.pdf` aprendido entero: 10 notas → [[fuente-noviembre2014a-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Noviembre2014B.pdf` aprendido entero: 10 notas → [[fuente-noviembre2014b-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Octubre2010.pdf` aprendido entero: 10 notas → [[fuente-octubre2010-examenes]]

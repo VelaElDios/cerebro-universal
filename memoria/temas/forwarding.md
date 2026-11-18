@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "forwarding"
-notas: 11
+notas: 12
 ---
 # forwarding
 
@@ -22,6 +22,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «forwarding» (este archiv
 
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-en-pipeline-con-forwarding|Dependencia de salida (WAW) en pipeline con forwarding]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien|Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d|Forwarding (adelantamiento) no resuelve todos los riesgos de datos en MIPS multiciclo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/forwarding-de-resultado-en-ciclo-siguiente-al-write-modelo-s|Forwarding de resultado en ciclo siguiente al Write (modelo superscalar examen)]]
 - 💡 [[memoria/conocimiento/conceptos/forwarding-en-vliw-estatico-y-latencias-efectivas|Forwarding en VLIW estático y latencias efectivas]]
 - 💡 [[memoria/conocimiento/conceptos/riesgo-load-use-en-pipeline-mips-con-forwarding|Riesgo load-use en pipeline MIPS con forwarding]] · ⚠️ propuesto
@@ -32,4 +33,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «forwarding» (este archiv
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[mips64]] · [[dependencias]] · [[latencias]] · [[hazards]] · [[stalls]] · [[waw]] · [[superscalar]] · [[planificacion-estatica]] · [[vliw]] · [[mips]]
+[[ac]] · [[pipeline]] · [[hazards]] · [[mips64]] · [[dependencias]] · [[mips]] · [[latencias]] · [[stalls]] · [[waw]] · [[superscalar]] · [[planificacion-estatica]] · [[vliw]]

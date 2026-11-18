@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "mips"
-notas: 29
+notas: 31
 ---
 # mips
 
@@ -26,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-mips-pico-a-partir-de-frecuencia-y-cpi-minimo|Cómo calcular MIPS pico a partir de frecuencia y CPI mínimo]]
 - 🧪 [[memoria/conocimiento/recetas/dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema|Dependencias en bucle MIPS64 de encriptación ASCIIZ (Problema 1)]]
 - 🧪 [[memoria/conocimiento/recetas/ejercicios-de-cpi-mips-y-tiempo-de-ejecucion-con-mezcla-de-i|Ejercicios de CPI, MIPS y tiempo de ejecución con mezcla de instrucciones]]
+- 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencia-raw-entre-add-s-consecutivas-p|Identificación de dependencia RAW entre ADD.S consecutivas por registro destino/fuente]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/igualar-mips-entre-dos-maquinas-despejando-frecuencia-de-rel|Igualar MIPS entre dos máquinas despejando frecuencia de reloj (ejercicio 15)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-bucle-encript|Segmentación software (software pipelining) para bucle encriptación MIPS64]]
 
@@ -35,6 +36,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo|Definición de MIPS (Millones de Instrucciones Por Segundo)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo-y-c|Definición de MIPS (Millones de Instrucciones Por Segundo) y coste-efectividad]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr|Dependencia entre iteraciones en bucle con S.D y DADDUI sobre R1]]
+- 💡 [[memoria/conocimiento/conceptos/forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d|Forwarding (adelantamiento) no resuelve todos los riesgos de datos en MIPS multiciclo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza|Paradoja MIPS vs tiempo de ejecución: mayor MIPS no garantiza menor tiempo]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r|Penalización de salto en MIPS con resolución en ID y salto retardado: cero ciclos]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]
@@ -47,4 +49,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 
 ## Temas relacionados
 
-[[ac]] · [[rendimiento]] · [[pipeline]] · [[cpi]] · [[dependencias]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[evaluacion-rendimiento]] · [[prediccion-saltos]] · [[banco-registros]] · [[registros]] · [[coste-efectividad]]
+[[ac]] · [[pipeline]] · [[rendimiento]] · [[cpi]] · [[dependencias]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[forwarding]] · [[evaluacion-rendimiento]] · [[prediccion-saltos]] · [[banco-registros]] · [[registros]]

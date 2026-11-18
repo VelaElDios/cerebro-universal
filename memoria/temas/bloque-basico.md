@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bloque-basico» (este arc
 
 ## Temas relacionados
 
-[[ac]] · [[ilp]] · [[salto]] · [[paralelismo-bucle]]
+[[ac]] · [[ilp]] · [[salto]] · [[pipeline]] · [[paralelismo-bucle]]

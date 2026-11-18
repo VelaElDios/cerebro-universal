@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "cdb"
-notas: 11
+notas: 12
 ---
 # cdb
 
@@ -12,6 +12,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «cdb» (este archivo se ge
 - 🧪 [[memoria/conocimiento/recetas/completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8|Completar tabla Tomasulo con una estación por UF (Ejercicio 8)]]
 - 🧪 [[memoria/conocimiento/recetas/primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio|Primeros 3 ciclos Tomasulo con 2 add 1c y 2 mul 4c (Ejercicio 9)]]
 - 🧪 [[memoria/conocimiento/recetas/simulacion-paso-a-paso-de-tomasulo-con-especulacion-tabla-ci|Simulación paso a paso de Tomasulo con especulación (tabla ciclos por etapa)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones|Simulación Tomasulo: tabla estado instrucciones y estaciones de reserva antes de escritura segundo L.D (Problema 2)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm|Tomasulo con CDB no simultáneo 2 RS por UF buffers carga/almacen (Ejercicio 10)]]
 
 ## Decisiones (y por qué)

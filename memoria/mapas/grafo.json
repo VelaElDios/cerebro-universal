@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-18T15:04:18+01:00",
+ "generado": "2026-11-18T17:34:34+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -626,6 +626,19 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin.md"
+  },
+  {
+   "id": "concepto:alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "tipo": "concepto",
+   "titulo": "Alto ILP requiere bajo grado de dependencia entre instrucciones",
+   "temas": [
+    "ac",
+    "dependencias",
+    "ilp"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio.md"
   },
   {
    "id": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
@@ -1407,6 +1420,20 @@
    "ruta": "memoria/conocimiento/conceptos/caracteristicas-del-procesador-vliw-del-examen-enero-2016-pr.md"
   },
   {
+   "id": "concepto:cc-numa-acceso-a-memoria-no-uniforme-con-coherencia-de-cache",
+   "tipo": "concepto",
+   "titulo": "CC-NUMA: acceso a memoria no uniforme con coherencia de caché (pregunta 11)",
+   "temas": [
+    "ac",
+    "coherencia",
+    "multiprocesador",
+    "numa"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/cc-numa-acceso-a-memoria-no-uniforme-con-coherencia-de-cache.md"
+  },
+  {
    "id": "concepto:cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
    "tipo": "concepto",
    "titulo": "Cinco ambientes con cambio de luz, afición y fuerza",
@@ -1451,6 +1478,20 @@
    "ruta": "memoria/conocimiento/conceptos/clasificacion-de-flynn-de-procesador-masivamente-paralelo-mp.md"
   },
   {
+   "id": "concepto:clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta",
+   "tipo": "concepto",
+   "titulo": "Clasificación de GPUs según taxonomía de Flynn: SIMD (pregunta 8)",
+   "temas": [
+    "ac",
+    "flynn",
+    "gpu",
+    "paralelismo"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta.md"
+  },
+  {
    "id": "concepto:clasificacion-de-multiprocesadores-en-taxonomia-de-flynn",
    "tipo": "concepto",
    "titulo": "Clasificación de multiprocesadores en taxonomía de Flynn",
@@ -1477,6 +1518,19 @@
    "ruta": "memoria/conocimiento/conceptos/clasificacion-de-tipos-de-computadores-segun-requisitos-de-d.md"
   },
   {
+   "id": "concepto:cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect",
+   "tipo": "concepto",
+   "titulo": "Cluster de estaciones de trabajo: nodos autónomos interconectados por red de altas prestaciones",
+   "temas": [
+    "ac",
+    "cluster",
+    "sistemas-distribuidos"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect.md"
+  },
+  {
    "id": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
    "tipo": "concepto",
    "titulo": "Cómo trabaja el cerebro (constructor, prueba, revisor)",
@@ -1499,6 +1553,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/comparacion-de-eficiencia-frecuencial-entre-procesadores-usa.md"
+  },
+  {
+   "id": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "tipo": "concepto",
+   "titulo": "Comparación de rendimiento entre procesadores requiere mismo ISA o benchmarks",
+   "temas": [
+    "ac",
+    "comparacion",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/comparacion-de-rendimiento-entre-procesadores-requiere-mismo.md"
   },
   {
    "id": "concepto:comparativa-de-coste-efectividad-entre-sistemas-rendimiento",
@@ -1635,6 +1702,18 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/comportamiento-de-predictor-correlacionado-2-1-con-historia.md"
+  },
+  {
+   "id": "concepto:computador-vectorial-explota-paralelismo-a-nivel-de-datos",
+   "tipo": "concepto",
+   "titulo": "Computador vectorial explota paralelismo a nivel de datos",
+   "temas": [
+    "ac",
+    "paralelismo"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/computador-vectorial-explota-paralelismo-a-nivel-de-datos.md"
   },
   {
    "id": "concepto:condicion-necesaria-para-que-la-especulacion-sea-valida",
@@ -1923,6 +2002,18 @@
    "ruta": "memoria/conocimiento/conceptos/definicion-de-arquitectura-de-computador-visible-al-programa.md"
   },
   {
+   "id": "concepto:definicion-de-arquitectura-de-computadores-en-examen-ac-novi",
+   "tipo": "concepto",
+   "titulo": "Definición de arquitectura de computadores en examen AC Noviembre 2012",
+   "temas": [
+    "ac",
+    "arquitectura"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/definicion-de-arquitectura-de-computadores-en-examen-ac-novi.md"
+  },
+  {
    "id": "concepto:definicion-de-arquitectura-de-computadores-frente-a-organiza",
    "tipo": "concepto",
    "titulo": "Definición de arquitectura de computadores frente a organización",
@@ -1965,7 +2056,8 @@
     "ac",
     "bloque-basico",
     "ilp",
-    "salto"
+    "salto",
+    "pipeline"
    ],
    "proyectos": [],
    "confianza": "verificado",
@@ -1983,6 +2075,20 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/definicion-de-bloque-basico-test-ac-q7.md"
+  },
+  {
+   "id": "concepto:definicion-de-cluster-en-examen-ac-noviembre-2012-pregunta-9",
+   "tipo": "concepto",
+   "titulo": "Definición de cluster en examen AC Noviembre 2012 (pregunta 9)",
+   "temas": [
+    "ac",
+    "cluster",
+    "paralelismo",
+    "sistemas distribuidos"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/definicion-de-cluster-en-examen-ac-noviembre-2012-pregunta-9.md"
   },
   {
    "id": "concepto:definicion-de-dependencia-de-datos-raw-entre-instrucciones",
@@ -2215,6 +2321,31 @@
    "ruta": "memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo.md"
   },
   {
+   "id": "concepto:definicion-de-organizacion-de-computador-frente-a-arquitectu",
+   "tipo": "concepto",
+   "titulo": "Definición de organización de computador frente a arquitectura",
+   "temas": [
+    "ac",
+    "arquitectura"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/definicion-de-organizacion-de-computador-frente-a-arquitectu.md"
+  },
+  {
+   "id": "concepto:definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall",
+   "tipo": "concepto",
+   "titulo": "Definición de paralelismo a nivel de bucle (loop-level parallelism)",
+   "temas": [
+    "ac",
+    "bucles",
+    "paralelismo"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall.md"
+  },
+  {
    "id": "concepto:definicion-de-paralelismo-a-nivel-de-threads-tlp-frente-a-il",
    "tipo": "concepto",
    "titulo": "Definición de paralelismo a nivel de threads (TLP) frente a ILP y DLP",
@@ -2408,6 +2539,33 @@
    "ruta": "memoria/conocimiento/conceptos/dependencia-de-datos-entre-iteraciones-en-bucle-con-actualiz.md"
   },
   {
+   "id": "concepto:dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist",
+   "tipo": "concepto",
+   "titulo": "Dependencia de datos no siempre causa hazard; depende de distancia en pipeline",
+   "temas": [
+    "ac",
+    "dependencias",
+    "hazards",
+    "pipeline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist.md"
+  },
+  {
+   "id": "concepto:dependencia-de-datos-raw-instruccion-i-produce-resultado-que",
+   "tipo": "concepto",
+   "titulo": "Dependencia de datos (RAW): instrucción i produce resultado que usa j",
+   "temas": [
+    "ac",
+    "dependencias",
+    "raw"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/dependencia-de-datos-raw-instruccion-i-produce-resultado-que.md"
+  },
+  {
    "id": "concepto:dependencia-de-datos-verdadera-definicion-y-ejemplo-en-bucle",
    "tipo": "concepto",
    "titulo": "Dependencia de datos verdadera definición y ejemplo en bucle",
@@ -2478,6 +2636,22 @@
    "ruta": "memoria/conocimiento/conceptos/dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr.md"
   },
   {
+   "id": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "tipo": "concepto",
+   "titulo": "Dependencia entre S.D y DADDUI en bucle es por R1 entre iteraciones",
+   "temas": [
+    "ac",
+    "antidependencia",
+    "bucles",
+    "dependencias",
+    "pipeline",
+    "war"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter.md"
+  },
+  {
    "id": "concepto:dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien",
    "tipo": "concepto",
    "titulo": "Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)",
@@ -2533,6 +2707,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/dependencias-de-nombre-war-waw-se-eliminan-con-renombramient.md"
+  },
+  {
+   "id": "concepto:dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra",
+   "tipo": "concepto",
+   "titulo": "Dependencias de nombre (WAR, WAW) se eliminan mediante renombramiento",
+   "temas": [
+    "ac",
+    "dependencias-nombre",
+    "renombramiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra.md"
   },
   {
    "id": "concepto:dependencias-en-bucle-mips-de-carga-modificacion-almacenamie",
@@ -2674,7 +2861,10 @@
     "ac",
     "bucles",
     "optimizacion",
-    "pipeline"
+    "pipeline",
+    "desenrollamiento",
+    "ilp",
+    "loop unrolling"
    ],
    "proyectos": [],
    "confianza": "propuesto",
@@ -2726,6 +2916,20 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr.md"
+  },
+  {
+   "id": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "tipo": "concepto",
+   "titulo": "Detenciones en pipeline afectan negativamente a prestaciones",
+   "temas": [
+    "ac",
+    "pipeline",
+    "rendimiento",
+    "riesgos"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/detenciones-en-pipeline-afectan-negativamente-a-prestaciones.md"
   },
   {
    "id": "concepto:diferencia-clave-entre-ejecucion-fuera-de-orden-sin-y-con-re",
@@ -3056,6 +3260,31 @@
    "ruta": "memoria/conocimiento/conceptos/ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs.md"
   },
   {
+   "id": "concepto:el-desenrollamiento-de-bucles-reduce-principalmente-los-ries",
+   "tipo": "concepto",
+   "titulo": "El desenrollamiento de bucles reduce principalmente los riesgos de control (saltos)",
+   "temas": [
+    "ac",
+    "pipeline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/el-desenrollamiento-de-bucles-reduce-principalmente-los-ries.md"
+  },
+  {
+   "id": "concepto:el-marcador-scoreboard-permite-emitir-instrucciones-independ",
+   "tipo": "concepto",
+   "titulo": "El Marcador (Scoreboard) permite emitir instrucciones independientes mientras una espera",
+   "temas": [
+    "ac",
+    "pipeline",
+    "tomasulo"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/el-marcador-scoreboard-permite-emitir-instrucciones-independ.md"
+  },
+  {
    "id": "concepto:el-renombrado-de-registros-evita-dependencias-de-nombre-war",
    "tipo": "concepto",
    "titulo": "El renombrado de registros evita dependencias de nombre (WAR/WAW)",
@@ -3095,7 +3324,7 @@
     "pipeline"
    ],
    "proyectos": [],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-nombre-mediante-renombramient.md"
   },
   {
@@ -3125,6 +3354,19 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/en-tomasulo-sin-especulacion-la-emision-se-detiene-ante-ries.md"
+  },
+  {
+   "id": "concepto:entorno-de-paso-de-mensajes-comparte-informacion-mediante-me",
+   "tipo": "concepto",
+   "titulo": "Entorno de paso de mensajes comparte información mediante mensajes",
+   "temas": [
+    "ac",
+    "comunicacion",
+    "paso-mensajes"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/entorno-de-paso-de-mensajes-comparte-informacion-mediante-me.md"
   },
   {
    "id": "concepto:escritura-de-resultado-y-actualizacion-de-qi-en-registro-des",
@@ -3632,6 +3874,21 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/formulas-de-rendimiento-cpi-tiempo-mips-mflops-speedup-amdah.md"
+  },
+  {
+   "id": "concepto:forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d",
+   "tipo": "concepto",
+   "titulo": "Forwarding (adelantamiento) no resuelve todos los riesgos de datos en MIPS multiciclo",
+   "temas": [
+    "ac",
+    "forwarding",
+    "hazards",
+    "mips",
+    "pipeline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d.md"
   },
   {
    "id": "concepto:forwarding-de-resultado-en-ciclo-siguiente-al-write-modelo-s",
@@ -4160,6 +4417,18 @@
    "ruta": "memoria/conocimiento/conceptos/la-bht-almacena-los-bits-de-prediccion-de-todas-las-instrucc.md"
   },
   {
+   "id": "concepto:la-bht-branch-history-table-almacena-bits-de-prediccion-de-s",
+   "tipo": "concepto",
+   "titulo": "La BHT (Branch History Table) almacena bits de predicción de saltos condicionales",
+   "temas": [
+    "ac",
+    "prediccion-saltos"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/la-bht-branch-history-table-almacena-bits-de-prediccion-de-s.md"
+  },
+  {
    "id": "concepto:las-dependencias-de-datos-no-siempre-generan-riesgos-y-se-el",
    "tipo": "concepto",
    "titulo": "Las dependencias de datos no siempre generan riesgos y se eliminan con renombramiento",
@@ -4186,6 +4455,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/las-dependencias-de-datos-verdaderas-no-se-pueden-eliminar-e.md"
+  },
+  {
+   "id": "concepto:las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno",
+   "tipo": "concepto",
+   "titulo": "Las dependencias de nombre (WAR, WAW) se eliminan mediante renombramiento de registros",
+   "temas": [
+    "ac",
+    "pipeline",
+    "tomasulo"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno.md"
   },
   {
    "id": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
@@ -4396,6 +4678,19 @@
    "ruta": "memoria/conocimiento/conceptos/limite-de-la-ley-de-amdahl-mejora-imposible-si-la-fraccion-n.md"
   },
   {
+   "id": "concepto:limite-del-speedup-segun-ley-de-amdahl-pregunta-7",
+   "tipo": "concepto",
+   "titulo": "Límite del speedup según ley de Amdahl (pregunta 7)",
+   "temas": [
+    "ac",
+    "amdahl",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/limite-del-speedup-segun-ley-de-amdahl-pregunta-7.md"
+  },
+  {
    "id": "concepto:linpack-nucleo-de-benchmark-para-sistemas-cientificos-y-base",
    "tipo": "concepto",
    "titulo": "Linpack: núcleo de benchmark para sistemas científicos y base del TOP500",
@@ -4538,6 +4833,19 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-de-un-computador.md"
+  },
+  {
+   "id": "concepto:mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real",
+   "tipo": "concepto",
+   "titulo": "Mejor medida de rendimiento es tiempo de ejecución real",
+   "temas": [
+    "ac",
+    "metricas",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real.md"
   },
   {
    "id": "concepto:mejor-medida-de-rendimiento-tiempo-de-ejecucion-de-programas",
@@ -4707,6 +5015,18 @@
    "ruta": "memoria/conocimiento/conceptos/nomenclatura-del-campo-value-en-entradas-del-rob-tomasulo-co.md"
   },
   {
+   "id": "concepto:notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent",
+   "tipo": "concepto",
+   "titulo": "Notación de predictor de dos niveles (2,1): 1 tabla BHT con entradas de 2 bits",
+   "temas": [
+    "ac",
+    "prediccion-saltos"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent.md"
+  },
+  {
    "id": "concepto:notacion-xax-m-2n-para-predictores-adaptativos-de-dos-nivele",
    "tipo": "concepto",
    "titulo": "Notación XAx(m,2n) para predictores adaptativos de dos niveles (Yeh y Patt 1992)",
@@ -4794,6 +5114,20 @@
    "ruta": "memoria/conocimiento/conceptos/obtencion-de-operandos-y-deteccion-waw-war-en-scoreboard.md"
   },
   {
+   "id": "concepto:openmp-usa-directivas-de-compilacion-para-paralelizar-pregun",
+   "tipo": "concepto",
+   "titulo": "OpenMP usa directivas de compilación para paralelizar (pregunta 10)",
+   "temas": [
+    "ac",
+    "openmp",
+    "paralelismo",
+    "programación"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/openmp-usa-directivas-de-compilacion-para-paralelizar-pregun.md"
+  },
+  {
    "id": "concepto:orden-de-emision-issue-en-scoreboard-orden-de-programa",
    "tipo": "concepto",
    "titulo": "Orden de emisión (issue) en Scoreboard: orden de programa",
@@ -4821,6 +5155,20 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza.md"
+  },
+  {
+   "id": "concepto:paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas",
+   "tipo": "concepto",
+   "titulo": "Paralelismo a nivel de bucle = ejecutar iteraciones solapadas",
+   "temas": [
+    "ac",
+    "bucles",
+    "paralelismo",
+    "pipeline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas.md"
   },
   {
    "id": "concepto:paralelismo-a-nivel-de-bucle-lp-solapamiento-de-iteraciones",
@@ -5783,6 +6131,19 @@
    "ruta": "memoria/conocimiento/conceptos/procesador-b-vliw-4-operaciones-ciclo-sin-restricciones-de-t.md"
   },
   {
+   "id": "concepto:procesador-masivamente-paralelo-pertenece-a-categoria-mimd-d",
+   "tipo": "concepto",
+   "titulo": "Procesador masivamente paralelo pertenece a categoría MIMD de Flynn",
+   "temas": [
+    "ac",
+    "clasificacion flynn",
+    "paralelismo"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/procesador-masivamente-paralelo-pertenece-a-categoria-mimd-d.md"
+  },
+  {
    "id": "concepto:procesador-sin-soporte-para-especulacion-comportamiento-ante",
    "tipo": "concepto",
    "titulo": "Procesador sin soporte para especulación - comportamiento ante excepciones especulativas",
@@ -6397,6 +6758,21 @@
    "ruta": "memoria/conocimiento/conceptos/riesgo-raw-read-after-write-y-su-causa.md"
   },
   {
+   "id": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "tipo": "concepto",
+   "titulo": "Riesgo WAR corresponde a antidependencia",
+   "temas": [
+    "ac",
+    "antidependencia",
+    "pipeline",
+    "riesgos",
+    "war"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/riesgo-war-corresponde-a-antidependencia.md"
+  },
+  {
    "id": "concepto:riesgo-war-dependencia-antidependencia-datos",
    "tipo": "concepto",
    "titulo": "Riesgo WAR = dependencia antidependencia (datos)",
@@ -6797,6 +7173,21 @@
    "ruta": "memoria/conocimiento/conceptos/segmentacion-software-software-pipelining-y-planificacion-de.md"
   },
   {
+   "id": "concepto:segmentacion-software-transforma-bucles-con-iteraciones-depe",
+   "tipo": "concepto",
+   "titulo": "Segmentación software transforma bucles con iteraciones dependientes en independientes (pregunta 12)",
+   "temas": [
+    "ac",
+    "bucles",
+    "ilp",
+    "pipeline",
+    "segmentación software"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/segmentacion-software-transforma-bucles-con-iteraciones-depe.md"
+  },
+  {
    "id": "concepto:seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage",
    "tipo": "concepto",
    "titulo": "Seguridad: bcrypt coste 10, sin secretos en repo, Secret Manager en Cloud Run",
@@ -6934,6 +7325,19 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/sistema-de-rarezas-y-36-jugadores-pbi-p38.md"
+  },
+  {
+   "id": "concepto:sistema-smp-uma-usa-memoria-compartida",
+   "tipo": "concepto",
+   "titulo": "Sistema SMP/UMA usa memoria compartida",
+   "temas": [
+    "ac",
+    "memoria",
+    "multiprocesadores"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/sistema-smp-uma-usa-memoria-compartida.md"
   },
   {
    "id": "concepto:slowdown-en-procesadores-con-multithreading-frente-a-monocor",
@@ -7077,7 +7481,9 @@
    "titulo": "Taxonomía de Flynn: clasificación por flujos de instrucciones y datos",
    "temas": [
     "ac",
-    "taxonomia"
+    "taxonomia",
+    "arquitectura",
+    "paralelismo"
    ],
    "proyectos": [],
    "confianza": "verificado",
@@ -11582,6 +11988,18 @@
    "ruta": "memoria/conocimiento/decisiones/por-que-fusionar-bucles-de-normalizacion-y-suma-de-cuadrados.md"
   },
   {
+   "id": "decision:por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d",
+   "tipo": "decision",
+   "titulo": "Por qué no basta con MIPS y GHz para comparar procesadores de distinta arquitectura",
+   "temas": [
+    "ac",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d.md"
+  },
+  {
    "id": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
    "tipo": "decision",
    "titulo": "Portada única oficial del TFG (elements/portada.tex)",
@@ -12597,6 +13015,61 @@
    "ruta": "memoria/conocimiento/fuentes/fuente-noviembre2011-examenes.md"
   },
   {
+   "id": "fuente:fuente-noviembre2012-examenes",
+   "tipo": "fuente",
+   "titulo": "Noviembre2012 (examenes)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-noviembre2012-examenes.md"
+  },
+  {
+   "id": "fuente:fuente-noviembre2013-examenes",
+   "tipo": "fuente",
+   "titulo": "Noviembre2013 (examenes)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-noviembre2013-examenes.md"
+  },
+  {
+   "id": "fuente:fuente-noviembre2014a-examenes",
+   "tipo": "fuente",
+   "titulo": "Noviembre2014A (examenes)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-noviembre2014a-examenes.md"
+  },
+  {
+   "id": "fuente:fuente-noviembre2014b-examenes",
+   "tipo": "fuente",
+   "titulo": "Noviembre2014B (examenes)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-noviembre2014b-examenes.md"
+  },
+  {
+   "id": "fuente:fuente-octubre2010-examenes",
+   "tipo": "fuente",
+   "titulo": "Octubre2010 (examenes)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-octubre2010-examenes.md"
+  },
+  {
    "id": "fuente:fuente-practica3-practicas",
    "tipo": "fuente",
    "titulo": "Practica3 (Practicas)",
@@ -13005,6 +13478,20 @@
    "ruta": "memoria/conocimiento/recetas/analisis-de-dependencias-entre-instrucciones-de-punto-flotan.md"
   },
   {
+   "id": "receta:analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "tipo": "receta",
+   "titulo": "Análisis de dependencias entre S.D y DADDUI en bucle vectorial",
+   "temas": [
+    "ac",
+    "bucles",
+    "dependencias",
+    "pipeline"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori.md"
+  },
+  {
    "id": "receta:analisis-de-dependencias-raw-war-waw-en-una-iteracion-del-bu",
    "tipo": "receta",
    "titulo": "Análisis de dependencias RAW, WAR, WAW en una iteración del bucle secuencia 0,1,0,2",
@@ -13217,6 +13704,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-mejora-de-coma-flotante.md"
+  },
+  {
+   "id": "receta:aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc",
+   "tipo": "receta",
+   "titulo": "Aplicación de la ley de Amdahl para speedup con mejora fraccional",
+   "temas": [
+    "ac",
+    "amdahl",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc.md"
   },
   {
    "id": "receta:aplicacion-de-la-ley-de-amdahl-para-speedup-global-mejorando",
@@ -13612,6 +14112,19 @@
    "ruta": "memoria/conocimiento/recetas/calculo-de-cpi-en-pipeline-con-stalls-y-tras-optimizacion.md"
   },
   {
+   "id": "receta:calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru",
+   "tipo": "receta",
+   "titulo": "Cálculo de CPI en procesador multiciclo con mezcla de instrucciones",
+   "temas": [
+    "ac",
+    "pipeline",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru.md"
+  },
+  {
    "id": "receta:calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas",
    "tipo": "receta",
    "titulo": "Cálculo de CPI medio, MIPS y speedup entre dos máquinas",
@@ -13686,6 +14199,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/calculo-de-direcciones-y-offsets-en-bucles-vectoriales-risc.md"
+  },
+  {
+   "id": "receta:calculo-de-efectividad-en-coste-ejemplo-yolanda-vs-juan-preg",
+   "tipo": "receta",
+   "titulo": "Cálculo de efectividad en coste: ejemplo Yolanda vs Juan (pregunta 3)",
+   "temas": [
+    "ac",
+    "coste-efectividad",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/calculo-de-efectividad-en-coste-ejemplo-yolanda-vs-juan-preg.md"
   },
   {
    "id": "receta:calculo-de-factor-de-mejora-con-ley-de-amdahl-pregunta-3-exa",
@@ -13952,6 +14478,18 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4.md"
+  },
+  {
+   "id": "receta:calculo-de-mips-pico-peak-mips-dado-frecuencia-y-latencias-d",
+   "tipo": "receta",
+   "titulo": "Cálculo de MIPS pico (peak MIPS) dado frecuencia y latencias de instrucciones",
+   "temas": [
+    "ac",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/calculo-de-mips-pico-peak-mips-dado-frecuencia-y-latencias-d.md"
   },
   {
    "id": "receta:calculo-de-numero-minimo-de-instrucciones-largas-en-vliw-dad",
@@ -14315,7 +14853,9 @@
    "titulo": "Cálculo de tiempo de ejecución con CPI, frecuencia e instrucciones",
    "temas": [
     "ac",
-    "pipeline"
+    "pipeline",
+    "formulas",
+    "rendimiento"
    ],
    "proyectos": [],
    "confianza": "verificado",
@@ -14810,6 +15350,18 @@
    "ruta": "memoria/conocimiento/recetas/como-calcular-mips-pico-peak-mips-eligiendo-la-instruccion-m.md"
   },
   {
+   "id": "receta:como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr",
+   "tipo": "receta",
+   "titulo": "Cómo calcular speedup global con ley de Amdahl cuando una fracción se acelera",
+   "temas": [
+    "ac",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr.md"
+  },
+  {
    "id": "receta:como-calcular-speedup-global-mejorando-un-componente-ley-de",
    "tipo": "receta",
    "titulo": "Cómo calcular speedup global mejorando un componente (Ley de Amdahl)",
@@ -14837,6 +15389,18 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi.md"
+  },
+  {
+   "id": "receta:como-calcular-tiempo-de-ejecucion-a-partir-de-instrucciones",
+   "tipo": "receta",
+   "titulo": "Cómo calcular tiempo de ejecución a partir de instrucciones, CPI y frecuencia",
+   "temas": [
+    "ac",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-calcular-tiempo-de-ejecucion-a-partir-de-instrucciones.md"
   },
   {
    "id": "receta:como-calcular-y-representar-puntos-de-patrones-en-el-grafico",
@@ -15310,6 +15874,18 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-hacer-benchmark-estadistico-con-hyperfine-entre-patrone.md"
+  },
+  {
+   "id": "receta:como-identificar-dependencia-de-datos-entre-iteraciones-en-b",
+   "tipo": "receta",
+   "titulo": "Cómo identificar dependencia de datos entre iteraciones en bucle con carga y actualización de puntero",
+   "temas": [
+    "ac",
+    "pipeline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-identificar-dependencia-de-datos-entre-iteraciones-en-b.md"
   },
   {
    "id": "receta:como-identificar-dependencias-en-el-codigo-del-problema-3-pa",
@@ -17296,6 +17872,22 @@
    "ruta": "memoria/conocimiento/recetas/grado-de-un-superescalar-a-partir-de-su-cpi-ideal.md"
   },
   {
+   "id": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "tipo": "receta",
+   "titulo": "Identificación de dependencia RAW entre ADD.S consecutivas por registro destino/fuente",
+   "temas": [
+    "ac",
+    "dependencias",
+    "mips",
+    "pipeline",
+    "punto-flotante",
+    "raw"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/identificacion-de-dependencia-raw-entre-add-s-consecutivas-p.md"
+  },
+  {
    "id": "receta:identificacion-de-dependencias-loop-carried-en-bucles-c-styl",
    "tipo": "receta",
    "titulo": "Identificación de dependencias loop-carried en bucles (C-style y RISC-V)",
@@ -18983,6 +19575,23 @@
    "ruta": "memoria/conocimiento/recetas/simulacion-tomasulo-especulativa-con-rob-de-4-entradas-exame.md"
   },
   {
+   "id": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "tipo": "receta",
+   "titulo": "Simulación Tomasulo: tabla estado instrucciones y estaciones de reserva antes de escritura segundo L.D (Problema 2)",
+   "temas": [
+    "ac",
+    "buffer almacenamiento",
+    "buffer carga",
+    "cdb",
+    "estaciones reserva",
+    "simulación",
+    "tomasulo"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones.md"
+  },
+  {
    "id": "receta:speedup-combinado-de-mejoras-independientes-en-fracciones-di",
    "tipo": "receta",
    "titulo": "Speedup combinado de mejoras independientes en fracciones disjuntas (ejercicio 13)",
@@ -19023,6 +19632,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/speedup-con-cambio-simultaneo-de-cpi-y-frecuencia-de-reloj.md"
+  },
+  {
+   "id": "receta:speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera",
+   "tipo": "receta",
+   "titulo": "Speedup con ley de Amdahl cuando una fracción se acelera",
+   "temas": [
+    "ac",
+    "amdahl",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera.md"
   },
   {
    "id": "receta:speedup-con-ley-de-amdahl-para-mejora-parcial-de-tarjeta-gra",
@@ -19354,7 +19976,7 @@
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 50,
+   "peso": 51,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -19466,7 +20088,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -19536,7 +20158,7 @@
    "id": "tema:ac",
    "tipo": "tema",
    "titulo": "ac",
-   "peso": 1101,
+   "peso": 1148,
    "ruta": "memoria/temas/ac.md"
   },
   {
@@ -19557,7 +20179,7 @@
    "id": "tema:prediccion-saltos",
    "tipo": "tema",
    "titulo": "prediccion-saltos",
-   "peso": 203,
+   "peso": 205,
    "ruta": "memoria/temas/prediccion-saltos.md"
   },
   {
@@ -19578,21 +20200,21 @@
    "id": "tema:pipeline",
    "tipo": "tema",
    "titulo": "pipeline",
-   "peso": 283,
+   "peso": 298,
    "ruta": "memoria/temas/pipeline.md"
   },
   {
    "id": "tema:tomasulo",
    "tipo": "tema",
    "titulo": "tomasulo",
-   "peso": 212,
+   "peso": 215,
    "ruta": "memoria/temas/tomasulo.md"
   },
   {
    "id": "tema:arquitectura",
    "tipo": "tema",
    "titulo": "arquitectura",
-   "peso": 72,
+   "peso": 75,
    "ruta": "memoria/temas/arquitectura.md"
   },
   {
@@ -19610,18 +20232,25 @@
    "ruta": "memoria/temas/deteccion-salto.md"
   },
   {
-   "id": "tema:bucles",
-   "tipo": "tema",
-   "titulo": "bucles",
-   "peso": 31,
-   "ruta": "memoria/temas/bucles.md"
-  },
-  {
    "id": "tema:dependencias",
    "tipo": "tema",
    "titulo": "dependencias",
-   "peso": 61,
+   "peso": 67,
    "ruta": "memoria/temas/dependencias.md"
+  },
+  {
+   "id": "tema:ilp",
+   "tipo": "tema",
+   "titulo": "ilp",
+   "peso": 51,
+   "ruta": "memoria/temas/ilp.md"
+  },
+  {
+   "id": "tema:bucles",
+   "tipo": "tema",
+   "titulo": "bucles",
+   "peso": 36,
+   "ruta": "memoria/temas/bucles.md"
   },
   {
    "id": "tema:anexos",
@@ -19648,14 +20277,14 @@
    "id": "tema:war",
    "tipo": "tema",
    "titulo": "war",
-   "peso": 16,
+   "peso": 18,
    "ruta": "memoria/temas/war.md"
   },
   {
    "id": "tema:riesgos",
    "tipo": "tema",
    "titulo": "riesgos",
-   "peso": 22,
+   "peso": 24,
    "ruta": "memoria/temas/riesgos.md"
   },
   {
@@ -19771,13 +20400,6 @@
    "ruta": "memoria/temas/vliw.md"
   },
   {
-   "id": "tema:ilp",
-   "tipo": "tema",
-   "titulo": "ilp",
-   "peso": 48,
-   "ruta": "memoria/temas/ilp.md"
-  },
-  {
    "id": "tema:monoprocesador",
    "tipo": "tema",
    "titulo": "monoprocesador",
@@ -19823,7 +20445,7 @@
    "id": "tema:mips",
    "tipo": "tema",
    "titulo": "mips",
-   "peso": 29,
+   "peso": 31,
    "ruta": "memoria/temas/mips.md"
   },
   {
@@ -19970,7 +20592,7 @@
    "id": "tema:cdb",
    "tipo": "tema",
    "titulo": "cdb",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/cdb.md"
   },
   {
@@ -20047,7 +20669,7 @@
    "id": "tema:rendimiento",
    "tipo": "tema",
    "titulo": "rendimiento",
-   "peso": 110,
+   "peso": 123,
    "ruta": "memoria/temas/rendimiento.md"
   },
   {
@@ -20191,10 +20813,31 @@
    "ruta": "memoria/temas/salto-retardado.md"
   },
   {
+   "id": "tema:coherencia",
+   "tipo": "tema",
+   "titulo": "coherencia",
+   "peso": 1,
+   "ruta": "memoria/temas/coherencia.md"
+  },
+  {
+   "id": "tema:multiprocesador",
+   "tipo": "tema",
+   "titulo": "multiprocesador",
+   "peso": 1,
+   "ruta": "memoria/temas/multiprocesador.md"
+  },
+  {
+   "id": "tema:numa",
+   "tipo": "tema",
+   "titulo": "numa",
+   "peso": 1,
+   "ruta": "memoria/temas/numa.md"
+  },
+  {
    "id": "tema:flynn",
    "tipo": "tema",
    "titulo": "flynn",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/flynn.md"
   },
   {
@@ -20208,8 +20851,15 @@
    "id": "tema:paralelismo",
    "tipo": "tema",
    "titulo": "paralelismo",
-   "peso": 6,
+   "peso": 14,
    "ruta": "memoria/temas/paralelismo.md"
+  },
+  {
+   "id": "tema:gpu",
+   "tipo": "tema",
+   "titulo": "gpu",
+   "peso": 1,
+   "ruta": "memoria/temas/gpu.md"
   },
   {
    "id": "tema:tipos-computadores",
@@ -20217,6 +20867,20 @@
    "titulo": "tipos-computadores",
    "peso": 1,
    "ruta": "memoria/temas/tipos-computadores.md"
+  },
+  {
+   "id": "tema:cluster",
+   "tipo": "tema",
+   "titulo": "cluster",
+   "peso": 2,
+   "ruta": "memoria/temas/cluster.md"
+  },
+  {
+   "id": "tema:sistemas-distribuidos",
+   "tipo": "tema",
+   "titulo": "sistemas-distribuidos",
+   "peso": 1,
+   "ruta": "memoria/temas/sistemas-distribuidos.md"
   },
   {
    "id": "tema:cerebro",
@@ -20240,10 +20904,17 @@
    "ruta": "memoria/temas/benchmarking.md"
   },
   {
+   "id": "tema:comparacion",
+   "tipo": "tema",
+   "titulo": "comparacion",
+   "peso": 1,
+   "ruta": "memoria/temas/comparacion.md"
+  },
+  {
    "id": "tema:coste-efectividad",
    "tipo": "tema",
    "titulo": "coste-efectividad",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/coste-efectividad.md"
   },
   {
@@ -20425,7 +21096,7 @@
    "id": "tema:antidependencia",
    "tipo": "tema",
    "titulo": "antidependencia",
-   "peso": 3,
+   "peso": 5,
    "ruta": "memoria/temas/antidependencia.md"
   },
   {
@@ -20464,10 +21135,17 @@
    "ruta": "memoria/temas/optimizacion.md"
   },
   {
+   "id": "tema:sistemas distribuidos",
+   "tipo": "tema",
+   "titulo": "sistemas distribuidos",
+   "peso": 1,
+   "ruta": "memoria/temas/sistemas distribuidos.md"
+  },
+  {
    "id": "tema:hazards",
    "tipo": "tema",
    "titulo": "hazards",
-   "peso": 13,
+   "peso": 15,
    "ruta": "memoria/temas/hazards.md"
   },
   {
@@ -20604,6 +21282,13 @@
    "ruta": "memoria/temas/dependencias-entre-iteraciones.md"
   },
   {
+   "id": "tema:raw",
+   "tipo": "tema",
+   "titulo": "raw",
+   "peso": 9,
+   "ruta": "memoria/temas/raw.md"
+  },
+  {
    "id": "tema:dependencia-datos",
    "tipo": "tema",
    "titulo": "dependencia-datos",
@@ -20621,7 +21306,7 @@
    "id": "tema:forwarding",
    "tipo": "tema",
    "titulo": "forwarding",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/forwarding.md"
   },
   {
@@ -20642,8 +21327,15 @@
    "id": "tema:renombramiento",
    "tipo": "tema",
    "titulo": "renombramiento",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/renombramiento.md"
+  },
+  {
+   "id": "tema:dependencias-nombre",
+   "tipo": "tema",
+   "titulo": "dependencias-nombre",
+   "peso": 2,
+   "ruta": "memoria/temas/dependencias-nombre.md"
   },
   {
    "id": "tema:dependencias-datos",
@@ -20670,21 +21362,14 @@
    "id": "tema:punto-flotante",
    "tipo": "tema",
    "titulo": "punto-flotante",
-   "peso": 16,
+   "peso": 17,
    "ruta": "memoria/temas/punto-flotante.md"
-  },
-  {
-   "id": "tema:raw",
-   "tipo": "tema",
-   "titulo": "raw",
-   "peso": 7,
-   "ruta": "memoria/temas/raw.md"
   },
   {
    "id": "tema:loop unrolling",
    "tipo": "tema",
    "titulo": "loop unrolling",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/loop unrolling.md"
   },
   {
@@ -20705,7 +21390,7 @@
    "id": "tema:desenrollamiento",
    "tipo": "tema",
    "titulo": "desenrollamiento",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/desenrollamiento.md"
   },
   {
@@ -20875,6 +21560,20 @@
    "titulo": "emision",
    "peso": 3,
    "ruta": "memoria/temas/emision.md"
+  },
+  {
+   "id": "tema:comunicacion",
+   "tipo": "tema",
+   "titulo": "comunicacion",
+   "peso": 1,
+   "ruta": "memoria/temas/comunicacion.md"
+  },
+  {
+   "id": "tema:paso-mensajes",
+   "tipo": "tema",
+   "titulo": "paso-mensajes",
+   "peso": 1,
+   "ruta": "memoria/temas/paso-mensajes.md"
   },
   {
    "id": "tema:poison bits",
@@ -21062,7 +21761,7 @@
    "id": "tema:formulas",
    "tipo": "tema",
    "titulo": "formulas",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/formulas.md"
   },
   {
@@ -21104,14 +21803,14 @@
    "id": "tema:buffer almacenamiento",
    "tipo": "tema",
    "titulo": "buffer almacenamiento",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/buffer almacenamiento.md"
   },
   {
    "id": "tema:buffer carga",
    "tipo": "tema",
    "titulo": "buffer carga",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/buffer carga.md"
   },
   {
@@ -21237,7 +21936,7 @@
    "id": "tema:amdahl",
    "tipo": "tema",
    "titulo": "amdahl",
-   "peso": 7,
+   "peso": 10,
    "ruta": "memoria/temas/amdahl.md"
   },
   {
@@ -21482,7 +22181,7 @@
    "id": "tema:segmentación software",
    "tipo": "tema",
    "titulo": "segmentación software",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/segmentación software.md"
   },
   {
@@ -21491,6 +22190,20 @@
    "titulo": "ejecucion-fuera-orden",
    "peso": 2,
    "ruta": "memoria/temas/ejecucion-fuera-orden.md"
+  },
+  {
+   "id": "tema:openmp",
+   "tipo": "tema",
+   "titulo": "openmp",
+   "peso": 1,
+   "ruta": "memoria/temas/openmp.md"
+  },
+  {
+   "id": "tema:programación",
+   "tipo": "tema",
+   "titulo": "programación",
+   "peso": 1,
+   "ruta": "memoria/temas/programación.md"
   },
   {
    "id": "tema:tiempo-ejecucion",
@@ -21806,6 +22519,13 @@
    "titulo": "desenrollado-bucle",
    "peso": 3,
    "ruta": "memoria/temas/desenrollado-bucle.md"
+  },
+  {
+   "id": "tema:clasificacion flynn",
+   "tipo": "tema",
+   "titulo": "clasificacion flynn",
+   "peso": 1,
+   "ruta": "memoria/temas/clasificacion flynn.md"
   },
   {
    "id": "tema:cisc",
@@ -22142,6 +22862,13 @@
    "titulo": "rareza",
    "peso": 1,
    "ruta": "memoria/temas/rareza.md"
+  },
+  {
+   "id": "tema:multiprocesadores",
+   "tipo": "tema",
+   "titulo": "multiprocesadores",
+   "peso": 1,
+   "ruta": "memoria/temas/multiprocesadores.md"
   },
   {
    "id": "tema:multithreading",
@@ -23596,7 +24323,7 @@
    "id": "tema:estaciones reserva",
    "tipo": "tema",
    "titulo": "estaciones reserva",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/estaciones reserva.md"
   },
   {
@@ -24762,13 +25489,6 @@
    "ruta": "memoria/temas/eliminacion-saltos.md"
   },
   {
-   "id": "tema:dependencias-nombre",
-   "tipo": "tema",
-   "titulo": "dependencias-nombre",
-   "peso": 1,
-   "ruta": "memoria/temas/dependencias-nombre.md"
-  },
-  {
    "id": "tema:register-renaming",
    "tipo": "tema",
    "titulo": "register-renaming",
@@ -25024,7 +25744,7 @@
    "id": "tema:simulación",
    "tipo": "tema",
    "titulo": "simulación",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/simulación.md"
   },
   {
@@ -26246,6 +26966,26 @@
   {
    "de": "concepto:alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin",
    "a": "concepto:definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "a": "tema:dependencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "a": "tema:ilp",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
    "tipo": "enlaza"
   },
   {
@@ -28479,6 +29219,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:cc-numa-acceso-a-memoria-no-uniforme-con-coherencia-de-cache",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:cc-numa-acceso-a-memoria-no-uniforme-con-coherencia-de-cache",
+   "a": "tema:coherencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:cc-numa-acceso-a-memoria-no-uniforme-con-coherencia-de-cache",
+   "a": "tema:multiprocesador",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:cc-numa-acceso-a-memoria-no-uniforme-con-coherencia-de-cache",
+   "a": "tema:numa",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -28599,6 +29359,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta",
+   "a": "tema:flynn",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta",
+   "a": "tema:gpu",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta",
+   "a": "tema:paralelismo",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:clasificacion-de-multiprocesadores-en-taxonomia-de-flynn",
    "a": "tema:ac",
    "tipo": "trata"
@@ -28659,6 +29439,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect",
+   "a": "tema:cluster",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect",
+   "a": "tema:sistemas-distribuidos",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -28706,6 +29501,26 @@
   {
    "de": "concepto:comparacion-de-eficiencia-frecuencial-entre-procesadores-usa",
    "a": "receta:calculo-de-coste-efectividad-rendimiento-precio-entre-dos-co",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "a": "tema:comparacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "a": "concepto:comparativa-de-coste-efectividad-entre-sistemas-rendimiento",
    "tipo": "enlaza"
   },
   {
@@ -29092,6 +29907,16 @@
    "de": "concepto:comportamiento-de-predictor-correlacionado-2-1-con-historia",
    "a": "receta:simulacion-paso-a-paso-de-predictor-correlacionado-2-1-con-b",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:computador-vectorial-explota-paralelismo-a-nivel-de-datos",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:computador-vectorial-explota-paralelismo-a-nivel-de-datos",
+   "a": "tema:paralelismo",
+   "tipo": "trata"
   },
   {
    "de": "concepto:condicion-necesaria-para-que-la-especulacion-sea-valida",
@@ -29929,6 +30754,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:definicion-de-arquitectura-de-computadores-en-examen-ac-novi",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-arquitectura-de-computadores-en-examen-ac-novi",
+   "a": "tema:arquitectura",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:definicion-de-arquitectura-de-computadores-frente-a-organiza",
    "a": "tema:ac",
    "tipo": "trata"
@@ -30020,6 +30855,11 @@
   },
   {
    "de": "concepto:definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru",
    "a": "concepto:bucle-vectorial-de-referencia-para-desenrollado-y-planificac",
    "tipo": "enlaza"
   },
@@ -30067,6 +30907,26 @@
    "de": "concepto:definicion-de-bloque-basico-test-ac-q7",
    "a": "concepto:impacto-de-la-frecuencia-de-saltos-en-el-ilp-y-tamano-de-blo",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:definicion-de-cluster-en-examen-ac-noviembre-2012-pregunta-9",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-cluster-en-examen-ac-noviembre-2012-pregunta-9",
+   "a": "tema:cluster",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-cluster-en-examen-ac-noviembre-2012-pregunta-9",
+   "a": "tema:paralelismo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-cluster-en-examen-ac-noviembre-2012-pregunta-9",
+   "a": "tema:sistemas distribuidos",
+   "tipo": "trata"
   },
   {
    "de": "concepto:definicion-de-dependencia-de-datos-raw-entre-instrucciones",
@@ -30729,6 +31589,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:definicion-de-organizacion-de-computador-frente-a-arquitectu",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-organizacion-de-computador-frente-a-arquitectu",
+   "a": "tema:arquitectura",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall",
+   "a": "tema:bucles",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall",
+   "a": "tema:paralelismo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall",
+   "a": "concepto:calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:definicion-de-paralelismo-a-nivel-de-threads-tlp-frente-a-il",
    "a": "tema:ac",
    "tipo": "trata"
@@ -31249,6 +32144,51 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist",
+   "a": "tema:dependencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist",
+   "a": "tema:hazards",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist",
+   "a": "concepto:antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:dependencia-de-datos-raw-instruccion-i-produce-resultado-que",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-de-datos-raw-instruccion-i-produce-resultado-que",
+   "a": "tema:dependencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-de-datos-raw-instruccion-i-produce-resultado-que",
+   "a": "tema:raw",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-de-datos-raw-instruccion-i-produce-resultado-que",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:dependencia-de-datos-verdadera-definicion-y-ejemplo-en-bucle",
    "a": "tema:ac",
    "tipo": "trata"
@@ -31434,6 +32374,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "a": "tema:antidependencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "a": "tema:bucles",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "a": "tema:dependencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "a": "tema:war",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "a": "concepto:antidependencia-entre-iteraciones-en-bucle-con-store-y-actua",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien",
    "a": "tema:ac",
    "tipo": "trata"
@@ -31596,6 +32571,26 @@
   {
    "de": "concepto:dependencias-de-nombre-war-waw-se-eliminan-con-renombramient",
    "a": "concepto:el-renombrado-de-registros-evita-dependencias-de-nombre-war",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra",
+   "a": "tema:dependencias-nombre",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra",
+   "a": "tema:renombramiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra",
+   "a": "concepto:antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord",
    "tipo": "enlaza"
   },
   {
@@ -32030,6 +33025,21 @@
   },
   {
    "de": "concepto:desenrollamiento-de-bucles-reduce-dependencias-de-control-me",
+   "a": "tema:desenrollamiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:desenrollamiento-de-bucles-reduce-dependencias-de-control-me",
+   "a": "tema:ilp",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:desenrollamiento-de-bucles-reduce-dependencias-de-control-me",
+   "a": "tema:loop unrolling",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:desenrollamiento-de-bucles-reduce-dependencias-de-control-me",
    "a": "receta:proposito-del-desenrollado-de-bucles-loop-unrolling",
    "tipo": "enlaza"
   },
@@ -32191,6 +33201,36 @@
   {
    "de": "concepto:deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr",
    "a": "decision:deteccion-y-resolucion-de-riesgo-war-en-el-marcador-ciclos-1",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "a": "tema:riesgos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "a": "concepto:antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord",
    "tipo": "enlaza"
   },
   {
@@ -33174,6 +34214,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:el-desenrollamiento-de-bucles-reduce-principalmente-los-ries",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:el-desenrollamiento-de-bucles-reduce-principalmente-los-ries",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:el-desenrollamiento-de-bucles-reduce-principalmente-los-ries",
+   "a": "concepto:calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:el-marcador-scoreboard-permite-emitir-instrucciones-independ",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:el-marcador-scoreboard-permite-emitir-instrucciones-independ",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:el-marcador-scoreboard-permite-emitir-instrucciones-independ",
+   "a": "tema:tomasulo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:el-marcador-scoreboard-permite-emitir-instrucciones-independ",
+   "a": "concepto:algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:el-renombrado-de-registros-evita-dependencias-de-nombre-war",
    "a": "tema:ac",
    "tipo": "trata"
@@ -33387,6 +34462,21 @@
    "de": "concepto:en-tomasulo-sin-especulacion-la-emision-se-detiene-ante-ries",
    "a": "concepto:renombrado-de-registros-via-etiquetas-de-estacion-de-reserva",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:entorno-de-paso-de-mensajes-comparte-informacion-mediante-me",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:entorno-de-paso-de-mensajes-comparte-informacion-mediante-me",
+   "a": "tema:comunicacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:entorno-de-paso-de-mensajes-comparte-informacion-mediante-me",
+   "a": "tema:paso-mensajes",
+   "tipo": "trata"
   },
   {
    "de": "concepto:escritura-de-resultado-y-actualizacion-de-qi-en-registro-des",
@@ -34822,6 +35912,31 @@
    "de": "concepto:formulas-de-rendimiento-cpi-tiempo-mips-mflops-speedup-amdah",
    "a": "receta:speedup-con-cambio-simultaneo-de-cpi-y-frecuencia-de-reloj",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d",
+   "a": "tema:forwarding",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d",
+   "a": "tema:hazards",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d",
+   "a": "tema:mips",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d",
+   "a": "tema:pipeline",
+   "tipo": "trata"
   },
   {
    "de": "concepto:forwarding-de-resultado-en-ciclo-siguiente-al-write-modelo-s",
@@ -36369,6 +37484,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:la-bht-branch-history-table-almacena-bits-de-prediccion-de-s",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:la-bht-branch-history-table-almacena-bits-de-prediccion-de-s",
+   "a": "tema:prediccion-saltos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:la-bht-branch-history-table-almacena-bits-de-prediccion-de-s",
+   "a": "concepto:bht-branch-history-table-tabla-separada-para-bits-de-predicc",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:la-bht-branch-history-table-almacena-bits-de-prediccion-de-s",
+   "a": "concepto:ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:las-dependencias-de-datos-no-siempre-generan-riesgos-y-se-el",
    "a": "tema:ac",
    "tipo": "trata"
@@ -36446,6 +37581,31 @@
   {
    "de": "concepto:las-dependencias-de-datos-verdaderas-no-se-pueden-eliminar-e",
    "a": "concepto:el-renombrado-de-registros-evita-dependencias-de-nombre-war",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno",
+   "a": "tema:tomasulo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno",
+   "a": "concepto:antidependencia-war-en-bucle-entre-carga-y-actualizacion-de",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno",
+   "a": "concepto:buffer-de-carga-en-tomasulo-especulativo",
    "tipo": "enlaza"
   },
   {
@@ -37019,6 +38179,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:limite-del-speedup-segun-ley-de-amdahl-pregunta-7",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:limite-del-speedup-segun-ley-de-amdahl-pregunta-7",
+   "a": "tema:amdahl",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:limite-del-speedup-segun-ley-de-amdahl-pregunta-7",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:linpack-nucleo-de-benchmark-para-sistemas-cientificos-y-base",
    "a": "tema:ac",
    "tipo": "trata"
@@ -37456,6 +38631,26 @@
   {
    "de": "concepto:mejor-medida-de-rendimiento-de-un-computador",
    "a": "concepto:paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real",
+   "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
    "tipo": "enlaza"
   },
   {
@@ -37929,6 +39124,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent",
+   "a": "tema:prediccion-saltos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent",
+   "a": "concepto:bht-con-contadores-de-saturacion-de-2-bits-pregunta-17",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent",
+   "a": "concepto:bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:notacion-xax-m-2n-para-predictores-adaptativos-de-dos-nivele",
    "a": "tema:ac",
    "tipo": "trata"
@@ -38164,6 +39379,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:openmp-usa-directivas-de-compilacion-para-paralelizar-pregun",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:openmp-usa-directivas-de-compilacion-para-paralelizar-pregun",
+   "a": "tema:openmp",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:openmp-usa-directivas-de-compilacion-para-paralelizar-pregun",
+   "a": "tema:paralelismo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:openmp-usa-directivas-de-compilacion-para-paralelizar-pregun",
+   "a": "tema:programación",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:orden-de-emision-issue-en-scoreboard-orden-de-programa",
    "a": "tema:ac",
    "tipo": "trata"
@@ -38246,6 +39481,31 @@
   {
    "de": "concepto:paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza",
    "a": "concepto:mejor-medida-de-rendimiento-de-un-computador",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas",
+   "a": "tema:bucles",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas",
+   "a": "tema:paralelismo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
    "tipo": "enlaza"
   },
   {
@@ -40984,6 +42244,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:procesador-masivamente-paralelo-pertenece-a-categoria-mimd-d",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:procesador-masivamente-paralelo-pertenece-a-categoria-mimd-d",
+   "a": "tema:clasificacion flynn",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:procesador-masivamente-paralelo-pertenece-a-categoria-mimd-d",
+   "a": "tema:paralelismo",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:procesador-sin-soporte-para-especulacion-comportamiento-ante",
    "a": "tema:ac",
    "tipo": "trata"
@@ -42719,6 +43994,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "a": "tema:antidependencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "a": "tema:riesgos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "a": "tema:war",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "a": "concepto:antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "a": "concepto:antidependencia-war-en-bucle-entre-carga-y-actualizacion-de",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:riesgo-war-dependencia-antidependencia-datos",
    "a": "tema:ac",
    "tipo": "trata"
@@ -43869,6 +45179,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:segmentacion-software-transforma-bucles-con-iteraciones-depe",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:segmentacion-software-transforma-bucles-con-iteraciones-depe",
+   "a": "tema:bucles",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:segmentacion-software-transforma-bucles-con-iteraciones-depe",
+   "a": "tema:ilp",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:segmentacion-software-transforma-bucles-con-iteraciones-depe",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:segmentacion-software-transforma-bucles-con-iteraciones-depe",
+   "a": "tema:segmentación software",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage",
    "a": "tema:bcrypt",
    "tipo": "trata"
@@ -44299,6 +45634,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:sistema-smp-uma-usa-memoria-compartida",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:sistema-smp-uma-usa-memoria-compartida",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:sistema-smp-uma-usa-memoria-compartida",
+   "a": "tema:multiprocesadores",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:slowdown-en-procesadores-con-multithreading-frente-a-monocor",
    "a": "tema:ac",
    "tipo": "trata"
@@ -44701,6 +46051,16 @@
   {
    "de": "concepto:taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones",
    "a": "tema:taxonomia",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones",
+   "a": "tema:arquitectura",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones",
+   "a": "tema:paralelismo",
    "tipo": "trata"
   },
   {
@@ -57669,6 +59029,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d",
+   "a": "concepto:comparativa-de-coste-efectividad-entre-sistemas-rendimiento",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d",
+   "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
    "a": "tema:latex",
    "tipo": "trata"
@@ -63164,6 +64544,271 @@
    "tipo": "enlaza"
   },
   {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "receta:calculo-de-efectividad-en-coste-ejemplo-yolanda-vs-juan-preg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "concepto:cc-numa-acceso-a-memoria-no-uniforme-con-coherencia-de-cache",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "concepto:clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "concepto:definicion-de-arquitectura-de-computadores-en-examen-ac-novi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "concepto:definicion-de-cluster-en-examen-ac-noviembre-2012-pregunta-9",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "concepto:desenrollamiento-de-bucles-reduce-dependencias-de-control-me",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "concepto:limite-del-speedup-segun-ley-de-amdahl-pregunta-7",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "concepto:openmp-usa-directivas-de-compilacion-para-paralelizar-pregun",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "concepto:segmentacion-software-transforma-bucles-con-iteraciones-depe",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2012-examenes",
+   "a": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "receta:analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "receta:aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "receta:calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "receta:calculo-de-mips-pico-peak-mips-dado-frecuencia-y-latencias-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "concepto:definicion-de-dependencia-de-salida-waw-entre-dos-instruccio",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "concepto:definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "concepto:eliminacion-de-dependencias-de-nombre-mediante-renombramient",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2013-examenes",
+   "a": "concepto:taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "receta:como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "receta:como-calcular-tiempo-de-ejecucion-a-partir-de-instrucciones",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "receta:como-identificar-dependencia-de-datos-entre-iteraciones-en-b",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "concepto:definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "concepto:el-desenrollamiento-de-bucles-reduce-principalmente-los-ries",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "concepto:el-marcador-scoreboard-permite-emitir-instrucciones-independ",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "concepto:la-bht-branch-history-table-almacena-bits-de-prediccion-de-s",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "concepto:las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "concepto:notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014a-examenes",
+   "a": "decision:por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "receta:calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "concepto:definicion-de-organizacion-de-computador-frente-a-arquitectu",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "concepto:dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "concepto:dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "concepto:forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "concepto:mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "concepto:paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-noviembre2014b-examenes",
+   "a": "receta:speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:computador-vectorial-explota-paralelismo-a-nivel-de-datos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:dependencia-de-datos-raw-instruccion-i-produce-resultado-que",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:entorno-de-paso-de-mensajes-comparte-informacion-mediante-me",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:procesador-masivamente-paralelo-pertenece-a-categoria-mimd-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:riesgo-war-corresponde-a-antidependencia",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-octubre2010-examenes",
+   "a": "concepto:sistema-smp-uma-usa-memoria-compartida",
+   "tipo": "enlaza"
+  },
+  {
    "de": "fuente:fuente-practica3-practicas",
    "a": "tema:ac",
    "tipo": "trata"
@@ -65949,6 +67594,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "a": "tema:bucles",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "a": "tema:dependencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "a": "concepto:antidependencia-entre-iteraciones-en-bucle-con-store-y-actua",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:analisis-de-dependencias-raw-war-waw-en-una-iteracion-del-bu",
    "a": "tema:ac",
    "tipo": "trata"
@@ -66561,6 +68236,26 @@
   {
    "de": "receta:aplicacion-de-la-ley-de-amdahl-para-mejora-de-coma-flotante",
    "a": "receta:aplicacion-de-la-ley-de-amdahl-para-calcular-fraccion-de-tie",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc",
+   "a": "tema:amdahl",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc",
+   "a": "concepto:calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do",
    "tipo": "enlaza"
   },
   {
@@ -67709,6 +69404,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru",
+   "a": "concepto:calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas",
    "a": "tema:ac",
    "tipo": "trata"
@@ -67937,6 +69652,21 @@
    "de": "receta:calculo-de-direcciones-y-offsets-en-bucles-vectoriales-risc",
    "a": "receta:desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:calculo-de-efectividad-en-coste-ejemplo-yolanda-vs-juan-preg",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-efectividad-en-coste-ejemplo-yolanda-vs-juan-preg",
+   "a": "tema:coste-efectividad",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-efectividad-en-coste-ejemplo-yolanda-vs-juan-preg",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
   },
   {
    "de": "receta:calculo-de-factor-de-mejora-con-ley-de-amdahl-pregunta-3-exa",
@@ -68606,6 +70336,21 @@
   {
    "de": "receta:calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4",
    "a": "receta:comparativa-de-rendimiento-mips-entre-dos-implementaciones-c",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:calculo-de-mips-pico-peak-mips-dado-frecuencia-y-latencias-d",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-mips-pico-peak-mips-dado-frecuencia-y-latencias-d",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-mips-pico-peak-mips-dado-frecuencia-y-latencias-d",
+   "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
    "tipo": "enlaza"
   },
   {
@@ -69621,6 +71366,16 @@
   {
    "de": "receta:calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc",
    "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc",
+   "a": "tema:formulas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc",
+   "a": "tema:rendimiento",
    "tipo": "trata"
   },
   {
@@ -71049,6 +72804,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr",
+   "a": "concepto:calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr",
+   "a": "concepto:definicion-de-speedup-y-relacion-con-reduccion-de-tiempo",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-calcular-speedup-global-mejorando-un-componente-ley-de",
    "a": "tema:ac",
    "tipo": "trata"
@@ -71141,6 +72916,21 @@
   {
    "de": "receta:como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi",
    "a": "receta:analisis-de-stalls-en-bucle-mips64-con-forwarding-y-ramas-re",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-calcular-tiempo-de-ejecucion-a-partir-de-instrucciones",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-tiempo-de-ejecucion-a-partir-de-instrucciones",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-tiempo-de-ejecucion-a-partir-de-instrucciones",
+   "a": "concepto:ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura",
    "tipo": "enlaza"
   },
   {
@@ -72476,6 +74266,26 @@
   {
    "de": "receta:como-hacer-benchmark-estadistico-con-hyperfine-entre-patrone",
    "a": "receta:como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-identificar-dependencia-de-datos-entre-iteraciones-en-b",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-identificar-dependencia-de-datos-entre-iteraciones-en-b",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-identificar-dependencia-de-datos-entre-iteraciones-en-b",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-identificar-dependencia-de-datos-entre-iteraciones-en-b",
+   "a": "concepto:antidependencia-entre-iteraciones-en-bucle-con-store-y-actua",
    "tipo": "enlaza"
   },
   {
@@ -78309,6 +80119,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "a": "tema:dependencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "a": "tema:mips",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "a": "tema:punto-flotante",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "a": "tema:raw",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:identificacion-de-dependencias-loop-carried-en-bucles-c-styl",
    "a": "tema:ac",
    "tipo": "trata"
@@ -83224,6 +85069,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "a": "tema:buffer almacenamiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "a": "tema:buffer carga",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "a": "tema:cdb",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "a": "tema:estaciones reserva",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "a": "tema:simulación",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones",
+   "a": "tema:tomasulo",
+   "tipo": "trata"
+  },
+  {
    "de": "receta:speedup-combinado-de-mejoras-independientes-en-fracciones-di",
    "a": "tema:ac",
    "tipo": "trata"
@@ -83341,6 +85221,26 @@
   {
    "de": "receta:speedup-con-cambio-simultaneo-de-cpi-y-frecuencia-de-reloj",
    "a": "concepto:formulas-de-rendimiento-cpi-tiempo-mips-mflops-speedup-amdah",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera",
+   "a": "tema:amdahl",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera",
+   "a": "concepto:calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do",
    "tipo": "enlaza"
   },
   {

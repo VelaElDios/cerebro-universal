@@ -2033,5 +2033,103 @@
   "resumenes": [
    "Examen de Arquitectura de Computadores (noviembre 2011) con 20 preguntas tipo test sobre rendimiento, paralelismo, dependencias, planificación estática/dinámica, Scoreboard y Tomasulo, más dos problemas: (1) análisis de dependencias, CPI y segmentación software en bucle MIPS64 con L.S, MUL.S, ADD.S, S.S, DADDUI, BNE; (2) simulación de tabla de estado de instrucciones en Tomasulo con 2 sumadores (2 ciclos), 2 multiplicadores (4), 1 divisor (10), 2 estaciones de reserva por UF, buffer de carga 2 entradas, buffer de almacenamiento 1 entrada, y bus común de datos."
   ]
+ },
+ "repo:datos/temarios/AC/examenes/Noviembre2012.pdf": {
+  "md5": "c768189b178e0ce58a57b8027d5df452",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "calculo-de-efectividad-en-coste-ejemplo-yolanda-vs-juan-preg",
+   "cc-numa-acceso-a-memoria-no-uniforme-con-coherencia-de-cache",
+   "clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta",
+   "definicion-de-arquitectura-de-computadores-en-examen-ac-novi",
+   "definicion-de-cluster-en-examen-ac-noviembre-2012-pregunta-9",
+   "desenrollamiento-de-bucles-reduce-dependencias-de-control-me",
+   "limite-del-speedup-segun-ley-de-amdahl-pregunta-7",
+   "openmp-usa-directivas-de-compilacion-para-paralelizar-pregun",
+   "segmentacion-software-transforma-bucles-con-iteraciones-depe",
+   "simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones"
+  ],
+  "resumenes": [
+   "Examen de Arquitectura de Computadores (Noviembre 2012) con 20 preguntas tipo test y dos problemas. El test cubre: definición de arquitectura, fórmulas de rendimiento (MIPS, speedup, ley de Amdahl), efectividad en coste, taxonomía de Flynn (GPUs como SIMD), clusters, OpenMP, CC-NUMA, segmentación software, desenrollamiento de bucles, planificación dinámica y algoritmo de Tomasulo (riesgos, estaciones de reserva). Los problemas requieren: 1) calcular CPR de un bucle en pipeline MIPS64 con adelantamiento y saltos retardados, desenrollarlo para evitar detenciones y recalcular CPR; 2) simular Toma"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Noviembre2013.pdf": {
+  "md5": "731d1e8c774a1e03b3a34f91b3bca04d",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori",
+   "aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc",
+   "calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru",
+   "calculo-de-mips-pico-peak-mips-dado-frecuencia-y-latencias-d",
+   "definicion-de-dependencia-de-salida-waw-entre-dos-instruccio",
+   "definicion-de-paralelismo-a-nivel-de-bucle-loop-level-parall",
+   "eliminacion-de-dependencias-de-nombre-mediante-renombramient",
+   "taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones"
+  ],
+  "resumenes": [
+   "Examen de Arquitectura de Computadores (Noviembre 2013) con 20 preguntas tipo test y 2 problemas. El test cubre: CPI en MIPS multiciclo, MIPS pico, ley de Amdahl/speedup, dependencias de datos (RAW, WAR, WAW), taxonomía de Flynn, análisis de dependencias en bucles, renombramiento de registros, paralelismo a nivel de bucle, planificación de trazas, desenrollamiento de bucles, planificación dinámica (Tomasulo), Marcador (Scoreboard), BHT, predictores híbridos, ejecución multicamino, BHR y predictores estáticos. Problema 1: bucle MIPS64 con dependencias, detenciones, desenrollamiento y simulación"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Noviembre2014A.pdf": {
+  "md5": "541de9eb689afa38764dd4ef1d81258f",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr",
+   "como-calcular-tiempo-de-ejecucion-a-partir-de-instrucciones",
+   "como-identificar-dependencia-de-datos-entre-iteraciones-en-b",
+   "definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru",
+   "el-desenrollamiento-de-bucles-reduce-principalmente-los-ries",
+   "el-marcador-scoreboard-permite-emitir-instrucciones-independ",
+   "la-bht-branch-history-table-almacena-bits-de-prediccion-de-s",
+   "las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno",
+   "notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent",
+   "por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d"
+  ],
+  "resumenes": [
+   "Este trozo contiene un examen completo de Arquitectura de Computadores (temas 1-4) de noviembre de 2014. Incluye un test de 20 preguntas sobre conceptos fundamentales (definición de arquitectura, fórmulas de rendimiento, dependencias, planificación, predicción de saltos) y dos problemas: uno de pipeline MIPS64 con desenrollamiento de bucles y simulación de Marcador (Scoreboard), y otro de simulación detallada de un predictor híbrido de torneo con predictor local (2-bit, 4 entradas) y global (2-nivel (2,1), 2 entradas) más selector de 2 bits."
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Noviembre2014B.pdf": {
+  "md5": "a939aef1872599b25539ab9c299cd993",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc",
+   "comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "definicion-de-organizacion-de-computador-frente-a-arquitectu",
+   "dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist",
+   "dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter",
+   "forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d",
+   "identificacion-de-dependencia-raw-entre-add-s-consecutivas-p",
+   "mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real",
+   "paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas",
+   "speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera"
+  ],
+  "resumenes": [
+   "Examen de Arquitectura de Computadores (temas 1-4) de noviembre 2014. Incluye test de 20 preguntas sobre organización vs arquitectura, fórmulas de rendimiento (CPI, MIPS, ley de Amdahl), dependencias y riesgos en pipeline MIPS, planificación software (desenrollamiento, segmentación software, compactación de trazas), algoritmo Tomasulo (estaciones de reserva, CDB), y predictores de salto (2 bits, dos niveles, híbrido torneo). Dos problemas: uno de segmentación software y simulación Tomasulo para bucle vectorial x²-x·y; otro de análisis de predictores (2-bit local y torneo local/global) sobre có"
+  ]
+ },
+ "repo:datos/temarios/AC/examenes/Octubre2010.pdf": {
+  "md5": "fca19f63318a89d3e68c4df72b48c030",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect",
+   "computador-vectorial-explota-paralelismo-a-nivel-de-datos",
+   "dependencia-de-datos-raw-instruccion-i-produce-resultado-que",
+   "dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra",
+   "detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "entorno-de-paso-de-mensajes-comparte-informacion-mediante-me",
+   "procesador-masivamente-paralelo-pertenece-a-categoria-mimd-d",
+   "riesgo-war-corresponde-a-antidependencia",
+   "sistema-smp-uma-usa-memoria-compartida"
+  ],
+  "resumenes": [
+   "Examen de Arquitectura de Computadores (octubre 2010) con 20 preguntas tipo test sobre paralelismo, memoria compartida, pipeline, dependencias, planificación estática/dinámica, Tomasulo y Scoreboard, más dos problemas prácticos: uno de pipeline DLX con desenrollamiento de bucles y otro de planificación dinámica Tomasulo con unidades funcionales específicas."
+  ]
  }
 }

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "prediccion-saltos"
-notas: 203
+notas: 205
 ---
 # prediccion-saltos
 
@@ -131,10 +131,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «prediccion-saltos» (este
 - 💡 [[memoria/conocimiento/conceptos/instrucciones-predicadas-eliminan-saltos-y-prediccion-pregun|Instrucciones predicadas: eliminan saltos y predicción (pregunta 14)]]
 - 💡 [[memoria/conocimiento/conceptos/instruccion-especulativa-ejecutada-antes-de-saber-si-realmen|Instrucción especulativa: ejecutada antes de saber si realmente debe ejecutarse]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/interpretacion-del-bhr-en-predictor-correlativo-2-3|Interpretación del BHR en predictor correlativo (2,3)]]
+- 💡 [[memoria/conocimiento/conceptos/la-bht-branch-history-table-almacena-bits-de-prediccion-de-s|La BHT (Branch History Table) almacena bits de predicción de saltos condicionales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/la-bht-almacena-los-bits-de-prediccion-de-todas-las-instrucc|La BHT almacena los bits de predicción de todas las instrucciones de salto condicional]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mecanismo-cooperacion-hardware-software-sin-distincion-instr|Mecanismo cooperación hardware/software sin distinción instrucciones especulativas]]
 - 💡 [[memoria/conocimiento/conceptos/mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt|Mecanismos de recuperación ante fallos de predicción de saltos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/multiples-caminos-como-tecnica-de-prediccion-de-saltos|Múltiples caminos como técnica de predicción de saltos]]
+- 💡 [[memoria/conocimiento/conceptos/notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent|Notación de predictor de dos niveles (2,1): 1 tabla BHT con entradas de 2 bits]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/notacion-xax-m-2n-para-predictores-adaptativos-de-dos-nivele|Notación XAx(m,2n) para predictores adaptativos de dos niveles (Yeh y Patt 1992)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-de-prediccion-de-predictor-de-3-bits-ante-alternancia|Patrón de predicción de predictor de 3 bits ante alternancia Taken/Not Taken]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-de-saltos-en-bucle-mips64-secuencia-0-1-0-2-examen-en|Patrón de saltos en bucle MIPS64 secuencia 0,1,0,2 (examen Enero 2012)]]

@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «salto» (este archivo se 
 
 ## Temas relacionados
 
-[[ac]] · [[bloque-basico]] · [[ilp]]
+[[ac]] · [[bloque-basico]] · [[ilp]] · [[pipeline]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pipeline"
-notas: 283
+notas: 298
 ---
 # pipeline
 
@@ -12,6 +12,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 🧪 [[memoria/conocimiento/recetas/adelantamiento-forwarding-para-riesgos-raw|Adelantamiento (forwarding) para riesgos RAW]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-en-bucle-mips-con-acceso-a-memoria|Análisis de dependencias en bucle MIPS con acceso a memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-entre-instrucciones-de-punto-flotan|Análisis de dependencias entre instrucciones de punto flotante en misma iteración]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori|Análisis de dependencias entre S.D y DADDUI en bucle vectorial]]
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-y-planificacion-de-bucle-mips64-con|Análisis de dependencias y planificación de bucle MIPS64 con unidades FP segmentadas (examen Junio 2013)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-detenciones-stalls-en-bucle-con-media-ponderada|Análisis de detenciones (stalls) en bucle con media ponderada y cálculo de CPI]]
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-paradas-en-bucle-con-unidades-fp-de-latencias-2|Análisis de paradas en bucle con unidades FP de latencias 2/3/5 y forwarding]]
@@ -38,6 +39,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-implementacion-multiciclo-mips-con-mezcla|Cálculo de CPI en implementación multiciclo MIPS con mezcla de instrucciones dada]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-mips-multiciclo-con-mezcla-de-instruccione|Cálculo de CPI en MIPS multiciclo con mezcla de instrucciones dada]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-pipeline-con-stalls-y-tras-optimizacion|Cálculo de CPI en pipeline con stalls y tras optimización]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru|Cálculo de CPI en procesador multiciclo con mezcla de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-medio-ponderado-por-mezcla-de-instrucciones|Cálculo de CPI medio ponderado por mezcla de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f|Cálculo de detenciones (stalls) y CPR en pipeline RISC-V con FP segmentado]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-instrucciones-tras-desenrollar-bucle-3-veces-unro|Cálculo de instrucciones tras desenrollar bucle 3 veces (unroll factor 3)]] · ⚠️ propuesto
@@ -58,6 +60,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi|Cómo calcular stalls en pipeline MIPS64 con operand forwarding y latencias FP conocidas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-construir-diagrama-de-gantt-tabla-de-ciclos-para-pipeli|Cómo construir diagrama de Gantt / tabla de ciclos para pipeline superescalar]]
 - 🧪 [[memoria/conocimiento/recetas/como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo|Cómo desenrollar 4 veces y planificar bucle VLIW para máximo aprovechamiento (examen enero 2023)]]
+- 🧪 [[memoria/conocimiento/recetas/como-identificar-dependencia-de-datos-entre-iteraciones-en-b|Cómo identificar dependencia de datos entre iteraciones en bucle con carga y actualización de puntero]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-identificar-dependencias-en-el-codigo-del-problema-3-pa|Cómo identificar dependencias en el código del Problema 3 para planificación]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador|Cómo leer la tabla de estado de instrucciones en el marcador de Tomasulo]]
 - 🧪 [[memoria/conocimiento/recetas/como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul|Cómo rellenar la tabla de estado de instrucciones en Tomasulo sin especulación]]
@@ -82,6 +85,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e|Diagrama pipeline superscalar grado 4: ejecución en orden y escritura en orden]]
 - 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r|Diagrama pipeline superscalar: ejecución fuera de orden con renombramiento y escritura fuera de orden]]
 - 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-sin-r|Diagrama pipeline superscalar: ejecución fuera de orden sin renombramiento, escritura en orden]]
+- 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencia-raw-entre-add-s-consecutivas-p|Identificación de dependencia RAW entre ADD.S consecutivas por registro destino/fuente]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi|Método para calcular speedup de bucle desenrollado y planificado vs original (examen AC 2017/18)]]
 - 🧪 [[memoria/conocimiento/recetas/parametros-de-simulacion-tomasulo-especulativo-para-mips64-e|Parámetros de simulación Tomasulo especulativo para MIPS64 (examen AC enero 2022)]]
 - 🧪 [[memoria/conocimiento/recetas/parametros-estandar-para-ejercicios-de-segmentacion-software|Parámetros estándar para ejercicios de segmentación software en RISC-V (Tema 3)]]
@@ -147,6 +151,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/configuracion-vliw-de-6-unidades-funcionales-con-latencias-a|Configuración VLIW de 6 unidades funcionales con latencias asimétricas]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/criterio-de-desenrollamiento-de-bucles-loop-unrolling|Criterio de desenrollamiento de bucles (loop unrolling)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definiciones-clave-basic-block-antidependencia-loop-unrollin|Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru|Definición de bloque básico en paralelismo a nivel de instrucción (pregunta 6)]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-datos-raw-entre-instrucciones|Definición de dependencia de datos (RAW) entre instrucciones]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-datos-verdadera-raw|Definición de dependencia de datos verdadera (RAW)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-nombre-anti-y-salida|Definición de dependencia de nombre (anti y salida)]]
@@ -159,8 +164,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/definicion-y-proposito-de-la-segmentacion-pipeline|Definición y propósito de la segmentación (pipeline)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione|Dependencia de datos en pipeline → riesgo solo si instrucciones están cerca]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-entre-iteraciones-en-bucle-con-actualiz|Dependencia de datos entre iteraciones en bucle con actualización de puntero (registro x1)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist|Dependencia de datos no siempre causa hazard; depende de distancia en pipeline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-en-pipeline-con-forwarding|Dependencia de salida (WAW) en pipeline con forwarding]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-y-antidependencia-war-definiciones|Dependencia de salida (WAW) y antidependencia (WAR) definiciones (preguntas 6 y 8)]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter|Dependencia entre S.D y DADDUI en bucle es por R1 entre iteraciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien|Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-se-eliminan-mediante-renombramiento-d|Dependencias de nombre se eliminan mediante renombramiento de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-en-bucle-mips-de-carga-modificacion-almacenamie|Dependencias en bucle MIPS de carga-modificación-almacenamiento (LW, DADD, SW, DADDUI, BNEZ)]]
@@ -168,6 +175,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v|Dependencias RAW, WAR y WAW en el bucle de producto escalar-vectorial (examen AC 2017/18)]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucles-loop-unrolling-en-superescalar-con-re|Desenrollado de bucles (loop unrolling) en superescalar con renombrado de registros]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-reduce-dependencias-de-control-me|Desenrollamiento de bucles: reduce dependencias de control mediante planificación estática]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/detenciones-en-pipeline-afectan-negativamente-a-prestaciones|Detenciones en pipeline afectan negativamente a prestaciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/diferencia-clave-entre-ejecucion-fuera-de-orden-sin-y-con-re|Diferencia clave entre ejecución fuera de orden sin y con renombramiento]]
 - 💡 [[memoria/conocimiento/conceptos/diferencia-entre-dependencia-de-datos-raw-antidependencia-wa|Diferencia entre dependencia de datos (RAW), antidependencia (WAR) y dependencia de salida (WAW)]]
 - 💡 [[memoria/conocimiento/conceptos/diferencia-escritura-resultado-vs-terminacion-commit-en-toma|Diferencia Escritura resultado vs Terminación (Commit) en Tomasulo con ROB]] · ⚠️ propuesto
@@ -175,15 +183,18 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/diferencias-clave-processor-a-superscalar-in-order-vs-proces|Diferencias clave Processor A (superscalar in-order) vs Processor B (VLIW) en Exercise 3]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/diferencias-entre-ejecucion-en-orden-fuera-de-orden-sin-reno|Diferencias entre ejecución en orden, fuera de orden sin renombramiento y con renombramiento]]
 - 💡 [[memoria/conocimiento/conceptos/ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs|Ejercicio 3 AC June 2019: comparación superscalar in-order vs VLIW]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/el-desenrollamiento-de-bucles-reduce-principalmente-los-ries|El desenrollamiento de bucles reduce principalmente los riesgos de control (saltos)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/el-marcador-scoreboard-permite-emitir-instrucciones-independ|El Marcador (Scoreboard) permite emitir instrucciones independientes mientras una espera]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/el-renombrado-de-registros-evita-dependencias-de-nombre-war|El renombrado de registros evita dependencias de nombre (WAR/WAW)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-datos-mediante-renombramiento|Eliminación de dependencias de datos mediante renombramiento]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-nombre-mediante-renombramient|Eliminación de dependencias de nombre mediante renombramiento]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-nombre-mediante-renombramient|Eliminación de dependencias de nombre mediante renombramiento]]
 - 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-salida-waw-mediante-renombrad|Eliminación de dependencias de salida (WAW) mediante renombrado de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/esquemas-de-pipeline-con-1-2-y-3-huecos-de-retardo-para-beqz|Esquemas de pipeline con 1, 2 y 3 huecos de retardo para beqz]]
 - 💡 [[memoria/conocimiento/conceptos/estaciones-de-reserva-por-uf-2-por-unidad-funcional-en-confi|Estaciones de reserva por UF: 2 por unidad funcional en configuración examen]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-tabla-rob-para-tomasulo-especulativo-con-5-ent|Estructura de tabla ROB para Tomasulo especulativo con 5 entradas]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-del-marcador-scoreboard-en-arquitectura-de-comput|Estructura del marcador (scoreboard) en arquitectura de computadores]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-del-reorder-buffer-rob-en-tomasulo-con-especulaci|Estructura del Reorder Buffer (ROB) en Tomasulo con especulación]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d|Forwarding (adelantamiento) no resuelve todos los riesgos de datos en MIPS multiciclo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/forwarding-de-resultado-en-ciclo-siguiente-al-write-modelo-s|Forwarding de resultado en ciclo siguiente al Write (modelo superscalar examen)]]
 - 💡 [[memoria/conocimiento/conceptos/funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es|Funcionamiento detallado de bits de veneno (poison bits) en especulación]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/hazard-war-corresponde-a-antidependencia-dependencia-de-nomb|Hazard WAR corresponde a antidependencia (dependencia de nombre)]] · ⚠️ propuesto
@@ -193,6 +204,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/instrucciones-especulativas-marcadas-con-en-codigo-mips64-ex|Instrucciones especulativas marcadas con * en código MIPS64 (examen June 2025)]]
 - 💡 [[memoria/conocimiento/conceptos/instrucciones-especulativas-marcadas-con-asterisco-en-codigo|Instrucciones especulativas marcadas con asterisco en código MIPS64]]
 - 💡 [[memoria/conocimiento/conceptos/las-dependencias-de-datos-verdaderas-no-se-pueden-eliminar-e|Las dependencias de datos verdaderas no se pueden eliminar; el renombrado de registros elimina dependencias de nombre]]
+- 💡 [[memoria/conocimiento/conceptos/las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno|Las dependencias de nombre (WAR, WAW) se eliminan mediante renombramiento de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/limitacion-del-adelantamiento-hazard-load-use-load-use-penal|Limitación del adelantamiento: hazard load-use (load-use penalty)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mecanismo-de-cooperacion-hardware-software-para-excepciones|Mecanismo de cooperación hardware/software para excepciones especulativas]]
 - 💡 [[memoria/conocimiento/conceptos/mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt|Mecanismos de recuperación ante fallos de predicción de saltos]] · ⚠️ propuesto
@@ -201,6 +213,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/objetivo-de-la-segmentacion-software-software-pipelining|Objetivo de la segmentación software (software pipelining)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/objetivo-del-desenrollamiento-de-bucles-loop-unrolling|Objetivo del desenrollamiento de bucles (loop unrolling)]]
 - 💡 [[memoria/conocimiento/conceptos/paralelismo-a-nivel-de-bucle-lp-solapamiento-de-iteraciones|Paralelismo a nivel de bucle (LP) = solapamiento de iteraciones]]
+- 💡 [[memoria/conocimiento/conceptos/paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas|Paralelismo a nivel de bucle = ejecutar iteraciones solapadas]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/paso-de-commit-en-superscalar-actualizacion-de-registros|Paso de commit en superscalar: actualización de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup|Penalización de fallo de predicción de salto en pipeline superscalar]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-prediccion-estatica-siempre-no-tomado-con-di|Penalización de predicción estática "siempre no tomado" con dirección en ID y sentido en EX]]
@@ -233,6 +246,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/riesgo-load-use-en-pipeline-mips-con-forwarding|Riesgo load-use en pipeline MIPS con forwarding]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/riesgo-raw-read-after-write-y-su-causa|Riesgo RAW (Read After Write) y su causa]]
 - 💡 [[memoria/conocimiento/conceptos/riesgo-raw-como-dependencia-de-datos-verdadera|Riesgo RAW como dependencia de datos verdadera]]
+- 💡 [[memoria/conocimiento/conceptos/riesgo-war-corresponde-a-antidependencia|Riesgo WAR corresponde a antidependencia]]
 - 💡 [[memoria/conocimiento/conceptos/riesgos-de-datos-en-risc-v-raw-waw-war|Riesgos de datos en RISC-V: RAW, WAW, WAR]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/riesgos-estructurales-causas-y-ejemplo-banco-de-registros|Riesgos estructurales: causas y ejemplo banco de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]]
@@ -240,6 +254,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-bucle-con-bne-y-daddui|Salto retardado (delayed branch) en bucle con BNE y DADDUI]]
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-planificacion-superescalar|Salto retardado (delayed branch) en planificación superescalar]]
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-risc-v-implicaciones-en-pl|Salto retardado (delayed branch) en RISC-V: implicaciones en planificación]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/segmentacion-software-transforma-bucles-con-iteraciones-depe|Segmentación software transforma bucles con iteraciones dependientes en independientes (pregunta 12)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/simulacion-paso-a-paso-de-tomasulo-con-bucle-fp-fld-fmul-d-f|Simulación paso a paso de Tomasulo con bucle FP (fld/fmul.d/fsd)]]
 - 💡 [[memoria/conocimiento/conceptos/speedup-ideal-vs-real-en-pipeline-y-formula-con-detenciones|Speedup ideal vs real en pipeline y fórmula con detenciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr|Superescalar 3-vías con tuberías dedicadas por tipo de instrucción]]
@@ -304,4 +319,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[dependencias]] · [[prediccion-saltos]] · [[superscalar]] · [[bucles]] · [[vliw]] · [[cpi]] · [[mips64]] · [[loop-unrolling]] · [[mips]] · [[hazards]]
+[[ac]] · [[tomasulo]] · [[dependencias]] · [[prediccion-saltos]] · [[superscalar]] · [[bucles]] · [[vliw]] · [[cpi]] · [[mips64]] · [[loop-unrolling]] · [[rendimiento]] · [[mips]]

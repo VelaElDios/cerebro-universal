@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "desenrollamiento"
-notas: 6
+notas: 7
 ---
 # desenrollamiento
 
@@ -18,7 +18,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «desenrollamiento» (este 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-requiere-ausencia-de-dependencias|Desenrollamiento de bucles requiere ausencia de dependencias entre iteraciones]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-reduce-dependencias-de-control-me|Desenrollamiento de bucles: reduce dependencias de control mediante planificación estática]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[planificacion-estatica]] · [[bucles]] · [[dependencias]] · [[speedup]] · [[superscalar]] · [[compilador-conoce-hardware]] · [[segmentacion-software]] · [[pipeline-flotante]] · [[acumulador]] · [[reduccion]] · [[dependencias-datos]]
+[[ac]] · [[planificacion-estatica]] · [[bucles]] · [[optimizacion]] · [[pipeline]] · [[ilp]] · [[loop unrolling]] · [[dependencias]] · [[speedup]] · [[superscalar]] · [[compilador-conoce-hardware]] · [[segmentacion-software]]

@@ -37,4 +37,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «optimizacion» (este arch
 
 ## Temas relacionados
 
-[[ac]] · [[bucles]] · [[pipeline]] · [[ilp]] · [[loop-unrolling]] · [[branchless]] · [[compiladores]] · [[cpp]] · [[vliw]] · [[planificacion-trazas]] · [[tradeoff]] · [[desenrollado]]
+[[ac]] · [[bucles]] · [[pipeline]] · [[ilp]] · [[loop-unrolling]] · [[branchless]] · [[compiladores]] · [[cpp]] · [[vliw]] · [[desenrollamiento]] · [[loop unrolling]] · [[planificacion-trazas]]

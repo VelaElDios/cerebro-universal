@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "punto-flotante"
-notas: 16
+notas: 17
 ---
 # punto-flotante
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «punto-flotante» (este ar
 - 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-encontrar-fraccion-de-co|Aplicación de la ley de Amdahl para encontrar fracción de código FP necesaria para un speedup dado]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg|Cómo leer la evolución ciclo a ciclo de un marcador con cargas y operaciones FP]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado|Desenrollamiento de bucles (loop unrolling) 4x con renombrado de registros en RISC-V]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencia-raw-entre-add-s-consecutivas-p|Identificación de dependencia RAW entre ADD.S consecutivas por registro destino/fuente]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -34,4 +35,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «punto-flotante» (este ar
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[pipeline]] · [[dependencias]] · [[scoreboard]] · [[mips64]] · [[arquitectura]] · [[latencia]] · [[simulacion]] · [[planificacion-dinamica]] · [[raw]] · [[hazards]]
+[[ac]] · [[pipeline]] · [[dependencias]] · [[tomasulo]] · [[scoreboard]] · [[mips64]] · [[arquitectura]] · [[latencia]] · [[raw]] · [[simulacion]] · [[planificacion-dinamica]] · [[hazards]]

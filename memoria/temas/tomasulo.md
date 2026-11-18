@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tomasulo"
-notas: 212
+notas: 215
 ---
 # tomasulo
 
@@ -56,6 +56,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tomasulo» (este archivo 
 - 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-con-especulacion-parametros-clave-y-rest|Simulación Tomasulo con especulación: parámetros clave y restricciones de temporización]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-con-especulacion-parametros-de-hardware|Simulación Tomasulo con especulación: parámetros de hardware y restricciones de ciclo]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-especulativa-con-rob-de-4-entradas-exame|Simulación Tomasulo especulativa con ROB de 4 entradas (examen Enero 2017)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones|Simulación Tomasulo: tabla estado instrucciones y estaciones de reserva antes de escritura segundo L.D (Problema 2)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tabla-de-estado-de-estacion-de-reserva-en-tomasulo-campos-y|Tabla de estado de estación de reserva en Tomasulo: campos y lectura]]
 - 🧪 [[memoria/conocimiento/recetas/tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm|Tomasulo con CDB no simultáneo 2 RS por UF buffers carga/almacen (Ejercicio 10)]]
 - 🧪 [[memoria/conocimiento/recetas/tres-fases-de-ejecucion-en-tomasulo-emision-ejecucion-escrit|Tres fases de ejecución en Tomasulo: Emisión, Ejecución, Escritura]] · ⚠️ propuesto
@@ -111,6 +112,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tomasulo» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/diferencia-escritura-resultado-vs-terminacion-commit-en-toma|Diferencia Escritura resultado vs Terminación (Commit) en Tomasulo con ROB]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/diferencia-scoreboard-vs-tomasulo-en-resolucion-de-hazards-s|Diferencia Scoreboard vs Tomasulo en resolución de hazards sin especulación]]
 - 💡 [[memoria/conocimiento/conceptos/diferencias-clave-entre-las-tres-tablas-de-planificacion-ped|Diferencias clave entre las tres tablas de planificación pedidas (Scoreboard vs Tomasulo básico vs Tomasulo especulativo)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/el-marcador-scoreboard-permite-emitir-instrucciones-independ|El Marcador (Scoreboard) permite emitir instrucciones independientes mientras una espera]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/en-tomasulo-sin-especulacion-la-emision-se-detiene-ante-ries|En Tomasulo sin especulación la emisión se detiene ante riesgo WAW]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/escritura-de-resultado-y-actualizacion-de-qi-en-registro-des|Escritura de resultado y actualización de Qi en registro destino]]
 - 💡 [[memoria/conocimiento/conceptos/especulacion-con-bits-venenosos-programa-continua-y-finaliza|Especulación con bits venenosos: programa continúa y finaliza dando error ante excepción no recuperable]]
@@ -133,6 +135,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tomasulo» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/idea-central-de-tomasulo-control-distribuido-con-estaciones|Idea central de Tomasulo: control distribuido con estaciones de reserva]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/informacion-almacenada-en-estaciones-de-reserva-de-tomasulo|Información almacenada en estaciones de reserva de Tomasulo (pregunta 9)]]
 - 💡 [[memoria/conocimiento/conceptos/instrucciones-especulativas-marcadas-con-asterisco-en-codigo|Instrucciones especulativas marcadas con asterisco en código MIPS64]]
+- 💡 [[memoria/conocimiento/conceptos/las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno|Las dependencias de nombre (WAR, WAW) se eliminan mediante renombramiento de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-la-planificacion-estatica-que-motiva-la-planif|Limitación de la planificación estática que motiva la planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mecanismo-de-cooperacion-hardware-software-para-excepciones|Mecanismo de cooperación hardware/software para excepciones especulativas]]
 - 💡 [[memoria/conocimiento/conceptos/nomenclatura-del-campo-value-en-entradas-del-rob-tomasulo-co|Nomenclatura del campo Value en entradas del ROB (Tomasulo con especulación)]]

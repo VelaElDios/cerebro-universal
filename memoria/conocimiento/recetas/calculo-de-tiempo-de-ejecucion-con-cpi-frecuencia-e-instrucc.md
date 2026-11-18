@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Cálculo de tiempo de ejecución con CPI, frecuencia e instrucciones"
-temas: ["ac", "pipeline"]
+temas: ["ac", "pipeline", "formulas", "rendimiento"]
 claves: ["CPI", "frecuencia", "tiempo ejecución", "instrucciones"]
 proyectos: []
-fuentes: ["repo:datos/temarios/AC/examenes/Junio2016.pdf"]
+fuentes: ["repo:datos/temarios/AC/examenes/Junio2016.pdf", "repo:datos/temarios/AC/examenes/Noviembre2014B.pdf"]
 confianza: "verificado"
 fecha: "2026-11-18"
 actualizado: "2026-11-18"
@@ -18,3 +18,6 @@ Tiempo = (Instrucciones × CPI) / Frecuencia. Ejemplo: (7.5e9 × 0.8) / 5e9 = 1.
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
 Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-mezcla-de-instrucci]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]] · [[tiempo-de-ejecucion-instrucciones-cpi-frecuencia]]
+
+## Ampliación (2026-11-18, )
+Tiempo = (Instrucciones × CPI) / Frecuencia. Ejemplo: (5.5e9 × 0.9) / (3e9) = 1.65 segundos (opción c). Fórmula fundamental: T = IC × CPI / f.

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "dependencias"
-notas: 61
+notas: 67
 ---
 # dependencias
 
@@ -13,14 +13,17 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «dependencias» (este arch
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-en-bucle-mips-con-acceso-a-memoria|Análisis de dependencias en bucle MIPS con acceso a memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-en-codigo-risc-v-raw-war-waw|Análisis de dependencias en código RISC-V (RAW, WAR, WAW)]]
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-entre-instrucciones-de-punto-flotan|Análisis de dependencias entre instrucciones de punto flotante en misma iteración]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori|Análisis de dependencias entre S.D y DADDUI en bucle vectorial]]
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-raw-war-waw-en-una-iteracion-del-bu|Análisis de dependencias RAW, WAR, WAW en una iteración del bucle secuencia 0,1,0,2]]
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-y-planificacion-de-bucle-mips64-con|Análisis de dependencias y planificación de bucle MIPS64 con unidades FP segmentadas (examen Junio 2013)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-identificar-dependencias-en-el-codigo-del-problema-3-pa|Cómo identificar dependencias en el código del Problema 3 para planificación]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema|Dependencias en bucle MIPS64 de encriptación ASCIIZ (Problema 1)]]
 - 🧪 [[memoria/conocimiento/recetas/eliminacion-de-dependencias-de-nombre-mediante-renombrado-de|Eliminación de dependencias de nombre mediante renombrado de registros en desenrollamiento]]
+- 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencia-raw-entre-add-s-consecutivas-p|Identificación de dependencia RAW entre ADD.S consecutivas por registro destino/fuente]] · ⚠️ propuesto
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio|Alto ILP requiere bajo grado de dependencia entre instrucciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/antidependencia-war-en-bucle-entre-carga-y-actualizacion-de|Antidependencia (WAR) en bucle entre carga y actualización de puntero en misma iteración]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/antidependencia-war-entre-instrucciones-consecutivas-en-risc|Antidependencia (WAR) entre instrucciones consecutivas en RISC-V]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/antidependencia-war-siempre-genera-hazard-war|Antidependencia (WAR) siempre genera hazard WAR]]
@@ -37,11 +40,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «dependencias» (este arch
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-nombre-waw-y-war|Definición de dependencia de nombre (WAW y WAR)]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-salida-waw|Definición de dependencia de salida (WAW)]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-salida-waw-entre-dos-instruccio|Definición de dependencia de salida (WAW) entre dos instrucciones]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-raw-instruccion-i-produce-resultado-que|Dependencia de datos (RAW): instrucción i produce resultado que usa j]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist|Dependencia de datos no siempre causa hazard; depende de distancia en pipeline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-verdadera-definicion-y-ejemplo-en-bucle|Dependencia de datos verdadera definición y ejemplo en bucle]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-en-pipeline-con-forwarding|Dependencia de salida (WAW) en pipeline con forwarding]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-y-antidependencia-war-definiciones|Dependencia de salida (WAW) y antidependencia (WAR) definiciones (preguntas 6 y 8)]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-dos-instrucciones-escriben-mismo-r|Dependencia de salida (WAW): dos instrucciones escriben mismo registro/memoria]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr|Dependencia entre iteraciones en bucle con S.D y DADDUI sobre R1]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter|Dependencia entre S.D y DADDUI en bucle es por R1 entre iteraciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien|Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-war-waw-se-eliminan-con-renombramient|Dependencias de nombre (WAR, WAW) se eliminan con renombramiento de registros]]
 - 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-antidependencia-y-salida-definicion-y|Dependencias de nombre antidependencia y salida definición y ejemplo]] · ⚠️ propuesto
@@ -54,7 +60,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «dependencias» (este arch
 - 💡 [[memoria/conocimiento/conceptos/diferencia-entre-dependencia-de-datos-raw-antidependencia-wa|Diferencia entre dependencia de datos (RAW), antidependencia (WAR) y dependencia de salida (WAW)]]
 - 💡 [[memoria/conocimiento/conceptos/el-renombrado-de-registros-evita-dependencias-de-nombre-war|El renombrado de registros evita dependencias de nombre (WAR/WAW)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-datos-mediante-renombramiento|Eliminación de dependencias de datos mediante renombramiento]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-nombre-mediante-renombramient|Eliminación de dependencias de nombre mediante renombramiento]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-nombre-mediante-renombramient|Eliminación de dependencias de nombre mediante renombramiento]]
 - 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-salida-waw-mediante-renombrad|Eliminación de dependencias de salida (WAW) mediante renombrado de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/hazard-war-corresponde-a-antidependencia-dependencia-de-nomb|Hazard WAR corresponde a antidependencia (dependencia de nombre)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/identificacion-de-antidependencia-war-entre-store-e-incremen|Identificación de antidependencia (WAR) entre store e incremento de puntero en bucle]]
@@ -79,4 +85,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «dependencias» (este arch
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[bucles]] · [[waw]] · [[war]] · [[riesgos]] · [[hazards]] · [[renombramiento]] · [[mips]] · [[punto-flotante]] · [[mips64]] · [[raw]]
+[[ac]] · [[pipeline]] · [[bucles]] · [[war]] · [[waw]] · [[hazards]] · [[riesgos]] · [[raw]] · [[mips]] · [[renombramiento]] · [[punto-flotante]] · [[ilp]]

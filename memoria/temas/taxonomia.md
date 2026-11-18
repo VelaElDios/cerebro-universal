@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «taxonomia» (este archivo
 
 ## Temas relacionados
 
-[[ac]] · [[flynn]] · [[mimd]] · [[misd]] · [[simd]] · [[sisd]]
+[[ac]] · [[arquitectura]] · [[paralelismo]] · [[flynn]] · [[mimd]] · [[misd]] · [[simd]] · [[sisd]]

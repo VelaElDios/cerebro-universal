@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "buffer almacenamiento"
-notas: 1
+notas: 2
 ---
 # buffer almacenamiento
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «buffer almacenamiento» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones|Simulación Tomasulo: tabla estado instrucciones y estaciones de reserva antes de escritura segundo L.D (Problema 2)]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «buffer almacenamiento» (
 
 ## Temas relacionados
 
-[[ac]] · [[buffer carga]] · [[direccionamiento]] · [[tomasulo]]
+[[ac]] · [[buffer carga]] · [[tomasulo]] · [[direccionamiento]] · [[cdb]] · [[estaciones reserva]] · [[simulación]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "rendimiento"
-notas: 110
+notas: 123
 ---
 # rendimiento
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 - 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-determinar-fraccion-de-u|Aplicación de la ley de Amdahl para determinar fracción de uso de un componente mejorado]]
 - 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-encontrar-fraccion-de-co|Aplicación de la ley de Amdahl para encontrar fracción de código FP necesaria para un speedup dado]]
 - 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-mejora-de-coma-flotante|Aplicación de la ley de Amdahl para mejora de coma flotante]]
+- 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-speedup-con-mejora-fracc|Aplicación de la ley de Amdahl para speedup con mejora fraccional]]
 - 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-speedup-global-mejorando|Aplicación de la ley de Amdahl para speedup global mejorando una parte]]
 - 🧪 [[memoria/conocimiento/recetas/comparacion-de-dos-implementaciones-de-la-misma-isa-cpi-y-fr|Comparación de dos implementaciones de la misma ISA (CPI y frecuencia distintos)]]
 - 🧪 [[memoria/conocimiento/recetas/comparacion-de-eficiencia-entre-pentium-iii-1-ghz-y-pentium|Comparación de eficiencia entre Pentium III 1 GHz y Pentium IV 1.8 GHz con mismo juego 3D]]
@@ -28,8 +29,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-dado-frecuencia-de-reloj-y-conteo-de-instrucc|Cálculo de CPI dado frecuencia de reloj y conteo de instrucciones por tipo (Ejercicio 22c)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-bucle-desenrollado-superescalar-con-ancho|Cálculo de CPI en bucle desenrollado superescalar con ancho 4]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-pipeline-con-stalls-y-tras-optimizacion|Cálculo de CPI en pipeline con stalls y tras optimización]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru|Cálculo de CPI en procesador multiciclo con mezcla de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-medio-ponderado-por-mezcla-de-instrucciones|Cálculo de CPI medio ponderado por mezcla de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas|Cálculo de CPI medio, MIPS y speedup entre dos máquinas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-efectividad-en-coste-ejemplo-yolanda-vs-juan-preg|Cálculo de efectividad en coste: ejemplo Yolanda vs Juan (pregunta 3)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-factor-de-mejora-con-ley-de-amdahl-pregunta-3-exa|Cálculo de factor de mejora con ley de Amdahl (pregunta 3 examen)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-factor-de-mejora-en-multiplicacion-segun-ley-de-a|Cálculo de factor de mejora en multiplicación según ley de Amdahl (pregunta 3)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-ganancia-de-velocidad-speedup-con-la-ley-de-amdah|Cálculo de ganancia de velocidad (speedup) con la ley de Amdahl]]
@@ -42,6 +45,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co|Cálculo de MIPS nativos y de pico (peak MIPS) para máquinas con CPI variable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-para-comparar-dos-computadores-con-mismo-isa|Cálculo de MIPS para comparar dos computadores con mismo ISA]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-para-dos-procesadores-con-distinto-cpi-y-fre|Cálculo de MIPS para dos procesadores con distinto CPI y frecuencia (pregunta 4)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-pico-peak-mips-dado-frecuencia-y-latencias-d|Cálculo de MIPS pico (peak MIPS) dado frecuencia y latencias de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-c|Cálculo de MIPS pico a partir de mezcla de instrucciones y CPI por tipo]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f|Cálculo de MIPS pico a partir de mezcla de instrucciones y frecuencias]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4|Cálculo de MIPS pico para comparar máquinas (test AC Q4)]]
@@ -62,6 +66,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-tiempo-de-ejecucion-con-cpi-mixto-y-frecuencia-de|Cálculo de tiempo de ejecución con CPI mixto y frecuencia de reloj]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia|Cálculo de tiempo de ejecución con CPI y frecuencia]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-tiempo-de-ejecucion-con-cpi-y-mezcla-de-instrucci|Cálculo de tiempo de ejecución con CPI y mezcla de instrucciones]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc|Cálculo de tiempo de ejecución con CPI, frecuencia e instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-tiempo-de-ejecucion-con-cpi-ic-y-duracion-de-cicl|Cálculo de tiempo de ejecución con CPI, IC y duración de ciclo]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-del-rendimiento-real-eje-y-gflops-s-con-hyperfine|Cálculo del rendimiento real (eje Y: GFLOPs/s) con hyperfine]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-speedup-vliw-vs-escalar-para-examen-enero-2026-probl|Cálculo speedup VLIW vs escalar para examen Enero 2026 Problema 3b]]
@@ -69,7 +74,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-factor-de-mejora-necesario-segun-ley-de-amdahl|Cómo calcular factor de mejora necesario según Ley de Amdahl]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-la-fraccion-de-uso-requerida-para-un-speedup-o|Cómo calcular la fracción de uso requerida para un speedup objetivo con Amdahl]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-mips-pico-a-partir-de-frecuencia-y-cpi-minimo|Cómo calcular MIPS pico a partir de frecuencia y CPI mínimo]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-speedup-global-con-ley-de-amdahl-cuando-una-fr|Cómo calcular speedup global con ley de Amdahl cuando una fracción se acelera]]
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-speedup-global-mejorando-un-componente-ley-de|Cómo calcular speedup global mejorando un componente (Ley de Amdahl)]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-tiempo-de-ejecucion-a-partir-de-instrucciones|Cómo calcular tiempo de ejecución a partir de instrucciones, CPI y frecuencia]]
 - 🧪 [[memoria/conocimiento/recetas/como-comparar-rendimiento-de-dos-maquinas-con-mismo-isa-usan|Cómo comparar rendimiento de dos máquinas con mismo ISA usando tiempo de ejecución]]
 - 🧪 [[memoria/conocimiento/recetas/como-generar-el-modelo-roofline-del-procesador-con-lscpu-y-s|Cómo generar el modelo Roofline del procesador con lscpu y STREAM (Tarea 1.3)]]
 - 🧪 [[memoria/conocimiento/recetas/como-resolver-un-problema-de-la-ley-de-amdahl-con-fraccion-m|Cómo resolver un problema de la Ley de Amdahl con fracción mejorada y speedup objetivo]]
@@ -82,6 +89,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 - 🧪 [[memoria/conocimiento/recetas/renderizado-chibi-1620-px-por-codigo-con-cache-de-fotogramas|Renderizado chibi 16×20 px por código con caché de fotogramas]]
 - 🧪 [[memoria/conocimiento/recetas/speedup-combinando-multiples-mejoras-independientes|Speedup combinando múltiples mejoras independientes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/speedup-con-cambio-simultaneo-de-cpi-y-frecuencia-de-reloj|Speedup con cambio simultáneo de CPI y frecuencia de reloj]]
+- 🧪 [[memoria/conocimiento/recetas/speedup-con-ley-de-amdahl-cuando-una-fraccion-se-acelera|Speedup con ley de Amdahl cuando una fracción se acelera]]
 - 🧪 [[memoria/conocimiento/recetas/speedup-con-ley-de-amdahl-para-mejora-parcial-de-tarjeta-gra|Speedup con ley de Amdahl para mejora parcial de tarjeta gráfica]]
 - 🧪 [[memoria/conocimiento/recetas/speedup-por-ley-de-amdahl-con-mejora-10x-usada-20-del-tiempo|Speedup por ley de Amdahl con mejora 10x usada 20% del tiempo]]
 - 🧪 [[memoria/conocimiento/recetas/tiempo-de-ejecucion-instrucciones-cpi-frecuencia|Tiempo de ejecución = Instrucciones × CPI / Frecuencia]]
@@ -89,15 +97,18 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/optimizaciones-de-rendimiento-busqueda-por-radio-con-claves|Optimizaciones de rendimiento: búsqueda por radio con claves numéricas y una textura por celda y fotograma]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/por-que-no-basta-con-mips-y-ghz-para-comparar-procesadores-d|Por qué no basta con MIPS y GHz para comparar procesadores de distinta arquitectura]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-la-ley-de-amdahl-para-dimensionar-requisitos-de-uso-d|Uso de la ley de Amdahl para dimensionar requisitos de uso de disco]] · ⚠️ propuesto
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/comparacion-de-rendimiento-entre-procesadores-requiere-mismo|Comparación de rendimiento entre procesadores requiere mismo ISA o benchmarks]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/comparativa-de-coste-efectividad-entre-sistemas-rendimiento|Comparativa de coste-efectividad entre sistemas: rendimiento por euro]]
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d|Cálculo de operaciones por ciclo (IPC) en planificación VLIW de bucle]]
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do|Cálculo de speedup con ley de Amdahl: fracción mejorada al doble de velocidad]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-peak-performance-rendimiento-pico|Definición de peak performance (rendimiento pico)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-speedup-y-relacion-con-reduccion-de-tiempo|Definición de speedup y relación con reducción de tiempo]]
+- 💡 [[memoria/conocimiento/conceptos/detenciones-en-pipeline-afectan-negativamente-a-prestaciones|Detenciones en pipeline afectan negativamente a prestaciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura|Ecuación fundamental del tiempo de ejecución en arquitectura de computadores]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/formulas-de-rendimiento-cpi-tiempo-mips-mflops-speedup-amdah|Fórmulas de rendimiento (CPI, tiempo, MIPS, MFLOPS, speedup, Amdahl) referencia examen AC]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/impacto-de-la-frecuencia-de-saltos-en-el-ilp-y-tamano-de-blo|Impacto de la frecuencia de saltos en el ILP y tamaño de bloque básico]] · ⚠️ propuesto
@@ -110,7 +121,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-la-aceleracion-maxima-viene-determinada-por-la|Ley de Amdahl: la aceleración máxima viene determinada por la fracción de tiempo que use la mejora]]
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-mejora-en-fraccion-pequena-ley-de-amdahl|Limitación de mejora en fracción pequeña (ley de Amdahl)]]
 - 💡 [[memoria/conocimiento/conceptos/limite-de-la-ley-de-amdahl-mejora-imposible-si-la-fraccion-n|Límite de la ley de Amdahl: mejora imposible si la fracción no mejorada domina]]
+- 💡 [[memoria/conocimiento/conceptos/limite-del-speedup-segun-ley-de-amdahl-pregunta-7|Límite del speedup según ley de Amdahl (pregunta 7)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-de-un-computador|Mejor medida de rendimiento de un computador]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real|Mejor medida de rendimiento es tiempo de ejecución real]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-tiempo-de-ejecucion-de-programas|Mejor medida de rendimiento: tiempo de ejecución de programas reales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mejor-metrica-de-rendimiento-tiempo-de-ejecucion|Mejor métrica de rendimiento: tiempo de ejecución]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/metrica-de-comparacion-operaciones-por-ciclo-ipc-en-supersca|Métrica de comparación: operaciones por ciclo (IPC) en superscalar vs VLIW]]
@@ -131,4 +144,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «rendimiento» (este archi
 
 ## Temas relacionados
 
-[[ac]] · [[ley-amdahl]] · [[cpi]] · [[mips]] · [[speedup]] · [[pipeline]] · [[vliw]] · [[amdahl]] · [[coste-efectividad]] · [[roofline]] · [[frecuencia-reloj]] · [[ipc]]
+[[ac]] · [[ley-amdahl]] · [[cpi]] · [[pipeline]] · [[mips]] · [[speedup]] · [[amdahl]] · [[vliw]] · [[coste-efectividad]] · [[roofline]] · [[frecuencia-reloj]] · [[ipc]]

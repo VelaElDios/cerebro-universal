@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "buffer carga"
-notas: 1
+notas: 2
 ---
 # buffer carga
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «buffer carga» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones|Simulación Tomasulo: tabla estado instrucciones y estaciones de reserva antes de escritura segundo L.D (Problema 2)]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «buffer carga» (este arch
 
 ## Temas relacionados
 
-[[ac]] · [[buffer almacenamiento]] · [[direccionamiento]] · [[tomasulo]]
+[[ac]] · [[buffer almacenamiento]] · [[tomasulo]] · [[direccionamiento]] · [[cdb]] · [[estaciones reserva]] · [[simulación]]

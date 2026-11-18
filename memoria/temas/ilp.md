@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "ilp"
-notas: 48
+notas: 51
 ---
 # ilp
 
@@ -27,6 +27,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio|Alto ILP requiere bajo grado de dependencia entre instrucciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-sisd-componentes-y-tecnicas-ilp-segmentacion-su|Arquitectura SISD: componentes y técnicas ILP (segmentación, superescalar, VLIW)]]
 - 💡 [[memoria/conocimiento/conceptos/caracteristicas-clave-de-procesadores-vliw|Características clave de procesadores VLIW]]
 - 💡 [[memoria/conocimiento/conceptos/definiciones-clave-basic-block-antidependencia-loop-unrollin|Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)]]
@@ -36,6 +37,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 - 💡 [[memoria/conocimiento/conceptos/dependencias-en-el-bucle-de-ejemplo-vliw-examen-ac-2018|Dependencias en el bucle de ejemplo VLIW (examen AC 2018)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac|Desenrollado de bucle (loop unrolling) 3× para VLIW y compactación]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-loop-unrolling-permite-planificar|Desenrollamiento de bucles (loop unrolling) permite planificar instrucciones de distintas iteraciones]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-reduce-dependencias-de-control-me|Desenrollamiento de bucles: reduce dependencias de control mediante planificación estática]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/diferencia-fundamental-vliw-vs-superescalar-compilador-vs-ha|Diferencia fundamental VLIW vs Superescalar: compilador vs hardware detecta paralelismo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/efectos-de-la-especulacion-en-flujo-de-datos-ilp-y-excepcion|Efectos de la especulación en flujo de datos, ILP y excepciones]]
 - 💡 [[memoria/conocimiento/conceptos/ilp-alto-requiere-bajo-grado-de-dependencia-entre-instruccio|ILP alto requiere bajo grado de dependencia entre instrucciones]]
@@ -56,6 +58,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 - 💡 [[memoria/conocimiento/conceptos/segmentacion-software-software-pipelining-en-bucles-sin-depe|Segmentación software (software pipelining) en bucles sin dependencias]]
 - 💡 [[memoria/conocimiento/conceptos/segmentacion-software-software-pipelining-transforma-bucles|Segmentación software (software pipelining) transforma bucles con iteraciones dependientes en independientes]]
 - 💡 [[memoria/conocimiento/conceptos/segmentacion-software-software-pipelining-y-planificacion-de|Segmentación software (software pipelining) y planificación de trazas (trace scheduling)]]
+- 💡 [[memoria/conocimiento/conceptos/segmentacion-software-transforma-bucles-con-iteraciones-depe|Segmentación software transforma bucles con iteraciones dependientes en independientes (pregunta 12)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tendencias-de-paralelismo-en-arquitectura-actual-ilp-tlp-dlp|Tendencias de paralelismo en arquitectura actual (ILP, TLP, DLP, multinúcleo)]]
 - 💡 [[memoria/conocimiento/conceptos/tecnica-de-mejora-de-rendimiento-en-sisd|Técnica de mejora de rendimiento en SISD]]
 - 💡 [[memoria/conocimiento/conceptos/tecnica-de-segmentacion-software-software-pipelining|Técnica de segmentación software (software pipelining)]]
@@ -69,4 +72,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 
 ## Temas relacionados
 
-[[ac]] · [[vliw]] · [[planificacion]] · [[planificacion-estatica]] · [[pipeline]] · [[optimizacion]] · [[bucles]] · [[superescalar]] · [[tomasulo]] · [[compilador]] · [[segmentación]] · [[sisd]]
+[[ac]] · [[vliw]] · [[planificacion]] · [[pipeline]] · [[bucles]] · [[planificacion-estatica]] · [[optimizacion]] · [[dependencias]] · [[superescalar]] · [[tomasulo]] · [[loop unrolling]] · [[compilador]]

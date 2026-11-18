@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "riesgos"
-notas: 22
+notas: 24
 ---
 # riesgos
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «riesgos» (este archivo s
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-dos-instrucciones-escriben-mismo-r|Dependencia de salida (WAW): dos instrucciones escriben mismo registro/memoria]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-en-bucle-mips-de-carga-modificacion-almacenamie|Dependencias en bucle MIPS de carga-modificación-almacenamiento (LW, DADD, SW, DADDUI, BNEZ)]]
 - 💡 [[memoria/conocimiento/conceptos/deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr|Detección de riesgos WAR y WAW en marcador y bloqueo de escritura]]
+- 💡 [[memoria/conocimiento/conceptos/detenciones-en-pipeline-afectan-negativamente-a-prestaciones|Detenciones en pipeline afectan negativamente a prestaciones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/gestion-de-riesgos-war-y-waw-en-tomasulo-pregunta-10|Gestión de riesgos WAR y WAW en Tomasulo (pregunta 10)]]
 - 💡 [[memoria/conocimiento/conceptos/las-dependencias-de-datos-no-siempre-generan-riesgos-y-se-el|Las dependencias de datos no siempre generan riesgos y se eliminan con renombramiento]]
 - 💡 [[memoria/conocimiento/conceptos/obtencion-de-operandos-y-deteccion-waw-war-en-scoreboard|Obtención de operandos y detección WAW/WAR en Scoreboard]] · ⚠️ propuesto
@@ -23,6 +24,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «riesgos» (este archivo s
 - 💡 [[memoria/conocimiento/conceptos/riesgo-load-use-en-pipeline-mips-con-forwarding|Riesgo load-use en pipeline MIPS con forwarding]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/riesgo-raw-como-dependencia-de-datos-verdadera|Riesgo RAW como dependencia de datos verdadera]]
 - 💡 [[memoria/conocimiento/conceptos/riesgo-war-dependencia-antidependencia-datos|Riesgo WAR = dependencia antidependencia (datos)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/riesgo-war-corresponde-a-antidependencia|Riesgo WAR corresponde a antidependencia]]
 - 💡 [[memoria/conocimiento/conceptos/riesgos-estructurales-en-tomasulo-solo-en-escritura-de-resul|Riesgos estructurales en Tomasulo solo en escritura de resultado]]
 - 💡 [[memoria/conocimiento/conceptos/riesgos-resueltos-por-marcador-y-por-tomasulo-sin-especulaci|Riesgos resueltos por Marcador y por Tomasulo sin especulación]]
 - 💡 [[memoria/conocimiento/conceptos/tipos-de-riesgos-en-pipeline-estructurales-datos-control|Tipos de riesgos en pipeline: estructurales, datos, control]] · ⚠️ propuesto
@@ -37,4 +39,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «riesgos» (este archivo s
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[dependencias]] · [[war]] · [[waw]] · [[tomasulo]] · [[scoreboard]] · [[dependencias datos]] · [[arquitectura]] · [[hazard]] · [[renombramiento]] · [[coma-flotante]]
+[[ac]] · [[pipeline]] · [[war]] · [[dependencias]] · [[waw]] · [[tomasulo]] · [[scoreboard]] · [[antidependencia]] · [[dependencias datos]] · [[arquitectura]] · [[hazard]] · [[rendimiento]]
