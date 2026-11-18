@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "predictor-correlacionado"
-notas: 7
+notas: 8
 ---
 # predictor-correlacionado
 
@@ -19,6 +19,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «predictor-correlacionado�
 
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-un-predictor-correlacionado-2-4-4-bhr-y-2-bht|Estructura de un predictor correlacionado (2,4): 4 BHR y 2 BHT]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/implementacion-del-bhr-branch-history-register-en-predictor|Implementación del BHR (Branch History Register) en predictor correlacionado (2,2)]] · ⚠️ propuesto
+
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]]
 
 ## Temas relacionados
 

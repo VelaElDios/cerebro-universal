@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "risc-v"
-notas: 11
+notas: 12
 ---
 # risc-v
 
@@ -10,6 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «risc-v» (este archivo se
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/analisis-en-estado-estable-de-predictor-2-bits-vs-correlacio|Análisis en estado estable de predictor 2 bits vs correlacionado (1,1) para bucle RISC-V con patrón complejo]]
+- 🧪 [[memoria/conocimiento/recetas/bucle-risc-v-para-calibracion-imu-con-puntero-descendente|Bucle RISC-V para calibración IMU con puntero descendente]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-direcciones-y-offsets-en-bucles-vectoriales-risc|Cálculo de direcciones y offsets en bucles vectoriales RISC-V con puntero descendente]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado|Desenrollamiento de bucles (loop unrolling) 4x con renombrado de registros en RISC-V]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-4x-con-planificacion-para-elimina|Desenrollamiento de bucles 4x con planificación para eliminar detenciones (RISC-V)]] · ⚠️ propuesto
@@ -29,4 +30,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «risc-v» (este archivo se
 
 ## Temas relacionados
 
-[[ac]] · [[planificacion-estatica]] · [[prediccion-saltos]] · [[loop-unrolling]] · [[isa]] · [[ilp]] · [[patron-saltos]] · [[secuencia-datos]] · [[registros]] · [[estado-estable]] · [[predictor-2-bits]] · [[predictor-correlacionado]]
+[[ac]] · [[planificacion-estatica]] · [[prediccion-saltos]] · [[ensamblador]] · [[pipeline]] · [[loop-unrolling]] · [[isa]] · [[ilp]] · [[patron-saltos]] · [[secuencia-datos]] · [[registros]] · [[estado-estable]]

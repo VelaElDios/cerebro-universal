@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «data-hazards» (este arch
 
 ## Temas relacionados
 
-[[ac]] · [[latencies]] · [[pipeline]]
+[[ac]] · [[latencies]] · [[pipeline]] · [[dependencias]] · [[latencias]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "desenrollamiento"
-notas: 5
+notas: 6
 ---
 # desenrollamiento
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «desenrollamiento» (este 
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-desenrollamiento-de-bucle-y-superesca|Cálculo de speedup con desenrollamiento de bucle y superescalar]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-y-segmentacion-software-con-latencia-fadd-d|Desenrollamiento y segmentación software con latencia fadd.d 5 ciclos (Ejercicio 5)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/desenrollar-bucle-2x-y-planificar-para-latencias-fp-dadas-ej|Desenrollar bucle 2x y planificar para latencias FP dadas (Ejercicio 1)]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollar-bucle-minimo-para-planificar-sin-detenciones-eje|Desenrollar bucle mínimo para planificar sin detenciones (Ejercicio 3)]]
@@ -20,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «desenrollamiento» (este 
 
 ## Temas relacionados
 
-[[ac]] · [[planificacion-estatica]] · [[bucles]] · [[dependencias]] · [[compilador-conoce-hardware]] · [[segmentacion-software]] · [[pipeline-flotante]] · [[acumulador]] · [[reduccion]] · [[dependencias-datos]] · [[recurrencia]]
+[[ac]] · [[planificacion-estatica]] · [[bucles]] · [[dependencias]] · [[speedup]] · [[superscalar]] · [[compilador-conoce-hardware]] · [[segmentacion-software]] · [[pipeline-flotante]] · [[acumulador]] · [[reduccion]] · [[dependencias-datos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scoreboard"
-notas: 45
+notas: 46
 ---
 # scoreboard
 
@@ -48,6 +48,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scoreboard» (este archiv
 - 💡 [[memoria/conocimiento/conceptos/riesgo-estructural-en-scoreboard-pregunta-7|Riesgo estructural en Scoreboard (pregunta 7)]]
 - 💡 [[memoria/conocimiento/conceptos/scoreboard-escribe-resultados-a-traves-del-banco-de-registro|Scoreboard escribe resultados a través del banco de registros (no CDB)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/scoreboard-detiene-ejecucion-ante-hazards-war-y-waw|Scoreboard: detiene ejecución ante hazards WAR y WAW]]
+- 💡 [[memoria/conocimiento/conceptos/scoreboard-los-riesgos-estructurales-se-gestionan-en-la-etap|Scoreboard: los riesgos estructurales se gestionan en la etapa de emisión (issue)]]
 - 💡 [[memoria/conocimiento/conceptos/scoreboard-riesgos-estructurales-en-paso-de-escritura-de-res|Scoreboard: riesgos estructurales en paso de escritura de resultado (pregunta 12)]]
 - 💡 [[memoria/conocimiento/conceptos/semantica-de-los-campos-qj-qk-rj-rk-en-el-estado-de-uf|Semántica de los campos Qj, Qk, Rj, Rk en el estado de UF]]
 - 💡 [[memoria/conocimiento/conceptos/simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo|Simulación ciclo a ciclo del marcador (scoreboard) de Tomasulo con instrucciones FP]]

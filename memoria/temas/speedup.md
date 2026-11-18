@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "speedup"
-notas: 21
+notas: 25
 ---
 # speedup
 
@@ -14,16 +14,20 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «speedup» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s|Cálculo de CPI sin BTB y speedup con BTB (miss rate 10%, solo saltos tomados, actualización con penalidad)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-proporcion-de-tiempo-en-fp-dado-speedup-observado|Cálculo de proporción de tiempo en FP dado speedup observado y factor de mejora (Ejercicio 8b)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-comparando-predictor-con-penalidad-variab|Cálculo de speedup comparando predictor con penalidad variable vs penalidad fija]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-desenrollamiento-de-bucle-y-superesca|Cálculo de speedup con desenrollamiento de bucle y superescalar]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-reduccion-de-cpi-y-aumento-de-ciclo-d|Cálculo de speedup con reducción de CPI y aumento de ciclo de reloj (pregunta 5)]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl|Cálculo de speedup entre bucle original y desenrollado en VLIW]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab|Cálculo de speedup máximo con ley de Amdahl (fracción mejorable y factor k)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-para-bucle-desenrollado-en-pipeline-con-h|Cálculo de Speedup para bucle desenrollado en pipeline con hazards]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-vliw-vs-mips64-segmentado-considerando-me|Cálculo de speedup VLIW vs MIPS64 segmentado considerando mejor planificación]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas|Cálculo de speedup y porcentaje de mejora entre dos máquinas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-convertir-porcentaje-de-ganancia-speedup-a-factor-de-sp|Cómo convertir porcentaje de ganancia (speedup %) a factor de speedup (n)]]
+- 🧪 [[memoria/conocimiento/recetas/metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi|Método para calcular speedup de bucle desenrollado y planificado vs original (examen AC 2017/18)]]
 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-speedup-como-razon-de-tiempos-de-ejecucion|Definición de speedup como razón de tiempos de ejecución]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-speedup-y-relacion-con-reduccion-de-tiempo|Definición de speedup y relación con reducción de tiempo]]
 - 💡 [[memoria/conocimiento/conceptos/interpretacion-de-speedup-del-200|Interpretación de speedup del 200%]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aplicada-a-mejora-de-disco-fraccion-de-uso-par|Ley de Amdahl aplicada a mejora de disco: fracción de uso para speedup global]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aplicada-a-optimizacion-de-compilador-para-com|Ley de Amdahl aplicada a optimización de compilador para coma flotante (Ejercicio 8)]]
@@ -39,4 +43,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «speedup» (este archivo s
 
 ## Temas relacionados
 
-[[ac]] · [[rendimiento]] · [[ley-amdahl]] · [[cpi]] · [[arquitectura-computadores]] · [[pipeline]] · [[vliw]] · [[coma-flotante]] · [[compiladores]] · [[evaluacion-rendimiento]] · [[prediccion-saltos]] · [[metricas-rendimiento]]
+[[ac]] · [[rendimiento]] · [[ley-amdahl]] · [[cpi]] · [[pipeline]] · [[arquitectura-computadores]] · [[vliw]] · [[coma-flotante]] · [[compiladores]] · [[evaluacion-rendimiento]] · [[prediccion-saltos]] · [[loop-unrolling]]

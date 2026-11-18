@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "estaciones-reserva"
-notas: 7
+notas: 8
 ---
 # estaciones-reserva
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estaciones-reserva» (est
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/configuracion-y-parametros-para-simular-tomasulo-en-problema|Configuración y parámetros para simular Tomasulo en problema de examen (MIPS64, UF segmentadas, latencias dadas)]]
 - 🧪 [[memoria/conocimiento/recetas/como-abordar-la-simulacion-tomasulo-con-rob-para-examen-ac|Cómo abordar la simulación Tomasulo con ROB para examen AC]]
 - 🧪 [[memoria/conocimiento/recetas/como-evoluciona-la-tabla-de-estaciones-de-reserva-en-tomasul|Cómo evoluciona la tabla de estaciones de reserva en Tomasulo (ciclos 7-13)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio|Primeros 3 ciclos Tomasulo con 2 add 1c y 2 mul 4c (Ejercicio 9)]]
@@ -25,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estaciones-reserva» (est
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[buffers]] · [[simulacion]] · [[renombrado]] · [[recursos]] · [[scoreboard]] · [[bdc]] · [[examen]] · [[rob]] · [[cdb]] · [[ciclos-iniciales]]
+[[ac]] · [[tomasulo]] · [[simulacion]] · [[buffers]] · [[renombrado]] · [[recursos]] · [[scoreboard]] · [[bdc]] · [[examen]] · [[rob]] · [[buffers-carga-almacenamiento]] · [[latencias]]

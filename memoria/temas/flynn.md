@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "flynn"
-notas: 1
+notas: 3
 ---
 # flynn
 
@@ -9,8 +9,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «flynn» (este archivo se 
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/clasificacion-de-flynn-de-procesador-masivamente-paralelo-mp|Clasificación de Flynn de procesador masivamente paralelo (MPP)]]
+- 💡 [[memoria/conocimiento/conceptos/clasificacion-de-multiprocesadores-en-taxonomia-de-flynn|Clasificación de multiprocesadores en taxonomía de Flynn]]
 - 💡 [[memoria/conocimiento/conceptos/taxonomia-de-flynn-sisd-misd-simd-mimd-y-criterio-de-clasifi|Taxonomía de Flynn (SISD, MISD, SIMD, MIMD) y criterio de clasificación]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[mimd]] · [[misd]] · [[simd]] · [[sisd]] · [[taxonomia]]
+[[ac]] · [[mpp]] · [[paralelismo]] · [[arquitectura]] · [[mimd]] · [[misd]] · [[simd]] · [[sisd]] · [[taxonomia]]

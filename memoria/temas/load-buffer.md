@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "load-buffer"
-notas: 1
+notas: 2
 ---
 # load-buffer
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «load-buffer» (este archi
 
 - 💡 [[memoria/conocimiento/conceptos/buffer-de-carga-en-tomasulo-especulativo-pregunta-18|Buffer de carga en Tomasulo especulativo (pregunta 18)]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/parametros-de-tomasulo-con-especulacion-para-problema-2-exam|Parámetros de Tomasulo con especulación para Problema 2 (examen Junio 2026)]]
+
 ## Temas relacionados
 
-[[ac]] · [[especulacion]] · [[tomasulo]]
+[[ac]] · [[especulacion]] · [[tomasulo]] · [[reservation-station]] · [[rob]]

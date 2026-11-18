@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "buffers"
-notas: 4
+notas: 5
 ---
 # buffers
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «buffers» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/parametros-de-simulacion-tomasulo-con-especulacion-del-exame|Parámetros de simulación Tomasulo con especulación del examen Junio 2011 (Problema 2)]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -19,4 +23,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «buffers» (este archivo s
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[estaciones-reserva]] · [[almacenamiento]] · [[carga]] · [[flujo datos]] · [[recursos]] · [[scoreboard]]
+[[ac]] · [[tomasulo]] · [[estaciones-reserva]] · [[almacenamiento]] · [[carga]] · [[flujo datos]] · [[recursos]] · [[scoreboard]] · [[especulacion]] · [[simulacion]] · [[unidades-funcionales]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "software-pipelining"
-notas: 11
+notas: 13
 ---
 # software-pipelining
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «software-pipelining» (es
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/condicion-para-solapar-iteraciones-de-un-bucle-software-pipe|Condición para solapar iteraciones de un bucle (software pipelining)]]
 - 🧪 [[memoria/conocimiento/recetas/conversion-de-codigo-vliw-compactado-a-bucle-mips64-segmenta|Conversión de código VLIW compactado a bucle MIPS64 segmentado con un resultado por iteración]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-operaciones-por-ciclo-en-vliw-con-software-pipeli|Cálculo de operaciones por ciclo en VLIW con software pipelining]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat|Desenrollado 4x y planificación mínima para bucle FP con latencias dadas]]
@@ -22,8 +23,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «software-pipelining» (es
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/diferencia-fundamental-desenrollamiento-vs-segmentacion-soft|Diferencia fundamental: desenrollamiento vs segmentación software]]
+- 💡 [[memoria/conocimiento/conceptos/que-hace-la-tecnica-de-segmentacion-software-software-pipeli|Qué hace la técnica de segmentación software (software pipelining)]]
 - 💡 [[memoria/conocimiento/conceptos/segmentacion-software-software-pipelining-y-planificacion-de|Segmentación software (software pipelining) y planificación de trazas (trace scheduling)]]
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[loop-unrolling]] · [[planificacion-estatica]] · [[vliw]] · [[riscv]] · [[segmentacion-software]] · [[comparativa]] · [[ilp]] · [[trace-scheduling]] · [[throughput]] · [[mips64]]
+[[ac]] · [[pipeline]] · [[loop-unrolling]] · [[planificacion-estatica]] · [[vliw]] · [[riscv]] · [[bucles]] · [[segmentacion-software]] · [[comparativa]] · [[ilp]] · [[trace-scheduling]] · [[throughput]]

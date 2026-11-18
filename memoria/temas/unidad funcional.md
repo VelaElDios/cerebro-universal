@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «unidad funcional» (este 
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/tomasulo-resultados-via-common-data-bus-cdb|Tomasulo: resultados via Common Data Bus (CDB)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/tomasulo-resultados-via-common-data-bus-cdb|Tomasulo: resultados via Common Data Bus (CDB)]]
 
 ## Temas relacionados
 

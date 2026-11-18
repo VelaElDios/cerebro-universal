@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "examen"
-notas: 25
+notas: 26
 ---
 # examen
 
@@ -18,6 +18,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «examen» (este archivo se
 - 🧪 [[memoria/conocimiento/recetas/planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip|Planificación en VLIW 4 operaciones sin restricciones de tipo (emisión agresiva out-of-order estática)]]
 - 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos|Simulación de predictor one-level de 2 bits para dos saltos (B1/B2)]]
 - 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictor-two-level-correlacionante-2-1-con-bh|Simulación de predictor two-level correlacionante (2,1) con BHR de 2 bits y 4 entradas BHT]]
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/supuestos-del-examen-retardo-de-salto-ignorado-y-unidades-en|Supuestos del examen: retardo de salto ignorado y unidades enteras latencia 0]]
 
 ## Conceptos
 
@@ -43,4 +47,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «examen» (este archivo se
 
 ## Temas relacionados
 
-[[ac]] · [[vliw]] · [[tomasulo]] · [[pipeline]] · [[prediccion-saltos]] · [[planificacion]] · [[superscalar]] · [[rob]] · [[compatibilidad]] · [[especulacion]] · [[desenrollado-bucle]] · [[latencias]]
+[[ac]] · [[vliw]] · [[pipeline]] · [[tomasulo]] · [[prediccion-saltos]] · [[planificacion]] · [[superscalar]] · [[rob]] · [[compatibilidad]] · [[especulacion]] · [[desenrollado-bucle]] · [[latencias]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "poison-bits"
-notas: 5
+notas: 6
 ---
 # poison-bits
 
@@ -13,6 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «poison-bits» (este archi
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/bits-de-veneno-poison-bits-en-carga-especulativa-marcan-regi|Bits de veneno (poison bits) en carga especulativa marcan registro destino ante fallo de permiso]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/bits-venenosos-en-carga-especulativa-excepcion-diferida-hast|Bits venenosos en carga especulativa: excepción diferida hasta uso del registro]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion|Comportamiento de bits de veneno (poison bits) ante excepción en instrucción no especulativa]]
 - 💡 [[memoria/conocimiento/conceptos/condicion-necesaria-para-que-la-especulacion-sea-valida|Condición necesaria para que la especulación sea válida]]
@@ -20,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «poison-bits» (este archi
 
 ## Temas relacionados
 
-[[ac]] · [[especulacion]] · [[tomasulo]] · [[arquitectura]] · [[bits-veneno]] · [[excepciones]] · [[prediccion-saltos]] · [[examenes]]
+[[ac]] · [[especulacion]] · [[tomasulo]] · [[arquitectura]] · [[excepciones-diferidas]] · [[bits-veneno]] · [[excepciones]] · [[prediccion-saltos]] · [[examenes]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "salto-retardado"
-notas: 5
+notas: 6
 ---
 # salto-retardado
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «salto-retardado» (este a
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/configuracion-de-pipeline-mips64-para-problema-de-examen-lat|Configuración de pipeline MIPS64 para problema de examen (latencias FP, salto retardado, forwarding)]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-minimo-para-planificacion-sin-detencio|Desenrollado de bucle mínimo para planificación sin detenciones con salto retardado]]
 
 ## Conceptos

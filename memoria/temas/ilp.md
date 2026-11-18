@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "ilp"
-notas: 41
+notas: 48
 ---
 # ilp
 
@@ -21,6 +21,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 - 🧪 [[memoria/conocimiento/recetas/secuencia-de-instrucciones-y-dependencias-en-el-ejemplo-toma|Secuencia de instrucciones y dependencias en el ejemplo Tomasulo del tema 3]]
 - 🧪 [[memoria/conocimiento/recetas/tecnicas-avanzadas-estaticas-y-dinamicas-para-reducir-detenc|Técnicas avanzadas estáticas y dinámicas para reducir detenciones]] · ⚠️ propuesto
 
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/desenrollado-de-bucles-replicar-mientras-se-reduzcan-detenci|Desenrollado de bucles: replicar mientras se reduzcan detenciones (stalls)]] · ⚠️ propuesto
+
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-sisd-componentes-y-tecnicas-ilp-segmentacion-su|Arquitectura SISD: componentes y técnicas ILP (segmentación, superescalar, VLIW)]]
@@ -28,18 +32,24 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 - 💡 [[memoria/conocimiento/conceptos/definiciones-clave-basic-block-antidependencia-loop-unrollin|Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru|Definición de bloque básico en paralelismo a nivel de instrucción (pregunta 6)]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-procesador-vliw|Definición de procesador VLIW]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-y-objetivo-de-la-planificacion-de-trazas-trace-sc|Definición y objetivo de la planificación de trazas (trace scheduling)]]
 - 💡 [[memoria/conocimiento/conceptos/dependencias-en-el-bucle-de-ejemplo-vliw-examen-ac-2018|Dependencias en el bucle de ejemplo VLIW (examen AC 2018)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac|Desenrollado de bucle (loop unrolling) 3× para VLIW y compactación]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-loop-unrolling-permite-planificar|Desenrollamiento de bucles (loop unrolling) permite planificar instrucciones de distintas iteraciones]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/diferencia-fundamental-vliw-vs-superescalar-compilador-vs-ha|Diferencia fundamental VLIW vs Superescalar: compilador vs hardware detecta paralelismo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/efectos-de-la-especulacion-en-flujo-de-datos-ilp-y-excepcion|Efectos de la especulación en flujo de datos, ILP y excepciones]]
 - 💡 [[memoria/conocimiento/conceptos/ilp-alto-requiere-bajo-grado-de-dependencia-entre-instruccio|ILP alto requiere bajo grado de dependencia entre instrucciones]]
 - 💡 [[memoria/conocimiento/conceptos/impacto-de-la-frecuencia-de-saltos-en-el-ilp-y-tamano-de-blo|Impacto de la frecuencia de saltos en el ILP y tamaño de bloque básico]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/name-dependency-dependencia-de-nombre-incluye-waw-y-war|Name dependency (dependencia de nombre) incluye WAW y WAR]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/planificacion-de-trazas-trace-scheduling-para-condicionales|Planificación de trazas (trace scheduling) para condicionales en bucles]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-tomasulo-orden-de-ejecucion-por-dispo|Planificación dinámica (Tomasulo): orden de ejecución por disponibilidad de operandos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui|Planificación estática vs dinámica de instrucciones en Arquitectura de Computadores]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-software-software-pipelining-transforma-iterac|Planificación software (software pipelining) transforma iteraciones dependientes en independientes]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-planificacion-vliw-para-bucle-y-i-a-x-i-2|Problema examen AC: Planificación VLIW para bucle y(i)=A*x(i)² con latencias dadas]]
 - 💡 [[memoria/conocimiento/conceptos/procesadores-superescalares-definicion-origen-risc-ejemplos|Procesadores superescalares: definición, origen RISC, ejemplos x86 (Pentium Pro/II)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/proposito-de-la-planificacion-por-software-software-pipelini|Propósito de la planificación por software (software pipelining) (pregunta 8)]]
 - 💡 [[memoria/conocimiento/conceptos/proposito-de-la-segmentacion-software-software-pipelining-te|Propósito de la segmentación software (software pipelining) (test AC Q8)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/que-busca-conseguir-la-segmentacion-software-software-pipeli|Qué busca conseguir la segmentación software (software pipelining) en el código del bucle]]
 - 💡 [[memoria/conocimiento/conceptos/que-es-un-bloque-basico-basic-block-en-ilp|Qué es un bloque básico (basic block) en ILP]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/relacion-ilp-y-cpi-en-procesadores-segmentados|Relación ILP y CPI en procesadores segmentados]]
 - 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]] · ⚠️ propuesto
@@ -59,4 +69,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 
 ## Temas relacionados
 
-[[ac]] · [[vliw]] · [[planificacion]] · [[pipeline]] · [[bucles]] · [[optimizacion]] · [[planificacion-estatica]] · [[segmentación]] · [[sisd]] · [[superescalar]] · [[bloque-basico]] · [[prediccion-saltos]]
+[[ac]] · [[vliw]] · [[planificacion]] · [[planificacion-estatica]] · [[pipeline]] · [[optimizacion]] · [[bucles]] · [[superescalar]] · [[tomasulo]] · [[compilador]] · [[segmentación]] · [[sisd]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "planificacion"
-notas: 24
+notas: 29
 ---
 # planificacion
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion» (este arc
 - 🧪 [[memoria/conocimiento/recetas/como-resolver-planificacion-vliw-con-desenrollado-y-latencia|Cómo resolver planificación VLIW con desenrollado y latencias dadas]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-3x-y-planificacion-vliw-compactada|Desenrollado de bucle 3x y planificación VLIW compactada]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-8-veces-para-superscalar-con-latencias|Desenrollado de bucle 8 veces para superscalar con latencias FP]]
+- 🧪 [[memoria/conocimiento/recetas/metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi|Método para calcular speedup de bucle desenrollado y planificado vs original (examen AC 2017/18)]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr|Planificación superescalar MIPS64 4 vías con latencias PF (Problema 4 Enero 2015)]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame|Planificación VLIW de bucle con 6 unidades funcionales (examen Enero 2017)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en|Planificación VLIW de bucle con latencias dadas (examen AC enero 2018)]]
@@ -28,7 +29,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion» (este arc
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d|Cálculo de operaciones por ciclo (IPC) en planificación VLIW de bucle]]
 - 💡 [[memoria/conocimiento/conceptos/definiciones-clave-basic-block-antidependencia-loop-unrollin|Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)]]
 - 💡 [[memoria/conocimiento/conceptos/delayed-branch-en-vliw-y-su-efecto-en-planificacion|Delayed branch en VLIW y su efecto en planificación]]
-- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]]
+- 💡 [[memoria/conocimiento/conceptos/problema-de-desenrollado-y-planificacion-de-bucle-superescal|Problema de desenrollado y planificación de bucle superescalar con latencias dadas (examen AC 2017/18)]]
 - 💡 [[memoria/conocimiento/conceptos/problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa|Problema de planificación VLIW con desenrollado de bucle (examen AC enero 2016)]]
 - 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-planificacion-vliw-para-bucle-y-i-a-x-i-2|Problema examen AC: Planificación VLIW para bucle y(i)=A*x(i)² con latencias dadas]]
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-con-1-slot-de-retardo-en-vliw|Salto retardado (delayed branch) con 1 slot de retardo en VLIW]]
@@ -38,8 +40,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «planificacion» (este arc
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/codigo-del-bucle-original-para-planificacion-examen-ac-2017|Código del bucle original para planificación (examen AC 2017/18)]]
+- 📊 [[memoria/conocimiento/datos/formato-de-tabla-de-ayuda-para-planificacion-ciclo-emision-c|Formato de tabla de ayuda para planificación (ciclo emisión, ciclo ejecución)]]
+- 📊 [[memoria/conocimiento/datos/parametros-del-procesador-superescalar-en-problema-de-planif|Parámetros del procesador superescalar en problema de planificación de bucle (examen AC 2017/18)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/tabla-de-planificacion-vliw-vacia-del-examen-6-columnas-fila|Tabla de planificación VLIW vacía del examen (6 columnas, filas libres)]]
 
 ## Temas relacionados
 
-[[ac]] · [[vliw]] · [[ilp]] · [[examen]] · [[loop-unrolling]] · [[delayed-branch]] · [[desenrollado-bucle]] · [[bucles]] · [[bucle]] · [[mips64]] · [[superescalar]] · [[ipc]]
+[[ac]] · [[vliw]] · [[ilp]] · [[pipeline]] · [[examen]] · [[superescalar]] · [[bucle]] · [[loop-unrolling]] · [[delayed-branch]] · [[desenrollado]] · [[desenrollado-bucle]] · [[bucles]]

@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Cálculo de MIPS pico a partir de mezcla de instrucciones y frecuencias"
-temas: ["ac", "mips", "rendimiento"]
+temas: ["ac", "mips", "rendimiento", "cpi"]
 claves: ["MIPS pico", "frecuencia reloj", "ciclos por instrucción", "mezcla instrucciones"]
 proyectos: []
-fuentes: ["repo:datos/temarios/AC/examenes/Enero2022.pdf"]
+fuentes: ["repo:datos/temarios/AC/examenes/Enero2022.pdf", "repo:datos/temarios/AC/examenes/Junio2026.pdf"]
 confianza: "verificado"
 fecha: "2026-11-18"
 actualizado: "2026-11-18"
@@ -16,3 +16,6 @@ Para calcular MIPS pico: 1) Hallar CPI medio ponderado = Σ(%tipo_i × ciclos_ti
 
 > M1 necesita 3, 6, y 4 ciclos de reloj para ejecutar las instrucciones de tipo A, B y C, respectivamente. Por su parte, M2 emplea 4 ciclos para todos los tipos. M1 tiene una frecuencia de reloj de 400 MHz y M2 una frecuencia de 750 MHz. El programa de prueba que vamos a emplear tiene la siguiente mezcla de instrucciones: 40% de tipo A, 50% de tipo B, y 10% de tipo C.
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
+
+## Ampliación (2026-11-18, )
+CPI_medio = Σ (fracción_i * ciclos_i) = 0.4*2 + 0.3*4 + 0.3*6 = 3.8 ciclos/instr. MIPS_pico = Frecuencia_MHz / CPI_medio = 1000 MHz / 3.8 ≈ 263.15 MIPS. La opción correcta es "263,15".

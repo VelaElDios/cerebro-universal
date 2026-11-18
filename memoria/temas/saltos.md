@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "saltos"
-notas: 3
+notas: 4
 ---
 # saltos
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saltos» (este archivo se
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-salto-y-huecos-de-retardo|Definición de latencia de salto y huecos de retardo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/que-hace-la-planificacion-de-trazas-trace-scheduling|Qué hace la planificación de trazas (trace scheduling)]]
 
 ## Datos
 
@@ -21,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saltos» (este archivo se
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[benchmarks]] · [[ley-amdahl]] · [[rendimiento]]
+[[ac]] · [[pipeline]] · [[bucles]] · [[trace-scheduling]] · [[benchmarks]] · [[ley-amdahl]] · [[rendimiento]]

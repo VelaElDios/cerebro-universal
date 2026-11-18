@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "saas"
-notas: 108
+notas: 109
 ---
 # saas
 
@@ -37,6 +37,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saas» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker|Pipeline CI/CD: GitHub Actions con PostgreSQL 17 real, Docker, despliegue automático a Cloud Run]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-cloud-run-con-workload-identit|Pipeline CI/CD: GitHub Actions → Cloud Run con Workload Identity Federation (WIF) y despliegue alternativo en Render]]
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-docker-cloud-run-y-render|Pipeline CI/CD: GitHub Actions, Docker, Cloud Run y Render]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/planificacion-en-superescalar-grado-2-en-orden-fuera-de-orde|Planificación en superescalar grado 2: en orden, fuera de orden sin renombramiento, fuera de orden con renombramiento]]
 - 🧪 [[memoria/conocimiento/recetas/recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po|Recuperación de sesión al cargar (GET /api/auth/me) y logout (POST /api/auth/logout)]]
 - 🧪 [[memoria/conocimiento/recetas/registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y|Registro de usuario con confirmación por correo (HMAC, 24 h) y estado pending]]
 - 🧪 [[memoria/conocimiento/recetas/renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel|Renderizado de sprites chibi 32×32 por capas y píxel a píxel sin imágenes (rasgos, equipaciones, selecciones)]]

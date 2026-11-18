@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «registro» (este archivo 
 
 ## Temas relacionados
 
-[[ac]] · [[dependencias]] · [[renombramiento]] · [[autenticación]] · [[grada-colchonera]] · [[saas]]
+[[ac]] · [[dependencias]] · [[renombramiento]] · [[pipeline]] · [[autenticación]] · [[grada-colchonera]] · [[saas]]

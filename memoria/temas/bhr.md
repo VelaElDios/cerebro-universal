@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "bhr"
-notas: 10
+notas: 11
 ---
 # bhr
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bhr» (este archivo se ge
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-bits-totales-en-predictor-1-2-con-bht-de-4-entrad|Cálculo de bits totales en predictor (1,2) con BHT de 4 entradas y BHR]]
 - 🧪 [[memoria/conocimiento/recetas/implementacion-predictor-correlacionado-m-n-con-bhr-y-bht|Implementación predictor correlacionado (m,n) con BHR y BHT]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/interpretacion-del-bhr-en-predictor-correlacionado-m-n-test|Interpretación del BHR en predictor correlacionado (m,n) (test AC Q12)]]
 - 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictor-correlacionante-de-2-niveles-2-1-con|Simulación de predictor correlacionante de 2 niveles (2,1) con BHR global y BHT por entrada]] · ⚠️ propuesto
@@ -28,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bhr» (este archivo se ge
 
 ## Temas relacionados
 
-[[ac]] · [[prediccion-saltos]] · [[bht]] · [[predictor-correlacionado]] · [[correlating predictor]] · [[correlacionado]] · [[predicción saltos]] · [[shift register]] · [[arquitectura-computadores]] · [[correlacion]] · [[branch-prediction]] · [[correlating]]
+[[ac]] · [[prediccion-saltos]] · [[bht]] · [[predictor-correlacionado]] · [[correlating predictor]] · [[correlacionado]] · [[predicción saltos]] · [[shift register]] · [[predictor-dos-niveles]] · [[arquitectura-computadores]] · [[correlacion]] · [[branch-prediction]]

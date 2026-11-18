@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "optimizacion"
-notas: 15
+notas: 19
 ---
 # optimizacion
 
@@ -13,6 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «optimizacion» (este arch
 - 🧪 [[memoria/conocimiento/recetas/como-forzar-un-salto-condicional-real-en-gcc-para-medir-pred|Cómo forzar un salto condicional real en GCC para medir predicción de ramas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-fusionar-dos-bucles-en-uno-solo-para-aprovechar-localid|Cómo fusionar dos bucles en uno solo para aprovechar localidad temporal en L1]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-transformar-std-list-a-std-vector-con-reserva-previa-pa|Cómo transformar std::list a std::vector con reserva previa para mejorar localidad de caché]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-4x-con-salto-retardado-para-eliminar-s|Desenrollado de bucle 4x con salto retardado para eliminar stalls en pipeline in-order]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-minimo-para-planificacion-sin-detencio|Desenrollado de bucle mínimo para planificación sin detenciones con salto retardado]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-manual-manual-unrolling-con-4-acumuladores-para|Desenrollado manual (Manual Unrolling) con 4 acumuladores para romper cadena de dependencia y subir IPC]]
 - 🧪 [[memoria/conocimiento/recetas/optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul|Optimización ILP mediante desenrollado de bucle con 4 acumuladores independientes]] · ⚠️ propuesto
@@ -23,14 +24,17 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «optimizacion» (este arch
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/cuando-no-usar-branchless-trade-off-latencia-vs-previsibilid|Cuándo NO usar branchless (trade-off: latencia vs. previsibilidad)]]
+- ⚖️ [[memoria/conocimiento/decisiones/desenrollado-de-bucles-replicar-mientras-se-reduzcan-detenci|Desenrollado de bucles: replicar mientras se reduzcan detenciones (stalls)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/por-que-fusionar-bucles-de-normalizacion-y-suma-de-cuadrados|Por qué fusionar bucles de normalización y suma de cuadrados en una sola pasada]] · ⚠️ propuesto
 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-bloque-basico-test-ac-q7|Definición de bloque básico (test AC Q7)]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac|Desenrollado de bucle (loop unrolling) 3× para VLIW y compactación]]
-- 💡 [[memoria/conocimiento/conceptos/objetivo-del-desenrollamiento-de-bucles-loop-unrolling|Objetivo del desenrollamiento de bucles (loop unrolling)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-reduce-dependencias-de-control-me|Desenrollamiento de bucles: reduce dependencias de control mediante planificación estática]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/objetivo-del-desenrollamiento-de-bucles-loop-unrolling|Objetivo del desenrollamiento de bucles (loop unrolling)]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-de-trazas-trace-scheduling-elimina-saltos-inte|Planificación de trazas (trace scheduling): elimina saltos internos en bucles]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[bucles]] · [[pipeline]] · [[ilp]] · [[branchless]] · [[compiladores]] · [[loop-unrolling]] · [[cpp]] · [[vliw]] · [[tradeoff]] · [[temporal-locality]] · [[memoria]]
+[[ac]] · [[bucles]] · [[pipeline]] · [[ilp]] · [[loop-unrolling]] · [[branchless]] · [[compiladores]] · [[cpp]] · [[vliw]] · [[planificacion-trazas]] · [[tradeoff]] · [[desenrollado]]

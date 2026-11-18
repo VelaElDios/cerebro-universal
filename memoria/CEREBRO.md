@@ -44,8 +44,8 @@ buscar con RAG y, en el futuro, para entrenar una IA local. (este archivo se gen
 
 ## Ahora mismo
 
-2001 nodos y 7130 relaciones: 5 📁 proyecto, 826 🔵 tema, 34 ⚠️ leccion, 431 💡 concepto, 390 🧪 receta, 78 ⚖️ decision, 176 📊 dato, 61 📚 fuente · actualizado 2026-11-18 08:05
+2236 nodos y 8326 relaciones: 5 📁 proyecto, 865 🔵 tema, 34 ⚠️ leccion, 510 💡 concepto, 445 🧪 receta, 89 ⚖️ decision, 215 📊 dato, 73 📚 fuente · actualizado 2026-11-18 13:04
 
 ## Temas principales
 
-[[ac]] (909) · [[pipeline]] (183) · [[prediccion-saltos]] (167) · [[tomasulo]] (161) · [[grada-colchonera]] (131) · [[saas]] (108) · [[latex]] (100) · [[rendimiento]] (94) · [[arquitectura]] (69) · [[vliw]] (64) · [[memoria]] (51) · [[scrum]] (50) · [[tfg]] (45) · [[donetonic]] (45) · [[scoreboard]] (45) · [[dependencias]] (44) · [[arquitectura-computadores]] (43) · [[ilp]] (41) · [[cpi]] (40) · [[sprint]] (35) · [[mips64]] (33) · [[ley-amdahl]] (31) · [[superscalar]] (29) · [[mips]] (27) · [[especulacion]] (26) · [[planificacion-dinamica]] (26) · [[examen]] (25) · [[planificacion]] (24) · [[bucles]] (22) · [[loop-unrolling]] (22)
+[[ac]] (1105) · [[pipeline]] (284) · [[tomasulo]] (212) · [[prediccion-saltos]] (206) · [[grada-colchonera]] (131) · [[rendimiento]] (110) · [[saas]] (109) · [[latex]] (100) · [[arquitectura]] (72) · [[vliw]] (67) · [[dependencias]] (61) · [[memoria]] (51) · [[scrum]] (50) · [[ilp]] (48) · [[scoreboard]] (46) · [[cpi]] (46) · [[tfg]] (45) · [[donetonic]] (45) · [[arquitectura-computadores]] (43) · [[sprint]] (35) · [[ley-amdahl]] (35) · [[superscalar]] (35) · [[mips64]] (35) · [[especulacion]] (34) · [[bucles]] (31) · [[mips]] (30) · [[planificacion]] (29) · [[planificacion-dinamica]] (26) · [[loop-unrolling]] (26) · [[examen]] (26)

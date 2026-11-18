@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "emision"
-notas: 2
+notas: 3
 ---
 # emision
 
@@ -13,8 +13,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «emision» (este archivo s
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/en-tomasulo-sin-especulacion-la-emision-se-detiene-ante-ries|En Tomasulo sin especulación la emisión se detiene ante riesgo WAW]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/orden-de-emision-issue-en-scoreboard-orden-de-programa|Orden de emisión (issue) en Scoreboard: orden de programa]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[scoreboard]] · [[ejecucion]] · [[escritura]] · [[simulacion]] · [[tabla-estado]]
+[[ac]] · [[tomasulo]] · [[waw]] · [[scoreboard]] · [[ejecucion]] · [[escritura]] · [[simulacion]] · [[tabla-estado]]

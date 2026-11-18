@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "compilador"
-notas: 11
+notas: 12
 ---
 # compilador
 
@@ -16,9 +16,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «compilador» (este archiv
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/diferencia-entre-especulacion-software-y-hardware-falso-en-s|Diferencia entre especulación software y hardware (falso en software)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/diferencia-fundamental-vliw-vs-superescalar-compilador-vs-ha|Diferencia fundamental VLIW vs Superescalar: compilador vs hardware detecta paralelismo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-de-instrucciones-la-hace-el-compilado|Planificación estática de instrucciones la hace el compilador]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui|Planificación estática vs dinámica de instrucciones en Arquitectura de Computadores]]
-- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]]
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-planificacion-estatica|Salto retardado (delayed branch) en planificación estática]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-y-instrucciones-predicadas-como-alternativas|Salto retardado y instrucciones predicadas como alternativas a predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-de-las-instrucciones-predicadas|Ventajas e inconvenientes de las instrucciones predicadas]] · ⚠️ propuesto
@@ -26,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «compilador» (este archiv
 
 ## Temas relacionados
 
-[[ac]] · [[prediccion-saltos]] · [[instrucciones-predicadas]] · [[ilp]] · [[especulacion]] · [[estática]] · [[planificación]] · [[estatica]] · [[planificacion]] · [[hardware]] · [[planificacion-instrucciones]] · [[delayed-branch]]
+[[ac]] · [[prediccion-saltos]] · [[ilp]] · [[instrucciones-predicadas]] · [[hardware]] · [[vliw]] · [[planificacion-estatica]] · [[especulacion]] · [[superescalar]] · [[estática]] · [[planificación]] · [[estatica]]

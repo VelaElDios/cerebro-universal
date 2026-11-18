@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "vector"
-notas: 1
+notas: 2
 ---
 # vector
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «vector» (este archivo se
 
 - 🧪 [[memoria/conocimiento/recetas/estado-inicial-ciclo-1-de-un-bucle-vector-escalar-en-tomasul|Estado inicial (ciclo 1) de un bucle vector-escalar en Tomasulo]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/codigo-del-bucle-original-para-planificacion-examen-ac-2017|Código del bucle original para planificación (examen AC 2017/18)]]
+
 ## Temas relacionados
 
-[[ac]] · [[bucle]] · [[escalar]] · [[tomasulo]]
+[[ac]] · [[bucle]] · [[pipeline]] · [[planificacion]] · [[escalar]] · [[tomasulo]]

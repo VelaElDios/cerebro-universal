@@ -4,8 +4,8 @@ titulo: "Tomasulo: resultados via Common Data Bus (CDB)"
 temas: ["ac", "cdb", "tomasulo", "unidad funcional"]
 claves: ["Tomasulo", "CDB", "bus de datos común", "resultados", "estaciones de reserva"]
 proyectos: []
-fuentes: ["repo:datos/temarios/AC/examenes/Enero2014.pdf"]
-confianza: "propuesto"
+fuentes: ["repo:datos/temarios/AC/examenes/Enero2014.pdf", "repo:datos/temarios/AC/examenes/Junio2018.pdf"]
+confianza: "verificado"
 fecha: "2026-11-18"
 actualizado: "2026-11-18"
 ---
@@ -18,3 +18,6 @@ En el algoritmo de Tomasulo, el Common Data Bus (CDB) difunde los resultados de 
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
 
 Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]]
+
+## Ampliación (2026-11-18, )
+En el algoritmo de Tomasulo, cuando una unidad funcional termina su ejecución, coloca el resultado en el Common Data Bus (CDB). Todas las estaciones de reserva y buffers de carga que esperan ese resultado (identificados por etiqueta/Q) lo capturan simultáneamente del CDB. Esto permite el bypassing/forwarding sin escribir en el banco de registros. Respuesta correcta: a) CDB.

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "segmentacion-software"
-notas: 5
+notas: 6
 ---
 # segmentacion-software
 
@@ -15,6 +15,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «segmentacion-software» (
 - 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-bucle-conteo|Segmentación software (software pipelining) para bucle conteo negativos RISC-V]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-suma-vectoria|Segmentación software (software pipelining) para suma vectorial en RISC-V]]
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/que-busca-conseguir-la-segmentacion-software-software-pipeli|Qué busca conseguir la segmentación software (software pipelining) en el código del bucle]]
+
 ## Temas relacionados
 
-[[ac]] · [[planificacion-estatica]] · [[pipeline]] · [[software-pipelining]] · [[mips64]] · [[compilador-conoce-hardware]] · [[desenrollamiento]] · [[epilogue]] · [[kernel]] · [[prologue]] · [[modulo-scheduling]] · [[riscv]]
+[[ac]] · [[planificacion-estatica]] · [[pipeline]] · [[software-pipelining]] · [[ilp]] · [[mips64]] · [[compilador-conoce-hardware]] · [[desenrollamiento]] · [[epilogue]] · [[kernel]] · [[prologue]] · [[modulo-scheduling]]

@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latencies» (este archivo
 
 ## Temas relacionados
 
-[[ac]] · [[data-hazards]] · [[pipeline]]
+[[ac]] · [[data-hazards]] · [[pipeline]] · [[dependencias]] · [[latencias]]

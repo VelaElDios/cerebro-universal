@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "superscalar"
-notas: 29
+notas: 35
 ---
 # superscalar
 
@@ -10,13 +10,16 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «superscalar» (este archi
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/configuracion-superscalar-4-issue-para-diagramas-de-pipeline|Configuración superscalar 4-issue para diagramas de pipeline (examen AC enero 2022)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-desenrollamiento-de-bucle-y-superesca|Cálculo de speedup con desenrollamiento de bucle y superescalar]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-por-desenrollado-de-bucle-en-superscalar|Cálculo de speedup por desenrollado de bucle en superscalar]]
+- 🧪 [[memoria/conocimiento/recetas/como-construir-diagrama-de-gantt-tabla-de-ciclos-para-pipeli|Cómo construir diagrama de Gantt / tabla de ciclos para pipeline superescalar]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-8-veces-para-superscalar-con-latencias|Desenrollado de bucle 8 veces para superscalar con latencias FP]]
 - 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e|Diagrama pipeline superscalar grado 4: ejecución en orden y escritura en orden]]
 - 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r|Diagrama pipeline superscalar: ejecución fuera de orden con renombramiento y escritura fuera de orden]]
 - 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-sin-r|Diagrama pipeline superscalar: ejecución fuera de orden sin renombramiento, escritura en orden]]
 - 🧪 [[memoria/conocimiento/recetas/pasos-para-resolver-exercise-3-processor-a-superscalar-in-or|Pasos para resolver Exercise 3 Processor A (superscalar in-order sin renombrado)]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-en-superescalar-3-vias-entero-salto-memoria-fp|Planificación en superescalar 3-vías (entero/salto, memoria, FP) con ranura de retardo]]
+- 🧪 [[memoria/conocimiento/recetas/planificacion-en-superescalar-grado-2-con-sin-renombramiento|Planificación en superescalar grado 2 con/sin renombramiento]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-en-superscalar-mips64-4-vias-2-enteros-2-fp-co|Planificación en superscalar MIPS64 4 vías (2 enteros + 2 FP) con branch delayed 2 slots]]
 
 ## Decisiones (y por qué)
@@ -28,6 +31,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «superscalar» (este archi
 
 - 💡 [[memoria/conocimiento/conceptos/comparativa-eficiencia-operations-per-cycle-opc-superscalar|Comparativa eficiencia operations per cycle (OPC) superscalar vs VLIW en bucle desenrollado]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucles-loop-unrolling-en-superescalar-con-re|Desenrollado de bucles (loop unrolling) en superescalar con renombrado de registros]]
+- 💡 [[memoria/conocimiento/conceptos/diferencia-clave-entre-ejecucion-fuera-de-orden-sin-y-con-re|Diferencia clave entre ejecución fuera de orden sin y con renombramiento]]
 - 💡 [[memoria/conocimiento/conceptos/diferencias-clave-processor-a-superscalar-in-order-vs-proces|Diferencias clave Processor A (superscalar in-order) vs Processor B (VLIW) en Exercise 3]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs|Ejercicio 3 AC June 2019: comparación superscalar in-order vs VLIW]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/forwarding-de-resultado-en-ciclo-siguiente-al-write-modelo-s|Forwarding de resultado en ciclo siguiente al Write (modelo superscalar examen)]]
@@ -46,6 +50,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «superscalar» (este archi
 - 📊 [[memoria/conocimiento/datos/cpi-ideal-de-un-superescalar-de-grado-n-es-1-n|CPI ideal de un superescalar de grado N es 1/N]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/codigo-de-10-instrucciones-del-exercise-3-ac-june-2019|Código de 10 instrucciones del Exercise 3 AC June 2019]]
 - 📊 [[memoria/conocimiento/datos/codigo-de-instrucciones-para-ejercicio-2-tomasulo-especulati|Código de instrucciones para Ejercicio 2 (Tomasulo especulativo) y Ejercicio 3 (Superscalar)]]
+- 📊 [[memoria/conocimiento/datos/codigo-y-parametros-superescalar-examen-ac-junio-2013-p3|Código y parámetros superescalar examen AC Junio 2013 P3]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/latencias-de-etapas-memoria-y-ejecucion-en-superescalar-exam|Latencias de etapas memoria y ejecución en superescalar examen Junio 2013]]
 - 📊 [[memoria/conocimiento/datos/latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci|Latencias de instrucciones y supuestos de pipeline en Exercise 3 AC June 2019]]
 
 ## Temas relacionados

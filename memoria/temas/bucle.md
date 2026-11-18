@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "bucle"
-notas: 6
+notas: 7
 ---
 # bucle
 
@@ -16,9 +16,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bucle» (este archivo se 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/codigo-del-bucle-original-para-planificacion-examen-ac-2017|Código del bucle original para planificación (examen AC 2017/18)]]
 - 📊 [[memoria/conocimiento/datos/codigo-del-bucle-y-valores-iniciales-de-registros-para-vliw|Código del bucle y valores iniciales de registros para VLIW Problema 3b]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/evolucion-de-la-direccion-base-x1-en-las-dos-iteraciones-del|Evolución de la dirección base x1 en las dos iteraciones del ejemplo]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[vliw]] · [[tomasulo]] · [[planificacion]] · [[desenrollado]] · [[registros-iniciales]] · [[direccionamiento]] · [[dependencias]] · [[mips]] · [[pipeline]] · [[examen]] · [[escalar]]
+[[ac]] · [[planificacion]] · [[vliw]] · [[pipeline]] · [[vector]] · [[tomasulo]] · [[desenrollado]] · [[registros-iniciales]] · [[direccionamiento]] · [[dependencias]] · [[mips]] · [[examen]]

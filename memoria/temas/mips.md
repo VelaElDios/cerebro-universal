@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "mips"
-notas: 27
+notas: 30
 ---
 # mips
 
@@ -11,6 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-en-bucle-mips-con-acceso-a-memoria|Análisis de dependencias en bucle MIPS con acceso a memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/comparativa-de-rendimiento-mips-entre-dos-implementaciones-c|Comparativa de rendimiento MIPS entre dos implementaciones con distinto CPI (pregunta 4)]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-medio-ponderado-en-implementacion-multiciclo-mips|CPI medio ponderado en implementación multiciclo MIPS]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas|Cálculo de CPI medio, MIPS y speedup entre dos máquinas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-a-partir-de-frecuencia-cpi-por-tipo-y-mezcla|Cálculo de MIPS a partir de frecuencia, CPI por tipo y mezcla de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-a-partir-de-mezcla-de-instrucciones-cpi-y-fr|Cálculo de MIPS a partir de mezcla de instrucciones, CPI y frecuencia]]
@@ -22,6 +23,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f|Cálculo de MIPS pico a partir de mezcla de instrucciones y frecuencias]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4|Cálculo de MIPS pico para comparar máquinas (test AC Q4)]]
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-mips-pico-peak-mips-eligiendo-la-instruccion-m|Cómo calcular MIPS pico (peak MIPS) eligiendo la instrucción más rápida]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-mips-pico-a-partir-de-frecuencia-y-cpi-minimo|Cómo calcular MIPS pico a partir de frecuencia y CPI mínimo]]
 - 🧪 [[memoria/conocimiento/recetas/dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema|Dependencias en bucle MIPS64 de encriptación ASCIIZ (Problema 1)]]
 - 🧪 [[memoria/conocimiento/recetas/ejercicios-de-cpi-mips-y-tiempo-de-ejecucion-con-mezcla-de-i|Ejercicios de CPI, MIPS y tiempo de ejecución con mezcla de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/igualar-mips-entre-dos-maquinas-despejando-frecuencia-de-rel|Igualar MIPS entre dos máquinas despejando frecuencia de reloj (ejercicio 15)]] · ⚠️ propuesto
@@ -29,12 +31,13 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS: se accede en etapas ID y WB]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS: se accede en etapas ID y WB]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo|Definición de MIPS (Millones de Instrucciones Por Segundo)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo-y-c|Definición de MIPS (Millones de Instrucciones Por Segundo) y coste-efectividad]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr|Dependencia entre iteraciones en bucle con S.D y DADDUI sobre R1]]
 - 💡 [[memoria/conocimiento/conceptos/etapas-de-uso-del-banco-de-registros-en-pipeline-mips-de-5-e|Etapas de uso del banco de registros en pipeline MIPS de 5 etapas]]
 - 💡 [[memoria/conocimiento/conceptos/paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza|Paradoja MIPS vs tiempo de ejecución: mayor MIPS no garantiza menor tiempo]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r|Penalización de salto en MIPS con resolución en ID y salto retardado: cero ciclos]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]
 - 💡 [[memoria/conocimiento/conceptos/riesgo-load-use-en-pipeline-mips-con-forwarding|Riesgo load-use en pipeline MIPS con forwarding]] · ⚠️ propuesto
 
@@ -45,4 +48,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 
 ## Temas relacionados
 
-[[ac]] · [[rendimiento]] · [[pipeline]] · [[cpi]] · [[dependencias]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[evaluacion-rendimiento]] · [[registros]] · [[coste-efectividad]] · [[métricas]] · [[loop-carried]]
+[[ac]] · [[rendimiento]] · [[pipeline]] · [[cpi]] · [[dependencias]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[evaluacion-rendimiento]] · [[prediccion-saltos]] · [[registros]] · [[coste-efectividad]] · [[métricas]]

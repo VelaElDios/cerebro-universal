@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "mips64"
-notas: 33
+notas: 35
 ---
 # mips64
 
@@ -9,9 +9,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips64» (este archivo se
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-y-planificacion-de-bucle-mips64-con|Análisis de dependencias y planificación de bucle MIPS64 con unidades FP segmentadas (examen Junio 2013)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-pipeline-fp-para-bucle-media-ponderada-problema|Análisis de pipeline FP para bucle media ponderada (Problema 1) con latencias L.D=1, MUL.D=3, ADD.D=2, DIV.D=5, S.D=1]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/analisis-de-stalls-en-bucle-mips64-con-forwarding-y-ramas-re|Análisis de stalls en bucle MIPS64 con forwarding y ramas resueltas en ID (Ejercicio 1a)]]
 - 🧪 [[memoria/conocimiento/recetas/bucle-mips64-para-contar-ocurrencias-de-un-caracter-en-caden|Bucle MIPS64 para contar ocurrencias de un carácter en cadena ASCIIZ]]
+- 🧪 [[memoria/conocimiento/recetas/configuracion-de-pipeline-mips64-para-problema-de-examen-lat|Configuración de pipeline MIPS64 para problema de examen (latencias FP, salto retardado, forwarding)]]
 - 🧪 [[memoria/conocimiento/recetas/conversion-de-codigo-vliw-compactado-a-bucle-mips64-segmenta|Conversión de código VLIW compactado a bucle MIPS64 segmentado con un resultado por iteración]]
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-cycles-per-result-cpr-en-bucles-pipelined-con|Cómo calcular Cycles Per Result (CPR) en bucles pipelined con stalls]]
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi|Cómo calcular stalls en pipeline MIPS64 con operand forwarding y latencias FP conocidas]] · ⚠️ propuesto
@@ -54,4 +56,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips64» (este archivo se
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[prediccion-saltos]] · [[tomasulo]] · [[floating-point]] · [[superescalar]] · [[loop-unrolling]] · [[branch-prediction]] · [[loop]] · [[especulacion]] · [[stalls]] · [[dependencias]]
+[[ac]] · [[pipeline]] · [[prediccion-saltos]] · [[tomasulo]] · [[floating-point]] · [[superescalar]] · [[loop-unrolling]] · [[dependencias]] · [[punto-flotante]] · [[branch-prediction]] · [[loop]] · [[especulacion]]

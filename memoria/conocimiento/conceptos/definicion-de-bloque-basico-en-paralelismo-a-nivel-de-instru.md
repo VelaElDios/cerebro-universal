@@ -1,10 +1,10 @@
 ---
 tipo: "concepto"
 titulo: "Definición de bloque básico en paralelismo a nivel de instrucción (pregunta 6)"
-temas: ["ac", "bloque-basico", "ilp"]
+temas: ["ac", "bloque-basico", "ilp", "salto"]
 claves: ["basic block", "instrucciones", "salto", "dependencias"]
 proyectos: []
-fuentes: ["repo:datos/temarios/AC/examenes/June2022.pdf"]
+fuentes: ["repo:datos/temarios/AC/examenes/June2022.pdf", "repo:datos/temarios/AC/examenes/Junio2011.pdf"]
 confianza: "verificado"
 fecha: "2026-11-18"
 actualizado: "2026-11-18"
@@ -18,3 +18,6 @@ Un basic block es una secuencia de instrucciones consecutivas sin saltos ni etiq
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
 Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+
+## Ampliación (2026-11-18, )
+Un bloque básico es una secuencia de instrucciones consecutivas que no contiene saltos (ni condicionales ni incondicionales) en su interior, salvo posiblemente al final. Es la unidad básica para la planificación local y la predicción de saltos.

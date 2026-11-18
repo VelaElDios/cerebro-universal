@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "vliw"
-notas: 64
+notas: 67
 ---
 # vliw
 
@@ -17,6 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «vliw» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-vliw-vs-mips64-segmentado-considerando-me|Cálculo de speedup VLIW vs MIPS64 segmentado considerando mejor planificación]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-speedup-vliw-vs-escalar-para-examen-enero-2026-probl|Cálculo speedup VLIW vs escalar para examen Enero 2026 Problema 3b]]
 - 🧪 [[memoria/conocimiento/recetas/codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017|Código del bucle a planificar en VLIW (examen AC enero 2017)]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-instrucciones-vliw-necesarias-para-codigo-inde|Cómo calcular instrucciones VLIW necesarias para código independiente]]
 - 🧪 [[memoria/conocimiento/recetas/como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo|Cómo desenrollar 4 veces y planificar bucle VLIW para máximo aprovechamiento (examen enero 2023)]]
 - 🧪 [[memoria/conocimiento/recetas/como-resolver-planificacion-vliw-con-desenrollado-y-latencia|Cómo resolver planificación VLIW con desenrollado y latencias dadas]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-3x-y-planificacion-vliw-compactada|Desenrollado de bucle 3x y planificación VLIW compactada]]
@@ -51,6 +52,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «vliw» (este archivo se g
 - 💡 [[memoria/conocimiento/conceptos/delayed-branch-en-vliw-y-su-efecto-en-planificacion|Delayed branch en VLIW y su efecto en planificación]]
 - 💡 [[memoria/conocimiento/conceptos/dependencias-en-el-bucle-de-ejemplo-vliw-examen-ac-2018|Dependencias en el bucle de ejemplo VLIW (examen AC 2018)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac|Desenrollado de bucle (loop unrolling) 3× para VLIW y compactación]]
+- 💡 [[memoria/conocimiento/conceptos/diferencia-fundamental-vliw-vs-superescalar-compilador-vs-ha|Diferencia fundamental VLIW vs Superescalar: compilador vs hardware detecta paralelismo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/diferencias-clave-processor-a-superscalar-in-order-vs-proces|Diferencias clave Processor A (superscalar in-order) vs Processor B (VLIW) en Exercise 3]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs|Ejercicio 3 AC June 2019: comparación superscalar in-order vs VLIW]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/forwarding-en-vliw-estatico-y-latencias-efectivas|Forwarding en VLIW estático y latencias efectivas]]
@@ -59,6 +61,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «vliw» (este archivo se g
 - 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-planificacion-vliw-para-bucle-y-i-a-x-i-2|Problema examen AC: Planificación VLIW para bucle y(i)=A*x(i)² con latencias dadas]]
 - 💡 [[memoria/conocimiento/conceptos/procesador-b-vliw-4-issue-sin-restricciones-de-tipo-con-plan|Procesador B: VLIW 4-issue sin restricciones de tipo con planificación estática agresiva]]
 - 💡 [[memoria/conocimiento/conceptos/que-representa-un-trace-en-trace-scheduling|Qué representa un trace en trace scheduling]]
+- 💡 [[memoria/conocimiento/conceptos/rasgo-comun-entre-superescalares-y-vliw-multiples-unidades-d|Rasgo común entre superescalares y VLIW: múltiples unidades de ejecución en paralelo]]
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-con-1-slot-de-retardo-en-vliw|Salto retardado (delayed branch) con 1 slot de retardo en VLIW]]
 - 💡 [[memoria/conocimiento/conceptos/unidades-funcionales-y-ciclos-en-vliw-con-2-mem-2-fp-1-int-b|Unidades funcionales y ciclos en VLIW con 2 mem, 2 FP, 1 int/branch por ciclo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/vliw-el-compilador-empaqueta-varias-operaciones-en-una-instr|VLIW: el compilador empaqueta varias operaciones en una instrucción larga]] · ⚠️ propuesto
@@ -85,4 +88,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «vliw» (este archivo se g
 
 ## Temas relacionados
 
-[[ac]] · [[pipeline]] · [[planificacion]] · [[examen]] · [[ilp]] · [[rendimiento]] · [[superscalar]] · [[ipc]] · [[loop-unrolling]] · [[planificacion-estatica]] · [[bucle]] · [[speedup]]
+[[ac]] · [[pipeline]] · [[planificacion]] · [[examen]] · [[ilp]] · [[rendimiento]] · [[superscalar]] · [[ipc]] · [[planificacion-estatica]] · [[superescalar]] · [[loop-unrolling]] · [[bucle]]

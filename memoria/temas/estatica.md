@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estatica» (este archivo 
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]]
 
 ## Temas relacionados
 
-[[ac]] · [[compilador]] · [[planificacion]]
+[[ac]] · [[compilador]] · [[planificacion]] · [[pipeline]] · [[planificacion-estatica]]

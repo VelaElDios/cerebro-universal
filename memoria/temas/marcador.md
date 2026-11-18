@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "marcador"
-notas: 5
+notas: 6
 ---
 # marcador
 
@@ -17,7 +17,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «marcador» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/limitacion-de-la-planificacion-estatica-que-motiva-la-planif|Limitación de la planificación estática que motiva la planificación dinámica]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio|Marcador (Scoreboard) distingue riesgos RAW y WAR con detenciones opuestas]]
 - 💡 [[memoria/conocimiento/conceptos/problemas-del-marcador-scoreboard-en-planificacion-dinamica|Problemas del marcador (scoreboard) en planificación dinámica]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/riesgos-resueltos-por-marcador-y-por-tomasulo-sin-especulaci|Riesgos resueltos por Marcador y por Tomasulo sin especulación]]
 
 ## Temas relacionados
 
-[[ac]] · [[planificacion-dinamica]] · [[tomasulo]] · [[scoreboard]] · [[emision-en-orden]] · [[riesgos-raw-war]] · [[arquitectura]] · [[tabla-temporizacion]]
+[[ac]] · [[planificacion-dinamica]] · [[tomasulo]] · [[scoreboard]] · [[emision-en-orden]] · [[riesgos-raw-war]] · [[arquitectura]] · [[riesgos]] · [[tabla-temporizacion]]

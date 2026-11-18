@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "arquitectura"
-notas: 69
+notas: 72
 ---
 # arquitectura
 
@@ -34,11 +34,13 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «arquitectura» (este arch
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-de-calculos-en-lualatex-para-plantilla-sus|Arquitectura de cálculos en LuaLaTeX para plantilla SUS]]
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-node-js-express-postg|Arquitectura en capas cliente-servidor (Node.js/Express + PostgreSQL + integraciones)]]
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/arquitectura-vs-organizacion-misma-arquitectura-implica-mism|Arquitectura vs organización: misma arquitectura implica mismo juego de instrucciones]]
 - 💡 [[memoria/conocimiento/conceptos/bht-branch-history-table-tabla-separada-para-bits-de-predicc|BHT (Branch History Table): tabla separada para bits de predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas|Bits de predicción en la I-caché: funcionamiento y ventajas]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion|BTB (Branch Target Buffer): fusión de BTAC y bits de predicción en una sola estructura]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/buffers-de-carga-y-almacenamiento-en-tomasulo|Buffers de carga y almacenamiento en Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/campos-qj-qk-rj-rk-en-el-estado-de-unidades-funcionales-del|Campos Qj, Qk, Rj, Rk en el estado de unidades funcionales del marcador]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/clasificacion-de-multiprocesadores-en-taxonomia-de-flynn|Clasificación de multiprocesadores en taxonomía de Flynn]]
 - 💡 [[memoria/conocimiento/conceptos/clasificacion-de-tipos-de-computadores-segun-requisitos-de-d|Clasificación de tipos de computadores según requisitos de diseño]]
 - 💡 [[memoria/conocimiento/conceptos/contenido-de-una-estacion-de-reserva-en-tomasulo|Contenido de una estación de reserva en Tomasulo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-arquitectura-de-computador-visible-al-programa|Definición de arquitectura de computador visible al programador]] · ⚠️ propuesto
@@ -57,6 +59,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «arquitectura» (este arch
 - 💡 [[memoria/conocimiento/conceptos/idea-central-de-tomasulo-control-distribuido-con-estaciones|Idea central de Tomasulo: control distribuido con estaciones de reserva]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mecanismo-cooperacion-hardware-software-sin-distincion-instr|Mecanismo cooperación hardware/software sin distinción instrucciones especulativas]]
 - 💡 [[memoria/conocimiento/conceptos/mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt|Mecanismos de recuperación ante fallos de predicción de saltos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/multicomputadores-sistemas-de-memoria-distribuida-varios-esp|Multicomputadores = sistemas de memoria distribuida, varios espacios de direcciones, sin coherencia hardware]]
 - 💡 [[memoria/conocimiento/conceptos/multiples-caminos-como-tecnica-de-prediccion-de-saltos|Múltiples caminos como técnica de predicción de saltos]]
 - 💡 [[memoria/conocimiento/conceptos/parametros-del-experimento-tamano-de-datos-bloque-y-repetici|Parámetros del experimento: tamaño de datos, bloque y repeticiones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/planteamiento-general-de-prediccion-de-saltos-con-ejecucion|Planteamiento general de predicción de saltos con ejecución especulativa]]

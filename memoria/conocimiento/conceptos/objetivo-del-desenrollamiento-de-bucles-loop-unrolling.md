@@ -1,11 +1,11 @@
 ---
 tipo: "concepto"
 titulo: "Objetivo del desenrollamiento de bucles (loop unrolling)"
-temas: ["ac", "bucles", "optimizacion", "pipeline"]
+temas: ["ac", "bucles", "optimizacion", "pipeline", "loop-unrolling"]
 claves: ["loop unrolling", "control hazards", "branch stalls"]
 proyectos: []
-fuentes: ["repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)"]
-confianza: "propuesto"
+fuentes: ["repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)", "repo:datos/temarios/AC/examenes/Noviembre2011.pdf"]
+confianza: "verificado"
 fecha: "2026-11-18"
 actualizado: "2026-11-18"
 ---
@@ -16,3 +16,6 @@ El desenrollamiento de bucles replica el cuerpo del bucle varias veces para redu
 
 > The loop unrolling technique pursues... Reduce stalls due to control hazards
 > — `repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)` (cita sin comprobar)
+
+## Ampliación (2026-11-18, )
+El desenrollamiento replica el cuerpo del bucle para reducir la sobrecarga de control (saltos) y permitir al compilador reordenar instrucciones de distintas iteraciones, reduciendo **riesgos de datos** (stalls por dependencias). Aumenta el tamaño del código. Respuesta correcta: b).

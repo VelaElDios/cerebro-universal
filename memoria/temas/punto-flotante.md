@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "punto-flotante"
-notas: 12
+notas: 16
 ---
 # punto-flotante
 
@@ -11,6 +11,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «punto-flotante» (este ar
 
 - 🧪 [[memoria/conocimiento/recetas/algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej|Algoritmo de Marcador (Scoreboard): pasos de simulación para ejercicios]]
 - 🧪 [[memoria/conocimiento/recetas/algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d|Algoritmo de Tomasulo: reglas de simulación para ejercicios de examen]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-y-planificacion-de-bucle-mips64-con|Análisis de dependencias y planificación de bucle MIPS64 con unidades FP segmentadas (examen Junio 2013)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-encontrar-fraccion-de-co|Aplicación de la ley de Amdahl para encontrar fracción de código FP necesaria para un speedup dado]]
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg|Cómo leer la evolución ciclo a ciclo de un marcador con cargas y operaciones FP]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado|Desenrollamiento de bucles (loop unrolling) 4x con renombrado de registros en RISC-V]] · ⚠️ propuesto
 
@@ -24,10 +26,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «punto-flotante» (este ar
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/analisis-de-dependencias-en-codigo-fp-con-registro-f1-raw-y|Análisis de dependencias en código FP con registro F1 (RAW y WAW)]]
 - 📊 [[memoria/conocimiento/datos/latencia-de-carga-fp-y-multiplicacion-doble-en-la-simulacion|Latencia de carga FP y multiplicación doble en la simulación Tomasulo]]
 - 📊 [[memoria/conocimiento/datos/latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d|Latencias típicas de unidades funcionales FP en ejercicios del temario (ciclos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/latencias-y-grado-de-segmentacion-de-uf-fp-en-problema-1|Latencias y grado de segmentación de UF FP en Problema 1]]
 - 📊 [[memoria/conocimiento/datos/parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult|Parámetros de pipeline RISC-V FP para ejercicios Tema 2 (multiplicador 3 ciclos, divisor 4/6 ciclos)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[scoreboard]] · [[arquitectura]] · [[latencia]] · [[dependencias]] · [[mips64]] · [[simulacion]] · [[pipeline]] · [[planificacion-dinamica]] · [[raw]] · [[hazards]]
+[[ac]] · [[tomasulo]] · [[pipeline]] · [[dependencias]] · [[scoreboard]] · [[mips64]] · [[arquitectura]] · [[latencia]] · [[simulacion]] · [[planificacion-dinamica]] · [[raw]] · [[hazards]]

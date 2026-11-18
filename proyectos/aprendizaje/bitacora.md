@@ -102,3 +102,22 @@ Trozos leídos: 24 · notas nuevas o ampliadas: 203
 - ✅ `repo:datos/temarios/AC/examenes/June2022.pdf` aprendido entero: 18 notas → [[fuente-june2022-examenes]]
 - ✅ `repo:datos/temarios/AC/examenes/June2023.pdf` aprendido entero: 18 notas → [[fuente-june2023-examenes]]
 - ⏳ `repo:datos/temarios/AC/examenes/June2025.pdf`: trozo 1 de 2
+
+## 2026-11-18 13:04 · 📚 Aprendizaje
+
+Trozos leídos: 22 · notas nuevas o ampliadas: 196
+
+**Repos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100 · datos @ 8288a8f 2026-11-18 07:06:06 +0000
+
+- ✅ `repo:datos/temarios/AC/examenes/June2025.pdf` aprendido entero: 17 notas → [[fuente-june2025-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2011.pdf` aprendido entero: 15 notas → [[fuente-junio2011-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2012.pdf` aprendido entero: 17 notas → [[fuente-junio2012-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2013.pdf` aprendido entero: 20 notas → [[fuente-junio2013-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2014.pdf` aprendido entero: 17 notas → [[fuente-junio2014-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2015.pdf` aprendido entero: 20 notas → [[fuente-junio2015-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2016.pdf` aprendido entero: 17 notas → [[fuente-junio2016-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2017.pdf` aprendido entero: 16 notas → [[fuente-junio2017-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2018.pdf` aprendido entero: 20 notas → [[fuente-junio2018-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2025.pdf` aprendido entero: 17 notas → [[fuente-junio2025-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Junio2026.pdf` aprendido entero: 20 notas → [[fuente-junio2026-examenes]]
+- ✅ `repo:datos/temarios/AC/examenes/Noviembre2011.pdf` aprendido entero: 10 notas → [[fuente-noviembre2011-examenes]]

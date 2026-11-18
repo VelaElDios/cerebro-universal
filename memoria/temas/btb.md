@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "btb"
-notas: 15
+notas: 17
 ---
 # btb
 
@@ -21,9 +21,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «btb» (este archivo se ge
 - 💡 [[memoria/conocimiento/conceptos/ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas|Ancho y tamaño en bits de un BTB implícito con 1024 entradas y bus de 24 bits]]
 - 💡 [[memoria/conocimiento/conceptos/btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion|BTB (Branch Target Buffer): fusión de BTAC y bits de predicción en una sola estructura]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/btb-con-predictores-de-4-bits-campos-de-cada-entrada|BTB con predictores de 4 bits: campos de cada entrada]]
+- 💡 [[memoria/conocimiento/conceptos/btb-cache-de-direcciones-destino-de-saltos-con-bits-de-predi|BTB: cache de direcciones destino de saltos con bits de predicción]]
 - 💡 [[memoria/conocimiento/conceptos/comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14|Comportamiento de la BTB en caso de acierto (test AC Q14)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definiciones-btb-ejecucion-multicamino-especulacion-software|Definiciones: BTB, ejecución multicamino, especulación software, superescalar CPI ideal, Intel P7, multicore, PowerPC]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estructura-que-almacena-direccion-destino-de-saltos-tomados|Estructura que almacena dirección destino de saltos tomados recientemente]]
+- 💡 [[memoria/conocimiento/conceptos/implementacion-de-btb-generica-ampliacion-de-btac-con-bits-d|Implementación de BTB genérica: ampliación de BTAC con bits de predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/prediccion-implicita-sin-bits-de-prediccion-en-btb|Predicción implícita sin bits de predicción en BTB]]
 - 💡 [[memoria/conocimiento/conceptos/proposito-del-branch-target-buffer-btb-ademas-de-bits-de-pre|Propósito del Branch Target Buffer (BTB) además de bits de predicción]] · ⚠️ propuesto
 
@@ -33,4 +35,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «btb» (este archivo se ge
 
 ## Temas relacionados
 
-[[ac]] · [[prediccion-saltos]] · [[arquitectura]] · [[cpi]] · [[fallo-btb]] · [[btac]] · [[especulacion-software]] · [[intel-p7]] · [[multicamino]] · [[multicore]] · [[powerpc]] · [[superescalar]]
+[[ac]] · [[prediccion-saltos]] · [[arquitectura]] · [[btac]] · [[cpi]] · [[fallo-btb]] · [[especulacion-software]] · [[intel-p7]] · [[multicamino]] · [[multicore]] · [[powerpc]] · [[superescalar]]
