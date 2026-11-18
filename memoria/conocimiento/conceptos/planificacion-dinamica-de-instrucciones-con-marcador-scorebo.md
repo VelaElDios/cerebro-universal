@@ -16,3 +16,5 @@ La planificación dinámica permite que las instrucciones se ejecuten fuera de o
 
 > Comenzar a ejecutar una instrucción cuando los operandos estén disponibles
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
+
+Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]]

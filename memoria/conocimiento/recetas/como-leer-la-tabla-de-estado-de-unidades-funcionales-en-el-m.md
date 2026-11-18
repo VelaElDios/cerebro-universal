@@ -19,3 +19,5 @@ Cada fila representa una unidad funcional. Columnas: Nombre (tipo UF), Ocupada (
 
 ## Ampliación (2026-11-17, )
 Cada fila de unidad funcional muestra: UF (índice), Nombre (Entera, Mult1, Mult2, Suma, Divide), Ocupada (SI/NO o ciclos restantes), Op (operación), Fi (registro destino), Fj/Fk (registros fuente), Qj/Qk (índice de UF que producirá el operando, o vacío si ya disponible), Rj/Rk (banderas NO/SI indicando si el operando está listo). Ejemplo: Mult1 en ciclo 16 está ocupada (3 ciclos restantes), opera Mult, destino f0, fuentes f2 y f4, sin dependencias (Qj/Qk vacíos, Rj=NO, Rk=NO).
+
+Relacionado: [[estado-de-registros-resultado-register-result-status-en-el-m]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador]] · [[semantica-de-los-campos-qj-qk-rj-rk-en-el-estado-de-uf]]

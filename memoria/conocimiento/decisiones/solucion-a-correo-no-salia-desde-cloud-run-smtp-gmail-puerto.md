@@ -17,4 +17,6 @@ Problema: emails no se enviaban desde Cloud Run. Causa: puertos SMTP estándar (
 > | El correo no salía desde Cloud Run | El SMTP sin cifrar (puerto 25/587) suele estar bloqueado | SMTP de Gmail por el puerto 465 con contraseña de aplicación, guardada en Secret Manager |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
+Relacionado: [[como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica]] · [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]] · [[script-de-configuracion-de-secretos-hito-4-en-gcp]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

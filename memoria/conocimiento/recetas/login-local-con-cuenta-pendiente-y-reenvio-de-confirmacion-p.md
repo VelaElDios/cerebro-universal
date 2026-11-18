@@ -21,6 +21,6 @@ El usuario envía email y contraseña desde la vista `entrar.js`. `api.js` llama
 > U->>V: Email y contraseña V->>C: login(email, password) C->>A: POST /login A->>S: authenticate() alt Email desconocido o contraseña mala S-->>A: UnauthorizedError A-->>C: 401 «Email o contraseña incorrectos» (log auth.login_failed) else Cuenta eliminada S-->>A: ForbiddenError A-->>C: 403 FORBIDDEN else Cuenta pendiente S-->>A: AccountPendingError A-->>C: 403 ACCOUNT_PENDING C-->>V: Muestra «Reenviar el correo de confirmación» U->>V: Pulsa Reenviar V->>C: resendConfirmation(email) C->>A: POST /resend-confirmation A-->>C: 202 (mismo mensaje exista o no la cuenta) else Correcto A->>A: Regenera la sesión y guarda userId A-->>C: 200 usuario + cookie grada.sid (httpOnly) C-->>V: ponerUsuario() → #/jugar
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[maquina-de-estados-de-la-cuenta-de-usuario]]
+Relacionado: [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[flujo-de-registro-con-email-y-contrasena]] · [[flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf]] · [[recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -23,4 +23,6 @@ Flujo completo implementado y verificado:
 > Al registrarse la cuenta queda `pending` y se envía un correo con un enlace firmado (HMAC, 24 h). `GET /api/auth/confirm` la activa; una cuenta pendiente no puede entrar (`403 ACCOUNT_PENDING`) y puede pedir otro correo. `REQUIRE_EMAIL_CONFIRMATION` está activo por defecto
 > — `repo:saas/docs/revision-entrega.md`
 
+Relacionado: [[flujo-de-registro-con-email-y-contrasena]] · [[flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf]] · [[comportamiento-de-cuentas-segun-metodo-de-registro-y-estado]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

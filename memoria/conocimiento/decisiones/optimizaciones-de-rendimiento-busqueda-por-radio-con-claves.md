@@ -17,4 +17,6 @@ Dos optimizaciones clave: 1) Búsqueda de obstáculos: antes usaba claves de tex
 > Simulación lenta con muchos rivales. Búsqueda de obstáculos con claves de texto y demasiadas celdas. Búsqueda por radio con claves numéricas: unas 4,5 veces más rápida. Tirones al pintar el suelo. Se pintaban muchas texturas por píxel en el mismo fotograma. Una textura por celda y ambiente, como mucho una por fotograma y por adelantado
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
+Relacionado: [[renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[generacion-de-mundo-procedural-infinito-con-distritos-estadi]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

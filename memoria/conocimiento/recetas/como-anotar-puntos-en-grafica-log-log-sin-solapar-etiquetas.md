@@ -38,3 +38,5 @@ Técnica para colocar etiquetas junto a puntos en escala log-log sin que se sola
 
 > plt.annotate(f"{etiqueta} \n ({x_p:.2f}, {y_p:.1f})", (x_p, y_p), textcoords="offset points", xytext=offset, ha=ha, fontsize=9, fontweight='bold', color=color)
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py`
+
+Relacionado: [[anotacion-automatica-de-valores-sobre-puntos-en-matplotlib]] · [[configuracion-de-ejes-log-lineal-y-etiquetas-de-potencias-de]] · [[como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log]]

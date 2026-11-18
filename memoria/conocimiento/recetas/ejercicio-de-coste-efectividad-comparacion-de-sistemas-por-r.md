@@ -17,4 +17,4 @@ Definición de efectividad en coste: (rendimiento / coste). Rendimiento = 1 / ti
 > Decimos que una máquina es más efectiva en coste que otra si la razón de rendimiento dividida por el coste es mayor.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 4 de 5)`
 
-Relacionado: [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
+Relacionado: [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[como-calcular-efectividad-en-coste-rendimiento-coste-entre-d]] · [[como-comparar-efectividad-en-coste-entre-dos-sistemas]] · [[calculo-de-cost-effectiveness-entre-dos-sistemas-con-cargas]]

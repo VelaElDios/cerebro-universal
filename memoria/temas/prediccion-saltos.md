@@ -1,0 +1,229 @@
+---
+tipo: "tema"
+titulo: "prediccion-saltos"
+notas: 205
+---
+# prediccion-saltos
+
+Nodo del mapa del Cerebro con todo lo que se sabe de «prediccion-saltos» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-codigo-con-especulacion-estatica-para-examen-ac|Análisis de código con especulación estática para examen AC]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-prediccion-de-saltos-en-bucle-con-dos-saltos-con|Análisis de predicción de saltos en bucle con dos saltos condicionales (B1: BEQZ, B2: BEQ)]]
+- 🧪 [[memoria/conocimiento/recetas/analisis-en-estado-estable-de-predictor-2-bits-vs-correlacio|Análisis en estado estable de predictor 2 bits vs correlacionado (1,1) para bucle RISC-V con patrón complejo]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-con-penalizacion-de-saltos-resueltos-en-id-test-ac-q13|CPI con penalización de saltos resueltos en ID (test AC Q13)]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-con-prediccion-de-saltos-en-pipeline-de-5-etapas-direcci|CPI con predicción de saltos en pipeline de 5 etapas (dirección en EX, destino en ID)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/cpi-con-tecnica-parar-siempre-en-saltos-cpi-1-saltos-tomados|CPI con técnica 'parar siempre' en saltos: CPI = 1 + (%saltos * %tomados * penalización)]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-en-pipeline-con-penalizacion-por-saltos-tomados-y-delay|CPI en pipeline con penalización por saltos tomados y delay slots]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-cpi-base-pipeline-5-etapas-con-saltos-sin-prediccion|Cálculo CPI base pipeline 5 etapas con saltos sin predicción]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-bits-en-predictor-correlacionado-de-dos-niveles-p|Cálculo de bits en predictor correlacionado de dos niveles (pregunta 13 y 15)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-bits-en-predictor-de-dos-niveles-n-m-con-k-entrad|Cálculo de bits en predictor de dos niveles (n, m) con k entradas por BHT]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-bits-totales-en-predictor-1-2-con-bht-de-4-entrad|Cálculo de bits totales en predictor (1,2) con BHT de 4 entradas y BHR]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-bits-totales-en-predictor-2-2-con-3-entradas-por|Cálculo de bits totales en predictor (2,2) con 3 entradas por BHT]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-ciclos-de-penalizacion-por-salto-tomado-en-pipeli|Cálculo de ciclos de penalización por salto tomado en pipeline 5 etapas con condición en EX y dirección en MEM]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos|Cálculo de CPI base en pipeline con penalización por saltos sin BTB]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr|Cálculo de CPI con BTB que almacena solo saltos tomados y predice NT si no está]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s|Cálculo de CPI sin BTB y speedup con BTB (miss rate 10%, solo saltos tomados, actualización con penalidad)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-predicciones-correctas-en-bucles-anidados-con-pre|Cálculo de predicciones correctas en bucles anidados con predictores de 1, 2 y 3 bits]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-comparando-predictor-con-penalidad-variab|Cálculo de speedup comparando predictor con penalidad variable vs penalidad fija]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-tasa-de-acierto-con-predictor-de-1-bit-inicializa|Cálculo de tasa de acierto con predictor de 1 bit inicializado a tomado y predictor de 3 bits inicializado a 011]]
+- 🧪 [[memoria/conocimiento/recetas/como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad|Cómo analizar predictores de salto (1-bit, 4-bit, correlacionado) sobre secuencia conocida]]
+- 🧪 [[memoria/conocimiento/recetas/como-determinar-la-secuencia-real-de-saltos-y-resultados-en|Cómo determinar la secuencia real de saltos y resultados en un bucle con registro alternante]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-disenar-un-bucle-que-haga-fallar-siempre-un-predictor-d|Cómo diseñar un bucle que haga fallar siempre un predictor de 1 bit]]
+- 🧪 [[memoria/conocimiento/recetas/como-el-predictor-de-2-bits-resuelve-el-problema-de-bucles-a|Cómo el predictor de 2 bits resuelve el problema de bucles anidados]]
+- 🧪 [[memoria/conocimiento/recetas/como-resolver-el-problema-3-de-especulacion-con-poison-bits|Cómo resolver el Problema 3 de especulación con poison bits (Enero 2015)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula|Cómo resolver tabla de estado en Tomasulo con ROB y especulación]]
+- 🧪 [[memoria/conocimiento/recetas/definicion-de-latencia-de-salto-y-penalizacion-por-fallo-de|Definición de latencia de salto y penalización por fallo de predicción]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/determinar-salto-no-salto-de-bne-tras-instruccion-especulati|Determinar salto/no salto de BNE tras instrucción especulativa con excepción]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/dimensionado-de-btb-implicita-ancho-y-bits-totales-para-1024|Dimensionado de BTB implícita (ancho y bits totales) para 1024 entradas y bus 24 bits]]
+- 🧪 [[memoria/conocimiento/recetas/ejemplo-comparativo-predictores-1-bit-vs-2-bits-vs-correlaci|Ejemplo comparativo predictores 1 bit vs 2 bits vs correlacionado (1,1) con código if(d==0)/if(d==1)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/ejemplo-de-transformacion-de-salto-a-instrucciones-predicada|Ejemplo de transformación de salto a instrucciones predicadas (código ensamblador)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/ejemplo-gas-4-22-predictor-dos-niveles|Ejemplo Gas(4,22) predictor dos niveles]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/evaluacion-de-rendimiento-de-btb-con-politica-de-solo-saltos|Evaluación de rendimiento de BTB con política de solo saltos tomados, hit rate 90%, actualización en fallo con penalidad]]
+- 🧪 [[memoria/conocimiento/recetas/funcionamiento-y-actualizacion-de-la-btac-branch-target-addr|Funcionamiento y actualización de la BTAC (Branch Target Address Cache)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/implementacion-predictor-correlacionado-m-n-con-bhr-y-bht|Implementación predictor correlacionado (m,n) con BHR y BHT]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/interpretacion-del-bhr-en-predictor-correlacionado-m-n-test|Interpretación del BHR en predictor correlacionado (m,n) (test AC Q12)]]
+- 🧪 [[memoria/conocimiento/recetas/mejora-de-prestaciones-speedup-al-usar-btb-frente-a-sin-btb|Mejora de prestaciones (speedup) al usar BTB frente a sin BTB]]
+- 🧪 [[memoria/conocimiento/recetas/mejora-prestaciones-btb-con-politica-solo-saltos-tomados-y-a|Mejora prestaciones BTB con política solo-saltos-tomados y actualización perezosa]]
+- 🧪 [[memoria/conocimiento/recetas/parametros-de-simulacion-tomasulo-especulativo-para-mips64-e|Parámetros de simulación Tomasulo especulativo para MIPS64 (examen AC enero 2022)]]
+- 🧪 [[memoria/conocimiento/recetas/penalizacion-de-salto-tomado-con-condicion-en-ex-y-direccion|Penalización de salto tomado con condición en EX y dirección en MEM]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-correlacionado-2-1-para-bucle-de-conteo-de-caracte|Predictor correlacionado (2,1) para bucle de conteo de caracteres en cadena "exam18]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-correlacionante-de-dos-niveles-1-1-con-bhr-global|Predictor correlacionante de dos niveles (1,1) con BHR global y BHT por salto]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-de-2-bits-por-instruccion-y-predictor-correlaciona|Predictor de 2-bits por instrucción y predictor correlacionado (2,1) para bucle de vector disperso (0,7,0,0,0,0,2,0)]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est|Predictor de un nivel con 1 bit por instrucción de salto (estado inicial tomado)]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en|Predictor dinámico de un bit: funcionamiento y limitación en bucles anidados]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/predictor-hibrido-con-predictores-locales-de-1-bit-y-3-bits|Predictor híbrido con predictores locales de 1-bit y 3-bits más selector de 2-bits saturado]]
+- 🧪 [[memoria/conocimiento/recetas/predictor-hibrido-mcfarling-con-contador-saturado-de-2-bits|Predictor híbrido McFarling con contador saturado de 2 bits]]
+- 🧪 [[memoria/conocimiento/recetas/preguntas-del-problema-2-traza-prediccion-1-bit-y-correlacio|Preguntas del Problema 2: Traza predicción 1-bit y correlacionado (1,1)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/reglas-de-actualizacion-de-contadores-de-seleccion-en-predic|Reglas de actualización de contadores de selección en predictor híbrido de dos predictores locales]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p|Reglas de actualización del contador selector de 2 bits en predictor híbrido]]
+- 🧪 [[memoria/conocimiento/recetas/reglas-de-actualizacion-del-selector-hibrido-de-2-bits|Reglas de actualización del selector híbrido de 2 bits]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/secuencia-de-aciertos-fallos-en-predictor-2-bits-inicializad|Secuencia de aciertos/fallos en predictor 2 bits (inicializado fuertemente no tomado) para bucle de 6 iteraciones]]
+- 🧪 [[memoria/conocimiento/recetas/secuencia-de-aciertos-fallos-en-predictor-de-2-bits-iniciali|Secuencia de aciertos/fallos en predictor de 2 bits inicializado a strongly not taken]]
+- 🧪 [[memoria/conocimiento/recetas/secuencia-h-m-para-predictor-2-bit-debilmente-no-tomado-en-b|Secuencia H/M para predictor 2-bit débilmente no tomado en bucle de 5 iteraciones (pregunta 11)]]
+- 🧪 [[memoria/conocimiento/recetas/secuencia-h-m-para-predictor-correlacionado-1-1-en-bucle-de|Secuencia H/M para predictor correlacionado (1,1) en bucle de 5 iteraciones (pregunta 12)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictor-correlacionado-de-dos-niveles-2-2-co|Simulación de predictor correlacionado de dos niveles (2,2) con BHR de 2 bits y 4 BHTs de 2 bits]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictor-de-un-nivel-con-contadores-de-satura|Simulación de predictor de un nivel con contadores de saturación de 2 bits por instrucción de salto]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos|Simulación de predictor one-level de 2 bits para dos saltos (B1/B2)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictor-two-level-correlacionante-2-1-con-bh|Simulación de predictor two-level correlacionante (2,1) con BHR de 2 bits y 4 entradas BHT]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-predictores-1-bit-4-bits-saturado-y-correlacio|Simulación de predictores 1 bit, 4 bits saturado y correlacionado (2,1) para dos bucles anidados con conteos fijos]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/simulacion-paso-a-paso-de-predictor-correlacionado-2-1-con-b|Simulación paso a paso de predictor correlacionado (2,1) con BHR y 4 BHTs de 2-bits]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/simulacion-paso-a-paso-del-predictor-hibrido-con-contadores|Simulación paso a paso del predictor híbrido con contadores selectores]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/simulacion-paso-a-paso-del-predictor-hibrido-para-el-bucle-d|Simulación paso a paso del predictor híbrido para el bucle de Fibonacci]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/tasa-de-fallos-de-predictor-dinamico-de-2-bits-inicializado|Tasa de fallos de predictor dinámico de 2 bits (inicializado WNT) en bucle de 25 iteraciones]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/traza-de-predictor-correlacionado-1-1-con-historia-global-de|Traza de predictor correlacionado (1,1) con historia global de 1 bit]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/valor-de-bhr-de-5-bits-para-bucles-anidados-i-6-j-0-pregunta|Valor de BHR de 5 bits para bucles anidados i=6, j=0 (pregunta 13)]] · ⚠️ propuesto
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/configuracion-de-recursos-para-tomasulo-especulativo-en-exam|Configuración de recursos para Tomasulo especulativo en examen June 2021 (ROB 5 entradas, 2 RS/FU, 2 load buffers)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/diseno-de-btac-cache-asociativa-por-conjuntos-como-opcion-ma|Diseño de BTAC: caché asociativa por conjuntos como opción más usada]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/eleccion-de-predictor-hibrido-con-selector-de-2-bits-frente|Elección de predictor híbrido con selector de 2 bits frente a predictor único]]
+- ⚖️ [[memoria/conocimiento/decisiones/politica-de-btb-solo-entradas-para-saltos-tomados-prediccion|Política de BTB: solo entradas para saltos tomados, predicción NT en miss, eliminación sin penalidad en hit-pero-NT, actualización con 1 ciclo penalidad en miss-pero-tomado]]
+- ⚖️ [[memoria/conocimiento/decisiones/predictor-correlacionado-1-1-en-bucle-secuencia-0-1-0-2|Predictor correlacionado (1,1) en bucle secuencia 0,1,0,2]]
+- ⚖️ [[memoria/conocimiento/decisiones/predictor-de-1-bit-inicializado-a-no-tomado-en-bucle-secuenc|Predictor de 1 bit inicializado a no tomado en bucle secuencia 0,1,0,2]]
+- ⚖️ [[memoria/conocimiento/decisiones/yeh-y-patt-recomiendan-g-g-para-enteros-y-s-s-para-coma-flot|Yeh y Patt recomiendan G/g para enteros y S/s para coma flotante]] · ⚠️ propuesto
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/accion-ante-fallo-en-btb-con-salto-tomado-real-predecir-nt-p|Acción ante fallo en BTB con salto tomado real: predecir NT, penalizar y actualizar]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/accion-del-procesador-ante-fallo-de-prediccion-de-salto|Acción del procesador ante fallo de predicción de salto]]
+- 💡 [[memoria/conocimiento/conceptos/actualizacion-de-la-btb-tras-ejecutar-el-salto|Actualización de la BTB tras ejecutar el salto]]
+- 💡 [[memoria/conocimiento/conceptos/ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas|Ancho y tamaño en bits de un BTB implícito con 1024 entradas y bus de 24 bits]]
+- 💡 [[memoria/conocimiento/conceptos/bht-branch-history-table-tabla-separada-para-bits-de-predicc|BHT (Branch History Table): tabla separada para bits de predicción]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/bht-con-contadores-de-saturacion-de-2-bits-pregunta-17|BHT con contadores de saturación de 2 bits (pregunta 17)]]
+- 💡 [[memoria/conocimiento/conceptos/bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion|BHT en predictor dinámico de 3 bits: contadores de saturación de 3 bits]]
+- 💡 [[memoria/conocimiento/conceptos/bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas|Bits de predicción en la I-caché: funcionamiento y ventajas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion|BTB (Branch Target Buffer): fusión de BTAC y bits de predicción en una sola estructura]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/btb-con-predictores-de-4-bits-campos-de-cada-entrada|BTB con predictores de 4 bits: campos de cada entrada]]
+- 💡 [[memoria/conocimiento/conceptos/btb-cache-de-direcciones-destino-de-saltos-con-bits-de-predi|BTB: cache de direcciones destino de saltos con bits de predicción]]
+- 💡 [[memoria/conocimiento/conceptos/comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14|Comportamiento de la BTB en caso de acierto (test AC Q14)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/comportamiento-de-predictor-correlacionado-2-1-con-historia|Comportamiento de predictor correlacionado (2,1) con historia inicial no tomada y BHT en no tomado fuerte]]
+- 💡 [[memoria/conocimiento/conceptos/configuracion-de-tomasulo-con-especulacion-para-examen-ac-ju|Configuración de Tomasulo con especulación para examen AC Junio 2012]]
+- 💡 [[memoria/conocimiento/conceptos/definiciones-clave-basic-block-antidependencia-loop-unrollin|Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-ejecucion-multicamino-multipath-execution|Definición de ejecución multicamino (multipath execution)]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-instruccion-especulativa|Definición de instrucción especulativa]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-instruccion-de-salto|Definición de latencia de instrucción de salto]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5|Definición de latencia de resolución de salto en pipeline 5 etapas IF/ID/EX/MEM/WB]]
+- 💡 [[memoria/conocimiento/conceptos/diferencia-entre-especulacion-software-y-hardware-falso-en-s|Diferencia entre especulación software y hardware (falso en software)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ejecucion-multicamino-multi-path-execution-como-alternativa|Ejecución multicamino (multi-path execution) como alternativa a la predicción]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ejecucion-multicamino-multi-path-execution-frente-a-predicci|Ejecución multicamino (multi-path execution) frente a predicción de saltos]]
+- 💡 [[memoria/conocimiento/conceptos/ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad|Ejercicio 2 - Análisis de predicción de saltos en bucle contador de ceros y pares]]
+- 💡 [[memoria/conocimiento/conceptos/especulacion-con-poison-bits-propagacion-y-excepcion-diferid|Especulación con poison bits - propagación y excepción diferida]]
+- 💡 [[memoria/conocimiento/conceptos/especulacion-estatica-con-cargas-especulativas-lw-en-mips64|Especulación estática con cargas especulativas LW* en MIPS64]]
+- 💡 [[memoria/conocimiento/conceptos/especulacion-estatica-con-poison-bits-en-mips64-lw|Especulación estática con poison bits en MIPS64 (LW*)]]
+- 💡 [[memoria/conocimiento/conceptos/estado-inicial-de-predictores-en-ejercicio-12-predictor-2-bi|Estado inicial de predictores en Ejercicio 12: predictor 2-bits (B1=00, B2=11) y correlacionado (2,1) con BHR=10 y BHTs específicas]]
+- 💡 [[memoria/conocimiento/conceptos/estados-iniciales-de-predictores-en-ejercicio-2-un-nivel-y-d|Estados iniciales de predictores en ejercicio 2 (un nivel y dos niveles)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits|Estructura de BTB: tabla de destinos y tabla separada de bits de predicción]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/estructura-de-un-predictor-correlacionado-2-4-4-bhr-y-2-bht|Estructura de un predictor correlacionado (2,4): 4 BHR y 2 BHT]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/estructura-que-almacena-direccion-destino-de-saltos-tomados|Estructura que almacena dirección destino de saltos tomados recientemente]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c|Estructura y funcionamiento de predictor híbrido de torneo con predictor local 2-bit y global (1,2)]]
+- 💡 [[memoria/conocimiento/conceptos/estructuras-hardware-para-prediccion-de-saltos-btac-bht-btb|Estructuras hardware para predicción de saltos (BTAC, BHT, BTB, I-caché con índice sucesor)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/etiquetado-de-saltos-b1-b2-b3-en-bucle-contador-ceros-pares|Etiquetado de saltos B1, B2, B3 en bucle contador ceros/pares]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/implementacion-bht-con-contadores-saturados-de-2-bits|Implementación BHT con contadores saturados de 2 bits]]
+- 💡 [[memoria/conocimiento/conceptos/implementacion-bht-para-predictor-de-2-bits-4k-entradas-80-9|Implementación BHT para predictor de 2 bits: 4K entradas, ~80-90% acierto]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/implementacion-de-btb-generica-ampliacion-de-btac-con-bits-d|Implementación de BTB genérica: ampliación de BTAC con bits de predicción]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/implementacion-de-la-bht-en-predictor-dinamico-de-2-bits|Implementación de la BHT en predictor dinámico de 2 bits]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/implementacion-del-bhr-branch-history-register-en-predictor|Implementación del BHR (Branch History Register) en predictor correlacionado (2,2)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/instrucciones-especulativas-marcadas-con-en-codigo-mips64-ex|Instrucciones especulativas marcadas con * en código MIPS64 (examen June 2025)]]
+- 💡 [[memoria/conocimiento/conceptos/instrucciones-predicadas-convertir-dependencias-de-control-e|Instrucciones predicadas: convertir dependencias de control en dependencias de datos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/instrucciones-predicadas-eliminan-saltos-y-prediccion-pregun|Instrucciones predicadas: eliminan saltos y predicción (pregunta 14)]]
+- 💡 [[memoria/conocimiento/conceptos/instruccion-especulativa-ejecutada-antes-de-saber-si-realmen|Instrucción especulativa: ejecutada antes de saber si realmente debe ejecutarse]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/interpretacion-del-bhr-en-predictor-correlativo-2-3|Interpretación del BHR en predictor correlativo (2,3)]]
+- 💡 [[memoria/conocimiento/conceptos/la-bht-branch-history-table-almacena-bits-de-prediccion-de-s|La BHT (Branch History Table) almacena bits de predicción de saltos condicionales]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/la-bht-almacena-los-bits-de-prediccion-de-todas-las-instrucc|La BHT almacena los bits de predicción de todas las instrucciones de salto condicional]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/mecanismo-cooperacion-hardware-software-sin-distincion-instr|Mecanismo cooperación hardware/software sin distinción instrucciones especulativas]]
+- 💡 [[memoria/conocimiento/conceptos/mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt|Mecanismos de recuperación ante fallos de predicción de saltos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/multiples-caminos-como-tecnica-de-prediccion-de-saltos|Múltiples caminos como técnica de predicción de saltos]]
+- 💡 [[memoria/conocimiento/conceptos/notacion-de-predictor-de-dos-niveles-2-1-1-tabla-bht-con-ent|Notación de predictor de dos niveles (2,1): 1 tabla BHT con entradas de 2 bits]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/notacion-xax-m-2n-para-predictores-adaptativos-de-dos-nivele|Notación XAx(m,2n) para predictores adaptativos de dos niveles (Yeh y Patt 1992)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/patron-de-prediccion-de-predictor-de-3-bits-ante-alternancia|Patrón de predicción de predictor de 3 bits ante alternancia Taken/Not Taken]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/patron-de-saltos-en-bucle-mips64-secuencia-0-1-0-2-examen-en|Patrón de saltos en bucle MIPS64 secuencia 0,1,0,2 (examen Enero 2012)]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-prediccion-estatica-siempre-no-tomado-con-di|Penalización de predicción estática "siempre no tomado" con dirección en ID y sentido en EX]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r|Penalización de salto en MIPS con resolución en ID y salto retardado: cero ciclos]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-con-bits-venenosos-convencion-dirty-p|Planificación estática con bits venenosos: convención dirty/prohibited]]
+- 💡 [[memoria/conocimiento/conceptos/planteamiento-general-de-prediccion-de-saltos-con-ejecucion|Planteamiento general de predicción de saltos con ejecución especulativa]]
+- 💡 [[memoria/conocimiento/conceptos/prediccion-dinamica-basada-en-correlacion-temporal-y-espacia|Predicción dinámica basada en correlación temporal y espacial]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/prediccion-fija-siempre-no-tomado-con-calculo-destino-en-id|Predicción fija "siempre no tomado" con cálculo destino en ID y resolución en EX]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/prediccion-implicita-sin-bits-de-prediccion-en-btb|Predicción implícita sin bits de predicción en BTB]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-alpha-21264-tournament-branch-prediction-combina-l|Predictor Alpha 21264 (Tournament Branch Prediction) combina local y global]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-1-1-bhr-de-1-bit-y-2-tablas-bht-de|Predictor correlacionado (1,1): BHR de 1 bit y 2 tablas BHT de 1 bit]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-1-2-con-bhr-y-dos-bhts|Predictor correlacionado (1,2) con BHR y dos BHTs]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-1-2-bhr-11-tras-dos-saltos-tomados|Predictor correlacionado (1,2): BHR = 11 tras dos saltos tomados]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-2-1-estructura-y-funcionamiento|Predictor correlacionado (2,1) - estructura y funcionamiento]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-general-mejora-a-predictores-no-cor|Predictor correlacionado general mejora a predictores no correlacionados]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-o-de-dos-niveles-m-n-correlacion-es|Predictor correlacionado o de dos niveles (m,n): correlación espacial e historia global]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-dinamico-de-2-bits-jim-smith-1981-maquina-de-4-est|Predictor dinámico de 2 bits (Jim Smith, 1981): máquina de 4 estados y inercia]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-concatenacion-vs-gshare-xor-para-indexar-b|Predictor gselect (concatenación) vs gshare (XOR) para indexar BHT]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-indexa-bht-con-xor-de-bits-de-pc-y-bhr|Predictor gselect: indexación de BHT mediante XOR de bits de PC y BHR]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-indice-mediante-xor-de-bits-de-pc-y-bhr|Predictor gselect: índice mediante XOR de bits de PC y BHR]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-con-selector-de-2-bits-entre-predictor-de|Predictor híbrido con selector de 2 bits entre predictor de 1 bit y predictor de 3 bits]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y|Predictor híbrido con selectores por salto (1-bit vs 2-bit) y contadores de 2 bits saturados]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p|Predictor híbrido de saltos con selectores de 2 bits entre predictor local de 1 bit y predictor local de 3 bits]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-que-combina-dos-predictores-locales-1-bit|Predictor híbrido que combina dos predictores locales (1 bit y 3 bits) con selector de 2 bits y reglas de actualización específicas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/predictor-local-de-1-bit-predictor-1-y-predictor-local-de-3|Predictor local de 1 bit (Predictor 1) y predictor local de 3 bits (Predictor 2) en esquema híbrido]]
+- 💡 [[memoria/conocimiento/conceptos/predictores-n-bits-y-optimalidad-de-n-2-en-la-practica|Predictores n bits y optimalidad de n=2 en la práctica]]
+- 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-cpi-pipeline-con-btb-que-solo-almacena-sa|Problema examen AC: CPI pipeline con BTB que solo almacena saltos tomados]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/procesador-sin-soporte-para-especulacion-comportamiento-ante|Procesador sin soporte para especulación - comportamiento ante excepciones especulativas]]
+- 💡 [[memoria/conocimiento/conceptos/proposito-del-branch-target-buffer-btb-ademas-de-bits-de-pre|Propósito del Branch Target Buffer (BTB) además de bits de predicción]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/que-ocurre-cuando-un-salto-mal-predicho-llega-al-tope-del-ro|Qué ocurre cuando un salto mal predicho llega al tope del ROB]]
+- 💡 [[memoria/conocimiento/conceptos/recuperacion-ante-fallo-de-prediccion-de-salto-misprediction|Recuperación ante fallo de predicción de salto (misprediction)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/recuperacion-ante-fallo-de-prediccion-descartar-resultados-e|Recuperación ante fallo de predicción: descartar resultados especulativos y reanudar por camino correcto]]
+- 💡 [[memoria/conocimiento/conceptos/recuperacion-de-fallos-de-prediccion-con-registros-temporale|Recuperación de fallos de predicción con registros temporales]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-bucle-con-bne-y-daddui|Salto retardado (delayed branch) en bucle con BNE y DADDUI]]
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-con-instruccion-de-bloque-destino-riesgo-si|Salto retardado con instrucción de bloque destino: riesgo si salto no tomado]]
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-y-instrucciones-predicadas-como-alternativas|Salto retardado y instrucciones predicadas como alternativas a predicción]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/seleccion-de-entrada-en-bht-branch-history-table|Selección de entrada en BHT (Branch History Table)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/selector-de-2-bits-para-predictor-hibrido-de-saltos|Selector de 2 bits para predictor híbrido de saltos]]
+- 💡 [[memoria/conocimiento/conceptos/tabla-de-actualizacion-de-contadores-de-2-bits-saturados-par|Tabla de actualización de contadores de 2-bits saturados para selector de predictor híbrido]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/taxonomia-de-tecnicas-de-prediccion-de-saltos|Taxonomía de técnicas de predicción de saltos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/transicion-de-predictor-de-3-bits-inicializado-en-100-a-001|Transición de predictor de 3 bits inicializado en 100 a 001 tras tres ejecuciones]]
+- 💡 [[memoria/conocimiento/conceptos/tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero|Tres mecanismos de especulación evaluados en examen AC Enero 2014]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/tres-mecanismos-de-manejo-de-excepciones-para-instrucciones|Tres mecanismos de manejo de excepciones para instrucciones especulativas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-de-las-instrucciones-predicadas|Ventajas e inconvenientes de las instrucciones predicadas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/indice-sucesor-en-la-i-cache-para-prediccion-de-saltos-alter|Índice sucesor en la I-caché para predicción de saltos (alternativa a BTAC)]] · ⚠️ propuesto
+
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips|Comportamiento real de saltos B1 (BEQZ) y B2 (BEQ) en bucle MIPS64 que recorre secuencia 0,1,0,2,0,3,0,4,0,5]]
+- 📊 [[memoria/conocimiento/datos/comportamiento-real-de-saltos-b1-y-b2-en-bucle-risc-v-que-re|Comportamiento real de saltos B1 y B2 en bucle RISC-V que recorre secuencia 0,1,0,2,0,3,0,4,0,5]]
+- 📊 [[memoria/conocimiento/datos/configuracion-tomasulo-con-especulacion-del-examen-ac-junio|Configuración Tomasulo con especulación del examen AC Junio 2014 (extraordinario)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/costes-de-recuperacion-de-fallos-de-prediccion-por-procesado|Costes de recuperación de fallos de predicción por procesador]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/calculo-de-cpi-con-predictor-de-salto-tomado-y-penalizacion|Cálculo de CPI con predictor de salto tomado y penalización por fallo]]
+- 📊 [[memoria/conocimiento/datos/codigo-mips64-y-secuencia-de-entrada-para-problema-2-conteo|Código MIPS64 y secuencia de entrada para Problema 2 (Conteo ceros y pares)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/codigo-risc-v-ejercicio-10-bucle-conteo-a-en-exam18-con-salt|Código RISC-V Ejercicio 10: bucle conteo 'a' en "exam18" con saltos B1 (bne) y B2 (bnez)]]
+- 📊 [[memoria/conocimiento/datos/codigo-risc-v-ejercicio-11-bucle-fibonacci-6-elementos-con-s|Código RISC-V Ejercicio 11: bucle Fibonacci 6 elementos con saltos B1 (beqz) y B2 (bnez)]]
+- 📊 [[memoria/conocimiento/datos/codigo-risc-v-ejercicio-12-bucle-vector-disperso-0-7-0-0-0-0|Código RISC-V Ejercicio 12: bucle vector disperso (0,7,0,0,0,0,2,0) con saltos B1 (beqz), B2 (beq), j incondicional]]
+- 📊 [[memoria/conocimiento/datos/ejemplo-pentium-pro-predictor-2-2-con-historia-global-de-2-b|Ejemplo Pentium Pro: predictor (2,2) con historia global de 2 bits y ~95% precisión]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/ejemplos-reales-de-predictores-de-salto-en-procesadores-come|Ejemplos reales de predictores de salto en procesadores comerciales (PowerPC, UltraSPARC, Pentium, Pentium Pro)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/estado-inicial-de-predictores-y-contadores-en-el-ejercicio-d|Estado inicial de predictores y contadores en el ejercicio de predictor híbrido]]
+- 📊 [[memoria/conocimiento/datos/estado-inicial-de-predictores-y-contadores-en-problema-de-pr|Estado inicial de predictores y contadores en problema de predictor híbrido de examen Junio 2017]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/estado-inicial-de-registros-y-memoria-para-problema-3-enero|Estado inicial de registros y memoria para Problema 3 (Enero 2015)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/estado-inicial-predictores-para-problema-2-1-bit-y-2-niveles|Estado inicial predictores para Problema 2 (1-bit y 2-niveles correlacionado (1,1))]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/evolucion-de-predicciones-para-b1-y-b2-con-predictor-hibrido|Evolución de predicciones para B1 y B2 con predictor híbrido en la secuencia completa]]
+- 📊 [[memoria/conocimiento/datos/frecuencias-de-saltos-en-el-examen-condicionales-30-75-tomad|Frecuencias de saltos en el examen: condicionales 30% (75% tomados), incondicionales 9%]]
+- 📊 [[memoria/conocimiento/datos/inicializacion-del-selector-y-bits-de-prediccion-en-predicto|Inicialización del selector y bits de predicción en predictor híbrido]]
+- 📊 [[memoria/conocimiento/datos/limitacion-de-la-btb-solo-predice-saltos-ya-conocidos|Limitación de la BTB: solo predice saltos ya conocidos]]
+- 📊 [[memoria/conocimiento/datos/numero-de-bhr-en-predictor-correlacionado-de-dos-niveles-2-1|Número de BHR en predictor correlacionado de dos niveles (2,1)]]
+- 📊 [[memoria/conocimiento/datos/numero-de-bhr-en-un-predictor-correlacionador-de-dos-niveles|Número de BHR en un predictor correlacionador de dos niveles (2, 1)]]
+- 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re|Penalización de salto condicional en pipeline de 5 etapas resuelto en ID = 1 ciclo]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/predictor-correlacionado-2-1-bhr-tras-dos-saltos-tomados-des|Predictor correlacionado (2,1): BHR tras dos saltos tomados desde 00 es 11]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/predictor-correlacionante-m-n-tiene-2-n-bhts|Predictor correlacionante (m,n) tiene 2^n BHTs]]
+- 📊 [[memoria/conocimiento/datos/predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce|Predictor de 1 bit en bucle de 3 iteraciones (T, T, NT) produce 2 fallos]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/predictores-de-un-nivel-de-historia-1-2-y-3-bits-con-procesa|Predictores de un nivel de historia: 1, 2 y 3 bits con procesadores y años]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/resultados-reales-de-saltos-b1-y-b2-en-bucle-mips64-secuenci|Resultados reales de saltos B1 y B2 en bucle MIPS64 secuencia 0,1,0,2,0,3,0,4,0,5]]
+- 📊 [[memoria/conocimiento/datos/resultados-reales-de-saltos-b1-y-b2-en-bucles-anidados-con-r|Resultados reales de saltos B1 y B2 en bucles anidados con R1=2, R2=4]]
+- 📊 [[memoria/conocimiento/datos/secuencia-de-datos-y-codigo-mips64-para-ejercicio-2-de-predi|Secuencia de datos y código MIPS64 para ejercicio 2 de predicción de saltos]]
+- 📊 [[memoria/conocimiento/datos/tabla-de-iteraciones-para-calculo-de-tasa-de-acierto-en-pred|Tabla de iteraciones para cálculo de tasa de acierto en predictor correlacionado]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/tabla-historica-de-predictores-en-procesadores-1989-1998|Tabla histórica de predictores en procesadores 1989-1998]]
+- 📊 [[memoria/conocimiento/datos/tasa-de-aciertos-de-predictor-1-bit-inicializado-a-0-con-sal|Tasa de aciertos de predictor 1-bit inicializado a 0 con salto siempre tomado ejecutado 100 veces]]
+- 📊 [[memoria/conocimiento/datos/valores-de-registros-y-flujo-de-control-en-ejemplo-ddiv-espe|Valores de registros y flujo de control en ejemplo DDIV* especulativo con dos condiciones iniciales]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/vector-de-entrada-y-estado-inicial-para-simulacion-de-predic|Vector de entrada y estado inicial para simulación de predictores (Exercise 3)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/vulnerabilidades-de-seguridad-por-prediccion-especulativa-me|Vulnerabilidades de seguridad por predicción especulativa: Meltdown, Spectre, Branch Privilege Injection]] · ⚠️ propuesto
+
+## Temas relacionados
+
+[[ac]] · [[pipeline]] · [[arquitectura]] · [[btb]] · [[bht]] · [[tomasulo]] · [[bhr]] · [[arquitectura-computadores]] · [[predictor-correlacionado]] · [[cpi]] · [[correlacionado]] · [[mips64]]

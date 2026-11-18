@@ -16,3 +16,5 @@ El ejemplo muestra un bucle con un salto condicional (beqz) en medio del cuerpo.
 
 > Eliminando saltos intermedios. Otras técnicas… (pendientes de ver)
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
+
+Relacionado: [[proposito-del-desenrollado-de-bucles-loop-unrolling]] · [[desenrollamiento-de-bucles-reduce-dependencias-de-control-me]] · [[limitaciones-del-paralelismo-en-bloques-basicos-y-solucion-a]]

@@ -22,6 +22,6 @@ Esto evita speed-hacks, god-mode y envío de partidas falsificadas.
 > El servidor valida cada resultado con su propio reloj (anti-trampas) y rechaza resultados imposibles.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]] · [[esquema-de-progreso-guardado-en-servidor-migracion-003-tabla]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

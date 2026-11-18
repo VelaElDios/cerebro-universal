@@ -17,4 +17,4 @@ Comparar speedup de dos mejoras exclusivas. Mejora mult: reduce tiempo 25% → k
 > Por lo tanto, debería optarse por mejorar el acceso a memoria.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[seleccion-de-mejoras-mutuamente-excluyentes-con-ley-de-amdah]] · [[speedup-combinado-de-mejoras-independientes-en-fracciones-di]]
+Relacionado: [[seleccion-de-mejoras-mutuamente-excluyentes-con-ley-de-amdah]] · [[speedup-combinado-de-mejoras-independientes-en-fracciones-di]] · [[speedup-combinando-multiples-mejoras-independientes]]

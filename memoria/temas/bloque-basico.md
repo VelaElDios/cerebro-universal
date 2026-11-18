@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "bloque-basico"
-notas: 1
+notas: 2
 ---
 # bloque-basico
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «bloque-basico» (este archivo se genera solo).
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru|Definición de bloque básico en paralelismo a nivel de instrucción (pregunta 6)]]
 
 ## Datos
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bloque-basico» (este arc
 
 ## Temas relacionados
 
-[[ac]] · [[ilp]] · [[paralelismo-bucle]]
+[[ac]] · [[ilp]] · [[salto]] · [[pipeline]] · [[paralelismo-bucle]]

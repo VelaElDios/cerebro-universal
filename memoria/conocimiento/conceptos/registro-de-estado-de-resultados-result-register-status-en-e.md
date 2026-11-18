@@ -16,3 +16,5 @@ La tabla inferior "Estado de registros resultado" indica qué unidad funcional (
 
 > Estado de registros resultado f0 f2 f4 f6 f8 f10 f12 UF 2 4 5
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
+
+Relacionado: [[estado-de-registros-resultado-register-result-status-en-el-m]] · [[marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio]] · [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]]

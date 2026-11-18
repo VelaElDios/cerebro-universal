@@ -22,4 +22,4 @@ Esto garantiza que cualquier mejora en IPC/cycles provenga exclusivamente del de
 > Compila tanto el código original (tarea4_1_ilp.cpp) como el generado, con el nivel de optimización -O1 (esto evitará que el compilador aplique Auto-Unrolling por su cuenta y enmascare el experimento).
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf`
 
-Relacionado: [[desenrollado-manual-manual-unrolling-con-4-acumuladores-para]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[desenrollado-manual-manual-unrolling-con-4-acumuladores-para]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[por-que-o1-evita-que-el-compilador-enmascare-la-optimizacion]] · [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]] · [[como-forzar-un-salto-condicional-real-en-gcc-para-medir-pred]]

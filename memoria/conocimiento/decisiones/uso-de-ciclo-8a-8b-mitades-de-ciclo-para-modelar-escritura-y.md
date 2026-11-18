@@ -22,4 +22,4 @@ Esta convención de «mitad de ciclo» es un truco didáctico para **separar la 
 > ciclo 8a 1ª mitad Instrucción Emisión Operandos completa resultado fdiv.d f10, f0, f6 8 ciclo 8b 2ª mitad Instrucción Emisión Operandos completa resultado
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]]
+Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]] · [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]] · [[representacion-del-estado-del-marcador-scoreboard-para-instr]]

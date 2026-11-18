@@ -29,4 +29,4 @@ Estos campos implementan la **esperada de dependencias RAW (Read After Write)** 
 > UF Nombre Ocupada Op Fi Fj Fk Qj Qk Rj Rk 1 Entera SI Carga f6 x2 NO 2 Mult1 SI Mult f0 f2 f4 1 NO SI
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr]]
+Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr]] · [[semantica-de-los-campos-qj-qk-rj-rk-en-el-estado-de-uf]] · [[marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio]]

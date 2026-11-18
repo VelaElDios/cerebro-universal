@@ -17,4 +17,4 @@ Temas: [[ac]] · [[registros]] · [[risc-v]]
 > 32 registros enteros o GPR (64 bits) – x0, x1, …, x31 • 32 registros PF (datos de 32 o 64 bits; SP o DP) – f0, f1, …, f31
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
 
-Relacionado: [[isa-base-risc-v-rv64g-caracteristicas-principales]]
+Relacionado: [[isa-base-risc-v-rv64g-caracteristicas-principales]] · [[calculo-de-direcciones-y-offsets-en-bucles-vectoriales-risc]] · [[parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult]]

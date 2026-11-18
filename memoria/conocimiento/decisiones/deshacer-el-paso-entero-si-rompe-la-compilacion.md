@@ -17,4 +17,4 @@ Antes de aplicar la respuesta del constructor se guarda una foto del borrador (`
 > mejor no avanzar que retroceder
 > — `scripts/proyecto.py`
 
-Relacionado: [[tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter]]
+Relacionado: [[tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter]] · [[como-trabaja-el-cerebro-constructor-prueba-revisor]] · [[como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador]]

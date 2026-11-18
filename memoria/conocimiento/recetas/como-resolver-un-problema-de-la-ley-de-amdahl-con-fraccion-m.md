@@ -17,4 +17,4 @@ Pasos: 1) Identificar tiempo total T (100 s) y tiempo de la parte mejorable T_me
 > Supongamos que un programa tarda en ejecutarse en una máquina 100 segundos, de los cuales 80 corresponden a operaciones de multiplicar. ¿Cuánto tengo que mejorar la velocidad de multiplicación si quiero que el programa se ejecute cinco veces más rápido?
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[ley-de-amdahl-formula-del-tiempo-de-ejecucion-nuevo]]
+Relacionado: [[ley-de-amdahl-formula-del-tiempo-de-ejecucion-nuevo]] · [[como-calcular-speedup-global-mejorando-un-componente-ley-de]] · [[ejercicio-de-participacion-en-clase-mejora-de-multiplicacion]] · [[calculo-de-mejora-necesaria-con-la-ley-de-amdahl-test-ac-q3]]

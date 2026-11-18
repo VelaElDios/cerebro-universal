@@ -17,4 +17,4 @@ CPU ejecuta especulativamente según predicción del branch predictor. Acierto �
 > Sobre datos ordenados, la condición if (data[i] >= 128) da muchos false seguidos y luego muchos true seguidos: es fácil de predecir y casi siempre acierta. Sobre datos desordenados, el resultado es totalmente aleatorio; el predictor falla la mitad de las veces y el rendimiento se desploma.
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf`
 
-Relacionado: [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per]] · [[penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup]] · [[cuando-no-usar-branchless-trade-off-latencia-vs-previsibilid]]

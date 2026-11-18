@@ -17,6 +17,6 @@ Tabla maestra de trazabilidad Sprint 1 con 19 PBIs (P1–P19) y 32 tareas (T1–
 > | PBI | Tarea | Descripción | Rama | Pull request | Estado | |---|---|---|---|---|---| | P1 | T1 | Crear repositorio y estructura base | `hito-1/T1-estructura-base` | [#1](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/1) | Hecho |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[prs-de-cierre-de-hito-y-sprint-en-repositorio]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

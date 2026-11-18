@@ -23,4 +23,4 @@ Ejemplo inverso (Ejercicio 5): Speedup objetivo = 3, k = 5, T_original = 100s �
 > Sabemos que la ganancia (aceleración o speedup) es la relación entre el tiempo de ejecución sin utilizar la mejora (10 s en este caso) y el tiempo de ejecución con la mejora.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion]] · [[como-calcular-el-factor-de-mejora-necesario-k-para-un-speedu]] · [[ley-de-amdahl-para-speedup-con-mejora-parcial]]

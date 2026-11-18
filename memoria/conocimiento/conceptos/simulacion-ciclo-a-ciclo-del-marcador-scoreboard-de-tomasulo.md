@@ -16,3 +16,5 @@ El marcador (scoreboard) de Tomasulo controla el flujo de instrucciones en tres 
 
 > ciclo 10                     Instrucción               Emisión              Operandos         completa     resultado                           fld        f6, 34(x2)              1                   2                 3            4
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
+
+Relacionado: [[representacion-del-estado-del-marcador-scoreboard-para-instr]] · [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]] · [[simulacion-scoreboard-vs-tomasulo-basico-pasos-de-ejecucion]]

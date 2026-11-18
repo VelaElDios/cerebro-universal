@@ -17,7 +17,7 @@ MFLOPS = (operaciones de punto flotante realizadas) / (tiempo de ejecución en s
 > 𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀𝑀 = 𝑛𝑛ú𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚 𝑑𝑑𝑑𝑑 𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜𝑜 𝑑𝑑𝑑𝑑 𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝𝑝 𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓 / (𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡 𝑑𝑑𝑑𝑑 𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒ó𝑛𝑛 × 106)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Formulas.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[formula-del-techo-roofline-mononucleo]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[formula-del-techo-roofline-mononucleo]] · [[definicion-de-mips-millones-de-instrucciones-por-segundo]] · [[calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co]] · [[calculo-del-rendimiento-real-eje-y-gflops-s-con-hyperfine]]
 
 ## Ampliación (2026-11-17, )
 MFLOPS cuenta operaciones de punto flotante (suma, multiplicación, división, etc.) por segundo. El temario advierte que MFLOPS «Cambia con la mezcla de: operaciones rápidas y lentas de punto flotante; operaciones de enteros y de punto flotante». Por tanto, no es una métrica portable entre cargas de trabajo distintas; sirve para comparar un mismo kernel en distintas máquinas.

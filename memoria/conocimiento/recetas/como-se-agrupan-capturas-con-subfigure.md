@@ -17,4 +17,6 @@ Para agrupar capturas relacionadas y evitar la cadena «La figura X muestra…»
 > \begin{figure}[htbp]\centering\begin{subfigure}{0.48\textwidth}\centering\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/01-inicio.png}\subcaption{Página de inicio sin sesión.}\label{fig:app-inicio}\end{subfigure}\hfill\begin{subfigure}{0.48\textwidth}\centering\includegraphics[width=\linewidth,height=0.42\textheight,keepaspectratio]{figs/capturas/app/02-registro-validacion.png}\subcaption{Validación en cliente: email y contraseña con errores.}\label{fig:app-registro}\end{subfigure}\caption{Inicio y registro: página pública y validación del formulario.}\label{fig:app-inicio-registro}\end{figure}
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
+Relacionado: [[como-agrupar-capturas-con-subfigure-en-latex]] · [[agrupar-capturas-con-subfigure]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

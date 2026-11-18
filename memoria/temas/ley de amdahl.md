@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "ley de amdahl"
-notas: 2
+notas: 5
 ---
 # ley de amdahl
 
@@ -9,7 +9,13 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ley de amdahl» (este arc
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-determinar-fraccion-de-u|Aplicación de la ley de Amdahl para determinar fracción de uso de un componente mejorado]]
 - 🧪 [[memoria/conocimiento/recetas/ejercicios-de-evaluacion-de-rendimiento-basados-en-ley-de-am|Ejercicios de evaluación de rendimiento basados en Ley de Amdahl]]
+- 🧪 [[memoria/conocimiento/recetas/speedup-con-ley-de-amdahl-para-mejora-parcial-de-tarjeta-gra|Speedup con ley de Amdahl para mejora parcial de tarjeta gráfica]]
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aceleracion-maxima-limitada-por-fraccion-mejor|Ley de Amdahl: aceleración máxima limitada por fracción mejorable]]
 
 ## Datos
 
@@ -17,4 +23,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ley de amdahl» (este arc
 
 ## Temas relacionados
 
-[[ac]] · [[almacenamiento]] · [[disco duro]] · [[speedup]] · [[ganancia de velocidad]] · [[mejora de componente]]
+[[ac]] · [[rendimiento]] · [[almacenamiento]] · [[disco duro]] · [[speedup]] · [[ganancia de velocidad]] · [[mejora de componente]]

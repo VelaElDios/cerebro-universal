@@ -23,4 +23,4 @@ La combinación WAR+WAW sobre f6 hace que `fadd.d` se quede en «Bloqueada» al 
 > Bloqueada fadd.d f6, f8, f2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]]
+Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]] · [[bloqueo-de-fadd-d-por-peligro-waw-en-registro-f6-hasta-ciclo]] · [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]] · [[deteccion-y-resolucion-de-riesgo-war-en-el-marcador-ciclos-1]]

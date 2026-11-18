@@ -17,6 +17,6 @@ Resumen de endpoints por grupo: Salud: `GET /api/health` (público). Autenticaci
 > | Salud | `GET /api/health` | Público | | Autenticación | `POST register`, `POST login`, `POST logout`, `GET me`, `GET confirm`, `POST resend-confirmation`, `GET providers`, `GET google`, `GET google/callback` | Público (salvo `me`) | | Usuarios | `GET /users`, `GET /users/:id/active`, `PATCH /users/:id/role`, `DELETE /users/:id` | Admin (la baja, propio o admin) | | Juego | `GET perfil`, `POST partidas`, `POST partidas/:id/fin`, `POST contratar`, `POST entrenar`, `PUT identidad`, `GET ranking`, `POST desbloquear` | Sesión (`desbloquear`, admin) |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[modulos-del-backend-y-sus-responsabilidades]]
+Relacionado: [[modulos-del-backend-y-sus-responsabilidades]] · [[flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf]] · [[login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

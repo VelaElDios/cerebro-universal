@@ -25,4 +25,6 @@ Temas: [[calidad]] · [[grada-colchonera]] · [[node-test]] · [[procesos]] · [
 > `node:test`; se ejecutan con `npm test` (80 pruebas)
 > — `repo:saas/docs/revision-entrega.md`
 
+Relacionado: [[resumen-de-pruebas-por-fichero-322-totales]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[pipeline-ci-cd-github-actions-con-postgresql-17-real-docker]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

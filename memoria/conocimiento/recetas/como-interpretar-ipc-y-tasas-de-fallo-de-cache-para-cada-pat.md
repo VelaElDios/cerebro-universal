@@ -16,3 +16,5 @@ Métricas clave a comparar entre los tres patrones: (1) IPC = instructions / cyc
 
 > 5. Analysis:    Compare IPC, cache miss ratios, and execution runtimes.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_patrones.cpp`
+
+Relacionado: [[como-medir-contadores-hardware-con-perf-stat-para-comparar-p]] · [[como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per]] · [[como-benchmarkear-y-perfilar-patrones-de-acceso-con-hyperfin]]

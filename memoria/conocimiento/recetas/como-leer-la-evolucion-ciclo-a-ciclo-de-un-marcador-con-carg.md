@@ -30,4 +30,4 @@ Pasos para interpretar la tabla ciclo a ciclo:
 > ciclo 6 Instrucción Emisión Operandos completa resultado fld f6, 34(x2) 1 2 3 4 fld f2, 45(x3) 5 6 fmul.d f0, f2, f4 6
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[representacion-del-estado-del-marcador-scoreboard-para-instr]] · [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]] · [[ejemplo-de-simulacion-del-marcador-con-instrucciones-de-punt]]

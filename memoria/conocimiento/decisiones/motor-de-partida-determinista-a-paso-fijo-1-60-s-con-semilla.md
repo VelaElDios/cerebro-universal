@@ -21,4 +21,6 @@ El paso fijo también simplifica la física y la IA de rivales/jefes.
 > Simulación pura (sin DOM) con paso fijo de 1/60 s y azar con semilla: misma semilla, misma partida.
 > — `repo:saas/docs/gestion/README.md`
 
+Relacionado: [[simulacion-de-paso-fijo-con-semilla-mundo-js]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

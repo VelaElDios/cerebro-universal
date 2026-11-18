@@ -17,4 +17,4 @@ Tres bloques de datos: 1) Estado de instrucciones: indica en cuál de los 4 paso
 > Estructuras de datos mantenidas por el marcador: Bloque 1: estado de las instrucciones, Bloque 2: estado de las unidades funcionales, Bloque 3: estado de registros resultado
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard]]
+Relacionado: [[pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard]] · [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej]]

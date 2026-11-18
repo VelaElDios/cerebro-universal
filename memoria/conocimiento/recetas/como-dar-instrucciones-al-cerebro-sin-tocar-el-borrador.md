@@ -16,3 +16,5 @@ Javier no edita `borrador/` ni `final/` a mano. Para pedir cambios se añade al 
 
 > añadir al final de la bitácora
 > — `README.md`
+
+Relacionado: [[estructura-de-la-memoria-compartida-cerebro-md-estado-md-con]] · [[como-trabaja-el-cerebro-constructor-prueba-revisor]] · [[como-se-empieza-un-proyecto-nuevo-en-el-cerebro]]

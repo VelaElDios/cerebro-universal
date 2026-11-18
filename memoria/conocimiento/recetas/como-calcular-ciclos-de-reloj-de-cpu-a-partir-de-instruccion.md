@@ -21,4 +21,4 @@ Este valor alimenta la ecuación fundamental: Tiempo = Ciclos_CPU / Frecuencia. 
 > 𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐 𝑑𝑑𝑑𝑑 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟 𝑑𝑑𝑑𝑑 𝐶𝐶𝐶𝐶𝐶𝐶 = 𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖 × 𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐 𝑑𝑑𝑑𝑑 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟 𝑝𝑝𝑝𝑝𝑝𝑝 𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤𝚤ó𝑛
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Formulas.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores]] · [[ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]]

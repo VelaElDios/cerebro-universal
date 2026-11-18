@@ -19,3 +19,5 @@ El techo real es el mínimo de ambos: `min(BW_DRAM * I, GFLOPS_MAX)`. La zona po
 
 > plt.loglog(x, np.minimum(BW_DRAM * x, GFLOPS_MAX), label=f\"Techo DRAM ({BW_DRAM} GB/s)\")
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_3_pintarRoofLin.py` (cita sin comprobar)
+
+Relacionado: [[punto-de-inflexion-ridge-point-en-el-modelo-roofline]] · [[punto-de-inflexion-knee-del-modelo-roofline-mononucleo]] · [[punto-de-inflexion-knee-del-modelo-roofline-i-knee-gflops-ma]]

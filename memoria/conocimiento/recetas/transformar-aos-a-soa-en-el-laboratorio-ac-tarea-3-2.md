@@ -5,9 +5,9 @@ temas: ["ac", "cpp", "refactoring", "soa"]
 claves: ["TODO1", "TODO2", "TODO3", "Particulas", "vector<Particula>"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[cpp]] · [[refactoring]] · [[soa]]
@@ -19,7 +19,7 @@ Pasos guiados por los TODOs del enunciado:
 4. Compilar ambas versiones: `g++ -O2 -o aos tarea3_2_aos.cpp` y `g++ -O2 -o soa tarea3_2_soa.cpp`.
 5. Verificar que `suma` coincide y medir con `hyperfine ./aos ./soa` y `perf stat -e cache-references,cache-misses,instructions,cycles ./aos ./soa`.
 
-> // TODO1\n//   a) Transforma el "vector de estructuras" en una "estructura de\n//      vectores" (SoA):\n//      struct Particulas {\n//        vector<int> id;\n//        ...\n//       };
-> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp` (cita sin comprobar)
+> // a) Transforma el "vector de estructuras" en una "estructura de // vectores" (SoA): // struct Particulas { // vector<int> id;
+> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp`
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[transformacion-aos-a-soa-para-optimizacion-de-cache-esquema]] · [[porcentaje-de-aprovechamiento-de-linea-de-cache-en-aos-acced]] · [[tarea-3-2-aos-vs-soa-marcada-como-opcional-en-anexo-c]]

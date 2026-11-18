@@ -21,4 +21,4 @@ for (std::size_t i = 0; i < kAccesses; ++i) p = buf[p];
 double ns = std::chrono::duration<double, std::nano>(t1 - t0).count() / kAccesses;
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp` (cita sin comprobar)
 
-Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[rango-de-working-set-4-kib-a-256-mib-en-potencias-de-2]] · [[como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset]]

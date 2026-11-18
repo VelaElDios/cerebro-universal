@@ -29,4 +29,6 @@ Requisitos: 3-5 participantes de ejemplo con datos realistas. Si falta una respu
 > Una fila por participante: id,perfil,q1,q2,q3,q4,q5,q6,q7,q8,q9,q10,comentario
 > — `../plantilla-sus/spec.md`
 
+Relacionado: [[estructura-de-archivos-obligatoria-para-la-plantilla-sus]] · [[escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e]] · [[como-se-calcula-la-puntuacion-sus-formula-y-ejemplo]]
+
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

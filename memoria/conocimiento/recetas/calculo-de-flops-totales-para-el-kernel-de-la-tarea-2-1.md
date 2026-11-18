@@ -22,3 +22,5 @@ Esto permite comparar patrones aislando solo el efecto del tráfico de memoria.
 
 > el número total de operaciones de punto flotante (FLOPs) en el código de la tarea 2.1 es idéntico en los tres patrones de acceso, ya que todos realizan exactamente las mismas sumas sobre el vector: Total_FLOPs= N * REPETICIONES = N * (4) operaciones
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf`
+
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[como-calcular-y-representar-puntos-de-patrones-en-el-grafico]]

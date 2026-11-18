@@ -36,4 +36,6 @@ La Regla 10 de Javier prohíbe imágenes repetidas. La solución: elegir un cap�
 ## Ampliación (2026-11-16, memoria-procesos)
 Decidido por Javier: las capturas de producción, prueba técnica y DoneTonic salen ahora en varios capítulos. Cada una va una sola vez en el sitio donde más sentido tiene, y en el resto se cita con \ref. En este proyecto, las capturas de app/ y hito4/ van en el capítulo 4 (Descripción), las de juego/ en el capítulo 4b (Juego), las de donetonic/ en el anexo A1 (Desarrollo) y el capítulo 3 (Propuesta), las de produccion/ y prueba-tecnica/ en el capítulo 5 (Evaluación).
 
+Relacionado: [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -22,6 +22,6 @@ Temas: [[error-handling]] · [[grada-colchonera]] · [[hito-4]] · [[procesos]] 
 > Errores de negocio tipados que la API traduce a un formato común `{ error: { code, message } }`; la interfaz muestra cada mensaje. Su pulido (P17) está hecho en el Hito 4: avisos legibles, estados de carga y error, timeout y captura global de errores
 > — `repo:saas/docs/revision-entrega.md`
 
-Relacionado: [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]]
+Relacionado: [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui]] · [[cliente-api-con-timeout-de-15-s-y-manejo-de-apierror]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

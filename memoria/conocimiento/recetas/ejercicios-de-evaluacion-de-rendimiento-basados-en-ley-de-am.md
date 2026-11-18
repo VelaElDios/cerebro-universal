@@ -17,4 +17,4 @@ Colección de problemas típicos que aplican la ley de Amdahl (speedup global = 
 > Supongamos que mejoramos una máquina haciendo que todas las instrucciones en punto flotante se ejecuten cinco veces más rápidas. Si el tiempo de ejecución de algún programa de prueba antes de la mejora de punto flotante es de 10 segundos, ¿cuál será la ganancia de velocidad si la mitad de los 10 segundos se emplea en ejecutar instrucciones de punto flotante?
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 4 de 5)`
 
-Relacionado: [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]]
+Relacionado: [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su]] · [[calculo-de-ganancia-de-velocidad-speedup-con-la-ley-de-amdah]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion]]

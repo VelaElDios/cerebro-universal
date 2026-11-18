@@ -16,3 +16,5 @@ La segmentación software reorganiza un bucle para solapar iteraciones como etap
 
 > El nombre surge porque el procesamiento del bucle original se realiza simulando el comportamiento de una unidad segmentada, siendo las iteraciones los datos de dicha unidad segmentada
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
+
+Relacionado: [[segmentacion-software-software-pipelining-para-suma-vectoria]] · [[segmentacion-software-software-pipelining-para-bucle-conteo]] · [[parametros-estandar-para-ejercicios-de-segmentacion-software]]

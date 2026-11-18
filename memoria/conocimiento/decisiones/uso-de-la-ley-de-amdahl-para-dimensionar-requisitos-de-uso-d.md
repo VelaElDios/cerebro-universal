@@ -17,4 +17,4 @@ Se decide aplicar la ley de Amdahl (modelo clásico de aceleración parcial) par
 > speedup = 3 = T / (xT/4 + (1-x)T) ⟹ x = 0.89 (el disco debe usarse el 89% del tiempo)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco]] · [[ley-de-amdahl-para-mejora-de-subsistema-disco-6x-mas-rapido]] · [[ejercicio-de-mejora-de-disco-duro-y-ley-de-amdahl-ej-23]]

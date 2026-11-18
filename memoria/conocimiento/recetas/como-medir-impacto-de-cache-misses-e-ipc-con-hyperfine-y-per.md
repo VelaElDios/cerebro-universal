@@ -23,4 +23,4 @@ Metodología estándar de la práctica para cuantificar optimizaciones:
 > Compila y compara ambas versiones utilizando las herramientas hyperfine (para el tiempo de ejecución) y perf (analizando cache-misses, instrucciones e IPC).
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf`
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]] · [[benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst]] · [[como-benchmarkear-y-perfilar-patrones-de-acceso-con-hyperfin]] · [[como-medir-contadores-hardware-con-perf-stat-para-comparar-p]]

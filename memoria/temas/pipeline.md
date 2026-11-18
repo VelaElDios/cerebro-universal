@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pipeline"
-notas: 18
+notas: 298
 ---
 # pipeline
 
@@ -10,30 +10,313 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/adelantamiento-forwarding-para-riesgos-raw|Adelantamiento (forwarding) para riesgos RAW]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-en-bucle-mips-con-acceso-a-memoria|Análisis de dependencias en bucle MIPS con acceso a memoria]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-entre-instrucciones-de-punto-flotan|Análisis de dependencias entre instrucciones de punto flotante en misma iteración]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-entre-s-d-y-daddui-en-bucle-vectori|Análisis de dependencias entre S.D y DADDUI en bucle vectorial]]
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-dependencias-y-planificacion-de-bucle-mips64-con|Análisis de dependencias y planificación de bucle MIPS64 con unidades FP segmentadas (examen Junio 2013)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-detenciones-stalls-en-bucle-con-media-ponderada|Análisis de detenciones (stalls) en bucle con media ponderada y cálculo de CPI]]
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-paradas-en-bucle-con-unidades-fp-de-latencias-2|Análisis de paradas en bucle con unidades FP de latencias 2/3/5 y forwarding]]
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-pipeline-fp-para-bucle-media-ponderada-problema|Análisis de pipeline FP para bucle media ponderada (Problema 1) con latencias L.D=1, MUL.D=3, ADD.D=2, DIV.D=5, S.D=1]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-prediccion-de-saltos-en-bucle-con-dos-saltos-con|Análisis de predicción de saltos en bucle con dos saltos condicionales (B1: BEQZ, B2: BEQ)]]
+- 🧪 [[memoria/conocimiento/recetas/analisis-de-stalls-en-bucle-mips64-con-forwarding-y-ramas-re|Análisis de stalls en bucle MIPS64 con forwarding y ramas resueltas en ID (Ejercicio 1a)]]
+- 🧪 [[memoria/conocimiento/recetas/bucle-risc-v-para-calibracion-imu-con-puntero-descendente|Bucle RISC-V para calibración IMU con puntero descendente]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/comparativa-de-rendimiento-mips-entre-dos-implementaciones-c|Comparativa de rendimiento MIPS entre dos implementaciones con distinto CPI (pregunta 4)]]
+- 🧪 [[memoria/conocimiento/recetas/condicion-para-solapar-iteraciones-de-un-bucle-software-pipe|Condición para solapar iteraciones de un bucle (software pipelining)]]
+- 🧪 [[memoria/conocimiento/recetas/configuracion-de-pipeline-mips64-para-problema-de-examen-lat|Configuración de pipeline MIPS64 para problema de examen (latencias FP, salto retardado, forwarding)]]
+- 🧪 [[memoria/conocimiento/recetas/configuracion-superscalar-4-issue-para-diagramas-de-pipeline|Configuración superscalar 4-issue para diagramas de pipeline (examen AC enero 2022)]]
+- 🧪 [[memoria/conocimiento/recetas/configuracion-tomasulo-con-rob-para-simulacion-de-examen-ene|Configuración Tomasulo con ROB para simulación de examen (enero 2021)]]
+- 🧪 [[memoria/conocimiento/recetas/conversion-de-codigo-vliw-compactado-a-bucle-mips64-segmenta|Conversión de código VLIW compactado a bucle MIPS64 segmentado con un resultado por iteración]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-con-penalizacion-de-saltos-resueltos-en-id-test-ac-q13|CPI con penalización de saltos resueltos en ID (test AC Q13)]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-con-prediccion-de-saltos-en-pipeline-de-5-etapas-direcci|CPI con predicción de saltos en pipeline de 5 etapas (dirección en EX, destino en ID)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/cpi-con-tecnica-parar-siempre-en-saltos-cpi-1-saltos-tomados|CPI con técnica 'parar siempre' en saltos: CPI = 1 + (%saltos * %tomados * penalización)]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-en-pipeline-con-penalizacion-por-saltos-tomados-y-delay|CPI en pipeline con penalización por saltos tomados y delay slots]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-medio-ponderado-en-implementacion-multiciclo-mips|CPI medio ponderado en implementación multiciclo MIPS]]
+- 🧪 [[memoria/conocimiento/recetas/cpi-tras-desenrollado-y-planificacion-de-bucle|CPI tras desenrollado y planificación de bucle]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-cpi-base-pipeline-5-etapas-con-saltos-sin-prediccion|Cálculo CPI base pipeline 5 etapas con saltos sin predicción]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-ciclos-de-penalizacion-por-salto-tomado-en-pipeli|Cálculo de ciclos de penalización por salto tomado en pipeline 5 etapas con condición en EX y dirección en MEM]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos|Cálculo de CPI base en pipeline con penalización por saltos sin BTB]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr|Cálculo de CPI con BTB que almacena solo saltos tomados y predice NT si no está]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-implementacion-multiciclo-mips-con-mezcla|Cálculo de CPI en implementación multiciclo MIPS con mezcla de instrucciones dada]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-mips-multiciclo-con-mezcla-de-instruccione|Cálculo de CPI en MIPS multiciclo con mezcla de instrucciones dada]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-pipeline-con-stalls-y-tras-optimizacion|Cálculo de CPI en pipeline con stalls y tras optimización]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-en-procesador-multiciclo-con-mezcla-de-instru|Cálculo de CPI en procesador multiciclo con mezcla de instrucciones]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-cpi-medio-ponderado-por-mezcla-de-instrucciones|Cálculo de CPI medio ponderado por mezcla de instrucciones]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f|Cálculo de detenciones (stalls) y CPR en pipeline RISC-V con FP segmentado]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-instrucciones-tras-desenrollar-bucle-3-veces-unro|Cálculo de instrucciones tras desenrollar bucle 3 veces (unroll factor 3)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-c|Cálculo de MIPS pico a partir de mezcla de instrucciones y CPI por tipo]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-penalizacion-de-salto-condicional-en-pipeline-de|Cálculo de penalización de salto condicional en pipeline de 5 etapas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-ley-de-amdahl-ejemplo-tarjeta-grafica|Cálculo de speedup con Ley de Amdahl (ejemplo tarjeta gráfica 4x, 40% tiempo)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-ley-de-amdahl-para-mejora-de-unidad-d|Cálculo de speedup con ley de Amdahl para mejora de unidad de punto flotante (pregunta 3)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-ley-de-amdahl-mejora-10x-en-punto-flo|Cálculo de speedup con ley de Amdahl: mejora 10x en punto flotante al 50% del tiempo]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-con-reduccion-de-cpi-y-aumento-de-ciclo-d|Cálculo de speedup con reducción de CPI y aumento de ciclo de reloj (pregunta 5)]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-para-bucle-desenrollado-en-pipeline-con-h|Cálculo de Speedup para bucle desenrollado en pipeline con hazards]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-por-desenrollado-de-bucle-en-superescalar|Cálculo de speedup por desenrollado de bucle en superescalar grado 2]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-speedup-por-desenrollado-de-bucle-en-superscalar|Cálculo de speedup por desenrollado de bucle en superscalar]]
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-tiempo-de-ejecucion-con-cpi-y-mezcla-de-instrucci|Cálculo de tiempo de ejecución con CPI y mezcla de instrucciones]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc|Cálculo de tiempo de ejecución con CPI, frecuencia e instrucciones]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-ciclos-por-iteracion-del-codigo-original-con-l|Cómo calcular ciclos por iteración del código original con latencias dadas]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-ciclos-por-iteracion-en-codigo-original-con-la|Cómo calcular ciclos por iteración en código original con latencias dadas (examen AC 2017/18)]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-cycles-per-result-cpr-en-bucles-pipelined-con|Cómo calcular Cycles Per Result (CPR) en bucles pipelined con stalls]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi|Cómo calcular stalls en pipeline MIPS64 con operand forwarding y latencias FP conocidas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-construir-diagrama-de-gantt-tabla-de-ciclos-para-pipeli|Cómo construir diagrama de Gantt / tabla de ciclos para pipeline superescalar]]
+- 🧪 [[memoria/conocimiento/recetas/como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo|Cómo desenrollar 4 veces y planificar bucle VLIW para máximo aprovechamiento (examen enero 2023)]]
+- 🧪 [[memoria/conocimiento/recetas/como-identificar-dependencia-de-datos-entre-iteraciones-en-b|Cómo identificar dependencia de datos entre iteraciones en bucle con carga y actualización de puntero]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-identificar-dependencias-en-el-codigo-del-problema-3-pa|Cómo identificar dependencias en el código del Problema 3 para planificación]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador|Cómo leer la tabla de estado de instrucciones en el marcador de Tomasulo]]
+- 🧪 [[memoria/conocimiento/recetas/como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul|Cómo rellenar la tabla de estado de instrucciones en Tomasulo sin especulación]]
+- 🧪 [[memoria/conocimiento/recetas/como-rellenar-tabla-de-ejecucion-con-bits-venenosos-casos-r1|Cómo rellenar tabla de ejecución con bits venenosos (casos R1=0 y R1=5)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-resolver-segmentacion-software-software-pipelining-en-m|Cómo resolver segmentación software (software pipelining) en MIPS64 con salto retardado y adelantamiento]]
+- 🧪 [[memoria/conocimiento/recetas/como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula|Cómo resolver tabla de estado en Tomasulo con ROB y especulación]]
+- 🧪 [[memoria/conocimiento/recetas/como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de|Cómo se traza la ejecución ciclo a ciclo en el algoritmo de Tomasulo]]
+- 🧪 [[memoria/conocimiento/recetas/definicion-de-latencia-de-salto-y-penalizacion-por-fallo-de|Definición de latencia de salto y penalización por fallo de predicción]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema|Dependencias en bucle MIPS64 de encriptación ASCIIZ (Problema 1)]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr|Desenrollado 4x de bucle MIPS64 FP con renombrado de registros y latencias dadas]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat|Desenrollado 4x y planificación mínima para bucle FP con latencias dadas]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-8-del-bucle-l-d-add-d-s-d-daddui-bne-para-sched|Desenrollado 8× del bucle L.D/ADD.D/S.D/DADDUI/BNE para scheduling superscalar vs VLIW]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-4x-con-salto-retardado-para-eliminar-s|Desenrollado de bucle 4x con salto retardado para eliminar stalls en pipeline in-order]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls|Desenrollado de bucle mínimo para eliminar todos los stalls en pipeline MIPS64 con FP]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-de-bucle-minimo-para-planificacion-sin-detencio|Desenrollado de bucle mínimo para planificación sin detenciones con salto retardado]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-manual-manual-unrolling-con-4-acumuladores-para|Desenrollado manual (Manual Unrolling) con 4 acumuladores para romper cadena de dependencia y subir IPC]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-minimo-de-bucle-mips64-para-eliminar-stalls-con|Desenrollado mínimo de bucle MIPS64 para eliminar stalls con FP mul (3 ciclos) y div (4 ciclos)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/desenrollado-y-planificacion-sin-stalls-del-bucle-mips64-eje|Desenrollado y planificación sin stalls del bucle MIPS64 (Ejercicio 1b)]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para|Desenrollamiento de bucle 3x y re-planificación en VLIW para aumentar operaciones por ciclo]]
+- 🧪 [[memoria/conocimiento/recetas/desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e|Desenrollamiento de bucle mínimo para eliminar detenciones en RISC-V]]
+- 🧪 [[memoria/conocimiento/recetas/determinar-salto-no-salto-de-bne-tras-instruccion-especulati|Determinar salto/no salto de BNE tras instrucción especulativa con excepción]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e|Diagrama pipeline superscalar grado 4: ejecución en orden y escritura en orden]]
+- 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r|Diagrama pipeline superscalar: ejecución fuera de orden con renombramiento y escritura fuera de orden]]
+- 🧪 [[memoria/conocimiento/recetas/diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-sin-r|Diagrama pipeline superscalar: ejecución fuera de orden sin renombramiento, escritura en orden]]
+- 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencia-raw-entre-add-s-consecutivas-p|Identificación de dependencia RAW entre ADD.S consecutivas por registro destino/fuente]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi|Método para calcular speedup de bucle desenrollado y planificado vs original (examen AC 2017/18)]]
+- 🧪 [[memoria/conocimiento/recetas/parametros-de-simulacion-tomasulo-especulativo-para-mips64-e|Parámetros de simulación Tomasulo especulativo para MIPS64 (examen AC enero 2022)]]
+- 🧪 [[memoria/conocimiento/recetas/parametros-estandar-para-ejercicios-de-segmentacion-software|Parámetros estándar para ejercicios de segmentación software en RISC-V (Tema 3)]]
+- 🧪 [[memoria/conocimiento/recetas/parametros-estandar-para-simular-tomasulo-con-especulacion-e|Parámetros estándar para simular Tomasulo con especulación en ejercicios de examen]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/pasos-para-rellenar-tabla-de-estado-de-instrucciones-emision|Pasos para rellenar tabla de estado de instrucciones (Emisión, Ejecución, Escritura, Terminación) en examen Tomasulo]]
+- 🧪 [[memoria/conocimiento/recetas/pasos-para-resolver-exercise-3-processor-a-superscalar-in-or|Pasos para resolver Exercise 3 Processor A (superscalar in-order sin renombrado)]]
+- 🧪 [[memoria/conocimiento/recetas/pasos-para-resolver-exercise-3-processor-b-vliw-con-renombra|Pasos para resolver Exercise 3 Processor B (VLIW con renombrado y schedule agresivo)]]
+- 🧪 [[memoria/conocimiento/recetas/pasos-para-simular-tomasulo-especulativo-con-rob-y-restricci|Pasos para simular Tomasulo especulativo con ROB y restricciones de timing (guía práctica)]]
+- 🧪 [[memoria/conocimiento/recetas/penalizacion-de-salto-tomado-con-condicion-en-ex-y-direccion|Penalización de salto tomado con condición en EX y dirección en MEM]]
 - 🧪 [[memoria/conocimiento/recetas/pipeline-risc-v-de-5-etapas-if-id-ex-mem-wb|Pipeline RISC-V de 5 etapas: IF, ID, EX, MEM, WB]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d|Planificación (scheduling) de bucle en VLIW con forwarding y delayed branch]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/planificacion-de-bucle-jacobsthal-en-pipeline-mips64-con-uni|Planificación de bucle Jacobsthal en pipeline MIPS64 con unidades FP de 2 y 3 ciclos y salto retrasado]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/planificacion-en-superescalar-3-vias-entero-salto-memoria-fp|Planificación en superescalar 3-vías (entero/salto, memoria, FP) con ranura de retardo]]
+- 🧪 [[memoria/conocimiento/recetas/planificacion-en-superescalar-grado-2-con-sin-renombramiento|Planificación en superescalar grado 2 con/sin renombramiento]]
+- 🧪 [[memoria/conocimiento/recetas/planificacion-en-superescalar-grado-2-en-orden-fuera-de-orde|Planificación en superescalar grado 2: en orden, fuera de orden sin renombramiento, fuera de orden con renombramiento]]
+- 🧪 [[memoria/conocimiento/recetas/planificacion-en-superscalar-mips64-4-vias-2-enteros-2-fp-co|Planificación en superscalar MIPS64 4 vías (2 enteros + 2 FP) con branch delayed 2 slots]]
+- 🧪 [[memoria/conocimiento/recetas/planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip|Planificación en VLIW 4 operaciones sin restricciones de tipo (emisión agresiva out-of-order estática)]]
+- 🧪 [[memoria/conocimiento/recetas/planificacion-estatica-con-poison-bits-en-mips64-reglas-de-e|Planificación estática con poison bits en MIPS64: reglas de excepción y propagación]]
+- 🧪 [[memoria/conocimiento/recetas/preguntas-del-problema-1-detenciones-cpi-y-desenrollamiento|Preguntas del Problema 1: Detenciones, CPI y Desenrollamiento con salto retardado]]
+- 🧪 [[memoria/conocimiento/recetas/que-mostrar-en-esquema-hardware-tomasulo-con-especulacion-pa|Qué mostrar en esquema hardware Tomasulo con especulación (parte a examen)]]
+- 🧪 [[memoria/conocimiento/recetas/secuencia-de-instrucciones-de-referencia-para-ejercicios-de|Secuencia de instrucciones de referencia para ejercicios de Scoreboard y Tomasulo (examen AC June 2021)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/secuencia-de-instrucciones-del-problema-3-examen-ac-junio-20|Secuencia de instrucciones del problema 3 (examen AC Junio 2014) para simulación Tomasulo]]
+- 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-bucle-conteo|Segmentación software (software pipelining) para bucle conteo negativos RISC-V]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/segmentacion-software-software-pipelining-para-bucle-encript|Segmentación software (software pipelining) para bucle encriptación MIPS64]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-de-algoritmo-tomasulo-basico-y-especulativo-con-r|Simulación de algoritmo Tomasulo básico y especulativo con ROB de 5 entradas]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-con-especulacion-parametros-de-hardware|Simulación Tomasulo con especulación: parámetros de hardware y restricciones de ciclo]] · ⚠️ propuesto
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/comparativa-eficiencia-operaciones-ciclo-superscalar-con-res|Comparativa eficiencia operaciones/ciclo: superscalar con restricción de tipo vs VLIW sin restricción]]
+- ⚖️ [[memoria/conocimiento/decisiones/configuracion-de-recursos-para-tomasulo-basico-en-examen-jun|Configuración de recursos para Tomasulo básico en examen June 2021 (2 RS/FU, 2 load buffers, 1 store buffer)]]
+- ⚖️ [[memoria/conocimiento/decisiones/configuracion-de-recursos-para-tomasulo-especulativo-en-exam|Configuración de recursos para Tomasulo especulativo en examen June 2021 (ROB 5 entradas, 2 RS/FU, 2 load buffers)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/diferencias-clave-entre-los-tres-modelos-de-ejecucion-supers|Diferencias clave entre los tres modelos de ejecución superscalar (examen AC)]]
+- ⚖️ [[memoria/conocimiento/decisiones/efecto-de-intervalo-de-iniciacion-2-en-multiplicador-fp-sobr|Efecto de intervalo de iniciación 2 en multiplicador FP sobre código desenrollado]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/parametros-de-pipeline-in-order-5-etapas-para-analisis-de-ha|Parámetros de pipeline in-order 5 etapas para análisis de hazards (examen Junio 2026)]]
+- ⚖️ [[memoria/conocimiento/decisiones/restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion|Restricción CDB mismo ciclo en Tomasulo: no iniciar ejecución y escribir dato simultáneamente]]
+- ⚖️ [[memoria/conocimiento/decisiones/restriccion-de-conflicto-en-bus-comun-de-datos-bdc-cdb-no-es|Restricción de conflicto en Bus Común de Datos (BDC/CDB): no escritura e inicio de ejecución simultáneos]]
+- ⚖️ [[memoria/conocimiento/decisiones/rob-de-10-entradas-para-secuencia-de-8-instrucciones-en-exam|ROB de 10 entradas para secuencia de 8 instrucciones en examen]]
+- ⚖️ [[memoria/conocimiento/decisiones/rob-de-4-entradas-limita-ventana-de-instrucciones-en-vuelo-e|ROB de 4 entradas limita ventana de instrucciones en vuelo (examen AC 2014)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/suposicion-de-cauce-detenido-durante-huecos-de-retardo-para|Suposición de cauce detenido durante huecos de retardo para cálculo de penalización]]
+- ⚖️ [[memoria/conocimiento/decisiones/supuestos-del-examen-retardo-de-salto-ignorado-y-unidades-en|Supuestos del examen: retardo de salto ignorado y unidades enteras latencia 0]]
+- ⚖️ [[memoria/conocimiento/decisiones/uso-de-delayed-branch-con-1-delay-slot-en-vliw-para-ocultar|Uso de delayed branch con 1 delay slot en VLIW para ocultar latencia de salto]]
+- ⚖️ [[memoria/conocimiento/decisiones/uso-de-ranura-de-retardo-de-1-ciclo-en-superescalar-para-ocu|Uso de ranura de retardo de 1 ciclo en superescalar para ocultar latencia de salto]]
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com|Algoritmo Tomasulo: los resultados se difunden por el Bus Común de Datos (CDB)]]
+- 💡 [[memoria/conocimiento/conceptos/alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin|Alternativas de detección de instrucción de salto en pipeline]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/antidependencia-war-en-bucle-entre-carga-y-actualizacion-de|Antidependencia (WAR) en bucle entre carga y actualización de puntero en misma iteración]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/antidependencia-war-entre-instrucciones-consecutivas-en-risc|Antidependencia (WAR) entre instrucciones consecutivas en RISC-V]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/antidependencia-war-siempre-genera-hazard-war|Antidependencia (WAR) siempre genera hazard WAR]]
+- 💡 [[memoria/conocimiento/conceptos/antidependencia-entre-iteraciones-en-bucle-con-store-y-actua|Antidependencia entre iteraciones en bucle con store y actualización de puntero]]
+- 💡 [[memoria/conocimiento/conceptos/antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord|Antidependencia siempre genera hazard WAR en pipeline in-order]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter|Análisis de dependencias en bucle con ADD.D y S.D (misma iteración vs entre iteraciones)]]
+- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS de 5 etapas: acceso en ID (lectura) y WB (escritura)]]
+- 💡 [[memoria/conocimiento/conceptos/bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64|Bucle de cálculo y(i) = A * x(i)^2 en ensamblador MIPS64]]
+- 💡 [[memoria/conocimiento/conceptos/bucle-vectorial-de-referencia-para-desenrollado-y-planificac|Bucle vectorial de referencia para desenrollado y planificación (examen AC June 2018)]]
+- 💡 [[memoria/conocimiento/conceptos/buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca|Buffer de Reordenamiento (ROB) en Tomasulo con especulación: campos y funcionamiento]]
+- 💡 [[memoria/conocimiento/conceptos/clasificacion-de-dependencias-en-bucle-antidependencia-war-e|Clasificación de dependencias en bucle: antidependencia (WAR) entre store e incremento de puntero]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/comparativa-eficiencia-operations-per-cycle-opc-superscalar|Comparativa eficiencia operations per cycle (OPC) superscalar vs VLIW en bucle desenrollado]]
+- 💡 [[memoria/conocimiento/conceptos/configuracion-de-procesador-tomasulo-con-especulacion-del-ej|Configuración de procesador Tomasulo con especulación del Ejercicio 2]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/configuracion-de-tomasulo-con-especulacion-para-examen-ac-ju|Configuración de Tomasulo con especulación para examen AC Junio 2012]]
+- 💡 [[memoria/conocimiento/conceptos/configuracion-vliw-de-6-unidades-funcionales-con-latencias-a|Configuración VLIW de 6 unidades funcionales con latencias asimétricas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/criterio-de-desenrollamiento-de-bucles-loop-unrolling|Criterio de desenrollamiento de bucles (loop unrolling)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/definiciones-clave-basic-block-antidependencia-loop-unrollin|Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru|Definición de bloque básico en paralelismo a nivel de instrucción (pregunta 6)]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-datos-raw-entre-instrucciones|Definición de dependencia de datos (RAW) entre instrucciones]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-datos-verdadera-raw|Definición de dependencia de datos verdadera (RAW)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-nombre-anti-y-salida|Definición de dependencia de nombre (anti y salida)]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-nombre-name-dependency-entre-in|Definición de dependencia de nombre (name dependency) entre instrucciones]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-dependencia-de-salida-waw-entre-dos-instruccio|Definición de dependencia de salida (WAW) entre dos instrucciones]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-instruccion-de-salto|Definición de latencia de instrucción de salto]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5|Definición de latencia de resolución de salto en pipeline 5 etapas IF/ID/EX/MEM/WB]]
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-salto-y-huecos-de-retardo|Definición de latencia de salto y huecos de retardo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-riesgo-raw-read-after-write|Definición de riesgo RAW (Read After Write)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-y-proposito-de-la-segmentacion-pipeline|Definición y propósito de la segmentación (pipeline)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione|Dependencia de datos en pipeline → riesgo solo si instrucciones están cerca]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-entre-iteraciones-en-bucle-con-actualiz|Dependencia de datos entre iteraciones en bucle con actualización de puntero (registro x1)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-datos-no-siempre-causa-hazard-depende-de-dist|Dependencia de datos no siempre causa hazard; depende de distancia en pipeline]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-en-pipeline-con-forwarding|Dependencia de salida (WAW) en pipeline con forwarding]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-y-antidependencia-war-definiciones|Dependencia de salida (WAW) y antidependencia (WAR) definiciones (preguntas 6 y 8)]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter|Dependencia entre S.D y DADDUI en bucle es por R1 entre iteraciones]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien|Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-se-eliminan-mediante-renombramiento-d|Dependencias de nombre se eliminan mediante renombramiento de registros]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencias-en-bucle-mips-de-carga-modificacion-almacenamie|Dependencias en bucle MIPS de carga-modificación-almacenamiento (LW, DADD, SW, DADDUI, BNEZ)]]
+- 💡 [[memoria/conocimiento/conceptos/dependencias-en-bucles-risc-v-clasificacion-intra-iteracion|Dependencias en bucles RISC-V: clasificación intra-iteración vs loop-carried]]
+- 💡 [[memoria/conocimiento/conceptos/dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v|Dependencias RAW, WAR y WAW en el bucle de producto escalar-vectorial (examen AC 2017/18)]]
+- 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucles-loop-unrolling-en-superescalar-con-re|Desenrollado de bucles (loop unrolling) en superescalar con renombrado de registros]]
+- 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-reduce-dependencias-de-control-me|Desenrollamiento de bucles: reduce dependencias de control mediante planificación estática]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/detenciones-en-pipeline-afectan-negativamente-a-prestaciones|Detenciones en pipeline afectan negativamente a prestaciones]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/diferencia-clave-entre-ejecucion-fuera-de-orden-sin-y-con-re|Diferencia clave entre ejecución fuera de orden sin y con renombramiento]]
+- 💡 [[memoria/conocimiento/conceptos/diferencia-entre-dependencia-de-datos-raw-antidependencia-wa|Diferencia entre dependencia de datos (RAW), antidependencia (WAR) y dependencia de salida (WAW)]]
+- 💡 [[memoria/conocimiento/conceptos/diferencia-escritura-resultado-vs-terminacion-commit-en-toma|Diferencia Escritura resultado vs Terminación (Commit) en Tomasulo con ROB]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/diferencias-clave-entre-las-tres-tablas-de-planificacion-ped|Diferencias clave entre las tres tablas de planificación pedidas (Scoreboard vs Tomasulo básico vs Tomasulo especulativo)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/diferencias-clave-processor-a-superscalar-in-order-vs-proces|Diferencias clave Processor A (superscalar in-order) vs Processor B (VLIW) en Exercise 3]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/diferencias-entre-ejecucion-en-orden-fuera-de-orden-sin-reno|Diferencias entre ejecución en orden, fuera de orden sin renombramiento y con renombramiento]]
+- 💡 [[memoria/conocimiento/conceptos/ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs|Ejercicio 3 AC June 2019: comparación superscalar in-order vs VLIW]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/el-desenrollamiento-de-bucles-reduce-principalmente-los-ries|El desenrollamiento de bucles reduce principalmente los riesgos de control (saltos)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/el-marcador-scoreboard-permite-emitir-instrucciones-independ|El Marcador (Scoreboard) permite emitir instrucciones independientes mientras una espera]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/el-renombrado-de-registros-evita-dependencias-de-nombre-war|El renombrado de registros evita dependencias de nombre (WAR/WAW)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-datos-mediante-renombramiento|Eliminación de dependencias de datos mediante renombramiento]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-nombre-mediante-renombramient|Eliminación de dependencias de nombre mediante renombramiento]]
+- 💡 [[memoria/conocimiento/conceptos/eliminacion-de-dependencias-de-salida-waw-mediante-renombrad|Eliminación de dependencias de salida (WAW) mediante renombrado de registros]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/esquemas-de-pipeline-con-1-2-y-3-huecos-de-retardo-para-beqz|Esquemas de pipeline con 1, 2 y 3 huecos de retardo para beqz]]
+- 💡 [[memoria/conocimiento/conceptos/estaciones-de-reserva-por-uf-2-por-unidad-funcional-en-confi|Estaciones de reserva por UF: 2 por unidad funcional en configuración examen]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-de-tabla-rob-para-tomasulo-especulativo-con-5-ent|Estructura de tabla ROB para Tomasulo especulativo con 5 entradas]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-del-marcador-scoreboard-en-arquitectura-de-comput|Estructura del marcador (scoreboard) en arquitectura de computadores]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-del-reorder-buffer-rob-en-tomasulo-con-especulaci|Estructura del Reorder Buffer (ROB) en Tomasulo con especulación]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d|Forwarding (adelantamiento) no resuelve todos los riesgos de datos en MIPS multiciclo]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/forwarding-de-resultado-en-ciclo-siguiente-al-write-modelo-s|Forwarding de resultado en ciclo siguiente al Write (modelo superscalar examen)]]
+- 💡 [[memoria/conocimiento/conceptos/funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es|Funcionamiento detallado de bits de veneno (poison bits) en especulación]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/hazard-war-corresponde-a-antidependencia-dependencia-de-nomb|Hazard WAR corresponde a antidependencia (dependencia de nombre)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/identificacion-de-antidependencia-war-entre-store-e-incremen|Identificación de antidependencia (WAR) entre store e incremento de puntero en bucle]]
+- 💡 [[memoria/conocimiento/conceptos/identificacion-de-antidependencia-entre-iteraciones-en-bucle|Identificación de antidependencia entre iteraciones en bucle con arrays (A[i+1]=A[i]+B[i]; B[i]=A[i]*2)]]
+- 💡 [[memoria/conocimiento/conceptos/identificacion-de-superescalar-por-ancho-de-emision-y-cpi|Identificación de superescalar por ancho de emisión y CPI]]
+- 💡 [[memoria/conocimiento/conceptos/instrucciones-especulativas-marcadas-con-en-codigo-mips64-ex|Instrucciones especulativas marcadas con * en código MIPS64 (examen June 2025)]]
+- 💡 [[memoria/conocimiento/conceptos/instrucciones-especulativas-marcadas-con-asterisco-en-codigo|Instrucciones especulativas marcadas con asterisco en código MIPS64]]
+- 💡 [[memoria/conocimiento/conceptos/las-dependencias-de-datos-verdaderas-no-se-pueden-eliminar-e|Las dependencias de datos verdaderas no se pueden eliminar; el renombrado de registros elimina dependencias de nombre]]
+- 💡 [[memoria/conocimiento/conceptos/las-dependencias-de-nombre-war-waw-se-eliminan-mediante-reno|Las dependencias de nombre (WAR, WAW) se eliminan mediante renombramiento de registros]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/limitacion-del-adelantamiento-hazard-load-use-load-use-penal|Limitación del adelantamiento: hazard load-use (load-use penalty)]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup|Penalización de fallo de predicción de salto en pipeline superscalar]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per|Por qué el orden de los datos afecta al código con salto pero no al branchless]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/mecanismo-de-cooperacion-hardware-software-para-excepciones|Mecanismo de cooperación hardware/software para excepciones especulativas]]
+- 💡 [[memoria/conocimiento/conceptos/mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt|Mecanismos de recuperación ante fallos de predicción de saltos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/mips64-usa-caches-separadas-para-instrucciones-y-datos-harva|MIPS64 usa cachés separadas para instrucciones y datos (Harvard modificada)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/name-dependency-dependencia-de-nombre-incluye-waw-y-war|Name dependency (dependencia de nombre) incluye WAW y WAR]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/objetivo-de-la-segmentacion-software-software-pipelining|Objetivo de la segmentación software (software pipelining)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/objetivo-del-desenrollamiento-de-bucles-loop-unrolling|Objetivo del desenrollamiento de bucles (loop unrolling)]]
+- 💡 [[memoria/conocimiento/conceptos/paralelismo-a-nivel-de-bucle-lp-solapamiento-de-iteraciones|Paralelismo a nivel de bucle (LP) = solapamiento de iteraciones]]
+- 💡 [[memoria/conocimiento/conceptos/paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas|Paralelismo a nivel de bucle = ejecutar iteraciones solapadas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/paso-de-commit-en-superscalar-actualizacion-de-registros|Paso de commit en superscalar: actualización de registros]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup|Penalización de fallo de predicción de salto en pipeline superscalar]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-prediccion-estatica-siempre-no-tomado-con-di|Penalización de predicción estática "siempre no tomado" con dirección en ID y sentido en EX]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r|Penalización de salto en MIPS con resolución en ID y salto retardado: cero ciclos]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-etapa-id-se-divide-en-emision-issue-y|Planificación dinámica: etapa ID se divide en emisión (issue) y lectura de operandos]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-en-superescalar-grado-2-con-latencias-mem-2-y|Planificación en superescalar grado 2 con latencias MEM=2 y EX=2]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]]
+- 💡 [[memoria/conocimiento/conceptos/planificacion-por-software-software-pipelining-y-desenrollad|Planificación por software (software pipelining) y desenrollado de bucles]]
+- 💡 [[memoria/conocimiento/conceptos/por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per|Por qué el orden de los datos afecta al código con salto pero no al branchless]]
 - 💡 [[memoria/conocimiento/conceptos/predictor-de-saltos-por-que-datos-ordenados-vs-desordenados|Predictor de saltos: por qué datos ordenados vs desordenados cambian rendimiento drásticamente]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p|Predictor híbrido de saltos con selectores de 2 bits entre predictor local de 1 bit y predictor local de 3 bits]]
+- 💡 [[memoria/conocimiento/conceptos/problema-de-desambiguacion-de-memoria-memory-disambiguation|Problema de desambiguación de memoria (memory disambiguation)]]
+- 💡 [[memoria/conocimiento/conceptos/problema-de-desenrollado-y-planificacion-de-bucle-superescal|Problema de desenrollado y planificación de bucle superescalar con latencias dadas (examen AC 2017/18)]]
+- 💡 [[memoria/conocimiento/conceptos/problema-examen-ac-cpi-pipeline-con-btb-que-solo-almacena-sa|Problema examen AC: CPI pipeline con BTB que solo almacena saltos tomados]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/procesador-a-mips64-superscalar-5-etapas-4-emisiones-ciclo-2|Procesador A: MIPS64 superscalar 5 etapas, 4 emisiones/ciclo (2 int + 2 FP)]]
+- 💡 [[memoria/conocimiento/conceptos/procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp|Procesador A: Superscalar MIPS64 4-issue (2 enteros + 2 FP)]]
+- 💡 [[memoria/conocimiento/conceptos/procesador-b-vliw-4-operaciones-ciclo-sin-restricciones-de-t|Procesador B: VLIW 4 operaciones/ciclo sin restricciones de tipo, scheduling estático agresivo]]
+- 💡 [[memoria/conocimiento/conceptos/que-es-un-riesgo-war-y-a-que-dependencia-corresponde|Qué es un riesgo WAR y a qué dependencia corresponde]]
+- 💡 [[memoria/conocimiento/conceptos/que-hace-la-planificacion-de-trazas-trace-scheduling|Qué hace la planificación de trazas (trace scheduling)]]
+- 💡 [[memoria/conocimiento/conceptos/que-hace-la-tecnica-de-segmentacion-software-software-pipeli|Qué hace la técnica de segmentación software (software pipelining)]]
+- 💡 [[memoria/conocimiento/conceptos/que-ocurre-cuando-un-salto-mal-predicho-llega-al-tope-del-ro|Qué ocurre cuando un salto mal predicho llega al tope del ROB]]
+- 💡 [[memoria/conocimiento/conceptos/que-representa-un-trace-en-trace-scheduling|Qué representa un trace en trace scheduling]]
+- 💡 [[memoria/conocimiento/conceptos/que-resuelve-el-renombrado-de-registros-register-renaming|Qué resuelve el renombrado de registros (register renaming)]]
+- 💡 [[memoria/conocimiento/conceptos/reglas-de-cdb-y-liberacion-de-recursos-en-tomasulo-con-rob|Reglas de CDB y liberación de recursos en Tomasulo con ROB]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/restricciones-de-timing-en-tomasulo-con-especulacion-examen|Restricciones de timing en Tomasulo con especulación (examen AC)]]
+- 💡 [[memoria/conocimiento/conceptos/restriccion-de-cdb-en-tomasulo-no-escritura-e-inicio-simulta|Restricción de CDB en Tomasulo: no escritura e inicio simultáneos]]
+- 💡 [[memoria/conocimiento/conceptos/restriccion-de-forwarding-por-cdb-en-tomasulo-no-escritura-e|Restricción de forwarding por CDB en Tomasulo: no escritura e inicio ejecución mismo ciclo]]
+- 💡 [[memoria/conocimiento/conceptos/riesgo-estructural-en-scoreboard-pregunta-7|Riesgo estructural en Scoreboard (pregunta 7)]]
+- 💡 [[memoria/conocimiento/conceptos/riesgo-load-use-en-pipeline-mips-con-forwarding|Riesgo load-use en pipeline MIPS con forwarding]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/riesgo-raw-read-after-write-y-su-causa|Riesgo RAW (Read After Write) y su causa]]
+- 💡 [[memoria/conocimiento/conceptos/riesgo-raw-como-dependencia-de-datos-verdadera|Riesgo RAW como dependencia de datos verdadera]]
+- 💡 [[memoria/conocimiento/conceptos/riesgo-war-corresponde-a-antidependencia|Riesgo WAR corresponde a antidependencia]]
 - 💡 [[memoria/conocimiento/conceptos/riesgos-de-datos-en-risc-v-raw-waw-war|Riesgos de datos en RISC-V: RAW, WAW, WAR]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/riesgos-estructurales-causas-y-ejemplo-banco-de-registros|Riesgos estructurales: causas y ejemplo banco de registros]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]]
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-como-planificacion-estatica|Salto retardado (delayed branch) como planificación estática]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-bucle-con-bne-y-daddui|Salto retardado (delayed branch) en bucle con BNE y DADDUI]]
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-planificacion-superescalar|Salto retardado (delayed branch) en planificación superescalar]]
+- 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-risc-v-implicaciones-en-pl|Salto retardado (delayed branch) en RISC-V: implicaciones en planificación]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/segmentacion-software-transforma-bucles-con-iteraciones-depe|Segmentación software transforma bucles con iteraciones dependientes en independientes (pregunta 12)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/simulacion-paso-a-paso-de-tomasulo-con-bucle-fp-fld-fmul-d-f|Simulación paso a paso de Tomasulo con bucle FP (fld/fmul.d/fsd)]]
 - 💡 [[memoria/conocimiento/conceptos/speedup-ideal-vs-real-en-pipeline-y-formula-con-detenciones|Speedup ideal vs real en pipeline y fórmula con detenciones]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr|Superescalar 3-vías con tuberías dedicadas por tipo de instrucción]]
+- 💡 [[memoria/conocimiento/conceptos/supuestos-de-temporizacion-para-tablas-de-planificacion-en-e|Supuestos de temporización para tablas de planificación en examen AC June 2021]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/tipos-de-dependencias-en-codigo-fp-mips64-para-tomasulo-raw|Tipos de dependencias en código FP MIPS64 para Tomasulo (RAW, WAR, WAW)]]
+- 💡 [[memoria/conocimiento/conceptos/tipos-de-dependencias-y-hazards-en-codigo-mips64-de-punto-fl|Tipos de dependencias y hazards en código MIPS64 de punto flotante (pregunta 6)]]
 - 💡 [[memoria/conocimiento/conceptos/tipos-de-riesgos-en-pipeline-estructurales-datos-control|Tipos de riesgos en pipeline: estructurales, datos, control]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/tres-mecanismos-de-manejo-de-excepciones-para-instrucciones|Tres mecanismos de manejo de excepciones para instrucciones especulativas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/ventaja-real-del-pipeline-mayor-throughput-instrucciones-uni|Ventaja real del pipeline: mayor throughput (instrucciones/unidad tiempo)]] · ⚠️ propuesto
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/antidependencia-war-entre-s-d-y-daddui-por-r1-en-misma-itera|Antidependencia WAR entre S.D y DADDUI por R1 en misma iteración (bucle MIPS64)]]
+- 📊 [[memoria/conocimiento/datos/analisis-de-dependencias-en-codigo-fp-con-registro-f1-raw-y|Análisis de dependencias en código FP con registro F1 (RAW y WAW)]]
+- 📊 [[memoria/conocimiento/datos/comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips|Comportamiento real de saltos B1 (BEQZ) y B2 (BEQ) en bucle MIPS64 que recorre secuencia 0,1,0,2,0,3,0,4,0,5]]
+- 📊 [[memoria/conocimiento/datos/configuracion-del-procesador-para-el-ejercicio-de-desenrolla|Configuración del procesador para el ejercicio de desenrollado (AC June 2018)]]
+- 📊 [[memoria/conocimiento/datos/configuracion-tomasulo-con-especulacion-del-examen-ac-junio|Configuración Tomasulo con especulación del examen AC Junio 2014 (extraordinario)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/configuracion-tomasulo-examen-enero-2023-unidades-fp-rob-buf|Configuración Tomasulo examen enero 2023: unidades FP, ROB, buffers y restricciones de ciclo]]
+- 📊 [[memoria/conocimiento/datos/constantes-y-registros-del-bucle-f0-constante-r1-r2-punteros|Constantes y registros del bucle: F0 constante, R1/R2 punteros, fin límite]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cronograma-de-emision-ejecucion-y-escritura-por-instruccion|Cronograma de emisión, ejecución y escritura por instrucción en ciclos 1-8]]
+- 📊 [[memoria/conocimiento/datos/codigo-de-10-instrucciones-del-exercise-3-ac-june-2019|Código de 10 instrucciones del Exercise 3 AC June 2019]]
+- 📊 [[memoria/conocimiento/datos/codigo-de-bucle-base-para-desenrollado-l-d-add-d-s-d-daddui|Código de bucle base para desenrollado: L.D, ADD.D, S.D, DADDUI, BNE con R2/R3 como límites]]
+- 📊 [[memoria/conocimiento/datos/codigo-de-instrucciones-para-ejercicio-2-tomasulo-especulati|Código de instrucciones para Ejercicio 2 (Tomasulo especulativo) y Ejercicio 3 (Superscalar)]]
+- 📊 [[memoria/conocimiento/datos/codigo-del-bucle-original-para-planificacion-examen-ac-2017|Código del bucle original para planificación (examen AC 2017/18)]]
+- 📊 [[memoria/conocimiento/datos/codigo-para-planificacion-superescalar-con-dependencias-raw|Código para planificación superescalar con dependencias RAW, WAR, WAW]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/codigo-vliw-bucle-original-examen-enero-2023-4-slots-7-instr|Código VLIW bucle original examen enero 2023: 4 slots, 7 instrucciones con NOPs]]
+- 📊 [[memoria/conocimiento/datos/codigo-y-parametros-superescalar-examen-ac-junio-2013-p3|Código y parámetros superescalar examen AC Junio 2013 P3]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/dependencias-en-fragmento-de-codigo-fp-mips-l-d-add-s-add-s|Dependencias en fragmento de código FP MIPS (L.D, ADD.S, ADD.S, S.D)]]
+- 📊 [[memoria/conocimiento/datos/dependencias-en-la-secuencia-de-instrucciones-del-examen-jun|Dependencias en la secuencia de instrucciones del examen June 2021]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/formato-de-tabla-de-ayuda-para-planificacion-ciclo-emision-c|Formato de tabla de ayuda para planificación (ciclo emisión, ciclo ejecución)]]
+- 📊 [[memoria/conocimiento/datos/latencias-de-ejecucion-fp-en-configuracion-examen-junio-2012|Latencias de ejecución FP en configuración examen Junio 2012]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/latencias-de-ejecucion-uf-fp-en-examen-ac-junio-2014-problem|Latencias de ejecución UF FP en examen AC Junio 2014 problema 3]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/latencias-de-etapas-memoria-y-ejecucion-en-superescalar-exam|Latencias de etapas memoria y ejecución en superescalar examen Junio 2013]]
+- 📊 [[memoria/conocimiento/datos/latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci|Latencias de instrucciones y supuestos de pipeline en Exercise 3 AC June 2019]]
+- 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-dadas-en-el-examen-fp-y-me|Latencias de unidades funcionales dadas en el examen (FP y memoria)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-en-coma-flotante-y-memoria|Latencias de unidades funcionales en coma flotante y memoria en Tomasulo con especulación]]
+- 📊 [[memoria/conocimiento/datos/latencias-de-unidades-funcionales-vliw-examen-enero-2023-int|Latencias de unidades funcionales VLIW examen enero 2023: Integer FU, Adder FP FU, Multiplier FP FU, MEM stage]]
 - 📊 [[memoria/conocimiento/datos/latencias-y-forwarding-en-procesador-de-referencia-para-plan|Latencias y forwarding en procesador de referencia para planificación estática]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/latencias-y-grado-de-segmentacion-de-uf-fp-en-problema-1|Latencias y grado de segmentación de UF FP en Problema 1]]
+- 📊 [[memoria/conocimiento/datos/latencias-y-grado-de-superescalaridad-del-problema-3-ac-juni|Latencias y grado de superescalaridad del Problema 3 AC Junio 2011]]
 - 📊 [[memoria/conocimiento/datos/parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult|Parámetros de pipeline RISC-V FP para ejercicios Tema 2 (multiplicador 3 ciclos, divisor 4/6 ciclos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-de-pipeline-superescalar-mem-2-ciclos-ex-3-ciclos|Parámetros de pipeline superescalar: MEM 2 ciclos, EX 3 ciclos, adelantamiento, ventana grande]]
+- 📊 [[memoria/conocimiento/datos/parametros-de-simulacion-tomasulo-con-especulacion-rob-estac|Parámetros de simulación Tomasulo con especulación: ROB, estaciones de reserva, buffer de carga]]
+- 📊 [[memoria/conocimiento/datos/parametros-de-temporizacion-del-examen-ac-june-2022-exercise|Parámetros de temporización del examen AC June 2022 Exercise 4]]
+- 📊 [[memoria/conocimiento/datos/parametros-de-unidades-funcionales-y-buffers-en-examen-ac-ju|Parámetros de unidades funcionales y buffers en examen AC Junio 2013 P2]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-del-procesador-para-problema-1-ac-enero-2025|Parámetros del procesador para Problema 1 (AC Enero 2025)]]
+- 📊 [[memoria/conocimiento/datos/parametros-del-procesador-superescalar-en-problema-de-planif|Parámetros del procesador superescalar en problema de planificación de bucle (examen AC 2017/18)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-temporales-de-pipeline-para-vliw-problema-3b|Parámetros temporales de pipeline para VLIW Problema 3b]]
+- 📊 [[memoria/conocimiento/datos/penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re|Penalización de salto condicional en pipeline de 5 etapas resuelto en ID = 1 ciclo]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/problema-3-examen-ac-junio-2011-codigo-y-parametros-de-plani|Problema 3 examen AC Junio 2011: código y parámetros de planificación superescalar]]
+- 📊 [[memoria/conocimiento/datos/resultados-reales-de-saltos-b1-y-b2-en-bucle-mips64-secuenci|Resultados reales de saltos B1 y B2 en bucle MIPS64 secuencia 0,1,0,2,0,3,0,4,0,5]]
+- 📊 [[memoria/conocimiento/datos/riesgo-entre-add-d-f4-f2-f0-y-s-d-f0-0-r1-es-war-antidepende|Riesgo entre ADD.D F4,F2,F0 y S.D F0,0(R1) es WAR (antidependencia)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/riesgo-war-antidependencia-entre-sub-d-f10-f8-f6-y-l-d-f6-0|Riesgo WAR (antidependencia) entre SUB.D F10,F8,F6 y L.D F6,0(R1)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/secuencia-de-instrucciones-mips64-del-examen-junio-2012-toma|Secuencia de instrucciones MIPS64 del examen Junio 2012 (Tomasulo especulativo)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/speedup-teorico-del-desenrollado-4x-frente-a-codigo-original|Speedup teórico del desenrollado 4x frente a código original (fórmula)]]
+- 📊 [[memoria/conocimiento/datos/suposiciones-del-problema-forwarding-ramas-retrasadas-unidad|Suposiciones del problema: forwarding, ramas retrasadas, unidades totalmente segmentadas, CPI base=1]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/tabla-de-latencias-entre-instrucciones-productoras-y-consumi|Tabla de latencias entre instrucciones productoras y consumidoras (AC June 2018)]]
+- 📊 [[memoria/conocimiento/datos/tabla-de-latencias-fp-para-desenrollado-de-bucle-examen-ener|Tabla de latencias FP para desenrollado de bucle (examen enero 2021)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/tabla-de-latencias-para-instrucciones-consecutivas-en-mips64|Tabla de latencias para instrucciones consecutivas en MIPS64 FP]]
+- 📊 [[memoria/conocimiento/datos/valores-de-registros-y-flujo-de-control-en-ejemplo-ddiv-espe|Valores de registros y flujo de control en ejemplo DDIV* especulativo con dos condiciones iniciales]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/valores-iniciales-de-memoria-y-registros-para-los-dos-casos|Valores iniciales de memoria y registros para los dos casos del ejercicio (June 2025)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[ac]] · [[branch-prediction]] · [[scoreboard]] · [[microarquitectura]] · [[raw]] · [[ilp]] · [[forwarding]] · [[paralelismo-instruccion]] · [[riscv]] · [[adelantamiento]] · [[segmentacion]] · [[arquitectura]]
+[[ac]] · [[tomasulo]] · [[dependencias]] · [[prediccion-saltos]] · [[superscalar]] · [[bucles]] · [[vliw]] · [[cpi]] · [[mips64]] · [[loop-unrolling]] · [[rendimiento]] · [[mips]]

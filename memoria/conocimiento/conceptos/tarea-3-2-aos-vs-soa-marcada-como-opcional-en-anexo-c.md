@@ -17,4 +17,4 @@ La transformación de Array of Structures (AoS) a Structure of Arrays (SoA) para
 > Esta tarea es OPCIONAL y por ello se detalla en el ANEXO C
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf`
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[cuando-preferir-aos-sobre-soa-en-la-practica]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[cuando-preferir-aos-sobre-soa-en-la-practica]] · [[transformar-aos-a-soa-en-el-laboratorio-ac-tarea-3-2]] · [[transformacion-aos-a-soa-para-optimizacion-de-cache-esquema]]

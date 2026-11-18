@@ -17,6 +17,6 @@ Un \directlua{...} dentro del texto de un \node de TikZ falla. En cambio, dentro
 > Calcular el valor antes en una macro y usar la macro en el nodo.
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]]
+Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]] · [[trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c]] · [[dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

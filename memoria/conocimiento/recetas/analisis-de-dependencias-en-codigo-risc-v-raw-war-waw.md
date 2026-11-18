@@ -21,3 +21,5 @@ Para analizar dependencias en código RISC-V:
 
 > Indica todas las dependencias de datos, antidependencias y dependencias de salida que hay en el siguiente código:
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2_Prob_RISCV_rev.pdf`
+
+Relacionado: [[dependencias-en-bucles-risc-v-clasificacion-intra-iteracion]] · [[identificacion-de-dependencias-loop-carried-en-bucles-c-styl]] · [[tipos-de-dependencias-en-codigo-fp-mips64-para-tomasulo-raw]]

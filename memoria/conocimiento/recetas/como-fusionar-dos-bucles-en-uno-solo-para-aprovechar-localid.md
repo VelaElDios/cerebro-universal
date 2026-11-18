@@ -5,9 +5,9 @@ temas: ["ac", "bucles", "cpp", "optimizacion"]
 claves: ["loop fusion", "temporal locality", "L1 cache", "single pass"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_1_lista.cpp"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[bucles]] · [[cpp]] · [[optimizacion]]
@@ -29,7 +29,7 @@ Transformación de dos bucles separados en uno solo:
   ```
 Ventaja: el valor normalizado se usa inmediatamente mientras sigue en L1, sin esperar a que la segunda pasada lo traiga de nuevo desde memoria.
 
-> Fusionar ambos bucles en una sola pasada para normalizar y acumular el dato mientras sigue caliente en L1.
-> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_1_lista.cpp` (cita sin comprobar)
+> Fusionar ambos bucles en una sola pasada para normalizar // y acumular el dato mientras sigue caliente en L1.
+> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_1_lista.cpp`
 
-Relacionado: [[como-transformar-std-list-a-std-vector-con-reserva-previa-pa]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]
+Relacionado: [[como-transformar-std-list-a-std-vector-con-reserva-previa-pa]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[por-que-fusionar-bucles-de-normalizacion-y-suma-de-cuadrados]] · [[transformar-aos-a-soa-en-el-laboratorio-ac-tarea-3-2]]

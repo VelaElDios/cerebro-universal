@@ -22,4 +22,4 @@ Para cada patrón (temporal, espacial, aleatorio):
 > Calcula la posición (X,Y) de los patrones de acceso en el gráfico roofline de tu máquina utilizando las fórmulas del Anexo B y representa los puntos en la gráfica. (Nota: Puedes hacer uso del script tarea2_1_pintarRoofLinconPuntos.py para ayudarte a representar esos puntos en el roofline.)
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf` (cita sin comprobar)
 
-Relacionado: [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[formula-del-techo-roofline-mononucleo]]
+Relacionado: [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[formula-del-techo-roofline-mononucleo]] · [[mapeo-de-patrones-de-acceso-en-grafico-roofline-gflops-s-y-f]] · [[mapeo-de-patrones-de-acceso-en-el-grafico-roofline]]

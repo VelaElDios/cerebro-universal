@@ -23,3 +23,5 @@ Razones implícitas:
 
 > plt.fill_between(x, y_roof, where=(x <= I_KNEE), color="mistyrose", alpha=0.6, label="Zona Memory-Bound") ... plt.fill_between(x, y_roof, where=(x >= I_KNEE), color="honeydew", alpha=0.6, label="Zona Compute-Bound")
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py` (cita sin comprobar)
+
+Relacionado: [[como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[como-calcular-y-representar-puntos-de-patrones-en-el-grafico]]

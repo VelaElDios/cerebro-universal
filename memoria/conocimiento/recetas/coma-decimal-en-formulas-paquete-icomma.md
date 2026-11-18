@@ -17,6 +17,6 @@ En español, los decimales se escriben con coma (30,28). Sin icomma, en modo mat
 > Cargar \usepackage{icomma}: la coma seguida de un dígito no lleva espacio. Y para escribir decimales desde Lua, usar una función que cambie el punto por coma (en español no vale 38.8).
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]]
+Relacionado: [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[en-un-tex-los-comentarios-son-con-no-con]] · [[enquote-necesita-el-paquete-csquotes]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

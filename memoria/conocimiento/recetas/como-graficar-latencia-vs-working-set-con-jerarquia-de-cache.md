@@ -29,3 +29,5 @@ Este script crea una visualización estándar para analizar la jerarquía de mem
 
 > Genera una gráfica de la latencia de acceso según el tamaño del working set.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_pintarLatvsMem.py`
+
+Relacionado: [[patron-de-salto-de-latencia-en-fronteras-de-cache]] · [[working-set-size-vs-memory-access-latency-experiment]] · [[como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log]]

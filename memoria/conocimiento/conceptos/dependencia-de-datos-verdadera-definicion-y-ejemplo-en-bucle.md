@@ -16,3 +16,5 @@ Definición recursiva/transitiva: dependencia directa (i produce, j consume) o t
 
 > Dadas dos instrucciones i y j (j lógicamente después de i), existe una dependencia de datos entre ellas si:     la instrucción i produce un resultado que usa la instrucción j     hay dependencia de datos entre la instrucción i y otra instrucción k, y la instrucción k produce un resultado que usa la instrucción j  Bucle:        fld        f0, 0(x1)         ;f0= array de elementos  fadd.d     f4, f0, f2        ;suma escalar almacenado en f2  fsd        f4, 0(x1)         ;almacena el resultado  addi       x1, x1, -8        ;decrementa puntero (-8)  bne        x1, x2, Bucle     ;salta si x1!=x2
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf`
+
+Relacionado: [[dependencia-de-datos-entre-iteraciones-en-bucle-con-actualiz]] · [[identificacion-de-dependencias-loop-carried-en-bucles-c-styl]] · [[tipos-de-dependencias-en-bucles-loop-independent-vs-loop-car]]

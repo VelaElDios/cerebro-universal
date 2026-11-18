@@ -21,6 +21,6 @@ Temas: [[camara]] · [[donetonic]] · [[grada-colchonera]] · [[graficos]] · [[
 > Cámara 3/4 con inercia, inclinación al correr, destellos y aplastado al recibir golpes.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[renderizado-chibi-1620-px-por-codigo-con-cache-de-fotogramas]]
+Relacionado: [[renderizado-chibi-1620-px-por-codigo-con-cache-de-fotogramas]] · [[renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

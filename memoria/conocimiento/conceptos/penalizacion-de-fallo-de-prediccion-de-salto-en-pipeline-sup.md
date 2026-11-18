@@ -5,9 +5,9 @@ temas: ["ac", "branch-prediction", "microarquitectura", "pipeline"]
 claves: ["misprediction", "pipeline-flush", "10-20 ciclos", "branch-predictor"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_2_branchless.cpp"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[branch-prediction]] · [[microarquitectura]] · [[pipeline]]
@@ -19,7 +19,7 @@ Cuando el predictor de ramas falla (misprediction), el pipeline debe:
 Coste típico en núcleos modernos (Skylake, Zen 3, Golden Cove): **10–20 ciclos** de burbuja.
 En el experimento, datos desordenados (~50 % de `x >= 128` aleatorio) causan ~50 % de fallos → lentitud drástica frente a datos ordenados (predictor acierta casi siempre tras la transición).
 
-> Con datos desordenados, las bifurcaciones impredecibles provocan fallos de predicción que obligan a vaciar el pipeline (penalización de 10-20 ciclos).
-> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_2_branchless.cpp` (cita sin comprobar)
+> // - Con datos desordenados, las bifurcaciones impredecibles provocan fallos // de predicción que obligan a vaciar el pipeline (penalización de 10-20 ciclos).
+> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_2_branchless.cpp`
 
-Relacionado: [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[definicion-de-latencia-de-salto-y-penalizacion-por-fallo-de]] · [[recuperacion-ante-fallo-de-prediccion-de-salto-misprediction]] · [[mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt]]

@@ -17,6 +17,6 @@ Clave bibliográfica `donetonic`. Referencia de la herramienta SaaS usada para g
 > DoneTonic (s.f.). Herramienta de gestión de proyectos ágiles usada para el backlog
 > — `../memoria-procesos/fuentes/bibliografia-extra.md`
 
-Relacionado: [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]]
+Relacionado: [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]] · [[workspace-y-equipo-en-donetonic]] · [[capturas-de-donetonic-disponibles-en-el-repo]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

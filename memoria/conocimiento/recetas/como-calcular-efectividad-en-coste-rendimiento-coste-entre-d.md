@@ -25,4 +25,4 @@ Ejemplo del texto (Ejercicio 1):
 > Decimos que una máquina es más efectiva en coste que otra si la razón de rendimiento dividida por el coste es mayor.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[ejercicio-de-coste-efectividad-comparacion-de-sistemas-por-r]] · [[como-comparar-efectividad-en-coste-entre-dos-sistemas]] · [[calculo-de-cost-effectiveness-entre-dos-sistemas-con-cargas]]

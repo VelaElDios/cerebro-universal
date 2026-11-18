@@ -23,6 +23,6 @@ Datos de referencia del proyecto: nombre, tipo (juego survivor pixel art sobre S
 | **Sprint 2** | 23/10/2026 – 29/10/2026 (la lógica del juego, Fases 1 a 6) |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]]
+Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

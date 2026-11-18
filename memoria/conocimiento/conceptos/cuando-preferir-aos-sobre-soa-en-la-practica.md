@@ -20,4 +20,4 @@ Respuesta esperada en el análisis del alumno (extraída de la pregunta final de
 > - ¿En qué escenarios prácticos sería preferible usar AoS sobre SoA?
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp`
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[transformacion-aos-a-soa-para-optimizacion-de-cache-esquema]] · [[tarea-3-2-aos-vs-soa-marcada-como-opcional-en-anexo-c]]

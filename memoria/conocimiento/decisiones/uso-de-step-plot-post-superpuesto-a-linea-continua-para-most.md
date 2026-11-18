@@ -19,3 +19,5 @@ La transparencia (alpha=0.35) y el zorder inferior evitan que los escalones ocul
 
 > ax1.step(x, latency_ns, '--o', where='post', ... alpha=0.35, zorder=1) ... ax1.plot(x, latency_ns, '-', ... alpha=1.0, zorder=2)
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_pintarLatvsMem.py` (cita sin comprobar)
+
+Relacionado: [[como-graficar-latencia-vs-working-set-con-jerarquia-de-cache]] · [[configuracion-de-ejes-log-lineal-y-etiquetas-de-potencias-de]] · [[patron-de-salto-de-latencia-en-fronteras-de-cache]]

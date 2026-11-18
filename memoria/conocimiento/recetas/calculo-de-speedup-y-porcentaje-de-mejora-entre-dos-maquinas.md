@@ -21,4 +21,4 @@ Ejemplo del texto: A = 10 s, B = 15 s → n = 15/10 = 1.5 → A es 1.5× más r�
 > “X es n veces más rápida que Y”: RendimientoX / RendimientoY = n ... 𝑓 = (𝑛 − 1)𝑥100  “X es un f % más rápida que Y”
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-de-speedup-como-razon-de-tiempos-de-ejecucion]]
+Relacionado: [[definicion-de-speedup-como-razon-de-tiempos-de-ejecucion]] · [[como-convertir-porcentaje-de-ganancia-speedup-a-factor-de-sp]] · [[interpretacion-de-speedup-del-200]] · [[definicion-de-speedup-y-relacion-con-reduccion-de-tiempo]]

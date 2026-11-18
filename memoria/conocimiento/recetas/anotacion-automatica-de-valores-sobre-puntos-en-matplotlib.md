@@ -31,3 +31,5 @@ Adapta `xytext`, `fontsize` y formato según densidad de puntos y escala del eje
 
 > for i in range(len(size_kib)): ... ax1.annotate(val_text, (x[i], latency_ns[i]), textcoords="offset points", xytext=(0, 6), ha='center', fontsize=7, weight='bold', color='navy')
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_pintarLatvsMem.py` (cita sin comprobar)
+
+Relacionado: [[como-anotar-puntos-en-grafica-log-log-sin-solapar-etiquetas]] · [[configuracion-de-ejes-log-lineal-y-etiquetas-de-potencias-de]] · [[uso-de-step-plot-post-superpuesto-a-linea-continua-para-most]]

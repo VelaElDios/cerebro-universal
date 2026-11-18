@@ -17,6 +17,6 @@ Serie temporal del burndown de PBIs pendientes según gráficas DoneTonic (Backl
 > | Momento | PBIs hechos | PBIs pendientes | |---|---|---| | Inicio del Sprint 1 (29/09/2026) | 0 | 15 | | Cierre del Hito 1 (release `hito-1`) | 6 | 9 | | Cierre del Hito 2 (release `hito-2`) | 10 | 5 | | Cierre del Hito 3 (release `hito-3`) | 14 | 1 | | Se añade P19 (Cloud Run) para usar los créditos de Google Cloud | 14 | 2 | | Cierre del sprint (P18 y P19) | 16 | 0 |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

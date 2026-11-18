@@ -17,6 +17,6 @@ Flujo de errores: 1) Lógica lanza errores tipados (`ValidationError`, `Conflict
 > El usuario nunca ve JSON ni trazas: cada error se traduce a un mensaje en español. La interfaz tiene estados de carga, vacío y error con reintento, y una captura global de promesas rechazadas. Los formularios marcan el campo con el error y lo explican debajo; al fallar el servidor, el formulario muestra el error arriba sin perder lo escrito (salvo la contraseña).
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
-Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui]] · [[cliente-api-con-timeout-de-15-s-y-manejo-de-apierror]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

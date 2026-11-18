@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «cache miss» (este archiv
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s|Patrón aleatorio: peor caso con permutación fija de índices (semilla 42)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s|Patrón aleatorio: peor caso con permutación fija de índices (semilla 42)]]
 
 ## Temas relacionados
 

@@ -5,9 +5,9 @@ temas: ["ac", "dependency-chain", "ilp", "pipeline", "superscalar"]
 claves: ["dependency chain", "ILP", "pipeline stall", "superscalar", "ALU", "instruction-level parallelism"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[dependency-chain]] · [[ilp]] · [[pipeline]] · [[superscalar]]
@@ -32,7 +32,7 @@ Ahora el scheduler puede emitir 4 ADDs en paralelo (uno por ciclo si hay puertos
 
 **Límite real**: Latencia FP add (3-4 ciclos) + puertos de ejecución (2 FP add en Skylake) → máx teórico 2 ADDs/ciclo = 2 FLOPs/ciclo (sin vectorizar). Con AVX2/FMA se llega a 32 FLOPs/ciclo (ver nota "Cálculo de FLOPS por ciclo en x86 con AVX2/FMA").
 
-> Cada iteración depende estrictamente del resultado de la anterior, generando parones (stalls) y desaprovechando las múltiples ALUs de la CPU.
-> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp` (cita sin comprobar)
+> // - Cada iteración depende estrictamente del resultado de la anterior, // generando parones (stalls) y desaprovechando las múltiples ALUs de la CPU.
+> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp`
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[desenrollado-manual-manual-unrolling-con-4-acumuladores-para]] · [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]] · [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]]

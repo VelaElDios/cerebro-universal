@@ -24,4 +24,6 @@ La plantilla es `book` a doble cara: cada capítulo empieza en página impar y d
 ## Ampliación (2026-11-16, )
 La memoria se entrega en PDF sin páginas en blanco entre capítulos. Esto implica configurar la clase de documento para que no inserte páginas en blanco (p. ej. usando `oneside` o `\let\cleardoublepage\clearpage` si la plantilla usa `openright`). El script `revisar_maquetacion.py` verifica automáticamente que no haya páginas vacías entre capítulos.
 
+Relacionado: [[como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu]] · [[evitar-paginas-casi-vacias-regla-9]] · [[sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

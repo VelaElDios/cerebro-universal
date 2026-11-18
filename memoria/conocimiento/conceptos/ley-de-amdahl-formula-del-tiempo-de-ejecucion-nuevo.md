@@ -17,4 +17,4 @@ La Ley de Amdahl establece que el tiempo de ejecución tras una mejora es la sum
 > tiempo de ejecución nuevo = tiempo de ejecuciónfracción no mejorada + tiempo de ejecuciónfracción mejorada
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[definicion-de-speedup-como-razon-de-tiempos-de-ejecucion]]
+Relacionado: [[definicion-de-speedup-como-razon-de-tiempos-de-ejecucion]] · [[ley-de-amdahl-la-aceleracion-maxima-viene-determinada-por-la]] · [[ley-de-amdahl-la-aceleracion-maxima-esta-limitada-por-la-fra]] · [[ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su]]

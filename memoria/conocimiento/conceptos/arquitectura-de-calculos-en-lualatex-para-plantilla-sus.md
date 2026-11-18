@@ -22,6 +22,6 @@ Reglas críticas:
 > Todo el código Lua va en `sus-calculos.lua` y se carga con `\directlua{dofile("sus-calculos.lua")}`. Dentro de `\directlua{...}` solo llamadas cortas a funciones ya definidas: **nunca** escribir `%` ni cadenas con `\` ahí dentro, porque TeX los interpreta antes que Lua y rompe la compilación.
 > — `../plantilla-sus/spec.md`
 
-Relacionado: [[criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep]] · [[cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]]
+Relacionado: [[criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep]] · [[cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c]] · [[exportar-resultados-json-obligatorio-para-verificacion-autom]] · [[estructura-de-archivos-obligatoria-para-la-plantilla-sus]]
 
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

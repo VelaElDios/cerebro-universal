@@ -17,4 +17,4 @@ Temas: [[ac]] · [[algoritmos]] · [[arquitectura-computadores]] · [[scoreboard
 > Emisión (Issue): el marcador facilita la instrucción a la unidad funcional y actualiza su estructura interna de datos si: una unidad funcional está libre, ninguna otra instrucción activa tiene el mismo registro destino
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[planificacion-dinamica-de-instrucciones-con-marcador-scorebo]]
+Relacionado: [[planificacion-dinamica-de-instrucciones-con-marcador-scorebo]] · [[algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej]] · [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]]

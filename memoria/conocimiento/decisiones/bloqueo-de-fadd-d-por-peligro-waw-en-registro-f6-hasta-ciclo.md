@@ -17,4 +17,4 @@ La instrucción fadd.d f6, f8, f2 no puede emitirse en los ciclos 10-12 porque e
 > Bloqueada              fadd.d     f6, f8, f2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador]]
+Relacionado: [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador]] · [[deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr]] · [[deteccion-y-resolucion-de-riesgo-war-en-el-marcador-ciclos-1]] · [[marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio]]

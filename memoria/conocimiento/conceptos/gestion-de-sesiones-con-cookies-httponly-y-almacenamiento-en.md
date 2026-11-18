@@ -23,6 +23,6 @@ Temas: [[auth]] · [[grada-colchonera]] · [[procesos]] · [[saas]] · [[segurid
 > Cookie `httpOnly` con la sesión guardada en PostgreSQL. Al cargar, la interfaz llama a `GET /api/auth/me`
 > — `repo:saas/docs/revision-entrega.md`
 
-Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[control-de-acceso-basado-en-roles-y-propiedad-requireauth-re]] · [[modulos-del-backend-y-sus-responsabilidades]]
+Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[control-de-acceso-basado-en-roles-y-propiedad-requireauth-re]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

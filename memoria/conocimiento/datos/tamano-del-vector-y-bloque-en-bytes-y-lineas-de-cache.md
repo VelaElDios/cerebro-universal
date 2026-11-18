@@ -16,3 +16,5 @@ Vector total = 2^26 * 8 bytes = 512 MiB. Bloque = 4096 * 8 bytes = 32 KiB (típi
 
 > constexpr std::size_t N = 1ull << 26;        // 2^26= 64M elementos (de tipo int64)\n                                             // Un int64 ocupa 8 bytes --> total= 64M*8= 512 MB\n//Valor del bloque\nconstexpr std::size_t BLOQUE = 4096;         // bloque pequeño: cabe de sobra en L1
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_patrones.cpp` (cita sin comprobar)
+
+Relacionado: [[parametros-del-experimento-tamano-de-datos-bloque-y-repetici]] · [[tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script]] · [[tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t]]

@@ -5,9 +5,9 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum"]
 claves: ["rama", "PR", "hito-N/Tx", "main", "fase", "convención nombres"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[donetonic]] · [[grada-colchonera]] · [[saas]] · [[scrum]]
@@ -20,7 +20,7 @@ Razón implícita: Sprint 1 requería entregas parciales evaluables (hitos con r
 > En el Sprint 1 cada tarea tiene una rama propia `hito-N/Tx-descripcion` que se integra en la rama del hito mediante un PR `[Tx] ...`. En el Sprint 2 el trabajo se integró en `main` con **un PR por fase** del juego (#36, #44–#54), y cada tarea de DoneTonic indica en su descripción el PR donde está (`PR: #nn`).
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]
+Relacionado: [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto]] · [[metricas-comparativas-sprint-1-vs-sprint-2]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

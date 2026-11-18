@@ -41,6 +41,6 @@ Cierres de hito: #9 (Hito 1), #17 (Hito 2), #24 (Hito 3), #29 (cierre del sprint
 > | PBI | Hito | Título | Tareas | PRs | Release | |---|---|---|---|---|---| | P1 | H1 | Repositorio GitHub y flujo GitHub Flow | T1, T2 | #1, #2 | hito-1 |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]]
+Relacionado: [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

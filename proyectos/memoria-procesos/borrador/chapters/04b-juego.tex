@@ -300,16 +300,12 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
 \resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
   \newthread{j}{Jugador}
-  \newinst[2]{g}{juego.js en navegador}
-  \newinst[2]{sim}{mundo.js simulacion}
-  \newinst[2]{cli}{api.js}
+  \newinst[2]{fe}{Frontend (juego.js + api.js)}
   \newinst[2]{api}{API /api/juego}
   \newinst[2]{srv}{juegoService}
   \newinst[2]{repo}{juegoRepository}
-  \begin{call}{j}{jugar con jugador y entrenador}{g}{ok}
-    \begin{call}{g}{iniciar partida}{cli}{ok}
-    \end{call}
-    \begin{call}{cli}{POST partidas}{api}{201}
+  \begin{call}{j}{jugar con jugador y entrenador}{fe}{ok}
+    \begin{call}{fe}{POST partidas}{api}{201}
     \end{call}
     \begin{call}{api}{iniciarPartida}{srv}{partida}
     \end{call}
@@ -318,23 +314,20 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
     \begin{call}{srv}{guarda partida en curso}{repo}{ok}
     \end{call}
   \end{call}
-  \begin{sdblock}{loop}{cada fotograma con paso fijo}
-    \begin{call}{g}{avanzar con entrada}{sim}{eventos}
-    \end{call}
-    \mess{sim}{estado fin, te eliminan}{g}
+  \begin{sdblock}{loop}{cada fotograma (simulación en Frontend)}
+    \mess{fe}{avanzar paso fijo}{fe}
+    \mess{fe}{estado fin}{fe}
   \end{sdblock}
-  \begin{call}{g}{terminar con estadisticas}{cli}{ok}
-    \begin{call}{cli}{POST partidas id fin}{api}{200 o 400}
-    \end{call}
-    \begin{call}{api}{finalizarPartida}{srv}{validacion}
+  \begin{call}{fe}{POST partidas/id/fin}{api}{200 o 400}
+    \begin{call}{api}{finalizarPartida}{srv}{validación}
     \end{call}
     \begin{sdblock}{alt}{resultado imposible}
-      \mess{srv}{400 resultado no creible}{api}
+      \mess{srv}{400 resultado no creíble}{api}
     \end{sdblock}
-    \begin{sdblock}{else}{resultado valido}
+    \begin{sdblock}{else}{resultado válido}
       \begin{call}{srv}{reparte recompensas y guarda}{repo}{perfil}
       \end{call}
-      \mess{api}{200 con recompensas y logros}{g}
+      \mess{api}{200 recompensas y logros}{fe}
     \end{sdblock}
   \end{call}
 \end{sequencediagram}}

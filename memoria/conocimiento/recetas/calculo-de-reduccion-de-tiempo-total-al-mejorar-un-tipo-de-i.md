@@ -23,3 +23,5 @@ Ejemplo Prog B: FP 50s → 40s. Total original 210s → nuevo 200s. Reducción =
 
 > Un computador ejecuta los programas A y B empleando para cada tipo de instrucción los tiempos que se muestran en la tabla: Coma Flotante 35s/50s, Enteros 85s/80s, Load/Store 50s/50s, Saltos 30s/30s
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf` (cita sin comprobar)
+
+Relacionado: [[determinar-si-es-posible-alcanzar-un-speedup-objetivo-mejora]] · [[ejercicios-de-evaluacion-de-rendimiento-basados-en-ley-de-am]] · [[limitacion-de-mejora-en-fraccion-pequena-ley-de-amdahl]]

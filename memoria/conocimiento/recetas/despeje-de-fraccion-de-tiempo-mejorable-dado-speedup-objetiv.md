@@ -17,4 +17,4 @@ Dado speedup S, tiempo original T, factor mejora k: S = T / (T(1-x) + T*x/k) = 1
 > Por lo tanto, 5 = 50 / (50(1-x) + 50x/10), de donde x = 0.89 (89%).
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab]]
+Relacionado: [[calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab]] · [[factor-de-mejora-necesario-para-speedup-objetivo-dado-ejerci]] · [[como-calcular-el-factor-de-mejora-necesario-k-para-un-speedu]] · [[calculo-de-tiempo-de-ejecucion-nuevo-y-speedup-con-mejora-fr]]

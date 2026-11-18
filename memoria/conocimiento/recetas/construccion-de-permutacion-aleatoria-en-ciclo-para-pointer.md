@@ -24,4 +24,4 @@ for (std::size_t i = 0; i + 1 < n; ++i) buf[idx[i]] = idx[i + 1];
 buf[idx[n - 1]] = idx[0];
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp`
 
-Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]]
+Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]] · [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset]]

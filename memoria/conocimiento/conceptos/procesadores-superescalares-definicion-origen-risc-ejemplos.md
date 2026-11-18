@@ -20,3 +20,5 @@ Temas: [[ac]] · [[cisc]] · [[cpi]] · [[ilp]] · [[pentium ii]] · [[pentium p
 
 > Superescalares • Lanzan n instrucciones en cada ciclo de reloj Ejemplo: n = 2 (CPI Ideal = 0,5) • Origen: procesadores RISC (de implementación más simple); luego incorporado en los CISC • Desde 1998 todos los procesadores comerciales son superescalares • Ejemplos: INTEL Pentium Pro y Pentium II son procesadores CISC con microarquitectura RISC superescalar (2 ALU + 1 FP)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 3 de 5)` (cita sin comprobar)
+
+Relacionado: [[identificacion-de-superescalar-por-ancho-de-emision-y-cpi]] · [[procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp]] · [[procesadores-superscalar-son-maquinas-sisd]]

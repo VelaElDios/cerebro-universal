@@ -23,4 +23,4 @@ Constantes del laboratorio para reproducibilidad:
 > El código base provisto en tarea3_1_lista.cpp realiza el procesamiento de 20 millones de lecturas de un sensor utilizando una lista doblemente enlazada (std::list).
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf`
 
-Relacionado: [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]]
+Relacionado: [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[parametros-del-experimento-lista-vs-vector-n-20m-media-50-0f]] · [[parametros-fijos-del-experimento-aos-soa-tarea-3-2]] · [[parametros-fijos-del-experimento-ilp-n-100m-tipo-double-valo]]

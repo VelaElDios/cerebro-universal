@@ -17,4 +17,4 @@ Speedup de X respecto a Y = Tiempo_Ejecución_X / Tiempo_Ejecución_Y. Si speedu
 > 𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑅𝑋𝑋 = 𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇 𝑑𝑑𝑑𝑑 𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒ó𝑛𝑛 𝑑𝑑𝑑𝑑 𝑋𝑋 / 𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇𝑇 𝑑𝑑𝑑𝑑 𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒ó𝑛𝑛 𝑑𝑑𝑑𝑑 𝑌𝑌
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Formulas.pdf` (cita sin comprobar)
 
-Relacionado: [[ley-de-amdahl-para-speedup-con-mejora-parcial]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]
+Relacionado: [[ley-de-amdahl-para-speedup-con-mejora-parcial]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[speedup-no-tiene-unidades-de-medida]] · [[calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas]]

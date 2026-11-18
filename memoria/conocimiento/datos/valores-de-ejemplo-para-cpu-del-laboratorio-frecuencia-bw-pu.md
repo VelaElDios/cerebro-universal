@@ -5,9 +5,9 @@ temas: ["ac", "laboratorio", "mediciones", "roofline"]
 claves: ["FRECUENCIA_GHZ", "BW_DRAM", "intensidades", "rendimientos", "I_KNEE", "GFLOPS_MAX"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[laboratorio]] · [[mediciones]] · [[roofline]]
@@ -23,5 +23,7 @@ Constantes y datos de ejemplo del script (TODO1 y TODO2):
   3. Acceso Aleatorio:   (0.00885, 0.0825) GFLOPs/s
 Estos valores son de ejemplo; el alumno debe sustituirlos por sus propias mediciones.
 
-> FRECUENCIA_GHZ = 4.9     # Tu frecuencia en GHz (de lscpu) ... BW_DRAM = 26.68          # Tus GB/s de la RAM (de STREAM)
-> — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py` (cita sin comprobar)
+> FRECUENCIA_GHZ = 4.9 # Tu frecuencia en GHz (de lscpu) BW_DRAM = 26.68 # Tus GB/s de la RAM (de STREAM)
+> — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py`
+
+Relacionado: [[parametros-de-ejemplo-del-script-cpu-4-9-ghz-ddr4-26-143-gb]] · [[como-obtener-parametros-de-hardware-para-el-modelo-roofline]] · [[como-obtener-los-parametros-reales-de-tu-maquina-para-el-roo]]

@@ -16,3 +16,5 @@ Se fija la semilla a 42 en `std::mt19937(42)` para que la permutación aleatoria
 
 > std::shuffle(orden.begin(), orden.end(), std::mt19937(42));
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_patrones.cpp`
+
+Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[parametros-fijos-del-benchmark-semilla-accesos-formato-salid]] · [[como-hacer-benchmark-estadistico-con-hyperfine-entre-patrone]]

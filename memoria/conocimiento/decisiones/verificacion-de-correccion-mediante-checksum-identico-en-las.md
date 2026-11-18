@@ -23,4 +23,4 @@ Garantiza que la optimización branchless no altera la semántica (suma de eleme
 > Las cuatro deben coincidir, o tu versión está mal.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_2_branchless.cpp`
 
-Relacionado: [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]]
+Relacionado: [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per]] · [[patron-branchless-suma-condicional-mediante-multiplicacion-p]] · [[verificacion-de-correccion-numerica-entre-version-base-y-opt]]

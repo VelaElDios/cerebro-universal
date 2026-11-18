@@ -21,6 +21,6 @@ Temas: [[audio]] · [[game-engine]] · [[grada-colchonera]] · [[saas]]
 > **Audio.** Todo sintetizado con Web Audio: ondas de pulso (12,5 %, 25 % y 50 %), triángulo y ruido. La música es un secuenciador propio que programa las notas por adelantado; la grada usa voces con formantes de vocales y palmas.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[generacion-de-mundo-procedural-infinito-con-distritos-estadi]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]]
+Relacionado: [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[generacion-de-mundo-procedural-infinito-con-distritos-estadi]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[musica-100-sintetizada-web-audio-con-fanfarrias-por-competic]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

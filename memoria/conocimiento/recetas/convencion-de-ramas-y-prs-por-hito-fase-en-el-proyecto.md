@@ -17,6 +17,6 @@ Patrón de nomenclatura de ramas extraído de las tablas: Sprint 1 usa `hito-X/T
 > | PBI | Tarea | Descripción | Rama | Pull request | Estado | |---|---|---|---|---|---| | P1 | T1 | Crear repositorio y estructura base | `hito-1/T1-estructura-base` | [#1](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/1) | Hecho | ... | P21 | Base del juego | Motor de la partida survivor | T35, T36 | #36 | 23/10/2026 | Hecho |
 > — `repo:saas/docs/gestion/README.md` (cita sin comprobar)
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[prs-de-cierre-de-hito-y-sprint-en-repositorio]] · [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

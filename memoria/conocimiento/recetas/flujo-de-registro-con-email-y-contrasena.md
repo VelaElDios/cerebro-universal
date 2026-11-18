@@ -17,6 +17,6 @@ Secuencia: 1) Usuario escribe email/contraseña en vista registro. 2) Vista vali
 > U->>V: Escribe email y contraseña / V->>C: register(email, password) / C->>A: POST {email, password} / A->>S: register() / S->>H: hash(password) (bcrypt) / S->>R: create(role user, status pending, provider local) / A->>AC: enviarConfirmacion(user) / AC->>AC: token = firma HMAC {userId, propósito, caducidad 24 h} / AC->>M: send(to, asunto, enlace /api/auth/confirm?token=…)
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
-Relacionado: [[decisiones-de-diseno-del-backend-con-alternativas-y-justific]] · [[cliente-api-con-timeout-de-15-s-y-manejo-de-apierror]]
+Relacionado: [[decisiones-de-diseno-del-backend-con-alternativas-y-justific]] · [[cliente-api-con-timeout-de-15-s-y-manejo-de-apierror]] · [[registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y]] · [[flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf]] · [[login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

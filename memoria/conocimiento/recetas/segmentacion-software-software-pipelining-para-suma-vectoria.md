@@ -17,4 +17,4 @@ Estructura en tres fases: (1) Start-up (prólogo): fld f0,0(x1); fadd.d f4,f0,f2
 > Consiste en transformar un bucle con instrucciones dependientes e iteraciones independientes en un bucle con instrucciones independientes e iteraciones dependientes
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]]
+Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]] · [[segmentacion-software-software-pipelining-en-bucles-sin-depe]] · [[kernel-de-segmentacion-software-para-bucle-de-acumulacion-in]]

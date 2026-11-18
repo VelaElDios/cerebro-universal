@@ -20,6 +20,6 @@ Aplicable a: validación de formularios, middlewares de auth/roles, endpoints AP
 > Probar primero los **casos de error** y tener el CI como requisito para fusionar evitó regresiones durante todo el desarrollo.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[formato-de-logs-json-y-eventos-registrados]] · [[lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar]] · [[manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui]]
+Relacionado: [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[formato-de-logs-json-y-eventos-registrados]] · [[lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar]] · [[manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui]] · [[checklist-previo-a-abrir-pull-request-npm-test-local-obligat]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

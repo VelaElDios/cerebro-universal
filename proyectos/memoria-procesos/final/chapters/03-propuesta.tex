@@ -27,7 +27,7 @@ El proyecto se organizó en dos sprints:
 
 El Product Backlog completo suma 48 PBIs y 82 tareas, todos hechos. Del enunciado al backlog, cada requisito se convirtió en un PBI con su historia de usuario («Como … quiero … para …») y sus criterios de aceptación; cada PBI se dividió en entre una y tres tareas; y cada tarea acabó en una rama y un pull request. Las 29 historias de usuario del Sprint 2, con sus criterios, están en la Tabla~\ref{tab:sprint2-hu} del Anexo~\ref{anx:desarrollo}; la trazabilidad completa requisito--PBI--tarea--PR está en el Anexo~\ref{anx:trazabilidad}.
 
-El seguimiento usó el tablero por estados y las gráficas automáticas de DoneTonic (Sprint Burndown y Burnup, Backlog Burndown y Burnup, Velocity Chart). Al cerrar los dos sprints, el tablero mostraba los 19 PBIs del Sprint 1 en la columna de hechos (Figura~\ref{fig:donetonic-tablero}); el Product Backlog con los dos sprints aparece en la Figura~\ref{fig:donetonic-backlog} del Anexo~\ref{anx:desarrollo}. Las capturas son del 29/10/2026, con los dos sprints cerrados.
+El seguimiento usó el tablero por estados y las gráficas automáticas de DoneTonic (Sprint Burndown y Burnup, Backlog Burndown y Burnup, Velocity Chart). Al cerrar los dos sprints, el tablero mostraba los 19 PBIs del Sprint 1 en la columna de hechos (Figura~\ref{fig:donetonic-tablero}); el Product Backlog reunía los 48 PBIs de los dos sprints (Figura~\ref{fig:donetonic-backlog}). Las capturas son del 29/10/2026, con los dos sprints cerrados.
 
 \begin{figure}[htbp]
 \centering
@@ -36,7 +36,21 @@ El seguimiento usó el tablero por estados y las gráficas automáticas de DoneT
 \label{fig:donetonic-tablero}
 \end{figure}
 
-El tablero muestra la trazabilidad visual: cada PBI se descompone en tareas que avanzan por las columnas hasta \textit{Hecho}, y el color verde confirma que los 19 PBIs del Sprint 1 se completaron.
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/03-backlog.png}
+\caption{Product Backlog y Sprint Backlog en DoneTonic: a la izquierda, los PBIs priorizados con su etiqueta; a la derecha, los dos sprints con sus fechas, con el Sprint 1 desplegado.}
+\label{fig:donetonic-backlog}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.9\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/donetonic/02-graficas-sprint.png}
+\caption{Sprint Burndown y Sprint Burnup del Sprint 1 en DoneTonic: los 19 PBIs completados, con el escalón del cambio de alcance (P19, Cloud Run) y el tramo final del Hito 4 (P15--P17).}
+\label{fig:donetonic-graficas-s1}
+\end{figure}
+
+El tablero muestra la trazabilidad visual: cada PBI se descompone en tareas que avanzan por las columnas hasta \textit{Hecho}, y el color verde confirma que los 19 PBIs del Sprint 1 se completaron. Las gráficas de la Figura~\ref{fig:donetonic-graficas-s1} muestran la misma evolución en el tiempo: el burndown desciende por hitos y el burnup marca el escalón cuando, a mitad del sprint, se añadió el PBI P19 para aprovechar los créditos de Google Cloud.
 
 Durante el Sprint 1 hubo un cambio de alcance documentado: al repartir el profesor créditos de Google Cloud para educación se añadió el PBI P19 (despliegue continuo en Cloud Run, tareas T29 y T30) y Render quedó como despliegue alternativo. El backlog del Sprint 2, en cambio, se registró en DoneTonic al cerrar el sprint (29/10/2026), por lo que sus gráficas salen en recta; la evolución real se reconstruye con las fechas de fusión de los PR (Anexo~\ref{anx:desarrollo}).
 

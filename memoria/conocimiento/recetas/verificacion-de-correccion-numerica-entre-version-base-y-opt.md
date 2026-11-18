@@ -33,4 +33,4 @@ Temas: [[ac]] · [[floating-point]] · [[testing]] · [[verificacion]]
 > Ambas implementaciones deben obtener exactamente el mismo resultado.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp`
 
-Relacionado: [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]]
+Relacionado: [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]] · [[uso-de-double-en-lugar-de-float-para-acumulacion-en-experime]] · [[verificacion-de-correccion-mediante-checksum-identico-en-las]]

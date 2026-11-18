@@ -18,4 +18,4 @@ El compilador (con -O2) detectaría que `p` no se usa tras el bucle y eliminarí
 if (p == static_cast<std::size_t>(-1)) std::puts("imposible");
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp`
 
-Relacionado: [[medicion-de-latencia-con-50-millones-de-accesos-dependientes]]
+Relacionado: [[medicion-de-latencia-con-50-millones-de-accesos-dependientes]] · [[como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria]] · [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]]

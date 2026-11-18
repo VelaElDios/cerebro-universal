@@ -18,4 +18,4 @@ El ridge point (punto de inflexión) marca la intensidad aritmética donde el l�
 > El punto de inflexión es el valor de Intensidad Aritmética (𝐼𝐼𝑘𝑘𝑘𝑘𝑘𝑘𝑘𝑘 ) en el Eje X donde la pendiente del ancho de banda de la memoria se cruza con la meseta horizontal del techo de la CPU.
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf`
 
-Relacionado: [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]
+Relacionado: [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[punto-de-inflexion-knee-del-modelo-roofline-mononucleo]] · [[punto-de-inflexion-knee-del-modelo-roofline-i-knee-gflops-ma]]

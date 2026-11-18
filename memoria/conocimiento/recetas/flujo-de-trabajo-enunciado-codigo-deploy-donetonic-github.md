@@ -24,7 +24,7 @@ Proceso estandarizado en 5 pasos:
 > 5. **Seguimiento.** Al fusionar cada PR, su tarea pasa a *HECHO* en el tablero. Cuando todas las tareas de un PBI están hechas, el PBI pasa a *HECHO* automáticamente.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]]
+Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]] · [[proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni]]
 
 ## Ampliación (2026-11-16, memoria-procesos)
 Proceso estandarizado en 5 pasos: 1) **Enunciado → Backlog**: Cada requisito → PBI con historia de usuario ("Como… quiero… para…") + criterios de aceptación. Sprint 1: requisitos del enunciado. Sprint 2: lógica del juego agrupada por fases. 2) **PBI → Tareas**: Cada PBI se divide en 1–3 tareas (mínimo necesario). 3) **Tarea → Código**: Sprint 1: una rama por tarea `hito-N/Tx-descripcion` → PR titulado `[Tx] ...` → integra en rama del hito. Sprint 2: un PR por fase de juego (#36, #44–#54) → integra en `main`. Cada tarea en DoneTonic referencia su PR con `PR: #nn` en la descripción. 4) **Integración → Deploy**: Todos los PRs requieren CI verde. Al fusionar en `main`, deploy automático en Google Cloud Run (URL: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app). 5) **Seguimiento automático**: Merge de PR → tarea a HECHO en DoneTonic. Todas las tareas de un PBI hechas → PBI a HECHO automático. Gráficas se actualizan solas.

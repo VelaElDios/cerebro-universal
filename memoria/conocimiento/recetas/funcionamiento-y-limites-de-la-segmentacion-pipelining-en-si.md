@@ -22,3 +22,5 @@ Principios clave del pipelining:
 
 > La segmentación consiste en solapar la ejecución de instrucciones de forma que utilicen recursos distintos  el cauce de ejecución está dividido en varias etapas o segmentos  no se disminuye la latencia de una tarea, sino que se aumenta la productividad  la segmentación está limitada por la etapa más lenta que determina el ciclo máquina  la segmentación no es visible al programador
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 3 de 5)`
+
+Relacionado: [[definicion-y-proposito-de-la-segmentacion-pipeline]] · [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[definicion-de-latencia-e-intervalo-de-iniciacion-en-pipeline]]

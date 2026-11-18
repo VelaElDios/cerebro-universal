@@ -5,9 +5,9 @@ temas: ["ac", "ilp", "loop-unrolling", "optimizacion"]
 claves: ["ILP", "dependency chain", "accumulator", "unrolling", "-O1", "hyperfine", "perf"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[ilp]] · [[loop-unrolling]] · [[optimizacion]]
@@ -39,7 +39,7 @@ Temas: [[ac]] · [[ilp]] · [[loop-unrolling]] · [[optimizacion]]
 
 **Verificación**: Ejecutar ambos y comparar suma final. Benchmark con `hyperfine` y `perf stat -e cycles,instructions ./ilp_base ./ilp_opt` para medir IPC.
 
-> El bucle base acumula valores en una única variable (sumA += v[i]). Cada iteración depende estrictamente del resultado de la anterior, generando parones (stalls) y desaprovechando las múltiples ALUs de la CPU.
-> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp` (cita sin comprobar)
+> // - El bucle base acumula valores en una única variable (sumA += v[i]). // - Cada iteración depende estrictamente del resultado de la anterior, // generando parones (stalls) y desaprovechando las múltiples ALUs de la CPU.
+> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp`
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[desenrollado-manual-manual-unrolling-con-4-acumuladores-para]] · [[romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s]] · [[benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst]]

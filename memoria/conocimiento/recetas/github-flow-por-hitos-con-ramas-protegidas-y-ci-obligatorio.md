@@ -32,6 +32,6 @@ Particularidades:
 > `main` y `hito-*/integracion` están **protegidas**: solo admiten cambios por PR y exigen el CI en verde.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[deshacer-el-paso-entero-si-rompe-la-compilacion]] · [[tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter]]
+Relacionado: [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[deshacer-el-paso-entero-si-rompe-la-compilacion]] · [[tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter]] · [[github-flow-como-modelo-de-ramificacion-del-proyecto]] · [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]] · [[reglas-de-integracion-mediante-pull-requests-con-ci-obligato]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

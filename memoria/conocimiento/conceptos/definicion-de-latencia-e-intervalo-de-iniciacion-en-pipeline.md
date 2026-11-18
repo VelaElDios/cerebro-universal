@@ -17,4 +17,4 @@ Dos métricas clave para caracterizar unidades funcionales segmentadas. La laten
 > •    Latencia: número de ciclos entre la instrucción que produce un resultado y una instrucción que lo usa   •    Tiempo de iniciación: número de ciclos que deben pasar entre la emisión de dos operaciones del mismo tipo
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf`
 
-Relacionado: [[tabla-de-latencia-e-intervalo-de-iniciacion-por-unidad-funci]]
+Relacionado: [[tabla-de-latencia-e-intervalo-de-iniciacion-por-unidad-funci]] · [[definicion-y-proposito-de-la-segmentacion-pipeline]] · [[definicion-de-latencia-de-instruccion-de-salto]] · [[funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si]]

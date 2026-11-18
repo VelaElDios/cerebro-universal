@@ -17,6 +17,6 @@ Resumen cuantitativo del proyecto: Sprint 1: 19 PBIs, 32 tareas; Sprint 2: 29 PB
 > Métrica Valor PBIs / tareas del Sprint 1 19 / 32 PBIs / tareas del Sprint 2 29 / 50 Pull requests Más de 50 (uno por tarea, uno por cierre de hito y uno por fase del juego) Releases hito-1, hito-2, hito-3, hito-4, sprint-1 Pruebas automáticas 322 (+ el recorrido con PostgreSQL real en el CI) Endpoints de la API 23 Migraciones 5 Líneas de código del backend (src/, con SQL) ~2.300 Líneas de la interfaz web (ui.js, api.js, ui/) ~1.150 Líneas de CSS ~950 Líneas del juego (public/js/game/, 35 módulos) ~14.800 Líneas de pruebas ~5.050 Dependencias de producción 6 (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer) Contenido del juego 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[metricas-comparativas-sprint-1-vs-sprint-2]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

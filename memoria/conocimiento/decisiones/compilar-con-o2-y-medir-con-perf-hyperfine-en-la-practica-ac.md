@@ -21,4 +21,4 @@ Decisión pedagógica del enunciado:
 > Compile:        Build both executables with -O2 optimization:\n                      g++ -O2 -o aos tarea3_2_aos.cpp\n                      g++ -O2 -o soa tarea3_2_soa.cpp\n   7. Benchmarking:   Compare both versions using hyperfine and perf\n                      (cache-references, cache-misses, instructions, IPC).
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[como-compilar-y-medir-lista-vs-vector-con-g-o2-hyperfine-y-p]] · [[como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per]] · [[benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst]]

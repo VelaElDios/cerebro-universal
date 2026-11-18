@@ -22,3 +22,5 @@ Pasos para reproducir el gráfico Roofline:
 
 > Genera una gráfica del modelo Roofline mononúcleo de tu máquina.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_3_pintarRoofLin.py`
+
+Relacionado: [[como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log]] · [[parametros-de-ejemplo-del-script-cpu-4-9-ghz-ddr4-26-143-gb]] · [[como-guardar-el-grafico-roofline-como-archivo-png-en-lugar-d]]

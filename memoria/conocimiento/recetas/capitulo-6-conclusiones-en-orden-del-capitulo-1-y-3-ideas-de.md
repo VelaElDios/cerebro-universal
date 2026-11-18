@@ -17,4 +17,6 @@ Estructura obligatoria del capítulo 6: 1) Conclusiones: recorrer en orden el ca
 > Conclusiones siguiendo el orden del capítulo 1: primero el objetivo principal y luego los específicos, indicando cómo se han cumplido. Trabajo futuro: 3 ideas importantes.
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
+Relacionado: [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

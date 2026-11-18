@@ -20,3 +20,5 @@ Cuatro ejes de paralelismo que estructuran el temario:
 
 > Tendencias en arquitectura de computadores  Paralelismo a nivel de instrucción (ILP) – explota el paralelismo implícito dentro de un segmento de código lineal o un bucle (temas 1-7)  Paralelismo a nivel de thread (TLP) – uso de múltiples flujos (streams) de instrucciones que son inherentemente paralelos (tema 8)  Paralelismo a nivel de datos (DLP) – realiza operaciones idénticas sobre grandes volúmenes de datos (tema 8)  Paralelismo a nivel de CPUs – uso de múltiples procesadores (tema 8)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 3 de 5)`
+
+Relacionado: [[definicion-de-paralelismo-a-nivel-de-threads-tlp-frente-a-il]] · [[tecnica-de-mejora-de-rendimiento-en-sisd]] · [[relacion-ilp-y-cpi-en-procesadores-segmentados]]

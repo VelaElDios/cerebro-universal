@@ -17,4 +17,4 @@ Temas: [[ac]] · [[cpi]] · [[mips]] · [[rendimiento]] · [[speedup]]
 > CPI = Σ CPI_i × p_i; MIPS = Frecuencia / (CPI × 10^6); speedup = (CPI_base × Frec_opt) / (CPI_opt × Frec_base)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co]] · [[calculo-de-mips-con-cpi-ponderado-y-frecuencia-de-reloj]] · [[comparativa-de-rendimiento-mips-entre-dos-implementaciones-c]]

@@ -24,4 +24,6 @@ Implementación completa server-side:
 > Google OAuth 2.0 (código de autorización) con `state` anti-CSRF; el intercambio del código se hace en el servidor y la cuenta se crea con `authProvider: google`. La app de Google está publicada, con su política de privacidad
 > — `repo:saas/docs/revision-entrega.md`
 
+Relacionado: [[login-con-google-oauth-2-0-codigo-de-autorizacion-state-en-s]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]] · [[comportamiento-de-cuentas-segun-metodo-de-registro-y-estado]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

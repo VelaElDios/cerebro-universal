@@ -19,4 +19,4 @@ std::size_t p = 0;
 for (std::size_t i = 0; i < n; ++i) p = buf[p];
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp`
 
-Relacionado: [[construccion-de-permutacion-aleatoria-en-ciclo-para-pointer]]
+Relacionado: [[construccion-de-permutacion-aleatoria-en-ciclo-para-pointer]] · [[medicion-de-latencia-con-50-millones-de-accesos-dependientes]] · [[como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset]]

@@ -25,4 +25,4 @@ Esto sitúa cada patrón (Temporal, Secuencial, Aleatorio) en el eje X.
 > Sabiendo que cada fallo de caché de último nivel reportado por perf (cache-misses) obliga a la CPU a traer una línea de datos completa de 64 Bytes desde la RAM, calculamos el tráfico como: Bytes desde RAM = cache-misses (perf) * 64 Bytes.
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf`
 
-Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]] · [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]]
+Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]] · [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[mapeo-de-patrones-de-acceso-en-grafico-roofline-gflops-s-y-f]] · [[mapeo-de-patrones-de-acceso-en-el-grafico-roofline]] · [[como-calcular-y-representar-puntos-de-patrones-en-el-grafico]]

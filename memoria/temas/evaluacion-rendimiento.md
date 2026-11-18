@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "evaluacion-rendimiento"
-notas: 10
+notas: 11
 ---
 # evaluacion-rendimiento
 
@@ -18,6 +18,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «evaluacion-rendimiento» 
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/definicion-de-benchmarks-sinteticos|Definición de benchmarks sintéticos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su|Ley de Amdahl aplicada a speedup con mejora parcial de un subsistema]]
 - 💡 [[memoria/conocimiento/conceptos/paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza|Paradoja MIPS vs tiempo de ejecución: mayor MIPS no garantiza menor tiempo]]
 

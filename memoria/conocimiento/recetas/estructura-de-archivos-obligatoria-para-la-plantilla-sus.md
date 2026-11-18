@@ -27,6 +27,6 @@ Colores de gráficas definidos en un único sitio para fácil cambio.
 > Estructura de archivos: final/ ├── anexo-sus.tex # documento independiente ├── contenido-sus.tex # contenido para \input en el TFG ├── sus-calculos.lua # todos los cálculos ├── datos/respuestas.csv ├── graficas/*.tex └── referencias.bib
 > — `../plantilla-sus/spec.md` (cita sin comprobar)
 
-Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]]
+Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]] · [[como-estructurar-el-csv-de-entrada-para-la-plantilla-sus]] · [[criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep]]
 
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

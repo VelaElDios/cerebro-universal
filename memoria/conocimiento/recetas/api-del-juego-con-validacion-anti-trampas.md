@@ -17,6 +17,6 @@ Tarea T53 (PBI P29) expone la API del juego (endpoints para partidas, acciones, 
 > | | T53 | API del juego con validación anti-trampas | [#49](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/49) | Hecho |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[esquema-de-progreso-guardado-en-servidor-migracion-003-tabla]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]] · [[arreglos-criticos-en-sprint-2-prs-51-55-56]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -19,3 +19,5 @@ Técnica para que el eje X muestre tamaños en KiB (4, 8, 16…) aunque la coord
 
 > ax1.set_xticks(np.log2(size_kib)) ... ax1.set_xticklabels(size_kib, rotation=45)
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_pintarLatvsMem.py` (cita sin comprobar)
+
+Relacionado: [[como-anotar-puntos-en-grafica-log-log-sin-solapar-etiquetas]] · [[como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log]] · [[como-graficar-latencia-vs-working-set-con-jerarquia-de-cache]]

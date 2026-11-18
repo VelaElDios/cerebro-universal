@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "capturas"
-notas: 1
+notas: 2
 ---
 # capturas
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]]
+
 ## Temas relacionados
 
-[[figuras]] · [[grada-colchonera]] · [[latex]] · [[saas]] · [[tfg]]
+[[donetonic]] · [[memoria]] · [[trazabilidad]] · [[figuras]] · [[grada-colchonera]] · [[latex]] · [[saas]] · [[tfg]]

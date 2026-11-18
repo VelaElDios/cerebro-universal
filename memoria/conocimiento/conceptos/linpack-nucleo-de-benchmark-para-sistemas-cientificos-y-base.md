@@ -17,4 +17,4 @@ Linpack resuelve sistemas de ecuaciones lineales (álgebra lineal densa). Su uso
 > El más conocido es el Linpack, que fue desarrollado en el Argone National Laboratory por Jack Dongarra en 1976, y es uno de los más usados en sistemas científicos y de ingeniería ... Hoy en día se utiliza en el TOP500
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf` (cita sin comprobar)
 
-Relacionado: [[comparativa-historica-data-star-trek-60-tflops-vs-top500-219]]
+Relacionado: [[comparativa-historica-data-star-trek-60-tflops-vs-top500-219]] · [[benchmarks-de-referencia-top500-flops-vs-green500-mflops-w]] · [[tipos-de-benchmarks-sinteticos-reales-nucleos-reducidos-y-su]] · [[definicion-de-peak-performance-rendimiento-pico]]

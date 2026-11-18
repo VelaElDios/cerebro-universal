@@ -17,6 +17,6 @@ Estados y transiciones: `[*]` -> `pending` (registro local); `[*]` -> `active` (
 > pending --> active: enlace del correo / pending --> active: entra con Google con el mismo email / active --> deleted: baja propia o de un administrador / deleted --> [*]
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
-Relacionado: [[tabla-users-con-indice-parcial-unico-para-email-entre-cuenta]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]]
+Relacionado: [[tabla-users-con-indice-parcial-unico-para-email-entre-cuenta]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[comportamiento-de-cuentas-segun-metodo-de-registro-y-estado]] · [[login-con-google-oauth-2-0-codigo-de-autorizacion-state-en-s]] · [[flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -16,3 +16,5 @@ La ISA base usada en el curso es RV64G (2016). Es una arquitectura load-store de
 
 > ISA tipo RISC, abierta • Arquitectura carga-almacenamiento • Tamaño de instrucción: 32 bits • 32 / 64 bits (aquí: ISA base “RV64G” - 2016) • “word”: 32 bits (lw, sw…) • “doubleword”: 64 bits (ld, sd…) • 32 registros enteros o GPR (64 bits) • 32 registros PF (datos de 32 o 64 bits; SP o DP)
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
+
+Relacionado: [[organizacion-del-banco-de-registros-en-risc-v-rv64g]] · [[arquitecturas-load-store-arm-risc-v-y-alpha]] · [[analisis-de-dependencias-en-codigo-risc-v-raw-war-waw]]

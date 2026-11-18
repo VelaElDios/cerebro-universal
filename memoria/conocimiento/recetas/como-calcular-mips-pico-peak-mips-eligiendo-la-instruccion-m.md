@@ -24,4 +24,4 @@ Ejemplo (Ejercicio 2):
 > El rendimiento pico se obtendrá con las instrucciones cuya ejecución sea más rápida.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co]] · [[como-calcular-mips-pico-a-partir-de-frecuencia-y-cpi-minimo]] · [[definicion-de-mips-millones-de-instrucciones-por-segundo]]

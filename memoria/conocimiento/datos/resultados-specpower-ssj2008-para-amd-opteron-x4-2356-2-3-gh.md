@@ -28,3 +28,5 @@ Suma total: 1,283,590 ssj_ops, 2,605 W → eficiencia global 493 ssj_ops/Watt.
 
 > Overall sum 1,283,590 2,605 ∑ssj_ops/ ∑power 493
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 3 de 5)`
+
+Relacionado: [[ejercicios-de-evaluacion-de-rendimiento-basados-en-ley-de-am]] · [[calculo-de-mejora-necesaria-con-la-ley-de-amdahl-test-ac-q3]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion]]

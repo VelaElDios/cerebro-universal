@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "segmentacion"
-notas: 6
+notas: 7
 ---
 # segmentacion
 
@@ -20,8 +20,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «segmentacion» (este arch
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/latencias-y-segmentacion-de-unidades-funcionales-en-examen-t|Latencias y segmentación de unidades funcionales en examen Tomasulo Enero 2016]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/tabla-de-latencia-e-intervalo-de-iniciacion-por-unidad-funci|Tabla de latencia e intervalo de iniciación por unidad funcional en segmentación FP]]
 
 ## Temas relacionados
 
-[[ac]] · [[coma-flotante]] · [[terminologia]] · [[pipeline]] · [[riesgos]] · [[unidad-funcional]] · [[especulacion]] · [[ilp]] · [[planificacion]] · [[compilador]] · [[optimizacion]]
+[[ac]] · [[coma-flotante]] · [[terminologia]] · [[pipeline]] · [[riesgos]] · [[latencia]] · [[tomasulo]] · [[unidades-funcionales]] · [[unidad-funcional]] · [[especulacion]] · [[ilp]] · [[planificacion]]

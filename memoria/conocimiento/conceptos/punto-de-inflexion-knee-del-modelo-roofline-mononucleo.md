@@ -17,4 +17,4 @@ El **punto de inflexión (knee)** del Roofline es la intensidad aritmética 𝐼
 > El punto de inflexión es el valor de Intensidad Aritmética (𝐼𝐼𝑘𝑘𝑘𝑘𝑘𝑘𝑘𝑘 ) en el Eje X donde la pendiente del ancho de banda de la memoria se cruza con la meseta horizontal del techo de la CPU. Se calcula dividiendo el Techo de Cómputo entre el Ancho de Banda de la Memoria: 𝐼𝐼𝑘𝑘𝑘𝑘𝑘𝑘𝑘𝑘 = Techo de Cómputo Máximo (GFLOPs/s) / Ancho de Banda de la Memoria Máximo (GB/s)
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf` (cita sin comprobar)
 
-Relacionado: [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]
+Relacionado: [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[punto-de-inflexion-knee-del-modelo-roofline-i-knee-gflops-ma]] · [[punto-de-inflexion-ridge-point-en-el-modelo-roofline]]

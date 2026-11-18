@@ -21,4 +21,6 @@ Temas: [[builds]] · [[diseno-juego]] · [[donetonic]] · [[grada-colchonera]] �
 > - 24 combinaciones con nombre propio y bonus. - 6 ULTRAS que se consiguen solas al completar combinaciones (Premio Puskás, Balón de Oro, Zamora…). - Efecto visual propio y daño en parte porcentual (reducido contra jefes).
 > — `repo:saas/docs/gestion/README.md`
 
+Relacionado: [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]] · [[manual-de-usuario-entrada-menus-controles-oleadas-ambientes]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

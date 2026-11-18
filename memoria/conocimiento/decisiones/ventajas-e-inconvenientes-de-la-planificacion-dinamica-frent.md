@@ -17,4 +17,4 @@ La planificación dinámica (Marcador y Tomasulo) traslada complejidad del compi
 > Ventajas: Simplifica el diseño del compilador, Soluciona dependencias desconocidas en tiempo de compilación, Ejecuta eficientemente cualquier código, aunque haya sido optimizado para otra unidad de instrucción segmentada. Inconvenientes: Complica el diseño del hardware, Interrupciones imprecisas, Aparición de nuevos riesgos (WAR y WAW)
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[planificacion-dinamica-de-instrucciones-con-marcador-scorebo]]
+Relacionado: [[planificacion-dinamica-de-instrucciones-con-marcador-scorebo]] · [[ventajas-e-inconvenientes-del-algoritmo-tomasulo]] · [[limitacion-de-la-planificacion-estatica-que-motiva-la-planif]] · [[planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui]]

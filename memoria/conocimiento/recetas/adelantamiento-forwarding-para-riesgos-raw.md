@@ -16,3 +16,5 @@ El forwarding (adelantamiento) evita stalls en dependencias RAW ALU-ALU. Cuando 
 
 > Adelantamiento: es una técnica hardware para que cuando ocurre un riesgo por dependencia de datos, la lógica de control seleccione el resultado de la ALU como entrada a la misma ALU • DSUB no necesita R1 en el ciclo 3, sino en el 4 • El adelantamiento puede generalizarse para que cualquier unidad funcional pueda pasar un resultado directamente a la unidad funcional que lo necesite
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
+
+Relacionado: [[dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione]] · [[riesgo-load-use-en-pipeline-mips-con-forwarding]] · [[limitacion-del-adelantamiento-hazard-load-use-load-use-penal]]

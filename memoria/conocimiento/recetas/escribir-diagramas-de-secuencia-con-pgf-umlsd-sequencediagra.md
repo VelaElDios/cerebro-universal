@@ -20,4 +20,6 @@ Reglas obligatorias para que compile y pase revisar_umlsd.py: (1) Entorno `seque
 ## Ampliación (2026-11-16, memoria-procesos)
 Entorno sequencediagram (minúsculas). Participantes con \newthread/\newinst. Llamadas anidadas con call (origen, mensaje, destino, respuesta). Mensajes sueltos con \mess. Bloques alternativos con sdblock. En textos de \mess, call, callself, \newinst: no \#, \_, \&, \%, \$, \{, \}, comandos (\texttt...), ni #, &, _, $ sueltos; en \mess tampoco paréntesis. Todo participante usado debe estar declarado en ese diagrama. Usar \resizebox{\textwidth}{!}{...} para que no se salgan; si ocupan casi una página, adjustbox con max totalheight=0.6\textheight.
 
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

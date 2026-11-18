@@ -17,6 +17,6 @@ El usuario abre el enlace de confirmación que lleva un token. La API `GET /api/
 > U->>A: Abre el enlace (token) A->>AC: confirmar(token) AC->>T: verify(token, propósito) alt Firma mala, caducado o propósito distinto T-->>AC: null A-->>U: 303 → /?aviso=enlace-no-valido#/entrar (log user.confirm_failed) else Válido T-->>AC: {userId} AC->>S: activar(userId) (si está pending) A-->>U: 303 → /?aviso=cuenta-confirmada#/entrar (log user.confirmed)
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]]
+Relacionado: [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]] · [[registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y]] · [[flujo-de-registro-con-email-y-contrasena]] · [[login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

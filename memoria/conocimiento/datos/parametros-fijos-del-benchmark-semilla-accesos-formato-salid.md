@@ -20,4 +20,4 @@ std::printf("%12s %14s\n", "Tamaño(KiB)", "Latencia(ns)");
 std::printf("%12zu %14.2f\n", bytes / 1024, ns);
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp` (cita sin comprobar)
 
-Relacionado: [[como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria]] · [[rango-de-working-set-4-kib-a-256-mib-en-potencias-de-2]]
+Relacionado: [[como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria]] · [[rango-de-working-set-4-kib-a-256-mib-en-potencias-de-2]] · [[parametros-fijos-del-experimento-de-branchless-tamanio-repet]] · [[uso-de-semilla-fija-42-en-mt19937-para-reproducibilidad-del]]

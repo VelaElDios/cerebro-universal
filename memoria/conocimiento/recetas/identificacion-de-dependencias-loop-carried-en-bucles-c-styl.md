@@ -24,3 +24,5 @@ Ejemplos del trozo:
 
 > Indica para cada una de ellas si se trata de una dependencia entre diferentes iteraciones del bucle.
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2_Prob_RISCV_rev.pdf`
+
+Relacionado: [[tipos-de-dependencias-en-bucles-loop-independent-vs-loop-car]] · [[dependencias-en-bucles-risc-v-clasificacion-intra-iteracion]] · [[analisis-de-dependencias-en-codigo-risc-v-raw-war-waw]]

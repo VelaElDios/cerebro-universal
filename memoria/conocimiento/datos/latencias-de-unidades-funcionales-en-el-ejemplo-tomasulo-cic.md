@@ -17,4 +17,4 @@ Latencias observadas en la simulación: Unidad Entera (cargas fld): 1 ciclo de e
 > Ciclos que     10     2             Mult1            SI            Mult     f0    f2        f4           SI SI
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]]
+Relacionado: [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo]] · [[latencias-de-ejecucion-fp-en-el-ejemplo-del-marcador-ciclos]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]]

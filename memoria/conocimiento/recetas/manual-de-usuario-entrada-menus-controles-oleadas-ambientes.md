@@ -23,6 +23,6 @@ Temas: [[game-design]] · [[grada-colchonera]] · [[saas]] · [[ux]]
 > 1. **Entrar:** con sesión iniciada, `#/jugar` abre el menú del juego. La primera vez pide un **mote** (3 a 16 caracteres, único) y una **cara** para el avatar.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[maquina-de-estados-de-la-cuenta-de-usuario]]
+Relacionado: [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

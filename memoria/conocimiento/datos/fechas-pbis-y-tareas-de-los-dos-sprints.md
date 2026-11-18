@@ -21,6 +21,6 @@ Temas: [[donetonic]] · [[grada-colchonera]] · [[scrum]] · [[sprint]]
 > Sprint 2 | Del 23/10/2026 al 29/10/2026 · 29 PBIs (P20–P48) y 50 tareas (T33–T82), etiquetas por fase del juego · **Hecho**
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

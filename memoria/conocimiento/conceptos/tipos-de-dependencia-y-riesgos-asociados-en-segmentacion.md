@@ -16,3 +16,5 @@ En una unidad segmentada, las dependencias entre instrucciones próximas generan
 
 > Dependencia de datos → RAW, antidependencia → WAR, de salida → WAW, de control → de control
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
+
+Relacionado: [[tipos-de-riesgos-en-pipeline-estructurales-datos-control]] · [[dos-estrategias-genericas-para-tratar-dependencias-de-datos]] · [[diferencia-entre-dependencia-de-datos-raw-antidependencia-wa]]

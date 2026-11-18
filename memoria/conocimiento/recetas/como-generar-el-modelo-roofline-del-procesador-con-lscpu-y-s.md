@@ -17,4 +17,4 @@ Temas: [[ac]] · [[lscpu]] · [[rendimiento]] · [[roofline]] · [[stream]]
 > 1. Cálculo del techo de cómputo mono-núcleo: Ejecuta el comando lscpu y obtén la frecuencia máxima en GHz. 2. Cálculo del techo de RAM: Medimos la velocidad de la memoria con el benchmark estándar STREAM para ello ejecuta el siguiente comando y busca al final de la salida la fila Triad, tomando el valor de la columna Best Rate MB/s y divídelo entre 1000 para obtener los GB/s reales.
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf`
 
-Relacionado: [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[como-obtener-parametros-de-hardware-para-el-modelo-roofline]] · [[como-obtener-los-parametros-reales-de-tu-maquina-para-el-roo]] · [[como-generar-el-grafico-roofline-mononucleo-con-python]]

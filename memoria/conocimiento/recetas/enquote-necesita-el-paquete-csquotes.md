@@ -17,6 +17,6 @@ Temas: [[comillas]] · [[csquotes]] · [[enquote]] · [[latex]]
 > Añadir \usepackage{csquotes}. Cada documento con su propio preámbulo (anexo, diapositivas...) lo necesita por separado.
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]]
+Relacionado: [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante]] · [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

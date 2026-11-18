@@ -26,3 +26,5 @@ Para mejorar prestaciones se explotan tres técnicas de ILP:
 
 ## Ampliación (2026-11-17, )
 VLIW (Very Long Instruction Word) surge para evitar el elevado coste hardware y la complejidad de control de los procesadores superescalares. En VLIW, el compilador analiza el código y empaqueta varias operaciones independientes en una sola instrucción muy larga (palabra de instrucción muy larga). Estas operaciones se despachan simultáneamente a múltiples unidades funcionales independientes y se ejecutan en paralelo en una misma ciclo, sin necesidad de lógica de despacho dinámico compleja en hardware. El ejemplo de pipeline muestra varias operaciones (EX, MEM, WB) solapadas en el mismo ciclo. Esta técnica traslada la complejidad del hardware al compilador.
+
+Relacionado: [[tecnica-de-mejora-de-rendimiento-en-sisd]] · [[diferencia-fundamental-vliw-vs-superescalar-compilador-vs-ha]] · [[funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si]]

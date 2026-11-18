@@ -19,3 +19,5 @@ Ambas permiten comparar prestaciones de procesadores en cargas de trabajo reales
 
 > SPEC® CPU 2017 • Versión 1 (junio 2017) • Incluye 43 benchmarks  SPECspeed® – Integer / Floating Point – Comparan tiempo en ejecución de tareas  SPECrate® – Integer / Floating Point – Miden productividad por unidad de tiempo
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 3 de 5)`
+
+Relacionado: [[tipos-de-benchmarks-sinteticos-reales-nucleos-reducidos-y-su]] · [[benchmarks-de-referencia-top500-flops-vs-green500-mflops-w]] · [[speedup-no-tiene-unidades-de-medida]]

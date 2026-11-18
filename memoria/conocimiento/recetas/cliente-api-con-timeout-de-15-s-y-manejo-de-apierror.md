@@ -17,6 +17,6 @@ Implementación en `public/js/api.js`: único punto que usa `fetch`. Cada petici
 > Cliente (api.js): único sitio con fetch; timeout de 15 s con AbortController; convierte las respuestas de error en ApiError (estado, código y mensaje); si una petición devuelve 401 con sesión, avisa a la interfaz de que la sesión ha caducado.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]]
+Relacionado: [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui]] · [[manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

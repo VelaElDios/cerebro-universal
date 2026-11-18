@@ -25,4 +25,4 @@ Conclusión: No es posible reducir el tiempo total un 20% mejorando solo saltos,
 > b) ¿Podemos reducir el tiempo total un 20% mejorando solamente los saltos?
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[calculo-de-reduccion-de-tiempo-total-al-mejorar-un-tipo-de-i]]
+Relacionado: [[calculo-de-reduccion-de-tiempo-total-al-mejorar-un-tipo-de-i]] · [[limitacion-de-mejora-en-fraccion-pequena-ley-de-amdahl]] · [[speedup-por-ley-de-amdahl-con-mejora-10x-usada-20-del-tiempo]]

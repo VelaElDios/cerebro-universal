@@ -37,4 +37,4 @@ Pasos:
 > c) Calcula el CPI, suponiendo que la máquina funciona a 2GHz y ha ejecutado 560, 200, 1280 y 256 millones de instrucciones de cada tipo respectivamente: FP, Int, Load/Store, Saltos.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[calculo-de-reduccion-de-tiempo-total-al-mejorar-un-tipo-de-i]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-reduccion-de-tiempo-total-al-mejorar-un-tipo-de-i]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-cpi-a-partir-de-tiempos-por-tipo-de-instruccion-y]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-mezcla-de-instrucci]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-mixto-y-frecuencia-de]]

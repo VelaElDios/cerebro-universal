@@ -17,4 +17,4 @@ Para un programa donde una fracción f del tiempo se ejecuta en código mejorabl
 > A medida que el factor de mejora (k) crece, la aceleración se hace mayor. En el límite, tendremos un factor de mejora ∞, y un speedup = 1/0.1 = 10. Esa es la cota superior para la aceleración.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion]] · [[ley-de-amdahl-para-speedup-con-mejora-parcial]] · [[calculo-de-tiempo-de-ejecucion-nuevo-y-speedup-con-mejora-fr]]

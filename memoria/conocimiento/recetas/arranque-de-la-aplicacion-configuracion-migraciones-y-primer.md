@@ -23,6 +23,6 @@ Temas: [[arranque]] · [[despliegue]] · [[grada-colchonera]] · [[migraciones]]
 > SV->>CF: Lee y valida las variables alt Producción sin un secreto obligatorio CF-->>SV: Error → la app no arranca (Cloud Run sigue con la versión anterior) end SV->>B: bootstrap(config) alt Hay DATABASE_URL B->>DB: migrate(): aplica las migraciones pendientes else B->>B: Repositorios en memoria (log app.storage warn) end B->>S: ensureAdmin(ADMIN_EMAIL, ADMIN_PASSWORD) alt No existe S->>DB: create(admin, active, hash) else Existe y no es admin S->>DB: update(role admin) else Ya es admin S-->>B: sin cambios (no se toca su contraseña) end B-->>SV: app lista (log admin.bootstrap, app.start)
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[creacion-del-primer-administrador-mediante-variables-de-ento]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

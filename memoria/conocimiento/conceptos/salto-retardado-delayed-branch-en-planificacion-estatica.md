@@ -16,3 +16,5 @@ En arquitecturas con salto retardado (p.ej. MIPS clásico), la instrucción inme
 
 > Las instrucciones emitidas después del salto terminarán de ejecutarse tanto si se toma el salto como si no. Suponiendo que el salto se resuelve completamente en la etapa ID, tan sólo sería la instrucción siguiente al salto
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[saltos-retardados-delayed-branches-en-planificacion-estatica]] · [[delayed-branch-en-vliw-y-su-efecto-en-planificacion]] · [[salto-retardado-delayed-branch-como-planificacion-estatica]]

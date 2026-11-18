@@ -17,4 +17,4 @@ La ecuación fundamental relaciona el tiempo de ejecución de un programa con tr
 > 𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡 𝑑𝑑𝑑𝑑 𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒ó𝑛𝑛 = 𝑛𝑛ú𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚 𝑑𝑑𝑑𝑑 𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖 × 𝐶𝐶𝐶𝐶𝐶𝐶 × 𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑ó𝑛 𝑑𝑑𝑑𝑑 𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐 𝑑𝑑𝑑𝑑 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Formulas.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[formula-del-techo-roofline-mononucleo]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[formula-del-techo-roofline-mononucleo]] · [[formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores]] · [[como-calcular-ciclos-de-reloj-de-cpu-a-partir-de-instruccion]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]]

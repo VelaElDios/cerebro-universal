@@ -17,6 +17,6 @@ Se documentan 14 decisiones clave: 1) Express 5 sin framework frontend (React/Vu
 > Express 5 sin framework de frontend | React, Vue, Next.js | Proyecto individual y didáctico: las capas se ven como ficheros, no hay paso de compilación, el backend sirve el frontend (sin CORS) y la frontera interfaz/cliente que pide el Hito 2 queda en dos ficheros.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

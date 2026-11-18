@@ -39,6 +39,6 @@ El test `verificar.py` recalcula desde el CSV y compara; `probar_datos_raros.py`
 > Al compilar, `sus-calculos.lua` debe escribir `resultados.json` en la carpeta del documento (junto a `anexo-sus.tex`) con los valores que se imprimen en el documento. Un test automático externo (`verificar.py`, que las IAs no pueden ver ni modificar) recalcula todo desde el CSV y lo compara: si no cuadra, la prueba falla.
 > — `../plantilla-sus/spec.md`
 
-Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]]
+Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]] · [[criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep]] · [[trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c]]
 
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

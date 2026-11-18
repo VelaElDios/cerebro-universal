@@ -17,4 +17,4 @@ Hyperfine ejecuta benchmarks estadísticos. Instalar con `sudo apt install hyper
 > Hyperfine: Herramienta de benchmarking comparativo con soporte estadístico. Instalación: sudo apt install hyperfine Uso rápido: hyperfine --warmup 3 './ejecutable_A' './ejecutable_B' TEN CUIDADO: Asegúrate de hacer un uso correcto de las comillas.
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf` (cita sin comprobar)
 
-Relacionado: [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[mapeo-de-patrones-de-acceso-en-el-grafico-roofline]]
+Relacionado: [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[mapeo-de-patrones-de-acceso-en-el-grafico-roofline]] · [[como-hacer-benchmark-estadistico-con-hyperfine-entre-patrone]] · [[como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per]] · [[como-benchmarkear-y-perfilar-patrones-de-acceso-con-hyperfin]]

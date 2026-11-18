@@ -26,3 +26,5 @@ M2 tiene mayor frecuencia pero CPI peores en clases ligeras; M1 gana en pico.
 
 > Clase A M1=1 M2=2 • Clase B M1=2 M2=2 • Clase C M1=3 M2=4 • Clase D M1=4 M2=4
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
+
+Relacionado: [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]] · [[calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4]] · [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-c]]

@@ -17,4 +17,4 @@ La tabla muestra para cada instrucción el ciclo en que ocurre cada fase: Emisi�
 > Estado de las instrucciones                                                                              Lectura           Ejecución    Escritura   ciclo 10                     Instrucción               Emisión              Operandos         completa     resultado
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]]
+Relacionado: [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-simulacion]] · [[como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul]] · [[pasos-para-rellenar-tabla-de-estado-de-instrucciones-emision]]

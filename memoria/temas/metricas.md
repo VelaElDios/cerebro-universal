@@ -1,15 +1,21 @@
 ---
 tipo: "tema"
 titulo: "metricas"
-notas: 7
+notas: 10
 ---
 # metricas
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo se genera solo).
 
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw|Cálculo de operaciones por ciclo (IPC) en planificación VLIW]]
+- 🧪 [[memoria/conocimiento/recetas/metrica-operaciones-por-ciclo-opc-en-vliw|Métrica operaciones por ciclo (OPC) en VLIW]]
+
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2|Burndown real vs. burndown de DoneTonic en Sprint 2]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real|Mejor medida de rendimiento es tiempo de ejecución real]] · ⚠️ propuesto
 
 ## Datos
 
@@ -25,4 +31,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[verificacion]] · [[sprint]] · [[grada-colchonera]] · [[saas]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]] · [[ac]] · [[ciclos-por-dato]] · [[planificacion-estatica]] · [[rendimiento]]
+[[ac]] · [[rendimiento]] · [[verificacion]] · [[sprint]] · [[grada-colchonera]] · [[saas]] · [[ipc]] · [[vliw]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]]

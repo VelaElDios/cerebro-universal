@@ -17,4 +17,4 @@ Una instrucción de carga (LD) solo tiene el dato al final de la etapa MEM. La i
 > Desafortunadamente no todos los riesgos de datos se pueden resolver por adelantamiento • LD no tiene el dato hasta final MEM; DSUB lo necesita al principio • Las instrucciones de carga tienen un retraso o latencia que no se puede eliminar con adelantamiento • Necesitamos añadir un hardware para detectar los riesgos de datos y provocar una detención • la instrucción que debe producir el dato continuará, pero la que debe consumirlo y las siguientes se detendrán hasta que el dato esté disponible
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
 
-Relacionado: [[adelantamiento-forwarding-para-riesgos-raw]]
+Relacionado: [[adelantamiento-forwarding-para-riesgos-raw]] · [[riesgo-load-use-en-pipeline-mips-con-forwarding]] · [[dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione]]

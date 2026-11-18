@@ -21,6 +21,6 @@ Cronograma detallado del Sprint 1 (base SaaS) en tres bloques: Hitos 1-3 (29/09�
 | **Cierre del sprint** (24/10/2026) | README, capturas, revisión de la entrega frente al enunciado, despliegue en Google Cloud Run y estructura de la memoria |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]]
+Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,0 +1,36 @@
+---
+tipo: "tema"
+titulo: "cdb"
+notas: 12
+---
+# cdb
+
+Nodo del mapa del Cerebro con todo lo que se sabe de «cdb» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8|Completar tabla Tomasulo con una estación por UF (Ejercicio 8)]]
+- 🧪 [[memoria/conocimiento/recetas/primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio|Primeros 3 ciclos Tomasulo con 2 add 1c y 2 mul 4c (Ejercicio 9)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-paso-a-paso-de-tomasulo-con-especulacion-tabla-ci|Simulación paso a paso de Tomasulo con especulación (tabla ciclos por etapa)]]
+- 🧪 [[memoria/conocimiento/recetas/simulacion-tomasulo-tabla-estado-instrucciones-y-estaciones|Simulación Tomasulo: tabla estado instrucciones y estaciones de reserva antes de escritura segundo L.D (Problema 2)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm|Tomasulo con CDB no simultáneo 2 RS por UF buffers carga/almacen (Ejercicio 10)]]
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/restriccion-cdb-tomasulo-no-escritura-e-inicio-ejecucion-mis|Restricción CDB Tomasulo: no escritura e inicio ejecución mismo ciclo]]
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo|Bus Común de Datos (CDB) en el algoritmo de Tomasulo]]
+- 💡 [[memoria/conocimiento/conceptos/bus-comun-de-datos-cdb-en-tomasulo-difunde-resultados-de-uf|Bus Común de Datos (CDB) en Tomasulo difunde resultados de UF y memoria]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/restriccion-de-escritura-en-cdb-en-tomasulo-no-mismo-ciclo|Restricción de escritura en CDB en Tomasulo (no mismo ciclo)]]
+- 💡 [[memoria/conocimiento/conceptos/tomasulo-resultados-via-cdb-riesgos-estructurales-en-escritu|Tomasulo: resultados via CDB, riesgos estructurales en escritura, especulación commit]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/tomasulo-resultados-via-common-data-bus-cdb|Tomasulo: resultados via Common Data Bus (CDB)]]
+
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/parametros-tomasulo-con-especulacion-para-problema-3-ac-ener|Parámetros Tomasulo con especulación para Problema 3 (AC Enero 2025)]] · ⚠️ propuesto
+
+## Temas relacionados
+
+[[ac]] · [[tomasulo]] · [[rob]] · [[planificacion-dinamica]] · [[broadcast]] · [[bus comun datos]] · [[hazard]] · [[especulacion-hardware]] · [[riesgo-estructural]] · [[unidad funcional]] · [[especulacion]] · [[fp-units]]

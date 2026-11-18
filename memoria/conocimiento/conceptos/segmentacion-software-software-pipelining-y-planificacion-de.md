@@ -20,4 +20,4 @@ Ambas reordenan instrucciones dependientes para aumentar ILP; la primera enfocad
 > Segmentación software (software pipelining) reordenación de instrucciones dependientes • Planificación de trazas (trace scheduling) reordenación de instrucciones dependientes
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[comparacion-de-tecnicas-de-planificacion-estatica-desenrolla]] · [[planificacion-de-trazas-trace-scheduling-para-condicionales]] · [[planificacion-software-software-pipelining-transforma-iterac]]

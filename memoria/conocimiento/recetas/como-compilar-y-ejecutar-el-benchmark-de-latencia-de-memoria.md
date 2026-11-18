@@ -18,4 +18,4 @@ Temas: [[ac]] · [[benchmark]] · [[compilacion]] · [[ejecucion]]
 - Ejecutar: taskset -c 0 ./mem_latency
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp` (cita sin comprobar)
 
-Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]]
+Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]] · [[como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset]] · [[como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso]]

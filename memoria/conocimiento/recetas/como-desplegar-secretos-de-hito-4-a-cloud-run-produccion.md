@@ -21,6 +21,6 @@ Temas: [[correo]] · [[grada-colchonera]] · [[oauth]] · [[saas]]
 > En Cloud Shell, desde la carpeta `scripts/gcp`: `PROJECT_ID=tu-proyecto bash configurar-hito4.sh` (pide los cuatro valores y los guarda en Secret Manager).
 > — `repo:saas/docs/hito4-configuracion.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]] · [[como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]] · [[como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica]] · [[script-de-configuracion-de-secretos-hito-4-en-gcp]] · [[como-probar-la-configuracion-en-local-hito-4]] · [[solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -23,4 +23,6 @@ Temas: [[api]] · [[backend]] · [[base-datos]] · [[donetonic]] · [[grada-colc
 > Migración 004 y PUT /api/juego/identidad. Mote de 3 a 16 caracteres, único sin distinguir mayúsculas ni tildes (409 si está cogido). Avatar con la cara de un jugador fichado o de un entrenador.
 > — `repo:saas/docs/gestion/README.md` (cita sin comprobar)
 
+Relacionado: [[esquema-de-progreso-guardado-en-servidor-migracion-003-tabla]] · [[grupos-de-rutas-de-la-api-y-sus-accesos]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

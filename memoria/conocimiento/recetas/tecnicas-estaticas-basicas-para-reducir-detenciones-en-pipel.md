@@ -17,4 +17,4 @@ Tres recetas de compilador/arquitectura estática: (1) Riesgos estructurales →
 > Técnicas básicas (estáticas) para reducir:  • Detenciones por riesgos estructurales: replicación o segmentación de las unidades funcionales  • Detenciones por riesgos de datos RAW: adelantamientos  • Detenciones por riesgos de control: saltos retardados
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf`
 
-Relacionado: [[problemas-en-segmentacion-de-coma-flotante-riesgos-estructur]]
+Relacionado: [[problemas-en-segmentacion-de-coma-flotante-riesgos-estructur]] · [[tecnicas-avanzadas-estaticas-y-dinamicas-para-reducir-detenc]] · [[tipos-de-riesgos-en-pipeline-estructurales-datos-control]] · [[dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione]]

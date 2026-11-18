@@ -17,4 +17,4 @@ Prologue (inicio): fld f0,0(x1)  // carga X[999] en f0; fadd.d f4,f0,f2  // f4 =
 > L: fsd     f4,0(x1);   Almacena M[i]    fadd.d f4,f0,f2 ; Suma a M[i-1]    fld    f0,-16(x1); Carga M[i-2]    addi   x1,x1,-8    bne    x1,x0,L
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[segmentacion-software-software-pipelining-en-bucles-sin-depe]]
+Relacionado: [[segmentacion-software-software-pipelining-en-bucles-sin-depe]] · [[segmentacion-software-software-pipelining-para-suma-vectoria]] · [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]]

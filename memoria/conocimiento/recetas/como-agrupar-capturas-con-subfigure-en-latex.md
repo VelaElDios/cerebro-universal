@@ -67,4 +67,6 @@ Para evitar la cadena de «La figura X muestra…», agrupar capturas relacionad
 ```
 Luego en el texto se explica la funcionalidad y se cita la figura general (`\ref{fig:app-acceso}`) o las subfiguras individuales (`\ref{fig:app-inicio}`, `\ref{fig:app-registro}`).
 
+Relacionado: [[como-se-agrupan-capturas-con-subfigure]] · [[agrupar-capturas-con-subfigure]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

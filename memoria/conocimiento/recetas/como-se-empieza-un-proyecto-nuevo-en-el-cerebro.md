@@ -22,3 +22,5 @@ Temas: [[cerebro]] · [[proyectos]]
 
 ## Ampliación (2026-11-16, )
 Pasos para crear un proyecto desde cero: (1) Copiar la carpeta `proyectos/_plantilla/` a `proyectos/<nombre>/` (sin espacios). (2) Escribir `spec.md` con las normas de qué producir y cómo, y adaptar `verificar.py` (test inmutable para las IAs). (3) Completar `proyecto.json` con al menos `nombre`, `temas` (lista de strings para filtrar lecciones), `necesita` (claves de `config/entornos.json` más paquetes `apt`/`pip` opcionales), `comando_prueba` (script que devuelve 0 si ok), y `"estado": "en-construccion"`. Opcionales: `repos`, `fuentes`, `copiar`, `protegidos`, `reintentar_si`, `archivo_principal`, `pasos`/`max_pasos`, `max_intentos`, `max_archivos_por_paso`, `roles`.
+
+Relacionado: [[campos-de-proyecto-json-y-su-proposito]] · [[como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte]] · [[como-trabaja-el-cerebro-constructor-prueba-revisor]]

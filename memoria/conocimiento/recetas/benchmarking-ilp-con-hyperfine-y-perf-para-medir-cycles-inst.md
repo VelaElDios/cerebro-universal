@@ -5,9 +5,9 @@ temas: ["ac", "benchmarking", "hyperfine", "ipc", "perf"]
 claves: ["hyperfine", "perf stat", "cycles", "instructions", "IPC", "benchmarking"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[benchmarking]] · [[hyperfine]] · [[ipc]] · [[perf]]
@@ -42,7 +42,7 @@ Temas: [[ac]] · [[benchmarking]] · [[hyperfine]] · [[ipc]] · [[perf]]
 
 **Documentar**: Tabla con cycles, instructions, IPC, time (ms), speedup. Justificar si no se alcanza 4x (memory bound, latencia FP add ~3-4 ciclos, puertos de ejecución limitados).
 
-> Benchmarking: Comparar ambas versiones con hyperfine y perf (cycles, instructions, IPC). Justificar los resultados.
-> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp` (cita sin comprobar)
+> Benchmarking: Comparar ambas versiones con hyperfine y perf // (cycles, instructions, IPC). Justificar los resultados.
+> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp`
 
-Relacionado: [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per]] · [[compilar-con-o2-y-medir-con-perf-hyperfine-en-la-practica-ac]]

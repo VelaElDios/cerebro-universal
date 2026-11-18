@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «métrica» (este archivo 
 
 ## Temas relacionados
 
-[[donetonic]] · [[grada-colchonera]] · [[scrum]] · [[sprint]] · [[memoria-procesos]]
+[[donetonic]] · [[grada-colchonera]] · [[scrum]] · [[sprint]] · [[memoria-procesos]] · [[métricas]]

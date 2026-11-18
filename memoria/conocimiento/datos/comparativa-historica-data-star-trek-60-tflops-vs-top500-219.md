@@ -17,4 +17,4 @@ El episodio de 1989 situaba a Data en 60 TFLOPs (60×10^12 FLOPs), 60.000 veces 
 > En el episodio TNG se cita que la potencia de cálculo del ordenador de la nave (Data) es 60 trillones de operaciones por segundo, es decir 60 TeraFLOPs ... Hoy en día, en 2026, 37 años después del episodio, la potencia del ordenador más rápido del mundo es 2198 PetaFLOPs, es decir 36633 veces más rápido que DATA
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-de-mflops-millones-de-operaciones-de-punto-flotan]]
+Relacionado: [[definicion-de-mflops-millones-de-operaciones-de-punto-flotan]] · [[linpack-nucleo-de-benchmark-para-sistemas-cientificos-y-base]] · [[definicion-de-peak-performance-rendimiento-pico]] · [[definicion-de-mips-millones-de-instrucciones-por-segundo-y-c]]

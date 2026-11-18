@@ -17,4 +17,4 @@ La ley de Amdahl modela la aceleración global (speedup) cuando solo una fracci�
 > speedup = 3 = T / (xT/4 + (1-x)T) ⟹ x = 0.89 (el disco debe usarse el 89% del tiempo)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco-fraccion-de-uso-par]] · [[ley-de-amdahl-para-mejora-de-subsistema-disco-6x-mas-rapido]] · [[como-calcular-la-fraccion-de-uso-requerida-para-un-speedup-o]]

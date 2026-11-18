@@ -17,4 +17,4 @@ EPIC (Explicitly Parallel Instruction Computing) es la implementación comercial
 > Ejemplo: EPIC (Explicitly Parallel Instruction Computing) – IA64 instrucciones de 128 bits ... Itanium (2001): 6 ops. por ciclo, 10 etapas, 800Mhz Itanium2 (2005): 6 ops. por ciclo, 8 etapas, 1,66Ghz
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 4 de 5)` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[itanium-ia64-primer-procesador-intel-no-compatible-con-x86]] · [[instrucciones-predicadas-convertir-dependencias-de-control-e]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]

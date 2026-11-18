@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «temporal-locality» (este
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/por-que-fusionar-bucles-de-normalizacion-y-suma-de-cuadrados|Por qué fusionar bucles de normalización y suma de cuadrados en una sola pasada]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/por-que-fusionar-bucles-de-normalizacion-y-suma-de-cuadrados|Por qué fusionar bucles de normalización y suma de cuadrados en una sola pasada]]
 
 ## Temas relacionados
 

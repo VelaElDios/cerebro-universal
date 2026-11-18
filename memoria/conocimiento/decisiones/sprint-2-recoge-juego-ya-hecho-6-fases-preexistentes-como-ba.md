@@ -17,6 +17,6 @@ Decisión del profesor: Sprint 2 (23/10–29/10/2026) no desarrolla nueva lógic
 > Del 23/10/2026 al 29/10/2026. Cerrado el Sprint 1, el profesor fijó que el **Sprint 2 es la lógica del juego**. El juego ya estaba hecho, en seis fases, así que el sprint recoge ese trabajo como backlog: 29 PBIs (P20–P48) y 50 tareas (T33–T82), con una etiqueta por fase.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]]
+Relacionado: [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

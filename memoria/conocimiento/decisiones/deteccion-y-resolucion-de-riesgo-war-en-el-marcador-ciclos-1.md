@@ -16,3 +16,5 @@ En el ciclo 17 se anota "Riesgo WAR" y "No se escribe el resultado de fadd.d". L
 
 > Ojo!! No se escribe el resultado de fadd.d Riesgo WAR
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr]] · [[marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio]] · [[bloqueo-de-fadd-d-por-peligro-waw-en-registro-f6-hasta-ciclo]]

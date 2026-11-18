@@ -17,4 +17,4 @@ Métricas de rendimiento para la suma vectorial X = X + k en RISC-V: (a) Bucle o
 > Se obtienen 3,5 ciclos por cada dato del vector
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]]
+Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]] · [[segmentacion-software-software-pipelining-para-suma-vectoria]] · [[segmentacion-software-software-pipelining-en-bucles-sin-depe]]

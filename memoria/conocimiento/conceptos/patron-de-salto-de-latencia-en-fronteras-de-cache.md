@@ -21,3 +21,5 @@ Estos saltos reflejan el *miss penalty* de cada nivel. La gráfica de escalones 
 
 > Análisis: Verificar los saltos de latencia.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_pintarLatvsMem.py`
+
+Relacionado: [[working-set-size-vs-memory-access-latency-experiment]] · [[como-graficar-latencia-vs-working-set-con-jerarquia-de-cache]] · [[tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script]]
