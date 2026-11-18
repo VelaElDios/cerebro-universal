@@ -16,3 +16,5 @@ La segmentación (pipeline) solapa la ejecución de múltiples instrucciones div
 
 > La segmentación consiste en solapar la ejecución de instrucciones de forma que utilicen recursos distintos • El cauce de ejecución está dividido en varias etapas o segmentos • No se disminuye la latencia de una tarea, sino que se aumenta la productividad • La segmentación está limitada por la etapa más lenta que determina el ciclo máquina • La segmentación no es visible al programador
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
+
+Relacionado: [[funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si]] · [[ventaja-real-del-pipeline-mayor-throughput-instrucciones-uni]] · [[definicion-de-latencia-e-intervalo-de-iniciacion-en-pipeline]]

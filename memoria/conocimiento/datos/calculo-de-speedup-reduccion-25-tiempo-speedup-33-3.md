@@ -18,3 +18,5 @@ La opción correcta es la a). Esta relación es inversa: speedup = 1 / (1 - redu
 
 > Al mejorar el hardware de un computador hemos obtenido una reducción del 25% en el tiempo de ejecución de un determinado programa de prueba a) Hemos conseguido un speedup del 33.3%
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
+
+Relacionado: [[interpretacion-de-speedup-del-200]] · [[definicion-de-speedup-y-relacion-con-reduccion-de-tiempo]] · [[speedup-por-ley-de-amdahl-con-mejora-10x-usada-20-del-tiempo]]

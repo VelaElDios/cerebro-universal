@@ -17,4 +17,4 @@ Para hallar ciclos/iteración en código original (sin desenrollar, planificaci�
 > ¿Cuántos ciclos invertirá cada iteración en el código original?
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]] · [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]]
+Relacionado: [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]] · [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]] · [[como-calcular-ciclos-por-iteracion-del-codigo-original-con-l]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]] · [[metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi]]

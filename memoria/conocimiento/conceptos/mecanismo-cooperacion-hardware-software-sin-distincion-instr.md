@@ -17,4 +17,4 @@ Este mecanismo trata igual las excepciones en instrucciones normales y especulat
 > Mecanismo de cooperación hardware/software sin distinción entre instrucciones normales e instrucciones especulativas. Es decir, la rutina de servicio de la excepción siempre devuelve un valor indefinido y no termina el programa.
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf`
 
-Relacionado: [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]]
+Relacionado: [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]] · [[mecanismo-de-cooperacion-hardware-software-para-excepciones]] · [[procesador-sin-soporte-para-especulacion-comportamiento-ante]] · [[tres-mecanismos-de-manejo-de-excepciones-para-instrucciones]]

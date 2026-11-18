@@ -21,3 +21,5 @@ La tabla del documento muestra la correspondencia con arquitecturas reales.
 
 > Taxonomía de Flynn • Flynn, M. “Some Computer Organizations and Their Effectiveness.” IEEE Transactions on Computers, September 1972 • Clasificación muy usada, ¿está obsoleta? • Criterio empleado: número de flujos de instrucciones y de datos
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 3 de 5)` (cita sin comprobar)
+
+Relacionado: [[taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones]] · [[clasificacion-de-multiprocesadores-en-taxonomia-de-flynn]] · [[procesadores-superscalar-son-maquinas-sisd]]

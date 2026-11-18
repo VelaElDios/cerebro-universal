@@ -17,4 +17,4 @@ En un predictor correlacionado de dos niveles (m,n), donde m es el número de bi
 > ¿Cuántas BHRs hay en un predictor correlacionado de 2 niveles (2,1)?
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[numero-de-bhr-en-un-predictor-correlacionador-de-dos-niveles]] · [[predictor-correlacionado-m-n-numero-de-bhts-2-m]] · [[predictor-correlacionado-2-1-estructura-y-funcionamiento]]

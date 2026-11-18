@@ -17,4 +17,4 @@ En Tomasulo sin especulación, la emisión nunca se detiene por WAW/WAR gracias 
 > En la técnica de Tomasulo sin especulación: a) Se pueden producir detenciones en la fase de emisión debido a riesgos WAW b) Se pueden producir detenciones en la fase de escritura debido a riesgos estructurales c) Se pueden producir detenciones en la fase de escritura debido a riesgos WAR d) No se pueden producir nunca detenciones debido a riesgos estructurales
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[riesgos-estructurales-en-tomasulo-solo-en-escritura-de-resul]] · [[riesgos-estructurales-en-tomasulo-en-fase-de-escritura-cdb]] · [[en-tomasulo-sin-especulacion-la-emision-se-detiene-ante-ries]]

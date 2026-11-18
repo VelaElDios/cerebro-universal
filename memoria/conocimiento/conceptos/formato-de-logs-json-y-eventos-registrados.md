@@ -17,6 +17,6 @@ Logging estructurado: una línea JSON por evento en stdout (Cloud Logging en pro
 > Una línea JSON por evento en la salida estándar (Cloud Logging en producción), con time, level, event, msg y datos, por ejemplo {"time":"2026-10-12T10:00:00.000Z","level":"info","event":"auth.login","msg":"Inicio de sesión","userId":"..."}. Cada petición lleva un identificador (X-Request-Id) que aparece en todas sus líneas. Eventos: app.start, app.stop, app.storage, app.mail, admin.bootstrap, http.request, http.error, user.registered, auth.login, auth.logout, auth.login_failed, auth.forbidden, mail.confirmation_sent, mail.failed, mail.not_sent, user.confirmed, user.confirm_failed, auth.oauth_denied, auth.oauth_failed, user.role_changed, user.deleted y juego.identidad. Los datos sensibles se sustituyen por [oculto].
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[modulos-del-backend-y-sus-responsabilidades]]
+Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

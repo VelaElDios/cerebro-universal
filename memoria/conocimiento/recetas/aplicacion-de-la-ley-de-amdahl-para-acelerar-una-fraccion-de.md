@@ -16,3 +16,5 @@ Para lograr un speedup global de 2× (tiempo total 100 s) cuando la suma consume
 
 > Supongamos que un programa tarda en ejecutarse en una máquina 200 segundos, de los cuales corresponden a operaciones de suma 120 segundos ¿Cuánto tenemos que mejorar la velocidad de la suma para que el programa se ejecute dos veces más rápido?
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf`
+
+Relacionado: [[ley-de-amdahl-aplicada-a-mejora-de-una-fraccion-del-tiempo-d]] · [[calculo-de-mejora-necesaria-con-ley-de-amdahl-fraccion-mejor]] · [[aplicacion-de-la-ley-de-amdahl-para-speedup-global-mejorando]]

@@ -20,4 +20,4 @@ Ambas usan LINPACK pero con distinto foco; Green500 premia arquitecturas de bajo
 > Top500 (http://www.top500.org/) (FLOPS) vs. Green500 (http://www.green500.org) (MFLOPS/W)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[definicion-de-mflops-millones-de-operaciones-de-punto-flotan]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[definicion-de-mflops-millones-de-operaciones-de-punto-flotan]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[metricas-de-rendimiento-latencia-vs-throughput-ancho-de-band]] · [[tipos-de-benchmarks-sinteticos-reales-nucleos-reducidos-y-su]]

@@ -17,4 +17,4 @@ La tabla del enunciado muestra la fila "Initial state": para predictor de un niv
 > Consider that the initial state of the predictor is the one shown in the first row of the table. ... (Initial state)     -        1/1/1              -         -      0 1/1/1 1/1/1               -         -
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf` (cita sin comprobar)
 
-Relacionado: [[predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est]]
+Relacionado: [[predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est]] · [[estado-inicial-predictores-para-problema-2-1-bit-y-2-niveles]] · [[estado-inicial-de-predictores-en-ejercicio-12-predictor-2-bi]] · [[estado-inicial-de-predictores-y-contadores-en-el-ejercicio-d]]

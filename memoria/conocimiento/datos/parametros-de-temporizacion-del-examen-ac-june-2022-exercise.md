@@ -17,4 +17,4 @@ Latencias funcionales (ciclos hasta que resultado disponible para forwarding): L
 > We assume the following timing parameters: 2 cycles for the MEM stage in loads and stores, 1 cycle to complete the EX stage of ADD.D instructions, and 3 cycles to complete the EX stage of the MUL.D instruction.
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
-Relacionado: [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]] · [[planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip]]
+Relacionado: [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]] · [[planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip]] · [[latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci]] · [[latencias-de-unidades-funcionales-dadas-en-el-examen-fp-y-me]] · [[parametros-de-temporizacion-del-ejercicio-vliw-examen-enero]]

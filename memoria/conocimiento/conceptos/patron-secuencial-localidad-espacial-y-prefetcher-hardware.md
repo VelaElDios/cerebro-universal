@@ -16,3 +16,5 @@ Recorre el vector linealmente `for (i=0; i<N; ++i) s += v[i]` repetido 4 veces. 
 
 > // ============================================================================\n// PATRÓN 1: ACCESO SECUENCIAL Suma las posiciones v[0] + v[1] + ... + v[67108863] cuatro veces.(Localidad Espacial + Prefetcher)\n// Lee el vector elemento tras elemento, de principio a fin, 4 veces.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_patrones.cpp` (cita sin comprobar)
+
+Relacionado: [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t]] · [[tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache]]

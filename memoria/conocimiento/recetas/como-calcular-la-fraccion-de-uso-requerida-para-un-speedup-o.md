@@ -17,4 +17,4 @@ Pasos: 1) Identificar factor de mejora del componente (k=4). 2) Establecer speed
 > speedup = 3 = T / (xT/4 + (1-x)T) ⟹ x = 0.89 (el disco debe usarse el 89% del tiempo)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco-fraccion-de-uso-par]] · [[aplicacion-de-la-ley-de-amdahl-para-determinar-fraccion-de-u]]

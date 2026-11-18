@@ -17,4 +17,4 @@ Una dependencia de salida (Write After Write, WAW) ocurre cuando dos instruccion
 > Dadas dos instrucciones i y j (j lógicamente después de i) existe una dependencia de salida entre ellas si: a) La instrucción i produce un resultado que usa la instrucción j b) La instrucción j escribe sobre un registro que lee la instrucción i c) Las dos instrucciones i y j escriben sobre el mismo registro d) Ninguna de las anteriores
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
 
-Relacionado: [[antidependencia-war-siempre-genera-hazard-war]]
+Relacionado: [[antidependencia-war-siempre-genera-hazard-war]] · [[definicion-de-dependencia-de-salida-waw-entre-dos-instruccio]] · [[dependencia-de-salida-waw-dos-instrucciones-escriben-mismo-r]] · [[waw-corresponde-a-dependencia-de-salida]]

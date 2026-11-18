@@ -17,4 +17,4 @@ Parámetros estructurales para la parte 2 (Tomasulo básico sin especulación): 
 > There are two reservation stations per functional unit, a load buffer with 2 entries and a store buffer with 1 entry. All of them are initially empty.
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]] · [[configuracion-de-recursos-para-tomasulo-especulativo-en-exam]] · [[configuracion-y-parametros-para-simular-tomasulo-en-problema]] · [[configuracion-tomasulo-con-rob-para-simulacion-de-examen-ene]]

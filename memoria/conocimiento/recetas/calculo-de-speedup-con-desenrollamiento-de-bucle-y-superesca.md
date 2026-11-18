@@ -17,4 +17,4 @@ Original: 30 iteraciones × 10 ciclos/iter = 300 ciclos. Desenrollado 3×: 10 it
 > Se ejecuta un código MIPS64 que itera un código 30 veces y emplea 300 ciclos de reloj al ejecutarse en un procesador escalar. Desenrollamos el bucle 3 veces y lo planificamos para un superescalar de grado 4. Cada iteración del bucle modificado requiere 15 ciclos en el superescalar. Hemos obtenido un speedup de:
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[calculo-de-speedup-por-desenrollado-de-bucle-en-superescalar]] · [[calculo-de-speedup-por-desenrollado-de-bucle-en-superscalar]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]]

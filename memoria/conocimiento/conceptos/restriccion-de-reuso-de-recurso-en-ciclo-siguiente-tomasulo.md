@@ -17,4 +17,4 @@ Regla adicional del enunciado: cuando una estación de reserva o buffer de carga
 > Un recurso que es liberado en un ciclo de reloj no puede ser usado hasta el siguiente ciclo.
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la]] · [[convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la]] · [[convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario]] · [[restriccion-de-uso-del-cdb-y-liberacion-de-recursos-en-tomas]] · [[regla-de-contencion-del-cdb-y-disponibilidad-de-recursos-en]] · [[reglas-de-cdb-y-liberacion-de-recursos-en-tomasulo-con-rob]]

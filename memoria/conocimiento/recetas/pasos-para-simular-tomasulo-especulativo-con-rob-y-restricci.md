@@ -29,4 +29,4 @@ Algoritmo paso a paso para rellenar la tabla de 4 columnas (Issue, Execution, Wr
 > Detail the execution of the code below when the basic version of Tomasulo's algorithm with speculation is used. To do so, indicate in the table below the start and end cycle number for each of the steps of each instruction (NB: For 1-cycle instruction steps, you must annotate just 1 cycle in the table).
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[restricciones-de-timing-en-tomasulo-con-especulacion-examen]]
+Relacionado: [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[restricciones-de-timing-en-tomasulo-con-especulacion-examen]] · [[simulacion-paso-a-paso-de-tomasulo-con-especulacion-tabla-ci]] · [[pasos-para-rellenar-tabla-de-estado-de-instrucciones-emision]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]]

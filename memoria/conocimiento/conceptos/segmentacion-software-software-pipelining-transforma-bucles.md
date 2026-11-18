@@ -16,3 +16,5 @@ La segmentación software (software pipelining) reorganiza las instrucciones de 
 
 > La técnica de segmentación software: a) Transforma un bucle con iteraciones independientes en un bucle con iteraciones dependientes b) Transforma el bloque básico de un bucle para reducir el número de saltos c) Transforma un bucle con iteraciones dependientes en un bucle con iteraciones independientes d) Transforma el bloque básico de un bucle para reducir los riesgos de control
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
+
+Relacionado: [[que-hace-la-tecnica-de-segmentacion-software-software-pipeli]] · [[que-busca-conseguir-la-segmentacion-software-software-pipeli]] · [[proposito-de-la-segmentacion-software-software-pipelining-te]]

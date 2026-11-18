@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «registros» (este archivo
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS: se accede en etapas ID y WB]]
+- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS de 5 etapas: acceso en ID (lectura) y WB (escritura)]]
 - 💡 [[memoria/conocimiento/conceptos/renombrado-de-registros-via-qi-en-bucle-con-reuso-de-f0-f2-f|Renombrado de registros vía Qi en bucle con reuso de f0/f2/f4]]
 - 💡 [[memoria/conocimiento/conceptos/uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en|Uso de Qi en registros flotantes para renombrado dinámico en Tomasulo]]
 
@@ -23,4 +23,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «registros» (este archivo
 
 ## Temas relacionados
 
-[[ac]] · [[tomasulo]] · [[pipeline]] · [[renombrado]] · [[mips]] · [[dependencias]] · [[constantes]] · [[qi]] · [[risc-v]] · [[estado inicial]] · [[arquitectura]] · [[ejemplo]]
+[[ac]] · [[tomasulo]] · [[pipeline]] · [[renombrado]] · [[banco-registros]] · [[mips]] · [[dependencias]] · [[constantes]] · [[qi]] · [[risc-v]] · [[estado inicial]] · [[arquitectura]]

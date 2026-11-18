@@ -16,3 +16,5 @@ En la taxonomía de Flynn, los multiprocesadores se clasifican como MIMD (Multip
 
 > Según la taxonomía de Flynn, los multiprocesadores son sistemas: a) SISD b) SIMD c) MISD d) MIMD
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
+
+Relacionado: [[taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones]] · [[en-la-taxonomia-de-flynn-los-multicomputadores-son-maquinas]] · [[taxonomia-de-flynn-sisd-misd-simd-mimd-y-criterio-de-clasifi]]

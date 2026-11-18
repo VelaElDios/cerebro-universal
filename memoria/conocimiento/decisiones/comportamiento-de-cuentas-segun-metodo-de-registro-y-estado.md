@@ -22,6 +22,6 @@ Tabla de decisiones implementada en el backend para resolver colisiones entre re
 > | Caso | Resultado | |---|---| | Registro con email y contraseña | Cuenta `pending` + correo con enlace (24 h). Hasta confirmar, el login devuelve `ACCOUNT_PENDING` | | Entrar con Google, email nuevo | Cuenta creada ya activa (`authProvider: google`) | | Entrar con Google, email de una cuenta local pendiente | La cuenta queda confirmada (Google ya verificó el correo) | | Entrar con Google, email de una cuenta eliminada | Rechazado | | Administrador inicial | Se crea activo desde `ADMIN_EMAIL` / `ADMIN_PASSWORD` |
 > — `repo:saas/docs/hito4-configuracion.md`
 
-Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y]] · [[flujo-de-registro-con-email-y-contrasena]] · [[maquina-de-estados-de-la-cuenta-de-usuario]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

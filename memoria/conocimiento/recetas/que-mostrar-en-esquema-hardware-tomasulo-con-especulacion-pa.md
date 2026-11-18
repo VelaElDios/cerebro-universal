@@ -46,4 +46,4 @@ Para la parte a) del examen, el esquema debe incluir y conectar:
 > Realiza un esquema con los componentes hardware del sistema mostrando su interconexión. Indica claramente la información almacenada en el ROB y las estaciones de reserva.
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf`
 
-Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]]
+Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[configuracion-tomasulo-con-especulacion-del-examen-ac-junio]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]]

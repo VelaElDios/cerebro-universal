@@ -17,4 +17,6 @@ Clave bibliográfica `bcrypt`. Paper original que presenta el esquema de hash bc
 > Provos, N. y Mazières, D. (1999). *A Future-Adaptable Password Scheme*. Proceedings of the FREENIX Track, 1999 USENIX Annual Technical Conference, Monterey (California), 6–11 de junio de 1999
 > — `../memoria-procesos/fuentes/bibliografia-extra.md`
 
+Relacionado: [[seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[referencia-rfc-6749-oauth-2-0-para-inicio-de-sesion-con-goog]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

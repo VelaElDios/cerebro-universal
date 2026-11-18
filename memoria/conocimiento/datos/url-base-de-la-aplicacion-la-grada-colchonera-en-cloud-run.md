@@ -17,6 +17,6 @@ La URL pública de producción es `https://la-grada-colchonera-1081564062572.eur
 > URL de la aplicación: `https://la-grada-colchonera-1081564062572.europe-southwest1.run.app`
 > — `repo:saas/docs/hito4-configuracion.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]] · [[url-publica-de-despliegue-continuo-google-cloud-run]] · [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

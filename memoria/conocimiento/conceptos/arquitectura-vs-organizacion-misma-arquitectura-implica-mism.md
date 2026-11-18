@@ -16,3 +16,5 @@ Dos computadores con la misma arquitectura (ISA) pero distinta organización (mi
 
 > En dos computadores con frecuencia 2.4GHz, igual arquitectura y distinta organización: a. El juego de instrucciones es el mismo
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
+
+Relacionado: [[distincion-entre-arquitectura-isa-y-organizacion-microarquit]] · [[diferencia-entre-arquitectura-y-organizacion-de-computadores]] · [[distincion-entre-arquitectura-organizacion-y-tecnologia-en-p]]

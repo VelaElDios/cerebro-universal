@@ -17,6 +17,6 @@ La plantilla LaTeX de la memoria (`memoria/main.tex`) ya tiene configurado `\gra
 > **Capturas.** `\graphicspath` de `memoria/main.tex` ya busca en `docs/capturas/app/`, `docs/capturas/hito4/` y `docs/capturas/produccion/`, así que basta con `\includegraphics{07-panel-admin}`. La lista completa, con lo que muestra cada una, está en la [sección 16](#16-índice-de-capturas).
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[agrupar-capturas-con-subfigure]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]]
+Relacionado: [[agrupar-capturas-con-subfigure]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

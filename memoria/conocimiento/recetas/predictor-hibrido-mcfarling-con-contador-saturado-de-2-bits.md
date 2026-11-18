@@ -21,3 +21,5 @@ Arquitectura híbrida de McFarling:
 
 > McFarling: emplea un contador saturado de 2 bits para seleccionar entre dos predictores
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
+
+Relacionado: [[tabla-de-actualizacion-de-contadores-de-2-bits-saturados-par]] · [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]] · [[selector-de-2-bits-para-predictor-hibrido-de-saltos]]

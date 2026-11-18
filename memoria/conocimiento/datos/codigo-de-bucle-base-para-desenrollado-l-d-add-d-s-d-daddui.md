@@ -29,4 +29,4 @@ Bucle original (5 instrucciones, itera hacia direcciones decrecientes):
 > Given the following code fragment, where R2 and R3 contain the initial and final memory addresses where the data are stored: Bucle: L.D F10, 0(R2) ADD.D F8, F10, F12 S.D F8, 0(R2) DADDUI R2, R2, -8 BNE R2, R3, Bucle
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
 
-Relacionado: [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[desenrollado-8-del-bucle-l-d-add-d-s-d-daddui-bne-para-sched]] · [[codigo-del-bucle-original-para-planificacion-examen-ac-2017]] · [[codigo-del-bucle-y-valores-iniciales-de-registros-para-vliw]]

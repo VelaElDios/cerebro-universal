@@ -17,4 +17,4 @@ El bucle tiene una recurrencia de distancia 3: A[i] depende de A[i-3]. Latencias
 > Desenrolla tantas veces como sea necesario, elimina dependencias y planifica para maximizar el ILP. Ignora el retardo del salto. Asume que las unidades funcionales están segmentadas.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[desenrollar-bucle-2x-y-planificar-para-latencias-fp-dadas-ej]]
+Relacionado: [[desenrollar-bucle-2x-y-planificar-para-latencias-fp-dadas-ej]] · [[desenrollar-bucle-minimo-para-planificar-sin-detenciones-eje]] · [[desenrollado-de-bucle-8-veces-para-superscalar-con-latencias]]

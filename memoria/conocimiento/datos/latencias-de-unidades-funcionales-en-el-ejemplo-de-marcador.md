@@ -25,4 +25,4 @@ Estas latencias son representativas de pipelines FP de los 90 (ej. MIPS R4000, A
 > ciclo 6 fmul.d f0, f2, f4 6 ciclo 9 fmul.d f0, f2, f4 6 9
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d]] · [[latencias-de-ejecucion-fp-en-el-ejemplo-del-marcador-ciclos]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo]]

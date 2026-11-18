@@ -17,4 +17,4 @@ Los saltos limitan el paralelismo a nivel de instrucción (ILP) porque definen l
 > Los saltos representan una fracción significativa de las instrucciones a ejecutar en un programa. Reducen el ILP  tamaño bloque básico. Pueden provocar detenciones en el cauce
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[estadisticas-de-frecuencia-y-tipos-de-saltos-en-programas-ti]] · [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]]
+Relacionado: [[estadisticas-de-frecuencia-y-tipos-de-saltos-en-programas-ti]] · [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]] · [[limitaciones-del-paralelismo-en-bloques-basicos-y-solucion-a]] · [[que-es-un-bloque-basico-basic-block-en-ilp]] · [[relacion-ilp-y-cpi-en-procesadores-segmentados]]

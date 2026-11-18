@@ -16,3 +16,5 @@ El **Marcador (Scoreboard)** (CDC 6600) permite **emisión en orden pero ejecuci
 
 > La técnica de Marcador se usa para… Evitar la detención de instrucciones que no dependen de una instrucción detenida
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf` (cita sin comprobar)
+
+Relacionado: [[orden-de-emision-issue-en-scoreboard-orden-de-programa]] · [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]] · [[planificacion-dinamica-de-instrucciones-con-marcador-scorebo]]

@@ -16,3 +16,5 @@ El tag tiene 4 bits (16 combinaciones). Se asignan: 5 códigos para las 5 estaci
 
 > Campo de etiqueta: cantidad de 4 bits que indica una de las 5 estaciones de reserva o uno de los 6 buffers de carga; indica la estación de reserva o buffer de carga cuya UF asociada producirá un resultado como un operando fuente; valores de etiqueta no usados indican que el operando ya está disponible
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[estaciones-de-reserva-almacenan-etiquetas-para-control-de-ri]] · [[estructura-del-procesador-tomasulo-cdb-estaciones-de-reserva]]

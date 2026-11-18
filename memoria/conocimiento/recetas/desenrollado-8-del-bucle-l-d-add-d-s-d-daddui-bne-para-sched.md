@@ -40,4 +40,4 @@ BNE    R2, R3, Bucle
 > unroll 8 times the code and schedule it as compact as possible... assuming that static scheduling is as aggressive as possible and as efficient and possible to optimize the resulting code. You can use register renaming and out-of-order scheduling.
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]] · [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]] · [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[codigo-de-bucle-base-para-desenrollado-l-d-add-d-s-d-daddui]] · [[desenrollado-de-bucle-8-veces-para-superscalar-con-latencias]] · [[como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i]]

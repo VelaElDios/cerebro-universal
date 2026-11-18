@@ -19,6 +19,6 @@ Dos operaciones protegen al último administrador activo:
 > U->>V: «Eliminar mi cuenta» V->>D: ¿Eliminar tu cuenta? U->>D: Sí, eliminar D->>A: DELETE (requireSelfOrRole('admin')) A->>S: deleteUser(actor, id) alt Es el último administrador S-->>A: 403 else S->>S: status deleted, deleted_at = ahora, suelta el mote (baja lógica) A->>A: juegoService.olvidarCuenta(id): sale del ranking A-->>V: 204 (log user.deleted) → aviso y vuelta al inicio Note over A: La sesión deja de valer en la siguiente petición (currentUser ya no la acepta)
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[maquina-de-estados-de-la-cuenta-de-usuario]]
+Relacionado: [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[control-de-acceso-basado-en-roles-y-propiedad-requireauth-re]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[correccion-de-unicidad-de-email-tras-baja-logica-indice-parc]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

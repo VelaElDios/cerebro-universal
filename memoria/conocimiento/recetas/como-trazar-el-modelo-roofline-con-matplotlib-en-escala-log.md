@@ -25,3 +25,5 @@ Pasos clave:
 
 > plt.loglog(x, y_roof, label=f"Techo DRAM ({BW_DRAM} GB/s)", color="blue", lw=3)
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py`
+
+Relacionado: [[como-generar-el-grafico-roofline-mononucleo-con-python]] · [[eleccion-de-eje-x-logaritmico-logspace-2-a-3-para-cubrir-4-o]] · [[como-graficar-latencia-vs-working-set-con-jerarquia-de-cache]]

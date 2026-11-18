@@ -17,4 +17,4 @@ Bucle con reducción: f2 = f2 + (f0 * f4) cada iteración. Dependencia en f2 (ac
 > Desenrolla el bucle el número mínimo de veces para poder planificarlo sin detenciones. Supón f2 inicialmente a cero, y ten en cuenta que el resultado obtenido con el nuevo código debe ser el mismo que con el original.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[desenrollar-bucle-2x-y-planificar-para-latencias-fp-dadas-ej]] · [[desenrollar-bucle-para-eliminar-dependencias-y-maximizar-ilp]]
+Relacionado: [[desenrollar-bucle-2x-y-planificar-para-latencias-fp-dadas-ej]] · [[desenrollar-bucle-para-eliminar-dependencias-y-maximizar-ilp]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]]

@@ -16,3 +16,5 @@ El ILP se limita por las dependencias verdaderas (RAW). Cuantas menos dependenci
 
 > Para lograr un alto grado de paralelismo a nivel de instrucción (ILP): a) Es necesario que haya un bajo grado de dependencia entre las instrucciones
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
+
+Relacionado: [[relacion-ilp-y-cpi-en-procesadores-segmentados]] · [[limitaciones-del-paralelismo-en-bloques-basicos-y-solucion-a]] · [[tecnicas-estaticas-de-ilp-soportadas-principalmente-por-el-c]]

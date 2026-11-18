@@ -17,4 +17,4 @@ Pipeline MIPS: destino salto calculado en ID, sentido resuelto en EX. Predicció
 > la estrategia de predicción fija 'siempre no tomado': c) No tiene penalización en caso de acierto y 2 ciclos en caso de fallo
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf` (cita sin comprobar)
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[ejecucion-multicamino-multi-path-execution-como-alternativa]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[ejecucion-multicamino-multi-path-execution-como-alternativa]] · [[penalizacion-de-prediccion-estatica-siempre-no-tomado-con-di]] · [[penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion]] · [[penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r]]

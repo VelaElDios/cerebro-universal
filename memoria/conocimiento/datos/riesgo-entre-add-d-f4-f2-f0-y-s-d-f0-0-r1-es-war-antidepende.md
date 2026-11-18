@@ -17,4 +17,4 @@ La primera instrucción escribe en F0 (ADD.D F4, F2, F0 → F0 = F2+F0). La segu
 > Indica el tipo de riesgo que existe entre estas instrucciones: ADD.D F4, F2, F0 / S.D F0, 0(R1) a) Riesgo RAW b) Riesgo WAR c) Riesgo WAW d) Ninguno de los anteriores
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[riesgo-war-antidependencia-entre-sub-d-f10-f8-f6-y-l-d-f6-0]] · [[antidependencia-war-entre-s-d-y-daddui-por-r1-en-misma-itera]]

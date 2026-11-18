@@ -17,4 +17,4 @@ Los tres saltos condicionales del bucle se etiquetan en el enunciado como B1, B2
 > BNEZ   R3, nozero             ; (B1) ... BNEZ   R3, odd                ; (B2) ... BNEZ   R1, loop               ; (B3)
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf` (cita sin comprobar)
 
-Relacionado: [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]] · [[secuencia-de-datos-y-codigo-mips64-para-ejercicio-2-de-predi]]
+Relacionado: [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]] · [[secuencia-de-datos-y-codigo-mips64-para-ejercicio-2-de-predi]] · [[patron-de-saltos-en-bucle-mips64-secuencia-0-1-0-2-examen-en]]

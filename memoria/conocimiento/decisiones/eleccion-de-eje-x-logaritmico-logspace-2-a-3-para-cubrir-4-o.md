@@ -19,3 +19,5 @@ La escala log-log (`plt.loglog`) muestra la rampa como línea recta de pendiente
 
 > x = np.logspace(-2, 3, 1000) # Rango del eje X
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_3_pintarRoofLin.py`
+
+Relacionado: [[como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log]] · [[como-generar-el-grafico-roofline-mononucleo-con-python]] · [[configuracion-de-ejes-log-lineal-y-etiquetas-de-potencias-de]]

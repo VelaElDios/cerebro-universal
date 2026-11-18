@@ -31,3 +31,5 @@ Para cadena "exam18" (7 bytes: e,x,a,m,1,8,\0):
 
 > El siguiente código del MIPS64 cuenta el número de letras "a" que hay en una cadena de caracteres ASCIIZ almacenados en memoria.
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
+
+Relacionado: [[codigo-mips64-de-conteo-elementos-no-nulos-en-vector-dispers]] · [[codigo-mips64-y-secuencia-de-entrada-para-problema-2-conteo]] · [[codigo-risc-v-ejercicio-10-bucle-conteo-a-en-exam18-con-salt]]

@@ -16,3 +16,5 @@ La segmentación software (software pipelining) reordena instrucciones del bucle
 
 > La segmentación software persigue... Reducir detenciones debidas a riesgos de control
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
+
+Relacionado: [[que-hace-la-tecnica-de-segmentacion-software-software-pipeli]] · [[proposito-de-la-planificacion-por-software-software-pipelini]] · [[que-busca-conseguir-la-segmentacion-software-software-pipeli]]

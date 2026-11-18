@@ -17,4 +17,4 @@ Pasos: 1) Calcular ciclos/iteración escalar: simular pipeline 1-issue con laten
 > b) Análisis de Rendimiento (0,75 Puntos): Calcula el Speedup del VLIW respecto a la versión original escalar sin desenrollar. Para la versión escalar, asume un procesador de 1 instrucción por ciclo que tiene las mismas latencias de detención que el VLIW.
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf`
 
-Relacionado: [[bucle-escalar-original-para-optimizacion-vliw-enero-2026-pro]] · [[especificacion-vliw-1-0-para-examen-enero-2026-problema-3]]
+Relacionado: [[bucle-escalar-original-para-optimizacion-vliw-enero-2026-pro]] · [[especificacion-vliw-1-0-para-examen-enero-2026-problema-3]] · [[calculo-de-speedup-vliw-vs-mips64-segmentado-considerando-me]] · [[mejora-de-rendimiento-vliw-desenrollado-3x-vs-original-exame]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]]

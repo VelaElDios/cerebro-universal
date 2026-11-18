@@ -17,4 +17,4 @@ El renombrado de registros (register renaming) elimina las dependencias de nombr
 > Renaming floating point records allows to avoid. Name dependencies.
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[dependencias-de-nombre-se-eliminan-mediante-renombramiento-d]] · [[dependencias-de-nombre-war-waw-se-eliminan-con-renombramient]] · [[eliminacion-de-dependencias-de-nombre-mediante-renombramient]]

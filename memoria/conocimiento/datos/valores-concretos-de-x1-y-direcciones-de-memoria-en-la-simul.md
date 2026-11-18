@@ -20,4 +20,4 @@ El patrón sugiere recorrido inverso de array: dirección = x1 + 0, con x1 decre
 > x1 = 72 ... x1 = 64
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[evolucion-de-la-direccion-base-x1-en-las-dos-iteraciones-del]] · [[gestion-de-buffers-de-carga-almacenamiento-con-direcciones-d]] · [[evolucion-del-registro-base-x1-y-qi-de-registros-fp-en-el-ej]]

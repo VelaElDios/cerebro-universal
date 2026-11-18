@@ -17,4 +17,4 @@ En el fragmento de código del ejercicio, las instrucciones L.D F2, 0(R2) y ADD.
 > Las instrucciones marcadas con * son especulativas.
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[planificacion-estatica-con-poison-bits-en-mips64-reglas-de-e]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]]
+Relacionado: [[planificacion-estatica-con-poison-bits-en-mips64-reglas-de-e]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[instrucciones-especulativas-marcadas-con-en-codigo-mips64-ex]] · [[especulacion-estatica-con-poison-bits-en-mips64-lw]]

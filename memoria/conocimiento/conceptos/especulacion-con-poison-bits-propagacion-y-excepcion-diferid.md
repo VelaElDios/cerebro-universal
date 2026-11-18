@@ -17,4 +17,4 @@ Con poison bits: (1) Las instrucciones especulativas (LW*) que fallan no lanzan 
 > c) Especulación con poison bits.
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf`
 
-Relacionado: [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]] · [[convencion-etiquetas-indefinido-y-sucio-para-poison-bits-en]]
+Relacionado: [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]] · [[convencion-etiquetas-indefinido-y-sucio-para-poison-bits-en]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[especulacion-con-bits-venenosos-programa-continua-y-finaliza]]

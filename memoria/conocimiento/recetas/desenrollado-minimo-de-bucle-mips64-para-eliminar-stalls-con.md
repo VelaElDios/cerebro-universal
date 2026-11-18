@@ -17,4 +17,4 @@ Latencias: MUL.D=3, DIV.D=4. Dependencias: I3 (MUL) → I4 (DIV) → I5 (S.D). C
 > The FP multiplier requires 3 cycles, and the FP divisor requires 4 cycles. ... b) Unroll the loop the minimum number of times to schedule it without stalls. Assume delayed branch.
 > — `repo:datos/temarios/AC/examenes/June2018.pdf` (cita sin comprobar)
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]] · [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]]

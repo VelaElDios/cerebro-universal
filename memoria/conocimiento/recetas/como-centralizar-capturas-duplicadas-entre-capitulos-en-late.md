@@ -23,4 +23,6 @@ Para evitar imágenes repetidas en una memoria LaTeX multi-capítulo:
 > Cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone \ref a la figura que ya existe." (regla 10 de memoria/reglas-tfg.md)
 > — `memoria-procesos` (cita sin comprobar)
 
+Relacionado: [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

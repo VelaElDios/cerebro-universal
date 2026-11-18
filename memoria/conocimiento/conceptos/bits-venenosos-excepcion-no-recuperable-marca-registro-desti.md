@@ -17,4 +17,4 @@ En especulación con bits venenosos (poison bits), cuando una instrucción (espe
 > Ante una excepción no recuperable causada por una instrucción no especulativa, en la especulación con 'bits venenosos' se cumple que: a) Se obtiene un valor indefinido y el programa continua b) Se activa el bit venenoso del registro destino de la instrucción y el programa continua c) La excepción se atiende y el programa finaliza d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]]
+Relacionado: [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bit-de-veneno-poison-bit-ante-excepcion-en]] · [[especulacion-con-bits-venenosos-programa-continua-y-finaliza]]

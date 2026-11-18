@@ -17,4 +17,4 @@ El CDB es un bus de broadcast: cuando una unidad funcional termina o una carga a
 > El bus común de datos (CDB) usado en la técnica de Tomasulo... Es el bus donde se depositan los resultados de las unidades funcionales y de los accesos a memoria
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-carga-en-tomasulo-especulativo]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[tomasulo-resultados-via-common-data-bus-cdb]]

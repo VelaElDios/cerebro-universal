@@ -17,4 +17,4 @@ Modelo BTB del enunciado: miss rate 10% (acierto 90%). Solo entradas para saltos
 > Si una dirección no se encuentra en el BTB pero el salto finalmente es tomado (incluye los saltos incondicionales), el BTB es actualizado con un ciclo de penalización.
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf`
 
-Relacionado: [[problema-examen-ac-cpi-pipeline-con-btb-que-solo-almacena-sa]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]]
+Relacionado: [[problema-examen-ac-cpi-pipeline-con-btb-que-solo-almacena-sa]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]] · [[calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s]] · [[evaluacion-de-rendimiento-de-btb-con-politica-de-solo-saltos]]

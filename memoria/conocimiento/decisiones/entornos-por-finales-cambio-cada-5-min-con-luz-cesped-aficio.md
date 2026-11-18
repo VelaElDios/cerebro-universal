@@ -27,4 +27,6 @@ Temas: [[ambientes]] · [[diseno-niveles]] · [[donetonic]] · [[grada-colchoner
 > - Pretemporada → Copa del Rey → Liga → Champions → Mundial. - Cambian la luz, el césped, la afición y los carteles; los rivales salen más fuertes. - En el Mundial todos llevan la camiseta de su selección.
 > — `repo:saas/docs/gestion/README.md`
 
+Relacionado: [[cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza]] · [[manual-de-usuario-entrada-menus-controles-oleadas-ambientes]] · [[combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

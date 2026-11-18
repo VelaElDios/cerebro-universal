@@ -17,4 +17,4 @@ Pasos para resolver el ejercicio 3b: 1) Identificar las latencias de cada unidad
 > Unroll the program loop 4 times and then schedule it for the VLIW processor. Assume that the processor imposes no restrictions on the type of operations that can be issued, and the static scheduling is as aggressive and efficient as possible to optimize the resulting code as much as possible.
 > — `repo:datos/temarios/AC/examenes/January2023.pdf`
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]] · [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]]

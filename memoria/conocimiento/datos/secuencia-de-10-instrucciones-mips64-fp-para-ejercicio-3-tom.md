@@ -16,3 +16,5 @@ Código exacto del ejercicio 3 (10 instrucciones): 1) L.S F1,0(R2) 2) MUL.S F1,F
 
 > L.S      F1, 0(R2) MUL.S    F1, F1, F0 L.S      F2, 4(R2) ADD.S    F2, F1, F2 S.S      F2, 8(R2) L.S      F1, 4(R2) MUL.S    F1, F1, F0 L.S      F2, 8(R2) ADD.S    F2, F1, F2 S.S      F2, 12(R2)
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
+
+Relacionado: [[secuencia-de-10-instrucciones-para-simulacion-tomasulo-probl]] · [[codigo-de-instrucciones-para-ejercicio-2-tomasulo-especulati]] · [[secuencia-de-instrucciones-fp-del-examen-para-tomasulo-10-in]]

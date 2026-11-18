@@ -26,4 +26,4 @@ El ejemplo muestra ciclos 14, 15, 16, 55, 56, 57 de una secuencia con fld, fmul.
 > Estado de las instrucciones ciclo 14 Instrucción Emisión Ejecución Escritura resultado fld f6, 34(x2) 1 2-3 4
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-simulacion]] · [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul]]

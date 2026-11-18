@@ -21,4 +21,4 @@ En Tomasulo con especulación (ROB), las 4 etapas de la tabla son distintas:
 > Rellena la tabla indicando los ciclos en los que se completa cada etapa.                        Instrucción    Emisión   Ejecución    Escritura resultado   Terminación
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf` (cita sin comprobar)
 
-Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]]
+Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[estructura-del-reorder-buffer-rob-en-tomasulo-con-especulaci]] · [[tabla-de-estado-en-tomasulo-especulativo-con-rob-issue-execu]] · [[como-rellenar-la-tabla-de-estado-en-tomasulo-con-especulacio]]

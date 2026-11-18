@@ -17,4 +17,4 @@ Analizando el fragmento: I1 escribe F1; I2 lee F1 (RAW I1→I2) y escribe F1 (WA
 > En este código, a través de F1 existen: ADD.D F1, F3, F2 ; I1 DIV.D F1, F1, F2 ; I2 S.D F1, 0(R1) ; I3 a) Dos dependencias de salida b) Dos dependencias de datos c) Dos dependencias de datos y una de salida d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[analisis-de-dependencias-entre-instrucciones-de-punto-flotan]] · [[tipos-de-dependencias-en-codigo-fp-mips64-para-tomasulo-raw]] · [[dependencias-en-fragmento-de-codigo-fp-mips-l-d-add-s-add-s]]

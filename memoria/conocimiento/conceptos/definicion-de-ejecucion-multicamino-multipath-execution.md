@@ -17,4 +17,4 @@ La ejecución multicamino ejecuta simultáneamente ambos caminos de un salto con
 > Both paths of a conditional branch are executed, without using prediction
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[ejecucion-multicamino-multi-path-execution-como-alternativa]]
+Relacionado: [[ejecucion-multicamino-multi-path-execution-como-alternativa]] · [[ejecucion-multicamino-multi-path-execution-frente-a-predicci]] · [[multiples-caminos-como-tecnica-de-prediccion-de-saltos]]

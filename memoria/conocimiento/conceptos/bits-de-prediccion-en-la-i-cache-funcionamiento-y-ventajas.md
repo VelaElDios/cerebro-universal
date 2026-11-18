@@ -17,4 +17,4 @@ Los bits de predicción se almacenan directamente en cada línea de la I-caché 
 > Añade los bits de predicción a cada línea de la cache de instrucciones. Alpha 21064 (1992) 2K x 1 bit Alpha 21064A (96) 4K x 2 bits UltraSparc (1992) 2K x 1 bit. Ventajas: Puede predecir instrucciones que no están en la BTB. No añade una cantidad extra excesiva de hardware
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[indice-sucesor-en-la-i-cache-para-prediccion-de-saltos-alter]]
+Relacionado: [[indice-sucesor-en-la-i-cache-para-prediccion-de-saltos-alter]] · [[estructuras-hardware-para-prediccion-de-saltos-btac-bht-btb]] · [[ejemplos-reales-de-predictores-de-salto-en-procesadores-come]]

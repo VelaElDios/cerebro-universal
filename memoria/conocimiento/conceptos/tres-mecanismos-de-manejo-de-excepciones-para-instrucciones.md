@@ -17,4 +17,4 @@ El documento describe tres mecanismos para manejar excepciones en instrucciones 
 > Considering that there is a high probability that the branch condition will not be met, the compiler has generated the next version of the same code, with one speculative instruction (highlighted): DDIV* R5, R1, R5 ; speculative division
 > — `repo:datos/temarios/AC/examenes/January2024.pdf` (cita sin comprobar)
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]] · [[funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es]] · [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]] · [[mecanismo-de-cooperacion-hardware-software-para-excepciones]]

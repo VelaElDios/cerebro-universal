@@ -17,4 +17,4 @@ Tiempos de pipeline para la planificación VLIW: etapa MEM (acceso a memoria) de
 > Considera los siguientes parámetros temporales: 2 ciclos para la etapa MEM en las cargas y almacenamientos, 2 ciclos para completar la etapa EX de las operaciones aritméticas FP y 1 ciclo para el resto de las etapas.
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf`
 
-Relacionado: [[caracteristicas-del-procesador-vliw-del-examen-enero-2016-pr]] · [[codigo-del-bucle-y-valores-iniciales-de-registros-para-vliw]]
+Relacionado: [[caracteristicas-del-procesador-vliw-del-examen-enero-2016-pr]] · [[codigo-del-bucle-y-valores-iniciales-de-registros-para-vliw]] · [[parametros-de-temporizacion-vliw-examen-enero-2016]] · [[parametros-de-temporizacion-del-ejercicio-vliw-examen-enero]] · [[parametros-de-temporizacion-del-examen-ac-june-2022-exercise]]

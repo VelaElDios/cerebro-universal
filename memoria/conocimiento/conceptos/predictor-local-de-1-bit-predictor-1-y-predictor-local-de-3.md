@@ -17,4 +17,4 @@ Predictor 1: un bit por salto (0=Not Taken, 1=Taken). Se actualiza con el result
 > Predictor 1 associates a 1-bit predictor to each branch instruction (B1 and B2) and Predictor 2 associates a 3-bit predictor to each branch.
 > — `repo:datos/temarios/AC/examenes/June2017.pdf`
 
-Relacionado: [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p]] · [[predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y]]

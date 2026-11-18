@@ -17,4 +17,4 @@ Un predictor de 3 bits es un contador saturante (000=fuertemente NT ... 111=fuer
 > A 3-bit predictor initialized with 100 becomes 001 after three executions of the branch instruction to which it is associated. We can state that:
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
 
-Relacionado: [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]]
+Relacionado: [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[contador-saturante-de-3-bits-en-estado-111-indica-tres-tomas]] · [[secuencia-de-aciertos-fallos-en-predictor-de-2-bits-iniciali]] · [[patron-de-prediccion-de-predictor-de-3-bits-ante-alternancia]]

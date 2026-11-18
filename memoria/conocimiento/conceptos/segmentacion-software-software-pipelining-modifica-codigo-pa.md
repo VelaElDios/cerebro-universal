@@ -16,3 +16,5 @@ El software pipelining reorganiza las instrucciones de un bucle para solapar ite
 
 > La técnica de segmentación software modifica el código original para obtener bucles con: a) Paralelismo de datos b) Instrucciones dependientes c) Menor sobrecarga d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
+
+Relacionado: [[que-hace-la-tecnica-de-segmentacion-software-software-pipeli]] · [[tecnica-de-segmentacion-software-software-pipelining]] · [[segmentacion-software-software-pipelining-transforma-bucles]]

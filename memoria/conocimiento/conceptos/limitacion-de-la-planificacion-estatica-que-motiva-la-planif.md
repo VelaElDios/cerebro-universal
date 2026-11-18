@@ -16,3 +16,5 @@ La planificación estática (compilador) emite instrucciones en orden programa. 
 
 > Principal limitación de las técnicas de planificación estática: Emisión en orden de las instrucciones. Si una instrucción i queda parada, ninguna instrucción j posterior puede continuar, aun cuando j sea independiente de las que están en ejecución, y la unidad funcional que j necesita esté libre
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[planificacion-dinamica-tomasulo-orden-de-ejecucion-por-dispo]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]] · [[planificacion-dinamica-sin-especulacion-emision-en-orden-eje]]

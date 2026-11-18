@@ -17,4 +17,4 @@ Frente a una dependencia de datos real (RAW), la primera vía conserva la depend
 > Hay dos formas de tratarlas: Mantener la dependencia pero evitar el riesgo; Eliminar la dependencia transformando el código
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
 
-Relacionado: [[renombrado-de-registros-para-eliminar-dependencias-de-nombre]] · [[eliminacion-de-dependencias-de-control-mediante-desenrollado]]
+Relacionado: [[renombrado-de-registros-para-eliminar-dependencias-de-nombre]] · [[eliminacion-de-dependencias-de-control-mediante-desenrollado]] · [[las-dependencias-de-datos-no-siempre-generan-riesgos-y-se-el]] · [[tipos-de-dependencia-y-riesgos-asociados-en-segmentacion]] · [[dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione]]

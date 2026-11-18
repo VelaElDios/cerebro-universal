@@ -16,3 +16,5 @@ El desenrollamiento debe replicarse mientras siga reduciendo el número de deten
 
 > En la técnica de desenrollamiento de bucles, ¿cuántas veces debe replicarse el cuerpo del bucle? Mientras se siga reduciendo el número de detenciones
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
+
+Relacionado: [[desenrollado-de-bucles-replicar-mientras-se-reduzcan-detenci]] · [[desenrollamiento-de-bucles-reduce-dependencias-de-control-me]] · [[objetivo-del-desenrollamiento-de-bucles-loop-unrolling]]

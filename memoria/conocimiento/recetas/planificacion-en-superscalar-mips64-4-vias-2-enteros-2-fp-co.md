@@ -17,4 +17,4 @@ Restricciones de emisión: máx 2 instrucciones enteras + 2 FP por ciclo. Orden 
 > Processor A. 5-stage superscalar MIPS64, which can issue 4 instructions per cycle: two integer and two floating-point.
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
-Relacionado: [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]]
+Relacionado: [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]] · [[procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp]] · [[configuracion-de-pipeline-mips64-para-problema-de-examen-lat]] · [[planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip]]

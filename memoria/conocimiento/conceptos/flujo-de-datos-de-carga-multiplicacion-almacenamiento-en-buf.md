@@ -23,4 +23,4 @@ El flujo de cada iteración:
 > Almac 1      SI       80        Mult 1
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[asignacion-de-estaciones-de-reserva-mult-1-y-mult-2-en-el-ej]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[asignacion-de-estaciones-de-reserva-mult-1-y-mult-2-en-el-ej]] · [[estado-de-buffers-de-carga-almacenamiento-y-estaciones-de-re]] · [[uso-de-buffers-de-carga-en-tomasulo-load-buffers]] · [[como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de]]

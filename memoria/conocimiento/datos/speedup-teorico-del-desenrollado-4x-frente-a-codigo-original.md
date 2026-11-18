@@ -17,4 +17,4 @@ Speedup = (Ciclos_totales_original_4_iteraciones) / (Ciclos_totales_desenrollado
 > Compute the speedup for the unrolled and scheduled version with respect the original code.
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
 
-Relacionado: [[como-calcular-ciclos-por-iteracion-del-codigo-original-con-l]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]]
+Relacionado: [[como-calcular-ciclos-por-iteracion-del-codigo-original-con-l]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]] · [[metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi]] · [[calculo-de-speedup-para-bucle-desenrollado-en-pipeline-con-h]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]]

@@ -16,3 +16,5 @@ I3: ADD.S F5, F4, F3 (escribe F5). I4: S.D F5, 0(R1) (lee F5). Hay dependencia d
 
 > In the next code fragment, between I3 and I4 (in the same iteration) there is: L.D F3, 0(R1) ; I1 ADD.S F4, F3, F3 ; I2 ADD.S F5, F4, F3 ; I3 S.D F5, 0(R1) ; I4
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
+
+Relacionado: [[dependencias-en-fragmento-de-codigo-fp-mips-l-d-add-s-add-s]] · [[tipos-de-dependencias-en-codigo-fp-mips64-para-tomasulo-raw]] · [[analisis-de-dependencias-entre-instrucciones-de-punto-flotan]]

@@ -17,4 +17,4 @@ El documento muestra 7 ciclos consecutivos (9-15) de la ejecución de un bucle c
 > Estado de las instrucciones ciclo 9 Instrucción Emisión Ejecución Escritura resultado fld f0, 0(x1) 1 9 fmul.d f4, f0, f2 2 fsd f4, 0(x1) 3
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[ejecucion-paso-a-paso-de-instrucciones-fp-en-tomasulo-ciclos]] · [[secuencia-de-instrucciones-y-dependencias-en-el-ejemplo-toma]] · [[ejecucion-ciclo-a-ciclo-del-ejemplo-tomasulo-fld-fmul-d-fsub]]

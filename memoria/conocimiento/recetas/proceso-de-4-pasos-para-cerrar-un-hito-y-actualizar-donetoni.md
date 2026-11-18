@@ -22,6 +22,6 @@ Esto alinea el estado del repositorio (git tags, main) con la herramienta de ges
 > 1. Todas las tareas del hito están integradas en `hito-N/integracion` y el CI está en verde. 2. PR de `hito-N/integracion` a `main`. 3. Tras el merge, se etiqueta el commit de `main` como `hito-N` y se comprueba que el despliegue funciona. 4. En DoneTonic, las tareas y PBIs del hito pasan a *Hecho*.
 > — `repo:saas/CONTRIBUTING.md`
 
-Relacionado: [[fases-del-sprint-2-y-prs-asociados]]
+Relacionado: [[fases-del-sprint-2-y-prs-asociados]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]] · [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

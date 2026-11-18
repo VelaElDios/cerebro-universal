@@ -17,4 +17,4 @@ Cada estación de reserva tiene: Nombre (identificador), Ocupada (bit busy), Op 
 > Nombre Ocupada Op Vj Vk Qj Qk Indica si la estación de reserva y su unidad asociada está o no ocupada Operación a realizar sobre los operandos fuente Valor de los operandos fuente Estaciones de reserva que producirán el correspondiente operando fuente
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo-test-ac-q11]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]]

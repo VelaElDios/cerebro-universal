@@ -22,4 +22,4 @@ Evolución clave ciclos 7→13:
 > Estaciones de reserva        Nombre          Ocupada         Op                 Vj       Vk         Qj      Qk Suma 1              SI            Sub          M(34+x2) M(45+x3) Suma 2              SI            Sum                   M(45+x3) Suma 1 Mult 1              SI            Mult         M(45+x3)     R(f4) Mult 2              SI            DIv                     M(34+x2)      Mult 1
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de]] · [[estado-de-buffers-de-carga-almacenamiento-y-estaciones-de-re]] · [[tabla-de-estado-de-estacion-de-reserva-en-tomasulo-campos-y]]

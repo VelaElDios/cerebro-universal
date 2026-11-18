@@ -17,4 +17,4 @@ Parámetros para la parte 3 (Tomasulo especulativo): ROB de 5 entradas (limita i
 > There is a 5-entry ROB (initially empty). / There are 2 reservation stations per functional unit and a load buffer with 2 entries. All of them are initially empty.
 > — `repo:datos/temarios/AC/examenes/June2021.pdf` (cita sin comprobar)
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]] · [[configuracion-de-recursos-para-tomasulo-basico-en-examen-jun]] · [[parametros-de-simulacion-tomasulo-con-especulacion-rob-estac]] · [[configuracion-tomasulo-con-rob-para-simulacion-de-examen-ene]]

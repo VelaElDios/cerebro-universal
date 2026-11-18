@@ -17,4 +17,4 @@ Configuración completa del procesador para el ejercicio: MIPS64 con Tomasulo es
 > Tenemos un procesador MIPS64 con especulación hardware según el método de Tomasulo con especulación. Se dispone de un Bus de Datos Común y se supone que en el mismo ciclo de reloj no se puede escribir un dato en este bus e iniciar la ejecución de una operación que estuviera esperando ese dato.
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[configuracion-tomasulo-con-especulacion-del-examen-ac-junio]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]]

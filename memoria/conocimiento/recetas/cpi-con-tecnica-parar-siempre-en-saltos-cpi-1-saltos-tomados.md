@@ -17,4 +17,4 @@ Técnica "parar siempre" = asumir no tomado y detener el pipeline hasta resolver
 > Se usa la técnica de parar siempre y se asume un CPI de 1 para todas las instrucciones a excepción de los saltos condicionales. a) El CPI es 1,4 b) El CPI es 1,2 c) El CPI es 1 d) Ninguna de las anteriores
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf`
 
-Relacionado: [[penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re]] · [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]]
+Relacionado: [[penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re]] · [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[calculo-de-cpi-con-predictor-de-salto-tomado-y-penalizacion]] · [[cpi-con-prediccion-de-saltos-en-pipeline-de-5-etapas-direcci]] · [[cpi-en-pipeline-con-penalizacion-por-saltos-tomados-y-delay]]

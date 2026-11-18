@@ -24,3 +24,5 @@ Deducido de la columna "Ocupada" (contador descendente) en ciclos 7-13:
 - Multiplicación (fmul.d): Mult1 Ocupada=8 en c7 → 2 en c13 = 7 ciclos mostrados; emisión c3, ejecución comienza c6 → latencia ~10 ciclos totales.
 - División (fdiv.d): Mult2 Ocupada=8 en c7 → 2 en c13 = 7 ciclos mostrados; emisión c5, sin inicio ejecución visible en c13 → latencia >10 ciclos (espera operandos f0 y f6).
 - Buffers de carga: 3 buffers, todos libres (NO) desde c7; direcciones M(34+x2) y M(45+x3) resueltas en emisión.
+
+Relacionado: [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo-cic]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]] · [[latencias-asumidas-para-carga-2-ciclos-y-multiplicacion-fp-3]]

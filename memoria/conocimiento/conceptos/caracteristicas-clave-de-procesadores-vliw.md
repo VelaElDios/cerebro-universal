@@ -16,3 +16,5 @@ VLIW (Very Long Instruction Word): el compilador empaqueta múltiples operacione
 
 > Regarding to VLIW processors… a) They do not require to replicate components to execute multiple instructions in each stage b) The compiler packs multiple operations in a single instruction c) They use mainly dynamic code scheduling d) All the options are true
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
+
+Relacionado: [[definicion-de-procesador-vliw]] · [[vliw-el-compilador-empaqueta-varias-operaciones-en-una-instr]] · [[procesador-b-vliw-4-operaciones-ciclo-sin-restricciones-de-t]]

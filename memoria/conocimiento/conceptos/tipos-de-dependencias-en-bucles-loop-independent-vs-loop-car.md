@@ -22,4 +22,4 @@ La dirección (`<`, `>`, `=`) y distancia determinan si se puede vectorizar, des
 > Indica para cada una de ellas si se trata de una dependencia entre diferentes iteraciones del bucle.
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2_Prob_RISCV_rev.pdf`
 
-Relacionado: [[identificacion-de-dependencias-loop-carried-en-bucles-c-styl]]
+Relacionado: [[identificacion-de-dependencias-loop-carried-en-bucles-c-styl]] · [[dependencias-en-bucles-risc-v-clasificacion-intra-iteracion]] · [[analisis-de-dependencias-en-codigo-risc-v-raw-war-waw]]

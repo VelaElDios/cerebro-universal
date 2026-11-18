@@ -17,4 +17,4 @@ Parámetros fijos del problema: Superescalar grado 2 (emisión dual). Latencia M
 > El procesador invierte 2 ciclos para la etapa MEM en las cargas y 2 ciclos para completar la etapa EX de las operaciones aritméticas. Además, implementa adelantamiento.
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
 
-Relacionado: [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[latencias-de-etapas-memoria-y-ejecucion-en-superescalar-exam]] · [[planificacion-en-superescalar-grado-2-con-latencias-mem-2-y]] · [[parametros-de-pipeline-superescalar-mem-2-ciclos-ex-3-ciclos]]

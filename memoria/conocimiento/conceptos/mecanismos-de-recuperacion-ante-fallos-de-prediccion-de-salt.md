@@ -17,4 +17,4 @@ Tres mecanismos clave para recuperarse de un fallo de predicción (misprediction
 > Mecanismos de recuperación ante fallos: Keep result computation separate from commit. Kill instructions following branch in pipeline. Restore state to that following branch
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[recuperacion-ante-fallo-de-prediccion-de-salto-misprediction]] · [[recuperacion-ante-fallo-de-prediccion-descartar-resultados-e]] · [[recuperacion-de-fallos-de-prediccion-con-registros-temporale]]

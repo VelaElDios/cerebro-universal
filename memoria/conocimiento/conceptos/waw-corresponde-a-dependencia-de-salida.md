@@ -17,7 +17,7 @@ WAW (Write After Write) es una dependencia de salida: dos instrucciones escriben
 > Un riesgo de tipo WAW… a) Se corresponde con una dependencia de salida b) Se corresponde con una dependencia de datos c) Se corresponde con una antidependencia d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[waw-hazard-corresponde-a-dependencia-de-salida]] · [[definicion-de-dependencia-de-salida-waw]] · [[dependencia-de-salida-waw-dos-instrucciones-escriben-mismo-r]]
 
 ## Ampliación (2026-11-18, )
 WAW (Write After Write): dos instrucciones escriben el mismo registro/memoria; la segunda debe escribir después de la primera para mantener el valor final correcto. Es dependencia de nombre, no de datos real.

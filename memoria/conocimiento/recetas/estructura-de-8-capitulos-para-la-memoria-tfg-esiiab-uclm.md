@@ -17,6 +17,6 @@ La memoria TFG debe tener exactamente 8 capítulos en este orden: 1) Introducci�
 > 1. **Introducción, motivación y objetivos.** Motivación: explicar el porqué del trabajo. Objetivos: objetivo principal y objetivos secundarios (específicos). Estructura: mostrar la estructura de la memoria.
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]] · [[fuente-reglas-tfg]]
+Relacionado: [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]] · [[fuente-reglas-tfg]] · [[capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf]] · [[capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

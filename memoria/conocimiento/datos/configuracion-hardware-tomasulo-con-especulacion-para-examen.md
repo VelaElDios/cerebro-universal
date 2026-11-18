@@ -17,4 +17,4 @@ El procesador MIPS64 del examen tiene: ROB (Reorder Buffer) de 6 entradas; 1 Loa
 > El sistema cuenta con un ROB de 6 entradas, 1 buffer de carga, 1 estación de reserva para la suma FP, otra para la multiplicación FP y 2 para la división FP.
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf`
 
-Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[configuracion-tomasulo-con-especulacion-del-examen-ac-junio]] · [[configuracion-de-tomasulo-con-especulacion-para-examen-ac-ju]]

@@ -17,4 +17,4 @@ En la versión especulativa de Tomasulo, el **load buffer** (y el store buffer) 
 > In the speculative version of Tomasulo, the load buffer… c) Is used by the instructions to obtain their operands.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf` (cita sin comprobar)
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]] · [[configuracion-y-parametros-para-simular-tomasulo-en-problema]]

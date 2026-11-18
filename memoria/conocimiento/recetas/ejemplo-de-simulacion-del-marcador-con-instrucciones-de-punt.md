@@ -17,4 +17,4 @@ Ejemplo con instrucciones: fld f6,34(x2); fld f2,45(x3); fmul.d f0,f2,f4; fsub.d
 > fadd.d y fsub.d 2 ciclos, fmul.d 10 ciclos, fdiv.d 40 ciclos
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard]] · [[estructuras-de-datos-del-marcador-scoreboard]]
+Relacionado: [[pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard]] · [[estructuras-de-datos-del-marcador-scoreboard]] · [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]] · [[representacion-del-estado-del-marcador-scoreboard-para-instr]] · [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]]

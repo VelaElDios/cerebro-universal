@@ -23,4 +23,4 @@ Decisión de diseño / restricción de temporización explícita en el enunciado
 > Considera que en el mismo ciclo de reloj no se puede escribir un dato en el Bus de Datos Común (BDC) e iniciar la ejecución de una operación que estuviera esperando ese dato.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[restriccion-de-forwarding-por-cdb-en-tomasulo-no-escritura-e]] · [[restriccion-de-cdb-en-tomasulo-no-escritura-e-inicio-simulta]] · [[restriccion-de-conflicto-en-bus-comun-de-datos-bdc-cdb-no-es]]

@@ -25,4 +25,4 @@ Nota: "Completamente segmentada" = puede iniciar nueva operación cada ciclo (th
 > La unidad funcional PF de multiplicación requiere 3 ciclos y la división requiere 4 ciclos." / "Suma FP 2 / Multiplicación FP 4 / División FP 7" / "La etapa de ejecución de fld y fsd consume 2 ciclos de reloj." / "ejecución de las instrucciones fadd.d, fsub.d y fmul.d requiere 2, 2 y 5 ciclos, respectivamente.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]]
+Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador]] · [[latencias-de-unidades-funcionales-dadas-en-el-examen-fp-y-me]]

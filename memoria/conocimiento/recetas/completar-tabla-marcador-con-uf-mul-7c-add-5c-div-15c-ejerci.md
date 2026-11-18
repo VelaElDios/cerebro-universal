@@ -17,4 +17,4 @@ La tabla tiene columnas: Instrucción, Emisión, Lectura operandos, Ejecución (
 > Completa la siguiente tabla usando la técnica de Marcador. Explica los motivos de las detenciones, si las hay. Ten en cuenta las siguientes consideraciones: i. una instrucción que está esperando un resultado de otra unidad funcional puede pasar a través de la etapa de lectura de operandos al mismo tiempo que el resultado esperado es escrito ii. una instrucción que está esperando una unidad funcional puede ser emitida en el mismo ciclo que la instrucción que está usando dicha unidad completa su etapa de escritura de resultados iii. el fichero de registros sólo tiene un puerto de escritura
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio]]
+Relacionado: [[marcador-scoreboard-distingue-riesgos-raw-y-war-con-detencio]] · [[algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej]] · [[completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8]]

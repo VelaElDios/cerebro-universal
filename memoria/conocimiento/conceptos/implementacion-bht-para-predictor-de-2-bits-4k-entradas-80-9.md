@@ -16,3 +16,5 @@ La BHT se indexa con bits del PC (fetch PC). Cada entrada tiene 2 bits (contador
 
 > Implementación: Branch History Table (BHT) • Fetch PC • I-Cache • BHT Index • 2k-entry BHT, 2 bits/entry • Instruction Opcode • offset • Branch? • Target PC • Taken/¬Taken? • 4K-entry BHT, 2 bits/entry, ~80-90% correct predictions
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[implementacion-de-la-bht-en-predictor-dinamico-de-2-bits]] · [[la-bht-almacena-los-bits-de-prediccion-de-todas-las-instrucc]] · [[implementacion-bht-con-contadores-saturados-de-2-bits]]

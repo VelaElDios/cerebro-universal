@@ -17,4 +17,4 @@ La dependencia de nombre agrupa tanto la dependencia de salida (WAW: dos escritu
 > Dadas dos instrucciones i y j (j lógicamente después de i), existe una dependencia de nombre si: a. Las dos instrucciones i y j escriben sobre el mismo registro o posición de memoria. b. La instrucción j escribe sobre un registro o una posición de memoria que lee la instrucción i. c. Las respuestas a y b son ciertas.
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[name-dependency-dependencia-de-nombre-incluye-waw-y-war]] · [[eliminacion-de-dependencias-de-nombre-mediante-renombramient]] · [[definicion-de-dependencia-de-nombre-anti-y-salida]]

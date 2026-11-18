@@ -20,4 +20,4 @@ La dirección efectiva = x1 + offset (0). x1 vale 72 al inicio (ciclo 9) y 64 de
 > Buffers de carga/almac. Nombre Ocupada Direc. Qi Carga 1 SI 80 Carga 2 SI 72 Almac 1 SI 80 Almac 2 SI 72
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la]] · [[uso-de-buffers-de-carga-en-tomasulo-load-buffers]]

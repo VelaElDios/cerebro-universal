@@ -17,4 +17,4 @@ Mejora de prestaciones (speedup) = CPI_sin_BTB / CPI_con_BTB. Como la frecuencia
 > c) ¿Cuál es la mejora de prestaciones al usar la BTB? (0,25 puntos)
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
-Relacionado: [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]]
+Relacionado: [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]] · [[calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s]] · [[mejora-prestaciones-btb-con-politica-solo-saltos-tomados-y-a]]

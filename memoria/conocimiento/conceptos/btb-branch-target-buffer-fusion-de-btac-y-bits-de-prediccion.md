@@ -17,4 +17,4 @@ El BTB combina en una sola tabla: dirección destino del salto (como BTAC) + bit
 > La BTB almacena la dirección destino de los últimos saltos tomados y los bits de predicción de ese salto. La BTAC con bits de predicción se denomina BTB. MC6860 (1993) 256 x 2 bits Pentium (1994) 256 x 2 bits R8000 (1994) 1K x 1 bit Pentium (1996) 512 x 2 bits
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]]

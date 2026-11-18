@@ -17,4 +17,4 @@ Técnica estándar: replicar cuerpo del bucle 4 veces (4 iteraciones por vuelta)
 > Desenrolla el código ensamblador 4 veces y planifica el código (renombra y reordena) para eliminar todas las detenciones posibles. Muestra el código resultante. Asume que N es múltiplo de 4 y que aplicamos la técnica de salto retardado.
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]] · [[desenrollado-de-bucle-minimo-para-planificacion-sin-detencio]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]]

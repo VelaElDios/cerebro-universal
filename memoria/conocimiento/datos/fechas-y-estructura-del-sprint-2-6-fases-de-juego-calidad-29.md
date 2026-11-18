@@ -28,6 +28,6 @@ Sprint 2: del 23/10/2026 al 29/10/2026.
 > **Sprint 2:** del 23/10/2026 al 29/10/2026. 29 PBIs (P20–P48) con 50 tareas (T33–T82), etiquetados por fase del juego (*Base del juego*, *Fase 2 · Club*, *Fase 3 · Ultras*, *Fase 4 · Mundo*, *Fase 5 · Rarezas*, *Fase 6 · Logros y sonido* y *Calidad*). También son **MUST**: el profesor fijó la lógica del juego como objetivo del sprint.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[cambio-de-alcance-de-red-social-a-juego-survivor-justificaci]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]
+Relacionado: [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[cambio-de-alcance-de-red-social-a-juego-survivor-justificaci]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

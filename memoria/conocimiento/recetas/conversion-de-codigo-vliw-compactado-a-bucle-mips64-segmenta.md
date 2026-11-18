@@ -17,4 +17,4 @@ El VLIW ejecuta 4 elementos por iteración (F2,F8,F14,F20 → F4,F10,F16,F22 →
 > Show the initial code for the MIPS64 processor segmented such that at each turn of the loop a result is calculated. Write the code in this table (use as many rows as you need)
 > — `repo:datos/temarios/AC/examenes/June2023.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]] · [[segmentacion-software-software-pipelining-para-bucle-encript]]

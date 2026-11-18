@@ -28,4 +28,4 @@ Compilar con `-O1` para que el compilador NO haga auto-unrolling. Esperado: IPC 
 > Una solución es reestructurar el código repartiendo el cálculo en varias variables independientes (por ejemplo: acc1, acc2, acc3 y acc4).
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf`
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[formula-del-techo-roofline-mononucleo]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]] · [[romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s]] · [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]]

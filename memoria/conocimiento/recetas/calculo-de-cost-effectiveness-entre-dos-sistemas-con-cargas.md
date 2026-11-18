@@ -17,4 +17,4 @@ Cost-effectiveness = rendimiento / coste. Rendimiento = 1 / tiempo de ejecución
 > We wish to compare the performance of two different systems: S1 and S2. The S1 system costs 20000 € and the S2 system costs 30000 €. The following measurements have been carried out on these systems: Program execution time in S1 execution time in S2 A 10 s 6s B 20 s 14
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
 
-Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[como-comparar-efectividad-en-coste-entre-dos-sistemas]] · [[calculo-de-coste-efectividad-entre-dos-sistemas-con-carga-de]] · [[calculo-de-coste-efectividad-entre-dos-sistemas-pregunta-4]]

@@ -25,4 +25,4 @@ Plantilla de configuración para resolver ejercicios de Tomasulo especulativo:
 > El sistema dispone de un buffer de carga con 2 entradas y un buffer de almacenamiento con 1 entrada. La etapa de ejecución de ambas operaciones requiere 2 ciclos. Además, dispone de varias UF en coma flotante con 2 estaciones de reserva por UF y las siguientes características: Sumador/Restador 2 cantidad 2 ciclos, Multiplicador 2 cantidad 6 ciclos, Divisor 1 cantidad 12 ciclos
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[simulacion-tomasulo-con-especulacion-parametros-de-hardware]] · [[parametros-de-recursos-y-latencias-para-tomasulo-con-especul]] · [[configuracion-y-parametros-para-simular-tomasulo-en-problema]]

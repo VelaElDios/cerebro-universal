@@ -17,4 +17,4 @@ En un pipeline MIPS clásico donde la decisión de salto se toma en la etapa ID 
 > En una implementación segmentada de MIPS en la que los saltos se resuelven completamente en la etapa ID, suponiendo que no se emplea ninguna técnica de predicción, las instrucciones de salto: a. No tienen penalización
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion]] · [[prediccion-fija-siempre-no-tomado-con-calculo-destino-en-id]] · [[penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re]]

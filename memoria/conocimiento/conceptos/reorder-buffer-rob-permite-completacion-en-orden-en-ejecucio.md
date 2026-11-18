@@ -17,4 +17,4 @@ El ROB es una cola circular que mantiene las instrucciones en orden de programa.
 > El Reorder Buffer: a) Almacena los resultados de las instrucciones una vez que éstas dejan de ser especulativas b) Almacena información de las instrucciones en ejecución y permite que se completen en orden c) Almacena información de las instrucciones que se ejecutan en orden d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]]
+Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[reorder-buffer-en-tomasulo-pregunta-19]] · [[paso-de-commit-en-tomasulo-especulativo-usa-rob-para-complet]]

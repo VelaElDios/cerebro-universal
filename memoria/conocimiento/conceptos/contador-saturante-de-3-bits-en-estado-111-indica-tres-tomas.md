@@ -17,4 +17,4 @@ Un contador saturante de n bits representa la confianza en que el salto se toma.
 > A 3-bit predictor is updated to 111 after predicting a branch instruction. Then, we can state that… c) The actual behavior of the three last branch instructions was TAKEN.
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf` (cita sin comprobar)
 
-Relacionado: [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]]
+Relacionado: [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]] · [[transicion-de-predictor-de-3-bits-inicializado-en-100-a-001]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[patron-de-prediccion-de-predictor-de-3-bits-ante-alternancia]]

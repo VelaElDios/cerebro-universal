@@ -17,4 +17,6 @@ El entorno es `sequencediagram` (minúsculas). Participantes con `\newthread`/`\
 > \begin{sequencediagram} \newthread{u}{Usuario} \newinst[2]{v}{Vista registro} \begin{call}{u}{escribe email y contraseña}{v}{ok} \end{call} \begin{sdblock}{alt}{ya existe} \mess{s}{409 ConflictError}{a} \end{sdblock} \end{sequencediagram}
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -21,3 +21,5 @@ Este valor se multiplica por la frecuencia en GHz para obtener GFLOPS_MAX teóri
 
 > FLOPSperCYCLE =32	 # En procesadores x86 modernos con soporte para AVX2 y FMA = 8 floats * 2 ops FMA * 2 unidades FMA = 32
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py`
+
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[definicion-de-mflops-millones-de-operaciones-de-punto-flotan]] · [[latencia-de-carga-fp-y-multiplicacion-doble-en-la-simulacion]]

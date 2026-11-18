@@ -17,4 +17,4 @@ Temas: [[ac]] · [[especulacion]] · [[rob]] · [[simulacion]] · [[tomasulo]]
 > Se tiene un procesador MIPS64 con la versión especulativa del algoritmo de Tomasulo y 4 entradas en el buffer de reordenamiento (ROB), que inicialmente se encuentra vacio. La etapa de ejecución del MIPS64 para las instrucciones ADD.D y SUB.D emplean 2 ciclos, 4 ciclos para MUL.D y 20 ciclos para DIV.D.
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[escritura-de-resultado-y-actualizacion-de-qi-en-registro-des]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[escritura-de-resultado-y-actualizacion-de-qi-en-registro-des]] · [[simulacion-de-algoritmo-tomasulo-basico-y-especulativo-con-r]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]] · [[simulacion-tomasulo-especulativa-con-rob-de-4-entradas-exame]]

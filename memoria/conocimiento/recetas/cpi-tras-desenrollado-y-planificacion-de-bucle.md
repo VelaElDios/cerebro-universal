@@ -17,4 +17,4 @@ CPI_final = (ciclos_ejecución_cuerpo_desenrollado + ciclos_salto) / (instruccio
 > Calcula el valor del CPR para el bucle resultante (tras desenrollar y planificar).
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[desenrollado-de-bucle-minimo-para-planificacion-sin-detencio]] · [[analisis-de-detenciones-stalls-en-bucle-con-media-ponderada]]
+Relacionado: [[desenrollado-de-bucle-minimo-para-planificacion-sin-detencio]] · [[analisis-de-detenciones-stalls-en-bucle-con-media-ponderada]] · [[calculo-de-cpi-en-bucle-desenrollado-superescalar-con-ancho]] · [[calculo-de-cpi-en-pipeline-con-stalls-y-tras-optimizacion]]

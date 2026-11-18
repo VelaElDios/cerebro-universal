@@ -17,4 +17,4 @@ El software pipelining (planificación software / segmentación software) reorga
 > La técnica de segmentación software: Transforma un bucle con iteraciones dependientes en un bucle con iteraciones independientes
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf` (cita sin comprobar)
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[condicion-para-solapar-iteraciones-de-un-bucle-desenrollado]] · [[tecnica-de-segmentacion-software-software-pipelining]] · [[que-busca-conseguir-la-segmentacion-software-software-pipeli]]

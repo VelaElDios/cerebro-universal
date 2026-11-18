@@ -17,4 +17,4 @@ El VLIW emite hasta 5 operaciones/ciclo: 2 memoria (carga/almacenamiento), 2 FP 
 > Two memory operations, two FP operations, and one integer (or jump) can be issued in each cycle. All FP units are fully segmented. The jump delay is ignored
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[latencias-de-unidades-funcionales-vliw-examen-enero-2023-int]] · [[planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame]]

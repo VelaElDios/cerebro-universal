@@ -17,4 +17,4 @@ Aunque Tomasulo elimina riesgos estructurales en unidades funcionales mediante e
 > En la técnica de Tomasulo: a) Se pueden producir riesgos estructurales en la fase de escritura
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[riesgos-estructurales-en-tomasulo-solo-en-escritura-de-resul]] · [[tomasulo-sin-especulacion-detenciones-en-escritura-por-riesg]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]]

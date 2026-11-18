@@ -16,3 +16,5 @@ Si el multiplicador FP pasa de II=1 a II=2, no se puede iniciar un fmul.d cada c
 
 > Supón que, debido a restricciones de diseño, la unidad funcional de multiplicación FP tiene el comportamiento mostrado en la figura adjunta, pasando a tener un intervalo de iniciación de 2 ciclos. Explica si este diseño afecta al código que has diseñado en el apartado b. En caso afirmativo, indica qué cambios introducirías para evitar sus efectos; en caso negativo, justifica razonablemente por qué.
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf` (cita sin comprobar)
+
+Relacionado: [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]] · [[desenrollado-minimo-de-bucle-mips64-para-eliminar-stalls-con]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]]

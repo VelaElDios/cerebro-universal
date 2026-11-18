@@ -17,4 +17,6 @@ Antes de abrir cualquier PR, el desarrollador debe ejecutar `npm test` en local 
 > Las pruebas tienen que pasar en local. El CI las vuelve a ejecutar en cada PR y no se integra ningún PR con el CI en rojo.
 > — `repo:saas/CONTRIBUTING.md`
 
+Relacionado: [[reglas-de-integracion-mediante-pull-requests-con-ci-obligato]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

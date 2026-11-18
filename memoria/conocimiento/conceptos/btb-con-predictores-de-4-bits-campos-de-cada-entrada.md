@@ -17,4 +17,4 @@ Una entrada de BTB (Branch Target Buffer) que integra predicción de dirección 
 > Si se emplease una BTB y predictores de 4 bits para predecir el sentido de las instrucciones de salto condicional, indica qué campos que contendría cada entrada.
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
 
-Relacionado: [[predictor-de-1-bit-inicializado-a-no-tomado-en-bucle-secuenc]]
+Relacionado: [[predictor-de-1-bit-inicializado-a-no-tomado-en-bucle-secuenc]] · [[estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits]] · [[proposito-del-branch-target-buffer-btb-ademas-de-bits-de-pre]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]

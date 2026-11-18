@@ -17,4 +17,4 @@ Ejercicio 10: código RISC-V que recorre la cadena "exam18" (6 chars + NULL = 7 
 > Completa la siguiente tabla sabiendo que se usa un predictor correlacionado (2,1) para predecir el comportamiento de los saltos y que en memoria se ha almacenado la cadena “exam18”
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[analisis-en-estado-estable-de-predictor-2-bits-vs-correlacio]] · [[predictor-de-2-bits-por-instruccion-y-predictor-correlaciona]] · [[codigo-risc-v-ejercicio-10-bucle-conteo-a-en-exam18-con-salt]]

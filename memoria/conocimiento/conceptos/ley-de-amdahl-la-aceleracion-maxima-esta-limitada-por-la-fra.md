@@ -16,3 +16,5 @@ La ley de Amdahl establece que el speedup máximo al mejorar una parte del siste
 
 > La ley de Amdahl para el rendimiento indica que: a. La aceleración máxima del rendimiento obtenida al realizar una mejora viene determinada por la fracción de tiempo que pueda utilizarse dicha mejora
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
+
+Relacionado: [[ley-de-amdahl-la-aceleracion-maxima-viene-determinada-por-la]] · [[ley-de-amdahl-aceleracion-maxima-limitada-por-fraccion-mejor]] · [[ley-de-amdahl-formula-del-tiempo-de-ejecucion-nuevo]]

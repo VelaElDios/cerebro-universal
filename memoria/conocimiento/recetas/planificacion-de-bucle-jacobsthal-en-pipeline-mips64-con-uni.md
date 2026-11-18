@@ -17,4 +17,4 @@ Temas: [[ac]] · [[mips64]] · [[pipeline]]
 > The next loop runs on a pipelined MIPS64 processor to store in memory (as floating-point numbers in simple precision) the first numbers of the Jacobsthal sequence...
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf` (cita sin comprobar)
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[configuracion-de-pipeline-mips64-para-problema-de-examen-lat]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]] · [[desenrollado-minimo-de-bucle-mips64-para-eliminar-stalls-con]]

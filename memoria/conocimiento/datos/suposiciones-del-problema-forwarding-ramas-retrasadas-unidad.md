@@ -16,3 +16,5 @@ Suposiciones clave: 1) Forwarding activo (resultados disponibles tan pronto como
 
 > It is assumed that there are forwarding and delayed branches. All functional units are fully pipelined. Some instructions have latencies expressed in the following table when executed consecutively (assume that instructions not listed in this table have no latency)
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf` (cita sin comprobar)
+
+Relacionado: [[supuestos-del-examen-retardo-de-salto-ignorado-y-unidades-en]] · [[latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci]] · [[parametros-del-procesador-para-problema-1-ac-enero-2025]]

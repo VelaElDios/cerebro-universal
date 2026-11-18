@@ -17,4 +17,4 @@ El procesador permite emitir hasta 2 instrucciones por ciclo (incluyendo 2 enter
 > Se ejecuta el siguiente bucle en un procesador superescalar que puede emitir dos operaciones independientes por ciclo (incluidas dos operaciones enteras). [...] 1 unidad funcional totalmente segmentada para cada tipo de operación en punto flotante (suma PF, multiplicación PF) • 2 unidades funcionales enteras con latencia 0 • Se ignora el retardo del salto
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]] · [[planificacion-en-superescalar-3-vias-entero-salto-memoria-fp]] · [[procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp]]

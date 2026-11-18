@@ -17,4 +17,4 @@ Dos reglas clave para rellenar las tablas de ciclos: (1) Forwarding por CDB en e
 > An instruction that is waiting for a result can resume its execution in the same cycle in which this result is written to the Common Data Bus. / In the rest of cases where a stall occurs, the stopped instruction cannot continue execution until the next cycle in which the stall has been resolved (+1 cycle).
 > — `repo:datos/temarios/AC/examenes/June2021.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]] · [[restricciones-de-timing-en-tomasulo-con-especulacion-examen]] · [[regla-de-contencion-del-cdb-y-disponibilidad-de-recursos-en]]

@@ -16,3 +16,5 @@ La planificación de trazas (trace scheduling) es una técnica de compilación q
 
 > La técnica de planificación de trazas: d. Sirve para eliminar los saltos internos en un bucle
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf` (cita sin comprobar)
+
+Relacionado: [[que-hace-la-planificacion-de-trazas-trace-scheduling]] · [[trace-scheduling-traza-secuencia-mas-probable-de-bloques-bas]] · [[planificacion-de-trazas-trace-scheduling-para-condicionales]]

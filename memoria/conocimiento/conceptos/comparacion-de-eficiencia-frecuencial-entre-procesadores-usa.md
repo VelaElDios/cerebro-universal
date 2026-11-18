@@ -16,3 +16,5 @@ Eficiencia frecuencial = rendimiento / frecuencia. PIII: 48.9 fps / 1 GHz = 48.9
 
 > If we use a 3D game as a benchmark, and a Pentium III at 1 GHz gives 48.9 fps and a Pentium IV at 1.73 GHz gives 55.7 fps, which of the two processors is more efficient concerning frequency?
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
+
+Relacionado: [[comparacion-de-eficiencia-entre-pentium-iii-1-ghz-y-pentium]] · [[calculo-de-mips-para-dos-procesadores-con-distinto-cpi-y-fre]] · [[calculo-de-coste-efectividad-rendimiento-precio-entre-dos-co]]

@@ -20,3 +20,5 @@ Conclusión: MIPS es métrica engañosa para comparar código real; el tiempo de
 
 > Lo que quiere decir que el código obtenido por el compilador 2 tiene un mayor MIPS.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
+
+Relacionado: [[ejercicios-de-cpi-mips-y-tiempo-de-ejecucion-con-mezcla-de-i]] · [[definicion-de-mips-millones-de-instrucciones-por-segundo]] · [[mejor-medida-de-rendimiento-de-un-computador]]

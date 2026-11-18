@@ -17,4 +17,4 @@ Aplicación de la ley de Amdahl: tiempo total original = 120 s, tiempo multiplic
 > Suppose a program takes 2 minutes to run on a machine, of which 96 seconds are for multiplication operations. How much do I have to improve the speed of multiplication if I want the program to run five times faster?
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[como-calcular-speedup-global-mejorando-un-componente-ley-de]] · [[ejercicio-de-participacion-en-clase-mejora-de-multiplicacion]] · [[calculo-de-factor-de-mejora-en-multiplicacion-segun-ley-de-a]]

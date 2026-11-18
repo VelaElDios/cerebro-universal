@@ -39,4 +39,4 @@ Especificación completa para resolver a mano o con herramienta:
 > El siguiente programa se ejecuta en un procesador VLIW con 6 unidades de ejecución: 2 unidades enteras (para operaciones ALU enteras y de salto), con una latencia de 1 ciclo; 2 unidades de memoria completamente segmentadas (para loads y stores), con una latencia de 3 ciclos; 2 unidades de punto flotante completamente segmentadas (una para suma y otra para multiplicación), con una latencia de 4 ciclos
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf` (cita sin comprobar)
 
-Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]]
+Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]] · [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]] · [[planificacion-vliw-para-bucle-con-latencias-mem-2-add-d-1-mu]]

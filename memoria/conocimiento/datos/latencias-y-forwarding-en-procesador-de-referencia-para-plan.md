@@ -30,4 +30,4 @@ Estos parámetros determinan la planificación estática óptima (ej. cuántas i
 > Instrucción que produce resultado | Instrucción que usa el resultado | Detenciones en ciclos | FP ALU | FP ALU | 3 | FP ALU | STORE FP | 2 | LOAD FP | FP ALU | 1 | LOAD FP | STORE FP | 0 | ENTERA | ENTERA | 0
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]] · [[latencias-vliw-1-0-para-examen-enero-2026-problema-3]]

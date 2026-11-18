@@ -29,7 +29,7 @@ Este trozo contiene el Ejercicio 3 de un examen de Arquitectura de Computadores 
 - [[definicion-de-dependencia-de-nombre-name-dependency-entre-in]]
 - [[diferencia-scoreboard-vs-tomasulo-en-resolucion-de-hazards-s]]
 - [[estructura-que-almacena-direccion-destino-de-saltos-tomados]]
-- [[etapas-de-uso-del-banco-de-registros-en-pipeline-mips-de-5-e]]
+- [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]]
 - [[instrucciones-especulativas-marcadas-con-en-codigo-mips64-ex]]
 - [[parametros-de-recursos-y-latencias-para-tomasulo-con-especul]]
 - [[pasos-para-completar-tabla-de-ejecucion-tomasulo-issue-execu]]

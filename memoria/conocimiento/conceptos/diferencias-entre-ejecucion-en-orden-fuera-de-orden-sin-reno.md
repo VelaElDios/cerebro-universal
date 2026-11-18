@@ -17,4 +17,4 @@ a) En orden: las instrucciones se emiten en orden de programa, se detienen ante 
 > Para los apartados b) y c), supón una ventana de instrucciones lo suficientemente grande como para poder considerar todas las instrucciones del código al mismo tiempo.
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[diferencia-clave-entre-ejecucion-fuera-de-orden-sin-y-con-re]] · [[diferencias-clave-entre-los-tres-modelos-de-ejecucion-supers]] · [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r]]

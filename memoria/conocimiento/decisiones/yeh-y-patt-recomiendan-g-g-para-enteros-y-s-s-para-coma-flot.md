@@ -19,3 +19,5 @@ Esta decisión de diseño influyó en predictores posteriores como el Alpha 2126
 
 > Experimentos de Yeh y Patt Usar G/g (global) en códigos enteros y S/s (local) en códigos de coma flotante
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[predictor-alpha-21264-tournament-branch-prediction-combina-l]] · [[predictor-gselect-concatenacion-vs-gshare-xor-para-indexar-b]] · [[notacion-xax-m-2n-para-predictores-adaptativos-de-dos-nivele]]

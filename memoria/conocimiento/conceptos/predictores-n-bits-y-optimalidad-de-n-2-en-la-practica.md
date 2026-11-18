@@ -16,3 +16,5 @@ La generalización usa un contador saturado de n bits por salto. El contador dec
 
 > Generalización: predictor n bits • Hace uso de un contador saturado por salto • Decrementa cuando no salta • Predice no saltar si cuenta < 2n-1 • En la práctica, n=2 es tan efectivo como n>2 o incluso mejor
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
+
+Relacionado: [[predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en]] · [[como-el-predictor-de-2-bits-resuelve-el-problema-de-bucles-a]] · [[predictor-dinamico-de-2-bits-jim-smith-1981-maquina-de-4-est]]

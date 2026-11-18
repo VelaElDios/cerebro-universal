@@ -17,4 +17,4 @@ BTB implícita: indexada por PC (no almacena etiqueta completa). Ancho de cada e
 > Indica el ancho y el número de bits totales necesarios para implementar una BTB implícita de 1024 entradas sabiendo que el bus de direcciones usa 24 bits (hay más de una solución, pero sólo una opción es correcta).
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[implementacion-de-btb-generica-ampliacion-de-btac-con-bits-d]] · [[btb-cache-de-direcciones-destino-de-saltos-con-bits-de-predi]]

@@ -16,3 +16,5 @@ Valores iniciales explícitos para la simulación del Ejercicio 12. Predictor de
 
 > (Estado inicial)          -       00       11           -           -      10    01    10     11     00          -             -
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
+
+Relacionado: [[estados-iniciales-de-predictores-en-ejercicio-2-un-nivel-y-d]] · [[estado-inicial-predictores-para-problema-2-1-bit-y-2-niveles]] · [[simulacion-paso-a-paso-de-predictor-correlacionado-2-1-con-b]]

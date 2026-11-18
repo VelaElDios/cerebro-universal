@@ -16,3 +16,5 @@ Clasificación jerárquica: Predicción fija (siempre tomado o siempre no tomado
 
 > Predicción fija – Siempre lo mismo, tomado o no tomado – Predicción verdadera – A veces tomado, a veces no tomado – Estática – Basada en el código objeto – Dinámica – Basada en la historia de la ejecución – Basada en dirección – Basada en el código operación – Dirigida por el compilador – Un nivel de historia – Dos niveles de historia – Híbridos
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[prediccion-dinamica-basada-en-correlacion-temporal-y-espacia]] · [[predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en]] · [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]]

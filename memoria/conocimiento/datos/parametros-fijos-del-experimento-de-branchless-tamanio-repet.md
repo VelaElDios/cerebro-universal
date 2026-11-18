@@ -22,4 +22,4 @@ Valores hard-coded en el benchmark:
 > constexpr int TAMANIO = 32768; constexpr int REPETICIONES = 1000; std::mt19937 rng(42); std::uniform_int_distribution<int> dist(0, 255);
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_2_branchless.cpp` (cita sin comprobar)
 
-Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]]
+Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[parametros-fijos-del-benchmark-semilla-accesos-formato-salid]] · [[parametros-del-experimento-tamano-de-datos-bloque-y-repetici]] · [[parametros-fijos-del-experimento-aos-soa-tarea-3-2]]

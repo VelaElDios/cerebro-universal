@@ -16,3 +16,5 @@ El experimento usa N = 2^26 elementos int64_t (512 MiB totales), muy superior a 
 
 > constexpr std::size_t N = 1ull << 26;        // 2^26= 64M elementos (de tipo int64)\n                                             // Un int64 ocupa 8 bytes --> total= 64M*8= 512 MB\n//Valor del bloque\nconstexpr std::size_t BLOQUE = 4096;         // bloque pequeño: cabe de sobra en L1\nconstexpr int REPETICIONES = 4;              // Número de pasadas completas sobre los datos.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_patrones.cpp` (cita sin comprobar)
+
+Relacionado: [[tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache]] · [[parametros-fijos-del-experimento-aos-soa-tarea-3-2]] · [[parametros-fijos-del-experimento-ilp-n-100m-tipo-double-valo]]

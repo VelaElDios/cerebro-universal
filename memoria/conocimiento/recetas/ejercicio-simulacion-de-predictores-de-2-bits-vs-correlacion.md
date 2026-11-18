@@ -17,4 +17,4 @@ Temas: [[ac]] · [[bucles anidados]] · [[correlating predictor]] · [[ejercicio
 > We have a pipelined processor with two design options: Option A: Use two-bit predictors for each branch instruction (assuming they are initially strongly taken). Option B: Use a (3,1) predictor (assuming all its bits start with a value of 1). Given the following code for (i=0; i<10000; i++) for (j=0; j<6; j++) ... Complete the following table: Real behaviour of the jumps ... Using predictors Option A ... Option B
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf` (cita sin comprobar)
 
-Relacionado: [[contador-saturante-de-3-bits-en-estado-111-indica-tres-tomas]] · [[registro-de-historial-de-saltos-bhr-se-implementa-como-regis]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]
+Relacionado: [[contador-saturante-de-3-bits-en-estado-111-indica-tres-tomas]] · [[registro-de-historial-de-saltos-bhr-se-implementa-como-regis]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[simulacion-de-predictores-1-bit-4-bits-saturado-y-correlacio]] · [[calculo-de-predicciones-correctas-en-bucles-anidados-con-pre]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]]

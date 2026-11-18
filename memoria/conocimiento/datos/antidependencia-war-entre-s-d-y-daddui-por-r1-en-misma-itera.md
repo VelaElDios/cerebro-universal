@@ -17,4 +17,4 @@ En el bucle dado, S.D F4,0(R1) lee R1 (base) y DADDUI R1,R1,#-8 escribe R1. Esto
 > Entre las instrucciones S.D y DADDUI... a) No existe ningún tipo de dependencia b) Existe una dependencia de salida, a través de R1, en la misma iteración c) Existe una dependencia de datos, a través de R1, en la misma iteración d) Existe una dependencia de datos, a través de R1, entre iteraciones
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
-Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]
+Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr]]

@@ -28,4 +28,4 @@ Nota: al tener renombrado, SUB.D F7,F1,F2 y L.D F4,0(R10) pueden ir en paralelo 
 > Processor B is a VLIW processor able to issue two operations (of any type) per instruction. Static scheduling is as aggressive and efficient as possible to optimize the resulting code (operations can be scheduled out of order, and register renaming is supported).
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]] · [[latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci]]
+Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]] · [[latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci]] · [[pasos-para-resolver-exercise-3-processor-a-superscalar-in-or]] · [[planificacion-estatica-agresiva-para-vliw-4-issue-con-renomb]]

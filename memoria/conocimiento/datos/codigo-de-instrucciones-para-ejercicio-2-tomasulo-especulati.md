@@ -35,4 +35,4 @@ I7: DSUB R3, R3, R1
 > MUL.D F4,F6,F12 SUB.D F6,F4,F10 L.D   F4,10(R2) DIV.D F0,F14,F16 SUB.D F12,F14,F0 ADD.D F20,F28,F24 L.D   F0,10(R2) MUL.D F18,F28,F24
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]]
+Relacionado: [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]] · [[secuencia-de-10-instrucciones-mips64-fp-para-ejercicio-3-tom]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-examen-e]]

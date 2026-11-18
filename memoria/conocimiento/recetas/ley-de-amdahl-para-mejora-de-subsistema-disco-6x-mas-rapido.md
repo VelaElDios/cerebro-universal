@@ -17,4 +17,4 @@ Ley de Amdahl: Speedup_global = 1 / ((1 - f) + f/k), donde f = fracción de tiem
 > Si se sustituye el disco duro de un ordenador por otro disco seis veces más rápido que el actual, calcula el uso que debería hacerse de este dispositivo si se quiere conseguir que el ordenador funcione tres veces más rápido.
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]]
+Relacionado: [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]] · [[aplicacion-de-la-ley-de-amdahl-para-determinar-fraccion-de-u]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco-fraccion-de-uso-par]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco]]

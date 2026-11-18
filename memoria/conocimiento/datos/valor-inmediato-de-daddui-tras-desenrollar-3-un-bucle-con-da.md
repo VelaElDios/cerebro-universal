@@ -17,4 +17,4 @@ Cada iteración original decrementa R1 en 8 (bytes). Tres iteraciones → decrem
 > After unrolling 3 times the loop of the previous question, the immediate value of the DADDUI instruction will be: d) #-24
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-instrucciones-tras-desenrollar-bucle-3-veces-unro]]
+Relacionado: [[calculo-de-instrucciones-tras-desenrollar-bucle-3-veces-unro]] · [[dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr]] · [[analisis-de-dependencias-en-bucle-mips-con-acceso-a-memoria]]

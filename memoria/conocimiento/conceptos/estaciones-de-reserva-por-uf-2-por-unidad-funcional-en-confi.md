@@ -17,4 +17,4 @@ Cada unidad funcional (no cada tipo, sino cada instancia) tiene 2 estaciones de 
 > dispone de varias UF en coma flotante con 2 estaciones de reserva por UF
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf`
 
-Relacionado: [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[configuracion-y-parametros-para-simular-tomasulo-en-problema]] · [[configuracion-de-recursos-para-tomasulo-basico-en-examen-jun]] · [[parametros-estandar-para-simular-tomasulo-con-especulacion-e]]

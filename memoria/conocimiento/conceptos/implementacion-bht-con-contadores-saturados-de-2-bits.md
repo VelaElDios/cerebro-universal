@@ -17,4 +17,4 @@ La BHT en predictores dinámicos de 2 bits se implementa con contadores saturado
 > La BHT (Branch History Table) en un predictor de saltos dinámico de 2-bits se implementa mediante: a) Una operación XOR de 2-bits b) Un Contador saturado de 2-bits c) Un registro de desplazamiento de 2-bits d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[implementacion-de-la-bht-en-predictor-dinamico-de-2-bits]] · [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]]

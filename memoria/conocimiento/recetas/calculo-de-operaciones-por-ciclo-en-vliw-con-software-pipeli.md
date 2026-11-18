@@ -22,4 +22,4 @@ El enunciado pide el valor numérico final tras planificar; no da la respuesta, 
 > b) ¿Cuántas operaciones por ciclo se obtienen?
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
 
-Relacionado: [[planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame]]
+Relacionado: [[planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame]] · [[calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d]] · [[metrica-operaciones-por-ciclo-opc-en-vliw]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]]

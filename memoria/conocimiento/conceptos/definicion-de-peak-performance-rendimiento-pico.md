@@ -16,3 +16,5 @@ El rendimiento pico (peak performance) es el rendimiento máximo que una máquin
 
 > The peak performance of an architecture is: The maximum performance a machine achieves with the most favourable benchmark
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
+
+Relacionado: [[mejor-medida-de-rendimiento-de-un-computador]] · [[mejor-metrica-de-rendimiento-tiempo-de-ejecucion]] · [[definicion-de-benchmarks-sinteticos]]

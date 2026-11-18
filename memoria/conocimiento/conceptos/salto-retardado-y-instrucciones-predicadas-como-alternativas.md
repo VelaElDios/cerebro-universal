@@ -17,4 +17,4 @@ Dos alternativas a la predicción de saltos: 1) Salto retardado (delayed branch)
 > Salto retardado: El compilador rellena los huecos de retardo – con o sin cancelación – Instrucciones predicadas: Si la arquitectura puede evitar los saltos condicionales
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]] · [[taxonomia-de-tecnicas-de-prediccion-de-saltos]]
+Relacionado: [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]] · [[taxonomia-de-tecnicas-de-prediccion-de-saltos]] · [[instrucciones-predicadas-convertir-dependencias-de-control-e]] · [[ventajas-e-inconvenientes-de-las-instrucciones-predicadas]] · [[saltos-retardados-delayed-branches-en-planificacion-estatica]]

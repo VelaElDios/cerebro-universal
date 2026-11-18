@@ -17,4 +17,4 @@ Bucle original: 6 instrucciones (I1-I6). Al desenrollar 3×: se replican las 5 i
 > We unroll 3 times this loop (assuming that the number of iterations is divisible by 3): ... a) The resulting loop will be composed of 6 instructions. b) 9 instructions. c) 14 instructions. d) 18 instructions.
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[desenrollado-de-bucle-4x-con-salto-retardado-para-eliminar-s]] · [[como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]]

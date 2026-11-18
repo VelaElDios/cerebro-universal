@@ -17,4 +17,4 @@ MIPS_nativos = Freq_Hz / (CPI_medio * 1e6). CPI_medio = Σ (CPI_i * %_i). M1: CP
 > MIPS = Frecuencia / (CPI × 10^6). Los MIPS de pico para M1 se calculan considerando únicamente instrucciones de tipo A.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[como-calcular-cpi-medio-y-mips-nativo-con-mezcla-de-instrucc]] · [[como-calcular-mips-pico-peak-mips-eligiendo-la-instruccion-m]] · [[calculo-de-mips-con-cpi-ponderado-y-frecuencia-de-reloj]]

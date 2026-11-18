@@ -28,4 +28,4 @@ Configuración exacta del problema 2:
 > Sumador/Restador 2 1 2; Multiplicador 1 2 8; Divisor 1 3 10; El resto de las UF emplean 1 ciclo en la etapa de ejecución.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf` (cita sin comprobar)
 
-Relacionado: [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[configuracion-tomasulo-con-especulacion-del-examen-ac-junio]] · [[configuracion-tomasulo-examen-enero-2023-unidades-fp-rob-buf]] · [[configuracion-de-tomasulo-con-especulacion-para-examen-ac-ju]]

@@ -17,4 +17,4 @@ Regla de forwarding para el Ejercicio 3: si una instrucción está en etapa **Wr
 > The result of an instruction is available to other instructions at the next cycle in which that result is written.
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]]
+Relacionado: [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]] · [[diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e]] · [[pasos-para-resolver-exercise-3-processor-a-superscalar-in-or]]

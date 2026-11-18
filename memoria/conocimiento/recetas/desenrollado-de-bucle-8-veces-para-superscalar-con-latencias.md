@@ -17,4 +17,4 @@ Pasos para planificar en Procesador A: 1) Replicar el cuerpo del bucle 8 veces, 
 > For Processor A, unroll the code 8 times and schedule it as compactly as possible, indicating the instructions issued in each cycle.
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
 
-Relacionado: [[procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]]
+Relacionado: [[procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]] · [[como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]] · [[planificacion-en-superescalar-3-vias-entero-salto-memoria-fp]]

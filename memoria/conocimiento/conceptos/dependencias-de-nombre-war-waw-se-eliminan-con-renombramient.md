@@ -17,4 +17,4 @@ Las dependencias de nombre (antidependencias WAR y dependencias de salida WAW) n
 > Con respecto a las dependencias de nombre… a) Se eliminan mediante planificación de trazas b) Se eliminan mediante desenrollamiento c) Se eliminan mediante renombramiento d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[eliminacion-de-dependencias-de-nombre-mediante-renombramient]] · [[dependencias-de-nombre-se-eliminan-mediante-renombramiento-d]] · [[el-renombrado-de-registros-evita-dependencias-de-nombre-war]]

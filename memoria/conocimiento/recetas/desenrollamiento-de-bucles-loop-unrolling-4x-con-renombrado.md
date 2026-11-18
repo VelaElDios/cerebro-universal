@@ -45,4 +45,4 @@ loop: fld      f0,  0(x1)     ; iter 1
 > Desenrollamiento, 4 veces • Número de iteraciones del bucle múltiplo de 4 • Se han eliminado 3 instrucciones de salto (bne) y 3 addi • Hay que eliminar las dependencias de nombre • Renombrado de registros
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]] · [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]] · [[desenrollado-de-bucle-4x-con-salto-retardado-para-eliminar-s]]

@@ -16,3 +16,5 @@ El salto retardado (delayed branch) coloca instrucciones útiles en la ranura de
 
 > La técnica de salto retardado... Puede considerarse una técnica de planificación estática
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
+
+Relacionado: [[saltos-retardados-delayed-branches-en-planificacion-estatica]] · [[salto-retardado-delayed-branch-en-planificacion-estatica]] · [[delayed-branch-en-vliw-y-su-efecto-en-planificacion]]

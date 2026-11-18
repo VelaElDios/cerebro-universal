@@ -17,4 +17,4 @@ Speedup global = 1 / ((1 - f) + f / k), donde f = fracción de tiempo en la part
 > La nueva tarjeta gráfica de nuestro ordenador realiza las operaciones en la mitad de tiempo que la antigua. Suponiendo que un juego concreto dedicaba el 87% del tiempo de ejecución a realizar operaciones gráficas, ¿cuál es el speedup obtenido al ejecutar dicho juego sobre la versión mejorada de nuestro ordenador?
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[speedup-con-ley-de-amdahl-para-mejora-parcial-de-tarjeta-gra]] · [[calculo-de-speedup-con-ley-de-amdahl-ejemplo-tarjeta-grafica]] · [[speedup-por-ley-de-amdahl-con-mejora-10x-usada-20-del-tiempo]]

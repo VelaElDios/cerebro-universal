@@ -17,4 +17,4 @@ En el código dado: I1 L.D F2,0(R1); I2 L.D F4,8(R1); I3 L.D F6,16(R1); I4 ADD.D
 > Identify the dependencies between instructions and indicate their type in the following table: Instruction 1 Instruction 2 Type of dependency
 > — `repo:datos/temarios/AC/examenes/June2023.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-war-siempre-genera-hazard-war]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-war-siempre-genera-hazard-war]] · [[tipos-de-dependencias-y-hazards-en-codigo-mips64-de-punto-fl]] · [[dependencias-en-la-secuencia-de-instrucciones-del-examen-jun]] · [[analisis-de-dependencias-en-codigo-fp-con-registro-f1-raw-y]]

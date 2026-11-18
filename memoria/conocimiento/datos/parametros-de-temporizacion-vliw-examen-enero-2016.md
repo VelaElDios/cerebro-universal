@@ -23,4 +23,4 @@ Estas latencias determinan la distancia mínima entre productor y consumidor con
 > Assume the following timing parameters: 2 cycles for the MEM step of loads and stores, 2 cycles for the EX step of arithmetic operations, and 1 cycle for the rest of steps.
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
 
-Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]]
+Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[parametros-de-temporizacion-del-ejercicio-vliw-examen-enero]] · [[parametros-temporales-de-pipeline-para-vliw-problema-3b]] · [[forwarding-en-vliw-estatico-y-latencias-efectivas]]

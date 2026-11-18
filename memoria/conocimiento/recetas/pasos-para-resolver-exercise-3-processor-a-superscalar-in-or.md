@@ -28,4 +28,4 @@ Metodología para rellenar tabla Processor A (ciclos 1-12):
 > Processor A is a 2-way superscalar processor with in-order issue and an issue window large enough for considering all the instructions. The processor does not support register renaming.
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]] · [[latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci]]
+Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]] · [[latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci]] · [[pasos-para-resolver-exercise-3-processor-b-vliw-con-renombra]]

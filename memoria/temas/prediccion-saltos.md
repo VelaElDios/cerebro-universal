@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "prediccion-saltos"
-notas: 206
+notas: 203
 ---
 # prediccion-saltos
 
@@ -155,12 +155,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «prediccion-saltos» (este
 - 💡 [[memoria/conocimiento/conceptos/predictor-correlacionado-o-de-dos-niveles-m-n-correlacion-es|Predictor correlacionado o de dos niveles (m,n): correlación espacial e historia global]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/predictor-dinamico-de-2-bits-jim-smith-1981-maquina-de-4-est|Predictor dinámico de 2 bits (Jim Smith, 1981): máquina de 4 estados y inercia]]
 - 💡 [[memoria/conocimiento/conceptos/predictor-gselect-concatenacion-vs-gshare-xor-para-indexar-b|Predictor gselect (concatenación) vs gshare (XOR) para indexar BHT]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-indexa-bht-con-xor-de-bits-de-pc-y-bhr|Predictor gselect indexa BHT con XOR de bits de PC y BHR]]
-- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-indexa-la-bht-con-xor-de-bits-del-pc-y-del|Predictor gselect indexa la BHT con XOR de bits del PC y del BHR]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-indexa-bht-con-xor-de-bits-de-pc-y-bhr|Predictor gselect: indexación de BHT mediante XOR de bits de PC y BHR]]
 - 💡 [[memoria/conocimiento/conceptos/predictor-gselect-indice-mediante-xor-de-bits-de-pc-y-bhr|Predictor gselect: índice mediante XOR de bits de PC y BHR]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-con-selector-de-2-bits-entre-predictor-de|Predictor híbrido con selector de 2 bits entre predictor de 1 bit y predictor de 3 bits]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y|Predictor híbrido con selectores por salto (1-bit vs 2-bit) y contadores de 2 bits saturados]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-de-dos-predictores-locales-con-selector-po|Predictor híbrido de dos predictores locales con selector por contador saturante]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p|Predictor híbrido de saltos con selectores de 2 bits entre predictor local de 1 bit y predictor local de 3 bits]]
 - 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-que-combina-dos-predictores-locales-1-bit|Predictor híbrido que combina dos predictores locales (1 bit y 3 bits) con selector de 2 bits y reglas de actualización específicas]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/predictor-local-de-1-bit-predictor-1-y-predictor-local-de-3|Predictor local de 1 bit (Predictor 1) y predictor local de 3 bits (Predictor 2) en esquema híbrido]]
@@ -208,10 +206,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «prediccion-saltos» (este
 - 📊 [[memoria/conocimiento/datos/limitacion-de-la-btb-solo-predice-saltos-ya-conocidos|Limitación de la BTB: solo predice saltos ya conocidos]]
 - 📊 [[memoria/conocimiento/datos/numero-de-bhr-en-predictor-correlacionado-de-dos-niveles-2-1|Número de BHR en predictor correlacionado de dos niveles (2,1)]]
 - 📊 [[memoria/conocimiento/datos/numero-de-bhr-en-un-predictor-correlacionador-de-dos-niveles|Número de BHR en un predictor correlacionador de dos niveles (2, 1)]]
-- 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]]
+- 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re|Penalización de salto condicional en pipeline de 5 etapas resuelto en ID = 1 ciclo]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/predictor-correlacionado-2-1-bhr-tras-dos-saltos-tomados-des|Predictor correlacionado (2,1): BHR tras dos saltos tomados desde 00 es 11]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/predictor-correlacionado-m-n-tiene-2-n-bhts|Predictor correlacionado (m,n) tiene 2^n BHTs]]
 - 📊 [[memoria/conocimiento/datos/predictor-correlacionante-m-n-tiene-2-n-bhts|Predictor correlacionante (m,n) tiene 2^n BHTs]]
 - 📊 [[memoria/conocimiento/datos/predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce|Predictor de 1 bit en bucle de 3 iteraciones (T, T, NT) produce 2 fallos]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/predictores-de-un-nivel-de-historia-1-2-y-3-bits-con-procesa|Predictores de un nivel de historia: 1, 2 y 3 bits con procesadores y años]] · ⚠️ propuesto

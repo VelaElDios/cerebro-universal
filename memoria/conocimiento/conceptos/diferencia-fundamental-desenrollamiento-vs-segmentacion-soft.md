@@ -17,4 +17,4 @@ Desenrollamiento: replica el cuerpo del bucle N veces, ejecuta N iteraciones ori
 > Consiste en transformar un bucle con instrucciones dependientes e iteraciones independientes en un bucle con instrucciones independientes e iteraciones dependientes
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]]
+Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]] · [[segmentacion-software-software-pipelining-en-bucles-sin-depe]] · [[tecnica-de-segmentacion-software-software-pipelining]] · [[planificacion-software-software-pipelining-transforma-iterac]]

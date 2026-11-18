@@ -17,4 +17,4 @@ En Tomasulo con especulación (con ROB), las excepciones de instrucciones especu
 > In the speculative version of the Tomasulo's Algorithm, an exception caused by a speculative instruction a) Is never handled b) Is handled when the instruction reaches its commit step c) Is handled just when it is produced d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[excepcion-en-especulacion-hardware-atendida-solo-en-etapa-co]] · [[como-rellenar-la-tabla-de-estado-en-tomasulo-con-especulacio]] · [[excepcion-terminante-en-instruccion-especulativa-se-pospone]]

@@ -17,4 +17,4 @@ Scoreboard emite instrucciones **en orden de programa** (in-order issue), compro
 > In Scoreboard, the order in which the issue step is performed is given by: b) The order of the instructions in the program.
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[scoreboard-los-riesgos-estructurales-se-gestionan-en-la-etap]] · [[manejo-de-riesgos-estructurales-en-scoreboard]] · [[planificacion-en-scoreboard-orden-de-ejecucion]]

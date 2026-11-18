@@ -17,6 +17,6 @@ El proyecto adopta GitHub Flow como estrategia de ramificación. La rama `main` 
 > Este repositorio sigue **GitHub Flow**, organizado según los hitos y las tareas del backlog en DoneTonic (proyecto *Colchoneros*).
 > — `repo:saas/CONTRIBUTING.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[convencion-de-mensajes-de-commit-en-espanol-con-identificado]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[convencion-de-mensajes-de-commit-en-espanol-con-identificado]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]] · [[reglas-de-integracion-mediante-pull-requests-con-ci-obligato]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

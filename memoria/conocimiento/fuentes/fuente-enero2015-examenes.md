@@ -30,7 +30,7 @@ Este trozo contiene dos problemas de un examen de Arquitectura de Computadores (
 - [[estado-inicial-de-registros-y-memoria-para-problema-3-enero]]
 - [[latencias-de-ejecucion-fp-en-superescalar-mips64-del-examen]]
 - [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]]
-- [[predictor-gselect-indexa-la-bht-con-xor-de-bits-del-pc-y-del]]
+- [[predictor-gselect-indexa-bht-con-xor-de-bits-de-pc-y-bhr]]
 - [[salto-retardado-delayed-branch-en-planificacion-superescalar]]
 - [[segmentacion-software-software-pipelining-transforma-bucles]]
 - [[speedup-con-ley-de-amdahl-para-mejora-parcial-de-tarjeta-gra]]

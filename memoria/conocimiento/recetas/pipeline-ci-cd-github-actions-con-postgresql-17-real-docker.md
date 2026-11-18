@@ -28,4 +28,6 @@ Dos workflows en `.github/workflows/`:
 > GitHub Actions (*Pruebas* con PostgreSQL 17 real e *Imagen Docker*). `main` está protegida y exige el check en verde [...] Cuando el CI pasa en `main`, [`deploy-cloud-run.yml`](../.github/workflows/deploy-cloud-run.yml) construye la imagen y la despliega en Cloud Run (Workload Identity Federation, sin claves)
 > — `repo:saas/docs/revision-entrega.md` (cita sin comprobar)
 
+Relacionado: [[pipeline-ci-cd-github-actions-docker-cloud-run-y-render]] · [[pipeline-ci-cd-github-actions-cloud-run-con-workload-identit]] · [[url-publica-de-despliegue-continuo-google-cloud-run]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

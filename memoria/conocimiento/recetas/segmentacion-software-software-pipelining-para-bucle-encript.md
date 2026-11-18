@@ -29,4 +29,4 @@ Start-up: 5 instrucciones iniciales (llenar pipeline). Finish-up: 5 instruccione
 > b) Muestra el bucle modificado que resulta al aplicar segmentación software (usa el espacio disponible). c) Muestra, junto con el bucle modificado, el código de start-up y finish-up (usa el espacio disponible). d) Planifica el programa obtenido en el apartado anterior para evitar el mayor número de detenciones posibles. Haz las suposiciones usuales: adelantamiento, salto retardado, latencia de instrucciones…
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[como-resolver-segmentacion-software-software-pipelining-en-m]] · [[segmentacion-software-software-pipelining-para-bucle-conteo]] · [[conversion-de-codigo-vliw-compactado-a-bucle-mips64-segmenta]]

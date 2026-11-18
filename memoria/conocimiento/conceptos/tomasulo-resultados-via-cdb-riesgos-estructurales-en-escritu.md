@@ -17,4 +17,4 @@ Tres hechos del test: (8) Resultados via CDB (Common Data Bus), no por buffers d
 > En la técnica de Tomasulo, los resultados de las unidades funcionales pasan a las instrucciones que están a la espera a través del CDB
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[tomasulo-sin-especulacion-detenciones-en-escritura-por-riesg]] · [[riesgos-estructurales-en-tomasulo-en-fase-de-escritura-cdb]] · [[riesgos-estructurales-en-tomasulo-solo-en-escritura-de-resul]]

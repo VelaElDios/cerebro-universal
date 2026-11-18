@@ -17,4 +17,4 @@ El ROB en este modelo tiene 4 entradas y cada entrada registra: número de entra
 > Entry #       Instruction            Stage                         Value" y "Destination Register
 > — `repo:datos/temarios/AC/examenes/January2024.pdf` (cita sin comprobar)
 
-Relacionado: [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[estructura-de-tabla-rob-para-tomasulo-especulativo-con-5-ent]] · [[diferencia-escritura-resultado-vs-terminacion-commit-en-toma]]

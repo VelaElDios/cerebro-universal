@@ -21,4 +21,4 @@ Es práctica estándar en microbenchmarking de bajo nivel para obtener resultado
 > Para fijar la ejecución del programa en un único núcleo usa el siguiente comando: taskset -c <core_number> <executable_file>
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf`
 
-Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]]
+Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset]] · [[como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria]] · [[como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per]]

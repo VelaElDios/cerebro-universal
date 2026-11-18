@@ -16,3 +16,5 @@ Experimento clásico de arquitectura de computadores: se mide el tiempo de acces
 
 > Genera una gráfica de la latencia de acceso según el tamaño del working set.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_pintarLatvsMem.py`
+
+Relacionado: [[patron-de-salto-de-latencia-en-fronteras-de-cache]] · [[como-graficar-latencia-vs-working-set-con-jerarquia-de-cache]] · [[tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script]]

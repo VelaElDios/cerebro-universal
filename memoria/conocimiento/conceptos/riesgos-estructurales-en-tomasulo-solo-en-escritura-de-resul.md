@@ -17,4 +17,4 @@ En Tomasulo, las estaciones de reserva y el bus de datos común (CDB) evitan rie
 > En la técnica de Tomasulo: a) Se pueden producir riesgos estructurales en la fase de escritura
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[riesgos-estructurales-en-tomasulo-en-fase-de-escritura-cdb]] · [[tomasulo-sin-especulacion-detenciones-en-escritura-por-riesg]] · [[restriccion-de-escritura-en-cdb-en-tomasulo-no-mismo-ciclo]]

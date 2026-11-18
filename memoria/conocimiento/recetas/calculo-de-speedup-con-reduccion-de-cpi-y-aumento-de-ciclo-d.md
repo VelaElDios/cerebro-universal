@@ -17,4 +17,4 @@ Sea CPI_ent = c, CPI_FP_ant = 4c. CPI_FP_nue = 0.35 * 4c = 1.4c. Ciclo_ant = T, 
 > We have improved the floating-point unit of a computer, reducing the CPI for floating-point operations to 35% of its initial value. This improvement has, on the other hand, increased the clock cycle time by 20%. Assuming that, before the improvement was made, the CPI for floating-point operations was 4 times the CPI for integer operations, what is the speedup obtained by considering a test program consisting of 6 million integer instructions and 2 million floating-point instructions?
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
 
-Relacionado: [[calculo-de-speedup-con-ley-de-amdahl-para-mejora-de-unidad-d]]
+Relacionado: [[calculo-de-speedup-con-ley-de-amdahl-para-mejora-de-unidad-d]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-10x-en-punto-flo]] · [[calculo-de-speedup-con-ley-de-amdahl-para-instrucciones-de-p]]

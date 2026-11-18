@@ -17,4 +17,4 @@ Ley de Amdahl: Speedup_global = 1 / [(1-f) + f/k] donde f = fracción tiempo uso
 > Sustituimos el disco duro de un ordenador por otro disco cuatro veces más rápido. Si queremos conseguir que nuestro ordenador sea tres veces más rápido que antes, el nuevo disco debe usarse, aproximadamente: c) El 89% del tiempo
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-de-mips-millones-de-instrucciones-por-segundo-y-c]]
+Relacionado: [[definicion-de-mips-millones-de-instrucciones-por-segundo-y-c]] · [[ley-de-amdahl-para-mejora-de-subsistema-disco-6x-mas-rapido]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco]] · [[aplicacion-de-la-ley-de-amdahl-para-determinar-fraccion-de-u]]

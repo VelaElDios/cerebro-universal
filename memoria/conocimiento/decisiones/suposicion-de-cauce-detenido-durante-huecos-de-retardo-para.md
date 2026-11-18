@@ -17,4 +17,4 @@ El modelo pedagógico usado en el temario para calcular penalizaciones asume que
 > NOTA: Asume que durante los ciclos de retardo el cauce se detiene
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
 
-Relacionado: [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]]
+Relacionado: [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]] · [[penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r]] · [[definicion-de-latencia-de-salto-y-penalizacion-por-fallo-de]]

@@ -17,4 +17,4 @@ Un predictor correlacionante (m,n) usa m bits de historia global y n bits de his
 > How many BHTs are there in a (3, 2) correlating predictor? a) 2 b) 3 c) 6 d) 8
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[predictor-correlacionado-m-n-numero-de-bhts-2-m]] · [[numero-de-tablas-bht-en-predictor-correlacionado-m-n]] · [[calculo-de-bits-totales-en-predictor-2-2-con-3-entradas-por]]

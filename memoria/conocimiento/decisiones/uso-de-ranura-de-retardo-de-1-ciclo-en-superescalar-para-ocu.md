@@ -22,4 +22,4 @@ Decisión de arquitectura: el procesador usa **delayed branch con 1 delay slot**
 > As usual, assume that this processor supports forwarding and delayed branch (with 1 delay slot).
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
 
-Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[salto-retardado-delayed-branch-en-planificacion-superescalar]] · [[saltos-retardados-delayed-branches-en-planificacion-estatica]] · [[uso-de-delayed-branch-con-1-delay-slot-en-vliw-para-ocultar]]

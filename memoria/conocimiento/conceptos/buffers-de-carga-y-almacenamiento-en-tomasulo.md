@@ -17,4 +17,4 @@ Los load buffers tienen campos: Nombre, Ocupada, Dirección (dirección efectiva
 > Buffer de carga Ocupado, indica cuándo está disponible el buffer debido a que se haya completado una carga allí asignada Buffers de carga Nombre Ocupada Dirección Carga 1 Carga 2 Carga 3 Carga 4 Carga 5
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[fichero-de-registros-con-campo-qi-en-tomasulo]]
+Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[fichero-de-registros-con-campo-qi-en-tomasulo]] · [[diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la]] · [[uso-de-buffers-de-carga-en-tomasulo-load-buffers]] · [[estado-de-buffers-de-carga-almacenamiento-y-estaciones-de-re]]

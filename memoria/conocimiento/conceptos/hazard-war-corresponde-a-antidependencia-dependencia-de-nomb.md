@@ -17,4 +17,4 @@ WAR (Write After Read) es una antidependencia: una instrucción escribe un regis
 > Un riesgo de tipo WAR: Se corresponde con una antidependencia
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-siempre-genera-hazard-war]]
+Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-siempre-genera-hazard-war]] · [[que-es-un-riesgo-war-y-a-que-dependencia-corresponde]] · [[antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord]]

@@ -17,4 +17,4 @@ Tomasulo evita riesgos RAW y WAR mediante renombrado implícito (estaciones de r
 > En la técnica de Tomasulo (sin especulación): c) La emisión de instrucciones se detiene si existe un riesgo WAW
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[tomasulo-sin-especulacion-detenciones-en-escritura-por-riesg]] · [[gestion-de-riesgos-war-y-waw-en-tomasulo-pregunta-10]] · [[renombrado-de-registros-via-etiquetas-de-estacion-de-reserva]]

@@ -17,4 +17,4 @@ Datos estadísticos clave para dimensionar el impacto de los saltos: (1) Frecuen
 > En promedio: 1 de cada 6 instrucciones es un salto tomado; 1 de cada 8 instrucciones es un salto condicional; 1 de cada 10 instrucciones es un salto condicional y tomado. Saltos condicionales hacia delante 3,7 veces más que hacia atrás. Hacia atrás tomados: 85%. Hacia delante tomados: 60%.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]]
+Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[impacto-de-la-frecuencia-de-saltos-en-el-ilp-y-tamano-de-blo]] · [[frecuencias-de-saltos-en-el-examen-condicionales-30-75-tomad]] · [[taxonomia-de-tecnicas-de-prediccion-de-saltos]]

@@ -24,4 +24,4 @@ Coste: mayor presión de registros (necesita más registros FP/enteros), mayor t
 > Unroll now the two first iterations of the loop and schedule the resulting code for the same superscalar.
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]] · [[planificacion-en-superescalar-3-vias-entero-salto-memoria-fp]] · [[desenrollado-de-bucle-8-veces-para-superscalar-con-latencias]]

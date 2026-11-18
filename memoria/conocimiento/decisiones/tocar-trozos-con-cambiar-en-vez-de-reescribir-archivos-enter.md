@@ -19,3 +19,5 @@ En noviembre de 2026, la memoria de memoria-procesos se atascó 65 pasos: las IA
 
 > reescribirlos enteros mete errores en lo que ya estaba bien
 > — `scripts/proyecto.py`
+
+Relacionado: [[deshacer-el-paso-entero-si-rompe-la-compilacion]] · [[como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador]] · [[como-trabaja-el-cerebro-constructor-prueba-revisor]]

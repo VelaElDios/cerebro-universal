@@ -17,4 +17,4 @@ La predicción dinámica usa hardware que analiza la historia de ejecución. Dos
 > El hardware realiza una predicción basada en la historia – Correlación Temporal – The way a branch resolves may be a good predictor of the way it will resolve at the next execution – Correlación Espacial – Several branches may resolve in a highly correlated manner (a preferred path of execution)
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[taxonomia-de-tecnicas-de-prediccion-de-saltos]]
+Relacionado: [[taxonomia-de-tecnicas-de-prediccion-de-saltos]] · [[predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en]] · [[predictor-correlacionado-o-de-dos-niveles-m-n-correlacion-es]]

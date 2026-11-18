@@ -17,4 +17,4 @@ Fórmula general: T_nuevo = (f * T_original) / k + (1-f) * T_original. Speedup =
 > Tiempo ejecución nuevo = Tiempo afectado por la mejora / Cantidad de la mejora + Tiempo no afectado por la mejora
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab]]
+Relacionado: [[calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab]] · [[ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su]] · [[despeje-de-fraccion-de-tiempo-mejorable-dado-speedup-objetiv]]

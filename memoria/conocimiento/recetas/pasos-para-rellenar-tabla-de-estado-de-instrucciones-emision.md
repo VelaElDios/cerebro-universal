@@ -26,4 +26,4 @@ Nota: Con 1 Load Buffer y 1 Store Buffer, L.D y S.D se serializan en emisión si
 > Rellena el contenido de la tabla de estado de instrucciones al finalizar la ejecución de todas las instrucciones del programa, indicando los ciclos en los que se completa cada etapa.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]]
+Relacionado: [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul]] · [[pasos-para-simular-tomasulo-especulativo-con-rob-y-restricci]]

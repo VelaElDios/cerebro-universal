@@ -17,4 +17,4 @@ Tabla de predictores de un nivel de historia (local history) con procesadores y 
 > Predictores de 1 bit de historia – Gmicro 100 1991 – Alpha 21064 1992 – R8000 1994 – Predictores de 2 bits de historia (bimodales) – MC68060 1991 – Pentium 1994 – Alpha 21064 1995 – UltraSparc 1995 – PowerPC 604 1995 – PowerPC 620 1996 – R10000 1996 – Predictores de 3 bits de historia – PA 8000 1996
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[taxonomia-de-tecnicas-de-prediccion-de-saltos]]
+Relacionado: [[taxonomia-de-tecnicas-de-prediccion-de-saltos]] · [[tabla-historica-de-predictores-en-procesadores-1989-1998]] · [[ejemplos-reales-de-predictores-de-salto-en-procesadores-come]] · [[ejemplo-pentium-pro-predictor-2-2-con-historia-global-de-2-b]]

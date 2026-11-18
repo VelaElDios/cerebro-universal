@@ -17,4 +17,4 @@ Bucle que recorre vectores A y B (direcciones base en R1, R2, decremento de 8 by
 > Bucle: L.D F2, 0(R1) ; carga A(i) MUL.D F4, F2, F0 ; cte * A(i) L.D F6, 0(R2) ; carga B(i) ADD.D F6, F4, F6 ; cte * A(i) + B(i) S.D F6, 0(R2) ; almacena B(i) DADDUI R1, R1, #-8 ; decrementa índice de A DADDUI R2, R2, #-8 ; decrementa índice de B SLTI R4, R1, fin ; comprobación de fin BEQZ R4, Bucle ; salta si R4 = 0
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v]] · [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]]

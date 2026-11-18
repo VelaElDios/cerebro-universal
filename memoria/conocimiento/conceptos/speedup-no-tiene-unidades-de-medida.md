@@ -16,3 +16,5 @@ El speedup (aceleración) es una razón adimensional entre dos tiempos de ejecuc
 
 > The unit of measurement for expressing speedup is… b) Speedup does not have unit
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
+
+Relacionado: [[definicion-de-speedup-como-razon-de-tiempos-de-ejecucion]] · [[calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas]] · [[definicion-de-speedup-y-relacion-con-reduccion-de-tiempo]]

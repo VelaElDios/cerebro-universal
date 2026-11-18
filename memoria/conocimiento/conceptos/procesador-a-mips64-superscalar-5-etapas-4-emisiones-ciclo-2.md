@@ -21,4 +21,4 @@ Características del procesador superscalar del enunciado:
 > Processor A. It is a MIPS64 5-stage superscalar processor, capable of issuing 4 instructions per cycle: two integer instructions (including memory accesses and branches) and two floating-point instructions.
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp]] · [[planificacion-en-superscalar-mips64-4-vias-2-enteros-2-fp-co]] · [[desenrollado-de-bucle-8-veces-para-superscalar-con-latencias]]

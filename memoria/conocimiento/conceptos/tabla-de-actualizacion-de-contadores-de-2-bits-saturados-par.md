@@ -17,4 +17,4 @@ Regla exacta de actualización de los contadores de selección en el predictor h
 > Si el bit más significativo del contador es 1 se selecciona el “Predictor1” en caso contrario el “Predictor2”. Los contadores y bits de predicción están inicializados a 0. Después de cada predicción, además de actualizar los dos predictores, la información de “Contadores” se actualiza según muestra la siguiente tabla: Comportamiento Predictor 1 / Predictor 2 / Acción: Acierto/Acierto→no cambia; Acierto/Fallo→+1; Fallo/Acierto→-1; Fallo/Fallo→no cambia.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c]]
+Relacionado: [[estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c]] · [[reglas-de-actualizacion-de-contadores-de-seleccion-en-predic]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]] · [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]]

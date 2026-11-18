@@ -24,6 +24,6 @@ Temas: [[api]] · [[backend]] · [[base-datos]] · [[donetonic]] · [[grada-colc
 > Tablas juego_perfiles y juego_records (migración 003) ligadas al usuario. API /api/juego protegida con sesión: perfil, empezar y terminar partida. El servidor valida cada resultado con su propio reloj (anti-trampas) y rechaza resultados imposibles. Concurrencia optimista: dos peticiones a la vez no se pisan.
 > — `repo:saas/docs/gestion/README.md` (cita sin comprobar)
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]] · [[api-del-juego-con-validacion-anti-trampas]] · [[validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

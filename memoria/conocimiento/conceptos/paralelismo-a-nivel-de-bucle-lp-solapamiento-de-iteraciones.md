@@ -17,4 +17,4 @@ La definición correcta (opción b) es: «La posibilidad de ejecutar diversas it
 > El paralelismo a nivel de bucle se refiere a...
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[condicion-para-solapar-iteraciones-de-un-bucle-software-pipe]] · [[condicion-para-solapar-iteraciones-de-un-bucle-desenrollado]] · [[tipos-de-dependencias-en-bucles-loop-independent-vs-loop-car]]

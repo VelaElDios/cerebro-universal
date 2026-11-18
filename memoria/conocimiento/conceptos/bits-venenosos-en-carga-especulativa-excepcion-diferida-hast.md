@@ -17,4 +17,4 @@ En Tomasulo especulativo, una carga que falla (excepción) no interrumpe inmedia
 > El estado de los registros antes de ejecutar este código es: x0 =0, x1 =1000, x2 =0, x3 =2000, x4=0. Además, el acceso a la dirección de memoria 0 está prohibido... (I2) lw x4, 0(x2) # carga especulativa de B ... b. La instrucción I2 genera una excepción, establece el bit venenoso en el registro x4 a 1, pero el programa finaliza correctamente.
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf` (cita sin comprobar)
 
-Relacionado: [[comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]]
+Relacionado: [[comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[bits-de-veneno-poison-bits-en-carga-especulativa-marcan-regi]] · [[bits-venenosos-excepcion-no-recuperable-marca-registro-desti]]

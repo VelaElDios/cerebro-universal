@@ -21,4 +21,4 @@ Clasificación de pares de procesadores reales:
 > Dos procesadores con idéntica ISA (x86) y diferente ORG: AMD Opteron e Intel Core i7 ... Dos procesadores con idénticas ISA y ORG, pero diferente tecnología: Intel Core i7 e Intel Xeon 7560 ... Dos procesadores con diferentes ISA, ORG y Tecnología: Intel Celeron e Intel Itanium
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf` (cita sin comprobar)
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[distincion-entre-arquitectura-isa-y-organizacion-microarquit]] · [[distincion-entre-arquitectura-organizacion-y-tecnologia-en-p]] · [[arquitectura-vs-organizacion-misma-arquitectura-implica-mism]]

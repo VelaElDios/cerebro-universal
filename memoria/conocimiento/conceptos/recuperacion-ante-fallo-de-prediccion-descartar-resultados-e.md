@@ -17,4 +17,4 @@ Cuando se detecta un fallo de predicción de salto, el procesador debe hacer un 
 > Ante un caso de fallo de predicción: a. Deben descartarse los resultados de las instrucciones ejecutadas especulativamente y reanudarse la ejecución del programa por el camino correcto
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]]
+Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[recuperacion-ante-fallo-de-prediccion-de-salto-misprediction]] · [[mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt]]

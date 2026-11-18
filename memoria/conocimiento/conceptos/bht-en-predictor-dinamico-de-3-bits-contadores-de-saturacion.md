@@ -17,4 +17,4 @@ La BHT almacena el estado de predicción por entrada. En predictores dinámicos 
 > The BHT (Branch History Table) in a 3-bit dynamic branch predictor is implemented by means of… a) 3-bit saturating counters b) 3-bit shift registers c) 3-bit XOR operations d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[implementacion-bht-con-contadores-saturados-de-2-bits]] · [[implementacion-de-la-bht-en-predictor-dinamico-de-2-bits]]

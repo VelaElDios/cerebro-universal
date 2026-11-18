@@ -17,4 +17,4 @@ Para que el cerebro lea un repo GitHub público: (1) En `proyecto.json` añadir 
 > Copiar `proyectos/_plantilla/` y poner en `proyecto.json` el repo en `repos` y en `fuentes` qué documentos leer (`repo:nombre/...`). Si tiene capturas, `copiar`.
 > — `../../README.md`
 
-Relacionado: [[como-se-empieza-un-proyecto-nuevo-en-el-cerebro]]
+Relacionado: [[como-se-empieza-un-proyecto-nuevo-en-el-cerebro]] · [[campos-de-proyecto-json-y-su-proposito]] · [[los-datos-de-entrenamiento-van-a-un-repo-privado]]

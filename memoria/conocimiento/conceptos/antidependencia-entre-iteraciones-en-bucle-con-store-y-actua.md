@@ -17,4 +17,4 @@ S.D usa R1 (lee) para la dirección de almacenamiento; DADDUI escribe R1 (actual
 > Between the S.D and the DADDUI instructions... a) There is a data dependence in the same iteration b) There is an output dependence in the same iteration c) There is an antidependence between iterations d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[identificacion-de-antidependencia-war-entre-store-e-incremen]] · [[antidependencia-war-entre-s-d-y-daddui-por-r1-en-misma-itera]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]

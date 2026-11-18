@@ -17,4 +17,4 @@ En el ciclo donde se emite el primer S.D (S.D F8, 8(R1)), el ROB contiene las in
 > Sólo para alumnos con Temas 4-6. Indica en la siguiente tabla el estado del ROB (suponiendo que tiene 10 entradas) en el ciclo en el que la primera instrucción S.D es emitida.
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
 
-Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]]
+Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[rob-de-10-entradas-para-secuencia-de-8-instrucciones-en-exam]] · [[como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]]

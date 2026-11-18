@@ -17,4 +17,4 @@ El Branch Target Buffer (BTB) típicamente tiene dos estructuras: una caché de 
 > Una BTB: c) Almacena en una tabla la dirección de destino de los últimos saltos y en otra los bits de predicción de todas las instrucciones de salto condicional
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf` (cita sin comprobar)
 
-Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-cache-de-direcciones-destino-de-saltos-con-bits-de-predi]] · [[proposito-del-branch-target-buffer-btb-ademas-de-bits-de-pre]]

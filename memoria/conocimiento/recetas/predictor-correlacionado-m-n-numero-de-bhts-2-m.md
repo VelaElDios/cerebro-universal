@@ -17,4 +17,4 @@ En un predictor correlacionado de dos niveles (m, n), m es el número de bits de
 > How many BHTs are there in a correlating two-level (3, 2) branch predictor? a) 8
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[predictor-correlacionante-m-n-tiene-2-n-bhts]] · [[numero-de-tablas-bht-en-predictor-correlacionado-m-n]] · [[calculo-de-bits-en-predictor-correlacionado-de-dos-niveles-p]]

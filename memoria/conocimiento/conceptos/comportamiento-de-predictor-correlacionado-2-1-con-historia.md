@@ -17,4 +17,4 @@ Predictor correlacionado (2,1): historia global de 2 bits (GHR) indexa una BHT c
 > c) Detalla el comportamiento de un predictor correlacionado (2, 1), considerando que los últimos saltos ejecutados antes de llegar a la instrucción etiquetada como loop: han sido no tomados, y el estado inicial de los predictores en las BHTs es no tomado fuerte.
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[predictor-correlacionado-1-2-con-bhr-y-dos-bhts]] · [[simulacion-de-predictor-correlacionante-de-2-niveles-2-1-con]] · [[simulacion-paso-a-paso-de-predictor-correlacionado-2-1-con-b]]

@@ -16,3 +16,5 @@ El marcador (scoreboard) presenta cinco limitaciones principales: (1) su rendimi
 
 > Problemas: Rendimiento en función del paralelismo a nivel de instrucción; Número reducido de entradas en el marcador (window size) – emisión de pocas instrucciones a la vez; Problemas con riesgos estructurales – necesidad de un gran número de unidades funcionales; Número de buses a registros elevado; Presencia de riesgos WAR y WAW
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]] · [[estructura-del-marcador-scoreboard-en-arquitectura-de-comput]] · [[pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard]]

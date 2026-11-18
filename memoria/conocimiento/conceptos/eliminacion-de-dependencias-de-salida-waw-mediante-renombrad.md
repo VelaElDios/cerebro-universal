@@ -17,4 +17,4 @@ Las dependencias de salida (WAW) y antidependencias (WAR) son dependencias de no
 > Output dependences: b) Are removed by register renaming
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[definicion-de-dependencia-de-salida-waw-entre-dos-instruccio]] · [[dependencias-de-nombre-se-eliminan-mediante-renombramiento-d]] · [[el-renombrado-de-registros-evita-dependencias-de-nombre-war]]

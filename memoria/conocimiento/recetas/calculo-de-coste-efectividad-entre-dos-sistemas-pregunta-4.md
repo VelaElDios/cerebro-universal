@@ -16,3 +16,5 @@ Coste-efectividad = rendimiento / coste. Rendimiento = 1 / tiempo total. S1: tie
 
 > We want to compare the performance of two different computing systems: S1 and S2. S1 costs 10000€ and S2 costs 20000€. The following measures have been obtained on these systems: Program 1 Time in S1 10 Time in S2 14; Program 2 Time in S1 15 Time in S2 36
 > — `repo:datos/temarios/AC/examenes/June2022.pdf` (cita sin comprobar)
+
+Relacionado: [[comparativa-de-coste-efectividad-entre-sistemas-rendimiento]] · [[como-comparar-efectividad-en-coste-entre-dos-sistemas]] · [[calculo-de-coste-efectividad-entre-dos-sistemas-con-carga-de]]

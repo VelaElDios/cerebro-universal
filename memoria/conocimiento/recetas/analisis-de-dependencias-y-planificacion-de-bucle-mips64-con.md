@@ -17,4 +17,4 @@ Pasos para resolver el problema: 1) Identificar dependencias en una iteración: 
 > El código MIPS64 que se muestra calcula y(i)=x(i)2+2* x(i)+2 , con 1<=i<=18 ... loop: L.S F0, 0(R4) #S1 MUL.S F2, F0, F0 #S2 MUL.S F0, F0, F4 #S3 ADD.S F0, F0, F4 #S4 ADD.S F0, F0, F2 #S5 S.S F0, 0(R8) #S6 DADDUI R4, R4, #4 #S7 DADDUI R8, R8, #4 #S8 BNE R4, R6, loop #S9
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i]] · [[dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema]] · [[tipos-de-dependencias-en-codigo-fp-mips64-para-tomasulo-raw]]

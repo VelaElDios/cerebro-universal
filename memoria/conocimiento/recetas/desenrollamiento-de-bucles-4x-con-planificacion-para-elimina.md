@@ -16,3 +16,5 @@ Transformación de un bucle simple de suma vectorial (fld → fadd.d → fsd →
 
 > Se separan las instrucciones dependientes insertando tantas instrucciones entre ellas como detenciones había
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado]] · [[comparativa-de-ciclos-por-dato-bucle-original-vs-desenrollad]] · [[segmentacion-software-software-pipelining-para-suma-vectoria]]

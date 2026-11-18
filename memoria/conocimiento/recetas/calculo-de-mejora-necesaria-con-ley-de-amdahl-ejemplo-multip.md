@@ -16,3 +16,5 @@ Para que el programa dure la mitad (100 s), la parte no mejorada (50 s) queda fi
 
 > Suppose a program takes 200 seconds to run on a machine, 150 seconds of which are for multiplication operations. How much do I have to improve the multiplication speed if I want the program to run twice as fast?
 > — `repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)`
+
+Relacionado: [[calculo-de-mejora-necesaria-con-la-ley-de-amdahl-test-ac-q3]] · [[ley-de-amdahl-aplicada-a-mejora-de-una-fraccion-del-tiempo-d]] · [[aplicacion-de-la-ley-de-amdahl-para-acelerar-una-fraccion-de]]

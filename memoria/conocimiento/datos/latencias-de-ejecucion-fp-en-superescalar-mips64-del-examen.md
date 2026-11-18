@@ -24,4 +24,4 @@ Todas las unidades funcionales están segmentadas (pipelined), por lo que pueden
 > Además, las sumas en PF requieren 2 ciclos para la etapa de ejecución, las multiplicaciones en PF 3 ciclos y el resto de operaciones 1 ciclo.
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]]
+Relacionado: [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]] · [[latencias-de-unidades-funcionales-dadas-en-el-examen-fp-y-me]] · [[planificacion-en-superscalar-mips64-4-vias-2-enteros-2-fp-co]] · [[configuracion-de-pipeline-mips64-para-problema-de-examen-lat]]

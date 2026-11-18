@@ -19,4 +19,4 @@ Dos reglas críticas para la simulación de ciclos:
 > Cualquier paso de una instrucción que quiera escribir en el CDB (Common Data Bus) no puede hacerlo si otra instrucción ya lo está utilizando. En general, cualquier recurso que se libera en un ciclo de reloj no puede utilizarse hasta el siguiente ciclo de reloj.
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[simulacion-tomasulo-con-especulacion-parametros-de-hardware]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[simulacion-tomasulo-con-especulacion-parametros-de-hardware]] · [[regla-de-contencion-del-cdb-y-disponibilidad-de-recursos-en]] · [[reglas-de-cdb-y-liberacion-de-recursos-en-tomasulo-con-rob]] · [[restricciones-de-timing-en-tomasulo-con-especulacion-examen]]

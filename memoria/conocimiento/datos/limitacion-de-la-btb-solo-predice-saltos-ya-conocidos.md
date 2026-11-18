@@ -17,4 +17,4 @@ La BTB solo puede predecir saltos que ya tienen una entrada en el buffer. Los sa
 > Sólo se pueden predecir aquellas instrucciones de salto que están en la BTB
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
 
-Relacionado: [[prediccion-implicita-sin-bits-de-prediccion-en-btb]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]]
+Relacionado: [[prediccion-implicita-sin-bits-de-prediccion-en-btb]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[accion-ante-fallo-en-btb-con-salto-tomado-real-predecir-nt-p]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]

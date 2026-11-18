@@ -16,3 +16,5 @@ Código: I1: L.D F4,0(R1) (carga en F4), I3: S.D F4,0(R1) (almacena desde F4). M
 
 > Between the instructions I1 and I3... a) There is a data dependence, through F4, between iterations b) There is an output dependence, through F4, in the same iteration c) There is an antidependence, through F4, between iterations d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
+
+Relacionado: [[dependencias-en-bucle-vectorial-dependencia-de-datos-a-trave]] · [[dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]

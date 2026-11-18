@@ -17,4 +17,4 @@ Predictor 1-nivel 2 bits: cada instrucción de salto tiene su contador de 2 bits
 > b) Detail the behavior of a one-level branch predictor using 2 bits per branch instruction, assuming the same input vector, and considering the initial state indicated in the table. Use columns 3, 4, and 5. Prediction bits for B1 and B2 (Initial state) 00 11
 > — `repo:datos/temarios/AC/examenes/June2020.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[simulacion-de-predictor-de-un-nivel-con-contadores-de-satura]] · [[simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos]] · [[simulacion-de-predictor-two-level-correlacionante-2-1-con-bh]]

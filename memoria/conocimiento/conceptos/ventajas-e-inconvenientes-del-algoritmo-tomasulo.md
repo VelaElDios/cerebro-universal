@@ -26,4 +26,4 @@ Inconvenientes:
 > • Elimina el cuello de botella de los registros  • Evita riesgos WAR y WAW  • Permite el desenrollamiento en hardware  • No está limitado a bloques básicos (con predicción de saltos)  • Mayor complejidad hardware  • Muchos almacenamientos asociados por ciclo  • CDB limita el rendimiento
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[ventajas-e-inconvenientes-de-la-planificacion-dinamica-frent]] · [[objetivo-del-algoritmo-tomasulo-test-ac-q10]] · [[comparativa-tomasulo-vs-marcador-scoreboard]]

@@ -16,3 +16,5 @@ Código original (9 instrucciones/iteración): L.D F2,0(R1); L.D F4,0(R2); ADD.D
 
 > On a separate sheet of paper, unroll the code 4 times (you must deliver that sheet with the scheduling as well). Hint: it is required to rename the registers, since they are limited.
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
+
+Relacionado: [[desenrollado-minimo-de-bucle-mips64-para-eliminar-stalls-con]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]] · [[desenrollado-de-bucle-4x-con-salto-retardado-para-eliminar-s]]

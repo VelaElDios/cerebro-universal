@@ -27,4 +27,4 @@ Estructura y uso del ROB (6 entradas, índices 0-5) en Tomasulo especulativo:
 > buffer de reordenamiento (ROB). El sistema dispone de un buffer de carga y un buffer de almacenamiento con 1 entrada.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]] · [[estructura-del-reorder-buffer-rob-en-tomasulo-con-especulaci]] · [[estructura-de-tabla-rob-para-tomasulo-especulativo-con-5-ent]]

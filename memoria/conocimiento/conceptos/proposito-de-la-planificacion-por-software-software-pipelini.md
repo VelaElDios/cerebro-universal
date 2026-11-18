@@ -17,4 +17,4 @@ El software pipelining (planificación por software / desenrollado + reordenaci�
 > Software pipelining pursues... a) Reduce stalls due to WAR hazards b) Reduce stalls due to RAW hazards c) Reduce stalls due to WAW hazards d) Reduce stalls due to control hazards
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[objetivo-de-la-segmentacion-software-software-pipelining]] · [[objetivo-del-desenrollamiento-de-bucles-loop-unrolling]] · [[planificacion-software-software-pipelining-transforma-iterac]]

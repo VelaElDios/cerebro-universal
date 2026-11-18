@@ -25,4 +25,4 @@ La latencia efectiva del salto es 0 ciclos para la instrucción en delay slot; e
 > We assume forwarding and delayed branch.
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
 
-Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[uso-de-delayed-branch-con-1-delay-slot-en-vliw-para-ocultar]] · [[salto-retardado-delayed-branch-en-planificacion-superescalar]] · [[delayed-branch-en-vliw-y-su-efecto-en-planificacion]]

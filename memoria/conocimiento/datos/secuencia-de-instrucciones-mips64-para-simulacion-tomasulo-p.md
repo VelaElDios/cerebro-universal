@@ -17,4 +17,4 @@ Las 10 instrucciones a simular en orden de programa: 1) DIV.D F0, F2, F4 2) ADD.
 > DIV.D F0, F2, F4; ADD.D F2, F6, F8; ADD.D F0, F4, F8; S.D F0, 0(R1); MUL.D F2, F4, F0; DIV.D F6, F8, F0; L.D F6, 0(R2); ADD.D F0, F6, F2; MUL.D F2, F0, F8; ADD.D F2, F0, F6
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf` (cita sin comprobar)
 
-Relacionado: [[configuracion-hardware-tomasulo-con-especulacion-para-examen]] · [[restricciones-de-uso-del-bus-de-datos-comun-y-recursos-en-to]]
+Relacionado: [[configuracion-hardware-tomasulo-con-especulacion-para-examen]] · [[restricciones-de-uso-del-bus-de-datos-comun-y-recursos-en-to]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-con-div]] · [[secuencia-de-instrucciones-mips64-del-examen-junio-2012-toma]] · [[secuencia-de-10-instrucciones-mips64-fp-para-ejercicio-3-tom]]

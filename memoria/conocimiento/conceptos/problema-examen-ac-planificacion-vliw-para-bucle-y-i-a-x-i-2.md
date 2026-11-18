@@ -17,4 +17,4 @@ Bucle kernel: LF F2,0(R2); MULTF F4,F2,F2; MULTF F6,F4,F1; SF 0(R4),F6; ADDI R2,
 > Planifica el código para eliminar el mayor número de detenciones posible. Rellena la siguiente tabla.
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf`
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[planificacion-vliw-para-bucle-con-latencias-mem-2-add-d-1-mu]]

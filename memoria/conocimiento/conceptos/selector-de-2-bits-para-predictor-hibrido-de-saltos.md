@@ -22,4 +22,4 @@ Si Selector ≥ 2 se usa Predictor 1; en caso contrario Predictor 2. Selector y 
 > To select the predictor to employ in each case there is a "Selector", which is a 2-bit saturating counter
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]] · [[reglas-de-actualizacion-del-selector-hibrido-de-2-bits]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]]

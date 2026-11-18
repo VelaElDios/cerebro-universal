@@ -20,4 +20,4 @@ Ambas reglas añaden ciclos de burbuja respecto al modelo ideal y son cruciales 
 > The execution stage of an instruction that is waiting for a result cannot start in the same cycle in which the result is written to the CDB (Common Data Bus). • A resource that is released in one clock cycle cannot be used until the next clock cycle.
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[reglas-de-cdb-y-liberacion-de-recursos-en-tomasulo-con-rob]] · [[restriccion-de-uso-del-cdb-y-liberacion-de-recursos-en-tomas]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]]

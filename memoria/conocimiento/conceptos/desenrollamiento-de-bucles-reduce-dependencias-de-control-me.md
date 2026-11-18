@@ -16,3 +16,5 @@ El desenrollamiento de bucles (loop unrolling) replica el cuerpo del bucle varia
 
 > La técnica de desenrollamiento de bucles se usa para: d. Reducir las dependencias de control planificando estáticamente las instrucciones
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf` (cita sin comprobar)
+
+Relacionado: [[proposito-del-desenrollado-de-bucles-loop-unrolling]] · [[objetivo-del-desenrollamiento-de-bucles-loop-unrolling]] · [[desenrollamiento-de-bucles-loop-unrolling-permite-planificar]]

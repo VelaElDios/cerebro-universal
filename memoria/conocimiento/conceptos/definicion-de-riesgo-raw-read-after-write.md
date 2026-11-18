@@ -16,3 +16,5 @@ La pregunta 5 presenta opciones incorrectas: RAW NO es dependencia de control (e
 
 > Un riesgo de tipo RAW: Se corresponde con una dependencia de control
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
+
+Relacionado: [[riesgo-raw-read-after-write-y-su-causa]] · [[riesgo-raw-como-dependencia-de-datos-verdadera]] · [[diferencia-entre-dependencia-de-datos-raw-antidependencia-wa]]

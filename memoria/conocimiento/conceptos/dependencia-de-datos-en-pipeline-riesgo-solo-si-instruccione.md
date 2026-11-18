@@ -17,4 +17,4 @@ Una dependencia (RAW real) solo se convierte en riesgo (hazard) si la instrucci�
 > La existencia de una dependencia de datos entre dos instrucciones ejecutadas en un procesador segmentado: a) Puede provocar un riesgo de datos si las instrucciones están suficientemente cerca
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[riesgo-raw-como-dependencia-de-datos-verdadera]] · [[tipos-de-riesgos-en-pipeline-estructurales-datos-control]] · [[adelantamiento-forwarding-para-riesgos-raw]]

@@ -16,3 +16,5 @@ En el fragmento: fmul.d f0,f6,f4 (S1); fsub.d f8,f0,f2 (S2) -> RAW en f0: S2 lee
 
 > Es crítico que el marcador sea capaz de distinguir riesgos RAW y WAR puesto que los segundos requieren la detención de la instrucción que va a escribir hasta que la instrucción que lee inicia la ejecución, y los primeros requieren detener la instrucción que lee hasta que termina la instrucción que escribe (es decir, justo lo contrario).
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
+
+Relacionado: [[deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr]] · [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]] · [[completar-tabla-marcador-con-uf-mul-7c-add-5c-div-15c-ejerci]]

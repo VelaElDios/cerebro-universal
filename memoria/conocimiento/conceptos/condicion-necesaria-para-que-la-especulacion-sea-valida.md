@@ -17,4 +17,4 @@ La especulación requiere que las excepciones de instrucciones especulativas no 
 > What condition must be met for speculation to be valid?
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[bits-venenosos-excepcion-no-recuperable-marca-registro-desti]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[comportamiento-de-bit-de-veneno-poison-bit-ante-excepcion-en]]

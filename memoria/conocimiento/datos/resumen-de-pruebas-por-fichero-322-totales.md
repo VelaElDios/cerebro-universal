@@ -17,6 +17,6 @@ Distribución de 322 pruebas automáticas por archivo: userService.test.js (27),
 > | **Total** | **322** | 140 del Sprint 1 (cuentas, API, datos, seguridad, prueba técnica), 136 del juego hasta la Fase 6 y 46 de la Fase 7 (incluidos los arreglos de guardado, hitboxes y rendimiento) |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[metricas-de-calidad-80-tests-automatizados-con-node-test-com]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

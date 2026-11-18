@@ -17,4 +17,4 @@ El código alterna a y b. Iteración 1: a=1->0 (B1 NT, B2 T, B3 T), Iteración 2
 > Indica cuál es el rendimiento de un predictor de saltos de 2 bits, en términos de predicciones correctas por iteración, cuando la ejecución de este código se encuentra en un estado estable. b) Indica cuál es el rendimiento de un predictor de saltos correlacionado (1,1), en términos de predicciones correctas por iteración, cuando la ejecución de este código se encuentra en un estado estable.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[predictor-de-2-bits-por-instruccion-y-predictor-correlaciona]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[predictor-correlacionado-2-1-para-bucle-de-conteo-de-caracte]]

@@ -16,3 +16,5 @@ Procesador con: 1 unidad funcional completamente en tubería para suma FP (ADD.D
 
 > Assume the following processor characteristics:   •   1 completely pipelined functional unit per floating point operation type (addition and multiplication)   •   2 integer functional units, with a latency of 0   •   We ignore the branch delay
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
+
+Relacionado: [[supuestos-del-examen-retardo-de-salto-ignorado-y-unidades-en]] · [[latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]

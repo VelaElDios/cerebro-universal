@@ -16,3 +16,5 @@ Speedup_global = 1 / [(1 - f) + f/k], donde f = fracción mejorada (0.7), speedu
 
 > We want to obtain a speedup of 40% for this test program, by improving the execution of floating point instructions. Then, the factor of enhancement for this part of the computer should be, approximately
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
+
+Relacionado: [[aplicacion-de-la-ley-de-amdahl-para-mejora-de-coma-flotante]] · [[aplicacion-de-la-ley-de-amdahl-para-calcular-fraccion-de-tie]] · [[como-calcular-factor-de-mejora-necesario-segun-ley-de-amdahl]]

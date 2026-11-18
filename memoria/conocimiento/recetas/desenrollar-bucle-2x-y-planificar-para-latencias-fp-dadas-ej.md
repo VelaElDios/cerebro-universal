@@ -16,3 +16,5 @@ El bucle original carga f2, multiplica f4=f2*f0, carga f6, suma f6=f4+f6, almace
 
 > Considera una segmentación de punto flotante en la que la duración de la etapa EX de la multiplicación en PF es 4 ciclos, la de la suma en PF es 2 ciclos, la de la división en PF es 16 ciclos y la del resto es un ciclo.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
+
+Relacionado: [[desenrollar-bucle-minimo-para-planificar-sin-detenciones-eje]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]] · [[desenrollar-bucle-para-eliminar-dependencias-y-maximizar-ilp]]

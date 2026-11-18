@@ -16,3 +16,5 @@ Pasos: 1) Calcular CPI medio ponderado: CPI = Σ (fracción_i × ciclos_i). 2) M
 
 > Computer 1 needs 2, 4, and 6 cycles for executing type A, B and C instructions, respectively. Computer 2 needs 2, 2, and 10 cycles. Computer 1 works at 1.2 GHz, and Computer 2 works at 1.8 GHz. The benchmark used is composed of 20% type A instructions, 50% type B, and 30% type C. What is the MIPS speed of both computers?
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
+
+Relacionado: [[calculo-de-mips-para-dos-maquinas-con-mismo-isa-y-mezcla-de]] · [[calculo-de-mips-para-dos-procesadores-con-distinto-cpi-y-fre]] · [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]]

@@ -17,4 +17,4 @@ En el ciclo exacto donde termina la 1ª L.D (Write Result completado), el ROB de
 > Completa la tabla para mostrar el contenido del ROB (que sólo tiene 4 entradas) justo en el mismo ciclo en el que finaliza la primera instrucción L.D.
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[simulacion-tomasulo-con-especulacion-parametros-clave-y-rest]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]]
+Relacionado: [[simulacion-tomasulo-con-especulacion-parametros-clave-y-rest]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[simulacion-tomasulo-especulativa-con-rob-de-4-entradas-exame]] · [[como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l]] · [[estructura-de-tabla-rob-de-4-entradas-para-volcado-en-ciclo]]

@@ -16,3 +16,5 @@ Arquitectura VLIW objetivo del Problema 3. 5 issue slots fijos por ciclo: 2 memo
 
 > en un procesador VLIW versión 1.0 con las siguientes características: a) Ancho de emisión: 5 operaciones por ciclo. Slots: [Memoria1 | Memoria2 | PF1 | PF2 | Entera/Salto] b) Todas las unidades funcionales están completamente segmentadas. d) Salto retardado: La instrucción de salto (bnez) tiene 1 ciclo de retardo.
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf` (cita sin comprobar)
+
+Relacionado: [[caracteristicas-del-procesador-vliw-del-examen-enero-2016-pr]] · [[configuracion-vliw-del-examen-ac-enero-2017-6-unidades-laten]] · [[parametros-temporales-de-pipeline-para-vliw-problema-3b]]

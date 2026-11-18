@@ -16,3 +16,5 @@ Trace scheduling es una técnica de planificación estática global que optimiza
 
 > La técnica de planificación de trazas a) Sirve para aumentar los saltos internos en un bucle b) Sirve para eliminar los saltos internos en un bucle c) Sirve para eliminar las dependencias entre las iteraciones de un bucle
 > — `repo:datos/temarios/AC/examenes/Noviembre2011.pdf`
+
+Relacionado: [[planificacion-de-trazas-trace-scheduling-elimina-saltos-inte]] · [[que-representa-un-trace-en-trace-scheduling]] · [[definicion-y-objetivo-de-la-planificacion-de-trazas-trace-sc]]

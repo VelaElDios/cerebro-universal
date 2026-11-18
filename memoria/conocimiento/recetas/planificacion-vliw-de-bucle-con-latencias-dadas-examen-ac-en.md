@@ -16,3 +16,5 @@ El bucle original tiene 10 instrucciones: 2 cargas (L.D, 2 ciclos MEM), 2 sumas 
 
 > Schedule the next loop for a VLIW processor with four operations per instruction and without restrictions regarding to the type of operations that can be issued to each ALU.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf`
+
+Relacionado: [[planificacion-vliw-para-bucle-con-latencias-mem-2-add-d-1-mu]] · [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]]

@@ -16,3 +16,5 @@ La secuencia tiene período 4 (0,1,0,2). Para eliminar detenciones por dependenc
 
 > c) Desenrolla el bucle el número mínimo de veces para poder planificarlo sin detenciones. Calcula el número de ciclos por resultado del código resultante.
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
+
+Relacionado: [[desenrollado-de-bucle-minimo-para-planificacion-sin-detencio]] · [[desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac]] · [[patron-de-saltos-en-bucle-mips64-secuencia-0-1-0-2-examen-en]]

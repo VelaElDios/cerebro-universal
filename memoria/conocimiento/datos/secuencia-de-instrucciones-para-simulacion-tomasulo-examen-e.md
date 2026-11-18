@@ -16,3 +16,5 @@ Código a simular en el ejercicio 2a. Ocho instrucciones: MUL.D F4,F6,F2; SUB.D 
 
 > MUL.D F4,F6,F2 SUB.D F6,F4,F10 L.D F4,0(R1) DIV.D F0,F4,F6 L.D F8,0(R2) SUB.D F2,F8,F0 ADD.D F0,F8,F2 S.D F0,0(R1)
 > — `repo:datos/temarios/AC/examenes/January2023.pdf`
+
+Relacionado: [[secuencia-de-instrucciones-para-simulacion-tomasulo-problema]] · [[secuencia-de-instrucciones-fp-del-examen-para-tomasulo-10-in]] · [[secuencia-de-10-instrucciones-mips64-fp-para-ejercicio-3-tom]]

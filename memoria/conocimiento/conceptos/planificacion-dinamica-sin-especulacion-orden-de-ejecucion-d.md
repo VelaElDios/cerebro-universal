@@ -17,4 +17,4 @@ En planificación dinámica (p. ej., algoritmo de Tomasulo o Scoreboard), las in
 > In dynamic scheduling techniques (without speculation), the order in which the execution step of different instruction is performed… c) is given by program data dependences
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]] · [[planificacion-dinamica-tomasulo-orden-de-ejecucion-por-dispo]] · [[planificacion-dinamica-sin-especulacion-emision-en-orden-eje]]

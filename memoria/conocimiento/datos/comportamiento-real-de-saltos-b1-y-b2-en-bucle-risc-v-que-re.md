@@ -17,4 +17,4 @@ Secuencia 10 elementos: 0,1,0,2,0,3,0,4,0,5. Bucle: lw x2,0(x1); beqz x2,next (B
 > El siguiente bucle RISC-V recorre la siguiente secuencia 0, 1, 0, 2, 0, 3, 0, 4, 0, 5. Suponemos que x1 y x3 han sido inicializados con las direcciones del primer y del último elemento de la secuencia, respectivamente.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips]] · [[analisis-en-estado-estable-de-predictor-2-bits-vs-correlacio]] · [[analisis-de-prediccion-de-saltos-en-bucle-con-dos-saltos-con]]

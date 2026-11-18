@@ -41,4 +41,4 @@ Ventaja: elimina saltos, crea un bloque básico grande que el compilador puede p
 > If (r1==r2) sub x3, x1, x2 bne x3, x0, L2 CMPEQ R1, R2, p4 CMPNE R1, R2, p5 <p4> ADD R3, R4, R5 <p5> SUB R6, R4, R5
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[instrucciones-predicadas-convertir-dependencias-de-control-e]] · [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[instrucciones-predicadas-convertir-dependencias-de-control-e]] · [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[ventajas-e-inconvenientes-de-las-instrucciones-predicadas]] · [[salto-retardado-y-instrucciones-predicadas-como-alternativas]]

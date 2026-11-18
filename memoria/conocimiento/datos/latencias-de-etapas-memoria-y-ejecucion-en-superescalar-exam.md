@@ -23,4 +23,4 @@ Estos números determinan la longitud mínima de la planificación: una carga ta
 > El procesador invierte 2 ciclos para la etapa MEM en las cargas y 2 ciclos para completar la etapa EX de las operaciones aritméticas.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[latencias-y-grado-de-superescalaridad-del-problema-3-ac-juni]] · [[parametros-de-pipeline-superescalar-mem-2-ciclos-ex-3-ciclos]] · [[planificacion-en-superescalar-grado-2-con-latencias-mem-2-y]]

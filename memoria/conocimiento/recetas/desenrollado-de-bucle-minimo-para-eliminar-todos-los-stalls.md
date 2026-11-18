@@ -17,4 +17,4 @@ Factor de desenrollado mínimo = ceil(CPR_original / latencia_mínima_teórica).
 > c) Indicate the code obtained after applying the loop unrolling technique the minimum number of times to avoid all stalls:
 > — `repo:datos/temarios/AC/examenes/June2020.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi]] · [[desenrollado-minimo-de-bucle-mips64-para-eliminar-stalls-con]] · [[desenrollado-y-planificacion-sin-stalls-del-bucle-mips64-eje]] · [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]]

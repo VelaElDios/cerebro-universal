@@ -30,4 +30,4 @@ Clave: En el ciclo de emisión *aún no se han leído operandos* (eso pasa en si
 > Muestra el contenido de la estación de reserva del sumador/restador en el ciclo en el que se emite la instrucción ADD.D F6, F4, F6 en el apartado b
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]]
+Relacionado: [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[como-leer-la-tabla-de-estado-de-tomasulo-en-ciclos-consecuti]] · [[como-evoluciona-la-tabla-de-estaciones-de-reserva-en-tomasul]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo-test-ac-q11]]

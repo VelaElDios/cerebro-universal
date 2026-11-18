@@ -17,4 +17,4 @@ Para simular el predictor híbrido en este bucle: 1) Determinar los resultados r
 > The following MIPS64 loop reads from memory the first six Fibonacci numbers: 0, 1, 1, 2, 3, 5. Assume that R1, R2, and R5 have been previously initialized. loop: LW R3, 0(R1); BEQZ R3, next (B1); DMUL R3, R3, R5; SW R3, 0(R1); next: DADDUI R1, R1, #4; DADDUI R2, R2, #-1; BNEZ R2, loop (B2)
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
 
-Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]]
+Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]] · [[predictor-hibrido-con-predictores-locales-de-1-bit-y-3-bits]] · [[simulacion-de-predictor-de-saltos-de-1-nivel-con-2-bits-cont]] · [[simulacion-paso-a-paso-del-predictor-hibrido-con-contadores]]

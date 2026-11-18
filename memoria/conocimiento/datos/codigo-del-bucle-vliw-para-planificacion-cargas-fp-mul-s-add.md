@@ -17,4 +17,4 @@ Bucle original de 11 instrucciones: dos cargas FP (L.S) desde R1 y R2 a F1, F2; 
 > Loop: L.S F1, 0(R1); L.S F2, 0(R2); MUL.S F4, F2, F1; S.S F4, 0(R1); L.S F3, 0(R3); ADD.S F5, F4, F3; S.S F5, 0(R3); DADDUI R1, R1, #4; DADDUI R2, R2, #4; DADDUI R3, R3, #4; DADDUI R4, R4, #-1; BNEZ R4, Loop
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
 
-Relacionado: [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]]
+Relacionado: [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]] · [[planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame]]

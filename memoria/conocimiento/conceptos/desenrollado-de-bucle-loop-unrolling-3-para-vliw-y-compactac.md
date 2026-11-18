@@ -17,4 +17,4 @@ Desenrollar 3 veces replica el cuerpo del bucle 3 veces, ajustando offsets de me
 > Unroll 3 times the original loop and schedule it for this VLIW processor. Use the table. Compact the VLIW code as much as possible. You can reorder the instructions, without affecting the program behavior.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf`
 
-Relacionado: [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]]
+Relacionado: [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[desenrollado-de-bucle-3x-y-planificacion-vliw-compactada]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]] · [[como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo]]

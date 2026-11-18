@@ -17,4 +17,4 @@ Pasos para rellenar tabla Issue/Execution/Commit: 1) Issue (emisión): en orden,
 > The processor has the following characteristics: • 1 cycle for loads and stores. • 4 cycles for floating-point multiplication (FP). • 3 cycles for floating-point addition (FP). • 6 cycles for floating-point division (FP). • Reservation stations per FP unit: 2 entries. • Load buffer: 2 entries. • Store buffer: 1 entry. • The execution stage of an instruction waiting for a result cannot start in the same cycle in which the result is written to the CDB.
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[pasos-para-completar-tabla-de-ejecucion-tomasulo-issue-execu]] · [[rellenar-tabla-de-ejecucion-tomasulo-columnas-issue-executio]]

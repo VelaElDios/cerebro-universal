@@ -17,4 +17,4 @@ El CPI ideal (máximo rendimiento teórico) de un procesador superescalar que pu
 > A grade 3-way superscalar has an ideal CPI of 1/3
 > — `repo:datos/temarios/AC/examenes/January2022.pdf` (cita sin comprobar)
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[calculo-de-cpi-en-bucle-desenrollado-superescalar-con-ancho]] · [[grado-de-un-superescalar-a-partir-de-su-cpi-ideal]] · [[cpi-tras-desenrollado-y-planificacion-de-bucle]]

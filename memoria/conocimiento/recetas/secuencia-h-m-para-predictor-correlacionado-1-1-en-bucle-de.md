@@ -17,4 +17,4 @@ Predictor (1,1): 1 bit de historia global (GHR), 1 bit por entrada en tabla (con
 > Indicate the sequence of Hits (H) and Misses (M) for branch B1 using a (1, 1) correlating predictor whose values are initially all zeros.
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
-Relacionado: [[secuencia-h-m-para-predictor-2-bit-debilmente-no-tomado-en-b]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]]
+Relacionado: [[secuencia-h-m-para-predictor-2-bit-debilmente-no-tomado-en-b]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[predictor-correlacionado-1-1-en-bucle-secuencia-0-1-0-2]] · [[secuencia-de-aciertos-fallos-en-predictor-de-2-bits-iniciali]]

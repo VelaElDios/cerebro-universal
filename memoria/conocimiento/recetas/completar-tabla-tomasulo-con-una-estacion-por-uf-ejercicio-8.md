@@ -17,4 +17,4 @@ Tabla Tomasulo: Instrucción, Emisión, Ejecución (inicio-fin), Escritura resul
 > Completa la siguiente tabla usando la técnica de Tomasulo. Explica los motivos de las detenciones, si las hay. Ten en cuenta las siguientes consideraciones: i. sólo hay una estación de reserva por unidad funcional ii. una instrucción que está esperando una unidad funcional puede ser emitida en el mismo ciclo que la instrucción que está usando dicha unidad completa su etapa de escritura de resultados. iii. el CDB puede ser escrito y leído en el mismo ciclo
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[completar-tabla-marcador-con-uf-mul-7c-add-5c-div-15c-ejerci]]
+Relacionado: [[completar-tabla-marcador-con-uf-mul-7c-add-5c-div-15c-ejerci]] · [[tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm]] · [[primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio]] · [[planificacion-con-algoritmo-tomasulo-issue-execution-commit]]

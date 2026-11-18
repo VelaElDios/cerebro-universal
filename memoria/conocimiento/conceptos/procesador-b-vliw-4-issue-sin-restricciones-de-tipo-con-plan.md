@@ -16,3 +16,5 @@ Procesador VLIW (Very Long Instruction Word) que emite 4 operaciones por ciclo s
 
 > Processor B. VLIW that can issue four operations per instruction in each cycle and does not impose restrictions on the types of operations that can be issued.
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
+
+Relacionado: [[procesador-b-vliw-4-operaciones-ciclo-sin-restricciones-de-t]] · [[planificacion-estatica-agresiva-para-vliw-4-issue-con-renomb]] · [[planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip]]

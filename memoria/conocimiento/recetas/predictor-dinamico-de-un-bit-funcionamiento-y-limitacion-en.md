@@ -16,3 +16,5 @@ Funcionamiento: un bit por salto condicional. Estados: 0 = predice "no tomado" (
 
 > Usa un bit de predicción por cada instrucción de salto – El bit refleja el comportamiento de la última ejecución, es decir, si el salto fue tomado o no tomado la última vez – IDEA: Si un salto fue efectivo es probable que vuelva a serlo – Máquina de dos estados – no tomado (0) – tomado (1) – Registro de historia – contador saturado de 1 bit – Predicción – valor del registro de historia – Limitación – Sólo se registra el comportamiento de la ejecución del salto – Dos malas predicciones en los cambios
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[como-el-predictor-de-2-bits-resuelve-el-problema-de-bucles-a]] · [[predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce]] · [[calculo-de-predicciones-correctas-en-bucles-anidados-con-pre]]

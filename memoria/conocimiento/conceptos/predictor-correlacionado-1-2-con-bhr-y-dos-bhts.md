@@ -17,4 +17,4 @@ Un predictor correlacionado (1,2) usa un registro de historial de saltos (BHR) d
 > Detalla el comportamiento de un predictor correlacionado (1, 2), considerando que el último salto ejecutado antes de llegar a la instrucción etiquetada como loop: ha sido tomado, y el estado inicial de los predictores en las BHTs es no tomado fuerte.
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[comportamiento-de-predictor-correlacionado-2-1-con-historia]] · [[predictor-correlacionante-de-dos-niveles-1-1-con-bhr-global]] · [[simulacion-paso-a-paso-de-predictor-correlacionado-2-1-con-b]]

@@ -16,3 +16,5 @@ El problema evalúa tres enfoques: (a) Procesador sin ayuda para especulación: 
 
 > a) Un procesador sin ayuda para la especulación. b) Mecanismo de cooperación hardware/software sin distinción entre instrucciones normales e instrucciones especulativas. c) Especulación con poison bits.
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
+
+Relacionado: [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]] · [[tres-mecanismos-de-manejo-de-excepciones-para-instrucciones]] · [[convencion-etiquetas-indefinido-y-sucio-para-poison-bits-en]]

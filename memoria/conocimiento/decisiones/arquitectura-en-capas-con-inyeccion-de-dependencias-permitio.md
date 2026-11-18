@@ -22,6 +22,6 @@ La DI desacopla implementaciones concretas (repositorios, servicios de email, au
 > La **arquitectura en capas con inyección de dependencias** permitió cambiar de memoria a PostgreSQL, añadir correo y Google o montar un juego entero encima sin tocar la lógica existente.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[decisiones-de-diseno-del-backend-con-alternativas-y-justific]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

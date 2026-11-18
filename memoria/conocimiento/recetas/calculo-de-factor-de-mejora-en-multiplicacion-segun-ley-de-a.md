@@ -16,3 +16,5 @@ Tiempo original T=300 s, tiempo en multiplicación T_mul=250 s (fracción f=250/
 
 > A given program takes 300 seconds to run on a machine, of which 250 seconds correspond to multiplication operations. How much do I have to improve the multiplication speed if I want the program to run five times faster?
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
+
+Relacionado: [[calculo-de-speedup-con-ley-de-amdahl-en-pregunta-de-examen]] · [[calculo-de-mejora-necesaria-con-la-ley-de-amdahl-test-ac-q3]] · [[calculo-de-mejora-necesaria-con-ley-de-amdahl-ejemplo-multip]]

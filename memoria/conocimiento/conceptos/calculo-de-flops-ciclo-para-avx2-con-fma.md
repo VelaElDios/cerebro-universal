@@ -20,3 +20,5 @@ Total = 8 × 2 × 2 = 32 FLOPs/ciclo/núcleo. Para AVX-512 serían 64 (16 floats
 
 > FLOPSperCYCLE =32	 # En procesadores x86 modernos con soporte para AVX2 y FMA = 8 floats * 2 ops FMA * 2 unidades FMA = 32
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_3_pintarRoofLin.py`
+
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-flops-totales-para-el-kernel-de-la-tarea-2-1]] · [[latencia-de-carga-fp-y-multiplicacion-doble-en-la-simulacion]]

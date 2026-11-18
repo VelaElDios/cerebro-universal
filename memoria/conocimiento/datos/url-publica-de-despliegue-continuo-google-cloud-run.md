@@ -17,6 +17,6 @@ La aplicación se despliega automáticamente en Google Cloud Run al fusionar PRs
 > el PR está fusionado y desplegado en la URL pública (https://la-grada-colchonera-1081564062572.europe-southwest1.run.app)
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]]
+Relacionado: [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[url-base-de-la-aplicacion-la-grada-colchonera-en-cloud-run]] · [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[pipeline-ci-cd-github-actions-cloud-run-con-workload-identit]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

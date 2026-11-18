@@ -47,4 +47,4 @@ Total: B1: taken, taken, not taken (3 ejecuciones). B2: 8 taken, 2 not taken (10
 > Indicate the actual outcome (taken/not taken) for branches B1 and B2, if initially R1=2, R2=4, and R3=0 (R4 contains a valid memory address).
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
 
-Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[resultados-reales-de-saltos-b1-y-b2-en-bucle-mips64-secuenci]] · [[comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips]] · [[como-determinar-la-secuencia-real-de-saltos-y-resultados-en]]

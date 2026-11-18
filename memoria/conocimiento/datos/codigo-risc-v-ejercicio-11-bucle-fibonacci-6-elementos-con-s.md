@@ -16,3 +16,5 @@ Código: loop: lw x3,0(x1); B1=beqz x3,next; mul x3,x3,x5; sw x3,0(x1); next: ad
 
 > El siguiente código de RISC-V lee de memoria los 6 primeros números de una serie de Fibonacci 0, 1, 1, 2, 3, 5. Asume que x1, x2 y x5 se han inicializado previamente.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
+
+Relacionado: [[codigo-risc-v-ejercicio-10-bucle-conteo-a-en-exam18-con-salt]] · [[codigo-risc-v-ejercicio-12-bucle-vector-disperso-0-7-0-0-0-0]] · [[comportamiento-real-de-saltos-b1-y-b2-en-bucle-risc-v-que-re]]

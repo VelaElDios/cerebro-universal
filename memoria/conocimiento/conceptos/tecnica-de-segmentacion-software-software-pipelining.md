@@ -17,4 +17,4 @@ El software pipelining reorganiza el bucle para iniciar una nueva iteración ant
 > Transforma un bucle en otro con menos iteraciones y mas instrucciones
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
 
-Relacionado: [[condicion-para-solapar-iteraciones-de-un-bucle-desenrollado]]
+Relacionado: [[condicion-para-solapar-iteraciones-de-un-bucle-desenrollado]] · [[proposito-de-la-segmentacion-software-software-pipelining-te]] · [[planificacion-software-software-pipelining-transforma-iterac]] · [[que-hace-la-tecnica-de-segmentacion-software-software-pipeli]]

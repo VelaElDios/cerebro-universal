@@ -16,3 +16,5 @@ La latencia de un salto es el número de ciclos extra entre la etapa IF (fetch) 
 
 > Assuming a conditional branch, the miss penalty in the prediction depends on a) y b) are true.
 > — `repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)` (cita sin comprobar)
+
+Relacionado: [[definicion-de-latencia-de-instruccion-de-salto]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]]

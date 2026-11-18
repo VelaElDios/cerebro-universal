@@ -16,3 +16,5 @@ Procesador superscalar de 5 etapas, emisión en orden (in-order) de hasta 4 inst
 
 > Processor A. Superscalar MIPS64 with 5 stages, which can launch 4 instructions per cycle: two integer (including memory accesses and branches) and two floating-point.
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
+
+Relacionado: [[procesador-a-mips64-superscalar-5-etapas-4-emisiones-ciclo-2]] · [[planificacion-en-superscalar-mips64-4-vias-2-enteros-2-fp-co]] · [[superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr]]

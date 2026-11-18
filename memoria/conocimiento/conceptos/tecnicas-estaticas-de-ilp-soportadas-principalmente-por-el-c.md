@@ -16,3 +16,5 @@ Las técnicas estáticas de ILP (planificación de instrucciones, desenrollamien
 
 > Las técnicas estáticas de ILP... a) Están soportadas principalmente por el hardware del procesador b) Están soportadas principalmente por el empleo de múltiples unidades funcionales c) Están soportadas principalmente por el compilador d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
+
+Relacionado: [[tecnicas-ilp-estaticas-vs-dinamicas-pregunta-7-y-9]] · [[planificacion-estatica-el-compilador-reordena-para-reducir-d]] · [[planificacion-estatica-vs-dinamica-de-codigo]]

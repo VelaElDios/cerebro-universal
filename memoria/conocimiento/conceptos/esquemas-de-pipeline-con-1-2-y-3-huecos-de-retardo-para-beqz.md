@@ -17,4 +17,4 @@ Tres diagramas de temporización (space-time diagrams) para la instrucción `beq
 > beqz x3, direc IF ID EX MEM WB Siguiente IF Siguiente + 1 Siguiente + 2 direc: destino salto IF ID EX MEM WB
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
 
-Relacionado: [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]]
+Relacionado: [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[calculo-de-ciclos-de-penalizacion-por-salto-tomado-en-pipeli]] · [[penalizacion-de-salto-tomado-con-condicion-en-ex-y-direccion]]

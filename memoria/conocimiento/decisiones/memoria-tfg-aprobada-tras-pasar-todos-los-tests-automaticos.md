@@ -17,6 +17,6 @@ La memoria de La Grada Colchonera (Sprints 1 y 2) ha sido validada completamente
 > VERIFICACIÓN OK: 35 figuras, 29 tablas, 17081 palabras en capítulos y anexos ✅ Maquetación del TFG: cumple las reglas.
 > — `memoria-procesos (este proyecto)` (cita sin comprobar)
 
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto]]
+Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -17,4 +17,4 @@ Tabla de latencias (stall cycles) entre productor y consumidor. ALU PF cubre fad
 > c) Latencias del modelo actual (V1.0): Ciclos de "hueco" necesarios entre instrucción productora y consumidora. Instrucción que produce el resultado Instrucción que usa el resultado Latencia en ciclos ALU PF ALU PF 3 ALU PF fsd 3 fld ALU PF 1
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf`
 
-Relacionado: [[especificacion-vliw-1-0-para-examen-enero-2026-problema-3]]
+Relacionado: [[especificacion-vliw-1-0-para-examen-enero-2026-problema-3]] · [[latencias-vliw-examen-ac-para-planificacion-bucle-polinomico]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]] · [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]]

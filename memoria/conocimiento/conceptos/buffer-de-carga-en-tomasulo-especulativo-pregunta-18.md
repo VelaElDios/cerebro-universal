@@ -17,4 +17,4 @@ Respuesta correcta: d) None of the above. En Tomasulo especulativo, el load buff
 > In the speculative version of the Tomasulo algorithm, the load buffer: a) Is implemented by a circular queue b) Stores the results of non-speculative instructions c) Is accessed by the instructions for operand reading d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[configuracion-de-recursos-para-tomasulo-especulativo-en-exam]] · [[configuracion-de-recursos-para-tomasulo-basico-en-examen-jun]]

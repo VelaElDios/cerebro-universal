@@ -24,4 +24,4 @@ Para un k finito: Speedup = 1 / [0.10 + 0.90/k]
 > A partir de un compilador C se ha obtenido otro compilador mejorado M que obtiene código para las instrucciones de coma flotante k veces más rápido que el original. a) Si usando el compilador C, el 90% del tiempo total de ejecución es dedicado a instrucciones en coma flotante, ¿cuál es la máxima aceleración (speedup) que se puede obtener?
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[determinar-si-es-posible-alcanzar-un-speedup-objetivo-mejora]]
+Relacionado: [[determinar-si-es-posible-alcanzar-un-speedup-objetivo-mejora]] · [[calculo-de-proporcion-de-tiempo-en-fp-dado-speedup-observado]] · [[calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab]] · [[aplicacion-de-la-ley-de-amdahl-para-mejora-de-coma-flotante]]

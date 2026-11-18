@@ -17,4 +17,4 @@ Los poison bits marcan resultados de instrucciones **especulativas** que causan 
 > En la técnica de los bits de veneno (o poison), si una instrucción normal (no especulativa) provoca una excepción de finalización: a. La ejecución del programa continúa, pero el bit de veneno del registro destino se activa (1). b. La ejecución del programa continúa, pero el bit de veneno del registro destino se limpia (0). c. La ejecución del programa finaliza. d. Ninguna es correcta.
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]]
+Relacionado: [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]] · [[comportamiento-de-bit-de-veneno-poison-bit-ante-excepcion-en]] · [[comportamiento-de-bits-venenosos-ante-excepcion-terminante-e]] · [[especulacion-con-bits-venenosos-programa-continua-y-finaliza]]

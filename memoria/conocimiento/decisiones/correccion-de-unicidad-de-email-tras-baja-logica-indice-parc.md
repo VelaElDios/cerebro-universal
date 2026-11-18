@@ -17,6 +17,6 @@ Problema: usuario eliminaba su cuenta (baja lógica) y luego no podía registrar
 > | Quien eliminaba su cuenta (sobre todo de Google) no podía volver a entrar nunca con ese email (lo encontró un amigo probando la app, 29/10/2026) | Por la baja lógica la fila seguía en `users` con su email, que era `UNIQUE`; además, por diseño, una cuenta eliminada no podía entrar «ni con Google» | Migración 005: el email solo es único entre las cuentas no eliminadas (índice parcial); `findByEmail` ignora las eliminadas, así que registrarse o entrar con Google crea una cuenta nueva;
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]
+Relacionado: [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[tabla-users-con-indice-parcial-unico-para-email-entre-cuenta]] · [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

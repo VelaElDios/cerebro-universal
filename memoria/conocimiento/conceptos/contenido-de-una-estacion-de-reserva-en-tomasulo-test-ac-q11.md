@@ -22,3 +22,5 @@ Cuando `Qj=Qk=0`, la RS está lista para enviar a la unidad funcional.
 
 > En la técnica Tomasulo, una estación de reserva contiene… Las instrucciones emitidas y que están esperando su ejecución
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf` (cita sin comprobar)
+
+Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[tabla-de-estado-de-estacion-de-reserva-en-tomasulo-campos-y]] · [[que-es-una-estacion-de-reserva-en-el-algoritmo-de-tomasulo]]

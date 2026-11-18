@@ -17,4 +17,4 @@ Pregunta 6: La dependencia de salida (WAW) ocurre cuando la instrucción j escri
 > A WAR hazard a) Corresponds to an antidependence b) Corresponds to a control dependence c) Corresponds to a data dependence d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[waw-hazard-corresponde-a-dependencia-de-salida]] · [[antidependencia-war-siempre-genera-hazard-war]] · [[definiciones-de-dependencias-de-datos-raw-war-antidependenci]]

@@ -27,6 +27,6 @@ Lista de trampas documentadas que rompen la compilación en LuaLaTeX:
 > Trampas técnicas comprobadas (evítalas): · Todo el código Lua va en `sus-calculos.lua` y se carga con `\directlua{dofile("sus-calculos.lua")}`. Dentro de `\directlua{...}` solo llamadas cortas a funciones ya definidas: **nunca** escribir `%` ni cadenas con `\` ahí dentro, porque TeX los interpreta antes que Lua y rompe la compilación. · Para devolver texto de Lua a LaTeX usar `tex.sprint(...)`.
 > — `../plantilla-sus/spec.md` (cita sin comprobar)
 
-Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]] · [[exportar-resultados-json-obligatorio-para-verificacion-autom]]
+Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]] · [[exportar-resultados-json-obligatorio-para-verificacion-autom]] · [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]]
 
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

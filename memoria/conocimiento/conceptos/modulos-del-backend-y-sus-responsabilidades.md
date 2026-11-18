@@ -17,6 +17,6 @@ Módulos principales: `server.js` (entry point, carga config, llama `bootstrap`,
 > server.js | Punto de entrada: carga la configuración, llama a bootstrap y escucha en PORT; para con orden al recibir SIGTERM
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[grupos-de-rutas-de-la-api-y-sus-accesos]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

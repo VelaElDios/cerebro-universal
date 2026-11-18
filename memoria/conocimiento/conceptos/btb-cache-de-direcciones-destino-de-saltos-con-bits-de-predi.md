@@ -17,4 +17,4 @@ La Branch Target Buffer (BTB) es una caché que almacena la dirección destino (
 > La BTB: a) Almacena en una tabla la dirección destino para las últimas instrucciones de salto y, en una tabla diferente, los bits de predicción para todas las instrucciones de salto condicionales. b) Es una memoria cache que almacena solamente los bits de predicción de los últimos saltos tomados c) Añade a la cache de instrucciones los bits de predicción que se usan cuando la instrucción es un salto condicional d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]]
+Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[estructura-que-almacena-direccion-destino-de-saltos-tomados]] · [[estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits]] · [[proposito-del-branch-target-buffer-btb-ademas-de-bits-de-pre]]

@@ -17,4 +17,4 @@ Las excepciones terminantes (non-resumable) en instrucciones especulativas no se
 > In case of a speculative instruction causing a non-resumable (terminating) exception: a) The exception must be immediately handled b) The exception should not be handled until the instruction ceases to be speculative c) The exception should not be handled in any case d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[comportamiento-de-bit-de-veneno-poison-bit-ante-excepcion-en]]
+Relacionado: [[comportamiento-de-bit-de-veneno-poison-bit-ante-excepcion-en]] · [[condicion-necesaria-para-que-la-especulacion-sea-valida]] · [[bits-venenosos-excepcion-no-recuperable-marca-registro-desti]]

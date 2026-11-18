@@ -17,4 +17,4 @@ Speedup = (Tiempo original) / (Tiempo nuevo). Original: 5 iteraciones × 15 cicl
 > Each iteration of a given loop in a scalar processor requires 15 clock cycles to be issued. We unrolled such a loop 5 times and scheduled it for a 4-way superscalar obtaining that we now perform 5 iterations of the original loop in 15 cycles. What is the speedup obtained?
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[calculo-de-speedup-por-desenrollado-de-bucle-en-superescalar]] · [[calculo-de-speedup-con-desenrollamiento-de-bucle-y-superesca]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]]

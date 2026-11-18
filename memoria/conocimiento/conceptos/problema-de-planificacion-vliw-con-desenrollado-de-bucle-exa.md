@@ -17,4 +17,4 @@ Este es un problema clásico de examen de Arquitectura de Computadores sobre pla
 > Exercise 3. The next code is run in a VLIW processor with 4 operations per instruction, which does not impose restrictions to the type of operations that can be issued per cycle. Consider also that this processor supports forwarding and delayed branch.
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[como-resolver-planificacion-vliw-con-desenrollado-y-latencia]] · [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]]

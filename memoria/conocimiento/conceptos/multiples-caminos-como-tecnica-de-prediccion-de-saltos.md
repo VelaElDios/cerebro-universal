@@ -17,4 +17,4 @@ Técnica donde el procesador ejecuta especulativamente varios caminos de un salt
 > Múltiples caminos: Se ejecutan varios caminos
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
 
-Relacionado: [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]]
+Relacionado: [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]] · [[definicion-de-ejecucion-multicamino-multipath-execution]] · [[ejecucion-multicamino-multi-path-execution-como-alternativa]] · [[ejecucion-multicamino-multi-path-execution-frente-a-predicci]]

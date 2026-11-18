@@ -16,3 +16,5 @@ Un bloque básico es una secuencia de instrucciones consecutivas sin instruccion
 
 > In Instruction-Level Parallelism, the 'basic block' expression refers to… b) A code sequence without branch instructions.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf` (cita sin comprobar)
+
+Relacionado: [[definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru]] · [[definicion-de-bloque-basico-test-ac-q7]] · [[impacto-de-la-frecuencia-de-saltos-en-el-ilp-y-tamano-de-blo]]

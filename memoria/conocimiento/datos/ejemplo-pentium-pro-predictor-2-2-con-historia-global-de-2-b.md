@@ -16,3 +16,5 @@ El Pentium Pro (1995) implementa un predictor correlacionado (2,2): BHR de 2 bit
 
 > Ejemplo: el Pentium Pro usa el resultado de los 2 últimos saltos para seleccionar uno de los 4 conjuntos de BHT bits (precisión: ~95%) • Program Counter • Fetch PC • BHR: Registro de desplazamiento de historia global de saltos de 2-bit • Shift in Taken/¬Taken results of each branch
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[implementacion-bht-para-predictor-de-2-bits-4k-entradas-80-9]] · [[implementacion-predictor-correlacionado-m-n-con-bhr-y-bht]] · [[tabla-historica-de-predictores-en-procesadores-1989-1998]]

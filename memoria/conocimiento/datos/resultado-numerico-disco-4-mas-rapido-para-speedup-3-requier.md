@@ -17,4 +17,4 @@ En el ejercicio 23, con una mejora de 4× en la velocidad del disco y un objetiv
 > x = 0.89 (el disco debe usarse el 89% del tiempo)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]] · [[clasificacion-de-tipos-de-computadores-segun-requisitos-de-d]]
+Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]] · [[clasificacion-de-tipos-de-computadores-segun-requisitos-de-d]] · [[ejercicio-de-mejora-de-disco-duro-y-ley-de-amdahl-ej-23]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco]] · [[como-calcular-la-fraccion-de-uso-requerida-para-un-speedup-o]]

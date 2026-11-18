@@ -20,4 +20,4 @@ Esto permite que la predicción mejore con el historial de ejecución reciente.
 > La BTB se actualiza después de ejecutar el salto y conocer – el sentido del salto (se actualizan los bits de predicción) – la dirección destino del salto (se actualiza la BTA)
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits]] · [[accion-ante-fallo-en-btb-con-salto-tomado-real-predecir-nt-p]] · [[proposito-del-branch-target-buffer-btb-ademas-de-bits-de-pre]]

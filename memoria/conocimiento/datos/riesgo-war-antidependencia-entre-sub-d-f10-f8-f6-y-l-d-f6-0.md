@@ -17,4 +17,4 @@ SUB.D lee F6 (fuente) y L.D escribe F6 (destino). Como la escritura de L.D ocurr
 > Indica el tipo de riesgo que existe entre estas instrucciones: SUB.D F10, F8, F6 / L.D F6, 0(R1)
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-siempre-genera-hazard-war]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[antidependencia-war-siempre-genera-hazard-war]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[riesgo-entre-add-d-f4-f2-f0-y-s-d-f0-0-r1-es-war-antidepende]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-war-entre-instrucciones-consecutivas-en-risc]]

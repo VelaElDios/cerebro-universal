@@ -16,3 +16,5 @@ El BHR es un registro de desplazamiento de m bits que guarda el resultado (T/NT)
 
 > Implementación: predictor (m,n)  BHR: Branch History Register Registro de desplazamiento de m bits (estado T/NT de los últimos m saltos) Seleccionan una de entre 2m tablas de BHT  BHT: Branch History Table Cada entrada tiene n bits (es un predictor de n bits) El nº de entrada de predicción se selecciona con la dirección del salto • Nº bits predictor (m,n) =2m x n x Nº de entradas de predicción seleccionadas por la dirección del salto
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[implementacion-del-bhr-branch-history-register-en-predictor]] · [[registro-de-historial-de-saltos-bhr-se-implementa-como-regis]] · [[estructura-de-un-predictor-correlacionado-2-4-4-bhr-y-2-bht]]

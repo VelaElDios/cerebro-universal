@@ -17,4 +17,4 @@ El registro base `x1` vale 80 durante los ciclos 2-5 (primera iteración) y camb
 > x1 = 80                                                           x1 = 72
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[valores-concretos-de-x1-y-direcciones-de-memoria-en-la-simul]] · [[evolucion-del-registro-base-x1-y-qi-de-registros-fp-en-el-ej]] · [[gestion-de-buffers-de-carga-almacenamiento-con-direcciones-d]]

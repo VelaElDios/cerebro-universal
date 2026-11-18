@@ -17,4 +17,4 @@ Para obtener el MIPS pico de cada máquina: 1) Calcular CPI promedio ponderado p
 > M1 needs 3, 6, and 4 clock cycles to execute instructions of type A, B, and C, respectively. M2 needs 4 cycles for all types. M1 runs at 400 MHz and M2 runs at 750 MHz. The test program we will use has the following mix of instructions: 40% of type A, 50% of type B, and 10% of type C.
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]]
+Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]] · [[calculo-de-cpi-medio-ponderado-por-mezcla-de-instrucciones]] · [[calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4]]

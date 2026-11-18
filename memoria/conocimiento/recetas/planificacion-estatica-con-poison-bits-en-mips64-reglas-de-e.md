@@ -17,4 +17,4 @@ Reglas del ejercicio: direcciones 0 y 1 son "prohibidas" para lectura; memoria i
 > El procesador usa la técnica de planificación estática con poison bits. Usa “sucio” para registros con poison y “prohibido” para direcciones no válidas.
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es]] · [[especulacion-estatica-con-poison-bits-en-mips64-lw]]

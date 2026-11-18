@@ -20,3 +20,5 @@ Es la unidad fundamental para análisis de flujo de control y optimizaciones de 
 
 > ¿Cómo se le llama a la secuencia de instrucciones entre instrucciones de salto?
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf`
+
+Relacionado: [[que-es-un-bloque-basico-basic-block-en-ilp]] · [[definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru]] · [[impacto-de-la-frecuencia-de-saltos-en-el-ilp-y-tamano-de-blo]]

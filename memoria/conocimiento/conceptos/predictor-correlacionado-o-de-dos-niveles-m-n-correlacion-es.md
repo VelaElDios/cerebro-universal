@@ -16,3 +16,5 @@ Los predictores correlacionados explotan la correlación espacial: el comportami
 
 > Predictor correlacionado o de dos niveles • Los saltos están relacionados • Correlación espacial: El comportamiento de los últimos saltos afecta a la predicción actual • Generalización: predictor (m,n)  Usa información de m saltos  Comportamiento de los últimos m saltos para elegir entre 2m predictores de saltos, cada uno de los cuales es un predictor n-bit predictor para un solo salto • Predicción basada en historia global • Pentium II 1997
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[predictor-correlacionado-2-1-estructura-y-funcionamiento]] · [[predictor-correlacionante-m-n-tiene-2-n-bhts]] · [[implementacion-predictor-correlacionado-m-n-con-bhr-y-bht]]

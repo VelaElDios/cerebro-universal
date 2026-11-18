@@ -27,4 +27,4 @@ Tabla de control: Ciclo | Instrucción | Fase completada | Estado FU / Registros
 > Detalla la ejecución del código que se muestra en la tabla cuando se ejecuta según el algoritmo de Marcador. Para ello, indica en la tabla siguiente los pasos realizados en la ejecución y el número de ciclo en el que se completa cada paso.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[simulacion-scoreboard-vs-tomasulo-basico-pasos-de-ejecucion]] · [[pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard]] · [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]]

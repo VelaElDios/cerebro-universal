@@ -17,4 +17,4 @@ Para cada instrucción de la secuencia (10 instrucciones: L.S, MUL.S, L.S, ADD.S
 > Details the execution of the following code. To do so, indicate in the table below the start and end cycle number for each step of each instruction and, where appropriate, the reason for stopping the execution of the step in question (a RAW hazard, a structural hazard, the order of the program, etc.).
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
 
-Relacionado: [[procesador-tomasulo-con-especulacion-caracteristicas-de-late]]
+Relacionado: [[procesador-tomasulo-con-especulacion-caracteristicas-de-late]] · [[pasos-para-completar-tabla-de-ejecucion-tomasulo-issue-execu]] · [[rellenar-tabla-de-ejecucion-tomasulo-columnas-issue-executio]] · [[simulacion-de-algoritmo-tomasulo-basico-y-especulativo-con-r]]

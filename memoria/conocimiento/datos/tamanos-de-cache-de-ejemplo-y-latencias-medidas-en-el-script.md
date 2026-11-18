@@ -19,3 +19,5 @@ Valores de referencia incluidos en el script (deben sustituirse por los de la m�
 
 > L1 = 48 ... L2 = 1280 ... L3 = 25000 ... latency_ns = np.array([1.12, 1.07, 1.07, 1.05, 1.67, 2.44, 2.80, 3.54, 4.78, 8.71, 11.87, 14.07, 23.86, 50.71, 69.59, 80.99, 85.75])
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_pintarLatvsMem.py` (cita sin comprobar)
+
+Relacionado: [[patron-de-salto-de-latencia-en-fronteras-de-cache]] · [[working-set-size-vs-memory-access-latency-experiment]] · [[rango-de-working-set-4-kib-a-256-mib-en-potencias-de-2]]

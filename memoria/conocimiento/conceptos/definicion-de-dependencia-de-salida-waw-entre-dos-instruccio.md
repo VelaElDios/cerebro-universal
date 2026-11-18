@@ -17,4 +17,4 @@ La dependencia de salida (WAW, Write After Write) ocurre cuando la instrucción 
 > Given two instructions i and j (i precedes j), there is an output dependence between them if… a) Both instructions update the same register or memory position.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[definicion-de-dependencia-de-salida-waw]] · [[dependencia-de-salida-waw-dos-instrucciones-escriben-mismo-r]] · [[waw-corresponde-a-dependencia-de-salida]]

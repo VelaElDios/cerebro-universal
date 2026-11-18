@@ -17,4 +17,4 @@ En arquitectura MIPS64 con especulación y bits de veneno (poison bits), si una 
 > What happens when a MIPS64-based processor executes the non-speculative instruction MUL.D F0, F1, F2, if register F1 has the poison bit activated (set)?
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion]] · [[comportamiento-de-bit-de-veneno-poison-bit-ante-excepcion-en]] · [[tecnica-poisson-carga-especulativa-con-direccion-invalida-po]]

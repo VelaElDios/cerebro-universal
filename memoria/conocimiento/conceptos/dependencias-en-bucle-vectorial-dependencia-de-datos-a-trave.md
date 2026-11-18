@@ -17,4 +17,4 @@ I1 carga F4, I3 almacena F4. En la misma iteración: I1 → I3 es RAW (I1 escrib
 > Entre las instrucciones I1 e I3, en el bucle siguiente: LOOP: L.D F4, 0(R1) ; I1 DIV.D F4, F4, F2 ; I2 S.D F4, 0(R1) ; I3 ... a) Hay una dependencia de datos, a través de F4, entre iteraciones b) Hay una dependencia de salida, a través de F4, en la misma iteración c) Hay una antidependencia, a través de F4, entre iteraciones d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[analisis-de-dependencias-en-bucle-con-indices-de-array-pregu]] · [[analisis-de-dependencias-entre-instrucciones-de-punto-flotan]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]

@@ -17,4 +17,4 @@ Esquema de dependencias y ciclos de espera con adelantamiento (resultado disponi
 > Loop: L.D F1, 0(R1) L.D F2, 0(R2) MUL.D F1, F1, F10 MUL.D F2, F2, F20 ADD.D F3, F1, F2 DIV.D F3, F3, F30 S.D F3, 0(R3) DADDUI R1, R1, #8 DADDUI R2, R2, #8 DADDUI R3, R3, #8 DADDUI R4, R4, #-1 BNEZ R4, Loop ... las unidades funcionales de suma, multiplicación y división en coma flotante están totalmente segmentadas y emplean, respectivamente, 2, 3 y 5 ciclos.
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf` (cita sin comprobar)
 
-Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]]
+Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[analisis-de-paradas-en-bucle-con-unidades-fp-de-latencias-2]] · [[configuracion-de-pipeline-mips64-para-problema-de-examen-lat]] · [[tabla-de-latencias-fp-para-desenrollado-de-bucle-examen-ener]]

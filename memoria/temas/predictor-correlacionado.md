@@ -22,7 +22,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «predictor-correlacionado�
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]]
+- 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]] · ⚠️ propuesto
 
 ## Temas relacionados
 

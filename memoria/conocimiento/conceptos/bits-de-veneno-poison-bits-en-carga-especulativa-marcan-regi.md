@@ -17,4 +17,4 @@ La técnica de "poison bits" (bits de veneno) ante una excepción en instrucció
 > Considera que en un procesador RISCV se ejecuta la instrucción especulativa lw* x5, 0(x1) haciendo uso de la técnica de Poisson para el manejo de excepciones. Sabemos que x1=0 y que a las direcciones de memoria 0 y 1 no se tiene permiso de acceso. Indica cuál de las siguientes afirmaciones es correcta: ... Siempre se activará el bit de veneno de x5
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf` (cita sin comprobar)
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[buffer-de-carga-en-tomasulo-especulativo]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[bits-venenosos-excepcion-no-recuperable-marca-registro-desti]]

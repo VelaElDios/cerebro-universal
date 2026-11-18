@@ -27,4 +27,4 @@ Máquina MNFP (sin hardware FP, todo entero a 2 ciclos, 1000 MHz):
 > Multiplicación en punto flotante: 6 • Suma en punto flotante: 4 • División en punto flotante: 20 • Instrucciones entera: 2
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d]] · [[como-calcular-cpi-medio-y-mips-nativo-con-mezcla-de-instrucc]] · [[como-expandir-la-cuenta-de-instrucciones-al-emular-punto-flo]]

@@ -16,3 +16,5 @@ Un MPP tiene múltiples procesadores completos con memoria propia, cada uno ejec
 
 > Un procesador masivamente paralelo a) Está en la categoría SIMD de Flynn b) Está en la categoría MISD de Flynn c) Está en la categoría MIMD de Flynn
 > — `repo:datos/temarios/AC/examenes/Noviembre2011.pdf`
+
+Relacionado: [[en-la-taxonomia-de-flynn-los-multicomputadores-son-maquinas]] · [[clasificacion-de-multiprocesadores-en-taxonomia-de-flynn]] · [[taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones]]

@@ -17,4 +17,4 @@ En el ciclo en que se emite 'fadd.d f18, f4, f10' (6ª instrucción), el ROB tie
 > Completa la siguiente tabla para mostrar el contenido del buffer de reordenamiento (ROB) justo al finalizar el ciclo de emisión del segundo fadd.d.
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf`
 
-Relacionado: [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]]
+Relacionado: [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]] · [[rob-de-10-entradas-para-secuencia-de-8-instrucciones-en-exam]] · [[estado-rob-en-ciclo-de-emision-del-primer-s-d-tomasulo-espec]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]]

@@ -17,4 +17,4 @@ En este VLIW, el salto condicional BNEZ tiene 1 delay slot: la instrucción inme
 > As usual, assume that this processor supports forwarding and delayed branch (with 1 delay slot).
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
 
-Relacionado: [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]]
+Relacionado: [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]] · [[delayed-branch-en-vliw-y-su-efecto-en-planificacion]] · [[uso-de-delayed-branch-con-1-delay-slot-en-vliw-para-ocultar]] · [[uso-de-ranura-de-retardo-de-1-ciclo-en-superescalar-para-ocu]]

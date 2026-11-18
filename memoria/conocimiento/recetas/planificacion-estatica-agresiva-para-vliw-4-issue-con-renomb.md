@@ -17,4 +17,4 @@ Pasos para Procesador B: 1) Desenrollar 8 veces (igual que A). 2) Aplicar renomb
 > For Processor B, schedule the unrolled code, assuming that the static scheduling is as aggressive and efficient as possible to optimize the resulting code to the maximum. Renaming and out-of-order scheduling can be used.
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
 
-Relacionado: [[procesador-b-vliw-4-issue-sin-restricciones-de-tipo-con-plan]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]]
+Relacionado: [[procesador-b-vliw-4-issue-sin-restricciones-de-tipo-con-plan]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]] · [[pasos-para-resolver-exercise-3-processor-b-vliw-con-renombra]] · [[planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip]]

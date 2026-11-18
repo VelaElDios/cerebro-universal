@@ -16,3 +16,5 @@ CPI = Σ (frecuencia_i × ciclos_i) = 0.40×5 + 0.10×4 + 0.30×4 + 0.10×3 + 0.
 
 > El CPI en una implementación multiciclo del MIPS, considerando un programa con la siguiente mezcla de instrucciones: 40% cargas (5 ciclos), 10% almacenamientos (4 ciclos), 30% tipo R (4 ciclos), 10% saltos condicionales (3 ciclos) y 10% saltos incondicionales (3 ciclos)
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf`
+
+Relacionado: [[calculo-de-cpi-en-mips-multiciclo-con-mezcla-de-instruccione]] · [[cpi-medio-ponderado-en-implementacion-multiciclo-mips]] · [[calculo-de-mips-a-partir-de-mezcla-de-instrucciones-cpi-y-fr]]

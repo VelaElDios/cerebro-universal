@@ -17,4 +17,4 @@ Bucle de 7 instrucciones que procesa array de 10 floats °F en R1, guarda °C en
 > Exercise 1. The following MIPS64 code converts a set of temperature values expressed in Fahrenheit degrees to Celsius degrees, according to the expression: (32 °F − 32) × 5 / 9 = 0 °C. convT: L.S F0, 0(R1) #I1 F0= temperature read in °F SUB.S F0, F0,F3 #I2 F0= T in °F – 32 MUL.S F0, F0,F2 #I3 F0= (T in °F − 32) × 5 / 9 = T in °C S.S F0, 0(R3) #I4 Stores T in °C in memory DADDUI R1, R1, #4 #I5 R1=address of the next temperature in °F DADDUI R3, R3, #4 #I6 R3=address to store the next temperature in °C BNE R1, R2, convT #I7 If R1<>R2 convert the next temperature
 > — `repo:datos/temarios/AC/examenes/June2020.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]] · [[secuencia-de-datos-y-codigo-mips64-para-ejercicio-2-de-predi]]

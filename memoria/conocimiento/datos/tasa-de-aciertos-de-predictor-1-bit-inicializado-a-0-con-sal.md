@@ -17,4 +17,4 @@ Predictor 1-bit: estado 0 = no tomado, 1 = tomado. Inicializado a 0. Salto siemp
 > Se usa un predictor de 1 nivel de 1 bit para predecir un salto que se ha ejecutado 100 veces. ¿Cuál es la tasa de aciertos si está inicializado a 0?
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf`
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[calculo-de-tasa-de-acierto-con-predictor-de-1-bit-inicializa]] · [[predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce]] · [[predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est]]

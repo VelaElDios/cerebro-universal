@@ -16,3 +16,5 @@ Tabla de referencia rápida para diseñar o analizar pipelines de coma flotante.
 
 > ALU de enteros                                          0             1                      Memoria de datos (cargas enteras y PF)                  1             1                      Sumador PF                                              3             1                      Multiplicador PF (también de enteros)                   6             1                      Divisor PF (también de enteros y raíz cuadrada PF)     24            25
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf`
+
+Relacionado: [[latencias-y-segmentacion-de-unidades-funcionales-en-examen-t]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]] · [[definicion-de-latencia-e-intervalo-de-iniciacion-en-pipeline]]

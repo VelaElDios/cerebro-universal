@@ -16,3 +16,5 @@ La arquitectura (ISA) define la interfaz programador: conjunto de instrucciones,
 
 > There are no two processors… a) With the same organization and different architecture b) With the same architecture and different organization c) With the same architecture and different technology d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
+
+Relacionado: [[distincion-entre-arquitectura-isa-y-organizacion-microarquit]] · [[diferencia-entre-arquitectura-y-organizacion-de-computadores]] · [[definicion-de-arquitectura-de-computadores-frente-a-organiza]]

@@ -17,4 +17,4 @@ El pipeline no reduce la latencia de una instrucción individual (a veces la aum
 > Frente al cauce no segmentado de un procesador, el cauce segmentado siempre: b) Aumenta el número de instrucciones ejecutadas por unidad de tiempo
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf` (cita sin comprobar)
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[definicion-y-proposito-de-la-segmentacion-pipeline]] · [[speedup-ideal-vs-real-en-pipeline-y-formula-con-detenciones]] · [[funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si]]

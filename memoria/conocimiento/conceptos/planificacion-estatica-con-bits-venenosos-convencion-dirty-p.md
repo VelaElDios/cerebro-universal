@@ -17,4 +17,4 @@ En la planificación estática con bits venenosos, los registros que reciben un 
 > The processor uses the static scheduling technique with poison bits. It uses ‘dirty’ for poisoned registers and ‘prohibited’ for invalid addresses.
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[planificacion-estatica-con-poison-bits-en-mips64-reglas-de-e]] · [[funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]]

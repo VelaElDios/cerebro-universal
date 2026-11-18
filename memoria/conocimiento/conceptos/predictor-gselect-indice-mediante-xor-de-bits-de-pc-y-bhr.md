@@ -17,4 +17,4 @@ El predictor gselect (global select) combina información global (BHR) y local (
 > El predictor gselect indexa la BHT con los bits que resultan de: c) XOR de algunos bits del PC y BHR
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[predictor-gselect-indexa-bht-con-xor-de-bits-de-pc-y-bhr]] · [[predictor-gselect-concatenacion-vs-gshare-xor-para-indexar-b]] · [[seleccion-de-entrada-en-bht-branch-history-table]]

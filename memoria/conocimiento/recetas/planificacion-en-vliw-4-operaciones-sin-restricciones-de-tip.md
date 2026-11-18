@@ -17,4 +17,4 @@ VLIW: cada instrucción (palabra larga) contiene 4 operaciones que se emiten sim
 > Processor B. VLIW that can issue in each cycle four operations per instruction and imposes no restrictions on the type of operations that can be issued.
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
-Relacionado: [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]]
+Relacionado: [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]] · [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[planificacion-en-superscalar-mips64-4-vias-2-enteros-2-fp-co]]

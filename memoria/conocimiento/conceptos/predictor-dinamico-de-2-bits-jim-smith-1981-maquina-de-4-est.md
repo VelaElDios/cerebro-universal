@@ -16,3 +16,5 @@ El predictor de 2 bits implementa una máquina de 4 estados con inercia: fuertem
 
 > Una segunda oportunidad antes de cambiar la predicción (inercia) • Usa dos bits de predicción por cada instrucción de salto • Los bits reflejan el comportamiento de las últimas ejecuciones del salto • IDEA: Un salto se predice Tomado si fue tomado repetidamente y No tomado si repetidamente fue no tomado • Si un salto toma una dirección inusual una sola vez, se mantiene la predicción de la dirección usual
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
+
+Relacionado: [[predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en]] · [[predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est]] · [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]]

@@ -26,4 +26,4 @@ La comparación visual muestra si el kernel satura memoria o cómputo en cada ca
 > Para posicionar el patrón de acceso (Temporal, Secuencial o Aleatorio) en la gráfica, utilizaremos los tiempos obtenidos con hyperfine y los contadores de hardware medidos con perf stat.
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf`
 
-Relacionado: [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]] · [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]
+Relacionado: [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]] · [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]] · [[mapeo-de-patrones-de-acceso-en-grafico-roofline-gflops-s-y-f]] · [[como-calcular-y-representar-puntos-de-patrones-en-el-grafico]] · [[tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t]]

@@ -17,4 +17,4 @@ Decisiones de diseño de la BTB del enunciado: 1) Entradas solo para saltos que 
 > b. Sólo almacena las direcciones de saltos tomados (incluyendo los saltos incondicionales). c. Si un salto condicional no está en BTB se predice como no tomado. d. Si una dirección se encuentra en el BTB pero el salto acaba siendo no tomado, la dirección es eliminada del BTB, sin penalización. e. Si una dirección no se encuentra en el BTB pero el salto finalmente es tomado (incluye los saltos incondicionales), el BTB se actualiza con un ciclo de penalización
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
-Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]]
+Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[accion-ante-fallo-en-btb-con-salto-tomado-real-predecir-nt-p]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]] · [[mejora-prestaciones-btb-con-politica-solo-saltos-tomados-y-a]]

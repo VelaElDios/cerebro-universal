@@ -23,4 +23,4 @@ Metadatos del documento:
 > ESCUELA SUPERIOR DE INGENIERÍA INFORMÁTICA DEPARTAMENTO DE SISTEMAS INFORMÁTICOS GRADO EN INGENIERÍA INFORMÁTICA. ARQUITECTURA DE COMPUTADORES Prueba escrita final (Examen Ordinario) PROBLEMAS Curso 2016/17
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
 
-Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]]
+Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[configuracion-vliw-del-examen-ac-enero-2017-6-unidades-laten]] · [[simulacion-tomasulo-especulativa-con-rob-de-4-entradas-exame]] · [[simulacion-tomasulo-basica-con-restricciones-de-bus-y-recurs]]

@@ -17,4 +17,4 @@ Una antidependencia (WAR - Write After Read) ocurre cuando una instrucción escr
 > Toda antidependencia produce siempre un: a) Riesgo WAW b) RAW c) WAR d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-war-siempre-genera-hazard-war]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-war-siempre-genera-hazard-war]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[que-es-un-riesgo-war-y-a-que-dependencia-corresponde]] · [[hazard-war-corresponde-a-antidependencia-dependencia-de-nomb]]

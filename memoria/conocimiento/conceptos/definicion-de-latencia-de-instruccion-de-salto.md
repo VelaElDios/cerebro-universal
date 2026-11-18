@@ -17,4 +17,4 @@ La latencia de una instrucción de salto se define como el número de ciclos adi
 > The number of additional cycles between the IF stage and the cycle where its condition is computed
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[definicion-de-latencia-de-salto-y-penalizacion-por-fallo-de]] · [[definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5]]

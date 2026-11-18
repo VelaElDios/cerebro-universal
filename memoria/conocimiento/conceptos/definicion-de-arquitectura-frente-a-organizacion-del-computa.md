@@ -16,3 +16,5 @@ La arquitectura del computador son los atributos visibles al programador (conjun
 
 > Los atributos del sistema que son visibles al programador: a) Forman parte de la organización del computador b) Forman parte de la arquitectura del computador c) No forman parte ni de la organización ni de la arquitectura del computador d) Forman parte de la organización y de la arquitectura del computador
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
+
+Relacionado: [[definicion-de-arquitectura-de-computadores-frente-a-organiza]] · [[diferencia-entre-arquitectura-y-organizacion-de-computadores]] · [[definicion-de-arquitectura-de-computador-visible-al-programa]]

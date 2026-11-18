@@ -16,3 +16,5 @@ Cuando el procesador detecta un salto condicional sin resolver, predice si será
 
 > Cuando se detecta una instrucción de salto condicional sin resolver – se supone o predice el camino del salto: tomado o no tomado – si el salto se predice tomado se predice la dirección destino del salto – la ejecución continúa especulativamente a lo largo del camino supuesto
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
+
+Relacionado: [[mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt]] · [[recuperacion-ante-fallo-de-prediccion-de-salto-misprediction]] · [[recuperacion-ante-fallo-de-prediccion-descartar-resultados-e]]

@@ -27,4 +27,4 @@ Temas: [[ac]] · [[cpi]] · [[rendimiento]] · [[superescalar]]
 > b) Calcula el CPI del fragmento
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]]
+Relacionado: [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]] · [[cpi-tras-desenrollado-y-planificacion-de-bucle]] · [[cpi-ideal-de-un-superescalar-de-grado-n-es-1-n]]

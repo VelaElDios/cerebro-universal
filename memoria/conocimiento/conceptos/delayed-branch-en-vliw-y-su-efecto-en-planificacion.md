@@ -17,4 +17,4 @@ En arquitecturas con delayed branch (como MIPS clásico y muchos VLIW), la instr
 > Consider also that this processor supports forwarding and delayed branch.
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
 
-Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[uso-de-delayed-branch-con-1-delay-slot-en-vliw-para-ocultar]] · [[salto-retardado-delayed-branch-con-1-slot-de-retardo-en-vliw]] · [[salto-retardado-delayed-branch-en-planificacion-superescalar]]

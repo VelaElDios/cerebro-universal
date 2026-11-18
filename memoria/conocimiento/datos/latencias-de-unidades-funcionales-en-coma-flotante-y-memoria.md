@@ -17,4 +17,4 @@ Latencias de ejecución (ciclos de reloj) para la simulación: - Carga (L.D) y A
 > • La etapa de ejecución de una carga y de un almacenamiento emplea 2 ciclos de reloj. • Las UFs en coma flotante están segmentadas, teniendo 1 UF para suma/resta, 1 UF para la multiplicación y 1 UF para división. • La etapa de ejecución para las instrucciones ADD.D y SUB.D emplean 3 ciclos, 5 ciclos para MUL.D, 8 ciclos para DIV.D y el resto 1 ciclo.
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[buffer-de-carga-en-tomasulo-especulativo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo]] · [[latencias-de-ejecucion-uf-fp-en-examen-ac-junio-2014-problem]] · [[latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d]]

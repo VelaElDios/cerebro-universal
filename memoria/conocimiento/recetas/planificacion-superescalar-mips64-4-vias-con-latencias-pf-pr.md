@@ -63,4 +63,4 @@ Con planificación óptima, el bucle desenrollado 6× debería acercarse a CPI �
 > Un procesador superescalar MIPS64 con 5 etapas puede lanzar 4 instrucciones por ciclo: dos enteras o de acceso a memoria y dos de punto flotante. Se asume que existen adelantamientos, salto retardado y que todas las unidades funcionales están segmentadas. Además, las sumas en PF requieren 2 ciclos para la etapa de ejecución, las multiplicaciones en PF 3 ciclos y el resto de operaciones 1 ciclo.
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[desenrollado-6-y-renombrado-de-registros-pf-para-superescala]] · [[como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i]] · [[calculo-de-cpi-en-bucle-desenrollado-superescalar-con-ancho]]

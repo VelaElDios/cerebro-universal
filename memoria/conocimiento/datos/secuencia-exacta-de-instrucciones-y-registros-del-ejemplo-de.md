@@ -39,4 +39,4 @@ Este grafo es el que el marcador resuelve dinámicamente ciclo a ciclo.
 > fld f6, 34(x2) fld f2, 45(x3) fmul.d f0, f2, f4 fsub.d f8, f6, f2 fdiv.d f10, f0, f6 fadd.d f6, f8, f2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador]]
+Relacionado: [[como-leer-la-evolucion-ciclo-a-ciclo-de-un-marcador-con-carg]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador]] · [[ejemplo-de-simulacion-del-marcador-con-instrucciones-de-punt]] · [[representacion-del-estado-del-marcador-scoreboard-para-instr]] · [[codigo-de-10-instrucciones-del-exercise-3-ac-june-2019]]

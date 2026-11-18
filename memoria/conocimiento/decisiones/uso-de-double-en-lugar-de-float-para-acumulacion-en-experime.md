@@ -24,4 +24,4 @@ Temas: [[ac]] · [[floating-point]] · [[precision]]
 > std::vector<double> v(N, 1.0f); double sumA = 0.0f;
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp` (cita sin comprobar)
 
-Relacionado: [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]]
+Relacionado: [[optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul]] · [[parametros-fijos-del-experimento-ilp-n-100m-tipo-double-valo]] · [[verificacion-de-correccion-numerica-entre-version-base-y-opt]]

@@ -17,7 +17,7 @@ Las dependencias de nombre (antidependencia WAR y dependencia de salida WAW) sur
 > Con respecto a las dependencias de nombre… c) Se eliminan mediante renombramiento
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[dependencias-de-nombre-war-waw-se-eliminan-con-renombramient]] · [[dependencias-de-nombre-se-eliminan-mediante-renombramiento-d]] · [[definicion-de-dependencia-de-nombre-waw-y-war]]
 
 ## Ampliación (2026-11-18, )
 Las dependencias de nombre (WAW - salida, WAR - antidependencia) no son dependencias reales de datos, sino artefactos por reutilización de registros. Se eliminan asignando registros físicos distintos a cada escritura (renombramiento), permitiendo ejecución fuera de orden.

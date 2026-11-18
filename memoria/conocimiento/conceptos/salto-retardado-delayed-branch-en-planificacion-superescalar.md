@@ -21,4 +21,4 @@ En arquitecturas con salto retardado (como MIPS clásico), la instrucción inmed
 > Se asume que existen adelantamientos, salto retardado y que todas las unidades funcionales están segmentadas.
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]] · [[desenrollado-6-y-renombrado-de-registros-pf-para-superescala]]
+Relacionado: [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]] · [[desenrollado-6-y-renombrado-de-registros-pf-para-superescala]] · [[uso-de-ranura-de-retardo-de-1-ciclo-en-superescalar-para-ocu]] · [[delayed-branch-en-vliw-y-su-efecto-en-planificacion]] · [[salto-retardado-delayed-branch-en-bucle-con-bne-y-daddui]]

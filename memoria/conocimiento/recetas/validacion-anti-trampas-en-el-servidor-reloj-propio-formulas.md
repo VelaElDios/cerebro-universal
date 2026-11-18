@@ -28,6 +28,6 @@ Temas: [[backend]] · [[grada-colchonera]] · [[saas]] · [[security]]
 > Al **terminar**, rechaza el resultado si la partida no es la que está en curso, si el tiempo supera lo transcurrido (con 15 s de margen) o 4 horas, o si los jefes, el nivel o las bajas no son creíbles para ese tiempo (`jefes ≤ 3 + t/50`, `nivel ≤ 8 + t/3`, `bajas ≤ 20·t + 50`).
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha]] · [[esquema-de-progreso-guardado-en-servidor-migracion-003-tabla]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

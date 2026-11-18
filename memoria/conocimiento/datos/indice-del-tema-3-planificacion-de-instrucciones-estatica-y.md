@@ -25,4 +25,4 @@ Estructura del tema 3 del curso de Arquitectura de Computadores (2026/2027):
 >  3.1 Planificación estática                3.1.1 Desenrollamiento de bucles                3.1.2 Segmentación software                3.1.3 Planificación de trazas                3.1.4 Saltos retardados         3.2 Planificación dinámica                3.2.1 Marcador                3.2.2 Tomasulo
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[segmentacion-software-software-pipelining-y-planificacion-de]] · [[comparacion-de-tecnicas-de-planificacion-estatica-desenrolla]] · [[planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui]]

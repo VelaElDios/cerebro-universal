@@ -17,4 +17,4 @@ Cada instrucción de salto (B1, B2) tiene su propio contador de 2 bits. Estados:
 > Detail the behavior of a one-level branch predictor using 2 bits per branch instruction. Consider the initial state indicated in the table. ... Prediction bits for B1 and B2 00
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[simulacion-de-predictor-de-saltos-de-1-nivel-con-2-bits-cont]] · [[simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos]] · [[simulacion-de-predictor-two-level-correlacionante-2-1-con-bh]]

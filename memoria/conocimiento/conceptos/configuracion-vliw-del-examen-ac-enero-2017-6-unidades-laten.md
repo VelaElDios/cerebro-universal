@@ -21,3 +21,5 @@ Esta configuración define las restricciones de recursos y latencias para la pla
 
 > Exercise 3 (2 points). The next code is run on a VLIW processor with 6 execution units: • 2 integer units (used for integer ALU operations and branch operations), with a 1-cycle latency • 2 fully pipelined memory units (for store and load operations), with a 3-cycle latency • 2 fully pipelined FP units (one for addition and the other for multiplication), with a 4-cycle latency As usual, assume that this processor supports forwarding and delayed branch (with 1 delay slot).
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
+
+Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame]] · [[examen-arquitectura-computadores-enero-2017-problema-3-tomas]]

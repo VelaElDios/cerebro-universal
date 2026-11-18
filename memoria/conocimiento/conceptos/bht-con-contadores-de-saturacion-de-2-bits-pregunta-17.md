@@ -16,3 +16,5 @@ Respuesta correcta: b) A 2-bit saturating counter. La BHT almacena contadores de
 
 > The BHT (Branch History Table) in a 2-bit dynamic branch predictor is implemented by: a) A 2-bit XOR operation b) A 2-bit saturating counter c) A 2-bit shift register d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
+
+Relacionado: [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[implementacion-bht-con-contadores-saturados-de-2-bits]] · [[implementacion-de-la-bht-en-predictor-dinamico-de-2-bits]]

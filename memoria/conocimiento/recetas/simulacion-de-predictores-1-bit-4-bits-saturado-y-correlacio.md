@@ -17,4 +17,4 @@ Código: L1 (externo) se ejecuta 2 veces. Dentro, L2 (interno) se ejecuta 8 vece
 > Indica el número de predicciones correctas para cada salto en los siguientes casos: a) Predictores de 1 bit, inicializados a no tomado. b) Predictores de 4 bits, contadores saturados, inicializados con el valor 7. c) Predictor del tipo (2,1), considerando que cuando comienza la ejecución del código, los dos saltos anteriores han sido no tomados, y el estado inicial de todos los predictores es no tomado fuerte.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[calculo-de-predicciones-correctas-en-bucles-anidados-con-pre]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[ejercicio-simulacion-de-predictores-de-2-bits-vs-correlacion]]

@@ -30,4 +30,4 @@ Parámetros del problema para simular a mano o programar un simulador:
 > La ejecución de una instrucción que está esperando un resultado no puede comenzar en el mismo ciclo en el que este resultado es escrito en el Bus Común de Datos. Un recurso que es liberado en un ciclo de reloj no puede ser usado hasta el siguiente ciclo.
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario]] · [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[configuracion-y-parametros-para-simular-tomasulo-en-problema]] · [[simulacion-tomasulo-con-especulacion-parametros-de-hardware]]

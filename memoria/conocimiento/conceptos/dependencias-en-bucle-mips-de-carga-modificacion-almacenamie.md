@@ -17,4 +17,4 @@ Análisis de una iteración (Q5): I1→I2 RAW por R1 (I2 lee R1 escrito por I1).
 > LOOP: LW R1, 0(R2) ; I1 DADD R1, R1, R3 ; I2 SW R1, 0(R2) ; I3 DADDUI R2, R2, #4 ; I4 DADDUI R4, R4, #-1 ; I5 BNEZ R4, LOOP ; I6
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[analisis-de-dependencias-raw-war-waw-en-una-iteracion-del-bu]] · [[dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema]] · [[identificacion-de-antidependencia-war-entre-store-e-incremen]]

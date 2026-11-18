@@ -17,4 +17,4 @@ Cadena de dependencias RAW: L.D F2 → ADD.D F6 → MUL.D F10 → S.D F10 (laten
 > Loop: L.D F2, 0(R1); L.D F4, 0(R2); ADD.D F6, F2, F2; ADD.D F8, F4, F2; MUL.D F10,F4, F6; S.D F10, 0(R1); DADDUI R1, R1, #8; DADDUI R2, R2, #8; DADDUI R3, R3, #-1; BNEZ R3, Loop
 > — `repo:datos/temarios/AC/examenes/January2018.pdf` (cita sin comprobar)
 
-Relacionado: [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]]
+Relacionado: [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v]] · [[tipos-de-dependencias-en-codigo-fp-mips64-para-tomasulo-raw]]

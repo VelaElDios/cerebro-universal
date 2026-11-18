@@ -19,3 +19,5 @@ La arquitectura (ISA) es la interfaz hardware-software: conjunto de instruccione
 
 ## Ampliación (2026-11-18, )
 La arquitectura de un computador se define como el conjunto de atributos visibles al programador (conjunto de instrucciones, registros, modos de direccionamiento, organización de memoria, manejo de excepciones), no los detalles de implementación hardware ni la interconexión de unidades funcionales.
+
+Relacionado: [[definicion-de-arquitectura-frente-a-organizacion-del-computa]] · [[diferencia-entre-arquitectura-y-organizacion-de-computadores]] · [[definicion-de-arquitectura-de-computadores-frente-a-organiza]]

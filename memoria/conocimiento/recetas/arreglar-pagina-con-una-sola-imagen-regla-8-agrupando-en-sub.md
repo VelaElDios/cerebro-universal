@@ -17,6 +17,6 @@ Cuando el script avise de una página con una sola imagen, no basta con reducir 
 > Ninguna página con una sola imagen: capturas como mucho a height=0.42\textheight; figuras [htbp] con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
 > — `memoria/reglas-tfg.md (regla 8) + salida de revisar_maquetacion.py en este proyecto` (cita sin comprobar)
 
-Relacionado: [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]]
+Relacionado: [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

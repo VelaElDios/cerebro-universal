@@ -17,6 +17,6 @@ El proyecto se gestiona en DoneTonic (https://app.donetonic.com) dentro del work
 > Espacio de trabajo / equipo | *TFG* / *Colchoneros*
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[capturas-de-donetonic-disponibles-en-el-repo]] · [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] · [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

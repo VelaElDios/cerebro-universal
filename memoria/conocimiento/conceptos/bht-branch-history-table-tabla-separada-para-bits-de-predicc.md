@@ -16,3 +16,5 @@ La BHT es una tabla independiente de la BTAC que guarda solo bits de predicción
 
 > La BHT almacena los bits de predicción de todas las instrucciones de salto condicional. La BTAC almacena la dirección destino de los últimos saltos tomados. Usa una tabla especial, distinta de la BTAC, para guardar los bits de predicción. PowerPC 604 (1994) 512 x 2 bits R10000 (1994) 512 x 2 bits PowerPC 620 (1995) 2K x 2 bits Alpha 21164A (1996) 2K x 2 bits
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[la-bht-almacena-los-bits-de-prediccion-de-todas-las-instrucc]] · [[estructuras-hardware-para-prediccion-de-saltos-btac-bht-btb]] · [[implementacion-bht-para-predictor-de-2-bits-4k-entradas-80-9]]

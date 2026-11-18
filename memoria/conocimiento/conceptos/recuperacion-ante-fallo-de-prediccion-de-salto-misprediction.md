@@ -16,3 +16,5 @@ Ante un fallo de predicción (misprediction), los resultados de las instruccione
 
 > When a branch instruction is mispredicted… c) The results of the instructions executed speculatively must be discarded, and the program must be restarted along the right path.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf` (cita sin comprobar)
+
+Relacionado: [[recuperacion-ante-fallo-de-prediccion-descartar-resultados-e]] · [[mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt]] · [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]]

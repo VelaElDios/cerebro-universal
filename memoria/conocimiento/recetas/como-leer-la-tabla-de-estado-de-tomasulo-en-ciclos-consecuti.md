@@ -21,4 +21,4 @@ Para interpretar la simulación:
 > Buffers de carga/almac. Estaciones de reserva Nombre Ocupada Direc. Qi Nombre Ocupada Op Vj Vk Qj Qk Carga 1 SI 80 Suma 1 NO Mult 1 SI Mult R(f2) Carga 1
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-simulacion]] · [[tabla-de-estado-de-estacion-de-reserva-en-tomasulo-campos-y]] · [[como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de]]

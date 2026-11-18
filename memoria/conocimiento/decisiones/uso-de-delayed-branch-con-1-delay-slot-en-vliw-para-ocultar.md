@@ -17,4 +17,4 @@ El procesador VLIW implementa delayed branch con un único delay slot: la instru
 > assume that this processor supports forwarding and delayed branch (with 1 delay slot)
 > — `repo:datos/temarios/AC/examenes/January2019.pdf`
 
-Relacionado: [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]]
+Relacionado: [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[delayed-branch-en-vliw-y-su-efecto-en-planificacion]] · [[salto-retardado-delayed-branch-con-1-slot-de-retardo-en-vliw]]

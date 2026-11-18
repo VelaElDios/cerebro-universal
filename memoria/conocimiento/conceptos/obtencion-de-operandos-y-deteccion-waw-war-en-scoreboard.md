@@ -16,3 +16,5 @@ En el Scoreboard (planificación dinámica en orden), los operandos se leen del 
 
 > In the Scoreboard technique: WAW and WAR hazards are checked in the first and last step, respectively
 > — `repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)` (cita sin comprobar)
+
+Relacionado: [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]] · [[manejo-de-riesgos-estructurales-en-scoreboard]] · [[scoreboard-los-riesgos-estructurales-se-gestionan-en-la-etap]]

@@ -17,4 +17,4 @@ Tanto el selector (contador de 2 bits) como los bits de predicción de ambos pre
 > Selector and prediction bits are initialized to 1.
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[selector-de-2-bits-para-predictor-hibrido-de-saltos]]
+Relacionado: [[selector-de-2-bits-para-predictor-hibrido-de-saltos]] · [[reglas-de-actualizacion-del-selector-hibrido-de-2-bits]] · [[estado-inicial-de-predictores-y-contadores-en-el-ejercicio-d]]

@@ -17,4 +17,4 @@ Secuencia de 8 instrucciones: LW R3,0(R1); LW R4,0(R2); SUB R6,R7,R8; ADD R4,R3,
 > El procesador invierte 2 ciclos para la etapa MEM en las cargas y 2 ciclos para completar la etapa EX de las operaciones aritméticas. Además, implementa adelantamiento.
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[planificacion-en-superescalar-grado-2-con-sin-renombramiento]] · [[planificacion-en-superescalar-grado-2-en-orden-fuera-de-orde]] · [[codigo-y-parametros-superescalar-examen-ac-junio-2013-p3]]

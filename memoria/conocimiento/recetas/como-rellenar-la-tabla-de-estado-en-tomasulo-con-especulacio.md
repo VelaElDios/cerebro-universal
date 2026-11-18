@@ -27,4 +27,4 @@ Restricción: el ROB de 6 entradas limita cuántas instrucciones pueden estar "e
 > We perform an improvement in the processor, so that it now supports the speculative version of the Tomasulo's algorithm. A 6-entry ROB is added. FU were not changed, and the number of reservation stations and load buffers is maintained the same as before.
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[tabla-de-estado-en-tomasulo-especulativo-con-rob-issue-execu]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]]

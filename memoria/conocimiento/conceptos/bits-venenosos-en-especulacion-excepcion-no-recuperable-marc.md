@@ -17,7 +17,7 @@ En la especulación con bits venenosos (poison bits), si una instrucción especu
 > En la especulación con \"bits venenosos\", ante una excepción no recuperable causada por una instrucción especulativa: a) La excepción se atiende y el programa finaliza b) El programa devuelve un valor indefinido c) Se activa el bit venenoso del registro destino de la instrucción d) Ninguna de las anteriores
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[bits-venenosos-excepcion-no-recuperable-marca-registro-desti]] · [[comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion]]
 
 ## Ampliación (2026-11-18, )
 Los bits venenosos (poison bits) marcan un registro destino cuando una instrucción especulativa genera una excepción no recuperable (ej. fallo de página). La excepción no se toma inmediatamente; se propaga el bit venenoso. Si luego la instrucción se confirma (salto bien predicho), se lanza la excepción; si se descarta (mispredicción), se ignora. Opción correcta: b.

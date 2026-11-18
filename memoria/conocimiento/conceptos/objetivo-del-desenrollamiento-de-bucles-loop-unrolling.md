@@ -19,3 +19,5 @@ El desenrollamiento de bucles replica el cuerpo del bucle varias veces para redu
 
 ## Ampliación (2026-11-18, )
 El desenrollamiento replica el cuerpo del bucle para reducir la sobrecarga de control (saltos) y permitir al compilador reordenar instrucciones de distintas iteraciones, reduciendo **riesgos de datos** (stalls por dependencias). Aumenta el tamaño del código. Respuesta correcta: b).
+
+Relacionado: [[proposito-del-desenrollado-de-bucles-loop-unrolling]] · [[desenrollamiento-de-bucles-reduce-dependencias-de-control-me]] · [[especulacion-y-desenrollado-de-bucles-reducen-riesgos-de-con]]

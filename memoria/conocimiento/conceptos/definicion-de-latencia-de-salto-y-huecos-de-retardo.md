@@ -16,3 +16,5 @@ La latencia de un salto son los ciclos extra que transcurren desde que la instru
 
 > Latencia del salto: Ciclos adicionales entre la etapa IF de salto y su resolución. Se denominan huecos de retardo a los ciclos de latencia
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[definicion-de-latencia-de-instruccion-de-salto]] · [[definicion-de-latencia-de-salto-y-penalizacion-por-fallo-de]] · [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]]

@@ -17,4 +17,4 @@ La **arquitectura** (ISA) es la interfaz entre hardware y software de bajo nivel
 > Se refiere a aquellos atributos del sistema que son visibles al programador, es decir, los que tienen un impacto directo sobre la ejecución de un programa
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[distincion-entre-arquitectura-organizacion-y-tecnologia-en-p]] · [[arquitectura-vs-organizacion-misma-arquitectura-implica-mism]] · [[definicion-de-arquitectura-de-computador-visible-al-programa]]

@@ -5,9 +5,9 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum"]
 claves: ["fase", "PR", "fusión", "fecha", "Sprint 2"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[donetonic]] · [[grada-colchonera]] · [[saas]] · [[scrum]]
@@ -31,7 +31,7 @@ Temas: [[donetonic]] · [[grada-colchonera]] · [[saas]] · [[scrum]]
 > | PR | Fase | Fecha de fusión |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[arreglos-criticos-en-sprint-2-prs-51-55-56]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[arreglos-criticos-en-sprint-2-prs-51-55-56]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

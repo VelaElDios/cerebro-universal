@@ -5,9 +5,9 @@ temas: ["ac", "cache", "memoria", "punteros", "estructuras-datos"]
 claves: ["pointer chasing", "std::list", "std::vector", "heap allocation", "cache miss", "spatial locality"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_1_lista.cpp", "repo:datos/temarios/AC/Practicas/Practica4.pdf"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[cache]] · [[memoria]] · [[punteros]]
@@ -19,10 +19,10 @@ Temas: [[ac]] · [[cache]] · [[memoria]] · [[punteros]]
 
 `std::vector` con `.reserve(N)` asigna un único bloque contiguo. El acceso `lecturas[i]` o iteradores son aritmética de punteros simple → prefetcher hardware funciona, se aprovecha toda la línea de caché (64 bytes = 16 floats), y no hay asignaciones por elemento.
 
-> std::list provoca \"pointer chasing\": cada nodo reside en una dirección arbitraria del heap y cada ++it es un salto impredecible -> cache miss.
-> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_1_lista.cpp` (cita sin comprobar)
+> // - std::list provoca "pointer chasing": cada nodo reside en una dirección // arbitraria del heap y cada ++it es un salto impredecible -> cache miss.
+> — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_1_lista.cpp`
 
-Relacionado: [[patron-de-salto-de-latencia-en-fronteras-de-cache]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[patron-de-salto-de-latencia-en-fronteras-de-cache]] · [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[como-transformar-std-list-a-std-vector-con-reserva-previa-pa]] · [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]] · [[tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache]]
 
 ## Ampliación (2026-11-17, )
 std::list dispersa nodos en heap; cada nodo = dato + puntero siguiente. Recorrerla salta de cache line en cache line → 1 cache-miss por elemento. std::vector almacena elementos contiguos; una cache line (64 B) trae varios elementos → accesos siguientes son cache hits. Solución cache-friendly: `std::vector<T> v; v.reserve(N);` para evitar reallocations y garantizar contigüidad desde el inicio. Ambos códigos deben producir idéntico resultado numérico.

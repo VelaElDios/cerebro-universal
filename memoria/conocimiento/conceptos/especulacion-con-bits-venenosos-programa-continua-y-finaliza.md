@@ -17,4 +17,4 @@ Los bits venenosos (poison bits) marcan resultados de instrucciones especulativa
 > En la especulación con 'bits venenosos', al ejecutar una instrucción especulativa que genera una excepción no recuperable siempre ocurre que: a) El programa continua pero finaliza obteniendo valores indefinidos b) El programa continúa y finaliza correctamente c) El programa continua y finaliza dando un error d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]]
+Relacionado: [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]] · [[comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion]] · [[bits-venenosos-excepcion-no-recuperable-marca-registro-desti]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]]

@@ -18,4 +18,4 @@ El working set varía desde 4 KiB (típico L1 data cache) hasta 256 MiB (supera 
 constexpr std::size_t kMax = 256ull * 1024 * 1024;	// 256 MiB
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp`
 
-Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]]
+Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]] · [[tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script]] · [[como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset]] · [[working-set-size-vs-memory-access-latency-experiment]]

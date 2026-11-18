@@ -24,4 +24,4 @@ Estas fuentes cubren tanto la teoría (ILP, riesgos, dependencias) como las téc
 > John L. Hennessy, David A. Patterson. Computer architecture: a quantitative approach. Morgan Kaufmann (4th Ed., 2006 / 5th Ed., 2012 / 6th Ed., 2019) • Capítulo 2 / 3 (desenrollamiento de bucles y Tomasulo) • Apéndice A / C (Marcador) • Apéndice G / H (segmentación software y planificación de trazas) • J. Ortega, M. Anguita, A. Prieto. Arquitectura de computadores. Thomson, 2006 • Capítulo 5 (desenrollamiento de bucles, segmentación software y planificación de trazas)
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[bibliografia-de-referencia-para-el-tema-de-prediccion-de-sal]] · [[indice-del-tema-3-planificacion-de-instrucciones-estatica-y]] · [[planificacion-de-trazas-trace-scheduling-para-condicionales]]

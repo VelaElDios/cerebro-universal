@@ -15,7 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «optimizacion-compilador»
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/por-que-o1-evita-que-el-compilador-enmascare-la-optimizacion|Por qué -O1 evita que el compilador enmascare la optimización manual de ILP]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/por-que-o1-evita-que-el-compilador-enmascare-la-optimizacion|Por qué -O1 evita que el compilador enmascare la optimización manual de ILP]]
 
 ## Temas relacionados
 

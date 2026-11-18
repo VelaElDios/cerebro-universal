@@ -24,4 +24,4 @@ Se necesita mejorar la unidad FP 1.71× (≈ 71% más rápida).
 > Por lo tanto, 5 / (1 + x) = 1.5 → x = 1.71
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su]]
+Relacionado: [[ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su]] · [[factor-de-mejora-necesario-para-speedup-objetivo-dado-ejerci]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion]]

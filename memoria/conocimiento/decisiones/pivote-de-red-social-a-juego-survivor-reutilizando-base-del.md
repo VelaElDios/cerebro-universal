@@ -26,4 +26,6 @@ Resultado: proyecto más completo técnicamente y diferenciador.
 > Pasar de red social a **juego** fue una buena decisión: reutiliza toda la base del sprint y obliga a resolver problemas técnicos interesantes (determinismo, rendimiento, validación en el servidor, generación procedural, audio sintetizado).
 > — `repo:saas/docs/documentacion-tecnica.md`
 
+Relacionado: [[cambio-de-alcance-de-red-social-a-juego-survivor-justificaci]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

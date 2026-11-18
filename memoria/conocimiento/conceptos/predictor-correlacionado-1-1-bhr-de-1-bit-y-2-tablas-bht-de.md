@@ -17,4 +17,4 @@ El predictor (1,1) es el correlacionado más simple: BHR de 1 bit (resultado del
 > c) Predictor correlacionado (1,1) • Implementación más simple: predictor (1,1):  1 bit en la BHR, que selecciona la BHT  2 tablas BHT de 1 bit BHTs • n bits • PC • BHR
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[ejemplo-comparativo-predictores-1-bit-vs-2-bits-vs-correlaci]]
+Relacionado: [[ejemplo-comparativo-predictores-1-bit-vs-2-bits-vs-correlaci]] · [[predictor-correlacionante-de-dos-niveles-1-1-con-bhr-global]] · [[predictor-correlacionado-1-1-en-bucle-secuencia-0-1-0-2]] · [[predictor-correlacionado-1-2-con-bhr-y-dos-bhts]]

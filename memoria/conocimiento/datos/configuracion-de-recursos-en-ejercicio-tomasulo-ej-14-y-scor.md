@@ -28,4 +28,4 @@ Temas: [[ac]] · [[buffers]] · [[estaciones-reserva]] · [[recursos]] · [[scor
 > Hay dos estaciones de reserva por UF, un buffer da carga y 1 buffer de almacenamiento." / "No hay riesgos estructurales que afecten a las unidades funcionales, a las estaciones de reserva o a los buffers de carga.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej]]
+Relacionado: [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej]] · [[simulacion-scoreboard-vs-tomasulo-basico-pasos-de-ejecucion]]

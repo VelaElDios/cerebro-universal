@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «banco-registros» (este a
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/etapas-de-uso-del-banco-de-registros-en-pipeline-mips-de-5-e|Etapas de uso del banco de registros en pipeline MIPS de 5 etapas]]
+- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS de 5 etapas: acceso en ID (lectura) y WB (escritura)]]
 
 ## Temas relacionados
 
-[[ac]] · [[mips]] · [[pipeline]]
+[[ac]] · [[mips]] · [[pipeline]] · [[registros]]

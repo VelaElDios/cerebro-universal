@@ -17,4 +17,4 @@ Dependencias RAW (verdaderas): 1→4 (R3), 2→5 (R4), 4→5 (R4), 1→7 (R3), 4
 > LW R3, 0(R1); LW R4, 0(R2); SUB R6, R7, R8; ADD R4, R3, R11; LW R11, 0(R4); SUB R9, R9, R13; ADD R8, R8, R3; SUB R11, R11, R3
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[codigo-para-planificacion-superescalar-con-dependencias-raw]] · [[codigo-y-parametros-superescalar-examen-ac-junio-2013-p3]] · [[analisis-de-dependencias-raw-war-waw-en-una-iteracion-del-bu]]

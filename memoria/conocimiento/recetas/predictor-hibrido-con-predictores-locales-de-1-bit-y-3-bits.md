@@ -17,4 +17,4 @@ Ejercicio 11: bucle que procesa 6 números de Fibonacci (0,1,1,2,3,5). Saltos: B
 > Muestra el comportamiento de un predictor híbrido que combina dos predictores locales (llamados “Predictor1” y “Predictor2”). El Predictor1 asocia un predictor de 1-bit para cada instrucción de salto (B1 y B2) y el Predictor2 usa un predictor de 3-bits para cada salto. Para seleccionar el predictor a emplear en cada caso hay una tabla (llamada “Contadores”) que almacena un contador de 2-bits saturado para cada salto.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c]]
+Relacionado: [[estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c]] · [[predictor-hibrido-que-combina-dos-predictores-locales-1-bit]] · [[simulacion-paso-a-paso-del-predictor-hibrido-para-el-bucle-d]] · [[tabla-de-actualizacion-de-contadores-de-2-bits-saturados-par]]

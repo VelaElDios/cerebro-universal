@@ -16,3 +16,5 @@ En la gráfica de la página 39 se comparan tres predictores con 4,096 entradas 
 
 > El predictor correlacionado mejora a los otros dos predictores
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
+
+Relacionado: [[ejemplo-comparativo-predictores-1-bit-vs-2-bits-vs-correlaci]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[calculo-de-speedup-comparando-predictor-con-penalidad-variab]]

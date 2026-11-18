@@ -17,4 +17,4 @@ En el bucle dado, I3 (SW R1,0(R2)) lee R2 para la dirección de memoria; I4 (DAD
 > There is an antidependence between I3 and I4
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[definicion-de-riesgo-raw-read-after-write]]
+Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[definicion-de-riesgo-raw-read-after-write]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]

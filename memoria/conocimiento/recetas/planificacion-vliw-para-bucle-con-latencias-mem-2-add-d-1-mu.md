@@ -46,4 +46,4 @@ Total ~7 ciclos por iteración. Ops útiles = 10 / 7 ≈ 1.43 ops/ciclo (máx 4)
 > Considera los siguientes parámetros temporales: 2 ciclos para la etapa MEM en las cargas y en los almacenamientos, 1 ciclo para completar la etapa EX de ADD.D y 2 ciclos para completar la etapa EX de la MUL.D. Además, no se aplica salto retardado.
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[desenrollado-de-bucle-3x-y-planificacion-vliw-compactada]] · [[como-resolver-planificacion-vliw-con-desenrollado-y-latencia]]

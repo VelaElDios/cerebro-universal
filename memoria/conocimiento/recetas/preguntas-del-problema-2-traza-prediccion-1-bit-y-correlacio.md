@@ -16,3 +16,5 @@ Metodología: Simular 18 ejecuciones de salto (6 iteraciones x 3 saltos). Para c
 
 > a) (0,25 puntos) Indica el comportamiento real (T/NT) de las instrucciones de salto ejecutadas... b) (0,75 puntos) Detalla el comportamiento de un predictor de un nivel que asigna 1 bit a cada instrucción de salto... Indica al final la tasa de acierto de este predictor. c) (1 punto) Detalla el comportamiento de un predictor de saltos correlacionado de dos niveles (1, 1)... Indica al final la tasa de acierto de este predictor.
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf` (cita sin comprobar)
+
+Relacionado: [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos]] · [[simulacion-de-predictor-de-un-nivel-con-contadores-de-satura]]

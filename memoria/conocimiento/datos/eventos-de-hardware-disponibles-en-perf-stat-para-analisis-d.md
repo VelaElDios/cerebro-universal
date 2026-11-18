@@ -26,4 +26,4 @@ Además, `perf` reporta `time elapsed`, `user`, `sys`. Nota: el sistema distingu
 > perf stat -e "cycles,instructions,cache-references,cache-misses,L1-dcache-loads,L1-dcache-load-misses,branches,branch-misses" Ejecutable_Practica
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[perf-stat-con-contadores-clave-de-rendimiento-caches-ramas-t]] · [[como-medir-contadores-hardware-con-perf-stat-para-comparar-p]] · [[como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per]]

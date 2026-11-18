@@ -17,4 +17,4 @@ WAR (Write After Read): j escribe en una ubicación que i lee (i antes que j ló
 > Un riesgo de tipo WAR: c) Se corresponde con una dependencia de datos
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[hazard-war-corresponde-a-antidependencia-dependencia-de-nomb]] · [[que-es-un-riesgo-war-y-a-que-dependencia-corresponde]] · [[antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord]]

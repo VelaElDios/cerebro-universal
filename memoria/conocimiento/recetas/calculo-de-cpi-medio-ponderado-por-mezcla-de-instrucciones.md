@@ -19,3 +19,5 @@ El peak MIPS se calcula con la instrucción más rápida (tipo A, 2 ciclos): 800
 
 > In its instruction set there are three types of instructions, A, B, and C. and it needs 2, 6, and 4 clock cycles to execute instructions of type A, B, and C. The machine has a clock frequency of 800 MHz. The test program we are going to use has the following mix of instructions: 40% type A, 50% type B, and 10% type C.
 > — `repo:datos/temarios/AC/examenes/June2023.pdf`
+
+Relacionado: [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-c]] · [[calculo-de-mips-a-partir-de-mezcla-de-instrucciones-cpi-y-fr]] · [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]]

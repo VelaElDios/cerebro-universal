@@ -17,4 +17,4 @@ Speedup = (Ciclos MIPS64 por iteración en estado estable) / (Ciclos VLIW por it
 > What is the speedup obtained by the VLIW processor with respect to the code in section b) of the segmented MIPS64 processor? Explain the calculations made and consider that the code is scheduled to obtain the best performance (i.e. the lowest number of stalls).
 > — `repo:datos/temarios/AC/examenes/June2023.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[calculo-speedup-vliw-vs-escalar-para-examen-enero-2026-probl]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]] · [[conversion-de-codigo-vliw-compactado-a-bucle-mips64-segmenta]]

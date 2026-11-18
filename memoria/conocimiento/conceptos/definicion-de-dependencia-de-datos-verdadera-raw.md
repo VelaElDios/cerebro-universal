@@ -17,4 +17,4 @@ La dependencia de datos verdadera (Read After Write) ocurre cuando la instrucci�
 > Existe una dependencia de datos entre dos instrucciones i y j (j lógicamente después de i) si : La instrucción i produce un resultado que usa la instrucción j
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]] · [[riesgo-raw-como-dependencia-de-datos-verdadera]] · [[diferencia-entre-dependencia-de-datos-raw-antidependencia-wa]]

@@ -17,4 +17,4 @@ Receta para CPI sin BTB (stall-on-branch): CPI = 1 + Σ(frecuencia_tipo × penal
 > para una instrucción de salto condicional la dirección del salto es conocida al final de la etapa ID y el sentido al final de la etapa EX, y para una instrucción de salto incondicional la dirección del salto es conocida al final de la etapa ID
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf`
 
-Relacionado: [[problema-examen-ac-cpi-pipeline-con-btb-que-solo-almacena-sa]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[problema-examen-ac-cpi-pipeline-con-btb-que-solo-almacena-sa]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]] · [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]] · [[cpi-con-prediccion-de-saltos-en-pipeline-de-5-etapas-direcci]]

@@ -34,4 +34,4 @@ Dependencias RAW clave:
 > L.D   F1, 0(R1) L.D   F2, 0(R2) SUB.D F7, F1, F2 MUL.D F3, F8, F4 L.D   F4, 0(R10) ADD.D F1, F3, F5 LSH   R12, R13, R14 SUB.D F2, F2, F7 ADD.D F4, F14, F6 ADD.D F20, F10, F6
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]]
+Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]] · [[secuencia-de-instrucciones-fp-del-examen-para-tomasulo-10-in]] · [[codigo-y-parametros-superescalar-examen-ac-junio-2013-p3]]

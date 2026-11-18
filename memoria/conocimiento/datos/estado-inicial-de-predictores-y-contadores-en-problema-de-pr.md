@@ -17,4 +17,4 @@ Valores iniciales antes de procesar la secuencia: Contadores de selección (2 bi
 > Estado inicial) -- -- -- B1: 00 B2: 00 B1: 0 B2: 0 B1: 000 B2: 000
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf` (cita sin comprobar)
 
-Relacionado: [[predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p]] · [[reglas-de-actualizacion-de-contadores-de-seleccion-en-predic]]
+Relacionado: [[predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p]] · [[reglas-de-actualizacion-de-contadores-de-seleccion-en-predic]] · [[estado-inicial-de-predictores-y-contadores-en-el-ejercicio-d]] · [[inicializacion-del-selector-y-bits-de-prediccion-en-predicto]] · [[estados-iniciales-de-predictores-en-ejercicio-2-un-nivel-y-d]]

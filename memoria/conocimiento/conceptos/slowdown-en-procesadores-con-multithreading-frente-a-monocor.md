@@ -16,3 +16,5 @@ El slowdown (ralentización de un hilo individual por compartir recursos) en pro
 
 > Slowdown in processors with multithreading:
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
+
+Relacionado: [[ejecucion-multicamino-multi-path-execution-frente-a-predicci]] · [[calculo-de-speedup-por-desenrollado-de-bucle-en-superescalar]] · [[modelo-de-programacion-simt-en-gpgpu]]

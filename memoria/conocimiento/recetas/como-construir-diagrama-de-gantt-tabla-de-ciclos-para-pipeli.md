@@ -26,4 +26,4 @@ Truco: En examen, basta tabla compacta: Ciclo | Slot0 | Slot1 | Notas (stall, fo
 > Muestra una planificación de instrucciones para los siguientes casos: a) Ejecución en orden b) Ejecución fuera de orden, sin capacidad de renombramiento. c) Ejecución fuera de orden, con capacidad de renombramiento.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[planificacion-en-superescalar-grado-2-con-sin-renombramiento]] · [[planificacion-en-superescalar-grado-2-en-orden-fuera-de-orde]] · [[planificacion-en-superescalar-grado-2-con-latencias-mem-2-y]]

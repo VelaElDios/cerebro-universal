@@ -21,4 +21,4 @@ Lección: **frecuencia más alta no garantiza mejor rendimiento**; el CPI (organ
 > La máquina A tiene un ciclo de reloj de 1 ns y un CPI de 2 para un programa concreto, mientras que la máquina B tiene un tiempo de ciclo de 2 ns y un CPI de 1.2 para el mismo programa
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[como-comparar-rendimiento-de-dos-maquinas-con-mismo-isa-usan]] · [[comparacion-de-rendimiento-entre-dos-maquinas-cpi-ciclo-de-r]]

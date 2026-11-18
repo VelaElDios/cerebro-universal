@@ -17,4 +17,4 @@ BHR registra últimos 5 resultados de salto (1=tomado, 0=no tomado). Bucles: B1 
 > Which is the value of a 5-bit BHR for the next code? for (i=0; i<10; i++) for (j=0; j<3; j++) { ... } Assuming that i=6, j=0, and we are executing the internal loop code
 > — `repo:datos/temarios/AC/examenes/June2022.pdf` (cita sin comprobar)
 
-Relacionado: [[secuencia-h-m-para-predictor-2-bit-debilmente-no-tomado-en-b]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[secuencia-h-m-para-predictor-2-bit-debilmente-no-tomado-en-b]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[predictor-correlacionado-1-2-bhr-11-tras-dos-saltos-tomados]] · [[interpretacion-del-bhr-en-predictor-correlativo-2-3]] · [[simulacion-de-predictor-correlacionante-de-2-niveles-2-1-con]]

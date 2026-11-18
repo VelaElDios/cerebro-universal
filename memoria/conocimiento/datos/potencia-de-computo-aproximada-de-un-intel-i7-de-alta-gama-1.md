@@ -16,3 +16,5 @@ En el contexto del examen (2015), un i7 de alta gama (p.ej. Haswell-E con AVX2) 
 
 > ¿Aproximadamente qué potencia de cómputo tiene el último procesador i7 de Intel?
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
+
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[definicion-de-mflops-millones-de-operaciones-de-punto-flotan]]

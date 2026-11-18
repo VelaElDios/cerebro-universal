@@ -16,3 +16,5 @@ Planificación estática: el compilador reordena instrucciones (respetando depen
 
 > En la planificación estática de instrucciones: a) El compilador reordena las instrucciones para reducir las dependencias
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf`
+
+Relacionado: [[planificacion-estatica-el-compilador-reordena-para-reducir-d]] · [[planificacion-estatica-vs-dinamica-de-codigo]] · [[planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui]]

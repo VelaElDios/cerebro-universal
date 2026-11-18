@@ -17,4 +17,4 @@ El loop unrolling replica el cuerpo del bucle varias veces para crear una iterac
 > Loop unrolling is an instruction scheduling strategy that: c) Schedules separate instructions from different iterations.
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf` (cita sin comprobar)
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[desenrollamiento-de-bucles-reduce-dependencias-de-control-me]] · [[proposito-del-desenrollado-de-bucles-loop-unrolling]] · [[desenrollado-de-bucles-loop-unrolling-en-superescalar-con-re]]

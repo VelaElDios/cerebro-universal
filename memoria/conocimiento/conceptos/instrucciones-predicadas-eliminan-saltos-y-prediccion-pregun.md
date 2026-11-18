@@ -17,4 +17,4 @@ Las instrucciones predicadas (predication) convierten dependencias de control en
 > Indicate the correct statement: a) Predicated instructions reduce the misprediction recovery penalty b) Predicated instructions execute both branch directions, without prediction c) Predicated instructions eliminate branch instructions (and the corresponding prediction) d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
 
-Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[instrucciones-predicadas-convertir-dependencias-de-control-e]] · [[arquitectura-que-implementa-instrucciones-predicadas-de-form]] · [[salto-retardado-y-instrucciones-predicadas-como-alternativas]]

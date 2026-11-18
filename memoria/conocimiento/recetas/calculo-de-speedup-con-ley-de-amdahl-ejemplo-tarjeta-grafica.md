@@ -16,3 +16,5 @@ Speedup = 1 / ((1 - f) + f/s) donde f=0.4 (fracción mejorada) y s=4 (aceleraci�
 
 > La nueva tarjeta gráfica de nuestro ordenador es cuatro veces más rápida que la antigua. Suponiendo que un juego de ordenador concreto dedica el 40% de su tiempo de ejecución a realizar operaciones gráficas, ¿cuál será el speedup obtenido…
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf` (cita sin comprobar)
+
+Relacionado: [[speedup-con-ley-de-amdahl-para-mejora-parcial-de-tarjeta-gra]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-parcial]] · [[calculo-de-ganancia-de-velocidad-speedup-con-la-ley-de-amdah]]

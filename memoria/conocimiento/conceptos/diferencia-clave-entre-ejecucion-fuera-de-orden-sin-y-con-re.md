@@ -29,4 +29,4 @@ Temas: [[ac]] · [[pipeline]] · [[superscalar]]
 > b) Ejecución fuera de orden, sin capacidad de renombramiento. c) Ejecución fuera de orden, con capacidad de renombramiento.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffer-de-carga-en-tomasulo-especulativo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[diferencias-entre-ejecucion-en-orden-fuera-de-orden-sin-reno]] · [[diferencias-clave-entre-los-tres-modelos-de-ejecucion-supers]] · [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r]]

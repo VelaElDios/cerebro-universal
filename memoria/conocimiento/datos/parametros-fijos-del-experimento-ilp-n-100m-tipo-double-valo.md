@@ -28,4 +28,4 @@ Temas: [[ac]] · [[experimento]] · [[parametros]]
 > const int N = 100'000'000; // 100 millones de elementos (múltiplo de 4) std::vector<double> v(N, 1.0f);
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_1_ilp.cpp`
 
-Relacionado: [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]]
+Relacionado: [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]] · [[parametros-fijos-del-experimento-aos-soa-tarea-3-2]] · [[uso-de-double-en-lugar-de-float-para-acumulacion-en-experime]] · [[parametros-del-experimento-tamano-de-datos-bloque-y-repetici]]

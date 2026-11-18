@@ -19,3 +19,5 @@ Tres clases de hazards que degradan el CPI ideal de 1:
 
 > Hazard o Riesgo: situación que impide que se pueda hacer la siguiente etapa en el cauce de una instrucción • Tipos de Riesgos: • Estructurales: provocados por un conflicto en el uso de un recurso hardware • De datos: cuando una instrucción depende del resultado de otra previa, y la superposición de la ejecución de ambas instrucciones puede provocar problemas • De control: provocados por la segmentación de los saltos y otras instrucciones que modifican el PC
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
+
+Relacionado: [[dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione]] · [[riesgos-estructurales-causas-y-ejemplo-banco-de-registros]] · [[tipos-de-dependencia-y-riesgos-asociados-en-segmentacion]]

@@ -16,3 +16,5 @@ Definición clásica: a) Son sistemas de memoria distribuida (cada nodo tiene su
 
 > Los multicomputadores:
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
+
+Relacionado: [[en-la-taxonomia-de-flynn-los-multicomputadores-son-maquinas]] · [[definicion-de-arquitectura-frente-a-organizacion-del-computa]] · [[definicion-de-ejecucion-multicamino-multipath-execution]]

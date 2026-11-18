@@ -21,3 +21,5 @@ Por tanto, la afirmación correcta es: «El último salto ejecutado fue TOMADO (
 
 > El valor del BHR en un predictor de saltos correlacionado (2, 3) en un momento dado es 01. Podemos afirmar que:
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf`
+
+Relacionado: [[interpretacion-del-bhr-en-predictor-correlativo-2-3]] · [[predictor-correlacionado-2-1-bhr-tras-dos-saltos-tomados-des]] · [[predictor-correlacionado-1-2-bhr-11-tras-dos-saltos-tomados]]

@@ -17,4 +17,4 @@ Latencias exactas dadas en el enunciado: L.D y S.D → etapa MEM = 2 ciclos; ADD
 > Consider the following timing parameters: 2 cycles for the MEM stage in loads and stores, 1 cycle for the EX stage of the ADD.D instruction, and 2 cycles for the EX stage of the MUL.D instruction. Delayed branch is not supported.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf` (cita sin comprobar)
 
-Relacionado: [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]]
+Relacionado: [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[parametros-de-temporizacion-vliw-examen-enero-2016]] · [[parametros-temporales-de-pipeline-para-vliw-problema-3b]]

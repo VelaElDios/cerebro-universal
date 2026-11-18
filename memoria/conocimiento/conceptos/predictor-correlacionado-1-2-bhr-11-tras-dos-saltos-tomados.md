@@ -16,3 +16,5 @@ Un predictor (m, n) usa m bits de historia local y n bits de historia global (BH
 
 > In a (1, 2) correlating predictor where the two last executed branches were taken, the value of the BHR is… a) 10 b) 11 c) 00 d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
+
+Relacionado: [[predictor-correlacionado-2-1-bhr-tras-dos-saltos-tomados-des]] · [[interpretacion-del-bhr-en-predictor-correlativo-2-3]] · [[interpretacion-del-bhr-en-predictor-correlacionado-m-n-test]]

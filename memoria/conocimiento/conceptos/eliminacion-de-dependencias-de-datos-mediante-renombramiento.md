@@ -16,3 +16,5 @@ El renombramiento de registros (register renaming) elimina las dependencias de n
 
 > Con respecto a las dependencias de datos: Se eliminan mediante renombramiento
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
+
+Relacionado: [[las-dependencias-de-datos-verdaderas-no-se-pueden-eliminar-e]] · [[dependencias-de-nombre-war-waw-se-eliminan-con-renombramient]] · [[dependencias-de-nombre-se-eliminan-mediante-renombramiento-d]]

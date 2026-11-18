@@ -35,3 +35,5 @@ Pasos típicos para resolver:
 
 > El procesador segmentado usa para la ejecución del Código las características típicas: es posible escribir y leer a/desde un registro en el mismo ciclo de reloj, hay adelantamiento de operandos, los saltos se resuelven en la etapa ID, se aplica salto retardado, etc.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
+
+Relacionado: [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]] · [[segmentacion-software-software-pipelining-para-bucle-conteo]] · [[salto-retardado-delayed-branch-en-risc-v-implicaciones-en-pl]]

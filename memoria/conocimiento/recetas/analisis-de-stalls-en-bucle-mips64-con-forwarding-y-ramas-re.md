@@ -16,3 +16,5 @@ Código: I1:LW R6,0(R1); I2:DADD R3,R3,R6; I3:LW R7,4(R1); I4:DADD R4,R4,R7; I5:
 
 > Assume that we have a pipelined processor with following characteristics: • Operand forwarding is supported. • A value can be written and read from a register in the same clock cycle. • All the dependences are detected and solved in the ID stage. • Branches are completely solved in the ID stage. • Delayed branch is supported.
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
+
+Relacionado: [[desenrollado-y-planificacion-sin-stalls-del-bucle-mips64-eje]] · [[planificacion-de-bucle-jacobsthal-en-pipeline-mips64-con-uni]] · [[como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi]]

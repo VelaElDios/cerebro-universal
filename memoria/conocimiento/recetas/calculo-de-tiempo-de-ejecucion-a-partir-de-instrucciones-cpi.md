@@ -16,3 +16,5 @@ Tiempo_ejecución = Instrucciones × CPI × Tiempo_ciclo. Ejemplo: 5.5e9 × 0.9 
 
 > We run a program with 5.5×109 instructions in a computer with a CPI value of 0.9 cycles and a cycle length of 0.5 ns. Then, the execution time of this program is…
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
+
+Relacionado: [[calculo-de-tiempo-de-ejecucion-con-cpi-ic-y-duracion-de-cicl]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc]]

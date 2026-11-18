@@ -16,3 +16,5 @@ ILP estático (pregunta 7): depende principalmente del compilador (respuesta c).
 
 > In dynamic code scheduling: a) Compiler reorders program instructions to reduce dependences b) Compiler predicts branch instructions to reduce dependences c) Hardware reorders program instructions to reduce dependences d) Hardware speculates the execution of instructions to reduce dependences
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
+
+Relacionado: [[tecnicas-estaticas-de-ilp-soportadas-principalmente-por-el-c]] · [[planificacion-estatica-vs-dinamica-de-codigo]] · [[planificacion-estatica-el-compilador-reordena-para-reducir-d]]

@@ -16,3 +16,5 @@ Aplicar ley de Amdahl: Speedup_global = 1 / ((1 - f) + f/k), donde f = fracción
 
 > We are looking for a benchmark to measure the performance of the new floating-point unit, which is 4 times faster than the old one. We want to get a speedup of 5. If the benchmark we are considering takes 100 seconds using the old floating-point hardware, how much of the initial execution time should the floating-point instructions account for to achieve that speedup?
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
+
+Relacionado: [[calculo-de-speedup-con-ley-de-amdahl-mejora-10x-en-punto-flo]] · [[aplicacion-de-la-ley-de-amdahl-para-calcular-fraccion-de-tie]] · [[calculo-de-speedup-con-ley-de-amdahl-para-instrucciones-de-p]]

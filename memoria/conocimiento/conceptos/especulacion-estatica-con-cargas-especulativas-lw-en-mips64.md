@@ -16,3 +16,5 @@ El examen utiliza la notación LW* para indicar cargas especulativas que se ejec
 
 > LW*   R1, 0(R2)                ; Carga especulativa
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf`
+
+Relacionado: [[especulacion-estatica-con-poison-bits-en-mips64-lw]] · [[analisis-de-codigo-con-especulacion-estatica-para-examen-ac]] · [[procesador-sin-soporte-para-especulacion-comportamiento-ante]]

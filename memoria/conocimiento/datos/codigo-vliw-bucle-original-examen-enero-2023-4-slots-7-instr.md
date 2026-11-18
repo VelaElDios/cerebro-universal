@@ -17,4 +17,4 @@ Bucle VLIW original de 7 ciclos de instrucción (Instruction 1 a 7) para un proc
 > Instruction 1 L.D F1, 0(R1) L.D F2, 0(R2) DADDUI R1, R1, #8 DADDUI R2, R2, #8 loop Instruction 2 NOP NOP NOP NOP Instruction 3 DADDUI R4, R4, #-1 NOP NOP NOP Instruction 4 NOP MUL.D F3, F1, F2 NOP NOP Instruction 5 NOP NOP NOP NOP Instruction 6 ADD.D F4, F1, F3 BNEZ R4, loop NOP NOP Instruction 7 S.D F4, -8(R1) NOP NOP NOP
 > — `repo:datos/temarios/AC/examenes/January2023.pdf`
 
-Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]]
+Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo]] · [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]] · [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]]

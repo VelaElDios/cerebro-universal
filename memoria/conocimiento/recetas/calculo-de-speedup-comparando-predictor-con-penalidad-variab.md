@@ -17,4 +17,4 @@ Temas: [[ac]] · [[cpi]] · [[penalidad-salto]] · [[prediccion-saltos]] · [[sp
 > Asume que la penalidad por fallo en la predicción es siempre de 4 ciclos, que sólo hay saltos del tipo B1 y B2, y que la frecuencia de saltos es del 10%. ¿Cuánto más rápido es un procesador que usa el predictor del caso iii, que otro procesador que tiene una penalidad por saltos fija e igual a 2 ciclos? Supón un CPI de 1 sin detenciones por los saltos.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s]] · [[calculo-de-cpi-con-predictor-de-salto-tomado-y-penalizacion]] · [[evaluacion-de-rendimiento-de-btb-con-politica-de-solo-saltos]]

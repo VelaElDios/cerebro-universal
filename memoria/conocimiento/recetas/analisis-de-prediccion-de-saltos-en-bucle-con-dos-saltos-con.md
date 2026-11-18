@@ -17,4 +17,4 @@ El bucle recorre un array en memoria (direcciones 0x1000, 0x1004, ...). B1 (BEQZ
 > a) ¿Cuál será el sentido real de los saltos B1 y B2 durante el recorrido de la secuencia?
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]] · [[comportamiento-de-predictor-correlacionado-2-1-con-historia]]

@@ -19,4 +19,4 @@ Momento de captura: **el ciclo en que termina la ejecución del primer L.D. (ins
 > Complete the table below to display the contents of the ROB (which has only 4 entries), just in the same cycle in which the first L.D. instruction ends. Entry Busy Instruction Status Destination Value
 > — `repo:datos/temarios/AC/examenes/January2022.pdf` (cita sin comprobar)
 
-Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[estructura-de-tabla-rob-para-tomasulo-especulativo-con-5-ent]] · [[volcado-de-rob-reorder-buffer-en-ciclo-de-finalizacion-de-pr]] · [[peticion-de-instantanea-rob-en-ciclo-6-para-examen-enero-202]]

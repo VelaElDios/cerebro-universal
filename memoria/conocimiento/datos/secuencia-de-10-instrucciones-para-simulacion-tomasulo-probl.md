@@ -16,3 +16,5 @@ Código a simular. Dos "iteraciones" de un patrón: Cargar F1, Mul F1*F0, Cargar
 
 > L.S F1, 0(R2); MUL.S F1, F1, F0; L.S F2, 4(R2); ADD.S F2, F1, F2; S.S F2, 8(R2); L.S F1, 4(R2); MUL.S F1, F1, F0; L.S F2, 8(R2); ADD.S F2, F1, F2; S.S F2, 12(R2)
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf` (cita sin comprobar)
+
+Relacionado: [[secuencia-de-10-instrucciones-mips64-fp-para-ejercicio-3-tom]] · [[secuencia-de-instrucciones-mips64-para-simulacion-tomasulo-p]] · [[secuencia-de-instrucciones-fp-del-examen-para-tomasulo-10-in]]

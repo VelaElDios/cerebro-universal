@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "bht"
-notas: 18
+notas: 17
 ---
 # bht
 
@@ -26,13 +26,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bht» (este archivo se ge
 - 💡 [[memoria/conocimiento/conceptos/implementacion-bht-para-predictor-de-2-bits-4k-entradas-80-9|Implementación BHT para predictor de 2 bits: 4K entradas, ~80-90% acierto]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/implementacion-de-la-bht-en-predictor-dinamico-de-2-bits|Implementación de la BHT en predictor dinámico de 2 bits]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/la-bht-almacena-los-bits-de-prediccion-de-todas-las-instrucc|La BHT almacena los bits de predicción de todas las instrucciones de salto condicional]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-indexa-bht-con-xor-de-bits-de-pc-y-bhr|Predictor gselect indexa BHT con XOR de bits de PC y BHR]]
+- 💡 [[memoria/conocimiento/conceptos/predictor-gselect-indexa-bht-con-xor-de-bits-de-pc-y-bhr|Predictor gselect: indexación de BHT mediante XOR de bits de PC y BHR]]
 - 💡 [[memoria/conocimiento/conceptos/seleccion-de-entrada-en-bht-branch-history-table|Selección de entrada en BHT (Branch History Table)]] · ⚠️ propuesto
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]]
-- 📊 [[memoria/conocimiento/datos/predictor-correlacionado-m-n-tiene-2-n-bhts|Predictor correlacionado (m,n) tiene 2^n BHTs]]
+- 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]] · ⚠️ propuesto
 
 ## Temas relacionados
 

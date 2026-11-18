@@ -27,4 +27,4 @@ Para resolver: hacer tabla ciclo × etapa × instr, marcar cuándo empieza/termi
 > se ejecuta en un superescalar de grado 2, capaz de emitir cualquier tipo de instrucción por ciclo. El procesador invierte 2 ciclos para la etapa MEM en las cargas y 2 ciclos para completar la etapa EX de las operaciones aritméticas. Además, implementa adelantamiento.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[como-construir-diagrama-de-gantt-tabla-de-ciclos-para-pipeli]] · [[planificacion-en-superescalar-grado-2-en-orden-fuera-de-orde]] · [[problema-3-examen-ac-junio-2011-codigo-y-parametros-de-plani]]

@@ -17,4 +17,4 @@ El bucle recorre secuencia 0,1,0,2,0,3,0,4,0,5 (10 elementos). Saltos: B1 (BEQZ 
 > ¿Qué tasa de acierto obtendríamos si asociamos a cada salto un predictor de 1 bit inicializado a 1? ¿Y si asociamos a cada salto un predictor de 4 bits inicializado a 0111? Justifica las respuestas. ¿Cómo quedarían los predictores una vez finalizado el recorrido?
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf`
 
-Relacionado: [[estado-inicial-de-predictores-en-ejercicio-12-predictor-2-bi]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]]
+Relacionado: [[estado-inicial-de-predictores-en-ejercicio-12-predictor-2-bi]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[simulacion-de-predictores-1-bit-4-bits-saturado-y-correlacio]] · [[predictor-de-1-bit-inicializado-a-no-tomado-en-bucle-secuenc]] · [[preguntas-del-problema-2-traza-prediccion-1-bit-y-correlacio]]

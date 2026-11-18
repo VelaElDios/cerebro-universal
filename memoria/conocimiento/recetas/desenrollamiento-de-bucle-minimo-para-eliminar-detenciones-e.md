@@ -31,4 +31,4 @@ Procedimiento estándar (Ej. 15b, 17b, 18b):
 > Desenrolla el bucle el mínimo número de veces para evitar todas las detenciones. Asume que hay salto retardado.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[dependencias-en-bucles-risc-v-clasificacion-intra-iteracion]]
+Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[dependencias-en-bucles-risc-v-clasificacion-intra-iteracion]] · [[segmentacion-software-software-pipelining-para-bucle-conteo]] · [[desenrollado-de-bucle-minimo-para-planificacion-sin-detencio]]

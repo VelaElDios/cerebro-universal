@@ -19,4 +19,4 @@ El examen evalúa el mismo código especulativo con dos estados iniciales distin
 > R1    R2    R3    R4    R5\n 0     1     2     3     0" y "R1       R2     R3    R4    R5\n 0       0       2     3     0
 > — `repo:datos/temarios/AC/examenes/January2024.pdf` (cita sin comprobar)
 
-Relacionado: [[tres-mecanismos-de-manejo-de-excepciones-para-instrucciones]] · [[funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es]]
+Relacionado: [[tres-mecanismos-de-manejo-de-excepciones-para-instrucciones]] · [[funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es]] · [[determinar-salto-no-salto-de-bne-tras-instruccion-especulati]] · [[mecanismo-de-cooperacion-hardware-software-para-excepciones]] · [[analisis-de-codigo-con-especulacion-estatica-para-examen-ac]]

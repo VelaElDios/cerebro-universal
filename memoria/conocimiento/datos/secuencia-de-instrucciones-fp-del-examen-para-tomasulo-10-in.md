@@ -37,4 +37,4 @@ WAW en registros FP: F0 escrito por #1, #3, #8; F2 por #2, #5, #9, #10; F6 por #
 > DIV.D F0, F2, F4 / ADD.D F2, F4, F8 / SUB.D F0, F4, F8 / S.D F0, 0(R1) / MUL.D F2, F4, F0 / DIV.D F6, F8, F0 / L.D F6, 0(R2) / ADD.D F0, F6, F2 / MUL.D F2, F0, F8 / ADD.D F2, F0, F6
 > — `repo:datos/temarios/AC/examenes/January2020.pdf` (cita sin comprobar)
 
-Relacionado: [[como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul]] · [[como-rellenar-la-tabla-de-estado-en-tomasulo-con-especulacio]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul]] · [[como-rellenar-la-tabla-de-estado-en-tomasulo-con-especulacio]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-problema]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-con-div]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-examen-e]]

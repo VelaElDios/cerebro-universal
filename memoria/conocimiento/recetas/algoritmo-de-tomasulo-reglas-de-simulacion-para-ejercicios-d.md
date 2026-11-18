@@ -23,4 +23,4 @@ Tabla de estado típica: Instrucción | Emisión | Inicio Ejecución | Fin Ejecu
 > En el mismo ciclo de reloj no se puede escribir un dato en el Bus de Datos Común (BDC) e iniciar la ejecución de una operación que esté esperando ese dato. Un recurso que se libera en un ciclo no se puede usar hasta el ciclo siguiente. La etapa de ejecución de fld y fsd consume 2 ciclos de reloj.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[planificacion-con-algoritmo-tomasulo-issue-execution-commit]] · [[como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de]] · [[tres-fases-de-ejecucion-en-tomasulo-emision-ejecucion-escrit]]

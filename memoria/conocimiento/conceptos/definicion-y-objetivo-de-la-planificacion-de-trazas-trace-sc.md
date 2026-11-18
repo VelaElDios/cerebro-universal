@@ -17,4 +17,4 @@ La planificación de trazas (trace scheduling) es una técnica de planificación
 > La técnica de selección de trazas: a) Ejecuta eficientemente cualquier código, aunque haya sido optimizado para otra unidad de instrucción segmentada b) Usa predicción dinámica de saltos para decidir qué bloques tienen mayor probabilidad de ejecutarse en la secuencia c) Combina los procesos de selección de la secuencia más probable de bloques básicos y predicción de saltos d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[que-hace-la-planificacion-de-trazas-trace-scheduling]] · [[que-representa-un-trace-en-trace-scheduling]] · [[planificacion-de-trazas-trace-scheduling-elimina-saltos-inte]]

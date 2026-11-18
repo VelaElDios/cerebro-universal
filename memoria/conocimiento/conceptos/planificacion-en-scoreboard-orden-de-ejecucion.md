@@ -16,3 +16,5 @@ Scoreboard (CDC 6600) permite ejecución fuera de orden: una instrucción empiez
 
 > In the Scoreboard scheduling technique, the order in which the stage of execution of the instructions is performed is given by: a) The number of hardware reservation stations. b) The order of instructions in the program. c) Dependences that exist in the program. d) None of the above.
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
+
+Relacionado: [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]] · [[orden-de-emision-issue-en-scoreboard-orden-de-programa]] · [[planificacion-dinamica-de-instrucciones-el-hardware-reordena]]

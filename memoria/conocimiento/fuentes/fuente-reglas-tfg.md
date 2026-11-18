@@ -22,7 +22,7 @@ Este trozo define las reglas fijas de formato para la memoria del TFG (Sprint 3 
 - [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]]
 - [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]]
 - [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]]
-- [[flechas-reales-en-captions-y-texto-rightarrow]]
+- [[flechas-reales-en-captions-y-texto-rightarrow-nunca]]
 - [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]]
 - [[quitar-las-paginas-en-blanco-entre-capitulos]]
 - [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]]

@@ -17,4 +17,4 @@ Combina dos fases: (1) Selección de trazas: identifica la secuencia más probab
 > Técnica para generar más paralelismo cuando el cuerpo del bucle contiene estructuras condicionales internas (if-then-else)
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[segmentacion-software-software-pipelining-en-bucles-sin-depe]]
+Relacionado: [[segmentacion-software-software-pipelining-en-bucles-sin-depe]] · [[trace-scheduling-traza-secuencia-mas-probable-de-bloques-bas]] · [[que-hace-la-planificacion-de-trazas-trace-scheduling]] · [[planificacion-de-trazas-trace-scheduling-elimina-saltos-inte]]

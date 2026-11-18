@@ -19,3 +19,5 @@ Estudio de McFarling: gshare es algo mejor que gselect porque el XOR dispersa me
 
 > Predictor gselect: indexa la BHT concatenando bits de PC con BHR Predictor gshare: indexa la BHT con XOR de bits del PC y BHR
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[predictor-gselect-indexa-bht-con-xor-de-bits-de-pc-y-bhr]] · [[predictor-gselect-indice-mediante-xor-de-bits-de-pc-y-bhr]] · [[seleccion-de-entrada-en-bht-branch-history-table]]

@@ -16,3 +16,5 @@ La arquitectura de computadores comprende los atributos del sistema visibles al 
 
 > Those system attributes that are visible to the programmer are part of the: a) The computer organization b) The computer architecture c) None of the above d) Both (computer architecture and organization)
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
+
+Relacionado: [[definicion-de-arquitectura-frente-a-organizacion-del-computa]] · [[diferencia-entre-arquitectura-y-organizacion-de-computadores]] · [[definicion-de-arquitectura-de-computador-visible-al-programa]]

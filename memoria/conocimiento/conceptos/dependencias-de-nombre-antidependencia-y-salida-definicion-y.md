@@ -17,4 +17,4 @@ Dos subtipos sin flujo de datos real, solo colisión de nombre de almacenamiento
 > Aparecen cuando dos instrucciones usan el mismo registro o posición de memoria, pero no hay flujo de datos entre las instrucciones asociadas con este nombre  Dadas dos instrucciones i y j (j lógicamente después de i), existe una dependencia de nombre si:     la instrucción j escribe sobre un registro o una posición de memoria que lee la instrucción i (Antidependencia)     las dos instrucciones i y j escriben sobre el mismo registro o posición de memoria (Dependencia de salida)  Bucle: fld    f0, 0(x1)  fadd.d f4, f0, f2  fsd    f4, 0(x1)  fld    f0, -8(x1)  fadd.d f4, f0, f2  fsd    f4, -8(x1)
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
 
-Relacionado: [[dependencia-de-datos-verdadera-definicion-y-ejemplo-en-bucle]]
+Relacionado: [[dependencia-de-datos-verdadera-definicion-y-ejemplo-en-bucle]] · [[definicion-de-dependencia-de-nombre-waw-y-war]] · [[definicion-de-dependencia-de-nombre-anti-y-salida]] · [[name-dependency-dependencia-de-nombre-incluye-waw-y-war]]

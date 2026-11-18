@@ -17,4 +17,4 @@ MIPS64 implementa una arquitectura Harvard modificada con cachés de primer nive
 > Mark which of the following statements is correct for MIPS64: It uses one cache memory for instructions and another for data.
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
 
-Relacionado: [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]]
+Relacionado: [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]] · [[como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi]] · [[pipeline-risc-v-de-5-etapas-if-id-ex-mem-wb]]

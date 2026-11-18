@@ -28,4 +28,6 @@ La plantilla debe incluir la fórmula en notación matemática y este ejemplo re
 > respuesta − 1 - Ítems pares: 5 − respuesta - Suma de las 10 contribuciones × 2,5 → puntuación de 0 a 100
 > — `../plantilla-sus/spec.md`
 
+Relacionado: [[escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e]] · [[como-estructurar-el-csv-de-entrada-para-la-plantilla-sus]] · [[criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep]]
+
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

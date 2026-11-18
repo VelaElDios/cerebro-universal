@@ -17,4 +17,4 @@ El ROB de solo 4 entradas es un cuello de botella estructural severo. En la simu
 > ROB de 4 entradas" y "Supón que el ROB tiene inicialmente todas sus entradas vacías.
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf` (cita sin comprobar)
 
-Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[estructura-del-reorder-buffer-rob-en-tomasulo-con-especulaci]] · [[diferencia-escritura-resultado-vs-terminacion-commit-en-toma]]

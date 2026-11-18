@@ -17,4 +17,4 @@ La ley de Amdahl establece que el speedup global está limitado por la fracción
 > La aceleración máxima del rendimiento obtenida al realizar una mejora viene determinada por la fracción de tiempo que pueda utilizarse dicha mejora
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[ley-de-amdahl-la-aceleracion-maxima-esta-limitada-por-la-fra]] · [[ley-de-amdahl-aceleracion-maxima-limitada-por-fraccion-mejor]] · [[ley-de-amdahl-formula-del-tiempo-de-ejecucion-nuevo]]

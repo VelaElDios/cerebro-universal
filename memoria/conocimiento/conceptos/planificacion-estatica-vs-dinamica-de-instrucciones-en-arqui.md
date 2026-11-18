@@ -19,4 +19,4 @@ La planificación de instrucciones busca aumentar el paralelismo a nivel de inst
 > El compilador reordena/modifica el código para aumentar el ILP, reduciendo las dependencias (y con ello sus posibles riesgos)
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[planificacion-estatica-el-compilador-reordena-para-reducir-d]] · [[planificacion-estatica-de-instrucciones-la-hace-el-compilado]] · [[planificacion-estatica-vs-dinamica-de-codigo]]

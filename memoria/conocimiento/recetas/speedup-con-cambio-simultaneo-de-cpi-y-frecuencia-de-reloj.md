@@ -17,4 +17,4 @@ Cuando una mejora cambia tanto el CPI de cierto tipo de instrucciones como la fr
 > Tiempo de ejecución = Número de Instrucciones × CPI × Duración del ciclo
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]] · [[formulas-de-rendimiento-cpi-tiempo-mips-mflops-speedup-amdah]]

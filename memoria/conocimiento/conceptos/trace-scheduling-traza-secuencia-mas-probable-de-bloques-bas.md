@@ -16,3 +16,5 @@ El trace scheduling identifica la traza (trace) como la secuencia de bloques bá
 
 > In the trace scheduling technique, a trace is the most likely sequence of… d) Basic blocks in a code with a conditional structure
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
+
+Relacionado: [[planificacion-de-trazas-trace-scheduling-para-condicionales]] · [[que-representa-un-trace-en-trace-scheduling]] · [[planificacion-de-trazas-trace-scheduling-elimina-saltos-inte]]

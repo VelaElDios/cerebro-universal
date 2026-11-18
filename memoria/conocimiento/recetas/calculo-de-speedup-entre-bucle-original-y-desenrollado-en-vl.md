@@ -17,4 +17,4 @@ Speedup = (ciclos por iteración original) / (ciclos por iteración desenrollada
 > What is the speedup if we compare the code in A) with the code in C)?
 > — `repo:datos/temarios/AC/examenes/January2018.pdf`
 
-Relacionado: [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac]]
+Relacionado: [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]] · [[desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac]] · [[mejora-de-rendimiento-vliw-desenrollado-3x-vs-original-exame]] · [[metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi]] · [[calculo-de-speedup-vliw-vs-mips64-segmentado-considerando-me]]

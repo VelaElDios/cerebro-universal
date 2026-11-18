@@ -17,4 +17,4 @@ Datos: T = 120 s, T_mul = 96 s (80%), T_no_mul = 24 s. Speedup objetivo = 5 → 
 > Supongamos que un programa tarda en ejecutarse en una máquina 2 minutos, de los cuales 96 segundos corresponden a operaciones de multiplicar. ¿Cuánto tengo que mejorar la velocidad de multiplicación si quiero que el programa se ejecute cinco veces más rápido? Subirlo a Moodle antes del domingo 20 a las 23:59
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf` (cita sin comprobar)
 
-Relacionado: [[como-resolver-un-problema-de-la-ley-de-amdahl-con-fraccion-m]]
+Relacionado: [[como-resolver-un-problema-de-la-ley-de-amdahl-con-fraccion-m]] · [[como-calcular-speedup-global-mejorando-un-componente-ley-de]] · [[calculo-de-speedup-con-ley-de-amdahl-en-pregunta-de-examen]]

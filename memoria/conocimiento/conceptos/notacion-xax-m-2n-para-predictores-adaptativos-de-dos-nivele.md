@@ -21,3 +21,5 @@ Ejemplo Gas(4,22): un BHR global de 4 bits indexa una BHT seleccionada por los 2
 
 > Notación: XAx(m,2n) X (forma de recoger historia global): G (un único BHR global), P (un BHR por cada salto) o S (un BHR por cada conjunto de saltos, indexada por los n bits menos significativos de la dirección de la instrucción de salto)
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[ejemplo-gas-4-22-predictor-dos-niveles]] · [[yeh-y-patt-recomiendan-g-g-para-enteros-y-s-s-para-coma-flot]] · [[predictor-correlacionado-o-de-dos-niveles-m-n-correlacion-es]]

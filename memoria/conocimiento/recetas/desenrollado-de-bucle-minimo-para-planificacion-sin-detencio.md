@@ -17,4 +17,4 @@ Procedimiento: 1) Determinar el número mínimo de desenrollados (k) tal que las
 > Desenrolla el bucle el mínimo número de veces que permita obtener una planificación sin detenciones. Considera salto retardado. Ten en cuenta que el comportamiento del programa debe preservarse.
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[analisis-de-detenciones-stalls-en-bucle-con-media-ponderada]]
+Relacionado: [[analisis-de-detenciones-stalls-en-bucle-con-media-ponderada]] · [[cpi-tras-desenrollado-y-planificacion-de-bucle]] · [[desenrollado-de-bucle-4x-con-salto-retardado-para-eliminar-s]] · [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]]

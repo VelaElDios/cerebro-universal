@@ -17,4 +17,4 @@ Predictor correlacionado (m=1, n=1): BHR de 1 bit (historia del salto anterior),
 > b) Predictor correlacionado (1, 1), considerando que cuando comienza la ejecución del bucle, el salto anterior ha sido no tomado, y el estado inicial de todos los predictores es no tomado.
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
 
-Relacionado: [[predictor-de-1-bit-inicializado-a-no-tomado-en-bucle-secuenc]]
+Relacionado: [[predictor-de-1-bit-inicializado-a-no-tomado-en-bucle-secuenc]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[predictor-correlacionado-1-2-con-bhr-y-dos-bhts]] · [[traza-de-predictor-correlacionado-1-1-con-historia-global-de]]

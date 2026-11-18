@@ -17,4 +17,4 @@ Código: I1 L.D F10,10(R3); I2 MUL.S F4,F10,F10; I3 ADD.S F8,F4,F10; I4 S.D F8,1
 > Entre la instrucción I3 e I4 existe solamente una dependencia: b) De datos
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[dependencias-en-fragmento-de-codigo-fp-mips-l-d-add-s-add-s]] · [[tipos-de-dependencias-y-hazards-en-codigo-mips64-de-punto-fl]] · [[analisis-de-dependencias-entre-instrucciones-de-punto-flotan]]

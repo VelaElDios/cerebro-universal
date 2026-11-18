@@ -23,4 +23,4 @@ Notación usada en las diapositivas para los campos de las estaciones de reserva
 > Qi Mult 1 M(45+x3) (M-M)+M() M()-M() Mult 2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en]]

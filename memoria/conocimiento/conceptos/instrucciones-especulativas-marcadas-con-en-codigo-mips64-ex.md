@@ -17,4 +17,4 @@ En el fragmento de código del examen, las instrucciones marcadas con asterisco 
 > Instructions marked with * are speculative.
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[planificacion-estatica-con-bits-venenosos-convencion-dirty-p]]
+Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[planificacion-estatica-con-bits-venenosos-convencion-dirty-p]] · [[instrucciones-especulativas-marcadas-con-asterisco-en-codigo]] · [[especulacion-estatica-con-cargas-especulativas-lw-en-mips64]] · [[especulacion-estatica-con-poison-bits-en-mips64-lw]]

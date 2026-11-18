@@ -17,4 +17,4 @@ RAW (Read After Write) es la dependencia real de flujo de datos: una instrucció
 > Se corresponde con una dependencia de datos
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[riesgo-raw-read-after-write-y-su-causa]] · [[definicion-de-riesgo-raw-read-after-write]] · [[dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione]]

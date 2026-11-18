@@ -17,4 +17,4 @@ La instrucción BNE R1, R2, end salta a 'end' si R1 ≠ R2. Tras DADDI R1, R1, #
 > BNE     R1, R2, end            No                    No                             Doesn't jump" y "BNE     R1, R2, end            No                    No                             Jumps
 > — `repo:datos/temarios/AC/examenes/January2024.pdf` (cita sin comprobar)
 
-Relacionado: [[valores-de-registros-y-flujo-de-control-en-ejemplo-ddiv-espe]]
+Relacionado: [[valores-de-registros-y-flujo-de-control-en-ejemplo-ddiv-espe]] · [[salto-retardado-delayed-branch-en-bucle-con-bne-y-daddui]] · [[procesador-sin-soporte-para-especulacion-comportamiento-ante]]

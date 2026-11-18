@@ -22,4 +22,4 @@ En ciclos 7-13 la tabla no cambia (emisión ya pasó), solo avanza la columna Ej
 > Estado de las instrucciones   ciclo 7                           Instrucción                Emisión           Ejecución     Escritura resultado
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]] · [[como-leer-la-tabla-de-estado-de-tomasulo-en-ciclos-consecuti]] · [[como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador]]

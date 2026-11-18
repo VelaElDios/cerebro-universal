@@ -17,4 +17,4 @@ Tabla de unidades funcionales del enunciado: Sumador/Restador PF: 2 unidades, 2 
 > Sumador/Restador PF               2              2\n                               Multiplicador PF                  2              6\n                               Divisor PF                        1              12
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf` (cita sin comprobar)
 
-Relacionado: [[convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario]]
+Relacionado: [[convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario]] · [[problema-examen-ac-tomasulo-con-especulacion-buffers-carga-a]] · [[estaciones-de-reserva-por-uf-2-por-unidad-funcional-en-confi]] · [[parametros-de-unidades-funcionales-y-buffers-en-examen-ac-ju]]

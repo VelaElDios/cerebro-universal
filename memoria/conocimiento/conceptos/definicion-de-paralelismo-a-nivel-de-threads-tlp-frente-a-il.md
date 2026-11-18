@@ -16,3 +16,5 @@ El TLP (Thread-Level Parallelism) explota hilos de control independientes (múlt
 
 > Se usan múltiples streams de instrucciones que son inherentemente paralelos
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
+
+Relacionado: [[tendencias-de-paralelismo-en-arquitectura-actual-ilp-tlp-dlp]] · [[tecnica-de-mejora-de-rendimiento-en-sisd]] · [[paralelismo-a-nivel-de-bucle-lp-solapamiento-de-iteraciones]]

@@ -17,4 +17,4 @@ Temas: [[ac]] · [[benchmarking]] · [[hyperfine]] · [[perf]] · [[profiling]]
 > Obtén el tiempo medio de ejecución y los fallos a caché de cada patrón de acceso para ello ejecuta hyperfine y perf stat.
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf`
 
-Relacionado: [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]]
+Relacionado: [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[como-hacer-benchmark-estadistico-con-hyperfine-entre-patrone]] · [[como-medir-contadores-hardware-con-perf-stat-para-comparar-p]] · [[como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per]]

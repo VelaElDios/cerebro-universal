@@ -16,3 +16,5 @@ La segmentación software (software pipelining) solapa iteraciones en un kernel 
 
 > Aplica segmentación software al siguiente código: ... a) Muestra sólo el cuerpo del bucle modificado b) Completa el código del apartado anterior con el código de inicio y el final.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf` (cita sin comprobar)
+
+Relacionado: [[segmentacion-software-software-pipelining-en-bucles-sin-depe]] · [[desenrollamiento-y-segmentacion-software-con-latencia-fadd-d]] · [[segmentacion-software-software-pipelining-para-bucle-encript]]

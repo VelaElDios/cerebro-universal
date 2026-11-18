@@ -17,4 +17,6 @@ Tabla `users`: una fila por cuenta. `id` UUID PK. `email` normalizado (minúscul
 > email normalizado (minúsculas, sin espacios) y único entre las cuentas no eliminadas (índice parcial de la migración 005), así que tras una baja se puede volver con el mismo email.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
+Relacionado: [[correccion-de-unicidad-de-email-tras-baja-logica-indice-parc]] · [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

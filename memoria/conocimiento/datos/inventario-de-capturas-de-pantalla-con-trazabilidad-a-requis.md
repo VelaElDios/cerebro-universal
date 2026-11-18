@@ -25,6 +25,6 @@ Todas referencian requisito (PBI/RJ) para trazabilidad TFG.
 > Capturas de la versión actual (27/10/2026 las de los Hitos y 29/10/2026 las del juego y DoneTonic), hechas con la aplicación real en local y datos de ejemplo, salvo las de `produccion/` (aplicación desplegada, 23/10/2026).
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]] · [[agrupar-capturas-con-subfigure]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]]
+Relacionado: [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]] · [[agrupar-capturas-con-subfigure]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[capturas-de-donetonic-disponibles-en-el-repo]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

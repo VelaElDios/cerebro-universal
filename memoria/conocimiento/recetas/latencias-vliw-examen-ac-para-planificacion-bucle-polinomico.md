@@ -17,4 +17,4 @@ Tabla de latencias (ciclos de espera entre productor y consumidor) para el probl
 > ALU PF                                     ALU PF                              3\n              ALU PF                                     SF                                  2\n              ALU Entera                                 ALU Entera                          0\n              LF                                         ALU PF                              1\n              LF                                         SF                                  0
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf` (cita sin comprobar)
 
-Relacionado: [[problema-examen-ac-planificacion-vliw-para-bucle-y-i-a-x-i-2]]
+Relacionado: [[problema-examen-ac-planificacion-vliw-para-bucle-y-i-a-x-i-2]] · [[latencias-vliw-1-0-para-examen-enero-2026-problema-3]] · [[parametros-de-temporizacion-del-ejercicio-vliw-examen-enero]]

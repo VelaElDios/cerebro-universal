@@ -16,3 +16,5 @@ La tabla muestra 10 iteraciones con valores de R2 que alternan 0 y un contador c
 
 > Iteración 1 2 3 4 5 6 7 8 9 10 Valor R2 0 1 0 2 0 3 0 4 0 5 y calcula la tasa de acierto:
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf` (cita sin comprobar)
+
+Relacionado: [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[preguntas-del-problema-2-traza-prediccion-1-bit-y-correlacio]] · [[calculo-de-tasa-de-acierto-con-predictor-de-1-bit-inicializa]]

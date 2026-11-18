@@ -17,4 +17,4 @@ Problema inverso de Amdahl: dado factor de mejora del componente (speedup_disco 
 > Si se sustituye el disco duro de un ordenador por otro disco cuatro veces más rápido que el actual, calcula el uso que debería hacerse de este dispositivo si se quiere conseguir que el ordenador funcione tres veces más rápido.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 4 de 5)`
 
-Relacionado: [[ejercicios-de-evaluacion-de-rendimiento-basados-en-ley-de-am]] · [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]]
+Relacionado: [[ejercicios-de-evaluacion-de-rendimiento-basados-en-ley-de-am]] · [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco-fraccion-de-uso-par]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco]] · [[ley-de-amdahl-para-mejora-de-subsistema-disco-6x-mas-rapido]]

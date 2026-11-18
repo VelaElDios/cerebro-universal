@@ -17,4 +17,4 @@ Tres diseños comparados: (1) Direct-mapped: menor coste, pero aliasing (dos sal
 > Cache asociativa por conjuntos: Solución intermedia. La opción más usada. Pentium II HP8500 R12000
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[funcionamiento-y-actualizacion-de-la-btac-branch-target-addr]]
+Relacionado: [[funcionamiento-y-actualizacion-de-la-btac-branch-target-addr]] · [[estructuras-hardware-para-prediccion-de-saltos-btac-bht-btb]] · [[implementacion-de-btb-generica-ampliacion-de-btac-con-bits-d]]

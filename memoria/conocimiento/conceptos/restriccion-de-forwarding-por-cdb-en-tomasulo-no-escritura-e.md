@@ -17,4 +17,4 @@ Esta restricción modela la latencia real del forwarding por CDB: el dato escrit
 > En el mismo ciclo de reloj no se puede escribir un dato en el Bus de Datos Común (BDC) e iniciar la ejecución de una operación que estuviera esperando ese dato
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf`
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]] · [[restriccion-de-cdb-en-tomasulo-no-escritura-e-inicio-simulta]] · [[restriccion-de-escritura-en-cdb-en-tomasulo-no-mismo-ciclo]]

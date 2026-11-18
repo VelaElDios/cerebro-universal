@@ -17,4 +17,6 @@ Tarea T61 (PBI P35) crea el generador de mapas procedurales usando funciones de 
 > P35 | T61 | Generación del terreno por ruidos (terreno.js) | [#52](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/52) | Hecho
 > — `repo:saas/docs/gestion/README.md`
 
+Relacionado: [[simulacion-de-paso-fijo-con-semilla-mundo-js]] · [[cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza]] · [[generacion-de-mundo-procedural-infinito-con-distritos-estadi]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

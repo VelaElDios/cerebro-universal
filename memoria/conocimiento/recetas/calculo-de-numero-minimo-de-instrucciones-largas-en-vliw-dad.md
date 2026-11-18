@@ -16,3 +16,5 @@ Procesador VLIW emite 4 instrucciones/ciclo (instrucción larga = 4 operaciones)
 
 > We have a VLIW processor that can issue four instructions per cycle. A compiler receives as input a program with 36 instructions and provides as output a program for this VLIW processor with an average efficiency of 3 operations per cycle. We can state that...
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
+
+Relacionado: [[como-calcular-instrucciones-vliw-necesarias-para-codigo-inde]] · [[caracteristicas-clave-de-procesadores-vliw]] · [[calculo-de-efectividad-de-programa-vliw-original-vs-desenrol]]

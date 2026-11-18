@@ -20,4 +20,4 @@ El registro f2 nunca cambia de Qi (siempre "R(f2)" en estaciones), indicando que
 > Estado de los registros f0 f2 f4 f6 f8 f10 f12 x1 = 72 Qi Carga 2 Mult 2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[renombrado-de-registros-via-qi-register-status-en-tomasulo]] · [[uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en]] · [[evolucion-del-registro-base-x1-y-qi-de-registros-fp-en-el-ej]]

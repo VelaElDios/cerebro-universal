@@ -17,4 +17,4 @@ Scoreboard resuelve RAW y WAW (pero no WAR por falta de renombrado). Tomasulo si
 > The Tomasulo technique without speculation resolves RAW and WAW hazards
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[riesgos-resueltos-por-marcador-y-por-tomasulo-sin-especulaci]] · [[scoreboard-detiene-ejecucion-ante-hazards-war-y-waw]] · [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]]

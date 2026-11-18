@@ -21,4 +21,4 @@ El planificador estático debe respetar estas distancias mínimas al colocar ope
 > Consider also that this processor supports forwarding and delayed branch.
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
 
-Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]]
+Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[parametros-de-temporizacion-vliw-examen-enero-2016]] · [[delayed-branch-en-vliw-y-su-efecto-en-planificacion]]

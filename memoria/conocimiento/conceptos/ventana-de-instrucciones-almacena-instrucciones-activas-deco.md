@@ -16,3 +16,5 @@ La ventana de instrucciones (instruction window) en procesadores superscalares f
 
 > La ventana de instrucciones: a) Almacena instrucciones activas, decodificadas pero no finalizadas b) Almacena las instrucciones de acceso a memoria (ld, sd) según el orden del programa c) Almacena instrucciones que se han decodificado y renombrado peno no se han emitido d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
+
+Relacionado: [[ventana-de-instrucciones-en-superscalar-instrucciones-decodi]] · [[paso-de-commit-en-superscalar-actualizacion-de-registros]] · [[uso-de-ranura-de-retardo-de-1-ciclo-en-superescalar-para-ocu]]

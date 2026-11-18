@@ -17,4 +17,4 @@ WAW (Write After Write): i escribe, luego j escribe en la misma ubicación. En p
 > Dadas dos instrucciones i y j (j lógicamente después de i) existe una dependencia de salida entre ellas si: c) Las dos instrucciones i y j escriben sobre el mismo registro o posición de memoria
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[definicion-de-dependencia-de-salida-waw-entre-dos-instruccio]] · [[definicion-de-dependencia-de-salida-waw]] · [[waw-corresponde-a-dependencia-de-salida]]

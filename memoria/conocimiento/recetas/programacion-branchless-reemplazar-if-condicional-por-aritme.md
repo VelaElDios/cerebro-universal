@@ -29,4 +29,4 @@ Ventajas: 1) Elimina fallos de predictor → rendimiento constante independiente
 > Como la condición `(data[i] >= 128)` devuelve `0` o `1`, podemos utilizar ese resultado directamente en una operación aritmética (multiplicando o enmascarando) en lugar de saltar.
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf`
 
-Relacionado: [[predictor-de-saltos-por-que-datos-ordenados-vs-desordenados]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[predictor-de-saltos-por-que-datos-ordenados-vs-desordenados]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[patron-branchless-suma-condicional-mediante-multiplicacion-p]] · [[cuando-no-usar-branchless-trade-off-latencia-vs-previsibilid]] · [[por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per]]

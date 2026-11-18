@@ -17,4 +17,4 @@ Dependencias en una iteración: RAW (verdaderas): F2: L.D → MUL.D (latencia 1)
 > L.D F2, 0(R1) ; carga A(i) MUL.D F4, F2, F0 ; cte * A(i) L.D F6, 0(R2) ; carga B(i) ADD.D F6, F4, F6 ; cte * A(i) + B(i) S.D F6, 0(R2) ; almacena B(i)
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[dependencias-en-el-bucle-de-ejemplo-vliw-examen-ac-2018]] · [[codigo-del-bucle-original-para-planificacion-examen-ac-2017]] · [[dependencias-en-la-secuencia-de-instrucciones-del-examen-jun]]

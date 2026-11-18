@@ -16,3 +16,5 @@ Tanto los superescalares como los VLIW explotan el paralelismo a nivel de instru
 
 > En los superescalares y en los VLIW a) Siempre se reordenan las instrucciones en tiempo de compilación b) Siempre se usan múltiples unidades de ejecución en paralelo c) Siempre se usan planificadores dinámicos de instrucciones d) Ninguna de las anteriores
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
+
+Relacionado: [[diferencia-fundamental-vliw-vs-superescalar-compilador-vs-ha]] · [[caracteristicas-clave-de-procesadores-vliw]] · [[definicion-de-procesador-vliw]]

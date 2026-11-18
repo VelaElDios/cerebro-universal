@@ -27,4 +27,4 @@ Notar: F10 tiene WAW entre MUL.D (#6) y ADD.D (#8); F12 tiene WAR entre ADD.D (#
 > ADD.D    F0, F0, F2                L.D      F2, 0(R1)                L.D      F4, 8(R1)                MUL.D    F8, F2, F4                L.D      F6, 16(R1)                MUL.D    F10, F2, F6                ADD.D    F12, F4, F2                ADD.D    F10, F2, F6                L.D      F12, 32(R1)
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[secuencia-de-instrucciones-mips64-del-examen-junio-2012-toma]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-con-div]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-problema]]

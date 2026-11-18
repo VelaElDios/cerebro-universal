@@ -16,3 +16,5 @@ Tiempo objetivo = 80/8 = 10 s. La parte no mejorada (no memoria) ya dura 10 s. P
 
 > Let’s assume that a program takes 80 seconds to run on a computer, of which 70 correspond to memory operations. How much do I have to improve the speed of memory operations if I want the program to run 8 times faster?
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
+
+Relacionado: [[como-calcular-speedup-global-mejorando-un-componente-ley-de]] · [[calculo-de-speedup-con-ley-de-amdahl-en-pregunta-de-examen]] · [[como-resolver-un-problema-de-la-ley-de-amdahl-con-fraccion-m]]

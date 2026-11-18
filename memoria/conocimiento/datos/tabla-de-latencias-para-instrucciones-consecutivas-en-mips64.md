@@ -16,3 +16,5 @@ Latencias en ciclos cuando las instrucciones se ejecutan consecutivamente (con f
 
 > Instruction that produces the result Instruction that uses the result Latency in cycles ALU PF ALU PF 3 ALU PF S.D 2 L.D ALU PF 1
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
+
+Relacionado: [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]] · [[como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi]] · [[latencias-de-unidades-funcionales-fp-en-examen-ac-june-2020]]

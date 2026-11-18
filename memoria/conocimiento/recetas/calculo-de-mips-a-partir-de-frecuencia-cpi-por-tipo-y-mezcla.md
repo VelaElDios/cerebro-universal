@@ -16,3 +16,5 @@ Para calcular MIPS: 1) Calcular CPI medio = Σ (CPI_i × %_i / 100). 2) MIPS = (
 
 > Assuming the following instruction mix for a given test program: Type % A 40 B 25 C 25 D 10 What would be the MIPS value for this computer?
 > — `repo:datos/temarios/AC/examenes/January2018.pdf`
+
+Relacionado: [[calculo-de-mips-con-cpi-ponderado-y-frecuencia-de-reloj]] · [[calculo-de-mips-a-partir-de-mezcla-de-instrucciones-cpi-y-fr]] · [[calculo-de-mips-nativo-a-partir-de-mezcla-de-instrucciones-y]]

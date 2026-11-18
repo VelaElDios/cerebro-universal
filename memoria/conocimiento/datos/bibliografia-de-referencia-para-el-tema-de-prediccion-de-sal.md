@@ -16,3 +16,5 @@ Referencias bibliográficas oficiales del temario para profundizar en predicció
 
 > J. Ortega, M. Anguita, A. Prieto. Arquitectura de computadores. Thomson, 2006 • Capítulo 3 (apartado 3.4). John L. Hennessy, David A. Patterson. Computer architecture: a quantitative approach. Morgan Kaufmann. • 4ª Edición: Capítulo 2 (predicción de saltos) • 5ª / 6ª Edición: Capítulo 3.3 (predicción de saltos)
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[bibliografia-canonica-para-planificacion-de-instrucciones-he]] · [[taxonomia-de-tecnicas-de-prediccion-de-saltos]] · [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]]

@@ -5,9 +5,9 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum", "sprint"]
 claves: ["P1–P19", "Hito 1–4", "releases GitHub", "trazabilidad"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[donetonic]] · [[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]]
@@ -23,7 +23,7 @@ Tabla de los 19 PBIs del Sprint 1 con su hito, título, estado y enlace de entre
 > | P19 | H4 | Despliegue continuo en Google Cloud Run | Hecho | Cierre del sprint |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

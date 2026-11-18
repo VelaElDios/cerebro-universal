@@ -51,6 +51,6 @@ Trazabilidad completa Sprint 2 (tabla sección 4.4):
 > | PBI | Etiqueta | Título | Tareas | PRs | Hecho | Estado | |---|---|---|---|---|---|---| | P20 | Base del juego | Rediseño de la interfaz web y menú del juego | T33, T34 | #36, #45 | 24/10/2026 | Hecho |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]]
+Relacionado: [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -17,4 +17,4 @@ Para calcular el speedup al mejorar un componente que ocupa una fracción f del 
 > speedup = Tiempo ejecución sin utilizar la mejora / Tiempo ejecución utilizando la mejora
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su]] · [[calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab]] · [[calculo-de-ganancia-de-velocidad-speedup-con-la-ley-de-amdah]]

@@ -17,4 +17,4 @@ La instrucción `lw` escribe en x5 (etapa WB) y `add` lee x5 (etapa ID/EX). Exis
 > Considera que el siguiente fragmento de código se ejecuta en un procesador RISC-V con las características habituales: (I1) lw x5, 0(x1) (I2) add x6, x5, x2 ... Indica cuál de las siguientes afirmaciones es cierta: ... Existe una dependencia de datos entre I1 e I2 cuyos efectos pueden eliminarse con adelantamiento
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf` (cita sin comprobar)
 
-Relacionado: [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]]
+Relacionado: [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]] · [[antidependencia-war-entre-instrucciones-consecutivas-en-risc]] · [[dependencias-en-bucle-mips-de-carga-modificacion-almacenamie]] · [[riesgos-de-datos-en-risc-v-raw-waw-war]]

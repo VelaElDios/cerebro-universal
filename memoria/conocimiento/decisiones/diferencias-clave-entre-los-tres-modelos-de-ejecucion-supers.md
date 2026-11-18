@@ -26,4 +26,4 @@ Puntos críticos para el dibujo:
 > a) In-order execution and in-order writing. b) Out-of-order execution, without renaming capacity, and in-order writing. c) Out-of-order execution with renaming (assuming enough registers for this), and out-of-order writing.
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[definicion-de-dependencia-de-salida-waw-entre-dos-instruccio]] · [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[definicion-de-dependencia-de-salida-waw-entre-dos-instruccio]] · [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[diferencia-clave-entre-ejecucion-fuera-de-orden-sin-y-con-re]] · [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-sin-r]] · [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]]

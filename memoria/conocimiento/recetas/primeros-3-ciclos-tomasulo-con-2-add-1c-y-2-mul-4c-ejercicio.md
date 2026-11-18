@@ -17,4 +17,4 @@ Ciclo 1: Emisión S1 (fadd.d) a Add1 (operandos f2,f4 disponibles -> Vj,Vk), Emi
 > Muestra lo que sucede en los tres primeros ciclos de su ejecución aplicando Tomasulo. Considera dos unidades de suma y multiplicación en coma flotante, que requieren 1 y 4 ciclos para su ejecución, respectivamente.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8]]
+Relacionado: [[completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8]] · [[tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm]] · [[ejecucion-ciclo-a-ciclo-del-ejemplo-tomasulo-fld-fmul-d-fsub]]

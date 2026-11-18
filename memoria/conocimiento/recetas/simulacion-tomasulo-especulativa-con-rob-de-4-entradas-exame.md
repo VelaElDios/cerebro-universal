@@ -21,4 +21,4 @@ Variante del problema anterior usando Tomasulo con especulación y ROB (Reorder 
 > Resuelve el mismo ejercicio, pero empleando la versión especulativa del método de Tomasulo y un ROB de 4 entradas inicialmente vacío.
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
 
-Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l]] · [[volcado-de-rob-reorder-buffer-en-ciclo-de-finalizacion-de-pr]] · [[simulacion-de-algoritmo-tomasulo-basico-y-especulativo-con-r]]

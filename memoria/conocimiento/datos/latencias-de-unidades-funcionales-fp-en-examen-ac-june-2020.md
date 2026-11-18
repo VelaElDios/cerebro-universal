@@ -17,4 +17,4 @@ Tabla oficial de latencias EX para unidades FP en este examen: FP Adder/Subtract
 > The next table shows the number of cycles employed by each functional unit: Functional Unit Number of cycles used FP Adder/Subtractor 2 FP Multiplier 4 FP Divider 8 Rest of units 1
 > — `repo:datos/temarios/AC/examenes/June2020.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]] · [[como-calcular-stalls-en-pipeline-mips64-con-operand-forwardi]] · [[latencias-de-unidades-funcionales-dadas-en-el-examen-fp-y-me]]

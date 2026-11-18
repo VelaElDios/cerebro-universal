@@ -17,4 +17,4 @@ Para el código original sin desenrollar: se emiten instrucciones en orden, resp
 > B) How many cycles per iteration does require the original code? Compute the speedup for the unrolled and scheduled version with respect the original code.
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]] · [[como-calcular-ciclos-por-iteracion-en-codigo-original-con-la]] · [[desenrollado-4x-y-planificacion-minima-para-bucle-fp-con-lat]] · [[speedup-teorico-del-desenrollado-4x-frente-a-codigo-original]]

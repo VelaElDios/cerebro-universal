@@ -17,4 +17,4 @@ Esquema de resolución: (a) Identificar hazards RAW/WAR/WAW entre pares consecut
 > a) (0,5 puntos) Indica las detenciones (no las dependencias) entre cada par de instrucciones que son necesarias para ejecutar correctamente cada iteración del bucle original. b) (0,25 puntos) Calcula el CPR del bucle original. Muestra las operaciones realizadas. c) (1,5 puntos) Planifica sin detenciones el bucle, aplicando, solo si es necesario, la técnica de desenrollamiento de bucles. Supón que el procesador usa salto retardado. Ten en cuenta que el código resultante debe ser lo más compacto posible y tener la misma funcionalidad que el código original. d) (0,25 puntos) ¿Cuál es el CPR del bucle resultante? Muestra las operaciones realizadas.
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf`
 
-Relacionado: [[parametros-del-procesador-para-problema-1-ac-enero-2025]]
+Relacionado: [[parametros-del-procesador-para-problema-1-ac-enero-2025]] · [[analisis-de-detenciones-stalls-en-bucle-con-media-ponderada]] · [[desenrollado-de-bucle-minimo-para-planificacion-sin-detencio]]

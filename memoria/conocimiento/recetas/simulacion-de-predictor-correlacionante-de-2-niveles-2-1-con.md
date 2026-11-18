@@ -17,4 +17,4 @@ Predictor (2,1) correlacionante: 2 bits de historia global (BHR) + 1 bit para se
 > c) Detail the behavior of a two-level (2, 1) correlating branch predictor, assuming the same input vector, and considering the initial state indicated in the table. Use columns 6, 7, and 8. Prediction bits (BHR and BTHs) (Initial state) 10 01 10 11 00
 > — `repo:datos/temarios/AC/examenes/June2020.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[simulacion-de-predictor-two-level-correlacionante-2-1-con-bh]] · [[simulacion-de-predictor-correlacionado-de-dos-niveles-2-2-co]] · [[comportamiento-de-predictor-correlacionado-2-1-con-historia]]

@@ -16,3 +16,5 @@ Según el examen, la mejor medida de rendimiento es el tiempo de ejecución de l
 
 > La mejor medida del rendimiento de un computador es: El tiempo de ejecución de los programas en dicho computador
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
+
+Relacionado: [[mejor-medida-de-rendimiento-tiempo-de-ejecucion-de-programas]] · [[mejor-metrica-de-rendimiento-tiempo-de-ejecucion]] · [[paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza]]

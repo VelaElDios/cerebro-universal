@@ -16,3 +16,5 @@ Usar `hyperfine --warmup 3 './patrones temporal' './patrones aleatorio'` para ob
 
 > hyperfine --warmup 3 './patrones temporal' './patrones aleatorio'
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_patrones.cpp`
+
+Relacionado: [[como-benchmarkear-y-perfilar-patrones-de-acceso-con-hyperfin]] · [[benchmarking-comparativo-con-hyperfine-warmup-y-comillas]] · [[como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per]]

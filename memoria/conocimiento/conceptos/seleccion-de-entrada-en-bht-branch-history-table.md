@@ -17,4 +17,4 @@ En predictores locales simples, la BHT se indexa con los bits menos significativ
 > El número de entrada de predicción de la BHT se selecciona con: Los bits menos significativos de dirección del salto
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[la-bht-almacena-los-bits-de-prediccion-de-todas-las-instrucc]] · [[implementacion-bht-para-predictor-de-2-bits-4k-entradas-80-9]] · [[implementacion-de-la-bht-en-predictor-dinamico-de-2-bits]]

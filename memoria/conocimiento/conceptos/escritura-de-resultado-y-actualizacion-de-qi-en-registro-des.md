@@ -17,4 +17,4 @@ Al escribir resultado (Write Result), la estación de reserva pone su resultado 
 > Qi Mult 1 M(45+x3) M(34+x2) Suma 1 Mult 2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[fichero-de-registros-con-campo-qi-en-tomasulo]]
+Relacionado: [[fichero-de-registros-con-campo-qi-en-tomasulo]] · [[renombrado-de-registros-via-qi-register-status-en-tomasulo]] · [[evolucion-del-registro-base-x1-y-qi-de-registros-fp-en-el-ej]]

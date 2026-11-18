@@ -17,4 +17,4 @@ Si la condición se evalúa en EX (fin de EX se sabe si tomado) pero la direcci�
 > En un pipeline de 5 etapas, si la condición del salto se comprueba en la etapa EX y la dirección destino del salto se calcula en MEM, ¿cuántos ciclos de penalización se introducen por salto tomado?
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[calculo-de-ciclos-de-penalizacion-por-salto-tomado-en-pipeli]] · [[penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re]] · [[definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5]]

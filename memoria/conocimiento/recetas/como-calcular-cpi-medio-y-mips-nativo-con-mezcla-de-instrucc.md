@@ -23,4 +23,4 @@ Ejemplo (Ejercicio 3):
 > Calculamos en primer lugar el CPI para MFP, teniendo en cuenta la mezcla de instrucciones en el programa de prueba y los ciclos requeridos para cada tipo de instrucción: CPI_MFP = Σ p_i × CPI_i = 0.1 × 6 + 0.15 × 4 + 0.05 × 20 + 0.7 × 2 = 3.6 ciclos/instrucción
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co]] · [[calculo-de-mips-nativo-a-partir-de-mezcla-de-instrucciones-y]] · [[calculo-de-mips-con-cpi-ponderado-y-frecuencia-de-reloj]]

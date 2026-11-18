@@ -21,4 +21,4 @@ La especulación añade commit en orden (ROB) para permitir recuperación ante f
 > Mark the correct option for dynamic instruction scheduling without speculation: Issue in order, execution out of order and completion out of order.
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[planificacion-dinamica-sin-especulacion-orden-de-ejecucion-d]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]] · [[planificacion-dinamica-tomasulo-orden-de-ejecucion-por-dispo]]

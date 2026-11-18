@@ -17,4 +17,4 @@ Una instrucción especulativa es aquella que se ejecuta (o se inicia su ejecuci�
 > A speculative instruction… c) Is an instruction executed before knowing whether it should actually be executed
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[definicion-de-instruccion-especulativa]] · [[recuperacion-ante-fallo-de-prediccion-de-salto-misprediction]] · [[recuperacion-ante-fallo-de-prediccion-descartar-resultados-e]]

@@ -19,3 +19,5 @@ Latencias en ciclos (número de ciclos que debe esperar el consumidor tras la em
 
 ## Ampliación (2026-11-18, )
 Latencias en ciclos para uso de resultados: 1) Resultado de ALU PF (suma/mul PF) usado por otra ALU PF: 3 ciclos. 2) Resultado de ALU PF usado por S.D (store PF): 2 ciclos. 3) Resultado de L.D (carga PF) usado por ALU PF: 1 ciclo. 4) Resultado de L.D usado por S.D: 0 ciclos (forwarding directo).
+
+Relacionado: [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]] · [[latencias-vliw-1-0-para-examen-enero-2026-problema-3]] · [[tabla-de-latencias-fp-para-desenrollado-de-bucle-examen-ener]]

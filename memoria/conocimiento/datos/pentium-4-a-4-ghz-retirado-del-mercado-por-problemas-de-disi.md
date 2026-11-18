@@ -16,3 +16,5 @@ El Pentium 4 (arquitectura NetBurst) a 4 GHz fue cancelado en 2004 debido a que 
 
 > El problema que llevó a retirar del mercado el Pentium IV a 4 GHz fue: c. Problemas de disipación de calor
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf` (cita sin comprobar)
+
+Relacionado: [[costes-de-recuperacion-de-fallos-de-prediccion-por-procesado]] · [[comparacion-de-eficiencia-frecuencial-entre-procesadores-usa]] · [[potencia-de-computo-aproximada-de-un-intel-i7-de-alta-gama-1]]

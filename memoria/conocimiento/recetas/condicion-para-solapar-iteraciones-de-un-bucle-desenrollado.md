@@ -16,3 +16,5 @@ Para solapar ejecución de iteraciones distintas (vía desenrollado o segmentaci
 
 > No presenta dependencias entre iteraciones
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
+
+Relacionado: [[se-pueden-solapar-iteraciones-de-un-bucle-si-no-hay-dependen]] · [[condicion-para-solapar-iteraciones-de-un-bucle-software-pipe]] · [[desenrollamiento-de-bucles-requiere-ausencia-de-dependencias]]

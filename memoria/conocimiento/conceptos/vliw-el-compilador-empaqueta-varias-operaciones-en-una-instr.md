@@ -16,3 +16,5 @@ En arquitecturas VLIW (Very Long Instruction Word) el hardware no decide dinámi
 
 > VLIW processors are those processors that… b) Compiler packs multiple operations in a single instruction.
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
+
+Relacionado: [[definicion-de-procesador-vliw]] · [[caracteristicas-clave-de-procesadores-vliw]] · [[diferencia-fundamental-vliw-vs-superescalar-compilador-vs-ha]]

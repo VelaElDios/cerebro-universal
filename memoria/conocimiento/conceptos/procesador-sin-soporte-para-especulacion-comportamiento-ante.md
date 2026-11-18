@@ -17,4 +17,4 @@ En un procesador sin ayuda para especulación, las instrucciones especulativas (
 > a) Un procesador sin ayuda para la especulación.
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf`
 
-Relacionado: [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]]
+Relacionado: [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]] · [[especulacion-estatica-con-cargas-especulativas-lw-en-mips64]] · [[analisis-de-codigo-con-especulacion-estatica-para-examen-ac]] · [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]]

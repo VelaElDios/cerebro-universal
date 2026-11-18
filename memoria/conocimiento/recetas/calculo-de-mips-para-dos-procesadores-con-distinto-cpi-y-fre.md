@@ -16,3 +16,5 @@ CPI medio = Σ (frecuencia_tipo_i * CPI_i). Comp1: CPI = 0,4*2 + 0,5*8 + 0,1*6 =
 
 > Computer 1 runs at 1,2 GHz, and needs 2, 8, and 6 clock cycles for executing instructions of type A, B, and C, respectively. Computer 2 runs at 1,8 GHz, and needs 2, 2, and 10 cycles for executing instructions of type A, B, and C, respectively. The benchmark applied is composed of instructions of type A (40%), instructions of type B (50%), and instructions of type C (10%).
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
+
+Relacionado: [[calculo-de-mips-para-comparar-dos-computadores-con-mismo-isa]] · [[calculo-de-mips-para-dos-maquinas-con-mismo-isa-y-mezcla-de]] · [[calculo-de-mips-a-partir-de-frecuencia-cpi-por-tipo-y-mezcla]]

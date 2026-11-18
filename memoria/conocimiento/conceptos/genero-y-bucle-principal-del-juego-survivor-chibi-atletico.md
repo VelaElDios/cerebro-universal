@@ -17,6 +17,6 @@ El juego es un survivor de vista 3/4 donde el jugador mueve a un futbolista hist
 > Un *survivor* (género popularizado por *Vampire Survivors*) con estética de píxeles «chibi»: controlas a un jugador de la historia del Atlético de Madrid, las armas atacan solas y tu trabajo es moverte, esquivar y elegir mejoras para aguantar cada vez más contra oleadas infinitas de rivales y jefes.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore]] · [[sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore]] · [[sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores]] · [[pivote-de-red-social-a-juego-survivor-reutilizando-base-del]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

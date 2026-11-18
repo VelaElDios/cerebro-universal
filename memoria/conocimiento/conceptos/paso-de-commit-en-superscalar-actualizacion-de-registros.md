@@ -16,3 +16,5 @@ En el paso de commit (también llamado writeback o retirement en algunos diseño
 
 > Which of the following actions takes place at the commit step in a superscalar processor? c) Register updating
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
+
+Relacionado: [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r]] · [[forwarding-de-resultado-en-ciclo-siguiente-al-write-modelo-s]] · [[superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr]]

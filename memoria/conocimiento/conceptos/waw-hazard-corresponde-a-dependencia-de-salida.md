@@ -17,4 +17,4 @@ WAW (Write After Write) = dependencia de salida (output dependence). Dos instruc
 > A WAW hazard a) Corresponds to an antidependence b) Corresponds to a control dependence c) Corresponds to a data dependence d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[waw-corresponde-a-dependencia-de-salida]] · [[definicion-de-dependencia-de-salida-waw]] · [[dependencia-de-salida-waw-y-antidependencia-war-definiciones]]

@@ -17,4 +17,4 @@ En ejecución especulativa (Tomasulo con ROB), las excepciones no se atienden in
 > En la especulación basada en hardware (Tomasulo con especulación), una excepción causada por una instrucción especulativa: a) Es atendida sólo cuando la instrucción llega a la etapa commit
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
-Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]]
+Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[tomasulo-especulativo-excepcion-en-instruccion-especulativa]] · [[paso-de-commit-en-tomasulo-especulativo-usa-rob-para-complet]] · [[como-rellenar-la-tabla-de-estado-en-tomasulo-con-especulacio]]

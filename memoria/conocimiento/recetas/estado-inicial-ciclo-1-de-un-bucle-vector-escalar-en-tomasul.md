@@ -33,4 +33,4 @@ Este estado sirve de punto de partida para trazar el desenrollado del bucle y ve
 > ciclo 1 Instrucción Emisión Ejecución Escritura resultado fld f0, 0(x1) 1 fmul.d f4, f0, f2 fsd f4, 0(x1)
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de]] · [[latencias-de-cache-asumidas-en-el-ejemplo-de-bucle-vector-es]]
+Relacionado: [[como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de]] · [[latencias-de-cache-asumidas-en-el-ejemplo-de-bucle-vector-es]] · [[ejecucion-ciclo-a-ciclo-del-ejemplo-tomasulo-fld-fmul-d-fsub]] · [[ejecucion-paso-a-paso-de-instrucciones-fp-en-tomasulo-ciclos]]

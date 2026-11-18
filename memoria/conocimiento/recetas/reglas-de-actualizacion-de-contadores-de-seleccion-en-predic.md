@@ -17,4 +17,4 @@ Tabla de actualización del contador de 2 bits (selector) tras cada predicción 
 > Tras cada predicción, además de actualizar ambos predictores, el contador correspondiente debe ser actualizado según la tabla siguiente: Comportamiento del Predictor 1 / Comportamiento del Predictor 2 / Acción sobre el contador: Acierto/Acierto → El contador no cambia; Acierto/Fallo → Incrementar el contador (+1); Fallo/Acierto → Decrementar el contador (-1); Fallo/Fallo → El contador no cambia.
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]] · [[tabla-de-actualizacion-de-contadores-de-2-bits-saturados-par]] · [[selector-de-2-bits-para-predictor-hibrido-de-saltos]]

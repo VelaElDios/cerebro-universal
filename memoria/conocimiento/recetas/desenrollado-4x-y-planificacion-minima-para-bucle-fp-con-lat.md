@@ -17,4 +17,4 @@ Pasos para planificación óptima desenrollando 4×: 1) Replicar el cuerpo del b
 > A) Unroll the loop 4 times and schedule it so that it uses the minimum number of cycles. Write the solution in the table provided on the other side (use as many rows as you need).
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
 
-Relacionado: [[configuracion-del-procesador-para-el-ejercicio-de-desenrolla]] · [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]]
+Relacionado: [[configuracion-del-procesador-para-el-ejercicio-de-desenrolla]] · [[tabla-de-latencias-entre-instrucciones-productoras-y-consumi]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]] · [[desenrollado-de-bucle-8-veces-para-superscalar-con-latencias]] · [[desenrollar-bucle-2x-y-planificar-para-latencias-fp-dadas-ej]]

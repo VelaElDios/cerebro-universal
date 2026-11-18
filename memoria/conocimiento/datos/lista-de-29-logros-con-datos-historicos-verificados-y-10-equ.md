@@ -50,6 +50,6 @@ Cada logro incluye un dato histórico verificado (ej. Griezmann 3º Balón de Or
 > Cada logro esconde un dato real del club (por ejemplo, que Griezmann fue tercero en el Balón de Oro de 2018, que Oblak ganó cinco Zamoras seguidos o que el Atleti nació en 1903 vestido de azul y blanco). Los datos están en `logros.js` y se han comprobado uno a uno.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]]
+Relacionado: [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore]] · [[manual-de-usuario-entrada-menus-controles-oleadas-ambientes]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

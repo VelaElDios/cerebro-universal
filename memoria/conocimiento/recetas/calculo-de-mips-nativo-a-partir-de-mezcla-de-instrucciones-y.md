@@ -16,3 +16,5 @@ Para obtener MIPS nativo: 1) Calcular CPI medio ponderado = Σ (%_tipo_i × cicl
 
 > The native MIPS value of this computer is: a) 277.78 b) 321.3 c) 211.1 d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
+
+Relacionado: [[calculo-de-mips-a-partir-de-frecuencia-cpi-por-tipo-y-mezcla]] · [[calculo-de-mips-con-cpi-ponderado-y-frecuencia-de-reloj]] · [[como-calcular-cpi-medio-y-mips-nativo-con-mezcla-de-instrucc]]

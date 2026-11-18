@@ -17,6 +17,6 @@ Babel spanish vuelve activos los caracteres < y >. Entonces fallan >=stealth, la
 > Cargar la librería babel de TikZ en el preámbulo.
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]] · [[flechas-reales-en-captions-y-texto-rightarrow-nunca]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

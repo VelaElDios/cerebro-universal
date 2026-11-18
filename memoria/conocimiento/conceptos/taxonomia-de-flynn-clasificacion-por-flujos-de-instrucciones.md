@@ -17,4 +17,4 @@ La taxonomía de Flynn clasifica arquitecturas según la multiplicidad de flujos
 > La cantidad de flujos de instrucciones y de datos
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
 
-Relacionado: [[definicion-de-paralelismo-a-nivel-de-threads-tlp-frente-a-il]]
+Relacionado: [[definicion-de-paralelismo-a-nivel-de-threads-tlp-frente-a-il]] · [[clasificacion-de-multiprocesadores-en-taxonomia-de-flynn]] · [[taxonomia-de-flynn-sisd-misd-simd-mimd-y-criterio-de-clasifi]] · [[en-la-taxonomia-de-flynn-los-multicomputadores-son-maquinas]]

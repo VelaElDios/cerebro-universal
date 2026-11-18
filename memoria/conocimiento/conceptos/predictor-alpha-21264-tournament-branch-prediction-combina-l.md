@@ -21,4 +21,4 @@ Es la materialización en hardware de la recomendación Yeh-Patt: combinar G/g y
 > Alpha 21264 (Tournament Branch Prediction): combina predictores globales y locales
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
 
-Relacionado: [[predictor-hibrido-mcfarling-con-contador-saturado-de-2-bits]] · [[yeh-y-patt-recomiendan-g-g-para-enteros-y-s-s-para-coma-flot]]
+Relacionado: [[predictor-hibrido-mcfarling-con-contador-saturado-de-2-bits]] · [[yeh-y-patt-recomiendan-g-g-para-enteros-y-s-s-para-coma-flot]] · [[tabla-historica-de-predictores-en-procesadores-1989-1998]] · [[estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c]]

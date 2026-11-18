@@ -17,4 +17,4 @@ En la versión especulativa de Tomasulo, el Reorder Buffer (ROB) garantiza que l
 > In the commit step of the speculative version of Tomasulo… The ROB is employed to complete the execution of instructions according to the program order
 > — `repo:datos/temarios/AC/examenes/January2022.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[reorder-buffer-rob-permite-completacion-en-orden-en-ejecucio]] · [[excepcion-en-especulacion-hardware-atendida-solo-en-etapa-co]]

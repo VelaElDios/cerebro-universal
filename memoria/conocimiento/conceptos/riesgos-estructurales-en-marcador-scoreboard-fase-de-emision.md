@@ -17,4 +17,4 @@ En scoreboard (marcador), las estaciones de reserva son por unidad funcional. Un
 > En marcador se pueden producir riesgos estructurales: a) En la fase de emisión, si no hay espacio en la estación de reserva b) En la fase de lectura de operandos, si no está disponible alguno de los operandos c) En la fase de escritura, si no está libre el bus común de datos d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[scoreboard-riesgos-estructurales-en-paso-de-escritura-de-res]] · [[scoreboard-los-riesgos-estructurales-se-gestionan-en-la-etap]] · [[riesgo-estructural-en-scoreboard-pregunta-7]]

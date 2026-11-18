@@ -16,3 +16,5 @@ Un procesador superscalar emite varias instrucciones por ciclo desde un único f
 
 > Superscalars processors are… a) SISD machines
 > — `repo:datos/temarios/AC/examenes/January2019.pdf`
+
+Relacionado: [[clasificacion-de-multiprocesadores-en-taxonomia-de-flynn]] · [[taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones]] · [[taxonomia-de-flynn-sisd-misd-simd-mimd-y-criterio-de-clasifi]]

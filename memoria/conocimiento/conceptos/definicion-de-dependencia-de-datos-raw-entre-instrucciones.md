@@ -17,7 +17,7 @@ Dependencia verdadera (RAW): i escribe un registro/memoria que j lee después. E
 > Existe una dependencia de datos entre dos instrucciones i y j (j lógicamente después de i) si : c) La instrucción i produce un resultado que usa la instrucción j
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[definicion-de-dependencia-de-datos-verdadera-raw]] · [[diferencia-entre-dependencia-de-datos-raw-antidependencia-wa]] · [[definiciones-de-dependencias-de-datos-raw-war-antidependenci]]
 
 ## Ampliación (2026-11-18, )
 Dependencia de datos verdadera (RAW): i produce un resultado que j puede usar. i precede a j en orden de programa. Opción a). WAW = dependencia de salida (ambas escriben mismo registro). WAR = antidependencia (j escribe lo que i lee).

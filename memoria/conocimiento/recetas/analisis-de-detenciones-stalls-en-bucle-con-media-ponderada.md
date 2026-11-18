@@ -17,4 +17,4 @@ Para analizar stalls en un bucle: 1) Identificar dependencias RAW/WAR/WAW entre 
 > Detalla las detenciones (ojo: NO LAS DEPENDENCIAS) que ocurren en el código al ejecutar cada iteración del bucle original y calcula el valor del CPR.
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]]
+Relacionado: [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[preguntas-del-problema-1-detenciones-cpi-y-desenrollamiento]] · [[analisis-de-paradas-en-bucle-con-unidades-fp-de-latencias-2]] · [[analisis-de-pipeline-fp-para-bucle-media-ponderada-problema]]

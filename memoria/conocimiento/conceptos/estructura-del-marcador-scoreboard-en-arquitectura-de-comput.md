@@ -30,3 +30,5 @@ El ejemplo muestra 6 instrucciones (2 fld, fmul.d, fsub.d, fdiv.d, fadd.d) y 5 U
 
 > Estado de las instrucciones Lectura Ejecución Escritura ciclo 3 Instrucción Emisión Operandos completa resultado
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
+
+Relacionado: [[planificacion-dinamica-de-instrucciones-con-marcador-scorebo]] · [[estructuras-de-datos-del-marcador-scoreboard]] · [[pasos-de-ejecucion-en-el-algoritmo-del-marcador-scoreboard]]

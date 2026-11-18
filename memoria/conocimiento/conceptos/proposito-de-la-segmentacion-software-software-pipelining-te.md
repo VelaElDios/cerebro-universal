@@ -16,3 +16,5 @@ La **segmentación software** (software pipelining) es una técnica de compilado
 
 > La técnica de segmentación software se usa para… Transformar un bucle con instrucciones dependientes en un bucle con instrucciones independientes
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf` (cita sin comprobar)
+
+Relacionado: [[tecnica-de-segmentacion-software-software-pipelining]] · [[segmentacion-software-software-pipelining-transforma-bucles]] · [[que-hace-la-tecnica-de-segmentacion-software-software-pipeli]]

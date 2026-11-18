@@ -20,4 +20,4 @@ Tres buffers de carga (Carga 1, 2, 3). En ciclo 7 todos están libres (Ocupada=N
 > Buffers de carga               Nombre      Ocupada     Dirección Carga 1        NO                   Carga 2        NO                   Carga 3        NO
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[gestion-de-buffers-de-carga-almacenamiento-con-direcciones-d]] · [[estado-de-buffers-de-carga-almacenamiento-y-estaciones-de-re]]

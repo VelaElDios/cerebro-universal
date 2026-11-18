@@ -17,4 +17,4 @@ Procesador VLIW con 6 unidades: INT1/INT2 (enteras/saltos, 1 ciclo EX, 1 ciclo M
 > The next code is run on a VLIW processor with 6 execution units: 2 integer units (for the execution of integer operations and branches), which require 1 cycle. 2 fully pipelined memory units (for stores and loads), which require two cycles for accessing memory. 2 fully pipelined FP units (for addition and multiplication), which require 4 (add) and 6 (mul) cycles.
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-y-proposito-de-la-segmentacion-pipeline]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]]
+Relacionado: [[definicion-y-proposito-de-la-segmentacion-pipeline]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[configuracion-vliw-del-examen-ac-enero-2017-6-unidades-laten]] · [[unidades-funcionales-y-ciclos-en-vliw-con-2-mem-2-fp-1-int-b]]

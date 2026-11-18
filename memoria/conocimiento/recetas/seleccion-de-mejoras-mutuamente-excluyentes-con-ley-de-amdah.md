@@ -16,3 +16,5 @@ Comparar speedup de cada opción: speedup = 1 / ((1-f) + f/k). Datos: memoria 30
 
 > Teniendo en cuenta la ley de Amdahl es preferible elegir la mejora en la ejecución de otras instrucciones puesto que dedica el mayor porcentaje de todos en la ejecución del programa.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
+
+Relacionado: [[seleccion-de-mejora-hardware-multiplicacion-vs-memoria-ejerc]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion]] · [[speedup-combinado-de-mejoras-independientes-en-fracciones-di]]

@@ -17,4 +17,4 @@ OPC = total operaciones útiles (excluyendo nops/burbujas) / ciclos totales de e
 > Calculate and compare the number of operations per cycle obtained for each processor. Which processor obtains the best efficiency in operations per cycle?
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
-Relacionado: [[planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip]]
+Relacionado: [[planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip]] · [[comparativa-eficiencia-operaciones-ciclo-superscalar-con-res]] · [[metrica-de-comparacion-operaciones-por-ciclo-ipc-en-supersca]] · [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]]

@@ -19,4 +19,4 @@ Diferencia clave Scoreboard vs Tomasulo:
 > In the Scoreboard technique, the results of the functional units: They are sent to the instructions that are waiting for them through the register bank.
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
 
-Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[simulacion-scoreboard-vs-tomasulo-basico-pasos-de-ejecucion]] · [[diferencias-clave-entre-las-tres-tablas-de-planificacion-ped]]

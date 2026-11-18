@@ -17,6 +17,6 @@ Script ubicado en `scripts/gcp/configurar-hito4.sh`. Uso: `PROJECT_ID=tu-proyect
 > En Cloud Shell, desde la carpeta `scripts/gcp`: `PROJECT_ID=tu-proyecto bash configurar-hito4.sh` (pide los cuatro valores y los guarda en Secret Manager).
 > — `repo:saas/docs/hito4-configuracion.md`
 
-Relacionado: [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]]
+Relacionado: [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[como-probar-la-configuracion-en-local-hito-4]] · [[solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

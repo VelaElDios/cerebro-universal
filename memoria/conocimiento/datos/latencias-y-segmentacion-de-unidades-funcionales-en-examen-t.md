@@ -17,4 +17,4 @@ Tabla de unidades funcionales del enunciado: FP Add (1 unidad, latencia 2 ciclos
 > FP Suma 1 2 Si; FP Multiplicación 1 6 Si; FP División 1 10 No; LOAD/STORE 1 2 Si; INT ALU 1 1 No
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf` (cita sin comprobar)
 
-Relacionado: [[configuracion-hardware-tomasulo-con-especulacion-para-examen]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]]
+Relacionado: [[configuracion-hardware-tomasulo-con-especulacion-para-examen]] · [[configuracion-tomasulo-con-especulacion-para-examen-enero-20]] · [[latencias-de-unidades-funcionales-dadas-en-el-examen-fp-y-me]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo-cic]]

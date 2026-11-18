@@ -29,4 +29,4 @@ Processor B (VLIW 2 ops):
 > Processor A is a 2-way superscalar processor with in-order issue and an issue window large enough for considering all the instructions. The processor does not support register renaming. Processor B is a VLIW processor able to issue two operations (of any type) per instruction. Static scheduling is as aggressive and efficient as possible to optimize the resulting code (operations can be scheduled out of order, and register renaming is supported).
 > — `repo:datos/temarios/AC/examenes/June2019.pdf` (cita sin comprobar)
 
-Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]]
+Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]] · [[pasos-para-resolver-exercise-3-processor-a-superscalar-in-or]] · [[diferencias-clave-entre-los-tres-modelos-de-ejecucion-supers]]

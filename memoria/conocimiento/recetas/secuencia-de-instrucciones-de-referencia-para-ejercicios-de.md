@@ -17,4 +17,4 @@ Secuencia canónica de 7 instrucciones FP usada en el examen June 2021 para comp
 > L.D    F0, 0(R1) / L.D    F2, 4(R1) / L.D    F4, 8(R1) / MUL.D F6, F0, F2 / MUL.D F4, F8, F6 / ADD.D F8, F0, F8 / S.D    F4, 0(R1)
 > — `repo:datos/temarios/AC/examenes/June2021.pdf` (cita sin comprobar)
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]] · [[dependencias-en-la-secuencia-de-instrucciones-del-examen-jun]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-con-div]] · [[secuencia-de-instrucciones-fp-del-examen-para-tomasulo-10-in]]

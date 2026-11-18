@@ -17,4 +17,4 @@ Predictor (1,1): BHR (Branch History Register) de 1 bit que registra el resultad
 > Detail the behavior of a two-level correlating branch predictor (1, 1). Consider that the initial state of the predictor is the one shown in the first row of the table.
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
 
-Relacionado: [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]] · [[predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est]]
+Relacionado: [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]] · [[predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est]] · [[simulacion-de-predictor-two-level-correlacionante-2-1-con-bh]] · [[predictor-correlacionado-1-2-con-bhr-y-dos-bhts]] · [[simulacion-de-predictor-correlacionado-de-dos-niveles-2-2-co]]

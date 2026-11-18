@@ -16,3 +16,5 @@ Los benchmarks sintéticos están diseñados específicamente para medir el rend
 
 > Synthetic benchmarks programs: They are specially designed to measure the performance of an individual component of a computer.
 > — `repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)` (cita sin comprobar)
+
+Relacionado: [[tipos-de-benchmarks-sinteticos-reales-nucleos-reducidos-y-su]] · [[mejor-medida-de-rendimiento-tiempo-de-ejecucion-de-programas]] · [[mejor-medida-de-rendimiento-de-un-computador]]

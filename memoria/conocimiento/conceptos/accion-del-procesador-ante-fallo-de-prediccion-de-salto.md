@@ -17,4 +17,4 @@ Cuando falla la predicción: se descartan las instrucciones especulativas ejecut
 > What happens when branch prediction fails?
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[recuperacion-ante-fallo-de-prediccion-descartar-resultados-e]] · [[recuperacion-ante-fallo-de-prediccion-de-salto-misprediction]] · [[mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt]]

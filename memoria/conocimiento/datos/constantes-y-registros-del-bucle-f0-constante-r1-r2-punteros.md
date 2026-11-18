@@ -17,4 +17,4 @@ R1 y R2 son punteros a double (8 bytes), se decrementan en 8 cada iteración (ha
 > El contenido de R1 y R2 son las direcciones de memoria donde se han almacenado los elementos de los vectores A y B. [...] DADDUI R1, R1, #-8 ; decrementa índice de A DADDUI R2, R2, #-8 ; decrementa índice de B SLTI R4, R1, fin ; comprobación de fin
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf` (cita sin comprobar)
 
-Relacionado: [[codigo-del-bucle-original-para-planificacion-examen-ac-2017]]
+Relacionado: [[codigo-del-bucle-original-para-planificacion-examen-ac-2017]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[valores-iniciales-de-registros-del-bucle-examen-enero-2016]]

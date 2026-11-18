@@ -16,3 +16,5 @@ Para solapar iteraciones (software pipelining o unrolling + scheduling) no debe 
 
 > Se puede solapar la ejecución de distintas iteraciones de un bucle cuando éste: c) No presenta dependencias entre iteraciones
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf` (cita sin comprobar)
+
+Relacionado: [[se-pueden-solapar-iteraciones-de-un-bucle-si-no-hay-dependen]] · [[condicion-para-solapar-iteraciones-de-un-bucle-desenrollado]] · [[condicion-para-solapar-iteraciones-de-un-bucle-software-pipe]]

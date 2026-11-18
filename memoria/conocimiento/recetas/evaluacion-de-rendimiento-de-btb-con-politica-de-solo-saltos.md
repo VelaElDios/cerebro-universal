@@ -17,4 +17,4 @@ Pipeline: IF, ID, EX, MEM, WB. Dirección salto fin ID, sentido fin EX. Sin BTB:
 > Compara el rendimiento del sistema con y sin BTB.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[calculo-de-cpi-sin-btb-y-speedup-con-btb-miss-rate-10-solo-s]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]] · [[mejora-prestaciones-btb-con-politica-solo-saltos-tomados-y-a]]

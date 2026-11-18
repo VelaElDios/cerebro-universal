@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "mips"
-notas: 30
+notas: 29
 ---
 # mips
 
@@ -31,11 +31,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS: se accede en etapas ID y WB]]
+- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS de 5 etapas: acceso en ID (lectura) y WB (escritura)]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo|Definición de MIPS (Millones de Instrucciones Por Segundo)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo-y-c|Definición de MIPS (Millones de Instrucciones Por Segundo) y coste-efectividad]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr|Dependencia entre iteraciones en bucle con S.D y DADDUI sobre R1]]
-- 💡 [[memoria/conocimiento/conceptos/etapas-de-uso-del-banco-de-registros-en-pipeline-mips-de-5-e|Etapas de uso del banco de registros en pipeline MIPS de 5 etapas]]
 - 💡 [[memoria/conocimiento/conceptos/paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza|Paradoja MIPS vs tiempo de ejecución: mayor MIPS no garantiza menor tiempo]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r|Penalización de salto en MIPS con resolución en ID y salto retardado: cero ciclos]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]
@@ -48,4 +47,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «mips» (este archivo se g
 
 ## Temas relacionados
 
-[[ac]] · [[rendimiento]] · [[pipeline]] · [[cpi]] · [[dependencias]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[evaluacion-rendimiento]] · [[prediccion-saltos]] · [[registros]] · [[coste-efectividad]] · [[métricas]]
+[[ac]] · [[rendimiento]] · [[pipeline]] · [[cpi]] · [[dependencias]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[evaluacion-rendimiento]] · [[prediccion-saltos]] · [[banco-registros]] · [[registros]] · [[coste-efectividad]]

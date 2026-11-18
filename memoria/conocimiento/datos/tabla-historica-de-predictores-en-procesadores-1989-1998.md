@@ -21,3 +21,5 @@ Progresión histórica clave (página 47):
 
 > Pentium II 1997 Dinámica Predictor 2 niveles adaptativo global (Gag) Alpha 21264 1998 Dinámica Híbrido (PAg + GAg)
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
+
+Relacionado: [[predictores-de-un-nivel-de-historia-1-2-y-3-bits-con-procesa]] · [[ejemplos-reales-de-predictores-de-salto-en-procesadores-come]] · [[predictor-alpha-21264-tournament-branch-prediction-combina-l]]

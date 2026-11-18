@@ -17,4 +17,4 @@ La tabla "Estado de registros resultado" indica qué unidad funcional (por núme
 > Estado de registros resultado                                        f0          f2            f4           f6          f8        f10       f12                          UF             2                                                 4          5
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]]
+Relacionado: [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]] · [[registro-de-estado-de-resultados-result-register-status-en-e]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador]] · [[como-leer-la-tabla-de-estado-de-unidades-funcionales-en-el-m]]

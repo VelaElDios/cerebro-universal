@@ -17,4 +17,4 @@ lstopo (del paquete hwloc) muestra la jerarquía de memoria (cachés, NUMA) y la
 > lstopo (hwloc): Visualiza la jerarquía de memoria y topología de I/O. Instalación: sudo apt install hwloc Uso rápido: lstopo -v
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf` (cita sin comprobar)
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[mapeo-de-patrones-de-acceso-en-el-grafico-roofline]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[mapeo-de-patrones-de-acceso-en-el-grafico-roofline]] · [[como-caracterizar-la-topologia-hardware-con-lstopo-tarea-1-1]] · [[benchmarking-comparativo-con-hyperfine-warmup-y-comillas]] · [[mapeo-de-patrones-de-acceso-en-grafico-roofline-gflops-s-y-f]]

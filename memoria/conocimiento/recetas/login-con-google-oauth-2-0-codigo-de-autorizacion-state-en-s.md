@@ -25,6 +25,6 @@ Temas: [[auth]] · [[google]] · [[grada-colchonera]] · [[oauth]] · [[saas]]
 > U->>A: GET /google A->>SS: state aleatorio (24 bytes en hexadecimal) A-->>U: 303 → accounts.google.com (client_id, redirect_uri, scope email, state) U->>G: Inicia sesión y acepta G-->>U: 302 → /api/auth/google/callback?code&state U->>A: GET /google/callback?code&state A->>SS: Compara el state y lo borra (un solo uso) alt state falso, ausente o reutilizado / el usuario canceló A-->>U: 303 → /?aviso=google-error | google-cancelado else state correcto A->>G: POST token (code + client_secret, desde el servidor) G-->>A: id del perfil: email y email_verified A->>S: loginWithOAuth(google, email, verificado) alt Email sin verificar S-->>A: error → 303 aviso=google-rechazado else No existía (o solo había una cuenta eliminada) S->>R: create(active, provider google, sin contraseña) else Existía pendiente S->>R: update(status active) end A->>SS: Regenera la sesión con userId A-->>U: 303 → /?aviso=google-cuenta-creada | google-ok#/jugar
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[maquina-de-estados-de-la-cuenta-de-usuario]]
+Relacionado: [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte]] · [[comportamiento-de-cuentas-segun-metodo-de-registro-y-estado]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

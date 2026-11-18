@@ -17,4 +17,4 @@ Si el predictor estático "siempre no tomado" acierta (salto no tomado), la inst
 > En una implementación segmentada de MIPS en la que la dirección de destino de los saltos se calcula en la etapa ID y el sentido de los saltos se resuelve en la etapa EX, la estrategia de predicción fija "siempre no tomado": a. Tiene una penalización de 1 ciclo en caso de acierto y de 2 ciclos en caso de fallo
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[prediccion-fija-siempre-no-tomado-con-calculo-destino-en-id]] · [[penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion]] · [[penalizacion-de-salto-tomado-con-condicion-en-ex-y-direccion]]

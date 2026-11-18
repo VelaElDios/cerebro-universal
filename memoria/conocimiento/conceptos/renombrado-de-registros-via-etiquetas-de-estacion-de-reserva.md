@@ -16,3 +16,5 @@ Cuando una instrucción se emite, sus registros destino y fuente se renombran al
 
 > Los identificadores de registros de las instrucciones emitidas y pendientes de ejecución se renombran al de la estación de reserva, ¡eliminando así riesgos WAR y WAW!
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
+
+Relacionado: [[en-tomasulo-sin-especulacion-la-emision-se-detiene-ante-ries]] · [[gestion-de-riesgos-war-y-waw-en-tomasulo-pregunta-10]] · [[renombrado-de-registros-via-qi-register-status-en-tomasulo]]

@@ -29,6 +29,6 @@ Cada fase corresponde a una etiqueta en DoneTonic (ver sección 4.4 del document
 > Cada fase es una etiqueta del Sprint 2 en DoneTonic (sección 4.4).
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]]
+Relacionado: [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[fases-del-sprint-2-y-prs-asociados]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

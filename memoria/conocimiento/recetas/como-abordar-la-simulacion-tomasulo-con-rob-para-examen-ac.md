@@ -17,4 +17,4 @@ Pasos para resolver: 1) Listar instrucciones en orden de programa. 2) Simular ci
 > Rellena la siguiente tabla, indicando los ciclos en los que se completa cada etapa y suponiendo que el ROB está inicialmente vacío. Instrucción Emisión Ejecución Escritura resultado Terminación
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf`
 
-Relacionado: [[configuracion-hardware-tomasulo-con-especulacion-para-examen]] · [[restricciones-de-uso-del-bus-de-datos-comun-y-recursos-en-to]] · [[latencias-y-segmentacion-de-unidades-funcionales-en-examen-t]]
+Relacionado: [[configuracion-hardware-tomasulo-con-especulacion-para-examen]] · [[restricciones-de-uso-del-bus-de-datos-comun-y-recursos-en-to]] · [[latencias-y-segmentacion-de-unidades-funcionales-en-examen-t]] · [[simulacion-paso-a-paso-de-tomasulo-con-especulacion-tabla-ci]] · [[pasos-para-simular-tomasulo-especulativo-con-rob-y-restricci]] · [[como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l]]

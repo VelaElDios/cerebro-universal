@@ -17,4 +17,4 @@ Un predictor de 1 bit predice la próxima ocurrencia igual a la anterior. Para q
 > Escribe un bucle (en C, por ejemplo) que contenga un salto tal que al aplicar un predictor de 1 bit, la predicción de ese salto dentro del bucle siempre falle.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en]] · [[predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce]] · [[ejemplo-comparativo-predictores-1-bit-vs-2-bits-vs-correlaci]]

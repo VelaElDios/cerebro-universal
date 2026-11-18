@@ -16,3 +16,5 @@ Datos: T_original = 135 s, T_mejorada_objetivo = 67,5 s (mitad). Tiempo en sumas
 
 > A program is run in 135 s in a computer, from which 110 s are devoted to addition operations. We want to reduce the program execution time by half, by improving the addition speed. Then, the factor of enhancement for this part of the computer should be… a) 1,59 b) 2,59 c) 3,59 d) It is not possible
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
+
+Relacionado: [[calculo-de-mejora-necesaria-con-ley-de-amdahl-fraccion-mejor]] · [[aplicacion-de-la-ley-de-amdahl-para-speedup-global-mejorando]] · [[aplicacion-de-la-ley-de-amdahl-para-acelerar-una-fraccion-de]]

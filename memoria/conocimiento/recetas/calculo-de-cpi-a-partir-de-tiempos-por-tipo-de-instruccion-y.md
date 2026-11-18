@@ -17,4 +17,4 @@ Dado tiempo total por tipo de instrucción, frecuencia y cuenta de instrucciones
 > Tiempo de ejecución = Número de Instrucciones × CPI / Frecuencia de reloj
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]]
+Relacionado: [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[patron-temporal-localidad-temporal-maxima-reutilizando-un-bl]] · [[calculo-de-cpi-dado-frecuencia-de-reloj-y-conteo-de-instrucc]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]] · [[ejercicios-de-cpi-mips-y-tiempo-de-ejecucion-con-mezcla-de-i]]

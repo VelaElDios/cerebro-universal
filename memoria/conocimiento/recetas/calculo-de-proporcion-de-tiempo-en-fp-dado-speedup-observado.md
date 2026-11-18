@@ -31,4 +31,4 @@ Respuesta: La proporción de tiempo dedicado a FP es 8/9 (88.89%).
 > b) Si el código que genera el compilador M para las instrucciones de coma flotante es 10 veces más rápido, y un determinado programa necesita 50 segundos para ejecutarse usando el compilador C, indica la proporción de ese tiempo dedicado a las instrucciones de coma flotante considerando un speedup de 5.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf`
 
-Relacionado: [[ley-de-amdahl-aplicada-a-optimizacion-de-compilador-para-com]] · [[determinar-si-es-posible-alcanzar-un-speedup-objetivo-mejora]]
+Relacionado: [[ley-de-amdahl-aplicada-a-optimizacion-de-compilador-para-com]] · [[determinar-si-es-posible-alcanzar-un-speedup-objetivo-mejora]] · [[como-calcular-factor-de-mejora-necesario-segun-ley-de-amdahl]] · [[despeje-de-fraccion-de-tiempo-mejorable-dado-speedup-objetiv]]

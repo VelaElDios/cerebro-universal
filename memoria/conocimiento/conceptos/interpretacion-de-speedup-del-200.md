@@ -16,3 +16,5 @@ Un speedup del 200% significa que el nuevo tiempo es 1/(1+2) = 1/3 del original.
 
 > Nos dicen que al introducir una mejora en un computador, hemos obtenido un speedup del 200% al ejecutar un determinado programa de prueba: El tiempo de ejecución se ha reducido a la tercera parte del tiempo de ejecución original
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
+
+Relacionado: [[calculo-de-speedup-reduccion-25-tiempo-speedup-33-3]] · [[definicion-de-speedup-y-relacion-con-reduccion-de-tiempo]] · [[calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas]]

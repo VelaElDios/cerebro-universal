@@ -17,4 +17,4 @@ Definición formal y relación causal: mayor ILP implica menos dependencias, men
 > Paralelismo a nivel de instrucción o ILP:   Posibilidad de solapamiento en las secuencias de instrucciones   Depende del grado de dependencia entre las instrucciones  ILP ↑ → pocos conflictos → pocas detenciones → CPI ↓  Dos instrucciones son independientes si se pueden ejecutar simultáneamente sin que existan conflictos entre ellas
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf`
 
-Relacionado: [[tecnicas-avanzadas-estaticas-y-dinamicas-para-reducir-detenc]]
+Relacionado: [[tecnicas-avanzadas-estaticas-y-dinamicas-para-reducir-detenc]] · [[ilp-alto-requiere-bajo-grado-de-dependencia-entre-instruccio]] · [[limitaciones-del-paralelismo-en-bloques-basicos-y-solucion-a]]

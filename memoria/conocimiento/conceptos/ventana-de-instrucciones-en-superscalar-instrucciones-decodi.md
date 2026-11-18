@@ -17,4 +17,4 @@ La ventana de instrucciones (instruction window) es el buffer entre la fase de d
 > The instruction window in a superscalar processor… b) Stores decoded and renamed instructions that have not been issued
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
 
-Relacionado: [[paso-de-commit-en-superscalar-actualizacion-de-registros]]
+Relacionado: [[paso-de-commit-en-superscalar-actualizacion-de-registros]] · [[ventana-de-instrucciones-almacena-instrucciones-activas-deco]] · [[superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr]]

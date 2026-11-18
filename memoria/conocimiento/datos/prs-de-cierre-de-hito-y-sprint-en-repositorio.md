@@ -17,6 +17,6 @@ Temas: [[donetonic]] · [[git]] · [[grada-colchonera]] · [[saas]] · [[scrum]]
 > Cierres de hito: [#9](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/9) (Hito 1 → `main`), [#17](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/17) (Hito 2 → `main`), [#24](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/24) (Hito 3 → `main`) [#29](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/29) (cierre del sprint → `main`) y [#32](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/32) (revisión final y memoria → `main`).
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto]] · [[trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

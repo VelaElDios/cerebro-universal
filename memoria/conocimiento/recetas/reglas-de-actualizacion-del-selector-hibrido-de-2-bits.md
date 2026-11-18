@@ -26,4 +26,4 @@ Inicialización: selector = 1, bits de predicción = 1.
 > After each prediction, the Selector value is updated according to this table: Predictor 1 Hit Predictor 2 Hit Does not change; Predictor 1 Hit Predictor 2 Miss +1; Predictor 1 Miss Predictor 2 Hit -1; Predictor 1 Miss Predictor 2 Miss Does not change
 > — `repo:datos/temarios/AC/examenes/June2019.pdf` (cita sin comprobar)
 
-Relacionado: [[selector-de-2-bits-para-predictor-hibrido-de-saltos]]
+Relacionado: [[selector-de-2-bits-para-predictor-hibrido-de-saltos]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]] · [[reglas-de-actualizacion-de-contadores-de-seleccion-en-predic]]

@@ -17,4 +17,4 @@ En especulación con hardware (p. ej., reorder buffer ROB), las instrucciones ej
 > In hardware speculation: c) The result of an instruction is definitive when the instruction reaches its commit step
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
 
-Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]
+Relacionado: [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[excepcion-en-especulacion-hardware-atendida-solo-en-etapa-co]] · [[paso-de-commit-en-tomasulo-especulativo-usa-rob-para-complet]] · [[como-rellenar-la-tabla-de-estado-en-tomasulo-con-especulacio]]

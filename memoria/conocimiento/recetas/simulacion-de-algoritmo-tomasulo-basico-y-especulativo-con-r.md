@@ -17,4 +17,4 @@ El problema proporciona 7 instrucciones: L.D F0,0(R1); L.D F2,0(R2); L.D F4,0(R3
 > Detalla la ejecución del código de abajo cuando se emplea la versión básica del algoritmo de Tomasulo (sin especulación). Para ello, indica en la tabla siguiente el número de ciclo en el que se inicia y se completa cada paso.
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf`
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-con-div]] · [[simulacion-tomasulo-especulativa-con-rob-de-4-entradas-exame]]

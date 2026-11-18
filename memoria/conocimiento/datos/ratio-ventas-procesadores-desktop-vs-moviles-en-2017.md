@@ -17,4 +17,4 @@ Dato de mercado del examen: en 2017 las ventas de procesadores para desktop fuer
 > En el año 2017 las ventas de procesadores para desktop representaron aproximadamente, respecto a las ventas de procesadores para móviles: a) El doble b) La mitad c) Un quinto d) La décima parte
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[primer-procesador-intel-no-compatible-con-x86-itanium]] · [[comparacion-de-eficiencia-frecuencial-entre-procesadores-usa]] · [[calculo-de-coste-efectividad-rendimiento-precio-entre-dos-co]]

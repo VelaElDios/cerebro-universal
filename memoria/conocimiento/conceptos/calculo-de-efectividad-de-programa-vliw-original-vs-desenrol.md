@@ -17,4 +17,4 @@ La efectividad (effectiveness) en VLIW se calcula típicamente como (slots útil
 > Effectiveness of the VLIW program I gave you (in %) Effectiveness of the VLIW program obtained in b (in %)
 > — `repo:datos/temarios/AC/examenes/January2023.pdf`
 
-Relacionado: [[como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo]]
+Relacionado: [[como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]] · [[mejora-de-rendimiento-vliw-desenrollado-3x-vs-original-exame]]

@@ -17,4 +17,4 @@ Para comparar máquinas con varios programas: sumar tiempos de ejecución de tod
 > Considerando el tiempo de ejecución de ambos programas, el computador C es el más rápido (tarda 40 s)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]]
+Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]] · [[calculo-de-speedup-y-porcentaje-de-mejora-entre-dos-maquinas]] · [[ejercicio-de-coste-efectividad-comparacion-de-sistemas-por-r]] · [[ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su]]

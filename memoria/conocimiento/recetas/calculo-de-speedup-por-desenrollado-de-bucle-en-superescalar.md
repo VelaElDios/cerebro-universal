@@ -16,3 +16,5 @@ Speedup = (Tiempo original) / (Tiempo nuevo). Original: 1 iteración = 10 ciclos
 
 > Each iteration of a specific loop requires 10 clock cycles on a scalar processor. We unrolled that loop 3 times and scheduled it for a grade 2 superscalar. Each iteration of the modified loop requires 15 cycles on the superscalar. We have obtained a speedup of:
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
+
+Relacionado: [[calculo-de-speedup-por-desenrollado-de-bucle-en-superscalar]] · [[calculo-de-speedup-con-desenrollamiento-de-bucle-y-superesca]] · [[metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi]]

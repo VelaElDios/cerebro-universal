@@ -24,4 +24,4 @@ En ciclo 19, x1 cambia a 56 (probablemente actualización del puntero de bucle t
 > Estado de los registros                                       f0            f2          f4            f6           f8       f10          f12       x1 = 64                          Qi        Carga 3                  Mult 1
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[estado-de-registros-resultado-register-result-status-en-el-m]] · [[escritura-de-resultado-y-actualizacion-de-qi-en-registro-des]]
+Relacionado: [[estado-de-registros-resultado-register-result-status-en-el-m]] · [[escritura-de-resultado-y-actualizacion-de-qi-en-registro-des]] · [[registros-flotantes-involucrados-y-su-estado-inicial-en-el-e]] · [[ejecucion-paso-a-paso-de-instrucciones-fp-en-tomasulo-ciclos]] · [[renombrado-de-registros-via-qi-register-status-en-tomasulo]]

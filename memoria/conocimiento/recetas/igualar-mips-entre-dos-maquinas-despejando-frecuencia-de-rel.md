@@ -17,4 +17,4 @@ Dado MIPS = Freq / (CPI_medio * 1e6). Igualar MIPS_M1 = MIPS_M2 → Freq_M1 / CP
 > Como el valor de MIPS debe ser el mismo para ambas máquinas, f / (2.5×10^6) = 750×10^6 / (3×10^6) → f = 625 MHz
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co]]
+Relacionado: [[calculo-de-mips-nativos-y-de-pico-peak-mips-para-maquinas-co]] · [[calculo-de-mips-con-cpi-ponderado-y-frecuencia-de-reloj]] · [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]] · [[calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4]]

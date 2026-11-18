@@ -16,3 +16,5 @@ Para cada salto (B1 y B2) se mantiene un contador de 2 bits independiente (estad
 
 > Detail the behavior of a one-level branch predictor using 2 bits per branch instruction, assuming the same input vector, and considering the initial state indicated in the table.
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
+
+Relacionado: [[simulacion-de-predictor-two-level-correlacionante-2-1-con-bh]] · [[simulacion-de-predictor-de-un-nivel-con-contadores-de-satura]] · [[simulacion-de-predictor-de-saltos-de-1-nivel-con-2-bits-cont]]

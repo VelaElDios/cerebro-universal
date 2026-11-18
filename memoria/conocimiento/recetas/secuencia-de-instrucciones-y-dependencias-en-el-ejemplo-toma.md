@@ -22,4 +22,4 @@ La primera iteración se emite en ciclos 1-3; la segunda en ciclos 6-8. El regis
 > fld       f0, 0(x1)                        1                           fmul.d    f4, f0, f2                       2                           fsd       f4, 0(x1)                        3
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[ejecucion-paso-a-paso-de-instrucciones-fp-en-tomasulo-ciclos]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]] · [[simulacion-paso-a-paso-de-tomasulo-con-bucle-fp-fld-fmul-d-f]]

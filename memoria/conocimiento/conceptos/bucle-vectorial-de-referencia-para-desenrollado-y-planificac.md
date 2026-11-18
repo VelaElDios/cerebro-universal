@@ -16,3 +16,5 @@ El bucle original recorre dos vectores A y B (índices en R1 y R2, decrementados
 
 > Loop:     L.D    F2, 0(R1)                    ; loads A(i)                 MUL.D F4, F2, F0                    ; constant * A(i)                 L.D    F6, 0(R2)                    ; loads B(i)                 ADD.D F6, F4, F6                    ; constant * A(i) + B(i)                 S.D    F6, 0(R2)                    ; stores B(i)                 DADDUI R1, R1, #-8                  ; decrements the index for A                 DADDUI R2, R2, #-8                  ; decrements the index for B                 SLTI   R4, R1, end                  ; checks if the end of the vector has been reached                 BEQZ   R4, Loop                     ; jumps if R4 = 0
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
+
+Relacionado: [[codigo-del-bucle-original-para-planificacion-examen-ac-2017]] · [[desenrollado-de-bucle-4x-con-salto-retardado-para-eliminar-s]] · [[constantes-y-registros-del-bucle-f0-constante-r1-r2-punteros]]

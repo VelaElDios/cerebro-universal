@@ -17,4 +17,4 @@ Configuración Tomasulo para examen: especulación hardware, Common Data Bus (CD
 > Tenemos un procesador con especulación hardware según el método de Tomasulo con especulación. Se dispone de un Bus de Datos Común y se supone que en el mismo ciclo de reloj no se puede escribir un dato en este bus e iniciar la ejecución de una operación que estuviera esperando ese dato.
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[diferencia-entre-buffers-de-carga-y-de-almacenamiento-en-la]] · [[parametros-de-simulacion-tomasulo-con-especulacion-del-exame]] · [[configuracion-tomasulo-con-especulacion-del-examen-ac-junio]] · [[configuracion-y-parametros-para-simular-tomasulo-en-problema]]

@@ -17,4 +17,4 @@ Restricción importante de temporización en el CDB: cuando un resultado se escr
 > se supone que en el mismo ciclo de reloj no se puede escribir un dato en este bus e iniciar la ejecución de una operación que estuviera esperando ese dato
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf`
 
-Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]]
+Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[restriccion-de-forwarding-por-cdb-en-tomasulo-no-escritura-e]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]] · [[restriccion-cdb-tomasulo-no-escritura-e-inicio-ejecucion-mis]]

@@ -17,4 +17,4 @@ Bucle simple: carga f0, fadd.d f4=f2+f0, store f4, decrementa x1, salta. Latenci
 > Considerando una latencia de 5 ciclos para la instrucción fadd.d, aplica desenrollamiento al siguiente fragmento de código ... Después, aplica segmentación software y desenrollamiento de bucles (el menor número de veces) para que no haya detenciones. a) Asume que el compilador no conoce las características del hardware b) Asume que el compilador conoce las características del hardware (i.e. ciclos de las UF)
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[segmentacion-software-software-pipelining-para-bucle-con-mul]]
+Relacionado: [[segmentacion-software-software-pipelining-para-bucle-con-mul]] · [[segmentacion-software-software-pipelining-en-bucles-sin-depe]] · [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]]

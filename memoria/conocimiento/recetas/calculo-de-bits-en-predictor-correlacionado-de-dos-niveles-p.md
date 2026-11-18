@@ -17,4 +17,4 @@ Predictor correlacionado de dos niveles (m,n): m = bits de historia global/local
 > How many BHTs are there in a correlating two-level (3,2) predictor? a) 3 b) 6 c) 8 d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[calculo-de-bits-totales-en-predictor-2-2-con-3-entradas-por]] · [[calculo-de-bits-en-predictor-de-dos-niveles-n-m-con-k-entrad]] · [[predictor-correlacionado-m-n-numero-de-bhts-2-m]]

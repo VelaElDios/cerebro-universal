@@ -16,3 +16,5 @@ El ejercicio presenta un bucle con tres saltos condicionales (B1: BNEZ R3,nozero
 
 > Exercise 2 (2 points). The following MIPS64 code counts (in R4 and R5) the number of zeros and even numbers (considering that 0 is even) in a sequence stored in memory from the address R2.
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
+
+Relacionado: [[etiquetado-de-saltos-b1-b2-b3-en-bucle-contador-ceros-pares]] · [[secuencia-de-datos-y-codigo-mips64-para-ejercicio-2-de-predi]] · [[analisis-de-prediccion-de-saltos-en-bucle-con-dos-saltos-con]]

@@ -17,4 +17,4 @@ Con renombramiento ilimitado: eliminados peligros WAR/WAW (cada write usa regist
 > c) Ejecución fuera de orden con renombramiento (suponiendo que hay suficientes registros para hacerlo) y escritura fuera de orden
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e]] · [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-sin-r]]
+Relacionado: [[diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e]] · [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-sin-r]] · [[diferencias-clave-entre-los-tres-modelos-de-ejecucion-supers]]

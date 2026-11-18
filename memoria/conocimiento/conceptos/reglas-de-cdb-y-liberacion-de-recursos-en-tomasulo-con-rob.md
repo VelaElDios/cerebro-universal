@@ -20,4 +20,4 @@ Estas reglas son decisivas para calcular correctamente los ciclos de Execute, Wr
 > In the same clock cycle in which a result is written in the Common Data Bus (CDB) the execution of any instruction that was waiting for that result is initiated. A resource that is released/freed in a clock cycle cannot be used until the next cycle.
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]
+Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[restricciones-de-timing-en-tomasulo-con-especulacion-examen]] · [[restriccion-de-uso-del-cdb-y-liberacion-de-recursos-en-tomas]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]]

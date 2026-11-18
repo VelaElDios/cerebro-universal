@@ -16,3 +16,5 @@ En bucles anidados (externo e interno), el salto del bucle interno se toma repet
 
 > Resuelve el problema de los dos bucles anidados • El interno se predice incorrectamente sólo una vez por cada iteración externa (excepto en la primera iteración si la predicción inicial es NT)
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
+
+Relacionado: [[predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en]] · [[calculo-de-predicciones-correctas-en-bucles-anidados-con-pre]] · [[predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce]]

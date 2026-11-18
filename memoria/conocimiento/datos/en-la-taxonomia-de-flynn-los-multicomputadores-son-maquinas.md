@@ -17,4 +17,4 @@ Pregunta 4 del test. Los multicomputadores (sistemas con múltiples procesadores
 > Según la taxonomía de Flynn los multicomputadores son máquinas: d) MIMD
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[clasificacion-de-multiprocesadores-en-taxonomia-de-flynn]] · [[clasificacion-de-flynn-de-procesador-masivamente-paralelo-mp]] · [[taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones]]

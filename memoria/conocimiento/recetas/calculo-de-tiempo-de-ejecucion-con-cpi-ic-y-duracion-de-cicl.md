@@ -16,3 +16,5 @@ Fórmula: Tiempo = IC × CPI × T_ciclo. En la pregunta: 5.5e9 inst × 0.9 ciclo
 
 > Ejecutamos un programa de 5.5×109 instrucciones en un procesador con un CPI de 0.9 ciclos y con una duración del ciclo de reloj de 1/3 ns. El tiempo de ejecución de dicho programa será de…
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
+
+Relacionado: [[calculo-de-tiempo-de-ejecucion-a-partir-de-instrucciones-cpi]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]] · [[tiempo-de-ejecucion-instrucciones-cpi-frecuencia]]

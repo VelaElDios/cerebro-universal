@@ -19,4 +19,4 @@ El máximo teórico es 6 ops/ciclo (6 unidades), pero las dependencias y latenci
 > b) How many operations per cycle are reached? Justify the solution.
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
 
-Relacionado: [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]]
+Relacionado: [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]] · [[calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw]] · [[calculo-de-operaciones-por-ciclo-en-vliw-con-software-pipeli]] · [[metrica-operaciones-por-ciclo-opc-en-vliw]]

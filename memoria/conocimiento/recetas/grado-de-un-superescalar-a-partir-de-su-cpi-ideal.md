@@ -17,4 +17,4 @@ En un superescalar ideal (sin riesgos, ILP infinito), CPI_ideal = 1 / grado (anc
 > ¿Cuál es el grado de un superescalar que tiene un CPI ideal de 0.5? a) 0.5 b) 1 c) 2 d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[cpi-ideal-de-un-superescalar-de-grado-n-es-1-n]] · [[identificacion-de-superescalar-por-ancho-de-emision-y-cpi]] · [[calculo-de-cpi-en-bucle-desenrollado-superescalar-con-ancho]]

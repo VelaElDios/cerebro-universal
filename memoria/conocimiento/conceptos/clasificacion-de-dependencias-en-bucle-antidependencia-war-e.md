@@ -17,4 +17,4 @@ I3 (sw x4, 0(x2)) lee el registro x2; I4 (addi x2, x2, 4) escribe x2. Como I4 es
 > Considera una iteración del siguiente bucle: (I1) Bucle: lw x4, 0(x2) (I2) add x4, x4, x3 (I3) sw x4, 0(x2) (I4) addi x2, x2, 4 ... b. Hay una antidependencia entre I3 e I4
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[identificacion-de-antidependencia-war-entre-store-e-incremen]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]

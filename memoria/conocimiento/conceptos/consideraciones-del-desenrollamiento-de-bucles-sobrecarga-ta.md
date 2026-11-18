@@ -17,4 +17,4 @@ Tres limitaciones principales: (1) Reducción de sobrecarga: más iteraciones de
 > Con un mayor número de iteraciones consideradas en el proceso de desenrollamiento se amortiza la sobrecarga, pero hay un límite en el número de iteraciones
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]]
+Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]] · [[desenrollado-de-bucles-replicar-mientras-se-reduzcan-detenci]] · [[desenrollamiento-de-bucles-loop-unrolling-permite-planificar]] · [[desenrollado-de-bucle-3x-y-planificacion-vliw-compactada]]

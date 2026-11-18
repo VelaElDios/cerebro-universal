@@ -17,4 +17,4 @@ El ejercicio pide capturar el estado del ROB (10 entradas) exactamente en el cic
 > Indica en la siguiente tabla el estado del ROB (suponiendo que tiene 10 entradas) en el ciclo en el que la primera instrucción S.D es emitida.
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf`
 
-Relacionado: [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]]
+Relacionado: [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[estado-rob-en-ciclo-de-emision-del-primer-s-d-tomasulo-espec]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]] · [[como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l]]

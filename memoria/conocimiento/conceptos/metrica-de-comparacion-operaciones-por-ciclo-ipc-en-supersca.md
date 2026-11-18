@@ -17,4 +17,4 @@ La comparación final pide calcular el IPC (instrucciones/operaciones por ciclo)
 > Compare the number of operations per cycle obtained for each processor. Which processor achieves the best efficiency in operations per cycle?
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
 
-Relacionado: [[procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp]] · [[procesador-b-vliw-4-issue-sin-restricciones-de-tipo-con-plan]]
+Relacionado: [[procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp]] · [[procesador-b-vliw-4-issue-sin-restricciones-de-tipo-con-plan]] · [[comparativa-eficiencia-operations-per-cycle-opc-superscalar]] · [[comparativa-eficiencia-operaciones-ciclo-superscalar-con-res]] · [[calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw]]

@@ -21,4 +21,4 @@ El bucle se ejecuta 60 veces. Al desenrollar 4 veces, quedan 15 "macro-iteracion
 > Initially, R1=0x1000, R2=0x1500, and R10=0x3C.
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
 
-Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]]
+Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[codigo-del-bucle-y-valores-iniciales-de-registros-para-vliw]] · [[como-resolver-planificacion-vliw-con-desenrollado-y-latencia]]

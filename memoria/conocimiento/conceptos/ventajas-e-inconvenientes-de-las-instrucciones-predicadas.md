@@ -25,4 +25,4 @@ Temas: [[ac]] · [[compilador]] · [[ilp]] · [[instrucciones-predicadas]] · [[
 > Ventajas: • Capaz de eliminar saltos (y la necesidad de predecirlos) • Bloques básicos más grandes (el compilador puede planificar mejor) Inconvenientes: • Afecta al conjunto de instrucciones y complica su ejecución • Las instrucciones descartadas consumen recursos y ancho de banda • Uso limitado si el control de flujo es más complejo que una simple alternativa • Muchas arquitecturas incluyen unas pocas instrucciones condicionales sencillas; solo unas pocas incluyen versiones condicionales de la mayoría de las instrucciones
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[instrucciones-predicadas-convertir-dependencias-de-control-e]] · [[ejemplo-de-transformacion-de-salto-a-instrucciones-predicada]]
+Relacionado: [[instrucciones-predicadas-convertir-dependencias-de-control-e]] · [[ejemplo-de-transformacion-de-salto-a-instrucciones-predicada]] · [[salto-retardado-y-instrucciones-predicadas-como-alternativas]]

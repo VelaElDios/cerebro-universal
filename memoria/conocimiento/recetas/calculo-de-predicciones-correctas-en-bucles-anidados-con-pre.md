@@ -17,4 +17,4 @@ Bucle interno (B1): 10 iteraciones por vuelta externa, 100 vueltas externas = 10
 > Considera que B1 y B2 son las instrucciones de salto correspondientes al bucle interno y externo, respectivamente. a) Para B1, indica el número de predicciones correctas que habrá para cada uno de los siguientes esquemas: i. predictor de 1 bit inicializado a tomado ii. predictor de 1 bit inicializado a no tomado iii. predictor de 2 bits inicializado a 10 tomado débil iv. predictor de 2 bits inicializado a 01 no tomado débil v. predictor de 3 bits inicializado a 100 vi. predictor de 3 bits inicializado a 000
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[simulacion-de-predictores-1-bit-4-bits-saturado-y-correlacio]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[ejercicio-simulacion-de-predictores-de-2-bits-vs-correlacion]]

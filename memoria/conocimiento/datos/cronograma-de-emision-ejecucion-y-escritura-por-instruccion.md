@@ -26,4 +26,4 @@ La emisión es in-order (1,2,3,6,7,8); la ejecución y escritura son out-of-orde
 > Instrucción                 Emisión           Ejecución   Escritura resultado                           fld       f0, 0(x1)                        1                           fmul.d    f4, f0, f2                       2                           fsd       f4, 0(x1)                        3
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[secuencia-de-instrucciones-y-dependencias-en-el-ejemplo-toma]]
+Relacionado: [[secuencia-de-instrucciones-y-dependencias-en-el-ejemplo-toma]] · [[orden-de-emision-en-orden-in-order-issue-con-ejecucion-fuera]] · [[secuencia-exacta-de-ciclos-para-cada-instruccion-en-la-simul]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]]

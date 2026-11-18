@@ -17,4 +17,4 @@ Cuando mejoras afectan a fracciones disjuntas del tiempo (f1, f2, ... f_restante
 > Si combinamos ambas mejoras, tenemos: speedup = 100 / (20/4 + 50/2 + 30) = 100/60 = 1.67
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[seleccion-de-mejoras-mutuamente-excluyentes-con-ley-de-amdah]]
+Relacionado: [[seleccion-de-mejoras-mutuamente-excluyentes-con-ley-de-amdah]] · [[speedup-combinando-multiples-mejoras-independientes]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion]] · [[ejercicios-de-evaluacion-de-rendimiento-basados-en-ley-de-am]]

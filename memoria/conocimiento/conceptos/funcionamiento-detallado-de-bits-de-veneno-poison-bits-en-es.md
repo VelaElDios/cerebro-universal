@@ -17,4 +17,4 @@ Cuando una instrucción especulativa (marcada con *) causa una excepción (p.ej.
 > DDIV* R5, R1, R5               Yes                   No                             R5←dirty (poison bit=1)" y "DDIV    R5, R2, R1             No                    No                             R5←1 (poison bit=0)" y "R5      dirty
 > — `repo:datos/temarios/AC/examenes/January2024.pdf` (cita sin comprobar)
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[tres-mecanismos-de-manejo-de-excepciones-para-instrucciones]] · [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]]

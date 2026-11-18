@@ -17,4 +17,4 @@ En este enunciado de examen se impone explícitamente que la etapa de "Escritura
 > La ejecución de una instrucción que está esperando un resultado no puede comenzar en el mismo ciclo en el que este resultado es escrito en el Bus Común de Datos.
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[escritura-de-resultado-y-actualizacion-de-qi-en-registro-des]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[escritura-de-resultado-y-actualizacion-de-qi-en-registro-des]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[restriccion-de-forwarding-por-cdb-en-tomasulo-no-escritura-e]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]] · [[restriccion-de-cdb-en-tomasulo-no-escritura-e-inicio-simulta]]

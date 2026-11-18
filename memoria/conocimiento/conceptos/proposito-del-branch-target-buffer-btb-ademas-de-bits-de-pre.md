@@ -16,3 +16,5 @@ El BTB (Branch Target Buffer) almacena las direcciones destino (target addresses
 
 > Apart from storing prediction bits, what is the purpose of the branch target buffer (BTB) in the computer architecture? To store the branch target addresses of branch instructions.
 > — `repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)` (cita sin comprobar)
+
+Relacionado: [[btb-cache-de-direcciones-destino-de-saltos-con-bits-de-predi]] · [[estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]]

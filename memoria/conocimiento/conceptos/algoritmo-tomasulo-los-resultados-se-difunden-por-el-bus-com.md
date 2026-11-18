@@ -17,4 +17,4 @@ En el algoritmo de Tomasulo, las unidades funcionales escriben sus resultados en
 > En Tomasulo... a. Los resultados de las unidades funcionales pasan a las instrucciones que están a la espera a través del CDB
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]]
+Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[tomasulo-resultados-via-common-data-bus-cdb]] · [[bus-comun-de-datos-cdb-en-tomasulo-difunde-resultados-de-uf]]

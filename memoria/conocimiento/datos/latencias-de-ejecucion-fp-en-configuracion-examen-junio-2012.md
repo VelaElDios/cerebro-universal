@@ -22,4 +22,4 @@ Nota: "cantidad" en la tabla del enunciado se refiere al número de unidades fun
 > Sumador/Restador 2 cantidad 2 ciclos / Multiplicador 2 cantidad 6 ciclos / Divisor 1 cantidad 12 ciclos / La etapa de ejecución de ambas operaciones requiere 2 ciclos
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[latencias-de-ejecucion-uf-fp-en-examen-ac-junio-2014-problem]] · [[latencias-de-unidades-funcionales-dadas-en-el-examen-fp-y-me]] · [[parametros-de-temporizacion-del-examen-ac-june-2022-exercise]]

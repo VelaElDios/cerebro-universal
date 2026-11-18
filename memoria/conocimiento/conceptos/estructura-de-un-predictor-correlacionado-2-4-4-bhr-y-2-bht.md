@@ -17,4 +17,4 @@ Notación (m,n): m = bits de historial (tamaño BHR), n = número de entradas de
 > A (2,4) correlating predictor uses exactly: c) 4 BHRs and 2 BHTs
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[predictor-correlacionado-m-n-numero-de-bhts-2-m]] · [[numero-de-bhr-en-predictor-correlacionado-de-dos-niveles-2-1]] · [[predictor-correlacionante-m-n-tiene-2-n-bhts]]

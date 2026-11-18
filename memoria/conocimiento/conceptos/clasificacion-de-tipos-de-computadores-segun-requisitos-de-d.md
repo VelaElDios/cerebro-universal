@@ -21,3 +21,5 @@ Cinco categorías principales con sus vectores de optimización:
 
 > Tipos de computadores • Dispositivos móviles personales  consumo y tiempo real • Ordenadores de sobremesa/escritorio  relación precio/prestaciones • Servidores  disponibilidad, escalabilidad, productitividad • Clusters / Warehouse Scale Computer  disponibilidad y relación precio/prestaciones • Sistemas empotrados  precio, aplicaciones específicas
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 3 de 5)`
+
+Relacionado: [[tipos-de-benchmarks-sinteticos-reales-nucleos-reducidos-y-su]] · [[tendencias-de-paralelismo-en-arquitectura-actual-ilp-tlp-dlp]] · [[definicion-de-arquitectura-de-computadores-frente-a-organiza]]

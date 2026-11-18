@@ -16,3 +16,5 @@ El índice del tema marca como realizadas (✓) las cuatro primeras secciones: r
 
 > 2.0 Revisión de la arquitectura RISC-V; 2.1 Revisión de segmentación; 2.2 Técnicas para reducir detenciones; 2.3 Estudio de dependencias
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
+
+Relacionado: [[analisis-de-dependencias-en-codigo-risc-v-raw-war-waw]] · [[relacion-ilp-y-cpi-en-procesadores-segmentados]] · [[parametros-estandar-para-ejercicios-de-segmentacion-software]]

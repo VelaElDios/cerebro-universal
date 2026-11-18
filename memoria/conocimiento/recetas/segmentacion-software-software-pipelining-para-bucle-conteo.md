@@ -16,3 +16,5 @@ Temas: [[ac]] · [[modulo-scheduling]] · [[pipeline]] · [[riscv]] · [[segment
 
 > Problema 1 (2,5 puntos). El siguiente bucle se ejecuta en un procesador RISC-V segmentado... a) Indica las detenciones entre cada par de instrucciones... b) Aplica segmentación software para eliminar todas las dependencias de datos del cuerpo del bucle... c) Detalla los bloques start-up (a la izquierda) y finish-up (a la derecha).
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf` (cita sin comprobar)
+
+Relacionado: [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]] · [[segmentacion-software-software-pipelining-en-bucles-sin-depe]] · [[segmentacion-software-software-pipelining-para-bucle-encript]]

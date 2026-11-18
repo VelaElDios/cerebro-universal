@@ -22,4 +22,4 @@ Regla práctica: perfilar ambos; usar branchless cuando la tasa de misprediction
 > - ¿Es siempre preferible una versión branchless en cualquier caso?
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea4_2_branchless.cpp`
 
-Relacionado: [[formula-del-techo-roofline-mononucleo]] · [[cuando-preferir-aos-sobre-soa-en-la-practica]]
+Relacionado: [[formula-del-techo-roofline-mononucleo]] · [[cuando-preferir-aos-sobre-soa-en-la-practica]] · [[programacion-branchless-reemplazar-if-condicional-por-aritme]] · [[por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per]] · [[patron-branchless-suma-condicional-mediante-multiplicacion-p]]

@@ -16,3 +16,5 @@ El desenrollado de bucles replica el cuerpo del bucle varias veces para reducir 
 
 > The loop unrolling technique is employed to… c) Reduce control dependences.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf` (cita sin comprobar)
+
+Relacionado: [[desenrollamiento-de-bucles-reduce-dependencias-de-control-me]] · [[objetivo-del-desenrollamiento-de-bucles-loop-unrolling]] · [[desenrollamiento-de-bucles-loop-unrolling-permite-planificar]]

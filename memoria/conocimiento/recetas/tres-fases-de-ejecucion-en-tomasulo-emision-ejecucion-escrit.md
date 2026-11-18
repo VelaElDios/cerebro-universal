@@ -18,3 +18,5 @@ Temas: [[ac]] · [[arquitectura]] · [[fases-ejecucion]] · [[planificacion-dina
 
 > Emisión: Obtiene una instrucción de la cola de operaciones, y Si es operación aritmética en punto flotante: se emite, si hay una estación de reserva vacía y envía los operandos a la estación de reserva (si están en los registros). Ejecución: Si aún no están disponibles los operandos, monitoriza el CDB a la espera del registro que se va a computar (este paso comprueba los riesgos RAW); Cuando todos los operandos están disponibles, ejecuta la operación en la UF correspondiente. Escritura del resultado: Cuando el resultado está disponible, se envía al CDB; Desde el CDB, a los registros y estaciones de reserva (incluyendo buffers de almacenamiento) que lo esperan
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[algoritmo-de-tomasulo-reglas-de-simulacion-para-ejercicios-d]] · [[planificacion-con-algoritmo-tomasulo-issue-execution-commit]] · [[riesgos-estructurales-en-tomasulo-solo-en-escritura-de-resul]]

@@ -17,4 +17,4 @@ Si se rellena el slot de retardo con una instrucción del bloque *destino* (targ
 > El comportamiento del programa podría ser incorrecto si el salto finalmente no se toma
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
 
-Relacionado: [[penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion]]
+Relacionado: [[penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion]] · [[salto-retardado-delayed-branch-en-planificacion-estatica]] · [[penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r]] · [[saltos-retardados-delayed-branches-en-planificacion-estatica]]

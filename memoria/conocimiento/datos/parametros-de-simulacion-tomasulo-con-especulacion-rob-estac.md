@@ -17,4 +17,4 @@ Configuración exacta para la simulación del Problema 3: ROB (Reorder Buffer) c
 > • El sistema cuenta con un ROB de 6 entradas, una estación de reserva por UF con 2 entradas y un buffer de carga de 1 entrada
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]]
+Relacionado: [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[configuracion-de-recursos-para-tomasulo-especulativo-en-exam]] · [[configuracion-tomasulo-con-especulacion-del-examen-ac-junio]] · [[configuracion-tomasulo-con-rob-para-simulacion-de-examen-ene]]

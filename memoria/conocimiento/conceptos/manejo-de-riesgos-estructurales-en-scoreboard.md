@@ -17,4 +17,4 @@ En el Scoreboard (marcador), los riesgos estructurales (conflictos por unidades 
 > In Scoreboard... b) Structural hazards are handled in the issue step.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf` (cita sin comprobar)
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[scoreboard-los-riesgos-estructurales-se-gestionan-en-la-etap]] · [[riesgos-estructurales-en-marcador-scoreboard-fase-de-emision]] · [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]]

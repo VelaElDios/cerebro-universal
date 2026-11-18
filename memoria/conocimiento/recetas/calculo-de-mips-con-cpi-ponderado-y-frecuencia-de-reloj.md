@@ -17,4 +17,4 @@ Para calcular MIPS (Millones de Instrucciones Por Segundo) dado frecuencia (Hz) 
 > Sea una máquina con una frecuencia de reloj de 500 MHz y con los siguientes CPI para cada uno de los cuatro tipos de instrucción soportados: Tipo CPI A 2 B 3 C 4 D 5 Asumiendo la siguiente mezcla de instrucciones para un programa de prueba determinado: Tipo % A 40% B 25% C 25% D 10% ¿Cuál es el valor de MIPS para dicha máquina?
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]]
+Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]] · [[calculo-de-mips-a-partir-de-frecuencia-cpi-por-tipo-y-mezcla]] · [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]] · [[calculo-de-mips-a-partir-de-mezcla-de-instrucciones-cpi-y-fr]]

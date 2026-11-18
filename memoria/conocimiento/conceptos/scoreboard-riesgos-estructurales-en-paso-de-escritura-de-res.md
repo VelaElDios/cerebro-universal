@@ -17,4 +17,4 @@ En Scoreboard (marcador), los riesgos estructurales pueden aparecer en el paso d
 > In scoreboard, structural hazards can appear… a) In the issue step, if there is not space at the reservation station b) In the read operands step, if any of the operands is not available c) In the write result step, if the common data bus is busy d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[riesgos-estructurales-en-marcador-scoreboard-fase-de-emision]] · [[riesgo-estructural-en-scoreboard-pregunta-7]] · [[scoreboard-los-riesgos-estructurales-se-gestionan-en-la-etap]]

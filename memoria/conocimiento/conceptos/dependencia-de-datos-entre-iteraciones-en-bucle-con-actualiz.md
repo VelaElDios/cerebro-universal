@@ -17,4 +17,4 @@ El registro x1 se actualiza en cada iteración (`addi x1, x1, -8`) y se usa como
 > Considera el siguiente bucle: Bucle: fld f0, 0(x1) fadd.d f2, f0, f4 fsd f2, 0(x1) addi x1, x1, -8 bne x1, x3, Bucle Indica cuál de las siguientes afirmaciones es cierta: ... Hay una dependencia de datos entre iteraciones que afecta al registro x1
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[identificacion-de-dependencias-loop-carried-en-bucles-c-styl]] · [[dependencia-de-datos-verdadera-definicion-y-ejemplo-en-bucle]]

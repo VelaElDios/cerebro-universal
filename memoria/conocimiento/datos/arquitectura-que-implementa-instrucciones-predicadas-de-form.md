@@ -16,3 +16,5 @@ IA-64 (Itanium) usa predicación masiva (cada instrucción tiene bit de predicad
 
 > Which computer architecture implements broadly predicated instructions?
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
+
+Relacionado: [[instrucciones-predicadas-eliminan-saltos-y-prediccion-pregun]] · [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[instrucciones-predicadas-convertir-dependencias-de-control-e]]

@@ -42,4 +42,4 @@ WAR: (2) lee R5 viejo vs (4) escribe R5 nuevo; (3) lee R8 viejo vs (6) escribe R
 > LW R2, 0(R3); DADD R4, R2, R5; DSUB R6, R7, R8; LW R5, 0(R10); DSUB R9, R9, R13; DADD R8, R8, R2; DSUB R5, R5, R2
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf` (cita sin comprobar)
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[planificacion-en-superescalar-grado-2-con-sin-renombramiento]] · [[codigo-para-planificacion-superescalar-con-dependencias-raw]] · [[problema-3-examen-ac-junio-2011-codigo-y-parametros-de-plani]]

@@ -17,4 +17,4 @@ La ley de Amdahl implica que mejorar un componente que consume poco tiempo total
 > Para conseguir un ahorro del 20% en el tiempo de ejecución, habría que reducir 40 segundos el tiempo de ejecución del programa A y 42 segundos el tiempo de ejecución del programa B. Sin embargo, mejorando solamente los saltos no es posible lograr ninguna de las dos reducciones.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]]
+Relacionado: [[calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults]] · [[determinar-si-es-posible-alcanzar-un-speedup-objetivo-mejora]] · [[ley-de-amdahl-la-aceleracion-maxima-esta-limitada-por-la-fra]] · [[ley-de-amdahl-la-aceleracion-maxima-viene-determinada-por-la]]

@@ -17,4 +17,4 @@ Dos decisiones de diseño clave para la simulación: 1) Contención del CDB: sol
 > Any step of an instruction that wants to write to the CDB (Common Data Bus) cannot do so if another instruction is already using it. In general, any resource that is freed in one clock cycle cannot be used until the next clock cycle.
 > — `repo:datos/temarios/AC/examenes/June2025.pdf` (cita sin comprobar)
 
-Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[parametros-de-recursos-y-latencias-para-tomasulo-con-especul]]
+Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[parametros-de-recursos-y-latencias-para-tomasulo-con-especul]] · [[restriccion-de-uso-del-cdb-y-liberacion-de-recursos-en-tomas]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]] · [[reglas-de-cdb-y-liberacion-de-recursos-en-tomasulo-con-rob]]

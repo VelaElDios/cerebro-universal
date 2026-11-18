@@ -17,4 +17,4 @@ Branch History Table (BHT) es una tabla indexada por la dirección del salto (o 
 > La BHT almacena b) Los bits de predicción de todas las instrucciones de salto condicional
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[implementacion-de-la-bht-en-predictor-dinamico-de-2-bits]] · [[seleccion-de-entrada-en-bht-branch-history-table]] · [[implementacion-bht-para-predictor-de-2-bits-4k-entradas-80-9]]

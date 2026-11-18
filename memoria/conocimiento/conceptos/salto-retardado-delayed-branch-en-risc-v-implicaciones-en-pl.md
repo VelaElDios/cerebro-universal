@@ -23,4 +23,4 @@ Consecuencias para ejercicios:
 > Sabiendo que se usa salto retardado y adelantamiento" / "se aplica salto retardado" / "hacemos uso del salto retardado" / "Soporta la técnica de salto retardado
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]]
+Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]] · [[saltos-retardados-delayed-branches-en-planificacion-estatica]] · [[uso-de-ranura-de-retardo-de-1-ciclo-en-superescalar-para-ocu]]

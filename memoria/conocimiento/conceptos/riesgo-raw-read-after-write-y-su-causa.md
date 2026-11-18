@@ -16,3 +16,5 @@ RAW (Read After Write) es una dependencia de datos verdadera (true data dependen
 
 > A RAW hazard is due to: a) A control dependence b) An output dependence c) An antidependence d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
+
+Relacionado: [[definicion-de-riesgo-raw-read-after-write]] · [[riesgo-raw-como-dependencia-de-datos-verdadera]] · [[diferencia-entre-dependencia-de-datos-raw-antidependencia-wa]]

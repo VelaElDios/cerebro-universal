@@ -16,3 +16,5 @@ Aplicación de la ley de Amdahl: Speedup = 1 / ((1 - f) + f/k), donde f=0.4 (fra
 
 > La nueva tarjeta gráfica de nuestro ordenador es cuatro veces más rápida que la antigua. Suponiendo que un juego concreto dedicaba el 40% del tiempo de ejecución a realizar operaciones gráficas, ¿cuál es el speedup obtenido al ejecutar dicho juego sobre la versión mejorada de nuestro ordenador?
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
+
+Relacionado: [[calculo-de-speedup-con-ley-de-amdahl-ejemplo-tarjeta-grafica]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-parcial]] · [[factor-de-mejora-necesario-segun-ley-de-amdahl-para-un-speed]]

@@ -17,4 +17,4 @@ En un predictor correlacionador de dos niveles **(2, 1)**, el primer número (2)
 > How many BHRs are there in a correlating two-level (2, 1) predictor? a) 1 b) 2 c) 3 d) 4
 > — `repo:datos/temarios/AC/examenes/January2018.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[numero-de-bhr-en-predictor-correlacionado-de-dos-niveles-2-1]] · [[calculo-de-bits-totales-en-predictor-1-2-con-bht-de-4-entrad]] · [[predictor-correlacionado-m-n-numero-de-bhts-2-m]]

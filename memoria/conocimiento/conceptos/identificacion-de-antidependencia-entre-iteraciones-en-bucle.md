@@ -17,4 +17,4 @@ En el bucle: S1 lee A[i] y escribe A[i+1]; S2 lee A[i] y escribe B[i]. Existe an
 > c) There is a antidependende, between S1 and S1, through A (between iterations)
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
 
-Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]]
+Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]] · [[identificacion-de-antidependencia-war-entre-store-e-incremen]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]

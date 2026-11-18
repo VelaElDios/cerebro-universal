@@ -17,4 +17,4 @@ Speedup = (Ciclos por iteración en código original) / (Ciclos totales del bucl
 > ¿Cuál es el speedup de la versión desenrollada y planificada con respecto al código original?
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]] · [[como-calcular-ciclos-por-iteracion-en-codigo-original-con-la]]
+Relacionado: [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]] · [[como-calcular-ciclos-por-iteracion-en-codigo-original-con-la]] · [[speedup-teorico-del-desenrollado-4x-frente-a-codigo-original]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]] · [[calculo-de-speedup-para-bucle-desenrollado-en-pipeline-con-h]]

@@ -17,4 +17,4 @@ Análisis de dependencias de la secuencia: RAW (verdaderas): F0 de instr1→inst
 > L.D    F0, 0(R1) / L.D    F2, 4(R1) / L.D    F4, 8(R1) / MUL.D F6, F0, F2 / MUL.D F4, F8, F6 / ADD.D F8, F0, F8 / S.D    F4, 0(R1)
 > — `repo:datos/temarios/AC/examenes/June2021.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-siempre-genera-hazard-war]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[antidependencia-war-siempre-genera-hazard-war]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[secuencia-de-instrucciones-de-referencia-para-ejercicios-de]] · [[tipos-de-dependencias-en-codigo-fp-mips64-para-tomasulo-raw]] · [[dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v]]

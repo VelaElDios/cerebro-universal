@@ -17,4 +17,4 @@ Convención de direccionamiento para array de double precision (8 bytes/elemento
 > x1 0xFED8 X[997] 0xFEE0 X[998] 0xFEE8 X[999] 0xFF00 X[1000]
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]]
+Relacionado: [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]] · [[bucle-risc-v-para-calibracion-imu-con-puntero-descendente]] · [[segmentacion-software-software-pipelining-para-suma-vectoria]] · [[desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado]]

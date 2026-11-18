@@ -28,4 +28,4 @@ Estos parámetros determinan los stalls por dependencias RAW en cadenas FP (ej. 
 > La unidad funcional de PF de multiplicación requiere 3 ciclos y la división 4 ciclos." / "La unidad funcional de división en punto flotante está completamente segmentada y emplea 6 ciclos.
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2_Prob_RISCV_rev.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f]]
+Relacionado: [[calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f]] · [[latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d]] · [[parametros-estandar-para-ejercicios-de-segmentacion-software]]

@@ -17,4 +17,4 @@ Pasos para planificar el bucle original: 1) Listar instrucciones con sus tipos y
 > As usual, assume that this processor supports forwarding and delayed branch (with 1 delay slot). Loop: L.S F1, 0(R1); L.S F2, 0(R2); MUL.S F4, F2, F1; S.S F4, 0(R1); L.S F3, 0(R3); ADD.S F5, F4, F3; S.S F5, 0(R3); DADDUI R1, R1, #4; DADDUI R2, R2, #4; DADDUI R3, R3, #4; DADDUI R4, R4, #-1; BNEZ R4, Loop
 > — `repo:datos/temarios/AC/examenes/January2019.pdf` (cita sin comprobar)
 
-Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]]
+Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]] · [[codigo-del-bucle-vliw-para-planificacion-cargas-fp-mul-s-add]] · [[planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en]]

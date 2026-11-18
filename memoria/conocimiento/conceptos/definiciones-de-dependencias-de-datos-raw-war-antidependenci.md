@@ -17,4 +17,4 @@ Dependencia de salida (WAW): ambas instrucciones escriben en el mismo registro/m
 > Se dice que existe una dependencia de salida entre dos instrucciones i y j (j lógicamente después de i) si a) La instrucción i produce un resultado que usa la instrucción j b) La instrucción j escribe sobre un registro o una posición de memoria que lee la instrucción i c) Ambas instrucciones leen el mismo registro o posición de memoria d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]] · [[diferencia-entre-dependencia-de-datos-raw-antidependencia-wa]]

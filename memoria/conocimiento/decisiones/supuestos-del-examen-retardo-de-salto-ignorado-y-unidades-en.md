@@ -17,4 +17,4 @@ Dos simplificaciones importantes en el enunciado: 1) Las instrucciones enteras (
 > 2 unidades funcionales enteras con latencia 0 • Se ignora el retardo del salto
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[suposiciones-del-problema-forwarding-ramas-retrasadas-unidad]] · [[configuracion-del-procesador-para-el-ejercicio-de-desenrolla]] · [[latencias-de-instrucciones-y-supuestos-de-pipeline-en-exerci]]

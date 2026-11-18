@@ -22,4 +22,4 @@ Todas las unidades están **fully pipelined**. El salto retardado (delayed branc
 > The next latencies: Instruction producing the result / Instruction using the result / Latency in cycles: ALU FP / ALU FP / 3; ALU FP / S.D / 1; L.D / ALU FP / 1; L.D / S.D / 0
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[analisis-de-paradas-en-bucle-con-unidades-fp-de-latencias-2]] · [[tabla-de-latencias-para-instrucciones-consecutivas-en-mips64]] · [[analisis-de-pipeline-fp-para-bucle-media-ponderada-problema]]

@@ -17,4 +17,4 @@ Ejecutar `lstopo` (o `lstopo -v`) para obtener la topología completa. Rellenar 
 > Utilizando el comando lstopo identificaremos la topología de hardware del sistema: número de sockets, distribución de los núcleos físicos (distinguiendo entre núcleos de alto rendimiento o P-cores y núcleos eficientes o E-cores) y los tamaños de los niveles de caché L1, L2 y L3.
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf`
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[instalacion-y-uso-rapido-de-lstopo-hwloc-para-topologia-de-m]] · [[tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script]] · [[como-generar-el-modelo-roofline-del-procesador-con-lscpu-y-s]]

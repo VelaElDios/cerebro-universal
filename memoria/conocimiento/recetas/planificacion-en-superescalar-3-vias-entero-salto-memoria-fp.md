@@ -31,4 +31,4 @@ Pasos para planificar:
 > Assume that we have a 3-way superscalar processor capable of issuing an integer instruction (including branches), a memory instruction, and a floating-point instruction per clock cycle. Consider that the execution step of ADD.D and MUL.D takes, respectively, 2 and 4 clock cycles. As usual, assume that this processor supports forwarding and delayed branch (with 1 delay slot).
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
 
-Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[desenrollado-de-bucle-8-veces-para-superscalar-con-latencias]] · [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]] · [[como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i]]

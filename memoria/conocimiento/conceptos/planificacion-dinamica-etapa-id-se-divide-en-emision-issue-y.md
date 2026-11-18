@@ -17,4 +17,4 @@ En planificación dinámica (p.ej. algoritmo Tomasulo), la etapa ID del pipeline
 > In dynamic instruction scheduling, which of the following statements is correct? a) The ID stage is divided into two: issue and operand reading.
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[planificacion-dinamica-tomasulo-orden-de-ejecucion-por-dispo]] · [[planificacion-con-algoritmo-tomasulo-issue-execution-commit]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]]

@@ -16,3 +16,5 @@ Aunque el forwarding resuelve la mayoría de dependencias RAW entre instruccione
 
 > In a pipelined MIPS processor supporting forwarding, when executing two consecutive integer instructions: If the first instruction is a memory access, sometimes it is necessary to stop.
 > — `repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)` (cita sin comprobar)
+
+Relacionado: [[limitacion-del-adelantamiento-hazard-load-use-load-use-penal]] · [[adelantamiento-forwarding-para-riesgos-raw]] · [[dependencia-de-datos-en-pipeline-riesgo-solo-si-instruccione]]

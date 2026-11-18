@@ -17,4 +17,4 @@ Stalls críticos: LW→DADD (1 ciclo). Para eliminarlos, separar LW y DADD depen
 > b) Unroll the loop the minimum number of times to schedule it without stalls, and keep in mind that the program behavior must be preserved. Show the unrolled version: read: Show the scheduled version (without stalls): read:
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
 
-Relacionado: [[analisis-de-stalls-en-bucle-mips64-con-forwarding-y-ramas-re]]
+Relacionado: [[analisis-de-stalls-en-bucle-mips64-con-forwarding-y-ramas-re]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]] · [[desenrollado-minimo-de-bucle-mips64-para-eliminar-stalls-con]]

@@ -17,4 +17,4 @@ I1 lee x1 (fuente), I2 escribe x1 (destino). Esto es una antidependencia (WAR: W
 > Considera el siguiente código: (I1) add x5, x1, x2 (I2) sub x1, x3, x4 (I3) and x6, x1, x7 ¿Cuál de las siguientes afirmaciones es correcta? ... Existe una antidependencia entre I1 e I2
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf` (cita sin comprobar)
 
-Relacionado: [[dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien]] · [[antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord]]
+Relacionado: [[dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien]] · [[antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord]] · [[antidependencia-war-siempre-genera-hazard-war]]

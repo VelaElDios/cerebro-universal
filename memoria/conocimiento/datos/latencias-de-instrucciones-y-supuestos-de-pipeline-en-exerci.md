@@ -23,4 +23,4 @@ Parámetros de temporización para el ejercicio:
 > Assume that load instructions require 2 cycles for their MEM step, multiplications require 2 cycles for their EX step, and the rest of operations require 1 cycle. Besides, we know that all functional units are fully pipelined, forwarding is supported, and delay branch is used (with 1 delay slot).
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]]
+Relacionado: [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]] · [[pasos-para-resolver-exercise-3-processor-a-superscalar-in-or]] · [[parametros-de-temporizacion-del-examen-ac-june-2022-exercise]]

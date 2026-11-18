@@ -25,3 +25,5 @@ Con estos datos, una IA local se puede afinar con los pasos aceptados y enseñar
 
 ## Ampliación (2026-11-16, )
 El script `scripts/cerebro/dataset.py` recopila cada interacción con las IAs (prompt, respuesta, resultado) y la comprime en el repositorio privado `cerebro-datos` (configurado via secrets de GitHub `DATOS_TOKEN` y `DATOS_REPO`). Junto a ese dataset se exporta `export/conocimiento.jsonl` con el conocimiento verificado. Esto permite entrenar/finetunear un modelo local propio sin exponer datos.
+
+Relacionado: [[estructura-de-la-memoria-compartida-cerebro-md-estado-md-con]] · [[como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte]] · [[como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador]]

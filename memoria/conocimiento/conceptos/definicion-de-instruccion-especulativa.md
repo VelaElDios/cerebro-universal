@@ -17,4 +17,4 @@ Una instrucción especulativa es aquella que se ejecuta antes de saber si deber�
 > A "speculative" instruction: a) Is a conditional branch whose condition must be predicted b) Is an instruction that causes a non-recoverable exception c) It is an instruction executed before knowing whether it should be executed d) An instruction that calculates a probable result of an arithmetic-logical operation
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]] · [[instruccion-especulativa-ejecutada-antes-de-saber-si-realmen]] · [[tres-mecanismos-de-manejo-de-excepciones-para-instrucciones]] · [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]]

@@ -20,4 +20,4 @@ Temas: [[ac]] · [[pipeline]] · [[saas]]
 > Compare the number of operations per cycle for each processor. Which processor gets the best efficiency in operations per cycle?
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
 
-Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]
+Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[comparativa-eficiencia-operations-per-cycle-opc-superscalar]] · [[metrica-de-comparacion-operaciones-por-ciclo-ipc-en-supersca]] · [[ejercicio-3-ac-june-2019-comparacion-superscalar-in-order-vs]]

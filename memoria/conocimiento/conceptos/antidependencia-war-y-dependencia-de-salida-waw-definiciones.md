@@ -16,3 +16,5 @@ Antidependencia (WAR): j (posterior) escribe un operando que i (anterior) lee. D
 
 > La instrucción j escribe sobre un registro o una posición de memoria que lee la instrucción i
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
+
+Relacionado: [[diferencia-entre-dependencia-de-datos-raw-antidependencia-wa]] · [[definiciones-de-dependencias-de-datos-raw-war-antidependenci]] · [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]]

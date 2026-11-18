@@ -17,4 +17,4 @@ La dependencia de nombre (name dependence) ocurre cuando dos instrucciones usan 
 > Dadas dos instrucciones i y j (j lógicamente después de i), existe una dependencia de nombre si: a. Las dos instrucciones i y j escriben sobre el mismo registro o posición de memoria. b. La instrucción j escribe sobre un registro o una posición de memoria que lee la instrucción i. c. Las respuestas a y b son ciertas. d. Todas las anteriores son falsas.
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]
+Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[definicion-de-dependencia-de-nombre-name-dependency-entre-in]] · [[name-dependency-dependencia-de-nombre-incluye-waw-y-war]] · [[definicion-de-dependencia-de-nombre-waw-y-war]]

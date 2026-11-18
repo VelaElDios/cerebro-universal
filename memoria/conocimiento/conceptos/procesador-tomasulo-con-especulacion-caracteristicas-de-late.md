@@ -16,3 +16,5 @@ Reglas clave para la simulación: 1) Etapa de ejecución de carga/almacén = 1 c
 
 > The load and store execution stage uses 1 cycle. The floating-point multiplication (FP) execution step takes 5 cycles. The floating point (FP) addition execution step takes 2 cycles. Any step of an instruction that wants to write to the CDB (Common Data Bus) cannot do so if another instruction is already using it. In general, any resource that is freed in one clock cycle cannot be used until the next clock cycle.
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf` (cita sin comprobar)
+
+Relacionado: [[parametros-tomasulo-con-especulacion-para-problema-3-ac-ener]] · [[simulacion-tomasulo-con-especulacion-parametros-clave-y-rest]] · [[parametros-de-recursos-y-latencias-para-tomasulo-con-especul]]

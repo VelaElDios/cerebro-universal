@@ -31,4 +31,4 @@ Valores concretos del enunciado para simular el Problema 3:
 > sabiendo que el estado inicial es: R1=10 R2=5 R3=0 R4=20 R5=10 R6=5 R7=0 R8=20 R9=10. Y que el acceso a la dirección de memoria 0 está prohibido (cualquier intento de leer o escribir en dicha posición lanzará una excepción por acceso ilegal). Además, el contenido de las 1024 primeras direcciones de memoria se han inicializado a 0.
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf` (cita sin comprobar)
 
-Relacionado: [[como-resolver-el-problema-3-de-especulacion-con-poison-bits]] · [[especulacion-estatica-con-poison-bits-en-mips64-lw]]
+Relacionado: [[como-resolver-el-problema-3-de-especulacion-con-poison-bits]] · [[especulacion-estatica-con-poison-bits-en-mips64-lw]] · [[estado-inicial-de-registros-y-restriccion-memoria-direccion]]

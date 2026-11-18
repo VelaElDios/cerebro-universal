@@ -17,4 +17,4 @@ Itanium (IA64) implementa arquitectura EPIC (VLIW explícito), distinta de x86 (
 > Itanium IA64 is… a) The first Intel processor incorporating a mathematical coprocessor and an integrated cache memory b) A version of the Intel Pentium processor for servers c) The first Intel processor not compatible with the x86 family d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
 
-Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[primer-procesador-intel-no-compatible-con-x86-itanium]] · [[arquitectura-que-implementa-instrucciones-predicadas-de-form]]

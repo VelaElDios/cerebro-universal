@@ -22,4 +22,6 @@ Decisión de diseño: la Fase 2 crea `defensa-sus.tex` (Beamer) con 2-3 diaposit
 > Las conclusiones de las diapositivas **salen de los datos**, igual que el apartado 10 del anexo: frases elegidas en `sus-calculos.lua` según la media frente a 68 y la aceptabilidad (por ejemplo `sus.imprimir_conclusiones_defensa()`, que imprime los `\item`). Nada de frases fijas como 'se compara favorablemente' o 'viabilidad confirmada': con una media de 38,75 serían falsas.
 > — `../plantilla-sus/spec.md`
 
+Relacionado: [[criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep]] · [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]] · [[escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e]]
+
 Origen: [[proyectos/plantilla-sus/estado|plantilla-sus]]

@@ -17,4 +17,4 @@ Estados: 00=strongly NT, 01=weakly NT, 10=weakly T, 11=strongly T. Bucle: R2=6, 
 > We have a one level 2-bit branch predictor initialized to strongly not taken. Indicate the correct sequence of hits (H) and misses (M) for B1 in the next code:
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[secuencia-de-aciertos-fallos-en-predictor-2-bits-inicializad]] · [[secuencia-h-m-para-predictor-2-bit-debilmente-no-tomado-en-b]] · [[predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce]]

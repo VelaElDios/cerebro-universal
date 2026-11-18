@@ -21,4 +21,6 @@ Temas: [[audio]] · [[chiptune]] · [[donetonic]] · [[grada-colchonera]] · [[p
 > - Fanfarria propia por competición y canción de fondo que se anima con el tiempo y con los jefes. - La grada murmura y canta cuando te acercas a ella. - Volumen de música aparte del de efectos; todo sintetizado (sin ficheros).
 > — `repo:saas/docs/gestion/README.md`
 
+Relacionado: [[audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

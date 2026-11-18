@@ -14,7 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «matplotlib» (este archiv
 - 🧪 [[memoria/conocimiento/recetas/como-anotar-puntos-en-grafica-log-log-sin-solapar-etiquetas|Cómo anotar puntos en gráfica log-log sin solapar etiquetas]]
 - 🧪 [[memoria/conocimiento/recetas/como-generar-el-grafico-roofline-mononucleo-con-python|Cómo generar el gráfico Roofline mononúcleo con Python]]
 - 🧪 [[memoria/conocimiento/recetas/como-graficar-latencia-vs-working-set-con-jerarquia-de-cache|Cómo graficar latencia vs working set con jerarquía de caché en matplotlib]]
-- 🧪 [[memoria/conocimiento/recetas/como-guardar-el-grafico-roofline-como-archivo-png-en-lugar-d|Cómo guardar el gráfico Roofline como archivo PNG en lugar de mostrarlo]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-guardar-el-grafico-roofline-como-archivo-png-en-lugar-d|Cómo guardar el gráfico Roofline como archivo PNG en lugar de mostrarlo]]
 - 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log|Cómo trazar el modelo Roofline con matplotlib en escala log-log]]
 
 ## Decisiones (y por qué)

@@ -19,3 +19,5 @@ Parámetros clave para simulación: CDB con restricción de no escritura y lectu
 
 ## Ampliación (2026-11-18, )
 Especificación exacta del procesador para el Problema 2. Puntos clave: ROB pequeño (4 entradas) limita instrucciones en vuelo; 2 RS por unidad FP (adder, multiplier, divider) permite hasta 2 ops simultáneas por tipo; 2 load buffers; latencias asimétricas (div 10c es cuello de botella); CDB de puerto único serializa escrituras; recursos liberados en ciclo N solo disponibles en N+1 (burbuja implícita). Para simular: emitir en orden, ejecutar fuera de orden cuando operandos listos y RS libre, escribir CDB si libre, confirmar en orden desde ROB head.
+
+Relacionado: [[parametros-tomasulo-con-especulacion-para-problema-3-ac-ener]] · [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[configuracion-de-tomasulo-con-especulacion-para-examen-ac-ju]]

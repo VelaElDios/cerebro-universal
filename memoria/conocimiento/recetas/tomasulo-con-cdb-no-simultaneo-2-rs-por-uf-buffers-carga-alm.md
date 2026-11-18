@@ -17,4 +17,4 @@ Programa: fld f2,0(x1); fld f4,8(x1); fld f6,16(x1); fadd.d f8,f2,f4; fmul.d f10
 > Sea un procesador dotado de planificación dinámica de instrucciones según el método de Tomasulo. Se dispone de un Bus de Datos Común y se supone que en el mismo ciclo de reloj no se puede escribir un dato en este bus e iniciar la ejecución de una operación que estuviera esperando ese dato.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio]] · [[completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8]]
+Relacionado: [[primeros-3-ciclos-tomasulo-con-2-add-1c-y-2-mul-4c-ejercicio]] · [[completar-tabla-tomasulo-con-una-estacion-por-uf-ejercicio-8]] · [[problema-examen-ac-tomasulo-con-especulacion-buffers-carga-a]]

@@ -17,4 +17,4 @@ Estados 2-bit: 00=Strong NT, 01=Weak NT, 10=Weak T, 11=Strong T. Inicio: 01 (WNT
 > El siguiente bucle se ejecuta 25 veces, es decir, en las 24 primeras ejecuciones el salto bnez es TOMADO y la última NO TOMADO ... Si se utiliza un predictor dinámico de 2 bit inicializado a Débilmente No Tomado, ¿Cuál es la tasa de fallos (número de fallos/número de saltos) del predictor al finalizar todas iteraciones?
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce]] · [[calculo-de-tasa-de-acierto-con-predictor-de-1-bit-inicializa]] · [[secuencia-de-aciertos-fallos-en-predictor-2-bits-inicializad]]

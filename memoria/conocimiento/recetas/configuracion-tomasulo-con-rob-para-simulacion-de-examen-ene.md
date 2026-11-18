@@ -31,4 +31,4 @@ Configuración exacta del enunciado para simular 10 instrucciones (MUL.D, DIV.D,
 > There is an 8-entry ROB (initially EMPTY), 1 load buffer, 1 reservation station (RE) for FP addition, 2 reservation stations for FP multiplication, and 2 reservation stations for FP division.
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]] · [[simulacion-tomasulo-con-especulacion-parametros-de-hardware]]

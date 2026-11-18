@@ -21,4 +21,4 @@ En este tipo de problemas, el desenrollado 4× suele permitir acercarse a 3-4 op
 > b) How many operations per cycle are reached?
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
 
-Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]]
+Relacionado: [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d]] · [[metrica-operaciones-por-ciclo-opc-en-vliw]] · [[metrica-de-comparacion-operaciones-por-ciclo-ipc-en-supersca]]

@@ -17,4 +17,4 @@ CPR = (ciclos totales para ejecutar una iteración completa del bucle) / (result
 > b) Indicate the number of Cycles Per Result (CPR) for the code provided in the exercise.
 > — `repo:datos/temarios/AC/examenes/June2020.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[como-se-agrupan-capturas-con-subfigure]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[como-se-agrupan-capturas-con-subfigure]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]] · [[calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f]] · [[planificacion-de-bucle-jacobsthal-en-pipeline-mips64-con-uni]]

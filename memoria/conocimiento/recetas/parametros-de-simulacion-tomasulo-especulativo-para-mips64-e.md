@@ -35,4 +35,4 @@ Configuración exacta para simular el Ejercicio 2:
 > We assume a MIPS64 processor using hardware speculation and dynamic scheduling using the Tomasulo technique with speculation, with the following characteristics: • The load and store execution stage takes 1 cycle. • The floating-point multiplication (FP) execution step takes 6 cycles. • The floating-point addition (FP) execution step takes 4 cycles. • A 4-input reorder buffer (ROB) is available. • It has a 2-entry reservation stations for each unit in FP. • It has a 2-entry load/stage input load buffer.
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[configuracion-de-procesador-tomasulo-con-especulacion-del-ej]] · [[configuracion-tomasulo-con-rob-para-simulacion-de-examen-ene]] · [[simulacion-tomasulo-con-especulacion-parametros-clave-y-rest]]

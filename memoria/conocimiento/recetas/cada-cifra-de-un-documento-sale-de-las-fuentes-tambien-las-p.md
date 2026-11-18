@@ -17,6 +17,6 @@ El test solo comprueba números > 20, pero los pequeños también fallan. Ejempl
 > Antes de escribir cualquier cifra (también las pequeñas, y las que salen de sumar), buscarla en las fuentes y copiarla tal cual. Si hay que contar elementos de una lista (P1–P14 y P18), contarlos uno a uno y comprobarlo con la tabla de la fuente. Lo que no está en las fuentes no se escribe.
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

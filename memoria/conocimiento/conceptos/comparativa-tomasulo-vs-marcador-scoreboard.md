@@ -24,4 +24,4 @@ Tabla comparativa entre Tomasulo y el algoritmo Marcador (Scoreboard) del CDC 66
 > • Unidades funcionales segmentadas     • Múltiples unidades funcionales      6 loads, 3 stores, 3 +, 2 */        1 load/store, 1 +, 2 *, 1 / •    Ventana de instrucciones 14       • Ventana de instrucciones 5 •    No lanza con riesgo estructural   • No lanza con riesgo estructural •    WAR evita renombre                • WAR para •    WAW evita renombre                • WAW para •    Resultados a unidades funcionales • Escribe / lee registros •    Control estación de reserva       • Control central marcador
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[diferencias-clave-entre-las-tres-tablas-de-planificacion-ped]] · [[scoreboard-escribe-resultados-a-traves-del-banco-de-registro]] · [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]]

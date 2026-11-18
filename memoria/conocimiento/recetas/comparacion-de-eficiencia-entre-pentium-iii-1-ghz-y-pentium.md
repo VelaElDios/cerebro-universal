@@ -16,3 +16,5 @@ Eficiencia = Rendimiento / Frecuencia (o IPC efectivo). PIII: 48.9 fps / 1 GHz =
 
 > After running a 3D game on a Pentium III at 1 GHz, we get a performance of 48.9 fps. If we run the same game on a Pentium IV at 1.8 GHz, we get a performance of 90.24 fps. Which processor is more efficient for this game?
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
+
+Relacionado: [[comparacion-de-eficiencia-frecuencial-entre-procesadores-usa]] · [[calculo-de-mips-para-dos-procesadores-con-distinto-cpi-y-fre]] · [[comparativa-de-rendimiento-mips-entre-dos-implementaciones-c]]

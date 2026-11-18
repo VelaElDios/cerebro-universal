@@ -28,4 +28,4 @@ Para la tabla ROB en ciclo fin MUL.D: simular ciclo a ciclo hasta que MUL.D comp
 > Se dispone de un procesador MIPS64 con especulación hardware según el método de Tomasulo con especulación y 6 entradas en el buffer de reordenamiento (ROB). El sistema dispone de un buffer de carga y un buffer de almacenamiento con 1 entrada.
 > — `repo:datos/temarios/AC/examenes/Junio2013.pdf`
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[buffer-de-carga-en-tomasulo-especulativo-pregunta-18]] · [[pasos-para-rellenar-tabla-de-estado-de-instrucciones-emision]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l]]

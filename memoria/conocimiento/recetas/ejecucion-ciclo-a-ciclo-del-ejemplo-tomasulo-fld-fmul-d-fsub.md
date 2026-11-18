@@ -23,4 +23,4 @@ Secuencia de 6 ciclos para 6 instrucciones:
 > ciclo 1 Instrucción Emisión Ejecución Escritura resultado fld f6, 34(x2) 1 fld f2, 45(x3) fmul.d f0, f2, f4 fsub.d f8, f6, f2 fdiv.d f10, f0, f6 fadd.d f6, f8, f2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[fichero-de-registros-con-campo-qi-en-tomasulo]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[fichero-de-registros-con-campo-qi-en-tomasulo]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]] · [[ejecucion-paso-a-paso-de-instrucciones-fp-en-tomasulo-ciclos]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo]]

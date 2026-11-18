@@ -17,4 +17,4 @@ Pregunta de análisis (tarea 3.2.c): en la versión AoS (`std::vector<Particula>
 > 3.2.c Si el algoritmo solo accede al campo Particula.id. ¿Qué porcentaje de espacio de cada línea de cache estamos aprovechando en la versión AoS?
 > — `repo:datos/temarios/AC/Practicas/Practica4.pdf`
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[transformacion-aos-a-soa-para-optimizacion-de-cache-esquema]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[transformacion-aos-a-soa-para-optimizacion-de-cache-esquema]] · [[transformar-aos-a-soa-en-el-laboratorio-ac-tarea-3-2]]

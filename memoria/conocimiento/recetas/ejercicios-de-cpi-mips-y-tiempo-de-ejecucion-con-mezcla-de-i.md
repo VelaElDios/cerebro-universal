@@ -17,4 +17,4 @@ Problemas para calcular CPI medio, MIPS y tiempo de ejecución dado CPI por tipo
 > M1 necesita 2, 6, y 4 ciclos de reloj para ejecutar las instrucciones de tipo A, B y C, respectivamente. Por su parte, M2 emplea 3 ciclos para todos los tipos. M1 tiene una frecuencia de reloj de 400 MHz y M2 una frecuencia de 750 MHz.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf (trozo 4 de 5)`
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[calculo-de-cpi-a-partir-de-tiempos-por-tipo-de-instruccion-y]] · [[paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza]] · [[calculo-de-mips-con-cpi-ponderado-y-frecuencia-de-reloj]]

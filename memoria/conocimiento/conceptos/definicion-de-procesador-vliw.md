@@ -19,3 +19,5 @@ VLIW (Very Long Instruction Word): el compilador detecta paralelismo en tiempo d
 
 ## Ampliación (2026-11-18, )
 En VLIW (Very Long Instruction Word) el compilador agrupa operaciones independientes en una única instrucción larga (palabra de instrucción muy larga) que se ejecuta en paralelo en múltiples unidades funcionales. El hardware no necesita lógica compleja de despacho dinámico ni renombrado; la planificación es estática en tiempo de compilación. La opción correcta es b).
+
+Relacionado: [[vliw-el-compilador-empaqueta-varias-operaciones-en-una-instr]] · [[caracteristicas-clave-de-procesadores-vliw]] · [[diferencia-fundamental-vliw-vs-superescalar-compilador-vs-ha]]

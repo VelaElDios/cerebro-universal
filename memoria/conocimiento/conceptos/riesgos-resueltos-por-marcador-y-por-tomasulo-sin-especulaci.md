@@ -17,4 +17,4 @@ El Marcador (Scoreboard) detecta y espera por riesgos RAW y WAW, pero no resuelv
 > Indica la respuesta correcta: a. La técnica de marcador resuelve los riesgos RAW y WAW b. La técnica de marcador resuelve los riesgos WAW y WAR c. La técnica de Tomasulo sin especulación resuelve los riesgos RAW y WAW d. La técnica de Tomasulo sin especulación resuelve los riesgos WAW y WAR
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[diferencia-scoreboard-vs-tomasulo-en-resolucion-de-hazards-s]] · [[gestion-de-riesgos-war-y-waw-en-tomasulo-pregunta-10]] · [[tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det]]

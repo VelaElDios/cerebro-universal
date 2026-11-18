@@ -16,3 +16,5 @@ Fracción mejorable f = 110/135 ≈ 0.8148. Speedup global deseado S = 2. Ley de
 
 > Supongamos que un programa tarda en ejecutarse 135 segundos de los cuales 110 los utilizo en operaciones de suma, ¿cuánto tengo que mejorar la velocidad de la suma para que el programa se ejecute al doble de velocidad?
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
+
+Relacionado: [[aplicacion-de-la-ley-de-amdahl-para-acelerar-una-fraccion-de]] · [[calculo-de-factor-de-mejora-con-ley-de-amdahl-pregunta-3-exa]] · [[aplicacion-de-la-ley-de-amdahl-para-speedup-global-mejorando]]

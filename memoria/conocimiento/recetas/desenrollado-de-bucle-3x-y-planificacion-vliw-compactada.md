@@ -33,3 +33,5 @@ Mejora: se reducen ciclos totales de ~3×7=21 a ~10-12 ciclos para 3 iteraciones
 
 > Desenrolla el bucle original 3 veces y planifícalo para el procesador VLIW del apartado anterior. Compacta el código VLIW lo máximo posible. Se pueden realizar reordenamientos, siempre que no afecten al resultado del programa.
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
+
+Relacionado: [[desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]] · [[planificacion-vliw-para-bucle-con-latencias-mem-2-add-d-1-mu]]

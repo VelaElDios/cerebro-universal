@@ -17,4 +17,4 @@ En planificación dinámica (Tomasulo, Scoreboard), las instrucciones se emiten 
 > La disponibilidad de los operandos que necesitan
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[planificacion-dinamica-tomasulo-orden-de-ejecucion-por-dispo]] · [[planificacion-dinamica-sin-especulacion-orden-de-ejecucion-d]] · [[planificacion-dinamica-sin-especulacion-emision-en-orden-eje]]

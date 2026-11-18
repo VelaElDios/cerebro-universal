@@ -22,4 +22,4 @@ La opción correcta: "There is a data dependency, through F2, in the same iterat
 > Select the correct option for the following loop and the ADD.D and S.D instructions: Loop: L.D F1, 0(R4) ADD.D F2, F1, F0 S.D F2, 0(R1) DADDUI R4, R4, #-8 BNEZ R4, Loop
 > — `repo:datos/temarios/AC/examenes/June2023.pdf`
 
-Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[analisis-de-dependencias-entre-instrucciones-de-punto-flotan]] · [[analisis-de-dependencias-en-bucle-mips-con-acceso-a-memoria]]

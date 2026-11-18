@@ -23,4 +23,4 @@ Estos parámetros permiten comparar exactamente las dos versiones (lista y vecto
 > constexpr std::size_t N = 20'000'000;
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_1_lista.cpp`
 
-Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]]
+Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[parametros-fijos-del-experimento-20-millones-de-lecturas-n-m]] · [[parametros-fijos-del-experimento-ilp-n-100m-tipo-double-valo]] · [[parametros-fijos-del-experimento-aos-soa-tarea-3-2]]

@@ -20,6 +20,6 @@ Ningún PR se integra si el CI está en rojo. El CI ejecuta las pruebas automát
 > PR al cerrar el hito, con el CI en verde / PR al terminar la tarea, con el CI en verde
 > — `repo:saas/CONTRIBUTING.md` (cita sin comprobar)
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[github-flow-como-modelo-de-ramificacion-del-proyecto]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

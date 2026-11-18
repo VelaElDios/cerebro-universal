@@ -16,3 +16,5 @@ Si la dirección y el sentido del salto se calculan en ID, la instrucción sigui
 
 > Tienen una penalización de 1 ciclo
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
+
+Relacionado: [[penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r]] · [[prediccion-fija-siempre-no-tomado-con-calculo-destino-en-id]] · [[penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re]]

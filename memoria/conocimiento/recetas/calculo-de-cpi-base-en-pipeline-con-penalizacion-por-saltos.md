@@ -17,4 +17,4 @@ Para calcular CPI base sin predicción (o predicción siempre-no-tomado): CPI = 
 > Tenemos un procesador segmentado con 5 etapas IF, ID, EX, MEM y WB, donde para una instrucción de salto condicional la dirección del salto es conocida al final de la etapa MEM y el sentido al final de la etapa EX, y para una instrucción de salto incondicional la dirección del salto es conocida al final de la etapa ID.
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
-Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[calculo-cpi-base-pipeline-5-etapas-con-saltos-sin-prediccion]] · [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]] · [[calculo-de-ciclos-de-penalizacion-por-salto-tomado-en-pipeli]]

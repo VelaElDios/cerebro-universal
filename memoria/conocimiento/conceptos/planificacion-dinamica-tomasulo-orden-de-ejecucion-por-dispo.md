@@ -17,4 +17,4 @@ En planificación dinámica (scoreboarding, Tomasulo), las instrucciones se emit
 > En las técnicas de planificación dinámica, el orden en que se ejecutan las instrucciones viene dado por: La disponibilidad de los operandos que necesitan
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]] · [[planificacion-dinamica-sin-especulacion-orden-de-ejecucion-d]] · [[planificacion-dinamica-sin-especulacion-emision-en-orden-eje]]

@@ -26,4 +26,4 @@ Reglas clave:
 > Complete the following instruction status table, indicating the cycles in which each step is performed (TOMASULO WITHOUT speculation):
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[pasos-para-rellenar-tabla-de-estado-de-instrucciones-emision]] · [[pasos-para-completar-tabla-de-ejecucion-tomasulo-issue-execu]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]]

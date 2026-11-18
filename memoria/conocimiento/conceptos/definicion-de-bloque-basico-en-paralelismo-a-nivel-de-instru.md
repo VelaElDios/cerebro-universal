@@ -17,7 +17,7 @@ Un basic block es una secuencia de instrucciones consecutivas sin saltos ni etiq
 > In the realm of instruction-level parallelism, the term \"basic block\" refers to: a) A sequence of branch instructions b) A sequence of instructions between two branch instructions c) A sequence of instructions between which there are no dependencies d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[que-es-un-bloque-basico-basic-block-en-ilp]] · [[definiciones-clave-basic-block-antidependencia-loop-unrollin]] · [[definicion-de-bloque-basico-test-ac-q7]]
 
 ## Ampliación (2026-11-18, )
 Un bloque básico es una secuencia de instrucciones consecutivas que no contiene saltos (ni condicionales ni incondicionales) en su interior, salvo posiblemente al final. Es la unidad básica para la planificación local y la predicción de saltos.

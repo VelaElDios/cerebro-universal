@@ -17,4 +17,4 @@ El Scoreboard detecta riesgos WAR y WAW (por falta de renombramiento) y resuelve
 > Pueden aparecer riesgos WAR y WAW, que obligan a detener la ejecución de instrucciones
 > — `repo:datos/temarios/AC/examenes/Enero2011.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]] · [[deteccion-de-riesgos-war-y-waw-en-marcador-y-bloqueo-de-escr]] · [[scoreboard-detiene-ejecucion-ante-hazards-war-y-waw]] · [[obtencion-de-operandos-y-deteccion-waw-war-en-scoreboard]]

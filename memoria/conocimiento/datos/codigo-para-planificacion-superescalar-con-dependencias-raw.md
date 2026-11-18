@@ -17,4 +17,4 @@ Dependencias en el código: RAW: (1->? ninguno usa R1 salvo quizás salto, pero 
 > LW   R1, 0(R0) / DADD R3, R5, R2 / DSUB R6, R7, R4 / LW   R2, 0(R10) / DSUB R9, R9, R2 / DADD R4, R4, R5 / DSUB R2, R2, R5
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]]
+Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]] · [[como-identificar-dependencias-en-el-codigo-del-problema-3-pa]] · [[planificacion-en-superescalar-grado-2-en-orden-fuera-de-orde]] · [[codigo-y-parametros-superescalar-examen-ac-junio-2013-p3]]

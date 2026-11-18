@@ -17,4 +17,4 @@ En este mecanismo, el hardware distingue instrucciones normales y especulativas.
 > The processor has a hardware/software cooperation mechanism that distinguishes between normal and speculative instructions. If the instruction that throws the exception is normal, the exception's service routine will terminate the program, but if it is speculative, the routine will return an undefined value (without aborting the execution).
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[tres-mecanismos-de-manejo-de-excepciones-para-instrucciones]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[tres-mecanismos-de-manejo-de-excepciones-para-instrucciones]] · [[mecanismo-cooperacion-hardware-software-sin-distincion-instr]] · [[funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es]]

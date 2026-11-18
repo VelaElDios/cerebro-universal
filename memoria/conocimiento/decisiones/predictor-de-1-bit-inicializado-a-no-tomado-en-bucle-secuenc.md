@@ -16,3 +16,5 @@ Para cada salto (B1, B2, B3) hay un predictor de 1 bit independiente inicializad
 
 > a) Predictores de 1 bit, inicializados a no tomado.
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
+
+Relacionado: [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[calculo-de-tasa-de-acierto-con-predictor-de-1-bit-inicializa]] · [[predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est]]

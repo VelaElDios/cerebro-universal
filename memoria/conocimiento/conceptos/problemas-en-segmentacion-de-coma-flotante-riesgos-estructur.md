@@ -17,4 +17,4 @@ Cuatro problemas principales al segmentar FP con unidades de latencia variable: 
 >    Aparecen riesgos estructurales (acceso a división, escritura MEM)           Mayor penalización de los riesgos RAW (etapas EX largas)           Pueden aparecer riesgos WAW           Finalización fuera de orden (tratamiento de excepciones)
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf`
 
-Relacionado: [[tabla-de-latencia-e-intervalo-de-iniciacion-por-unidad-funci]]
+Relacionado: [[tabla-de-latencia-e-intervalo-de-iniciacion-por-unidad-funci]] · [[tipos-de-dependencia-y-riesgos-asociados-en-segmentacion]] · [[tipos-de-riesgos-en-pipeline-estructurales-datos-control]] · [[tecnicas-estaticas-basicas-para-reducir-detenciones-en-pipel]]

@@ -17,4 +17,4 @@ La planificación dinámica (scoreboard, Tomasulo) permite que el hardware emita
 > En la planificación dinámica de instrucciones: a) El compilador reordena las instrucciones para reducir las dependencias b) El compilador predice los saltos para reducir las dependencias c) El hardware reordena las instrucciones para reducir las dependencias d) El hardware especula instrucciones para reducir las dependencias
 > — `repo:datos/temarios/AC/examenes/Enero2017.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[planificacion-dinamica-tomasulo-orden-de-ejecucion-por-dispo]] · [[planificacion-dinamica-orden-de-ejecucion-por-disponibilidad]] · [[diferencia-scoreboard-vs-tomasulo-en-resolucion-de-hazards-s]]

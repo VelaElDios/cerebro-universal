@@ -40,7 +40,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «superscalar» (este archi
 - 💡 [[memoria/conocimiento/conceptos/planificacion-dinamica-sin-especulacion-emision-en-orden-eje|Planificación dinámica sin especulación: emisión en orden, ejecución y finalización fuera de orden]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/procesador-a-superscalar-mips64-4-issue-2-enteros-2-fp|Procesador A: Superscalar MIPS64 4-issue (2 enteros + 2 FP)]]
 - 💡 [[memoria/conocimiento/conceptos/procesadores-superscalar-son-maquinas-sisd|Procesadores superscalar son máquinas SISD]]
-- 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]]
 - 💡 [[memoria/conocimiento/conceptos/superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr|Superescalar 3-vías con tuberías dedicadas por tipo de instrucción]]
 - 💡 [[memoria/conocimiento/conceptos/ventana-de-instrucciones-almacena-instrucciones-activas-deco|Ventana de instrucciones almacena instrucciones activas, decodificadas pero no finalizadas]]
 - 💡 [[memoria/conocimiento/conceptos/ventana-de-instrucciones-en-superscalar-instrucciones-decodi|Ventana de instrucciones en superscalar: instrucciones decodificadas y renombradas no emitidas aún]] · ⚠️ propuesto

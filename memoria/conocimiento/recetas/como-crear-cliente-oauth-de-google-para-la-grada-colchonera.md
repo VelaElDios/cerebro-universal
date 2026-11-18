@@ -21,6 +21,6 @@ Temas: [[correo]] · [[grada-colchonera]] · [[oauth]] · [[saas]]
 > En **Clientes → Crear cliente**: - Tipo de aplicación: **Aplicación web**. Nombre: `La Grada Colchonera web`. - **URIs de redireccionamiento autorizados** (añade las dos): - `https://la-grada-colchonera-1081564062572.europe-southwest1.run.app/api/auth/google/callback` - `http://localhost:3000/api/auth/google/callback`
 > — `repo:saas/docs/hito4-configuracion.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte]] · [[url-base-de-la-aplicacion-la-grada-colchonera-en-cloud-run]] · [[como-probar-la-configuracion-en-local-hito-4]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

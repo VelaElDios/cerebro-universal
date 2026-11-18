@@ -17,4 +17,4 @@ Para cada salto (B1, B2, B3) se mantiene un bit de predicción (1=Taken, 0=Not T
 > Detail the behavior of a one-level predictor that assigns 1 bit to each branch instruction. Consider that the initial state of the predictor is the one shown in the first row of the table.
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
 
-Relacionado: [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]]
+Relacionado: [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]] · [[simulacion-de-predictor-de-un-nivel-con-contadores-de-satura]] · [[simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos]] · [[simulacion-de-predictor-de-saltos-de-1-nivel-con-2-bits-cont]]

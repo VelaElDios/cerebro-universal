@@ -20,4 +20,4 @@ Solo se pueden predecir saltos que ya están en la BTB; los nuevos saltos se asu
 > Predicción implícita (sin bits de predicción) Aplicable con un único bit de predicción – si la instrucción de salto está en la BTB, el salto se predice como tomado – si la instrucción de salto no está en la BTB, el salto se predice como no tomado
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf`
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits]] · [[limitacion-de-la-btb-solo-predice-saltos-ya-conocidos]]

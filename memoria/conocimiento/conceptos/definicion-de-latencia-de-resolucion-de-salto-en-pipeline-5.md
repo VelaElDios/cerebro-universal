@@ -17,4 +17,4 @@ En este pipeline de 5 etapas: Salto condicional: dirección objetivo lista al fi
 > Tenemos un procesador segmentado con 5 etapas IF, ID, EX, MEM y WB, donde para una instrucción de salto condicional la dirección del salto es conocida al final de la etapa MEM y el sentido al final de la etapa EX, y para una instrucción de salto incondicional la dirección del salto es conocida al final de la etapa ID.
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re]] · [[calculo-de-ciclos-de-penalizacion-por-salto-tomado-en-pipeli]] · [[calculo-de-penalizacion-de-salto-condicional-en-pipeline-de]]

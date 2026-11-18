@@ -22,3 +22,5 @@ Definición y significado del punto de inflexión (knee) en el modelo Roofline:
 
 > I_KNEE = GFLOPS_MAX / BW_DRAM                # Punto de inflexión (FLOPs/Byte)
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py`
+
+Relacionado: [[punto-de-inflexion-knee-del-modelo-roofline-mononucleo]] · [[punto-de-inflexion-ridge-point-en-el-modelo-roofline]] · [[interpretacion-de-regiones-memory-bound-vs-compute-bound-en]]

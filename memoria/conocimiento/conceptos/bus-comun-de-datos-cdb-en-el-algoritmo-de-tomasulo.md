@@ -17,4 +17,4 @@ El CDB es un bus de difusión (broadcast) por el que **todas las unidades funcio
 > The Common Data Bus (CDB) used in the Tomasulo's scheme... a) Is the bus where the results of the functional units and the memory accesses are sent.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf`
 
-Relacionado: [[contenido-de-una-estacion-de-reserva-en-tomasulo-test-ac-q11]]
+Relacionado: [[contenido-de-una-estacion-de-reserva-en-tomasulo-test-ac-q11]] · [[bus-comun-de-datos-cdb-en-tomasulo-difunde-resultados-de-uf]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[tomasulo-resultados-via-common-data-bus-cdb]]

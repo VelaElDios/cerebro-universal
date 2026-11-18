@@ -17,4 +17,4 @@ Sin BTB: Penalidad por salto tomado = ciclos perdidos. Dirección fin ID, sentid
 > a) Calcula el CPI del sistema sin BTB b) ¿Cuál es la mejora de prestaciones al usar la BTB?
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[evaluacion-de-rendimiento-de-btb-con-politica-de-solo-saltos]] · [[mejora-prestaciones-btb-con-politica-solo-saltos-tomados-y-a]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]]

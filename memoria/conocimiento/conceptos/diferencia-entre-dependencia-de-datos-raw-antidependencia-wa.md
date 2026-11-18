@@ -17,4 +17,4 @@ a) = RAW (dependencia verdadera, flow dependence): i escribe, j lee. b) = WAR (a
 > Existe una dependencia de datos entre dos instrucciones i y j (j lógicamente después de i) si a) La instrucción i produce un resultado que usa la instrucción j b) La instrucción j escribe sobre un registro o una posición de memoria que lee la instrucción i c) Las dos instrucciones i y j escriben sobre el mismo registro o posición de memoria
 > — `repo:datos/temarios/AC/examenes/Noviembre2011.pdf`
 
-Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord]]
+Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord]] · [[definicion-de-dependencia-de-datos-raw-entre-instrucciones]] · [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[definiciones-de-dependencias-de-datos-raw-war-antidependenci]]

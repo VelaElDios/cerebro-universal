@@ -17,4 +17,4 @@ El BHR guarda el historial global/locale de saltos tomados/no tomados. Para un p
 > To implement the BHR of a (2,2) predictor we use: c) A shift register
 > — `repo:datos/temarios/AC/examenes/January2021.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[registro-de-historial-de-saltos-bhr-se-implementa-como-regis]] · [[implementacion-predictor-correlacionado-m-n-con-bhr-y-bht]] · [[predictor-correlacionante-de-dos-niveles-1-1-con-bhr-global]]

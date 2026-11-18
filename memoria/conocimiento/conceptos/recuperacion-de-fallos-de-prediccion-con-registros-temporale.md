@@ -17,4 +17,4 @@ Durante la ejecución especulativa, los resultados se guardan en registros tempo
 > Los resultados de esas instrucciones especulativas se almacenan en registros temporales – registros de renombramiento, o – buffer de reordenamiento (Tema 5) – Las instrucciones no modifican los contenidos de los registros de la arquitectura ni de la memoria
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[costes-de-recuperacion-de-fallos-de-prediccion-por-procesado]] · [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]]
+Relacionado: [[costes-de-recuperacion-de-fallos-de-prediccion-por-procesado]] · [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]] · [[recuperacion-ante-fallo-de-prediccion-de-salto-misprediction]] · [[mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt]] · [[recuperacion-ante-fallo-de-prediccion-descartar-resultados-e]]

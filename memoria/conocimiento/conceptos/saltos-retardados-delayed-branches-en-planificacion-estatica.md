@@ -20,3 +20,5 @@ Temas: [[ac]] · [[control-hardware]] · [[delayed-branch]] · [[planificacion-e
 
 > 3.1.4 Saltos retardados • Los saltos tienen un retardo de un ciclo
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[salto-retardado-delayed-branch-en-planificacion-estatica]] · [[uso-de-ranura-de-retardo-de-1-ciclo-en-superescalar-para-ocu]] · [[salto-retardado-delayed-branch-en-risc-v-implicaciones-en-pl]]

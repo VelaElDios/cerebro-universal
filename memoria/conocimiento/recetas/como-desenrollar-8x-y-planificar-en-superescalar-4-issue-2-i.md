@@ -16,3 +16,5 @@ Bucle original: L.D F10,0(R2) | ADD.D F8,F10,F4 | S.D F8,0(R2) | DADDUI R2,R2,-8
 
 > Desenrolla el código 8 veces y planifícalo lo más compactamente posible para el superescalar planteado indicando las instrucciones emitidas en cada ciclo.
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf`
+
+Relacionado: [[desenrollado-de-bucle-8-veces-para-superscalar-con-latencias]] · [[desenrollado-6-y-renombrado-de-registros-pf-para-superescala]] · [[planificacion-en-superescalar-3-vias-entero-salto-memoria-fp]]

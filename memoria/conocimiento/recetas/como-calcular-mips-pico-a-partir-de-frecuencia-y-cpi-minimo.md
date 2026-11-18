@@ -17,4 +17,4 @@ MIPS pico = Frecuencia (MHz) / CPI_mínimo. En el ejemplo: 2000 MHz / 3 ciclos =
 > En el repertorio de instrucciones de un computador que tiene una frecuencia de 2 GHz nos encontramos con instrucciones de 3, 4 y 5 ciclos. Entonces, el valor de MIPS pico es:
 > — `repo:datos/temarios/AC/examenes/Noviembre2011.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[como-calcular-mips-pico-peak-mips-eligiendo-la-instruccion-m]] · [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-f]] · [[calculo-de-mips-a-partir-de-mezcla-de-instrucciones-cpi-y-fr]]

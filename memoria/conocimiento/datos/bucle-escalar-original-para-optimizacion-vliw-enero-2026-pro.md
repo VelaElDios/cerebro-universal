@@ -17,4 +17,4 @@ Temas: [[ac]] · [[examen]] · [[vliw]]
 > El código ensamblador RISC-V original ("escalar") es: Loop: fld f1, 0(x1) #I1 Carga X(i) fadd.d f2, f1, f0 #I2 Suma: aux= X(i) + K (f0 es constante K) fmul.d f3, f2, f1 #I3 Multiplicación: res = aux * X(i) fsd f3, 0(x1) #I4 Almacena en vector X addi x1, x1, -8 #I5 Decrementa puntero bnez x1, Loop #I6 Salta si no ha terminado
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf`
 
-Relacionado: [[especificacion-vliw-1-0-para-examen-enero-2026-problema-3]] · [[latencias-vliw-1-0-para-examen-enero-2026-problema-3]]
+Relacionado: [[especificacion-vliw-1-0-para-examen-enero-2026-problema-3]] · [[latencias-vliw-1-0-para-examen-enero-2026-problema-3]] · [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]] · [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame]]

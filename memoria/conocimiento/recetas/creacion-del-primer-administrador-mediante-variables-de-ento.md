@@ -25,4 +25,6 @@ En `src/bootstrap.js` (ejecutado al iniciar `src/app.js`):
 > Con las variables `ADMIN_EMAIL` y `ADMIN_PASSWORD` al arrancar (`ensureAdmin`): no hay contraseñas en el código y no hace falta tocar la base de datos a mano
 > — `repo:saas/docs/revision-entrega.md`
 
+Relacionado: [[arranque-de-la-aplicacion-configuracion-migraciones-y-primer]] · [[seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage]] · [[como-probar-la-configuracion-en-local-hito-4]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -17,4 +17,4 @@ Dado speedup S, fracción f, tiempo T: S = T / (f*T/k + (1-f)*T) = 1 / (f/k + 1-
 > Una ganancia del 50% significa un speedup de 1.5. Entonces, 1.5 = 15 / (15×0.4/x + 15×0.6) → x=6
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab]] · [[despeje-de-fraccion-de-tiempo-mejorable-dado-speedup-objetiv]]
+Relacionado: [[calculo-de-speedup-maximo-con-ley-de-amdahl-fraccion-mejorab]] · [[despeje-de-fraccion-de-tiempo-mejorable-dado-speedup-objetiv]] · [[como-calcular-el-factor-de-mejora-necesario-k-para-un-speedu]] · [[como-calcular-factor-de-mejora-necesario-segun-ley-de-amdahl]]

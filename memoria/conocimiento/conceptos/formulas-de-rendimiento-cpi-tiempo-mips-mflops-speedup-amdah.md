@@ -17,4 +17,4 @@ Resumen de fórmulas estándar que aparecen al final del examen (texto parcialme
 > 𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡𝑡 𝑑𝑑𝑑𝑑 𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒𝑒ó𝑛𝑛 = 𝑛𝑛ú𝑚𝑚𝑚𝑚𝑚𝑚𝑚𝑚 𝑑𝑑𝑑𝑑 𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖𝑖 × 𝐶𝐶𝐶𝐶𝐶𝐶 × 𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑ó𝑛𝑛 𝑑𝑑𝑑𝑑 𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐 𝑑𝑑𝑑𝑑 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-speedup-vliw-vs-escalar-para-examen-enero-2026-probl]]
+Relacionado: [[calculo-speedup-vliw-vs-escalar-para-examen-enero-2026-probl]] · [[calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]] · [[speedup-con-cambio-simultaneo-de-cpi-y-frecuencia-de-reloj]]

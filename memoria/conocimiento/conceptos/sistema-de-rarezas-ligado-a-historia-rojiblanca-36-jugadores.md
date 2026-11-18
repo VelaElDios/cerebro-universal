@@ -23,6 +23,6 @@ Temas: [[diseno-juego]] · [[donetonic]] · [[grada-colchonera]] · [[progresion
 > - 36 jugadores en cuatro rarezas (Común, Raro, Épico, Leyenda) según su historia en el club. - Más rareza = más habilidades aprendibles y menos probabilidad en un contrato.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[sistema-de-rarezas-y-36-jugadores-pbi-p38]] · [[catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]
+Relacionado: [[sistema-de-rarezas-y-36-jugadores-pbi-p38]] · [[catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

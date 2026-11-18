@@ -17,4 +17,4 @@ En el algoritmo de Tomasulo, cada estación de reserva guarda la operación a re
 > Las estaciones de reserva almacenan: a) El estado de los registros del sistema b) Etiquetas para el control de los riesgos c) El estado de una instrucción d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[contenido-de-una-estacion-de-reserva-en-tomasulo]]
+Relacionado: [[contenido-de-una-estacion-de-reserva-en-tomasulo]] · [[que-es-una-estacion-de-reserva-en-el-algoritmo-de-tomasulo]] · [[informacion-almacenada-en-estaciones-de-reserva-de-tomasulo]]

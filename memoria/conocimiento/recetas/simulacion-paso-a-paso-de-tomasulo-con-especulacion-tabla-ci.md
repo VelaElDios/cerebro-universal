@@ -17,4 +17,4 @@ Metodología: Ciclo a ciclo. Etapa Emisión (Issue): asignar ROB, RS (si hay), L
 > Detalla la ejecución de la secuencia de instrucciones mostrada en la siguiente tabla al emplear el algoritmo de Tomasulo con especulación. Para ello, en cada fila debes indicar el ciclo de inicio y de fin (en su caso) de cada etapa. Si alguna etapa debe detenerse durante uno o más ciclos, debes indicar claramente (en la celda correspondiente) la causa de esta detención.
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf`
 
-Relacionado: [[buffer-de-carga-en-tomasulo-especulativo]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]]
+Relacionado: [[buffer-de-carga-en-tomasulo-especulativo]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[pasos-para-simular-tomasulo-especulativo-con-rob-y-restricci]] · [[como-resolver-tabla-de-estado-en-tomasulo-con-rob-y-especula]] · [[como-abordar-la-simulacion-tomasulo-con-rob-para-examen-ac]]

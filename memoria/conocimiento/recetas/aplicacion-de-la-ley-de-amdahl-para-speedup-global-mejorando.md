@@ -16,3 +16,5 @@ Ley de Amdahl: Speedup_global = 1 / ((1 - f) + f / k), donde f = fracción de ti
 
 > Let us suppose that a program takes 150 seconds to run of which 100 are used in addition operations. How much do we have to improve the speed of the addition for the program to run at twice the speed?
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
+
+Relacionado: [[aplicacion-de-la-ley-de-amdahl-para-acelerar-una-fraccion-de]] · [[ley-de-amdahl-aplicada-a-mejora-de-una-fraccion-del-tiempo-d]] · [[calculo-de-mejora-necesaria-con-ley-de-amdahl-fraccion-mejor]]

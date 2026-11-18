@@ -17,4 +17,4 @@ Penalidad en ciclos de reloj por fallo de predicción (misprediction penalty): A
 > En general, recuperarse de un fallo en predicción es caro – 4 a 9 ciclos en el Alpha 21264 – 11 o más ciclos en el Pentium II – Hasta más de 31 ciclos en el Pentium IV
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]]
+Relacionado: [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]] · [[penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup]] · [[mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt]] · [[definicion-de-latencia-de-salto-y-penalizacion-por-fallo-de]]

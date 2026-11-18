@@ -17,4 +17,4 @@ Ejercicio 12: vector disperso de 8 elementos (0,7,0,0,0,0,2,0). Código: count: 
 > El siguiente código RISC-V cuenta (en x4) el número de elementos no nulos que hay en un vector disperso almacenado en memoria.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[analisis-en-estado-estable-de-predictor-2-bits-vs-correlacio]] · [[predictor-correlacionado-2-1-para-bucle-de-conteo-de-caracte]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]]

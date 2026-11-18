@@ -16,3 +16,5 @@ Calcula `vueltas = (N / BLOQUE) * REPETICIONES` y ejecuta `for (r=0; r<vueltas; 
 
 > // ============================================================================\n// PATRÓN 2: ACCESO TEMPORAL (Localidad Temporal Máxima)\n// Hace EXACTAMENTE el mismo número total de sumas que el acceso secuencial:\n// vueltas * BLOQUE = ((N / BLOQUE) * REPETICIONES) * BLOQUE = N * REPETICIONES.\n// Pero.... solo lee repetidamente los primeros BLOQUE elementos.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_patrones.cpp` (cita sin comprobar)
+
+Relacionado: [[patron-secuencial-localidad-espacial-y-prefetcher-hardware]] · [[tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t]] · [[como-fusionar-dos-bucles-en-uno-solo-para-aprovechar-localid]]

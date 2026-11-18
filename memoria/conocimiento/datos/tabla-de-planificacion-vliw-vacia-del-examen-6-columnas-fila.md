@@ -22,4 +22,4 @@ Cada fila representa un ciclo de reloj. El estudiante debe colocar cada instrucc
 > a) Schedule the loop for this VLIW processor, using this table (you may not need all the table rows):       INT1              INT2             MEM1              MEM2             FP ADD           FP MUL
 > — `repo:datos/temarios/AC/examenes/January2017.pdf`
 
-Relacionado: [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]]
+Relacionado: [[codigo-del-bucle-a-planificar-en-vliw-examen-ac-enero-2017]] · [[configuracion-vliw-del-examen-ac-enero-2017-6-unidades-laten]] · [[planificacion-vliw-de-bucle-con-6-unidades-funcionales-exame]] · [[formato-de-tabla-de-ayuda-para-planificacion-ciclo-emision-c]]

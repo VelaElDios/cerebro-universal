@@ -17,4 +17,4 @@ Estados 2-bit: 00=strong NT, 01=weak NT, 10=weak T, 11=strong T. Inicial weak NT
 > Indicate the sequence of Hits (H) and Misses (M) for branch B1 using a one level 2-bit predictor initialized to weakly not taken.
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[secuencia-h-m-para-predictor-correlacionado-1-1-en-bucle-de]] · [[secuencia-de-aciertos-fallos-en-predictor-de-2-bits-iniciali]] · [[simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos]]

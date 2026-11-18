@@ -22,4 +22,4 @@ Características del procesador VLIW del enunciado:
 > Processor B. It is a VLIW processor, capable of issuing in each cycle four operations per instruction. It does not impose restrictions on the type of operations that can be issued.
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
 
-Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]
+Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[procesador-b-vliw-4-issue-sin-restricciones-de-tipo-con-plan]] · [[planificacion-en-vliw-4-operaciones-sin-restricciones-de-tip]] · [[planificacion-estatica-agresiva-para-vliw-4-issue-con-renomb]]

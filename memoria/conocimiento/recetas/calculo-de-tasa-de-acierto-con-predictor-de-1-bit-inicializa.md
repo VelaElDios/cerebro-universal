@@ -17,4 +17,4 @@ Para cada salto (B1 y B2 por separado): Predictor 1 bit: estado inicial T (tomad
 > b) ¿Qué tasa de acierto tendríamos si asociamos a cada salto un predictor de 1 bit inicializado a tomado? ¿Y si asociamos a cada salto un predictor de 3 bits inicializado a 011? Justifica las respuestas. ¿Cómo quedarían los predictores una vez finalizado el recorrido?
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[tasa-de-aciertos-de-predictor-1-bit-inicializado-a-0-con-sal]] · [[predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est]]

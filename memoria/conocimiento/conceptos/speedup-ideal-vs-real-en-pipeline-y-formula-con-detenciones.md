@@ -17,4 +17,4 @@ El speedup teórico máximo es el número de etapas (p. ej., 5× para 5 etapas).
 > Incremento ideal de velocidad = número de etapas • Idealmente: → Un pipeline de 5 etapas será 5 veces más rápida • En la realidad es menor → Las etapas pueden estar mal equilibradas → Existe una sobrecarga adicional • “En el mejor de los casos podrá ejecutarse una instrucción por ciclo” • Speedup = Ciclo sin segmentación / (1 + Ciclos de detención por instrucción * Ciclo segmentado)
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-y-proposito-de-la-segmentacion-pipeline]]
+Relacionado: [[definicion-y-proposito-de-la-segmentacion-pipeline]] · [[calculo-de-speedup-para-bucle-desenrollado-en-pipeline-con-h]] · [[ventaja-real-del-pipeline-mayor-throughput-instrucciones-uni]] · [[calculo-de-cpi-en-pipeline-con-stalls-y-tras-optimizacion]]

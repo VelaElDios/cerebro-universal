@@ -17,4 +17,4 @@ Frecuencia (Hz) = 1 / Período (segundos). Período = 1 / Frecuencia. Ejemplo: 3
 > 𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓𝑓 𝑑𝑑𝑑𝑑 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟 = 1 / 𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑𝑑ó𝑛 𝑑𝑑𝑑𝑑 𝑐𝑐𝑐𝑐𝑐𝑐𝑐𝑐 𝑑𝑑 𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟𝑟
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Formulas.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[como-calcular-ciclos-de-reloj-de-cpu-a-partir-de-instruccion]] · [[ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]]

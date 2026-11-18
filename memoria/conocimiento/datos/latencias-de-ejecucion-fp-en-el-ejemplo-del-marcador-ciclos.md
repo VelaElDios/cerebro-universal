@@ -17,4 +17,4 @@ Tiempos observados en la simulación (ciclos relativos al inicio): fld: emisión
 > fdiv.d f10, f0, f6 8
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo-cic]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-de-marcador]] · [[ejemplo-de-simulacion-del-marcador-con-instrucciones-de-punt]]

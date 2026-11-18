@@ -17,4 +17,4 @@ El problema 1 pide aplicar segmentación software a un bucle MIPS64 de 6 instruc
 > Aplica segmentación software al siguiente fragmento de código de MIPS64 (incluye el código start-up y finish-up)
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[estructura-y-funcionamiento-de-predictor-hibrido-de-torneo-c]] · [[segmentacion-software-software-pipelining-para-bucle-encript]] · [[segmentacion-software-software-pipelining-para-bucle-conteo]] · [[conversion-de-codigo-vliw-compactado-a-bucle-mips64-segmenta]]

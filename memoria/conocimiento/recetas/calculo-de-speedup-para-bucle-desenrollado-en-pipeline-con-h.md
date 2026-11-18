@@ -16,3 +16,5 @@ Speedup = (Ciclos_totales_código_base) / (Ciclos_totales_código_optimizado). C
 
 > Calcula el Speedup obtenido respecto al código base. Indica y explica los cálculos realizados.
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf`
+
+Relacionado: [[metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi]] · [[speedup-teorico-del-desenrollado-4x-frente-a-codigo-original]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]]

@@ -16,3 +16,5 @@ Las tres arquitecturas (ARM, RISC-V, Alpha) son arquitecturas load/store: las in
 
 > Which of the following is true? a. ARM processors use a load/store architecture b. RISC-V processors use a load/store architecture c. Alpha processors use a load/store architecture d. All statements are true
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
+
+Relacionado: [[arquitectura-que-implementa-instrucciones-predicadas-de-form]] · [[isa-base-risc-v-rv64g-caracteristicas-principales]] · [[distincion-entre-arquitectura-organizacion-y-tecnologia-en-p]]

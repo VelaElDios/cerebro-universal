@@ -17,4 +17,4 @@ En un superescalar de grado 2 se pueden emitir hasta 2 instrucciones por ciclo. 
 > El procesador invierte 2 ciclos para la etapa MEM en las cargas y 2 ciclos para completar la etapa EX de las operaciones aritméticas. Además, implementa adelantamiento.
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[planificacion-en-superescalar-grado-2-con-sin-renombramiento]] · [[latencias-y-grado-de-superescalaridad-del-problema-3-ac-juni]] · [[latencias-de-etapas-memoria-y-ejecucion-en-superescalar-exam]]

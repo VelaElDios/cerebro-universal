@@ -17,4 +17,4 @@ Flujo de control con valores iniciales: R3=0 → BEQZ R3,salto1 SALTA a Salto1 (
 > LW*   R1, 0(R2)                ; Carga especulativa\n                 BEQZ R3, salto1\n                 DADDI R1, R4, #8\n     Salto1:     LW*   R5, 0(R2)                ; Carga especulativa\n                 BEQZ R6, salto2\n                 DADDI R5, R7, #-1\n     Salto2:     DADD R8, R1, R5\n                 SW    R8, 0(R2)\n                 DADDI R9, R0, #1
 > — `repo:datos/temarios/AC/examenes/Enero2014.pdf` (cita sin comprobar)
 
-Relacionado: [[estado-inicial-de-registros-y-restriccion-memoria-direccion]] · [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]]
+Relacionado: [[estado-inicial-de-registros-y-restriccion-memoria-direccion]] · [[tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero]] · [[especulacion-estatica-con-cargas-especulativas-lw-en-mips64]] · [[como-resolver-el-problema-3-de-especulacion-con-poison-bits]]

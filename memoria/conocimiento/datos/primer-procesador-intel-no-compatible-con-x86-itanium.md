@@ -17,4 +17,4 @@ Itanium (arquitectura IA-64 / EPIC) fue el primer procesador de Intel que rompi�
 > Intel's first processor not compatible with the x86 family was: a. XEON b. Itanium c. i7 d. All are false
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[itanium-ia64-primer-procesador-intel-no-compatible-con-x86]] · [[ejemplos-de-misma-isa-distinta-organizacion-y-viceversa-fami]]

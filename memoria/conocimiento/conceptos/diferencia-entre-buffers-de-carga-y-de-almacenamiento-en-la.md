@@ -19,4 +19,4 @@ La tabla «Buffers de carga/almac.» tiene columnas: Nombre, Ocupada, Direc., Qi
 > Buffers de carga/almac.                                      Estaciones de reserva
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[flujo-de-datos-de-carga-multiplicacion-almacenamiento-en-buf]]
+Relacionado: [[flujo-de-datos-de-carga-multiplicacion-almacenamiento-en-buf]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[gestion-de-buffers-de-carga-almacenamiento-con-direcciones-d]] · [[uso-de-buffers-de-carga-en-tomasulo-load-buffers]]

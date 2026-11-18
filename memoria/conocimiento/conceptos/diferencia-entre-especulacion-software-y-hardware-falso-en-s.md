@@ -16,3 +16,5 @@ La especulación software (compile-time) es el compilador quien apuesta por una 
 
 > For the software speculation (without hardware support), which of the following sentences is false? During the execution of a program, the processor bets for a branch direction and the instructions of this block are executed speculatively. These instructions will be valid when the branch result is finally known.
 > — `repo:datos/temarios/AC/examenes/January2023.pdf (trozo 1 de 2)` (cita sin comprobar)
+
+Relacionado: [[definicion-de-instruccion-especulativa]] · [[instruccion-especulativa-ejecutada-antes-de-saber-si-realmen]] · [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]]

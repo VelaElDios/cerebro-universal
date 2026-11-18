@@ -17,6 +17,6 @@ Clave bibliográfica `rfc6749`. Referencia oficial del framework OAuth 2.0 usada
 > Hardt, D. (ed.) (2012). *The OAuth 2.0 Authorization Framework*. RFC 6749, Internet Engineering Task Force (IETF), octubre de 2012
 > — `../memoria-procesos/fuentes/bibliografia-extra.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte]] · [[login-con-google-oauth-2-0-codigo-de-autorizacion-state-en-s]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

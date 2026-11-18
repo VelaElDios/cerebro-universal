@@ -17,4 +17,4 @@ Pasos para calcular la penalización (huecos de retardo) asumiendo que el cauce 
 > Para una segmentación de 5 etapas (IF, ID, EX, MEM, WB) las penalizaciones son: Sentido Salto EX, Dir. salto MEM, Penalización 3 Ciclos; Sentido Salto ID, Dir. salto ID, Penalización 1 Ciclos; Sentido Salto EX, Dir. salto ID, Penalización 2 Ciclos
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]]
+Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re]] · [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]] · [[calculo-cpi-base-pipeline-5-etapas-con-saltos-sin-prediccion]]

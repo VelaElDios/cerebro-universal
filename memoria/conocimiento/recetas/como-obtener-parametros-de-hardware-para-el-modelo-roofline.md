@@ -5,9 +5,9 @@ temas: ["ac", "benchmark", "hardware", "linux", "lscpu", "stream"]
 claves: ["lscpu", "STREAM", "FRECUENCIA_GHZ", "BW_DRAM", "TODO1"]
 proyectos: []
 fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[ac]] · [[benchmark]] · [[hardware]] · [[linux]] · [[lscpu]] · [[stream]]
@@ -25,5 +25,7 @@ Procedimiento para rellenar TODO1 con datos reales de la máquina:
    ```
 Nota: La frecuencia debe ser la **máxima turbo sostenida** del núcleo, no la base. STREAM debe correr con afinidad a un solo núcleo para coincidir con el modelo mononúcleo.
 
-> FRECUENCIA_GHZ = 4.9     # Tu frecuencia en GHz (de lscpu) ... BW_DRAM = 26.68          # Tus GB/s de la RAM (de STREAM)
-> — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py` (cita sin comprobar)
+> FRECUENCIA_GHZ = 4.9 # Tu frecuencia en GHz (de lscpu) BW_DRAM = 26.68 # Tus GB/s de la RAM (de STREAM)
+> — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea2_1_pintarRoofLin_conPunto.py`
+
+Relacionado: [[como-obtener-los-parametros-reales-de-tu-maquina-para-el-roo]] · [[como-generar-el-modelo-roofline-del-procesador-con-lscpu-y-s]] · [[valores-de-ejemplo-para-cpu-del-laboratorio-frecuencia-bw-pu]]

@@ -17,4 +17,4 @@ Datos concretos del ejercicio: array en memoria desde R2: [0,1,0,2,0,3]. R1=6 (c
 > assuming that the sequence is 0, 1, 0, 2, 0, 3 and that R1 has been previously initialized with the value 6 (the length of the sequence).
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
 
-Relacionado: [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]]
+Relacionado: [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]] · [[codigo-mips64-y-secuencia-de-entrada-para-problema-2-conteo]] · [[etiquetado-de-saltos-b1-b2-b3-en-bucle-contador-ceros-pares]]

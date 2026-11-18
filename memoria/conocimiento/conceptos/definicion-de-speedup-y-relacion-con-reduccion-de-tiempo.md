@@ -16,3 +16,5 @@ Speedup = Tiempo_original / Tiempo_mejorado. Una reducción del 30% en tiempo si
 
 > Al mejorar el hardware de un computador hemos obtenido una reducción del 30% en el tiempo de ejecución de un determinado programa de prueba
 > — `repo:datos/temarios/AC/examenes/Noviembre2011.pdf`
+
+Relacionado: [[calculo-de-speedup-reduccion-25-tiempo-speedup-33-3]] · [[interpretacion-de-speedup-del-200]] · [[speedup-por-ley-de-amdahl-con-mejora-10x-usada-20-del-tiempo]]

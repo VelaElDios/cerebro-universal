@@ -22,4 +22,4 @@ Latencias explícitas del enunciado (Ejercicio 2):
 > The load and store execution stage takes 1 cycle. The floating-point multiplication (FP) execution step takes 6 cycles. The floating-point addition (FP) execution step takes 4 cycles.
 > — `repo:datos/temarios/AC/examenes/January2022.pdf` (cita sin comprobar)
 
-Relacionado: [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]]
+Relacionado: [[parametros-de-simulacion-tomasulo-especulativo-para-mips64-e]] · [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]] · [[latencias-de-ejecucion-fp-en-configuracion-examen-junio-2012]] · [[latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d]] · [[parametros-de-temporizacion-del-examen-ac-june-2022-exercise]]

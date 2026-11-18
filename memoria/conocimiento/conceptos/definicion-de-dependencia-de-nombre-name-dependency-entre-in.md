@@ -17,4 +17,4 @@ La dependencia de nombre ocurre cuando dos instrucciones usan el mismo registro/
 > Given two instructions i and j (j logically after i), there is a name dependency if:
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[antidependencia-war-siempre-genera-hazard-war]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[antidependencia-war-siempre-genera-hazard-war]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[definicion-de-dependencia-de-nombre-anti-y-salida]] · [[name-dependency-dependencia-de-nombre-incluye-waw-y-war]] · [[definicion-de-dependencia-de-nombre-waw-y-war]]

@@ -16,3 +16,5 @@ Para tablas que ocupan varias páginas, usar entorno `longtable`. En las última
 
 > Las tablas largas van en `longtable` y su última fila (por ejemplo, el Total) no se queda sola en otra página: usa `\\*` en las últimas filas.
 > — `../../memoria/reglas-tfg.md`
+
+Relacionado: [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]] · [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[formato-de-tablas-alineacion-superior-ancho-controlado-y-cod]]

@@ -21,4 +21,4 @@ Estos valores determinan la duración de la fase "Ejecución" en la tabla de est
 > Multiplicación: 4 ciclos 1ª carga: 8 ciclos (fallo en cache) 2ª carga: 4 ciclos (acierto)
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[latencias-asumidas-para-carga-2-ciclos-y-multiplicacion-fp-3]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo]] · [[estado-inicial-ciclo-1-de-un-bucle-vector-escalar-en-tomasul]]

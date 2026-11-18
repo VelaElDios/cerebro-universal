@@ -26,4 +26,4 @@ Predictor correlacionado (m,n): usa m bits de historia global (BHR) para indexar
 > se usa un predictor correlacionado (2,1) para predecir el comportamiento de los saltos y que en memoria se ha almacenado la cadena "exam18
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[comportamiento-de-predictor-correlacionado-2-1-con-historia]] · [[simulacion-de-predictor-correlacionado-de-dos-niveles-2-2-co]] · [[simulacion-paso-a-paso-de-predictor-correlacionado-2-1-con-b]]

@@ -17,4 +17,4 @@ Datos numéricos del enunciado para cálculos de CPI: Frecuencia condicionales =
 > La frecuencia de saltos (medida como porcentaje del total de instrucciones) es tal que los saltos condicionales suponen un 30% y los saltos incondicionales un 9%. De los saltos condicionales el 75% son tomados.
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf`
 
-Relacionado: [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]]
+Relacionado: [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]] · [[calculo-cpi-base-pipeline-5-etapas-con-saltos-sin-prediccion]]

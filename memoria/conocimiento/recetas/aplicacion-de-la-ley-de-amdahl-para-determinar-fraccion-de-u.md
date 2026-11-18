@@ -17,4 +17,4 @@ Speedup global = 1 / [(1 - f) + f/k], donde f = fracción de tiempo que se usa e
 > If the hard disk of a computer is replaced by another disk six times faster than the current one, calculate the use that should be made of this device if we want to make the computer run three times faster
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]]
+Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[ley-de-amdahl-para-mejora-de-subsistema-disco-6x-mas-rapido]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco-fraccion-de-uso-par]] · [[ley-de-amdahl-aplicada-a-mejora-de-disco]]

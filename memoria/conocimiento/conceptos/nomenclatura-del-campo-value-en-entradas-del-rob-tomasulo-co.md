@@ -17,4 +17,4 @@ Al rellenar el ROB en un ciclo dado (ej. ciclo 12), cada entrada tiene: Instruct
 > Make use of this nomenclature to complete the Value field: i. (Rx) Contents of the integer register Rx. Examples: (R1), (R2). ii. (Fx) Contents of the FP register Fx. Examples: (F8), (F5). iii. Mem(d) Content of memory address d. Examples: Mem(20), Mem((R1)+4). iv. #ROBx Value to be obtained from ROB entry x. Examples: #ROB1, #ROB7. v. #ROBx(data) Data read or retrieved from the Value field of the x input of the ROB. Examples: #ROB7(Mem(R1)), #ROB2(F1).
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
 
-Relacionado: [[procesador-tomasulo-con-especulacion-caracteristicas-de-late]]
+Relacionado: [[procesador-tomasulo-con-especulacion-caracteristicas-de-late]] · [[estructura-del-reorder-buffer-rob-en-tomasulo-con-especulaci]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[significado-del-campo-value-en-entrada-rob-con-formato-m-4-r]]

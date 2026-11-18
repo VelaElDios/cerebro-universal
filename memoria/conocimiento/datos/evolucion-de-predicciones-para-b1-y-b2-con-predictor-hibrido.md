@@ -22,4 +22,4 @@ La tabla resuelta muestra 20 ejecuciones de salto (10 B1 + 10 B2). Observaciones
 > B1 (R2=0)         T          P2          N           MISS       00 00              1 0              001 000 B2                N          P2          N           HIT        00 00              1 0              001 000 B1 (R2=1)         N          P2          N           HIT        00 00              0 0              000 000 B2                N          P2          N           HIT        00 00              0 0              000 000
 > — `repo:datos/temarios/AC/examenes/June2017.pdf`
 
-Relacionado: [[resultados-reales-de-saltos-b1-y-b2-en-bucle-mips64-secuenci]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]]
+Relacionado: [[resultados-reales-de-saltos-b1-y-b2-en-bucle-mips64-secuenci]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]] · [[predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y]] · [[simulacion-paso-a-paso-del-predictor-hibrido-con-contadores]] · [[secuencia-de-aciertos-fallos-en-predictor-2-bits-inicializad]]

@@ -16,3 +16,5 @@ El software pipelining solapa iteraciones: prologue (llenado), kernel (estado es
 
 > We apply software pipelining to this loop: Bucle: L.D F0, 0(R1) ;I1 stall ADD.D F2, F0, F1 ;I2 stall SUB.D F3, F2, F0 ;I3 stall S.D F3, 0(R1) ;I4 DADDUI R1, R1, #-8 ;I5 stall BNEZ R1, Bucle ;I6 Assuming the indicated stalls and that there is not delayed branch…
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
+
+Relacionado: [[segmentacion-software-software-pipelining-modifica-codigo-pa]] · [[calculo-de-instrucciones-tras-desenrollar-bucle-3-veces-unro]] · [[desenrollado-de-bucle-minimo-para-eliminar-todos-los-stalls]]

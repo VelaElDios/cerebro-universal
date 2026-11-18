@@ -17,4 +17,4 @@ Coste-efectividad = rendimiento / coste. Rendimiento = 1 / tiempo_medio_ponderad
 > Which system is more cost-effective using programmes 1 and 2 as the workload?
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[como-comparar-efectividad-en-coste-entre-dos-sistemas]] · [[calculo-de-coste-efectividad-entre-dos-sistemas-pregunta-4]] · [[comparativa-de-coste-efectividad-entre-sistemas-rendimiento]]

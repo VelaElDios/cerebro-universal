@@ -16,3 +16,5 @@ En nodos/cajas de diagramas, evitar hyphenation automática que rompa identifica
 
 > Dentro de las cajas no se parten palabras ni rutas («sr-c/services»): o la caja es más ancha (`text width`), o el texto se pone en dos líneas a mano (`\\`), o se acorta.
 > — `../../memoria/reglas-tfg.md`
+
+Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[formato-de-tablas-alineacion-superior-ancho-controlado-y-cod]] · [[la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme]]

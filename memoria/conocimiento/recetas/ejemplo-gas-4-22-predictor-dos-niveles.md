@@ -22,3 +22,5 @@ Funcionamiento: el BHR global de 4 bits se usa como índice dentro de la BHT cor
 
 > Ejemplo: Gas(4,22) Un BHR de 4 bits contiene la historia de los 4 últimos saltos para indexar la BHT que seleccione los 2 últimos bits de la dirección de la instrucción de salto
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[notacion-xax-m-2n-para-predictores-adaptativos-de-dos-nivele]] · [[simulacion-de-predictor-correlacionado-de-dos-niveles-2-2-co]] · [[predictor-correlacionante-de-dos-niveles-1-1-con-bhr-global]]

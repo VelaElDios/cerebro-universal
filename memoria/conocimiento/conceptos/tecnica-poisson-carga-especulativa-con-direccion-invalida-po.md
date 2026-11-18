@@ -17,4 +17,4 @@ En la técnica Poisson (especulación con carga), si una carga especulativa acce
 > Indicate the behavior of a MIPS64 processor executing the speculative instruction LW* R5, 0(R1), assuming the Poisson technique. We know that R1=0 and that the access to memory addresses 0 and 1 is not allowed. a) An exception will always be launched, and the program will end b) The code will always be executed, and the program will end correctly c) The poison bit corresponding to R5 will always be set d) The poison bit corresponding to R1 will always be set
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[bits-de-veneno-poison-bits-en-carga-especulativa-marcan-regi]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]] · [[comportamiento-de-bit-de-veneno-poison-bit-ante-excepcion-en]]

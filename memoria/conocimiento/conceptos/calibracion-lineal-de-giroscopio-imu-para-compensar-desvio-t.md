@@ -16,3 +16,5 @@ El firmware de vehículos autónomos debe corregir en tiempo real las lecturas d
 
 > La corrección consiste en aplicar a cada muestra una calibración lineal, definida por una ganancia (gain) y un desplazamiento (offset), antes de enviar los datos al sistema de toma de decisiones.
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf`
+
+Relacionado: [[bucle-risc-v-para-calibracion-imu-con-puntero-descendente]] · [[simulacion-de-ejecucion-tomasulo-con-tabla-de-ciclos-issue-e]] · [[valores-de-ejemplo-para-cpu-del-laboratorio-frecuencia-bw-pu]]

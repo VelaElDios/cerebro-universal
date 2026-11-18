@@ -17,4 +17,4 @@ Cuando un operando no está listo, su Qj/Qk apunta a la estación de reserva que
 > Mult 1 SI Mult R(f4) Carga 2 Suma 1 SI Sub M(34+x2) Carga 2 Mult 1 SI Mult M(45+x3) R(f4) Mult 2 SI DIv M(34+x2) Mult 1
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]]
+Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[tabla-de-estado-de-estacion-de-reserva-en-tomasulo-campos-y]]

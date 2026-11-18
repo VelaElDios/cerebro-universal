@@ -17,4 +17,4 @@ Una estación de reserva en Tomasulo es una ubicación física de almacenamiento
 > What is a reservation station in the context of the Tomasulo algorithm? a) A physical storage location for data that allows their speculation b) A physical storage location for registers that allows their renaming c) A physical storage location for data dependencies that allows their resolution d) All are correct
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[buffer-de-carga-en-tomasulo-especulativo]]
+Relacionado: [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[buffer-de-carga-en-tomasulo-especulativo]] · [[estaciones-de-reserva-almacenan-etiquetas-para-control-de-ri]] · [[informacion-almacenada-en-estaciones-de-reserva-de-tomasulo]]

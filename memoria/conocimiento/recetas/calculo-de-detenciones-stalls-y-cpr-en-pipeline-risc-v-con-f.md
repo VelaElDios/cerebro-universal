@@ -28,4 +28,4 @@ Fórmula general: CPR = (instrucciones_por_iteración + stalls_por_iteración) /
 > Indica las detenciones que se producen al ejecutar el código y calcula el CPR (Ciclos Por Resultado).
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2_Prob_RISCV_rev.pdf`
 
-Relacionado: [[identificacion-de-dependencias-loop-carried-en-bucles-c-styl]]
+Relacionado: [[identificacion-de-dependencias-loop-carried-en-bucles-c-styl]] · [[parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult]] · [[analisis-de-paradas-en-bucle-con-unidades-fp-de-latencias-2]] · [[analisis-de-detenciones-stalls-en-bucle-con-media-ponderada]]

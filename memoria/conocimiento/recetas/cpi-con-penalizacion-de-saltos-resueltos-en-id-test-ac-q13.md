@@ -21,3 +21,5 @@ Opción correcta: CPI = 1.3, IPC = 0.77.
 
 > Dado un pipeline de 5 etapas en el que los saltos condicionales se resuelven en ID y en el que 3 de cada 10 instrucciones son saltos tomados, indica cuál de las siguientes opciones es la correcta:
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf`
+
+Relacionado: [[cpi-con-prediccion-de-saltos-en-pipeline-de-5-etapas-direcci]] · [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]] · [[calculo-cpi-base-pipeline-5-etapas-con-saltos-sin-prediccion]]

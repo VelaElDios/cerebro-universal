@@ -16,3 +16,5 @@ Evitar páginas con poco contenido. Si una sección/subsección tiene solo 1-2 l
 
 > Ninguna página casi vacía ni con una sección o una línea suelta: una sección de una o dos líneas se funde con otra o se convierte en un punto de una lista.
 > — `../../memoria/reglas-tfg.md`
+
+Relacionado: [[evitar-paginas-casi-vacias-regla-9]] · [[como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]]

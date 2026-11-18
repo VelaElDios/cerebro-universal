@@ -17,4 +17,4 @@ Kernel del bucle (8 instrucciones): 1) LF F2, 0(R2) - carga x(i). 2) MULTF F4, F
 > LF    F2, 0(R2)                  // R2 es la dirección el elemento x(i)\n                MULTF F4, F2, F2\n                MULTF F6, F4, F1                 // F1 contiene el valor de A\n                SF    0(R4), F6                  // R4 es la dirección el elemento y(i)
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf` (cita sin comprobar)
 
-Relacionado: [[problema-examen-ac-planificacion-vliw-para-bucle-y-i-a-x-i-2]] · [[latencias-vliw-examen-ac-para-planificacion-bucle-polinomico]]
+Relacionado: [[problema-examen-ac-planificacion-vliw-para-bucle-y-i-a-x-i-2]] · [[latencias-vliw-examen-ac-para-planificacion-bucle-polinomico]] · [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[desenrollado-4x-de-bucle-mips64-fp-con-renombrado-de-registr]]

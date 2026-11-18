@@ -32,7 +32,7 @@ Este trozo contiene el Problema 3 de un examen de Arquitectura de Computadores (
 - [[metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi]]
 - [[parametros-del-procesador-superescalar-en-problema-de-planif]]
 - [[planificacion-estatica-el-compilador-reordena-para-reducir-d]]
-- [[predictor-correlacionado-m-n-tiene-2-n-bhts]]
+- [[numero-de-tablas-bht-en-predictor-correlacionado-m-n]]
 - [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]]
 - [[reorder-buffer-rob-permite-completacion-en-orden-en-ejecucio]]
 - [[scoreboard-los-riesgos-estructurales-se-gestionan-en-la-etap]]

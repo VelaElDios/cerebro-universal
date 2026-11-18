@@ -17,4 +17,4 @@ El diseño incluye **dos estaciones de multiplicación (Mult 1 y Mult 2)** y tre
 > Estaciones de reserva Nombre Ocupada Op Vj Vk Qj Qk Mult 1 SI Mult R(f2) Carga 1 Mult 2 SI Mult R(f2) Carga 2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[asignacion-de-estaciones-de-reserva-mult-1-y-mult-2-en-el-ej]] · [[como-evoluciona-la-tabla-de-estaciones-de-reserva-en-tomasul]] · [[como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de]]

@@ -16,3 +16,5 @@ Planificación estática: el compilador reordena instrucciones para reducir para
 
 > In static code scheduling a) Hardware reorders the code to reduce dependences b) Compiler reorders the code to reduce dependences c) Hardware reorders the code to increase dependences d) None of the above
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
+
+Relacionado: [[planificacion-estatica-el-compilador-reordena-para-reducir-d]] · [[tecnicas-ilp-estaticas-vs-dinamicas-pregunta-7-y-9]] · [[planificacion-estatica-de-instrucciones-la-hace-el-compilado]]

@@ -16,3 +16,5 @@ En el bucle dado, S.D escribe en memoria (0(R1)) y DADDUI actualiza R1. La sigui
 
 > Entre las instrucciones S.D y DADDUI... d) Existe una dependencia de datos, a través de R1, entre iteraciones
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf` (cita sin comprobar)
+
+Relacionado: [[dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema]]

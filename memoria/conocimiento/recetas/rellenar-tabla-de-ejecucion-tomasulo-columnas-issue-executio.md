@@ -22,4 +22,4 @@ Debe anotarse el motivo de cada espera (RAW, estructural, CDB, orden programa).
 > Indica el número de ciclo de inicio y fin para cada uno de los pasos de cada instrucción y, cuando corresponda, el motivo para detener la ejecución del paso en cuestión (un riesgo RAW, un riesgo estructural, el orden del programa, etc.).
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[simulacion-tomasulo-con-especulacion-parametros-de-hardware]]
+Relacionado: [[simulacion-tomasulo-con-especulacion-parametros-de-hardware]] · [[pasos-para-completar-tabla-de-ejecucion-tomasulo-issue-execu]] · [[simulacion-de-ejecucion-tomasulo-con-tabla-de-ciclos-issue-e]] · [[como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul]]

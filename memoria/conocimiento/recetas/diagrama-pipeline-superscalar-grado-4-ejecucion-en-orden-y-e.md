@@ -16,3 +16,5 @@ Restricciones: max 4 instr/ciclo en Decode, max 5 en Execute, max 4 en Write. Re
 
 > a) Ejecución en orden y escritura en orden.
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
+
+Relacionado: [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]] · [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-sin-r]] · [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r]]

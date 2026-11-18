@@ -17,4 +17,4 @@ Las dependencias verdaderas (RAW) son intrínsecas al flujo de datos y no se pue
 > Data dependences... a) Are removed by deleting branch instructions in the code b) Cannot be removed c) Are removed by register renaming d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[eliminacion-de-dependencias-de-datos-mediante-renombramiento]] · [[dependencias-de-nombre-war-waw-se-eliminan-con-renombramient]] · [[el-renombrado-de-registros-evita-dependencias-de-nombre-war]]

@@ -17,4 +17,4 @@ El renombrado de registros resuelve las dependencias de nombre (name dependencie
 > What problem does "register renaming" solve? a) Control dependencies b) Cache misses c) Name dependencies d) All are correct
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[el-renombrado-de-registros-evita-dependencias-de-nombre-war]] · [[dependencias-de-nombre-se-eliminan-mediante-renombramiento-d]] · [[eliminacion-de-dependencias-de-nombre-mediante-renombramient]]

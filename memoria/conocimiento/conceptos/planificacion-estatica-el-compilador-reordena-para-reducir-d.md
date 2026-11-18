@@ -22,3 +22,5 @@ La planificación estática (static scheduling) es realizada por el compilador e
 
 ## Ampliación (2026-11-18, )
 La planificación estática (static scheduling) es realizada por el compilador en tiempo de compilación: reordena instrucciones para minimizar paradas (stalls) por dependencias y riesgos, aprovechando el conocimiento del pipeline. La opción correcta es c.
+
+Relacionado: [[planificacion-estatica-de-instrucciones-la-hace-el-compilado]] · [[planificacion-estatica-vs-dinamica-de-codigo]] · [[planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui]]

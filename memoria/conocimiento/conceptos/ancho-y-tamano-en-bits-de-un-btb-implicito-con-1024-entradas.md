@@ -17,4 +17,4 @@ Un BTB implícito almacena solo la dirección de destino (target) por entrada, s
 > Indicate the width and the number of bits to implement an implicit BTB with 1024 entries, knowing that the address bus uses 24 bits
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]] · [[dimensionado-de-btb-implicita-ancho-y-bits-totales-para-1024]] · [[implementacion-de-btb-generica-ampliacion-de-btac-con-bits-d]]

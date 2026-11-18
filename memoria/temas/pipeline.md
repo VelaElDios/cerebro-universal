@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pipeline"
-notas: 284
+notas: 283
 ---
 # pipeline
 
@@ -136,7 +136,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/antidependencia-entre-iteraciones-en-bucle-con-store-y-actua|Antidependencia entre iteraciones en bucle con store y actualización de puntero]]
 - 💡 [[memoria/conocimiento/conceptos/antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord|Antidependencia siempre genera hazard WAR en pipeline in-order]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter|Análisis de dependencias en bucle con ADD.D y S.D (misma iteración vs entre iteraciones)]]
-- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS: se accede en etapas ID y WB]]
+- 💡 [[memoria/conocimiento/conceptos/banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y|Banco de registros en pipeline MIPS de 5 etapas: acceso en ID (lectura) y WB (escritura)]]
 - 💡 [[memoria/conocimiento/conceptos/bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64|Bucle de cálculo y(i) = A * x(i)^2 en ensamblador MIPS64]]
 - 💡 [[memoria/conocimiento/conceptos/bucle-vectorial-de-referencia-para-desenrollado-y-planificac|Bucle vectorial de referencia para desenrollado y planificación (examen AC June 2018)]]
 - 💡 [[memoria/conocimiento/conceptos/buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca|Buffer de Reordenamiento (ROB) en Tomasulo con especulación: campos y funcionamiento]]
@@ -184,7 +184,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-tabla-rob-para-tomasulo-especulativo-con-5-ent|Estructura de tabla ROB para Tomasulo especulativo con 5 entradas]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-del-marcador-scoreboard-en-arquitectura-de-comput|Estructura del marcador (scoreboard) en arquitectura de computadores]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-del-reorder-buffer-rob-en-tomasulo-con-especulaci|Estructura del Reorder Buffer (ROB) en Tomasulo con especulación]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/etapas-de-uso-del-banco-de-registros-en-pipeline-mips-de-5-e|Etapas de uso del banco de registros en pipeline MIPS de 5 etapas]]
 - 💡 [[memoria/conocimiento/conceptos/forwarding-de-resultado-en-ciclo-siguiente-al-write-modelo-s|Forwarding de resultado en ciclo siguiente al Write (modelo superscalar examen)]]
 - 💡 [[memoria/conocimiento/conceptos/funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es|Funcionamiento detallado de bits de veneno (poison bits) en especulación]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/hazard-war-corresponde-a-antidependencia-dependencia-de-nomb|Hazard WAR corresponde a antidependencia (dependencia de nombre)]] · ⚠️ propuesto
@@ -203,7 +202,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/objetivo-del-desenrollamiento-de-bucles-loop-unrolling|Objetivo del desenrollamiento de bucles (loop unrolling)]]
 - 💡 [[memoria/conocimiento/conceptos/paralelismo-a-nivel-de-bucle-lp-solapamiento-de-iteraciones|Paralelismo a nivel de bucle (LP) = solapamiento de iteraciones]]
 - 💡 [[memoria/conocimiento/conceptos/paso-de-commit-en-superscalar-actualizacion-de-registros|Paso de commit en superscalar: actualización de registros]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup|Penalización de fallo de predicción de salto en pipeline superscalar]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup|Penalización de fallo de predicción de salto en pipeline superscalar]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-prediccion-estatica-siempre-no-tomado-con-di|Penalización de predicción estática "siempre no tomado" con dirección en ID y sentido en EX]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r|Penalización de salto en MIPS con resolución en ID y salto retardado: cero ciclos]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]
@@ -211,7 +210,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/planificacion-en-superescalar-grado-2-con-latencias-mem-2-y|Planificación en superescalar grado 2 con latencias MEM=2 y EX=2]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-por-software-software-pipelining-y-desenrollad|Planificación por software (software pipelining) y desenrollado de bucles]]
-- 💡 [[memoria/conocimiento/conceptos/por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per|Por qué el orden de los datos afecta al código con salto pero no al branchless]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/por-que-el-orden-de-los-datos-afecta-al-codigo-con-salto-per|Por qué el orden de los datos afecta al código con salto pero no al branchless]]
 - 💡 [[memoria/conocimiento/conceptos/predictor-de-saltos-por-que-datos-ordenados-vs-desordenados|Predictor de saltos: por qué datos ordenados vs desordenados cambian rendimiento drásticamente]]
 - 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p|Predictor híbrido de saltos con selectores de 2 bits entre predictor local de 1 bit y predictor local de 3 bits]]
 - 💡 [[memoria/conocimiento/conceptos/problema-de-desambiguacion-de-memoria-memory-disambiguation|Problema de desambiguación de memoria (memory disambiguation)]]
@@ -236,7 +235,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 - 💡 [[memoria/conocimiento/conceptos/riesgo-raw-como-dependencia-de-datos-verdadera|Riesgo RAW como dependencia de datos verdadera]]
 - 💡 [[memoria/conocimiento/conceptos/riesgos-de-datos-en-risc-v-raw-waw-war|Riesgos de datos en RISC-V: RAW, WAW, WAR]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/riesgos-estructurales-causas-y-ejemplo-banco-de-registros|Riesgos estructurales: causas y ejemplo banco de registros]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]]
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-como-planificacion-estatica|Salto retardado (delayed branch) como planificación estática]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-bucle-con-bne-y-daddui|Salto retardado (delayed branch) en bucle con BNE y DADDUI]]
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-planificacion-superescalar|Salto retardado (delayed branch) en planificación superescalar]]

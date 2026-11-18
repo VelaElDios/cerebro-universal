@@ -19,3 +19,5 @@ Por tanto, en acierto, **la BTB proporciona directamente la dirección de destin
 
 > Un procesador emplea predicción de saltos apoyada en una BTB. En caso de acierto en la BTB… La BTB proporcionará la dirección de destino del salto actual
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf` (cita sin comprobar)
+
+Relacionado: [[implementacion-de-btb-generica-ampliacion-de-btac-con-bits-d]] · [[proposito-del-branch-target-buffer-btb-ademas-de-bits-de-pre]] · [[btb-cache-de-direcciones-destino-de-saltos-con-bits-de-predi]]

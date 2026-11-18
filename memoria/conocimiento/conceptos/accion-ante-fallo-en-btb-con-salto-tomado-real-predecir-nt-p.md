@@ -17,4 +17,4 @@ Si la instrucción no está en la BTB (miss), no hay predicción de dirección n
 > ¿Qué acción realiza el procesador si se utiliza una BTB (Branch Target Buffer) y se produce un "fallo" en la BTB y la instrucción es realmente un salto que resulta TOMADO? b. Se predice el salto como No Tomado, se detecta el error posteriormente, se penaliza y se actualiza la BTB añadiendo la instrucción.
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf` (cita sin comprobar)
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[politica-de-btb-solo-entradas-para-saltos-tomados-prediccion]] · [[comportamiento-de-la-btb-en-caso-de-acierto-test-ac-q14]]

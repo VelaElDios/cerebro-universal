@@ -16,3 +16,5 @@ Tabla de estado inicial para los 3 saltos (B1, B2, B3). Predictor 1 bit: bits de
 
 > Considera que el estado inicial del predictor es el mostrado en la primera fila de la tabla. (Estado inicial) - 1/1/1 - - 0 1/1/1 1/1/1 - -
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf` (cita sin comprobar)
+
+Relacionado: [[estados-iniciales-de-predictores-en-ejercicio-2-un-nivel-y-d]] · [[predictor-correlacionante-de-dos-niveles-1-1-con-bhr-global]] · [[estado-inicial-de-predictores-en-ejercicio-12-predictor-2-bi]]

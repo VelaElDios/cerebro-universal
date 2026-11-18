@@ -20,4 +20,4 @@ Valores iniciales antes de la primera ejecución del bucle:
 > (initial state)        -         -            -          -        B1: 00   B2: 00    B1: 0   B2: 0   B1: 000   B2: 000
 > — `repo:datos/temarios/AC/examenes/June2017.pdf`
 
-Relacionado: [[predictor-local-de-1-bit-predictor-1-y-predictor-local-de-3]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]]
+Relacionado: [[predictor-local-de-1-bit-predictor-1-y-predictor-local-de-3]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]] · [[estado-inicial-de-predictores-y-contadores-en-problema-de-pr]] · [[estados-iniciales-de-predictores-en-ejercicio-2-un-nivel-y-d]]

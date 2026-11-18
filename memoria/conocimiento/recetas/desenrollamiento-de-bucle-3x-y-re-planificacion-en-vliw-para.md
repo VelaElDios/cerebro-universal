@@ -17,4 +17,4 @@ Procedimiento: 1) Replicar el cuerpo del bucle 3 veces, renombrando registros pa
 > Unroll the original loop three times and then schedule it again for the same VLIW processor (use as many rows as necessary in the table below). How many operations per cycle are reached now? Justify the solution.
 > — `repo:datos/temarios/AC/examenes/January2019.pdf`
 
-Relacionado: [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]]
+Relacionado: [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo]] · [[desenrollado-de-bucle-3x-y-planificacion-vliw-compactada]]

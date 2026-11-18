@@ -17,4 +17,4 @@ Scoreboard (Marcador) rastrea 4 fases por instrucción: 1) Issue: decodifica, ch
 > Complete the following instruction status table, indicating the cycle number in which each step is performed, for the code shown and according to the Scoreboard algorithm. You must complete the rows corresponding to the 6 instructions not detailed. Instruction Issue Read operands Execution Start - End Write result
 > — `repo:datos/temarios/AC/examenes/June2020.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[campos-qj-y-qk-en-estaciones-de-reserva-de-tomasulo]] · [[algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej]] · [[simulacion-scoreboard-vs-tomasulo-basico-pasos-de-ejecucion]] · [[como-leer-la-tabla-de-estado-de-instrucciones-en-el-marcador]]

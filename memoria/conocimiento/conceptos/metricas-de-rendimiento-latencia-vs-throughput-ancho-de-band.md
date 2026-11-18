@@ -20,4 +20,4 @@ En arquitectura, mejorar latencia no siempre mejora throughput (p. ej., pipeline
 > Latencia o tiempo de respuesta: tiempo transcurrido entre el comienzo y el final de un evento... Productividad o ancho de banda (throughput / bandwidth): cantidad de trabajo realizado en un tiempo determinado
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-de-mflops-millones-de-operaciones-de-punto-flotan]] · [[definicion-de-mips-millones-de-instrucciones-por-segundo]]
+Relacionado: [[definicion-de-mflops-millones-de-operaciones-de-punto-flotan]] · [[definicion-de-mips-millones-de-instrucciones-por-segundo]] · [[benchmarks-de-referencia-top500-flops-vs-green500-mflops-w]] · [[definicion-de-latencia-e-intervalo-de-iniciacion-en-pipeline]]

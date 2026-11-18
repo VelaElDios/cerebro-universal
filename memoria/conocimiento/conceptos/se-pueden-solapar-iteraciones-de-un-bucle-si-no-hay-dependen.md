@@ -17,4 +17,4 @@ El solapamiento (software pipelining, desenrollado + planificación) requiere qu
 > Se puede solapar la ejecución de distintas iteraciones de un bucle cuando éste: c) No presenta dependencias entre iteraciones
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[desenrollamiento-de-bucles-requiere-ausencia-de-dependencias]] · [[condicion-para-solapar-iteraciones-de-un-bucle-desenrollado]] · [[condicion-para-solapar-iteraciones-de-un-bucle-software-pipe]]

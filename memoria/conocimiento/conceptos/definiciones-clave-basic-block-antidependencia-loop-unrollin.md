@@ -17,4 +17,4 @@ Respuestas correctas: 7)b) A code sequence without branch instructions. 8)c) WAR
 > In instruction-level parallelism, the “basic block” term refers to: a) A sequence of branch instructions b) A code sequence without branch instructions c) A code sequence without dependences between instructions d) None of the above
 > — `repo:datos/temarios/AC/examenes/June2021.pdf`
 
-Relacionado: [[tipos-de-dependencias-y-hazards-en-codigo-mips64-de-punto-fl]]
+Relacionado: [[tipos-de-dependencias-y-hazards-en-codigo-mips64-de-punto-fl]] · [[definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru]] · [[que-es-un-bloque-basico-basic-block-en-ilp]] · [[tecnicas-ilp-estaticas-vs-dinamicas-pregunta-7-y-9]]

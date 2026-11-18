@@ -17,4 +17,4 @@ Procesador VLIW (Very Long Instruction Word) que emite 4 operaciones por ciclo/i
 > Se ejecuta este código en un procesador VLIW con 4 operaciones por instrucción que no impone restricciones al tipo de operaciones que pueden ser emitidas por cada ALU, con salto retardado y adelantamiento
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf`
 
-Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]]
+Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]] · [[especificacion-vliw-1-0-para-examen-enero-2026-problema-3]] · [[problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa]] · [[caracteristicas-clave-de-procesadores-vliw]]

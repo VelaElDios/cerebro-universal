@@ -17,4 +17,4 @@ Para el Problema 1: multiplicación FP (fmul.d) latencia 5 ciclos en EX, suma FP
 > la UF de multiplicación FP tiene 5 ciclos de ejecución en EX, la UF de suma FP tiene 4 ciclos de ejecución en EX y todas está completamente segmentadas
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf`
 
-Relacionado: [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]]
+Relacionado: [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[latencias-de-ejecucion-fp-en-configuracion-examen-junio-2012]] · [[latencias-de-ejecucion-uf-fp-en-examen-ac-junio-2014-problem]] · [[latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d]]

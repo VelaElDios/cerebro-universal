@@ -17,4 +17,4 @@ Para que M1 a frecuencia f tenga mismo tiempo que M2 a 1 GHz con mismo NI: (CPI_
 > Tiempo de ejecución = NI × CPI / Frecuencia
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[igualar-mips-entre-dos-maquinas-despejando-frecuencia-de-rel]] · [[calculo-de-cpi-medio-mips-y-speedup-entre-dos-maquinas]] · [[ejercicios-de-cpi-mips-y-tiempo-de-ejecucion-con-mezcla-de-i]]

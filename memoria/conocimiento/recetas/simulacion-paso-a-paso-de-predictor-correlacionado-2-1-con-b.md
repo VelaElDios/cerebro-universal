@@ -17,4 +17,4 @@ Procedimiento para simular el predictor correlacionado (2,1) del Ejercicio 12 (y
 > Considera el mismo vector de entrada del apartado a) y que el estado inicial del predictor es el mostrado en la tabla. Indica el resultad en la columna 6ª, 7ª y 8ª de la tabla de abajo. ... Bits de predicción (BHR y BTHs) ... Resultado predicción (T/NT)
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[simulacion-de-predictor-correlacionado-de-dos-niveles-2-2-co]] · [[predictor-correlacionado-1-2-con-bhr-y-dos-bhts]] · [[comportamiento-de-predictor-correlacionado-2-1-con-historia]]

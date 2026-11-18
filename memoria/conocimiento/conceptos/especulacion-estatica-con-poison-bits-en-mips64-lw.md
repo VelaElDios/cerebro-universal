@@ -17,4 +17,4 @@ La especulación estática con poison bits permite ejecutar instrucciones de for
 > Se dispone de un procesador basado en el MIPS64, y diversos mecanismos para la realización de especulación estática con el siguiente código. LW* R1, 0(R1) ; Carga especulativa
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]] · [[especulacion-estatica-con-cargas-especulativas-lw-en-mips64]]
+Relacionado: [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]] · [[especulacion-estatica-con-cargas-especulativas-lw-en-mips64]] · [[como-resolver-el-problema-3-de-especulacion-con-poison-bits]] · [[planificacion-estatica-con-poison-bits-en-mips64-reglas-de-e]]

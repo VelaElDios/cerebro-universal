@@ -16,3 +16,5 @@ Código: add x4,x0,x0; count: lw x3,0(x1); B1=beqz x3,isnull; addi x4,x4,1; isnu
 
 > El siguiente código RISC-V cuenta (en x4) el número de elementos no nulos que hay en un vector disperso almacenado en memoria. Un vector disperso es aquel en el que la mayoría de sus elementos son 0.
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4_Prob.pdf`
+
+Relacionado: [[predictor-de-2-bits-por-instruccion-y-predictor-correlaciona]] · [[codigo-mips64-de-conteo-elementos-no-nulos-en-vector-dispers]] · [[codigo-risc-v-ejercicio-10-bucle-conteo-a-en-exam18-con-salt]]

@@ -17,4 +17,4 @@ La decisión de diseño combina un predictor simple y barato (1 bit, buena para 
 > Detail the behavior of a hybrid predictor combining two local predictors (called “Predictor 1” and “Predictor 2”). Predictor 1 associates a 1-bit predictor to each branch instruction (B1 and B2) and Predictor 2 associates a 3-bit predictor to each branch. To select the predictor to employ in each case there is a table (called “Counters”) storing a 2-bit saturating counter for each branch.
 > — `repo:datos/temarios/AC/examenes/June2017.pdf`
 
-Relacionado: [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]] · [[comparativa-tomasulo-vs-marcador-scoreboard]]
+Relacionado: [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]] · [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[predictor-hibrido-de-saltos-con-selectores-de-2-bits-entre-p]] · [[predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y]]

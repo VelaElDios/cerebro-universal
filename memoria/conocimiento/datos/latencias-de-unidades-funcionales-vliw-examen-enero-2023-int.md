@@ -17,4 +17,4 @@ Tabla a rellenar en el ejercicio 3a. Las latencias esperadas (típicas en este t
 > FU= Functional unit Number of cycles Integer FU Adder FP FU Multiplier FP FU MEM stage of the memory access instructions
 > — `repo:datos/temarios/AC/examenes/January2023.pdf`
 
-Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]
+Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[parametros-de-temporizacion-vliw-examen-enero-2016]] · [[unidades-funcionales-y-ciclos-en-vliw-con-2-mem-2-fp-1-int-b]]

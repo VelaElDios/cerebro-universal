@@ -17,4 +17,4 @@ En trace scheduling, un trace representa la secuencia más probable de instrucci
 > In the trace scheduling technique, what does a trace represent? a) Most likely sequence of instructions to execute b) Sequence of instructions to execute in a loop iteration c) Basic block within a loop d) All are false
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]
+Relacionado: [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[que-hace-la-planificacion-de-trazas-trace-scheduling]] · [[trace-scheduling-traza-secuencia-mas-probable-de-bloques-bas]] · [[definicion-y-objetivo-de-la-planificacion-de-trazas-trace-sc]]

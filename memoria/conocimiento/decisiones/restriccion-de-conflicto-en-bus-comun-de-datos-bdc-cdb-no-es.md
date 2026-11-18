@@ -17,4 +17,4 @@ Regla crítica para la simulación de ciclos: Si en ciclo C una instrucción esc
 > • En el mismo ciclo de reloj no se puede escribir un dato en el Bus de Datos Común (BDC) e iniciar la ejecución de una operación que estuviera esperando ese dato.
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]] · [[restriccion-de-forwarding-por-cdb-en-tomasulo-no-escritura-e]] · [[restricciones-de-uso-del-bus-de-datos-comun-y-recursos-en-to]]

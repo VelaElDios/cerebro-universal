@@ -33,4 +33,4 @@ Parámetros fijos para los tres apartados del Ejercicio 3:
 > Consider a 4-way superscalar processor capable of issuing four instructions of any type per cycle, with five functional units (F1, F2, F3, F4, and F5). Assume that instructions require one cycle for the decode stage, one cycle for the execute stage and one cycle for the write stage. The result of an instruction is available to other instructions at the next cycle in which that result is written.
 > — `repo:datos/temarios/AC/examenes/January2022.pdf`
 
-Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[definicion-de-latencia-de-salto-y-huecos-de-retardo]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e]] · [[superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr]] · [[diferencias-clave-entre-los-tres-modelos-de-ejecucion-supers]]

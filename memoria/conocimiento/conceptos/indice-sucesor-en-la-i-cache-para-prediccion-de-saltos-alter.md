@@ -16,3 +16,5 @@ En lugar de BTAC separada, se añade un campo "índice sucesor" a cada línea de
 
 > A cada línea de la cache de instrucciones se añade un campo (índice sucesor). El acceso al índice sucesor se realiza en paralelo con la lectura de la línea de cache. Si existe una instrucción de salto en la línea de cache: si se predice como tomado, el índice sucesor apunta a la instrucción destino del salto; si se predice como no tomado, el índice sucesor apunta a la siguiente línea de cache
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
+
+Relacionado: [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[estructuras-hardware-para-prediccion-de-saltos-btac-bht-btb]] · [[funcionamiento-y-actualizacion-de-la-btac-branch-target-addr]]

@@ -16,3 +16,5 @@ El bucle tiene tres instrucciones de salto etiquetadas: B1 (BEQZ R2, next), B2 (
 
 > El siguiente bucle MIPS64 recorre la secuencia de enteros 0, 1, 0, 2, 0, 1, 0, 2, 0, 1, 0, 2,... Suponemos que R1 y R3 han sido inicializados con las direcciones del primer y del último elemento de la secuencia, respectivamente.
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
+
+Relacionado: [[comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips]] · [[resultados-reales-de-saltos-b1-y-b2-en-bucle-mips64-secuenci]] · [[ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad]]

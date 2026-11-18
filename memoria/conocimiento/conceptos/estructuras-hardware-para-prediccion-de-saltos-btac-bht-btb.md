@@ -17,4 +17,4 @@ El documento clasifica las estructuras hardware en dos categorías: (1) dónde g
 > Soporte hardware usado por las técnicas de predicción de saltos: Estructuras de predicción: ¿Dónde almacenar la dirección destino del salto? BTAC (Branch Target Address Cache) I-Cache (con índice sucesor) ¿Dónde almacenar los bits de predicción? BTB (Branch Target Buffer) (BTAC + bits predicción) BHT (Branch History Table) Bits de predicción en la I-cache
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits]] · [[implementacion-de-btb-generica-ampliacion-de-btac-con-bits-d]] · [[estructura-que-almacena-direccion-destino-de-saltos-tomados]]

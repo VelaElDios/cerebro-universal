@@ -20,4 +20,4 @@ Técnica que evita predecir: el procesador **ejecuta ambas ramas** del salto de 
 > Se ejecutan las dos ramas de una bifurcación sin hacer predicción Cuando se resuelve el salto, se cancelan las instrucciones del camino no tomado Raramente implementado • IBM mainframes y proyectos de investigación
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[instrucciones-predicadas-convertir-dependencias-de-control-e]]
+Relacionado: [[instrucciones-predicadas-convertir-dependencias-de-control-e]] · [[multiples-caminos-como-tecnica-de-prediccion-de-saltos]] · [[definicion-de-ejecucion-multicamino-multipath-execution]] · [[ejecucion-multicamino-multi-path-execution-frente-a-predicci]]

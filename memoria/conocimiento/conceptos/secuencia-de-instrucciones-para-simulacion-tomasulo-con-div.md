@@ -17,4 +17,4 @@ Secuencia de 10 instrucciones FP para rellenar tabla de ciclos en Tomasulo: 1) D
 > DIV.D F0, F2, F4 / ADD.D F2, F6, F8 / ADD.D F0, F4, F8 / S.D F0, 0(R1) / MUL.D F2, F4, F0 / DIV.D F6, F8, F0 / L.D F6, 0(R2) / ADD.D F0, F6, F2 / MUL.D F2, F0, F8 / ADD.D F2, F0, F6
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l]] · [[secuencia-de-instrucciones-mips64-para-simulacion-tomasulo-p]] · [[simulacion-de-algoritmo-tomasulo-basico-y-especulativo-con-r]]

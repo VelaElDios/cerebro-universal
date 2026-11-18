@@ -16,3 +16,5 @@ En la fila Divide (UF5) del ciclo 16: Qj=2 (el operando Fj=f0 lo produce UF2=Mul
 
 > Divide SI Div f10 f0 f6 2 NO SI
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
+
+Relacionado: [[campos-qj-qk-rj-rk-en-el-estado-de-unidades-funcionales-del]] · [[como-leer-la-tabla-de-estado-de-unidades-funcionales-en-el-m]] · [[estado-de-registros-resultado-register-result-status-en-el-m]]

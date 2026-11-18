@@ -26,4 +26,4 @@ Patrón de dependencias: RAW en 3→5, 4→5, 4→6, 5→7, 6→8. WAW potencial
 > L.D F0, 0(R1) / L.D F2, 0(R2) / ADD.D F4, F0, F2 / L.D F6, 0(R3) / MUL.D F8, F4, F6 / ADD.D F10, F6, F12 / S.D F8, 8(R1) / S.D F10, 8(R2)
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[secuencia-de-instrucciones-del-problema-3-examen-ac-junio-20]] · [[secuencia-de-instrucciones-mips64-para-simulacion-tomasulo-p]] · [[secuencia-de-instrucciones-para-simulacion-tomasulo-con-div]]

@@ -16,3 +16,5 @@ Speedup_global = 1 / [(1-f) + f/k], donde f = fracción de tiempo en FP, k = ace
 
 > We want to get a speedup of 2 for the benchmark we are considering. If the execution time of this benchmark in the old floating-point hardware is 100 seconds, how much of that initial execution time should the floating-point instructions count to get this speedup?
 > — `repo:datos/temarios/AC/examenes/January2021.pdf`
+
+Relacionado: [[aplicacion-de-la-ley-de-amdahl-para-encontrar-fraccion-de-co]] · [[calculo-de-speedup-con-ley-de-amdahl-para-mejora-de-unidad-d]] · [[factor-de-mejora-necesario-segun-ley-de-amdahl-para-un-speed]]

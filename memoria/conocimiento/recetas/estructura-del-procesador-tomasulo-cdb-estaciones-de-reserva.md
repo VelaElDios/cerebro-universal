@@ -22,3 +22,5 @@ Componentes clave:
 
 > Todos los resultados de las unidades funcionales y de memoria se envían al bus común de datos (CDB), que van al fichero de registros FP, a las estaciones de reserva y buffers de almacenamiento. Todos los buffers y estaciones de reserva tienen campos de tipo etiqueta, empleados para el control de riesgos
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[bus-comun-de-datos-cdb-en-tomasulo-difunde-resultados-de-uf]]

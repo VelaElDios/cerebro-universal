@@ -27,4 +27,4 @@ Clave: Con renombrado (Tomasulo) WAW/WAR se eliminan; en pipeline estático / Sc
 > Indica las dependencias de datos, antidependencias y dependencias de salida. Indica si son entre iteraciones.
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf`
 
-Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]]
+Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[tipos-de-dependencias-en-bucles-loop-independent-vs-loop-car]] · [[identificacion-de-dependencias-loop-carried-en-bucles-c-styl]] · [[analisis-de-dependencias-en-codigo-risc-v-raw-war-waw]]

@@ -17,4 +17,4 @@ Calcular rendimiento ponderado por coste. Carga de trabajo = ambos programas. Ti
 > Deseamos comparar el rendimiento de dos sistemas diferentes: S1 y S2. El sistema S1 cuesta 10000 € y el sistema S2 cuesta 15000 €. Se han realizado las siguientes medidas sobre estos sistemas: Programa 1: 20 sg en S1, 15 sg en S2; Programa 2: 10 sg en S1, 5 sg en S2. ¿Qué sistema es más efectivo en coste usando como carga de trabajo los programas 1 y 2?
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[ancho-y-tamano-en-bits-de-un-btb-implicito-con-1024-entradas]] · [[calculo-de-coste-efectividad-entre-dos-sistemas-con-carga-de]] · [[comparativa-de-coste-efectividad-entre-sistemas-rendimiento]] · [[calculo-de-cost-effectiveness-entre-dos-sistemas-con-cargas]]

@@ -17,4 +17,4 @@ Predictor (1,1): 1 bit de historia global (BHR), BHT indexada por BHR con contad
 > Analiza la evolución de un predictor correlacionado (1,1) ante la siguiente secuencia de saltos: Tomado, No Tomado, Tomado. Supón que el estado inicial es BHR=0 y todos los bits de la BHT=0. d. Se produce 1 fallo y 2 aciertos
 > — `repo:datos/temarios/AC/examenes/Enero2026.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[bits-de-prediccion-en-la-i-cache-funcionamiento-y-ventajas]] · [[predictor-correlacionante-de-dos-niveles-1-1-con-bhr-global]] · [[comportamiento-de-predictor-correlacionado-2-1-con-historia]] · [[predictor-correlacionado-1-2-con-bhr-y-dos-bhts]]

@@ -17,4 +17,4 @@ Aplicar la ley de Amdahl: speedup = 1 / ((1 - f) + f/s), donde f es la fracción
 > Suppose we upgrade a machine making all floating-point instructions execute ten times faster. If the execution time of some test program before the floating-point enhancement is 100 seconds, what will be the speed gain if half of the 100 seconds is spent executing floating-point instructions?
 > — `repo:datos/temarios/AC/examenes/June 2024.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[calculo-de-speedup-con-ley-de-amdahl-para-mejora-de-unidad-d]] · [[calculo-de-speedup-con-ley-de-amdahl-para-instrucciones-de-p]] · [[calculo-de-ganancia-de-velocidad-speedup-con-la-ley-de-amdah]]

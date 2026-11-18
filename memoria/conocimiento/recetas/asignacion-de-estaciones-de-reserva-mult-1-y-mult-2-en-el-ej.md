@@ -20,4 +20,4 @@ La notación `R(f2)` indica que el operando j (f2) está disponible en el banco 
 > Mult 1          SI        Mult                         R(f2)   Carga 1
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[como-evoluciona-la-tabla-de-estaciones-de-reserva-en-tomasul]] · [[eleccion-de-dos-estaciones-de-multiplicacion-mult-1-y-mult-2]] · [[convencion-de-nomenclatura-en-tablas-de-tomasulo-del-temario]]

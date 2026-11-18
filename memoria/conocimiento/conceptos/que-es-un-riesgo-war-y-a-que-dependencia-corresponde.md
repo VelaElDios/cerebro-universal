@@ -17,4 +17,4 @@ WAR = Write After Read = antidependencia. Ocurre cuando una instrucción posteri
 > Un riesgo tipo WAR a) Se corresponde con una dependencia de datos b) Se corresponde con una dependencia de salida c) Se corresponde con una dependencia de control
 > — `repo:datos/temarios/AC/examenes/Noviembre2011.pdf`
 
-Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]
+Relacionado: [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord]] · [[antidependencia-war-siempre-genera-hazard-war]] · [[hazard-war-corresponde-a-antidependencia-dependencia-de-nomb]]

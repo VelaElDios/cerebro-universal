@@ -21,4 +21,4 @@ Esto explica por qué Predictor 2 falla sistemáticamente en los Taken de B1.
 > B1 (R2=0)         T          P2          N           MISS       00 00              1 0              001 000 B1 (R2=1)         N          P2          N           HIT        00 00              0 0              000 000 B1 (R2=0)         T          P2          N           MISS       00 00              1 0              001 000
 > — `repo:datos/temarios/AC/examenes/June2017.pdf` (cita sin comprobar)
 
-Relacionado: [[predictor-local-de-1-bit-predictor-1-y-predictor-local-de-3]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]]
+Relacionado: [[predictor-local-de-1-bit-predictor-1-y-predictor-local-de-3]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce]] · [[calculo-de-tasa-de-acierto-con-predictor-de-1-bit-inicializa]]

@@ -19,3 +19,5 @@ Arquitectura = atributos visibles al programador (conjunto de instrucciones, reg
 
 ## Ampliación (2026-11-18, )
 Arquitectura = atributos visibles al programador (conjunto instrucciones, formatos, direccionamiento). Organización = detalles de implementación transparentes al programador (señales control, periféricos, tecnología memoria). La respuesta correcta: b) The computer organization.
+
+Relacionado: [[definicion-de-arquitectura-de-computadores-frente-a-organiza]] · [[definicion-de-arquitectura-frente-a-organizacion-del-computa]] · [[definicion-de-arquitectura-de-computador-visible-al-programa]]

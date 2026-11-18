@@ -17,4 +17,4 @@ Tres columnas de tabla distintas reflejan las fases de cada método: (1) Scorebo
 > Instruction             Issue        Read operands         Execution     Write result / Instruction                Issue             Execution                  Write result / Instruction            Issue           Execution          Write result         Commit
 > — `repo:datos/temarios/AC/examenes/June2021.pdf` (cita sin comprobar)
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[simulacion-scoreboard-vs-tomasulo-basico-pasos-de-ejecucion]] · [[diferencia-escritura-resultado-vs-terminacion-commit-en-toma]] · [[tabla-de-estado-en-tomasulo-especulativo-con-rob-issue-execu]]

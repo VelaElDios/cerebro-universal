@@ -20,4 +20,4 @@ Valores observados en la simulación:
 > fld f0, 0(x1) 1 9 10 fmul.d f4, f0, f2 2 14 15
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[latencias-asumidas-para-carga-2-ciclos-y-multiplicacion-fp-3]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]]

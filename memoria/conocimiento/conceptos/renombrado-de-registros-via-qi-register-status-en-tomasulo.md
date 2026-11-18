@@ -21,4 +21,4 @@ La tabla Qi (Register Result Status) muestra qué unidad funcional producirá el
 > Estado de los registros                                      f0           f2          f4            f6         f8        f10          f12 Qi         Mult 1 M(45+x3)                     Suma 2 Suma 1           Mult 2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[renombrado-de-registros-via-qi-en-bucle-con-reuso-de-f0-f2-f]] · [[uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en]] · [[fichero-de-registros-con-campo-qi-en-tomasulo]]

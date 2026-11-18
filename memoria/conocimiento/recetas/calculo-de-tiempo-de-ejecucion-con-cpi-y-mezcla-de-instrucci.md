@@ -17,4 +17,4 @@ Para calcular el tiempo de ejecución: 1) Calcular ciclos totales = Σ (Instrucc
 > Supongamos que medimos el código del programa para un compilador concreto y obtenemos los siguientes valores: Número de instrucciones (en miles de millones) A 4 B 2 C 1 ... frecuencia de reloj de la máquina es de 600Mhz. ¿Cuál será el tiempo de ejecución?
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-mixto-y-frecuencia-de]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia]]

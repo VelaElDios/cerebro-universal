@@ -16,3 +16,5 @@ Coste-efectividad = Rendimiento / Precio = (1 / Tiempo) / Precio. Para A: (1/60)
 
 > Computer A costs 1000 €, and computer B costs 750 €. We run a benchmark that spends 60 seconds on A and 80 seconds on B. Which computer is more effective in cost?
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
+
+Relacionado: [[comparativa-de-coste-efectividad-entre-sistemas-rendimiento]] · [[calculo-de-coste-efectividad-entre-dos-sistemas-pregunta-4]] · [[como-comparar-efectividad-en-coste-entre-dos-sistemas]]

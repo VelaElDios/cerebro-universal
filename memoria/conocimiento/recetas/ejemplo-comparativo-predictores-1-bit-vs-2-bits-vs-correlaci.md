@@ -17,4 +17,4 @@ Código: if(d==0) {d=1;} if(d==1) {...} con d alternando 2 y 0. Comportamiento r
 > a) Predictor de un bit para cada salto inicializado a NT  100% de fallos • b) Predictor de 2 bits para cada salto inicializado a NT  50% de fallos • c) Predictor correlacionado (1,1) • Implementación más simple: predictor (1,1):  1 bit en la BHR, que selecciona la BHT  2 tablas BHT de 1 bit
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[como-el-predictor-de-2-bits-resuelve-el-problema-de-bucles-a]]
+Relacionado: [[como-el-predictor-de-2-bits-resuelve-el-problema-de-bucles-a]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[simulacion-de-predictores-1-bit-4-bits-saturado-y-correlacio]] · [[predictor-dinamico-de-un-bit-funcionamiento-y-limitacion-en]]

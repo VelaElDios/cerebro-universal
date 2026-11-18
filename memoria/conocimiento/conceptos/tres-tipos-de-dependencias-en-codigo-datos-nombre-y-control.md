@@ -16,3 +16,5 @@ Taxonomía fundamental para el análisis de dependencias. (1) Dependencias de da
 
 >  Tipos de dependencias:   Dependencias de datos   Dependencias de nombre     Antidependencia     Dependencia de salida     Dependencias de control
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf`
+
+Relacionado: [[dos-estrategias-genericas-para-tratar-dependencias-de-datos]] · [[tipos-de-dependencia-y-riesgos-asociados-en-segmentacion]] · [[las-dependencias-de-datos-no-siempre-generan-riesgos-y-se-el]]

@@ -24,4 +24,4 @@ Mecanismo para eliminar saltos condicionales:
 > Objetivo: eliminar saltos, convirtiendo dependencias de control en dependencias de datos Requisitos: instrucciones predicadas o condicionales y registros predicados Cada registro predicado de un bit puede ser escrito después de comprobar una condición Las instrucciones predicadas usan un registro predicado como entrada adicional Las instrucciones predicadas se buscan, decodifican y emiten normalmente Dependiendo de la arquitectura del procesador: • una instrucción predicada se ejecuta sólo si el predicado es cierto • se puede ejecutar pero no se escribe en el banco de registros si el predicado es falso (arquitectura IA64)
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]]
+Relacionado: [[arquitectura-epic-ia64-y-procesadores-itanium]] · [[instrucciones-predicadas-eliminan-saltos-y-prediccion-pregun]] · [[salto-retardado-y-instrucciones-predicadas-como-alternativas]] · [[ventajas-e-inconvenientes-de-las-instrucciones-predicadas]]

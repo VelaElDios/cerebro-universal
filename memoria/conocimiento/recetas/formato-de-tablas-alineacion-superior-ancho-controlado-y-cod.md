@@ -16,3 +16,5 @@ Temas: [[latex]] · [[memoria]] · [[tablas]] · [[tfg]]
 
 > Ninguna fila se pisa con otra: columnas alineadas arriba (`p{}`, nunca `m{}`) y algo de aire entre filas (`\addlinespace`). Los anchos suman como mucho `\linewidth` y cada columna es lo bastante ancha para que no se partan las palabras cortas (Id, Hito, RNF-01). Texto de las tablas en `\small`. El código y las rutas van con `\path{}` o con `\texttt{}` más `\allowbreak`, para que no se salgan del margen.
 > — `../../memoria/reglas-tfg.md` (cita sin comprobar)
+
+Relacionado: [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]]

@@ -16,3 +16,5 @@ En una iteración: RAW (verdaderas): LW R2,0(R1) → BEQZ R2 (B1); LW R2,0(R1) �
 
 > a) Indica las dependencias de datos, antidependencias y dependencias de salida que aparecen en el código (en una sola iteración).
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
+
+Relacionado: [[dependencias-en-bucle-mips-de-carga-modificacion-almacenamie]] · [[dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]

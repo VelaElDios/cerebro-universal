@@ -16,3 +16,5 @@ La especulación (ejecución anticipada de instrucciones tras un salto predicho)
 
 > Las técnicas de especulación y las de desenrollamiento de bucles se usan para: a) Reducir los riesgos de control b) Reducir los riesgos RAW c) Reducir los riesgos WAW d) Ninguna de las anteriores
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
+
+Relacionado: [[objetivo-del-desenrollamiento-de-bucles-loop-unrolling]] · [[desenrollamiento-de-bucles-reduce-dependencias-de-control-me]] · [[eliminacion-de-dependencias-de-control-mediante-desenrollado]]

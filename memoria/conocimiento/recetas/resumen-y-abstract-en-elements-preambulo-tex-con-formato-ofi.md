@@ -20,4 +20,6 @@ En `elements/preambulo.tex` (tras la declaración de autoría): (1) `\cleardoubl
 ## Ampliación (2026-11-16, memoria-procesos)
 El preámbulo oficial del TFG (elements/preambulo.tex) debe contener solo: declaración de autoría, Resumen (≥150 palabras, dos sprints y juego) con «Palabras clave», y Abstract (≥120 palabras, inglés) con «Keywords». No hay segunda portada. El formato usa \Large{\bft{Resumen}} y \Large{\bft{Abstract}} centrados, con \vskip1cm y \medskip. La declaración de autoría no se toca.
 
+Relacionado: [[paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[portada-unica-oficial-del-tfg-elements-portada-tex]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

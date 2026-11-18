@@ -17,4 +17,4 @@ La desambiguación de memoria se refiere a determinar si dos accesos a memoria (
 > The problem of memory "disambiguation": a) Refers to the occurrence of potential RAW hazards in memory b) Refers to the occurrence of potential WAR hazards in memory c) Refers to the occurrence of potential in-memory WAW hazards d) Refers to the occurrence of potential structural hazards in memory
 > — `repo:datos/temarios/AC/examenes/January2024.pdf`
 
-Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[definicion-de-riesgo-raw-read-after-write]]
+Relacionado: [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[definicion-de-riesgo-raw-read-after-write]] · [[riesgo-raw-read-after-write-y-su-causa]] · [[definicion-de-dependencia-de-nombre-name-dependency-entre-in]] · [[antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord]]

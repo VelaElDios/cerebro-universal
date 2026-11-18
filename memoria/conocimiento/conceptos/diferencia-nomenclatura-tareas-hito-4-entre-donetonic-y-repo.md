@@ -5,9 +5,9 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum", "sprint"]
 claves: ["Hito 4", "DoneTonic", "ramas", "T21-T26", "nomenclatura"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-18"
 ---
 
 Temas: [[donetonic]] · [[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]]
@@ -17,7 +17,7 @@ Discrepancia documentada: DoneTonic usa nombres descriptivos de tarea (T21 Regis
 > > **Hito 4.** En DoneTonic las tareas del Hito 4 se llaman por lo que hacen (T21 *Registrar app OAuth*, T22 *Flujo login OAuth*, T23 *Servicio correo*, T24 *Flujo confirmación*, T25 *Errores backend* y T26 *Mensajes frontend*). En el repositorio el trabajo se repartió en cinco ramas (`hito-4/T22-google-oauth` #40, `T23-correo` #38, `T24-confirmacion` #39, `T25-secretos-hito4` #37 y `T26-privacidad` #41). El manejo de errores (P17) está repartido por las cinco. Las seis tareas se marcaron como hechas en DoneTonic al cerrar el Sprint 1.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]] · [[convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

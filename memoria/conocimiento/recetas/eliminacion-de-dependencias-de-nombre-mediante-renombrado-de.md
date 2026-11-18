@@ -28,7 +28,7 @@ Cada iteración usa registros físicos/distintos, rompiendo WAW/WAR. Requiere **
 > Hay que eliminar las dependencias de nombre • Renombrado de registros • Se necesita un mayor número de registros
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]]
+Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[calculo-de-flops-ciclo-para-avx2-con-fma]] · [[renombrado-de-registros-para-eliminar-dependencias-de-nombre]] · [[eliminacion-de-dependencias-de-nombre-mediante-renombramient]] · [[dependencias-de-nombre-war-waw-se-eliminan-con-renombramient]]
 
 ## Ampliación (2026-11-18, )
 Las dependencias de nombre (WAW y WAR) se eliminan con renombrado de registros (hardware o software). El desenrollado de bucles y trace scheduling no las eliminan por sí solos. Opción c).

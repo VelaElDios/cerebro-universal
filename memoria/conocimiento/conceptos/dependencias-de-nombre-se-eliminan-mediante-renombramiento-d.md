@@ -17,4 +17,4 @@ Las dependencias de nombre (antidependencias WAR y dependencias de salida WAW) n
 > Con respecto a las dependencias de nombre: Se eliminan mediante renombramiento
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf` (cita sin comprobar)
 
-Relacionado: [[hazard-war-corresponde-a-antidependencia-dependencia-de-nomb]]
+Relacionado: [[hazard-war-corresponde-a-antidependencia-dependencia-de-nomb]] · [[dependencias-de-nombre-war-waw-se-eliminan-con-renombramient]] · [[el-renombrado-de-registros-evita-dependencias-de-nombre-war]] · [[eliminacion-de-dependencias-de-nombre-mediante-renombramient]]

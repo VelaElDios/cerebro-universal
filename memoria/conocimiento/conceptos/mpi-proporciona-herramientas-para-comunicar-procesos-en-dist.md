@@ -17,4 +17,4 @@ MPI (Message Passing Interface) es una biblioteca estándar para paso de mensaje
 > MPI a) Proporciona las herramientas para comunicar procesos situados en diferentes procesadores
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf`
 
-Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[multicomputadores-sistemas-de-memoria-distribuida-varios-esp]] · [[paralelismo-a-nivel-de-bucle-lp-solapamiento-de-iteraciones]] · [[clasificacion-de-flynn-de-procesador-masivamente-paralelo-mp]]

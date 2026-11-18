@@ -17,4 +17,4 @@ MIPS y MFLOPS son métricas sintéticas que no reflejan carga real (distinta mez
 > La mejor medida del rendimiento de un computador es: c) El tiempo de ejecución de los programas en dicho computador
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf` (cita sin comprobar)
 
-Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]]
+Relacionado: [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]] · [[mejor-metrica-de-rendimiento-tiempo-de-ejecucion]] · [[mejor-medida-de-rendimiento-de-un-computador]] · [[tipos-de-benchmarks-sinteticos-reales-nucleos-reducidos-y-su]]

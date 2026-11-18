@@ -17,4 +17,4 @@ Ley de Amdahl: Speedup_global = 1 / [(1 - f) + f/k], donde f = fracción de tiem
 > Supongamos que mejoramos una máquina haciendo que todas las instrucciones en punto flotante se ejecuten 4 veces más rápido. Estamos buscando un programa de prueba para medir el rendimiento de esta nueva máquina, que nos dé como resultado una ganancia en velocidad del doble. Si el programa de prueba tarda 100 segundos con el antiguo hardware en punto flotante ¿Qué cantidad de tiempo de ejecución inicial deberían tener las instrucciones en punto flotante?
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[aplicacion-de-la-ley-de-amdahl-para-calcular-fraccion-de-tie]] · [[calculo-de-speedup-con-ley-de-amdahl-para-instrucciones-de-p]] · [[aplicacion-de-la-ley-de-amdahl-para-mejora-de-coma-flotante]]

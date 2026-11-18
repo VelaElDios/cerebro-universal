@@ -17,4 +17,4 @@ En el bucle dado, la 1ª instrucción (L.D) lee R1 y la 4ª (DADDUI) escribe R1.
 > Entre la primera y la cuarta instrucción... L.D F4, 0(R1) ... DADDUI R1, R1, #8
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf` (cita sin comprobar)
 
-Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[identificacion-de-antidependencia-war-entre-store-e-incremen]] · [[antidependencia-war-entre-s-d-y-daddui-por-r1-en-misma-itera]]

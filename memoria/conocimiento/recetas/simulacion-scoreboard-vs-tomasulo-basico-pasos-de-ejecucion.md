@@ -17,4 +17,4 @@ Código: ADD.D F0,F2,F4; L.D F2,12(R2); SUB.D F6,F0,F2; MUL.D F4,F3,F2; ADD.D F6
 > Detail the execution of the code below, assuming the Scoreboard algorithm. For this, indicate in the following table the names of the execution steps and the cycle number in which each step is completed for each instruction. ... Detail the execution of the same code, but assuming now the basic version of the Tomasulo’s algorithm (without speculation).
 > — `repo:datos/temarios/AC/examenes/June2018.pdf` (cita sin comprobar)
 
-Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[comparativa-tomasulo-vs-marcador-scoreboard]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[algoritmo-de-marcador-scoreboard-pasos-de-simulacion-para-ej]] · [[simulacion-ciclo-a-ciclo-del-marcador-scoreboard-de-tomasulo]] · [[diferencias-clave-entre-las-tres-tablas-de-planificacion-ped]]

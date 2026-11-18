@@ -17,4 +17,4 @@ La especulación (ejecución de instrucciones antes de saber si son necesarias) 
 > La especulación: a) Afecta al flujo de datos del programa haciendo uso de renombramiento b) Incrementa el paralelismo a nivel de instrucción y computador c) Evita que se produzcan excepciones d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf`
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[condicion-necesaria-para-que-la-especulacion-sea-valida]] · [[bits-venenosos-excepcion-no-recuperable-marca-registro-desti]]

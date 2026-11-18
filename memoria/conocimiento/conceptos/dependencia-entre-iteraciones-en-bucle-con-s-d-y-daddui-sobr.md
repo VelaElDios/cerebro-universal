@@ -16,3 +16,5 @@ S.D F4, 0(R1) usa R1 como base; DADDUI R1, R1, #-8 actualiza R1. En la misma ite
 
 > Between the S.D and the DADDUI instructions... a) There are not dependences b) There is a data dependence, through R1, in the same iteration c) There is a data dependence, through R1, between iterations d) There is an output dependence, through R1, in the same iteration
 > — `repo:datos/temarios/AC/examenes/January2016.pdf`
+
+Relacionado: [[analisis-de-dependencias-en-bucle-mips-con-acceso-a-memoria]] · [[antidependencia-war-entre-s-d-y-daddui-por-r1-en-misma-itera]] · [[dependencias-en-fragmento-de-codigo-fp-mips-l-d-add-s-add-s]]

@@ -16,3 +16,5 @@ Aplicar ley de Amdahl: Speedup_global = 1 / ((1 - f) + f/k), donde f = fracción
 
 > We improve a computer so that floating point instructions are now executed 6 times faster. We are looking for a test program obtaining a speedup of 2 for the improved version of the computer. Assuming that this program is executed in 200 seconds using the original floating point hardware, the time devoted to run floating point instructions should be…
 > — `repo:datos/temarios/AC/examenes/June2018.pdf`
+
+Relacionado: [[calculo-de-speedup-con-ley-de-amdahl-mejora-10x-en-punto-flo]] · [[calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do]] · [[aplicacion-de-la-ley-de-amdahl-para-encontrar-fraccion-de-co]]

@@ -16,3 +16,5 @@ Para romper dependencias de nombre (antidependencias WAR y dependencias de salid
 
 > Se trata de escribir sobre registros o posiciones distintas a las que se usan para leer. Puede conseguirse estática (compilador) o dinámicamente (hardware)
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
+
+Relacionado: [[eliminacion-de-dependencias-de-nombre-mediante-renombrado-de]] · [[eliminacion-de-dependencias-de-nombre-mediante-renombramient]] · [[definicion-de-dependencia-de-nombre-waw-y-war]]

@@ -21,4 +21,4 @@ Esto implementa el renombrado dinámico: las instrucciones leen Vj/Vk si el valo
 > Qi        Carga 1                 Mult 1
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[renombrado-de-registros-via-qi-register-status-en-tomasulo]] · [[registros-flotantes-involucrados-y-su-estado-inicial-en-el-e]] · [[renombrado-de-registros-via-qi-en-bucle-con-reuso-de-f0-f2-f]]

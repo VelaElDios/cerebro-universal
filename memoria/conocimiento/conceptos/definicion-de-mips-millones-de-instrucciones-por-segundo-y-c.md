@@ -16,3 +16,5 @@ MIPS = Millones de Instrucciones Por Segundo. 250 MIPS = 250×10⁶ instr/s. Cos
 
 > Nos dicen que un computador tiene un rendimiento de 250 MIPS. Eso quiere decir que: c) Se ejecutan 250 millones de instrucciones por segundo
 > — `repo:datos/temarios/AC/examenes/Enero2013.pdf` (cita sin comprobar)
+
+Relacionado: [[definicion-de-mips-millones-de-instrucciones-por-segundo]] · [[mejor-medida-de-rendimiento-de-un-computador]] · [[paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza]]

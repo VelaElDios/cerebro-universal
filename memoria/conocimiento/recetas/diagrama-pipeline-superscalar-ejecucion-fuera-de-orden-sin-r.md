@@ -17,4 +17,4 @@ Diferencias vs in-order: Execute puede reordenar instrucciones listas (operandos
 > b) Ejecución fuera de orden, sin capacidad de renombramiento, y escritura en orden
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e]]
+Relacionado: [[diagrama-pipeline-superscalar-grado-4-ejecucion-en-orden-y-e]] · [[diagrama-pipeline-superscalar-ejecucion-fuera-de-orden-con-r]] · [[diferencias-clave-entre-los-tres-modelos-de-ejecucion-supers]]

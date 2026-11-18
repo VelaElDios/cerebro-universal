@@ -17,4 +17,4 @@ Predictor (m,n) = m bits de historia global (BHR), n bits por contador en cada P
 > Detail the behavior of a two-level (2, 2) correlating branch predictor, assuming the same input vector, and considering the initial state indicated in the table. ... Prediction bits (BHR and BTHs) 00 00 00 00
 > — `repo:datos/temarios/AC/examenes/June2023.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[simulacion-de-predictor-two-level-correlacionante-2-1-con-bh]] · [[simulacion-de-predictor-correlacionante-de-2-niveles-2-1-con]] · [[simulacion-paso-a-paso-de-predictor-correlacionado-2-1-con-b]]

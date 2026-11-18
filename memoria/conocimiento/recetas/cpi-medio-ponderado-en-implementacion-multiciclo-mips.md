@@ -17,4 +17,4 @@ CPI = Σ (fracción_i × ciclos_i) = 0.20×5 + 0.25×4 + 0.35×4 + 0.10×3 + 0.1
 > El CPI en una implementación multiciclo del MIPS, considerando un programa con la siguiente mezcla de instrucciones: 20% cargas (5 ciclos), 25% almacenamientos (4 ciclos), 35% tipo R (4 ciclos), 10% saltos condicionales (3 ciclos) y 10% saltos incondicionales (3 ciclos), es
 > — `repo:datos/temarios/AC/examenes/Junio2015.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]] · [[calculo-de-cpi-en-mips-multiciclo-con-mezcla-de-instruccione]] · [[calculo-de-cpi-en-implementacion-multiciclo-mips-con-mezcla]] · [[calculo-de-mips-a-partir-de-mezcla-de-instrucciones-cpi-y-fr]]

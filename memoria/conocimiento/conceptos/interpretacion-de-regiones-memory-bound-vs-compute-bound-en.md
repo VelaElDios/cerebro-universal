@@ -20,3 +20,5 @@ El objetivo de optimización: mover kernels hacia arriba (mejorar uso de BW o c�
 
 > Análisis:     Identificar límites por memoria (memory-bound) vs. cómputo.
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_3_pintarRoofLin.py`
+
+Relacionado: [[punto-de-inflexion-ridge-point-en-el-modelo-roofline]] · [[punto-de-inflexion-knee-del-modelo-roofline-i-knee-gflops-ma]] · [[como-calcular-y-representar-puntos-de-patrones-en-el-grafico]]

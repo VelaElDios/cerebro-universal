@@ -16,3 +16,5 @@ En VLIW (Very Long Instruction Word), el compilador analiza dependencias y empaq
 
 > ¿Cuál es la principal diferencia entre una arquitectura superescalar y una VLIW? ... c. En las arquitecturas VLIW el compilador determina el paralelismo entre instrucciones, mientras que en las superescalares lo hace principalmente el hardware.
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf` (cita sin comprobar)
+
+Relacionado: [[rasgo-comun-entre-superescalares-y-vliw-multiples-unidades-d]] · [[definicion-de-procesador-vliw]] · [[vliw-el-compilador-empaqueta-varias-operaciones-en-una-instr]]

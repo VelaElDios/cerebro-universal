@@ -41,4 +41,4 @@ Estado inicial dado en examen:
 > After each prediction, apart from updating both predictors, the corresponding counter must be updated according to the next table: Predictor 1 behavior Hit, Predictor 2 behavior Hit → The counter value does not change; Predictor 1 behavior Hit, Predictor 2 behavior Miss → Increment the counter (+1); Predictor 1 behavior Miss, Predictor 2 behavior Hit → Decrement the counter (-1); Predictor 1 behavior Miss, Predictor 2 behavior Miss → The counter value does not change
 > — `repo:datos/temarios/AC/examenes/January2020.pdf` (cita sin comprobar)
 
-Relacionado: [[predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y]] · [[resultados-reales-de-saltos-b1-y-b2-en-bucles-anidados-con-r]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y]] · [[resultados-reales-de-saltos-b1-y-b2-en-bucles-anidados-con-r]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[tabla-de-actualizacion-de-contadores-de-2-bits-saturados-par]] · [[reglas-de-actualizacion-del-contador-selector-de-2-bits-en-p]]

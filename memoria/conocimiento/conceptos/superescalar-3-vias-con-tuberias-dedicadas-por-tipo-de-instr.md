@@ -26,4 +26,4 @@ Restricciones:
 > Assume that we have a 3-way superscalar processor capable of issuing an integer instruction (including branches), a memory instruction, and a floating-point instruction per clock cycle.
 > — `repo:datos/temarios/AC/examenes/January2020.pdf`
 
-Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]]
+Relacionado: [[configuracion-vliw-de-6-unidades-funcionales-con-latencias-a]] · [[configuracion-superscalar-4-issue-para-diagramas-de-pipeline]] · [[planificacion-en-superscalar-mips64-4-vias-2-enteros-2-fp-co]] · [[planificacion-en-superescalar-3-vias-entero-salto-memoria-fp]]

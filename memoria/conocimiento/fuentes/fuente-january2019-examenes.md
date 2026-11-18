@@ -28,7 +28,7 @@ Este trozo contiene dos ejercicios de un examen de Arquitectura de Computadores 
 - [[paso-de-commit-en-superscalar-actualizacion-de-registros]]
 - [[planificacion-dinamica-sin-especulacion-orden-de-ejecucion-d]]
 - [[planificacion-scheduling-de-bucle-en-vliw-con-forwarding-y-d]]
-- [[predictor-hibrido-de-dos-predictores-locales-con-selector-po]]
+- [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]]
 - [[procesadores-superscalar-son-maquinas-sisd]]
 - [[simulacion-paso-a-paso-del-predictor-hibrido-para-el-bucle-d]]
 - [[speedup-no-tiene-unidades-de-medida]]

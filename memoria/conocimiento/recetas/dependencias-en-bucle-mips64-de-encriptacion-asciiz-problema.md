@@ -24,4 +24,4 @@ Antidependencias: I4→I5 (R1).
 > loop: LB R2, 0(R1) # I1; carga en R2 el carácter actual de la cadena DADD R3, R2, R0 # I2; copia R2 en R3 DADDUI R2, R2, #5 # I3; codifica el carácter (también el character NUL) SB R2, 0(R1) # I4; almacena el carácter codificado en memoria DADDUI R1, R1, #1 # I5; R1 apunta al siguiente caráceter de la cadena BNEZ R3, loop # I6; comprueba si el carácter es NULL(0x00)
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[antidependencia-war-y-dependencia-de-salida-waw-definiciones]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[dependencias-en-bucle-mips-de-carga-modificacion-almacenamie]] · [[dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v]] · [[analisis-de-dependencias-raw-war-waw-en-una-iteracion-del-bu]]

@@ -28,4 +28,4 @@ Ejemplo típico: Bucle 6 instrucciones, 2 stalls/iter → 8 ciclos/iter → CPI 
 > Calcula el CPI del código." / "Calcula el CPI del código obtenido tras aplicar la segmentación software." / "Indica detenciones que se producen al ejecutar el código y calcula el CPR" / "Calcula el CPR que se obtiene con el nuevo código (con desenrollamiento).
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3_Prob.pdf` (cita sin comprobar)
 
-Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]]
+Relacionado: [[parametros-estandar-para-ejercicios-de-segmentacion-software]] · [[desenrollamiento-de-bucle-minimo-para-eliminar-detenciones-e]] · [[cpi-tras-desenrollado-y-planificacion-de-bucle]] · [[calculo-de-speedup-para-bucle-desenrollado-en-pipeline-con-h]] · [[calculo-de-detenciones-stalls-y-cpr-en-pipeline-risc-v-con-f]]

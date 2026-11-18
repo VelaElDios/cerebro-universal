@@ -16,3 +16,5 @@ Cada estación de reserva almacena: (1) la operación a realizar; (2) los operan
 
 > Las estaciones de reserva contienen: Las instrucciones que han sido emitidas y esperan su ejecución; Operandos para esas instrucciones (si ya han sido calculados), o el origen de los operandos (la estación de reserva que los obtendrá); Información necesaria para controlar la ejecución; Etiquetas para el control de los riesgos
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[estaciones-de-reserva-almacenan-etiquetas-para-control-de-ri]] · [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[idea-central-de-tomasulo-control-distribuido-con-estaciones]]

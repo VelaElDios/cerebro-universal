@@ -16,3 +16,5 @@ SIMD (Single Instruction Multiple Data) ejecuta la misma instrucción sobre múl
 
 > A SIMD architecture is:
 > — `repo:datos/temarios/AC/examenes/January 2025.pdf`
+
+Relacionado: [[en-la-taxonomia-de-flynn-los-multicomputadores-son-maquinas]] · [[clasificacion-de-multiprocesadores-en-taxonomia-de-flynn]] · [[taxonomia-de-flynn-clasificacion-por-flujos-de-instrucciones]]

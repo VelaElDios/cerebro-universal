@@ -17,4 +17,4 @@ Decisión de modelado en el enunciado: el Common Data Bus (CDB) no permite broad
 > se supone que en el mismo ciclo de reloj no se puede escribir un dato en este bus e iniciar la ejecución de una operación que estuviera esperando ese dato
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf`
 
-Relacionado: [[escritura-de-resultado-y-actualizacion-de-qi-en-registro-des]]
+Relacionado: [[escritura-de-resultado-y-actualizacion-de-qi-en-registro-des]] · [[restriccion-de-cdb-en-tomasulo-no-escritura-e-inicio-simulta]] · [[restriccion-cdb-mismo-ciclo-en-tomasulo-no-iniciar-ejecucion]] · [[restriccion-de-forwarding-por-cdb-en-tomasulo-no-escritura-e]]

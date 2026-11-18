@@ -16,3 +16,5 @@ Clasificación: 1) Sintéticos (Dhrystone para entero, Whetstone para FP) — di
 
 > Benchmark: carga de test o programa de prueba - programas utilizados para medir el rendimiento de un sistema informático o de alguna de sus partes
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1 2026-27.pdf` (cita sin comprobar)
+
+Relacionado: [[definicion-de-benchmarks-sinteticos]] · [[benchmarks-sinteticos-dhrystone-y-whetstone-proposito-y-orig]] · [[mejor-medida-de-rendimiento-tiempo-de-ejecucion-de-programas]]

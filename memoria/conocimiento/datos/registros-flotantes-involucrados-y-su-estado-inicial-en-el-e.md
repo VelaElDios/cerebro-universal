@@ -17,4 +17,4 @@ La tabla muestra 7 registros de doble precisión (f0, f2, f4, f6, f8, f10, f12).
 > Estado de los registros                                       f0            f2          f4            f6         f8      f10         f12
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en]]
+Relacionado: [[uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en]] · [[evolucion-del-registro-base-x1-y-qi-de-registros-fp-en-el-ej]] · [[renombrado-de-registros-via-qi-register-status-en-tomasulo]]

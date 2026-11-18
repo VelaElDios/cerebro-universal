@@ -17,4 +17,4 @@ Diseño del predictor híbrido: (1) Predictor 1 = predictor local de 1 bit por s
 > Detalla el comportamiento de un predictor híbrido que combina dos predictores locales (llamados “Predictor 1” y “Predictor 2”). El Predictor 1 asocia un predictor de 1 bit a cada instrucción de salto (B1 y B2), mientras que el Predictor 2 asocia un predictor de 3 bits a cada salto. Para seleccionar el predictor a emplear hay una tabla (llamada “Contadores”) que almacena un contador saturado de 2 bits para cada salto. Si el bit más significativo del contador es 1 se emplea el Predictor 1, mientras que si es 0 se emplea el Predictor 2.
 > — `repo:datos/temarios/AC/examenes/Junio2017.pdf`
 
-Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]]
+Relacionado: [[bht-con-contadores-de-saturacion-de-2-bits-pregunta-17]] · [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[predictor-hibrido-con-selector-de-2-bits-entre-predictor-de]] · [[predictor-hibrido-con-selectores-por-salto-1-bit-vs-2-bit-y]] · [[predictor-local-de-1-bit-predictor-1-y-predictor-local-de-3]]

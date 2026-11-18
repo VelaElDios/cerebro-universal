@@ -13,7 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «punteros» (este archivo 
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector|Pointer chasing en std::list vs acceso contiguo en std::vector]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector|Pointer chasing en std::list vs acceso contiguo en std::vector]]
 
 ## Temas relacionados
 

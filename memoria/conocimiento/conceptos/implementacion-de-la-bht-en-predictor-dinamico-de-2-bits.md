@@ -17,4 +17,4 @@ La **Branch History Table (BHT)** en un predictor dinámico de 2 bits consiste e
 > The BHT (Branch History Table) in a 2-bit dynamic branch predictor is implemented by means of… b) 2-bit saturating counters.
 > — `repo:datos/temarios/AC/examenes/January2018.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[implementacion-bht-con-contadores-saturados-de-2-bits]] · [[la-bht-almacena-los-bits-de-prediccion-de-todas-las-instrucc]] · [[implementacion-bht-para-predictor-de-2-bits-4k-entradas-80-9]]

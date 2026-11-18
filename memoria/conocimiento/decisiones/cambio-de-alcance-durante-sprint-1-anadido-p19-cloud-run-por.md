@@ -23,6 +23,6 @@ Esto se refleja en:
 > **Cambio de alcance durante el sprint:** el profesor repartió créditos de Google Cloud para educación y se añadió el PBI **P19** (despliegue en Google Cloud Run, tareas T29 y T30). Render se mantiene como despliegue alternativo.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[cambio-de-alcance-de-red-social-a-juego-survivor-justificaci]]
+Relacionado: [[cambio-de-alcance-de-red-social-a-juego-survivor-justificaci]] · [[cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

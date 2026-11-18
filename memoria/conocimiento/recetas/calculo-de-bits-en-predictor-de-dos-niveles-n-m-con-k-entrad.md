@@ -17,4 +17,4 @@ Un predictor de dos niveles (n, m) tiene un registro de historia global de n bit
 > How many bits are required to implement a two-level predictor (3, 4) in which each BHT contains 10 entries?
 > — `repo:datos/temarios/AC/examenes/January2019.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[calculo-de-bits-totales-en-predictor-1-2-con-bht-de-4-entrad]] · [[calculo-de-bits-en-predictor-correlacionado-de-dos-niveles-p]] · [[calculo-de-bits-totales-en-predictor-2-2-con-3-entradas-por]]

@@ -20,3 +20,5 @@ La estación de reserva guarda la operación, los operandos (valor o tag de la R
 
 > La técnica de Tomasulo se usa para… Permitir que las instrucciones independientes adelanten a las instrucciones que estén en espera
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf` (cita sin comprobar)
+
+Relacionado: [[en-tomasulo-sin-especulacion-la-emision-se-detiene-ante-ries]] · [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[tomasulo-sin-especulacion-detenciones-en-escritura-por-riesg]]

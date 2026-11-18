@@ -17,4 +17,4 @@ Para rellenar la tabla: 1) Identificar instrucciones especulativas (marcadas con
 > Instructions marked with * are speculative. Fill in the execution table showing the values after each instruction for the following two cases: a) First case Initial State R1 0 R2 0 R3 8 F0 0 F2 0 F4 0 F6 0 Mem(R1) prohibited Mem(R2) prohibited Mem(R3) 1 b) Second case Initial State R1 5 R2 0 R3 7 F0 0 F2 0 F4 0 F6 0 Mem(R1) 1 Mem(R2) prohibited Mem(R3) 1
 > — `repo:datos/temarios/AC/examenes/June2025.pdf` (cita sin comprobar)
 
-Relacionado: [[planificacion-estatica-con-bits-venenosos-convencion-dirty-p]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]]
+Relacionado: [[planificacion-estatica-con-bits-venenosos-convencion-dirty-p]] · [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[planificacion-estatica-con-poison-bits-en-mips64-reglas-de-e]] · [[valores-iniciales-de-memoria-y-registros-para-los-dos-casos]] · [[funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es]]

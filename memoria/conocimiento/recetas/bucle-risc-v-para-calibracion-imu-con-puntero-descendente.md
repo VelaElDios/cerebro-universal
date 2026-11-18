@@ -17,4 +17,4 @@ Traducción directa del C a ensamblador RISC-V. x10 apunta a lecturas[N-1] (últ
 > loop: fld f1, 0(x10); fmul.d f2, f1, f0; fadd.d f3, f2, f4; fsd f3, 0(x10); addi x10, x10, -8; bne x10, x11, loop
 > — `repo:datos/temarios/AC/examenes/Junio2026.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-war-en-bucle-entre-carga-y-actualizacion-de]] · [[desenrollamiento-de-bucles-4x-con-planificacion-para-elimina]] · [[desenrollamiento-de-bucles-loop-unrolling-4x-con-renombrado]] · [[calculo-de-direcciones-y-offsets-en-bucles-vectoriales-risc]]

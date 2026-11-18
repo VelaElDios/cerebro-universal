@@ -16,3 +16,5 @@ Fórmula general: CPI = CPI_base + (frecuencia_saltos × tasa_fallo × penalizac
 
 > Un computador segmentado de 5 etapas con predictor de salto tomado, ejecuta un código con un 20% de saltos, de los cuales el 70% de saltos es tomado. Se usa un predictor de saltos en el que si se acierta no se pierde ningún ciclo, pero si no se acierta se pierden 2 ciclos. El CPI del sistema será: a) CPI=0,8*1+0,2*0,7*3 b) CPI=0,8*1+0,2*0,3*2 c) CPI= 1*1 +0,2*0,3*2 d) Ninguna de las anteriores
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
+
+Relacionado: [[cpi-con-tecnica-parar-siempre-en-saltos-cpi-1-saltos-tomados]] · [[calculo-de-speedup-comparando-predictor-con-penalidad-variab]] · [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]]

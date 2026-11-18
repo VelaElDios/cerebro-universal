@@ -17,4 +17,4 @@ Tiempo = (Instrucciones × CPI) × Duración_ciclo. Ejemplo: 5.5e9 × 0.9 × 0.5
 > Ejecutamos un programa de 5.5×109 instrucciones en un procesador con un CPI de 0.9 ciclos y con una duración del ciclo de reloj de 0.5 ns. El tiempo de ejecución de dicho programa será de…
 > — `repo:datos/temarios/AC/examenes/Enero2016.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[calculo-de-tiempo-de-ejecucion-a-partir-de-instrucciones-cpi]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-ic-y-duracion-de-cicl]] · [[calculo-de-tiempo-de-ejecucion-con-cpi-frecuencia-e-instrucc]]

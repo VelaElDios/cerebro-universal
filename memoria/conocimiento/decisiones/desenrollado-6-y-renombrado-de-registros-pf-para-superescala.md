@@ -21,4 +21,4 @@ Temas: [[ac]] · [[desenrollado]] · [[mips64]] · [[renombrado]] · [[superesca
 > a) Desenrolla el código 6 veces y planifícalo lo más compactamente posible para el superescalar planteado.
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf`
 
-Relacionado: [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]]
+Relacionado: [[planificacion-superescalar-mips64-4-vias-con-latencias-pf-pr]] · [[como-desenrollar-8x-y-planificar-en-superescalar-4-issue-2-i]] · [[desenrollado-de-bucle-8-veces-para-superscalar-con-latencias]]

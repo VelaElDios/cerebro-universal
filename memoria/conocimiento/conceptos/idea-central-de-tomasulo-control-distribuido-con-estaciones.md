@@ -16,3 +16,5 @@ A diferencia del marcador centralizado, Tomasulo distribuye el control: cada uni
 
 > Idea básica: Control & Buffers distribuidos con UF Estación de reserva. La detección de riesgos y el control de la ejecución están distribuidos. Las estaciones de reserva, en cada unidad funcional, controlan cuándo puede comenzar la ejecución de una instrucción en esa unidad. Una estación de reserva busca un operando tan pronto esté disponible y lo retiene (se elimina la necesidad de obtener el operando de los registros)
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
+
+Relacionado: [[estaciones-de-reserva-almacenan-etiquetas-para-control-de-ri]] · [[estructura-del-procesador-tomasulo-cdb-estaciones-de-reserva]] · [[contenido-de-una-estacion-de-reserva-en-tomasulo]]

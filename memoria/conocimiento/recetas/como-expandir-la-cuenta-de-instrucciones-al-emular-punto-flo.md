@@ -25,4 +25,4 @@ Ejemplo (Ejercicio 3b): Programa de 300M instrucciones en MFP (10% mult, 15% add
 > La máquina MNFP (máquina sin punto flotante) no tiene hardware de punto flotante y por ello debe emular las operaciones en punto flotante utilizando enteras.
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf`
 
-Relacionado: [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]]
+Relacionado: [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[valores-de-referencia-cpi-por-clase-de-instruccion-en-maquin]] · [[como-calcular-cpi-medio-y-mips-nativo-con-mezcla-de-instrucc]] · [[latencias-tipicas-de-unidades-funcionales-fp-en-ejercicios-d]]

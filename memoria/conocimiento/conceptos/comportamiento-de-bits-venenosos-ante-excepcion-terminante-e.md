@@ -17,4 +17,4 @@ Los bits venenosos (poison bits) solo diferencian excepciones en instrucciones e
 > In the poison bits technique, if a normal (non-speculative) instruction results in a terminating exception: The execution of the program is stopped
 > — `repo:datos/temarios/AC/examenes/January2022.pdf` (cita sin comprobar)
 
-Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]]
+Relacionado: [[bits-venenosos-en-carga-especulativa-excepcion-diferida-hast]] · [[comportamiento-de-bits-de-veneno-ante-instruccion-no-especul]] · [[comportamiento-de-bits-de-veneno-poison-bits-ante-excepcion]] · [[bits-venenosos-en-especulacion-excepcion-no-recuperable-marc]] · [[comportamiento-de-bit-de-veneno-poison-bit-ante-excepcion-en]]

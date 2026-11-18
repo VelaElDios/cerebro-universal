@@ -27,4 +27,4 @@ El ejemplo muestra 6 instrucciones de punto flotante (2 bucles de carga-multipli
 > ciclo 16                           Instrucción                Emisión           Ejecución      Escritura resultado                           fld      f0, 0(x1)                       1                9                    10                           fmul.d   f4, f0, f2                      2               14                    15
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[estado-de-registros-resultado-register-result-status-en-el-m]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[estado-de-registros-resultado-register-result-status-en-el-m]] · [[ejecucion-ciclo-a-ciclo-del-ejemplo-tomasulo-fld-fmul-d-fsub]] · [[secuencia-de-instrucciones-y-dependencias-en-el-ejemplo-toma]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]]

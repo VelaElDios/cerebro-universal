@@ -17,4 +17,4 @@ Tres alternativas para detectar saltos en el pipeline: 1) Detección en paralelo
 > Detección en paralelo con la decodificación – Usa un decodificador de saltos dedicado capaz de detectar las instrucciones de salto antes del final de la etapa ID – Detección después de la etapa IF – Detecta las instrucciones de salto en el buffer de instrucciones, antes de que sean decodificadas – Detección durante la etapa IF – Detecta las instrucciones de salto al tiempo que se leen de la cache de instrucciones
 > — `repo:datos/temarios/AC/Tema4-Tratamiento de los saltos/Tema4.pdf` (cita sin comprobar)
 
-Relacionado: [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]]
+Relacionado: [[planteamiento-general-de-prediccion-de-saltos-con-ejecucion]] · [[penalizacion-de-salto-condicional-en-pipeline-de-5-etapas-re]] · [[penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r]] · [[definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5]]

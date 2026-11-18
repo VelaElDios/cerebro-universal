@@ -21,3 +21,5 @@ Opción correcta: **CPI = 1.75, IPC = 0.57**.
 
 > Given a 5-stage pipeline in which 2 out of every 8 instructions are taken branches and there are 3 delay slots for each taken branch, indicate which of the following options is correct:
 > — `repo:datos/temarios/AC/examenes/June2023.pdf`
+
+Relacionado: [[cpi-con-prediccion-de-saltos-en-pipeline-de-5-etapas-direcci]] · [[cpi-con-penalizacion-de-saltos-resueltos-en-id-test-ac-q13]] · [[cpi-con-tecnica-parar-siempre-en-saltos-cpi-1-saltos-tomados]]

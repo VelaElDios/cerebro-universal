@@ -22,4 +22,4 @@ Comparativa esperada (valores típicos para este problema de examen):
 > ¿Qué mejora en el rendimiento se ha obtenido si se compara el código del apartado A con el del C?
 > — `repo:datos/temarios/AC/examenes/Enero2018.pdf`
 
-Relacionado: [[desenrollado-de-bucle-3x-y-planificacion-vliw-compactada]]
+Relacionado: [[desenrollado-de-bucle-3x-y-planificacion-vliw-compactada]] · [[calculo-de-speedup-entre-bucle-original-y-desenrollado-en-vl]] · [[metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi]] · [[calculo-speedup-vliw-vs-escalar-para-examen-enero-2026-probl]]

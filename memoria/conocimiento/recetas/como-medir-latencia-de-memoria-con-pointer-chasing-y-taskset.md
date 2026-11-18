@@ -17,4 +17,4 @@ Compilar `tarea1_2_mem_latency.cpp` (ver cabecera para flags). Ejecutar con `tas
 > El programa realiza pointer chasing (lecturas aleatorias) sobre un tamaño de datos creciente para observar cómo aumenta la latencia a medida que se desbordan los distintos niveles de caché. Para fijar la ejecución del programa en un único núcleo usa el siguiente comando: taskset -c <core_number> <executable_file>
 > — `repo:datos/temarios/AC/Practicas/Practica3.pdf` (cita sin comprobar)
 
-Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]]
+Relacionado: [[patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]] · [[como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria]] · [[working-set-size-vs-memory-access-latency-experiment]]

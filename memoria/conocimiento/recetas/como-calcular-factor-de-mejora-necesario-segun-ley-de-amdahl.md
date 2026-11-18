@@ -16,3 +16,5 @@ Speedup_global = 1 / [(1-f) + f/k]. Queremos speedup_global = 1,5 (ganancia 50%)
 
 > Un programa tiene un tiempo de ejecución de 5 segundos, dedicando el 80% de dicho tiempo a ejecutar instrucciones en coma flotante. Para obtener una ganancia del 50%, debemos tener un factor de mejora en la ejecución de las instrucciones en coma flotante de:
 > — `repo:datos/temarios/AC/examenes/Noviembre2011.pdf` (cita sin comprobar)
+
+Relacionado: [[aplicacion-de-la-ley-de-amdahl-para-mejora-de-coma-flotante]] · [[aplicacion-de-la-ley-de-amdahl-para-encontrar-fraccion-de-co]] · [[aplicacion-de-la-ley-de-amdahl-para-calcular-fraccion-de-tie]]

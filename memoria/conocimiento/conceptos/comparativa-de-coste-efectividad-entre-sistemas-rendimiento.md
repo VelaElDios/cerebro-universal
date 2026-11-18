@@ -16,3 +16,5 @@ Coste-efectividad = rendimiento / coste = (1/tiempo) / coste. S1: (1/5)/8000 = 0
 
 > We want to compare the performance of two different systems: S1 and S2. The S1 system costs 8000 €, and the S2 system costs 10000 €. The execution time of a given program is 5 seconds in S1, and one second less in S2. Which system is more cost effective?
 > — `repo:datos/temarios/AC/examenes/June2019.pdf`
+
+Relacionado: [[calculo-de-coste-efectividad-entre-dos-sistemas-pregunta-4]] · [[como-comparar-efectividad-en-coste-entre-dos-sistemas]] · [[calculo-de-coste-efectividad-rendimiento-precio-entre-dos-co]]

@@ -17,4 +17,4 @@ El bucle se ejecuta 6 veces (R2=6,5,4,3,2,1 → tomado; R2=0 → no tomado). Pre
 > Tenemos un predictor de 1 nivel de 2 bits inicializado a fuertemente no tomado. Indica la secuencia de Aciertos (A) y Fallos (F) del predictor para el salto B1 del siguiente código: inicio: DADDIU R2, R0, #6 DADDIU R4, R0, #1 bucle: DADDIU R2, R2, #-1 ;salto B1 BNEZ R2, bucle
 > — `repo:datos/temarios/AC/examenes/Enero2022.pdf`
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-con-predictores-de-4-bits-campos-de-cada-entrada]] · [[secuencia-de-aciertos-fallos-en-predictor-de-2-bits-iniciali]] · [[como-analizar-predictores-de-salto-1-bit-4-bit-correlacionad]] · [[predictor-de-1-bit-en-bucle-de-3-iteraciones-t-t-nt-produce]]

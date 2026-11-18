@@ -20,3 +20,5 @@ Ejemplo del test: `S=5`, `f=5/6` → `s = (5/6) / (1/5 - 1/6) = (5/6) / (1/30) =
 
 > Supongamos que un programa tarda en ejecutarse en una máquina 2 minutos, de los cuales 100 segundos corresponden a operaciones de multiplicar. ¿Cuánto tengo que mejorar la velocidad de multiplicación si quiero que el programa se ejecute cinco veces más rápido?
 > — `repo:datos/temarios/AC/examenes/Enero2025.pdf`
+
+Relacionado: [[calculo-de-mejora-necesaria-con-ley-de-amdahl-ejemplo-multip]] · [[aplicacion-de-la-ley-de-amdahl-para-acelerar-una-fraccion-de]] · [[calculo-de-factor-de-mejora-en-multiplicacion-segun-ley-de-a]]

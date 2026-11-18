@@ -17,4 +17,4 @@ Configuración exacta del examen: ROB 32 entradas; Load Buffer 16 entradas; Esta
 > We have an ROB with a capacity for 32 instructions, a load buffer with 16 entries, and reserve stations with 2 entries for addition and 4 for multiplication and division. The load and store execution stage uses 1 cycle. The floating-point multiplication (FP) execution step takes 4 cycles. The floating point (FP) addition execution step takes 2 cycles.
 > — `repo:datos/temarios/AC/examenes/June2025.pdf` (cita sin comprobar)
 
-Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]]
+Relacionado: [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[buffers-de-carga-y-almacenamiento-en-tomasulo]] · [[bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo]] · [[parametros-estandar-para-simular-tomasulo-con-especulacion-e]] · [[simulacion-tomasulo-con-especulacion-parametros-de-hardware]] · [[parametros-de-tomasulo-con-especulacion-para-problema-2-exam]]

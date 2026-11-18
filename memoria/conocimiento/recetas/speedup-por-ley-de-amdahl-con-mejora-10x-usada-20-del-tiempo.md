@@ -16,3 +16,5 @@ Speedup = 1 / [(1 - f) + f/k] = 1 / [0.8 + 0.2/10] = 1 / [0.8 + 0.02] = 1 / 0.82
 
 > Hemos introducido un factor de mejora de 10 en una característica de un computador que es empleada durante el 20% del tiempo de ejecución de un determinado programa. ¿Cuál es el speedup obtenido al ejecutar el mismo programa sobre la versión mejorada del computador?
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf`
+
+Relacionado: [[calculo-de-ganancia-de-velocidad-speedup-con-la-ley-de-amdah]] · [[calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-10x-en-punto-flo]]

@@ -17,4 +17,4 @@ El software pipelining reordena instrucciones creando prólogo, kernel y epílog
 > The initial code has the DADDUI instruction with an increment of # -8.
 > — `repo:datos/temarios/AC/examenes/June2023.pdf`
 
-Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[planificacion-por-software-software-pipelining-y-desenrollad]] · [[calculo-de-instrucciones-tras-desenrollar-bucle-3-veces-unro]] · [[segmentacion-software-software-pipelining-para-bucle-encript]]

@@ -17,6 +17,6 @@ El documento indica que cada uno de los 29 PBIs del Sprint 2 (P20–P48) tiene a
 > ### Historias de usuario y criterios de aceptación Cada PBI del Sprint 2 tiene en DoneTonic su historia de usuario y sus criterios de aceptación. Son estos: <details> <summary>Ver las 29 historias de usuario con sus criterios</summary>
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]]
+Relacionado: [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

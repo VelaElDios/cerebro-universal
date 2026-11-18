@@ -17,4 +17,4 @@ Cuando se aplican varias mejoras a fracciones disjuntas del tiempo de ejecución
 > Si combinamos ambas mejoras, tenemos: speedup = Tiempo sin mejora / (Tiempo_frac1/mejora1 + Tiempo_frac2/mejora2 + Tiempo_resto)
 > — `repo:datos/temarios/AC/Tema1-Introduccion/Tema1_ProbSol.pdf` (cita sin comprobar)
 
-Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]]
+Relacionado: [[calculo-de-flops-por-ciclo-en-x86-con-avx2-fma]] · [[speedup-combinado-de-mejoras-independientes-en-fracciones-di]] · [[calculo-de-speedup-con-ley-de-amdahl-mejora-de-una-fraccion]] · [[ley-de-amdahl-aplicada-a-speedup-con-mejora-parcial-de-un-su]]

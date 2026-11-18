@@ -17,4 +17,4 @@ En el algoritmo Scoreboard (marcador), la etapa de emisión (issue) verifica dis
 > En marcador: a) Los riesgos estructurales no son posibles b) Los riesgos estructurales se gestionan en la etapa de emisión o issue c) Los riesgos estructurales se gestionan en la etapa de ejecución d) Ninguna es correcta
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]]
+Relacionado: [[algoritmo-tomasulo-los-resultados-se-difunden-por-el-bus-com]] · [[buffer-de-reordenamiento-rob-en-tomasulo-con-especulacion-ca]] · [[manejo-de-riesgos-estructurales-en-scoreboard]] · [[riesgos-estructurales-en-marcador-scoreboard-fase-de-emision]] · [[riesgo-estructural-en-scoreboard-pregunta-7]]

@@ -16,3 +16,5 @@ Predictor two-level (2,1): Global Branch History Register (BHR) de 2 bits que re
 
 > Detail the behavior of a two-level (2, 1) correlating branch predictor, assuming the same input vector, and considering the initial state indicated in the table.
 > — `repo:datos/temarios/AC/examenes/June2022.pdf`
+
+Relacionado: [[simulacion-de-predictor-correlacionante-de-2-niveles-2-1-con]] · [[simulacion-de-predictor-correlacionado-de-dos-niveles-2-2-co]] · [[simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos]]

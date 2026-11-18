@@ -51,4 +51,4 @@ DADDI R9, R0, #1
 > Indica para cada caso las instrucciones que lanzan alguna excepción, y si terminan o no el programa, así como el valor de los registros al finalizar el programa sabiendo que el estado inicial es: R1=10 R2=5 R3=0 R4=20 R5=10 R6=5 R7=0 R8=20 R9=10. Y que el acceso a la dirección de memoria 0 está prohibido (cualquier intento de leer o escribir en dicha posición lanzará una excepción por acceso ilegal).
 > — `repo:datos/temarios/AC/examenes/Enero2015.pdf` (cita sin comprobar)
 
-Relacionado: [[especulacion-estatica-con-poison-bits-en-mips64-lw]] · [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]]
+Relacionado: [[especulacion-estatica-con-poison-bits-en-mips64-lw]] · [[especulacion-con-poison-bits-propagacion-y-excepcion-diferid]] · [[estado-inicial-de-registros-y-memoria-para-problema-3-enero]] · [[planificacion-estatica-con-poison-bits-en-mips64-reglas-de-e]]

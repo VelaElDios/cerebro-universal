@@ -17,4 +17,4 @@ Ejercicio típico de planificación de instrucciones (instruction scheduling) pa
 > A) Desenrolla el bucle 4 veces y planifícalo tal que emplee el menor número de ciclos. Escribe la solución en la tabla adjunta (Usa tantas filas como necesites) B) ¿Cuántos ciclos invertirá cada iteración en el código original? ¿Cuál es el speedup de la versión desenrollada y planificada con respecto al código original?
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[antidependencia-entre-iteraciones-en-bucle-con-store-y-actua]] · [[metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi]] · [[planificacion-en-superescalar-3-vias-entero-salto-memoria-fp]] · [[desenrollamiento-de-bucle-3x-y-re-planificacion-en-vliw-para]]

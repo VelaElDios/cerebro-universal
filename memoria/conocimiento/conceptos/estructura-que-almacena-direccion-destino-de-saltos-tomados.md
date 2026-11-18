@@ -17,4 +17,4 @@ BTB (Branch Target Buffer) almacena la dirección destino (target address) de sa
 > What data structure stores the target address of the recently taken branch instructions?
 > — `repo:datos/temarios/AC/examenes/June2025.pdf`
 
-Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]]
+Relacionado: [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-cache-de-direcciones-destino-de-saltos-con-bits-de-predi]] · [[estructura-de-btb-tabla-de-destinos-y-tabla-separada-de-bits]] · [[estructuras-hardware-para-prediccion-de-saltos-btac-bht-btb]]

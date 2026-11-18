@@ -17,4 +17,4 @@ Cada registro arquitectónico tiene un campo Qi. Qi=0 significa que el valor vá
 > Qi: número de la estación de reserva que contiene la instrucción que producirá el resultado Si el valor de Qi es cero, ninguna instrucción actualmente activa está calculando un resultado destinado para este registro. El valor viene dado por el contenido del registro
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf` (cita sin comprobar)
 
-Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]]
+Relacionado: [[estructura-de-una-estacion-de-reserva-en-tomasulo]] · [[renombrado-de-registros-via-qi-register-status-en-tomasulo]] · [[uso-de-qi-en-registros-flotantes-para-renombrado-dinamico-en]] · [[renombrado-de-registros-via-qi-en-bucle-con-reuso-de-f0-f2-f]]

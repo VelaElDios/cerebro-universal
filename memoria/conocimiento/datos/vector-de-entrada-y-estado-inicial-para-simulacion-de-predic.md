@@ -17,4 +17,4 @@ Vector de entrada de 8 elementos: 10, 7, 8, 4, 2, 6, 9, 0. Se asume que el códi
 > assuming that the input vector is: 10, 7, 8, 4, 2, 6, 9, 0. Use the first and second columns in the table below (and as many rows as you need). ... considering the initial state indicated in the table. ... (Initial state) - 11 11 - - 11 11 11 11 11 - -
 > — `repo:datos/temarios/AC/examenes/June2022.pdf` (cita sin comprobar)
 
-Relacionado: [[simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos]]
+Relacionado: [[simulacion-de-predictor-one-level-de-2-bits-para-dos-saltos]] · [[simulacion-de-predictor-de-saltos-de-1-nivel-con-2-bits-cont]] · [[simulacion-de-predictor-two-level-correlacionante-2-1-con-bh]]

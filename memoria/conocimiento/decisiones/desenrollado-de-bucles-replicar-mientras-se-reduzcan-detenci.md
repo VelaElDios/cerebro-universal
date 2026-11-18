@@ -17,4 +17,4 @@ No hay un número fijo (como el contador del bucle) ni se desenrolla indefinidam
 > En la técnica de desenrollamiento de bucles, ¿cuántas veces debe replicarse el cuerpo del bucle? Mientras se siga reduciendo el número de detenciones
 > — `repo:datos/temarios/AC/examenes/Junio2014.pdf` (cita sin comprobar)
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[bucle-vectorial-de-referencia-para-desenrollado-y-planificac]] · [[criterio-de-desenrollamiento-de-bucles-loop-unrolling]] · [[desenrollamiento-de-bucles-reduce-dependencias-de-control-me]] · [[proposito-del-desenrollado-de-bucles-loop-unrolling]]

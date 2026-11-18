@@ -16,3 +16,5 @@ Speedup_global = 1 / ((1 - f) + f/k), donde f = fracción de tiempo que usa la p
 
 > La ley de Amdahl para el rendimiento indica que a) La aceleración máxima del rendimiento obtenida al realizar una mejora viene determinada por la fracción de tiempo que pueda utilizarse dicha mejora
 > — `repo:datos/temarios/AC/examenes/Enero2012.pdf`
+
+Relacionado: [[ley-de-amdahl-la-aceleracion-maxima-esta-limitada-por-la-fra]] · [[ley-de-amdahl-la-aceleracion-maxima-viene-determinada-por-la]] · [[ley-de-amdahl-para-speedup-con-mejora-parcial]]

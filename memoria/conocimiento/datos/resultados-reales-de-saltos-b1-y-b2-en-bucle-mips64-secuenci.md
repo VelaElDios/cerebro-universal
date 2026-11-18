@@ -19,4 +19,4 @@ Para la secuencia 0,1,0,2,0,3,0,4,0,5 (10 elementos, 5 ceros y 5 no-ceros):
 > The following MIPS64 code loop reads the sequence 0, 1, 0, 2, 0, 3, 0, 4, 0, 5. We assume that R1 and R3 contain the addresses of the first and last sequence elements, respectively. loop: LW R2, 0(R1) BEQZ R2, next #(B1) SW R0, 0(R1) next: BEQ R1, R3, end #(B2) DADDUI R1, R1, #4 J loop end: ...
 > — `repo:datos/temarios/AC/examenes/June2017.pdf`
 
-Relacionado: [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]]
+Relacionado: [[bucle-de-calculo-y-i-a-x-i-2-en-ensamblador-mips64]] · [[clasificacion-de-dependencias-en-bucle-antidependencia-war-e]] · [[comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips]] · [[patron-de-saltos-en-bucle-mips64-secuencia-0-1-0-2-examen-en]] · [[secuencia-de-datos-y-codigo-mips64-para-ejercicio-2-de-predi]]

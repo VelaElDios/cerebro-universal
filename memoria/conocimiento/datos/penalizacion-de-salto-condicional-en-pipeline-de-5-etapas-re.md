@@ -17,4 +17,4 @@ Si el salto se resuelve en ID, la instrucción siguiente (en IF) es la errónea 
 > Para una segmentación de 5 etapas (IF, ID, EX, MEM, WB), en la que en la etapa ID se genera la dirección destino y se resuelve la condición de salto, la penalización para los saltos condicionales es de: b) 1 ciclo
 > — `repo:datos/temarios/AC/examenes/Junio2012.pdf` (cita sin comprobar)
 
-Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]]
+Relacionado: [[accion-del-procesador-ante-fallo-de-prediccion-de-salto]] · [[alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin]] · [[definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5]] · [[calculo-de-ciclos-de-penalizacion-por-salto-tomado-en-pipeli]] · [[penalizacion-de-salto-tomado-con-condicion-en-ex-y-direccion]]

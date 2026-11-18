@@ -17,4 +17,4 @@ Enunciado de problema tipo examen: pipeline 5 etapas (IF, ID, EX, MEM, WB). Dire
 > Tiene una tasa de fallos del 10%. Sólo almacena las direcciones de saltos tomados (incluye los saltos incondicionales). Si un salto condicional no está en BTB se predice como no tomado.
 > — `repo:datos/temarios/AC/examenes/Diciembre2010.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]]
+Relacionado: [[bht-branch-history-table-tabla-separada-para-bits-de-predicc]] · [[btb-branch-target-buffer-fusion-de-btac-y-bits-de-prediccion]] · [[actualizacion-de-la-btb-tras-ejecutar-el-salto]] · [[calculo-de-cpi-con-btb-que-almacena-solo-saltos-tomados-y-pr]] · [[evaluacion-de-rendimiento-de-btb-con-politica-de-solo-saltos]] · [[calculo-de-cpi-base-en-pipeline-con-penalizacion-por-saltos]]

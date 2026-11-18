@@ -17,4 +17,4 @@ Aplicar ley de Amdahl: Speedup_global = 1 / ((1 - f) + f/k), donde f = fracción
 > Supongamos que un programa tarda en ejecutarse en una máquina 2 minutos, de los cuales 96 segundos corresponden a operaciones de multiplicar. ¿Cuánto tengo que mejorar la velocidad de multiplicación si quiero que el programa se ejecute cinco veces más rápido?
 > — `repo:datos/temarios/AC/examenes/Junio2025.pdf`
 
-Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]]
+Relacionado: [[analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter]] · [[algoritmo-tomasulo-origen-y-objetivo-cpi1]] · [[calculo-de-speedup-con-ley-de-amdahl-en-pregunta-de-examen]] · [[ejercicio-de-participacion-en-clase-mejora-de-multiplicacion]] · [[calculo-de-mejora-necesaria-con-ley-de-amdahl-ejemplo-multip]]

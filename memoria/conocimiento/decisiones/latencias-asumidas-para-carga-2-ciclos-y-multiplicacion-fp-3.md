@@ -19,3 +19,5 @@ De la traza se infieren las latencias configuradas en el simulador docente:
 
 > fld       f0, 0(x1)                        1                           fmul.d    f4, f0, f2                       2
 > — `repo:datos/temarios/AC/Tema3-Planificacion de instrucciones/Tema3.pdf`
+
+Relacionado: [[latencia-de-carga-fp-y-multiplicacion-doble-en-la-simulacion]] · [[latencias-de-unidades-funcionales-en-el-ejemplo-tomasulo]] · [[secuencia-de-instrucciones-y-latencias-en-ejemplo-tomasulo-c]]

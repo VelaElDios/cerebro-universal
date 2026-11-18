@@ -17,4 +17,4 @@ Un predictor correlacionado (m,n) usa m bits de historia global (BHR) y n bits d
 > En un predictor correlacionado (2,1), indica el valor del BHR sabiendo que inicialmente vale 00 y que los dos últimos saltos ejecutados han sido tomados: b) 11
 > — `repo:datos/temarios/AC/examenes/Junio2016.pdf` (cita sin comprobar)
 
-Relacionado: [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]]
+Relacionado: [[bht-en-predictor-dinamico-de-3-bits-contadores-de-saturacion]] · [[interpretacion-del-bhr-en-predictor-correlacionado-m-n-test]] · [[predictor-correlacionado-1-2-bhr-11-tras-dos-saltos-tomados]] · [[predictor-correlacionado-1-2-con-bhr-y-dos-bhts]]

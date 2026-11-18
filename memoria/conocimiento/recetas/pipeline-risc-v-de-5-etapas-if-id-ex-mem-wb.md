@@ -23,4 +23,4 @@ El banco de registros permite lectura y escritura en el mismo ciclo al usar mita
 > 1.- IF → Búsqueda de la instrucción en memoria • 2.- ID → Decodificación y lectura de registros • 3.- EX → Ejecución de una operación o cálculo de una dirección • 4.- MEM → Acceso a un operando en la memoria de datos • 5.- WB → Escritura del resultado en un registro
 > — `repo:datos/temarios/AC/Tema2-Paralelismo a nivel de instruccion/Tema2-2026-2027.pdf` (cita sin comprobar)
 
-Relacionado: [[definicion-y-proposito-de-la-segmentacion-pipeline]]
+Relacionado: [[definicion-y-proposito-de-la-segmentacion-pipeline]] · [[banco-de-registros-en-pipeline-mips-se-accede-en-etapas-id-y]] · [[parametros-de-pipeline-in-order-5-etapas-para-analisis-de-ha]] · [[definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5]]

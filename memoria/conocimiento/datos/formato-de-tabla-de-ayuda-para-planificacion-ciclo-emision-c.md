@@ -17,4 +17,4 @@ La tabla proporcionada en el examen tiene columnas: "Instrucciones", "Ciclo emis
 > Tabla ayuda para la solución del ejercicios 3, apartado a) Instrucciones Ciclo emisión Ciclo ejecución
 > — `repo:datos/temarios/AC/examenes/Junio2018.pdf`
 
-Relacionado: [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]]
+Relacionado: [[problema-de-desenrollado-y-planificacion-de-bucle-superescal]] · [[tabla-de-planificacion-vliw-vacia-del-examen-6-columnas-fila]] · [[como-construir-diagrama-de-gantt-tabla-de-ciclos-para-pipeli]]

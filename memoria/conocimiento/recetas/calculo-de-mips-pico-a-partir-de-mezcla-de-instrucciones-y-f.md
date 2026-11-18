@@ -19,3 +19,5 @@ Para calcular MIPS pico: 1) Hallar CPI medio ponderado = Σ(%tipo_i × ciclos_ti
 
 ## Ampliación (2026-11-18, )
 CPI_medio = Σ (fracción_i * ciclos_i) = 0.4*2 + 0.3*4 + 0.3*6 = 3.8 ciclos/instr. MIPS_pico = Frecuencia_MHz / CPI_medio = 1000 MHz / 3.8 ≈ 263.15 MIPS. La opción correcta es "263,15".
+
+Relacionado: [[calculo-de-mips-pico-a-partir-de-mezcla-de-instrucciones-y-c]] · [[calculo-de-mips-a-partir-de-frecuencia-cpi-por-tipo-y-mezcla]] · [[calculo-de-mips-pico-para-comparar-maquinas-test-ac-q4]]

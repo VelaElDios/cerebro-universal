@@ -17,4 +17,4 @@ Las dependencias de datos (RAW verdaderas) no siempre causan riesgos si el hardw
 > Con respecto a las dependencias de datos: a) Siempre dan lugar a riesgos de datos b) No se pueden eliminar de ninguna forma c) Se eliminan mediante renombramiento d) Ninguna de las anteriores
 > — `repo:datos/temarios/AC/examenes/Junio2011.pdf`
 
-Relacionado: [[antidependencia-war-siempre-genera-hazard-war]]
+Relacionado: [[antidependencia-war-siempre-genera-hazard-war]] · [[dos-estrategias-genericas-para-tratar-dependencias-de-datos]] · [[dependencias-de-nombre-se-eliminan-mediante-renombramiento-d]] · [[dependencias-de-nombre-war-waw-se-eliminan-con-renombramient]]
