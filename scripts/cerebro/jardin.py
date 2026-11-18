@@ -130,7 +130,7 @@ def _cita_de(cuerpo: str) -> tuple[str, str] | None:
 
 def verificar_propuestas(carpeta: Path) -> list[str]:
     hechas = []
-    for n in conocimiento.todas():
+    for n in conocimiento.todas(publicas_solo=True):
         if n.get("confianza") == "verificado":
             continue
         c = _cita_de(n["cuerpo"])
@@ -158,7 +158,7 @@ def verificar_propuestas(carpeta: Path) -> list[str]:
 # ---------- 2. enlazar ----------
 
 def enlazar_parecidas(vecs: dict[str, list[float]]) -> int:
-    notas = {n["ruta"]: n for n in conocimiento.todas() if n.get("tipo") != "fuente"}
+    notas = {n["ruta"]: n for n in conocimiento.todas(publicas_solo=True) if n.get("tipo") != "fuente"}
     rutas = [r for r in notas if r in vecs]
     nuevos = 0
     for r in rutas:
@@ -277,7 +277,7 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
     if not vecs:
         apuntes.append("- (sin embeddings: no se puede buscar repetidas ni enlazar por significado)")
     else:
-        notas = {n["ruta"]: n for n in conocimiento.todas() if n.get("tipo") != "fuente"}
+        notas = {n["ruta"]: n for n in conocimiento.todas(publicas_solo=True) if n.get("tipo") != "fuente"}
         vecs_notas = {r: v for r, v in vecs.items() if r in notas}
         pares = embeddings.parecidas(vecs_notas, UMBRAL_CONTRADICCION)
         fusiones, revisadas = [], []

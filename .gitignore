@@ -41,3 +41,6 @@ proyectos/*/.repos/
 
 # Imagen temporal de revisar_figuras.py
 proyectos/*/.figura-tmp.png
+
+# Repo privado descargado (modo privado, cerebro/privado.py)
+.cerebro-privado/

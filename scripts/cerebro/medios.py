@@ -79,6 +79,10 @@ def tipo_de(nombre: str) -> str:
                        ("audio", AUDIO), ("video", VIDEO)):
         if ext in exts:
             return tipo
+    if ext == ".ipynb":
+        return "notebook"
+    if ext == ".zip":
+        return "zip"
     return "pdf" if ext == ".pdf" else "desconocido"
 
 
@@ -162,6 +166,30 @@ def office_a_texto(ruta: Path) -> str:
     raise NoSePuede(f"formato de Office no soportado: {ext}")
 
 
+def notebook_a_texto(ruta: Path) -> str:
+    """Un notebook de Jupyter: el Markdown tal cual, el código en bloques y lo que imprimió (recortado)."""
+    import json
+    nb = json.loads(ruta.read_text(encoding="utf-8", errors="replace"))
+    lenguaje = (nb.get("metadata", {}).get("kernelspec", {}) or {}).get("language", "python")
+    partes = []
+    for celda in nb.get("cells", []):
+        fuente = "".join(celda.get("source", [])) if isinstance(celda.get("source"), list) else celda.get("source", "")
+        if not fuente.strip():
+            continue
+        if celda.get("cell_type") == "markdown":
+            partes.append(fuente)
+        elif celda.get("cell_type") == "code":
+            partes.append(f"```{lenguaje}\n{fuente}\n```")
+            salida = []
+            for o in celda.get("outputs", []):
+                t = o.get("text") or (o.get("data", {}) or {}).get("text/plain") or ""
+                salida.append("".join(t) if isinstance(t, list) else str(t))
+            salida = "".join(salida).strip()
+            if salida:
+                partes.append("Salida:\n```\n" + salida[:1500] + ("\n[...]" if len(salida) > 1500 else "") + "\n```")
+    return "\n\n".join(partes)
+
+
 def descargar_web(url: str) -> str:
     peticion = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (cerebro-universal)"})
     with urllib.request.urlopen(peticion, timeout=60) as r:
@@ -232,6 +260,8 @@ def extraer(origen: str | Path, tipo: str) -> tuple[str, bool]:
     """(texto, es_transcripción). es_transcripción=True si el texto lo ha escrito una IA (fuente derivada)."""
     if tipo == "texto":
         return Path(origen).read_text(encoding="utf-8", errors="replace"), False
+    if tipo == "notebook":
+        return notebook_a_texto(Path(origen)), False
     if tipo == "html":
         return html_a_texto(Path(origen).read_text(encoding="utf-8", errors="replace")), False
     if tipo == "web":

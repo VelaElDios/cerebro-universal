@@ -25,7 +25,7 @@ import os
 import re
 from pathlib import Path
 
-from . import conocimiento, dataset, mapas, medios, nucleo, repos
+from . import conocimiento, dataset, mapas, medios, nucleo, privado, repos
 from . import proveedores as prov
 
 TROZO = 14_000
@@ -105,27 +105,73 @@ def _huella_texto(texto: str) -> str:
     return hashlib.md5(texto.encode("utf-8")).hexdigest()
 
 
-def pendientes(carpeta: Path, cfg: dict, registro: dict) -> list[tuple[dict, str, Path | str, str, str]]:
-    """[(regla, etiqueta, origen, huella, tipo)] de lo que queda por aprender: archivos de cualquier tipo
-    y cada URL de los archivos de enlaces (enlaces*.txt, *.url)."""
+def ignorados(carpeta: Path) -> list[str]:
+    """Patrones de ignorar.txt (uno por línea): lo que contenga cualquiera de ellos no se aprende."""
+    f = carpeta / "ignorar.txt"
+    if not f.exists():
+        return []
+    return [l.strip() for l in f.read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")]
+
+
+def _expandir_zip(carpeta: Path, etiqueta: str, ruta: Path) -> list[tuple[str, Path]]:
+    """Saca los archivos de un .zip a .repos/_zip/ y los devuelve como si estuvieran sueltos («archivo.zip!dentro»)."""
+    import zipfile
+    destino = carpeta / repos.CARPETA_REPOS / "_zip" / _md5(ruta)
     res = []
+    try:
+        with zipfile.ZipFile(ruta) as z:
+            for info in z.infolist():
+                nombre = info.filename
+                if info.is_dir() or "__MACOSX" in nombre or Path(nombre).name.startswith("."):
+                    continue
+                if info.file_size > 300_000_000 or ".." in Path(nombre).parts:
+                    continue
+                salida = destino / nombre
+                if not salida.exists():
+                    salida.parent.mkdir(parents=True, exist_ok=True)
+                    salida.write_bytes(z.read(info))
+                res.append((f"{etiqueta}!{nombre}", salida))
+    except zipfile.BadZipFile:
+        return []
+    return res
+
+
+def pendientes(carpeta: Path, cfg: dict, registros: dict) -> list[tuple[dict, str, Path | str, str, str]]:
+    """[(regla, etiqueta, origen, huella, tipo)] de lo que queda por aprender: archivos de cualquier tipo (los .zip
+    se abren), y cada URL de los archivos de enlaces (enlaces*.txt, *.url). `registros` = {"publico": {...},
+    "privado": {...}}: lo privado se apunta en el repo privado para que ni los nombres salgan en el vault."""
+    res = []
+    ignorar = ignorados(carpeta)
 
     def anadir(regla, etiqueta, origen, huella, tipo):
+        if any(p in etiqueta for p in ignorar):
+            return
+        registro = registros["privado" if regla.get("privado") else "publico"]
         r = registro.get(etiqueta)
         if r and r.get("md5") == huella and (r.get("hechos", 0) >= r.get("total", 1) or r.get("error_fijo")):
             return
         res.append((regla, etiqueta, origen, huella, tipo))
 
+    def uno(regla, etiqueta, ruta):
+        if ruta.name.startswith(".") or ruta.name.lower() in ("leeme.md", "readme.md") and (
+                "temarios" in etiqueta or "privado" in etiqueta):
+            return
+        tipo = medios.tipo_de(ruta.name)
+        if tipo == "enlaces":
+            for url in medios.enlaces_de(ruta):
+                anadir(regla, url if not regla.get("privado") else f"{etiqueta}#{url}", url, _huella_texto(url),
+                       medios.tipo_de(url))
+        elif tipo == "zip":
+            for etiqueta_dentro, ruta_dentro in _expandir_zip(carpeta, etiqueta, ruta):
+                uno(regla, etiqueta_dentro, ruta_dentro)
+        elif tipo != "desconocido":
+            anadir(regla, etiqueta, ruta, _md5(ruta), tipo)
+
     for regla in cfg.get("aprender_de", []):
+        if regla.get("privado") and not privado.disponible():
+            continue     # sin el repo privado descargado no se aprende lo privado (iría al vault público)
         for etiqueta, ruta in repos.resolver(carpeta, regla["entrada"]):
-            if ruta.name.startswith(".") or ruta.name.lower() in ("leeme.md", "readme.md") and "temarios" in etiqueta:
-                continue
-            tipo = medios.tipo_de(ruta.name)
-            if tipo == "enlaces":
-                for url in medios.enlaces_de(ruta):
-                    anadir(regla, url, url, _huella_texto(url), medios.tipo_de(url))
-            elif tipo != "desconocido":
-                anadir(regla, etiqueta, ruta, _md5(ruta), tipo)
+            uno(regla, etiqueta, ruta)
     return res
 
 
@@ -154,27 +200,41 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
     config = {**config, "roles": {**roles, "aprendiz": cfg.get("roles", {}).get("aprendiz")
                                   or roles.get("aprendiz") or roles.get("revisor", [])}}
     info = preparar_repos(carpeta, cfg)
-    ruta_reg = carpeta / "procesados.json"
-    registro = json.loads(ruta_reg.read_text(encoding="utf-8")) if ruta_reg.exists() else {}
-    cola = pendientes(carpeta, cfg, registro)
+    rutas_reg = {"publico": carpeta / "procesados.json", "privado": privado.ruta() / "procesados.json"}
+    registros = {k: (json.loads(r.read_text(encoding="utf-8")) if r.exists() else {}) for k, r in rutas_reg.items()}
+
+    def guardar_registros():
+        for k, r in rutas_reg.items():
+            if k == "privado" and not privado.disponible():
+                continue
+            r.write_text(json.dumps(registros[k], ensure_ascii=False, indent=1), encoding="utf-8")
+    cola = pendientes(carpeta, cfg, registros)
     if not cola:
         return "Nada nuevo que aprender."
 
     hechas_total, trozos_total, apuntes = 0, 0, []
+    n_privados = 0
     for regla, etiqueta, origen, huella, tipo in cola:
+        es_priv = bool(regla.get("privado"))
+        registro = registros["privado" if es_priv else "publico"]
+        if es_priv:
+            n_privados += 1
+        # En la bitácora (pública) lo privado no se nombra
+        nombre_bitacora = f"🔒 archivo privado {n_privados}" if es_priv else f"`{etiqueta}`"
+        conocimiento.USAR_PRIVADO = es_priv     # el mapa de lo que ya se sabe incluye lo privado solo aquí
         try:
             texto, es_ia = leer(carpeta, etiqueta, origen, tipo, huella)
         except medios.NoSePuede as e:
             registro[etiqueta] = {"md5": huella, "hechos": 0, "total": 1, "notas": [], "error": str(e)[:300],
                                   "error_fijo": "no sé leer" in str(e)}
-            apuntes.append(f"- ⚠️ `{etiqueta}`: {str(e)[:200]}")
-            ruta_reg.write_text(json.dumps(registro, ensure_ascii=False, indent=1), encoding="utf-8")
+            apuntes.append(f"- ⚠️ {nombre_bitacora}: {str(e)[:200] if not es_priv else 'no se pudo leer'}")
+            guardar_registros()
             continue
         except prov.TiempoAgotado as e:
-            apuntes.append(f"- ⏳ `{etiqueta}`: {e}")
+            apuntes.append(f"- ⏳ {nombre_bitacora}: {e}")
             break
         except Exception as e:   # una web caída, un archivo roto...: se reintenta la próxima vez
-            apuntes.append(f"- ⚠️ `{etiqueta}`: no se pudo leer ({type(e).__name__}: {str(e)[:150]})")
+            apuntes.append(f"- ⚠️ {nombre_bitacora}: no se pudo leer ({type(e).__name__})")
             continue
         fuente_nota = f"{etiqueta} (transcripción de IA)" if es_ia else etiqueta
         trozos = trocear(texto)
@@ -183,7 +243,7 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
             r = {"md5": huella, "hechos": 0, "total": len(trozos), "notas": []}
         temas = list(regla.get("temas", []))
         # En temarios/, la subcarpeta es el tema (temarios/redes/tema1.pdf → «redes»)
-        m = re.search(r"temarios/([^/]+)/", str(etiqueta))
+        m = re.search(r"(?:temarios|privado)/([^/!#]+)/", str(etiqueta))
         if m and conocimiento.nombre_de(m.group(1)) not in temas:
             temas.append(conocimiento.nombre_de(m.group(1)))
         proyecto = regla.get("proyecto", "")
@@ -198,12 +258,12 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
             try:
                 respuesta, ia, modelo = prov.pedir_rol("aprendiz", config, proveedores, SISTEMA, mensaje)
             except (RuntimeError, prov.TiempoAgotado) as e:
-                apuntes.append(f"- {etiqueta}: sin IA disponible ({e})")
+                apuntes.append(f"- {nombre_bitacora}: sin IA disponible ({e})")
                 break
             idx = dataset.registrar(cfg_ruta.parent.name, "aprendiz", "aprender", ia, modelo, SISTEMA, mensaje, respuesta)
             secciones = nucleo.parsear(respuesta)["secciones"]
             guardadas = conocimiento.guardar(secciones.get("CONOCIMIENTO", ""), proyecto, verificacion=trozos[i],
-                                             fuente_por_defecto=fuente_nota, temas_extra=temas)
+                                             fuente_por_defecto=fuente_nota, temas_extra=temas, privada=es_priv)
             dataset.resultado(idx, notas_guardadas=len(guardadas))
             r["notas"] = sorted(set(r["notas"]) | set(guardadas))
             r.setdefault("resumenes", []).append(secciones.get("RESUMEN", "").strip()[:600])
@@ -211,7 +271,7 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
             hechas_total += len(guardadas)
             trozos_total += 1
             registro[etiqueta] = r
-            ruta_reg.write_text(json.dumps(registro, ensure_ascii=False, indent=1), encoding="utf-8")
+            guardar_registros()
         registro[etiqueta] = r
         if r["hechos"] >= len(trozos):
             titulo = (etiqueta if tipo in ("web", "youtube")
@@ -220,14 +280,16 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
                 carpeta_doc = Path(etiqueta.split(":", 1)[-1]).parent.name.strip(".")   # para que no choquen dos README
                 titulo = f"{titulo} ({carpeta_doc})" if carpeta_doc else titulo
             fuente = conocimiento.guardar_fuente(titulo, fuente_nota, temas, r["notas"], proyecto,
-                                                 resumen="\n".join(r.get("resumenes", []))[:3000])
-            apuntes.append(f"- ✅ `{etiqueta}` aprendido entero: {len(r['notas'])} notas → [[{fuente}]]")
+                                                 resumen="\n".join(r.get("resumenes", []))[:3000], privada=es_priv)
+            apuntes.append(f"- ✅ {nombre_bitacora} aprendido entero: {len(r['notas'])} notas"
+                           + ("" if es_priv else f" → [[{fuente}]]"))
         else:
-            apuntes.append(f"- ⏳ `{etiqueta}`: trozo {r['hechos']} de {len(trozos)}")
-        ruta_reg.write_text(json.dumps(registro, ensure_ascii=False, indent=1), encoding="utf-8")
+            apuntes.append(f"- ⏳ {nombre_bitacora}: trozo {r['hechos']} de {len(trozos)}")
+        guardar_registros()
         if prov.tiempo_restante() < MIN_PARA_TROZO:
             break
 
+    conocimiento.USAR_PRIVADO = False
     mapas.generar()
     resumen = (f"Trozos leídos: {trozos_total} · notas nuevas o ampliadas: {hechas_total}\n\n"
                + ("**Repos:** " + " · ".join(info) + "\n\n" if info else "") + "\n".join(apuntes))

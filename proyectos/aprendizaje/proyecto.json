@@ -102,6 +102,11 @@
     {
       "entrada": "repo:datos/temarios/**/*",
       "temas": []
+    },
+    {
+      "entrada": "repo:datos/privado/**/*",
+      "temas": [],
+      "privado": true
     }
   ],
   "ultima_ejecucion": "2026-11-18T22:47:17+01:00",

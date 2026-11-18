@@ -20,7 +20,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from cerebro import conocimiento, mapas, memoria, nucleo  # noqa: E402
+from cerebro import conocimiento, control, mapas, memoria, nucleo  # noqa: E402
+
+conocimiento.USAR_PRIVADO = True   # en tu PC, desde tu chat: también las notas privadas (si las tienes descargadas)
 
 try:                                    # mcp 2.x
     from mcp.server.mcpserver import MCPServer
@@ -96,6 +98,17 @@ def guardar_conocimiento(tipo: str, titulo: str, contenido: str, temas: str = ""
         return "No se guardó: revisa que tipo sea concepto/receta/decision/dato y que el contenido no esté vacío."
     mapas.generar()
     return f"Guardado: {', '.join(guardadas)} (se subirá a GitHub con Obsidian)."
+
+
+@servidor.tool()
+def controlar(ordenes: str) -> str:
+    """Controla lo que sabe el cerebro, con las mismas órdenes que proyectos/control/ (una por línea):
+    «olvidar tema: ac», «olvidar fuente: temarios/AC/Tema2», «olvidar nota: título», «no aprender: …»,
+    «reaprender: …», o «aprender:» con el texto debajo (opcional: tipo:, temas:, privado: si).
+    Pon «simular» en la primera línea para ver qué haría sin tocar nada. Úsalo SOLO si Javier lo pide."""
+    informe = control.ejecutar_orden(ordenes)
+    mapas.generar()
+    return informe
 
 
 if __name__ == "__main__":

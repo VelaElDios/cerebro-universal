@@ -234,5 +234,61 @@ try:
                                                           "Se crea una nota en proyectos/preguntas.", temas="cerebro")
 except ImportError as e:
     print(f"(sin el paquete mcp: no pruebo el servidor MCP: {e})")
+
+# 15. modo privado: las notas privadas no salen en lo público y solo se usan si se pide
+from cerebro import privado, control
+(nucleo.RAIZ / ".cerebro-privado" / "conocimiento").mkdir(parents=True)
+assert privado.disponible()
+g = conocimiento.guardar("tipo: receta\ntitulo: Mi solución secreta de la práctica\ntemas: ac\ncontenido:\nSe resuelve con un predictor de 2 bits y una BTB.", "", privada=True)
+assert g and (nucleo.RAIZ / ".cerebro-privado" / "conocimiento" / "recetas" / f"{g[0]}.md").exists()
+assert all(not n.get("privada") for n in conocimiento.todas(publicas_solo=True))
+assert "secreta" not in conocimiento.seleccionar(["ac"], "predictor de 2 bits práctica solución secreta", "")
+assert "secreta" in conocimiento.seleccionar(["ac"], "predictor de 2 bits práctica solución secreta", "", privadas=True)
+nodos, _ = mapas.generar()
+assert not any("secreta" in n["titulo"] for n in nodos)
+assert "secreta" not in (nucleo.RAIZ / "memoria" / "indice.md").read_text(encoding="utf-8")
+(pq / "privado - mi práctica.md").write_text("¿Cómo resolví la práctica?", encoding="utf-8")
+prov.pedir_rol = lambda rol, *a, **k: ("Con un predictor de 2 bits [[mi-solucion-secreta-de-la-practica]].", "falsa", "m")
+preguntas.ejecutar(pq, {}, pq / "proyecto.json", pq / "bitacora.md")
+publica = (pq / "privado - mi práctica.md").read_text(encoding="utf-8")
+assert "Respuesta privada" in publica and "predictor" not in publica.split("##")[-1]
+assert "predictor" in (nucleo.RAIZ / ".cerebro-privado" / "preguntas" / "privado - mi práctica.md").read_text(encoding="utf-8")
+
+# 16. notebooks y zip
+import zipfile
+nb = {"cells": [{"cell_type": "markdown", "source": ["# Caché\n", "Una caché asociativa por conjuntos."]},
+                {"cell_type": "code", "source": ["print(2**10)"], "outputs": [{"text": ["1024\n"]}]}],
+      "metadata": {"kernelspec": {"language": "python"}}}
+(apr / "cache.ipynb").write_text(json.dumps(nb), encoding="utf-8")
+assert medios.tipo_de("cache.ipynb") == "notebook"
+t = medios.extraer(apr / "cache.ipynb", "notebook")[0]
+assert "asociativa por conjuntos" in t and "print(2**10)" in t and "1024" in t
+with zipfile.ZipFile(apr / "practica.zip", "w") as z:
+    z.writestr("practica/main.c", "int main(){return 0;}")
+    z.writestr("practica/LEEME.txt", "Simulador de caché")
+    z.writestr("__MACOSX/._main.c", "basura")
+cola = aprender.pendientes(apr, {"aprender_de": [{"entrada": "practica.zip"}]}, {"publico": {}, "privado": {}})
+etiquetas = sorted(c[1] for c in cola)
+assert etiquetas == ["practica.zip!practica/LEEME.txt", "practica.zip!practica/main.c"], etiquetas
+
+# 17. control: olvidar, aprender algo concreto, no aprender y reaprender
+inf = control.ejecutar_orden("simular\nolvidar tema: ac")
+assert "simulación" in inf and (nucleo.RAIZ / ".cerebro-privado" / "conocimiento" / "recetas" / f"{g[0]}.md").exists()
+inf = control.ejecutar_orden("aprender:\ntipo: receta\ntemas: ac\nLa BTB guarda la dirección destino de los saltos tomados.", "Qué guarda la BTB")
+n = {x["nombre"]: x for x in conocimiento.todas()}["que-guarda-la-btb"]
+assert n["confianza"] == "verificado" and n["tipo"] == "receta" and "Javier" in n["fuentes"], inf
+inf = control.ejecutar_orden("olvidar tema: ac")
+assert "que-guarda-la-btb" not in {x["nombre"] for x in conocimiento.todas()} and "Olvidar tema" in inf
+assert not (nucleo.RAIZ / ".cerebro-privado" / "conocimiento" / "recetas" / f"{g[0]}.md").exists()
+control.ejecutar_orden("no aprender: practica.zip")
+assert aprender.pendientes(apr, {"aprender_de": [{"entrada": "practica.zip"}]}, {"publico": {}, "privado": {}}) == []
+json.dump({"doc.md": {"md5": "x", "hechos": 1, "total": 1, "notas": []}}, open(apr / "procesados.json", "w"))
+borr, quit = control.reaprender("doc.md")
+assert quit == 1 and "doc.md" not in json.load(open(apr / "procesados.json"))
+ct = nucleo.RAIZ / "proyectos" / "control"; ct.mkdir()
+(ct / "Olvidar sprints.md").write_text("olvidar nota: Duración de los sprints", encoding="utf-8")
+assert elegir_proyecto.hay_preguntas(ct, control.MARCA)
+control.ejecutar(ct, {}, ct / "proyecto.json", ct / "bitacora.md")
+assert control.MARCA in (ct / "Olvidar sprints.md").read_text(encoding="utf-8")
 nucleo.RAIZ = raiz_real
 print("TODO OK")

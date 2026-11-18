@@ -79,25 +79,40 @@ def normalizar(texto: str) -> str:
 
 # ---------- Leer ----------
 
-def todas() -> list[dict]:
-    base = carpeta()
-    if not base.exists():
-        return []
+def base_de(privada: bool) -> Path:
+    from . import privado
+    return privado.carpeta_conocimiento() if privada else carpeta()
+
+
+def todas(publicas_solo: bool = False, privadas_solo: bool = False) -> list[dict]:
+    """Todas las notas de conocimiento. Las privadas (modo privado, ver privado.py) llevan n["privada"]=True:
+    las IAs las usan, pero los mapas, el grafo, los embeddings públicos y el jardinero solo ven las públicas."""
+    from . import privado
+    bases = []
+    if not privadas_solo:
+        bases.append((carpeta(), False))
+    if not publicas_solo and privado.disponible():
+        bases.append((privado.carpeta_conocimiento(), True))
     notas = []
-    for p in sorted(base.rglob("*.md")):
-        n = leer(p)
-        if n and n.get("tipo"):
-            n["ruta"] = p.relative_to(nucleo.RAIZ).as_posix()
-            for lista in ("fuentes",):
-                if isinstance(n.get(lista), str):
-                    n[lista] = [n[lista]]
-                n.setdefault(lista, [])
-            notas.append(n)
+    for base, es_privada in bases:
+        if not base.exists():
+            continue
+        for p in sorted(base.rglob("*.md")):
+            n = leer(p)
+            if n and n.get("tipo"):
+                n["ruta"] = p.relative_to(nucleo.RAIZ).as_posix()
+                n["privada"] = es_privada
+                for lista in ("fuentes",):
+                    if isinstance(n.get(lista), str):
+                        n[lista] = [n[lista]]
+                    n.setdefault(lista, [])
+                notas.append(n)
     return notas
 
 
-def por_titulo() -> dict[str, dict]:
-    return {nombre_de(n.get("titulo", n["nombre"])): n for n in todas()}
+def por_titulo(privada: bool = False) -> dict[str, dict]:
+    return {nombre_de(n.get("titulo", n["nombre"])): n
+            for n in todas(publicas_solo=not privada, privadas_solo=privada)}
 
 
 # ---------- Elegir qué conocimiento mandar ----------
@@ -126,6 +141,10 @@ def _cuerpo_limpio(cuerpo: str) -> str:
     return re.sub(r"\[\[(?:[^\]|]*\|)?([^\]]+)\]\]", r"\1", texto)
 
 
+# ¿Se mandan notas privadas a las IAs? Por defecto NO: lo que producen los proyectos es público (el vault, la
+# memoria...). Lo activan los proyectos con "usar_privado": true, las preguntas privadas y el servidor MCP.
+USAR_PRIVADO = False
+
 _usadas: list[str] = []   # rutas de las notas mandadas en el último mensaje (para cerebro/uso.py)
 
 
@@ -134,7 +153,7 @@ def ultimas_usadas() -> list[str]:
 
 
 def seleccionar(temas: list[str], contexto: str, proyecto: str = "", max_chars: int = MAX_CHARS,
-                semantica: bool = True) -> str:
+                semantica: bool = True, privadas: bool | None = None) -> str:
     """Las notas más útiles para este proyecto y este momento, listas para meter en un mensaje.
 
     Mezcla tres señales: palabras clave y temas (siempre), parecido de significado con lo que se está
@@ -147,7 +166,8 @@ def seleccionar(temas: list[str], contexto: str, proyecto: str = "", max_chars: 
     q = embeddings.consulta(contexto) if vecs else None
     estad = uso.cargar()
     puntuadas = []
-    for n in todas():
+    privadas = USAR_PRIVADO if privadas is None else privadas
+    for n in todas(publicas_solo=not privadas):
         if n.get("tipo") == "fuente":
             continue
         p = _puntos(n, temas_set, ctx, palabras_ctx, proyecto)
@@ -163,6 +183,8 @@ def seleccionar(temas: list[str], contexto: str, proyecto: str = "", max_chars: 
     for _, n in puntuadas:
         marca = "verificado" if n.get("confianza") == "verificado" else "propuesto, compruébalo"
         de = ", ".join(n.get("proyectos", [])) or "general"
+        if n.get("privada"):
+            de += " · PRIVADA: úsala, pero no copies su contenido en nada que se publique"
         trozo = (f"### [{n['tipo']}] {n.get('titulo', n['nombre'])} ({marca} · {de})\n"
                  f"{_cuerpo_limpio(n['cuerpo'])}")
         if len(trozo) > 2500:
@@ -177,10 +199,10 @@ def seleccionar(temas: list[str], contexto: str, proyecto: str = "", max_chars: 
     return "\n\n".join(trozos)
 
 
-def mapa_textual(max_titulos: int = 8, max_chars: int = 4000) -> str:
+def mapa_textual(max_titulos: int = 8, max_chars: int = 4000, privadas: bool | None = None) -> str:
     """Índice corto de todo lo que sabe el cerebro, por temas, para que la IA sepa qué existe."""
     por_tema: dict[str, list[str]] = {}
-    for n in todas():
+    for n in todas(publicas_solo=not (USAR_PRIVADO if privadas is None else privadas)):
         for t in n.get("temas", []) or ["general"]:
             por_tema.setdefault(t.lower(), []).append(n.get("titulo", n["nombre"]))
     if not por_tema:
@@ -234,11 +256,11 @@ def _entradas(bloque: str) -> list[dict]:
 
 
 def guardar(bloque: str, proyecto: str, verificacion: str = "", fuente_por_defecto: str = "",
-            temas_extra: list[str] | None = None) -> list[str]:
+            temas_extra: list[str] | None = None, privada: bool = False) -> list[str]:
     """Guarda las notas de un bloque <<<CONOCIMIENTO>>>. `verificacion` es el texto contra el que se
     comprueban las citas (fuentes y archivos del borrador). Devuelve los nombres guardados."""
     guardadas = []
-    existentes = por_titulo()
+    existentes = por_titulo(privada)
     texto_norm = normalizar(verificacion) if verificacion else ""
     hoy = f"{nucleo.ahora():%Y-%m-%d}"
     for e in _entradas(bloque):
@@ -295,7 +317,7 @@ def guardar(bloque: str, proyecto: str, verificacion: str = "", fuente_por_defec
                  "proyectos": [proyecto] if proyecto else [], "fuentes": [fuente] if fuente else [],
                  "confianza": "verificado" if verificada else "propuesto", "fecha": hoy, "actualizado": hoy,
                  "cuerpo": cuerpo}
-        ruta = carpeta() / TIPOS[tipo] / f"{nombre}.md"
+        ruta = base_de(privada) / TIPOS[tipo] / f"{nombre}.md"
         _escribir(ruta, datos)
         existentes[nombre] = {**datos, "nombre": nombre, "ruta": ruta.relative_to(nucleo.RAIZ).as_posix()}
         guardadas.append(nombre)
@@ -303,7 +325,7 @@ def guardar(bloque: str, proyecto: str, verificacion: str = "", fuente_por_defec
 
 
 def guardar_fuente(titulo: str, etiqueta: str, temas: list[str], notas: list[str], proyecto: str = "",
-                   resumen: str = "") -> str:
+                   resumen: str = "", privada: bool = False) -> str:
     """Nota-índice de un documento aprendido: enlaza todo lo que se sacó de él (un nodo grande del mapa)."""
     nombre = "fuente-" + nombre_de(titulo)
     hoy = f"{nucleo.ahora():%Y-%m-%d}"
@@ -312,7 +334,7 @@ def guardar_fuente(titulo: str, etiqueta: str, temas: list[str], notas: list[str
               + f"## Lo que se sacó de él ({len(notas)})\n" + "\n".join(f"- [[{n}]]" for n in sorted(set(notas))) + "\n")
     if proyecto:
         cuerpo += f"\nOrigen: [[proyectos/{proyecto}/estado|{proyecto}]]\n"
-    _escribir(carpeta() / TIPOS["fuente"] / f"{nombre}.md",
+    _escribir(base_de(privada) / TIPOS["fuente"] / f"{nombre}.md",
               {"tipo": "fuente", "titulo": titulo, "temas": temas, "claves": [], "proyectos": [proyecto] if proyecto else [],
                "fuentes": [etiqueta], "confianza": "verificado", "fecha": hoy, "actualizado": hoy, "cuerpo": cuerpo})
     return nombre

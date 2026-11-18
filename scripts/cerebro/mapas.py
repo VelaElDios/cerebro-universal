@@ -71,7 +71,7 @@ def nodos_y_aristas() -> tuple[list[dict], list[dict]]:
             aristas.append({"de": nid, "a": tema(t), "tipo": "trata"})
         for p in l.get("proyectos", []):
             aristas.append({"de": nid, "a": f"proyecto:{p}", "tipo": "aprendido_en"})
-    notas = conocimiento.todas()
+    notas = conocimiento.todas(publicas_solo=True)
     por_nombre = {n["nombre"]: n for n in notas}
     for n in notas:
         nid = f"{n['tipo']}:{n['nombre']}"

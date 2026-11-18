@@ -22,7 +22,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-from cerebro import aprender, conocimiento, dataset, embeddings, jardin, mapas, memoria, nucleo, preguntas, repos, uso
+from cerebro import (aprender, conocimiento, control, dataset, embeddings, jardin, mapas, memoria, nucleo,
+                     preguntas, privado, repos, uso)
 from cerebro import proveedores as prov
 
 # ---------- Cronómetro ----------
@@ -305,7 +306,8 @@ def main():
 
     # Proyectos especiales que no construyen nada: aprender documentos, cuidar el vault, contestar preguntas
     especiales = {"aprender": (aprender.ejecutar, "Aprendizaje"), "jardin": (jardin.ejecutar, "Jardinero"),
-                  "preguntas": (preguntas.ejecutar, "Preguntas")}
+                  "preguntas": (preguntas.ejecutar, "Preguntas"), "control": (control.ejecutar, "Control")}
+    print(privado.preparar())   # repo privado en .cerebro-privado/ (notas privadas); sin token, nada
     if cfg.get("tipo") in especiales:
         funcion, nombre_tipo = especiales[cfg["tipo"]]
         cfg["ultima_ejecucion"] = nucleo.ahora().isoformat(timespec="seconds")
@@ -319,6 +321,7 @@ def main():
         finally:
             print(embeddings.actualizar())
             mapas.generar()
+            print(privado.subir(f"{cfg['tipo']}: {carpeta.name} {nucleo.ahora():%Y-%m-%d %H:%M}"))
             print("Datos de entrenamiento: " + dataset.subir(carpeta.name))
         return
 
@@ -348,6 +351,7 @@ def main():
         dejar_de_seguir_ignorados(carpeta)
         print(embeddings.actualizar())
         mapas.generar()
+        print(privado.subir(f"paso: {carpeta.name} {nucleo.ahora():%Y-%m-%d %H:%M}"))
         print("Datos de entrenamiento: " + dataset.subir(carpeta.name))
         # Si este era el último paso permitido, se pausa ya: así la próxima ejecución
         # del workflow lo ve antes de instalar LaTeX y no gasta minutos.
@@ -368,6 +372,8 @@ def dar_paso(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path):
     borrador, final = carpeta / "borrador", carpeta / "final"
     borrador.mkdir(exist_ok=True)
     maximo = cfg.get("max_archivos_por_paso", 3)
+    # Lo que producen los proyectos es público: solo usan notas privadas si lo piden ("usar_privado": true)
+    conocimiento.USAR_PRIVADO = bool(cfg.get("usar_privado", False))
 
     config, proveedores = prov.cargar(nucleo.RAIZ / "config" / "ias.json")
     # Un proyecto puede cambiar qué IAs hacen cada rol ("roles" en su proyecto.json)

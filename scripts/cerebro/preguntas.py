@@ -63,7 +63,7 @@ def enlazar_titulos(texto: str) -> str:
     """Las IAs enlazan por título ([[Arquitectura en capas…]]) y Obsidian necesita el nombre del archivo:
     [[titulo]] → [[nombre-del-archivo|titulo]] cuando el título es de una nota que existe."""
     por_titulo = {}
-    for n in conocimiento.todas():
+    for n in conocimiento.todas(publicas_solo=not conocimiento.USAR_PRIVADO):
         por_titulo[conocimiento.normalizar(n.get("titulo", ""))] = n["nombre"]
         por_titulo[conocimiento.normalizar(n["nombre"])] = n["nombre"]
 
@@ -88,6 +88,17 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
         if prov.tiempo_restante() < 4 * 60:
             break
         pregunta = _pregunta(ruta)
+        # Pregunta privada («privado: si» en la nota o título que empieza por «privado»): usa también las notas
+        # privadas y la respuesta se guarda en el repo privado, no en el vault público
+        es_privada = bool(re.search(r"^\s*privad[oa]\s*:\s*s[ií]", pregunta, re.I | re.M)
+                          or ruta.stem.lower().startswith("privad"))
+        if es_privada:
+            from . import privado
+            if not privado.disponible():
+                nucleo.anotar(bitacora, "⚠️ Pregunta privada sin contestar",
+                              f"`{ruta.name}`: el modo privado no está disponible (falta DATOS_TOKEN).")
+                continue
+        conocimiento.USAR_PRIVADO = es_privada
         mensaje = f"# PREGUNTA DE JAVIER\n{pregunta}\n\n{_contexto(pregunta)}"
         try:
             respuesta, ia, modelo = prov.pedir_rol("cerebro", config, proveedores, SISTEMA, mensaje)
@@ -97,9 +108,20 @@ def ejecutar(carpeta: Path, cfg: dict, cfg_ruta: Path, bitacora: Path) -> str:
         usadas = conocimiento.ultimas_usadas()
         respuesta = enlazar_titulos(respuesta)
         dataset.registrar(carpeta.name, "cerebro", "pregunta", ia, modelo, SISTEMA, mensaje, respuesta)
-        with ruta.open("a", encoding="utf-8") as f:
-            f.write(f"\n\n{MARCA} ({nucleo.ahora():%Y-%m-%d %H:%M} · {ia} · {modelo})\n\n{respuesta.strip()}\n\n"
-                    f"*Notas consultadas: {len(usadas)}. Para otra pregunta, crea otra nota en esta carpeta.*\n")
+        cabecera = f"\n\n{MARCA} ({nucleo.ahora():%Y-%m-%d %H:%M} · {ia} · {modelo})\n\n"
+        if es_privada:
+            from . import privado
+            destino = privado.ruta() / "preguntas" / ruta.name
+            destino.parent.mkdir(parents=True, exist_ok=True)
+            destino.write_text(pregunta + cabecera + respuesta.strip() + "\n", encoding="utf-8")
+            with ruta.open("a", encoding="utf-8") as f:
+                f.write(cabecera + f"🔒 Respuesta privada: está en el repo privado, `cerebro-datos/preguntas/{ruta.name}` "
+                        "(usa notas privadas, por eso no se escribe aquí).\n")
+        else:
+            with ruta.open("a", encoding="utf-8") as f:
+                f.write(cabecera + f"{respuesta.strip()}\n\n"
+                        f"*Notas consultadas: {len(usadas)}. Para otra pregunta, crea otra nota en esta carpeta.*\n")
+        conocimiento.USAR_PRIVADO = False
         hechas.append(ruta.name)
     if hechas:
         nucleo.anotar(bitacora, "💬 Preguntas contestadas", "\n".join(f"- [[{h[:-3]}]]" for h in hechas))
