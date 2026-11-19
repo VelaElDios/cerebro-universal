@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto verificadas en fuentes"
-temas: ["metricas", "pbis", "sprints", "tareas", "fechas", "pruebas", "datos", "memoria-procesos"]
+temas: ["metricas", "pbis", "sprints", "tareas", "fechas", "pruebas", "datos", "memoria-procesos", "verificacion"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "48 PBIs", "82 tareas", "276 pruebas", "322 pruebas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md y repo:saas/docs/gestion/README.md"]
@@ -71,5 +71,19 @@ Cifras oficiales del proyecto: Sprint 1 = 19 PBIs / 32 tareas (Hitos 1-4). Sprin
   - Endpoints API: 23. Migraciones SQL: 5.
   - Líneas backend: ~2.300; frontend: ~1.150; CSS: ~950; juego: ~14.800; tests: ~5.050.
   - Contenido jugable: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
+
+## Ampliación (2026-11-19, memoria-procesos)
+Cifras confirmadas en las fuentes del repositorio (documentacion-tecnica.md §4 y gestion/README.md):
+- Sprint 1: 19 PBIs (P1–P19), 32 tareas (T1–T32). Fechas: 29/09/2026 – 27/10/2026.
+- Sprint 2: 29 PBIs (P20–P48), 50 tareas (T33–T82). Fechas: 23/10/2026 – 29/10/2026.
+- Total proyecto: 48 PBIs, 82 tareas.
+- Pruebas: 276 en main al cierre Sprint 2; 322 tras Fase 7 (46 pruebas añadidas).
+- Burndown Sprint 1 (entrega): 16 PBIs (P1–P14, P18, P19) — P15–P17 son Hito 4, completado después de la primera entrega.
+- Releases: hito-1, hito-2, hito-3, hito-4, sprint-1.
+- PRs fusionados: más de 50.
+- Endpoints API: 23.
+- Migraciones SQL: 5.
+- Líneas backend: ~2.300; frontend: ~1.150; CSS: ~950; juego: ~14.800; tests: ~5.050.
+- Contenido jugable: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

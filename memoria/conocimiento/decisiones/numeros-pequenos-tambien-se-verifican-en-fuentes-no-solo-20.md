@@ -1,7 +1,7 @@
 ---
 tipo: "decision"
 titulo: "Números pequeños también se verifican en fuentes (no solo > 20)"
-temas: ["fuentes", "numeros", "verificacion", "memoria-procesos"]
+temas: ["fuentes", "numeros", "verificacion", "memoria-procesos", "test"]
 claves: ["número «32» no aparece en las fuentes", "verificar.py", "cifras pequeñas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md (lección guardada)", "memoria/lecciones.md (lección \"Cada cifra de un documento sale de las fuentes, también las pequeñas\")"]
@@ -38,5 +38,8 @@ Temas: [[fuentes]] · [[numeros]] · [[verificacion]]
 ## Ampliación (2026-11-19, memoria-procesos)
 |
   Antes de escribir cualquier cifra (también las pequeñas, y las que salen de sumar), buscarla en las fuentes y copiarla tal cual. Si hay que contar elementos de una lista (P1–P14 y P18), contarlos uno a uno y comprobarlo con la tabla de la fuente. Lo que no está en las fuentes no se escribe.
+
+## Ampliación (2026-11-19, memoria-procesos)
+El script `verificar.py` solo valida automáticamente números > 20. Los números ≤ 20 (ej. 19 PBIs, 16 PBIs en burndown, 5 migraciones, 6 ultras, 10 equipaciones) **debe verificarlos el revisor manualmente** contra las fuentes. Si un número pequeño no está en las fuentes, es error igual que los grandes. Ejemplo: «16 PBIs iniciales» → confirmar en gestion.md tabla «Evolución del sprint», fila «Inicio del Sprint 1» = 15, no 16. El burndown de la entrega cuenta 16 (P1–P14, P18, P19), no 19.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

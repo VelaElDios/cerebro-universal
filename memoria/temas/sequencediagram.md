@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "sequencediagram"
-notas: 2
+notas: 3
 ---
 # sequencediagram
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta|Diagramas de secuencia pgf-umlsd sintaxis correcta]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -17,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este a
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[codigos estado]] · [[http]]
+[[latex]] · [[pgf-umlsd]] · [[codigos estado]] · [[http]] · [[diagramas]] · [[diagramas-secuencia]]

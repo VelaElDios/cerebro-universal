@@ -101,4 +101,28 @@ Para agrupar capturas relacionadas en una figura con caption general y subcaptio
   ```
   En el texto: "La figura~\ref{fig:general} muestra el flujo de registro (subfigura~\subref{fig:sub1}) y el error de validación (subfigura~\subref{fig:sub2})."
 
+## Ampliación (2026-11-19, memoria-procesos)
+Para agrupar 2 capturas relacionadas en una figura con subcaptions y caption general:
+```latex
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{figs/capturas/carpeta/imagen1}
+\subcaption{Descripción breve de la imagen 1.}
+\label{fig:etiqueta1}
+\end{subfigure}
+\hfill
+\begin{subfigure}{0.48\textwidth}
+\centering
+\includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{figs/capturas/carpeta/imagen2}
+\subcaption{Descripción breve de la imagen 2.}
+\label{fig:etiqueta2}
+\end{subfigure}
+\caption{Caption general que explica qué muestran juntas las dos imágenes.}
+\label{fig:etiqueta-general}
+\end{figure}
+```
+En el texto, referenciar con `\ref{fig:etiqueta-general}` (conjunto) o `\subref{fig:etiqueta1}` (subfigura individual). Nunca escribir «La figura X muestra…» suelto; integrar la explicación en la prosa: «Al registrarse, el formulario valida email y contraseña en cliente (Figura~\ref{fig:app-inicio-registro}) y el servidor comprueba unicidad del email...»
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -25,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[tikz]] · [[memoria]] · [[tfg]] · [[diagramas-secuencia]] · [[plantuml]] · [[maquetacion]] · [[verificacion]]
+[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[tfg]] · [[diagramas-secuencia]] · [[plantuml]] · [[maquetacion]] · [[sequencediagram]] · [[verificacion]]

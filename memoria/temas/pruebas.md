@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pruebas» (este archivo s
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[metricas]] · [[pbis]] · [[sprints]] · [[tareas]] · [[fechas]] · [[datos]] · [[memoria-procesos]]
+[[grada-colchonera]] · [[saas]] · [[metricas]] · [[pbis]] · [[sprints]] · [[tareas]] · [[fechas]] · [[datos]] · [[memoria-procesos]] · [[verificacion]]

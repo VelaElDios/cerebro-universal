@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pipeline» (este archivo 
 
 ## Temas relacionados
 
-[[cicd]] · [[coherencia]] · [[latex]] · [[memoria-procesos]] · [[redaccion]]
+[[cicd]] · [[coherencia]] · [[latex]] · [[memoria-procesos]] · [[redaccion]] · [[arquitectura]] · [[memoria]]

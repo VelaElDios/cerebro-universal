@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tfg"
-notas: 52
+notas: 54
 ---
 # tfg
 
@@ -25,6 +25,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
 - 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]]
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-vs-lista-de-capturas-regla-13-javier|Prosa de TFG vs lista de capturas (regla 13 Javier)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada|Reescribir frases «La figura X muestra…» como prosa integrada]] · ⚠️ propuesto
@@ -51,6 +52,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
+- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -79,4 +81,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[memoria]] · [[latex]] · [[figuras]] · [[grada-colchonera]] · [[saas]] · [[verificacion]] · [[diagramas]] · [[plantilla]] · [[scrum]] · [[tablas]] · [[redaccion]] · [[capturas]]
+[[latex]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[saas]] · [[verificacion]] · [[plantilla]] · [[diagramas]] · [[redaccion]] · [[scrum]] · [[capturas]] · [[tablas]]

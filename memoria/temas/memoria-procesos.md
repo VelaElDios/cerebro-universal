@@ -29,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[sprint]] · [[saas]] · [[metricas]] · [[pbis]] · [[tareas]] · [[fechas]] · [[datos]] · [[fuentes]] · [[done]] · [[donetonic]]
+[[scrum]] · [[grada-colchonera]] · [[sprint]] · [[saas]] · [[memoria]] · [[metricas]] · [[pbis]] · [[tareas]] · [[fechas]] · [[datos]] · [[verificacion]] · [[fuentes]]

@@ -59,4 +59,16 @@ Para capturas altas (gráficas de DoneTonic, capturas de CI/CD), envolver en `ad
   Para capturas móviles (verticales): `width=0.35\textwidth` + `height=0.42\textheight,keepaspectratio`.
   Siempre usar `[htbp]` y parámetros de flotantes relajados (ya en include/extra.tex).
 
+## Ampliación (2026-11-19, memoria-procesos)
+Para capturas altas (gráficas DoneTonic, GitHub Actions) que ocupan casi una página entera, envolver en `adjustbox` con `max totalheight=0.42\textheight` y `width=0.85\textwidth` (o similar) para que compartan página con texto:
+```latex
+\begin{figure}[htbp]
+\centering
+\adjustbox{max totalheight=0.42\textheight,width=0.85\textwidth}{\includegraphics{figs/capturas/donetonic/06-graficas-sprint2.png}}
+\caption{Gráficas del Sprint 2 en recta.}
+\label{fig:donetonic-s2-graficas}
+\end{figure}
+```
+Si aun así queda sola, reducir a `0.35\textheight` o agrupar con otra captura relacionada en `subfigure`. Los parámetros de flotantes en `include/extra.tex` ya están relajados (`\topfraction=0.85`, `\bottomfraction=0.6`, `\textfraction=0.12`, `\floatpagefraction=0.8`, `topnumber=3`, `totalnumber=4`).
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "decision"
 titulo: "Una sola portada oficial en elements/portada.tex"
-temas: ["latex", "plantilla", "portada", "maquetacion", "plantilla-tfg"]
+temas: ["latex", "plantilla", "portada", "maquetacion", "plantilla-tfg", "tfg"]
 claves: ["portada", "elements/portada.tex", "preambulo.tex", "regla 1"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
@@ -33,5 +33,8 @@ La memoria debe usar exclusivamente la portada oficial definida en `elements/por
 ## Ampliación (2026-11-19, memoria-procesos)
 |
   El archivo elements/preambulo.tex debe contener solo: declaración de autoría, Resumen, Abstract. El bloque de «Segunda portada» (textblock con logos, título, autor) se elimina. La portada oficial ya está en elements/portada.tex y se incluye en Memoria.tex antes del frontmatter.
+
+## Ampliación (2026-11-19, memoria-procesos)
+La plantilla oficial del TFG ESIIAB-UCLM define una única portada en `elements/portada.tex` (con `textblock` posicionados absolutamente). En `elements/preambulo.tex` **no debe haber** ningún bloque de «segunda portada» (logos, título, autor). El preámbulo solo contiene: declaración de autoría, Resumen, Abstract, y configuraciones de maquetación (raggedbottom, flotantes, etc.). `Memoria.tex` incluye `\input{elements/portada}` al inicio del documento y `\input{elements/preambulo}` en `\frontmatter`.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

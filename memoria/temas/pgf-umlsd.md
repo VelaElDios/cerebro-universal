@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgf-umlsd"
-notas: 12
+notas: 13
 ---
 # pgf-umlsd
 
@@ -26,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Lecciones (errores ya resueltos)
 
+- ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/pgf-umlsd-y-comandos-fragiles-en-sequencediagram|pgf-umlsd y comandos frágiles en sequencediagram]] · ⚠️ propuesto
@@ -33,4 +34,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[diagramas]] · [[diagramas-secuencia]] · [[tikz]] · [[secuencia]] · [[sequencediagram]] · [[codigos estado]] · [[http]] · [[maquetacion]]
+[[latex]] · [[tikz]] · [[diagramas]] · [[diagramas-secuencia]] · [[secuencia]] · [[sequencediagram]] · [[maquetacion]] · [[codigos estado]] · [[http]]

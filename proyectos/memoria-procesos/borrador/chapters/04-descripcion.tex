@@ -111,34 +111,34 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 ]
     % Navegador (columna izquierda)
     \node[nodewide] (ui) {Interfaz\\ui.js + ui/ + vistas/};
-    \node[node, below=1.0cm of ui] (cli) {Cliente API\\api.js (único fetch)};
-    \node[node, below=1.0cm of cli] (game) {Juego\\game/ (canvas, Web Audio)};
+    \node[node, below=1.5cm of ui] (cli) {Cliente API\\api.js (único fetch)};
+    \node[node, below=1.5cm of cli] (game) {Juego\\game/ (canvas, Web Audio)};
     % Servidor (columna central)
-    \node[nodewide, right=6.0cm of ui] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
-    \node[node, below=1.0cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación, tokens, juego};
-    \node[node, below=1.0cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=1.0cm of repo] (int) {Integraciones\\correo | Google};
+    \node[nodewide, right=7.0cm of ui] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
+    \node[node, below=1.5cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación, tokens, juego};
+    \node[node, below=1.5cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
+    \node[node, below=1.5cm of repo] (int) {Integraciones\\correo | Google};
     % Reglas compartidas (a la derecha de Lógica)
-    \node[node, right=4.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
+    \node[node, right=5.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
     % BD y externos (a la derecha de Datos e Integraciones)
-    \node[node, right=4.0cm of repo] (pg) {PostgreSQL\\Neon};
-    \node[node, right=4.0cm of int] (smtp) {SMTP Gmail};
-    \node[node, right=4.0cm of smtp] (goo) {Google OAuth 2.0};
+    \node[node, right=5.0cm of repo] (pg) {PostgreSQL\\Neon};
+    \node[node, right=5.0cm of int] (smtp) {SMTP Gmail};
+    \node[node, right=5.0cm of smtp] (goo) {Google OAuth 2.0};
 
     % Flechas navegador (verticales)
     \draw[arrow] (ui) -- (cli);
     \draw[arrow] (game) -- (cli);
     % Flecha cliente -> API (horizontal, con codo para evitar cruzar cajas)
-    \draw[arrow] (cli.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {HTTP + JSON / cookie sesión} (api.west);
+    \draw[arrow] (cli.east) -- ++(2.0,0) |- node[near start, above, font=\footnotesize] {HTTP + JSON / cookie sesión} (api.west);
     % Flechas servidor (verticales)
     \draw[arrow] (api) -- (srv);
     \draw[arrow] (srv) -- (repo);
     \draw[arrow] (srv) -- (int);
     \draw[arrow, dashed] (srv) -- (rules);
-    % Flechas a BD y externos (horizontales con codos)
-    \draw[arrow] (repo.east) -- ++(1.0,0) |- (pg.west);
-    \draw[arrow] (int.east) -- ++(1.0,0) |- (smtp.west);
-    \draw[arrow] (int.east) -- ++(1.0,0) |- (goo.west);
+    % Flechas a BD y externos (horizontales con codos, evitando cruzar cajas)
+    \draw[arrow] (repo.east) -- ++(1.5,0) |- (pg.west);
+    \draw[arrow] (int.east) -- ++(1.5,0) |- (smtp.west);
+    \draw[arrow] (int.east) -- ++(1.5,0) |- (goo.west);
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
@@ -201,9 +201,9 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth}
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\small, text width=4.2cm},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.8cm, align=left, font=\small, text width=4.8cm},
     attr/.style={font=\small},
     pk/.style={font=\small\bfseries},
     uk/.style={font=\small\itshape},
@@ -224,23 +224,23 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr apodo\_clave TEXT \uk\\
         \attr avatar TEXT
     };
-    % session (debajo de users)
-    \node[entity, below=2.0cm of users] (session) {
+    % session (debajo de users, más separación)
+    \node[entity, below=3.0cm of users] (session) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \attr sess JSON\\
         \attr expire TIMESTAMP
     };
-    % juego_perfiles (a la derecha de users, alineado arriba)
-    \node[entity, right=7.0cm of users] (perfiles) {
+    % juego_perfiles (a la derecha de users, alineado arriba, más separación)
+    \node[entity, right=9.0cm of users] (perfiles) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \attr datos JSONB\\
         \attr version INTEGER\\
         \attr updated\_at TIMESTAMPTZ
     };
-    % juego_records (debajo de juego_perfiles)
-    \node[entity, below=2.0cm of perfiles] (records) {
+    % juego_records (debajo de juego_perfiles, más separación)
+    \node[entity, below=3.0cm of perfiles] (records) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \attr alias TEXT\\
@@ -251,9 +251,9 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr bajas INTEGER\\
         \attr created\_at TIMESTAMPTZ
     };
-    % relaciones: users -> perfiles (horizontal), users -> records (codo para evitar cruzar perfiles)
-    \draw[arrow] (users.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
-    \draw[arrow] (users.south) -- ++(0,-1.0) -| node[near start, left, font=\footnotesize] {tiene su mejor partida} (records.west);
+    % relaciones: users -> perfiles (horizontal con codo), users -> records (codo largo)
+    \draw[arrow] (users.east) -- ++(2.5,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
+    \draw[arrow] (users.south) -- ++(0,-1.8) -| node[near start, left, font=\footnotesize] {tiene su mejor partida} (records.west);
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}

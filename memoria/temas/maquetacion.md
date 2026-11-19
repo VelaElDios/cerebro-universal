@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 13
+notas: 14
 ---
 # maquetacion
 
@@ -27,8 +27,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Lecciones (errores ya resueltos)
 
+- ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable|Evitar páginas casi vacías al final de anexos con longtable]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[longtable]] · [[reglas-tfg]] · [[maquetación]] · [[subcaption]] · [[subfigure]] · [[capturas]] · [[tablas]] · [[plantilla]] · [[portada]] · [[plantilla-tfg]]
+[[latex]] · [[figuras]] · [[longtable]] · [[reglas-tfg]] · [[maquetación]] · [[subcaption]] · [[tikz]] · [[pgf-umlsd]] · [[tfg]] · [[subfigure]] · [[capturas]] · [[tablas]]

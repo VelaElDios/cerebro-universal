@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria"
-notas: 48
+notas: 49
 ---
 # memoria
 
@@ -48,6 +48,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p|Paso 1 completado: preambulo.tex ya cumple regla 1 (una sola portada)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie|Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
@@ -78,4 +79,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[figuras]] · [[diagramas]] · [[tikz]] · [[verificacion]] · [[plantilla]] · [[scrum]] · [[tablas]] · [[grada-colchonera]] · [[donetonic]] · [[anexos]]
+[[tfg]] · [[latex]] · [[figuras]] · [[diagramas]] · [[tikz]] · [[verificacion]] · [[plantilla]] · [[scrum]] · [[tablas]] · [[grada-colchonera]] · [[donetonic]] · [[memoria-procesos]]

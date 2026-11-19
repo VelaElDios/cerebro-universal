@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 17
+notas: 19
 ---
 # tikz
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 - 🧪 [[memoria/conocimiento/recetas/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
@@ -35,10 +36,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 - ⚠️ [[memoria/lecciones/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]]
 - ⚠️ [[memoria/lecciones/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]]
+- ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]]
 - ⚠️ [[memoria/lecciones/pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d|pgfplots: línea horizontal de referencia de lado a lado con \draw]]
 - ⚠️ [[memoria/lecciones/pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida|pgfplots: symbolic x coords necesita la lista ya expandida]]
 
 ## Temas relacionados
 
-[[latex]] · [[pgfplots]] · [[diagramas]] · [[memoria]] · [[pgf-umlsd]] · [[lua]] · [[tfg]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]]
+[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[pgfplots]] · [[memoria]] · [[lua]] · [[tfg]] · [[maquetacion]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]]

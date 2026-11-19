@@ -11128,3 +11128,79 @@ El constructor debe abordar los puntos 1-7 en los próximos pasos, siguiendo el 
 ## 2026-11-19 20:59 · 🧠 Conocimiento guardado
 
 [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
+
+## 2026-11-19 21:49 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+(sin resumen)
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/01-introduccion.tex`
+
+**Intentos:**
+- intento 1: ❌ chapters/04-descripcion.tex:445: el participante «» no está declarado con \newthread o \newinst en este diagrama
+- intento 2: ❌ VERIFICACIÓN FALLIDA: 16 problema(s) (tocó `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`)
+- intento 3: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** -
+
+## 2026-11-19 21:52 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 92 páginas, sin "Infinite glue shrinkage") tras revertir el último intento fallido del constructor.
+- verificar.py: FALLA – 16 errores de números no encontrados en las fuentes proporcionadas (32, 23, 48, 50, 33, 82 en chapters/01-introduccion.tex:36-37 y chapters/03-propuesta.tex:24-25). **Causa raíz**: las fuentes principales `repo:saas/docs/documentacion-tecnica.md`, `repo:saas/docs/gestion/README.md`, `repo:saas/docs/revision-entrega.md` y `repo:saas/docs/hito4-configuracion.md` **no se pasaron en este mensaje** (aparecen como "falta esta fuente"), por lo que el test no puede validar las cifras reales del proyecto.
+- revisar_maquetacion.py (Gemini): FALLA en 5 diagramas (reglas 16-18): fig:capas (etiqueta cruza flecha), fig:modelo-datos (línea atraviesa caja), fig:sec-login (línea vertical atraviesa bloques alt/else), fig:sec-google (etiqueta cruza caja), fig:sec-baja (etiqueta se superpone a línea vertical).
+- Problemas de maquetación persistentes (reglas de Javier):
+  * Imágenes DoneTonic duplicadas (regla 10): aparecen en Cap 3, Cap 4, Anexo A1 y Anexo A2.
+  * Prosa tipo «La figura X muestra…» en Cap 4 §6 y Cap 4b §2 (regla 13).
+  * Secciones de 1-2 líneas (regla 9): p.ej. §6.3 y §6.4 de Cap 4 (ya fusionadas por el constructor, pero hay que revisar el resto).
+  * Pipeline descrito en Cap 3 y Cap 5 (regla 14).
+  * Longtables sin `\\*` antes de `\bottomrule` (regla 7): el constructor añadió en Cap 4 y Anexo A1, pero hay que comprobar todas.
+  * Capturas altas sin `adjustbox` (regla 8): donetonic/06-graficas-sprint2.png (Anexo A1) y produccion/02-actions-verde.png (Cap 5).
+- Fuentes clave no proporcionadas: imposibilita verificación completa de cifras y trazabilidad.
+- El borrador compila pero no pasa las pruebas automáticas ni la revisión de maquetación.
+
+Qué está bien:
+- Portada única oficial (elements/portada.tex) y preámbulo sin segunda portada.
+- Estructura de capítulos y anexos según la plantilla.
+- Datos contrastados en la mayoría de capítulos (requisitos, arquitectura, juego, evaluación, conclusiones, anexos).
+- Anexo de desarrollo con dos secciones de sprint con mismo esquema y explicación de la recta de DoneTonic en Sprint 2.
+- Anexo de trazabilidad con tabla completa 82 tareas.
+- Bibliografía con referencias requeridas.
+
+Qué está mal y debe corregirse:
+1. **Números no verificados** en Cap 1 y Cap 3: el test los rechaza porque las fuentes que los contienen no se pasaron. El constructor debe solicitar `documentacion-tecnica.md` y `gestion/README.md` para el siguiente paso y reemplazar las cifras por los valores confirmados (ej. 19 PBIs Sprint 1, 32 tareas Sprint 1, 29 PBIs Sprint 2, 50 tareas Sprint 2, 48 PBIs totales, 82 tareas totales).
+2. **5 diagramas de secuencia con cruces** en chapters/04-descripcion.tex (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja): violan reglas 16-18 (flechas/etiquetas atraviesan cajas, participantes mal dimensionados, letras < 8pt).
+3. **Imágenes DoneTonic repetidas** en varios capítulos: mantener solo en Cap 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y en Anexo A1 usar `\ref` a esas figuras; borrar duplicados de Cap 4 y Anexo A2.
+4. **Prosa de manual** en Cap 4 §6 "La aplicación" y Cap 4b §2 "Cómo se juega": todavía con frases sueltas "La figura X muestra..." en lugar de integrar capturas en párrafos explicativos con `subfigure`.
+5. **Descripción del pipeline duplicada**: en Cap 3 remitir con `\ref{fig:pipeline}` a la explicación completa del Cap 5; borrar descripción duplicada en Cap 3.
+6. **Longtables sin `\\*`** antes de `\bottomrule` en varias tablas largas (regla 7).
+7. **Capturas altas sin `adjustbox`**: donetonic/06-graficas-sprint2.png (a1-desarrollo) y produccion/02-actions-verde.png (05-evaluacion) con `max totalheight=0.42\textheight`.
+
+Correcciones del revisor en este paso:
+- Revertido el cambio que rompía la compilación en chapters/04-descripcion.tex (participante vacío en sequencediagram).
+- Ajustes menores en los diagramas para evitar advertencias de pgf (sin cambiar la lógica).
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- **PASO 1 (crítico):** Solicitar al usuario las fuentes faltantes `repo:saas/docs/documentacion-tecnica.md`, `repo:saas/docs/gestion/README.md`, `repo:saas/docs/revision-entrega.md`, `repo:saas/docs/hito4-configuracion.md` para el siguiente mensaje. Sin ellas, `verificar.py` seguirá fallando en los números.
+- **PASO 2:** Corregir los 5 diagramas de secuencia en `chapters/04-descripcion.tex` (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) para cumplir reglas 16-18: aumentar separación entre nodos (node distance ≥ 1.5cm vertical, ≥ 2.5cm horizontal), usar codos en flechas (|- / -|), mover etiquetas fuera de líneas verticales, reducir participantes a ≤6 agrupando si hace falta, y comprobar en PDF que no hay cruces ni letras < 8pt. **Los cambios propuestos arriba en CAMBIAR son un inicio; el constructor debe verificarlos en el PDF y ajustar más si hace falta.**
+- **PASO 3:** Eliminar imágenes DoneTonic duplicadas: mantener solo en Cap 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y en Anexo A1 usar `\ref` a esas figuras; borrar duplicados de Cap 4 (sección "Gestión en DoneTonic") y Anexo A2.
+- **PASO 4:** Reescribir prosa de manuales (Cap 4 §6 "La aplicación" y Cap 4b §2 "Cómo se juega"): integrar capturas en párrafos explicativos con `subfigure`, eliminando frases sueltas "La figura X muestra...".
+- **PASO 5:** Fundir secciones cortas restantes en todo el documento (revisar Cap 1, 3, 5, 6 y anexos).
+- **PASO 6:** Unificar descripción del pipeline: en Cap 3 remitir con `\ref{fig:pipeline}` a la explicación completa del Cap 5; borrar descripción duplicada en Cap 3.
+- **PASO 7:** Añadir `\\*` antes de `\bottomrule` en todas las longtables (04-descripcion, 04b-juego, 05-evaluacion, a1-desarrollo, a4-trazabilidad).
+- **PASO 8:** Envolver capturas altas en `adjustbox`: donetonic/06-graficas-sprint2.png (a1-desarrollo) y produccion/02-actions-verde.png (05-evaluacion) con `max totalheight=0.42\textheight`.
+- **PASO 9:** Una vez tengas las fuentes, reemplazar números no verificados en `chapters/01-introduccion.tex` (líneas 36-37) y `chapters/03-propuesta.tex` (líneas 24-30) por valores confirmados (ej. 19 PBIs Sprint 1, 32 tareas Sprint 1, 29 PBIs Sprint 2, 50 tareas Sprint 2, 48 PBIs totales, 82 tareas totales).
+- **PASO 10:** Ejecutar `comando_prueba` tras cada cambio hasta que `verificar.py` y `revisar_maquetacion.py` pasen.
+
+## 2026-11-19 21:52 · 🧠 Lección propuesta para la memoria
+
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-19 21:52 · 🧠 Conocimiento guardado
+
+[[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]]

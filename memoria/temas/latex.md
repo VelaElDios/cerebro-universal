@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 115
+notas: 116
 ---
 # latex
 
@@ -112,6 +112,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚠️ [[memoria/lecciones/citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - ⚠️ [[memoria/lecciones/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]]
+- ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]]
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/en-un-tex-los-comentarios-son-con-no-con|En un .tex los comentarios son con %, no con --]]
@@ -145,4 +146,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[figuras]] · [[maquetacion]] · [[lua]] · [[pgf-umlsd]] · [[sus]] · [[usabilidad]] · [[diagramas]] · [[verificacion]] · [[tablas]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[figuras]] · [[maquetacion]] · [[pgf-umlsd]] · [[lua]] · [[sus]] · [[usabilidad]] · [[diagramas]] · [[verificacion]] · [[tablas]]

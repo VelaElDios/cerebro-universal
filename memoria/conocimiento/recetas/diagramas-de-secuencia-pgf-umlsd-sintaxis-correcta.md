@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Diagramas de secuencia pgf-umlsd sintaxis correcta"
-temas: ["diagramas", "latex", "pgf-umlsd", "diagramas-secuencia"]
+temas: ["diagramas", "latex", "pgf-umlsd", "diagramas-secuencia", "sequencediagram"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md", "spec del proyecto (ejemplo compilado y probado)", "memoria/reglas-tfg.md (ejemplo en spec)"]
+fuentes: ["memoria/reglas-tfg.md", "spec del proyecto (ejemplo compilado y probado)", "memoria/reglas-tfg.md (ejemplo en spec)", "lección guardada (propuesta, sin confirmar)"]
 confianza: "propuesto"
 fecha: "2026-11-19"
 actualizado: "2026-11-19"
@@ -77,5 +77,26 @@ Sintaxis obligatoria para diagramas de secuencia en esta plantilla: (1) Entorno 
   - En textos de `\mess`, `call`, `callself`, `\newinst`: no `#`, `_`, `&`, `%`, `$`, `{`, `}`, `\`, comandos LaTeX, ni paréntesis en `\mess`.
   - Usar `\resizebox{\textwidth}{!}{...}` para encoger un poco; si ocupa casi una página, `adjustbox{max width=\textwidth,max totalheight=0.6\textheight}`.
   - Ejemplo correcto en la spec del proyecto.
+
+## Ampliación (2026-11-19, memoria-procesos)
+Sintaxis válida obligatoria:
+- Participantes: `\newthread{nombre}{Etiqueta}` o `\newinst[desplazamiento]{nombre}{Etiqueta}` — **nombre nunca vacío**.
+- Llamadas anidadas: `\begin{call}{origen}{mensaje}{destino}{respuesta} ... \end{call}`.
+- Mensajes sueltos: `\mess{origen}{mensaje}{destino}` — **sin paréntesis en el mensaje**, sin comandos LaTeX, sin `#`, `&`, `_`, `$`, `%`, `{`, `}` sueltos.
+- Bloques alternativos: `\begin{sdblock}{alt}{condición} \mess{...} \end{sdblock}` — no usar `alt` como entorno, solo como primer argumento de `sdblock`.
+- Bucles: `\begin{sdblock}{loop}{condición} ... \end{sdblock}`.
+- **Antes de compilar**, pasar `scripts/revisar_umlsd.py` que valida sintaxis completa y dice todos los fallos a la vez.
+Ejemplo mínimo correcto:
+```latex
+\begin{sequencediagram}
+  \newthread{u}{Usuario}
+  \newinst[2]{api}{API}
+  \begin{call}{u}{petición}{api}{respuesta}
+  \end{call}
+  \begin{sdblock}{alt}{caso error}
+    \mess{api}{400 error}{u}
+  \end{sdblock}
+\end{sequencediagram}
+```
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

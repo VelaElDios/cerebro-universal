@@ -1,7 +1,7 @@
 ---
 tipo: "receta"
 titulo: "Prosa de TFG vs lista de capturas (regla 13 Javier)"
-temas: ["capturas", "latex", "redaccion", "subfigure"]
+temas: ["capturas", "latex", "redaccion", "subfigure", "tfg"]
 claves: ["La figura X muestra", "subfigure", "adjustbox", "prosa continua"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
@@ -61,5 +61,14 @@ Relacionado: [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]]
   3. Cada subfigura tiene su `\subcaption` descriptivo; la figura general tiene `\caption` y `\label`.
   4. Citar la figura general en el texto con `\ref{fig:...}` y, si hace falta, referenciar subfiguras con `\subref{...}`.
   5. No dejar ninguna frase que empiece por "La figura X muestra...".
+
+## Ampliación (2026-11-19, memoria-procesos)
+**Incorrecto (lista de capturas):**
+> La figura~\ref{fig:app-inicio} muestra la página de inicio. La figura~\ref{fig:app-registro} muestra la validación del formulario. La figura~\ref{fig:app-entrar} muestra el error de contraseña.
+
+**Correcto (prosa integrada con subfigure):**
+> Al acceder a la aplicación sin sesión, el usuario encuentra la página de inicio (Figura~\ref{fig:app-inicio-registro}), que presenta dos accesos directos: «Crear cuenta para jugar» y «Ya tengo cuenta». Si elige registrarse, el formulario valida el email y la contraseña en cliente (mínimo 8 caracteres) y muestra los errores en línea asociados a cada campo mediante \texttt{aria-describedby} (subfigura~\ref{fig:app-registro}). Al enviar, el servidor comprueba unicidad del email; si ya existe, devuelve 409 y la interfaz muestra el error sin recargar. Si es correcto, la cuenta queda \texttt{pending} y se envía el correo de confirmación; la interfaz avisa y lleva a la pantalla de entrar.
+
+Las capturas relacionadas (inicio + registro, entrar + error, perfil + baja) van en **una sola figura** con `subfigure` (dos por fila, `0.48\textwidth`), caption general y subcaptions. En el texto se cita la figura general (`\ref{fig:app-inicio-registro}`) y, si hace falta, la subfigura (`\subref{fig:app-registro}`).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

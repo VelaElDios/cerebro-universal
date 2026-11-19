@@ -1,7 +1,7 @@
 ---
 tipo: "receta"
 titulo: "Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier"
-temas: ["diagramas-secuencia", "latex", "maquetacion", "pgf-umlsd", "diagramas"]
+temas: ["diagramas-secuencia", "latex", "maquetacion", "pgf-umlsd", "diagramas", "tikz"]
 claves: ["\\newthread", "\\newinst", "call", "\\mess", "sdblock", "adjustbox", "max totalheight"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
@@ -75,5 +75,40 @@ Relacionado: [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-ev
   6. Envolver todo el diagrama en `\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}` para que quepa sin encoger demasiado.
   7. Comprobar en PDF: ninguna flecha atraviesa una caja, ninguna etiqueta pisa una flecha o caja, letras ≥8pt.
   8. Si persiste, simplificar el diagrama: mostrar solo lo esencial.
+
+## Ampliación (2026-11-19, memoria-procesos)
+Checklist para cada diagrama de secuencia antes de compilar:
+1. **Participantes ≤ 6**: agrupar relacionados (ej. "Vista + api.js" → "Frontend") o dividir en dos diagramas (cliente / servidor).
+2. **node distance**: vertical ≥ 1.5cm, horizontal ≥ 2.5cm (en TikZ: `below=1.5cm`, `right=2.5cm`).
+3. **Flechas con codos**: `\draw[arrow] (A.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {etiqueta} (B.west);` — nunca flechas rectas que crucen otras cajas.
+4. **Etiquetas fuera de líneas verticales**: usar `node[near start, above/left/right]` para desplazar la etiqueta; no poner etiquetas en medio de `\mess{}{}{}` que caen sobre líneas verticales.
+5. **Cajas no se pisan**: `minimum height` suficiente, `text width` bastante ancho para que no se partan palabras.
+6. **Sin participantes vacíos**: cada `\newthread{}{}` y `\newinst{}{}` debe tener nombre no vacío entre llaves.
+7. **Verificar en PDF**: compilar, abrir el PDF, comprobar que no hay cruces, letras ≥ 8pt, flechas van de caja en caja.
+8. **Diagramas grandes**: envolver en `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`.
+Ejemplo correcto (compilado y probado):
+```latex
+\begin{figure}[htbp]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{sequencediagram}
+  \newthread{nav}{Navegador}
+  \newinst[2]{api}{API (Express)}
+  \newinst[2]{srv}{userService}
+  \newinst[2]{bd}{PostgreSQL}
+  \begin{call}{nav}{POST /api/auth/login}{api}{200 o 401}
+    \begin{call}{api}{authenticate(email, contraseña)}{srv}{usuario}
+      \begin{call}{srv}{SELECT por email}{bd}{fila}
+      \end{call}
+    \end{call}
+  \end{call}
+  \begin{sdblock}{alt}{cuenta pendiente}
+    \mess{api}{403 + enlace de reenvío}{nav}
+  \end{sdblock}
+\end{sequencediagram}}
+\caption{Inicio de sesión local.}
+\label{fig:sec-login}
+\end{figure}
+```
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

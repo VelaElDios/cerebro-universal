@@ -51,4 +51,21 @@ Temas: [[latex]] · [[longtable]] · [[maquetacion]]
   \end{longtable}
   ```
 
+## Ampliación (2026-11-19, memoria-procesos)
+Para evitar que la última fila de una `longtable` quede sola en la siguiente página, usar `\\*` (que prohíbe salto de página) en las 2-3 últimas filas antes de `\bottomrule`:
+```latex
+\begin{longtable}{@{}L{3cm} L{5cm} L{4cm}@{}}
+\caption{Tabla larga.}\label{tab:ejemplo}\\
+\toprule
+\textbf{Col1} & \textbf{Col2} & \textbf{Col3} \\ \midrule \endfirsthead
+\toprule
+\textbf{Col1} & \textbf{Col2} & \textbf{Col3} \\ \midrule \endhead
+Fila 1 & Dato & Dato \\
+Fila 2 & Dato & Dato \\*
+Fila 3 & Dato & Dato \\*
+\bottomrule
+\end{longtable}
+```
+Aplicar a TODAS las longtables de la memoria (capítulos 4, 4b, 5, anexos A1, A4).
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
