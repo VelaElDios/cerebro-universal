@@ -10692,3 +10692,67 @@ La compilación sigue fallando con «Infinite glue shrinkage» en varios capítu
 ⏱️ Solo quedan 26 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-19 06:14 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+La compilación sigue fallando con "Infinite glue shrinkage" en 6 capítulos. El parche actual en `preambulo.tex` no es suficiente: la clase `book` reactiva `\flushbottom` en `\mainmatter`, `\frontmatter` y `\backmatter`, y las `longtable` se parten mal sin `\\*` en la última fila. Voy a reforzar `preambulo.tex` parcheando también `\frontmatter`/`\backmatter`, añadiendo `\raggedbottom` a los entornos `figure`/`table`/`longtable`, y a continuación arreglar las `longtable` de `04-descripcion.tex` añadiendo `\\*` antes de `\bottomrule` para evitar que la última fila quede sola en página.
+
+**Archivos:** `(cambio) elements/preambulo.tex`, `(no aplicado: el texto aparece 6 veces: «\bottomrule
+\end{longtable}») chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:35: Infinite glue shrinkage found in box being split [10] [11]
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 7 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que la compilación ya no produce "Infinite glue shrinkage". Si compila, el siguiente paso será reescribir la prosa de los manuales (capítulos 4 y 4b) eliminando las frases sueltas «La figura X muestra…» y agrupando capturas relacionadas en subfiguras con caption general. También quedará pendiente eliminar imágenes repetidas de DoneTonic (usar `\ref`), corregir diagramas TikZ (Fig 3.1 y 4.7) según reglas 16-18, y fundir secciones de una o dos líneas.
+
+## 2026-11-19 06:16 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 29/09–27/10/2026, 19 PBIs P1–P19, 32 tareas T1–T32 → doc §2.3 tabla y §4.1
+- Sprint 2: 23/10–29/10/2026, 29 PBIs P20–P48, 50 tareas T33–T82 → doc §2.3 tabla y §4.1
+- 13 RF (RF-01–RF-13), 20 RJ (RJ-01–RJ-20), 12 RNF (RNF-01–RNF-12) → doc §3.1, §3.2, §3.3
+- 322 pruebas totales (276 al cierre Sprint 2 + 46 Fase 7) → doc §10.2 tabla totales
+- 5 migraciones SQL (001–005) → doc §6.1 db/migrate.js
+- 23 endpoints API → doc §6.4 tabla resumen
+- 6 dependencias producción (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer) → doc §14
+- Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → doc §14
+- Burndown entrega Sprint 1: 15→9→5→1→2→0 PBIs pendientes → doc §4.5 tabla y gráfico
+- Burndown real Sprint 2: 28→11→11→2→2→2→0 PBIs pendientes → doc §4.5 tabla y gráfico
+- Despliegue Cloud Run 23/10/2026 comprobado en producción → doc §4.6 y §11
+- Correo confirmación real recibido en Gmail → doc §16 produccion/01-correo-confirmacion.png
+- Google OAuth aplicación publicada (usuarios externos) → doc §16 produccion/03-google-publicada.png
+- 13 pruebas domainPolicy.test.js (prueba técnica RF-13) → doc §10.2
+- 80 pruebas mencionadas en README §7 (doc §10.1: "80 pruebas con node:test") → contraste: doc §10.2 dice 276 en main, 322 totales; README dice 80; verificar.py comprobará
+- Trazabilidad RF→PBI→tarea→PR completa en doc §4.4 tablas Sprint 1 y Sprint 2
+- Diagramas secuencia 7.1–7.13 (registro, confirmación, login, Google, baja, partida, contratar, CI/CD, prueba técnica) → doc §7
+- Tabla seguridad 13 amenazas/medidas → doc §8
+- Tabla sistemas juego 20 filas → doc §9.3
+- Arquitectura juego 3 bloques (simulación, presentación, servidor) → doc §9.4
+- Anti-trampas: reloj servidor, límites creíbles, logros verificables, concurrencia optimista → doc §9.5
+- 29 logros con datos históricos y 10 equipaciones → doc §9.6 tabla
+- 7 fases evolución (Rediseño + 1–7) → doc §9.7 tabla
+- Capturas inventariadas por carpeta con fechas y requisitos → doc §16
+- Problemas resueltos 13 items (JSON malformed, correo Cloud Run, redirect_uri_mismatch, ramas Hito 4, cambio alcance, juego no carga, clic perdido reenvío, baja Google, colisiones, tirones suelo, simulación lenta, regate OP, equilibrio) → doc §13
+- Métricas: ~2.3k LOC backend, ~1.15k LOC interfaz, ~950 CSS, ~14.8k LOC juego, ~5.05k LOC tests → doc §14
+
+La compilación falla con "Infinite glue shrinkage" en 6 capítulos (04-descripcion, 04b-juego, 05-evaluacion, 06-conclusiones, a1-desarrollo, a4-trazabilidad). Causa raíz: la clase `book` reactiva `\flushbottom` en `\mainmatter`/`\frontmatter`/`\backmatter` (llamados en Memoria.tex protegido tras cargar preambulo.tex) y las `longtable`/figuras grandes superan el área imprimible. El parche actual en `preambulo.tex` no basta. Además:
+- Imágenes demasiado altas: `donetonic/06-graficas-sprint2.png` (1806pt) y `produccion/02-actions-verde.png` (1405pt) superan `\textheight` incluso con `keepaspectratio`.
+- `longtable` sin `\\*` en última fila antes de `\bottomrule` → fila final queda sola en página.
+- Diagramas de secuencia: warnings pgf "Returning node center instead of a point on node border" en nodos "mess from"/"mess to" → participantes no declarados con `\newthread`/`\newinst`.
+- Imágenes repetidas: capturas DoneTonic en Cap 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y Anexo A1 (fig:donetonic-s2-graficas, fig:donetonic-s2-tablero, fig:donetonic-s2-detalle).
+- Prosa manuales: Cap 4 §6 y Cap 4b §2 usan frases sueltas "La figura X muestra…" en vez de integrar capturas en la explicación.
+- Diagramas TikZ Fig 3.1 (capas) y Fig 4.7 (juego-arquitectura): >6 participantes, cajas que se pisan, flechas que atraviesan cajas.
+- Secciones de 1–2 líneas (ej. 04-descripcion §6.3 "Frontend", §6.4 "API") que hay que fundir.
+- Pipeline CI/CD descrito en Cap 5 (fig:pipeline) pero Cap 3 lo vuelve a explicar en lugar de remitir con `\ref`.
+
+Lo que está bien: datos contrastados con fuentes (25+ comprobaciones arriba), estructura capítulos/anexos según spec, trazabilidad completa 82 tareas en a4-trazabilidad, Resumen/Abstract con mínimos, bibliografía BibTeX apalike con autores corporativos en doble llave y year.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- ninguna

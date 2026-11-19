@@ -51,7 +51,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 9
+  "usos": 10
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -63,7 +63,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 4
+  "usos": 5
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
   "bien": 0,
@@ -117,7 +117,7 @@
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 11
+  "usos": 12
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -129,7 +129,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,
@@ -154,6 +154,24 @@
   "mal": 0,
   "ultimo": "2026-11-19",
   "usos": 4
+ },
+ "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
+ },
+ "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
+ },
+ "memoria/conocimiento/recetas/escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
  },
  "memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm.md": {
   "bien": 1,
