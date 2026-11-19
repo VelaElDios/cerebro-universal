@@ -10965,3 +10965,23 @@ El constructor intentó corregir los 5 diagramas de secuencia en chapters/04-des
 ## 2026-11-19 17:04 · 🧠 Conocimiento guardado
 
 [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[longtable-sin-fila-huerfana-al-final]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
+
+## 2026-11-19 18:02 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Corregir los 5 diagramas de secuencia en chapters/04-descripcion.tex (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) para cumplir las reglas 16-18 de Javier: aumentar separación entre nodos, usar codos en flechas, añadir espacio vertical entre bloques y mover etiquetas fuera de líneas verticales. Se reescriben los entornos TikZ y sequencediagram completos.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 16 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que los 5 diagramas ya no tienen cruces (reglas 16-18). Si persisten avisos de pgf, ajustar posiciones. Luego, en el siguiente paso, eliminar números no verificados en chapters/01-introduccion.tex y chapters/03-propuesta.tex.
+
+## 2026-11-19 18:08 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.

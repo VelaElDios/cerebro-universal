@@ -44,7 +44,7 @@ buscar con RAG y, en el futuro, para entrenar una IA local. (este archivo se gen
 
 ## Ahora mismo
 
-530 nodos y 2587 relaciones: 6 📁 proyecto, 245 🔵 tema, 34 ⚠️ leccion, 44 💡 concepto, 94 🧪 receta, 45 ⚖️ decision, 51 📊 dato, 11 📚 fuente · actualizado 2026-11-19 17:04
+530 nodos y 2587 relaciones: 6 📁 proyecto, 245 🔵 tema, 34 ⚠️ leccion, 44 💡 concepto, 94 🧪 receta, 45 ⚖️ decision, 51 📊 dato, 11 📚 fuente · actualizado 2026-11-19 18:08
 
 ## Temas principales
 
