@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 117
+notas: 118
 ---
 # latex
 
@@ -26,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/corregir-paginas-con-una-sola-imagen-regla-8|Corregir páginas con una sola imagen (Regla 8)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas con subfigure en LaTeX para manuales de usuario]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex|Cómo agrupar capturas relacionadas con subfigure en LaTeX]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
@@ -147,4 +148,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[figuras]] · [[maquetacion]] · [[pgf-umlsd]] · [[lua]] · [[sus]] · [[usabilidad]] · [[verificacion]] · [[diagramas]] · [[tablas]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[maquetacion]] · [[figuras]] · [[pgf-umlsd]] · [[lua]] · [[sus]] · [[usabilidad]] · [[verificacion]] · [[diagramas]] · [[tablas]]

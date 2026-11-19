@@ -44,8 +44,8 @@ buscar con RAG y, en el futuro, para entrenar una IA local. (este archivo se gen
 
 ## Ahora mismo
 
-547 nodos y 2665 relaciones: 6 📁 proyecto, 252 🔵 tema, 36 ⚠️ leccion, 44 💡 concepto, 98 🧪 receta, 49 ⚖️ decision, 51 📊 dato, 11 📚 fuente · actualizado 2026-11-19 23:40
+550 nodos y 2678 relaciones: 6 📁 proyecto, 252 🔵 tema, 36 ⚠️ leccion, 44 💡 concepto, 100 🧪 receta, 50 ⚖️ decision, 51 📊 dato, 11 📚 fuente · actualizado 2026-11-20 00:53
 
 ## Temas principales
 
-[[grada-colchonera]] (130) · [[latex]] (117) · [[saas]] (104) · [[tfg]] (54) · [[scrum]] (51) · [[memoria]] (49) · [[donetonic]] (48) · [[sprint]] (36) · [[tikz]] (19) · [[verificacion]] (16) · [[figuras]] (15) · [[maquetacion]] (14) · [[memoria-procesos]] (14) · [[pgf-umlsd]] (13) · [[lua]] (12) · [[cerebro]] (12) · [[trazabilidad]] (12) · [[sus]] (11) · [[usabilidad]] (11) · [[procesos]] (11) · [[oauth]] (11) · [[auth]] (10) · [[git]] (10) · [[diagramas]] (10) · [[bibliografia]] (9) · [[tablas]] (9) · [[longtable]] (8) · [[arquitectura]] (8) · [[juego]] (8) · [[correo]] (8)
+[[grada-colchonera]] (130) · [[latex]] (118) · [[saas]] (104) · [[tfg]] (54) · [[scrum]] (51) · [[memoria]] (49) · [[donetonic]] (48) · [[sprint]] (36) · [[tikz]] (20) · [[verificacion]] (17) · [[maquetacion]] (16) · [[figuras]] (15) · [[pgf-umlsd]] (14) · [[memoria-procesos]] (14) · [[lua]] (12) · [[cerebro]] (12) · [[trazabilidad]] (12) · [[sus]] (11) · [[usabilidad]] (11) · [[procesos]] (11) · [[oauth]] (11) · [[diagramas]] (11) · [[auth]] (10) · [[git]] (10) · [[bibliografia]] (9) · [[longtable]] (9) · [[tablas]] (9) · [[arquitectura]] (8) · [[juego]] (8) · [[correo]] (8)

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 19
+notas: 20
 ---
 # tikz
 
@@ -20,6 +20,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl|Verificación visual de diagramas TikZ y pgf-umlsd según reglas 16-18]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
@@ -43,4 +44,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[pgfplots]] · [[memoria]] · [[lua]] · [[tfg]] · [[maquetacion]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]]
+[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[pgfplots]] · [[memoria]] · [[lua]] · [[maquetacion]] · [[tfg]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]]

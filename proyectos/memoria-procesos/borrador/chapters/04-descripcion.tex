@@ -29,7 +29,7 @@ RF-09 & Registro de la actividad relevante & 3 & P14 & \path{src/logger.js}, \pa
 RF-10 & Confirmación de la cuenta por correo, con reenvío & 4 & P16 & \path{accountConfirmationService}, \path{tokenSigner}, \path{mailer}, \texttt{GET} \path{/api/auth/confirm}, \texttt{POST} \path{/api/auth/resend-confirmation} & \path{accountConfirmation}, \path{tokenSigner}, \path{mailer}, \path{api.auth} \\
 RF-11 & Inicio de sesión con proveedor externo (Google, OAuth 2.0) \cite{rfc6749} & 4 & P15 & \path{googleOAuth.js}, \texttt{GET} \path{/api/auth/google}, \texttt{GET} \path{/api/auth/google/callback}, \path{userService.loginWithOAuth} & \path{googleOAuth}, \path{userService} \\
 RF-12 & Manejo de errores con información clara al usuario & 4 & P17 & \path{errorHandler.js}, \path{componentes.js}, \path{avisos.js}, \path{api.js} (timeout) & \path{api.*}, \path{frontend} \\
-RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \path{domainPolicy.js}, \texttt{POST} \path{/api/prueba/dominio} & \path{domainPolicy} (13) \\
+RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \path{domainPolicy.js}, \texttt{POST} \path{/api/prueba/dominio} & \path{domainPolicy} (13) \\*
 \bottomrule
 \end{longtable}
 
@@ -63,7 +63,7 @@ RJ-16 & Modo pruebas solo para administradores & P34 & \texttt{POST} \path{/api/
 RJ-17 & Mote único y avatar, en la cabecera, Mi cuenta y el ranking & P37 & \texttt{PUT} \path{/api/juego/identidad}, migración 004 & \path{api.juego}, \path{juegoRepository}, \path{frontend} \\
 RJ-18 & Logros con datos de la historia del Atleti, validados en el servidor, y equipaciones desbloqueables & P42 & \path{logros.js}, \path{juegoService} & \path{juego-logros}, \path{api.juego} \\
 RJ-19 & Pantalla de fin con estadísticas y daño por habilidad & P43 & \path{fin-ui.js}, \path{combate.js} & \path{juego-logros} \\
-RJ-20 & Música chiptune, efectos y la grada, con ajustes de volumen & P44 & \path{audio.js}, \path{musica.js}, \path{ajustes.js} & \path{juego-logros} \\
+RJ-20 & Música chiptune, efectos y la grada, con ajustes de volumen & P44 & \path{audio.js}, \path{musica.js}, \path{ajustes.js} & \path{juego-logros} \\*
 \bottomrule
 \end{longtable}
 
@@ -89,7 +89,7 @@ RNF-08 & \textbf{Responsive} & Diseño adaptable: el panel de administración pa
 RNF-09 & \textbf{Rendimiento del juego} & 60 FPS en un portátil normal: simulación de paso fijo, búsqueda espacial por celdas, texturas por celda cacheadas y precargadas \\
 RNF-10 & \textbf{Trazabilidad} & Requisito $\rightarrow$ PBI $\rightarrow$ tarea $\rightarrow$ rama $\rightarrow$ PR $\rightarrow$ release \\
 RNF-11 & \textbf{Privacidad} & Política de privacidad pública; el ranking nunca muestra el correo; los logs ocultan los datos sensibles \\
-RNF-12 & \textbf{Mantenibilidad} & Sin frameworks ni compilación en el frontend; todo el equilibrio del juego en un fichero de configuración; módulos pequeños y comentados \\
+RNF-12 & \textbf{Mantenibilidad} & Sin frameworks ni compilación en el frontend; todo el equilibrio del juego en un fichero de configuración; módulos pequeños y comentados \\*
 \bottomrule
 \end{longtable}
 
@@ -190,7 +190,7 @@ Cloud Run como principal y Render como alternativo & Solo uno & Cloud Run aprove
 Reglas del juego compartidas cliente/servidor & Reglas duplicadas & El servidor importa \path{club.js}, \path{config.js} y \path{logros.js}: una sola fuente de verdad para fichajes, entrenamiento y logros \\
 Concurrencia optimista en el perfil del juego (\path{version}) & Bloqueos, transacciones largas & Dos peticiones simultáneas no pueden gastar dos veces la misma ficha; la segunda se reintenta con los datos nuevos \\
 Simulación del juego pura y determinista & Lógica mezclada con el dibujo & Paso fijo de 1/60 s y azar con semilla: se prueba en Node sin navegador y el resultado no depende de los FPS \\
-Gráficos y sonido generados con código & Imágenes y ficheros de audio & Sin problemas de derechos (nada oficial), carga instantánea y fácil de variar (equipaciones, selecciones, intensidad de la música) \\
+Gráficos y sonido generados con código & Imágenes y ficheros de audio & Sin problemas de derechos (nada oficial), carga instantánea y fácil de variar (equipaciones, selecciones, intensidad de la música) \\*
 \bottomrule
 \end{longtable}
 
@@ -298,7 +298,7 @@ La Tabla~\ref{tab:modulos} resume los módulos del backend.
 \path{repositories/*} & \path{memoryUserRepository}, \path{postgresUserRepository}, \path{memoryJuegoRepository}, \path{postgresJuegoRepository} \\
 \path{integrations/mailer.js} & Correo por SMTP (\path{nodemailer}) o, sin \texttt{SMTP\_URL}, escrito en el registro \\
 \path{integrations/googleOAuth.js} & URL de autorización de Google e intercambio del código por el perfil \\
-\path{db/migrate.js}, \path{db/migrations/*.sql} & Migraciones versionadas (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras la baja) \\
+\path{db/migrate.js}, \path{db/migrations/*.sql} & Migraciones versionadas (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras la baja) \\*
 \bottomrule
 \end{longtable}}
 
@@ -329,7 +329,7 @@ Salud & \texttt{GET} \path{/api/health} & Público \\
 Autenticación & \texttt{POST register}, \texttt{POST login}, \texttt{POST logout}, \texttt{GET me}, \texttt{GET confirm}, \texttt{POST resend-confirmation}, \texttt{GET providers}, \texttt{GET google}, \texttt{GET google/callback} & Público (salvo \path{me}) \\
 Usuarios & \texttt{GET} \path{/users}, \texttt{GET} \path{/users/:id/active}, \texttt{PATCH} \path{/users/:id/role}, \texttt{DELETE} \path{/users/:id} & Admin (la baja, propio o admin) \\
 Juego & \texttt{GET perfil}, \texttt{POST partidas}, \texttt{POST partidas/:id/fin}, \texttt{POST contratar}, \texttt{POST entrenar}, \texttt{PUT identidad}, \texttt{GET ranking}, \texttt{POST desbloquear} & Sesión (\path{desbloquear}, admin) \\
-Prueba técnica & \texttt{POST} \path{/api/prueba/dominio} & Público \\
+Prueba técnica & \texttt{POST} \path{/api/prueba/dominio} & Público \\*
 \bottomrule
 \end{longtable}}
 

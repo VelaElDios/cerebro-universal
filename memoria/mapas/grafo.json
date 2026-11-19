@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T23:40:02+01:00",
+ "generado": "2026-11-20T00:53:41+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2548,6 +2548,21 @@
    "ruta": "memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow-nunca.md"
   },
   {
+   "id": "decision:fuentes-faltantes-bloquean-verificacion-automatica-de-numero",
+   "tipo": "decision",
+   "titulo": "Fuentes faltantes bloquean verificación automática de números",
+   "temas": [
+    "fuentes",
+    "numeros",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica-de-numero.md"
+  },
+  {
    "id": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
    "tipo": "decision",
    "titulo": "La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX",
@@ -3374,6 +3389,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex.md"
+  },
+  {
+   "id": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
+   "tipo": "receta",
+   "titulo": "Cómo añadir \\\\* en longtables para evitar filas huérfanas",
+   "temas": [
+    "latex",
+    "longtable",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas.md"
   },
   {
    "id": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
@@ -4717,6 +4747,22 @@
    "ruta": "memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig.md"
   },
   {
+   "id": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
+   "tipo": "receta",
+   "titulo": "Verificación visual de diagramas TikZ y pgf-umlsd según reglas 16-18",
+   "temas": [
+    "diagramas",
+    "maquetacion",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl.md"
+  },
+  {
    "id": "tema:conocimiento",
    "tipo": "tema",
    "titulo": "conocimiento",
@@ -4727,7 +4773,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 117,
+   "peso": 118,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4741,7 +4787,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 19,
+   "peso": 20,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -4797,14 +4843,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 13,
+   "peso": 14,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 14,
+   "peso": 16,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -4825,7 +4871,7 @@
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -4853,7 +4899,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 16,
+   "peso": 17,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -5525,7 +5571,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -5700,7 +5746,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -5830,6 +5876,13 @@
    "ruta": "memoria/temas/tipografía.md"
   },
   {
+   "id": "tema:numeros",
+   "tipo": "tema",
+   "titulo": "numeros",
+   "peso": 4,
+   "ruta": "memoria/temas/numeros.md"
+  },
+  {
    "id": "tema:ia-local",
    "tipo": "tema",
    "titulo": "ia-local",
@@ -5842,13 +5895,6 @@
    "titulo": "simulacion",
    "peso": 1,
    "ruta": "memoria/temas/simulacion.md"
-  },
-  {
-   "id": "tema:numeros",
-   "tipo": "tema",
-   "titulo": "numeros",
-   "peso": 3,
-   "ruta": "memoria/temas/numeros.md"
   },
   {
    "id": "tema:test",
@@ -13333,6 +13379,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:fuentes-faltantes-bloquean-verificacion-automatica-de-numero",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:fuentes-faltantes-bloquean-verificacion-automatica-de-numero",
+   "a": "tema:numeros",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:fuentes-faltantes-bloquean-verificacion-automatica-de-numero",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:fuentes-faltantes-bloquean-verificacion-automatica-de-numero",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
    "a": "tema:entrega",
    "tipo": "trata"
@@ -16139,6 +16205,26 @@
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -19806,6 +19892,31 @@
    "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "a": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   }
  ]
 }

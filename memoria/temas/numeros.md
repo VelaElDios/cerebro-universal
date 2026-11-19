@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "numeros"
-notas: 3
+notas: 4
 ---
 # numeros
 
@@ -13,6 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «numeros» (este archivo s
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica-de-numero|Fuentes faltantes bloquean verificación automática de números]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes|Números pequeños también se verifican en fuentes]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
 
