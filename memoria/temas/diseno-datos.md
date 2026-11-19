@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diseno-datos» (este arch
 
 ## Temas relacionados
 
-[[ac]] · [[tradeoffs]]
+[[ac]] · [[tradeoffs]] · [[aos-soa]]

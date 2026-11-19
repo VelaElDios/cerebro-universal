@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "visualizacion"
-notas: 1
+notas: 2
 ---
 # visualizacion
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «visualizacion» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log|Cómo trazar el modelo Roofline con matplotlib (escala log-log, zonas coloreadas, puntos anotados)]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
@@ -13,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «visualizacion» (este arc
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura-computadores]] · [[matplotlib]] · [[roofline]]
+[[ac]] · [[matplotlib]] · [[roofline]] · [[arquitectura-computadores]]

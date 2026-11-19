@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «punteros» (este archivo 
 
 ## Temas relacionados
 
-[[ac]] · [[cache]] · [[memoria]] · [[estructuras-datos]] · [[arrays]] · [[direccionamiento]] · [[risc-v]]
+[[ac]] · [[cache]] · [[memoria]] · [[estructuras-datos]] · [[cpp]] · [[arrays]] · [[direccionamiento]] · [[risc-v]]

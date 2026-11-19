@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "matplotlib"
-notas: 9
+notas: 11
 ---
 # matplotlib
 
@@ -15,6 +15,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «matplotlib» (este archiv
 - 🧪 [[memoria/conocimiento/recetas/como-generar-el-grafico-roofline-mononucleo-con-python|Cómo generar el gráfico Roofline mononúcleo con Python]]
 - 🧪 [[memoria/conocimiento/recetas/como-graficar-latencia-vs-working-set-con-jerarquia-de-cache|Cómo graficar latencia vs working set con jerarquía de caché en matplotlib]]
 - 🧪 [[memoria/conocimiento/recetas/como-guardar-el-grafico-roofline-como-archivo-png-en-lugar-d|Cómo guardar el gráfico Roofline como archivo PNG en lugar de mostrarlo]]
+- 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c|Cómo trazar el modelo Roofline clásico (techo DRAM + tope CPU) con matplotlib]]
+- 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log|Cómo trazar el modelo Roofline con matplotlib (escala log-log, zonas coloreadas, puntos anotados)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log|Cómo trazar el modelo Roofline con matplotlib en escala log-log]]
 
 ## Decisiones (y por qué)
@@ -24,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «matplotlib» (este archiv
 
 ## Temas relacionados
 
-[[ac]] · [[python]] · [[arquitectura-computadores]] · [[roofline]] · [[data-visualization]] · [[visualizacion]] · [[plot-design]] · [[annotations]] · [[anotaciones]] · [[visualización]] · [[cache-hierarchy]] · [[png]]
+[[ac]] · [[python]] · [[roofline]] · [[arquitectura-computadores]] · [[data-visualization]] · [[visualizacion]] · [[visualización]] · [[plot-design]] · [[annotations]] · [[anotaciones]] · [[cache-hierarchy]] · [[png]]

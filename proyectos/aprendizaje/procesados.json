@@ -2129,5 +2129,151 @@
   "resumenes": [
    "Examen de Arquitectura de Computadores (octubre 2010) con 20 preguntas tipo test sobre paralelismo, memoria compartida, pipeline, dependencias, planificación estática/dinámica, Tomasulo y Scoreboard, más dos problemas prácticos: uno de pipeline DLX con desenrollamiento de bucles y otro de planificación dinámica Tomasulo con unidades funcionales específicas."
   ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea1_2_mem_latency.cpp": {
+  "md5": "621f0849e1f2b89ca368294883408647",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria",
+   "construccion-del-array-de-pointer-chasing-con-permutacion-ci",
+   "fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante",
+   "medicion-de-latencia-con-cadena-de-dependencias-y-cronometro",
+   "parametros-fijos-del-benchmark-rangos-y-conteos",
+   "prevencion-de-dead-code-elimination-dce-forzando-uso-del-res",
+   "tecnica-pointer-chasing-para-medir-latencia-real-de-memoria",
+   "uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari"
+  ],
+  "resumenes": [
+   "Este trozo implementa un benchmark de latencia de memoria usando la técnica de \"pointer chasing\" (persecución de punteros). Mide la latencia media de acceso para tamaños de working set desde 4 KiB hasta 256 MiB (potencias de 2), realizando 50 millones de accesos dependientes por medición. El código incluye calentamiento (warm-up) para poblar la TLB, una cadena de dependencias de datos estricta que impide ejecución fuera de orden y prefetching, y evita la eliminación de código muerto por el compilador."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea1_2_pintarLatvsMem.py": {
+  "md5": "5ddce6b6991a139195875bcae2269de6",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-configurar-lstopo-para-obtener-tamanos-de-cache-reales",
+   "como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac",
+   "uso-de-step-plot-post-para-representar-latencia-constante-en",
+   "visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y"
+  ],
+  "resumenes": [
+   "Script de Python para la práctica de Arquitectura de Computadores que genera gráficas de latencia de acceso a memoria frente al tamaño del working set. Incluye configuración de tamaños de caché (L1=48 KiB, L2=1280 KiB, L3=25000 KiB), datos de latencia medidos experimentalmente (1.12 ns a 85.75 ns), y dos visualizaciones: jerarquía completa con escala logarítmica y zoom en L1/L2 con escala lineal. Usa regiones de color para delimitar niveles de caché, líneas continuas y escalonadas, y anotaciones numéricas en cada punto."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea1_3_pintarRoofLin.py": {
+  "md5": "adf4bf043310f6083b244ac5856fd2da",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1"
+  ],
+  "resumenes": [
+   "Script Python para generar el modelo Roofline mononúcleo de una máquina. Calcula el techo de cómputo (GFLOPS máximos) a partir de la frecuencia de CPU y las capacidades AVX2/FMA (32 FLOPS/ciclo), y traza la curva min(BW_DRAM × intensidad_aritmética, GFLOPS_MAX) mostrando las regiones memory-bound y compute-bound."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea2_1_patrones.cpp": {
+  "md5": "3e3e875077a47f201abb5f95b8c2b318",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso",
+   "generacion-de-permutacion-aleatoria-reproducible-para-acceso",
+   "metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe",
+   "tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz"
+  ],
+  "resumenes": [
+   "Este trozo implementa un programa en C++ para analizar tres patrones de acceso a memoria (secuencial, temporal y aleatorio) sobre un array de 512 MiB (2²⁶ enteros de 64 bits). El objetivo es medir con `perf` el impacto de la localidad de datos en contadores hardware como ciclos, instrucciones, fallos de caché L1 y referencias de caché. Cada patrón realiza exactamente el mismo número total de accesos (N × REPETICIONES = 268 M lecturas), pero con distinta localidad espacial y temporal. El acceso aleatorio usa una permutación fija (semilla 42) para reproducibilidad."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea2_1_pintarRoofLin_conPunto.py": {
+  "md5": "50173e94a4872a66520718573dbfb0e6",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
+   "como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
+   "como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log",
+   "derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato",
+   "valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat"
+  ],
+  "resumenes": [
+   "Script de Python para visualizar el modelo Roofline mononúcleo: calcula el techo de cómputo (GFLOPS máx) a partir de la frecuencia de CPU y FLOPS/ciclo (32 con AVX2+FMA), el punto de inflexión (I_KNEE = GFLOPS_MAX / BW_DRAM), dibuja la curva techo (mínimo entre BW_DRAM·intensidad y GFLOPS_MAX), colorea zonas memory-bound (intensidad ≤ I_KNEE) y compute-bound (intensidad > I_KNEE), y superpone tres puntos medidos (Temporal, Secuencial, Aleatorio) con sus coordenadas (intensidad aritmética, rendimiento)."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea3_1_lista.cpp": {
+  "md5": "42dc215a2f93180774dd58f64f285f99",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "compilacion-y-ejecucion-de-referencia-para-tarea-3-1",
+   "fusion-de-bucles-loop-fusion-para-localidad-temporal",
+   "optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill",
+   "pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector",
+   "usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores"
+  ],
+  "resumenes": [
+   "Este trozo es el código base ineficiente de la Tarea 3.1 de Arquitectura de Computadores: genera 20 millones de lecturas de sensor en un `std::list`, las normaliza en un primer bucle y calcula la suma de cuadrados en un segundo bucle. El enunciado pide optimizarlo sustituyendo la lista por `std::vector` con `reserve(N)` y fusionando ambos bucles en una sola pasada para mejorar la localidad de caché y evitar el \"pointer chasing\" y las asignaciones dinámicas por nodo."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea3_2_aos.cpp": {
+  "md5": "7e2985b757c60555b013a082320ff0f6",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos",
+   "calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent",
+   "cuando-preferir-aos-sobre-soa-en-la-practica",
+   "medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a",
+   "parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b",
+   "transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids"
+  ],
+  "resumenes": [
+   "Este trozo es el código base (AoS) de una práctica de Arquitectura de Computadores que compara Array of Structures (AoS) frente a Structure of Arrays (SoA). El programa crea 60 millones de partículas de 16 bytes cada una (id, active, data, score) pero solo suma el campo `id` (4 bytes), desperdiciando el 75% del ancho de banda de caché. Incluye instrucciones para transformar a SoA, compilar con -O2, verificar checksums y medir con hyperfine/perf (cache-references, cache-misses, IPC)."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea4_1_ilp.cpp": {
+  "md5": "dabd3ffdbb85dfa342ce92a1a5118258",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector",
+   "reduccion-final-de-acumuladores-parciales-tras-desenrollado",
+   "uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en"
+  ],
+  "resumenes": [
+   "Este trozo es el código base de una práctica de Arquitectura de Computadores (Tarea 4.1) que ilustra cómo una cadena de dependencias de datos secuencial (acumulación en una sola variable) limita el ILP al provocar stalls en el pipeline. El enunciado guía al alumno para optimizarlo mediante desenrollado manual de 4 vías con 4 acumuladores independientes (acc1..acc4), rompiendo la dependencia y permitiendo explotar múltiples ALUs. Se compila con -O1 para evitar auto-unrolling del compilador y se valida con hyperfine/perf comparando ciclos, instrucciones e IPC."
+  ]
+ },
+ "repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea4_2_branchless.cpp": {
+  "md5": "814fd0eaad1c8daf022c0ca201abd343",
+  "hechos": 1,
+  "total": 1,
+  "notas": [
+   "atributos-gcc-para-forzar-salto-real-y-desactivar-optimizaci",
+   "configuracion-del-benchmark-32768-elementos-1000-repeticione",
+   "efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona",
+   "implementacion-branchless-de-suma-condicional-con-multiplica",
+   "penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "trade-offs-de-programacion-branchless-vs-condicional"
+  ],
+  "resumenes": [
+   "Este trozo es un laboratorio de Arquitectura de Computadores (Tarea 4.2) que evalúa el impacto de la predicción de saltos en el rendimiento. Compara dos versiones de suma condicional: una con salto (`if (x >= 128)`) y otra branchless usando aritmética condicional. El código incluye atributos GCC para forzar un salto real y evitar optimizaciones vectoriales, y un benchmark que mide tiempos en datos ordenados vs desordenados demostrando la penalización de fallos de predicción (~10-20 ciclos)."
+  ]
  }
 }

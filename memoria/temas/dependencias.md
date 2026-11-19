@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "dependencias"
-notas: 67
+notas: 68
 ---
 # dependencias
 
@@ -48,6 +48,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «dependencias» (este arch
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-dos-instrucciones-escriben-mismo-r|Dependencia de salida (WAW): dos instrucciones escriben mismo registro/memoria]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr|Dependencia entre iteraciones en bucle con S.D y DADDUI sobre R1]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter|Dependencia entre S.D y DADDUI en bucle es por R1 entre iteraciones]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe|Dependencia RAW en acumulación secuencial limita ILP en pipeline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien|Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-war-waw-se-eliminan-con-renombramient|Dependencias de nombre (WAR, WAW) se eliminan con renombramiento de registros]]
 - 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-antidependencia-y-salida-definicion-y|Dependencias de nombre antidependencia y salida definición y ejemplo]] · ⚠️ propuesto

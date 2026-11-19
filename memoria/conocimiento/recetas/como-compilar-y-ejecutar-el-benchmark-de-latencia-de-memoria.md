@@ -4,10 +4,10 @@ titulo: "Cómo compilar y ejecutar el benchmark de latencia de memoria"
 temas: ["ac", "benchmark", "compilacion", "ejecucion"]
 claves: ["g++", "-O2", "taskset", "mem_latency", "compilar", "ejecutar"]
 proyectos: []
-fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp"]
+fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp", "repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea1_2_mem_latency.cpp"]
 confianza: "propuesto"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-19"
 ---
 
 Temas: [[ac]] · [[benchmark]] · [[compilacion]] · [[ejecucion]]
@@ -19,3 +19,10 @@ Temas: [[ac]] · [[benchmark]] · [[compilacion]] · [[ejecucion]]
 > — `repo:datos/temarios/AC/Practicas/Code_Lab3/tarea1_2_mem_latency.cpp` (cita sin comprobar)
 
 Relacionado: [[tecnica-pointer-chasing-para-medir-latencia-real-de-memoria]] · [[como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset]] · [[como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso]]
+
+## Ampliación (2026-11-19, )
+Pasos para compilar y ejecutar:
+1. Compilar con optimización O2: `g++ -O2 -o mem_latency tarea1_2_mem_latency.cpp`
+2. Ejecutar fijando el proceso al core 0 para evitar migración entre cores y variabilidad: `taskset -c 0 ./mem_latency`
+3. El programa imprime dos columnas: "Tamaño(KiB)" y "Latencia(ns)"
+4. Graficar: Tamaño del bloque (eje X) vs Latencia media en nanosegundos (eje Y)

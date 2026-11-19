@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "prediccion-saltos"
-notas: 205
+notas: 207
 ---
 # prediccion-saltos
 
@@ -107,6 +107,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «prediccion-saltos» (este
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-instruccion-de-salto|Definición de latencia de instrucción de salto]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-latencia-de-resolucion-de-salto-en-pipeline-5|Definición de latencia de resolución de salto en pipeline 5 etapas IF/ID/EX/MEM/WB]]
 - 💡 [[memoria/conocimiento/conceptos/diferencia-entre-especulacion-software-y-hardware-falso-en-s|Diferencia entre especulación software y hardware (falso en software)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona|Efecto del orden de datos en predicción de saltos condicionales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ejecucion-multicamino-multi-path-execution-como-alternativa|Ejecución multicamino (multi-path execution) como alternativa a la predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ejecucion-multicamino-multi-path-execution-frente-a-predicci|Ejecución multicamino (multi-path execution) frente a predicción de saltos]]
 - 💡 [[memoria/conocimiento/conceptos/ejercicio-2-analisis-de-prediccion-de-saltos-en-bucle-contad|Ejercicio 2 - Análisis de predicción de saltos en bucle contador de ceros y pares]]
@@ -140,6 +141,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «prediccion-saltos» (este
 - 💡 [[memoria/conocimiento/conceptos/notacion-xax-m-2n-para-predictores-adaptativos-de-dos-nivele|Notación XAx(m,2n) para predictores adaptativos de dos niveles (Yeh y Patt 1992)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-de-prediccion-de-predictor-de-3-bits-ante-alternancia|Patrón de predicción de predictor de 3 bits ante alternancia Taken/Not Taken]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-de-saltos-en-bucle-mips64-secuencia-0-1-0-2-examen-en|Patrón de saltos en bucle MIPS64 secuencia 0,1,0,2 (examen Enero 2012)]]
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline|Penalización de fallo de predicción de salto en pipeline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-prediccion-estatica-siempre-no-tomado-con-di|Penalización de predicción estática "siempre no tomado" con dirección en ID y sentido en EX]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r|Penalización de salto en MIPS con resolución en ID y salto retardado: cero ciclos]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-resuelto-en-id-sin-prediccion|Penalización de salto en MIPS resuelto en ID sin predicción]]

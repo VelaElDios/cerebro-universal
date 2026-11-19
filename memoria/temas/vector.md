@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "vector"
-notas: 2
+notas: 3
 ---
 # vector
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «vector» (este archivo se
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/construccion-del-array-de-pointer-chasing-con-permutacion-ci|Construcción del array de pointer chasing con permutación cíclica aleatoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/estado-inicial-ciclo-1-de-un-bucle-vector-escalar-en-tomasul|Estado inicial (ciclo 1) de un bucle vector-escalar en Tomasulo]]
 
 ## Datos
@@ -17,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «vector» (este archivo se
 
 ## Temas relacionados
 
-[[ac]] · [[bucle]] · [[pipeline]] · [[planificacion]] · [[escalar]] · [[tomasulo]]
+[[ac]] · [[bucle]] · [[pipeline]] · [[planificacion]] · [[benchmark]] · [[permutacion]] · [[pointer-chasing]] · [[escalar]] · [[tomasulo]]

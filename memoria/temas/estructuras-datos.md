@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estructuras-datos» (este
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura-computadores]] · [[scoreboard]] · [[cache]] · [[memoria]] · [[punteros]]
+[[ac]] · [[arquitectura-computadores]] · [[scoreboard]] · [[cache]] · [[memoria]] · [[punteros]] · [[cpp]]

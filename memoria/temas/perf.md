@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "perf"
-notas: 12
+notas: 16
 ---
 # perf
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «perf» (este archivo se g
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li|Benchmarking con hyperfine y perf para comparar versiones lista vs vector]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst|Benchmarking ILP con hyperfine y perf para medir cycles, instructions e IPC]]
 - 🧪 [[memoria/conocimiento/recetas/calculo-de-intensidad-aritmetica-eje-x-flops-byte-con-perf-c|Cálculo de intensidad aritmética (eje X: FLOPs/Byte) con perf cache-misses]]
 - 🧪 [[memoria/conocimiento/recetas/como-benchmarkear-y-perfilar-patrones-de-acceso-con-hyperfin|Cómo benchmarkear y perfilar patrones de acceso con hyperfine y perf stat (Tarea 2.1.a)]]
@@ -18,11 +19,17 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «perf» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/como-medir-contadores-hardware-con-perf-stat-para-comparar-p|Cómo medir contadores hardware con perf stat para comparar patrones de memoria]]
 - 🧪 [[memoria/conocimiento/recetas/como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per|Cómo medir impacto de cache-misses e IPC con hyperfine y perf en experimentos controlados]]
 - 🧪 [[memoria/conocimiento/recetas/mapeo-de-patrones-de-acceso-en-grafico-roofline-gflops-s-y-f|Mapeo de patrones de acceso en gráfico Roofline (GFLOPs/s y FLOPs/Byte)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a|Medición de rendimiento con hyperfine y perf para comparar AoS vs SoA]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac|Metodología de benchmarking ILP con hyperfine y perf en práctica AC]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/perf-stat-con-contadores-clave-de-rendimiento-caches-ramas-t|Perf stat con contadores clave de rendimiento (cachés, ramas, tiempo)]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/compilar-con-o2-y-medir-con-perf-hyperfine-en-la-practica-ac|Compilar con -O2 y medir con perf/hyperfine en la práctica AC]] · ⚠️ propuesto
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/metricas-hardware-clave-para-comparar-patrones-de-acceso|Métricas hardware clave para comparar patrones de acceso]] · ⚠️ propuesto
 
 ## Datos
 
@@ -30,4 +37,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «perf» (este archivo se g
 
 ## Temas relacionados
 
-[[ac]] · [[hyperfine]] · [[benchmarking]] · [[profiling]] · [[pmu]] · [[benchmark]] · [[ipc]] · [[roofline]] · [[contadores hardware]] · [[compilacion]] · [[cache-misses]] · [[intensidad aritmética]]
+[[ac]] · [[hyperfine]] · [[benchmarking]] · [[rendimiento]] · [[profiling]] · [[benchmark]] · [[cache]] · [[pmu]] · [[ipc]] · [[roofline]] · [[contadores hardware]] · [[compilacion]]

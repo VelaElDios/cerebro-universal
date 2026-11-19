@@ -141,3 +141,19 @@ Trozos leídos: 1 · notas nuevas o ampliadas: 8
 **Repos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100 · datos @ cc80251 2026-11-18 21:46:42 +0000
 
 - ✅ `../../memoria/reglas-tfg.md` aprendido entero: 8 notas → [[fuente-reglas-tfg-memoria]]
+
+## 2026-11-19 03:23 · 📚 Aprendizaje
+
+Trozos leídos: 9 · notas nuevas o ampliadas: 56
+
+**Repos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100 · datos @ 0a6d84f 2026-11-19 02:01:09 +0000
+
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea1_2_mem_latency.cpp` aprendido entero: 8 notas → [[fuente-code-lab3-zip-tarea1-2-mem-latency-practicas]]
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea1_2_pintarLatvsMem.py` aprendido entero: 5 notas → [[fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas]]
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea1_3_pintarRoofLin.py` aprendido entero: 5 notas → [[fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas]]
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea2_1_patrones.cpp` aprendido entero: 6 notas → [[fuente-code-lab3-zip-tarea2-1-patrones-practicas]]
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab3.zip!tarea2_1_pintarRoofLin_conPunto.py` aprendido entero: 6 notas → [[fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas]]
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea3_1_lista.cpp` aprendido entero: 8 notas → [[fuente-code-lab4-zip-tarea3-1-lista-practicas]]
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea3_2_aos.cpp` aprendido entero: 6 notas → [[fuente-code-lab4-zip-tarea3-2-aos-practicas]]
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea4_1_ilp.cpp` aprendido entero: 6 notas → [[fuente-code-lab4-zip-tarea4-1-ilp-practicas]]
+- ✅ `repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea4_2_branchless.cpp` aprendido entero: 6 notas → [[fuente-code-lab4-zip-tarea4-2-branchless-practicas]]

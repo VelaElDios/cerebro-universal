@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "compilador"
-notas: 12
+notas: 13
 ---
 # compilador
 
@@ -20,6 +20,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «compilador» (este archiv
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-de-instrucciones-la-hace-el-compilado|Planificación estática de instrucciones la hace el compilador]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-vs-dinamica-de-instrucciones-en-arqui|Planificación estática vs dinámica de instrucciones en Arquitectura de Computadores]]
 - 💡 [[memoria/conocimiento/conceptos/planificacion-estatica-el-compilador-reordena-para-reducir-d|Planificación estática: el compilador reordena para reducir dependencias]]
+- 💡 [[memoria/conocimiento/conceptos/prevencion-de-dead-code-elimination-dce-forzando-uso-del-res|Prevención de Dead Code Elimination (DCE) forzando uso del resultado]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-delayed-branch-en-planificacion-estatica|Salto retardado (delayed branch) en planificación estática]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/salto-retardado-y-instrucciones-predicadas-como-alternativas|Salto retardado y instrucciones predicadas como alternativas a predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-de-las-instrucciones-predicadas|Ventajas e inconvenientes de las instrucciones predicadas]] · ⚠️ propuesto
@@ -27,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «compilador» (este archiv
 
 ## Temas relacionados
 
-[[ac]] · [[prediccion-saltos]] · [[ilp]] · [[instrucciones-predicadas]] · [[hardware]] · [[vliw]] · [[planificacion-estatica]] · [[especulacion]] · [[superescalar]] · [[estática]] · [[planificación]] · [[estatica]]
+[[ac]] · [[prediccion-saltos]] · [[ilp]] · [[instrucciones-predicadas]] · [[hardware]] · [[vliw]] · [[planificacion-estatica]] · [[optimizacion]] · [[especulacion]] · [[superescalar]] · [[estática]] · [[planificación]]

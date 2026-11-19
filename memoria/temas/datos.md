@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "datos"
-notas: 5
+notas: 7
 ---
 # datos
 
@@ -18,6 +18,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector|Parámetros fijos de la práctica ILP: N=100M elementos, vector de 1.0f, múltiplo de 4]]
+- 📊 [[memoria/conocimiento/datos/parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill|Parámetros fijos de la Tarea 3.1 (N, media, distribución, semilla)]]
 
 ## Lecciones (errores ya resueltos)
 
@@ -26,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[lua]] · [[general]] · [[fuentes]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[arma]] · [[fuente]] · [[cerebro]] · [[ia-local]]
+[[latex]] · [[ac]] · [[parametros]] · [[lua]] · [[general]] · [[fuentes]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[arma]] · [[fuente]]

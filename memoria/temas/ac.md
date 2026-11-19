@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "ac"
-notas: 1148
+notas: 1208
 ---
 # ac
 
@@ -36,6 +36,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/aplicacion-de-la-ley-de-amdahl-para-speedup-global-mejorando|Aplicación de la ley de Amdahl para speedup global mejorando una parte]]
 - 🧪 [[memoria/conocimiento/recetas/asignacion-de-estaciones-de-reserva-mult-1-y-mult-2-en-el-ej|Asignación de estaciones de reserva Mult 1 y Mult 2 en el ejemplo]]
 - 🧪 [[memoria/conocimiento/recetas/benchmarking-comparativo-con-hyperfine-warmup-y-comillas|Benchmarking comparativo con Hyperfine (warmup y comillas)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li|Benchmarking con hyperfine y perf para comparar versiones lista vs vector]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst|Benchmarking ILP con hyperfine y perf para medir cycles, instructions e IPC]]
 - 🧪 [[memoria/conocimiento/recetas/bucle-mips64-para-contar-ocurrencias-de-un-caracter-en-caden|Bucle MIPS64 para contar ocurrencias de un carácter en cadena ASCIIZ]]
 - 🧪 [[memoria/conocimiento/recetas/bucle-risc-v-para-calibracion-imu-con-puntero-descendente|Bucle RISC-V para calibración IMU con puntero descendente]] · ⚠️ propuesto
@@ -54,6 +55,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/configuracion-tomasulo-con-rob-para-simulacion-de-examen-ene|Configuración Tomasulo con ROB para simulación de examen (enero 2021)]]
 - 🧪 [[memoria/conocimiento/recetas/configuracion-y-parametros-para-simular-tomasulo-en-problema|Configuración y parámetros para simular Tomasulo en problema de examen (MIPS64, UF segmentadas, latencias dadas)]]
 - 🧪 [[memoria/conocimiento/recetas/construccion-de-permutacion-aleatoria-en-ciclo-para-pointer|Construcción de permutación aleatoria en ciclo para pointer chasing]]
+- 🧪 [[memoria/conocimiento/recetas/construccion-del-array-de-pointer-chasing-con-permutacion-ci|Construcción del array de pointer chasing con permutación cíclica aleatoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/conversion-de-codigo-vliw-compactado-a-bucle-mips64-segmenta|Conversión de código VLIW compactado a bucle MIPS64 segmentado con un resultado por iteración]]
 - 🧪 [[memoria/conocimiento/recetas/cpi-con-penalizacion-de-saltos-resueltos-en-id-test-ac-q13|CPI con penalización de saltos resueltos en ID (test AC Q13)]]
 - 🧪 [[memoria/conocimiento/recetas/cpi-con-prediccion-de-saltos-en-pipeline-de-5-etapas-direcci|CPI con predicción de saltos en pipeline de 5 etapas (dirección en EX, destino en ID)]] · ⚠️ propuesto
@@ -153,6 +155,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-cycles-per-result-cpr-en-bucles-pipelined-con|Cómo calcular Cycles Per Result (CPR) en bucles pipelined con stalls]]
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-efectividad-en-coste-rendimiento-coste-entre-d|Cómo calcular efectividad en coste (rendimiento/coste) entre dos sistemas]]
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-el-factor-de-mejora-necesario-k-para-un-speedu|Cómo calcular el factor de mejora necesario (k) para un speedup objetivo dado (ley de Amdahl inversa)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i|Cómo calcular el techo de cómputo (GFLOPS máx) y el punto de inflexión del modelo Roofline]]
+- 🧪 [[memoria/conocimiento/recetas/como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma|Cómo calcular el techo de cómputo (peak GFLOPS) para AVX2/FMA en x86]]
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-factor-de-mejora-necesario-segun-ley-de-amdahl|Cómo calcular factor de mejora necesario según Ley de Amdahl]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-instrucciones-vliw-necesarias-para-codigo-inde|Cómo calcular instrucciones VLIW necesarias para código independiente]]
 - 🧪 [[memoria/conocimiento/recetas/como-calcular-la-fraccion-de-uso-requerida-para-un-speedup-o|Cómo calcular la fracción de uso requerida para un speedup objetivo con Amdahl]] · ⚠️ propuesto
@@ -169,6 +173,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria|Cómo compilar y ejecutar el benchmark de latencia de memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso|Cómo compilar y ejecutar el benchmark de patrones de acceso a memoria]]
 - 🧪 [[memoria/conocimiento/recetas/como-compilar-y-medir-lista-vs-vector-con-g-o2-hyperfine-y-p|Cómo compilar y medir lista vs vector con g++ -O2, hyperfine y perf]]
+- 🧪 [[memoria/conocimiento/recetas/como-configurar-lstopo-para-obtener-tamanos-de-cache-reales|Cómo configurar lstopo para obtener tamaños de caché reales antes de la práctica]]
 - 🧪 [[memoria/conocimiento/recetas/como-construir-diagrama-de-gantt-tabla-de-ciclos-para-pipeli|Cómo construir diagrama de Gantt / tabla de ciclos para pipeline superescalar]]
 - 🧪 [[memoria/conocimiento/recetas/como-convertir-porcentaje-de-ganancia-speedup-a-factor-de-sp|Cómo convertir porcentaje de ganancia (speedup %) a factor de speedup (n)]]
 - 🧪 [[memoria/conocimiento/recetas/como-desenrollar-4-veces-y-planificar-bucle-vliw-para-maximo|Cómo desenrollar 4 veces y planificar bucle VLIW para máximo aprovechamiento (examen enero 2023)]]
@@ -183,6 +188,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/como-generar-el-grafico-roofline-mononucleo-con-python|Cómo generar el gráfico Roofline mononúcleo con Python]]
 - 🧪 [[memoria/conocimiento/recetas/como-generar-el-modelo-roofline-del-procesador-con-lscpu-y-s|Cómo generar el modelo Roofline del procesador con lscpu y STREAM (Tarea 1.3)]]
 - 🧪 [[memoria/conocimiento/recetas/como-graficar-latencia-vs-working-set-con-jerarquia-de-cache|Cómo graficar latencia vs working set con jerarquía de caché en matplotlib]]
+- 🧪 [[memoria/conocimiento/recetas/como-graficar-latencia-vs-working-set-para-analizar-jerarqui|Cómo graficar latencia vs working set para analizar jerarquía de memoria]]
 - 🧪 [[memoria/conocimiento/recetas/como-guardar-el-grafico-roofline-como-archivo-png-en-lugar-d|Cómo guardar el gráfico Roofline como archivo PNG en lugar de mostrarlo]]
 - 🧪 [[memoria/conocimiento/recetas/como-hacer-benchmark-estadistico-con-hyperfine-entre-patrone|Cómo hacer benchmark estadístico con hyperfine entre patrones temporal y aleatorio]]
 - 🧪 [[memoria/conocimiento/recetas/como-identificar-dependencia-de-datos-entre-iteraciones-en-b|Cómo identificar dependencia de datos entre iteraciones en bucle con carga y actualización de puntero]] · ⚠️ propuesto
@@ -196,6 +202,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/como-medir-contadores-hardware-con-perf-stat-para-comparar-p|Cómo medir contadores hardware con perf stat para comparar patrones de memoria]]
 - 🧪 [[memoria/conocimiento/recetas/como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per|Cómo medir impacto de cache-misses e IPC con hyperfine y perf en experimentos controlados]]
 - 🧪 [[memoria/conocimiento/recetas/como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset|Cómo medir latencia de memoria con pointer chasing y taskset (Tarea 1.2)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-obtener-los-parametros-de-hardware-para-el-modelo-roofl|Cómo obtener los parámetros de hardware para el modelo Roofline en Linux]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-obtener-los-parametros-reales-de-tu-maquina-para-el-roo|Cómo obtener los parámetros reales de tu máquina para el Roofline]]
 - 🧪 [[memoria/conocimiento/recetas/como-obtener-parametros-de-hardware-para-el-modelo-roofline|Cómo obtener parámetros de hardware para el modelo Roofline en Linux]]
 - 🧪 [[memoria/conocimiento/recetas/como-rellenar-la-tabla-de-estado-de-instrucciones-en-tomasul|Cómo rellenar la tabla de estado de instrucciones en Tomasulo sin especulación]]
@@ -209,6 +216,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/como-se-traza-la-ejecucion-ciclo-a-ciclo-en-el-algoritmo-de|Cómo se traza la ejecución ciclo a ciclo en el algoritmo de Tomasulo]]
 - 🧪 [[memoria/conocimiento/recetas/como-simular-tomasulo-especulativo-con-rob-de-4-entradas-y-l|Cómo simular Tomasulo especulativo con ROB de 4 entradas y latencias dadas]]
 - 🧪 [[memoria/conocimiento/recetas/como-transformar-std-list-a-std-vector-con-reserva-previa-pa|Cómo transformar std::list a std::vector con reserva previa para mejorar localidad de caché]]
+- 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c|Cómo trazar el modelo Roofline clásico (techo DRAM + tope CPU) con matplotlib]]
+- 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log|Cómo trazar el modelo Roofline con matplotlib (escala log-log, zonas coloreadas, puntos anotados)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log|Cómo trazar el modelo Roofline con matplotlib en escala log-log]]
 - 🧪 [[memoria/conocimiento/recetas/definicion-de-latencia-de-salto-y-penalizacion-por-fallo-de|Definición de latencia de salto y penalización por fallo de predicción]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/dependencias-en-bucle-mips64-de-encriptacion-asciiz-problema|Dependencias en bucle MIPS64 de encriptación ASCIIZ (Problema 1)]]
@@ -260,11 +269,13 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/funcionamiento-y-actualizacion-de-la-btac-branch-target-addr|Funcionamiento y actualización de la BTAC (Branch Target Address Cache)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si|Funcionamiento y límites de la segmentación (pipelining) en SISD]]
 - 🧪 [[memoria/conocimiento/recetas/formula-del-tiempo-de-ejecucion-de-cpu-y-sus-tres-factores|Fórmula del tiempo de ejecución de CPU y sus tres factores]]
+- 🧪 [[memoria/conocimiento/recetas/generacion-de-permutacion-aleatoria-reproducible-para-acceso|Generación de permutación aleatoria reproducible para acceso aleatorio]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/grado-de-un-superescalar-a-partir-de-su-cpi-ideal|Grado de un superescalar a partir de su CPI ideal]]
 - 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencia-raw-entre-add-s-consecutivas-p|Identificación de dependencia RAW entre ADD.S consecutivas por registro destino/fuente]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/identificacion-de-dependencias-loop-carried-en-bucles-c-styl|Identificación de dependencias loop-carried en bucles (C-style y RISC-V)]]
 - 🧪 [[memoria/conocimiento/recetas/igualar-mips-entre-dos-maquinas-despejando-frecuencia-de-rel|Igualar MIPS entre dos máquinas despejando frecuencia de reloj (ejercicio 15)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/igualar-rendimiento-de-dos-maquinas-ajustando-frecuencia-de|Igualar rendimiento de dos máquinas ajustando frecuencia de reloj]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/implementacion-branchless-de-suma-condicional-con-multiplica|Implementación branchless de suma condicional con multiplicación]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/implementacion-predictor-correlacionado-m-n-con-bhr-y-bht|Implementación predictor correlacionado (m,n) con BHR y BHT]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/instalacion-y-uso-rapido-de-lstopo-hwloc-para-topologia-de-m|Instalación y uso rápido de lstopo (hwloc) para topología de memoria]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/interpretacion-del-bhr-en-predictor-correlacionado-m-n-test|Interpretación del BHR en predictor correlacionado (m,n) (test AC Q12)]]
@@ -273,11 +284,16 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/ley-de-amdahl-para-mejora-de-subsistema-disco-6x-mas-rapido|Ley de Amdahl para mejora de subsistema (disco 6x más rápido, objetivo 3x global)]]
 - 🧪 [[memoria/conocimiento/recetas/mapeo-de-patrones-de-acceso-en-grafico-roofline-gflops-s-y-f|Mapeo de patrones de acceso en gráfico Roofline (GFLOPs/s y FLOPs/Byte)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/medicion-de-latencia-con-50-millones-de-accesos-dependientes|Medición de latencia con 50 millones de accesos dependientes]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/medicion-de-latencia-con-cadena-de-dependencias-y-cronometro|Medición de latencia con cadena de dependencias y cronómetro high-resolution]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a|Medición de rendimiento con hyperfine y perf para comparar AoS vs SoA]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/mejora-de-prestaciones-speedup-al-usar-btb-frente-a-sin-btb|Mejora de prestaciones (speedup) al usar BTB frente a sin BTB]]
 - 🧪 [[memoria/conocimiento/recetas/mejora-prestaciones-btb-con-politica-solo-saltos-tomados-y-a|Mejora prestaciones BTB con política solo-saltos-tomados y actualización perezosa]]
+- 🧪 [[memoria/conocimiento/recetas/metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac|Metodología de benchmarking ILP con hyperfine y perf en práctica AC]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi|Método para calcular speedup de bucle desenrollado y planificado vs original (examen AC 2017/18)]]
 - 🧪 [[memoria/conocimiento/recetas/metrica-operaciones-por-ciclo-opc-en-vliw|Métrica operaciones por ciclo (OPC) en VLIW]]
+- 🧪 [[memoria/conocimiento/recetas/optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula|Optimización ILP mediante desenrollado de 4 vías con acumuladores independientes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul|Optimización ILP mediante desenrollado de bucle con 4 acumuladores independientes]]
+- 🧪 [[memoria/conocimiento/recetas/optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl|Optimizar std::list a std::vector con reserva y fusión de bucles (Tarea 3.1 AC)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/parametros-de-simulacion-tomasulo-con-especulacion-del-exame|Parámetros de simulación Tomasulo con especulación del examen Junio 2011 (Problema 2)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/parametros-de-simulacion-tomasulo-especulativo-para-mips64-e|Parámetros de simulación Tomasulo especulativo para MIPS64 (examen AC enero 2022)]]
 - 🧪 [[memoria/conocimiento/recetas/parametros-estandar-para-ejercicios-de-segmentacion-software|Parámetros estándar para ejercicios de segmentación software en RISC-V (Tema 3)]]
@@ -370,6 +386,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 🧪 [[memoria/conocimiento/recetas/tiempo-de-ejecucion-instrucciones-cpi-frecuencia|Tiempo de ejecución = Instrucciones × CPI / Frecuencia]]
 - 🧪 [[memoria/conocimiento/recetas/tomasulo-con-cdb-no-simultaneo-2-rs-por-uf-buffers-carga-alm|Tomasulo con CDB no simultáneo 2 RS por UF buffers carga/almacen (Ejercicio 10)]]
 - 🧪 [[memoria/conocimiento/recetas/transformacion-aos-a-soa-para-optimizacion-de-cache-esquema|Transformación AoS a SoA para optimización de caché (esquema de código)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids|Transformación de AoS a SoA para kernel de suma de IDs]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/transformar-aos-a-soa-en-el-laboratorio-ac-tarea-3-2|Transformar AoS a SoA en el laboratorio AC (tarea 3.2)]]
 - 🧪 [[memoria/conocimiento/recetas/traza-de-predictor-correlacionado-1-1-con-historia-global-de|Traza de predictor correlacionado (1,1) con historia global de 1 bit]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tres-fases-de-ejecucion-en-tomasulo-emision-ejecucion-escrit|Tres fases de ejecución en Tomasulo: Emisión, Ejecución, Escritura]] · ⚠️ propuesto
@@ -381,6 +398,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/atributos-gcc-para-forzar-salto-real-y-desactivar-optimizaci|Atributos GCC para forzar salto real y desactivar optimizaciones vectoriales]]
 - ⚖️ [[memoria/conocimiento/decisiones/bloqueo-de-fadd-d-por-peligro-waw-en-registro-f6-hasta-ciclo|Bloqueo de fadd.d por peligro WAW en registro f6 hasta ciclo 13]]
 - ⚖️ [[memoria/conocimiento/decisiones/comparacion-de-tecnicas-de-planificacion-estatica-desenrolla|Comparación de técnicas de planificación estática: desenrollamiento vs segmentación software vs planificación de trazas]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/comparativa-eficiencia-operaciones-ciclo-superscalar-con-res|Comparativa eficiencia operaciones/ciclo: superscalar con restricción de tipo vs VLIW sin restricción]]
@@ -420,12 +438,18 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - ⚖️ [[memoria/conocimiento/decisiones/rob-de-4-entradas-limita-ventana-de-instrucciones-en-vuelo-e|ROB de 4 entradas limita ventana de instrucciones en vuelo (examen AC 2014)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/suposicion-de-cauce-detenido-durante-huecos-de-retardo-para|Suposición de cauce detenido durante huecos de retardo para cálculo de penalización]]
 - ⚖️ [[memoria/conocimiento/decisiones/supuestos-del-examen-retardo-de-salto-ignorado-y-unidades-en|Supuestos del examen: retardo de salto ignorado y unidades enteras latencia 0]]
+- ⚖️ [[memoria/conocimiento/decisiones/usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores|Usar índice size_t en bucle fusionado en lugar de iteradores]]
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-delayed-branch-con-1-delay-slot-en-vliw-para-ocultar|Uso de delayed branch con 1 delay slot en VLIW para ocultar latencia de salto]]
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-double-en-lugar-de-float-para-acumulacion-en-experime|Uso de double en lugar de float para acumulación en experimento ILP]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en|Uso de flag -O1 para evitar auto-unrolling del compilador en prácticas ILP]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz|Uso de int64_t y vector inicializado a 1 para evitar optimizaciones muertas]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-la-ley-de-amdahl-para-dimensionar-requisitos-de-uso-d|Uso de la ley de Amdahl para dimensionar requisitos de uso de disco]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-ranura-de-retardo-de-1-ciclo-en-superescalar-para-ocu|Uso de ranura de retardo de 1 ciclo en superescalar para ocultar latencia de salto]]
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-semilla-fija-42-en-mt19937-para-reproducibilidad-del|Uso de semilla fija (42) en mt19937 para reproducibilidad del patrón aleatorio]]
+- ⚖️ [[memoria/conocimiento/decisiones/uso-de-step-plot-post-para-representar-latencia-constante-en|Uso de step plot 'post' para representar latencia constante entre puntos medidos]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-step-plot-post-superpuesto-a-linea-continua-para-most|Uso de step plot 'post' superpuesto a línea continua para mostrar discontinuidad]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari|Uso de taskset -c 0 para fijar afinidad de CPU y reducir variabilidad]]
+- ⚖️ [[memoria/conocimiento/decisiones/uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato|Uso de TODO1 y TODO2 como puntos de personalización obligatorios para el alumno]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/uso-de-ciclo-8a-8b-mitades-de-ciclo-para-modelar-escritura-y|Uso de «ciclo 8a / 8b» (mitades de ciclo) para modelar escritura y emisión en mismo ciclo]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/ventajas-e-inconvenientes-de-la-planificacion-dinamica-frent|Ventajas e inconvenientes de la planificación dinámica frente a estática]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/verificacion-de-correccion-mediante-checksum-identico-en-las|Verificación de corrección mediante checksum idéntico en las cuatro variantes]]
@@ -449,6 +473,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord|Antidependencia siempre genera hazard WAR en pipeline in-order]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter|Análisis de dependencias en bucle con ADD.D y S.D (misma iteración vs entre iteraciones)]]
 - 💡 [[memoria/conocimiento/conceptos/aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache|AoS vs SoA: desperdicio de ancho de banda en caché]]
+- 💡 [[memoria/conocimiento/conceptos/aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos|AoS vs SoA: desperdicio de ancho de banda en caché por campos no usados]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-epic-ia64-y-procesadores-itanium|Arquitectura EPIC (IA64) y procesadores Itanium]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-sisd-componentes-y-tecnicas-ilp-segmentacion-su|Arquitectura SISD: componentes y técnicas ILP (segmentación, superescalar, VLIW)]]
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-vs-organizacion-misma-arquitectura-implica-mism|Arquitectura vs organización: misma arquitectura implica mismo juego de instrucciones]]
@@ -486,6 +511,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/clasificacion-de-gpus-segun-taxonomia-de-flynn-simd-pregunta|Clasificación de GPUs según taxonomía de Flynn: SIMD (pregunta 8)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/clasificacion-de-multiprocesadores-en-taxonomia-de-flynn|Clasificación de multiprocesadores en taxonomía de Flynn]]
 - 💡 [[memoria/conocimiento/conceptos/clasificacion-de-tipos-de-computadores-segun-requisitos-de-d|Clasificación de tipos de computadores según requisitos de diseño]]
+- 💡 [[memoria/conocimiento/conceptos/clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo|Clasificación memory-bound vs compute-bound en el modelo Roofline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect|Cluster de estaciones de trabajo: nodos autónomos interconectados por red de altas prestaciones]]
 - 💡 [[memoria/conocimiento/conceptos/comparacion-de-eficiencia-frecuencial-entre-procesadores-usa|Comparación de eficiencia frecuencial entre procesadores usando benchmark de juego 3D]]
 - 💡 [[memoria/conocimiento/conceptos/comparacion-de-rendimiento-entre-procesadores-requiere-mismo|Comparación de rendimiento entre procesadores requiere mismo ISA o benchmarks]] · ⚠️ propuesto
@@ -518,6 +544,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-flops-ciclo-para-avx2-con-fma|Cálculo de FLOPs/ciclo para AVX2 con FMA]]
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d|Cálculo de operaciones por ciclo (IPC) en planificación VLIW de bucle]]
 - 💡 [[memoria/conocimiento/conceptos/calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do|Cálculo de speedup con ley de Amdahl: fracción mejorada al doble de velocidad]]
+- 💡 [[memoria/conocimiento/conceptos/calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent|Cálculo teórico de reducción de líneas de caché en SoA frente a AoS]]
 - 💡 [[memoria/conocimiento/conceptos/definiciones-clave-basic-block-antidependencia-loop-unrollin|Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)]]
 - 💡 [[memoria/conocimiento/conceptos/definiciones-de-dependencias-de-datos-raw-war-antidependenci|Definiciones de dependencias de datos: RAW, WAR (antidependencia), WAW (dependencia de salida)]]
 - 💡 [[memoria/conocimiento/conceptos/definiciones-btb-ejecucion-multicamino-especulacion-software|Definiciones: BTB, ejecución multicamino, especulación software, superescalar CPI ideal, Intel P7, multicore, PowerPC]] · ⚠️ propuesto
@@ -567,6 +594,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/dependencia-de-salida-waw-dos-instrucciones-escriben-mismo-r|Dependencia de salida (WAW): dos instrucciones escriben mismo registro/memoria]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-entre-iteraciones-en-bucle-con-s-d-y-daddui-sobr|Dependencia entre iteraciones en bucle con S.D y DADDUI sobre R1]]
 - 💡 [[memoria/conocimiento/conceptos/dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter|Dependencia entre S.D y DADDUI en bucle es por R1 entre iteraciones]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe|Dependencia RAW en acumulación secuencial limita ILP en pipeline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien|Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-war-waw-se-eliminan-con-renombramient|Dependencias de nombre (WAR, WAW) se eliminan con renombramiento de registros]]
 - 💡 [[memoria/conocimiento/conceptos/dependencias-de-nombre-war-waw-se-eliminan-mediante-renombra|Dependencias de nombre (WAR, WAW) se eliminan mediante renombramiento]] · ⚠️ propuesto
@@ -578,6 +606,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/dependencias-en-codigo-mips64-fp-l-d-mul-s-add-s-s-d|Dependencias en código MIPS64 FP: L.D → MUL.S → ADD.S → S.D]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-en-el-bucle-de-ejemplo-vliw-examen-ac-2018|Dependencias en el bucle de ejemplo VLIW (examen AC 2018)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v|Dependencias RAW, WAR y WAW en el bucle de producto escalar-vectorial (examen AC 2017/18)]]
+- 💡 [[memoria/conocimiento/conceptos/derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma|Derivación de FLOPSperCYCLE = 32 para x86 con AVX2 y FMA]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac|Desenrollado de bucle (loop unrolling) 3× para VLIW y compactación]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucles-loop-unrolling-en-superescalar-con-re|Desenrollado de bucles (loop unrolling) en superescalar con renombrado de registros]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-loop-unrolling-permite-planificar|Desenrollamiento de bucles (loop unrolling) permite planificar instrucciones de distintas iteraciones]] · ⚠️ propuesto
@@ -601,6 +630,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/distincion-entre-arquitectura-organizacion-y-tecnologia-en-p|Distinción entre arquitectura, organización y tecnología en procesadores]]
 - 💡 [[memoria/conocimiento/conceptos/dos-estrategias-genericas-para-tratar-dependencias-de-datos|Dos estrategias genéricas para tratar dependencias de datos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura|Ecuación fundamental del tiempo de ejecución en arquitectura de computadores]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona|Efecto del orden de datos en predicción de saltos condicionales]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/efectos-de-la-especulacion-en-flujo-de-datos-ilp-y-excepcion|Efectos de la especulación en flujo de datos, ILP y excepciones]]
 - 💡 [[memoria/conocimiento/conceptos/ejecucion-multicamino-multi-path-execution-como-alternativa|Ejecución multicamino (multi-path execution) como alternativa a la predicción]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/ejecucion-multicamino-multi-path-execution-frente-a-predicci|Ejecución multicamino (multi-path execution) frente a predicción de saltos]]
@@ -643,6 +673,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/etiquetado-de-saltos-b1-b2-b3-en-bucle-contador-ceros-pares|Etiquetado de saltos B1, B2, B3 en bucle contador ceros/pares]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/excepcion-en-especulacion-hardware-atendida-solo-en-etapa-co|Excepción en especulación hardware: atendida solo en etapa commit]]
 - 💡 [[memoria/conocimiento/conceptos/excepcion-terminante-en-instruccion-especulativa-se-pospone|Excepción terminante en instrucción especulativa: se pospone hasta que deja de ser especulativa]]
+- 💡 [[memoria/conocimiento/conceptos/fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante|Fase de warm-up para poblar TLB y evitar page faults durante medición]]
 - 💡 [[memoria/conocimiento/conceptos/fichero-de-registros-con-campo-qi-en-tomasulo|Fichero de registros con campo Qi en Tomasulo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/flujo-de-datos-de-carga-multiplicacion-almacenamiento-en-buf|Flujo de datos de carga → multiplicación → almacenamiento en buffers Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/forwarding-adelantamiento-no-resuelve-todos-los-riesgos-de-d|Forwarding (adelantamiento) no resuelve todos los riesgos de datos en MIPS multiciclo]] · ⚠️ propuesto
@@ -650,6 +681,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/forwarding-en-vliw-estatico-y-latencias-efectivas|Forwarding en VLIW estático y latencias efectivas]]
 - 💡 [[memoria/conocimiento/conceptos/funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es|Funcionamiento detallado de bits de veneno (poison bits) en especulación]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/funcion-del-marcador-scoreboard-en-ejecucion-dinamica-test-a|Función del Marcador (Scoreboard) en ejecución dinámica (test AC Q9)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/fusion-de-bucles-loop-fusion-para-localidad-temporal|Fusión de bucles (loop fusion) para localidad temporal]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/formula-del-techo-roofline-mononucleo|Fórmula del techo Roofline mononúcleo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/formulas-de-rendimiento-cpi-tiempo-mips-mflops-speedup-amdah|Fórmulas de rendimiento (CPI, tiempo, MIPS, MFLOPS, speedup, Amdahl) referencia examen AC]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/gestion-de-buffers-de-carga-almacenamiento-con-direcciones-d|Gestión de buffers de carga/almacenamiento con direcciones decrecientes]] · ⚠️ propuesto
@@ -709,10 +741,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/mejor-metrica-de-rendimiento-tiempo-de-ejecucion|Mejor métrica de rendimiento: tiempo de ejecución]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mips64-usa-caches-separadas-para-instrucciones-y-datos-harva|MIPS64 usa cachés separadas para instrucciones y datos (Harvard modificada)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/modelo-de-programacion-simt-en-gpgpu|Modelo de programación SIMT en GPGPU]]
+- 💡 [[memoria/conocimiento/conceptos/modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid|Modelo Roofline: regiones memory-bound vs compute-bound y ridge point]]
 - 💡 [[memoria/conocimiento/conceptos/mpi-proporciona-herramientas-para-comunicar-procesos-en-dist|MPI proporciona herramientas para comunicar procesos en distintos procesadores]]
 - 💡 [[memoria/conocimiento/conceptos/multicomputadores-sistemas-de-memoria-distribuida-varios-esp|Multicomputadores = sistemas de memoria distribuida, varios espacios de direcciones, sin coherencia hardware]]
 - 💡 [[memoria/conocimiento/conceptos/metrica-de-comparacion-operaciones-por-ciclo-ipc-en-supersca|Métrica de comparación: operaciones por ciclo (IPC) en superscalar vs VLIW]]
 - 💡 [[memoria/conocimiento/conceptos/metricas-de-rendimiento-latencia-vs-throughput-ancho-de-band|Métricas de rendimiento: Latencia vs Throughput (Ancho de banda)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/metricas-hardware-clave-para-comparar-patrones-de-acceso|Métricas hardware clave para comparar patrones de acceso]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/multiples-caminos-como-tecnica-de-prediccion-de-saltos|Múltiples caminos como técnica de predicción de saltos]]
 - 💡 [[memoria/conocimiento/conceptos/name-dependency-dependencia-de-nombre-incluye-waw-y-war|Name dependency (dependencia de nombre) incluye WAW y WAR]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/nomenclatura-del-campo-value-en-entradas-del-rob-tomasulo-co|Nomenclatura del campo Value en entradas del ROB (Tomasulo con especulación)]]
@@ -724,6 +758,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/obtencion-de-operandos-y-deteccion-waw-war-en-scoreboard|Obtención de operandos y detección WAW/WAR en Scoreboard]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/openmp-usa-directivas-de-compilacion-para-paralelizar-pregun|OpenMP usa directivas de compilación para paralelizar (pregunta 10)]]
 - 💡 [[memoria/conocimiento/conceptos/orden-de-emision-issue-en-scoreboard-orden-de-programa|Orden de emisión (issue) en Scoreboard: orden de programa]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica|Overhead de asignación por nodo en std::list vs reserva única en std::vector]]
 - 💡 [[memoria/conocimiento/conceptos/paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza|Paradoja MIPS vs tiempo de ejecución: mayor MIPS no garantiza menor tiempo]]
 - 💡 [[memoria/conocimiento/conceptos/paralelismo-a-nivel-de-bucle-lp-solapamiento-de-iteraciones|Paralelismo a nivel de bucle (LP) = solapamiento de iteraciones]]
 - 💡 [[memoria/conocimiento/conceptos/paralelismo-a-nivel-de-bucle-ejecutar-iteraciones-solapadas|Paralelismo a nivel de bucle = ejecutar iteraciones solapadas]] · ⚠️ propuesto
@@ -736,6 +771,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/patron-de-saltos-en-bucle-mips64-secuencia-0-1-0-2-examen-en|Patrón de saltos en bucle MIPS64 secuencia 0,1,0,2 (examen Enero 2012)]]
 - 💡 [[memoria/conocimiento/conceptos/patron-secuencial-localidad-espacial-y-prefetcher-hardware|Patrón secuencial: localidad espacial y prefetcher hardware]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-temporal-localidad-temporal-maxima-reutilizando-un-bl|Patrón temporal: localidad temporal máxima reutilizando un bloque que cabe en L1]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline|Penalización de fallo de predicción de salto en pipeline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup|Penalización de fallo de predicción de salto en pipeline superscalar]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-prediccion-estatica-siempre-no-tomado-con-di|Penalización de predicción estática "siempre no tomado" con dirección en ID y sentido en EX]]
 - 💡 [[memoria/conocimiento/conceptos/penalizacion-de-salto-en-mips-con-resolucion-en-id-y-salto-r|Penalización de salto en MIPS con resolución en ID y salto retardado: cero ciclos]]
@@ -783,6 +819,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/predictor-hibrido-que-combina-dos-predictores-locales-1-bit|Predictor híbrido que combina dos predictores locales (1 bit y 3 bits) con selector de 2 bits y reglas de actualización específicas]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/predictor-local-de-1-bit-predictor-1-y-predictor-local-de-3|Predictor local de 1 bit (Predictor 1) y predictor local de 3 bits (Predictor 2) en esquema híbrido]]
 - 💡 [[memoria/conocimiento/conceptos/predictores-n-bits-y-optimalidad-de-n-2-en-la-practica|Predictores n bits y optimalidad de n=2 en la práctica]]
+- 💡 [[memoria/conocimiento/conceptos/prevencion-de-dead-code-elimination-dce-forzando-uso-del-res|Prevención de Dead Code Elimination (DCE) forzando uso del resultado]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/problema-de-desambiguacion-de-memoria-memory-disambiguation|Problema de desambiguación de memoria (memory disambiguation)]]
 - 💡 [[memoria/conocimiento/conceptos/problema-de-desenrollado-y-planificacion-de-bucle-superescal|Problema de desenrollado y planificación de bucle superescalar con latencias dadas (examen AC 2017/18)]]
 - 💡 [[memoria/conocimiento/conceptos/problema-de-planificacion-vliw-con-desenrollado-de-bucle-exa|Problema de planificación VLIW con desenrollado de bucle (examen AC enero 2016)]]
@@ -819,6 +856,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/recuperacion-ante-fallo-de-prediccion-de-salto-misprediction|Recuperación ante fallo de predicción de salto (misprediction)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/recuperacion-ante-fallo-de-prediccion-descartar-resultados-e|Recuperación ante fallo de predicción: descartar resultados especulativos y reanudar por camino correcto]]
 - 💡 [[memoria/conocimiento/conceptos/recuperacion-de-fallos-de-prediccion-con-registros-temporale|Recuperación de fallos de predicción con registros temporales]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/reduccion-final-de-acumuladores-parciales-tras-desenrollado|Reducción final de acumuladores parciales tras desenrollado]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/registro-de-estado-de-resultados-result-register-status-en-e|Registro de estado de resultados (Result Register Status) en el marcador]]
 - 💡 [[memoria/conocimiento/conceptos/registro-de-historial-de-saltos-bhr-se-implementa-como-regis|Registro de historial de saltos (BHR) se implementa como registro de desplazamiento]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/reglas-de-cdb-y-liberacion-de-recursos-en-tomasulo-con-rob|Reglas de CDB y liberación de recursos en Tomasulo con ROB]] · ⚠️ propuesto
@@ -902,11 +940,13 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/tomasulo-resultados-via-cdb-riesgos-estructurales-en-escritu|Tomasulo: resultados via CDB, riesgos estructurales en escritura, especulación commit]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tomasulo-resultados-via-common-data-bus-cdb|Tomasulo: resultados via Common Data Bus (CDB)]]
 - 💡 [[memoria/conocimiento/conceptos/trace-scheduling-traza-secuencia-mas-probable-de-bloques-bas|Trace scheduling: traza = secuencia más probable de bloques básicos en código con estructura condicional]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/trade-offs-de-programacion-branchless-vs-condicional|Trade-offs de programación branchless vs condicional]]
 - 💡 [[memoria/conocimiento/conceptos/transformacion-por-software-pipelining-daddui-mantiene-signo|Transformación por software pipelining: DADDUI mantiene signo de incremento]]
 - 💡 [[memoria/conocimiento/conceptos/transicion-de-predictor-de-3-bits-inicializado-en-100-a-001|Transición de predictor de 3 bits inicializado en 100 a 001 tras tres ejecuciones]]
 - 💡 [[memoria/conocimiento/conceptos/tres-mecanismos-de-especulacion-evaluados-en-examen-ac-enero|Tres mecanismos de especulación evaluados en examen AC Enero 2014]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tres-mecanismos-de-manejo-de-excepciones-para-instrucciones|Tres mecanismos de manejo de excepciones para instrucciones especulativas]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t|Tres patrones de acceso a memoria evaluados en la práctica (Tarea 2.1)]]
+- 💡 [[memoria/conocimiento/conceptos/tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de|Tres patrones de acceso a memoria para evaluar localidad de datos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/tres-tipos-de-dependencias-en-codigo-datos-nombre-y-control|Tres tipos de dependencias en código: datos, nombre y control]]
 - 💡 [[memoria/conocimiento/conceptos/tecnica-de-marcador-scoreboard-riesgos-war-waw-obligan-a-det|Técnica de Marcador (Scoreboard): riesgos WAR/WAW obligan a detener]]
 - 💡 [[memoria/conocimiento/conceptos/tecnica-de-mejora-de-rendimiento-en-sisd|Técnica de mejora de rendimiento en SISD]]
@@ -923,6 +963,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 💡 [[memoria/conocimiento/conceptos/ventajas-e-inconvenientes-del-algoritmo-tomasulo|Ventajas e inconvenientes del algoritmo Tomasulo]]
 - 💡 [[memoria/conocimiento/conceptos/ventana-de-instrucciones-almacena-instrucciones-activas-deco|Ventana de instrucciones almacena instrucciones activas, decodificadas pero no finalizadas]]
 - 💡 [[memoria/conocimiento/conceptos/ventana-de-instrucciones-en-superscalar-instrucciones-decodi|Ventana de instrucciones en superscalar: instrucciones decodificadas y renombradas no emitidas aún]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y|Visualización de jerarquía de memoria con regiones axvspan y escalas logarítmicas]]
 - 💡 [[memoria/conocimiento/conceptos/vliw-el-compilador-empaqueta-varias-operaciones-en-una-instr|VLIW: el compilador empaqueta varias operaciones en una instrucción larga]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/waw-corresponde-a-dependencia-de-salida|WAW corresponde a dependencia de salida]]
 - 💡 [[memoria/conocimiento/conceptos/waw-hazard-corresponde-a-dependencia-de-salida|WAW hazard corresponde a dependencia de salida]]
@@ -943,10 +984,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 📊 [[memoria/conocimiento/datos/campo-de-etiqueta-tag-de-4-bits-5-estaciones-de-reserva-6-bu|Campo de etiqueta (tag) de 4 bits: 5 estaciones de reserva + 6 buffers de carga]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/comparativa-de-ciclos-por-dato-bucle-original-vs-desenrollad|Comparativa de ciclos por dato: bucle original vs desenrollado vs desenrollado+planificado vs segmentación software]]
 - 📊 [[memoria/conocimiento/datos/comparativa-historica-data-star-trek-60-tflops-vs-top500-219|Comparativa histórica: Data (Star Trek) 60 TFLOPs vs TOP500 2198 PFLOPs en 2026]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/compilacion-y-ejecucion-de-referencia-para-tarea-3-1|Compilación y ejecución de referencia para Tarea 3.1]]
 - 📊 [[memoria/conocimiento/datos/comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips|Comportamiento real de saltos B1 (BEQZ) y B2 (BEQ) en bucle MIPS64 que recorre secuencia 0,1,0,2,0,3,0,4,0,5]]
 - 📊 [[memoria/conocimiento/datos/comportamiento-real-de-saltos-b1-y-b2-en-bucle-risc-v-que-re|Comportamiento real de saltos B1 y B2 en bucle RISC-V que recorre secuencia 0,1,0,2,0,3,0,4,0,5]]
 - 📊 [[memoria/conocimiento/datos/computadores-de-referencia-para-medicion-de-rendimiento-ultr|Computadores de referencia para medición de rendimiento: UltraSPARC II, DEC VAX 11/780, UNIVAC]]
 - 📊 [[memoria/conocimiento/datos/configuracion-de-recursos-en-ejercicio-tomasulo-ej-14-y-scor|Configuración de recursos en ejercicio Tomasulo (Ej. 14) y Scoreboard (Ej. 16)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/configuracion-del-benchmark-32768-elementos-1000-repeticione|Configuración del benchmark: 32768 elementos, 1000 repeticiones, valores 0-255]]
 - 📊 [[memoria/conocimiento/datos/configuracion-del-procesador-para-el-ejercicio-de-desenrolla|Configuración del procesador para el ejercicio de desenrollado (AC June 2018)]]
 - 📊 [[memoria/conocimiento/datos/configuracion-hardware-tomasulo-con-especulacion-para-examen|Configuración hardware Tomasulo con especulación para examen Enero 2016 Problema 3]]
 - 📊 [[memoria/conocimiento/datos/configuracion-tomasulo-con-especulacion-del-examen-ac-junio|Configuración Tomasulo con especulación del examen AC Junio 2014 (extraordinario)]] · ⚠️ propuesto
@@ -1027,6 +1070,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 📊 [[memoria/conocimiento/datos/numero-de-tablas-bht-en-predictor-correlacionado-m-n|Número de tablas BHT en predictor correlacionado (m, n)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/organizacion-del-banco-de-registros-en-risc-v-rv64g|Organización del banco de registros en RISC-V RV64G]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-de-ejemplo-del-script-cpu-4-9-ghz-ddr4-26-143-gb|Parámetros de ejemplo del script (CPU 4.9 GHz, DDR4 26.143 GB/s)]]
+- 📊 [[memoria/conocimiento/datos/parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1|Parámetros de ejemplo para Roofline: CPU 4.9 GHz, BW DRAM 26.143 GB/s, AVX2/FMA = 32 FLOPS/ciclo]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult|Parámetros de pipeline RISC-V FP para ejercicios Tema 2 (multiplicador 3 ciclos, divisor 4/6 ciclos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-de-pipeline-superescalar-mem-2-ciclos-ex-3-ciclos|Parámetros de pipeline superescalar: MEM 2 ciclos, EX 3 ciclos, adelantamiento, ventana grande]]
 - 📊 [[memoria/conocimiento/datos/parametros-de-recursos-y-latencias-para-tomasulo-con-especul|Parámetros de recursos y latencias para Tomasulo con especulación (examen June 2025)]] · ⚠️ propuesto
@@ -1036,10 +1080,15 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 📊 [[memoria/conocimiento/datos/parametros-de-temporizacion-vliw-examen-enero-2016|Parámetros de temporización VLIW examen enero 2016]]
 - 📊 [[memoria/conocimiento/datos/parametros-de-tomasulo-con-especulacion-para-problema-2-exam|Parámetros de Tomasulo con especulación para Problema 2 (examen Junio 2026)]]
 - 📊 [[memoria/conocimiento/datos/parametros-de-unidades-funcionales-y-buffers-en-examen-ac-ju|Parámetros de unidades funcionales y buffers en examen AC Junio 2013 P2]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b|Parámetros del benchmark AoS/SoA: N=60M, ITER=4, cache line=64B]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-del-experimento-lista-vs-vector-n-20m-media-50-0f|Parámetros del experimento lista vs vector: N=20M, media=50.0f, semilla=123]]
 - 📊 [[memoria/conocimiento/datos/parametros-del-procesador-para-problema-1-ac-enero-2025|Parámetros del procesador para Problema 1 (AC Enero 2025)]]
 - 📊 [[memoria/conocimiento/datos/parametros-del-procesador-superescalar-en-problema-de-planif|Parámetros del procesador superescalar en problema de planificación de bucle (examen AC 2017/18)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector|Parámetros fijos de la práctica ILP: N=100M elementos, vector de 1.0f, múltiplo de 4]]
+- 📊 [[memoria/conocimiento/datos/parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill|Parámetros fijos de la Tarea 3.1 (N, media, distribución, semilla)]]
+- 📊 [[memoria/conocimiento/datos/parametros-fijos-del-benchmark-rangos-y-conteos|Parámetros fijos del benchmark: rangos y conteos]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-fijos-del-benchmark-semilla-accesos-formato-salid|Parámetros fijos del benchmark: semilla, accesos, formato salida]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe|Parámetros fijos del benchmark: tamaño de array, bloque y repeticiones]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-fijos-del-experimento-aos-soa-tarea-3-2|Parámetros fijos del experimento AoS/SoA (tarea 3.2)]]
 - 📊 [[memoria/conocimiento/datos/parametros-fijos-del-experimento-de-branchless-tamanio-repet|Parámetros fijos del experimento de branchless (TAMANIO, REPETICIONES, semilla)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/parametros-fijos-del-experimento-ilp-n-100m-tipo-double-valo|Parámetros fijos del experimento ILP: N=100M, tipo double, valor 1.0f]]
@@ -1087,9 +1136,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 - 📊 [[memoria/conocimiento/datos/tabla-historica-de-predictores-en-procesadores-1989-1998|Tabla histórica de predictores en procesadores 1989-1998]]
 - 📊 [[memoria/conocimiento/datos/tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache|Tamaño del vector y bloque en bytes y líneas de caché]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script|Tamaños de caché de ejemplo y latencias medidas en el script]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac|Tamaños de caché y latencias de ejemplo en el script de práctica AC]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/tasa-de-aciertos-de-predictor-1-bit-inicializado-a-0-con-sal|Tasa de aciertos de predictor 1-bit inicializado a 0 con salto siempre tomado ejecutado 100 veces]]
 - 📊 [[memoria/conocimiento/datos/valor-inmediato-de-daddui-tras-desenrollar-3-un-bucle-con-da|Valor inmediato de DADDUI tras desenrollar 3× un bucle con DADDUI R1,R1,#-8]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/valores-concretos-de-x1-y-direcciones-de-memoria-en-la-simul|Valores concretos de x1 y direcciones de memoria en la simulación]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat|Valores de ejemplo de intensidad y rendimiento para tres patrones de acceso (temporal, secuencial, aleatorio)]]
 - 📊 [[memoria/conocimiento/datos/valores-de-ejemplo-para-cpu-del-laboratorio-frecuencia-bw-pu|Valores de ejemplo para CPU del laboratorio (frecuencia, BW, puntos medidos)]]
 - 📊 [[memoria/conocimiento/datos/valores-de-referencia-cpi-por-clase-de-instruccion-en-maquin|Valores de referencia: CPI por clase de instrucción en máquinas con/sin hardware FP (Ejercicio 3)]]
 - 📊 [[memoria/conocimiento/datos/valores-de-referencia-cpi-por-clase-en-dos-implementaciones|Valores de referencia: CPI por clase en dos implementaciones M1/M2 (Ejercicio 2)]] · ⚠️ propuesto
@@ -1102,6 +1153,15 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ac» (este archivo se gen
 
 ## Documentos aprendidos
 
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea1-2-mem-latency-practicas|Code Lab3.zip!tarea1 2 mem latency (Practicas)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas|Code Lab3.zip!tarea1 2 pintarLatvsMem (Practicas)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas|Code Lab3.zip!tarea1 3 pintarRoofLin (Practicas)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea2-1-patrones-practicas|Code Lab3.zip!tarea2 1 patrones (Practicas)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas|Code Lab3.zip!tarea2 1 pintarRoofLin conPunto (Practicas)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab4-zip-tarea3-1-lista-practicas|Code Lab4.zip!tarea3 1 lista (Practicas)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab4-zip-tarea3-2-aos-practicas|Code Lab4.zip!tarea3 2 aos (Practicas)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab4-zip-tarea4-1-ilp-practicas|Code Lab4.zip!tarea4 1 ilp (Practicas)]]
+- 📚 [[memoria/conocimiento/fuentes/fuente-code-lab4-zip-tarea4-2-branchless-practicas|Code Lab4.zip!tarea4 2 branchless (Practicas)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-diciembre2010-examenes|Diciembre2010 (examenes)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-enero2011-examenes|Enero2011 (examenes)]]
 - 📚 [[memoria/conocimiento/fuentes/fuente-enero2012-examenes|Enero2012 (examenes)]]

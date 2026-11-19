@@ -64,4 +64,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «arquitectura-computadores
 
 ## Temas relacionados
 
-[[ac]] · [[prediccion-saltos]] · [[ley-amdahl]] · [[roofline]] · [[scoreboard]] · [[matplotlib]] · [[metricas-rendimiento]] · [[mips]] · [[speedup]] · [[cpi]] · [[métricas]] · [[rendimiento]]
+[[ac]] · [[prediccion-saltos]] · [[ley-amdahl]] · [[roofline]] · [[scoreboard]] · [[matplotlib]] · [[metricas-rendimiento]] · [[mips]] · [[speedup]] · [[rendimiento]] · [[cpi]] · [[métricas]]

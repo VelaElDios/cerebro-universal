@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "ilp"
-notas: 51
+notas: 54
 ---
 # ilp
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-manual-manual-unrolling-con-4-acumuladores-para|Desenrollado manual (Manual Unrolling) con 4 acumuladores para romper cadena de dependencia y subir IPC]]
 - 🧪 [[memoria/conocimiento/recetas/desenrollado-minimo-de-bucle-para-planificacion-sin-detencio|Desenrollado mínimo de bucle para planificación sin detenciones (secuencia 0,1,0,2)]]
 - 🧪 [[memoria/conocimiento/recetas/funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si|Funcionamiento y límites de la segmentación (pipelining) en SISD]]
+- 🧪 [[memoria/conocimiento/recetas/optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula|Optimización ILP mediante desenrollado de 4 vías con acumuladores independientes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul|Optimización ILP mediante desenrollado de bucle con 4 acumuladores independientes]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-vliw-de-bucle-con-latencias-dadas-examen-ac-en|Planificación VLIW de bucle con latencias dadas (examen AC enero 2018)]]
 - 🧪 [[memoria/conocimiento/recetas/planificacion-vliw-para-bucle-con-latencias-mem-2-add-d-1-mu|Planificación VLIW para bucle con latencias MEM=2, ADD.D=1, MUL.D=2 (4 ops/ciclo)]]
@@ -34,6 +35,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-bloque-basico-en-paralelismo-a-nivel-de-instru|Definición de bloque básico en paralelismo a nivel de instrucción (pregunta 6)]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-procesador-vliw|Definición de procesador VLIW]]
 - 💡 [[memoria/conocimiento/conceptos/definicion-y-objetivo-de-la-planificacion-de-trazas-trace-sc|Definición y objetivo de la planificación de trazas (trace scheduling)]]
+- 💡 [[memoria/conocimiento/conceptos/dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe|Dependencia RAW en acumulación secuencial limita ILP en pipeline]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/dependencias-en-el-bucle-de-ejemplo-vliw-examen-ac-2018|Dependencias en el bucle de ejemplo VLIW (examen AC 2018)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac|Desenrollado de bucle (loop unrolling) 3× para VLIW y compactación]]
 - 💡 [[memoria/conocimiento/conceptos/desenrollamiento-de-bucles-loop-unrolling-permite-planificar|Desenrollamiento de bucles (loop unrolling) permite planificar instrucciones de distintas iteraciones]] · ⚠️ propuesto
@@ -53,6 +55,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 - 💡 [[memoria/conocimiento/conceptos/proposito-de-la-segmentacion-software-software-pipelining-te|Propósito de la segmentación software (software pipelining) (test AC Q8)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/que-busca-conseguir-la-segmentacion-software-software-pipeli|Qué busca conseguir la segmentación software (software pipelining) en el código del bucle]]
 - 💡 [[memoria/conocimiento/conceptos/que-es-un-bloque-basico-basic-block-en-ilp|Qué es un bloque básico (basic block) en ILP]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/reduccion-final-de-acumuladores-parciales-tras-desenrollado|Reducción final de acumuladores parciales tras desenrollado]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/relacion-ilp-y-cpi-en-procesadores-segmentados|Relación ILP y CPI en procesadores segmentados]]
 - 💡 [[memoria/conocimiento/conceptos/romper-cadena-de-dependencias-para-exponer-ilp-en-pipeline-s|Romper cadena de dependencias para exponer ILP en pipeline superscalar]]
 - 💡 [[memoria/conocimiento/conceptos/segmentacion-software-software-pipelining-en-bucles-sin-depe|Segmentación software (software pipelining) en bucles sin dependencias]]
@@ -72,4 +75,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ilp» (este archivo se ge
 
 ## Temas relacionados
 
-[[ac]] · [[vliw]] · [[planificacion]] · [[pipeline]] · [[bucles]] · [[planificacion-estatica]] · [[optimizacion]] · [[dependencias]] · [[superescalar]] · [[tomasulo]] · [[loop unrolling]] · [[compilador]]
+[[ac]] · [[vliw]] · [[pipeline]] · [[planificacion]] · [[optimizacion]] · [[bucles]] · [[planificacion-estatica]] · [[dependencias]] · [[loop unrolling]] · [[superescalar]] · [[tomasulo]] · [[compilador]]

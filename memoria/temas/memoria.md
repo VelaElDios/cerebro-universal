@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria"
-notas: 59
+notas: 68
 ---
 # memoria
 
@@ -20,12 +20,15 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final antes de marcar TERMINADO (PDF página a página + script verde)]]
 - 🧪 [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg|Contenido de los anexos por sprint en la memoria TFG]]
 - 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-configurar-lstopo-para-obtener-tamanos-de-cache-reales|Cómo configurar lstopo para obtener tamaños de caché reales antes de la práctica]]
+- 🧪 [[memoria/conocimiento/recetas/como-graficar-latencia-vs-working-set-para-analizar-jerarqui|Cómo graficar latencia vs working set para analizar jerarquía de memoria]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm|Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/como-transformar-std-list-a-std-vector-con-reserva-previa-pa|Cómo transformar std::list a std::vector con reserva previa para mejorar localidad de caché]]
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-cod|Formato de tablas: alineación superior, ancho controlado y código con path/texttt+allowbreak]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
+- 🧪 [[memoria/conocimiento/recetas/optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl|Optimizar std::list a std::vector con reserva y fusión de bucles (Tarea 3.1 AC)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle|Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)]] · ⚠️ propuesto
@@ -59,7 +62,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 - 💡 [[memoria/conocimiento/conceptos/anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg|Anexo de uso responsable de IA obligatorio en la memoria TFG]]
 - 💡 [[memoria/conocimiento/conceptos/capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf|Capítulo 2 (Antecedentes) marcado como no necesario en este TFG]]
+- 💡 [[memoria/conocimiento/conceptos/calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent|Cálculo teórico de reducción de líneas de caché en SoA frente a AoS]]
+- 💡 [[memoria/conocimiento/conceptos/fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante|Fase de warm-up para poblar TLB y evitar page faults durante medición]]
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
+- 💡 [[memoria/conocimiento/conceptos/overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica|Overhead de asignación por nodo en std::list vs reserva única en std::vector]]
 - 💡 [[memoria/conocimiento/conceptos/parametros-del-experimento-tamano-de-datos-bloque-y-repetici|Parámetros del experimento: tamaño de datos, bloque y repeticiones]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/patron-aleatorio-peor-caso-con-permutacion-fija-de-indices-s|Patrón aleatorio: peor caso con permutación fija de índices (semilla 42)]]
 - 💡 [[memoria/conocimiento/conceptos/patron-secuencial-localidad-espacial-y-prefetcher-hardware|Patrón secuencial: localidad espacial y prefetcher hardware]] · ⚠️ propuesto
@@ -67,6 +73,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - 💡 [[memoria/conocimiento/conceptos/pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector|Pointer chasing en std::list vs acceso contiguo en std::vector]]
 - 💡 [[memoria/conocimiento/conceptos/problema-de-desambiguacion-de-memoria-memory-disambiguation|Problema de desambiguación de memoria (memory disambiguation)]]
 - 💡 [[memoria/conocimiento/conceptos/sistema-smp-uma-usa-memoria-compartida|Sistema SMP/UMA usa memoria compartida]]
+- 💡 [[memoria/conocimiento/conceptos/tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de|Tres patrones de acceso a memoria para evaluar localidad de datos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/tecnica-pointer-chasing-para-medir-latencia-real-de-memoria|Técnica pointer chasing para medir latencia real de memoria]]
 
 ## Datos
 
@@ -75,6 +83,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]]
 - 📊 [[memoria/conocimiento/datos/tamano-del-vector-y-bloque-en-bytes-y-lineas-de-cache|Tamaño del vector y bloque en bytes y líneas de caché]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac|Tamaños de caché y latencias de ejemplo en el script de práctica AC]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 
@@ -89,4 +98,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[ac]] · [[figuras]] · [[diagramas]] · [[tablas]] · [[tikz]] · [[verificacion]] · [[plantilla]] · [[scrum]] · [[grada-colchonera]] · [[cache]]
+[[tfg]] · [[latex]] · [[ac]] · [[figuras]] · [[cache]] · [[diagramas]] · [[tablas]] · [[tikz]] · [[verificacion]] · [[plantilla]] · [[cpp]] · [[scrum]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "arquitectura"
-notas: 75
+notas: 76
 ---
 # arquitectura
 
@@ -61,6 +61,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «arquitectura» (este arch
 - 💡 [[memoria/conocimiento/conceptos/idea-central-de-tomasulo-control-distribuido-con-estaciones|Idea central de Tomasulo: control distribuido con estaciones de reserva]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mecanismo-cooperacion-hardware-software-sin-distincion-instr|Mecanismo cooperación hardware/software sin distinción instrucciones especulativas]]
 - 💡 [[memoria/conocimiento/conceptos/mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt|Mecanismos de recuperación ante fallos de predicción de saltos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid|Modelo Roofline: regiones memory-bound vs compute-bound y ridge point]]
 - 💡 [[memoria/conocimiento/conceptos/multicomputadores-sistemas-de-memoria-distribuida-varios-esp|Multicomputadores = sistemas de memoria distribuida, varios espacios de direcciones, sin coherencia hardware]]
 - 💡 [[memoria/conocimiento/conceptos/multiples-caminos-como-tecnica-de-prediccion-de-saltos|Múltiples caminos como técnica de predicción de saltos]]
 - 💡 [[memoria/conocimiento/conceptos/parametros-del-experimento-tamano-de-datos-bloque-y-repetici|Parámetros del experimento: tamaño de datos, bloque y repeticiones]] · ⚠️ propuesto

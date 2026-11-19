@@ -19,4 +19,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tradeoffs» (este archivo
 
 ## Temas relacionados
 
-[[ac]] · [[planificacion-estatica]] · [[loop-unrolling]] · [[diseno-datos]] · [[arquitectura-computadores]] · [[planificacion-dinamica]]
+[[ac]] · [[planificacion-estatica]] · [[loop-unrolling]] · [[diseno-datos]] · [[aos-soa]] · [[arquitectura-computadores]] · [[planificacion-dinamica]]

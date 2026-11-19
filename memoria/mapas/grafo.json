@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T03:00:34+01:00",
+ "generado": "2026-11-19T03:26:53+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -777,6 +777,20 @@
    "ruta": "memoria/conocimiento/conceptos/antidependencia-war-y-dependencia-de-salida-waw-definiciones.md"
   },
   {
+   "id": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos",
+   "tipo": "concepto",
+   "titulo": "AoS vs SoA: desperdicio de ancho de banda en caché por campos no usados",
+   "temas": [
+    "ac",
+    "aos-soa",
+    "cache",
+    "optimizacion-memoria"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos.md"
+  },
+  {
    "id": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache",
    "tipo": "concepto",
    "titulo": "AoS vs SoA: desperdicio de ancho de banda en caché",
@@ -1331,6 +1345,20 @@
    "ruta": "memoria/conocimiento/conceptos/calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do.md"
   },
   {
+   "id": "concepto:calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent",
+   "tipo": "concepto",
+   "titulo": "Cálculo teórico de reducción de líneas de caché en SoA frente a AoS",
+   "temas": [
+    "ac",
+    "analisis-rendimiento",
+    "cache",
+    "memoria"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent.md"
+  },
+  {
    "id": "concepto:calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults",
    "tipo": "concepto",
    "titulo": "Calentamiento (warm-up) para poblar TLB y evitar page faults",
@@ -1545,6 +1573,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/clasificacion-de-tipos-de-computadores-segun-requisitos-de-d.md"
+  },
+  {
+   "id": "concepto:clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
+   "tipo": "concepto",
+   "titulo": "Clasificación memory-bound vs compute-bound en el modelo Roofline",
+   "temas": [
+    "ac",
+    "rendimiento",
+    "roofline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo.md"
   },
   {
    "id": "concepto:cluster-de-estaciones-de-trabajo-nodos-autonomos-interconect",
@@ -1980,7 +2021,8 @@
    "temas": [
     "ac",
     "diseno-datos",
-    "tradeoffs"
+    "tradeoffs",
+    "aos-soa"
    ],
    "proyectos": [],
    "confianza": "verificado",
@@ -2681,6 +2723,20 @@
    "ruta": "memoria/conocimiento/conceptos/dependencia-entre-s-d-y-daddui-en-bucle-es-por-r1-entre-iter.md"
   },
   {
+   "id": "concepto:dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "tipo": "concepto",
+   "titulo": "Dependencia RAW en acumulación secuencial limita ILP en pipeline",
+   "temas": [
+    "ac",
+    "dependencias",
+    "ilp",
+    "pipeline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe.md"
+  },
+  {
    "id": "concepto:dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien",
    "tipo": "concepto",
    "titulo": "Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)",
@@ -2836,6 +2892,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v.md"
+  },
+  {
+   "id": "concepto:derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "tipo": "concepto",
+   "titulo": "Derivación de FLOPSperCYCLE = 32 para x86 con AVX2 y FMA",
+   "temas": [
+    "ac",
+    "avx2",
+    "fma",
+    "isa",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma.md"
   },
   {
    "id": "concepto:desenrollado-de-bucle-loop-unrolling-3-para-vliw-y-compactac",
@@ -3201,6 +3272,19 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura.md"
+  },
+  {
+   "id": "concepto:efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona",
+   "tipo": "concepto",
+   "titulo": "Efecto del orden de datos en predicción de saltos condicionales",
+   "temas": [
+    "ac",
+    "pipeline",
+    "prediccion-saltos"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona.md"
   },
   {
    "id": "concepto:efectos-de-la-especulacion-en-flujo-de-datos-ilp-y-excepcion",
@@ -3819,6 +3903,21 @@
    "ruta": "memoria/conocimiento/conceptos/excepcion-terminante-en-instruccion-especulativa-se-pospone.md"
   },
   {
+   "id": "concepto:fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante",
+   "tipo": "concepto",
+   "titulo": "Fase de warm-up para poblar TLB y evitar page faults durante medición",
+   "temas": [
+    "ac",
+    "memoria",
+    "page-fault",
+    "tlb",
+    "warmup"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante.md"
+  },
+  {
    "id": "concepto:fases-del-sprint-2-y-prs-asociados",
    "tipo": "concepto",
    "titulo": "Fases del Sprint 2 y PRs asociados",
@@ -3989,6 +4088,20 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es.md"
+  },
+  {
+   "id": "concepto:fusion-de-bucles-loop-fusion-para-localidad-temporal",
+   "tipo": "concepto",
+   "titulo": "Fusión de bucles (loop fusion) para localidad temporal",
+   "temas": [
+    "ac",
+    "cache",
+    "loop-transformation",
+    "optimizacion"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/fusion-de-bucles-loop-fusion-para-localidad-temporal.md"
   },
   {
    "id": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
@@ -4932,6 +5045,20 @@
    "ruta": "memoria/conocimiento/conceptos/metricas-de-rendimiento-latencia-vs-throughput-ancho-de-band.md"
   },
   {
+   "id": "concepto:metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "tipo": "concepto",
+   "titulo": "Métricas hardware clave para comparar patrones de acceso",
+   "temas": [
+    "ac",
+    "cache",
+    "perf",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/metricas-hardware-clave-para-comparar-patrones-de-acceso.md"
+  },
+  {
    "id": "concepto:mips64-usa-caches-separadas-para-instrucciones-y-datos-harva",
    "tipo": "concepto",
    "titulo": "MIPS64 usa cachés separadas para instrucciones y datos (Harvard modificada)",
@@ -4957,6 +5084,20 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/modelo-de-programacion-simt-en-gpgpu.md"
+  },
+  {
+   "id": "concepto:modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "tipo": "concepto",
+   "titulo": "Modelo Roofline: regiones memory-bound vs compute-bound y ridge point",
+   "temas": [
+    "ac",
+    "arquitectura",
+    "rendimiento",
+    "roofline"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid.md"
   },
   {
    "id": "concepto:modulos-del-backend-y-sus-responsabilidades",
@@ -5171,6 +5312,20 @@
    "ruta": "memoria/conocimiento/conceptos/orden-de-emision-issue-en-scoreboard-orden-de-programa.md"
   },
   {
+   "id": "concepto:overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "tipo": "concepto",
+   "titulo": "Overhead de asignación por nodo en std::list vs reserva única en std::vector",
+   "temas": [
+    "ac",
+    "allocator",
+    "cpp",
+    "memoria"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica.md"
+  },
+  {
    "id": "concepto:paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza",
    "tipo": "concepto",
    "titulo": "Paradoja MIPS vs tiempo de ejecución: mayor MIPS no garantiza menor tiempo",
@@ -5349,6 +5504,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup.md"
+  },
+  {
+   "id": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "tipo": "concepto",
+   "titulo": "Penalización de fallo de predicción de salto en pipeline",
+   "temas": [
+    "ac",
+    "pipeline",
+    "prediccion-saltos"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline.md"
   },
   {
    "id": "concepto:penalizacion-de-prediccion-estatica-siempre-no-tomado-con-di",
@@ -5678,7 +5846,8 @@
     "cache",
     "memoria",
     "punteros",
-    "estructuras-datos"
+    "estructuras-datos",
+    "cpp"
    ],
    "proyectos": [],
    "confianza": "verificado",
@@ -5995,6 +6164,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/predictores-n-bits-y-optimalidad-de-n-2-en-la-practica.md"
+  },
+  {
+   "id": "concepto:prevencion-de-dead-code-elimination-dce-forzando-uso-del-res",
+   "tipo": "concepto",
+   "titulo": "Prevención de Dead Code Elimination (DCE) forzando uso del resultado",
+   "temas": [
+    "ac",
+    "compilador",
+    "dce",
+    "dead-code-elimination",
+    "optimizacion"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/prevencion-de-dead-code-elimination-dce-forzando-uso-del-res.md"
   },
   {
    "id": "concepto:problema-de-desambiguacion-de-memoria-memory-disambiguation",
@@ -6488,6 +6672,20 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/recuperacion-de-fallos-de-prediccion-con-registros-temporale.md"
+  },
+  {
+   "id": "concepto:reduccion-final-de-acumuladores-parciales-tras-desenrollado",
+   "tipo": "concepto",
+   "titulo": "Reducción final de acumuladores parciales tras desenrollado",
+   "temas": [
+    "ac",
+    "ilp",
+    "loop unrolling",
+    "reduction"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/reduccion-final-de-acumuladores-parciales-tras-desenrollado.md"
   },
   {
    "id": "concepto:registro-de-estado-de-resultados-result-register-status-en-e",
@@ -7598,7 +7796,9 @@
    "temas": [
     "ac",
     "arquitectura-computadores",
-    "benchmark"
+    "benchmark",
+    "memoria",
+    "rendimiento"
    ],
    "proyectos": [],
    "confianza": "verificado",
@@ -7815,6 +8015,19 @@
    "ruta": "memoria/conocimiento/conceptos/trace-scheduling-traza-secuencia-mas-probable-de-bloques-bas.md"
   },
   {
+   "id": "concepto:trade-offs-de-programacion-branchless-vs-condicional",
+   "tipo": "concepto",
+   "titulo": "Trade-offs de programación branchless vs condicional",
+   "temas": [
+    "ac",
+    "pipeline",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/trade-offs-de-programacion-branchless-vs-condicional.md"
+  },
+  {
    "id": "concepto:transformacion-por-software-pipelining-daddui-mantiene-signo",
    "tipo": "concepto",
    "titulo": "Transformación por software pipelining: DADDUI mantiene signo de incremento",
@@ -7917,6 +8130,20 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t.md"
+  },
+  {
+   "id": "concepto:tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "tipo": "concepto",
+   "titulo": "Tres patrones de acceso a memoria para evaluar localidad de datos",
+   "temas": [
+    "ac",
+    "cache",
+    "localidad",
+    "memoria"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de.md"
   },
   {
    "id": "concepto:tres-tipos-de-dependencias-en-codigo-datos-nombre-y-control",
@@ -8041,6 +8268,19 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/ventana-de-instrucciones-en-superscalar-instrucciones-decodi.md"
+  },
+  {
+   "id": "concepto:visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y",
+   "tipo": "concepto",
+   "titulo": "Visualización de jerarquía de memoria con regiones axvspan y escalas logarítmicas",
+   "temas": [
+    "ac",
+    "rendimiento",
+    "visualización"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y.md"
   },
   {
    "id": "concepto:vliw-el-compilador-empaqueta-varias-operaciones-en-una-instr",
@@ -8622,6 +8862,19 @@
    "ruta": "memoria/conocimiento/datos/comparativa-historica-data-star-trek-60-tflops-vs-top500-219.md"
   },
   {
+   "id": "dato:compilacion-y-ejecucion-de-referencia-para-tarea-3-1",
+   "tipo": "dato",
+   "titulo": "Compilación y ejecución de referencia para Tarea 3.1",
+   "temas": [
+    "ac",
+    "build",
+    "g++"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/datos/compilacion-y-ejecucion-de-referencia-para-tarea-3-1.md"
+  },
+  {
    "id": "dato:comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips",
    "tipo": "dato",
    "titulo": "Comportamiento real de saltos B1 (BEQZ) y B2 (BEQ) en bucle MIPS64 que recorre secuencia 0,1,0,2,0,3,0,4,0,5",
@@ -8676,6 +8929,18 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/configuracion-de-recursos-en-ejercicio-tomasulo-ej-14-y-scor.md"
+  },
+  {
+   "id": "dato:configuracion-del-benchmark-32768-elementos-1000-repeticione",
+   "tipo": "dato",
+   "titulo": "Configuración del benchmark: 32768 elementos, 1000 repeticiones, valores 0-255",
+   "temas": [
+    "ac",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/datos/configuracion-del-benchmark-32768-elementos-1000-repeticione.md"
   },
   {
    "id": "dato:configuracion-del-procesador-para-el-ejercicio-de-desenrolla",
@@ -9960,6 +10225,20 @@
    "ruta": "memoria/conocimiento/datos/parametros-de-ejemplo-del-script-cpu-4-9-ghz-ddr4-26-143-gb.md"
   },
   {
+   "id": "dato:parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1",
+   "tipo": "dato",
+   "titulo": "Parámetros de ejemplo para Roofline: CPU 4.9 GHz, BW DRAM 26.143 GB/s, AVX2/FMA = 32 FLOPS/ciclo",
+   "temas": [
+    "ac",
+    "benchmark",
+    "hardware",
+    "roofline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1.md"
+  },
+  {
    "id": "dato:parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult",
    "tipo": "dato",
    "titulo": "Parámetros de pipeline RISC-V FP para ejercicios Tema 2 (multiplicador 3 ciclos, divisor 4/6 ciclos)",
@@ -10085,6 +10364,20 @@
    "ruta": "memoria/conocimiento/datos/parametros-de-unidades-funcionales-y-buffers-en-examen-ac-ju.md"
   },
   {
+   "id": "dato:parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b",
+   "tipo": "dato",
+   "titulo": "Parámetros del benchmark AoS/SoA: N=60M, ITER=4, cache line=64B",
+   "temas": [
+    "ac",
+    "benchmark",
+    "cache",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b.md"
+  },
+  {
    "id": "dato:parametros-del-experimento-lista-vs-vector-n-20m-media-50-0f",
    "tipo": "dato",
    "titulo": "Parámetros del experimento lista vs vector: N=20M, media=50.0f, semilla=123",
@@ -10126,6 +10419,47 @@
    "ruta": "memoria/conocimiento/datos/parametros-del-procesador-superescalar-en-problema-de-planif.md"
   },
   {
+   "id": "dato:parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector",
+   "tipo": "dato",
+   "titulo": "Parámetros fijos de la práctica ILP: N=100M elementos, vector de 1.0f, múltiplo de 4",
+   "temas": [
+    "ac",
+    "datos",
+    "parametros",
+    "verificacion"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/datos/parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector.md"
+  },
+  {
+   "id": "dato:parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill",
+   "tipo": "dato",
+   "titulo": "Parámetros fijos de la Tarea 3.1 (N, media, distribución, semilla)",
+   "temas": [
+    "ac",
+    "datos",
+    "parametros"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/datos/parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill.md"
+  },
+  {
+   "id": "dato:parametros-fijos-del-benchmark-rangos-y-conteos",
+   "tipo": "dato",
+   "titulo": "Parámetros fijos del benchmark: rangos y conteos",
+   "temas": [
+    "ac",
+    "benchmark",
+    "parametros",
+    "working-set"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/parametros-fijos-del-benchmark-rangos-y-conteos.md"
+  },
+  {
    "id": "dato:parametros-fijos-del-benchmark-semilla-accesos-formato-salid",
    "tipo": "dato",
    "titulo": "Parámetros fijos del benchmark: semilla, accesos, formato salida",
@@ -10138,6 +10472,19 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/parametros-fijos-del-benchmark-semilla-accesos-formato-salid.md"
+  },
+  {
+   "id": "dato:parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe",
+   "tipo": "dato",
+   "titulo": "Parámetros fijos del benchmark: tamaño de array, bloque y repeticiones",
+   "temas": [
+    "ac",
+    "benchmark",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe.md"
   },
   {
    "id": "dato:parametros-fijos-del-experimento-20-millones-de-lecturas-n-m",
@@ -11026,6 +11373,19 @@
    "ruta": "memoria/conocimiento/datos/tamanos-de-cache-de-ejemplo-y-latencias-medidas-en-el-script.md"
   },
   {
+   "id": "dato:tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac",
+   "tipo": "dato",
+   "titulo": "Tamaños de caché y latencias de ejemplo en el script de práctica AC",
+   "temas": [
+    "ac",
+    "memoria",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac.md"
+  },
+  {
    "id": "dato:tasa-de-aciertos-de-predictor-1-bit-inicializado-a-0-con-sal",
    "tipo": "dato",
    "titulo": "Tasa de aciertos de predictor 1-bit inicializado a 0 con salto siempre tomado ejecutado 100 veces",
@@ -11117,6 +11477,20 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/valores-concretos-de-x1-y-direcciones-de-memoria-en-la-simul.md"
+  },
+  {
+   "id": "dato:valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat",
+   "tipo": "dato",
+   "titulo": "Valores de ejemplo de intensidad y rendimiento para tres patrones de acceso (temporal, secuencial, aleatorio)",
+   "temas": [
+    "ac",
+    "mediciones",
+    "practica",
+    "roofline"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/datos/valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat.md"
   },
   {
    "id": "dato:valores-de-ejemplo-para-cpu-del-laboratorio-frecuencia-bw-pu",
@@ -11275,6 +11649,19 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1.md"
+  },
+  {
+   "id": "decision:atributos-gcc-para-forzar-salto-real-y-desactivar-optimizaci",
+   "tipo": "decision",
+   "titulo": "Atributos GCC para forzar salto real y desactivar optimizaciones vectoriales",
+   "temas": [
+    "ac",
+    "pipeline",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/atributos-gcc-para-forzar-salto-real-y-desactivar-optimizaci.md"
   },
   {
    "id": "decision:bloqueo-de-fadd-d-por-peligro-waw-en-registro-f6-hasta-ciclo",
@@ -12438,6 +12825,20 @@
    "ruta": "memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4.md"
   },
   {
+   "id": "decision:usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores",
+   "tipo": "decision",
+   "titulo": "Usar índice size_t en bucle fusionado en lugar de iteradores",
+   "temas": [
+    "ac",
+    "cpp",
+    "estilo",
+    "optimizacion"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores.md"
+  },
+  {
    "id": "decision:uso-de-ciclo-8a-8b-mitades-de-ciclo-para-modelar-escritura-y",
    "tipo": "decision",
    "titulo": "Uso de «ciclo 8a / 8b» (mitades de ciclo) para modelar escritura y emisión en mismo ciclo",
@@ -12478,6 +12879,33 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/uso-de-double-en-lugar-de-float-para-acumulacion-en-experime.md"
+  },
+  {
+   "id": "decision:uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en",
+   "tipo": "decision",
+   "titulo": "Uso de flag -O1 para evitar auto-unrolling del compilador en prácticas ILP",
+   "temas": [
+    "ac",
+    "compilacion",
+    "metodologia",
+    "optimizacion"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en.md"
+  },
+  {
+   "id": "decision:uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz",
+   "tipo": "decision",
+   "titulo": "Uso de int64_t y vector inicializado a 1 para evitar optimizaciones muertas",
+   "temas": [
+    "ac",
+    "compilacion",
+    "optimizacion"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz.md"
   },
   {
    "id": "decision:uso-de-la-ley-de-amdahl-para-dimensionar-requisitos-de-uso-d",
@@ -12521,6 +12949,19 @@
    "ruta": "memoria/conocimiento/decisiones/uso-de-semilla-fija-42-en-mt19937-para-reproducibilidad-del.md"
   },
   {
+   "id": "decision:uso-de-step-plot-post-para-representar-latencia-constante-en",
+   "tipo": "decision",
+   "titulo": "Uso de step plot 'post' para representar latencia constante entre puntos medidos",
+   "temas": [
+    "ac",
+    "análisis de datos",
+    "visualización"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/uso-de-step-plot-post-para-representar-latencia-constante-en.md"
+  },
+  {
    "id": "decision:uso-de-step-plot-post-superpuesto-a-linea-continua-para-most",
    "tipo": "decision",
    "titulo": "Uso de step plot 'post' superpuesto a línea continua para mostrar discontinuidad",
@@ -12534,6 +12975,35 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/uso-de-step-plot-post-superpuesto-a-linea-continua-para-most.md"
+  },
+  {
+   "id": "decision:uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari",
+   "tipo": "decision",
+   "titulo": "Uso de taskset -c 0 para fijar afinidad de CPU y reducir variabilidad",
+   "temas": [
+    "ac",
+    "benchmark",
+    "cpu-affinity",
+    "taskset",
+    "variabilidad"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari.md"
+  },
+  {
+   "id": "decision:uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato",
+   "tipo": "decision",
+   "titulo": "Uso de TODO1 y TODO2 como puntos de personalización obligatorios para el alumno",
+   "temas": [
+    "ac",
+    "metodologia",
+    "practica",
+    "roofline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato.md"
   },
   {
    "id": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
@@ -12606,6 +13076,105 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/fuentes/fuente-bibliografia-extra.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab3.zip!tarea1 2 mem latency (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea1-2-mem-latency-practicas.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab3.zip!tarea1 2 pintarLatvsMem (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab3.zip!tarea1 3 pintarRoofLin (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab3-zip-tarea2-1-patrones-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab3.zip!tarea2 1 patrones (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea2-1-patrones-practicas.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab3.zip!tarea2 1 pintarRoofLin conPunto (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab4.zip!tarea3 1 lista (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab4-zip-tarea3-1-lista-practicas.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab4-zip-tarea3-2-aos-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab4.zip!tarea3 2 aos (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab4-zip-tarea3-2-aos-practicas.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab4-zip-tarea4-1-ilp-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab4.zip!tarea4 1 ilp (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab4-zip-tarea4-1-ilp-practicas.md"
+  },
+  {
+   "id": "fuente:fuente-code-lab4-zip-tarea4-2-branchless-practicas",
+   "tipo": "fuente",
+   "titulo": "Code Lab4.zip!tarea4 2 branchless (Practicas)",
+   "temas": [
+    "ac"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/fuentes/fuente-code-lab4-zip-tarea4-2-branchless-practicas.md"
   },
   {
    "id": "fuente:fuente-contributing",
@@ -13925,6 +14494,21 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/benchmarking-comparativo-con-hyperfine-warmup-y-comillas.md"
+  },
+  {
+   "id": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "tipo": "receta",
+   "titulo": "Benchmarking con hyperfine y perf para comparar versiones lista vs vector",
+   "temas": [
+    "ac",
+    "benchmarking",
+    "hyperfine",
+    "perf",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li.md"
   },
   {
    "id": "receta:benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst",
@@ -15430,6 +16014,35 @@
    "ruta": "memoria/conocimiento/recetas/como-calcular-el-factor-de-mejora-necesario-k-para-un-speedu.md"
   },
   {
+   "id": "receta:como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
+   "tipo": "receta",
+   "titulo": "Cómo calcular el techo de cómputo (GFLOPS máx) y el punto de inflexión del modelo Roofline",
+   "temas": [
+    "ac",
+    "avx2",
+    "rendimiento",
+    "roofline"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i.md"
+  },
+  {
+   "id": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "tipo": "receta",
+   "titulo": "Cómo calcular el techo de cómputo (peak GFLOPS) para AVX2/FMA en x86",
+   "temas": [
+    "ac",
+    "avx2",
+    "fma",
+    "rendimiento",
+    "roofline"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma.md"
+  },
+  {
    "id": "receta:como-calcular-factor-de-mejora-necesario-segun-ley-de-amdahl",
    "tipo": "receta",
    "titulo": "Cómo calcular factor de mejora necesario según Ley de Amdahl",
@@ -15643,7 +16256,9 @@
     "ac",
     "benchmarking",
     "cpp",
-    "perf"
+    "perf",
+    "profiling",
+    "rendimiento"
    ],
    "proyectos": [],
    "confianza": "verificado",
@@ -15662,6 +16277,19 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-compilar-y-medir-lista-vs-vector-con-g-o2-hyperfine-y-p.md"
+  },
+  {
+   "id": "receta:como-configurar-lstopo-para-obtener-tamanos-de-cache-reales",
+   "tipo": "receta",
+   "titulo": "Cómo configurar lstopo para obtener tamaños de caché reales antes de la práctica",
+   "temas": [
+    "ac",
+    "herramientas",
+    "memoria"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-configurar-lstopo-para-obtener-tamanos-de-cache-reales.md"
   },
   {
    "id": "receta:como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica",
@@ -15996,6 +16624,20 @@
    "ruta": "memoria/conocimiento/recetas/como-graficar-latencia-vs-working-set-con-jerarquia-de-cache.md"
   },
   {
+   "id": "receta:como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "tipo": "receta",
+   "titulo": "Cómo graficar latencia vs working set para analizar jerarquía de memoria",
+   "temas": [
+    "ac",
+    "memoria",
+    "pipeline",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-graficar-latencia-vs-working-set-para-analizar-jerarqui.md"
+  },
+  {
    "id": "receta:como-guardar-el-grafico-roofline-como-archivo-png-en-lugar-d",
    "tipo": "receta",
    "titulo": "Cómo guardar el gráfico Roofline como archivo PNG en lugar de mostrarlo",
@@ -16200,6 +16842,21 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset.md"
+  },
+  {
+   "id": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "tipo": "receta",
+   "titulo": "Cómo obtener los parámetros de hardware para el modelo Roofline en Linux",
+   "temas": [
+    "ac",
+    "benchmark",
+    "hardware",
+    "linux",
+    "roofline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-obtener-los-parametros-de-hardware-para-el-modelo-roofl.md"
   },
   {
    "id": "receta:como-obtener-los-parametros-reales-de-tu-maquina-para-el-roo",
@@ -16478,6 +17135,21 @@
    "ruta": "memoria/conocimiento/recetas/como-transformar-std-list-a-std-vector-con-reserva-previa-pa.md"
   },
   {
+   "id": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "tipo": "receta",
+   "titulo": "Cómo trazar el modelo Roofline clásico (techo DRAM + tope CPU) con matplotlib",
+   "temas": [
+    "ac",
+    "matplotlib",
+    "rendimiento",
+    "roofline",
+    "visualización"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c.md"
+  },
+  {
    "id": "receta:como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log",
    "tipo": "receta",
    "titulo": "Cómo trazar el modelo Roofline con matplotlib en escala log-log",
@@ -16490,6 +17162,20 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log.md"
+  },
+  {
+   "id": "receta:como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log",
+   "tipo": "receta",
+   "titulo": "Cómo trazar el modelo Roofline con matplotlib (escala log-log, zonas coloreadas, puntos anotados)",
+   "temas": [
+    "ac",
+    "matplotlib",
+    "roofline",
+    "visualizacion"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log.md"
   },
   {
    "id": "receta:comparacion-de-dos-implementaciones-de-la-misma-isa-cpi-y-fr",
@@ -16736,6 +17422,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/construccion-de-permutacion-aleatoria-en-ciclo-para-pointer.md"
+  },
+  {
+   "id": "receta:construccion-del-array-de-pointer-chasing-con-permutacion-ci",
+   "tipo": "receta",
+   "titulo": "Construcción del array de pointer chasing con permutación cíclica aleatoria",
+   "temas": [
+    "ac",
+    "benchmark",
+    "permutacion",
+    "pointer-chasing",
+    "vector"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/construccion-del-array-de-pointer-chasing-con-permutacion-ci.md"
   },
   {
    "id": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
@@ -17985,6 +18686,19 @@
    "ruta": "memoria/conocimiento/recetas/funcionamiento-y-limites-de-la-segmentacion-pipelining-en-si.md"
   },
   {
+   "id": "receta:generacion-de-permutacion-aleatoria-reproducible-para-acceso",
+   "tipo": "receta",
+   "titulo": "Generación de permutación aleatoria reproducible para acceso aleatorio",
+   "temas": [
+    "ac",
+    "aleatoriedad",
+    "profiling"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/generacion-de-permutacion-aleatoria-reproducible-para-acceso.md"
+  },
+  {
    "id": "receta:generacion-de-terreno-por-ruidos-terreno-js",
    "tipo": "receta",
    "titulo": "Generación de terreno por ruidos (terreno.js)",
@@ -18092,6 +18806,19 @@
    "proyectos": [],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/igualar-rendimiento-de-dos-maquinas-ajustando-frecuencia-de.md"
+  },
+  {
+   "id": "receta:implementacion-branchless-de-suma-condicional-con-multiplica",
+   "tipo": "receta",
+   "titulo": "Implementación branchless de suma condicional con multiplicación",
+   "temas": [
+    "ac",
+    "pipeline",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/implementacion-branchless-de-suma-condicional-con-multiplica.md"
   },
   {
    "id": "receta:implementacion-predictor-correlacionado-m-n-con-bhr-y-bht",
@@ -18289,6 +19016,36 @@
    "ruta": "memoria/conocimiento/recetas/medicion-de-latencia-con-50-millones-de-accesos-dependientes.md"
   },
   {
+   "id": "receta:medicion-de-latencia-con-cadena-de-dependencias-y-cronometro",
+   "tipo": "receta",
+   "titulo": "Medición de latencia con cadena de dependencias y cronómetro high-resolution",
+   "temas": [
+    "ac",
+    "benchmark",
+    "chrono",
+    "nanoseconds",
+    "steady_clock"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/medicion-de-latencia-con-cadena-de-dependencias-y-cronometro.md"
+  },
+  {
+   "id": "receta:medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a",
+   "tipo": "receta",
+   "titulo": "Medición de rendimiento con hyperfine y perf para comparar AoS vs SoA",
+   "temas": [
+    "ac",
+    "benchmark",
+    "hyperfine",
+    "linux",
+    "perf"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a.md"
+  },
+  {
    "id": "receta:mejora-de-prestaciones-speedup-al-usar-btb-frente-a-sin-btb",
    "tipo": "receta",
    "titulo": "Mejora de prestaciones (speedup) al usar BTB frente a sin BTB",
@@ -18329,6 +19086,21 @@
    "ruta": "memoria/conocimiento/recetas/metodo-para-calcular-speedup-de-bucle-desenrollado-y-planifi.md"
   },
   {
+   "id": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "tipo": "receta",
+   "titulo": "Metodología de benchmarking ILP con hyperfine y perf en práctica AC",
+   "temas": [
+    "ac",
+    "benchmarking",
+    "hyperfine",
+    "perf",
+    "rendimiento"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac.md"
+  },
+  {
    "id": "receta:metrica-operaciones-por-ciclo-opc-en-vliw",
    "tipo": "receta",
    "titulo": "Métrica operaciones por ciclo (OPC) en VLIW",
@@ -18363,6 +19135,20 @@
    "ruta": "memoria/conocimiento/recetas/musica-100-sintetizada-web-audio-con-fanfarrias-por-competic.md"
   },
   {
+   "id": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "tipo": "receta",
+   "titulo": "Optimización ILP mediante desenrollado de 4 vías con acumuladores independientes",
+   "temas": [
+    "ac",
+    "ilp",
+    "optimizacion",
+    "pipeline"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula.md"
+  },
+  {
    "id": "receta:optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul",
    "tipo": "receta",
    "titulo": "Optimización ILP mediante desenrollado de bucle con 4 acumuladores independientes",
@@ -18375,6 +19161,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul.md"
+  },
+  {
+   "id": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "tipo": "receta",
+   "titulo": "Optimizar std::list a std::vector con reserva y fusión de bucles (Tarea 3.1 AC)",
+   "temas": [
+    "ac",
+    "cache",
+    "cpp",
+    "memoria",
+    "optimizacion"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl.md"
   },
   {
    "id": "receta:parametros-de-simulacion-tomasulo-con-especulacion-del-exame",
@@ -20028,6 +20829,20 @@
    "ruta": "memoria/conocimiento/recetas/transformacion-aos-a-soa-para-optimizacion-de-cache-esquema.md"
   },
   {
+   "id": "receta:transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids",
+   "tipo": "receta",
+   "titulo": "Transformación de AoS a SoA para kernel de suma de IDs",
+   "temas": [
+    "ac",
+    "cpp",
+    "optimizacion-memoria",
+    "refactoring"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids.md"
+  },
+  {
    "id": "receta:transformar-aos-a-soa-en-el-laboratorio-ac-tarea-3-2",
    "tipo": "receta",
    "titulo": "Transformar AoS a SoA en el laboratorio AC (tarea 3.2)",
@@ -20180,7 +20995,7 @@
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 59,
+   "peso": 68,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -20243,7 +21058,7 @@
    "id": "tema:datos",
    "tipo": "tema",
    "titulo": "datos",
-   "peso": 5,
+   "peso": 7,
    "ruta": "memoria/temas/datos.md"
   },
   {
@@ -20285,7 +21100,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -20362,7 +21177,7 @@
    "id": "tema:ac",
    "tipo": "tema",
    "titulo": "ac",
-   "peso": 1148,
+   "peso": 1208,
    "ruta": "memoria/temas/ac.md"
   },
   {
@@ -20383,7 +21198,7 @@
    "id": "tema:prediccion-saltos",
    "tipo": "tema",
    "titulo": "prediccion-saltos",
-   "peso": 205,
+   "peso": 207,
    "ruta": "memoria/temas/prediccion-saltos.md"
   },
   {
@@ -20404,7 +21219,7 @@
    "id": "tema:pipeline",
    "tipo": "tema",
    "titulo": "pipeline",
-   "peso": 298,
+   "peso": 306,
    "ruta": "memoria/temas/pipeline.md"
   },
   {
@@ -20418,7 +21233,7 @@
    "id": "tema:arquitectura",
    "tipo": "tema",
    "titulo": "arquitectura",
-   "peso": 75,
+   "peso": 76,
    "ruta": "memoria/temas/arquitectura.md"
   },
   {
@@ -20439,14 +21254,14 @@
    "id": "tema:dependencias",
    "tipo": "tema",
    "titulo": "dependencias",
-   "peso": 67,
+   "peso": 68,
    "ruta": "memoria/temas/dependencias.md"
   },
   {
    "id": "tema:ilp",
    "tipo": "tema",
    "titulo": "ilp",
-   "peso": 51,
+   "peso": 54,
    "ruta": "memoria/temas/ilp.md"
   },
   {
@@ -20492,18 +21307,32 @@
    "ruta": "memoria/temas/riesgos.md"
   },
   {
-   "id": "tema:arquitectura-computadores",
+   "id": "tema:aos-soa",
    "tipo": "tema",
-   "titulo": "arquitectura-computadores",
-   "peso": 43,
-   "ruta": "memoria/temas/arquitectura-computadores.md"
+   "titulo": "aos-soa",
+   "peso": 2,
+   "ruta": "memoria/temas/aos-soa.md"
+  },
+  {
+   "id": "tema:cache",
+   "tipo": "tema",
+   "titulo": "cache",
+   "peso": 15,
+   "ruta": "memoria/temas/cache.md"
   },
   {
    "id": "tema:optimizacion-memoria",
    "tipo": "tema",
    "titulo": "optimizacion-memoria",
-   "peso": 2,
+   "peso": 4,
    "ruta": "memoria/temas/optimizacion-memoria.md"
+  },
+  {
+   "id": "tema:arquitectura-computadores",
+   "tipo": "tema",
+   "titulo": "arquitectura-computadores",
+   "peso": 43,
+   "ruta": "memoria/temas/arquitectura-computadores.md"
   },
   {
    "id": "tema:sus",
@@ -20852,14 +21681,14 @@
    "id": "tema:avx2",
    "tipo": "tema",
    "titulo": "avx2",
-   "peso": 2,
+   "peso": 5,
    "ruta": "memoria/temas/avx2.md"
   },
   {
    "id": "tema:fma",
    "tipo": "tema",
    "titulo": "fma",
-   "peso": 2,
+   "peso": 4,
    "ruta": "memoria/temas/fma.md"
   },
   {
@@ -20873,7 +21702,7 @@
    "id": "tema:hardware",
    "tipo": "tema",
    "titulo": "hardware",
-   "peso": 9,
+   "peso": 11,
    "ruta": "memoria/temas/hardware.md"
   },
   {
@@ -20894,7 +21723,7 @@
    "id": "tema:rendimiento",
    "tipo": "tema",
    "titulo": "rendimiento",
-   "peso": 123,
+   "peso": 143,
    "ruta": "memoria/temas/rendimiento.md"
   },
   {
@@ -20905,31 +21734,38 @@
    "ruta": "memoria/temas/ley-amdahl.md"
   },
   {
+   "id": "tema:analisis-rendimiento",
+   "tipo": "tema",
+   "titulo": "analisis-rendimiento",
+   "peso": 2,
+   "ruta": "memoria/temas/analisis-rendimiento.md"
+  },
+  {
    "id": "tema:benchmark",
    "tipo": "tema",
    "titulo": "benchmark",
-   "peso": 19,
+   "peso": 28,
    "ruta": "memoria/temas/benchmark.md"
   },
   {
    "id": "tema:page-fault",
    "tipo": "tema",
    "titulo": "page-fault",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/page-fault.md"
   },
   {
    "id": "tema:tlb",
    "tipo": "tema",
    "titulo": "tlb",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/tlb.md"
   },
   {
    "id": "tema:warmup",
    "tipo": "tema",
    "titulo": "warmup",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/warmup.md"
   },
   {
@@ -21094,6 +21930,13 @@
    "ruta": "memoria/temas/tipos-computadores.md"
   },
   {
+   "id": "tema:roofline",
+   "tipo": "tema",
+   "titulo": "roofline",
+   "peso": 30,
+   "ruta": "memoria/temas/roofline.md"
+  },
+  {
    "id": "tema:cluster",
    "tipo": "tema",
    "titulo": "cluster",
@@ -21125,7 +21968,7 @@
    "id": "tema:benchmarking",
    "tipo": "tema",
    "titulo": "benchmarking",
-   "peso": 13,
+   "peso": 15,
    "ruta": "memoria/temas/benchmarking.md"
   },
   {
@@ -21349,7 +22192,7 @@
    "id": "tema:optimizacion",
    "tipo": "tema",
    "titulo": "optimizacion",
-   "peso": 19,
+   "peso": 26,
    "ruta": "memoria/temas/optimizacion.md"
   },
   {
@@ -21577,10 +22420,17 @@
    "ruta": "memoria/temas/punto-flotante.md"
   },
   {
+   "id": "tema:isa",
+   "tipo": "tema",
+   "titulo": "isa",
+   "peso": 6,
+   "ruta": "memoria/temas/isa.md"
+  },
+  {
    "id": "tema:loop unrolling",
    "tipo": "tema",
    "titulo": "loop unrolling",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/loop unrolling.md"
   },
   {
@@ -21650,7 +22500,7 @@
    "id": "tema:compilador",
    "tipo": "tema",
    "titulo": "compilador",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/compilador.md"
   },
   {
@@ -21687,13 +22537,6 @@
    "titulo": "renombramiento-registros",
    "peso": 1,
    "ruta": "memoria/temas/renombramiento-registros.md"
-  },
-  {
-   "id": "tema:isa",
-   "tipo": "tema",
-   "titulo": "isa",
-   "peso": 5,
-   "ruta": "memoria/temas/isa.md"
   },
   {
    "id": "tema:microarquitectura",
@@ -21962,13 +22805,6 @@
    "ruta": "memoria/temas/modelo-rendimiento.md"
   },
   {
-   "id": "tema:roofline",
-   "tipo": "tema",
-   "titulo": "roofline",
-   "peso": 20,
-   "ruta": "memoria/temas/roofline.md"
-  },
-  {
    "id": "tema:formulas",
    "tipo": "tema",
    "titulo": "formulas",
@@ -21995,6 +22831,13 @@
    "titulo": "ejecucion-dinamica",
    "peso": 1,
    "ruta": "memoria/temas/ejecucion-dinamica.md"
+  },
+  {
+   "id": "tema:loop-transformation",
+   "tipo": "tema",
+   "titulo": "loop-transformation",
+   "peso": 1,
+   "ruta": "memoria/temas/loop-transformation.md"
   },
   {
    "id": "tema:procedural-generation",
@@ -22086,13 +22929,6 @@
    "titulo": "epics",
    "peso": 1,
    "ruta": "memoria/temas/epics.md"
-  },
-  {
-   "id": "tema:analisis-rendimiento",
-   "tipo": "tema",
-   "titulo": "analisis-rendimiento",
-   "peso": 1,
-   "ruta": "memoria/temas/analisis-rendimiento.md"
   },
   {
    "id": "tema:risc-v",
@@ -22291,11 +23127,11 @@
    "ruta": "memoria/temas/throughput.md"
   },
   {
-   "id": "tema:cache",
+   "id": "tema:perf",
    "tipo": "tema",
-   "titulo": "cache",
-   "peso": 8,
-   "ruta": "memoria/temas/cache.md"
+   "titulo": "perf",
+   "peso": 16,
+   "ruta": "memoria/temas/perf.md"
   },
   {
    "id": "tema:gpgpu",
@@ -22417,6 +23253,20 @@
    "ruta": "memoria/temas/programación.md"
   },
   {
+   "id": "tema:allocator",
+   "tipo": "tema",
+   "titulo": "allocator",
+   "peso": 1,
+   "ruta": "memoria/temas/allocator.md"
+  },
+  {
+   "id": "tema:cpp",
+   "tipo": "tema",
+   "titulo": "cpp",
+   "peso": 9,
+   "ruta": "memoria/temas/cpp.md"
+  },
+  {
    "id": "tema:tiempo-ejecucion",
    "tipo": "tema",
    "titulo": "tiempo-ejecucion",
@@ -22462,7 +23312,7 @@
    "id": "tema:localidad",
    "tipo": "tema",
    "titulo": "localidad",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/localidad.md"
   },
   {
@@ -22588,7 +23438,7 @@
    "id": "tema:compilacion",
    "tipo": "tema",
    "titulo": "compilacion",
-   "peso": 5,
+   "peso": 7,
    "ruta": "memoria/temas/compilacion.md"
   },
   {
@@ -22725,6 +23575,20 @@
    "ruta": "memoria/temas/contador-saturado.md"
   },
   {
+   "id": "tema:dce",
+   "tipo": "tema",
+   "titulo": "dce",
+   "peso": 2,
+   "ruta": "memoria/temas/dce.md"
+  },
+  {
+   "id": "tema:dead-code-elimination",
+   "tipo": "tema",
+   "titulo": "dead-code-elimination",
+   "peso": 2,
+   "ruta": "memoria/temas/dead-code-elimination.md"
+  },
+  {
    "id": "tema:desenrollado-bucle",
    "tipo": "tema",
    "titulo": "desenrollado-bucle",
@@ -22842,6 +23706,13 @@
    "titulo": "registros-renombramiento",
    "peso": 1,
    "ruta": "memoria/temas/registros-renombramiento.md"
+  },
+  {
+   "id": "tema:reduction",
+   "tipo": "tema",
+   "titulo": "reduction",
+   "peso": 1,
+   "ruta": "memoria/temas/reduction.md"
   },
   {
    "id": "tema:registro-resultado",
@@ -23334,6 +24205,13 @@
    "ruta": "memoria/temas/ventana-instrucciones.md"
   },
   {
+   "id": "tema:visualización",
+   "tipo": "tema",
+   "titulo": "visualización",
+   "peso": 5,
+   "ruta": "memoria/temas/visualización.md"
+  },
+  {
    "id": "tema:computer-architecture",
    "tipo": "tema",
    "titulo": "computer-architecture",
@@ -23491,7 +24369,7 @@
    "id": "tema:vector",
    "tipo": "tema",
    "titulo": "vector",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/vector.md"
   },
   {
@@ -23549,6 +24427,20 @@
    "titulo": "historia",
    "peso": 5,
    "ruta": "memoria/temas/historia.md"
+  },
+  {
+   "id": "tema:build",
+   "tipo": "tema",
+   "titulo": "build",
+   "peso": 1,
+   "ruta": "memoria/temas/build.md"
+  },
+  {
+   "id": "tema:g++",
+   "tipo": "tema",
+   "titulo": "g++",
+   "peso": 1,
+   "ruta": "memoria/temas/g++.md"
   },
   {
    "id": "tema:patron-saltos",
@@ -23752,13 +24644,6 @@
    "titulo": "contadores hardware",
    "peso": 1,
    "ruta": "memoria/temas/contadores hardware.md"
-  },
-  {
-   "id": "tema:perf",
-   "tipo": "tema",
-   "titulo": "perf",
-   "peso": 12,
-   "ruta": "memoria/temas/perf.md"
   },
   {
    "id": "tema:pmu",
@@ -24030,7 +24915,7 @@
    "id": "tema:parametros",
    "tipo": "tema",
    "titulo": "parametros",
-   "peso": 5,
+   "peso": 8,
    "ruta": "memoria/temas/parametros.md"
   },
   {
@@ -24060,6 +24945,13 @@
    "titulo": "desenrollamiento-bucles",
    "peso": 1,
    "ruta": "memoria/temas/desenrollamiento-bucles.md"
+  },
+  {
+   "id": "tema:working-set",
+   "tipo": "tema",
+   "titulo": "working-set",
+   "peso": 1,
+   "ruta": "memoria/temas/working-set.md"
   },
   {
    "id": "tema:reproducibilidad",
@@ -24363,18 +25255,25 @@
    "ruta": "memoria/temas/double.md"
   },
   {
+   "id": "tema:mediciones",
+   "tipo": "tema",
+   "titulo": "mediciones",
+   "peso": 2,
+   "ruta": "memoria/temas/mediciones.md"
+  },
+  {
+   "id": "tema:practica",
+   "tipo": "tema",
+   "titulo": "practica",
+   "peso": 2,
+   "ruta": "memoria/temas/practica.md"
+  },
+  {
    "id": "tema:laboratorio",
    "tipo": "tema",
    "titulo": "laboratorio",
    "peso": 1,
    "ruta": "memoria/temas/laboratorio.md"
-  },
-  {
-   "id": "tema:mediciones",
-   "tipo": "tema",
-   "titulo": "mediciones",
-   "peso": 1,
-   "ruta": "memoria/temas/mediciones.md"
   },
   {
    "id": "tema:emulacion",
@@ -24499,7 +25398,7 @@
    "id": "tema:hyperfine",
    "tipo": "tema",
    "titulo": "hyperfine",
-   "peso": 9,
+   "peso": 12,
    "ruta": "memoria/temas/hyperfine.md"
   },
   {
@@ -24580,13 +25479,6 @@
    "ruta": "memoria/temas/diseño.md"
   },
   {
-   "id": "tema:visualización",
-   "tipo": "tema",
-   "titulo": "visualización",
-   "peso": 2,
-   "ruta": "memoria/temas/visualización.md"
-  },
-  {
    "id": "tema:diseno",
    "tipo": "tema",
    "titulo": "diseno",
@@ -24604,14 +25496,14 @@
    "id": "tema:matplotlib",
    "tipo": "tema",
    "titulo": "matplotlib",
-   "peso": 9,
+   "peso": 11,
    "ruta": "memoria/temas/matplotlib.md"
   },
   {
    "id": "tema:visualizacion",
    "tipo": "tema",
    "titulo": "visualizacion",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/visualizacion.md"
   },
   {
@@ -24674,7 +25566,7 @@
    "id": "tema:taskset",
    "tipo": "tema",
    "titulo": "taskset",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/taskset.md"
   },
   {
@@ -24769,6 +25661,13 @@
    "ruta": "memoria/temas/supuestos.md"
   },
   {
+   "id": "tema:estilo",
+   "tipo": "tema",
+   "titulo": "estilo",
+   "peso": 2,
+   "ruta": "memoria/temas/estilo.md"
+  },
+  {
    "id": "tema:ciclo",
    "tipo": "tema",
    "titulo": "ciclo",
@@ -24790,6 +25689,13 @@
    "ruta": "memoria/temas/precision.md"
   },
   {
+   "id": "tema:metodologia",
+   "tipo": "tema",
+   "titulo": "metodologia",
+   "peso": 5,
+   "ruta": "memoria/temas/metodologia.md"
+  },
+  {
    "id": "tema:toma-decisiones",
    "tipo": "tema",
    "titulo": "toma-decisiones",
@@ -24802,6 +25708,13 @@
    "titulo": "random",
    "peso": 1,
    "ruta": "memoria/temas/random.md"
+  },
+  {
+   "id": "tema:análisis de datos",
+   "tipo": "tema",
+   "titulo": "análisis de datos",
+   "peso": 1,
+   "ruta": "memoria/temas/análisis de datos.md"
   },
   {
    "id": "tema:data-visualization",
@@ -24823,6 +25736,20 @@
    "titulo": "python",
    "peso": 7,
    "ruta": "memoria/temas/python.md"
+  },
+  {
+   "id": "tema:cpu-affinity",
+   "tipo": "tema",
+   "titulo": "cpu-affinity",
+   "peso": 1,
+   "ruta": "memoria/temas/cpu-affinity.md"
+  },
+  {
+   "id": "tema:variabilidad",
+   "tipo": "tema",
+   "titulo": "variabilidad",
+   "peso": 1,
+   "ruta": "memoria/temas/variabilidad.md"
   },
   {
    "id": "tema:anti-cheat",
@@ -25091,13 +26018,6 @@
    "ruta": "memoria/temas/capitulo-3.md"
   },
   {
-   "id": "tema:metodologia",
-   "tipo": "tema",
-   "titulo": "metodologia",
-   "peso": 3,
-   "ruta": "memoria/temas/metodologia.md"
-  },
-  {
    "id": "tema:capitulo-4",
    "tipo": "tema",
    "titulo": "capitulo-4",
@@ -25199,7 +26119,7 @@
    "id": "tema:profiling",
    "tipo": "tema",
    "titulo": "profiling",
-   "peso": 4,
+   "peso": 6,
    "ruta": "memoria/temas/profiling.md"
   },
   {
@@ -25308,11 +26228,11 @@
    "ruta": "memoria/temas/ejecucion.md"
   },
   {
-   "id": "tema:cpp",
+   "id": "tema:herramientas",
    "tipo": "tema",
-   "titulo": "cpp",
-   "peso": 4,
-   "ruta": "memoria/temas/cpp.md"
+   "titulo": "herramientas",
+   "peso": 1,
+   "ruta": "memoria/temas/herramientas.md"
   },
   {
    "id": "tema:porcentaje-ganancia",
@@ -25437,7 +26357,7 @@
    "id": "tema:linux",
    "tipo": "tema",
    "titulo": "linux",
-   "peso": 1,
+   "peso": 3,
    "ruta": "memoria/temas/linux.md"
   },
   {
@@ -25535,8 +26455,15 @@
    "id": "tema:pointer-chasing",
    "tipo": "tema",
    "titulo": "pointer-chasing",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/pointer-chasing.md"
+  },
+  {
+   "id": "tema:permutacion",
+   "tipo": "tema",
+   "titulo": "permutacion",
+   "peso": 1,
+   "ruta": "memoria/temas/permutacion.md"
   },
   {
    "id": "tema:concurrencia-optimista",
@@ -25889,13 +26816,6 @@
    "ruta": "memoria/temas/cpu-time.md"
   },
   {
-   "id": "tema:estilo",
-   "tipo": "tema",
-   "titulo": "estilo",
-   "peso": 1,
-   "ruta": "memoria/temas/estilo.md"
-  },
-  {
    "id": "tema:prosa",
    "tipo": "tema",
    "titulo": "prosa",
@@ -25915,6 +26835,13 @@
    "titulo": "pipelining",
    "peso": 1,
    "ruta": "memoria/temas/pipelining.md"
+  },
+  {
+   "id": "tema:aleatoriedad",
+   "tipo": "tema",
+   "titulo": "aleatoriedad",
+   "peso": 1,
+   "ruta": "memoria/temas/aleatoriedad.md"
   },
   {
    "id": "tema:ci",
@@ -25969,7 +26896,7 @@
    "id": "tema:chrono",
    "tipo": "tema",
    "titulo": "chrono",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/chrono.md"
   },
   {
@@ -25985,6 +26912,20 @@
    "titulo": "nanosegundos",
    "peso": 1,
    "ruta": "memoria/temas/nanosegundos.md"
+  },
+  {
+   "id": "tema:nanoseconds",
+   "tipo": "tema",
+   "titulo": "nanoseconds",
+   "peso": 1,
+   "ruta": "memoria/temas/nanoseconds.md"
+  },
+  {
+   "id": "tema:steady_clock",
+   "tipo": "tema",
+   "titulo": "steady_clock",
+   "peso": 1,
+   "ruta": "memoria/temas/steady_clock.md"
   },
   {
    "id": "tema:operaciones-por-ciclo",
@@ -26132,20 +27073,6 @@
    "titulo": "pipeline-timing",
    "peso": 1,
    "ruta": "memoria/temas/pipeline-timing.md"
-  },
-  {
-   "id": "tema:dce",
-   "tipo": "tema",
-   "titulo": "dce",
-   "peso": 1,
-   "ruta": "memoria/temas/dce.md"
-  },
-  {
-   "id": "tema:dead-code-elimination",
-   "tipo": "tema",
-   "titulo": "dead-code-elimination",
-   "peso": 1,
-   "ruta": "memoria/temas/dead-code-elimination.md"
   },
   {
    "id": "tema:optimizador",
@@ -26354,7 +27281,7 @@
    "id": "tema:refactoring",
    "tipo": "tema",
    "titulo": "refactoring",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/refactoring.md"
   },
   {
@@ -27614,6 +28541,26 @@
    "de": "concepto:antidependencia-war-y-dependencia-de-salida-waw-definiciones",
    "a": "concepto:definicion-de-dependencia-de-datos-raw-entre-instrucciones",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos",
+   "a": "tema:aos-soa",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos",
+   "a": "tema:cache",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos",
+   "a": "tema:optimizacion-memoria",
+   "tipo": "trata"
   },
   {
    "de": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache",
@@ -29201,6 +30148,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent",
+   "a": "tema:analisis-rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent",
+   "a": "tema:cache",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:calentamiento-warm-up-para-poblar-tlb-y-evitar-page-faults",
    "a": "tema:ac",
    "tipo": "trata"
@@ -29748,6 +30715,26 @@
   {
    "de": "concepto:clasificacion-de-tipos-de-computadores-segun-requisitos-de-d",
    "a": "concepto:definicion-de-arquitectura-de-computadores-frente-a-organiza",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
+   "a": "receta:como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
    "tipo": "enlaza"
   },
   {
@@ -30913,6 +31900,11 @@
   {
    "de": "concepto:cuando-preferir-aos-sobre-soa-en-la-practica",
    "a": "tema:tradeoffs",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:cuando-preferir-aos-sobre-soa-en-la-practica",
+   "a": "tema:aos-soa",
    "tipo": "trata"
   },
   {
@@ -32721,6 +33713,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "a": "tema:dependencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "a": "tema:ilp",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "a": "concepto:antidependencia-war-en-bucle-entre-carga-y-actualizacion-de",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "a": "concepto:antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:dependencia-raw-en-pipeline-risc-v-resuelta-con-adelantamien",
    "a": "tema:ac",
    "tipo": "trata"
@@ -33163,6 +34185,36 @@
   {
    "de": "concepto:dependencias-raw-war-y-waw-en-el-bucle-de-producto-escalar-v",
    "a": "dato:dependencias-en-la-secuencia-de-instrucciones-del-examen-jun",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "a": "tema:avx2",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "a": "tema:fma",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "a": "tema:isa",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "a": "receta:como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
    "tipo": "enlaza"
   },
   {
@@ -34263,6 +35315,26 @@
   {
    "de": "concepto:ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura",
    "a": "receta:calculo-de-tiempo-de-ejecucion-con-cpi-y-frecuencia",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona",
+   "a": "tema:prediccion-saltos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona",
+   "a": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
    "tipo": "enlaza"
   },
   {
@@ -35981,6 +37053,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante",
+   "a": "tema:page-fault",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante",
+   "a": "tema:tlb",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante",
+   "a": "tema:warmup",
+   "tipo": "trata"
+  },
+  {
    "de": "concepto:fases-del-sprint-2-y-prs-asociados",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -36438,6 +37535,31 @@
   {
    "de": "concepto:funcionamiento-detallado-de-bits-de-veneno-poison-bits-en-es",
    "a": "concepto:especulacion-con-poison-bits-propagacion-y-excepcion-diferid",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:fusion-de-bucles-loop-fusion-para-localidad-temporal",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:fusion-de-bucles-loop-fusion-para-localidad-temporal",
+   "a": "tema:cache",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:fusion-de-bucles-loop-fusion-para-localidad-temporal",
+   "a": "tema:loop-transformation",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:fusion-de-bucles-loop-fusion-para-localidad-temporal",
+   "a": "tema:optimizacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:fusion-de-bucles-loop-fusion-para-localidad-temporal",
+   "a": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
    "tipo": "enlaza"
   },
   {
@@ -39121,6 +40243,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "a": "tema:cache",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "a": "tema:perf",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "a": "concepto:calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "a": "concepto:ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:mips64-usa-caches-separadas-para-instrucciones-y-datos-harva",
    "a": "tema:ac",
    "tipo": "trata"
@@ -39183,6 +40335,36 @@
   {
    "de": "concepto:modelo-de-programacion-simt-en-gpgpu",
    "a": "dato:en-la-taxonomia-de-flynn-los-multicomputadores-son-maquinas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "a": "tema:arquitectura",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "a": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "a": "concepto:ecuacion-fundamental-del-tiempo-de-ejecucion-en-arquitectura",
    "tipo": "enlaza"
   },
   {
@@ -39756,6 +40938,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "a": "tema:allocator",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "a": "tema:cpp",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "a": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "a": "concepto:pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:paradoja-mips-vs-tiempo-de-ejecucion-mayor-mips-no-garantiza",
    "a": "tema:ac",
    "tipo": "trata"
@@ -40228,6 +41440,31 @@
   {
    "de": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline-sup",
    "a": "concepto:mecanismos-de-recuperacion-ante-fallos-de-prediccion-de-salt",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "a": "tema:prediccion-saltos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "a": "concepto:accion-del-procesador-ante-fallo-de-prediccion-de-salto",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "a": "concepto:alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin",
    "tipo": "enlaza"
   },
   {
@@ -41162,6 +42399,11 @@
   },
   {
    "de": "concepto:pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector",
+   "a": "tema:cpp",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector",
    "a": "concepto:patron-de-salto-de-latencia-en-fronteras-de-cache",
    "tipo": "enlaza"
   },
@@ -42079,6 +43321,31 @@
    "de": "concepto:predictores-n-bits-y-optimalidad-de-n-2-en-la-practica",
    "a": "concepto:predictor-dinamico-de-2-bits-jim-smith-1981-maquina-de-4-est",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:prevencion-de-dead-code-elimination-dce-forzando-uso-del-res",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prevencion-de-dead-code-elimination-dce-forzando-uso-del-res",
+   "a": "tema:compilador",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prevencion-de-dead-code-elimination-dce-forzando-uso-del-res",
+   "a": "tema:dce",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prevencion-de-dead-code-elimination-dce-forzando-uso-del-res",
+   "a": "tema:dead-code-elimination",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prevencion-de-dead-code-elimination-dce-forzando-uso-del-res",
+   "a": "tema:optimizacion",
+   "tipo": "trata"
   },
   {
    "de": "concepto:problema-de-desambiguacion-de-memoria-memory-disambiguation",
@@ -43423,6 +44690,31 @@
   {
    "de": "concepto:recuperacion-de-fallos-de-prediccion-con-registros-temporale",
    "a": "concepto:recuperacion-ante-fallo-de-prediccion-descartar-resultados-e",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:reduccion-final-de-acumuladores-parciales-tras-desenrollado",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reduccion-final-de-acumuladores-parciales-tras-desenrollado",
+   "a": "tema:ilp",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reduccion-final-de-acumuladores-parciales-tras-desenrollado",
+   "a": "tema:loop unrolling",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reduccion-final-de-acumuladores-parciales-tras-desenrollado",
+   "a": "tema:reduction",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reduccion-final-de-acumuladores-parciales-tras-desenrollado",
+   "a": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
    "tipo": "enlaza"
   },
   {
@@ -46622,6 +47914,16 @@
   },
   {
    "de": "concepto:tecnica-pointer-chasing-para-medir-latencia-real-de-memoria",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:tecnica-pointer-chasing-para-medir-latencia-real-de-memoria",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:tecnica-pointer-chasing-para-medir-latencia-real-de-memoria",
    "a": "receta:como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset",
    "tipo": "enlaza"
   },
@@ -47216,6 +48518,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:trade-offs-de-programacion-branchless-vs-condicional",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trade-offs-de-programacion-branchless-vs-condicional",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trade-offs-de-programacion-branchless-vs-condicional",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trade-offs-de-programacion-branchless-vs-condicional",
+   "a": "receta:implementacion-branchless-de-suma-condicional-con-multiplica",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trade-offs-de-programacion-branchless-vs-condicional",
+   "a": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:transformacion-por-software-pipelining-daddui-mantiene-signo",
    "a": "tema:ac",
    "tipo": "trata"
@@ -47518,6 +48845,36 @@
   {
    "de": "concepto:tres-patrones-de-acceso-a-memoria-evaluados-en-la-practica-t",
    "a": "concepto:patron-de-salto-de-latencia-en-fronteras-de-cache",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "a": "tema:cache",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "a": "tema:localidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "a": "concepto:antidependencia-war-en-bucle-entre-carga-y-actualizacion-de",
    "tipo": "enlaza"
   },
   {
@@ -47858,6 +49215,31 @@
   {
    "de": "concepto:ventana-de-instrucciones-en-superscalar-instrucciones-decodi",
    "a": "concepto:superescalar-3-vias-con-tuberias-dedicadas-por-tipo-de-instr",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y",
+   "a": "tema:visualización",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y",
+   "a": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y",
+   "a": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
    "tipo": "enlaza"
   },
   {
@@ -49521,6 +50903,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:compilacion-y-ejecucion-de-referencia-para-tarea-3-1",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:compilacion-y-ejecucion-de-referencia-para-tarea-3-1",
+   "a": "tema:build",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:compilacion-y-ejecucion-de-referencia-para-tarea-3-1",
+   "a": "tema:g++",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:compilacion-y-ejecucion-de-referencia-para-tarea-3-1",
+   "a": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:comportamiento-real-de-saltos-b1-beqz-y-b2-beq-en-bucle-mips",
    "a": "tema:ac",
    "tipo": "trata"
@@ -49678,6 +51080,21 @@
   {
    "de": "dato:configuracion-de-recursos-en-ejercicio-tomasulo-ej-14-y-scor",
    "a": "receta:simulacion-scoreboard-vs-tomasulo-basico-pasos-de-ejecucion",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:configuracion-del-benchmark-32768-elementos-1000-repeticione",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:configuracion-del-benchmark-32768-elementos-1000-repeticione",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:configuracion-del-benchmark-32768-elementos-1000-repeticione",
+   "a": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
    "tipo": "enlaza"
   },
   {
@@ -53411,6 +54828,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1",
+   "a": "tema:hardware",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1",
+   "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1",
+   "a": "concepto:comparativa-de-coste-efectividad-entre-sistemas-rendimiento",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:parametros-de-pipeline-risc-v-fp-para-ejercicios-tema-2-mult",
    "a": "tema:ac",
    "tipo": "trata"
@@ -53811,6 +55258,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b",
+   "a": "tema:cache",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
    "de": "dato:parametros-del-experimento-lista-vs-vector-n-20m-media-50-0f",
    "a": "tema:ac",
    "tipo": "trata"
@@ -53936,6 +55403,71 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector",
+   "a": "tema:parametros",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector",
+   "a": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill",
+   "a": "tema:parametros",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill",
+   "a": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-rangos-y-conteos",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-rangos-y-conteos",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-rangos-y-conteos",
+   "a": "tema:parametros",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-rangos-y-conteos",
+   "a": "tema:working-set",
+   "tipo": "trata"
+  },
+  {
    "de": "dato:parametros-fijos-del-benchmark-semilla-accesos-formato-salid",
    "a": "tema:ac",
    "tipo": "trata"
@@ -53973,6 +55505,31 @@
   {
    "de": "dato:parametros-fijos-del-benchmark-semilla-accesos-formato-salid",
    "a": "decision:uso-de-semilla-fija-42-en-mt19937-para-reproducibilidad-del",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe",
+   "a": "concepto:calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe",
+   "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
    "tipo": "enlaza"
   },
   {
@@ -56521,6 +58078,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac",
+   "a": "concepto:calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac",
+   "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:tasa-de-aciertos-de-predictor-1-bit-inicializado-a-0-con-sal",
    "a": "tema:ac",
    "tipo": "trata"
@@ -56788,6 +58370,31 @@
   {
    "de": "dato:valores-concretos-de-x1-y-direcciones-de-memoria-en-la-simul",
    "a": "dato:evolucion-del-registro-base-x1-y-qi-de-registros-fp-en-el-ej",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat",
+   "a": "tema:mediciones",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat",
+   "a": "tema:practica",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat",
+   "a": "concepto:clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
    "tipo": "enlaza"
   },
   {
@@ -57219,6 +58826,21 @@
    "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
    "a": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:atributos-gcc-para-forzar-salto-real-y-desactivar-optimizaci",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:atributos-gcc-para-forzar-salto-real-y-desactivar-optimizaci",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:atributos-gcc-para-forzar-salto-real-y-desactivar-optimizaci",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
   },
   {
    "de": "decision:bloqueo-de-fadd-d-por-peligro-waw-en-registro-f6-hasta-ciclo",
@@ -60391,6 +62013,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores",
+   "a": "tema:cpp",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores",
+   "a": "tema:estilo",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores",
+   "a": "tema:optimizacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores",
+   "a": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:uso-de-ciclo-8a-8b-mitades-de-ciclo-para-modelar-escritura-y",
    "a": "tema:ac",
    "tipo": "trata"
@@ -60503,6 +62150,56 @@
   {
    "de": "decision:uso-de-double-en-lugar-de-float-para-acumulacion-en-experime",
    "a": "receta:verificacion-de-correccion-numerica-entre-version-base-y-opt",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en",
+   "a": "tema:compilacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en",
+   "a": "tema:metodologia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en",
+   "a": "tema:optimizacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en",
+   "a": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz",
+   "a": "tema:compilacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz",
+   "a": "tema:optimizacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz",
+   "a": "concepto:alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz",
+   "a": "concepto:detenciones-en-pipeline-afectan-negativamente-a-prestaciones",
    "tipo": "enlaza"
   },
   {
@@ -60626,6 +62323,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:uso-de-step-plot-post-para-representar-latencia-constante-en",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-step-plot-post-para-representar-latencia-constante-en",
+   "a": "tema:análisis de datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-step-plot-post-para-representar-latencia-constante-en",
+   "a": "tema:visualización",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-step-plot-post-para-representar-latencia-constante-en",
+   "a": "concepto:antidependencia-siempre-genera-hazard-war-en-pipeline-in-ord",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:uso-de-step-plot-post-para-representar-latencia-constante-en",
+   "a": "concepto:antidependencia-war-en-bucle-entre-carga-y-actualizacion-de",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:uso-de-step-plot-post-superpuesto-a-linea-continua-para-most",
    "a": "tema:ac",
    "tipo": "trata"
@@ -60663,6 +62385,56 @@
   {
    "de": "decision:uso-de-step-plot-post-superpuesto-a-linea-continua-para-most",
    "a": "concepto:patron-de-salto-de-latencia-en-fronteras-de-cache",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari",
+   "a": "tema:cpu-affinity",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari",
+   "a": "tema:taskset",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari",
+   "a": "tema:variabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato",
+   "a": "tema:metodologia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato",
+   "a": "tema:practica",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato",
+   "a": "dato:valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat",
    "tipo": "enlaza"
   },
   {
@@ -60863,6 +62635,331 @@
   {
    "de": "fuente:fuente-bibliografia-extra",
    "a": "dato:referencia-vampire-survivors-como-antecedente-de-genero-surv",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "receta:como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "receta:construccion-del-array-de-pointer-chasing-con-permutacion-ci",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "concepto:fase-de-warm-up-para-poblar-tlb-y-evitar-page-faults-durante",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "receta:medicion-de-latencia-con-cadena-de-dependencias-y-cronometro",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "dato:parametros-fijos-del-benchmark-rangos-y-conteos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "concepto:prevencion-de-dead-code-elimination-dce-forzando-uso-del-res",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "concepto:tecnica-pointer-chasing-para-medir-latencia-real-de-memoria",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-mem-latency-practicas",
+   "a": "decision:uso-de-taskset-c-0-para-fijar-afinidad-de-cpu-y-reducir-vari",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas",
+   "a": "receta:como-configurar-lstopo-para-obtener-tamanos-de-cache-reales",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas",
+   "a": "receta:como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas",
+   "a": "dato:tamanos-de-cache-y-latencias-de-ejemplo-en-el-script-de-prac",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas",
+   "a": "decision:uso-de-step-plot-post-para-representar-latencia-constante-en",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-2-pintarlatvsmem-practicas",
+   "a": "concepto:visualizacion-de-jerarquia-de-memoria-con-regiones-axvspan-y",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas",
+   "a": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas",
+   "a": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas",
+   "a": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas",
+   "a": "concepto:modelo-roofline-regiones-memory-bound-vs-compute-bound-y-rid",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea1-3-pintarrooflin-practicas",
+   "a": "dato:parametros-de-ejemplo-para-roofline-cpu-4-9-ghz-bw-dram-26-1",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-patrones-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-patrones-practicas",
+   "a": "receta:como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-patrones-practicas",
+   "a": "receta:generacion-de-permutacion-aleatoria-reproducible-para-acceso",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-patrones-practicas",
+   "a": "concepto:metricas-hardware-clave-para-comparar-patrones-de-acceso",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-patrones-practicas",
+   "a": "dato:parametros-fijos-del-benchmark-tamano-de-array-bloque-y-repe",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-patrones-practicas",
+   "a": "concepto:tres-patrones-de-acceso-a-memoria-para-evaluar-localidad-de",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-patrones-practicas",
+   "a": "decision:uso-de-int64-t-y-vector-inicializado-a-1-para-evitar-optimiz",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas",
+   "a": "concepto:clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas",
+   "a": "receta:como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas",
+   "a": "receta:como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas",
+   "a": "concepto:derivacion-de-flopspercycle-32-para-x86-con-avx2-y-fma",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas",
+   "a": "decision:uso-de-todo1-y-todo2-como-puntos-de-personalizacion-obligato",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab3-zip-tarea2-1-pintarrooflin-conpunto-practicas",
+   "a": "dato:valores-de-ejemplo-de-intensidad-y-rendimiento-para-tres-pat",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "dato:compilacion-y-ejecucion-de-referencia-para-tarea-3-1",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "concepto:fusion-de-bucles-loop-fusion-para-localidad-temporal",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "concepto:overhead-de-asignacion-por-nodo-en-std-list-vs-reserva-unica",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "dato:parametros-fijos-de-la-tarea-3-1-n-media-distribucion-semill",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "concepto:pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-1-lista-practicas",
+   "a": "decision:usar-indice-size-t-en-bucle-fusionado-en-lugar-de-iteradores",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-2-aos-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-2-aos-practicas",
+   "a": "concepto:aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache-por-campos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-2-aos-practicas",
+   "a": "concepto:calculo-teorico-de-reduccion-de-lineas-de-cache-en-soa-frent",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-2-aos-practicas",
+   "a": "concepto:cuando-preferir-aos-sobre-soa-en-la-practica",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-2-aos-practicas",
+   "a": "receta:medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-2-aos-practicas",
+   "a": "dato:parametros-del-benchmark-aos-soa-n-60m-iter-4-cache-line-64b",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea3-2-aos-practicas",
+   "a": "receta:transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-1-ilp-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-1-ilp-practicas",
+   "a": "concepto:dependencia-raw-en-acumulacion-secuencial-limita-ilp-en-pipe",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-1-ilp-practicas",
+   "a": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-1-ilp-practicas",
+   "a": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-1-ilp-practicas",
+   "a": "dato:parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-1-ilp-practicas",
+   "a": "concepto:reduccion-final-de-acumuladores-parciales-tras-desenrollado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-1-ilp-practicas",
+   "a": "decision:uso-de-flag-o1-para-evitar-auto-unrolling-del-compilador-en",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-2-branchless-practicas",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-2-branchless-practicas",
+   "a": "decision:atributos-gcc-para-forzar-salto-real-y-desactivar-optimizaci",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-2-branchless-practicas",
+   "a": "dato:configuracion-del-benchmark-32768-elementos-1000-repeticione",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-2-branchless-practicas",
+   "a": "concepto:efecto-del-orden-de-datos-en-prediccion-de-saltos-condiciona",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-2-branchless-practicas",
+   "a": "receta:implementacion-branchless-de-suma-condicional-con-multiplica",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-2-branchless-practicas",
+   "a": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-code-lab4-zip-tarea4-2-branchless-practicas",
+   "a": "concepto:trade-offs-de-programacion-branchless-vs-condicional",
    "tipo": "enlaza"
   },
   {
@@ -68986,6 +71083,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "a": "tema:benchmarking",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "a": "tema:hyperfine",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "a": "tema:perf",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:benchmarking-con-hyperfine-y-perf-para-comparar-versiones-li",
+   "a": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst",
    "a": "tema:ac",
    "tipo": "trata"
@@ -73141,6 +75268,61 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
+   "a": "tema:avx2",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-gflops-max-y-el-punto-de-i",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "a": "tema:avx2",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "a": "tema:fma",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "a": "concepto:calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-calcular-el-techo-de-computo-peak-gflops-para-avx2-fma",
+   "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-calcular-factor-de-mejora-necesario-segun-ley-de-amdahl",
    "a": "tema:ac",
    "tipo": "trata"
@@ -73727,6 +75909,16 @@
   },
   {
    "de": "receta:como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso",
+   "a": "tema:profiling",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-compilar-y-ejecutar-el-benchmark-de-patrones-de-acceso",
    "a": "receta:como-compilar-y-ejecutar-el-benchmark-de-latencia-de-memoria",
    "tipo": "enlaza"
   },
@@ -73783,6 +75975,31 @@
   {
    "de": "receta:como-compilar-y-medir-lista-vs-vector-con-g-o2-hyperfine-y-p",
    "a": "receta:como-medir-impacto-de-cache-misses-e-ipc-con-hyperfine-y-per",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-configurar-lstopo-para-obtener-tamanos-de-cache-reales",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-configurar-lstopo-para-obtener-tamanos-de-cache-reales",
+   "a": "tema:herramientas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-configurar-lstopo-para-obtener-tamanos-de-cache-reales",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-configurar-lstopo-para-obtener-tamanos-de-cache-reales",
+   "a": "concepto:alternativas-de-deteccion-de-instruccion-de-salto-en-pipelin",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-configurar-lstopo-para-obtener-tamanos-de-cache-reales",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
    "tipo": "enlaza"
   },
   {
@@ -74731,6 +76948,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-graficar-latencia-vs-working-set-para-analizar-jerarqui",
+   "a": "concepto:calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-guardar-el-grafico-roofline-como-archivo-png-en-lugar-d",
    "a": "tema:ac",
    "tipo": "trata"
@@ -75333,6 +77580,41 @@
   {
    "de": "receta:como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset",
    "a": "concepto:working-set-size-vs-memory-access-latency-experiment",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "a": "tema:hardware",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "a": "tema:linux",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "a": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-obtener-los-parametros-de-hardware-para-el-modelo-roofl",
+   "a": "concepto:comparativa-de-coste-efectividad-entre-sistemas-rendimiento",
    "tipo": "enlaza"
   },
   {
@@ -76151,6 +78433,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "a": "tema:matplotlib",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "a": "tema:visualización",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "a": "concepto:calculo-de-speedup-con-ley-de-amdahl-fraccion-mejorada-al-do",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-clasico-techo-dram-tope-cpu-c",
+   "a": "concepto:comparacion-de-rendimiento-entre-procesadores-requiere-mismo",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log",
    "a": "tema:ac",
    "tipo": "trata"
@@ -76183,6 +78500,31 @@
   {
    "de": "receta:como-trazar-el-modelo-roofline-con-matplotlib-en-escala-log",
    "a": "receta:como-graficar-latencia-vs-working-set-con-jerarquia-de-cache",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log",
+   "a": "tema:matplotlib",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log",
+   "a": "tema:roofline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log",
+   "a": "tema:visualizacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-trazar-el-modelo-roofline-con-matplotlib-escala-log-log",
+   "a": "concepto:clasificacion-memory-bound-vs-compute-bound-en-el-modelo-roo",
    "tipo": "enlaza"
   },
   {
@@ -76904,6 +79246,31 @@
    "de": "receta:construccion-de-permutacion-aleatoria-en-ciclo-para-pointer",
    "a": "receta:como-medir-latencia-de-memoria-con-pointer-chasing-y-taskset",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:construccion-del-array-de-pointer-chasing-con-permutacion-ci",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:construccion-del-array-de-pointer-chasing-con-permutacion-ci",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:construccion-del-array-de-pointer-chasing-con-permutacion-ci",
+   "a": "tema:permutacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:construccion-del-array-de-pointer-chasing-con-permutacion-ci",
+   "a": "tema:pointer-chasing",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:construccion-del-array-de-pointer-chasing-con-permutacion-ci",
+   "a": "tema:vector",
+   "tipo": "trata"
   },
   {
    "de": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
@@ -80516,6 +82883,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:generacion-de-permutacion-aleatoria-reproducible-para-acceso",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:generacion-de-permutacion-aleatoria-reproducible-para-acceso",
+   "a": "tema:aleatoriedad",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:generacion-de-permutacion-aleatoria-reproducible-para-acceso",
+   "a": "tema:profiling",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:generacion-de-permutacion-aleatoria-reproducible-para-acceso",
+   "a": "concepto:bits-de-veneno-poison-bits-en-carga-especulativa-marcan-regi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:generacion-de-permutacion-aleatoria-reproducible-para-acceso",
+   "a": "concepto:bits-venenosos-en-carga-especulativa-excepcion-diferida-hast",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:generacion-de-terreno-por-ruidos-terreno-js",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -80828,6 +83220,26 @@
   {
    "de": "receta:igualar-rendimiento-de-dos-maquinas-ajustando-frecuencia-de",
    "a": "receta:ejercicios-de-cpi-mips-y-tiempo-de-ejecucion-con-mezcla-de-i",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:implementacion-branchless-de-suma-condicional-con-multiplica",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:implementacion-branchless-de-suma-condicional-con-multiplica",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:implementacion-branchless-de-suma-condicional-con-multiplica",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:implementacion-branchless-de-suma-condicional-con-multiplica",
+   "a": "concepto:penalizacion-de-fallo-de-prediccion-de-salto-en-pipeline",
    "tipo": "enlaza"
   },
   {
@@ -81371,6 +83783,56 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:medicion-de-latencia-con-cadena-de-dependencias-y-cronometro",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-latencia-con-cadena-de-dependencias-y-cronometro",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-latencia-con-cadena-de-dependencias-y-cronometro",
+   "a": "tema:chrono",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-latencia-con-cadena-de-dependencias-y-cronometro",
+   "a": "tema:nanoseconds",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-latencia-con-cadena-de-dependencias-y-cronometro",
+   "a": "tema:steady_clock",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a",
+   "a": "tema:benchmark",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a",
+   "a": "tema:hyperfine",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a",
+   "a": "tema:linux",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:medicion-de-rendimiento-con-hyperfine-y-perf-para-comparar-a",
+   "a": "tema:perf",
+   "tipo": "trata"
+  },
+  {
    "de": "receta:mejora-de-prestaciones-speedup-al-usar-btb-frente-a-sin-btb",
    "a": "tema:ac",
    "tipo": "trata"
@@ -81491,6 +83953,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "a": "tema:benchmarking",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "a": "tema:hyperfine",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "a": "tema:perf",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "a": "tema:rendimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "a": "concepto:calculo-de-operaciones-por-ciclo-ipc-en-planificacion-vliw-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:metodologia-de-benchmarking-ilp-con-hyperfine-y-perf-en-prac",
+   "a": "concepto:definicion-de-peak-performance-rendimiento-pico",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:metrica-operaciones-por-ciclo-opc-en-vliw",
    "a": "tema:ac",
    "tipo": "trata"
@@ -81591,6 +84088,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "a": "tema:ilp",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "a": "tema:optimizacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "a": "concepto:alto-ilp-requiere-bajo-grado-de-dependencia-entre-instruccio",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:optimizacion-ilp-mediante-desenrollado-de-4-vias-con-acumula",
+   "a": "concepto:analisis-de-dependencias-en-bucle-con-add-d-y-s-d-misma-iter",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul",
    "a": "tema:ac",
    "tipo": "trata"
@@ -81639,6 +84166,31 @@
    "de": "receta:optimizacion-ilp-mediante-desenrollado-de-bucle-con-4-acumul",
    "a": "receta:benchmarking-ilp-con-hyperfine-y-perf-para-medir-cycles-inst",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "a": "tema:cache",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "a": "tema:cpp",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:optimizar-std-list-a-std-vector-con-reserva-y-fusion-de-bucl",
+   "a": "tema:optimizacion",
+   "tipo": "trata"
   },
   {
    "de": "receta:parametros-de-simulacion-tomasulo-con-especulacion-del-exame",
@@ -86349,6 +88901,26 @@
    "de": "receta:transformacion-aos-a-soa-para-optimizacion-de-cache-esquema",
    "a": "dato:porcentaje-de-aprovechamiento-de-linea-de-cache-en-aos-acced",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids",
+   "a": "tema:ac",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids",
+   "a": "tema:cpp",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids",
+   "a": "tema:optimizacion-memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:transformacion-de-aos-a-soa-para-kernel-de-suma-de-ids",
+   "a": "tema:refactoring",
+   "tipo": "trata"
   },
   {
    "de": "receta:transformar-aos-a-soa-en-el-laboratorio-ac-tarea-3-2",

@@ -1,13 +1,13 @@
 ---
 tipo: "concepto"
 titulo: "Cuándo preferir AoS sobre SoA en la práctica"
-temas: ["ac", "diseno-datos", "tradeoffs"]
+temas: ["ac", "diseno-datos", "tradeoffs", "aos-soa"]
 claves: ["AoS", "SoA", "locality", "encapsulation", "SIMD", "cache-line"]
 proyectos: []
-fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp"]
+fuentes: ["repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp", "repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea3_2_aos.cpp"]
 confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-19"
 ---
 
 Temas: [[ac]] · [[diseno-datos]] · [[tradeoffs]]
@@ -21,3 +21,13 @@ Respuesta esperada en el análisis del alumno (extraída de la pregunta final de
 > — `repo:datos/temarios/AC/Practicas/Code_Lab4/tarea3_2_aos.cpp`
 
 Relacionado: [[aos-vs-soa-desperdicio-de-ancho-de-banda-en-cache]] · [[pointer-chasing-en-std-list-vs-acceso-contiguo-en-std-vector]] · [[transformacion-aos-a-soa-para-optimizacion-de-cache-esquema]] · [[tarea-3-2-aos-vs-soa-marcada-como-opcional-en-anexo-c]]
+
+## Ampliación (2026-11-19, )
+Razones para elegir AoS (Array of Structures) frente a SoA:
+- **Localidad de objeto**: cuando se accede a *todos* o *la mayoría* de los campos de una entidad junta (p. ej., renderizado de partículas donde se leen posición, velocidad, color, vida a la vez).
+- **Encapsulamiento y OOP**: código más limpio, constructores, destructores, invariantes de clase, herencia.
+- **Serialización/deserialización**: volcar un array de structs contiguo es trivial (memcpy, writev, MPI, GPU buffers).
+- **APIs y bibliotecas**: muchas esperan `std::vector<Particle>` o `Particle*`.
+- **Pequeños conjuntos de datos**: si cabe en L1, el overhead de SoA (vectores separados, indirecciones) no compensa.
+- **Actualizaciones atómicas/transaccionales**: modificar una partícula completa de forma consistente es más fácil en AoS.
+SoA gana cuando hay **acceso selectivo a subconjuntos de campos** (columnar) y **grandes volúmenes** que saturan ancho de banda de memoria.
