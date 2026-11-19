@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tarea» (este archivo se 
 
 ## Temas relacionados
 
-[[pbi]] · [[scrum]] · [[donetonic]] · [[sprint]] · [[hitos]] · [[tareas]] · [[gestión]] · [[github flow]] · [[trazabilidad]] · [[github]] · [[pr]] · [[pull-request]]
+[[pbi]] · [[scrum]] · [[donetonic]] · [[sprint]] · [[fechas]] · [[hitos]] · [[tareas]] · [[gestión]] · [[github flow]] · [[trazabilidad]] · [[github]] · [[pr]]

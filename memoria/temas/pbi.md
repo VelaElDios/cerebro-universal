@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pbi» (este archivo se ge
 
 ## Temas relacionados
 
-[[tareas]] · [[scrum]] · [[donetonic]] · [[tarea]] · [[sprint]] · [[trazabilidad]] · [[pull-request]] · [[grada-colchonera]] · [[fechas]] · [[hitos]] · [[gestión]] · [[github flow]]
+[[tareas]] · [[scrum]] · [[donetonic]] · [[tarea]] · [[sprint]] · [[fechas]] · [[trazabilidad]] · [[pull-request]] · [[grada-colchonera]] · [[hitos]] · [[gestión]] · [[github flow]]

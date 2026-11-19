@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T08:22:10+01:00",
+ "generado": "2026-11-19T11:04:13+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -9519,13 +9519,33 @@
     "pbi",
     "tareas",
     "hito",
-    "tarea"
+    "tarea",
+    "fechas",
+    "pbis",
+    "sprint1"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md"
+  },
+  {
+   "id": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "tipo": "dato",
+   "titulo": "Fechas y estructura del Sprint 2 (6 fases + calidad, 29 PBIs, 50 tareas)",
+   "temas": [
+    "fases",
+    "fechas",
+    "pbis",
+    "sprint2",
+    "tareas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50.md"
   },
   {
    "id": "dato:fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29",
@@ -9652,7 +9672,10 @@
     "capturas",
     "requisitos",
     "sprints",
-    "trazabilidad"
+    "trazabilidad",
+    "donetonic",
+    "juego",
+    "produccion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -21624,7 +21647,7 @@
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 48,
+   "peso": 49,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
@@ -21666,7 +21689,7 @@
    "id": "tema:sprint2",
    "tipo": "tema",
    "titulo": "sprint2",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/sprint2.md"
   },
   {
@@ -23381,7 +23404,7 @@
    "id": "tema:juego",
    "tipo": "tema",
    "titulo": "juego",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/juego.md"
   },
   {
@@ -24697,21 +24720,21 @@
    "id": "tema:fechas",
    "tipo": "tema",
    "titulo": "fechas",
-   "peso": 2,
+   "peso": 4,
    "ruta": "memoria/temas/fechas.md"
   },
   {
    "id": "tema:tareas",
    "tipo": "tema",
    "titulo": "tareas",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/tareas.md"
   },
   {
    "id": "tema:fases",
    "tipo": "tema",
    "titulo": "fases",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/fases.md"
   },
   {
@@ -24720,6 +24743,20 @@
    "titulo": "hito",
    "peso": 1,
    "ruta": "memoria/temas/hito.md"
+  },
+  {
+   "id": "tema:pbis",
+   "tipo": "tema",
+   "titulo": "pbis",
+   "peso": 2,
+   "ruta": "memoria/temas/pbis.md"
+  },
+  {
+   "id": "tema:sprint1",
+   "tipo": "tema",
+   "titulo": "sprint1",
+   "peso": 1,
+   "ruta": "memoria/temas/sprint1.md"
   },
   {
    "id": "tema:tabla",
@@ -24755,6 +24792,13 @@
    "titulo": "sprints",
    "peso": 2,
    "ruta": "memoria/temas/sprints.md"
+  },
+  {
+   "id": "tema:produccion",
+   "tipo": "tema",
+   "titulo": "produccion",
+   "peso": 1,
+   "ruta": "memoria/temas/produccion.md"
   },
   {
    "id": "tema:fadd.d",
@@ -52813,6 +52857,21 @@
   },
   {
    "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:fechas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:pbis",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "tema:sprint1",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -52840,6 +52899,36 @@
    "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
    "a": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "tema:fases",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "tema:fechas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "tema:pbis",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "tema:sprint2",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29",
@@ -53159,6 +53248,21 @@
   {
    "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
    "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "a": "tema:produccion",
    "tipo": "trata"
   },
   {

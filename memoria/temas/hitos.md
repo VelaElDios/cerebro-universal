@@ -15,4 +15,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «hitos» (este archivo se 
 
 ## Temas relacionados
 
-[[sprint]] · [[grada-colchonera]] · [[saas]] · [[pbi]] · [[tarea]] · [[tareas]] · [[cronologia]] · [[donetonic]] · [[fases]] · [[fechas]] · [[scrum]] · [[memoria-procesos]]
+[[sprint]] · [[grada-colchonera]] · [[saas]] · [[pbi]] · [[tarea]] · [[fechas]] · [[tareas]] · [[cronologia]] · [[donetonic]] · [[fases]] · [[scrum]] · [[memoria-procesos]]

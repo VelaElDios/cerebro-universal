@@ -17,6 +17,12 @@
   "ultimo": "2026-11-17",
   "usos": 1
  },
+ "memoria/conocimiento/conceptos/historias-de-usuario-y-criterios-de-aceptacion-en-donetonic.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
+ },
  "memoria/conocimiento/conceptos/riesgo-raw-como-dependencia-de-datos-verdadera.md": {
   "bien": 1,
   "mal": 0,
@@ -27,7 +33,7 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg.md": {
   "bien": 0,
@@ -51,7 +57,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 10
+  "usos": 11
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -63,7 +69,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 6
+  "usos": 7
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
   "bien": 0,
@@ -117,7 +123,7 @@
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 14
+  "usos": 15
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -129,7 +135,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,
@@ -153,7 +159,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 4
+  "usos": 5
  },
  "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram.md": {
   "bien": 0,
@@ -177,7 +183,7 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 8
+  "usos": 9
  },
  "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
   "bien": 0,

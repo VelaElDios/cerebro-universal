@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "donetonic"
-notas: 48
+notas: 49
 ---
 # donetonic
 
@@ -57,6 +57,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 - 📊 [[memoria/conocimiento/datos/estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas|Estructura Sprint 2: 6 fases + Calidad, 29 PBIs, 50 tareas, fechas]]
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas|Fechas y estructura de los dos sprints con PBIs y tareas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs y tareas de los dos sprints]]
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]]
 - 📊 [[memoria/conocimiento/datos/migracion-004-y-endpoint-put-api-juego-identidad-para-mote-y|Migración 004 y endpoint PUT /api/juego/identidad para mote y avatar]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
@@ -72,4 +73,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[github-flow]] · [[pbi]] · [[backend]] · [[metricas]] · [[burndown]] · [[métricas]] · [[diseno-juego]]
+[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[github-flow]] · [[trazabilidad]] · [[pbi]] · [[memoria]] · [[backend]] · [[metricas]] · [[burndown]]

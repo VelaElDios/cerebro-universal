@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Temas relacionados
 
-[[tfg]] · [[trazabilidad]] · [[grada-colchonera]] · [[latex]] · [[memoria]] · [[saas]] · [[requisitos]] · [[sprints]] · [[donetonic]] · [[figuras]]
+[[tfg]] · [[trazabilidad]] · [[grada-colchonera]] · [[latex]] · [[memoria]] · [[saas]] · [[donetonic]] · [[requisitos]] · [[sprints]] · [[juego]] · [[produccion]] · [[figuras]]

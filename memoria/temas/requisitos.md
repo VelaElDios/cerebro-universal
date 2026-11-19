@@ -24,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «requisitos» (este archiv
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[memoria]] · [[tfg]] · [[trazabilidad]] · [[donetonic]] · [[scrum]] · [[latex]] · [[capturas]] · [[sprints]] · [[juego]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[donetonic]] · [[memoria]] · [[tfg]] · [[trazabilidad]] · [[juego]] · [[scrum]] · [[latex]] · [[capturas]] · [[sprints]]

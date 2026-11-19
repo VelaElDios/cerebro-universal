@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-19 06:16"
+actualizado: "2026-11-19 11:04"
 ---
 
 # memoria-procesos
@@ -20,19 +20,20 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- **Compilación**: FALLA con "Infinite glue shrinkage" en 6 capítulos. Se han aplicado parches en `preambulo.tex` (raggedbottom persistente en @float, mainmatter, frontmatter, backmatter, chapter, longtable, figure, table, adjustbox) y `\\*` en 6 longtables de `04-descripcion.tex`. Pendiente probar.
+- **Compilación**: FALLA con "Infinite glue shrinkage" en 6 capítulos. Parches en `preambulo.tex` (raggedbottom persistente en @float, mainmatter, frontmatter, backmatter, chapter, longtable, figure, table, adjustbox, @startsection, @outputpage) y `\\*` en 2 longtables de `a1-desarrollo.tex` (pendiente en el resto). Imagen `donetonic/06-graficas-sprint2.png` envuelta en `adjustbox{max totalheight=0.42\textheight}` en `a1-desarrollo.tex`.
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Pendiente: diagramas (Fig 3.1, 4.7), imágenes repetidas (DoneTonic), cadenas «La figura X muestra…», coherencia entre capítulos, secciones cortas.
-- **Contenido**: Todos los capítulos y anexos escritos con datos contrastados (26+ comprobaciones). Juego y Sprint 2 descritos; ningún capítulo dice que Hito 4 esté pendiente.
+- **Contenido**: Todos los capítulos y anexos escritos con datos contrastados (25+ comprobaciones). Juego y Sprint 2 descritos; ningún capítulo dice que Hito 4 esté pendiente.
 - **Anexo desarrollo**: Dos secciones sprint con mismo esquema; explica recta gráficas Sprint 2.
 - **Trazabilidad**: Anexo A4 con tabla completa 82 tareas.
 
 ## Siguiente
 1. Ejecutar `comando_prueba` tras parches de compilación.
-2. Si compila, envolver imágenes grandes en `adjustbox` con `max totalheight` y añadir `\\*` en longtables restantes.
-3. Reescribir prosa de manuales (Cap 4 y 4b) eliminando frases sueltas de figuras.
+2. Si compila, añadir `\\*` antes de `\bottomrule` en longtables restantes y envolver `produccion/02-actions-verde.png` en `adjustbox`.
+3. Corregir diagramas de secuencia (participantes no declarados).
 4. Eliminar imágenes repetidas de DoneTonic (usar `\ref`).
-5. Corregir diagramas TikZ y de secuencia según reglas 16-18.
-6. Fundir secciones cortas y unificar descripción del pipeline.
-7. Verificar que `verificar.py` y `revisar_maquetacion.py` pasan.
+5. Reescribir prosa de manuales (Cap 4 y 4b) eliminando frases sueltas de figuras.
+6. Corregir diagramas TikZ y de secuencia según reglas 16-18.
+7. Fundir secciones cortas y unificar descripción del pipeline.
+8. Verificar que `verificar.py` y `revisar_maquetacion.py` pasan.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

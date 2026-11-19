@@ -10800,3 +10800,44 @@ La compilación falla con "Infinite glue shrinkage" en 6 capítulos. La causa ra
 ⏱️ Solo quedan 206 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-19 10:39 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba sigue fallando con «Infinite glue shrinkage» y los errores de `04-descripcion.tex` caen justo en los `\pagebreak` forzados antes de `longtable`. En este paso elimino solo esos cinco saltos de página explícitos para que LaTeX parta las tablas de forma natural; no toco datos ni figuras.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [11] [12]
+- intento 2: el constructor no cambió ningún archivo
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para comprobar si desaparecen los «Infinite glue shrinkage» de `04-descripcion.tex`. Si persiste, repetir la misma limpieza en los capítulos que aún fallen (`04b-juego`, `05-evaluacion`, `a1-desarrollo`, `a4-trazabilidad`): quitar `\pagebreak` sueltos antes de `longtable`, envolver capturas altas en `adjustbox` con `max totalheight=0.42\textheight` y añadir `\\*` antes del `\bottomrule` de las tablas largas.
+
+## 2026-11-19 11:04 · Revisor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: FALLA con "Infinite glue shrinkage" en 6 capítulos (04-descripcion, 04b-juego, 05-evaluacion, 06-conclusiones, a1-desarrollo, a4-trazabilidad). Código de salida 1.
+- Imágenes demasiado altas: `donetonic/06-graficas-sprint2.png` (1806.75pt) en a1-desarrollo.tex:300 y `produccion/02-actions-verde.png` (1405.25pt) en 05-evaluacion.tex:214 superan `\textheight` incluso con `keepaspectratio` (regla 8: ninguna página con una sola imagen).
+- longtable sin `\\*` antes de `\bottomrule`: filas huérfanas en múltiples tablas (regla 7).
+- Diagramas de secuencia: warnings pgf "Returning node center instead of a point on node border" para nodos "mess from"/"mess to" no declarados con `\newthread`/`\newinst` (regla 16).
+- Imágenes repetidas: capturas DoneTonic en Cap 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y Anexo A1 (fig:donetonic-s2-graficas, fig:donetonic-s2-tablero, fig:donetonic-s2-detalle) (regla 10).
+- Prosa manuales: Cap 4 §6 y Cap 4b §2 usan frases sueltas "La figura X muestra…" en vez de integrar capturas en la explicación (regla 13).
+- Diagramas TikZ Fig 3.1 (capas) y Fig 4.7 (juego-arquitectura): >6 participantes, cajas que se pisan, flechas que atraviesan cajas (reglas 16-18).
+- Secciones de 1–2 líneas (ej. 04-descripcion §6.3 "Frontend", §6.4 "API") que hay que fundir (regla 9).
+- Pipeline CI/CD descrito en Cap 5 (fig:pipeline) pero Cap 3 lo vuelve a explicar en lugar de remitir con `\ref` (regla 14).
+- Datos contrastados: 25+ comprobaciones en paso anterior (cifras, fechas, PBIs, tareas, PRs, capturas, requisitos) coinciden con fuentes.
+
+La compilación falla por "Infinite glue shrinkage" causado por: (1) `\flushbottom` reactivado por `\mainmatter`/`\frontmatter`/`\backmatter` en Memoria.tex (protegido) tras cargar preambulo.tex; los parches actuales no bastan. (2) Dos imágenes superan `\textheight` (1806pt y 1405pt vs ~550pt útiles). (3) longtables sin `\\*` generan filas huérfanas que agravan el desbordamiento vertical. (4) Diagramas de secuencia con participantes no declarados. El constructor ha intentado quitar `\pagebreak` en 04-descripcion.tex y parchear preambulo.tex, pero persiste el error. Hay que reforzar `\raggedbottom` global, envolver imágenes altas en `adjustbox{max totalheight=0.42\textheight}`, añadir `\\*` en todas las longtables, y corregir los diagramas de secuencia. También hay que eliminar imágenes duplicadas (DoneTonic), reescribir la prosa de manuales, fundir secciones cortas y unificar la descripción del pipeline.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- ninguna
+
+## 2026-11-19 11:04 · 🧠 Conocimiento guardado
+
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50]]

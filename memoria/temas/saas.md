@@ -133,4 +133,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saas» (este archivo se g
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[sprint]] · [[scrum]] · [[donetonic]] · [[procesos]] · [[auth]] · [[oauth]] · [[correo]] · [[tfg]] · [[juego]] · [[game-design]] · [[latex]]
+[[grada-colchonera]] · [[sprint]] · [[scrum]] · [[donetonic]] · [[procesos]] · [[auth]] · [[oauth]] · [[juego]] · [[correo]] · [[tfg]] · [[game-design]] · [[latex]]
