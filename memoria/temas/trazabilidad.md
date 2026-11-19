@@ -28,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[anexo]] · [[longtable]] · [[capturas]] · [[gestión]] · [[github flow]] · [[scrum]] · [[done]] · [[memoria-procesos]] · [[donetonic]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[anexo]] · [[longtable]] · [[donetonic]] · [[capturas]] · [[gestión]] · [[github flow]] · [[scrum]] · [[github]] · [[pr]]

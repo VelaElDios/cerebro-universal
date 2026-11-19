@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "métricas"
-notas: 4
+notas: 5
 ---
 # métricas
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «métricas» (este archivo
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al|Burndown real vs DoneTonic en Sprint 2 (backlog registrado al cerrar)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mflops-millones-de-operaciones-de-punto-flotan|Definición de MFLOPS (Millones de Operaciones de Punto Flotante Por Segundo)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-mips-millones-de-instrucciones-por-segundo|Definición de MIPS (Millones de Instrucciones Por Segundo)]] · ⚠️ propuesto
 
@@ -19,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «métricas» (este archivo
 
 ## Temas relacionados
 
-[[ac]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[mflops]] · [[mips]] · [[donetonic]] · [[grada-colchonera]] · [[scrum]] · [[sprint]] · [[memoria-procesos]] · [[métrica]] · [[metricas]]
+[[donetonic]] · [[scrum]] · [[ac]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[burndown]] · [[mflops]] · [[mips]] · [[grada-colchonera]] · [[sprint]] · [[memoria-procesos]] · [[métrica]]

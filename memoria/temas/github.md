@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "github"
-notas: 1
+notas: 2
 ---
 # github
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «github» (este archivo se
 
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github|Flujo de trabajo enunciado → código → deploy (DoneTonic + GitHub)]]
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github|Trazabilidad requisito → PBI → tarea → PR en DoneTonic y GitHub]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[donetonic]] · [[grada-colchonera]] · [[saas]] · [[scrum]] · [[memoria-procesos]]
+[[scrum]] · [[donetonic]] · [[gestión]] · [[github flow]] · [[trazabilidad]] · [[pr]] · [[grada-colchonera]] · [[saas]] · [[memoria-procesos]]

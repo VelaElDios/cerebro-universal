@@ -12,15 +12,9 @@
 % -------------------------------
 
 
-% Forzar \raggedbottom global para evitar "Infinite glue shrinkage" al partir
-% longtables y figuras grandes. Se aplica ya en el frontmatter y se mantiene
-% en mainmatter.
+% Forzar \raggedbottom global DESDE EL INICIO para evitar "Infinite glue shrinkage"
+% al partir longtables y figuras grandes. Debe ir ANTES de \frontmatter en Memoria.tex.
 \raggedbottom
-
-% Además, redefinir \mainmatter para que no vuelva a activar \flushbottom.
-\makeatletter
-\renewcommand{\mainmatter}{\cleardoublepage\@mainmattertrue\pagenumbering{arabic}\raggedbottom}
-\makeatother
 
 % Parámetros de flotantes más permisivos para que figuras y tablas compartan página.
 \renewcommand{\topfraction}{0.9}

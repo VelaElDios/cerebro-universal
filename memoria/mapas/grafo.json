@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T00:55:06+01:00",
+ "generado": "2026-11-19T01:46:29+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1195,6 +1195,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2.md"
+  },
+  {
+   "id": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
+   "tipo": "concepto",
+   "titulo": "Burndown real vs DoneTonic en Sprint 2 (backlog registrado al cerrar)",
+   "temas": [
+    "burndown",
+    "donetonic",
+    "métricas",
+    "scrum"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al.md"
   },
   {
    "id": "concepto:bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo",
@@ -7844,7 +7860,10 @@
     "gestión",
     "github flow",
     "scrum",
-    "trazabilidad"
+    "trazabilidad",
+    "donetonic",
+    "github",
+    "pr"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -9191,6 +9210,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md"
+  },
+  {
+   "id": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "tipo": "dato",
+   "titulo": "Fechas y estructura de los dos sprints con PBIs y tareas",
+   "temas": [
+    "donetonic",
+    "pbi",
+    "sprint",
+    "tarea"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas.md"
   },
   {
    "id": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
@@ -20712,29 +20747,36 @@
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 45,
+   "peso": 48,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 51,
+   "peso": 52,
    "ruta": "memoria/temas/scrum.md"
   },
   {
    "id": "tema:burndown",
    "tipo": "tema",
    "titulo": "burndown",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/burndown.md"
   },
   {
    "id": "tema:sprint",
    "tipo": "tema",
    "titulo": "sprint",
-   "peso": 35,
+   "peso": 36,
    "ruta": "memoria/temas/sprint.md"
+  },
+  {
+   "id": "tema:métricas",
+   "tipo": "tema",
+   "titulo": "métricas",
+   "peso": 5,
+   "ruta": "memoria/temas/métricas.md"
   },
   {
    "id": "tema:broadcast",
@@ -21358,13 +21400,6 @@
    "titulo": "mflops",
    "peso": 1,
    "ruta": "memoria/temas/mflops.md"
-  },
-  {
-   "id": "tema:métricas",
-   "tipo": "tema",
-   "titulo": "métricas",
-   "peso": 4,
-   "ruta": "memoria/temas/métricas.md"
   },
   {
    "id": "tema:speedup",
@@ -23180,6 +23215,20 @@
    "ruta": "memoria/temas/github flow.md"
   },
   {
+   "id": "tema:github",
+   "tipo": "tema",
+   "titulo": "github",
+   "peso": 2,
+   "ruta": "memoria/temas/github.md"
+  },
+  {
+   "id": "tema:pr",
+   "tipo": "tema",
+   "titulo": "pr",
+   "peso": 1,
+   "ruta": "memoria/temas/pr.md"
+  },
+  {
    "id": "tema:caché",
    "tipo": "tema",
    "titulo": "caché",
@@ -23687,8 +23736,15 @@
    "id": "tema:pbi",
    "tipo": "tema",
    "titulo": "pbi",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/pbi.md"
+  },
+  {
+   "id": "tema:tarea",
+   "tipo": "tema",
+   "titulo": "tarea",
+   "peso": 2,
+   "ruta": "memoria/temas/tarea.md"
   },
   {
    "id": "tema:tareas",
@@ -23703,13 +23759,6 @@
    "titulo": "hito",
    "peso": 1,
    "ruta": "memoria/temas/hito.md"
-  },
-  {
-   "id": "tema:tarea",
-   "tipo": "tema",
-   "titulo": "tarea",
-   "peso": 1,
-   "ruta": "memoria/temas/tarea.md"
   },
   {
    "id": "tema:tabla",
@@ -25789,13 +25838,6 @@
    "titulo": "placeins",
    "peso": 1,
    "ruta": "memoria/temas/placeins.md"
-  },
-  {
-   "id": "tema:github",
-   "tipo": "tema",
-   "titulo": "github",
-   "peso": 1,
-   "ruta": "memoria/temas/github.md"
   },
   {
    "id": "tema:cpu-time",
@@ -28765,6 +28807,31 @@
    "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
    "a": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
+   "a": "tema:burndown",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
+   "a": "tema:métricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "concepto:bus-comun-de-datos-cdb-en-el-algoritmo-de-tomasulo",
@@ -47238,6 +47305,21 @@
   },
   {
    "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "tema:github",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "tema:pr",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -51095,6 +51177,31 @@
    "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
    "a": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "tema:pbi",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "tema:sprint",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "tema:tarea",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",

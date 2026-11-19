@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-19 00:51"
+actualizado: "2026-11-19 01:43"
 ---
 
 # memoria-procesos
@@ -20,16 +20,20 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- **Compilación**: FALLA con "Infinite glue shrinkage" en múltiples capítulos. Se ha aplicado fix global `\raggedbottom` en `elements/preambulo.tex` (pendiente de probar).
-- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Pendiente: diagramas (Fig 3.1, 4.7, 3.4), páginas con una sola imagen, cadenas «La figura X muestra…», coherencia entre capítulos.
+- **Compilación**: FALLA con "Infinite glue shrinkage" en múltiples capítulos. Se ha movido `\raggedbottom` al inicio de `elements/preambulo.tex` (antes de `\frontmatter` en Memoria.tex) y ajustado parámetros de flotantes. Pendiente probar.
+- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Pendiente: diagramas (Fig 3.1, 4.7, 3.4), páginas con una sola imagen, cadenas «La figura X muestra…», coherencia entre capítulos, tablas anchas, secciones cortas.
 - **Contenido**: Todos los capítulos y anexos escritos con datos contrastados. Juego y Sprint 2 descritos; ningún capítulo dice que Hito 4 esté pendiente.
 - **Anexo desarrollo**: Dos secciones sprint con mismo esquema; explica recta gráficas Sprint 2.
 - **Trazabilidad**: Anexo A4 con tabla completa 82 tareas (pendiente compilar para verificar márgenes).
 
 ## Siguiente
 1. Ejecutar `comando_prueba` tras el cambio en `elements/preambulo.tex`.
-2. Si compila, corregir diagramas según `revisar_figuras.py` y comentarios de Javier.
-3. Revisar prosa de manuales (capítulos 4 y 4b) eliminando frases sueltas de figuras.
-4. Verificar que `verificar.py` y `revisar_maquetacion.py` pasan.
+2. Si compila, corregir longtables anchas (anchos ≤ \linewidth con `@{}`) y diagramas de secuencia (`adjustbox` con `max totalheight`).
+3. Reducir altura de subfiguras altas (`fig:hito4-flujo`, `fig:juego-club-pantallas-a/b`).
+4. Reescribir prosa de manuales (capítulos 4 y 4b) eliminando frases sueltas de figuras.
+5. Eliminar imágenes repetidas de DoneTonic (usar `\ref`).
+6. Corregir diagramas TikZ según Javier (Fig 3.1, 4.7).
+7. Fundir secciones cortas y unificar descripción del pipeline.
+8. Verificar que `verificar.py` y `revisar_maquetacion.py` pasan.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

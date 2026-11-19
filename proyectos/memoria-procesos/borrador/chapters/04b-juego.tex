@@ -297,7 +297,7 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{j}{Jugador}
   \newinst[2]{fe}{Frontend (juego.js + api.js)}
@@ -330,7 +330,8 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
       \mess{api}{200 recompensas y logros}{fe}
     \end{sdblock}
   \end{call}
-\end{sequencediagram}}
+\end{sequencediagram}
+\end{adjustbox}
 \caption{Una partida del juego con validación en el servidor.}
 \label{fig:sec-partida}
 \end{figure}
@@ -342,7 +343,7 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{p1}{Peticion 1}
   \newthread{p2}{Peticion 2 doble clic}
@@ -366,7 +367,8 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
   \end{call}
   \mess{srv}{409 no tienes fichas de contrato}{p2}
   \mess{srv}{200 fichado y perfil}{p1}
-\end{sequencediagram}}
+\end{sequencediagram}
+\end{adjustbox}
 \caption{Contratar con concurrencia optimista.}
 \label{fig:sec-contratar}
 \end{figure}

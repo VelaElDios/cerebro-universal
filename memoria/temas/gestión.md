@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «gestión» (este archivo 
 
 ## Temas relacionados
 
-[[github flow]] · [[scrum]] · [[trazabilidad]]
+[[github flow]] · [[scrum]] · [[trazabilidad]] · [[donetonic]] · [[github]] · [[pr]]

@@ -341,7 +341,7 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[2]{fe}{Frontend (Vista + api.js)}
@@ -370,7 +370,8 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
       \end{call}
     \end{sdblock}
   \end{call}
-\end{sequencediagram}}
+\end{sequencediagram}
+\end{adjustbox}
 \caption{Registro con email y contraseña.}
 \label{fig:sec-registro}
 \end{figure}
@@ -382,7 +383,7 @@ Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la c
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[2]{a}{API confirmar}
@@ -408,7 +409,8 @@ Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la c
   \begin{call}{u}{carga la web}{w}{ok}
   \end{call}
   \mess{w}{muestra aviso y lo quita de la URL}{w}
-\end{sequencediagram}}
+\end{sequencediagram}
+\end{adjustbox}
 \caption{Confirmación con el enlace del correo.}
 \label{fig:sec-confirmacion}
 \end{figure}
@@ -420,7 +422,7 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[2]{v}{Vista entrar}
@@ -446,7 +448,8 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
       \mess{c}{ponerUsuario ir a jugar}{v}
     \end{sdblock}
   \end{call}
-\end{sequencediagram}}
+\end{sequencediagram}
+\end{adjustbox}
 \caption{Inicio de sesión local.}
 \label{fig:sec-login}
 \end{figure}
@@ -458,7 +461,7 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Navegador}
   \newinst[2]{a}{API Google}
@@ -490,7 +493,8 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
     \end{call}
     \mess{a}{303 ir a jugar}{u}
   \end{sdblock}
-\end{sequencediagram}}
+\end{sequencediagram}
+\end{adjustbox}
 \caption{Inicio de sesión con Google OAuth 2.0.}
 \label{fig:sec-google}
 \end{figure}
@@ -502,7 +506,7 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
 
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[2]{v}{Vista perfil}
@@ -526,7 +530,8 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
     \mess{s}{status deleted suelta mote y email}{a}
     \mess{a}{204 aviso y vuelta al inicio}{v}
   \end{sdblock}
-\end{sequencediagram}}
+\end{sequencediagram}
+\end{adjustbox}
 \caption{Darse de baja.}
 \label{fig:sec-baja}
 \end{figure}

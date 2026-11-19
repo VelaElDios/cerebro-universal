@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scrum"
-notas: 51
+notas: 52
 ---
 # scrum
 
@@ -37,6 +37,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al|Burndown real vs DoneTonic en Sprint 2 (backlog registrado al cerrar)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2|Burndown real vs. burndown de DoneTonic en Sprint 2]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza|Cinco ambientes con cambio de luz, afición y fuerza]]
 - 💡 [[memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2|Convención de ramas y PRs por sprint (Sprint 1 vs Sprint 2)]]
@@ -75,4 +76,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[donetonic]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[git]] · [[memoria]] · [[tfg]] · [[backend]] · [[github-flow]] · [[diseno-juego]] · [[api]]
+[[grada-colchonera]] · [[donetonic]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[git]] · [[memoria]] · [[tfg]] · [[backend]] · [[github-flow]] · [[burndown]] · [[métricas]]
