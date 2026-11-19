@@ -45,13 +45,13 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 8
+  "usos": 9
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -93,13 +93,13 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes.md": {
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 4
+  "usos": 5
  },
  "memoria/conocimiento/datos/requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto.md": {
   "bien": 0,

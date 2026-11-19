@@ -10672,3 +10672,23 @@ La compilación sigue fallando por "Infinite glue shrinkage" a pesar de reducir 
 ## 2026-11-19 04:37 · 🧠 Conocimiento guardado
 
 [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]]
+
+## 2026-11-19 05:29 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La compilación sigue fallando con «Infinite glue shrinkage» en varios capítulos, y el revisor señaló que `\raggedbottom` no se mantiene porque algo vuelve a activar `\flushbottom`. Refuerzo el parche en `elements/preambulo.tex`: convierto `\flushbottom` en `\raggedbottom`, mantengo el parche de `\mainmatter` y `\chapter`, y añado `\raggedbottom` al inicio de cada `longtable` para que el modo no se pierda al partir tablas.
+
+**Archivos:** `(cambio) elements/preambulo.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:35: Infinite glue shrinkage found in box being split [10] [11]
+- intento 2: no hay IA disponible a tiempo (Sin tiempo para llamar a openrouter-grandes (nvidia/nemotron-3-ultra-550b-a55b:free))
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para comprobar si desaparece el «Infinite glue shrinkage». Si sigue fallando, el siguiente paso es reducir el uso de `adjustbox` con `max totalheight` en los diagramas de secuencia grandes (sustituirlo por `\resizebox{\textwidth}{!}{...}` solo cuando sea necesario) y añadir `\\*` en las últimas filas de las `longtable` grandes; después, si compila, reescribir la prosa de los manuales de los capítulos 4 y 4b eliminando frases sueltas «La figura X muestra…».
+
+## 2026-11-19 05:29 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 26 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
