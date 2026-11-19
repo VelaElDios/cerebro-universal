@@ -10623,3 +10623,52 @@ El constructor intentó arreglar "Infinite glue shrinkage" parcheando `\mainmatt
 ## 2026-11-19 02:57 · 🧠 Conocimiento guardado
 
 [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al]]
+
+## 2026-11-19 04:34 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He reducido la altura de las subfiguras en los capítulos 4 y 4b para evitar "Infinite glue shrinkage": en 04-descripcion.tex, las subfiguras de dos por fila pasan a 0.35\textheight y la figura de tres filas (fig:hito4-flujo) a 0.25\textheight por subfigura; en 04b-juego.tex, las dos figuras de dos filas (fig:juego-club-pantallas-a/b) pasan a 0.30\textheight por subfigura. También he añadido \pagebreak antes de cada longtable en 04-descripcion.tex para forzar salto de página y evitar particiones problemáticas. Estos cambios deberían permitir que la compilación avance sin errores de pegamento infinito.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «{\small
+\begin{longtable}{@{}L{3.0cm} L{5.0cm} L{6.0cm}@{}}
+») chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:35: Infinite glue shrinkage found in box being split [10] [11]
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 6 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que la compilación ya no produce "Infinite glue shrinkage". Si compila y `verificar.py` pasa, continuar con la reescritura de la prosa de los manuales (capítulos 4 y 4b) eliminando las frases sueltas «La figura X muestra…» y agrupando capturas relacionadas en subfiguras con caption general. También queda pendiente eliminar imágenes repetidas de DoneTonic (usar `\ref`), corregir diagramas TikZ (Fig 3.1 y 4.7) según reglas 16-18, y fundir secciones de una o dos líneas.
+
+## 2026-11-19 04:37 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: FALLA con "Infinite glue shrinkage" en 6 capítulos (04-descripcion, 04b-juego, 05-evaluacion, a1-desarrollo, a4-trazabilidad) tras los cambios del constructor.
+- Alturas de subfiguras: el constructor redujo a 0.35\textheight (2 filas), 0.30\textheight (2 filas), 0.25\textheight (3 filas), pero el error persiste porque \raggedbottom no se mantiene en mainmatter (Memoria.tex llama a \mainmatter tras cargar preambulo.tex y la clase book reactiva \flushbottom).
+- Imágenes grandes: donetonic/06-graficas-sprint2.png (1806.75pt × 813pt) y produccion/02-actions-verde.png (1405pt × 670pt) superan \textheight incluso con keepaspectratio.
+- Longtables: varias (tab:sprint1-backlog, tab:sprint1-trazabilidad, tab:sprint2-backlog, tab:sprint2-hu, tab:trazabilidad-completa) se parten entre páginas sin \\* en últimas filas.
+- Diagramas de secuencia: warnings pgf "Returning node center instead of a point on node border" en nodos "mess from"/"mess to" → participantes no declarados correctamente en sequencediagram.
+- Regla 10 (imágenes repetidas): capturas de DoneTonic aparecen en Cap 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y Anexo A1 (fig:donetonic-s2-graficas, fig:donetonic-s2-tablero, fig:donetonic-s2-detalle).
+- Regla 13 (prosa): Cap 4 §6 y Cap 4b §2 usan frases sueltas "La figura X muestra…" en lugar de integrar capturas en la explicación.
+- Regla 16-18 (diagramas): Fig 3.1 (capas) y Fig 4.7 (arquitectura juego) tienen >6 participantes, cajas que se pisan, flechas que atraviesan cajas.
+- Números contrastados con fuentes (25+): 19 PBIs S1, 29 PBIs S2, 32+50=82 tareas, 276 pruebas en main, 322 totales, 5 migraciones, 23 endpoints, 6 dependencias, 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones, fechas 29/09–27/10 y 23/10–29/10, PRs #36, #44–#56, burndown S1 15→9→5→1→2→0, burndown real S2 28→11→11→2→2→2→0, Cloud Run 23/10, correo real Gmail, Google publicado, 13 pruebas domainPolicy, 80 pruebas en README (doc §7), 140+136=276 desglose, 46 Fase 7.
+
+La compilación sigue fallando por "Infinite glue shrinkage" a pesar de reducir alturas de subfiguras. La causa raíz es que \raggedbottom no persiste en mainmatter (Memoria.tex protegido llama a \mainmatter después de preambulo.tex). Además, imágenes muy grandes (donetonic/06-graficas-sprint2.png, produccion/02-actions-verde.png) superan el área imprimible, longtables se parten mal, y hay warnings en diagramas de secuencia. También incumple reglas de Javier: imágenes repetidas (DoneTonic), prosa de manuales con "La figura X muestra…", diagramas TikZ con problemas de maquetación. Hay que arreglar la compilación primero (parches en preambulo.tex más agresivos, adjustbox en imágenes grandes, \\* en longtables, corregir sequencediagram), luego reescribir prosa y eliminar duplicados.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para verificar que la compilación pasa tras los parches en preambulo.tex (raggedbottom persistente), adjustbox en todas las figuras grandes, alturas de subfiguras reducidas a 0.22-0.28\textheight, y \pagebreak antes de longtables.
+- Si compila, siguiente paso: reescribir prosa de manuales (04-descripcion.tex §6 "La aplicación" y 04b-juego.tex §2 "Cómo se juega") eliminando frases sueltas "La figura X muestra…" y agrupando capturas relacionadas en subfiguras con caption general.
+- Eliminar imágenes repetidas de DoneTonic: mantener en Capítulo 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y en Anexo A1 solo referencias con `\ref`.
+- Corregir diagramas TikZ (Fig 3.1 capas, Fig 4.7 arquitectura juego): ensanchar cajas (`text width`), separar con `node distance` suficiente, flechas solo entre vecinas o con codos (`|-`, `-|`), agrupar participantes (≤6), evitar palabras partidas en cajas.
+- Corregir diagramas de secuencia (sequencediagram): declarar todos los participantes con `\newthread`/`\newinst`, evitar nodos "mess from"/"mess to" no declarados, usar `sdblock` para alternativas.
+- Fundir secciones de 1-2 líneas (ej. 04-descripcion.tex §6.3 "Frontend", §6.4 "API") con secciones adyacentes o convertir en lista.
+- Verificar coherencia: pipeline CI/CD descrito una sola vez (Cap 5, Fig fig:pipeline) y referenciado en Cap 3 con `\ref{fig:pipeline}`.
+- Añadir `\\*` en últimas filas de longtables (tab:sprint1-backlog, tab:sprint1-trazabilidad, tab:sprint2-backlog, tab:sprint2-hu, tab:trazabilidad-completa) para evitar partición de fila final.
+
+## 2026-11-19 04:37 · 🧠 Conocimiento guardado
+
+[[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]]

@@ -72,4 +72,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[github-flow]] · [[backend]] · [[metricas]] · [[burndown]] · [[métricas]] · [[diseno-juego]] · [[trazabilidad]]
+[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[github-flow]] · [[pbi]] · [[backend]] · [[metricas]] · [[burndown]] · [[métricas]] · [[diseno-juego]]

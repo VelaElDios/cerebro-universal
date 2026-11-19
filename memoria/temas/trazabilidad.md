@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "trazabilidad"
-notas: 11
+notas: 13
 ---
 # trazabilidad
 
@@ -19,6 +19,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]]
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha|Inventario de capturas con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-por-carpeta-con-fechas-y-requisitos|Inventario de capturas por carpeta con fechas y requisitos]] · ⚠️ propuesto
@@ -26,7 +27,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad|Requisitos funcionales del Sprint 1 (13 RF) con trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re|Tabla de trazabilidad Sprint 1: PBI → Hito → Título → Tareas → PRs → Release]]
 - 📊 [[memoria/conocimiento/datos/tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr|Tabla de trazabilidad Sprint 2: PBI → Etiqueta → Título → Tareas → PRs → Hecho → Estado]]
+- 📊 [[memoria/conocimiento/datos/trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas|Trazabilidad completa requisito → PBI → tarea → PR (82 tareas)]]
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[capturas]] · [[anexo]] · [[longtable]] · [[donetonic]] · [[memoria]] · [[tfg]] · [[requisitos]] · [[gestión]] · [[github flow]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[capturas]] · [[tfg]] · [[anexo]] · [[longtable]] · [[donetonic]] · [[pbi]] · [[pull-request]] · [[memoria]] · [[requisitos]]

@@ -167,5 +167,56 @@
  },
  "04e54ef4f9750639a182a16d795e9a25": {
   "ok": true
+ },
+ "24acb05a891e5735b0093452139f5ec0": {
+  "ok": false,
+  "problemas": [
+   "La palabra 're-positories' está partida dentro de la caja de datos (src/repositories)."
+  ]
+ },
+ "73c58fc2445660ef4e83304ad6b5984f": {
+  "ok": true
+ },
+ "0b7f464bf4f282fdf70b2607f19dae90": {
+  "ok": true
+ },
+ "6b5bd4fcaa019fe1375a0c5e55f3106e": {
+  "ok": true
+ },
+ "571e6ed02e206429cfa1885a20d7ef21": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta que va desde userService hasta API login atraviesa verticalmente los bloques de activación superpuestos en API login en la parte superior."
+  ]
+ },
+ "9242939a299cbc6b51e464645a571703": {
+  "ok": false,
+  "problemas": [
+   "En la seccion 'alt' del diagrama Figura 3.6, la etiqueta 'state falso o cancelado' sobreescribe o se cruza con el borde superior de la caja del bloque alt."
+  ]
+ },
+ "9a17f00855ef3b89c9fa282d623435fa": {
+  "ok": false,
+  "problemas": [
+   "En el bloque alt 'último administrador', la flecha etiquetada '403 debe quedar un admin' atraviesa o se superpone con la línea de vida y texto del userService."
+  ]
+ },
+ "98a693f7d858f4723298df4a0e6eeb58": {
+  "ok": true
+ },
+ "8c04ceb8131e6866e35258d94ad00576": {
+  "ok": true
+ },
+ "f6bee023b6b32f80408e8471a6b22b3f": {
+  "ok": true
+ },
+ "3701dd3e848893651847d3931c1ea847": {
+  "ok": true
+ },
+ "5226807e95d19055880b83a5851cffdd": {
+  "ok": true
+ },
+ "32148c4488068c33234c0d3179451054": {
+  "ok": true
  }
 }

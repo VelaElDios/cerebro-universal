@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T03:26:53+01:00",
+ "generado": "2026-11-19T04:37:47+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -9474,7 +9474,10 @@
     "donetonic",
     "grada-colchonera",
     "scrum",
-    "sprint"
+    "sprint",
+    "fechas",
+    "pbi",
+    "tareas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -9620,6 +9623,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/inicializacion-del-selector-y-bits-de-prediccion-en-predicto.md"
+  },
+  {
+   "id": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "tipo": "dato",
+   "titulo": "Inventario de capturas con trazabilidad a requisitos y fechas",
+   "temas": [
+    "capturas",
+    "tfg",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/datos/inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha.md"
   },
   {
    "id": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
@@ -11398,6 +11416,22 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/tasa-de-aciertos-de-predictor-1-bit-inicializado-a-0-con-sal.md"
+  },
+  {
+   "id": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "tipo": "dato",
+   "titulo": "Trazabilidad completa requisito → PBI → tarea → PR (82 tareas)",
+   "temas": [
+    "pbi",
+    "pull-request",
+    "tareas",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/datos/trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas.md"
   },
   {
    "id": "dato:trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs",
@@ -21163,7 +21197,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 53,
+   "peso": 54,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -24089,7 +24123,7 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 11,
+   "peso": 13,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -24124,14 +24158,14 @@
    "id": "tema:pbi",
    "tipo": "tema",
    "titulo": "pbi",
-   "peso": 3,
+   "peso": 5,
    "ruta": "memoria/temas/pbi.md"
   },
   {
    "id": "tema:pull-request",
    "tipo": "tema",
    "titulo": "pull-request",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/pull-request.md"
   },
   {
@@ -24660,25 +24694,25 @@
    "ruta": "memoria/temas/qi.md"
   },
   {
-   "id": "tema:fases",
-   "tipo": "tema",
-   "titulo": "fases",
-   "peso": 1,
-   "ruta": "memoria/temas/fases.md"
-  },
-  {
    "id": "tema:fechas",
    "tipo": "tema",
    "titulo": "fechas",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/fechas.md"
   },
   {
    "id": "tema:tareas",
    "tipo": "tema",
    "titulo": "tareas",
-   "peso": 2,
+   "peso": 4,
    "ruta": "memoria/temas/tareas.md"
+  },
+  {
+   "id": "tema:fases",
+   "tipo": "tema",
+   "titulo": "fases",
+   "peso": 1,
+   "ruta": "memoria/temas/fases.md"
   },
   {
    "id": "tema:hito",
@@ -24712,7 +24746,7 @@
    "id": "tema:capturas",
    "tipo": "tema",
    "titulo": "capturas",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/capturas.md"
   },
   {
@@ -52639,6 +52673,21 @@
   },
   {
    "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "a": "tema:fechas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "a": "tema:pbi",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -53046,6 +53095,26 @@
    "de": "dato:inicializacion-del-selector-y-bits-de-prediccion-en-predicto",
    "a": "dato:estado-inicial-de-predictores-y-contadores-en-el-ejercicio-d",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
@@ -58146,6 +58215,31 @@
    "de": "dato:tasa-de-aciertos-de-predictor-1-bit-inicializado-a-0-con-sal",
    "a": "receta:predictor-de-un-nivel-con-1-bit-por-instruccion-de-salto-est",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "a": "tema:pbi",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "a": "tema:pull-request",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs",

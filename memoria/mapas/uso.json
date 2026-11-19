@@ -51,7 +51,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 7
+  "usos": 8
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -63,7 +63,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
   "bien": 0,
@@ -117,7 +117,7 @@
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 10
+  "usos": 11
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -137,16 +137,28 @@
   "ultimo": "2026-11-17",
   "usos": 1
  },
+ "memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
+ },
+ "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
+ },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm.md": {
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 5
+  "usos": 6
  }
 }
