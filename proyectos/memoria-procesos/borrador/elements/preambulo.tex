@@ -15,6 +15,9 @@
 % Forzar \raggedbottom global DESDE EL INICIO para evitar "Infinite glue shrinkage"
 % al partir longtables y figuras grandes.
 \raggedbottom
+% Tolerancias extra para que LaTeX no fuerce estiramiento infinito de pegamento vertical.
+\vfuzz=20pt
+\vbadness=10000
 % La clase book puede llamar a \flushbottom en \mainmatter, \frontmatter, \backmatter;
 % lo convertimos en \raggedbottom para que no vuelva a aparecer aunque algo lo invoque después.
 \let\oldflushbottom\flushbottom
@@ -53,6 +56,12 @@
 % Reducir espacio alrededor de longtables.
 \setlength{\LTpre}{0pt}
 \setlength{\LTpost}{0pt}
+
+% Evitar que \cleardoublepage inserte páginas en blanco con \flushbottom.
+\makeatletter
+\renewcommand{\cleardoublepage}{\clearpage\if@twoside\ifodd\c@page\else
+  \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
 
 % -------------------------------
 % Declaración de autoría

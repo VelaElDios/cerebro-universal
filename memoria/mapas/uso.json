@@ -26,8 +26,8 @@
  "memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra.md": {
   "bien": 1,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 1
+  "ultimo": "2026-11-19",
+  "usos": 2
  },
  "memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg.md": {
   "bien": 0,
@@ -63,13 +63,13 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 5
+  "usos": 6
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 4
+  "usos": 5
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -117,7 +117,7 @@
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 13
+  "usos": 14
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -177,6 +177,12 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 7
+  "usos": 8
+ },
+ "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
  }
 }

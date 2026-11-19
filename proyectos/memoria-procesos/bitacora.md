@@ -10776,3 +10776,27 @@ La compilación falla con "Infinite glue shrinkage" debido a dos capturas demasi
 ⏱️ Solo quedan 227 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-19 08:05 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+La compilación falla con "Infinite glue shrinkage" en 6 capítulos. La causa raíz es que la clase `book` reactiva `\flushbottom` en `\mainmatter`/`\frontmatter`/`\backmatter` y las `longtable`/figuras grandes superan el área imprimible. El parche actual en `preambulo.tex` no basta. Voy a reforzar `preambulo.tex` con `\vfuzz`/`\vbadness` y parches más robustos, y a añadir `\\*` antes de `\bottomrule` en todas las `longtable` de `04-descripcion.tex` para evitar filas huérfanas que agravan el desbordamiento vertical.
+
+**Archivos:** `(cambio) elements/preambulo.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «{\small
+\begin{longtable}{@{}L{3.5cm} L{10.5cm}@{}}
+\caption») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «{\small
+\begin{longtable}{@{}L{3.0cm} L{5.0cm} L{6.0cm}@{}}
+») chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:35: Infinite glue shrinkage found in box being split [12] [13]
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 3 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que la compilación ya no produce "Infinite glue shrinkage". Si persiste, el siguiente paso será añadir `\\*` antes de `\bottomrule` en las longtables de los demás capítulos afectados (04b-juego, 05-evaluacion, 06-conclusiones, a1-desarrollo, a4-trazabilidad) y revisar las imágenes altas con `adjustbox` en esos archivos.
+
+## 2026-11-19 08:05 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 206 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
