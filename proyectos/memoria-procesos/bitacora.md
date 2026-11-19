@@ -10756,3 +10756,23 @@ Lo que está bien: datos contrastados con fuentes (25+ comprobaciones arriba), e
 
 **Tareas para el constructor:**
 - ninguna
+
+## 2026-11-19 07:05 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+La compilación falla con "Infinite glue shrinkage" debido a dos capturas demasiado altas (donetonic/06-graficas-sprint2.png y produccion/02-actions-verde.png) que superan \textheight incluso con keepaspectratio. Se corrige envolviendo estas imágenes en adjustbox con max totalheight=0.42\textheight para limitar su altura real en la página, lo que debería eliminar el desbordamiento vertical y permitir que LaTeX componga las páginas sin contraer el pegamento infinitamente.
+
+**Archivos:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:35: Infinite glue shrinkage found in box being split [10] [11]
+- intento 2: no se hace, queda poco tiempo de paso (⏱️ 3 min); se sigue en el próximo paso
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que la compilación ya no produce "Infinite glue shrinkage". Si persiste, el siguiente paso será añadir `\\*` antes de `\bottomrule` en las longtables de los capítulos afectados y reforzar `\raggedbottom` en `elements/preambulo.tex` con `\vfuzz` y `\vbadness`.
+
+## 2026-11-19 07:05 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 227 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.

@@ -45,7 +45,7 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 4
+  "usos": 5
  },
  "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
   "bien": 0,
@@ -93,7 +93,7 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes.md": {
   "bien": 2,
@@ -117,13 +117,13 @@
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 12
+  "usos": 13
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos.md": {
   "bien": 0,
@@ -177,6 +177,6 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 6
+  "usos": 7
  }
 }
