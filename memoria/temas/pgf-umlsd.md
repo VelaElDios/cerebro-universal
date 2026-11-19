@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgf-umlsd"
-notas: 10
+notas: 12
 ---
 # pgf-umlsd
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
@@ -25,10 +26,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Lecciones (errores ya resueltos)
 
+- ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/pgf-umlsd-y-comandos-fragiles-en-sequencediagram|pgf-umlsd y comandos frágiles en sequencediagram]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/rutas-largas-en-texttt-causan-overfull-hbox|Rutas largas en \texttt{} causan overfull hbox]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[diagramas]] · [[tikz]] · [[secuencia]] · [[sequencediagram]] · [[codigos estado]] · [[http]] · [[diagramas-secuencia]]
+[[latex]] · [[diagramas-secuencia]] · [[diagramas]] · [[tikz]] · [[secuencia]] · [[sequencediagram]] · [[codigos estado]] · [[http]] · [[maquetacion]]

@@ -16,4 +16,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subcaption» (este archiv
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[maquetacion]] · [[tfg]] · [[subfigure]] · [[figura]]
+[[latex]] · [[figuras]] · [[maquetacion]] · [[subfigure]] · [[tfg]] · [[capturas]] · [[figura]]

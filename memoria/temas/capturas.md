@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "capturas"
-notas: 4
+notas: 7
 ---
 # capturas
 
@@ -9,7 +9,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex|Cómo agrupar capturas relacionadas con subfigure en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
+- 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Limitar altura de capturas para evitar páginas con una sola imagen]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-vs-lista-de-capturas-regla-13-javier|Prosa de TFG vs lista de capturas (regla 13 Javier)]] · ⚠️ propuesto
 
 ## Datos
 
@@ -19,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Temas relacionados
 
-[[tfg]] · [[trazabilidad]] · [[grada-colchonera]] · [[latex]] · [[memoria]] · [[saas]] · [[donetonic]] · [[requisitos]] · [[sprints]] · [[juego]] · [[produccion]] · [[figuras]]
+[[latex]] · [[tfg]] · [[trazabilidad]] · [[figuras]] · [[grada-colchonera]] · [[memoria]] · [[saas]] · [[donetonic]] · [[maquetacion]] · [[subfigure]] · [[requisitos]] · [[sprints]]

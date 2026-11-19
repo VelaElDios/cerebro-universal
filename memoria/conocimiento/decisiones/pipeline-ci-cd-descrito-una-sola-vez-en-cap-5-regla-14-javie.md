@@ -1,0 +1,30 @@
+---
+tipo: "decision"
+titulo: "Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)"
+temas: ["cicd", "coherencia", "latex", "pipeline"]
+claves: ["pipeline duplicado", "\\ref{fig:pipeline}", "coherencia entre capítulos"]
+proyectos: ["memoria-procesos"]
+fuentes: ["memoria/reglas-tfg.md"]
+confianza: "propuesto"
+fecha: "2026-11-19"
+actualizado: "2026-11-19"
+---
+
+Temas: [[cicd]] · [[coherencia]] · [[latex]] · [[pipeline]]
+
+|
+  La descripción completa del pipeline CI/CD (Figura~\ref{fig:pipeline}, Tabla~\ref{tab:workflows}, captura Figura~\ref{fig:actions-verde}) va **solo en el Capítulo 5 (Evaluación)**.
+  
+  En el Capítulo 3 (Propuesta) y en el Anexo A1 (Desarrollo), donde se menciona el CI/CD:
+  - **No** repetir la descripción del pipeline
+  - **Sí** remitir con `\ref{fig:pipeline}` y `\ref{tab:workflows}` a la explicación del Cap 5
+  - Ejemplo: "El pipeline completo (pruebas con PostgreSQL 17, imagen Docker y despliegue en Cloud Run) se describe una sola vez, en el Capítulo~\ref{cap:evaluacion}, Figura~\ref{fig:pipeline}."
+  
+  Esto evita duplicados, asegura coherencia y cumple la regla 14 de Javier.
+
+> Coherencia: el mismo dato se cuenta igual en todos los capítulos, y sin repetir párrafos enteros entre capítulos (por ejemplo, la descripción del pipeline: se explica una vez y en el resto se remite a ella).
+> — `memoria/reglas-tfg.md` (cita sin comprobar)
+
+Relacionado: [[prosa-de-tfg-vs-lista-de-capturas]]
+
+Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

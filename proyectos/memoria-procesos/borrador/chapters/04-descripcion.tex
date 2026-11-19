@@ -442,18 +442,15 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
     \begin{sdblock}{alt}{email desconocido o contraseña mala}
       \mess{s}{401 mismo mensaje}{a}
     \end{sdblock}
-    \mess{a}{}{a}
     \begin{sdblock}{alt}{cuenta pendiente}
       \mess{s}{403 cuenta pendiente}{a}
       \mess{a}{muestra reenviar correo}{v}
     \end{sdblock}
-    \mess{a}{}{a}
     \begin{sdblock}{alt}{correcto}
       \mess{a}{200 usuario y cookie}{c}
       \mess{c}{ponerUsuario ir a jugar}{v}
     \end{sdblock}
   \end{call}
-  \mess{a}{}{a}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Inicio de sesión local.}
@@ -487,11 +484,9 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
   \end{call}
   \begin{call}{a}{compara state}{ss}{ok}
   \end{call}
-  \mess{a}{}{a}
   \begin{sdblock}{alt}{state falso o cancelado}
     \mess{a}{303 aviso google error}{u}
   \end{sdblock}
-  \mess{a}{}{a}
   \begin{sdblock}{alt}{state correcto}
     \begin{call}{a}{POST token a Google}{g}{id perfil}
     \end{call}
@@ -501,7 +496,6 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
     \end{call}
     \mess{a}{303 ir a jugar}{u}
   \end{sdblock}
-  \mess{a}{}{a}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Inicio de sesión con Google OAuth 2.0.}
@@ -532,16 +526,13 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
   \end{call}
   \begin{call}{a}{deleteUser}{s}{ok}
   \end{call}
-  \mess{s}{}{s}
   \begin{sdblock}{alt}{último administrador}
     \mess{s}{403 debe quedar un admin}{a}
   \end{sdblock}
-  \mess{s}{}{s}
   \begin{sdblock}{alt}{baja logica}
     \mess{s}{status deleted suelta mote y email}{a}
     \mess{a}{204 aviso y vuelta al inicio}{v}
   \end{sdblock}
-  \mess{s}{}{s}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Darse de baja.}

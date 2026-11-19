@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "redaccion"
-notas: 3
+notas: 4
 ---
 # redaccion
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-vs-lista-de-capturas-regla-13-javier|Prosa de TFG vs lista de capturas (regla 13 Javier)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada|Reescribir frases «La figura X muestra…» como prosa integrada]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
@@ -21,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[estilo]] · [[memoria]] · [[sprints]]
+[[tfg]] · [[latex]] · [[estilo]] · [[memoria]] · [[sprints]] · [[capturas]] · [[subfigure]]

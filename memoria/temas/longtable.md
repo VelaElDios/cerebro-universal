@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "longtable"
-notas: 7
+notas: 8
 ---
 # longtable
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «longtable» (este archivo
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final (regla 7 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4|Trazabilidad completa requisito → PBI → tarea → PR en anexo A4]] · ⚠️ propuesto
 
 ## Conceptos
@@ -28,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «longtable» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tablas]] · [[maquetacion]] · [[anexo]] · [[trazabilidad]] · [[memoria]] · [[tfg]]
+[[latex]] · [[maquetacion]] · [[tablas]] · [[anexo]] · [[trazabilidad]] · [[memoria]] · [[tfg]]

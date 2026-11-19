@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T18:08:11+01:00",
+ "generado": "2026-11-19T19:15:57+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -150,6 +150,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md"
+  },
+  {
+   "id": "leccion:diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq",
+   "tipo": "leccion",
+   "titulo": "Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "diagramas-secuencia"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq.md"
   },
   {
    "id": "leccion:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
@@ -1393,7 +1408,9 @@
     "metricas",
     "pbis",
     "sprints",
-    "tareas"
+    "tareas",
+    "fechas",
+    "pruebas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2543,6 +2560,21 @@
    "ruta": "memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou.md"
   },
   {
+   "id": "decision:longtable-sin-fila-huerfana-al-final-regla-7-javier",
+   "tipo": "decision",
+   "titulo": "Longtable sin fila huérfana al final (regla 7 Javier)",
+   "temas": [
+    "latex",
+    "longtable",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier.md"
+  },
+  {
    "id": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
    "tipo": "decision",
    "titulo": "Los datos de entrenamiento van a un repo privado",
@@ -2589,6 +2621,21 @@
    "ruta": "memoria/conocimiento/decisiones/motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla.md"
   },
   {
+   "id": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
+   "tipo": "decision",
+   "titulo": "Números pequeños también se verifican en fuentes (no solo > 20)",
+   "temas": [
+    "fuentes",
+    "numeros",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20.md"
+  },
+  {
    "id": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes",
    "tipo": "decision",
    "titulo": "Números pequeños también se verifican en fuentes",
@@ -2633,6 +2680,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p.md"
+  },
+  {
+   "id": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "tipo": "decision",
+   "titulo": "Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)",
+   "temas": [
+    "cicd",
+    "coherencia",
+    "latex",
+    "pipeline"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie.md"
   },
   {
    "id": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5",
@@ -2822,7 +2885,9 @@
    "temas": [
     "latex",
     "plantilla",
-    "portada"
+    "portada",
+    "maquetacion",
+    "plantilla-tfg"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3256,7 +3321,10 @@
    "temas": [
     "figuras",
     "latex",
-    "subcaption"
+    "subcaption",
+    "capturas",
+    "maquetacion",
+    "subfigure"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3306,6 +3374,22 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte.md"
+  },
+  {
+   "id": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "tipo": "receta",
+   "titulo": "Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier",
+   "temas": [
+    "diagramas-secuencia",
+    "latex",
+    "maquetacion",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re.md"
   },
   {
    "id": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
@@ -3717,7 +3801,8 @@
    "temas": [
     "diagramas",
     "latex",
-    "pgf-umlsd"
+    "pgf-umlsd",
+    "diagramas-secuencia"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4046,7 +4131,9 @@
    "temas": [
     "figuras",
     "latex",
-    "maquetacion"
+    "maquetacion",
+    "adjustbox",
+    "capturas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4230,6 +4317,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni.md"
+  },
+  {
+   "id": "receta:prosa-de-tfg-vs-lista-de-capturas-regla-13-javier",
+   "tipo": "receta",
+   "titulo": "Prosa de TFG vs lista de capturas (regla 13 Javier)",
+   "temas": [
+    "capturas",
+    "latex",
+    "redaccion",
+    "subfigure"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/prosa-de-tfg-vs-lista-de-capturas-regla-13-javier.md"
   },
   {
    "id": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
@@ -4545,7 +4648,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 110,
+   "peso": 115,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4612,6 +4715,20 @@
    "ruta": "memoria/temas/referencias.md"
   },
   {
+   "id": "tema:pgf-umlsd",
+   "tipo": "tema",
+   "titulo": "pgf-umlsd",
+   "peso": 12,
+   "ruta": "memoria/temas/pgf-umlsd.md"
+  },
+  {
+   "id": "tema:diagramas-secuencia",
+   "tipo": "tema",
+   "titulo": "diagramas-secuencia",
+   "peso": 4,
+   "ruta": "memoria/temas/diagramas-secuencia.md"
+  },
+  {
    "id": "tema:datos",
    "tipo": "tema",
    "titulo": "datos",
@@ -4622,14 +4739,14 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 9,
+   "peso": 13,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -4657,7 +4774,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -4666,13 +4783,6 @@
    "titulo": "metricas",
    "peso": 7,
    "ruta": "memoria/temas/metricas.md"
-  },
-  {
-   "id": "tema:pgf-umlsd",
-   "tipo": "tema",
-   "titulo": "pgf-umlsd",
-   "peso": 10,
-   "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:secuencia",
@@ -4986,7 +5096,7 @@
    "id": "tema:pruebas",
    "tipo": "tema",
    "titulo": "pruebas",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/pruebas.md"
   },
   {
@@ -5140,7 +5250,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -5284,6 +5394,13 @@
    "ruta": "memoria/temas/tareas.md"
   },
   {
+   "id": "tema:fechas",
+   "tipo": "tema",
+   "titulo": "fechas",
+   "peso": 5,
+   "ruta": "memoria/temas/fechas.md"
+  },
+  {
    "id": "tema:calidad",
    "tipo": "tema",
    "titulo": "calidad",
@@ -5322,7 +5439,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -5375,13 +5492,6 @@
    "ruta": "memoria/temas/done.md"
   },
   {
-   "id": "tema:fechas",
-   "tipo": "tema",
-   "titulo": "fechas",
-   "peso": 4,
-   "ruta": "memoria/temas/fechas.md"
-  },
-  {
    "id": "tema:fases",
    "tipo": "tema",
    "titulo": "fases",
@@ -5406,7 +5516,7 @@
    "id": "tema:capturas",
    "tipo": "tema",
    "titulo": "capturas",
-   "peso": 4,
+   "peso": 7,
    "ruta": "memoria/temas/capturas.md"
   },
   {
@@ -5658,7 +5768,7 @@
    "id": "tema:numeros",
    "tipo": "tema",
    "titulo": "numeros",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/numeros.md"
   },
   {
@@ -5672,15 +5782,22 @@
    "id": "tema:cicd",
    "tipo": "tema",
    "titulo": "cicd",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/cicd.md"
   },
   {
    "id": "tema:coherencia",
    "tipo": "tema",
    "titulo": "coherencia",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/coherencia.md"
+  },
+  {
+   "id": "tema:pipeline",
+   "tipo": "tema",
+   "titulo": "pipeline",
+   "peso": 1,
+   "ruta": "memoria/temas/pipeline.md"
   },
   {
    "id": "tema:integridad",
@@ -5716,6 +5833,13 @@
    "titulo": "portada",
    "peso": 1,
    "ruta": "memoria/temas/portada.md"
+  },
+  {
+   "id": "tema:plantilla-tfg",
+   "tipo": "tema",
+   "titulo": "plantilla-tfg",
+   "peso": 1,
+   "ruta": "memoria/temas/plantilla-tfg.md"
   },
   {
    "id": "tema:anti-cheat",
@@ -5889,7 +6013,7 @@
    "id": "tema:subfigure",
    "tipo": "tema",
    "titulo": "subfigure",
-   "peso": 1,
+   "peso": 3,
    "ruta": "memoria/temas/subfigure.md"
   },
   {
@@ -6033,13 +6157,6 @@
    "ruta": "memoria/temas/enquote.md"
   },
   {
-   "id": "tema:diagramas-secuencia",
-   "tipo": "tema",
-   "titulo": "diagramas-secuencia",
-   "peso": 1,
-   "ruta": "memoria/temas/diagramas-secuencia.md"
-  },
-  {
    "id": "tema:esiiab",
    "tipo": "tema",
    "titulo": "esiiab",
@@ -6108,6 +6225,13 @@
    "titulo": "google",
    "peso": 2,
    "ruta": "memoria/temas/google.md"
+  },
+  {
+   "id": "tema:adjustbox",
+   "tipo": "tema",
+   "titulo": "adjustbox",
+   "peso": 1,
+   "ruta": "memoria/temas/adjustbox.md"
   },
   {
    "id": "tema:chiptune",
@@ -6398,6 +6522,26 @@
   },
   {
    "de": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq",
+   "a": "tema:diagramas-secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq",
    "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
@@ -9669,6 +9813,16 @@
   {
    "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
    "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "tema:fechas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "tema:pruebas",
    "tipo": "trata"
   },
   {
@@ -13127,6 +13281,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:longtable-sin-fila-huerfana-al-final-regla-7-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtable-sin-fila-huerfana-al-final-regla-7-javier",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtable-sin-fila-huerfana-al-final-regla-7-javier",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtable-sin-fila-huerfana-al-final-regla-7-javier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -13262,6 +13436,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
+   "a": "tema:numeros",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes",
    "a": "tema:fuentes",
    "tipo": "trata"
@@ -13359,6 +13553,36 @@
   {
    "de": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
    "a": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "a": "tema:cicd",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "a": "tema:coherencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "a": "concepto:prosa-de-tfg-vs-lista-de-capturas",
    "tipo": "enlaza"
   },
   {
@@ -13844,6 +14068,16 @@
   {
    "de": "decision:una-sola-portada-oficial-en-elements-portada-tex",
    "a": "tema:portada",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-en-elements-portada-tex",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-en-elements-portada-tex",
+   "a": "tema:plantilla-tfg",
    "tipo": "trata"
   },
   {
@@ -15673,6 +15907,21 @@
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -15784,6 +16033,41 @@
   {
    "de": "receta:como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte",
    "a": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "tema:diagramas-secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "receta:diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
    "tipo": "enlaza"
   },
   {
@@ -16943,6 +17227,11 @@
   },
   {
    "de": "receta:diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta",
+   "a": "tema:diagramas-secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -17863,6 +18152,16 @@
   },
   {
    "de": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "a": "tema:adjustbox",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -18374,6 +18673,36 @@
   {
    "de": "receta:proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni",
    "a": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:prosa-de-tfg-vs-lista-de-capturas-regla-13-javier",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-vs-lista-de-capturas-regla-13-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-vs-lista-de-capturas-regla-13-javier",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-vs-lista-de-capturas-regla-13-javier",
+   "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-vs-lista-de-capturas-regla-13-javier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:prosa-de-tfg-vs-lista-de-capturas-regla-13-javier",
+   "a": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
    "tipo": "enlaza"
   },
   {

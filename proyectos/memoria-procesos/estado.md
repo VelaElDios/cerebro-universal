@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-19 17:04"
+actualizado: "2026-11-19 19:15"
 ---
 
 # memoria-procesos
@@ -20,9 +20,9 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- **Compilación**: OK (PDF 92 páginas, sin "Infinite glue shrinkage").
+- **Compilación**: OK (PDF 92 páginas, sin "Infinite glue shrinkage") tras deshacer último intento.
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. **FALLAN**: 5 diagramas con cruces (reglas 16-18), imágenes DoneTonic duplicadas (regla 10), prosa manual capturas (regla 13), secciones cortas (regla 9), pipeline duplicado (regla 14), longtables sin `\\*` (regla 7), imágenes altas sin adjustbox (regla 8).
-- **verificar.py**: FALLA - números no en fuentes (32, 23, 48, 50, 33, 82, etc.).
+- **verificar.py**: FALLA - 16+ errores de números no en fuentes (32, 23, 48, 50, 33, 82, etc. en caps 1 y 3).
 - **Contenido**: Todos los capítulos y anexos escritos con datos contrastados. Juego y Sprint 2 descritos; ningún capítulo dice que Hito 4 esté pendiente.
 - **Anexo desarrollo**: Dos secciones sprint con mismo esquema; explica recta gráficas Sprint 2.
 - **Trazabilidad**: Anexo A4 con tabla completa 82 tareas.

@@ -55,9 +55,9 @@
  },
  "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
   "bien": 0,
-  "mal": 0,
+  "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 15
+  "usos": 16
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -133,15 +133,15 @@
  },
  "memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente.md": {
   "bien": 2,
-  "mal": 0,
+  "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 19
+  "usos": 20
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 0,
-  "mal": 0,
+  "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -157,9 +157,9 @@
  },
  "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md": {
   "bien": 0,
-  "mal": 0,
+  "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,
@@ -181,9 +181,9 @@
  },
  "memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd.md": {
   "bien": 0,
-  "mal": 0,
+  "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 1
+  "usos": 2
  },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 0,
@@ -211,9 +211,9 @@
  },
  "memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm.md": {
   "bien": 1,
-  "mal": 0,
+  "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 13
+  "usos": 14
  },
  "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
   "bien": 0,

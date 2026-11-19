@@ -33,4 +33,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[subcaption]] · [[grada-colchonera]] · [[saas]] · [[rutas]] · [[subfigure]] · [[mermaid]] · [[capturas]] · [[bibliografia]]
+[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[subcaption]] · [[capturas]] · [[subfigure]] · [[grada-colchonera]] · [[saas]] · [[rutas]] · [[mermaid]] · [[bibliografia]]
