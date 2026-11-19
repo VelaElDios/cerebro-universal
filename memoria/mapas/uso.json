@@ -57,7 +57,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 11
+  "usos": 12
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -70,6 +70,12 @@
   "mal": 0,
   "ultimo": "2026-11-19",
   "usos": 7
+ },
+ "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
   "bien": 0,
@@ -92,8 +98,8 @@
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-17",
-  "usos": 1
+  "ultimo": "2026-11-19",
+  "usos": 2
  },
  "memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d.md": {
   "bien": 1,
@@ -123,7 +129,7 @@
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 15
+  "usos": 16
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -135,7 +141,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 4
+  "usos": 5
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,
@@ -183,12 +189,12 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 9
+  "usos": 10
  },
  "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 1
+  "usos": 2
  }
 }

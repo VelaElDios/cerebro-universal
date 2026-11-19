@@ -10841,3 +10841,23 @@ La compilación falla por "Infinite glue shrinkage" causado por: (1) `\flushbott
 ## 2026-11-19 11:04 · 🧠 Conocimiento guardado
 
 [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50]]
+
+## 2026-11-19 12:08 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La compilación sigue fallando con «Infinite glue shrinkage» al partir longtables y figuras grandes. Sustituyo el bloque de parches de `elements/preambulo.tex` por uno más robusto: fondo flexible real (`\@textbottom` con estiramiento infinito), `\flushbottom` desactivado y re-aplicado tras `\mainmatter`/`\frontmatter`/`\backmatter`/`\chapter`, sin tocar la declaración, el Resumen ni el Abstract ni ningún archivo protegido.
+
+**Archivos:** `(cambio) elements/preambulo.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [9
+- intento 2: no hay IA disponible a tiempo (Sin tiempo para llamar a openrouter-grandes (nvidia/nemotron-3-ultra-550b-a55b:free))
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para comprobar si desaparece el «Infinite glue shrinkage». Si persiste, el siguiente paso es limitar más las figuras altas restantes (bajar `height` a 0.30–0.35`\textheight` o envolverlas en `adjustbox{max totalheight=0.35\textheight}`) y añadir `\\*` antes de `\bottomrule` en las longtables que aún no lo tengan, empezando por `04-descripcion.tex`, `04b-juego.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex` y `a4-trazabilidad.tex`.
+
+## 2026-11-19 12:08 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 27 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.

@@ -12,36 +12,27 @@
 % -------------------------------
 
 
-% Forzar \raggedbottom global DESDE EL INICIO para evitar "Infinite glue shrinkage"
-% al partir longtables y figuras grandes.
+% Fondo flexible de página (ragged bottom) de forma robusta: la clase book
+% reactiva \flushbottom en \mainmatter y en los capítulos; aquí se desactiva
+% y se fija \@textbottom con estiramiento infinito para que ninguna página
+% intente encogerse sin límite ("Infinite glue shrinkage" al partir longtables
+% y figuras grandes).
+\makeatletter
+\def\@textbottom{\vskip 0pt plus 1fil}
+\let\@texttop\relax
 \raggedbottom
-% Tolerancias extra para que LaTeX no fuerce estiramiento infinito de pegamento vertical.
-\vfuzz=20pt
+\let\flushbottom\raggedbottom
 \vbadness=10000
-% La clase book puede llamar a \flushbottom en \mainmatter, \frontmatter, \backmatter;
-% lo convertimos en \raggedbottom para que no vuelva a aparecer aunque algo lo invoque después.
-\let\oldflushbottom\flushbottom
-\renewcommand{\flushbottom}{\raggedbottom}
-
-% Memoria.tex (protegido) llama a \mainmatter, \frontmatter, \backmatter después de cargar este archivo;
-% parcheamos todos para que vuelvan a \raggedbottom justo después.
+\vfuzz=20pt
 \let\oldmainmatter\mainmatter
-\renewcommand{\mainmatter}{\oldmainmatter\raggedbottom}
+\renewcommand{\mainmatter}{\oldmainmatter\raggedbottom\def\@textbottom{\vskip 0pt plus 1fil}\let\@texttop\relax}
 \let\oldfrontmatter\frontmatter
-\renewcommand{\frontmatter}{\oldfrontmatter\raggedbottom}
+\renewcommand{\frontmatter}{\oldfrontmatter\raggedbottom\def\@textbottom{\vskip 0pt plus 1fil}\let\@texttop\relax}
 \let\oldbackmatter\backmatter
-\renewcommand{\backmatter}{\oldbackmatter\raggedbottom}
-
-% Forzar \raggedbottom al inicio de CADA capítulo y de cada entorno flotante/tabla:
-% así el modo se mantiene aunque alguna macro interna restaure \flushbottom.
+\renewcommand{\backmatter}{\oldbackmatter\raggedbottom\def\@textbottom{\vskip 0pt plus 1fil}\let\@texttop\relax}
 \let\oldchapter\chapter
-\renewcommand{\chapter}{\raggedbottom\oldchapter}
-\AtBeginEnvironment{longtable}{\raggedbottom}
-\AtBeginEnvironment{figure}{\raggedbottom}
-\AtBeginEnvironment{table}{\raggedbottom}
-\AtBeginEnvironment{adjustbox}{\raggedbottom}
-
-% Parámetros de flotantes más permisivos para que figuras y tablas compartan página.
+\renewcommand{\chapter}{\raggedbottom\def\@textbottom{\vskip 0pt plus 1fil}\let\@texttop\relax\oldchapter}
+% Flotantes más permisivos para que compartan página con el texto.
 \renewcommand{\topfraction}{0.9}
 \renewcommand{\bottomfraction}{0.7}
 \renewcommand{\textfraction}{0.1}
@@ -52,15 +43,10 @@
 \setcounter{dbltopnumber}{4}
 \renewcommand{\dbltopfraction}{0.9}
 \renewcommand{\dblfloatpagefraction}{0.85}
-
-% Reducir espacio alrededor de longtables.
 \setlength{\LTpre}{0pt}
 \setlength{\LTpost}{0pt}
-
-% Evitar que \cleardoublepage inserte páginas en blanco con \flushbottom.
-\makeatletter
-\renewcommand{\cleardoublepage}{\clearpage\if@twoside\ifodd\c@page\else
-  \hbox{}\thispagestyle{empty}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+% Sin páginas en blanco entre capítulos.
+\renewcommand{\cleardoublepage}{\clearpage}
 \makeatother
 
 % -------------------------------
