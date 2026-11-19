@@ -17,6 +17,6 @@ Las IAs que escriben mucho Lua ponen comentarios -- ... en archivos .tex: LaTeX 
 > En archivos .tex los comentarios empiezan por %. -- solo en archivos .lua.
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]] · [[trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c]] · [[coma-decimal-en-formulas-paquete-icomma]]
+Relacionado: [[arquitectura-de-calculos-en-lualatex-para-plantilla-sus]] · [[trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c]] · [[coma-decimal-en-formulas-paquete-icomma]] · [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

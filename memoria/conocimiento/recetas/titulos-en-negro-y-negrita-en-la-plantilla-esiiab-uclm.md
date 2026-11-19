@@ -24,6 +24,6 @@ La plantilla pinta los títulos en azul con el color `tema`. Javier los quiere e
 ## Ampliación (2026-11-16, )
 Los títulos de sección y subsección deben ser negros (`\definecolor{tema}{RGB}{0,0,0}`) y en negrita (`\bfseries`). Además, los enlaces hipertexto no llevan recuadros de color: se configura `\hypersetup{hidelinks}`. Esto anula el estilo por defecto de la plantilla que usa azul para títulos y enlaces.
 
-Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[quitar-las-paginas-en-blanco-entre-capitulos]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]]
+Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[quitar-las-paginas-en-blanco-entre-capitulos]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[formato-de-titulos-y-enlaces-en-la-memoria]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

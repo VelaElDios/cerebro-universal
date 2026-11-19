@@ -20,6 +20,6 @@ Criterios obligatorios para considerar completado un elemento:
 > Un **hito** (Sprint 1) está hecho cuando su rama está en `main`, desplegada y publicada como release. Una **fase del juego** (Sprint 2) está hecha cuando su PR está en `main`, desplegado y probado a mano en el navegador.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni]]
+Relacionado: [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni]] · [[prs-de-cierre-de-hito-y-sprint-en-repositorio]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

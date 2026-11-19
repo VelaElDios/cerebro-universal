@@ -20,6 +20,6 @@ Temas: [[correo]] · [[grada-colchonera]] · [[oauth]] · [[saas]]
 > Copia `.env.example` a `.env` y rellena `SMTP_URL`, `MAIL_FROM`, `GOOGLE_CLIENT_ID` y `GOOGLE_CLIENT_SECRET`, y arranca con `npm start`. Sin `SMTP_URL`, los correos no se envían: el enlace de confirmación aparece en la consola.
 > — `repo:saas/docs/hito4-configuracion.md`
 
-Relacionado: [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]] · [[como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica]] · [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]]
+Relacionado: [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]] · [[como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica]] · [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]] · [[script-de-configuracion-de-secretos-hito-4-en-gcp]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

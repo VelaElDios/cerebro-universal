@@ -17,6 +17,6 @@ Problema: al enviar JSON inválido, Express respondía con su página de error H
 > | Un JSON mal formado devolvía la página de error HTML de Express | El error ocurría en `express.json()`, antes de la capa API | Manejador propio justo después del parser: `400` en JSON en toda la API (prueba técnica) |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui]] · [[manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui]]
+Relacionado: [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui]] · [[manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui]] · [[modulos-del-backend-y-sus-responsabilidades]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

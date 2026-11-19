@@ -18,4 +18,6 @@ relacionado: Fechas y estructura de los dos sprints, Inventario de capturas, Bur
 > La trazabilidad completa, con el nombre de cada rama, está en [`docs/gestion/README.md`](gestion/README.md).
 > — `repo:saas/docs/documentacion-tecnica.md`
 
+Relacionado: [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

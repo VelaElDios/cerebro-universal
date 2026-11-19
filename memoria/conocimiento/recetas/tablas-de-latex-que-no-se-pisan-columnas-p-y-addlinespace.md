@@ -38,6 +38,6 @@ Para que las tablas no tengan filas que se pisen:
 - Texto de la tabla en `\small`.
 - Código y rutas: usar `\path{}` (paquete `url`/`hyperref`) o `\texttt{}` + `\allowbreak` para que no se salgan del margen.
 
-Relacionado: [[formato-de-tablas-alineacion-superior-ancho-controlado-y-cod]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]]
+Relacionado: [[reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

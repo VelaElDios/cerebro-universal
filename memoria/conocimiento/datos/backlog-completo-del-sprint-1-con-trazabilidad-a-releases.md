@@ -23,7 +23,7 @@ Tabla de los 19 PBIs del Sprint 1 con su hito, título, estado y enlace de entre
 > | P19 | H4 | Despliegue continuo en Google Cloud Run | Hecho | Cierre del sprint |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

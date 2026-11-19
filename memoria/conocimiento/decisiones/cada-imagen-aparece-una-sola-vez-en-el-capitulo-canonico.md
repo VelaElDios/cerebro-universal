@@ -5,7 +5,7 @@ temas: ["latex", "maquetacion", "reglas-tfg", "maquetación"]
 claves: ["regla 10", "imágenes repetidas", "ref cruzadas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-17"
 ---
@@ -39,3 +39,5 @@ Decidido por Javier: las capturas de producción, prueba técnica y DoneTonic sa
 Relacionado: [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[inventario-de-capturas-donetonic-requeridas-y-disponibles]]: Nota A sitúa la captura **Backlog (03-backlog.png)** en el **Capítulo 3 (propuesta)** con label `fig:donetonic-backlog`. Nota B la sitúa en el **Anexo A1 (a1-desarrollo.tex)** con el mismo label. Ambas notas hablan de la misma imagen y discrepan en su capítulo canónico.

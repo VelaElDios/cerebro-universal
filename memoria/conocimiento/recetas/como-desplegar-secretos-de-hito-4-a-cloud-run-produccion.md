@@ -5,7 +5,7 @@ temas: ["correo", "grada-colchonera", "oauth", "saas"]
 claves: ["configurar-hito4.sh", "Secret Manager", "Cloud Shell", "PROJECT_ID", "PR T25"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/hito4-configuracion.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -24,3 +24,5 @@ Temas: [[correo]] · [[grada-colchonera]] · [[oauth]] · [[saas]]
 Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]] · [[como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica]] · [[script-de-configuracion-de-secretos-hito-4-en-gcp]] · [[como-probar-la-configuracion-en-local-hito-4]] · [[solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto]]: La Nota A afirma que el script `configurar-hito4.sh` almacena la **contraseña de aplicación de Gmail** en Secret Manager. La Nota B enumera los **cuatro** valores que pide ese mismo script (`SMTP_URL`, `MAIL_FROM`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`) y no incluye ninguna contraseña de aplicación SMTP entre ellos.

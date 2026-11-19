@@ -31,6 +31,6 @@ Nota: el 24/10/2026 se cierra el sprint (entrega) y hay prueba técnica (PR #34)
 > | Fecha | Hito | |---|---| | 29/09/2026 | Empieza el Sprint 1 | | Primeras semanas | Hitos 1, 2 y 3 (releases `hito-1`, `hito-2`, `hito-3`) | | 12/10/2026 | Primera entrega (Hitos 1–3, P18, P19); capturas de DoneTonic de ese día |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

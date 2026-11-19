@@ -22,6 +22,6 @@ Temas: [[donetonic]] · [[git]] · [[github-flow]] · [[grada-colchonera]]
 > `Tx` es el identificador de la tarea en DoneTonic (por ejemplo `T5`). El PR indica también su PBI (`Px`).
 > — `repo:saas/CONTRIBUTING.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[github-flow-como-modelo-de-ramificacion-del-proyecto]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[github-flow-como-modelo-de-ramificacion-del-proyecto]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto]] · [[reglas-de-integracion-mediante-pull-requests-con-ci-obligato]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

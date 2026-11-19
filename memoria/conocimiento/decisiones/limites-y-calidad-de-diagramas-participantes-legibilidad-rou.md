@@ -16,3 +16,5 @@ Temas: [[diagramas]] · [[latex]] · [[memoria]] · [[tfg]] · [[tikz]]
 
 > Diagramas de secuencia: **como mucho 6 participantes**. Si hay más, se agrupan (por ejemplo, «Vista + api.js» → «Frontend») o se parte en dos diagramas (lo que pasa en el navegador / lo que pasa en el servidor). `\resizebox` solo para encoger un poco, no para meter 9 columnas en el ancho de la página.
 > — `../../memoria/reglas-tfg.md`
+
+Relacionado: [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]]

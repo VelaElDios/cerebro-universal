@@ -21,6 +21,6 @@ Todos marcados «Hecho» en la tabla de tareas (P47, T77–T79).
 > | [#51](https://github.com/VelaElDios/la-grada-colchonera-saas/pull/51) | Arreglo: el juego no cargaba | 24/10/2026 |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[fases-del-sprint-2-y-prs-asociados]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[prs-de-cierre-de-hito-y-sprint-en-repositorio]] · [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[fases-del-sprint-2-y-prs-asociados]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[prs-de-cierre-de-hito-y-sprint-en-repositorio]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

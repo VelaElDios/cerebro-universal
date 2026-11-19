@@ -2,8 +2,8 @@
 
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
-- Notas que se han usado alguna vez: 32
-- Notas que nunca se han usado: 198
+- Notas que se han usado alguna vez: 31
+- Notas que nunca se han usado: 193
 
 ## Las más útiles
 

@@ -5,7 +5,7 @@ temas: ["cloud-run", "email", "grada-colchonera", "saas"]
 claves: ["SMTP", "puerto 465", "Gmail", "Secret Manager"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-17"
 ---
@@ -20,3 +20,5 @@ Problema: emails no se enviaban desde Cloud Run. Causa: puertos SMTP estándar (
 Relacionado: [[como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica]] · [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]] · [[script-de-configuracion-de-secretos-hito-4-en-gcp]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]]: La Nota A afirma que el script `configurar-hito4.sh` almacena la **contraseña de aplicación de Gmail** en Secret Manager. La Nota B enumera los **cuatro** valores que pide ese mismo script (`SMTP_URL`, `MAIL_FROM`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`) y no incluye ninguna contraseña de aplicación SMTP entre ellos.

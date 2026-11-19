@@ -22,6 +22,6 @@ Aplicables a cualquier proyecto web full-stack con equipo pequeño.
 > Lecciones: dividir pronto en tareas pequeñas, automatizar el despliegue desde el primer día, documentar las decisiones mientras se toman y comprobar visualmente cada cambio de interfaz (así apareció, por ejemplo, el clic perdido de la sección 13).
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[deshacer-el-paso-entero-si-rompe-la-compilacion]] · [[tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[deshacer-el-paso-entero-si-rompe-la-compilacion]] · [[tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[prs-de-cierre-de-hito-y-sprint-en-repositorio]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

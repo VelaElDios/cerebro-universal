@@ -23,4 +23,6 @@ Temas: [[fases]] · [[fechas]] · [[pbis]] · [[sprint2]] · [[tareas]]
 > Sprint 2: del 23/10/2026 al 29/10/2026. 29 PBIs (P20–P48) con 50 tareas (T33–T82), etiquetados por fase del juego. También son MUST, porque el profesor fijó la lógica del juego como objetivo de este sprint.
 > — `repo:saas/docs/documentacion-tecnica.md §4.1 y repo:saas/docs/gestion/README.md` (cita sin comprobar)
 
+Relacionado: [[fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -72,7 +72,7 @@ Este trozo detalla la estrategia de prueba
 - [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]]
 - [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]]
 - [[pipeline-ci-cd-github-actions-cloud-run-con-workload-identit]]
-- [[pipeline-ci-cd-github-actions-docker-cloud-run-y-render]]
+- [[pipeline-ci-cd-github-actions-con-postgresql-17-real-docker]]
 - [[pivote-de-red-social-a-juego-survivor-reutilizando-base-del]]
 - [[proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api]]
 - [[recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po]]

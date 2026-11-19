@@ -17,4 +17,4 @@ Temas: [[figuras]] · [[latex]] · [[memoria]] · [[tfg]]
 > **Ninguna página con una sola imagen:** - capturas como mucho a `height=0.42\textheight`; - diagramas grandes con `max totalheight`; - figuras `[htbp]` con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]]
+Relacionado: [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle]]

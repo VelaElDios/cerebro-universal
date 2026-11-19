@@ -22,3 +22,22 @@ Lo que hace el jardinero en cada pasada.
   - Predictor híbrido con selector de 2 bits entre predictor de 1 bit y predictor de 3 bits ← Predictor híbrido de dos predictores locales con selector por contador saturante
 - ⚠️ Contradicciones encontradas: 0
 - 🔗 Enlaces nuevos entre notas parecidas: 3460
+
+## 2026-11-19 15:45 · 🌱 Pasada del jardinero
+
+- ✅ Citas comprobadas: 1 notas pasan a verificado: [[reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle]]
+- 🔀 Notas repetidas fusionadas: 6
+  - [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] ← Inventario de capturas por carpeta con fechas y requisitos
+  - [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] ← Portada única oficial del TFG (elements/portada.tex)
+  - [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] ← Burndown real vs DoneTonic en Sprint 2 (backlog registrado al cerrar)
+  - [[reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable]] ← Formato de tablas: alineación superior, ancho controlado y código con path/texttt+allowbreak
+  - [[pipeline-ci-cd-github-actions-con-postgresql-17-real-docker]] ← Pipeline CI/CD: GitHub Actions, Docker, Cloud Run y Render
+  - [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] ← Cómo agrupar capturas con subfigure en LaTeX
+- ⚠️ Contradicciones encontradas: 6
+  - [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] ↔ [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]]: Nota A afirma que el Sprint 1 tuvo 19 PBIs (primer viñeta) y menciona cuatro releases de hito (hito-1 a hito-4) más sprint-1; Nota B indica que el Sprint 1 tuvo 16 PBIs totales (15 iniciales + P19 añadido) y su burndown solo registra tres hitos (hito-1, hito-2, hito-3) antes del cierre del sprint.
+  - [[fases-del-sprint-2-y-prs-asociados]] ↔ [[fechas-pbis-y-tareas-de-los-dos-sprints]]: La Nota A (lista de PRs y enlace `estructura-sprint-2-6-fases...`) describe **6 fases** (Fase 1 a Fase 6). La Nota B (ampliación 2026-11-19) afirma textualmente que el Sprint 2 tuvo **7 fases**.
+  - [[solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto]] ↔ [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]]: La Nota A afirma que el script `configurar-hito4.sh` almacena la **contraseña de aplicación de Gmail** en Secret Manager. La Nota B enumera los **cuatro** valores que pide ese mismo script (`SMTP_URL`, `MAIL_FROM`, `GOOGLE_CLIENT_ID`, `GOOGLE_CLIENT_SECRET`) y no incluye ninguna contraseña de aplicación SMTP entre ellos.
+  - [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] ↔ [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]: La Nota A afirma que en el Sprint 2 hubo «un único PR por fase de juego (#36, #44–#54)», implicando que cada uno de esos 11 PRs corresponde a una fase. La Nota B muestra que solo 6 PRs (#36, #49, #50, #52, #53, #54) se asocian a las fases 1–6; los PRs #44–#48 y #51 son mejoras/arreglos de «Base del juego» o «Calidad», no fases de juego.
+  - [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] ↔ [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]]: La nota A dice que el Hito 4 tiene **6 tareas (T21–T26)** y que esas seis se marcaron hechas al cerrar el Sprint 1. La nota B dice que el Hito 4 abarca **12 tareas (T21–T32)** dentro del Sprint 1 (que cierra el 27/10/2026).
+  - [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] ↔ [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]]: Nota A sitúa la captura **Backlog (03-backlog.png)** en el **Capítulo 3 (propuesta)** con label `fig:donetonic-backlog`. Nota B la sitúa en el **Anexo A1 (a1-desarrollo.tex)** con el mismo label. Ambas notas hablan de la misma imagen y discrepan en su capítulo canónico.
+- 🔗 Enlaces nuevos entre notas parecidas: 104

@@ -16,3 +16,5 @@ Cada entrega (Sprint 1, 2, 3...) incluye únicamente el alcance de ese sprint. T
 
 > Cada entrega lleva solo lo de su sprint. Por ejemplo, la del Sprint 1 va sin el juego. El título, el Resumen, el Abstract, la Introducción, las Conclusiones y los anexos tienen que coincidir con ese alcance.
 > — `../../memoria/reglas-tfg.md`
+
+Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]]

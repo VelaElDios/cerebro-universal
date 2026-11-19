@@ -8944,7 +8944,7 @@ Lo que hay que arreglar ahora (Paso 2 continuación):
 
 ## 2026-11-16 17:03 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-con-subfigure-en-latex]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]]
 
 ## 2026-11-16 18:27 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -8984,7 +8984,7 @@ The builder's last attempt fixed the broken reference and added the correct Spri
 
 ## 2026-11-16 18:57 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-con-subfigure-en-latex]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
 
 ## 2026-11-16 19:38 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -10447,7 +10447,7 @@ El constructor debe corregir la maquetación global y luego los diagramas señal
 
 ## 2026-11-19 00:51 · 🧠 Conocimiento guardado
 
-[[inventario-de-capturas-por-carpeta-con-fechas-y-requisitos]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]
+[[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]
 
 ## 2026-11-19 01:41 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -10532,7 +10532,7 @@ He corregido yo directamente `elements/preambulo.tex` para mover `\raggedbottom`
 
 ## 2026-11-19 01:43 · 🧠 Conocimiento guardado
 
-[[inventario-de-capturas-por-carpeta-con-fechas-y-requisitos]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al]]
+[[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
 
 ## 2026-11-19 02:54 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -10622,7 +10622,7 @@ El constructor intentó arreglar "Infinite glue shrinkage" parcheando `\mainmatt
 
 ## 2026-11-19 02:57 · 🧠 Conocimiento guardado
 
-[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al]]
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
 
 ## 2026-11-19 04:34 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 

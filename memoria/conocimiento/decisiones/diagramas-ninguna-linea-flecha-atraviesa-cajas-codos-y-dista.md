@@ -17,4 +17,4 @@ Reglas de layout para diagramas (TikZ, PlantUML, Mermaid, etc.): 1) Flechas cone
 > Ninguna línea ni flecha atraviesa una caja o un texto, y ninguna caja pisa a otra. Las flechas van de una caja a la siguiente (A → B, B → C), nunca de A a C pasando por encima de B; si hay que rodear, con codos (`|-`, `-|`) y separando bien las cajas (`node distance` suficiente). Las etiquetas de las flechas no se montan sobre las cajas.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma]] · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]]
+Relacionado: [[dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma]] · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]]

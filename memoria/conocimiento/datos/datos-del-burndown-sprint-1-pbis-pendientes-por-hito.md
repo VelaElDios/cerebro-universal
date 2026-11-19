@@ -5,7 +5,7 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum", "sprint"]
 claves: ["burndown", "PBIs pendientes", "hito-1", "hito-2", "hito-3", "gráficas DoneTonic"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -17,6 +17,8 @@ Serie temporal del burndown de PBIs pendientes según gráficas DoneTonic (Backl
 > | Momento | PBIs hechos | PBIs pendientes | |---|---|---| | Inicio del Sprint 1 (29/09/2026) | 0 | 15 | | Cierre del Hito 1 (release `hito-1`) | 6 | 9 | | Cierre del Hito 2 (release `hito-2`) | 10 | 5 | | Cierre del Hito 3 (release `hito-3`) | 14 | 1 | | Se añade P19 (Cloud Run) para usar los créditos de Google Cloud | 14 | 2 | | Cierre del sprint (P18 y P19) | 16 | 0 |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]]
+Relacionado: [[cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]: Nota A afirma que el Sprint 1 tuvo 19 PBIs (primer viñeta) y menciona cuatro releases de hito (hito-1 a hito-4) más sprint-1; Nota B indica que el Sprint 1 tuvo 16 PBIs totales (15 iniciales + P19 añadido) y su burndown solo registra tres hitos (hito-1, hito-2, hito-3) antes del cierre del sprint.

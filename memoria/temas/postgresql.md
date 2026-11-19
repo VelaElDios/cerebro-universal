@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «postgresql» (este archiv
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker|Pipeline CI/CD: GitHub Actions con PostgreSQL 17 real, Docker, despliegue automático a Cloud Run]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker|Pipeline CI/CD: GitHub Actions con PostgreSQL 17, Docker, Cloud Run, Render y compilación LaTeX]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -21,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «postgresql» (este archiv
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[arquitectura]] · [[nodejs]] · [[modelo-datos]] · [[ci-cd]] · [[cloud-run]] · [[docker]] · [[github-actions]] · [[procesos]]
+[[grada-colchonera]] · [[saas]] · [[arquitectura]] · [[nodejs]] · [[modelo-datos]] · [[ci-cd]] · [[cloud-run]] · [[despliegue]] · [[devops]] · [[docker]] · [[github-actions]] · [[procesos]]

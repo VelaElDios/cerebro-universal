@@ -11,7 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «oauth» (este archivo se 
 
 - 🧪 [[memoria/conocimiento/recetas/como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica|Cómo configurar SMTP saliente con Gmail (contraseña de aplicación)]]
 - 🧪 [[memoria/conocimiento/recetas/como-crear-cliente-oauth-de-google-para-la-grada-colchonera|Cómo crear cliente OAuth de Google para La Grada Colchonera]]
-- 🧪 [[memoria/conocimiento/recetas/como-desplegar-secretos-de-hito-4-a-cloud-run-produccion|Cómo desplegar secretos de Hito 4 a Cloud Run (producción)]]
+- 🧪 [[memoria/conocimiento/recetas/como-desplegar-secretos-de-hito-4-a-cloud-run-produccion|Cómo desplegar secretos de Hito 4 a Cloud Run (producción)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-probar-la-configuracion-en-local-hito-4|Cómo probar la configuración en local (Hito 4)]]
 - 🧪 [[memoria/conocimiento/recetas/inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte|Inicio de sesión Google OAuth 2.0 con state anti-CSRF e intercambio en servidor]]
 - 🧪 [[memoria/conocimiento/recetas/login-con-google-oauth-2-0-codigo-de-autorizacion-state-en-s|Login con Google OAuth 2.0 (código de autorización, state en sesión)]]

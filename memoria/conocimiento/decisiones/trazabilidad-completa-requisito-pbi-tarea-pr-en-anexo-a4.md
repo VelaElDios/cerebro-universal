@@ -17,6 +17,6 @@ El anexo A4 (chapters/a4-trazabilidad.tex) contiene una longtable con 5 columnas
 > Anexo nuevo: «Trazabilidad» con \label{anx:trazabilidad}. Tabla completa (longtable) requisito → PBI → tarea → PR de los dos sprints: todos los PBIs P1–P48 y todas las tareas T1–T82.
 > — `spec del proyecto (tabla anexos)` (cita sin comprobar)
 
-Relacionado: [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]]
+Relacionado: [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -21,6 +21,6 @@ Temas: [[correo]] · [[grada-colchonera]] · [[oauth]] · [[saas]]
 > La `SMTP_URL` queda así (la `@` del usuario se escribe `%40`): `smtps://tucorreo%40gmail.com:abcdefghijklmnop@smtp.gmail.com:465` y `MAIL_FROM`: `La Grada Colchonera <tucorreo@gmail.com>`.
 > — `repo:saas/docs/hito4-configuracion.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[como-probar-la-configuracion-en-local-hito-4]] · [[solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[como-probar-la-configuracion-en-local-hito-4]] · [[solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto]] · [[como-crear-cliente-oauth-de-google-para-la-grada-colchonera]] · [[como-desplegar-secretos-de-hito-4-a-cloud-run-produccion]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

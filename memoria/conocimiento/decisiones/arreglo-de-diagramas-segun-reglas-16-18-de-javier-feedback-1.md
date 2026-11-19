@@ -21,6 +21,6 @@ Herramientas: TikZ con `positioning`, `fit`, `calc`; `sequencediagram` (pgf-umls
 > Figura 3.1 (arquitectura en capas): la flecha vertical de la Lógica a las Integraciones atraviesa la caja Datos. En las cajas se parten las rutas. Diagramas de secuencia con 9 participantes salen diminutos. Figura 4.7 (arquitectura del juego): caja config.js pisada por juego.js, flechas verticales atraviesan cajas.
 > — `revisión humana (Javier) 2026-11-17` (cita sin comprobar)
 
-Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]]
+Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T14:17:56+01:00",
+ "generado": "2026-11-19T15:48:03+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -658,38 +658,22 @@
   {
    "id": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
    "tipo": "concepto",
-   "titulo": "Burndown real vs. burndown de DoneTonic en Sprint 2",
-   "temas": [
-    "donetonic",
-    "metricas",
-    "scrum",
-    "burndown",
-    "sprint"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2.md"
-  },
-  {
-   "id": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "tipo": "concepto",
-   "titulo": "Burndown real vs DoneTonic en Sprint 2 (backlog registrado al cerrar)",
+   "titulo": "Burndown real vs. DoneTonic en Sprint 2 (backlog registrado al cerrar el sprint)",
    "temas": [
     "burndown",
     "donetonic",
-    "métricas",
-    "scrum",
     "graficas",
     "metricas",
+    "métricas",
+    "scrum",
+    "sprint",
     "sprint2"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
    "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al.md"
+   "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2.md"
   },
   {
    "id": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
@@ -812,7 +796,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2.md"
   },
   {
@@ -880,7 +864,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo.md"
   },
   {
@@ -939,7 +923,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/fases-del-sprint-2-y-prs-asociados.md"
   },
   {
@@ -1271,7 +1255,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github.md"
   },
   {
@@ -1321,7 +1305,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi.md"
   },
   {
@@ -1436,7 +1420,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/datos-del-burndown-sprint-1-pbis-pendientes-por-hito.md"
   },
   {
@@ -1545,7 +1529,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md"
   },
   {
@@ -1654,7 +1638,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha.md"
   },
   {
@@ -1694,23 +1678,8 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
-   "ruta": "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md"
-  },
-  {
-   "id": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
-   "tipo": "dato",
-   "titulo": "Inventario de capturas por carpeta con fechas y requisitos",
-   "temas": [
-    "capturas",
-    "tfg",
-    "trazabilidad"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
    "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/datos/inventario-de-capturas-por-carpeta-con-fechas-y-requisitos.md"
+   "ruta": "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md"
   },
   {
    "id": "dato:lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
@@ -2205,7 +2174,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico.md"
   },
   {
@@ -2637,7 +2606,7 @@
   {
    "id": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "tipo": "decision",
-   "titulo": "Portada oficial única y elementos fijos de la plantilla",
+   "titulo": "Portada oficial única y elementos fijos de la plantilla TFG",
    "temas": [
     "latex",
     "memoria",
@@ -2646,19 +2615,6 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md"
-  },
-  {
-   "id": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
-   "tipo": "decision",
-   "titulo": "Portada única oficial del TFG (elements/portada.tex)",
-   "temas": [
-    "latex",
-    "memoria",
-    "tfg"
-   ],
-   "proyectos": [],
-   "confianza": "verificado",
-   "ruta": "memoria/conocimiento/decisiones/portada-unica-oficial-del-tfg-elements-portada-tex.md"
   },
   {
    "id": "decision:proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api",
@@ -2734,7 +2690,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto.md"
   },
   {
@@ -3205,6 +3161,7 @@
    "tipo": "receta",
    "titulo": "Cómo agrupar capturas con subfigure en LaTeX para manuales de usuario",
    "temas": [
+    "figuras",
     "latex",
     "maquetacion",
     "subcaption",
@@ -3213,24 +3170,8 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
-   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
-  },
-  {
-   "id": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "tipo": "receta",
-   "titulo": "Cómo agrupar capturas con subfigure en LaTeX",
-   "temas": [
-    "latex",
-    "maquetacion",
-    "subcaption",
-    "figuras"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
    "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex.md"
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
   },
   {
    "id": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
@@ -3332,7 +3273,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-desplegar-secretos-de-hito-4-a-cloud-run-produccion.md"
   },
   {
@@ -3896,20 +3837,6 @@
    "ruta": "memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github.md"
   },
   {
-   "id": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
-   "tipo": "receta",
-   "titulo": "Formato de tablas: alineación superior, ancho controlado y código con path/texttt+allowbreak",
-   "temas": [
-    "latex",
-    "memoria",
-    "tablas",
-    "tfg"
-   ],
-   "proyectos": [],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-cod.md"
-  },
-  {
    "id": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
    "tipo": "receta",
    "titulo": "Formato de títulos y enlaces en la memoria",
@@ -4115,10 +4042,12 @@
   {
    "id": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
    "tipo": "receta",
-   "titulo": "Pipeline CI/CD: GitHub Actions con PostgreSQL 17 real, Docker, despliegue automático a Cloud Run",
+   "titulo": "Pipeline CI/CD: GitHub Actions con PostgreSQL 17, Docker, Cloud Run, Render y compilación LaTeX",
    "temas": [
     "ci-cd",
     "cloud-run",
+    "despliegue",
+    "devops",
     "docker",
     "github-actions",
     "grada-colchonera",
@@ -4131,22 +4060,6 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker.md"
-  },
-  {
-   "id": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "tipo": "receta",
-   "titulo": "Pipeline CI/CD: GitHub Actions, Docker, Cloud Run y Render",
-   "temas": [
-    "despliegue",
-    "devops",
-    "grada-colchonera",
-    "saas"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-docker-cloud-run-y-render.md"
   },
   {
    "id": "receta:proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni",
@@ -4259,7 +4172,7 @@
     "tfg"
    ],
    "proyectos": [],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle.md"
   },
   {
@@ -4281,7 +4194,7 @@
   {
    "id": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
    "tipo": "receta",
-   "titulo": "Reglas de maquetación de tablas (alineación, anchos, longtable)",
+   "titulo": "Reglas de maquetación de tablas en LaTeX (alineación, anchos, longtable, código y rutas)",
    "temas": [
     "latex",
     "memoria",
@@ -4289,7 +4202,7 @@
     "tfg"
    ],
    "proyectos": [],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable.md"
   },
   {
@@ -4480,14 +4393,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 107,
+   "peso": 104,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 50,
+   "peso": 48,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -4557,7 +4470,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 9,
+   "peso": 8,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -4599,7 +4512,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 7,
+   "peso": 6,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -4641,7 +4554,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 8,
+   "peso": 7,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -4655,7 +4568,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 54,
+   "peso": 51,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -4725,14 +4638,14 @@
    "id": "tema:grada-colchonera",
    "tipo": "tema",
    "titulo": "grada-colchonera",
-   "peso": 131,
+   "peso": 130,
    "ruta": "memoria/temas/grada-colchonera.md"
   },
   {
    "id": "tema:saas",
    "tipo": "tema",
    "titulo": "saas",
-   "peso": 105,
+   "peso": 104,
    "ruta": "memoria/temas/saas.md"
   },
   {
@@ -4771,32 +4684,25 @@
    "ruta": "memoria/temas/audio.md"
   },
   {
-   "id": "tema:donetonic",
-   "tipo": "tema",
-   "titulo": "donetonic",
-   "peso": 49,
-   "ruta": "memoria/temas/donetonic.md"
-  },
-  {
-   "id": "tema:scrum",
-   "tipo": "tema",
-   "titulo": "scrum",
-   "peso": 52,
-   "ruta": "memoria/temas/scrum.md"
-  },
-  {
    "id": "tema:burndown",
    "tipo": "tema",
    "titulo": "burndown",
-   "peso": 2,
+   "peso": 1,
    "ruta": "memoria/temas/burndown.md"
   },
   {
-   "id": "tema:sprint",
+   "id": "tema:donetonic",
    "tipo": "tema",
-   "titulo": "sprint",
-   "peso": 36,
-   "ruta": "memoria/temas/sprint.md"
+   "titulo": "donetonic",
+   "peso": 48,
+   "ruta": "memoria/temas/donetonic.md"
+  },
+  {
+   "id": "tema:graficas",
+   "tipo": "tema",
+   "titulo": "graficas",
+   "peso": 2,
+   "ruta": "memoria/temas/graficas.md"
   },
   {
    "id": "tema:métricas",
@@ -4806,11 +4712,18 @@
    "ruta": "memoria/temas/métricas.md"
   },
   {
-   "id": "tema:graficas",
+   "id": "tema:scrum",
    "tipo": "tema",
-   "titulo": "graficas",
-   "peso": 2,
-   "ruta": "memoria/temas/graficas.md"
+   "titulo": "scrum",
+   "peso": 51,
+   "ruta": "memoria/temas/scrum.md"
+  },
+  {
+   "id": "tema:sprint",
+   "tipo": "tema",
+   "titulo": "sprint",
+   "peso": 36,
+   "ruta": "memoria/temas/sprint.md"
   },
   {
    "id": "tema:sprint2",
@@ -5117,7 +5030,7 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 13,
+   "peso": 12,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -5320,7 +5233,7 @@
    "id": "tema:capturas",
    "tipo": "tema",
    "titulo": "capturas",
-   "peso": 5,
+   "peso": 4,
    "ruta": "memoria/temas/capturas.md"
   },
   {
@@ -5656,7 +5569,7 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 4,
+   "peso": 3,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
@@ -6080,18 +5993,18 @@
    "ruta": "memoria/temas/wif.md"
   },
   {
-   "id": "tema:docker",
-   "tipo": "tema",
-   "titulo": "docker",
-   "peso": 1,
-   "ruta": "memoria/temas/docker.md"
-  },
-  {
    "id": "tema:devops",
    "tipo": "tema",
    "titulo": "devops",
    "peso": 1,
    "ruta": "memoria/temas/devops.md"
+  },
+  {
+   "id": "tema:docker",
+   "tipo": "tema",
+   "titulo": "docker",
+   "peso": 1,
+   "ruta": "memoria/temas/docker.md"
   },
   {
    "id": "tema:sesión",
@@ -7122,7 +7035,17 @@
   },
   {
    "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "tema:burndown",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
    "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "tema:graficas",
    "tipo": "trata"
   },
   {
@@ -7132,17 +7055,22 @@
   },
   {
    "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "tema:métricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
    "a": "tema:scrum",
    "tipo": "trata"
   },
   {
    "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
-   "a": "tema:burndown",
+   "a": "tema:sprint",
    "tipo": "trata"
   },
   {
    "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
-   "a": "tema:sprint",
+   "a": "tema:sprint2",
    "tipo": "trata"
   },
   {
@@ -7184,46 +7112,6 @@
    "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
    "a": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
    "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "a": "tema:burndown",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "a": "tema:donetonic",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "a": "tema:métricas",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "a": "tema:scrum",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "a": "tema:graficas",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "a": "tema:metricas",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "a": "tema:sprint2",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
   },
   {
    "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
@@ -7381,6 +7269,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza",
+   "a": "decision:entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -7406,6 +7299,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
+   "a": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -7428,6 +7326,11 @@
   {
    "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
    "a": "dato:campos-de-proyecto-json-y-su-proposito",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
+   "a": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
    "tipo": "enlaza"
   },
   {
@@ -7591,6 +7494,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
+   "a": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime",
    "a": "tema:defensa",
    "tipo": "trata"
@@ -7716,6 +7624,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:definicion-de-hecho-dod-para-tareas-hitos-y-fases",
+   "a": "dato:prs-de-cierre-de-hito-y-sprint-en-repositorio",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
    "a": "tema:alcance",
    "tipo": "trata"
@@ -7818,6 +7731,11 @@
   {
    "de": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
    "a": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "a": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
    "tipo": "enlaza"
   },
   {
@@ -8011,6 +7929,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "a": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:formato-de-logs-json-y-eventos-registrados",
    "a": "tema:grada-colchonera",
    "tipo": "trata"
@@ -8098,6 +8021,11 @@
   {
    "de": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
    "a": "receta:cliente-api-con-timeout-de-15-s-y-manejo-de-apierror",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "a": "receta:manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui",
    "tipo": "enlaza"
   },
   {
@@ -8193,6 +8121,11 @@
   {
    "de": "concepto:genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
    "a": "decision:pivote-de-red-social-a-juego-survivor-reutilizando-base-del",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:genero-y-bucle-principal-del-juego-survivor-chibi-atletico",
+   "a": "dato:referencia-vampire-survivors-como-antecedente-de-genero-surv",
    "tipo": "enlaza"
   },
   {
@@ -8431,6 +8364,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
+   "a": "decision:sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -8483,6 +8421,11 @@
   {
    "de": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
    "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:lecciones-aprendidas-tareas-pequenas-deploy-dia-1-documentar",
+   "a": "dato:prs-de-cierre-de-hito-y-sprint-en-repositorio",
    "tipo": "enlaza"
   },
   {
@@ -8603,6 +8546,11 @@
   {
    "de": "concepto:maquina-de-estados-de-la-cuenta-de-usuario",
    "a": "receta:flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:maquina-de-estados-de-la-cuenta-de-usuario",
+   "a": "receta:registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y",
    "tipo": "enlaza"
   },
   {
@@ -9021,6 +8969,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra",
+   "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
    "a": "tema:gestión",
    "tipo": "trata"
@@ -9076,6 +9029,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -9126,6 +9099,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
+   "a": "dato:trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -9173,6 +9151,16 @@
   {
    "de": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
    "a": "dato:trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "a": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "a": "dato:tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re",
    "tipo": "enlaza"
   },
   {
@@ -9238,6 +9226,11 @@
   {
    "de": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
    "a": "decision:sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi",
+   "a": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
    "tipo": "enlaza"
   },
   {
@@ -9461,6 +9454,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
+   "a": "dato:lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
    "a": "tema:calidad",
    "tipo": "trata"
@@ -9576,6 +9574,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:cronologia-detallada-del-proyecto-septiembre-octubre-2026",
+   "a": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -9623,6 +9626,16 @@
   {
    "de": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
    "a": "dato:datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
+   "a": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
+   "a": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
    "tipo": "enlaza"
   },
   {
@@ -9728,6 +9741,11 @@
   {
    "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
    "a": "dato:metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "tipo": "enlaza"
   },
   {
@@ -9851,6 +9869,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "a": "dato:metricas-comparativas-sprint-1-vs-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -9898,6 +9921,11 @@
   {
    "de": "dato:estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas",
    "a": "decision:sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas",
+   "a": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
    "tipo": "enlaza"
   },
   {
@@ -9966,6 +9994,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "a": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "a": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "a": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -10009,6 +10052,26 @@
    "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
@@ -10136,6 +10199,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "dato:fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "dato:estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "a": "dato:fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29",
    "a": "tema:grada-colchonera",
    "tipo": "trata"
@@ -10188,6 +10266,16 @@
   {
    "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29",
    "a": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29",
+   "a": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29",
+   "a": "decision:sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba",
    "tipo": "enlaza"
   },
   {
@@ -10249,6 +10337,21 @@
    "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "dato:capturas-de-donetonic-disponibles-en-el-repo",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
@@ -10341,6 +10444,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "a": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "a": "tema:capturas",
    "tipo": "trata"
@@ -10381,24 +10489,14 @@
    "tipo": "enlaza"
   },
   {
-   "de": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
-   "a": "tema:capturas",
-   "tipo": "trata"
+   "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "a": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "tipo": "enlaza"
   },
   {
-   "de": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
-   "a": "tema:tfg",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
-   "a": "tema:trazabilidad",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:inventario-de-capturas-por-carpeta-con-fechas-y-requisitos",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
+   "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
@@ -10556,6 +10654,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:metricas-comparativas-sprint-1-vs-sprint-2",
+   "a": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:metricas-de-calidad-80-tests-automatizados-con-node-test-com",
    "a": "tema:calidad",
    "tipo": "trata"
@@ -10603,6 +10706,11 @@
   {
    "de": "dato:metricas-de-calidad-80-tests-automatizados-con-node-test-com",
    "a": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:metricas-de-calidad-80-tests-automatizados-con-node-test-com",
+   "a": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
    "tipo": "enlaza"
   },
   {
@@ -11211,6 +11319,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:roadmap-de-trabajo-futuro-priorizado",
+   "a": "concepto:frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:script-de-configuracion-de-secretos-hito-4-en-gcp",
    "a": "tema:correo",
    "tipo": "trata"
@@ -11308,6 +11421,11 @@
   {
    "de": "dato:tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re",
    "a": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re",
+   "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
    "tipo": "enlaza"
   },
   {
@@ -11429,6 +11547,21 @@
    "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "a": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "a": "dato:tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "a": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs",
@@ -11696,6 +11829,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
    "a": "tema:alcance",
    "tipo": "trata"
@@ -11756,6 +11894,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
    "a": "tema:latex",
    "tipo": "trata"
@@ -11793,6 +11936,11 @@
   {
    "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
    "a": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "a": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "tipo": "enlaza"
   },
   {
@@ -12001,6 +12149,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre",
+   "a": "dato:backlog-completo-del-sprint-1-con-trazabilidad-a-releases",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in",
    "a": "tema:alcance",
    "tipo": "trata"
@@ -12114,6 +12267,21 @@
    "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
    "a": "tema:tfg",
    "tipo": "trata"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "tipo": "enlaza"
   },
   {
    "de": "decision:correccion-de-unicidad-de-email-tras-baja-logica-indice-parc",
@@ -12232,12 +12400,22 @@
   },
   {
    "de": "decision:dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
-   "a": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
+   "a": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
    "tipo": "enlaza"
   },
   {
    "de": "decision:dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
    "a": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
+   "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
+   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
    "tipo": "enlaza"
   },
   {
@@ -12306,6 +12484,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
+   "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -12348,6 +12531,11 @@
   {
    "de": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
    "a": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
+   "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
    "tipo": "enlaza"
   },
   {
@@ -12581,6 +12769,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
+   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:flechas-reales-en-captions-y-texto-rightarrow-nunca",
    "a": "tema:latex",
    "tipo": "trata"
@@ -12607,12 +12800,17 @@
   },
   {
    "de": "decision:flechas-reales-en-captions-y-texto-rightarrow-nunca",
-   "a": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
+   "a": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
    "tipo": "enlaza"
   },
   {
    "de": "decision:flechas-reales-en-captions-y-texto-rightarrow-nunca",
    "a": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:flechas-reales-en-captions-y-texto-rightarrow-nunca",
+   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
    "tipo": "enlaza"
   },
   {
@@ -12666,6 +12864,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
+   "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -12689,6 +12892,21 @@
    "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
    "a": "tema:tikz",
    "tipo": "trata"
+  },
+  {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "tipo": "enlaza"
   },
   {
    "de": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
@@ -12768,6 +12986,16 @@
   {
    "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
    "a": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
    "tipo": "enlaza"
   },
   {
@@ -12887,7 +13115,7 @@
   },
   {
    "de": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
-   "a": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "tipo": "enlaza"
   },
   {
@@ -12946,32 +13174,17 @@
    "tipo": "trata"
   },
   {
-   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
-   "a": "tema:memoria",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
-   "a": "tema:tfg",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "a": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
    "tipo": "enlaza"
   },
   {
-   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "a": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
    "tipo": "enlaza"
   },
   {
-   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "a": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
    "tipo": "enlaza"
   },
@@ -13071,6 +13284,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g",
+   "a": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -13141,6 +13359,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar",
+   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto",
    "a": "tema:cloud-run",
    "tipo": "trata"
@@ -13181,6 +13404,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto",
+   "a": "receta:como-desplegar-secretos-de-hito-4-a-cloud-run-produccion",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex",
    "a": "tema:bug",
    "tipo": "trata"
@@ -13218,6 +13446,11 @@
   {
    "de": "decision:solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex",
    "a": "concepto:manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:solucion-a-json-mal-formado-que-devolvia-html-de-error-de-ex",
+   "a": "concepto:modulos-del-backend-y-sus-responsabilidades",
    "tipo": "enlaza"
   },
   {
@@ -13333,6 +13566,11 @@
   {
    "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
    "a": "dato:tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
+   "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
    "tipo": "enlaza"
   },
   {
@@ -13737,7 +13975,7 @@
   },
   {
    "de": "fuente:fuente-documentacion-tecnica",
-   "a": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
+   "a": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
    "tipo": "enlaza"
   },
   {
@@ -14427,7 +14665,7 @@
   },
   {
    "de": "receta:agrupar-capturas-con-subfigure",
-   "a": "receta:como-agrupar-capturas-con-subfigure-en-latex",
+   "a": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
    "tipo": "enlaza"
   },
   {
@@ -14438,6 +14676,11 @@
   {
    "de": "receta:agrupar-capturas-con-subfigure",
    "a": "receta:como-se-agrupan-capturas-con-subfigure",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:agrupar-capturas-con-subfigure",
+   "a": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
    "tipo": "enlaza"
   },
   {
@@ -14488,6 +14731,11 @@
   {
    "de": "receta:api-del-juego-con-validacion-anti-trampas",
    "a": "dato:arreglos-criticos-en-sprint-2-prs-51-55-56",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:api-del-juego-con-validacion-anti-trampas",
+   "a": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
    "tipo": "enlaza"
   },
   {
@@ -14588,6 +14836,11 @@
   {
    "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
    "a": "decision:figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "a": "receta:figuras-que-comparten-pagina-con-el-texto-parametros-de-flot",
    "tipo": "enlaza"
   },
   {
@@ -14736,6 +14989,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
+   "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:capitulo-4-requisitos-arquitectura-tabla-de-sprints-y-manual",
    "a": "tema:arquitectura",
    "tipo": "trata"
@@ -14791,6 +15049,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:capitulo-4-requisitos-arquitectura-tabla-de-sprints-y-manual",
+   "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de",
    "a": "tema:capitulo-6",
    "tipo": "trata"
@@ -14836,6 +15099,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de",
+   "a": "concepto:anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
    "a": "tema:latex",
    "tipo": "trata"
@@ -14859,6 +15127,21 @@
    "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
    "a": "tema:verificacion",
    "tipo": "trata"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:checklist-previo-a-abrir-pull-request-npm-test-local-obligat",
@@ -15036,6 +15319,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito",
+   "a": "dato:estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
    "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
    "a": "tema:latex",
    "tipo": "trata"
@@ -15072,11 +15365,6 @@
   },
   {
    "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
-   "a": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
    "a": "receta:agrupar-capturas-con-subfigure",
    "tipo": "enlaza"
   },
@@ -15086,43 +15374,8 @@
    "tipo": "enlaza"
   },
   {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "a": "tema:maquetacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "a": "tema:subcaption",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "a": "tema:figuras",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "a": "receta:como-se-agrupan-capturas-con-subfigure",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "a": "receta:agrupar-capturas-con-subfigure",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex",
-   "a": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
    "tipo": "enlaza"
   },
   {
@@ -15203,6 +15456,11 @@
   {
    "de": "receta:como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica",
    "a": "receta:como-crear-cliente-oauth-de-google-para-la-grada-colchonera",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-configurar-smtp-saliente-con-gmail-contrasena-de-aplica",
+   "a": "receta:como-desplegar-secretos-de-hito-4-a-cloud-run-produccion",
    "tipo": "enlaza"
   },
   {
@@ -15393,6 +15651,11 @@
   {
    "de": "receta:como-desplegar-secretos-de-hito-4-a-cloud-run-produccion",
    "a": "receta:como-probar-la-configuracion-en-local-hito-4",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-desplegar-secretos-de-hito-4-a-cloud-run-produccion",
+   "a": "decision:solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto",
    "tipo": "enlaza"
   },
   {
@@ -15626,6 +15889,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-probar-la-configuracion-en-local-hito-4",
+   "a": "dato:script-de-configuracion-de-secretos-hito-4-en-gcp",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi",
    "a": "tema:capturas",
    "tipo": "trata"
@@ -15686,6 +15954,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi",
+   "a": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
    "a": "tema:figura",
    "tipo": "trata"
@@ -15707,7 +15980,7 @@
   },
   {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
-   "a": "receta:como-agrupar-capturas-con-subfigure-en-latex",
+   "a": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
    "tipo": "enlaza"
   },
   {
@@ -15718,6 +15991,11 @@
   {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
    "a": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
    "tipo": "enlaza"
   },
   {
@@ -15817,7 +16095,7 @@
   },
   {
    "de": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
-   "a": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "tipo": "enlaza"
   },
   {
@@ -15828,6 +16106,16 @@
   {
    "de": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
    "a": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "a": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
+   "a": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
    "tipo": "enlaza"
   },
   {
@@ -15858,6 +16146,16 @@
   {
    "de": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
    "a": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "a": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "tipo": "enlaza"
   },
   {
@@ -15973,6 +16271,11 @@
   {
    "de": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
    "a": "dato:capturas-de-donetonic-disponibles-en-el-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:contenido-de-los-anexos-por-sprint-en-la-memoria-tfg",
+   "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
    "tipo": "enlaza"
   },
   {
@@ -16386,6 +16689,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:en-un-tex-los-comentarios-son-con-no-con",
+   "a": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:enquote-necesita-el-paquete-csquotes",
    "a": "tema:comillas",
    "tipo": "trata"
@@ -16611,6 +16919,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni",
+   "a": "receta:reglas-de-integracion-mediante-pull-requests-con-ci-obligato",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:evitar-paginas-casi-vacias-regla-9",
    "a": "tema:latex",
    "tipo": "trata"
@@ -16753,6 +17066,11 @@
   {
    "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
    "a": "decision:figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
+   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
    "tipo": "enlaza"
   },
   {
@@ -16956,41 +17274,6 @@
    "tipo": "enlaza"
   },
   {
-   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
-   "a": "tema:memoria",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
-   "a": "tema:tablas",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
-   "a": "tema:tfg",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
-   "a": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
-   "a": "receta:tablas-largas-en-longtable-con-ultima-fila-acompanada",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
-   "a": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
-   "tipo": "enlaza"
-  },
-  {
    "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
    "a": "tema:latex",
    "tipo": "trata"
@@ -17004,6 +17287,21 @@
    "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
    "a": "tema:tfg",
    "tipo": "trata"
+  },
+  {
+   "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "a": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "a": "decision:sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
@@ -17496,6 +17794,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con",
+   "a": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:pipeline-ci-cd-github-actions-cloud-run-con-workload-identit",
    "a": "tema:artifact-registry",
    "tipo": "trata"
@@ -17542,7 +17845,7 @@
   },
   {
    "de": "receta:pipeline-ci-cd-github-actions-cloud-run-con-workload-identit",
-   "a": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
+   "a": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
    "tipo": "enlaza"
   },
   {
@@ -17556,6 +17859,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:pipeline-ci-cd-github-actions-cloud-run-con-workload-identit",
+   "a": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
    "a": "tema:ci-cd",
    "tipo": "trata"
@@ -17563,6 +17871,16 @@
   {
    "de": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
    "a": "tema:cloud-run",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
+   "a": "tema:despliegue",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
+   "a": "tema:devops",
    "tipo": "trata"
   },
   {
@@ -17602,11 +17920,6 @@
   },
   {
    "de": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
-   "a": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
    "a": "receta:pipeline-ci-cd-github-actions-cloud-run-con-workload-identit",
    "tipo": "enlaza"
   },
@@ -17616,47 +17929,12 @@
    "tipo": "enlaza"
   },
   {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "a": "tema:despliegue",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "a": "tema:devops",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "a": "tema:grada-colchonera",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "a": "tema:saas",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
+   "de": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
    "a": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
    "tipo": "enlaza"
   },
   {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "a": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
-   "a": "receta:pipeline-ci-cd-github-actions-cloud-run-con-workload-identit",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:pipeline-ci-cd-github-actions-docker-cloud-run-y-render",
+   "de": "receta:pipeline-ci-cd-github-actions-con-postgresql-17-real-docker",
    "a": "concepto:seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage",
    "tipo": "enlaza"
   },
@@ -17761,6 +18039,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "a": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
    "a": "tema:latex",
    "tipo": "trata"
@@ -17843,6 +18126,11 @@
   {
    "de": "receta:recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po",
    "a": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po",
+   "a": "concepto:control-de-acceso-basado-en-roles-y-propiedad-requireauth-re",
    "tipo": "enlaza"
   },
   {
@@ -17946,6 +18234,21 @@
    "tipo": "trata"
   },
   {
+   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "decision:figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "receta:corregir-paginas-con-una-sola-imagen-regla-8",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:reglas-de-integracion-mediante-pull-requests-con-ci-obligato",
    "a": "tema:git",
    "tipo": "trata"
@@ -18009,6 +18312,21 @@
    "de": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
    "a": "tema:tfg",
    "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "a": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "a": "receta:tablas-largas-en-longtable-con-ultima-fila-acompanada",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "a": "receta:que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:renderizado-chibi-1620-px-por-codigo-con-cache-de-fotogramas",
@@ -18137,7 +18455,7 @@
   },
   {
    "de": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
-   "a": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "tipo": "enlaza"
   },
   {
@@ -18207,7 +18525,7 @@
   },
   {
    "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
-   "a": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
+   "a": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
    "tipo": "enlaza"
   },
   {
@@ -18252,7 +18570,7 @@
   },
   {
    "de": "receta:tablas-largas-en-longtable-con-ultima-fila-acompanada",
-   "a": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-cod",
+   "a": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
    "tipo": "enlaza"
   },
   {
@@ -18293,6 +18611,16 @@
   {
    "de": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
    "a": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "a": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm",
+   "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "tipo": "enlaza"
   },
   {
@@ -18459,6 +18787,21 @@
    "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "a": "tema:verificacion",
    "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "tipo": "enlaza"
   }
  ]
 }

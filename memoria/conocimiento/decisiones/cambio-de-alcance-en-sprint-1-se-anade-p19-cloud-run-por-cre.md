@@ -17,6 +17,6 @@ Decisión documentada: tras el Hito 3 (14 PBIs hechos, 1 pendiente), el profesor
 > > **Cambio de alcance durante el sprint:** el profesor repartió créditos de Google Cloud para educación. Para aprovecharlos se añadió al sprint el PBI **P19** (despliegue en Google Cloud Run), con sus tareas T29 y T30. Render se mantiene como despliegue alternativo.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]
+Relacionado: [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

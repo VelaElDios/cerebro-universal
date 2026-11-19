@@ -16,3 +16,5 @@ Configurar en el preámbulo: `\definecolor{tema}{RGB}{0,0,0}` para forzar color 
 
 > Títulos en negro y en negrita, sin azul: `\definecolor{tema}{RGB}{0,0,0}`, con `\bfseries` en section y subsection. Los enlaces van sin recuadros de color (`\hypersetup{hidelinks}`).
 > — `../../memoria/reglas-tfg.md`
+
+Relacionado: [[titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm]] · [[reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle]] · [[sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar]]

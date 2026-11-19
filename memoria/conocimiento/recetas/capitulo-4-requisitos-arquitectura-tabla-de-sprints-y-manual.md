@@ -17,6 +17,6 @@ Capítulo 4 tiene cuatro bloques: 1) Requisitos: lista numerada separando funcio
 > Requisitos (lista de requisitos funcionales y no funcionales), arquitectura, resumen de los sprints (tabla; el detalle va en el anexo) y descripción de la aplicación tipo manual de usuario.
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

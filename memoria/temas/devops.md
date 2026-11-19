@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «devops» (este archivo se
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-docker-cloud-run-y-render|Pipeline CI/CD: GitHub Actions, Docker, Cloud Run y Render]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker|Pipeline CI/CD: GitHub Actions con PostgreSQL 17, Docker, Cloud Run, Render y compilación LaTeX]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[despliegue]] · [[grada-colchonera]] · [[saas]]
+[[ci-cd]] · [[cloud-run]] · [[despliegue]] · [[docker]] · [[github-actions]] · [[grada-colchonera]] · [[postgresql]] · [[procesos]] · [[saas]]

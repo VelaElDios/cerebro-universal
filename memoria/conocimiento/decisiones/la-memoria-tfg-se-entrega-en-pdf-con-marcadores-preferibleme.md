@@ -17,6 +17,6 @@ Decisión de formato: la memoria final debe generarse en PDF con marcadores (boo
 > La memoria es el artefacto más importante. Se entrega en PDF con marcadores. Mejor en LaTeX.
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[fuente-reglas-tfg]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]]
+Relacionado: [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[fuente-reglas-tfg]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
