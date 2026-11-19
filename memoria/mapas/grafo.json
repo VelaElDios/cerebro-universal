@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T21:52:41+01:00",
+ "generado": "2026-11-19T22:38:57+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2754,6 +2754,22 @@
    "ruta": "memoria/conocimiento/decisiones/pivote-de-red-social-a-juego-survivor-reutilizando-base-del.md"
   },
   {
+   "id": "decision:placeholders-xx-para-numeros-sin-verificar-en-memoria-latex",
+   "tipo": "decision",
+   "titulo": "Placeholders \"XX\" para números sin verificar en memoria LaTeX",
+   "temas": [
+    "latex",
+    "memoria-procesos",
+    "placeholders",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/placeholders-xx-para-numeros-sin-verificar-en-memoria-latex.md"
+  },
+  {
    "id": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "tipo": "decision",
    "titulo": "Portada oficial única y elementos fijos de la plantilla TFG",
@@ -3544,6 +3560,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-exportar-diagramas-mermaid-para-la-memoria-latex.md"
+  },
+  {
+   "id": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
+   "tipo": "receta",
+   "titulo": "Cómo manejar fuentes faltantes en verificación automática de números",
+   "temas": [
+    "fuentes",
+    "memoria-procesos",
+    "verificacion",
+    "verificar.py"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-manejar-fuentes-faltantes-en-verificacion-automatica-de.md"
   },
   {
    "id": "receta:como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg",
@@ -4542,6 +4574,22 @@
    "ruta": "memoria/conocimiento/recetas/resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi.md"
   },
   {
+   "id": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
+   "tipo": "receta",
+   "titulo": "Secuencia obligatoria cuando faltan fuentes en mensaje del revisor",
+   "temas": [
+    "constructor",
+    "flujo-trabajo",
+    "fuentes",
+    "memoria-procesos"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r.md"
+  },
+  {
    "id": "receta:simulacion-de-paso-fijo-con-semilla-mundo-js",
    "tipo": "receta",
    "titulo": "Simulación de paso fijo con semilla (mundo.js)",
@@ -4679,7 +4727,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 116,
+   "peso": 117,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4805,7 +4853,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 14,
+   "peso": 16,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -5435,7 +5483,7 @@
    "id": "tema:memoria-procesos",
    "tipo": "tema",
    "titulo": "memoria-procesos",
-   "peso": 11,
+   "peso": 14,
    "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
@@ -5477,7 +5525,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 4,
+   "peso": 6,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -5838,6 +5886,13 @@
    "ruta": "memoria/temas/pipeline.md"
   },
   {
+   "id": "tema:placeholders",
+   "tipo": "tema",
+   "titulo": "placeholders",
+   "peso": 1,
+   "ruta": "memoria/temas/placeholders.md"
+  },
+  {
    "id": "tema:integridad",
    "tipo": "tema",
    "titulo": "integridad",
@@ -6067,6 +6122,13 @@
    "titulo": "mermaid",
    "peso": 1,
    "ruta": "memoria/temas/mermaid.md"
+  },
+  {
+   "id": "tema:verificar.py",
+   "tipo": "tema",
+   "titulo": "verificar.py",
+   "peso": 1,
+   "ruta": "memoria/temas/verificar.py.md"
   },
   {
    "id": "tema:figura",
@@ -6382,6 +6444,20 @@
    "titulo": "resumen",
    "peso": 1,
    "ruta": "memoria/temas/resumen.md"
+  },
+  {
+   "id": "tema:constructor",
+   "tipo": "tema",
+   "titulo": "constructor",
+   "peso": 1,
+   "ruta": "memoria/temas/constructor.md"
+  },
+  {
+   "id": "tema:flujo-trabajo",
+   "tipo": "tema",
+   "titulo": "flujo-trabajo",
+   "peso": 1,
+   "ruta": "memoria/temas/flujo-trabajo.md"
   },
   {
    "id": "tema:compilacion",
@@ -13747,6 +13823,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:placeholders-xx-para-numeros-sin-verificar-en-memoria-latex",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:placeholders-xx-para-numeros-sin-verificar-en-memoria-latex",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:placeholders-xx-para-numeros-sin-verificar-en-memoria-latex",
+   "a": "tema:placeholders",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:placeholders-xx-para-numeros-sin-verificar-en-memoria-latex",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:placeholders-xx-para-numeros-sin-verificar-en-memoria-latex",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:placeholders-xx-para-numeros-sin-verificar-en-memoria-latex",
+   "a": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "a": "tema:latex",
    "tipo": "trata"
@@ -16527,6 +16633,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
+   "a": "tema:verificar.py",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg",
    "a": "tema:grada-colchonera",
    "tipo": "trata"
@@ -19299,6 +19430,36 @@
   {
    "de": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
    "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
+   "a": "tema:constructor",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
+   "a": "tema:flujo-trabajo",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
+   "a": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
    "tipo": "enlaza"
   },
   {

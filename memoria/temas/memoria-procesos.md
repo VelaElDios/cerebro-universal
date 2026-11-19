@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria-procesos"
-notas: 11
+notas: 14
 ---
 # memoria-procesos
 
@@ -10,14 +10,17 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg|Contenido de los anexos por sprint en la memoria TFG]]
+- 🧪 [[memoria/conocimiento/recetas/como-manejar-fuentes-faltantes-en-verificacion-automatica-de|Cómo manejar fuentes faltantes en verificación automática de números]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/definicion-de-hecho-dod-para-tareas-e-hitos|Definición de Hecho (DoD) para tareas e hitos]]
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github|Flujo de trabajo enunciado → código → deploy (DoneTonic + GitHub)]]
+- 🧪 [[memoria/conocimiento/recetas/secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r|Secuencia obligatoria cuando faltan fuentes en mensaje del revisor]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie|Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/placeholders-xx-para-numeros-sin-verificar-en-memoria-latex|Placeholders "XX" para números sin verificar en memoria LaTeX]] · ⚠️ propuesto
 
 ## Datos
 
@@ -29,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[sprint]] · [[saas]] · [[memoria]] · [[metricas]] · [[pbis]] · [[tareas]] · [[fechas]] · [[datos]] · [[verificacion]] · [[fuentes]]
+[[scrum]] · [[grada-colchonera]] · [[sprint]] · [[verificacion]] · [[fuentes]] · [[saas]] · [[latex]] · [[memoria]] · [[metricas]] · [[pbis]] · [[tareas]] · [[fechas]]

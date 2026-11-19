@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 116
+notas: 117
 ---
 # latex
 
@@ -86,6 +86,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p|Paso 1 completado: preambulo.tex ya cumple regla 1 (una sola portada)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie|Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/placeholders-xx-para-numeros-sin-verificar-en-memoria-latex|Placeholders "XX" para números sin verificar en memoria LaTeX]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
@@ -146,4 +147,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[figuras]] · [[maquetacion]] · [[pgf-umlsd]] · [[lua]] · [[sus]] · [[usabilidad]] · [[diagramas]] · [[verificacion]] · [[tablas]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[figuras]] · [[maquetacion]] · [[pgf-umlsd]] · [[lua]] · [[sus]] · [[usabilidad]] · [[verificacion]] · [[diagramas]] · [[tablas]]

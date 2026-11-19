@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 14
+notas: 16
 ---
 # verificacion
 
@@ -12,6 +12,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 - 🧪 [[memoria/conocimiento/recetas/cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p|Cada cifra de un documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final antes de marcar TERMINADO (PDF página a página + script verde)]]
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
+- 🧪 [[memoria/conocimiento/recetas/como-manejar-fuentes-faltantes-en-verificacion-automatica-de|Cómo manejar fuentes faltantes en verificación automática de números]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig|Verificación automática de diagramas con scripts/revisar_figuras.py]]
 
@@ -20,6 +21,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes|Números pequeños también se verifican en fuentes]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/placeholders-xx-para-numeros-sin-verificar-en-memoria-latex|Placeholders "XX" para números sin verificar en memoria LaTeX]] · ⚠️ propuesto
 
 ## Datos
 
@@ -35,4 +37,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[metricas]] · [[fuentes]] · [[numeros]] · [[test]] · [[memoria-procesos]] · [[sus]] · [[usabilidad]] · [[reglas-javier]] · [[pbis]]
+[[latex]] · [[tfg]] · [[memoria]] · [[memoria-procesos]] · [[fuentes]] · [[metricas]] · [[numeros]] · [[test]] · [[sus]] · [[usabilidad]] · [[reglas-javier]] · [[pbis]]
