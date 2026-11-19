@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «numeros» (este archivo s
 
 ## Temas relacionados
 
-[[fuentes]] · [[verificacion]] · [[cifras]] · [[test]]
+[[fuentes]] · [[verificacion]] · [[memoria-procesos]] · [[cifras]] · [[test]]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T19:18:39+01:00",
+ "generado": "2026-11-19T20:59:28+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1410,7 +1410,9 @@
     "sprints",
     "tareas",
     "fechas",
-    "pruebas"
+    "pruebas",
+    "datos",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2566,7 +2568,8 @@
    "temas": [
     "latex",
     "longtable",
-    "maquetacion"
+    "maquetacion",
+    "tablas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2627,7 +2630,8 @@
    "temas": [
     "fuentes",
     "numeros",
-    "verificacion"
+    "verificacion",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2689,7 +2693,9 @@
     "cicd",
     "coherencia",
     "latex",
-    "pipeline"
+    "pipeline",
+    "memoria-procesos",
+    "redaccion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3383,7 +3389,8 @@
     "diagramas-secuencia",
     "latex",
     "maquetacion",
-    "pgf-umlsd"
+    "pgf-umlsd",
+    "diagramas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4732,7 +4739,7 @@
    "id": "tema:datos",
    "tipo": "tema",
    "titulo": "datos",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/datos.md"
   },
   {
@@ -4816,7 +4823,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -5250,7 +5257,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -5401,6 +5408,13 @@
    "ruta": "memoria/temas/fechas.md"
   },
   {
+   "id": "tema:memoria-procesos",
+   "tipo": "tema",
+   "titulo": "memoria-procesos",
+   "peso": 11,
+   "ruta": "memoria/temas/memoria-procesos.md"
+  },
+  {
    "id": "tema:calidad",
    "tipo": "tema",
    "titulo": "calidad",
@@ -5448,13 +5462,6 @@
    "titulo": "verificar",
    "peso": 1,
    "ruta": "memoria/temas/verificar.md"
-  },
-  {
-   "id": "tema:memoria-procesos",
-   "tipo": "tema",
-   "titulo": "memoria-procesos",
-   "peso": 8,
-   "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
    "id": "tema:arma",
@@ -5621,7 +5628,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -9827,6 +9834,16 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -13297,6 +13314,11 @@
   },
   {
    "de": "decision:longtable-sin-fila-huerfana-al-final-regla-7-javier",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtable-sin-fila-huerfana-al-final-regla-7-javier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -13452,6 +13474,11 @@
   },
   {
    "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -13573,6 +13600,16 @@
   {
    "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
    "a": "tema:pipeline",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie",
+   "a": "tema:redaccion",
    "tipo": "trata"
   },
   {
@@ -16053,6 +16090,11 @@
   {
    "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
    "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "tema:diagramas",
    "tipo": "trata"
   },
   {

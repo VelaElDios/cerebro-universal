@@ -31,4 +31,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[longtable]] · [[reglas-tfg]] · [[maquetación]] · [[subcaption]] · [[subfigure]] · [[capturas]] · [[plantilla]] · [[portada]] · [[plantilla-tfg]] · [[tfg]]
+[[latex]] · [[figuras]] · [[longtable]] · [[reglas-tfg]] · [[maquetación]] · [[subcaption]] · [[subfigure]] · [[capturas]] · [[tablas]] · [[plantilla]] · [[portada]] · [[plantilla-tfg]]

@@ -15,4 +15,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pbis» (este archivo se g
 
 ## Temas relacionados
 
-[[tareas]] · [[fechas]] · [[metricas]] · [[sprints]] · [[pruebas]] · [[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]] · [[hitos]] · [[memoria-procesos]] · [[pbi]]
+[[tareas]] · [[fechas]] · [[memoria-procesos]] · [[metricas]] · [[sprints]] · [[pruebas]] · [[datos]] · [[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]] · [[hitos]]

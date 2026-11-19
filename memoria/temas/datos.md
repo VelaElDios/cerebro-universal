@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "datos"
-notas: 5
+notas: 6
 ---
 # datos
 
@@ -17,6 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-verificadas-en-fuentes|Cifras clave del proyecto verificadas en fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -26,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[lua]] · [[general]] · [[fuentes]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[arma]] · [[fuente]] · [[cerebro]] · [[ia-local]]
+[[latex]] · [[metricas]] · [[memoria-procesos]] · [[lua]] · [[general]] · [[pbis]] · [[sprints]] · [[tareas]] · [[fechas]] · [[pruebas]] · [[fuentes]] · [[juego]]

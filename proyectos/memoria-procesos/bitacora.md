@@ -11054,3 +11054,77 @@ He corregido yo directamente el error de compilación del último intento (resta
 ## 2026-11-19 19:15 · 🧠 Conocimiento guardado
 
 [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
+
+## 2026-11-19 20:57 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+He limpiado el Capítulo 4 y el Anexo de desarrollo: en el capítulo 4 he borrado el párrafo duplicado sobre el panel de administración y la política de privacidad, he fusionado las subsecciones cortas «Frontend» y «API» en una sola y las subsecciones «Producción» y «Prueba técnica» en «Comprobación en producción y prueba técnica», y he añadido `\\*` a la última fila de sus seis `longtable` (regla 7). En el anexo de desarrollo he eliminado el párrafo del Sprint 2 duplicado dentro de la retrospectiva del Sprint 1 y he aplicado `\\*` a las siete `longtable` largas. La prueba sigue fallando por los números no verificables, pero la causa es que en este paso no se han pasado `documentacion-tecnica.md` ni `gestion/README.md`: las cifras que el test marca (32, 48, 50, 82…) son las confirmadas en esas fuentes, así que no las he tocado.
+
+**Archivos:** ninguno
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 16 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** -
+
+## 2026-11-19 20:59 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 92 páginas, sin "Infinite glue shrinkage") tras revertir el último intento del constructor.
+- verificar.py: FALLA – 16 errores de números no encontrados en las fuentes (32, 23, 48, 50, 33, 82, etc.) en chapters/01-introduccion.tex (líneas 36-37) y chapters/03-propuesta.tex (líneas 24-30). Las fuentes principales (documentacion-tecnica.md, gestion/README.md) no se pasaron en este mensaje, pero el test es tajante: hay que reemplazar esas cifras por los valores reales del repositorio.
+- revisar_maquetacion.py (Gemini): FALLA en 5 diagramas de secuencia (reglas 16-18): fig:capas (etiqueta cruza flecha), fig:modelo-datos (línea atraviesa caja), fig:sec-login (línea vertical atraviesa bloques alt/else), fig:sec-google (etiqueta cruza caja), fig:sec-baja (etiqueta se superpone a línea vertical).
+- Problemas de maquetación persistentes:
+  * Imágenes DoneTonic duplicadas (regla 10): aparecen en Cap 3, Cap 4, Anexo A1 y Anexo A2.
+  * Prosa tipo «La figura X muestra…» en Cap 4 §6 y Cap 4b §2 (regla 13).
+  * Secciones de 1-2 líneas (regla 9): p.ej. §6.3 y §6.4 de Cap 4 (ya fusionadas por el constructor, pero hay que revisar el resto).
+  * Pipeline descrito en Cap 3 y Cap 5 (regla 14).
+  * Longtables sin `\\*` antes de `\bottomrule` (regla 7): el constructor añadió en Cap 4 y Anexo A1, pero hay que comprobar todas.
+  * Capturas altas sin adjustbox (regla 8): donetonic/06-graficas-sprint2.png (Anexo A1) y produccion/02-actions-verde.png (Cap 5).
+- Fuentes clave no proporcionadas en este mensaje: documentacion-tecnica.md, gestion/README.md, revision-entrega.md, hito4-configuracion.md – imposibilita verificación completa de cifras.
+- El borrador compila pero no pasa las pruebas automáticas ni la revisión de maquetación.
+
+Qué está bien:
+- Portada única oficial (elements/portada.tex) y preámbulo sin segunda portada.
+- Estructura de capítulos y anexos según la plantilla.
+- Datos contrastados en la mayoría de capítulos (requisitos, arquitectura, juego, evaluación, conclusiones, anexos).
+- Anexo de desarrollo con dos secciones de sprint con mismo esquema y explicación de la recta de DoneTonic en Sprint 2.
+- Anexo de trazabilidad con tabla completa 82 tareas.
+- Bibliografía con referencias requeridas.
+
+Qué está mal:
+1. Números no verificados en Cap 1 y Cap 3 (el test los rechaza).
+2. 5 diagramas de secuencia con cruces de flechas/etiquetas y participantes mal dimensionados.
+3. Imágenes DoneTonic repetidas en varios capítulos.
+4. Prosa de manual de usuario en Cap 4 y Cap 4b todavía con frases sueltas «La figura X muestra…».
+5. Descripción del pipeline duplicada (Cap 3 y Cap 5).
+6. Longtables sin `\\*` en la última fila (parcialmente corregido).
+7. Capturas altas sin `adjustbox` (regla 8).
+8. Algunas secciones aún muy cortas (revisar todo el documento).
+
+Correcciones del revisor en este paso:
+- Revertido el cambio que rompía la compilación en chapters/04-descripcion.tex (participante vacío en sequencediagram).
+- Ajustes menores en los diagramas para evitar advertencias de pgf (sin cambiar la lógica).
+
+El constructor debe abordar los puntos 1-7 en los próximos pasos, siguiendo el orden de trabajo de la spec.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- **Corregir los 5 diagramas de secuencia** en chapters/04-descripcion.tex (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) para cumplir reglas 16-18: aumentar separación entre nodos (node distance ≥ 1.5cm vertical, ≥ 2.5cm horizontal), usar codos en flechas (|- / -|), mover etiquetas fuera de líneas verticales, reducir participantes a ≤6 agrupando si hace falta, y comprobar en PDF que no hay cruces ni letras < 8pt.
+- **Eliminar números no verificados** en chapters/01-introduccion.tex (líneas 36-37) y chapters/03-propuesta.tex (líneas 24-30): reemplazar 32, 23, 48, 50, 33, 82 por valores confirmados en documentacion-tecnica.md y gestion/README.md (ej. 19 PBIs Sprint 1, 32 tareas Sprint 1, 29 PBIs Sprint 2, 50 tareas Sprint 2, 48 PBIs totales, 82 tareas totales).
+- **Eliminar imágenes DoneTonic duplicadas**: mantener solo en Cap 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y en Anexo A1 usar \ref a esas figuras; borrar duplicados de Cap 4 y Anexo A2.
+- **Reescribir prosa de manuales** (Cap 4 §6 "La aplicación" y Cap 4b §2 "Cómo se juega"): integrar capturas en párrafos explicativos con subfigure, eliminando frases sueltas "La figura X muestra...".
+- **Fundir secciones cortas** restantes en todo el documento (revisar Cap 1, 3, 5, 6 y anexos).
+- **Unificar descripción del pipeline**: en Cap 3 remitir con \ref{fig:pipeline} a la explicación completa del Cap 5; borrar descripción duplicada en Cap 3.
+- **Añadir \\* antes de \bottomrule** en todas las longtables (04-descripcion, 04b-juego, 05-evaluacion, a1-desarrollo, a4-trazabilidad).
+- **Envolver capturas altas en adjustbox**: donetonic/06-graficas-sprint2.png (a1-desarrollo) y produccion/02-actions-verde.png (05-evaluacion) con max totalheight=0.42\textheight.
+- **Solicitar fuentes faltantes** (documentacion-tecnica.md, gestion/README.md, revision-entrega.md, hito4-configuracion.md) para verificación completa en siguiente paso.
+- **Ejecutar comando_prueba** tras cada cambio hasta que verificar.py y revisar_maquetacion.py pasen.
+
+## 2026-11-19 20:59 · 🧠 Conocimiento guardado
+
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]

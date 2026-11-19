@@ -1,7 +1,7 @@
 ---
 tipo: "receta"
 titulo: "Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier"
-temas: ["diagramas-secuencia", "latex", "maquetacion", "pgf-umlsd"]
+temas: ["diagramas-secuencia", "latex", "maquetacion", "pgf-umlsd", "diagramas"]
 claves: ["\\newthread", "\\newinst", "call", "\\mess", "sdblock", "adjustbox", "max totalheight"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
@@ -63,5 +63,17 @@ Temas: [[diagramas-secuencia]] · [[latex]] · [[maquetacion]] · [[pgf-umlsd]]
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
 Relacionado: [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]]
+
+## Ampliación (2026-11-19, memoria-procesos)
+|
+  Pasos para arreglar un diagrama que falla en revisar_maquetacion.py (Gemini):
+  1. Contar participantes: si hay más de 6, agrupar (ej. "Frontend" = Vista + api.js) o dividir en dos diagramas (cliente / servidor).
+  2. Aumentar `node distance` vertical (≥1.5cm) y horizontal (≥2.5cm) en las opciones de `sequencediagram` o con `\begin{sequencediagram}[node distance=...]`.
+  3. Usar flechas con codos (`|-` o `-|`) para evitar cruzar cajas: en TikZ dentro del diagrama no se puede, pero en `sequencediagram` las flechas son rectas; si hace falta rodear, separar más los participantes.
+  4. Mover etiquetas de `\mess` y `call` lejos de líneas verticales: añadir espacios o reordenar llamadas.
+  5. Reducir tamaño de fuente en nodos y etiquetas con `font=\footnotesize` o `\small` en los estilos de nodo.
+  6. Envolver todo el diagrama en `\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}` para que quepa sin encoger demasiado.
+  7. Comprobar en PDF: ninguna flecha atraviesa una caja, ninguna etiqueta pisa una flecha o caja, letras ≥8pt.
+  8. Si persiste, simplificar el diagrama: mostrar solo lo esencial.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

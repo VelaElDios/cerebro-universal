@@ -4,7 +4,7 @@ titulo: "Cómo agrupar capturas relacionadas con subfigure en LaTeX"
 temas: ["figuras", "latex", "subcaption", "capturas", "maquetacion", "subfigure"]
 claves: ["subfigure", "subcaption", "agrupación", "capturas"]
 proyectos: ["memoria-procesos"]
-fuentes: ["chapters/04-descripcion.tex", "memoria/reglas-tfg.md (regla 13) y chapters/04-descripcion.tex (ejemplos actuales)"]
+fuentes: ["chapters/04-descripcion.tex", "memoria/reglas-tfg.md (regla 13) y chapters/04-descripcion.tex (ejemplos actuales)", "memoria/reglas-tfg.md"]
 confianza: "propuesto"
 fecha: "2026-11-19"
 actualizado: "2026-11-19"
@@ -75,5 +75,30 @@ Para agrupar capturas relacionadas en una figura con caption general y subcaptio
   **Pendientes de agrupar/reescribir:**
   - Cap 4 §6: varias figuras sueltas que deberían ir en subfigure (ya hecho en gran parte, revisar)
   - Cap 4b §2: lo mismo, ya agrupado en subfigures pero la prosa sigue siendo "La figura X muestra..."
+
+## Ampliación (2026-11-19, memoria-procesos)
+|
+  Estructura estándar:
+  ```latex
+  \begin{figure}[htbp]
+  \centering
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{figs/capturas/...}
+  \subcaption{Descripción corta}
+  \label{fig:sub1}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}{0.48\textwidth}
+  \centering
+  \includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{figs/capturas/...}
+  \subcaption{Descripción corta}
+  \label{fig:sub2}
+  \end{subfigure}
+  \caption{Caption general que explica el conjunto.}
+  \label{fig:general}
+  \end{figure}
+  ```
+  En el texto: "La figura~\ref{fig:general} muestra el flujo de registro (subfigura~\subref{fig:sub1}) y el error de validación (subfigura~\subref{fig:sub2})."
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

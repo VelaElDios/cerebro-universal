@@ -30,4 +30,8 @@ La memoria debe usar exclusivamente la portada oficial definida en `elements/por
   
   **Verificación**: El PDF compilado debe tener exactamente una portada (la oficial), seguida de declaración, resumen, abstract, índices.
 
+## Ampliación (2026-11-19, memoria-procesos)
+|
+  El archivo elements/preambulo.tex debe contener solo: declaración de autoría, Resumen, Abstract. El bloque de «Segunda portada» (textblock con logos, título, autor) se elimina. La portada oficial ya está en elements/portada.tex y se incluye en Memoria.tex antes del frontmatter.
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

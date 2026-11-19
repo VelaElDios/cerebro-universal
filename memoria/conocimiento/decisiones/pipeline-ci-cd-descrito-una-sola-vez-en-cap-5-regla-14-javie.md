@@ -1,7 +1,7 @@
 ---
 tipo: "decision"
 titulo: "Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)"
-temas: ["cicd", "coherencia", "latex", "pipeline"]
+temas: ["cicd", "coherencia", "latex", "pipeline", "memoria-procesos", "redaccion"]
 claves: ["pipeline duplicado", "\\ref{fig:pipeline}", "coherencia entre capítulos"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
@@ -26,5 +26,9 @@ Temas: [[cicd]] · [[coherencia]] · [[latex]] · [[pipeline]]
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
 Relacionado: [[prosa-de-tfg-vs-lista-de-capturas]]
+
+## Ampliación (2026-11-19, memoria-procesos)
+|
+  La descripción completa del pipeline (workflows, jobs, despliegue) va en el Capítulo 5 (Evaluación) con la Figura \ref{fig:pipeline}. En el Capítulo 3 (Propuesta) solo se cita: "El pipeline completo se describe en el Capítulo~\ref{cap:evaluacion}, Figura~\ref{fig:pipeline}." No se repite la tabla de workflows ni el diagrama.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

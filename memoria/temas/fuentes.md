@@ -22,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Temas relacionados
 
-[[numeros]] · [[verificacion]] · [[datos]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[metricas]] · [[arma]] · [[fuente]] · [[cifras]] · [[test]]
+[[numeros]] · [[verificacion]] · [[memoria-procesos]] · [[datos]] · [[juego]] · [[verificar]] · [[metricas]] · [[arma]] · [[fuente]] · [[cifras]] · [[test]]

@@ -46,4 +46,17 @@ Para capturas altas (gráficas de DoneTonic, capturas de CI/CD), envolver en `ad
   - `figs/capturas/donetonic/06-graficas-sprint2.png` (en a1-desarrollo.tex, Figura~\ref{fig:donetonic-s2-graficas})
   - `figs/capturas/produccion/02-actions-verde.png` (en 05-evaluacion.tex, Figura~\ref{fig:actions-verde})
 
+## Ampliación (2026-11-19, memoria-procesos)
+|
+  Para capturas altas (p.ej. gráficas de DoneTonic, CI/CD):
+  ```latex
+  \begin{figure}[htbp]
+  \centering
+  \adjustbox{max totalheight=0.42\textheight,width=0.85\textwidth}{\includegraphics{...}}
+  \caption{...}\label{...}
+  \end{figure}
+  ```
+  Para capturas móviles (verticales): `width=0.35\textwidth` + `height=0.42\textheight,keepaspectratio`.
+  Siempre usar `[htbp]` y parámetros de flotantes relajados (ya en include/extra.tex).
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto verificadas en fuentes"
-temas: ["metricas", "pbis", "sprints", "tareas", "fechas", "pruebas"]
+temas: ["metricas", "pbis", "sprints", "tareas", "fechas", "pruebas", "datos", "memoria-procesos"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "48 PBIs", "82 tareas", "276 pruebas", "322 pruebas"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md"]
+fuentes: ["repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md y repo:saas/docs/gestion/README.md"]
 confianza: "propuesto"
 fecha: "2026-11-19"
 actualizado: "2026-11-19"
@@ -58,5 +58,18 @@ Cifras oficiales del proyecto: Sprint 1 = 19 PBIs / 32 tareas (Hitos 1-4). Sprin
   - 23/10/2026: Hito 4 en producción + inicio Sprint 2
   - 27/10/2026: fin Sprint 1
   - 29/10/2026: fin Sprint 2 + backlog DoneTonic
+
+## Ampliación (2026-11-19, memoria-procesos)
+|
+  Valores confirmados para usar en la memoria (copiar tal cual):
+  - Sprint 1: 19 PBIs, 32 tareas, 4 hitos, fechas 29/09–27/10/2026.
+  - Sprint 2: 29 PBIs, 50 tareas, fechas 23/10–29/10/2026.
+  - Total PBIs: 48. Total tareas: 82.
+  - Pruebas automáticas: 276 (main cierre Sprint 2), 322 (tras Fase 7).
+  - Burndown Sprint 1: 16 PBIs en alcance de entrega (P1–P14, P18, P19).
+  - Releases: hito-1, hito-2, hito-3, hito-4, sprint-1.
+  - Endpoints API: 23. Migraciones SQL: 5.
+  - Líneas backend: ~2.300; frontend: ~1.150; CSS: ~950; juego: ~14.800; tests: ~5.050.
+  - Contenido jugable: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

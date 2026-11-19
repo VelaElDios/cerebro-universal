@@ -33,7 +33,7 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg.md": {
   "bien": 0,
@@ -57,7 +57,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 16
+  "usos": 17
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -135,7 +135,7 @@
   "bien": 2,
   "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 20
+  "usos": 21
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 0,
@@ -159,7 +159,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,
@@ -183,7 +183,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 0,
@@ -213,7 +213,7 @@
   "bien": 1,
   "mal": 1,
   "ultimo": "2026-11-19",
-  "usos": 14
+  "usos": 15
  },
  "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
   "bien": 0,

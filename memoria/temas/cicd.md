@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «cicd» (este archivo se g
 
 ## Temas relacionados
 
-[[coherencia]] · [[latex]] · [[pipeline]] · [[arquitectura]]
+[[coherencia]] · [[latex]] · [[pipeline]] · [[memoria-procesos]] · [[redaccion]] · [[arquitectura]]

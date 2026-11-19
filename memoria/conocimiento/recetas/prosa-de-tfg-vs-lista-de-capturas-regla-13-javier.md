@@ -53,4 +53,13 @@ Temas: [[capturas]] · [[latex]] · [[redaccion]] · [[subfigure]]
 
 Relacionado: [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]]
 
+## Ampliación (2026-11-19, memoria-procesos)
+|
+  Patrón correcto para la sección "La aplicación" (Cap 4) y "Cómo se juega" (Cap 4b):
+  1. Escribir un párrafo que explique la acción del usuario y la respuesta del sistema.
+  2. Insertar una figura con `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`) que agrupe capturas relacionadas.
+  3. Cada subfigura tiene su `\subcaption` descriptivo; la figura general tiene `\caption` y `\label`.
+  4. Citar la figura general en el texto con `\ref{fig:...}` y, si hace falta, referenciar subfiguras con `\subref{...}`.
+  5. No dejar ninguna frase que empiece por "La figura X muestra...".
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

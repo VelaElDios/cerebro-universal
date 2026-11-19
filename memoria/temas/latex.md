@@ -145,4 +145,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[figuras]] · [[maquetacion]] · [[lua]] · [[pgf-umlsd]] · [[sus]] · [[usabilidad]] · [[verificacion]] · [[diagramas]] · [[tablas]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[figuras]] · [[maquetacion]] · [[lua]] · [[pgf-umlsd]] · [[sus]] · [[usabilidad]] · [[diagramas]] · [[verificacion]] · [[tablas]]

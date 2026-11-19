@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fechas» (este archivo se
 
 ## Temas relacionados
 
-[[tareas]] · [[pbis]] · [[sprint]] · [[pbi]] · [[donetonic]] · [[grada-colchonera]] · [[scrum]] · [[tarea]] · [[fases]] · [[hitos]] · [[metricas]] · [[sprints]]
+[[tareas]] · [[pbis]] · [[sprint]] · [[pbi]] · [[memoria-procesos]] · [[donetonic]] · [[grada-colchonera]] · [[scrum]] · [[tarea]] · [[fases]] · [[hitos]] · [[metricas]]

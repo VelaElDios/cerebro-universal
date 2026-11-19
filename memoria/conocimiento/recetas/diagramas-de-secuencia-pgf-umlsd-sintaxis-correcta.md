@@ -4,7 +4,7 @@ titulo: "Diagramas de secuencia pgf-umlsd sintaxis correcta"
 temas: ["diagramas", "latex", "pgf-umlsd", "diagramas-secuencia"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md", "spec del proyecto (ejemplo compilado y probado)"]
+fuentes: ["memoria/reglas-tfg.md", "spec del proyecto (ejemplo compilado y probado)", "memoria/reglas-tfg.md (ejemplo en spec)"]
 confianza: "propuesto"
 fecha: "2026-11-19"
 actualizado: "2026-11-19"
@@ -65,5 +65,17 @@ Sintaxis obligatoria para diagramas de secuencia en esta plantilla: (1) Entorno 
   - Paréntesis en \mess: `\mess{a}{func(x)}{b}` → usar `func x` o `funcion x`
   - Comando en mensaje: `\mess{a}{\texttt{POST}}{b}` → usar `POST`
   - `alt` como entorno: `\begin{alt}...\end{alt}` → usar `sdblock`
+
+## Ampliación (2026-11-19, memoria-procesos)
+|
+  Reglas de sintaxis obligatorias (comprobadas por revisar_umlsd.py):
+  - Entorno: `\begin{sequencediagram} ... \end{sequencediagram}` (minúsculas).
+  - Participantes: `\newthread{id}{Nombre}` o `\newinst[desplazamiento]{id}{Nombre}`. Cada id usado debe estar declarado.
+  - Llamadas anidadas: `\begin{call}{origen}{mensaje}{destino}{respuesta} ... \end{call}`.
+  - Mensajes simples: `\mess{origen}{mensaje}{destino}`.
+  - Alternativas: `\begin{sdblock}{alt}{condición} ... \end{sdblock}` (no existe entorno `alt`).
+  - En textos de `\mess`, `call`, `callself`, `\newinst`: no `#`, `_`, `&`, `%`, `$`, `{`, `}`, `\`, comandos LaTeX, ni paréntesis en `\mess`.
+  - Usar `\resizebox{\textwidth}{!}{...}` para encoger un poco; si ocupa casi una página, `adjustbox{max width=\textwidth,max totalheight=0.6\textheight}`.
+  - Ejemplo correcto en la spec del proyecto.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
