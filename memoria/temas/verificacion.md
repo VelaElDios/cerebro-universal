@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 13
+notas: 11
 ---
 # verificacion
 
@@ -14,7 +14,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig|Verificación automática de diagramas con scripts/revisar_figuras.py]]
-- 🧪 [[memoria/conocimiento/recetas/verificacion-de-correccion-numerica-entre-version-base-y-opt|Verificación de corrección numérica entre versión base y optimizada ILP]]
 
 ## Decisiones (y por qué)
 
@@ -24,7 +23,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/parametros-fijos-de-la-practica-ilp-n-100m-elementos-vector|Parámetros fijos de la práctica ILP: N=100M elementos, vector de 1.0f, múltiplo de 4]]
 
 ## Lecciones (errores ya resueltos)
 
@@ -34,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[ac]] · [[test]] · [[reglas-javier]] · [[calidad]] · [[criterios]] · [[terminado]]
+[[latex]] · [[tfg]] · [[memoria]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[test]] · [[reglas-javier]] · [[calidad]] · [[criterios]] · [[terminado]] · [[trazabilidad]]

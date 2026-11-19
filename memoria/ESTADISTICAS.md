@@ -2,8 +2,8 @@
 
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
-- Notas que se han usado alguna vez: 33
-- Notas que nunca se han usado: 1329
+- Notas que se han usado alguna vez: 32
+- Notas que nunca se han usado: 198
 
 ## Las más útiles
 
@@ -16,7 +16,6 @@
 | [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d\|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] | 4 | 1 | 0 |
 | [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo\|Capturas de DoneTonic disponibles en el repo]] | 4 | 1 | 0 |
 | [[memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra\|Trazabilidad completa requisito → PBI → tarea → PR en anexo a4-trazabilidad.tex]] | 3 | 1 | 0 |
-| [[memoria/conocimiento/conceptos/riesgo-raw-como-dependencia-de-datos-verdadera\|Riesgo RAW como dependencia de datos verdadera]] | 2 | 1 | 0 |
 
 ## Las que acompañan pasos que se deshacen (revisarlas)
 

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "saas"
-notas: 109
+notas: 105
 ---
 # saas
 
@@ -37,7 +37,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saas» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker|Pipeline CI/CD: GitHub Actions con PostgreSQL 17 real, Docker, despliegue automático a Cloud Run]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-cloud-run-con-workload-identit|Pipeline CI/CD: GitHub Actions → Cloud Run con Workload Identity Federation (WIF) y despliegue alternativo en Render]]
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-docker-cloud-run-y-render|Pipeline CI/CD: GitHub Actions, Docker, Cloud Run y Render]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/planificacion-en-superescalar-grado-2-en-orden-fuera-de-orde|Planificación en superescalar grado 2: en orden, fuera de orden sin renombramiento, fuera de orden con renombramiento]]
 - 🧪 [[memoria/conocimiento/recetas/recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po|Recuperación de sesión al cargar (GET /api/auth/me) y logout (POST /api/auth/logout)]]
 - 🧪 [[memoria/conocimiento/recetas/registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y|Registro de usuario con confirmación por correo (HMAC, 24 h) y estado pending]]
 - 🧪 [[memoria/conocimiento/recetas/renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel|Renderizado de sprites chibi 32×32 por capas y píxel a píxel sin imágenes (rasgos, equipaciones, selecciones)]]
@@ -50,7 +49,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saas» (este archivo se g
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por|Cambio de alcance durante Sprint 1: añadido P19 (Cloud Run) por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre|Cambio de alcance en Sprint 1: se añade P19 Cloud Run por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-de-red-social-a-juego-survivor-justificaci|Cambio de alcance: de red social a juego survivor (justificación)]]
-- ⚖️ [[memoria/conocimiento/decisiones/comparativa-eficiencia-operaciones-ciclo-superscalar-con-res|Comparativa eficiencia operaciones/ciclo: superscalar con restricción de tipo vs VLIW sin restricción]]
 - ⚖️ [[memoria/conocimiento/decisiones/comportamiento-de-cuentas-segun-metodo-de-registro-y-estado|Comportamiento de cuentas según método de registro y estado previo]]
 - ⚖️ [[memoria/conocimiento/decisiones/correccion-de-unicidad-de-email-tras-baja-logica-indice-parc|Corrección de unicidad de email tras baja lógica: índice parcial y findByEmail ignora eliminadas]]
 - ⚖️ [[memoria/conocimiento/decisiones/decisiones-de-diseno-del-backend-con-alternativas-y-justific|Decisiones de diseño del backend con alternativas y justificación]]
@@ -90,8 +88,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saas» (este archivo se g
 - 💡 [[memoria/conocimiento/conceptos/maquina-de-estados-de-la-cuenta-de-usuario|Máquina de estados de la cuenta de usuario]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/modulos-del-backend-y-sus-responsabilidades|Módulos del backend y sus responsabilidades]]
 - 💡 [[memoria/conocimiento/conceptos/perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante|Perfil de juego con JSONB y concurrencia optimista mediante versión]]
-- 💡 [[memoria/conocimiento/conceptos/procesador-a-mips64-superscalar-5-etapas-4-emisiones-ciclo-2|Procesador A: MIPS64 superscalar 5 etapas, 4 emisiones/ciclo (2 int + 2 FP)]]
-- 💡 [[memoria/conocimiento/conceptos/procesador-b-vliw-4-operaciones-ciclo-sin-restricciones-de-t|Procesador B: VLIW 4 operaciones/ciclo sin restricciones de tipo, scheduling estático agresivo]]
 - 💡 [[memoria/conocimiento/conceptos/seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage|Seguridad: bcrypt coste 10, sin secretos en repo, Secret Manager en Cloud Run]]
 - 💡 [[memoria/conocimiento/conceptos/sistema-de-rarezas-y-36-jugadores-pbi-p38|Sistema de rarezas y 36 jugadores (PBI P38)]]
 

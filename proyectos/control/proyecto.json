@@ -2,5 +2,8 @@
   "nombre": "control",
   "tipo": "control",
   "estado": "en-construccion",
-  "temas": ["conocimiento"]
+  "temas": [
+    "conocimiento"
+  ],
+  "ultima_ejecucion": "2026-11-19T13:12:12+01:00"
 }

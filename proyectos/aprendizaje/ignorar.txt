@@ -1,0 +1,2 @@
+# Lo que contenga cualquiera de estas líneas no se aprende (lo escribe scripts/cerebro/control.py)
+temarios/AC

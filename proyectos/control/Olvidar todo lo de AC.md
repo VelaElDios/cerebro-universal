@@ -1,3 +1,212 @@
 olvidar fuente: temarios/AC
 olvidar tema: ac
 no aprender: temarios/AC
+
+
+## Hecho por el cerebro (2026-11-19 13:12)
+
+**Olvidar fuente «temarios/AC»:** 1208 notas borradas
+  - Acción ante fallo en BTB con salto tomado real: predecir NT, penalizar y actualizar
+  - Acción del procesador ante fallo de predicción de salto
+  - Actualización de la BTB tras ejecutar el salto
+  - Algoritmo Tomasulo: los resultados se difunden por el Bus Común de Datos (CDB)
+  - Algoritmo Tomasulo: origen y objetivo CPI≈1
+  - Alternativas de detección de instrucción de salto en pipeline
+  - Alto ILP requiere bajo grado de dependencia entre instrucciones
+  - Análisis de dependencias en bucle con ADD.D y S.D (misma iteración vs entre iteraciones)
+  - Ancho y tamaño en bits de un BTB implícito con 1024 entradas y bus de 24 bits
+  - Antidependencia entre iteraciones en bucle con store y actualización de puntero
+  - Antidependencia siempre genera hazard WAR en pipeline in-order
+  - Antidependencia (WAR) en bucle entre carga y actualización de puntero en misma iteración
+  - Antidependencia (WAR) entre instrucciones consecutivas en RISC-V
+  - Antidependencia (WAR) siempre genera hazard WAR
+  - Antidependencia (WAR) y dependencia de salida (WAW) definiciones
+  - AoS vs SoA: desperdicio de ancho de banda en caché por campos no usados
+  - AoS vs SoA: desperdicio de ancho de banda en caché
+  - Arquitectura EPIC (IA64) y procesadores Itanium
+  - Arquitectura SISD: componentes y técnicas ILP (segmentación, superescalar, VLIW)
+  - Arquitectura vs organización: misma arquitectura implica mismo juego de instrucciones
+  - Banco de registros en pipeline MIPS de 5 etapas: acceso en ID (lectura) y WB (escritura)
+  - Benchmarks sintéticos Dhrystone y Whetstone: propósito y origen
+  - BHT (Branch History Table): tabla separada para bits de predicción
+  - BHT con contadores de saturación de 2 bits (pregunta 17)
+  - BHT en predictor dinámico de 3 bits: contadores de saturación de 3 bits
+  - Bits de predicción en la I-caché: funcionamiento y ventajas
+  - Bits de veneno (poison bits) en carga especulativa marcan registro destino ante fallo de permiso
+  - Bits venenosos en carga especulativa: excepción diferida hasta uso del registro
+  - Bits venenosos en especulación: excepción no recuperable marca registro destino
+  - Bits venenosos: excepción no recuperable marca registro destino y programa continúa
+  - BTB (Branch Target Buffer): fusión de BTAC y bits de predicción en una sola estructura
+  - BTB: cache de direcciones destino de saltos con bits de predicción
+  - BTB con predictores de 4 bits: campos de cada entrada
+  - Bucle de cálculo y(i) = A * x(i)^2 en ensamblador MIPS64
+  - Bucle vectorial de referencia para desenrollado y planificación (examen AC June 2018)
+  - Buffer de carga en Tomasulo especulativo (pregunta 18)
+  - Buffer de carga en Tomasulo especulativo
+  - Buffer de Reordenamiento (ROB) en Tomasulo con especulación: campos y funcionamiento
+  - Buffers de carga y almacenamiento en Tomasulo
+  - Bus Común de Datos (CDB) en el algoritmo de Tomasulo
+  - Bus Común de Datos (CDB) en Tomasulo difunde resultados de UF y memoria
+  - Cálculo de efectividad de programa VLIW: original vs desenrollado (examen enero 2023)
+  - Cálculo de FLOPs/ciclo para AVX2 con FMA
+  - Cálculo de FLOPS por ciclo en x86 con AVX2/FMA
+  - Cálculo de operaciones por ciclo (IPC) en planificación VLIW de bucle
+  - Cálculo de speedup con ley de Amdahl: fracción mejorada al doble de velocidad
+  - Cálculo teórico de reducción de líneas de caché en SoA frente a AoS
+  - Calentamiento (warm-up) para poblar TLB y evitar page faults
+  - Calibración lineal de giroscopio IMU para compensar desvío térmico
+  - Campos Qj, Qk, Rj, Rk en el estado de unidades funcionales del marcador
+  - Campos Qj y Qk en estaciones de reserva de Tomasulo
+  - Características clave de procesadores VLIW
+  - Características de arquitectura SIMD frente a MIMD
+  - Características del procesador VLIW del examen Enero 2016 Problema 3
+  - CC-NUMA: acceso a memoria no uniforme con coherencia de caché (pregunta 11)
+  - Clasificación de dependencias en bucle: antidependencia (WAR) entre store e incremento de puntero
+  - Clasificación de Flynn de procesador masivamente paralelo (MPP)
+  - Clasificación de GPUs según taxonomía de Flynn: SIMD (pregunta 8)
+  - Clasificación de multiprocesadores en taxonomía de Flynn
+  - Clasificación de tipos de computadores según requisitos de diseño
+  - Clasificación memory-bound vs compute-bound en el modelo Roofline
+  - Cluster de estaciones de trabajo: nodos autónomos interconectados por red de altas prestaciones
+  - Comparación de eficiencia frecuencial entre procesadores usando benchmark de juego 3D
+  - Comparación de rendimiento entre procesadores requiere mismo ISA o benchmarks
+  - Comparativa de coste-efectividad entre sistemas: rendimiento por euro
+  - Comparativa eficiencia operations per cycle (OPC) superscalar vs VLIW en bucle desenrollado
+  - Comparativa Tomasulo vs Marcador (Scoreboard)
+  - Compatibilidad binaria VLIW 2.0 con latencia fadd.d aumentada a 4 ciclos
+  - Comportamiento de bit de veneno (poison bit) ante excepción en instrucción no especulativa
+  - Comportamiento de bits de veneno ante instrucción no especulativa que usa registro con poison bit activo
+  - Comportamiento de bits de veneno (poison bits) ante excepción en instrucción no especulativa
+  - Comportamiento de bits venenosos ante excepción terminante en instrucción no especulativa
+  - Comportamiento de la BTB en caso de acierto (test AC Q14)
+  - Comportamiento de predictor correlacionado (2,1) con historia inicial no tomada y BHT en no tomado fuerte
+  - Computador vectorial explota paralelismo a nivel de datos
+  - Condición necesaria para que la especulación sea válida
+  - Configuración de procesador Tomasulo con especulación del Ejercicio 2
+  - Configuración de Tomasulo con especulación para examen AC Junio 2012
+  - Configuración Tomasulo con especulación para examen Enero 2012 Problema 3
+  - Configuración VLIW de 6 unidades funcionales con latencias asimétricas
+  - Configuración VLIW del examen AC enero 2017 (6 unidades, latencias y forwarding)
+  - Consideraciones del desenrollamiento de bucles: sobrecarga, tamaño de código y presión de registros
+  - Contador saturante de 3 bits en estado 111 indica tres tomas reales consecutivas
+  - Contenido de una estación de reserva en Tomasulo (test AC Q11)
+  - Contenido de una estación de reserva en Tomasulo
+  - Convención de nomenclatura en tablas de Tomasulo del temario
+  - Criterio de desenrollamiento de bucles (loop unrolling)
+  - Cuándo preferir AoS sobre SoA en la práctica
+  - Definición de antidependencia: j escribe sobre un registro que lee i (i antes que j)
+  - Definición de arquitectura de computador visible al programador
+  - Definición de arquitectura de computadores en examen AC Noviembre 2012
+  - Definición de arquitectura de computadores frente a organización
+  - Definición de arquitectura frente a organización del computador
+  - Definición de benchmarks sintéticos
+  - Definición de bloque básico en paralelismo a nivel de instrucción (pregunta 6)
+  - Definición de bloque básico (test AC Q7)
+  - Definición de cluster en examen AC Noviembre 2012 (pregunta 9)
+  - Definición de dependencia de datos (RAW) entre instrucciones
+  - Definición de dependencia de datos verdadera (RAW)
+  - Definición de dependencia de nombre (anti y salida)
+  - Definición de dependencia de nombre (name dependency) entre instrucciones
+  - Definición de dependencia de nombre (WAW y WAR)
+  - Definición de dependencia de salida (WAW) entre dos instrucciones
+  - Definición de dependencia de salida (WAW)
+  - Definición de ejecución multicamino (multipath execution)
+  - Definición de instrucción especulativa
+  - Definición de latencia de instrucción de salto
+  - Definición de latencia de resolución de salto en pipeline 5 etapas IF/ID/EX/MEM/WB
+  - Definición de latencia de salto y huecos de retardo
+  - Definición de latencia e intervalo de iniciación en pipeline
+  - Definición de MFLOPS (Millones de Operaciones de Punto Flotante Por Segundo)
+  - Definición de MIPS (Millones de Instrucciones Por Segundo) y coste-efectividad
+  - Definición de MIPS (Millones de Instrucciones Por Segundo)
+  - Definición de organización de computador frente a arquitectura
+  - Definición de paralelismo a nivel de bucle (loop-level parallelism)
+  - Definición de paralelismo a nivel de threads (TLP) frente a ILP y DLP
+  - Definición de peak performance (rendimiento pico)
+  - Definición de procesador VLIW
+  - Definición de riesgo RAW (Read After Write)
+  - Definición de speedup como razón de tiempos de ejecución
+  - Definición de speedup y relación con reducción de tiempo
+  - Definición y objetivo de la planificación de trazas (trace scheduling)
+  - Definición y propósito de la segmentación (pipeline)
+  - Definiciones: BTB, ejecución multicamino, especulación software, superescalar CPI ideal, Intel P7, multicore, PowerPC
+  - Definiciones clave: basic block, antidependencia, loop unrolling, planificación estática, software pipelining, Scoreboard, Tomasulo CDB, predicción saltos (preguntas 7-15)
+  - Definiciones de dependencias de datos: RAW, WAR (antidependencia), WAW (dependencia de salida)
+  - Delayed branch en VLIW y su efecto en planificación
+  - Dependencia de datos en pipeline → riesgo solo si instrucciones están cerca
+  - Dependencia de datos entre iteraciones en bucle con actualización de puntero (registro x1)
+  - Dependencia de datos no siempre causa hazard; depende de distancia en pipeline
+  - Dependencia de datos (RAW): instrucción i produce resultado que usa j
+  - Dependencia de datos verdadera definición y ejemplo en bucle
+  - Dependencia de salida (WAW): dos instrucciones escriben mismo registro/memoria
+  - Dependencia de salida (WAW) en pipeline con forwarding
+  - Dependencia de salida (WAW) y antidependencia (WAR) definiciones (preguntas 6 y 8)
+  - Dependencia entre iteraciones en bucle con S.D y DADDUI sobre R1
+  - Dependencia entre S.D y DADDUI en bucle es por R1 entre iteraciones
+  - Dependencia RAW en acumulación secuencial limita ILP en pipeline
+  - Dependencia RAW en pipeline RISC-V resuelta con adelantamiento (forwarding)
+  - Dependencias de nombre antidependencia y salida definición y ejemplo
+  - Dependencias de nombre se eliminan mediante renombramiento de registros
+  - Dependencias de nombre (WAR, WAW) se eliminan con renombramiento de registros
+  - Dependencias de nombre (WAR, WAW) se eliminan mediante renombramiento
+  - Dependencias en bucle MIPS de carga-modificación-almacenamiento (LW, DADD, SW, DADDUI, BNEZ)
+  - Dependencias en bucle vectorial: dependencia de datos a través de F4 entre iteraciones (RAW)
+  - Dependencias en bucles RISC-V: clasificación intra-iteración vs loop-carried
+  - Dependencias en código MIPS64 FP: L.D → MUL.S → ADD.S → S.D
+  - Dependencias en el bucle de ejemplo VLIW (examen AC 2018)
+  - Dependencias RAW, WAR y WAW en el bucle de producto escalar-vectorial (examen AC 2017/18)
+  - Derivación de FLOPSperCYCLE = 32 para x86 con AVX2 y FMA
+  - Desenrollado de bucle (loop unrolling) 3× para VLIW y compactación
+  - Desenrollado de bucles (loop unrolling) en superescalar con renombrado de registros
+  - Desenrollamiento de bucles (loop unrolling) permite planificar instrucciones de distintas iteraciones
+  - Desenrollamiento de bucles: reduce dependencias de control mediante planificación estática
+  - Desenrollamiento de bucles requiere ausencia de dependencias entre iteraciones
+  - Detección de riesgos WAR y WAW en marcador y bloqueo de escritura
+  - Detenciones en pipeline afectan negativamente a prestaciones
+  - Diferencia clave entre ejecución fuera de orden sin y con renombramiento
+  - Diferencia entre arquitectura y organización de computadores
+  - Diferencia entre buffers de carga y de almacenamiento en la simulación
+  - Diferencia entre dependencia de datos (RAW), antidependencia (WAR) y dependencia de salida (WAW)
+  - Diferencia entre especulación software y hardware (falso en software)
+  - Diferencia Escritura resultado vs Terminación (Commit) en Tomasulo con ROB
+  - Diferencia fundamental: desenrollamiento vs segmentación software
+  - Diferencia fundamental VLIW vs Superescalar: compilador vs hardware detecta paralelismo
+  - Diferencia Scoreboard vs Tomasulo en resolución de hazards sin especulación
+  - Diferencias clave entre las tres tablas de planificación pedidas (Scoreboard vs Tomasulo básico vs Tomasulo especulativo)
+  - Diferencias clave Processor A (superscalar in-order) vs Processor B (VLIW) en Exercise 3
+  - Diferencias entre ejecución en orden, fuera de orden sin renombramiento y con renombramiento
+  - Distinción entre Arquitectura (ISA) y Organización (Microarquitectura)
+  - Distinción entre arquitectura, organización y tecnología en procesadores
+  - Dos estrategias genéricas para tratar dependencias de datos
+  - Ecuación fundamental del tiempo de ejecución en arquitectura de computadores
+  - Efecto del orden de datos en predicción de saltos condicionales
+  - Efectos de la especulación en flujo de datos, ILP y excepciones
+  - Ejecución multicamino (multi-path execution) como alternativa a la predicción
+  - Ejecución multicamino (multi-path execution) frente a predicción de saltos
+  - Ejemplos de misma ISA distinta organización y viceversa (familia Intel/AMD)
+  - Ejercicio 2 - Análisis de predicción de saltos en bucle contador de ceros y pares
+  - Ejercicio 3 AC June 2019: comparación superscalar in-order vs VLIW
+  - El desenrollamiento de bucles reduce principalmente los riesgos de control (saltos)
+  - El Marcador (Scoreboard) permite emitir instrucciones independientes mientras una espera
+  - El renombrado de registros evita dependencias de nombre (WAR/WAW)
+  - Eliminación de dependencias de datos mediante renombramiento
+  - Eliminación de dependencias de nombre mediante renombramiento
+  - Eliminación de dependencias de salida (WAW) mediante renombrado de registros
+  - En Tomasulo sin especulación la emisión se detiene ante riesgo WAW
+  - Entorno de paso de mensajes comparte información mediante mensajes
+  - Escritura de resultado y actualización de Qi en registro destino
+  - Especulación con bits venenosos: programa continúa y finaliza dando error ante excepción no recuperable
+  - Especulación con poison bits - propagación y excepción diferida
+  - Especulación en hardware: resultado definitivo en el paso de commit
+  - Especulación estática con cargas especulativas LW* en MIPS64
+  - Especulación estática con poison bits en MIPS64 (LW*)
+  - Especulación y desenrollado de bucles reducen riesgos de control
+  - Esquemas de pipeline con 1, 2 y 3 huecos de retardo para beqz
+  - Estaciones de reserva almacenan etiquetas para control de riesgos
+  - Estaciones de reserva por UF: 2 por unidad funcional en configuración examen
+  - Estado de buffers de carga/almacenamiento y estaciones de reserva en ejemplo Tomasulo
+  - Estado de registros resultado (register result status) en el marcador
+
+**Olvidar tema «ac»:** 0 notas borradas
+
+**No aprender:** a partir de ahora no se aprende nada que contenga «temarios/AC»
