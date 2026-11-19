@@ -109,30 +109,33 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
     nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=1.1cm, font=\small},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Navegador
+    % Navegador (columna izquierda)
     \node[nodewide] (ui) {Interfaz\\ui.js + ui/ + vistas/};
-    \node[node, below=0.7cm of ui] (cli) {Cliente API\\api.js (único fetch)};
-    \node[node, below=0.7cm of cli] (game) {Juego\\game/ (canvas, Web Audio)};
-    % Servidor
-    \node[nodewide, right=4.0cm of ui] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
-    \node[node, below=0.7cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación, tokens, juego};
-    \node[node, below=0.7cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=0.7cm of repo] (int) {Integraciones\\correo | Google};
-    \node[node, right=3.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
+    \node[node, below=0.8cm of ui] (cli) {Cliente API\\api.js (único fetch)};
+    \node[node, below=0.8cm of cli] (game) {Juego\\game/ (canvas, Web Audio)};
+    % Servidor (columna central)
+    \node[nodewide, right=5.0cm of ui] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
+    \node[node, below=0.8cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación, tokens, juego};
+    \node[node, below=0.8cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
+    \node[node, below=0.8cm of repo] (int) {Integraciones\\correo | Google};
+    % Reglas compartidas (a la derecha de Lógica)
+    \node[node, right=3.5cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
+    % BD y externos (a la derecha de Datos e Integraciones)
+    \node[node, right=3.5cm of repo] (pg) {PostgreSQL\\Neon};
+    \node[node, right=3.5cm of int] (smtp) {SMTP Gmail};
+    \node[node, right=3.5cm of smtp] (goo) {Google OAuth 2.0};
 
-    % Flechas navegador
+    % Flechas navegador (verticales)
     \draw[arrow] (ui) -- (cli);
     \draw[arrow] (game) -- (cli);
-    \draw[arrow] (cli) -- node[midway, above, font=\footnotesize] {HTTP + JSON / cookie sesión} (api);
-    % Flechas servidor
+    % Flecha cliente -> API (horizontal, con codo para evitar cruzar cajas)
+    \draw[arrow] (cli.east) -- ++(1.2,0) |- node[near start, above, font=\footnotesize] {HTTP + JSON / cookie sesión} (api.west);
+    % Flechas servidor (verticales)
     \draw[arrow] (api) -- (srv);
     \draw[arrow] (srv) -- (repo);
     \draw[arrow] (srv) -- (int);
     \draw[arrow, dashed] (srv) -- (rules);
-    % BD y externos
-    \node[node, right=3.0cm of repo] (pg) {PostgreSQL\\Neon};
-    \node[node, right=3.0cm of int] (smtp) {SMTP Gmail};
-    \node[node, right=3.0cm of smtp] (goo) {Google OAuth 2.0};
+    % Flechas a BD y externos (horizontales)
     \draw[arrow] (repo) -- (pg);
     \draw[arrow] (int) -- (smtp);
     \draw[arrow] (int) -- (goo);
@@ -200,13 +203,13 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 \centering
 \begin{adjustbox}{max width=\linewidth}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.3cm, align=left, font=\small, text width=4.2cm},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\small, text width=4.2cm},
     attr/.style={font=\small},
     pk/.style={font=\small\bfseries},
     uk/.style={font=\small\itshape},
     arrow/.style={-{Stealth[length=2mm]}, thick, color=tema}
 ]
-    % users
+    % users (esquina superior izquierda)
     \node[entity] (users) {
         \textbf{users}\\
         \pk id UUID PK\\
@@ -221,23 +224,23 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr apodo\_clave TEXT \uk\\
         \attr avatar TEXT
     };
-    % session
-    \node[entity, below=1.6cm of users] (session) {
+    % session (debajo de users)
+    \node[entity, below=1.8cm of users] (session) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \attr sess JSON\\
         \attr expire TIMESTAMP
     };
-    % juego_perfiles
-    \node[entity, right=5.5cm of users] (perfiles) {
+    % juego_perfiles (a la derecha de users, alineado arriba)
+    \node[entity, right=6.0cm of users] (perfiles) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \attr datos JSONB\\
         \attr version INTEGER\\
         \attr updated\_at TIMESTAMPTZ
     };
-    % juego_records
-    \node[entity, below=1.6cm of perfiles] (records) {
+    % juego_records (debajo de juego_perfiles)
+    \node[entity, below=1.8cm of perfiles] (records) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \attr alias TEXT\\
@@ -248,9 +251,9 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr bajas INTEGER\\
         \attr created\_at TIMESTAMPTZ
     };
-    % relaciones
-    \draw[arrow] (users) -- (perfiles) node[midway, above, font=\footnotesize] {tiene su club};
-    \draw[arrow] (users) -- (records) node[midway, above, font=\footnotesize] {tiene su mejor partida};
+    % relaciones: users -> perfiles (horizontal), users -> records (codo para evitar cruzar perfiles)
+    \draw[arrow] (users.east) -- ++(1.2,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
+    \draw[arrow] (users.south) -- ++(0,-0.6) -| node[near start, left, font=\footnotesize] {tiene su mejor partida} (records.west);
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
@@ -439,15 +442,17 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
     \begin{sdblock}{alt}{email desconocido o contraseña mala}
       \mess{s}{401 mismo mensaje}{a}
     \end{sdblock}
-    \begin{sdblock}{else}{cuenta pendiente}
+    \begin{sdblock}{alt}{cuenta pendiente}
       \mess{s}{403 cuenta pendiente}{a}
       \mess{a}{muestra reenviar correo}{v}
     \end{sdblock}
-    \begin{sdblock}{else}{correcto}
+    \begin{sdblock}{alt}{correcto}
       \mess{a}{200 usuario y cookie}{c}
       \mess{c}{ponerUsuario ir a jugar}{v}
     \end{sdblock}
   \end{call}
+  % Añadir espacio vertical entre bloques para evitar superposición
+  \mess{a}{}{a}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Inicio de sesión local.}
@@ -484,7 +489,7 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
   \begin{sdblock}{alt}{state falso o cancelado}
     \mess{a}{303 aviso google error}{u}
   \end{sdblock}
-  \begin{sdblock}{else}{state correcto}
+  \begin{sdblock}{alt}{state correcto}
     \begin{call}{a}{POST token a Google}{g}{id perfil}
     \end{call}
     \begin{call}{a}{loginWithOAuth}{s}{usuario}
@@ -493,6 +498,8 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
     \end{call}
     \mess{a}{303 ir a jugar}{u}
   \end{sdblock}
+  % Espacio para separar flechas
+  \mess{a}{}{a}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Inicio de sesión con Google OAuth 2.0.}
@@ -526,10 +533,12 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
   \begin{sdblock}{alt}{último administrador}
     \mess{s}{403 debe quedar un admin}{a}
   \end{sdblock}
-  \begin{sdblock}{else}{baja logica}
+  \begin{sdblock}{alt}{baja logica}
     \mess{s}{status deleted suelta mote y email}{a}
     \mess{a}{204 aviso y vuelta al inicio}{v}
   \end{sdblock}
+  % Espacio para evitar superposición de etiqueta con línea vertical
+  \mess{s}{}{s}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Darse de baja.}

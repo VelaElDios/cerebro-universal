@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 8
+notas: 9
 ---
 # maquetacion
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]]
+- 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Limitar altura de capturas para evitar páginas con una sola imagen]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
@@ -26,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[reglas-tfg]] · [[maquetación]] · [[longtable]] · [[figuras]] · [[subcaption]] · [[tfg]] · [[subfigure]] · [[pagina vacia]] · [[regla 9]]
+[[latex]] · [[reglas-tfg]] · [[maquetación]] · [[figuras]] · [[longtable]] · [[subcaption]] · [[tfg]] · [[subfigure]] · [[pagina vacia]] · [[regla 9]]

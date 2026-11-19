@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "longtable"
-notas: 6
+notas: 7
 ---
 # longtable
 
@@ -10,6 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «longtable» (este archivo
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Longtable sin fila huérfana al final]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 
 ## Decisiones (y por qué)
@@ -27,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «longtable» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[maquetacion]] · [[tablas]] · [[anexo]] · [[trazabilidad]] · [[memoria]] · [[tfg]]
+[[latex]] · [[tablas]] · [[maquetacion]] · [[anexo]] · [[trazabilidad]] · [[memoria]] · [[tfg]]

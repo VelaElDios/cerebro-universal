@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "diagramas"
-notas: 7
+notas: 9
 ---
 # diagramas
 
@@ -9,6 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta|Diagramas de secuencia pgf-umlsd sintaxis correcta]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra|Escribir diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig|Verificación automática de diagramas con scripts/revisar_figuras.py]]
 
@@ -22,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[tikz]] · [[pgf-umlsd]] · [[plantuml]] · [[diagramas-secuencia]] · [[verificacion]]
+[[latex]] · [[tikz]] · [[memoria]] · [[tfg]] · [[pgf-umlsd]] · [[plantuml]] · [[diagramas-secuencia]] · [[verificacion]]

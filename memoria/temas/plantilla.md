@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "plantilla"
-notas: 4
+notas: 5
 ---
 # plantilla
 
@@ -13,10 +13,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «plantilla» (este archivo
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/titulos-en-negro-y-negrita-en-la-plantilla-esiiab-uclm|Títulos en negro y negrita en la plantilla ESIIAB-UCLM]]
 
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]] · ⚠️ propuesto
+
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf|Capítulo 2 (Antecedentes) marcado como no necesario en este TFG]]
 
 ## Temas relacionados
 
-[[memoria]] · [[tfg]] · [[latex]] · [[antecedentes]] · [[capitulo-2]]
+[[memoria]] · [[tfg]] · [[latex]] · [[antecedentes]] · [[capitulo-2]] · [[portada]]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-19T15:48:03+01:00",
+ "generado": "2026-11-19T17:04:45+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1157,6 +1157,21 @@
    "ruta": "memoria/conocimiento/conceptos/perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante.md"
   },
   {
+   "id": "concepto:prosa-de-tfg-vs-lista-de-capturas",
+   "tipo": "concepto",
+   "titulo": "Prosa de TFG vs lista de capturas",
+   "temas": [
+    "estilo",
+    "redaccion",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas.md"
+  },
+  {
    "id": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
    "tipo": "concepto",
    "titulo": "Rotación de proyectos por tiempo sin avanzar",
@@ -1369,6 +1384,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore.md"
+  },
+  {
+   "id": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto verificadas en fuentes",
+   "temas": [
+    "metricas",
+    "pbis",
+    "sprints",
+    "tareas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-verificadas-en-fuentes.md"
   },
   {
    "id": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
@@ -2558,6 +2589,21 @@
    "ruta": "memoria/conocimiento/decisiones/motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla.md"
   },
   {
+   "id": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes",
+   "tipo": "decision",
+   "titulo": "Números pequeños también se verifican en fuentes",
+   "temas": [
+    "fuentes",
+    "numeros",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes.md"
+  },
+  {
    "id": "decision:optimizaciones-de-rendimiento-busqueda-por-radio-con-claves",
    "tipo": "decision",
    "titulo": "Optimizaciones de rendimiento: búsqueda por radio con claves numéricas y una textura por celda y fotograma",
@@ -2587,6 +2633,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p.md"
+  },
+  {
+   "id": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5",
+   "tipo": "decision",
+   "titulo": "Pipeline CI/CD descrito una sola vez en Cap 5",
+   "temas": [
+    "arquitectura",
+    "cicd",
+    "coherencia"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5.md"
   },
   {
    "id": "decision:pivote-de-red-social-a-juego-survivor-reutilizando-base-del",
@@ -2753,6 +2814,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4.md"
+  },
+  {
+   "id": "decision:una-sola-portada-oficial-en-elements-portada-tex",
+   "tipo": "decision",
+   "titulo": "Una sola portada oficial en elements/portada.tex",
+   "temas": [
+    "latex",
+    "plantilla",
+    "portada"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex.md"
   },
   {
    "id": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
@@ -3174,6 +3250,21 @@
    "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
   },
   {
+   "id": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "tipo": "receta",
+   "titulo": "Cómo agrupar capturas relacionadas con subfigure en LaTeX",
+   "temas": [
+    "figuras",
+    "latex",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex.md"
+  },
+  {
    "id": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
    "tipo": "receta",
    "titulo": "Cómo centralizar capturas duplicadas entre capítulos en LaTeX",
@@ -3291,6 +3382,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-estructurar-el-csv-de-entrada-para-la-plantilla-sus.md"
+  },
+  {
+   "id": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
+   "tipo": "receta",
+   "titulo": "Cómo evitar cruces en diagramas TikZ/pgf-umlsd",
+   "temas": [
+    "diagramas",
+    "latex",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd.md"
   },
   {
    "id": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
@@ -3602,6 +3709,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md"
+  },
+  {
+   "id": "receta:diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta",
+   "tipo": "receta",
+   "titulo": "Diagramas de secuencia pgf-umlsd sintaxis correcta",
+   "temas": [
+    "diagramas",
+    "latex",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta.md"
   },
   {
    "id": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
@@ -3918,6 +4040,21 @@
    "ruta": "memoria/conocimiento/recetas/inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte.md"
   },
   {
+   "id": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "tipo": "receta",
+   "titulo": "Limitar altura de capturas para evitar páginas con una sola imagen",
+   "temas": [
+    "figuras",
+    "latex",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola.md"
+  },
+  {
    "id": "receta:login-con-google-oauth-2-0-codigo-de-autorizacion-state-en-s",
    "tipo": "receta",
    "titulo": "Login con Google OAuth 2.0 (código de autorización, state en sesión)",
@@ -3949,6 +4086,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p.md"
+  },
+  {
+   "id": "receta:longtable-sin-fila-huerfana-al-final",
+   "tipo": "receta",
+   "titulo": "Longtable sin fila huérfana al final",
+   "temas": [
+    "latex",
+    "longtable",
+    "tablas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final.md"
   },
   {
    "id": "receta:manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui",
@@ -4393,7 +4545,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 104,
+   "peso": 110,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4407,7 +4559,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 16,
+   "peso": 17,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -4470,14 +4622,14 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -4505,21 +4657,21 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/metricas.md"
   },
   {
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 8,
+   "peso": 10,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -4540,7 +4692,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 13,
+   "peso": 15,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -4554,7 +4706,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -4568,7 +4720,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 51,
+   "peso": 52,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -4603,7 +4755,7 @@
    "id": "tema:arquitectura",
    "tipo": "tema",
    "titulo": "arquitectura",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/arquitectura.md"
   },
   {
@@ -4771,7 +4923,7 @@
    "id": "tema:plantilla",
    "tipo": "tema",
    "titulo": "plantilla",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/plantilla.md"
   },
   {
@@ -4978,6 +5130,20 @@
    "ruta": "memoria/temas/juego.md"
   },
   {
+   "id": "tema:estilo",
+   "tipo": "tema",
+   "titulo": "estilo",
+   "peso": 2,
+   "ruta": "memoria/temas/estilo.md"
+  },
+  {
+   "id": "tema:redaccion",
+   "tipo": "tema",
+   "titulo": "redaccion",
+   "peso": 3,
+   "ruta": "memoria/temas/redaccion.md"
+  },
+  {
    "id": "tema:bcrypt",
    "tipo": "tema",
    "titulo": "bcrypt",
@@ -5097,6 +5263,27 @@
    "ruta": "memoria/temas/data.md"
   },
   {
+   "id": "tema:pbis",
+   "tipo": "tema",
+   "titulo": "pbis",
+   "peso": 3,
+   "ruta": "memoria/temas/pbis.md"
+  },
+  {
+   "id": "tema:sprints",
+   "tipo": "tema",
+   "titulo": "sprints",
+   "peso": 3,
+   "ruta": "memoria/temas/sprints.md"
+  },
+  {
+   "id": "tema:tareas",
+   "tipo": "tema",
+   "titulo": "tareas",
+   "peso": 6,
+   "ruta": "memoria/temas/tareas.md"
+  },
+  {
    "id": "tema:calidad",
    "tipo": "tema",
    "titulo": "calidad",
@@ -5135,7 +5322,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -5195,13 +5382,6 @@
    "ruta": "memoria/temas/fechas.md"
   },
   {
-   "id": "tema:tareas",
-   "tipo": "tema",
-   "titulo": "tareas",
-   "peso": 5,
-   "ruta": "memoria/temas/tareas.md"
-  },
-  {
    "id": "tema:fases",
    "tipo": "tema",
    "titulo": "fases",
@@ -5216,13 +5396,6 @@
    "ruta": "memoria/temas/hito.md"
   },
   {
-   "id": "tema:pbis",
-   "tipo": "tema",
-   "titulo": "pbis",
-   "peso": 2,
-   "ruta": "memoria/temas/pbis.md"
-  },
-  {
    "id": "tema:sprint1",
    "tipo": "tema",
    "titulo": "sprint1",
@@ -5235,13 +5408,6 @@
    "titulo": "capturas",
    "peso": 4,
    "ruta": "memoria/temas/capturas.md"
-  },
-  {
-   "id": "tema:sprints",
-   "tipo": "tema",
-   "titulo": "sprints",
-   "peso": 2,
-   "ruta": "memoria/temas/sprints.md"
   },
   {
    "id": "tema:produccion",
@@ -5345,7 +5511,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 7,
+   "peso": 9,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -5396,13 +5562,6 @@
    "titulo": "introduccion",
    "peso": 1,
    "ruta": "memoria/temas/introduccion.md"
-  },
-  {
-   "id": "tema:redaccion",
-   "tipo": "tema",
-   "titulo": "redaccion",
-   "peso": 2,
-   "ruta": "memoria/temas/redaccion.md"
   },
   {
    "id": "tema:base-de-datos",
@@ -5496,11 +5655,32 @@
    "ruta": "memoria/temas/simulacion.md"
   },
   {
+   "id": "tema:numeros",
+   "tipo": "tema",
+   "titulo": "numeros",
+   "peso": 2,
+   "ruta": "memoria/temas/numeros.md"
+  },
+  {
    "id": "tema:rendimiento",
    "tipo": "tema",
    "titulo": "rendimiento",
    "peso": 2,
    "ruta": "memoria/temas/rendimiento.md"
+  },
+  {
+   "id": "tema:cicd",
+   "tipo": "tema",
+   "titulo": "cicd",
+   "peso": 1,
+   "ruta": "memoria/temas/cicd.md"
+  },
+  {
+   "id": "tema:coherencia",
+   "tipo": "tema",
+   "titulo": "coherencia",
+   "peso": 1,
+   "ruta": "memoria/temas/coherencia.md"
   },
   {
    "id": "tema:integridad",
@@ -5529,6 +5709,13 @@
    "titulo": "bug",
    "peso": 1,
    "ruta": "memoria/temas/bug.md"
+  },
+  {
+   "id": "tema:portada",
+   "tipo": "tema",
+   "titulo": "portada",
+   "peso": 1,
+   "ruta": "memoria/temas/portada.md"
   },
   {
    "id": "tema:anti-cheat",
@@ -5569,7 +5756,7 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
@@ -5592,13 +5779,6 @@
    "titulo": "cifras",
    "peso": 1,
    "ruta": "memoria/temas/cifras.md"
-  },
-  {
-   "id": "tema:numeros",
-   "tipo": "tema",
-   "titulo": "numeros",
-   "peso": 1,
-   "ruta": "memoria/temas/numeros.md"
   },
   {
    "id": "tema:test",
@@ -5907,13 +6087,6 @@
    "titulo": "registro",
    "peso": 1,
    "ruta": "memoria/temas/registro.md"
-  },
-  {
-   "id": "tema:estilo",
-   "tipo": "tema",
-   "titulo": "estilo",
-   "peso": 1,
-   "ruta": "memoria/temas/estilo.md"
   },
   {
    "id": "tema:prosa",
@@ -8719,6 +8892,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:prosa-de-tfg-vs-lista-de-capturas",
+   "a": "tema:estilo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-vs-lista-de-capturas",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-vs-lista-de-capturas",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-vs-lista-de-capturas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -9457,6 +9650,31 @@
    "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
    "a": "dato:lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "tema:pbis",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
@@ -13044,6 +13262,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes",
+   "a": "tema:numeros",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:optimizaciones-de-rendimiento-busqueda-por-radio-con-claves",
    "a": "tema:grada-colchonera",
    "tipo": "trata"
@@ -13122,6 +13360,26 @@
    "de": "decision:paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p",
    "a": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5",
+   "a": "tema:arquitectura",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5",
+   "a": "tema:cicd",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5",
+   "a": "tema:coherencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:pipeline-ci-cd-descrito-una-sola-vez-en-cap-5",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:pivote-de-red-social-a-juego-survivor-reutilizando-base-del",
@@ -13572,6 +13830,26 @@
    "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
    "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-en-elements-portada-tex",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-en-elements-portada-tex",
+   "a": "tema:plantilla",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-en-elements-portada-tex",
+   "a": "tema:portada",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-en-elements-portada-tex",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
@@ -15379,6 +15657,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -15702,6 +16000,31 @@
    "de": "receta:como-estructurar-el-csv-de-entrada-para-la-plantilla-sus",
    "a": "receta:como-se-calcula-la-puntuacion-sus-formula-y-ejemplo",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
@@ -16604,6 +16927,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
    "a": "tema:directlua",
    "tipo": "trata"
@@ -17504,6 +17847,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:login-con-google-oauth-2-0-codigo-de-autorizacion-state-en-s",
    "a": "tema:auth",
    "tipo": "trata"
@@ -17592,6 +17955,26 @@
    "de": "receta:login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p",
    "a": "receta:recuperacion-de-sesion-al-cargar-get-api-auth-me-y-logout-po",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:longtable-sin-fila-huerfana-al-final",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:longtable-sin-fila-huerfana-al-final",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:longtable-sin-fila-huerfana-al-final",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:longtable-sin-fila-huerfana-al-final",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:manejo-de-errores-de-principio-a-fin-de-errores-tipados-a-ui",

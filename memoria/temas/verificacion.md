@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 11
+notas: 12
 ---
 # verificacion
 
@@ -18,6 +18,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes|Números pequeños también se verifican en fuentes]] · ⚠️ propuesto
 
 ## Datos
 
@@ -32,4 +33,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[test]] · [[reglas-javier]] · [[calidad]] · [[criterios]] · [[terminado]] · [[trazabilidad]]
+[[latex]] · [[tfg]] · [[memoria]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[fuentes]] · [[numeros]] · [[test]] · [[reglas-javier]] · [[calidad]] · [[criterios]]

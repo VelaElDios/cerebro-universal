@@ -10910,3 +10910,58 @@ La compilación ya no falla por "Infinite glue shrinkage" tras el último parche
 - Añadir \\* antes de \bottomrule en todas las longtables (04-descripcion, 04b-juego, 05-evaluacion, a1-desarrollo, a4-trazabilidad).
 - Envolver capturas altas en adjustbox{max totalheight=0.42\textheight,width=...}: donetonic/06-graficas-sprint2.png (a1-desarrollo) y produccion/02-actions-verde.png (05-evaluacion).
 - Ejecutar comando_prueba tras cada cambio hasta que verificar.py y revisar_maquetacion.py pasen.
+
+## 2026-11-19 17:02 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los 5 diagramas de secuencia en chapters/04-descripcion.tex que incumplen las reglas 16-18 de Javier (flechas/etiquetas que cruzan cajas). Son: fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google y fig:sec-baja. Ajustaré posiciones de nodos, usaré codos en flechas, separaré cajas y moveré etiquetas fuera de líneas verticales.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=») chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 16 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que los 5 diagramas ya no tienen cruces (reglas 16-18). Si persisten avisos de pgf, ajustar posiciones. Luego, en el siguiente paso, eliminar imágenes DoneTonic duplicadas (regla 10) y reescribir la prosa de manuales en Cap 4 y 4b (regla 13).
+
+## 2026-11-19 17:04 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 92 páginas, sin "Infinite glue shrinkage")
+- verificar.py: FALLA - 16+ errores de números no encontrados en fuentes (32, 23, 48, 50, 33, 82, etc. en chapters/01-introduccion.tex y chapters/03-propuesta.tex)
+- revisar_maquetacion.py (Gemini): FALLA en 5 diagramas (reglas 16-18): fig:capas (etiqueta cruza flecha), fig:modelo-datos (línea atraviesa caja), fig:sec-login (línea vertical atraviesa cajas alt/else), fig:sec-google (etiqueta cruza caja), fig:sec-baja (etiqueta se superpone a línea vertical)
+- Problemas previos no resueltos: imágenes DoneTonic duplicadas (regla 10), prosa "La figura X muestra..." en Cap 4 y 4b (regla 13), secciones de 1-2 líneas (regla 9), pipeline duplicado (regla 14), longtables sin \\* (regla 7), capturas altas sin adjustbox (regla 8)
+- Fuentes clave (documentacion-tecnica.md, gestion/README.md, revision-entrega.md, hito4-configuracion.md) no proporcionadas en este mensaje - imposibilita verificación completa de cifras
+
+El constructor intentó corregir los 5 diagramas de secuencia en chapters/04-descripcion.tex pero la verificación falla por dos motivos principales: (1) los diagramas siguen teniendo cruces de flechas/etiquetas según Gemini (reglas 16-18), y (2) el test verificar.py detecta numerosos números en el texto que no aparecen en las fuentes proporcionadas. Además, persisten los problemas estructurales señalados en revisiones anteriores: imágenes duplicadas, prosa tipo manual de capturas, secciones cortas, descripción duplicada del pipeline, longtables sin protección de fila huérfana e imágenes altas sin limitación de altura. Las fuentes principales del repositorio no se han pasado en este mensaje, lo que impide contrastar las cifras.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Corregir los 5 diagramas de secuencia en chapters/04-descripcion.tex (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) aumentando separación entre nodos, usando codos en flechas y añadiendo espacio vertical entre bloques para evitar cruces (reglas 16-18)
+- Eliminar números no verificados en fuentes: revisar chapters/01-introduccion.tex (líneas 36-37) y chapters/03-propuesta.tex (líneas 24-30) y reemplazar cifras (32, 23, 48, 50, 33, 82) por valores confirmados en documentacion-tecnica.md y gestion/README.md
+- Eliminar imágenes DoneTonic duplicadas: mantener solo en Cap 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y en Anexo A1 usar \ref a esas figuras
+- Reescribir prosa de manuales (Cap 4 §6 "La aplicación" y Cap 4b §2 "Cómo se juega") integrando capturas en párrafos explicativos con subfigure, eliminando frases sueltas "La figura X muestra..."
+- Fundir secciones cortas (04-descripcion §6.3 Frontend y §6.4 API) en una sola o ampliar con párrafos reales
+- Unificar descripción del pipeline: en Cap 3 remitir con \ref{fig:pipeline} a la explicación completa del Cap 5
+- Añadir \\* antes de \bottomrule en todas las longtables (04-descripcion, 04b-juego, 05-evaluacion, a1-desarrollo, a4-trazabilidad)
+- Envolver capturas altas en adjustbox{max totalheight=0.42\textheight,width=...}: donetonic/06-graficas-sprint2.png (a1-desarrollo) y produccion/02-actions-verde.png (05-evaluacion)
+- Solicitar fuentes faltantes (documentacion-tecnica.md, gestion/README.md, revision-entrega.md, hito4-configuracion.md) para verificación completa
+- Ejecutar comando_prueba tras cada cambio hasta que verificar.py y revisar_maquetacion.py pasen
+
+## 2026-11-19 17:04 · 🧠 Conocimiento guardado
+
+[[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[longtable-sin-fila-huerfana-al-final]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]

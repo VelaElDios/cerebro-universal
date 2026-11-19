@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "redaccion"
-notas: 2
+notas: 3
 ---
 # redaccion
 
@@ -15,6 +15,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas|Prosa de TFG vs lista de capturas]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[sprints]]
+[[tfg]] · [[latex]] · [[estilo]] · [[memoria]] · [[sprints]]

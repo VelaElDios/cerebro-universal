@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 16
+notas: 17
 ---
 # tikz
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 - 🧪 [[memoria/conocimiento/recetas/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 
@@ -40,4 +41,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 ## Temas relacionados
 
-[[latex]] · [[pgfplots]] · [[memoria]] · [[diagramas]] · [[lua]] · [[pgf-umlsd]] · [[tfg]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]]
+[[latex]] · [[pgfplots]] · [[diagramas]] · [[memoria]] · [[pgf-umlsd]] · [[lua]] · [[tfg]] · [[secuencia]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]]

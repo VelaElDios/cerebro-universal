@@ -57,7 +57,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 13
+  "usos": 14
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -119,6 +119,12 @@
   "ultimo": "2026-11-18",
   "usos": 1
  },
+ "memoria/conocimiento/datos/workspace-y-equipo-en-donetonic.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
+ },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
   "mal": 0,
@@ -129,7 +135,13 @@
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 17
+  "usos": 18
+ },
+ "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -142,6 +154,12 @@
   "mal": 0,
   "ultimo": "2026-11-19",
   "usos": 6
+ },
+ "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-19",
+  "usos": 1
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,
@@ -165,7 +183,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 5
+  "usos": 6
  },
  "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram.md": {
   "bien": 0,
@@ -189,7 +207,7 @@
   "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-19",
-  "usos": 11
+  "usos": 12
  },
  "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
   "bien": 0,

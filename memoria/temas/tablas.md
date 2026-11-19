@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tablas"
-notas: 7
+notas: 8
 ---
 # tablas
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Longtable sin fila huérfana al final]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable|Reglas de maquetación de tablas en LaTeX (alineación, anchos, longtable, código y rutas)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace|Tablas de LaTeX que no se pisan (columnas p y addlinespace)]]
