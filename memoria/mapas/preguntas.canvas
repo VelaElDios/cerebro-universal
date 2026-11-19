@@ -5,7 +5,7 @@
    "type": "file",
    "file": "proyectos/preguntas/bitacora.md",
    "x": -535,
-   "y": 275,
+   "y": 270,
    "width": 380,
    "height": 130,
    "color": "6"
@@ -14,8 +14,8 @@
    "id": "tema:conocimiento",
    "type": "file",
    "file": "memoria/temas/conocimiento.md",
-   "x": 157,
-   "y": -309,
+   "x": 156,
+   "y": -313,
    "width": 388,
    "height": 110,
    "color": "5"

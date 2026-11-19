@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «burndown» (este archivo 
 
 ## Temas relacionados
 
-[[donetonic]] · [[scrum]] · [[metricas]] · [[sprint]] · [[métricas]]
+[[donetonic]] · [[metricas]] · [[scrum]] · [[sprint]] · [[métricas]] · [[graficas]] · [[sprint2]]

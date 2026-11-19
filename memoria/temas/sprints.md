@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sprints"
-notas: 1
+notas: 2
 ---
 # sprints
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
+
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[redaccion]] · [[tfg]]
+[[latex]] · [[memoria]] · [[tfg]] · [[grada-colchonera]] · [[saas]] · [[capturas]] · [[requisitos]] · [[trazabilidad]] · [[redaccion]]

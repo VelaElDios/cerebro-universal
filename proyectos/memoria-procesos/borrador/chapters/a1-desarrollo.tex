@@ -217,7 +217,9 @@ Las gráficas del Sprint 2 en DoneTonic (Burndown y Burnup) se muestran en la Fi
 Cerrado el Sprint 1, el profesor fijó que el Sprint 2 sería la lógica del juego. El juego se programó del 23 al 26/10 en seis fases, antes de que se fijara el contenido del sprint, y su backlog (29 PBIs, P20--P48, y 50 tareas, T33--T82) se registró en DoneTonic al cerrar el sprint (29/10). Todos los PBIs son MUST. Las etiquetas por fase fueron: *Base del juego* (P20--P28), *Fase 2 · Club* (P29--P32), *Fase 3 · Ultras* (P33--P34), *Fase 4 · Mundo* (P35--P37), *Fase 5 · Rarezas* (P38--P41), *Fase 6 · Logros y sonido* (P42--P46) y *Calidad* (P47--P48). La Tabla~\ref{tab:sprint2-backlog} muestra el sprint backlog; «hecho» es el día en que se fusionó en \texttt{main} el último PR de cada PBI.
 
 {\small
-\begin{longtable}{@{}L{0.7cm} L{2.1cm} L{5.4cm} L{1.6cm} L{2.0cm} L{1.8cm}@{}}
+% Anchos que suman 13,2 cm + 5 separadores (2\tabcolsep) = 15,31 cm ≤ \linewidth (15,5 cm)
+% La última columna (Hecho) necesita 2,0 cm para las fechas como 24/10/2026 sin overfull.
+\begin{longtable}{@{}L{0.7cm} L{2.0cm} L{4.9cm} L{1.6cm} L{2.0cm} L{2.0cm}@{}}
 \caption{Sprint Backlog del Sprint 2 (29 PBIs, 50 tareas).}\label{tab:sprint2-backlog}\\
 \toprule
 \textbf{PBI} & \textbf{Etiqueta} & \textbf{Título} & \textbf{Tareas} & \textbf{PRs} & \textbf{Hecho} \\ \midrule \endfirsthead

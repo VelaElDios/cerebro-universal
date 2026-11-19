@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "pbi"
-notas: 2
+notas: 3
 ---
 # pbi
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «pbi» (este archivo se genera solo).
+
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github|Trazabilidad requisito → PBI → tarea → PR en DoneTonic y GitHub]]
 
 ## Datos
 
@@ -14,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pbi» (este archivo se ge
 
 ## Temas relacionados
 
-[[sprint]] · [[tarea]] · [[donetonic]] · [[grada-colchonera]] · [[saas]] · [[scrum]] · [[hitos]] · [[memoria-procesos]] · [[tareas]] · [[hito]]
+[[tarea]] · [[scrum]] · [[donetonic]] · [[sprint]] · [[hitos]] · [[tareas]] · [[gestión]] · [[github flow]] · [[trazabilidad]] · [[github]] · [[pr]] · [[pull-request]]

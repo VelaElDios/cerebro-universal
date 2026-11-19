@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «métricas» (este archivo
 
 ## Temas relacionados
 
-[[donetonic]] · [[scrum]] · [[ac]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[burndown]] · [[mflops]] · [[mips]] · [[grada-colchonera]] · [[sprint]] · [[memoria-procesos]] · [[métrica]]
+[[donetonic]] · [[scrum]] · [[metricas]] · [[ac]] · [[arquitectura-computadores]] · [[metricas-rendimiento]] · [[burndown]] · [[graficas]] · [[sprint2]] · [[mflops]] · [[mips]] · [[grada-colchonera]]

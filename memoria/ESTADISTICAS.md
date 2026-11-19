@@ -2,16 +2,16 @@
 
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
-- Notas que se han usado alguna vez: 24
-- Notas que nunca se han usado: 1284
+- Notas que se han usado alguna vez: 25
+- Notas que nunca se han usado: 1283
 
 ## Las más útiles
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 9 | 2 | 0 |
+| [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 10 | 2 | 0 |
+| [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 5 | 1 | 0 |
 | [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes\|Números clave del proyecto contrastados con fuentes]] | 4 | 2 | 0 |
-| [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 4 | 1 | 0 |
 | [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo\|Capturas de DoneTonic disponibles en el repo]] | 4 | 1 | 0 |
 | [[memoria/conocimiento/datos/catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore\|Catálogo de sistemas del juego (jugadores, rarezas, entrenadores, armas, pasivas, combos, ultras, rivales, jefes, dificultad, movimiento, mundo, club, logros, sonido)]] | 3 | 1 | 0 |
 | [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d\|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] | 2 | 1 | 0 |

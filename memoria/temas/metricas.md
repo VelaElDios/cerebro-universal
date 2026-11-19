@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "metricas"
-notas: 10
+notas: 11
 ---
 # metricas
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al|Burndown real vs DoneTonic en Sprint 2 (backlog registrado al cerrar)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2|Burndown real vs. burndown de DoneTonic en Sprint 2]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/mejor-medida-de-rendimiento-es-tiempo-de-ejecucion-real|Mejor medida de rendimiento es tiempo de ejecución real]] · ⚠️ propuesto
 
@@ -31,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[ac]] · [[rendimiento]] · [[verificacion]] · [[sprint]] · [[grada-colchonera]] · [[saas]] · [[ipc]] · [[vliw]] · [[latex]] · [[donetonic]] · [[scrum]] · [[burndown]]
+[[ac]] · [[rendimiento]] · [[verificacion]] · [[donetonic]] · [[scrum]] · [[burndown]] · [[sprint]] · [[métricas]] · [[grada-colchonera]] · [[saas]] · [[ipc]] · [[vliw]]

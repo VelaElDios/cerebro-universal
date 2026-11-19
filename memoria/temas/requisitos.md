@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "requisitos"
-notas: 5
+notas: 6
 ---
 # requisitos
 
@@ -17,10 +17,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «requisitos» (este archiv
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil|Requisitos funcionales del juego (Sprint 2) — 20 RJ con trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad|Requisitos funcionales del Sprint 1 (13 RF) con trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto|Requisitos no funcionales RNF-01 a RNF-12 del proyecto]]
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[donetonic]] · [[scrum]] · [[juego]] · [[trazabilidad]] · [[arquitectura]] · [[capitulo-4]] · [[manual-usuario]] · [[memoria]] · [[tfg]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[memoria]] · [[tfg]] · [[trazabilidad]] · [[donetonic]] · [[scrum]] · [[latex]] · [[capturas]] · [[sprints]] · [[juego]]

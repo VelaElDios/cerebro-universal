@@ -13,8 +13,22 @@
 
 
 % Forzar \raggedbottom global DESDE EL INICIO para evitar "Infinite glue shrinkage"
-% al partir longtables y figuras grandes. Debe ir ANTES de \frontmatter en Memoria.tex.
+% al partir longtables y figuras grandes.
 \raggedbottom
+
+% Memoria.tex (protegido) llama a \mainmatter después de cargar este archivo;
+% la clase book puede activar \flushbottom en mainmatter. Parcheamos \mainmatter
+% para que vuelva a \raggedbottom justo después de su definición original.
+\let\oldmainmatter\mainmatter
+\renewcommand{\mainmatter}{\oldmainmatter\raggedbottom}
+
+% Forzar \raggedbottom al inicio de CADA capítulo: las longtables que se parten
+% entre páginas y las float pages usan \flushbottom aunque el documento tenga
+% \raggedbottom global, lo que provoca "Infinite glue shrinkage found in box
+% being split". Al parchear \chapter, cada capítulo empieza con \raggedbottom
+% y el modo se mantiene durante todo el capítulo.
+\let\oldchapter\chapter
+\renewcommand{\chapter}{\raggedbottom\oldchapter}
 
 % Parámetros de flotantes más permisivos para que figuras y tablas compartan página.
 \renewcommand{\topfraction}{0.9}

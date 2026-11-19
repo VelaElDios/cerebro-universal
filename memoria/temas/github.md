@@ -13,8 +13,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «github» (este archivo se
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github|Trazabilidad requisito → PBI → tarea → PR en DoneTonic y GitHub]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github|Trazabilidad requisito → PBI → tarea → PR en DoneTonic y GitHub]]
 
 ## Temas relacionados
 
-[[scrum]] · [[donetonic]] · [[gestión]] · [[github flow]] · [[trazabilidad]] · [[pr]] · [[grada-colchonera]] · [[saas]] · [[memoria-procesos]]
+[[scrum]] · [[donetonic]] · [[gestión]] · [[github flow]] · [[trazabilidad]] · [[pr]] · [[pbi]] · [[pull-request]] · [[tarea]] · [[grada-colchonera]] · [[saas]] · [[memoria-procesos]]

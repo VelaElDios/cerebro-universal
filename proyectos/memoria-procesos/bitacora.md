@@ -10533,3 +10533,93 @@ He corregido yo directamente `elements/preambulo.tex` para mover `\raggedbottom`
 ## 2026-11-19 01:43 · 🧠 Conocimiento guardado
 
 [[inventario-de-capturas-por-carpeta-con-fechas-y-requisitos]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al]]
+
+## 2026-11-19 02:54 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba falla por la compilación: "Infinite glue shrinkage found in box being split" en las longtables y figuras grandes de varios capítulos, porque `\mainmatter` reactiva `\flushbottom` después del `\raggedbottom` de `elements/preambulo.tex` (y `Memoria.tex` está protegido). Lo arreglo poniendo `\raggedbottom` al inicio de `chapters/01-introduccion.tex`, el primer archivo que se carga tras `\mainmatter`. Además corrijo el único overfull de alineación del log (5,94 pt en `a1-desarrollo.tex` líneas 220-223): la tabla `tab:sprint2-backlog` suma 15,71 cm > `\linewidth` (15,5 cm), así que reduzco sus columnas para que sumen 13,2 cm + separadores = 15,31 cm.
+
+**Archivos:** `(cambio) chapters/01-introduccion.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) elements/preambulo.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [9
+- intento 2: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [9 (tocó `(cambio) elements/preambulo.tex`, `(cambio) chapters/a1-desarrollo.tex`)
+- intento 3: ❌ ./chapters/04-descripcion.tex:34: Infinite glue shrinkage found in box being split [9 (tocó `(cambio) elements/preambulo.tex`)
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para comprobar que la compilación ya no da "Infinite glue shrinkage" ni el overfull de `tab:sprint2-backlog`. Si compila y `verificar.py` pasa, continuar con las tareas de la bitácora de maquetación: bajar la altura de las subfiguras altas (`fig:hito4-flujo` a 0,28\textheight y `fig:juego-club-pantallas-a/b`), reescribir como prosa los manuales de los capítulos 4 y 4b eliminando las frases sueltas «La figura X muestra…», dejar cada captura de DoneTonic una sola vez (con `\ref` en el resto), corregir los diagramas TikZ de capas y arquitectura del juego según las reglas 16-18, y fundir las secciones de una o dos líneas.
+
+## 2026-11-19 02:57 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: FALLA con "Infinite glue shrinkage" en 04-descripcion.tex (líneas 34, 68, 94, 192, 299), 04b-juego.tex (195, 417, 441), 05-evaluacion.tex (54, 75, 214), a1-desarrollo.tex (41, 88, 258, 300), a4-trazabilidad.tex (112). El parche a `\mainmatter` y `\chapter` en `elements/preambulo.tex` no surte efecto completo porque `Memoria.tex` (protegido) llama a `\mainmatter` tras cargar `preambulo.tex`, pero la clase `book` reactiva `\flushbottom` internamente al cambiar a `\mainmatter`.
+- Datos verificados contra fuentes (≥25):
+  1. 19 PBIs Sprint 1, 32 tareas → doc §4.1 tabla backlog
+  2. 29 PBIs Sprint 2, 50 tareas → doc §4.4 tabla backlog
+  3. Fechas Sprint 1: 29/09–27/10/2026 → doc §4.1, §4.6
+  4. Fechas Sprint 2: 23/10–29/10/2026 → doc §4.4, §4.6
+  5. 276 pruebas en main al cierre Sprint 2 → doc §10.2 tabla (140+136)
+  6. 322 pruebas tras Fase 7 → doc §10.2 total
+  7. 5 migraciones SQL → doc §6.2 y @arbol migrations/001–005
+  8. 23 endpoints API → doc §6.4 tabla
+  9. 6 dependencias producción → doc §14 tabla
+  10. 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → doc §14 tabla
+  11. Hito 4 completado 23/10/2026 con correo real y Google publicado → doc §4.6 y capturas produccion/
+  12. Cambio de alcance P19 (Cloud Run) → doc §4.1, §4.6
+  13. Backlog Sprint 2 registrado en DoneTonic al cerrar sprint (29/10) → doc §4.4 nota
+  14. Burndown real Sprint 2 reconstruido con fechas PR → doc §4.5 tabla evolución
+  15. Trazabilidad completa 82 tareas → doc §4.4 tablas trazabilidad
+  16. Diagramas de secuencia 7.1–7.13 → doc §7
+  17. Arquitectura en capas con decisiones → doc §5.1–5.2
+  18. Modelo entidad-relación → doc §6.2
+  19. Seguridad: tabla amenazas/medidas → doc §8
+  20. CI/CD: 3 workflows + Render → doc §11
+  21. Logs JSON con eventos → doc §12.1
+  22. Problemas y soluciones → doc §13 tablas
+  23. Conclusiones y trabajo futuro → doc §15
+  24. Uso IA: hechos en uso-ia.md → fuente uso-ia.md
+  25. Bibliografía extra: RFC 6749, bcrypt, Vampire Survivors, DoneTonic → bibliografia-extra.md
+  26. Capturas mínimas por carpeta: app 13, hito4 11, juego 16, fase7 12, donetonic 8, produccion 3, prueba-tecnica 2 → §16 índice capturas
+- Reglas Javier incumplidas (pendientes):
+  - Regla 8: páginas con una sola imagen (subfiguras muy altas en fig:hito4-flujo 3 filas, fig:juego-club-pantallas-a/b 2 filas)
+  - Regla 10: imágenes repetidas (DoneTonic en Cap 3 y Anexo A1)
+  - Regla 13: cadenas "La figura X muestra…" en manuales (Cap 4 y 4b)
+  - Regla 16-18: diagramas TikZ Fig 3.1 (capas) y Fig 4.7 (arquitectura juego) con cajas que se pisan, flechas que atraviesan cajas, >6 participantes
+  - Regla 9: secciones de 1-2 líneas (ej. 04-descripcion.tex §6.3, §6.4)
+  - Coherencia: pipeline descrito en Cap 3 y Cap 5
+
+El constructor intentó arreglar "Infinite glue shrinkage" parcheando `\mainmatter` y `\chapter` en `elements/preambulo.tex` y añadiendo `\raggedbottom` al inicio de `01-introduccion.tex`, pero la compilación sigue fallando en múltiples capítulos. La causa raíz es que las longtables y figuras grandes (subfiguras con `height=0.42\textheight` en 3-2 filas) superan el espacio vertical disponible cuando LaTeX intenta partir la caja con `\flushbottom` activo. Los parches en `preambulo.tex` no funcionan del todo porque `Memoria.tex` (protegido) ejecuta `\mainmatter` después de cargar `preambulo.tex`, y la clase `book` fuerza `\flushbottom` en el cambio de materia.
+
+**Lo que está bien:** 
+- Datos contrastados con fuentes (26 comprobaciones)
+- Estructura de capítulos y anexos correcta
+- Tablas longtable con anchos ajustados (tab:sprint2-backlog suma 15,31 cm ≤ \linewidth)
+- Subfiguras agrupadas correctamente en muchos casos
+- Diagramas de secuencia con `adjustbox` y `max totalheight=0.6\textheight`
+
+**Lo que falla:**
+1. **Compilación**: "Infinite glue shrinkage" persiste en 6 archivos por cajas verticales demasiado altas.
+2. **Regla 8**: Subfiguras de 3 filas (`fig:hito4-flujo`) y 2 filas (`fig:juego-club-pantallas-a/b`) a `height=0.42\textheight` crean páginas con una sola imagen.
+3. **Regla 10**: Capturas de DoneTonic duplicadas (Cap 3 y Anexo A1).
+4. **Regla 13**: Prosa de manuales con frases sueltas "La figura X muestra…".
+5. **Reglas 16-18**: Diagramas TikZ Fig 3.1 y Fig 4.7 con problemas de maquetación.
+6. **Regla 9**: Secciones cortas en 04-descripcion.tex.
+
+**Correcciones aplicadas por mí (revisor):** Ninguna directa en este paso; los cambios requieren reescribir secciones enteras (máx. 2 archivos por paso según spec).
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para verificar que la compilación pasa tras reducir altura de subfiguras en `fig:hito4-flujo` (0.28\textheight) y `fig:juego-club-pantallas-a/b` (0.36\textheight).
+- Si compila, siguiente paso: reescribir prosa de manuales (04-descripcion.tex §6 "La aplicación" y 04b-juego.tex §2 "Cómo se juega") eliminando frases sueltas "La figura X muestra…" y agrupando capturas relacionadas en subfiguras con caption general.
+- Eliminar imágenes repetidas de DoneTonic: mantener en Capítulo 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y en Anexo A1 solo referencias con `\ref`.
+- Corregir diagramas TikZ (Fig 3.1 capas, Fig 4.7 arquitectura juego): ensanchar cajas (`text width`), separar con `node distance` suficiente, flechas solo entre vecinas o con codos (`|-`, `-|`), agrupar participantes (≤6), evitar palabras partidas en cajas.
+- Fundir secciones de 1-2 líneas (ej. 04-descripcion.tex §6.3 "Frontend", §6.4 "API") con secciones adyacentes o convertir en lista.
+- Verificar coherencia: pipeline CI/CD descrito una sola vez (Cap 5, Fig fig:pipeline) y referenciado en Cap 3 con `\ref{fig:pipeline}`.
+- Añadir `\pagebreak` antes de longtables grandes (04-descripcion.tex, a1-desarrollo.tex, a4-trazabilidad.tex) para evitar particiones problemáticas.
+
+## 2026-11-19 02:57 · 🧠 Conocimiento guardado
+
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al]]
