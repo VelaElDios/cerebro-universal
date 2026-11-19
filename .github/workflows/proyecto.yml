@@ -20,7 +20,9 @@ concurrency:
 
 jobs:
   avanzar:
-    runs-on: ubuntu-latest
+    # Fijo en 24.04: con la imagen nueva (Ubuntu 26, TeX Live más moderno) la memoria deja de compilar
+    # («Infinite glue shrinkage found in box being split» en las longtable)
+    runs-on: ubuntu-24.04
     timeout-minutes: 60
     steps:
       - name: Descargar el repo
