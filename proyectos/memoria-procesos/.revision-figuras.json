@@ -218,5 +218,11 @@
  },
  "32148c4488068c33234c0d3179451054": {
   "ok": true
+ },
+ "1d12704a365c8c32d602801d4fe54838": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta de texto 'HTTP + JSON / cookie sesión' cruza por encima de la flecha superior izquierda del diagrama."
+  ]
  }
 }

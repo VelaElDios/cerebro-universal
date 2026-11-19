@@ -10861,3 +10861,52 @@ La compilación sigue fallando con «Infinite glue shrinkage» al partir longtab
 ⏱️ Solo quedan 27 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-19 12:28 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La última verificación falla solo porque `elements/preambulo.tex` contiene el número literal `10000` (`\vbadness=10000`), que no está en las fuentes. Elimino esa cifra inventada y dejo solo el ajuste de `\vfuzz` con un valor permitido, sin tocar la declaración, el Resumen ni el Abstract.
+
+**Archivos:** `(cambio) elements/preambulo.tex`
+
+**Intentos:**
+- intento 1: ❌ - Reglas 16-18: Figura 3.1 (fig:capas), página 26 del PDF, chapters/04-descripcion.tex:104: La etiqueta de texto 'HTTP + JSON / cookie sesión' cruza p…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ 37a3d3a 2026-11-03 17:44:49 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que ya no aparece el error de «10000» y que la compilación sigue en verde; después, atender lo que señale el revisor: imágenes repetidas de DoneTonic, participantes no declarados en los diagramas de secuencia, `\\*` en las últimas filas de las `longtable` restantes y envoltura en `adjustbox` de las capturas altas.
+
+## 2026-11-19 12:29 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF generado, 92 páginas, sin "Infinite glue shrinkage")
+- verificar.py: OK (35 figuras, 29 tablas, 17160 palabras en capítulos y anexos)
+- revisar_maquetacion.py (Gemini): FALLA en 5 diagramas (reglas 16-18):
+  1. Fig 3.1 (fig:capas, pág 26): etiqueta 'HTTP + JSON / cookie sesión' cruza flecha superior izquierda
+  2. Fig 3.2 (fig:modelo-datos, pág 30): línea users→juego_records atraviesa caja juego_perfiles
+  3. Fig 3.5 (fig:sec-login, pág 33): línea vertical de 'API login' atraviesa cajas alt/else
+  4. Fig 3.6 (fig:sec-google, pág 35): etiqueta 'redirige a Google con state' cruza caja 'Sesión PostgreSQL'
+  5. Fig 3.7 (fig:sec-baja, pág 36): etiqueta '403 debe quedar un admin' se superpone a línea vertical de userService
+- Pendientes de revisiones anteriores (no comprobados en este paso pero documentados):
+  - Imágenes DoneTonic duplicadas entre Cap 3 y Anexo A1 (regla 10)
+  - Prosa "La figura X muestra..." en Cap 4 §6 y Cap 4b §2 (regla 13)
+  - Secciones de 1-2 líneas en 04-descripcion §6.3, §6.4 (regla 9)
+  - Pipeline CI/CD descrito en Cap 5 y repetido en Cap 3 en lugar de \ref (regla 14)
+  - longtables sin \\* antes de \bottomrule en varios capítulos (regla 7)
+  - Capturas altas (donetonic/06-graficas-sprint2.png, produccion/02-actions-verde.png) sin adjustbox max totalheight (regla 8)
+
+La compilación ya no falla por "Infinite glue shrinkage" tras el último parche en elements/preambulo.tex (se eliminó el valor 10000 no presente en fuentes). Sin embargo, la revisión visual de Gemini detecta 5 diagramas con problemas de maquetación (reglas 16-18): etiquetas y flechas que cruzan cajas o se superponen. Estos diagramas están en chapters/04-descripcion.tex (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja). Además, persisten los problemas estructurales señalados en revisiones anteriores: imágenes duplicadas de DoneTonic, prosa tipo manual de capturas, secciones demasiado cortas, descripción duplicada del pipeline, longtables sin protección de fila huérfana e imágenes altas sin limitación de altura. El builder solo tocó elements/preambulo.tex en este paso; los diagramas y demás problemas requieren cambios en chapters/04-descripcion.tex, chapters/04b-juego.tex, chapters/05-evaluacion.tex, chapters/a1-desarrollo.tex y chapters/a4-trazabilidad.tex.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Corregir los 5 diagramas en chapters/04-descripcion.tex para que no crucen cajas ni flechas (reglas 16-18): ajustar posiciones de nodos (node distance), usar codos (|-, -|) en flechas, separar cajas, mover etiquetas fuera de líneas verticales, reducir participantes si superan 6.
+- Eliminar imágenes DoneTonic duplicadas: mantener solo en Cap 3 (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog) y en Anexo A1 usar \ref a esas figuras.
+- Reescribir prosa de manuales (Cap 4 §6 "La aplicación" y Cap 4b §2 "Cómo se juega") integrando capturas en párrafos explicativos, agrupando relacionadas con subfigure, eliminando frases sueltas "La figura X muestra...".
+- Fundir secciones cortas (04-descripcion §6.3 Frontend y §6.4 API) en una sola o ampliar con párrafos reales.
+- Unificar descripción del pipeline: en Cap 3 remitir con \ref{fig:pipeline} a la explicación completa del Cap 5.
+- Añadir \\* antes de \bottomrule en todas las longtables (04-descripcion, 04b-juego, 05-evaluacion, a1-desarrollo, a4-trazabilidad).
+- Envolver capturas altas en adjustbox{max totalheight=0.42\textheight,width=...}: donetonic/06-graficas-sprint2.png (a1-desarrollo) y produccion/02-actions-verde.png (05-evaluacion).
+- Ejecutar comando_prueba tras cada cambio hasta que verificar.py y revisar_maquetacion.py pasen.
