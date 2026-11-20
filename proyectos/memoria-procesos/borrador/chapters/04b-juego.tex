@@ -314,11 +314,10 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
     \begin{call}{srv}{guarda partida en curso}{repo}{ok}
     \end{call}
   \end{call}
-  \begin{sdblock}{loop}{cada fotograma (simulacion en Frontend)}
-    \begin{call}{fe}{avanzar paso fijo}{fe}{}
+  \begin{sdblock}{loop}{cada fotograma (simulacion en el frontend)}
+    \begin{call}{j}{mueve el personaje}{fe}{}
     \end{call}
-    \begin{call}{fe}{estado fin}{fe}{}
-    \end{call}
+    \mess{fe}{estado fin}{j}
   \end{sdblock}
   \begin{call}{fe}{POST partidas/id/fin}{api}{200 o 400}
     \begin{call}{api}{finalizarPartida}{srv}{validacion}

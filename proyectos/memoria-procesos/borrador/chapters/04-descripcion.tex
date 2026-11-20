@@ -200,7 +200,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
     pk/.style={font=\small\bfseries},
     uk/.style={font=\small\itshape},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema},
-    node distance=3.5cm and 6.0cm
+    node distance=3.5cm and 7.0cm
 ]
     % users (esquina superior izquierda)
     \node[entity] (users) {
@@ -245,9 +245,10 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr created\_at TIMESTAMPTZ
     };
     % relaciones: users -> perfiles (horizontal con codo, etiqueta arriba, fuera de la línea)
-    \draw[arrow] (users.east) -- ++(2.5,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
-    % users -> records (codo bajando y yendo a la derecha, etiqueta a la derecha, fuera de la línea)
-    \draw[arrow] (users.south) -- ++(0,-2.5) -| node[near start, right, font=\footnotesize] {tiene su mejor partida} (records.west);
+    \draw[arrow] (users.east) -- ++(3.0,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
+    % users -> records: sale por abajo de users, va hacia abajo, luego horizontal hacia la derecha por debajo de perfiles, y sube por la izquierda de records.
+    % La etiqueta se coloca sobre el tramo horizontal, lejos de las cajas.
+    \draw[arrow] (users.south) -- ++(0,-2.0) -| node[near end, above, font=\footnotesize] {tiene su mejor partida} (records.south west);
     % session no tiene relaciones directas en el diagrama (se omite para claridad)
 \end{tikzpicture}
 \end{adjustbox}
@@ -440,13 +441,15 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
     \end{sdblock}
     \begin{sdblock}{alt}{cuenta pendiente}
       \mess{s}{403 cuenta pendiente}{a}
-      \mess{a}{muestra reenviar correo}{v}
     \end{sdblock}
     \begin{sdblock}{alt}{correcto}
       \mess{a}{200 usuario y cookie}{c}
-      \mess{c}{ponerUsuario ir a jugar}{v}
     \end{sdblock}
   \end{call}
+  % Las respuestas al cliente (vista) salen de api.js, que está a la izquierda de la API.
+  % Para evitar cruces, sacamos los mensajes fuera de los bloques alt y usamos flechas con codo.
+  \mess{c}{muestra reenviar el correo}{v}
+  \mess{c}{poner usuario e ir a jugar}{v}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Inicio de sesión local.}

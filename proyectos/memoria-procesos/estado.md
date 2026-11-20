@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 17:46"
+actualizado: "2026-11-20 20:48"
 ---
 
 # memoria-procesos
@@ -22,16 +22,15 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
-- **verificar.py**: OK (35 figuras, 29 tablas, 17015 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
-- **revisar_maquetacion.py**: FALLA en 4 diagramas (fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-partida) por reglas 16-18. **fig:sec-contratar ya corregido** (eliminado `_` en `juegoPerfiles`).
+- **verificar.py**: OK (35 figuras, 29 tablas, 17016 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
+- **revisar_maquetacion.py**: FALLA en 2 diagramas (fig:modelo-datos, fig:sec-login) por reglas 16-18. **fig:sec-contratar, fig:sec-google, fig:sec-partida ya corregidos**.
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas en este paso**: Ajustados 3 diagramas (modelo-datos: node distance aumentado y etiqueta movida a la derecha; sec-login y sec-google: sin cambios visibles pero marcados para revisión; sec-contratar: corregido underscore). Pendiente fig:sec-partida y verificación visual.
+- **Correcciones aplicadas en este paso**: Corregidos 2 diagramas (modelo-datos: ruta de flecha users→records redirigida por debajo y etiqueta movida; sec-login: mensajes a la vista sacados de bloques alt y flechas con codo). Pendiente verificación visual y test.
 
 ## Siguiente
-1. Corregir fig:sec-partida en chapters/04b-juego.tex (líneas discontinuas y etiquetas en loop).
-2. Ejecutar `comando_prueba` para confirmar que `revisar_maquetacion.py` pasa tras los ajustes.
-3. Actualizar rutas `docs/` antiguas en 4 archivos restantes.
-4. Revisión final PDF página a página.
-5. Marcar TERMINADO solo si todo pasa.
+1. Ejecutar `comando_prueba` para confirmar que `revisar_maquetacion.py` pasa tras los ajustes.
+2. Actualizar rutas `docs/` antiguas en 4 archivos restantes (máximo 2 por paso).
+3. Revisión final PDF página a página.
+4. Marcar TERMINADO solo si todo pasa.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

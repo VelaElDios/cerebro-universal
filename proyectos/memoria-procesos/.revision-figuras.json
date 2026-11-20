@@ -335,5 +335,26 @@
   "problemas": [
    "La línea que conecta la tabla 'users' con la tabla 'juego_records' atraviesa y corta por completo el texto de la etiqueta 'tiene su mejor partida' colocada horizontalmente sobre ella."
   ]
+ },
+ "0f6571aeac2dec734f9d41a85548a2d2": {
+  "ok": false,
+  "problemas": [
+   "La línea que conecta la tabla 'users' con la tabla 'juego_records' cruza por encima y atraviesa la esquina inferior de dicha línea, además la etiqueta 'tiene su mejor partida' se solapa con la línea de conexión."
+  ]
+ },
+ "d3dd84283938e24ef365e92e456faa74": {
+  "ok": false,
+  "problemas": [
+   "La flecha punteada etiquetada como 'muestra reenviar el correo' y 'poner usuario e ir a jugar' atraviesa y corta los bordes de la línea de vida y las líneas verticales de la Vista entrar y api.js en la parte inferior del diagrama."
+  ]
+ },
+ "b85628c3c709df124b2ed6fde7d005a0": {
+  "ok": true
+ },
+ "7c36d5928d28672668d78a554cca7b68": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta de la flecha vertical entre 'users' y 'juego_records' dice 'tiene su mejor partida' y atraviesa o se superpone con los atributos 'tiempo INTEGER' y 'avatar TEXT' de la tabla 'juego_records'."
+  ]
  }
 }
