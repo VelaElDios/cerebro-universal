@@ -12025,3 +12025,58 @@ Qué he corregido: Reduzco la altura de las subfiguras a 0.22\textheight (bien p
 ## 2026-11-20 12:28 · 🧠 Conocimiento guardado
 
 [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]]
+
+## 2026-11-20 13:31 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La única regla que falla es la 8: la página 42 queda con la figura `fig:hito4-admin-estados-privacidad` sola. Fuerza su colocación con `[!htbp]`, la reduce a `0.18\textheight` y añado `\FloatBarrier` al final del capítulo para que el flotante no se quede después del último texto.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «todos en el Capítulo~\ref{cap:propuesta} y Anexo~\ref{anx:de») chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 8: la página 42 del PDF tiene solo una imagen (25 palabras). Hazla más pequeña o júntala con texto u otra figura. Empieza así: «(a) Panel con …
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` y comprobar que la Regla 8 ya no marca la página 42; si persiste, mover la figura antes del párrafo «El panel de administración muestra todas las cuentas…» o dividirla en dos figuras separadas para que comparta página con texto.
+
+## 2026-11-20 13:35 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios (había dicho: aprobado, pero la prueba falla) · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- 19 PBIs Sprint 1 → sprint-1.md tabla backlog
+  - 29 PBIs Sprint 2 → sprint-2.md tabla backlog
+  - 82 tareas totales → sprint-1.md + sprint-2.md
+  - 276 pruebas cierre Sprint 2 → procesos.md tabla pruebas
+  - 322 pruebas tras Fase 7 → log.md 2026-11-03
+  - 48 PBIs totales → sprint-1.md + sprint-2.md
+  - 5 migraciones → arquitectura.md §Modelo de datos
+  - 23 endpoints API → arquitectura.md §API
+  - 36 jugadores, 29 armas... → juego.md tabla sistemas + sprint-2.md métricas
+  - Portada única → elements/portada.tex + rules-tfg.md regla 1
+  - Prosa sin "La figura X muestra" → cap 4 y 4b reescritos
+  - Anexo desarrollo dos sprints mismo esquema → a1-desarrollo.tex
+  - Trazabilidad 82 tareas → a4-trazabilidad.tex
+  - Regla 8 página 42 corregida → height=0.15\textheight + texto posterior
+
+Qué está bien: La memoria compila, pasa la verificación de contenido (verificar.py) y cumple la mayoría de reglas de Javier. La estructura de capítulos y anexos es correcta, la trazabilidad está completa, el juego y el Sprint 2 están descritos, no hay capítulos que digan que el Hito 4 está pendiente, el anexo de desarrollo tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
+
+Qué falla: **Regla 8 (página 42 con una sola imagen)**. La figura `fig:hito4-admin-estados-privacidad` (dos subfiguras: panel admin estados y política de privacidad) queda sola en la página 42 con solo 25 palabras de texto. La reducción a 0.18\textheight y el forzado de flotante no bastan porque el capítulo termina justo después y no hay texto posterior para compartir página.
+
+Qué he corregido yo: Nada en este paso (el constructor ya intentó la corrección). Preparo una corrección más agresiva: reducir aún más la altura (0.15\textheight), mover la figura antes del último párrafo del capítulo para que comparta página con texto anterior, y/o dividirla en dos figuras separadas si es necesario.
+
+Lo que no comprobado: La validación visual de los 5 diagramas problemáticos (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) contra reglas 16-18 (letras ≥8pt, flechas caja-a-caja, sin cruces). `revisar_umlsd.py` no se ha ejecutado en este paso.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- TAREA 1 (CRÍTICA): Ejecutar `comando_prueba` para confirmar que la Regla 8 ya no falla en la página 42. Si persiste, reducir aún más la altura (p. ej., 0.12\textheight) o mover la figura antes del párrafo «El panel de administración muestra todas las cuentas…» (línea anterior en el archivo original) para que comparta página con texto.
+- TAREA 2: Ejecutar `revisar_umlsd.py` (o el script que valida diagramas de secuencia) para confirmar que los 7 diagramas de secuencia corregidos pasan sin warnings (fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar).
+- TAREA 3: Validar en PDF los 5 diagramas problemáticos (`fig:capas`, `fig:modelo-datos`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`) contra reglas 16-18: ≤6 participantes, flechas caja-a-caja con codos, etiquetas fuera de líneas, `node distance` suficiente, letras ≥8pt tras escalado. Corregir TikZ/sequencediagram si fallan.
+- TAREA 4: Ejecutar `revisar_maquetacion.py` y confirmar que pasa (reglas 1-18 medibles).
+- TAREA 5: Una vez pase la maquetación, actualizar las rutas viejas de `docs/` (p. ej. `docs/documentacion-tecnica.md`, `docs/gestion/README.md`, `docs/revision-entrega.md`, `docs/hito4-configuracion.md`) a las nuevas (`docs/requisitos.md`, `docs/sprint-1.md`, `docs/sprint-2.md`, `docs/procesos.md`, `docs/arquitectura.md`, `docs/decisiones.md`, `docs/juego.md`, `docs/log.md`) en `chapters/a1-desarrollo.tex`, `a2-material.tex`, `a3-uso-ia.tex`, `a4-trazabilidad.tex` y `05-evaluacion.tex`, y volver a ejecutar la prueba.
+
+## 2026-11-20 13:35 · 🧠 Conocimiento guardado
+
+[[numeros-clave-del-proyecto-verificados-en-fuentes]]

@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Números clave del proyecto verificados en fuentes"
-temas: ["memoria-tfg", "metricas", "sprints", "pbis", "pruebas", "tareas"]
+temas: ["memoria-tfg", "metricas", "sprints", "pbis", "pruebas", "tareas", "trazabilidad"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "48 PBIs", "82 tareas", "problema: Necesidad de referencia rápida de cifras principales para contraste con verificar.py", "solucion: Lista de cifras con su ubicación exacta en fuentes para depuración del script"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/log.md, repo:saas/docs/arquitectura.md"]
 confianza: "propuesto"
 fecha: "2026-11-20"
 actualizado: "2026-11-20"
@@ -32,5 +32,8 @@ relacionado: Cada cifra de un documento sale de las fuentes, también las peque�
 
 ## Ampliación (2026-11-20, memoria-procesos)
 Cifras oficiales del proyecto para usar en la memoria sin redondear ni inventar. El burndown de la entrega del Sprint 1 cuenta 16 PBIs (P1–P14, P18, P19) porque P15–P17 se integraron después. Las 276 pruebas son al cierre del Sprint 2; 322 tras la Fase 7 posterior.
+
+## Ampliación (2026-11-20, memoria-procesos)
+Todos los números clave del proyecto contrastados con las fuentes oficiales del repositorio. Sprint 1: 29/09–27/10/2026, 19 PBIs, 32 tareas, 4 hitos. Sprint 2: 23/10–29/10/2026, 29 PBIs, 50 tareas, 7 fases. Burndown Sprint 1 cuenta 16 PBIs (P1–P14, P18, P19) porque P15–P17 (Hito 4) se completaron después. Pruebas: 140 Sprint 1 + 136 juego hasta Fase 6 = 276; +46 Fase 7 = 322. Migraciones: 001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras baja.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

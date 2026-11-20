@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T12:28:53+01:00",
+ "generado": "2026-11-20T13:35:52+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1881,7 +1881,8 @@
     "sprints",
     "pbis",
     "pruebas",
-    "tareas"
+    "tareas",
+    "trazabilidad"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5643,7 +5644,7 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -11720,6 +11721,11 @@
   {
    "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
    "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "tema:trazabilidad",
    "tipo": "trata"
   },
   {

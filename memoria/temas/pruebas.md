@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pruebas» (este archivo s
 
 ## Temas relacionados
 
-[[metricas]] · [[pbis]] · [[sprints]] · [[tareas]] · [[grada-colchonera]] · [[saas]] · [[fechas]] · [[datos]] · [[memoria-procesos]] · [[verificacion]] · [[memoria-tfg]]
+[[metricas]] · [[pbis]] · [[sprints]] · [[tareas]] · [[grada-colchonera]] · [[saas]] · [[fechas]] · [[datos]] · [[memoria-procesos]] · [[verificacion]] · [[memoria-tfg]] · [[trazabilidad]]

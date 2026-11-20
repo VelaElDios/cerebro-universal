@@ -26,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[verificacion]] · [[métricas]] · [[sprint]] · [[pbis]] · [[sprints]] · [[tareas]] · [[pruebas]] · [[datos]] · [[memoria-procesos]] · [[grada-colchonera]] · [[saas]] · [[latex]]
+[[verificacion]] · [[métricas]] · [[sprint]] · [[pbis]] · [[sprints]] · [[tareas]] · [[pruebas]] · [[datos]] · [[memoria-procesos]] · [[grada-colchonera]] · [[saas]] · [[trazabilidad]]

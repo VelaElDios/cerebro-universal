@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-tfg» (este archi
 
 ## Temas relacionados
 
-[[metricas]] · [[sprints]] · [[pbis]] · [[pruebas]] · [[tareas]] · [[fuentes]] · [[numeros]] · [[test]] · [[verificacion]]
+[[metricas]] · [[sprints]] · [[pbis]] · [[pruebas]] · [[tareas]] · [[trazabilidad]] · [[fuentes]] · [[numeros]] · [[test]] · [[verificacion]]
