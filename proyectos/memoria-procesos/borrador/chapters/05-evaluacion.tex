@@ -107,6 +107,9 @@ La Figura~\ref{fig:pipeline} resume el pipeline completo: cada PR ejecuta las pr
 
 Tras los PR del Hito 4, GitHub Actions muestra en verde tanto el trabajo de pruebas como el de despliegue en Cloud Run (Figura~\ref{fig:actions-verde}): el CI pasó y la nueva revisión recibió el tráfico. La captura confirma que ambos jobs (\textit{Pruebas} e \textit{Imagen Docker}) finalizaron correctamente y que el workflow de despliegue (\texttt{deploy-cloud-run.yml}) se ejecutó en cascada tras el CI exitoso en \texttt{main}.
 
+% La captura de GitHub Actions en verde (Figura~\ref{fig:actions-verde}) se muestra aquí;
+% en el Capítulo~\ref{cap:descripcion} y Anexo~\ref{anx:material} se cita con \ref.
+
 \begin{figure}[htbp]
 \centering
 \adjustbox{max totalheight=0.42\textheight,width=0.85\textwidth}{\includegraphics{figs/capturas/produccion/02-actions-verde.png}}
