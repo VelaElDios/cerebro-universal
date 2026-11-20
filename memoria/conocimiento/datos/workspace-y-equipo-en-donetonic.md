@@ -1,13 +1,13 @@
 ---
 tipo: "dato"
 titulo: "Workspace y equipo en DoneTonic"
-temas: ["donetonic", "grada-colchonera", "scrum"]
+temas: ["donetonic", "grada-colchonera", "scrum", "gestion", "memoria-procesos"]
 claves: ["DoneTonic", "workspace TFG", "equipo Colchoneros"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-20"
 ---
 
 Temas: [[donetonic]] · [[grada-colchonera]] · [[scrum]]

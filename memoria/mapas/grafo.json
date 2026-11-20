@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T00:53:41+01:00",
+ "generado": "2026-11-20T01:28:52+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2169,7 +2169,9 @@
    "temas": [
     "donetonic",
     "grada-colchonera",
-    "scrum"
+    "scrum",
+    "gestion",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3334,7 +3336,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/coma-decimal-en-formulas-paquete-icomma.md"
   },
   {
@@ -3664,7 +3666,8 @@
    "temas": [
     "figura",
     "latex",
-    "subcaption"
+    "subcaption",
+    "subfigure"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3854,6 +3857,21 @@
    "ruta": "memoria/conocimiento/recetas/definicion-de-hecho-dod-para-tareas-e-hitos.md"
   },
   {
+   "id": "receta:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "tipo": "receta",
+   "titulo": "Diagrama TikZ ancho: reducir text width y offsets para caber en \\textwidth",
+   "temas": [
+    "diagrama",
+    "latex",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md"
+  },
+  {
    "id": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
    "tipo": "receta",
    "titulo": "Diagramas de secuencia con pgf-umlsd (sequencediagram)",
@@ -3976,7 +3994,8 @@
     "memoria",
     "tfg",
     "esiiab",
-    "estructura"
+    "estructura",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4773,7 +4792,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 118,
+   "peso": 119,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4787,7 +4806,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 20,
+   "peso": 21,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -5529,7 +5548,7 @@
    "id": "tema:memoria-procesos",
    "tipo": "tema",
    "titulo": "memoria-procesos",
-   "peso": 14,
+   "peso": 16,
    "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
@@ -5739,7 +5758,7 @@
    "id": "tema:gestion",
    "tipo": "tema",
    "titulo": "gestion",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/gestion.md"
   },
   {
@@ -6145,7 +6164,7 @@
    "id": "tema:subfigure",
    "tipo": "tema",
    "titulo": "subfigure",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/subfigure.md"
   },
   {
@@ -6245,6 +6264,13 @@
    "titulo": "bootstrap",
    "peso": 1,
    "ruta": "memoria/temas/bootstrap.md"
+  },
+  {
+   "id": "tema:diagrama",
+   "tipo": "tema",
+   "titulo": "diagrama",
+   "peso": 1,
+   "ruta": "memoria/temas/diagrama.md"
   },
   {
    "id": "tema:directlua",
@@ -12290,6 +12316,16 @@
   },
   {
    "de": "dato:workspace-y-equipo-en-donetonic",
+   "a": "tema:gestion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:workspace-y-equipo-en-donetonic",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:workspace-y-equipo-en-donetonic",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -16920,6 +16956,11 @@
   },
   {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -17469,6 +17510,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "tema:diagrama",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
+   "a": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
    "a": "tema:latex",
    "tipo": "trata"
@@ -17771,6 +17837,11 @@
   {
    "de": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
    "a": "tema:estructura",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
+   "a": "tema:memoria-procesos",
    "tipo": "trata"
   },
   {

@@ -796,16 +796,10 @@ El panel muestra todas las cuentas con sus estados (activas, pendientes, elimina
 
 Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
 
-\subsection{Producción}
+\subsection{Validación y gestión}
 
 El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}).
 
-\subsection{Prueba técnica}
-
 El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}). La Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado.
 
-\subsection{Gestión en DoneTonic}
-
-El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (Figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (Figura~\ref{fig:donetonic-graficas-s1}, Capítulo~\ref{cap:propuesta}), el Product Backlog con los dos sprints (Figura~\ref{fig:donetonic-backlog}, Capítulo~\ref{cap:propuesta}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (Figura~\ref{fig:donetonic-s2-tablero}, Anexo~\ref{anx:desarrollo}), y el detalle de un PBI con su historia de usuario, criterios de aceptación y tareas, junto con las 50 tareas del Sprint 2 en la columna Hecho (Figura~\ref{fig:donetonic-s2-detalle}, Anexo~\ref{anx:desarrollo}).
-
-La evolución real del Sprint 2, reconstruida a partir de las fechas de fusión de los PRs, se expone en el Anexo~\ref{anx:desarrollo}.
+El seguimiento del proyecto en DoneTonic queda reflejado en el tablero del Sprint 1 con sus 19 PBIs completados (Figura~\ref{fig:donetonic-tablero}, Capítulo~\ref{cap:propuesta}), las gráficas de burndown y burnup del Sprint 1 que muestran el escalón por el cambio de alcance (P19) y el tramo final del Hito 4 (Figura~\ref{fig:donetonic-graficas-s1}, Capítulo~\ref{cap:propuesta}), el Product Backlog con los dos sprints (Figura~\ref{fig:donetonic-backlog}, Capítulo~\ref{cap:propuesta}), el tablero del Sprint 2 con sus 29 PBIs y etiquetas de fase (Figura~\ref{fig:donetonic-s2-tablero}, Anexo~\ref{anx:desarrollo}), y el detalle de un PBI con su historia de usuario, criterios de aceptación y tareas, junto con las 50 tareas del Sprint 2 en la columna Hecho (Figura~\ref{fig:donetonic-s2-detalle}, Anexo~\ref{anx:desarrollo}). La evolución real del Sprint 2, reconstruida a partir de las fechas de fusión de los PRs, se expone en el Anexo~\ref{anx:desarrollo}.

@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figura» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[subcaption]]
+[[latex]] · [[subcaption]] · [[subfigure]]

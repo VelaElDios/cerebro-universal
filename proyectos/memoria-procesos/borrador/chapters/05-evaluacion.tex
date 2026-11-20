@@ -130,7 +130,7 @@ El tratamiento de errores opera de forma uniforme desde la capa de lógica hasta
     \item Las vistas de la interfaz muestran alertas específicas para cada caso, impidiendo que el usuario final visualice trazas internas o formatos crudos.
 \end{enumerate}
 
-\section{Revisión frente al enunciado}
+\section{Revisión frente al enunciado y prueba técnica}
 
 La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\allowbreak -entrega.md} confirmó el cumplimiento íntegro de las prescripciones del enunciado:
 \begin{itemize}
@@ -139,6 +139,8 @@ La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\all
     \item Esquema de autorización con dos roles, listado administrativo, comprobación de estado activo, baja lógica preservando auditoría y protección del último administrador.
     \item Persistencia relacional en PostgreSQL con migraciones versionadas y custodia de secretos fuera del código.
 \end{itemize}
+
+En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). En producción responde \texttt{permitido: true} para un dominio autorizado y \texttt{permitido: false} para un subdominio que no está en la lista. La Figura~\ref{fig:prueba-tecnica} muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
 
 \section{Prueba técnica (RF-13)}
 

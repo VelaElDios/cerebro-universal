@@ -36,7 +36,7 @@ P15 & H4 & Inicio de sesión con proveedor externo (OAuth) & T21, T22 & \#40 & h
 P16 & H4 & Confirmación de cuenta por correo electrónico & T23, T24 & \#38, \#39 & hito-4 \\
 P17 & H4 & Manejo de errores y feedback al usuario & T25, T26 & \#37--\#41 & hito-4 \\
 P18 & H4 & README completo y revisión de la entrega & T27, T28, T31, T32 & \#25, \#26, \#30, \#31 & sprint-1 \\
-P19 & H4 & Despliegue continuo en Google Cloud Run & T29, T30 & \#27, \#28 & sprint-1 \\
+P19 & H4 & Despliegue continuo en Google Cloud Run & T29, T30 & \#27, \#28 & sprint-1 \\*
 \bottomrule
 \end{longtable}
 }
@@ -83,7 +83,7 @@ P18 & T28 & Etiquetas de hito y revisión final & \path{hito-4/T28-revision-entr
 P18 & T31 & Revisión frase a frase contra el enunciado y README final & \path{hito-4/T31-revision-enunciado} & \#30 \\
 P18 & T32 & Carpeta de la memoria en LuaLaTeX & \path{hito-4/T32-carpeta-memoria} & \#31 \\
 P19 & T29 & Contenerizar la aplicación con Docker & \path{hito-4/T29-docker} & \#27 \\
-P19 & T30 & Despliegue continuo en Cloud Run con GitHub Actions & \path{hito-4/T30-cloud-run} & \#28 \\
+P19 & T30 & Despliegue continuo en Cloud Run con GitHub Actions & \path{hito-4/T30-cloud-run} & \#28 \\*
 \bottomrule
 \end{longtable}
 }
@@ -98,7 +98,7 @@ Durante el Sprint 1 surgieron los problemas de la Tabla~\ref{tab:prob-desarrollo
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endfirsthead
 \toprule
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endhead
-Un JSON mal formado devolvía la página de error HTML de Express & El error ocurría en \texttt{express.json()}, antes de la capa API & Manejador propio justo después del parser: 400 en JSON en toda la API (prueba técnica) \\
+Un JSON mal formado devolvía la página de error HTML de Express & El error ocurría en \texttt{express.json()}, antes de la capa API & Manejador propio justo después del parser: 400 en JSON en toda la API (prueba técnica) \\*
 \bottomrule
 \end{longtable}
 
@@ -109,7 +109,7 @@ Un JSON mal formado devolvía la página de error HTML de Express & El error ocu
 \toprule
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endhead
 El correo no salía desde Cloud Run & El SMTP sin cifrar (puerto 25/587) suele estar bloqueado & SMTP de Gmail por el puerto 465 con contraseña de aplicación, guardada en Secret Manager \\
-\texttt{redirect\_uri\_mismatch} al entrar con Google & Cloud Run tiene dos formas de URL y cada una necesita su URI de redirección & Registrar las dos en el cliente de Google y usar \texttt{PUBLIC\_URL} \\
+\texttt{redirect\_uri\_mismatch} al entrar con Google & Cloud Run tiene dos formas de URL y cada una necesita su URI de redirección & Registrar las dos en el cliente de Google y usar \texttt{PUBLIC\_URL} \\*
 \bottomrule
 \end{longtable}
 
@@ -119,7 +119,7 @@ El correo no salía desde Cloud Run & El SMTP sin cifrar (puerto 25/587) suele e
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endfirsthead
 \toprule
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endhead
-Las ramas del Hito 4 dependían unas de otras & Se desarrollaron en cadena & Reubicarlas (rebase) sobre el \path{main} real antes de abrir los PRs, cada una con el CI en verde \\
+Las ramas del Hito 4 dependían unas de otras & Se desarrollaron en cadena & Reubicarlas (rebase) sobre el \path{main} real antes de abrir los PRs, cada una con el CI en verde \\*
 \bottomrule
 \end{longtable}
 
@@ -129,7 +129,7 @@ Las ramas del Hito 4 dependían unas de otras & Se desarrollaron en cadena & Reu
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endfirsthead
 \toprule
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endhead
-Cambiar de proveedor de despliegue a mitad del sprint & Llegaron créditos de Google Cloud para educación & Nuevo PBI P19 (cambio de alcance documentado), Docker y Cloud Run como principal, Render como alternativo \\
+Cambiar de proveedor de despliegue a mitad del sprint & Llegaron créditos de Google Cloud para educación & Nuevo PBI P19 (cambio de alcance documentado), Docker y Cloud Run como principal, Render como alternativo \\*
 \bottomrule
 \end{longtable}
 
@@ -151,7 +151,7 @@ Primeras semanas & Hitos 1, 2 y 3 (releases \path{hito-1}, \path{hito-2}, \path{
 24/10/2026 & Cierre del sprint; prueba técnica (PR \#34). Juego: personajes, movilidad, cámara, mapa, contenido y Fases 2--4 (PRs \#44--\#52) \\
 26/10/2026 & Fases 5 y 6 del juego (PRs \#53 y \#54) \\
 27/10/2026 & Fin del Sprint 1; capturas nuevas y documentación (PR \#55) \\
-29/10/2026 & Arreglo de la baja con Google (PR \#56); Sprint 2 registrado y cerrado en DoneTonic; fin del Sprint 2 \\
+29/10/2026 & Arreglo de la baja con Google (PR \#56); Sprint 2 registrado y cerrado en DoneTonic; fin del Sprint 2 \\*
 \bottomrule
 \end{longtable}
 
@@ -170,7 +170,7 @@ Cierre del Hito 1 (release \path{hito-1}) & 6 & 9 \\
 Cierre del Hito 2 (release \path{hito-2}) & 10 & 5 \\
 Cierre del Hito 3 (release \path{hito-3}) & 14 & 1 \\
 Se añade P19 (Cloud Run) & 14 & 2 \\
-Cierre de la primera entrega (12/10/2026) & 16 & 0 \\
+Cierre de la primera entrega (12/10/2026) & 16 & 0 \\*
 \bottomrule
 \end{longtable}
 
@@ -253,7 +253,7 @@ P44 & Fase 6 · Logros y sonido & Música chiptune y la grada & T72--T74 & \#54 
 P45 & Fase 6 · Logros y sonido & Muñecos con más detalle & T75 & \#54 & 26/10/2026 \\
 P46 & Fase 6 · Logros y sonido & Jefes más duros & T76 & \#54 & 26/10/2026 \\
 P47 & Calidad & Corrección de errores detectados & T77--T79 & \#51, \#55, \#56 & 29/10/2026 \\
-P48 & Calidad & Documentación y gestión del Sprint 2 & T80--T82 & \#55 & 29/10/2026 \\
+P48 & Calidad & Documentación y gestión del Sprint 2 & T80--T82 & \#55 & 29/10/2026 \\*
 \bottomrule
 \end{longtable}
 }
@@ -295,7 +295,7 @@ P44 & \textbf{Música chiptune y la grada}. Como jugador quiero música y ambien
 P45 & \textbf{Muñecos con más detalle}. Como aficionado quiero reconocer a los jugadores y a los jefes en el campo. & Sombreado, orejas, nariz y peinados nuevos; Rasgos propios: brazalete de capitán, cinta, pecas, barba, pendientes, tatuajes. \\
 P46 & \textbf{Jefes más duros}. Como jugador quiero que los jefes sean un reto de verdad a partir del segundo. & Escolta de élites desde el segundo jefe y refuerzos al cambiar de fase; Furia si tardas en ganarles; Una jugada estrella por jefe en la fase 3; el primero sigue siendo asequible. \\
 P47 & \textbf{Corrección de errores detectados}. Como usuario quiero que los errores que encuentren los probadores se arreglen con pruebas que eviten que vuelvan. & Cada error se reproduce con una prueba antes de arreglarlo; Los arreglos pasan el CI y se despliegan. \\
-P48 & \textbf{Documentación y gestión del Sprint 2}. Como responsable del proyecto quiero que todo el Sprint 2 se pueda revisar desde el repositorio. & README con capturas del juego y de DoneTonic; Documentación técnica para la memoria con diagramas; Backlog, tablero y gráficas del Sprint 2 en DoneTonic. \\
+P48 & \textbf{Documentación y gestión del Sprint 2}. Como responsable del proyecto quiero que todo el Sprint 2 se pueda revisar desde el repositorio. & README con capturas del juego y de DoneTonic; Documentación técnica para la memoria con diagramas; Backlog, tablero y gráficas del Sprint 2 en DoneTonic. \\*
 \bottomrule
 \end{longtable}
 }
@@ -312,7 +312,7 @@ Durante el Sprint 2 se resolvieron los problemas de la Tabla~\ref{tab:prob-juego
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endhead
 El juego no cargaba al entrar & Una variable se usaba antes de existir en el módulo de arranque & Inicializar la variable antes de su primer uso (PR \#51) \\
 El primer clic en «Reenviar el correo» se perdía tras un error & El botón quedaba deshabilitado tras el primer intento fallido & Rehabilitar el botón tras mostrar el error (PR \#55) \\
-No se podía volver tras eliminar la cuenta con Google & El flujo de baja con OAuth no limpiaba la sesión local & Cerrar sesión local tras la baja federada (PR \#56) \\
+No se podía volver tras eliminar la cuenta con Google & El flujo de baja con OAuth no limpiaba la sesión local & Cerrar sesión local tras la baja federada (PR \#56) \\*
 \bottomrule
 \end{longtable}
 
@@ -338,7 +338,7 @@ Inicio (23/10/2026) & 0 & 0 & 29 \\
 26/10 (PRs \#53 y \#54) & 9 & 27 & 2 \\
 27/10 (PR \#55) & 0 & 27 & 2 \\
 28/10 & 0 & 27 & 2 \\
-29/10 (PR \#56 y documentación) & 2 & 29 & 0 \\
+29/10 (PR \#56 y documentación) & 2 & 29 & 0 \\*
 \bottomrule
 \end{longtable}
 }

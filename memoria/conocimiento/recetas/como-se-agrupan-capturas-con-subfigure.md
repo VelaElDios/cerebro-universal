@@ -1,13 +1,13 @@
 ---
 tipo: "receta"
 titulo: "Cómo se agrupan capturas con subfigure"
-temas: ["figura", "latex", "subcaption"]
+temas: ["figura", "latex", "subcaption", "subfigure"]
 claves: ["subfigure", "subcaption", "agrupación", "caption general"]
 proyectos: ["memoria-procesos"]
 fuentes: ["chapters/04-descripcion.tex"]
 confianza: "propuesto"
 fecha: "2026-11-17"
-actualizado: "2026-11-17"
+actualizado: "2026-11-20"
 ---
 
 Temas: [[figura]] · [[latex]] · [[subcaption]]
@@ -18,5 +18,8 @@ Para agrupar capturas relacionadas y evitar la cadena «La figura X muestra…»
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
 Relacionado: [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[agrupar-capturas-con-subfigure]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]]
+
+## Ampliación (2026-11-20, memoria-procesos)
+Para evitar cadenas de «La figura X muestra…», agrupar capturas relacionadas en una figura con `subfigure` (de `subcaption`, ya cargado; dos por fila, `\begin{subfigure}{0.48\textwidth}`), con un caption general y uno por subfigura. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

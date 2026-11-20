@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria-procesos"
-notas: 14
+notas: 16
 ---
 # memoria-procesos
 
@@ -12,6 +12,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 - 🧪 [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg|Contenido de los anexos por sprint en la memoria TFG]]
 - 🧪 [[memoria/conocimiento/recetas/como-manejar-fuentes-faltantes-en-verificacion-automatica-de|Cómo manejar fuentes faltantes en verificación automática de números]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/definicion-de-hecho-dod-para-tareas-e-hitos|Definición de Hecho (DoD) para tareas e hitos]]
+- 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github|Flujo de trabajo enunciado → código → deploy (DoneTonic + GitHub)]]
 - 🧪 [[memoria/conocimiento/recetas/secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r|Secuencia obligatoria cuando faltan fuentes en mensaje del revisor]] · ⚠️ propuesto
 
@@ -29,7 +30,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 - 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]]
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas|Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)]]
 - 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
+- 📊 [[memoria/conocimiento/datos/workspace-y-equipo-en-donetonic|Workspace y equipo en DoneTonic]]
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[sprint]] · [[verificacion]] · [[fuentes]] · [[saas]] · [[latex]] · [[memoria]] · [[metricas]] · [[pbis]] · [[tareas]] · [[fechas]]
+[[scrum]] · [[grada-colchonera]] · [[sprint]] · [[verificacion]] · [[fuentes]] · [[saas]] · [[latex]] · [[memoria]] · [[donetonic]] · [[tfg]] · [[metricas]] · [[pbis]]

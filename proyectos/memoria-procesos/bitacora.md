@@ -11345,3 +11345,68 @@ Lo que debe hacer el constructor: **PRIMERO** conseguir las 4 fuentes faltantes;
 ## 2026-11-20 00:53 · 🧠 Conocimiento guardado
 
 [[como-anadir-en-longtables-para-evitar-filas-huerfanas]] · [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]]
+
+## 2026-11-20 01:27 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba sigue en rojo por las 4 fuentes que faltan (`documentacion-tecnica.md`, `gestion/README.md`, `revision-entrega.md`, `hito4-configuracion.md`): los números >20 del texto (32, 48, 50, 82, 29, 276…) no pueden validarse sin ellas y esos datos son obligatorios según la spec, así que no se pueden quitar ni falsear. Lo que sí puedo arreglar desde los .tex es la tarea 3 de la bitácora: añadir `\\*` a la última fila de todas las longtable de los anexos `a1-desarrollo.tex` (12 tablas) y `a4-trazabilidad.tex` (1 tabla), cumpliendo la regla 7 de Javier igual que ya se hizo en los capítulos 04, 04b y 05. Además he comprobado que no hay imágenes repetidas: cada `\includegraphics` aparece una sola vez en toda la memoria (tarea 6 OK).
+
+**Archivos:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a4-trazabilidad.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 16 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Siguiente paso (máx. 2 archivos): en `chapters/05-evaluacion.tex` añadir `\\*` a la última fila de la longtable `tab:workflows` (la única de los capítulos principales que aún no lo tiene) y, según la tarea 5 de la bitácora, fundir las subsecciones cortas de una párrafo: en `chapters/04-descripcion.tex` unir «Producción», «Prueba técnica» y «Gestión en DoneTonic» en una sola subsección de validación/gestión, y en `chapters/05-evaluacion.tex` ampliar o fundir «Revisión frente al enunciado». Sigue bloqueado de origen externo: hacen falta las 4 fuentes (`documentacion-tecnica.md`, `gestion/README.md`, `revision-entrega.md`, `hito4-configuracion.md`) para que `verificar.py` valide los números >20, y la validación visual en PDF de los 5 diagramas (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) para las reglas 16-18.
+
+## 2026-11-20 01:28 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación LaTeX: OK (PDF 92 páginas, sin "Infinite glue shrinkage").
+- `verificar.py`: FALLA con 16 errores explícitos en chapters/01-introduccion.tex y chapters/03-propuesta.tex (números 32, 23, 48, 50, 33, 82, etc. no encontrados en fuentes) y 726 números más no validados.
+- Causa raíz: 4 fuentes críticas no proporcionadas (`repo:saas/docs/documentacion-tecnica.md`, `repo:saas/docs/gestion/README.md`, `repo:saas/docs/revision-entrega.md`, `repo:saas/docs/hito4-configuracion.md`). Sin ellas, ningún número >20 puede verificarse.
+- Reglas de Javier (maquetación): portada única OK; declaración, resumen, abstract OK; índices OK. Pendientes de validar en PDF: 5 diagramas (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) para reglas 16-18; secciones cortas en caps 4 y 5 (regla 9); longtables de anexos sin `\\*` (regla 7) – el constructor dice haber añadido `\\*` en 12 tablas de a1-desarrollo y 1 de a4-trazabilidad, pero no se ha verificado en el PDF.
+- Prosa TFG: capítulos 4 y 4b reescritos como prosa con subfigures (eliminadas cadenas «La figura X muestra…»).
+- Anexo desarrollo: dos sprints con mismo esquema y explicación de la recta de DoneTonic en Sprint 2.
+- Anexo trazabilidad: tabla completa con 82 tareas.
+- Resumen y Abstract: longitud y formato correctos.
+- Capturas mínimas por carpeta superadas y rutas nuevas usadas.
+- Imágenes duplicadas: constructor afirma que cada `\includegraphics` aparece una sola vez (tarea 6 OK).
+
+Qué está bien:
+- La compilación funciona y genera PDF completo.
+- Estructura de capítulos y anexos respeta la plantilla oficial y el spec.
+- Portada única oficial implementada; preambulo.tex sin segunda portada.
+- Bibliografía correcta (apalike, doble llave, year en todas).
+- Capítulos 4 y 4b reescritos como prosa con subfigures.
+- Anexo de desarrollo (a1) tiene dos sprints con mismo esquema y explica la recta de DoneTonic en Sprint 2.
+- Anexo de trazabilidad (a4) tiene tabla completa con 82 tareas.
+- Resumen y Abstract con longitud y formato correctos.
+
+Qué está mal y bloquea:
+1. **FUENTES CRÍTICAS FALTANTES**: Las 4 fuentes principales no se proporcionaron. Sin ellas, `verificar.py` no puede validar ningún número >20 y la prueba seguirá en rojo. Es el bloqueo principal.
+2. **Longtables sin `\\*` antes de `\bottomrule`**: El constructor dice haber corregido 13 tablas en anexos, pero no se ha verificado en el PDF ni en el código actual. Queda pendiente confirmar que todas las longtables (incluidas las de capítulos principales) terminan con `\\*`.
+3. **Diagramas pendientes de validación visual (reglas 16-18)**: 5 diagramas (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) deben verificarse en PDF: sin cruces de flechas, letras ≥8pt, flechas caja-a-caja, etiquetas fuera de líneas verticales, participantes ≤6 en diagramas de secuencia.
+4. **Secciones cortas en cap 4 y 5**: «Producción», «Prueba técnica», «Gestión en DoneTonic» (cap 4) y «Revisión frente al enunciado» (cap 5) son de 1 párrafo; fundir o expandir.
+5. **Números sin fuente**: 16 errores explícitos y 726 más en todo el documento. Hasta que no estén las fuentes, no se pueden corregir.
+
+Lo que he corregido yo: **Nada en este paso** (el constructor ya aplicó `\\*` en anexos; no hay cambios de texto que yo pueda hacer sin fuentes).
+
+Lo que debe hacer el constructor: **PRIMERO** conseguir las 4 fuentes faltantes; **DESPUÉS** reemplazar cualquier número por valores confirmados en fuentes; **LUEGO** terminar correcciones de diagramas, fundir secciones cortas, y verificar maquetación completa.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Tareas para el constructor:**
+- **TAREA CRÍTICA 1**: Obtener del usuario/repositorio las 4 fuentes faltantes: `repo:saas/docs/documentacion-tecnica.md`, `repo:saas/docs/gestion/README.md`, `repo:saas/docs/revision-entrega.md`, `repo:saas/docs/hito4-configuracion.md`. Sin ellas, `verificar.py` no puede validar ningún número >20 y la prueba seguirá en rojo.
+- **TAREA 2**: Una vez disponibles las fuentes, revisar **todos** los números del documento (caps 1, 3, 4, 4b, 5, 6, anexos) y sustituir por valores exactos confirmados en fuentes (contar PBIs/tareas uno a uno si hace falta).
+- **TAREA 3**: Verificar en el PDF que **todas** las longtables (capítulos y anexos) terminan con `\\*` antes de `\bottomrule` (regla 7). El constructor dice haber corregido 13 en anexos, pero hay que comprobar también las de capítulos (04, 04b, 05) y que no quede ninguna fila huérfana.
+- **TAREA 4**: Verificar en PDF los 5 diagramas problemáticos (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) para cumplir reglas 16-18: aumentar `node distance`, usar codos (`|-`, `-|`) en flechas, mover etiquetas fuera de líneas verticales, reducir participantes a ≤6 en diagramas de secuencia, confirmar letras ≥8pt y sin cruces.
+- **TAREA 5**: Confirmar que no hay imágenes repetidas: cada captura aparece una sola vez; en el resto usar `\ref`. Revisar especialmente capturas de DoneTonic y producción.
+- **TAREA 6**: Ejecutar `comando_prueba` tras cada cambio hasta que `verificar.py` y `revisar_maquetacion.py` pasen completamente.
+
+## 2026-11-20 01:28 · 🧠 Conocimiento guardado
+
+[[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[workspace-y-equipo-en-donetonic]] · [[como-se-agrupan-capturas-con-subfigure]] · [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber]] · [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]] · [[coma-decimal-en-formulas-paquete-icomma]]

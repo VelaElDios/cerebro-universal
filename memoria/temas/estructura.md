@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estructura» (este archiv
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[esiiab]] · [[archivos]] · [[sus]] · [[usabilidad]]
+[[latex]] · [[memoria]] · [[tfg]] · [[esiiab]] · [[memoria-procesos]] · [[archivos]] · [[sus]] · [[usabilidad]]

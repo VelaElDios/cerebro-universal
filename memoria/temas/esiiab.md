@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «esiiab» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[estructura]]
+[[latex]] · [[memoria]] · [[tfg]] · [[estructura]] · [[memoria-procesos]]
