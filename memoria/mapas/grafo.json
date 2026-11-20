@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T10:50:12+01:00",
+ "generado": "2026-11-20T11:54:58+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1870,6 +1870,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes.md"
+  },
+  {
+   "id": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "tipo": "dato",
+   "titulo": "Números clave del proyecto verificados en fuentes",
+   "temas": [
+    "memoria-tfg",
+    "metricas",
+    "sprints"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/numeros-clave-del-proyecto-verificados-en-fuentes.md"
   },
   {
    "id": "dato:prs-de-cierre-de-hito-y-sprint-en-repositorio",
@@ -5085,7 +5100,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -5687,7 +5702,7 @@
    "id": "tema:sprints",
    "tipo": "tema",
    "titulo": "sprints",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/sprints.md"
   },
   {
@@ -5864,6 +5879,13 @@
    "titulo": "verificación",
    "peso": 1,
    "ruta": "memoria/temas/verificación.md"
+  },
+  {
+   "id": "tema:memoria-tfg",
+   "tipo": "tema",
+   "titulo": "memoria-tfg",
+   "peso": 2,
+   "ruta": "memoria/temas/memoria-tfg.md"
   },
   {
    "id": "tema:gestion-proyectos",
@@ -6732,13 +6754,6 @@
    "titulo": "security",
    "peso": 1,
    "ruta": "memoria/temas/security.md"
-  },
-  {
-   "id": "tema:memoria-tfg",
-   "tipo": "tema",
-   "titulo": "memoria-tfg",
-   "peso": 1,
-   "ruta": "memoria/temas/memoria-tfg.md"
   },
   {
    "id": "tema:validacion-visual",
@@ -11658,6 +11673,26 @@
    "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
    "a": "dato:metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "tema:memoria-tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:prs-de-cierre-de-hito-y-sprint-en-repositorio",

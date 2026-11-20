@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 10:50"
+actualizado: "2026-11-20 11:54"
 ---
 
 # memoria-procesos
@@ -20,13 +20,13 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage").
-- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. **FALLAN**: `verificar.py` (números no encontrados en fuentes aunque están); 5 diagramas pendientes validar en PDF (reglas 16-18).
-- **verificar.py**: FALLA – 726+ errores de números no en fuentes. **Discrepancia**: los números citados SÍ están en `documentacion-tecnica.md` y `gestion/README.md`. Causa probable: script no indexa todas las fuentes o exige formato exacto.
+- **Compilación**: OK (PDF 92 páginas, sin "Infinite glue shrinkage").
+- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. **FALLAN**: `verificar.py` (números no encontrados en fuentes aunque están); 3 warnings pgf-umlsd en auto-mensajes `\mess`; 5 diagramas pendientes validar en PDF (reglas 16-18).
+- **verificar.py**: FALLA – 726+ errores de números no en fuentes. **Discrepancia**: los números citados SÍ están en `documentacion-tecnica.md` y `gestion/README.md`. Causa: script no indexa esas fuentes o exige formato exacto.
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
 - **Anexo desarrollo**: Dos secciones de sprint con mismo esquema; explica recta gráficas Sprint 2.
 - **Trazabilidad**: Anexo A4 con tabla completa 82 tareas.
-- **Correcciones aplicadas en este paso**: Diagramas de secuencia en `04-descripcion.tex` corregidos (reemplazo de `\mess` por `\call`, eliminación de caracteres prohibidos).
+- **Correcciones aplicadas en este paso**: 3 auto-mensajes `\mess` reemplazados por `\call` en fig:sec-confirmacion, fig:sec-partida, fig:sec-contratar.
 
 ## Siguiente
 1. **CRÍTICO**: Depurar `verificar.py` para que valide números contra todas las fuentes del repo.

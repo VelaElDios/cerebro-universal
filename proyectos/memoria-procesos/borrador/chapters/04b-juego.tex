@@ -315,8 +315,10 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
     \end{call}
   \end{call}
   \begin{sdblock}{loop}{cada fotograma (simulacion en Frontend)}
-    \mess{fe}{avanzar paso fijo}{fe}
-    \mess{fe}{estado fin}{fe}
+    \begin{call}{fe}{avanzar paso fijo}{fe}{}
+    \end{call}
+    \begin{call}{fe}{estado fin}{fe}{}
+    \end{call}
   \end{sdblock}
   \begin{call}{fe}{POST partidas/id/fin}{api}{200 o 400}
     \begin{call}{api}{finalizarPartida}{srv}{validacion}
@@ -357,16 +359,20 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
   \end{call}
   \begin{call}{srv}{SELECT datos y version}{bd}{v7}
   \end{call}
-  \mess{srv}{p1 gasta una ficha y sortea}{bd}
-  \mess{srv}{p2 gasta una ficha y sortea}{bd}
+  \begin{call}{srv}{p1 gasta una ficha y sortea}{bd}{}
+  \end{call}
+  \begin{call}{srv}{p2 gasta una ficha y sortea}{bd}{}
+  \end{call}
   \begin{call}{srv}{UPDATE donde version es 7 p1}{bd}{1 fila v8}
   \end{call}
   \begin{call}{srv}{UPDATE donde version es 7 p2}{bd}{0 filas}
   \end{call}
   \begin{call}{srv}{p2 reintenta con datos nuevos}{bd}{v8 sin fichas}
   \end{call}
-  \mess{srv}{409 no tienes fichas de contrato}{p2}
-  \mess{srv}{200 fichado y perfil}{p1}
+  \begin{call}{srv}{409 no tienes fichas de contrato}{p2}{}
+  \end{call}
+  \begin{call}{srv}{200 fichado y perfil}{p1}{}
+  \end{call}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Contratar con concurrencia optimista.}

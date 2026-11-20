@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria-tfg"
-notas: 1
+notas: 2
 ---
 # memoria-tfg
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-tfg» (este archi
 
 - 🧪 [[memoria/conocimiento/recetas/validacion-completa-de-numeros-en-memoria-tfg-con-verificar|Validación completa de números en memoria TFG con verificar.py]] · ⚠️ propuesto
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-verificados-en-fuentes|Números clave del proyecto verificados en fuentes]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[fuentes]] · [[numeros]] · [[test]] · [[verificacion]]
+[[metricas]] · [[sprints]] · [[fuentes]] · [[numeros]] · [[test]] · [[verificacion]]

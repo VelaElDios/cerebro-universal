@@ -195,17 +195,18 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=2.2cm, align=left, font=\small, text width=5.2cm},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=2.2cm, align=left, font=\small, text width=5.0cm},
     attr/.style={font=\small},
     pk/.style={font=\small\bfseries},
     uk/.style={font=\small\itshape},
-    arrow/.style={-{Stealth[length=2mm]}, thick, color=tema}
+    arrow/.style={-{Stealth[length=2mm]}, thick, color=tema},
+    node distance=2.5cm and 4.0cm
 ]
     % users (esquina superior izquierda)
     \node[entity] (users) {
         \textbf{users}\\
         \pk id UUID PK\\
-        \attr email TEXT \uk (único entre no eliminadas)\\
+        \attr email TEXT \uk (unico entre no eliminadas)\\
         \attr password\_hash TEXT (null con Google)\\
         \attr role TEXT \texttt{user | admin}\\
         \attr status TEXT \texttt{pending | active | deleted}\\
@@ -216,23 +217,23 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr apodo\_clave TEXT \uk\\
         \attr avatar TEXT
     };
-    % session (debajo de users, más separación vertical)
-    \node[entity, below=3.5cm of users] (session) {
+    % session (debajo de users)
+    \node[entity, below=of users] (session) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \attr sess JSON\\
         \attr expire TIMESTAMP
     };
-    % juego_perfiles (a la derecha de users, mucha más separación horizontal)
-    \node[entity, right=11.0cm of users] (perfiles) {
+    % juego_perfiles (a la derecha de users)
+    \node[entity, right=of users] (perfiles) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \attr datos JSONB\\
         \attr version INTEGER\\
         \attr updated\_at TIMESTAMPTZ
     };
-    % juego_records (debajo de juego_perfiles, más separación vertical)
-    \node[entity, below=3.5cm of perfiles] (records) {
+    % juego_records (debajo de juego_perfiles)
+    \node[entity, below=of perfiles] (records) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \attr alias TEXT\\
@@ -243,10 +244,11 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr bajas INTEGER\\
         \attr created\_at TIMESTAMPTZ
     };
-    % relaciones: users -> perfiles (horizontal con codo amplio, etiqueta arriba)
-    \draw[arrow] (users.east) -- ++(3.0,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
-    % users -> records (codo largo bajando y yendo a la izquierda, etiqueta a la izquierda)
-    \draw[arrow] (users.south) -- ++(0,-2.2) -| node[near start, left, font=\footnotesize] {tiene su mejor partida} (records.west);
+    % relaciones: users -> perfiles (horizontal con codo, etiqueta arriba)
+    \draw[arrow] (users.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
+    % users -> records (codo bajando y yendo a la izquierda, etiqueta a la izquierda)
+    \draw[arrow] (users.south) -- ++(0,-1.5) -| node[near start, left, font=\footnotesize] {tiene su mejor partida} (records.west);
+    % session no tiene relaciones directas en el diagrama (se omite para claridad)
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
@@ -404,7 +406,8 @@ Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la c
   \end{sdblock}
   \begin{call}{u}{carga la web}{w}{ok}
   \end{call}
-  \mess{w}{muestra aviso y lo quita de la URL}{w}
+  \begin{call}{w}{muestra aviso y lo quita de la URL}{w}{}
+  \end{call}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Confirmación con el enlace del correo.}
@@ -466,7 +469,7 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
 \begin{sequencediagram}
   \newthread{u}{Navegador}
   \newinst[3]{a}{API Google}
-  \newinst[3]{ss}{Sesión PostgreSQL}
+  \newinst[3]{ss}{Sesion PostgreSQL}
   \newinst[3]{g}{Google}
   \newinst[3]{s}{userService}
   \newinst[3]{r}{userRepository}
@@ -474,16 +477,19 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
   \end{call}
   \begin{call}{a}{guarda state}{ss}{ok}
   \end{call}
-  \mess{a}{redirige a Google con state}{u}
+  \begin{call}{a}{redirige a Google con state}{u}{}
+  \end{call}
   \begin{call}{u}{inicia sesion y acepta}{g}{ok}
   \end{call}
-  \mess{g}{302 callback con code y state}{u}
+  \begin{call}{g}{302 callback con code y state}{u}{}
+  \end{call}
   \begin{call}{u}{GET callback code state}{a}{ok}
   \end{call}
   \begin{call}{a}{compara state}{ss}{ok}
   \end{call}
   \begin{sdblock}{alt}{state falso o cancelado}
-    \mess{a}{303 aviso google error}{u}
+    \begin{call}{a}{303 aviso google error}{u}{}
+    \end{call}
   \end{sdblock}
   \begin{sdblock}{alt}{state correcto}
     \begin{call}{a}{POST token a Google}{g}{id perfil}
@@ -492,7 +498,8 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
     \end{call}
     \begin{call}{a}{regenera sesion}{ss}{ok}
     \end{call}
-    \mess{a}{303 ir a jugar}{u}
+    \begin{call}{a}{303 ir a jugar}{u}{}
+    \end{call}
   \end{sdblock}
 \end{sequencediagram}
 \end{adjustbox}
@@ -511,7 +518,7 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[3]{v}{Vista perfil}
-  \newinst[3]{d}{Diálogo confirmar}
+  \newinst[3]{d}{Dialogo confirmar}
   \newinst[3]{a}{API baja}
   \newinst[3]{s}{userService}
   \begin{call}{u}{eliminar mi cuenta}{v}{ok}
@@ -524,12 +531,15 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
   \end{call}
   \begin{call}{a}{deleteUser}{s}{ok}
   \end{call}
-  \begin{sdblock}{alt}{último administrador}
-    \mess{s}{403 debe quedar un admin}{a}
+  \begin{sdblock}{alt}{ultimo administrador}
+    \begin{call}{s}{403 debe quedar un admin}{a}{}
+    \end{call}
   \end{sdblock}
   \begin{sdblock}{alt}{baja logica}
-    \mess{s}{status deleted suelta mote y email}{a}
-    \mess{a}{204 aviso y vuelta al inicio}{v}
+    \begin{call}{s}{status deleted suelta mote y email}{a}{}
+    \end{call}
+    \begin{call}{a}{204 aviso y vuelta al inicio}{v}{}
+    \end{call}
   \end{sdblock}
 \end{sequencediagram}
 \end{adjustbox}
