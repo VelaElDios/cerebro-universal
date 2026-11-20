@@ -30,6 +30,6 @@ Si aun así se queda sola, se reduce el aire entre filas de esa tabla (`\addline
 ## Ampliación (2026-11-16, )
 En tablas `longtable`, para evitar que la última fila (p. ej. una fila de «Total») quede sola en la página siguiente, se debe usar `\\*` (doble barra asterisco) en las últimas 2-3 filas del cuerpo de la tabla. `\\*` prohíbe el salto de página después de esa fila, manteniendo juntas las últimas filas.
 
-Relacionado: [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable]]
+Relacionado: [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable]] · [[longtable-sin-fila-huerfana-al-final]] · [[como-anadir-en-longtables-para-evitar-filas-huerfanas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

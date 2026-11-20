@@ -22,6 +22,6 @@ Cuando las fuentes no están disponibles para verificar un número:
 > He reemplazado 19/32/29/50/48/82 por XX en chapters/01-introduccion.tex y chapters/03-propuesta.tex
 > — `experiencia del revisor en este proyecto` (cita sin comprobar)
 
-Relacionado: [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
+Relacionado: [[numeros-pequenos-tambien-se-verifican-en-fuentes]] · [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]] · [[numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

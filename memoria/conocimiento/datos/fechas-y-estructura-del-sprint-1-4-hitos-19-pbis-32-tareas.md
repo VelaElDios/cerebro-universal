@@ -24,7 +24,7 @@ Sprint 1: del 29/09/2026 al 27/10/2026.
 > **Sprint 1:** del 29/09/2026 al 27/10/2026. 19 PBIs (P1–P19) con 32 tareas (T1–T32), etiquetados por hito (*Hito 1* a *Hito 4*). Todos son **MUST** porque son requisitos obligatorios del enunciado.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]]
 
 ## Ampliación (2026-11-19, memoria-procesos)
 |

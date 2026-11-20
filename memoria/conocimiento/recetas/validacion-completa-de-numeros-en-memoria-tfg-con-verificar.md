@@ -17,4 +17,6 @@ Para que `verificar.py` pase, TODAS las fuentes listadas en el SPEC bajo "Fuente
 > Causa raíz confirmada: 4 fuentes críticas no proporcionadas (repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md, repo:saas/docs/revision-entrega.md, repo:saas/docs/hito4-configuracion.md). Sin ellas, verificar.py no puede validar ningún número >20.
 > — `memoria-procesos (este proyecto)` (cita sin comprobar)
 
+Relacionado: [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]] · [[fuentes-faltantes-bloquean-verificacion-automatica]] · [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

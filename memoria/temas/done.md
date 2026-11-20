@@ -13,7 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «done» (este archivo se g
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]]
+- 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]] · ⚠️ propuesto
 
 ## Temas relacionados
 

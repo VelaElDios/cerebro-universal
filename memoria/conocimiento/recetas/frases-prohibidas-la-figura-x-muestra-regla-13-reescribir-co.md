@@ -17,6 +17,6 @@ Sustituir «La Figura~\ref{fig:x} muestra el flujo.» por «El recorrido del flu
 > Prosa de TFG, no listas de capturas: nada de una frase suelta "La figura X muestra…" por cada imagen. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así.
 > — `memoria/reglas-tfg.md (regla 13)`
 
-Relacionado: [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]] · [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]]
+Relacionado: [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]] · [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-vs-lista-de-capturas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

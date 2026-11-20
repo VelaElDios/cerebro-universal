@@ -99,4 +99,6 @@ Ejemplo mínimo correcto:
 \end{sequencediagram}
 ```
 
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[diagramas-de-secuencia-con-pgf-umlsd]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

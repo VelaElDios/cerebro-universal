@@ -17,4 +17,6 @@ Para diagramas ER en TikZ: (1) Usar `node distance` suficiente (vertical ≥2.5c
 > La línea que une 'users' con 'juego_records' tiene la etiqueta 'tiene su mejor partida' atravesando la propia línea y chocando/cruzar con la caja de 'juego_records'.
 > — `chapters/04-descripcion.tex (fig:modelo-datos)` (cita sin comprobar)
 
+Relacionado: [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

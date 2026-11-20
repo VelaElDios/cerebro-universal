@@ -5,7 +5,7 @@ temas: ["grada-colchonera", "latex", "saas", "tfg"]
 claves: ["capítulos memoria", "mapeo secciones", "diagrama mermaid", "capturas", "graphicspath"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -29,6 +29,8 @@ Guía directa para volcar el contenido de esta documentación técnica en la mem
 | Anexo B. Trazabilidad | `anexos/B-trazabilidad.tex` | 3 y 4.4 |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]]
+Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]] · [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]]: La Nota B afirma que la memoria TFG debe tener **exactamente 8 capítulos** con nombres y orden fijos (1.Introducción…, 2.Antecedentes, 3.Propuesta…, 4.Descripción…, 5.Evaluación, 6.Conclusiones…, 7.Bibliografía, 8.Anexos). La Nota A presenta una estructura distinta: 7 capítulos numerados más Resumen y dos anexos, con títulos como «Gestión del proyecto», «Arquitectura», «Implementación», «CI/CD», etc., que no coinciden con los 8 capítulos obligatorios de la Nota B.

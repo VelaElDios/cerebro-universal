@@ -38,3 +38,5 @@ Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 > ⚠️ Posible contradicción con [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]: La nota A afirma que en el Sprint 2 hubo «un PR por fase de juego (#36, #44–#54)», implicando que cada uno de esos 11 PRs (#44 a #54) corresponde a una fase. La nota B lista los mismos PRs pero muestra que solo #36, #49, #50, #52, #53 y #54 están etiquetados como «Fase 1» a «Fase 6»; #44–#48 y #51 son mejoras/arreglos sueltos, no fases.
 
 > ⚠️ Posible contradicción con [[fechas-pbis-y-tareas-de-los-dos-sprints]]: La Nota A (lista de PRs y enlace `estructura-sprint-2-6-fases...`) describe **6 fases** (Fase 1 a Fase 6). La Nota B (ampliación 2026-11-19) afirma textualmente que el Sprint 2 tuvo **7 fases**.
+
+> ⚠️ Posible contradicción con [[estado-de-completitud-de-sprints-y-trazabilidad]]: Nota A describe 6 fases (Fase 1 a Fase 6) para el Sprint 2; la ampliación de la Nota B afirma que el Sprint 2 tuvo 7 fases.

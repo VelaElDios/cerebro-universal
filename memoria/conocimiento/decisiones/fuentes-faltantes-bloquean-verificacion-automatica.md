@@ -20,4 +20,6 @@ problema: El script `verificar.py` comprueba que todo número >20 del texto apar
 solucion: Crear estos 4 archivos en `docs/` usando como base los archivos existentes (`requisitos.md`, `sprint-1.md`, `sprint-2.md`, `procesos.md`, `decisiones.md`, `arquitectura.md`, `juego.md`, `log.md`) que ya contienen la información. Una vez creados, `verificar.py` podrá validar las cifras.
 > — `experiencia del revisor en este proyecto` (cita sin comprobar)
 
+Relacionado: [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]] · [[validacion-completa-de-numeros-en-memoria-tfg-con-verificar]] · [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

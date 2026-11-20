@@ -13,7 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estilo» (este archivo se
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas|Prosa de TFG vs lista de capturas]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas|Prosa de TFG vs lista de capturas]]
 
 ## Temas relacionados
 

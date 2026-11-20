@@ -5,9 +5,9 @@ temas: ["capturas", "latex", "redaccion", "subfigure", "tfg"]
 claves: ["La figura X muestra", "subfigure", "adjustbox", "prosa continua"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-19"
-actualizado: "2026-11-19"
+actualizado: "2026-11-20"
 ---
 
 Temas: [[capturas]] · [[latex]] · [[redaccion]] · [[subfigure]]
@@ -49,9 +49,9 @@ Temas: [[capturas]] · [[latex]] · [[redaccion]] · [[subfigure]]
   ```
 
 > Prosa de TFG, no listas de capturas: nada de una frase suelta «La figura X muestra…» por cada imagen. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así. Las que van juntas se agrupan con subfigure.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> — `memoria/reglas-tfg.md`
 
-Relacionado: [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]]
+Relacionado: [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[agrupar-capturas-con-subfigure]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]]
 
 ## Ampliación (2026-11-19, memoria-procesos)
 |

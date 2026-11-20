@@ -5,7 +5,7 @@ temas: ["game-design", "grada-colchonera", "project-management", "saas", "sprint
 claves: ["DoneTonic", "Sprint 2", "Fase 1-7", "Rediseño", "survivor base", "club servidor", "ultras combinaciones", "mundo procedural", "rarezas historia", "logros música", "chibi 32x32 mapa detallado"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -32,3 +32,5 @@ Cada fase corresponde a una etiqueta en DoneTonic (ver sección 4.4 del document
 Relacionado: [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[fases-del-sprint-2-y-prs-asociados]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba]]: La Nota A describe 7 fases de **desarrollo nuevo** en el Sprint 2 (Rediseño + Fases 1-7) añadiendo características y resolviendo problemas. La Nota B afirma que el Sprint 2 **no desarrolla lógica nueva**, sino que documenta 6 fases preexistentes (Base, Club, Ultras, Mundo, Rarezas, Logros y sonido) como backlog formal. Además, el número de fases difiere (7 vs 6).

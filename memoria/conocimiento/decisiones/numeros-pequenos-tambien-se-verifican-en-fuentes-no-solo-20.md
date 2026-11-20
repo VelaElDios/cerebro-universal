@@ -42,4 +42,8 @@ Temas: [[fuentes]] · [[numeros]] · [[verificacion]]
 ## Ampliación (2026-11-19, memoria-procesos)
 El script `verificar.py` solo valida automáticamente números > 20. Los números ≤ 20 (ej. 19 PBIs, 16 PBIs en burndown, 5 migraciones, 6 ultras, 10 equipaciones) **debe verificarlos el revisor manualmente** contra las fuentes. Si un número pequeño no está en las fuentes, es error igual que los grandes. Ejemplo: «16 PBIs iniciales» → confirmar en gestion.md tabla «Evolución del sprint», fila «Inicio del Sprint 1» = 15, no 16. El burndown de la entrega cuenta 16 (P1–P14, P18, P19), no 19.
 
+Relacionado: [[cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes]]: Nota A afirma que el test automático solo comprueba números > 20 y los pequeños los revisa el revisor. Nota B (primer párrafo) afirma lo contrario: que `verificar.py` comprueba TODOS los números, no solo los > 20. (La ampliación posterior de la propia Nota B rectifica y coincide con Nota A).

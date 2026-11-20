@@ -47,7 +47,7 @@ Este trozo detalla la estrategia de prueba
 - [[estrategia-de-pruebas-niveles-y-enfoque-error-first]]
 - [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]]
 - [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
-- [[fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29]]
+- [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]]
 - [[flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf]]
 - [[flujo-de-registro-con-email-y-contrasena]]
 - [[formato-de-logs-json-y-eventos-registrados]]

@@ -17,6 +17,6 @@ En lugar de frases sueltas que solo citan la figura («La figura X muestra…»)
 > La Figura~\ref{fig:juego-menu-vestuario} muestra el menú principal (subfigura~\ref{fig:juego-menu}) y el vestuario (subfigura~\ref{fig:juego-vestuario}). En el menú principal, el jugador ve su avatar paseando, su ficha con mote, avatar y mejores tiempos, y el menú lateral con las opciones de juego.
 > — `chapters/04b-juego.tex` (cita sin comprobar)
 
-Relacionado: [[frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co]] · [[agrupar-capturas-con-subfigure]] · [[como-se-agrupan-capturas-con-subfigure]]
+Relacionado: [[frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co]] · [[agrupar-capturas-con-subfigure]] · [[como-se-agrupan-capturas-con-subfigure]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

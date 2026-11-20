@@ -17,6 +17,6 @@ Un diagrama TikZ con nodos anchos y offsets horizontales supera \textwidth causa
 > node/.style={text width=3.5cm, ...}, right=8.5cm of ui
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
-Relacionado: [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]]
+Relacionado: [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma]] · [[como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

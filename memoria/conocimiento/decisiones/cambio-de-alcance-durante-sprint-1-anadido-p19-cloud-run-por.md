@@ -5,7 +5,7 @@ temas: ["alcance", "decision", "grada-colchonera", "saas", "sprint"]
 claves: ["P19", "Cloud Run", "Google Cloud", "créditos educación", "Render", "alternativo", "T29", "T30", "PR #27", "#28"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -26,3 +26,5 @@ Esto se refleja en:
 Relacionado: [[cambio-de-alcance-de-red-social-a-juego-survivor-justificaci]] · [[cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]: La Nota A sitúa el despliegue en Cloud Run en el **Cierre del sprint (24/10/2026)**, mientras que la Nota B dice que la "primera entrega 12/10/2026 (Hitos 1-3, P18, P19)" ya incluía P19 (Cloud Run) y que en la tabla del Sprint 1 P19 está en el **Hito 4 (hasta 23/10/2026)**. Tres hitos/fechas distintas para el mismo PBI.

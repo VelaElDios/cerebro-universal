@@ -23,4 +23,4 @@ Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]]: La nota A afirma que las seis tareas del Hito 4 se marcaron hechas en DoneTonic **al cerrar el Sprint 1**. La nota B indica una **Primera entrega el 12/10/2026** (con Hitos 1–3 + P18 + P19, estos dos del Hito 4) y que el **Hito 4 se completó el 23/10/2026**, lo que sugiere que el cierre del Sprint 1 (o su entrega principal) ocurrió el 12/10, once días antes de terminar el Hito 4.
 
-> ⚠️ Posible contradicción con [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]]: La nota A dice que el Hito 4 tiene **6 tareas (T21–T26)** y que esas seis se marcaron hechas al cerrar el Sprint 1. La nota B dice que el Hito 4 abarca **12 tareas (T21–T32)** dentro del Sprint 1 (que cierra el 27/10/2026).
+> ⚠️ Posible contradicción con [[fechas-pbis-y-tareas-de-los-dos-sprints]]: La nota A dice que el Hito 4 tiene **6 tareas (T21–T26)** y que esas seis se marcaron hechas al cerrar el Sprint 1. La nota B dice que el Hito 4 abarca **12 tareas (T21–T32)** dentro del Sprint 1 (que cierra el 27/10/2026).

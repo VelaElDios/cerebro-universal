@@ -5,17 +5,17 @@ temas: ["figuras", "latex", "maquetacion", "adjustbox", "capturas"]
 claves: ["adjustbox", "max totalheight", "0.42\\textheight", "regla 8"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-19"
-actualizado: "2026-11-19"
+actualizado: "2026-11-20"
 ---
 
 Temas: [[figuras]] · [[latex]] · [[maquetacion]]
 
 Para capturas altas (gráficas de DoneTonic, capturas de CI/CD), envolver en `adjustbox{max totalheight=0.42\textheight,width=...}` en lugar de solo `height=0.42\textheight,keepaspectratio`. Esto permite que la figura comparta página con texto. Para diagramas TikZ/pgfplots grandes, usar `\begin{adjustbox}{max width=\linewidth,max totalheight=0.6\textheight}...\end{adjustbox}`. Relajar parámetros de flotantes: `\renewcommand{\topfraction}{0.85}`, `\renewcommand{\textfraction}{0.12}`, `\setcounter{totalnumber}{4}`.
 
-> capturas como mucho a `height=0.42\textheight`; diagramas grandes con `max totalheight`; figuras `[htbp]` con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> - capturas como mucho a `height=0.42\textheight`; - diagramas grandes con `max totalheight`; - figuras `[htbp]` con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
+> — `memoria/reglas-tfg.md`
 
 ## Ampliación (2026-11-19, memoria-procesos)
 |
@@ -70,5 +70,7 @@ Para capturas altas (gráficas DoneTonic, GitHub Actions) que ocupan casi una p�
 \end{figure}
 ```
 Si aun así queda sola, reducir a `0.35\textheight` o agrupar con otra captura relacionada en `subfigure`. Los parámetros de flotantes en `include/extra.tex` ya están relajados (`\topfraction=0.85`, `\bottomfraction=0.6`, `\textfraction=0.12`, `\floatpagefraction=0.8`, `topnumber=3`, `totalnumber=4`).
+
+Relacionado: [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

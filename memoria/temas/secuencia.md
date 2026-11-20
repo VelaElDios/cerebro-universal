@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «secuencia» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[tikz]] · [[auth]] · [[grada-colchonera]] · [[saas]]
+[[latex]] · [[pgf-umlsd]] · [[tikz]] · [[auth]] · [[grada-colchonera]] · [[saas]] · [[diagramas]] · [[diagramas-secuencia]]

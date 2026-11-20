@@ -17,4 +17,8 @@ Antes de escribir cualquier cifra (también las pequeñas, y las que salen de su
 > El test comprueba que todo número mayor que 20 del texto aparece en las fuentes; los pequeños los comprueba el revisor.
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
+Relacionado: [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]] · [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]]: Nota A afirma que el test automático solo comprueba números > 20 y los pequeños los revisa el revisor. Nota B (primer párrafo) afirma lo contrario: que `verificar.py` comprueba TODOS los números, no solo los > 20. (La ampliación posterior de la propia Nota B rectifica y coincide con Nota A).

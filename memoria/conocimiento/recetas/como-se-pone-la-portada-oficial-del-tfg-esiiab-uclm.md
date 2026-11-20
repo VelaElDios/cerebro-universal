@@ -24,6 +24,6 @@ La plantilla trae dos portadas y solo vale una: la de `elements/portada.tex` (es
 ## Ampliación (2026-11-16, )
 La portada es única y obligatoria: se usa exclusivamente `elements/portada.tex` que incluye escudo, universidad, escuela, tipo de trabajo, título, autor y fecha, todo centrado. En `Memoria.tex` se hace `\input{elements/portada}`. No se añade ninguna otra portada, incluida la «segunda portada» con logos UCLM/ESII de `elements/preambulo.tex`. Esta regla es inquebrantable y la comprueba el script de maquetación.
 
-Relacionado: [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]]
+Relacionado: [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

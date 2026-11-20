@@ -5,7 +5,7 @@ temas: ["donetonic", "git", "github-flow", "grada-colchonera"]
 claves: ["hito-N/integracion", "hito-N/Tx-descripcion", "Tx", "Px", "DoneTonic"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/CONTRIBUTING.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -25,3 +25,5 @@ Temas: [[donetonic]] · [[git]] · [[github-flow]] · [[grada-colchonera]]
 Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[github-flow-como-modelo-de-ramificacion-del-proyecto]] · [[github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio]] · [[convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto]] · [[reglas-de-integracion-mediante-pull-requests-con-ci-obligato]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]]: La nota A establece como regla general que **toda tarea** se ramifica desde `hito-N/integracion` y se fusiona en esa misma rama de integración del hito, la cual solo se une a `main` al cerrar el hito. La nota B describe que en el **Sprint 2** (que corresponde a un hito) no se usa esa rama de integración: se abren PRs por fase de juego que se fusionan **directamente en `main`** (#36, #44–#54), saltándose `hito-N/integracion`.

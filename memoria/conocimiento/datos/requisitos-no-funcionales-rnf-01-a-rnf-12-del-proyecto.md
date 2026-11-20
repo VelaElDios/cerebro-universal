@@ -29,6 +29,6 @@ Lista completa de 12 requisitos no funcionales con su implementación técnica:
 > | Id | Requisito | Cómo se cumple | |---|---|---| | RNF-01 | **Seguridad** de credenciales y sesiones | Hash bcrypt, cookie `httpOnly` + `secure` + `sameSite`, regeneración de la sesión, permisos en el servidor, consultas parametrizadas (sección 8) |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[metadatos-del-proyecto-la-grada-colchonera]] · [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage]]
+Relacionado: [[metadatos-del-proyecto-la-grada-colchonera]] · [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage]] · [[decisiones-de-diseno-del-backend-con-alternativas-y-justific]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

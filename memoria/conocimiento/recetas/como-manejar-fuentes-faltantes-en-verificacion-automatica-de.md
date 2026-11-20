@@ -23,4 +23,6 @@ Cuando `verificar.py` falla porque faltan fuentes principales:
 > Regla de oro: cada dato (cifras, fechas, nombres, versiones, URLs, números de PR, nombres de módulos) sale de las fuentes, copiado tal cual. Si algo no está en las fuentes, no se escribe.
 > — `memoria/reglas-tfg.md y experiencia del proyecto` (cita sin comprobar)
 
+Relacionado: [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]] · [[numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes]] · [[fuentes-faltantes-bloquean-verificacion-automatica]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

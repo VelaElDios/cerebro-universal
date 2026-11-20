@@ -5,7 +5,7 @@ temas: ["decision", "donetonic", "grada-colchonera", "saas", "scrum", "sprint"]
 claves: ["Sprint 2", "lógica del juego", "6 fases", "backlog", "profesor", "ya estaba hecho"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -20,3 +20,5 @@ Decisión del profesor: Sprint 2 (23/10–29/10/2026) no desarrolla nueva lógic
 Relacionado: [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]]: La Nota A describe 7 fases de **desarrollo nuevo** en el Sprint 2 (Rediseño + Fases 1-7) añadiendo características y resolviendo problemas. La Nota B afirma que el Sprint 2 **no desarrolla lógica nueva**, sino que documenta 6 fases preexistentes (Base, Club, Ultras, Mundo, Rarezas, Logros y sonido) como backlog formal. Además, el número de fases difiere (7 vs 6).

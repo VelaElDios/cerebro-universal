@@ -29,6 +29,6 @@ Prioridad sugerida: auth hardening → PWA → E2E → multijugador → rankings
 - Aplicación instalable (PWA) para jugar desde el móvil como una app.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[manual-de-usuario-entrada-menus-controles-oleadas-ambientes]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[manual-de-usuario-entrada-menus-controles-oleadas-ambientes]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[maquina-de-estados-de-la-cuenta-de-usuario]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

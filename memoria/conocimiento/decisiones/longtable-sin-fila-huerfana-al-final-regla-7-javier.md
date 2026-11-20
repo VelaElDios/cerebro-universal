@@ -5,9 +5,9 @@ temas: ["latex", "longtable", "maquetacion", "tablas"]
 claves: ["\\\\*", "\\bottomrule", "fila huérfana", "longtable"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-19"
-actualizado: "2026-11-19"
+actualizado: "2026-11-20"
 ---
 
 Temas: [[latex]] · [[longtable]] · [[maquetacion]]
@@ -33,7 +33,7 @@ Temas: [[latex]] · [[longtable]] · [[maquetacion]]
   Aplicar en: chapters/04-descripcion.tex (tablas RF, RJ, RNF, módulos, API), chapters/04b-juego.tex (sistemas, logros, fases), chapters/05-evaluacion.tex (pruebas, workflows, métricas), chapters/a1-desarrollo.tex (backlogs, trazabilidad, problemas, evolución), chapters/a4-trazabilidad.tex (tabla completa).
 
 > Las tablas largas van en longtable y su última fila (por ejemplo, el Total) no se queda sola en otra página: usa \\* en las últimas filas.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> — `memoria/reglas-tfg.md`
 
 ## Ampliación (2026-11-19, memoria-procesos)
 |
@@ -67,5 +67,7 @@ Fila 3 & Dato & Dato \\*
 \end{longtable}
 ```
 Aplicar a TODAS las longtables de la memoria (capítulos 4, 4b, 5, anexos A1, A4).
+
+Relacionado: [[longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja]] · [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]] · [[como-anadir-en-longtables-para-evitar-filas-huerfanas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

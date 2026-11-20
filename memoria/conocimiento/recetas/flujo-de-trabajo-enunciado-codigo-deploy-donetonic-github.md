@@ -5,7 +5,7 @@ temas: ["donetonic", "grada-colchonera", "saas", "scrum", "github", "memoria-pro
 claves: ["flujo trabajo", "PBI", "tarea", "rama", "PR", "CI", "deploy", "Cloud Run"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -30,3 +30,5 @@ Relacionado: [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] ·
 Proceso estandarizado en 5 pasos: 1) **Enunciado → Backlog**: Cada requisito → PBI con historia de usuario ("Como… quiero… para…") + criterios de aceptación. Sprint 1: requisitos del enunciado. Sprint 2: lógica del juego agrupada por fases. 2) **PBI → Tareas**: Cada PBI se divide en 1–3 tareas (mínimo necesario). 3) **Tarea → Código**: Sprint 1: una rama por tarea `hito-N/Tx-descripcion` → PR titulado `[Tx] ...` → integra en rama del hito. Sprint 2: un PR por fase de juego (#36, #44–#54) → integra en `main`. Cada tarea en DoneTonic referencia su PR con `PR: #nn` en la descripción. 4) **Integración → Deploy**: Todos los PRs requieren CI verde. Al fusionar en `main`, deploy automático en Google Cloud Run (URL: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app). 5) **Seguimiento automático**: Merge de PR → tarea a HECHO en DoneTonic. Todas las tareas de un PBI hechas → PBI a HECHO automático. Gráficas se actualizan solas.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]]: La nota A establece como regla general que **toda tarea** se ramifica desde `hito-N/integracion` y se fusiona en esa misma rama de integración del hito, la cual solo se une a `main` al cerrar el hito. La nota B describe que en el **Sprint 2** (que corresponde a un hito) no se usa esa rama de integración: se abren PRs por fase de juego que se fusionan **directamente en `main`** (#36, #44–#54), saltándose `hito-N/integracion`.

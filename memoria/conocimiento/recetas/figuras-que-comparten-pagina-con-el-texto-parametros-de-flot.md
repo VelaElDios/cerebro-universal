@@ -35,6 +35,6 @@ Para evitar páginas con una sola imagen:
 - Especificador de flotante `[htbp]` (here, top, bottom, page) en todas las figuras.
 - Relajar parámetros internos de LaTeX para flotantes (p. ej. `\setcounter{topnumber}{3}`, `\setcounter{bottomnumber}{3}`, `\setcounter{totalnumber}{4}`, `\renewcommand{\topfraction}{0.9}`, `\renewcommand{\bottomfraction}{0.9}`, `\renewcommand{\textfraction}{0.1}`, `\renewcommand{\floatpagefraction}{0.8}`) para que LaTeX permita varias figuras y texto en la misma página.
 
-Relacionado: [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]]
+Relacionado: [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

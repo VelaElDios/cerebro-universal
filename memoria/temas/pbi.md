@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pbi"
-notas: 5
+notas: 4
 ---
 # pbi
 
@@ -13,11 +13,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pbi» (este archivo se ge
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas|Fechas y estructura de los dos sprints con PBIs y tareas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas|Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)]]
-- 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs y tareas de los dos sprints]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas|Trazabilidad completa requisito → PBI → tarea → PR (82 tareas)]]
 
 ## Temas relacionados
 
-[[tareas]] · [[scrum]] · [[donetonic]] · [[tarea]] · [[sprint]] · [[fechas]] · [[trazabilidad]] · [[pull-request]] · [[grada-colchonera]] · [[hitos]] · [[gestión]] · [[github flow]]
+[[scrum]] · [[tarea]] · [[tareas]] · [[trazabilidad]] · [[donetonic]] · [[pull-request]] · [[fechas]] · [[grada-colchonera]] · [[hitos]] · [[sprint]] · [[gestión]] · [[github flow]]

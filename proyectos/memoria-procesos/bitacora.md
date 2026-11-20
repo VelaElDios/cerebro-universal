@@ -9085,7 +9085,7 @@ Qué he corregido yo: nada en este paso; los cambios del constructor son correct
 
 ## 2026-11-16 19:43 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]]
 
 ## 2026-11-16 20:40 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -9157,7 +9157,7 @@ Tareas para el constructor en el siguiente paso:
 
 ## 2026-11-16 20:45 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[evitar-paginas-casi-vacias-regla-9]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]]
 
 ## 2026-11-16 21:07 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -10447,7 +10447,7 @@ El constructor debe corregir la maquetación global y luego los diagramas señal
 
 ## 2026-11-19 00:51 · 🧠 Conocimiento guardado
 
-[[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]
 
 ## 2026-11-19 01:41 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -10532,7 +10532,7 @@ He corregido yo directamente `elements/preambulo.tex` para mover `\raggedbottom`
 
 ## 2026-11-19 01:43 · 🧠 Conocimiento guardado
 
-[[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
 
 ## 2026-11-19 02:54 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -10622,7 +10622,7 @@ El constructor intentó arreglar "Infinite glue shrinkage" parcheando `\mainmatt
 
 ## 2026-11-19 02:57 · 🧠 Conocimiento guardado
 
-[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-de-los-dos-sprints-con-pbis-y-tareas]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
 
 ## 2026-11-19 04:34 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -10671,7 +10671,7 @@ La compilación sigue fallando por "Infinite glue shrinkage" a pesar de reducir 
 
 ## 2026-11-19 04:37 · 🧠 Conocimiento guardado
 
-[[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]]
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]]
 
 ## 2026-11-19 05:29 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -10840,7 +10840,7 @@ La compilación falla por "Infinite glue shrinkage" causado por: (1) `\flushbott
 
 ## 2026-11-19 11:04 · 🧠 Conocimiento guardado
 
-[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50]]
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]]
 
 ## 2026-11-19 12:08 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -10964,7 +10964,7 @@ El constructor intentó corregir los 5 diagramas de secuencia en chapters/04-des
 
 ## 2026-11-19 17:04 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[longtable-sin-fila-huerfana-al-final]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[longtable-sin-fila-huerfana-al-final]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
 
 ## 2026-11-19 18:02 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -11053,7 +11053,7 @@ He corregido yo directamente el error de compilación del último intento (resta
 
 ## 2026-11-19 19:15 · 🧠 Conocimiento guardado
 
-[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
 
 ## 2026-11-19 20:57 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
 
@@ -11127,7 +11127,7 @@ El constructor debe abordar los puntos 1-7 en los próximos pasos, siguiendo el 
 
 ## 2026-11-19 20:59 · 🧠 Conocimiento guardado
 
-[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
 
 ## 2026-11-19 21:49 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -11203,7 +11203,7 @@ Correcciones del revisor en este paso:
 
 ## 2026-11-19 21:52 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]]
 
 ## 2026-11-19 22:37 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 

@@ -36,4 +36,6 @@ Cifras oficiales del proyecto para usar en la memoria sin redondear ni inventar.
 ## Ampliación (2026-11-20, memoria-procesos)
 Todos los números clave del proyecto contrastados con las fuentes oficiales del repositorio. Sprint 1: 29/09–27/10/2026, 19 PBIs, 32 tareas, 4 hitos. Sprint 2: 23/10–29/10/2026, 29 PBIs, 50 tareas, 7 fases. Burndown Sprint 1 cuenta 16 PBIs (P1–P14, P18, P19) porque P15–P17 (Hito 4) se completaron después. Pruebas: 140 Sprint 1 + 136 juego hasta Fase 6 = 276; +46 Fase 7 = 322. Migraciones: 001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras baja.
 
+Relacionado: [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

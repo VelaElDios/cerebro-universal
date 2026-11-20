@@ -87,4 +87,6 @@ Temas: [[ci-cd]] · [[cloud-run]] · [[docker]] · [[github-actions]] · [[grada
 
 Fusionada con: Pipeline CI/CD: GitHub Actions, Docker, Cloud Run y Render
 
+Relacionado: [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

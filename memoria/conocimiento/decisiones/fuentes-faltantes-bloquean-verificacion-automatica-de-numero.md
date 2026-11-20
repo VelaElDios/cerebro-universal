@@ -17,4 +17,6 @@ El script verificar.py comprueba que todo número mayor que 20 en el texto apare
 > VERIFICACIÓN FALLIDA: 16 problema(s) - el número «32» no aparece en las fuentes (¿inventado o mal copiado?)
 > — `spec del proyecto y resultado de prueba` (cita sin comprobar)
 
+Relacionado: [[fuentes-faltantes-bloquean-verificacion-automatica]] · [[validacion-completa-de-numeros-en-memoria-tfg-con-verificar]] · [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

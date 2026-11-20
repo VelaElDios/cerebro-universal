@@ -17,4 +17,6 @@ La descripción completa del pipeline CI/CD (jobs, triggers, despliegue) va solo
 > El pipeline completo (pruebas con PostgreSQL 17, imagen Docker y despliegue en Cloud Run) se describe una sola vez, en el Capítulo~\ref{cap:evaluacion}, Figura~\ref{fig:pipeline}.
 > — `chapters/03-propuesta.tex`
 
+Relacionado: [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[pipeline-ci-cd-github-actions-cloud-run-con-workload-identit]] · [[pipeline-ci-cd-github-actions-con-postgresql-17-real-docker]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -5,7 +5,7 @@ temas: ["latex", "memoria", "tfg", "esiiab", "estructura", "memoria-procesos"]
 claves: ["capítulos", "estructura", "introduccion", "antecedentes", "propuesta", "descripcion", "evaluacion", "conclusiones", "bibliografia", "anexos"]
 proyectos: ["memoria-procesos"]
 fuentes: ["../memoria-procesos/fuentes/estructura-memoria.md", "fuentes/estructura-memoria.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-20"
 ---
@@ -20,3 +20,5 @@ La memoria TFG debe tener exactamente 8 capítulos en este orden: 1) Introducci�
 Relacionado: [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]] · [[fuente-reglas-tfg]] · [[capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf]] · [[capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]]: La Nota B afirma que la memoria TFG debe tener **exactamente 8 capítulos** con nombres y orden fijos (1.Introducción…, 2.Antecedentes, 3.Propuesta…, 4.Descripción…, 5.Evaluación, 6.Conclusiones…, 7.Bibliografía, 8.Anexos). La Nota A presenta una estructura distinta: 7 capítulos numerados más Resumen y dos anexos, con títulos como «Gestión del proyecto», «Arquitectura», «Implementación», «CI/CD», etc., que no coinciden con los 8 capítulos obligatorios de la Nota B.

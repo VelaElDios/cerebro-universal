@@ -17,4 +17,6 @@ Antes de escribir CUALQUIER cifra (también las pequeñas, y las que salen de su
 > El test solo comprueba los números mayores que 20, pero los pequeños también fallan: en la memoria de procesos se escribió «16 PBIs iniciales, 17 con P19» cuando las fuentes dicen 15 y 16, y el revisor lo dio por bueno.
 > — `LECCIONES DE LA MEMORIA` (cita sin comprobar)
 
+Relacionado: [[cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

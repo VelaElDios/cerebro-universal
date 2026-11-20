@@ -17,6 +17,6 @@ Cuando una `longtable` ocupa varias páginas, el texto que se coloca inmediatame
 > La Tabla~\ref{tab:trazabilidad-completa} cubre los 48 PBIs (P1--P48) y las 82 tareas (T1--T82) de los dos sprints. Los cierres de hito del Sprint 1 fueron los PR \#9 (Hito 1), \#17 (Hito 2), \#24 (Hito 3), \#29 (cierre del sprint) y \#32 (revisión final y memoria); las releases publicadas son \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3}, \texttt{hito-4} y \texttt{sprint-1} (Anexo~\ref{anx:material}).
 > — `chapters/a4-trazabilidad.tex` (cita sin comprobar)
 
-Relacionado: [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu]]
+Relacionado: [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[longtable-sin-fila-huerfana-al-final]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

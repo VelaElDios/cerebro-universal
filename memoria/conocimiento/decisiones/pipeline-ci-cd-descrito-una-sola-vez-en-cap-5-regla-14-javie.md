@@ -25,7 +25,7 @@ Temas: [[cicd]] · [[coherencia]] · [[latex]] · [[pipeline]]
 > Coherencia: el mismo dato se cuenta igual en todos los capítulos, y sin repetir párrafos enteros entre capítulos (por ejemplo, la descripción del pipeline: se explica una vez y en el resto se remite a ella).
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
-Relacionado: [[prosa-de-tfg-vs-lista-de-capturas]]
+Relacionado: [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[pipeline-ci-cd-github-actions-con-postgresql-17-real-docker]]
 
 ## Ampliación (2026-11-19, memoria-procesos)
 |

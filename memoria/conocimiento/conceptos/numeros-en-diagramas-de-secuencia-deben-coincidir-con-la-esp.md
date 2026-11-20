@@ -17,6 +17,6 @@ Al escribir diagramas de secuencia, copiar los códigos de estado exactos de la 
 > En el diagrama de secuencia fig:sec-partida se usó el código de estado 422 para «resultado imposible», pero la documentación técnica (§7.10) especifica 400. El test de verificación detecta números no presentes en las fuentes.
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra]] · [[diagramas-de-secuencia-con-pgf-umlsd]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-de-secuencia-con-pgf-umlsd]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
