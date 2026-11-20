@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pruebas"
-notas: 2
+notas: 3
 ---
 # pruebas
 
@@ -14,7 +14,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pruebas» (este archivo s
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-verificadas-en-fuentes|Cifras clave del proyecto verificadas en fuentes]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-verificados-en-fuentes|Números clave del proyecto verificados en fuentes]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[metricas]] · [[pbis]] · [[sprints]] · [[tareas]] · [[fechas]] · [[datos]] · [[memoria-procesos]] · [[verificacion]]
+[[metricas]] · [[pbis]] · [[sprints]] · [[tareas]] · [[grada-colchonera]] · [[saas]] · [[fechas]] · [[datos]] · [[memoria-procesos]] · [[verificacion]] · [[memoria-tfg]]

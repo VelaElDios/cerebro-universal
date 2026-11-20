@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 
 ## Temas relacionados
 
-[[metricas]] · [[memoria-procesos]] · [[grada-colchonera]] · [[saas]] · [[trazabilidad]] · [[latex]] · [[memoria]] · [[tfg]] · [[pbis]] · [[tareas]] · [[fechas]] · [[pruebas]]
+[[metricas]] · [[pbis]] · [[tareas]] · [[pruebas]] · [[memoria-procesos]] · [[grada-colchonera]] · [[saas]] · [[trazabilidad]] · [[latex]] · [[memoria]] · [[tfg]] · [[fechas]]

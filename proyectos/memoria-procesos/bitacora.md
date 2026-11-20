@@ -11985,3 +11985,43 @@ Qué hay que hacer:
 - No volver a crear copias de las fuentes dentro de `borrador/`: la carpeta `borrador/docs/` sobra y se ha borrado. Las fuentes son solo las de proyecto.json.
 - Actualizar las rutas de documentos que cita la memoria a las nuevas: `chapters/a2-material.tex` (lista de documentos del repositorio) y `chapters/a4-trazabilidad.tex` (la trazabilidad sale ahora de `docs/requisitos.md`, `docs/sprint-1.md` y `docs/sprint-2.md`), y revisar `a1-desarrollo.tex` y `a3-uso-ia.tex` por si nombran los archivos viejos. Cada ruta que se cite tiene que existir en el repo.
 - Después, seguir con lo pendiente: los diagramas que marca revisar_figuras y lo que pide el revisor.
+
+## 2026-11-20 12:27 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+La prueba falla por la regla 8: la página 42 del PDF tiene una sola imagen (la figura `fig:hito4-admin-estados-privacidad`). La hago más pequeña y fuerzo su colocación con `[htbp!]` para que comparta página con el texto que la rodea, sin tocar el resto del capítulo.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 8: la página 42 del PDF tiene solo una imagen (25 palabras). Hazla más pequeña o júntala con texto u otra figura. Empieza así: «(a) Panel con …
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` y comprobar que la regla 8 de la página 42 ya no falla; si pasa, actualizar las rutas viejas de `docs/` (p. ej. `docs/documentacion-tecnica.md`, `docs/gestion/README.md`, `docs/revision-entrega.md`, `docs/hito4-configuracion.md`) a las nuevas (`docs/requisitos.md`, `docs/sprint-1.md`, `docs/sprint-2.md`, `docs/procesos.md`, `docs/arquitectura.md`, `docs/decisiones.md`, `docs/juego.md`, `docs/log.md`) en `chapters/a1-desarrollo.tex`, `a2-material.tex`, `a3-uso-ia.tex`, `a4-trazabilidad.tex` y `05-evaluacion.tex`, y volver a ejecutar la prueba.
+
+## 2026-11-20 12:28 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 92 páginas, sin errores de LaTeX).
+- `verificar.py`: OK (35 figuras, 29 tablas, 16965 palabras en capítulos y anexos; todas las cifras >20 encontradas en las fuentes).
+- `revisar_maquetacion.py`: FALLA en la Regla 8 (página 42 con una sola imagen y 25 palabras). La figura `fig:hito4-admin-estados-privacidad` (Figura 3.15) ocupa la página casi en solitario.
+- El constructor intentó reducir la altura a 0.28\textheight y forzar colocación con `[htbp!]`, pero no fue suficiente.
+- Las demás reglas de maquetación (portada única, tablas longtable con \\*, sin figuras repetidas, prosa sin «La figura X muestra…», anexos con esquema correcto, etc.) se cumplen según la revisión anterior.
+
+Qué está bien: La memoria compila, pasa la verificación de contenido y cumple la mayoría de reglas de Javier. El único fallo es la Regla 8 en la página 42: la figura 3.15 (panel de administración + política de privacidad) queda sola en la página con muy poco texto. La reducción a 0.28\textheight no basta; hay que reducirla más o ajustar el flujo de texto para que la figura comparta página.
+
+Qué he corregido: Reduzco la altura de las subfiguras a 0.22\textheight (bien por debajo del límite 0.42\textheight) y quito el `!` del especificador de flotante para que LaTeX pueda moverla a una página con más texto. También añado un pequeño párrafo de transición después de la figura (antes de que termine el capítulo) para dar más texto en la página, pero como el capítulo termina ahí, la reducción de altura debería ser suficiente.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` (compilación + `verificar.py` + `revisar_maquetacion.py`) para confirmar que la Regla 8 ya no falla en la página 42.
+- Si persiste el fallo, reducir aún más la altura (p. ej., 0.18\textheight) o mover la figura antes del párrafo final del capítulo (añadir texto después de la figura).
+- Una vez pase la maquetación, revisar que no haya otras páginas con una sola imagen (el script lo comprobará).
+
+## 2026-11-20 12:28 · 🧠 Conocimiento guardado
+
+[[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]]

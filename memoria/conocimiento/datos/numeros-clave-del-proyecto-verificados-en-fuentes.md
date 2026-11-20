@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Números clave del proyecto verificados en fuentes"
-temas: ["memoria-tfg", "metricas", "sprints"]
+temas: ["memoria-tfg", "metricas", "sprints", "pbis", "pruebas", "tareas"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "48 PBIs", "82 tareas", "problema: Necesidad de referencia rápida de cifras principales para contraste con verificar.py", "solucion: Lista de cifras con su ubicación exacta en fuentes para depuración del script"]
 proyectos: ["memoria-procesos"]
-fuentes: []
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md"]
 confianza: "propuesto"
 fecha: "2026-11-20"
 actualizado: "2026-11-20"
@@ -29,5 +29,8 @@ Temas: [[memoria-tfg]] · [[metricas]] · [[sprints]]
   - Logros: 29 → doc §9.3 sistemas
 fuente: docs/documentacion-tecnica.md §2.3, §14, §9.3; docs/gestion/README.md backlog y trazabilidad
 relacionado: Cada cifra de un documento sale de las fuentes, también las pequeñas
+
+## Ampliación (2026-11-20, memoria-procesos)
+Cifras oficiales del proyecto para usar en la memoria sin redondear ni inventar. El burndown de la entrega del Sprint 1 cuenta 16 PBIs (P1–P14, P18, P19) porque P15–P17 se integraron después. Las 276 pruebas son al cierre del Sprint 2; 322 tras la Fase 7 posterior.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

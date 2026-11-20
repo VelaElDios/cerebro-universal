@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 19
+notas: 20
 ---
 # maquetacion
 
@@ -17,6 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier|Cómo evitar páginas con una sola imagen (Regla 8 de Javier)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]]
 - 🧪 [[memoria/conocimiento/recetas/fundir-secciones-de-1-2-parrafos-regla-9-javier|Fundir secciones de 1-2 párrafos (regla 9 Javier)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Limitar altura de capturas para evitar páginas con una sola imagen]] · ⚠️ propuesto
@@ -37,4 +38,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[reglas-tfg]] · [[maquetación]] · [[reglas-javier]] · [[subcaption]] · [[tablas]] · [[tfg]] · [[subfigure]]
+[[latex]] · [[longtable]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[reglas-tfg]] · [[maquetación]] · [[reglas-javier]] · [[tfg]] · [[subcaption]] · [[tablas]] · [[subfigure]]

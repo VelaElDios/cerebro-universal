@@ -57,7 +57,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 19
+  "usos": 20
  },
  "memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints.md": {
   "bien": 0,
@@ -113,6 +113,12 @@
   "ultimo": "2026-11-19",
   "usos": 5
  },
+ "memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-20",
+  "usos": 1
+ },
  "memoria/conocimiento/datos/requisitos-no-funcionales-rnf-01-a-rnf-12-del-proyecto.md": {
   "bien": 0,
   "mal": 0,
@@ -135,13 +141,13 @@
   "bien": 2,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 32
+  "usos": 33
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 14
+  "usos": 15
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -165,13 +171,13 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 15
+  "usos": 16
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-20",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,

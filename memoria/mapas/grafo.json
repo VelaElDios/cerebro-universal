@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T11:54:58+01:00",
+ "generado": "2026-11-20T12:28:53+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1878,7 +1878,10 @@
    "temas": [
     "memoria-tfg",
     "metricas",
-    "sprints"
+    "sprints",
+    "pbis",
+    "pruebas",
+    "tareas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3698,6 +3701,21 @@
    "ruta": "memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable.md"
   },
   {
+   "id": "receta:como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier",
+   "tipo": "receta",
+   "titulo": "Cómo evitar páginas con una sola imagen (Regla 8 de Javier)",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier.md"
+  },
+  {
    "id": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
    "tipo": "receta",
    "titulo": "Cómo exportar diagramas Mermaid para la memoria LaTeX",
@@ -4967,7 +4985,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 126,
+   "peso": 127,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5044,7 +5062,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 19,
+   "peso": 20,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -5149,7 +5167,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 55,
+   "peso": 56,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -5415,7 +5433,7 @@
    "id": "tema:pruebas",
    "tipo": "tema",
    "titulo": "pruebas",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/pruebas.md"
   },
   {
@@ -5695,7 +5713,7 @@
    "id": "tema:pbis",
    "tipo": "tema",
    "titulo": "pbis",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/pbis.md"
   },
   {
@@ -5709,7 +5727,7 @@
    "id": "tema:tareas",
    "tipo": "tema",
    "titulo": "tareas",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/tareas.md"
   },
   {
@@ -11691,6 +11709,21 @@
   },
   {
    "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "tema:pbis",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "tema:pruebas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -17133,6 +17166,26 @@
    "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
    "a": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
