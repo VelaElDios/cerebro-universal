@@ -11975,3 +11975,13 @@ Qué he corregido yo: Nada en este paso (las correcciones de longtables, secció
 ## 2026-11-20 11:54 · 🧠 Conocimiento guardado
 
 [[numeros-clave-del-proyecto-verificados-en-fuentes]]
+
+
+## Revisión humana (Javier) · 2026-11-20
+
+**Por qué falla la prueba desde el 19/11:** el repo de la grada reorganizó `docs/`. Ya no existen `docs/documentacion-tecnica.md`, `docs/gestion/README.md`, `docs/revision-entrega.md` ni `docs/hito4-configuracion.md`; ahora la documentación está en `docs/index.md`, `sprint-1.md`, `sprint-2.md`, `procesos.md`, `requisitos.md`, `arquitectura.md`, `decisiones.md`, `juego.md`, `log.md` y `glosario.md`. Las fuentes de proyecto.json ya apuntan ahí (`repo:saas/docs/*.md`) y con ellas todos los números de la memoria vuelven a estar en las fuentes. max_pasos sube a 80.
+
+Qué hay que hacer:
+- No volver a crear copias de las fuentes dentro de `borrador/`: la carpeta `borrador/docs/` sobra y se ha borrado. Las fuentes son solo las de proyecto.json.
+- Actualizar las rutas de documentos que cita la memoria a las nuevas: `chapters/a2-material.tex` (lista de documentos del repositorio) y `chapters/a4-trazabilidad.tex` (la trazabilidad sale ahora de `docs/requisitos.md`, `docs/sprint-1.md` y `docs/sprint-2.md`), y revisar `a1-desarrollo.tex` y `a3-uso-ia.tex` por si nombran los archivos viejos. Cada ruta que se cite tiene que existir en el repo.
+- Después, seguir con lo pendiente: los diagramas que marca revisar_figuras y lo que pide el revisor.
