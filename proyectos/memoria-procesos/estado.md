@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 13:35"
+actualizado: "2026-11-20 14:44"
 ---
 
 # memoria-procesos
@@ -21,19 +21,20 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (PDF 92 páginas, sin "Infinite glue shrinkage").
-- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. **FALLA**: Regla 8 (página 42 con una sola imagen). Se ha aplicado corrección reduciendo altura a 0.15\textheight y moviendo texto posterior antes de \FloatBarrier.
-- **verificar.py**: OK (35 figuras, 29 tablas, 16965 palabras, números >20 en fuentes).
+- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. **FALLA verificar.py**: 2 figuras sin `\ref` (fig:hito4-admin-estados, fig:hito4-privacidad).
+- **verificar.py**: 2 errores (línea 769, figuras nuevas sin citar).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
 - **Anexo desarrollo**: Dos secciones de sprint con mismo esquema; explica recta gráficas Sprint 2.
 - **Trazabilidad**: Anexo A4 con tabla completa 82 tareas.
-- **Correcciones aplicadas en este paso**: Altura de `fig:hito4-admin-estados-privacidad` reducida a 0.15\textheight, quitado `!` del flotante, y texto del final del capítulo movido antes de `\FloatBarrier` para compartir página.
+- **Correcciones aplicadas en este paso**: Preparado fix para las 2 `\ref` faltantes en `04-descripcion.tex`.
 
 ## Siguiente
-1. Ejecutar `comando_prueba` para confirmar que la Regla 8 pasa.
-2. Si falla, ajustar altura a 0.12\textheight o mover la figura antes del párrafo «El panel de administración muestra todas las cuentas…».
-3. Ejecutar `revisar_umlsd.py` y validar 5 diagramas problemáticos contra reglas 16-18.
-4. Ejecutar `revisar_maquetacion.py` completo.
-5. Actualizar rutas viejas de `docs/` en anexos y capítulo 5.
-6. Marcar TERMINADO solo si todo pasa.
+1. Aplicar el CAMBIO de arriba (añadir las dos `\ref`).
+2. Ejecutar `comando_prueba` para confirmar que `verificar.py` y `revisar_maquetacion.py` pasan.
+3. Ejecutar `revisar_umlsd.py` y validar 7 diagramas de secuencia.
+4. Validar visualmente 5 diagramas TikZ/sequencediagram problemáticos contra reglas 16-18.
+5. Actualizar rutas `docs/` antiguas en 4 archivos restantes.
+6. Revisión final PDF página a página.
+7. Marcar TERMINADO solo si todo pasa.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

@@ -729,7 +729,7 @@ Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la i
 
 \subsection{Hito 4: correo y Google}
 
-El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (Figura~\ref{fig:hito4-flujo}). En la pantalla de entrar aparece el botón «Entrar con Google» (subfigura~\ref{fig:hito4-google}), que inicia el flujo OAuth 2.0 con \texttt{state} anti-CSRF guardado en la sesión. Al registrarse con email y contraseña, la cuenta queda \texttt{pending} y se muestra el aviso «Te hemos enviado un correo de confirmación» (subfigura~\ref{fig:hito4-correo}). Si el usuario intenta entrar antes de confirmar, recibe el error «Debes confirmar tu correo» con el botón «Reenviar el correo de confirmación» (subfigura~\ref{fig:hito4-pendiente}); el reenvío responde 202 sin revelar si la cuenta existe. Un enlace manipulado o caducado muestra un aviso rojo y la cuenta sigue pendiente (subfigura~\ref{fig:hito4-enlace-invalido}); un enlace válido activa la cuenta y redirige a entrar con aviso verde «Cuenta confirmada, ya puedes entrar» (subfigura~\ref{fig:hito4-confirmada}). Si el usuario entra con Google y el email no existía, se crea la cuenta ya activa con \texttt{authProvider: google} y aparece el aviso «Cuenta creada con tu cuenta de Google» (subfigura~\ref{fig:hito4-google-creada}). El panel de administración muestra todos los estados de cuenta (activas, pendientes, eliminadas, locales y de Google) y la política de privacidad es accesible desde el pie de página; ambas vistas se recogen juntas en la Figura~\ref{fig:hito4-admin-estados-privacidad} (subfiguras~\ref{fig:hito4-admin-estados} y~\ref{fig:hito4-privacidad}).
+El Hito 4 añade la confirmación por correo y el inicio de sesión con Google. En la pantalla de entrar aparece el botón «Entrar con Google» (subfigura~\ref{fig:hito4-google}), que inicia el flujo OAuth 2.0 con \texttt{state} anti-CSRF guardado en la sesión. Al registrarse con email y contraseña, la cuenta queda \texttt{pending} y se muestra el aviso «Te hemos enviado un correo de confirmación» (subfigura~\ref{fig:hito4-correo}). Si el usuario intenta entrar antes de confirmar, recibe el error «Debes confirmar tu correo» con el botón «Reenviar el correo de confirmación» (subfigura~\ref{fig:hito4-pendiente}); el reenvío responde 202 sin revelar si la cuenta existe. Un enlace manipulado o caducado muestra un aviso rojo y la cuenta sigue pendiente (subfigura~\ref{fig:hito4-enlace-invalido}). La Figura~\ref{fig:hito4-flujo} recoge este recorrido, desde el acceso con Google hasta el aviso de enlace no válido.
 
 \begin{figure}[htbp]
 \centering
@@ -760,7 +760,14 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \subcaption{Enlace manipulado o caducado.}
 \label{fig:hito4-enlace-invalido}
 \end{subfigure}
-\\
+\caption{Flujo del Hito 4: acceso con Google, aviso de correo enviado, cuenta pendiente y enlace no válido.}
+\label{fig:hito4-flujo}
+\end{figure}
+
+Un enlace válido, en cambio, activa la cuenta y redirige a la pantalla de entrar con el aviso verde «Cuenta confirmada, ya puedes entrar» (subfigura~\ref{fig:hito4-confirmada}). Si el usuario entra con Google y el email no existía, se crea la cuenta ya activa con \texttt{authProvider: google} y aparece el aviso «Cuenta creada con tu cuenta de Google» (subfigura~\ref{fig:hito4-google-creada}). El panel de administración muestra todos los estados de cuenta (activas, pendientes, eliminadas, locales y de Google), de modo que el administrador ve de un vistazo cuáles están pendientes de confirmar y cuáles proceden de un acceso con Google (Figura~\ref{fig:hito4-admin-estados}). La política de privacidad, accesible desde el pie de página de la aplicación, documenta el tratamiento de los datos personales: el correo no aparece en el ranking y los logs ocultan contraseñas, cookies y tokens (Figura~\ref{fig:hito4-privacidad}).
+
+\begin{figure}[htbp]
+\centering
 \begin{subfigure}{0.48\textwidth}
 \centering
 \includegraphics[width=\linewidth,height=0.25\textheight,keepaspectratio]{figs/capturas/hito4/06-cuenta-confirmada.png}
@@ -774,33 +781,24 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google (
 \subcaption{Cuenta creada vía Google.}
 \label{fig:hito4-google-creada}
 \end{subfigure}
-\caption{Flujo Hito 4: Google OAuth, confirmación por correo y reenvío.}
-\label{fig:hito4-flujo}
-\end{figure}
-
-El panel de administración muestra todas las cuentas con sus estados (activas, pendientes, eliminadas, locales y de Google), de modo que el administrador ve de un vistazo cuáles están pendientes de confirmar y cuáles proceden de un acceso con Google. La política de privacidad, accesible desde el pie de página de la aplicación, documenta el tratamiento de los datos personales: el correo no aparece en el ranking y los logs ocultan contraseñas, cookies y tokens. Ambas vistas se recogen en la Figura~\ref{fig:hito4-admin-estados-privacidad}.
-
-\begin{figure}[htbp]
-\centering
+\\
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
+\includegraphics[width=\linewidth,height=0.25\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
 \subcaption{Panel con todos los estados de cuenta.}
 \label{fig:hito4-admin-estados}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
+\includegraphics[width=\linewidth,height=0.25\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
 \subcaption{Política de privacidad.}
 \label{fig:hito4-privacidad}
 \end{subfigure}
-\caption{Panel de administración con todos los estados y política de privacidad.}
-\label{fig:hito4-admin-estados-privacidad}
+\caption{Hito 4: cuenta confirmada, acceso con Google, panel de estados y política de privacidad.}
+\label{fig:hito4-estados-privacidad}
 \end{figure}
 
 Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
-
-El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}). El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}); la Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas en producción. El seguimiento en DoneTonic queda reflejado en el tablero del Sprint 1 (Figura~\ref{fig:donetonic-tablero}), sus gráficas (Figura~\ref{fig:donetonic-graficas-s1}), el Product Backlog (Figura~\ref{fig:donetonic-backlog}), el tablero del Sprint 2 (Figura~\ref{fig:donetonic-s2-tablero}) y el detalle de PBI y tareas (Figura~\ref{fig:donetonic-s2-detalle}), todos en el Capítulo~\ref{cap:propuesta} y Anexo~\ref{anx:desarrollo}; la evolución real del Sprint 2 se expone en el Anexo~\ref{anx:desarrollo}.
 
 El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}). El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}); la Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas en producción. El seguimiento en DoneTonic queda reflejado en el tablero del Sprint 1 (Figura~\ref{fig:donetonic-tablero}), sus gráficas (Figura~\ref{fig:donetonic-graficas-s1}), el Product Backlog (Figura~\ref{fig:donetonic-backlog}), el tablero del Sprint 2 (Figura~\ref{fig:donetonic-s2-tablero}) y el detalle de PBI y tareas (Figura~\ref{fig:donetonic-s2-detalle}), todos en el Capítulo~\ref{cap:propuesta} y Anexo~\ref{anx:desarrollo}; la evolución real del Sprint 2 se expone en el Anexo~\ref{anx:desarrollo}.

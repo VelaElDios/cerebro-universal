@@ -49,10 +49,10 @@
   "comando_prueba": "rm -f Memoria.log Memoria.pdf && python3 ../revisar_umlsd.py && latexmk -g -lualatex -interaction=nonstopmode -halt-on-error -file-line-error Memoria.tex && python3 ../verificar.py && python3 ../../../scripts/revisar_maquetacion.py Memoria.pdf && python3 ../../../scripts/revisar_figuras.py Memoria.pdf",
   "reintentar_si": "^(!|\\S+\\.(tex|sty|cls|bib):\\d+:)|Fatal error|Emergency stop|Todavía no existe",
   "max_archivos_por_paso": 2,
-  "pasos": 57,
+  "pasos": 58,
   "max_pasos": 80,
   "max_intentos": 3,
-  "ultima_ejecucion": "2026-11-20T13:14:37+01:00",
+  "ultima_ejecucion": "2026-11-20T14:19:14+01:00",
   "reglas": [
     "memoria/reglas-tfg.md"
   ]
