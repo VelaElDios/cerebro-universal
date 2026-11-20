@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «secciones» (este archivo
 
 ## Temas relacionados
 
-[[estructura]] · [[maquetacion]] · [[reglas-javier]]
+[[estructura]] · [[maquetacion]] · [[reglas-javier]] · [[latex]] · [[redaccion]]

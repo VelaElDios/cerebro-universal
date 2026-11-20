@@ -1,13 +1,13 @@
 ---
 tipo: "decision"
 titulo: "Portada oficial única y elementos fijos de la plantilla TFG"
-temas: ["latex", "memoria", "tfg"]
+temas: ["latex", "memoria", "tfg", "plantilla", "portada"]
 claves: ["elements/portada.tex", "Memoria.tex", "elements/preambulo.tex", "declaración de autoría", "Resumen", "Abstract", "índices", "portada", "input"]
-proyectos: []
-fuentes: ["../../memoria/reglas-tfg.md"]
+proyectos: ["memoria-procesos"]
+fuentes: ["../../memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 1)"]
 confianza: "verificado"
 fecha: "2026-11-18"
-actualizado: "2026-11-19"
+actualizado: "2026-11-20"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[tfg]]
@@ -33,3 +33,6 @@ no
 > — `../../memoria/reglas-tfg.md`
 
 Fusionada con: Portada única oficial del TFG (elements/portada.tex)
+
+## Ampliación (2026-11-20, memoria-procesos)
+Confirmado: elements/preambulo.tex ya tiene el comentario "Segunda portada eliminada" y solo contiene declaración de autoría, Resumen y Abstract. No se toca elements/portada.tex (protegido).

@@ -122,8 +122,8 @@
  "memoria/conocimiento/datos/workspace-y-equipo-en-donetonic.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-19",
-  "usos": 1
+  "ultimo": "2026-11-20",
+  "usos": 2
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
@@ -135,19 +135,25 @@
   "bien": 2,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 26
+  "usos": 27
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 8
+  "usos": 9
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-19",
   "usos": 4
+ },
+ "memoria/conocimiento/decisiones/longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-20",
+  "usos": 1
  },
  "memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos.md": {
   "bien": 0,
@@ -159,7 +165,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 9
+  "usos": 10
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,
@@ -183,7 +189,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 8
+  "usos": 9
  },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 0,
@@ -220,5 +226,11 @@
   "mal": 0,
   "ultimo": "2026-11-19",
   "usos": 3
+ },
+ "memoria/conocimiento/recetas/verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-20",
+  "usos": 1
  }
 }

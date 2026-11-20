@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Una sola imagen por captura en toda la memoria (regla 10 Javier)"
-temas: ["duplicados", "figuras", "ref", "reglas-javier"]
+temas: ["duplicados", "figuras", "ref", "reglas-javier", "latex", "maquetacion"]
 claves: ["imagen repetida", "\\ref", "una sola vez", "capturas duplicadas"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 10)"]
 confianza: "propuesto"
 fecha: "2026-11-20"
 actualizado: "2026-11-20"
@@ -16,5 +16,8 @@ Buscar en todo el documento (`grep -r "includegraphics" chapters/`) cada archivo
 
 > Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone \ref a la figura que ya existe.
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
+
+## Ampliación (2026-11-20, memoria-procesos)
+Lista de capturas y su ubicación canónica: fig:donetonic-tablero (cap 3), fig:donetonic-graficas-s1 (cap 3), fig:donetonic-backlog (cap 3), fig:donetonic-s2-graficas (anexo A1), fig:donetonic-s2-tablero (anexo A1), fig:donetonic-s2-detalle (anexo A1), fig:actions-verde (cap 5), fig:correo-confirmacion (cap 5), fig:google-publicada (cap 5), fig:prueba-tecnica (cap 5), fig:produccion-verificacion (cap 5).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

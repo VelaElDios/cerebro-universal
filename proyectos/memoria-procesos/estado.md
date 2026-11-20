@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 02:50"
+actualizado: "2026-11-20 06:16"
 ---
 
 # memoria-procesos
@@ -21,7 +21,7 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage") tras correcciones de longtables.
-- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. **FALLAN**: 5 diagramas con cruces pendientes de validar (reglas 16-18), secciones cortas en caps 4 y 5 (regla 9), longtables de anexos sin `\\*` (regla 7 – constructor dice haber corregido 13, pendiente verificación).
+- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. **FALLAN**: 5 diagramas con cruces pendientes de validar (reglas 16-18), secciones cortas en caps 4 y 5 (regla 9), longtables de anexos sin `\\*` (regla 7 – builder dice haber corregido 13, pendiente verificación).
 - **verificar.py**: FALLA – 16+ errores de números no en fuentes (32, 23, 48, 50, 33, 82, etc. en caps 1 y 3). **Causa raíz**: 4 fuentes principales no proporcionadas (`documentacion-tecnica.md`, `gestion/README.md`, `revision-entrega.md`, `hito4-configuracion.md`).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
 - **Anexo desarrollo**: Dos secciones de sprint con mismo esquema; explica recta gráficas Sprint 2.

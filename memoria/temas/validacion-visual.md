@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «validacion-visual» (este
 
 ## Temas relacionados
 
-[[diagramas]] · [[pgf-umlsd]] · [[reglas-javier]] · [[tikz]]
+[[diagramas]] · [[pgf-umlsd]] · [[reglas-javier]] · [[tikz]] · [[latex]]

@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Fundir secciones de 1-2 párrafos (regla 9 Javier)"
-temas: ["estructura", "maquetacion", "reglas-javier", "secciones"]
+temas: ["estructura", "maquetacion", "reglas-javier", "secciones", "latex", "redaccion"]
 claves: ["sección corta", "un párrafo", "fundir", "regla 9"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 9)"]
 confianza: "propuesto"
 fecha: "2026-11-20"
 actualizado: "2026-11-20"
@@ -16,5 +16,8 @@ Revisar cada capítulo buscando `\subsection` o `\subsubsection` que tengan solo
 
 > Ninguna página casi vacía ni con una sección o una línea suelta: una sección de una o dos líneas se funde con otra o se convierte en un punto de una lista.
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
+
+## Ampliación (2026-11-20, memoria-procesos)
+Aplicado en cap 4: sección "Validación y gestión" fundida como párrafo final de "Hito 4: correo y Google". Pendiente revisar cap 5 ("Revisión frente al enunciado") y anexos.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

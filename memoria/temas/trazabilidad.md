@@ -30,4 +30,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[donetonic]] · [[capturas]] · [[anexo]] · [[longtable]] · [[pbi]] · [[pull-request]] · [[tfg]] · [[memoria]] · [[requisitos]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[donetonic]] · [[capturas]] · [[anexo]] · [[longtable]] · [[scrum]] · [[pbi]] · [[pull-request]] · [[tfg]] · [[memoria]]

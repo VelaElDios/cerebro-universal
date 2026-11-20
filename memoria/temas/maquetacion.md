@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 18
+notas: 19
 ---
 # maquetacion
 
@@ -27,6 +27,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final (regla 7 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja|Longtables deben terminar con \\* antes de \bottomrule (regla 7 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi|Una sola imagen por captura en toda la memoria (regla 10 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -36,4 +37,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[reglas-tfg]] · [[maquetación]] · [[subcaption]] · [[reglas-javier]] · [[tfg]] · [[subfigure]] · [[capturas]]
+[[latex]] · [[longtable]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[reglas-tfg]] · [[maquetación]] · [[reglas-javier]] · [[subcaption]] · [[tablas]] · [[tfg]] · [[subfigure]]

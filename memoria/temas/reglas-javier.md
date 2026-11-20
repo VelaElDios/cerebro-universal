@@ -24,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «reglas-javier» (este arc
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[maquetacion]] · [[figuras]] · [[memoria]] · [[verificacion]] · [[longtable]] · [[redaccion]] · [[subfigure]] · [[duplicados]] · [[ref]] · [[estructura]]
+[[latex]] · [[maquetacion]] · [[memoria]] · [[tfg]] · [[figuras]] · [[redaccion]] · [[verificacion]] · [[longtable]] · [[tablas]] · [[subfigure]] · [[duplicados]] · [[ref]]

@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)"
-temas: ["figuras", "redaccion", "reglas-javier", "subfigure", "tfg"]
+temas: ["figuras", "redaccion", "reglas-javier", "subfigure", "tfg", "latex", "memoria"]
 claves: ["La figura X muestra", "prosa", "subfigure", "caption general", "subcaption"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 13)"]
 confianza: "propuesto"
 fecha: "2026-11-20"
 actualizado: "2026-11-20"
@@ -18,5 +18,8 @@ Reescribir secciones de manual de usuario (cap 4, 4b) como prosa continua: expli
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
 Relacionado: [[como-se-agrupan-capturas-con-subfigure]]
+
+## Ampliación (2026-11-20, memoria-procesos)
+Ejemplo correcto en cap 4: subfiguras fig:app-inicio-registro, fig:app-errores-acceso, fig:app-perfil-baja, fig:app-admin-full, fig:app-responsive, fig:app-estados-especiales, fig:hito4-flujo, fig:hito4-admin-estados-privacidad. Cada una agrupa 2-4 capturas relacionadas con prosa que las integra.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

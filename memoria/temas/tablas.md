@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tablas"
-notas: 9
+notas: 10
 ---
 # tablas
 
@@ -18,6 +18,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final (regla 7 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja|Longtables deben terminar con \\* antes de \bottomrule (regla 7 Javier)]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 
@@ -27,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[memoria]] · [[tfg]] · [[maquetacion]]
+[[latex]] · [[longtable]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[reglas-javier]]

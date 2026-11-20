@@ -15,4 +15,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estructura» (este archiv
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[esiiab]] · [[memoria-procesos]] · [[archivos]] · [[sus]] · [[usabilidad]] · [[maquetacion]] · [[reglas-javier]] · [[secciones]]
+[[latex]] · [[memoria]] · [[tfg]] · [[esiiab]] · [[memoria-procesos]] · [[archivos]] · [[sus]] · [[usabilidad]] · [[maquetacion]] · [[reglas-javier]] · [[secciones]] · [[redaccion]]

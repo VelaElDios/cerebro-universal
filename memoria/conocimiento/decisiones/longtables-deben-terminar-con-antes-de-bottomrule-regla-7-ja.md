@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Longtables deben terminar con \\\\* antes de \\bottomrule (regla 7 Javier)"
-temas: ["latex", "longtable", "maquetacion", "reglas-javier"]
+temas: ["latex", "longtable", "maquetacion", "reglas-javier", "tablas"]
 claves: ["\\\\*", "\\bottomrule", "longtable", "fila huérfana", "regla 7"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 7)"]
 confianza: "propuesto"
 fecha: "2026-11-20"
 actualizado: "2026-11-20"
@@ -18,5 +18,8 @@ En cada `longtable`, la penúltima y última fila de datos (incluyendo la fila d
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
 Relacionado: [[tablas-largas-en-longtable-con-ultima-fila-acompanada]]
+
+## Ampliación (2026-11-20, memoria-procesos)
+En cada longtable, las últimas 2-3 filas deben terminar con \\* en lugar de \\. Ejemplo: fila P18 \\*, fila P19 \\*, luego \bottomrule. Esto evita que LaTeX parta la tabla dejando la última fila sola en la siguiente página.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

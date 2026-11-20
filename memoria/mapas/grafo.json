@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T04:18:43+01:00",
+ "generado": "2026-11-20T06:16:16+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1555,7 +1555,8 @@
     "sprint",
     "done",
     "trazabilidad",
-    "memoria-procesos"
+    "memoria-procesos",
+    "scrum"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2619,7 +2620,8 @@
     "latex",
     "longtable",
     "maquetacion",
-    "reglas-javier"
+    "reglas-javier",
+    "tablas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2809,9 +2811,13 @@
    "temas": [
     "latex",
     "memoria",
-    "tfg"
+    "tfg",
+    "plantilla",
+    "portada"
    ],
-   "proyectos": [],
+   "proyectos": [
+    "memoria-procesos"
+   ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md"
   },
@@ -2824,7 +2830,9 @@
     "redaccion",
     "reglas-javier",
     "subfigure",
-    "tfg"
+    "tfg",
+    "latex",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2978,7 +2986,9 @@
     "duplicados",
     "figuras",
     "ref",
-    "reglas-javier"
+    "reglas-javier",
+    "latex",
+    "maquetacion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4241,7 +4251,9 @@
     "estructura",
     "maquetacion",
     "reglas-javier",
-    "secciones"
+    "secciones",
+    "latex",
+    "redaccion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4841,7 +4853,8 @@
     "pgf-umlsd",
     "reglas-javier",
     "tikz",
-    "validacion-visual"
+    "validacion-visual",
+    "latex"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4891,14 +4904,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 120,
+   "peso": 124,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 49,
+   "peso": 50,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -4968,7 +4981,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 18,
+   "peso": 19,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -5059,7 +5072,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -5220,7 +5233,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 51,
+   "peso": 52,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -5276,7 +5289,7 @@
    "id": "tema:plantilla",
    "tipo": "tema",
    "titulo": "plantilla",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/plantilla.md"
   },
   {
@@ -5493,7 +5506,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -6057,6 +6070,13 @@
    "ruta": "memoria/temas/placeholders.md"
   },
   {
+   "id": "tema:portada",
+   "tipo": "tema",
+   "titulo": "portada",
+   "peso": 2,
+   "ruta": "memoria/temas/portada.md"
+  },
+  {
    "id": "tema:subfigure",
    "tipo": "tema",
    "titulo": "subfigure",
@@ -6104,13 +6124,6 @@
    "titulo": "ref",
    "peso": 1,
    "ruta": "memoria/temas/ref.md"
-  },
-  {
-   "id": "tema:portada",
-   "tipo": "tema",
-   "titulo": "portada",
-   "peso": 1,
-   "ruta": "memoria/temas/portada.md"
   },
   {
    "id": "tema:plantilla-tfg",
@@ -10570,6 +10583,11 @@
   },
   {
    "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -13710,6 +13728,11 @@
   },
   {
    "de": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -14135,6 +14158,21 @@
   },
   {
    "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "a": "tema:plantilla",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "a": "tema:portada",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "a": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
    "tipo": "enlaza"
   },
@@ -14171,6 +14209,16 @@
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
@@ -14586,6 +14634,16 @@
   {
    "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
    "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "a": "tema:maquetacion",
    "tipo": "trata"
   },
   {
@@ -18645,6 +18703,16 @@
   },
   {
    "de": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -20226,6 +20294,11 @@
   {
    "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
    "a": "tema:validacion-visual",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "tema:latex",
    "tipo": "trata"
   },
   {
