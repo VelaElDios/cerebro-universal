@@ -195,18 +195,18 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=2.2cm, align=left, font=\small, text width=5.0cm},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=2.5cm, align=left, font=\small, text width=5.5cm},
     attr/.style={font=\small},
     pk/.style={font=\small\bfseries},
     uk/.style={font=\small\itshape},
-    arrow/.style={-{Stealth[length=2mm]}, thick, color=tema},
-    node distance=2.5cm and 4.0cm
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema},
+    node distance=3.5cm and 6.0cm
 ]
     % users (esquina superior izquierda)
     \node[entity] (users) {
         \textbf{users}\\
         \pk id UUID PK\\
-        \attr email TEXT \uk (unico entre no eliminadas)\\
+        \attr email TEXT \uk (único entre no eliminadas)\\
         \attr password\_hash TEXT (null con Google)\\
         \attr role TEXT \texttt{user | admin}\\
         \attr status TEXT \texttt{pending | active | deleted}\\
@@ -245,9 +245,9 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \attr created\_at TIMESTAMPTZ
     };
     % relaciones: users -> perfiles (horizontal con codo, etiqueta arriba, fuera de la línea)
-    \draw[arrow] (users.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
-    % users -> records (codo bajando y yendo a la izquierda, etiqueta a la izquierda, fuera de la línea)
-    \draw[arrow] (users.south) -- ++(0,-1.5) -| node[near start, left, font=\footnotesize] {tiene su mejor partida} (records.west);
+    \draw[arrow] (users.east) -- ++(2.5,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
+    % users -> records (codo bajando y yendo a la derecha, etiqueta a la derecha, fuera de la línea)
+    \draw[arrow] (users.south) -- ++(0,-2.5) -| node[near start, right, font=\footnotesize] {tiene su mejor partida} (records.west);
     % session no tiene relaciones directas en el diagrama (se omite para claridad)
 \end{tikzpicture}
 \end{adjustbox}
@@ -424,10 +424,10 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[3]{v}{Vista entrar}
-  \newinst[3]{c}{api.js}
-  \newinst[3]{a}{API login}
-  \newinst[3]{s}{userService}
+  \newinst[2]{v}{Vista entrar}
+  \newinst[2]{c}{api.js}
+  \newinst[2]{a}{API login}
+  \newinst[2]{s}{userService}
   \begin{call}{u}{email y contraseña}{v}{ok}
   \end{call}
   \begin{call}{v}{login email contraseña}{c}{ok}
@@ -463,11 +463,11 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Navegador}
-  \newinst[3]{a}{API Google}
-  \newinst[3]{ss}{Sesion PostgreSQL}
-  \newinst[3]{g}{Google}
-  \newinst[3]{s}{userService}
-  \newinst[3]{r}{userRepository}
+  \newinst[2]{a}{API Google}
+  \newinst[2]{ss}{Sesion PostgreSQL}
+  \newinst[2]{g}{Google}
+  \newinst[2]{s}{userService}
+  \newinst[2]{r}{userRepository}
   \begin{call}{u}{GET google}{a}{303}
   \end{call}
   \begin{call}{a}{guarda state}{ss}{ok}

@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 15:31"
+actualizado: "2026-11-20 17:46"
 ---
 
 # memoria-procesos
@@ -20,16 +20,16 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- **Compilación**: OK (PDF 92 páginas, sin "Infinite glue shrinkage").
+- **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
-- **verificar.py**: OK (35 figuras, 29 tablas, 17023 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
-- **revisar_maquetacion.py**: FALLA en 4 diagramas (fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-contratar) por reglas 16-18.
+- **verificar.py**: OK (35 figuras, 29 tablas, 17015 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
+- **revisar_maquetacion.py**: FALLA en 4 diagramas (fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-partida) por reglas 16-18. **fig:sec-contratar ya corregido** (eliminado `_` en `juegoPerfiles`).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas en este paso**: Ajustados 4 diagramas (modelo-datos, sec-login, sec-google, sec-contratar) para mover etiquetas fuera de líneas y usar flechas con codos; pendiente verificación visual.
+- **Correcciones aplicadas en este paso**: Ajustados 3 diagramas (modelo-datos: node distance aumentado y etiqueta movida a la derecha; sec-login y sec-google: sin cambios visibles pero marcados para revisión; sec-contratar: corregido underscore). Pendiente fig:sec-partida y verificación visual.
 
 ## Siguiente
-1. Ejecutar `comando_prueba` para confirmar que `revisar_maquetacion.py` pasa tras los ajustes de diagramas.
-2. Si persisten fallos, retocar diagramas y volver a compilar.
+1. Corregir fig:sec-partida en chapters/04b-juego.tex (líneas discontinuas y etiquetas en loop).
+2. Ejecutar `comando_prueba` para confirmar que `revisar_maquetacion.py` pasa tras los ajustes.
 3. Actualizar rutas `docs/` antiguas en 4 archivos restantes.
 4. Revisión final PDF página a página.
 5. Marcar TERMINADO solo si todo pasa.

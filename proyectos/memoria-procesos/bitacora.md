@@ -12177,3 +12177,51 @@ Lo no comprobado: actualización de rutas viejas de `docs/` en `a1-desarrollo.te
 ## 2026-11-20 15:31 · 🧠 Conocimiento guardado
 
 [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]] · [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl]] · [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]]
+
+## 2026-11-20 17:43 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Voy a corregir los 4 diagramas de secuencia que fallan en `revisar_maquetacion.py` (reglas 16-18): `fig:modelo-datos`, `fig:sec-login`, `fig:sec-google` en `chapters/04-descripcion.tex` y `fig:sec-contratar` en `chapters/04b-juego.tex`. Los problemas son: etiquetas que cruzan líneas/cajas, flechas que atraviesan cajas en lugar de ir con codos, y node distance insuficiente. Aplicaré las correcciones: aumentar distancias, usar flechas con codos (|-/-|), mover etiquetas fuera de líneas verticales, y verificar ≤6 participantes.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ chapters/04b-juego.tex:353: en un diagrama de secuencia no puede ir «\_» (texto «juego\_perfiles»): escríbelo sin él
+- intento 2: ❌ - Reglas 16-18: Figura 3.2 (fig:modelo-datos), página 30 del PDF, chapters/04-descripcion.tex:194: La etiqueta 'tiene su mejor partida' de la flecha q… (tocó `(cambio) chapters/04b-juego.tex`)
+- intento 3: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa y que `revisar_maquetacion.py` ya no detecta fallos en los 4 diagramas corregidos (fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-contratar). Si persisten fallos, retocar los diagramas y volver a compilar. Después, actualizar las rutas antiguas de `docs/` en los 4 archivos restantes (`chapters/a1-desarrollo.tex`, `chapters/a3-uso-ia.tex`, `chapters/a4-trazabilidad.tex`, `chapters/05-evaluacion.tex`).
+
+## 2026-11-20 17:46 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 91 páginas, sin "Infinite glue shrinkage")
+- verificar.py: OK (35 figuras, 29 tablas, 17015 palabras, cifras >20 en fuentes, sin huecos, referencias correctas)
+- revisar_maquetacion.py: FALLA en 4 diagramas (reglas 16-18): fig:modelo-datos (etiqueta cruza línea), fig:sec-login (flecha discontinua cruza línea de vida y bloque alt), fig:sec-google (flecha cruza caja), fig:sec-partida (líneas discontinuas y etiquetas cruzan cajas internas en loop)
+- Reglas Javier: portada única OK; declaración, resumen, abstract OK; índices OK; longtables con \\* OK; prosa sin "La figura X muestra" OK; juego y Sprint 2 descritos; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2; trazabilidad 82 tareas OK; imágenes no repetidas; secciones cortas fusionadas/expandidas; coherencia pipeline explicado una vez
+- Números clave verificados: 19 PBIs S1 (sprint-1.md), 29 PBIs S2 (sprint-2.md), 82 tareas totales, 276 pruebas cierre S2 (procesos.md), 322 tras Fase 7 (log.md), 5 migraciones (arquitectura.md), 23 endpoints API (arquitectura.md), 36 jugadores/29 armas/6 ultras/10 jefes/5 ambientes/26 selecciones/29 logros/10 equipaciones (juego.md + sprint-2.md métricas)
+- Capturas mínimas por carpeta: app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+ (cumplido)
+- Diagramas de secuencia con etiqueta fija: 7/7 presentes
+- Figuras con etiqueta fija dibujadas: 5/5 presentes
+- Bibliografía: apalike, autores corporativos con doble llave, year en todas, URLs en fuentes
+- Rutas docs/ antiguas pendientes de actualizar en 4 archivos (a1-desarrollo.tex, a3-uso-ia.tex, a4-trazabilidad.tex, 05-evaluacion.tex)
+
+Qué está bien: La compilación funciona, la estructura de capítulos/anexos es correcta, los datos coinciden con las fuentes, la prosa de TFG se ha reescrito sin listas de "La figura X muestra...", las capturas se agrupan en subfiguras con prosa integrada, el anexo de desarrollo tiene el esquema pedido y explica la recta de DoneTonic en Sprint 2, la trazabilidad cubre las 82 tareas, verificar.py pasa completamente.
+
+Qué falla: revisar_maquetacion.py detecta 4 diagramas que incumplen las reglas visuales 16-18 (flechas que cruzan cajas/etiquetas, líneas que atraviesan cajas, node distance insuficiente). Estos diagramas deben redibujarse para que las flechas vayan de caja en caja con codos (|-/-|), las etiquetas no se superpongan a líneas verticales, los nodos estén suficientemente separados (vertical ≥1.5cm, horizontal ≥2.5cm) y no haya más de 6 participantes.
+
+Qué he corregido yo: Nada en este paso (los diagramas requieren edición manual en el código TikZ/sequencediagram; no se pueden corregir automáticamente sin ver el PDF).
+
+Lo no comprobado: actualización de rutas viejas de `docs/` en `a1-desarrollo.tex`, `a3-uso-ia.tex`, `a4-trazabilidad.tex` y `05-evaluacion.tex` (tarea pendiente del constructor).
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- TAREA 1 (CRÍTICA): Corregir el diagrama fig:sec-partida en chapters/04b-juego.tex (línea ~298) aplicando reglas 16-18: las líneas discontinuas y etiquetas dentro del bloque 'loop' no deben cruzar cajas internas. Usar flechas con codos (|-/-|), mover etiquetas fuera de líneas verticales, aumentar node distance.
+- TAREA 2: Ejecutar `comando_prueba` para confirmar que compila, verificar.py pasa y revisar_maquetacion.py pasa (todo en verde).
+- TAREA 3: Actualizar rutas viejas de `docs/` (`docs/gestion/README.md`, `docs/documentacion-tecnica.md`, `docs/revision-entrega.md`, `docs/hito4-configuracion.md`) a las nuevas del bundle (`docs/requisitos.md`, `docs/arquitectura.md`, `docs/decisiones.md`, `docs/procesos.md`, `docs/sprint-1.md`, `docs/sprint-2.md`, `docs/juego.md`, `docs/log.md`) en `chapters/a1-desarrollo.tex`, `chapters/a3-uso-ia.tex`, `chapters/a4-trazabilidad.tex` y `chapters/05-evaluacion.tex`.
+- TAREA 4: Revisar visualmente el PDF página a página para reglas no medibles (tablas legibles, orden lógico, sin páginas casi vacías, ninguna página con una sola imagen).
+- TAREA 5: Ejecutar `revisar_umlsd.py` y validar los 7 diagramas de secuencia (fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar) contra reglas 16-18.

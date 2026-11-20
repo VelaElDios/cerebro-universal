@@ -80,8 +80,8 @@
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-19",
-  "usos": 5
+  "ultimo": "2026-11-20",
+  "usos": 6
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -141,13 +141,13 @@
   "bien": 2,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 35
+  "usos": 36
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 16
+  "usos": 17
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -171,7 +171,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 19
+  "usos": 20
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,

@@ -308,5 +308,32 @@
  },
  "30cff3b65d0df25eb9675edc79f409eb": {
   "ok": true
+ },
+ "bd9dfbe9c1e92161d70a65913b6b68c0": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta 'tiene su mejor partida' de la flecha que conecta 'users' con 'juego_records' atraviesa/pasa por encima de una línea del diagrama."
+  ]
+ },
+ "3d7195fb7f0711512743aef93c60c527": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta que sale de 'API login' hacia la izquierda atraviesa verticalmente la línea de vida y el cuadro del bloque 'alt' de 'cuenta pendiente' y 'correcto'."
+  ]
+ },
+ "6d590fda171f72fa406808d9ed6cc1f4": {
+  "ok": true
+ },
+ "60ebf53ab46393e4348c1fc42be92108": {
+  "ok": true
+ },
+ "dc0ca0bf3a94894a486fcbbf240efa21": {
+  "ok": true
+ },
+ "b275da33c125457a644a7c77f0c53f5f": {
+  "ok": false,
+  "problemas": [
+   "La línea que conecta la tabla 'users' con la tabla 'juego_records' atraviesa y corta por completo el texto de la etiqueta 'tiene su mejor partida' colocada horizontalmente sobre ella."
+  ]
  }
 }

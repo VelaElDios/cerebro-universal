@@ -350,7 +350,7 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
   \newthread{p1}{Peticion 1}
   \newthread{p2}{Peticion 2 doble clic}
   \newinst[2]{srv}{juegoService}
-  \newinst[2]{bd}{tabla juego perfiles}
+  \newinst[2]{bd}{juegoPerfiles}
   \begin{call}{p1}{contratar}{srv}{ok}
   \end{call}
   \begin{call}{p2}{contratar}{srv}{ok}
@@ -359,17 +359,17 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
   \end{call}
   \begin{call}{srv}{SELECT datos y version}{bd}{v7}
   \end{call}
-  \begin{call}{srv}{p1 gasta una ficha y sortea}{bd}{}
+  \begin{call}{srv}{p1 gasta ficha y sortea}{bd}{}
   \end{call}
-  \begin{call}{srv}{p2 gasta una ficha y sortea}{bd}{}
+  \begin{call}{srv}{p2 gasta ficha y sortea}{bd}{}
   \end{call}
-  \begin{call}{srv}{UPDATE donde version es 7 p1}{bd}{1 fila v8}
+  \begin{call}{srv}{UPDATE WHERE version=7 p1}{bd}{1 fila v8}
   \end{call}
-  \begin{call}{srv}{UPDATE donde version es 7 p2}{bd}{0 filas}
+  \begin{call}{srv}{UPDATE WHERE version=7 p2}{bd}{0 filas}
   \end{call}
   \begin{call}{srv}{p2 reintenta con datos nuevos}{bd}{v8 sin fichas}
   \end{call}
-  \mess{srv}{409 no tienes fichas de contrato}{p2}
+  \mess{srv}{409 no hay fichas}{p2}
   \mess{srv}{200 fichado y perfil}{p1}
 \end{sequencediagram}
 \end{adjustbox}
