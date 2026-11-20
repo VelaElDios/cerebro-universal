@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T09:17:42+01:00",
+ "generado": "2026-11-20T10:50:12+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2692,6 +2692,21 @@
    "ruta": "memoria/conocimiento/decisiones/motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla.md"
   },
   {
+   "id": "decision:numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes",
+   "tipo": "decision",
+   "titulo": "Números en la memoria deben aparecer tal cual en las fuentes",
+   "temas": [
+    "fuentes",
+    "latex",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes.md"
+  },
+  {
    "id": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
    "tipo": "decision",
    "titulo": "Números pequeños también se verifican en fuentes (no solo > 20)",
@@ -3560,6 +3575,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu.md"
+  },
+  {
+   "id": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
+   "tipo": "receta",
+   "titulo": "Cómo corregir warnings de pgf-umlsd en diagramas de secuencia",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci.md"
   },
   {
    "id": "receta:como-crear-cliente-oauth-de-google-para-la-grada-colchonera",
@@ -4922,7 +4952,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 124,
+   "peso": 126,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4936,7 +4966,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 22,
+   "peso": 23,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -4992,7 +5022,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 15,
+   "peso": 16,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -5048,7 +5078,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 18,
+   "peso": 19,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -5720,7 +5750,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -13920,6 +13950,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
    "a": "tema:fuentes",
    "tipo": "trata"
@@ -16793,6 +16843,26 @@
    "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
    "a": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-crear-cliente-oauth-de-google-para-la-grada-colchonera",

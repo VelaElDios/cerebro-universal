@@ -105,40 +105,32 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.5cm, align=center, minimum height=1.2cm, font=\small},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.0cm, align=center, minimum height=1.2cm, font=\small},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.0cm, align=center, minimum height=1.3cm, font=\small},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.5cm, align=center, minimum height=1.3cm, font=\small},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Navegador (columna izquierda)
-    \node[nodewide] (ui) {Interfaz\\ui.js + ui/ + vistas/};
-    \node[node, below=1.8cm of ui] (cli) {Cliente API\\api.js (único fetch)};
-    \node[node, below=1.8cm of cli] (game) {Juego\\game/ (canvas, Web Audio)};
-    % Servidor (columna central) - más separación horizontal
-    \node[nodewide, right=8.5cm of ui] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
-    \node[node, below=1.8cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación, tokens, juego};
-    \node[node, below=1.8cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=1.8cm of repo] (int) {Integraciones\\correo | Google};
-    % Reglas compartidas (a la derecha de Lógica, más lejos)
-    \node[node, right=6.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
-    % BD y externos (a la derecha de Datos e Integraciones, más separación)
-    \node[node, right=6.0cm of repo] (pg) {PostgreSQL\\Neon};
-    \node[node, right=6.0cm of int] (smtp) {SMTP Gmail};
-    \node[node, right=6.0cm of smtp] (goo) {Google OAuth 2.0};
+    % Frontend agrupado (columna izquierda)
+    \node[nodewide] (fe) {Frontend (navegador)\\Interfaz ui.js + Cliente api.js + Juego game/ (canvas, Web Audio)};
+    % Servidor: capas (columna central)
+    \node[nodewide, right=7.5cm of fe] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
+    \node[node, below=1.6cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación, tokens, juego};
+    \node[node, below=1.6cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
+    \node[node, below=1.6cm of repo] (int) {Integraciones\\correo | Google};
+    % Reglas compartidas (a la derecha de Lógica)
+    \node[node, right=5.5cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
+    % Servicios externos agrupados (a la derecha de Datos/Integraciones)
+    \node[node, right=5.5cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon), SMTP Gmail, Google OAuth 2.0};
 
-    % Flechas navegador (verticales)
-    \draw[arrow] (ui) -- (cli);
-    \draw[arrow] (game) -- (cli);
-    % Flecha cliente -> API (horizontal con codo amplio, etiqueta fuera de cajas)
-    \draw[arrow] (cli.east) -- ++(2.5,0) |- node[near start, above, font=\footnotesize] {HTTP + JSON / cookie sesión} (api.west);
-    % Flechas servidor (verticales)
+    % Flechas frontend -> API (horizontal con codo, etiqueta fuera)
+    \draw[arrow] (fe.east) -- ++(2.0,0) |- node[near start, above, font=\footnotesize] {HTTP + JSON / cookie sesión} (api.west);
+    % Flechas servidor (verticales, caja a caja)
     \draw[arrow] (api) -- (srv);
     \draw[arrow] (srv) -- (repo);
     \draw[arrow] (srv) -- (int);
     \draw[arrow, dashed] (srv) -- (rules);
-    % Flechas a BD y externos (horizontales con codos amplios, evitando cruzar cajas)
-    \draw[arrow] (repo.east) -- ++(2.0,0) |- node[near start, above, font=\footnotesize] {SQL} (pg.west);
-    \draw[arrow] (int.east) -- ++(2.0,0) |- node[near start, above, font=\footnotesize] {SMTP} (smtp.west);
-    \draw[arrow] (smtp.east) -- ++(2.0,0) |- node[near start, above, font=\footnotesize] {OAuth 2.0} (goo.west);
+    % Flechas a servicios externos (horizontales con codos, sin cruzar cajas)
+    \draw[arrow] (repo.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {SQL} (ext.west);
+    \draw[arrow] (int.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {SMTP / OAuth 2.0} (ext.west);
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
@@ -441,15 +433,20 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
     \begin{call}{a}{authenticate}{s}{usuario}
     \end{call}
     \begin{sdblock}{alt}{email desconocido o contraseña mala}
-      \mess{s}{401 mismo mensaje}{a}
+      \begin{call}{s}{401 mismo mensaje}{a}{}
+      \end{call}
     \end{sdblock}
     \begin{sdblock}{alt}{cuenta pendiente}
-      \mess{s}{403 cuenta pendiente}{a}
-      \mess{a}{muestra reenviar correo}{v}
+      \begin{call}{s}{403 cuenta pendiente}{a}{}
+      \end{call}
+      \begin{call}{a}{muestra reenviar correo}{v}{}
+      \end{call}
     \end{sdblock}
     \begin{sdblock}{alt}{correcto}
-      \mess{a}{200 usuario y cookie}{c}
-      \mess{c}{ponerUsuario ir a jugar}{v}
+      \begin{call}{a}{200 usuario y cookie}{c}{}
+      \end{call}
+      \begin{call}{c}{ponerUsuario ir a jugar}{v}{}
+      \end{call}
     \end{sdblock}
   \end{call}
 \end{sequencediagram}

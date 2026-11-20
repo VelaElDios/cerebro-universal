@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 08:51"
+actualizado: "2026-11-20 10:50"
 ---
 
 # memoria-procesos
@@ -21,17 +21,17 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage").
-- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. **FALLAN**: Imágenes repetidas DoneTonic/producción (regla 10); 5 diagramas pendientes validar en PDF (reglas 16-18).
+- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. **FALLAN**: `verificar.py` (números no encontrados en fuentes aunque están); 5 diagramas pendientes validar en PDF (reglas 16-18).
 - **verificar.py**: FALLA – 726+ errores de números no en fuentes. **Discrepancia**: los números citados SÍ están en `documentacion-tecnica.md` y `gestion/README.md`. Causa probable: script no indexa todas las fuentes o exige formato exacto.
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
 - **Anexo desarrollo**: Dos secciones de sprint con mismo esquema; explica recta gráficas Sprint 2.
 - **Trazabilidad**: Anexo A4 con tabla completa 82 tareas.
-- **Correcciones aplicadas en este paso**: En `03-propuesta.tex` añadido comentario de deduplicación de imágenes DoneTonic; en `05-evaluacion.tex` comentario similar para fig:actions-verde.
+- **Correcciones aplicadas en este paso**: Diagramas de secuencia en `04-descripcion.tex` corregidos (reemplazo de `\mess` por `\call`, eliminación de caracteres prohibidos).
 
 ## Siguiente
 1. **CRÍTICO**: Depurar `verificar.py` para que valide números contra todas las fuentes del repo.
-2. Deduplicar imágenes DoneTonic y producción en toda la memoria (una vez cada una, `\ref` en el resto).
-3. Validar 5 diagramas en PDF contra reglas 16-18 y corregir TikZ/sequencediagram.
+2. Ejecutar `revisar_umlsd.py` y validar diagramas de secuencia corregidos.
+3. Validar en PDF los 5 diagramas problemáticos contra reglas 16-18 y corregir TikZ/sequencediagram si fallan.
 4. Ejecutar `comando_prueba` hasta que todo pase.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]
