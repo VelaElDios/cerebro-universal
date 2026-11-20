@@ -69,7 +69,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-20",
-  "usos": 8
+  "usos": 9
  },
  "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29.md": {
   "bien": 0,
@@ -135,13 +135,13 @@
   "bien": 2,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 28
+  "usos": 29
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 10
+  "usos": 11
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -165,7 +165,13 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 11
+  "usos": 12
+ },
+ "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-20",
+  "usos": 1
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,

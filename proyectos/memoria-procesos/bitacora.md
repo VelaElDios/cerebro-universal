@@ -11679,3 +11679,61 @@ Correcciones aplicadas en este paso (bloques CAMBIAR abajo):
 ## 2026-11-20 06:51 · 🧠 Conocimiento guardado
 
 [[fuentes-faltantes-bloquean-verificacion-automatica]] · [[una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]]
+
+## 2026-11-20 08:07 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+(sin resumen)
+
+**Archivos:** `docs/documentacion-tecnica.md`, `docs/gestion/README.md`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 16 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** -
+
+## 2026-11-20 08:10 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Verificación automática: `verificar.py` falla con 726+ números no encontrados en las fuentes. Los números 32, 23, 48, 50, 33, 82 (y cientos más) en caps 1 y 3 no están en las fuentes porque faltan `docs/revision-entrega.md` y `docs/hito4-configuracion.md` y las dos fuentes creadas (`documentacion-tecnica.md`, `gestion/README.md`) no contienen todas las cifras necesarias.
+- Compilación: OK (91 páginas, sin "Infinite glue shrinkage").
+- Regla 1 (portada única): `elements/preambulo.tex` ya tiene la segunda portada eliminada → CUMPLE.
+- Regla 7 (longtables con `\\*`): `a1-desarrollo.tex` aún tiene `tab:sprint1-backlog` y `tab:prob-desarrollo` SIN `\\*` en las últimas filas (ver bloques CAMBIAR).
+- Regla 9 (secciones cortas): Cap 4 tiene subsección "Validación y gestión" de solo 2 párrafos → FALLA (fundir con "Hito 4: correo y Google").
+- Regla 10 (imágenes repetidas): Capturas DoneTonic y producción aparecen en múltiples capítulos → FALLA (dejar una sola vez, usar `\ref` en el resto).
+- Regla 13 (prosa sin "La figura X muestra"): Caps 4 y 4b usan `subfigure` y prosa integrada → BIEN.
+- Anexo desarrollo: Dos secciones de sprint con mismo esquema ✓; explica recta gráficas Sprint 2 ✓.
+- Anexo trazabilidad: Tabla completa 82 tareas ✓.
+- Resumen/Abstract: ≥150/120 palabras, con palabras clave ✓.
+- Bibliografía: BibTeX `apalike`, autores corporativos con doble llave, `year` en todas ✓.
+- Diagramas pendientes validar en PDF (reglas 16-18): fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja.
+
+Qué está bien: La estructura general cumple la spec (capítulos, anexos, figuras fijas, subfiguras en caps 4/4b, bibliografía correcta, compilación limpia). El builder ha creado dos de las cuatro fuentes faltantes (`documentacion-tecnica.md` y `gestion/README.md`), pero faltan `revision-entrega.md` y `hito4-configuracion.md`. Sin ellas, `verificar.py` no puede validar los números y el test nunca pasará. Además, persisten dos longtables sin `\\*` en `a1-desarrollo.tex`, una sección corta en cap 4, y imágenes repetidas. Los diagramas de secuencia/TikZ aún no se han validado visualmente en el PDF para reglas 16-18.
+
+Qué he corregido yo (bloques CAMBIAR):
+1. Añadido `\\*` a las dos últimas filas de `tab:sprint1-backlog` (P18 y P19) y a la última fila de `tab:prob-desarrollo` en `a1-desarrollo.tex`.
+2. Fundida la subsección "Validación y gestión" en `04-descripcion.tex` como párrafo final de "Hito 4: correo y Google", eliminando el heading `\subsection{Validación y gestión}`.
+
+Tareas pendientes para el constructor (ver TAREAS).
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- **TAREA 1 (CRÍTICA - BLOQUEANTE)**: Crear las dos fuentes faltantes en el repo para que `verificar.py` pueda validar TODOS los números:
+  - `docs/revision-entrega.md` (revisión frase a frase del enunciado Sprint 1 con evidencia).
+  - `docs/hito4-configuracion.md` (configuración correo SMTP y Google OAuth).
+  Usar como base los archivos existentes: `docs/requisitos.md`, `docs/sprint-1.md`, `docs/sprint-2.md`, `docs/procesos.md`, `docs/decisiones.md`, `docs/arquitectura.md`, `docs/juego.md`, `docs/log.md`.
+
+- **TAREA 2**: Una vez disponibles las cuatro fuentes, revisar **todos** los números del documento (caps 1, 3, 4, 4b, 5, 6, anexos) y sustituir por valores exactos confirmados en fuentes (contar PBIs/tareas uno a uno si hace falta). Especialmente: 32, 23, 48, 50, 33, 82, 19, 29, 276, 322, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 20, 21, 22, 24, 25, 26, 27, 28, 30, 31, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 49, 51-81.
+
+- **TAREA 3**: Verificar en el PDF que **todas** las longtables (capítulos y anexos) terminan con `\\*` antes de `\bottomrule` (regla 7). Revisar especialmente `tab:prob-despliegue`, `tab:prob-git`, `tab:prob-alcance`, `tab:sprint1-trazabilidad`, `tab:evolucion-s1`, `tab:cronologia`, `tab:sprint2-backlog`, `tab:sprint2-hu`, `tab:prob-juego`, `tab:evolucion-s2` en `a1-desarrollo.tex` y `tab:trazabilidad-completa` en `a4-trazabilidad.tex`.
+
+- **TAREA 4**: Verificar en PDF los 5 diagramas problemáticos (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) para cumplir reglas 16-18: aumentar `node distance`, usar codos (`|-`, `-|`) en flechas, mover etiquetas fuera de líneas verticales, reducir participantes a ≤6 en diagramas de secuencia, confirmar letras ≥8pt y sin cruces.
+
+- **TAREA 5**: Confirmar que no hay imágenes repetidas: cada captura aparece una sola vez; en el resto usar `\ref`. Revisar especialmente capturas de DoneTonic (fig:donetonic-tablero, fig:donetonic-graficas-s1, fig:donetonic-backlog, fig:donetonic-s2-graficas, fig:donetonic-s2-tablero, fig:donetonic-s2-detalle) y producción (fig:actions-verde, fig:correo-confirmacion, fig:google-publicada, fig:prueba-tecnica, fig:produccion-verificacion).
+
+- **TAREA 6**: Ejecutar `comando_prueba` tras cada cambio hasta que `verificar.py` y `revisar_maquetacion.py` pasen completamente.

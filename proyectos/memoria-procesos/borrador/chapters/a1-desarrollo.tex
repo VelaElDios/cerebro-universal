@@ -35,7 +35,7 @@ P14 & H3 & Registro (log) de la actividad & T20 & \#23 & hito-3 \\
 P15 & H4 & Inicio de sesión con proveedor externo (OAuth) & T21, T22 & \#40 & hito-4 \\
 P16 & H4 & Confirmación de cuenta por correo electrónico & T23, T24 & \#38, \#39 & hito-4 \\
 P17 & H4 & Manejo de errores y feedback al usuario & T25, T26 & \#37--\#41 & hito-4 \\
-P18 & H4 & README completo y revisión de la entrega & T27, T28, T31, T32 & \#25, \#26, \#30, \#31 & sprint-1 \\
+P18 & H4 & README completo y revisión de la entrega & T27, T28, T31, T32 & \#25, \#26, \#30, \#31 & sprint-1 \\*
 P19 & H4 & Despliegue continuo en Google Cloud Run & T29, T30 & \#27, \#28 & sprint-1 \\*
 \bottomrule
 \end{longtable}
@@ -108,7 +108,7 @@ Un JSON mal formado devolvía la página de error HTML de Express & El error ocu
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endfirsthead
 \toprule
 \textbf{Problema} & \textbf{Causa} & \textbf{Solución} \\ \midrule \endhead
-El correo no salía desde Cloud Run & El SMTP sin cifrar (puerto 25/587) suele estar bloqueado & SMTP de Gmail por el puerto 465 con contraseña de aplicación, guardada en Secret Manager \\
+El correo no salía desde Cloud Run & El SMTP sin cifrar (puerto 25/587) suele estar bloqueado & SMTP de Gmail por el puerto 465 con contraseña de aplicación, guardada en Secret Manager \\*
 \texttt{redirect\_uri\_mismatch} al entrar con Google & Cloud Run tiene dos formas de URL y cada una necesita su URI de redirección & Registrar las dos en el cliente de Google y usar \texttt{PUBLIC\_URL} \\*
 \bottomrule
 \end{longtable}
