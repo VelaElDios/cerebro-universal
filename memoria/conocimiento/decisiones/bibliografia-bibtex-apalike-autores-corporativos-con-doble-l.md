@@ -4,7 +4,7 @@ titulo: "Bibliografía BibTeX apalike: autores corporativos con doble llave y ye
 temas: ["apalike", "bibliografia", "bibtex", "latex"]
 claves: ["author", "double braces", "year", "s.f.", "apalike"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/memoria/bibliografia.bib"]
+fuentes: ["repo:saas/memoria/bibliografia.bib", "bib/ref.bib"]
 confianza: "propuesto"
 fecha: "2026-11-20"
 actualizado: "2026-11-20"
@@ -26,5 +26,8 @@ Temas: [[apalike]] · [[bibliografia]] · [[bibtex]] · [[latex]]
 problema: Sin doble llave, BibTeX trata «GitHub» como apellido «Hub»; sin year, apalike deja «[GitHub, ]».
 solucion: Autores que son organizaciones → `author = {{Organización}}`. Todas las entradas llevan `year`; si no hay fecha → `year = {s.f.}`.
 > — `repo:saas/memoria/bibliografia.bib` (cita sin comprobar)
+
+## Ampliación (2026-11-20, memoria-procesos)
+Aplicado en bib/ref.bib: express, githubflow, nodejs, postgresql, cloudrun, githubactions, donetonic tienen author = {{...}} y year = {s.f.}; rfc6749, bcrypt, vampiresurvivors tienen autores personales y year numérico; enunciado tiene author = {{Universidad de Castilla-La Mancha}} y year = {2026}.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

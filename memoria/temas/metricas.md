@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "metricas"
-notas: 8
+notas: 9
 ---
 # metricas
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo se genera solo).
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta|Burndown real del Sprint 2 vs gráficas DoneTonic en recta]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -26,4 +30,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[verificacion]] · [[métricas]] · [[sprint]] · [[pbis]] · [[sprints]] · [[tareas]] · [[pruebas]] · [[datos]] · [[memoria-procesos]] · [[grada-colchonera]] · [[saas]] · [[trazabilidad]]
+[[verificacion]] · [[sprint]] · [[burndown]] · [[donetonic]] · [[métricas]] · [[scrum]] · [[pbis]] · [[sprints]] · [[tareas]] · [[pruebas]] · [[datos]] · [[memoria-procesos]]

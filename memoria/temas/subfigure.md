@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "subfigure"
-notas: 4
+notas: 5
 ---
 # subfigure
 
@@ -16,7 +16,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subfigure» (este archivo
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]]
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt|Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[redaccion]] · [[tfg]] · [[maquetacion]] · [[capturas]] · [[subcaption]] · [[reglas-javier]] · [[memoria]] · [[figura]]
+[[latex]] · [[redaccion]] · [[subcaption]] · [[memoria]] · [[figuras]] · [[tfg]] · [[maquetacion]] · [[capturas]] · [[reglas-javier]] · [[figura]]

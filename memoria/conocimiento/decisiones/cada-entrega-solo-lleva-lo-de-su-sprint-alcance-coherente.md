@@ -34,3 +34,6 @@ Relacionado: [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[memor
   - Anexo a3-uso-ia: cubre desarrollo de ambos sprints y redacción memoria.
   - Anexo a2-material: enlaces de ambos sprints.
   Todo coherente con alcance final (dos sprints cerrados).
+
+## Ampliación (2026-11-20, memoria-procesos)
+Verificación hecha: Resumen y Abstract mencionan dos sprints, Hitos 1–4, juego survivor, club, logros, música. Introducción §Alcance describe los dos sprints. Capítulo 04-descripcion §La aplicación cubre SaaS; §Resumen de los sprints tabla con ambos. Capítulo 04b-juego: capítulo entero del juego Sprint 2. Capítulo 05-evaluacion: métricas de ambos sprints. Capítulo 06-conclusiones: repasa objetivos de los dos sprints. Anexo a1-desarrollo: dos secciones con mismo esquema. Anexo a4-trazabilidad: 82 tareas de ambos sprints. Anexo a3-uso-ia: cubre desarrollo de ambos sprints y redacción memoria. Anexo a2-material: enlaces de ambos sprints. Todo coherente.

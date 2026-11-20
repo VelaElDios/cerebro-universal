@@ -4,7 +4,7 @@ titulo: "Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 
 temas: ["donetonic", "fases", "fechas", "grada-colchonera", "hitos", "pbi", "scrum", "sprint", "tarea", "tareas"]
 claves: ["Sprint 1", "Sprint 2", "PBIs", "tareas", "fechas", "PBI", "tarea", "hito", "fase"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1, §4.4, §4.6", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md"]
+fuentes: ["repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1, §4.4, §4.6", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-20"
@@ -159,5 +159,8 @@ Fusionada con: Fechas y estructura de los dos sprints con PBIs y tareas
   - PRs fusionados: >50
   - Releases: hito-1, hito-2, hito-3, hito-4, sprint-1
   - Pruebas: 276 (cierre S2), 322 (tras Fase 7)
+
+## Ampliación (2026-11-20, memoria-procesos)
+Sprint 1 (29/09–27/10/2026): 19 PBIs, 32 tareas, 4 hitos. Sprint 2 (23/10–29/10/2026): 29 PBIs, 50 tareas, 7 fases. Total: 48 PBIs, 82 tareas. Burndown S1: 15→9→5→1→2→0 (16 PBIs alcance entrega). Burndown real S2: 28→11→11→2→2→2→0 (reconstruido por fechas PR). DoneTonic S2 en recta porque backlog registrado al cerrar sprint (29/10).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

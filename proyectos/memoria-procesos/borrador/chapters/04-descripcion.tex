@@ -228,7 +228,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entity] (records) at (9,-6) {
+    \node[entity] (records) at (0,-6) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \texttt{alias TEXT}\\
@@ -241,8 +241,8 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
     };
     % users -> perfiles: horizontal directo
     \draw[arrow] (users.east) -- node[above, font=\footnotesize] {tiene su club} (perfiles.west);
-    % users -> records: sale por el este de users, va horizontal a la derecha de perfiles, baja y entra por el sur de records
-    \draw[arrow] (users.east) -- ++(2,0) |- node[pos=0.75, right, font=\footnotesize] {tiene su mejor partida} (records.south);
+    % users -> records: vertical directa de users a records (sin cruzar ninguna caja)
+    \draw[arrow] (users.south) -- node[right, font=\footnotesize] {tiene su mejor partida} (records.north);
     % session -> users (opcional, relación de sesión)
     \draw[arrow, dashed] (session.east) -- node[above, font=\footnotesize] {guarda userId} (users.west);
 \end{tikzpicture}
@@ -426,21 +426,22 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
   \begin{call}{u}{email y contrasena}{fe}{ok}
   \end{call}
   \begin{call}{fe}{POST login}{a}{200 o 401}
-    \begin{call}{a}{authenticate}{s}{usuario}
+    \begin{call}{a}{authenticate}{s}{resultado}
     \end{call}
-    \begin{sdblock}{alt}{email desconocido o contrasena mala}
-      \mess{s}{401 mismo mensaje}{a}
-    \end{sdblock}
-    \begin{sdblock}{alt}{cuenta pendiente}
-      \mess{s}{403 cuenta pendiente}{a}
-    \end{sdblock}
-    \begin{sdblock}{alt}{correcto}
-      \mess{a}{200 usuario y cookie}{fe}
-    \end{sdblock}
   \end{call}
-  % Respuestas del API al Frontend: fuera de los bloques alt, participantes contiguos.
-  \mess{a}{muestra reenviar el correo}{fe}
-  \mess{a}{poner usuario e ir a jugar}{fe}
+  \begin{sdblock}{alt}{email desconocido o contrasena mala}
+    \mess{s}{401 mismo mensaje}{a}
+    \mess{a}{401}{fe}
+  \end{sdblock}
+  \begin{sdblock}{alt}{cuenta pendiente}
+    \mess{s}{403 cuenta pendiente}{a}
+    \mess{a}{403 con reenvio}{fe}
+  \end{sdblock}
+  \begin{sdblock}{alt}{correcto}
+    \mess{s}{usuario}{a}
+    \mess{a}{200 usuario y cookie}{fe}
+  \end{sdblock}
+  \mess{fe}{aviso o ir a jugar}{u}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Inicio de sesión local.}

@@ -1,7 +1,7 @@
 ---
 tipo: "decision"
 titulo: "Burndown real del Sprint 2 vs gráficas DoneTonic en recta"
-temas: ["burndown", "donetonic", "scrum", "sprint"]
+temas: ["burndown", "donetonic", "scrum", "sprint", "metricas"]
 claves: ["Sprint 2", "DoneTonic", "recta", "backlog registrado al cerrar", "fechas PR"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/sprint-2.md"]
@@ -28,5 +28,8 @@ Temas: [[burndown]] · [[donetonic]] · [[scrum]] · [[sprint]]
 problema: Las gráficas de DoneTonic del Sprint 2 muestran una recta vertical (29→0 el 29/10) porque el backlog se registró al final, no durante el desarrollo.
 solucion: En la memoria, mostrar ambas: la captura de DoneTonic (recta) y el burndown real reconstruido con fechas de PR (Tabla~\ref{tab:evolucion-s2} y Figura~\ref{fig:burndown-s2}). Explicar explícitamente por qué DoneTonic sale en recta y dar la evolución real día a día.
 > — `repo:saas/docs/sprint-2.md` (cita sin comprobar)
+
+## Ampliación (2026-11-20, memoria-procesos)
+Evolución real: 23/10 (PR #36): 1 PBI; 24/10 (PRs #44–#52): 17 PBIs; 26/10 (PRs #53, #54): 9 PBIs; 29/10 (PRs #55, #56): 2 PBIs. Total 29 PBIs en 3 días de trabajo intenso. Velocity Chart confirma pico de 17 PBIs el 24/10.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

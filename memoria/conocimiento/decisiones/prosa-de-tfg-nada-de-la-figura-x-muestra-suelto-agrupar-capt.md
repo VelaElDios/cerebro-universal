@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure"
-temas: ["latex", "memoria", "redaccion"]
+temas: ["latex", "memoria", "redaccion", "subcaption", "subfigure"]
 claves: ["subfigure", "subcaption", "prosa", "capturas", "figura"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md"]
 confianza: "propuesto"
 fecha: "2026-11-20"
 actualizado: "2026-11-20"
@@ -26,5 +26,8 @@ Temas: [[latex]] · [[memoria]] · [[redaccion]]
 problema: El borrador tenía ~45 frases sueltas tipo «La figura X muestra…», una por captura, lo que delata un trabajo poco profesional.
 solucion: Reescribir cada sección como prosa continua que explica el flujo de uso. Agrupar capturas relacionadas en una figura con `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`), con un caption general y uno por subfigura. Citar las figuras dentro de la explicación con `\ref`.
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
+
+## Ampliación (2026-11-20, memoria-procesos)
+Aplicado en capítulos 04-descripcion (manual SaaS) y 04b-juego (manual juego). Ejemplo: Figura~\ref{fig:app-inicio-registro} agrupa inicio y registro; Figura~\ref{fig:juego-menu-vestuario} agrupa menú y vestuario; Figura~\ref{fig:juego-partida-mejora} agrupa partida y mejora; Figura~\ref{fig:juego-fin-pausa} agrupa fin y pausa; Figura~\ref{fig:juego-club-pantallas-a/b} agrupan 8 pantallas del club en 2 figuras de 4 subfiguras cada una.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

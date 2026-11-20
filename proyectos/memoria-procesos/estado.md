@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 21:37"
+actualizado: "2026-11-20 21:54"
 ---
 
 # memoria-procesos
@@ -22,14 +22,15 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
-- **verificar.py**: OK (35 figuras, 29 tablas, 17015 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
-- **revisar_maquetacion.py**: FALLA en 2 diagramas (fig:modelo-datos, fig:sec-login) por reglas 16-18. **fig:sec-contratar, fig:sec-google, fig:sec-partida ya corregidos**.
+- **verificar.py**: OK (35 figuras, 29 tablas, 17014 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
+- **revisar_maquetacion.py**: OK (12 diagramas revisados a ojo, sin fallos).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas en este paso**: Corregidos 2 diagramas (modelo-datos: flecha users→records reenrutada por la derecha de perfiles; sec-login: flechas sueltas eliminadas, respuestas fuera de bloques alt). Pendiente verificación visual y test.
+- **Correcciones aplicadas**: Corregidos 2 diagramas (modelo-datos: flecha users→records reenrutada por la derecha de perfiles; sec-login: flechas sueltas eliminadas, respuestas fuera de bloques alt). Test pasa.
+- **Pendiente**: Actualizar rutas `docs/` antiguas en 3 archivos restantes (a3-uso-ia.tex, a4-trazabilidad.tex, 05-evaluacion.tex).
 
 ## Siguiente
-1. Ejecutar `comando_prueba` para confirmar que `revisar_maquetacion.py` pasa tras los ajustes.
-2. Actualizar rutas `docs/` antiguas en 4 archivos restantes (máximo 2 por paso).
+1. Actualizar rutas `docs/` antiguas en `chapters/a3-uso-ia.tex` y `chapters/a4-trazabilidad.tex`.
+2. Actualizar rutas `docs/` antiguas en `chapters/05-evaluacion.tex`.
 3. Ejecutar `revisar_umlsd.py` sobre los 7 diagramas de secuencia.
 4. Revisión final PDF página a página.
 5. Marcar TERMINADO solo si todo pasa.

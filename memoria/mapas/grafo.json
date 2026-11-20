@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T21:37:19+01:00",
+ "generado": "2026-11-20T21:54:27+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2239,7 +2239,8 @@
     "burndown",
     "donetonic",
     "scrum",
-    "sprint"
+    "sprint",
+    "metricas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2910,7 +2911,9 @@
    "temas": [
     "latex",
     "memoria",
-    "redaccion"
+    "redaccion",
+    "subcaption",
+    "subfigure"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5197,7 +5200,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -6265,10 +6268,17 @@
    "ruta": "memoria/temas/portada.md"
   },
   {
+   "id": "tema:subcaption",
+   "tipo": "tema",
+   "titulo": "subcaption",
+   "peso": 5,
+   "ruta": "memoria/temas/subcaption.md"
+  },
+  {
    "id": "tema:subfigure",
    "tipo": "tema",
    "titulo": "subfigure",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/subfigure.md"
   },
   {
@@ -6333,13 +6343,6 @@
    "titulo": "validacion",
    "peso": 1,
    "ruta": "memoria/temas/validacion.md"
-  },
-  {
-   "id": "tema:subcaption",
-   "tipo": "tema",
-   "titulo": "subcaption",
-   "peso": 4,
-   "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:arranque",
@@ -12947,6 +12950,11 @@
   },
   {
    "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -14878,6 +14886,16 @@
   {
    "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
    "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "tema:subfigure",
    "tipo": "trata"
   },
   {

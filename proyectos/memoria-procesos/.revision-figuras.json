@@ -380,5 +380,14 @@
   "problemas": [
    "La flecha superior que sale de la entidad 'users' hacia 'juego_perfiles' cruza la línea vertical que conecta 'juego_perfiles' con 'juego_records'."
   ]
+ },
+ "86f6f2d58b57e0dcb640677c95732dd9": {
+  "ok": true
+ },
+ "5dde4d3aee3346dd7264092b3e7a37df": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta de relación \"tiene su mejor partida\" en el diagrama Figura 3.2 se cruza y solapa con el borde inferior de la caja \"users\" y las líneas internas del modelo."
+  ]
  }
 }

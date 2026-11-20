@@ -9,7 +9,8 @@
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 38 | 2 | 1 |
+| [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 39 | 3 | 1 |
+| [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 26 | 2 | 1 |
 | [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes\|Números clave del proyecto contrastados con fuentes]] | 7 | 2 | 0 |
 | [[memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra\|Trazabilidad completa requisito → PBI → tarea → PR en anexo a4-trazabilidad.tex]] | 6 | 1 | 0 |
 | [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d\|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] | 5 | 1 | 0 |
@@ -20,7 +21,5 @@
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG]] | 22 | 0 | 1 |
 | [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad\|Estado de completitud de sprints y trazabilidad]] | 21 | 0 | 1 |
-| [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas\|Contenido por sprint y prosa de TFG (no listas de capturas)]] | 19 | 0 | 1 |
 | [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd\|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] | 9 | 0 | 1 |

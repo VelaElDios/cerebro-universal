@@ -50,3 +50,6 @@ relacionado: No se quita nada de la plantilla (regla 2 Javier)
   4. Abstract (≥120 palabras, inglés) + Keywords
   5. Sin \input{elements/portada} ni textblock de logos.
   Confirmado: elements/preambulo.tex ya tiene el comentario "Segunda portada eliminada" y solo contiene declaración, Resumen y Abstract.
+
+## Ampliación (2026-11-20, memoria-procesos)
+Confirmado: elements/preambulo.tex ya tiene el comentario "Segunda portada eliminada" y solo contiene declaración de autoría, Resumen y Abstract. No se toca elements/portada.tex (protegido). La portada oficial se incluye mediante \input{elements/portada} en Memoria.tex.

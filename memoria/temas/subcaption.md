@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "subcaption"
-notas: 4
+notas: 5
 ---
 # subcaption
 
@@ -14,6 +14,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subcaption» (este archiv
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]] · ⚠️ propuesto
 
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt|Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[latex]] · [[maquetacion]] · [[figuras]] · [[subfigure]] · [[tfg]] · [[capturas]] · [[figura]]
+[[latex]] · [[subfigure]] · [[maquetacion]] · [[figuras]] · [[memoria]] · [[redaccion]] · [[tfg]] · [[capturas]] · [[figura]]
