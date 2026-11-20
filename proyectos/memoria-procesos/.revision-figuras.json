@@ -389,5 +389,17 @@
   "problemas": [
    "La etiqueta de relación \"tiene su mejor partida\" en el diagrama Figura 3.2 se cruza y solapa con el borde inferior de la caja \"users\" y las líneas internas del modelo."
   ]
+ },
+ "6363fcdc4fd7e157b72566388b4758e4": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta de la relación de la tabla users a juego_records ('tiene su mejor partida') atraviesa una línea y se superpone parcialmente con la caja inferior ('juego_records')."
+  ]
+ },
+ "d849aee3e8d60566e7c99c0c1e1adfda": {
+  "ok": false,
+  "problemas": [
+   "En la caja 'users', el texto 'guarda user_id' se solapa o corta parcialmente debido a cruces de elementos y líneas, y la flecha y etiqueta 'tiene su mejor partida' pasa por encima del texto de la misma caja 'users'."
+  ]
  }
 }

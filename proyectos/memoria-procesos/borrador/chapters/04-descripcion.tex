@@ -242,7 +242,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
     % users -> perfiles: horizontal directo
     \draw[arrow] (users.east) -- node[above, font=\footnotesize] {tiene su club} (perfiles.west);
     % users -> records: vertical directa de users a records (sin cruzar ninguna caja)
-    \draw[arrow] (users.south) -- node[right, font=\footnotesize] {tiene su mejor partida} (records.north);
+    \draw[arrow] (users.south) -- node[left, font=\footnotesize, pos=0.5] {tiene su mejor partida} (records.north);
     % session -> users (opcional, relación de sesión)
     \draw[arrow, dashed] (session.east) -- node[above, font=\footnotesize] {guarda userId} (users.west);
 \end{tikzpicture}
