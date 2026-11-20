@@ -26,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «arquitectura» (este arch
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[latex]] · [[cicd]] · [[coherencia]] · [[memoria]] · [[lua]] · [[sus]] · [[usabilidad]] · [[nodejs]] · [[postgresql]] · [[backend]]
+[[grada-colchonera]] · [[saas]] · [[latex]] · [[cicd]] · [[coherencia]] · [[memoria]] · [[lua]] · [[sus]] · [[usabilidad]] · [[nodejs]] · [[postgresql]] · [[capas]]

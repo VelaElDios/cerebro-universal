@@ -1,7 +1,7 @@
 ---
 tipo: "decision"
 titulo: "Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)"
-temas: ["figuras", "redaccion", "reglas-javier", "subfigure", "tfg", "latex", "memoria"]
+temas: ["figuras", "redaccion", "reglas-javier", "subfigure", "tfg", "latex", "memoria", "maquetacion"]
 claves: ["La figura X muestra", "prosa", "subfigure", "caption general", "subcaption"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 13)"]

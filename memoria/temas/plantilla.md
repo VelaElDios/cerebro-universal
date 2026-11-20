@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "plantilla"
-notas: 6
+notas: 7
 ---
 # plantilla
 
@@ -21,7 +21,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «plantilla» (este archivo
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf|Capítulo 2 (Antecedentes) marcado como no necesario en este TFG]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[latex]] · [[portada]] · [[antecedentes]] · [[capitulo-2]] · [[memoria-procesos]] · [[maquetacion]] · [[plantilla-tfg]]
+[[tfg]] · [[latex]] · [[memoria]] · [[portada]] · [[antecedentes]] · [[capitulo-2]] · [[memoria-procesos]] · [[maquetacion]] · [[plantilla-tfg]]

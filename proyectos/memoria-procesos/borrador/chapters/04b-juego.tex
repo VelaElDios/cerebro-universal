@@ -369,10 +369,8 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
   \end{call}
   \begin{call}{srv}{p2 reintenta con datos nuevos}{bd}{v8 sin fichas}
   \end{call}
-  \begin{call}{srv}{409 no tienes fichas de contrato}{p2}{}
-  \end{call}
-  \begin{call}{srv}{200 fichado y perfil}{p1}{}
-  \end{call}
+  \mess{srv}{409 no tienes fichas de contrato}{p2}
+  \mess{srv}{200 fichado y perfil}{p1}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Contratar con concurrencia optimista.}

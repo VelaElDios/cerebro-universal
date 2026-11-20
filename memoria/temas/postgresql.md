@@ -21,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «postgresql» (este archiv
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[arquitectura]] · [[nodejs]] · [[modelo-datos]] · [[ci-cd]] · [[cloud-run]] · [[despliegue]] · [[devops]] · [[docker]] · [[github-actions]] · [[procesos]]
+[[grada-colchonera]] · [[saas]] · [[arquitectura]] · [[nodejs]] · [[capas]] · [[modelo-datos]] · [[ci-cd]] · [[cloud-run]] · [[despliegue]] · [[devops]] · [[docker]] · [[github-actions]]

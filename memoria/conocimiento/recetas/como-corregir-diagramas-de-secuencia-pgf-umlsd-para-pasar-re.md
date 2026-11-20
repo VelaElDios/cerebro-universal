@@ -7,7 +7,7 @@ proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
 confianza: "propuesto"
 fecha: "2026-11-19"
-actualizado: "2026-11-19"
+actualizado: "2026-11-20"
 ---
 
 Temas: [[diagramas-secuencia]] · [[latex]] · [[maquetacion]] · [[pgf-umlsd]]
@@ -110,5 +110,8 @@ Ejemplo correcto (compilado y probado):
 \label{fig:sec-login}
 \end{figure}
 ```
+
+## Ampliación (2026-11-20, memoria-procesos)
+Antes de compilar, revisar cada diagrama de secuencia: (1) Aumentar node distance vertical ≥1.5cm y horizontal ≥2.5cm. (2) Usar flechas con codos: en TikZ, `\draw[arrow] (A.east) -- ++(1.5,0) |- (B.west);` en sequencediagram, las llamadas anidadas `call` ya generan flechas verticales, pero para mensajes sueltos `\mess` se puede añadir un nodo intermedio o ajustar posiciones. (3) Mover etiquetas con `node[near start, above/left/right, font=\footnotesize] {texto}` fuera de líneas verticales. (4) Agrupar participantes relacionados (ej. "Vista + api.js" → "Frontend") si hay >6. (5) Verificar que cada `\newthread`/`\newinst` tiene nombre no vacío. (6) Compilar y abrir el PDF para comprobar visualmente que no hay cruces y las letras se leen (≥8pt). Si el diagrama es muy ancho, usar `pdflscape` como último recurso.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

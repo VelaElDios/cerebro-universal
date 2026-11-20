@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T14:44:44+01:00",
+ "generado": "2026-11-20T15:31:52+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -645,7 +645,8 @@
     "grada-colchonera",
     "nodejs",
     "postgresql",
-    "saas"
+    "saas",
+    "capas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -940,6 +941,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/estructura-de-la-memoria-compartida-cerebro-md-estado-md-con.md"
+  },
+  {
+   "id": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "tipo": "concepto",
+   "titulo": "Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)",
+   "temas": [
+    "latex",
+    "plantilla",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial.md"
   },
   {
    "id": "concepto:fases-del-sprint-2-y-prs-asociados",
@@ -1647,6 +1663,20 @@
    "ruta": "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md"
   },
   {
+   "id": "dato:fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas",
+   "tipo": "dato",
+   "titulo": "Fechas y estructura del Sprint 2 (1 semana, 29 PBIs, 50 tareas)",
+   "temas": [
+    "scrum",
+    "sprint2"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas.md"
+  },
+  {
    "id": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
    "tipo": "dato",
    "titulo": "Fechas y estructura del Sprint 2 (6 fases + calidad, 29 PBIs, 50 tareas)",
@@ -2230,6 +2260,35 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1.md"
+  },
+  {
+   "id": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
+   "tipo": "decision",
+   "titulo": "Bibliografía BibTeX con autores corporativos en doble llave y year obligatorio",
+   "temas": [
+    "bibliografia",
+    "bibtex",
+    "latex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/bibliografia-bibtex-con-autores-corporativos-en-doble-llave.md"
+  },
+  {
+   "id": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "tipo": "decision",
+   "titulo": "Cada cifra del documento sale de las fuentes, también las pequeñas",
+   "temas": [
+    "memoria",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq.md"
   },
   {
    "id": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
@@ -2883,7 +2942,8 @@
     "subfigure",
     "tfg",
     "latex",
-    "memoria"
+    "memoria",
+    "maquetacion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3250,6 +3310,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/agrupar-capturas-con-subfigure.md"
+  },
+  {
+   "id": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "tipo": "receta",
+   "titulo": "Agrupar capturas relacionadas en subfiguras con prosa integrada",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr.md"
   },
   {
    "id": "receta:api-del-juego-con-validacion-anti-trampas",
@@ -3653,6 +3728,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-desplegar-secretos-de-hito-4-a-cloud-run-produccion.md"
+  },
+  {
+   "id": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
+   "tipo": "receta",
+   "titulo": "Cómo escribir un diagrama de entidad-relación en TikZ legible",
+   "temas": [
+    "er",
+    "latex",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl.md"
   },
   {
    "id": "receta:como-estructurar-el-csv-de-entrada-para-la-plantilla-sus",
@@ -4986,21 +5076,21 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 127,
+   "peso": 131,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 50,
+   "peso": 51,
    "ruta": "memoria/temas/memoria.md"
   },
   {
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 23,
+   "peso": 24,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -5035,14 +5125,14 @@
    "id": "tema:bibtex",
    "tipo": "tema",
    "titulo": "bibtex",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/bibtex.md"
   },
   {
    "id": "tema:bibliografia",
    "tipo": "tema",
    "titulo": "bibliografia",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/bibliografia.md"
   },
   {
@@ -5063,7 +5153,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 20,
+   "peso": 22,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -5112,7 +5202,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 19,
+   "peso": 20,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -5168,7 +5258,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 56,
+   "peso": 57,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -5263,6 +5353,13 @@
    "ruta": "memoria/temas/postgresql.md"
   },
   {
+   "id": "tema:capas",
+   "tipo": "tema",
+   "titulo": "capas",
+   "peso": 1,
+   "ruta": "memoria/temas/capas.md"
+  },
+  {
    "id": "tema:backend",
    "tipo": "tema",
    "titulo": "backend",
@@ -5315,7 +5412,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 52,
+   "peso": 53,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -5329,7 +5426,7 @@
    "id": "tema:sprint2",
    "tipo": "tema",
    "titulo": "sprint2",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/sprint2.md"
   },
   {
@@ -5371,7 +5468,7 @@
    "id": "tema:plantilla",
    "tipo": "tema",
    "titulo": "plantilla",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/plantilla.md"
   },
   {
@@ -6243,6 +6340,13 @@
    "ruta": "memoria/temas/validacion.md"
   },
   {
+   "id": "tema:subcaption",
+   "tipo": "tema",
+   "titulo": "subcaption",
+   "peso": 5,
+   "ruta": "memoria/temas/subcaption.md"
+  },
+  {
    "id": "tema:arranque",
    "tipo": "tema",
    "titulo": "arranque",
@@ -6262,13 +6366,6 @@
    "titulo": "migraciones",
    "peso": 1,
    "ruta": "memoria/temas/migraciones.md"
-  },
-  {
-   "id": "tema:subcaption",
-   "tipo": "tema",
-   "titulo": "subcaption",
-   "peso": 4,
-   "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:apalike",
@@ -6402,6 +6499,13 @@
    "titulo": "regla 9",
    "peso": 1,
    "ruta": "memoria/temas/regla 9.md"
+  },
+  {
+   "id": "tema:er",
+   "tipo": "tema",
+   "titulo": "er",
+   "peso": 1,
+   "ruta": "memoria/temas/er.md"
   },
   {
    "id": "tema:mermaid",
@@ -7660,6 +7764,11 @@
   },
   {
    "de": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
+   "a": "tema:capas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:arquitectura-en-capas-cliente-servidor-node-js-express-postg",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -8626,6 +8735,31 @@
   {
    "de": "concepto:estructura-de-la-memoria-compartida-cerebro-md-estado-md-con",
    "a": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "a": "tema:plantilla",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "tipo": "enlaza"
   },
   {
@@ -10999,6 +11133,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas",
+   "a": "tema:sprint2",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:fechas-y-estructura-del-sprint-2-6-fases-calidad-29-pbis-50",
    "a": "tema:fases",
    "tipo": "trata"
@@ -12714,6 +12863,51 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
+   "a": "tema:bibliografia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
+   "a": "tema:bibtex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
+   "a": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "a": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
    "a": "tema:alcance",
    "tipo": "trata"
@@ -14395,6 +14589,11 @@
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -15974,6 +16173,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:api-del-juego-con-validacion-anti-trampas",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -17072,6 +17291,26 @@
    "de": "receta:como-desplegar-secretos-de-hito-4-a-cloud-run-produccion",
    "a": "decision:solucion-a-correo-no-salia-desde-cloud-run-smtp-gmail-puerto",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
+   "a": "tema:er",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-estructurar-el-csv-de-entrada-para-la-plantilla-sus",

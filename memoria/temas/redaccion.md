@@ -25,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[reglas-javier]] · [[subfigure]] · [[estilo]] · [[sprints]] · [[cicd]] · [[coherencia]] · [[pipeline]] · [[memoria-procesos]] · [[arquitectura]]
+[[latex]] · [[tfg]] · [[memoria]] · [[reglas-javier]] · [[subfigure]] · [[maquetacion]] · [[estilo]] · [[sprints]] · [[cicd]] · [[coherencia]] · [[pipeline]] · [[memoria-procesos]]

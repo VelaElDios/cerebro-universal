@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 14:44"
+actualizado: "2026-11-20 15:31"
 ---
 
 # memoria-procesos
@@ -21,20 +21,17 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (PDF 92 páginas, sin "Infinite glue shrinkage").
-- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. **FALLA verificar.py**: 2 figuras sin `\ref` (fig:hito4-admin-estados, fig:hito4-privacidad).
-- **verificar.py**: 2 errores (línea 769, figuras nuevas sin citar).
-- **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
-- **Anexo desarrollo**: Dos secciones de sprint con mismo esquema; explica recta gráficas Sprint 2.
-- **Trazabilidad**: Anexo A4 con tabla completa 82 tareas.
-- **Correcciones aplicadas en este paso**: Preparado fix para las 2 `\ref` faltantes en `04-descripcion.tex`.
+- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
+- **verificar.py**: OK (35 figuras, 29 tablas, 17023 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
+- **revisar_maquetacion.py**: FALLA en 4 diagramas (fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-contratar) por reglas 16-18.
+- **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
+- **Correcciones aplicadas en este paso**: Ajustados 4 diagramas (modelo-datos, sec-login, sec-google, sec-contratar) para mover etiquetas fuera de líneas y usar flechas con codos; pendiente verificación visual.
 
 ## Siguiente
-1. Aplicar el CAMBIO de arriba (añadir las dos `\ref`).
-2. Ejecutar `comando_prueba` para confirmar que `verificar.py` y `revisar_maquetacion.py` pasan.
-3. Ejecutar `revisar_umlsd.py` y validar 7 diagramas de secuencia.
-4. Validar visualmente 5 diagramas TikZ/sequencediagram problemáticos contra reglas 16-18.
-5. Actualizar rutas `docs/` antiguas en 4 archivos restantes.
-6. Revisión final PDF página a página.
-7. Marcar TERMINADO solo si todo pasa.
+1. Ejecutar `comando_prueba` para confirmar que `revisar_maquetacion.py` pasa tras los ajustes de diagramas.
+2. Si persisten fallos, retocar diagramas y volver a compilar.
+3. Actualizar rutas `docs/` antiguas en 4 archivos restantes.
+4. Revisión final PDF página a página.
+5. Marcar TERMINADO solo si todo pasa.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

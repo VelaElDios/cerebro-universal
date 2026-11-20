@@ -224,5 +224,89 @@
   "problemas": [
    "La etiqueta de texto 'HTTP + JSON / cookie sesión' cruza por encima de la flecha superior izquierda del diagrama."
   ]
+ },
+ "cf7723303c92492e322c7f03cbe6cead": {
+  "ok": true
+ },
+ "ae1652f2342b58b468ffc9d51ae200e6": {
+  "ok": false,
+  "problemas": [
+   "La línea que une 'users' con 'juego_records' tiene la etiqueta 'tiene su mejor partida' atravesando la propia línea y chocando/cruzar con la caja de 'juego_records'."
+  ]
+ },
+ "517f0405deca87f782540d3a90ba8e4c": {
+  "ok": true
+ },
+ "80535cd579635705dc6ac397f12bdc4b": {
+  "ok": true
+ },
+ "f2df763fa2a622d673bc1d0a20675859": {
+  "ok": false,
+  "problemas": [
+   "La flecha 'muestra reenviar correo' atraviesa la línea de vida y se cruza con elementos del diagrama en el bloque 'cuenta pendiente'."
+  ]
+ },
+ "082390729a5bff7b1fb663732f1ecbff": {
+  "ok": false,
+  "problemas": [
+   "En la Figura 3.6, la línea de mensaje que va de API Google a Google ('POST token a Google') atraviesa o cruza por encima de la cajita de activación de Sesion PostgreSQL."
+  ]
+ },
+ "ca195c9b8c9571557ee00d989cf65d1a": {
+  "ok": true
+ },
+ "24caeb113bd7ac32adc1bdff06b767bf": {
+  "ok": true
+ },
+ "a9200f3016066364340ae154dbc1a940": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta de flecha 'p2 reintenta con datos nuevos' atraviesa la línea de vida vertical de la entidad juegoService."
+  ]
+ },
+ "d5b4af4e9831c6347a3cf5d9be0bca50": {
+  "ok": true
+ },
+ "dcfdfe624afa14248c699e8b69193456": {
+  "ok": true
+ },
+ "251ec79280b7a9c46c0f46b13f56a1cc": {
+  "ok": true
+ },
+ "9a10379f22b8a7858337ef59e7959f28": {
+  "ok": false,
+  "problemas": [
+   "Figura 3.6: La etiqueta de la flecha «loginWithOAuth» se cruza y solapa con la línea punteada de respuesta «id perfil» entre API Google y userService."
+  ]
+ },
+ "cbc2aac983a9ffdaa90633b178408b3f": {
+  "ok": false,
+  "problemas": [
+   "En la Figura 3.7, la flecha de respuesta punteada que va desde userService hacia la izquierda atraviesa verticalmente la caja de condición 'alt' (ultimo administrador)."
+  ]
+ },
+ "cc2f3f49ade4aa4d3b1d08c7f4af63d3": {
+  "ok": true
+ },
+ "d7b2260cd23e026e2c30f7ad8dd40639": {
+  "ok": false,
+  "problemas": [
+   "En el diagrama Figura 4.8, dentro del bloque 'loop' (cada fotograma (simulacion en Frontend)), las líneas discontinuas con flecha y las etiquetas asociadas ('estado fin') atraviesan y se superponen con los bordes de los pequeños cuadros internos o cajas de llamada."
+  ]
+ },
+ "1bb021f5483623118d726d5a623d3638": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta de la segunda petición (que indica 'ok' en la segunda llamada a 'contratar') atraviesa por completo la barra de vida de la Peticion 1."
+  ]
+ },
+ "8b3fe961b35b2f3498707421759e5577": {
+  "ok": true
+ },
+ "0ab5ca30e580c6dce4332aaed3de14c6": {
+  "ok": true
+ },
+ "30cff3b65d0df25eb9675edc79f409eb": {
+  "ok": true
  }
 }

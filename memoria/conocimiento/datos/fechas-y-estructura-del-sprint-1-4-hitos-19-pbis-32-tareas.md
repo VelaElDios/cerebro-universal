@@ -4,10 +4,10 @@ titulo: "Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)"
 temas: ["grada-colchonera", "saas", "scrum", "sprint", "hitos", "memoria-procesos", "pbi", "tareas", "hito", "tarea", "fechas", "pbis", "sprint1"]
 claves: ["Sprint 1", "29/09/2026", "27/10/2026", "Hito 1", "Hito 2", "Hito 3", "Hito 4", "19 PBIs", "32 tareas", "P1-P19", "T1-T32", "MUST", "DoneTonic"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1"]
+fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1", "repo:saas/docs/sprint-1.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-19"
+actualizado: "2026-11-20"
 ---
 
 Temas: [[grada-colchonera]] · [[saas]] · [[scrum]] · [[sprint]]
@@ -36,5 +36,8 @@ Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requi
   - Hito 2: P7-P10 (T8-T14) - frontend separado, registro/login local, logout, rutas protegidas
   - Hito 3: P11-P14 (T15-T20) - BD real, secretos, roles admin, logs actividad
   - Hito 4: P15-P19 (T21-T32) - OAuth Google, confirmación correo, errores/feedback, README, Cloud Run
+
+## Ampliación (2026-11-20, memoria-procesos)
+Sprint 1: 29/09–27/10/2026. Hito 1 (P1-P6, T1-T7): repositorio, CI, despliegue, usuarios en memoria, pruebas, API. Hito 2 (P7-P10, T8-T14): frontend separado, registro/login local, logout, rutas protegidas. Hito 3 (P11-P14, T15-T20): BD real, secretos, roles admin, logs. Hito 4 (P15-P19, T21-T32): OAuth Google, confirmación correo, errores/feedback, README, Cloud Run. Cambio de alcance: P19 añadido a mitad de sprint por créditos Google Cloud.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

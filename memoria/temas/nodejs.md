@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «nodejs» (este archivo se
 
 ## Temas relacionados
 
-[[arquitectura]] · [[grada-colchonera]] · [[postgresql]] · [[saas]]
+[[arquitectura]] · [[grada-colchonera]] · [[postgresql]] · [[saas]] · [[capas]]

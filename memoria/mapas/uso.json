@@ -111,7 +111,7 @@
   "bien": 2,
   "mal": 0,
   "ultimo": "2026-11-20",
-  "usos": 6
+  "usos": 7
  },
  "memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr.md": {
   "bien": 0,
@@ -141,7 +141,7 @@
   "bien": 2,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 34
+  "usos": 35
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 0,
@@ -171,7 +171,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 18
+  "usos": 19
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
@@ -237,7 +237,7 @@
   "bien": 1,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 24
+  "usos": 25
  },
  "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
   "bien": 0,
