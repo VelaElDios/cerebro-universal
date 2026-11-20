@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sprints"
-notas: 3
+notas: 4
 ---
 # sprints
 
@@ -14,8 +14,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-verificadas-en-fuentes|Cifras clave del proyecto verificadas en fuentes]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[metricas]] · [[pbis]] · [[tareas]] · [[fechas]] · [[pruebas]] · [[datos]] · [[memoria-procesos]] · [[verificacion]] · [[grada-colchonera]]
+[[memoria-procesos]] · [[grada-colchonera]] · [[saas]] · [[trazabilidad]] · [[latex]] · [[memoria]] · [[tfg]] · [[metricas]] · [[pbis]] · [[tareas]] · [[fechas]] · [[pruebas]]

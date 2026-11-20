@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "fuentes"
-notas: 8
+notas: 9
 ---
 # fuentes
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica|Fuentes faltantes bloquean verificación automática]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica-de-numero|Fuentes faltantes bloquean verificación automática de números]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes|Números pequeños también se verifican en fuentes]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
@@ -26,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Temas relacionados
 
-[[verificacion]] · [[numeros]] · [[memoria-procesos]] · [[test]] · [[datos]] · [[juego]] · [[verificar]] · [[metricas]] · [[arma]] · [[fuente]] · [[cifras]] · [[verificar.py]]
+[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[verificar.py]] · [[datos]] · [[juego]] · [[verificar]] · [[metricas]] · [[arma]] · [[fuente]] · [[cifras]]

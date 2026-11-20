@@ -24,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «plantilla» (este archivo
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[latex]] · [[portada]] · [[antecedentes]] · [[capitulo-2]] · [[maquetacion]] · [[plantilla-tfg]]
+[[tfg]] · [[memoria]] · [[latex]] · [[portada]] · [[antecedentes]] · [[capitulo-2]] · [[memoria-procesos]] · [[maquetacion]] · [[plantilla-tfg]]

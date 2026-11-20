@@ -1,7 +1,7 @@
 ---
 tipo: "decision"
 titulo: "Una sola imagen por captura en toda la memoria (regla 10 Javier)"
-temas: ["duplicados", "figuras", "ref", "reglas-javier", "latex", "maquetacion"]
+temas: ["duplicados", "figuras", "ref", "reglas-javier", "latex", "maquetacion", "memoria-procesos"]
 claves: ["imagen repetida", "\\ref", "una sola vez", "capturas duplicadas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 10)"]
@@ -19,5 +19,9 @@ Buscar en todo el documento (`grep -r "includegraphics" chapters/`) cada archivo
 
 ## Ampliación (2026-11-20, memoria-procesos)
 Lista de capturas y su ubicación canónica: fig:donetonic-tablero (cap 3), fig:donetonic-graficas-s1 (cap 3), fig:donetonic-backlog (cap 3), fig:donetonic-s2-graficas (anexo A1), fig:donetonic-s2-tablero (anexo A1), fig:donetonic-s2-detalle (anexo A1), fig:actions-verde (cap 5), fig:correo-confirmacion (cap 5), fig:google-publicada (cap 5), fig:prueba-tecnica (cap 5), fig:produccion-verificacion (cap 5).
+
+## Ampliación (2026-11-20, memoria-procesos)
+Inventario de capturas por carpeta (mínimos spec): app/ (4), hito4/ (4), juego/ (8), donetonic/ (5), produccion/ (2), prueba-tecnica/ (1). Cada archivo físico en `figs/capturas/` debe usarse una sola vez en el documento.
+relacionado: Prosa de TFG sin cadenas "La figura X muestra..." (regla 13 Javier), Capturas agrupadas en subfigure
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

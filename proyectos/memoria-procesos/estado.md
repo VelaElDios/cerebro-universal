@@ -2,12 +2,16 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-20 06:16"
+actualizado: "2026-11-20 06:51"
 ---
 
 # memoria-procesos
 
 Temas: [[latex]] · [[memoria]] · [[tikz]] · [[pgfplots]]
+
+# memoria-procesos
+
+Temas: latex · memoria · tikz · pgfplots
 
 ## Qué es
 Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proyecto *La Grada Colchonera*: Sprint 1 (base SaaS, P1–P19, T1–T32) y Sprint 2 (juego survivor, P20–P48, T33–T82). La única verdad son las fuentes del repo `la-grada-colchonera-saas` y `fuentes/`.
@@ -21,20 +25,22 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage") tras correcciones de longtables.
-- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. **FALLAN**: 5 diagramas con cruces pendientes de validar (reglas 16-18), secciones cortas en caps 4 y 5 (regla 9), longtables de anexos sin `\\*` (regla 7 – builder dice haber corregido 13, pendiente verificación).
-- **verificar.py**: FALLA – 16+ errores de números no en fuentes (32, 23, 48, 50, 33, 82, etc. en caps 1 y 3). **Causa raíz**: 4 fuentes principales no proporcionadas (`documentacion-tecnica.md`, `gestion/README.md`, `revision-entrega.md`, `hito4-configuracion.md`).
+- **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. **FALLAN**: 5 diagramas con cruces pendientes de validar (reglas 16-18), secciones cortas en cap 4 (regla 9), longtables de anexos sin `\\*` (regla 7 – builder dice haber corregido 13, pendiente verificación), imágenes repetidas DoneTonic/producción (regla 10).
+- **verificar.py**: FALLA – 726+ errores de números no en fuentes. **Causa raíz**: 4 fuentes principales no existen en el repo (`documentacion-tecnica.md`, `gestion/README.md`, `revision-entrega.md`, `hito4-configuracion.md`).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
 - **Anexo desarrollo**: Dos secciones de sprint con mismo esquema; explica recta gráficas Sprint 2.
 - **Trazabilidad**: Anexo A4 con tabla completa 82 tareas.
-- **Correcciones aplicadas**: 12 longtables de caps 4, 4b, 5 llevan `\\*` antes de `\bottomrule`; fundidas 3 subsecciones cortas en cap 4 y 1 en cap 5; eliminada sección duplicada en cap 5 y párrafo duplicado en cap 4.
+- **Correcciones aplicadas en este paso**: 2 longtables en `a1-desarrollo.tex` (`tab:sprint1-backlog` y `tab:prob-desarrollo`) ahora llevan `\\*`; fundida sección "Validación y gestión" en cap 4 con "Hito 4: correo y Google".
 
 ## Siguiente
-1. **CRÍTICO**: Obtener las 4 fuentes faltantes para poder verificar TODOS los números.
+1. **CRÍTICO**: Crear las 4 fuentes faltantes en el repo para que `verificar.py` pueda validar TODOS los números.
 2. Reemplazar cualquier número por valores confirmados en fuentes.
 3. Verificar en PDF los 5 diagramas (fig:capas, fig:modelo-datos, fig:sec-login, fig:sec-google, fig:sec-baja) para reglas 16-18.
 4. Confirmar `\\*` en todas las longtables (incluidas anexos).
 5. Confirmar no duplicados de imágenes (especialmente DoneTonic y producción).
 6. Fundir secciones cortas restantes.
 7. Ejecutar `comando_prueba` hasta que todo pase.
+
+Bitácora completa: bitácora · Spec: spec
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

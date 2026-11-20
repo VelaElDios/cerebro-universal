@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T06:16:16+01:00",
+ "generado": "2026-11-20T06:51:09+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1556,7 +1556,8 @@
     "done",
     "trazabilidad",
     "memoria-procesos",
-    "scrum"
+    "scrum",
+    "sprints"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2566,6 +2567,21 @@
    "ruta": "memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica-de-numero.md"
   },
   {
+   "id": "decision:fuentes-faltantes-bloquean-verificacion-automatica",
+   "tipo": "decision",
+   "titulo": "Fuentes faltantes bloquean verificación automática",
+   "temas": [
+    "fuentes",
+    "memoria-procesos",
+    "verificar.py"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica.md"
+  },
+  {
    "id": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
    "tipo": "decision",
    "titulo": "La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX",
@@ -2813,7 +2829,8 @@
     "memoria",
     "tfg",
     "plantilla",
-    "portada"
+    "portada",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2988,7 +3005,8 @@
     "ref",
     "reglas-javier",
     "latex",
-    "maquetacion"
+    "maquetacion",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5639,7 +5657,7 @@
    "id": "tema:sprints",
    "tipo": "tema",
    "titulo": "sprints",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/sprints.md"
   },
   {
@@ -5660,7 +5678,7 @@
    "id": "tema:memoria-procesos",
    "tipo": "tema",
    "titulo": "memoria-procesos",
-   "peso": 16,
+   "peso": 19,
    "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
@@ -5702,7 +5720,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -6014,6 +6032,13 @@
    "ruta": "memoria/temas/numeros.md"
   },
   {
+   "id": "tema:verificar.py",
+   "tipo": "tema",
+   "titulo": "verificar.py",
+   "peso": 2,
+   "ruta": "memoria/temas/verificar.py.md"
+  },
+  {
    "id": "tema:ia-local",
    "tipo": "tema",
    "titulo": "ia-local",
@@ -6313,13 +6338,6 @@
    "titulo": "mermaid",
    "peso": 1,
    "ruta": "memoria/temas/mermaid.md"
-  },
-  {
-   "id": "tema:verificar.py",
-   "tipo": "tema",
-   "titulo": "verificar.py",
-   "peso": 1,
-   "ruta": "memoria/temas/verificar.py.md"
   },
   {
    "id": "tema:figura",
@@ -10588,6 +10606,11 @@
   },
   {
    "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -13587,6 +13610,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "decision:fuentes-faltantes-bloquean-verificacion-automatica",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:fuentes-faltantes-bloquean-verificacion-automatica",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:fuentes-faltantes-bloquean-verificacion-automatica",
+   "a": "tema:verificar.py",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:fuentes-faltantes-bloquean-verificacion-automatica",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
    "a": "tema:entrega",
    "tipo": "trata"
@@ -14168,6 +14211,11 @@
   },
   {
    "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -14644,6 +14692,11 @@
   {
    "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
    "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "a": "tema:memoria-procesos",
    "tipo": "trata"
   },
   {

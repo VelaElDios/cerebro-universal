@@ -80,4 +80,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[figuras]] · [[plantilla]] · [[diagramas]] · [[tikz]] · [[verificacion]] · [[scrum]] · [[memoria-procesos]] · [[tablas]] · [[grada-colchonera]] · [[donetonic]]
+[[tfg]] · [[latex]] · [[figuras]] · [[plantilla]] · [[memoria-procesos]] · [[diagramas]] · [[tikz]] · [[verificacion]] · [[scrum]] · [[tablas]] · [[grada-colchonera]] · [[donetonic]]

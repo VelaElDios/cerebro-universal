@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «done» (este archivo se g
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[memoria-procesos]] · [[scrum]] · [[sprint]] · [[trazabilidad]] · [[metodologia]]
+[[grada-colchonera]] · [[saas]] · [[memoria-procesos]] · [[scrum]] · [[sprint]] · [[trazabilidad]] · [[sprints]] · [[metodologia]]

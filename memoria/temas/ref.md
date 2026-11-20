@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ref» (este archivo se ge
 
 ## Temas relacionados
 
-[[duplicados]] · [[figuras]] · [[reglas-javier]] · [[latex]] · [[maquetacion]]
+[[duplicados]] · [[figuras]] · [[reglas-javier]] · [[latex]] · [[maquetacion]] · [[memoria-procesos]]

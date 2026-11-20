@@ -68,8 +68,8 @@
  "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-19",
-  "usos": 7
+  "ultimo": "2026-11-20",
+  "usos": 8
  },
  "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-2-6-fases-de-juego-calidad-29.md": {
   "bien": 0,
@@ -135,13 +135,13 @@
   "bien": 2,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 27
+  "usos": 28
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 9
+  "usos": 10
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -165,7 +165,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 10
+  "usos": 11
  },
  "memoria/conocimiento/decisiones/tocar-trozos-con-cambiar-en-vez-de-reescribir-archivos-enter.md": {
   "bien": 0,
@@ -219,7 +219,7 @@
   "bien": 1,
   "mal": 1,
   "ultimo": "2026-11-20",
-  "usos": 20
+  "usos": 21
  },
  "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
   "bien": 0,
