@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "fuentes"
-notas: 7
+notas: 8
 ---
 # fuentes
 
@@ -12,6 +12,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p|Cada cifra de un documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-manejar-fuentes-faltantes-en-verificacion-automatica-de|Cómo manejar fuentes faltantes en verificación automática de números]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r|Secuencia obligatoria cuando faltan fuentes en mensaje del revisor]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/validacion-completa-de-numeros-en-memoria-tfg-con-verificar|Validación completa de números en memoria TFG con verificar.py]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
@@ -25,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Temas relacionados
 
-[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[datos]] · [[juego]] · [[verificar]] · [[metricas]] · [[arma]] · [[fuente]] · [[cifras]] · [[verificar.py]]
+[[verificacion]] · [[numeros]] · [[memoria-procesos]] · [[test]] · [[datos]] · [[juego]] · [[verificar]] · [[metricas]] · [[arma]] · [[fuente]] · [[cifras]] · [[verificar.py]]

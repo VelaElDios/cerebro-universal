@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 16
+notas: 18
 ---
 # maquetacion
 
@@ -18,6 +18,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]]
+- 🧪 [[memoria/conocimiento/recetas/fundir-secciones-de-1-2-parrafos-regla-9-javier|Fundir secciones de 1-2 párrafos (regla 9 Javier)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Limitar altura de capturas para evitar páginas con una sola imagen]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl|Verificación visual de diagramas TikZ y pgf-umlsd según reglas 16-18]] · ⚠️ propuesto
 
@@ -25,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final (regla 7 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja|Longtables deben terminar con \\* antes de \bottomrule (regla 7 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -34,4 +36,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[reglas-tfg]] · [[maquetación]] · [[subcaption]] · [[tfg]] · [[subfigure]] · [[capturas]] · [[diagramas]]
+[[latex]] · [[longtable]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[reglas-tfg]] · [[maquetación]] · [[subcaption]] · [[reglas-javier]] · [[tfg]] · [[subfigure]] · [[capturas]]

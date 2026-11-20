@@ -70,7 +70,7 @@ El pipeline de CI/CD se implementa con tres workflows de GitHub Actions y un web
 \path{ci.yml} (CI) & Cada PR y push a main, hito-*/integracion & Trabajo \textit{Pruebas}: \texttt{npm ci} + \texttt{npm test} con PostgreSQL 17. Trabajo \textit{Imagen Docker}: construye imagen, arranca y comprueba \path{/api/health} \\
 \texttt{deploy\allowbreak -cloud\allowbreak -run.yml} & CI verde en main (\texttt{workflow\allowbreak \_run}) & Autentica en Google Cloud con Workload Identity Federation, construye y sube imagen a Artifact Registry y despliega en Cloud Run con variables y 8 secretos de Secret Manager \\
 \path{memoria.yml} & Cambios en memoria/ & Compila la memoria con LuaLaTeX (latexmk + biber) y publica el PDF como artefacto \\
-Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{render\allowbreak.yaml} \\
+Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{render\allowbreak.yaml} \\*
 \bottomrule
 \end{longtable}
 
@@ -139,10 +139,6 @@ La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\all
     \item Esquema de autorización con dos roles, listado administrativo, comprobación de estado activo, baja lógica preservando auditoría y protección del último administrador.
     \item Persistencia relacional en PostgreSQL con migraciones versionadas y custodia de secretos fuera del código.
 \end{itemize}
-
-En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). En producción responde \texttt{permitido: true} para un dominio autorizado y \texttt{permitido: false} para un subdominio que no está en la lista. La Figura~\ref{fig:prueba-tecnica} muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
-
-\section{Prueba técnica (RF-13)}
 
 En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). En producción responde \texttt{permitido: true} para un dominio autorizado y \texttt{permitido: false} para un subdominio que no está en la lista. La Figura~\ref{fig:prueba-tecnica} muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
 

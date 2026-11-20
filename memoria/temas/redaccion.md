@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "redaccion"
-notas: 5
+notas: 6
 ---
 # redaccion
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie|Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -23,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[memoria]] · [[estilo]] · [[sprints]] · [[cicd]] · [[coherencia]] · [[pipeline]] · [[memoria-procesos]] · [[arquitectura]] · [[capturas]] · [[subfigure]]
+[[tfg]] · [[latex]] · [[memoria]] · [[subfigure]] · [[estilo]] · [[sprints]] · [[cicd]] · [[coherencia]] · [[pipeline]] · [[memoria-procesos]] · [[arquitectura]] · [[figuras]]

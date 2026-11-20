@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tfg"
-notas: 54
+notas: 55
 ---
 # tfg
 
@@ -50,6 +50,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]] · ⚠️ propuesto
@@ -81,4 +82,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[saas]] · [[verificacion]] · [[plantilla]] · [[diagramas]] · [[redaccion]] · [[scrum]] · [[capturas]] · [[tablas]]
+[[latex]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[saas]] · [[verificacion]] · [[plantilla]] · [[redaccion]] · [[diagramas]] · [[scrum]] · [[capturas]] · [[tablas]]

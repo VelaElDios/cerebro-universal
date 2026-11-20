@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 17
+notas: 18
 ---
 # verificacion
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
 - 🧪 [[memoria/conocimiento/recetas/como-manejar-fuentes-faltantes-en-verificacion-automatica-de|Cómo manejar fuentes faltantes en verificación automática de números]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
+- 🧪 [[memoria/conocimiento/recetas/validacion-completa-de-numeros-en-memoria-tfg-con-verificar|Validación completa de números en memoria TFG con verificar.py]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig|Verificación automática de diagramas con scripts/revisar_figuras.py]]
 
 ## Decisiones (y por qué)
@@ -38,4 +39,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[fuentes]] · [[memoria]] · [[memoria-procesos]] · [[numeros]] · [[metricas]] · [[test]] · [[sus]] · [[usabilidad]] · [[reglas-javier]] · [[pbis]]
+[[latex]] · [[fuentes]] · [[tfg]] · [[numeros]] · [[memoria]] · [[memoria-procesos]] · [[test]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[reglas-javier]] · [[pbis]]

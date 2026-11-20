@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T01:28:52+01:00",
+ "generado": "2026-11-20T02:51:00+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2612,6 +2612,22 @@
    "ruta": "memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier.md"
   },
   {
+   "id": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
+   "tipo": "decision",
+   "titulo": "Longtables deben terminar con \\\\* antes de \\bottomrule (regla 7 Javier)",
+   "temas": [
+    "latex",
+    "longtable",
+    "maquetacion",
+    "reglas-javier"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja.md"
+  },
+  {
    "id": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
    "tipo": "decision",
    "titulo": "Los datos de entrenamiento van a un repo privado",
@@ -2800,6 +2816,23 @@
    "ruta": "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md"
   },
   {
+   "id": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "tipo": "decision",
+   "titulo": "Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)",
+   "temas": [
+    "figuras",
+    "redaccion",
+    "reglas-javier",
+    "subfigure",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md"
+  },
+  {
    "id": "decision:proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api",
    "tipo": "decision",
    "titulo": "Protección del último administrador al cambiar rol (PATCH /api/users/:id/role) y al darse de baja (DELETE /api/users/:id)",
@@ -2936,6 +2969,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4.md"
+  },
+  {
+   "id": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "tipo": "decision",
+   "titulo": "Una sola imagen por captura en toda la memoria (regla 10 Javier)",
+   "temas": [
+    "duplicados",
+    "figuras",
+    "ref",
+    "reglas-javier"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi.md"
   },
   {
    "id": "decision:una-sola-portada-oficial-en-elements-portada-tex",
@@ -4185,6 +4234,22 @@
    "ruta": "memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co.md"
   },
   {
+   "id": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "tipo": "receta",
+   "titulo": "Fundir secciones de 1-2 párrafos (regla 9 Javier)",
+   "temas": [
+    "estructura",
+    "maquetacion",
+    "reglas-javier",
+    "secciones"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/fundir-secciones-de-1-2-parrafos-regla-9-javier.md"
+  },
+  {
    "id": "receta:generacion-de-terreno-por-ruidos-terreno-js",
    "tipo": "receta",
    "titulo": "Generación de terreno por ruidos (terreno.js)",
@@ -4751,6 +4816,40 @@
    "ruta": "memoria/conocimiento/recetas/validacion-anti-trampas-en-el-servidor-reloj-propio-formulas.md"
   },
   {
+   "id": "receta:validacion-completa-de-numeros-en-memoria-tfg-con-verificar",
+   "tipo": "receta",
+   "titulo": "Validación completa de números en memoria TFG con verificar.py",
+   "temas": [
+    "fuentes",
+    "memoria-tfg",
+    "numeros",
+    "test",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/validacion-completa-de-numeros-en-memoria-tfg-con-verificar.md"
+  },
+  {
+   "id": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "tipo": "receta",
+   "titulo": "Validación visual de diagramas TikZ/pgf-umlsd en PDF (reglas 16-18 Javier)",
+   "temas": [
+    "diagramas",
+    "pgf-umlsd",
+    "reglas-javier",
+    "tikz",
+    "validacion-visual"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas.md"
+  },
+  {
    "id": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "tipo": "receta",
    "titulo": "Verificación automática de diagramas con scripts/revisar_figuras.py",
@@ -4792,7 +4891,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 119,
+   "peso": 120,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -4806,7 +4905,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 21,
+   "peso": 22,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -4862,14 +4961,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 14,
+   "peso": 15,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 16,
+   "peso": 18,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -4890,7 +4989,7 @@
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -4918,7 +5017,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 17,
+   "peso": 18,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -4946,7 +5045,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 15,
+   "peso": 17,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -4974,14 +5073,14 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 54,
+   "peso": 55,
    "ruta": "memoria/temas/tfg.md"
   },
   {
    "id": "tema:reglas-javier",
    "tipo": "tema",
    "titulo": "reglas-javier",
-   "peso": 1,
+   "peso": 6,
    "ruta": "memoria/temas/reglas-javier.md"
   },
   {
@@ -5394,7 +5493,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -5590,7 +5689,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -5765,7 +5864,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -5898,7 +5997,7 @@
    "id": "tema:numeros",
    "tipo": "tema",
    "titulo": "numeros",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/numeros.md"
   },
   {
@@ -5919,7 +6018,7 @@
    "id": "tema:test",
    "tipo": "tema",
    "titulo": "test",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/test.md"
   },
   {
@@ -5958,6 +6057,13 @@
    "ruta": "memoria/temas/placeholders.md"
   },
   {
+   "id": "tema:subfigure",
+   "tipo": "tema",
+   "titulo": "subfigure",
+   "peso": 5,
+   "ruta": "memoria/temas/subfigure.md"
+  },
+  {
    "id": "tema:integridad",
    "tipo": "tema",
    "titulo": "integridad",
@@ -5984,6 +6090,20 @@
    "titulo": "bug",
    "peso": 1,
    "ruta": "memoria/temas/bug.md"
+  },
+  {
+   "id": "tema:duplicados",
+   "tipo": "tema",
+   "titulo": "duplicados",
+   "peso": 1,
+   "ruta": "memoria/temas/duplicados.md"
+  },
+  {
+   "id": "tema:ref",
+   "tipo": "tema",
+   "titulo": "ref",
+   "peso": 1,
+   "ruta": "memoria/temas/ref.md"
   },
   {
    "id": "tema:portada",
@@ -6161,13 +6281,6 @@
    "ruta": "memoria/temas/ui.md"
   },
   {
-   "id": "tema:subfigure",
-   "tipo": "tema",
-   "titulo": "subfigure",
-   "peso": 4,
-   "ruta": "memoria/temas/subfigure.md"
-  },
-  {
    "id": "tema:pagina vacia",
    "tipo": "tema",
    "titulo": "pagina vacia",
@@ -6332,7 +6445,7 @@
    "id": "tema:estructura",
    "tipo": "tema",
    "titulo": "estructura",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/estructura.md"
   },
   {
@@ -6376,6 +6489,13 @@
    "titulo": "prosa",
    "peso": 1,
    "ruta": "memoria/temas/prosa.md"
+  },
+  {
+   "id": "tema:secciones",
+   "tipo": "tema",
+   "titulo": "secciones",
+   "peso": 1,
+   "ruta": "memoria/temas/secciones.md"
   },
   {
    "id": "tema:ci",
@@ -6551,6 +6671,20 @@
    "titulo": "security",
    "peso": 1,
    "ruta": "memoria/temas/security.md"
+  },
+  {
+   "id": "tema:memoria-tfg",
+   "tipo": "tema",
+   "titulo": "memoria-tfg",
+   "peso": 1,
+   "ruta": "memoria/temas/memoria-tfg.md"
+  },
+  {
+   "id": "tema:validacion-visual",
+   "tipo": "tema",
+   "titulo": "validacion-visual",
+   "peso": 1,
+   "ruta": "memoria/temas/validacion-visual.md"
   }
  ],
  "aristas": [
@@ -13555,6 +13689,36 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
+   "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja",
+   "a": "receta:tablas-largas-en-longtable-con-ultima-fila-acompanada",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -13985,6 +14149,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "receta:como-se-agrupan-capturas-con-subfigure",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api",
    "a": "tema:auth",
    "tipo": "trata"
@@ -14368,6 +14567,31 @@
    "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
    "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "a": "tema:duplicados",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "a": "tema:ref",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:una-sola-portada-oficial-en-elements-portada-tex",
@@ -18400,6 +18624,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "a": "tema:estructura",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "a": "tema:secciones",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:generacion-de-terreno-por-ruidos-terreno-js",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -19922,6 +20171,71 @@
   {
    "de": "receta:validacion-anti-trampas-en-el-servidor-reloj-propio-formulas",
    "a": "receta:partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:validacion-completa-de-numeros-en-memoria-tfg-con-verificar",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-completa-de-numeros-en-memoria-tfg-con-verificar",
+   "a": "tema:memoria-tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-completa-de-numeros-en-memoria-tfg-con-verificar",
+   "a": "tema:numeros",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-completa-de-numeros-en-memoria-tfg-con-verificar",
+   "a": "tema:test",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-completa-de-numeros-en-memoria-tfg-con-verificar",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-completa-de-numeros-en-memoria-tfg-con-verificar",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "tema:validacion-visual",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "receta:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
    "tipo": "enlaza"
   },
   {

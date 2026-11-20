@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "numeros"
-notas: 4
+notas: 5
 ---
 # numeros
 
@@ -10,6 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «numeros» (este archivo s
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p|Cada cifra de un documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/validacion-completa-de-numeros-en-memoria-tfg-con-verificar|Validación completa de números en memoria TFG con verificar.py]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
@@ -19,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «numeros» (este archivo s
 
 ## Temas relacionados
 
-[[fuentes]] · [[verificacion]] · [[test]] · [[memoria-procesos]] · [[cifras]]
+[[fuentes]] · [[verificacion]] · [[test]] · [[memoria-procesos]] · [[cifras]] · [[memoria-tfg]]

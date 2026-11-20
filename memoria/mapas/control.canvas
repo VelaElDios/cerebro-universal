@@ -4,8 +4,8 @@
    "id": "proyecto:control",
    "type": "file",
    "file": "proyectos/control/bitacora.md",
-   "x": -541,
-   "y": 247,
+   "x": -540,
+   "y": 240,
    "width": 380,
    "height": 130,
    "color": "6"
@@ -15,7 +15,7 @@
    "type": "file",
    "file": "memoria/temas/conocimiento.md",
    "x": 152,
-   "y": -252,
+   "y": -258,
    "width": 388,
    "height": 110,
    "color": "5"
