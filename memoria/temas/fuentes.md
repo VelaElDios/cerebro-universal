@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "fuentes"
-notas: 10
+notas: 11
 ---
 # fuentes
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq|Cada cifra del documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica|Fuentes faltantes bloquean verificación automática]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica-de-numero|Fuentes faltantes bloquean verificación automática de números]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes|Números en la memoria deben aparecer tal cual en las fuentes]] · ⚠️ propuesto
@@ -28,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Temas relacionados
 
-[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[verificar.py]] · [[datos]] · [[juego]] · [[verificar]] · [[metricas]] · [[arma]] · [[fuente]] · [[latex]]
+[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[verificar.py]] · [[datos]] · [[juego]] · [[verificar]] · [[metricas]] · [[arma]] · [[fuente]] · [[memoria]]

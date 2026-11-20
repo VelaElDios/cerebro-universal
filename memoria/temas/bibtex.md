@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "bibtex"
-notas: 5
+notas: 6
 ---
 # bibtex
 
@@ -13,6 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l|Bibliografía BibTeX apalike: autores corporativos con doble llave y year en todas las entradas]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-autores-corporativos-en-doble-llave|Bibliografía BibTeX con autores corporativos en doble llave y year obligatorio]] · ⚠️ propuesto
 
 ## Datos
@@ -26,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[bibliografia]] · [[memoria]] · [[tfg]] · [[apalike]] · [[autores corporativos]]
+[[latex]] · [[bibliografia]] · [[apalike]] · [[memoria]] · [[tfg]] · [[autores corporativos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "donetonic"
-notas: 47
+notas: 48
 ---
 # donetonic
 
@@ -22,6 +22,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta|Burndown real del Sprint 2 vs gráficas DoneTonic en recta]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre|Cambio de alcance en Sprint 1: se añade P19 Cloud Run por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell|Cámara 3/4 con inercia, inclinación y feedback visual (destellos/aplastado)]]
 - ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]]
@@ -71,4 +72,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[github-flow]] · [[trazabilidad]] · [[memoria]] · [[backend]] · [[memoria-procesos]] · [[métricas]] · [[requisitos]]
+[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[github-flow]] · [[trazabilidad]] · [[memoria]] · [[backend]] · [[memoria-procesos]] · [[burndown]] · [[métricas]]

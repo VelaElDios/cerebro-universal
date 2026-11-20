@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgf-umlsd"
-notas: 15
+notas: 17
 ---
 # pgf-umlsd
 
@@ -9,7 +9,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que|Cómo corregir diagramas de entidad-relación en TikZ para que no crucen cajas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c|Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci|Cómo corregir warnings de pgf-umlsd en diagramas de secuencia]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
@@ -36,4 +38,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[diagramas]] · [[diagramas-secuencia]] · [[maquetacion]] · [[secuencia]] · [[sequencediagram]] · [[codigos estado]] · [[http]] · [[reglas-javier]] · [[validacion-visual]]
+[[latex]] · [[tikz]] · [[diagramas]] · [[diagramas-secuencia]] · [[sequencediagram]] · [[maquetacion]] · [[secuencia]] · [[memoria]] · [[codigos estado]] · [[http]] · [[reglas-javier]] · [[validacion-visual]]

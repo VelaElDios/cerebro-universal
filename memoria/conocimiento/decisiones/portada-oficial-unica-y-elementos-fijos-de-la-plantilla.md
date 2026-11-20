@@ -40,3 +40,13 @@ Confirmado: elements/preambulo.tex ya tiene el comentario "Segunda portada elimi
 ## Ampliación (2026-11-20, memoria-procesos)
 La portada oficial se incluye mediante `\input{elements/portada}` en `Memoria.tex`. No se toca `elements/portada.tex` (protegido). La plantilla completa inmutable: portada, declaración, Resumen, Abstract, índices, capítulos, anexos, bibliografía.
 relacionado: No se quita nada de la plantilla (regla 2 Javier)
+
+## Ampliación (2026-11-20, memoria-procesos)
+|
+  Estructura correcta de elements/preambulo.tex:
+  1. Configuración de página (raggedbottom, flotantes, etc.)
+  2. Declaración de autoría (centrada, con firma)
+  3. Resumen (≥150 palabras, dos sprints + juego) + Palabras clave
+  4. Abstract (≥120 palabras, inglés) + Keywords
+  5. Sin \input{elements/portada} ni textblock de logos.
+  Confirmado: elements/preambulo.tex ya tiene el comentario "Segunda portada eliminada" y solo contiene declaración, Resumen y Abstract.

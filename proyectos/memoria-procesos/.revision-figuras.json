@@ -356,5 +356,29 @@
   "problemas": [
    "La etiqueta de la flecha vertical entre 'users' y 'juego_records' dice 'tiene su mejor partida' y atraviesa o se superpone con los atributos 'tiempo INTEGER' y 'avatar TEXT' de la tabla 'juego_records'."
   ]
+ },
+ "851430b1210cec665d5ed93d21a7421d": {
+  "ok": false,
+  "problemas": [
+   "La línea inferior que conecta 'users' con 'juego_records' atraviesa por completo el espacio interior del diagrama pasando verticalmente por debajo de 'users'."
+  ]
+ },
+ "3647f8fd48e0a27bad53adb76d057422": {
+  "ok": true
+ },
+ "7a0bae37e7f7c1898d065607b2e0d3cb": {
+  "ok": true
+ },
+ "42f2657522307a676180de689f105735": {
+  "ok": false,
+  "problemas": [
+   "La línea vertical discontinua de retorno de 'authenticate' atraviesa el borde izquierdo de la caja 'alt' inferior correspondiente a 'cuenta pendiente'."
+  ]
+ },
+ "38b4fd2a5b052be344bdd96158246e74": {
+  "ok": false,
+  "problemas": [
+   "La flecha superior que sale de la entidad 'users' hacia 'juego_perfiles' cruza la línea vertical que conecta 'juego_perfiles' con 'juego_records'."
+  ]
  }
 }

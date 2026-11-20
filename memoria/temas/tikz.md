@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 24
+notas: 25
 ---
 # tikz
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 - 🧪 [[memoria/conocimiento/recetas/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que|Cómo corregir diagramas de entidad-relación en TikZ para que no crucen cajas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci|Cómo corregir warnings de pgf-umlsd en diagramas de secuencia]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl|Cómo escribir un diagrama de entidad-relación en TikZ legible]] · ⚠️ propuesto
@@ -48,4 +49,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[pgfplots]] · [[memoria]] · [[lua]] · [[maquetacion]] · [[tfg]] · [[diagramas-secuencia]] · [[secuencia]] · [[beamer]] · [[defensa]]
+[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[memoria]] · [[pgfplots]] · [[lua]] · [[maquetacion]] · [[tfg]] · [[diagramas-secuencia]] · [[secuencia]] · [[beamer]] · [[defensa]]

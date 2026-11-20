@@ -196,60 +196,55 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
     entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=2.5cm, align=left, font=\small, text width=5.5cm},
-    attr/.style={font=\small},
     pk/.style={font=\small\bfseries},
     uk/.style={font=\small\itshape},
-    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema},
-    node distance=3.5cm and 7.0cm
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % users (esquina superior izquierda)
-    \node[entity] (users) {
-        \textbf{users}\\
-        \pk id UUID PK\\
-        \attr email TEXT \uk (único entre no eliminadas)\\
-        \attr password\_hash TEXT (null con Google)\\
-        \attr role TEXT \texttt{user | admin}\\
-        \attr status TEXT \texttt{pending | active | deleted}\\
-        \attr auth\_provider TEXT \texttt{local | google}\\
-        \attr created\_at TIMESTAMPTZ\\
-        \attr deleted\_at TIMESTAMPTZ\\
-        \attr apodo TEXT\\
-        \attr apodo\_clave TEXT \uk\\
-        \attr avatar TEXT
-    };
-    % session (debajo de users)
-    \node[entity, below=of users] (session) {
+    % Layout: session (izquierda), users (centro), perfiles (derecha), records (debajo de perfiles)
+    \node[entity] (session) at (-7,0) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
-        \attr sess JSON\\
-        \attr expire TIMESTAMP
+        \texttt{sess JSON}\\
+        \texttt{expire TIMESTAMP}
     };
-    % juego_perfiles (a la derecha de users)
-    \node[entity, right=of users] (perfiles) {
+    \node[entity] (users) at (0,0) {
+        \textbf{users}\\
+        \pk id UUID PK\\
+        \texttt{email TEXT} \uk (único entre no eliminadas)\\
+        \texttt{password\_hash TEXT} (null con Google)\\
+        \texttt{role TEXT} \texttt{user | admin}\\
+        \texttt{status TEXT} \texttt{pending | active | deleted}\\
+        \texttt{auth\_provider TEXT} \texttt{local | google}\\
+        \texttt{created\_at TIMESTAMPTZ}\\
+        \texttt{deleted\_at TIMESTAMPTZ}\\
+        \texttt{apodo TEXT}\\
+        \texttt{apodo\_clave TEXT} \uk\\
+        \texttt{avatar TEXT}
+    };
+    \node[entity] (perfiles) at (9,0) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
-        \attr datos JSONB\\
-        \attr version INTEGER\\
-        \attr updated\_at TIMESTAMPTZ
+        \texttt{datos JSONB}\\
+        \texttt{version INTEGER}\\
+        \texttt{updated\_at TIMESTAMPTZ}
     };
-    % juego_records (debajo de juego_perfiles)
-    \node[entity, below=of perfiles] (records) {
+    \node[entity] (records) at (9,-6) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
-        \attr alias TEXT\\
-        \attr avatar TEXT\\
-        \attr tiempo INTEGER\\
-        \attr nivel INTEGER\\
-        \attr jefes INTEGER\\
-        \attr bajas INTEGER\\
-        \attr created\_at TIMESTAMPTZ
+        \texttt{alias TEXT}\\
+        \texttt{avatar TEXT}\\
+        \texttt{tiempo INTEGER}\\
+        \texttt{nivel INTEGER}\\
+        \texttt{jefes INTEGER}\\
+        \texttt{bajas INTEGER}\\
+        \texttt{created\_at TIMESTAMPTZ}
     };
-    % relaciones: users -> perfiles (horizontal con codo, etiqueta arriba, fuera de la línea)
-    \draw[arrow] (users.east) -- ++(3.0,0) |- node[near start, above, font=\footnotesize] {tiene su club} (perfiles.west);
-    % users -> records: sale por abajo de users, va hacia abajo, luego horizontal hacia la derecha por debajo de perfiles, y sube por la izquierda de records.
-    % La etiqueta se coloca sobre el tramo horizontal, lejos de las cajas.
-    \draw[arrow] (users.south) -- ++(0,-2.0) -| node[near end, above, font=\footnotesize] {tiene su mejor partida} (records.south west);
-    % session no tiene relaciones directas en el diagrama (se omite para claridad)
+    % users -> perfiles: horizontal directo
+    \draw[arrow] (users.east) -- node[above, font=\footnotesize] {tiene su club} (perfiles.west);
+    % users -> records: sale por el este de users, va horizontal a la derecha de perfiles, baja y entra por el sur de records
+    \draw[arrow] (users.east) -- ++(2,0) |- node[pos=0.75, right, font=\footnotesize] {tiene su mejor partida} (records.south);
+    % session -> users (opcional, relación de sesión)
+    \draw[arrow, dashed] (session.east) -- node[above, font=\footnotesize] {guarda userId} (users.west);
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
@@ -425,31 +420,27 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[2]{v}{Vista entrar}
-  \newinst[2]{c}{api.js}
+  \newinst[2]{fe}{Frontend}
   \newinst[2]{a}{API login}
   \newinst[2]{s}{userService}
-  \begin{call}{u}{email y contraseña}{v}{ok}
+  \begin{call}{u}{email y contrasena}{fe}{ok}
   \end{call}
-  \begin{call}{v}{login email contraseña}{c}{ok}
-  \end{call}
-  \begin{call}{c}{POST login}{a}{200 o 401}
+  \begin{call}{fe}{POST login}{a}{200 o 401}
     \begin{call}{a}{authenticate}{s}{usuario}
     \end{call}
-    \begin{sdblock}{alt}{email desconocido o contraseña mala}
+    \begin{sdblock}{alt}{email desconocido o contrasena mala}
       \mess{s}{401 mismo mensaje}{a}
     \end{sdblock}
     \begin{sdblock}{alt}{cuenta pendiente}
       \mess{s}{403 cuenta pendiente}{a}
     \end{sdblock}
     \begin{sdblock}{alt}{correcto}
-      \mess{a}{200 usuario y cookie}{c}
+      \mess{a}{200 usuario y cookie}{fe}
     \end{sdblock}
   \end{call}
-  % Las respuestas al cliente (vista) salen de api.js, que está a la izquierda de la API.
-  % Para evitar cruces, sacamos los mensajes fuera de los bloques alt y usamos flechas con codo.
-  \mess{c}{muestra reenviar el correo}{v}
-  \mess{c}{poner usuario e ir a jugar}{v}
+  % Respuestas del API al Frontend: fuera de los bloques alt, participantes contiguos.
+  \mess{a}{muestra reenviar el correo}{fe}
+  \mess{a}{poner usuario e ir a jugar}{fe}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Inicio de sesión local.}

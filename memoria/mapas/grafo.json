@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T20:48:49+01:00",
+ "generado": "2026-11-20T21:37:19+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2201,6 +2201,22 @@
    "ruta": "memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1.md"
   },
   {
+   "id": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "tipo": "decision",
+   "titulo": "Bibliografía BibTeX apalike: autores corporativos con doble llave y year en todas las entradas",
+   "temas": [
+    "apalike",
+    "bibliografia",
+    "bibtex",
+    "latex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l.md"
+  },
+  {
    "id": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
    "tipo": "decision",
    "titulo": "Bibliografía BibTeX con autores corporativos en doble llave y year obligatorio",
@@ -2216,12 +2232,29 @@
    "ruta": "memoria/conocimiento/decisiones/bibliografia-bibtex-con-autores-corporativos-en-doble-llave.md"
   },
   {
+   "id": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "tipo": "decision",
+   "titulo": "Burndown real del Sprint 2 vs gráficas DoneTonic en recta",
+   "temas": [
+    "burndown",
+    "donetonic",
+    "scrum",
+    "sprint"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta.md"
+  },
+  {
    "id": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
    "tipo": "decision",
    "titulo": "Cada cifra del documento sale de las fuentes, también las pequeñas",
    "temas": [
     "memoria",
-    "verificacion"
+    "verificacion",
+    "fuentes"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2869,6 +2902,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md"
+  },
+  {
+   "id": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "tipo": "decision",
+   "titulo": "Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure",
+   "temas": [
+    "latex",
+    "memoria",
+    "redaccion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt.md"
   },
   {
    "id": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
@@ -3559,6 +3607,22 @@
    "ruta": "memoria/conocimiento/recetas/como-configurar-un-proyecto-para-trabajar-sobre-un-repo-exte.md"
   },
   {
+   "id": "receta:como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que",
+   "tipo": "receta",
+   "titulo": "Cómo corregir diagramas de entidad-relación en TikZ para que no crucen cajas",
+   "temas": [
+    "latex",
+    "memoria",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que.md"
+  },
+  {
    "id": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
    "tipo": "receta",
    "titulo": "Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier",
@@ -3575,6 +3639,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re.md"
+  },
+  {
+   "id": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
+   "tipo": "receta",
+   "titulo": "Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt",
+   "temas": [
+    "latex",
+    "memoria",
+    "pgf-umlsd",
+    "sequencediagram"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c.md"
   },
   {
    "id": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
@@ -4984,21 +5064,21 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 129,
+   "peso": 133,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 51,
+   "peso": 54,
    "ruta": "memoria/temas/memoria.md"
   },
   {
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 24,
+   "peso": 25,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -5033,14 +5113,14 @@
    "id": "tema:bibtex",
    "tipo": "tema",
    "titulo": "bibtex",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/bibtex.md"
   },
   {
    "id": "tema:bibliografia",
    "tipo": "tema",
    "titulo": "bibliografia",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/bibliografia.md"
   },
   {
@@ -5054,7 +5134,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 15,
+   "peso": 17,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -5131,7 +5211,7 @@
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
@@ -5292,14 +5372,14 @@
    "id": "tema:burndown",
    "tipo": "tema",
    "titulo": "burndown",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/burndown.md"
   },
   {
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 47,
+   "peso": 48,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
@@ -5320,14 +5400,14 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 52,
+   "peso": 53,
    "ruta": "memoria/temas/scrum.md"
   },
   {
    "id": "tema:sprint",
    "tipo": "tema",
    "titulo": "sprint",
-   "peso": 34,
+   "peso": 35,
    "ruta": "memoria/temas/sprint.md"
   },
   {
@@ -5593,7 +5673,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -5789,7 +5869,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -5973,6 +6053,13 @@
    "titulo": "diagramas",
    "peso": 12,
    "ruta": "memoria/temas/diagramas.md"
+  },
+  {
+   "id": "tema:apalike",
+   "tipo": "tema",
+   "titulo": "apalike",
+   "peso": 2,
+   "ruta": "memoria/temas/apalike.md"
   },
   {
    "id": "tema:entrega",
@@ -6274,13 +6361,6 @@
    "titulo": "migraciones",
    "peso": 1,
    "ruta": "memoria/temas/migraciones.md"
-  },
-  {
-   "id": "tema:apalike",
-   "tipo": "tema",
-   "titulo": "apalike",
-   "peso": 1,
-   "ruta": "memoria/temas/apalike.md"
   },
   {
    "id": "tema:autores corporativos",
@@ -12786,6 +12866,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "a": "tema:apalike",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "a": "tema:bibliografia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "a": "tema:bibtex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
    "a": "tema:bibliografia",
    "tipo": "trata"
@@ -12821,6 +12926,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "a": "tema:burndown",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "a": "tema:sprint",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
    "a": "tema:memoria",
    "tipo": "trata"
@@ -12828,6 +12958,11 @@
   {
    "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
    "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "a": "tema:fuentes",
    "tipo": "trata"
   },
   {
@@ -14729,6 +14864,26 @@
    "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "a": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
@@ -17331,6 +17486,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
    "a": "tema:diagramas-secuencia",
    "tipo": "trata"
@@ -17384,6 +17564,31 @@
    "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
    "a": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",

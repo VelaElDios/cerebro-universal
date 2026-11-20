@@ -4,7 +4,7 @@ titulo: "Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 
 temas: ["donetonic", "fases", "fechas", "grada-colchonera", "hitos", "pbi", "scrum", "sprint", "tarea", "tareas"]
 claves: ["Sprint 1", "Sprint 2", "PBIs", "tareas", "fechas", "PBI", "tarea", "hito", "fase"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1, §4.4, §4.6"]
+fuentes: ["repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1, §4.4, §4.6", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-20"
@@ -123,5 +123,41 @@ Temas: [[donetonic]] · [[fases]] · [[fechas]] · [[grada-colchonera]] · [[hit
 > — `repo:saas/docs/gestion/README.md`
 
 Fusionada con: Fechas y estructura de los dos sprints con PBIs y tareas
+
+## Ampliación (2026-11-20, memoria-procesos)
+|
+  **Sprint 1 (4 semanas)**
+  - Fechas: 29/09/2026 – 27/10/2026
+  - PBIs: 19 (P1–P19)
+  - Tareas: 32 (T1–T32)
+  - Hitos: H1 (P1–P6, T1–T7), H2 (P7–P10, T8–T14), H3 (P11–P14, T15–T20), H4 (P15–P19, T21–T32)
+  - Prioridad: todos MUST
+  - Cambio de alcance: P19 (Cloud Run) añadido a mitad de sprint (D-16)
+  - Entregas: H1 12/10, H2 12/10, H3 12/10, H4 23/10, cierre sprint 27/10
+  - Burndown alcance entrega (16 PBIs): 15→9→5→1→2→0
+
+  **Sprint 2 (1 semana)**
+  - Fechas: 23/10/2026 – 29/10/2026
+  - PBIs: 29 (P20–P48)
+  - Tareas: 50 (T33–T82)
+  - Fases/etiquetas (7):
+    * Base del juego: P20–P28, T33–T51
+    * Fase 2·Club: P29–P32, T52–T56
+    * Fase 3·Ultras: P33–P34, T57–T60
+    * Fase 4·Mundo: P35–P37, T61–T63
+    * Fase 5·Rarezas: P38–P41, T64–T68
+    * Fase 6·Logros y sonido: P42–P46, T69–T76
+    * Calidad: P47–P48, T77–T82
+  - Prioridad: todos MUST
+  - Backlog registrado en DoneTonic al cerrar (29/10) → gráficas en recta (D-19)
+  - Evolución real por fechas PR: ver tabla burndown real
+  - Trabajo posterior (Fase 7, arreglos): PRs #58, #59 (no en DoneTonic)
+
+  **Totales proyecto**
+  - PBIs: 48 (P1–P48)
+  - Tareas: 82 (T1–T82)
+  - PRs fusionados: >50
+  - Releases: hito-1, hito-2, hito-3, hito-4, sprint-1
+  - Pruebas: 276 (cierre S2), 322 (tras Fase 7)
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
