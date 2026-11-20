@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-20T23:18:13+01:00",
+ "generado": "2026-11-21T00:45:15+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -310,6 +310,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/lecciones/los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e.md"
+  },
+  {
+   "id": "leccion:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "tipo": "leccion",
+   "titulo": "Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual",
+   "temas": [
+    "memoria",
+    "tfg",
+    "verificación"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos.md"
   },
   {
    "id": "leccion:no-meter-codigo-lua-dentro-de-directlua",
@@ -5074,7 +5089,7 @@
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 54,
+   "peso": 55,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -5190,6 +5205,20 @@
    "ruta": "memoria/temas/texttt.md"
   },
   {
+   "id": "tema:tfg",
+   "tipo": "tema",
+   "titulo": "tfg",
+   "peso": 57,
+   "ruta": "memoria/temas/tfg.md"
+  },
+  {
+   "id": "tema:verificación",
+   "tipo": "tema",
+   "titulo": "verificación",
+   "peso": 2,
+   "ruta": "memoria/temas/verificación.md"
+  },
+  {
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
@@ -5244,13 +5273,6 @@
    "titulo": "revision",
    "peso": 2,
    "ruta": "memoria/temas/revision.md"
-  },
-  {
-   "id": "tema:tfg",
-   "tipo": "tema",
-   "titulo": "tfg",
-   "peso": 56,
-   "ruta": "memoria/temas/tfg.md"
   },
   {
    "id": "tema:reglas-javier",
@@ -5979,13 +6001,6 @@
    "titulo": "perfil",
    "peso": 1,
    "ruta": "memoria/temas/perfil.md"
-  },
-  {
-   "id": "tema:verificación",
-   "tipo": "tema",
-   "titulo": "verificación",
-   "peso": 1,
-   "ruta": "memoria/temas/verificación.md"
   },
   {
    "id": "tema:memoria-tfg",
@@ -7221,6 +7236,26 @@
   {
    "de": "leccion:los-textos-de-conclusion-deben-salir-de-los-datos-no-estar-e",
    "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "tema:verificación",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
   {

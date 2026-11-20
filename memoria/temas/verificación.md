@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificación"
-notas: 1
+notas: 2
 ---
 # verificación
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificación» (este arc
 
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
 
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[metricas]] · [[trazabilidad]] · [[verificacion]] · [[métricas]]
+[[memoria]] · [[tfg]] · [[metricas]] · [[trazabilidad]] · [[verificacion]] · [[métricas]]

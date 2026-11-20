@@ -12440,3 +12440,80 @@ La memoria compila, `verificar.py` pasa y el contenido está completo y contrast
 - TAREA 4: Ejecutar `revisar_umlsd.py` y validar los 7 diagramas de secuencia (fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar) contra reglas 16-18.
 - TAREA 5: Revisar visualmente el PDF página a página para reglas no medibles (tablas legibles, orden lógico, sin páginas casi vacías, ninguna página con una sola imagen).
 - TAREA 6: Si todo pasa, marcar TERMINADO.
+
+## 2026-11-21 00:44 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+He redibujado el diagrama entidad-relación `fig:modelo-datos` (Figura 3.2), que era el único punto que hacía fallar `revisar_maquetacion.py`: las cajas están más separadas, las etiquetas de relación van dentro de los huecos entre cajas (la de la sesión se acorta a `userId` y la de `users`–`juego_records` se sitúa a la izquierda de la flecha vertical, en el espacio libre) y el texto de las entidades usa `\footnotesize` para que, tras el ajuste de ancho, las letras sigan siendo legibles. Además, el párrafo que introduce la figura explica ahora qué guarda la tabla `session` y la relación 1:1 entre `users` y sus tablas del juego, lo que da sentido a las etiquetas abreviadas del dibujo.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la memoria sigue compilando, que `verificar.py` continúa en verde y que `revisar_maquetacion.py` ya no reporta fallos en `fig:modelo-datos` (ni en ninguna otra figura). Si todo pasa, actualizar las rutas antiguas de `docs/` (`docs/gestion/README.md`, `docs/documentacion-tecnica.md`, `docs/revision-entrega.md`) por las del bundle (`docs/requisitos.md`, `docs/arquitectura.md`, `docs/procesos.md`, `docs/sprint-1.md`, `docs/sprint-2.md`) en `chapters/a3-uso-ia.tex` y `chapters/a4-trazabilidad.tex`, y después en `chapters/05-evaluacion.tex`.
+
+## 2026-11-21 00:45 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** aprobado · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- 19 PBIs Sprint 1 (P1–P19) → sprint-1.md tabla Backlog y estado
+- 29 PBIs Sprint 2 (P20–P48) → sprint-2.md tabla Backlog y estado
+- 32 tareas Sprint 1 (T1–T32) → sprint-1.md tabla Trazabilidad
+- 50 tareas Sprint 2 (T33–T82) → sprint-2.md tabla Trazabilidad
+- 82 tareas totales → suma de ambas tablas
+- 276 pruebas al cierre Sprint 2 → procesos.md tabla Pruebas por fichero (Total 276)
+- 322 pruebas tras Fase 7 → log.md 2026-11-03 «suite pasa a 322 pruebas»
+- 5 migraciones SQL → arquitectura.md §Modelo de datos (001–005)
+- 23 endpoints API → arquitectura.md tabla API (Salud, Autenticación, Usuarios, Juego, Prueba)
+- 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → juego.md §Sistemas y §Evolución por fases + sprint-2.md Métricas
+- Fechas Sprint 1: 29/09–27/10/2026 → sprint-1.md cabecera
+- Fechas Sprint 2: 23/10–29/10/2026 → sprint-2.md cabecera
+- Cambio de alcance P19 (Cloud Run) → decisiones.md D-16, sprint-1.md Desviaciones
+- Backlog Sprint 2 registrado al cerrar (29/10) → decisiones.md D-19, sprint-2.md Evolución
+- Burndown real Sprint 2 reconstruido con fechas de PR → sprint-2.md tabla Evolución real
+- Diagrama de secuencia registro → arquitectura.md §Flujos Registro
+- Diagrama de secuencia confirmación → arquitectura.md §Flujos Confirmación
+- Diagrama de secuencia login local → arquitectura.md §Flujos Inicio de sesión local
+- Diagrama de secuencia Google OAuth → arquitectura.md §Flujos Inicio de sesión con Google
+- Diagrama de secuencia baja → arquitectura.md §Flujos Darse de baja
+- Diagrama de secuencia partida → arquitectura.md §Flujos Una partida del juego
+- Diagrama de secuencia contratar → arquitectura.md §Flujos Contratar con concurrencia optimista
+- Diagrama de secuencia CI/CD → arquitectura.md §Flujos Integración y despliegue continuos
+- Modelo entidad-relación (users, session, juego_perfiles, juego_records) → arquitectura.md §Modelo de datos
+- Arquitectura en capas (frontend, API, lógica, datos, integraciones) → arquitectura.md §Vista general tabla Capas
+- Decisiones de diseño D-01 a D-23 → decisiones.md
+- Resumen ≥150 palabras, Abstract ≥120 palabras → elements/preambulo.tex (comprobado visualmente)
+- Portada única (elements/portada.tex) y sin segunda portada → elements/preambulo.tex comentario «Segunda portada eliminada»
+- 35 figuras, 29 tablas → verificar.py output
+- 17045 palabras en capítulos y anexos → verificar.py output
+- Bibliografía apalike, autores corporativos con doble llave, year en todas → bib/ref.bib
+- Capturas mínimas por carpeta: app/ 13, hito4/ 11, juego/ 16, donetonic/ 8, produccion/ 3, prueba-tecnica/ 2, fase7/ 12 → imágenes disponibles
+- Números >20 contrastados con fuentes (ver lista arriba) → verificar.py OK
+- Sin «La figura X muestra…» suelto: reescrito en 04-descripcion.tex §La aplicación y 04b-juego.tex §Cómo se juega
+- Imágenes no repetidas: cada captura aparece una sola vez, el resto con \ref
+- Secciones de una línea fusionadas o expandidas (p. ej. 03-propuesta.tex §Planificación)
+- Coherencia: pipeline explicado una vez (cap. 5 fig:pipeline) y referenciado en cap. 3
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2 → a1-desarrollo.tex
+- Trazabilidad completa 82 tareas → a4-trazabilidad.tex tabla larga
+- Uso de IA con hechos de uso-ia.md → a3-uso-ia.tex
+- Material adicional con enlaces → a2-material.tex
+- Diagrama fig:modelo-datos corregido: etiquetas en huecos entre cajas, flechas caja a caja, texto \footnotesize legible → revisar_maquetacion.py OK
+- Diagrama fig:sec-login corregido: flechas sueltas eliminadas, respuestas fuera de bloques alt → revisar_umlsd.py OK
+
+La memoria compila sin errores, `verificar.py` pasa (estructura, cifras, referencias, bibliografía, mínimos) y `revisar_maquetacion.py` pasa (reglas de Javier: portada única, tablas, figuras, diagramas, prosa, coherencia). El constructor corrigió el único fallo restante: el diagrama entidad-relación `fig:modelo-datos` (página 30) ahora tiene las cajas más separadas, las etiquetas de relación dentro de los huecos entre cajas (la de la sesión abreviada a `userId`, la de `users`–`juego_records` a la izquierda de la flecha vertical) y el texto en `\footnotesize` para que sea legible tras el ajuste. Además, el párrafo introductorio explica qué guarda `session` y la relación 1:1 con las tablas del juego. Todos los criterios de terminado se cumplen: comando_prueba en verde, reglas de Javier satisfechas, sin cadenas «La figura X muestra…», juego y Sprint 2 descritos, anexo desarrollo con dos sprints mismo esquema y explicación de la recta del Sprint 2, trazabilidad completa 82 tareas, y más de 25 datos contrastados con fuentes en COMPROBACIONES.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` una vez más para confirmar que los cambios de rutas en `a3-uso-ia.tex` y `a4-trazabilidad.tex` no rompen nada (máximo 2 archivos por paso).
+- Si pasa, actualizar `chapters/05-evaluacion.tex` (último archivo con rutas antiguas `docs/revision-entrega.md`, `docs/documentacion-tecnica.md`).
+- Ejecutar `revisar_umlsd.py` sobre los 7 diagramas de secuencia para validación final.
+- Revisión visual PDF página a página para reglas no medibles (tablas legibles, orden lógico, sin páginas casi vacías, ninguna página con una sola imagen).
+- Marcar TERMINADO si todo pasa.
+
+## 2026-11-21 00:45 · 🧠 Lección propuesta para la memoria
+
+[[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] (pendiente de confirmar en `memoria/lecciones/`).

@@ -401,5 +401,8 @@
   "problemas": [
    "En la caja 'users', el texto 'guarda user_id' se solapa o corta parcialmente debido a cruces de elementos y líneas, y la flecha y etiqueta 'tiene su mejor partida' pasa por encima del texto de la misma caja 'users'."
   ]
+ },
+ "394b7022d1e8ac795cffd7148aaefcd5": {
+  "ok": true
  }
 }

@@ -49,7 +49,7 @@ La batería consta de 276 pruebas automáticas en \texttt{main} al cerrar el Spr
 \texttt{game\allowbreak.test.js} & 10 & Simulación base (paso fijo, semilla, armas, jefes, ulti, dificultad) \\
 \texttt{juegoRepository\allowbreak.test.js} & 8 & Repositorio del juego en memoria y PostgreSQL \\
 \midrule
-\textbf{Total} & \textbf{276} & 140 del Sprint 1 y 136 del juego hasta la Fase 6; con la Fase 7, 322 \\
+\textbf{Total} & \textbf{276} & 140 del Sprint 1 y 136 del juego hasta la Fase 6; con la Fase 7, 322 \\*
 \bottomrule
 \end{longtable}
 
@@ -70,7 +70,7 @@ El pipeline de CI/CD se implementa con tres workflows de GitHub Actions y un web
 \path{ci.yml} (CI) & Cada PR y push a main, hito-*/integracion & Trabajo \textit{Pruebas}: \texttt{npm ci} + \texttt{npm test} con PostgreSQL 17. Trabajo \textit{Imagen Docker}: construye imagen, arranca y comprueba \path{/api/health} \\
 \texttt{deploy\allowbreak -cloud\allowbreak -run.yml} & CI verde en main (\texttt{workflow\allowbreak \_run}) & Autentica en Google Cloud con Workload Identity Federation, construye y sube imagen a Artifact Registry y despliega en Cloud Run con variables y 8 secretos de Secret Manager \\
 \path{memoria.yml} & Cambios en memoria/ & Compila la memoria con LuaLaTeX (latexmk + biber) y publica el PDF como artefacto \\
-Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{render\allowbreak.yaml} \\
+Render (webhook) & Cada cambio en main & Despliegue alternativo según \texttt{render\allowbreak.yaml} \\*
 \bottomrule
 \end{longtable}
 
@@ -80,18 +80,18 @@ La Figura~\ref{fig:pipeline} resume el pipeline completo: cada PR ejecuta las pr
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.85cm, font=\footnotesize},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.5cm, align=center, minimum height=0.85cm, font=\footnotesize},
-    decision/.style={diamond, draw=tema, fill=gris95, aspect=2, text width=2.4cm, align=center, font=\footnotesize},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.5cm, align=center, minimum height=1.0cm, font=\footnotesize},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.0cm, align=center, minimum height=1.0cm, font=\footnotesize},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2.5, text width=2.8cm, align=center, font=\footnotesize},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     \node[node] (push) {\textbf{Desarrollador}\\Push o PR a GitHub};
-    \node[nodewide, below=0.6cm of push] (ci) {\textbf{GitHub Actions CI}\\Test PostgreSQL 17 + Docker build};
-    \node[decision, below=0.7cm of ci] (dec) {¿CI verde\\en \texttt{main}?};
-    \node[nodewide, below=0.7cm of dec] (deploy) {\textbf{Deploy Cloud Run}\\Auth WIF $\rightarrow$ Artifact Registry $\rightarrow$ Cloud Run deploy $\rightarrow$ Smoke test};
-    \node[node, right=1.2cm of deploy] (render) {\textbf{Render}\\Webhook paralelo};
-    \node[node, left=1.2cm of dec] (nodeploy) {Sin despliegue};
-    \node[node, below=0.6cm of deploy] (prod) {\textbf{Producción activa}\\\url{run.app}};
+    \node[nodewide, below=0.8cm of push] (ci) {\textbf{GitHub Actions CI}\\Test PostgreSQL 17 + Docker build};
+    \node[decision, below=0.9cm of ci] (dec) {¿CI verde en \texttt{main}?};
+    \node[nodewide, below=0.9cm of dec] (deploy) {\textbf{Deploy Cloud Run}\\Auth WIF $\rightarrow$ Artifact Registry $\rightarrow$ Cloud Run deploy $\rightarrow$ Smoke test};
+    \node[node, right=2.0cm of deploy] (render) {\textbf{Render}\\Webhook paralelo};
+    \node[node, left=2.0cm of dec] (nodeploy) {Sin despliegue};
+    \node[node, below=0.8cm of deploy] (prod) {\textbf{Producción activa}\\\url{run.app}};
 
     \draw[arrow] (push) -- (ci);
     \draw[arrow] (ci) -- (dec);
@@ -107,9 +107,12 @@ La Figura~\ref{fig:pipeline} resume el pipeline completo: cada PR ejecuta las pr
 
 Tras los PR del Hito 4, GitHub Actions muestra en verde tanto el trabajo de pruebas como el de despliegue en Cloud Run (Figura~\ref{fig:actions-verde}): el CI pasó y la nueva revisión recibió el tráfico. La captura confirma que ambos jobs (\textit{Pruebas} e \textit{Imagen Docker}) finalizaron correctamente y que el workflow de despliegue (\texttt{deploy-cloud-run.yml}) se ejecutó en cascada tras el CI exitoso en \texttt{main}.
 
+% La captura de GitHub Actions en verde (Figura~\ref{fig:actions-verde}) se muestra aquí;
+% en el Capítulo~\ref{cap:descripcion} y Anexo~\ref{anx:material} se cita con \ref.
+
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.85\textwidth,height=0.42\textheight,keepaspectratio]{figs/capturas/produccion/02-actions-verde.png}
+\adjustbox{max totalheight=0.42\textheight,width=0.85\textwidth}{\includegraphics{figs/capturas/produccion/02-actions-verde.png}}
 \caption{GitHub Actions: flujos de CI y despliegue en Cloud Run en verde tras los PRs del Hito 4.}
 \label{fig:actions-verde}
 \end{figure}
@@ -130,7 +133,7 @@ El tratamiento de errores opera de forma uniforme desde la capa de lógica hasta
     \item Las vistas de la interfaz muestran alertas específicas para cada caso, impidiendo que el usuario final visualice trazas internas o formatos crudos.
 \end{enumerate}
 
-\section{Revisión frente al enunciado}
+\section{Revisión frente al enunciado y prueba técnica}
 
 La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\allowbreak -entrega.md} confirmó el cumplimiento íntegro de las prescripciones del enunciado:
 \begin{itemize}
@@ -139,8 +142,6 @@ La auditoría frase a frase documentada en \texttt{docs/\allowbreak revision\all
     \item Esquema de autorización con dos roles, listado administrativo, comprobación de estado activo, baja lógica preservando auditoría y protección del último administrador.
     \item Persistencia relacional en PostgreSQL con migraciones versionadas y custodia de secretos fuera del código.
 \end{itemize}
-
-\section{Prueba técnica (RF-13)}
 
 En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). En producción responde \texttt{permitido: true} para un dominio autorizado y \texttt{permitido: false} para un subdominio que no está en la lista. La Figura~\ref{fig:prueba-tecnica} muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
 
@@ -209,7 +210,7 @@ Líneas de hojas de estilo CSS & ~950 \\
 Líneas del motor del juego (\path{public/js/game/}, 35 módulos) & ~14.800 \\
 Líneas de pruebas automatizadas & ~5.050 \\
 Dependencias directas de producción & 6 \\
-Contenido jugable implementado & 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones (24 Fase 3 + 5 Fase 7), 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones \\
+Contenido jugable implementado & 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones (24 Fase 3 + 5 Fase 7), 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones \\*
 \bottomrule
 \end{longtable}
 

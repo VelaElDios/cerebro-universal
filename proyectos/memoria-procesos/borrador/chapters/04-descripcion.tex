@@ -189,19 +189,21 @@ Gráficos y sonido generados con código & Imágenes y ficheros de audio & Sin p
 \section{Modelo de datos}
 \label{sec:modelo-datos}
 
-El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tablas principales, incluidas las del juego: \texttt{users}, \texttt{session}, \texttt{juego\_perfiles} y \texttt{juego\_records}.
+El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tablas principales, incluidas las del juego: \texttt{users}, \texttt{session}, \texttt{juego\_perfiles} y \texttt{juego\_records}. Cada cuenta tiene un único perfil de juego y, como mucho, un registro con su mejor partida; la tabla \texttt{session} guarda el identificador de usuario (\texttt{userId}) y, durante el acceso con Google, el valor \texttt{state}.
 
 \begin{figure}[htbp]
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=2.5cm, align=left, font=\small, text width=5.5cm},
-    pk/.style={font=\small\bfseries},
-    uk/.style={font=\small\itshape},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=2.0cm, align=left, font=\footnotesize, text width=4.5cm, inner sep=3pt},
+    pk/.style={font=\footnotesize\bfseries},
+    uk/.style={font=\footnotesize\itshape},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Layout: session (izquierda), users (centro), perfiles (derecha), records (debajo de perfiles)
-    \node[entity] (session) at (-7,0) {
+    % Layout: session (izquierda), users (centro), perfiles (derecha), records (debajo de users).
+    % Las cajas están separadas y cada etiqueta de relación va dentro del hueco entre
+    % dos cajas, de modo que ni la flecha ni el texto tocan el contenido de las entidades.
+    \node[entity] (session) at (-6.6,0) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \texttt{sess JSON}\\
@@ -221,14 +223,14 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{apodo\_clave TEXT} \uk\\
         \texttt{avatar TEXT}
     };
-    \node[entity] (perfiles) at (9,0) {
+    \node[entity] (perfiles) at (7.4,0) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \texttt{datos JSONB}\\
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entity] (records) at (0,-6) {
+    \node[entity] (records) at (0,-7.6) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \texttt{alias TEXT}\\
@@ -239,12 +241,13 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    % users -> perfiles: horizontal directo
+    % users -> perfiles: flecha horizontal entre cajas vecinas, etiqueta en el hueco.
     \draw[arrow] (users.east) -- node[above, font=\footnotesize] {tiene su club} (perfiles.west);
-    % users -> records: vertical directa de users a records (sin cruzar ninguna caja)
+    % users -> records: flecha vertical; la etiqueta queda a la izquierda, en el espacio
+    % libre que hay entre la caja users y la caja juego_records.
     \draw[arrow] (users.south) -- node[left, font=\footnotesize, pos=0.5] {tiene su mejor partida} (records.north);
-    % session -> users (opcional, relación de sesión)
-    \draw[arrow, dashed] (session.east) -- node[above, font=\footnotesize] {guarda userId} (users.west);
+    % session -> users: la sesión guarda el userId (y el state durante el acceso con Google).
+    \draw[arrow, dashed] (session.east) -- node[above, font=\footnotesize] {userId} (users.west);
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
