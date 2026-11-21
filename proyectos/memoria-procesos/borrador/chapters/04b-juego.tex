@@ -204,12 +204,12 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.6cm, align=center, minimum height=0.9cm, font=\footnotesize},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.8cm, align=center, minimum height=0.9cm, font=\footnotesize},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.4cm, align=center, minimum height=0.8cm, font=\footnotesize},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.8cm, font=\footnotesize},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Columna 1: Simulación pura
-    \node[nodewide] (mundo) {mundo.js\\bucle paso fijo};
+    \node[nodewide] (mundo) {mundo.js\\bucle paso fijo\\config.js (equilibrio)};
     \node[node, below=0.6cm of mundo] (armas) {armas.js};
     \node[node, below=0.6cm of armas] (combate) {combate.js};
     \node[node, below=0.6cm of combate] (jefes) {jefes.js};
@@ -217,9 +217,8 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
     \node[node, below=0.6cm of oleadas] (terreno) {terreno.js};
     \node[node, below=0.6cm of terreno] (ultras) {ultras.js / ulti.js};
     \node[node, below=0.6cm of ultras] (mejoras) {mejoras.js};
-    \node[node, right=3.0cm of mundo] (config) {config.js\\equilibrio};
     % Columna 2: Presentación
-    \node[nodewide, right=5.5cm of mundo] (juego) {juego.js\\pantallas y bucle};
+    \node[nodewide, right=2.1cm of mundo] (juego) {juego.js\\pantallas y bucle};
     \node[node, below=0.6cm of juego] (render) {render.js / render-mundo.js\\/ render-ultras.js};
     \node[node, below=0.6cm of render] (sprites) {sprites.js\\chibi 32x32};
     \node[node, below=0.6cm of sprites] (hud) {hud.js};
@@ -227,7 +226,7 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
     \node[node, below=0.6cm of audio] (ui2) {club-ui.js, fin-ui.js,\\firma.js};
     \node[node, below=0.6cm of ui2] (entrada) {entrada.js};
     % Columna 3: Servidor
-    \node[nodewide, right=5.5cm of juego] (js) {juegoService.js};
+    \node[nodewide, right=2.1cm of juego] (js) {juegoService.js};
     \node[node, below=0.6cm of js] (club) {club.js};
     \node[node, below=0.6cm of club] (config2) {config.js};
     \node[node, below=0.6cm of config2] (logros) {logros.js};
@@ -239,7 +238,7 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
     \draw[arrow] (mundo) -- (terreno);
     \draw[arrow] (mundo) -- (ultras);
     \draw[arrow] (mundo) -- (mejoras);
-    \draw[arrow, dashed] (mundo) -- (config);
+    % config.js se cita dentro del nodo mundo.js
     \draw[arrow] (juego) -- (render);
     \draw[arrow] (render) -- (sprites);
     \draw[arrow] (juego) -- (hud);
@@ -247,7 +246,7 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
     \draw[arrow] (juego) -- (ui2);
     \draw[arrow] (juego) -- (entrada);
     \draw[arrow] (juego) -- (mundo);
-    \draw[arrow] (juego.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {api.js $\rightarrow$ /api/juego} (js.west);
+    \draw[arrow] (juego.east) -- ++(0.5,0) |- node[near start, above, font=\scriptsize] {api.js $\rightarrow$ /api/juego} (js.west);
     \draw[arrow] (js) -- (club);
     \draw[arrow, dashed] (js) -- (config2);
     \draw[arrow] (js) -- (logros);

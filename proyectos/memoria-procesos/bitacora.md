@@ -13014,3 +13014,60 @@ El constructor redujo anchos en las longtables pero persisten dos overfull hbox 
 ## 2026-11-21 22:55 · 🧠 Conocimiento guardado
 
 [[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]]
+
+## 2026-11-21 23:37 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Los dos overfull hbox (176 pt y 222 pt) provienen de los dibujos TikZ `fig:capas` y `fig:juego-arquitectura`: sus columnas laterales quedan fuera del ancho de página. He reducido anchos de caja y distancias entre columnas (sin `resizebox`/`scale`, para no encoger las letras) y he absorbido el nodo suelto `config.js` dentro de `mundo.js` en la arquitectura del juego.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 8: la página 44 del PDF tiene solo una imagen (39 palabras). Hazla más pequeña o júntala con texto u otra figura. Empieza así: «(a) Cuenta con…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que desaparecen los 2 overfull hbox y que `verificar.py` pasa; después ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py`, y revisar a ojo en el PDF que `fig:capas` y `fig:juego-arquitectura` ya caben sin escalar y con letras legibles (reglas 16–18).
+
+## 2026-11-21 23:40 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 95 páginas, sin "Infinite glue shrinkage")
+- verificar.py: OK (35 figuras, 29 tablas, 17038 palabras)
+- revisar_maquetacion.py: FALLA en Regla 8 — página 44 tiene solo una imagen (fig:hito4-estados-privacidad con 4 subfiguras) y 39 palabras de texto
+- revisar_umlsd.py: no ejecutado (fallo previo)
+- Datos contrastados: 19 PBIs Sprint 1 (sprint-1.md), 29 PBIs Sprint 2 (sprint-2.md), 82 tareas totales, 276 pruebas al cierre Sprint 2 (procesos.md), 322 tras Fase 7 (log.md), 5 migraciones, 23 endpoints, 6 dependencias producción
+- Overfull hbox previos en fig:capas y fig:juego-arquitectura: constructor redujo anchos de caja y distancias (sin resizebox/scale), pero hay que verificar en PDF que letras ≥7,5 pt y flechas caja-a-caja
+- Bibliografía: apalike, autores corporativos con doble llave, year en todas (s.f. si no hay fecha)
+- Portada única: elements/portada.tex (protegida), preambulo.tex sin segunda portada ✓
+- Resumen ≥150 palabras, Abstract ≥120 palabras ✓
+- Trazabilidad completa 82 tareas en a4-trazabilidad.tex ✓
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2 ✓
+
+Lo bueno: la compilación pasa, verificar.py pasa, la estructura y contenidos cumplen la spec (capítulos, anexos, tablas longtable, diagramas de secuencia con sequencediagram, subfiguras, capturas mínimas por carpeta, trazabilidad completa). El constructor corrigió los overfull hbox en los TikZ fig:capas y fig:juego-arquitectura reduciendo anchos de caja y distancias (correcto: sin resizebox/scale).
+
+Lo malo: revisar_maquetacion.py detecta violación de Regla 8 en página 44 — la figura fig:hito4-estados-privacidad (4 subfiguras: cuenta confirmada, Google cuenta creada, panel admin estados, privacidad) queda sola en la página con solo 39 palabras. Las subfiguras usan height=0.25\textheight; hay que reducirlas a ≤0.18\textheight o añadir texto explicativo alrededor. También hay que ejecutar revisar_umlsd.py y validar a ojo los 13 diagramas (7 sequencediagram + 6 TikZ/pgfplots) para reglas 16-18 (fuentes ≥7,5 pt, flechas caja-a-caja con codos, sin palabras partidas en cajas, ≤6 participantes en sequencediagram).
+
+Qué he corregido yo: nada aún; el fallo de maquetación requiere reducir altura de las subfiguras problemáticas en chapters/04-descripcion.tex.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK (Regla 8 corregida).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin # _ & % $ {} \ en textos, sin paréntesis en \mess, sin comandos LaTeX en textos).
+- **Revisión visual obligatoria del PDF página a página** para reglas 16-18 de Javier:
+  - fig:capas (TikZ): ≤6 participantes, fuentes ≥7,5 pt, flechas caja-a-caja con codos (|-/-|), sin palabras partidas en cajas.
+  - fig:modelo-datos (TikZ ER): igual.
+  - fig:juego-arquitectura (TikZ): igual.
+  - fig:pipeline (TikZ): igual.
+  - fig:burndown-s1, fig:burndown-s2 (pgfplots): ejes legibles, marcas ≥7,5 pt.
+  - 7 sequencediagram (sec-registro, sec-confirmacion, sec-login, sec-google, sec-baja, sec-partida, sec-contratar): ≤6 participantes cada uno, textos sin caracteres prohibidos, flechas no cruzan cajas, escalados con adjustbox sin encoger fuentes <7,5 pt.
+- Si algún diagrama incumple, **redibujarlo** (separar cajas, aumentar text width, saltos de línea manuales \\, flechas con codos |-/-|, reducir participantes agrupando) **sin usar adjustbox/resizebox/scale** para encoger.
+- Verificar que todas las longtable terminan con \\* antes de \bottomrule para que la última fila no quede sola en página siguiente.
+- Confirmar que el PDF final no tiene «??», referencias rotas, ni overfull hbox/vbox.
+
+## 2026-11-21 23:40 · 🧠 Conocimiento guardado
+
+[[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]

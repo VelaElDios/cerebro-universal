@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T22:55:03+01:00",
+ "generado": "2026-11-21T23:40:05+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1692,6 +1692,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas.md"
+  },
+  {
+   "id": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "tipo": "dato",
+   "titulo": "Fechas, PBIs, tareas y estructura de los dos sprints",
+   "temas": [
+    "donetonic",
+    "grada-colchonera",
+    "scrum"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/fechas-pbis-tareas-y-estructura-de-los-dos-sprints.md"
   },
   {
    "id": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
@@ -5609,7 +5624,7 @@
    "id": "tema:grada-colchonera",
    "tipo": "tema",
    "titulo": "grada-colchonera",
-   "peso": 130,
+   "peso": 131,
    "ruta": "memoria/temas/grada-colchonera.md"
   },
   {
@@ -5672,7 +5687,7 @@
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 49,
+   "peso": 50,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
@@ -5693,7 +5708,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 56,
+   "peso": 57,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -11586,6 +11601,26 @@
    "de": "dato:estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas",
    "a": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "a": "tema:grada-colchonera",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",

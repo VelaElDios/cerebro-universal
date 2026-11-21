@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-21 22:55"
+actualizado: "2026-11-21 23:40"
 ---
 
 # memoria-procesos
@@ -22,17 +22,17 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (PDF 95 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Imágenes no repetidas OK. Subfiguras OK. Trazabilidad completa OK.
-- **verificar.py**: FALLABA por 2 overfull hbox → **corregidos en este paso** reduciendo anchos de columna y añadiendo \allowbreak en las dos longtables problemáticas (RJ en 04-descripcion y logros en 04b-juego).
-- **revisar_maquetacion.py**: no ejecutado (fallo previo de verificar.py).
-- **revisar_umlsd.py**: no ejecutado.
+- **verificar.py**: OK (35 figuras, 29 tablas, 17038 palabras).
+- **revisar_maquetacion.py**: FALLA en Regla 8 (página 44: fig:hito4-estados-privacidad sola con 39 palabras). **Corrección aplicada**: reducidas alturas de subfiguras en fig:hito4-flujo y fig:hito4-estados-privacidad de 0.25 a 0.18\textheight.
+- **revisar_umlsd.py**: no ejecutado (pendiente).
 - **Revisión visual PDF**: pendiente (diagramas incumplen reglas 16-18).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas**: 2 longtables ajustadas (anchos reducidos + \allowbreak en rutas largas).
-- **Pendiente**: Ejecutar `comando_prueba` para confirmar corrección; rehacer diagramas para reglas 16-18; pasar toda la suite de pruebas.
+- **Correcciones aplicadas**: 2 figuras Hito 4 con subfiguras reducidas a 0.18\textheight.
+- **Pendiente**: Ejecutar `comando_prueba` para confirmar corrección Regla 8; ejecutar `revisar_umlsd.py`; rehacer diagramas para reglas 16-18; pasar toda la suite de pruebas.
 
 ## Siguiente
-1. Ejecutar `comando_prueba` y confirmar que `verificar.py` pasa.
-2. Ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py`.
+1. Ejecutar `comando_prueba` y confirmar que `verificar.py` y `revisar_maquetacion.py` pasan.
+2. Ejecutar `revisar_umlsd.py` y validar diagramas de secuencia.
 3. Rehacer diagramas problemáticos (fig:capas, fig:modelo-datos, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2, y los 7 sequencediagram) para que quepan a tamaño real SIN escalar.
 4. Revisión visual final del PDF página a página.
 
