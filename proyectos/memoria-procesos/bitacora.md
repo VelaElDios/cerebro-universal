@@ -12747,3 +12747,51 @@ El constructor intentó corregir los diagramas (reglas 16-18) pero la verificaci
 ## 2026-11-21 18:56 · 🧠 Conocimiento guardado
 
 [[como-evitar-overfull-hbox-con-texttt-largo]] · [[diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18]] · [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]] · [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth]] · [[citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite]] · [[referencia-donetonic-como-herramienta-de-gestion-agil]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]]
+
+## 2026-11-21 20:52 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los dos overfull hbox detectados por verificar.py. El primero está en chapters/04-descripcion.tex (líneas 132-133, 176pt) en la tabla de requisitos funcionales del Sprint 1, donde las rutas largas en \texttt{} y \path{} no se parten. El segundo en chapters/04b-juego.tex (líneas 254-255, 222pt) en la tabla de sistemas del juego. Aplicaré \allowbreak en puntos naturales (barras, puntos) dentro de \texttt{} y \path{} para que LaTeX pueda partir las líneas.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(no aplicado: no encuentro el texto: «RF-01 & Registro con email y contraseña (validación, email ú») chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 2 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que los overfull hbox se han corregido. Si persisten, revisar otras rutas largas en tablas (p. ej., tabla de módulos del backend, tabla de API, tabla de trazabilidad). Una vez que verificar.py pase, pasar a rehacer los diagramas que incumplen reglas 16-18 (fig:capas, fig:modelo-datos, fig:juego-arquitectura y los 7 de secuencia).
+
+## 2026-11-21 20:57 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 92 páginas, sin errores de LaTeX).
+- `verificar.py`: FALLA por 2 overfull hbox (chapters/04-descripcion.tex líneas 132-133: 176 pt; chapters/04b-juego.tex líneas 254-255: 222 pt).
+- `revisar_maquetacion.py`: no se ejecutó porque `verificar.py` falló.
+- `revisar_umlsd.py`: no se ejecutó.
+- Reglas de Javier: portada única OK; declaraciones, resumen, abstract OK; índices OK. Pero persisten overfull hbox en tablas largas (regla 5: nada fuera del margen).
+- Cadenas «La figura X muestra…» eliminadas (prosa con subfiguras) OK.
+- Imágenes no repetidas OK.
+- Secciones con párrafos reales OK.
+- Coherencia entre capítulos OK.
+- Juego y Sprint 2 descritos OK.
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2 OK.
+- Trazabilidad 82 tareas completa OK.
+- Números contrastados con fuentes: 19 PBIs Sprint 1, 29 PBIs Sprint 2, 32+50=82 tareas, 276 pruebas al cierre Sprint 2, 322 tras Fase 7, 5 migraciones, 23 endpoints, 6 dependencias, 36 jugadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → todos coinciden con `docs/requisitos.md`, `docs/sprint-1.md`, `docs/sprint-2.md`, `docs/juego.md`, `docs/arquitectura.md`.
+
+El builder intentó corregir los overfull hbox añadiendo `\allowbreak` en rutas largas dentro de `\texttt{}`, pero la verificación sigue fallando con 176 pt y 222 pt de desbordamiento. La causa raíz es que las tablas largas (`longtable`) tienen anchos de columna que suman demasiado (incluyendo el padding lateral) y/o celdas con contenido que no se parte. La solución definitiva es:
+1. Reducir los anchos de columna para que la suma (incluyendo `2\tabcolsep` por hueco) sea ≤ `\linewidth` (≈15,5 cm en esta plantilla).
+2. Usar `@{}` al inicio y final del preámbulo `longtable` para eliminar el padding lateral exterior.
+3. Aplicar esto a **todas** las `longtable` de los dos capítulos para evitar futuros overfull.
+Los diagramas de secuencia y arquitectura siguen pendientes de revisión visual (reglas 16-18), pero el bloqueo actual son los overfull hbox.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que los overfull hbox se han corregido.
+- Si persisten, revisar otras tablas largas (p. ej., tabla de trazabilidad en a4-trazabilidad.tex) y aplicar mismo patrón (`@{}` + anchos reducidos).
+- Una vez que `verificar.py` pase, ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py` para validar reglas de maquetación y diagramas.
+- Revisar visualmente el PDF página a página para confirmar que no hay páginas con una sola imagen, páginas casi vacías, tablas que se pisan, ni figuras repetidas.
+- Corregir diagramas que incumplan reglas 16-18 (letras <7,5 pt, flechas cruzando cajas, palabras partidas) redibujándolos sin escalar (`adjustbox`/`resizebox`), usando `text width` adecuado, saltos de línea manuales, flechas con codos y ≤6 participantes por diagrama.

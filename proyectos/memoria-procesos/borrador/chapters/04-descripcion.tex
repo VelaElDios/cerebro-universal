@@ -11,25 +11,25 @@ Esta sección presenta los requisitos funcionales y no funcionales del proyecto,
 
 La Tabla~\ref{tab:rf-sprint1} recoge los 13 requisitos funcionales del Sprint 1.
 
-\begin{longtable}{@{}L{0.9cm} L{4.6cm} L{0.7cm} L{0.8cm} L{4.0cm} L{2.2cm}@{}}
+\begin{longtable}{@{}L{0.9cm} L{4.6cm} L{0.7cm} L{0.8cm} L{3.5cm} L{2.0cm}@{}}
 \caption{Requisitos funcionales del Sprint 1.}\label{tab:rf-sprint1}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Hito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endfirsthead
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Hito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endhead
-RF-01 & Registro con email y contraseña (validación, email único, contraseña de 8 o más caracteres) & 2 & P8 & \path{userService.register}, \texttt{POST} \path{/api/auth/register}, vista \path{registro.js} & \path{userService}, \path{api.auth} \\
-RF-02 & Inicio de sesión local, mismo mensaje si el email no existe o la contraseña es incorrecta & 2 & P8 & \path{userService.authenticate}, \texttt{POST} \path{/api/auth/login} & \path{api.auth} \\
-RF-03 & Mantener la sesión al recargar y cerrarla en el servidor & 2 & P9 & \path{express-session} + tabla \path{session}, \texttt{GET} \path{/api/auth/me}, \texttt{POST} \path{/api/auth/logout} & \path{api.auth}, \path{api.database} (CI) \\
+RF-01 & Registro con email y contraseña (validación, email único, contraseña de 8 o más caracteres) & 2 & P8 & \path{userService.register}, \texttt{POST}\allowbreak \path{/api/auth/register}, vista \path{registro.js} & \path{userService}, \path{api.auth} \\
+RF-02 & Inicio de sesión local, mismo mensaje si el email no existe o la contraseña es incorrecta & 2 & P8 & \path{userService.authenticate}, \texttt{POST}\allowbreak \path{/api/auth/login} & \path{api.auth} \\
+RF-03 & Mantener la sesión al recargar y cerrarla en el servidor & 2 & P9 & \path{express-session} + tabla \path{session}, \texttt{GET}\allowbreak \path{/api/auth/me}, \texttt{POST}\allowbreak \path{/api/auth/logout} & \path{api.auth}, \path{api.database} (CI) \\
 RF-04 & Rutas protegidas en el servidor (401 sin sesión) & 2 & P10 & \path{requireAuth} & \path{api.users}, \path{api.auth} \\
 RF-05 & Persistencia en base de datos real & 3 & P11 & PostgreSQL (Neon), \path{postgresUserRepository}, migraciones & \path{userRepository}, \path{migrate}, \path{api.database} \\
 RF-06 & Roles usuario y administrador, con un primer administrador & 3 & P13 & \path{requireRole}, \path{requireSelfOrRole}, \path{userService.ensureAdmin} & \path{userService}, \path{api.users}, \path{bootstrap} \\
-RF-07 & Listar usuarios, ver si un usuario está activo y cambiar roles (solo administrador) & 3 & P13 & \texttt{GET} \path{/api/users}, \texttt{GET} \path{/api/users/:id/active}, \texttt{PATCH} \path{/api/users/:id/role}, vista \path{admin.js} & \path{api.users} \\
-RF-08 & Darse de baja (y que el administrador pueda eliminar cuentas); nunca eliminar al último administrador; tras la baja se puede volver con el mismo email & 3 & P13 & \texttt{DELETE} \path{/api/users/:id} (baja lógica), vistas \path{perfil.js} y \path{admin.js} & \path{userService}, \path{api.users} \\
+RF-07 & Listar usuarios, ver si un usuario está activo y cambiar roles (solo administrador) & 3 & P13 & \texttt{GET}\allowbreak \path{/api/users}, \texttt{GET}\allowbreak \path{/api/users/:id/active}, \texttt{PATCH}\allowbreak \path{/api/users/:id/role}, vista \path{admin.js} & \path{api.users} \\
+RF-08 & Darse de baja (y que el administrador pueda eliminar cuentas); nunca eliminar al último administrador; tras la baja se puede volver con el mismo email & 3 & P13 & \texttt{DELETE}\allowbreak \path{/api/users/:id} (baja lógica), vistas \path{perfil.js} y \path{admin.js} & \path{userService}, \path{api.users} \\
 RF-09 & Registro de la actividad relevante & 3 & P14 & \path{src/logger.js}, \path{requestLogger} & \path{logger} \\
-RF-10 & Confirmación de la cuenta por correo, con reenvío & 4 & P16 & \path{accountConfirmationService}, \path{tokenSigner}, \path{mailer}, \texttt{GET} \path{/api/auth/confirm}, \texttt{POST} \path{/api/auth/resend-confirmation} & \path{accountConfirmation}, \path{tokenSigner}, \path{mailer}, \path{api.auth} \\
-RF-11 & Inicio de sesión con proveedor externo (Google, OAuth 2.0) \cite{rfc6749} & 4 & P15 & \path{googleOAuth.js}, \texttt{GET} \path{/api/auth/google}, \texttt{GET} \path{/api/auth/google/callback}, \path{userService.loginWithOAuth} & \path{googleOAuth}, \path{userService} \\
+RF-10 & Confirmación de la cuenta por correo, con reenvío & 4 & P16 & \path{accountConfirmationService}, \path{tokenSigner}, \path{mailer}, \texttt{GET}\allowbreak \path{/api/auth/confirm}, \texttt{POST}\allowbreak \path{/api/auth/resend-confirmation} & \path{accountConfirmation}, \path{tokenSigner}, \path{mailer}, \path{api.auth} \\
+RF-11 & Inicio de sesión con proveedor externo (Google, OAuth 2.0) \cite{rfc6749} & 4 & P15 & \path{googleOAuth.js}, \texttt{GET}\allowbreak \path{/api/auth/google}, \texttt{GET}\allowbreak \path{/api/auth/google/callback}, \path{userService.loginWithOAuth} & \path{googleOAuth}, \path{userService} \\
 RF-12 & Manejo de errores con información clara al usuario & 4 & P17 & \path{errorHandler.js}, \path{componentes.js}, \path{avisos.js}, \path{api.js} (timeout) & \path{api.*}, \path{frontend} \\
-RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \path{domainPolicy.js}, \texttt{POST} \path{/api/prueba/dominio} & \path{domainPolicy} (13) \\*
+RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \path{domainPolicy.js}, \texttt{POST}\allowbreak \path{/api/prueba/dominio} & \path{domainPolicy} (13) \\*
 \bottomrule
 \end{longtable}
 
@@ -38,7 +38,7 @@ RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \pa
 
 La Tabla~\ref{tab:rj-sprint2} recoge los 20 requisitos funcionales del juego, derivados de los PBIs P20--P48.
 
-\begin{longtable}{@{}L{0.9cm} L{4.6cm} L{1.2cm} L{4.4cm} L{2.2cm}@{}}
+\begin{longtable}{@{}L{0.9cm} L{4.6cm} L{1.2cm} L{4.0cm} L{2.0cm}@{}}
 \caption{Requisitos funcionales del juego (Sprint 2).}\label{tab:rj-sprint2}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endfirsthead
@@ -72,7 +72,7 @@ RJ-20 & Música chiptune, efectos y la grada, con ajustes de volumen & P44 & \pa
 
 La Tabla~\ref{tab:rnf} recoge los 12 requisitos no funcionales.
 
-\begin{longtable}{@{}L{1.0cm} L{5.5cm} L{7.5cm}@{}}
+\begin{longtable}{@{}L{1.0cm} L{5.5cm} L{7.0cm}@{}}
 \caption{Requisitos no funcionales.}\label{tab:rnf}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endfirsthead
@@ -257,7 +257,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 La Tabla~\ref{tab:modulos} resume los módulos del backend.
 
 {\small
-\begin{longtable}{@{}L{3.5cm} L{10.5cm}@{}}
+\begin{longtable}{@{}L{3.5cm} L{10.0cm}@{}}
 \caption{Módulos del backend.}\label{tab:modulos}\\
 \toprule
 \textbf{Módulo} & \textbf{Qué hace} \\
@@ -305,7 +305,7 @@ Las vistas (\path{ui/vistas/*.js}) exportan \texttt{montar(raiz, contexto)} y de
 La lista completa de rutas está en el \texttt{README} del repositorio. Resumen en la Tabla~\ref{tab:api}.
 
 {\small
-\begin{longtable}{@{}L{3.0cm} L{5.0cm} L{6.0cm}@{}}
+\begin{longtable}{@{}L{3.0cm} L{5.0cm} L{5.5cm}@{}}
 \caption{Rutas principales de la API.}\label{tab:api}\\
 \toprule
 \textbf{Grupo} & \textbf{Rutas} & \textbf{Acceso} \\
