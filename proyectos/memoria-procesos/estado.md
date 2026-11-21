@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-21 00:45"
+actualizado: "2026-11-21 01:30"
 ---
 
 # memoria-procesos
@@ -22,18 +22,16 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
-- **verificar.py**: OK (35 figuras, 29 tablas, 17045 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
+- **verificar.py**: OK (35 figuras, 29 tablas, 17050 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
 - **revisar_maquetacion.py**: OK (fig:modelo-datos corregido, fig:sec-login corregido, resto de diagramas OK).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas**: Diagrama `fig:modelo-datos` corregido (cajas separadas, etiquetas en huecos, texto legible). Diagrama `fig:sec-login` corregido (flechas sueltas eliminadas, respuestas fuera de bloques alt).
-- **Pendiente**: Actualizar rutas `docs/` antiguas en 3 archivos (`a3-uso-ia.tex`, `a4-trazabilidad.tex`, `05-evaluacion.tex`).
+- **Correcciones aplicadas**: Diagrama `fig:modelo-datos` corregido (cajas separadas, etiquetas en huecos, texto legible). Diagrama `fig:sec-login` corregido (flechas sueltas eliminadas, respuestas fuera de bloques alt). Rutas `docs/` actualizadas en `a4-trazabilidad.tex`, `a3-uso-ia.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex`.
+- **Pendiente**: Ejecutar `comando_prueba` tras los 4 cambios de rutas; `revisar_umlsd.py` sobre 7 diagramas de secuencia; revisión visual PDF página a página.
 
 ## Siguiente
-1. Aplicar cambios de rutas en `a3-uso-ia.tex` y `a4-trazabilidad.tex` (hecho en este paso).
-2. Ejecutar `comando_prueba` para confirmar que compila y tests pasan.
-3. Actualizar rutas en `05-evaluacion.tex`.
-4. Ejecutar `revisar_umlsd.py` sobre los 7 diagramas de secuencia.
-5. Revisión final PDF página a página.
-6. Marcar TERMINADO solo si todo pasa.
+1. Ejecutar `comando_prueba` para confirmar que compila y tests pasan tras los cambios de rutas.
+2. Ejecutar `revisar_umlsd.py` sobre los 7 diagramas de secuencia.
+3. Revisión final PDF página a página.
+4. Marcar TERMINADO solo si todo pasa.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

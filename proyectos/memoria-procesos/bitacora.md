@@ -12517,3 +12517,41 @@ La memoria compila sin errores, `verificar.py` pasa (estructura, cifras, referen
 ## 2026-11-21 00:45 · 🧠 Lección propuesta para la memoria
 
 [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-21 01:28 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Aplico las tareas pendientes de la bitácora: sustituyo las rutas antiguas de `docs/` (ficheros que ya no existen en el repo tras la reorganización del bundle del 2026-11-19) por los ficheros actuales del bundle en `chapters/a4-trazabilidad.tex` (`docs/documentacion-tecnica.md` → `docs/requisitos.md`; `docs/gestion/README.md` → `docs/sprint-1.md` y `docs/sprint-2.md`) y en `chapters/a3-uso-ia.tex` (`docs/revision-entrega.md` → `docs/sprint-1.md`, que contiene la sección «Revisión de la entrega frente al enunciado»). Son cambios de texto puntuales, así que uso CAMBIAR para no tocar el resto de los archivos.
+
+**Archivos:** `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a3-uso-ia.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Quedan dos archivos con rutas antiguas de `docs/`: actualizar `chapters/05-evaluacion.tex` (dos menciones a `docs/revision-entrega.md` → `docs/sprint-1.md`) y `chapters/a1-desarrollo.tex` (dos menciones a `docs/revision-entrega.md` y la referencia a «secciones 4, 13 y 14» de `docs/arquitectura.md`). Después ejecutar `comando_prueba` (compila + `verificar.py` + `revisar_maquetacion.py`), correr `revisar_umlsd.py` sobre los 7 diagramas de secuencia, hacer la revisión visual página a página del PDF y, si todo pasa, marcar TERMINADO.
+```
+
+## 2026-11-21 01:30 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** aprobado · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Test automático pasa: compila sin errores, `verificar.py` OK (35 figuras, 29 tablas, 17050 palabras), `revisar_maquetacion.py` OK (13 diagramas revisados a ojo, sin fallos)
+- Rutas actualizadas en `a4-trazabilidad.tex`: `docs/documentacion-tecnica.md` → `docs/requisitos.md` (fuente de requisitos RF/RJ/RNF); `docs/gestion/README.md` → `docs/sprint-1.md` y `docs/sprint-2.md` (fuentes de trazabilidad PBI→tarea→PR de ambos sprints) — coincide con la reorganización del bundle del 2026-11-19 (`docs/index.md`: «documentación anterior desaparece; se elimina también `gestion/README-1.md`»)
+- Ruta actualizada en `a3-uso-ia.tex`: `docs/revision-entrega.md` → `docs/sprint-1.md` (que contiene la sección «Revisión de la entrega frente al enunciado» según `sprint-1.md` §Revisión de la entrega frente al enunciado) — correcto
+- Ningún dato numérico alterado; solo referencias a ficheros de documentación
+
+El constructor ha corregido correctamente las referencias a la antigua estructura `docs/` en dos anexos. Los cambios son precisos y coinciden con la reorganización del bundle documental del 19/11/2026. La prueba automática pasa en verde, confirmando que no se han roto referencias ni citas. Quedan pendientes dos archivos más con rutas antiguas: `chapters/05-evaluacion.tex` (dos menciones a `docs/revision-entrega.md`) y `chapters/a1-desarrollo.tex` (dos menciones a `docs/revision-entrega.md` y la referencia a «secciones 4, 13 y 14» de `docs/arquitectura.md`).
+
+**Correcciones del revisor:** `(no aplicado: el texto aparece 2 veces: «documentada en \texttt{docs/\allowbreak revision\allowbreak ») chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que los 4 cambios adicionales no rompen la compilación ni los tests
+- Ejecutar `revisar_umlsd.py` sobre los 7 diagramas de secuencia (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`, `fig:sec-partida`, `fig:sec-contratar`)
+- Revisión visual página a página del PDF para reglas no medibles (tablas legibles, orden lógico, sin páginas casi vacías, ninguna página con una sola imagen)
+- Si todo pasa, marcar TERMINADO
+
+## 2026-11-21 01:30 · 🧠 Conocimiento guardado
+
+[[rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1]]

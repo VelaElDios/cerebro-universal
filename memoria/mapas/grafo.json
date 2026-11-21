@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T00:45:15+01:00",
+ "generado": "2026-11-21T01:30:06+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2990,6 +2990,21 @@
    "ruta": "memoria/conocimiento/decisiones/registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g.md"
   },
   {
+   "id": "decision:rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1",
+   "tipo": "decision",
+   "titulo": "Rutas de documentación tras reorganización del bundle (2026-11-19)",
+   "temas": [
+    "documentacion",
+    "latex",
+    "memoria"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1.md"
+  },
+  {
    "id": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
    "tipo": "decision",
    "titulo": "Sin figuras repetidas: usar \\ref a la figura existente",
@@ -5082,14 +5097,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 133,
+   "peso": 134,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 55,
+   "peso": 56,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -6302,6 +6317,13 @@
    "titulo": "integridad",
    "peso": 1,
    "ruta": "memoria/temas/integridad.md"
+  },
+  {
+   "id": "tema:documentacion",
+   "tipo": "tema",
+   "titulo": "documentacion",
+   "peso": 1,
+   "ruta": "memoria/temas/documentacion.md"
   },
   {
    "id": "tema:cloud-run",
@@ -15102,6 +15124,26 @@
    "de": "decision:registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g",
    "a": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1",
+   "a": "tema:documentacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
