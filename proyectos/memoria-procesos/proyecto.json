@@ -1,6 +1,6 @@
 {
   "nombre": "memoria-procesos",
-  "estado": "terminado",
+  "estado": "en-construccion",
   "temas": [
     "latex",
     "memoria",
@@ -50,7 +50,7 @@
   "reintentar_si": "^(!|\\S+\\.(tex|sty|cls|bib):\\d+:)|Fatal error|Emergency stop|Todavía no existe",
   "max_archivos_por_paso": 2,
   "pasos": 68,
-  "max_pasos": 80,
+  "max_pasos": 100,
   "max_intentos": 3,
   "ultima_ejecucion": "2026-11-21T03:18:43+01:00",
   "reglas": [
