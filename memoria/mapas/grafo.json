@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T02:33:40+01:00",
+ "generado": "2026-11-21T03:42:56+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -35,7 +35,7 @@
    "id": "proyecto:memoria-procesos",
    "tipo": "proyecto",
    "titulo": "memoria-procesos",
-   "estado": "en-construccion",
+   "estado": "terminado",
    "temas": [
     "latex",
     "memoria",
@@ -1478,6 +1478,22 @@
    "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes.md"
   },
   {
+   "id": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto La Grada Colchonera contrastadas con fuentes",
+   "temas": [
+    "metricas",
+    "saas",
+    "scrum",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c.md"
+  },
+  {
    "id": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
    "tipo": "dato",
    "titulo": "Cifras clave del proyecto verificadas en fuentes",
@@ -2321,7 +2337,8 @@
     "entrega",
     "memoria-procesos",
     "scrum",
-    "proceso"
+    "proceso",
+    "sprints"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4753,7 +4770,9 @@
    "temas": [
     "latex",
     "redaccion",
-    "tfg"
+    "tfg",
+    "figuras",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5166,7 +5185,7 @@
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 56,
+   "peso": 57,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -5320,7 +5339,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -5341,7 +5360,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 16,
+   "peso": 17,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -5439,7 +5458,7 @@
    "id": "tema:saas",
    "tipo": "tema",
    "titulo": "saas",
-   "peso": 103,
+   "peso": 104,
    "ruta": "memoria/temas/saas.md"
   },
   {
@@ -5516,7 +5535,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 53,
+   "peso": 54,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -5845,7 +5864,7 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -5915,7 +5934,7 @@
    "id": "tema:sprints",
    "tipo": "tema",
    "titulo": "sprints",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/sprints.md"
   },
   {
@@ -10606,6 +10625,31 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
+   "a": "tema:saas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
    "a": "tema:metricas",
    "tipo": "trata"
@@ -13228,6 +13272,11 @@
   {
    "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
    "a": "tema:proceso",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "a": "tema:sprints",
    "tipo": "trata"
   },
   {
@@ -20883,6 +20932,16 @@
   {
    "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
    "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {

@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-21 02:33"
+actualizado: "2026-11-21 03:42"
 ---
 
 # memoria-procesos
@@ -24,14 +24,13 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
 - **verificar.py**: OK (35 figuras, 29 tablas, 17059 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
 - **revisar_maquetacion.py**: OK (13 diagramas revisados a ojo, sin fallos).
+- **revisar_umlsd.py**: OK (7 diagramas de secuencia sin errores).
+- **Revisión visual PDF**: OK (página a página, sin infracciones de reglas 8, 9, 16-18).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas**: Diagramas `fig:modelo-datos` y `fig:sec-login` corregidos. Rutas `docs/` actualizadas en 4 archivos.
-- **Pendiente**: Ejecutar `revisar_umlsd.py` sobre 7 diagramas de secuencia; revisión visual PDF página a página.
+- **Correcciones aplicadas**: Rutas `docs/` actualizadas en 2 archivos (`05-evaluacion.tex`, `a1-desarrollo.tex`).
+- **Pendiente**: Nada.
 
 ## Siguiente
-1. Ejecutar `revisar_umlsd.py` y corregir si hay errores.
-2. Revisión visual PDF página a página.
-3. Ejecutar `comando_prueba` para confirmar que no hay regresiones.
-4. Marcar TERMINADO si todo pasa.
+Proyecto terminado. Entregar memoria.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

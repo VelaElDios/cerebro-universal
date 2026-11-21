@@ -4,7 +4,7 @@ titulo: "Diagramas de secuencia con pgf-umlsd (sequencediagram)"
 temas: ["diagramas", "diagramas-secuencia", "latex", "pgf-umlsd", "secuencia", "tikz", "uml"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock"]
 proyectos: ["memoria-procesos"]
-fuentes: ["chapters/04-descripcion.tex", "spec del proyecto (bloque «Cómo se escribe un diagrama de secuencia»)", "memoria/reglas-tfg.md (ejemplo en spec)", "memoria/reglas-tfg.md"]
+fuentes: ["chapters/04-descripcion.tex", "spec del proyecto (bloque «Cómo se escribe un diagrama de secuencia»)", "memoria/reglas-tfg.md (ejemplo en spec)", "memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md (ejemplo en spec)"]
 confianza: "propuesto"
 fecha: "2026-11-17"
 actualizado: "2026-11-21"
@@ -81,6 +81,10 @@ Reglas obligatorias para que `revisar_umlsd.py` pase:
 6. No usar comandos LaTeX ni caracteres especiales (`#`, `&`, `_`, `$`, `%`, `{`, `}`, `\`) en los textos de los mensajes; escapar con `\texttt{}` si hace falta código, pero mejor evitar.
 7. Si el diagrama es ancho, envolver en `\resizebox{\textwidth}{!}{...}` o `adjustbox`.
 8. Ejemplo correcto en `memoria/reglas-tfg.md` (bloque de código al final).
+
+## Ampliación (2026-11-21, memoria-procesos)
+Para diagramas de secuencia válidos en esta plantilla: 1) Usar entorno `sequencediagram` (minúsculas). 2) Declarar todos los participantes con `\newthread` (actor) o `\newinst` (instancia). 3) Llamadas anidadas con `call{origen}{mensaje}{destino}{respuesta}`. 4) Mensajes simples con `\mess{origen}{mensaje}{destino}`. 5) Alternativas con `sdblock{alt}{condición}{...}`. 6) Evitar caracteres prohibidos en textos: `#`, `&`, `_`, `$`, `%`, `{`, `}`, `\`, paréntesis en `\mess`. 7) Máximo 6 participantes por diagrama (si hay más, agrupar o partir). 8) Envolver en `\resizebox{\textwidth}{!}{...}` o `adjustbox` si es grande. `revisar_umlsd.py` valida todo esto antes de compilar.
+relacionado: Verificación completa de memoria TFG antes de marcar TERMINADO
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

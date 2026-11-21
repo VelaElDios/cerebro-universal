@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Prosa de TFG sin listas de capturas (agrupar con subfigure)"
-temas: ["latex", "redaccion", "tfg"]
+temas: ["latex", "redaccion", "tfg", "figuras", "memoria"]
 claves: ["subfigure", "subcaption", "La figura X muestra", "prosa"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md"]
 confianza: "propuesto"
 fecha: "2026-11-21"
 actualizado: "2026-11-21"
@@ -18,5 +18,9 @@ Para evitar el estilo «lista de capturas», escribir párrafos narrativos que e
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
 Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]]
+
+## Ampliación (2026-11-21, memoria-procesos)
+En la memoria final, las capturas de la aplicación (app/, hito4/, juego/) y de DoneTonic se agrupan en figuras con `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`) con caption general y subcaptions. El texto explica el flujo de uso citando las figuras dentro de la prosa, no como frases sueltas. Cada imagen aparece una sola vez en el sitio donde más sentido tiene; en el resto se cita con `\ref`.
+relacionado: Cada entrega solo lleva lo de su sprint (alcance coherente)
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

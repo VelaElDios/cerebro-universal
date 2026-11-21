@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "metricas"
-notas: 10
+notas: 11
 ---
 # metricas
 
@@ -18,6 +18,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto (contrastadas con fuentes)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c|Cifras clave del proyecto La Grada Colchonera contrastadas con fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-verificadas-en-fuentes|Cifras clave del proyecto verificadas en fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] · ⚠️ propuesto
@@ -31,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[verificacion]] · [[sprint]] · [[pruebas]] · [[sprints]] · [[burndown]] · [[donetonic]] · [[métricas]] · [[scrum]] · [[pbis]] · [[tareas]] · [[datos]] · [[memoria-procesos]]
+[[verificacion]] · [[scrum]] · [[sprint]] · [[pruebas]] · [[sprints]] · [[saas]] · [[trazabilidad]] · [[burndown]] · [[donetonic]] · [[métricas]] · [[pbis]] · [[tareas]]

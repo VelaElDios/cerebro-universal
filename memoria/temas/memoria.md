@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria"
-notas: 56
+notas: 57
 ---
 # memoria
 
@@ -26,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas (agrupar con subfigure)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle|Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)]]
@@ -86,4 +87,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[figuras]] · [[tikz]] · [[verificacion]] · [[plantilla]] · [[memoria-procesos]] · [[diagramas]] · [[scrum]] · [[redaccion]] · [[tablas]] · [[grada-colchonera]]
+[[tfg]] · [[latex]] · [[figuras]] · [[tikz]] · [[verificacion]] · [[plantilla]] · [[memoria-procesos]] · [[redaccion]] · [[diagramas]] · [[scrum]] · [[tablas]] · [[grada-colchonera]]

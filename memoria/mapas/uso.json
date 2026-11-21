@@ -48,10 +48,10 @@
   "usos": 4
  },
  "memoria/conocimiento/datos/catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore.md": {
-  "bien": 1,
+  "bien": 2,
   "mal": 0,
-  "ultimo": "2026-11-19",
-  "usos": 5
+  "ultimo": "2026-11-21",
+  "usos": 6
  },
  "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
   "bien": 0,
@@ -78,10 +78,10 @@
   "usos": 2
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
-  "bien": 2,
+  "bien": 3,
   "mal": 0,
   "ultimo": "2026-11-21",
-  "usos": 11
+  "usos": 12
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -144,10 +144,10 @@
   "usos": 40
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
-  "bien": 4,
+  "bien": 5,
   "mal": 1,
   "ultimo": "2026-11-21",
-  "usos": 23
+  "usos": 24
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -210,10 +210,10 @@
   "usos": 9
  },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
-  "bien": 3,
+  "bien": 4,
   "mal": 0,
   "ultimo": "2026-11-21",
-  "usos": 10
+  "usos": 11
  },
  "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram.md": {
   "bien": 0,

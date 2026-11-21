@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "figuras"
-notas: 16
+notas: 17
 ---
 # figuras
 
@@ -18,6 +18,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Limitar altura de capturas para evitar páginas con una sola imagen]]
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas (agrupar con subfigure)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle|Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)]]
 - 🧪 [[memoria/conocimiento/recetas/una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia|Una imagen en un solo sitio, y en el resto una referencia]]
 
@@ -34,4 +35,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[capturas]] · [[reglas-javier]] · [[subfigure]] · [[subcaption]] · [[grada-colchonera]] · [[saas]] · [[rutas]] · [[redaccion]]
+[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[capturas]] · [[redaccion]] · [[reglas-javier]] · [[subfigure]] · [[subcaption]] · [[grada-colchonera]] · [[saas]] · [[rutas]]

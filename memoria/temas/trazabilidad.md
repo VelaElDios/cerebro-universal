@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "trazabilidad"
-notas: 12
+notas: 13
 ---
 # trazabilidad
 
@@ -18,6 +18,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c|Cifras clave del proyecto La Grada Colchonera contrastadas con fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]] · ⚠️ propuesto
@@ -30,4 +31,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[donetonic]] · [[sprints]] · [[anexo]] · [[longtable]] · [[scrum]] · [[pbi]] · [[pull-request]] · [[capturas]] · [[juego]]
+[[saas]] · [[grada-colchonera]] · [[sprint]] · [[scrum]] · [[donetonic]] · [[metricas]] · [[sprints]] · [[anexo]] · [[longtable]] · [[pbi]] · [[pull-request]] · [[capturas]]

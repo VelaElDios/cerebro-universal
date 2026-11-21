@@ -1,7 +1,7 @@
 ---
 tipo: "decision"
 titulo: "Cada entrega solo lleva lo de su sprint (alcance coherente)"
-temas: ["alcance", "latex", "memoria", "sprint", "tfg", "entrega", "memoria-procesos", "scrum", "proceso"]
+temas: ["alcance", "latex", "memoria", "sprint", "tfg", "entrega", "memoria-procesos", "scrum", "proceso", "sprints"]
 claves: ["Sprint 1", "Sprint 2", "Sprint 3", "título", "Resumen", "Abstract", "Introducción", "Conclusiones", "anexos"]
 proyectos: ["memoria-procesos"]
 fuentes: ["../../memoria/reglas-tfg.md", "memoria/reglas-tfg.md"]

@@ -7,7 +7,7 @@ proyectos: ["memoria-procesos"]
 fuentes: ["../../memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 1)", "memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-18"
-actualizado: "2026-11-20"
+actualizado: "2026-11-21"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[tfg]]
@@ -53,3 +53,7 @@ relacionado: No se quita nada de la plantilla (regla 2 Javier)
 
 ## Ampliación (2026-11-20, memoria-procesos)
 Confirmado: elements/preambulo.tex ya tiene el comentario "Segunda portada eliminada" y solo contiene declaración de autoría, Resumen y Abstract. No se toca elements/portada.tex (protegido). La portada oficial se incluye mediante \input{elements/portada} en Memoria.tex.
+
+## Ampliación (2026-11-21, memoria-procesos)
+La memoria debe usar exclusivamente la portada oficial definida en `elements/portada.tex`. No se permite añadir una segunda portada con logos. La portada oficial se incluye mediante `\input{elements/portada}` en `Memoria.tex`. Plantilla completa inmutable: portada, declaración de autoría, Resumen, Abstract, índices, capítulos, anexos, bibliografía.
+relacionado: Cada entrega solo lleva lo de su sprint (alcance coherente)

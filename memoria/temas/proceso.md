@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «proceso» (este archivo s
 
 ## Temas relacionados
 
-[[alcance]] · [[latex]] · [[memoria]] · [[sprint]] · [[tfg]] · [[entrega]] · [[memoria-procesos]] · [[scrum]]
+[[alcance]] · [[latex]] · [[memoria]] · [[sprint]] · [[tfg]] · [[entrega]] · [[memoria-procesos]] · [[scrum]] · [[sprints]]
