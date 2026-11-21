@@ -33,7 +33,7 @@ Reglas fijas de Javier para cualquier memoria con formato de TFG (Sprint 3 en ad
 17. **Ninguna línea ni flecha atraviesa una caja o un texto, y ninguna caja pisa a otra.** Las flechas van de una caja a la siguiente (A → B, B → C), nunca de A a C pasando por encima de B; si hay que rodear, con codos (`|-`, `-|`) y separando bien las cajas (`node distance` suficiente). Las etiquetas de las flechas no se montan sobre las cajas.
 18. **Dentro de las cajas no se parten palabras ni rutas** («sr-c/services»): o la caja es más ancha (`text width`), o el texto se pone en dos líneas a mano (`\\`), o se acorta.
 
-19. **Los diagramas se miran de verdad en el PDF:** `scripts/revisar_figuras.py` convierte en imagen cada página con un diagrama dibujado y Gemini comprueba las reglas 16-18 a ojo. Si dice que algo falla, se corrige el dibujo (separar cajas, flechas de caja en caja, cajas más anchas, menos participantes); no se discute con el comprobador.
+19. **Los diagramas se miran de verdad en el PDF:** `scripts/revisar_figuras.py` mide cada diagrama con las coordenadas reales del PDF (líneas que pasan por encima de letras, cajas que se pisan, palabras partidas con guion, letras de menos de 7,5 pt) y, si eso pasa, Gemini lo mira además a ojo. No se arregla encogiendo el dibujo (`adjustbox`, `resizebox`, `scale`): eso deja las letras diminutas; hay que replantear el dibujo para que quepa a tamaño real. Si dice que algo falla, se corrige el dibujo (separar cajas, flechas de caja en caja, cajas más anchas, menos participantes); no se discute con el comprobador.
 
 ## Contenido
 
