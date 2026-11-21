@@ -11,20 +11,20 @@ Esta sección presenta los requisitos funcionales y no funcionales del proyecto,
 
 La Tabla~\ref{tab:rf-sprint1} recoge los 13 requisitos funcionales del Sprint 1.
 
-\begin{longtable}{@{}L{0.9cm} L{4.2cm} L{0.7cm} L{0.8cm} L{3.9cm} L{2.0cm}@{}}
+\begin{longtable}{@{}L{0.7cm} L{3.5cm} L{0.5cm} L{0.6cm} L{3.2cm} L{1.6cm}@{}}
 \caption{Requisitos funcionales del Sprint 1.}\label{tab:rf-sprint1}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Hito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endfirsthead
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Hito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endhead
-RF-01 & Registro con email y contraseña (validación, email único, contraseña de 8 o más caracteres) & 2 & P8 & \path{userService.register}, \texttt{POST}\allowbreak \path{/api/auth/register}, vista \path{registro.js} & \path{userService}, \path{api.auth} \\
-RF-02 & Inicio de sesión local, mismo mensaje si el email no existe o la contraseña es incorrecta & 2 & P8 & \path{userService.authenticate}, \texttt{POST}\allowbreak \path{/api/auth/login} & \path{api.auth} \\
+RF-01 & Registro con email y contraseña (validación, email único, contraseña $\geq$ 8) & 2 & P8 & \path{userService.register}, \texttt{POST}\allowbreak \path{/api/auth/register}, vista \path{registro.js} & \path{userService}, \path{api.auth} \\
+RF-02 & Inicio de sesión local, mismo mensaje si email no existe o contraseña incorrecta & 2 & P8 & \path{userService.authenticate}, \texttt{POST}\allowbreak \path{/api/auth/login} & \path{api.auth} \\
 RF-03 & Mantener la sesión al recargar y cerrarla en el servidor & 2 & P9 & \path{express-session} + tabla \path{session}, \texttt{GET}\allowbreak \path{/api/auth/me}, \texttt{POST}\allowbreak \path{/api/auth/logout} & \path{api.auth}, \path{api.database} (CI) \\
 RF-04 & Rutas protegidas en el servidor (401 sin sesión) & 2 & P10 & \path{requireAuth} & \path{api.users}, \path{api.auth} \\
 RF-05 & Persistencia en base de datos real & 3 & P11 & PostgreSQL (Neon), \path{postgresUserRepository}, migraciones & \path{userRepository}, \path{migrate}, \path{api.database} \\
 RF-06 & Roles usuario y administrador, con un primer administrador & 3 & P13 & \path{requireRole}, \path{requireSelfOrRole}, \path{userService.ensureAdmin} & \path{userService}, \path{api.users}, \path{bootstrap} \\
-RF-07 & Listar usuarios, ver si un usuario está activo y cambiar roles (solo administrador) & 3 & P13 & \texttt{GET}\allowbreak \path{/api/users}, \texttt{GET}\allowbreak \path{/api/users/:id/active}, \texttt{PATCH}\allowbreak \path{/api/users/:id/role}, vista \path{admin.js} & \path{api.users} \\
-RF-08 & Darse de baja (y que el administrador pueda eliminar cuentas); nunca eliminar al último administrador; tras la baja se puede volver con el mismo email & 3 & P13 & \texttt{DELETE}\allowbreak \path{/api/users/:id} (baja lógica), vistas \path{perfil.js} y \path{admin.js} & \path{userService}, \path{api.users} \\
+RF-07 & Listar usuarios, ver si un usuario está activo y cambiar roles (solo admin) & 3 & P13 & \texttt{GET}\allowbreak \path{/api/users}, \texttt{GET}\allowbreak \path{/api/users/:id/active}, \texttt{PATCH}\allowbreak \path{/api/users/:id/role}, vista \path{admin.js} & \path{api.users} \\
+RF-08 & Darse de baja (y que el admin pueda eliminar); nunca eliminar al último admin; tras la baja se puede volver con el mismo email & 3 & P13 & \texttt{DELETE}\allowbreak \path{/api/users/:id} (baja lógica), vistas \path{perfil.js} y \path{admin.js} & \path{userService}, \path{api.users} \\
 RF-09 & Registro de la actividad relevante & 3 & P14 & \path{src/logger.js}, \path{requestLogger} & \path{logger} \\
 RF-10 & Confirmación de la cuenta por correo, con reenvío & 4 & P16 & \texttt{accountConfirmation\allowbreak Service}, \path{tokenSigner}, \path{mailer}, \texttt{GET}\allowbreak \texttt{/api/auth/\allowbreak confirm}, \texttt{POST}\allowbreak \texttt{/api/auth/\allowbreak resend-confirmation} & \path{accountConfirmation}, \path{tokenSigner}, \path{mailer}, \path{api.auth} \\
 RF-11 & Inicio de sesión con proveedor externo (Google, OAuth 2.0) \cite{rfc6749} & 4 & P15 & \path{googleOAuth.js}, \texttt{GET}\allowbreak \texttt{/api/auth/\allowbreak google}, \texttt{GET}\allowbreak \texttt{/api/auth/google/\allowbreak callback}, \texttt{userService.\allowbreak loginWithOAuth} & \path{googleOAuth}, \path{userService} \\
@@ -38,7 +38,7 @@ RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \pa
 
 La Tabla~\ref{tab:rj-sprint2} recoge los 20 requisitos funcionales del juego, derivados de los PBIs P20--P48.
 
-\begin{longtable}{@{}L{0.9cm} L{4.2cm} L{1.2cm} L{4.4cm} L{2.0cm}@{}}
+\begin{longtable}{@{}L{0.7cm} L{3.4cm} L{0.9cm} L{3.6cm} L{1.6cm}@{}}
 \caption{Requisitos funcionales del juego (Sprint 2).}\label{tab:rj-sprint2}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endfirsthead
@@ -52,10 +52,10 @@ RJ-05 & Armas automáticas con 5 niveles, pasivas y habilidades que solo suben a
 RJ-06 & Rivales con comportamiento propio (embisten, disparan, rodean obstáculos, élites) & P25 & \path{rivales.js}, \path{oleadas.js} & \path{juego-movilidad}, \path{juego-personajes} \\
 RJ-07 & Jefes con tres fases, avisos de ataque, escolta, furia y jugada estrella & P26, P46 & \path{jefes.js}, \path{oleadas.js} & \path{juego-movilidad}, \path{juego-logros} \\
 RJ-08 & Mundo procedural con terreno, obstáculos macizos y colisiones exactas & P27, P35, P41 & \path{terreno.js}, \path{mundo.js} & \path{juego-movilidad} \\
-RJ-09 & Ambientes que cambian cada 5 minutos (de la pretemporada a la Final del Mundial) & P36 & \path{config.js}, \path{render-mundo.js}, \path{musica.js} & \path{juego-movilidad} \\
-RJ-10 & Jugable con teclado, ratón y pantalla táctil; pausa, pantalla completa y ajustes & P28 & \path{entrada.js}, \path{ajustes.js}, \path{juego.js} & \path{game}, \path{frontend} \\
+RJ-09 & Ambientes que cambian cada 5 min (pretemporada a Final del Mundial) & P36 & \path{config.js}, \path{render-mundo.js}, \path{musica.js} & \path{juego-movilidad} \\
+RJ-10 & Jugable con teclado, ratón y táctil; pausa, pantalla completa y ajustes & P28 & \path{entrada.js}, \path{ajustes.js}, \path{juego.js} & \path{game}, \path{frontend} \\
 RJ-11 & Club guardado en el servidor con validación anti-trampas de cada partida & P29 & \path{juegoService.finalizarPartida}, migración 003 & \path{api.juego}, \path{juegoRepository} \\
-RJ-12 & Fichar jugadores con fichas de contrato (una por cada 3 jefes), sorteadas por rareza & P30, P38 & \path{club.js}, \texttt{POST} \path{/api/juego/contratar}, \path{firma.js} & \path{juego-club}, \path{api.juego}, \path{frontend} \\
+RJ-12 & Fichar jugadores con fichas de contrato (una por 3 jefes), sorteadas por rareza & P30, P38 & \path{club.js}, \texttt{POST} \path{/api/juego/contratar}, \path{firma.js} & \path{juego-club}, \path{api.juego}, \path{frontend} \\
 RJ-13 & Entrenar a los jugadores con puntos ganados por bajas y jefes & P31 & \path{club.js}, \texttt{POST} \path{/api/juego/entrenar} & \path{juego-club}, \path{api.juego} \\
 RJ-14 & Ranking de la grada con la mejor partida de cada usuario (sin mostrar el correo) & P32 & \texttt{juego\_records}, \texttt{GET} \path{/api/juego/ranking} & \path{api.juego}, \path{juegoRepository} \\
 RJ-15 & Combinaciones y ULTRAS, con una pantalla que muestra lo que pide cada una & P33, P40 & \path{ultras.js}, \path{render-ultras.js}, pantalla Combinaciones & \path{juego-ultras}, \path{juego-habilidades}, \path{frontend} \\
@@ -72,7 +72,7 @@ RJ-20 & Música chiptune, efectos y la grada, con ajustes de volumen & P44 & \pa
 
 La Tabla~\ref{tab:rnf} recoge los 12 requisitos no funcionales.
 
-\begin{longtable}{@{}L{1.0cm} L{5.5cm} L{7.0cm}@{}}
+\begin{longtable}{@{}L{0.8cm} L{4.5cm} L{6.0cm}@{}}
 \caption{Requisitos no funcionales.}\label{tab:rnf}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endfirsthead
@@ -160,7 +160,7 @@ Composición & \path{src/app.js}, \path{src/bootstrap.js} & Conectar las capas, 
 
 La Tabla~\ref{tab:decisiones} resume las principales decisiones de diseño con su justificación.
 
-\begin{longtable}{@{}L{3.5cm} L{3.5cm} L{7.0cm}@{}}
+\begin{longtable}{@{}L{2.8cm} L{3.2cm} L{6.5cm}@{}}
 \caption{Decisiones de diseño y justificación.}\label{tab:decisiones}\\
 \toprule
 \textbf{Decisión} & \textbf{Alternativas} & \textbf{Por qué} \\ \midrule \endfirsthead
@@ -257,7 +257,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 La Tabla~\ref{tab:modulos} resume los módulos del backend.
 
 {\small
-\begin{longtable}{@{}L{3.5cm} L{10.0cm}@{}}
+\begin{longtable}{@{}L{2.8cm} L{9.0cm}@{}}
 \caption{Módulos del backend.}\label{tab:modulos}\\
 \toprule
 \textbf{Módulo} & \textbf{Qué hace} \\
@@ -265,8 +265,7 @@ La Tabla~\ref{tab:modulos} resume los módulos del backend.
 \endfirsthead
 \toprule
 \textbf{Módulo} & \textbf{Qué hace} \\
-\midrule
-\endhead
+\midrule \endhead
 \path{server.js} & Punto de entrada: carga la configuración, llama a \path{bootstrap} y escucha en \path{PORT}; para con orden al recibir \path{SIGTERM} \\
 \path{bootstrap.js} & Elige PostgreSQL (si hay \texttt{DATABASE\_URL}) o memoria, aplica las migraciones, crea o promociona el primer administrador y crea el correo (SMTP o registro) \\
 \path{app.js} & Construye la app Express: JSON, sesión, \path{/api} y los estáticos de \path{public/} \\
@@ -305,7 +304,7 @@ Las vistas (\path{ui/vistas/*.js}) exportan \texttt{montar(raiz, contexto)} y de
 La lista completa de rutas está en el \texttt{README} del repositorio. Resumen en la Tabla~\ref{tab:api}.
 
 {\small
-\begin{longtable}{@{}L{3.0cm} L{5.0cm} L{5.5cm}@{}}
+\begin{longtable}{@{}L{2.5cm} L{4.5cm} L{4.8cm}@{}}
 \caption{Rutas principales de la API.}\label{tab:api}\\
 \toprule
 \textbf{Grupo} & \textbf{Rutas} & \textbf{Acceso} \\
@@ -313,8 +312,7 @@ La lista completa de rutas está en el \texttt{README} del repositorio. Resumen 
 \endfirsthead
 \toprule
 \textbf{Grupo} & \textbf{Rutas} & \textbf{Acceso} \\
-\midrule
-\endhead
+\midrule \endhead
 Salud & \texttt{GET} \path{/api/health} & Público \\
 Autenticación & \texttt{POST register}, \texttt{POST login}, \texttt{POST logout}, \texttt{GET me}, \texttt{GET confirm}, \texttt{POST resend-confirmation}, \texttt{GET providers}, \texttt{GET google}, \texttt{GET google/callback} & Público (salvo \path{me}) \\
 Usuarios & \texttt{GET} \path{/users}, \texttt{GET} \path{/users/:id/active}, \texttt{PATCH} \path{/users/:id/role}, \texttt{DELETE} \path{/users/:id} & Admin (la baja, propio o admin) \\

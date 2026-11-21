@@ -135,7 +135,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-21",
-  "usos": 1
+  "usos": 2
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
@@ -147,13 +147,13 @@
   "bien": 4,
   "mal": 1,
   "ultimo": "2026-11-21",
-  "usos": 40
+  "usos": 41
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 5,
   "mal": 1,
   "ultimo": "2026-11-21",
-  "usos": 25
+  "usos": 26
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -177,7 +177,7 @@
   "bien": 4,
   "mal": 1,
   "ultimo": "2026-11-21",
-  "usos": 30
+  "usos": 31
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
@@ -248,8 +248,8 @@
  "memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-19",
-  "usos": 3
+  "ultimo": "2026-11-21",
+  "usos": 4
  },
  "memoria/conocimiento/recetas/verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl.md": {
   "bien": 0,
