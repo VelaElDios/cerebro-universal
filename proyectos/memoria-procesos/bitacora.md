@@ -12685,3 +12685,15 @@ La memoria compila correctamente (91 páginas, sin errores), `verificar.py` pasa
 ## 2026-11-21 03:42 · 🎉 Proyecto terminado
 
 El revisor da por cumplidos todos los criterios de la spec.
+
+
+## Revisión humana (Javier) · 2026-11-21 · reabierta por los diagramas
+
+La memoria NO está terminada: los diagramas siguen incumpliendo las reglas 16-18 aunque la revisión de Gemini dijera que estaban bien. Ahora `revisar_figuras.py` también MIDE cada diagrama con las coordenadas reales del PDF (líneas que pasan por encima de letras, cajas que se pisan, palabras partidas con guion, letras de menos de 7,5 pt). Eso no lo decide una IA: si falla, hay que arreglar el dibujo.
+
+Lo que marca ahora mismo en la versión de final/:
+- **Figura 4.7 (fig:juego-arquitectura, 04b-juego.tex):** la caja config.js pisa a juego.js; las flechas de mundo.js a cada módulo y la de juego.js a mundo.js pasan por encima de las cajas intermedias; palabras partidas («render-», «chi-», «fin-»); y el `adjustbox` la encoge hasta letras de 6 pt. Rehacerla para que quepa SIN escalar (quitar el adjustbox): tres columnas estrechas (text width ~3 cm, font \footnotesize, separación ~1 cm). Dentro de cada columna, o flechas de caja en caja, o una línea vertical a un lado («bus») con flechas cortas y codos (`-|`, `|-`) hacia cada caja. Los nombres largos en dos líneas a mano (`render.js\\\\render-mundo.js`), nunca partidos. config.js en una fila aparte, debajo de las columnas.
+- **Figura 3.1 (fig:capas):** letras de 6 pt por el escalado y palabras partidas («confirma-», «con-», «Goo-»). Mismo arreglo: sin escalar y con saltos de línea a mano.
+- **Diagramas de secuencia:** varios salen a 5-6 pt (registro, confirmación) o tienen etiquetas cruzadas por las líneas de vida (login, Google, baja, partida, contratar). Etiquetas más cortas, guardas de los `alt` cortas, menos participantes si hace falta (≤ 6).
+
+Ejecutar `comando_prueba` tras cada cambio: el mensaje de `revisar_figuras.py` dice qué figura, en qué archivo y qué le pasa.
