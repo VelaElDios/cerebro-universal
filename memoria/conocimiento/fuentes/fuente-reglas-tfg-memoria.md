@@ -6,8 +6,8 @@ claves: []
 proyectos: []
 fuentes: ["../../memoria/reglas-tfg.md"]
 confianza: "verificado"
-fecha: "2026-11-18"
-actualizado: "2026-11-18"
+fecha: "2026-11-21"
+actualizado: "2026-11-21"
 ---
 
 Temas: [[tfg]] · [[latex]] · [[memoria]]
@@ -15,14 +15,16 @@ Temas: [[tfg]] · [[latex]] · [[memoria]]
 Documento aprendido: `../../memoria/reglas-tfg.md`.
 
 ## Resumen
-Este trozo define las reglas obligatorias de maquetación y contenido para la memoria del TFG usando la plantilla ESIIAB-UCLM. Cubre portada, tablas, figuras, diagramas, reglas de contenido por sprint y el proceso de verificación automática y manual antes de considerar la memoria terminada.
+Este trozo define las reglas fijas de Javier para la memoria del TFG usando la plantilla ESIIAB-UCLM (Sprint 3 en adelante). Cubre portada oficial, elementos obligatorios de la plantilla, formato de tablas y figuras, legibilidad de diagramas (máx. 6 participantes en secuencia), alcance por sprint, prosa en lugar de listas de capturas, y verificación automática con `scripts/revisar_maquetacion.py` y `scripts/revisar_figuras.py`. Una memoria no se considera terminada si incumple alguna regla.
 
-## Lo que se sacó de él (8)
-- [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]]
-- [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]]
-- [[formato-de-titulos-y-enlaces-en-la-memoria]]
-- [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]]
-- [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]]
-- [[reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle]]
-- [[reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable]]
-- [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]]
+## Lo que se sacó de él (10)
+- [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]]
+- [[elementos-de-plantilla-inmutables-no-se-quita-nada]]
+- [[formato-de-tablas-alineacion-tamanos-y-longtable]]
+- [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]]
+- [[limite-de-6-participantes-en-diagramas-de-secuencia]]
+- [[portada-unica-oficial-del-tfg-elements-portada-tex]]
+- [[prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier]]
+- [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
+- [[scripts-de-verificacion-automatica-en-el-repo]]
+- [[verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev]]

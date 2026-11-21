@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T18:56:51+01:00",
+ "generado": "2026-11-21T19:18:43+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2145,6 +2145,21 @@
    "ruta": "memoria/conocimiento/datos/script-de-configuracion-de-secretos-hito-4-en-gcp.md"
   },
   {
+   "id": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "tipo": "dato",
+   "titulo": "Scripts de verificación automática en el repo",
+   "temas": [
+    "latex",
+    "memoria",
+    "python",
+    "scripts",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/scripts-de-verificacion-automatica-en-el-repo.md"
+  },
+  {
    "id": "dato:tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re",
    "tipo": "dato",
    "titulo": "Tabla de trazabilidad Sprint 1: PBI → Hito → Título → Tareas → PRs → Release",
@@ -2276,6 +2291,20 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/workspace-y-equipo-en-donetonic.md"
+  },
+  {
+   "id": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "tipo": "decision",
+   "titulo": "Alcance por sprint: cada entrega solo contiene lo de su sprint",
+   "temas": [
+    "latex",
+    "memoria",
+    "scrum",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin.md"
   },
   {
    "id": "decision:arquitectura-en-capas-con-inyeccion-de-dependencias-permitio",
@@ -2637,6 +2666,19 @@
    "ruta": "memoria/conocimiento/decisiones/diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18.md"
   },
   {
+   "id": "decision:elementos-de-plantilla-inmutables-no-se-quita-nada",
+   "tipo": "decision",
+   "titulo": "Elementos de plantilla inmutables (no se quita nada)",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/elementos-de-plantilla-inmutables-no-se-quita-nada.md"
+  },
+  {
    "id": "decision:entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio",
    "tipo": "decision",
    "titulo": "Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits",
@@ -2779,6 +2821,20 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md"
+  },
+  {
+   "id": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
+   "tipo": "decision",
+   "titulo": "Límite de 6 participantes en diagramas de secuencia",
+   "temas": [
+    "diagramas",
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/limite-de-6-participantes-en-diagramas-de-secuencia.md"
   },
   {
    "id": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
@@ -3006,6 +3062,33 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md"
+  },
+  {
+   "id": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "tipo": "decision",
+   "titulo": "Portada única oficial del TFG (elements/portada.tex)",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/portada-unica-oficial-del-tfg-elements-portada-tex.md"
+  },
+  {
+   "id": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "tipo": "decision",
+   "titulo": "Prosa de TFG en lugar de listas de capturas (regla 13 Javier)",
+   "temas": [
+    "latex",
+    "memoria",
+    "redacción",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier.md"
   },
   {
    "id": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
@@ -4488,6 +4571,19 @@
    "ruta": "memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github.md"
   },
   {
+   "id": "receta:formato-de-tablas-alineacion-tamanos-y-longtable",
+   "tipo": "receta",
+   "titulo": "Formato de tablas: alineación, tamaños y longtable",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/formato-de-tablas-alineacion-tamanos-y-longtable.md"
+  },
+  {
    "id": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
    "tipo": "receta",
    "titulo": "Formato de títulos y enlaces en la memoria",
@@ -4585,6 +4681,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte.md"
+  },
+  {
+   "id": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
+   "tipo": "receta",
+   "titulo": "Legibilidad de diagramas: sin cruces, sin palabras partidas, flechas caja-a-caja",
+   "temas": [
+    "diagramas",
+    "latex",
+    "memoria",
+    "tfg",
+    "tikz"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl.md"
   },
   {
    "id": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
@@ -4882,6 +4993,19 @@
    "ruta": "memoria/conocimiento/recetas/registro-de-usuario-con-confirmacion-por-correo-hmac-24-h-y.md"
   },
   {
+   "id": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "tipo": "receta",
+   "titulo": "Reglas de figuras: tamaño, flotantes y nada de páginas solas",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas.md"
+  },
+  {
    "id": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
    "tipo": "receta",
    "titulo": "Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)",
@@ -5169,6 +5293,21 @@
    "ruta": "memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig.md"
   },
   {
+   "id": "receta:verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev",
+   "tipo": "receta",
+   "titulo": "Verificación obligatoria: revisar_maquetacion.py en verde + revisión página a página",
+   "temas": [
+    "ci",
+    "latex",
+    "memoria",
+    "scripts",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev.md"
+  },
+  {
    "id": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
    "tipo": "receta",
    "titulo": "Verificación visual de diagramas TikZ y pgf-umlsd según reglas 16-18",
@@ -5195,21 +5334,21 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 137,
+   "peso": 147,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 57,
+   "peso": 67,
    "ruta": "memoria/temas/memoria.md"
   },
   {
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 26,
+   "peso": 27,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -5335,7 +5474,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 58,
+   "peso": 68,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -5552,7 +5691,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 55,
+   "peso": 56,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -5818,7 +5957,7 @@
    "id": "tema:redacción",
    "tipo": "tema",
    "titulo": "redacción",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/redacción.md"
   },
   {
@@ -6207,6 +6346,20 @@
    "ruta": "memoria/temas/correo.md"
   },
   {
+   "id": "tema:python",
+   "tipo": "tema",
+   "titulo": "python",
+   "peso": 1,
+   "ruta": "memoria/temas/python.md"
+  },
+  {
+   "id": "tema:scripts",
+   "tipo": "tema",
+   "titulo": "scripts",
+   "peso": 2,
+   "ruta": "memoria/temas/scripts.md"
+  },
+  {
    "id": "tema:gestion",
    "tipo": "tema",
    "titulo": "gestion",
@@ -6217,7 +6370,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 11,
+   "peso": 13,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -6882,7 +7035,7 @@
    "id": "tema:ci",
    "tipo": "tema",
    "titulo": "ci",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/ci.md"
   },
   {
@@ -12853,6 +13006,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "a": "tema:python",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "a": "tema:scripts",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
    "de": "dato:tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re",
    "a": "tema:gestion",
    "tipo": "trata"
@@ -13245,6 +13423,31 @@
   {
    "de": "dato:workspace-y-equipo-en-donetonic",
    "a": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "concepto:convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2",
    "tipo": "enlaza"
   },
   {
@@ -14318,6 +14521,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "decision:elementos-de-plantilla-inmutables-no-se-quita-nada",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:elementos-de-plantilla-inmutables-no-se-quita-nada",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:elementos-de-plantilla-inmutables-no-se-quita-nada",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:elementos-de-plantilla-inmutables-no-se-quita-nada",
+   "a": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio",
    "a": "tema:ambientes",
    "tipo": "trata"
@@ -14746,6 +14969,26 @@
    "de": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
    "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
+   "a": "tema:tfg",
+   "tipo": "trata"
   },
   {
    "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
@@ -15410,6 +15653,51 @@
   {
    "de": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
    "a": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
+   "a": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "a": "tema:redacción",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "tipo": "enlaza"
   },
   {
@@ -16794,42 +17082,52 @@
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "decision:elementos-de-plantilla-inmutables-no-se-quita-nada",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "a": "receta:formato-de-tablas-alineacion-tamanos-y-longtable",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "a": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "decision:portada-unica-oficial-del-tfg-elements-portada-tex",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable",
+   "a": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-reglas-tfg-memoria",
+   "a": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-reglas-tfg-memoria",
+   "a": "receta:verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev",
    "tipo": "enlaza"
   },
   {
@@ -20393,6 +20691,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:formato-de-tablas-alineacion-tamanos-y-longtable",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:formato-de-tablas-alineacion-tamanos-y-longtable",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:formato-de-tablas-alineacion-tamanos-y-longtable",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
    "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
    "a": "tema:latex",
    "tipo": "trata"
@@ -20691,6 +21004,31 @@
    "de": "receta:inicio-de-sesion-google-oauth-2-0-con-state-anti-csrf-e-inte",
    "a": "decision:comportamiento-de-cuentas-segun-metodo-de-registro-y-estado",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
+   "a": "tema:tikz",
+   "tipo": "trata"
   },
   {
    "de": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
@@ -21598,6 +21936,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
    "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -22386,6 +22739,31 @@
    "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "a": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev",
+   "a": "tema:ci",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev",
+   "a": "tema:scripts",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev",
+   "a": "tema:tfg",
+   "tipo": "trata"
   },
   {
    "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",

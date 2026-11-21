@@ -157,3 +157,11 @@ Trozos leídos: 9 · notas nuevas o ampliadas: 56
 - ✅ `repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea3_2_aos.cpp` aprendido entero: 6 notas → Code Lab4.zip!tarea3 2 aos (Practicas)
 - ✅ `repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea4_1_ilp.cpp` aprendido entero: 6 notas → Code Lab4.zip!tarea4 1 ilp (Practicas)
 - ✅ `repo:datos/temarios/AC/Practicas/Code_Lab4.zip!tarea4_2_branchless.cpp` aprendido entero: 6 notas → Code Lab4.zip!tarea4 2 branchless (Practicas)
+
+## 2026-11-21 19:18 · 📚 Aprendizaje
+
+Trozos leídos: 1 · notas nuevas o ampliadas: 10
+
+**Repos:** saas @ b6fd183 2026-11-19 14:14:30 +0100 · datos @ 50107c1 2026-11-21 17:56:56 +0000
+
+- ✅ `../../memoria/reglas-tfg.md` aprendido entero: 10 notas → [[fuente-reglas-tfg-memoria]]
