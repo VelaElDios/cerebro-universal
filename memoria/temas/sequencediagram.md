@@ -10,7 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este a
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c|Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta|Diagramas de secuencia pgf-umlsd sintaxis correcta]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -22,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este a
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[codigos estado]] · [[http]] · [[memoria]] · [[diagramas]] · [[diagramas-secuencia]]
+[[latex]] · [[pgf-umlsd]] · [[codigos estado]] · [[http]] · [[memoria]] · [[diagramas]] · [[diagramas-secuencia]] · [[secuencia]] · [[tikz]] · [[uml]]

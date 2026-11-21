@@ -30,4 +30,6 @@ Números que deben aparecer tal cual en la memoria:
 > Sprint 1: 19 PBIs (P1–P19) y 32 tareas (T1–T32). Sprint 2: 29 PBIs (P20–P48) y 50 tareas (T33–T82). Pruebas automáticas en main al cerrar Sprint 2: 276 (140 Sprint 1 + 136 juego hasta Fase 6). Tras Fase 7: 322 pruebas.
 > — `repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md` (cita sin comprobar)
 
+Relacionado: [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

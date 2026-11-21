@@ -17,7 +17,7 @@ Antes de escribir cualquier cifra (también las pequeñas, y las que salen de su
 > Lo que no hayas comprobado, dilo: "no comprobado". Un "aprobado" sin comprobaciones no cuenta.
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
-Relacionado: [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes]] · [[cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
+Relacionado: [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes]] · [[cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]]
 
 ## Ampliación (2026-11-20, memoria-procesos)
 |

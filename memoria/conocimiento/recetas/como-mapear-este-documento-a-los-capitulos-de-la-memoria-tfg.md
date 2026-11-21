@@ -29,7 +29,7 @@ Guía directa para volcar el contenido de esta documentación técnica en la mem
 | Anexo B. Trazabilidad | `anexos/B-trazabilidad.tex` | 3 y 4.4 |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]] · [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]]
+Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]] · [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

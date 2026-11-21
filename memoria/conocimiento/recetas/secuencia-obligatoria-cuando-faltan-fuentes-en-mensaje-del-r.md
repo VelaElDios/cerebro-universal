@@ -22,6 +22,6 @@ Si al recibir el mensaje del revisor faltan fuentes críticas:
 > TAREA CRÍTICA 1: Solicitar al usuario las 4 fuentes faltantes... Sin ellas, verificar.py seguirá fallando
 > — `bitácora del proyecto (paso actual)` (cita sin comprobar)
 
-Relacionado: [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]] · [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]] · [[fuentes-faltantes-bloquean-verificacion-automatica]]
+Relacionado: [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]] · [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]] · [[fuentes-faltantes-bloquean-verificacion-automatica]] · [[validacion-completa-de-numeros-en-memoria-tfg-con-verificar]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -2,15 +2,15 @@
 
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
-- Notas que se han usado alguna vez: 38
-- Notas que nunca se han usado: 229
+- Notas que se han usado alguna vez: 37
+- Notas que nunca se han usado: 224
 
 ## Las más útiles
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
 | [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 40 | 4 | 1 |
-| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG]] | 27 | 4 | 1 |
+| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]] | 27 | 4 | 1 |
 | [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 26 | 2 | 1 |
 | [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas\|Contenido por sprint y prosa de TFG (no listas de capturas)]] | 24 | 5 | 1 |
 | [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis\|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] | 12 | 3 | 0 |

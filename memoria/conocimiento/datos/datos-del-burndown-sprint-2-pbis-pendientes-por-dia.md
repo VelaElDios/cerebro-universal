@@ -26,6 +26,6 @@ Gráfico Mermaid incluido: línea y barras con valores [28, 11, 11, 2, 2, 2, 0] 
 > | Día | PBIs hechos ese día | PBIs hechos (acumulado) | PBIs pendientes |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]]
+Relacionado: [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

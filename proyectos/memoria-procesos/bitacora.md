@@ -10964,7 +10964,7 @@ El constructor intentó corregir los 5 diagramas de secuencia en chapters/04-des
 
 ## 2026-11-19 17:04 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[longtable-sin-fila-huerfana-al-final]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[longtable-sin-fila-huerfana-al-final]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
 
 ## 2026-11-19 18:02 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -11053,7 +11053,7 @@ He corregido yo directamente el error de compilación del último intento (resta
 
 ## 2026-11-19 19:15 · 🧠 Conocimiento guardado
 
-[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]
 
 ## 2026-11-19 20:57 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
 
@@ -11127,7 +11127,7 @@ El constructor debe abordar los puntos 1-7 en los próximos pasos, siguiendo el 
 
 ## 2026-11-19 20:59 · 🧠 Conocimiento guardado
 
-[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]]
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]
 
 ## 2026-11-19 21:49 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -11203,7 +11203,7 @@ Correcciones del revisor en este paso:
 
 ## 2026-11-19 21:52 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie]] · [[una-sola-portada-oficial-en-elements-portada-tex]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]]
 
 ## 2026-11-19 22:37 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -11477,7 +11477,7 @@ Lo que debe hacer el constructor: **PRIMERO** conseguir las 4 fuentes faltantes;
 
 ## 2026-11-20 02:50 · 🧠 Conocimiento guardado
 
-[[validacion-completa-de-numeros-en-memoria-tfg-con-verificar]] · [[longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi]] · [[fundir-secciones-de-1-2-parrafos-regla-9-javier]]
+[[validacion-completa-de-numeros-en-memoria-tfg-con-verificar]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[fundir-secciones-de-1-2-parrafos-regla-9-javier]]
 
 ## 2026-11-20 06:13 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -11606,7 +11606,7 @@ Corregir la longtable de a4-trazabilidad.tex (tab:trazabilidad-completa) y luego
 
 ## 2026-11-20 06:16 · 🧠 Conocimiento guardado
 
-[[longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[fundir-secciones-de-1-2-parrafos-regla-9-javier]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]]
+[[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[fundir-secciones-de-1-2-parrafos-regla-9-javier]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]]
 
 ## 2026-11-20 06:48 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -11678,7 +11678,7 @@ Correcciones aplicadas en este paso (bloques CAMBIAR abajo):
 
 ## 2026-11-20 06:51 · 🧠 Conocimiento guardado
 
-[[fuentes-faltantes-bloquean-verificacion-automatica]] · [[una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]]
+[[fuentes-faltantes-bloquean-verificacion-automatica]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]]
 
 ## 2026-11-20 08:07 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 

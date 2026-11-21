@@ -32,6 +32,6 @@ Para que las figuras compartan página con texto u otras figuras: (1) reducir al
 ## Ampliación (2026-11-16, memoria-procesos)
 Para evitar páginas con una sola imagen: 1) Limitar altura de capturas a 0.42\textheight con keepaspectratio. 2) Para diagramas TikZ/pgfplots grandes, envolver en adjustbox con max totalheight=0.6\textheight. 3) Relajar parámetros de flotantes en el preámbulo: \renewcommand{\topfraction}{0.85}, \renewcommand{\bottomfraction}{0.6}, \renewcommand{\textfraction}{0.12}, \renewcommand{\floatpagefraction}{0.8}, \setcounter{topnumber}{3}, \setcounter{totalnumber}{4}. 4) Usar [htbp] en todas las figuras. 5) Agrupar capturas relacionadas en subfigure para que ocupen menos páginas.
 
-Relacionado: [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]]
+Relacionado: [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

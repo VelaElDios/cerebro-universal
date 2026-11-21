@@ -164,3 +164,5 @@ Fusionada con: Fechas y estructura de los dos sprints con PBIs y tareas
 Sprint 1 (29/09–27/10/2026): 19 PBIs, 32 tareas, 4 hitos. Sprint 2 (23/10–29/10/2026): 29 PBIs, 50 tareas, 7 fases. Total: 48 PBIs, 82 tareas. Burndown S1: 15→9→5→1→2→0 (16 PBIs alcance entrega). Burndown real S2: 28→11→11→2→2→2→0 (reconstruido por fechas PR). DoneTonic S2 en recta porque backlog registrado al cerrar sprint (29/10).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]]: Nota A describe 7 fases en el Sprint 2 (Base del juego, Fase 2·Club, Fase 3·Ultras, Fase 4·Mundo, Fase 5·Rarezas, Fase 6·Logros y sonido, Calidad). Nota B lista 8 etiquetas/fases en DoneTonic (Rediseño, 1 a 7), donde la fase 1 equivale a «Base del juego» pero añade «Rediseño» inicial y una fase 7 final distinta a «Calidad».

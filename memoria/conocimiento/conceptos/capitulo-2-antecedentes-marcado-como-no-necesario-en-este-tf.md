@@ -17,6 +17,6 @@ La plantilla oficial de la ESIIAB-UCLM señala explícitamente que el capítulo 
 > La plantilla indica que no es necesario en este trabajo.
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[fuente-reglas-tfg]] · [[anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[glosario-tecnico-del-proyecto-22-terminos-definidos]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de]]
+Relacionado: [[fuente-reglas-tfg]] · [[anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[glosario-tecnico-del-proyecto-22-terminos-definidos]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de]] · [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

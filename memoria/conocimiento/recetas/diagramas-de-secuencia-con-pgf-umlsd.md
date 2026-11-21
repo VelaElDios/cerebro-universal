@@ -31,6 +31,6 @@ Temas: [[latex]] · [[pgf-umlsd]] · [[secuencia]] · [[tikz]]
 > El entorno es `sequencediagram` (en minúsculas
 > — `proyectos/memoria-procesos/spec.md`
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

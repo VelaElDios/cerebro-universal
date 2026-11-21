@@ -25,7 +25,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «grada-colchonera» (este 
 - 🧪 [[memoria/conocimiento/recetas/como-probar-la-configuracion-en-local-hito-4|Cómo probar la configuración en local (Hito 4)]]
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
 - 🧪 [[memoria/conocimiento/recetas/definicion-de-hecho-dod-para-tareas-e-hitos|Definición de Hecho (DoD) para tareas e hitos]]
-- 🧪 [[memoria/conocimiento/recetas/estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni|Estructura y nomenclatura de ramas por hito y tarea DoneTonic]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni|Estructura y nomenclatura de ramas por hito y tarea DoneTonic]]
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf|Flujo de confirmación de cuenta por correo (GET /api/auth/confirm)]]
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-registro-con-email-y-contrasena|Flujo de registro con email y contraseña]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github|Flujo de trabajo enunciado → código → deploy (DoneTonic + GitHub)]] · ⚠️ propuesto

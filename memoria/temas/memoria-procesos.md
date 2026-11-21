@@ -21,10 +21,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica|Fuentes faltantes bloquean verificación automática]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie|Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5|Pipeline CI/CD descrito una sola vez en el Capítulo 5 (Regla 14 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/placeholders-xx-para-numeros-sin-verificar-en-memoria-latex|Placeholders "XX" para números sin verificar en memoria LaTeX]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi|Una sola imagen por captura en toda la memoria (regla 10 Javier)]]
+- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
+- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]] · ⚠️ propuesto
 
 ## Datos
 

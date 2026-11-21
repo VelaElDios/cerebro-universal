@@ -20,4 +20,6 @@ problema: Tras la reorganización del 19/11/2026, los ficheros antiguos de `docs
 solucion: Mapeo de rutas antiguas a nuevas: `documentacion-tecnica.md` → `requisitos.md`/`arquitectura.md`; `gestion/README.md` → `sprint-1.md`/`sprint-2.md`; `revision-entrega.md` → `sprint-1.md` (sección «Revisión de la entrega frente al enunciado»); `hito4-configuracion.md` → `procesos.md` (sección «Configuración de los servicios externos»).
 > — `repo:saas/docs/index.md` (cita sin comprobar)
 
+Relacionado: [[como-actualizar-referencias-a-documentacion-tras-reorganizac]] · [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]] · [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -17,6 +17,6 @@ En toda longtable, la última fila de datos antes de \bottomrule debe terminar c
 > Las tablas largas van en longtable y su última fila (por ejemplo, el Total) no se queda sola en otra página: usa \\* en las últimas filas.
 > — `memoria/reglas-tfg.md (regla 7)`
 
-Relacionado: [[longtable-sin-fila-huerfana-al-final]] · [[longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja]] · [[que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra]]
+Relacionado: [[longtable-sin-fila-huerfana-al-final]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[longtable-sin-fila-huerfana-al-final]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

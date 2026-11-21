@@ -7,7 +7,7 @@ proyectos: ["memoria-procesos"]
 fuentes: ["../memoria-procesos/fuentes/estructura-memoria.md", "fuentes/estructura-memoria.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
-actualizado: "2026-11-20"
+actualizado: "2026-11-21"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[tfg]]
@@ -22,3 +22,5 @@ Relacionado: [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]] ·
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]]: La Nota B afirma que la memoria TFG debe tener **exactamente 8 capítulos** con nombres y orden fijos (1.Introducción…, 2.Antecedentes, 3.Propuesta…, 4.Descripción…, 5.Evaluación, 6.Conclusiones…, 7.Bibliografía, 8.Anexos). La Nota A presenta una estructura distinta: 7 capítulos numerados más Resumen y dos anexos, con títulos como «Gestión del proyecto», «Arquitectura», «Implementación», «CI/CD», etc., que no coinciden con los 8 capítulos obligatorios de la Nota B.
+
+> ⚠️ Posible contradicción con [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]]: La Nota A describe la plantilla inmutable como una secuencia donde los «capítulos» son un bloque previo y separado de «anexos» y «bibliografía» (portada, índices, capítulos, anexos, bibliografía). La Nota B afirma que la memoria debe tener exactamente 8 capítulos y que el capítulo 7 es Bibliografía y el 8 es Anexos, integrándolos dentro de la numeración de capítulos.

@@ -34,3 +34,5 @@ Relacionado: [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] ·
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba]]: La Nota A describe 7 fases de **desarrollo nuevo** en el Sprint 2 (Rediseño + Fases 1-7) añadiendo características y resolviendo problemas. La Nota B afirma que el Sprint 2 **no desarrolla lógica nueva**, sino que documenta 6 fases preexistentes (Base, Club, Ultras, Mundo, Rarezas, Logros y sonido) como backlog formal. Además, el número de fases difiere (7 vs 6).
+
+> ⚠️ Posible contradicción con [[fechas-pbis-y-tareas-de-los-dos-sprints]]: Nota A describe 7 fases en el Sprint 2 (Base del juego, Fase 2·Club, Fase 3·Ultras, Fase 4·Mundo, Fase 5·Rarezas, Fase 6·Logros y sonido, Calidad). Nota B lista 8 etiquetas/fases en DoneTonic (Rediseño, 1 a 7), donde la fase 1 equivale a «Base del juego» pero añade «Rediseño» inicial y una fase 7 final distinta a «Calidad».

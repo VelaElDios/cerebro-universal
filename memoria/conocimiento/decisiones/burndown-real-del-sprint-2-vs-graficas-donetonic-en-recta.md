@@ -32,4 +32,6 @@ solucion: En la memoria, mostrar ambas: la captura de DoneTonic (recta) y el bur
 ## Ampliación (2026-11-20, memoria-procesos)
 Evolución real: 23/10 (PR #36): 1 PBI; 24/10 (PRs #44–#52): 17 PBIs; 26/10 (PRs #53, #54): 9 PBIs; 29/10 (PRs #55, #56): 2 PBIs. Total 29 PBIs en 3 días de trabajo intenso. Velocity Chart confirma pico de 17 PBIs el 24/10.
 
+Relacionado: [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

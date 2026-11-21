@@ -47,3 +47,5 @@ Relacionado: [[cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p]] ·
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes]]: Nota A afirma que el test automático solo comprueba números > 20 y los pequeños los revisa el revisor. Nota B (primer párrafo) afirma lo contrario: que `verificar.py` comprueba TODOS los números, no solo los > 20. (La ampliación posterior de la propia Nota B rectifica y coincide con Nota A).
+
+> ⚠️ Posible contradicción con [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]]: Nota A afirma que `verificar.py` comprueba solo números mayores que 20. Nota B (primer párrafo) afirma lo contrario: que comprueba TODOS los números, no solo los > 20. La ampliación de la propia Nota B rectifica y coincide con Nota A (solo > 20 automáticos), pero la afirmación inicial de B contradice a A.

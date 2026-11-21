@@ -18,4 +18,6 @@ relacionado: Cada cifra del documento sale de las fuentes, también las pequeña
 > Sprint 1: 19 PBIs / 32 tareas; Sprint 2: 29 PBIs / 50 tareas; Total 82 tareas; 276 pruebas al cierre Sprint 2, 322 tras Fase 7; 5 migraciones; 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones; 7 fases de evolución (Rediseño + Fases 1–7)
 > — `repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/log.md` (cita sin comprobar)
 
+Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

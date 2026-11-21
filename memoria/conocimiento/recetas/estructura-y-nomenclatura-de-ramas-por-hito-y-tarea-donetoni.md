@@ -5,9 +5,9 @@ temas: ["donetonic", "git", "github-flow", "grada-colchonera"]
 claves: ["hito-N/integracion", "hito-N/Tx-descripcion", "Tx", "Px", "DoneTonic"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/CONTRIBUTING.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-21"
 ---
 
 Temas: [[donetonic]] · [[git]] · [[github-flow]] · [[grada-colchonera]]

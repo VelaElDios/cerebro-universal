@@ -25,3 +25,5 @@ El Sprint 2 comprende 29 PBIs (P20–P48) desglosados en 50 tareas (T33–T82). 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]: La Nota A afirma que en el Sprint 2 hubo «un único PR por fase de juego (#36, #44–#54)», implicando que cada uno de esos 11 PRs corresponde a una fase. La Nota B muestra que solo 6 PRs (#36, #49, #50, #52, #53, #54) se asocian a las fases 1–6; los PRs #44–#48 y #51 son mejoras/arreglos de «Base del juego» o «Calidad», no fases de juego.
+
+> ⚠️ Posible contradicción con [[estado-de-completitud-de-sprints-y-trazabilidad]]: La ampliación de la Nota A describe el Sprint 2 con **6 fases** («Fase 1 a Fase 6»); la ampliación de la Nota B afirma que el Sprint 2 tuvo **7 fases**.

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tfg"
-notas: 58
+notas: 57
 ---
 # tfg
 
@@ -23,12 +23,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm|Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Evitar fila huérfana al final en longtable (LaTeX)]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
 - 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]]
-- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas (agrupar con subfigure)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas (agrupar con subfigure)]]
 - 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-vs-lista-de-capturas-regla-13-javier|Prosa de TFG vs lista de capturas (regla 13 Javier)]]
-- 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada|Reescribir frases «La figura X muestra…» como prosa integrada]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle|Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)]]
@@ -51,17 +51,16 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
 - ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
+- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]]
 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg|Anexo de uso responsable de IA obligatorio en la memoria TFG]]
 - 💡 [[memoria/conocimiento/conceptos/capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf|Capítulo 2 (Antecedentes) marcado como no necesario en este TFG]]
-- 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas|Prosa de TFG vs lista de capturas]]
 
@@ -85,4 +84,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[figuras]] · [[plantilla]] · [[grada-colchonera]] · [[saas]] · [[redaccion]] · [[verificacion]] · [[diagramas]] · [[scrum]] · [[memoria-procesos]] · [[maquetacion]]
+[[latex]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[plantilla]] · [[saas]] · [[redaccion]] · [[verificacion]] · [[diagramas]] · [[scrum]] · [[memoria-procesos]] · [[maquetacion]]

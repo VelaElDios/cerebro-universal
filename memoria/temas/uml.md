@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «uml» (este archivo se ge
 
 ## Temas relacionados
 
-[[diagramas]] · [[diagramas-secuencia]] · [[latex]] · [[pgf-umlsd]] · [[secuencia]] · [[tikz]]
+[[diagramas]] · [[diagramas-secuencia]] · [[latex]] · [[pgf-umlsd]] · [[secuencia]] · [[sequencediagram]] · [[tikz]]

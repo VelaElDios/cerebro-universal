@@ -39,4 +39,6 @@ problema: La flecha users→juego_records bajaba 7.5 cm por la izquierda y pasab
 solucion: Reubicar las entidades con coordenadas explícitas: session (izquierda), users (centro), perfiles (derecha), records (debajo de perfiles). La relación users→records sale por el este de users, va horizontal a la derecha de perfiles, baja y entra por el sur de records. Usar flechas con codos (|-) y etiquetas fuera de líneas verticales. Aumentar separación horizontal entre cajas (≥ 2.5 cm).
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
+Relacionado: [[como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

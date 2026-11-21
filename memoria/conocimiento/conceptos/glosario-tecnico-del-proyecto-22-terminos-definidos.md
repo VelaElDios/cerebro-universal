@@ -39,6 +39,6 @@ Sirve como anexo de definiciones en la memoria del TFG y para onboarding de nuev
 | **Chiptune** | Música al estilo de las consolas de 8 bits, con ondas simples |
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[definicion-de-hecho-dod-para-tareas-hitos-y-fases]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]]
+Relacionado: [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[definicion-de-hecho-dod-para-tareas-hitos-y-fases]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[definicion-de-hecho-dod-para-tareas-e-hitos]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

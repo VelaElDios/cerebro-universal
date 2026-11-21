@@ -86,6 +86,6 @@ Cifras confirmadas en las fuentes del repositorio (documentacion-tecnica.md §4 
 - Líneas backend: ~2.300; frontend: ~1.150; CSS: ~950; juego: ~14.800; tests: ~5.050.
 - Contenido jugable: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
 
-Relacionado: [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]]
+Relacionado: [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

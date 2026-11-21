@@ -22,3 +22,5 @@ Relacionado: [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]]: La Nota A describe 7 fases de **desarrollo nuevo** en el Sprint 2 (Rediseño + Fases 1-7) añadiendo características y resolviendo problemas. La Nota B afirma que el Sprint 2 **no desarrolla lógica nueva**, sino que documenta 6 fases preexistentes (Base, Club, Ultras, Mundo, Rarezas, Logros y sonido) como backlog formal. Además, el número de fases difiere (7 vs 6).
+
+> ⚠️ Posible contradicción con [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]: La Nota A describe el Sprint 2 como el periodo de **integración/desarrollo de la lógica de juego** mediante «un PR por fase» (11 PRs #36, #44–#54 fusionados en `main`). La Nota B afirma que el Sprint 2 **no desarrolló lógica nueva**, sino que solo documentó como backlog 6 fases **ya implementadas** antes del sprint; las fusiones de esos 6 PRs de fase ocurrieron en la semana del sprint, pero el código ya existía.

@@ -17,7 +17,7 @@ Antes de escribir cualquier cifra (también las pequeñas, y las que salen de su
 > El test comprueba que todo número mayor que 20 del texto aparece en las fuentes; los pequeños los comprueba el revisor.
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
-Relacionado: [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]] · [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]]
+Relacionado: [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]] · [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]] · [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

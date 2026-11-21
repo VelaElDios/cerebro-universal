@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ref» (este archivo se ge
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi|Una sola imagen por captura en toda la memoria (regla 10 Javier)]]
+- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[duplicados]] · [[figuras]] · [[reglas-javier]] · [[latex]] · [[maquetacion]] · [[memoria-procesos]]
+[[duplicados]] · [[figuras]] · [[latex]] · [[maquetacion]] · [[maquetación]] · [[memoria-procesos]] · [[reglas-javier]] · [[reglas-tfg]]

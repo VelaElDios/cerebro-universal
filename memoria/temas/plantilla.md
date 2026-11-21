@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "plantilla"
-notas: 7
+notas: 6
 ---
 # plantilla
 
@@ -15,14 +15,13 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «plantilla» (este archivo
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]]
+- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf|Capítulo 2 (Antecedentes) marcado como no necesario en este TFG]]
-- 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[memoria]] · [[portada]] · [[antecedentes]] · [[capitulo-2]] · [[memoria-procesos]] · [[maquetacion]] · [[plantilla-tfg]]
+[[tfg]] · [[memoria]] · [[latex]] · [[antecedentes]] · [[capitulo-2]] · [[maquetacion]] · [[memoria-procesos]] · [[plantilla-tfg]] · [[portada]]

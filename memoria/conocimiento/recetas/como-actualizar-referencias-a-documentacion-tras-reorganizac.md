@@ -22,6 +22,6 @@ Buscar en todos los `.tex` de `chapters/` y `anexos/` las cadenas `docs/` y actu
 > La documentación de `docs/` se reorganiza como un bundle: un index.md de entrada, esta cronología y un documento por tema con su cabecera... Los documentos anteriores (`documentacion-tecnica.md`, `gestion/README.md`, `revision-entrega.md` y `hito4-configuracion.md`) desaparecen.
 > — `repo:saas/docs/index.md` (cita sin comprobar)
 
-Relacionado: [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]]
+Relacionado: [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1]] · [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

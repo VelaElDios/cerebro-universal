@@ -12,7 +12,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 - 🧪 [[memoria/conocimiento/recetas/api-del-juego-con-validacion-anti-trampas|API del juego con validación anti-trampas]]
 - 🧪 [[memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito|Combinaciones (24) y ULTRAS (6) con bonus porcentual y requisitos visibles]]
 - 🧪 [[memoria/conocimiento/recetas/convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto|Convención de ramas y PRs por hito/fase en el proyecto]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni|Estructura y nomenclatura de ramas por hito y tarea DoneTonic]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni|Estructura y nomenclatura de ramas por hito y tarea DoneTonic]]
 - 🧪 [[memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github|Flujo de trabajo enunciado → código → deploy (DoneTonic + GitHub)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/generacion-de-terreno-por-ruidos-terreno-js|Generación de terreno por ruidos (terreno.js)]]
 - 🧪 [[memoria/conocimiento/recetas/musica-100-sintetizada-web-audio-con-fanfarrias-por-competic|Música 100 % sintetizada (Web Audio) con fanfarrias por competición y grada reactiva]]

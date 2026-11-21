@@ -17,6 +17,6 @@ En `bib/ref.bib`, cada entrada debe tener `year` (o `s.f.`). Autores corporativo
 > Los autores que son organizaciones van con doble llave (`author = {{GitHub}}`). Todas las entradas llevan `year`; si la fuente no da fecha, `year = {s.f.}` (sin fecha).
 > — `fuentes/bibliografia-extra.md` (cita sin comprobar)
 
-Relacionado: [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante]]
+Relacionado: [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante]] · [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 137
+notas: 132
 ---
 # latex
 
@@ -48,10 +48,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta|Diagramas de secuencia pgf-umlsd sintaxis correcta]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/en-un-tex-los-comentarios-son-con-no-con|En un .tex los comentarios son con %, no con --]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-archivos-obligatoria-para-la-plantilla-sus|Estructura de archivos obligatoria para la plantilla SUS]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Evitar fila huérfana al final en longtable (LaTeX)]]
 - 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]]
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
@@ -60,10 +60,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]]
 - 🧪 [[memoria/conocimiento/recetas/fundir-secciones-de-1-2-parrafos-regla-9-javier|Fundir secciones de 1-2 párrafos (regla 9 Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Limitar altura de capturas para evitar páginas con una sola imagen]]
-- 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Longtable sin fila huérfana al final]]
-- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas (agrupar con subfigure)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas (agrupar con subfigure)]]
 - 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-vs-lista-de-capturas-regla-13-javier|Prosa de TFG vs lista de capturas (regla 13 Javier)]]
-- 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada|Reescribir frases «La figura X muestra…» como prosa integrada]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle|Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)]]
@@ -83,7 +81,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l|Bibliografía BibTeX apalike: autores corporativos con doble llave y year en todas las entradas]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-autores-corporativos-en-doble-llave|Bibliografía BibTeX con autores corporativos en doble llave y year obligatorio]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
-- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Cada imagen aparece una sola vez en el capítulo canónico]]
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir|Diagramas de secuencia: máx. 6 participantes (agrupar o partir)]]
@@ -93,28 +90,26 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura|Figuras: ninguna página con una sola imagen (límites de altura y flotantes relajados)]]
 - ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow-nunca|Flechas reales en captions y texto ($\rightarrow$), nunca ->]]
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
-- ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final (regla 7 Javier)]]
-- ⚖️ [[memoria/conocimiento/decisiones/longtables-deben-terminar-con-antes-de-bottomrule-regla-7-ja|Longtables deben terminar con \\* antes de \bottomrule (regla 7 Javier)]]
+- ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final: usar \\* en las últimas 2-3 filas antes de \bottomrule (regla 7 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes|Números en la memoria deben aparecer tal cual en las fuentes]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p|Paso 1 completado: preambulo.tex ya cumple regla 1 (una sola portada)]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie|Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5|Pipeline CI/CD descrito una sola vez en el Capítulo 5 (Regla 14 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/placeholders-xx-para-numeros-sin-verificar-en-memoria-latex|Placeholders "XX" para números sin verificar en memoria LaTeX]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
+- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt|Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1|Rutas de documentación tras reorganización del bundle (2026-11-19)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-imagen-por-captura-en-toda-la-memoria-regla-10-javi|Una sola imagen por captura en toda la memoria (regla 10 Javier)]]
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]]
+- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]] · ⚠️ propuesto
 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-de-calculos-en-lualatex-para-plantilla-sus|Arquitectura de cálculos en LuaLaTeX para plantilla SUS]]
 - 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]]
+- 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 - 💡 [[memoria/conocimiento/conceptos/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
 

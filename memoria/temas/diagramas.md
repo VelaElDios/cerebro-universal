@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "diagramas"
-notas: 12
+notas: 11
 ---
 # diagramas
 
@@ -12,7 +12,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta|Diagramas de secuencia pgf-umlsd sintaxis correcta]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas|Validación visual de diagramas TikZ/pgf-umlsd en PDF (reglas 16-18 Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig|Verificación automática de diagramas con scripts/revisar_figuras.py]]
 - 🧪 [[memoria/conocimiento/recetas/verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl|Verificación visual de diagramas TikZ y pgf-umlsd según reglas 16-18]] · ⚠️ propuesto
@@ -27,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[tfg]] · [[diagramas-secuencia]] · [[plantuml]] · [[maquetacion]] · [[secuencia]] · [[uml]] · [[sequencediagram]] · [[reglas-javier]]
+[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[tfg]] · [[plantuml]] · [[diagramas-secuencia]] · [[maquetacion]] · [[secuencia]] · [[sequencediagram]] · [[uml]] · [[reglas-javier]]

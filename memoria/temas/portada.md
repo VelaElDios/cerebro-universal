@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "portada"
-notas: 2
+notas: 1
 ---
 # portada
 
@@ -9,9 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «portada» (este archivo s
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-en-elements-portada-tex|Una sola portada oficial en elements/portada.tex]]
+- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[plantilla]] · [[memoria]] · [[memoria-procesos]] · [[maquetacion]] · [[plantilla-tfg]]
+[[latex]] · [[maquetacion]] · [[memoria]] · [[memoria-procesos]] · [[plantilla]] · [[plantilla-tfg]] · [[tfg]]

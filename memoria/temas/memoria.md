@@ -24,10 +24,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c|Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm|Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Evitar fila huérfana al final en longtable (LaTeX)]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
-- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas (agrupar con subfigure)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/que-la-ultima-fila-de-una-longtable-no-se-quede-sola-en-otra|Que la última fila de una longtable no se quede sola en otra página]]
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas (agrupar con subfigure)]]
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle|Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)]]
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable|Reglas de maquetación de tablas en LaTeX (alineación, anchos, longtable, código y rutas)]] · ⚠️ propuesto
@@ -52,8 +52,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p|Paso 1 completado: preambulo.tex ya cumple regla 1 (una sola portada)]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5-regla-14-javie|Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG]]
+- ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5|Pipeline CI/CD descrito una sola vez en el Capítulo 5 (Regla 14 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt|Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1|Rutas de documentación tras reorganización del bundle (2026-11-19)]] · ⚠️ propuesto

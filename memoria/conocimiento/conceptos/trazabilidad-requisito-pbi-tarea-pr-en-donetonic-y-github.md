@@ -28,8 +28,10 @@ Temas: [[gestión]] · [[github flow]] · [[scrum]] · [[trazabilidad]]
 Sprint 1: 32 tareas T1-T32 → ramas `hito-N/Tx-descripcion` → PRs #1-#34, #37-#41 → releases hito-1, hito-2, hito-3, hito-4, sprint-1. Sprint 2: 50 tareas T33-T82 → PRs #36, #44-#56 (uno por fase/arreglo) → main. Trazabilidad completa en Anexo A4 (tabla 82 filas). Cierres de hito: PR #9, #17, #24, #29, #32. Evolución Sprint 1: 16 PBIs alcance entrega (P1-P14, P18, P19). Evolución Sprint 2 real (fechas PR): 23/10 (1 PBI), 24/10 (17 PBIs), 26/10 (9 PBIs), 29/10 (2 PBIs). DoneTonic Sprint 2 muestra recta porque backlog registrado al cerrar sprint (29/10).
 relacionado: Fechas y estructura de los dos sprints con PBIs y tareas, Inventario de capturas de pantalla con trazabilidad a requisitos y fechas, Burndown real vs DoneTonic en Sprint 2 (backlog registrado al cierre)
 
-Relacionado: [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]]
+Relacionado: [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]]: Nota A afirma que el Sprint 1 tuvo 19 PBIs (primer viñeta) y menciona cuatro releases de hito (hito-1 a hito-4) más sprint-1; Nota B indica que el Sprint 1 tuvo 16 PBIs totales (15 iniciales + P19 añadido) y su burndown solo registra tres hitos (hito-1, hito-2, hito-3) antes del cierre del sprint.
+
+> ⚠️ Posible contradicción con [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]]: La **Nota A** delimita el Hito 4 en **6 tareas (T21–T26)** y afirma que esas seis se marcaron hechas al cerrar el Sprint 1. La **Nota B** establece que el Sprint 1 tiene **32 tareas (T1–T32)** e incluye la release `hito-4`, lo que implica que el Hito 4 abarca hasta la T32 (12 tareas: T21–T32), no solo hasta la T26.
