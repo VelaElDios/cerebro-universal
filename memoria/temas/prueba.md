@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «prueba» (este archivo se
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[pbi]] · [[sprint]] · [[tarea]]
+[[grada-colchonera]] · [[pbi]] · [[sprint]] · [[tarea]] · [[metricas]] · [[sprints]]

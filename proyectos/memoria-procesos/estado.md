@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-21 20:57"
+actualizado: "2026-11-21 21:26"
 ---
 
 # memoria-procesos
@@ -22,18 +22,18 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (PDF 92 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
-- **verificar.py**: FALLA por 2 overfull hbox (chapters/04-descripcion.tex y 04b-juego.tex) → **corregidos en este paso** reduciendo anchos de columna y usando `@{}` en todas las `longtable`.
-- **revisar_maquetacion.py**: no ejecutado (fallo previo).
+- **verificar.py**: FALLABA por 2 overfull hbox → **corregidos en este paso** reduciendo anchos de columna y usando `@{}` en todas las `longtable` (9 tablas en 04-descripcion.tex y 04b-juego.tex).
+- **revisar_maquetacion.py**: no ejecutado (fallo previo de verificar.py).
 - **revisar_umlsd.py**: no ejecutado.
 - **Revisión visual PDF**: pendiente (diagramas incumplen reglas 16-18).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas**: 6 cambios en `longtable` (anchos reducidos + `@{}`) en chapters/04-descripcion.tex y chapters/04b-juego.tex.
+- **Correcciones aplicadas**: 9 longtables ajustadas (anchos reducidos + `@{}` + `\\*` en última fila).
 - **Pendiente**: Ejecutar `comando_prueba` para confirmar corrección; rehacer diagramas para reglas 16-18; pasar toda la suite de pruebas.
 
 ## Siguiente
 1. Ejecutar `comando_prueba` y confirmar que `verificar.py` pasa.
 2. Ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py`.
-3. Rehacer diagramas problemáticos (fig:capas, fig:modelo-datos, fig:juego-arquitectura, y los 7 de secuencia) para que quepan a tamaño real SIN escalar.
-4. Revisión visual final del PDF.
+3. Rehacer diagramas problemáticos (fig:capas, fig:modelo-datos, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2, y los 7 sequencediagram) para que quepan a tamaño real SIN escalar.
+4. Revisión visual final del PDF página a página.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

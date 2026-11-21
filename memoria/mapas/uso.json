@@ -63,7 +63,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-21",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md": {
   "bien": 0,
@@ -104,8 +104,8 @@
  "memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d.md": {
   "bien": 1,
   "mal": 0,
-  "ultimo": "2026-11-20",
-  "usos": 6
+  "ultimo": "2026-11-21",
+  "usos": 7
  },
  "memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes.md": {
   "bien": 2,
@@ -177,7 +177,7 @@
   "bien": 4,
   "mal": 1,
   "ultimo": "2026-11-21",
-  "usos": 29
+  "usos": 30
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,

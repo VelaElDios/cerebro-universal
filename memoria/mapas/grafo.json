@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T20:57:30+01:00",
+ "generado": "2026-11-21T21:26:36+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1517,7 +1517,9 @@
     "pbi",
     "prueba",
     "sprint",
-    "tarea"
+    "tarea",
+    "metricas",
+    "sprints"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5495,7 +5497,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -6097,7 +6099,7 @@
    "id": "tema:sprints",
    "tipo": "tema",
    "titulo": "sprints",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/sprints.md"
   },
   {
@@ -10968,6 +10970,16 @@
   {
    "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
    "a": "tema:tarea",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "tema:sprints",
    "tipo": "trata"
   },
   {
