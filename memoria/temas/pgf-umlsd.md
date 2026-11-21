@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgf-umlsd"
-notas: 16
+notas: 17
 ---
 # pgf-umlsd
 
@@ -22,6 +22,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18|Diagramas pgf-umlsd sin escalar y legibles (reglas 16-18)]] · ⚠️ propuesto
 
 ## Conceptos
 

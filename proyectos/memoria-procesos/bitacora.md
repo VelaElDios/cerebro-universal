@@ -12697,3 +12697,53 @@ Lo que marca ahora mismo en la versión de final/:
 - **Diagramas de secuencia:** varios salen a 5-6 pt (registro, confirmación) o tienen etiquetas cruzadas por las líneas de vida (login, Google, baja, partida, contratar). Etiquetas más cortas, guardas de los `alt` cortas, menos participantes si hace falta (≤ 6).
 
 Ejecutar `comando_prueba` tras cada cambio: el mensaje de `revisar_figuras.py` dice qué figura, en qué archivo y qué le pasa.
+
+## 2026-11-21 18:54 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a empezar corrigiendo los diagramas que fallan las reglas 16-18 de Javier. El test muestra 9 diagramas con problemas: letras demasiado pequeñas (por escalado), flechas que cruzan cajas/texto, cajas que se pisan, y palabras partidas. Los arreglaré redibujándolos para que quepan a tamaño real sin `adjustbox`/`resizebox`, usando `text width` adecuado, saltos de línea manuales, flechas con codos y separación suficiente. Empiezo por `chapters/04-descripcion.tex` que tiene 6 diagramas problemáticos.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 2 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` (compilación + `verificar.py` + `revisar_maquetacion.py`) para confirmar que todos los diagramas arreglados pasan las comprobaciones. Si queda algún fallo, corregirlo; si todo pasa, marcar TERMINADO.
+
+## 2026-11-21 18:56 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 92 páginas, sin errores de LaTeX).
+- `verificar.py`: FALLA por 2 overfull hbox (chapters/04-descripcion.tex líneas 132-133: 176 pt; chapters/04b-juego.tex líneas 254-255: 222 pt).
+- `revisar_maquetacion.py`: no se ejecutó porque `verificar.py` falló.
+- `revisar_umlsd.py`: no se ejecutó.
+- Revisión visual PDF: pendiente (diagramas aún incumplen reglas 16-18 según Javier).
+- Reglas de Javier: portada única OK; declaraciones, resumen, abstract OK; índices OK. Pero diagramas con letras <7,5 pt, flechas cruzando cajas, palabras partidas, y ahora overfull hbox en texto.
+- Cadenas «La figura X muestra…» eliminadas (prosa con subfiguras) OK.
+- Imágenes no repetidas OK.
+- Secciones con párrafos reales OK.
+- Coherencia entre capítulos OK.
+- Juego y Sprint 2 descritos OK.
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2 OK.
+- Trazabilidad 82 tareas completa OK.
+
+El constructor intentó corregir los diagramas (reglas 16-18) pero la verificación falló por dos overfull hbox en capítulos 04-descripcion.tex y 04b-juego.tex. Estos overfulls suelen ser rutas largas, citas o código en \texttt que no se parten. Además, Javier indica que los diagramas siguen incumpliendo reglas 16-18 (letras diminutas por escalado, flechas cruzando cajas, palabras partidas). Hay que:
+1. Arreglar los overfull hbox aplicando lecciones: \allowbreak dentro de \texttt, partir citas largas con breakcites (ya cargado), reducir anchos de tabla, usar adjustwidth si es tabla/figura.
+2. Rehacer los diagramas problemáticos (fig:capas, fig:modelo-datos, fig:juego-arquitectura, y los 7 de secuencia) para que quepan a tamaño real SIN escalar (quitar adjustbox/resizebox), usando text width adecuado, saltos de línea manuales, flechas con codos y separación suficiente (≤6 participantes por diagrama).
+3. Volver a ejecutar comando_prueba hasta que todo pase.
+
+**Correcciones del revisor:** `(no aplicado: no encuentro el texto: «\texttt{accountConfirmation.test.js}») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\texttt{domainPolicy.test.js}») chapters/04b-juego.tex`, `(no aplicado: no encuentro el texto: «\texttt{api.juego.test.js}») chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Corregir los dos overfull hbox en chapters/04-descripcion.tex (líneas 132-133) y chapters/04b-juego.tex (líneas 254-255) usando \allowbreak en rutas/código largo y/o reduciendo anchos de tabla.
+- Rehacer los diagramas que incumplen reglas 16-18: fig:capas (04-descripcion.tex), fig:modelo-datos (04-descripcion.tex), fig:juego-arquitectura (04b-juego.tex), y los 7 diagramas de secuencia (fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar). Quitar adjustbox/resizebox, usar text width ~3 cm, font \footnotesize, node distance ≥1 cm, flechas con codos (-|, |-), etiquetas cortas, saltos de línea manuales en nombres largos.
+- Ejecutar comando_prueba y repetir hasta que verificar.py, revisar_maquetacion.py y revisar_umlsd.py pasen.
+- Revisar visualmente el PDF página a página para confirmar que no hay páginas con una sola imagen, páginas casi vacías, tablas que se pisan, ni figuras repetidas.
+
+## 2026-11-21 18:56 · 🧠 Conocimiento guardado
+
+[[como-evitar-overfull-hbox-con-texttt-largo]] · [[diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18]] · [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]] · [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth]] · [[citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite]] · [[referencia-donetonic-como-herramienta-de-gestion-agil]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]]

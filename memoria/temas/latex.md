@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 132
+notas: 137
 ---
 # latex
 
@@ -21,6 +21,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
 - 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final antes de marcar TERMINADO (PDF página a página + script verde)]]
+- 🧪 [[memoria/conocimiento/recetas/citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite|Citas con autor largo que se salen del margen: usar breakcites]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
@@ -37,6 +38,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl|Cómo escribir un diagrama de entidad-relación en TikZ legible]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-estructurar-el-csv-de-entrada-para-la-plantilla-sus|Cómo estructurar el CSV de entrada para la plantilla SUS]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]]
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo|Cómo evitar overfull hbox con \texttt largo]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier|Cómo evitar páginas con una sola imagen (Regla 8 de Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/como-exportar-diagramas-mermaid-para-la-memoria-latex|Cómo exportar diagramas Mermaid para la memoria LaTeX]]
@@ -67,6 +69,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle|Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)]]
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable|Reglas de maquetación de tablas en LaTeX (alineación, anchos, longtable, código y rutas)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi|Resumen y Abstract en elements/preambulo.tex con formato oficial]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace|Tablas de LaTeX que no se pisan (columnas p y addlinespace)]]
 - 🧪 [[memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada|Tablas largas en longtable con última fila acompañada (\\*)]]
 - 🧪 [[memoria/conocimiento/recetas/trampas-tecnicas-comprobadas-en-lualatex-evitar-errores-de-c|Trampas técnicas comprobadas en LuaLaTeX (evitar errores de compilación)]] · ⚠️ propuesto
@@ -84,6 +87,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir|Diagramas de secuencia: máx. 6 participantes (agrupar o partir)]]
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18|Diagramas pgf-umlsd sin escalar y legibles (reglas 16-18)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista|Diagramas: ninguna línea/flecha atraviesa cajas, codos y distancia suficiente]]
 - ⚖️ [[memoria/conocimiento/decisiones/escalas-de-transformacion-sus-adoptadas-sauro-lewis-bangor-e|Escalas de transformación SUS adoptadas (Sauro-Lewis, Bangor et al.)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/fase-2-defensa-sus-tex-en-beamer-con-conclusiones-generadas|Fase 2: defensa-sus.tex en Beamer con conclusiones generadas dinámicamente]]
@@ -112,6 +116,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 - 💡 [[memoria/conocimiento/conceptos/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]] · ⚠️ propuesto
 
 ## Datos
 

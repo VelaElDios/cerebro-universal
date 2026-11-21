@@ -103,36 +103,33 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.0cm, align=center, minimum height=1.3cm, font=\small},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.5cm, align=center, minimum height=1.3cm, font=\small},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=1.1cm, font=\footnotesize},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.2cm, align=center, minimum height=1.1cm, font=\footnotesize},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Frontend agrupado (columna izquierda)
-    \node[nodewide] (fe) {Frontend (navegador)\\Interfaz ui.js + Cliente api.js + Juego game/ (canvas, Web Audio)};
-    % Servidor: capas (columna central)
-    \node[nodewide, right=7.5cm of fe] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
-    \node[node, below=1.6cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación, tokens, juego};
-    \node[node, below=1.6cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=1.6cm of repo] (int) {Integraciones\\correo | Google};
-    % Reglas compartidas (a la derecha de Lógica)
-    \node[node, right=5.5cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
-    % Servicios externos agrupados (a la derecha de Datos/Integraciones)
-    \node[node, right=5.5cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon), SMTP Gmail, Google OAuth 2.0};
+    % Columna izquierda: Frontend
+    \node[nodewide] (fe) {Frontend (navegador)\\Interfaz ui.js + Cliente api.js\\Juego game/ (canvas, Web Audio)};
+    % Columna central: Servidor (capas apiladas)
+    \node[nodewide, right=5.5cm of fe] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
+    \node[node, below=1.2cm of api] (srv) {Lógica (src/services)\\usuarios, confirmación,\\tokens, juego};
+    \node[node, below=1.2cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
+    \node[node, below=1.2cm of repo] (int) {Integraciones\\correo | Google};
+    % Columna derecha: Reglas compartidas y servicios externos
+    \node[node, right=4.5cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
+    \node[node, right=4.5cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon), SMTP Gmail,\\Google OAuth 2.0};
 
-    % Flechas frontend -> API (horizontal con codo, etiqueta fuera)
-    \draw[arrow] (fe.east) -- ++(2.0,0) |- node[near start, above, font=\footnotesize] {HTTP + JSON / cookie sesión} (api.west);
+    % Flecha frontend -> API (horizontal con codo)
+    \draw[arrow] (fe.east) -- ++(1.5,0) |- node[near start, above, font=\scriptsize] {HTTP + JSON / cookie sesión} (api.west);
     % Flechas servidor (verticales, caja a caja)
     \draw[arrow] (api) -- (srv);
     \draw[arrow] (srv) -- (repo);
     \draw[arrow] (srv) -- (int);
     \draw[arrow, dashed] (srv) -- (rules);
-    % Flechas a servicios externos (horizontales con codos, sin cruzar cajas)
-    \draw[arrow] (repo.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {SQL} (ext.west);
-    \draw[arrow] (int.east) -- ++(1.5,0) |- node[near start, above, font=\footnotesize] {SMTP / OAuth 2.0} (ext.west);
+    % Flechas a servicios externos (horizontales con codos)
+    \draw[arrow] (repo.east) -- ++(1.2,0) |- node[near start, above, font=\scriptsize] {SQL} (ext.west);
+    \draw[arrow] (int.east) -- ++(1.2,0) |- node[near start, above, font=\scriptsize] {SMTP / OAuth 2.0} (ext.west);
 \end{tikzpicture}
-\end{adjustbox}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
 \label{fig:capas}
 \end{figure}
@@ -792,4 +789,4 @@ Un enlace válido, en cambio, activa la cuenta y redirige a la pantalla de entra
 
 Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
 
-El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}). El endpoint \texttt{POST /api/prueba/dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}); la Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas en producción. El seguimiento en DoneTonic queda reflejado en el tablero del Sprint 1 (Figura~\ref{fig:donetonic-tablero}), sus gráficas (Figura~\ref{fig:donetonic-graficas-s1}), el Product Backlog (Figura~\ref{fig:donetonic-backlog}), el tablero del Sprint 2 (Figura~\ref{fig:donetonic-s2-tablero}) y el detalle de PBI y tareas (Figura~\ref{fig:donetonic-s2-detalle}), todos en el Capítulo~\ref{cap:propuesta} y Anexo~\ref{anx:desarrollo}; la evolución real del Sprint 2 se expone en el Anexo~\ref{anx:desarrollo}.
+El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}). El endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}); la Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas en producción. El seguimiento en DoneTonic queda reflejado en el tablero del Sprint 1 (Figura~\ref{fig:donetonic-tablero}), sus gráficas (Figura~\ref{fig:donetonic-graficas-s1}), el Product Backlog (Figura~\ref{fig:donetonic-backlog}), el tablero del Sprint 2 (Figura~\ref{fig:donetonic-s2-tablero}) y el detalle de PBI y tareas (Figura~\ref{fig:donetonic-s2-detalle}), todos en el Capítulo~\ref{cap:propuesta} y Anexo~\ref{anx:desarrollo}; la evolución real del Sprint 2 se expone en el Anexo~\ref{anx:desarrollo}.

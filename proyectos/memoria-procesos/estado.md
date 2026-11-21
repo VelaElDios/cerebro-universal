@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-21 03:42"
+actualizado: "2026-11-21 18:56"
 ---
 
 # memoria-procesos
@@ -20,17 +20,20 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- **Compilación**: OK (PDF 91 páginas, sin "Infinite glue shrinkage").
+- **Compilación**: OK (PDF 92 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Juego y Sprint 2 descritos; ningún capítulo dice que el Hito 4 esté pendiente.
-- **verificar.py**: OK (35 figuras, 29 tablas, 17059 palabras, todas las cifras >20 en fuentes, sin huecos, referencias correctas).
-- **revisar_maquetacion.py**: OK (13 diagramas revisados a ojo, sin fallos).
-- **revisar_umlsd.py**: OK (7 diagramas de secuencia sin errores).
-- **Revisión visual PDF**: OK (página a página, sin infracciones de reglas 8, 9, 16-18).
+- **verificar.py**: FALLA por 2 overfull hbox (capítulos 04-descripcion y 04b-juego).
+- **revisar_maquetacion.py**: no ejecutado (fallo previo).
+- **revisar_umlsd.py**: no ejecutado.
+- **Revisión visual PDF**: pendiente (diagramas incumplen reglas 16-18).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas**: Rutas `docs/` actualizadas en 2 archivos (`05-evaluacion.tex`, `a1-desarrollo.tex`).
-- **Pendiente**: Nada.
+- **Correcciones aplicadas**: 4 cambios menores en \texttt con \allowbreak (intentados arriba).
+- **Pendiente**: Arreglar overfull hbox, rehacer diagramas para reglas 16-18, pasar toda la suite de pruebas.
 
 ## Siguiente
-Proyecto terminado. Entregar memoria.
+1. Corregir overfull hbox en los dos capítulos.
+2. Rehacer diagramas problemáticos sin escalar.
+3. Ejecutar `comando_prueba` hasta que todo pase.
+4. Revisión visual final del PDF.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

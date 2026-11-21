@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sprint"
-notas: 35
+notas: 36
 ---
 # sprint
 
@@ -36,6 +36,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint» (este archivo se
 
 - 📊 [[memoria/conocimiento/datos/backlog-completo-del-sprint-1-con-trazabilidad-a-releases|Backlog completo del Sprint 1 con trazabilidad a releases]]
 - 📊 [[memoria/conocimiento/datos/backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi|Backlog Sprint 2 con PRs, fechas de fusión y estado por PBI]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas|Cifras clave del proyecto La Grada Colchonera contrastadas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cronologia-detallada-del-proyecto-septiembre-octubre-2026|Cronología detallada del proyecto (septiembre-octubre 2026)]]
 - 📊 [[memoria/conocimiento/datos/datos-del-burndown-sprint-1-pbis-pendientes-por-hito|Datos del burndown Sprint 1 (PBIs pendientes por hito)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/datos-del-burndown-sprint-2-pbis-pendientes-por-dia|Datos del burndown Sprint 2 (PBIs pendientes por día)]]
@@ -56,4 +57,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint» (este archivo se
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[scrum]] · [[donetonic]] · [[memoria-procesos]] · [[alcance]] · [[trazabilidad]] · [[metricas]] · [[requisitos]] · [[hitos]] · [[git]] · [[decision]]
+[[grada-colchonera]] · [[saas]] · [[scrum]] · [[donetonic]] · [[memoria-procesos]] · [[alcance]] · [[trazabilidad]] · [[metricas]] · [[requisitos]] · [[pbi]] · [[tarea]] · [[hitos]]

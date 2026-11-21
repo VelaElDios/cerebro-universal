@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "grada-colchonera"
-notas: 129
+notas: 130
 ---
 # grada-colchonera
 
@@ -112,6 +112,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «grada-colchonera» (este 
 - 📊 [[memoria/conocimiento/datos/backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi|Backlog Sprint 2 con PRs, fechas de fusión y estado por PBI]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo|Capturas de DoneTonic disponibles en el repo]]
 - 📊 [[memoria/conocimiento/datos/catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore|Catálogo de sistemas del juego (jugadores, rarezas, entrenadores, armas, pasivas, combos, ultras, rivales, jefes, dificultad, movimiento, mundo, club, logros, sonido)]]
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas|Cifras clave del proyecto La Grada Colchonera contrastadas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cronologia-detallada-del-proyecto-septiembre-octubre-2026|Cronología detallada del proyecto (septiembre-octubre 2026)]]
 - 📊 [[memoria/conocimiento/datos/datos-del-burndown-sprint-1-pbis-pendientes-por-hito|Datos del burndown Sprint 1 (PBIs pendientes por hito)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/datos-del-burndown-sprint-2-pbis-pendientes-por-dia|Datos del burndown Sprint 2 (PBIs pendientes por día)]]

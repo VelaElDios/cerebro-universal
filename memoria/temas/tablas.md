@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tablas"
-notas: 8
+notas: 9
 ---
 # tablas
 
@@ -11,6 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 - 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Evitar fila huérfana al final en longtable (LaTeX)]]
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable|Reglas de maquetación de tablas en LaTeX (alineación, anchos, longtable, código y rutas)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace|Tablas de LaTeX que no se pisan (columnas p y addlinespace)]]
 - 🧪 [[memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada|Tablas largas en longtable con última fila acompañada (\\*)]]
 
@@ -26,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[longtable]] · [[maquetacion]] · [[reglas-javier]]
+[[latex]] · [[longtable]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[reglas-javier]]

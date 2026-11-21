@@ -41,4 +41,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[memoria-procesos]] · [[test]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[reglas-javier]] · [[pbis]]
+[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[memoria-procesos]] · [[test]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[verificación]] · [[reglas-javier]]

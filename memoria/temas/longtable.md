@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "longtable"
-notas: 8
+notas: 9
 ---
 # longtable
 
@@ -12,6 +12,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «longtable» (este archivo
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Evitar fila huérfana al final en longtable (LaTeX)]]
+- 🧪 [[memoria/conocimiento/recetas/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 

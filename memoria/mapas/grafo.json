@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T17:45:51+01:00",
+ "generado": "2026-11-21T18:56:51+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -35,7 +35,7 @@
    "id": "proyecto:memoria-procesos",
    "tipo": "proyecto",
    "titulo": "memoria-procesos",
-   "estado": "terminado",
+   "estado": "en-construccion",
    "temas": [
     "latex",
     "memoria",
@@ -1234,6 +1234,21 @@
    "ruta": "memoria/conocimiento/conceptos/perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante.md"
   },
   {
+   "id": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "tipo": "concepto",
+   "titulo": "Prosa de TFG sin listas de capturas (regla 13 Javier)",
+   "temas": [
+    "latex",
+    "redacción",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier.md"
+  },
+  {
    "id": "concepto:prosa-de-tfg-vs-lista-de-capturas",
    "tipo": "concepto",
    "titulo": "Prosa de TFG vs lista de capturas",
@@ -1492,6 +1507,23 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c.md"
+  },
+  {
+   "id": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto La Grada Colchonera contrastadas",
+   "temas": [
+    "grada-colchonera",
+    "pbi",
+    "prueba",
+    "sprint",
+    "tarea"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas.md"
   },
   {
    "id": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
@@ -1955,6 +1987,21 @@
    "ruta": "memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr.md"
   },
   {
+   "id": "dato:referencia-donetonic-como-herramienta-de-gestion-agil",
+   "tipo": "dato",
+   "titulo": "Referencia DoneTonic como herramienta de gestión ágil",
+   "temas": [
+    "bibliografía",
+    "donetonic",
+    "scrum"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil.md"
+  },
+  {
    "id": "dato:referencia-paper-original-bcrypt-para-seguridad-de-contrasen",
    "tipo": "dato",
    "titulo": "Referencia paper original bcrypt para seguridad de contraseñas",
@@ -2316,7 +2363,9 @@
    "temas": [
     "memoria",
     "verificacion",
-    "fuentes"
+    "fuentes",
+    "redacción",
+    "verificación"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2571,6 +2620,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista.md"
+  },
+  {
+   "id": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
+   "tipo": "decision",
+   "titulo": "Diagramas pgf-umlsd sin escalar y legibles (reglas 16-18)",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18.md"
   },
   {
    "id": "decision:entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio",
@@ -3392,7 +3456,8 @@
     "bibtex",
     "latex",
     "apalike",
-    "autores corporativos"
+    "autores corporativos",
+    "bibliografía"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3499,6 +3564,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/checklist-previo-a-abrir-pull-request-npm-test-local-obligat.md"
+  },
+  {
+   "id": "receta:citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite",
+   "tipo": "receta",
+   "titulo": "Citas con autor largo que se salen del margen: usar breakcites",
+   "temas": [
+    "bibliografía",
+    "bibtex",
+    "latex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite.md"
   },
   {
    "id": "receta:cliente-api-con-timeout-de-15-s-y-manejo-de-apierror",
@@ -3812,6 +3892,20 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd.md"
+  },
+  {
+   "id": "receta:como-evitar-overfull-hbox-con-texttt-largo",
+   "tipo": "receta",
+   "titulo": "Cómo evitar overfull hbox con \\texttt largo",
+   "temas": [
+    "latex",
+    "maquetación"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo.md"
   },
   {
    "id": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
@@ -4914,6 +5008,21 @@
    "ruta": "memoria/conocimiento/recetas/simulacion-de-paso-fijo-con-semilla-mundo-js.md"
   },
   {
+   "id": "receta:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "tipo": "receta",
+   "titulo": "Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \\linewidth",
+   "temas": [
+    "latex",
+    "longtable",
+    "tablas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth.md"
+  },
+  {
    "id": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
    "tipo": "receta",
    "titulo": "Tablas de LaTeX que no se pisan (columnas p y addlinespace)",
@@ -5086,7 +5195,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 132,
+   "peso": 137,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5100,7 +5209,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 25,
+   "peso": 26,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -5149,7 +5258,7 @@
    "id": "tema:bibtex",
    "tipo": "tema",
    "titulo": "bibtex",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/bibtex.md"
   },
   {
@@ -5170,7 +5279,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 16,
+   "peso": 17,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -5198,7 +5307,7 @@
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -5226,14 +5335,14 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 57,
+   "peso": 58,
    "ruta": "memoria/temas/tfg.md"
   },
   {
    "id": "tema:verificación",
    "tipo": "tema",
    "titulo": "verificación",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/verificación.md"
   },
   {
@@ -5282,7 +5391,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -5359,7 +5468,7 @@
    "id": "tema:grada-colchonera",
    "tipo": "tema",
    "titulo": "grada-colchonera",
-   "peso": 129,
+   "peso": 130,
    "ruta": "memoria/temas/grada-colchonera.md"
   },
   {
@@ -5422,7 +5531,7 @@
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 48,
+   "peso": 49,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
@@ -5443,14 +5552,14 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 54,
+   "peso": 55,
    "ruta": "memoria/temas/scrum.md"
   },
   {
    "id": "tema:sprint",
    "tipo": "tema",
    "titulo": "sprint",
-   "peso": 35,
+   "peso": 36,
    "ruta": "memoria/temas/sprint.md"
   },
   {
@@ -5706,6 +5815,13 @@
    "ruta": "memoria/temas/juego.md"
   },
   {
+   "id": "tema:redacción",
+   "tipo": "tema",
+   "titulo": "redacción",
+   "peso": 2,
+   "ruta": "memoria/temas/redacción.md"
+  },
+  {
    "id": "tema:estilo",
    "tipo": "tema",
    "titulo": "estilo",
@@ -5807,7 +5923,7 @@
    "id": "tema:pbi",
    "tipo": "tema",
    "titulo": "pbi",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/pbi.md"
   },
   {
@@ -5821,7 +5937,7 @@
    "id": "tema:tarea",
    "tipo": "tema",
    "titulo": "tarea",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/tarea.md"
   },
   {
@@ -5844,6 +5960,13 @@
    "titulo": "sprints",
    "peso": 7,
    "ruta": "memoria/temas/sprints.md"
+  },
+  {
+   "id": "tema:prueba",
+   "tipo": "tema",
+   "titulo": "prueba",
+   "peso": 1,
+   "ruta": "memoria/temas/prueba.md"
   },
   {
    "id": "tema:pbis",
@@ -6035,6 +6158,13 @@
    "ruta": "memoria/temas/gestion-proyectos.md"
   },
   {
+   "id": "tema:bibliografía",
+   "tipo": "tema",
+   "titulo": "bibliografía",
+   "peso": 3,
+   "ruta": "memoria/temas/bibliografía.md"
+  },
+  {
    "id": "tema:hash",
    "tipo": "tema",
    "titulo": "hash",
@@ -6122,7 +6252,7 @@
    "id": "tema:maquetación",
    "tipo": "tema",
    "titulo": "maquetación",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/maquetación.md"
   },
   {
@@ -9763,6 +9893,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "tema:redacción",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "concepto:prosa-de-tfg-vs-lista-de-capturas",
    "a": "tema:estilo",
    "tipo": "trata"
@@ -10641,6 +10791,36 @@
    "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
    "a": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "tema:grada-colchonera",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "tema:pbi",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "tema:prueba",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "tema:sprint",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "tema:tarea",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
@@ -12233,6 +12413,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:referencia-donetonic-como-herramienta-de-gestion-agil",
+   "a": "tema:bibliografía",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:referencia-donetonic-como-herramienta-de-gestion-agil",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:referencia-donetonic-como-herramienta-de-gestion-agil",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:referencia-donetonic-como-herramienta-de-gestion-agil",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:referencia-paper-original-bcrypt-para-seguridad-de-contrasen",
    "a": "tema:bcrypt",
    "tipo": "trata"
@@ -13284,6 +13484,16 @@
   },
   {
    "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "a": "tema:redacción",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "a": "tema:verificación",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -14086,6 +14296,26 @@
    "de": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
    "a": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio",
@@ -17084,6 +17314,11 @@
   },
   {
    "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:bibliografía",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -17421,6 +17656,26 @@
    "de": "receta:checklist-previo-a-abrir-pull-request-npm-test-local-obligat",
    "a": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite",
+   "a": "tema:bibliografía",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite",
+   "a": "tema:bibtex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:cliente-api-con-timeout-de-15-s-y-manejo-de-apierror",
@@ -18306,6 +18561,21 @@
    "de": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
    "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
+   "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
@@ -21671,6 +21941,26 @@
    "de": "receta:simulacion-de-paso-fijo-con-semilla-mundo-js",
    "a": "concepto:generacion-de-mundo-procedural-infinito-con-distritos-estadi",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "bibtex"
-notas: 6
+notas: 7
 ---
 # bibtex
 
@@ -10,6 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
+- 🧪 [[memoria/conocimiento/recetas/citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite|Citas con autor largo que se salen del margen: usar breakcites]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
@@ -27,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibtex» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[bibliografia]] · [[apalike]] · [[memoria]] · [[tfg]] · [[autores corporativos]]
+[[latex]] · [[bibliografia]] · [[apalike]] · [[bibliografía]] · [[memoria]] · [[tfg]] · [[autores corporativos]]

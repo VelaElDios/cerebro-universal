@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "verificación"
-notas: 2
+notas: 3
 ---
 # verificación
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «verificación» (este archivo se genera solo).
+
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq|Cada cifra del documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
 
 ## Datos
 
@@ -17,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificación» (este arc
 
 ## Temas relacionados
 
-[[memoria]] · [[tfg]] · [[metricas]] · [[trazabilidad]] · [[verificacion]] · [[métricas]]
+[[memoria]] · [[verificacion]] · [[tfg]] · [[metricas]] · [[trazabilidad]] · [[métricas]] · [[fuentes]] · [[redacción]]

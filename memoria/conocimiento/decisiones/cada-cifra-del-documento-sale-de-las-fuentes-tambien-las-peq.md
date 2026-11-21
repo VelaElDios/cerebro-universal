@@ -1,13 +1,13 @@
 ---
 tipo: "decision"
 titulo: "Cada cifra del documento sale de las fuentes, también las pequeñas"
-temas: ["memoria", "verificacion", "fuentes"]
+temas: ["memoria", "verificacion", "fuentes", "redacción", "verificación"]
 claves: ["verificar.py", "fuentes", "cifras"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "lecciones del cerebro (memoria-procesos)"]
 confianza: "propuesto"
 fecha: "2026-11-20"
-actualizado: "2026-11-20"
+actualizado: "2026-11-21"
 ---
 
 Temas: [[memoria]] · [[verificacion]]
