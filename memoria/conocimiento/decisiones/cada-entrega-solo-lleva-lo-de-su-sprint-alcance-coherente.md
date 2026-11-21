@@ -1,13 +1,13 @@
 ---
 tipo: "decision"
 titulo: "Cada entrega solo lleva lo de su sprint (alcance coherente)"
-temas: ["alcance", "latex", "memoria", "sprint", "tfg", "entrega", "memoria-procesos", "scrum"]
+temas: ["alcance", "latex", "memoria", "sprint", "tfg", "entrega", "memoria-procesos", "scrum", "proceso"]
 claves: ["Sprint 1", "Sprint 2", "Sprint 3", "título", "Resumen", "Abstract", "Introducción", "Conclusiones", "anexos"]
 proyectos: ["memoria-procesos"]
 fuentes: ["../../memoria/reglas-tfg.md", "memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-20"
+actualizado: "2026-11-21"
 ---
 
 Temas: [[alcance]] · [[latex]] · [[memoria]] · [[sprint]] · [[tfg]]

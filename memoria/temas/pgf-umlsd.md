@@ -38,4 +38,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[diagramas]] · [[diagramas-secuencia]] · [[sequencediagram]] · [[maquetacion]] · [[secuencia]] · [[memoria]] · [[codigos estado]] · [[http]] · [[reglas-javier]] · [[validacion-visual]]
+[[latex]] · [[tikz]] · [[diagramas]] · [[diagramas-secuencia]] · [[sequencediagram]] · [[maquetacion]] · [[secuencia]] · [[memoria]] · [[codigos estado]] · [[http]] · [[uml]] · [[reglas-javier]]

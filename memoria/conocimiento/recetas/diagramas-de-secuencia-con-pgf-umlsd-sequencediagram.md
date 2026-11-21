@@ -1,13 +1,13 @@
 ---
 tipo: "receta"
 titulo: "Diagramas de secuencia con pgf-umlsd (sequencediagram)"
-temas: ["diagramas", "diagramas-secuencia", "latex", "pgf-umlsd", "secuencia", "tikz"]
+temas: ["diagramas", "diagramas-secuencia", "latex", "pgf-umlsd", "secuencia", "tikz", "uml"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock"]
 proyectos: ["memoria-procesos"]
-fuentes: ["chapters/04-descripcion.tex", "spec del proyecto (bloque «Cómo se escribe un diagrama de secuencia»)", "memoria/reglas-tfg.md (ejemplo en spec)"]
+fuentes: ["chapters/04-descripcion.tex", "spec del proyecto (bloque «Cómo se escribe un diagrama de secuencia»)", "memoria/reglas-tfg.md (ejemplo en spec)", "memoria/reglas-tfg.md"]
 confianza: "propuesto"
 fecha: "2026-11-17"
-actualizado: "2026-11-20"
+actualizado: "2026-11-21"
 ---
 
 Temas: [[diagramas]] · [[diagramas-secuencia]] · [[latex]] · [[pgf-umlsd]] · [[secuencia]] · [[tikz]]
@@ -70,6 +70,17 @@ Temas: [[latex]] · [[pgf-umlsd]] · [[secuencia]] · [[tikz]] · [[diagramas]]
 [[diagramas-de-secuencia-con-pgf-umlsd]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]]
 
 Relacionado: [[diagramas-de-secuencia-pgf-umlsd-sintaxis-correcta]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]]
+
+## Ampliación (2026-11-21, memoria-procesos)
+Reglas obligatorias para que `revisar_umlsd.py` pase:
+1. Usar `\begin{sequencediagram}` ... `\end{sequencediagram}`.
+2. Declarar todos los participantes al inicio con `\newthread{id}{Nombre}` o `\newinst[desplazamiento]{id}{Nombre}`.
+3. Llamadas anidadas: `\begin{call}{origen}{mensaje}{destino}{respuesta} ... \end{call}`.
+4. Mensajes simples: `\mess{origen}{mensaje}{destino}` (sin paréntesis en el mensaje).
+5. Alternativas: `\begin{sdblock}{alt}{condición} ... \end{sdblock}`.
+6. No usar comandos LaTeX ni caracteres especiales (`#`, `&`, `_`, `$`, `%`, `{`, `}`, `\`) en los textos de los mensajes; escapar con `\texttt{}` si hace falta código, pero mejor evitar.
+7. Si el diagrama es ancho, envolver en `\resizebox{\textwidth}{!}{...}` o `adjustbox`.
+8. Ejemplo correcto en `memoria/reglas-tfg.md` (bloque de código al final).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

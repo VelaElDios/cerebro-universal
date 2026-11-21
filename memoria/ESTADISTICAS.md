@@ -3,18 +3,18 @@
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
 - Notas que se han usado alguna vez: 38
-- Notas que nunca se han usado: 225
+- Notas que nunca se han usado: 228
 
 ## Las más útiles
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 39 | 3 | 1 |
-| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG]] | 26 | 3 | 1 |
+| [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 40 | 4 | 1 |
+| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG]] | 27 | 4 | 1 |
 | [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 26 | 2 | 1 |
-| [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas\|Contenido por sprint y prosa de TFG (no listas de capturas)]] | 22 | 3 | 1 |
+| [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas\|Contenido por sprint y prosa de TFG (no listas de capturas)]] | 23 | 4 | 1 |
 | [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis\|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] | 11 | 2 | 0 |
-| [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg\|Contenido de los anexos por sprint en la memoria TFG]] | 9 | 2 | 0 |
+| [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg\|Contenido de los anexos por sprint en la memoria TFG]] | 10 | 3 | 0 |
 | [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes\|Números clave del proyecto contrastados con fuentes]] | 7 | 2 | 0 |
 | [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d\|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] | 6 | 1 | 0 |
 | [[memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra\|Trazabilidad completa requisito → PBI → tarea → PR en anexo a4-trazabilidad.tex]] | 6 | 1 | 0 |

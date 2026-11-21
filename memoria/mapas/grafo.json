@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-21T01:30:06+01:00",
+ "generado": "2026-11-21T02:33:40+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -67,6 +67,21 @@
     "conocimiento"
    ],
    "ruta": "proyectos/preguntas/bitacora.md"
+  },
+  {
+   "id": "leccion:actualizar-referencias-a-documentacion-tras-reorganizacion-d",
+   "tipo": "leccion",
+   "titulo": "Actualizar referencias a documentación tras reorganización del bundle",
+   "temas": [
+    "latex",
+    "documentación",
+    "mantenimiento"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/actualizar-referencias-a-documentacion-tras-reorganizacion-d.md"
   },
   {
    "id": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
@@ -1448,6 +1463,21 @@
    "ruta": "memoria/conocimiento/datos/catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore.md"
   },
   {
+   "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto (contrastadas con fuentes)",
+   "temas": [
+    "metricas",
+    "pruebas",
+    "sprints"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes.md"
+  },
+  {
    "id": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
    "tipo": "dato",
    "titulo": "Cifras clave del proyecto verificadas en fuentes",
@@ -2290,7 +2320,8 @@
     "tfg",
     "entrega",
     "memoria-procesos",
-    "scrum"
+    "scrum",
+    "proceso"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3564,6 +3595,21 @@
    "ruta": "memoria/conocimiento/recetas/combinaciones-24-y-ultras-6-con-bonus-porcentual-y-requisito.md"
   },
   {
+   "id": "receta:como-actualizar-referencias-a-documentacion-tras-reorganizac",
+   "tipo": "receta",
+   "titulo": "Cómo actualizar referencias a documentación tras reorganización del bundle",
+   "temas": [
+    "documentación",
+    "latex",
+    "mantenimiento"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-actualizar-referencias-a-documentacion-tras-reorganizac.md"
+  },
+  {
    "id": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
    "tipo": "receta",
    "titulo": "Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario",
@@ -4147,7 +4193,8 @@
     "latex",
     "pgf-umlsd",
     "secuencia",
-    "tikz"
+    "tikz",
+    "uml"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4700,6 +4747,21 @@
    "ruta": "memoria/conocimiento/recetas/proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni.md"
   },
   {
+   "id": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "tipo": "receta",
+   "titulo": "Prosa de TFG sin listas de capturas (agrupar con subfigure)",
+   "temas": [
+    "latex",
+    "redaccion",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure.md"
+  },
+  {
    "id": "receta:prosa-de-tfg-vs-lista-de-capturas-regla-13-javier",
    "tipo": "receta",
    "titulo": "Prosa de TFG vs lista de capturas (regla 13 Javier)",
@@ -5097,7 +5159,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 134,
+   "peso": 137,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5134,6 +5196,20 @@
    "titulo": "beamer",
    "peso": 3,
    "ruta": "memoria/temas/beamer.md"
+  },
+  {
+   "id": "tema:documentación",
+   "tipo": "tema",
+   "titulo": "documentación",
+   "peso": 2,
+   "ruta": "memoria/temas/documentación.md"
+  },
+  {
+   "id": "tema:mantenimiento",
+   "tipo": "tema",
+   "titulo": "mantenimiento",
+   "peso": 2,
+   "ruta": "memoria/temas/mantenimiento.md"
   },
   {
    "id": "tema:general",
@@ -5223,7 +5299,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 57,
+   "peso": 58,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -5244,7 +5320,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -5559,7 +5635,7 @@
    "id": "tema:pruebas",
    "tipo": "tema",
    "titulo": "pruebas",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/pruebas.md"
   },
   {
@@ -5713,7 +5789,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -5836,18 +5912,18 @@
    "ruta": "memoria/temas/data.md"
   },
   {
+   "id": "tema:sprints",
+   "tipo": "tema",
+   "titulo": "sprints",
+   "peso": 6,
+   "ruta": "memoria/temas/sprints.md"
+  },
+  {
    "id": "tema:pbis",
    "tipo": "tema",
    "titulo": "pbis",
    "peso": 4,
    "ruta": "memoria/temas/pbis.md"
-  },
-  {
-   "id": "tema:sprints",
-   "tipo": "tema",
-   "titulo": "sprints",
-   "peso": 5,
-   "ruta": "memoria/temas/sprints.md"
   },
   {
    "id": "tema:tareas",
@@ -6100,6 +6176,13 @@
    "titulo": "entrega",
    "peso": 2,
    "ruta": "memoria/temas/entrega.md"
+  },
+  {
+   "id": "tema:proceso",
+   "tipo": "tema",
+   "titulo": "proceso",
+   "peso": 1,
+   "ruta": "memoria/temas/proceso.md"
   },
   {
    "id": "tema:reglas-tfg",
@@ -6620,6 +6703,13 @@
    "ruta": "memoria/temas/diagrama.md"
   },
   {
+   "id": "tema:uml",
+   "tipo": "tema",
+   "titulo": "uml",
+   "peso": 1,
+   "ruta": "memoria/temas/uml.md"
+  },
+  {
    "id": "tema:directlua",
    "tipo": "tema",
    "titulo": "directlua",
@@ -6979,6 +7069,26 @@
    "de": "proyecto:preguntas",
    "a": "tema:conocimiento",
    "tipo": "usa"
+  },
+  {
+   "de": "leccion:actualizar-referencias-a-documentacion-tras-reorganizacion-d",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:actualizar-referencias-a-documentacion-tras-reorganizacion-d",
+   "a": "tema:documentación",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:actualizar-referencias-a-documentacion-tras-reorganizacion-d",
+   "a": "tema:mantenimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:actualizar-referencias-a-documentacion-tras-reorganizacion-d",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
   },
   {
    "de": "leccion:al-reescribir-un-archivo-conservar-todo-lo-que-ya-funcionaba",
@@ -10476,6 +10586,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:pruebas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
    "a": "tema:metricas",
    "tipo": "trata"
@@ -13093,6 +13223,11 @@
   {
    "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
    "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "a": "tema:proceso",
    "tipo": "trata"
   },
   {
@@ -17371,6 +17506,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-actualizar-referencias-a-documentacion-tras-reorganizac",
+   "a": "tema:documentación",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-actualizar-referencias-a-documentacion-tras-reorganizac",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-actualizar-referencias-a-documentacion-tras-reorganizac",
+   "a": "tema:mantenimiento",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-actualizar-referencias-a-documentacion-tras-reorganizac",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-actualizar-referencias-a-documentacion-tras-reorganizac",
+   "a": "decision:portada-oficial-unica-y-elementos-fijos-de-la-plantilla",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-actualizar-referencias-a-documentacion-tras-reorganizac",
+   "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
    "a": "tema:capturas",
    "tipo": "trata"
@@ -19037,6 +19202,11 @@
   },
   {
    "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "tema:uml",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -20698,6 +20868,31 @@
   {
    "de": "receta:proceso-de-4-pasos-para-cerrar-un-hito-y-actualizar-donetoni",
    "a": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
    "tipo": "enlaza"
   },
   {

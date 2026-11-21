@@ -27,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[tfg]] · [[diagramas-secuencia]] · [[plantuml]] · [[maquetacion]] · [[secuencia]] · [[sequencediagram]] · [[reglas-javier]] · [[validacion-visual]]
+[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[tfg]] · [[diagramas-secuencia]] · [[plantuml]] · [[maquetacion]] · [[secuencia]] · [[uml]] · [[sequencediagram]] · [[reglas-javier]]

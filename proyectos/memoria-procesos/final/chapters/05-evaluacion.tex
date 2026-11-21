@@ -8,7 +8,7 @@ La evaluación comprueba el cumplimiento del enunciado de forma continua y repro
     \item \textbf{Pruebas unitarias e integración en local:} Uso del ejecutor nativo \texttt{node:test} con el simulador de base de datos en memoria \texttt{pg-mem}, lo que permite ejecutar la suite completa en el entorno de desarrollo mediante el comando unificado \texttt{npm test}.
     \item \textbf{Integración continua en GitHub Actions:} Ejecución del flujo de trabajo automatizado en cada pull request y push hacia la rama \texttt{main}. Dicho flujo despliega un servicio PostgreSQL 17 real para ejecutar las pruebas contra la base de datos auténtica y valida la construcción de la imagen de producción en Docker mediante un contenedor \texttt{node:22-alpine}.
     \item \textbf{Comprobación del despliegue en Google Cloud Run:} El flujo de despliegue valida la salud del servicio desplegado mediante comprobaciones de consulta contra el endpoint \path{/api/health}.
-    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría documentada en \texttt{docs/\allowbreak revision\allowbreak -entrega.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
+    \item \textbf{Revisión frase a frase contra la especificación:} Auditoría documentada en \path{docs/sprint-1.md}, contrastando cada apartado del enunciado con su evidencia concreta en código y pruebas.
 \end{enumerate}
 
 \section{Estrategia de pruebas y resultados}
