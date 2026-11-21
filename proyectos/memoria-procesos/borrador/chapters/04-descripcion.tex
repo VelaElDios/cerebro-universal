@@ -38,7 +38,7 @@ RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \pa
 
 La Tabla~\ref{tab:rj-sprint2} recoge los 20 requisitos funcionales del juego, derivados de los PBIs P20--P48.
 
-\begin{longtable}{@{}L{0.7cm} L{3.4cm} L{0.9cm} L{3.6cm} L{1.6cm}@{}}
+\begin{longtable}{@{}L{0.6cm} L{2.8cm} L{0.8cm} L{3.0cm} L{1.4cm}@{}}
 \caption{Requisitos funcionales del juego (Sprint 2).}\label{tab:rj-sprint2}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endfirsthead
@@ -55,12 +55,12 @@ RJ-08 & Mundo procedural con terreno, obstáculos macizos y colisiones exactas &
 RJ-09 & Ambientes que cambian cada 5 min (pretemporada a Final del Mundial) & P36 & \path{config.js}, \path{render-mundo.js}, \path{musica.js} & \path{juego-movilidad} \\
 RJ-10 & Jugable con teclado, ratón y táctil; pausa, pantalla completa y ajustes & P28 & \path{entrada.js}, \path{ajustes.js}, \path{juego.js} & \path{game}, \path{frontend} \\
 RJ-11 & Club guardado en el servidor con validación anti-trampas de cada partida & P29 & \path{juegoService.finalizarPartida}, migración 003 & \path{api.juego}, \path{juegoRepository} \\
-RJ-12 & Fichar jugadores con fichas de contrato (una por 3 jefes), sorteadas por rareza & P30, P38 & \path{club.js}, \texttt{POST} \path{/api/juego/contratar}, \path{firma.js} & \path{juego-club}, \path{api.juego}, \path{frontend} \\
-RJ-13 & Entrenar a los jugadores con puntos ganados por bajas y jefes & P31 & \path{club.js}, \texttt{POST} \path{/api/juego/entrenar} & \path{juego-club}, \path{api.juego} \\
-RJ-14 & Ranking de la grada con la mejor partida de cada usuario (sin mostrar el correo) & P32 & \texttt{juego\_records}, \texttt{GET} \path{/api/juego/ranking} & \path{api.juego}, \path{juegoRepository} \\
+RJ-12 & Fichar jugadores con fichas de contrato (una por 3 jefes), sorteadas por rareza & P30, P38 & \path{club.js}, \texttt{POST}\allowbreak \path{/api/juego/contratar}, \path{firma.js} & \path{juego-club}, \path{api.juego}, \path{frontend} \\
+RJ-13 & Entrenar a los jugadores con puntos ganados por bajas y jefes & P31 & \path{club.js}, \texttt{POST}\allowbreak \path{/api/juego/entrenar} & \path{juego-club}, \path{api.juego} \\
+RJ-14 & Ranking de la grada con la mejor partida de cada usuario (sin mostrar el correo) & P32 & \texttt{juego\_records}, \texttt{GET}\allowbreak \path{/api/juego/ranking} & \path{api.juego}, \path{juegoRepository} \\
 RJ-15 & Combinaciones y ULTRAS, con una pantalla que muestra lo que pide cada una & P33, P40 & \path{ultras.js}, \path{render-ultras.js}, pantalla Combinaciones & \path{juego-ultras}, \path{juego-habilidades}, \path{frontend} \\
-RJ-16 & Modo pruebas solo para administradores & P34 & \texttt{POST} \texttt{/api/juego/\allowbreak desbloquear}, \texttt{scripts/\allowbreak desbloquear-juego.js} & \path{api.juego} \\
-RJ-17 & Mote único y avatar, en la cabecera, Mi cuenta y el ranking & P37 & \texttt{PUT} \path{/api/juego/identidad}, migración 004 & \path{api.juego}, \path{juegoRepository}, \path{frontend} \\
+RJ-16 & Modo pruebas solo para administradores & P34 & \texttt{POST}\allowbreak \texttt{/api/juego/\allowbreak desbloquear}, \texttt{scripts/\allowbreak desbloquear-juego.js} & \path{api.juego} \\
+RJ-17 & Mote único y avatar, en la cabecera, Mi cuenta y el ranking & P37 & \texttt{PUT}\allowbreak \path{/api/juego/identidad}, migración 004 & \path{api.juego}, \path{juegoRepository}, \path{frontend} \\
 RJ-18 & Logros con datos de la historia del Atleti, validados en el servidor, y equipaciones desbloqueables & P42 & \path{logros.js}, \path{juegoService} & \path{juego-logros}, \path{api.juego} \\
 RJ-19 & Pantalla de fin con estadísticas y daño por habilidad & P43 & \path{fin-ui.js}, \path{combate.js} & \path{juego-logros} \\
 RJ-20 & Música chiptune, efectos y la grada, con ajustes de volumen & P44 & \path{audio.js}, \path{musica.js}, \path{ajustes.js} & \path{juego-logros} \\*

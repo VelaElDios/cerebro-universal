@@ -12962,3 +12962,55 @@ Voy a corregir directamente las dos tablas problemáticas en sus archivos respec
 ## 2026-11-21 22:10 · 🧠 Conocimiento guardado
 
 [[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]]
+
+## 2026-11-21 22:51 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He identificado los dos overfull hbox persistentes en las longtables de RJ (capítulo 4) y de logros (capítulo 4b). Voy a reducir los anchos de columna en ambas tablas para que la suma quede cómodamente por debajo de \linewidth y el texto pueda partirse sin desbordar.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 2 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox y que `verificar.py` da OK. Si persiste algún desbordamiento, localizar la línea exacta en el log de LaTeX y reducir más los anchos de columna en la tabla correspondiente (incluyendo `a4-trazabilidad.tex` que también tiene longtable). Luego ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py` para validar reglas de maquetación y diagramas de secuencia. Finalmente, revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier.
+
+## 2026-11-21 22:55 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Overfull hbox persistente en chapters/04-descripcion.tex (líneas 132-133, 176 pt) y chapters/04b-juego.tex (líneas 254-255, 222 pt) tras los intentos previos.
+- Las longtables tienen @{} y anchos que suman < \linewidth, pero el contenido (rutas, comandos \texttt sin \allowbreak) provoca desbordes internos.
+- Revisar_maquetacion.py y revisar_umlsd.py no se han ejecutado porque verificar.py falla.
+- Datos contrastados: 19 PBIs Sprint 1 (fuente: sprint-1.md), 29 PBIs Sprint 2 (sprint-2.md), 82 tareas totales, 276 pruebas al cierre Sprint 2 (procesos.md), 322 tras Fase 7 (log.md).
+
+El constructor redujo anchos en las longtables pero persisten dos overfull hbox graves. El problema no es solo la suma de anchos, sino celdas con texto infranqueable (rutas, comandos \texttt) que no se parten. Hay que:
+1. Reducir más los anchos de columna en las dos tablas problemáticas (RJ en 04-descripcion y logros en 04b-juego).
+2. Insertar \allowbreak en las celdas con identificadores largos (ya hecho en algunas, pero no en todas).
+3. Asegurar que todas las longtables terminan con \\* antes de \bottomrule.
+4. Ejecutar comando_prueba para confirmar que verificar.py pasa.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa y `verificar.py` no reporta overfull hbox.
+- Si persisten overfull, localizar línea exacta en log LaTeX y reducir más anchos de columna en la tabla correspondiente (incluir `a4-trazabilidad.tex` que también tiene longtable).
+- Ejecutar `revisar_maquetacion.py` para validar reglas de maquetación (páginas con una sola imagen, páginas casi vacías, tablas que se pisan, figuras repetidas, flechas reales, etc.).
+- Ejecutar `revisar_umlsd.py` para validar diagramas de secuencia (participantes declarados, sin # _ & % $ {} \ en textos, sin paréntesis en \mess, sin comandos LaTeX en textos).
+- **Revisión visual obligatoria del PDF página a página** para reglas 16-18 de Javier:
+  - fig:capas (TikZ): ≤6 participantes, fuentes ≥7,5 pt, flechas caja-a-caja con codos, sin palabras partidas en cajas.
+  - fig:modelo-datos (TikZ ER): igual.
+  - fig:juego-arquitectura (TikZ): igual.
+  - fig:pipeline (TikZ): igual.
+  - fig:burndown-s1, fig:burndown-s2 (pgfplots): ejes legibles, marcas ≥7,5 pt.
+  - 7 sequencediagram (sec-registro, sec-confirmacion, sec-login, sec-google, sec-baja, sec-partida, sec-contratar): ≤6 participantes cada uno, textos sin caracteres prohibidos, flechas no cruzan cajas, escalados con adjustbox sin encoger fuentes <7,5 pt.
+- Si algún diagrama incumple, **redibujarlo** (separar cajas, aumentar text width, saltos de línea manuales \\, flechas con codos |-/-|, reducir participantes agrupando) **sin usar adjustbox/resizebox/scale** para encoger.
+- Verificar que todas las longtable terminan con \\* antes de \bottomrule para que la última fila no quede sola en página siguiente.
+- Confirmar que el PDF final no tiene «??», referencias rotas, ni overfull hbox/vbox.
+
+## 2026-11-21 22:55 · 🧠 Conocimiento guardado
+
+[[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]]
