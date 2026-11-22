@@ -22,4 +22,13 @@ solucion: Citar siempre la fuente exacta (sprint-1.md, sprint-2.md, procesos.md,
 ## Ampliación (2026-11-22, memoria-procesos)
 Sprint 1: 4 hitos, todos MUST. Sprint 2: 7 fases, todos MUST. Total: 48 PBIs, 82 tareas. Burndown Sprint 1: 15→9→5→1→2→0 (16 PBIs en alcance entrega). Burndown real Sprint 2: 28→11→11→2→2→2→0 (reconstruido por fechas de PR). DoneTonic Sprint 2 sale en recta porque backlog se registró al cerrar el sprint (29/10).
 
+## Ampliación (2026-11-22, memoria-procesos)
+|
+  Sprint 1 (29/09–27/10/2026): 19 PBIs (P1–P19), 32 tareas (T1–T32), 4 hitos. Todos MUST.
+  Sprint 2 (23/10–29/10/2026): 29 PBIs (P20–P48), 50 tareas (T33–T82), 7 fases. Todos MUST.
+  Total: 48 PBIs, 82 tareas, todos hechos.
+  Burndown Sprint 1 (entrega): 15→9→5→1→2→0 (16 PBIs).
+  Burndown real Sprint 2 (por PRs): 28→11→11→2→2→2→0.
+  DoneTonic Sprint 2 sale en recta porque backlog se registró al cerrar (29/10).
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

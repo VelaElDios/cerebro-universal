@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-22 16:58"
+actualizado: "2026-11-22 17:57"
 ---
 
 # memoria-procesos

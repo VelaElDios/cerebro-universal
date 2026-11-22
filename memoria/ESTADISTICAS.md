@@ -2,8 +2,8 @@
 
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
-- Notas que se han usado alguna vez: 41
-- Notas que nunca se han usado: 248
+- Notas que se han usado alguna vez: 43
+- Notas que nunca se han usado: 246
 
 ## Las más útiles
 
@@ -13,7 +13,7 @@
 | [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 43 | 4 | 1 |
 | [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas\|Contenido por sprint y prosa de TFG (no listas de capturas)]] | 27 | 5 | 1 |
 | [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 26 | 2 | 1 |
-| [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis\|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] | 19 | 3 | 0 |
+| [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis\|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] | 20 | 3 | 0 |
 | [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg\|Contenido de los anexos por sprint en la memoria TFG]] | 14 | 4 | 0 |
 | [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes\|Números clave del proyecto contrastados con fuentes]] | 7 | 2 | 0 |
 | [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d\|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] | 7 | 1 | 0 |
@@ -26,7 +26,7 @@
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
 | [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad\|Estado de completitud de sprints y trazabilidad]] | 21 | 0 | 1 |
-| [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin\|Alcance por sprint: cada entrega solo contiene lo de su sprint]] | 19 | 0 | 1 |
+| [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin\|Alcance por sprint: cada entrega solo contiene lo de su sprint]] | 20 | 0 | 1 |
 | [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints\|Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)]] | 12 | 0 | 1 |
 | [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd\|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] | 9 | 0 | 1 |
 | [[memoria/conocimiento/decisiones/elementos-de-plantilla-inmutables-no-se-quita-nada\|Elementos de plantilla inmutables (no se quita nada)]] | 5 | 0 | 1 |
