@@ -21,7 +21,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «arquitectura» (este arch
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-de-calculos-en-lualatex-para-plantilla-sus|Arquitectura de cálculos en LuaLaTeX para plantilla SUS]]
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-node-js-express-postg|Arquitectura en capas cliente-servidor (Node.js/Express + PostgreSQL + integraciones)]]
-- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]]
 
 ## Temas relacionados
 

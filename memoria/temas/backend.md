@@ -17,7 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «backend» (este archivo s
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]]
 - 💡 [[memoria/conocimiento/conceptos/modulos-del-backend-y-sus-responsabilidades|Módulos del backend y sus responsabilidades]]
 
 ## Datos
@@ -27,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «backend» (este archivo s
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[donetonic]] · [[scrum]] · [[api]] · [[base-datos]] · [[seguridad]] · [[arquitectura]] · [[procesos]] · [[capas]] · [[modulos]] · [[perfil]]
+[[grada-colchonera]] · [[saas]] · [[donetonic]] · [[scrum]] · [[api]] · [[base-datos]] · [[seguridad]] · [[arquitectura]] · [[procesos]] · [[capas]] · [[inyección-dependencias]] · [[modulos]]

@@ -4,7 +4,7 @@ titulo: "Inventario de capturas de pantalla con trazabilidad a requisitos y fech
 temas: ["capturas", "donetonic", "grada-colchonera", "juego", "latex", "memoria", "produccion", "requisitos", "saas", "sprints", "tfg", "trazabilidad"]
 claves: ["capturas", "app", "hito4", "juego", "fase7", "donetonic", "produccion", "prueba-tecnica", "problema: Necesario saber qué capturas existen", "su fecha y a qué requisito/PBI pertenecen para colocarlas sin repetir.", "solucion: Consultar §16 de documentacion-tecnica.md y la lista de imágenes disponibles en el borrador.", "Hitos 1-3", "Hito 4", "producción", "DoneTonic", "prueba-técnica", "requisitos P7-P17 RJ-01-RJ-20"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16"]
+fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16", "repo:saas/docs/capturas/README.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-22"
@@ -46,6 +46,22 @@ Estructura de carpetas y contenido (fechas de captura incluidas) replicada en la
 ## Ampliación (2026-11-22, memoria-procesos)
 Estructura de carpetas en figs/capturas/: app/ (13, 27/10), hito4/ (11, 27/10), juego/ (16, 29/10), donetonic/ (8, 29/10), produccion/ (3, 23/10), prueba-tecnica/ (2), fase7/ (12, 29/10). Cada captura referencia requisito (PBI/RJ) para trazabilidad TFG.
 relacionado: Fechas y estructura de los dos sprints con PBIs y tareas, Trazabilidad requisito-PBI-tarea-PR en DoneTonic y GitHub
+
+## Ampliación (2026-11-22, memoria-procesos)
+|
+  Estructura de carpetas y contenido (fechas de captura incluidas):
+
+  | Carpeta | Imágenes | Fecha | Descripción |
+  |---------|----------|-------|-------------|
+  | `docs/capturas/app/` | 13 | 27/10/2026 | Hitos 1-3, requisitos P7-P17, responsive, 404. |
+  | `docs/capturas/hito4/` | 11 | 27/10/2026 | Google OAuth, email confirmation flow, admin panel estados, privacidad (P13,P15,P16,P17,T26). |
+  | `docs/capturas/produccion/` | 3 | 23/10/2026 | email real Gmail, GitHub Actions verde, Google Auth publicado. |
+  | `docs/capturas/juego/` | 16 | 29/10/2026 | Sprint 2 completo, requisitos RJ-01 a RJ-20. |
+  | `docs/capturas/fase7/` | 12 | 29/10/2026 | before/after sprites, menú nuevo, ambientes mapa, partida/jefe nuevo, habilidades/efectos, combinaciones, pausa/confirmar salir. |
+  | `docs/capturas/donetonic/` | 8 | 29/10/2026 | tableros sprint 1/2 al 100%, gráficas burndown/burnup, backlog, detalle PBI. |
+  | `docs/capturas/prueba-tecnica/` | 2 | — | respuestas POST /api/prueba/dominio en producción. |
+
+  Mínimos requeridos en spec: app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+. Todos cumplidos.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>

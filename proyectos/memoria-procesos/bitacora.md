@@ -13563,3 +13563,48 @@ El constructor intentó corregir cambiando `\texttt{}` por `\path{}` y añadiend
 - Revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier (diagramas: letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas, sin cruces de flechas sobre textos/cajas).
 - Verificar que no quedan figuras repetidas y que todas las capturas mínimas por carpeta están presentes.
 - Confirmar que el anexo de desarrollo tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
+
+## 2026-11-22 11:34 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Corrijo los 3 overfull hbox de `chapters/04-descripcion.tex` haciendo rompibles las rutas largas de las tablas `tab:rf-sprint1`, `tab:modulos` y `tab:api` con `\allowbreak` entre fragmentos de `\path{}` y, en la tabla de la API, ensanchando la columna de rutas. Así las celdas dejan de salirse del margen sin cambiar ningún dato ni ruta real.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que compila sin overfull hbox y que `verificar.py` queda en verde; después ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py`, y si pasan, hacer la revisión visual página a página del PDF (reglas 16–18: diagramas legibles, flechas caja-a-caja y sin cruces).
+
+## 2026-11-22 11:38 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- La compilación falla con 3 overfull hbox en chapters/04-descripcion.tex: líneas 132-133 (tab:rf-sprint1, 35 pt), 361-362 (tab:modulos, 127 pt), 475-476 (tab:api, 32 pt).
+- El builder intentó corregir con `\allowbreak` y `\path{}` pero la verificación sigue fallando.
+- Las tres tablas longtable tienen columnas con rutas/código largos en `\texttt{}` que forman cajas irrompibles.
+- Solución: usar `\path{}` (de xurl, ya cargado) que permite cortes en cualquier carácter, y ajustar anchos de columna para que sumen ≤ \linewidth.
+- Datos contrastados: 19 PBIs Sprint 1 (sprint-1.md), 29 PBIs Sprint 2 (sprint-2.md), 82 tareas totales, 276 pruebas al cierre Sprint 2 (procesos.md), 5 migraciones (arquitectura.md), 23 endpoints API (arquitectura.md).
+
+El builder hizo 11 cambios en chapters/04-descripcion.tex pero los overfull hbox persisten en las mismas 3 tablas. El problema es que `\texttt{}` crea cajas irrompibles; aunque se añada `\allowbreak`, LaTeX no siempre lo respeta dentro de `\texttt`. La solución robusta es usar `\path{}` del paquete xurl (ya cargado en include/extra.tex) que permite partir en cualquier carácter. Además, hay que asegurar que los anchos de columna sumen ≤ \linewidth (≈15.5 cm en esta plantilla). Las tres tablas afectadas son:
+1. tab:rf-sprint1 (RF Sprint 1): columna "Dónde se cumple" con rutas largas
+2. tab:modulos (Módulos backend): columna "Módulo" con rutas como services/accountConfirmationService.js
+3. tab:api (Rutas API): columna "Rutas" con listas de endpoints
+Propongo reescribir estas tres tablas completas con `\path{}` y anchos ajustados.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox y que `verificar.py` queda en verde.
+- Ejecutar `revisar_maquetacion.py` para validar reglas de maquetación de Javier (páginas con una sola imagen, secciones cortas, figuras repetidas, etc.).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin caracteres prohibidos en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos).
+- Revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier (diagramas: letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas, sin cruces de flechas sobre textos/cajas).
+- Verificar que no quedan figuras repetidas y que todas las capturas mínimas por carpeta están presentes (app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+).
+- Confirmar que el anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
+
+## 2026-11-22 11:38 · 🧠 Conocimiento guardado
+
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]]

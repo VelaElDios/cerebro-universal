@@ -16,7 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «procesos» (este archivo 
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]]
 - 💡 [[memoria/conocimiento/conceptos/control-de-acceso-basado-en-roles-y-propiedad-requireauth-re|Control de acceso basado en roles y propiedad (requireAuth, requireRole, requireSelfOrRole)]]
 - 💡 [[memoria/conocimiento/conceptos/gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en|Gestión de sesiones con cookies httpOnly y almacenamiento en PostgreSQL]]
 - 💡 [[memoria/conocimiento/conceptos/manejo-de-errores-tipados-con-formato-comun-y-feedback-en-ui|Manejo de errores tipados con formato común y feedback en UI (Hito 4 P17)]]
@@ -32,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «procesos» (este archivo 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[auth]] · [[seguridad]] · [[variables-entorno]] · [[arquitectura]] · [[backend]] · [[capas]] · [[autorizacion]] · [[middlewares]] · [[sesiones]] · [[error-handling]]
+[[grada-colchonera]] · [[saas]] · [[auth]] · [[seguridad]] · [[variables-entorno]] · [[arquitectura]] · [[backend]] · [[capas]] · [[inyección-dependencias]] · [[autorizacion]] · [[middlewares]] · [[sesiones]]

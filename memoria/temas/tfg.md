@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tfg"
-notas: 69
+notas: 70
 ---
 # tfg
 
@@ -65,6 +65,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
+- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t|Una sola portada oficial y elementos fijos de la plantilla TFG]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -96,4 +97,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[diagramas]] · [[plantilla]] · [[saas]] · [[redaccion]] · [[verificacion]] · [[scrum]] · [[memoria-procesos]] · [[tikz]]
+[[latex]] · [[memoria]] · [[figuras]] · [[plantilla]] · [[grada-colchonera]] · [[diagramas]] · [[saas]] · [[redaccion]] · [[verificacion]] · [[scrum]] · [[memoria-procesos]] · [[tikz]]

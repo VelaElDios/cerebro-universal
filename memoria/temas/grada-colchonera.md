@@ -75,7 +75,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «grada-colchonera» (este 
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-del-juego-simulacion-determinista-presentacion|Arquitectura del juego: simulación determinista, presentación por eventos, rendimiento y renderizado chibi]]
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-node-js-express-postg|Arquitectura en capas cliente-servidor (Node.js/Express + PostgreSQL + integraciones)]]
-- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]]
 - 💡 [[memoria/conocimiento/conceptos/audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru|Audio 100% sintetizado con Web Audio (ondas pulso, triángulo, ruido, secuenciador, formantes vocales para grada)]]
 - 💡 [[memoria/conocimiento/conceptos/cadena-de-middlewares-para-peticion-protegida-y-autorizacion|Cadena de middlewares para petición protegida y autorización por roles (requireAuth, requireRole)]]
 - 💡 [[memoria/conocimiento/conceptos/cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza|Cinco ambientes con cambio de luz, afición y fuerza]]

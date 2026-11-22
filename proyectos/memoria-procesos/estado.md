@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-22 09:31"
+actualizado: "2026-11-22 11:38"
 ---
 
 # memoria-procesos
@@ -22,14 +22,14 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (PDF 96 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Imágenes no repetidas OK. Subfiguras OK. Trazabilidad completa OK.
-- **verificar.py**: FALLA (3 overfull hbox en chapters/04-descripcion.tex líneas 132-133, 361-362, 475-476). **Corrección aplicada**: cambiadas las tres tablas longtable (tab:rf-sprint1, tab:modulos, tab:api) para usar `\path{}` en lugar de `\texttt{}` en rutas y código, y eliminadas filas duplicadas en tab:modulos.
+- **verificar.py**: FALLA (3 overfull hbox en chapters/04-descripcion.tex líneas 132-133, 361-362, 475-476). **Corrección aplicada**: reescritas las tres tablas longtable (tab:rf-sprint1, tab:modulos, tab:api) usando `\path{}` en lugar de `\texttt{}`/`\allowbreak` y ajustados anchos de columna.
 - **revisar_maquetacion.py**: no ejecutado (pendiente tras corregir overfull).
 - **revisar_umlsd.py**: no ejecutado (pendiente).
 - **Revisión visual PDF**: pendiente (diagramas incumplen reglas 16-18).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
 
 ## Siguiente
-1. Ejecutar `comando_prueba` y confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK.
+1. Ejecutar `comando_prueba` y confirmar que la compilación pasa, `verificar.py` OK (sin overfull hbox) y `revisar_maquetacion.py` OK.
 2. Ejecutar `revisar_umlsd.py` y validar diagramas de secuencia.
 3. Rehacer diagramas problemáticos (fig:capas, fig:modelo-datos, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2, y los 7 sequencediagram) para que quepan a tamaño real SIN escalar.
 4. Revisión visual final del PDF página a página.

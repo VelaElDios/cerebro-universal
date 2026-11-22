@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T10:18:03+01:00",
+ "generado": "2026-11-22T11:38:41+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -694,12 +694,13 @@
     "grada-colchonera",
     "procesos",
     "saas",
-    "capas"
+    "capas",
+    "inyección-dependencias"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica.md"
   },
   {
@@ -3401,6 +3402,22 @@
    "ruta": "memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4.md"
   },
   {
+   "id": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "tipo": "decision",
+   "titulo": "Una sola portada oficial y elementos fijos de la plantilla TFG",
+   "temas": [
+    "elementos-fijos",
+    "plantilla",
+    "portada",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t.md"
+  },
+  {
    "id": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
    "tipo": "decision",
    "titulo": "Validación anti-trampas en servidor con reloj propio y rechazo de resultados imposibles",
@@ -5638,7 +5655,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 69,
+   "peso": 70,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -5817,6 +5834,13 @@
    "ruta": "memoria/temas/procesos.md"
   },
   {
+   "id": "tema:inyección-dependencias",
+   "tipo": "tema",
+   "titulo": "inyección-dependencias",
+   "peso": 1,
+   "ruta": "memoria/temas/inyección-dependencias.md"
+  },
+  {
    "id": "tema:audio",
    "tipo": "tema",
    "titulo": "audio",
@@ -5932,7 +5956,7 @@
    "id": "tema:plantilla",
    "tipo": "tema",
    "titulo": "plantilla",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/plantilla.md"
   },
   {
@@ -6842,7 +6866,7 @@
    "id": "tema:portada",
    "tipo": "tema",
    "titulo": "portada",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/portada.md"
   },
   {
@@ -6893,6 +6917,13 @@
    "titulo": "bug",
    "peso": 1,
    "ruta": "memoria/temas/bug.md"
+  },
+  {
+   "id": "tema:elementos-fijos",
+   "tipo": "tema",
+   "titulo": "elementos-fijos",
+   "peso": 1,
+   "ruta": "memoria/temas/elementos-fijos.md"
   },
   {
    "id": "tema:anti-cheat",
@@ -8423,6 +8454,11 @@
   {
    "de": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
    "a": "tema:capas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "a": "tema:inyección-dependencias",
    "tipo": "trata"
   },
   {
@@ -16689,6 +16725,31 @@
    "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
    "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:elementos-fijos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:plantilla",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:portada",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
