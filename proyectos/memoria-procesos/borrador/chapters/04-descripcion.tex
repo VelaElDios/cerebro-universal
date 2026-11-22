@@ -78,7 +78,7 @@ La Tabla~\ref{tab:rnf} recoge los 12 requisitos no funcionales.
 \textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endfirsthead
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endhead
-RNF-01 & \textbf{Seguridad} de credenciales y sesiones & Hash bcrypt \cite{bcrypt}, cookie \path{httpOnly} + \path{secure} + \path{sameSite}, regeneración de la sesión, permisos en el servidor, consultas parametrizadas\allowbreak \\
+RNF-01 & \textbf{Seguridad} de credenciales y sesiones & Hash bcrypt \cite{bcrypt}, cookie \path{httpOnly} + \path{secure} + \path{sameSite}, regeneración de la sesión, permisos en el servidor, consultas parametrizadas\allowbreak{} \\
 RNF-02 & \textbf{Secretos fuera del código} & Variables de entorno; Secret Manager en producción; la app no arranca si falta un secreto obligatorio \\
 RNF-03 & \textbf{Separación en capas} & API $\rightarrow$ lógica $\rightarrow$ datos/integraciones, con inyección de dependencias \\
 RNF-04 & \textbf{Pruebas automáticas} y CI obligatorio & 322 pruebas con \path{node:test}; las ramas protegidas exigen el CI en verde \\
@@ -271,10 +271,10 @@ La Tabla~\ref{tab:modulos} resume los módulos del backend.
 \path{app.js} & Construye la app Express: JSON, sesión, \path{/api} y los estáticos de \path{public/} \\
 \path{config.js}, \path{loadConfig.js} & Leen y validan las variables de entorno; en producción exigen los secretos \\
 \path{logger.js} & Logs JSON por línea, con niveles y ocultación de datos sensibles \\
-\texttt{api/\allowbreak index.js} & Monta el router: \path{requestLogger}, \path{currentUser}, \path{/health}, \path{/auth}, \path{/prueba}, \path{/users} y \path{/juego} (con \path{requireAuth}), 404 y manejador de errores\allowbreak \\
+\texttt{api/\allowbreak index.js} & Monta el router: \path{requestLogger}, \path{currentUser}, \path{/health}, \path{/auth}, \path{/prueba}, \path{/users} y \path{/juego} (con \path{requireAuth}), 404 y manejador de errores\allowbreak{} \\
 \texttt{api/\allowbreak auth.js} & Registro, confirmación, reenvío, login, Google, logout y \path{me} \\
 \texttt{api/\allowbreak users.js} & Administración de usuarios (\texttt{requireRole('admin')}, \texttt{requireSelfOrRole('admin')}) \\
-\texttt{api/\allowbreak juego.js} & Perfil, partidas, contratos, entrenamiento, identidad, ranking y modo pruebas \\
+\texttt{api/\allowbreak juego.js} & Perfil, partidas, contratos, entrenamiento, identidad, ranking y modo pruebas\allowbreak{} \\
 \texttt{api/\allowbreak currentUser.js} & Middlewares de identidad, autenticación y autorización \\
 \texttt{api/\allowbreak errorHandler.js} & Traduce los errores tipados a HTTP (\texttt{\{ error: \{ code, message \} \}}) \\
 \texttt{services/\allowbreak userService.js} & Reglas de usuarios: registro, autenticación, OAuth, roles, bajas, último administrador y primer administrador \\
