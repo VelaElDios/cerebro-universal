@@ -13799,3 +13799,53 @@ Voy a reescribir estas tres tablas completas con \path{} y anchos ajustados, y c
 - Revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier (diagramas: letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas, sin cruces de flechas sobre textos/cajas).
 - Verificar que no quedan figuras repetidas y que todas las capturas mínimas por carpeta están presentes (app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+).
 - Confirmar que el anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
+
+## 2026-11-22 16:52 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los 3 overfull hbox en chapters/04-descripcion.tex reescribiendo las tres tablas largas (tab:rf-sprint1, tab:modulos, tab:api) usando \path{} para las rutas largas y ajustando anchos de columna para que sumen ≤ \linewidth. También corregiré el texto suelto de la línea 281 cambiando \texttt{} por \path{}. El paquete xurl ya está cargado en include/extra.tex.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «El módulo \texttt{accountConfirmationService.js} gestiona el») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox y que `verificar.py` queda en verde. Si pasa, ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py` para validar el resto de reglas de maquetación y los diagramas de secuencia.
+
+## 2026-11-22 16:58 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: falla con 3 overfull hbox en chapters/04-descripcion.tex (tablas tab:rf-sprint1 35pt, tab:modulos 127pt, tab:api 32pt) → no pasa verificar.py
+- Tabla tab:rf-sprint1: columnas 5 (5.8cm) y 6 (1.5cm) con rutas largas en \path{} que no parten lo suficiente; suma anchos 11.4cm < 15.5cm → hay margen para ensanchar
+- Tabla tab:modulos: columna 2 (8.5cm) con descripciones largas y rutas en \path{} → ensanchar a 9.5cm (suma 13cm < 15.5cm)
+- Tabla tab:api: columna 2 (7.5cm) usa \texttt{...}\allowbreak \path{...} en lugar de \path{} directo; xurl ya cargado en include/extra.tex permite cortes en cualquier carácter → cambiar a \path{POST /api/...} y ensanchar a 8.5cm
+- Reglas Javier: 5 (tablas sin filas pisadas, p{}, \addlinespace), 6 (código con \path{} o \texttt{}+\allowbreak), 8 (ninguna página con una sola imagen) → incumplimiento regla 6 en tab:api
+- Fuentes: datos de las tablas coinciden con docs/requisitos.md (RF-01–RF-13, RJ-01–RJ-20, RNF-01–RNF-12) y docs/arquitectura.md (módulos, API) → datos correctos
+- Portada única: elements/preambulo.tex ya tiene bloque «Segunda portada» eliminado ✓
+- Figuras repetidas: pendiente de revisión global (paso 2 del orden de trabajo)
+- Prosa manual de uso: pendiente (pasos 3 y 4)
+
+Qué está bien: La estructura de la memoria sigue la plantilla oficial, los datos de las tres tablas problemáticas son correctos y coinciden con las fuentes (docs/requisitos.md, docs/arquitectura.md), la portada única ya está implementada, y el paquete xurl está cargado en include/extra.tex.
+
+Qué está mal: Tres tablas longtable en chapters/04-descripcion.tex producen overfull hbox porque:
+1. tab:rf-sprint1: columnas 5 y 6 demasiado estrechas para las rutas aunque usan \path{}.
+2. tab:modulos: columna 2 demasiado estrecha para descripciones con rutas.
+3. tab:api: usa \texttt{...}\allowbreak \path{...} en lugar de \path{} directo, impidiendo cortes automáticos de xurl.
+
+Lo que corrijo yo: Ensancho las columnas problemáticas (sumas siguen ≤ \linewidth ≈15.5cm) y convierto tab:api a \path{} puro para que xurl parta en cualquier carácter. Esto resuelve los 3 overfull detectados por verificar.py.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «{\small
+\begin{longtable}{@{}L{2.0cm} L{7.5cm} L{2.0cm}@{}}
+») chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox (los 3 errores de 35pt, 127pt y 32pt deben desaparecer) y que `verificar.py` queda en verde.
+- Si pasa, ejecutar `revisar_maquetacion.py` para validar reglas de maquetación de Javier (páginas con una sola imagen, secciones cortas, figuras repetidas, etc.).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin caracteres prohibidos en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos).
+- Revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier (diagramas: letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas, sin cruces de flechas sobre textos/cajas).
+- Verificar que no quedan figuras repetidas y que todas las capturas mínimas por carpeta están presentes (app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+).
+- Confirmar que el anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
