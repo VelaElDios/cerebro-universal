@@ -32,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «procesos» (este archivo 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[auth]] · [[seguridad]] · [[variables-entorno]] · [[arquitectura]] · [[backend]] · [[autorizacion]] · [[middlewares]] · [[sesiones]] · [[error-handling]] · [[hito-4]]
+[[grada-colchonera]] · [[saas]] · [[auth]] · [[seguridad]] · [[variables-entorno]] · [[arquitectura]] · [[backend]] · [[capas]] · [[autorizacion]] · [[middlewares]] · [[sesiones]] · [[error-handling]]

@@ -1,13 +1,13 @@
 ---
 tipo: "decision"
 titulo: "Alcance por sprint: cada entrega solo contiene lo de su sprint"
-temas: ["latex", "memoria", "scrum", "tfg"]
+temas: ["latex", "memoria", "scrum", "tfg", "alcance", "sprint"]
 claves: ["Sprint 1", "Sprint 2", "Sprint 3", "alcance", "título", "Resumen", "Abstract", "Introducción", "Conclusiones", "anexos"]
-proyectos: []
-fuentes: ["../../memoria/reglas-tfg.md"]
+proyectos: ["memoria-procesos"]
+fuentes: ["../../memoria/reglas-tfg.md", "memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-21"
-actualizado: "2026-11-21"
+actualizado: "2026-11-22"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[scrum]] · [[tfg]]
@@ -18,3 +18,7 @@ La memoria de cada sprint debe reflejar exclusivamente el trabajo realizado en e
 > — `../../memoria/reglas-tfg.md`
 
 Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]]
+
+## Ampliación (2026-11-22, memoria-procesos)
+La memoria de cada sprint debe reflejar exclusivamente el trabajo realizado en ese sprint. Todos los elementos transversales (título, Resumen, Abstract, Introducción, Conclusiones, anexos) deben ajustarse al alcance del sprint correspondiente.
+relacionado: Contenido por sprint y prosa de TFG (no listas de capturas)

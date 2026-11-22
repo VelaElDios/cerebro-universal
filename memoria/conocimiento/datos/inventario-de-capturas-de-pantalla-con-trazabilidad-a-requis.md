@@ -7,7 +7,7 @@ proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16"]
 confianza: "propuesto"
 fecha: "2026-11-16"
-actualizado: "2026-11-20"
+actualizado: "2026-11-22"
 ---
 
 Temas: [[capturas]] · [[donetonic]] · [[grada-colchonera]] · [[juego]] · [[latex]] · [[memoria]] · [[produccion]] · [[requisitos]] · [[saas]] · [[sprints]] · [[tfg]] · [[trazabilidad]]
@@ -42,6 +42,10 @@ Estructura de carpetas y contenido (fechas de captura incluidas) replicada en la
 
 ## Relacionado
 [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[capturas-de-donetonic-disponibles-en-el-repo]] · [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]] · [[agrupar-capturas-con-subfigure]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]]
+
+## Ampliación (2026-11-22, memoria-procesos)
+Estructura de carpetas en figs/capturas/: app/ (13, 27/10), hito4/ (11, 27/10), juego/ (16, 29/10), donetonic/ (8, 29/10), produccion/ (3, 23/10), prueba-tecnica/ (2), fase7/ (12, 29/10). Cada captura referencia requisito (PBI/RJ) para trazabilidad TFG.
+relacionado: Fechas y estructura de los dos sprints con PBIs y tareas, Trazabilidad requisito-PBI-tarea-PR en DoneTonic y GitHub
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>

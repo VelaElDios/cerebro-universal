@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetación"
-notas: 5
+notas: 6
 ---
 # maquetación
 
@@ -11,6 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetación» (este arch
 
 - 🧪 [[memoria/conocimiento/recetas/corregir-paginas-con-una-sola-imagen-regla-8|Corregir páginas con una sola imagen (Regla 8)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo|Cómo evitar overfull hbox con \texttt largo]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-rutas-y-diagramas|Cómo evitar overfull hbox en rutas y diagramas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]]
 
 ## Decisiones (y por qué)

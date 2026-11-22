@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "juego"
-notas: 8
+notas: 12
 ---
 # juego
 
@@ -18,7 +18,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «juego» (este archivo se 
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru|Audio 100% sintetizado con Web Audio (ondas pulso, triángulo, ruido, secuenciador, formantes vocales para grada)]]
+- 💡 [[memoria/conocimiento/conceptos/concurrencia-optimista-en-perfil-del-juego-version-en-juego|Concurrencia optimista en perfil del juego (version en juego_perfiles)]]
+- 💡 [[memoria/conocimiento/conceptos/graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier|Gráficos pixel art generados por código (chibi 32x32 sin piernas, rasgos propios, equipaciones y selecciones)]]
 - 💡 [[memoria/conocimiento/conceptos/perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante|Perfil de juego con JSONB y concurrencia optimista mediante versión]]
+- 💡 [[memoria/conocimiento/conceptos/simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla|Simulación determinista del juego (paso fijo 1/60 s, semilla)]]
 
 ## Datos
 
@@ -29,4 +33,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «juego» (este archivo se 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[requisitos]] · [[trazabilidad]] · [[sprint]] · [[concurrencia-optimista]] · [[modelo-datos]] · [[datos]] · [[fuentes]] · [[verificar]] · [[memoria-procesos]] · [[metricas]]
+[[grada-colchonera]] · [[saas]] · [[requisitos]] · [[trazabilidad]] · [[sprint]] · [[concurrencia-optimista]] · [[audio]] · [[game-engine]] · [[chiptune]] · [[web audio]] · [[base de datos]] · [[concurrencia]]

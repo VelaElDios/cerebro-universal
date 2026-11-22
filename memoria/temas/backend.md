@@ -27,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «backend» (este archivo s
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[donetonic]] · [[scrum]] · [[api]] · [[base-datos]] · [[seguridad]] · [[arquitectura]] · [[procesos]] · [[modulos]] · [[perfil]] · [[anti-cheat]]
+[[grada-colchonera]] · [[saas]] · [[donetonic]] · [[scrum]] · [[api]] · [[base-datos]] · [[seguridad]] · [[arquitectura]] · [[procesos]] · [[capas]] · [[modulos]] · [[perfil]]

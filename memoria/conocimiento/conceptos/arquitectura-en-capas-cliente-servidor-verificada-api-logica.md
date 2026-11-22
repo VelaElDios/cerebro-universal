@@ -1,13 +1,13 @@
 ---
 tipo: "concepto"
 titulo: "Arquitectura en capas cliente-servidor verificada (API → lógica → datos)"
-temas: ["arquitectura", "backend", "grada-colchonera", "procesos", "saas"]
+temas: ["arquitectura", "backend", "grada-colchonera", "procesos", "saas", "capas"]
 claves: ["src/api", "src/services", "src/repositories", "express.static", "frontera capas"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/revision-entrega.md"]
+fuentes: ["repo:saas/docs/revision-entrega.md", "repo:saas/docs/arquitectura.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-22"
 ---
 
 Temas: [[arquitectura]] · [[backend]] · [[grada-colchonera]] · [[procesos]] · [[saas]]
@@ -25,5 +25,9 @@ Esto permite testear la lógica con repositorios en memoria y cambiar de BD sin 
 > — `repo:saas/docs/revision-entrega.md` (cita sin comprobar)
 
 Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]]
+
+## Ampliación (2026-11-22, memoria-procesos)
+Backend: API (rutas, sesión, roles, logs, errores) → Lógica (reglas de negocio) → Datos (memoria o PostgreSQL con mismo contrato) → Integraciones (correo, Google). Frontend: presentación (ui.js) y cliente API (api.js). La frontera interfaz/cliente queda en dos ficheros. Inyección de dependencias por parámetro permite probar la lógica con repositorios falsos.
+relacionado: Decisiones técnicas y de proceso (D-01 a D-23), Modelo de datos entidad-relación
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T01:53:10+01:00",
+ "generado": "2026-11-22T02:38:50+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -693,7 +693,8 @@
     "backend",
     "grada-colchonera",
     "procesos",
-    "saas"
+    "saas",
+    "capas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -709,7 +710,10 @@
     "audio",
     "game-engine",
     "grada-colchonera",
-    "saas"
+    "saas",
+    "chiptune",
+    "juego",
+    "web audio"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -798,6 +802,21 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/como-trabaja-el-cerebro-constructor-prueba-revisor.md"
+  },
+  {
+   "id": "concepto:concurrencia-optimista-en-perfil-del-juego-version-en-juego",
+   "tipo": "concepto",
+   "titulo": "Concurrencia optimista en perfil del juego (version en juego_perfiles)",
+   "temas": [
+    "base de datos",
+    "concurrencia",
+    "juego"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/concurrencia-optimista-en-perfil-del-juego-version-en-juego.md"
   },
   {
    "id": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
@@ -1117,6 +1136,22 @@
    "ruta": "memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos.md"
   },
   {
+   "id": "concepto:graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier",
+   "tipo": "concepto",
+   "titulo": "Gráficos pixel art generados por código (chibi 32x32 sin piernas, rasgos propios, equipaciones y selecciones)",
+   "temas": [
+    "canvas",
+    "juego",
+    "pixel art",
+    "sprites"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier.md"
+  },
+  {
    "id": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
    "tipo": "concepto",
    "titulo": "Historias de usuario y criterios de aceptación en DoneTonic para Sprint 2",
@@ -1240,7 +1275,8 @@
    "temas": [
     "latex",
     "redacción",
-    "tfg"
+    "tfg",
+    "figuras"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1293,6 +1329,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/conceptos/seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage.md"
+  },
+  {
+   "id": "concepto:simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla",
+   "tipo": "concepto",
+   "titulo": "Simulación determinista del juego (paso fijo 1/60 s, semilla)",
+   "temas": [
+    "determinismo",
+    "juego",
+    "survivor"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/conceptos/simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla.md"
   },
   {
    "id": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
@@ -2347,9 +2398,13 @@
     "latex",
     "memoria",
     "scrum",
-    "tfg"
+    "tfg",
+    "alcance",
+    "sprint"
    ],
-   "proyectos": [],
+   "proyectos": [
+    "memoria-procesos"
+   ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin.md"
   },
@@ -4038,6 +4093,20 @@
    "ruta": "memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo.md"
   },
   {
+   "id": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",
+   "tipo": "receta",
+   "titulo": "Cómo evitar overfull hbox en rutas y diagramas",
+   "temas": [
+    "latex",
+    "maquetación"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-rutas-y-diagramas.md"
+  },
+  {
    "id": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
    "tipo": "receta",
    "titulo": "Cómo evitar páginas casi vacías tras una longtable",
@@ -5381,7 +5450,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 147,
+   "peso": 148,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5563,7 +5632,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 17,
+   "peso": 18,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -5682,7 +5751,7 @@
    "id": "tema:capas",
    "tipo": "tema",
    "titulo": "capas",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/capas.md"
   },
   {
@@ -5705,6 +5774,27 @@
    "titulo": "audio",
    "peso": 2,
    "ruta": "memoria/temas/audio.md"
+  },
+  {
+   "id": "tema:chiptune",
+   "tipo": "tema",
+   "titulo": "chiptune",
+   "peso": 2,
+   "ruta": "memoria/temas/chiptune.md"
+  },
+  {
+   "id": "tema:juego",
+   "tipo": "tema",
+   "titulo": "juego",
+   "peso": 12,
+   "ruta": "memoria/temas/juego.md"
+  },
+  {
+   "id": "tema:web audio",
+   "tipo": "tema",
+   "titulo": "web audio",
+   "peso": 1,
+   "ruta": "memoria/temas/web audio.md"
   },
   {
    "id": "tema:burndown",
@@ -5745,7 +5835,7 @@
    "id": "tema:sprint",
    "tipo": "tema",
    "titulo": "sprint",
-   "peso": 36,
+   "peso": 37,
    "ruta": "memoria/temas/sprint.md"
   },
   {
@@ -5812,6 +5902,20 @@
    "ruta": "memoria/temas/orquestador.md"
   },
   {
+   "id": "tema:base de datos",
+   "tipo": "tema",
+   "titulo": "base de datos",
+   "peso": 1,
+   "ruta": "memoria/temas/base de datos.md"
+  },
+  {
+   "id": "tema:concurrencia",
+   "tipo": "tema",
+   "titulo": "concurrencia",
+   "peso": 1,
+   "ruta": "memoria/temas/concurrencia.md"
+  },
+  {
    "id": "tema:autorizacion",
    "tipo": "tema",
    "titulo": "autorizacion",
@@ -5850,7 +5954,7 @@
    "id": "tema:alcance",
    "tipo": "tema",
    "titulo": "alcance",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/alcance.md"
   },
   {
@@ -5931,6 +6035,27 @@
    "ruta": "memoria/temas/sesiones.md"
   },
   {
+   "id": "tema:canvas",
+   "tipo": "tema",
+   "titulo": "canvas",
+   "peso": 1,
+   "ruta": "memoria/temas/canvas.md"
+  },
+  {
+   "id": "tema:pixel art",
+   "tipo": "tema",
+   "titulo": "pixel art",
+   "peso": 1,
+   "ruta": "memoria/temas/pixel art.md"
+  },
+  {
+   "id": "tema:sprites",
+   "tipo": "tema",
+   "titulo": "sprites",
+   "peso": 1,
+   "ruta": "memoria/temas/sprites.md"
+  },
+  {
    "id": "tema:requisitos",
    "tipo": "tema",
    "titulo": "requisitos",
@@ -5994,13 +6119,6 @@
    "ruta": "memoria/temas/http.md"
   },
   {
-   "id": "tema:juego",
-   "tipo": "tema",
-   "titulo": "juego",
-   "peso": 8,
-   "ruta": "memoria/temas/juego.md"
-  },
-  {
    "id": "tema:redacción",
    "tipo": "tema",
    "titulo": "redacción",
@@ -6041,6 +6159,20 @@
    "titulo": "variables-entorno",
    "peso": 2,
    "ruta": "memoria/temas/variables-entorno.md"
+  },
+  {
+   "id": "tema:determinismo",
+   "tipo": "tema",
+   "titulo": "determinismo",
+   "peso": 1,
+   "ruta": "memoria/temas/determinismo.md"
+  },
+  {
+   "id": "tema:survivor",
+   "tipo": "tema",
+   "titulo": "survivor",
+   "peso": 1,
+   "ruta": "memoria/temas/survivor.md"
   },
   {
    "id": "tema:diseno-juego",
@@ -6459,7 +6591,7 @@
    "id": "tema:maquetación",
    "tipo": "tema",
    "titulo": "maquetación",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/maquetación.md"
   },
   {
@@ -7098,13 +7230,6 @@
    "titulo": "adjustbox",
    "peso": 1,
    "ruta": "memoria/temas/adjustbox.md"
-  },
-  {
-   "id": "tema:chiptune",
-   "tipo": "tema",
-   "titulo": "chiptune",
-   "peso": 1,
-   "ruta": "memoria/temas/chiptune.md"
   },
   {
    "id": "tema:procedural-audio",
@@ -8249,6 +8374,11 @@
   },
   {
    "de": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
+   "a": "tema:capas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:arquitectura-en-capas-cliente-servidor-verificada-api-logica",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -8285,6 +8415,21 @@
   {
    "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
    "a": "tema:saas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "a": "tema:chiptune",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru",
+   "a": "tema:web audio",
    "tipo": "trata"
   },
   {
@@ -8591,6 +8736,26 @@
    "de": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
    "a": "receta:como-se-empieza-un-proyecto-nuevo-en-el-cerebro",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:concurrencia-optimista-en-perfil-del-juego-version-en-juego",
+   "a": "tema:base de datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:concurrencia-optimista-en-perfil-del-juego-version-en-juego",
+   "a": "tema:concurrencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:concurrencia-optimista-en-perfil-del-juego-version-en-juego",
+   "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:concurrencia-optimista-en-perfil-del-juego-version-en-juego",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "concepto:confianza-del-conocimiento-verificado-o-propuesto",
@@ -9663,6 +9828,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier",
+   "a": "tema:canvas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier",
+   "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier",
+   "a": "tema:pixel art",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier",
+   "a": "tema:sprites",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "concepto:historias-de-usuario-y-criterios-de-aceptacion-en-donetonic",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -10109,6 +10299,11 @@
   },
   {
    "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -10251,6 +10446,26 @@
    "de": "concepto:seguridad-bcrypt-coste-10-sin-secretos-en-repo-secret-manage",
    "a": "receta:como-desplegar-secretos-de-hito-4-a-cloud-run-produccion",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla",
+   "a": "tema:determinismo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla",
+   "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla",
+   "a": "tema:survivor",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "concepto:sistema-de-rarezas-ligado-a-historia-rojiblanca-36-jugadores",
@@ -13561,6 +13776,21 @@
    "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
    "a": "tema:tfg",
    "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:alcance",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:sprint",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
@@ -18989,6 +19219,21 @@
   },
   {
    "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",
+   "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },

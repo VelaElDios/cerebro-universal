@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "capas"
-notas: 1
+notas: 2
 ---
 # capas
 
@@ -10,7 +10,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capas» (este archivo se 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-node-js-express-postg|Arquitectura en capas cliente-servidor (Node.js/Express + PostgreSQL + integraciones)]]
+- 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-verificada-api-logica|Arquitectura en capas cliente-servidor verificada (API → lógica → datos)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[arquitectura]] · [[grada-colchonera]] · [[nodejs]] · [[postgresql]] · [[saas]]
+[[arquitectura]] · [[grada-colchonera]] · [[saas]] · [[nodejs]] · [[postgresql]] · [[backend]] · [[procesos]]

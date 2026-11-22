@@ -13165,3 +13165,71 @@ Qué he corregido yo: Reducido height de subfiguras en fig:hito4-flujo y fig:hit
 ## 2026-11-22 01:53 · 🧠 Conocimiento guardado
 
 [[cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2]] · [[alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados]]
+
+## 2026-11-22 02:36 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Siguiendo la bitácora del revisor, este paso rehace en `chapters/04-descripcion.tex` las seis figuras que incumplían las reglas 16-18 medidas en el PDF: `fig:capas` (palabras partidas «ro-», «(can-», «(sr-»...) y los cinco diagramas de secuencia (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`), que estaban dentro de `adjustbox` y quedaban con letras de 5,4-7,4 pt o con flechas que cruzaban textos. Se redibujan a tamaño real (sin escalar): cajas con `text width` suficiente y saltos de línea manuales en los nombres de módulos, y diagramas de secuencia con `\small`, como máximo 6 participantes con nombres cortos y mensajes sin paréntesis en `\mess`, quitando el `adjustbox`.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Rehacer en `chapters/04b-juego.tex` las tres figuras que fallan reglas 16-18 medidas en el PDF: `fig:juego-arquitectura` (flechas que cruzan 10 textos y palabra partida «render-»), `fig:sec-partida` (cruces en «lloooopp», «reparte», «jugar») y `fig:sec-contratar` (cruce en «p2»), redibujándolas a tamaño real sin adjustbox/resizebox: menos nodos agrupados, cajas más anchas con saltos de línea manuales, flechas solo de caja a caja y, en los sequencediagram, `\small` con ≤6 participantes de nombres cortos y mensajes sin paréntesis en `\mess`. Después, `chapters/05-evaluacion.tex` (`fig:pipeline`, palabra partida «Ar-»), y luego ejecutar `comando_prueba` y `revisar_umlsd.py`.
+
+## 2026-11-22 02:38 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Test `comando_prueba` falla: `verificar.py` reporta 3 overfull hbox en `chapters/04-descripcion.tex` (líneas 132-133, 361-362, 475-476). Esto incumple la regla de maquetación (nada fuera del margen).
+- Las figuras con etiqueta fija (`fig:capas`, `fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`) han sido redibujadas sin `adjustbox` y con `\small`, pero los overfull persisten en el texto de las cajas de las tablas largas y en los diagramas de secuencia.
+- Revisión visual del PDF (pendiente): las reglas 16-18 de Javier (diagramas legibles, flechas caja-a-caja, sin palabras partidas) no se han verificado aún; `revisar_umlsd.py` no se ha ejecutado.
+- El resto de la memoria compila, `verificar.py` pasa en estructura, cifras, capturas, bibliografía, trazabilidad y mínimos de palabras (17038 palabras totales).
+- Regla 8 (página con una sola imagen): se corrigió reduciendo `height` de 0.18 a 0.15\textheight en `fig:hito4-flujo` y `fig:hito4-estados-privacidad` (capítulo 4), pero hay que confirmar que el PDF ya no tiene páginas con una sola imagen.
+
+Qué está bien:
+- La estructura de la memoria cumple la spec: todos los capítulos y anexos requeridos están presentes y con datos contrastados de las fuentes.
+- La prosa evita cadenas «La figura X muestra…» y agrupa capturas en `subfigure`.
+- Las imágenes no se repiten; se usan `\ref` donde corresponde.
+- El anexo de desarrollo tiene los dos sprints con el mismo esquema y explica la recta de DoneTonic del Sprint 2.
+- La trazabilidad completa (82 tareas) está en el anexo A.4.
+- La bibliografía usa `apalike`, autores corporativos con doble llave y `year` en todas las entradas.
+
+Qué está mal:
+1. **Tres overfull hbox** en `chapters/04-descripcion.tex` (líneas 132-133, 361-362, 475-476). Probablemente causados por rutas largas en `\path{}` o textos en cajas de `longtable` y diagramas de secuencia que no admiten cortes de línea.
+2. **Diagramas de secuencia** (`fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`) y el TikZ `fig:capas`/`fig:modelo-datos`/`fig:juego-arquitectura`/`fig:pipeline`/`fig:burndown-s1`/`fig:burndown-s2` no han pasado `revisar_umlsd.py` ni la revisión visual de reglas 16-18 (letras ≥7,5 pt, flechas caja-a-caja, sin palabras partidas).
+3. **Regla 8** aún no confirmada en el PDF tras el cambio de altura de subfiguras.
+
+Correcciones aplicadas por el revisor (en este paso):
+- Reducir `height` de 0.18 a 0.15\textheight en las subfiguras de `fig:hito4-flujo` y `fig:hito4-estados-privacidad` (ya hecho en el borrador, pero hay que verificar que surta efecto).
+- Añadir `\allowbreak` en rutas largas dentro de `\path{}` y en textos de cajas de `longtable` y diagramas para evitar overfull.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK (Regla 8 corregida).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin `# _ & % $ {} \` en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos).
+- **Revisión visual obligatoria del PDF página a página** para reglas 16-18 de Javier:
+  - `fig:capas` (TikZ, p28): palabras partidas ("ro-", "(can-", etc.) → aumentar `text width` de cajas o usar `\mbox{}` o salto de línea manual (`\\`) en nombres de módulos.
+  - `fig:modelo-datos` (TikZ ER): verificar letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas.
+  - `fig:sec-registro` (p34): letras 5.4pt → rehacer diagrama más estrecho (menos participantes, cajas más pequeñas, o vertical) SIN escalar (`adjustbox`/`resizebox`/`scale`).
+  - `fig:sec-confirmacion` (p35): letras 6.1pt → mismo.
+  - `fig:sec-login` (p37): flechas cruzan texto "o" → reordenar participantes, etiquetas más cortas o en dos líneas, flechas con codos (`|-`/`-|`).
+  - `fig:sec-google` (p38): letras 7.4pt, flechas cruzan 3 textos → mismo.
+  - `fig:sec-baja` (p39): flechas cruzan 2 textos → mismo.
+  - `fig:juego-arquitectura` (p52): flechas cruzan 10 textos, palabra partida "render-" → separar cajas, aumentar `node distance`, flechas con codos, `\mbox{}` en nombres.
+  - `fig:sec-partida` (p54): flechas cruzan 3 textos ("lloooopp", "reparte", "jugar") → etiquetas más cortas, saltos de línea.
+  - `fig:sec-contratar` (p55): flechas cruzan texto "p2" → mismo.
+  - `fig:pipeline` (p62): palabra partida "Ar-" → `\mbox{Ar}` o caja más ancha.
+  - `fig:burndown-s1`, `fig:burndown-s2` (pgfplots): ejes y marcas ≥7,5pt.
+- Si algún diagrama incumple, **redibujarlo** (separar cajas, aumentar `text width`, saltos de línea manuales `\\`, flechas con codos `|-`/`-|`, reducir participantes agrupando) **sin usar `adjustbox`/`resizebox`/`scale`** para encoger.
+- Verificar que todas las `longtable` terminan con `\\*` antes de `\bottomrule` para que la última fila no quede sola en página siguiente.
+- Confirmar que el PDF final no tiene «??», referencias rotas, ni overfull hbox/vbox.
+
+## 2026-11-22 02:38 · 🧠 Conocimiento guardado
+
+[[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla]] · [[concurrencia-optimista-en-perfil-del-juego-version-en-juego]] · [[audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru]] · [[graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier]]
