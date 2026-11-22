@@ -11,7 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subfigure» (este archivo
 
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-vs-lista-de-capturas-regla-13-javier|Prosa de TFG vs lista de capturas (regla 13 Javier)]]
+- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas: agrupar capturas relacionadas con `subfigure` en LaTeX]]
 
 ## Decisiones (y por qué)
 
@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subfigure» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[redaccion]] · [[subcaption]] · [[memoria]] · [[figuras]] · [[tfg]] · [[maquetacion]] · [[capturas]] · [[reglas-javier]] · [[figura]]
+[[latex]] · [[memoria]] · [[redaccion]] · [[subcaption]] · [[figuras]] · [[tfg]] · [[maquetacion]] · [[capturas]] · [[reglas-javier]] · [[figura]]

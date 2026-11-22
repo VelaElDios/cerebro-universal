@@ -17,7 +17,7 @@ La memoria de cada sprint debe reflejar exclusivamente el trabajo realizado hast
 > Cada entrega lleva solo lo de su sprint. Por ejemplo, la del Sprint 1 va sin el juego. El título, el Resumen, el Abstract, la Introducción, las Conclusiones y los anexos tienen que coincidir con ese alcance.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]]
+Relacionado: [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados]]
 
 ## Ampliación (2026-11-20, memoria-procesos)
 |

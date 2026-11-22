@@ -51,6 +51,6 @@ problema: Las flechas \mess sueltas después del bloque call principal (respuest
 solucion: Eliminar las \mess sueltas que cruzan cajas alt. Las respuestas del API al Frontend ya están representadas implícitamente por el cierre de los bloques call/sdblock. Si se necesitan mostrar explícitamente, usar flechas normales fuera de cualquier sdblock y asegurar que los participantes sean contiguos (sin cajas entre medio). Aumentar node distance vertical entre participantes.
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[diagramas-de-secuencia-con-pgf-umlsd]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[diagramas-de-secuencia-con-pgf-umlsd]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

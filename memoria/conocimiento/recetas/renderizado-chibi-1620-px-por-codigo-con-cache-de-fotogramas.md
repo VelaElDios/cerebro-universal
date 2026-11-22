@@ -21,6 +21,6 @@ Temas: [[donetonic]] · [[grada-colchonera]] · [[graficos]] · [[pixel-art]] ·
 > Muñecos de 16×20 píxeles dibujados con código (sin imágenes), con caché de fotogramas.
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel]] · [[camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]]
+Relacionado: [[renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel]] · [[camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

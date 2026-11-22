@@ -18,4 +18,6 @@ relacionado: Una cita con autor largo se sale del margen: breakcites, Los identi
 > Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando
 > — `memoria/reglas-tfg.md (regla: nada fuera del margen) y lecciones de la memoria` (cita sin comprobar)
 
+Relacionado: [[como-evitar-overfull-hbox-con-texttt-largo-en-longtable]] · [[como-evitar-overfull-hbox-con-texttt-largo]] · [[dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

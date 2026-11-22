@@ -25,6 +25,6 @@ Temas: [[game-engine]] · [[grada-colchonera]] · [[graphics]] · [[saas]]
 > Los muñecos se pintan con código en una cuadrícula de 32×32 en estilo chibi (16×20 con piernas hasta la Fase 6): cabeza grande, cuerpo y zapatones, sin piernas. Se pintan por capas y píxel a píxel: zapatos, pantalón, torso, brazos y cabeza, cada una con su contorno de color y luz desde arriba a la izquierda.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[renderizado-chibi-1620-px-por-codigo-con-cache-de-fotogramas]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[optimizaciones-de-rendimiento-busqueda-por-radio-con-claves]]
+Relacionado: [[renderizado-chibi-1620-px-por-codigo-con-cache-de-fotogramas]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[optimizaciones-de-rendimiento-busqueda-por-radio-con-claves]] · [[graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

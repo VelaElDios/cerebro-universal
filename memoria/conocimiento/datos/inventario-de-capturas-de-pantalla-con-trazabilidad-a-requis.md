@@ -5,7 +5,7 @@ temas: ["capturas", "donetonic", "grada-colchonera", "juego", "latex", "memoria"
 claves: ["capturas", "app", "hito4", "juego", "fase7", "donetonic", "produccion", "prueba-tecnica", "problema: Necesario saber qué capturas existen", "su fecha y a qué requisito/PBI pertenecen para colocarlas sin repetir.", "solucion: Consultar §16 de documentacion-tecnica.md y la lista de imágenes disponibles en el borrador.", "Hitos 1-3", "Hito 4", "producción", "DoneTonic", "prueba-técnica", "requisitos P7-P17 RJ-01-RJ-20"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16", "repo:saas/docs/capturas/README.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-22"
 ---
@@ -62,6 +62,8 @@ relacionado: Fechas y estructura de los dos sprints con PBIs y tareas, Trazabili
   | `docs/capturas/prueba-tecnica/` | 2 | — | respuestas POST /api/prueba/dominio en producción. |
 
   Mínimos requeridos en spec: app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+. Todos cumplidos.
+
+Relacionado: [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>

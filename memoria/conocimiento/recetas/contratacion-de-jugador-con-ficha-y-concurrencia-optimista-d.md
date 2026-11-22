@@ -23,6 +23,6 @@ Dos peticiones simultáneas (doble clic) llaman a `juegoService.contratar()`.
 > P1->>JS: contratar() P2->>JS: contratar() JS->>DB: SELECT datos, version (v = 7) JS->>DB: SELECT datos, version (v = 7) JS->>JS: P1: 1 ficha → sortea jugador JS->>JS: P2: 1 ficha → sortea jugador JS->>DB: P1: UPDATE … WHERE version = 7 → 1 fila (v = 8) JS->>DB: P2: UPDATE … WHERE version = 7 → 0 filas JS->>DB: P2 reintenta: SELECT (v = 8, 0 fichas) JS-->>P2: 409 «No tienes fichas de contrato» JS-->>P1: 200 {fichado, logrosNuevos, perfil}
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]]
+Relacionado: [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]] · [[concurrencia-optimista-en-perfil-del-juego-version-en-juego]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

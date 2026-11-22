@@ -17,7 +17,7 @@ Ambas cifras están en la fuente, así que el test no falla, pero la memoria deb
 > §9.3: «Armas y habilidades | 24, con 5 niveles»; §14: «Contenido del juego | 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 24 combinaciones…
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
-Relacionado: [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]]
+Relacionado: [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]]
 
 ## Ampliación (2026-11-17, memoria-procesos)
 La discrepancia está documentada en la bitácora 2026-11-17 03:43. La tabla de sistemas (§9.3) dice «24 armas» y la tabla de métricas (§14) dice «29 armas». En la memoria actual, la Tabla~\ref{tab:juego-sistemas} (04b-juego.tex) usa 24 y la Tabla~\ref{tab:metricas} (05-evaluacion.tex) usa 24. Hay que unificar. Lo ideal es contar en `public/js/game/config.js` el array `ARMAS` y usar esa cifra real.

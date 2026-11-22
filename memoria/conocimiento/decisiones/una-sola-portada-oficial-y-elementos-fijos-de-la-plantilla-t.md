@@ -5,7 +5,7 @@ temas: ["elementos-fijos", "plantilla", "portada", "tfg"]
 claves: ["elements/portada.tex", "elements/preambulo.tex", "segunda portada", "declaracion", "resumen", "abstract"]
 proyectos: ["memoria-procesos"]
 fuentes: ["../../memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-22"
 actualizado: "2026-11-22"
 ---
@@ -23,6 +23,8 @@ Temas: [[elementos-fijos]] · [[plantilla]] · [[portada]] · [[tfg]]
   Archivos protegidos (no tocar): `elements/portada.tex`, `Memoria.tex`.
 
 > Una sola portada: la oficial del TFG, la de `elements/portada.tex` (escudo, Universidad de Castilla-La Mancha y Escuela Superior de Ingeniería Informática, tipo de trabajo, título, autor y fecha, todo centrado). `Memoria.tex` hace `\input{elements/portada}`. No se añade ninguna otra portada; tampoco la «segunda portada» con los logos UCLM/ESII de `elements/preambulo.tex`.
-> — `../../memoria/reglas-tfg.md` (cita sin comprobar)
+> — `../../memoria/reglas-tfg.md`
+
+Relacionado: [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[portada-unica-oficial-del-tfg-elements-portada-tex]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

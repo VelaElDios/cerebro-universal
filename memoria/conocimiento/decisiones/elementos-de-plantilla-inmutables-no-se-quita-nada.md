@@ -17,4 +17,4 @@ Todos los elementos estructurales de la plantilla son obligatorios y no se puede
 > **No se quita nada de la plantilla:** portada, declaración de autoría, Resumen, Abstract, índices (general, de figuras y de tablas), capítulos, anexos y bibliografía. Solo se cambia lo que Javier pida expresamente.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]]
+Relacionado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]]

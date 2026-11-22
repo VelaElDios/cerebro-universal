@@ -21,4 +21,6 @@ relacionado: Servidor del juego y anti-trampas, Diagrama de secuencia contratar 
 ## Ampliación (2026-11-22, memoria-procesos)
 Implementado en juegoService.js para contratar, entrenar, identidad, finalizarPartida. El diagrama de secuencia fig:sec-contratar muestra el caso de doble clic: P1 escribe v7→v8, P2 falla en v7, reintenta con v8 (sin fichas) y recibe 409.
 
+Relacionado: [[contratacion-de-jugador-con-ficha-y-concurrencia-optimista-d]] · [[perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

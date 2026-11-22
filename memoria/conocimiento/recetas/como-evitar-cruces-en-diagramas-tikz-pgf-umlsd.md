@@ -17,6 +17,6 @@ Para evitar cruces en diagramas: (1) Aumentar `node distance` (vertical: 0.8-1.0
 > Ninguna línea ni flecha atraviesa una caja o un texto, y ninguna caja pisa a otra. Las flechas van de una caja a la siguiente (A → B, B → C), nunca de A a C pasando por encima de B; si hay que rodear, con codos (`|-`, `-|`) y separando bien las cajas (`node distance` suficiente). Las etiquetas de las flechas no se montan sobre las cajas.
 > — `memoria/reglas-tfg.md`
 
-Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]]
+Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] · [[diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18]] · [[como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -24,7 +24,7 @@ Esto permite testear la lógica con repositorios en memoria y cambiar de BD sin 
 > Backend: capas API, lógica y datos en módulos separados ✅ `src/api/` → `src/services/` → `src/repositories/`. La lógica recibe el repositorio por parámetro, así que no sabe si los datos están en memoria o en PostgreSQL
 > — `repo:saas/docs/revision-entrega.md` (cita sin comprobar)
 
-Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]]
+Relacionado: [[arquitectura-en-capas-cliente-servidor-node-js-express-postg]] · [[modulos-del-backend-y-sus-responsabilidades]] · [[estrategia-de-pruebas-niveles-y-enfoque-error-first]] · [[arquitectura-en-capas-con-inyeccion-de-dependencias-permitio]]
 
 ## Ampliación (2026-11-22, memoria-procesos)
 Backend: API (rutas, sesión, roles, logs, errores) → Lógica (reglas de negocio) → Datos (memoria o PostgreSQL con mismo contrato) → Integraciones (correo, Google). Frontend: presentación (ui.js) y cliente API (api.js). La frontera interfaz/cliente queda en dos ficheros. Inyección de dependencias por parámetro permite probar la lógica con repositorios falsos.

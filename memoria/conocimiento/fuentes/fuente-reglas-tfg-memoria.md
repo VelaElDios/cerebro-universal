@@ -27,4 +27,4 @@ Este trozo define las reglas fijas de Javier para la memoria del TFG usando la p
 - [[prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier]]
 - [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
 - [[scripts-de-verificacion-automatica-en-el-repo]]
-- [[verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev]]
+- [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]]

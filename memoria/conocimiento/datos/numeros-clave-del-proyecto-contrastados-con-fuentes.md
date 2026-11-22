@@ -17,7 +17,7 @@ Cifras verificadas contra las fuentes para usar en la memoria sin inventar: 19 P
 > Sprint 1: 19 PBIs (P1–P19) y 32 tareas (T1–T32). Sprint 2: 29 PBIs (P20–P48) y 50 tareas (T33–T82). Pruebas: 276 (140 Sprint 1 + 136 juego) + CI con PostgreSQL real = 322 totales. Migraciones: 5. Endpoints API: 23.
 > — `repo:saas/docs/documentacion-tecnica.md, repo:saas/docs/gestion/README.md` (cita sin comprobar)
 
-Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[metricas-comparativas-sprint-1-vs-sprint-2]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]] · [[cifras-clave-del-proyecto-verificadas-en-fuentes]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[metricas-comparativas-sprint-1-vs-sprint-2]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
 
 ## Ampliación (2026-11-16, memoria-procesos)
 Todos los números mayores que 20 aparecen en las fuentes. Los pequeños (19, 29, 32, 50, 5, 23, 6, 10, 14, 16, 24, 26) también se han contrastado con las tablas de la documentación técnica y la gestión. El burndown de la entrega del Sprint 1 cuenta 16 PBIs (P1–P14, P18, P19) porque P15–P17 son del Hito 4 y se entregaron después.

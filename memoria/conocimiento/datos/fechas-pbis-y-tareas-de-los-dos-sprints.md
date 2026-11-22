@@ -186,6 +186,10 @@ Sprint 1: Hitos 1-4, 19 PBIs, 32 tareas. Sprint 2: 7 fases, 29 PBIs, 50 tareas. 
 Sprint 1 (29/09–27/10): Hitos 1–4, P1–P19, T1–T32. Entrega 12/10 (Hitos 1–3 + P18,P19 = 16 PBIs). Hito 4 completado 23/10. Sprint 2 (23/10–29/10): P20–P48, T33–T82, 6 fases + Calidad. Backlog registrado en DoneTonic al cierre (29/10) → gráficas en recta. Evolución real por fechas de PR: 23/10 (1), 24/10 (17), 26/10 (9), 29/10 (2).
 relacionado: Burndown real vs DoneTonic en Sprint 2, Trazabilidad requisito-PBI-tarea-PR en DoneTonic y GitHub
 
+Relacionado: [[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]]: Nota A describe 7 fases en el Sprint 2 (Base del juego, Fase 2·Club, Fase 3·Ultras, Fase 4·Mundo, Fase 5·Rarezas, Fase 6·Logros y sonido, Calidad). Nota B lista 8 etiquetas/fases en DoneTonic (Rediseño, 1 a 7), donde la fase 1 equivale a «Base del juego» pero añade «Rediseño» inicial y una fase 7 final distinta a «Calidad».
+
+> ⚠️ Posible contradicción con [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]]: La Nota A (cuerpo principal y advertencias) afirma que el Hito 4 tiene **6 tareas (T21–T26)** y que se marcaron hechas al cerrar el Sprint 1. La Nota B (tabla de hitos y ampliaciones) establece que el Hito 4 abarca **12 tareas (T21–T32)** dentro del Sprint 1.

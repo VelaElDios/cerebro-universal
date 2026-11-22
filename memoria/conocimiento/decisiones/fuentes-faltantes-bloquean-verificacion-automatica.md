@@ -23,3 +23,5 @@ solucion: Crear estos 4 archivos en `docs/` usando como base los archivos existe
 Relacionado: [[fuentes-faltantes-bloquean-verificacion-automatica-de-numero]] · [[validacion-completa-de-numeros-en-memoria-tfg-con-verificar]] · [[como-manejar-fuentes-faltantes-en-verificacion-automatica-de]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]]: La Nota A afirma que `verificar.py` "comprueba que todo número >20 del texto aparece en las fuentes". La Nota B (primer párrafo) afirma lo contrario: que "comprueba TODOS los números del texto contra las fuentes, no solo los > 20". Aunque la ampliación posterior de la Nota B rectifica y coincide con la Nota A, la afirmación inicial de la Nota B contradice directamente a la Nota A sobre el comportamiento del script.

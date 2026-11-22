@@ -20,7 +20,7 @@ Razón implícita: Sprint 1 requería entregas parciales evaluables (hitos con r
 > En el Sprint 1 cada tarea tiene una rama propia `hito-N/Tx-descripcion` que se integra en la rama del hito mediante un PR `[Tx] ...`. En el Sprint 2 el trabajo se integró en `main` con **un PR por fase** del juego (#36, #44–#54), y cada tarea de DoneTonic indica en su descripción el PR donde está (`PR: #nn`).
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto]] · [[metricas-comparativas-sprint-1-vs-sprint-2]]
+Relacionado: [[flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]] · [[convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto]] · [[metricas-comparativas-sprint-1-vs-sprint-2]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
@@ -29,3 +29,5 @@ Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 > ⚠️ Posible contradicción con [[backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi]]: La Nota A afirma que en el Sprint 2 hubo «un único PR por fase de juego (#36, #44–#54)», implicando que cada uno de esos 11 PRs corresponde a una fase. La Nota B muestra que solo 6 PRs (#36, #49, #50, #52, #53, #54) se asocian a las fases 1–6; los PRs #44–#48 y #51 son mejoras/arreglos de «Base del juego» o «Calidad», no fases de juego.
 
 > ⚠️ Posible contradicción con [[sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba]]: La Nota A describe el Sprint 2 como el periodo de **integración/desarrollo de la lógica de juego** mediante «un PR por fase» (11 PRs #36, #44–#54 fusionados en `main`). La Nota B afirma que el Sprint 2 **no desarrolló lógica nueva**, sino que solo documentó como backlog 6 fases **ya implementadas** antes del sprint; las fusiones de esos 6 PRs de fase ocurrieron en la semana del sprint, pero el código ya existía.
+
+> ⚠️ Posible contradicción con [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]]: La Nota A afirma que en el Sprint 2 hubo «un único PR por fase de juego» listando 12 PRs (#36, #44–#54), implicando 12 fases. La Nota B enumera 8 fases/etiquetas DoneTonic para el Sprint 2 (Rediseño, Fases 1 a 7). Además, la Nota A encuadra el Sprint 2 como «lógica juego», mientras que la Nota B incluye una fase inicial de «Rediseño» (interfaz/UX) ajena a la lógica de juego.

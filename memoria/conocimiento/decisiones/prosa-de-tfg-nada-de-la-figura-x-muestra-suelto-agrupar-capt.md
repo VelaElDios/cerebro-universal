@@ -30,6 +30,6 @@ solucion: Reescribir cada sección como prosa continua que explica el flujo de u
 ## Ampliación (2026-11-20, memoria-procesos)
 Aplicado en capítulos 04-descripcion (manual SaaS) y 04b-juego (manual juego). Ejemplo: Figura~\ref{fig:app-inicio-registro} agrupa inicio y registro; Figura~\ref{fig:juego-menu-vestuario} agrupa menú y vestuario; Figura~\ref{fig:juego-partida-mejora} agrupa partida y mejora; Figura~\ref{fig:juego-fin-pausa} agrupa fin y pausa; Figura~\ref{fig:juego-club-pantallas-a/b} agrupan 8 pantallas del club en 2 figuras de 4 subfiguras cada una.
 
-Relacionado: [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]]
+Relacionado: [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

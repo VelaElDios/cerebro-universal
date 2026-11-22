@@ -17,4 +17,4 @@ Límite duro: 6 «lifelines»/participantes por diagrama de secuencia. Si el sis
 > Diagramas de secuencia: **como mucho 6 participantes**. Si hay más, se agrupan (por ejemplo, «Vista + api.js» → «Frontend») o se parte en dos diagramas (lo que pasa en el navegador / lo que pasa en el servidor). `\resizebox` solo para encoger un poco, no para meter 9 columnas en el ancho de la página.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]]
+Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[limite-de-6-participantes-en-diagramas-de-secuencia]]

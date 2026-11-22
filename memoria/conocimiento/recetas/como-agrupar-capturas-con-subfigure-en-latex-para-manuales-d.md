@@ -95,7 +95,7 @@ Evitar páginas con una sola imagen (Regla 8) y cadenas de «La figura X muestra
 - Ampliaciones 2026-11-16 y 2026-11-19 desde [[proyectos/memoria-procesos/estado|memoria-procesos]].
 
 **Relacionado**  
-[[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[corregir-paginas-con-una-sola-imagen-regla-8]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[agrupar-capturas-con-subfigure]] · [[como-se-agrupan-capturas-con-subfigure]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]]
+[[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[agrupar-capturas-con-subfigure]] · [[como-se-agrupan-capturas-con-subfigure]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]]
 
 **Fragmentos de código referenciados**  
 > \begin{subfigure}{0.48\textwidth} \centering \includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{figs/capturas/app/01-inicio.png} \subcaption{Página de inicio sin sesión.}  

@@ -14,7 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redacción» (este archiv
 
 ## Conceptos
 
-- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
 
 ## Temas relacionados
 

@@ -17,6 +17,6 @@ Cada sprint tiene su propia sección en el anexo "Desarrollo del proyecto" con c
 > Desarrollo del proyecto: una sección por sprint con el mismo esquema (planificación: objetivo, fechas, sprint backlog y trazabilidad; desarrollo: problema-solución, no un diario del desarrollador; revisión; retrospectiva con el sprint burndown).
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fases-del-sprint-2-y-prs-asociados]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[capturas-de-donetonic-disponibles-en-el-repo]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]]
+Relacionado: [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fases-del-sprint-2-y-prs-asociados]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] · [[capturas-de-donetonic-disponibles-en-el-repo]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

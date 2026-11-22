@@ -19,4 +19,6 @@ problema: Errores de sintaxis en diagramas de secuencia (participantes no declar
 solucion: Declarar todos los participantes con \newthread/\newinst. En textos de \mess, call, callself, \newinst: no usar #, _, &, %, $, {}, comandos LaTeX, ni paréntesis en \mess. Usar sdblock para alternativas.
 > — `memoria/reglas-tfg.md (ejemplo compilado)` (cita sin comprobar)
 
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-de-secuencia-con-pgf-umlsd]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

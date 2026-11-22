@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scripts» (este archivo s
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev|Verificación obligatoria: revisar_maquetacion.py en verde + revisión página a página]]
+- 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final de verificación antes de marcar TERMINADO (PDF página a página + scripts en verde)]]
 
 ## Datos
 
@@ -17,4 +17,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scripts» (este archivo s
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[python]] · [[ci]]
+[[latex]] · [[memoria]] · [[tfg]] · [[python]] · [[ci]] · [[revisar_maquetacion.py]] · [[verificacion]]

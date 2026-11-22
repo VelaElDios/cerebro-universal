@@ -35,3 +35,5 @@ Evolución real: 23/10 (PR #36): 1 PBI; 24/10 (PRs #44–#52): 17 PBIs; 26/10 (P
 Relacionado: [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba]]: La Nota A describe el Sprint 2 como un periodo de **desarrollo nuevo e integración** (7 fases, 11 PRs fusionados en main del 23 al 29/10 añadiendo características y resolviendo problemas). La Nota B afirma que el Sprint 2 **no desarrolló lógica nueva**, sino que solo documentó como backlog 6 fases **ya implementadas antes del sprint**; las fusiones ocurrieron esa semana pero el código preexistía.

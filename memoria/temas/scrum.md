@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scrum"
-notas: 58
+notas: 57
 ---
 # scrum
 
@@ -70,8 +70,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 - 📊 [[memoria/conocimiento/datos/migracion-004-y-endpoint-put-api-juego-identidad-para-mote-y|Migración 004 y endpoint PUT /api/juego/identidad para mote y avatar]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
 - 📊 [[memoria/conocimiento/datos/prs-de-cierre-de-hito-y-sprint-en-repositorio|PRs de cierre de hito y sprint en repositorio]]
-- 📊 [[memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil|Referencia DoneTonic como herramienta de gestión ágil]]
-- 📊 [[memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr|Referencia DoneTonic como herramienta de gestión ágil del proyecto]]
+- 📊 [[memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr|Referencia DoneTonic como herramienta de gestión ágil del proyecto]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs|Trazabilidad completa Sprint 1: PBIs, tareas, ramas y PRs]]
 - 📊 [[memoria/conocimiento/datos/url-publica-de-despliegue-continuo-google-cloud-run|URL pública de despliegue continuo (Google Cloud Run)]]
 - 📊 [[memoria/conocimiento/datos/workspace-y-equipo-en-donetonic|Workspace y equipo en DoneTonic]]
@@ -82,4 +81,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Temas relacionados
 
-[[donetonic]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[memoria]] · [[tfg]] · [[git]] · [[metricas]] · [[trazabilidad]] · [[pbi]] · [[tarea]]
+[[grada-colchonera]] · [[donetonic]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[memoria]] · [[tfg]] · [[git]] · [[metricas]] · [[trazabilidad]] · [[pbi]] · [[tarea]]

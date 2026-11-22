@@ -17,6 +17,6 @@ Babel spanish vuelve activos los caracteres < y >. Entonces fallan >=stealth, la
 > Cargar la librería babel de TikZ en el preámbulo.
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]] · [[flechas-reales-en-captions-y-texto-rightarrow-nunca]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro]] · [[flechas-reales-en-captions-y-texto-rightarrow-nunca]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que]] · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

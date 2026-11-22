@@ -17,6 +17,6 @@ Tabla `juego_perfiles`: `user_id` PK/FK a `users`. `datos` JSONB contiene: plant
 > juego_perfiles.datos (JSONB): plantilla (jugadores con jefes, bajas, partidas y estadísticas de entrenamiento), contadores (jefesTotal, partidas, contratos), logros con su fecha y la partida en curso (partidaActual). version sube en cada escritura (concurrencia optimista).
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[tabla-users-con-indice-parcial-unico-para-email-entre-cuenta]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[contratacion-de-jugador-con-ficha-y-concurrencia-optimista-d]] · [[esquema-de-progreso-guardado-en-servidor-migracion-003-tabla]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]]
+Relacionado: [[tabla-users-con-indice-parcial-unico-para-email-entre-cuenta]] · [[gestion-de-sesiones-con-cookies-httponly-y-almacenamiento-en]] · [[maquina-de-estados-de-la-cuenta-de-usuario]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[contratacion-de-jugador-con-ficha-y-concurrencia-optimista-d]] · [[esquema-de-progreso-guardado-en-servidor-migracion-003-tabla]] · [[validacion-anti-trampas-en-el-servidor-reloj-propio-formulas]] · [[concurrencia-optimista-en-perfil-del-juego-version-en-juego]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

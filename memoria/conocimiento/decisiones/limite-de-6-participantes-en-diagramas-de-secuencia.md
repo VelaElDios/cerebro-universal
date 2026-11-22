@@ -19,3 +19,5 @@ Está prohibido usar `\resizebox` para forzar más de 6 participantes en el anch
 
 > Diagramas de secuencia: **como mucho 6 participantes**. Si hay más, se agrupan (por ejemplo, «Vista + api.js» → «Frontend») o se parte en dos diagramas (lo que pasa en el navegador / lo que pasa en el servidor). `\resizebox` solo para encoger un poco, no para meter 9 columnas en el ancho de la página.
 > — `../../memoria/reglas-tfg.md`
+
+Relacionado: [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]]

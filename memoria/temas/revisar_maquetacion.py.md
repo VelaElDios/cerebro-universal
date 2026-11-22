@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «revisar_maquetacion.py» 
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final antes de marcar TERMINADO (PDF página a página + script verde)]]
+- 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final de verificación antes de marcar TERMINADO (PDF página a página + scripts en verde)]]
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[verificacion]]
+[[ci]] · [[latex]] · [[memoria]] · [[scripts]] · [[tfg]] · [[verificacion]]

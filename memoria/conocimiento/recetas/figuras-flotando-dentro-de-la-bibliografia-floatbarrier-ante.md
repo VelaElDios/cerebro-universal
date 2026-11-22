@@ -17,6 +17,6 @@ Una figura flotante pendiente acaba colocándose en medio de la bibliografía. S
 > Cargar placeins y poner \FloatBarrier justo antes de la bibliografía: obliga a colocar antes todas las figuras pendientes.
 > — `memoria/lecciones.md` (cita sin comprobar)
 
-Relacionado: [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle]] · [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]]
+Relacionado: [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle]] · [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

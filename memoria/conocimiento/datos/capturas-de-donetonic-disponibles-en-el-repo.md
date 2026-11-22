@@ -26,6 +26,6 @@ Estas capturas sirven como evidencia para la memoria del TFG (trazabilidad, segu
 > ![Backlog Burndown y Burnup en DoneTonic](../capturas/donetonic/07-graficas-backlog.png)
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[agrupar-capturas-con-subfigure]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]]
+Relacionado: [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[agrupar-capturas-con-subfigure]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[historias-de-usuario-y-criterios-de-aceptacion-en-donetonic]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

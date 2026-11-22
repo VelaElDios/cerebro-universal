@@ -17,4 +17,6 @@ Insertar \allowbreak en puntos naturales (tras punto, barra, dos puntos) dentro 
 > Los identificadores largos en \texttt no se parten solos: usar \allowbreak dentro del comando
 > — `memoria/reglas-tfg.md (regla 6) y lecciones del cerebro` (cita sin comprobar)
 
+Relacionado: [[como-evitar-overfull-hbox-con-texttt-largo-en-longtable]] · [[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

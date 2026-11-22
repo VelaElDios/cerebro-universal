@@ -25,6 +25,6 @@ Temas: [[architecture]] · [[game-engine]] · [[grada-colchonera]] · [[saas]]
 > **Determinismo.** `mundo.js` avanza con un paso fijo de 1/60 s y un generador aleatorio con semilla. Si el navegador va lento, se hacen varios pasos por fotograma (con un tope); el resultado no depende de los FPS y las pruebas son reproducibles.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[modulos-del-backend-y-sus-responsabilidades]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[generacion-de-mundo-procedural-infinito-con-distritos-estadi]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]] · [[motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla]]
+Relacionado: [[modulos-del-backend-y-sus-responsabilidades]] · [[cadena-de-middlewares-para-peticion-protegida-y-autorizacion]] · [[audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru]] · [[frontend-spa-con-rutas-por-hash-y-vistas-cargadas-bajo-deman]] · [[generacion-de-mundo-procedural-infinito-con-distritos-estadi]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]] · [[motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla]] · [[simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

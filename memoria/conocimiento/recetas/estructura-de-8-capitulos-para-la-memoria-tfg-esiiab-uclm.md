@@ -5,9 +5,9 @@ temas: ["latex", "memoria", "tfg", "esiiab", "estructura", "memoria-procesos"]
 claves: ["capítulos", "estructura", "introduccion", "antecedentes", "propuesta", "descripcion", "evaluacion", "conclusiones", "bibliografia", "anexos"]
 proyectos: ["memoria-procesos"]
 fuentes: ["../memoria-procesos/fuentes/estructura-memoria.md", "fuentes/estructura-memoria.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-21"
+actualizado: "2026-11-22"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[tfg]]

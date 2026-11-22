@@ -9,9 +9,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «ci» (este archivo se gen
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final de verificación antes de marcar TERMINADO (PDF página a página + scripts en verde)]]
 - 🧪 [[memoria/conocimiento/recetas/github-flow-por-hitos-con-ramas-protegidas-y-ci-obligatorio|GitHub Flow por hitos con ramas protegidas y CI obligatorio]]
-- 🧪 [[memoria/conocimiento/recetas/verificacion-obligatoria-revisar-maquetacion-py-en-verde-rev|Verificación obligatoria: revisar_maquetacion.py en verde + revisión página a página]]
 
 ## Temas relacionados
 
-[[git]] · [[grada-colchonera]] · [[metodologia]] · [[saas]] · [[latex]] · [[memoria]] · [[scripts]] · [[tfg]]
+[[latex]] · [[memoria]] · [[revisar_maquetacion.py]] · [[scripts]] · [[tfg]] · [[verificacion]] · [[git]] · [[grada-colchonera]] · [[metodologia]] · [[saas]]

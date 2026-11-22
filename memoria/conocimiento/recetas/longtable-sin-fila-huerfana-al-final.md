@@ -36,7 +36,7 @@ Para que la última fila (p. ej. un total) y la `\bottomrule` no queden solas en
 La regla de las «últimas 2-3 filas con `\\*`» se aplica justo antes de `\bottomrule` (p. ej. `... \\* \hline \\* \bottomrule` o `... \\* \midrule \\* \bottomrule` según la estructura).
 
 Relacionado:   · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]]
-[[como-anadir-en-longtables-para-evitar-filas-huerfanas]] · [[longtable-sin-fila-huerfana-al-final]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable]]
+[[como-anadir-en-longtables-para-evitar-filas-huerfanas]] · [[longtable-sin-fila-huerfana-al-final]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[formato-de-tablas-alineacion-tamanos-y-longtable]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

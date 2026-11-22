@@ -5,9 +5,9 @@ temas: ["duplicados", "figuras", "latex", "maquetacion", "maquetación", "memori
 claves: ["regla 10", "imágenes repetidas", "ref cruzadas", "imagen repetida", "\\ref", "una sola vez", "capturas duplicadas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 10)"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-21"
+actualizado: "2026-11-22"
 ---
 
 Temas: [[duplicados]] · [[figuras]] · [[latex]] · [[maquetacion]] · [[maquetación]] · [[memoria-procesos]] · [[ref]] · [[reglas-javier]] · [[reglas-tfg]]

@@ -17,6 +17,6 @@ En lugar de escribir una frase por captura («La figura 1 muestra el menú. La f
 > Prosa de TFG, no listas de capturas: nada de una frase suelta «La figura X muestra…» por cada imagen. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así. Las que van juntas se agrupan con `subfigure`.
 > — `memoria/reglas-tfg.md`
 
-Relacionado: [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-vs-lista-de-capturas-regla-13-javier]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]]
+Relacionado: [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

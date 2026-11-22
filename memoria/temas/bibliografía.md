@@ -14,8 +14,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibliografía» (este arc
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil|Referencia DoneTonic como herramienta de gestión ágil]]
+- 📊 [[memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr|Referencia DoneTonic como herramienta de gestión ágil del proyecto]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[bibtex]] · [[latex]] · [[donetonic]] · [[scrum]] · [[bibliografia]] · [[apalike]] · [[autores corporativos]]
+[[bibliografia]] · [[bibtex]] · [[latex]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]] · [[apalike]] · [[autores corporativos]]

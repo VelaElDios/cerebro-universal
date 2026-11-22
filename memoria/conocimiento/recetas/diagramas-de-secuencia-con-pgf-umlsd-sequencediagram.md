@@ -135,6 +135,6 @@ Temas: [[diagramas]] · [[diagramas-secuencia]] · [[latex]] · [[pgf-umlsd]] ·
 
 Fusionada con: Diagramas de secuencia pgf-umlsd sintaxis correcta
 
-Relacionado: [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]]
+Relacionado: [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

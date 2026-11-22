@@ -18,4 +18,6 @@ relacionado: Arquitectura del juego: simulación determinista, presentación por
 > Determinismo. mundo.js avanza con un paso fijo de 1/60 s y un generador aleatorio con semilla. Si el navegador va lento, se hacen varios pasos por fotograma (con un tope); el resultado no depende de los FPS y las pruebas son reproducibles.
 > — `repo:saas/docs/arquitectura.md`
 
+Relacionado: [[motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla]] · [[arquitectura-del-juego-simulacion-determinista-presentacion]] · [[partida-del-juego-inicio-bucle-de-simulacion-60-hz-y-fin-con]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
