@@ -13233,3 +13233,23 @@ Correcciones aplicadas por el revisor (en este paso):
 ## 2026-11-22 02:38 · 🧠 Conocimiento guardado
 
 [[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[arquitectura-en-capas-cliente-servidor-verificada-api-logica]] · [[simulacion-determinista-del-juego-paso-fijo-1-60-s-semilla]] · [[concurrencia-optimista-en-perfil-del-juego-version-en-juego]] · [[audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru]] · [[graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier]]
+
+## 2026-11-22 03:14 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Se han detectado tres overfull hbox en chapters/04-descripcion.tex (líneas 132-133, 361-362, 475-476). Corresponden a celdas de longtable con texto largo sin puntos de corte. Se añade \allowbreak en tres filas concretas de las tablas tab:rnf, tab:modulos y tab:api para permitir el corte de línea y evitar desbordamiento.
+
+**Archivos:** `(no aplicado: no encuentro el texto: «RNF-01 & \textbf{Seguridad} de credenciales y sesiones & Has») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «Juego & \texttt{GET perfil}, \texttt{POST partidas}, \texttt») chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK (Regla 8 corregida). Después ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia.
+
+## 2026-11-22 03:30 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a openrouter-grandes (nvidia/nemotron-3-ultra-550b-a55b:free)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.

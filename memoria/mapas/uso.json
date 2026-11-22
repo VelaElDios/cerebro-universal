@@ -63,7 +63,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-22",
-  "usos": 6
+  "usos": 7
  },
  "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md": {
   "bien": 0,
@@ -135,7 +135,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-22",
-  "usos": 6
+  "usos": 7
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
@@ -177,7 +177,7 @@
   "bien": 4,
   "mal": 1,
   "ultimo": "2026-11-22",
-  "usos": 35
+  "usos": 36
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
@@ -220,6 +220,12 @@
   "mal": 0,
   "ultimo": "2026-11-22",
   "usos": 13
+ },
+ "memoria/conocimiento/recetas/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-22",
+  "usos": 1
  },
  "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram.md": {
   "bien": 0,
