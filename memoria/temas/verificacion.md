@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 20
+notas: 19
 ---
 # verificacion
 
@@ -29,7 +29,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto verificadas en fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
 
@@ -41,4 +40,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[memoria-procesos]] · [[test]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[verificación]] · [[reglas-javier]]
+[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[test]] · [[memoria-procesos]] · [[metricas]] · [[sus]] · [[usabilidad]] · [[verificación]] · [[reglas-javier]]

@@ -32,7 +32,7 @@ Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \tex
 
 Los controles son flexibles: en teclado se usan WASD o flechas para moverse, \texttt{Espacio}/\texttt{E} para la ulti, \texttt{Esc}/\texttt{P} para pausar, \texttt{F} para pantalla completa y \texttt{1}--\texttt{3} para elegir mejora al subir de nivel; en móvil aparece un joystick táctil flotante al arrastrar. Los ajustes de volumen, gráficos, cámara y controles se guardan en \texttt{localStorage}.
 
-Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La Figura~\ref{fig:juego-partida-mejora} ilustra una partida en curso (subfigura~\ref{fig:juego-partida}) con el mundo procedural, rivales, armas automáticas y HUD, y la pantalla de subida de nivel (subfigura~\ref{fig:juego-mejora}) donde se elige una de tres mejoras.
+Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La Figura~\ref{fig:juego-partida-mejora} agrupa una partida en curso (subfigura~\ref{fig:juego-partida}) con el mundo procedural, rivales, armas automáticas y HUD, y la pantalla de subida de nivel (subfigura~\ref{fig:juego-mejora}) donde se elige una de tres mejoras.
 
 \begin{figure}[htbp]
 \centering
@@ -204,51 +204,20 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.6cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.4cm, align=center, minimum height=0.8cm, font=\scriptsize, inner sep=2pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=0.8cm, font=\scriptsize, inner sep=2pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Columna 1: Simulación pura
-    \node[nodewide] (mundo) {mundo.js\\bucle paso fijo\\config.js (equilibrio)};
-    \node[node, below=0.75cm of mundo] (armas) {armas.js};
-    \node[node, below=0.75cm of armas] (combate) {combate.js};
-    \node[node, below=0.75cm of combate] (jefes) {jefes.js};
-    \node[node, below=0.75cm of jefes] (oleadas) {oleadas.js /\\ rivales.js};
-    \node[node, below=0.75cm of oleadas] (terreno) {terreno.js};
-    \node[node, below=0.75cm of terreno] (ultras) {ultras.js /\\ ulti.js};
-    \node[node, below=0.75cm of ultras] (mejoras) {mejoras.js};
-    % Columna 2: Presentación
-    \node[nodewide, right=2.5cm of mundo] (juego) {juego.js\\pantallas y bucle};
-    \node[node, below=0.75cm of juego] (render) {render.js /\\ render-mundo.js /\\ render-ultras.js};
-    \node[node, below=0.75cm of render] (sprites) {sprites.js\\chibi 32x32};
-    \node[node, below=0.75cm of sprites] (hud) {hud.js};
-    \node[node, below=0.75cm of hud] (audio) {audio.js +\\ musica.js};
-    \node[node, below=0.75cm of audio] (ui2) {club-ui.js, fin-ui.js,\\firma.js};
-    \node[node, below=0.75cm of ui2] (entrada) {entrada.js};
+    % Columna 1: Simulación pura (agrupados)
+    \node[nodewide] (sim) {Simulación\\mundo.js, armas.js,\\combate.js, jefes.js,\\oleadas.js, terreno.js,\\ultras.js, mejoras.js};
+    % Columna 2: Presentación (agrupados)
+    \node[nodewide, right=2.8cm of sim] (pres) {Presentación\\juego.js, render*.js,\\sprites.js, hud.js,\\audio.js, ui*.js,\\entrada.js};
     % Columna 3: Servidor
-    \node[nodewide, right=2.5cm of juego] (js) {juegoService.js};
-    \node[node, below=0.75cm of js] (club) {club.js};
-    \node[node, below=0.75cm of club] (config2) {config.js};
-    \node[node, below=0.75cm of config2] (logros) {logros.js};
-    % Conexiones: solo vecinas o con codos
-    \draw[arrow] (mundo) -- (armas);
-    \draw[arrow] (mundo) -- (combate);
-    \draw[arrow] (mundo) -- (jefes);
-    \draw[arrow] (mundo) -- (oleadas);
-    \draw[arrow] (mundo) -- (terreno);
-    \draw[arrow] (mundo) -- (ultras);
-    \draw[arrow] (mundo) -- (mejoras);
-    \draw[arrow] (juego) -- (render);
-    \draw[arrow] (render) -- (sprites);
-    \draw[arrow] (juego) -- (hud);
-    \draw[arrow] (juego) -- (audio);
-    \draw[arrow] (juego) -- (ui2);
-    \draw[arrow] (juego) -- (entrada);
-    \draw[arrow] (juego) -- (mundo);
-    \draw[arrow] (juego.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {api.js $\rightarrow$ /api/juego} (js.west);
-    \draw[arrow] (js) -- (club);
-    \draw[arrow, dashed] (js) -- (config2);
-    \draw[arrow] (js) -- (logros);
+    \node[nodewide, right=2.8cm of pres] (srv) {Servidor\\juegoService.js,\\club.js, config.js,\\logros.js};
+    % Conexiones con codos
+    \draw[arrow] (sim.east) -- ++(0.6,0) |- node[near start, above, font=\tiny] {eventos} (pres.west);
+    \draw[arrow] (pres.east) -- ++(0.6,0) |- node[near start, above, font=\tiny] {api.js} (srv.west);
+    \draw[arrow, dashed] (sim.east) -- ++(1.4,0) |- node[near start, above, font=\tiny] {reglas} (srv.west);
 \end{tikzpicture}
 \caption{Arquitectura del juego: simulación pura (izquierda), presentación (centro), servidor (derecha).}
 \label{fig:juego-arquitectura}

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria-procesos"
-notas: 19
+notas: 18
 ---
 # memoria-procesos
 
@@ -28,7 +28,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto verificadas en fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas|Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)]]
@@ -37,4 +36,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[latex]] · [[fuentes]] · [[sprint]] · [[memoria]] · [[verificacion]] · [[saas]] · [[tfg]] · [[sprints]] · [[donetonic]] · [[datos]]
+[[scrum]] · [[grada-colchonera]] · [[latex]] · [[fuentes]] · [[sprint]] · [[memoria]] · [[saas]] · [[tfg]] · [[donetonic]] · [[verificacion]] · [[done]] · [[sprints]]

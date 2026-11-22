@@ -104,31 +104,31 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.6cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
     nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Columna izquierda: Frontend
-    \node[nodewide] (fe) {Frontend\\(navegador)\\Interfaz ui.js +\\cliente api.js\\Juego game/};
+    \node[nodewide] (fe) {Frontend\\(navegador)\\ui.js + api.js\\game/};
     % Columna central: Servidor (capas apiladas)
-    \node[nodewide, right=2.2cm of fe] (api) {Capa API\\(src/api)\\rutas, sesión,\\roles, logs, errores};
-    \node[node, below=1.1cm of api] (srv) {Lógica\\(src/services)\\usuarios, tokens,\\juego};
-    \node[node, below=1.1cm of srv] (repo) {Datos\\(src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=1.1cm of repo] (int) {Integraciones\\correo | Google};
+    \node[nodewide, right=2.5cm of fe] (api) {Capa API\\(src/api)\\rutas, sesión,\\roles, logs, errores};
+    \node[node, below=1.2cm of api] (srv) {Lógica\\(src/services)\\usuarios, tokens,\\juego};
+    \node[node, below=1.2cm of srv] (repo) {Datos\\(src/repositories)\\memoria | PostgreSQL};
+    \node[node, below=1.2cm of repo] (int) {Integraciones\\correo | Google};
     % Columna derecha: Reglas compartidas y servicios externos
-    \node[node, right=1.8cm of srv] (rules) {Reglas compartidas\\club.js, config.js,\\logros.js};
-    \node[node, right=1.8cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
+    \node[node, right=2.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js,\\logros.js};
+    \node[node, right=2.0cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
 
     % Flecha frontend -> API (con codo, etiqueta corta)
-    \draw[arrow] (fe.east) -- ++(0.4,0) |- node[near start, above, font=\tiny] {HTTP+JSON} (api.west);
+    \draw[arrow] (fe.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {HTTP+JSON} (api.west);
     % Flechas servidor (verticales, caja a caja)
     \draw[arrow] (api) -- (srv);
     \draw[arrow] (srv) -- (repo);
     \draw[arrow] (srv) -- (int);
-    \draw[arrow, dashed] (srv.east) -- ++(0.4,0) |- (rules.west);
+    \draw[arrow, dashed] (srv.east) -- ++(0.5,0) |- (rules.west);
     % Flechas a servicios externos (con codos, etiquetas cortas)
-    \draw[arrow] (repo.east) -- ++(0.4,0) |- node[near start, above, font=\tiny] {SQL} (ext.west);
-    \draw[arrow] (int.east) -- ++(0.4,0) |- node[near start, above, font=\tiny] {SMTP/OAuth} (ext.west);
+    \draw[arrow] (repo.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {SQL} (ext.west);
+    \draw[arrow] (int.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {SMTP/OAuth} (ext.west);
 \end{tikzpicture}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
 \label{fig:capas}
@@ -329,32 +329,32 @@ Esta sección muestra los diagramas de secuencia de los flujos principales. Todo
 \subsection{Registro con email y contraseña}
 \label{sec:flujo-registro}
 
-El registro recorre la cadena completa: la vista valida el email y la contraseña en el cliente, \path{api.js} envía el \texttt{POST} a la API, \path{userService} normaliza y valida, rechaza el email repetido con un 409 y crea la cuenta pendiente con la contraseña ya hasheada; después se firma el token HMAC (24 h) y el correo sale por SMTP. El recorrido está en la Figura~\ref{fig:sec-registro}.
+El registro recorre la cadena completa: la vista valida el email y la contraseña en el cliente, \path{api.js} envía el \texttt{POST} a la API, \path{userService} normaliza y valida, rechaza el email repetido con un 409 y crea la cuenta pendiente con la contraseña ya hasheada; después se firma el token HMAC (24 h) y el correo sale por SMTP. El registro recorre la cadena completa: la vista valida el email y la contraseña en el cliente, \path{api.js} envía el \texttt{POST} a la API, \path{userService} normaliza y valida, rechaza el email repetido con un 409 y crea la cuenta pendiente con la contraseña ya hasheada; después se firma el token HMAC (24 h) y el correo sale por SMTP.
 
 \begin{figure}[htbp]
 \centering
-\tiny
+\scriptsize
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[1.2]{fe}{Frontend}
-  \newinst[1.2]{a}{API}
-  \newinst[1.2]{s}{Servicio}
-  \newinst[1.2]{r}{Datos}
-  \newinst[1.2]{m}{Correo}
+  \newinst[1.5]{fe}{Frontend}
+  \newinst[1.5]{api}{API}
+  \newinst[1.5]{srv}{Servicio}
+  \newinst[1.5]{repo}{Datos}
+  \newinst[1.5]{mail}{Correo}
   \begin{call}{u}{escribe}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST register}{a}{201/409}
-    \begin{call}{a}{register}{s}{ok}
+  \begin{call}{fe}{POST register}{api}{201/409}
+    \begin{call}{api}{register}{srv}{ok}
     \end{call}
-    \begin{call}{s}{busca email}{r}{fila}
+    \begin{call}{srv}{busca email}{repo}{fila}
     \end{call}
     \begin{sdblock}{alt}{existe}
-      \mess{s}{409}{a}
+      \mess{srv}{409}{api}
     \end{sdblock}
     \begin{sdblock}{else}{nuevo}
-      \begin{call}{s}{hash + crea}{r}{ok}
+      \begin{call}{srv}{hash + crea}{repo}{ok}
       \end{call}
-      \begin{call}{s}{firma HMAC + envía}{m}{ok}
+      \begin{call}{srv}{firma HMAC + envía}{mail}{ok}
       \end{call}
     \end{sdblock}
   \end{call}
@@ -366,32 +366,32 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
 \subsection{Confirmación con el enlace del correo}
 \label{sec:flujo-confirmacion}
 
-Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la cuenta pasa a \texttt{active} y la interfaz muestra el aviso de confirmación; si está manipulado o caducado, redirige con aviso de error y la cuenta sigue pendiente. El flujo está en la Figura~\ref{fig:sec-confirmacion}.
+Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la cuenta pasa a \texttt{active} y la interfaz muestra el aviso de confirmación; si está manipulado o caducado, redirige con aviso de error y la cuenta sigue pendiente. Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la cuenta pasa a \texttt{active} y la interfaz muestra el aviso de confirmación; si está manipulado o caducado, redirige con aviso de error y la cuenta sigue pendiente.
 
 \begin{figure}[htbp]
 \centering
-\tiny
+\scriptsize
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[1.5]{a}{API}
-  \newinst[1.5]{t}{Token}
-  \newinst[1.5]{s}{Servicio}
-  \newinst[1.5]{w}{Vista}
-  \begin{call}{u}{abre enlace}{a}{ok}
+  \newinst[1.8]{api}{API}
+  \newinst[1.8]{tok}{Token}
+  \newinst[1.8]{srv}{Servicio}
+  \newinst[1.8]{ui}{Vista}
+  \begin{call}{u}{abre enlace}{api}{ok}
   \end{call}
-  \begin{call}{a}{verifica token}{t}{valido/nulo}
+  \begin{call}{api}{verifica token}{tok}{valido/nulo}
   \end{call}
   \begin{sdblock}{alt}{no valido}
-    \mess{a}{303 error}{u}
+    \mess{api}{303 error}{u}
   \end{sdblock}
   \begin{sdblock}{else}{valido}
-    \begin{call}{a}{activa cuenta}{s}{ok}
+    \begin{call}{api}{activa cuenta}{srv}{ok}
     \end{call}
-    \mess{a}{303 ok}{u}
+    \mess{api}{303 ok}{u}
   \end{sdblock}
-  \begin{call}{u}{carga web}{w}{ok}
+  \begin{call}{u}{carga web}{ui}{ok}
   \end{call}
-  \mess{w}{aviso}{u}
+  \mess{ui}{aviso}{u}
 \end{sequencediagram}
 \caption{Confirmación con el enlace del correo.}
 \label{fig:sec-confirmacion}
@@ -400,7 +400,7 @@ Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la c
 \subsection{Inicio de sesión local}
 \label{sec:flujo-login}
 
-En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta; si la cuenta está pendiente responde 403 con la opción de reenviar el correo, y si es correcta regenera la sesión y devuelve la cookie \texttt{grada.sid}. El flujo está en la Figura~\ref{fig:sec-login}.
+En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta; si la cuenta está pendiente responde 403 con la opción de reenviar el correo, y si es correcta regenera la sesión y devuelve la cookie \texttt{grada.sid}. En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta; si la cuenta está pendiente responde 403 con la opción de reenviar el correo, y si es correcta regenera la sesión y devuelve la cookie \texttt{grada.sid}.
 
 \begin{figure}[htbp]
 \centering
@@ -437,40 +437,40 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
 \subsection{Inicio de sesión con Google OAuth 2.0}
 \label{sec:flujo-google}
 
-El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a Google; en el callback lo compara y lo borra (un solo uso) antes de cambiar el código por el perfil en el servidor, y según el email exista, esté pendiente o no exista, activa o crea la cuenta y regenera la sesión. El flujo está en la Figura~\ref{fig:sec-google}.
+El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a Google; en el callback lo compara y lo borra (un solo uso) antes de cambiar el código por el perfil en el servidor, y según el email exista, esté pendiente o no exista, activa o crea la cuenta y regenera la sesión. El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a Google; en el callback lo compara y lo borra (un solo uso) antes de cambiar el código por el perfil en el servidor, y según el email exista, esté pendiente o no exista, activa o crea la cuenta y regenera la sesión.
 
 \begin{figure}[htbp]
 \centering
-\tiny
+\scriptsize
 \begin{sequencediagram}
   \newthread{u}{Navegador}
-  \newinst[1.2]{a}{API}
-  \newinst[1.2]{ss}{Sesión}
-  \newinst[1.2]{g}{Google}
-  \newinst[1.2]{s}{Servicio}
-  \begin{call}{u}{GET google}{a}{303}
+  \newinst[1.5]{api}{API}
+  \newinst[1.5]{ses}{Sesión}
+  \newinst[1.5]{goo}{Google}
+  \newinst[1.5]{srv}{Servicio}
+  \begin{call}{u}{GET google}{api}{303}
   \end{call}
-  \begin{call}{a}{guarda state}{ss}{ok}
+  \begin{call}{api}{guarda state}{ses}{ok}
   \end{call}
-  \mess{a}{redirige}{u}
-  \begin{call}{u}{acepta}{g}{302}
+  \mess{api}{redirige}{u}
+  \begin{call}{u}{acepta}{goo}{302}
   \end{call}
-  \mess{g}{callback}{u}
-  \begin{call}{u}{GET callback}{a}{ok}
+  \mess{goo}{callback}{u}
+  \begin{call}{u}{GET callback}{api}{ok}
   \end{call}
-  \begin{call}{a}{compara state}{ss}{ok}
+  \begin{call}{api}{compara state}{ses}{ok}
   \end{call}
   \begin{sdblock}{alt}{state falso}
-    \mess{a}{303 error}{u}
+    \mess{api}{303 error}{u}
   \end{sdblock}
   \begin{sdblock}{else}{state ok}
-    \begin{call}{a}{cambia code}{g}{email}
+    \begin{call}{api}{cambia code}{goo}{email}
     \end{call}
-    \begin{call}{a}{login OAuth}{s}{usuario}
+    \begin{call}{api}{login OAuth}{srv}{usuario}
     \end{call}
-    \begin{call}{a}{regenera sesión}{ss}{ok}
+    \begin{call}{api}{regenera sesión}{ses}{ok}
     \end{call}
-    \mess{a}{303 a jugar}{u}
+    \mess{api}{303 a jugar}{u}
   \end{sdblock}
 \end{sequencediagram}
 \caption{Inicio de sesión con Google OAuth 2.0.}
@@ -480,33 +480,33 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
 \subsection{Darse de baja}
 \label{sec:flujo-baja}
 
-La baja pasa por un diálogo de confirmación accesible y llega al servidor protegida con \texttt{requireSelfOrRole('admin')}: se impide eliminar al último administrador, la cuenta queda como \texttt{deleted}, suelta el mote y el email, y su sesión deja de valer en la siguiente petición. El flujo está en la Figura~\ref{fig:sec-baja}.
+La baja pasa por un diálogo de confirmación accesible y llega al servidor protegida con \texttt{requireSelfOrRole('admin')}: se impide eliminar al último administrador, la cuenta queda como \texttt{deleted}, suelta el mote y el email, y su sesión deja de valer en la siguiente petición. La baja pasa por un diálogo de confirmación accesible y llega al servidor protegida con \texttt{requireSelfOrRole('admin')}: se impide eliminar al último administrador, la cuenta queda como \texttt{deleted}, suelta el mote y el email, y su sesión deja de valer en la siguiente petición.
 
 \begin{figure}[htbp]
 \centering
-\tiny
+\scriptsize
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[1.5]{v}{Vista}
-  \newinst[1.5]{d}{Diálogo}
-  \newinst[1.5]{a}{API}
-  \newinst[1.5]{s}{Servicio}
-  \begin{call}{u}{pide baja}{v}{ok}
+  \newinst[1.8]{vis}{Vista}
+  \newinst[1.8]{dlg}{Diálogo}
+  \newinst[1.8]{api}{API}
+  \newinst[1.8]{srv}{Servicio}
+  \begin{call}{u}{pide baja}{vis}{ok}
   \end{call}
-  \begin{call}{v}{confirma}{d}{ok}
+  \begin{call}{vis}{confirma}{dlg}{ok}
   \end{call}
-  \begin{call}{d}{DELETE}{a}{204}
+  \begin{call}{dlg}{DELETE}{api}{204}
   \end{call}
-  \begin{call}{a}{deleteUser}{s}{ok}
+  \begin{call}{api}{deleteUser}{srv}{ok}
   \end{call}
   \begin{sdblock}{alt}{último admin}
-    \mess{s}{403}{a}
+    \mess{srv}{403}{api}
   \end{sdblock}
   \begin{sdblock}{else}{baja}
-    \mess{s}{deleted}{a}
-    \mess{a}{204}{v}
+    \mess{srv}{deleted}{api}
+    \mess{api}{204}{vis}
   \end{sdblock}
-  \mess{v}{aviso}{u}
+  \mess{vis}{aviso}{u}
 \end{sequencediagram}
 \caption{Darse de baja.}
 \label{fig:sec-baja}
@@ -566,7 +566,7 @@ Esta sección describe el uso de la aplicación SaaS (cuentas, administración, 
 
 \subsection{Inicio y registro}
 
-Al acceder a la aplicación sin sesión iniciada, el usuario encuentra la página de inicio (Figura~\ref{fig:app-inicio}), que presenta dos accesos directos: «Crear cuenta para jugar» y «Ya tengo cuenta», junto con una breve explicación de cómo se juega y el estado del servidor (Figura~\ref{fig:app-inicio-registro}). Si elige registrarse, el formulario valida el email y la contraseña en cliente (mínimo 8 caracteres) y muestra los errores en línea asociados a cada campo mediante \texttt{aria-describedby} (Figura~\ref{fig:app-registro}). Al enviar el formulario, el servidor comprueba que el email no esté ya registrado entre las cuentas activas; si lo está, devuelve un 409 y la interfaz muestra el error sin recargar la página. Si el registro es correcto, la cuenta queda en estado \texttt{pending} y se envía el correo de confirmación; la interfaz muestra el aviso «Te hemos enviado un correo de confirmación» y lleva al usuario a la pantalla de entrar.
+Al acceder a la aplicación sin sesión iniciada, el usuario encuentra la página de inicio, que presenta dos accesos directos: «Crear cuenta para jugar» y «Ya tengo cuenta», junto con una breve explicación de cómo se juega y el estado del servidor (Figura~\ref{fig:app-inicio-registro}, subfigura~\ref{fig:app-inicio}). Si elige registrarse, el formulario valida el email y la contraseña en cliente (mínimo 8 caracteres) y muestra los errores en línea asociados a cada campo mediante \texttt{aria-describedby} (subfigura~\ref{fig:app-registro}). Al enviar el formulario, el servidor comprueba que el email no esté ya registrado entre las cuentas activas; si lo está, devuelve un 409 y la interfaz muestra el error sin recargar la página. Si el registro es correcto, la cuenta queda en estado \texttt{pending} y se envía el correo de confirmación; la interfaz muestra el aviso «Te hemos enviado un correo de confirmación» y lleva al usuario a la pantalla de entrar.
 
 \begin{figure}[htbp]
 \centering
@@ -587,7 +587,7 @@ Al acceder a la aplicación sin sesión iniciada, el usuario encuentra la págin
 \label{fig:app-inicio-registro}
 \end{figure}
 
-En la pantalla de entrar, el mensaje de error es idéntico tanto si el email no existe como si la contraseña es incorrecta («Email o contraseña incorrectos»), evitando así la enumeración de cuentas (subfigura~\ref{fig:app-entrar} de la Figura~\ref{fig:app-errores-acceso}). Si la cuenta está pendiente de confirmación, el servidor responde 403 \texttt{ACCOUNT\_PENDING} y la vista muestra el botón «Reenviar el correo de confirmación», que vuelve a enviar el enlace sin revelar si la cuenta existe (respuesta 202 en ambos casos).
+En la pantalla de entrar, el mensaje de error es idéntico tanto si el email no existe como si la contraseña es incorrecta («Email o contraseña incorrectos»), evitando así la enumeración de cuentas (Figura~\ref{fig:app-errores-acceso}, subfigura~\ref{fig:app-entrar}). Si la cuenta está pendiente de confirmación, el servidor responde 403 \texttt{ACCOUNT\_PENDING} y la vista muestra el botón «Reenviar el correo de confirmación», que vuelve a enviar el enlace sin revelar si la cuenta existe (respuesta 202 en ambos casos). Un usuario normal que intente acceder a \texttt{\#/admin} es redirigido a Mi cuenta con un aviso, mientras la API responde 403 \texttt{FORBIDDEN} (subfigura~\ref{fig:app-sin-permiso}).
 
 \begin{figure}[htbp]
 \centering
@@ -610,7 +610,7 @@ En la pantalla de entrar, el mensaje de error es idéntico tanto si el email no 
 
 \subsection{Perfil y administración}
 
-Una vez dentro, el usuario accede a «Mi cuenta» (subfigura~\ref{fig:app-perfil} de la Figura~\ref{fig:app-perfil-baja}), donde ve su mote, avatar, email, rol (\texttt{Aficionado} o \texttt{Administrador}), estado (\texttt{Activa}), fecha de alta y dos acciones: cerrar sesión y darse de baja. La baja requiere confirmación en un diálogo accesible (\texttt{<dialog>}) que devuelve el foco al botón de origen al cancelar (subfigura~\ref{fig:app-baja}); al confirmar, el servidor marca la cuenta como \texttt{deleted}, suelta el mote y el email (índice único parcial) e invalida la sesión, de modo que la siguiente petición la rechaza con 401.
+Una vez dentro, el usuario accede a «Mi cuenta» (Figura~\ref{fig:app-perfil-baja}, subfigura~\ref{fig:app-perfil}), donde ve su mote, avatar, email, rol (\texttt{Aficionado} o \texttt{Administrador}), estado (\texttt{Activa}), fecha de alta y dos acciones: cerrar sesión y darse de baja. La baja requiere confirmación en un diálogo accesible (\texttt{<dialog>}) que devuelve el foco al botón de origen al cancelar (subfigura~\ref{fig:app-baja}); al confirmar, el servidor marca la cuenta como \texttt{deleted}, suelta el mote y el email (índice único parcial) e invalida la sesión, de modo que la siguiente petición la rechaza con 401.
 
 \begin{figure}[htbp]
 \centering
@@ -631,9 +631,7 @@ Una vez dentro, el usuario accede a «Mi cuenta» (subfigura~\ref{fig:app-perfil
 \label{fig:app-perfil-baja}
 \end{figure}
 
-Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la interfaz lo redirige a Mi cuenta con un aviso, pero la protección real está en el servidor: la API responde 403 \texttt{FORBIDDEN} (subfigura~\ref{fig:app-sin-permiso} de la Figura~\ref{fig:app-errores-acceso}). El panel de administración muestra contadores totales, un buscador por email y una tabla con email, rol, estado, fecha de alta y acciones (cambiar rol, ver si está activo, eliminar); la vista completa está en la Figura~\ref{fig:app-admin-full} y el detalle de la tabla en la subfigura~\ref{fig:app-admin}. La búsqueda filtra en cliente (subfigura~\ref{fig:app-admin-busqueda}) y muestra estado vacío con botón «Limpiar búsqueda» si no hay coincidencias (subfigura~\ref{fig:app-admin-vacio}). En móvil, la tabla se convierte en tarjetas (subfigura~\ref{fig:app-admin-movil}) y el menú se pliega (subfigura~\ref{fig:app-perfil-movil}); el conjunto se recoge en la Figura~\ref{fig:app-responsive}. Las rutas inexistentes muestran la página «Fuera de juego» (subfigura~\ref{fig:app-404} de la Figura~\ref{fig:app-estados-especiales}).
-
-% La captura 06-usuario-sin-permiso se agrupó con la de entrar en la Figura~\ref{fig:app-errores-acceso} (cada imagen aparece una sola vez).
+El panel de administración muestra contadores totales, un buscador por email y una tabla con email, rol, estado, fecha de alta y acciones (cambiar rol, ver si está activo, eliminar) (Figura~\ref{fig:app-admin-full}, subfigura~\ref{fig:app-admin}). La búsqueda filtra en cliente (subfigura~\ref{fig:app-admin-busqueda}) y muestra estado vacío con botón «Limpiar búsqueda» si no hay coincidencias (Figura~\ref{fig:app-estados-especiales}, subfigura~\ref{fig:app-admin-vacio}). En móvil, la tabla se convierte en tarjetas (Figura~\ref{fig:app-responsive}, subfigura~\ref{fig:app-admin-movil}) y el menú se pliega (subfigura~\ref{fig:app-perfil-movil}). Las rutas inexistentes muestran la página «Fuera de juego» (subfigura~\ref{fig:app-404}).
 
 \begin{figure}[htbp]
 \centering
@@ -694,7 +692,7 @@ Si un usuario sin rol de administrador intenta acceder a \texttt{\#/admin}, la i
 
 \subsection{Hito 4: correo y Google}
 
-El Hito 4 añade la confirmación por correo y el inicio de sesión con Google. En la pantalla de entrar aparece el botón «Entrar con Google» (subfigura~\ref{fig:hito4-google}), que inicia el flujo OAuth 2.0 con \texttt{state} anti-CSRF guardado en la sesión. Al registrarse con email y contraseña, la cuenta queda \texttt{pending} y se muestra el aviso «Te hemos enviado un correo de confirmación» (subfigura~\ref{fig:hito4-correo}). Si el usuario intenta entrar antes de confirmar, recibe el error «Debes confirmar tu correo» con el botón «Reenviar el correo de confirmación» (subfigura~\ref{fig:hito4-pendiente}); el reenvío responde 202 sin revelar si la cuenta existe. Un enlace manipulado o caducado muestra un aviso rojo y la cuenta sigue pendiente (subfigura~\ref{fig:hito4-enlace-invalido}). La Figura~\ref{fig:hito4-flujo} recoge este recorrido, desde el acceso con Google hasta el aviso de enlace no válido.
+El Hito 4 añade la confirmación por correo y el inicio de sesión con Google. En la pantalla de entrar aparece el botón «Entrar con Google» (subfigura~\ref{fig:hito4-google}), que inicia el flujo OAuth 2.0 con \texttt{state} anti-CSRF guardado en la sesión. Al registrarse con email y contraseña, la cuenta queda \texttt{pending} y se muestra el aviso «Te hemos enviado un correo de confirmación» (subfigura~\ref{fig:hito4-correo}). Si el usuario intenta entrar antes de confirmar, recibe el error «Debes confirmar tu correo» con el botón «Reenviar el correo de confirmación» (subfigura~\ref{fig:hito4-pendiente}); el reenvío responde 202 sin revelar si la cuenta existe. Un enlace manipulado o caducado muestra un aviso rojo y la cuenta sigue pendiente (subfigura~\ref{fig:hito4-enlace-invalido}). Este recorrido, desde el acceso con Google hasta el aviso de enlace no válido, se ve en la Figura~\ref{fig:hito4-flujo}.
 
 \begin{figure}[htbp]
 \centering

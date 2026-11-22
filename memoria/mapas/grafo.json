@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T22:15:20+01:00",
+ "generado": "2026-11-22T22:57:08+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1534,17 +1534,11 @@
   {
    "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "tipo": "dato",
-   "titulo": "Cifras clave del proyecto verificadas en fuentes",
+   "titulo": "Cifras clave del proyecto contrastadas con fuentes",
    "temas": [
-    "datos",
-    "fechas",
-    "memoria-procesos",
-    "metricas",
-    "pbis",
-    "pruebas",
-    "sprints",
-    "tareas",
-    "verificacion"
+    "memoria",
+    "métricas",
+    "trazabilidad"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5441,7 +5435,7 @@
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 65,
+   "peso": 66,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -5539,7 +5533,7 @@
    "id": "tema:datos",
    "tipo": "tema",
    "titulo": "datos",
-   "peso": 6,
+   "peso": 5,
    "ruta": "memoria/temas/datos.md"
   },
   {
@@ -5588,14 +5582,14 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 20,
+   "peso": 19,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 12,
+   "peso": 11,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -5812,7 +5806,7 @@
    "id": "tema:métricas",
    "tipo": "tema",
    "titulo": "métricas",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/métricas.md"
   },
   {
@@ -5952,7 +5946,7 @@
    "id": "tema:pruebas",
    "tipo": "tema",
    "titulo": "pruebas",
-   "peso": 3,
+   "peso": 2,
    "ruta": "memoria/temas/pruebas.md"
   },
   {
@@ -6197,7 +6191,7 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 15,
+   "peso": 16,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -6264,46 +6258,18 @@
    "ruta": "memoria/temas/data.md"
   },
   {
-   "id": "tema:fechas",
-   "tipo": "tema",
-   "titulo": "fechas",
-   "peso": 4,
-   "ruta": "memoria/temas/fechas.md"
-  },
-  {
-   "id": "tema:memoria-procesos",
-   "tipo": "tema",
-   "titulo": "memoria-procesos",
-   "peso": 19,
-   "ruta": "memoria/temas/memoria-procesos.md"
-  },
-  {
-   "id": "tema:pbis",
-   "tipo": "tema",
-   "titulo": "pbis",
-   "peso": 4,
-   "ruta": "memoria/temas/pbis.md"
-  },
-  {
-   "id": "tema:sprints",
-   "tipo": "tema",
-   "titulo": "sprints",
-   "peso": 7,
-   "ruta": "memoria/temas/sprints.md"
-  },
-  {
-   "id": "tema:tareas",
-   "tipo": "tema",
-   "titulo": "tareas",
-   "peso": 6,
-   "ruta": "memoria/temas/tareas.md"
-  },
-  {
    "id": "tema:prueba",
    "tipo": "tema",
    "titulo": "prueba",
    "peso": 1,
    "ruta": "memoria/temas/prueba.md"
+  },
+  {
+   "id": "tema:sprints",
+   "tipo": "tema",
+   "titulo": "sprints",
+   "peso": 6,
+   "ruta": "memoria/temas/sprints.md"
   },
   {
    "id": "tema:calidad",
@@ -6355,6 +6321,13 @@
    "ruta": "memoria/temas/verificar.md"
   },
   {
+   "id": "tema:memoria-procesos",
+   "tipo": "tema",
+   "titulo": "memoria-procesos",
+   "peso": 18,
+   "ruta": "memoria/temas/memoria-procesos.md"
+  },
+  {
    "id": "tema:arma",
    "tipo": "tema",
    "titulo": "arma",
@@ -6397,11 +6370,32 @@
    "ruta": "memoria/temas/fases.md"
   },
   {
+   "id": "tema:fechas",
+   "tipo": "tema",
+   "titulo": "fechas",
+   "peso": 3,
+   "ruta": "memoria/temas/fechas.md"
+  },
+  {
+   "id": "tema:tareas",
+   "tipo": "tema",
+   "titulo": "tareas",
+   "peso": 5,
+   "ruta": "memoria/temas/tareas.md"
+  },
+  {
    "id": "tema:hito",
    "tipo": "tema",
    "titulo": "hito",
    "peso": 1,
    "ruta": "memoria/temas/hito.md"
+  },
+  {
+   "id": "tema:pbis",
+   "tipo": "tema",
+   "titulo": "pbis",
+   "peso": 3,
+   "ruta": "memoria/temas/pbis.md"
   },
   {
    "id": "tema:sprint1",
@@ -11272,73 +11266,23 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:datos",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:fechas",
+   "a": "tema:métricas",
    "tipo": "trata"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:memoria-procesos",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:metricas",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:pbis",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:pruebas",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:sprints",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:tareas",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:verificacion",
+   "a": "tema:trazabilidad",
    "tipo": "trata"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "dato:metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
-   "tipo": "enlaza"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",

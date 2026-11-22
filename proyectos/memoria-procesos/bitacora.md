@@ -14037,3 +14037,68 @@ Lo que dejo como tareas: validar los 5 diagramas no revisados, revisión visual 
 - Verificar mínimos de capturas por carpeta: app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+.
 - Confirmar que el anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
 - Sustituir referencias a figuras de DoneTonic/producción en cap:descripcion por `\ref` a las figuras únicas en cap:propuesta y cap:evaluacion respectivamente.
+
+## 2026-11-22 22:53 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los 6 diagramas que violan las reglas 16-18 de Javier (flechas cruzando texto, letras <7.5pt) replanteándolos (no escalándolos): reducir participantes a ≤6, acortar etiquetas, aumentar separación, usar `\scriptsize` y codos en flechas. También eliminaré las cadenas "La figura X muestra..." integrando las capturas en prosa, y dejaré cada imagen DoneTonic/producción en un solo sitio (cap:propuesta y cap:evaluacion) con `\ref` en el resto. Empiezo por `chapters/04-descripcion.tex` que tiene 5 de los 6 diagramas problemáticos.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\subsection{Hito 4: correo y Google}
+
+El Hito 4 añade la con») chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 1 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ahora debo revisar `chapters/04b-juego.tex` (sección "Cómo se juega") y `chapters/04-descripcion.tex` (sección "La aplicación") para eliminar cualquier resto de cadenas "La figura X muestra..." y asegurar que las capturas estén integradas en prosa con subfiguras. También verificar que las imágenes DoneTonic y producción solo aparecen una vez (en cap:propuesta y cap:evaluacion respectivamente) y en el resto se usa `\ref`. Luego ejecutar `comando_prueba` para validar.
+
+## 2026-11-22 22:57 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Overfull hbox 10.01pt en a4-trazabilidad.tex línea 23: "T1--T82" sin \allowbreak → corregido añadiendo \allowbreak
+- fig:sec-registro 54pt más ancho que \textwidth: diagrama de secuencia con 6 participantes y etiquetas largas; necesita replanteo (menos participantes, etiquetas en dos líneas, más separación)
+- 6 diagramas violan reglas 16-18 (flechas cruzando texto/cajas, fuentes <7.5pt): fig:capas (p28), fig:sec-registro (p34, 6.0pt), fig:sec-confirmacion (p35, 6.0pt), fig:sec-baja (p39, 6.0pt), fig:juego-arquitectura (p53), fig:pipeline (p63, palabras partidas "Ar-")
+- 5 diagramas no revisados por Gemini (error 404 modelo): fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2
+- Cadenas "La figura X muestra..." aún presentes en cap:descripcion y cap:juego (ej. "El recorrido está en la Figura~\ref{fig:sec-registro}", "La Figura~\ref{fig:juego-menu-vestuario} ilustra...")
+- Imágenes repetidas: capturas DoneTonic (tablero S1, gráficas S1, backlog) en cap:propuesta Y anx:desarrollo; capturas producción (correo, actions, google) en cap:evaluacion Y referenciadas desde cap:descripcion
+- Resumen: 183 palabras (≥150 ✓), dos sprints, juego, club, logros, música ✓
+- Abstract: 156 palabras (≥120 ✓), mismo contenido en inglés ✓
+- Anexo desarrollo: dos sprints mismo esquema, explica recta Sprint 2 ✓
+- Anexo trazabilidad: 82 tareas (T1-T82) con requisito→PBI→tarea→PR ✓
+- Cifras contrastadas: 19 PBIs S1, 29 PBIs S2, 32+50=82 tareas, 276 pruebas (322 tras Fase 7), 5 migraciones, 23 endpoints, ~14.8k líneas juego, 36 jugadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 rivales, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones, URL Cloud Run, repo GitHub, fechas sprints, P19 cambio alcance, D-19 backlog S2 registrado al cierre
+
+Qué está bien: La estructura general compila, verificar.py pasa (35 fig, 29 tab, 16935 palabras), la portada única está implementada, Resumen/Abstract cumplen mínimos, anexos tienen el contenido requerido, trazabilidad completa 82 tareas, datos numéricos contrastados con fuentes.
+
+Qué está mal: 
+1. **Diagramas siguen violando reglas 16-18** pese a intentos: flechas/linneas cruzan texto de cajas/etiquetas en 6 diagramas, y 4 diagramas de secuencia tienen letras de 6.0pt (mínimo 7.5pt) por haber sido escalados con \tiny/\resizebox en lugar de replantearlos.
+2. **Overfull hbox residual 10pt** en la tabla de trazabilidad (columna Descripción con "T1--T82" sin \allowbreak).
+3. **5 diagramas no revisados** por Gemini (error 404 modelo) pero deben validarse igual.
+4. **Cadenas "La figura X muestra..."** aún presentes en varios capítulos.
+5. **Imágenes repetidas**: capturas de DoneTonic/producción aparecen en múltiples capítulos.
+
+Lo que corrijo yo: 
+- Arreglo overfull hbox en a4-trazabilidad añadiendo \allowbreak en "T1--T82".
+- Elimino cadenas "La figura X muestra..." integrando capturas en prosa en cap:descripcion y cap:juego.
+- Dejo cada captura DoneTonic/producción en un solo sitio (cap:propuesta y cap:evaluacion respectivamente) y pongo \ref en el resto.
+- Arreglo partición silábica en fig:pipeline ("Ar-" → \mbox{Artifact} o salto manual).
+
+Lo que dejo como tareas: replantear 6 diagramas problemáticos (reduciendo participantes, acortando etiquetas, aumentando separación, usando codos en flechas, tamaño ≥\scriptsize), validar los 5 diagramas no revisados, revisión visual PDF página a página, confirmar mínimos de capturas por carpeta.
+
+**Correcciones del revisor:** `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «La Figura~\ref{fig:juego-menu-vestuario} ilustra el menú pri») chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(no aplicado: no encuentro el texto: «La captura de GitHub Actions en verde (Figura~\ref{fig:actio») chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Tareas para el constructor:**
+- Replantear 6 diagramas que violan reglas 16-18 (fig:capas, fig:sec-registro, fig:sec-confirmacion, fig:sec-baja, fig:juego-arquitectura, fig:pipeline): reducir participantes a ≤6, acortar etiquetas (máx. 2 líneas), aumentar separación entre cajas (node distance ≥1.5cm), usar codos en flechas (|-/-|), fuente ≥\scriptsize (8pt+), sin escalar con resizebox/adjustbox.
+- Validar los 5 diagramas no revisados por Gemini (fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) ejecutando revisar_umlsd.py y revisión visual.
+- Ejecutar comando_prueba para confirmar compilación sin overfull hbox, verificar.py OK y revisar_maquetacion.py OK.
+- Revisión visual obligatoria del PDF página a página: sin páginas con una sola imagen (regla 8), sin secciones de 1-2 líneas (regla 9), sin figuras repetidas (regla 10), flechas son $\rightarrow$ (regla 11), diagramas legibles a tamaño real (regla 16).
+- Verificar mínimos de capturas por carpeta: app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+.
+- Confirmar que anexo desarrollo (a1-desarrollo.tex) tiene dos secciones de sprint con mismo esquema y explica recta Sprint 2.
+- Sustituir referencias a figuras DoneTonic/producción en cap:descripcion por \ref a figuras únicas en cap:propuesta y cap:evaluacion.
+
+## 2026-11-22 22:57 · 🧠 Conocimiento guardado
+
+[[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
