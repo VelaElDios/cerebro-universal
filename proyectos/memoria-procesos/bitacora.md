@@ -13911,3 +13911,71 @@ Cómo se arreglan (sin volver a escalarlos):
 - **fig:capas** y **fig:sec-google** (unos 35 pt): basta con cajas o participantes algo más juntos y etiquetas más cortas o en dos líneas.
 
 Ahora `verificar.py` dice en cada desborde si es un diagrama, una tabla o texto, y cuál es. Además, la prueba ejecuta siempre los tres comprobadores (verificar, maquetación y figuras), aunque falle el primero, así que veréis a la vez los fallos de dibujo de los demás diagramas: confirmación, login, google, baja, juego-arquitectura, partida, contratar y pipeline. Hay que arreglarlos todos (reglas 16-18). Quedan 40 pasos.
+
+## 2026-11-22 21:31 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los tres diagramas que causan overfull hbox (fig:capas, fig:sec-registro, fig:sec-google) en chapters/04-descripcion.tex. El revisor confirmó que son diagramas TikZ/sequencediagram, no tablas, y deben estrecharse sin escalar: reduciendo separación entre participantes, acortando etiquetas y usando tamaños de fuente menores.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 1 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox en los tres diagramas corregidos y que `verificar.py` queda en verde. Si pasa, ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py` para validar el resto de reglas.
+
+## 2026-11-22 21:34 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 19 PBIs (P1–P19), 32 tareas (T1–T32), fechas 29/09–27/10/2026 → sprint-1.md §Backlog y estado
+- Sprint 2: 29 PBIs (P20–P48), 50 tareas (T33–T82), fechas 23/10–29/10/2026 → sprint-2.md §Backlog y estado
+- Total tareas: 32 + 50 = 82 → sprint-1.md + sprint-2.md
+- Pruebas: 276 en main al cierre Sprint 2, 322 tras Fase 7 → procesos.md §Pruebas por fichero, sprint-2.md §Métricas
+- RF-01 a RF-13, RJ-01 a RJ-20, RNF-01 a RNF-12 → requisitos.md §Requisitos funcionales Sprint 1, §Requisitos funcionales juego, §Requisitos no funcionales
+- Arquitectura en capas: presentación, cliente API, API, lógica, datos, integraciones → arquitectura.md §Vista general, Tabla capas
+- Modelo de datos: users, session, juego_perfiles, juego_records con claves y restricciones → arquitectura.md §Modelo de datos
+- Seguridad: bcrypt coste 10, cookie httpOnly/secure/sameSite, HMAC tokens 24h, OAuth state, consultas parametrizadas, XSS con textContent → arquitectura.md §Seguridad
+- Juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 rivales, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → juego.md §Sistemas, sprint-2.md §Métricas
+- Fase 7: muñecos chibi 32×32 sin piernas, mapa detallado, menú rediseñado, 5 habilidades, 2 pasivas, 5 combinaciones → juego.md §Evolución por fases, log.md 2026-11-02
+- CI/CD: GitHub Actions (PostgreSQL 17 + Docker), Cloud Run con WIF y Secret Manager, Render alternativo → procesos.md §Integración y despliegue continuos
+- DoneTonic: workspace TFG, equipo Colchoneros, tableros y gráficas → procesos.md §Scrum con DoneTonic
+- GitHub Flow: Sprint 1 rama por tarea → rama hito; Sprint 1 PR por fase → main → CONTRIBUTING.md, procesos.md §GitHub Flow
+- Despliegue URL: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app → múltiples fuentes
+- Repositorio: https://github.com/VelaElDios/la-grada-colchonera-saas → múltiples fuentes
+- Admin inicial: variables ADMIN_EMAIL/ADMIN_PASSWORD en bootstrap → arquitectura.md §Arranque, procesos.md §Variables
+- Baja lógica: status=deleted, email libre índice parcial migración 005 → arquitectura.md §Estados, log.md 2026-10-29
+- Concurrencia optimista: version en juego_perfiles, reintentos → arquitectura.md §Servidor juego, decisiones.md D-12
+- Simulación determinista: paso fijo 1/60s, semilla → arquitectura.md §Arquitectura juego, decisiones.md D-13
+- Gráficos/sonido por código: sin assets externos → decisiones.md D-14
+- Cambio alcance Sprint 1: P19 Cloud Run añadido a mitad → decisiones.md D-16, sprint-1.md §Cambio de alcance
+- Sprint 2 backlog registrado al cierre (29/10) → decisiones.md D-19, sprint-2.md §Evolución
+- Prueba técnica: 13 tests domainPolicy, endpoint POST /api/prueba/dominio → procesos.md §Pruebas, arquitectura.md §Prueba técnica
+- Migraciones SQL: 5 (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre) → arquitectura.md §Módulos backend
+- Endpoints API: 23 → sprint-2.md §Métricas
+- Código juego: ~14.800 líneas, 35 módulos → sprint-2.md §Métricas
+- Overfull hbox en fig:sec-registro (54pt) confirmado por verificar.py → salida de prueba actual
+- Diagramas con flechas sobre texto: fig:capas, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:sec-partida, fig:sec-contratar, fig:pipeline → revisar_maquetacion.py salida actual
+- Palabras partidas en cajas: fig:juego-arquitectura ("render-"), fig:pipeline ("Ar-") → revisar_maquetacion.py salida actual
+
+Qué está bien: La estructura de la memoria sigue la plantilla oficial, todos los datos numéricos y hechos contrastados coinciden con las fuentes (30+ verificaciones arriba), la portada única ya está implementada (elements/preambulo.tex sin segunda portada), y el contenido de capítulos y anexos cubre todo lo pedido en el spec.
+
+Qué está mal: 
+1. **fig:sec-registro** sigue 54pt más ancho que la página (overfull hbox) pese al intento de corrección del constructor.
+2. **9 diagramas** incumplen reglas 16-18 de Javier: flechas/linneas que cruzan texto de cajas/etiquetas (fig:capas, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:sec-partida, fig:sec-contratar) y palabras partidas con guion dentro de cajas (fig:juego-arquitectura "render-", fig:pipeline "Ar-").
+3. El constructor solo tocó 3 diagramas en chapters/04-descripcion.tex; quedan pendientes los de chapters/04b-juego.tex y chapters/05-evaluacion.tex.
+
+Lo que corrijo yo: En chapters/04-descripcion.tex, estrecho **fig:sec-registro** reduciendo separación entre participantes (1.5→1.0cm), acortando todas las etiquetas de mensajes a 2-3 palabras, y usando \tiny. También corrijo **fig:sec-confirmacion**, **fig:sec-google**, **fig:sec-baja** mismo criterio. En **fig:capas** (TikZ), aumento distancia vertical entre nodos (0.9→1.1cm), acorto textos de nodos y uso codos en flechas para no cruzar textos. En chapters/04b-juego.tex, corrijo **fig:juego-arquitectura** (TikZ): aumento text width de nodos, evito particiones con \mbox{}, uso saltos de línea manuales \\, y separo más las columnas. Corrijo **fig:sec-partida** y **fig:sec-contratar** (sequencediagram): menos participantes, etiquetas cortas, spacing 1.0cm, \tiny.
+
+**Correcciones del revisor:** `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox y que `verificar.py` queda en verde.
+- Si pasa, ejecutar `revisar_maquetacion.py` para validar reglas de maquetación de Javier (páginas con una sola imagen, secciones cortas, figuras repetidas, diagramas reglas 16-18).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin caracteres prohibidos en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos).
+- Revisión visual obligatoria del PDF página a página.
+- Verificar que no quedan figuras repetidas y que todas las capturas mínimas por carpeta están presentes (app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+).
+- Confirmar que el anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.

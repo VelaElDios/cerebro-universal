@@ -104,31 +104,31 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.6cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.9cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.9cm, font=\scriptsize, inner sep=3pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=0.9cm, font=\scriptsize, inner sep=3pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Columna izquierda: Frontend
     \node[nodewide] (fe) {Frontend\\(navegador)\\Interfaz ui.js +\\cliente api.js\\Juego game/\\(canvas, Web Audio)};
     % Columna central: Servidor (capas apiladas)
-    \node[nodewide, right=2.6cm of fe] (api) {Capa API\\(src/api)\\rutas, sesión,\\roles, logs, errores};
-    \node[node, below=1.1cm of api] (srv) {Lógica\\(src/services)\\usuarios, tokens,\\juego};
-    \node[node, below=1.1cm of srv] (repo) {Datos\\(src/repositories)\\memoria |\\PostgreSQL};
-    \node[node, below=1.1cm of repo] (int) {Integraciones\\correo | Google};
+    \node[nodewide, right=2.0cm of fe] (api) {Capa API\\(src/api)\\rutas, sesión,\\roles, logs, errores};
+    \node[node, below=0.9cm of api] (srv) {Lógica\\(src/services)\\usuarios, tokens,\\juego};
+    \node[node, below=0.9cm of srv] (repo) {Datos\\(src/repositories)\\memoria |\\PostgreSQL};
+    \node[node, below=0.9cm of repo] (int) {Integraciones\\correo | Google};
     % Columna derecha: Reglas compartidas y servicios externos
-    \node[node, right=2.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js,\\logros.js};
-    \node[node, right=2.0cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
+    \node[node, right=1.5cm of srv] (rules) {Reglas compartidas\\club.js, config.js,\\logros.js};
+    \node[node, right=1.5cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
 
     % Flecha frontend -> API (con codo, etiqueta corta)
-    \draw[arrow] (fe.east) -- ++(0.7,0) |- node[near start, above, font=\scriptsize] {HTTP+JSON} (api.west);
+    \draw[arrow] (fe.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {HTTP+JSON} (api.west);
     % Flechas servidor (verticales, caja a caja)
     \draw[arrow] (api) -- (srv);
     \draw[arrow] (srv) -- (repo);
     \draw[arrow] (srv) -- (int);
     \draw[arrow, dashed] (srv.east) -- (rules.west);
     % Flechas a servicios externos (con codos, etiquetas cortas)
-    \draw[arrow] (repo.east) -- ++(0.7,0) |- node[near start, above, font=\scriptsize] {SQL} (ext.west);
-    \draw[arrow] (int.east) -- ++(0.7,0) |- node[near start, above, font=\scriptsize] {SMTP/OAuth} (ext.west);
+    \draw[arrow] (repo.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {SQL} (ext.west);
+    \draw[arrow] (int.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {SMTP/OAuth} (ext.west);
 \end{tikzpicture}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
 \label{fig:capas}
@@ -333,15 +333,15 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
 
 \begin{figure}[htbp]
 \centering
-\small
+\scriptsize
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[2]{fe}{Frontend}
-  \newinst[2]{a}{API}
-  \newinst[2]{s}{Servicio}
-  \newinst[2]{r}{Datos}
-  \newinst[2]{m}{Correo}
-  \begin{call}{u}{escribe email y clave}{fe}{ok}
+  \newinst[1.5]{fe}{Frontend}
+  \newinst[1.5]{a}{API}
+  \newinst[1.5]{s}{Servicio}
+  \newinst[1.5]{r}{Datos}
+  \newinst[1.5]{m}{Correo}
+  \begin{call}{u}{escribe email/clave}{fe}{ok}
   \end{call}
   \begin{call}{fe}{POST register}{a}{201/409}
     \begin{call}{a}{register}{s}{ok}
@@ -352,9 +352,9 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
       \mess{s}{409}{a}
     \end{sdblock}
     \begin{sdblock}{else}{nuevo}
-      \begin{call}{s}{hash bcrypt y crea cuenta}{r}{ok}
+      \begin{call}{s}{hash bcrypt + crea}{r}{ok}
       \end{call}
-      \begin{call}{s}{firma HMAC y envía}{m}{ok}
+      \begin{call}{s}{firma HMAC + envía}{m}{ok}
       \end{call}
     \end{sdblock}
   \end{call}
@@ -441,13 +441,13 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
 
 \begin{figure}[htbp]
 \centering
-\small
+\scriptsize
 \begin{sequencediagram}
   \newthread{u}{Navegador}
-  \newinst[2]{a}{API}
-  \newinst[2]{ss}{Sesion}
-  \newinst[2]{g}{Google}
-  \newinst[2]{s}{Servicio}
+  \newinst[1.5]{a}{API}
+  \newinst[1.5]{ss}{Sesión}
+  \newinst[1.5]{g}{Google}
+  \newinst[1.5]{s}{Servicio}
   \begin{call}{u}{GET google}{a}{303}
   \end{call}
   \begin{call}{a}{guarda state}{ss}{ok}
@@ -464,11 +464,11 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
     \mess{a}{303 error}{u}
   \end{sdblock}
   \begin{sdblock}{else}{state ok}
-    \begin{call}{a}{cambia code por perfil}{g}{email}
+    \begin{call}{a}{cambia code/perfil}{g}{email}
     \end{call}
     \begin{call}{a}{login OAuth}{s}{usuario}
     \end{call}
-    \begin{call}{a}{regenera sesion}{ss}{ok}
+    \begin{call}{a}{regenera sesión}{ss}{ok}
     \end{call}
     \mess{a}{303 a jugar}{u}
   \end{sdblock}
