@@ -14102,3 +14102,76 @@ Lo que dejo como tareas: replantear 6 diagramas problemáticos (reduciendo parti
 ## 2026-11-22 22:57 · 🧠 Conocimiento guardado
 
 [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+
+## 2026-11-22 23:56 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Voy a corregir los 6 diagramas que violan las reglas 16-18 de Javier (flechas cruzando texto, letras <7.5pt) replanteándolos sin escalar: reducir participantes a ≤6, acortar etiquetas, aumentar separación, usar `\scriptsize` y codos en flechas. También añadiré las `\ref` faltantes a los 5 diagramas de secuencia en 04-descripcion.tex. Empiezo por `chapters/04-descripcion.tex` que tiene 5 de los 6 diagramas problemáticos.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ chapters/04-descripcion.tex:471: en un diagrama de secuencia no puede ir «&» (texto «GET /callback?code&state»): escríbelo sin él
+- intento 2: ❌ VERIFICACIÓN FALLIDA: 1 problema(s) (tocó `(cambio) chapters/04-descripcion.tex`)
+- intento 3: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK (diagramas reglas 16-18 corregidos). Luego ejecutar `revisar_umlsd.py` para validar diagramas de secuencia y hacer revisión visual final del PDF página a página.
+
+## 2026-11-22 23:58 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (96 páginas), pero `verificar.py` pasa y `revisar_maquetacion.py` falla por 6 diagramas que incumplen reglas 16-18 (flechas cruzando texto, palabras partidas, fuentes <7,5 pt).
+- fig:sec-registro: 125 pt más ancho que `\textwidth` (medido en PDF). Tiene 6 participantes y etiquetas largas; necesita replanteo (menos participantes, etiquetas en dos líneas, más separación, sin escalar).
+- fig:capas (p28): palabras partidas «ro-», «con-» dentro de cajas → cajas más anchas o salto manual.
+- fig:sec-login (p38): flecha cruza etiqueta «invalidas» → codos y etiquetas fuera de líneas de vida.
+- fig:sec-google (p39): flecha cruza «verificado» → mismo arreglo.
+- fig:sec-baja (p40): flechas cruzan «403» y «204» → mismo arreglo.
+- fig:juego-arquitectura (p53): flechas cruzan «sprites.js,» y «hud.js»; palabra partida «ar-» → cajas más anchas, codos, `\mbox{}`.
+- fig:pipeline (p63): palabra partida «Ar-» → `\mbox{Artifact}` o salto manual.
+- 5 diagramas no revisados por Gemini (modelo 404): fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2 → deben validarse igual.
+- Cadenas «La figura X muestra…» aún presentes en cap:descripcion y cap:juego (ej. «El recorrido está en la Figura~\ref{fig:sec-registro}», «La Figura~\ref{fig:juego-menu-vestuario} ilustra...») → integrar en prosa.
+- Imágenes repetidas: capturas DoneTonic (tablero S1, gráficas S1, backlog) en cap:propuesta Y anx:desarrollo; capturas producción (correo, actions, google) en cap:evaluacion Y referenciadas desde cap:descripcion → dejar una sola vez y usar `\ref`.
+- Resumen: 183 palabras (≥150 ✓), dos sprints, juego, club, logros, música ✓.
+- Abstract: 156 palabras (≥120 ✓), mismo contenido en inglés ✓.
+- Anexo desarrollo: dos sprints mismo esquema, explica recta Sprint 2 ✓.
+- Anexo trazabilidad: 82 tareas (T1–T82) con requisito→PBI→tarea→PR ✓.
+- Cifras contrastadas con fuentes: 19 PBIs S1 (sprint-1.md), 29 PBIs S2 (sprint-2.md), 32+50=82 tareas, 276 pruebas en main al cierre S2 (procesos.md), 322 tras Fase 7 (log.md), 5 migraciones (arquitectura.md), 23 endpoints (arquitectura.md), ~14,8k líneas juego (sprint-2.md), 36 jugadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 rivales, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones (juego.md), URL Cloud Run (README), repo GitHub, fechas sprints, P19 cambio alcance (decisiones.md D-16), D-19 backlog S2 registrado al cierre (decisiones.md).
+- Mínimos de capturas por carpeta: app/ 13 (≥4), hito4/ 11 (≥4), juego/ 16 (≥8), donetonic/ 8 (≥5), produccion/ 3 (≥2), prueba-tecnica/ 2 (≥1), fase7/ 12 (extra) ✓.
+
+Qué está bien: La estructura general compila, `verificar.py` pasa (35 fig, 29 tab, 16935 palabras), la portada única está implementada, Resumen/Abstract cumplen mínimos, anexos tienen el contenido requerido, trazabilidad completa 82 tareas, datos numéricos contrastados con fuentes.
+
+Qué está mal:
+1. **6 diagramas violan reglas 16-18** pese a intentos: flechas/linneas cruzan texto de cajas/etiquetas en 6 diagramas, y 4 diagramas de secuencia tienen letras de 6,0 pt (mínimo 7,5 pt) por haber sido escalados con `\tiny`/`\resizebox` en lugar de replantearlos.
+2. **fig:sec-registro sigue 125 pt más ancho que la página** (error de `revisar_maquetacion.py`).
+3. **5 diagramas no revisados** por Gemini (error 404 modelo) pero deben validarse igual.
+4. **Cadenas «La figura X muestra…» aún presentes** en varios capítulos.
+5. **Imágenes repetidas**: capturas de DoneTonic/producción aparecen en múltiples capítulos.
+
+Lo que corrijo yo:
+- Arreglo overfull hbox en a4-trazabilidad (ya hecho en intento anterior).
+- Elimino cadenas «La figura X muestra…» integrando capturas en prosa en cap:descripcion y cap:juego (parcialmente hecho, quedan restos).
+- Dejo cada captura DoneTonic/producción en un solo sitio (cap:propuesta y cap:evaluacion respectivamente) y pongo `\ref` en el resto (parcialmente hecho).
+- Arreglo partición silábica en fig:pipeline («Ar-» → `\mbox{Artifact}`).
+
+Lo que dejo como tareas para el constructor: replantear 6 diagramas problemáticos (reduciendo participantes a ≤6, acortando etiquetas a máx. 2 líneas, aumentando separación entre cajas, usando codos en flechas, fuente ≥`\scriptsize` (8 pt+), sin escalar con `resizebox`/`adjustbox`); validar los 5 diagramas no revisados; revisión visual final del PDF página a página; confirmar mínimos de capturas por carpeta y referencias `\ref` cruzadas correctas.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «La Figura~\ref{fig:juego-menu-vestuario} ilustra el menú pri») chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Replantear **fig:sec-registro** (chapters/04-descripcion.tex): reducir a ≤5 participantes (agrupar Frontend+API en uno), acortar etiquetas a máx. 2 líneas, aumentar separación horizontal entre columnas a ≥3.5 cm, usar `\scriptsize` en todo el diagrama, envolver en `adjustbox{max width=\textwidth, max totalheight=0.6\textheight}` y **no** usar `\resizebox` ni `\tiny`.
+- Replantear **fig:capas** (chapters/04-descripcion.tex): aumentar `text width` de cajas a 3.0 cm, separar columnas 3.5 cm, usar `\mbox{}` en palabras que se parten («ro-», «con-»), flechas con codos (`|-`/`-|`), etiquetas fuera de cajas.
+- Replantear **fig:sec-login**, **fig:sec-google**, **fig:sec-baja** (chapters/04-descripcion.tex): mismo patrón: más separación vertical (1.8 cm), etiquetas de flechas en dos líneas si superan 30 caracteres, flechas con codos para no cruzar líneas de vida, fuente `\scriptsize`.
+- Replantear **fig:juego-arquitectura** (chapters/04b-juego.tex): aumentar `text width` a 3.0 cm, separación horizontal 3.8 cm, `\mbox{}` en «sprites.js,» y «hud.js», flechas con codos, etiquetas fuera.
+- Replantear **fig:pipeline** (chapters/05-evaluacion.tex): `\mbox{Artifact}` para evitar partición «Ar-», aumentar `text width` de nodo deploy a 3.6 cm, flechas con codos.
+- Validar los 5 diagramas no revisados por Gemini: **fig:sec-partida**, **fig:sec-contratar** (chapters/04b-juego.tex), **fig:pipeline** (chapters/05-evaluacion.tex), **fig:burndown-s1**, **fig:burndown-s2** (chapters/a1-desarrollo.tex) ejecutando `revisar_umlsd.py` y revisión visual del PDF.
+- Ejecutar `comando_prueba` y confirmar: compilación sin overfull hbox, `verificar.py` OK, `revisar_maquetacion.py` OK (diagramas reglas 16-18 corregidos).
+- Revisión visual obligatoria del PDF página a página: sin páginas con una sola imagen (regla 8), sin secciones de 1-2 líneas (regla 9), sin figuras repetidas (regla 10), flechas son `$\rightarrow$` (regla 11), diagramas legibles a tamaño real (regla 16).
+- Verificar mínimos de capturas por carpeta y referencias `\ref` cruzadas correctas (DoneTonic/producción solo en cap:propuesta y cap:evaluacion).
+- Confirmar que anexo desarrollo (a1-desarrollo.tex) tiene dos secciones de sprint con mismo esquema y explica recta Sprint 2.
+
+## 2026-11-22 23:58 · 🧠 Conocimiento guardado
+
+[[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]

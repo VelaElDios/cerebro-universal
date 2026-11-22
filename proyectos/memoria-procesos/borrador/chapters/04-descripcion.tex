@@ -104,35 +104,37 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.6cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Columna izquierda: Frontend
-    \node[nodewide] (fe) {Frontend\\(navegador)\\ui.js + api.js\\game/};
-    % Columna central: Servidor (capas apiladas)
-    \node[nodewide, right=2.5cm of fe] (api) {Capa API\\(src/api)\\rutas, sesión,\\roles, logs, errores};
-    \node[node, below=1.2cm of api] (srv) {Lógica\\(src/services)\\usuarios, tokens,\\juego};
-    \node[node, below=1.2cm of srv] (repo) {Datos\\(src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=1.2cm of repo] (int) {Integraciones\\correo | Google};
+    \node[nodewide] (fe) {Frontend (navegador)\\ui.js + api.js + game/};
+    % Columna central: Servidor (capas apiladas con más separación)
+    \node[nodewide, right=3.5cm of fe] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
+    \node[node, below=1.8cm of api] (srv) {Lógica (src/services)\\usuarios, tokens, juego};
+    \node[node, below=1.8cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
+    \node[node, below=1.8cm of repo] (int) {Integraciones\\correo | Google};
     % Columna derecha: Reglas compartidas y servicios externos
-    \node[node, right=2.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js,\\logros.js};
-    \node[node, right=2.0cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
+    \node[node, right=3.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
+    \node[node, right=3.0cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
 
-    % Flecha frontend -> API (con codo, etiqueta corta)
-    \draw[arrow] (fe.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {HTTP+JSON} (api.west);
-    % Flechas servidor (verticales, caja a caja)
-    \draw[arrow] (api) -- (srv);
-    \draw[arrow] (srv) -- (repo);
-    \draw[arrow] (srv) -- (int);
-    \draw[arrow, dashed] (srv.east) -- ++(0.5,0) |- (rules.west);
-    % Flechas a servicios externos (con codos, etiquetas cortas)
-    \draw[arrow] (repo.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {SQL} (ext.west);
-    \draw[arrow] (int.east) -- ++(0.5,0) |- node[near start, above, font=\tiny] {SMTP/OAuth} (ext.west);
+    % Flecha frontend -> API (con codo, etiqueta fuera de cajas)
+    \draw[arrow] (fe.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {HTTP + JSON} (api.west);
+    % Flechas servidor (verticales, caja a caja con separación)
+    \draw[arrow] (api.south) -- (srv.north);
+    \draw[arrow] (srv.south) -- (repo.north);
+    \draw[arrow] (srv.south) -- (int.north);
+    \draw[arrow, dashed] (srv.east) -- ++(1.0,0) |- (rules.west);
+    % Flechas a servicios externos (con codos, etiquetas fuera)
+    \draw[arrow] (repo.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {SQL} (ext.west);
+    \draw[arrow] (int.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {SMTP / OAuth} (ext.west);
 \end{tikzpicture}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
 \label{fig:capas}
 \end{figure}
+
+Según la Figura~\ref{fig:capas}, la aplicación separa la presentación (navegador) del servidor, que a su vez se organiza en capas API, lógica, datos e integraciones. Las reglas del juego (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) se comparten entre cliente y servidor, y los servicios externos (PostgreSQL, SMTP, Google) solo se acceden desde la capa de integraciones.
 
 La separación de responsabilidades por capas se detalla en la Tabla~\ref{tab:capas}.
 
@@ -329,188 +331,213 @@ Esta sección muestra los diagramas de secuencia de los flujos principales. Todo
 \subsection{Registro con email y contraseña}
 \label{sec:flujo-registro}
 
-El registro recorre la cadena completa: la vista valida el email y la contraseña en el cliente, \path{api.js} envía el \texttt{POST} a la API, \path{userService} normaliza y valida, rechaza el email repetido con un 409 y crea la cuenta pendiente con la contraseña ya hasheada; después se firma el token HMAC (24 h) y el correo sale por SMTP. El registro recorre la cadena completa: la vista valida el email y la contraseña en el cliente, \path{api.js} envía el \texttt{POST} a la API, \path{userService} normaliza y valida, rechaza el email repetido con un 409 y crea la cuenta pendiente con la contraseña ya hasheada; después se firma el token HMAC (24 h) y el correo sale por SMTP.
+El registro recorre la cadena completa: la vista valida el email y la contraseña en el cliente, \path{api.js} envía el \texttt{POST} a la API, \path{userService} normaliza y valida, rechaza el email repetido con un 409 y crea la cuenta pendiente con la contraseña ya hasheada; después se firma el token HMAC (24 h) y el correo sale por SMTP.
 
 \begin{figure}[htbp]
 \centering
 \scriptsize
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[1.5]{fe}{Frontend}
-  \newinst[1.5]{api}{API}
-  \newinst[1.5]{srv}{Servicio}
-  \newinst[1.5]{repo}{Datos}
-  \newinst[1.5]{mail}{Correo}
-  \begin{call}{u}{escribe}{fe}{ok}
+  \newinst[2]{fe}{Frontend}
+  \newinst[2]{api}{API}
+  \newinst[2]{srv}{Servicio}
+  \newinst[2]{repo}{Datos}
+  \newinst[2]{mail}{Correo}
+  \begin{call}{u}{escribe email y clave}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST register}{api}{201/409}
-    \begin{call}{api}{register}{srv}{ok}
+  \begin{call}{fe}{POST /api/auth/register}{api}{201 / 409}
+    \begin{call}{api}{register()}{srv}{usuario}
     \end{call}
-    \begin{call}{srv}{busca email}{repo}{fila}
+    \begin{call}{srv}{busca email}{repo}{fila / null}
     \end{call}
     \begin{sdblock}{alt}{existe}
-      \mess{srv}{409}{api}
+      \mess{srv}{ConflictError}{api}
+      \mess{api}{409}{fe}
     \end{sdblock}
     \begin{sdblock}{else}{nuevo}
-      \begin{call}{srv}{hash + crea}{repo}{ok}
+      \begin{call}{srv}{hash + crea}{repo}{usuario}
       \end{call}
-      \begin{call}{srv}{firma HMAC + envía}{mail}{ok}
+      \begin{call}{srv}{firma HMAC + envía}{mail}{enviado}
       \end{call}
+      \mess{api}{201}{fe}
     \end{sdblock}
   \end{call}
+  \mess{fe}{aviso}{u}
 \end{sequencediagram}
+\end{adjustbox}
 \caption{Registro con email y contraseña.}
 \label{fig:sec-registro}
 \end{figure}
 
+El recorrido está en la Figura~\ref{fig:sec-registro}: el usuario rellena el formulario, el frontend valida y envía el \texttt{POST}, el servicio normaliza el email, rechaza duplicados (409), hashea la contraseña con bcrypt, crea la cuenta \texttt{pending}, firma el token HMAC (24 h) y envía el correo de confirmación.
+
 \subsection{Confirmación con el enlace del correo}
 \label{sec:flujo-confirmacion}
 
-Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la cuenta pasa a \texttt{active} y la interfaz muestra el aviso de confirmación; si está manipulado o caducado, redirige con aviso de error y la cuenta sigue pendiente. Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la cuenta pasa a \texttt{active} y la interfaz muestra el aviso de confirmación; si está manipulado o caducado, redirige con aviso de error y la cuenta sigue pendiente.
+Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la cuenta pasa a \texttt{active} y la interfaz muestra el aviso de confirmación; si está manipulado o caducado, redirige con aviso de error y la cuenta sigue pendiente.
 
 \begin{figure}[htbp]
 \centering
 \scriptsize
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[1.8]{api}{API}
-  \newinst[1.8]{tok}{Token}
-  \newinst[1.8]{srv}{Servicio}
-  \newinst[1.8]{ui}{Vista}
-  \begin{call}{u}{abre enlace}{api}{ok}
+  \newinst[2]{api}{API}
+  \newinst[2]{tok}{Token}
+  \newinst[2]{srv}{Servicio}
+  \newinst[2]{ui}{Vista}
+  \begin{call}{u}{abre enlace}{api}{redirige}
   \end{call}
-  \begin{call}{api}{verifica token}{tok}{valido/nulo}
+  \begin{call}{api}{verifica HMAC}{tok}{valido / nulo}
   \end{call}
   \begin{sdblock}{alt}{no valido}
-    \mess{api}{303 error}{u}
+    \mess{api}{303 enlace no valido}{u}
   \end{sdblock}
   \begin{sdblock}{else}{valido}
     \begin{call}{api}{activa cuenta}{srv}{ok}
     \end{call}
-    \mess{api}{303 ok}{u}
+    \mess{api}{303 cuenta confirmada}{u}
   \end{sdblock}
   \begin{call}{u}{carga web}{ui}{ok}
   \end{call}
-  \mess{ui}{aviso}{u}
+  \mess{ui}{muestra aviso}{u}
 \end{sequencediagram}
+\end{adjustbox}
 \caption{Confirmación con el enlace del correo.}
 \label{fig:sec-confirmacion}
 \end{figure}
 
+La verificación del token HMAC se detalla en la Figura~\ref{fig:sec-confirmacion}: si la firma es válida y no ha caducado (24 h), la cuenta pasa a \texttt{active}; si no, se redirige con aviso de error y la cuenta permanece \texttt{pending}.
+
 \subsection{Inicio de sesión local}
 \label{sec:flujo-login}
 
-En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta; si la cuenta está pendiente responde 403 con la opción de reenviar el correo, y si es correcta regenera la sesión y devuelve la cookie \texttt{grada.sid}. En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta; si la cuenta está pendiente responde 403 con la opción de reenviar el correo, y si es correcta regenera la sesión y devuelve la cookie \texttt{grada.sid}.
-
-\begin{figure}[htbp]
-\centering
-\small
-\begin{sequencediagram}
-  \newthread{u}{Usuario}
-  \newinst[2]{fe}{Frontend}
-  \newinst[2]{a}{API}
-  \newinst[2]{s}{Servicio}
-  \begin{call}{u}{email y clave}{fe}{ok}
-  \end{call}
-  \begin{call}{fe}{POST login}{a}{200/401}
-    \begin{call}{a}{authenticate}{s}{resultado}
-    \end{call}
-  \end{call}
-  \begin{sdblock}{alt}{malas credenciales}
-    \mess{s}{401}{a}
-    \mess{a}{401}{fe}
-  \end{sdblock}
-  \begin{sdblock}{alt}{pendiente}
-    \mess{s}{403}{a}
-    \mess{a}{403}{fe}
-  \end{sdblock}
-  \begin{sdblock}{alt}{correcto}
-    \mess{s}{usuario}{a}
-    \mess{a}{200 cookie}{fe}
-  \end{sdblock}
-  \mess{fe}{aviso}{u}
-\end{sequencediagram}
-\caption{Inicio de sesión local.}
-\label{fig:sec-login}
-\end{figure}
-
-\subsection{Inicio de sesión con Google OAuth 2.0}
-\label{sec:flujo-google}
-
-El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a Google; en el callback lo compara y lo borra (un solo uso) antes de cambiar el código por el perfil en el servidor, y según el email exista, esté pendiente o no exista, activa o crea la cuenta y regenera la sesión. El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a Google; en el callback lo compara y lo borra (un solo uso) antes de cambiar el código por el perfil en el servidor, y según el email exista, esté pendiente o no exista, activa o crea la cuenta y regenera la sesión.
+En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta; si la cuenta está pendiente responde 403 con la opción de reenviar el correo, y si es correcta regenera la sesión y devuelve la cookie \texttt{grada.sid}.
 
 \begin{figure}[htbp]
 \centering
 \scriptsize
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
+\begin{sequencediagram}
+  \newthread{u}{Usuario}
+  \newinst[2]{fe}{Frontend}
+  \newinst[2]{api}{API}
+  \newinst[2]{srv}{Servicio}
+  \begin{call}{u}{email y clave}{fe}{ok}
+  \end{call}
+  \begin{call}{fe}{POST /api/auth/login}{api}{200 / 401 / 403}
+    \begin{call}{api}{authenticate()}{srv}{usuario / error}
+    \end{call}
+  \end{call}
+  \begin{sdblock}{alt}{credenciales invalidas}
+    \mess{srv}{UnauthorizedError}{api}
+    \mess{api}{401}{fe}
+  \end{sdblock}
+  \begin{sdblock}{alt}{cuenta pendiente}
+    \mess{srv}{AccountPendingError}{api}
+    \mess{api}{403}{fe}
+    \mess{fe}{boton reenviar}{u}
+  \end{sdblock}
+  \begin{sdblock}{alt}{correcto}
+    \mess{srv}{usuario}{api}
+    \mess{api}{200 + cookie}{fe}
+    \mess{fe}{redirige a jugar}{u}
+  \end{sdblock}
+\end{sequencediagram}
+\end{adjustbox}
+\caption{Inicio de sesión local.}
+\label{fig:sec-login}
+\end{figure}
+
+La Figura~\ref{fig:sec-login} cubre los tres casos: credenciales inválidas (mismo mensaje 401), cuenta pendiente (403 con opción de reenviar correo) y acceso correcto (regenera sesión, cookie \texttt{grada.sid} y redirige a \texttt{\#/jugar}).
+
+\subsection{Inicio de sesión con Google OAuth 2.0}
+\label{sec:flujo-google}
+
+El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a Google; en el callback lo compara y lo borra (un solo uso) antes de cambiar el código por el perfil en el servidor, y según el email exista, esté pendiente o no exista, activa o crea la cuenta y regenera la sesión.
+
+\begin{figure}[htbp]
+\centering
+\scriptsize
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Navegador}
-  \newinst[1.5]{api}{API}
-  \newinst[1.5]{ses}{Sesión}
-  \newinst[1.5]{goo}{Google}
-  \newinst[1.5]{srv}{Servicio}
-  \begin{call}{u}{GET google}{api}{303}
+  \newinst[2]{api}{API}
+  \newinst[2]{ses}{Sesión}
+  \newinst[2]{goo}{Google}
+  \newinst[2]{srv}{Servicio}
+  \begin{call}{u}{GET /api/auth/google}{api}{303}
   \end{call}
   \begin{call}{api}{guarda state}{ses}{ok}
   \end{call}
-  \mess{api}{redirige}{u}
-  \begin{call}{u}{acepta}{goo}{302}
+  \mess{api}{redirige a Google}{u}
+  \begin{call}{u}{acepta en Google}{goo}{302 code + state}
   \end{call}
   \mess{goo}{callback}{u}
-  \begin{call}{u}{GET callback}{api}{ok}
+  \begin{call}{u}{GET /callback?code y state}{api}{ok}
   \end{call}
-  \begin{call}{api}{compara state}{ses}{ok}
+  \begin{call}{api}{compara y borra state}{ses}{ok / fallo}
   \end{call}
-  \begin{sdblock}{alt}{state falso}
+  \begin{sdblock}{alt}{state invalido}
     \mess{api}{303 error}{u}
   \end{sdblock}
   \begin{sdblock}{else}{state ok}
-    \begin{call}{api}{cambia code}{goo}{email}
+    \begin{call}{api}{intercambia code}{goo}{email verificado}
     \end{call}
-    \begin{call}{api}{login OAuth}{srv}{usuario}
+    \begin{call}{api}{loginWithOAuth()}{srv}{usuario}
     \end{call}
     \begin{call}{api}{regenera sesión}{ses}{ok}
     \end{call}
     \mess{api}{303 a jugar}{u}
   \end{sdblock}
 \end{sequencediagram}
+\end{adjustbox}
 \caption{Inicio de sesión con Google OAuth 2.0.}
 \label{fig:sec-google}
 \end{figure}
 
+El flujo OAuth 2.0 con \texttt{state} anti-CSRF se ve en la Figura~\ref{fig:sec-google}: el servidor guarda un valor aleatorio en la sesión, redirige a Google, recibe el \texttt{code}, lo intercambia por el perfil (email verificado), crea o activa la cuenta y regenera la sesión.
+
 \subsection{Darse de baja}
 \label{sec:flujo-baja}
 
-La baja pasa por un diálogo de confirmación accesible y llega al servidor protegida con \texttt{requireSelfOrRole('admin')}: se impide eliminar al último administrador, la cuenta queda como \texttt{deleted}, suelta el mote y el email, y su sesión deja de valer en la siguiente petición. La baja pasa por un diálogo de confirmación accesible y llega al servidor protegida con \texttt{requireSelfOrRole('admin')}: se impide eliminar al último administrador, la cuenta queda como \texttt{deleted}, suelta el mote y el email, y su sesión deja de valer en la siguiente petición.
+La baja pasa por un diálogo de confirmación accesible y llega al servidor protegida con \texttt{requireSelfOrRole('admin')}: se impide eliminar al último administrador, la cuenta queda como \texttt{deleted}, suelta el mote y el email, y su sesión deja de valer en la siguiente petición.
 
 \begin{figure}[htbp]
 \centering
 \scriptsize
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[1.8]{vis}{Vista}
-  \newinst[1.8]{dlg}{Diálogo}
-  \newinst[1.8]{api}{API}
-  \newinst[1.8]{srv}{Servicio}
+  \newinst[2]{vis}{Vista}
+  \newinst[2]{dlg}{Diálogo}
+  \newinst[2]{api}{API}
+  \newinst[2]{srv}{Servicio}
   \begin{call}{u}{pide baja}{vis}{ok}
   \end{call}
   \begin{call}{vis}{confirma}{dlg}{ok}
   \end{call}
-  \begin{call}{dlg}{DELETE}{api}{204}
+  \begin{call}{dlg}{DELETE /api/users/:id}{api}{204 / 403}
+    \begin{call}{api}{deleteUser()}{srv}{ok / error}
+    \end{call}
   \end{call}
-  \begin{call}{api}{deleteUser}{srv}{ok}
-  \end{call}
-  \begin{sdblock}{alt}{último admin}
-    \mess{srv}{403}{api}
+  \begin{sdblock}{alt}{ultimo admin}
+    \mess{srv}{ForbiddenError}{api}
+    \mess{api}{403}{vis}
   \end{sdblock}
-  \begin{sdblock}{else}{baja}
-    \mess{srv}{deleted}{api}
+  \begin{sdblock}{else}{baja logica}
+    \mess{srv}{status = deleted}{api}
     \mess{api}{204}{vis}
+    \mess{vis}{aviso + redirige}{u}
   \end{sdblock}
-  \mess{vis}{aviso}{u}
 \end{sequencediagram}
+\end{adjustbox}
 \caption{Darse de baja.}
 \label{fig:sec-baja}
 \end{figure}
+
+La Figura~\ref{fig:sec-baja} recorre la baja lógica: el usuario confirma en un diálogo accesible, el servidor comprueba que no es el último administrador, marca \texttt{status = deleted}, suelta el mote y el email (índice único parcial) e invalida la sesión (la siguiente petición recibe 401).
 
 \section{Seguridad}
 \label{sec:seguridad}
@@ -764,4 +791,4 @@ Un enlace válido, en cambio, activa la cuenta y redirige a la pantalla de entra
 
 Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
 
-El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}). El endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}); la Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas en producción. El seguimiento en DoneTonic queda reflejado en el tablero del Sprint 1 (Figura~\ref{fig:donetonic-tablero}), sus gráficas (Figura~\ref{fig:donetonic-graficas-s1}), el Product Backlog (Figura~\ref{fig:donetonic-backlog}), el tablero del Sprint 2 (Figura~\ref{fig:donetonic-s2-tablero}) y el detalle de PBI y tareas (Figura~\ref{fig:donetonic-s2-detalle}), todos en el Capítulo~\ref{cap:propuesta} y Anexo~\ref{anx:desarrollo}; la evolución real del Sprint 2 se expone en el Anexo~\ref{anx:desarrollo}.
+El despliegue en Google Cloud Run se validó en condiciones reales: el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion}), la consola de GitHub Actions muestra la integración continua y el despliegue en Cloud Run finalizados en verde (Figura~\ref{fig:actions-verde}, Capítulo~\ref{cap:evaluacion}), y Google Auth Platform confirma la aplicación OAuth publicada en producción para usuarios externos (Figura~\ref{fig:google-publicada}, Capítulo~\ref{cap:evaluacion}). Estas capturas se muestran una sola vez en el Capítulo~\ref{cap:evaluacion}; aquí se citan con \ref. El endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} valida que el dominio del correo pertenezca a la lista de dominios permitidos (\texttt{ALLOWED\_DOMAINS}); la Figura~\ref{fig:prueba-tecnica} (Capítulo~\ref{cap:evaluacion}) muestra ambas respuestas en producción (se cita con \ref). El seguimiento en DoneTonic queda reflejado en el tablero del Sprint 1 (Figura~\ref{fig:donetonic-tablero}), sus gráficas (Figura~\ref{fig:donetonic-graficas-s1}), el Product Backlog (Figura~\ref{fig:donetonic-backlog}) en el Capítulo~\ref{cap:propuesta}, y el tablero del Sprint 2 (Figura~\ref{fig:donetonic-s2-tablero}), sus gráficas (Figura~\ref{fig:donetonic-s2-graficas}) y el detalle de PBI y tareas (Figura~\ref{fig:donetonic-s2-detalle}) en el Anexo~\ref{anx:desarrollo}; la evolución real del Sprint 2 se expone en el Anexo~\ref{anx:desarrollo}.

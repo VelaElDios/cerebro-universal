@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T22:57:08+01:00",
+ "generado": "2026-11-22T23:58:52+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1538,7 +1538,9 @@
    "temas": [
     "memoria",
     "métricas",
-    "trazabilidad"
+    "trazabilidad",
+    "metricas",
+    "verificacion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2896,6 +2898,21 @@
    "ruta": "memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica.md"
   },
   {
+   "id": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "tipo": "decision",
+   "titulo": "Imágenes repetidas: una sola aparición y \\ref en el resto",
+   "temas": [
+    "figuras",
+    "latex",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto.md"
+  },
+  {
    "id": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
    "tipo": "decision",
    "titulo": "La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX",
@@ -4037,6 +4054,21 @@
    "ruta": "memoria/conocimiento/recetas/como-desplegar-secretos-de-hito-4-a-cloud-run-produccion.md"
   },
   {
+   "id": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "tipo": "receta",
+   "titulo": "Cómo escribir prosa de TFG integrando capturas (sin «La figura X muestra…»)",
+   "temas": [
+    "latex",
+    "redaccion",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura.md"
+  },
+  {
    "id": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
    "tipo": "receta",
    "titulo": "Cómo escribir un diagrama de entidad-relación en TikZ legible",
@@ -4239,6 +4271,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi.md"
+  },
+  {
+   "id": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "tipo": "receta",
+   "titulo": "Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar.md"
   },
   {
    "id": "receta:como-se-agrupan-capturas-con-subfigure",
@@ -5369,6 +5417,21 @@
    "ruta": "memoria/conocimiento/recetas/validacion-completa-de-numeros-en-memoria-tfg-con-verificar.md"
   },
   {
+   "id": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "tipo": "receta",
+   "titulo": "Validación final del PDF antes de marcar TERMINADO",
+   "temas": [
+    "latex",
+    "pdf",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/validacion-final-del-pdf-antes-de-marcar-terminado.md"
+  },
+  {
    "id": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
    "tipo": "receta",
    "titulo": "Validación visual de diagramas TikZ/pgf-umlsd en PDF (reglas 16-18 Javier)",
@@ -5428,7 +5491,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 146,
+   "peso": 150,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5442,7 +5505,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 27,
+   "peso": 28,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -5512,14 +5575,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 18,
+   "peso": 19,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 18,
+   "peso": 20,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -5568,7 +5631,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 67,
+   "peso": 68,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -5582,14 +5645,14 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 19,
+   "peso": 21,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -5610,7 +5673,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 18,
+   "peso": 19,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6121,7 +6184,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -7369,6 +7432,13 @@
    "titulo": "security",
    "peso": 1,
    "ruta": "memoria/temas/security.md"
+  },
+  {
+   "id": "tema:pdf",
+   "tipo": "tema",
+   "titulo": "pdf",
+   "peso": 1,
+   "ruta": "memoria/temas/pdf.md"
   },
   {
    "id": "tema:validacion-visual",
@@ -11277,6 +11347,16 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:verificacion",
    "tipo": "trata"
   },
   {
@@ -15610,6 +15690,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
    "a": "tema:entrega",
    "tipo": "trata"
@@ -19625,6 +19725,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
    "a": "tema:er",
    "tipo": "trata"
@@ -20217,6 +20342,36 @@
   {
    "de": "receta:como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi",
    "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
    "tipo": "enlaza"
   },
   {
@@ -23707,6 +23862,31 @@
   {
    "de": "receta:validacion-completa-de-numeros-en-memoria-tfg-con-verificar",
    "a": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "tema:pdf",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
    "tipo": "enlaza"
   },
   {

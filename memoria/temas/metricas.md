@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "metricas"
-notas: 11
+notas: 12
 ---
 # metricas
 
@@ -17,6 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto contrastadas con fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2|Cifras clave del proyecto La Grada Colchonera (Sprints 1 y 2)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas|Cifras clave del proyecto La Grada Colchonera contrastadas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c|Cifras clave del proyecto La Grada Colchonera contrastadas con fuentes]] · ⚠️ propuesto
@@ -32,4 +33,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[scrum]] · [[sprint]] · [[saas]] · [[trazabilidad]] · [[grada-colchonera]] · [[verificacion]] · [[burndown]] · [[donetonic]] · [[métricas]] · [[sprints]] · [[latex]] · [[graficas]]
+[[scrum]] · [[sprint]] · [[trazabilidad]] · [[saas]] · [[verificacion]] · [[métricas]] · [[grada-colchonera]] · [[burndown]] · [[donetonic]] · [[sprints]] · [[latex]] · [[graficas]]

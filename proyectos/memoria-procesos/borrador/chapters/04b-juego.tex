@@ -53,7 +53,7 @@ Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una ol
 \label{fig:juego-partida-mejora}
 \end{figure}
 
-Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. La Figura~\ref{fig:juego-jefe-ambiente} muestra al jefe Vinicius Jr. con su barra de vida (subfigura~\ref{fig:juego-jefe}) y el ambiente de la Final de la Copa del Rey (subfigura~\ref{fig:juego-final-copa}), que se activa a partir del minuto 5. Cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
+Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. El jefe Vinicius Jr. con su barra de vida (subfigura~\ref{fig:juego-jefe}) y el ambiente de la Final de la Copa del Rey (subfigura~\ref{fig:juego-final-copa}), que se activa a partir del minuto 5, se ven en la Figura~\ref{fig:juego-jefe-ambiente}. Cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
 
 \begin{figure}[htbp]
 \centering
@@ -204,24 +204,26 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.4cm, align=center, minimum height=0.8cm, font=\scriptsize, inner sep=2pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=0.8cm, font=\scriptsize, inner sep=2pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Columna 1: Simulación pura (agrupados)
-    \node[nodewide] (sim) {Simulación\\mundo.js, armas.js,\\combate.js, jefes.js,\\oleadas.js, terreno.js,\\ultras.js, mejoras.js};
+    \node[nodewide] (sim) {Simulación pura\\mundo.js, armas.js, combate.js\\jefes.js, oleadas.js\\terreno.js, ultras.js\\mejoras.js};
     % Columna 2: Presentación (agrupados)
-    \node[nodewide, right=2.8cm of sim] (pres) {Presentación\\juego.js, render*.js,\\sprites.js, hud.js,\\audio.js, ui*.js,\\entrada.js};
+    \node[nodewide, right=3.8cm of sim] (pres) {Presentación\\juego.js, render*.js\\sprites.js, hud.js\\audio.js, ui*.js\\entrada.js};
     % Columna 3: Servidor
-    \node[nodewide, right=2.8cm of pres] (srv) {Servidor\\juegoService.js,\\club.js, config.js,\\logros.js};
-    % Conexiones con codos
-    \draw[arrow] (sim.east) -- ++(0.6,0) |- node[near start, above, font=\tiny] {eventos} (pres.west);
-    \draw[arrow] (pres.east) -- ++(0.6,0) |- node[near start, above, font=\tiny] {api.js} (srv.west);
-    \draw[arrow, dashed] (sim.east) -- ++(1.4,0) |- node[near start, above, font=\tiny] {reglas} (srv.west);
+    \node[nodewide, right=3.8cm of pres] (srv) {Servidor\\juegoService.js\\club.js, config.js\\logros.js};
+    % Conexiones con codos y etiquetas fuera de cajas
+    \draw[arrow] (sim.east) -- ++(1.2,0) |- node[near start, above, font=\scriptsize] {eventos} (pres.west);
+    \draw[arrow] (pres.east) -- ++(1.2,0) |- node[near start, above, font=\scriptsize] {api.js} (srv.west);
+    \draw[arrow, dashed] (sim.east) -- ++(1.8,0) |- node[near start, above, font=\scriptsize] {reglas compartidas} (srv.west);
 \end{tikzpicture}
 \caption{Arquitectura del juego: simulación pura (izquierda), presentación (centro), servidor (derecha).}
 \label{fig:juego-arquitectura}
 \end{figure}
+
+La Figura~\ref{fig:juego-arquitectura} ilustra la separación en tres bloques: la simulación determinista (sin DOM ni audio) emite eventos que la presentación traduce a gráficos y sonido, y el servidor valida las partidas usando las mismas reglas (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) que el cliente.
 
 \subsection{Determinismo}
 \path{mundo.js} avanza con paso fijo de 1/60 s y generador aleatorio con semilla. Si el navegador va lento, se hacen varios pasos por fotograma (con tope); el resultado no depende de los FPS y las pruebas son reproducibles.

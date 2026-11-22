@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-22 22:57"
+actualizado: "2026-11-22 23:58"
 ---
 
 # memoria-procesos
@@ -28,9 +28,10 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad completa 82 tareas. Cadenas "La figura X muestra..." eliminadas en secciones corregidas. Imágenes DoneTonic/producción dejadas en un solo sitio (cap:propuesta y cap:evaluacion).
 
 ## Siguiente
-1. Ejecutar `comando_prueba` y confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK (diagramas reglas 16-18 corregidos).
-2. Ejecutar `revisar_umlsd.py` y validar diagramas de secuencia.
-3. Revisión visual final del PDF página a página.
-4. Verificar mínimos de capturas por carpeta y referencias `\ref` cruzadas correctas.
+1. Replantear 6 diagramas problemáticos (fig:capas, fig:sec-registro, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline) sin escalar: menos participantes, etiquetas ≤2 líneas, más separación, codos en flechas, fuente ≥\scriptsize.
+2. Validar 5 diagramas no revisados (fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) con `revisar_umlsd.py` y ojo.
+3. Ejecutar `comando_prueba` y confirmar compilación, `verificar.py` OK y `revisar_maquetacion.py` OK.
+4. Revisión visual final del PDF página a página.
+5. Verificar mínimos de capturas por carpeta y referencias `\ref` cruzadas correctas.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]
