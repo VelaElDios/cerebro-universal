@@ -13253,3 +13253,74 @@ Se han detectado tres overfull hbox en chapters/04-descripcion.tex (líneas 132-
 Sin tiempo para llamar a openrouter-grandes (nvidia/nemotron-3-ultra-550b-a55b:free)
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-22 04:03 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+(sin resumen)
+
+**Archivos:** `(no aplicado: no encuentro el texto: «RF-10 & Confirmación de la cuenta por correo, con reenvío & ») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que los 3 overfull hbox se han corregido y que la compilación pasa junto con `verificar.py` y `revisar_maquetacion.py`. Si persisten overfull, identificar las líneas exactas y añadir más `\allowbreak` en rutas o textos largos de tablas. Luego ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia.
+
+## 2026-11-22 04:04 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 96 páginas, sin "Infinite glue shrinkage")
+- verificar.py: FALLA con 3 overfull hbox en chapters/04-descripcion.tex (líneas 132-133: 35pt; 361-362: 127pt; 475-476: 32pt)
+- revisar_maquetacion.py: no ejecutado aún (pendiente tras corregir overfull)
+- revisar_umlsd.py: no ejecutado (pendiente)
+- Los 3 overfull son en celdas de longtable con rutas/códigos largos sin puntos de corte (\texttt, \path sin \allowbreak)
+- El constructor intentó añadir \allowbreak pero los textos de búsqueda no coincidían (mensajes "no aplicado")
+- Reglas de Javier: portada única OK, declaraciones/resumen/abstract OK, índices OK, longtables con \\* OK, prosa sin "La figura X muestra" OK, imágenes no repetidas OK, subfiguras OK, trazabilidad completa OK
+- Bibliografía: apalike, autores corporativos con doble llave, year en todas las entradas OK
+
+Qué está bien:
+- La estructura de la memoria cumple la spec: todos los capítulos y anexos requeridos están presentes con datos contrastados de las fuentes
+- La prosa evita cadenas "La figura X muestra..." y agrupa capturas en subfigure
+- Las imágenes no se repiten; se usan \ref donde corresponde
+- El anexo de desarrollo tiene los dos sprints con el mismo esquema y explica la recta de DoneTonic del Sprint 2
+- La trazabilidad completa (82 tareas) está en el anexo A.4
+- La bibliografía usa apalike, autores corporativos con doble llave y year en todas las entradas
+
+Qué está mal:
+1. **Tres overfull hbox** en chapters/04-descripcion.tex que impiden pasar verificar.py. Corresponden a celdas de longtable con texto largo (rutas de código, nombres de módulos) que no admiten corte de línea.
+2. Los intentos del constructor de añadir \allowbreak fallaron porque los textos de búsqueda no coincidían exactamente con el contenido actual del archivo.
+3. revisar_maquetacion.py y revisar_umlsd.py aún no ejecutados (bloqueados por los overfull).
+
+Correcciones que aplico yo:
+- Añadir \allowbreak en los puntos naturales de las rutas/códigos largos dentro de las celdas de las tres tablas afectadas (tab:rnf, tab:modulos, tab:api) para permitir cortes de línea y evitar desbordamiento.
+- Usar \path{} con \allowbreak en lugar de \texttt{} donde sea código/ruta, ya que \path permite cortes automáticos.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «Juego & \texttt{GET perfil}, \texttt{POST partidas}, \texttt») chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK (Regla 8 ya corregida en paso anterior).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin `# _ & % $ {} \` en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos).
+- **Revisión visual obligatoria del PDF página a página** para reglas 16-18 de Javier:
+  - `fig:capas` (TikZ, p28): palabras partidas ("ro-", "(can-", etc.) → aumentar `text width` de cajas o usar `\mbox{}` o salto de línea manual (`\\`) en nombres de módulos.
+  - `fig:modelo-datos` (TikZ ER): verificar letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas.
+  - `fig:sec-registro` (p34): letras 5.4pt → rehacer diagrama más estrecho (menos participantes, cajas más pequeñas, o vertical) SIN escalar (`adjustbox`/`resizebox`/`scale`).
+  - `fig:sec-confirmacion` (p35): letras 6.1pt → mismo.
+  - `fig:sec-login` (p37): flechas cruzan texto "o" → reordenar participantes, etiquetas más cortas o en dos líneas, flechas con codos (`|-`/`-|`).
+  - `fig:sec-google` (p38): letras 7.4pt, flechas cruzan 3 textos → mismo.
+  - `fig:sec-baja` (p39): flechas cruzan 2 textos → mismo.
+  - `fig:juego-arquitectura` (p52): flechas cruzan 10 textos, palabra partida "render-" → separar cajas, aumentar `node distance`, flechas con codos, `\mbox{}` en nombres.
+  - `fig:sec-partida` (p54): flechas cruzan 3 textos ("lloooopp", "reparte", "jugar") → etiquetas más cortas, saltos de línea.
+  - `fig:sec-contratar` (p55): flechas cruzan texto "p2" → mismo.
+  - `fig:pipeline` (p62): palabra partida "Ar-" → `\mbox{Ar}` o caja más ancha.
+  - `fig:burndown-s1`, `fig:burndown-s2` (pgfplots): ejes y marcas ≥7,5pt.
+- Si algún diagrama incumple, **redibujarlo** (separar cajas, aumentar `text width`, saltos de línea manuales `\\`, flechas con codos `|-`/`-|`, reducir participantes agrupando) **sin usar `adjustbox`/`resizebox`/`scale`** para encoger.
+- Verificar que todas las `longtable` terminan con `\\*` antes de `\bottomrule` para que la última fila no quede sola en página siguiente.
+- Confirmar que el PDF final no tiene «??», referencias rotas, ni overfull hbox/vbox.
+
+## 2026-11-22 04:04 · 🧠 Conocimiento guardado
+
+[[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[concurrencia-optimista-en-perfil-del-juego-version-en-juego]]

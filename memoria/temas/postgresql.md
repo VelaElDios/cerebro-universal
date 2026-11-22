@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "postgresql"
-notas: 3
+notas: 4
 ---
 # postgresql
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «postgresql» (este archiv
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-en-capas-cliente-servidor-node-js-express-postg|Arquitectura en capas cliente-servidor (Node.js/Express + PostgreSQL + integraciones)]]
+- 💡 [[memoria/conocimiento/conceptos/concurrencia-optimista-en-perfil-del-juego-version-en-juego|Concurrencia optimista en perfil del juego (version en juego_perfiles)]]
 
 ## Datos
 
@@ -21,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «postgresql» (este archiv
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[arquitectura]] · [[nodejs]] · [[capas]] · [[modelo-datos]] · [[ci-cd]] · [[cloud-run]] · [[despliegue]] · [[devops]] · [[docker]] · [[github-actions]]
+[[saas]] · [[grada-colchonera]] · [[arquitectura]] · [[nodejs]] · [[capas]] · [[base de datos]] · [[concurrencia]] · [[juego]] · [[modelo-datos]] · [[ci-cd]] · [[cloud-run]] · [[despliegue]]

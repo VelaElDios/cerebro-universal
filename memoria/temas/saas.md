@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "saas"
-notas: 105
+notas: 106
 ---
 # saas
 
@@ -67,6 +67,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saas» (este archivo se g
 - 💡 [[memoria/conocimiento/conceptos/audio-100-sintetizado-con-web-audio-ondas-pulso-triangulo-ru|Audio 100% sintetizado con Web Audio (ondas pulso, triángulo, ruido, secuenciador, formantes vocales para grada)]]
 - 💡 [[memoria/conocimiento/conceptos/cadena-de-middlewares-para-peticion-protegida-y-autorizacion|Cadena de middlewares para petición protegida y autorización por roles (requireAuth, requireRole)]]
 - 💡 [[memoria/conocimiento/conceptos/cinco-ambientes-con-cambio-de-luz-aficion-y-fuerza|Cinco ambientes con cambio de luz, afición y fuerza]]
+- 💡 [[memoria/conocimiento/conceptos/concurrencia-optimista-en-perfil-del-juego-version-en-juego|Concurrencia optimista en perfil del juego (version en juego_perfiles)]]
 - 💡 [[memoria/conocimiento/conceptos/control-de-acceso-basado-en-roles-y-propiedad-requireauth-re|Control de acceso basado en roles y propiedad (requireAuth, requireRole, requireSelfOrRole)]]
 - 💡 [[memoria/conocimiento/conceptos/convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2|Convención de ramas y PRs por sprint (Sprint 1 vs Sprint 2)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/definicion-de-hecho-dod-para-tareas-hitos-y-fases|Definición de Hecho (DoD) para tareas, hitos y fases]]
@@ -129,4 +130,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «saas» (este archivo se g
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[scrum]] · [[sprint]] · [[donetonic]] · [[procesos]] · [[auth]] · [[oauth]] · [[juego]] · [[correo]] · [[tfg]] · [[trazabilidad]] · [[game-design]]
+[[grada-colchonera]] · [[scrum]] · [[sprint]] · [[donetonic]] · [[procesos]] · [[auth]] · [[juego]] · [[oauth]] · [[correo]] · [[tfg]] · [[trazabilidad]] · [[game-design]]

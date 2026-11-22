@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «concurrencia» (este arch
 
 ## Temas relacionados
 
-[[base de datos]] · [[juego]]
+[[base de datos]] · [[juego]] · [[postgresql]] · [[saas]]

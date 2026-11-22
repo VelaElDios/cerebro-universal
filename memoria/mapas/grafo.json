@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T03:30:31+01:00",
+ "generado": "2026-11-22T04:04:41+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -810,7 +810,9 @@
    "temas": [
     "base de datos",
     "concurrencia",
-    "juego"
+    "juego",
+    "postgresql",
+    "saas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1854,6 +1856,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/grupos-de-rutas-de-la-api-y-sus-accesos.md"
+  },
+  {
+   "id": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "tipo": "dato",
+   "titulo": "Inventario de capturas con trazabilidad a requisitos y fechas",
+   "temas": [
+    "capturas",
+    "requisitos",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha.md"
   },
   {
    "id": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
@@ -5730,7 +5747,7 @@
    "id": "tema:saas",
    "tipo": "tema",
    "titulo": "saas",
-   "peso": 105,
+   "peso": 106,
    "ruta": "memoria/temas/saas.md"
   },
   {
@@ -5744,7 +5761,7 @@
    "id": "tema:postgresql",
    "tipo": "tema",
    "titulo": "postgresql",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/postgresql.md"
   },
   {
@@ -6059,7 +6076,7 @@
    "id": "tema:requisitos",
    "tipo": "tema",
    "titulo": "requisitos",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/requisitos.md"
   },
   {
@@ -6206,7 +6223,7 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 13,
+   "peso": 14,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -6423,7 +6440,7 @@
    "id": "tema:capturas",
    "tipo": "tema",
    "titulo": "capturas",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/capturas.md"
   },
   {
@@ -8750,6 +8767,16 @@
   {
    "de": "concepto:concurrencia-optimista-en-perfil-del-juego-version-en-juego",
    "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:concurrencia-optimista-en-perfil-del-juego-version-en-juego",
+   "a": "tema:postgresql",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:concurrencia-optimista-en-perfil-del-juego-version-en-juego",
+   "a": "tema:saas",
    "tipo": "trata"
   },
   {
@@ -12181,6 +12208,26 @@
    "de": "dato:grupos-de-rutas-de-la-api-y-sus-accesos",
    "a": "receta:login-local-con-cuenta-pendiente-y-reenvio-de-confirmacion-p",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "tema:requisitos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",

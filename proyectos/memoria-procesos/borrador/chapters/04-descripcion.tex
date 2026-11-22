@@ -78,7 +78,7 @@ La Tabla~\ref{tab:rnf} recoge los 12 requisitos no funcionales.
 \textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endfirsthead
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endhead
-RNF-01 & \textbf{Seguridad} de credenciales y sesiones & Hash bcrypt \cite{bcrypt}, cookie \path{httpOnly} + \path{secure} + \path{sameSite}, regeneración de la sesión, permisos en el servidor, consultas parametrizadas \\
+RNF-01 & \textbf{Seguridad} de credenciales y sesiones & Hash bcrypt \cite{bcrypt}, cookie \path{httpOnly} + \path{secure} + \path{sameSite}, regeneración de la sesión, permisos en el servidor, consultas parametrizadas\allowbreak \\
 RNF-02 & \textbf{Secretos fuera del código} & Variables de entorno; Secret Manager en producción; la app no arranca si falta un secreto obligatorio \\
 RNF-03 & \textbf{Separación en capas} & API $\rightarrow$ lógica $\rightarrow$ datos/integraciones, con inyección de dependencias \\
 RNF-04 & \textbf{Pruebas automáticas} y CI obligatorio & 322 pruebas con \path{node:test}; las ramas protegidas exigen el CI en verde \\
@@ -271,7 +271,7 @@ La Tabla~\ref{tab:modulos} resume los módulos del backend.
 \path{app.js} & Construye la app Express: JSON, sesión, \path{/api} y los estáticos de \path{public/} \\
 \path{config.js}, \path{loadConfig.js} & Leen y validan las variables de entorno; en producción exigen los secretos \\
 \path{logger.js} & Logs JSON por línea, con niveles y ocultación de datos sensibles \\
-\texttt{api/\allowbreak index.js} & Monta el router: \path{requestLogger}, \path{currentUser}, \path{/health}, \path{/auth}, \path{/prueba}, \path{/users} y \path{/juego} (con \path{requireAuth}), 404 y manejador de errores \\
+\texttt{api/\allowbreak index.js} & Monta el router: \path{requestLogger}, \path{currentUser}, \path{/health}, \path{/auth}, \path{/prueba}, \path{/users} y \path{/juego} (con \path{requireAuth}), 404 y manejador de errores\allowbreak \\
 \texttt{api/\allowbreak auth.js} & Registro, confirmación, reenvío, login, Google, logout y \path{me} \\
 \texttt{api/\allowbreak users.js} & Administración de usuarios (\texttt{requireRole('admin')}, \texttt{requireSelfOrRole('admin')}) \\
 \texttt{api/\allowbreak juego.js} & Perfil, partidas, contratos, entrenamiento, identidad, ranking y modo pruebas \\
@@ -314,7 +314,7 @@ La lista completa de rutas está en el \texttt{README} del repositorio. Resumen 
 \textbf{Grupo} & \textbf{Rutas} & \textbf{Acceso} \\
 \midrule \endhead
 Salud & \texttt{GET} \path{/api/health} & Público \\
-Autenticación & \texttt{POST register}, \texttt{POST login}, \texttt{POST logout}, \texttt{GET me}, \texttt{GET confirm}, \texttt{POST resend-confirmation}, \texttt{GET providers}, \texttt{GET google}, \texttt{GET google/callback} & Público (salvo \path{me}) \\
+Autenticación & \texttt{POST register}, \texttt{POST login}, \texttt{POST logout}, \texttt{GET me}, \texttt{GET confirm}, \texttt{POST resend-confirmation}, \texttt{GET providers}, \texttt{GET google}, \texttt{GET google/callback}\allowbreak & Público (salvo \path{me}) \\
 Usuarios & \texttt{GET} \path{/users}, \texttt{GET} \path{/users/:id/active}, \texttt{PATCH} \path{/users/:id/role}, \texttt{DELETE} \path{/users/:id} & Admin (la baja, propio o admin) \\
 Juego & \texttt{GET perfil}, \texttt{POST partidas}, \texttt{POST partidas/:id/fin}, \texttt{POST contratar}, \texttt{POST entrenar}, \texttt{PUT identidad}, \texttt{GET ranking}, \texttt{POST desbloquear} & Sesión (\path{desbloquear}, admin) \\
 Prueba técnica & \texttt{POST} \path{/api/prueba/dominio} & Público \\*

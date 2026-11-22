@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "capturas"
-notas: 6
+notas: 7
 ---
 # capturas
 
@@ -16,9 +16,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha|Inventario de capturas con trazabilidad a requisitos y fechas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[figuras]] · [[donetonic]] · [[grada-colchonera]] · [[memoria]] · [[saas]] · [[trazabilidad]] · [[maquetacion]] · [[subfigure]] · [[juego]] · [[produccion]]
+[[latex]] · [[trazabilidad]] · [[tfg]] · [[figuras]] · [[requisitos]] · [[donetonic]] · [[grada-colchonera]] · [[memoria]] · [[saas]] · [[maquetacion]] · [[subfigure]] · [[juego]]
