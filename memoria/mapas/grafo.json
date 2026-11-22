@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T00:17:41+01:00",
+ "generado": "2026-11-22T01:53:10+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1528,6 +1528,21 @@
    "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas.md"
   },
   {
+   "id": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto La Grada Colchonera (Sprints 1 y 2)",
+   "temas": [
+    "metricas",
+    "saas",
+    "scrum"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2.md"
+  },
+  {
    "id": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
    "tipo": "dato",
    "titulo": "Cifras clave del proyecto verificadas en fuentes",
@@ -2308,6 +2323,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/workspace-y-equipo-en-donetonic.md"
+  },
+  {
+   "id": "decision:alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados",
+   "tipo": "decision",
+   "titulo": "Alcance coherente en toda la memoria (dos sprints cerrados)",
+   "temas": [
+    "alcance",
+    "estructura",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados.md"
   },
   {
    "id": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
@@ -5491,7 +5521,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 68,
+   "peso": 69,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -5512,7 +5542,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -5631,7 +5661,7 @@
    "id": "tema:saas",
    "tipo": "tema",
    "titulo": "saas",
-   "peso": 104,
+   "peso": 105,
    "ruta": "memoria/temas/saas.md"
   },
   {
@@ -5708,7 +5738,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 57,
+   "peso": 58,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -5820,7 +5850,7 @@
    "id": "tema:alcance",
    "tipo": "tema",
    "titulo": "alcance",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/alcance.md"
   },
   {
@@ -6382,6 +6412,13 @@
    "titulo": "gestion",
    "peso": 2,
    "ruta": "memoria/temas/gestion.md"
+  },
+  {
+   "id": "tema:estructura",
+   "tipo": "tema",
+   "titulo": "estructura",
+   "peso": 4,
+   "ruta": "memoria/temas/estructura.md"
   },
   {
    "id": "tema:diagramas",
@@ -6991,13 +7028,6 @@
    "titulo": "esiiab",
    "peso": 1,
    "ruta": "memoria/temas/esiiab.md"
-  },
-  {
-   "id": "tema:estructura",
-   "tipo": "tema",
-   "titulo": "estructura",
-   "peso": 3,
-   "ruta": "memoria/temas/estructura.md"
   },
   {
    "id": "tema:archivos",
@@ -11003,6 +11033,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
+   "a": "tema:saas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:cifras-clave-del-proyecto-verificadas-en-fuentes",
    "a": "tema:metricas",
    "tipo": "trata"
@@ -13471,6 +13521,26 @@
    "de": "dato:workspace-y-equipo-en-donetonic",
    "a": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados",
+   "a": "tema:alcance",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados",
+   "a": "tema:estructura",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",

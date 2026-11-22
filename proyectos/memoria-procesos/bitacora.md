@@ -13071,3 +13071,97 @@ Qué he corregido yo: nada aún; el fallo de maquetación requiere reducir altur
 ## 2026-11-21 23:40 · 🧠 Conocimiento guardado
 
 [[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]
+
+## 2026-11-22 01:50 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Reducir la altura de las subfiguras en las figuras `fig:hito4-flujo` y `fig:hito4-estados-privacidad` de 0.18 a 0.15\textheight para cumplir la Regla 8 (ninguna página con una sola imagen). El revisor detectó que la página 44 queda con solo la figura `fig:hito4-estados-privacidad` y 39 palabras; al bajar la altura a 0.15\textheight las cuatro subfiguras caben con más texto alrededor. El cambio se hace globalmente en el archivo porque solo esas dos figuras usan 0.18\textheight.
+
+**Archivos:** `(no aplicado: el texto aparece 8 veces: «height=0.18\textheight») chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ⚠️ Figuras: no pude revisar Figura 3.2 (fig:modelo-datos): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-flash-lite-latest is not f…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK (Regla 8 corregida). Después ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia y hacer la revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier.
+
+## 2026-11-22 01:53 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 19 PBIs (P1–P19) y 32 tareas (T1–T32) → repo:saas/docs/sprint-1.md tabla Backlog y Trazabilidad.
+- Sprint 2: 29 PBIs (P20–P48) y 50 tareas (T33–T82) → repo:saas/docs/sprint-2.md tabla Backlog y Trazabilidad.
+- Total tareas: 32 + 50 = 82 → suma verificada en ambas fuentes.
+- Pruebas automáticas al cierre Sprint 2: 276 (140 Sprint 1 + 136 juego hasta Fase 6) → repo:saas/docs/procesos.md tabla Pruebas por fichero.
+- Pruebas tras Fase 7: 322 → repo:saas/docs/log.md entrada 2026-11-03.
+- Migraciones SQL: 5 (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras baja) → repo:saas/docs/arquitectura.md §Modelo de datos.
+- Endpoints API: 23 → repo:saas/docs/sprint-2.md tabla Métricas.
+- Dependencias producción: 6 (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer) → repo:saas/docs/sprint-2.md tabla Métricas.
+- Líneas backend: ~2.300, frontend: ~1.150, CSS: ~950, juego: ~14.800, pruebas: ~5.050 → repo:saas/docs/sprint-2.md tabla Métricas.
+- Releases publicadas: hito-1, hito-2, hito-3, hito-4, sprint-1 → repo:saas/docs/sprint-1.md y sprint-2.md.
+- Cambio de alcance P19 (Cloud Run) añadido a mitad del Sprint 1 → repo:saas/docs/decisiones.md D-16 y sprint-1.md.
+- Backlog Sprint 2 registrado en DoneTonic al cerrar el sprint (29/10) → repo:saas/docs/decisiones.md D-19 y sprint-2.md.
+- Burndown Sprint 1: 15 PBIs iniciales (P1–P14, P18, P19) → repo:saas/docs/sprint-1.md tabla Evolución.
+- Burndown real Sprint 2: 29 PBIs, evolución por fechas de PR (23/10:1, 24/10:17, 26/10:9, 29/10:2) → repo:saas/docs/sprint-2.md tabla Evolución.
+- RF-01 a RF-13: 13 requisitos funcionales Sprint 1 → repo:saas/docs/requisitos.md tabla Requisitos funcionales Sprint 1.
+- RJ-01 a RJ-20: 20 requisitos funcionales juego → repo:saas/docs/requisitos.md tabla Requisitos funcionales juego.
+- RNF-01 a RNF-12: 12 requisitos no funcionales → repo:saas/docs/requisitos.md tabla Requisitos no funcionales.
+- Arquitectura en capas: 7 capas (Presentación, Cliente API, API, Lógica, Datos, Integraciones, Composición) → repo:saas/docs/arquitectura.md tabla Capas.
+- Modelo de datos: 4 tablas principales (users, session, juego_perfiles, juego_records) → repo:saas/docs/arquitectura.md §Modelo de datos.
+- Seguridad: 13 amenazas con medidas (bcrypt, HMAC, state OAuth, etc.) → repo:saas/docs/arquitectura.md tabla Seguridad.
+- Juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → repo:saas/docs/sprint-2.md tabla Métricas y juego.md.
+- Fases del juego: 7 fases (Rediseño, 1–6, 7) → repo:saas/docs/juego.md tabla Evolución por fases.
+- CI/CD: 3 workflows (ci.yml, deploy-cloud-run.yml, memoria.yml) + Render webhook → repo:saas/docs/procesos.md tabla Workflows.
+- Despliegue principal: Google Cloud Run (europe-southwest1) con WIF y Secret Manager → repo:saas/docs/procesos.md §Integración y despliegue continuos.
+- Resumen: ≥150 palabras, dos sprints, juego, club, logros, música → elements/preambulo.tex (comprobado visualmente).
+- Abstract: ≥120 palabras, mismo contenido en inglés → elements/preambulo.tex (comprobado visualmente).
+- Portada única: elements/portada.tex (protegida), preambulo.tex sin segunda portada → memoria/reglas-tfg.md regla 1 y elements/preambulo.tex.
+- Trazabilidad completa: 82 tareas en Anexo A.4 (a4-trazabilidad.tex) → chapters/a4-trazabilidad.tex tabla trazabilidad-completa.
+- Anexo desarrollo: dos sprints con mismo esquema (planificación, desarrollo, revisión, retrospectiva) → chapters/a1-desarrollo.tex.
+- Explicación recta gráficas Sprint 2 en retrospectiva Sprint 2 → chapters/a1-desarrollo.tex párrafo «Explicación de la recta de DoneTonic y cierre».
+- Figuras con etiqueta fija: fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2 → presentes en capítulos correspondientes.
+- Capturas mínimas por carpeta: app (13), hito4 (11), juego (16), donetonic (8), produccion (3), prueba-tecnica (2), fase7 (12) → figs/capturas/ listado.
+- Bibliografía: 11 entradas en bib/ref.bib con apalike, autores corporativos con doble llave, year en todas (s.f. si no hay fecha) → bib/ref.bib.
+- Palabras capítulos+anexos: 17038 (verificar.py) → supera mínimos (600+900+3000+1800+1200+500+2500+150+60+250 = 10960).
+- Regla 8 (maquetación): FALLA en página 44 (fig:hito4-estados-privacidad sola con 39 palabras) → revisar_maquetacion.py.
+- Reglas 16-18 (diagramas): 10 figuras con fallos medidos en PDF (letras <7,5pt, flechas cruzan cajas, palabras partidas) → salida de verificar.py (Gemini).
+- revisar_umlsd.py: no ejecutado (pendiente).
+- Overfull hbox previos en fig:capas y fig:juego-arquitectura: constructor redujo anchos (sin resizebox) pero hay que verificar en PDF que letras ≥7,5pt y flechas caja-a-caja.
+
+Lo bueno: La compilación pasa, verificar.py OK (estructura, cifras, capturas, bibliografía, trazabilidad, mínimos de palabras). El contenido cumple la spec: todos los capítulos y anexos escritos con datos contrastados, prosa de TFG sin cadenas «La figura X muestra…», capturas agrupadas en subfiguras, imágenes no repetidas, anexo desarrollo con dos sprints mismo esquema y explicación de la recta del Sprint 2, trazabilidad completa 82 tareas.
+
+Lo malo: 
+1. Regla 8 incumplida: página 44 solo tiene fig:hito4-estados-privacidad (4 subfiguras) y 39 palabras. El constructor intentó reducir height de 0.18 a 0.15\textheight pero el cambio no se aplicó (8 ocurrencias idénticas).
+2. Reglas 16-18: 10 diagramas con problemas visuales en PDF (letras demasiado pequeñas, flechas cruzando cajas/texto, palabras partidas con guion). El constructor redujo anchos en fig:capas y fig:juego-arquitectura para evitar overfull hbox, pero eso puede haber empeorado la legibilidad.
+3. revisar_umlsd.py no ejecutado; los 7 sequencediagram deben validarse (participantes declarados, sin caracteres prohibidos, sin paréntesis en \mess, sin comandos LaTeX en textos).
+4. fig:modelo-datos, fig:burndown-s1, fig:burndown-s2 no revisados por Gemini (error 404 API), requieren revisión visual manual.
+
+Qué he corregido yo: Reducido height de subfiguras en fig:hito4-flujo y fig:hito4-estados-privacidad de 0.18 a 0.15\textheight (dos bloques CAMBIAR completos) para que quepan con más texto en la página y cumplan Regla 8.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK (Regla 8 corregida).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin # _ & % $ {} \ en textos, sin paréntesis en \mess, sin comandos LaTeX en textos).
+- **Revisión visual obligatoria del PDF página a página** para reglas 16-18 de Javier:
+  - fig:capas (TikZ, p28): palabras partidas ("ro-", "(can-", etc.) → aumentar text width de cajas o usar \mbox{} o salto de línea manual (\\) en nombres de módulos.
+  - fig:modelo-datos (TikZ ER): verificar letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas.
+  - fig:sec-registro (p34): letras 5.4pt → rehacer diagrama más estrecho (menos participantes, cajas más pequeñas, o vertical) SIN escalar (adjustbox/resizebox/scale).
+  - fig:sec-confirmacion (p35): letras 6.1pt → mismo.
+  - fig:sec-login (p37): flechas cruzan texto "o" → reordenar participantes, etiquetas más cortas o en dos líneas, flechas con codos (|-/-|).
+  - fig:sec-google (p38): letras 7.4pt, flechas cruzan 3 textos → mismo.
+  - fig:sec-baja (p39): flechas cruzan 2 textos → mismo.
+  - fig:juego-arquitectura (p52): flechas cruzan 10 textos, palabra partida "render-" → separar cajas, aumentar node distance, flechas con codos, \mbox{} en nombres.
+  - fig:sec-partida (p54): flechas cruzan 3 textos ("lloooopp", "reparte", "jugar") → etiquetas más cortas, saltos de línea.
+  - fig:sec-contratar (p55): flechas cruzan texto "p2" → mismo.
+  - fig:pipeline (p62): palabra partida "Ar-" → \mbox{Ar} o caja más ancha.
+  - fig:burndown-s1, fig:burndown-s2 (pgfplots): ejes y marcas ≥7,5pt.
+- Si algún diagrama incumple, **redibujarlo** (separar cajas, aumentar text width, saltos de línea manuales \\, flechas con codos |-/-|, reducir participantes agrupando) **sin usar adjustbox/resizebox/scale** para encoger.
+- Verificar que todas las longtable terminan con \\* antes de \bottomrule para que la última fila no quede sola en página siguiente.
+- Confirmar que el PDF final no tiene «??», referencias rotas, ni overfull hbox/vbox.
+
+## 2026-11-22 01:53 · 🧠 Conocimiento guardado
+
+[[cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2]] · [[alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados]]
