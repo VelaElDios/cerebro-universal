@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-22 08:49"
+actualizado: "2026-11-22 09:31"
 ---
 
 # memoria-procesos
@@ -22,7 +22,7 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (PDF 96 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Imágenes no repetidas OK. Subfiguras OK. Trazabilidad completa OK.
-- **verificar.py**: FALLA (3 overfull hbox en chapters/04-descripcion.tex líneas 132-133, 370-371, 484-485). **Corrección aplicada**: añadido `\allowbreak` en puntos adicionales de las tres tablas longtable (tab:rf-sprint1, tab:modulos, tab:api).
+- **verificar.py**: FALLA (3 overfull hbox en chapters/04-descripcion.tex líneas 132-133, 361-362, 475-476). **Corrección aplicada**: cambiadas las tres tablas longtable (tab:rf-sprint1, tab:modulos, tab:api) para usar `\path{}` en lugar de `\texttt{}` en rutas y código, y eliminadas filas duplicadas en tab:modulos.
 - **revisar_maquetacion.py**: no ejecutado (pendiente tras corregir overfull).
 - **revisar_umlsd.py**: no ejecutado (pendiente).
 - **Revisión visual PDF**: pendiente (diagramas incumplen reglas 16-18).
