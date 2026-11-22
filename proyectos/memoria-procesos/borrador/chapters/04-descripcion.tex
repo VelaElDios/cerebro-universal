@@ -11,7 +11,7 @@ Esta sección presenta los requisitos funcionales y no funcionales del proyecto,
 
 La Tabla~\ref{tab:rf-sprint1} recoge los 13 requisitos funcionales del Sprint 1.
 
-\begin{longtable}{@{}L{0.7cm} L{3.0cm} L{0.5cm} L{0.6cm} L{5.2cm} L{1.5cm}@{}}
+\begin{longtable}{@{}L{0.7cm} L{2.8cm} L{0.5cm} L{0.6cm} L{5.5cm} L{1.5cm}@{}}
 \caption{Requisitos funcionales del Sprint 1.}\label{tab:rf-sprint1}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Hito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endfirsthead
@@ -99,7 +99,7 @@ RNF-12 & \textbf{Mantenibilidad} & Sin frameworks ni compilación en el frontend
 \subsection{Vista general: arquitectura en capas}
 \label{sec:vista-general}
 
-La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servidor (Node.js + Express) sirve también el frontend estático, por lo que todo vive en el mismo origen.
+La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servidor (Node.js + Express) sirve también el frontend estático, por lo que todo vive en el mismo origen. El módulo \path{accountConfirmationService.js} gestiona el envío y verificación de los enlaces de confirmación.
 
 \begin{figure}[htbp]
 \centering
@@ -257,7 +257,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 La Tabla~\ref{tab:modulos} resume los módulos del backend.
 
 {\small
-\begin{longtable}{@{}L{4.0cm} L{8.0cm}@{}}
+\begin{longtable}{@{}L{3.8cm} L{8.2cm}@{}}
 \caption{Módulos del backend.}\label{tab:modulos}\\
 \toprule
 \textbf{Módulo} & \textbf{Qué hace} \\
@@ -283,9 +283,9 @@ La Tabla~\ref{tab:modulos} resume los módulos del backend.
 \path{services/passwordHasher.js} & bcrypt (coste 10; en las pruebas, 4) \\
 \path{services/juegoService.js} & Reglas del servidor del juego: perfiles, partidas, validación anti-trampas, recompensas, logros, contratos, entrenamiento, identidad y ranking \\
 \path{services/domainPolicy.js} & Prueba técnica: dominios permitidos \\
-\path{services/errors.js} & Errores tipados: \path{ValidationError}, \path{UnauthorizedError}, \path{ForbiddenError}, \path{AccountPendingError}, \path{NotFoundError}, \path{ConflictError}, \path{ServiceUnavailableError} \\
+\path{services/errors.js} & Errores tipados: \texttt{ValidationError}, \texttt{UnauthorizedError}, \texttt{ForbiddenError}, \texttt{AccountPendingError}, \texttt{NotFoundError}, \texttt{ConflictError}, \texttt{ServiceUnavailableError} \\
 \path{repositories/*} & \path{memoryUserRepository}, \path{postgresUserRepository}, \path{memoryJuegoRepository}, \path{postgresJuegoRepository} \\
-\path{integrations/mailer.js} & Correo por SMTP (\path{nodemailer}) o, sin \path{SMTP_URL}, escrito en el registro \\
+\path{integrations/mailer.js} & Correo por SMTP (\texttt{nodemailer}) o, sin \texttt{SMTP\_URL}, escrito en el registro \\
 \path{integrations/googleOAuth.js} & URL de autorización de Google e intercambio del código por el perfil \\
 \path{db/migrate.js}, \path{db/migrations/*.sql} & Migraciones versionadas (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras la baja) \\*
 \bottomrule
@@ -304,7 +304,7 @@ Las vistas (\path{ui/vistas/*.js}) exportan \texttt{montar(raiz, contexto)} y de
 La lista completa de rutas está en el \texttt{README} del repositorio. Resumen en la Tabla~\ref{tab:api}.
 
 {\small
-\begin{longtable}{@{}L{2.5cm} L{7.5cm} L{2.5cm}@{}}
+\begin{longtable}{@{}L{2.3cm} L{7.7cm} L{2.5cm}@{}}
 \caption{Rutas principales de la API.}\label{tab:api}\\
 \toprule
 \textbf{Grupo} & \textbf{Rutas} & \textbf{Acceso} \\
