@@ -13979,3 +13979,61 @@ Lo que corrijo yo: En chapters/04-descripcion.tex, estrecho **fig:sec-registro**
 - Revisión visual obligatoria del PDF página a página.
 - Verificar que no quedan figuras repetidas y que todas las capturas mínimas por carpeta están presentes (app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+).
 - Confirmar que el anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
+
+## 2026-11-22 22:09 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los diagramas que causan overfull hbox y violan las reglas 16-18 de Javier. El error crítico es `fig:sec-registro` (54pt más ancho que la página) en chapters/04-descripcion.tex. También debo arreglar 8 diagramas más con flechas cruzando texto y palabras partidas. Haré los cambios en tres archivos: 04-descripcion.tex (5 diagramas), 04b-juego.tex (3 diagramas) y 05-evaluacion.tex (1 diagrama), reduciendo separación entre participantes, acortando etiquetas, usando fuentes más pequeñas y evitando particiones de palabras.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Intentos:**
+- intento 1: ❌ ⚠️ Figuras: no pude revisar Figura 3.2 (fig:modelo-datos): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-flash-lite-latest is not f…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox y que `verificar.py` queda en verde. Si pasa, ejecutar `revisar_maquetacion.py` para validar reglas de maquetación de Javier (diagramas reglas 16-18, páginas con una sola imagen, secciones cortas, figuras repetidas). Luego `revisar_umlsd.py` para validar los 7 diagramas de secuencia. Finalmente revisión visual del PDF página a página.
+
+## 2026-11-22 22:15 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (Memoria.pdf 95 páginas generado)
+- verificar.py: OK (35 figuras, 29 tablas, 16935 palabras)
+- revisar_maquetacion.py: FALLA - 6 diagramas incumplen reglas 16-18 (flechas cruzando texto, letras <7.5pt): fig:capas (p28), fig:sec-registro (p36, 6.0pt), fig:sec-confirmacion (p37, 6.0pt), fig:sec-google (p39, 6.0pt), fig:sec-baja (p40, 6.0pt), fig:juego-arquitectura (p52, 8 cajas con flechas cruzando)
+- 5 diagramas no revisados por Gemini (404): fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2
+- Overfull hbox residual: 10.01pt en línea 23 (T1--T82)
+- Portada única: OK (elements/preambulo.tex sin segunda portada)
+- Resumen: ≥150 palabras, dos sprints, juego, club, logros, música ✓
+- Abstract: ≥120 palabras, mismo contenido en inglés ✓
+- Anexo desarrollo: dos sprints mismo esquema, explica recta Sprint 2 ✓
+- Anexo trazabilidad: 82 tareas (T1-T82) con requisito→PBI→tarea→PR ✓
+- Cifras contrastadas: 19 PBIs S1, 29 PBIs S2, 32+50=82 tareas, 276 pruebas (322 tras Fase 7), 5 migraciones, 23 endpoints, ~14.8k líneas juego, 36 jugadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 rivales, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones, URL Cloud Run, repo GitHub, fechas sprints, P19 cambio alcance, D-19 backlog S2 registrado al cierre
+
+Qué está bien: La estructura general compila, verificar.py pasa, la portada única está implementada, Resumen/Abstract cumplen mínimos, anexos tienen el contenido requerido, trazabilidad completa 82 tareas, datos numéricos contrastados con fuentes.
+
+Qué está mal: 
+1. **Diagramas siguen violando reglas 16-18 de Javier** pese a los intentos del constructor: flechas/linneas cruzan texto de cajas/etiquetas en 6 diagramas, y 4 diagramas de secuencia tienen letras de 6.0pt (mínimo 7.5pt) por haber sido escalados con \tiny/\resizebox en lugar de replantearlos.
+2. **Overfull hbox residual 10pt** en la tabla de trazabilidad (columna Descripción con "T1--T82" sin \allowbreak).
+3. **5 diagramas no revisados** por Gemini (error 404 modelo) pero deben validarse igual.
+4. **Cadenas "La figura X muestra..."** aún presentes en varios capítulos (ej. cap:descripcion "El recorrido está en la Figura~\ref{fig:sec-registro}", cap:juego "La Figura~\ref{fig:juego-menu-vestuario} ilustra...").
+5. **Imágenes repetidas**: capturas de DoneTonic (tablero S1, gráficas S1, backlog) aparecen en cap:propuesta Y en anx:desarrollo; capturas de producción (correo, actions, google) en cap:evaluacion Y referenciadas desde cap:descripcion.
+
+Lo que corrijo yo: 
+- Arreglo overfull hbox en anx:trazabilidad añadiendo \allowbreak en "T1--T82".
+- Replanteo 6 diagramas problemáticos (no escalar): reduciendo participantes, acortando etiquetas, aumentando separación, usando codos en flechas, y tamaño de fuente ≥\scriptsize (8pt+).
+- Elimino cadenas "La figura X muestra..." integrando capturas en prosa.
+- Dejo cada captura DoneTonic/producción en un solo sitio (cap:propuesta y cap:evaluacion respectivamente) y pongo \ref en el resto.
+
+Lo que dejo como tareas: validar los 5 diagramas no revisados, revisión visual PDF página a página, confirmar mínimos de capturas por carpeta.
+
+**Correcciones del revisor:** `(deshecho: rompía la compilación) (cambio) chapters/a4-trazabilidad.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/05-evaluacion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/03-propuesta.tex`, `(deshecho: rompía la compilación) (cambio) chapters/03-propuesta.tex`, `(deshecho: rompía la compilación) (cambio) chapters/a1-desarrollo.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox y que `verificar.py` y `revisar_maquetacion.py` quedan en verde (diagramas reglas 16-18 corregidos).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin caracteres prohibidos en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos).
+- Revisión visual obligatoria del PDF página a página: comprobar que no hay páginas con una sola imagen (regla 8), no hay secciones de 1-2 líneas (regla 9), no hay figuras repetidas (regla 10), flechas son $\rightarrow$ (regla 11), diagramas se leen bien a tamaño real (regla 16).
+- Verificar mínimos de capturas por carpeta: app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+.
+- Confirmar que el anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
+- Sustituir referencias a figuras de DoneTonic/producción en cap:descripcion por `\ref` a las figuras únicas en cap:propuesta y cap:evaluacion respectivamente.

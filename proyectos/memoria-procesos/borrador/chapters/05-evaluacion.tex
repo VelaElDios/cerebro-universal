@@ -79,24 +79,24 @@ La Figura~\ref{fig:pipeline} resume el pipeline completo: cada PR ejecuta las pr
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.9cm, font=\footnotesize},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.2cm, align=center, minimum height=0.9cm, font=\footnotesize},
-    decision/.style={diamond, draw=tema, fill=gris95, aspect=2.5, text width=2.4cm, align=center, font=\footnotesize},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.8cm, align=center, minimum height=0.85cm, font=\scriptsize, inner sep=2pt},
+    decision/.style={diamond, draw=tema, fill=gris95, aspect=2.5, text width=2.2cm, align=center, font=\scriptsize, inner sep=2pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    \node[node] (push) {\textbf{Desarrollador}\\Push o PR a GitHub};
+    \node[node] (push) {\textbf{Desarrollador}\\Push o PR};
     \node[nodewide, below=0.7cm of push] (ci) {\textbf{GitHub Actions CI}\\Test PostgreSQL 17 + Docker build};
     \node[decision, below=0.8cm of ci] (dec) {¿CI verde en main?};
     \node[nodewide, below=0.8cm of dec] (deploy) {\textbf{Deploy Cloud Run}\\Auth WIF $\rightarrow$ Artifact Registry\\$\rightarrow$ Cloud Run deploy\\$\rightarrow$ Smoke test};
-    \node[node, right=1.8cm of deploy] (render) {\textbf{Render}\\Webhook paralelo};
-    \node[node, left=1.8cm of dec] (nodeploy) {Sin despliegue};
+    \node[node, right=1.6cm of deploy] (render) {\textbf{Render}\\Webhook paralelo};
+    \node[node, left=1.6cm of dec] (nodeploy) {Sin despliegue};
     \node[node, below=0.7cm of deploy] (prod) {\textbf{Producción activa}\\\url{run.app}};
 
     \draw[arrow] (push) -- (ci);
     \draw[arrow] (ci) -- (dec);
-    \draw[arrow] (dec) -- node[left, font=\scriptsize] {sí} (deploy);
+    \draw[arrow] (dec) -- node[left, font=\tiny] {sí} (deploy);
     \draw[arrow] (deploy) -- (prod);
-    \draw[arrow] (dec) -- node[above, font=\scriptsize] {no} (nodeploy);
+    \draw[arrow] (dec) -- node[above, font=\tiny] {no} (nodeploy);
     \draw[arrow] (deploy) -- (render);
 \end{tikzpicture}
 \caption{Pipeline de integración y despliegue continuos.}
