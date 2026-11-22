@@ -11,7 +11,7 @@ Esta sección presenta los requisitos funcionales y no funcionales del proyecto,
 
 La Tabla~\ref{tab:rf-sprint1} recoge los 13 requisitos funcionales del Sprint 1.
 
-\begin{longtable}{@{}L{0.7cm} L{3.3cm} L{0.5cm} L{0.6cm} L{4.0cm} L{1.8cm}@{}}
+\begin{longtable}{@{}L{0.7cm} L{3.0cm} L{0.5cm} L{0.6cm} L{5.2cm} L{1.5cm}@{}}
 \caption{Requisitos funcionales del Sprint 1.}\label{tab:rf-sprint1}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Hito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endfirsthead
@@ -26,10 +26,10 @@ RF-06 & Roles usuario y administrador, con un primer administrador & 3 & P13 & \
 RF-07 & Listar usuarios, ver si un usuario está activo y cambiar roles (solo admin) & 3 & P13 & \path{GET /api/users}, \path{GET /api/users/:id/active}, \path{PATCH /api/users/:id/role}, vista \path{admin.js} & \path{api.users} \\
 RF-08 & Darse de baja (y que el admin pueda eliminar); nunca eliminar al último admin; tras la baja se puede volver con el mismo email & 3 & P13 & \path{DELETE /api/users/:id} (baja lógica), vistas \path{perfil.js} y \path{admin.js} & \path{userService}, \path{api.users} \\
 RF-09 & Registro de la actividad relevante & 3 & P14 & \path{src/logger.js}, \path{requestLogger} & \path{logger} \\
-RF-10 & Confirmación de la cuenta por correo, con reenvío & 4 & P16 & \path{accountConfirmationService}, \path{tokenSigner}, \path{mailer}, \path{GET /api/auth/confirm}, \path{POST /api/auth/resend-confirmation} & \path{accountConfirmation}, \path{tokenSigner}, \path{mailer}, \path{api.auth} \\
-RF-11 & Inicio de sesión con proveedor externo (Google, OAuth 2.0) \cite{rfc6749} & 4 & P15 & \path{googleOAuth.js}, \path{GET /api/auth/google}, \path{GET /api/auth/google/callback}, \path{userService.loginWithOAuth} & \path{googleOAuth}, \path{userService} \\
-RF-12 & Manejo de errores con información clara al usuario & 4 & P17 & \path{errorHandler.js}, \path{componentes.js}, \path{avisos.js}, \path{api.js} (timeout) & \path{api.*}, \path{frontend} \\
-RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \path{domainPolicy.js}, \path{POST /api/prueba/dominio} & \path{domainPolicy} (13) \\*
+RF-10 & Confirmación de la cuenta por correo, con reenvío & 4 & P16 & \path{services/accountConfirmationService.js}, \path{services/tokenSigner.js}, \path{integrations/mailer.js}, \path{GET /api/auth/confirm}, \path{POST /api/auth/resend-confirmation} & \path{accountConfirmation}, \path{tokenSigner}, \path{mailer}, \path{api.auth} \\
+RF-11 & Inicio de sesión con proveedor externo (Google, OAuth 2.0) \cite{rfc6749} & 4 & P15 & \path{integrations/googleOAuth.js}, \path{GET /api/auth/google}, \path{GET /api/auth/google/callback}, \path{services/userService.loginWithOAuth} & \path{googleOAuth}, \path{userService} \\
+RF-12 & Manejo de errores con información clara al usuario & 4 & P17 & \path{api/errorHandler.js}, \path{ui/componentes.js}, \path{ui/avisos.js}, \path{public/js/api.js} (timeout) & \path{api.*}, \path{frontend} \\
+RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \path{services/domainPolicy.js}, \path{POST /api/prueba/dominio} & \path{domainPolicy} (13) \\*
 \bottomrule
 \end{longtable}
 
@@ -257,7 +257,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 La Tabla~\ref{tab:modulos} resume los módulos del backend.
 
 {\small
-\begin{longtable}{@{}L{3.5cm} L{8.5cm}@{}}
+\begin{longtable}{@{}L{4.0cm} L{8.0cm}@{}}
 \caption{Módulos del backend.}\label{tab:modulos}\\
 \toprule
 \textbf{Módulo} & \textbf{Qué hace} \\
@@ -304,7 +304,7 @@ Las vistas (\path{ui/vistas/*.js}) exportan \texttt{montar(raiz, contexto)} y de
 La lista completa de rutas está en el \texttt{README} del repositorio. Resumen en la Tabla~\ref{tab:api}.
 
 {\small
-\begin{longtable}{@{}L{2.5cm} L{6.5cm} L{3.5cm}@{}}
+\begin{longtable}{@{}L{2.5cm} L{7.5cm} L{2.5cm}@{}}
 \caption{Rutas principales de la API.}\label{tab:api}\\
 \toprule
 \textbf{Grupo} & \textbf{Rutas} & \textbf{Acceso} \\
@@ -314,9 +314,9 @@ La lista completa de rutas está en el \texttt{README} del repositorio. Resumen 
 \textbf{Grupo} & \textbf{Rutas} & \textbf{Acceso} \\
 \midrule \endhead
 Salud & \path{GET /api/health} & Público \\
-Autenticación & \path{POST register}, \path{POST login}, \path{POST logout}, \path{GET me}, \path{GET confirm}, \path{POST resend-confirmation}, \path{GET providers}, \path{GET google}, \path{GET google/callback} & Público (salvo \path{me}) \\
-Usuarios & \path{GET /users}, \path{GET /users/:id/active}, \path{PATCH /users/:id/role}, \path{DELETE /users/:id} & Admin (la baja, propio o admin) \\
-Juego & \path{GET perfil}, \path{POST partidas}, \path{POST partidas/:id/fin}, \path{POST contratar}, \path{POST entrenar}, \path{PUT identidad}, \path{GET ranking}, \path{POST desbloquear} & Sesión (\path{desbloquear}, admin) \\
+Autenticación & \path{POST /api/auth/register}, \path{POST /api/auth/login}, \path{POST /api/auth/logout}, \path{GET /api/auth/me}, \path{GET /api/auth/confirm}, \path{POST /api/auth/resend-confirmation}, \path{GET /api/auth/providers}, \path{GET /api/auth/google}, \path{GET /api/auth/google/callback} & Público (salvo \path{me}) \\
+Usuarios & \path{GET /api/users}, \path{GET /api/users/:id/active}, \path{PATCH /api/users/:id/role}, \path{DELETE /api/users/:id} & Admin (la baja, propio o admin) \\
+Juego & \path{GET /api/juego/perfil}, \path{POST /api/juego/partidas}, \path{POST /api/juego/partidas/:id/fin}, \path{POST /api/juego/contratar}, \path{POST /api/juego/entrenar}, \path{PUT /api/juego/identidad}, \path{GET /api/juego/ranking}, \path{POST /api/juego/desbloquear} & Sesión (\path{desbloquear}, admin) \\
 Prueba técnica & \path{POST /api/prueba/dominio} & Público \\*
 \bottomrule
 \end{longtable}}
