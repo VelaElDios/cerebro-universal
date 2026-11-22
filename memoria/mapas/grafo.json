@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T08:08:51+01:00",
+ "generado": "2026-11-22T08:49:49+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1790,7 +1790,8 @@
     "scrum",
     "sprint",
     "tarea",
-    "tareas"
+    "tareas",
+    "trazabilidad"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -6253,7 +6254,7 @@
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 14,
+   "peso": 15,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -11992,6 +11993,11 @@
   {
    "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
    "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
+   "a": "tema:trazabilidad",
    "tipo": "trata"
   },
   {

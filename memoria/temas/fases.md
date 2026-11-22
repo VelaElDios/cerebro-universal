@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fases» (este archivo se 
 
 ## Temas relacionados
 
-[[fechas]] · [[scrum]] · [[tareas]] · [[donetonic]] · [[grada-colchonera]] · [[hitos]] · [[pbi]] · [[sprint]] · [[tarea]] · [[pbis]] · [[sprint2]]
+[[fechas]] · [[scrum]] · [[tareas]] · [[donetonic]] · [[grada-colchonera]] · [[hitos]] · [[pbi]] · [[sprint]] · [[tarea]] · [[trazabilidad]] · [[pbis]] · [[sprint2]]

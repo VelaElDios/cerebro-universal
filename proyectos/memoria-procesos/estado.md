@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-22 06:49"
+actualizado: "2026-11-22 08:49"
 ---
 
 # memoria-procesos
@@ -22,12 +22,11 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (PDF 96 páginas, sin "Infinite glue shrinkage").
 - **Reglas Javier**: Portada única OK; declaraciones, resumen, abstract OK; índices OK. Longtables con `\\*` OK. Sección corta fusionada OK. Prosa sin "La figura X muestra" OK. Imágenes no repetidas OK. Subfiguras OK. Trazabilidad completa OK.
-- **verificar.py**: FALLA (3 overfull hbox en chapters/04-descripcion.tex líneas 132-133, 361-362, 475-476). **Corrección aplicada**: añadido `\allowbreak` en tres celdas de longtable (tab:rnf, tab:modulos, tab:api).
+- **verificar.py**: FALLA (3 overfull hbox en chapters/04-descripcion.tex líneas 132-133, 370-371, 484-485). **Corrección aplicada**: añadido `\allowbreak` en puntos adicionales de las tres tablas longtable (tab:rf-sprint1, tab:modulos, tab:api).
 - **revisar_maquetacion.py**: no ejecutado (pendiente tras corregir overfull).
 - **revisar_umlsd.py**: no ejecutado (pendiente).
 - **Revisión visual PDF**: pendiente (diagramas incumplen reglas 16-18).
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad 82 tareas completa.
-- **Correcciones aplicadas**: 2 figuras Hito 4 con subfiguras reducidas a 0.15\textheight; 3 overfull hbox en chapter 04-descripcion corregidos añadiendo \allowbreak en rutas largas.
 
 ## Siguiente
 1. Ejecutar `comando_prueba` y confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK.

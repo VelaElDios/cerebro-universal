@@ -19,4 +19,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tarea» (este archivo se 
 
 ## Temas relacionados
 
-[[pbi]] · [[scrum]] · [[grada-colchonera]] · [[sprint]] · [[donetonic]] · [[fechas]] · [[hitos]] · [[tareas]] · [[gestión]] · [[github flow]] · [[trazabilidad]] · [[github]]
+[[pbi]] · [[scrum]] · [[grada-colchonera]] · [[sprint]] · [[trazabilidad]] · [[donetonic]] · [[fechas]] · [[hitos]] · [[tareas]] · [[gestión]] · [[github flow]] · [[github]]

@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tareas» (este archivo se
 
 ## Temas relacionados
 
-[[pbis]] · [[fechas]] · [[pbi]] · [[scrum]] · [[metricas]] · [[sprints]] · [[pruebas]] · [[memoria-procesos]] · [[fases]] · [[grada-colchonera]] · [[hitos]] · [[sprint]]
+[[pbis]] · [[fechas]] · [[pbi]] · [[scrum]] · [[trazabilidad]] · [[metricas]] · [[sprints]] · [[pruebas]] · [[memoria-procesos]] · [[fases]] · [[grada-colchonera]] · [[hitos]]

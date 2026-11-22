@@ -13422,3 +13422,46 @@ Voy a corregir los 3 overfull hbox en chapters/04-descripcion.tex examinando pri
 ⏱️ Solo quedan 29 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-22 08:48 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los 3 overfull hbox en chapters/04-descripcion.tex añadiendo \allowbreak en las celdas de longtable con rutas de código largas que no se parten. Primero examinaré el contenido exacto de las líneas problemáticas (132-133, 361-362, 475-476) para aplicar correcciones precisas con textos que coincidan exactamente.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar comando_prueba para confirmar que la compilación pasa, verificar.py OK y revisar_maquetacion.py OK. Si persisten overfull, identificar líneas exactas y añadir más \allowbreak. Luego ejecutar revisar_umlsd.py para validar los 7 diagramas de secuencia.
+
+## 2026-11-22 08:49 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (PDF 96 páginas generado sin errores de LaTeX)
+- verificar.py: FALLA con 3 overfull hbox persistentes en chapters/04-descripcion.tex:
+  1. 35 pt en líneas 132-133 (tabla tab:rf-sprint1, celda con rutas largas)
+  2. 127 pt en líneas 370-371 (tabla tab:modulos, celdas con rutas de módulos)
+  3. 32 pt en líneas 484-485 (tabla tab:api, celdas con listas de rutas)
+- revisar_maquetacion.py: no ejecutado (pendiente que pase verificar.py)
+- revisar_umlsd.py: no ejecutado (pendiente)
+- Reglas de Javier: portada única OK, declaraciones/resumen/abstract OK, índices OK, longtables con \\* OK, prosa sin "La figura X muestra" OK, imágenes no repetidas OK, subfiguras OK, trazabilidad completa OK
+- Datos contrastados: 19 PBIs Sprint 1 (sprint-1.md), 29 PBIs Sprint 2 (sprint-2.md), 32+50=82 tareas, 276 pruebas al cierre Sprint 2 (procesos.md), 322 tras Fase 7 (log.md), 5 migraciones, 23 endpoints, ~2300 líneas backend, ~14800 líneas juego
+- El constructor intentó corregir añadiendo \allowbreak pero los textos de búsqueda no coincidían exactamente; los overfull persisten en las mismas tres tablas (RF, módulos, API) con rutas/códigos largos que no se parten
+
+La compilación pasa pero verificar.py detecta 3 overfull hbox en tablas longtable del capítulo 04-descripcion.tex. El problema son rutas de código y listas de endpoints dentro de celdas \texttt{} y \path{} que no se parten aunque tengan \allowbreak. Las correcciones del constructor no dieron en el blanco exacto (mensajes "no aplicado"). Hay que añadir más puntos de corte (\allowbreak) en lugares naturales: tras barras (/), puntos (.) y comas en las rutas largas de las tres tablas afectadas.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\texttt{POST register}, \texttt{POST login}, \texttt{POST lo») chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin `# _ & % $ {} \` en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos)
+- Revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier (diagramas: letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas, sin cruces de flechas sobre textos/cajas)
+
+## 2026-11-22 08:49 · 🧠 Conocimiento guardado
+
+[[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]]

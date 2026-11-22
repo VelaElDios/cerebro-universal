@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)"
-temas: ["donetonic", "fases", "fechas", "grada-colchonera", "hitos", "pbi", "scrum", "sprint", "tarea", "tareas"]
+temas: ["donetonic", "fases", "fechas", "grada-colchonera", "hitos", "pbi", "scrum", "sprint", "tarea", "tareas", "trazabilidad"]
 claves: ["Sprint 1", "Sprint 2", "PBIs", "tareas", "fechas", "PBI", "tarea", "hito", "fase"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1, §4.4, §4.6", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md"]
+fuentes: ["repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1, §4.4, §4.6", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md", "repo:saas/docs/sprint-1.md y repo:saas/docs/sprint-2.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-22"
@@ -181,6 +181,10 @@ Sprint 1 (29/09–27/10/2026): 19 PBIs, 32 tareas, 4 hitos. Sprint 2 (23/10–29
 
 ## Ampliación (2026-11-22, memoria-procesos)
 Sprint 1: Hitos 1-4, 19 PBIs, 32 tareas. Sprint 2: 7 fases, 29 PBIs, 50 tareas. Burndown Sprint 1: 15→9→5→1→2→0 (16 PBIs en alcance de entrega). Burndown real Sprint 2: 28→11→11→2→2→2→0. DoneTonic Sprint 2 en recta porque backlog registrado al cerrar sprint.
+
+## Ampliación (2026-11-22, memoria-procesos)
+Sprint 1 (29/09–27/10): Hitos 1–4, P1–P19, T1–T32. Entrega 12/10 (Hitos 1–3 + P18,P19 = 16 PBIs). Hito 4 completado 23/10. Sprint 2 (23/10–29/10): P20–P48, T33–T82, 6 fases + Calidad. Backlog registrado en DoneTonic al cierre (29/10) → gráficas en recta. Evolución real por fechas de PR: 23/10 (1), 24/10 (17), 26/10 (9), 29/10 (2).
+relacionado: Burndown real vs DoneTonic en Sprint 2, Trazabilidad requisito-PBI-tarea-PR en DoneTonic y GitHub
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

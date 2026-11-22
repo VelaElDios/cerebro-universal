@@ -26,7 +26,7 @@ RF-06 & Roles usuario y administrador, con un primer administrador & 3 & P13 & \
 RF-07 & Listar usuarios, ver si un usuario está activo y cambiar roles (solo admin) & 3 & P13 & \texttt{GET}\allowbreak \path{/api/users}, \texttt{GET}\allowbreak \path{/api/users/:id/active}, \texttt{PATCH}\allowbreak \path{/api/users/:id/role}, vista \path{admin.js} & \path{api.users} \\
 RF-08 & Darse de baja (y que el admin pueda eliminar); nunca eliminar al último admin; tras la baja se puede volver con el mismo email & 3 & P13 & \texttt{DELETE}\allowbreak \path{/api/users/:id} (baja lógica), vistas \path{perfil.js} y \path{admin.js} & \path{userService}, \path{api.users} \\
 RF-09 & Registro de la actividad relevante & 3 & P14 & \path{src/logger.js}, \path{requestLogger} & \path{logger} \\
-RF-10 & Confirmación de la cuenta por correo, con reenvío & 4 & P16 & \texttt{accountConfirmation\allowbreak Service}, \path{tokenSigner}, \path{mailer}, \texttt{GET}\allowbreak \texttt{/api/auth/\allowbreak confirm}, \texttt{POST}\allowbreak \texttt{/api/auth/\allowbreak resend-confirmation} & \path{accountConfirmation}, \path{tokenSigner}, \path{mailer}, \path{api.auth} \\
+RF-10 & Confirmación de la cuenta por correo, con reenvío & 4 & P16 & \texttt{accountConfirmation\allowbreak Service}, \path{tokenSigner}, \path{mailer}, \texttt{GET}\allowbreak \texttt{/api/auth/\allowbreak confirm}, \texttt{POST}\allowbreak \texttt{/api/auth/\allowbreak resend-\allowbreak confirmation} & \path{accountConfirmation}, \path{tokenSigner}, \path{mailer}, \path{api.auth} \\
 RF-11 & Inicio de sesión con proveedor externo (Google, OAuth 2.0) \cite{rfc6749} & 4 & P15 & \path{googleOAuth.js}, \texttt{GET}\allowbreak \texttt{/api/auth/\allowbreak google}, \texttt{GET}\allowbreak \texttt{/api/auth/google/\allowbreak callback}, \texttt{userService.\allowbreak loginWithOAuth} & \path{googleOAuth}, \path{userService} \\
 RF-12 & Manejo de errores con información clara al usuario & 4 & P17 & \path{errorHandler.js}, \path{componentes.js}, \path{avisos.js}, \path{api.js} (timeout) & \path{api.*}, \path{frontend} \\
 RF-13 & Prueba técnica: solo dominios de correo permitidos & Prueba & — & \path{domainPolicy.js}, \texttt{POST}\allowbreak \path{/api/prueba/dominio} & \path{domainPolicy} (13) \\*
@@ -78,7 +78,7 @@ La Tabla~\ref{tab:rnf} recoge los 12 requisitos no funcionales.
 \textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endfirsthead
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Cómo se cumple} \\ \midrule \endhead
-RNF-01 & \textbf{Seguridad} de credenciales y sesiones & Hash bcrypt \cite{bcrypt}, cookie \path{httpOnly} + \path{secure} + \path{sameSite}, regeneración de la sesión, permisos en el servidor, consultas parametrizadas\allowbreak{} \\
+RNF-01 & \textbf{Seguridad} de credenciales y sesiones & Hash bcrypt \cite{bcrypt}, cookie \path{httpOnly} + \path{secure} + \path{sameSite}, regeneración de la sesión, permisos en el servidor, consultas \allowbreak parametrizadas \\
 RNF-02 & \textbf{Secretos fuera del código} & Variables de entorno; Secret Manager en producción; la app no arranca si falta un secreto obligatorio \\
 RNF-03 & \textbf{Separación en capas} & API $\rightarrow$ lógica $\rightarrow$ datos/integraciones, con inyección de dependencias \\
 RNF-04 & \textbf{Pruebas automáticas} y CI obligatorio & 322 pruebas con \path{node:test}; las ramas protegidas exigen el CI en verde \\
@@ -271,14 +271,23 @@ La Tabla~\ref{tab:modulos} resume los módulos del backend.
 \path{app.js} & Construye la app Express: JSON, sesión, \path{/api} y los estáticos de \path{public/} \\
 \path{config.js}, \path{loadConfig.js} & Leen y validan las variables de entorno; en producción exigen los secretos \\
 \path{logger.js} & Logs JSON por línea, con niveles y ocultación de datos sensibles \\
-\texttt{api/\allowbreak index.js} & Monta el router: \path{requestLogger}, \path{currentUser}, \path{/health}, \path{/auth}, \path{/prueba}, \path{/users} y \path{/juego} (con \path{requireAuth}), 404 y manejador de errores\allowbreak{} \\
+\texttt{api/\allowbreak index.js} & Monta el router: \path{requestLogger}, \path{currentUser}, \path{/health}, \path{/auth}, \path{/prueba}, \path{/users} y \path{/juego} (con \path{requireAuth}), 404 y manejador de errores \\
 \texttt{api/\allowbreak auth.js} & Registro, confirmación, reenvío, login, Google, logout y \path{me} \\
 \texttt{api/\allowbreak users.js} & Administración de usuarios (\texttt{requireRole('admin')}, \texttt{requireSelfOrRole('admin')}) \\
-\texttt{api/\allowbreak juego.js} & Perfil, partidas, contratos, entrenamiento, identidad, ranking y modo pruebas\allowbreak{} \\
+\texttt{api/\allowbreak juego.js} & Perfil, partidas, contratos, entrenamiento, identidad, ranking y modo pruebas \\
 \texttt{api/\allowbreak currentUser.js} & Middlewares de identidad, autenticación y autorización \\
 \texttt{api/\allowbreak errorHandler.js} & Traduce los errores tipados a HTTP (\texttt{\{ error: \{ code, message \} \}}) \\
 \texttt{services/\allowbreak userService.js} & Reglas de usuarios: registro, autenticación, OAuth, roles, bajas, último administrador y primer administrador \\
 \texttt{services/\allowbreak accountConfirmation\allowbreak Service.js} & Crea y envía el enlace de confirmación, confirma y reenvía \\
+\texttt{services/\allowbreak tokenSigner.js} & Tokens firmados con HMAC-SHA256 y caducidad \\
+\texttt{services/\allowbreak passwordHasher.js} & bcrypt (coste 10; en las pruebas, 4) \\
+\texttt{services/\allowbreak juegoService.js} & Reglas del servidor del juego: perfiles, partidas, validación anti-trampas, recompensas, logros, contratos, entrenamiento, identidad y ranking\allowbreak \\
+\texttt{services/\allowbreak domainPolicy.js} & Prueba técnica: dominios permitidos \\
+\texttt{services/\allowbreak errors.js} & Errores tipados: \path{ValidationError}, \path{UnauthorizedError}, \path{ForbiddenError}, \path{AccountPendingError}, \path{NotFoundError}, \path{ConflictError}, \path{ServiceUnavailableError} \\
+\texttt{repositories/\allowbreak *} & \path{memoryUserRepository}, \path{postgresUserRepository}, \path{memoryJuegoRepository}, \path{postgresJuegoRepository} \\
+\texttt{integrations/\allowbreak mailer.js} & Correo por SMTP (\path{nodemailer}) o, sin \texttt{SMTP\_URL}, escrito en el registro \\
+\texttt{integrations/\allowbreak googleOAuth.js} & URL de autorización de Google e intercambio del código por el perfil \\
+\path{db/migrate.js}, \texttt{db/migrations/\allowbreak *.sql} & Migraciones versionadas (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre tras la baja) \\*
 \texttt{services/\allowbreak tokenSigner.js} & Tokens firmados con HMAC-SHA256 y caducidad \\
 \texttt{services/\allowbreak passwordHasher.js} & bcrypt (coste 10; en las pruebas, 4) \\
 \texttt{services/\allowbreak juegoService.js} & Reglas del servidor del juego: perfiles, partidas, validación anti-trampas, recompensas, logros, contratos, entrenamiento, identidad y ranking\allowbreak \\
