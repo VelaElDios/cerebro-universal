@@ -81,7 +81,7 @@
   "bien": 3,
   "mal": 0,
   "ultimo": "2026-11-22",
-  "usos": 17
+  "usos": 18
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -135,7 +135,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-22",
-  "usos": 17
+  "usos": 18
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
@@ -183,7 +183,7 @@
   "bien": 4,
   "mal": 2,
   "ultimo": "2026-11-22",
-  "usos": 46
+  "usos": 47
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
@@ -225,7 +225,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-22",
-  "usos": 3
+  "usos": 4
  },
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 4,
