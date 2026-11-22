@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T05:18:06+01:00",
+ "generado": "2026-11-22T06:49:57+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -4096,6 +4096,21 @@
    "ruta": "memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd.md"
   },
   {
+   "id": "receta:como-evitar-overfull-hbox-con-texttt-largo-en-longtable",
+   "tipo": "receta",
+   "titulo": "Cómo evitar overfull hbox con \\texttt largo en longtable",
+   "temas": [
+    "latex",
+    "longtable",
+    "overfull"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo-en-longtable.md"
+  },
+  {
    "id": "receta:como-evitar-overfull-hbox-con-texttt-largo",
    "tipo": "receta",
    "titulo": "Cómo evitar overfull hbox con \\texttt largo",
@@ -4448,6 +4463,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md"
+  },
+  {
+   "id": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "tipo": "receta",
+   "titulo": "Diagramas de secuencia con pgf-umlsd: reglas de sintaxis",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "sequencediagram"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis.md"
   },
   {
    "id": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
@@ -5467,7 +5497,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 148,
+   "peso": 150,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5551,7 +5581,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 17,
+   "peso": 18,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -5579,7 +5609,7 @@
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -5593,7 +5623,7 @@
    "id": "tema:overfull",
    "tipo": "tema",
    "titulo": "overfull",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/overfull.md"
   },
   {
@@ -5642,7 +5672,7 @@
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
@@ -19255,6 +19285,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo-en-longtable",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo-en-longtable",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo-en-longtable",
+   "a": "tema:overfull",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo-en-longtable",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
    "a": "tema:latex",
    "tipo": "trata"
@@ -20303,6 +20353,26 @@
    "de": "receta:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
    "a": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",

@@ -13360,3 +13360,43 @@ El constructor intentó corregir los 3 overfull hbox añadiendo \allowbreak, per
 - Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK
 - Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin `# _ & % $ {} \` en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos)
 - Revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier (diagramas: letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas, sin cruces de flechas sobre textos/cajas)
+
+## 2026-11-22 06:49 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los 3 overfull hbox en chapters/04-descripcion.tex añadiendo \allowbreak en las celdas de longtable con rutas/códigos largos que no se parten. Los errores están en las tablas tab:rnf (líneas 132-133), tab:modulos (361-362) y tab:api (475-476). Aplicaré \allowbreak en puntos naturales de las rutas (tras barras, puntos, guiones) dentro de \texttt{} o \path{}.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\texttt{db/migrate.js}, \texttt{db/migrations/\allowbreak *.») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK. Si persisten overfull, identificar líneas exactas y añadir más \allowbreak. Luego ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia.
+
+## 2026-11-22 06:49 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Overfull hbox en lines 132-133 (35 pt): en la tabla tab:rnf, celda con rutas largas sin puntos de corte.
+- Overfull hbox en lines 361-362 (127 pt): en la tabla tab:modulos, celda con rutas de código largas.
+- Overfull hbox en lines 475-476 (32 pt): en la tabla tab:api, celda con rutas de API largas.
+- Compilación OK (PDF 96 páginas), pero verificar.py falla por estos 3 overfull.
+- Reglas de Javier: portada única OK, declaraciones/resumen/abstract OK, índices OK, longtables con \\* OK, prosa sin "La figura X muestra" OK, imágenes no repetidas OK, subfiguras OK, trazabilidad completa OK.
+- Bibliografía apalike con autores corporativos con doble llave y year en todas las entradas OK.
+- Datos contrastados: 19 PBIs Sprint 1 (sprint-1.md), 29 PBIs Sprint 2 (sprint-2.md), 32+50=82 tareas, 276 pruebas al cierre Sprint 2 (procesos.md), 322 tras Fase 7 (log.md), 5 migraciones, 23 endpoints, ~2300 líneas backend, ~14800 líneas juego.
+
+El constructor intentó corregir los 3 overfull hbox añadiendo \allowbreak, pero los textos de búsqueda no coincidían exactamente con el contenido actual del archivo (mensajes "no aplicado"). La compilación pasa pero verificar.py sigue fallando por los mismos 3 desbordes en celdas de longtable con rutas de código largas (tab:rnf, tab:modulos, tab:api). Es necesario aplicar correcciones precisas con los textos exactos que están en el archivo ahora. Las reglas de maquetación de Javier se cumplen en lo estructural; solo faltan estos 3 overfull para que verificar.py pase y poder ejecutar revisar_maquetacion.py y revisar_umlsd.py.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa, `verificar.py` OK y `revisar_maquetacion.py` OK.
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin `# _ & % $ {} \` en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos).
+- Revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier (diagramas: letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas, sin cruces de flechas sobre textos/cajas).
+
+## 2026-11-22 06:49 · 🧠 Conocimiento guardado
+
+[[como-evitar-overfull-hbox-con-texttt-largo-en-longtable]] · [[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]

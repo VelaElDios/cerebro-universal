@@ -7,7 +7,7 @@ proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1, §4.4, §4.6", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
-actualizado: "2026-11-21"
+actualizado: "2026-11-22"
 ---
 
 Temas: [[donetonic]] · [[fases]] · [[fechas]] · [[grada-colchonera]] · [[hitos]] · [[pbi]] · [[scrum]] · [[sprint]] · [[tarea]] · [[tareas]]
@@ -178,6 +178,9 @@ Sprint 1 (29/09–27/10/2026): 19 PBIs, 32 tareas, 4 hitos. Sprint 2 (23/10–29
   Sprint 2 (23/10–29/10/2026): 29 PBIs, 50 tareas, 7 fases. Backlog registrado al cerrar el sprint (gráficas DoneTonic en recta).
   Total: 48 PBIs, 82 tareas, todos MUST.
   Capturas DoneTonic: 29/10/2026 con ambos sprints cerrados.
+
+## Ampliación (2026-11-22, memoria-procesos)
+Sprint 1: Hitos 1-4, 19 PBIs, 32 tareas. Sprint 2: 7 fases, 29 PBIs, 50 tareas. Burndown Sprint 1: 15→9→5→1→2→0 (16 PBIs en alcance de entrega). Burndown real Sprint 2: 28→11→11→2→2→2→0. DoneTonic Sprint 2 en recta porque backlog registrado al cerrar sprint.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

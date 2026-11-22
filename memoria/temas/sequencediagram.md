@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sequencediagram"
-notas: 4
+notas: 5
 ---
 # sequencediagram
 
@@ -11,6 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este a
 
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c|Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis|Diagramas de secuencia con pgf-umlsd: reglas de sintaxis]] · ⚠️ propuesto
 
 ## Conceptos
 
