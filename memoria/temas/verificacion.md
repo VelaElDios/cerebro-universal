@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 21
+notas: 24
 ---
 # verificacion
 
@@ -28,10 +28,16 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/placeholders-xx-para-numeros-sin-verificar-en-memoria-latex|Placeholders "XX" para números sin verificar en memoria LaTeX]] · ⚠️ propuesto
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c|Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes]] · ⚠️ propuesto
+
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto contrastadas con fuentes]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (para COMPROBACIONES)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -42,4 +48,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[test]] · [[metricas]] · [[memoria-procesos]] · [[métricas]] · [[trazabilidad]] · [[sus]] · [[usabilidad]]
+[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[metricas]] · [[test]] · [[memoria-procesos]] · [[métricas]] · [[trazabilidad]] · [[calidad]] · [[sus]]

@@ -1,13 +1,13 @@
 ---
 tipo: "receta"
 titulo: "Validación final del PDF antes de marcar TERMINADO"
-temas: ["latex", "pdf", "verificacion"]
+temas: ["latex", "pdf", "verificacion", "calidad", "checklist"]
 claves: ["revisar_maquetacion.py", "revisar_umlsd.py", "comando_prueba", "visual"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md § Cómo se comprueba"]
 confianza: "propuesto"
 fecha: "2026-11-22"
-actualizado: "2026-11-22"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[latex]] · [[pdf]] · [[verificacion]]
@@ -33,5 +33,24 @@ Checklist obligatorio antes de TERMINADO:
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
 Relacionado: [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]]
+
+## Ampliación (2026-11-23, memoria-procesos)
+Checklist obligatorio página a página (imprimir PDF o ver a 100% zoom):
+1. **Portada única**: solo la de `elements/portada.tex` (escudo, UCLM, ESII, título, autor, fecha).
+2. **Declaración de autoría, Resumen (≥150 pal), Abstract (≥120 pal), índices** — todos presentes y en orden.
+3. **Sin páginas en blanco** entre capítulos (regla 4).
+4. **Títulos negros negrita** (regla 3), enlaces sin recuadros (`hidelinks`).
+5. **Tablas**: filas no se pisan (`p{}`, `\addlinespace`), anchos ≤ `\linewidth`, código con `\path{}`/`\texttt{}`+`\allowbreak`, `longtable` si > media página, última fila no sola (`\\*`).
+6. **Figuras**: ninguna página con una sola imagen (regla 8) — capturas `height=0.42\textheight`, diagramas `max totalheight=0.6\textheight`, flotantes `[htbp]` con parámetros relajados.
+7. **Sin secciones de 1-2 líneas** (regla 9) — fundir o convertir en lista.
+8. **Sin figuras repetidas** (regla 10) — cada imagen una vez, `\ref` en el resto.
+9. **Flechas reales** `$\rightarrow$` no `->` (regla 11).
+10. **Diagramas legibles a tamaño real** (regla 16): letras ≥7.5 pt, sin flechas cruzando cajas/texto (regla 17), sin palabras partidas en cajas (regla 18), ≤6 participantes en secuencia.
+11. **Todas las figuras/tablas** con `\caption`, `\label`, citadas con `\ref` en texto.
+12. **Bibliografía**: `apalike`, autores corporativos con `{{}}`, `year` en todas (`{s.f.}` si no hay), URLs de fuentes.
+13. **Cifras contrastadas**: cada número >20 en fuentes; números pequeños comprobados por revisor (25+ en COMPROBACIONES).
+14. **Prosa TFG**: impersonal/tercera persona, explica porqué, sin adornos ("trasciende", "exhaustivo"...), rutas/código en `\texttt{}`.
+15. **Ejecuta `comando_prueba`**: compila + `verificar.py` OK + `revisar_maquetacion.py` OK.
+Solo marcar TERMINADO si **todo** lo anterior cumple.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

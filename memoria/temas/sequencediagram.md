@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sequencediagram"
-notas: 5
+notas: 6
 ---
 # sequencediagram
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este a
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c|Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -23,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este a
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[codigos estado]] · [[http]] · [[memoria]] · [[diagramas]] · [[diagramas-secuencia]] · [[secuencia]] · [[tikz]] · [[uml]]
+[[latex]] · [[pgf-umlsd]] · [[verificacion]] · [[codigos estado]] · [[http]] · [[memoria]] · [[diagramas]] · [[diagramas-secuencia]] · [[secuencia]] · [[tikz]] · [[uml]]

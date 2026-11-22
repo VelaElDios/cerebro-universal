@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-22T23:58:52+01:00",
+ "generado": "2026-11-23T00:57:41+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -743,6 +743,22 @@
    "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2.md"
   },
   {
+   "id": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "tipo": "concepto",
+   "titulo": "Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en anexo desarrollo",
+   "temas": [
+    "donetonic",
+    "metricas",
+    "retrospectiva",
+    "scrum"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator.md"
+  },
+  {
    "id": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
    "tipo": "concepto",
    "titulo": "Cadena de middlewares para petición protegida y autorización por roles (requireAuth, requireRole)",
@@ -933,6 +949,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/desglose-del-alcance-del-sprint-1-por-hitos-y-fechas.md"
+  },
+  {
+   "id": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "tipo": "concepto",
+   "titulo": "Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "sequencediagram",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c.md"
   },
   {
    "id": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
@@ -1532,6 +1564,21 @@
    "ruta": "memoria/conocimiento/datos/catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore.md"
   },
   {
+   "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto contrastadas con fuentes (para COMPROBACIONES)",
+   "temas": [
+    "fuentes",
+    "metricas",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp.md"
+  },
+  {
    "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "tipo": "dato",
    "titulo": "Cifras clave del proyecto contrastadas con fuentes",
@@ -1897,6 +1944,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md"
+  },
+  {
+   "id": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "tipo": "dato",
+   "titulo": "Inventario de diagramas obligatorios y su estado",
+   "temas": [
+    "diagramas",
+    "latex",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md"
   },
   {
    "id": "dato:lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
@@ -2537,6 +2599,22 @@
    "ruta": "memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico.md"
   },
   {
+   "id": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "tipo": "decision",
+   "titulo": "Cadenas \"La figura X muestra...\" prohibidas — prosa integrada con subfigure",
+   "temas": [
+    "figuras",
+    "latex",
+    "redaccion",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s.md"
+  },
+  {
    "id": "decision:camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell",
    "tipo": "decision",
    "titulo": "Cámara 3/4 con inercia, inclinación y feedback visual (destellos/aplastado)",
@@ -2898,6 +2976,22 @@
    "ruta": "memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica.md"
   },
   {
+   "id": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "tipo": "decision",
+   "titulo": "Imágenes repetidas — una sola aparición + \\ref en el resto",
+   "temas": [
+    "figuras",
+    "gestion-contenido",
+    "latex",
+    "regla 10 javier"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-ref-en-el-resto.md"
+  },
+  {
    "id": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
    "tipo": "decision",
    "titulo": "Imágenes repetidas: una sola aparición y \\ref en el resto",
@@ -3249,6 +3343,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api.md"
+  },
+  {
+   "id": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
+   "tipo": "decision",
+   "titulo": "Referencias rotas `\\ref{.}` y `\\ref{)}` — causa y solución",
+   "temas": [
+    "depuracion",
+    "latex",
+    "referencias"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/referencias-rotas-ref-y-ref-causa-y-solucion.md"
   },
   {
    "id": "decision:registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g",
@@ -3871,6 +3980,22 @@
    "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
   },
   {
+   "id": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
+   "tipo": "receta",
+   "titulo": "Cómo agrupar capturas relacionadas en subfigure (2 por fila)",
+   "temas": [
+    "figuras",
+    "latex",
+    "maquetacion",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila.md"
+  },
+  {
    "id": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
    "tipo": "receta",
    "titulo": "Cómo añadir \\\\* en longtables para evitar filas huérfanas",
@@ -4287,6 +4412,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar.md"
+  },
+  {
+   "id": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "tipo": "receta",
+   "titulo": "Cómo replantear diagramas TikZ/pgf-umlsd para pasar revisar_maquetacion.py (reglas 16-18)",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar.md"
   },
   {
    "id": "receta:como-se-agrupan-capturas-con-subfigure",
@@ -5423,7 +5564,9 @@
    "temas": [
     "latex",
     "pdf",
-    "verificacion"
+    "verificacion",
+    "calidad",
+    "checklist"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5491,7 +5634,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 150,
+   "peso": 157,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5505,7 +5648,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 28,
+   "peso": 29,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -5568,21 +5711,21 @@
    "id": "tema:referencias",
    "tipo": "tema",
    "titulo": "referencias",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/referencias.md"
   },
   {
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 19,
+   "peso": 21,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 20,
+   "peso": 22,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -5645,14 +5788,14 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 21,
+   "peso": 24,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 12,
+   "peso": 14,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -5666,14 +5809,14 @@
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 19,
+   "peso": 22,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -5855,7 +5998,7 @@
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 49,
+   "peso": 50,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
@@ -5876,7 +6019,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 57,
+   "peso": 58,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -5892,6 +6035,13 @@
    "titulo": "sprint2",
    "peso": 2,
    "ruta": "memoria/temas/sprint2.md"
+  },
+  {
+   "id": "tema:retrospectiva",
+   "tipo": "tema",
+   "titulo": "retrospectiva",
+   "peso": 1,
+   "ruta": "memoria/temas/retrospectiva.md"
   },
   {
    "id": "tema:auth",
@@ -6184,7 +6334,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -6321,6 +6471,13 @@
    "ruta": "memoria/temas/data.md"
   },
   {
+   "id": "tema:fuentes",
+   "tipo": "tema",
+   "titulo": "fuentes",
+   "peso": 12,
+   "ruta": "memoria/temas/fuentes.md"
+  },
+  {
    "id": "tema:prueba",
    "tipo": "tema",
    "titulo": "prueba",
@@ -6338,7 +6495,7 @@
    "id": "tema:calidad",
    "tipo": "tema",
    "titulo": "calidad",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/calidad.md"
   },
   {
@@ -6368,13 +6525,6 @@
    "titulo": "hitos",
    "peso": 3,
    "ruta": "memoria/temas/hitos.md"
-  },
-  {
-   "id": "tema:fuentes",
-   "tipo": "tema",
-   "titulo": "fuentes",
-   "peso": 11,
-   "ruta": "memoria/temas/fuentes.md"
   },
   {
    "id": "tema:verificar",
@@ -6480,6 +6630,13 @@
    "titulo": "produccion",
    "peso": 1,
    "ruta": "memoria/temas/produccion.md"
+  },
+  {
+   "id": "tema:diagramas",
+   "tipo": "tema",
+   "titulo": "diagramas",
+   "peso": 14,
+   "ruta": "memoria/temas/diagramas.md"
   },
   {
    "id": "tema:history",
@@ -6601,13 +6758,6 @@
    "ruta": "memoria/temas/estructura.md"
   },
   {
-   "id": "tema:diagramas",
-   "tipo": "tema",
-   "titulo": "diagramas",
-   "peso": 13,
-   "ruta": "memoria/temas/diagramas.md"
-  },
-  {
    "id": "tema:apalike",
    "tipo": "tema",
    "titulo": "apalike",
@@ -6655,6 +6805,13 @@
    "titulo": "reglas-tfg",
    "peso": 4,
    "ruta": "memoria/temas/reglas-tfg.md"
+  },
+  {
+   "id": "tema:subcaption",
+   "tipo": "tema",
+   "titulo": "subcaption",
+   "peso": 7,
+   "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:camara",
@@ -6776,6 +6933,20 @@
    "ruta": "memoria/temas/verificar.py.md"
   },
   {
+   "id": "tema:gestion-contenido",
+   "tipo": "tema",
+   "titulo": "gestion-contenido",
+   "peso": 1,
+   "ruta": "memoria/temas/gestion-contenido.md"
+  },
+  {
+   "id": "tema:regla 10 javier",
+   "tipo": "tema",
+   "titulo": "regla 10 javier",
+   "peso": 1,
+   "ruta": "memoria/temas/regla 10 javier.md"
+  },
+  {
    "id": "tema:ia-local",
    "tipo": "tema",
    "titulo": "ia-local",
@@ -6846,13 +7017,6 @@
    "ruta": "memoria/temas/portada.md"
   },
   {
-   "id": "tema:subcaption",
-   "tipo": "tema",
-   "titulo": "subcaption",
-   "peso": 5,
-   "ruta": "memoria/temas/subcaption.md"
-  },
-  {
    "id": "tema:subfigure",
    "tipo": "tema",
    "titulo": "subfigure",
@@ -6865,6 +7029,13 @@
    "titulo": "integridad",
    "peso": 1,
    "ruta": "memoria/temas/integridad.md"
+  },
+  {
+   "id": "tema:depuracion",
+   "tipo": "tema",
+   "titulo": "depuracion",
+   "peso": 1,
+   "ruta": "memoria/temas/depuracion.md"
   },
   {
    "id": "tema:documentacion",
@@ -7439,6 +7610,13 @@
    "titulo": "pdf",
    "peso": 1,
    "ruta": "memoria/temas/pdf.md"
+  },
+  {
+   "id": "tema:checklist",
+   "tipo": "tema",
+   "titulo": "checklist",
+   "peso": 1,
+   "ruta": "memoria/temas/checklist.md"
   },
   {
    "id": "tema:validacion-visual",
@@ -8620,6 +8798,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:retrospectiva",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
    "a": "tema:auth",
    "tipo": "trata"
@@ -9258,6 +9461,31 @@
    "de": "concepto:desglose-del-alcance-del-sprint-1-por-hitos-y-fechas",
    "a": "decision:cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por",
    "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
@@ -11335,6 +11563,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "tema:memoria",
    "tipo": "trata"
@@ -12608,6 +12856,26 @@
    "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
@@ -14565,6 +14833,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "concepto:prosa-de-tfg-vs-lista-de-capturas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell",
    "a": "tema:camara",
    "tipo": "trata"
@@ -15690,6 +15988,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "a": "tema:gestion-contenido",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "a": "tema:regla 10 javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -16748,6 +17071,26 @@
    "de": "decision:proteccion-del-ultimo-administrador-al-cambiar-rol-patch-api",
    "a": "decision:correccion-de-unicidad-de-email-tras-baja-logica-indice-parc",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
+   "a": "tema:depuracion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
+   "a": "tema:referencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g",
@@ -19205,6 +19548,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
    "a": "tema:latex",
    "tipo": "trata"
@@ -20373,6 +20741,31 @@
    "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
    "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
@@ -23877,6 +24270,16 @@
   {
    "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
    "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "tema:calidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "tema:checklist",
    "tipo": "trata"
   },
   {

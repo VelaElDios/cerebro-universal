@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pdf» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[verificacion]]
+[[latex]] · [[verificacion]] · [[calidad]] · [[checklist]]

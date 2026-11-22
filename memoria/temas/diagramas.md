@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "diagramas"
-notas: 13
+notas: 14
 ---
 # diagramas
 
@@ -26,6 +26,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 - ⚖️ [[memoria/conocimiento/decisiones/limite-de-6-participantes-en-diagramas-de-secuencia|Límite de 6 participantes en diagramas de secuencia]]
 - ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[memoria]] · [[tfg]] · [[pgf-umlsd]] · [[plantuml]] · [[diagramas-secuencia]] · [[maquetacion]] · [[secuencia]] · [[sequencediagram]] · [[uml]] · [[reglas-javier]]
+[[latex]] · [[tikz]] · [[memoria]] · [[tfg]] · [[pgf-umlsd]] · [[verificacion]] · [[plantuml]] · [[diagramas-secuencia]] · [[maquetacion]] · [[secuencia]] · [[sequencediagram]] · [[uml]]

@@ -86,8 +86,8 @@
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
   "bien": 3,
   "mal": 0,
-  "ultimo": "2026-11-22",
-  "usos": 24
+  "ultimo": "2026-11-23",
+  "usos": 25
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -140,8 +140,8 @@
  "memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin.md": {
   "bien": 0,
   "mal": 1,
-  "ultimo": "2026-11-22",
-  "usos": 24
+  "ultimo": "2026-11-23",
+  "usos": 25
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
@@ -188,8 +188,8 @@
  "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md": {
   "bien": 4,
   "mal": 2,
-  "ultimo": "2026-11-22",
-  "usos": 52
+  "ultimo": "2026-11-23",
+  "usos": 53
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
@@ -242,8 +242,8 @@
  "memoria/conocimiento/recetas/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-22",
-  "usos": 2
+  "ultimo": "2026-11-23",
+  "usos": 3
  },
  "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram.md": {
   "bien": 0,

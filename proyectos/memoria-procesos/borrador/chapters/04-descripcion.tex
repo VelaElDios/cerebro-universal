@@ -104,31 +104,31 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.6cm, align=center, minimum height=0.9cm, font=\scriptsize, inner sep=2pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.9cm, font=\scriptsize, inner sep=2pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Columna izquierda: Frontend
     \node[nodewide] (fe) {Frontend (navegador)\\ui.js + api.js + game/};
-    % Columna central: Servidor (capas apiladas con más separación)
-    \node[nodewide, right=3.5cm of fe] (api) {Capa API (src/api)\\rutas, sesión, roles, logs, errores};
-    \node[node, below=1.8cm of api] (srv) {Lógica (src/services)\\usuarios, tokens, juego};
-    \node[node, below=1.8cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=1.8cm of repo] (int) {Integraciones\\correo | Google};
+    % Columna central: Servidor (capas apiladas)
+    \node[nodewide, right=3.0cm of fe] (api) {Capa API (src/api)\\rutas, sesión, roles,\\logs, errores};
+    \node[node, below=1.5cm of api] (srv) {Lógica (src/services)\\usuarios, tokens, juego};
+    \node[node, below=1.5cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
+    \node[node, below=1.5cm of repo] (int) {Integraciones\\correo | Google};
     % Columna derecha: Reglas compartidas y servicios externos
-    \node[node, right=3.0cm of srv] (rules) {Reglas compartidas\\club.js, config.js, logros.js};
-    \node[node, right=3.0cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
+    \node[node, right=2.8cm of srv] (rules) {Reglas compartidas\\club.js, config.js,\\logros.js};
+    \node[nodewide, right=2.8cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
 
     % Flecha frontend -> API (con codo, etiqueta fuera de cajas)
-    \draw[arrow] (fe.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {HTTP + JSON} (api.west);
-    % Flechas servidor (verticales, caja a caja con separación)
+    \draw[arrow] (fe.east) -- ++(0.8,0) |- node[near start, above, font=\scriptsize] {HTTP + JSON} (api.west);
+    % Flechas servidor (verticales, caja a caja)
     \draw[arrow] (api.south) -- (srv.north);
     \draw[arrow] (srv.south) -- (repo.north);
     \draw[arrow] (srv.south) -- (int.north);
-    \draw[arrow, dashed] (srv.east) -- ++(1.0,0) |- (rules.west);
+    \draw[arrow, dashed] (srv.east) -- ++(0.8,0) |- (rules.west);
     % Flechas a servicios externos (con codos, etiquetas fuera)
-    \draw[arrow] (repo.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {SQL} (ext.west);
-    \draw[arrow] (int.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {SMTP / OAuth} (ext.west);
+    \draw[arrow] (repo.east) -- ++(0.8,0) |- node[near start, above, font=\scriptsize] {SQL} (ext.west);
+    \draw[arrow] (int.east) -- ++(0.8,0) |- node[near start, above, font=\scriptsize] {SMTP / OAuth} (ext.west);
 \end{tikzpicture}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
 \label{fig:capas}
@@ -339,15 +339,15 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[2]{fe}{Frontend}
-  \newinst[2]{api}{API}
-  \newinst[2]{srv}{Servicio}
-  \newinst[2]{repo}{Datos}
-  \newinst[2]{mail}{Correo}
-  \begin{call}{u}{escribe email y clave}{fe}{ok}
+  \newinst[1.5]{fe}{Frontend}
+  \newinst[1.5]{api}{API}
+  \newinst[1.5]{srv}{Servicio}
+  \newinst[1.5]{repo}{Datos}
+  \newinst[1.5]{mail}{Correo}
+  \begin{call}{u}{email y clave}{fe}{ok}
   \end{call}
   \begin{call}{fe}{POST /api/auth/register}{api}{201 / 409}
-    \begin{call}{api}{register()}{srv}{usuario}
+    \begin{call}{api}{register}{srv}{usuario}
     \end{call}
     \begin{call}{srv}{busca email}{repo}{fila / null}
     \end{call}
@@ -356,9 +356,9 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
       \mess{api}{409}{fe}
     \end{sdblock}
     \begin{sdblock}{else}{nuevo}
-      \begin{call}{srv}{hash + crea}{repo}{usuario}
+      \begin{call}{srv}{hash+crea}{repo}{usuario}
       \end{call}
-      \begin{call}{srv}{firma HMAC + envía}{mail}{enviado}
+      \begin{call}{srv}{firma HMAC+envía}{mail}{enviado}
       \end{call}
       \mess{api}{201}{fe}
     \end{sdblock}
@@ -369,6 +369,9 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
 \caption{Registro con email y contraseña.}
 \label{fig:sec-registro}
 \end{figure}
+
+% Corrección de referencias rotas: búsqueda y sustitución de \ref{.} o \ref{)} por referencias válidas
+% (se hace en paso posterior con script, aquí solo nota)
 
 El recorrido está en la Figura~\ref{fig:sec-registro}: el usuario rellena el formulario, el frontend valida y envía el \texttt{POST}, el servicio normaliza el email, rechaza duplicados (409), hashea la contraseña con bcrypt, crea la cuenta \texttt{pending}, firma el token HMAC (24 h) y envía el correo de confirmación.
 

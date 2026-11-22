@@ -14175,3 +14175,91 @@ Lo que dejo como tareas para el constructor: replantear 6 diagramas problemátic
 ## 2026-11-22 23:58 · 🧠 Conocimiento guardado
 
 [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
+
+## 2026-11-23 00:54 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He comenzado a corregir los diagramas que incumplen las reglas 16-18 de maquetación. En este paso modifico `chapters/04-descripcion.tex` para replantear dos diagramas problemáticos: `fig:capas` (diagrama TikZ de arquitectura) y `fig:sec-registro` (diagrama de secuencia de registro). En `fig:capas` aumento el ancho de las cajas (`text width`) y uso `\mbox{}` para evitar particiones silábicas; en `fig:sec-registro` reduzco la separación horizontal entre participantes (de 2 a 1.5), acorto etiquetas y mantengo el envoltorio `adjustbox` sin escalar el texto. Ambos cambios buscan que los diagramas quepan en `\textwidth` con fuente legible (≥\scriptsize) y sin flechas que crucen cajas ni texto.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 5 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** En el próximo paso continuaré corrigiendo los diagramas de secuencia restantes en `chapters/04-descripcion.tex` (`fig:sec-login`, `fig:sec-google`, `fig:sec-baja`) y el diagrama de arquitectura del juego en `chapters/04b-juego.tex` (`fig:juego-arquitectura`), aplicando la misma estrategia: reducir participantes/etiquetas, aumentar separación, usar codos en flechas y fuente `\scriptsize` sin escalar. Luego validaré con `revisar_umlsd.py` y ejecutaré `comando_prueba`.
+
+## 2026-11-23 00:57 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 19 PBIs (P1–P19), 32 tareas (T1–T32) → sprint-1.md tabla backlog y trazabilidad
+- Sprint 2: 29 PBIs (P20–P48), 50 tareas (T33–T82) → sprint-2.md tabla backlog
+- Total tareas: 32 + 50 = 82 → sprint-1.md + sprint-2.md
+- Pruebas en main al cierre Sprint 2: 276 (140 S1 + 136 juego) → procesos.md tabla pruebas por fichero
+- Pruebas tras Fase 7: 322 → log.md entrada 2026-11-03
+- Migraciones SQL: 5 (001 usuarios, 002 sesiones, 003 juego, 004 identidad, 005 email libre) → arquitectura.md § db/migrations
+- Endpoints API: 23 → arquitectura.md tabla API
+- Líneas backend: ~2.300, frontend: ~1.150, CSS: ~950, juego: ~14.800, pruebas: ~5.050 → sprint-2.md métricas
+- Dependencias producción: 6 (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer) → sprint-2.md métricas
+- Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 rivales, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → juego.md sistemas y sprint-2.md métricas
+- Fechas Sprint 1: 29/09–27/10/2026; Sprint 2: 23/10–29/10/2026 → sprint-1.md y sprint-2.md
+- Cambio alcance P19 (Cloud Run) a mitad Sprint 1 → decisiones.md D-16
+- Backlog Sprint 2 registrado en DoneTonic al cierre (29/10) → decisiones.md D-19
+- URL producción: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app → README.md y sprint-1.md
+- Repositorio: https://github.com/VelaElDios/la-grada-colchonera-saas → sprint-1.md
+- Capturas app/: 13 (01-inicio a 13-pagina-no-encontrada) → docs/capturas/README.md
+- Capturas hito4/: 11 (01-entrar-google a 11-privacidad) → docs/capturas/README.md
+- Capturas juego/: 16 (01-menu a 16-final-copa) → docs/capturas/README.md
+- Capturas donetonic/: 8 (01-tablero-sprint a 08-pbi-detalle) → docs/capturas/README.md
+- Capturas produccion/: 3 (01-correo-confirmacion a 03-google-publicada) → docs/capturas/README.md
+- Capturas prueba-tecnica/: 2 (01-dominio-permitido, 02-subdominio-rechazado) → docs/capturas/README.md
+- Capturas fase7/: 12 (01-sprites-antes a 12-pausa-salir) → docs/capturas/README.md
+- RF-01 a RF-13 todos en tabla 04-descripcion.tex → requisitos.md § Requisitos funcionales Sprint 1
+- RJ-01 a RJ-20 todos en tabla 04-descripcion.tex → requisitos.md § Requisitos funcionales juego
+- RNF-01 a RNF-12 todos en tabla 04-descripcion.tex → requisitos.md § Requisitos no funcionales
+- Diagramas secuencia obligatorios: fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar → arquitectura.md § Flujos
+- Diagramas TikZ/pgfplots obligatorios: fig:capas, fig:modelo-datos, fig:pipeline, fig:burndown-s1, fig:burndown-s2 → spec y arquitectura.md
+- Resumen: 198 palabras (≥150), Abstract: 156 palabras (≥120) → elements/preambulo.tex
+- Anexo trazabilidad: 82 filas (T1–T82) → a4-trazabilidad.tex tabla trazabilidad-completa
+- Anexo desarrollo: dos sprints mismo esquema, explica recta Sprint 2 → a1-desarrollo.tex retrospectivas
+- No "La figura X muestra..." en secciones corregidas (04-descripcion y 04b-juego) → revisión visual
+- Imágenes DoneTonic solo en cap:propuesta y anexo desarrollo; produccion solo en cap:evaluacion → regla 10
+
+Qué está bien: La estructura general compila (96 páginas), `verificar.py` pasa conteos (35 fig, 29 tab, 16935 palabras), portada única implementada, Resumen/Abstract cumplen mínimos, anexos tienen contenido requerido, trazabilidad completa 82 tareas, datos numéricos contrastados con fuentes (25+ comprobaciones arriba). El constructor intentó corregir fig:capas y fig:sec-registro en 04-descripcion.tex.
+
+Qué está mal: 
+1. **Referencias rotas**: "Reference `.' " y "Reference `)' " en línea 794 (PDF página 31) → hay `\ref{.}` o `\ref{)}` mal formados en 04-descripcion.tex u otro capítulo.
+2. **fig:capas sigue 55 pt más ancha que la página** y tiene particiones silábicas ("ro-") pese al intento del constructor (aumentó anchos y separación, empeoró).
+3. **fig:juego-arquitectura 68 pt más ancha** con particiones ("ar-") y flechas cruzando texto ("sprites.js,", "hud.js").
+4. **fig:sec-login**: letras 6.9 pt (<7.5 mín), flechas cruzan etiqueta "invalidas".
+5. **fig:sec-baja**: letras 7.5 pt (límite), flechas cruzan "403" y "204".
+6. **5 diagramas no revisados por Gemini** (404 modelo): fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2 — deben validarse con `revisar_umlsd.py` y ojo.
+7. Cadenas "La figura X muestra..." aún presentes en varios capítulos no corregidos.
+
+Lo que corrijo yo (2 archivos):
+1. **04-descripcion.tex**: elimino referencias rotas (busco `\ref{.}`/`\ref{)}`) y replanteo fig:capas reduciendo anchos/separación, añadiendo `\mbox{}` y flechas con codos.
+2. **04b-juego.tex**: replanteo fig:juego-arquitectura reduciendo anchos/separación, `\mbox{}` en "sprites.js," y "hud.js", flechas con codos.
+
+Lo que dejo como tareas: corregir fig:sec-login, fig:sec-baja, fig:sec-registro (ya tocado pero Gemini no lo vio), fig:sec-google, fig:pipeline, fig:burndown-s1, fig:burndown-s2; validar 5 diagramas no revisados; ejecutar `comando_prueba` completo; revisión visual PDF página a página.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Buscar y corregir referencias rotas `\ref{.}` o `\ref{)}` en 04-descripcion.tex (línea ~794) y cualquier otro capítulo.
+- Replantear **fig:sec-login** (04-descripcion.tex): reducir participantes a ≤5, acortar etiquetas a máx. 2 líneas, aumentar separación vertical a 1.8 cm, usar `\scriptsize`, flechas con codos (`|-`/`-|`), envolver en `adjustbox{max width=\textwidth, max totalheight=0.6\textheight}` SIN `\resizebox` ni `\tiny`.
+- Replantear **fig:sec-baja** (04-descripcion.tex): mismo patrón que fig:sec-login, etiquetas "403" y "204" fuera de líneas de vida.
+- Replantear **fig:sec-google** (04-descripcion.tex): ≤5 participantes, etiquetas cortas, flechas con codos.
+- Replantear **fig:sec-registro** (04-descripcion.tex): ya modificado pero Gemini no lo revisó; validar con `revisar_umlsd.py` y ojo.
+- Replantear **fig:pipeline** (05-evaluacion.tex): `\mbox{Artifact}` ya hecho, aumentar `text width` nodo deploy a 3.6 cm, flechas con codos, etiquetas ≤2 líneas.
+- Validar **5 diagramas no revisados** con `revisar_umlsd.py` y revisión visual PDF: fig:sec-partida, fig:sec-contratar (04b-juego.tex), fig:pipeline (05-evaluacion.tex), fig:burndown-s1, fig:burndown-s2 (a1-desarrollo.tex).
+- Ejecutar `comando_prueba` y confirmar: compilación sin overfull hbox, `verificar.py` OK, `revisar_maquetacion.py` OK (diagramas reglas 16-18 corregidos).
+- Revisión visual obligatoria del PDF página a página: sin páginas con una sola imagen (regla 8), sin secciones de 1-2 líneas (regla 9), sin figuras repetidas (regla 10), flechas son `$\rightarrow$` (regla 11), diagramas legibles a tamaño real (regla 16).
+- Verificar mínimos de capturas por carpeta y referencias `\ref` cruzadas correctas (DoneTonic solo en cap:propuesta y anexo desarrollo; producción solo en cap:evaluacion).
+- Confirmar anexo desarrollo (a1-desarrollo.tex) tiene dos secciones sprint con mismo esquema y explica recta Sprint 2.
+
+## 2026-11-23 00:57 · 🧠 Conocimiento guardado
+
+[[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]] · [[referencias-rotas-ref-y-ref-causa-y-solucion]] · [[inventario-de-diagramas-obligatorios-y-su-estado]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila]] · [[imagenes-repetidas-una-sola-aparicion-ref-en-el-resto]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]]

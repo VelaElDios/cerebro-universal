@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "fuentes"
-notas: 11
+notas: 12
 ---
 # fuentes
 
@@ -25,8 +25,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (para COMPROBACIONES)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[verificar.py]] · [[datos]] · [[juego]] · [[verificar]] · [[metricas]] · [[arma]] · [[fuente]] · [[memoria]]
+[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[metricas]] · [[verificar.py]] · [[datos]] · [[juego]] · [[verificar]] · [[arma]] · [[fuente]] · [[memoria]]
