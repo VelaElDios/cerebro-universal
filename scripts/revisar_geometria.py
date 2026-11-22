@@ -13,6 +13,7 @@ Se usa desde revisar_figuras.py. Necesita pdfplumber (si no está, avisa y no bl
 import re
 
 TAM_MIN = 7.5          # pt reales en el PDF: por debajo no se lee bien en papel
+MARCOS = {"alt", "else", "lop", "loop", "opt", "par", "break", "critical"}
 MARGEN_LETRA = 0.3     # se recorta cada letra un 30% por cada lado (que rozar el borde no cuente)
 
 
@@ -100,6 +101,14 @@ def revisar(ruta_pdf, numero: str, n_pagina: int) -> list[str]:
                 max(o["x1"] for o, _ in caminos), max(o["bottom"] for o, _ in caminos))
         letras = [c for c in pag.chars if c["text"].strip() and _dentro(
             (c["x0"], c["top"], c["x1"], c["bottom"]), (zona[0] - 2, zona[1] - 2, zona[2] + 2, zona[3] + 2))]
+        # Letras dibujadas dos veces casi en el mismo sitio (negrita falsa de las etiquetas alt/else/loop de
+        # los diagramas de secuencia): se queda una sola
+        unicas = []
+        for c in letras:
+            if not any(u["text"] == c["text"] and abs(u["x0"] - c["x0"]) < 1.5 and abs(u["top"] - c["top"]) < 1.0
+                       for u in unicas[-6:]):
+                unicas.append(c)
+        letras = unicas
         if not letras:
             return []
         problemas = []
@@ -130,7 +139,10 @@ def revisar(ruta_pdf, numero: str, n_pagina: int) -> list[str]:
             for c in letras:
                 caja = _encoger((c["x0"], c["top"], c["x1"], c["bottom"]), MARGEN_LETRA)
                 if any(_seg_corta_rect(pts[i], pts[i + 1], caja) for i in range(len(pts) - 1)):
-                    tapadas.append(palabra_de(c))
+                    p = palabra_de(c)
+                    if re.sub(r"(.)\1+", r"\1", p.lower()) in MARCOS:
+                        continue   # pestaña «alt», «else», «loop»… de un diagrama de secuencia: el marco la rodea
+                    tapadas.append(p)
         if tapadas:
             vistas = list(dict.fromkeys(tapadas))
             problemas.append(f"líneas o flechas que pasan por encima del texto de {len(vistas)} caja(s)/etiqueta(s): "

@@ -164,6 +164,44 @@ def comprobar_relleno(textos: dict[str, str]):
 
 # ---------- 3. Log de la compilación ----------
 
+def que_hay_en(archivo: str, linea: int):
+    """Qué entorno contiene esa línea del .tex: ("diagrama"|"figura"|"tabla", etiqueta) o None si es texto."""
+    ruta = BORRADOR / archivo
+    if not ruta.exists():
+        return None
+    lineas = leer(ruta).splitlines()
+    abiertos = []
+    for i, l in enumerate(lineas[:linea], start=1):
+        for m in re.finditer(r"\\(begin|end)\{(figure|table|longtable|tikzpicture|sequencediagram|axis)\*?\}", l):
+            if m.group(1) == "begin":
+                abiertos.append((m.group(2), i))
+            elif abiertos:
+                abiertos.pop()
+    if not abiertos:
+        # El aviso suele salir en la línea del \end{...}: mira si esa línea cierra un entorno
+        l = lineas[linea - 1] if 0 < linea <= len(lineas) else ""
+        m = re.search(r"\\end\{(figure|table|longtable|tikzpicture|sequencediagram|axis)\*?\}", l)
+        if not m:
+            return None
+        inicio = max(i for i in range(1, linea + 1)
+                     if re.search(r"\\begin\{" + m.group(1), lineas[i - 1])) if any(
+            re.search(r"\\begin\{" + m.group(1), x) for x in lineas[:linea]) else linea
+        abiertos = [(m.group(1), inicio)]
+    tipos = [t for t, _ in abiertos]
+    desde = abiertos[0][1]
+    resto = "\n".join(lineas[desde - 1:desde + 150])
+    fin = re.search(r"\\end\{(figure|table|longtable)\*?\}", resto)
+    bloque = resto[:fin.end()] if fin else resto
+    etiqueta = re.search(r"\\label\{([^}]+)\}", bloque)
+    nombre = etiqueta.group(1) if etiqueta else f"de la línea {desde}"
+    if any(t in ("tikzpicture", "sequencediagram", "axis") for t in tipos) or re.search(
+            r"\\begin\{(tikzpicture|sequencediagram|axis)\}", bloque):
+        return "diagrama", nombre
+    if any(t in ("table", "longtable") for t in tipos):
+        return "tabla", nombre
+    return "figura", nombre
+
+
 def comprobar_log():
     log = leer(BORRADOR / "Memoria.log")
     if not log:
@@ -181,9 +219,22 @@ def comprobar_log():
             # El archivo es el último «(./ruta.tex» abierto antes del aviso; las 2 líneas siguientes dicen qué se sale
             archivo = (re.findall(r"\(\./([^\s()]+\.tex)", log[:m.start()]) or ["?"])[-1]
             texto = " ".join(log[m.end():].strip().splitlines()[:2])[:120]
-            fallo(f"{archivo}: algo se sale {float(m.group(1)):.0f} pt del margen ({m.group(2).strip()[:40]}): «{texto}». "
-                  "Si es una tabla o imagen, estréchala; si es texto con una cita o una ruta larga que no se parte, "
-                  "revisa las lecciones de la memoria")
+            pt = float(m.group(1))
+            nl = re.search(r"lines? (\d+)", m.group(2))
+            donde = que_hay_en(archivo, int(nl.group(1))) if nl else None
+            if donde and donde[0] == "diagrama":
+                fallo(f"{archivo}:{nl.group(1)}: el DIAGRAMA {donde[1]} es {pt:.0f} pt más ancho que la página. No es "
+                      "una tabla ni texto: hay que estrechar el dibujo SIN escalarlo (sin adjustbox/resizebox): menos "
+                      "separación entre cajas o participantes, cajas más estrechas, etiquetas más cortas o en dos "
+                      "líneas, menos participantes, o colocarlo en vertical")
+            elif donde:
+                fallo(f"{archivo}:{nl.group(1)}: la {donde[0]} {donde[1]} se sale {pt:.0f} pt del margen "
+                      f"({m.group(2).strip()[:40]}): «{texto}». Estréchala (columnas p{{}} que sumen menos que "
+                      "\\linewidth, rutas con \\path{})")
+            else:
+                fallo(f"{archivo}: algo se sale {pt:.0f} pt del margen ({m.group(2).strip()[:40]}): «{texto}». "
+                      "Es texto normal: si lleva una cita o una ruta larga que no se parte, usa \\path{} o "
+                      "reescribe la frase")
 
 
 # ---------- 4. Bibliografía ----------

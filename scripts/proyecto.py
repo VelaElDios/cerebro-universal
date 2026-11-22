@@ -287,7 +287,7 @@ def probar(cfg: dict, carpeta: Path) -> tuple[bool, str]:
     if avisos:
         informe += ["", "Avisos:", *avisos]
     if not errores:
-        informe += ["", "Final de la salida:", *salida[-30:]]
+        informe += ["", "Final de la salida:", *salida[-60:]]
     return r.returncode == 0, "\n".join(informe)
 
 
