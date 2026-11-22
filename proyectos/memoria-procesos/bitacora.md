@@ -13900,3 +13900,14 @@ Lo que corrijo yo: Ensancho las columnas problemáticas (sumas siguen ≤ \linew
 ## 2026-11-22 17:57 · 🧠 Conocimiento guardado
 
 [[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]
+
+
+## Revisión humana (Javier) · 2026-11-22 · los 3 desbordes NO son tablas
+
+Los tres «algo se sale del margen» de `chapters/04-descripcion.tex` (líneas 132, 361 y 475) son DIAGRAMAS, no tablas: **fig:capas** (35 pt), **fig:sec-registro** (127 pt) y **fig:sec-google** (32 pt). Se salen desde que se les quitó el adjustbox. Dejad de tocar tab:rnf, tab:modulos, tab:api y tab:rf-sprint1: esas tablas no son el problema.
+
+Cómo se arreglan (sin volver a escalarlos):
+- **fig:sec-registro** (127 pt de más): es el más ancho. Menos participantes (agrupar los que solo pasan el mensaje), etiquetas de mensajes cortas (2-4 palabras) y menos distancia entre participantes. Si sigue sin caber, partirlo en dos diagramas.
+- **fig:capas** y **fig:sec-google** (unos 35 pt): basta con cajas o participantes algo más juntos y etiquetas más cortas o en dos líneas.
+
+Ahora `verificar.py` dice en cada desborde si es un diagrama, una tabla o texto, y cuál es. Además, la prueba ejecuta siempre los tres comprobadores (verificar, maquetación y figuras), aunque falle el primero, así que veréis a la vez los fallos de dibujo de los demás diagramas: confirmación, login, google, baja, juego-arquitectura, partida, contratar y pipeline. Hay que arreglarlos todos (reglas 16-18). Quedan 40 pasos.
