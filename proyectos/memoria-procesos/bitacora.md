@@ -13703,3 +13703,54 @@ Voy a reescribir estas tres tablas completas con \path{} y anchos ajustados, y c
 ## 2026-11-22 13:21 · 🧠 Conocimiento guardado
 
 [[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]
+
+## 2026-11-22 13:59 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los 5 overfull hbox en chapters/04-descripcion.tex: tres tablas longtable (tab:rf-sprint1, tab:modulos, tab:api) y dos textos sueltos. La solución robusta es usar \path{} (paquete xurl ya cargado) en lugar de \texttt{} con \allowbreak, y ajustar anchos de columna para que sumen ≤ \linewidth.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «y el módulo \path{accountConfirmationService.js} gestiona el») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{longtable}{@{}L{0.7cm} L{2.8cm} L{0.5cm} L{0.6cm} L{5») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «{\small
+\begin{longtable}{@{}L{3.8cm} L{8.2cm}@{}}
+\caption{») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «{\small
+\begin{longtable}{@{}L{2.3cm} L{7.7cm} L{2.5cm}@{}}
+») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «y el módulo \path{accountConfirmationService.js} gestiona el») chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox y que `verificar.py` queda en verde. Luego ejecutar `revisar_maquetacion.py` y `revisar_umlsd.py` para validar el resto de reglas.
+
+## 2026-11-22 14:02 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: falla con 3 overfull hbox en chapters/04-descripcion.tex (tablas tab:rf-sprint1 35pt, tab:modulos 127pt, tab:api 32pt) - verificado en salida de latexmk
+- Tabla tab:rf-sprint1: columna "Dónde se cumple" (6.0cm) contiene rutas largas en \texttt{} que no se parten (\path{userService.register}, \path{POST /api/auth/register}, etc.)
+- Tabla tab:modulos: columna "Módulo" (3.5cm) contiene rutas como \path{services/accountConfirmationService.js} en \texttt{} que desbordan
+- Tabla tab:api: columna "Rutas" (7.8cm) contiene listas de endpoints en \texttt{} que no se parten
+- Dos textos sueltos (líneas ~29 y ~281) con \texttt{accountConfirmationService.js} sin partir
+- Fuentes contrastadas: 19 PBIs Sprint 1 (sprint-1.md tabla backlog), 29 PBIs Sprint 2 (sprint-2.md tabla backlog), 82 tareas totales (32+50), 276 pruebas al cierre Sprint 2 (procesos.md tabla pruebas), 5 migraciones (arquitectura.md), 23 endpoints API (arquitectura.md tabla API), 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones (juego.md y sprint-2.md métricas)
+- Paquete xurl cargado en include/extra.tex: \path{} permite cortes en cualquier carácter
+- Reglas Javier: 5 (tablas sin filas pisadas, p{}, \addlinespace), 6 (código con \path{} o \texttt{}+\allowbreak), 8 (ninguna página con una sola imagen), 10 (sin figuras repetidas), 13 (prosa TFG, no listas de capturas)
+
+El constructor intentó corregir los overfull hbox pero la verificación sigue fallando en las mismas 3 tablas. El problema fundamental es que \texttt{} crea cajas irrompibles; aunque se añada \allowbreak, LaTeX no siempre lo respeta dentro de \texttt. La solución robusta (ya propuesta en revisión anterior) es usar \path{} del paquete xurl (ya cargado en include/extra.tex), que permite cortes en cualquier carácter, y ajustar anchos de columna para que sumen ≤ \linewidth (≈15.5 cm). Además, hay que corregir los dos textos sueltos que usan \texttt{} para rutas de archivo.
+
+Las tres tablas afectadas son:
+1. tab:rf-sprint1 (RF Sprint 1): columna "Dónde se cumple" con rutas largas
+2. tab:modulos (Módulos backend): columna "Módulo" con rutas como services/accountConfirmationService.js
+3. tab:api (Rutas API): columna "Rutas" con listas de endpoints
+
+Voy a reescribir estas tres tablas completas con \path{} y anchos ajustados, y corregir los dos textos sueltos.
+
+**Correcciones del revisor:** `(no aplicado: no encuentro el texto: «El módulo \texttt{accountConfirmationService.js} gestiona el») chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «y el módulo \path{accountConfirmationService.js} gestiona el») chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para confirmar que la compilación pasa sin overfull hbox y que `verificar.py` queda en verde.
+- Ejecutar `revisar_maquetacion.py` para validar reglas de maquetación de Javier (páginas con una sola imagen, secciones cortas, figuras repetidas, etc.).
+- Ejecutar `revisar_umlsd.py` para validar los 7 diagramas de secuencia (participantes declarados, sin caracteres prohibidos en textos, sin paréntesis en `\mess`, sin comandos LaTeX en textos).
+- Revisión visual obligatoria del PDF página a página para reglas 16-18 de Javier (diagramas: letras ≥7,5pt, flechas caja-a-caja con codos, sin palabras partidas, sin cruces de flechas sobre textos/cajas).
+- Verificar que no quedan figuras repetidas y que todas las capturas mínimas por carpeta están presentes (app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+).
+- Confirmar que el anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.

@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-22 13:21"
+actualizado: "2026-11-22 14:02"
 ---
 
 # memoria-procesos
@@ -20,7 +20,7 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1, pero el burndown de la entrega cuenta 16; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7).
 
 ## Estado
-- **Compilación**: falla con 5 overfull hbox en chapters/04-descripcion.tex (3 tablas longtable + 2 textos sueltos). **Corrección aplicada**: reescritas las tres tablas longtable (tab:rf-sprint1, tab:modulos, tab:api) usando `\path{}` en lugar de `\texttt{}`/`\allowbreak` y ajustados anchos de columna; corregidos dos textos sueltos.
+- **Compilación**: corregidos 3 overfull hbox en chapters/04-descripcion.tex (tablas tab:rf-sprint1, tab:modulos, tab:api) usando \path{} y anchos ajustados; corregidos 2 textos sueltos con \path{}. Pendiente ejecutar `comando_prueba`.
 - **verificar.py**: pendiente (ejecutar tras esta corrección).
 - **revisar_maquetacion.py**: no ejecutado (pendiente tras corregir overfull).
 - **revisar_umlsd.py**: no ejecutado (pendiente).
