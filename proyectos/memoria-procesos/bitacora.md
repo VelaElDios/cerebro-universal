@@ -13400,3 +13400,25 @@ El constructor intentó corregir los 3 overfull hbox añadiendo \allowbreak, per
 ## 2026-11-22 06:49 · 🧠 Conocimiento guardado
 
 [[como-evitar-overfull-hbox-con-texttt-largo-en-longtable]] · [[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]
+
+## 2026-11-22 08:08 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Voy a corregir los 3 overfull hbox en chapters/04-descripcion.tex examinando primero el contenido exacto de las líneas problemáticas (132-133, 361-362, 475-476) para aplicar \allowbreak con textos que coincidan exactamente. Luego ejecutaré comando_prueba para confirmar que todo pasa.
+
+**Archivos:** `(deshecho) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (no aplicado: no encuentro el texto: «\texttt{services/\allowbreak accountConfirmation\allowbreak ») chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`, `(deshecho) (cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:297: Misplaced alignment tab character &.
+- intento 2: ❌ ./chapters/04-descripcion.tex:483: Paragraph ended before \begin  was complete. (tocó `(cambio) chapters/04-descripcion.tex`)
+- intento 3: no hay IA disponible a tiempo (Sin tiempo para llamar a nvidia-constructor (minimaxai/minimax-m3.1-flash))
+- ↩️ **paso deshecho**: antes compilaba y ahora no (./chapters/04-descripcion.tex:483: Paragraph ended before \begin  was complete.). Se han devuelto 1 archivos a como estaban. Para arreglar o ampliar archivos largos usa bloques CAMBIAR.
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar comando_prueba para verificar que la compilación pasa, verificar.py OK y revisar_maquetacion.py OK. Si persisten overfull, identificar líneas exactas y añadir más \allowbreak. Luego ejecutar revisar_umlsd.py para validar los 7 diagramas de secuencia.
+
+## 2026-11-22 08:08 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 29 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
