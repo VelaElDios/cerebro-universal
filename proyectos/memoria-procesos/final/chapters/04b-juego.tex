@@ -32,7 +32,7 @@ Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \tex
 
 Los controles son flexibles: en teclado se usan WASD o flechas para moverse, \texttt{Espacio}/\texttt{E} para la ulti, \texttt{Esc}/\texttt{P} para pausar, \texttt{F} para pantalla completa y \texttt{1}--\texttt{3} para elegir mejora al subir de nivel; en móvil aparece un joystick táctil flotante al arrastrar. Los ajustes de volumen, gráficos, cámara y controles se guardan en \texttt{localStorage}.
 
-Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La Figura~\ref{fig:juego-partida-mejora} ilustra una partida en curso (subfigura~\ref{fig:juego-partida}) con el mundo procedural, rivales, armas automáticas y HUD, y la pantalla de subida de nivel (subfigura~\ref{fig:juego-mejora}) donde se elige una de tres mejoras.
+Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La Figura~\ref{fig:juego-partida-mejora} agrupa una partida en curso (subfigura~\ref{fig:juego-partida}) con el mundo procedural, rivales, armas automáticas y HUD, y la pantalla de subida de nivel (subfigura~\ref{fig:juego-mejora}) donde se elige una de tres mejoras.
 
 \begin{figure}[htbp]
 \centering
@@ -53,7 +53,7 @@ Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una ol
 \label{fig:juego-partida-mejora}
 \end{figure}
 
-Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. La Figura~\ref{fig:juego-jefe-ambiente} muestra al jefe Vinicius Jr. con su barra de vida (subfigura~\ref{fig:juego-jefe}) y el ambiente de la Final de la Copa del Rey (subfigura~\ref{fig:juego-final-copa}), que se activa a partir del minuto 5. Cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
+Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. El jefe Vinicius Jr. con su barra de vida (subfigura~\ref{fig:juego-jefe}) y el ambiente de la Final de la Copa del Rey (subfigura~\ref{fig:juego-final-copa}), que se activa a partir del minuto 5, se ven en la Figura~\ref{fig:juego-jefe-ambiente}. Cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
 
 \begin{figure}[htbp]
 \centering
@@ -170,7 +170,7 @@ El resto del menú gestiona el club y consulta el progreso, y cada pantalla resp
 
 La Tabla~\ref{tab:juego-sistemas} resume los sistemas del juego.
 
-\begin{longtable}{@{}L{3.0cm} L{7.0cm} L{4.0cm}@{}}
+\begin{longtable}{@{}L{2.2cm} L{5.8cm} L{3.0cm}@{}}
 \caption{Sistemas del juego.}\label{tab:juego-sistemas}\\
 \toprule
 \textbf{Sistema} & \textbf{Descripción} & \textbf{Configuración} \\ \midrule \endfirsthead
@@ -179,7 +179,7 @@ La Tabla~\ref{tab:juego-sistemas} resume los sistemas del juego.
 Jugadores & 36 (4 porteros, 9 defensas, 13 medios, 10 delanteros). Posición fija estadísticas base; rasgos propios y lista de habilidades aprendibles & \path{PERSONAJES}, \path{POSICIONES} \\
 Rarezas & Según historia en el Atleti: Leyenda (8), Épico (8), Raro (8), Común (12). Más rareza = más habilidades (8 a 16) y menos probabilidad en contrato & \path{RAREZAS} \\
 Entrenadores & Cholo Simeone (+daño, +vida; ulti ``¡Partido a partido!'') y Luis Aragonés (+velocidad, +experiencia; ulti ``Furia Roja'') & \path{ENTRENADORES} \\
-Armas y habilidades & 29, con 5 niveles: disparo, cuerpo a cuerpo, movilidad, especiales. Las más fuertes no suben hasta cierto minuto (\path{desdeMinuto}) y tienen recarga mínima (\path{cdMin}) & \path{ARMAS} \\
+Armas y habilidades & 29, con 5 niveles: disparo, cuerpo a cuerpo, movilidad, especiales. Las más fuertes no suben hasta cierto minuto (\texttt{desde\allowbreak Minuto}) y tienen recarga mínima (\texttt{cd\allowbreak Min}) & \path{ARMAS} \\
 Pasivas & 16 (botas, imán, pasión, pizarra, cantera, masajista, espinilleras, pulmones, toque dorado, botas en llamas, paradón, brazalete, trébol, prórroga, visión de juego, partidos grandes) & \path{PASIVAS} \\
 Combinaciones & 29 ``metas'' que se activan al juntar ciertas habilidades a cierto nivel y dan bonus (Muro rojiblanco, Tiki-taka, Pichichi, Catenaccio, Leyenda rojiblanca, Golazo de otro planeta, Remontada épica, Triple Corona, Infierno del Metropolitano, Capitán eterno...); 24 en Fase 3 + 5 en Fase 7 = 29 total & \path{SINERGIAS} \\
 Ultras & 6 que se consiguen solas al completar varias combinaciones: Premio Puskás, Ganador del Balón de Oro, MVP de la Champions, Trofeo Zamora, Bota de Oro histórica, Mejor jugador del Mundial. Efecto visual propio y daño en parte porcentual (menor contra jefes) & \path{ULTRAS}, \path{ultras.js} \\
@@ -205,58 +205,26 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=1.0cm, font=\small},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.8cm, align=center, minimum height=1.0cm, font=\small},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=7.2cm, align=center, minimum height=1.2cm, font=\footnotesize, inner sep=4pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Simulación pura (columna izquierda)
-    \node[nodewide] (mundo) {mundo.js\\bucle de paso fijo};
-    \node[node, below=0.7cm of mundo] (armas) {armas.js};
-    \node[node, below=0.7cm of armas] (combate) {combate.js};
-    \node[node, below=0.7cm of combate] (jefes) {jefes.js};
-    \node[node, below=0.7cm of jefes] (oleadas) {oleadas.js / rivales.js};
-    \node[node, below=0.7cm of oleadas] (terreno) {terreno.js};
-    \node[node, below=0.7cm of terreno] (ultras) {ultras.js / ulti.js};
-    \node[node, below=0.7cm of ultras] (mejoras) {mejoras.js};
-    \node[node, right=3.5cm of mundo] (config) {config.js\\todo el equilibrio};
-    % Presentación (columna central)
-    \node[nodewide, right=6.5cm of mundo] (juego) {juego.js\\pantallas y bucle};
-    \node[node, below=0.7cm of juego] (render) {render.js / render-mundo.js / render-ultras.js};
-    \node[node, below=0.7cm of render] (sprites) {sprites.js\\muñecos chibi 32x32};
-    \node[node, below=0.7cm of sprites] (hud) {hud.js};
-    \node[node, below=0.7cm of hud] (audio) {audio.js + musica.js};
-    \node[node, below=0.7cm of audio] (ui2) {club-ui.js, fin-ui.js, firma.js};
-    \node[node, below=0.7cm of ui2] (entrada) {entrada.js};
-    % Servidor (columna derecha)
-    \node[nodewide, right=6.5cm of juego] (js) {juegoService.js};
-    \node[node, below=0.7cm of js] (club) {club.js};
-    \node[node, below=0.7cm of club] (config2) {config.js};
-    \node[node, below=0.7cm of config2] (logros) {logros.js};
-    % Conexiones - solo entre cajas vecinas o con codos
-    \draw[arrow] (mundo) -- (armas);
-    \draw[arrow] (mundo) -- (combate);
-    \draw[arrow] (mundo) -- (jefes);
-    \draw[arrow] (mundo) -- (oleadas);
-    \draw[arrow] (mundo) -- (terreno);
-    \draw[arrow] (mundo) -- (ultras);
-    \draw[arrow] (mundo) -- (mejoras);
-    \draw[arrow, dashed] (mundo) -- (config);
-    \draw[arrow] (juego) -- (render);
-    \draw[arrow] (render) -- (sprites);
-    \draw[arrow] (juego) -- (hud);
-    \draw[arrow] (juego) -- (audio);
-    \draw[arrow] (juego) -- (ui2);
-    \draw[arrow] (juego) -- (entrada);
-    \draw[arrow] (juego) -- (mundo);
-    \draw[arrow] (juego) -- node[midway, above, font=\footnotesize] {api.js $\rightarrow$ /api/juego} (js);
-    \draw[arrow] (js) -- (club);
-    \draw[arrow, dashed] (js) -- (config2);
-    \draw[arrow] (js) -- (logros);
+    % Bloques apilados: simulación, presentación y servidor
+    \node[node] (sim) {Simulación pura (sin DOM ni audio)\\\texttt{mundo.js}, \texttt{armas.js}, \texttt{combate.js},\\\texttt{jefes.js}, \texttt{oleadas.js},\\\texttt{terreno.js}, \texttt{mejoras.js}, \texttt{ultras.js}};
+    \node[node, below=1.2cm of sim] (pres) {Presentación\\\texttt{juego.js}, \texttt{render*.js},\\\texttt{sprites.js}, \texttt{hud.js}, \texttt{audio.js},\\\texttt{entrada.js}};
+    \node[node, below=1.2cm of pres] (srv) {Servidor\\\texttt{juegoService.js} y reglas compartidas\\\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}};
+    % Conexiones: eventos hacia la presentación y peticiones al servidor
+    \draw[arrow] (sim.south) -- node[right, font=\footnotesize] {eventos} (pres.north);
+    \draw[arrow] (pres.south) -- node[right, font=\footnotesize] {api.js} (srv.north);
+    % Reglas compartidas entre simulación y servidor, por el lado derecho
+    \draw[arrow, dashed] (sim.east) -- ++(0.9,0) |- (srv.east);
+    \node[font=\footnotesize, anchor=west] at ($(sim.east)+(1.0,-1.8)$) {reglas};
 \end{tikzpicture}
 \end{adjustbox}
-\caption{Arquitectura del juego: simulación pura (izquierda), presentación (centro), servidor (derecha).}
+\caption{Arquitectura del juego: simulación pura, presentación y servidor con las reglas compartidas.}
 \label{fig:juego-arquitectura}
 \end{figure}
+
+La Figura~\ref{fig:juego-arquitectura} ilustra la separación en tres bloques: la simulación determinista (sin DOM ni audio) emite eventos que la presentación traduce a gráficos y sonido, y el servidor valida las partidas usando las mismas reglas (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) que el cliente.
 
 \subsection{Determinismo}
 \path{mundo.js} avanza con paso fijo de 1/60 s y generador aleatorio con semilla. Si el navegador va lento, se hacen varios pasos por fotograma (con tope); el resultado no depende de los FPS y las pruebas son reproducibles.
@@ -271,7 +239,7 @@ Cada fuente de daño (arma, ultra, ulti, quemaduras) se apunta en \path{mundo.st
 Búsqueda de obstáculos por celdas con claves numéricas (unas 4,5 veces más rápida que la primera versión), una textura de suelo por celda y ambiente, pintada como mucho una por fotograma y por adelantado, y muñecos cacheados.
 
 \subsection{Dibujo}
-Canvas 2D con cámara 3/4 (el suelo se aplasta en vertical y los muñecos están de pie). Los muñecos se pintan con código en una cuadrícula de 32×32 en estilo chibi (16×20 con piernas hasta la Fase 6): cabeza grande, cuerpo y zapatones, sin piernas. Se pintan por capas y píxel a píxel: zapatos, pantalón, torso, brazos y cabeza, cada una con su contorno de color y luz desde arriba a la izquierda. Cada persona tiene sus rasgos (18 peinados, 6 tipos de barba, mandíbula, complexión, estatura, gesto, gafas, cinta, guantes, brazalete…) y caminan con 4 fotogramas. Así se generan las equipaciones y las camisetas de 26 selecciones sin imágenes. El mapa (Fase 7) se pinta con píxeles de 2 unidades en \path{render-suelo.js} y \path{render-obstaculos.js}, con las paletas de cada ambiente en \path{render-paletas.js}, y los efectos de las habilidades en \path{render-habilidades.js} (partículas con tope y azar propio en \path{efectos.js}, para que encenderlas o apagarlas no cambie la partida).
+Canvas 2D con cámara 3/4 (el suelo se aplasta en vertical y los muñecos están de pie). Los muñecos se pintan con código en una cuadrícula de 32×32 en estilo chibi (16×20 con piernas hasta la Fase 6): cabeza grande, cuerpo y zapatones, sin piernas. Se pintan por capas y píxel a píxel: zapatos, pantalón, torso, brazos y cabeza, cada una con su contorno de color y luz desde arriba a la izquierda. Cada persona tiene sus rasgos (18 peinados, 6 tipos de barba, mandíbula, complexión, estatura, gesto, gafas, cinta, guantes, brazalete…) y caminan con 4 fotogramas. Así se generan las equipaciones y las camisetas de 26 selecciones sin imágenes. El mapa (Fase 7) se pinta con píxeles de 2 unidades en \texttt{render-\allowbreak suelo.js} y \texttt{render-\allowbreak obstaculos.js}, con las paletas de cada ambiente en \texttt{render-\allowbreak paletas.js}, y los efectos de las habilidades en \texttt{render-\allowbreak habilidades.js} (partículas con tope y azar propio en \path{efectos.js}, para que encenderlas o apagarlas no cambie la partida).
 
 \subsection{Audio}
 Todo sintetizado con Web Audio: ondas de pulso (12,5\%, 25\% y 50\%), triángulo y ruido. La música es un secuenciador propio que programa las notas por adelantado; la grada usa voces con formantes de vocales y palmas.
@@ -300,35 +268,35 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{j}{Jugador}
-  \newinst[2]{fe}{Frontend (juego.js + api.js)}
-  \newinst[2]{api}{API /api/juego}
-  \newinst[2]{srv}{juegoService}
-  \newinst[2]{repo}{juegoRepository}
-  \begin{call}{j}{jugar con jugador y entrenador}{fe}{ok}
+  \newinst[1.5]{fe}{Frontend}
+  \newinst[1.5]{api}{API /api/juego}
+  \newinst[1.5]{srv}{juegoService}
+  \newinst[1.5]{repo}{juegoRepository}
+  \begin{call}{j}{jugar}{fe}{ok}
     \begin{call}{fe}{POST partidas}{api}{201}
     \end{call}
     \begin{call}{api}{iniciarPartida}{srv}{partida}
     \end{call}
-    \begin{call}{srv}{lee perfil y version}{repo}{perfil}
+    \begin{call}{srv}{lee perfil}{repo}{perfil}
     \end{call}
-    \begin{call}{srv}{guarda partida en curso}{repo}{ok}
+    \begin{call}{srv}{guarda partida}{repo}{ok}
     \end{call}
   \end{call}
-  \begin{sdblock}{loop}{cada fotograma (simulacion en el frontend)}
-    \begin{call}{j}{mueve el personaje}{fe}{}
+  \begin{sdblock}{loop}{cada fotograma}
+    \begin{call}{j}{mueve}{fe}{}
     \end{call}
-    \mess{fe}{estado fin}{j}
+    \mess{fe}{fin}{j}
   \end{sdblock}
-  \begin{call}{fe}{POST partidas/id/fin}{api}{200 o 400}
-    \begin{call}{api}{finalizarPartida}{srv}{validacion}
+  \begin{call}{fe}{POST fin}{api}{200/400}
+    \begin{call}{api}{finalizarPartida}{srv}{validación}
     \end{call}
-    \begin{sdblock}{alt}{resultado imposible}
-      \mess{srv}{400 resultado no creible}{api}
+    \begin{sdblock}{alt}{imposible}
+      \mess{srv}{400 no creíble}{api}
     \end{sdblock}
-    \begin{sdblock}{else}{resultado valido}
-      \begin{call}{srv}{reparte recompensas y guarda}{repo}{perfil}
+    \begin{sdblock}{else}{válido}
+      \begin{call}{srv}{reparte y guarda}{repo}{perfil}
       \end{call}
-      \mess{api}{200 recompensas y logros}{fe}
+      \mess{api}{200 recompensas}{fe}
     \end{sdblock}
   \end{call}
 \end{sequencediagram}
@@ -346,30 +314,30 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
 \centering
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
-  \newthread{p1}{Peticion 1}
-  \newthread{p2}{Peticion 2 doble clic}
-  \newinst[2]{srv}{juegoService}
-  \newinst[2]{bd}{juegoPerfiles}
+  \newthread{p1}{Petición 1}
+  \newthread{p2}{Petición 2}
+  \newinst[1.5]{srv}{juegoService}
+  \newinst[1.5]{bd}{juegoPerfiles}
   \begin{call}{p1}{contratar}{srv}{ok}
   \end{call}
   \begin{call}{p2}{contratar}{srv}{ok}
   \end{call}
-  \begin{call}{srv}{SELECT datos y version}{bd}{v7}
+  \begin{call}{srv}{SELECT v7}{bd}{v7}
   \end{call}
-  \begin{call}{srv}{SELECT datos y version}{bd}{v7}
+  \begin{call}{srv}{SELECT v7}{bd}{v7}
   \end{call}
-  \begin{call}{srv}{p1 gasta ficha y sortea}{bd}{}
+  \begin{call}{srv}{p1 gasta ficha}{bd}{}
   \end{call}
-  \begin{call}{srv}{p2 gasta ficha y sortea}{bd}{}
+  \begin{call}{srv}{p2 gasta ficha}{bd}{}
   \end{call}
-  \begin{call}{srv}{UPDATE WHERE version=7 p1}{bd}{1 fila v8}
+  \begin{call}{srv}{UPDATE v7 p1}{bd}{1 fila v8}
   \end{call}
-  \begin{call}{srv}{UPDATE WHERE version=7 p2}{bd}{0 filas}
+  \begin{call}{srv}{UPDATE v7 p2}{bd}{0 filas}
   \end{call}
-  \begin{call}{srv}{p2 reintenta con datos nuevos}{bd}{v8 sin fichas}
+  \begin{call}{srv}{p2 reintenta}{bd}{v8 sin fichas}
   \end{call}
-  \mess{srv}{409 no hay fichas}{p2}
-  \mess{srv}{200 fichado y perfil}{p1}
+  \mess{srv}{409 sin fichas}{p2}
+  \mess{srv}{200 ok}{p1}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Contratar con concurrencia optimista.}
@@ -381,7 +349,7 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
 
 La Tabla~\ref{tab:juego-logros} lista los 29 logros con su condición y equipación desbloqueable.
 
-\begin{longtable}{@{}L{3.5cm} L{6.5cm} L{4.0cm}@{}}
+\begin{longtable}{@{}L{2.2cm} L{4.5cm} L{2.8cm}@{}}
 \caption{Logros y equipaciones.}\label{tab:juego-logros}\\
 \toprule
 \textbf{Logro} & \textbf{Cómo se consigue} & \textbf{Equipación} \\ \midrule \endfirsthead
@@ -426,7 +394,7 @@ Cada logro esconde un dato real del club (por ejemplo, que Griezmann fue tercero
 
 Cada fase es una etiqueta del Sprint 2 en DoneTonic. La Tabla~\ref{tab:juego-fases} resume la evolución.
 
-\begin{longtable}{@{}L{1.5cm} L{6.5cm} L{6.0cm}@{}}
+\begin{longtable}{@{}L{1.2cm} L{5.6cm} L{5.2cm}@{}}
 \caption{Evolución del juego por fases.}\label{tab:juego-fases}\\
 \toprule
 \textbf{Fase} & \textbf{Qué se añadió} & \textbf{Problemas que resolvió} \\ \midrule \endfirsthead

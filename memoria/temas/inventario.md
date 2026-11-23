@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «inventario» (este archiv
 
 ## Temas relacionados
 
-[[capturas]] · [[requisito]]
+[[capturas]] · [[requisito]] · [[figuras]] · [[minimos]]

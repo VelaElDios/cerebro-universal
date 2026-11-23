@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «gestion» (este archivo s
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[sprint]] · [[trazabilidad]] · [[donetonic]] · [[scrum]] · [[memoria-procesos]]
+[[grada-colchonera]] · [[saas]] · [[sprint]] · [[trazabilidad]] · [[donetonic]] · [[scrum]] · [[memoria-procesos]] · [[sprints]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "apalike"
-notas: 2
+notas: 3
 ---
 # apalike
 
@@ -14,7 +14,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «apalike» (este archivo s
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l|Bibliografía BibTeX apalike: autores corporativos con doble llave y year en todas las entradas]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-apalike-y-referencias-obligatorias|Bibliografía BibTeX con apalike y referencias obligatorias]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[bibliografia]] · [[bibtex]] · [[latex]] · [[autores corporativos]] · [[bibliografía]]
+[[bibliografia]] · [[bibtex]] · [[latex]] · [[referencias]] · [[autores corporativos]] · [[bibliografía]]

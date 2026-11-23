@@ -105,38 +105,34 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.8cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=6.4cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
+    nodeext/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.2cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Columna izquierda: Frontend
-    \node[nodewide] (fe) {Frontend (navegador)\\\mbox{ui.js + api.js + game/}};
-    % Columna central: Servidor (capas apiladas)
-    \node[nodewide, right=3.5cm of fe] (api) {Capa API (src/api)\\\mbox{rutas, sesión, roles, logs, errores}};
-    \node[node, below=1.6cm of api] (srv) {Lógica (src/services)\\\mbox{usuarios, tokens, juego}};
-    \node[node, below=1.6cm of srv] (repo) {Datos (src/repositories)\\\mbox{memoria | PostgreSQL}};
-    \node[node, below=1.6cm of repo] (int) {Integraciones\\\mbox{correo | Google}};
-    % Columna derecha: Reglas compartidas y servicios externos
-    \node[node, right=3.2cm of srv] (rules) {Reglas compartidas\\\mbox{club.js, config.js, logros.js}};
-    \node[nodewide, right=3.2cm of repo] (ext) {Servicios externos\\\mbox{PostgreSQL (Neon)}\\\mbox{SMTP Gmail}\\\mbox{Google OAuth 2.0}};
-
-    % Flecha frontend -> API (con codo, etiqueta fuera de cajas)
-    \draw[arrow] (fe.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {HTTP + JSON} (api.west);
-    % Flechas servidor (verticales, caja a caja)
+    % Columna principal: del navegador a las integraciones
+    \node[node] (fe) {Navegador (frontend)\\\texttt{ui.js}, \texttt{api.js} y \texttt{game/}};
+    \node[node, below=0.9cm of fe] (api) {API (\texttt{src/api})\\rutas, sesión, roles,\\logs y errores};
+    \node[node, below=0.9cm of api] (srv) {Lógica (\texttt{src/services})\\usuarios, tokens y juego};
+    \node[node, below=0.9cm of srv] (repo) {Datos (\texttt{src/repositories})\\memoria o PostgreSQL (Neon)};
+    \node[node, below=0.9cm of repo] (int) {Integraciones (\texttt{src/integrations})\\correo y Google};
+    % Columna derecha: reglas compartidas y servicios externos
+    \node[nodeext, right=1.6cm of srv] (rules) {Reglas compartidas\\\texttt{club.js}, \texttt{config.js},\\\texttt{logros.js}};
+    \node[nodeext, right=1.6cm of int] (ext) {Servicios externos\\SMTP Gmail y\\Google OAuth 2.0};
+    % Flechas de la columna principal
+    \draw[arrow] (fe.south) -- node[right, font=\footnotesize] {HTTP + JSON} (api.north);
     \draw[arrow] (api.south) -- (srv.north);
     \draw[arrow] (srv.south) -- (repo.north);
-    \draw[arrow] (srv.south) -- (int.north);
-    \draw[arrow, dashed] (srv.east) -- ++(1.0,0) |- (rules.west);
-    % Flechas a servicios externos (con codos, etiquetas fuera)
-    \draw[arrow] (repo.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {SQL} (ext.west);
-    \draw[arrow] (int.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {SMTP / OAuth} (ext.west);
+    \draw[arrow] (repo.south) -- (int.north);
+    % Flechas laterales
+    \draw[arrow, dashed] (srv.east) -- (rules.west);
+    \draw[arrow] (int.east) -- (ext.west);
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
 \label{fig:capas}
 \end{figure}
 
-Según la Figura~\ref{fig:capas}, la aplicación separa la presentación (navegador) del servidor, que a su vez se organiza en capas API, lógica, datos e integraciones. Las reglas del juego (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) se comparten entre cliente y servidor, y los servicios externos (PostgreSQL, SMTP, Google) solo se acceden desde la capa de integraciones.
+Según la Figura~\ref{fig:capas}, la aplicación separa la presentación (navegador) del servidor, que a su vez se organiza en capas API, lógica, datos e integraciones. Las reglas del juego (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) se comparten entre cliente y servidor: PostgreSQL se accede desde la capa de datos y el correo y Google desde la capa de integraciones.
 
 La separación de responsabilidades por capas se detalla en la Tabla~\ref{tab:capas}.
 
@@ -513,26 +509,25 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[2]{vis}{Vista}
-  \newinst[2]{dlg}{Diálogo}
-  \newinst[2]{api}{API}
-  \newinst[2]{srv}{Servicio}
+  \newinst[3]{vis}{Vista}
+  \newinst[3]{api}{API}
+  \newinst[3]{srv}{Servicio}
   \begin{call}{u}{pide baja}{vis}{ok}
   \end{call}
-  \begin{call}{vis}{confirma}{dlg}{ok}
+  \begin{call}{u}{confirma}{vis}{ok}
   \end{call}
-  \begin{call}{dlg}{DELETE /api/users/:id}{api}{204 / 403}
-    \begin{call}{api}{deleteUser()}{srv}{ok / error}
+  \begin{call}{vis}{DELETE}{api}{204 o 403}
+    \begin{call}{api}{deleteUser}{srv}{ok o error}
     \end{call}
   \end{call}
   \begin{sdblock}{alt}{ultimo admin}
     \mess{srv}{ForbiddenError}{api}
     \mess{api}{403}{vis}
   \end{sdblock}
-  \begin{sdblock}{else}{baja logica}
-    \mess{srv}{status = deleted}{api}
+  \begin{sdblock}{else}{baja}
+    \mess{srv}{deleted}{api}
     \mess{api}{204}{vis}
-    \mess{vis}{aviso + redirige}{u}
+    \mess{vis}{aviso}{u}
   \end{sdblock}
 \end{sequencediagram}
 \end{adjustbox}

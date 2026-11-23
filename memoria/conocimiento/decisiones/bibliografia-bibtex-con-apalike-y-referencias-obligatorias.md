@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Bibliografía BibTeX con apalike y referencias obligatorias"
-temas: ["bibliografia", "bibtex", "latex"]
+temas: ["bibliografia", "bibtex", "latex", "apalike", "referencias"]
 claves: ["apalike", "bib/ref.bib", "RFC 6749", "bcrypt", "Vampire Survivors", "enunciado"]
 proyectos: ["memoria-procesos"]
-fuentes: ["spec del proyecto, fuentes/bibliografia-extra.md"]
+fuentes: ["spec del proyecto, fuentes/bibliografia-extra.md", "fuentes/bibliografia-extra.md, repo:saas/memoria/bibliografia.bib"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -23,5 +23,16 @@ Temas: [[bibliografia]] · [[bibtex]] · [[latex]]
 > — `spec del proyecto, fuentes/bibliografia-extra.md` (cita sin comprobar)
 
 Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+
+## Ampliación (2026-11-23, memoria-procesos)
+Referencias obligatorias en bib/ref.bib:
+- Scrum Guide (Schwaber & Sutherland, 2020)
+- Express, Node.js, PostgreSQL, GitHub Flow, GitHub Actions, Google Cloud Run (online, year={s.f.})
+- OAuth 2.0 RFC 6749 (Hardt, 2012)
+- bcrypt (Provos & Mazières, 1999)
+- Vampire Survivors (poncle, 2022)
+- DoneTonic (online, year={s.f.})
+- Enunciado del proyecto (UCLM, 2026)
+Formato: `@misc{clave, author = {{Organización}}, title = {...}, year = {...}, howpublished = {\url{...}}}` para organizaciones; `@misc{clave, author = {Apellido, Nombre}, ...}` para personas. Todas deben ser citadas en el texto con `\cite{clave}`.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

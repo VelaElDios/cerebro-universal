@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redacción» (este archiv
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[figuras]] · [[maquetacion]] · [[redaccion]] · [[verificacion]] · [[fuentes]] · [[verificación]]
+[[latex]] · [[tfg]] · [[memoria]] · [[figuras]] · [[maquetacion]] · [[redaccion]] · [[estilo]] · [[verificacion]] · [[fuentes]] · [[verificación]]

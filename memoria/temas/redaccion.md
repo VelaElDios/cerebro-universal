@@ -29,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[figuras]] · [[maquetacion]] · [[subfigure]] · [[subcaption]] · [[reglas-javier]] · [[redacción]] · [[estilo]] · [[sprints]] · [[arquitectura]]
+[[latex]] · [[tfg]] · [[memoria]] · [[figuras]] · [[maquetacion]] · [[subfigure]] · [[estilo]] · [[subcaption]] · [[reglas-javier]] · [[redacción]] · [[sprints]] · [[arquitectura]]

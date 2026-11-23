@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «requisito» (este archivo
 
 ## Temas relacionados
 
-[[capturas]] · [[inventario]]
+[[capturas]] · [[inventario]] · [[figuras]] · [[minimos]]

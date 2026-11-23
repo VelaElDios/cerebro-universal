@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "estilo"
-notas: 2
+notas: 3
 ---
 # estilo
 
@@ -13,8 +13,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estilo» (este archivo se
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas|Prosa de TFG vs lista de capturas]]
 
 ## Temas relacionados
 
-[[tfg]] · [[redaccion]] · [[latex]] · [[prosa]] · [[revision]]
+[[tfg]] · [[latex]] · [[redaccion]] · [[redacción]] · [[figuras]] · [[maquetacion]] · [[prosa]] · [[revision]]

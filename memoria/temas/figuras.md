@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "figuras"
-notas: 22
+notas: 24
 ---
 # figuras
 
@@ -11,6 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-con-subfigure|Agrupar capturas con subfigure]]
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas con subfigure (dos por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila|Cómo agrupar capturas relacionadas en subfigure (2 por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
@@ -37,10 +38,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/capturas-disponibles-por-carpeta-minimos-requeridos|Capturas disponibles por carpeta (mínimos requeridos)]] · ⚠️ propuesto
+
 ## Lecciones (errores ya resueltos)
 
 - ⚠️ [[memoria/lecciones/rutas-de-capturas-y-nombres-de-archivo-deben-coincidir-exact|Rutas de capturas y nombres de archivo deben coincidir exactamente con figs/capturas/]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[redaccion]] · [[subcaption]] · [[capturas]] · [[subfigure]] · [[maquetación]] · [[reglas-javier]] · [[reglas-tfg]] · [[grada-colchonera]]
+[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[capturas]] · [[subcaption]] · [[redaccion]] · [[subfigure]] · [[maquetación]] · [[reglas-javier]] · [[reglas-tfg]] · [[grada-colchonera]]

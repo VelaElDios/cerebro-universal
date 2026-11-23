@@ -2,7 +2,7 @@
 
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
-- Notas que se han usado alguna vez: 44
+- Notas que se han usado alguna vez: 45
 - Notas que nunca se han usado: 258
 
 ## Las más útiles
@@ -25,7 +25,7 @@
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin\|Alcance por sprint: cada entrega solo contiene lo de su sprint]] | 26 | 0 | 1 |
+| [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin\|Alcance por sprint: cada entrega solo contiene lo de su sprint]] | 27 | 0 | 1 |
 | [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad\|Estado de completitud de sprints y trazabilidad]] | 21 | 0 | 1 |
 | [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints\|Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)]] | 12 | 0 | 1 |
 | [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd\|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] | 9 | 0 | 1 |

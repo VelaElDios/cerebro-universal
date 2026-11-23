@@ -36,4 +36,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibliografia» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[bibtex]] · [[bibliografía]] · [[apalike]] · [[referencias]] · [[memoria]] · [[tfg]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]] · [[bcrypt]] · [[hash]]
+[[latex]] · [[bibtex]] · [[apalike]] · [[referencias]] · [[bibliografía]] · [[memoria]] · [[tfg]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]] · [[bcrypt]] · [[hash]]

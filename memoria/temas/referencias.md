@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "referencias"
-notas: 2
+notas: 3
 ---
 # referencias
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «referencias» (este archi
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-apalike-y-referencias-obligatorias|Bibliografía BibTeX con apalike y referencias obligatorias]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/referencias-rotas-ref-y-ref-causa-y-solucion|Referencias rotas `\ref{.}` y `\ref{)}` — causa y solución]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -17,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «referencias» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[bibliografia]] · [[depuracion]]
+[[latex]] · [[bibliografia]] · [[bibtex]] · [[apalike]] · [[depuracion]]

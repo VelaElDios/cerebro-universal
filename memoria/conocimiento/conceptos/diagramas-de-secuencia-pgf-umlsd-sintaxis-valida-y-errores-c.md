@@ -4,7 +4,7 @@ titulo: "Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes
 temas: ["latex", "pgf-umlsd", "sequencediagram", "verificacion"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock", "revisar_umlsd.py"]
 proyectos: ["memoria-procesos"]
-fuentes: ["spec versión 4 (ejemplo compilado) y revisar_umlsd.py"]
+fuentes: ["spec versión 4 (ejemplo compilado) y revisar_umlsd.py", "spec del proyecto (ejemplo compilado)"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -59,5 +59,17 @@ Temas: [[latex]] · [[pgf-umlsd]] · [[sequencediagram]] · [[verificacion]]
 
 > El entorno es sequencediagram (en minúsculas; no existen sequenceDiagram ni un entorno alt: para alternativas, sdblock).
 > — `spec versión 4 (ejemplo compilado) y revisar_umlsd.py` (cita sin comprobar)
+
+## Ampliación (2026-11-23, memoria-procesos)
+Reglas de sintaxis (comprobadas por revisar_umlsd.py):
+- Entorno: `\begin{sequencediagram} ... \end{sequencediagram}` (minúsculas).
+- Participantes: `\newthread{id}{Nombre}` (línea de vida con caja) o `\newinst[dist]{id}{Nombre}` (solo línea). `dist` opcional (default 2).
+- Llamadas: `\begin{call}{origen}{mensaje}{destino}{respuesta} ... \end{call}`. Anidables.
+- Mensajes sueltos: `\mess{origen}{mensaje}{destino}`. Sin paréntesis en el mensaje.
+- Alternativas: `\begin{sdblock}{alt}{condición} ... \end{sdblock}`. No existe `alt` ni `else` sueltos.
+- Textos en `\mess`, `call`, `callself`, `\newinst`: NO `#`, `\_`, `\&`, `\%`, `\$`, `\{`, `\}`, comandos LaTeX (`\texttt`...), ni `#`, `&`, `_`, `$` sueltos. En `\mess` tampoco paréntesis.
+- Todo participante usado debe estar declarado en ese diagrama.
+- Envolver diagramas grandes en `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=\textwidth, max totalheight=0.6\textheight}`.
+- Fuente: `\scriptsize` o `\footnotesize` antes de `\begin{sequencediagram}` para letras ≥8pt en PDF.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

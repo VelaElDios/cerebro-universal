@@ -205,23 +205,22 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.4cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=7.2cm, align=center, minimum height=1.2cm, font=\footnotesize, inner sep=4pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Columna 1: Simulación pura (agrupados)
-    \node[nodewide] (sim) {Simulación pura\\\mbox{mundo.js, armas.js, combate.js}\\\mbox{jefes.js, oleadas.js}\\\mbox{terreno.js, ultras.js, mejoras.js}};
-    % Columna 2: Presentación (agrupados)
-    \node[nodewide, right=3.8cm of sim] (pres) {Presentación\\\mbox{juego.js, render*.js, sprites.js}\\\mbox{hud.js, audio.js, ui*.js}\\\mbox{entrada.js}};
-    % Columna 3: Servidor
-    \node[nodewide, right=3.8cm of pres] (srv) {Servidor\\\mbox{juegoService.js}\\\mbox{club.js, config.js, logros.js}};
-    % Conexiones con codos y etiquetas fuera de cajas
-    \draw[arrow] (sim.east) -- ++(1.2,0) |- node[near start, above, font=\scriptsize] {eventos} (pres.west);
-    \draw[arrow] (pres.east) -- ++(1.2,0) |- node[near start, above, font=\scriptsize] {api.js} (srv.west);
-    \draw[arrow, dashed] (sim.east) -- ++(1.8,0) |- node[near start, above, font=\scriptsize] {reglas compartidas} (srv.west);
+    % Bloques apilados: simulación, presentación y servidor
+    \node[node] (sim) {Simulación pura (sin DOM ni audio)\\\texttt{mundo.js}, \texttt{armas.js}, \texttt{combate.js},\\\texttt{jefes.js}, \texttt{oleadas.js},\\\texttt{terreno.js}, \texttt{mejoras.js}, \texttt{ultras.js}};
+    \node[node, below=1.2cm of sim] (pres) {Presentación\\\texttt{juego.js}, \texttt{render*.js},\\\texttt{sprites.js}, \texttt{hud.js}, \texttt{audio.js},\\\texttt{entrada.js}};
+    \node[node, below=1.2cm of pres] (srv) {Servidor\\\texttt{juegoService.js} y reglas compartidas\\\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}};
+    % Conexiones: eventos hacia la presentación y peticiones al servidor
+    \draw[arrow] (sim.south) -- node[right, font=\footnotesize] {eventos} (pres.north);
+    \draw[arrow] (pres.south) -- node[right, font=\footnotesize] {api.js} (srv.north);
+    % Reglas compartidas entre simulación y servidor, por el lado derecho
+    \draw[arrow, dashed] (sim.east) -- ++(0.9,0) |- (srv.east);
+    \node[font=\footnotesize, anchor=west] at ($(sim.east)+(1.0,-1.8)$) {reglas};
 \end{tikzpicture}
 \end{adjustbox}
-\caption{Arquitectura del juego: simulación pura (izquierda), presentación (centro), servidor (derecha).}
+\caption{Arquitectura del juego: simulación pura, presentación y servidor con las reglas compartidas.}
 \label{fig:juego-arquitectura}
 \end{figure}
 

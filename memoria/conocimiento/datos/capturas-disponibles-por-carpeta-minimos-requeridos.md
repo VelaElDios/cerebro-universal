@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Capturas disponibles por carpeta (mínimos requeridos)"
-temas: ["capturas", "inventario", "requisito"]
+temas: ["capturas", "inventario", "requisito", "figuras", "minimos"]
 claves: ["app/", "hito4/", "juego/", "donetonic/", "produccion/", "prueba-tecnica/", "fase7/"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/capturas/README.md, imágenes disponibles en borrador/"]
+fuentes: ["repo:saas/docs/capturas/README.md, imágenes disponibles en borrador/", "spec del proyecto"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -28,5 +28,15 @@ Temas: [[capturas]] · [[inventario]] · [[requisito]]
 > — `repo:saas/docs/capturas/README.md, imágenes disponibles en borrador/` (cita sin comprobar)
 
 Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+
+## Ampliación (2026-11-23, memoria-procesos)
+- app/: 13 capturas (01-inicio a 13-pagina-no-encontrada)
+- hito4/: 11 capturas (01-entrar-google a 11-privacidad)
+- juego/: 16 capturas (01-menu a 16-final-copa)
+- donetonic/: 8 capturas (01-tablero-sprint a 08-pbi-detalle)
+- produccion/: 3 capturas (01-correo-confirmacion, 02-actions-verde, 03-google-publicada)
+- prueba-tecnica/: 2 capturas (01-dominio-permitido, 02-subdominio-rechazado)
+- fase7/: 12 capturas (01-sprites-antes a 12-pausa-salir) — solo para documentación interna, no requeridas en memoria.
+Todos los archivos están en `figs/capturas/<carpeta>/` (copiados del repo).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

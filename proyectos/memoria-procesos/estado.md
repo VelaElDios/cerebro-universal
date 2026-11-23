@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-23 03:36"
+actualizado: "2026-11-23 04:09"
 ---
 
 # memoria-procesos
@@ -21,8 +21,8 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (96 páginas). Overfull hbox residual 10pt en anexo trazabilidad.
-- **verificar.py**: OK (35 fig, 29 tab, 17351 palabras, referencias resueltas).
-- **revisar_maquetacion.py**: FALLA - 3 diagramas incumplen reglas 16-18 (fig:capas, fig:sec-baja, fig:juego-arquitectura). 9 diagramas pendientes de revisión visual.
+- **verificar.py**: OK (35 fig, 29 tab, 17356 palabras, referencias resueltas).
+- **revisar_maquetacion.py**: FALLA en fig:sec-baja (reglas 16-18). fig:capas y fig:juego-arquitectura ya no fallan.
 - **revisar_umlsd.py**: pendiente.
 - **Revisión visual PDF**: pendiente.
 - **Contenido**: Todos los capítulos y anexos escritos con datos del spec. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad completa 82 tareas. Cadenas "La figura X muestra..." eliminadas en secciones corregidas (04-descripcion, 04b-juego). Imágenes DoneTonic/producción dejadas en un solo sitio (cap:propuesta y cap:evaluacion).

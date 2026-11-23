@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Burndown real con pgfplots (fig:burndown-s1 y fig:burndown-s2)"
-temas: ["burndown", "latex", "pgfplots"]
+temas: ["burndown", "latex", "pgfplots", "anexo desarrollo"]
 claves: ["pgfplots", "axis", "coordinates", "addplot", "legend"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/chapters/a1-desarrollo.tex"]
+fuentes: ["memoria/chapters/a1-desarrollo.tex", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -50,5 +50,10 @@ Temas: [[burndown]] · [[latex]] · [[pgfplots]]
 
 > \begin{tikzpicture} \begin{axis}[width=0.9\textwidth, height=7cm, xlabel={...}, ylabel={...}, xtick={...}, xticklabels={...}, ymin=0, ymax=..., grid=major, legend pos=north east, mark=*, thick, tick label style={font=\footnotesize}, label style={font=\small}] \addplot coordinates {...}; \addlegendentry{...} \end{axis} \end{tikzpicture}
 > — `memoria/chapters/a1-desarrollo.tex` (cita sin comprobar)
+
+## Ampliación (2026-11-23, memoria-procesos)
+Sprint 1 (fig:burndown-s1): datos de la Tabla Evolución del Sprint 1 (6 puntos: Inicio, Hito 1, Hito 2, Hito 3, +P19, Cierre). Eje Y: PBIs pendientes (0-16). Eje X: momentos. Usar `mark=*`, `thick`, `grid=major`, fuentes `\footnotesize` en ticks y labels.
+Sprint 2 (fig:burndown-s2): datos de la Tabla Evolución real del Sprint 2 (7 puntos: 23/10 a 29/10). Eje Y: 0-30. Mismo estilo.
+Evitar overfull: ancho `0.9\textwidth`, alto `7cm`. Si las etiquetas del eje X son largas, usar `xticklabels={23/10, 24/10,...}` y `tick label style={font=\footnotesize}`.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

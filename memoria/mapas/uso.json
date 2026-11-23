@@ -101,11 +101,17 @@
   "ultimo": "2026-11-19",
   "usos": 1
  },
+ "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-23",
+  "usos": 1
+ },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-23",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -147,7 +153,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-23",
-  "usos": 26
+  "usos": 27
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
@@ -200,8 +206,8 @@
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-22",
-  "usos": 6
+  "ultimo": "2026-11-23",
+  "usos": 7
  },
  "memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente.md": {
   "bien": 0,

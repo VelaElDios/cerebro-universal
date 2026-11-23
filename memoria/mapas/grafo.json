@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T03:36:33+01:00",
+ "generado": "2026-11-23T04:09:45+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1313,7 +1313,8 @@
     "tfg",
     "figuras",
     "maquetacion",
-    "redaccion"
+    "redaccion",
+    "estilo"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1556,7 +1557,9 @@
    "temas": [
     "capturas",
     "inventario",
-    "requisito"
+    "requisito",
+    "figuras",
+    "minimos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1607,7 +1610,9 @@
     "metricas",
     "verificacion",
     "fuentes",
-    "proyecto"
+    "proyecto",
+    "pruebas",
+    "sprints"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2457,7 +2462,8 @@
     "grada-colchonera",
     "scrum",
     "gestion",
-    "memoria-procesos"
+    "memoria-procesos",
+    "sprints"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2490,7 +2496,8 @@
     "scrum",
     "tfg",
     "alcance",
-    "sprint"
+    "sprint",
+    "sprints"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2552,7 +2559,9 @@
    "temas": [
     "bibliografia",
     "bibtex",
-    "latex"
+    "latex",
+    "apalike",
+    "referencias"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3840,7 +3849,8 @@
    "temas": [
     "burndown",
     "latex",
-    "pgfplots"
+    "pgfplots",
+    "anexo desarrollo"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4037,7 +4047,8 @@
    "temas": [
     "capturas",
     "latex",
-    "subcaption"
+    "subcaption",
+    "figuras"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4202,6 +4213,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu.md"
+  },
+  {
+   "id": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "tipo": "receta",
+   "titulo": "Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18)",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e.md"
   },
   {
    "id": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
@@ -5733,7 +5759,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 162,
+   "peso": 163,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5810,21 +5836,21 @@
    "id": "tema:referencias",
    "tipo": "tema",
    "titulo": "referencias",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/referencias.md"
   },
   {
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 24,
+   "peso": 25,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 24,
+   "peso": 25,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -5915,7 +5941,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 22,
+   "peso": 24,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6258,7 +6284,7 @@
    "id": "tema:pruebas",
    "tipo": "tema",
    "titulo": "pruebas",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/pruebas.md"
   },
   {
@@ -6433,7 +6459,7 @@
    "id": "tema:estilo",
    "tipo": "tema",
    "titulo": "estilo",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/estilo.md"
   },
   {
@@ -6584,6 +6610,13 @@
    "ruta": "memoria/temas/requisito.md"
   },
   {
+   "id": "tema:minimos",
+   "tipo": "tema",
+   "titulo": "minimos",
+   "peso": 1,
+   "ruta": "memoria/temas/minimos.md"
+  },
+  {
    "id": "tema:data",
    "tipo": "tema",
    "titulo": "data",
@@ -6605,18 +6638,18 @@
    "ruta": "memoria/temas/proyecto.md"
   },
   {
+   "id": "tema:sprints",
+   "tipo": "tema",
+   "titulo": "sprints",
+   "peso": 9,
+   "ruta": "memoria/temas/sprints.md"
+  },
+  {
    "id": "tema:prueba",
    "tipo": "tema",
    "titulo": "prueba",
    "peso": 1,
    "ruta": "memoria/temas/prueba.md"
-  },
-  {
-   "id": "tema:sprints",
-   "tipo": "tema",
-   "titulo": "sprints",
-   "peso": 6,
-   "ruta": "memoria/temas/sprints.md"
   },
   {
    "id": "tema:calidad",
@@ -6881,7 +6914,7 @@
    "id": "tema:apalike",
    "tipo": "tema",
    "titulo": "apalike",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/apalike.md"
   },
   {
@@ -7233,6 +7266,13 @@
    "titulo": "autores corporativos",
    "peso": 1,
    "ruta": "memoria/temas/autores corporativos.md"
+  },
+  {
+   "id": "tema:anexo desarrollo",
+   "tipo": "tema",
+   "titulo": "anexo desarrollo",
+   "peso": 1,
+   "ruta": "memoria/temas/anexo desarrollo.md"
   },
   {
    "id": "tema:cifras",
@@ -10804,6 +10844,11 @@
   },
   {
    "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "tema:estilo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -11654,6 +11699,16 @@
   },
   {
    "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "tema:minimos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -11775,6 +11830,16 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "tema:proyecto",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:pruebas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:sprints",
    "tipo": "trata"
   },
   {
@@ -14494,6 +14559,11 @@
   },
   {
    "de": "dato:workspace-y-equipo-en-donetonic",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:workspace-y-equipo-en-donetonic",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -14580,6 +14650,11 @@
   {
    "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
    "a": "tema:sprint",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:sprints",
    "tipo": "trata"
   },
   {
@@ -14755,6 +14830,16 @@
   {
    "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
    "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "tema:apalike",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "tema:referencias",
    "tipo": "trata"
   },
   {
@@ -19169,6 +19254,11 @@
   },
   {
    "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "a": "tema:anexo desarrollo",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -19754,6 +19844,11 @@
   },
   {
    "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -20190,6 +20285,31 @@
   {
    "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
    "a": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
    "tipo": "enlaza"
   },
   {
