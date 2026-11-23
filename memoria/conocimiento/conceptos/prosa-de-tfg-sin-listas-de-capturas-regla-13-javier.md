@@ -4,7 +4,7 @@ titulo: "Prosa de TFG sin listas de capturas (regla 13 Javier)"
 temas: ["latex", "redacción", "tfg", "figuras", "maquetacion", "redaccion", "estilo"]
 claves: ["subfigure", "prosa", "manual de usuario", "\\ref"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md (regla 13)", "memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md (regla 13)", "memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-21"
 actualizado: "2026-11-23"

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T07:45:56+01:00",
+ "generado": "2026-11-23T08:48:08+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -781,7 +781,8 @@
     "donetonic",
     "metricas",
     "retrospectiva",
-    "scrum"
+    "scrum",
+    "burndown"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1369,6 +1370,21 @@
    "ruta": "memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas.md"
   },
   {
+   "id": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "tipo": "concepto",
+   "titulo": "Reglas de maquetación de Javier (resumen accionable)",
+   "temas": [
+    "maquetacion",
+    "reglas",
+    "tfg"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/reglas-de-maquetacion-de-javier-resumen-accionable.md"
+  },
+  {
    "id": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
    "tipo": "concepto",
    "titulo": "Rotación de proyectos por tiempo sin avanzar",
@@ -1660,7 +1676,8 @@
     "pruebas",
     "sprints",
     "grada-colchonera",
-    "saas"
+    "saas",
+    "juego"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2918,6 +2935,21 @@
    "ruta": "memoria/conocimiento/decisiones/deshacer-el-paso-entero-si-rompe-la-compilacion.md"
   },
   {
+   "id": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "tipo": "decision",
+   "titulo": "Diagramas de secuencia con pgf-umlsd: sintaxis válida y errores comunes",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "sequencediagram"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error.md"
+  },
+  {
    "id": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "tipo": "decision",
    "titulo": "Diagramas de secuencia: máx. 6 participantes (agrupar o partir)",
@@ -4164,7 +4196,8 @@
    "temas": [
     "latex",
     "memoria-procesos",
-    "subcaption"
+    "subcaption",
+    "figuras"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4505,6 +4538,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-rutas-y-diagramas.md"
+  },
+  {
+   "id": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "tipo": "receta",
+   "titulo": "Cómo evitar overfull hbox en tablas anchas con longtable",
+   "temas": [
+    "latex",
+    "longtable",
+    "tablas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-tablas-anchas-con-longtable.md"
   },
   {
    "id": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
@@ -5857,7 +5905,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 167,
+   "peso": 169,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5983,14 +6031,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 25,
+   "peso": 26,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 25,
+   "peso": 26,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -6011,7 +6059,7 @@
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -6039,7 +6087,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 68,
+   "peso": 69,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -6060,14 +6108,14 @@
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 24,
+   "peso": 25,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6081,7 +6129,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -6228,7 +6276,7 @@
    "id": "tema:juego",
    "tipo": "tema",
    "titulo": "juego",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/juego.md"
   },
   {
@@ -6242,7 +6290,7 @@
    "id": "tema:burndown",
    "tipo": "tema",
    "titulo": "burndown",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/burndown.md"
   },
   {
@@ -6587,6 +6635,13 @@
    "titulo": "estilo",
    "peso": 3,
    "ruta": "memoria/temas/estilo.md"
+  },
+  {
+   "id": "tema:reglas",
+   "tipo": "tema",
+   "titulo": "reglas",
+   "peso": 1,
+   "ruta": "memoria/temas/reglas.md"
   },
   {
    "id": "tema:bcrypt",
@@ -9136,6 +9191,11 @@
   },
   {
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:burndown",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -11080,6 +11140,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "tema:reglas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -12027,6 +12107,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "tema:saas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:juego",
    "tipo": "trata"
   },
   {
@@ -15948,6 +16033,26 @@
    "de": "decision:deshacer-el-paso-entero-si-rompe-la-compilacion",
    "a": "receta:como-dar-instrucciones-al-cerebro-sin-tocar-el-borrador",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
@@ -20191,6 +20296,11 @@
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -21033,6 +21143,26 @@
    "de": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",
    "a": "decision:dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",

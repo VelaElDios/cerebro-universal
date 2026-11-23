@@ -24,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 
 ## Temas relacionados
 
-[[memoria]] · [[grada-colchonera]] · [[trazabilidad]] · [[sprint]] · [[scrum]] · [[latex]] · [[tfg]] · [[metricas]] · [[saas]] · [[memoria-procesos]] · [[pruebas]] · [[donetonic]]
+[[memoria]] · [[grada-colchonera]] · [[trazabilidad]] · [[sprint]] · [[scrum]] · [[latex]] · [[tfg]] · [[metricas]] · [[saas]] · [[memoria-procesos]] · [[pruebas]] · [[juego]]

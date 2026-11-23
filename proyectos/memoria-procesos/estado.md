@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-23 07:45"
+actualizado: "2026-11-23 08:48"
 ---
 
 # memoria-procesos
@@ -22,14 +22,15 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (98 páginas, LuaLaTeX). `revisar_maquetacion.py`: ✅ reglas cumplidas; 13 diagramas medidos en PDF sin fallos; 9 diagramas con aviso 404 de Gemini (no bloquean).
-- **verificar.py**: ✅ pasa (35 figuras, 29 tablas, 18029 palabras). Subfiguras de prueba técnica ya citadas.
+- **verificar.py**: ✅ pasa (35 figuras, 29 tablas, 17850 palabras). Subfiguras de prueba técnica ya citadas.
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…»; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación de la recta del Sprint 2; duplicado de lecciones Sprint 2 eliminado de la retrospectiva Sprint 1.
-- **Pendiente**: validación `revisar_umlsd.py` + visual de 9 diagramas (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2); fusión de secciones cortas y quitar repeticiones entre capítulos; revisión visual página a página del PDF.
+- **Pendiente**: validación `revisar_umlsd.py` + visual de 9 diagramas (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2); fusión de secciones cortas y quitar repeticiones entre capítulos; revisión visual página a página del PDF; overfull hbox menor en a4-trazabilidad.tex.
 
 ## Siguiente
-1. Reejecutar `comando_prueba` y confirmar verde.
-2. Validar los 9 diagramas pendientes (umlsd + revisión a ojo; replantear los que fallen).
-3. Fusionar secciones cortas y quitar repeticiones entre capítulos.
-4. Revisión visual final del PDF página a página y contrastar ≥25 datos con las fuentes en COMPROBACIONES.
+1. Ejecutar `revisar_umlsd.py` y corregir los 9 diagramas pendientes.
+2. Revisión visual de esos 9 diagramas en el PDF (reglas 16-19).
+3. Revisión visual final del PDF página a página (regla 15).
+4. Eliminar restos de «La figura X muestra…» y confirmar Hito 4 no pendiente.
+5. Arreglar overfull hbox y re-ejecutar `comando_prueba` hasta verde total.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

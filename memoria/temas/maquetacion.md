@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 25
+notas: 26
 ---
 # maquetacion
 
@@ -37,6 +37,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
+- 💡 [[memoria/conocimiento/conceptos/reglas-de-maquetacion-de-javier-resumen-accionable|Reglas de maquetación de Javier (resumen accionable)]] · ⚠️ propuesto
 
 ## Datos
 

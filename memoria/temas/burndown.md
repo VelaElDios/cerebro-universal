@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "burndown"
-notas: 3
+notas: 4
 ---
 # burndown
 
@@ -17,8 +17,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «burndown» (este archivo 
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator|Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en anexo desarrollo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2|Burndown real vs. DoneTonic en Sprint 2 (backlog registrado al cerrar el sprint)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[donetonic]] · [[metricas]] · [[scrum]] · [[sprint]] · [[graficas]] · [[métricas]] · [[sprint2]] · [[latex]] · [[pgfplots]] · [[anexo desarrollo]]
+[[donetonic]] · [[metricas]] · [[scrum]] · [[sprint]] · [[graficas]] · [[métricas]] · [[sprint2]] · [[retrospectiva]] · [[latex]] · [[pgfplots]] · [[anexo desarrollo]]

@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes"
-temas: ["memoria", "métricas", "trazabilidad", "metricas", "verificacion", "fuentes", "proyecto", "pruebas", "sprints", "grada-colchonera", "saas"]
+temas: ["memoria", "métricas", "trazabilidad", "metricas", "verificacion", "fuentes", "proyecto", "pruebas", "sprints", "grada-colchonera", "saas", "juego"]
 claves: ["19 PBIs", "29 PBIs", "82 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md, repo:saas/docs/procesos.md, repo:saas/@arbol"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md, repo:saas/docs/procesos.md, repo:saas/@arbol", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md"]
 confianza: "propuesto"
 fecha: "2026-11-22"
 actualizado: "2026-11-23"
@@ -80,5 +80,8 @@ solucion: Usar siempre la cifra exacta de la fuente y citarla: "19 PBIs en el ba
 
 ## Ampliación (2026-11-23, memoria-procesos)
 Lista de 25+ cifras y hechos verificados contra las fuentes del repositorio, listados en COMPROBACIONES.
+
+## Ampliación (2026-11-23, memoria-procesos)
+Todas las cifras mayores de 20 que aparecen en la memoria están en las fuentes. Las menores (19, 29, 32, 50, 23, 5, 36, 29, 16, 6, 16, 10, 5, 26) las comprueba el revisor. Ojo con los que se parecen: 19 PBIs en Sprint 1 pero burndown de entrega cuenta 16 (P1–P14, P18, P19); 32 + 50 = 82 tareas totales; 276 pruebas al cierre Sprint 2, 322 tras Fase 7.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

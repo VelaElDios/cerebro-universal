@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgf-umlsd"
-notas: 25
+notas: 26
 ---
 # pgf-umlsd
 
@@ -27,6 +27,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error|Diagramas de secuencia con pgf-umlsd: sintaxis válida y errores comunes]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18|Diagramas pgf-umlsd sin escalar y legibles (reglas 16-18)]] · ⚠️ propuesto
 
 ## Conceptos
@@ -49,4 +50,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[maquetacion]] · [[sequencediagram]] · [[diagramas]] · [[diagramas-secuencia]] · [[secuencia]] · [[verificacion]] · [[pgfplots]] · [[memoria]] · [[codigos estado]] · [[http]]
+[[latex]] · [[tikz]] · [[sequencediagram]] · [[maquetacion]] · [[diagramas]] · [[diagramas-secuencia]] · [[secuencia]] · [[verificacion]] · [[pgfplots]] · [[memoria]] · [[codigos estado]] · [[http]]

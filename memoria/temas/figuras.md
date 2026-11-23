@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "figuras"
-notas: 24
+notas: 25
 ---
 # figuras
 
@@ -12,6 +12,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-con-subfigure|Agrupar capturas con subfigure]]
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas con subfigure (dos por fila)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure|Cómo agrupar capturas relacionadas con subfigure]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila|Cómo agrupar capturas relacionadas en subfigure (2 por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
@@ -48,4 +49,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[capturas]] · [[subcaption]] · [[redaccion]] · [[subfigure]] · [[maquetación]] · [[reglas-javier]] · [[reglas-tfg]] · [[grada-colchonera]]
+[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[capturas]] · [[subcaption]] · [[redaccion]] · [[subfigure]] · [[maquetación]] · [[memoria-procesos]] · [[reglas-javier]] · [[reglas-tfg]]

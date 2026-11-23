@@ -1,10 +1,10 @@
 ---
 tipo: "concepto"
 titulo: "Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en anexo desarrollo"
-temas: ["donetonic", "metricas", "retrospectiva", "scrum"]
+temas: ["donetonic", "metricas", "retrospectiva", "scrum", "burndown"]
 claves: ["recta DoneTonic", "backlog registrado al cierre", "evolución real por PRs"]
 proyectos: ["memoria-procesos"]
-fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2"]
+fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2", "repo:saas/docs/sprint-2.md y repo:saas/docs/decisiones.md D-19"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -23,5 +23,8 @@ Esto es requisito del profesor (estructura-memoria.md: "explicar que las gráfic
 
 > El backlog del Sprint 2 se registró en DoneTonic al cerrar el sprint (29/10/2026) con todos los PBIs ya en Hecho; por eso sus gráficas de Sprint Burndown y Burnup caen en recta de 29 a 0 ese mismo día. La evolución real, reconstruida a partir de las fechas de fusión de los pull requests en main, se detalla en la Tabla y la Figura.
 > — `sprint-2.md § Retrospectiva y § Evolución del Sprint 2` (cita sin comprobar)
+
+## Ampliación (2026-11-23, memoria-procesos)
+En el anexo de desarrollo (a1-desarrollo.tex) se debe incluir tanto la captura de las gráficas de DoneTonic en recta (Figura fig:donetonic-s2-graficas) COMO la tabla de evolución real (Tabla tab:evolucion-s2) y el gráfico pgfplots del burndown real (Figura fig:burndown-s2), explicando explícitamente por qué las gráficas de la herramienta salen en recta y cuál fue la evolución real día a día.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

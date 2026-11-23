@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tfg"
-notas: 68
+notas: 69
 ---
 # tfg
 
@@ -73,6 +73,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas|Prosa de TFG vs lista de capturas]]
+- 💡 [[memoria/conocimiento/conceptos/reglas-de-maquetacion-de-javier-resumen-accionable|Reglas de maquetación de Javier (resumen accionable)]] · ⚠️ propuesto
 
 ## Datos
 
@@ -95,4 +96,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[figuras]] · [[plantilla]] · [[grada-colchonera]] · [[redaccion]] · [[diagramas]] · [[saas]] · [[verificacion]] · [[maquetacion]] · [[scrum]] · [[sprints]]
+[[latex]] · [[memoria]] · [[figuras]] · [[plantilla]] · [[grada-colchonera]] · [[redaccion]] · [[diagramas]] · [[saas]] · [[maquetacion]] · [[verificacion]] · [[scrum]] · [[sprints]]

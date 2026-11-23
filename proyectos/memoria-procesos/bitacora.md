@@ -14711,3 +14711,82 @@ Qué he corregido yo: he eliminado la frase duplicada al final de la retrospecti
 ## 2026-11-23 07:45 · 🧠 Conocimiento guardado
 
 [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+
+## 2026-11-23 08:44 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+He atendido la tarea del revisor sobre secciones cortas y repeticiones: en el capítulo del juego he fusionado las seis subsecciones diminutas (Determinismo, Eventos, Estadísticas, Rendimiento, Dibujo y Audio) en dos subsecciones con contenido real, y en el anexo de desarrollo he eliminado el párrafo misplaced sobre las figuras del Sprint 2 dentro de la retrospectiva del Sprint 1 y he condensado los dos bloques de «Lecciones aprendidas», que repetían casi literalmente el capítulo de conclusiones, remitiendo ahora a él. Así se cumple la regla 9 (ninguna sección de una o dos líneas) y se elimina la repetición de párrafos entre capítulos sin perder ningún dato de las fuentes.
+
+**Archivos:** `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** -
+
+## 2026-11-23 08:48 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- 19 PBIs en Sprint 1 (P1–P19) y 32 tareas (T1–T32) → repo:saas/docs/sprint-1.md tabla backlog y trazabilidad
+- 29 PBIs en Sprint 2 (P20–P48) y 50 tareas (T33–T82) → repo:saas/docs/sprint-2.md tabla backlog y trazabilidad
+- 48 PBIs totales, 82 tareas totales → suma de ambos sprints
+- 276 pruebas automáticas al cierre del Sprint 2, 322 tras Fase 7 → repo:saas/docs/procesos.md tabla pruebas por fichero (total 276) y log.md (Fase 7 añade 46)
+- 23 endpoints de la API → repo:saas/docs/sprint-2.md métricas «Endpoints de la API | 23»
+- 5 migraciones SQL (001–005) → repo:saas/@arbol lista src/db/migrations/001_crear_tabla_usuarios.sql … 005_email_libre_tras_baja.sql
+- bcrypt coste 10 (4 en pruebas) → repo:saas/docs/arquitectura.md tabla módulos: passwordHasher.js
+- Token HMAC caducidad 24 h → repo:saas/docs/arquitectura.md flujo registro: «token = firma HMAC {userId, propósito, caducidad 24 h}»
+- Timeout 15 s en api.js → repo:saas/docs/arquitectura.md frontend: «timeout de 15 s con AbortController»
+- Cookie grada.sid httpOnly → repo:saas/docs/arquitectura.md flujo login: «cookie grada.sid (httpOnly)»
+- Oleada cada 30 s, jefe cada 4 oleadas (primero a 1:30) → repo:saas/docs/juego.md manual: «oleada nueva cada 30 s y un jefe cada cuatro oleadas (cada 2 minutos, el primero a los 1:30)»
+- Ambientes cada 5 minutos (5 ambientes) → repo:saas/docs/juego.md manual: «cada 5 minutos cambia la pantalla: pretemporada → … → Final del Mundial»
+- Mote 3–16 caracteres único → repo:saas/docs/juego.md manual: «pide un mote (3 a 16 caracteres, único)»
+- Anti-trampas: margen 15 s, tope 4 h, límites creíbles → repo:saas/docs/arquitectura.md «Servidor del juego y anti-trampas»
+- 8 secretos en Secret Manager → repo:saas/docs/procesos.md lista: database-url, session-secret, admin-email, admin-password, smtp-url, mail-from, google-client-id, google-client-secret
+- PostgreSQL 17 en CI → repo:saas/docs/procesos.md CI: «Trabajo Pruebas: npm ci + npm test con un servicio PostgreSQL 17»
+- Imagen Docker Node 22 Alpine → repo:saas/docs/procesos.md: «Node 22 (Alpine), solo dependencias de producción»
+- Región Cloud Run europe-southwest1 (Madrid), Neon en Frankfurt → repo:saas/docs/procesos.md CI/CD
+- 6 dependencias de producción (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer) → repo:saas/docs/sprint-2.md métricas
+- Contenido del juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → repo:saas/docs/sprint-2.md métricas
+- Burndown Sprint 1: PBIs pendientes [15,9,5,1,2,0] → repo:saas/docs/sprint-1.md tabla evolución y mermaid
+- Burndown real Sprint 2: PBIs pendientes [28,11,11,2,2,2,0] → repo:saas/docs/sprint-2.md tabla evolución y mermaid
+- Cambio de alcance P19 (Cloud Run) a mitad del Sprint 1 → repo:saas/docs/sprint-1.md y decisiones.md D-16
+- Backlog Sprint 2 registrado en DoneTonic al cerrar el sprint (29/10) → repo:saas/docs/sprint-2.md y decisiones.md D-19
+- Verificación.py pasó (35 figuras, 29 tablas, 17850 palabras) → salida de prueba actual
+- Revisar_maquetacion.py pasó (reglas cumplidas, 13 diagramas medidos sin fallos) → salida de prueba actual
+- Subfiguras fig:prueba-tecnica-permitido y fig:prueba-tecnica-rechazado ya citadas en el texto (verificar.py OK) → chapters/05-evaluacion.tex líneas previas a la figura
+
+Qué está bien:
+- La compilación y las pruebas automáticas pasan (verificar.py y revisar_maquetacion.py en verde).
+- Los dos capítulos reescritos por el constructor (06-conclusiones.tex y a3-uso-ia.tex) cumplen el estilo de prosa sin «La figura X muestra…» y corrigen datos inventados.
+- Las subfiguras de la prueba técnica ya están citadas en el texto (error anterior resuelto).
+- El anexo de desarrollo (a1-desarrollo.tex) tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
+- Se eliminó el párrafo duplicado de la retrospectiva del Sprint 1 que copiaba la del Sprint 2.
+- Se fusionaron las seis subsecciones diminutas del capítulo del juego en dos con contenido real.
+- Los 27+ datos contrastados arriba coinciden con las fuentes.
+
+Qué falla / pendiente:
+1. **9 diagramas obligatorios sin validar visualmente ni con revisar_umlsd.py** (reglas 16-19 de Javier): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2. El script revisar_maquetacion.py midió 13 diagramas sin fallos, pero Gemini devolvió 404 en estos 9 y no bloquea; la regla 19 exige «los diagramas se miran de verdad en el PDF».
+2. **Overfull hbox de 10.01pt** en a4-trazabilidad.tex (línea 23: «T1--T82|») — menor, pero viola la regla de nada fuera del margen.
+3. **Revisión visual final página a página del PDF** pendiente (regla 15: «el PDF se revisa página a página»).
+4. **Verificar que no quede ninguna cadena «La figura X muestra…» suelta** en todo el documento (regla 13). El constructor dice que las fusionó, pero hay que confirmar en los capítulos 01, 03, 04, 05, 06 y anexos.
+5. **Confirmar que ningún capítulo dice que el Hito 4 esté pendiente** (criterio de terminado).
+
+Qué he corregido yo: nada en este paso (el overfull hbox es menor y lo puede arreglar el constructor con \allowbreak o ajustando la tabla).
+
+**Correcciones del revisor:** `(cambio) chapters/a4-trazabilidad.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `revisar_umlsd.py` sobre los 9 diagramas pendientes (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+- Revisar visualmente cada uno de esos 9 diagramas en el PDF compilado: comprobar que las letras midan ≥ 7,5 pt, que no hay flechas atravesando cajas, que no hay palabras partidas con guion, que los codos en flechas separan bien las cajas. Replantear los que fallen (reducir participantes a ≤ 6, aumentar text width, usar codos |-/-|, adjustbox solo para encoger un poco).
+- Hacer revisión visual final del PDF página a página: (a) ninguna página con una sola imagen (regla 8), (b) ninguna figura repetida (regla 10), (c) flechas con $\rightarrow$ no `->` (regla 11), (d) todo citado con \ref, (e) no hay secciones de 1–2 líneas (regla 9), (f) no hay párrafos repetidos entre capítulos.
+- Buscar y eliminar cualquier resto de «La figura X muestra…» o «La tabla X muestra…» suelto en todos los capítulos y anexos; integrar la explicación en la prosa.
+- Confirmar que ningún capítulo menciona el Hito 4 como pendiente (el Hito 4 está completado y comprobado en producción).
+- Arreglar el overfull hbox de 10 pt en a4-trazabilidad.tex (añadir \allowbreak en «T1--T82» o reducir ancho de columna).
+- Volver a ejecutar `comando_prueba` y confirmar que todo pasa (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-23 08:48 · 🧠 Conocimiento guardado
+
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[reglas-de-maquetacion-de-javier-resumen-accionable]]

@@ -226,22 +226,16 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 
 La Figura~\ref{fig:juego-arquitectura} ilustra la separación en tres bloques: la simulación determinista (sin DOM ni audio) emite eventos que la presentación traduce a gráficos y sonido, y el servidor valida las partidas usando las mismas reglas (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) que el cliente.
 
-\subsection{Determinismo}
+\subsection{Simulación determinista y eventos}
 \path{mundo.js} avanza con paso fijo de 1/60 s y generador aleatorio con semilla. Si el navegador va lento, se hacen varios pasos por fotograma (con tope); el resultado no depende de los FPS y las pruebas son reproducibles.
 
-\subsection{Eventos}
-La simulación no toca el DOM ni el audio: deja eventos (\texttt{oleada}, \texttt{aviso}, \texttt{jefe-derrotado}, \texttt{ambiente}, \texttt{ultra}…) que \path{juego.js} traduce a sonido, avisos y anuncios para lectores de pantalla.
+La simulación no toca el DOM ni el audio: deja eventos (\texttt{oleada}, \texttt{aviso}, \texttt{jefe-derrotado}, \texttt{ambiente}, \texttt{ultra}…) que \path{juego.js} traduce a sonido, avisos y anuncios para lectores de pantalla. Cada fuente de daño (arma, ultra, ulti, quemaduras) se apunta en \path{mundo.stats}, de donde la pantalla de fin obtiene las barras de daño por habilidad.
 
-\subsection{Estadísticas}
-Cada fuente de daño (arma, ultra, ulti, quemaduras) se apunta en \path{mundo.stats} para la pantalla de fin.
-
-\subsection{Rendimiento}
+\subsection{Rendimiento, dibujo y audio}
 Búsqueda de obstáculos por celdas con claves numéricas (unas 4,5 veces más rápida que la primera versión), una textura de suelo por celda y ambiente, pintada como mucho una por fotograma y por adelantado, y muñecos cacheados.
 
-\subsection{Dibujo}
 Canvas 2D con cámara 3/4 (el suelo se aplasta en vertical y los muñecos están de pie). Los muñecos se pintan con código en una cuadrícula de 32×32 en estilo chibi (16×20 con piernas hasta la Fase 6): cabeza grande, cuerpo y zapatones, sin piernas. Se pintan por capas y píxel a píxel: zapatos, pantalón, torso, brazos y cabeza, cada una con su contorno de color y luz desde arriba a la izquierda. Cada persona tiene sus rasgos (18 peinados, 6 tipos de barba, mandíbula, complexión, estatura, gesto, gafas, cinta, guantes, brazalete…) y caminan con 4 fotogramas. Así se generan las equipaciones y las camisetas de 26 selecciones sin imágenes. El mapa (Fase 7) se pinta con píxeles de 2 unidades en \texttt{render-\allowbreak suelo.js} y \texttt{render-\allowbreak obstaculos.js}, con las paletas de cada ambiente en \texttt{render-\allowbreak paletas.js}, y los efectos de las habilidades en \texttt{render-\allowbreak habilidades.js} (partículas con tope y azar propio en \path{efectos.js}, para que encenderlas o apagarlas no cambie la partida).
 
-\subsection{Audio}
 Todo sintetizado con Web Audio: ondas de pulso (12,5\%, 25\% y 50\%), triángulo y ruido. La música es un secuenciador propio que programa las notas por adelantado; la grada usa voces con formantes de vocales y palmas.
 
 \section{Servidor del juego y anti-trampas}
