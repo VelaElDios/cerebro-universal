@@ -114,6 +114,6 @@ Evitar páginas con una sola imagen (Regla 8) y cadenas de «La figura X muestra
 
 Fusionada con: Cómo agrupar capturas relacionadas con subfigure en LaTeX
 
-Relacionado: [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]]
+Relacionado: [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[como-agrupar-capturas-relacionadas-con-subfigure]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

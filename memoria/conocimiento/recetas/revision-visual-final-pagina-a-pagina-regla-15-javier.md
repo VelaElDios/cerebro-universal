@@ -5,7 +5,7 @@ temas: ["latex", "maquetacion", "pdf"]
 claves: ["revisar_maquetacion.py", "regla-8", "regla-9", "regla-10", "regla-11", "regla-15"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
 ---
@@ -25,6 +25,8 @@ Checklist de revisión visual final (obligatorio antes de TERMINADO):
 10. **Regla 19**: Revisión visual de TODOS los diagramas en PDF (Gemini 404 no exime).
 
 > Antes de marcar TERMINADO, el PDF se revisa página a página, y revisar_maquetacion.py debe salir en verde. Lo que no mide el script (que las tablas se lean bien y que el orden tenga sentido) lo comprueba el revisor.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> — `memoria/reglas-tfg.md`
+
+Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

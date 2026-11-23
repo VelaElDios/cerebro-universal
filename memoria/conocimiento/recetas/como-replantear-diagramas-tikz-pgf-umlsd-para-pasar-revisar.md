@@ -28,4 +28,8 @@ Ejemplo correcto (fig:capas rehecho): text width 2.6 cm, separación 3.0 cm, `\s
 > Todo diagrama se lee bien a su tamaño en el PDF: las letras del dibujo, una vez escalado, nunca son más pequeñas que las del pie de figura (unos 8-9 pt). Si para que quepa hay que encogerlo tanto que las letras quedan diminutas, el diagrama está mal planteado.
 > — `memoria/reglas-tfg.md y salida de revisar_maquetacion.py` (cita sin comprobar)
 
+Relacionado: [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]]: La **Nota A** (Ampliaciones) recomienda envolver diagramas anchos en `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=...}`. La **Nota B** (Paso 1) prohíbe explícitamente escalar con `\resizebox` (y `\adjustbox{scale=...}`) porque reduce las letras por debajo de 7,5 pt; solo permite `adjustbox{max width=..., max totalheight=...}` al no escalar si el diagrama cabe.

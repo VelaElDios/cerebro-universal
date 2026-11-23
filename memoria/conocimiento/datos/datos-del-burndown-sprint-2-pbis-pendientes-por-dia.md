@@ -5,7 +5,7 @@ temas: ["donetonic", "grada-colchonera", "scrum", "sprint"]
 claves: ["burndown", "PBIs pendientes", "Sprint 2", "fecha", "evolución"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-16"
 ---
@@ -26,6 +26,8 @@ Gráfico Mermaid incluido: línea y barras con valores [28, 11, 11, 2, 2, 2, 0] 
 > | Día | PBIs hechos ese día | PBIs hechos (acumulado) | PBIs pendientes |
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]]
+Relacionado: [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[cronologia-detallada-del-proyecto-septiembre-octubre-2026]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]]: Nota A registra 0 PBIs hechos el 27/10 (PR #55) y 2 PBIs el 29/10 (PR #56 y docs); Nota B, en su sección «Evolución real reconstruida», atribuye a Nota A 1 PBI el 27/10 y 1 PBI el 29/10, y en su propio resumen omite el 27/10 y asigna 2 PBIs al 29/10. Hay cifras distintas para los mismos días (27/10 y 29/10) y discrepancia interna en Nota B.

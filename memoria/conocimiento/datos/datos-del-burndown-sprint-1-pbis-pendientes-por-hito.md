@@ -24,3 +24,5 @@ Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 > ⚠️ Posible contradicción con [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]: Nota A afirma que el Sprint 1 tuvo 19 PBIs (primer viñeta) y menciona cuatro releases de hito (hito-1 a hito-4) más sprint-1; Nota B indica que el Sprint 1 tuvo 16 PBIs totales (15 iniciales + P19 añadido) y su burndown solo registra tres hitos (hito-1, hito-2, hito-3) antes del cierre del sprint.
 
 > ⚠️ Posible contradicción con [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]]: Nota A dice que el Sprint 1 tuvo **19 PBIs (P1–P19)** y **4 hitos**. Nota B dice que el alcance total fue de **16 PBIs (P1–P14, P18, P19)** y su burndown solo registra **3 hitos (hito-1, hito-2, hito-3)** antes del cierre.
+
+> ⚠️ Posible contradicción con [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]: Nota A registra 16 PBIs totales (P1–P14, P18, P19; faltan P15–P17) y solo 3 hitos en el burndown (Hito 1, 2, 3). Nota B afirma 19 PBIs (P1–P19 completos) y 4 hitos (Hito 1 a Hito 4, donde Hito 4 abarca P15–P19).

@@ -10964,7 +10964,7 @@ El constructor intentó corregir los 5 diagramas de secuencia en chapters/04-des
 
 ## 2026-11-19 17:04 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[longtable-sin-fila-huerfana-al-final]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[longtable-sin-fila-huerfana-al-final]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes]]
 
 ## 2026-11-19 18:02 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -11053,7 +11053,7 @@ He corregido yo directamente el error de compilación del último intento (resta
 
 ## 2026-11-19 19:15 · 🧠 Conocimiento guardado
 
-[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]
 
 ## 2026-11-19 20:57 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
 
@@ -11127,7 +11127,7 @@ El constructor debe abordar los puntos 1-7 en los próximos pasos, siguiendo el 
 
 ## 2026-11-19 20:59 · 🧠 Conocimiento guardado
 
-[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]
 
 ## 2026-11-19 21:49 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -11203,7 +11203,7 @@ Correcciones del revisor en este paso:
 
 ## 2026-11-19 21:52 · 🧠 Conocimiento guardado
 
-[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]]
+[[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]]
 
 ## 2026-11-19 22:37 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -12321,7 +12321,7 @@ Lo no comprobado: actualización de rutas viejas de docs/ en a1-desarrollo.tex, 
 
 ## 2026-11-20 21:37 · 🧠 Conocimiento guardado
 
-[[como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]] · [[prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]] · [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]]
+[[como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]] · [[cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]] · [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]]
 
 ## 2026-11-20 21:53 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -12366,7 +12366,7 @@ Quedan 4 archivos con rutas antiguas de `docs/` (gestion/README.md, documentacio
 
 ## 2026-11-20 21:54 · 🧠 Conocimiento guardado
 
-[[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]] · [[prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]]
+[[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[fechas-pbis-tareas-y-estructura-detallada-de-los-dos-sprints]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]]
 
 ## 2026-11-20 22:41 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -12620,7 +12620,7 @@ La compilación y los tests automáticos (`verificar.py` y `revisar_maquetacion.
 
 ## 2026-11-21 02:33 · 🧠 Conocimiento guardado
 
-[[como-actualizar-referencias-a-documentacion-tras-reorganizac]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+[[como-actualizar-referencias-a-documentacion-tras-reorganizac]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]]
 
 ## 2026-11-21 03:41 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -14101,7 +14101,7 @@ Lo que dejo como tareas: replantear 6 diagramas problemáticos (reduciendo parti
 
 ## 2026-11-22 22:57 · 🧠 Conocimiento guardado
 
-[[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+[[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]]
 
 ## 2026-11-22 23:56 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -14174,7 +14174,7 @@ Lo que dejo como tareas para el constructor: replantear 6 diagramas problemátic
 
 ## 2026-11-22 23:58 · 🧠 Conocimiento guardado
 
-[[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
+[[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
 
 ## 2026-11-23 00:54 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -14262,7 +14262,7 @@ Lo que dejo como tareas: corregir fig:sec-login, fig:sec-baja, fig:sec-registro 
 
 ## 2026-11-23 00:57 · 🧠 Conocimiento guardado
 
-[[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]] · [[referencias-rotas-ref-y-ref-causa-y-solucion]] · [[inventario-de-diagramas-obligatorios-y-su-estado]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila]] · [[imagenes-repetidas-una-sola-aparicion-ref-en-el-resto]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]]
+[[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]] · [[referencias-rotas-ref-y-ref-causa-y-solucion]] · [[inventario-de-diagramas-obligatorios-y-su-estado]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[imagenes-repetidas-una-sola-aparicion-ref-en-el-resto]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]]
 
 ## 2026-11-23 02:22 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
 
@@ -14413,7 +14413,7 @@ Lo que dejo como tareas: validar 9 diagramas no revisados; corregir fig:sec-goog
 
 ## 2026-11-23 03:36 · 🧠 Conocimiento guardado
 
-[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]] · [[burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2]]
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]] · [[burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2]]
 
 ## 2026-11-23 04:06 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
 
@@ -14502,7 +14502,7 @@ Lo que dejo como tareas: validar 9 diagramas no revisados; corregir fig:sec-goog
 
 ## 2026-11-23 04:09 · 🧠 Conocimiento guardado
 
-[[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]] · [[burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[workspace-y-equipo-en-donetonic]]
+[[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]] · [[burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[workspace-y-equipo-en-donetonic]]
 
 ## 2026-11-23 04:47 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 
@@ -14710,7 +14710,7 @@ Qué he corregido yo: he eliminado la frase duplicada al final de la retrospecti
 
 ## 2026-11-23 07:45 · 🧠 Conocimiento guardado
 
-[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]]
 
 ## 2026-11-23 08:44 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
 
@@ -14789,7 +14789,7 @@ Qué he corregido yo: nada en este paso (el overfull hbox es menor y lo puede ar
 
 ## 2026-11-23 08:48 · 🧠 Conocimiento guardado
 
-[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[reglas-de-maquetacion-de-javier-resumen-accionable]]
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[reglas-de-maquetacion-de-javier-resumen-accionable]]
 
 ## 2026-11-23 09:45 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
 
@@ -15031,7 +15031,7 @@ Correcciones del revisor: ninguna directa (el fallo del burndown requiere replan
 
 ## 2026-11-23 14:48 · 🧠 Conocimiento guardado
 
-[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[como-agrupar-capturas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l]]
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l]]
 
 ## 2026-11-23 15:26 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
 
@@ -15290,7 +15290,7 @@ Qué ha corregido el constructor en este paso:
 
 ## 2026-11-23 18:06 · 🧠 Conocimiento guardado
 
-[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]]
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]]
 
 ## 2026-11-23 18:55 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
 

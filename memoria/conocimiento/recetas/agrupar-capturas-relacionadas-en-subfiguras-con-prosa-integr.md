@@ -17,6 +17,6 @@ Para cada grupo de capturas relacionadas (máx. 2 por fila), usar `\begin{figure
 > Prosa de TFG, no listas de capturas: nada de una frase suelta «La figura X muestra…» por cada imagen. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así. Las que van juntas se agrupan con subfigure.
 > — `memoria/reglas-tfg.md`
 
-Relacionado: [[agrupar-capturas-con-subfigure]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[como-se-agrupan-capturas-con-subfigure]]
+Relacionado: [[agrupar-capturas-con-subfigure]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[como-se-agrupan-capturas-con-subfigure]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

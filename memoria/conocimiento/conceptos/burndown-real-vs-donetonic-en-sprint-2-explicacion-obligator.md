@@ -45,4 +45,6 @@ En el anexo de desarrollo (a1-desarrollo.tex) se debe incluir obligatoriamente:
 3. La explicación textual: «El backlog del Sprint 2 se registró en DoneTonic al cerrar el sprint (29/10/2026) con todos los PBIs ya en Hecho; por eso sus gráficas de Sprint Burndown y Burnup caen en recta de 29 a 0 ese mismo día. La evolución real, reconstruida a partir de las fechas de fusión de los pull requests en main, se detalla en la Tabla~\ref{tab:evolucion-s2} y la Figura~\ref{fig:burndown-s2}.»
 4. Las capturas de DoneTonic del Sprint 2 (gráficas en recta y tablero) se muestran una sola vez en el anexo, con `\ref` desde otros capítulos.
 
+Relacionado: [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

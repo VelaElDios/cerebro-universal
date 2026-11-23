@@ -5,9 +5,9 @@ temas: ["figuras", "latex", "maquetacion"]
 claves: ["ref", "figura", "captura", "duplicado"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-22"
-actualizado: "2026-11-22"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[figuras]] · [[latex]] · [[maquetacion]]
@@ -22,6 +22,8 @@ Regla 10 de Javier: cada captura (DoneTonic, producción, prueba técnica, app, 
 En el texto, al referirse a ellas: "el tablero del Sprint 1 (Figura~\ref{fig:donetonic-tablero})" en lugar de volver a incluir la imagen.
 
 > Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone \ref a la figura que ya existe.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> — `memoria/reglas-tfg.md`
+
+Relacionado: [[imagenes-repetidas-una-sola-aparicion-ref-en-el-resto]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

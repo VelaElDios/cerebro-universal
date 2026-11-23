@@ -27,6 +27,6 @@ problema: Cada captura debe aparecer una sola vez en la memoria y citarse con \r
 solucion: Usar el inventario para colocar cada captura en el capítulo/anexo donde más sentido tiene y referenciarla en el resto.
 > — `repo:saas/docs/capturas/README.md` (cita sin comprobar)
 
-Relacionado: [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]]
+Relacionado: [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -38,6 +38,6 @@ Para que las tablas no tengan filas que se pisen:
 - Texto de la tabla en `\small`.
 - Código y rutas: usar `\path{}` (paquete `url`/`hyperref`) o `\texttt{}` + `\allowbreak` para que no se salgan del margen.
 
-Relacionado: [[formato-de-tablas-alineacion-tamanos-y-longtable]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[longtable-sin-fila-huerfana-al-final]]
+Relacionado: [[formato-de-tablas-alineacion-tamanos-y-longtable]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[longtable-sin-fila-huerfana-al-final]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

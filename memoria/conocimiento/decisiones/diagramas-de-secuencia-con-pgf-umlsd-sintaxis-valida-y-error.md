@@ -31,4 +31,6 @@ Errores frecuentes que detecta revisar_umlsd.py: (1) acentos en etiquetas → qu
   9. Diagramas grandes: envolver en `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}` o `\resizebox{\textwidth}{!}{...}`.
   10. Si hay más de 6 participantes, agrupar (ej. «Vista + api.js» → «Frontend») o partir en dos diagramas.
 
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] · [[como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

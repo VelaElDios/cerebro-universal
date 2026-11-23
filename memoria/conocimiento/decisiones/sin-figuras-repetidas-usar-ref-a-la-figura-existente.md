@@ -17,4 +17,4 @@ Cada archivo de imagen se incluye una única vez en el documento. Para referenci
 > Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone `\ref` a la figura que ya existe.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]]
+Relacionado: [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]]

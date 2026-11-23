@@ -28,4 +28,6 @@ relacionado: Inventario de diagramas obligatorios y su estado actualizado
 > En los burndown charts (pgfplots), la etiqueta del eje Y («PBIs pendientes») y/o las marcas del eje Y quedaban demasiado cerca de la gráfica, causando que la línea de la gráfica o las marcas cruzaran el texto (regla 17: «ninguna línea ni flecha atraviesa una caja o un texto»).
 > — `experiencia de corrección en este proyecto (fig:burndown-s1, fig:burndown-s2)` (cita sin comprobar)
 
+Relacionado: [[burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2]] · [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

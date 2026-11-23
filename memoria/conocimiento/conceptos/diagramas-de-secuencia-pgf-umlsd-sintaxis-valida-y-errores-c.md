@@ -85,4 +85,8 @@ Reglas obligatorias para que `revisar_umlsd.py` pase:
 - Si el diagrama es ancho: `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=\textwidth,max totalheight=0.6\textheight}`.
 - Máximo 6 participantes por diagrama (regla 16 Javier); si hay más, agrupar o dividir.
 
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]]: La **Nota A** (Ampliaciones) recomienda envolver diagramas anchos en `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=...}`. La **Nota B** (Paso 1) prohíbe explícitamente escalar con `\resizebox` (y `\adjustbox{scale=...}`) porque reduce las letras por debajo de 7,5 pt; solo permite `adjustbox{max width=..., max totalheight=...}` al no escalar si el diagrama cabe.

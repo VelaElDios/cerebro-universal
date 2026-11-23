@@ -35,7 +35,7 @@ Una frase «La figura X muestra…» por cada captura queda poco profesional. La
 > Las capturas relacionadas van juntas en una figura con subfigure
 > — `proyectos/memoria-procesos/spec.md`
 
-Relacionado: [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[como-se-agrupan-capturas-con-subfigure]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]]
+Relacionado: [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[como-se-agrupan-capturas-con-subfigure]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]]
 
 ## Ampliación (2026-11-16, )
 Cuando varias capturas o diagramas están relacionados y se explican en el mismo párrafo, se agrupan en un único entorno `figure` usando `subfigure` (paquete `subcaption`). Cada subfigura lleva su propio `\subcaption` y etiqueta (`\label{fig:subX}`), y el conjunto tiene un `\caption` general y `\label{fig:principal}`. Esto evita páginas con una sola imagen y mejora la narrativa.

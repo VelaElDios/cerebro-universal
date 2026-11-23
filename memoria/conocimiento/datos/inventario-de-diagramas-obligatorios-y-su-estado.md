@@ -52,4 +52,6 @@ Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual P
   | fig:burndown-s2 | pgfplots | a1-desarrollo.tex | No revisado (Gemini 404) |
 relacionado: Cómo replantear diagramas TikZ y pgf-umlsd para pasar revisar_maquetacion.py, Validación final del PDF antes de marcar terminado
 
+Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

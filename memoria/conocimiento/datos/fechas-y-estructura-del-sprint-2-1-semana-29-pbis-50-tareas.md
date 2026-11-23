@@ -56,3 +56,5 @@ Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 Fusionada con: Fechas y estructura del Sprint 2 (6 fases + calidad, 29 PBIs, 50 tareas)
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]]: Nota A registra 0 PBIs hechos el 27/10 (PR #55) y 2 PBIs el 29/10 (PR #56 y docs); Nota B, en su sección «Evolución real reconstruida», atribuye a Nota A 1 PBI el 27/10 y 1 PBI el 29/10, y en su propio resumen omite el 27/10 y asigna 2 PBIs al 29/10. Hay cifras distintas para los mismos días (27/10 y 29/10) y discrepancia interna en Nota B.

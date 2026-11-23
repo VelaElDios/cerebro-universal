@@ -25,4 +25,6 @@ Temas: [[figuras]] · [[gestion-contenido]] · [[latex]] · [[regla 10 javier]]
 > Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone \ref a la figura que ya existe.
 > — `memoria/reglas-tfg.md regla 10 y spec versión 4` (cita sin comprobar)
 
+Relacionado: [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

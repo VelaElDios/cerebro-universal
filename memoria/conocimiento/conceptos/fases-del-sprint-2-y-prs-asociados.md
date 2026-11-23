@@ -40,3 +40,5 @@ Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 > ⚠️ Posible contradicción con [[fechas-pbis-y-tareas-de-los-dos-sprints]]: La Nota A (lista de PRs y enlace `estructura-sprint-2-6-fases...`) describe **6 fases** (Fase 1 a Fase 6). La Nota B (ampliación 2026-11-19) afirma textualmente que el Sprint 2 tuvo **7 fases**.
 
 > ⚠️ Posible contradicción con [[estado-de-completitud-de-sprints-y-trazabilidad]]: Nota A describe 6 fases (Fase 1 a Fase 6) para el Sprint 2; la ampliación de la Nota B afirma que el Sprint 2 tuvo 7 fases.
+
+> ⚠️ Posible contradicción con [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]: La Nota A describe 6 fases para el Sprint 2 (Fase 1 a Fase 6 en PRs #36, #49, #50, #52, #53, #54). La Nota B, en su bloque de advertencia ⚠️, afirma textualmente que su propia ampliación del 2026-11-19 establece que el Sprint 2 tuvo **7 fases**.

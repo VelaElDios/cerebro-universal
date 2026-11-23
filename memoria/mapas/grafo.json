@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T19:02:04+01:00",
+ "generado": "2026-11-23T19:43:29+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1718,43 +1718,28 @@
   {
    "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "dato",
-   "titulo": "Cifras clave del proyecto contrastadas con fuentes (para COMPROBACIONES)",
+   "titulo": "Cifras clave del proyecto contrastadas con fuentes (fusionada)",
    "temas": [
+    "datos",
     "fuentes",
+    "grada-colchonera",
+    "juego",
+    "memoria",
     "metricas",
-    "verificacion",
-    "datos"
+    "métricas",
+    "proyecto",
+    "pruebas",
+    "saas",
+    "scrum",
+    "sprints",
+    "trazabilidad",
+    "verificacion"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp.md"
-  },
-  {
-   "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "tipo": "dato",
-   "titulo": "Cifras clave del proyecto contrastadas con fuentes",
-   "temas": [
-    "memoria",
-    "métricas",
-    "trazabilidad",
-    "metricas",
-    "verificacion",
-    "fuentes",
-    "proyecto",
-    "pruebas",
-    "sprints",
-    "grada-colchonera",
-    "saas",
-    "juego",
-    "scrum"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes.md"
   },
   {
    "id": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
@@ -1872,7 +1857,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/datos-del-burndown-sprint-2-pbis-pendientes-por-dia.md"
   },
   {
@@ -2014,7 +1999,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "verificado",
+   "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas.md"
   },
   {
@@ -2332,7 +2317,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr.md"
   },
   {
@@ -3028,7 +3013,7 @@
   {
    "id": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "tipo": "decision",
-   "titulo": "Diagramas de secuencia: máx. 6 participantes (agrupar o partir)",
+   "titulo": "Diagramas de secuencia: límite de 6 participantes (agrupar o partir)",
    "temas": [
     "diagramas",
     "latex",
@@ -3240,7 +3225,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto.md"
   },
   {
@@ -3258,20 +3243,6 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md"
-  },
-  {
-   "id": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
-   "tipo": "decision",
-   "titulo": "Límite de 6 participantes en diagramas de secuencia",
-   "temas": [
-    "diagramas",
-    "latex",
-    "memoria",
-    "tfg"
-   ],
-   "proyectos": [],
-   "confianza": "verificado",
-   "ruta": "memoria/conocimiento/decisiones/limite-de-6-participantes-en-diagramas-de-secuencia.md"
   },
   {
    "id": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
@@ -3528,40 +3499,24 @@
    "ruta": "memoria/conocimiento/decisiones/prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier.md"
   },
   {
-   "id": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "id": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "tipo": "decision",
-   "titulo": "Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure",
+   "titulo": "Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas con subfigure (regla 13 Javier)",
    "temas": [
+    "figuras",
     "latex",
+    "maquetacion",
     "memoria",
     "redaccion",
+    "reglas-javier",
     "subcaption",
-    "subfigure"
+    "subfigure",
+    "tfg"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
    "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/decisiones/prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt.md"
-  },
-  {
-   "id": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "tipo": "decision",
-   "titulo": "Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)",
-   "temas": [
-    "figuras",
-    "redaccion",
-    "reglas-javier",
-    "subfigure",
-    "tfg",
-    "latex",
-    "memoria",
-    "maquetacion"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md"
   },
   {
@@ -4239,9 +4194,10 @@
    "titulo": "Cómo agrupar capturas con subfigure (dos por fila)",
    "temas": [
     "capturas",
+    "figuras",
     "latex",
-    "subcaption",
-    "figuras"
+    "maquetacion",
+    "subcaption"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4268,51 +4224,21 @@
    "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
   },
   {
-   "id": "receta:como-agrupar-capturas-con-subfigure",
-   "tipo": "receta",
-   "titulo": "Cómo agrupar capturas con subfigure",
-   "temas": [
-    "latex",
-    "maquetacion",
-    "subcaption"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure.md"
-  },
-  {
    "id": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
    "tipo": "receta",
-   "titulo": "Cómo agrupar capturas relacionadas con subfigure",
+   "titulo": "Cómo agrupar capturas relacionadas con subfigure (2 por fila)",
    "temas": [
+    "figuras",
     "latex",
+    "maquetacion",
     "memoria-procesos",
-    "subcaption",
-    "figuras"
+    "subcaption"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure.md"
-  },
-  {
-   "id": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
-   "tipo": "receta",
-   "titulo": "Cómo agrupar capturas relacionadas en subfigure (2 por fila)",
-   "temas": [
-    "figuras",
-    "latex",
-    "maquetacion",
-    "subcaption"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila.md"
   },
   {
    "id": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
@@ -4524,7 +4450,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura.md"
   },
   {
@@ -4791,7 +4717,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar.md"
   },
   {
@@ -5416,7 +5342,7 @@
     "tikz"
    ],
    "proyectos": [],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl.md"
   },
   {
@@ -5704,20 +5630,7 @@
   {
    "id": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "tipo": "receta",
-   "titulo": "Reglas de figuras: tamaño, flotantes y nada de páginas solas",
-   "temas": [
-    "latex",
-    "memoria",
-    "tfg"
-   ],
-   "proyectos": [],
-   "confianza": "verificado",
-   "ruta": "memoria/conocimiento/recetas/reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas.md"
-  },
-  {
-   "id": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
-   "tipo": "receta",
-   "titulo": "Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)",
+   "titulo": "Reglas de figuras y páginas: tamaños, flotantes, duplicados, flechas y páginas casi vacías",
    "temas": [
     "figuras",
     "latex",
@@ -5726,7 +5639,7 @@
    ],
    "proyectos": [],
    "confianza": "verificado",
-   "ruta": "memoria/conocimiento/recetas/reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle.md"
+   "ruta": "memoria/conocimiento/recetas/reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas.md"
   },
   {
    "id": "receta:reglas-de-integracion-mediante-pull-requests-con-ci-obligato",
@@ -5806,7 +5719,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/revision-visual-final-pagina-a-pagina-regla-15-javier.md"
   },
   {
@@ -5983,7 +5896,7 @@
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/validacion-final-del-pdf-antes-de-marcar-terminado.md"
   },
   {
@@ -6046,14 +5959,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 176,
+   "peso": 171,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 69,
+   "peso": 66,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -6116,14 +6029,14 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 12,
+   "peso": 10,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:subfigure",
    "tipo": "tema",
    "titulo": "subfigure",
-   "peso": 7,
+   "peso": 6,
    "ruta": "memoria/temas/subfigure.md"
   },
   {
@@ -6137,7 +6050,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 18,
+   "peso": 17,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -6151,7 +6064,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 27,
+   "peso": 26,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -6228,7 +6141,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 69,
+   "peso": 67,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -6256,7 +6169,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 26,
+   "peso": 25,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6781,7 +6694,7 @@
    "id": "tema:redaccion",
    "tipo": "tema",
    "titulo": "redaccion",
-   "peso": 11,
+   "peso": 10,
    "ruta": "memoria/temas/redaccion.md"
   },
   {
@@ -6956,7 +6869,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 14,
+   "peso": 13,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -7110,7 +7023,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 15,
+   "peso": 14,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -9358,6 +9271,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "a": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -9396,6 +9314,21 @@
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "decision:registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
@@ -10063,6 +9996,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -10304,6 +10257,11 @@
   },
   {
    "de": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "a": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
    "a": "receta:estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm",
    "tipo": "enlaza"
   },
@@ -10370,6 +10328,11 @@
   {
    "de": "concepto:fases-del-sprint-2-y-prs-asociados",
    "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:fases-del-sprint-2-y-prs-asociados",
+   "a": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
    "tipo": "enlaza"
   },
   {
@@ -11163,6 +11126,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "tipo": "enlaza"
+  },
+  {
    "de": "concepto:perfil-de-juego-con-jsonb-y-concurrencia-optimista-mediante",
    "a": "tema:grada-colchonera",
    "tipo": "trata"
@@ -11279,12 +11247,17 @@
   },
   {
    "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
-   "a": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "tipo": "enlaza"
   },
   {
    "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "a": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "concepto:prosa-de-tfg-vs-lista-de-capturas",
    "tipo": "enlaza"
   },
   {
@@ -11339,7 +11312,7 @@
   },
   {
    "de": "concepto:prosa-de-tfg-vs-lista-de-capturas",
-   "a": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "tipo": "enlaza"
   },
   {
@@ -11371,6 +11344,21 @@
    "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "tipo": "enlaza"
   },
   {
    "de": "concepto:rotacion-de-proyectos-por-tiempo-sin-avanzar",
@@ -11744,12 +11732,22 @@
   },
   {
    "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
    "a": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
    "tipo": "enlaza"
   },
   {
    "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
    "a": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "a": "concepto:fases-del-sprint-2-y-prs-asociados",
    "tipo": "enlaza"
   },
   {
@@ -12023,6 +12021,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "a": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:campos-de-proyecto-json-y-su-proposito",
    "a": "tema:cerebro",
    "tipo": "trata"
@@ -12164,7 +12167,22 @@
   },
   {
    "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
    "tipo": "enlaza"
   },
   {
@@ -12248,6 +12266,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
    "a": "tema:fuentes",
    "tipo": "trata"
@@ -12281,6 +12314,21 @@
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
@@ -12313,19 +12361,19 @@
    "tipo": "enlaza"
   },
   {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
-   "a": "tema:fuentes",
-   "tipo": "trata"
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "tipo": "enlaza"
   },
   {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
-   "a": "tema:metricas",
-   "tipo": "trata"
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "tipo": "enlaza"
   },
   {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
-   "a": "tema:verificacion",
-   "tipo": "trata"
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
@@ -12334,78 +12382,88 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:memoria",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:métricas",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:trazabilidad",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:metricas",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:verificacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "tema:fuentes",
    "tipo": "trata"
   },
   {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:proyecto",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:pruebas",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:sprints",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "a": "tema:grada-colchonera",
    "tipo": "trata"
   },
   {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
-   "a": "tema:saas",
-   "tipo": "trata"
-  },
-  {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "a": "tema:juego",
    "tipo": "trata"
   },
   {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:métricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:proyecto",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:pruebas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:saas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "a": "tema:scrum",
    "tipo": "trata"
   },
   {
-   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
@@ -12434,7 +12492,7 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
@@ -12499,7 +12557,7 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
@@ -12510,6 +12568,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
    "a": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "a": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
    "tipo": "enlaza"
   },
   {
@@ -12550,6 +12613,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
    "a": "dato:cifras-clave-del-proyecto-la-grada-colchonera-contrastadas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
+   "a": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
    "tipo": "enlaza"
   },
   {
@@ -12620,6 +12688,11 @@
   {
    "de": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
    "a": "receta:estructura-de-archivos-obligatoria-para-la-plantilla-sus",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep",
+   "a": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
    "tipo": "enlaza"
   },
   {
@@ -12743,6 +12816,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
+   "a": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -12795,6 +12873,16 @@
   {
    "de": "dato:datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
    "a": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
+   "a": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
+   "a": "dato:fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas",
    "tipo": "enlaza"
   },
   {
@@ -12870,6 +12958,11 @@
   {
    "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
    "a": "decision:cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
    "tipo": "enlaza"
   },
   {
@@ -13009,12 +13102,12 @@
   },
   {
    "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
    "de": "dato:estado-de-completitud-de-sprints-y-trazabilidad",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
@@ -13150,6 +13243,11 @@
   {
    "de": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
    "a": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "a": "dato:datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
    "tipo": "enlaza"
   },
   {
@@ -13368,6 +13466,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "dato:fechas-pbis-tareas-y-estructura-de-los-dos-sprints",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas",
+   "a": "dato:datos-del-burndown-sprint-1-pbis-pendientes-por-hito",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas",
    "a": "tema:fases",
    "tipo": "trata"
@@ -13428,6 +13536,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas",
+   "a": "dato:datos-del-burndown-sprint-2-pbis-pendientes-por-dia",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
    "a": "tema:latex",
    "tipo": "trata"
@@ -13451,6 +13564,21 @@
    "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "a": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "a": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "a": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:grupos-de-rutas-de-la-api-y-sus-accesos",
@@ -13525,6 +13653,11 @@
   {
    "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
    "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "a": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
    "tipo": "enlaza"
   },
   {
@@ -13623,6 +13756,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "a": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "a": "tema:capturas",
    "tipo": "trata"
@@ -13670,6 +13808,11 @@
   {
    "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "a": "dato:inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
+   "a": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
    "tipo": "enlaza"
   },
   {
@@ -13723,6 +13866,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -13756,6 +13914,21 @@
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
@@ -13845,6 +14018,11 @@
   {
    "de": "dato:metadatos-del-proyecto-la-grada-colchonera",
    "a": "dato:cronologia-detallada-del-proyecto-septiembre-octubre-2026",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:metadatos-del-proyecto-la-grada-colchonera",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
@@ -14029,7 +14207,7 @@
   },
   {
    "de": "dato:metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
@@ -14039,7 +14217,7 @@
   },
   {
    "de": "dato:metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
@@ -14149,7 +14327,7 @@
   },
   {
    "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
@@ -14159,7 +14337,17 @@
   },
   {
    "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-contrastados-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
    "tipo": "enlaza"
   },
   {
@@ -14204,7 +14392,7 @@
   },
   {
    "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
@@ -14219,12 +14407,17 @@
   },
   {
    "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
   },
   {
    "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
    "a": "dato:cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:numeros-clave-del-proyecto-verificados-en-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
    "tipo": "enlaza"
   },
   {
@@ -14455,6 +14648,11 @@
   {
    "de": "dato:referencia-vampire-survivors-como-antecedente-de-genero-surv",
    "a": "decision:pivote-de-red-social-a-juego-survivor-reutilizando-base-del",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "dato:referencia-vampire-survivors-como-antecedente-de-genero-surv",
+   "a": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
    "tipo": "enlaza"
   },
   {
@@ -15393,6 +15591,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
    "a": "tema:apalike",
    "tipo": "trata"
@@ -15433,6 +15636,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "a": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
    "a": "tema:bibliografia",
    "tipo": "trata"
@@ -15464,7 +15672,22 @@
   },
   {
    "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
-   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
    "tipo": "enlaza"
   },
   {
@@ -15505,6 +15728,11 @@
   {
    "de": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
    "a": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
+   "a": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
    "tipo": "enlaza"
   },
   {
@@ -15550,6 +15778,11 @@
   {
    "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
    "a": "decision:registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta",
+   "a": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "tipo": "enlaza"
   },
   {
@@ -15768,6 +16001,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -15795,6 +16038,21 @@
   {
    "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
    "a": "concepto:prosa-de-tfg-vs-lista-de-capturas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
    "tipo": "enlaza"
   },
   {
@@ -16299,7 +16557,7 @@
   },
   {
    "de": "decision:dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
-   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "tipo": "enlaza"
   },
   {
@@ -16368,6 +16626,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -16394,6 +16667,11 @@
   },
   {
    "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
+   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "a": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
    "tipo": "enlaza"
   },
@@ -16415,11 +16693,6 @@
   {
    "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
-   "a": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
    "tipo": "enlaza"
   },
   {
@@ -16515,6 +16788,16 @@
   {
    "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
    "a": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
+   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
    "tipo": "enlaza"
   },
   {
@@ -16794,7 +17077,7 @@
   },
   {
    "de": "decision:figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
-   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "tipo": "enlaza"
   },
   {
@@ -16844,7 +17127,7 @@
   },
   {
    "de": "decision:flechas-reales-en-captions-y-texto-rightarrow-nunca",
-   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "tipo": "enlaza"
   },
   {
@@ -16973,6 +17256,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "a": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -16991,6 +17289,21 @@
    "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "a": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "tipo": "enlaza"
   },
   {
    "de": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
@@ -17048,41 +17361,6 @@
    "tipo": "enlaza"
   },
   {
-   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
-   "a": "tema:diagramas",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
-   "a": "tema:memoria",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
-   "a": "tema:tfg",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
-   "a": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
-   "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
    "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -17129,7 +17407,12 @@
   },
   {
    "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
-   "a": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
+   "a": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
+   "a": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
    "tipo": "enlaza"
   },
   {
@@ -17280,6 +17563,11 @@
   {
    "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
    "a": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
+   "a": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
    "tipo": "enlaza"
   },
   {
@@ -17853,58 +18141,28 @@
    "tipo": "enlaza"
   },
   {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "tema:memoria",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "tema:redaccion",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "tema:subcaption",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "tema:subfigure",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
-   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "de": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "a": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
    "tipo": "enlaza"
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
@@ -17919,27 +18177,17 @@
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:subfigure",
    "tipo": "trata"
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:tfg",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:memoria",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:maquetacion",
    "tipo": "trata"
   },
   {
@@ -17954,12 +18202,12 @@
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
+   "a": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
    "tipo": "enlaza"
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "tipo": "enlaza"
   },
   {
@@ -17969,17 +18217,12 @@
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
    "tipo": "enlaza"
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
    "tipo": "enlaza"
   },
   {
@@ -18051,6 +18294,21 @@
    "de": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
+   "a": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-ref-en-el-resto",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:referencias-rotas-ref-y-ref-causa-y-solucion",
+   "a": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
+   "tipo": "enlaza"
   },
   {
    "de": "decision:registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g",
@@ -18178,6 +18436,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar",
    "a": "tema:latex",
    "tipo": "trata"
@@ -18214,7 +18477,7 @@
   },
   {
    "de": "decision:sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar",
-   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "tipo": "enlaza"
   },
   {
@@ -19339,7 +19602,7 @@
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:limite-de-6-participantes-en-diagramas-de-secuencia",
+   "a": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "tipo": "enlaza"
   },
   {
@@ -19623,6 +19886,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:agrupar-capturas-con-subfigure",
+   "a": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
    "a": "tema:latex",
    "tipo": "trata"
@@ -19655,6 +19923,11 @@
   {
    "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
    "a": "receta:como-se-agrupan-capturas-con-subfigure",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "a": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
    "tipo": "enlaza"
   },
   {
@@ -19913,6 +20186,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "a": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "a": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "a": "concepto:burndown-real-vs-burndown-de-donetonic-en-sprint-2",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
    "a": "tema:cifras",
    "tipo": "trata"
@@ -20006,6 +20294,21 @@
    "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "receta:como-se-agrupan-capturas-con-subfigure",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "receta:agrupar-capturas-con-subfigure",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
@@ -20133,6 +20436,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:capitulo-4-requisitos-arquitectura-tabla-de-sprints-y-manual",
+   "a": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:capitulo-6-conclusiones-en-orden-del-capitulo-1-y-3-ideas-de",
    "a": "tema:capitulo-6",
    "tipo": "trata"
@@ -20235,6 +20543,11 @@
   {
    "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
    "a": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
    "tipo": "enlaza"
   },
   {
@@ -20514,17 +20827,22 @@
   },
   {
    "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
    "a": "tema:latex",
    "tipo": "trata"
   },
   {
    "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
-   "a": "tema:subcaption",
+   "a": "tema:maquetacion",
    "tipo": "trata"
   },
   {
    "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
-   "a": "tema:figuras",
+   "a": "tema:subcaption",
    "tipo": "trata"
   },
   {
@@ -20535,6 +20853,21 @@
   {
    "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
    "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "receta:como-se-agrupan-capturas-con-subfigure",
    "tipo": "enlaza"
   },
   {
@@ -20603,28 +20936,28 @@
    "tipo": "enlaza"
   },
   {
-   "de": "receta:como-agrupar-capturas-con-subfigure",
-   "a": "tema:latex",
-   "tipo": "trata"
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "tipo": "enlaza"
   },
   {
-   "de": "receta:como-agrupar-capturas-con-subfigure",
-   "a": "tema:maquetacion",
-   "tipo": "trata"
+   "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "a": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "tipo": "enlaza"
   },
   {
-   "de": "receta:como-agrupar-capturas-con-subfigure",
-   "a": "tema:subcaption",
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "tema:figuras",
    "tipo": "trata"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-con-subfigure",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
    "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "tema:maquetacion",
    "tipo": "trata"
   },
   {
@@ -20639,38 +20972,23 @@
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
-   "a": "tema:figuras",
-   "tipo": "trata"
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
+   "a": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "tipo": "enlaza"
   },
   {
-   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
-   "a": "tema:figuras",
-   "tipo": "trata"
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "receta:como-se-agrupan-capturas-con-subfigure",
+   "tipo": "enlaza"
   },
   {
-   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
-   "a": "tema:maquetacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
-   "a": "tema:subcaption",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
@@ -20745,6 +21063,11 @@
   {
    "de": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
    "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-centralizar-capturas-duplicadas-entre-capitulos-en-late",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
    "tipo": "enlaza"
   },
   {
@@ -20923,6 +21246,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
    "a": "tema:latex",
    "tipo": "trata"
@@ -20965,6 +21303,11 @@
   {
    "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
    "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
+   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
    "tipo": "enlaza"
   },
   {
@@ -21038,6 +21381,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
    "a": "tema:latex",
    "tipo": "trata"
@@ -21080,6 +21443,11 @@
   {
    "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
    "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
+   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
    "tipo": "enlaza"
   },
   {
@@ -21243,6 +21611,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "a": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "a": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "a": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
    "a": "tema:er",
    "tipo": "trata"
@@ -21301,6 +21684,21 @@
    "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:como-estructurar-el-csv-de-entrada-para-la-plantilla-sus",
@@ -21428,6 +21826,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo-en-longtable",
+   "a": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
    "a": "tema:latex",
    "tipo": "trata"
@@ -21455,6 +21858,11 @@
   {
    "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
    "a": "decision:dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
+   "a": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
    "tipo": "enlaza"
   },
   {
@@ -21488,6 +21896,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",
+   "a": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
    "a": "tema:latex",
    "tipo": "trata"
@@ -21511,6 +21924,21 @@
    "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "a": "receta:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "a": "receta:como-evitar-overfull-hbox-con-texttt-largo-en-longtable",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "a": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:como-evitar-paginas-casi-vacias-tras-una-longtable",
@@ -21918,6 +22346,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
    "a": "tema:latex",
    "tipo": "trata"
@@ -21948,6 +22386,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
    "a": "tema:latex",
    "tipo": "trata"
@@ -21971,6 +22424,26 @@
    "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
@@ -22025,6 +22498,16 @@
   {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
    "a": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
    "tipo": "enlaza"
   },
   {
@@ -22483,6 +22966,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:creacion-del-primer-administrador-mediante-variables-de-ento",
    "a": "tema:admin",
    "tipo": "trata"
@@ -22668,6 +23166,16 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -22738,6 +23246,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
+   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
    "a": "tema:latex",
    "tipo": "trata"
@@ -22795,6 +23323,11 @@
   {
    "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
    "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
+   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
    "tipo": "enlaza"
   },
   {
@@ -23254,7 +23787,7 @@
   },
   {
    "de": "receta:figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante",
-   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "tipo": "enlaza"
   },
   {
@@ -23539,7 +24072,7 @@
   },
   {
    "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
-   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "tipo": "enlaza"
   },
   {
@@ -23560,6 +24093,11 @@
   {
    "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
    "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:formato-de-titulos-y-enlaces-en-la-memoria",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
    "tipo": "enlaza"
   },
   {
@@ -23625,6 +24163,11 @@
   {
    "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
    "a": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co",
+   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "tipo": "enlaza"
   },
   {
@@ -24534,12 +25077,22 @@
   },
   {
    "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
+   "a": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
    "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
    "tipo": "enlaza"
   },
   {
    "de": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
-   "a": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "tipo": "enlaza"
   },
   {
@@ -24600,6 +25153,11 @@
   {
    "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
    "a": "decision:sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
    "tipo": "enlaza"
   },
   {
@@ -24699,7 +25257,7 @@
   },
   {
    "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
-   "a": "decision:prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt",
+   "a": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "tipo": "enlaza"
   },
   {
@@ -24710,6 +25268,21 @@
   {
    "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
    "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
+   "a": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
+   "a": "receta:como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
+   "a": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
    "tipo": "enlaza"
   },
   {
@@ -24759,77 +25332,42 @@
   },
   {
    "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
-   "a": "tema:memoria",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
-   "a": "tema:tfg",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
-   "a": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
-   "a": "decision:figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
-   "a": "receta:como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
    "a": "tema:figuras",
    "tipo": "trata"
   },
   {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "a": "tema:latex",
    "tipo": "trata"
   },
   {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "a": "tema:memoria",
    "tipo": "trata"
   },
   {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "a": "tema:tfg",
    "tipo": "trata"
   },
   {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "a": "decision:figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura",
    "tipo": "enlaza"
   },
   {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
-   "a": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
-   "a": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
    "a": "receta:como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier",
    "tipo": "enlaza"
   },
   {
-   "de": "receta:reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle",
-   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "a": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "a": "receta:arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub",
    "tipo": "enlaza"
   },
   {
@@ -25053,6 +25591,21 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "a": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
    "a": "tema:constructor",
    "tipo": "trata"
@@ -25178,6 +25731,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
+   "a": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
    "a": "tema:latex",
    "tipo": "trata"
@@ -25215,6 +25773,16 @@
   {
    "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
    "a": "receta:longtable-sin-fila-huerfana-al-final",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "a": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace",
+   "a": "receta:tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth",
    "tipo": "enlaza"
   },
   {
@@ -25413,6 +25981,11 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia",
+   "a": "decision:imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:validacion-anti-trampas-en-el-servidor-reloj-propio-formulas",
    "a": "tema:backend",
    "tipo": "trata"
@@ -25543,6 +26116,21 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -25595,6 +26183,11 @@
   {
    "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
    "a": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
+   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
    "tipo": "enlaza"
   },
   {
@@ -25690,6 +26283,11 @@
   {
    "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
    "a": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
+   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
    "tipo": "enlaza"
   },
   {

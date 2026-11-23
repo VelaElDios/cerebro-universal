@@ -48,7 +48,7 @@ DoneTonic Sprint 2: gráficas en recta (29→0 el 29/10). Evolución real (Tabla
 **Relacionado**:  
 [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[capturas-de-donetonic-disponibles-en-el-repo]] · [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[Fechas y estructura de los dos sprints con PBIs y tareas]] · [[Trazabilidad requisito-PBI-tarea-PR en DoneTonic y GitHub]]
 
-Relacionado: [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]]
+Relacionado: [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>

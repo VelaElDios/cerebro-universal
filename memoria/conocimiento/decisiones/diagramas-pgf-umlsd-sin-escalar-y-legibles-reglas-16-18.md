@@ -17,6 +17,6 @@ Temas: [[latex]] · [[pgf-umlsd]] · [[tikz]]
 > Los diagramas se miran de verdad en el PDF: scripts/revisar_figuras.py mide cada diagrama con las coordenadas reales del PDF (líneas que pasan por encima de letras, cajas que se pisan, palabras partidas con guion, letras de menos de 7,5 pt) y, si eso pasa, Gemini lo mira además a ojo. No se arregla encogiendo el dibujo (adjustbox, resizebox, scale): eso deja las letras diminutas; hay que replantear el dibujo para que quepa a tamaño real.
 > — `memoria/reglas-tfg.md (reglas 16-18) y revisión de Javier` (cita sin comprobar)
 
-Relacionado: [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]]
+Relacionado: [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

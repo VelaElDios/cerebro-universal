@@ -63,7 +63,7 @@ relacionado: Fechas y estructura de los dos sprints con PBIs y tareas, Trazabili
 
   Mínimos requeridos en spec: app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+. Todos cumplidos.
 
-Relacionado: [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]]
+Relacionado: [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>

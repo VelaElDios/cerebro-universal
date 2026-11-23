@@ -20,6 +20,6 @@ Si una captura sirve en dos capítulos (por ejemplo, el CI en verde en la descri
 ## Ampliación (2026-11-16, )
 Cada imagen (figura, captura, diagrama) debe incluirse una única vez en el documento. Si se necesita referenciarla desde otro capítulo o sección, se usa una referencia cruzada `\ref{fig:etiqueta}` (o `\autoref`) en lugar de volver a insertar el archivo gráfico. Esto reduce el tamaño del PDF, evita inconsistencias y obliga a una estructura de referencias clara.
 
-Relacionado: [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]]
+Relacionado: [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

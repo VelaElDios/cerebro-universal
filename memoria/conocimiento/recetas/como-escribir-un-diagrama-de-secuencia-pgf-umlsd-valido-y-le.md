@@ -50,4 +50,6 @@ Temas: [[latex]] · [[pgf-umlsd]] · [[sequencediagram]]
 > En los textos de `\mess`, `call`, `callself` y `\newinst` no puede ir `\#`, `\_`, `\&`, `\%`, `\$`, `\{`, `\}`, ningún comando (`\texttt`…) ni `#`, `&`, `_`, `$` sueltos, y en `\mess` tampoco paréntesis. Todo participante que se use tiene que estar declarado con `\newthread`/`\newinst` en ese diagrama.
 > — `memoria/reglas-tfg.md (ejemplo en spec)` (cita sin comprobar)
 
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

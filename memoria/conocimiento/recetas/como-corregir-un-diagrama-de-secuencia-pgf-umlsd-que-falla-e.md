@@ -23,8 +23,10 @@ Cuando `revisar_maquetacion.py` reporta que un diagrama de secuencia tiene flech
 8. Ejecutar `revisar_umlsd.py` y compilar; revisar visualmente el PDF a tamaño real.
 
 > Las flechas van de una caja a la siguiente (A → B, B → C), nunca de A a C pasando por encima de B; si hay que rodear, con codos (|-, -|) y separando bien las cajas (node distance suficiente). Las etiquetas de las flechas no se montan sobre las cajas.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> — `memoria/reglas-tfg.md`
 
-Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]]
+Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]: Nota A dice «participantes a ≤5 (regla 16)»; Nota B dice «Máximo 6 participantes por diagrama». Nota A prohíbe `resizebox` para diagramas anchos («no `resizebox` que encoge letras») y manda usar `adjustbox`; Nota B indica «Diagramas anchos: envolver en `\resizebox{\textwidth}{!}{% ... %}`» y reserva `adjustbox` solo para diagramas altos.

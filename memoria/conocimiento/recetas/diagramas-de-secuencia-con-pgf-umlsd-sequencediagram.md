@@ -135,6 +135,8 @@ Temas: [[diagramas]] · [[diagramas-secuencia]] · [[latex]] · [[pgf-umlsd]] ·
 
 Fusionada con: Diagramas de secuencia pgf-umlsd sintaxis correcta
 
-Relacionado: [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]
+Relacionado: [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] · [[como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le]] · [[diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]]: Nota A dice «participantes a ≤5 (regla 16)»; Nota B dice «Máximo 6 participantes por diagrama». Nota A prohíbe `resizebox` para diagramas anchos («no `resizebox` que encoge letras») y manda usar `adjustbox`; Nota B indica «Diagramas anchos: envolver en `\resizebox{\textwidth}{!}{% ... %}`» y reserva `adjustbox` solo para diagramas altos.

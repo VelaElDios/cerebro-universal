@@ -5,9 +5,9 @@ temas: ["diagramas", "latex", "memoria", "tfg", "tikz"]
 claves: ["node distance", "text width", "|-", "-|", "7.5 pt", "revisar_figuras.py"]
 proyectos: []
 fuentes: ["../../memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-21"
-actualizado: "2026-11-21"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[diagramas]] · [[latex]] · [[memoria]] · [[tfg]] · [[tikz]]

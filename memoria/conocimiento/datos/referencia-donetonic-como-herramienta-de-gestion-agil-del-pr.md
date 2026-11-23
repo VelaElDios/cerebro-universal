@@ -5,9 +5,9 @@ temas: ["bibliografia", "bibliografía", "donetonic", "gestion-proyectos", "scru
 claves: ["donetonic", "agile-tool", "backlog", "sprint-management", "herramienta", "sprint"]
 proyectos: ["memoria-procesos"]
 fuentes: ["../memoria-procesos/fuentes/bibliografia-extra.md", "fuentes/bibliografia-extra.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-22"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[bibliografia]] · [[bibliografía]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]]

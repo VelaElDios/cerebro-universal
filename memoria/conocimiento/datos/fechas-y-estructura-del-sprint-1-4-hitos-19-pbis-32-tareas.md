@@ -5,7 +5,7 @@ temas: ["grada-colchonera", "saas", "scrum", "sprint", "hitos", "memoria-proceso
 claves: ["Sprint 1", "29/09/2026", "27/10/2026", "Hito 1", "Hito 2", "Hito 3", "Hito 4", "19 PBIs", "32 tareas", "P1-P19", "T1-T32", "MUST", "DoneTonic"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §4.1", "repo:saas/docs/sprint-1.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-20"
 ---
@@ -24,7 +24,7 @@ Sprint 1: del 29/09/2026 al 27/10/2026.
 > **Sprint 1:** del 29/09/2026 al 27/10/2026. 19 PBIs (P1–P19) con 32 tareas (T1–T32), etiquetados por hito (*Hito 1* a *Hito 4*). Todos son **MUST** porque son requisitos obligatorios del enunciado.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]
 
 ## Ampliación (2026-11-19, memoria-procesos)
 |
@@ -41,3 +41,5 @@ Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requi
 Sprint 1: 29/09–27/10/2026. Hito 1 (P1-P6, T1-T7): repositorio, CI, despliegue, usuarios en memoria, pruebas, API. Hito 2 (P7-P10, T8-T14): frontend separado, registro/login local, logout, rutas protegidas. Hito 3 (P11-P14, T15-T20): BD real, secretos, roles admin, logs. Hito 4 (P15-P19, T21-T32): OAuth Google, confirmación correo, errores/feedback, README, Cloud Run. Cambio de alcance: P19 añadido a mitad de sprint por créditos Google Cloud.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]]: Nota A registra 16 PBIs totales (P1–P14, P18, P19; faltan P15–P17) y solo 3 hitos en el burndown (Hito 1, 2, 3). Nota B afirma 19 PBIs (P1–P19 completos) y 4 hitos (Hito 1 a Hito 4, donde Hito 4 abarca P15–P19).

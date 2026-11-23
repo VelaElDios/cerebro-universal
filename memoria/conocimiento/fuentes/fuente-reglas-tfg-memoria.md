@@ -22,7 +22,7 @@ Este trozo define las reglas fijas de Javier para la memoria del TFG usando la p
 - [[elementos-de-plantilla-inmutables-no-se-quita-nada]]
 - [[formato-de-tablas-alineacion-tamanos-y-longtable]]
 - [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]]
-- [[limite-de-6-participantes-en-diagramas-de-secuencia]]
+- [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]]
 - [[portada-unica-oficial-del-tfg-elements-portada-tex]]
 - [[prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier]]
 - [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]

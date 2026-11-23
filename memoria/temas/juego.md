@@ -26,7 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «juego» (este archivo se 
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto contrastadas con fuentes]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (fusionada)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil|Requisitos funcionales del juego (Sprint 2) — 20 RJ con trazabilidad]] · ⚠️ propuesto
@@ -34,4 +34,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «juego» (este archivo se 
 
 ## Temas relacionados
 
-[[saas]] · [[grada-colchonera]] · [[trazabilidad]] · [[memoria]] · [[metricas]] · [[fuentes]] · [[sprints]] · [[requisitos]] · [[sprint]] · [[concurrencia-optimista]] · [[audio]] · [[game-engine]]
+[[saas]] · [[grada-colchonera]] · [[trazabilidad]] · [[datos]] · [[fuentes]] · [[memoria]] · [[metricas]] · [[sprints]] · [[requisitos]] · [[sprint]] · [[concurrencia-optimista]] · [[audio]]

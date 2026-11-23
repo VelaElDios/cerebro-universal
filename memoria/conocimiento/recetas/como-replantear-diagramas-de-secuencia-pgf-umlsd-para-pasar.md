@@ -5,9 +5,9 @@ temas: ["latex", "maquetacion", "pgf-umlsd", "tikz"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock", "node distance", "resizebox", "adjustbox"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-22"
-actualizado: "2026-11-22"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[latex]] · [[maquetacion]] · [[pgf-umlsd]] · [[tikz]]
@@ -60,8 +60,8 @@ Ejemplo correcto (compilado y probado):
 ```
 
 > Los diagramas se miran de verdad en el PDF: scripts/revisar_figuras.py mide cada diagrama con las coordenadas reales del PDF (líneas que pasan por encima de letras, cajas que se pisan, palabras partidas con guion, letras de menos de 7,5 pt) y, si eso pasa, Gemini lo mira además a ojo. No se arregla encogiendo el dibujo (adjustbox, resizebox, scale): eso deja las letras diminutas; hay que replantear el dibujo para que quepa a tamaño real.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> — `memoria/reglas-tfg.md`
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd]] · [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

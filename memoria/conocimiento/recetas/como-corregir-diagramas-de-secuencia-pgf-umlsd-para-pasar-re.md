@@ -62,7 +62,7 @@ Temas: [[diagramas-secuencia]] · [[latex]] · [[maquetacion]] · [[pgf-umlsd]]
 > Diagramas de secuencia: como mucho 6 participantes. Si hay más, se agrupan o se parte en dos diagramas. \resizebox solo para encoger un poco, no para meter 9 columnas en el ancho de la página.
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]]
 
 ## Ampliación (2026-11-19, memoria-procesos)
 |

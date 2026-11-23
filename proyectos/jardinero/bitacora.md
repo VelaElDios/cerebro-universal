@@ -25,7 +25,7 @@ Lo que hace el jardinero en cada pasada.
 
 ## 2026-11-19 15:45 · 🌱 Pasada del jardinero
 
-- ✅ Citas comprobadas: 1 notas pasan a verificado: [[reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle]]
+- ✅ Citas comprobadas: 1 notas pasan a verificado: [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
 - 🔀 Notas repetidas fusionadas: 6
   - [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] ← Inventario de capturas por carpeta con fechas y requisitos
   - [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] ← Portada única oficial del TFG (elements/portada.tex)
@@ -85,7 +85,7 @@ Lo que hace el jardinero en cada pasada.
 - ✅ Citas comprobadas: 7 notas pasan a verificado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
 - 🔀 Notas repetidas fusionadas: 6
   - [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] ← Referencia DoneTonic como herramienta de gestión ágil
-  - [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] ← Cifras clave del proyecto verificadas en fuentes
+  - [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] ← Cifras clave del proyecto verificadas en fuentes
   - [[formato-de-tablas-alineacion-tamanos-y-longtable]] ← Reglas de maquetación de tablas en LaTeX (alineación, anchos, longtable, código y rutas)
   - [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] ← Prosa de TFG vs lista de capturas (regla 13 Javier)
   - [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] ← Verificación obligatoria: revisar_maquetacion.py en verde + revisión página a página
@@ -98,3 +98,22 @@ Lo que hace el jardinero en cada pasada.
   - [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] ↔ [[sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba]]: La Nota A describe el Sprint 2 como un periodo de **desarrollo nuevo e integración** (7 fases, 11 PRs fusionados en main del 23 al 29/10 añadiendo características y resolviendo problemas). La Nota B afirma que el Sprint 2 **no desarrolló lógica nueva**, sino que solo documentó como backlog 6 fases **ya implementadas antes del sprint**; las fusiones ocurrieron esa semana pero el código preexistía.
   - [[fuentes-faltantes-bloquean-verificacion-automatica]] ↔ [[numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20]]: La Nota A afirma que `verificar.py` "comprueba que todo número >20 del texto aparece en las fuentes". La Nota B (primer párrafo) afirma lo contrario: que "comprueba TODOS los números del texto contra las fuentes, no solo los > 20". Aunque la ampliación posterior de la Nota B rectifica y coincide con la Nota A, la afirmación inicial de la Nota B contradice directamente a la Nota A sobre el comportamiento del script.
 - 🔗 Enlaces nuevos entre notas parecidas: 146
+
+## 2026-11-23 19:40 · 🌱 Pasada del jardinero
+
+- ✅ Citas comprobadas: 8 notas pasan a verificado: [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
+- 🔀 Notas repetidas fusionadas: 6
+  - [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] ← Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)
+  - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Cómo agrupar capturas con subfigure
+  - [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] ← Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure
+  - [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] ← Cifras clave del proyecto contrastadas con fuentes
+  - [[como-agrupar-capturas-relacionadas-con-subfigure]] ← Cómo agrupar capturas relacionadas en subfigure (2 por fila)
+  - [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] ← Límite de 6 participantes en diagramas de secuencia
+- ⚠️ Contradicciones encontradas: 6
+  - [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] ↔ [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]]: Nota A registra 0 PBIs hechos el 27/10 (PR #55) y 2 PBIs el 29/10 (PR #56 y docs); Nota B, en su sección «Evolución real reconstruida», atribuye a Nota A 1 PBI el 27/10 y 1 PBI el 29/10, y en su propio resumen omite el 27/10 y asigna 2 PBIs al 29/10. Hay cifras distintas para los mismos días (27/10 y 29/10) y discrepancia interna en Nota B.
+  - [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] ↔ [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]: Nota A registra 16 PBIs totales (P1–P14, P18, P19; faltan P15–P17) y solo 3 hitos en el burndown (Hito 1, 2, 3). Nota B afirma 19 PBIs (P1–P19 completos) y 4 hitos (Hito 1 a Hito 4, donde Hito 4 abarca P15–P19).
+  - [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] ↔ [[fechas-pbis-y-tareas-de-los-dos-sprints]]: La Nota A afirma que el Hito 4 tiene **6 tareas (T21–T26)**; la Nota B dice que abarca **12 tareas (T21–T32)**. La Nota A enlaza una estructura de Sprint 2 con **6 fases**; la Nota B detalla **7 fases** (incluye «Base del juego» y «Calidad» como fases separadas).
+  - [[fases-del-sprint-2-y-prs-asociados]] ↔ [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]: La Nota A describe 6 fases para el Sprint 2 (Fase 1 a Fase 6 en PRs #36, #49, #50, #52, #53, #54). La Nota B, en su bloque de advertencia ⚠️, afirma textualmente que su propia ampliación del 2026-11-19 establece que el Sprint 2 tuvo **7 fases**.
+  - [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] ↔ [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]]: La **Nota A** (Ampliaciones) recomienda envolver diagramas anchos en `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=...}`. La **Nota B** (Paso 1) prohíbe explícitamente escalar con `\resizebox` (y `\adjustbox{scale=...}`) porque reduce las letras por debajo de 7,5 pt; solo permite `adjustbox{max width=..., max totalheight=...}` al no escalar si el diagrama cabe.
+  - [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]] ↔ [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]: Nota A dice «participantes a ≤5 (regla 16)»; Nota B dice «Máximo 6 participantes por diagrama». Nota A prohíbe `resizebox` para diagramas anchos («no `resizebox` que encoge letras») y manda usar `adjustbox`; Nota B indica «Diagramas anchos: envolver en `\resizebox{\textwidth}{!}{% ... %}`» y reserva `adjustbox` solo para diagramas altos.
+- 🔗 Enlaces nuevos entre notas parecidas: 164

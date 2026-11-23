@@ -26,4 +26,4 @@ no
 
 Fusionada con: Flechas reales en captions y texto ($\rightarrow$)
 
-Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[formato-de-tablas-alineacion-tamanos-y-longtable]] · [[la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme]] · [[reglas-de-figuras-y-paginas-tamanos-flotantes-duplicados-fle]] · [[numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]]
+Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[formato-de-tablas-alineacion-tamanos-y-longtable]] · [[la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] · [[numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]]

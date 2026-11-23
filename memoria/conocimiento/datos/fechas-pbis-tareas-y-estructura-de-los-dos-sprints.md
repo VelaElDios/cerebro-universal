@@ -31,6 +31,6 @@ Sprint 1: 4 hitos, todos MUST. Sprint 2: 7 fases, todos MUST. Total: 48 PBIs, 82
   Burndown real Sprint 2 (por PRs): 28→11→11→2→2→2→0.
   DoneTonic Sprint 2 sale en recta porque backlog se registró al cerrar (29/10).
 
-Relacionado: [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]]
+Relacionado: [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

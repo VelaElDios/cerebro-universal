@@ -17,6 +17,6 @@ Clave bibliográfica `vampiresurvivors`. Referencia del videojuego que populariz
 > poncle (2022). *Vampire Survivors* [videojuego]. Acceso anticipado desde el 17/12/2021; versión 1.0 del 20/10/2022
 > — `../memoria-procesos/fuentes/bibliografia-extra.md`
 
-Relacionado: [[genero-y-bucle-principal-del-juego-survivor-chibi-atletico]] · [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] · [[pivote-de-red-social-a-juego-survivor-reutilizando-base-del]]
+Relacionado: [[genero-y-bucle-principal-del-juego-survivor-chibi-atletico]] · [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] · [[pivote-de-red-social-a-juego-survivor-reutilizando-base-del]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

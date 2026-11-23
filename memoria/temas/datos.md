@@ -17,7 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (para COMPROBACIONES)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (fusionada)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -27,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[metricas]] · [[lua]] · [[general]] · [[verificacion]] · [[juego]] · [[verificar]] · [[memoria-procesos]] · [[arma]] · [[fuente]] · [[cerebro]]
+[[latex]] · [[fuentes]] · [[juego]] · [[metricas]] · [[lua]] · [[general]] · [[grada-colchonera]] · [[memoria]] · [[métricas]] · [[proyecto]] · [[pruebas]] · [[saas]]

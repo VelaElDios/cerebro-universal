@@ -17,7 +17,7 @@ Para cada diagrama dibujado (TikZ o sequencediagram), abrir el PDF y comprobar: 
 > **Todo diagrama se lee bien a su tamaño en el PDF:** las letras del dibujo, una vez escalado, nunca son más pequeñas que las del pie de figura (unos 8-9 pt). Si para que quepa hay que encogerlo tanto que las letras quedan diminutas, el diagrama está mal planteado:
 > — `memoria/reglas-tfg.md`
 
-Relacionado: [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]]
+Relacionado: [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber]] · [[verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]] · [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]]
 
 ## Ampliación (2026-11-20, memoria-procesos)
 Checklist por diagrama: 

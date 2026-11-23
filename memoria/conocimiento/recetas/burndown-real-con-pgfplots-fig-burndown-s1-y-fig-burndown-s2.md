@@ -56,4 +56,6 @@ Sprint 1 (fig:burndown-s1): datos de la Tabla Evolución del Sprint 1 (6 puntos:
 Sprint 2 (fig:burndown-s2): datos de la Tabla Evolución real del Sprint 2 (7 puntos: 23/10 a 29/10). Eje Y: 0-30. Mismo estilo.
 Evitar overfull: ancho `0.9\textwidth`, alto `7cm`. Si las etiquetas del eje X son largas, usar `xticklabels={23/10, 24/10,...}` y `tick label style={font=\footnotesize}`.
 
+Relacionado: [[corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

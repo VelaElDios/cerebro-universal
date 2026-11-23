@@ -27,7 +27,7 @@ Temas: [[capturas]] · [[inventario]] · [[requisito]]
 > Al menos 4 de app/, 4 de hito4/, 8 de juego/, 5 de donetonic/, 2 de produccion/, 1 de prueba-tecnica/. Las antiguas (figs/capturas/app-*.png, figs/capturas/donetonic-*.png) ya no valen.
 > — `repo:saas/docs/capturas/README.md, imágenes disponibles en borrador/` (cita sin comprobar)
 
-Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]
+Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]]
 
 ## Ampliación (2026-11-23, memoria-procesos)
 - app/: 13 capturas (01-inicio a 13-pagina-no-encontrada)

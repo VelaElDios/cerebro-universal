@@ -30,6 +30,6 @@ solucion: Autores que son organizaciones → `author = {{Organización}}`. Todas
 ## Ampliación (2026-11-20, memoria-procesos)
 Aplicado en bib/ref.bib: express, githubflow, nodejs, postgresql, cloudrun, githubactions, donetonic tienen author = {{...}} y year = {s.f.}; rfc6749, bcrypt, vampiresurvivors tienen autores personales y year numérico; enunciado tiene author = {{Universidad de Castilla-La Mancha}} y year = {2026}.
 
-Relacionado: [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]]
+Relacionado: [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -20,4 +20,6 @@ Temas: [[depuracion]] · [[latex]] · [[referencias]]
 > ERROR: Memoria.log: referencia sin resolver: . / ERROR: Memoria.log: referencia sin resolver: )
 > — `salida de verificar.py y revisar_maquetacion.py` (cita sin comprobar)
 
+Relacionado: [[cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v]] · [[imagenes-repetidas-una-sola-aparicion-ref-en-el-resto]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

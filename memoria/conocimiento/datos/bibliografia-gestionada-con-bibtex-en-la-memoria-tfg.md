@@ -17,6 +17,6 @@ Requisito técnico: todas las referencias (libros, papers, docs técnicos, RFCs,
 > Utilizar un gestor bibliográfico (BibTeX).
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[fuente-reglas-tfg]] · [[anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg]] · [[capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf]] · [[convencion-de-mensajes-de-commit-en-espanol-con-identificado]] · [[la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]]
+Relacionado: [[como-exportar-diagramas-mermaid-para-la-memoria-latex]] · [[fuente-reglas-tfg]] · [[anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg]] · [[capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf]] · [[convencion-de-mensajes-de-commit-en-espanol-con-identificado]] · [[la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

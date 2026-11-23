@@ -119,4 +119,6 @@ grep -r "includegraphics" chapters/
 
 Fusionada con: Una sola imagen por captura en toda la memoria (regla 10 Javier)
 
+Relacionado: [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[imagenes-repetidas-una-sola-aparicion-ref-en-el-resto]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

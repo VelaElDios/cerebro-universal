@@ -5,7 +5,7 @@ temas: ["latex", "pdf", "verificacion", "calidad", "checklist"]
 claves: ["revisar_maquetacion.py", "revisar_umlsd.py", "comando_prueba", "visual"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md § Cómo se comprueba"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-22"
 actualizado: "2026-11-23"
 ---
@@ -30,9 +30,9 @@ Checklist obligatorio antes de TERMINADO:
 4. Si todo pasa → TERMINADO = sí.
 
 > Antes de marcar TERMINADO, el PDF se revisa página a página, y revisar_maquetacion.py debe salir en verde. Lo que no mide el script (que las tablas se lean bien y que el orden tenga sentido) lo comprueba el revisor.
-> — `memoria/reglas-tfg.md` (cita sin comprobar)
+> — `memoria/reglas-tfg.md`
 
-Relacionado: [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]]
+Relacionado: [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]] · [[reglas-de-maquetacion-de-javier-resumen-accionable]]
 
 ## Ampliación (2026-11-23, memoria-procesos)
 Checklist obligatorio página a página (imprimir PDF o ver a 100% zoom):

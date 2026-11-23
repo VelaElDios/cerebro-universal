@@ -33,7 +33,7 @@ Sprint 1 (29/09–27/10/2026): 19 PBIs, 32 tareas. Sprint 2 (23/10–29/10/2026)
   - DoneTonic Sprint 2: gráficas en recta porque backlog registrado al cerrar (29/10).
 relacionado: Fechas, PBIs, tareas y estructura detallada de los dos sprints, Prosa de TFG sin listas de capturas (regla 13 Javier)
 
-Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2]] · [[estado-de-completitud-de-sprints-y-trazabilidad]]
+Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

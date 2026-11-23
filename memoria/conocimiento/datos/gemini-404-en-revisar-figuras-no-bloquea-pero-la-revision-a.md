@@ -17,4 +17,6 @@ Cuando el modelo de revisión visual devuelve 404, el script marca el diagrama c
 > ⚠️ Figuras: no pude revisar Figura 3.1 (fig:capas): 404 NOT_FOUND … (no bloqueo).» y «✅ Figuras: 13 diagramas medidos en el PDF, sin fallos.
 > — `salida de revisar_maquetacion.py en este paso` (cita sin comprobar)
 
+Relacionado: [[revision-visual-final-pagina-a-pagina-regla-15-javier]] · [[inventario-de-diagramas-obligatorios-y-su-estado]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

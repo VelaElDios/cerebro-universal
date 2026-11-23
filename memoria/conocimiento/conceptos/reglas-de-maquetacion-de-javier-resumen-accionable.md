@@ -26,4 +26,6 @@ Resumen de comprobación obligatoria antes de TERMINADO: (1) Una sola portada (e
   **Contenido (12-14):** Cada entrega solo su sprint; prosa TFG (no listas de capturas); todo citado y con sentido.
   **Comprobación (15):** Antes de TERMINADO, PDF página a página + `revisar_maquetacion.py` en verde.
 
+Relacionado: [[revision-visual-final-pagina-a-pagina-regla-15-javier]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
