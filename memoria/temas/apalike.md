@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «apalike» (este archivo s
 
 ## Temas relacionados
 
-[[bibliografia]] · [[bibtex]] · [[latex]] · [[referencias]] · [[autores corporativos]] · [[bibliografía]]
+[[bibliografia]] · [[bibtex]] · [[latex]] · [[referencias]] · [[autores corporativos]] · [[bibliografía]] · [[memoria-procesos]]

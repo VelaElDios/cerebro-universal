@@ -1,7 +1,7 @@
 ---
 tipo: "concepto"
 titulo: "Prosa de TFG sin listas de capturas (regla 13 Javier)"
-temas: ["latex", "redacción", "tfg", "figuras", "maquetacion", "redaccion", "estilo"]
+temas: ["latex", "redacción", "tfg", "figuras", "maquetacion", "redaccion", "estilo", "memoria-procesos"]
 claves: ["subfigure", "prosa", "manual de usuario", "\\ref"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md (regla 13)", "memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md"]
@@ -31,5 +31,8 @@ El manual de uso (cap:descripcion §La aplicación) y el del juego (cap:juego §
 - Escribir párrafos que narren la interacción del usuario: "Al acceder sin sesión, el usuario ve la página de inicio (Figura~\ref{fig:app-inicio}) con dos accesos directos... Si elige registrarse, el formulario valida en cliente (Figura~\ref{fig:app-registro})..."
 - Agrupar capturas relacionadas en una sola figura con `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`), caption general y subcaptions.
 - Cada figura/tabla debe tener `\caption`, `\label` y ser citada con `\ref` en el texto.
+
+## Ampliación (2026-11-23, memoria-procesos)
+En lugar de «La figura 1 muestra el login. La figura 2 muestra el registro.», escribir: «Al acceder sin sesión, el usuario ve la página de inicio con dos accesos directos (Figura~\ref{fig:app-inicio-registro}, subfigura~\ref{fig:app-inicio}). Si elige registrarse, el formulario valida en cliente y muestra errores en línea (subfigura~\ref{fig:app-registro}).»
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

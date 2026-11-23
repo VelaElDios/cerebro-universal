@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «autores corporativos» (e
 
 ## Temas relacionados
 
-[[bibliografia]] · [[bibtex]] · [[latex]] · [[apalike]] · [[bibliografía]]
+[[bibliografia]] · [[bibtex]] · [[latex]] · [[apalike]] · [[bibliografía]] · [[memoria-procesos]]

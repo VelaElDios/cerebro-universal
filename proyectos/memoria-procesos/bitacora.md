@@ -14790,3 +14790,60 @@ Qué he corregido yo: nada en este paso (el overfull hbox es menor y lo puede ar
 ## 2026-11-23 08:48 · 🧠 Conocimiento guardado
 
 [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[reglas-de-maquetacion-de-javier-resumen-accionable]]
+
+## 2026-11-23 09:45 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+He corregido el único *overfull hbox* que quedaba en el anexo de trazabilidad: la columna «Tarea» era demasiado estrecha (0,8 cm) para textos como «T1--T82» o «T11--T14», así que la he ensanchado a 1,3 cm, he ajustado el resto de anchos para que la tabla siga dentro del margen (13,5 cm de columnas + separadores) y he añadido \allowbreak en los rangos de tareas que aún podían desbordar. Además, he reescrito la frase «La Figura X muestra…» del anexo de desarrollo para que la explicación del detalle de PBI y de las tareas del Sprint 2 quede integrada en la prosa (regla 13 de Javier). He revisado el resto de capítulos y anexos: no queda ninguna otra cadena «La figura X muestra…» suelta y ningún capítulo presenta el Hito 4 como pendiente (consta como completado el 23/10/2026 y comprobado en producción).
+
+**Archivos:** `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Replantear el diagrama fig:modelo-datos de 04-descripcion.tex: con el ancho actual (18,7 cm) el adjustbox lo escala al 84 %, lo que deja las letras en torno a 8,3 pt; conviene estrechar las cajas y separar mejor los rótulos de relación para que quepa a tamaño real (regla 16). Después, repasar los diagramas de secuencia pendientes (fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar) acortando los textos de los mensajes y manteniendo como máximo 6 participantes, y volver a ejecutar comando_prueba para confirmar que el overfull ha desaparecido y que todo sigue en verde.
+
+## 2026-11-23 09:48 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila
+
+**Comprobaciones:**
+- Compilación: OK (98 páginas, LuaLaTeX, exit code 0)
+- verificar.py: OK (35 figuras, 29 tablas, 17858 palabras)
+- revisar_maquetacion.py: OK reglas formales; 13 diagramas medidos en PDF sin fallos; 9 diagramas con aviso Gemini 404 (no bloquean): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2
+- Overfull hbox en a4-trazabilidad.tex (10.01 pt): corregido por el constructor (columna Tarea 0.8→1.3 cm + \allowbreak)
+- Cadenas «La figura X muestra…» sueltas: eliminadas (constructor revisó todos los capítulos y anexos)
+- Hito 4 como pendiente: ningún capítulo lo menciona (completado 23/10/2026, comprobado en producción)
+- Anexo desarrollo: dos sprints con mismo esquema; explica recta del Sprint 2 (backlog registrado al cerrar el sprint 29/10)
+- Trazabilidad completa P1–P48 / T1–T82 en a4-trazabilidad.tex
+- Datos contrastados con fuentes: ≥27 cifras/hechos verificados en paso anterior (p. ej. 19 PBIs S1, 29 PBIs S2, 32+50=82 tareas, 276 pruebas al cierre S2, 322 tras Fase 7, 23 endpoints, 5 migraciones, 6 dependencias, 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones, burndown S1 [15,9,5,1,2,0], burndown real S2 [28,11,11,2,2,2,0], 8 secretos Secret Manager, PostgreSQL 17 en CI, Node 22 Alpine, región Cloud Run europe-southwest1, Neon Frankfurt, fechas PRs S2, cambio alcance P19, backlog S2 registrado 29/10)
+- Resumen (≥150 palabras) y Abstract (≥120 palabras) presentes con palabras clave/keywords
+- Bibliografía BibTeX apalike con autores corporativos en doble llave y year en todas las entradas
+
+Qué está bien:
+- La compilación y las pruebas automáticas pasan (verificar.py y revisar_maquetacion.py en verde).
+- El overfull hbox de 10 pt en a4-trazabilidad.tex ha sido corregido.
+- No quedan cadenas «La figura X muestra…» sueltas en ningún capítulo ni anexo.
+- El Hito 4 no aparece como pendiente en ningún capítulo.
+- El anexo de desarrollo tiene las dos secciones de sprint con el mismo esquema y explica la recta de las gráficas del Sprint 2.
+- Se han contrastado más de 25 datos con las fuentes, repartidos por todos los capítulos y anexos.
+
+Qué falta (pendiente para TERMINADO):
+1. **9 diagramas obligatorios sin validar visualmente ni con revisar_umlsd.py** (reglas 16-19 de Javier): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2. El script revisar_maquetacion.py midió 13 diagramas sin fallos, pero Gemini devolvió 404 en estos 9 y no bloquea; la regla 19 exige «los diagramas se miran de verdad en el PDF».
+2. **Revisión visual final página a página del PDF** pendiente (regla 15: «el PDF se revisa página a página»).
+3. Ejecutar `revisar_umlsd.py` sobre los 9 diagramas de secuencia pendientes y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+
+El constructor ya tiene estas tareas como siguiente paso. El estado actual es «cambios» porque faltan las validaciones visuales y de diagramas que exigen las reglas de Javier.
+
+**Correcciones del revisor:** `(no aplicado: no encuentro el texto: «% (no hay búsqueda; el archivo ya fue corregido por el const») chapters/a4-trazabilidad.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `revisar_umlsd.py` sobre los 9 diagramas pendientes (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+- Revisar visualmente cada uno de esos 9 diagramas en el PDF compilado: comprobar que las letras midan ≥ 7,5 pt, que no hay flechas atravesando cajas, que no hay palabras partidas con guion, que los codos en flechas separan bien las cajas. Replantear los que fallen (reducir participantes a ≤ 6, aumentar text width, usar codos |-/-|, adjustbox solo para encoger un poco).
+- Hacer revisión visual final del PDF página a página: (a) ninguna página con una sola imagen (regla 8), (b) ninguna figura repetida (regla 10), (c) flechas con $\rightarrow$ no `->` (regla 11), (d) todo citado con \ref, (e) no hay secciones de 1–2 líneas (regla 9), (f) no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` y confirmar que todo pasa (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-23 09:48 · 🧠 Conocimiento guardado
+
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error]] · [[reglas-de-maquetacion-de-javier-resumen-accionable]]

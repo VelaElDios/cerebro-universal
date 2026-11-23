@@ -1,7 +1,7 @@
 ---
 tipo: "concepto"
 titulo: "Reglas de maquetación de Javier (resumen accionable)"
-temas: ["maquetacion", "reglas", "tfg"]
+temas: ["maquetacion", "reglas", "tfg", "latex", "memoria-procesos"]
 claves: ["portada", "tablas", "figuras", "diagramas", "prosa", "sprint"]
 proyectos: ["memoria-procesos"]
 fuentes: ["../../memoria/reglas-tfg.md"]
@@ -16,5 +16,14 @@ Resumen de comprobación obligatoria antes de TERMINADO: (1) Una sola portada (e
 
 > Reglas 1-19 listadas en el documento.
 > — `../../memoria/reglas-tfg.md` (cita sin comprobar)
+
+## Ampliación (2026-11-23, memoria-procesos)
+|
+  **Portada y plantilla (1-4):** Una sola portada (`elements/portada.tex`); no quitar nada de la plantilla; títulos negros negrita sin azul; sin páginas en blanco entre capítulos.
+  **Tablas (5-7):** Celdas `p{}` (no `m{}`), `\small` en longtable, código con `\path{}` o `\texttt{}\allowbreak`, última fila con `\\*` para no quedar sola.
+  **Figuras y páginas (8-11):** Ninguna página con una sola imagen (capturas ≤ `height=0.42\textheight`); ninguna página casi vacía; sin figuras repetidas (usar `\ref`); flechas con `$\rightarrow$` no `->`.
+  **Diagramas (16-19):** Leer bien a tamaño real (letras ≥ 8-9 pt); máx. 6 participantes en secuencia; flechas caja a caja con codos (`|-`, `-|`); cajas sin palabras partidas; **mirar de verdad en el PDF** (regla 19: `revisar_figuras.py` mide coordenadas reales; si falla, replantear dibujo, no encoger con `adjustbox`).
+  **Contenido (12-14):** Cada entrega solo su sprint; prosa TFG (no listas de capturas); todo citado y con sentido.
+  **Comprobación (15):** Antes de TERMINADO, PDF página a página + `revisar_maquetacion.py` en verde.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

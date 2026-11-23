@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 169
+notas: 170
 ---
 # latex
 
@@ -144,6 +144,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 - 💡 [[memoria/conocimiento/conceptos/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
+- 💡 [[memoria/conocimiento/conceptos/reglas-de-maquetacion-de-javier-resumen-accionable|Reglas de maquetación de Javier (resumen accionable)]] · ⚠️ propuesto
 
 ## Datos
 
@@ -199,4 +200,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[pgf-umlsd]] · [[maquetacion]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[subcaption]] · [[sus]] · [[usabilidad]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[pgf-umlsd]] · [[maquetacion]] · [[figuras]] · [[verificacion]] · [[memoria-procesos]] · [[diagramas]] · [[lua]] · [[subcaption]] · [[sus]]

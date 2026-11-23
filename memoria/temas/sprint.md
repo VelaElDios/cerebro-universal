@@ -59,4 +59,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint» (este archivo se
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[scrum]] · [[donetonic]] · [[alcance]] · [[trazabilidad]] · [[memoria-procesos]] · [[metricas]] · [[pbi]] · [[tarea]] · [[sprints]] · [[requisitos]]
+[[grada-colchonera]] · [[saas]] · [[scrum]] · [[donetonic]] · [[memoria-procesos]] · [[alcance]] · [[trazabilidad]] · [[metricas]] · [[pbi]] · [[tarea]] · [[sprints]] · [[requisitos]]

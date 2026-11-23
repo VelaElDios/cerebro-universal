@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «reglas» (este archivo se
 
 ## Temas relacionados
 
-[[maquetacion]] · [[tfg]]
+[[maquetacion]] · [[tfg]] · [[latex]] · [[memoria-procesos]]

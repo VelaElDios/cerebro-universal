@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T08:48:08+01:00",
+ "generado": "2026-11-23T09:48:11+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -782,7 +782,8 @@
     "metricas",
     "retrospectiva",
     "scrum",
-    "burndown"
+    "burndown",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1346,7 +1347,8 @@
     "figuras",
     "maquetacion",
     "redaccion",
-    "estilo"
+    "estilo",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1376,7 +1378,9 @@
    "temas": [
     "maquetacion",
     "reglas",
-    "tfg"
+    "tfg",
+    "latex",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1637,7 +1641,8 @@
    "temas": [
     "metricas",
     "trazabilidad",
-    "verificacion"
+    "verificacion",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2580,7 +2585,8 @@
     "tfg",
     "alcance",
     "sprint",
-    "sprints"
+    "sprints",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2941,7 +2947,8 @@
    "temas": [
     "latex",
     "pgf-umlsd",
-    "sequencediagram"
+    "sequencediagram",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3932,7 +3939,8 @@
     "latex",
     "apalike",
     "autores corporativos",
-    "bibliografía"
+    "bibliografía",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4546,7 +4554,8 @@
    "temas": [
     "latex",
     "longtable",
-    "tablas"
+    "tablas",
+    "memoria-procesos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5905,7 +5914,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 169,
+   "peso": 170,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6341,6 +6350,13 @@
    "titulo": "retrospectiva",
    "peso": 1,
    "ruta": "memoria/temas/retrospectiva.md"
+  },
+  {
+   "id": "tema:memoria-procesos",
+   "tipo": "tema",
+   "titulo": "memoria-procesos",
+   "peso": 28,
+   "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
    "id": "tema:auth",
@@ -6859,13 +6875,6 @@
    "titulo": "hitos",
    "peso": 3,
    "ruta": "memoria/temas/hitos.md"
-  },
-  {
-   "id": "tema:memoria-procesos",
-   "tipo": "tema",
-   "titulo": "memoria-procesos",
-   "peso": 20,
-   "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
    "id": "tema:arma",
@@ -9196,6 +9205,11 @@
   },
   {
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -11066,6 +11080,11 @@
   },
   {
    "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -11152,6 +11171,16 @@
   {
    "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
    "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "a": "tema:memoria-procesos",
    "tipo": "trata"
   },
   {
@@ -12022,6 +12051,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
    "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:memoria-procesos",
    "tipo": "trata"
   },
   {
@@ -14966,6 +15000,11 @@
   },
   {
    "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -16047,6 +16086,11 @@
   {
    "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
    "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
+   "a": "tema:memoria-procesos",
    "tipo": "trata"
   },
   {
@@ -19536,6 +19580,11 @@
   },
   {
    "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -21157,6 +21206,11 @@
   {
    "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
    "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-tablas-anchas-con-longtable",
+   "a": "tema:memoria-procesos",
    "tipo": "trata"
   },
   {

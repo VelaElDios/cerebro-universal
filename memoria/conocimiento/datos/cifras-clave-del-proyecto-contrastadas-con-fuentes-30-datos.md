@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (30 datos)"
-temas: ["metricas", "trazabilidad", "verificacion"]
+temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints", "36 jugadores", "10 jefes", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -47,5 +47,8 @@ relacionado: Inventario de capturas de pantalla con trazabilidad a requisitos y 
 
 > Ver bitácora reciente (2026-11-23 04:09) donde se listan 30 comprobaciones con sección de la fuente.
 > — `repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md` (cita sin comprobar)
+
+## Ampliación (2026-11-23, memoria-procesos)
+Cada cifra del texto sale de las fuentes, copiada tal cual. El test comprueba números >20; el revisor comprueba los pequeños. Ojo con los que se parecen: 19 PBIs en Sprint 1, pero burndown de la entrega cuenta 16 (P1–P14, P18, P19).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

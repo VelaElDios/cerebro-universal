@@ -53,4 +53,24 @@ Temas: [[latex]] · [[maquetacion]] · [[pgf-umlsd]] · [[tikz]]
 
 Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual PDF (reglas 16-18: letras ≥ 7,5 pt, sin flechas que crucen cajas, sin palabras partidas, codos en flechas).
 
+## Ampliación (2026-11-23, memoria-procesos)
+|
+  | Diagrama | Tipo | Archivo | Estado actual |
+  |---|---|---|---|
+  | fig:capas | TikZ | 04-descripcion.tex | **CORREGIDO** (replanteado: text width ↑, separación ↑, \mbox{}, flechas con codos) |
+  | fig:modelo-datos | TikZ | 04-descripcion.tex | **PENDIENTE** (no revisado, Gemini 404) |
+  | fig:sec-registro | sequencediagram | 04-descripcion.tex | Modificado, **PENDIENTE** (Gemini 404) |
+  | fig:sec-confirmacion | sequencediagram | 04-descripcion.tex | **PENDIENTE** (Gemini 404) |
+  | fig:sec-login | sequencediagram | 04-descripcion.tex | **CORREGIDO** (etiquetas sin acentos, saltos \n, adjustbox) |
+  | fig:sec-google | sequencediagram | 04-descripcion.tex | **PENDIENTE** (replantear: ≤5 participantes, etiquetas ≤2 líneas, codos) |
+  | fig:sec-baja | sequencediagram | 04-descripcion.tex | **CORREGIDO** (Diálogo sin acento, etiquetas cortas) |
+  | fig:juego-arquitectura | TikZ | 04b-juego.tex | **CORREGIDO** (text width ↓, separación ↑, \mbox{}, font=\scriptsize) |
+  | fig:sec-partida | sequencediagram | 04b-juego.tex | **PENDIENTE** (Gemini 404) |
+  | fig:sec-contratar | sequencediagram | 04b-juego.tex | **PENDIENTE** (Gemini 404) |
+  | fig:pipeline | TikZ | 05-evaluacion.tex | **PENDIENTE** (Gemini 404), `\mbox{Artifact}` aplicado |
+  | fig:burndown-s1 | pgfplots | a1-desarrollo.tex | **PENDIENTE** (Gemini 404) |
+  | fig:burndown-s2 | pgfplots | a1-desarrollo.tex | **PENDIENTE** (Gemini 404) |
+
+  Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual PDF (reglas 16-18).
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «estilo» (este archivo se
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[redaccion]] · [[redacción]] · [[figuras]] · [[maquetacion]] · [[prosa]] · [[revision]]
+[[tfg]] · [[latex]] · [[redaccion]] · [[redacción]] · [[figuras]] · [[maquetacion]] · [[memoria-procesos]] · [[prosa]] · [[revision]]

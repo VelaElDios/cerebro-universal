@@ -29,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sequencediagram» (este a
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[verificacion]] · [[codigos estado]] · [[http]] · [[memoria]] · [[diagramas]] · [[diagramas-secuencia]] · [[secuencia]] · [[tikz]] · [[uml]]
+[[latex]] · [[pgf-umlsd]] · [[verificacion]] · [[codigos estado]] · [[http]] · [[memoria-procesos]] · [[memoria]] · [[diagramas]] · [[diagramas-secuencia]] · [[secuencia]] · [[tikz]] · [[uml]]

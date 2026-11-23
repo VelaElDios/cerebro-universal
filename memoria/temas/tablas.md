@@ -28,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[reglas-javier]]
+[[latex]] · [[longtable]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[reglas-javier]] · [[memoria-procesos]]

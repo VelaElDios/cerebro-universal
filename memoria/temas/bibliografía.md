@@ -18,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibliografía» (este arc
 
 ## Temas relacionados
 
-[[bibliografia]] · [[bibtex]] · [[latex]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]] · [[apalike]] · [[autores corporativos]]
+[[bibliografia]] · [[bibtex]] · [[latex]] · [[donetonic]] · [[gestion-proyectos]] · [[scrum]] · [[apalike]] · [[autores corporativos]] · [[memoria-procesos]]
