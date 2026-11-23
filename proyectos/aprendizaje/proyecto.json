@@ -109,7 +109,7 @@
       "privado": true
     }
   ],
-  "ultima_ejecucion": "2026-11-22T20:17:35+01:00",
+  "ultima_ejecucion": "2026-11-23T01:17:45+01:00",
   "pip": [
     "python-docx",
     "python-pptx",
