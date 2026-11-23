@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 171
+notas: 174
 ---
 # latex
 
@@ -27,7 +27,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-actualizar-referencias-a-documentacion-tras-reorganizac|Cómo actualizar referencias a documentación tras reorganización del bundle]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure|Cómo agrupar capturas con subfigure]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas con subfigure (dos por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure|Cómo agrupar capturas relacionadas con subfigure]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
@@ -166,6 +168,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚠️ [[memoria/lecciones/citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - ⚠️ [[memoria/lecciones/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]]
+- ⚠️ [[memoria/lecciones/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]]
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto
@@ -201,4 +204,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[pgf-umlsd]] · [[maquetacion]] · [[figuras]] · [[verificacion]] · [[memoria-procesos]] · [[diagramas]] · [[lua]] · [[subcaption]] · [[sus]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[maquetacion]] · [[pgf-umlsd]] · [[figuras]] · [[verificacion]] · [[memoria-procesos]] · [[diagramas]] · [[lua]] · [[subcaption]] · [[sus]]

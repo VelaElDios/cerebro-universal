@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgfplots"
-notas: 8
+notas: 10
 ---
 # pgfplots
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgfplots» (este archivo 
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2|Burndown real con pgfplots (fig:burndown-s1 y fig:burndown-s2)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -27,9 +28,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgfplots» (este archivo 
 
 ## Lecciones (errores ya resueltos)
 
+- ⚠️ [[memoria/lecciones/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/pgfplots-linea-horizontal-de-referencia-de-lado-a-lado-con-d|pgfplots: línea horizontal de referencia de lado a lado con \draw]]
 - ⚠️ [[memoria/lecciones/pgfplots-symbolic-x-coords-necesita-la-lista-ya-expandida|pgfplots: symbolic x coords necesita la lista ya expandida]]
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[diagramas]] · [[memoria]] · [[lua]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]] · [[usabilidad]] · [[maquetacion]]
+[[latex]] · [[tikz]] · [[maquetacion]] · [[pgf-umlsd]] · [[diagramas]] · [[memoria]] · [[lua]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]] · [[usabilidad]]

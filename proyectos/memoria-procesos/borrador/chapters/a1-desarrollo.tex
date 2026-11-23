@@ -176,10 +176,9 @@ Cierre de la primera entrega (12/10/2026) & 16 & 0 \\*
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}
 \begin{axis}[
-    width=0.9\textwidth,
+    width=0.95\linewidth,
     height=7cm,
     xlabel={Momento del sprint},
     ylabel={PBIs pendientes},
@@ -194,13 +193,17 @@ Cierre de la primera entrega (12/10/2026) & 16 & 0 \\*
     label style={font=\small},
     x tick label style={font=\footnotesize},
     y tick label style={font=\footnotesize},
-    legend style={font=\footnotesize}
+    legend style={font=\footnotesize},
+    % Evitar que la etiqueta del eje Y choque con la gráfica
+    ylabel style={anchor=east, xshift=-3pt},
+    % Aumentar margen izquierdo para la etiqueta del eje Y
+    scale only axis,
+    enlarge x limits=0.05,
 ]
 \addplot coordinates {(1,15) (2,9) (3,5) (4,1) (5,2) (6,0)};
 \addlegendentry{PBIs pendientes}
 \end{axis}
 \end{tikzpicture}
-\end{adjustbox}
 \caption{Burndown del Sprint 1: PBIs pendientes del alcance de la entrega según se cerraban los hitos.}
 \label{fig:burndown-s1}
 \end{figure}
@@ -348,10 +351,9 @@ Inicio (23/10/2026) & 0 & 0 & 29 \\
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}
 \begin{axis}[
-    width=0.9\textwidth,
+    width=0.95\linewidth,
     height=7cm,
     xlabel={Fecha},
     ylabel={PBIs pendientes},
@@ -363,13 +365,16 @@ Inicio (23/10/2026) & 0 & 0 & 29 \\
     mark=*,
     thick,
     tick label style={font=\footnotesize},
-    label style={font=\small}
+    label style={font=\small},
+    % Evitar que la etiqueta del eje Y choque con la gráfica
+    ylabel style={anchor=east, xshift=-3pt},
+    scale only axis,
+    enlarge x limits=0.03,
 ]
 \addplot coordinates {(1,28) (2,11) (3,11) (4,2) (5,2) (6,2) (7,0)};
 \addlegendentry{PBIs pendientes}
 \end{axis}
 \end{tikzpicture}
-\end{adjustbox}
 \caption{Burndown real del Sprint 2: PBIs pendientes según las fechas de fusión de los PR (23/10--29/10/2026).}
 \label{fig:burndown-s2}
 \end{figure}

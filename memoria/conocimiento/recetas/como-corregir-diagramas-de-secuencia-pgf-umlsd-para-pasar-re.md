@@ -4,10 +4,10 @@ titulo: "Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18
 temas: ["diagramas-secuencia", "latex", "maquetacion", "pgf-umlsd", "diagramas", "tikz"]
 claves: ["\\newthread", "\\newinst", "call", "\\mess", "sdblock", "adjustbox", "max totalheight"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (reglas 16-19) y experiencia de corrección"]
 confianza: "propuesto"
 fecha: "2026-11-19"
-actualizado: "2026-11-20"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[diagramas-secuencia]] · [[latex]] · [[maquetacion]] · [[pgf-umlsd]]
@@ -113,5 +113,17 @@ Ejemplo correcto (compilado y probado):
 
 ## Ampliación (2026-11-20, memoria-procesos)
 Antes de compilar, revisar cada diagrama de secuencia: (1) Aumentar node distance vertical ≥1.5cm y horizontal ≥2.5cm. (2) Usar flechas con codos: en TikZ, `\draw[arrow] (A.east) -- ++(1.5,0) |- (B.west);` en sequencediagram, las llamadas anidadas `call` ya generan flechas verticales, pero para mensajes sueltos `\mess` se puede añadir un nodo intermedio o ajustar posiciones. (3) Mover etiquetas con `node[near start, above/left/right, font=\footnotesize] {texto}` fuera de líneas verticales. (4) Agrupar participantes relacionados (ej. "Vista + api.js" → "Frontend") si hay >6. (5) Verificar que cada `\newthread`/`\newinst` tiene nombre no vacío. (6) Compilar y abrir el PDF para comprobar visualmente que no hay cruces y las letras se leen (≥8pt). Si el diagrama es muy ancho, usar `pdflscape` como último recurso.
+
+## Ampliación (2026-11-23, memoria-procesos)
+|
+  Antes de compilar, revisar cada diagrama:
+  (a) Aumentar node distance vertical ≥ 1.5cm y horizontal ≥ 2.5cm.
+  (b) Usar flechas con codos: `\draw[arrow] (A.east) -- ++(1.5,0) |- (B.west);`
+  (c) Mover etiquetas con `node[near start, above/left/right, font=\footnotesize] {texto}` fuera de líneas verticales.
+  (d) Agrupar participantes relacionados (ej. "Vista + api.js" → "Frontend") si hay >6.
+  (e) Verificar que cada `\newthread`/`\newinst` tiene nombre no vacío.
+  (f) En `\mess`, `call`, `callself`, `\newinst`: sin acentos, sin paréntesis en `\mess`, sin comandos LaTeX, sin `#`, `&`, `_`, `$`, `%` sueltos. Usar `\n` para saltos de línea en etiquetas largas.
+  (g) Compilar y abrir el PDF para comprobar visualmente que no hay cruces y las letras se leen (≥ 8pt).
+  (h) Si `revisar_umlsd.py` reporta errores, corregirlos todos antes de volver a compilar.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

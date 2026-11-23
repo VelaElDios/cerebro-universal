@@ -277,17 +277,17 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
     \end{call}
   \end{call}
   \begin{sdblock}{loop}{cada fotograma}
-    \begin{call}{j}{mueve}{fe}{}
+    \begin{call}{j}{mueve}{fe}{ok}
     \end{call}
     \mess{fe}{fin}{j}
   \end{sdblock}
   \begin{call}{fe}{POST fin}{api}{200 o 400}
-    \begin{call}{api}{finalizarPartida}{srv}{validación}
+    \begin{call}{api}{finalizarPartida}{srv}{validacion}
     \end{call}
     \begin{sdblock}{alt}{imposible}
-      \mess{srv}{400 no creíble}{api}
+      \mess{srv}{400 no creible}{api}
     \end{sdblock}
-    \begin{sdblock}{else}{válido}
+    \begin{sdblock}{else}{valido}
       \begin{call}{srv}{reparte y guarda}{repo}{perfil}
       \end{call}
       \mess{api}{200 recompensas}{fe}

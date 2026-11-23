@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 26
+notas: 29
 ---
 # maquetacion
 
@@ -11,6 +11,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr|Agrupar capturas relacionadas en subfiguras con prosa integrada]]
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure|Cómo agrupar capturas con subfigure]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila|Cómo agrupar capturas relacionadas en subfigure (2 por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
@@ -45,9 +47,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Lecciones (errores ya resueltos)
 
+- ⚠️ [[memoria/lecciones/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable|Evitar páginas casi vacías al final de anexos con longtable]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[pgf-umlsd]] · [[tikz]] · [[tfg]] · [[memoria-procesos]] · [[longtable]] · [[reglas-javier]] · [[subcaption]] · [[redaccion]] · [[diagramas]] · [[maquetación]]
+[[latex]] · [[figuras]] · [[pgf-umlsd]] · [[tikz]] · [[tfg]] · [[memoria-procesos]] · [[subcaption]] · [[longtable]] · [[reglas-javier]] · [[pgfplots]] · [[redaccion]] · [[diagramas]]

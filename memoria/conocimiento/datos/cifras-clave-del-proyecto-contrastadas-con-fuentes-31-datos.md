@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (31 datos)"
-temas: ["fuentes", "memoria", "verificacion"]
+temas: ["fuentes", "memoria", "verificacion", "metricas", "trazabilidad"]
 claves: ["19 PBIs", "29 PBIs", "82 tareas", "276 pruebas", "322 pruebas", "23 endpoints", "5 migraciones", "6 dependencias", "36 jugadores", "2 entrenadores", "29 armas", "16 pasivas", "29 combinaciones", "6 ultras", "16 equipos", "10 jefes", "5 ambientes", "26 selecciones", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["docs/sprint-1.md, docs/sprint-2.md, docs/juego.md, docs/arquitectura.md, docs/procesos.md, docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md"]
+fuentes: ["docs/sprint-1.md, docs/sprint-2.md, docs/juego.md, docs/arquitectura.md, docs/procesos.md, docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -75,5 +75,32 @@ Lista de 31 cifras/hechos verificados contra las fuentes del repositorio en el p
 - Fechas PRs S2 → sprint-2.md tabla PRs
 - Cambio alcance P19 → decisiones.md D-16
 - Backlog S2 registrado 29/10 → decisiones.md D-19
+
+## Ampliación (2026-11-23, memoria-procesos)
+|
+  Estas 31 cifras/hechos se han verificado contra las fuentes en pasos anteriores de revisión y aparecen en el texto de la memoria. Cada número > 20 está en las fuentes; los pequeños los comprobó el revisor. Ejemplos de contraste:
+  - 19 PBIs Sprint 1 → sprint-1.md tabla backlog
+  - 29 PBIs Sprint 2 → sprint-2.md tabla backlog
+  - 32 tareas S1 + 50 tareas S2 = 82 → sprint-1.md y sprint-2.md
+  - 276 pruebas al cierre S2 → sprint-2.md métricas
+  - 322 pruebas tras Fase 7 → log.md 2026-11-03
+  - 23 endpoints → arquitectura.md tabla API
+  - 5 migraciones → arquitectura.md lista migraciones
+  - 6 dependencias producción → sprint-2.md métricas
+  - 36 jugadores, 2 entrenadores → juego.md sistemas
+  - 29 armas, 16 pasivas, 29 combinaciones, 6 ultras → juego.md sistemas (incluye Fase 7)
+  - 16 equipos, 10 jefes, 5 ambientes, 26 selecciones → juego.md sistemas
+  - 29 logros, 10 equipaciones → juego.md logros
+  - Burndown S1 [15,9,5,1,2,0] → sprint-1.md tabla evolución
+  - Burndown real S2 [28,11,11,2,2,2,0] → sprint-2.md tabla evolución
+  - 8 secretos Secret Manager → procesos.md configuración servicios externos
+  - PostgreSQL 17 en CI → procesos.md workflow CI
+  - Node 22 Alpine → procesos.md imagen Docker
+  - Región Cloud Run europe-southwest1 → procesos.md despliegue
+  - Neon Frankfurt → procesos.md base de datos
+  - Fechas PRs S2 → sprint-2.md tabla PRs fusionados
+  - Cambio alcance P19 → decisiones.md D-16
+  - Backlog S2 registrado 29/10 → decisiones.md D-19, sprint-2.md retrospectiva
+relacionado: Inventario de diagramas obligatorios y su estado actualizado, Trazabilidad completa requisito-PBI-tarea-PR en anexo A4
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

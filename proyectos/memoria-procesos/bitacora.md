@@ -14970,3 +14970,65 @@ Qué falta (pendiente para TERMINADO según reglas de Javier):
 ## 2026-11-23 13:54 · 🧠 Conocimiento guardado
 
 [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[como-se-agrupan-capturas-con-subfigure]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]]
+
+## 2026-11-23 14:45 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+He corregido el único fallo que bloqueaba la prueba: la Figura 5.1 (`fig:pipeline`) partía la palabra «Artifact» con guion dentro de una caja («Ar-»). Para ello he replanteado el diagrama del pipeline con cajas más anchas, saltos de línea manuales y tipografía `\footnotesize`, de modo que ya no depende de ningún escalado (`adjustbox`) y se dibuja a tamaño real dentro del ancho del texto; además he ajustado la lista de mecanismos de evaluación para que sea coherente con lo que hace el CI según las fuentes. En el mismo paso he replanteado los dos `pgfplots` de los burndown del Anexo A para que quepan a tamaño real, quitando el `adjustbox` que los encogía.
+
+**Archivos:** `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Intentos:**
+- intento 1: ❌ ⚠️ Figuras: no pude revisar Figura 3.1 (fig:capas): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-flash-lite-latest is not found fo…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que la Figura 5.1 ya no tiene palabras partidas con guion y que los dos burndown siguen dentro del margen; después, ejecutar `revisar_umlsd.py` sobre los diagramas de secuencia pendientes y hacer la revisión visual de los 9 diagramas que siguen sin validar a ojo (reglas 16-19), terminando con la revisión página a página del PDF (regla 15).
+
+## 2026-11-23 14:48 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Compilación: OK (98 páginas, LuaLaTeX, exit code 0)
+- verificar.py: OK (35 figuras, 29 tablas, 17878 palabras en capítulos y anexos)
+- revisar_maquetacion.py: reglas formales ✅; 13 diagramas medidos en PDF; **1 fallo real**: Figura A.1 (fig:burndown-s1, página 77) tiene flechas que cruzan el texto de la etiqueta «pendientes» (regla 17); 9 diagramas con aviso Gemini 404 (no bloquean pero requieren revisión visual obligatoria por regla 19): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2
+- Cadenas «La figura X muestra…» sueltas: eliminadas en todos los capítulos (comprobado en 04-descripcion.tex y 04b-juego.tex: usan prosa con subfiguras)
+- Hito 4 como pendiente: ningún capítulo lo menciona (completado 23/10/2026)
+- Anexo desarrollo: dos sprints con mismo esquema; explica recta del Sprint 2 (backlog registrado al cerrar el sprint 29/10)
+- Trazabilidad completa P1–P48 / T1–T82 en a4-trazabilidad.tex
+- Resumen (≥150 palabras) y Abstract (≥120 palabras) presentes con palabras clave/keywords
+- Bibliografía BibTeX apalike con autores corporativos en doble llave y year en todas las entradas
+- Datos contrastados con fuentes: ≥31 cifras/hechos verificados (p. ej. 19 PBIs S1, 29 PBIs S2, 32+50=82 tareas, 276 pruebas al cierre S2, 322 tras Fase 7, 23 endpoints, 5 migraciones, 6 dependencias, 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones, burndown S1 [15,9,5,1,2,0], burndown real S2 [28,11,11,2,2,2,0], 8 secretos Secret Manager, PostgreSQL 17 en CI, Node 22 Alpine, región Cloud Run europe-southwest1, Neon Frankfurt, fechas PRs S2, cambio alcance P19, backlog S2 registrado 29/10)
+
+Qué está bien:
+- La compilación y las pruebas automáticas pasan (verificar.py y revisar_maquetacion.py en verde para reglas formales).
+- El constructor ha corregido la sintaxis de los diagramas de secuencia problemáticos y ha replanteado fig:modelo-datos, fig:pipeline y los dos burndown para que quepan a tamaño real sin escalado excesivo.
+- No quedan cadenas «La figura X muestra…» sueltas: las capturas se explican dentro de la prosa y se agrupan con subfigure.
+- El Hito 4 no aparece como pendiente.
+- El anexo de desarrollo tiene el esquema correcto y explica la recta del Sprint 2.
+- Se han contrastado más de 25 datos con las fuentes en pasos anteriores.
+
+Qué falla (bloquea TERMINADO según reglas de Javier):
+1. **fig:burndown-s1 (página 77)**: flechas/etiquetas cruzan el texto «pendientes» (regla 17: «ninguna línea ni flecha atraviesa una caja o un texto»). El pgfplots está poniendo la etiqueta del eje Y o una marca sobre la línea de la gráfica.
+2. **9 diagramas sin validar visualmente** (regla 19: «los diagramas se miran de verdad en el PDF»): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2. El script midió 13 sin fallos geométricos, pero Gemini devolvió 404 en estos 9; la regla 19 exige revisión a ojo (letras ≥ 7,5 pt, sin cruces, sin palabras partidas, codos en flechas).
+3. **Revisión visual final página a página del PDF** pendiente (regla 15).
+
+Correcciones del revisor: ninguna directa (el fallo del burndown requiere replantear el pgfplots, no un cambio de texto).
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Tareas para el constructor:**
+- Recompilar y ejecutar `comando_prueba` para confirmar que fig:burndown-s1 y fig:burndown-s2 ya no tienen flechas/etiquetas cruzando texto (regla 17).
+- Ejecutar `revisar_umlsd.py` sobre los 9 diagramas de secuencia pendientes (fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:sec-login, fig:sec-baja, fig:modelo-datos, fig:pipeline) y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+- Revisar visualmente cada uno de esos 9 diagramas en el PDF compilado: comprobar que las letras midan ≥ 7,5 pt, que no hay flechas atravesando cajas, que no hay palabras partidas con guion, que los codos en flechas separan bien las cajas. Replantear los que fallen (reducir participantes a ≤ 6, aumentar text width, usar codos |-/-|, adjustbox solo para encoger un poco).
+- Hacer revisión visual final del PDF página a página: (a) ninguna página con una sola imagen (regla 8), (b) ninguna figura repetida (regla 10), (c) flechas con $\rightarrow$ no `->` (regla 11), (d) todo citado con \ref, (e) no hay secciones de 1–2 líneas (regla 9), (f) no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` y confirmar que todo pasa (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-23 14:48 · 🧠 Lección propuesta para la memoria
+
+[[corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-23 14:48 · 🧠 Conocimiento guardado
+
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[como-agrupar-capturas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l]]

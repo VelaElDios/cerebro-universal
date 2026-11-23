@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T13:54:22+01:00",
+ "generado": "2026-11-23T14:48:48+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -198,6 +198,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/lecciones/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel.md"
+  },
+  {
+   "id": "leccion:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "tipo": "leccion",
+   "titulo": "Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica",
+   "temas": [
+    "latex",
+    "pgfplots",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l.md"
   },
   {
    "id": "leccion:diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber",
@@ -1673,7 +1688,9 @@
    "temas": [
     "fuentes",
     "memoria",
-    "verificacion"
+    "verificacion",
+    "metricas",
+    "trazabilidad"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4232,6 +4249,21 @@
    "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
   },
   {
+   "id": "receta:como-agrupar-capturas-con-subfigure",
+   "tipo": "receta",
+   "titulo": "Cómo agrupar capturas con subfigure",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure.md"
+  },
+  {
    "id": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
    "tipo": "receta",
    "titulo": "Cómo agrupar capturas relacionadas con subfigure",
@@ -4888,6 +4920,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto.md"
+  },
+  {
+   "id": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "tipo": "receta",
+   "titulo": "Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pgfplots"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l.md"
   },
   {
    "id": "receta:creacion-del-primer-administrador-mediante-variables-de-ento",
@@ -5949,7 +5996,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 171,
+   "peso": 174,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5970,7 +6017,7 @@
    "id": "tema:pgfplots",
    "tipo": "tema",
    "titulo": "pgfplots",
-   "peso": 8,
+   "peso": 10,
    "ruta": "memoria/temas/pgfplots.md"
   },
   {
@@ -6019,7 +6066,7 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
@@ -6040,14 +6087,14 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 16,
+   "peso": 17,
    "ruta": "memoria/temas/metricas.md"
   },
   {
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 18,
+   "peso": 19,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -6082,7 +6129,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 26,
+   "peso": 29,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -8228,6 +8275,26 @@
   {
    "de": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
    "a": "proyecto:plantilla-sus",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
   {
@@ -12143,6 +12210,16 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
    "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "tema:trazabilidad",
    "tipo": "trata"
   },
   {
@@ -20431,6 +20508,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-agrupar-capturas-con-subfigure",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
    "a": "tema:latex",
    "tipo": "trata"
@@ -22234,6 +22331,26 @@
    "de": "receta:convencion-de-ramas-y-prs-por-hito-fase-en-el-proyecto",
    "a": "receta:estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:creacion-del-primer-administrador-mediante-variables-de-ento",

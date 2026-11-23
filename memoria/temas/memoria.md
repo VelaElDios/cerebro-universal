@@ -98,4 +98,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[tikz]] · [[memoria-procesos]] · [[plantilla]] · [[scrum]] · [[sprints]] · [[redaccion]] · [[grada-colchonera]]
+[[tfg]] · [[latex]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[tikz]] · [[memoria-procesos]] · [[plantilla]] · [[scrum]] · [[trazabilidad]] · [[sprints]] · [[redaccion]]
