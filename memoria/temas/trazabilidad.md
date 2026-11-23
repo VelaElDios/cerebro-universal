@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "trazabilidad"
-notas: 19
+notas: 20
 ---
 # trazabilidad
 
@@ -21,6 +21,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto contrastadas con fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos|Cifras clave del proyecto contrastadas con fuentes (31 datos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos|Cifras clave del proyecto contrastadas con fuentes (38 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c|Cifras clave del proyecto La Grada Colchonera contrastadas con fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)]] · ⚠️ propuesto
@@ -40,4 +41,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 
 ## Temas relacionados
 
-[[metricas]] · [[grada-colchonera]] · [[saas]] · [[verificacion]] · [[scrum]] · [[memoria]] · [[sprint]] · [[donetonic]] · [[sprints]] · [[pbi]] · [[juego]] · [[tareas]]
+[[metricas]] · [[grada-colchonera]] · [[saas]] · [[verificacion]] · [[scrum]] · [[memoria]] · [[sprints]] · [[sprint]] · [[donetonic]] · [[requisitos]] · [[pbi]] · [[juego]]

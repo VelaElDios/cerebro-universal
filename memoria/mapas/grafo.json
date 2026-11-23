@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T18:06:34+01:00",
+ "generado": "2026-11-23T19:02:04+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1698,6 +1698,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos.md"
+  },
+  {
+   "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto contrastadas con fuentes (38 datos)",
+   "temas": [
+    "metricas",
+    "requisitos",
+    "sprints",
+    "trazabilidad"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos.md"
   },
   {
    "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
@@ -4747,6 +4763,22 @@
    "ruta": "memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi.md"
   },
   {
+   "id": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "tipo": "receta",
+   "titulo": "Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación",
+   "temas": [
+    "diagramas-secuencia",
+    "latex",
+    "maquetacion",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar.md"
+  },
+  {
    "id": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
    "tipo": "receta",
    "titulo": "Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py",
@@ -6014,7 +6046,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 175,
+   "peso": 176,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6105,14 +6137,14 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 17,
+   "peso": 18,
    "ruta": "memoria/temas/metricas.md"
   },
   {
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 19,
+   "peso": 20,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -6140,21 +6172,21 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 27,
+   "peso": 28,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 30,
+   "peso": 31,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
    "id": "tema:diagramas-secuencia",
    "tipo": "tema",
    "titulo": "diagramas-secuencia",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/diagramas-secuencia.md"
   },
   {
@@ -6679,7 +6711,7 @@
    "id": "tema:requisitos",
    "tipo": "tema",
    "titulo": "requisitos",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/requisitos.md"
   },
   {
@@ -6938,7 +6970,7 @@
    "id": "tema:sprints",
    "tipo": "tema",
    "titulo": "sprints",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/sprints.md"
   },
   {
@@ -12249,6 +12281,36 @@
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "tema:requisitos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
+   "a": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "tipo": "enlaza"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
@@ -21818,6 +21880,41 @@
   {
    "de": "receta:como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi",
    "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "tema:diagramas-secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
+   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
    "tipo": "enlaza"
   },
   {

@@ -15291,3 +15291,96 @@ Qué ha corregido el constructor en este paso:
 ## 2026-11-23 18:06 · 🧠 Conocimiento guardado
 
 [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]]
+
+## 2026-11-23 18:55 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Replanteo los tres diagramas de secuencia que fallan en revisar_maquetacion.py (fig:sec-registro, fig:sec-confirmacion, fig:sec-google) en chapters/04-descripcion.tex. Cada diagrama se rediseña con: máximo 4 participantes (ya cumplen), etiquetas limpias sin acentos ni caracteres especiales, flechas con codos usando la sintaxis correcta de pgf-umlsd (anidando call/mess para que vayan de caja en caja), mayor separación entre líneas de vida (node distance horizontal ≥ 2.5cm via \newinst[3]), text width suficiente en participantes, tipografía \footnotesize sin escalado agresivo, y envueltos en adjustbox con max totalheight=0.6\textheight. Esto debería resolver letras < 7.5pt y flechas cruzando texto.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ⚠️ Figuras: no pude revisar Figura 3.1 (fig:capas): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-flash-lite-latest is not found fo…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar revisar_umlsd.py sobre los 11 diagramas pendientes (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte. Luego compilar y revisar visualmente cada diagrama en el PDF para verificar letras ≥ 7.5pt, sin cruces, sin palabras partidas, codos en flechas. Finalmente ejecutar comando_prueba completo.
+
+## 2026-11-23 19:02 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación LuaLaTeX: OK (98 páginas, sin errores, solo warnings de fuentes y underfull hbox).
+- verificar.py: ✅ 35 figuras, 29 tablas, 18409 palabras en capítulos y anexos; estructura, citas, bibliografía, requisitos, PBIs, tareas, mínimos de palabras, Resumen/Abstract, números >20 en fuentes, márgenes, sin "??".
+- revisar_maquetacion.py: ❌ 3 diagramas con fallos medidos (reglas 16-18): fig:sec-registro (p.36, solapes "usuario"/"HMAC" y "usuario"/"firma"), fig:sec-confirmacion (p.37, letras 7.5 pt límite, diagrama encogido), fig:sec-google (p.40, letras 6.2 pt, flecha cruza "loginWithOAuth"). 11 diagramas pendientes de revisión visual (Gemini 404): fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2 (regla 19).
+- Prosa sin cadenas "La figura X muestra…": ✅ Capítulos 4 y 4b reescritos integrando capturas en párrafos con subfiguras (regla 13).
+- Hito 4 no aparece como pendiente: ✅ Verificado en capítulos 4, 5 y anexos.
+- Anexo desarrollo con dos sprints mismo esquema + explicación recta Sprint 2: ✅ a1-desarrollo.tex §Sprint 2 Retrospectiva.
+- Trazabilidad completa P1–P48, T1–T82: ✅ a4-trazabilidad.tex tabla longtable 82 filas.
+- Datos contrastados con fuentes (≥25): 
+  1. 19 PBIs Sprint 1 → sprint-1.md backlog; 
+  2. 32 tareas Sprint 1 → sprint-1.md trazabilidad; 
+  3. 29 PBIs Sprint 2 → sprint-2.md backlog; 
+  4. 50 tareas Sprint 2 → sprint-2.md trazabilidad; 
+  5. 82 tareas totales → suma; 
+  6. Fechas Sprint 1 29/09–27/10 → sprint-1.md; 
+  7. Fechas Sprint 2 23/10–29/10 → sprint-2.md; 
+  8. 276 pruebas cierre Sprint 2 → sprint-2.md métricas; 
+  9. 322 pruebas tras Fase 7 → sprint-2.md métricas; 
+  10. 23 endpoints API → arquitectura.md tabla API; 
+  11. 5 migraciones SQL → arquitectura.md modelo de datos; 
+  12. 6 dependencias producción → sprint-2.md métricas; 
+  13. 36 jugadores → juego.md sistemas; 
+  14. 2 entrenadores → juego.md sistemas; 
+  15. 29 armas → juego.md sistemas; 
+  16. 16 pasivas → juego.md sistemas; 
+  17. 29 combinaciones → juego.md sistemas; 
+  18. 6 ultras → juego.md sistemas; 
+  19. 16 equipos rivales → juego.md sistemas; 
+  20. 10 jefes → juego.md sistemas; 
+  21. 5 ambientes → juego.md sistemas; 
+  22. 26 selecciones → juego.md sistemas; 
+  23. 29 logros → juego.md tabla logros; 
+  24. 10 equipaciones → juego.md tabla logros; 
+  25. 8 secretos Secret Manager → procesos.md configuración; 
+  26. PostgreSQL 17 en CI → procesos.md CI; 
+  27. Node 22 Alpine → procesos.md Docker; 
+  28. Región europe-southwest1 → procesos.md Cloud Run; 
+  29. Neon Frankfurt → procesos.md BD; 
+  30. 29 HUs Sprint 2 → sprint-2.md historias; 
+  31. 50 PRs fusionados → sprint-2.md tabla PRs; 
+  32. Resumen ≥150 palabras → preambulo.tex; 
+  33. Abstract ≥120 palabras → preambulo.tex; 
+  34. Declaración autoría presente → preambulo.tex; 
+  35. Hito 4 no pendiente → capítulos 4,5,anexos; 
+  36. Trazabilidad completa → a4-trazabilidad.tex; 
+  37. Anexo desarrollo dos sprints mismo esquema → a1-desarrollo.tex; 
+  38. Explicación recta Sprint 2 → a1-desarrollo.tex retrospectiva.
+
+Qué está bien: La memoria compila y verificar.py pasa completamente. El constructor ha eliminado las cadenas "La figura X muestra…" sueltas en capítulos 4 y 4b, integrando capturas en prosa con subfiguras (cumple regla 13). El Hito 4 no aparece como pendiente. El anexo de desarrollo tiene el esquema correcto y explica la recta de las gráficas del Sprint 2. La trazabilidad está completa. Se han contrastado 38 datos con las fuentes.
+
+Qué falla (bloquea TERMINADO): 
+1. Tres diagramas de secuencia con fallos medidos por revisar_maquetacion.py (reglas 16-18): fig:sec-registro (solape de cajas/texto), fig:sec-confirmacion (letras 7.5 pt límite, escalado excesivo), fig:sec-google (letras 6.2 pt, flecha cruza etiqueta). Requieren replanteo: aumentar separación horizontal (node distance ≥ 2.5 cm → \newinst[4]), eliminar auto-llamadas que generan bucles que se cruzan, acortar etiquetas (sin acentos, sin paréntesis en \mess, usar \n), evitar adjustbox que encoge por debajo de 7.5 pt.
+2. Once diagramas pendientes de revisión visual (regla 19): fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2. Gemini 404; hay que mirarlos en el PDF compilado (letras ≥ 7.5 pt, sin cruces, sin palabras partidas, codos en flechas).
+3. Revisión visual final página a página pendiente (regla 15): comprobar regla 8 (ninguna página con una sola imagen), regla 10 (figuras repetidas), regla 11 (flechas con $\rightarrow$), regla 9 (secciones de 1–2 líneas), párrafos repetidos entre capítulos.
+
+Correcciones directas del revisor: tres bloques CAMBIAR para replantear los tres diagramas fallidos en chapters/04-descripcion.tex (eliminar adjustbox, aumentar spacing, limpiar etiquetas, sustituir auto-llamadas por participantes explícitos donde sea necesario).
+
+**Correcciones del revisor:** `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=») chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\begin{figure}[htbp]
+\centering
+\begin{adjustbox}{max width=») chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `revisar_umlsd.py` sobre los 11 diagramas pendientes (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+- Revisar visualmente cada uno de esos 11 diagramas en el PDF compilado: comprobar que las letras midan ≥ 7.5 pt, que no hay flechas atravesando cajas, que no hay palabras partidas con guion, que los codos en flechas separan bien las cajas. Replantear los que fallen (aumentar `node distance`, usar `\newinst[4]` o más, dividir en dos diagramas si >6 participantes, usar `pdflscape` como último recurso).
+- Hacer revisión visual final del PDF página a página (regla 15): (a) ninguna página con una sola imagen (regla 8), (b) ninguna figura repetida (regla 10), (c) flechas con `$\rightarrow$` no `->` (regla 11), (d) todo citado con `\ref`, (e) no hay secciones de 1–2 líneas (regla 9), (f) no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` y confirmar que todo pasa (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-23 19:02 · 🧠 Conocimiento guardado
+
+[[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]]
