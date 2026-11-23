@@ -110,14 +110,14 @@
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado.md": {
   "bien": 6,
   "mal": 0,
-  "ultimo": "2026-11-23",
-  "usos": 16
+  "ultimo": "2026-11-24",
+  "usos": 17
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
   "bien": 6,
   "mal": 0,
-  "ultimo": "2026-11-23",
-  "usos": 17
+  "ultimo": "2026-11-24",
+  "usos": 18
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -284,8 +284,8 @@
  "memoria/conocimiento/recetas/diagramas-de-secuencia-legibles-max-6-participantes-flechas.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-23",
-  "usos": 1
+  "ultimo": "2026-11-24",
+  "usos": 2
  },
  "memoria/conocimiento/recetas/escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra.md": {
   "bien": 0,
@@ -302,8 +302,8 @@
  "memoria/conocimiento/recetas/flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-23",
-  "usos": 1
+  "ultimo": "2026-11-24",
+  "usos": 2
  },
  "memoria/conocimiento/recetas/reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable.md": {
   "bien": 0,

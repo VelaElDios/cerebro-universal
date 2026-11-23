@@ -15507,3 +15507,57 @@ Correcciones directas del revisor: dos bloques CAMBIAR para (1) estrechar `fig:s
 ## 2026-11-23 23:53 · 🧠 Lección propuesta para la memoria
 
 [[como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-24 00:56 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los dos diagramas de secuencia que desbordan la página según `revisar_maquetacion.py`: `fig:sec-registro` (438 pt de ancho) y `fig:sec-login` (98 pt de ancho). La solución es replantear los diagramas sin `resizebox`/`adjustbox`, aumentando la separación horizontal entre participantes (`\newinst[4]` o más), acortando etiquetas (sin acentos, sin paréntesis en `\mess`, usando `\n` para saltos de línea) y declarando todos los participantes antes de usarlos.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 2 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para verificar que los dos diagramas ya no desbordan la página. Si persisten errores, ajustar más la separación (`\newinst[6]`) o acortar más las etiquetas. Luego abordar los otros diagramas pendientes: `fig:modelo-datos`, `fig:sec-confirmacion`, `fig:sec-google` y `fig:juego-arquitectura`.
+
+## 2026-11-24 00:57 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18409 palabras).
+- `revisar_maquetacion.py`: ❌ 2 errores críticos: (1) `fig:sec-registro` 581 pt más ancha que la página (04-descripcion.tex:361), (2) `fig:sec-login` 183 pt más ancha que la página (04-descripcion.tex:435). **El intento de corrección del constructor empeoró los diagramas** (antes eran 438 pt y 98 pt).
+- Diagramas con fallos medidos en PDF (reglas 16-18): `fig:modelo-datos` (p. 35): palabras partidas «elimina-», «Goo-»; `fig:sec-confirmacion` (p. 37): línea discontinua cruza caja «alt»; `fig:sec-login` (p. 38): flechas cruzan cajas de bloques alt; `fig:sec-google` (p. 40): línea discontinua cruza línea de vida de Sesión, etiqueta cruza caja; `fig:juego-arquitectura` (p. 53): referenciada pero no aparece en página.
+- Prosa profesional sin cadenas «La figura X muestra…» en caps. 4 y 4b (subfiguras agrupadas). Hito 4 no aparece como pendiente. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad completa P1–P48/T1–T82 en a4. Resumen/Abstract OK.
+- Contrastados 38 datos con fuentes (cifras, fechas, PBIs, tareas, PRs, métricas, capturas mínimas por carpeta).
+
+**Qué está bien:** La memoria compila, `verificar.py` pasa, la maquetación general cumple reglas, la prosa es profesional (sin listas de capturas), las imágenes son únicas con `\ref`, los anexos están completos, Resumen y Abstract correctos.
+
+**Qué falla (bloquea TERMINADO):**
+1. **`fig:sec-registro` y `fig:sec-login` desbordan la página** tras el intento de corrección. El constructor aumentó la separación (`\newinst[5]`) y eso ensanchó los diagramas. La solución es **reducir participantes (máx. 4-5), acortar etiquetas, usar `\newinst[3]` o `[4]`, y agrupar llamadas internas** (TokenSigner, Mailer dentro de Servicio).
+2. **`fig:modelo-datos`**: palabras partidas en cajas → aumentar `text width` o usar `\\`.
+3. **`fig:sec-confirmacion`**: línea discontinua cruza caja → separar cajas, usar codos (`|-`, `-|`).
+4. **`fig:sec-google`**: etiquetas ajustadas y líneas cruzadas → aumentar `node distance` (`\newinst[5]`+), acortar etiquetas (sin acentos, sin paréntesis en `\mess`, usar `\n`), evitar apilamiento vertical.
+5. **`fig:juego-arquitectura`**: referenciada pero no en página → mover figura antes de la referencia o añadir `\FloatBarrier`.
+6. Falta cita a `fig:sec-google` en el texto del flujo OAuth (solo citan subfiguras).
+
+**Correcciones directas del revisor:** Dos bloques CAMBIAR para replantear `fig:sec-registro` y `fig:sec-login` con 4 participantes, etiquetas cortas, separación `\newinst[3]`, y llamadas internas anidadas. Las otras 4 correcciones y la cita faltante quedan como tareas.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Estrechar `fig:modelo-datos` (04-descripcion.tex:191): aumentar `text width` de nodos (p.ej. 3.5cm → 4.2cm) o usar `\\` manual en «elimina-» y «Goo-» para evitar particiones silábicas.
+- Replantear `fig:sec-confirmacion` (04-descripcion.tex:373): separar cajas verticalmente, usar codos (`|-`, `-|`) para que la línea discontinua de redirección no cruce la caja «alt».
+- Replantear `fig:sec-google` (04-descripcion.tex:449): aumentar `node distance` con `\newinst[5]` o más, acortar etiquetas (sin acentos, sin paréntesis en `\mess`, saltos de línea con `\n`), evitar apilamiento vertical de textos a la izquierda.
+- Fijar colocación de `fig:juego-arquitectura` (04b-juego.tex:204): mover la figura justo antes de la frase «Esa división es la que se dibuja en la Figura~\ref{fig:juego-arquitectura}» o añadir `\FloatBarrier` antes de la referencia.
+- Añadir cita a `fig:sec-google` en el texto del flujo OAuth (04-descripcion.tex, sección 4.5): «El flujo completo, con sus dos subfiguras, se resume en la Figura~\ref{fig:sec-google}» (ya existe) y asegurarse de que `\ref{fig:sec-google}` aparece en el párrafo explicativo.
+- Ejecutar `revisar_umlsd.py` sobre los 11 diagramas pendientes (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte.
+- Revisión visual de los 11 diagramas en PDF compilado (letras ≥ 7,5 pt, sin cruces, sin palabras partidas, codos correctos).
+- Revisión visual final del PDF página a página (regla 15): ninguna página con una sola imagen, ninguna figura repetida, flechas con `$\rightarrow$`, todo citado con `\ref`, no hay secciones de 1–2 líneas, no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` hasta verde total.
+
+## 2026-11-24 00:57 · 🧠 Conocimiento guardado
+
+[[como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l]] · [[cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te]] · [[como-fijar-colocacion-de-figura-referenciada-pero-no-apareci]]

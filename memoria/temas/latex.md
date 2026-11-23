@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 179
+notas: 182
 ---
 # latex
 
@@ -51,7 +51,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-tablas-anchas-con-longtable|Cómo evitar overfull hbox en tablas anchas con longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier|Cómo evitar páginas con una sola imagen (Regla 8 de Javier)]]
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l|Cómo evitar que diagramas de secuencia pgf-umlsd desborden la página]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-exportar-diagramas-mermaid-para-la-memoria-latex|Cómo exportar diagramas Mermaid para la memoria LaTeX]]
+- 🧪 [[memoria/conocimiento/recetas/como-fijar-colocacion-de-figura-referenciada-pero-no-apareci|Cómo fijar colocación de figura referenciada pero no aparecida en página]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg|Cómo mapear este documento a los capítulos de la memoria TFG]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar|Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación]] · ⚠️ propuesto
@@ -108,6 +110,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-autores-corporativos-en-doble-llave|Bibliografía BibTeX con autores corporativos en doble llave y year obligatorio]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s|Cadenas "La figura X muestra..." prohibidas — prosa integrada con subfigure]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te|Cita obligatoria a cada figura (incluidas subfiguras) en el texto]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error|Diagramas de secuencia con pgf-umlsd: sintaxis válida y errores comunes]] · ⚠️ propuesto
@@ -209,4 +212,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[maquetacion]] · [[pgf-umlsd]] · [[figuras]] · [[verificacion]] · [[memoria-procesos]] · [[diagramas]] · [[lua]] · [[sus]] · [[usabilidad]]
+[[tfg]] · [[memoria]] · [[maquetacion]] · [[tikz]] · [[pgf-umlsd]] · [[figuras]] · [[verificacion]] · [[memoria-procesos]] · [[diagramas]] · [[lua]] · [[sus]] · [[usabilidad]]

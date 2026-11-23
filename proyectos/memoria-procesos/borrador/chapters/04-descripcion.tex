@@ -329,16 +329,14 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
 \centering
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[4]{fe}{Frontend}
-  \newinst[4]{api}{API}
-  \newinst[4]{srv}{Servicio}
-  \newinst[4]{tk}{TokenSigner}
-  \newinst[4]{ml}{Mailer}
-  \begin{call}{u}{email y clave}{fe}{ok}
+  \newinst[3]{fe}{Frontend}
+  \newinst[3]{api}{API}
+  \newinst[3]{srv}{Servicio}
+  \begin{call}{u}{email, clave}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST register}{api}{201 o 409}
+  \begin{call}{fe}{POST register}{api}{201/409}
     \begin{call}{api}{register}{srv}{usuario}
-      \begin{call}{srv}{busca email}{srv}{fila o null}
+      \begin{call}{srv}{busca email}{srv}{fila/null}
       \end{call}
       \begin{sdblock}{alt}{existe}
         \mess{srv}{ConflictError}{api}
@@ -349,9 +347,9 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
         \end{call}
         \begin{call}{srv}{crea usuario}{srv}{usuario}
         \end{call}
-        \begin{call}{srv}{firma token}{tk}{token}
+        \begin{call}{srv}{firma token}{srv}{token}
         \end{call}
-        \begin{call}{srv}{envia correo}{ml}{enviado}
+        \begin{call}{srv}{envia correo}{srv}{enviado}
         \end{call}
         \mess{api}{201}{fe}
       \end{sdblock}
@@ -409,13 +407,13 @@ El inicio de sesión local resuelve tres situaciones distintas con una sola ruta
 \centering
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[4]{fe}{Frontend}
-  \newinst[4]{api}{API}
-  \newinst[4]{srv}{Servicio}
-  \begin{call}{u}{email y clave}{fe}{ok}
+  \newinst[3]{fe}{Frontend}
+  \newinst[3]{api}{API}
+  \newinst[3]{srv}{Servicio}
+  \begin{call}{u}{email, clave}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST /api/auth/login}{api}{200 / 401 / 403}
-    \begin{call}{api}{authenticate}{srv}{usuario / error}
+  \begin{call}{fe}{POST login}{api}{200/401/403}
+    \begin{call}{api}{authenticate}{srv}{usuario/error}
     \end{call}
   \end{call}
   \begin{sdblock}{alt}{credenciales invalidas}
@@ -429,8 +427,8 @@ El inicio de sesión local resuelve tres situaciones distintas con una sola ruta
   \end{sdblock}
   \begin{sdblock}{alt}{correcto}
     \mess{srv}{usuario}{api}
-    \mess{api}{200 + cookie}{fe}
-    \mess{fe}{redirige a jugar}{u}
+    \mess{api}{200 cookie}{fe}
+    \mess{fe}{redirige jugar}{u}
   \end{sdblock}
 \end{sequencediagram}
 \caption{Inicio de sesión local.}

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "placeins"
-notas: 1
+notas: 2
 ---
 # placeins
 
@@ -9,8 +9,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «placeins» (este archivo 
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/como-fijar-colocacion-de-figura-referenciada-pero-no-apareci|Cómo fijar colocación de figura referenciada pero no aparecida en página]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[bibliografia]] · [[figuras]] · [[floatbarrier]] · [[latex]]
+[[floatbarrier]] · [[latex]] · [[flotantes]] · [[bibliografia]] · [[figuras]]

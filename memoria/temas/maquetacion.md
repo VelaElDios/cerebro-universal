@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 31
+notas: 32
 ---
 # maquetacion
 
@@ -32,6 +32,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te|Cita obligatoria a cada figura (incluidas subfiguras) en el texto]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto|Imágenes repetidas: una sola aparición y \ref en el resto]]
 - ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final: usar \\* en las últimas 2-3 filas antes de \bottomrule (regla 7 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]

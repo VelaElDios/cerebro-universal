@@ -508,5 +508,54 @@
   "problemas": [
    "No existe la Figura 4.7 en la página, a pesar de que el texto hace referencia a ella ('Esa división es la que se dibuja en la Figura 4.7')."
   ]
+ },
+ "6a0569f03ab406f3d6b4feb2eba70d0a": {
+  "ok": false,
+  "problemas": [
+   "La línea de vida vertical del Frontend pasa exactamente por encima de la etiqueta 'alt' y atraviesa el recuadro del operador alt de credenciales inválidas."
+  ]
+ },
+ "02d780845453c66bd76e9b778bea731c": {
+  "ok": false,
+  "problemas": [
+   "En la sección (b) del diagrama Figura 3.6, la línea discontinua de 'email verificado' proveniente de Google cruza y atraviesa la línea de vida y una sección de la caja de Sesion.",
+   "En la sección (b) del diagrama Figura 3.6, la etiqueta 'loginWithOAuth' cruza por encima de la línea vertical de Sesion."
+  ]
+ },
+ "46d834849ee90d7ad7abb7799bca679b": {
+  "ok": true
+ },
+ "2398bddea408032bdd120bd1b0b3dcab": {
+  "ok": false,
+  "problemas": [
+   "Las líneas de separación del bloque 'alt/else' atraviesan las líneas de vida verticales del Frontend y de la API.",
+   "El texto 'exist' o 'existe' en la etiqueta del bloque alt interseca parcialmente con las líneas divisorias.",
+   "Varias flechas horizontales que representan las respuestas de la API cruzan por encima de las líneas de vida del Frontend y otras verticales del diagrama."
+  ]
+ },
+ "fb76ac8322b43b2961e38e9c7df740da": {
+  "ok": false,
+  "problemas": [
+   "En la Figura 3.4, la línea discontinua de redirección desde la API hacia el Usuario cruza por encima del rectángulo de la caja vertical de la API o se solapa de manera poco clara en su origen."
+  ]
+ },
+ "d9e7410b3d8f179e026b1e93d7e65fbf": {
+  "ok": false,
+  "problemas": [
+   "Figura 3.5: Las flechas y líneas que conectan el API con el Frontend y Usuario atraviesan o se cruzan con varias cajas de los bloques alt ('credenciales invalidas', 'cuenta pendiente', 'correcto'), dificultando la correcta lectura de las etiquetas y la claridad visual del diagrama."
+  ]
+ },
+ "257aa479aacf72d4074b33f928054a7e": {
+  "ok": false,
+  "problemas": [
+   "La flecha punteada de respuesta «ok» desde Frontend hacia Usuario atraviesa horizontalmente la línea de vida y el borde superior de la caja de activación larga de Usuario.",
+   "La flecha «POST register» desde Frontend llega cortando y superponiendo la línea de vida vertical de API de forma poco limpia.",
+   "Dentro del bloque «alt existe», la flecha «ConflictError» cruza por encima de la línea de vida central del bloque antes de llegar a la API.",
+   "Las etiquetas de los procesos internos de Servicio (como «busca email», «hash», «crea usuario», «firma token», «envia correo») están muy juntas y amontonadas verticalmente cerca de los bordes de las cajas de llamada.",
+   "El bloque «else nuevo» contiene múltiples operaciones anidadas y flechas de retorno que colapsan visualmente el espacio derecho del diagrama."
+  ]
+ },
+ "e71ec75c3c3659481bf8cb4f25c1b593": {
+  "ok": true
  }
 }

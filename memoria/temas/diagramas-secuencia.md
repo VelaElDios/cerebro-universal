@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "diagramas-secuencia"
-notas: 6
+notas: 7
 ---
 # diagramas-secuencia
 
@@ -10,6 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas-secuencia» (es
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l|Cómo evitar que diagramas de secuencia pgf-umlsd desborden la página]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar|Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 

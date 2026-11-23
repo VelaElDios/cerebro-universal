@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "floatbarrier"
-notas: 1
+notas: 2
 ---
 # floatbarrier
 
@@ -9,8 +9,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «floatbarrier» (este arch
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/como-fijar-colocacion-de-figura-referenciada-pero-no-apareci|Cómo fijar colocación de figura referenciada pero no aparecida en página]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[bibliografia]] · [[figuras]] · [[latex]] · [[placeins]]
+[[latex]] · [[placeins]] · [[flotantes]] · [[bibliografia]] · [[figuras]]

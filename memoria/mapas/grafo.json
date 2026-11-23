@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T23:53:54+01:00",
+ "generado": "2026-11-24T00:57:50+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2934,6 +2934,21 @@
    "ruta": "memoria/conocimiento/decisiones/cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in.md"
   },
   {
+   "id": "decision:cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te",
+   "tipo": "decision",
+   "titulo": "Cita obligatoria a cada figura (incluidas subfiguras) en el texto",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "referencias-cruzadas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te.md"
+  },
+  {
    "id": "decision:comportamiento-de-cuentas-segun-metodo-de-registro-y-estado",
    "tipo": "decision",
    "titulo": "Comportamiento de cuentas según método de registro y estado previo",
@@ -4646,6 +4661,21 @@
    "ruta": "memoria/conocimiento/recetas/como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier.md"
   },
   {
+   "id": "receta:como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l",
+   "tipo": "receta",
+   "titulo": "Cómo evitar que diagramas de secuencia pgf-umlsd desborden la página",
+   "temas": [
+    "diagramas-secuencia",
+    "latex",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l.md"
+  },
+  {
    "id": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
    "tipo": "receta",
    "titulo": "Cómo exportar diagramas Mermaid para la memoria LaTeX",
@@ -4662,6 +4692,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-exportar-diagramas-mermaid-para-la-memoria-latex.md"
+  },
+  {
+   "id": "receta:como-fijar-colocacion-de-figura-referenciada-pero-no-apareci",
+   "tipo": "receta",
+   "titulo": "Cómo fijar colocación de figura referenciada pero no aparecida en página",
+   "temas": [
+    "floatbarrier",
+    "flotantes",
+    "latex",
+    "placeins"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-fijar-colocacion-de-figura-referenciada-pero-no-apareci.md"
   },
   {
    "id": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
@@ -6068,7 +6114,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 179,
+   "peso": 182,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6194,21 +6240,21 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 30,
+   "peso": 31,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 31,
+   "peso": 32,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
    "id": "tema:diagramas-secuencia",
    "tipo": "tema",
    "titulo": "diagramas-secuencia",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/diagramas-secuencia.md"
   },
   {
@@ -7332,6 +7378,13 @@
    "ruta": "memoria/temas/introduccion.md"
   },
   {
+   "id": "tema:referencias-cruzadas",
+   "tipo": "tema",
+   "titulo": "referencias-cruzadas",
+   "peso": 1,
+   "ruta": "memoria/temas/referencias-cruzadas.md"
+  },
+  {
    "id": "tema:base-de-datos",
    "tipo": "tema",
    "titulo": "base-de-datos",
@@ -7752,6 +7805,27 @@
    "ruta": "memoria/temas/mermaid.md"
   },
   {
+   "id": "tema:floatbarrier",
+   "tipo": "tema",
+   "titulo": "floatbarrier",
+   "peso": 2,
+   "ruta": "memoria/temas/floatbarrier.md"
+  },
+  {
+   "id": "tema:flotantes",
+   "tipo": "tema",
+   "titulo": "flotantes",
+   "peso": 1,
+   "ruta": "memoria/temas/flotantes.md"
+  },
+  {
+   "id": "tema:placeins",
+   "tipo": "tema",
+   "titulo": "placeins",
+   "peso": 2,
+   "ruta": "memoria/temas/placeins.md"
+  },
+  {
    "id": "tema:figura",
    "tipo": "tema",
    "titulo": "figura",
@@ -7904,20 +7978,6 @@
    "titulo": "json",
    "peso": 1,
    "ruta": "memoria/temas/json.md"
-  },
-  {
-   "id": "tema:floatbarrier",
-   "tipo": "tema",
-   "titulo": "floatbarrier",
-   "peso": 1,
-   "ruta": "memoria/temas/floatbarrier.md"
-  },
-  {
-   "id": "tema:placeins",
-   "tipo": "tema",
-   "titulo": "placeins",
-   "peso": 1,
-   "ruta": "memoria/temas/placeins.md"
   },
   {
    "id": "tema:registro",
@@ -16480,6 +16540,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te",
+   "a": "tema:referencias-cruzadas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:comportamiento-de-cuentas-segun-metodo-de-registro-y-estado",
    "a": "tema:correo",
    "tipo": "trata"
@@ -22210,6 +22290,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l",
+   "a": "tema:diagramas-secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -22268,6 +22368,31 @@
    "de": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
    "a": "decision:la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-fijar-colocacion-de-figura-referenciada-pero-no-apareci",
+   "a": "tema:floatbarrier",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-fijar-colocacion-de-figura-referenciada-pero-no-apareci",
+   "a": "tema:flotantes",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-fijar-colocacion-de-figura-referenciada-pero-no-apareci",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-fijar-colocacion-de-figura-referenciada-pero-no-apareci",
+   "a": "tema:placeins",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-fijar-colocacion-de-figura-referenciada-pero-no-apareci",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-manejar-fuentes-faltantes-en-verificacion-automatica-de",
