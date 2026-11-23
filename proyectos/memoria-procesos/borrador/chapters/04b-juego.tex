@@ -9,7 +9,7 @@
 \section{Cómo se juega (manual de usuario)}
 \label{sec:juego-manual}
 
-Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \texttt{\#/jugar}. En su primera visita debe elegir un \textbf{mote} (3 a 16 caracteres, único) y una \textbf{cara} para su avatar; a partir de entonces, el menú muestra a la izquierda su ficha con el mote, el avatar y sus mejores tiempos, y a la derecha las opciones principales: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes. El menú principal y el vestuario se muestran en la Figura~\ref{fig:juego-menu-vestuario} (subfiguras~\ref{fig:juego-menu} y~\ref{fig:juego-vestuario}); en el vestuario el jugador puede filtrar por posición, ver la ficha de cada futbolista (estadísticas, habilidades y equipaciones) y seleccionar su personaje y equipación.
+Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \texttt{\#/jugar}. En su primera visita debe elegir un \textbf{mote} (3 a 16 caracteres, único) y una \textbf{cara} para su avatar; a partir de entonces, el menú muestra a la izquierda su ficha con el mote, el avatar y sus mejores tiempos, y a la derecha las opciones principales: Jugar, Vestuario, Entrenamiento, Contratar, Logros, Combinaciones, Dirección, Ranking y Ajustes. El vestuario, al que se llega desde el menú, permite filtrar por posición, ver la ficha de cada futbolista (estadísticas, habilidades y equipaciones) y seleccionar el personaje y la equipación con los que se entrará a la partida (Figura~\ref{fig:juego-menu-vestuario}, subfiguras~\ref{fig:juego-menu} y~\ref{fig:juego-vestuario}).
 
 \begin{figure}[htbp]
 \centering
@@ -30,9 +30,9 @@ Con sesión iniciada, el usuario accede al menú del juego mediante la ruta \tex
 \label{fig:juego-menu-vestuario}
 \end{figure}
 
-Los controles son flexibles: en teclado se usan WASD o flechas para moverse, \texttt{Espacio}/\texttt{E} para la ulti, \texttt{Esc}/\texttt{P} para pausar, \texttt{F} para pantalla completa y \texttt{1}--\texttt{3} para elegir mejora al subir de nivel; en móvil aparece un joystick táctil flotante al arrastrar. Los ajustes de volumen, gráficos, cámara y controles se guardan en \texttt{localStorage}.
+Los controles son flexibles: en teclado se usan WASD o flechas para moverse, \texttt{Espacio}/\texttt{E} para la ulti, \texttt{Esc}/\texttt{P} para pausar, \texttt{F} para pantalla completa y \texttt{1}--\texttt{3} para elegir mejora al subir de nivel; en móvil aparece un joystick táctil flotante al arrastrar. Los ajustes de volumen, efectos, números de daño, zoom y joystick se guardan en el navegador, de modo que el jugador no tiene que reconfigurarlos en cada partida.
 
-Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La Figura~\ref{fig:juego-partida-mejora} agrupa una partida en curso (subfigura~\ref{fig:juego-partida}) con el mundo procedural, rivales, armas automáticas y HUD, y la pantalla de subida de nivel (subfigura~\ref{fig:juego-mejora}) donde se elige una de tres mejoras.
+Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una oleada nueva y cada cuatro oleadas (la primera a 1:30) aparece un jefe. Los rivales sueltan experiencia; al subir de nivel se elige una de tres mejoras (las que completan una combinación aparecen marcadas con $\bigstar$). La partida en curso muestra el mundo procedural, los rivales, las armas que atacan solas y el HUD con el estado del jugador; al subir de nivel, la pantalla de mejora ofrece las tres opciones (Figura~\ref{fig:juego-partida-mejora}, subfiguras~\ref{fig:juego-partida} y~\ref{fig:juego-mejora}).
 
 \begin{figure}[htbp]
 \centering
@@ -53,7 +53,7 @@ Al pulsar «Jugar» comienza una partida infinita: cada 30 segundos surge una ol
 \label{fig:juego-partida-mejora}
 \end{figure}
 
-Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. El jefe Vinicius Jr. con su barra de vida (subfigura~\ref{fig:juego-jefe}) y el ambiente de la Final de la Copa del Rey (subfigura~\ref{fig:juego-final-copa}), que se activa a partir del minuto 5, se ven en la Figura~\ref{fig:juego-jefe-ambiente}. Cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
+Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el segundo, furia si se tarda en vencerle y una jugada estrella en la fase 3. La barra de vida del jefe aparece sobre el terreno, y a partir del minuto 5 el ambiente cambia a la Final de la Copa del Rey, con su luz y su afición propias (Figura~\ref{fig:juego-jefe-ambiente}, subfiguras~\ref{fig:juego-jefe} y~\ref{fig:juego-final-copa}). Cada 5 minutos el ambiente cambia (pretemporada → Copa del Rey → Liga → Champions → Mundial), modificando la luz, el césped, la afición, los carteles y la fuerza de los rivales (en el Mundial todos llevan la camiseta de su selección).
 
 \begin{figure}[htbp]
 \centering
@@ -74,7 +74,7 @@ Cada jefe tiene tres fases (66\% y 33\% de vida), escolta de élites desde el se
 \label{fig:juego-jefe-ambiente}
 \end{figure}
 
-Cuando el jugador cae, la aplicación muestra la pantalla de fin con las estadísticas de la partida (tiempo, ambiente, bajas, jefes, daño por habilidad, golpe más fuerte, daño recibido, vida recuperada y logros nuevos) y las recompensas del club. La Figura~\ref{fig:juego-fin-pausa} agrupa la pantalla de fin de partida (subfigura~\ref{fig:juego-fin}), que muestra el tiempo, estadísticas, daño por habilidad y logros nuevos, y el menú de pausa (subfigura~\ref{fig:juego-pausa}), accesible con \texttt{Esc} o \texttt{P} para ajustar sonido, gráficos y controles sin salir de la partida.
+Cuando el jugador cae, la aplicación muestra la pantalla de fin con las estadísticas de la partida (tiempo, ambiente, bajas, jefes, daño por habilidad, golpe más fuerte, daño recibido, vida recuperada y logros nuevos) y las recompensas del club. Durante la partida, el menú de pausa, al que se llega con \texttt{Esc} o \texttt{P}, permite ajustar sonido, gráficos y controles sin salir de ella (Figura~\ref{fig:juego-fin-pausa}, subfiguras~\ref{fig:juego-fin} y~\ref{fig:juego-pausa}).
 
 \begin{figure}[htbp]
 \centering
@@ -189,7 +189,7 @@ Dificultad & Crecimiento continuo de vida, daño y velocidad; tramo final más d
 Movimiento & Inercia, \textit{ritmo} al correr (más daño y experiencia), castigo por quedarse quieto, premios por el campo & \path{FISICA}, \path{JUGADOR} \\
 Mundo & Procedural e infinito por semilla, con ruidos suaves: distritos (ciudad, entrenamiento, parque, prado), estadios con gradas, plazas y tiendas, mesetas con escaleras, barro, lluvia y caminos. Colisión por los pies (vista 3/4) & \path{TERRENO}, \path{terreno.js} \\
 Club & Plantilla inicial de 4 comunes (uno por posición); una ficha de contrato por cada 3 jefes de la cuenta; puntos de entrenamiento por jefes (1 cada 3) y por bajas; estadísticas Vida, Defensa, Disparo y Suerte (máx. 20) & \path{club.js} \\
-Logros & 29 con dato curioso de la historia del Atleti (tabla 9.6); 10 equipaciones desbloqueables & \path{logros.js} \\
+Logros & 29 con dato curioso de la historia del Atleti (Tabla~\ref{tab:juego-logros}); 10 equipaciones desbloqueables & \path{logros.js} \\
 Sonido & Efectos, música chiptune original (canción por ambiente que se anima con el tiempo y con los jefes, fanfarria por competición) y la grada (murmullo y cánticos según la distancia a las gradas) & \path{audio.js}, \path{musica.js} \\*
 \bottomrule
 \end{longtable}
@@ -224,7 +224,7 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 \label{fig:juego-arquitectura}
 \end{figure}
 
-La Figura~\ref{fig:juego-arquitectura} ilustra la separación en tres bloques: la simulación determinista (sin DOM ni audio) emite eventos que la presentación traduce a gráficos y sonido, y el servidor valida las partidas usando las mismas reglas (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) que el cliente.
+La separación en tres bloques es la que se ve en la Figura~\ref{fig:juego-arquitectura}: la simulación determinista (sin DOM ni audio) emite eventos que la presentación traduce a gráficos y sonido, y el servidor valida las partidas usando las mismas reglas (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) que el cliente.
 
 \subsection{Simulación determinista y eventos}
 \path{mundo.js} avanza con paso fijo de 1/60 s y generador aleatorio con semilla. Si el navegador va lento, se hacen varios pasos por fotograma (con tope); el resultado no depende de los FPS y las pruebas son reproducibles.
@@ -401,6 +401,6 @@ Rediseño & Nueva interfaz (tokens, tipografía, modo oscuro rojiblanco), menú 
 4 & Mundo procedural natural, 5 ambientes por finales, mote y avatar & Mapa repetitivo; correo visible en el ranking \\
 5 & Rarezas por historia rojiblanca, habilidades niveladas, combinaciones a la vista, animación de la firma, colisiones exactas & Regate demasiado fuerte; esconderse detrás de los tejados \\
 6 & 29 logros con historia y 10 equipaciones, estadísticas de fin, música chiptune y grada, muñecos con más detalle, jefes con escolta, furia y jugada estrella & Falta de objetivos a largo plazo; sonido pobre; jefes fáciles \\
-7 & Muñecos chibi de 32x32 (sin piernas) con rasgos propios, mapa con mucho más detalle y luz por ambiente, menú rediseñado (paneles translúcidos, centro despejado y botón de entrada), 5 habilidades (carambola, presión alta, la ola, fuera de juego y ruleta), 2 pasivas (visión de juego y partidos grandes), 5 combinaciones y mejores efectos de todas las habilidades & Muñecos casi iguales entre sí; mapa plano; menú estático; efectos poco legibles \\*
+7 & Muñecos chibi de 32$\times$32 (sin piernas) con rasgos propios, mapa con mucho más detalle y luz por ambiente, menú rediseñado (paneles translúcidos, centro despejado y botón de entrada), 5 habilidades (carambola, presión alta, la ola, fuera de juego y ruleta), 2 pasivas (visión de juego y partidos grandes), 5 combinaciones y mejores efectos de todas las habilidades & Muñecos casi iguales entre sí; mapa plano; menú estático; efectos poco legibles \\*
 \bottomrule
 \end{longtable}

@@ -15032,3 +15032,103 @@ Correcciones del revisor: ninguna directa (el fallo del burndown requiere replan
 ## 2026-11-23 14:48 · 🧠 Conocimiento guardado
 
 [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[como-agrupar-capturas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l]]
+
+## 2026-11-23 15:26 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+He reescrito la prosa de los cinco apartados de flujos con diagramas de secuencia del capítulo 4 y la del manual del juego del capítulo 4b: el párrafo que introducía la figura y el que la repetía después se han fusionado en una sola explicación, con la cita de la figura integrada dentro de la frase en lugar de empezar la frase con «La Figura X…». Además, he corregido dos detalles que no estaban en las fuentes (los ajustes se guardan en el navegador, no en `localStorage`) y una referencia interna que no existía en la memoria («tabla 9.6», que es la tabla de logros de este documento). Así se elimina la prosa redundante y se cumple mejor la regla 13 de Javier: explicar en prosa y citar las figuras dentro de la explicación.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ - Regla 8: la página 46 del PDF tiene solo una imagen (39 palabras). Hazla más pequeña o júntala con texto u otra figura. Empieza así: «(a) Cuenta con…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que los dos capítulos siguen compilando y que `verificar.py` mantiene el número de figuras, tablas y citas (35 figuras, 29 tablas) y los mínimos de palabras. Después, seguir con la revisión visual de los diagramas de secuencia aún sin validar a ojo (fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar) y con la revisión final del PDF página a página (regla 15): páginas con una sola imagen, figuras repetidas, flechas con `->`, secciones de una o dos líneas y párrafos repetidos.
+
+## 2026-11-23 15:30 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (98 páginas, LuaLaTeX, exit code 0)
+- verificar.py: OK (35 figuras, 29 tablas, 18208 palabras en capítulos y anexos)
+- revisar_maquetacion.py: FALLA Regla 8 — página 46 del PDF tiene solo una imagen (39 palabras). La figura 3.15 (Hito 4, 4 subfiguras) queda sola en la página sin texto suficiente acompañante.
+- revisar_maquetacion.py: 9 diagramas con aviso Gemini 404 (requieren revisión visual obligatoria por regla 19): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2.
+- revisar_maquetacion.py: 3 diagramas con fallos medidos en PDF (reglas 16-18): fig:sec-registro (letras 7.0 pt, flecha cruza «enviado»), fig:sec-confirmacion (letras 7.5 pt límite), fig:sec-google (letras 6.2 pt, flecha cruza «verificado»).
+- Cadenas «La figura X muestra…» sueltas: eliminadas en 04-descripcion.tex y 04b-juego.tex (comprobado: ahora usan prosa con citas integradas y subfiguras).
+- Hito 4 como pendiente: ningún capítulo lo menciona (completado 23/10/2026 según sprint-1.md).
+- Anexo desarrollo: dos sprints con mismo esquema; explica recta del Sprint 2 (backlog registrado al cerrar el sprint 29/10, sprint-2.md).
+- Trazabilidad completa P1–P48 / T1–T82 en a4-trazabilidad.tex (contrastada con sprint-1.md y sprint-2.md).
+- Resumen (≥150 palabras) y Abstract (≥120 palabras) presentes con palabras clave/keywords (preambulo.tex).
+- Bibliografía BibTeX apalike con autores corporativos en doble llave y year en todas las entradas (bib/ref.bib).
+- Datos contrastados con fuentes (muestra de 30+):
+  * 19 PBIs Sprint 1 → sprint-1.md tabla backlog
+  * 29 PBIs Sprint 2 → sprint-2.md tabla backlog
+  * 32+50=82 tareas → sprint-1.md (32) + sprint-2.md (50)
+  * 276 pruebas al cierre Sprint 2 → sprint-2.md métricas / procesos.md tabla pruebas
+  * 322 pruebas tras Fase 7 → log.md 2026-11-03
+  * 23 endpoints API → arquitectura.md tabla API
+  * 5 migraciones → arquitectura.md migraciones 001-005
+  * 6 dependencias producción → sprint-2.md métricas
+  * 36 jugadores, 2 entrenadores → juego.md sistemas
+  * 29 armas, 16 pasivas, 29 combinaciones, 6 ultras → juego.md sistemas + log.md Fase 7
+  * 16 equipos, 10 jefes, 5 ambientes, 26 selecciones → juego.md sistemas
+  * 29 logros, 10 equipaciones → juego.md logros
+  * Burndown S1 [15,9,5,1,2,0] → sprint-1.md evolución
+  * Burndown real S2 [28,11,11,2,2,2,0] → sprint-2.md evolución
+  * 8 secretos Secret Manager → procesos.md configuración
+  * PostgreSQL 17 en CI → procesos.md workflow CI
+  * Node 22 Alpine → procesos.md Docker
+  * Región Cloud Run europe-southwest1 → procesos.md Cloud Run
+  * Neon Frankfurt → procesos.md base de datos
+  * Fechas PRs S2 → sprint-2.md tabla PRs
+  * Cambio alcance P19 → decisiones.md D-16 / sprint-1.md
+  * Backlog S2 registrado 29/10 → decisiones.md D-19 / sprint-2.md
+  * 13 pruebas domainPolicy → requisitos.md RF-13 / procesos.md
+  * 29 historias usuario S2 → sprint-2.md historias (29 items)
+  * 48 PBIs totales → sprint-1.md (19) + sprint-2.md (29)
+  * 50 PRs fusionados → sprint-2.md métricas
+  * 14.800 líneas juego → sprint-2.md métricas
+  * 5.050 líneas pruebas → sprint-2.md métricas
+- No comprobado: revisión visual final página a página del PDF (regla 15); revisión visual de los 9 diagramas con Gemini 404 (regla 19); corrección de los 3 diagramas con fallos medidos.
+
+Qué está bien:
+- La compilación y verificar.py pasan completamente.
+- El constructor ha eliminado las cadenas «La figura X muestra…» sueltas en los dos capítulos principales, integrando las capturas en prosa con subfiguras (cumple regla 13 de Javier).
+- El Hito 4 no aparece como pendiente en ningún capítulo.
+- El anexo de desarrollo tiene el esquema correcto (dos sprints, misma estructura) y explica la recta de las gráficas del Sprint 2.
+- La trazabilidad está completa (P1–P48, T1–T82) en a4-trazabilidad.tex.
+- Se han contrastado más de 30 datos con las fuentes en esta revisión.
+
+Qué falla (bloquea TERMINADO):
+1. **Regla 8 (página 46)**: La figura 3.15 (Hito 4, 4 subfiguras verticales) ocupa una página casi entera con solo 39 palabras de texto. Violación clara: «Ninguna página con una sola imagen». Hay que reducir la figura (height máx 0.42\textheight ya se usa, pero 4 subfiguras apiladas en dos filas de dos columnas cada una con height=0.15\textheight suman ~0.3\textheight + captions) o añadir texto antes/después para que la página no quede con una sola figura.
+2. **3 diagramas de secuencia con fallos medidos** (reglas 16-18): fig:sec-registro (letras 7.0 pt < 7.5, flecha cruza texto), fig:sec-confirmacion (letras 7.5 pt límite), fig:sec-google (letras 6.2 pt, flecha cruza texto). Requieren replanteo: menos participantes (máx 6), etiquetas más cortas/sin acentos, codos en flechas, text width adecuado, sin escalado excesivo.
+3. **9 diagramas pendientes de revisión visual** (regla 19): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2. Gemini devolvió 404; la regla 19 exige mirarlos en el PDF (letras ≥ 7.5 pt, sin cruces, sin palabras partidas, codos en flechas).
+4. **Revisión visual final página a página** pendiente (regla 15): comprobar que no hay páginas con una sola imagen, figuras repetidas, flechas `->` en vez de `$\rightarrow$`, secciones de 1-2 líneas, párrafos repetidos entre capítulos.
+
+Correcciones directas del revisor: ninguna (el fallo de la página 46 requiere decisión de maquetación: reducir figura o añadir texto; los diagramas requieren replanteo de código TikZ/sequencediagram).
+
+Qué ha corregido el constructor en este paso:
+- Reescritura de prosa en 5 flujos del capítulo 4 y manual del juego del capítulo 4b: fusionó párrafos introductorios y repetitivos, integró `\ref` dentro de la frase, eliminó «La figura X muestra…».
+- Corregidos dos detalles no en fuentes: ajustes se guardan «en el navegador» (no `localStorage`), y referencia inexistente «tabla 9.6» eliminada.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Reducir el alto de las 8 subfiguras del Hito 4 (fig:hito4-flujo y fig:hito4-estados-privacidad) de `height=0.15\textheight` a `height=0.12\textheight` (ya aplicado en los dos CAMBIAR arriba) y añadir párrafo de texto tras cada figura para que la página 46 no quede con una sola imagen (regla 8). Verificar en PDF que la página 46 tenga al menos dos elementos (texto + figura o dos figuras).
+- Replantear los 3 diagramas de secuencia con fallos medidos (fig:sec-registro, fig:sec-confirmacion, fig:sec-google) en `chapters/04-descripcion.tex`:
+  * Máximo 6 participantes por diagrama (agrupar si hay más).
+  * Etiquetas en `\mess`, `call`, `callself`, `\newinst`: sin acentos, sin paréntesis en `\mess`, sin comandos LaTeX, sin `# & _ $ %` sueltos; usar `\n` para saltos de línea.
+  * Aumentar `node distance` vertical ≥ 1.5 cm y horizontal ≥ 2.5 cm; usar flechas con codos (`|-`, `-|`) para que vayan de caja en caja sin cruzar textos.
+  * Usar `\resizebox{\textwidth}{!}{...}` solo para encoger un poco, no para meter más columnas.
+  * Envolver diagramas grandes en `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`.
+- Ejecutar `revisar_umlsd.py` sobre los 9 diagramas pendientes (fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:sec-login, fig:sec-baja, fig:modelo-datos, fig:pipeline) y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+- Revisar visualmente cada uno de esos 9 diagramas en el PDF compilado: comprobar que las letras midan ≥ 7.5 pt, que no hay flechas atravesando cajas, que no hay palabras partidas con guion, que los codos en flechas separan bien las cajas. Replantear los que fallen.
+- Hacer revisión visual final del PDF página a página (regla 15): (a) ninguna página con una sola imagen (regla 8), (b) ninguna figura repetida (regla 10), (c) flechas con `$\rightarrow$` no `->` (regla 11), (d) todo citado con `\ref`, (e) no hay secciones de 1–2 líneas (regla 9), (f) no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` y confirmar que todo pasa (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-23 15:30 · 🧠 Conocimiento guardado
+
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T14:48:48+01:00",
+ "generado": "2026-11-23T15:30:41+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1690,7 +1690,8 @@
     "memoria",
     "verificacion",
     "metricas",
-    "trazabilidad"
+    "trazabilidad",
+    "proyecto"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -6913,7 +6914,7 @@
    "id": "tema:proyecto",
    "tipo": "tema",
    "titulo": "proyecto",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/proyecto.md"
   },
   {
@@ -12220,6 +12221,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
    "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "tema:proyecto",
    "tipo": "trata"
   },
   {

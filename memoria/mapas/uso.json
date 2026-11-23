@@ -53,6 +53,12 @@
   "ultimo": "2026-11-21",
   "usos": 6
  },
+ "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-23",
+  "usos": 1
+ },
  "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
   "bien": 0,
   "mal": 1,
@@ -105,7 +111,7 @@
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-23",
-  "usos": 9
+  "usos": 10
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
   "bien": 6,
@@ -153,7 +159,7 @@
   "bien": 6,
   "mal": 1,
   "ultimo": "2026-11-23",
-  "usos": 35
+  "usos": 36
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,

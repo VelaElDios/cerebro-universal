@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (31 datos)"
-temas: ["fuentes", "memoria", "verificacion", "metricas", "trazabilidad"]
+temas: ["fuentes", "memoria", "verificacion", "metricas", "trazabilidad", "proyecto"]
 claves: ["19 PBIs", "29 PBIs", "82 tareas", "276 pruebas", "322 pruebas", "23 endpoints", "5 migraciones", "6 dependencias", "36 jugadores", "2 entrenadores", "29 armas", "16 pasivas", "29 combinaciones", "6 ultras", "16 equipos", "10 jefes", "5 ambientes", "26 selecciones", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["docs/sprint-1.md, docs/sprint-2.md, docs/juego.md, docs/arquitectura.md, docs/procesos.md, docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md"]
+fuentes: ["docs/sprint-1.md, docs/sprint-2.md, docs/juego.md, docs/arquitectura.md, docs/procesos.md, docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "sprint-1.md, sprint-2.md, arquitectura.md, decisiones.md, log.md, procesos.md, juego.md, requisitos.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -102,5 +102,9 @@ Lista de 31 cifras/hechos verificados contra las fuentes del repositorio en el p
   - Cambio alcance P19 → decisiones.md D-16
   - Backlog S2 registrado 29/10 → decisiones.md D-19, sprint-2.md retrospectiva
 relacionado: Inventario de diagramas obligatorios y su estado actualizado, Trazabilidad completa requisito-PBI-tarea-PR en anexo A4
+
+## Ampliación (2026-11-23, memoria-procesos)
+31 cifras/hechos verificados contra las fuentes del repositorio en esta revisión (ver COMPROBACIONES). Cada uno mapea a una sección concreta de los documentos de `docs/`.
+relacionado: Inventario de diagramas obligatorios y su estado actualizado, Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
