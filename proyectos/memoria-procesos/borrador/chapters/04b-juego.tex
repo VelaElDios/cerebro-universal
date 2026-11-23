@@ -203,22 +203,24 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
 
 \begin{figure}[htbp]
 \centering
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.5cm, align=center, minimum height=0.9cm, font=\scriptsize, inner sep=2pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.8cm, align=center, minimum height=0.9cm, font=\scriptsize, inner sep=2pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.4cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Columna 1: Simulación pura (agrupados)
-    \node[nodewide] (sim) {Simulación pura\\mundo.js, armas.js,\\combate.js, jefes.js,\\oleadas.js, terreno.js,\\ultras.js, mejoras.js};
+    \node[nodewide] (sim) {Simulación pura\\\mbox{mundo.js, armas.js, combate.js}\\\mbox{jefes.js, oleadas.js}\\\mbox{terreno.js, ultras.js, mejoras.js}};
     % Columna 2: Presentación (agrupados)
-    \node[nodewide, right=3.2cm of sim] (pres) {Presentación\\juego.js, render*.js\\sprites.js,\\hud.js, audio.js,\\ui*.js, entrada.js};
+    \node[nodewide, right=3.8cm of sim] (pres) {Presentación\\\mbox{juego.js, render*.js, sprites.js}\\\mbox{hud.js, audio.js, ui*.js}\\\mbox{entrada.js}};
     % Columna 3: Servidor
-    \node[nodewide, right=3.2cm of pres] (srv) {Servidor\\juegoService.js\\club.js, config.js,\\logros.js};
+    \node[nodewide, right=3.8cm of pres] (srv) {Servidor\\\mbox{juegoService.js}\\\mbox{club.js, config.js, logros.js}};
     % Conexiones con codos y etiquetas fuera de cajas
-    \draw[arrow] (sim.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {eventos} (pres.west);
-    \draw[arrow] (pres.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {api.js} (srv.west);
-    \draw[arrow, dashed] (sim.east) -- ++(1.5,0) |- node[near start, above, font=\scriptsize] {reglas compartidas} (srv.west);
+    \draw[arrow] (sim.east) -- ++(1.2,0) |- node[near start, above, font=\scriptsize] {eventos} (pres.west);
+    \draw[arrow] (pres.east) -- ++(1.2,0) |- node[near start, above, font=\scriptsize] {api.js} (srv.west);
+    \draw[arrow, dashed] (sim.east) -- ++(1.8,0) |- node[near start, above, font=\scriptsize] {reglas compartidas} (srv.west);
 \end{tikzpicture}
+\end{adjustbox}
 \caption{Arquitectura del juego: simulación pura (izquierda), presentación (centro), servidor (derecha).}
 \label{fig:juego-arquitectura}
 \end{figure}

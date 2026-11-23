@@ -95,4 +95,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[figuras]] · [[plantilla]] · [[grada-colchonera]] · [[diagramas]] · [[saas]] · [[redaccion]] · [[verificacion]] · [[scrum]] · [[memoria-procesos]] · [[tikz]]
+[[latex]] · [[memoria]] · [[figuras]] · [[plantilla]] · [[grada-colchonera]] · [[redaccion]] · [[diagramas]] · [[saas]] · [[verificacion]] · [[maquetacion]] · [[scrum]] · [[memoria-procesos]]

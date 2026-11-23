@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgf-umlsd"
-notas: 22
+notas: 24
 ---
 # pgf-umlsd
 
@@ -13,6 +13,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c|Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci|Cómo corregir warnings de pgf-umlsd en diagramas de secuencia]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le|Cómo escribir un diagrama de secuencia pgf-umlsd válido y legible]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar|Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar|Cómo replantear diagramas TikZ/pgf-umlsd para pasar revisar_maquetacion.py (reglas 16-18)]] · ⚠️ propuesto
@@ -35,6 +36,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 
@@ -46,4 +48,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[diagramas]] · [[sequencediagram]] · [[maquetacion]] · [[diagramas-secuencia]] · [[secuencia]] · [[verificacion]] · [[memoria]] · [[codigos estado]] · [[http]] · [[pgfplots]]
+[[latex]] · [[tikz]] · [[sequencediagram]] · [[diagramas]] · [[maquetacion]] · [[diagramas-secuencia]] · [[secuencia]] · [[verificacion]] · [[memoria]] · [[codigos estado]] · [[http]] · [[pgfplots]]

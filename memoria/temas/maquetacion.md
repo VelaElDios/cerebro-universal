@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 22
+notas: 24
 ---
 # maquetacion
 
@@ -33,6 +33,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]]
 
+## Conceptos
+
+- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
+
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
+
 ## Lecciones (errores ya resueltos)
 
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
@@ -40,4 +48,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[longtable]] · [[reglas-javier]] · [[tfg]] · [[subcaption]] · [[maquetación]] · [[reglas-tfg]] · [[memoria-procesos]] · [[memoria]]
+[[latex]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[tfg]] · [[longtable]] · [[reglas-javier]] · [[subcaption]] · [[redaccion]] · [[maquetación]] · [[reglas-tfg]] · [[memoria-procesos]]

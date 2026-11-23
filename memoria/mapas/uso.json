@@ -105,7 +105,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-23",
-  "usos": 1
+  "usos": 2
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -147,7 +147,7 @@
   "bien": 0,
   "mal": 1,
   "ultimo": "2026-11-23",
-  "usos": 25
+  "usos": 26
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
@@ -170,8 +170,8 @@
  "memoria/conocimiento/decisiones/elementos-de-plantilla-inmutables-no-se-quita-nada.md": {
   "bien": 0,
   "mal": 1,
-  "ultimo": "2026-11-22",
-  "usos": 8
+  "ultimo": "2026-11-23",
+  "usos": 9
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -195,7 +195,7 @@
   "bien": 4,
   "mal": 2,
   "ultimo": "2026-11-23",
-  "usos": 54
+  "usos": 55
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,

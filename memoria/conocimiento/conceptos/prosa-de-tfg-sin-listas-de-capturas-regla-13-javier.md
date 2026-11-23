@@ -1,13 +1,13 @@
 ---
 tipo: "concepto"
 titulo: "Prosa de TFG sin listas de capturas (regla 13 Javier)"
-temas: ["latex", "redacción", "tfg", "figuras"]
+temas: ["latex", "redacción", "tfg", "figuras", "maquetacion", "redaccion"]
 claves: ["subfigure", "prosa", "manual de usuario", "\\ref"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md (regla 13)", "memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-21"
-actualizado: "2026-11-22"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[latex]] · [[redacción]] · [[tfg]]
@@ -22,5 +22,8 @@ Cada figura y tabla se cita en el texto y se explica, no hay texto de relleno y 
 relacionado: Cada imagen una sola vez (regla 10), Capturas máx. height=0.42\textheight (regla 8)
 
 Relacionado: [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-nada-de-la-figura-x-muestra-suelto-agrupar-capt]] · [[prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier]]
+
+## Ampliación (2026-11-23, memoria-procesos)
+El manual de uso (cap:descripcion §La aplicación) y el del juego (cap:juego §Cómo se juega) se escriben como prosa que explica qué hace el usuario y por qué la aplicación responde así, citando las figuras dentro de esa explicación. Las capturas relacionadas van juntas en una figura con `subfigure` (de `subcaption`, dos por fila, `\begin{subfigure}{0.48\textwidth}`), con un caption general y uno por subfigura. Ejemplo: en 04-descripcion.tex se agrupan inicio+registro (fig:app-inicio-registro), errores de acceso (fig:app-errores-acceso), perfil+baja (fig:app-perfil-baja), admin completo+búsqueda (fig:app-admin-full), responsive (fig:app-responsive), estados especiales (fig:app-estados-especiales), flujo Hito 4 (fig:hito4-flujo, fig:hito4-estados-privacidad). En 04b-juego.tex: menú+vestuario (fig:juego-menu-vestuario), partida+mejora (fig:juego-partida-mejora), jefe+ambiente (fig:juego-jefe-ambiente), fin+pausa (fig:juego-fin-pausa), club pantallas I (fig:juego-club-pantallas-a), club pantallas II (fig:juego-club-pantallas-b).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "bibliografia"
-notas: 11
+notas: 12
 ---
 # bibliografia
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «bibliografia» (este arch
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l|Bibliografía BibTeX apalike: autores corporativos con doble llave y year en todas las entradas]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-apalike-y-referencias-obligatorias|Bibliografía BibTeX con apalike y referencias obligatorias]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-autores-corporativos-en-doble-llave|Bibliografía BibTeX con autores corporativos en doble llave y year obligatorio]] · ⚠️ propuesto
 
 ## Datos

@@ -1,13 +1,13 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes"
-temas: ["memoria", "métricas", "trazabilidad", "metricas", "verificacion"]
+temas: ["memoria", "métricas", "trazabilidad", "metricas", "verificacion", "fuentes", "proyecto"]
 claves: ["19 PBIs", "29 PBIs", "82 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/arquitectura.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/log.md"]
 confianza: "propuesto"
 fecha: "2026-11-22"
-actualizado: "2026-11-22"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[memoria]] · [[métricas]] · [[trazabilidad]]
@@ -50,5 +50,23 @@ solucion: Usar siempre la cifra exacta de la fuente y citarla: "19 PBIs en el ba
 | Fechas Sprint 2 | 23/10–29/10/2026 | sprint-2.md |
 | P19 cambio alcance | Cloud Run (créditos educación) | decisiones.md D-16 |
 | Backlog S2 registrado al cierre | 29/10/2026 | decisiones.md D-19 |
+
+## Ampliación (2026-11-23, memoria-procesos)
+|
+  - Sprint 1: 29/09–27/10/2026, 19 PBIs, 32 tareas, 4 hitos. Burndown entrega: 16 PBIs (P1–P14, P18, P19).
+  - Sprint 2: 23/10–29/10/2026, 29 PBIs, 50 tareas, 7 etiquetas de fase. Backlog registrado en DoneTonic al cierre (29/10) → gráficas en recta.
+  - Evolución real Sprint 2 por fechas de PR: 23/10 (1), 24/10 (17), 26/10 (9), 29/10 (2) = 29.
+  - Pruebas: 140 Sprint 1 + 136 juego hasta Fase 6 = 276; +46 Fase 7 = 322.
+  - URL producción: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app
+  - Repositorio: https://github.com/VelaElDios/la-grada-colchonera-saas
+  - DoneTonic: espacio TFG, equipo Colchoneros.
+  - Cambio enfoque: red social → juego (3 motivos: originalidad, problemas técnicos ricos, reutiliza base SaaS).
+  - Arquitectura: capas API→lógica→datos/integraciones, inyección dependencias.
+  - Seguridad: bcrypt, cookie httpOnly/secure/sameSite, regeneración sesión, permisos servidor.
+  - Concurrencia optimista: version en juego_perfiles.
+  - Simulación determinista: paso fijo 1/60s con semilla.
+  - Gráficos/sonido generados por código (sin assets externos).
+  - Muñecos chibi 32×32 sin piernas (Fase 7, decisión D-21).
+  - Tope bajas: bajasPosibles en config.js (decisión D-22).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

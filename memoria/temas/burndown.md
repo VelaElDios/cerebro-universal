@@ -1,11 +1,15 @@
 ---
 tipo: "tema"
 titulo: "burndown"
-notas: 2
+notas: 3
 ---
 # burndown
 
 Nodo del mapa del Cerebro con todo lo que se sabe de «burndown» (este archivo se genera solo).
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2|Burndown real con pgfplots (fig:burndown-s1 y fig:burndown-s2)]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
@@ -17,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «burndown» (este archivo 
 
 ## Temas relacionados
 
-[[donetonic]] · [[metricas]] · [[scrum]] · [[sprint]] · [[graficas]] · [[métricas]] · [[sprint2]]
+[[donetonic]] · [[metricas]] · [[scrum]] · [[sprint]] · [[graficas]] · [[métricas]] · [[sprint2]] · [[latex]] · [[pgfplots]]

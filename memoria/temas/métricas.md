@@ -19,4 +19,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «métricas» (este archivo
 
 ## Temas relacionados
 
-[[metricas]] · [[donetonic]] · [[scrum]] · [[sprint]] · [[trazabilidad]] · [[verificacion]] · [[burndown]] · [[graficas]] · [[sprint2]] · [[memoria]] · [[grada-colchonera]] · [[memoria-procesos]]
+[[metricas]] · [[donetonic]] · [[scrum]] · [[sprint]] · [[trazabilidad]] · [[verificacion]] · [[burndown]] · [[graficas]] · [[sprint2]] · [[memoria]] · [[fuentes]] · [[proyecto]]

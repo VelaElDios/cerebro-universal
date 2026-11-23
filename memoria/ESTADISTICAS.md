@@ -3,13 +3,13 @@
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
 - Notas que se han usado alguna vez: 44
-- Notas que nunca se han usado: 252
+- Notas que nunca se han usado: 258
 
 ## Las más útiles
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]] | 54 | 4 | 2 |
+| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]] | 55 | 4 | 2 |
 | [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente\|Cada entrega solo lleva lo de su sprint (alcance coherente)]] | 43 | 4 | 1 |
 | [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas\|Contenido por sprint y prosa de TFG (no listas de capturas)]] | 27 | 5 | 1 |
 | [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 26 | 2 | 1 |
@@ -25,8 +25,8 @@
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin\|Alcance por sprint: cada entrega solo contiene lo de su sprint]] | 25 | 0 | 1 |
+| [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin\|Alcance por sprint: cada entrega solo contiene lo de su sprint]] | 26 | 0 | 1 |
 | [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad\|Estado de completitud de sprints y trazabilidad]] | 21 | 0 | 1 |
 | [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints\|Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)]] | 12 | 0 | 1 |
 | [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd\|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]] | 9 | 0 | 1 |
-| [[memoria/conocimiento/decisiones/elementos-de-plantilla-inmutables-no-se-quita-nada\|Elementos de plantilla inmutables (no se quita nada)]] | 8 | 0 | 1 |
+| [[memoria/conocimiento/decisiones/elementos-de-plantilla-inmutables-no-se-quita-nada\|Elementos de plantilla inmutables (no se quita nada)]] | 9 | 0 | 1 |

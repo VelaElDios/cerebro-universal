@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 157
+notas: 162
 ---
 # latex
 
@@ -20,12 +20,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr|Agrupar capturas relacionadas en subfiguras con prosa integrada]]
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
+- 🧪 [[memoria/conocimiento/recetas/burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2|Burndown real con pgfplots (fig:burndown-s1 y fig:burndown-s2)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final de verificación antes de marcar TERMINADO (PDF página a página + scripts en verde)]]
 - 🧪 [[memoria/conocimiento/recetas/citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite|Citas con autor largo que se salen del margen: usar breakcites]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - 🧪 [[memoria/conocimiento/recetas/comprobar-la-maquetacion-de-un-tfg-automaticamente|Comprobar la maquetación de un TFG automáticamente]]
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-actualizar-referencias-a-documentacion-tras-reorganizac|Cómo actualizar referencias a documentación tras reorganización del bundle]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas con subfigure (dos por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila|Cómo agrupar capturas relacionadas en subfigure (2 por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
@@ -37,6 +39,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci|Cómo corregir warnings de pgf-umlsd en diagramas de secuencia]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura|Cómo escribir prosa de TFG integrando capturas (sin «La figura X muestra…»)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl|Cómo escribir un diagrama de entidad-relación en TikZ legible]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le|Cómo escribir un diagrama de secuencia pgf-umlsd válido y legible]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-estructurar-el-csv-de-entrada-para-la-plantilla-sus|Cómo estructurar el CSV de entrada para la plantilla SUS]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo|Cómo evitar overfull hbox con \texttt largo]] · ⚠️ propuesto
@@ -91,6 +94,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
 - ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l|Bibliografía BibTeX apalike: autores corporativos con doble llave y year en todas las entradas]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-apalike-y-referencias-obligatorias|Bibliografía BibTeX con apalike y referencias obligatorias]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-autores-corporativos-en-doble-llave|Bibliografía BibTeX con autores corporativos en doble llave y year obligatorio]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s|Cadenas "La figura X muestra..." prohibidas — prosa integrada con subfigure]] · ⚠️ propuesto
@@ -142,6 +146,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/scripts-de-verificacion-automatica-en-el-repo|Scripts de verificación automática en el repo]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -187,4 +192,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[figuras]] · [[pgf-umlsd]] · [[maquetacion]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[sus]] · [[usabilidad]] · [[tablas]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[pgf-umlsd]] · [[maquetacion]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[sus]] · [[usabilidad]] · [[redaccion]]

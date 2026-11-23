@@ -14351,3 +14351,66 @@ Lo que dejo como tareas: validar 9 diagramas no revisados; corregir fig:sec-goog
 ## 2026-11-23 02:25 · 🧠 Conocimiento guardado
 
 [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[inventario-de-diagramas-obligatorios-y-su-estado]]
+
+## 2026-11-23 03:33 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Voy a corregir los 4 diagramas que fallan en `revisar_maquetacion.py` (reglas 16-18): `fig:capas`, `fig:sec-login`, `fig:sec-baja` en `chapters/04-descripcion.tex` y `fig:juego-arquitectura` en `chapters/04b-juego.tex`. Los replanteo sin escalar: aumento `text width` de nodos, uso `\mbox{}`, flechas con codos (`|-`, `-|`), separo cajas (`node distance`), fuentes `\scriptsize` y `adjustbox` con `max totalheight=0.6\textheight` para que las letras queden ≥8 pt y nada se cruce.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ ⚠️ Figuras: no pude revisar Figura 3.2 (fig:modelo-datos): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-flash-lite-latest is not f…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Validar los 9 diagramas pendientes de revisión visual (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) con `revisar_umlsd.py` y ojo, y corregir los que fallen. Después eliminar las cadenas «La figura X muestra…» en capítulos 01, 03, 05, 06 y anexos, y ejecutar `comando_prueba` completo.
+
+## 2026-11-23 03:36 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (96 páginas, sin errores, solo overfull hbox 10pt residual en anexo trazabilidad)
+- verificar.py: OK (35 figuras, 29 tablas, 17351 palabras, referencias resueltas, todos los requisitos/PBIs/tareas presentes)
+- revisar_maquetacion.py: FALLA en 3 diagramas (reglas 16-18):
+  1. fig:capas (pág 28): letras 6.7 pt (mín 7.5) → diagrama encogido para caber; hay que replantearlo más estrecho
+  2. fig:sec-baja (pág 40): flechas cruzan texto de 2 cajas/etiquetas («403», «204») → flechas con codos, etiquetas ≤2 líneas
+  3. fig:juego-arquitectura (pág 52): letras 6.7 pt (mín 7.5) → mismo problema de escala
+- 9 diagramas pendientes de revisión visual (Gemini 404): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2
+- Portada única: OK (elements/portada.tex usada, preambulo.tex sin segunda portada)
+- Resumen: 198 palabras (≥150), Abstract: 156 palabras (≥120) → cumplen mínimos
+- Anexo desarrollo: dos sprints con mismo esquema, explica recta Sprint 2 → OK
+- Anexo trazabilidad: 82 filas (T1–T82) → completa
+- Cadenas «La figura X muestra…» eliminadas en 04-descripcion y 04b-juego; pendientes en 01, 03, 05, 06 y anexos
+- Imágenes DoneTonic/producción en un solo sitio (cap:propuesta y cap:evaluacion) → OK
+- Contraste con fuentes: 30 datos verificados (ver bitácora) → cumple criterio ≥25
+
+Qué está bien: La estructura general compila, verificar.py pasa, portada única implementada, Resumen/Abstract cumplen mínimos, anexos tienen contenido requerido, trazabilidad completa, datos numéricos contrastados. El constructor corrigió las referencias rotas que hacían fallar verificar.py.
+
+Qué está mal (bloquea TERMINADO):
+1. **3 diagramas miden mal en PDF** (reglas 16-18): fig:capas, fig:sec-baja, fig:juego-arquitectura. Los intentos de corrección del constructor no funcionaron: siguen encogiéndose al escalar con adjustbox, lo que deja letras <7.5pt y flechas cruzando texto.
+2. **9 diagramas sin revisión visual** (Gemini 404): deben validarse con revisar_umlsd.py y ojo humano.
+3. Cadenas «La figura X muestra…» aún presentes en capítulos 01, 03, 05, 06 y anexos.
+
+Lo que corrijo yo (2 archivos): replanteo los 3 diagramas que fallan en medición PDF **sin escalar** (menos participantes, etiquetas ≤2 líneas, más separación, codos en flechas, \mbox{}, fuente ≥\scriptsize, adjustbox solo max totalheight=0.6\textheight).
+
+Lo que dejo como tareas: validar 9 diagramas no revisados; corregir fig:sec-google, fig:sec-registro, fig:sec-confirmacion, fig:pipeline, fig:burndown-s1, fig:burndown-s2; eliminar cadenas «La figura X muestra…» en capítulos restantes; ejecutar comando_prueba completo; revisión visual final PDF página a página.
+
+**Correcciones del revisor:** `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Validar 9 diagramas no revisados por Gemini con `revisar_umlsd.py` y revisión visual PDF: fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2.
+- Replantear fig:sec-google (04-descripcion.tex): ≤5 participantes, etiquetas ≤2 líneas, flechas con codos, `\scriptsize`, `adjustbox{max width=\textwidth, max totalheight=0.6\textheight}`.
+- Replantear fig:sec-registro y fig:sec-confirmacion (04-descripcion.tex): mismo patrón que fig:sec-login corregido (participantes ≤5, etiquetas cortas, codos).
+- Replantear fig:pipeline (05-evaluacion.tex): aumentar `text width` nodo deploy a 3.6cm, `\mbox{Artifact}` ya hecho, flechas con codos, etiquetas ≤2 líneas.
+- Replantear fig:burndown-s1 y fig:burndown-s2 (a1-desarrollo.tex): pgfplots con fuentes ≥8pt, ejes legibles, sin overfull.
+- Eliminar cadenas «La figura X muestra…» en capítulos 01, 03, 05, 06 y anexos; integrar capturas en prosa con `\ref`.
+- Ejecutar `comando_prueba` y confirmar: compilación sin overfull hbox >5pt, `verificar.py` OK, `revisar_maquetacion.py` OK (diagramas reglas 16-18 corregidos).
+- Revisión visual obligatoria del PDF página a página: sin páginas con una sola imagen (regla 8), sin secciones de 1-2 líneas (regla 9), sin figuras repetidas (regla 10), flechas son `$\rightarrow$` (regla 11), diagramas legibles a tamaño real (regla 16).
+- Verificar mínimos de capturas por carpeta y referencias `\ref` cruzadas correctas (DoneTonic solo en cap:propuesta y anexo desarrollo; producción solo en cap:evaluacion).
+- Confirmar anexo desarrollo (a1-desarrollo.tex) tiene dos secciones sprint con mismo esquema y explica recta Sprint 2.
+
+## 2026-11-23 03:36 · 🧠 Conocimiento guardado
+
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]] · [[burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2]]

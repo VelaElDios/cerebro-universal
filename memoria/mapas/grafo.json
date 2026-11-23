@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T02:25:28+01:00",
+ "generado": "2026-11-23T03:36:33+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1311,7 +1311,9 @@
     "latex",
     "redacción",
     "tfg",
-    "figuras"
+    "figuras",
+    "maquetacion",
+    "redaccion"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1548,6 +1550,21 @@
    "ruta": "memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo.md"
   },
   {
+   "id": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "tipo": "dato",
+   "titulo": "Capturas disponibles por carpeta (mínimos requeridos)",
+   "temas": [
+    "capturas",
+    "inventario",
+    "requisito"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/capturas-disponibles-por-carpeta-minimos-requeridos.md"
+  },
+  {
    "id": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
    "tipo": "dato",
    "titulo": "Catálogo de sistemas del juego (jugadores, rarezas, entrenadores, armas, pasivas, combos, ultras, rivales, jefes, dificultad, movimiento, mundo, club, logros, sonido)",
@@ -1588,7 +1605,9 @@
     "métricas",
     "trazabilidad",
     "metricas",
-    "verificacion"
+    "verificacion",
+    "fuentes",
+    "proyecto"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1945,6 +1964,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md"
+  },
+  {
+   "id": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "tipo": "dato",
+   "titulo": "Inventario de diagramas obligatorios y su estado actualizado",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado.md"
   },
   {
    "id": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
@@ -2509,6 +2544,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l.md"
+  },
+  {
+   "id": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "tipo": "decision",
+   "titulo": "Bibliografía BibTeX con apalike y referencias obligatorias",
+   "temas": [
+    "bibliografia",
+    "bibtex",
+    "latex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/bibliografia-bibtex-con-apalike-y-referencias-obligatorias.md"
   },
   {
    "id": "decision:bibliografia-bibtex-con-autores-corporativos-en-doble-llave",
@@ -3784,6 +3834,21 @@
    "ruta": "memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas.md"
   },
   {
+   "id": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "tipo": "receta",
+   "titulo": "Burndown real con pgfplots (fig:burndown-s1 y fig:burndown-s2)",
+   "temas": [
+    "burndown",
+    "latex",
+    "pgfplots"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2.md"
+  },
+  {
    "id": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
    "tipo": "receta",
    "titulo": "Cada cifra de un documento sale de las fuentes, también las pequeñas",
@@ -3964,6 +4029,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-actualizar-referencias-a-documentacion-tras-reorganizac.md"
+  },
+  {
+   "id": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "tipo": "receta",
+   "titulo": "Cómo agrupar capturas con subfigure (dos por fila)",
+   "temas": [
+    "capturas",
+    "latex",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila.md"
   },
   {
    "id": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
@@ -4211,6 +4291,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl.md"
+  },
+  {
+   "id": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "tipo": "receta",
+   "titulo": "Cómo escribir un diagrama de secuencia pgf-umlsd válido y legible",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "sequencediagram"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le.md"
   },
   {
    "id": "receta:como-estructurar-el-csv-de-entrada-para-la-plantilla-sus",
@@ -5638,7 +5733,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 157,
+   "peso": 162,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5652,14 +5747,14 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 30,
+   "peso": 31,
    "ruta": "memoria/temas/tikz.md"
   },
   {
    "id": "tema:pgfplots",
    "tipo": "tema",
    "titulo": "pgfplots",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/pgfplots.md"
   },
   {
@@ -5701,14 +5796,14 @@
    "id": "tema:bibtex",
    "tipo": "tema",
    "titulo": "bibtex",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/bibtex.md"
   },
   {
    "id": "tema:bibliografia",
    "tipo": "tema",
    "titulo": "bibliografia",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/bibliografia.md"
   },
   {
@@ -5722,14 +5817,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 22,
+   "peso": 24,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 22,
+   "peso": 24,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -5813,7 +5908,7 @@
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
@@ -5995,7 +6090,7 @@
    "id": "tema:burndown",
    "tipo": "tema",
    "titulo": "burndown",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/burndown.md"
   },
   {
@@ -6328,18 +6423,18 @@
    "ruta": "memoria/temas/redacción.md"
   },
   {
+   "id": "tema:redaccion",
+   "tipo": "tema",
+   "titulo": "redaccion",
+   "peso": 11,
+   "ruta": "memoria/temas/redaccion.md"
+  },
+  {
    "id": "tema:estilo",
    "tipo": "tema",
    "titulo": "estilo",
    "peso": 2,
    "ruta": "memoria/temas/estilo.md"
-  },
-  {
-   "id": "tema:redaccion",
-   "tipo": "tema",
-   "titulo": "redaccion",
-   "peso": 10,
-   "ruta": "memoria/temas/redaccion.md"
   },
   {
    "id": "tema:bcrypt",
@@ -6468,6 +6563,27 @@
    "ruta": "memoria/temas/proyectos.md"
   },
   {
+   "id": "tema:capturas",
+   "tipo": "tema",
+   "titulo": "capturas",
+   "peso": 9,
+   "ruta": "memoria/temas/capturas.md"
+  },
+  {
+   "id": "tema:inventario",
+   "tipo": "tema",
+   "titulo": "inventario",
+   "peso": 1,
+   "ruta": "memoria/temas/inventario.md"
+  },
+  {
+   "id": "tema:requisito",
+   "tipo": "tema",
+   "titulo": "requisito",
+   "peso": 1,
+   "ruta": "memoria/temas/requisito.md"
+  },
+  {
    "id": "tema:data",
    "tipo": "tema",
    "titulo": "data",
@@ -6478,8 +6594,15 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/fuentes.md"
+  },
+  {
+   "id": "tema:proyecto",
+   "tipo": "tema",
+   "titulo": "proyecto",
+   "peso": 1,
+   "ruta": "memoria/temas/proyecto.md"
   },
   {
    "id": "tema:prueba",
@@ -6620,13 +6743,6 @@
    "titulo": "sprint1",
    "peso": 1,
    "ruta": "memoria/temas/sprint1.md"
-  },
-  {
-   "id": "tema:capturas",
-   "tipo": "tema",
-   "titulo": "capturas",
-   "peso": 7,
-   "ruta": "memoria/temas/capturas.md"
   },
   {
    "id": "tema:produccion",
@@ -6814,7 +6930,7 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
@@ -10678,6 +10794,16 @@
   },
   {
    "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "a": "tema:redaccion",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -11512,6 +11638,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "tema:inventario",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "tema:requisito",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "dato:capturas-disponibles-por-carpeta-minimos-requeridos",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "tipo": "enlaza"
+  },
+  {
    "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
    "a": "tema:data",
    "tipo": "trata"
@@ -11614,6 +11765,16 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:proyecto",
    "tipo": "trata"
   },
   {
@@ -12865,6 +13026,31 @@
    "de": "dato:inventario-de-capturas-donetonic-requeridas-y-disponibles",
    "a": "decision:cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
@@ -14554,6 +14740,31 @@
   {
    "de": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
    "a": "dato:bibliografia-gestionada-con-bibtex-en-la-memoria-tfg",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "tema:bibliografia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "tema:bibtex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
+   "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "tipo": "enlaza"
   },
   {
@@ -18942,6 +19153,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "a": "tema:burndown",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
    "a": "tema:cifras",
    "tipo": "trata"
@@ -19504,6 +19735,31 @@
   {
    "de": "receta:como-actualizar-referencias-a-documentacion-tras-reorganizac",
    "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
+   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
    "tipo": "enlaza"
   },
   {
@@ -20180,6 +20436,26 @@
    "de": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
    "a": "receta:como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-estructurar-el-csv-de-entrada-para-la-plantilla-sus",

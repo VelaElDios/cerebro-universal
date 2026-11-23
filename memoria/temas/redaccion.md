@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "redaccion"
-notas: 10
+notas: 11
 ---
 # redaccion
 
@@ -24,8 +24,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-vs-lista-de-capturas|Prosa de TFG vs lista de capturas]]
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[memoria]] · [[figuras]] · [[subfigure]] · [[subcaption]] · [[reglas-javier]] · [[maquetacion]] · [[estilo]] · [[sprints]] · [[arquitectura]] · [[cicd]]
+[[latex]] · [[tfg]] · [[memoria]] · [[figuras]] · [[maquetacion]] · [[subfigure]] · [[subcaption]] · [[reglas-javier]] · [[redacción]] · [[estilo]] · [[sprints]] · [[arquitectura]]

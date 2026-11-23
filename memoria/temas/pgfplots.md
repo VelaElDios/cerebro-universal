@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgfplots"
-notas: 6
+notas: 7
 ---
 # pgfplots
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgfplots» (este archivo 
 
 - 📁 [[proyectos/memoria-procesos/estado|memoria-procesos]]
 - 📁 [[proyectos/plantilla-sus/estado|plantilla-sus]]
+
+## Recetas (cómo lo hacemos)
+
+- 🧪 [[memoria/conocimiento/recetas/burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2|Burndown real con pgfplots (fig:burndown-s1 y fig:burndown-s2)]] · ⚠️ propuesto
 
 ## Conceptos
 

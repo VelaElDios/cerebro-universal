@@ -103,33 +103,35 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 
 \begin{figure}[htbp]
 \centering
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=2.6cm, align=center, minimum height=0.9cm, font=\scriptsize, inner sep=2pt},
-    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.0cm, align=center, minimum height=0.9cm, font=\scriptsize, inner sep=2pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.2cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=3.8cm, align=center, minimum height=1.0cm, font=\scriptsize, inner sep=3pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Columna izquierda: Frontend
-    \node[nodewide] (fe) {Frontend (navegador)\\ui.js + api.js + game/};
+    \node[nodewide] (fe) {Frontend (navegador)\\\mbox{ui.js + api.js + game/}};
     % Columna central: Servidor (capas apiladas)
-    \node[nodewide, right=3.0cm of fe] (api) {Capa API (src/api)\\rutas, sesión, roles,\\logs, errores};
-    \node[node, below=1.5cm of api] (srv) {Lógica (src/services)\\usuarios, tokens, juego};
-    \node[node, below=1.5cm of srv] (repo) {Datos (src/repositories)\\memoria | PostgreSQL};
-    \node[node, below=1.5cm of repo] (int) {Integraciones\\correo | Google};
+    \node[nodewide, right=3.5cm of fe] (api) {Capa API (src/api)\\\mbox{rutas, sesión, roles, logs, errores}};
+    \node[node, below=1.6cm of api] (srv) {Lógica (src/services)\\\mbox{usuarios, tokens, juego}};
+    \node[node, below=1.6cm of srv] (repo) {Datos (src/repositories)\\\mbox{memoria | PostgreSQL}};
+    \node[node, below=1.6cm of repo] (int) {Integraciones\\\mbox{correo | Google}};
     % Columna derecha: Reglas compartidas y servicios externos
-    \node[node, right=2.8cm of srv] (rules) {Reglas compartidas\\club.js, config.js,\\logros.js};
-    \node[nodewide, right=2.8cm of repo] (ext) {Servicios externos\\PostgreSQL (Neon)\\SMTP Gmail\\Google OAuth 2.0};
+    \node[node, right=3.2cm of srv] (rules) {Reglas compartidas\\\mbox{club.js, config.js, logros.js}};
+    \node[nodewide, right=3.2cm of repo] (ext) {Servicios externos\\\mbox{PostgreSQL (Neon)}\\\mbox{SMTP Gmail}\\\mbox{Google OAuth 2.0}};
 
     % Flecha frontend -> API (con codo, etiqueta fuera de cajas)
-    \draw[arrow] (fe.east) -- ++(0.8,0) |- node[near start, above, font=\scriptsize] {HTTP + JSON} (api.west);
+    \draw[arrow] (fe.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {HTTP + JSON} (api.west);
     % Flechas servidor (verticales, caja a caja)
     \draw[arrow] (api.south) -- (srv.north);
     \draw[arrow] (srv.south) -- (repo.north);
     \draw[arrow] (srv.south) -- (int.north);
-    \draw[arrow, dashed] (srv.east) -- ++(0.8,0) |- (rules.west);
+    \draw[arrow, dashed] (srv.east) -- ++(1.0,0) |- (rules.west);
     % Flechas a servicios externos (con codos, etiquetas fuera)
-    \draw[arrow] (repo.east) -- ++(0.8,0) |- node[near start, above, font=\scriptsize] {SQL} (ext.west);
-    \draw[arrow] (int.east) -- ++(0.8,0) |- node[near start, above, font=\scriptsize] {SMTP / OAuth} (ext.west);
+    \draw[arrow] (repo.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {SQL} (ext.west);
+    \draw[arrow] (int.east) -- ++(1.0,0) |- node[near start, above, font=\scriptsize] {SMTP / OAuth} (ext.west);
 \end{tikzpicture}
+\end{adjustbox}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
 \label{fig:capas}
 \end{figure}
@@ -420,7 +422,6 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
 
 \begin{figure}[htbp]
 \centering
-\scriptsize
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
@@ -509,7 +510,6 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
 
 \begin{figure}[htbp]
 \centering
-\scriptsize
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 30
+notas: 31
 ---
 # tikz
 
@@ -45,6 +45,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 
