@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T17:05:41+01:00",
+ "generado": "2026-11-23T18:06:34+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1731,7 +1731,8 @@
     "sprints",
     "grada-colchonera",
     "saas",
-    "juego"
+    "juego",
+    "scrum"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5762,6 +5763,21 @@
    "ruta": "memoria/conocimiento/recetas/resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi.md"
   },
   {
+   "id": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "tipo": "receta",
+   "titulo": "Revisión visual final página a página (regla 15 Javier)",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pdf"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/revision-visual-final-pagina-a-pagina-regla-15-javier.md"
+  },
+  {
    "id": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",
    "tipo": "receta",
    "titulo": "Secuencia obligatoria cuando faltan fuentes en mensaje del revisor",
@@ -5998,7 +6014,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 174,
+   "peso": 175,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6131,7 +6147,7 @@
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 29,
+   "peso": 30,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -6411,7 +6427,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 58,
+   "peso": 59,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -7997,6 +8013,13 @@
    "ruta": "memoria/temas/resumen.md"
   },
   {
+   "id": "tema:pdf",
+   "tipo": "tema",
+   "titulo": "pdf",
+   "peso": 2,
+   "ruta": "memoria/temas/pdf.md"
+  },
+  {
    "id": "tema:constructor",
    "tipo": "tema",
    "titulo": "constructor",
@@ -8030,13 +8053,6 @@
    "titulo": "security",
    "peso": 1,
    "ruta": "memoria/temas/security.md"
-  },
-  {
-   "id": "tema:pdf",
-   "tipo": "tema",
-   "titulo": "pdf",
-   "peso": 1,
-   "ruta": "memoria/temas/pdf.md"
   },
   {
    "id": "tema:checklist",
@@ -12317,6 +12333,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:scrum",
    "tipo": "trata"
   },
   {
@@ -24913,6 +24934,26 @@
    "de": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
    "a": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "a": "tema:pdf",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:revision-visual-final-pagina-a-pagina-regla-15-javier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:secuencia-obligatoria-cuando-faltan-fuentes-en-mensaje-del-r",

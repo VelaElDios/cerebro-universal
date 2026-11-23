@@ -92,4 +92,23 @@ Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual P
 
 Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual PDF (reglas 16-18).
 
+## Ampliación (2026-11-23, memoria-procesos)
+| Diagrama | Tipo | Archivo | Estado actual |
+|---|---|---|---|
+| fig:capas | TikZ | 04-descripcion.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:modelo-datos | TikZ | 04-descripcion.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:sec-registro | sequencediagram | 04-descripcion.tex | **FALLA MEDIDA**: 6.1 pt, flecha cruza "enviado" |
+| fig:sec-confirmacion | sequencediagram | 04-descripcion.tex | **FALLA MEDIDA**: 7.5 pt límite, encogido |
+| fig:sec-login | sequencediagram | 04-descripcion.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:sec-google | sequencediagram | 04-descripcion.tex | **FALLA MEDIDA**: 6.2 pt, flecha cruza "verificado" |
+| fig:sec-baja | sequencediagram | 04-descripcion.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:sec-partida | sequencediagram | 04b-juego.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:sec-contratar | sequencediagram | 04b-juego.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:juego-arquitectura | TikZ | 04b-juego.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:pipeline | TikZ | 05-evaluacion.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:burndown-s1 | pgfplots | a1-desarrollo.tex | **PENDIENTE** (no revisado, Gemini 404) |
+| fig:burndown-s2 | pgfplots | a1-desarrollo.tex | **PENDIENTE** (no revisado, Gemini 404) |
+
+Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual PDF (reglas 16-18).
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 29
+notas: 30
 ---
 # maquetacion
 
@@ -26,6 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 - 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]]
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Evitar páginas con una sola imagen (Regla 8): capturas y diagramas en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/fundir-secciones-de-1-2-parrafos-regla-9-javier|Fundir secciones de 1-2 párrafos (regla 9 Javier)]]
+- 🧪 [[memoria/conocimiento/recetas/revision-visual-final-pagina-a-pagina-regla-15-javier|Revisión visual final página a página (regla 15 Javier)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl|Verificación visual de diagramas TikZ y pgf-umlsd según reglas 16-18]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)

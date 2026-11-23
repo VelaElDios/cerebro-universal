@@ -4,7 +4,7 @@ titulo: "Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18
 temas: ["diagramas-secuencia", "latex", "maquetacion", "pgf-umlsd", "diagramas", "tikz"]
 claves: ["\\newthread", "\\newinst", "call", "\\mess", "sdblock", "adjustbox", "max totalheight"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (reglas 16-19) y experiencia de corrección"]
+fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (reglas 16-19) y experiencia de corrección", "memoria/reglas-tfg.md (reglas 16-19) y salida de revisar_maquetacion.py"]
 confianza: "propuesto"
 fecha: "2026-11-19"
 actualizado: "2026-11-23"
@@ -125,5 +125,16 @@ Antes de compilar, revisar cada diagrama de secuencia: (1) Aumentar node distanc
   (f) En `\mess`, `call`, `callself`, `\newinst`: sin acentos, sin paréntesis en `\mess`, sin comandos LaTeX, sin `#`, `&`, `_`, `$`, `%` sueltos. Usar `\n` para saltos de línea en etiquetas largas.
   (g) Compilar y abrir el PDF para comprobar visualmente que no hay cruces y las letras se leen (≥ 8pt).
   (h) Si `revisar_umlsd.py` reporta errores, corregirlos todos antes de volver a compilar.
+
+## Ampliación (2026-11-23, memoria-procesos)
+Pasos para corregir un diagrama que falla en revisar_maquetacion.py:
+1. **Reducir participantes a ≤6**: agrupar relacionados (ej. "Vista + api.js" → "Frontend") o dividir en dos diagramas (cliente/servidor).
+2. **Etiquetas limpias**: en `\mess`, `call`, `callself`, `\newinst` NO usar: acentos, paréntesis (en `\mess`), comandos LaTeX (`\texttt`...), `# & _ $ %` sueltos. Usar `\n` para saltos de línea en etiquetas largas.
+3. **Flechas con codos**: que vayan de caja en caja (A→B, B→C) sin cruzar otras cajas ni textos. En pgf-umlsd se logra anidando `call` y usando `sdblock` para alternativas; evitar `\mess` directos que atraviesen participantes.
+4. **Espaciado suficiente**: aumentar separación vertical (`\newinst[2.5]` o más) y horizontal para que las cajas no se toquen y las flechas tengan espacio para codos.
+5. **Ancho de cajas**: usar `text width` en estilos de nodos TikZ o `\mbox{}` en etiquetas para evitar particiones de palabras.
+6. **Escalado mínimo**: `\resizebox{\textwidth}{!}{...}` solo para encoger un 5-10%; si hay que encoger más, el diagrama está mal planteado. Para diagramas grandes, envolver en `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`.
+7. **Declarar todos los participantes**: cada `\newthread`/`newinst` usado debe estar declarado en ese diagrama.
+8. **Compilar y revisar visualmente en PDF**: medir tamaño de fuente (≥7.5 pt), comprobar que no hay cruces, palabras partidas, flechas rectas atravesando cajas.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

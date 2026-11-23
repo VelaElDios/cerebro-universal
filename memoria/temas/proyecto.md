@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «proyecto» (este archivo 
 
 ## Temas relacionados
 
-[[fuentes]] · [[memoria]] · [[verificacion]] · [[metricas]] · [[trazabilidad]] · [[métricas]] · [[pruebas]] · [[sprints]] · [[grada-colchonera]] · [[saas]] · [[juego]]
+[[fuentes]] · [[memoria]] · [[verificacion]] · [[metricas]] · [[trazabilidad]] · [[métricas]] · [[pruebas]] · [[sprints]] · [[grada-colchonera]] · [[saas]] · [[juego]] · [[scrum]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 174
+notas: 175
 ---
 # latex
 
@@ -85,6 +85,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas|Reglas de figuras: tamaño, flotantes y nada de páginas solas]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-tamanos-y-longtable|Reglas de maquetación de tablas en LaTeX: alineación, anchos, longtable, código y rutas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi|Resumen y Abstract en elements/preambulo.tex con formato oficial]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/revision-visual-final-pagina-a-pagina-regla-15-javier|Revisión visual final página a página (regla 15 Javier)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace|Tablas de LaTeX que no se pisan (columnas p y addlinespace)]]
 - 🧪 [[memoria/conocimiento/recetas/tablas-largas-en-longtable-con-ultima-fila-acompanada|Tablas largas en longtable con última fila acompañada (\\*)]]

@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes"
-temas: ["memoria", "métricas", "trazabilidad", "metricas", "verificacion", "fuentes", "proyecto", "pruebas", "sprints", "grada-colchonera", "saas", "juego"]
+temas: ["memoria", "métricas", "trazabilidad", "metricas", "verificacion", "fuentes", "proyecto", "pruebas", "sprints", "grada-colchonera", "saas", "juego", "scrum"]
 claves: ["19 PBIs", "29 PBIs", "82 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md, repo:saas/docs/procesos.md, repo:saas/@arbol", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md, repo:saas/docs/procesos.md, repo:saas/@arbol", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md"]
 confianza: "propuesto"
 fecha: "2026-11-22"
 actualizado: "2026-11-23"
@@ -83,5 +83,18 @@ Lista de 25+ cifras y hechos verificados contra las fuentes del repositorio, lis
 
 ## Ampliación (2026-11-23, memoria-procesos)
 Todas las cifras mayores de 20 que aparecen en la memoria están en las fuentes. Las menores (19, 29, 32, 50, 23, 5, 36, 29, 16, 6, 16, 10, 5, 26) las comprueba el revisor. Ojo con los que se parecen: 19 PBIs en Sprint 1 pero burndown de entrega cuenta 16 (P1–P14, P18, P19); 32 + 50 = 82 tareas totales; 276 pruebas al cierre Sprint 2, 322 tras Fase 7.
+
+## Ampliación (2026-11-23, memoria-procesos)
+- Sprint 1: 19 PBIs (P1–P19), 32 tareas (T1–T32), 4 hitos. Burndown entrega: 16 PBIs (P1–P14, P18, P19).
+- Sprint 2: 29 PBIs (P20–P48), 50 tareas (T33–T82), 7 etiquetas de fase. 29 historias de usuario con criterios.
+- Total: 48 PBIs, 82 tareas, >50 PRs fusionados.
+- Pruebas: 276 al cierre Sprint 2, 322 tras Fase 7 (140 S1 + 136 juego F1–F6 + 46 F7).
+- API: 23 endpoints, 5 migraciones.
+- Código: ~2.300 líneas backend, ~1.150 frontend, ~950 CSS, ~14.800 juego, ~5.050 pruebas.
+- Dependencias producción: 6 (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer).
+- Juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones (24 F3 + 5 F7), 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
+- Despliegue: 8 secretos Secret Manager, PostgreSQL 17 en CI, Node 22 Alpine, región europe-southwest1 (Madrid), Neon (Frankfurt).
+- DoneTonic: 29 HUs Sprint 2, capturas 29/10/2026, gráficas Sprint 2 en recta (backlog registrado al cerrar).
+- Memoria: Resumen ≥150 palabras, Abstract ≥120 palabras, declaración autoría, trazabilidad completa P1–P48/T1–T82 en a4-trazabilidad.tex.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

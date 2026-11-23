@@ -334,33 +334,30 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
 
 \begin{figure}[htbp]
 \centering
-\scriptsize
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[2]{fe}{Frontend}
   \newinst[2]{api}{API}
   \newinst[2]{srv}{Servicio}
-  \newinst[2]{repo}{Datos}
-  \newinst[2]{mail}{Correo}
   \begin{call}{u}{email y clave}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST /api/auth/register}{api}{201 o 409}
+  \begin{call}{fe}{POST register}{api}{201 o 409}
     \begin{call}{api}{register}{srv}{usuario}
-    \end{call}
-    \begin{call}{srv}{busca email}{repo}{fila o null}
-    \end{call}
-    \begin{sdblock}{alt}{existe}
-      \mess{srv}{ConflictError}{api}
-      \mess{api}{409}{fe}
-    \end{sdblock}
-    \begin{sdblock}{else}{nuevo}
-      \begin{call}{srv}{hash y crea}{repo}{usuario}
+      \begin{call}{srv}{busca email}{srv}{fila o null}
       \end{call}
-      \begin{call}{srv}{firma HMAC y envia}{mail}{enviado}
-      \end{call}
-      \mess{api}{201}{fe}
-    \end{sdblock}
+      \begin{sdblock}{alt}{existe}
+        \mess{srv}{ConflictError}{api}
+        \mess{api}{409}{fe}
+      \end{sdblock}
+      \begin{sdblock}{else}{nuevo}
+        \begin{call}{srv}{hash y crea}{srv}{usuario}
+        \end{call}
+        \begin{call}{srv}{firma HMAC y envia}{srv}{enviado}
+        \end{call}
+        \mess{api}{201}{fe}
+      \end{sdblock}
+    \end{call}
   \end{call}
   \mess{fe}{aviso}{u}
 \end{sequencediagram}
@@ -378,17 +375,14 @@ El enlace de confirmación lleva un token firmado que la API verifica antes de t
 
 \begin{figure}[htbp]
 \centering
-\scriptsize
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[2]{api}{API}
-  \newinst[2]{tok}{Token}
   \newinst[2]{srv}{Servicio}
-  \newinst[2]{ui}{Vista}
   \begin{call}{u}{abre enlace}{api}{redirige}
   \end{call}
-  \begin{call}{api}{verifica HMAC}{tok}{valido o nulo}
+  \begin{call}{api}{verifica HMAC}{srv}{valido o nulo}
   \end{call}
   \begin{sdblock}{alt}{no valido}
     \mess{api}{303 enlace no valido}{u}
@@ -398,9 +392,9 @@ El enlace de confirmación lleva un token firmado que la API verifica antes de t
     \end{call}
     \mess{api}{303 cuenta confirmada}{u}
   \end{sdblock}
-  \begin{call}{u}{carga web}{ui}{ok}
+  \begin{call}{u}{carga web}{api}{ok}
   \end{call}
-  \mess{ui}{muestra aviso}{u}
+  \mess{api}{muestra aviso}{u}
 \end{sequencediagram}
 \end{adjustbox}
 \caption{Confirmación con el enlace del correo.}
@@ -453,21 +447,19 @@ Regenerar la sesión al entrar es la medida que evita la fijación de sesión, y
 \subsection{Inicio de sesión con Google OAuth 2.0}
 \label{sec:flujo-google}
 
-El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \cite{rfc6749}. La API genera un valor \texttt{state} aleatorio, lo guarda en la sesión y redirige al navegador a Google; cuando el usuario vuelve, el callback compara ese valor con el de la sesión y lo borra, de modo que un \texttt{state} reutilizado o falsificado se rechaza. Solo después de esa comprobación el servidor cambia el código por el perfil, exige que el email esté verificado y decide qué hacer con la cuenta: si no existía, la crea ya activa; si estaba pendiente, la activa; y si el email no está verificado, rechaza el acceso (Figura~\ref{fig:sec-google}).
+El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \cite{rfc6749}. La API genera un valor \texttt{state} aleatorio, lo guarda en la sesión y redirige al navegador a Google; cuando el usuario vuelve, el callback compara ese valor con el de la sesión y lo borra, de modo que un \texttt{state} reutilizado o falsificado se rechaza. Solo después de esa comprobación el servidor cambia el código por el perfil, exige que el email esté verificado y decide qué hacer con la cuenta: si no existía, la crea ya activa; si estaba pendiente, la activa; y si el email no está verificado, rechaza el acceso (Figura~\ref{fig:sec-google}). En el diagrama, el \texttt{state} se muestra como una operación de la propia API, que es quien lo guarda en la sesión del servidor y lo compara al recibir el callback.
 
 \begin{figure}[htbp]
 \centering
-\scriptsize
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Navegador}
   \newinst[2]{api}{API}
-  \newinst[2]{ses}{Sesion}
   \newinst[2]{goo}{Google}
   \newinst[2]{srv}{Servicio}
   \begin{call}{u}{GET /api/auth/google}{api}{303}
   \end{call}
-  \begin{call}{api}{guarda state}{ses}{ok}
+  \begin{call}{api}{guarda state}{api}{ok}
   \end{call}
   \mess{api}{redirige a Google}{u}
   \begin{call}{u}{acepta en Google}{goo}{302 code state}
@@ -475,7 +467,7 @@ El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \ci
   \mess{goo}{callback}{u}
   \begin{call}{u}{GET callback code state}{api}{ok}
   \end{call}
-  \begin{call}{api}{compara y borra state}{ses}{ok o fallo}
+  \begin{call}{api}{compara y borra state}{api}{ok o fallo}
   \end{call}
   \begin{sdblock}{alt}{state invalido}
     \mess{api}{303 error}{u}
@@ -485,7 +477,7 @@ El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \ci
     \end{call}
     \begin{call}{api}{loginWithOAuth}{srv}{usuario}
     \end{call}
-    \begin{call}{api}{regenera sesion}{ses}{ok}
+    \begin{call}{api}{regenera sesion}{api}{ok}
     \end{call}
     \mess{api}{303 a jugar}{u}
   \end{sdblock}
