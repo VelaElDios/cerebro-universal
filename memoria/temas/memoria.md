@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria"
-notas: 68
+notas: 69
 ---
 # memoria
 
@@ -82,6 +82,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos|Cifras clave del proyecto contrastadas con fuentes (31 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles|Inventario de capturas DoneTonic requeridas y disponibles]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/scripts-de-verificacion-automatica-en-el-repo|Scripts de verificación automática en el repo]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -98,4 +99,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[tikz]] · [[memoria-procesos]] · [[plantilla]] · [[scrum]] · [[trazabilidad]] · [[sprints]] · [[redaccion]]
+[[latex]] · [[tfg]] · [[figuras]] · [[diagramas]] · [[tikz]] · [[verificacion]] · [[memoria-procesos]] · [[plantilla]] · [[scrum]] · [[trazabilidad]] · [[sprints]] · [[redaccion]]

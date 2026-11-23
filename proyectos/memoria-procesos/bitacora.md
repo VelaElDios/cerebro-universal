@@ -15132,3 +15132,93 @@ Qué ha corregido el constructor en este paso:
 ## 2026-11-23 15:30 · 🧠 Conocimiento guardado
 
 [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]]
+
+## 2026-11-23 17:03 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He identificado la causa del error de referencia no resuelta: en `chapters/04-descripcion.tex` hay una orden `\ref.` sin llaves al final del capítulo, que LaTeX interpreta como una referencia a la etiqueta `.` (punto). Esto genera la referencia indefinida y los `??` en el PDF. La solución es reemplazar ese fragmento por una frase correcta sin la orden `\ref` mal formada.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ⚠️ Figuras: no pude revisar Figura 3.1 (fig:capas): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-flash-lite-latest is not found fo…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Volver a ejecutar `comando_prueba` para confirmar que la compilación y `verificar.py` pasan sin errores de referencias. Después, abordar los tres diagramas de secuencia con fallos medidos (fig:sec-registro, fig:sec-confirmacion, fig:sec-google) replanteándolos según las reglas 16-18 (máx. 6 participantes, etiquetas cortas sin acentos, flechas con codos, text width adecuado). Posteriormente, ejecutar `revisar_umlsd.py` sobre los 9 diagramas pendientes y corregir sus errores de sintaxis. Finalmente, revisión visual del PDF página a página (regla 15).
+
+## 2026-11-23 17:05 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 19 PBIs (P1–P19) y 32 tareas (T1–T32) → repo:saas/docs/sprint-1.md §Backlog y estado del Sprint 1 (tabla con 19 filas)
+- Sprint 2: 29 PBIs (P20–P48) y 50 tareas (T33–T82) → repo:saas/docs/sprint-2.md §Backlog y estado del Sprint 2 (tabla con 29 filas)
+- Total tareas: 32 + 50 = 82 → repo:saas/docs/sprint-1.md (32) + repo:saas/docs/sprint-2.md (50)
+- Fechas Sprint 1: 29/09/2026 – 27/10/2026 → repo:saas/docs/sprint-1.md §Sprint 1 (primera línea)
+- Fechas Sprint 2: 23/10/2026 – 29/10/2026 → repo:saas/docs/sprint-2.md §Sprint 2 (primera línea)
+- Hito 4 completado 23/10/2026 → repo:saas/docs/sprint-1.md §Hito 4 (último párrafo)
+- Cambio de alcance P19 (Cloud Run) a mitad del Sprint 1 → repo:saas/docs/decisiones.md D-16
+- Backlog Sprint 2 registrado en DoneTonic al cerrar el sprint (29/10) → repo:saas/docs/decisiones.md D-19
+- 13 requisitos funcionales Sprint 1 (RF-01 a RF-13) → repo:saas/docs/requisitos.md §Requisitos funcionales del Sprint 1 (tabla con 13 filas)
+- 20 requisitos funcionales juego (RJ-01 a RJ-20) → repo:saas/docs/requisitos.md §Requisitos funcionales del juego (tabla con 20 filas)
+- 12 requisitos no funcionales (RNF-01 a RNF-12) → repo:saas/docs/requisitos.md §Requisitos no funcionales (tabla con 12 filas)
+- 276 pruebas automáticas al cierre Sprint 2 (322 tras Fase 7) → repo:saas/docs/procesos.md §Pruebas por fichero (total 276) y repo:saas/docs/sprint-2.md §Métricas (322)
+- 23 endpoints API → repo:saas/docs/sprint-2.md §Métricas (Endpoints expuestos en la API: 23)
+- 5 migraciones SQL → repo:saas/docs/arquitectura.md §Modelo de datos (lista 001–005)
+- 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → repo:saas/docs/sprint-2.md §Métricas (Contenido jugable implementado)
+- 19 PBIs en Sprint 1 pero burndown de entrega cuenta 16 (P1–P14, P18, P19) → repo:saas/docs/sprint-1.md §Evolución del Sprint 1 (tabla Momento vs PBIs hechos)
+- Burndown real Sprint 2: PBIs pendientes [28,11,11,2,2,2,0] → repo:saas/docs/sprint-2.md §Evolución del Sprint 2 (tabla Día vs PBIs pendientes)
+- 8 secretos en Secret Manager (database-url, session-secret, admin-email, admin-password, smtp-url, mail-from, google-client-id, google-client-secret) → repo:saas/docs/procesos.md §Configuración de los servicios externos (lista)
+- PostgreSQL 17 en CI → repo:saas/docs/procesos.md §Integración y despliegue continuos (workflow CI)
+- Node 22 Alpine en Docker → repo:saas/docs/procesos.md §Integración y despliegue continuos (Imagen Docker)
+- Región Cloud Run europe-southwest1 (Madrid) → repo:saas/docs/procesos.md §Integración y despliegue continuos (Cloud Run)
+- Neon (PostgreSQL gestionado, región Frankfurt) → repo:saas/docs/procesos.md §Integración y despliegue continuos (Base de datos)
+- 29 historias de usuario Sprint 2 con criterios → repo:saas/docs/sprint-2.md §Historias de usuario y criterios de aceptación (29 items)
+- 50 PRs fusionados → repo:saas/docs/sprint-2.md §Métricas (Pull requests fusionados: más de 50)
+- 14.800 líneas juego → repo:saas/docs/sprint-2.md §Métricas (Líneas del motor del juego)
+- 5.050 líneas pruebas → repo:saas/docs/sprint-2.md §Métricas (Líneas de pruebas automatizadas)
+- 6 dependencias producción (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer) → repo:saas/docs/sprint-2.md §Métricas (Dependencias directas de producción)
+- Resumen ≥150 palabras y Abstract ≥120 palabras → elements/preambulo.tex (Resumen y Abstract completos)
+- Declaración de autoría presente → elements/preambulo.tex (Declaración de autoría)
+- Trazabilidad completa P1–P48, T1–T82 en a4-trazabilidad.tex → chapters/a4-trazabilidad.tex (tabla longtable con 82 filas de tareas)
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2 → chapters/a1-desarrollo.tex §Sprint 2 Retrospectiva (párrafo «Explicación de la recta…»)
+
+Qué está bien:
+- La compilación y `verificar.py` pasan completamente (98 páginas, 35 figuras, 29 tablas, 18391 palabras).
+- El constructor ha eliminado las cadenas «La figura X muestra…» sueltas en los capítulos 4 y 4b, integrando las capturas en prosa con subfiguras (cumple regla 13 de Javier).
+- El Hito 4 no aparece como pendiente en ningún capítulo.
+- El anexo de desarrollo tiene el esquema correcto (dos sprints, misma estructura) y explica la recta de las gráficas del Sprint 2.
+- La trazabilidad está completa (P1–P48, T1–T82) en a4-trazabilidad.tex.
+- Se han contrastado más de 30 datos con las fuentes en esta revisión (ver COMPROBACIONES).
+
+Qué falla (bloquea TERMINADO):
+1. **Tres diagramas de secuencia con fallos medidos** (reglas 16-18): fig:sec-registro (letras 7.0 pt < 7.5, flecha cruza texto «enviado»), fig:sec-confirmacion (letras 7.5 pt límite), fig:sec-google (letras 6.2 pt, flecha cruza texto «verificado»). Requieren replanteo: menos participantes (máx 6), etiquetas más cortas/sin acentos, codos en flechas, text width adecuado, sin escalado excesivo.
+2. **Nueve diagramas pendientes de revisión visual** (regla 19): fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2. Gemini devolvió 404; la regla 19 exige mirarlos en el PDF (letras ≥ 7.5 pt, sin cruces, sin palabras partidas, codos en flechas). Aunque el script no bloquea, el revisor debe verificarlos.
+3. **Revisión visual final página a página** pendiente (regla 15): comprobar que no hay páginas con una sola imagen (regla 8), figuras repetidas (regla 10), flechas `->` en vez de `$\rightarrow$` (regla 11), secciones de 1–2 líneas (regla 9), párrafos repetidos entre capítulos.
+
+Correcciones directas del revisor: ninguna (los fallos de diagramas requieren replanteo de código TikZ/sequencediagram; la página 46 ya no se reporta, pero hay que confirmar en la revisión visual final).
+
+Qué ha corregido el constructor en este paso:
+- Eliminó una orden `\ref.` mal formada al final de chapters/04-descripcion.tex que generaba referencia indefinida y `??` en el PDF.
+- (En paso anterior) Reescritura de prosa en 5 flujos del capítulo 4 y manual del juego del capítulo 4b: fusionó párrafos introductorios y repetitivos, integró `\ref` dentro de la frase, eliminó «La figura X muestra…».
+- (En paso anterior) Corregidos dos detalles no en fuentes: ajustes se guardan «en el navegador» (no `localStorage`), y referencia inexistente «tabla 9.6» eliminada.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Replantear los tres diagramas de secuencia con fallos medidos (fig:sec-registro, fig:sec-confirmacion, fig:sec-google) en chapters/04-descripcion.tex:
+  * Aumentar `node distance` vertical ≥ 1.5 cm y horizontal ≥ 2.5 cm (usar `\newinst[2.5]` o similar).
+  * Usar flechas con codos (`|-`, `-|`) para que vayan de caja en caja sin cruzar textos (en pgf-umlsd se logra con `\mess` y `call` anidados; evitar flechas directas que atraviesen participantes).
+  * Etiquetas en `\mess`, `call`, `callself`, `\newinst`: sin acentos, sin paréntesis en `\mess`, sin comandos LaTeX, sin `# & _ $ %` sueltos; usar `\n` para saltos de línea.
+  * Máximo 6 participantes por diagrama (agrupar si hay más).
+  * Usar `\resizebox{\textwidth}{!}{...}` solo para encoger un poco, no para meter más columnas.
+  * Envolver diagramas grandes en `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`.
+- Ejecutar `revisar_umlsd.py` sobre los 9 diagramas pendientes (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+- Revisar visualmente cada uno de esos diagramas en el PDF compilado: comprobar que las letras midan ≥ 7.5 pt, que no hay flechas atravesando cajas, que no hay palabras partidas con guion, que los codos en flechas separan bien las cajas. Replantear los que fallen.
+- Hacer revisión visual final del PDF página a página (regla 15): (a) ninguna página con una sola imagen (regla 8), (b) ninguna figura repetida (regla 10), (c) flechas con `$\rightarrow$` no `->` (regla 11), (d) todo citado con `\ref`, (e) no hay secciones de 1–2 líneas (regla 9), (f) no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` y confirmar que todo pasa (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-23 17:05 · 🧠 Conocimiento guardado
+
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]]

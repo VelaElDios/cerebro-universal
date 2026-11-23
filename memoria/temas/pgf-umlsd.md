@@ -51,4 +51,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[sequencediagram]] · [[diagramas]] · [[maquetacion]] · [[diagramas-secuencia]] · [[secuencia]] · [[verificacion]] · [[memoria-procesos]] · [[pgfplots]] · [[memoria]] · [[codigos estado]]
+[[latex]] · [[tikz]] · [[sequencediagram]] · [[diagramas]] · [[maquetacion]] · [[diagramas-secuencia]] · [[secuencia]] · [[memoria]] · [[verificacion]] · [[memoria-procesos]] · [[pgfplots]] · [[codigos estado]]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T15:31:33+01:00",
+ "generado": "2026-11-23T17:05:41+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2116,7 +2116,8 @@
     "tikz",
     "memoria-procesos",
     "pgfplots",
-    "diagramas"
+    "diagramas",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -6004,7 +6005,7 @@
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 68,
+   "peso": 69,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -13626,6 +13627,11 @@
   {
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
    "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {

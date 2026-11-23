@@ -338,11 +338,11 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[1.5]{fe}{Frontend}
-  \newinst[1.5]{api}{API}
-  \newinst[1.5]{srv}{Servicio}
-  \newinst[1.5]{repo}{Datos}
-  \newinst[1.5]{mail}{Correo}
+  \newinst[2]{fe}{Frontend}
+  \newinst[2]{api}{API}
+  \newinst[2]{srv}{Servicio}
+  \newinst[2]{repo}{Datos}
+  \newinst[2]{mail}{Correo}
   \begin{call}{u}{email y clave}{fe}{ok}
   \end{call}
   \begin{call}{fe}{POST /api/auth/register}{api}{201 o 409}
@@ -787,7 +787,7 @@ Un enlace válido, en cambio, activa la cuenta y redirige a la pantalla de entra
 \label{fig:hito4-estados-privacidad}
 \end{figure}
 
-La confirmación exitosa (subfigura~\ref{fig:hito4-confirmada}) y la creación de cuenta vía Google (subfigura~\ref{fig:hito4-google-creada}) cierran el flujo de alta. El panel de administración (subfigura~\ref{fig:hito4-admin-estados}) muestra todos los estados posibles —activas, pendientes, eliminadas, locales y de Google— para que el administrador identifique de un vistazo las cuentas pendientes de confirmar. La política de privacidad (subfigura~\ref{fig:hito4-privacidad}), accesible desde el pie de página, documenta que el correo no aparece en el ranking y que los logs ocultan contraseñas, cookies y tokens. Estas capturas se muestran una sola vez en la memoria; en el Capítulo~\ref{cap:evaluacion} y el Anexo~\ref{anx:material} se citan con \ref.
+La confirmación exitosa (subfigura~\ref{fig:hito4-confirmada}) y la creación de cuenta vía Google (subfigura~\ref{fig:hito4-google-creada}) cierran el flujo de alta. El panel de administración (subfigura~\ref{fig:hito4-admin-estados}) muestra todos los estados posibles —activas, pendientes, eliminadas, locales y de Google— para que el administrador identifique de un vistazo las cuentas pendientes de confirmar. La política de privacidad (subfigura~\ref{fig:hito4-privacidad}), accesible desde el pie de página, documenta que el correo no aparece en el ranking y que los logs ocultan contraseñas, cookies y tokens. Estas capturas se muestran una sola vez en la memoria; en el Capítulo~\ref{cap:evaluacion} y el Anexo~\ref{anx:material} se citan mediante referencias cruzadas.
 
 Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
 

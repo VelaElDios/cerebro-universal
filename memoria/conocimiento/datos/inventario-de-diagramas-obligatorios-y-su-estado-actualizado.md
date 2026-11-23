@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Inventario de diagramas obligatorios y su estado actualizado"
-temas: ["latex", "maquetacion", "pgf-umlsd", "tikz", "memoria-procesos", "pgfplots", "diagramas"]
+temas: ["latex", "maquetacion", "pgf-umlsd", "tikz", "memoria-procesos", "pgfplots", "diagramas", "memoria"]
 claves: ["fig:capas", "fig:modelo-datos", "fig:sec-registro", "fig:sec-confirmacion", "fig:sec-login", "fig:sec-google", "fig:sec-baja", "fig:sec-partida", "fig:sec-contratar", "fig:juego-arquitectura", "fig:pipeline", "fig:burndown-s1", "fig:burndown-s2"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/chapters/04-descripcion.tex, memoria/chapters/04b-juego.tex, memoria/chapters/05-evaluacion.tex, memoria/chapters/a1-desarrollo.tex", "spec del proyecto y arquitectura.md", "spec del proyecto (figuras con etiqueta fija) y memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado.md"]
@@ -72,5 +72,24 @@ Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual P
   | fig:burndown-s2 | pgfplots | a1-desarrollo.tex | **PENDIENTE** (Gemini 404) |
 
   Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual PDF (reglas 16-18).
+
+## Ampliación (2026-11-23, memoria-procesos)
+| Diagrama | Tipo | Archivo | Estado actual |
+|---|---|---|---|
+| fig:capas | TikZ | 04-descripcion.tex | **PENDIENTE** (Gemini 404, requiere revisión visual) |
+| fig:modelo-datos | TikZ | 04-descripcion.tex | **PENDIENTE** (Gemini 404) |
+| fig:sec-registro | sequencediagram | 04-descripcion.tex | **FALLA MEDIDA** (letras 7.0 pt, flecha cruza «enviado») |
+| fig:sec-confirmacion | sequencediagram | 04-descripcion.tex | **FALLA MEDIDA** (letras 7.5 pt límite) |
+| fig:sec-login | sequencediagram | 04-descripcion.tex | **PENDIENTE** (Gemini 404) |
+| fig:sec-google | sequencediagram | 04-descripcion.tex | **FALLA MEDIDA** (letras 6.2 pt, flecha cruza «verificado») |
+| fig:sec-baja | sequencediagram | 04-descripcion.tex | **PENDIENTE** (Gemini 404) |
+| fig:sec-partida | sequencediagram | 04b-juego.tex | **PENDIENTE** (Gemini 404) |
+| fig:sec-contratar | sequencediagram | 04b-juego.tex | **PENDIENTE** (Gemini 404) |
+| fig:juego-arquitectura | TikZ | 04b-juego.tex | **PENDIENTE** (Gemini 404) |
+| fig:pipeline | TikZ | 05-evaluacion.tex | **PENDIENTE** (Gemini 404) |
+| fig:burndown-s1 | pgfplots | a1-desarrollo.tex | **PENDIENTE** (Gemini 404) |
+| fig:burndown-s2 | pgfplots | a1-desarrollo.tex | **PENDIENTE** (Gemini 404) |
+
+Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual PDF (reglas 16-18).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -111,13 +111,13 @@
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-23",
-  "usos": 10
+  "usos": 11
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-23",
-  "usos": 11
+  "usos": 12
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -159,7 +159,7 @@
   "bien": 6,
   "mal": 1,
   "ultimo": "2026-11-23",
-  "usos": 36
+  "usos": 37
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,
