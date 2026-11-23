@@ -14263,3 +14263,91 @@ Lo que dejo como tareas: corregir fig:sec-login, fig:sec-baja, fig:sec-registro 
 ## 2026-11-23 00:57 · 🧠 Conocimiento guardado
 
 [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]] · [[referencias-rotas-ref-y-ref-causa-y-solucion]] · [[inventario-de-diagramas-obligatorios-y-su-estado]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila]] · [[imagenes-repetidas-una-sola-aparicion-ref-en-el-resto]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]]
+
+## 2026-11-23 02:22 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+He corregido las dos referencias mal formadas de `chapters/04-descripcion.tex` (`\ref.` y `\ref)`) que hacían fallar `verificar.py` con referencias sin resolver y «??» en el PDF. Es la prioridad 1 porque la prueba falla ahora mismo. Sustituyo esas llamadas rotas por una redacción normal que remite al capítulo sin repetir la imagen.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ⚠️ Figuras: no pude revisar Figura 3.2 (fig:modelo-datos): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-flash-lite-latest is not f…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para confirmar que ya no hay referencias sin resolver ni «??» en el PDF; si pasa, el siguiente paso es replantear `fig:sec-login` y `fig:sec-baja` en `chapters/04-descripcion.tex` para cumplir las reglas 16–18 sin escalar el diagrama.
+
+## 2026-11-23 02:25 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (96 páginas, sin errores, solo warnings de fuentes y overfull hbox 10pt en anexo trazabilidad)
+- verificar.py: OK (35 figuras, 29 tablas, 17343 palabras en capítulos+anexos, todas las referencias resueltas tras corrección del constructor)
+- revisar_maquetacion.py: FALLA - 4 diagramas incumplen reglas 16-18 (medidos en PDF):
+  * fig:capas (pág 28): palabras partidas con guion "to-" dentro de cajas
+  * fig:sec-login (pág 38): letras 6.9pt (<7.5 mín), flechas cruzan etiqueta "invalidas"
+  * fig:sec-baja (pág 40): letras 7.5pt (límite), flechas cruzan "403" y "204"
+  * fig:juego-arquitectura (pág 53): flechas cruzan texto "sprites.js,"
+- 9 diagramas no revisados por Gemini (modelo 404): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2
+- Contraste con fuentes (25+ datos):
+  1. Sprint 1: 19 PBIs P1–P19, 32 tareas T1–T32 → sprint-1.md tabla backlog
+  2. Sprint 2: 29 PBIs P20–P48, 50 tareas T33–T82 → sprint-2.md tabla backlog
+  3. Fechas Sprint 1: 29/09–27/10/2026 → sprint-1.md cabecera
+  4. Fechas Sprint 2: 23/10–29/10/2026 → sprint-2.md cabecera
+  5. Hito 4 completado 23/10/2026 → sprint-1.md §Hito 4
+  6. P19 (Cloud Run) añadido a mitad de sprint → decisiones.md D-16
+  7. Backlog Sprint 2 registrado en DoneTonic al cierre (29/10) → decisiones.md D-19
+  8. 276 pruebas en main al cierre Sprint 2 → sprint-2.md métricas
+  9. 322 pruebas tras Fase 7 → log.md 2026-11-03
+  10. RF-01 a RF-13 en tabla 04-descripcion.tex → requisitos.md §Requisitos funcionales Sprint 1
+  11. RJ-01 a RJ-20 en tabla 04-descripcion.tex → requisitos.md §Requisitos funcionales juego
+  12. RNF-01 a RNF-12 en tabla 04-descripcion.tex → requisitos.md §Requisitos no funcionales
+  13. 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → sprint-2.md métricas
+  14. URL producción: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app → sprint-1.md
+  15. Repositorio: https://github.com/VelaElDios/la-grada-colchonera-saas → sprint-1.md
+  16. Resumen 198 palabras (≥150), Abstract 156 palabras (≥120) → elements/preambulo.tex
+  17. Anexo trazabilidad: 82 filas (T1–T82) → a4-trazabilidad.tex
+  18. Anexo desarrollo: dos sprints mismo esquema, explica recta Sprint 2 → a1-desarrollo.tex
+  19. Capturas app/: 13, hito4/: 11, juego/: 16, donetonic/: 8, produccion/: 3, prueba-tecnica/: 2, fase7/: 12 → docs/capturas/README.md
+  20. Diagramas secuencia obligatorios: fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar → arquitectura.md §Flujos
+  21. Diagramas TikZ/pgfplots obligatorios: fig:capas, fig:modelo-datos, fig:pipeline, fig:burndown-s1, fig:burndown-s2 → spec y arquitectura.md
+  22. DoneTonic espacio TFG, equipo Colchoneros → sprint-1.md
+  23. Cambio enfoque red social → juego: 3 motivos → decisiones.md D-15
+  24. Arquitectura capas: API→lógica→datos/integraciones → arquitectura.md §Vista general
+  25. Seguridad: bcrypt, cookie httpOnly/secure/sameSite, regeneración sesión, permisos servidor → arquitectura.md §Seguridad
+  26. Concurrencia optimista en juego_perfiles.version → arquitectura.md §Servidor juego
+  27. Simulación determinista paso fijo 1/60s con semilla → arquitectura.md §Arquitectura juego
+  28. Gráficos y sonido generados por código → decisiones.md D-14
+  29. Muñecos chibi 32×32 sin piernas (Fase 7) → decisiones.md D-21
+  30. Tope bajas calculado con bajasPosibles en config.js → decisiones.md D-22
+
+Qué está bien: La estructura general compila (96 páginas), `verificar.py` pasa todos los conteos, portada única implementada correctamente, Resumen/Abstract cumplen mínimos, anexos tienen contenido requerido, trazabilidad completa 82 tareas, datos numéricos contrastados con fuentes (30 comprobaciones arriba). El constructor corrigió las dos referencias rotas (`\ref{.}` y `\ref{)}`) que hacían fallar `verificar.py`.
+
+Qué está mal (bloquea TERMINADO):
+1. **4 diagramas miden mal en PDF** (reglas 16-18): fig:capas (palabras partidas), fig:sec-login (letras 6.9pt + flechas cruzan), fig:sec-baja (letras 7.5pt + flechas cruzan), fig:juego-arquitectura (flechas cruzan texto).
+2. **9 diagramas pendientes de revisión visual** (Gemini 404): deben validarse con `revisar_umlsd.py` y ojo.
+3. Cadenas "La figura X muestra..." aún presentes en capítulos no corregidos (01, 03, 05, 06, anexos).
+
+Lo que corrijo yo (2 archivos): replanteo los 4 diagramas que fallan en medición PDF sin escalar (menos participantes, etiquetas ≤2 líneas, más separación, codos en flechas, `\mbox{}`, fuente ≥`\scriptsize`).
+
+Lo que dejo como tareas: validar 9 diagramas no revisados; corregir fig:sec-google, fig:sec-registro, fig:sec-confirmacion, fig:pipeline, fig:burndown-s1, fig:burndown-s2; eliminar cadenas "La figura X muestra..." en capítulos restantes; ejecutar `comando_prueba` completo; revisión visual PDF página a página.
+
+**Correcciones del revisor:** `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04-descripcion.tex`, `(deshecho: rompía la compilación) (cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Validar 9 diagramas no revisados por Gemini con `revisar_umlsd.py` y revisión visual PDF: fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2.
+- Replantear fig:sec-google (04-descripcion.tex): ≤5 participantes, etiquetas ≤2 líneas, flechas con codos, `\scriptsize`, `adjustbox{max width=\textwidth, max totalheight=0.6\textheight}`.
+- Replantear fig:sec-registro y fig:sec-confirmacion (04-descripcion.tex): mismo patrón que fig:sec-login corregido.
+- Replantear fig:pipeline (05-evaluacion.tex): aumentar `text width` nodo deploy a 3.6cm, `\mbox{Artifact}` ya hecho, flechas con codos, etiquetas ≤2 líneas.
+- Replantear fig:burndown-s1 y fig:burndown-s2 (a1-desarrollo.tex): pgfplots con fuentes ≥8pt, ejes legibles, sin overfull.
+- Eliminar cadenas "La figura X muestra..." en capítulos 01, 03, 05, 06 y anexos; integrar capturas en prosa con `\ref`.
+- Ejecutar `comando_prueba` y confirmar: compilación sin overfull hbox >5pt, `verificar.py` OK, `revisar_maquetacion.py` OK (diagramas reglas 16-18 corregidos).
+- Revisión visual obligatoria del PDF página a página: sin páginas con una sola imagen (regla 8), sin secciones de 1-2 líneas (regla 9), sin figuras repetidas (regla 10), flechas son `$\rightarrow$` (regla 11), diagramas legibles a tamaño real (regla 16).
+- Verificar mínimos de capturas por carpeta y referencias `\ref` cruzadas correctas (DoneTonic solo en cap:propuesta y anexo desarrollo; producción solo en cap:evaluacion).
+- Confirmar anexo desarrollo (a1-desarrollo.tex) tiene dos secciones sprint con mismo esquema y explica recta Sprint 2.
+
+## 2026-11-23 02:25 · 🧠 Conocimiento guardado
+
+[[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[inventario-de-diagramas-obligatorios-y-su-estado]]

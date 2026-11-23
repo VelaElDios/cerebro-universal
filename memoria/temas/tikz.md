@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 29
+notas: 30
 ---
 # tikz
 
@@ -41,6 +41,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
+
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 

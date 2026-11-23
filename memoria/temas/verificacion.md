@@ -48,4 +48,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[metricas]] · [[test]] · [[memoria-procesos]] · [[métricas]] · [[trazabilidad]] · [[calidad]] · [[sus]]
+[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[metricas]] · [[test]] · [[memoria-procesos]] · [[pgf-umlsd]] · [[métricas]] · [[trazabilidad]] · [[calidad]]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T01:17:48+01:00",
+ "generado": "2026-11-23T02:25:28+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1570,7 +1570,8 @@
    "temas": [
     "fuentes",
     "metricas",
-    "verificacion"
+    "verificacion",
+    "datos"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1952,7 +1953,10 @@
    "temas": [
     "diagramas",
     "latex",
-    "verificacion"
+    "verificacion",
+    "pgf-umlsd",
+    "pgfplots",
+    "tikz"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5648,14 +5652,14 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 29,
+   "peso": 30,
    "ruta": "memoria/temas/tikz.md"
   },
   {
    "id": "tema:pgfplots",
    "tipo": "tema",
    "titulo": "pgfplots",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/pgfplots.md"
   },
   {
@@ -5718,7 +5722,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 21,
+   "peso": 22,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -5739,7 +5743,7 @@
    "id": "tema:datos",
    "tipo": "tema",
    "titulo": "datos",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/datos.md"
   },
   {
@@ -11579,6 +11583,11 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -12870,6 +12879,21 @@
   {
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
    "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
+   "a": "tema:tikz",
    "tipo": "trata"
   },
   {

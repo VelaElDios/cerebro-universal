@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (para COMPROBACIONES)"
-temas: ["fuentes", "metricas", "verificacion"]
+temas: ["fuentes", "metricas", "verificacion", "datos"]
 claves: ["19 PBIs", "29 PBIs", "82 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints", "36 jugadores", "29 logros"]
 proyectos: ["memoria-procesos"]
-fuentes: ["sprint-1.md, sprint-2.md, procesos.md, log.md, juego.md, arquitectura.md"]
+fuentes: ["sprint-1.md, sprint-2.md, procesos.md, log.md, juego.md, arquitectura.md", "sprint-1.md, sprint-2.md, log.md, requisitos.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -47,5 +47,21 @@ Todas estas cifras deben aparecer **tal cual** en el texto; no redondear ni camb
 
 > 19 PBIs en el Sprint 1, pero el burndown de la entrega cuenta 16 (P1–P14, P18 y P19); 32 + 50 = 82 tareas; 276 pruebas en main al cierre Sprint 2, 322 tras Fase 7.
 > — `sprint-1.md, sprint-2.md, procesos.md, log.md, juego.md, arquitectura.md` (cita sin comprobar)
+
+## Ampliación (2026-11-23, memoria-procesos)
+|
+  - Sprint 1: 19 PBIs, 32 tareas, fechas 29/09–27/10/2026, Hitos 1–4
+  - Sprint 2: 29 PBIs, 50 tareas, fechas 23/10–29/10/2026, 6 fases + Calidad
+  - Burndown entrega Sprint 1: 16 PBIs (P1–P14, P18, P19) porque P15–P17 son Hito 4
+  - Pruebas: 140 Sprint 1 + 136 juego hasta Fase 6 = 276; +46 Fase 7 = 322
+  - URL producción: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app
+  - Repositorio: https://github.com/VelaElDios/la-grada-colchonera-saas
+  - DoneTonic: espacio TFG, equipo Colchoneros
+  - Cambio alcance P19 (Cloud Run) a mitad Sprint 1 → decisiones.md D-16
+  - Backlog Sprint 2 registrado en DoneTonic al cierre (29/10) → decisiones.md D-19
+  - Resumen: 198 palabras (≥150), Abstract: 156 palabras (≥120)
+  - Anexo trazabilidad: 82 filas (T1–T82)
+  - Capturas: app/ 13, hito4/ 11, juego/ 16, donetonic/ 8, produccion/ 3, prueba-tecnica/ 2, fase7/ 12
+relacionado: Inventario de diagramas obligatorios y su estado, Validación final del PDF antes de marcar terminado
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
