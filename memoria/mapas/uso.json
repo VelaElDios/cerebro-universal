@@ -102,16 +102,16 @@
   "usos": 1
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado.md": {
-  "bien": 5,
+  "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-23",
-  "usos": 7
+  "usos": 8
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
-  "bien": 5,
+  "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-23",
-  "usos": 9
+  "usos": 10
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -150,10 +150,10 @@
   "usos": 3
  },
  "memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin.md": {
-  "bien": 5,
+  "bien": 6,
   "mal": 1,
   "ultimo": "2026-11-23",
-  "usos": 33
+  "usos": 34
  },
  "memoria/conocimiento/decisiones/arquitectura-en-capas-con-inyeccion-de-dependencias-permitio.md": {
   "bien": 0,

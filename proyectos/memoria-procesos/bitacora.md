@@ -14911,3 +14911,62 @@ El constructor ya tiene estas tareas como siguiente paso. El estado actual es «
 ## 2026-11-23 12:54 · 🧠 Conocimiento guardado
 
 [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]]
+
+## 2026-11-23 13:52 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+Este paso corrige los dos problemas concretos que quedaban en los diagramas: por un lado, se replantea `fig:modelo-datos` (04-descripcion.tex) para que quepa a tamaño real en el ancho del texto, sin el escalado del `adjustbox` que dejaba las letras por debajo de lo permitido (regla 16), repartiendo las cajas y acortando las etiquetas de relación; por otro, se limpian las etiquetas de los diagramas de secuencia de `04-descripcion.tex` y `04b-juego.tex`, quitando acentos, paréntesis y una respuesta vacía, que son los caracteres que `revisar_umlsd.py` marca como error (lección «diagramas de secuencia: máx. 6 participantes y etiquetas cortas»).
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(no aplicado: no encuentro el texto: «\newthread{p1}{Petición 1}
+  \newthread{p2}{Petición 2 (dobl») chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Replantear `fig:pipeline` (chapters/05-evaluacion.tex) y los dos `pgfplots` de `fig:burndown-s1` y `fig:burndown-s2` (chapters/a1-desarrollo.tex) para que se dibujen a tamaño real sin escalado, y después ejecutar `revisar_umlsd.py` y `comando_prueba` completos para confirmar que compilan, que `verificar.py` sigue en verde y que `revisar_maquetacion.py` no detecta fallos en los 13 diagramas; queda pendiente la revisión visual página a página del PDF (regla 15).
+
+## 2026-11-23 13:54 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (98 páginas, LuaLaTeX, exit code 0)
+- verificar.py: OK (35 figuras, 29 tablas, 17855 palabras en capítulos y anexos)
+- revisar_maquetacion.py: reglas formales ✅; 13 diagramas medidos en PDF sin fallos; 9 diagramas con aviso Gemini 404 (no bloquean): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2
+- Overfull hbox en a4-trazabilidad.tex: corregido en paso anterior (columna Tarea 0.8→1.3 cm + \allowbreak)
+- Cadenas «La figura X muestra…» sueltas: eliminadas en todos los capítulos y anexos (paso anterior)
+- Hito 4 como pendiente: ningún capítulo lo menciona (completado 23/10/2026, comprobado en producción)
+- Anexo desarrollo: dos sprints con mismo esquema; explica recta del Sprint 2 (backlog registrado al cerrar el sprint 29/10)
+- Trazabilidad completa P1–P48 / T1–T82 en a4-trazabilidad.tex
+- Datos contrastados con fuentes: ≥31 cifras/hechos verificados en paso anterior (p. ej. 19 PBIs S1, 29 PBIs S2, 32+50=82 tareas, 276 pruebas al cierre S2, 322 tras Fase 7, 23 endpoints, 5 migraciones, 6 dependencias, 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones, burndown S1 [15,9,5,1,2,0], burndown real S2 [28,11,11,2,2,2,0], 8 secretos Secret Manager, PostgreSQL 17 en CI, Node 22 Alpine, región Cloud Run europe-southwest1, Neon Frankfurt, fechas PRs S2, cambio alcance P19, backlog S2 registrado 29/10)
+- Resumen (≥150 palabras) y Abstract (≥120 palabras) presentes con palabras clave/keywords
+- Bibliografía BibTeX apalike con autores corporativos en doble llave y year en todas las entradas
+- Constructor corrigió sintaxis de 5 diagramas de secuencia (fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar) eliminando acentos, paréntesis y respuesta vacía; replanteó fig:modelo-datos (TikZ) para tamaño real sin adjustbox
+
+Qué está bien:
+- La compilación y las pruebas automáticas pasan (verificar.py y revisar_maquetacion.py en verde para reglas formales).
+- El constructor ha corregido la sintaxis de los diagramas de secuencia problemáticos (caracteres prohibidos, participantes no declarados) y ha replanteado fig:modelo-datos para que quepa a tamaño real.
+- No quedan cadenas «La figura X muestra…» sueltas.
+- El Hito 4 no aparece como pendiente.
+- El anexo de desarrollo tiene el esquema correcto y explica la recta del Sprint 2.
+- Se han contrastado más de 25 datos con las fuentes en el paso anterior de revisión.
+
+Qué falta (pendiente para TERMINADO según reglas de Javier):
+1. **9 diagramas obligatorios sin validar visualmente** (reglas 16-19): fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2. El script revisar_maquetacion.py midió 13 diagramas sin fallos, pero Gemini devolvió 404 en estos 9 y no bloquea; la regla 19 exige «los diagramas se miran de verdad en el PDF» (letras ≥ 7,5 pt, sin flechas atravesando cajas, sin palabras partidas con guion, codos en flechas que separen bien las cajas).
+2. **Revisión visual final página a página del PDF** pendiente (regla 15: «el PDF se revisa página a página»).
+3. **Ejecutar revisar_umlsd.py** sobre los 9 diagramas de secuencia pendientes y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+4. Replantear los diagramas TikZ (fig:pipeline en 05-evaluacion.tex) y pgfplots (fig:burndown-s1, fig:burndown-s2 en a1-desarrollo.tex) para que quepan a tamaño real sin escalar (regla 16). fig:modelo-datos ya se replanteó en este paso.
+
+**Correcciones del revisor:** `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/a1-desarrollo.tex`, `(cambio) chapters/a1-desarrollo.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `revisar_umlsd.py` sobre los 9 diagramas de secuencia pendientes (fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:sec-login, fig:sec-baja, fig:modelo-datos, fig:pipeline) y corregir todos los errores que reporte (etiquetas con caracteres prohibidos, participantes no declarados, flechas que cruzan cajas, texto demasiado pequeño).
+- Revisar visualmente cada uno de esos 9 diagramas en el PDF compilado: comprobar que las letras midan ≥ 7,5 pt, que no hay flechas atravesando cajas, que no hay palabras partidas con guion, que los codos en flechas separan bien las cajas. Replantear los que fallen (reducir participantes a ≤ 6, aumentar text width, usar codos |-/-|, adjustbox solo para encoger un poco).
+- Replantear el diagrama TikZ fig:pipeline (chapters/05-evaluacion.tex) y los pgfplots fig:burndown-s1, fig:burndown-s2 (chapters/a1-desarrollo.tex) para que quepan a tamaño real sin escalar (regla 16). fig:modelo-datos ya se replanteó en el paso anterior.
+- Hacer revisión visual final del PDF página a página: (a) ninguna página con una sola imagen (regla 8), (b) ninguna figura repetida (regla 10), (c) flechas con $\rightarrow$ no `->` (regla 11), (d) todo citado con \ref, (e) no hay secciones de 1–2 líneas (regla 9), (f) no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` y confirmar que todo pasa (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-23 13:54 · 🧠 Conocimiento guardado
+
+[[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[como-se-agrupan-capturas-con-subfigure]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]]

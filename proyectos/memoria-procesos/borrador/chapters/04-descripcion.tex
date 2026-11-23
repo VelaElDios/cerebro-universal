@@ -190,23 +190,25 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
+\begin{adjustbox}{max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=2.0cm, align=left, font=\footnotesize, text width=4.5cm, inner sep=3pt},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\footnotesize, text width=3.2cm, inner sep=3pt},
+    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\footnotesize, text width=4.6cm, inner sep=3pt},
     pk/.style={font=\footnotesize\bfseries},
     uk/.style={font=\footnotesize\itshape},
-    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
+    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema},
+    rel/.style={font=\scriptsize, inner sep=1pt}
 ]
-    % Layout: session (izquierda), users (centro), perfiles (derecha), records (debajo de users).
-    % Las cajas están separadas y cada etiqueta de relación va dentro del hueco entre
-    % dos cajas, de modo que ni la flecha ni el texto tocan el contenido de las entidades.
-    \node[entity] (session) at (-6.6,0) {
+    % Layout horizontal: session (izquierda), users (centro) y juego_perfiles (derecha),
+    % con juego_records debajo de users. Las cajas se reparten en el ancho del texto y
+    % las etiquetas de relación van en el hueco entre dos cajas, sin tocar su contenido.
+    \node[entity] (session) at (-5.9,0) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \texttt{sess JSON}\\
         \texttt{expire TIMESTAMP}
     };
-    \node[entity] (users) at (0,0) {
+    \node[entitywide] (users) at (0,0) {
         \textbf{users}\\
         \pk id UUID PK\\
         \texttt{email TEXT} \uk (único entre no eliminadas)\\
@@ -220,14 +222,14 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{apodo\_clave TEXT} \uk\\
         \texttt{avatar TEXT}
     };
-    \node[entity] (perfiles) at (7.4,0) {
+    \node[entity] (perfiles) at (5.9,0) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \texttt{datos JSONB}\\
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entity] (records) at (0,-7.6) {
+    \node[entitywide] (records) at (0,-7.0) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \texttt{alias TEXT}\\
@@ -238,13 +240,12 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    % users -> perfiles: flecha horizontal entre cajas vecinas, etiqueta en el hueco.
-    \draw[arrow] (users.east) -- node[above, font=\footnotesize] {tiene su club} (perfiles.west);
-    % users -> records: flecha vertical; la etiqueta queda a la izquierda, en el espacio
-    % libre que hay entre la caja users y la caja juego_records.
-    \draw[arrow] (users.south) -- node[left, font=\footnotesize, pos=0.5] {tiene su mejor partida} (records.north);
-    % session -> users: la sesión guarda el userId (y el state durante el acceso con Google).
-    \draw[arrow, dashed] (session.east) -- node[above, font=\footnotesize] {userId} (users.west);
+    % Relación 1 a 1 con el perfil del juego: la etiqueta va en el hueco entre las cajas.
+    \draw[arrow] (users.east) -- node[above, rel] {su club} (perfiles.west);
+    % Relación 1 a 1 con la mejor partida: la etiqueta queda a la izquierda de la flecha.
+    \draw[arrow] (users.south) -- node[left, rel, pos=0.5] {su mejor partida} (records.north);
+    % La sesión guarda el userId (y el state durante el acceso con Google).
+    \draw[arrow, dashed] (session.east) -- node[above, rel] {userId} (users.west);
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
@@ -356,7 +357,7 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
     \begin{sdblock}{else}{nuevo}
       \begin{call}{srv}{hash y crea}{repo}{usuario}
       \end{call}
-      \begin{call}{srv}{firma HMAC y envía}{mail}{enviado}
+      \begin{call}{srv}{firma HMAC y envia}{mail}{enviado}
       \end{call}
       \mess{api}{201}{fe}
     \end{sdblock}
@@ -390,12 +391,12 @@ Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la c
   \newinst[2]{ui}{Vista}
   \begin{call}{u}{abre enlace}{api}{redirige}
   \end{call}
-  \begin{call}{api}{verifica HMAC}{tok}{válido o nulo}
+  \begin{call}{api}{verifica HMAC}{tok}{valido o nulo}
   \end{call}
-  \begin{sdblock}{alt}{no válido}
-    \mess{api}{303 enlace no válido}{u}
+  \begin{sdblock}{alt}{no valido}
+    \mess{api}{303 enlace no valido}{u}
   \end{sdblock}
-  \begin{sdblock}{else}{válido}
+  \begin{sdblock}{else}{valido}
     \begin{call}{api}{activa cuenta}{srv}{ok}
     \end{call}
     \mess{api}{303 cuenta confirmada}{u}
@@ -427,7 +428,7 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
   \begin{call}{u}{email y clave}{fe}{ok}
   \end{call}
   \begin{call}{fe}{POST /api/auth/login}{api}{200 / 401 / 403}
-    \begin{call}{api}{authenticate()}{srv}{usuario / error}
+    \begin{call}{api}{authenticate}{srv}{usuario / error}
     \end{call}
   \end{call}
   \begin{sdblock}{alt}{credenciales invalidas}
@@ -479,7 +480,7 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
   \end{call}
   \begin{call}{api}{compara y borra state}{ses}{ok o fallo}
   \end{call}
-  \begin{sdblock}{alt}{state inválido}
+  \begin{sdblock}{alt}{state invalido}
     \mess{api}{303 error}{u}
   \end{sdblock}
   \begin{sdblock}{else}{state ok}
@@ -487,7 +488,7 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
     \end{call}
     \begin{call}{api}{loginWithOAuth}{srv}{usuario}
     \end{call}
-    \begin{call}{api}{regenera sesión}{ses}{ok}
+    \begin{call}{api}{regenera sesion}{ses}{ok}
     \end{call}
     \mess{api}{303 a jugar}{u}
   \end{sdblock}

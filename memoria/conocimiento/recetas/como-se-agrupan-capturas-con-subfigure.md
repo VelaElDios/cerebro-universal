@@ -1,13 +1,13 @@
 ---
 tipo: "receta"
 titulo: "Cómo se agrupan capturas con subfigure"
-temas: ["figura", "latex", "subcaption", "subfigure"]
+temas: ["figura", "latex", "subcaption", "subfigure", "figuras"]
 claves: ["subfigure", "subcaption", "agrupación", "caption general"]
 proyectos: ["memoria-procesos"]
-fuentes: ["chapters/04-descripcion.tex"]
-confianza: "propuesto"
+fuentes: ["chapters/04-descripcion.tex", "memoria/chapters/04-descripcion.tex"]
+confianza: "verificado"
 fecha: "2026-11-17"
-actualizado: "2026-11-20"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[figura]] · [[latex]] · [[subcaption]]
@@ -21,5 +21,14 @@ Relacionado: [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] ·
 
 ## Ampliación (2026-11-20, memoria-procesos)
 Para evitar cadenas de «La figura X muestra…», agrupar capturas relacionadas en una figura con `subfigure` (de `subcaption`, ya cargado; dos por fila, `\begin{subfigure}{0.48\textwidth}`), con un caption general y uno por subfigura. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así.
+
+## Ampliación (2026-11-23, memoria-procesos)
+Para agrupar capturas relacionadas en una figura con caption general y subcaptions:
+1. Usar entorno `figure` con `[htbp]`.
+2. Dentro, dos `subfigure` con `{0.48\textwidth}` separados por `\hfill` (o `\\` para filas).
+3. Cada `subfigure` lleva su `\includegraphics` con `width=\linewidth,height=0.35\textheight,keepaspectratio` (móvil) o `width=0.9\textwidth,height=0.42\textheight,keepaspectratio` (escritorio).
+4. `\subcaption{...}` y `\label{fig:...}` por subfigura.
+5. `\caption{...}` y `\label{fig:...}` general al final del entorno `figure`.
+6. Citar en texto con `\ref{fig:general}` o `\ref{fig:sub}`.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

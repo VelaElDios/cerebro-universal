@@ -22,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «alcance» (este archivo s
 
 ## Temas relacionados
 
-[[sprint]] · [[grada-colchonera]] · [[saas]] · [[tfg]] · [[memoria]] · [[latex]] · [[scrum]] · [[sprints]] · [[memoria-procesos]] · [[decision]] · [[estructura]] · [[entrega]]
+[[sprint]] · [[grada-colchonera]] · [[saas]] · [[tfg]] · [[memoria]] · [[latex]] · [[scrum]] · [[sprints]] · [[memoria-procesos]] · [[decision]] · [[estructura]] · [[reglas-javier]]

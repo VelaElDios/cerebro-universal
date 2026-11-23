@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T12:54:50+01:00",
+ "generado": "2026-11-23T13:54:22+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2618,7 +2618,8 @@
     "alcance",
     "sprint",
     "sprints",
-    "memoria-procesos"
+    "memoria-procesos",
+    "reglas-javier"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4750,12 +4751,13 @@
     "figura",
     "latex",
     "subcaption",
-    "subfigure"
+    "subfigure",
+    "figuras"
    ],
    "proyectos": [
     "memoria-procesos"
    ],
-   "confianza": "propuesto",
+   "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure.md"
   },
   {
@@ -6157,7 +6159,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 25,
+   "peso": 26,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6185,7 +6187,7 @@
    "id": "tema:reglas-javier",
    "tipo": "tema",
    "titulo": "reglas-javier",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/reglas-javier.md"
   },
   {
@@ -15095,6 +15097,11 @@
   },
   {
    "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
+   "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -21756,6 +21763,11 @@
   {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
    "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-se-agrupan-capturas-con-subfigure",
+   "a": "tema:figuras",
    "tipo": "trata"
   },
   {

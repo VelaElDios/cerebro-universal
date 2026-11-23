@@ -4,7 +4,7 @@ titulo: "Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en 
 temas: ["donetonic", "metricas", "retrospectiva", "scrum", "burndown", "memoria-procesos", "sprint-2"]
 claves: ["recta DoneTonic", "backlog registrado al cierre", "evolución real por PRs"]
 proyectos: ["memoria-procesos"]
-fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2", "repo:saas/docs/sprint-2.md y repo:saas/docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md (D-19)", "docs/sprint-2.md §Retrospectiva y docs/decisiones.md D-19"]
+fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2", "repo:saas/docs/sprint-2.md y repo:saas/docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md (D-19)", "docs/sprint-2.md §Retrospectiva y docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -37,5 +37,12 @@ En el anexo de desarrollo (a1-desarrollo.tex) se debe incluir: (1) la tabla de e
   - Cuál es la evolución real (tabla con fechas de fusión de PRs: 23/10 PR#36, 24/10 PRs#44–#52, 26/10 PRs#53–#54, 27/10 PR#55, 29/10 PR#56).
   - Que esto se debe a que el juego se programó del 23 al 26/10 antes de que el profesor fijara el contenido del Sprint 2 (decisión D-19).
   - La Figura~\ref{fig:burndown-s2} (pgfplots) muestra la evolución real; la Figura~\ref{fig:donetonic-s2-graficas} (captura) muestra la recta de DoneTonic.
+
+## Ampliación (2026-11-23, memoria-procesos)
+En el anexo de desarrollo (a1-desarrollo.tex) se debe incluir obligatoriamente:
+1. La tabla de evolución real (Tabla~\ref{tab:evolucion-s2}) con PBIs pendientes por fecha de fusión del último PR de cada PBI.
+2. El gráfico burndown real (Figura~\ref{fig:burndown-s2}) con pgfplots.
+3. La explicación textual: «El backlog del Sprint 2 se registró en DoneTonic al cerrar el sprint (29/10/2026) con todos los PBIs ya en Hecho; por eso sus gráficas de Sprint Burndown y Burnup caen en recta de 29 a 0 ese mismo día. La evolución real, reconstruida a partir de las fechas de fusión de los pull requests en main, se detalla en la Tabla~\ref{tab:evolucion-s2} y la Figura~\ref{fig:burndown-s2}.»
+4. Las capturas de DoneTonic del Sprint 2 (gráficas en recta y tablero) se muestran una sola vez en el anexo, con `\ref` desde otros capítulos.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

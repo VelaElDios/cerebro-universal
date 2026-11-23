@@ -11,7 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subfigure» (este archivo
 
 - 🧪 [[memoria/conocimiento/recetas/cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v|Cada \label de subfigura necesita su propio \ref en el texto (verificar.py lo exige)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
-- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]]
 - 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas: agrupar capturas relacionadas con `subfigure` en LaTeX]]
 
 ## Decisiones (y por qué)
@@ -25,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subfigure» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[subcaption]] · [[memoria]] · [[redaccion]] · [[figuras]] · [[verificar]] · [[tfg]] · [[maquetacion]] · [[capturas]] · [[reglas-javier]] · [[refs]] · [[figura]]
+[[latex]] · [[subcaption]] · [[figuras]] · [[memoria]] · [[redaccion]] · [[verificar]] · [[tfg]] · [[maquetacion]] · [[capturas]] · [[reglas-javier]] · [[refs]] · [[figura]]

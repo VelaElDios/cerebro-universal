@@ -4,7 +4,7 @@ titulo: "Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes
 temas: ["latex", "pgf-umlsd", "sequencediagram", "verificacion"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock", "revisar_umlsd.py"]
 proyectos: ["memoria-procesos"]
-fuentes: ["spec versión 4 (ejemplo compilado) y revisar_umlsd.py", "spec del proyecto (ejemplo compilado)"]
+fuentes: ["spec versión 4 (ejemplo compilado) y revisar_umlsd.py", "spec del proyecto (ejemplo compilado)", "memoria/chapters/04-descripcion.tex"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -71,5 +71,18 @@ Reglas de sintaxis (comprobadas por revisar_umlsd.py):
 - Todo participante usado debe estar declarado en ese diagrama.
 - Envolver diagramas grandes en `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=\textwidth, max totalheight=0.6\textheight}`.
 - Fuente: `\scriptsize` o `\footnotesize` antes de `\begin{sequencediagram}` para letras ≥8pt en PDF.
+
+## Ampliación (2026-11-23, memoria-procesos)
+Reglas obligatorias para que `revisar_umlsd.py` pase:
+- Entorno: `sequencediagram` (minúsculas).
+- Participantes: `\newthread{id}{Nombre}` o `\newinst[desplazamiento]{id}{Nombre}`. Todos los usados deben estar declarados.
+- Llamadas anidadas: `\begin{call}{origen}{mensaje}{destino}{respuesta} ... \end{call}`.
+- Mensajes sueltos: `\mess{origen}{mensaje}{destino}`.
+- Bloques alternativos: `\begin{sdblock}{alt}{condición} ... \end{sdblock}` (no existe entorno `alt`).
+- En textos de `\mess`, `call`, `callself`, `\newinst`: **nada de** `\#`, `\_`, `\&`, `\%`, `\$`, `\{`, `\}`, comandos LaTeX (`\texttt`...), `#`, `&`, `_`, `$` sueltos. En `\mess` tampoco paréntesis.
+- Acentos y caracteres especiales: evitarlos; usar ASCII simple.
+- Etiquetas largas: saltos de línea con `\n` dentro del texto.
+- Si el diagrama es ancho: `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=\textwidth,max totalheight=0.6\textheight}`.
+- Máximo 6 participantes por diagrama (regla 16 Javier); si hay más, agrupar o dividir.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
