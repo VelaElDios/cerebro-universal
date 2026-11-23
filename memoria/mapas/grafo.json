@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T04:50:37+01:00",
+ "generado": "2026-11-23T06:01:49+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -109,6 +109,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/lecciones/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas.md"
+  },
+  {
+   "id": "leccion:cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto",
+   "tipo": "leccion",
+   "titulo": "Cada subfigura (\\subcaption) necesita su propio \\ref en el texto",
+   "temas": [
+    "latex",
+    "subcaption",
+    "subfigure",
+    "verificar"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto.md"
   },
   {
    "id": "leccion:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
@@ -1928,6 +1944,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas.md"
+  },
+  {
+   "id": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "tipo": "dato",
+   "titulo": "Gemini 404 en revisar_figuras no bloquea, pero la revisión a ojo del PDF sigue siendo obligatoria",
+   "temas": [
+    "latex",
+    "reglas-javier",
+    "revisar-figuras",
+    "revision"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a.md"
   },
   {
    "id": "dato:grupos-de-rutas-de-la-api-y-sus-accesos",
@@ -3906,6 +3938,23 @@
    "ruta": "memoria/conocimiento/recetas/cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p.md"
   },
   {
+   "id": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "tipo": "receta",
+   "titulo": "Cada \\label de subfigura necesita su propio \\ref en el texto (verificar.py lo exige)",
+   "temas": [
+    "latex",
+    "refs",
+    "subcaption",
+    "subfigure",
+    "verificar"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v.md"
+  },
+  {
    "id": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",
    "tipo": "receta",
    "titulo": "Capítulo 3: Propuesta, metodología Scrum y herramientas sin detalles técnicos",
@@ -5789,7 +5838,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 163,
+   "peso": 166,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5854,6 +5903,27 @@
    "titulo": "bibtex",
    "peso": 8,
    "ruta": "memoria/temas/bibtex.md"
+  },
+  {
+   "id": "tema:subcaption",
+   "tipo": "tema",
+   "titulo": "subcaption",
+   "peso": 10,
+   "ruta": "memoria/temas/subcaption.md"
+  },
+  {
+   "id": "tema:subfigure",
+   "tipo": "tema",
+   "titulo": "subfigure",
+   "peso": 7,
+   "ruta": "memoria/temas/subfigure.md"
+  },
+  {
+   "id": "tema:verificar",
+   "tipo": "tema",
+   "titulo": "verificar",
+   "peso": 3,
+   "ruta": "memoria/temas/verificar.md"
   },
   {
    "id": "tema:metricas",
@@ -5999,14 +6069,14 @@
    "id": "tema:revision",
    "tipo": "tema",
    "titulo": "revision",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/revision.md"
   },
   {
    "id": "tema:reglas-javier",
    "tipo": "tema",
    "titulo": "reglas-javier",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/reglas-javier.md"
   },
   {
@@ -6717,13 +6787,6 @@
    "ruta": "memoria/temas/hitos.md"
   },
   {
-   "id": "tema:verificar",
-   "tipo": "tema",
-   "titulo": "verificar",
-   "peso": 1,
-   "ruta": "memoria/temas/verificar.md"
-  },
-  {
    "id": "tema:memoria-procesos",
    "tipo": "tema",
    "titulo": "memoria-procesos",
@@ -6806,6 +6869,13 @@
    "titulo": "sprint1",
    "peso": 1,
    "ruta": "memoria/temas/sprint1.md"
+  },
+  {
+   "id": "tema:revisar-figuras",
+   "tipo": "tema",
+   "titulo": "revisar-figuras",
+   "peso": 1,
+   "ruta": "memoria/temas/revisar-figuras.md"
   },
   {
    "id": "tema:produccion",
@@ -6988,13 +7058,6 @@
    "titulo": "reglas-tfg",
    "peso": 4,
    "ruta": "memoria/temas/reglas-tfg.md"
-  },
-  {
-   "id": "tema:subcaption",
-   "tipo": "tema",
-   "titulo": "subcaption",
-   "peso": 8,
-   "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:camara",
@@ -7200,13 +7263,6 @@
    "ruta": "memoria/temas/portada.md"
   },
   {
-   "id": "tema:subfigure",
-   "tipo": "tema",
-   "titulo": "subfigure",
-   "peso": 5,
-   "ruta": "memoria/temas/subfigure.md"
-  },
-  {
    "id": "tema:integridad",
    "tipo": "tema",
    "titulo": "integridad",
@@ -7310,6 +7366,13 @@
    "titulo": "cifras",
    "peso": 1,
    "ruta": "memoria/temas/cifras.md"
+  },
+  {
+   "id": "tema:refs",
+   "tipo": "tema",
+   "titulo": "refs",
+   "peso": 1,
+   "ruta": "memoria/temas/refs.md"
   },
   {
    "id": "tema:capitulo-3",
@@ -7924,6 +7987,31 @@
   },
   {
    "de": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto",
+   "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto",
+   "a": "tema:verificar",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto",
    "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
@@ -12936,6 +13024,31 @@
    "de": "dato:fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas",
    "a": "dato:fechas-pbis-y-tareas-de-los-dos-sprints",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "a": "tema:reglas-javier",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "a": "tema:revisar-figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "a": "tema:revision",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:grupos-de-rutas-de-la-api-y-sus-accesos",
@@ -19396,6 +19509,36 @@
    "de": "receta:cada-cifra-de-un-documento-sale-de-las-fuentes-tambien-las-p",
    "a": "decision:numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "tema:refs",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "tema:verificar",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:capitulo-3-propuesta-metodologia-scrum-y-herramientas-sin-de",

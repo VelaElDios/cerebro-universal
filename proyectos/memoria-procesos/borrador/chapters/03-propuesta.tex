@@ -27,7 +27,7 @@ El proyecto se organizó en dos sprints:
 
 El Product Backlog completo suma 48 PBIs y 82 tareas, todos hechos. Del enunciado al backlog, cada requisito se convirtió en un PBI con su historia de usuario («Como … quiero … para …») y sus criterios de aceptación; cada PBI se dividió en entre una y tres tareas; y cada tarea acabó en una rama y un pull request. Las 29 historias de usuario del Sprint 2, con sus criterios, están en la Tabla~\ref{tab:sprint2-hu} del Anexo~\ref{anx:desarrollo}; la trazabilidad completa requisito--PBI--tarea--PR está en el Anexo~\ref{anx:trazabilidad}.
 
-El seguimiento usó el tablero por estados y las gráficas automáticas de DoneTonic (Sprint Burndown y Burnup, Backlog Burndown y Burnup, Velocity Chart). Al cerrar los dos sprints, el tablero mostraba los 19 PBIs del Sprint 1 en la columna de hechos (Figura~\ref{fig:donetonic-tablero}); el Product Backlog reunía los 48 PBIs de los dos sprints (Figura~\ref{fig:donetonic-backlog}). Las capturas son del 29/10/2026, con los dos sprints cerrados.
+El seguimiento usó el tablero por estados y las gráficas automáticas de DoneTonic (Sprint Burndown y Burnup, Backlog Burndown y Burnup, Velocity Chart). Al cerrar los dos sprints, el tablero mostraba los 19 PBIs del Sprint 1 en la columna de hechos y el Product Backlog reunía los 48 PBIs de los dos sprints (Figuras~\ref{fig:donetonic-tablero} y~\ref{fig:donetonic-backlog}). Las capturas son del 29/10/2026, con los dos sprints cerrados.
 
 % Las capturas de DoneTonic se muestran una sola vez en la memoria (regla 10).
 % El tablero del Sprint 1: Figura~\ref{fig:donetonic-tablero} (aquí).
@@ -58,7 +58,7 @@ El seguimiento usó el tablero por estados y las gráficas automáticas de DoneT
 \label{fig:donetonic-backlog}
 \end{figure}
 
-El tablero muestra la trazabilidad visual: cada PBI se descompone en tareas que avanzan por las columnas hasta \textit{Hecho}, y el color verde confirma que los 19 PBIs del Sprint 1 se completaron. Las gráficas de la Figura~\ref{fig:donetonic-graficas-s1} muestran la misma evolución en el tiempo: el burndown desciende por hitos y el burnup marca el escalón cuando, a mitad del sprint, se añadió el PBI P19 para aprovechar los créditos de Google Cloud.
+El tablero aporta la trazabilidad visual: cada PBI se descompone en tareas que avanzan por las columnas hasta \textit{Hecho}, y el color verde confirma que los 19 PBIs del Sprint 1 se completaron. Las gráficas del Sprint 1 (Figura~\ref{fig:donetonic-graficas-s1}) cuentan esa misma evolución en el tiempo: el burndown desciende por hitos y el burnup marca el escalón cuando, a mitad del sprint, se añadió el PBI P19 para aprovechar los créditos de Google Cloud.
 
 Durante el Sprint 1 hubo un cambio de alcance documentado: al repartir el profesor créditos de Google Cloud para educación se añadió el PBI P19 (despliegue continuo en Cloud Run, tareas T29 y T30) y Render quedó como despliegue alternativo. El backlog del Sprint 2, en cambio, se registró en DoneTonic al cerrar el sprint (29/10/2026), por lo que sus gráficas salen en recta; la evolución real se reconstruye con las fechas de fusión de los PR (Anexo~\ref{anx:desarrollo}).
 
@@ -87,6 +87,8 @@ El CI es obligatorio: ni \texttt{main} ni las ramas de integración admiten fusi
 El alcance se repartió por etapas. En el Sprint 1, los Hitos 1--3 se entregaron el 12/10/2026 (junto con P18 y P19); el Hito 4 se completó y se comprobó en producción el 23/10/2026; el sprint terminó el 27/10/2026. El Sprint 2, la lógica del juego, fue del 23/10/2026 al 29/10/2026. La cronología completa, fecha a fecha, está en la Tabla~\ref{tab:cronologia} del Anexo~\ref{anx:desarrollo}.
 
 \section{Herramientas}
+
+La elección de herramientas responde a dos criterios: que el proyecto se pueda desarrollar y revisar en solitario, y que cada paso quede registrado en el repositorio. Por eso el desarrollo se hace con Node.js y Express, sin framework de frontend ni paso de compilación: las capas se ven como ficheros y el backend sirve el frontend, de modo que no hace falta CORS. La persistencia se apoya en PostgreSQL, que permite arrancar y probar también con repositorios en memoria. El control de versiones, la integración continua y el despliegue viven en GitHub, con Cloud Run como destino principal y Render como alternativa.
 
 La Tabla~\ref{tab:herramientas} recoge las herramientas usadas y el papel de cada una.
 
@@ -121,4 +123,4 @@ La Tabla~\ref{tab:herramientas} recoge las herramientas usadas y el papel de cad
 \label{tab:herramientas}
 \end{table}
 
-El entorno usa un mismo lenguaje en cliente y servidor (JavaScript), una base de datos gestionada (PostgreSQL en Neon), un pipeline en GitHub Actions y el despliegue en Cloud Run, todo sin paso de compilación.
+El reparto por categorías refleja una decisión de fondo: todo el proyecto usa un mismo lenguaje en cliente y servidor (JavaScript), una base de datos gestionada (PostgreSQL en Neon) y un pipeline en GitHub Actions que llega hasta el despliegue en Cloud Run, sin ningún paso de compilación entre el editor y la aplicación en producción. Playwright deja una captura de pantalla de cada pantalla y estado, que son las que ilustran esta memoria, y LuaLaTeX permite maquetar el documento con la plantilla oficial del TFG.

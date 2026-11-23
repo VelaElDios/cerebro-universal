@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "reglas-javier"
-notas: 6
+notas: 7
 ---
 # reglas-javier
 
@@ -18,10 +18,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «reglas-javier» (este arc
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a|Gemini 404 en revisar_figuras no bloquea, pero la revisión a ojo del PDF sigue siendo obligatoria]] · ⚠️ propuesto
+
 ## Lecciones (errores ya resueltos)
 
 - ⚠️ [[memoria/lecciones/verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii|Verificación final de memoria TFG con plantilla oficial ESIIAB-UCLM]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[maquetacion]] · [[memoria]] · [[tfg]] · [[figuras]] · [[redaccion]] · [[verificacion]] · [[duplicados]] · [[maquetación]] · [[memoria-procesos]] · [[ref]] · [[reglas-tfg]]
+[[latex]] · [[maquetacion]] · [[memoria]] · [[tfg]] · [[figuras]] · [[redaccion]] · [[verificacion]] · [[revisar-figuras]] · [[revision]] · [[duplicados]] · [[maquetación]] · [[memoria-procesos]]

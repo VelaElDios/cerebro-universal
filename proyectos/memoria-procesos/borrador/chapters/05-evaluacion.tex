@@ -55,7 +55,7 @@ La batería consta de 276 pruebas automáticas en \texttt{main} al cerrar el Spr
 
 \subsection{Comprobaciones manuales y visuales}
 
-Además de las pruebas automáticas, cada cambio visible se ha comprobado en el navegador con Playwright mediante capturas automatizadas de cada pantalla y estado. El Hito 4 se probó a mano en producción: correo real recibido en Gmail, enlace manipulado, acceso con dos cuentas de Google distintas. Las capturas de la aplicación se generan con la aplicación real y datos de ejemplo.
+Además de las pruebas automáticas, cada cambio visible se ha comprobado en el navegador con Playwright, que deja una captura de pantalla de cada pantalla y estado. El Hito 4 se probó además a mano en producción: correo real recibido en Gmail, enlace manipulado y acceso con dos cuentas de Google distintas. Las capturas que ilustran esta memoria se generaron con la aplicación real y datos de ejemplo, de modo que documentan estados alcanzables y no maquetas.
 
 \section{Integración y despliegue continuos (CI/CD)}
 
@@ -102,11 +102,9 @@ El pipeline completo se resume en la Figura~\ref{fig:pipeline}: cada PR ejecuta 
 \caption{Pipeline de integración y despliegue continuos.}
 \label{fig:pipeline}
 \end{figure}
-
-La Figura~\ref{fig:pipeline} resume el pipeline: cada PR ejecuta pruebas contra PostgreSQL 17 y construye la imagen Docker; solo \texttt{main} con CI en verde despliega en Cloud Run (Render lo hace en paralelo por webhook).
 <<<FIN>>
 
-Tras los PR del Hito 4, GitHub Actions muestra en verde tanto el trabajo de pruebas como el de despliegue en Cloud Run (Figura~\ref{fig:actions-verde}): el CI pasó y la nueva revisión recibió el tráfico. La captura confirma que ambos jobs (\textit{Pruebas} e \textit{Imagen Docker}) finalizaron correctamente y que el workflow de despliegue (\texttt{deploy-cloud-run.yml}) se ejecutó en cascada tras el CI exitoso en \texttt{main}.
+Tras los PR del Hito 4, los dos trabajos de GitHub Actions (\textit{Pruebas} e \textit{Imagen Docker}) y el despliegue en Cloud Run aparecen en verde en la Figura~\ref{fig:actions-verde}: el CI pasó y la nueva revisión recibió el tráfico. El workflow de despliegue (\texttt{deploy-cloud-run.yml}) se ejecutó en cascada tras el CI exitoso en \texttt{main}.
 
 % La captura de GitHub Actions en verde (Figura~\ref{fig:actions-verde}) se muestra aquí;
 % en el Capítulo~\ref{cap:descripcion} y Anexo~\ref{anx:material} se cita con \ref.
@@ -120,19 +118,9 @@ Tras los PR del Hito 4, GitHub Actions muestra en verde tanto el trabajo de prue
 
 \section{Registro de actividad y manejo de errores}
 
-\subsection{Registro de actividad (logs)}
-
 El sistema genera una línea JSON estructurada por cada evento relevante en la salida estándar (capturada por Cloud Logging en producción), incluyendo los campos \texttt{time}, \texttt{level}, \texttt{event}, \texttt{msg} y metadatos asociados. Cada petición HTTP recibe un identificador único (\texttt{X-Request-Id}) que se propaga a todas las trazas generadas en su ámbito. Los eventos tipados contemplan: \texttt{app\allowbreak.start}, \texttt{app\allowbreak.stop}, \texttt{app\allowbreak.storage}, \texttt{app\allowbreak.mail}, \texttt{admin\allowbreak.bootstrap}, \texttt{http\allowbreak.request}, \texttt{http\allowbreak.error}, \texttt{user\allowbreak.registered}, \texttt{auth\allowbreak.login}, \texttt{auth\allowbreak.logout}, \texttt{auth\allowbreak.login\_failed}, \texttt{auth\allowbreak.forbidden}, \texttt{mail\allowbreak.confirmation\_sent}, \texttt{mail\allowbreak.failed}, \texttt{mail\allowbreak.not\_sent}, \texttt{user\allowbreak.confirmed}, \texttt{user\allowbreak.confirm\_failed}, \texttt{auth\allowbreak.oauth\_denied}, \texttt{auth\allowbreak.oauth\_failed}, \texttt{user\allowbreak.role\_changed}, \texttt{user\allowbreak.deleted} y \texttt{juego\allowbreak.identidad}. Para garantizar la confidencialidad, contraseñas, hashes, cookies, tokens y secretos se reemplazan automáticamente por el texto \texttt{[oculto]}.
 
-\subsection{Manejo de errores}
-
-El tratamiento de errores opera de forma uniforme desde la capa de lógica hasta la interfaz:
-\begin{enumerate}
-    \item Los servicios de negocio lanzan excepciones tipadas (\texttt{Validation\allowbreak Error}, \texttt{Unauthorized\allowbreak Error}, \texttt{Forbidden\allowbreak Error}, \texttt{Account\allowbreak Pending\allowbreak Error}, \texttt{Not\allowbreak Found\allowbreak Error}, \texttt{Conflict\allowbreak Error}, \texttt{Service\allowbreak Unavailable\allowbreak Error}).
-    \item El middleware \texttt{error\allowbreak Handler} mapea cada error a su correspondiente código de estado HTTP y genera una respuesta estándar con formato \texttt{\{"error": \{"code", "message"\}\}}.
-    \item El cliente de comunicación \path{api.js} transforma las respuestas fallidas en objetos de error \texttt{Api\allowbreak Error} e implementa un tiempo límite de espera de 15 segundos mediante \texttt{Abort\allowbreak Controller}.
-    \item Las vistas de la interfaz muestran alertas específicas para cada caso, impidiendo que el usuario final visualice trazas internas o formatos crudos.
-\end{enumerate}
+El tratamiento de errores opera de forma uniforme desde la capa de lógica hasta la interfaz. Los servicios de negocio lanzan excepciones tipadas (\texttt{Validation\allowbreak Error}, \texttt{Unauthorized\allowbreak Error}, \texttt{Forbidden\allowbreak Error}, \texttt{Account\allowbreak Pending\allowbreak Error}, \texttt{Not\allowbreak Found\allowbreak Error}, \texttt{Conflict\allowbreak Error}, \texttt{Service\allowbreak Unavailable\allowbreak Error}); el middleware \texttt{error\allowbreak Handler} traduce cada una al código de estado HTTP correspondiente y devuelve una respuesta con formato \texttt{\{"error": \{"code", "message"\}\}}. El cliente de comunicación \path{api.js} convierte las respuestas fallidas en objetos \texttt{Api\allowbreak Error} y aplica un tiempo límite de espera de 15 segundos mediante \texttt{Abort\allowbreak Controller}. Las vistas muestran un aviso específico en cada caso, de modo que el usuario nunca ve JSON ni trazas internas, y los formularios marcan el campo con el error y lo explican debajo sin perder lo escrito.
 
 \section{Revisión frente al enunciado y prueba técnica}
 
@@ -144,7 +132,7 @@ La auditoría frase a frase documentada en \texttt{docs/sprint-1.md} confirmó e
     \item Persistencia relacional en PostgreSQL con migraciones versionadas y custodia de secretos fuera del código.
 \end{itemize}
 
-En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). En producción responde \texttt{permitido: true} para un dominio autorizado y \texttt{permitido: false} para un subdominio que no está en la lista. La Figura~\ref{fig:prueba-tecnica} muestra ambas respuestas capturadas en la aplicación desplegada: la subfigura~\ref{fig:prueba-tecnica-permitido} confirma un dominio permitido y la subfigura~\ref{fig:prueba-tecnica-rechazado} el rechazo de un subdominio no autorizado. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
+En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\allowbreak /api/\allowbreak prueba/\allowbreak dominio} gobernado por \texttt{domain\allowbreak Policy.js}. Su función consiste en validar si el dominio del correo remitido pertenece a la lista de dominios permitidos (\texttt{ALLOWED\allowbreak \_DOMAINS}). En producción responde \texttt{permitido: true} para un dominio autorizado y \texttt{permitido: false} para un subdominio que no está en la lista. Las dos capturas de la Figura~\ref{fig:prueba-tecnica} documentan la respuesta en producción: la subfigura~\ref{fig:prueba-tecnica-permitido} muestra un dominio autorizado con \texttt{permitido: true} y la subfigura~\ref{fig:prueba-tecnica-rechazado} un subdominio que no está en la lista con \texttt{permitido: false}. Las 13 pruebas unitarias de \texttt{domain\allowbreak Policy\allowbreak.test.js} verifican rechazos sintácticos, formatos inválidos y coincidencias exactas.
 
 \begin{figure}[htbp]
 \centering
@@ -167,7 +155,7 @@ En cumplimiento del requisito RF-13, se implementó el endpoint \texttt{POST\all
 
 \section{Comprobación en producción}
 
-El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) fue sometido a validación manual en condiciones reales de explotación. La Figura~\ref{fig:produccion-verificacion} muestra dos evidencias clave: la recepción del correo de confirmación transaccional en un buzón real de Gmail (subfigura~\ref{fig:correo-confirmacion}) y la configuración de Google Auth Platform con la aplicación OAuth publicada en producción para usuarios externos (subfigura~\ref{fig:google-publicada}). Además, se validaron enlaces de confirmación manipulados o caducados y se comprobó la interacción concurrente sobre perfiles y la baja de cuentas, confirmando la concurrencia optimista y la invalidez inmediata de la sesión tras la baja.
+El despliegue en Google Cloud Run (\url{https://la-grada-colchonera-1081564062572.europe-southwest1.run.app}) se validó de forma manual en condiciones reales de explotación. Dos evidencias recogidas en la Figura~\ref{fig:produccion-verificacion} confirman el funcionamiento en esas condiciones: el correo de confirmación transaccional llega a un buzón real de Gmail y Google Auth Platform muestra la aplicación OAuth publicada en producción para usuarios externos. En las mismas comprobaciones manuales se validaron los enlaces de confirmación manipulados o caducados y el acceso con dos cuentas de Google distintas.
 
 \begin{figure}[htbp]
 \centering
@@ -217,4 +205,6 @@ Contenido jugable implementado & 36 jugadores, 2 entrenadores, 29 armas, 16 pasi
 
 \section{Resultados y discusión}
 
-La evaluación confirma que la adopción de una arquitectura en capas complementada con inyección de dependencias facilitó la incorporación del juego en el Sprint 2 sin desestabilizar la base SaaS del Sprint 1. El requisito de mantener el pipeline de CI en verde antes de fusionar garantizó la ausencia de regresiones a lo largo de los más de 50 pull requests procesados. La disponibilidad de 276 pruebas automáticas aporta confianza en el comportamiento determinista del motor y en la robustez de las políticas de seguridad del servidor.
+La evaluación confirma que la adopción de una arquitectura en capas complementada con inyección de dependencias facilitó la incorporación del juego en el Sprint 2 sin desestabilizar la base SaaS del Sprint 1: las reglas de club, entrenamiento y logros viven en el servidor y el cliente comparte los mismos ficheros de configuración. El requisito de mantener el pipeline de CI en verde antes de fusionar garantizó la ausencia de regresiones a lo largo de los más de 50 pull requests procesados, y la batería de 276 pruebas automáticas al cierre del Sprint 2 (322 tras la Fase 7) aporta confianza en el comportamiento determinista del motor y en la robustez de las políticas de seguridad del servidor.
+
+La revisión frente al enunciado no encontró requisitos incumplidos, y las comprobaciones manuales en producción cubrieron los puntos que las pruebas automáticas no alcanzan: el correo real, el enlace manipulado y el acceso con dos cuentas de Google distintas. Quedan dos límites conocidos: la cobertura de código todavía no se mide de forma automática y las pruebas de extremo a extremo en el CI (Playwright) no forman parte del pipeline, aunque las comprobaciones manuales del navegador se hagan en cada cambio visible. Ambos puntos están recogidos como trabajo futuro (Capítulo~\ref{cap:conclusiones}).

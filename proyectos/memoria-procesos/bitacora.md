@@ -14568,3 +14568,78 @@ Lo que dejo como tareas: corregir cadenas en 03-propuesta.tex, 05-evaluacion.tex
 ## 2026-11-23 04:50 · 🧠 Conocimiento guardado
 
 [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]]
+
+## 2026-11-23 05:43 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+He eliminado las frases del tipo «La figura X muestra…» en los capítulos 3 (Propuesta) y 5 (Evaluación), integrando cada referencia a las capturas dentro de la prosa que explica qué hace el usuario y qué evidencia aporta. Además he fusionado las dos subsecciones cortas de «Registro de actividad y manejo de errores» en una sola con prosa, he suprimido la repetición de la descripción del pipeline, he ampliado la sección «Herramientas» con la justificación de la elección de herramientas y he completado «Resultados y discusión» con los límites conocidos del trabajo. También he corregido una afirmación sobre comprobaciones manuales en producción que no constaba en las fuentes, sustituyéndola por las que sí constan (correo real, enlace manipulado y acceso con dos cuentas de Google distintas).
+
+**Archivos:** `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/03-propuesta.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`, `(cambio) chapters/05-evaluacion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 2 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Aplicar el mismo criterio de prosa (sin «La figura X muestra…») en chapters/06-conclusiones.tex, chapters/a1-desarrollo.tex y chapters/a3-uso-ia.tex, y revisar en el anexo de desarrollo las repeticiones del Sprint 2 (el párrafo de lecciones aparece dos veces con contenido casi idéntico). Después, validar con revisar_umlsd.py los nueve diagramas pendientes (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y ejecutar comando_prueba para confirmar compilación, verificar.py y revisar_maquetacion.py en verde.
+
+## 2026-11-23 06:01 · Revisor (nvidia-revisor · mistralai/mistral-large-4-1t-a52b)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Fechas Sprint 1 (29/09/2026–27/10/2026) → procesos.md: «Sprint 1: del 29/09/2026 al 27/10/2026» (capítulos 01, 03, a1).
+- 19 PBIs P1–P19 y 32 tareas T1–T32 del Sprint 1 → procesos.md: «19 PBIs (P1–P19) con 32 tareas (T1–T32)».
+- Fechas Sprint 2 (23/10/2026–29/10/2026), 29 PBIs P20–P48, 50 tareas T33–T82 → procesos.md: «Sprint 2: del 23/10/2026 al 29/10/2026. 29 PBIs (P20–P48) con 50 tareas (T33–T82)».
+- Totales 48 PBIs y 82 tareas → operación: 19+29=48; 32+50=82; coincide con procesos.md (ambos sprints).
+- 276 pruebas en main al cerrar el Sprint 2 → sprint-2.md, tabla de métricas: «Pruebas automáticas en main al cerrar el sprint | 276» (cap. 05 y a1).
+- 322 pruebas tras la Fase 7 → procesos.md, tabla de pruebas: «Total | 322»; log.md 2026-11-03: «La suite pasa a 322 pruebas».
+- Desglose 140+136+46 → procesos.md: «140 del Sprint 1…, 136 del juego hasta la Fase 6 y 46 de la Fase 7»; operación: 140+136+46=322 ✓.
+- URL de producción → procesos.md: «URL de la aplicación: https://la-grada-colchonera-1081564062572.europe-southwest1.run.app» (cap. 05, a2).
+- PRs del Hito 4 #37–#41 → log.md, entrada 2026-10-23: «PRs #37–#41, ramas hito-4/T22–T26» (cap. 03 y a1).
+- Cierres de hito #9, #17, #24, #29, #32 → sprint-1.md: «Cierres de hito: #9 (Hito 1 → main), #17 (Hito 2 → main), #24 (Hito 3 → main) #29 (cierre del sprint → main) y #32» (cap. 03 y a1).
+- Cambio de alcance P19 con tareas T29 y T30 → sprint-1.md: «se añadió al sprint el PBI P19 (despliegue en Google Cloud Run), con sus tareas T29 y T30»; decisiones.md D-16.
+- Burndown del Sprint 1 [15, 9, 5, 1, 2, 0] → sprint-1.md, tabla de evolución y mermaid «line [15, 9, 5, 1, 2, 0]»; 16 PBIs de la entrega = P1–P14 (14) + P18 + P19 = 16 ✓ (fig:burndown-s1 en a1).
+- Burndown real del Sprint 2 [28, 11, 11, 2, 2, 2, 0] → sprint-2.md, mermaid «line [28, 11, 11, 2, 2, 2, 0]» y tabla de evolución (23/10: 28; 24/10: 11; 26/10: 2; 29/10: 0) (fig:burndown-s2 en a1).
+- 23 endpoints de la API → sprint-2.md, métricas: «Endpoints de la API | 23» (cap. 05, tab:metricas).
+- 5 migraciones → sprint-2.md, métricas: «Migraciones | 5»; @arbol lista 001–005 (cuento 5 ficheros en src/db/migrations/) ✓.
+- Líneas de código (backend ~2.300, web ~1.150, CSS ~950, juego ~14.800, pruebas ~5.050) → sprint-2.md, tabla de métricas, fila a fila (cap. 05).
+- 6 dependencias de producción → sprint-2.md: «6 (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer)»; cuento 6 ✓.
+- Contenido del juego (36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones) → sprint-2.md, métricas «Contenido del juego» (cap. 04b y 05).
+- bcrypt coste 10 (4 en pruebas) → arquitectura.md, tabla de módulos: «passwordHasher.js | bcrypt (coste 10; en las pruebas, 4)» (cap. 04, tab:seguridad).
+- Token HMAC con caducidad 24 h → arquitectura.md, flujo de registro: «token = firma HMAC {userId, propósito, caducidad 24 h}».
+- Timeout de 15 s en api.js → arquitectura.md, frontend: «timeout de 15 s con AbortController».
+- Cookie grada.sid httpOnly → arquitectura.md, flujo de login: «200 usuario + cookie grada.sid (httpOnly)».
+- Oleada cada 30 s y jefe cada 4 oleadas (primero a los 1:30) → juego.md, manual: «oleada nueva cada 30 s y un jefe cada cuatro oleadas (cada 2 minutos, el primero a los 1:30)» (cap. 04b).
+- Ambientes cada 5 minutos → juego.md: «cada 5 minutos cambia la pantalla: pretemporada → … → Final del Mundial».
+- Mote de 3 a 16 caracteres, único → juego.md: «pide un mote (3 a 16 caracteres, único)».
+- Anti-trampas (margen 15 s, tope 4 h, jefes ≤ 3+t/50, nivel ≤ 8+t/3, bajas ≤ 20·t+50) → arquitectura.md, «Servidor del juego y anti-trampas» (cap. 04b).
+- 8 secretos de Secret Manager → procesos.md, lista: database-url, session-secret, admin-email, admin-password, smtp-url, mail-from, google-client-id, google-client-secret; cuento 8 ✓ (cap. 05, tab:workflows).
+- PostgreSQL 17 en el CI → procesos.md: «Trabajo Pruebas: npm ci + npm test con un servicio PostgreSQL 17».
+- Imagen Node 22 Alpine → procesos.md: «Node 22 (Alpine), solo dependencias de producción».
+- Región europe-southwest1 (Madrid) y Neon en Frankfurt → procesos.md, CI/CD: «región europe-southwest1 (Madrid)» y «Neon (PostgreSQL gestionado, región Frankfurt)».
+- Error que corrijo: subfiguras sin citar → salida de verificar.py: «ERROR: chapters/05-evaluacion.tex:137: la figura fig:prueba-tecnica-permitido no se cita en el texto (usa \ref{fig:prueba-tecnica-permitido})» y lo mismo con fig:prueba-tecnica-rechazado.
+- Compilación: LuaLaTeX termina «Output written on Memoria.pdf (97 pages)»; revisar_maquetacion.py: «✅ Maquetación del TFG: cumple las reglas» y «✅ Figuras: 13 diagramas medidos en el PDF, sin fallos»; los 9 avisos 404 de Gemini son «no bloqueo».
+
+Qué está bien: el constructor ha reescrito 03-propuesta.tex y 05-evaluacion.tex como prosa de TFG (sin «La figura X muestra…» suelto), ha eliminado la repetición de la descripción del pipeline (se explica una vez en el cap. 05 con fig:pipeline y en el 03 se remite con \ref), ha ampliado la sección «Herramientas» con la justificación de cada elección y ha corregido las comprobaciones manuales en producción a las que constan en las fuentes (procesos.md: correo real en Gmail, enlace manipulado, dos cuentas de Google distintas). Los datos numéricos que he contrastado (ver COMPROBACIONES) coinciden con las fuentes.
+
+Qué falla (bloquea): verificar.py devuelve 2 errores en chapters/05-evaluacion.tex:137 — las subfiguras fig:prueba-tecnica-permitido y fig:prueba-tecnica-rechazado tienen \label pero el texto solo cita la figura general fig:prueba-tecnica. Lo corrijo yo directamente añadiendo el \ref de cada subfigura en la prosa.
+
+Qué queda pendiente (no lo corrijo yo porque supone reescribir archivos grandes): prosa sin «La figura X muestra…» en 06-conclusiones.tex, a1-desarrollo.tex y a3-uso-ia.tex; en a1-desarrollo.tex el párrafo de «Lecciones aprendidas del Sprint 2» aparece duplicado casi idéntico al final de la retrospectiva del Sprint 1 y del Sprint 2 (hay que quedarse con uno); validación con revisar_umlsd.py y revisión visual de los 9 diagramas pendientes (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2); fusión de secciones de 1–2 líneas; revisión visual página a página del PDF.
+
+**Correcciones del revisor:** `(cambio) chapters/05-evaluacion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar de nuevo `comando_prueba` y confirmar que los 2 errores de verificar.py quedan resueltos con la corrección del revisor (subfiguras citadas) y que compila, verificar.py OK y revisar_maquetacion.py OK.
+- Reescribir chapters/06-conclusiones.tex, chapters/a1-desarrollo.tex y chapters/a3-uso-ia.tex con el mismo criterio: prosa que integra las capturas, sin frases sueltas «La figura X muestra…»; en a1-desarrollo.tex eliminar el párrafo duplicado de lecciones del Sprint 2 (aparece al final de la retrospectiva del Sprint 1 y otra vez en la del Sprint 2).
+- Validar con `revisar_umlsd.py` los 9 diagramas pendientes (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y revisarlos a ojo en el PDF (reglas 16–18: letras ≥ 7,5 pt, sin flechas que crucen cajas, sin palabras partidas); replantear los que fallen (menos participantes, text width mayor, codos en las flechas, adjustbox solo para encoger un poco).
+- Fusionar las secciones de una o dos líneas en todos los capítulos (regla 9) y eliminar repeticiones de párrafos entre capítulos (la descripción del pipeline ya está solo en el cap. 05; comprobar que no se repite en el 03 ni en los anexos).
+- Revisión visual final del PDF página a página: sin páginas con una sola imagen (regla 8), sin figuras repetidas (regla 10), flechas con $\rightarrow$ (regla 11), todo citado con \ref.
+
+## 2026-11-23 06:01 · 🧠 Lección propuesta para la memoria
+
+[[cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-23 06:01 · 🧠 Conocimiento guardado
+
+[[cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v]] · [[gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 163
+notas: 166
 ---
 # latex
 
@@ -21,6 +21,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
 - 🧪 [[memoria/conocimiento/recetas/burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2|Burndown real con pgfplots (fig:burndown-s1 y fig:burndown-s2)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v|Cada \label de subfigura necesita su propio \ref en el texto (verificar.py lo exige)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin|Checklist final de verificación antes de marcar TERMINADO (PDF página a página + scripts en verde)]]
 - 🧪 [[memoria/conocimiento/recetas/citas-con-autor-largo-que-se-salen-del-margen-usar-breakcite|Citas con autor largo que se salen del margen: usar breakcites]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
@@ -145,6 +146,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 - 📊 [[memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg|Bibliografía gestionada con BibTeX en la memoria TFG]]
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a|Gemini 404 en revisar_figuras no bloquea, pero la revisión a ojo del PDF sigue siendo obligatoria]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
@@ -156,6 +158,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚠️ [[memoria/lecciones/enquote-necesita-el-paquete-csquotes|\enquote necesita el paquete csquotes]]
 - ⚠️ [[memoria/lecciones/actualizar-referencias-a-documentacion-tras-reorganizacion-d|Actualizar referencias a documentación tras reorganización del bundle]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
+- ⚠️ [[memoria/lecciones/cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto|Cada subfigura (\subcaption) necesita su propio \ref en el texto]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/citas-a-fuentes-no-bibliograficas-en-el-texto|Citas a fuentes no bibliográficas en el texto]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/coma-decimal-en-formulas-paquete-icomma|Coma decimal en fórmulas: paquete icomma]]
 - ⚠️ [[memoria/lecciones/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]]
@@ -193,4 +196,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[pgf-umlsd]] · [[maquetacion]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[sus]] · [[usabilidad]] · [[redaccion]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[pgf-umlsd]] · [[maquetacion]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[sus]] · [[usabilidad]] · [[subcaption]]
