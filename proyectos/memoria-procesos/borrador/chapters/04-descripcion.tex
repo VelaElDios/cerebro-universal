@@ -190,18 +190,16 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\footnotesize, text width=3.2cm, inner sep=3pt},
-    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\footnotesize, text width=4.6cm, inner sep=3pt},
-    pk/.style={font=\footnotesize\bfseries},
-    uk/.style={font=\footnotesize\itshape},
-    arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema},
-    rel/.style={font=\scriptsize, inner sep=1pt}
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=2.8cm, inner sep=2pt},
+    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=4.0cm, inner sep=2pt},
+    pk/.style={font=\scriptsize\bfseries},
+    uk/.style={font=\scriptsize\itshape},
+    arrow/.style={-{Stealth[length=2mm]}, thick, color=tema},
+    rel/.style={font=\tiny, inner sep=1pt}
 ]
-    % Layout horizontal: session (izquierda), users (centro) y juego_perfiles (derecha),
-    % con juego_records debajo de users. Aumentamos la separación horizontal para evitar cruces.
-    \node[entity] (session) at (-7,0) {
+    % Layout más compacto: session (izq), users (centro), juego_perfiles (der), records (abajo users)
+    \node[entity] (session) at (-6.2,0) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \texttt{sess JSON}\\
@@ -210,25 +208,25 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
     \node[entitywide] (users) at (0,0) {
         \textbf{users}\\
         \pk id UUID PK\\
-        \texttt{email TEXT} \uk (único entre no eliminadas)\\
-        \texttt{password\_hash TEXT} (null con Google)\\
-        \texttt{role TEXT} \texttt{user | admin}\\
-        \texttt{status TEXT} \texttt{pending | active | deleted}\\
-        \texttt{auth\_provider TEXT} \texttt{local | google}\\
+        \texttt{email TEXT} \uk (único no eliminadas)\\
+        \texttt{password\_hash TEXT} (null Google)\\
+        \texttt{role TEXT} user | admin\\
+        \texttt{status TEXT} pending | active | deleted\\
+        \texttt{auth\_provider TEXT} local | google\\
         \texttt{created\_at TIMESTAMPTZ}\\
         \texttt{deleted\_at TIMESTAMPTZ}\\
         \texttt{apodo TEXT}\\
         \texttt{apodo\_clave TEXT} \uk\\
         \texttt{avatar TEXT}
     };
-    \node[entity] (perfiles) at (7,0) {
+    \node[entity] (perfiles) at (6.2,0) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \texttt{datos JSONB}\\
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entitywide] (records) at (0,-8.0) {
+    \node[entitywide] (records) at (0,-7.0) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \texttt{alias TEXT}\\
@@ -239,14 +237,10 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    % Relación 1 a 1 con el perfil del juego: la etiqueta va en el hueco entre las cajas, con más separación vertical.
-    \draw[arrow] (users.east) -- node[above=3pt, rel] {su club} (perfiles.west);
-    % Relación 1 a 1 con la mejor partida: la etiqueta a la izquierda de la flecha.
-    \draw[arrow] (users.south) -- node[left=3pt, rel, pos=0.5] {su mejor partida} (records.north);
-    % La sesión guarda el userId (y el state durante el acceso con Google).
-    \draw[arrow, dashed] (session.east) -- node[above=3pt, rel] {userId} (users.west);
+    \draw[arrow] (users.east) -- node[above=2pt, rel] {su club} (perfiles.west);
+    \draw[arrow] (users.south) -- node[left=2pt, rel, pos=0.5] {su mejor partida} (records.north);
+    \draw[arrow, dashed] (session.east) -- node[above=2pt, rel] {userId} (users.west);
 \end{tikzpicture}
-\end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}
 \end{figure}
@@ -333,12 +327,13 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[4]{fe}{Frontend}
   \newinst[4]{api}{API}
   \newinst[4]{srv}{Servicio}
+  \newinst[4]{tk}{TokenSigner}
+  \newinst[4]{ml}{Mailer}
   \begin{call}{u}{email y clave}{fe}{ok}
   \end{call}
   \begin{call}{fe}{POST register}{api}{201 o 409}
@@ -350,17 +345,20 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
         \mess{api}{409}{fe}
       \end{sdblock}
       \begin{sdblock}{else}{nuevo}
-        \begin{callself}{srv}{hash y crea}{usuario}
-        \end{callself}
-        \begin{callself}{srv}{firma HMAC y envia}{enviado}
-        \end{callself}
+        \begin{call}{srv}{hash}{srv}{hash}
+        \end{call}
+        \begin{call}{srv}{crea usuario}{srv}{usuario}
+        \end{call}
+        \begin{call}{srv}{firma token}{tk}{token}
+        \end{call}
+        \begin{call}{srv}{envia correo}{ml}{enviado}
+        \end{call}
         \mess{api}{201}{fe}
       \end{sdblock}
     \end{call}
   \end{call}
   \mess{fe}{aviso}{u}
 \end{sequencediagram}
-\end{adjustbox}
 \caption{Registro con email y contraseña.}
 \label{fig:sec-registro}
 \end{figure}
@@ -374,14 +372,15 @@ El enlace de confirmación lleva un token firmado que la API verifica antes de t
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
+\resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[4]{api}{API}
-  \newinst[4]{srv}{Servicio}
+  \newinst[5]{api}{API}
+  \newinst[5]{tk}{TokenSigner}
+  \newinst[5]{srv}{Servicio}
   \begin{call}{u}{abre enlace}{api}{redirige}
   \end{call}
-  \begin{call}{api}{verifica HMAC}{srv}{valido o nulo}
+  \begin{call}{api}{verifica token}{tk}{valido o nulo}
   \end{call}
   \begin{sdblock}{alt}{no valido}
     \mess{api}{303 enlace no valido}{u}
@@ -394,8 +393,7 @@ El enlace de confirmación lleva un token firmado que la API verifica antes de t
   \begin{call}{u}{carga web}{api}{ok}
   \end{call}
   \mess{api}{muestra aviso}{u}
-\end{sequencediagram}
-\end{adjustbox}
+\end{sequencediagram}}
 \caption{Confirmación con el enlace del correo.}
 \label{fig:sec-confirmacion}
 \end{figure}
@@ -452,36 +450,37 @@ El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \ci
 \centering
 \begin{subfigure}{0.95\textwidth}
 \centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.5\textheight}
+\resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
   \newthread{u}{Navegador}
-  \newinst[4]{api}{API}
-  \newinst[4]{goo}{Google}
+  \newinst[5]{api}{API}
+  \newinst[5]{ses}{Sesion}
+  \newinst[5]{goo}{Google}
   \begin{call}{u}{GET /api/auth/google}{api}{303}
   \end{call}
-  \begin{call}{api}{guarda state}{api}{ok}
+  \begin{call}{api}{guarda state}{ses}{ok}
   \end{call}
   \mess{api}{redirige a Google}{u}
   \begin{call}{u}{acepta en Google}{goo}{302 code state}
   \end{call}
   \mess{goo}{callback}{u}
-\end{sequencediagram}
-\end{adjustbox}
+\end{sequencediagram}}
 \subcaption{Redirección a Google y callback.}
 \label{fig:sec-google-redirect}
 \end{subfigure}
 \\
 \begin{subfigure}{0.95\textwidth}
 \centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.5\textheight}
+\resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
   \newthread{u}{Navegador}
-  \newinst[4]{api}{API}
-  \newinst[4]{goo}{Google}
-  \newinst[4]{srv}{Servicio}
+  \newinst[5]{api}{API}
+  \newinst[5]{ses}{Sesion}
+  \newinst[5]{goo}{Google}
+  \newinst[5]{srv}{Servicio}
   \begin{call}{u}{GET callback code state}{api}{ok}
   \end{call}
-  \begin{call}{api}{compara y borra state}{api}{ok o fallo}
+  \begin{call}{api}{compara y borra state}{ses}{ok o fallo}
   \end{call}
   \begin{sdblock}{alt}{state invalido}
     \mess{api}{303 error}{u}
@@ -495,8 +494,7 @@ El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \ci
     \end{call}
     \mess{api}{303 a jugar}{u}
   \end{sdblock}
-\end{sequencediagram}
-\end{adjustbox}
+\end{sequencediagram}}
 \subcaption{Intercambio de código y login en el servidor.}
 \label{fig:sec-google-callback}
 \end{subfigure}

@@ -457,5 +457,36 @@
  },
  "eb0c04ae165de85a13378f2ee9a9aa73": {
   "ok": true
+ },
+ "36b5bcde5cc5f1d6376d860a3f3058e9": {
+  "ok": true
+ },
+ "1c26e1906f26ccefc869bf19e7cbe2ed": {
+  "ok": true
+ },
+ "bd869cfd883f485875735ca759e3ccb7": {
+  "ok": true
+ },
+ "55fde1c2a450009eb70695d181c25e65": {
+  "ok": true
+ },
+ "dd1bf9dc4aa5b24322950d2ae278c8bb": {
+  "ok": false,
+  "problemas": [
+   "La línea del diagrama a la derecha de todo (Servicio) aparece cortada por el margen derecho de la página.",
+   "El extremo derecho del diagrama con la entidad 'Servicio' y llamadas internas se corta y sale del área visible de la imagen."
+  ]
+ },
+ "07f0635e77fe300fbc30225e1ea474f3": {
+  "ok": false,
+  "problemas": [
+   "En la Figura 3.4, las líneas horizontales discontinuas y continuas que interactúan con el marco de la condición 'alt' / 'else' cruzan verticalmente las líneas divisorias y los textos descriptivos ('no valido', 'valido') de las propias cajas de condición."
+  ]
+ },
+ "c54ce8097775722fb2977390fa3ab9a0": {
+  "ok": true
+ },
+ "af16daa5b86f23feec812ee46428f29d": {
+  "ok": true
  }
 }

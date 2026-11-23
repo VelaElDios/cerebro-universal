@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-23 19:02"
+actualizado: "2026-11-23 22:54"
 ---
 
 # memoria-procesos
@@ -22,15 +22,17 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18409 palabras).
-- **revisar_maquetacion.py**: ❌ Tres diagramas con fallos medidos (fig:sec-registro, fig:sec-confirmacion, fig:sec-google); 11 diagramas con Gemini 404 (requieren revisión visual regla 19).
-- **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…»; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación de la recta del Sprint 2.
-- **Corregido en este paso**: Replanteados tres diagramas de secuencia en 04-descripcion.tex (eliminado adjustbox, aumentado spacing a \newinst[4], añadidos participantes TokenSigner/Mailer/Sesion para evitar auto-llamadas, etiquetas limpias sin acentos). Queda por verificar que pasen revisar_maquetacion.py.
-- **Pendiente**: (1) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas pendientes. (2) Revisión visual de esos 11 diagramas en PDF (reglas 16-19). (3) Revisión visual final página a página (regla 15).
+- **revisar_maquetacion.py**: ❌ 3 errores: `fig:modelo-datos` 55 pt ancho (corregido en este paso), `fig:sec-google-redirect` y `fig:sec-google-callback` no citadas.
+- **Diagramas con fallos medidos**: `fig:sec-registro` (letras 5.1 pt, cruce flecha-texto) → corregido en este paso (eliminado resizebox, aumentado spacing a `\newinst[4]`, etiquetas limpias). `fig:juego-arquitectura` referenciada pero no en página (pendiente en 04b-juego.tex).
+- **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…»; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
+- **Corregido en este paso**: Diagrama ER estrechado sin escalar; `fig:sec-registro` replanteado sin resizebox y con spacing `\newinst[4]`.
+- **Pendiente**: (1) Citar subfiguras Google OAuth en texto. (2) Fijar colocación `fig:juego-arquitectura`. (3) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas pendientes. (4) Revisión visual de esos 11 diagramas en PDF (reglas 16-19). (5) Revisión visual final página a página (regla 15).
 
 ## Siguiente
-1. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas pendientes y corregir errores.
-2. Revisión visual de los 11 diagramas en PDF (letras ≥ 7.5 pt, sin cruces, sin palabras partidas, codos).
-3. Revisión visual final del PDF página a página.
-4. Re-ejecutar `comando_prueba` hasta verde total.
+1. Aplicar las dos tareas de citas y colocación de figura en 04-descripcion.tex y 04b-juego.tex.
+2. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas pendientes y corregir errores.
+3. Revisión visual de los 11 diagramas en PDF (letras ≥ 7.5 pt, sin cruces, sin palabras partidas, codos).
+4. Revisión visual final del PDF página a página.
+5. Re-ejecutar `comando_prueba` hasta verde total.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

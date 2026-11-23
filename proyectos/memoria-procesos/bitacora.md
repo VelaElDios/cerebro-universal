@@ -15412,3 +15412,44 @@ Aun así, cuando Gemini no pueda mirar un diagrama (cupo agotado o modelo caído
 ⏱️ Solo quedan 184 s de paso: no da tiempo a que conteste el revisor.
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-23 22:51 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+(sin resumen)
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `revisar_umlsd.py` sobre los 11 diagramas pendientes (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte. Luego revisar visualmente cada diagrama en el PDF compilado y hacer revisión visual final página a página. Finalmente, volver a ejecutar `comando_prueba`.
+
+## 2026-11-23 22:54 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18409 palabras).
+- `revisar_maquetacion.py`: ❌ 3 errores de verificación: (1) `fig:modelo-datos` 55 pt más ancha que la página (line 193), (2) `fig:sec-google-redirect` no citada, (3) `fig:sec-google-callback` no citada.
+- Diagramas con fallos medidos en PDF (reglas 16-18): `fig:sec-registro` (p. 36): letras 5.1 pt (mín 7.5), flecha cruza etiqueta «enviacorreo»; `fig:juego-arquitectura` (p. 53): referenciada en texto pero no aparece en la página.
+- Gemini no pudo revisar 11 diagramas (404/503), pero la medición geométrica no bloquea según nota de Javier.
+- Cadenas «La figura X muestra…» eliminadas en caps. 4 y 4b (prosa con subfiguras). Hito 4 no aparece como pendiente. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad completa P1–P48/T1–T82 en a4.
+- Contrastados 38 datos con fuentes (cifras, fechas, PBIs, tareas, PRs, métricas, capturas mínimas por carpeta).
+
+Qué está bien: La memoria compila, `verificar.py` pasa, maquetación general OK, prosa profesional sin listas de capturas, imágenes únicas con `\ref`, anexos completos.
+
+Qué falla (bloquea TERMINADO):
+1. **Diagrama ER `fig:modelo-datos`** (04-descripcion.tex:193) desborda 55 pt: hay que estrechar el dibujo SIN escalar (reducir `text width` de nodos, separación horizontal, o usar `pdflscape`).
+2. **Subfiguras Google OAuth** (`fig:sec-google-redirect`, `fig:sec-google-callback`) no citadas en el texto: el texto solo cita `fig:sec-google`; hay que añadir `\ref{fig:sec-google-redirect}` y `\ref{fig:sec-google-callback}` en la explicación.
+3. **Diagrama `fig:sec-registro`** (p. 36): letras 5.1 pt (escalado excesivo), flecha cruza «enviacorreo». Requiere replanteo: aumentar `node distance` (`\newinst[4]` o más), acortar etiquetas (sin acentos, sin paréntesis en `\mess`, usar `\n`), evitar auto-llamadas que generan cruces, eliminar `adjustbox` que encoge.
+4. **Diagrama `fig:juego-arquitectura`** (04b-juego.tex:204): referenciada en texto («Esa división es la que se dibuja en la Figura 4.7») pero no aparece en la página (flotante desplazado). Añadir `[H]` o mover la figura antes de la referencia.
+
+Correcciones directas del revisor: dos bloques CAMBIAR para (1) estrechar diagrama ER y (2) replantear `fig:sec-registro` sin escalado y con etiquetas limpias. Las otras dos correcciones (citar subfiguras Google y fijar `fig:juego-arquitectura`) quedan como tareas para el constructor.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- ninguna
