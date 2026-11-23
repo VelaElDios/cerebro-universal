@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T06:17:45+01:00",
+ "generado": "2026-11-23T07:45:56+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1658,7 +1658,9 @@
     "fuentes",
     "proyecto",
     "pruebas",
-    "sprints"
+    "sprints",
+    "grada-colchonera",
+    "saas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2040,7 +2042,9 @@
     "latex",
     "maquetacion",
     "pgf-umlsd",
-    "tikz"
+    "tikz",
+    "memoria-procesos",
+    "pgfplots"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4154,6 +4158,21 @@
    "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
   },
   {
+   "id": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "tipo": "receta",
+   "titulo": "Cómo agrupar capturas relacionadas con subfigure",
+   "temas": [
+    "latex",
+    "memoria-procesos",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure.md"
+  },
+  {
    "id": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",
    "tipo": "receta",
    "titulo": "Cómo agrupar capturas relacionadas en subfigure (2 por fila)",
@@ -5838,7 +5857,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 166,
+   "peso": 167,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -5859,7 +5878,7 @@
    "id": "tema:pgfplots",
    "tipo": "tema",
    "titulo": "pgfplots",
-   "peso": 7,
+   "peso": 8,
    "ruta": "memoria/temas/pgfplots.md"
   },
   {
@@ -5908,7 +5927,7 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
@@ -6139,14 +6158,14 @@
    "id": "tema:grada-colchonera",
    "tipo": "tema",
    "titulo": "grada-colchonera",
-   "peso": 131,
+   "peso": 132,
    "ruta": "memoria/temas/grada-colchonera.md"
   },
   {
    "id": "tema:saas",
    "tipo": "tema",
    "titulo": "saas",
-   "peso": 106,
+   "peso": 107,
    "ruta": "memoria/temas/saas.md"
   },
   {
@@ -6790,7 +6809,7 @@
    "id": "tema:memoria-procesos",
    "tipo": "tema",
    "titulo": "memoria-procesos",
-   "peso": 18,
+   "peso": 20,
    "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
@@ -12002,6 +12021,16 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:grada-colchonera",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
+   "a": "tema:saas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -13293,6 +13322,16 @@
   {
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
    "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "tema:pgfplots",
    "tipo": "trata"
   },
   {
@@ -20134,6 +20173,26 @@
    "de": "receta:como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d",
    "a": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila",

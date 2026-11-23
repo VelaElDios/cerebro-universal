@@ -14643,3 +14643,71 @@ Qué queda pendiente (no lo corrijo yo porque supone reescribir archivos grandes
 ## 2026-11-23 06:01 · 🧠 Conocimiento guardado
 
 [[cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v]] · [[gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a]]
+
+## 2026-11-23 07:43 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+He reescrito dos capítulos cortos que el revisor marcó como pendientes: `chapters/06-conclusiones.tex` y `chapters/a3-uso-ia.tex`. En el primero, las «lecciones aprendidas» pasan de lista a prosa y se repasan los objetivos en el orden del Capítulo 1, con las cifras contrastadas en las fuentes (48 PBIs, 82 tareas, 23 endpoints, 5 migraciones, 276 y 322 pruebas). En el segundo, corrijo un dato inventado (los modelos de la API de NVIDIA son GLM, MiniMax y Nemotron, no «Mistral Large») y elimino la afirmación no contrastada de que Claude «corrigió a mano los últimos fallos de maquetación», dejando solo los hechos de `fuentes/uso-ia.md`.
+
+**Archivos:** `chapters/06-conclusiones.tex`, `chapters/a3-uso-ia.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** -
+
+## 2026-11-23 07:45 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- 19 PBIs en Sprint 1 (P1–P19) y 32 tareas (T1–T32) → repo:saas/docs/sprint-1.md tabla backlog y trazabilidad
+- 29 PBIs en Sprint 2 (P20–P48) y 50 tareas (T33–T82) → repo:saas/docs/sprint-2.md tabla backlog y trazabilidad
+- 48 PBIs totales, 82 tareas totales → suma de ambos sprints
+- 276 pruebas automáticas al cierre del Sprint 2, 322 tras Fase 7 → repo:saas/docs/procesos.md tabla pruebas por fichero (total 276) y log.md (Fase 7 añade 46)
+- 23 endpoints de la API → repo:saas/docs/sprint-2.md métricas «Endpoints de la API | 23»
+- 5 migraciones SQL (001–005) → repo:saas/@arbol lista src/db/migrations/001_crear_tabla_usuarios.sql … 005_email_libre_tras_baja.sql
+- bcrypt coste 10 (4 en pruebas) → repo:saas/docs/arquitectura.md tabla módulos: passwordHasher.js
+- Token HMAC caducidad 24 h → repo:saas/docs/arquitectura.md flujo registro: «token = firma HMAC {userId, propósito, caducidad 24 h}»
+- Timeout 15 s en api.js → repo:saas/docs/arquitectura.md frontend: «timeout de 15 s con AbortController»
+- Cookie grada.sid httpOnly → repo:saas/docs/arquitectura.md flujo login: «cookie grada.sid (httpOnly)»
+- Oleada cada 30 s, jefe cada 4 oleadas (primero a 1:30) → repo:saas/docs/juego.md manual: «oleada nueva cada 30 s y un jefe cada cuatro oleadas (cada 2 minutos, el primero a los 1:30)»
+- Ambientes cada 5 minutos (5 ambientes) → repo:saas/docs/juego.md manual: «cada 5 minutos cambia la pantalla: pretemporada → … → Final del Mundial»
+- Mote 3–16 caracteres único → repo:saas/docs/juego.md manual: «pide un mote (3 a 16 caracteres, único)»
+- Anti-trampas: margen 15 s, tope 4 h, límites creíbles → repo:saas/docs/arquitectura.md «Servidor del juego y anti-trampas»
+- 8 secretos en Secret Manager → repo:saas/docs/procesos.md lista: database-url, session-secret, admin-email, admin-password, smtp-url, mail-from, google-client-id, google-client-secret
+- PostgreSQL 17 en CI → repo:saas/docs/procesos.md CI: «Trabajo Pruebas: npm ci + npm test con un servicio PostgreSQL 17»
+- Imagen Docker Node 22 Alpine → repo:saas/docs/procesos.md: «Node 22 (Alpine), solo dependencias de producción»
+- Región Cloud Run europe-southwest1 (Madrid), Neon en Frankfurt → repo:saas/docs/procesos.md CI/CD
+- 6 dependencias de producción (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer) → repo:saas/docs/sprint-2.md métricas
+- Contenido del juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → repo:saas/docs/sprint-2.md métricas
+- Burndown Sprint 1: PBIs pendientes [15,9,5,1,2,0] → repo:saas/docs/sprint-1.md tabla evolución y mermaid
+- Burndown real Sprint 2: PBIs pendientes [28,11,11,2,2,2,0] → repo:saas/docs/sprint-2.md tabla evolución y mermaid
+- Cambio de alcance P19 (Cloud Run) a mitad del Sprint 1 → repo:saas/docs/sprint-1.md y decisiones.md D-16
+- Backlog Sprint 2 registrado en DoneTonic al cerrar el sprint (29/10) → repo:saas/docs/sprint-2.md y decisiones.md D-19
+- Verificación.py pasó (35 figuras, 29 tablas, 18029 palabras) → salida de prueba actual
+- Revisar_maquetacion.py pasó (reglas cumplidas, 13 diagramas medidos sin fallos) → salida de prueba actual
+- Subfiguras fig:prueba-tecnica-permitido y fig:prueba-tecnica-rechazado ya citadas en el texto (verificar.py OK) → chapters/05-evaluacion.tex líneas previas a la figura
+
+Qué está bien: la compilación y las pruebas automáticas pasan (verificar.py y revisar_maquetacion.py en verde). Los dos capítulos reescritos por el constructor (06-conclusiones.tex y a3-uso-ia.tex) cumplen el estilo de prosa sin «La figura X muestra…» y corrigen datos inventados. Las subfiguras de la prueba técnica ya están citadas en el texto (error anterior resuelto).
+
+Qué falla: en a1-desarrollo.tex el último párrafo de la retrospectiva del Sprint 1 duplica casi idéntico el último párrafo de la retrospectiva del Sprint 2 (la frase que resume el Sprint 2). Eso viola la regla de no repetir párrafos enteros entre capítulos/secciones. Además, quedan pendientes la validación explícita con revisar_umlsd.py y la revisión visual de los 9 diagramas que Gemini no pudo revisar (404), aunque revisar_maquetacion.py midió 13 diagramas sin fallos.
+
+Qué he corregido yo: he eliminado la frase duplicada al final de la retrospectiva del Sprint 1 en a1-desarrollo.tex.
+
+**Correcciones del revisor:** `(cambio) chapters/a1-desarrollo.tex`
+
+**Tareas para el constructor:**
+- Ejecutar de nuevo `comando_prueba` para confirmar que la corrección no rompe nada y que verificar.py y revisar_maquetacion.py siguen en verde.
+- Validar los 9 diagramas pendientes con `revisar_umlsd.py` (para los sequencediagram) y revisión visual en el PDF (reglas 16–18: letras ≥ 7,5 pt, sin flechas que crucen cajas, sin palabras partidas). Diagramas: fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2. Replantear los que fallen (menos participantes, text width mayor, codos en flechas, adjustbox solo para encoger un poco).
+- Fusionar secciones de una o dos líneas en todos los capítulos (regla 9) y eliminar repeticiones de párrafos entre capítulos (la descripción del pipeline ya está solo en el cap. 05; comprobar que no se repite en el 03 ni en los anexos).
+- Revisión visual final del PDF página a página: sin páginas con una sola imagen (regla 8), sin figuras repetidas (regla 10), flechas con $\rightarrow$ (regla 11), todo citado con \ref.
+
+## 2026-11-23 07:45 · 🧠 Lección propuesta para la memoria
+
+[[cada-subfigura-subcaption-necesita-su-propio-ref-en-el-texto]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-23 07:45 · 🧠 Conocimiento guardado
+
+[[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-agrupar-capturas-relacionadas-con-subfigure]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]]

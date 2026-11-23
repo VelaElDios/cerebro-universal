@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Inventario de diagramas obligatorios y su estado actualizado"
-temas: ["latex", "maquetacion", "pgf-umlsd", "tikz"]
+temas: ["latex", "maquetacion", "pgf-umlsd", "tikz", "memoria-procesos", "pgfplots"]
 claves: ["fig:capas", "fig:modelo-datos", "fig:sec-registro", "fig:sec-confirmacion", "fig:sec-login", "fig:sec-google", "fig:sec-baja", "fig:sec-partida", "fig:sec-contratar", "fig:juego-arquitectura", "fig:pipeline", "fig:burndown-s1", "fig:burndown-s2"]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/chapters/04-descripcion.tex, memoria/chapters/04b-juego.tex, memoria/chapters/05-evaluacion.tex, memoria/chapters/a1-desarrollo.tex"]

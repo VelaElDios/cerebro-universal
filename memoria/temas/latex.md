@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 166
+notas: 167
 ---
 # latex
 
@@ -29,6 +29,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-actualizar-referencias-a-documentacion-tras-reorganizac|Cómo actualizar referencias a documentación tras reorganización del bundle]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas con subfigure (dos por fila)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure|Cómo agrupar capturas relacionadas con subfigure]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-en-subfigure-2-por-fila|Cómo agrupar capturas relacionadas en subfigure (2 por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
@@ -196,4 +197,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[tikz]] · [[pgf-umlsd]] · [[maquetacion]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[sus]] · [[usabilidad]] · [[subcaption]]
+[[tfg]] · [[memoria]] · [[tikz]] · [[pgf-umlsd]] · [[maquetacion]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[subcaption]] · [[sus]] · [[usabilidad]]

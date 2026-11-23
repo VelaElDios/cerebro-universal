@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes"
-temas: ["memoria", "métricas", "trazabilidad", "metricas", "verificacion", "fuentes", "proyecto", "pruebas", "sprints"]
+temas: ["memoria", "métricas", "trazabilidad", "metricas", "verificacion", "fuentes", "proyecto", "pruebas", "sprints", "grada-colchonera", "saas"]
 claves: ["19 PBIs", "29 PBIs", "82 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md, repo:saas/docs/procesos.md, repo:saas/@arbol"]
 confianza: "propuesto"
 fecha: "2026-11-22"
 actualizado: "2026-11-23"
@@ -77,5 +77,8 @@ solucion: Usar siempre la cifra exacta de la fuente y citarla: "19 PBIs en el ba
 - Código: ~2.300 líneas backend, ~1.150 interfaz, ~950 CSS, ~14.800 juego, ~5.050 pruebas.
 - Dependencias producción: 6 (express, express-session, connect-pg-simple, pg, bcryptjs, nodemailer).
 - Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
+
+## Ampliación (2026-11-23, memoria-procesos)
+Lista de 25+ cifras y hechos verificados contra las fuentes del repositorio, listados en COMPROBACIONES.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

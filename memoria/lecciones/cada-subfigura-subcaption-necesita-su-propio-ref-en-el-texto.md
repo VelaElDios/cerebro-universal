@@ -3,7 +3,7 @@ titulo: "Cada subfigura (\\subcaption) necesita su propio \\ref en el texto"
 temas: ["latex", "subcaption", "subfigure", "verificar"]
 claves: ["no se cita en el texto", "fig:prueba-tecnica-permitido", "subcaption", "label en subfigura"]
 estado: "propuesta"
-veces: 1
+veces: 2
 fecha: "2026-11-23"
 proyectos: ["memoria-procesos"]
 ---

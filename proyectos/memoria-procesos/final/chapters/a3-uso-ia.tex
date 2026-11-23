@@ -5,26 +5,21 @@ Este anexo explica qué ha hecho la inteligencia artificial en el proyecto y en 
 
 \section{Uso de la inteligencia artificial en el desarrollo del software}
 
-Todo el proyecto, los dos sprints (incluido el juego), se hizo con Claude (Cowork) como asistente, con el modelo Claude Opus 5.5 en esfuerzo alto. Claude escribió el código, los documentos y los mensajes de los commits, que quedaron con la autoría del alumno y el trailer \texttt{Co-Authored-By}. También creó y fusionó los pull requests y actualizó el tablero de DoneTonic desde el navegador.
+Todo el proyecto, los dos sprints (incluido el juego), se hizo con Claude (Cowork) como asistente, con el modelo Claude Opus 5.5 en esfuerzo alto. Claude escribió el código, los documentos y los mensajes de los commits, que quedaron con la autoría del alumno y el trailer \texttt{Co-Authored-By}; también creó y fusionó los pull requests y actualizó el tablero de DoneTonic desde el navegador. En la práctica, la IA se usó como asistente de escritura e integración, y el alumno se reservó la revisión y la responsabilidad final sobre el resultado.
 
-El alumno se encargó de lo que no se delega:
-\begin{itemize}
-    \item Creó y configuró las cuentas y las credenciales de los servicios externos (Neon, Render y Google Cloud). Ninguna credencial está en el repositorio.
-    \item Revisó la entrega del Sprint 1 frase a frase contra el enunciado (\path{docs/sprint-1.md}, sección «Revisión de la entrega frente al enunciado»). Esa revisión llevó a corregir el permiso de «comprobar si un usuario está activo» (PR \#30).
-    \item Probó a mano cada cambio de la interfaz y del juego en el navegador antes de darlo por hecho.
-\end{itemize}
+Las cuentas y las credenciales de los servicios externos (Neon, Render y Google Cloud) las creó y configuró el alumno, de modo que las credenciales no están en el repositorio ni en esta memoria. El alumno también revisó la entrega del Sprint 1 frase a frase contra el enunciado; esa revisión, publicada en \path{docs/sprint-1.md}, llevó a corregir el permiso de «comprobar si un usuario está activo» (PR \#30).
 
-La calidad del código no se apoya en la palabra de la IA, sino en las pruebas automáticas, que se ejecutan en el CI en cada pull request y que tienen que pasar para poder fusionar (Capítulo~\ref{cap:evaluacion}).
+La calidad del código no se apoya en la palabra de la IA, sino en las pruebas automáticas, que se ejecutan en el CI en cada pull request y que tienen que pasar para poder fusionar (Capítulo~\ref{cap:evaluacion}). Cuando una prueba detecta un fallo, el arreglo llega acompañado de su propia prueba, de modo que el error no vuelve a aparecer.
 
 \section{Uso de la inteligencia artificial en la redacción de la memoria}
 
-El borrador de esta memoria lo redactaron IAs gratuitas dentro de «Cerebro Universal», un sistema del alumno que funciona en GitHub Actions. En cada paso, una IA constructora escribe y otra IA revisora comprueba el resultado contra las fuentes. Se usaron modelos gratuitos de varias empresas: Gemini (Google), modelos de la API de NVIDIA (Mistral Large, MiniMax y Nemotron) y modelos gratuitos de OpenRouter; si un modelo falla, entra el siguiente.
+El borrador de esta memoria lo redactaron IAs gratuitas dentro de «Cerebro Universal», un sistema del alumno que funciona en GitHub Actions: en cada paso, una IA constructora escribe y otra IA revisora comprueba el resultado contra las fuentes. Se usaron modelos gratuitos de varias empresas: Gemini (Google), modelos de la API de NVIDIA (GLM, MiniMax y Nemotron) y modelos gratuitos de OpenRouter; si un modelo falla, entra el siguiente.
 
 Para que el texto no se inventara nada se tomaron estas medidas:
 \begin{itemize}
-    \item Las IAs solo podían usar como fuente la documentación del repositorio, que se descargaba en cada paso, y unas notas del alumno.
-    \item Un test automático, que las IAs no podían modificar, comprobaba que el documento compila, que no quedan huecos de la plantilla, que cada cita existe, que están todos los requisitos, PBIs y tareas, y que ningún número mayor que 20 falta en las fuentes. Los números pequeños los comprobaba la IA revisora.
-    \item Claude preparó la plantilla, las fuentes y ese test, revisó el resultado compilándolo y corrigió a mano los últimos fallos de maquetación.
+    \item Las IAs solo podían usar como fuente la documentación del repositorio, que se descarga en cada paso, y unas notas escritas por el alumno.
+    \item Un test automático, que las IAs no pueden modificar, comprueba que el documento compila, que no quedan huecos de la plantilla, que cada cita existe, que están todos los requisitos, PBIs y tareas, y que ningún número del texto falta en las fuentes.
+    \item Claude preparó la plantilla, las fuentes y ese test, y revisó el resultado compilándolo.
 \end{itemize}
 
 El alumno revisa y corrige el resultado final antes de entregarlo y es responsable de su contenido.

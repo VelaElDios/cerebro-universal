@@ -49,4 +49,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[pgf-umlsd]] · [[tikz]] · [[tfg]] · [[longtable]] · [[reglas-javier]] · [[subcaption]] · [[redaccion]] · [[maquetación]] · [[reglas-tfg]] · [[memoria-procesos]]
+[[latex]] · [[figuras]] · [[pgf-umlsd]] · [[tikz]] · [[tfg]] · [[longtable]] · [[reglas-javier]] · [[subcaption]] · [[redaccion]] · [[memoria-procesos]] · [[maquetación]] · [[reglas-tfg]]

@@ -58,4 +58,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[memoria]] · [[pgfplots]] · [[maquetacion]] · [[tfg]] · [[lua]] · [[diagramas-secuencia]] · [[secuencia]] · [[beamer]] · [[defensa]]
+[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[pgfplots]] · [[memoria]] · [[maquetacion]] · [[tfg]] · [[lua]] · [[diagramas-secuencia]] · [[secuencia]] · [[beamer]] · [[defensa]]

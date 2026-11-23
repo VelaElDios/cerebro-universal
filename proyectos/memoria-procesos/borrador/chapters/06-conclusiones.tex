@@ -2,36 +2,39 @@
 \label{cap:conclusiones}
 
 \section{Conclusiones}
+\label{sec:conclusiones}
 
-Se repasan los objetivos en el orden del Capítulo~\ref{cap:introduccion}.
+Se repasan los objetivos en el orden en que se enunciaron en el Capítulo~\ref{cap:introduccion}: primero el objetivo principal y, después, los cuatro objetivos específicos.
 
-\textbf{Objetivo principal.} Se ha cumplido. La aplicación está desplegada en una URL pública de Google Cloud Run (Anexo~\ref{anx:material}). Los aficionados se registran con email o entran con Google, juegan, y su club, sus partidas y sus logros se guardan en el servidor. Los dos sprints están cerrados: el Sprint 1 con sus 19 PBIs y el Sprint 2 con sus 29, todos hechos.
+\textbf{Objetivo principal.} Se ha cumplido. \textit{La Grada Colchonera} está desplegada en una URL pública de Google Cloud Run (Anexo~\ref{anx:material}) y, en ella, un aficionado se registra con email o entra con Google, juega a una partida \textit{survivor} y encuentra su club, sus récords y sus logros guardados en el servidor. Los dos sprints están cerrados: el Sprint 1 con sus 19 PBIs y 32 tareas, y el Sprint 2 con sus 29 PBIs y 50 tareas. En total, el proyecto comprende 48 PBIs y 82 tareas, todos completados, integrados en \texttt{main} y publicados.
 
-\textbf{Producto.} Los cuatro hitos del Sprint 1 están completos, desplegados y comprobados en producción (Capítulo~\ref{cap:evaluacion}), con trazabilidad desde el backlog hasta la release (Anexo~\ref{anx:trazabilidad}). Encima de esa base está el juego del Sprint 2 (Capítulo~\ref{cap:juego}). Pasar de red social a juego fue una buena decisión: reutiliza toda la base del sprint y ha obligado a resolver problemas técnicos interesantes, como el determinismo de la simulación, el rendimiento, la validación en el servidor, la generación procedural y el audio sintetizado.
+\textbf{Producto.} Los cuatro hitos del Sprint 1 están completos, desplegados y comprobados en producción (Capítulo~\ref{cap:evaluacion}), con trazabilidad completa desde el requisito hasta la release (Anexo~\ref{anx:trazabilidad}). Sobre esa base se construyó el juego del Sprint 2 (Capítulo~\ref{cap:juego}), con 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos rivales, 10 jefes, 5 ambientes, 26 selecciones, 29 logros y 10 equipaciones. Cambiar de red social a juego fue una decisión acertada: reutiliza entera la base del sprint y obliga a resolver problemas técnicos que una red social no plantea, como la simulación determinista con paso fijo de 1/60 s, el renderizado en \textit{canvas}, la generación procedural del mapa, el audio sintetizado y la validación de cada partida en el servidor.
 
-\textbf{Proceso.} Todo el trabajo pasó por el mismo camino: PBI en DoneTonic, tarea, rama, pull request con el CI en verde y despliegue automático. Ese camino se puede seguir hacia atrás desde cualquier pull request, y las gráficas de DoneTonic y los burndown del Anexo~\ref{anx:desarrollo} muestran cómo avanzó cada sprint. El cambio de alcance del Sprint 1 (el PBI P19, para aprovechar los créditos de Google Cloud) se registró como un PBI más, en lugar de hacerse por fuera del proceso.
+\textbf{Proceso.} Todo el trabajo pasó por el mismo camino: un PBI en DoneTonic con su historia de usuario, un desglose en tareas, una rama por tarea, un pull request con el CI en verde y el despliegue automático al llegar a \texttt{main}. Ese camino se puede recorrer hacia atrás desde cualquier pull request, y las gráficas de DoneTonic junto con los burndown del Anexo~\ref{anx:desarrollo} muestran cómo avanzó los dos sprints. El cambio de alcance del Sprint 1 (el PBI P19, para aprovechar los créditos de Google Cloud) se registró como un PBI más, con sus tareas T29 y T30, en lugar de hacerse por fuera del proceso.
 
-\textbf{Calidad.} La arquitectura en capas con inyección de dependencias permitió cambiar de memoria a PostgreSQL, añadir correo y Google y montar un juego entero encima sin tocar la lógica existente. Probar primero los casos de error y exigir el CI en verde para fusionar evitó regresiones durante todo el desarrollo: al cierre hay 276 pruebas automáticas.
+\textbf{Calidad.} La arquitectura en capas con inyección de dependencias permitió pasar del repositorio en memoria a PostgreSQL, añadir el correo y Google y montar encima un juego completo sin tocar la lógica existente. La API expone 23 endpoints sobre 5 migraciones versionadas, y las pruebas cubren primero los casos de error: al cierre del Sprint 2 había 276 pruebas automáticas en \texttt{main}, y la Fase 7 posterior elevó el total a 322. Exigir el CI en verde para fusionar evitó regresiones durante todo el desarrollo, y las comprobaciones manuales en producción cubrieron lo que las pruebas automáticas no alcanzan: el correo real, el enlace manipulado y el acceso con dos cuentas de Google distintas.
 
 \textbf{Documentación.} La gestión, la documentación técnica, la revisión de la entrega y esta memoria están en el repositorio, junto al código. Quien revise el proyecto puede ir de un requisito a su PBI, de ahí a la tarea, a la rama y al pull request, y ver las pruebas que lo cubren, sin salir de GitHub ni pedir acceso a ninguna herramienta.
 
-\subsection{Lecciones aprendidas}
+\section{Lecciones aprendidas}
 
-\begin{enumerate}
-    \item Dividir pronto el trabajo en tareas pequeñas: una rama y un pull request por tarea hacen que cada cambio sea fácil de revisar y de deshacer.
-    \item Automatizar el despliegue desde el primer día: así cada entrega es un pull request más y no un trabajo aparte al final.
-    \item Documentar las decisiones mientras se toman, no al final: la documentación técnica y esta memoria salen de lo que ya estaba escrito en el repositorio.
-    \item Comprobar visualmente cada cambio de interfaz. Así apareció, por ejemplo, el primer clic perdido en «Reenviar el correo»: al salir del campo de contraseña aparecía su error, la página se movía y el clic caía fuera del botón (Anexo~\ref{anx:desarrollo}).
-\end{enumerate}
+La primera lección es de organización: dividir pronto el trabajo en tareas pequeñas, con su rama y su pull request, hace que cada cambio sea fácil de revisar y de deshacer. Cuando una tarea crece demasiado, el pull request se vuelve difícil de entender y aumenta el riesgo de conflicto con el resto del trabajo.
+
+La segunda es de automatización: desplegar desde el primer día convierte cada entrega en un pull request más y evita el trabajo acumulado del final del sprint. En este proyecto, el despliegue automático en Cloud Run estaba configurado desde el Hito 1, de modo que fusionar en \texttt{main} ya publicaba la revisión nueva.
+
+La tercera es de documentación: escribir las decisiones en el momento en que se toman evita reconstruir la memoria al final, cuando ya no se recuerda por qué se eligió una opción y no otra. La documentación del repositorio y esta memoria salen de esas notas.
+
+La cuarta es de comprobación visual: revisar en el navegador cada cambio de interfaz y de juego detecta problemas que las pruebas automáticas no ven. Así apareció, por ejemplo, el primer clic perdido en «Reenviar el correo»: al salir del campo de contraseña vacío aparecía su error, la página se movía y el clic caía fuera del botón (Anexo~\ref{anx:desarrollo}).
+
+La quinta tiene que ver con el registro del backlog. En el Sprint 2 el juego se programó antes de que el profesor fijara el contenido del sprint, y el backlog se registró en DoneTonic al cerrarlo. Las gráficas de la herramienta salen por eso en recta, y la evolución real hubo que reconstruirla a partir de las fechas de fusión de los pull requests (Anexo~\ref{anx:desarrollo}). Registrar el backlog antes de empezar a programar es la forma de que las métricas de la herramienta reflejen lo que ocurrió.
 
 \section{Trabajo futuro}
 \label{sec:trabajo-futuro}
 
-\begin{enumerate}
-    \item \textbf{Multijugador:} lista de amigos y partidas en grupo (\textit{party}) de hasta 4 jugadores, con WebSockets y un servidor autoritativo.
-    \item \textbf{Más contenido:} jugadores, jefes, equipaciones y logros, y mejores sprites para los jugadores menos conocidos.
-    \item \textbf{Ranking por temporadas y por ambiente.}
-    \item \textbf{Seguridad de las cuentas:} recuperación de la contraseña por correo y límite de intentos de inicio de sesión (\textit{rate limiting}).
-    \item \textbf{Pruebas de extremo a extremo} automatizadas en el CI (Playwright) y medición de la cobertura.
-    \item \textbf{Aplicación instalable (PWA)} para jugar desde el móvil como una app.
-\end{enumerate}
+El trabajo futuro se ordena por lo que aporta más valor al proyecto. El primero es el multijugador: una lista de amigos y partidas en grupo (\textit{party}) de hasta 4 jugadores, con WebSockets y un servidor autoritativo, de modo que varias personas jueguen la misma partida y compartan el progreso del club.
+
+El segundo es ampliar el contenido del juego con más jugadores, jefes, equipaciones y logros, y mejorar los sprites de los jugadores menos conocidos, que hoy son los peor reconocibles.
+
+El tercero es mejorar el ranking, con temporadas y clasificación por ambiente, de modo que la marca de cada aficionado tenga un contexto más rico.
+
+A estos tres se suman cuatro mejoras de menor alcance pero útiles: la recuperación de contraseña por correo y la limitación de intentos de inicio de sesión (\textit{rate limiting}); las pruebas de extremo a extremo automatizadas en el CI con Playwright y la medición de la cobertura; y una aplicación instalable (PWA) para jugar desde el móvil como una app.
