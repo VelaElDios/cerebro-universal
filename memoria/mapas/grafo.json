@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T19:43:29+01:00",
+ "generado": "2026-11-23T20:19:41+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1046,6 +1046,19 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo.md"
+  },
+  {
+   "id": "concepto:estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r",
+   "tipo": "concepto",
+   "titulo": "Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r.md"
   },
   {
    "id": "concepto:estrategia-de-pruebas-error-first-y-ci-como-requisito-de-mer",
@@ -3499,6 +3512,19 @@
    "ruta": "memoria/conocimiento/decisiones/prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier.md"
   },
   {
+   "id": "decision:prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar",
+   "tipo": "decision",
+   "titulo": "Prosa de TFG obligatoria: nada de listas de capturas, agrupar con subfigure",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar.md"
+  },
+  {
    "id": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "tipo": "decision",
    "titulo": "Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas con subfigure (regla 13 Javier)",
@@ -5000,6 +5026,20 @@
    "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md"
   },
   {
+   "id": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
+   "tipo": "receta",
+   "titulo": "Diagramas de secuencia legibles: máx. 6 participantes, flechas caja-a-caja, sin palabras partidas",
+   "temas": [
+    "latex",
+    "memoria",
+    "pgf-umlsd",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-legibles-max-6-participantes-flechas.md"
+  },
+  {
    "id": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
    "tipo": "receta",
    "titulo": "\\directlua no funciona dentro del texto de un \\node: usar macros",
@@ -5168,6 +5208,32 @@
    "ruta": "memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot.md"
   },
   {
+   "id": "receta:figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y",
+   "tipo": "receta",
+   "titulo": "Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y.md"
+  },
+  {
+   "id": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "tipo": "receta",
+   "titulo": "Flechas reales en captions y texto: $\\rightarrow$ en lugar de ->",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de.md"
+  },
+  {
    "id": "receta:flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf",
    "tipo": "receta",
    "titulo": "Flujo de confirmación de cuenta por correo (GET /api/auth/confirm)",
@@ -5216,6 +5282,19 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github.md"
+  },
+  {
+   "id": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-lon",
+   "tipo": "receta",
+   "titulo": "Formato de tablas: alineación superior, ancho controlado y longtable sin filas huérfanas",
+   "temas": [
+    "latex",
+    "memoria",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-lon.md"
   },
   {
    "id": "receta:formato-de-tablas-alineacion-tamanos-y-longtable",
@@ -5926,11 +6005,26 @@
     "latex",
     "memoria",
     "tfg",
-    "verificacion"
+    "verificacion",
+    "python"
    ],
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig.md"
+  },
+  {
+   "id": "receta:verificacion-final-revision-pagina-a-pagina-revisar-maquetac",
+   "tipo": "receta",
+   "titulo": "Verificación final: revisión página a página + revisar_maquetacion.py en verde",
+   "temas": [
+    "latex",
+    "memoria",
+    "python",
+    "tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/verificacion-final-revision-pagina-a-pagina-revisar-maquetac.md"
   },
   {
    "id": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
@@ -5959,14 +6053,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 171,
+   "peso": 178,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 66,
+   "peso": 73,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -6085,7 +6179,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 28,
+   "peso": 29,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -6141,7 +6235,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 67,
+   "peso": 74,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -7121,7 +7215,7 @@
    "id": "tema:python",
    "tipo": "tema",
    "titulo": "python",
-   "peso": 1,
+   "peso": 3,
    "ruta": "memoria/temas/python.md"
   },
   {
@@ -10073,6 +10167,31 @@
   {
    "de": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
    "a": "concepto:trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r",
+   "a": "concepto:estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "concepto:estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
    "tipo": "enlaza"
   },
   {
@@ -18146,6 +18265,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar",
+   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar",
+   "a": "concepto:prosa-de-tfg-vs-lista-de-capturas",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "decision:prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:figuras",
    "tipo": "trata"
@@ -19587,22 +19736,27 @@
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:elementos-de-plantilla-inmutables-no-se-quita-nada",
+   "a": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:formato-de-tablas-alineacion-tamanos-y-longtable",
+   "a": "concepto:estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl",
+   "a": "receta:figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
+   "a": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "fuente:fuente-reglas-tfg-memoria",
+   "a": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-lon",
    "tipo": "enlaza"
   },
   {
@@ -19612,22 +19766,17 @@
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "decision:prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier",
+   "a": "decision:prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas",
+   "a": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "tipo": "enlaza"
   },
   {
    "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "dato:scripts-de-verificacion-automatica-en-el-repo",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "fuente:fuente-reglas-tfg-memoria",
-   "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
+   "a": "receta:verificacion-final-revision-pagina-a-pagina-revisar-maquetac",
    "tipo": "enlaza"
   },
   {
@@ -23331,6 +23480,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
+   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
+   "a": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro",
    "a": "tema:directlua",
    "tipo": "trata"
@@ -23851,6 +24030,51 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y",
+   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:flujo-de-confirmacion-de-cuenta-por-correo-get-api-auth-conf",
    "a": "tema:auth",
    "tipo": "trata"
@@ -24013,6 +24237,26 @@
   {
    "de": "receta:flujo-de-trabajo-enunciado-codigo-deploy-donetonic-github",
    "a": "receta:estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-lon",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-lon",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-lon",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:formato-de-tablas-alineacion-superior-ancho-controlado-y-lon",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
    "tipo": "enlaza"
   },
   {
@@ -26217,6 +26461,11 @@
   },
   {
    "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
+   "a": "tema:python",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "a": "receta:comprobar-la-maquetacion-de-un-tfg-automaticamente",
    "tipo": "enlaza"
   },
@@ -26233,6 +26482,36 @@
   {
    "de": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "a": "dato:scripts-de-verificacion-automatica-en-el-repo",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:verificacion-final-revision-pagina-a-pagina-revisar-maquetac",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-final-revision-pagina-a-pagina-revisar-maquetac",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-final-revision-pagina-a-pagina-revisar-maquetac",
+   "a": "tema:python",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-final-revision-pagina-a-pagina-revisar-maquetac",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:verificacion-final-revision-pagina-a-pagina-revisar-maquetac",
+   "a": "concepto:reglas-de-maquetacion-de-javier-resumen-accionable",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:verificacion-final-revision-pagina-a-pagina-revisar-maquetac",
+   "a": "receta:verificacion-automatica-de-diagramas-con-scripts-revisar-fig",
    "tipo": "enlaza"
   },
   {

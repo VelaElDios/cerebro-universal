@@ -7,7 +7,7 @@ proyectos: []
 fuentes: ["../../memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-21"
-actualizado: "2026-11-21"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[tfg]]
@@ -18,3 +18,9 @@ La memoria debe usar exclusivamente la portada oficial definida en `elements/por
 > — `../../memoria/reglas-tfg.md`
 
 Relacionado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]]
+
+## Ampliación (2026-11-23, )
+- Usar exclusivamente `elements/portada.tex` como portada (contiene escudo UCLM/ESIIAB, tipo de trabajo, título, autor, fecha, todo centrado).
+- En `Memoria.tex` incluir `\input{elements/portada}`.
+- NO añadir la «segunda portada» con logos UCLM/ESII que trae `elements/preambulo.tex`.
+- No crear portadas adicionales ni personalizadas.

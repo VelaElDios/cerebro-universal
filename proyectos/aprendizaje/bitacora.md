@@ -165,3 +165,11 @@ Trozos leídos: 1 · notas nuevas o ampliadas: 10
 **Repos:** saas @ b6fd183 2026-11-19 14:14:30 +0100 · datos @ 50107c1 2026-11-21 17:56:56 +0000
 
 - ✅ `../../memoria/reglas-tfg.md` aprendido entero: 10 notas → [[fuente-reglas-tfg-memoria]]
+
+## 2026-11-23 20:19 · 📚 Aprendizaje
+
+Trozos leídos: 1 · notas nuevas o ampliadas: 10
+
+**Repos:** saas @ b6fd183 2026-11-19 14:14:30 +0100 · datos @ cd9cf7e 2026-11-23 18:43:37 +0000
+
+- ✅ `../../memoria/reglas-tfg.md` aprendido entero: 10 notas → [[fuente-reglas-tfg-memoria]]

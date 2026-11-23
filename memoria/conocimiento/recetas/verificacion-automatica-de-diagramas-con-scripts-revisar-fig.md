@@ -1,13 +1,13 @@
 ---
 tipo: "receta"
 titulo: "Verificación automática de diagramas con scripts/revisar_figuras.py"
-temas: ["diagramas", "latex", "memoria", "tfg", "verificacion"]
+temas: ["diagramas", "latex", "memoria", "tfg", "verificacion", "python"]
 claves: ["scripts/revisar_figuras.py", "Gemini", "reglas 16-18"]
 proyectos: []
 fuentes: ["../../memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-18"
-actualizado: "2026-11-18"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[diagramas]] · [[latex]] · [[memoria]] · [[tfg]] · [[verificacion]]
@@ -18,3 +18,15 @@ Ejecutar `scripts/revisar_figuras.py` que renderiza cada página con diagrama a 
 > — `../../memoria/reglas-tfg.md`
 
 Relacionado: [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[scripts-de-verificacion-automatica-en-el-repo]]
+
+## Ampliación (2026-11-23, )
+- Ejecutar `scripts/revisar_figuras.py` sobre el PDF generado.
+- El script detecta con coordenadas reales:
+  1. Líneas/flechas que pasan por encima de letras.
+  2. Cajas que se pisan.
+  3. Palabras partidas con guion dentro de cajas.
+  4. Letras < 7,5 pt.
+- Si el script avisa, Gemini revisa a ojo (si hay cupo/modelo disponible).
+- NO corregir encogiendo el dibujo (`adjustbox`, `resizebox`, `scale`): eso achica las letras.
+- Corregir replanteando: separar cajas, flechas caja-a-caja, cajas más anchas, menos participantes.
+- Si Gemini no está disponible, la medición del script basta; no es excusa para no terminar.

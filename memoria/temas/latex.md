@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 171
+notas: 178
 ---
 # latex
 
@@ -64,6 +64,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis|Diagramas de secuencia con pgf-umlsd: reglas de sintaxis]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-legibles-max-6-participantes-flechas|Diagramas de secuencia legibles: máx. 6 participantes, flechas caja-a-caja, sin palabras partidas]]
 - 🧪 [[memoria/conocimiento/recetas/en-un-tex-los-comentarios-son-con-no-con|En un .tex los comentarios son con %, no con --]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-archivos-obligatoria-para-la-plantilla-sus|Estructura de archivos obligatoria para la plantilla SUS]] · ⚠️ propuesto
@@ -73,6 +74,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
+- 🧪 [[memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y|Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de|Flechas reales en captions y texto: $\rightarrow$ en lugar de ->]]
+- 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-lon|Formato de tablas: alineación superior, ancho controlado y longtable sin filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
 - 🧪 [[memoria/conocimiento/recetas/frases-prohibidas-la-figura-x-muestra-regla-13-reescribir-co|Frases prohibidas «La figura X muestra…» (Regla 13): reescribir como prosa con \ref]]
 - 🧪 [[memoria/conocimiento/recetas/fundir-secciones-de-1-2-parrafos-regla-9-javier|Fundir secciones de 1-2 párrafos (regla 9 Javier)]]
@@ -93,6 +97,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/validacion-final-del-pdf-antes-de-marcar-terminado|Validación final del PDF antes de marcar TERMINADO]]
 - 🧪 [[memoria/conocimiento/recetas/validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas|Validación visual de diagramas TikZ/pgf-umlsd en PDF (reglas 16-18 Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/verificacion-automatica-de-diagramas-con-scripts-revisar-fig|Verificación automática de diagramas con scripts/revisar_figuras.py]]
+- 🧪 [[memoria/conocimiento/recetas/verificacion-final-revision-pagina-a-pagina-revisar-maquetac|Verificación final: revisión página a página + revisar_maquetacion.py en verde]]
 
 ## Decisiones (y por qué)
 
@@ -127,6 +132,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/portada-unica-oficial-del-tfg-elements-portada-tex|Portada única oficial del TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier|Prosa de TFG en lugar de listas de capturas (regla 13 Javier)]]
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar|Prosa de TFG obligatoria: nada de listas de capturas, agrupar con subfigure]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas con subfigure (regla 13 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/referencias-rotas-ref-y-ref-causa-y-solucion|Referencias rotas `\ref{.}` y `\ref{)}` — causa y solución]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1|Rutas de documentación tras reorganización del bundle (2026-11-19)]] · ⚠️ propuesto
@@ -139,6 +145,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-de-calculos-en-lualatex-para-plantilla-sus|Arquitectura de cálculos en LuaLaTeX para plantilla SUS]]
 - 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c|Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r|Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]]
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 - 💡 [[memoria/conocimiento/conceptos/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto

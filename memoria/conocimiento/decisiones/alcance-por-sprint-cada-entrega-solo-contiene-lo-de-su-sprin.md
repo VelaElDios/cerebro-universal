@@ -25,3 +25,9 @@ relacionado: Contenido por sprint y prosa de TFG (no listas de capturas)
 
 ## Ampliación (2026-11-23, memoria-procesos)
 La memoria actual (versión 4) cubre los dos sprints completos porque es la entrega final. Pero si hubiera entregas intermedias, cada una reflejaría solo su sprint. En esta memoria final, el Resumen y Abstract mencionan ambos sprints, la Introducción describe los dos, las Conclusiones repasan objetivos de ambos, y los anexos incluyen ambos sprints.
+
+## Ampliación (2026-11-23, )
+- Memoria del Sprint N: solo contenido de ese sprint.
+- Ejemplo: Sprint 1 → sin capítulo de juego.
+- Título, Resumen, Abstract, Introducción, Conclusiones y Anexos deben reflejar exactamente el alcance del sprint actual.
+- No arrastrar contenido de sprints futuros ni mantener secciones obsoletas de sprints pasados.
