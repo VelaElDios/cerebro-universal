@@ -15384,3 +15384,10 @@ Correcciones directas del revisor: tres bloques CAMBIAR para replantear los tres
 ## 2026-11-23 19:02 · 🧠 Conocimiento guardado
 
 [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]]
+
+
+## Revisión humana (Javier) · 2026-11-23 · la revisión de Gemini no es un pendiente
+
+Los avisos «Gemini no pudo mirar…» (antes salía «404 NOT_FOUND») eran un fallo del comprobador: tenía mal el nombre del modelo de reserva. Ya está arreglado: ahora usa los mismos modelos que config/ias.json.
+
+Aun así, cuando Gemini no pueda mirar un diagrama (cupo agotado o modelo caído), **no es una tarea pendiente ni hay que revisarlo a mano**. La medición geométrica del PDF ya comprueba las reglas 16-18 con exactitud. Si la prueba pasa entera (verificar, maquetación y figuras), los diagramas están bien: no bloqueéis el «terminado» por ese aviso.
