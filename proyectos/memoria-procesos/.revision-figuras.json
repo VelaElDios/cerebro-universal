@@ -407,5 +407,55 @@
  },
  "660a56ad6227a5e003f332afaa10212c": {
   "ok": true
+ },
+ "bb1f8e0b2b80180bbd978c7a0961e80b": {
+  "ok": true
+ },
+ "b271e93aa9d15beb0b52be27c7e65514": {
+  "ok": false,
+  "problemas": [
+   "La línea que conecta la tabla 'session' con la tabla 'users' atraviesa la etiqueta '_userId' situada sobre ella.",
+   "La línea que conecta la tabla 'users' con la tabla 'juego_perfiles' atraviesa la etiqueta 'su club' situada sobre ella."
+  ]
+ },
+ "364797bae2560fd3e820b66c3c10b6f5": {
+  "ok": true
+ },
+ "a9d4af66792e29ada1e91462825f36c0": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta 'cuenta pendiente' del bloque alt corta o se superpone con la línea vertical del marco del bloque alt en la parte superior izquierda.",
+   "La etiqueta 'correcto' del bloque alt cruza o toca la línea vertical del marco del bloque alt en la parte superior izquierda."
+  ]
+ },
+ "abae6d6986c4450edb583b06661bdd59": {
+  "ok": false,
+  "problemas": [
+   "La Figura 4.7 mencionada en el texto («Esa división es la que se dibuja en la Figura 4.7», «ve en la Figura 4.7: la simulación determinista...») no aparece en la página actual."
+  ]
+ },
+ "a2b753c3a69866d3b082e7f00ae8a728": {
+  "ok": true
+ },
+ "7231b61898a693919bc842e57ba885b4": {
+  "ok": true
+ },
+ "82b0ff6edb00ce1a1ea60d04f5a09018": {
+  "ok": true
+ },
+ "aaafde90cc64623f5213c36d54e36675": {
+  "ok": true
+ },
+ "37d8169175c67cbf679f9e81b5dfc7a0": {
+  "ok": true
+ },
+ "2e9dfbb81285211720a3cfe0b71cb469": {
+  "ok": true
+ },
+ "c76a97dbde2abbefc6c5d09b384cde6d": {
+  "ok": true
+ },
+ "eb0c04ae165de85a13378f2ee9a9aa73": {
+  "ok": true
  }
 }

@@ -15391,3 +15391,24 @@ Correcciones directas del revisor: tres bloques CAMBIAR para replantear los tres
 Los avisos «Gemini no pudo mirar…» (antes salía «404 NOT_FOUND») eran un fallo del comprobador: tenía mal el nombre del modelo de reserva. Ya está arreglado: ahora usa los mismos modelos que config/ias.json.
 
 Aun así, cuando Gemini no pueda mirar un diagrama (cupo agotado o modelo caído), **no es una tarea pendiente ni hay que revisarlo a mano**. La medición geométrica del PDF ya comprueba las reglas 16-18 con exactitud. Si la prueba pasa entera (verificar, maquetación y figuras), los diagramas están bien: no bloqueéis el «terminado» por ese aviso.
+
+## 2026-11-23 22:06 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+(sin resumen)
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04-descripcion.tex:427: Undefined control sequence.
+- intento 2: ❌ VERIFICACIÓN FALLIDA: 3 problema(s) (tocó `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`)
+- intento 3: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Corregir el diagrama de arquitectura del juego (fig:juego-arquitectura) en chapters/04b-juego.tex y el pipeline (fig:pipeline) en chapters/05-evaluacion.tex, así como los burndowns (fig:burndown-s1, fig:burndown-s2) en chapters/a1-desarrollo.tex. Luego ejecutar revisar_umlsd.py y revisar_maquetacion.py para verificar que todos los diagramas pasan. Finalmente, revisión visual página a página del PDF.
+
+## 2026-11-23 22:06 · ⚠️ Revisor no disponible
+
+⏱️ Solo quedan 184 s de paso: no da tiempo a que conteste el revisor.
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
