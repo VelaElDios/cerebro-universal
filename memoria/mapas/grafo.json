@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T04:09:45+01:00",
+ "generado": "2026-11-23T04:50:37+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -109,6 +109,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/lecciones/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas.md"
+  },
+  {
+   "id": "leccion:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "tipo": "leccion",
+   "titulo": "Cifras clave del proyecto contrastadas con fuentes (30 datos)",
+   "temas": [
+    "metricas",
+    "trazabilidad",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos.md"
   },
   {
    "id": "leccion:citas-a-fuentes-no-bibliograficas-en-el-texto",
@@ -1582,6 +1597,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/datos/catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore.md"
+  },
+  {
+   "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto contrastadas con fuentes (30 datos)",
+   "temas": [
+    "metricas",
+    "trazabilidad",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos.md"
   },
   {
    "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
@@ -5826,6 +5856,27 @@
    "ruta": "memoria/temas/bibtex.md"
   },
   {
+   "id": "tema:metricas",
+   "tipo": "tema",
+   "titulo": "metricas",
+   "peso": 16,
+   "ruta": "memoria/temas/metricas.md"
+  },
+  {
+   "id": "tema:trazabilidad",
+   "tipo": "tema",
+   "titulo": "trazabilidad",
+   "peso": 18,
+   "ruta": "memoria/temas/trazabilidad.md"
+  },
+  {
+   "id": "tema:verificacion",
+   "tipo": "tema",
+   "titulo": "verificacion",
+   "peso": 26,
+   "ruta": "memoria/temas/verificacion.md"
+  },
+  {
    "id": "tema:bibliografia",
    "tipo": "tema",
    "titulo": "bibliografia",
@@ -5908,20 +5959,6 @@
    "titulo": "verificación",
    "peso": 3,
    "ruta": "memoria/temas/verificación.md"
-  },
-  {
-   "id": "tema:verificacion",
-   "tipo": "tema",
-   "titulo": "verificacion",
-   "peso": 24,
-   "ruta": "memoria/temas/verificacion.md"
-  },
-  {
-   "id": "tema:metricas",
-   "tipo": "tema",
-   "titulo": "metricas",
-   "peso": 14,
-   "ruta": "memoria/temas/metricas.md"
   },
   {
    "id": "tema:secuencia",
@@ -6524,13 +6561,6 @@
    "titulo": "anexo",
    "peso": 3,
    "ruta": "memoria/temas/anexo.md"
-  },
-  {
-   "id": "tema:trazabilidad",
-   "tipo": "tema",
-   "titulo": "trazabilidad",
-   "peso": 16,
-   "ruta": "memoria/temas/trazabilidad.md"
   },
   {
    "id": "tema:gestión",
@@ -7894,6 +7924,26 @@
   },
   {
    "de": "leccion:bibtex-autores-corporativos-con-doble-llave-y-year-en-todas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
    "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
@@ -11771,6 +11821,26 @@
    "de": "dato:catalogo-de-sistemas-del-juego-jugadores-rarezas-entrenadore",
    "a": "dato:lista-de-29-logros-con-datos-historicos-verificados-y-10-equ",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",

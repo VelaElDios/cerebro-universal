@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "trazabilidad"
-notas: 16
+notas: 18
 ---
 # trazabilidad
 
@@ -19,6 +19,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto contrastadas con fuentes]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c|Cifras clave del proyecto La Grada Colchonera contrastadas con fuentes]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)]] · ⚠️ propuesto
@@ -32,6 +33,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 - 📊 [[memoria/conocimiento/datos/tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr|Tabla de trazabilidad Sprint 2: PBI → Etiqueta → Título → Tareas → PRs → Hecho → Estado]]
 - 📊 [[memoria/conocimiento/datos/trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas|Trazabilidad completa requisito → PBI → tarea → PR (82 tareas)]]
 
+## Lecciones (errores ya resueltos)
+
+- ⚠️ [[memoria/lecciones/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[saas]] · [[grada-colchonera]] · [[sprint]] · [[scrum]] · [[donetonic]] · [[metricas]] · [[sprints]] · [[pbi]] · [[memoria]] · [[tareas]] · [[capturas]] · [[requisitos]]
+[[metricas]] · [[saas]] · [[grada-colchonera]] · [[sprint]] · [[verificacion]] · [[scrum]] · [[donetonic]] · [[sprints]] · [[pbi]] · [[memoria]] · [[tareas]] · [[capturas]]

@@ -14503,3 +14503,68 @@ Lo que dejo como tareas: validar 9 diagramas no revisados; corregir fig:sec-goog
 ## 2026-11-23 04:09 · 🧠 Conocimiento guardado
 
 [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]] · [[burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2]] · [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[workspace-y-equipo-en-donetonic]]
+
+## 2026-11-23 04:47 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He verificado que `elements/preambulo.tex` ya no contiene la segunda portada (bloques `textblock` con logos, título y autor). El archivo solo incluye la declaración de autoría, el Resumen y el Abstract, tal como exige la regla 1 de Javier. Por tanto, este paso ya está completado.
+
+**Archivos:** ninguno
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Pasar al siguiente paso: eliminar imágenes repetidas (capturas de producción, prueba técnica y DoneTonic) dejando cada una en un solo sitio y usando `\ref` en el resto. Revisar `04-descripcion.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex` y `a2-material.tex`.
+
+## 2026-11-23 04:50 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Compilación: OK (96 páginas, overfull hbox residual 10pt en anexo trazabilidad).
+- verificar.py: OK (35 figuras, 29 tablas, 17345 palabras, referencias resueltas, todos los RF/RJ/RNF/PBIs/tareas presentes).
+- revisar_maquetacion.py: OK (reglas de maquetación cumplidas; 13 diagramas medidos en PDF sin fallos; warnings de Gemini 404 en 9 diagramas no bloquean).
+- Portada única: elements/preambulo.tex ya no contiene la segunda portada (bloques textblock eliminados), solo declaración de autoría, Resumen y Abstract.
+- Imágenes duplicadas: revisadas las inclusiones de capturas en chapters/03-propuesta.tex, 04-descripcion.tex, 05-evaluacion.tex, a1-desarrollo.tex, a2-material.tex; cada captura aparece una sola vez y en los demás sitios se usa \ref (p. ej., figuras de DoneTonic solo en cap:propuesta y anexo desarrollo; producción solo en cap:evaluacion; prueba técnica solo en cap:evaluacion; Hito 4 solo en cap:descripcion; juego solo en cap:juego).
+- Cadenas «La figura X muestra…» eliminadas en chapters/04-descripcion.tex y 04b-juego.tex (ahora usan prosa con subfiguras). Pendientes en chapters/01-introduccion.tex, 03-propuesta.tex, 05-evaluacion.tex, 06-conclusiones.tex y anexos.
+- Diagramas obligatorios: fig:capas y fig:juego-arquitectura corregidos (text width, separación, flechas con codos, font=\scriptsize). fig:sec-login y fig:sec-baja corregidos (etiquetas sin acentos, saltos \n, adjustbox). Pendientes de revisión visual/umlsd: fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2.
+- Anexo desarrollo (a1-desarrollo.tex): dos secciones de sprint con mismo esquema (planificación, desarrollo, revisión, retrospectiva) y explica la recta del Sprint 2 (backlog registrado al cerrar el sprint).
+- Trazabilidad completa (a4-trazabilidad.tex): tabla longtable con todos los PBIs P1–P48 y tareas T1–T82.
+- Resumen (≥150 palabras) y Abstract (≥120 palabras) presentes en elements/preambulo.tex con palabras clave/keywords.
+- Números contrastados: 30 datos verificados contra fuentes (ver bitácora reciente).
+
+Qué está bien: La estructura general compila, verificar.py pasa, portada única implementada, Resumen/Abstract cumplen mínimos, anexos tienen contenido requerido, trazabilidad completa, datos numéricos contrastados. El constructor corrigió fig:capas y fig:juego-arquitectura (ya no aparecen en fallos de maquetación). Las imágenes duplicadas ya están resueltas (cada captura en un solo sitio). Los manuales de uso (cap:descripcion y cap:juego) usan prosa con subfiguras.
+
+Qué está mal (bloquea TERMINADO):
+1. Cadenas «La figura X muestra…» aún presentes en chapters/01-introduccion.tex, 03-propuesta.tex, 05-evaluacion.tex, 06-conclusiones.tex y anexos (a1-desarrollo.tex, a3-uso-ia.tex). Deben reescribirse integrando las capturas en la prosa.
+2. 9 diagramas obligatorios pendientes de validación visual y con revisar_umlsd.py: fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2. Aunque revisar_maquetacion.py midió 13 diagramas sin fallos, las reglas 16-18 exigen revisión a ojo (letras ≥7.5pt, sin flechas cruzando cajas, sin palabras partidas). Gemini devolvió 404, así que no se pudo automatizar.
+3. Secciones de una o dos líneas en varios capítulos (p. ej., en 01-introduccion.tex la sección «Estructura de la memoria» es una lista; en 03-propuesta.tex la sección «Herramientas» es solo una tabla; en 05-evaluacion.tex varias subsecciones son muy cortas). Deben fundirse o ampliarse.
+4. Repetición de párrafos entre capítulos (p. ej., descripción del pipeline CI/CD aparece en 03-propuesta.tex y 05-evaluacion.tex; en 05-evaluacion.tex se remite a la figura pero el texto introductorio duplica ideas). Debe explicarse una vez y en el resto remitir con \ref.
+
+Lo que corrijo yo (1 archivo): elimino las cadenas «La figura X muestra…» en chapters/01-introduccion.tex y funda la sección «Estructura de la memoria» en un párrafo de prosa con referencias cruzadas.
+
+Lo que dejo como tareas: corregir cadenas en 03-propuesta.tex, 05-evaluacion.tex, 06-conclusiones.tex, a1-desarrollo.tex, a3-uso-ia.tex; validar 9 diagramas con revisar_umlsd.py y revisión visual (replantear los que fallen); fusionar secciones cortas; eliminar repeticiones de párrafos; ejecutar comando_prueba completo y confirmar compilación, verificar.py OK y revisar_maquetacion.py OK; revisión visual final del PDF página a página.
+
+**Correcciones del revisor:** `(cambio) chapters/01-introduccion.tex`
+
+**Tareas para el constructor:**
+- Reescribir chapters/03-propuesta.tex: eliminar cadenas «La figura X muestra…» en las capturas de DoneTonic (integrar en prosa), fundir sección «Herramientas» (solo tabla) con texto explicativo, evitar repetir la descripción del pipeline (remitir a Figura~\ref{fig:pipeline} del Capítulo~\ref{cap:evaluacion}).
+- Reescribir chapters/05-evaluacion.tex: eliminar cadenas «La figura X muestra…» en capturas de producción, prueba técnica y GitHub Actions; ampliar subsecciones cortas (p. ej., «Registro de actividad y manejo de errores» tiene dos subsecciones de pocas líneas, unirlas en una sola con prosa).
+- Reescribir chapters/06-conclusiones.tex: eliminar cadenas «La figura X muestra…» si las hay; asegurar que cada objetivo se repasa con un párrafo propio, no solo una lista.
+- Revisar anexos a1-desarrollo.tex y a3-uso-ia.tex: sustituir frases sueltas de capturas por prosa integrada.
+- Validar los 9 diagramas pendientes (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) con revisar_umlsd.py y revisión visual del PDF. Replantear los que fallen: aumentar text width, separar nodos, usar \mbox{}, flechas con codos, font=\scriptsize, adjustbox{max width=\textwidth, max totalheight=0.6\textheight}.
+- Fusionar secciones de 1-2 líneas en todos los capítulos (regla 9).
+- Eliminar repeticiones de párrafos entre capítulos (p. ej., pipeline CI/CD, arquitectura en capas, modelo de datos).
+- Ejecutar comando_prueba y confirmar: compilación sin overfull hbox >5pt, verificar.py OK, revisar_maquetacion.py OK (diagramas reglas 16-18 corregidos).
+- Revisión visual obligatoria del PDF página a página: sin páginas con una sola imagen (regla 8), sin secciones de 1-2 líneas (regla 9), sin figuras repetidas (regla 10), flechas son $\rightarrow$ (regla 11), diagramas legibles a tamaño real (regla 16).
+- Verificar mínimos de capturas por carpeta y referencias \ref cruzadas correctas (DoneTonic solo en cap:propuesta y anexo desarrollo; producción solo en cap:evaluacion).
+- Confirmar anexo desarrollo (a1-desarrollo.tex) tiene dos secciones sprint con mismo esquema y explica recta Sprint 2.
+
+## 2026-11-23 04:50 · 🧠 Lección propuesta para la memoria
+
+[[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-23 04:50 · 🧠 Conocimiento guardado
+
+[[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]]

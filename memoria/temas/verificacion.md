@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 24
+notas: 26
 ---
 # verificacion
 
@@ -35,6 +35,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes|Cifras clave del proyecto contrastadas con fuentes]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (para COMPROBACIONES)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
@@ -42,10 +43,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Lecciones (errores ya resueltos)
 
+- ⚠️ [[memoria/lecciones/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/numeros-de-metricas-deben-copiarse-exactamente-de-la-fuente|Números de métricas deben copiarse exactamente de la fuente única]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/todas-las-figuras-y-tablas-deben-tener-ref-en-el-texto|Todas las figuras y tablas deben tener \ref en el texto]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/verificacion-final-de-memoria-tfg-con-plantilla-oficial-esii|Verificación final de memoria TFG con plantilla oficial ESIIAB-UCLM]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[memoria]] · [[tfg]] · [[numeros]] · [[metricas]] · [[test]] · [[memoria-procesos]] · [[pgf-umlsd]] · [[métricas]] · [[trazabilidad]] · [[calidad]]
+[[latex]] · [[fuentes]] · [[metricas]] · [[memoria]] · [[tfg]] · [[numeros]] · [[trazabilidad]] · [[test]] · [[memoria-procesos]] · [[pgf-umlsd]] · [[métricas]] · [[calidad]]
