@@ -488,5 +488,25 @@
  },
  "af16daa5b86f23feec812ee46428f29d": {
   "ok": true
+ },
+ "ea4f15356ab220e9a70ff9e8e4c654d2": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de retorno 'valido o nulo' desde TokenSigner cruza o toca el borde de la caja combinada 'alt'."
+  ]
+ },
+ "f0b5366069daf2cbef0315128b99566a": {
+  "ok": false,
+  "problemas": [
+   "En la subfigura (a), la etiqueta 'callback' situada en la parte inferior está muy cerca de la línea de trazos de la última respuesta y solapa ligeramente con el espacio de las líneas horizontales.",
+   "En la subfigura (b), la etiqueta del bloque alt 'state invalido' y la etiqueta del bloque else 'state ok' están muy ajustadas al borde superior de sus respectivos marcos, dificultando la lectura en algunos visores.",
+   "En la subfigura (b), la línea de llamada hacia 'Servicio' y la respuesta de 'usuario' cruzan múltiples áreas del diagrama con etiquetas de texto apiladas verticalmente en el lado izquierdo ('intercambia code', 'email verificado', 'loginWithOAuth', 'usuario') que se encuentran muy juntas y pueden dificultar la distinción exacta de a qué flecha pertenecen."
+  ]
+ },
+ "b8f9ac0fbb6a963252484ddda2d7307d": {
+  "ok": false,
+  "problemas": [
+   "No existe la Figura 4.7 en la página, a pesar de que el texto hace referencia a ella ('Esa división es la que se dibuja en la Figura 4.7')."
+  ]
  }
 }

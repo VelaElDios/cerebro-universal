@@ -407,12 +407,11 @@ El inicio de sesión local resuelve tres situaciones distintas con una sola ruta
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[3]{fe}{Frontend}
-  \newinst[3]{api}{API}
-  \newinst[3]{srv}{Servicio}
+  \newinst[4]{fe}{Frontend}
+  \newinst[4]{api}{API}
+  \newinst[4]{srv}{Servicio}
   \begin{call}{u}{email y clave}{fe}{ok}
   \end{call}
   \begin{call}{fe}{POST /api/auth/login}{api}{200 / 401 / 403}
@@ -434,7 +433,6 @@ El inicio de sesión local resuelve tres situaciones distintas con una sola ruta
     \mess{fe}{redirige a jugar}{u}
   \end{sdblock}
 \end{sequencediagram}
-\end{adjustbox}
 \caption{Inicio de sesión local.}
 \label{fig:sec-login}
 \end{figure}
@@ -444,7 +442,7 @@ Regenerar la sesión al entrar es la medida que evita la fijación de sesión, y
 \subsection{Inicio de sesión con Google OAuth 2.0}
 \label{sec:flujo-google}
 
-El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \cite{rfc6749}. La API genera un valor \texttt{state} aleatorio, lo guarda en la sesión y redirige al navegador a Google; cuando el usuario vuelve, el callback compara ese valor con el de la sesión y lo borra, de modo que un \texttt{state} reutilizado o falsificado se rechaza. Solo después de esa comprobación el servidor cambia el código por el perfil, exige que el email esté verificado y decide qué hacer con la cuenta: si no existía, la crea ya activa; si estaba pendiente, la activa; y si el email no está verificado, rechaza el acceso (Figura~\ref{fig:sec-google}). En el diagrama, el \texttt{state} se muestra como una operación de la propia API, que es quien lo guarda en la sesión del servidor y lo compara al recibir el callback.
+El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \cite{rfc6749}. La API genera un valor \texttt{state} aleatorio, lo guarda en la sesión y redirige al navegador a Google (Figura~\ref{fig:sec-google-redirect}); cuando el usuario vuelve, el callback compara ese valor con el de la sesión y lo borra, de modo que un \texttt{state} reutilizado o falsificado se rechaza. Solo después de esa comprobación el servidor cambia el código por el perfil, exige que el email esté verificado y decide qué hacer con la cuenta: si no existía, la crea ya activa; si estaba pendiente, la activa; y si el email no está verificado, rechaza el acceso (Figura~\ref{fig:sec-google-callback}). El flujo completo, con sus dos subfiguras, se resume en la Figura~\ref{fig:sec-google}. En los diagramas, el \texttt{state} se muestra como una operación de la propia API, que es quien lo guarda en la sesión del servidor y lo compara al recibir el callback.
 
 \begin{figure}[htbp]
 \centering

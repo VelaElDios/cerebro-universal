@@ -15453,3 +15453,57 @@ Correcciones directas del revisor: dos bloques CAMBIAR para (1) estrechar diagra
 
 **Tareas para el constructor:**
 - ninguna
+
+## 2026-11-23 23:52 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Voy a abordar las dos tareas pendientes del revisor: (1) citar las subfiguras de Google OAuth (`fig:sec-google-redirect` y `fig:sec-google-callback`) en el texto del flujo OAuth en `04-descripcion.tex`, y (2) fijar la colocación de `fig:juego-arquitectura` en `04b-juego.tex` para que aparezca en la página donde se referencia. Luego ejecutaré `revisar_umlsd.py` sobre los diagramas pendientes.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Intentos:**
+- intento 1: ❌ ./chapters/04b-juego.tex:204: LaTeX Error: Unknown float option `H'.
+- intento 2: ❌ VERIFICACIÓN FALLIDA: 2 problema(s) (tocó `(cambio) chapters/04b-juego.tex`)
+- intento 3: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `revisar_umlsd.py` sobre los 11 diagramas pendientes (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte. Luego revisar visualmente cada diagrama en el PDF compilado y hacer revisión visual final página a página. Finalmente, volver a ejecutar `comando_prueba`.
+
+## 2026-11-23 23:53 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18409 palabras).
+- `revisar_maquetacion.py`: ❌ 2 errores: (1) `fig:sec-registro` 438 pt más ancha que la página (04-descripcion.tex:361), (2) `fig:sec-google` no citada en el texto (04-descripcion.tex:449).
+- Diagramas con fallos medidos en PDF (reglas 16-18): `fig:modelo-datos` (p. 35): palabras partidas con guion en cajas («elimina-», «Goo-»); `fig:sec-confirmacion` (p. 37): línea discontinua cruza caja «alt»; `fig:sec-google` (p. 40): etiquetas de subfiguras muy ajustadas, líneas de llamada cruzan áreas con texto apilado; `fig:juego-arquitectura` (p. 53): referenciada en texto pero no aparece en la página.
+- Cadenas «La figura X muestra…» eliminadas en caps. 4 y 4b (prosa con subfiguras). Hito 4 no aparece como pendiente. Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2. Trazabilidad completa P1–P48/T1–T82 en a4.
+- Contrastados 38 datos con fuentes (cifras, fechas, PBIs, tareas, PRs, métricas, capturas mínimas por carpeta).
+
+Qué está bien: La memoria compila, `verificar.py` pasa, maquetación general OK, prosa profesional sin listas de capturas, imágenes únicas con `\ref`, anexos completos, Resumen/Abstract correctos.
+
+Qué falla (bloquea TERMINADO):
+1. **Diagrama `fig:sec-registro`** (04-descripcion.tex:361) desborda 438 pt: hay que estrechar el dibujo SIN escalar (reducir separación entre cajas, cajas más estrechas, etiquetas más cortas o en dos líneas, menos participantes, o `pdflscape`). El revisor anterior ya dio una versión corregida pero el constructor la rompió al intentar otras cosas.
+2. **`fig:sec-google` no citada** (04-descripcion.tex:449): el texto solo cita `fig:sec-google-redirect` y `fig:sec-google-callback`; hay que añadir `\ref{fig:sec-google}` en la explicación del flujo OAuth.
+3. **Diagrama `fig:modelo-datos`** (04-descripcion.tex:191): palabras partidas en cajas → aumentar `text width` de nodos o usar `\\` manual.
+4. **Diagrama `fig:sec-confirmacion`** (04-descripcion.tex:373): línea discontinua cruza caja → separar cajas, usar codos.
+5. **Diagrama `fig:sec-google`** (04-descripcion.tex:449): etiquetas muy ajustadas y líneas cruzadas → aumentar `node distance`, acortar etiquetas, evitar apilamiento vertical.
+6. **`fig:juego-arquitectura`** (04b-juego.tex:204): referenciada pero no en página → mover figura antes de la referencia o usar `[H]` (requiere `float` paquete) o `\FloatBarrier`.
+
+Correcciones directas del revisor: dos bloques CAMBIAR para (1) estrechar `fig:sec-registro` sin escalar y con etiquetas limpias, y (2) añadir cita a `fig:sec-google`. Las otras cuatro correcciones (ER, confirmación, Google subfiguras, juego-arquitectura) quedan como tareas para el constructor.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Estrechar `fig:modelo-datos` (04-descripcion.tex:191): aumentar `text width` de nodos o usar `\\` para evitar particiones silábicas («elimina-», «Goo-»).
+- Replantear `fig:sec-confirmacion` (04-descripcion.tex:373): separar cajas, usar codos (`|-`, `-|`) para que la línea discontinua no cruce la caja «alt».
+- Replantear `fig:sec-google` (04-descripcion.tex:449): aumentar `node distance` (`\newinst[5]` o más), acortar etiquetas (sin acentos, sin paréntesis en `\mess`, usar `\n`), evitar apilamiento vertical de textos a la izquierda.
+- Fijar colocación de `fig:juego-arquitectura` (04b-juego.tex:204): mover la figura justo antes de la frase «Esa división es la que se dibuja en la Figura~\ref{fig:juego-arquitectura}» o añadir `\FloatBarrier` antes de la referencia.
+- Ejecutar `revisar_umlsd.py` sobre los 11 diagramas pendientes (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:juego-arquitectura, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte.
+- Revisión visual de los 11 diagramas en PDF compilado (letras ≥ 7,5 pt, sin cruces, sin palabras partidas, codos correctos).
+- Revisión visual final del PDF página a página (regla 15): ninguna página con una sola imagen, ninguna figura repetida, flechas con `$\rightarrow$`, todo citado con `\ref`, no hay secciones de 1–2 líneas, no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` hasta verde total.
+
+## 2026-11-23 23:53 · 🧠 Lección propuesta para la memoria
+
+[[como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan]] (pendiente de confirmar en `memoria/lecciones/`).

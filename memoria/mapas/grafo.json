@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T22:54:23+01:00",
+ "generado": "2026-11-23T23:53:54+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -184,6 +184,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re.md"
+  },
+  {
+   "id": "leccion:como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan",
+   "tipo": "leccion",
+   "titulo": "Cómo corregir diagramas de secuencia pgf-umlsd que desbordan o tienen cruces",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "diagramas-secuencia"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan.md"
   },
   {
    "id": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
@@ -6053,7 +6068,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 178,
+   "peso": 179,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6179,7 +6194,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 29,
+   "peso": 30,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -6193,7 +6208,7 @@
    "id": "tema:diagramas-secuencia",
    "tipo": "tema",
    "titulo": "diagramas-secuencia",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/diagramas-secuencia.md"
   },
   {
@@ -8316,6 +8331,26 @@
   },
   {
    "de": "leccion:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan",
+   "a": "tema:diagramas-secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan",
    "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
