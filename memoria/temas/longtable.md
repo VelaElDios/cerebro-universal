@@ -32,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «longtable» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tablas]] · [[maquetacion]] · [[anexo]] · [[trazabilidad]] · [[reglas-javier]] · [[overfull]] · [[memoria-procesos]] · [[memoria]] · [[tfg]]
+[[latex]] · [[tablas]] · [[maquetacion]] · [[anexo]] · [[trazabilidad]] · [[memoria]] · [[reglas-javier]] · [[overfull]] · [[memoria-procesos]] · [[tfg]]

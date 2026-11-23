@@ -344,19 +344,19 @@ El registro recorre la cadena completa: la vista valida el email y la contraseñ
   \newinst[1.5]{mail}{Correo}
   \begin{call}{u}{email y clave}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST /api/auth/register}{api}{201 / 409}
+  \begin{call}{fe}{POST /api/auth/register}{api}{201 o 409}
     \begin{call}{api}{register}{srv}{usuario}
     \end{call}
-    \begin{call}{srv}{busca email}{repo}{fila / null}
+    \begin{call}{srv}{busca email}{repo}{fila o null}
     \end{call}
     \begin{sdblock}{alt}{existe}
       \mess{srv}{ConflictError}{api}
       \mess{api}{409}{fe}
     \end{sdblock}
     \begin{sdblock}{else}{nuevo}
-      \begin{call}{srv}{hash+crea}{repo}{usuario}
+      \begin{call}{srv}{hash y crea}{repo}{usuario}
       \end{call}
-      \begin{call}{srv}{firma HMAC+envía}{mail}{enviado}
+      \begin{call}{srv}{firma HMAC y envía}{mail}{enviado}
       \end{call}
       \mess{api}{201}{fe}
     \end{sdblock}
@@ -390,12 +390,12 @@ Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la c
   \newinst[2]{ui}{Vista}
   \begin{call}{u}{abre enlace}{api}{redirige}
   \end{call}
-  \begin{call}{api}{verifica HMAC}{tok}{valido / nulo}
+  \begin{call}{api}{verifica HMAC}{tok}{válido o nulo}
   \end{call}
-  \begin{sdblock}{alt}{no valido}
-    \mess{api}{303 enlace no valido}{u}
+  \begin{sdblock}{alt}{no válido}
+    \mess{api}{303 enlace no válido}{u}
   \end{sdblock}
-  \begin{sdblock}{else}{valido}
+  \begin{sdblock}{else}{válido}
     \begin{call}{api}{activa cuenta}{srv}{ok}
     \end{call}
     \mess{api}{303 cuenta confirmada}{u}
@@ -464,7 +464,7 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
 \begin{sequencediagram}
   \newthread{u}{Navegador}
   \newinst[2]{api}{API}
-  \newinst[2]{ses}{Sesión}
+  \newinst[2]{ses}{Sesion}
   \newinst[2]{goo}{Google}
   \newinst[2]{srv}{Servicio}
   \begin{call}{u}{GET /api/auth/google}{api}{303}
@@ -472,20 +472,20 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
   \begin{call}{api}{guarda state}{ses}{ok}
   \end{call}
   \mess{api}{redirige a Google}{u}
-  \begin{call}{u}{acepta en Google}{goo}{302 code + state}
+  \begin{call}{u}{acepta en Google}{goo}{302 code state}
   \end{call}
   \mess{goo}{callback}{u}
-  \begin{call}{u}{GET /callback?code y state}{api}{ok}
+  \begin{call}{u}{GET callback code state}{api}{ok}
   \end{call}
-  \begin{call}{api}{compara y borra state}{ses}{ok / fallo}
+  \begin{call}{api}{compara y borra state}{ses}{ok o fallo}
   \end{call}
-  \begin{sdblock}{alt}{state invalido}
+  \begin{sdblock}{alt}{state inválido}
     \mess{api}{303 error}{u}
   \end{sdblock}
   \begin{sdblock}{else}{state ok}
     \begin{call}{api}{intercambia code}{goo}{email verificado}
     \end{call}
-    \begin{call}{api}{loginWithOAuth()}{srv}{usuario}
+    \begin{call}{api}{loginWithOAuth}{srv}{usuario}
     \end{call}
     \begin{call}{api}{regenera sesión}{ses}{ok}
     \end{call}

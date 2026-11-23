@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 170
+notas: 171
 ---
 # latex
 
@@ -169,6 +169,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]]
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta|Diagramas de secuencia: máx. 6 participantes y etiquetas cortas]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/en-un-tex-los-comentarios-son-con-no-con|En un .tex los comentarios son con %, no con --]]
 - ⚠️ [[memoria/lecciones/escapar-los-textos-que-vienen-de-datos-antes-de-meterlos-en|Escapar los textos que vienen de datos antes de meterlos en LaTeX]]
 - ⚠️ [[memoria/lecciones/evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable|Evitar páginas casi vacías al final de anexos con longtable]] · ⚠️ propuesto

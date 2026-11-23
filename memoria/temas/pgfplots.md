@@ -32,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgfplots» (este archivo 
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[lua]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]] · [[usabilidad]] · [[maquetacion]] · [[memoria-procesos]]
+[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[diagramas]] · [[memoria]] · [[lua]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]] · [[usabilidad]] · [[maquetacion]]

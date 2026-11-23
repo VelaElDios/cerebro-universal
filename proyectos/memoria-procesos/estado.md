@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-23 09:48"
+actualizado: "2026-11-23 12:54"
 ---
 
 # memoria-procesos
@@ -22,14 +22,16 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (98 páginas, LuaLaTeX). `revisar_maquetacion.py`: ✅ reglas formales cumplidas; 13 diagramas medidos en PDF sin fallos; 9 diagramas con aviso Gemini 404 (no bloquean).
-- **verificar.py**: ✅ pasa (35 figuras, 29 tablas, 17858 palabras).
+- **verificar.py**: ✅ pasa (35 figuras, 29 tablas, 17856 palabras).
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…»; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación de la recta del Sprint 2; duplicado de lecciones Sprint 2 eliminado de retrospectiva Sprint 1.
-- **Pendiente**: validación `revisar_umlsd.py` + visual de 9 diagramas (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2); revisión visual final página a página del PDF.
+- **Corregido en este paso**: Sintaxis de 5 diagramas de secuencia (fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar) — acentos eliminados, participantes declarados, etiquetas válidas.
+- **Pendiente**: Validación visual de 9 diagramas (fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-google, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) + ejecución `revisar_umlsd.py` + revisión visual final página a página del PDF.
 
 ## Siguiente
 1. Ejecutar `revisar_umlsd.py` y corregir los 9 diagramas pendientes.
 2. Revisión visual de esos 9 diagramas en el PDF (reglas 16-19).
-3. Revisión visual final del PDF página a página (regla 15).
-4. Re-ejecutar `comando_prueba` hasta verde total.
+3. Replantear fig:modelo-datos (TikZ) y fig:pipeline (TikZ) para que quepan a tamaño real; fig:burndown-s1 y fig:burndown-s2 (pgfplots) idem.
+4. Revisión visual final del PDF página a página (regla 15).
+5. Re-ejecutar `comando_prueba` hasta verde total.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

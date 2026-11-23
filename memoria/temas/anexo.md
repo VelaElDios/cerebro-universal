@@ -21,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «anexo» (este archivo se 
 
 ## Temas relacionados
 
-[[longtable]] · [[trazabilidad]] · [[anexos]] · [[memoria]] · [[scrum]] · [[tfg]] · [[memoria-procesos]] · [[sprint]]
+[[longtable]] · [[trazabilidad]] · [[memoria]] · [[anexos]] · [[scrum]] · [[tfg]] · [[memoria-procesos]] · [[sprint]]

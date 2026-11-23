@@ -4,14 +4,14 @@
 Este anexo presenta la trazabilidad completa desde los requisitos hasta los pull requests que los implementan, pasando por los PBIs y las tareas técnicas de los dos sprints: Sprint 1 (Hitos 1--4, PBIs P1--P19, tareas T1--T32) y Sprint 2 (PBIs P20--P48, tareas T33--T82). La correspondencia requisito--PBI sale de \path{docs/requisitos.md} (tablas de RF, RJ y RNF); la correspondencia PBI--tarea--PR sale de las tablas de trazabilidad de \path{docs/sprint-1.md} y \path{docs/sprint-2.md}. En el Sprint 1 cada tarea tiene su rama propia y su PR individual hacia la rama del hito; en el Sprint 2 cada tarea indica en su descripción de DoneTonic el PR donde está (un PR por fase y uno por arreglo). Los requisitos no funcionales son transversales y se resumen al principio de la tabla; después, una fila por cada una de las 82 tareas. La Tabla~\ref{tab:trazabilidad-completa} es la matriz completa. Los cierres de hito del Sprint 1 fueron los PR \#9 (Hito 1), \#17 (Hito 2), \#24 (Hito 3), \#29 (cierre del sprint) y \#32 (revisión final y memoria); las releases publicadas son \texttt{hito-1}, \texttt{hito-2}, \texttt{hito-3}, \texttt{hito-4} y \texttt{sprint-1} (Anexo~\ref{anx:material}).
 
 {\small
-\begin{longtable}{@{}L{1.5cm} L{0.7cm} L{0.8cm} L{7.2cm} L{3.0cm}@{}}
+\begin{longtable}{@{}L{1.5cm} L{0.8cm} L{1.3cm} L{7.0cm} L{2.9cm}@{}}
 \caption{Trazabilidad completa: requisito $\rightarrow$ PBI $\rightarrow$ tarea $\rightarrow$ PR.}\label{tab:trazabilidad-completa}\\
 \toprule
 \textbf{Requisito} & \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción de la tarea} & \textbf{PR} \\ \midrule \endfirsthead
 \toprule
 \textbf{Requisito} & \textbf{PBI} & \textbf{Tarea} & \textbf{Descripción de la tarea} & \textbf{PR} \\ \midrule \endhead
 % --- Requisitos no funcionales (transversales) ---
-RNF-01 & P8, P9, P10, P13 & T11--T14, T18, T19 & Seguridad: bcrypt, cookie httpOnly/secure/sameSite, regeneración sesión, permisos servidor, consultas parametrizadas & \#13--\#16, \#21, \#22 \\
+RNF-01 & P8, P9, P10, P13 & T11--\allowbreak T14, T18, T19 & Seguridad: bcrypt, cookie httpOnly/secure/sameSite, regeneración sesión, permisos servidor, consultas parametrizadas & \#13--\#16, \#21, \#22 \\
 RNF-02 & P12 & T17 & Secretos fuera del código: variables entorno y Secret Manager & \#20 \\
 RNF-03 & P4, P6, P11 & T5, T6, T8, T15, T16 & Separación capas API/lógica/datos con inyección dependencias & \#5, \#6, \#8, \#18, \#19 \\
 RNF-04 & P2, P5 & T3, T7 & Pruebas automáticas node:test y CI obligatorio ramas protegidas & \#3, \#7 \\
@@ -19,8 +19,8 @@ RNF-05 & P3, P19 & T4, T29, T30 & Despliegue continuo URL pública (Render y Clo
 RNF-06 & P3, P19 & T4, T29, T30 & Disponibilidad y coste: escala a cero, capas gratuitas, créditos educación & \#4, \#10, \#27, \#28 \\
 RNF-07 & P7, P8, P17 & T9, T10, T12, T25, T26 & Accesibilidad: HTML semántico, foco, aria-live, aria-describedby, teclado, prefers-reduced-motion & \#11, \#12, \#14, \#37--\#41 \\
 RNF-08 & P7, P28 & T9, T10, T50, T51 & Responsive: panel admin tarjetas móvil y joystick táctil & \#11, \#12, \#36, \#47 \\
-RNF-09 & P21, P22, P27 & T35--T38, T48, T49 & Rendimiento juego: paso fijo, búsqueda espacial celdas, texturas cacheadas & \#36, \#44, \#46, \#45, \#47 \\
-RNF-10 & Todos & T1--T82 & Trazabilidad requisito--PBI--tarea--rama--PR--release & \#1--\#56 \\
+RNF-09 & P21, P22, P27 & T35--\allowbreak T38, T48, T49 & Rendimiento juego: paso fijo, búsqueda espacial celdas, texturas cacheadas & \#36, \#44, \#46, \#45, \#47 \\
+RNF-10 & Todos & T1--\allowbreak T82 & Trazabilidad requisito--\allowbreak PBI--\allowbreak tarea--\allowbreak rama--\allowbreak PR--\allowbreak release & \#1--\#56 \\
 RNF-11 & P16, P17, P32 & T23, T24, T26, T56 & Privacidad: política pública, ranking sin correo, logs ocultan datos sensibles & \#38, \#39, \#37--\#41, \#49 \\
 RNF-12 & P4, P6, P11, P24 & T5, T6, T8, T15, T16, T42, T43 & Mantenibilidad: sin frameworks frontend, equilibrio config.js, módulos pequeños & \#5, \#6, \#8, \#18, \#19, \#36, \#48 \\
 % --- Sprint 1: una fila por tarea ---

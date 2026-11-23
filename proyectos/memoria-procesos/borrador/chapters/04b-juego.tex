@@ -263,7 +263,7 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
 \begin{sequencediagram}
   \newthread{j}{Jugador}
   \newinst[1.5]{fe}{Frontend}
-  \newinst[1.5]{api}{API /api/juego}
+  \newinst[1.5]{api}{API}
   \newinst[1.5]{srv}{juegoService}
   \newinst[1.5]{repo}{juegoRepository}
   \begin{call}{j}{jugar}{fe}{ok}
@@ -281,7 +281,7 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
     \end{call}
     \mess{fe}{fin}{j}
   \end{sdblock}
-  \begin{call}{fe}{POST fin}{api}{200/400}
+  \begin{call}{fe}{POST fin}{api}{200 o 400}
     \begin{call}{api}{finalizarPartida}{srv}{validación}
     \end{call}
     \begin{sdblock}{alt}{imposible}

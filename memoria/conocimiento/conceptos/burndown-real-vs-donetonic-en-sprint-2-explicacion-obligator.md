@@ -1,10 +1,10 @@
 ---
 tipo: "concepto"
 titulo: "Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en anexo desarrollo"
-temas: ["donetonic", "metricas", "retrospectiva", "scrum", "burndown", "memoria-procesos"]
+temas: ["donetonic", "metricas", "retrospectiva", "scrum", "burndown", "memoria-procesos", "sprint-2"]
 claves: ["recta DoneTonic", "backlog registrado al cierre", "evolución real por PRs"]
 proyectos: ["memoria-procesos"]
-fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2", "repo:saas/docs/sprint-2.md y repo:saas/docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md (D-19)"]
+fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2", "repo:saas/docs/sprint-2.md y repo:saas/docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md (D-19)", "docs/sprint-2.md §Retrospectiva y docs/decisiones.md D-19"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
@@ -29,5 +29,13 @@ En el anexo de desarrollo (a1-desarrollo.tex) se debe incluir tanto la captura d
 
 ## Ampliación (2026-11-23, memoria-procesos)
 En el anexo de desarrollo (a1-desarrollo.tex) se debe incluir: (1) la tabla de evolución real con fechas de PR (Tabla~\ref{tab:evolucion-s2}), (2) el gráfico pgfplots del burndown real (Figura~\ref{fig:burndown-s2}), (3) las capturas de DoneTonic en recta (Figura~\ref{fig:donetonic-s2-graficas}), y (4) un párrafo explicando por qué las gráficas de la herramienta salen en recta y cómo se reconstruye la evolución real.
+
+## Ampliación (2026-11-23, memoria-procesos)
+|
+  En el anexo de desarrollo (a1-desarrollo.tex) se debe explicar explícitamente:
+  - Por qué las gráficas de DoneTonic del Sprint 2 salen en recta (backlog registrado al cerrar el sprint 29/10 con todos los PBIs ya en Hecho).
+  - Cuál es la evolución real (tabla con fechas de fusión de PRs: 23/10 PR#36, 24/10 PRs#44–#52, 26/10 PRs#53–#54, 27/10 PR#55, 29/10 PR#56).
+  - Que esto se debe a que el juego se programó del 23 al 26/10 antes de que el profesor fijara el contenido del Sprint 2 (decisión D-19).
+  - La Figura~\ref{fig:burndown-s2} (pgfplots) muestra la evolución real; la Figura~\ref{fig:donetonic-s2-graficas} (captura) muestra la recta de DoneTonic.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

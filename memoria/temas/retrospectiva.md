@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «retrospectiva» (este arc
 
 ## Temas relacionados
 
-[[donetonic]] · [[metricas]] · [[scrum]] · [[burndown]] · [[memoria-procesos]]
+[[donetonic]] · [[metricas]] · [[scrum]] · [[burndown]] · [[memoria-procesos]] · [[sprint-2]]

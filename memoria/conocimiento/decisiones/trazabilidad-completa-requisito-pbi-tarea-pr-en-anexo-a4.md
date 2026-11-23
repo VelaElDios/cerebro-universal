@@ -1,13 +1,13 @@
 ---
 tipo: "decision"
 titulo: "Trazabilidad completa requisito → PBI → tarea → PR en anexo A4"
-temas: ["anexo", "longtable", "trazabilidad"]
+temas: ["anexo", "longtable", "trazabilidad", "memoria"]
 claves: ["anexo A4", "trazabilidad", "longtable", "requisito PBI tarea PR"]
 proyectos: ["memoria-procesos"]
-fuentes: ["spec del proyecto (tabla anexos)"]
+fuentes: ["spec del proyecto (tabla anexos)", "spec del proyecto §Anexos y docs/requisitos.md, docs/sprint-1.md, docs/sprint-2.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
-actualizado: "2026-11-16"
+actualizado: "2026-11-23"
 ---
 
 Temas: [[anexo]] · [[longtable]] · [[trazabilidad]]
@@ -18,5 +18,16 @@ El anexo A4 (chapters/a4-trazabilidad.tex) contiene una longtable con 5 columnas
 > — `spec del proyecto (tabla anexos)` (cita sin comprobar)
 
 Relacionado: [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas]]
+
+## Ampliación (2026-11-23, memoria-procesos)
+|
+  El anexo a4-trazabilidad.tex contiene una longtable con:
+  - Filas iniciales para RNF-01 a RNF-12 (transversales) con sus PBIs/tareas/PRs.
+  - Una fila por cada una de las 32 tareas del Sprint 1 (con requisito, PBI, tarea, descripción, PR).
+  - Una fila por cada una de las 50 tareas del Sprint 2 (con requisito, PBI, tarea, descripción, PR).
+  - Total: 12 + 32 + 50 = 94 filas de datos + cabecera.
+  - Columnas: Requisito (1.5cm), PBI (0.8cm), Tarea (1.3cm), Descripción (7.0cm), PR (2.9cm).
+  - Usa \allowbreak en rutas/largos para evitar overfull hbox.
+  - Cierres de hito y releases documentados al final.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

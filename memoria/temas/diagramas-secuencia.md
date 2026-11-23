@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "diagramas-secuencia"
-notas: 3
+notas: 4
 ---
 # diagramas-secuencia
 
@@ -15,6 +15,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas-secuencia» (es
 ## Lecciones (errores ya resueltos)
 
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta|Diagramas de secuencia: máx. 6 participantes y etiquetas cortas]] · ⚠️ propuesto
 
 ## Temas relacionados
 

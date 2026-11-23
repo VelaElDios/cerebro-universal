@@ -39,4 +39,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «trazabilidad» (este arch
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[metricas]] · [[sprint]] · [[verificacion]] · [[scrum]] · [[donetonic]] · [[sprints]] · [[pbi]] · [[memoria]] · [[juego]] · [[tareas]]
+[[grada-colchonera]] · [[saas]] · [[metricas]] · [[sprint]] · [[verificacion]] · [[scrum]] · [[donetonic]] · [[memoria]] · [[sprints]] · [[pbi]] · [[juego]] · [[tareas]]

@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-23T11:20:21+01:00",
+ "generado": "2026-11-23T12:54:50+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -212,6 +212,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md"
+  },
+  {
+   "id": "leccion:diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta",
+   "tipo": "leccion",
+   "titulo": "Diagramas de secuencia: máx. 6 participantes y etiquetas cortas",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "diagramas-secuencia"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta.md"
   },
   {
    "id": "leccion:diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq",
@@ -783,7 +798,8 @@
     "retrospectiva",
     "scrum",
     "burndown",
-    "memoria-procesos"
+    "memoria-procesos",
+    "sprint-2"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1651,6 +1667,21 @@
    "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos.md"
   },
   {
+   "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto contrastadas con fuentes (31 datos)",
+   "temas": [
+    "fuentes",
+    "memoria",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos.md"
+  },
+  {
    "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "dato",
    "titulo": "Cifras clave del proyecto contrastadas con fuentes (para COMPROBACIONES)",
@@ -2066,7 +2097,8 @@
     "pgf-umlsd",
     "tikz",
     "memoria-procesos",
-    "pgfplots"
+    "pgfplots",
+    "diagramas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3655,7 +3687,8 @@
    "temas": [
     "anexo",
     "longtable",
-    "trazabilidad"
+    "trazabilidad",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -5914,14 +5947,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 170,
+   "peso": 171,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 66,
+   "peso": 68,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -6019,7 +6052,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 26,
+   "peso": 27,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -6040,7 +6073,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 26,
+   "peso": 27,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -6054,7 +6087,7 @@
    "id": "tema:diagramas-secuencia",
    "tipo": "tema",
    "titulo": "diagramas-secuencia",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/diagramas-secuencia.md"
   },
   {
@@ -6357,6 +6390,13 @@
    "titulo": "memoria-procesos",
    "peso": 28,
    "ruta": "memoria/temas/memoria-procesos.md"
+  },
+  {
+   "id": "tema:sprint-2",
+   "tipo": "tema",
+   "titulo": "sprint-2",
+   "peso": 1,
+   "ruta": "memoria/temas/sprint-2.md"
   },
   {
    "id": "tema:auth",
@@ -6817,7 +6857,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 13,
+   "peso": 14,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -6971,7 +7011,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 14,
+   "peso": 15,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -8204,6 +8244,26 @@
    "tipo": "aprendido_en"
   },
   {
+   "de": "leccion:diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta",
+   "a": "tema:diagramas-secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
    "de": "leccion:diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq",
    "a": "tema:latex",
    "tipo": "trata"
@@ -9206,6 +9266,11 @@
   {
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:sprint-2",
    "tipo": "trata"
   },
   {
@@ -12064,6 +12129,26 @@
    "tipo": "de_proyecto"
   },
   {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "a": "tema:fuentes",
    "tipo": "trata"
@@ -13451,6 +13536,11 @@
   {
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
    "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
+   "a": "tema:diagramas",
    "tipo": "trata"
   },
   {
@@ -18156,6 +18246,11 @@
   {
    "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
    "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
