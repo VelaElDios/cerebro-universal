@@ -32,7 +32,24 @@ from pathlib import Path
 DIR = Path.cwd()
 PDF = DIR / (sys.argv[1] if len(sys.argv) > 1 else "Memoria.pdf")
 CACHE = DIR.parent / ".revision-figuras.json"
-MODELOS = ["gemini-flash-latest", "gemini-flash-lite-latest"]
+MODELOS_POR_DEFECTO = ["gemini-flash-latest", "gemini-3.5-flash-lite"]
+
+
+def modelos_gemini() -> list[str]:
+    """Los mismos modelos de Gemini que usa el resto del cerebro (config/ias.json), en su orden."""
+    try:
+        cfg = json.loads((Path(__file__).resolve().parents[1] / "config" / "ias.json").read_text(encoding="utf-8"))
+        res = []
+        for p in cfg.get("proveedores", {}).values():
+            if p.get("tipo") == "gemini":
+                res += [m for m in p.get("modelos", []) if m not in res]
+        return res or MODELOS_POR_DEFECTO
+    except Exception:
+        return MODELOS_POR_DEFECTO
+
+
+MODELOS = modelos_gemini()
+_descartados: dict[str, str] = {}   # modelo → por qué no se usa más en esta ejecución (404, cupo agotado)
 VERSION = "v2"   # cambiarla invalida los veredictos guardados (p. ej. si se mejora el prompt)
 DIBUJO = re.compile(r"\\begin\{(tikzpicture|sequencediagram|axis)\}")
 
@@ -105,8 +122,11 @@ def preguntar(png: bytes, figura: str) -> dict:
     from google import genai
     from google.genai import types
     cliente = genai.Client(api_key=os.environ["GEMINI_API_KEY"], http_options=types.HttpOptions(timeout=120_000))
-    ultimo = None
+    errores = []
     for modelo in MODELOS:
+        if modelo in _descartados:
+            errores.append(f"{modelo}: {_descartados[modelo]}")
+            continue
         try:
             r = cliente.models.generate_content(
                 model=modelo,
@@ -117,8 +137,13 @@ def preguntar(png: bytes, figura: str) -> dict:
             if isinstance(datos, dict) and "ok" in datos:
                 return datos
         except Exception as e:
-            ultimo = e
-    raise RuntimeError(str(ultimo)[:200])
+            texto = str(e)
+            corto = ("no existe (404)" if "404" in texto or "NOT_FOUND" in texto else
+                     "cupo gratuito agotado (429)" if "429" in texto or "RESOURCE_EXHAUSTED" in texto else texto[:120])
+            if corto.endswith(")"):
+                _descartados[modelo] = corto      # no se insiste con ese modelo en el resto de figuras
+            errores.append(f"{modelo}: {corto}")
+    raise RuntimeError("; ".join(errores) or "sin modelos de Gemini")
 
 
 def main() -> int:
@@ -179,7 +204,8 @@ def main() -> int:
             fallos.append(f"Reglas 16-18: {nombre}, página {pagina} del PDF, {archivo}:{linea}: {problemas}")
     CACHE.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
     for s in sin_revisar:
-        print(f"⚠️ Figuras: no pude revisar {s} (no bloqueo).")
+        print(f"⚠️ Figuras: Gemini no pudo mirar {s}. No bloquea y NO hay que revisarlo a mano: la medición "
+              "geométrica del PDF ya lo ha comprobado.")
     if fallos:
         print("❌ Diagramas con fallos (medidos en el PDF o vistos por Gemini):")
         for f in fallos:
