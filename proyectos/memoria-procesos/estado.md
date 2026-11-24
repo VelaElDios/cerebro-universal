@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-24 15:08"
+actualizado: "2026-11-24 16:03"
 ---
 
 # memoria-procesos
@@ -22,19 +22,17 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (99 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18444 palabras, estructura, cifras, trazabilidad).
-- **revisar_maquetacion.py**: ❌ 3 fallos: fig:juego-arquitectura no aparece en página (flota), fig:modelo-datos flechas cruzan etiquetas, fig:sec-registro flechas cruzan líneas de vida.
-- **Overfull hbox**: 2 en `a4-trazabilidad.tex` (líneas 206-207 y 377-378) → **corregido reforzando \allowbreak en URLs**; pendiente verificación en próxima compilación.
+- **revisar_maquetacion.py**: ❌ 3 fallos: fig:modelo-datos 71 pt overfull; fig:sec-google cruce flecha discontinua; fig:sec-partida cruce etiqueta 'iniciarPartida'.
+- **Overfull hbox**: 2 en `a4-trazabilidad.tex` (líneas 206-207 y 377-378) → persisten pese a \allowbreak previo.
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…» en caps. 4 y 4b; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
-- **Corregido en este paso**: (1) fig:juego-arquitectura movida ANTES de su primera referencia en 04b-juego.tex y \FloatBarrier añadido. (2) Overfull hbox en a4-trazabilidad.tex mitigado con \allowbreak adicional.
-- **Pendiente**: (1) Replantear 3 diagramas TikZ/pgf-umlsd (modelo-datos, sec-registro, sec-confirmacion). (2) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas de secuencia. (3) Revisión visual de diagramas en PDF. (4) Revisión visual final página a página. (5) Re-ejecutar `comando_prueba` hasta verde total.
+- **Corregido en este paso**: (1) fig:modelo-datos estrechada (text width reducido, nodos acercados, etiquetas en dos líneas). (2) fig:sec-google callback: aumentada separación horizontal entre participantes (de 3 a 4). (3) fig:sec-partida: aumentada separación horizontal (de 3 a 4).
+- **Pendiente**: (1) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas de secuencia. (2) Revisión visual de diagramas en PDF. (3) Revisión visual final página a página. (4) Re-ejecutar `comando_prueba` hasta verde total.
 
 ## Siguiente
-1. Replantear `fig:modelo-datos` en `chapters/04-descripcion.tex` (flechas con codos, sin cruzar etiquetas, letras ≥7,5 pt).
-2. Replantear `fig:sec-registro` en `chapters/04-descripcion.tex` (flechas con codos, sin cruzar líneas de vida).
-3. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia y corregir errores reportados.
-4. Verificar que overfull hbox en `a4-trazabilidad.tex` desaparece tras recompilar.
-5. Revisión visual de los 11 diagramas en PDF compilado.
-6. Revisión visual final del PDF página a página.
-7. Volver a ejecutar `comando_prueba` hasta verde total.
+1. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia y corregir errores reportados.
+2. Verificar que overfull hbox en `a4-trazabilidad.tex` desaparece tras recompilar (reforzar \allowbreak en URLs; si persiste, \sloppy local).
+3. Revisión visual de los 11 diagramas en PDF compilado: letras ≥7,5 pt, sin cruces, sin palabras partidas, codos correctos (reglas 16-18).
+4. Revisión visual final del PDF página a página (regla 15).
+5. Volver a ejecutar `comando_prueba` hasta verde total.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

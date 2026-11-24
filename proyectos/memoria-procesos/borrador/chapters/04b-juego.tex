@@ -265,10 +265,10 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{j}{Jugador}
-  \newinst[3]{fe}{Frontend}
-  \newinst[3]{api}{API}
-  \newinst[3]{srv}{juegoService}
-  \newinst[3]{repo}{juegoRepository}
+  \newinst[4]{fe}{Frontend}
+  \newinst[4]{api}{API}
+  \newinst[4]{srv}{juegoService}
+  \newinst[4]{repo}{juegoRepository}
   \begin{call}{j}{jugar}{fe}{ok}
     \begin{call}{fe}{POST partidas}{api}{201}
     \end{call}

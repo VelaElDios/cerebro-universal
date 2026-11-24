@@ -5,6 +5,12 @@
   "ultimo": "2026-11-17",
   "usos": 1
  },
+ "memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-24",
+  "usos": 1
+ },
  "memoria/conocimiento/conceptos/definicion-de-hecho-dod-para-tareas-hitos-y-fases.md": {
   "bien": 0,
   "mal": 0,
@@ -111,13 +117,13 @@
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 24
+  "usos": 25
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 25
+  "usos": 26
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -237,7 +243,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 5
+  "usos": 6
  },
  "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md": {
   "bien": 0,

@@ -720,5 +720,26 @@
   "problemas": [
    "La etiqueta 'iniciarPartida' que va desde la API hacia juegoService cruza por encima de la línea de vida de API y de la flecha discontinua de retorno 'partida'."
   ]
+ },
+ "3ba5f5bbdcbbc9c1cda73eb5a5123bc5": {
+  "ok": true
+ },
+ "ff10242878b7f6ca0483570ecbac611b": {
+  "ok": false,
+  "problemas": [
+   "En la sección (b), la línea discontinua de respuesta 'ok o fallo' desde la Sesion hacia la API atraviesa o se solapa con el texto y la flecha anterior de 'compara state'."
+  ]
+ },
+ "da0a4f8a3881d113c93cc5f8fca8ea52": {
+  "ok": true
+ },
+ "207e398fa3c99b304b91004246040c22": {
+  "ok": true
+ },
+ "f3361c530ef15eda17bbd1da12caad45": {
+  "ok": true
+ },
+ "c4fa6c4ebe6d0798a8557dda6d875d65": {
+  "ok": true
  }
 }

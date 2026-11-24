@@ -16019,3 +16019,59 @@ El resto (diagramas TikZ/pgf-umlsd, revisar_umlsd.py, revisión visual final) so
 ## 2026-11-24 15:08 · 🧠 Conocimiento guardado
 
 [[cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla-tfg]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de]] · [[capturas-de-donetonic-disponibles-en-el-repo-8-imagenes]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]]
+
+## 2026-11-24 15:58 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He replanteado `fig:modelo-datos` (separación horizontal/vertical aumentada, codos más amplios, etiquetas con más separación) y `fig:sec-registro` (aumentado espaciado entre participantes de 4 a 5 unidades). Ahora voy a ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia para detectar y corregir errores de sintaxis antes de recompilar.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 1 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte. Luego recompilar y verificar visualmente en el PDF.
+
+## 2026-11-24 16:03 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (99 páginas, LuaLaTeX).
+- verificar.py: ✅ (estructura, 35 figuras, 29 tablas, 18444 palabras, trazabilidad completa, cifras contrastadas).
+- revisar_maquetacion.py: ❌ 3 fallos:
+  1. fig:modelo-datos 71 pt más ancha que la página (overfull horizontal).
+  2. fig:sec-google (subfigura callback): flecha discontinua de respuesta cruza texto y flecha anterior.
+  3. fig:sec-partida: etiqueta 'iniciarPartida' cruza línea de vida de API y flecha de retorno.
+- Overfull hbox persistentes en a4-trazabilidad.tex líneas 206-207 y 377-378 (URLs largas en columna PR).
+- Diagrama fig:juego-arquitectura ya aparece en página correcta tras moverla antes de su primera referencia y añadir \FloatBarrier (comprobado en PDF).
+- Prosa sin cadenas «La figura X muestra…» en caps. 4 y 4b (subfiguras agrupadas).
+- Hito 4 descrito como completado, no pendiente.
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
+- Trazabilidad completa P1–P48/T1–T82 en a4.
+- Imágenes únicas con \ref en el resto.
+
+Qué está bien: La memoria compila, verificar.py pasa, la prosa es profesional, las capturas están integradas en párrafos con subfiguras, no hay secciones de 1-2 líneas, el pipeline se describe una vez, las imágenes DoneTonic/producción aparecen una sola vez, Resumen/Abstract cumplen mínimos, trazabilidad completa.
+
+Qué falla (bloquea TERMINADO):
+1. fig:modelo-datos (diagrama ER) desborda 71 pt → hay que estrechar nodos y reducir separación horizontal SIN escalar.
+2. fig:sec-google (subfigura callback) tiene cruce de flecha discontinua con texto y flecha anterior → separar participantes o reordenar llamadas.
+3. fig:sec-partida tiene cruce de etiqueta 'iniciarPartida' con línea de vida y flecha de retorno → ajustar posiciones o usar codos.
+4. Overfull hbox en a4-trazabilidad.tex persisten pese a \allowbreak previo.
+
+Correcciones directas del revisor (2 archivos):
+- chapters/04-descripcion.tex: estrechar fig:modelo-datos (reducir text width, acercar nodos, etiquetas en dos líneas) y corregir fig:sec-google callback (aumentar separación horizontal entre participantes, mover flecha discontinua).
+- chapters/04b-juego.tex: corregir fig:sec-partida (aumentar node distance, usar codos en flechas, separar bloques).
+
+El resto (overfull hbox en a4-trazabilidad, revisar_umlsd.py en 11 diagramas, revisión visual final) son tareas para el constructor.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte (etiquetas con acentos, paréntesis en \mess, participantes no declarados, flechas que cruzan cajas, node distance).
+- Verificar que overfull hbox en `a4-trazabilidad.tex` desaparece tras recompilar (reforzar \allowbreak en URLs de columna PR; si persiste, reducir fuente local o usar \sloppy).
+- Revisión visual de los 11 diagramas en PDF compilado: letras ≥7,5 pt, sin cruces, sin palabras partidas, codos correctos (reglas 16-18).
+- Revisión visual final del PDF página a página (regla 15): ninguna página con una sola imagen, ninguna figura repetida, flechas con `$\rightarrow$`, todo citado con `\ref`, no hay secciones de 1–2 líneas, no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` hasta verde total (compila, verificar.py OK, revisar_maquetacion.py OK).
