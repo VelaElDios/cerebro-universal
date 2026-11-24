@@ -788,5 +788,20 @@
  },
  "024a16a8ddd8c36fbbd92f9aea9e8530": {
   "ok": true
+ },
+ "06964bc668644d6f99923d55d4bc4209": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta 'su mejor partida' debajo de la tabla 'users' colisiona o se encuentra muy cerca de la flecha vertical que apunta a 'juego_records'."
+  ]
+ },
+ "f1a992260b44cd833e76883df1f40e0b": {
+  "ok": true
+ },
+ "5a045919cd5592c121fff4a8fa809c2f": {
+  "ok": true
+ },
+ "65e2621900feaa059f792ea3a574b625": {
+  "ok": true
  }
 }
