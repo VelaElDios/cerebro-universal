@@ -191,8 +191,8 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=2.8cm, inner sep=2pt},
-    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=4.0cm, inner sep=2pt},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=3.2cm, inner sep=2pt},
+    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=4.6cm, inner sep=2pt},
     pk/.style={font=\scriptsize\bfseries},
     uk/.style={font=\scriptsize\itshape},
     arrow/.style={-{Stealth[length=2mm]}, thick, color=tema},
@@ -208,8 +208,8 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
     \node[entitywide] (users) at (0,0) {
         \textbf{users}\\
         \pk id UUID PK\\
-        \texttt{email TEXT} \uk (único no eliminadas)\\
-        \texttt{password\_hash TEXT} (null Google)\\
+        \texttt{email TEXT} \uk (único no \mbox{eliminadas})\\
+        \texttt{password\_hash TEXT} (null \mbox{Google})\\
         \texttt{role TEXT} user | admin\\
         \texttt{status TEXT} pending | active | deleted\\
         \texttt{auth\_provider TEXT} local | google\\
@@ -329,23 +329,22 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
 \centering
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[3]{fe}{Frontend}
-  \newinst[3]{api}{API}
-  \newinst[3]{srv}{Servicio}
-  \begin{call}{u}{email, clave}{fe}{ok}
+  \newinst[2]{fe}{Front}
+  \newinst[2]{api}{API}
+  \newinst[2]{srv}{Serv}
+  \begin{call}{u}{datos}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST register}{api}{201/409}
-    \begin{call}{api}{register}{srv}{usuario}
-      \begin{call}{srv}{busca email}{srv}{fila/null}
+  \begin{call}{fe}{POST}{api}{201/409}
+    \begin{call}{api}{register}{srv}{usr}
+      \begin{call}{srv}{busca}{srv}{fila}
       \end{call}
       \begin{sdblock}{alt}{existe}
-        \mess{srv}{ConflictError}{api}
-        \mess{api}{409}{fe}
+        \mess{srv}{409}{api}
       \end{sdblock}
       \begin{sdblock}{else}{nuevo}
-        \begin{call}{srv}{hash y crea}{srv}{usuario}
+        \begin{call}{srv}{crea}{srv}{usr}
         \end{call}
-        \begin{call}{srv}{firma y envia}{srv}{enviado}
+        \begin{call}{srv}{envia}{srv}{ok}
         \end{call}
         \mess{api}{201}{fe}
       \end{sdblock}

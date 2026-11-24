@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 182
+notas: 185
 ---
 # latex
 
@@ -77,6 +77,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y|Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/fijar-colocacion-de-figura-referenciada-con-floatbarrier|Fijar colocación de figura referenciada con FloatBarrier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de|Flechas reales en captions y texto: $\rightarrow$ en lugar de ->]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-lon|Formato de tablas: alineación superior, ancho controlado y longtable sin filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
@@ -84,10 +85,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/fundir-secciones-de-1-2-parrafos-regla-9-javier|Fundir secciones de 1-2 párrafos (regla 9 Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl|Legibilidad de diagramas: sin cruces, sin palabras partidas, flechas caja-a-caja]]
 - 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas: agrupar capturas relacionadas con `subfigure` en LaTeX]]
+- 🧪 [[memoria/conocimiento/recetas/proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila|Proteger palabras en cajas TikZ para evitar particiones silábicas]]
 - 🧪 [[memoria/conocimiento/recetas/quitar-las-paginas-en-blanco-entre-capitulos|Quitar las páginas en blanco entre capítulos]]
 - 🧪 [[memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada|Reescribir frases «La figura X muestra…» como prosa integrada]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas|Reglas de figuras y páginas: tamaños, flotantes, duplicados, flechas y páginas casi vacías]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-tamanos-y-longtable|Reglas de maquetación de tablas en LaTeX: alineación, anchos, longtable, código y rutas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des|Replanteo de diagrama de secuencia pgf-umlsd para evitar desbordamiento y cruces]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi|Resumen y Abstract en elements/preambulo.tex con formato oficial]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/revision-visual-final-pagina-a-pagina-regla-15-javier|Revisión visual final página a página (regla 15 Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesto
@@ -212,4 +215,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[maquetacion]] · [[tikz]] · [[pgf-umlsd]] · [[figuras]] · [[verificacion]] · [[memoria-procesos]] · [[diagramas]] · [[lua]] · [[sus]] · [[usabilidad]]
+[[tfg]] · [[memoria]] · [[maquetacion]] · [[tikz]] · [[pgf-umlsd]] · [[figuras]] · [[diagramas]] · [[verificacion]] · [[memoria-procesos]] · [[lua]] · [[sus]] · [[usabilidad]]

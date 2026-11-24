@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T06:19:01+01:00",
+ "generado": "2026-11-24T08:38:27+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -5283,6 +5283,21 @@
    "ruta": "memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y.md"
   },
   {
+   "id": "receta:fijar-colocacion-de-figura-referenciada-con-floatbarrier",
+   "tipo": "receta",
+   "titulo": "Fijar colocación de figura referenciada con FloatBarrier",
+   "temas": [
+    "figuras",
+    "latex",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/fijar-colocacion-de-figura-referenciada-con-floatbarrier.md"
+  },
+  {
    "id": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
    "tipo": "receta",
    "titulo": "Flechas reales en captions y texto: $\\rightarrow$ en lugar de ->",
@@ -5704,6 +5719,21 @@
    "ruta": "memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure.md"
   },
   {
+   "id": "receta:proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila",
+   "tipo": "receta",
+   "titulo": "Proteger palabras en cajas TikZ para evitar particiones silábicas",
+   "temas": [
+    "diagramas",
+    "latex",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/recetas/proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila.md"
+  },
+  {
    "id": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
    "tipo": "receta",
    "titulo": "Quitar las páginas en blanco entre capítulos",
@@ -5831,6 +5861,21 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel.md"
+  },
+  {
+   "id": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
+   "tipo": "receta",
+   "titulo": "Replanteo de diagrama de secuencia pgf-umlsd para evitar desbordamiento y cruces",
+   "temas": [
+    "diagramas",
+    "latex",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des.md"
   },
   {
    "id": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
@@ -6115,7 +6160,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 182,
+   "peso": 185,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6129,7 +6174,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 31,
+   "peso": 32,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -6241,14 +6286,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 31,
+   "peso": 32,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 32,
+   "peso": 33,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -6325,7 +6370,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 25,
+   "peso": 26,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -7179,7 +7224,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 14,
+   "peso": 16,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -24221,6 +24266,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:fijar-colocacion-de-figura-referenciada-con-floatbarrier",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fijar-colocacion-de-figura-referenciada-con-floatbarrier",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fijar-colocacion-de-figura-referenciada-con-floatbarrier",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:fijar-colocacion-de-figura-referenciada-con-floatbarrier",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:fijar-colocacion-de-figura-referenciada-con-floatbarrier",
+   "a": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
    "a": "tema:latex",
    "tipo": "trata"
@@ -25526,6 +25596,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila",
+   "a": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
    "a": "tema:latex",
    "tipo": "trata"
@@ -25923,6 +26018,31 @@
   {
    "de": "receta:renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel",
    "a": "concepto:graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
+   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
    "tipo": "enlaza"
   },
   {

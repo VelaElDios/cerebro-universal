@@ -111,13 +111,13 @@
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 18
+  "usos": 19
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 19
+  "usos": 20
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -233,6 +233,12 @@
   "ultimo": "2026-11-19",
   "usos": 1
  },
+ "memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-24",
+  "usos": 1
+ },
  "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md": {
   "bien": 0,
   "mal": 0,
@@ -286,6 +292,12 @@
   "mal": 0,
   "ultimo": "2026-11-24",
   "usos": 2
+ },
+ "memoria/conocimiento/recetas/en-un-tex-los-comentarios-son-con-no-con.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-24",
+  "usos": 1
  },
  "memoria/conocimiento/recetas/escribir-diagramas-de-secuencia-con-pgf-umlsd-sequencediagra.md": {
   "bien": 0,

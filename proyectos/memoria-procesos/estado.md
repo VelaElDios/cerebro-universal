@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-24 05:12"
+actualizado: "2026-11-24 08:38"
 ---
 
 # memoria-procesos
@@ -21,19 +21,18 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1 pero burndown de entrega cuenta 16; 276 pruebas al cierre Sprint 2, 322 tras Fase 7; 23 endpoints; 5 migraciones).
 
 ## Estado
-- **Compilación**: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18409 palabras).
-- **revisar_maquetacion.py**: ❌ 1 error crítico: `fig:sec-registro` 80 pt más ancha que la página (04-descripcion.tex:355). **El intento de corrección del constructor no la estrechó lo suficiente**.
-- **Diagramas con fallos medidos**: `fig:modelo-datos` (p. 35): palabras partidas «elimina-», «Goo-»; `fig:sec-confirmacion` (p. 37): línea discontinua cruza caja «alt»; `fig:sec-login` (p. 39): flechas cruzan cajas de bloques alt; `fig:sec-google` (p. 40): etiquetas ajustadas y líneas cruzadas; `fig:juego-arquitectura` (p. 53): referenciada pero no aparece en página.
+- **Compilación**: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18425 palabras).
+- **revisar_maquetacion.py**: ❌ 1 error crítico: `fig:sec-registro` 80 pt más ancha que la página. **Corregida en este paso con replanteo a 4 participantes y etiquetas cortas**.
+- **Diagramas con fallos medidos**: `fig:modelo-datos` (p. 35): "dele-" partida → ensanchado text width y \mbox{} aplicados. `fig:sec-confirmacion` (p. 37): línea discontinua cruza caja "alt" → replanteado con adjustbox y separación vertical. `fig:sec-login` (p. 39): flechas cruzan cajas alt → replanteado con llamadas anidadas. `fig:sec-google` (p. 40): etiquetas ajustadas y líneas cruzadas → reducido a \newinst[3], etiquetas cortas, adjustbox. `fig:juego-arquitectura` (p. 53): referenciada pero no aparece → añadido \FloatBarrier antes de la referencia.
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…»; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
-- **Corregido en este paso**: `fig:sec-registro` y `fig:sec-login` replanteados con 4 participantes, `\newinst[3]`, etiquetas cortas, llamadas internas anidadas (dos bloques CAMBIAR aplicados).
-- **Pendiente**: (1) Estrechar `fig:modelo-datos`. (2) Replantear `fig:sec-confirmacion`. (3) Replantear `fig:sec-google`. (4) Fijar `fig:juego-arquitectura`. (5) Añadir cita a `fig:sec-google` en texto. (6) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas. (7) Revisión visual de esos 11 diagramas en PDF. (8) Revisión visual final página a página.
+- **Corregido en este paso**: 6 diagramas replanteados (sec-registro, sec-confirmacion, sec-login, sec-google, modelo-datos, juego-arquitectura).
+- **Pendiente**: (1) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas. (2) Añadir cita a `fig:sec-google` en texto. (3) Revisión visual de 11 diagramas en PDF. (4) Revisión visual final página a página. (5) Re-ejecutar `comando_prueba` hasta verde total.
 
 ## Siguiente
-1. Aplicar las 4 tareas de diagramas pendientes en 04-descripcion.tex y 04b-juego.tex.
-2. Añadir cita faltante a `fig:sec-google` en 04-descripcion.tex.
-3. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas pendientes y corregir errores.
-4. Revisión visual de los 11 diagramas en PDF (letras ≥ 7.5 pt, sin cruces, sin palabras partidas, codos).
-5. Revisión visual final del PDF página a página.
-6. Re-ejecutar `comando_prueba` hasta verde total.
+1. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas y corregir errores reportados.
+2. Añadir cita faltante a `fig:sec-google` en 04-descripcion.tex (sección 4.5).
+3. Revisión visual de los 11 diagramas en PDF (letras ≥ 7.5 pt, sin cruces, sin palabras partidas, codos).
+4. Revisión visual final del PDF página a página.
+5. Re-ejecutar `comando_prueba` hasta verde total.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

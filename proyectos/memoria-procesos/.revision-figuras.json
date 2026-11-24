@@ -566,5 +566,17 @@
   "problemas": [
    "La línea de vida punteada del bloque 'Usuario' atraviesa la etiqueta 'boton reenviar' dentro del bloque alt 'cuenta pendiente'."
   ]
+ },
+ "5e46e4082b714046ed4d34dfcfc0bcc6": {
+  "ok": true
+ },
+ "13f20c2ef3362b678e325ccb11d003c8": {
+  "ok": true
+ },
+ "c5ef57b0298498496a27fe7966e20e9d": {
+  "ok": true
+ },
+ "d3fda3a7f8ef7f2e0b3adc6a4fe963ea": {
+  "ok": true
  }
 }
