@@ -21,6 +21,6 @@ Herramientas: TikZ con `positioning`, `fit`, `calc`; `sequencediagram` (pgf-umls
 > Figura 3.1 (arquitectura en capas): la flecha vertical de la Lógica a las Integraciones atraviesa la caja Datos. En las cajas se parten las rutas. Diagramas de secuencia con 9 participantes salen diminutos. Figura 4.7 (arquitectura del juego): caja config.js pisada por juego.js, flechas verticales atraviesan cajas.
 > — `revisión humana (Javier) 2026-11-17` (cita sin comprobar)
 
-Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]]
+Relacionado: [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · Diagramas de secuencia con pgf-umlsd (sequencediagram) · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier · Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

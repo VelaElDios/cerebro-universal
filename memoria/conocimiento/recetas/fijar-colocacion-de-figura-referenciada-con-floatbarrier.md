@@ -23,6 +23,5 @@ Temas: [[figuras]] · [[latex]] · [[maquetacion]]
 > \FloatBarrier\n\nLa separación en tres bloques es la que se ve en la Figura~\ref{fig:juego-arquitectura}...
 > — `chapters/04b-juego.tex` (cita sin comprobar)
 
-Relacionado: [[replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

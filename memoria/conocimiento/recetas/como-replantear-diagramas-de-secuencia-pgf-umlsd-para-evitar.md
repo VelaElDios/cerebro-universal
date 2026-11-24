@@ -73,6 +73,6 @@ Ejemplo corregido (registro):
 > Reglas 16-18: Figura 3.3 (fig:sec-registro), página 36 del PDF, chapters/04-descripcion.tex:335 (medido en el PDF): 2 solape(s) de cajas o textos: «usuario» con «HMAC», «usuario» con «firma».
 > — `memoria/chapters/04-descripcion.tex` (cita sin comprobar)
 
-Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]]
+Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier · Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py · Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18)
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

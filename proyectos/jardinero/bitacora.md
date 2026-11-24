@@ -48,7 +48,7 @@ Lo que hace el jardinero en cada pasada.
 - 🔀 Notas repetidas fusionadas: 6
   - [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]] ← Fechas y estructura del Sprint 2 (6 fases + calidad, 29 PBIs, 50 tareas)
   - [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] ← Cómo agrupar capturas relacionadas con subfigure en LaTeX
-  - [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] ← Escribir diagramas de secuencia con pgf-umlsd (sequencediagram)
+  - Diagramas de secuencia con pgf-umlsd (sequencediagram) ← Escribir diagramas de secuencia con pgf-umlsd (sequencediagram)
   - [[fechas-pbis-y-tareas-de-los-dos-sprints]] ← Fechas y estructura de los dos sprints con PBIs y tareas
   - [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] ← Fechas y estructura del Sprint 2 (6 fases de juego + Calidad, 29 PBIs, 50 tareas)
   - [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] ← Inventario de capturas con trazabilidad a requisitos y fechas
@@ -68,7 +68,7 @@ Lo que hace el jardinero en cada pasada.
   - [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] ← Una sola portada oficial en elements/portada.tex
   - [[longtable-sin-fila-huerfana-al-final]] ← Que la última fila de una longtable no se quede sola en otra página
   - [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] ← Longtables deben terminar con \\* antes de \bottomrule (regla 7 Javier)
-  - [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]] ← Diagramas de secuencia pgf-umlsd sintaxis correcta
+  - Diagramas de secuencia con pgf-umlsd (sequencediagram) ← Diagramas de secuencia pgf-umlsd sintaxis correcta
   - [[pipeline-ci-cd-descrito-una-sola-vez-en-cap-5]] ← Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)
   - [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] ← Una sola imagen por captura en toda la memoria (regla 10 Javier)
 - ⚠️ Contradicciones encontradas: 6
@@ -101,7 +101,7 @@ Lo que hace el jardinero en cada pasada.
 
 ## 2026-11-23 19:40 · 🌱 Pasada del jardinero
 
-- ✅ Citas comprobadas: 8 notas pasan a verificado: [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]] · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
+- ✅ Citas comprobadas: 8 notas pasan a verificado: [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18) · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
 - 🔀 Notas repetidas fusionadas: 6
   - [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] ← Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)
   - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Cómo agrupar capturas con subfigure
@@ -114,6 +114,6 @@ Lo que hace el jardinero en cada pasada.
   - [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] ↔ [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]: Nota A registra 16 PBIs totales (P1–P14, P18, P19; faltan P15–P17) y solo 3 hitos en el burndown (Hito 1, 2, 3). Nota B afirma 19 PBIs (P1–P19 completos) y 4 hitos (Hito 1 a Hito 4, donde Hito 4 abarca P15–P19).
   - [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] ↔ [[fechas-pbis-y-tareas-de-los-dos-sprints]]: La Nota A afirma que el Hito 4 tiene **6 tareas (T21–T26)**; la Nota B dice que abarca **12 tareas (T21–T32)**. La Nota A enlaza una estructura de Sprint 2 con **6 fases**; la Nota B detalla **7 fases** (incluye «Base del juego» y «Calidad» como fases separadas).
   - [[fases-del-sprint-2-y-prs-asociados]] ↔ [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]]: La Nota A describe 6 fases para el Sprint 2 (Fase 1 a Fase 6 en PRs #36, #49, #50, #52, #53, #54). La Nota B, en su bloque de advertencia ⚠️, afirma textualmente que su propia ampliación del 2026-11-19 establece que el Sprint 2 tuvo **7 fases**.
-  - [[diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c]] ↔ [[como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar]]: La **Nota A** (Ampliaciones) recomienda envolver diagramas anchos en `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=...}`. La **Nota B** (Paso 1) prohíbe explícitamente escalar con `\resizebox` (y `\adjustbox{scale=...}`) porque reduce las letras por debajo de 7,5 pt; solo permite `adjustbox{max width=..., max totalheight=...}` al no escalar si el diagrama cabe.
-  - [[como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e]] ↔ [[diagramas-de-secuencia-con-pgf-umlsd-sequencediagram]]: Nota A dice «participantes a ≤5 (regla 16)»; Nota B dice «Máximo 6 participantes por diagrama». Nota A prohíbe `resizebox` para diagramas anchos («no `resizebox` que encoge letras») y manda usar `adjustbox`; Nota B indica «Diagramas anchos: envolver en `\resizebox{\textwidth}{!}{% ... %}`» y reserva `adjustbox` solo para diagramas altos.
+  - Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes ↔ Cómo replantear diagramas TikZ/pgf-umlsd para pasar revisar_maquetacion.py (reglas 16-18): La **Nota A** (Ampliaciones) recomienda envolver diagramas anchos en `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=...}`. La **Nota B** (Paso 1) prohíbe explícitamente escalar con `\resizebox` (y `\adjustbox{scale=...}`) porque reduce las letras por debajo de 7,5 pt; solo permite `adjustbox{max width=..., max totalheight=...}` al no escalar si el diagrama cabe.
+  - Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18) ↔ Diagramas de secuencia con pgf-umlsd (sequencediagram): Nota A dice «participantes a ≤5 (regla 16)»; Nota B dice «Máximo 6 participantes por diagrama». Nota A prohíbe `resizebox` para diagramas anchos («no `resizebox` que encoge letras») y manda usar `adjustbox`; Nota B indica «Diagramas anchos: envolver en `\resizebox{\textwidth}{!}{% ... %}`» y reserva `adjustbox` solo para diagramas altos.
 - 🔗 Enlaces nuevos entre notas parecidas: 164

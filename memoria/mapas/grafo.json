@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T16:04:06+01:00",
+ "generado": "2026-11-24T17:17:34+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1045,22 +1045,6 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/desglose-del-alcance-del-sprint-1-por-hitos-y-fechas.md"
-  },
-  {
-   "id": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "tipo": "concepto",
-   "titulo": "Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes",
-   "temas": [
-    "latex",
-    "pgf-umlsd",
-    "sequencediagram",
-    "verificacion"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/conceptos/diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c.md"
   },
   {
    "id": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
@@ -3092,22 +3076,6 @@
    "ruta": "memoria/conocimiento/decisiones/deshacer-el-paso-entero-si-rompe-la-compilacion.md"
   },
   {
-   "id": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "tipo": "decision",
-   "titulo": "Diagramas de secuencia con pgf-umlsd: sintaxis válida y errores comunes",
-   "temas": [
-    "latex",
-    "pgf-umlsd",
-    "sequencediagram",
-    "memoria-procesos"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error.md"
-  },
-  {
    "id": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "tipo": "decision",
    "titulo": "Diagramas de secuencia: límite de 6 participantes (agrupar o partir)",
@@ -3401,6 +3369,20 @@
    "proyectos": [],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/los-datos-de-entrenamiento-van-a-un-repo-privado.md"
+  },
+  {
+   "id": "decision:los-diagramas-nunca-se-escalan-para-que-quepan",
+   "tipo": "decision",
+   "titulo": "Los diagramas nunca se escalan para que quepan",
+   "temas": [
+    "diagramas",
+    "latex",
+    "pgf-umlsd",
+    "reglas-tfg"
+   ],
+   "proyectos": [],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/los-diagramas-nunca-se-escalan-para-que-quepan.md"
   },
   {
    "id": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
@@ -4459,24 +4441,6 @@
    "ruta": "memoria/conocimiento/recetas/como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que.md"
   },
   {
-   "id": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "receta",
-   "titulo": "Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier",
-   "temas": [
-    "diagramas-secuencia",
-    "latex",
-    "maquetacion",
-    "pgf-umlsd",
-    "diagramas",
-    "tikz"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re.md"
-  },
-  {
    "id": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
    "tipo": "receta",
    "titulo": "Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt",
@@ -4507,21 +4471,6 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu.md"
-  },
-  {
-   "id": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "tipo": "receta",
-   "titulo": "Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18)",
-   "temas": [
-    "latex",
-    "maquetacion",
-    "pgf-umlsd"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e.md"
   },
   {
    "id": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
@@ -4611,21 +4560,6 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl.md"
-  },
-  {
-   "id": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "tipo": "receta",
-   "titulo": "Cómo escribir un diagrama de secuencia pgf-umlsd válido y legible",
-   "temas": [
-    "latex",
-    "pgf-umlsd",
-    "sequencediagram"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le.md"
   },
   {
    "id": "receta:como-estructurar-el-csv-de-entrada-para-la-plantilla-sus",
@@ -4895,38 +4829,6 @@
    "ruta": "memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar.md"
   },
   {
-   "id": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "tipo": "receta",
-   "titulo": "Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py",
-   "temas": [
-    "latex",
-    "maquetacion",
-    "pgf-umlsd",
-    "tikz"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "verificado",
-   "ruta": "memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar.md"
-  },
-  {
-   "id": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "tipo": "receta",
-   "titulo": "Cómo replantear diagramas TikZ/pgf-umlsd para pasar revisar_maquetacion.py (reglas 16-18)",
-   "temas": [
-    "latex",
-    "maquetacion",
-    "pgf-umlsd",
-    "tikz"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar.md"
-  },
-  {
    "id": "receta:como-se-agrupan-capturas-con-subfigure",
    "tipo": "receta",
    "titulo": "Cómo se agrupan capturas con subfigure",
@@ -5167,42 +5069,6 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis.md"
-  },
-  {
-   "id": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "receta",
-   "titulo": "Diagramas de secuencia con pgf-umlsd (sequencediagram)",
-   "temas": [
-    "diagramas",
-    "diagramas-secuencia",
-    "latex",
-    "pgf-umlsd",
-    "secuencia",
-    "sequencediagram",
-    "tikz",
-    "uml"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram.md"
-  },
-  {
-   "id": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "receta",
-   "titulo": "Diagramas de secuencia con pgf-umlsd",
-   "temas": [
-    "latex",
-    "pgf-umlsd",
-    "secuencia",
-    "tikz"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "verificado",
-   "ruta": "memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd.md"
   },
   {
    "id": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
@@ -5984,21 +5850,6 @@
    "ruta": "memoria/conocimiento/recetas/renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel.md"
   },
   {
-   "id": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
-   "tipo": "receta",
-   "titulo": "Replanteo de diagrama de secuencia pgf-umlsd para evitar desbordamiento y cruces",
-   "temas": [
-    "diagramas",
-    "latex",
-    "pgf-umlsd"
-   ],
-   "proyectos": [
-    "memoria-procesos"
-   ],
-   "confianza": "propuesto",
-   "ruta": "memoria/conocimiento/recetas/replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des.md"
-  },
-  {
    "id": "receta:resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi",
    "tipo": "receta",
    "titulo": "Resumen y Abstract en elements/preambulo.tex con formato oficial",
@@ -6281,7 +6132,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 190,
+   "peso": 181,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6295,7 +6146,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 32,
+   "peso": 27,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -6386,7 +6237,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 27,
+   "peso": 26,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -6407,21 +6258,21 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 33,
+   "peso": 24,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 33,
+   "peso": 29,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
    "id": "tema:diagramas-secuencia",
    "tipo": "tema",
    "titulo": "diagramas-secuencia",
-   "peso": 7,
+   "peso": 5,
    "ruta": "memoria/temas/diagramas-secuencia.md"
   },
   {
@@ -6477,14 +6328,14 @@
    "id": "tema:secuencia",
    "tipo": "tema",
    "titulo": "secuencia",
-   "peso": 5,
+   "peso": 3,
    "ruta": "memoria/temas/secuencia.md"
   },
   {
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 8,
+   "peso": 4,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
@@ -6722,7 +6573,7 @@
    "id": "tema:memoria-procesos",
    "tipo": "tema",
    "titulo": "memoria-procesos",
-   "peso": 28,
+   "peso": 27,
    "ruta": "memoria/temas/memoria-procesos.md"
   },
   {
@@ -7359,7 +7210,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 17,
+   "peso": 15,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -7527,7 +7378,7 @@
    "id": "tema:reglas-tfg",
    "tipo": "tema",
    "titulo": "reglas-tfg",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/reglas-tfg.md"
   },
   {
@@ -8082,13 +7933,6 @@
    "titulo": "diagrama",
    "peso": 1,
    "ruta": "memoria/temas/diagrama.md"
-  },
-  {
-   "id": "tema:uml",
-   "tipo": "tema",
-   "titulo": "uml",
-   "peso": 1,
-   "ruta": "memoria/temas/uml.md"
   },
   {
    "id": "tema:directlua",
@@ -10378,51 +10222,6 @@
    "tipo": "enlaza"
   },
   {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "tema:sequencediagram",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "tema:verificacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "tipo": "enlaza"
-  },
-  {
    "de": "concepto:diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -11514,11 +11313,6 @@
   },
   {
    "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
    "a": "concepto:estrategia-de-pruebas-niveles-y-enfoque-error-first",
    "tipo": "enlaza"
   },
@@ -11534,32 +11328,7 @@
   },
   {
    "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
    "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
-   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
    "tipo": "enlaza"
   },
   {
@@ -14383,11 +14152,6 @@
    "tipo": "enlaza"
   },
   {
-   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "tipo": "enlaza"
-  },
-  {
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -14430,11 +14194,6 @@
   {
    "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
    "a": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "dato:inventario-de-diagramas-obligatorios-y-su-estado",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
    "tipo": "enlaza"
   },
   {
@@ -15199,11 +14958,6 @@
   },
   {
    "de": "dato:requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "dato:requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil",
    "a": "dato:tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr",
    "tipo": "enlaza"
   },
@@ -15250,11 +15004,6 @@
   {
    "de": "dato:requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad",
    "a": "decision:cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "dato:requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
    "tipo": "enlaza"
   },
   {
@@ -16074,11 +15823,6 @@
   },
   {
    "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
    "a": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "tipo": "enlaza"
   },
@@ -16090,16 +15834,6 @@
   {
    "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
    "a": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
    "tipo": "enlaza"
   },
   {
@@ -17128,46 +16862,6 @@
    "tipo": "enlaza"
   },
   {
-   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "a": "tema:sequencediagram",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "a": "tema:memoria-procesos",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "tipo": "enlaza"
-  },
-  {
    "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -17194,17 +16888,7 @@
   },
   {
    "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
-   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "a": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
    "tipo": "enlaza"
   },
   {
@@ -17215,11 +16899,6 @@
   {
    "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "a": "decision:limites-y-calidad-de-diagramas-participantes-legibilidad-rou",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
    "tipo": "enlaza"
   },
   {
@@ -17340,16 +17019,6 @@
   {
    "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
    "a": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
-   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
    "tipo": "enlaza"
   },
   {
@@ -18046,6 +17715,26 @@
    "de": "decision:los-datos-de-entrenamiento-van-a-un-repo-privado",
    "a": "concepto:como-trabaja-el-cerebro-constructor-prueba-revisor",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:los-diagramas-nunca-se-escalan-para-que-quepan",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:los-diagramas-nunca-se-escalan-para-que-quepan",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:los-diagramas-nunca-se-escalan-para-que-quepan",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:los-diagramas-nunca-se-escalan-para-que-quepan",
+   "a": "tema:reglas-tfg",
+   "tipo": "trata"
   },
   {
    "de": "decision:memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos",
@@ -21778,81 +21467,6 @@
    "tipo": "enlaza"
   },
   {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "tema:diagramas-secuencia",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "tema:maquetacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "tema:diagramas",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "tema:tikz",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "tipo": "enlaza"
-  },
-  {
    "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
    "a": "tema:latex",
    "tipo": "trata"
@@ -21879,27 +21493,7 @@
   },
   {
    "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
    "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
-   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
    "tipo": "enlaza"
   },
   {
@@ -21948,51 +21542,6 @@
    "tipo": "enlaza"
   },
   {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "tema:maquetacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "dato:inventario-de-diagramas-obligatorios-y-su-estado-actualizado",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
    "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
    "a": "tema:latex",
    "tipo": "trata"
@@ -22014,32 +21563,12 @@
   },
   {
    "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
    "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
    "tipo": "enlaza"
   },
   {
    "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
    "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
-   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
    "tipo": "enlaza"
   },
   {
@@ -22255,41 +21784,6 @@
   {
    "de": "receta:como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl",
    "a": "receta:como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "a": "tema:sequencediagram",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
    "tipo": "enlaza"
   },
   {
@@ -22674,11 +22168,6 @@
   },
   {
    "de": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-exportar-diagramas-mermaid-para-la-memoria-latex",
    "a": "receta:como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm",
    "tipo": "enlaza"
   },
@@ -22998,111 +22487,6 @@
    "tipo": "enlaza"
   },
   {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
-   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "tema:maquetacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "tema:tikz",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "tema:maquetacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "tema:tikz",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "tipo": "enlaza"
-  },
-  {
    "de": "receta:como-se-agrupan-capturas-con-subfigure",
    "a": "tema:figura",
    "tipo": "trata"
@@ -23384,11 +22768,6 @@
   },
   {
    "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
    "a": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
    "tipo": "enlaza"
   },
@@ -23629,11 +23008,6 @@
   },
   {
    "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
-   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
    "a": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
    "tipo": "enlaza"
   },
@@ -23828,186 +23202,6 @@
    "tipo": "de_proyecto"
   },
   {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "tema:diagramas",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "tema:diagramas-secuencia",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "tema:secuencia",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "tema:sequencediagram",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "tema:tikz",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "tema:uml",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "a": "receta:como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "tema:secuencia",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "tema:tikz",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "concepto:numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-sequencediagram",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "receta:diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-con-pgf-umlsd",
-   "a": "receta:como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le",
-   "tipo": "enlaza"
-  },
-  {
    "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
    "a": "tema:latex",
    "tipo": "trata"
@@ -24026,11 +23220,6 @@
    "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
    "a": "tema:tfg",
    "tipo": "trata"
-  },
-  {
-   "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
-   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
-   "tipo": "enlaza"
   },
   {
    "de": "receta:diagramas-de-secuencia-legibles-max-6-participantes-flechas",
@@ -24601,11 +23790,6 @@
    "de": "receta:fijar-colocacion-de-figura-referenciada-con-floatbarrier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:fijar-colocacion-de-figura-referenciada-con-floatbarrier",
-   "a": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
-   "tipo": "enlaza"
   },
   {
    "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
@@ -25948,11 +25132,6 @@
    "tipo": "de_proyecto"
   },
   {
-   "de": "receta:proteger-palabras-en-cajas-tikz-para-evitar-particiones-sila",
-   "a": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
-   "tipo": "enlaza"
-  },
-  {
    "de": "receta:quitar-las-paginas-en-blanco-entre-capitulos",
    "a": "tema:latex",
    "tipo": "trata"
@@ -26350,31 +25529,6 @@
   {
    "de": "receta:renderizado-de-sprites-chibi-3232-por-capas-y-pixel-a-pixel",
    "a": "concepto:graficos-pixel-art-generados-por-codigo-chibi-32x32-sin-pier",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
-   "a": "tema:diagramas",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
-   "a": "tema:latex",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
-   "a": "tema:pgf-umlsd",
-   "tipo": "trata"
-  },
-  {
-   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
-   "a": "proyecto:memoria-procesos",
-   "tipo": "de_proyecto"
-  },
-  {
-   "de": "receta:replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des",
-   "a": "concepto:diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c",
    "tipo": "enlaza"
   },
   {
@@ -26974,11 +26128,6 @@
   },
   {
    "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
-   "a": "receta:como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:validacion-final-del-pdf-antes-de-marcar-terminado",
    "a": "receta:checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin",
    "tipo": "enlaza"
   },
@@ -27039,17 +26188,7 @@
   },
   {
    "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
    "a": "decision:arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas",
-   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
    "tipo": "enlaza"
   },
   {
@@ -27164,11 +26303,6 @@
   },
   {
    "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
-   "a": "receta:como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
    "a": "receta:como-evitar-cruces-en-diagramas-tikz-pgf-umlsd",
    "tipo": "enlaza"
   },
@@ -27180,11 +26314,6 @@
   {
    "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
    "a": "decision:diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "receta:verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl",
-   "a": "receta:como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar",
    "tipo": "enlaza"
   },
   {

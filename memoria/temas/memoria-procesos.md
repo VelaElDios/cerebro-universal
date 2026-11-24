@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria-procesos"
-notas: 28
+notas: 27
 ---
 # memoria-procesos
 
@@ -23,7 +23,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 - ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
-- ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error|Diagramas de secuencia con pgf-umlsd: sintaxis válida y errores comunes]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica|Fuentes faltantes bloquean verificación automática]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5|Pipeline CI/CD descrito una sola vez en el Capítulo 5 (Regla 14 Javier)]] · ⚠️ propuesto

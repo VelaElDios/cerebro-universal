@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 27
+notas: 26
 ---
 # verificacion
 
@@ -28,10 +28,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/placeholders-xx-para-numeros-sin-verificar-en-memoria-latex|Placeholders "XX" para números sin verificar en memoria LaTeX]] · ⚠️ propuesto
 
-## Conceptos
-
-- 💡 [[memoria/conocimiento/conceptos/diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c|Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes]] · ⚠️ propuesto
-
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
@@ -51,4 +47,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[memoria]] · [[metricas]] · [[trazabilidad]] · [[tfg]] · [[numeros]] · [[memoria-procesos]] · [[test]] · [[sprints]] · [[pgf-umlsd]] · [[proyecto]]
+[[latex]] · [[fuentes]] · [[memoria]] · [[metricas]] · [[trazabilidad]] · [[tfg]] · [[numeros]] · [[memoria-procesos]] · [[test]] · [[sprints]] · [[proyecto]] · [[datos]]

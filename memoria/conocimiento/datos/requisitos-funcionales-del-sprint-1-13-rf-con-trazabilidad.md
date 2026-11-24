@@ -31,6 +31,6 @@ Tabla completa de 13 requisitos funcionales del Sprint 1 (base SaaS) con trazabi
 | RF-13 | Prueba técnica: solo dominios de correo permitidos | Prueba | — | `domainPolicy.js`, `POST /api/prueba/dominio` | `domainPolicy` (13) |
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[diagramas-de-secuencia-con-pgf-umlsd]] · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
+Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · Diagramas de secuencia con pgf-umlsd · [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 190
+notas: 181
 ---
 # latex
 
@@ -37,14 +37,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que|Cómo corregir diagramas de entidad-relación en TikZ para que no crucen cajas]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c|Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
-- 🧪 [[memoria/conocimiento/recetas/como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e|Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci|Cómo corregir warnings de pgf-umlsd en diagramas de secuencia]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura|Cómo escribir prosa de TFG integrando capturas (sin «La figura X muestra…»)]]
 - 🧪 [[memoria/conocimiento/recetas/como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl|Cómo escribir un diagrama de entidad-relación en TikZ legible]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-escribir-un-diagrama-de-secuencia-pgf-umlsd-valido-y-le|Cómo escribir un diagrama de secuencia pgf-umlsd válido y legible]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-estructurar-el-csv-de-entrada-para-la-plantilla-sus|Cómo estructurar el CSV de entrada para la plantilla SUS]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo|Cómo evitar overfull hbox con \texttt largo]] · ⚠️ propuesto
@@ -60,14 +57,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-mover-una-figura-antes-de-su-primera-referencia-en-late|Cómo mover una figura antes de su primera referencia en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar|Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar|Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]]
-- 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar|Cómo replantear diagramas TikZ/pgf-umlsd para pasar revisar_maquetacion.py (reglas 16-18)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-calcula-la-puntuacion-sus-formula-y-ejemplo|Cómo se calcula la puntuación SUS (fórmula y ejemplo)]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm|Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd|Diagramas de secuencia con pgf-umlsd]]
-- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-sequencediagram|Diagramas de secuencia con pgf-umlsd (sequencediagram)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis|Diagramas de secuencia con pgf-umlsd: reglas de sintaxis]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-legibles-max-6-participantes-flechas|Diagramas de secuencia legibles: máx. 6 participantes, flechas caja-a-caja, sin palabras partidas]]
 - 🧪 [[memoria/conocimiento/recetas/en-un-tex-los-comentarios-son-con-no-con|En un .tex los comentarios son con %, no con --]] · ⚠️ propuesto
@@ -93,7 +86,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada|Reescribir frases «La figura X muestra…» como prosa integrada]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas|Reglas de figuras y páginas: tamaños, flotantes, duplicados, flechas y páginas casi vacías]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-tamanos-y-longtable|Reglas de maquetación de tablas en LaTeX: alineación, anchos, longtable, código y rutas]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des|Replanteo de diagrama de secuencia pgf-umlsd para evitar desbordamiento y cruces]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi|Resumen y Abstract en elements/preambulo.tex con formato oficial]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/revision-visual-final-pagina-a-pagina-regla-15-javier|Revisión visual final página a página (regla 15 Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth|Tablas anchas en LaTeX: usar @{} y anchos que sumen ≤ \linewidth]] · ⚠️ propuesto
@@ -119,7 +111,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te|Cita obligatoria a cada figura (incluidas subfiguras) en el texto]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
-- ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-sintaxis-valida-y-error|Diagramas de secuencia con pgf-umlsd: sintaxis válida y errores comunes]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m|Diagramas de secuencia pgf-umlsd: reglas para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir|Diagramas de secuencia: límite de 6 participantes (agrupar o partir)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18|Diagramas pgf-umlsd sin escalar y legibles (reglas 16-18)]] · ⚠️ propuesto
@@ -133,6 +124,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto|Imágenes repetidas: una sola aparición y \ref en el resto]]
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
 - ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final: usar \\* en las últimas 2-3 filas antes de \bottomrule (regla 7 Javier)]]
+- ⚖️ [[memoria/conocimiento/decisiones/los-diagramas-nunca-se-escalan-para-que-quepan|Los diagramas nunca se escalan para que quepan]]
 - ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-en-la-memoria-deben-aparecer-tal-cual-en-las-fuentes|Números en la memoria deben aparecer tal cual en las fuentes]] · ⚠️ propuesto
@@ -155,7 +147,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-de-calculos-en-lualatex-para-plantilla-sus|Arquitectura de cálculos en LuaLaTeX para plantilla SUS]]
 - 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/diagramas-de-secuencia-pgf-umlsd-sintaxis-valida-y-errores-c|Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r|Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]]
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
@@ -220,4 +211,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[pgf-umlsd]] · [[maquetacion]] · [[tikz]] · [[figuras]] · [[diagramas]] · [[verificacion]] · [[memoria-procesos]] · [[lua]] · [[tablas]] · [[sus]]
+[[tfg]] · [[memoria]] · [[maquetacion]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[diagramas]] · [[verificacion]] · [[memoria-procesos]] · [[lua]] · [[tablas]] · [[sus]]

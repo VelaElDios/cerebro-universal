@@ -111,6 +111,6 @@ Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual P
 
 Todos deben pasar `revisar_umlsd.py` (para sequencediagram) y revisión visual PDF (reglas 16-18).
 
-Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar]]
+Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]] · Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

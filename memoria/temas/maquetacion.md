@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 33
+notas: 29
 ---
 # maquetacion
 
@@ -16,14 +16,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure|Cómo agrupar capturas relacionadas con subfigure (2 por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
-- 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
-- 🧪 [[memoria/conocimiento/recetas/como-corregir-un-diagrama-de-secuencia-pgf-umlsd-que-falla-e|Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier|Cómo evitar páginas con una sola imagen (Regla 8 de Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar|Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-pasar|Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]]
-- 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-tikz-pgf-umlsd-para-pasar-revisar|Cómo replantear diagramas TikZ/pgf-umlsd para pasar revisar_maquetacion.py (reglas 16-18)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/evitar-paginas-casi-vacias-regla-9|Evitar páginas casi vacías (Regla 9)]]
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Evitar páginas con una sola imagen (Regla 8): capturas y diagramas en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/fijar-colocacion-de-figura-referenciada-con-floatbarrier|Fijar colocación de figura referenciada con FloatBarrier]] · ⚠️ propuesto
@@ -57,4 +53,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[pgf-umlsd]] · [[tikz]] · [[tfg]] · [[memoria-procesos]] · [[subcaption]] · [[longtable]] · [[pgfplots]] · [[diagramas]] · [[memoria]] · [[maquetación]]
+[[latex]] · [[figuras]] · [[tfg]] · [[memoria-procesos]] · [[subcaption]] · [[pgf-umlsd]] · [[longtable]] · [[tikz]] · [[pgfplots]] · [[memoria]] · [[maquetación]] · [[reglas-javier]]

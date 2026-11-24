@@ -24,6 +24,5 @@ Temas: [[diagramas]] · [[latex]] · [[tikz]]
 > \texttt{email TEXT} \uk (único no \mbox{eliminadas})\\
 > — `chapters/04-descripcion.tex`
 
-Relacionado: [[replanteo-de-diagrama-de-secuencia-pgf-umlsd-para-evitar-des]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
