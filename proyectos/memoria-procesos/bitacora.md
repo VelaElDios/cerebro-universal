@@ -16075,3 +16075,35 @@ El resto (overfull hbox en a4-trazabilidad, revisar_umlsd.py en 11 diagramas, re
 - Revisión visual de los 11 diagramas en PDF compilado: letras ≥7,5 pt, sin cruces, sin palabras partidas, codos correctos (reglas 16-18).
 - Revisión visual final del PDF página a página (regla 15): ninguna página con una sola imagen, ninguna figura repetida, flechas con `$\rightarrow$`, todo citado con `\ref`, no hay secciones de 1–2 líneas, no hay párrafos repetidos entre capítulos.
 - Volver a ejecutar `comando_prueba` hasta verde total (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+
+## Revisión humana (Javier) · 2026-11-24 · arreglo exacto de los diagramas (probado compilando)
+
+Lleváis muchos pasos cambiando la separación de `fig:sec-registro` arriba y abajo. **El error venía de la spec**: recomendaba `\resizebox`/`adjustbox` para los diagramas, y eso está prohibido (reglas 16 y 19). Ya está corregida. Las notas de conocimiento que decían lo mismo se van a borrar.
+
+Claude ha compilado la memoria con estos cambios y la prueba completa sale **verde**: revisar_umlsd OK, verificar.py OK (35 figuras, 29 tablas), maquetación OK y figuras OK (15 diagramas medidos, sin fallos). Aplicadlos tal cual, sin tocar nada más de esos diagramas:
+
+**1. chapters/04-descripcion.tex, fig:sec-registro:**
+- quitar la línea `\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}` y su `\end{adjustbox}`;
+- `\newinst[5]{fe}{Frontend}`, `\newinst[5]{api}{API}` y `\newinst[5]{srv}{Servicio}` → con `[2]` en vez de `[5]`;
+- `\mess{fe}{error email repetido}{u}` → `\mess{fe}{email repetido}{u}`.
+
+**2. chapters/04-descripcion.tex, fig:modelo-datos:**
+- `\node[entity] (session) at (-5.0, 1.0) {` → `\node[entity] (session) at (-5.6, 1.0) {`
+- la flecha de session a users se cambia por:
+```latex
+    \draw[arrow, dashed] (session.east) -- node[above=2pt, rel] {userId} (users.west);
+```
+
+**3. chapters/04b-juego.tex, fig:sec-partida:**
+- quitar el `adjustbox` (las dos líneas);
+- participantes:
+```latex
+  \newinst[2]{fe}{Frontend}
+  \newinst[1]{api}{API}
+  \newinst[1]{srv}{Servicio}
+  \newinst[1]{repo}{Repositorio}
+```
+- `{finalizarPartida}` → `{finaliza}` y `\mess{api}{200 recompensas}{fe}` → `\mess{api}{200}{fe}`.
+
+Después, ejecutar `comando_prueba`. Si sale verde, la memoria puede marcarse como terminada. Que Gemini no pueda mirar algún diagrama NO es un pendiente (ver la revisión del 23/11).
