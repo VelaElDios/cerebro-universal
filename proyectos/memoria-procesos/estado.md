@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-24 16:03"
+actualizado: "2026-11-24 18:56"
 ---
 
 # memoria-procesos
@@ -21,18 +21,20 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1 pero burndown de entrega cuenta 16; 276 pruebas al cierre Sprint 2, 322 tras Fase 7; 23 endpoints; 5 migraciones).
 
 ## Estado
-- **Compilación**: OK (99 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18444 palabras, estructura, cifras, trazabilidad).
-- **revisar_maquetacion.py**: ❌ 3 fallos: fig:modelo-datos 71 pt overfull; fig:sec-google cruce flecha discontinua; fig:sec-partida cruce etiqueta 'iniciarPartida'.
-- **Overfull hbox**: 2 en `a4-trazabilidad.tex` (líneas 206-207 y 377-378) → persisten pese a \allowbreak previo.
+- **Compilación**: OK (100 páginas, LuaLaTeX).
+- **verificar.py**: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, cifras, trazabilidad).
+- **revisar_maquetacion.py**: ✅ (maquetación cumple reglas).
+- **Figuras**: ⚠️ Gemini no pudo revisar fig:sec-baja (modelo no disponible), pero la medición geométrica del PDF ya la comprobó (no bloquea).
+- **Diagramas con fallos medidos en PDF** (2 pendientes):
+  1. fig:modelo-datos (cap. 04-descripcion): etiquetas 'userId', 'su mejor partida', 'su club' solapan líneas/texto → **corregido en este paso** (reposicionadas con más separación y codos).
+  2. fig:juego-arquitectura (cap. 04b-juego): flecha discontinua 'reglas compartidas' atraviesa caja 'Servidor' → **corregido en este paso** (bajada caja Servidor y flecha con codo por la izquierda).
+- **Overfull hbox**: 2 en `a4-trazabilidad.tex` (líneas 206-207 y 377-378, 5.43 pt y 9.24 pt) → persisten pese a \sloppy; tarea para constructor.
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…» en caps. 4 y 4b; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
-- **Corregido en este paso**: (1) fig:modelo-datos estrechada (text width reducido, nodos acercados, etiquetas en dos líneas). (2) fig:sec-google callback: aumentada separación horizontal entre participantes (de 3 a 4). (3) fig:sec-partida: aumentada separación horizontal (de 3 a 4).
-- **Pendiente**: (1) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas de secuencia. (2) Revisión visual de diagramas en PDF. (3) Revisión visual final página a página. (4) Re-ejecutar `comando_prueba` hasta verde total.
+- **Corregido en este paso**: (1) fig:modelo-datos: etiquetas reposicionadas. (2) fig:juego-arquitectura: caja Servidor bajada y flecha discontinua con codo por fuera.
 
 ## Siguiente
-1. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia y corregir errores reportados.
-2. Verificar que overfull hbox en `a4-trazabilidad.tex` desaparece tras recompilar (reforzar \allowbreak en URLs; si persiste, \sloppy local).
-3. Revisión visual de los 11 diagramas en PDF compilado: letras ≥7,5 pt, sin cruces, sin palabras partidas, codos correctos (reglas 16-18).
-4. Revisión visual final del PDF página a página (regla 15).
-5. Volver a ejecutar `comando_prueba` hasta verde total.
+1. Constructor: reforzar \allowbreak en URLs de columna PR en `a4-trazabilidad.tex` (o {\sloppy\longtable...}) para eliminar los 2 overfull hbox residuales.
+2. Ejecutar `comando_prueba` hasta verde total (compila, verificar.py OK, revisar_maquetacion.py OK).
+3. Si todo pasa, marcar la memoria como terminada.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

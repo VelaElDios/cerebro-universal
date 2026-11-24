@@ -210,15 +210,16 @@ Los valores de la Tabla~\ref{tab:juego-sistemas} incluyen ya las 5 habilidades, 
     \node[node] (sim) {Simulación pura\\\texttt{mundo.js}, \texttt{armas.js},\\\texttt{combate.js}, \texttt{jefes.js},\\\texttt{oleadas.js}, \texttt{terreno.js},\\\texttt{mejoras.js}, \texttt{config.js}};
     % Presentación
     \node[nodewide, right=1.8cm of sim] (pres) {Presentación\\\texttt{juego.js}, \texttt{render.js}, \texttt{hud.js},\\\texttt{audio.js}, \texttt{musica.js},\\\texttt{sprites.js}, \texttt{club-ui.js},\\\texttt{fin-ui.js}, \texttt{entrada.js}};
-    % Servidor
-    \node[node, below=1.5cm of sim] (srv) {Servidor\\\texttt{juegoService.js},\\\texttt{club.js}, \texttt{config.js},\\\texttt{logros.js}};
+    % Servidor (más abajo para que la flecha discontinua no lo atraviese)
+    \node[node, below=2.2cm of sim] (srv) {Servidor\\\texttt{juegoService.js},\\\texttt{club.js}, \texttt{config.js},\\\texttt{logros.js}};
     % API
     \node[node, right=1.8cm of srv] (api) {API\\\texttt{api.js} $\rightarrow$ /api/juego};
-    % Flechas
+    % Flechas: siempre de caja a caja, con codos si hace falta
     \draw[arrow] (sim.east) -- node[above, font=\footnotesize] {eventos} (pres.west);
     \draw[arrow] (pres.south) -- node[left, font=\footnotesize] {HTTP+JSON} (api.north);
     \draw[arrow] (api.west) -- node[above, font=\footnotesize] {valida} (srv.east);
-    \draw[arrow, dashed] (sim.south) -- node[left, font=\footnotesize] {reglas compartidas} (srv.north);
+    % Flecha discontinua 'reglas compartidas' rodea la caja Servidor por la izquierda
+    \draw[arrow, dashed] (sim.south) -- ++(0,-0.5) -| node[left=4pt, font=\footnotesize, pos=0.75] {reglas compartidas} (srv.north);
 \end{tikzpicture}
 \caption{Arquitectura del juego: simulación, presentación y servidor.}
 \label{fig:juego-arquitectura}

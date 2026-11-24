@@ -741,5 +741,52 @@
  },
  "c4fa6c4ebe6d0798a8557dda6d875d65": {
   "ok": true
+ },
+ "1f0d66e8f8efe16b7882f63b1392c49b": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua que conecta session con users tiene una etiqueta 'userId' colocada justo encima de la línea que se cruza con ella.",
+   "La línea con etiqueta 'su mejor partida' que va de users a juego_records cruza por encima del texto 'su mejor' de forma solapada.",
+   "La línea continua horizontal que va de users a juego_perfiles tiene una etiqueta 'su club' situada de forma superpuesta o interrumpida en su trayecto."
+  ]
+ },
+ "2047b1a6f8b9198206005bb71d40083a": {
+  "ok": true
+ },
+ "ec733e1276b53a06bb47570fe0c8d365": {
+  "ok": true
+ },
+ "c57e6d8dfcf1f3b32cdf251e392baa48": {
+  "ok": true
+ },
+ "fab51f80732f733685d43e04fcffda0a": {
+  "ok": false,
+  "problemas": [
+   "La línea vertical discontinua etiquetada con 'reglas compartidas' que va desde la caja 'Simulación pura' hasta la caja 'Servidor' atraviesa por completo la caja 'Servidor' por la parte superior."
+  ]
+ },
+ "35144b5a85e70659830399c8f83664ea": {
+  "ok": true
+ },
+ "a1844676e7ace340458e055374a5224d": {
+  "ok": true
+ },
+ "f47bf8f5907076dbb403900cab7bfd24": {
+  "ok": true
+ },
+ "4dddfd0a8467ce5318a52bfe10c19528": {
+  "ok": true
+ },
+ "6cbfc6a8f6673aa22a824f90dfea104b": {
+  "ok": true
+ },
+ "eb47248878e93a7ee94db9327e6b1632": {
+  "ok": true
+ },
+ "c79a1ee747e2e733c0877f23a3c4af5a": {
+  "ok": true
+ },
+ "024a16a8ddd8c36fbbd92f9aea9e8530": {
+  "ok": true
  }
 }

@@ -16116,3 +16116,56 @@ Los cambios de la revisión anterior **ya están hechos** en `chapters/04-descri
 Claude lo ha compilado con el `comando_prueba` completo y sale **verde**: diagramas de secuencia OK, verificar.py OK (35 figuras, 29 tablas), maquetación OK y figuras OK (15 diagramas medidos, sin fallos). 100 páginas.
 
 Siguiente paso: ejecutar `comando_prueba`, hacer la revisión final y, si sigue verde, **marcar la memoria como terminada**. No toquéis los diagramas salvo que la prueba falle.
+
+## 2026-11-24 18:53 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Aplicar la corrección final para los overfull hbox en el anexo de trazabilidad (a4-trazabilidad.tex) añadiendo `\sloppy` al inicio de la longtable, ya que las URLs y referencias de PR largas en la última columna provocan desbordes que `\allowbreak` no resuelve. Los diagramas de secuencia ya fueron corregidos según las indicaciones exactas del revisor (eliminar adjustbox, ajustar node distance, acortar etiquetas y usar codos), y el revisor confirma que con esos cambios la prueba completa pasa en verde.
+
+**Archivos:** `(cambio) chapters/a4-trazabilidad.tex`
+
+**Intentos:**
+- intento 1: ❌ ⚠️ Figuras: Gemini no pudo mirar Figura 3.7 (fig:sec-baja): gemini-flash-latest: no existe (404); gemini-3.5-flash-lite: 503 UNAVAILABLE. {'error': {'…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` (compilación + verificar.py + revisar_maquetacion.py) para confirmar que todo pasa en verde. Si hay algún fallo residual, corregirlo; si todo pasa, marcar la memoria como terminada.
+
+## 2026-11-24 18:56 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (100 páginas, LuaLaTeX)
+- verificar.py: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, trazabilidad completa, cifras contrastadas)
+- revisar_maquetacion.py: ✅ (maquetación cumple reglas)
+- Figuras: ⚠️ Gemini no pudo revisar fig:sec-baja (modelo no disponible), pero la medición geométrica del PDF ya la comprobó (no bloquea)
+- Diagramas con fallos medidos en PDF:
+  1. Figura 3.2 (fig:modelo-datos, pág. 31): etiqueta 'userId' sobre la línea discontinua session→users; etiqueta 'su mejor partida' cruza texto en users→juego_records; etiqueta 'su club' superpuesta en users→juego_perfiles
+  2. Figura 4.7 (fig:juego-arquitectura, pág. 55): línea discontinua 'reglas compartidas' atraviesa la caja 'Servidor'
+- Overfull hbox en a4-trazabilidad.tex: líneas 206-207 (5.43 pt) y 377-378 (9.24 pt) → persisten pese a \sloppy
+- Prosa sin cadenas «La figura X muestra…» en caps. 4 y 4b (subfiguras agrupadas)
+- Hito 4 descrito como completado, no pendiente
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2
+- Trazabilidad completa P1–P48/T1–T82 en a4
+- Imágenes únicas con \ref en el resto
+
+Qué está bien: La memoria compila, verificar.py pasa, revisar_maquetacion.py pasa, la prosa es profesional, las capturas están integradas en párrafos con subfiguras, no hay secciones de 1-2 líneas, el pipeline se describe una vez, las imágenes DoneTonic/producción aparecen una sola vez, Resumen/Abstract cumplen mínimos, trazabilidad completa.
+
+Qué falla (bloquea TERMINADO):
+1. fig:modelo-datos (diagrama ER en chapters/04-descripcion.tex): tres etiquetas de aristas solapan líneas o texto → hay que reposicionar etiquetas (above/below, pos, sloped) y/o usar codos en las flechas para que las etiquetas no caigan encima.
+2. fig:juego-arquitectura (diagrama TikZ en chapters/04b-juego.tex): la flecha discontinua 'reglas compartidas' va de sim.south a srv.north y atraviesa la caja 'Servidor' → hay que rutearla por fuera (codos |- o -|) o mover la caja 'Servidor' más abajo.
+3. Overfull hbox persistentes en a4-trazabilidad.tex (dos líneas) pese a \sloppy → reforzar \allowbreak en URLs de columna PR o reducir fuente local en esa longtable.
+
+Correcciones directas del revisor (2 archivos):
+- chapters/04-descripcion.tex: arreglar etiquetas en fig:modelo-datos
+- chapters/04b-juego.tex: arreglar ruta de flecha discontinua en fig:juego-arquitectura
+
+El overfull hbox en a4-trazabilidad.tex es tarea para el constructor (reforzar \allowbreak o \sloppy local más agresivo).
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04b-juego.tex`
+
+**Tareas para el constructor:**
+- Reforzar \allowbreak en las URLs largas de la columna PR en chapters/a4-trazabilidad.tex (líneas 206-207 y 377-378) o envolver la longtable en {\sloppy ...} para eliminar los overfull hbox residuales (5.43 pt y 9.24 pt).
+- Ejecutar `comando_prueba` (compilación + verificar.py + revisar_maquetacion.py) para confirmar que todo pasa en verde.
+- Si la prueba pasa, marcar la memoria como terminada.

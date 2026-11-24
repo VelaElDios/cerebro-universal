@@ -235,13 +235,13 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    % Flechas con codos amplios y etiquetas en dos líneas si hace falta
-    % users -> perfiles (derecha)
-    \draw[arrow] (users.east) -- ++(0.4,0) |- (perfiles.west) node[above=4pt, rel, pos=0.3, align=center] {su\\club};
-    % users -> records (abajo)
-    \draw[arrow] (users.south) -- ++(0,-0.4) -| (records.north) node[left=4pt, rel, pos=0.7, align=center] {su mejor\\partida};
-    % session -> users (derecha, discontinua)
-    \draw[arrow, dashed] (session.east) -- node[above=2pt, rel] {userId} (users.west);
+    % Flechas con codos amplios y etiquetas desplazadas para no solapar
+    % users -> perfiles (derecha): codo arriba, etiqueta fuera de la línea
+    \draw[arrow] (users.east) -- ++(0.6,0) |- (perfiles.west) node[above=6pt, rel, pos=0.25, align=center] {su\\club};
+    % users -> records (abajo): codo a la izquierda, etiqueta a la izquierda de la vertical
+    \draw[arrow] (users.south) -- ++(0,-0.6) -| (records.north) node[left=6pt, rel, pos=0.75, align=center] {su mejor\\partida};
+    % session -> users (derecha, discontinua): etiqueta arriba con separación
+    \draw[arrow, dashed] (session.east) -- node[above=6pt, rel] {userId} (users.west);
 \end{tikzpicture}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}
