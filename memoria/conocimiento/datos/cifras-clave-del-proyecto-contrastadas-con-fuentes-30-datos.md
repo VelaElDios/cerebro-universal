@@ -1,13 +1,13 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (30 datos)"
-temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos"]
+temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints", "36 jugadores", "10 jefes", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
-actualizado: "2026-11-23"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[metricas]] · [[trazabilidad]] · [[verificacion]]
@@ -52,5 +52,8 @@ relacionado: Inventario de capturas de pantalla con trazabilidad a requisitos y 
 Cada cifra del texto sale de las fuentes, copiada tal cual. El test comprueba números >20; el revisor comprueba los pequeños. Ojo con los que se parecen: 19 PBIs en Sprint 1, pero burndown de la entrega cuenta 16 (P1–P14, P18, P19).
 
 Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]]
+
+## Ampliación (2026-11-24, memoria-procesos)
+Todas las cifras del proyecto (PBIs, tareas, pruebas, endpoints, migraciones, líneas de código, dependencias, contenido del juego) han sido contrastadas con las fuentes del repositorio y coinciden exactamente. No se inventa ningún número.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

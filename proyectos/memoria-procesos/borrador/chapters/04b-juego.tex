@@ -199,13 +199,13 @@ Los valores de la Tabla~\ref{tab:juego-sistemas} incluyen ya las 5 habilidades, 
 \section{Arquitectura del juego}
 \label{sec:juego-arquitectura}
 
-El juego se organiza en tres bloques separados: la simulación pura, que no toca el DOM ni el audio; la presentación (pantallas, renderizado, HUD y sonido); y el servidor, que valida las partidas y comparte con el cliente las reglas del club. Esa división es la que se dibuja en la Figura~\ref{fig:juego-arquitectura}, colocada a continuación para que quede en la misma página que la referencia.
+El juego se organiza en tres bloques separados: la simulación pura, que no toca el DOM ni el audio; la presentación (pantallas, renderizado, HUD y sonido); y el servidor, que valida las partidas y comparte con el cliente las reglas del club. Esa división es la que se dibuja en la Figura~\ref{fig:juego-arquitectura}.
 
 \begin{figure}[htbp]
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=7.2cm, align=center, minimum height=1.2cm, font=\footnotesize, inner sep=4pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=6.5cm, align=center, minimum height=1.2cm, font=\footnotesize, inner sep=4pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
     % Bloques apilados: simulación, presentación y servidor
@@ -216,8 +216,8 @@ El juego se organiza en tres bloques separados: la simulación pura, que no toca
     \draw[arrow] (sim.south) -- node[right, font=\footnotesize] {eventos} (pres.north);
     \draw[arrow] (pres.south) -- node[right, font=\footnotesize] {api.js} (srv.north);
     % Reglas compartidas entre simulación y servidor, por el lado derecho
-    \draw[arrow, dashed] (sim.east) -- ++(0.9,0) |- (srv.east);
-    \node[font=\footnotesize, anchor=west] at ($(sim.east)+(1.0,-1.8)$) {reglas};
+    \draw[arrow, dashed] (sim.east) -- ++(0.8,0) |- (srv.east);
+    \node[font=\footnotesize, anchor=west] at ($(sim.east)+(0.9,-1.8)$) {reglas};
 \end{tikzpicture}
 \end{adjustbox}
 \caption{Arquitectura del juego: simulación pura, presentación y servidor con las reglas compartidas.}
@@ -262,10 +262,10 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{j}{Jugador}
-  \newinst[1.5]{fe}{Frontend}
-  \newinst[1.5]{api}{API}
-  \newinst[1.5]{srv}{juegoService}
-  \newinst[1.5]{repo}{juegoRepository}
+  \newinst[3]{fe}{Frontend}
+  \newinst[3]{api}{API}
+  \newinst[3]{srv}{juegoService}
+  \newinst[3]{repo}{juegoRepository}
   \begin{call}{j}{jugar}{fe}{ok}
     \begin{call}{fe}{POST partidas}{api}{201}
     \end{call}
@@ -308,10 +308,10 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
 \centering
 \begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
-  \newthread{p1}{Petición 1}
-  \newthread{p2}{Petición 2}
-  \newinst[1.5]{srv}{juegoService}
-  \newinst[1.5]{bd}{juegoPerfiles}
+  \newthread{p1}{Peticion 1}
+  \newthread{p2}{Peticion 2}
+  \newinst[3]{srv}{juegoService}
+  \newinst[3]{bd}{juegoPerfiles}
   \begin{call}{p1}{contratar}{srv}{ok}
   \end{call}
   \begin{call}{p2}{contratar}{srv}{ok}

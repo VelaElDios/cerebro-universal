@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-24 08:38"
+actualizado: "2026-11-24 09:55"
 ---
 
 # memoria-procesos
@@ -22,17 +22,19 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 
 ## Estado
 - **Compilación**: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18425 palabras).
-- **revisar_maquetacion.py**: ❌ 1 error crítico: `fig:sec-registro` 80 pt más ancha que la página. **Corregida en este paso con replanteo a 4 participantes y etiquetas cortas**.
-- **Diagramas con fallos medidos**: `fig:modelo-datos` (p. 35): "dele-" partida → ensanchado text width y \mbox{} aplicados. `fig:sec-confirmacion` (p. 37): línea discontinua cruza caja "alt" → replanteado con adjustbox y separación vertical. `fig:sec-login` (p. 39): flechas cruzan cajas alt → replanteado con llamadas anidadas. `fig:sec-google` (p. 40): etiquetas ajustadas y líneas cruzadas → reducido a \newinst[3], etiquetas cortas, adjustbox. `fig:juego-arquitectura` (p. 53): referenciada pero no aparece → añadido \FloatBarrier antes de la referencia.
-- **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…»; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
-- **Corregido en este paso**: 6 diagramas replanteados (sec-registro, sec-confirmacion, sec-login, sec-google, modelo-datos, juego-arquitectura).
-- **Pendiente**: (1) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas. (2) Añadir cita a `fig:sec-google` en texto. (3) Revisión visual de 11 diagramas en PDF. (4) Revisión visual final página a página. (5) Re-ejecutar `comando_prueba` hasta verde total.
+- **revisar_maquetacion.py**: ❌ 1 error crítico: `fig:modelo-datos` 102 pt más ancha que la página. **Corregida en este paso con replanteo de cajas y flechas con codos**.
+- **Diagramas con fallos medidos**: `fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`, `fig:sec-partida`, `fig:sec-contratar` (cruces y etiquetas sobre líneas) → replanteados con participantes ≤3, etiquetas cortas, sin paréntesis en \mess. `fig:juego-arquitectura` referenciada pero no aparecía → movida antes de la referencia y reducido text width.
+- **Overfull hbox**: 2 en `a4-trazabilidad.tex` (pendientes).
+- **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…» en caps. 4 y 4b; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
+- **Corregido en este paso**: 8 diagramas replanteados (modelo-datos, 5 de secuencia en 04-descripcion, 3 en 04b-juego) y colocación de fig:juego-arquitectura.
+- **Pendiente**: (1) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas. (2) Corregir overfull hbox en a4-trazabilidad.tex. (3) Añadir cita a `fig:sec-google` en texto. (4) Revisión visual de 11 diagramas en PDF. (5) Revisión visual final página a página. (6) Re-ejecutar `comando_prueba` hasta verde total.
 
 ## Siguiente
-1. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas y corregir errores reportados.
-2. Añadir cita faltante a `fig:sec-google` en 04-descripcion.tex (sección 4.5).
-3. Revisión visual de los 11 diagramas en PDF (letras ≥ 7.5 pt, sin cruces, sin palabras partidas, codos).
-4. Revisión visual final del PDF página a página.
-5. Re-ejecutar `comando_prueba` hasta verde total.
+1. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia y corregir errores reportados.
+2. Corregir overfull hbox en chapters/a4-trazabilidad.tex (líneas 206-207 y 377-378).
+3. Añadir cita faltante a `fig:sec-google` en 04-descripcion.tex (sección 4.5).
+4. Revisión visual de los 11 diagramas en PDF compilado (letras ≥ 7,5 pt, sin cruces, sin palabras partidas, codos).
+5. Revisión visual final del PDF página a página.
+6. Re-ejecutar `comando_prueba` hasta verde total.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "subcaption"
-notas: 10
+notas: 9
 ---
 # subcaption
 
@@ -20,7 +20,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subcaption» (este archiv
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s|Cadenas "La figura X muestra..." prohibidas — prosa integrada con subfigure]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas con subfigure (regla 13 Javier)]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
 
@@ -28,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subcaption» (este archiv
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[maquetacion]] · [[subfigure]] · [[verificar]] · [[redaccion]] · [[tfg]] · [[capturas]] · [[memoria]] · [[reglas-javier]] · [[refs]] · [[memoria-procesos]]
+[[latex]] · [[figuras]] · [[maquetacion]] · [[subfigure]] · [[verificar]] · [[capturas]] · [[redaccion]] · [[tfg]] · [[refs]] · [[memoria-procesos]] · [[figura]]

@@ -578,5 +578,55 @@
  },
  "d3fda3a7f8ef7f2e0b3adc6a4fe963ea": {
   "ok": true
+ },
+ "ec2fdbc772ee92dd63b932f51b592a9e": {
+  "ok": false,
+  "problemas": [
+   "La flecha 'POST' que va desde el componente 'Front' hasta la 'API' cruza por encima del borde superior del rectángulo del bloque 'alt' / 'existe'."
+  ]
+ },
+ "1117904ce2c53466257ce11fadbc2e9d": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua que va desde la caja 'session' hasta la caja 'users' tiene superpuesta la etiqueta 'userId' cruzando exactamente por encima de la línea.",
+   "La relación vertical entre la caja 'users' y la caja 'juego_records' tiene la etiqueta 'su mejor partida' situada en medio del trazado de la línea, interrumpiendo visualmente el flujo."
+  ]
+ },
+ "900b108271a7cb03666333b3d3bbc35d": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta que va desde el bloque 'else' (Servicio a API) hacia el Frontend (etiquetada como '201') atraviesa horizontalmente las líneas de vida de la API y el Servicio de forma confusa en el diseño visual de los marcos.",
+   "El texto 'usuario' que cruza desde Servicio hacia API en la parte inferior del bloque 'alt/else' se solapa con las líneas de vida verticales y el marco contenedor."
+  ]
+ },
+ "8ef2a1c499786a717ba241f5d8469d55": {
+  "ok": true
+ },
+ "e99e6cc4533f6d4fefb1c788a9b38a6f": {
+  "ok": true
+ },
+ "6be48045a7d4677a18790ca7e94f5297": {
+  "ok": true
+ },
+ "139bd1c0282145535f5148a871bfccb9": {
+  "ok": true
+ },
+ "88026c3817da49068a9debe403d93fed": {
+  "ok": false,
+  "problemas": [
+   "Las líneas de mensajes entre 'juegoService' y 'juegoPerfiles' (por ejemplo, 'SELECT v7' y 'v7') cruzan y se superponen visualmente de manera muy densa en la sección central."
+  ]
+ },
+ "1b887e2affed47a80fc1a27953dcce7f": {
+  "ok": true
+ },
+ "8ac533cff1326e8b98172613d3c6d202": {
+  "ok": true
+ },
+ "38dd739aee4362a311cd8920b87a76ea": {
+  "ok": true
+ },
+ "1d827938dc963db08ac1e8b4f64b03d0": {
+  "ok": true
  }
 }

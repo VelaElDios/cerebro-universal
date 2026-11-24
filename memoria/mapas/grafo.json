@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T08:38:27+01:00",
+ "generado": "2026-11-24T09:55:17+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -836,6 +836,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator.md"
+  },
+  {
+   "id": "concepto:burndown-real-vs-donetonic-en-sprint-2",
+   "tipo": "concepto",
+   "titulo": "Burndown real vs DoneTonic en Sprint 2",
+   "temas": [
+    "donetonic",
+    "metricas",
+    "scrum"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2.md"
   },
   {
    "id": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
@@ -1701,7 +1716,8 @@
     "metricas",
     "trazabilidad",
     "verificacion",
-    "memoria-procesos"
+    "memoria-procesos",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3558,16 +3574,10 @@
   {
    "id": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "tipo": "decision",
-   "titulo": "Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas con subfigure (regla 13 Javier)",
+   "titulo": "Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)",
    "temas": [
-    "figuras",
     "latex",
-    "maquetacion",
-    "memoria",
     "redaccion",
-    "reglas-javier",
-    "subcaption",
-    "subfigure",
     "tfg"
    ],
    "proyectos": [
@@ -3647,9 +3657,12 @@
     "figuras",
     "latex",
     "memoria",
-    "tfg"
+    "tfg",
+    "maquetacion"
    ],
-   "proyectos": [],
+   "proyectos": [
+    "memoria-procesos"
+   ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente.md"
   },
@@ -6230,14 +6243,14 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 10,
+   "peso": 9,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:subfigure",
    "tipo": "tema",
    "titulo": "subfigure",
-   "peso": 6,
+   "peso": 5,
    "ruta": "memoria/temas/subfigure.md"
   },
   {
@@ -6251,7 +6264,7 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 17,
+   "peso": 18,
    "ruta": "memoria/temas/metricas.md"
   },
   {
@@ -6370,7 +6383,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 26,
+   "peso": 25,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6398,7 +6411,7 @@
    "id": "tema:reglas-javier",
    "tipo": "tema",
    "titulo": "reglas-javier",
-   "peso": 8,
+   "peso": 7,
    "ruta": "memoria/temas/reglas-javier.md"
   },
   {
@@ -6552,7 +6565,7 @@
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 50,
+   "peso": 51,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
@@ -6573,7 +6586,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 59,
+   "peso": 60,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -9566,6 +9579,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "concepto:cadena-de-middlewares-para-peticion-protegida-y-autorizacion",
    "a": "tema:auth",
    "tipo": "trata"
@@ -12518,6 +12551,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
    "a": "tema:memoria-procesos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
@@ -18462,42 +18500,12 @@
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:figuras",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:latex",
    "tipo": "trata"
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:maquetacion",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:memoria",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:redaccion",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:reglas-javier",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:subcaption",
-   "tipo": "trata"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "tema:subfigure",
    "tipo": "trata"
   },
   {
@@ -18517,27 +18525,7 @@
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "receta:prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "concepto:prosa-de-tfg-sin-listas-de-capturas-regla-13-javier",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "concepto:prosa-de-tfg-vs-lista-de-capturas",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "receta:reescribir-frases-la-figura-x-muestra-como-prosa-integrada",
-   "tipo": "enlaza"
-  },
-  {
-   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
-   "a": "decision:cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s",
+   "a": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
    "tipo": "enlaza"
   },
   {
@@ -18734,6 +18722,16 @@
    "de": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
    "a": "tema:tfg",
    "tipo": "trata"
+  },
+  {
+   "de": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:sin-figuras-repetidas-usar-ref-a-la-figura-existente",

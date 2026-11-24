@@ -19,7 +19,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 - ⚖️ [[memoria/conocimiento/decisiones/cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s|Cadenas "La figura X muestra..." prohibidas — prosa integrada con subfigure]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5|Pipeline CI/CD descrito una sola vez en el Capítulo 5 (Regla 14 Javier)]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas con subfigure (regla 13 Javier)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -28,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[figuras]] · [[memoria]] · [[maquetacion]] · [[estilo]] · [[memoria-procesos]] · [[subcaption]] · [[reglas-javier]] · [[subfigure]] · [[redacción]] · [[sprints]]
+[[latex]] · [[tfg]] · [[figuras]] · [[memoria]] · [[maquetacion]] · [[estilo]] · [[memoria-procesos]] · [[redacción]] · [[subcaption]] · [[sprints]] · [[arquitectura]] · [[cicd]]
