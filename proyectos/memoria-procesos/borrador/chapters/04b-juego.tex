@@ -201,7 +201,6 @@ Los valores de la Tabla~\ref{tab:juego-sistemas} incluyen ya las 5 habilidades, 
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
     node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.8cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
     nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=6.5cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
@@ -221,7 +220,6 @@ Los valores de la Tabla~\ref{tab:juego-sistemas} incluyen ya las 5 habilidades, 
     \draw[arrow] (api.west) -- node[above, font=\footnotesize] {valida} (srv.east);
     \draw[arrow, dashed] (sim.south) -- node[left, font=\footnotesize] {reglas compartidas} (srv.north);
 \end{tikzpicture}
-\end{adjustbox}
 \caption{Arquitectura del juego: simulación, presentación y servidor.}
 \label{fig:juego-arquitectura}
 \end{figure}
@@ -262,13 +260,12 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{j}{Jugador}
-  \newinst[4]{fe}{Frontend}
-  \newinst[4]{api}{API}
-  \newinst[4]{srv}{juegoService}
-  \newinst[4]{repo}{juegoRepository}
+  \newinst[2]{fe}{Frontend}
+  \newinst[1]{api}{API}
+  \newinst[1]{srv}{Servicio}
+  \newinst[1]{repo}{Repositorio}
   \begin{call}{j}{jugar}{fe}{ok}
     \begin{call}{fe}{POST partidas}{api}{201}
     \end{call}
@@ -285,7 +282,7 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
     \mess{fe}{fin}{j}
   \end{sdblock}
   \begin{call}{fe}{POST fin}{api}{200 o 400}
-    \begin{call}{api}{finalizarPartida}{srv}{validacion}
+    \begin{call}{api}{finaliza}{srv}{validacion}
     \end{call}
     \begin{sdblock}{alt}{imposible}
       \mess{srv}{400 no creible}{api}
@@ -293,11 +290,10 @@ Una partida recorre tres momentos: al empezar, el servidor guarda la partida en 
     \begin{sdblock}{else}{valido}
       \begin{call}{srv}{reparte y guarda}{repo}{perfil}
       \end{call}
-      \mess{api}{200 recompensas}{fe}
+      \mess{api}{200}{fe}
     \end{sdblock}
   \end{call}
 \end{sequencediagram}
-\end{adjustbox}
 \caption{Una partida del juego con validación en el servidor.}
 \label{fig:sec-partida}
 \end{figure}
@@ -309,7 +305,6 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{p1}{Peticion 1}
   \newthread{p2}{Peticion 2}
@@ -336,7 +331,6 @@ Contratar gasta una ficha de contrato en un jugador sorteado por rareza. Si el u
   \mess{srv}{409 sin fichas}{p2}
   \mess{srv}{200 ok}{p1}
 \end{sequencediagram}
-\end{adjustbox}
 \caption{Contratar con concurrencia optimista.}
 \label{fig:sec-contratar}
 \end{figure}
