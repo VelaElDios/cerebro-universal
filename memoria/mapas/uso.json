@@ -111,13 +111,13 @@
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 20
+  "usos": 21
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 21
+  "usos": 22
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -212,8 +212,8 @@
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
   "mal": 0,
-  "ultimo": "2026-11-23",
-  "usos": 7
+  "ultimo": "2026-11-24",
+  "usos": 8
  },
  "memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente.md": {
   "bien": 0,
@@ -237,7 +237,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md": {
   "bien": 0,

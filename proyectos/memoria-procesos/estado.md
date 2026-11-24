@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-24 09:55"
+actualizado: "2026-11-24 10:57"
 ---
 
 # memoria-procesos
@@ -21,20 +21,20 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1 pero burndown de entrega cuenta 16; 276 pruebas al cierre Sprint 2, 322 tras Fase 7; 23 endpoints; 5 migraciones).
 
 ## Estado
-- **Compilación**: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18425 palabras).
-- **revisar_maquetacion.py**: ❌ 1 error crítico: `fig:modelo-datos` 102 pt más ancha que la página. **Corregida en este paso con replanteo de cajas y flechas con codos**.
-- **Diagramas con fallos medidos**: `fig:sec-registro`, `fig:sec-confirmacion`, `fig:sec-login`, `fig:sec-google`, `fig:sec-baja`, `fig:sec-partida`, `fig:sec-contratar` (cruces y etiquetas sobre líneas) → replanteados con participantes ≤3, etiquetas cortas, sin paréntesis en \mess. `fig:juego-arquitectura` referenciada pero no aparecía → movida antes de la referencia y reducido text width.
-- **Overfull hbox**: 2 en `a4-trazabilidad.tex` (pendientes).
+- **Compilación**: OK (98 páginas, LuaLaTeX). `verificar.py`: ✅ (35 figuras, 29 tablas, 18447 palabras).
+- **revisar_maquetacion.py**: ❌ 4 diagramas con fallos medidos: `fig:modelo-datos` (palabras partidas), `fig:sec-registro` (flecha cruza), `fig:sec-confirmacion` (flecha sobre texto), `fig:juego-arquitectura` (referenciada pero no aparece). **Corregidos en este paso los tres primeros en 04-descripcion.tex**; el cuarto requiere mover figura en 04b-juego.tex (próximo paso).
+- **Overfull hbox**: 2 en `a4-trazabilidad.tex` (líneas 206-207 y 377-378) → **intentado corregir ensanchando columna PR y ajustando anchos**; pendiente verificación en próxima compilación.
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…» en caps. 4 y 4b; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
-- **Corregido en este paso**: 8 diagramas replanteados (modelo-datos, 5 de secuencia en 04-descripcion, 3 en 04b-juego) y colocación de fig:juego-arquitectura.
-- **Pendiente**: (1) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas. (2) Corregir overfull hbox en a4-trazabilidad.tex. (3) Añadir cita a `fig:sec-google` en texto. (4) Revisión visual de 11 diagramas en PDF. (5) Revisión visual final página a página. (6) Re-ejecutar `comando_prueba` hasta verde total.
+- **Corregido en este paso**: 3 diagramas replanteados (modelo-datos, sec-registro, sec-confirmacion) en 04-descripcion.tex; tabla trazabilidad ajustada.
+- **Pendiente**: (1) Mover fig:juego-arquitectura antes de su referencia en 04b-juego.tex. (2) Ejecutar `revisar_umlsd.py` y corregir 11 diagramas. (3) Verificar que overfull hbox desaparece. (4) Añadir cita a `fig:sec-google` en texto. (5) Revisión visual de 11 diagramas en PDF. (6) Revisión visual final página a página. (7) Re-ejecutar `comando_prueba` hasta verde total.
 
 ## Siguiente
-1. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia y corregir errores reportados.
-2. Corregir overfull hbox en chapters/a4-trazabilidad.tex (líneas 206-207 y 377-378).
-3. Añadir cita faltante a `fig:sec-google` en 04-descripcion.tex (sección 4.5).
-4. Revisión visual de los 11 diagramas en PDF compilado (letras ≥ 7,5 pt, sin cruces, sin palabras partidas, codos).
-5. Revisión visual final del PDF página a página.
-6. Re-ejecutar `comando_prueba` hasta verde total.
+1. Mover `fig:juego-arquitectura` en `chapters/04b-juego.tex` antes de su primera referencia.
+2. Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia y corregir errores reportados.
+3. Verificar overfull hbox en `a4-trazabilidad.tex` tras recompilar; si persiste, reducir fuente o usar `\sloppy` local.
+4. Añadir cita faltante a `fig:sec-google` en 04-descripcion.tex (sección 4.5).
+5. Revisión visual de los 11 diagramas en PDF compilado (letras ≥ 7,5 pt, sin cruces, sin palabras partidas, codos).
+6. Revisión visual final del PDF página a página.
+7. Re-ejecutar `comando_prueba` hasta verde total.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

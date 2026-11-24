@@ -15,8 +15,8 @@
 | [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas\|Contenido por sprint y prosa de TFG (no listas de capturas)]] | 31 | 8 | 1 |
 | [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 26 | 2 | 1 |
 | [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis\|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] | 25 | 3 | 0 |
-| [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado\|Inventario de diagramas obligatorios y su estado]] | 21 | 6 | 0 |
-| [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado\|Inventario de diagramas obligatorios y su estado actualizado]] | 20 | 6 | 0 |
+| [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado\|Inventario de diagramas obligatorios y su estado]] | 22 | 6 | 0 |
+| [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado\|Inventario de diagramas obligatorios y su estado actualizado]] | 21 | 6 | 0 |
 | [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg\|Contenido de los anexos por sprint en la memoria TFG]] | 14 | 4 | 0 |
 | [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes\|Números clave del proyecto contrastados con fuentes]] | 7 | 2 | 0 |
 | [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d\|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] | 7 | 1 | 0 |

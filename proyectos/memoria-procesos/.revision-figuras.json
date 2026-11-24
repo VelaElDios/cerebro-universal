@@ -628,5 +628,24 @@
  },
  "1d827938dc963db08ac1e8b4f64b03d0": {
   "ok": true
+ },
+ "ecaa339629002f88f72fe4ad44717486": {
+  "ok": false,
+  "problemas": [
+   "La flecha punteada 'usuario' que va desde el Servicio hacia el Frontend+API atraviesa y cruza por encima de las líneas verticales de vida y de las cajas del bloque condicional inferior ('else nuevo')."
+  ]
+ },
+ "78bd17043474f1d4909ee2c8625f3dd1": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta 'usuario' que va desde el Servicio hacia Frontend+API cruza por encima del recuadro o texto del bloque 'alt' y líneas verticales del diagrama.",
+   "La línea horizontal de '201' cruza de lado a lado atravesando las líneas verticales del bloque 'else' y del Servicio."
+  ]
+ },
+ "ad66788694139c1802a0c72fd9781609": {
+  "ok": false,
+  "problemas": [
+   "La línea de vida punteada del bloque 'Servicio' atraviesa la esquina inferior de la caja 'alt' correspondiente a 'credenciales invalidas'."
+  ]
  }
 }

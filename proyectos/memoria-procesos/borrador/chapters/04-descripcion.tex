@@ -190,16 +190,17 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 
 \begin{figure}[htbp]
 \centering
+\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=3.2cm, inner sep=3pt},
-    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=4.5cm, inner sep=3pt},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\scriptsize, text width=3.8cm, inner sep=4pt},
+    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\scriptsize, text width=5.2cm, inner sep=4pt},
     pk/.style={font=\scriptsize\bfseries},
     uk/.style={font=\scriptsize\itshape},
     arrow/.style={-{Stealth[length=2mm]}, thick, color=tema},
     rel/.style={font=\tiny, inner sep=1pt}
 ]
     % Layout compacto para caber en \textwidth
-    \node[entity] (session) at (-6.5,0) {
+    \node[entity] (session) at (-7.0,0) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \texttt{sess JSON}\\
@@ -219,14 +220,14 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{apodo\_clave TEXT} \uk\\
         \texttt{avatar TEXT}
     };
-    \node[entity] (perfiles) at (6.5,0) {
+    \node[entity] (perfiles) at (7.5,0) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \texttt{datos JSONB}\\
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entitywide] (records) at (0,-7.0) {
+    \node[entitywide] (records) at (0,-7.5) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \texttt{alias TEXT}\\
@@ -242,6 +243,7 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
     \draw[arrow] (users.south) -- ++(0,-0.5) -| (records.north) node[left=2pt, rel, pos=0.75] {su mejor partida};
     \draw[arrow, dashed] (session.east) -- ++(0.5,0) |- (users.west) node[above=2pt, rel, pos=0.25] {userId};
 \end{tikzpicture}
+\end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}
 \end{figure}
@@ -328,33 +330,32 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
 
 \begin{figure}[htbp]
 \centering
+\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[3]{fe}{Frontend}
-  \newinst[3]{api}{API}
+  \newinst[3]{fe}{Frontend+API}
   \newinst[3]{srv}{Servicio}
   \begin{call}{u}{email, clave}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST register}{api}{201 o 409}
-    \begin{call}{api}{register}{srv}{usuario}
-      \begin{call}{srv}{busca email}{srv}{fila o null}
-      \end{call}
-      \begin{sdblock}{alt}{existe}
-        \mess{srv}{ConflictError}{api}
-      \end{sdblock}
-      \begin{sdblock}{else}{nuevo}
-        \begin{call}{srv}{hash bcrypt}{srv}{hash}
-        \end{call}
-        \begin{call}{srv}{crea usuario}{srv}{usuario}
-        \end{call}
-        \begin{call}{srv}{envia correo}{srv}{ok}
-        \end{call}
-        \mess{api}{201}{fe}
-      \end{sdblock}
+  \begin{call}{fe}{POST register}{srv}{usuario}
+    \begin{call}{srv}{busca email}{srv}{fila o null}
     \end{call}
+    \begin{sdblock}{alt}{existe}
+      \mess{srv}{ConflictError}{fe}
+    \end{sdblock}
+    \begin{sdblock}{else}{nuevo}
+      \begin{call}{srv}{hash bcrypt}{srv}{hash}
+      \end{call}
+      \begin{call}{srv}{crea usuario}{srv}{usuario}
+      \end{call}
+      \begin{call}{srv}{envia correo}{srv}{ok}
+      \end{call}
+      \mess{fe}{201}{u}
+    \end{sdblock}
   \end{call}
   \mess{fe}{aviso exito}{u}
 \end{sequencediagram}
+\end{adjustbox}
 \caption{Registro con email y contraseña.}
 \label{fig:sec-registro}
 \end{figure}
