@@ -647,5 +647,17 @@
   "problemas": [
    "La línea de vida punteada del bloque 'Servicio' atraviesa la esquina inferior de la caja 'alt' correspondiente a 'credenciales invalidas'."
   ]
+ },
+ "326903412a5045bb5b1f4bbda85c8fd1": {
+  "ok": true
+ },
+ "4788835cab2b794f412d4269ed9f4e4d": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta 'valido o nulo' entre TokenSigner y API cruza por encima del texto de la etiqueta 'verify token' en el diagrama Figura 3.4."
+  ]
+ },
+ "660fbd28c44c229dfc05414d210714f4": {
+  "ok": true
  }
 }

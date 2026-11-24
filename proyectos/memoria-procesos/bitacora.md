@@ -15833,3 +15833,23 @@ Las demás tareas (fig:juego-arquitectura, revisar_umlsd.py, revisión visual fi
 - Añadir cita faltante a `fig:sec-google` en el texto del flujo OAuth (04-descripcion.tex, sección 4.5): «El flujo completo, con sus dos subfiguras, se resume en la Figura~\ref{fig:sec-google}» y asegurar que `\ref{fig:sec-google}` aparece en el párrafo explicativo.
 - Revisión visual final del PDF página a página (regla 15): ninguna página con una sola imagen, ninguna figura repetida, flechas con `$\rightarrow$`, todo citado con `\ref`, no hay secciones de 1–2 líneas, no hay párrafos repetidos entre capítulos.
 - Volver a ejecutar `comando_prueba` hasta verde total (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-24 13:03 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+Corregir los tres diagramas problemáticos en 04-descripcion.tex (modelo-datos, sec-registro, sec-confirmacion) y el overfull hbox en a4-trazabilidad.tex. Los diagramas se replantean para evitar palabras partidas, flechas que cruzan cajas/texto y cumplir reglas 16-18. La tabla de trazabilidad permite cortes en URLs largas.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a4-trazabilidad.tex`, `(cambio) chapters/a4-trazabilidad.tex`
+
+**Intentos:**
+- intento 1: ❌ - Reglas 16-18: Figura 3.2 (fig:modelo-datos), página 31 del PDF, chapters/04-descripcion.tex:191 (medido en el PDF): letras de 6.2 pt (mínimo 7.5): e…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Mover fig:juego-arquitectura en chapters/04b-juego.tex antes de su primera referencia. Ejecutar revisar_umlsd.py sobre los 11 diagramas de secuencia y corregir errores. Verificar overfull hbox en a4-trazabilidad.tex tras recompilar. Añadir cita faltante a fig:sec-google en 04-descripcion.tex. Revisión visual de los 11 diagramas en PDF. Revisión visual final página a página. Re-ejecutar comando_prueba hasta verde total.
+
+## 2026-11-24 13:08 · ⚠️ Revisor no disponible
+
+Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
+
+El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
