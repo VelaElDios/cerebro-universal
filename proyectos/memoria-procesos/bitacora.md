@@ -16231,3 +16231,49 @@ Corrección directa: Cambiar la colocación de la etiqueta «userId» (y por coh
 - Aplicar el cambio en chapters/04-descripcion.tex (sustituir las líneas indicadas).
 - Ejecutar `comando_prueba` (compilación + verificar.py + revisar_maquetacion.py) para confirmar que el fallo del diagrama desaparece y todo pasa en verde.
 - Si la prueba pasa, hacer la revisión final página a página y marcar la memoria como terminada.
+
+## 2026-11-24 23:21 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Corrijo el solape de la etiqueta «su club» en `fig:modelo-datos`: la desplazo al 35 % del trayecto desde `users` (lejos del borde de `juego_perfiles`) y la subo 3 pt, cumpliendo las reglas 16-18 (ninguna etiqueta sobre cajas ni líneas).
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ \TU/lmtt/m/n/12 UnauthorizedError\TU/Carlito(0)/m/n/12 , \TU/lmtt/m/n/12 ForbiddenError\TU/Carlito(0)/m/n/12 , \TU/lmtt/m/n/12 AccountPendingError\TU/…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` (compilación + `verificar.py` + `revisar_maquetacion.py` + medición de figuras en el PDF) para confirmar que el solape de «su club» con el borde de `juego_perfiles` desaparece y todo queda en verde; si persiste algún fallo medido, ajustar `pos` o la separación entre nodos sin tocar el resto del diagrama.
+
+## 2026-11-24 23:23 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (100 páginas, LuaLaTeX)
+- verificar.py: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, trazabilidad completa, cifras contrastadas)
+- revisar_maquetacion.py: ❌ falla en Figura 3.2 (fig:modelo-datos, página 35): la línea discontinua session→users intersecta la etiqueta 'userId'; la etiqueta 'su club' (users→juego_perfiles) queda muy cerca y cruza la línea horizontal
+- Prosa sin cadenas «La figura X muestra…» en caps. 4 y 4b (subfiguras agrupadas)
+- Hito 4 descrito como completado, no pendiente
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2
+- Trazabilidad completa P1–P48/T1–T82 en a4
+- Imágenes únicas con \ref en el resto
+- Overfull hbox previos en a1-desarrollo.tex corregidos (no aparecen en la salida actual)
+
+La memoria compila y verificar.py pasa, pero revisar_maquetacion.py detecta dos solapes en el diagrama entidad-relación (fig:modelo-datos):
+1. La etiqueta 'userId' sobre la línea discontinua session→users (reglas 16-18: legibilidad de diagramas)
+2. La etiqueta 'su club' entre users y juego_perfiles, demasiado cerca del borde de la caja y cruzando la línea
+
+El constructor intentó mover 'su club' a pos=0.35 con above=3pt, pero no es suficiente. Hay que reposicionar ambas etiquetas con mayor separación vertical y, para 'userId', usar un nodo midway con above mayor o desplazar la flecha con un codo. También la etiqueta vertical 'su mejor partida' debe quedar claramente a la izquierda de la flecha users→juego_records sin tocarla.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` (compilación + `verificar.py` + `revisar_maquetacion.py`) para confirmar que el diagrama fig:modelo-datos pasa la medición del PDF sin solapes de etiquetas.
+- Si la prueba pasa, hacer la revisión final página a página y marcar la memoria como terminada.
+- Si persiste algún fallo medido en otro diagrama, corregirlo sin tocar lo que ya pasa.
+
+## 2026-11-24 23:23 · 🧠 Conocimiento guardado
+
+[[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]] · [[burndown-real-vs-donetonic-en-sprint-2-backlog-registrado-al]] · [[trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4]]

@@ -3,17 +3,17 @@
 ¿Sirve lo que sabe el cerebro? Cada vez que una nota se manda a una IA se apunta si el paso salió bien o se deshizo (este archivo se genera solo).
 
 - Notas que se han usado alguna vez: 46
-- Notas que nunca se han usado: 269
+- Notas que nunca se han usado: 270
 
 ## Las más útiles
 
 | Nota | Usos | Pasos buenos | Pasos deshechos |
 |---|---|---|---|
-| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]] | 57 | 4 | 2 |
+| [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla\|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]] | 58 | 4 | 2 |
 | [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin\|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]] | 42 | 6 | 1 |
 | [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas\|Contenido por sprint y prosa de TFG (no listas de capturas)]] | 33 | 8 | 1 |
+| [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis\|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] | 27 | 3 | 0 |
 | [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado\|Inventario de diagramas obligatorios y su estado actualizado]] | 26 | 6 | 0 |
-| [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis\|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]] | 26 | 3 | 0 |
 | [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm\|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]] | 26 | 2 | 1 |
 | [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg\|Contenido de los anexos por sprint en la memoria TFG]] | 14 | 4 | 0 |
 | [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes\|Números clave del proyecto contrastados con fuentes]] | 7 | 2 | 0 |

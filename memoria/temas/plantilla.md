@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "plantilla"
-notas: 6
+notas: 7
 ---
 # plantilla
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «plantilla» (este archivo
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
+- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t|Una sola portada oficial y elementos fijos de la plantilla TFG]] · ⚠️ propuesto
 
 ## Conceptos
 
@@ -24,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «plantilla» (este archivo
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[latex]] · [[antecedentes]] · [[capitulo-2]] · [[elementos-fijos]] · [[maquetacion]] · [[memoria-procesos]] · [[plantilla-tfg]] · [[portada]]
+[[tfg]] · [[latex]] · [[memoria]] · [[portada]] · [[antecedentes]] · [[capitulo-2]] · [[elementos-fijos]] · [[maquetacion]] · [[memoria-procesos]] · [[plantilla-tfg]]

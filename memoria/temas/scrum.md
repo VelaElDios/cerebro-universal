@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scrum"
-notas: 59
+notas: 60
 ---
 # scrum
 
@@ -29,6 +29,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta|Burndown real del Sprint 2 vs gráficas DoneTonic en recta]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre|Cambio de alcance en Sprint 1: se añade P19 Cloud Run por créditos Google Cloud]]
+- ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell|Cámara 3/4 con inercia, inclinación y feedback visual (destellos/aplastado)]]
 - ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]]
 - ⚖️ [[memoria/conocimiento/decisiones/motor-de-partida-determinista-a-paso-fijo-1-60-s-con-semilla|Motor de partida determinista a paso fijo 1/60 s con semilla]]
@@ -83,4 +84,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Temas relacionados
 
-[[donetonic]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[metricas]] · [[trazabilidad]] · [[memoria]] · [[git]] · [[pbi]] · [[tarea]] · [[tfg]]
+[[donetonic]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[metricas]] · [[memoria]] · [[trazabilidad]] · [[tfg]] · [[sprints]] · [[git]] · [[pbi]]

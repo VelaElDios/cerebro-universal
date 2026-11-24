@@ -4,7 +4,7 @@ titulo: "Cifras clave del proyecto contrastadas con fuentes (30 datos)"
 temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints", "36 jugadores", "10 jefes", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-24"
@@ -55,5 +55,16 @@ Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · 
 
 ## Ampliación (2026-11-24, memoria-procesos)
 Todas las cifras del proyecto (PBIs, tareas, pruebas, endpoints, migraciones, líneas de código, dependencias, contenido del juego) han sido contrastadas con las fuentes del repositorio y coinciden exactamente. No se inventa ningún número.
+
+## Ampliación (2026-11-24, memoria-procesos)
+|
+  - Sprint 1: 19 PBIs (P1–P19), 32 tareas (T1–T32). Burndown de entrega: 16 PBIs (P1–P14, P18, P19).
+  - Sprint 2: 29 PBIs (P20–P48), 50 tareas (T33–T82).
+  - Total: 48 PBIs, 82 tareas.
+  - Pruebas: 276 al cierre Sprint 2, 322 tras Fase 7.
+  - API: 23 endpoints.
+  - Migraciones: 5.
+  - Código backend: ~2.300 líneas; juego: ~14.800 líneas; pruebas: ~5.050 líneas.
+  - Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

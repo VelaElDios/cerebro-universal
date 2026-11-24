@@ -4,10 +4,10 @@ titulo: "Inventario de capturas de pantalla con trazabilidad a requisitos y fech
 temas: ["capturas", "donetonic", "grada-colchonera", "juego", "latex", "memoria", "produccion", "requisitos", "saas", "sprints", "tfg", "trazabilidad"]
 claves: ["capturas", "app", "hito4", "juego", "fase7", "donetonic", "produccion", "prueba-tecnica", "problema: Necesario saber qué capturas existen", "su fecha y a qué requisito/PBI pertenecen para colocarlas sin repetir.", "solucion: Consultar §16 de documentacion-tecnica.md y la lista de imágenes disponibles en el borrador.", "Hitos 1-3", "Hito 4", "producción", "DoneTonic", "prueba-técnica", "requisitos P7-P17 RJ-01-RJ-20"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16", "repo:saas/docs/capturas/README.md"]
+fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16", "repo:saas/docs/capturas/README.md", "repo:saas/docs/documentacion-tecnica.md §16, repo:saas/@arbol"]
 confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-22"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[capturas]] · [[donetonic]] · [[grada-colchonera]] · [[juego]] · [[latex]] · [[memoria]] · [[produccion]] · [[requisitos]] · [[saas]] · [[sprints]] · [[tfg]] · [[trazabilidad]]
@@ -64,6 +64,19 @@ relacionado: Fechas y estructura de los dos sprints con PBIs y tareas, Trazabili
   Mínimos requeridos en spec: app/ 4+, hito4/ 4+, juego/ 8+, donetonic/ 5+, produccion/ 2+, prueba-tecnica/ 1+. Todos cumplidos.
 
 Relacionado: [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]]
+
+## Ampliación (2026-11-24, memoria-procesos)
+|
+  | Carpeta | Imágenes | Fecha | Uso principal |
+  |---------|----------|-------|---------------|
+  | app/ | 13 | 27/10/2026 | Cap. 04-descripcion §6 (manual SaaS) |
+  | hito4/ | 11 | 27/10/2026 | Cap. 04-descripcion §6 (Hito 4) y Cap. 05-evaluacion (producción) |
+  | juego/ | 16 | 29/10/2026 | Cap. 04b-juego §2 (manual juego) |
+  | fase7/ | 12 | 29/10/2026 | Cap. 04b-juego (evolución) |
+  | donetonic/ | 8 | 29/10/2026 | Cap. 03-propuesta (Sprint 1) y Anexo A (Sprint 2) |
+  | produccion/ | 3 | 23/10/2026 | Cap. 05-evaluacion (comprobación producción) |
+  | prueba-tecnica/ | 2 | — | Cap. 05-evaluacion (prueba técnica) |
+  Mínimos requeridos: 4 app/, 4 hito4/, 8 juego/, 5 donetonic/, 2 produccion/, 1 prueba-tecnica/.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>

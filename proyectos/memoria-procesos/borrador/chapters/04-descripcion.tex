@@ -196,16 +196,14 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema},
     rel/.style={font=\small, inner sep=2pt}
 ]
-    % Layout más compacto horizontalmente
-    % Cajas separadas: session (izquierda), users (centro), perfiles (derecha)
-    % y juego_records (abajo). Las anchuras dejan huecos libres entre cajas.
-    \node[entity, text width=3.0cm] (session) at (-5.6, 1.0) {
+    % Layout con más separación horizontal y vertical para evitar solapes
+    \node[entity, text width=3.0cm] (session) at (-6.5, 1.5) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \texttt{sess JSON}\\
         \texttt{expire TIMESTAMP}
     };
-    \node[entitywide] (users) at (0.0, 1.0) {
+    \node[entitywide] (users) at (0.0, 1.5) {
         \textbf{users}\\
         \pk id UUID PK\\
         \texttt{email TEXT} \uk (único no eliminadas)\\
@@ -219,14 +217,14 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{apodo\_clave TEXT} \uk\\
         \texttt{avatar TEXT}
     };
-    \node[entity, text width=3.4cm] (perfiles) at (5.5, 1.0) {
+    \node[entity, text width=3.4cm] (perfiles) at (6.5, 1.5) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \texttt{datos JSONB}\\
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entitywide] (records) at (0.0, -5.0) {
+    \node[entitywide] (records) at (0.0, -5.5) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \texttt{alias TEXT}\\
@@ -237,12 +235,13 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    % Relaciones: flechas rectas de caja a caja, sin codos ni cruces
-    \draw[arrow, dashed] (session.east) -- node[rel, above=2pt] {userId} (users.west);
-    \draw[arrow] (users.east) -- node[rel, above=2pt, align=center] {su\\club} (perfiles.west);
+    % Relación session -> users: flecha discontinua con etiqueta claramente encima
+    \draw[arrow, dashed] (session.east) -- node[rel, above=6pt] {userId} (users.west);
+    % Relación users -> perfiles: flecha con etiqueta centrada y bien separada de las cajas
+    \draw[arrow] (users.east) -- node[rel, above=6pt, pos=0.5, align=center] {su\\club} (perfiles.west);
+    % Relación users -> records: flecha vertical con etiqueta a la izquierda, lejos de la línea
     \draw[arrow] (users.south) -- (records.north);
-    % Etiqueta de la relación vertical en zona libre, a la izquierda de la flecha
-    \node[rel, align=center, anchor=east] at (-1.6, -2.4) {su mejor\\partida};
+    \node[rel, align=center, anchor=east] at (-2.5, -2.0) {su mejor\\partida};
 \end{tikzpicture}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}

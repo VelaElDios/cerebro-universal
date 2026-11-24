@@ -4,10 +4,10 @@ titulo: "Trazabilidad completa requisito → PBI → tarea → PR en anexo A4"
 temas: ["anexo", "longtable", "trazabilidad", "memoria"]
 claves: ["anexo A4", "trazabilidad", "longtable", "requisito PBI tarea PR"]
 proyectos: ["memoria-procesos"]
-fuentes: ["spec del proyecto (tabla anexos)", "spec del proyecto §Anexos y docs/requisitos.md, docs/sprint-1.md, docs/sprint-2.md", "memoria/chapters/a4-trazabilidad.tex\ncaption: Tabla~\\ref{tab:trazabilidad-completa} con 82 filas (una por tarea) + requisitos no funcionales transversales."]
+fuentes: ["spec del proyecto (tabla anexos)", "spec del proyecto §Anexos y docs/requisitos.md, docs/sprint-1.md, docs/sprint-2.md", "memoria/chapters/a4-trazabilidad.tex\ncaption: Tabla~\\ref{tab:trazabilidad-completa} con 82 filas (una por tarea) + requisitos no funcionales transversales.", "spec.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
-actualizado: "2026-11-23"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[anexo]] · [[longtable]] · [[trazabilidad]]
@@ -36,5 +36,14 @@ El anexo a4-trazabilidad.tex contiene la matriz completa en longtable:
 - Después: una fila por cada una de las 82 tareas (T1–T82) con Requisito (RF/RJ o —), PBI, Tarea, Descripción, PR.
 - Cierres de hito y releases indicados al final.
 - Compilado y verificado por verificar.py (comprueba que están todos los PBIs P1–P48 y tareas T1–T82).
+
+## Ampliación (2026-11-24, memoria-procesos)
+|
+  Estructura de la tabla (a4-trazabilidad.tex):
+  1. RNF-01 a RNF-12 como transversales (múltiples PBIs/tareas).
+  2. Sprint 1: 32 filas (T1–T32) con sus PBIs y PRs.
+  3. Sprint 2: 50 filas (T33–T82) con sus PBIs y PRs.
+  4. RF-13 (prueba técnica) sin PBI ni tarea (hecho en PR #34).
+  5. Cierres de hito y releases al pie.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

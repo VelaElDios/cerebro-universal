@@ -818,5 +818,18 @@
   "problemas": [
    "La etiqueta 'su club' situada sobre la flecha entre 'users' y 'juego_perfiles' intersecta visualmente con el borde de la tabla 'juego_perfiles'."
   ]
+ },
+ "42990132bea5f434facb9848cd464041": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua entre la caja 'session' y la caja 'users' intersecta con la etiqueta 'userId' colocada justo encima de la línea.",
+   "La etiqueta 'su club' está posicionada entre la caja 'users' y 'juego_perfiles', quedando muy cerca y cruzando la línea de relación horizontal."
+  ]
+ },
+ "4c54816e08f46397bbcbe1408a26fc86": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta de texto 'su mejor partida' está colocada exactamente encima de una línea vertical que sale de la caja 'users' hacia la caja 'juego_records'."
+  ]
  }
 }

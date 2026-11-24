@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T22:26:04+01:00",
+ "generado": "2026-11-24T23:23:11+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -2974,9 +2974,12 @@
     "memoria",
     "redaccion",
     "sprints",
-    "tfg"
+    "tfg",
+    "scrum"
    ],
-   "proyectos": [],
+   "proyectos": [
+    "memoria-procesos"
+   ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md"
   },
@@ -3745,6 +3748,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4.md"
+  },
+  {
+   "id": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "tipo": "decision",
+   "titulo": "Una sola portada oficial y elementos fijos de la plantilla TFG",
+   "temas": [
+    "latex",
+    "plantilla",
+    "portada"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t.md"
   },
   {
    "id": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",
@@ -6033,7 +6051,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 175,
+   "peso": 176,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6446,7 +6464,7 @@
    "id": "tema:scrum",
    "tipo": "tema",
    "titulo": "scrum",
-   "peso": 59,
+   "peso": 60,
    "ruta": "memoria/temas/scrum.md"
   },
   {
@@ -6530,7 +6548,7 @@
    "id": "tema:plantilla",
    "tipo": "tema",
    "titulo": "plantilla",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/plantilla.md"
   },
   {
@@ -7496,7 +7514,7 @@
    "id": "tema:portada",
    "tipo": "tema",
    "titulo": "portada",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/portada.md"
   },
   {
@@ -16699,6 +16717,16 @@
   },
   {
    "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "tema:scrum",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas",
    "a": "decision:alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin",
    "tipo": "enlaza"
   },
@@ -19091,6 +19119,26 @@
    "de": "decision:trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4",
    "a": "dato:trazabilidad-completa-requisito-pbi-tarea-pr-82-tareas",
    "tipo": "enlaza"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:plantilla",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:portada",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "decision:validacion-anti-trampas-en-servidor-con-reloj-propio-y-recha",

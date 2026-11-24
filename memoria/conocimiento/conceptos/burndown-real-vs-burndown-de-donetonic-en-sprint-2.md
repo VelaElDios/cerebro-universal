@@ -4,10 +4,10 @@ titulo: "Burndown real vs. DoneTonic en Sprint 2 (backlog registrado al cerrar e
 temas: ["burndown", "donetonic", "graficas", "metricas", "métricas", "scrum", "sprint", "sprint2"]
 claves: ["burndown", "DoneTonic", "recta", "registro al cierre", "backlog registrado al cerrar"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/documentacion-tecnica.md §4.5, repo:saas/docs/gestion/README.md §Evolución Sprint 2", "repo:saas/docs/gestion/README.md §Evolución del Sprint 2", "repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md §4.4, §4.5"]
+fuentes: ["repo:saas/docs/documentacion-tecnica.md §4.5, repo:saas/docs/gestion/README.md §Evolución Sprint 2", "repo:saas/docs/gestion/README.md §Evolución del Sprint 2", "repo:saas/docs/gestion/README.md", "repo:saas/docs/documentacion-tecnica.md §4.4, §4.5", "repo:saas/docs/sprint-2.md"]
 confianza: "propuesto"
 fecha: "2026-11-16"
-actualizado: "2026-11-19"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[burndown]] · [[donetonic]] · [[graficas]] · [[metricas]] · [[métricas]] · [[scrum]] · [[sprint]] · [[sprint2]]
@@ -49,6 +49,12 @@ DoneTonic Sprint 2: gráficas en recta (29→0 el 29/10). Evolución real (Tabla
 [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[capturas-de-donetonic-disponibles-en-el-repo]] · [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[Fechas y estructura de los dos sprints con PBIs y tareas]] · [[Trazabilidad requisito-PBI-tarea-PR en DoneTonic y GitHub]]
 
 Relacionado: [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]]
+
+## Ampliación (2026-11-24, memoria-procesos)
+|
+  - Desarrollo real: 23/10 (PR #36, 1 PBI), 24/10 (PRs #44–#52, 17 PBIs), 26/10 (PRs #53–#54, 9 PBIs), 27/10 (#55), 29/10 (#56, docs).
+  - DoneTonic: todo registrado el 29/10 → gráficas en recta.
+  - Esto se explica en la retrospectiva del Sprint 2 del Anexo A.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>

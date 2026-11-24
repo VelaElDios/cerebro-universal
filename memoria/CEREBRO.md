@@ -44,8 +44,8 @@ buscar con RAG y, en el futuro, para entrenar una IA local. (este archivo se gen
 
 ## Ahora mismo
 
-674 nodos y 3717 relaciones: 6 📁 proyecto, 299 🔵 tema, 43 ⚠️ leccion, 53 💡 concepto, 130 🧪 receta, 69 ⚖️ decision, 63 📊 dato, 11 📚 fuente · actualizado 2026-11-24 22:26
+675 nodos y 3723 relaciones: 6 📁 proyecto, 299 🔵 tema, 43 ⚠️ leccion, 53 💡 concepto, 130 🧪 receta, 70 ⚖️ decision, 63 📊 dato, 11 📚 fuente · actualizado 2026-11-24 23:23
 
 ## Temas principales
 
-[[latex]] (175) · [[grada-colchonera]] (132) · [[saas]] (107) · [[memoria]] (74) · [[tfg]] (72) · [[scrum]] (59) · [[donetonic]] (52) · [[sprint]] (37) · [[maquetacion]] (28) · [[tikz]] (26) · [[verificacion]] (26) · [[memoria-procesos]] (26) · [[figuras]] (25) · [[pgf-umlsd]] (23) · [[trazabilidad]] (21) · [[metricas]] (19) · [[diagramas]] (14) · [[juego]] (13) · [[fuentes]] (13) · [[lua]] (12) · [[bibliografia]] (12) · [[cerebro]] (12) · [[longtable]] (11) · [[tablas]] (11) · [[sus]] (11) · [[usabilidad]] (11) · [[procesos]] (11) · [[capturas]] (11) · [[sprints]] (11) · [[oauth]] (11)
+[[latex]] (176) · [[grada-colchonera]] (132) · [[saas]] (107) · [[memoria]] (74) · [[tfg]] (72) · [[scrum]] (60) · [[donetonic]] (52) · [[sprint]] (37) · [[maquetacion]] (28) · [[tikz]] (26) · [[verificacion]] (26) · [[memoria-procesos]] (26) · [[figuras]] (25) · [[pgf-umlsd]] (23) · [[trazabilidad]] (21) · [[metricas]] (19) · [[diagramas]] (14) · [[juego]] (13) · [[fuentes]] (13) · [[lua]] (12) · [[bibliografia]] (12) · [[cerebro]] (12) · [[longtable]] (11) · [[tablas]] (11) · [[sus]] (11) · [[usabilidad]] (11) · [[procesos]] (11) · [[capturas]] (11) · [[sprints]] (11) · [[oauth]] (11)
