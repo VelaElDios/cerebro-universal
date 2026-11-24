@@ -16107,3 +16107,12 @@ Claude ha compilado la memoria con estos cambios y la prueba completa sale **ver
 - `{finalizarPartida}` → `{finaliza}` y `\mess{api}{200 recompensas}{fe}` → `\mess{api}{200}{fe}`.
 
 Después, ejecutar `comando_prueba`. Si sale verde, la memoria puede marcarse como terminada. Que Gemini no pueda mirar algún diagrama NO es un pendiente (ver la revisión del 23/11).
+
+
+## Revisión humana (Javier) · 2026-11-24 · YA APLICADO por Claude
+
+Los cambios de la revisión anterior **ya están hechos** en `chapters/04-descripcion.tex` y `chapters/04b-juego.tex`; no hace falta aplicarlos. Además, se ha quitado el `adjustbox` de todos los diagramas (capas, confirmación, login, google, baja, juego-arquitectura, contratar) y se han estrechado confirmación y google para que quepan a tamaño real.
+
+Claude lo ha compilado con el `comando_prueba` completo y sale **verde**: diagramas de secuencia OK, verificar.py OK (35 figuras, 29 tablas), maquetación OK y figuras OK (15 diagramas medidos, sin fallos). 100 páginas.
+
+Siguiente paso: ejecutar `comando_prueba`, hacer la revisión final y, si sigue verde, **marcar la memoria como terminada**. No toquéis los diagramas salvo que la prueba falle.
