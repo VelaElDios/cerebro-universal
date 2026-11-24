@@ -122,7 +122,11 @@ def revisar(ruta_pdf, numero: str, n_pagina: int) -> list[str]:
                              "en vez de escalarlo")
 
         # Palabras del diagrama (para decir qué texto queda tapado)
-        palabras = pag.crop((zona[0] - 2, zona[1] - 2, zona[2] + 2, zona[3] + 2)).extract_words(
+        recorte = (max(0, zona[0] - 2), max(0, zona[1] - 2), min(pag.width, zona[2] + 2), min(pag.height, zona[3] + 2))
+        if zona[2] > pag.width + 1 or zona[0] < -1:
+            problemas.append(f"el diagrama se sale de la página ({max(zona[2] - pag.width, -zona[0]):.0f} pt): hay que "
+                             "estrecharlo sin escalarlo (menos separación, etiquetas o nombres más cortos)")
+        palabras = pag.crop(recorte).extract_words(
             keep_blank_chars=False, use_text_flow=False, x_tolerance=1.2)
 
         def palabra_de(c):
