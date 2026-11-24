@@ -5,7 +5,7 @@ temas: ["donetonic", "grada-colchonera", "scrum", "sprint", "memoria-procesos", 
 claves: ["métricas", "Sprint 1", "Sprint 2", "duración", "PBIs", "tareas", "PRs", "pruebas automáticas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/gestion/README.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-17"
 ---
@@ -28,3 +28,5 @@ Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[backl
 Tabla comparativa al cierre de ambos sprints: Duración: Sprint 1 = 4 semanas; Sprint 2 = 1 semana. PBIs comprometidos/hechos: Sprint 1 = 19/19; Sprint 2 = 29/29. Tareas: Sprint 1 = 32; Sprint 2 = 50. Pull requests fusionados: Sprint 1 = #1–#34 y #37–#41 (uno por tarea y por cierre de hito); Sprint 2 = #36 y #44–#56 (uno por fase y por arreglo). Pruebas automáticas en `main` al cerrar el sprint: Sprint 1 = — (ninguna); Sprint 2 = 276 (cuentas, API, base de datos y juego).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]]: Nota A indica 276 pruebas automáticas en `main` al cerrar el Sprint 2; Nota B reporta 322 pruebas automáticas en el resumen cuantitativo del proyecto.

@@ -20,4 +20,4 @@ Ambos scripts son parte del criterio de «TERMINADO».
 > `scripts/revisar_maquetacion.py` comprueba automáticamente las que se pueden medir. [...] `scripts/revisar_figuras.py` mide cada diagrama con las coordenadas reales del PDF (líneas que pasan por encima de letras, cajas que se pisan, palabras partidas con guion, letras de menos de 7,5 pt) y, si eso pasa, Gemini lo mira además a ojo.
 > — `../../memoria/reglas-tfg.md` (cita sin comprobar)
 
-Relacionado: [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]]
+Relacionado: [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[verificacion-final-revision-pagina-a-pagina-revisar-maquetac]]

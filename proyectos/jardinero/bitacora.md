@@ -82,7 +82,7 @@ Lo que hace el jardinero en cada pasada.
 
 ## 2026-11-22 18:44 · 🌱 Pasada del jardinero
 
-- ✅ Citas comprobadas: 7 notas pasan a verificado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
+- ✅ Citas comprobadas: 7 notas pasan a verificado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
 - 🔀 Notas repetidas fusionadas: 6
   - [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] ← Referencia DoneTonic como herramienta de gestión ágil
   - [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] ← Cifras clave del proyecto verificadas en fuentes
@@ -107,7 +107,7 @@ Lo que hace el jardinero en cada pasada.
   - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Cómo agrupar capturas con subfigure
   - [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] ← Prosa de TFG: nada de «La figura X muestra…» suelto; agrupar capturas en subfigure
   - [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] ← Cifras clave del proyecto contrastadas con fuentes
-  - [[como-agrupar-capturas-relacionadas-con-subfigure]] ← Cómo agrupar capturas relacionadas en subfigure (2 por fila)
+  - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Cómo agrupar capturas relacionadas en subfigure (2 por fila)
   - [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] ← Límite de 6 participantes en diagramas de secuencia
 - ⚠️ Contradicciones encontradas: 6
   - [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] ↔ [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]]: Nota A registra 0 PBIs hechos el 27/10 (PR #55) y 2 PBIs el 29/10 (PR #56 y docs); Nota B, en su sección «Evolución real reconstruida», atribuye a Nota A 1 PBI el 27/10 y 1 PBI el 29/10, y en su propio resumen omite el 27/10 y asigna 2 PBIs al 29/10. Hay cifras distintas para los mismos días (27/10 y 29/10) y discrepancia interna en Nota B.
@@ -117,3 +117,22 @@ Lo que hace el jardinero en cada pasada.
   - Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes ↔ Cómo replantear diagramas TikZ/pgf-umlsd para pasar revisar_maquetacion.py (reglas 16-18): La **Nota A** (Ampliaciones) recomienda envolver diagramas anchos en `\resizebox{\textwidth}{!}{...}` o `adjustbox{max width=...}`. La **Nota B** (Paso 1) prohíbe explícitamente escalar con `\resizebox` (y `\adjustbox{scale=...}`) porque reduce las letras por debajo de 7,5 pt; solo permite `adjustbox{max width=..., max totalheight=...}` al no escalar si el diagrama cabe.
   - Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18) ↔ Diagramas de secuencia con pgf-umlsd (sequencediagram): Nota A dice «participantes a ≤5 (regla 16)»; Nota B dice «Máximo 6 participantes por diagrama». Nota A prohíbe `resizebox` para diagramas anchos («no `resizebox` que encoge letras») y manda usar `adjustbox`; Nota B indica «Diagramas anchos: envolver en `\resizebox{\textwidth}{!}{% ... %}`» y reserva `adjustbox` solo para diagramas altos.
 - 🔗 Enlaces nuevos entre notas parecidas: 164
+
+## 2026-11-24 20:43 · 🌱 Pasada del jardinero
+
+- ✅ Citas comprobadas: 2 notas pasan a verificado: [[estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r]] · [[figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y]]
+- 🔀 Notas repetidas fusionadas: 6
+  - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Cómo agrupar capturas relacionadas con subfigure (2 por fila)
+  - [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] ← Inventario de diagramas obligatorios y su estado
+  - [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] ← Una sola portada oficial y elementos fijos de la plantilla TFG
+  - [[como-se-agrupan-capturas-con-subfigure]] ← Agrupar capturas relacionadas en subfiguras (subcaption)
+  - [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] ← Imágenes repetidas — una sola aparición + \ref en el resto
+  - [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] ← Cada entrega solo lleva lo de su sprint (alcance coherente)
+- ⚠️ Contradicciones encontradas: 6
+  - [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] ↔ [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]]: Nota A (en su advertencia ⚠️ sobre [[fases-del-sprint-2-y-prs-asociados]]) describe 6 fases para el Sprint 2 (Fase 1 a Fase 6). Nota B (en su Ampliación 2026-11-21) afirma explícitamente que el Sprint 2 tuvo **7 fases**.
+  - [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] ↔ [[fechas-pbis-y-tareas-de-los-dos-sprints]]: La Nota A afirma que el Hito 4 tiene **6 tareas (T21–T26)** y que se marcaron hechas al cerrar el Sprint 1; la Nota B detalla que el Hito 4 abarca **12 tareas (T21–T32)** dentro del Sprint 1. Además, el enlace de la Nota A (`estructura-sprint-2-6-fases...`) indica **6 fases** en el Sprint 2, mientras que la ampliación de la Nota B lista explícitamente **7 fases** (Base del juego, Fase 2·Club, Fase 3·Ultras, Fase 4·Mundo, Fase 5·Rarezas, Fase 6·Logros y sonido, Calidad).
+  - [[metricas-comparativas-sprint-1-vs-sprint-2]] ↔ [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]]: Nota A indica 276 pruebas automáticas en `main` al cerrar el Sprint 2; Nota B reporta 322 pruebas automáticas en el resumen cuantitativo del proyecto.
+  - [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]] ↔ [[cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por]]: La Nota A sitúa el P19 (Cloud Run) en el **Hito 4** (último hito del sprint, P15–P19), implicando entrega al final (cierre 27/10). La Nota B afirma en su cronología que la **«primera entrega 12/10/2026» ya incluía P19 junto a Hitos 1-3 y P18**, lo que adelanta su finalización dos semanas y lo desvincula del Hito 4.
+  - [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]] ↔ [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]]: Nota A afirma que el 27/10 (PR#55) se completó 1 PBI y el 29/10 (PR#56) 1 PBI; Nota B (tabla principal) dice que el 27/10 (PR#55) fue 0 PBIs (solo documentación) y el 29/10 (PR#56+docs) 2 PBIs, y su ampliación agrupa PR#55 y PR#56 el 29/10 con 2 PBIs, omitiendo el 27/10.
+  - [[prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar]] ↔ [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]]: Nota B señala explícitamente que la carga del paquete `subcaption` está en `include/extra.tex` «según Nota A» y en `include/configuracion.tex` «según Nota B», contradiciéndose sobre la ubicación real. Además, Nota B describe dos estilos de referencia distintos (Opción A con sufijo de letra y Opción B con `subref` + «de la Figura»), presentándolos como provenientes de cada nota respectivamente.
+- 🔗 Enlaces nuevos entre notas parecidas: 138

@@ -20,6 +20,6 @@ problema: Necesidad de tener a mano los números verificados para contrastar en 
 solucion: Usar estas cifras exactas en todas las tablas y texto; no redondear ni inventar.
 > — `repo:saas/docs/sprint-2.md` (cita sin comprobar)
 
-Relacionado: [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]] · [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]]
+Relacionado: [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d]] · [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

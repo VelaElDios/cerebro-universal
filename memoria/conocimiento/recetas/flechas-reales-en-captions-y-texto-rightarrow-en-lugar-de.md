@@ -19,7 +19,7 @@ Temas: [[latex]] · [[memoria]] · [[tfg]]
 > Las flechas de los captions y del texto son flechas de verdad (`$\rightarrow$`), nunca `->`.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]]
+Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[flechas-reales-en-captions-y-texto-rightarrow-nunca]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]]
 
 ## Ampliación (2026-11-24, memoria-procesos)
 En TODO el documento (captions, texto, tablas, diagramas TikZ/pgf-umlsd): usar `$\rightarrow$` (modo matemático) para flechas simples. No usar `->` (dos caracteres ASCII) ni `-->` ni variantes. Aplicable también a flechas en diagramas de secuencia si se escriben etiquetas en LaTeX puro. Ejemplo: «RF-01 $\rightarrow$ P8 $\rightarrow$ T11,T12 $\rightarrow$ PR #13,#14».

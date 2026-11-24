@@ -25,4 +25,6 @@ Temas: [[diagramas]] · [[latex]] · [[tikz]]
 > — `chapters/04-descripcion.tex`
 
 
+Relacionado: [[dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma]] · [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber]] · [[como-evitar-overfull-hbox-en-rutas-y-diagramas]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

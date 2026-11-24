@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «métrica» (este archivo 
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
+- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]] · ⚠️ propuesto
 
 ## Temas relacionados
 

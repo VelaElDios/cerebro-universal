@@ -128,7 +128,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «grada-colchonera» (este 
 - 📊 [[memoria/conocimiento/datos/lista-de-29-logros-con-datos-historicos-verificados-y-10-equ|Lista de 29 logros con datos históricos verificados y 10 equipaciones desbloqueables]]
 - 📊 [[memoria/conocimiento/datos/metadatos-del-proyecto-la-grada-colchonera|Metadatos del proyecto La Grada Colchonera]]
 - 📊 [[memoria/conocimiento/datos/migracion-004-y-endpoint-put-api-juego-identidad-para-mote-y|Migración 004 y endpoint PUT /api/juego/identidad para mote y avatar]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
+- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-de-calidad-80-tests-automatizados-con-node-test-com|Métricas de calidad: 80 tests automatizados con node:test, comando único npm test]]
 - 📊 [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/prs-de-cierre-de-hito-y-sprint-en-repositorio|PRs de cierre de hito y sprint en repositorio]]

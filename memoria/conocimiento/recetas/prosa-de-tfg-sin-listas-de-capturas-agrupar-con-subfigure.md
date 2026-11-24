@@ -88,7 +88,7 @@ Escribir párrafos narrativos que expliquen la interacción del usuario con la a
 
 ## Ampliación (2026-11-21, memoria-procesos)
 En la memoria final, las capturas de la aplicación (`app/`, `hito4/`, `juego/`) y de DoneTonic se agrupan en figuras con `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`) con caption general y subcaptions. El texto explica el flujo de uso citando las figuras dentro de la prosa, no como frases sueltas. **Cada imagen aparece una sola vez en el sitio donde más sentido tiene; en el resto se cita con `\ref`**.  
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]]
+Relacionado: [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
@@ -110,7 +110,7 @@ Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 ---
 
 Relacionado:  
-[[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[agrupar-capturas-con-subfigure]]
+[[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[agrupar-capturas-con-subfigure]]
 
 > Prosa de TFG, no listas de capturas: nada de una frase suelta «La figura X muestra…» por cada imagen. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así. Las que van juntas se agrupan con `subfigure`.
 > — `memoria/reglas-tfg.md`

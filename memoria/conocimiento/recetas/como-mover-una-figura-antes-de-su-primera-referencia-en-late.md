@@ -17,4 +17,6 @@ Cuando una figura se referencia antes de su definición y flota después, LaTeX 
 > La separación en tres bloques es la que se ve en la Figura~\ref{fig:juego-arquitectura}: la simulación determinista...
 > — `chapters/04b-juego.tex` (cita sin comprobar)
 
+Relacionado: [[fijar-colocacion-de-figura-referenciada-con-floatbarrier]] · [[como-fijar-colocacion-de-figura-referenciada-pero-no-apareci]] · [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

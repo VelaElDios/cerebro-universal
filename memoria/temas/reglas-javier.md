@@ -14,7 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «reglas-javier» (este arc
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final: usar \\* en las últimas 2-3 filas antes de \bottomrule (regla 7 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]]
 
@@ -28,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «reglas-javier» (este arc
 
 ## Temas relacionados
 
-[[latex]] · [[maquetacion]] · [[memoria]] · [[tfg]] · [[memoria-procesos]] · [[verificacion]] · [[revisar-figuras]] · [[revision]] · [[scrum]] · [[alcance]] · [[sprint]] · [[sprints]]
+[[latex]] · [[maquetacion]] · [[memoria]] · [[tfg]] · [[memoria-procesos]] · [[verificacion]] · [[revisar-figuras]] · [[revision]] · [[alcance]] · [[entrega]] · [[proceso]] · [[scrum]]

@@ -131,6 +131,6 @@ Temas: [[fuentes]] · [[métricas]] · [[verificación]] · [[memoria]] · [[tra
 
 Fusionada con: Cifras clave del proyecto contrastadas con fuentes
 
-Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]] · [[cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2]]
+Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]] · [[cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

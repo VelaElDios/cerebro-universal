@@ -111,6 +111,8 @@ Envolver en entorno `adjustbox`:
 - [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]]
 - [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]]
 
+Relacionado: [[figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > Regla 8: Ninguna página con una sola imagen: capturas como mucho a `height=0.42\textheight`; diagramas grandes con `max totalheight`; figuras `[htbp]` con parámetros de flotantes relajados.

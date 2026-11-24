@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «elementos-fijos» (este a
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t|Una sola portada oficial y elementos fijos de la plantilla TFG]]
+- ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 
 ## Temas relacionados
 
-[[plantilla]] · [[portada]] · [[tfg]] · [[latex]] · [[memoria]]
+[[latex]] · [[maquetacion]] · [[memoria]] · [[memoria-procesos]] · [[plantilla]] · [[plantilla-tfg]] · [[portada]] · [[tfg]]

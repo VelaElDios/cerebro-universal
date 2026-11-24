@@ -17,6 +17,6 @@ Los warnings "Returning node center instead of a point on node border" en pgf-um
 > Package pgf Warning: Returning node center instead of a point on node border. Did you specify a point identical to the center of node ``mess from''?
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
-Relacionado: Diagramas de secuencia con pgf-umlsd · Diagramas de secuencia con pgf-umlsd (sequencediagram) · Diagramas de secuencia con pgf-umlsd (sequencediagram) · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]] · Diagramas de secuencia con pgf-umlsd: sintaxis válida y errores comunes
+Relacionado: Diagramas de secuencia con pgf-umlsd · Diagramas de secuencia con pgf-umlsd (sequencediagram) · Diagramas de secuencia con pgf-umlsd (sequencediagram) · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]] · Diagramas de secuencia con pgf-umlsd: sintaxis válida y errores comunes · [[como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

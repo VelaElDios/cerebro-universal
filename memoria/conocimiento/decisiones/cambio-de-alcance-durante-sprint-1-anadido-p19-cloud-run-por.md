@@ -28,3 +28,5 @@ Relacionado: [[cambio-de-alcance-de-red-social-a-juego-survivor-justificaci]] ·
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]]: La Nota A sitúa el despliegue en Cloud Run en el **Cierre del sprint (24/10/2026)**, mientras que la Nota B dice que la "primera entrega 12/10/2026 (Hitos 1-3, P18, P19)" ya incluía P19 (Cloud Run) y que en la tabla del Sprint 1 P19 está en el **Hito 4 (hasta 23/10/2026)**. Tres hitos/fechas distintas para el mismo PBI.
+
+> ⚠️ Posible contradicción con [[fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas]]: La Nota A sitúa el P19 (Cloud Run) en el **Hito 4** (último hito del sprint, P15–P19), implicando entrega al final (cierre 27/10). La Nota B afirma en su cronología que la **«primera entrega 12/10/2026» ya incluía P19 junto a Hitos 1-3 y P18**, lo que adelanta su finalización dos semanas y lo desvincula del Hito 4.

@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figura» (este archivo se
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]]
+- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Agrupar capturas relacionadas en subfiguras con `subcaption` (LaTeX)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[subcaption]] · [[subfigure]] · [[figuras]]
+[[figuras]] · [[latex]] · [[maquetación]] · [[subcaption]] · [[subfigure]]

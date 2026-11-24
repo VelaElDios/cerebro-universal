@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "figuras"
-notas: 28
+notas: 25
 ---
 # figuras
 
@@ -10,16 +10,14 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-con-subfigure|Agrupar capturas con subfigure]]
-- 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-subcaption|Agrupar capturas relacionadas en subfiguras (subcaption)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Agrupar capturas relacionadas en subfiguras con `subcaption` (LaTeX)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas con subfigure (dos por fila)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure|Cómo agrupar capturas relacionadas con subfigure (2 por fila)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-exportar-diagramas-mermaid-para-la-memoria-latex|Cómo exportar diagramas Mermaid para la memoria LaTeX]]
 - 🧪 [[memoria/conocimiento/recetas/como-mover-una-figura-antes-de-su-primera-referencia-en-late|Cómo mover una figura antes de su primera referencia en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
-- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]]
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Evitar páginas con una sola imagen (Regla 8): capturas y diagramas en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
@@ -32,8 +30,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 - ⚖️ [[memoria/conocimiento/decisiones/cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s|Cadenas "La figura X muestra..." prohibidas — prosa integrada con subfigure]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura|Figuras: ninguna página con una sola imagen (límites de altura y flotantes relajados)]]
-- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-ref-en-el-resto|Imágenes repetidas — una sola aparición + \ref en el resto]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto|Imágenes repetidas: una sola aparición y \ref en el resto]]
+- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto|Imágenes repetidas: una sola aparición y \ref en el resto]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]]
@@ -52,4 +49,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[maquetacion]] · [[memoria]] · [[capturas]] · [[subcaption]] · [[maquetación]] · [[redaccion]] · [[memoria-procesos]] · [[subfigure]] · [[reglas-tfg]] · [[grada-colchonera]]
+[[latex]] · [[tfg]] · [[maquetacion]] · [[memoria]] · [[capturas]] · [[maquetación]] · [[subcaption]] · [[redaccion]] · [[memoria-procesos]] · [[subfigure]] · [[reglas-tfg]] · [[grada-colchonera]]

@@ -25,7 +25,7 @@ Total en PDF: 7 figuras distintas → cumple mínimo 5.
 8 capturas disponibles en `figs/capturas/donetonic/`. El test `verificar.py` exige al menos 5 distintas en el PDF. Distribución canónica tras paso 2: Capítulo 3 (propuesta): fig:donetonic-tablero (01-tablero-sprint.png), fig:donetonic-backlog (03-backlog.png), fig:donetonic-graficas-s1 (02-graficas-sprint.png). Anexo A1 (desarrollo): fig:donetonic-s2-graficas (06-graficas-sprint2.png), fig:donetonic-s2-tablero (04-tablero-sprint2.png), fig:donetonic-pbi-detalle (08-pbi-detalle.png), fig:donetonic-s2-tareas (05-sprint2-tareas-hechas.png). Total en PDF: 7 figuras distintas → cumple mínimo 5.
 relacionado: Inventario de capturas de pantalla con trazabilidad a requisitos y fechas
 
-Relacionado: [[capturas-de-donetonic-disponibles-en-el-repo]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]]
+Relacionado: [[capturas-de-donetonic-disponibles-en-el-repo]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] · [[capturas-disponibles-por-carpeta-minimos-requeridos]] · [[capturas-de-donetonic-disponibles-en-el-repo-8-imagenes]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

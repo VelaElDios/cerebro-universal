@@ -35,7 +35,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos|Cifras clave del proyecto contrastadas con fuentes (35 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (fusionada)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/numeros-clave-del-proyecto-contrastados-con-fuentes|Números clave del proyecto contrastados con fuentes]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -47,4 +47,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[memoria]] · [[metricas]] · [[trazabilidad]] · [[tfg]] · [[numeros]] · [[memoria-procesos]] · [[test]] · [[sprints]] · [[proyecto]] · [[datos]]
+[[latex]] · [[memoria]] · [[fuentes]] · [[metricas]] · [[trazabilidad]] · [[tfg]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[sprints]] · [[proyecto]] · [[datos]]

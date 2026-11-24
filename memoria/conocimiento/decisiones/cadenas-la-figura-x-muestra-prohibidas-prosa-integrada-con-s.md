@@ -35,6 +35,6 @@ El panel de administración (Figura~\ref{fig:app-admin-full}) muestra contadores
 > Prosa de TFG, no listas de capturas: nada de una frase suelta «La figura X muestra…» por cada imagen. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así. Las que van juntas se agrupan con subfigure.
 > — `memoria/reglas-tfg.md regla 13 y spec versión 4` (cita sin comprobar)
 
-Relacionado: [[prosa-de-tfg-vs-lista-de-capturas]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]]
+Relacionado: [[prosa-de-tfg-vs-lista-de-capturas]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

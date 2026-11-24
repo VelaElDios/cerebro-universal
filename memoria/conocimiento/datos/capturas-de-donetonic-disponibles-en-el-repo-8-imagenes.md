@@ -28,4 +28,6 @@ Temas: [[capturas]] · [[donetonic]] · [[evidencias]] · [[memoria]]
   - 07-graficas-backlog.png: backlog burndown/burnup dos sprints → anexo A
   - 08-pbi-detalle.png: detalle PBI P44 con historia, criterios, tareas → anexo A
 
+Relacionado: [[capturas-de-donetonic-disponibles-en-el-repo]] · [[inventario-de-capturas-donetonic-requeridas-y-disponibles]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

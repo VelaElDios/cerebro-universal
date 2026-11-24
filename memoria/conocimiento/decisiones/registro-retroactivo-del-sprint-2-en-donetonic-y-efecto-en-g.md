@@ -20,6 +20,6 @@ Lección: Registrar el backlog en la herramienta de gestión **antes o durante**
 > El juego se programó del 23 al 26/10, antes de que el profesor fijara que el Sprint 2 sería la lógica del juego. El backlog del Sprint 2 se registró en DoneTonic al cerrar el sprint (29/10), así que DoneTonic marca todos los PBIs como hechos ese día y sus gráficas salen como una recta. La evolución real, sacada de las fechas de los PRs, está en la [tabla de evolución del Sprint 2](#evolución-del-sprint-2).
 > — `repo:saas/docs/gestion/README.md`
 
-Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]]
+Relacionado: [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[sprint-2-recoge-juego-ya-hecho-6-fases-preexistentes-como-ba]] · [[datos-del-burndown-sprint-2-pbis-pendientes-por-dia]] · [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[burndown-real-vs-donetonic-en-sprint-2]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

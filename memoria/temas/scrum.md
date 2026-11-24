@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "scrum"
-notas: 60
+notas: 59
 ---
 # scrum
 
@@ -26,9 +26,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta|Burndown real del Sprint 2 vs gráficas DoneTonic en recta]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre|Cambio de alcance en Sprint 1: se añade P19 Cloud Run por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/camara-3-4-con-inercia-inclinacion-y-feedback-visual-destell|Cámara 3/4 con inercia, inclinación y feedback visual (destellos/aplastado)]]
 - ⚖️ [[memoria/conocimiento/decisiones/entornos-por-finales-cambio-cada-5-min-con-luz-cesped-aficio|Entornos por finales: cambio cada 5 min con luz, césped, afición, rivales y kits]]
@@ -71,7 +70,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-tareas-y-estructura-de-los-dos-sprints|Fechas, PBIs, tareas y estructura de los dos sprints]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/migracion-004-y-endpoint-put-api-juego-identidad-para-mote-y|Migración 004 y endpoint PUT /api/juego/identidad para mote y avatar]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
+- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/prs-de-cierre-de-hito-y-sprint-en-repositorio|PRs de cierre de hito y sprint en repositorio]]
 - 📊 [[memoria/conocimiento/datos/referencia-donetonic-como-herramienta-de-gestion-agil-del-pr|Referencia DoneTonic como herramienta de gestión ágil del proyecto]]
 - 📊 [[memoria/conocimiento/datos/trazabilidad-completa-sprint-1-pbis-tareas-ramas-y-prs|Trazabilidad completa Sprint 1: PBIs, tareas, ramas y PRs]]
@@ -84,4 +83,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «scrum» (este archivo se 
 
 ## Temas relacionados
 
-[[donetonic]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[metricas]] · [[memoria]] · [[trazabilidad]] · [[tfg]] · [[sprints]] · [[git]] · [[pbi]]
+[[donetonic]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[metricas]] · [[trazabilidad]] · [[memoria]] · [[git]] · [[pbi]] · [[tarea]] · [[tfg]]

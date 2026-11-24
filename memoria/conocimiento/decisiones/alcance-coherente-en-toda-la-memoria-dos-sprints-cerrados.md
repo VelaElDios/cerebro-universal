@@ -20,6 +20,6 @@ problema: La memoria final debe reflejar los dos sprints completados, no promete
 solucion: Verificar que Resumen, Abstract, Introducción (§Alcance), Capítulo 4 (La aplicación cubre SaaS), Capítulo 4b (juego Sprint 2), Capítulo 5 (métricas de ambos), Capítulo 6 (objetivos de ambos), Anexo desarrollo (dos sprints), Anexo trazabilidad (82 tareas), Anexo uso IA (ambos sprints), Anexo material (enlaces de ambos) son coherentes con alcance final.
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]]
+Relacionado: [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

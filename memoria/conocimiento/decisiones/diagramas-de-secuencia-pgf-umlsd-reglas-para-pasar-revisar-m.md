@@ -26,4 +26,6 @@ Para que los diagramas de secuencia pasen la revisión visual (reglas 16-18 de J
 > Las flechas van de una caja a la siguiente (A → B, B → C), nunca de A a C pasando por encima de B; si hay que rodear, con codos (|-, -|) y separando bien las cajas (node distance suficiente).
 > — `memoria/reglas-tfg.md reglas 16-18` (cita sin comprobar)
 
+Relacionado: [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[diagramas-de-secuencia-legibles-max-6-participantes-flechas]] · [[como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

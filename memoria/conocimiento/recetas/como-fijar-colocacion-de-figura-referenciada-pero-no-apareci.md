@@ -44,4 +44,6 @@ Temas: [[floatbarrier]] · [[flotantes]] · [[latex]] · [[placeins]]
   **Verificación:** Compilar y buscar en el log «Figure X» para ver en qué página cae, y comprobar que la página de la referencia tiene la figura visible.
 relacionado: Figuras flotando dentro de la bibliografía: \FloatBarrier antes, Reglas de maquetación de Javier (resumen accionable)
 
+Relacionado: [[fijar-colocacion-de-figura-referenciada-con-floatbarrier]] · [[figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante]] · [[como-mover-una-figura-antes-de-su-primera-referencia-en-late]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

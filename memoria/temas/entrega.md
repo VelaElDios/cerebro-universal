@@ -9,9 +9,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «entrega» (este archivo s
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[tfg]] · [[alcance]] · [[sprint]] · [[memoria-procesos]] · [[scrum]] · [[proceso]] · [[sprints]]
+[[latex]] · [[memoria]] · [[tfg]] · [[alcance]] · [[memoria-procesos]] · [[proceso]] · [[reglas-javier]] · [[scrum]] · [[sprint]] · [[sprints]]

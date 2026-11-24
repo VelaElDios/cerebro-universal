@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "subcaption"
-notas: 10
+notas: 8
 ---
 # subcaption
 
@@ -9,14 +9,12 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subcaption» (este archiv
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-subcaption|Agrupar capturas relacionadas en subfiguras (subcaption)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Agrupar capturas relacionadas en subfiguras con `subcaption` (LaTeX)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr|Agrupar capturas relacionadas en subfiguras con prosa integrada]]
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v|Cada \label de subfigura necesita su propio \ref en el texto (verificar.py lo exige)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas con subfigure (dos por fila)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure|Cómo agrupar capturas relacionadas con subfigure (2 por fila)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
-- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]]
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
 
@@ -28,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subcaption» (este archiv
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[maquetacion]] · [[subfigure]] · [[verificar]] · [[capturas]] · [[redaccion]] · [[maquetación]] · [[tfg]] · [[refs]] · [[memoria-procesos]] · [[figura]]
+[[latex]] · [[figuras]] · [[subfigure]] · [[maquetacion]] · [[verificar]] · [[capturas]] · [[redaccion]] · [[tfg]] · [[refs]] · [[memoria-procesos]] · [[figura]] · [[maquetación]]

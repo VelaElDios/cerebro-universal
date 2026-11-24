@@ -5,9 +5,9 @@ temas: ["latex", "memoria", "tfg"]
 claves: ["height", "textheight", "totalheight", "htbp", "subfigure", "ref"]
 proyectos: []
 fuentes: ["../../memoria/reglas-tfg.md"]
-confianza: "propuesto"
+confianza: "verificado"
 fecha: "2026-11-23"
-actualizado: "2026-11-23"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[tfg]]
@@ -19,7 +19,7 @@ Temas: [[latex]] · [[memoria]] · [[tfg]]
 - Si la misma imagen sirve en otro sitio: `\ref{fig:etiqueta}` en lugar de repetirla.
 - Evitar páginas con una sola sección/línea: fusionar secciones cortas o convertirlas en lista.
 
-> Ninguna página con una sola imagen: capturas como mucho a `height=0.42\textheight`; diagramas grandes con `max totalheight`; figuras `[htbp]` con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
-> — `../../memoria/reglas-tfg.md` (cita sin comprobar)
+> **Ninguna página con una sola imagen:** - capturas como mucho a `height=0.42\textheight`; - diagramas grandes con `max totalheight`; - figuras `[htbp]` con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
+> — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]]
+Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] · [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]]

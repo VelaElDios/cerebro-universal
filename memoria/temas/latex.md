@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 181
+notas: 175
 ---
 # latex
 
@@ -17,7 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/directlua-no-funciona-dentro-del-texto-de-un-node-usar-macro|\directlua no funciona dentro del texto de un \node: usar macros]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/enquote-necesita-el-paquete-csquotes|\enquote necesita el paquete csquotes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-con-subfigure|Agrupar capturas con subfigure]]
-- 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-subcaption|Agrupar capturas relacionadas en subfiguras (subcaption)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Agrupar capturas relacionadas en subfiguras con `subcaption` (LaTeX)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr|Agrupar capturas relacionadas en subfiguras con prosa integrada]]
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
@@ -31,9 +31,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/corregir-overfull-hbox-en-longtable-con-urls-largas|Corregir overfull hbox en longtable con URLs largas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-actualizar-referencias-a-documentacion-tras-reorganizac|Cómo actualizar referencias a documentación tras reorganización del bundle]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas con subfigure (dos por fila)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure|Cómo agrupar capturas relacionadas con subfigure (2 por fila)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]]
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que|Cómo corregir diagramas de entidad-relación en TikZ para que no crucen cajas]] · ⚠️ propuesto
@@ -57,7 +56,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-mover-una-figura-antes-de-su-primera-referencia-en-late|Cómo mover una figura antes de su primera referencia en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar|Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Cómo se agrupan capturas con subfigure]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-calcula-la-puntuacion-sus-formula-y-ejemplo|Cómo se calcula la puntuación SUS (fórmula y ejemplo)]]
 - 🧪 [[memoria/conocimiento/recetas/como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm|Cómo se pone la portada oficial del TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]] · ⚠️ propuesto
@@ -72,7 +70,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/exportar-resultados-json-obligatorio-para-verificacion-autom|Exportar resultados.json obligatorio para verificación automática]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante|Figuras flotando dentro de la bibliografía: \FloatBarrier antes]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
-- 🧪 [[memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y|Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y|Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados]]
 - 🧪 [[memoria/conocimiento/recetas/fijar-colocacion-de-figura-referenciada-con-floatbarrier|Fijar colocación de figura referenciada con FloatBarrier]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de|Flechas reales en captions y texto: $\rightarrow$ en lugar de ->]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-lon|Formato de tablas: alineación superior, ancho controlado y longtable sin filas huérfanas]]
@@ -101,12 +99,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l|Bibliografía BibTeX apalike: autores corporativos con doble llave y year en todas las entradas]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-apalike-y-referencias-obligatorias|Bibliografía BibTeX con apalike y referencias obligatorias]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-con-autores-corporativos-en-doble-llave|Bibliografía BibTeX con autores corporativos en doble llave y year obligatorio]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s|Cadenas "La figura X muestra..." prohibidas — prosa integrada con subfigure]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te|Cita obligatoria a cada figura (incluidas subfiguras) en el texto]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
@@ -120,8 +117,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/fase-2-defensa-sus-tex-en-beamer-con-conclusiones-generadas|Fase 2: defensa-sus.tex en Beamer con conclusiones generadas dinámicamente]]
 - ⚖️ [[memoria/conocimiento/decisiones/figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura|Figuras: ninguna página con una sola imagen (límites de altura y flotantes relajados)]]
 - ⚖️ [[memoria/conocimiento/decisiones/flechas-reales-en-captions-y-texto-rightarrow-nunca|Flechas reales en captions y texto ($\rightarrow$), nunca ->]]
-- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-ref-en-el-resto|Imágenes repetidas — una sola aparición + \ref en el resto]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto|Imágenes repetidas: una sola aparición y \ref en el resto]]
+- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto|Imágenes repetidas: una sola aparición y \ref en el resto]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme|La memoria TFG se entrega en PDF con marcadores, preferiblemente LaTeX]]
 - ⚖️ [[memoria/conocimiento/decisiones/longtable-sin-fila-huerfana-al-final-regla-7-javier|Longtable sin fila huérfana al final: usar \\* en las últimas 2-3 filas antes de \bottomrule (regla 7 Javier)]]
 - ⚖️ [[memoria/conocimiento/decisiones/los-diagramas-nunca-se-escalan-para-que-quepan|Los diagramas nunca se escalan para que quepan]]
@@ -134,20 +130,19 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/portada-unica-oficial-del-tfg-elements-portada-tex|Portada única oficial del TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier|Prosa de TFG en lugar de listas de capturas (regla 13 Javier)]]
-- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar|Prosa de TFG obligatoria: nada de listas de capturas, agrupar con subfigure]]
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar|Prosa de TFG obligatoria: nada de listas de capturas, agrupar con subfigure]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/referencias-rotas-ref-y-ref-causa-y-solucion|Referencias rotas `\ref{.}` y `\ref{)}` — causa y solución]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1|Rutas de documentación tras reorganización del bundle (2026-11-19)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]]
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t|Una sola portada oficial y elementos fijos de la plantilla TFG]]
 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/arquitectura-de-calculos-en-lualatex-para-plantilla-sus|Arquitectura de cálculos en LuaLaTeX para plantilla SUS]]
 - 💡 [[memoria/conocimiento/conceptos/cuatro-graficas-sus-reutilizables-donut-barra-rango-velocime|Cuatro gráficas SUS reutilizables (donut, barra-rango, velocímetro, barras-participante)]] · ⚠️ propuesto
-- 💡 [[memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r|Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r|Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]]
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 - 💡 [[memoria/conocimiento/conceptos/numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp|Números en diagramas de secuencia deben coincidir con la especificación]] · ⚠️ propuesto
@@ -160,7 +155,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 📊 [[memoria/conocimiento/datos/criterios-de-terminado-de-la-plantilla-sus-checklist-de-acep|Criterios de "terminado" de la plantilla SUS (checklist de aceptación)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/gemini-404-en-revisar-figuras-no-bloquea-pero-la-revision-a|Gemini 404 en revisar_figuras no bloquea, pero la revisión a ojo del PDF sigue siendo obligatoria]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
-- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/scripts-de-verificacion-automatica-en-el-repo|Scripts de verificación automática en el repo]] · ⚠️ propuesto
 
@@ -211,4 +205,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[maquetacion]] · [[figuras]] · [[tikz]] · [[pgf-umlsd]] · [[diagramas]] · [[verificacion]] · [[memoria-procesos]] · [[lua]] · [[tablas]] · [[sus]]
+[[tfg]] · [[memoria]] · [[maquetacion]] · [[tikz]] · [[figuras]] · [[pgf-umlsd]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[memoria-procesos]] · [[tablas]] · [[sus]]

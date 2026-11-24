@@ -52,4 +52,6 @@ problema: Aumentar la separación horizontal con `\newinst[5]` o más para dar e
 solucion: (1) Reducir participantes a 4-5 máximos agrupando actores (p.ej. Frontend+API → «Frontend», TokenSigner+Mailer internos a Servicio). (2) Usar `\newinst[3]` o `[4]` para separación ajustada. (3) Acortar etiquetas: sin acentos, sin paréntesis en `\mess`, sin comandos LaTeX, usar `\n` para saltos de línea. (4) Declarar todos los participantes antes de usarlos. (5) Usar `sdblock` para alternativas, no `alt` como entorno. (6) Si >6 participantes, dividir en dos diagramas. (7) Verificar con `revisar_umlsd.py` antes de compilar.
 > — `memoria/reglas-tfg.md (reglas 16-18) y revisar_maquetacion.py` (cita sin comprobar)
 
+Relacionado: [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]] · [[diagramas-de-secuencia-legibles-max-6-participantes-flechas]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -25,4 +25,4 @@ Temas: [[latex]] · [[memoria]] · [[pgf-umlsd]] · [[tfg]]
 > Diagramas de secuencia: como mucho 6 participantes. Si hay más, se agrupan (por ejemplo, «Vista + api.js» → «Frontend») o se parte en dos diagramas (lo que pasa en el navegador / lo que pasa en el servidor). `\resizebox` solo para encoger un poco, no para meter 9 columnas en el ancho de la página.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]]
+Relacionado: Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]]

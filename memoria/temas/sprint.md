@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sprint"
-notas: 38
+notas: 37
 ---
 # sprint
 
@@ -15,9 +15,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint» (este archivo se
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta|Burndown real del Sprint 2 vs gráficas DoneTonic en recta]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por|Cambio de alcance durante Sprint 1: añadido P19 (Cloud Run) por créditos Google Cloud]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-en-sprint-1-se-anade-p19-cloud-run-por-cre|Cambio de alcance en Sprint 1: se añade P19 Cloud Run por créditos Google Cloud]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-de-red-social-a-juego-survivor-justificaci|Cambio de alcance: de red social a juego survivor (justificación)]]
@@ -46,7 +45,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint» (este archivo se
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas|Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-tareas-y-estructura-de-los-dos-sprints|Fechas, PBIs, tareas y estructura de los dos sprints]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-pbis-y-tareas-de-los-dos-sprints|Fechas, PBIs, tareas y estructura detallada de los dos sprints (Sprint 1 y Sprint 2)]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
+- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/metricas-del-proyecto-codigo-pruebas-endpoints-y-contenido-d|Métricas del proyecto: código, pruebas, endpoints y contenido del juego]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/prs-de-cierre-de-hito-y-sprint-en-repositorio|PRs de cierre de hito y sprint en repositorio]]
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil|Requisitos funcionales del juego (Sprint 2) — 20 RJ con trazabilidad]] · ⚠️ propuesto
@@ -59,4 +58,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint» (este archivo se
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[scrum]] · [[donetonic]] · [[memoria-procesos]] · [[alcance]] · [[trazabilidad]] · [[metricas]] · [[pbi]] · [[tarea]] · [[sprints]] · [[requisitos]]
+[[grada-colchonera]] · [[saas]] · [[scrum]] · [[donetonic]] · [[trazabilidad]] · [[memoria-procesos]] · [[metricas]] · [[alcance]] · [[pbi]] · [[tarea]] · [[requisitos]] · [[sprints]]

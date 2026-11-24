@@ -20,3 +20,5 @@ Resumen cuantitativo del proyecto: Sprint 1: 19 PBIs, 32 tareas; Sprint 2: 29 PB
 Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[estado-de-completitud-de-sprints-y-trazabilidad]] · [[metricas-comparativas-sprint-1-vs-sprint-2]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[numeros-clave-del-proyecto-verificados-en-fuentes]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[cifras-clave-del-proyecto-la-grada-colchonera-sprints-1-y-2]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[metricas-comparativas-sprint-1-vs-sprint-2]]: Nota A indica 276 pruebas automáticas en `main` al cerrar el Sprint 2; Nota B reporta 322 pruebas automáticas en el resumen cuantitativo del proyecto.

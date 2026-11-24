@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «plantilla-tfg» (este arc
 
 ## Temas relacionados
 
-[[latex]] · [[maquetacion]] · [[memoria]] · [[memoria-procesos]] · [[plantilla]] · [[portada]] · [[tfg]]
+[[elementos-fijos]] · [[latex]] · [[maquetacion]] · [[memoria]] · [[memoria-procesos]] · [[plantilla]] · [[portada]] · [[tfg]]

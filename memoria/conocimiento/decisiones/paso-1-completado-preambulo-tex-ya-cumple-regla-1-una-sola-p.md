@@ -17,6 +17,6 @@ El constructor verificó que `elements/preambulo.tex` no contiene el bloque de �
 > El archivo solo incluye la declaración de autoría, el Resumen y el Abstract, tal como exige la plantilla oficial.
 > — `memoria/elements/preambulo.tex` (cita sin comprobar)
 
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]]
+Relacionado: [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

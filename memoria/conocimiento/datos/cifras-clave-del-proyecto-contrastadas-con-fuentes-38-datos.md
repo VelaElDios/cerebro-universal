@@ -55,6 +55,6 @@ Temas: [[metricas]] · [[requisitos]] · [[sprints]] · [[trazabilidad]]
 > PBIs y tareas del Sprint 1: 19 / 32 ... PBIs y tareas del Sprint 2: 29 / 50 ... Pruebas automáticas totales: 276 ... Endpoints expuestos en la API: 23 ... Migraciones SQL aplicadas: 5 ... Contenido jugable: 36 jugadores ... 29 logros
 > — `repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md, repo:saas/docs/procesos.md` (cita sin comprobar)
 
-Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]]
+Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[numeros-clave-del-proyecto-contrastados-con-fuentes]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

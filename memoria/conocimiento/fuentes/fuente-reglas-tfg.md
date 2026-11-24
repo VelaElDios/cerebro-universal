@@ -19,7 +19,7 @@ Este trozo define las reglas fijas de formato para la memoria del TFG (Sprint 3 
 
 ## Lo que se sacó de él (10)
 - [[agrupar-capturas-con-subfigure]]
-- [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]]
+- [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]]
 - [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]]
 - [[figuras-que-comparten-pagina-con-el-texto-parametros-de-flot]]
 - [[flechas-reales-en-captions-y-texto-rightarrow-nunca]]

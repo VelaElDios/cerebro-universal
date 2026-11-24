@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tfg"
-notas: 74
+notas: 72
 ---
 # tfg
 
@@ -27,7 +27,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Evitar fila huérfana al final en longtable (LaTeX)]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
-- 🧪 [[memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y|Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y|Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados]]
 - 🧪 [[memoria/conocimiento/recetas/flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de|Flechas reales en captions y texto: $\rightarrow$ en lugar de ->]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-lon|Formato de tablas: alineación superior, ancho controlado y longtable sin filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
@@ -48,8 +48,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados|Alcance coherente en toda la memoria (dos sprints cerrados)]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir|Diagramas de secuencia: límite de 6 participantes (agrupar o partir)]]
@@ -63,17 +62,16 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/portada-unica-oficial-del-tfg-elements-portada-tex|Portada única oficial del TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier|Prosa de TFG en lugar de listas de capturas (regla 13 Javier)]]
-- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar|Prosa de TFG obligatoria: nada de listas de capturas, agrupar con subfigure]]
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar|Prosa de TFG obligatoria: nada de listas de capturas, agrupar con subfigure]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t|Una sola portada oficial y elementos fijos de la plantilla TFG]]
 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg|Anexo de uso responsable de IA obligatorio en la memoria TFG]]
 - 💡 [[memoria/conocimiento/conceptos/capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf|Capítulo 2 (Antecedentes) marcado como no necesario en este TFG]]
-- 💡 [[memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r|Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r|Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos]]
 - 💡 [[memoria/conocimiento/conceptos/estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial|Estructura de la memoria TFG ESIIAB-UCLM (plantilla oficial)]]
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 - 💡 [[memoria/conocimiento/conceptos/prosa-de-tfg-sin-listas-de-capturas-regla-13-javier|Prosa de TFG sin listas de capturas (regla 13 Javier)]]
@@ -101,4 +99,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[figuras]] · [[plantilla]] · [[grada-colchonera]] · [[redaccion]] · [[memoria-procesos]] · [[saas]] · [[maquetacion]] · [[diagramas]] · [[verificacion]] · [[scrum]]
+[[latex]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[redaccion]] · [[plantilla]] · [[saas]] · [[maquetacion]] · [[memoria-procesos]] · [[diagramas]] · [[verificacion]] · [[scrum]]

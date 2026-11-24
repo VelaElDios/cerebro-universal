@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "diagramas"
-notas: 15
+notas: 14
 ---
 # diagramas
 
@@ -28,9 +28,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[pgfplots]] · [[verificacion]] · [[plantuml]] · [[memoria-procesos]] · [[maquetación]] · [[reglas-tfg]]
+[[latex]] · [[tikz]] · [[memoria]] · [[pgf-umlsd]] · [[tfg]] · [[maquetacion]] · [[verificacion]] · [[plantuml]] · [[memoria-procesos]] · [[pgfplots]] · [[maquetación]] · [[reglas-tfg]]

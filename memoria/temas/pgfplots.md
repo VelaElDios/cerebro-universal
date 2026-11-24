@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgfplots"
-notas: 10
+notas: 9
 ---
 # pgfplots
 
@@ -23,7 +23,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgfplots» (este archivo 
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -34,4 +33,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgfplots» (este archivo 
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[maquetacion]] · [[memoria]] · [[pgf-umlsd]] · [[diagramas]] · [[lua]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]] · [[usabilidad]]
+[[latex]] · [[tikz]] · [[maquetacion]] · [[memoria]] · [[lua]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]] · [[usabilidad]] · [[diagramas]] · [[memoria-procesos]]

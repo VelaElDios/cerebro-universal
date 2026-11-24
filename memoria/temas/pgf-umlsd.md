@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgf-umlsd"
-notas: 24
+notas: 23
 ---
 # pgf-umlsd
 
@@ -33,7 +33,6 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado|Inventario de diagramas obligatorios y su estado]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -48,4 +47,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[diagramas]] · [[diagramas-secuencia]] · [[maquetacion]] · [[sequencediagram]] · [[memoria]] · [[pgfplots]] · [[secuencia]] · [[codigos estado]] · [[http]] · [[memoria-procesos]]
+[[latex]] · [[tikz]] · [[diagramas]] · [[diagramas-secuencia]] · [[maquetacion]] · [[sequencediagram]] · [[memoria]] · [[secuencia]] · [[codigos estado]] · [[http]] · [[memoria-procesos]] · [[pgfplots]]

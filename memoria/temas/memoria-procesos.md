@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria-procesos"
-notas: 27
+notas: 26
 ---
 # memoria-procesos
 
@@ -11,7 +11,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 - 🧪 [[memoria/conocimiento/recetas/bibtex-autores-corporativos-con-doble-llave-y-year-en-todas|BibTeX: autores corporativos con doble llave y year en todas las entradas]]
 - 🧪 [[memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg|Contenido de los anexos por sprint en la memoria TFG]]
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure|Cómo agrupar capturas relacionadas con subfigure (2 por fila)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-tablas-anchas-con-longtable|Cómo evitar overfull hbox en tablas anchas con longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-manejar-fuentes-faltantes-en-verificacion-automatica-de|Cómo manejar fuentes faltantes en verificación automática de números]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/definicion-de-hecho-dod-para-tareas-e-hitos|Definición de Hecho (DoD) para tareas e hitos]]
@@ -21,8 +21,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica|Fuentes faltantes bloquean verificación automática]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/numeros-pequenos-tambien-se-verifican-en-fuentes-no-solo-20|Números pequeños también se verifican en fuentes (no solo > 20)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/pipeline-ci-cd-descrito-una-sola-vez-en-cap-5|Pipeline CI/CD descrito una sola vez en el Capítulo 5 (Regla 14 Javier)]] · ⚠️ propuesto
@@ -43,9 +42,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 - 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/fechas-y-estructura-del-sprint-1-4-hitos-19-pbis-32-tareas|Fechas y estructura del Sprint 1 (4 hitos, 19 PBIs, 32 tareas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado-actualizado|Inventario de diagramas obligatorios y su estado actualizado]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]]
+- 📊 [[memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2|Métricas comparativas Sprint 1 vs Sprint 2]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/workspace-y-equipo-en-donetonic|Workspace y equipo en DoneTonic]]
 
 ## Temas relacionados
 
-[[latex]] · [[scrum]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[grada-colchonera]] · [[sprint]] · [[fuentes]] · [[donetonic]] · [[verificacion]] · [[saas]] · [[sprints]]
+[[latex]] · [[scrum]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[grada-colchonera]] · [[verificacion]] · [[fuentes]] · [[sprint]] · [[donetonic]] · [[saas]] · [[metricas]]

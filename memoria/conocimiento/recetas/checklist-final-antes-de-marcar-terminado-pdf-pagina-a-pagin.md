@@ -23,7 +23,7 @@ Proceso obligatorio antes de TERMINADO:
 > Antes de marcar TERMINADO, el PDF se revisa página a página, y `revisar_maquetacion.py` debe salir en verde. Lo que no mide el script (que las tablas se lean bien y que el orden tenga sentido) lo comprueba el revisor.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]] · [[scripts-de-verificacion-automatica-en-el-repo]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
+Relacionado: [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]] · [[scripts-de-verificacion-automatica-en-el-repo]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[verificacion-final-revision-pagina-a-pagina-revisar-maquetac]]
 <<<CONTRADICCION>>
 no
 

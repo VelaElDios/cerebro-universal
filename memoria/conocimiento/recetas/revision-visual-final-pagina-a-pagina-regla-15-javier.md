@@ -27,6 +27,6 @@ Checklist de revisión visual final (obligatorio antes de TERMINADO):
 > Antes de marcar TERMINADO, el PDF se revisa página a página, y revisar_maquetacion.py debe salir en verde. Lo que no mide el script (que las tablas se lean bien y que el orden tenga sentido) lo comprueba el revisor.
 > — `memoria/reglas-tfg.md`
 
-Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]]
+Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[verificacion-final-revision-pagina-a-pagina-revisar-maquetac]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

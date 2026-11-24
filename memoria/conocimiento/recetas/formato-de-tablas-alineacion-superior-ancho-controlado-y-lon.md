@@ -22,4 +22,4 @@ Temas: [[latex]] · [[memoria]] · [[tfg]]
 > Ninguna fila se pisa con otra: columnas alineadas arriba (`p{}`, nunca `m{}`) y algo de aire entre filas (`\addlinespace`). Los anchos suman como mucho `\linewidth` y cada columna es lo bastante ancha para que no se partan las palabras cortas (Id, Hito, RNF-01).
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]]
+Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[formato-de-tablas-alineacion-tamanos-y-longtable]] · [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]]

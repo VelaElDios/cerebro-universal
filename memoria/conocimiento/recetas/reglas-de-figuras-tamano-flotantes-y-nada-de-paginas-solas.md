@@ -27,7 +27,7 @@ Directrices para evitar páginas con una sola imagen o casi vacías:
 > **Ninguna página con una sola imagen:** capturas como mucho a `height=0.42\textheight`; diagramas grandes con `max totalheight`; figuras `[htbp]` con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]]
+Relacionado: [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] · [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] · [[figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y]]
 
 > **Ninguna página con una sola imagen:** - capturas como mucho a `height=0.42\textheight`; - diagramas grandes con `max totalheight`; - figuras `[htbp]` con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
 > — `../../memoria/reglas-tfg.md`

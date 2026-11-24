@@ -17,6 +17,6 @@ Decisión documentada y justificada tras cerrar el Sprint 1. El proyecto nació 
 > **Por qué un juego y no una red social.** La idea inicial era una red social tipo Twitter para aficionados del Atleti. Cerrado el Sprint 1, el profesor dejó libertad para la lógica y el diseño del producto (y fijó después que el Sprint 2 sería esa lógica), y se decidió hacer un juego porque: (1) es más original y diferenciador que otro clon de red social; (2) permite trabajar problemas técnicos más ricos (simulación determinista, rendimiento en canvas, generación procedural, sonido sintetizado, validación anti-trampas en el servidor); y (3) reutiliza entera la base SaaS del sprint: un juego con cuentas, progreso en el servidor, ranking y roles necesita exactamente lo que piden los hitos.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[pivote-de-red-social-a-juego-survivor-reutilizando-base-del]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]] · [[cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por]]
+Relacionado: [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[pivote-de-red-social-a-juego-survivor-reutilizando-base-del]] · [[cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in]] · [[cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

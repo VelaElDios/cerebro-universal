@@ -38,6 +38,6 @@ Tabla completa de 20 requisitos funcionales del juego (Sprint 2) con trazabilida
 | RJ-20 | Música chiptune, efectos y la grada, con ajustes de volumen | P44 | `audio.js`, `musica.js`, `ajustes.js` | `juego-logros` |
 > — `repo:saas/docs/documentacion-tecnica.md` (cita sin comprobar)
 
-Relacionado: [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · Diagramas de secuencia con pgf-umlsd · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]]
+Relacionado: [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · Diagramas de secuencia con pgf-umlsd · [[tabla-de-trazabilidad-sprint-2-pbi-etiqueta-titulo-tareas-pr]] · [[estructura-sprint-2-6-fases-calidad-29-pbis-50-tareas-fechas]] · [[evolucion-por-fases-del-sprint-2-etiquetas-donetonic-adicion]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -45,6 +45,6 @@ El panel de administración muestra contadores totales, un buscador por email y 
 > Prosa de TFG, no listas de capturas: nada de una frase suelta «La figura X muestra…» por cada imagen. Las capturas se explican dentro de párrafos que cuentan qué hace el usuario y por qué la aplicación responde así. Las que van juntas se agrupan con subfigure.
 > — `memoria/reglas-tfg.md`
 
-Relacionado: [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]]
+Relacionado: [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

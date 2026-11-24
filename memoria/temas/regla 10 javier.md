@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «regla 10 javier» (este a
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-ref-en-el-resto|Imágenes repetidas — una sola aparición + \ref en el resto]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto|Imágenes repetidas: una sola aparición y \ref en el resto]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[figuras]] · [[gestion-contenido]] · [[latex]]
+[[figuras]] · [[gestion-contenido]] · [[latex]] · [[maquetacion]]

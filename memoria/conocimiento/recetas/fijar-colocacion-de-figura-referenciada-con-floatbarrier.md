@@ -24,4 +24,6 @@ Temas: [[figuras]] · [[latex]] · [[maquetacion]]
 > — `chapters/04b-juego.tex` (cita sin comprobar)
 
 
+Relacionado: [[como-fijar-colocacion-de-figura-referenciada-pero-no-apareci]] · [[figuras-flotando-dentro-de-la-bibliografia-floatbarrier-ante]] · [[como-mover-una-figura-antes-de-su-primera-referencia-en-late]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

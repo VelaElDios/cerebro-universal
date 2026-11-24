@@ -5,7 +5,7 @@ temas: ["capturas", "figuras", "latex", "maquetacion", "subcaption", "subfigure"
 claves: ["subfigure", "height=0.42\\textheight", "caption general", "subcaption", "agrupación capturas", "agrupación", "capturas"]
 proyectos: ["memoria-procesos"]
 fuentes: ["chapters/04-descripcion.tex (cambios aplicados en este paso)", "chapters/04-descripcion.tex", "memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 13) y chapters/04-descripcion.tex (ejemplos actuales)"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-16"
 actualizado: "2026-11-20"
 ---
@@ -114,6 +114,8 @@ Evitar páginas con una sola imagen (Regla 8) y cadenas de «La figura X muestra
 
 Fusionada con: Cómo agrupar capturas relacionadas con subfigure en LaTeX
 
-Relacionado: [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[como-agrupar-capturas-relacionadas-con-subfigure]]
+Relacionado: [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar]]: Nota B señala explícitamente que la carga del paquete `subcaption` está en `include/extra.tex` «según Nota A» y en `include/configuracion.tex` «según Nota B», contradiciéndose sobre la ubicación real. Además, Nota B describe dos estilos de referencia distintos (Opción A con sufijo de letra y Opción B con `subref` + «de la Figura»), presentándolos como provenientes de cada nota respectivamente.

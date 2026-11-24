@@ -17,6 +17,6 @@ Usar @{}L{...}@{} en la definición de la tabla (o @{} al inicio y final del pre
 > Las tablas con columnas L{...} sumaban más de \linewidth (≈15.5cm en esta plantilla), causando desbordamiento horizontal. El paquete array con L{...} añade padding lateral que suma al ancho total.
 > — `lecciones del cerebro (memoria-procesos)` (cita sin comprobar)
 
-Relacionado: [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[formato-de-tablas-alineacion-tamanos-y-longtable]] · [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]]
+Relacionado: [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[formato-de-tablas-alineacion-tamanos-y-longtable]] · [[como-evitar-paginas-casi-vacias-tras-una-longtable]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[formato-de-tablas-alineacion-superior-ancho-controlado-y-lon]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

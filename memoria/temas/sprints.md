@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sprints"
-notas: 12
+notas: 11
 ---
 # sprints
 
@@ -9,8 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 
 ## Datos
@@ -27,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 
 ## Temas relacionados
 
-[[memoria]] · [[trazabilidad]] · [[metricas]] · [[grada-colchonera]] · [[scrum]] · [[sprint]] · [[memoria-procesos]] · [[latex]] · [[tfg]] · [[verificacion]] · [[saas]] · [[fuentes]]
+[[trazabilidad]] · [[memoria]] · [[metricas]] · [[grada-colchonera]] · [[scrum]] · [[verificacion]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[latex]] · [[tfg]] · [[fuentes]]

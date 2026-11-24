@@ -27,4 +27,4 @@ Necesita el paquete `poppler-utils`.
 > Comprueba las reglas de maquetación de un TFG
 > — `scripts/revisar_maquetacion.py`
 
-Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]] · [[scripts-de-verificacion-automatica-en-el-repo]]
+Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]] · [[scripts-de-verificacion-automatica-en-el-repo]] · [[verificacion-final-revision-pagina-a-pagina-revisar-maquetac]]

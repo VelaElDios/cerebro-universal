@@ -17,6 +17,6 @@ En el capítulo 3 se presenta: 1) Problema y propuesta: descripción conceptual 
 > Problema y propuesta: explicar la idea ANTES de su desarrollo, sin detalles técnicos. Metodología: qué proceso se sigue (marco de trabajo Scrum) y su adaptación; puede incluir una planificación inicial.
 > — `../memoria-procesos/fuentes/estructura-memoria.md`
 
-Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[capitulo-4-requisitos-arquitectura-tabla-de-sprints-y-manual]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]]
+Relacionado: [[convencion-de-ramas-y-prs-por-sprint-sprint-1-vs-sprint-2]] · [[capitulo-4-requisitos-arquitectura-tabla-de-sprints-y-manual]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

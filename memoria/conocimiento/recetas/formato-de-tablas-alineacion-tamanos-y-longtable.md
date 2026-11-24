@@ -26,7 +26,7 @@ Reglas (7 puntos):
 > **Resumen de estilo:** Ninguna fila se pisa con otra: columnas alineadas arriba (`p{}`, nunca `m{}`) y algo de aire entre filas (`\addlinespace`). Los anchos suman como mucho `\linewidth` y cada columna es lo bastante ancha para que no se partan las palabras cortas (Id, Hito, RNF-01). Texto de las tablas en `\small`. El código y las rutas van con `\path{}` o con `\texttt{}` más `\allowbreak`, para que no se salgan del margen.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[longtable-sin-fila-huerfana-al-final]]
+Relacionado: [[tablas-de-latex-que-no-se-pisan-columnas-p-y-addlinespace]] · [[tablas-largas-en-longtable-con-ultima-fila-acompanada]] · [[longtable-sin-fila-huerfana-al-final]] · [[formato-de-tablas-alineacion-superior-ancho-controlado-y-lon]]
 
 > **Ninguna fila se pisa con otra:** columnas alineadas arriba (`p{}`, nunca `m{}`) y algo de aire entre filas (`\addlinespace`). Los anchos suman como mucho `\linewidth` y cada columna es lo bastante ancha para que no se partan las palabras cortas (Id, Hito, RNF-01).
 > — `../../memoria/reglas-tfg.md`

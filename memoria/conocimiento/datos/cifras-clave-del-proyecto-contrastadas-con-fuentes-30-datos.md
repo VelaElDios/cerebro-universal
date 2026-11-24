@@ -51,7 +51,7 @@ relacionado: Inventario de capturas de pantalla con trazabilidad a requisitos y 
 ## Ampliación (2026-11-23, memoria-procesos)
 Cada cifra del texto sale de las fuentes, copiada tal cual. El test comprueba números >20; el revisor comprueba los pequeños. Ojo con los que se parecen: 19 PBIs en Sprint 1, pero burndown de la entrega cuenta 16 (P1–P14, P18, P19).
 
-Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]]
+Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos]]
 
 ## Ampliación (2026-11-24, memoria-procesos)
 Todas las cifras del proyecto (PBIs, tareas, pruebas, endpoints, migraciones, líneas de código, dependencias, contenido del juego) han sido contrastadas con las fuentes del repositorio y coinciden exactamente. No se inventa ningún número.

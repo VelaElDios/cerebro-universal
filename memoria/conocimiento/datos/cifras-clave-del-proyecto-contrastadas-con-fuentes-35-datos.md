@@ -43,4 +43,6 @@ Lista verificada de 35 cifras (ver COMPROBACIONES en el veredicto). Cada cifra s
   - Trazabilidad completa P1–P48, T1–T82 en a4-trazabilidad.tex → chapters/a4-trazabilidad.tex tabla
   - Anexo desarrollo dos sprints mismo esquema → chapters/a1-desarrollo.tex estructura
 
+Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

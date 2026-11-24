@@ -20,4 +20,6 @@ solucion: Declarar todos los participantes con \newthread/\newinst. En textos de
 > — `memoria/reglas-tfg.md (ejemplo compilado)` (cita sin comprobar)
 
 
+Relacionado: [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

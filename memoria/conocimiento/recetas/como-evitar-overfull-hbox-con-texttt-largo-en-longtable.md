@@ -19,6 +19,6 @@ problema: Rutas de código largas dentro de celdas de longtable no se parten y c
 solucion: Insertar \allowbreak en puntos naturales (tras punto, barra, dos puntos) dentro de \texttt{} o \path{}. Para URLs, usar \path{} de xurl (ya cargado) que permite cortes en cualquier carácter.
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
-Relacionado: [[como-evitar-overfull-hbox-con-texttt-largo]] · [[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[longtable-sin-fila-huerfana-al-final]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]]
+Relacionado: [[como-evitar-overfull-hbox-con-texttt-largo]] · [[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[longtable-sin-fila-huerfana-al-final]] · [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[corregir-overfull-hbox-en-longtable-con-urls-largas]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

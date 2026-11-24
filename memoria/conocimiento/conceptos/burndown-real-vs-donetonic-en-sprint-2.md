@@ -14,4 +14,6 @@ Temas: [[donetonic]] · [[metricas]] · [[scrum]]
 
 El juego se programó del 23 al 26/10, antes de que el profesor fijara el contenido del Sprint 2. El backlog se registró en DoneTonic al cerrar el sprint (29/10), así que DoneTonic marca todos los PBIs como hechos ese día. La evolución real está en la Tabla~\ref{tab:evolucion-s2} y Figura~\ref{fig:burndown-s2} del anexo.
 
+Relacionado: [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -24,7 +24,7 @@ Sprint 1: del 29/09/2026 al 27/10/2026.
 > **Sprint 1:** del 29/09/2026 al 27/10/2026. 19 PBIs (P1–P19) con 32 tareas (T1–T32), etiquetados por hito (*Hito 1* a *Hito 4*). Todos son **MUST** porque son requisitos obligatorios del enunciado.
 > — `repo:saas/docs/documentacion-tecnica.md`
 
-Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]
+Relacionado: [[desglose-del-alcance-del-sprint-1-por-hitos-y-fechas]] · [[requisitos-funcionales-del-sprint-1-13-rf-con-trazabilidad]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[backlog-completo-del-sprint-1-con-trazabilidad-a-releases]] · [[fechas-pbis-y-tareas-de-los-dos-sprints]] · [[tabla-de-trazabilidad-sprint-1-pbi-hito-titulo-tareas-prs-re]] · [[fechas-pbis-tareas-y-estructura-de-los-dos-sprints]]
 
 ## Ampliación (2026-11-19, memoria-procesos)
 |
@@ -43,3 +43,5 @@ Sprint 1: 29/09–27/10/2026. Hito 1 (P1-P6, T1-T7): repositorio, CI, despliegue
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 
 > ⚠️ Posible contradicción con [[datos-del-burndown-sprint-1-pbis-pendientes-por-hito]]: Nota A registra 16 PBIs totales (P1–P14, P18, P19; faltan P15–P17) y solo 3 hitos en el burndown (Hito 1, 2, 3). Nota B afirma 19 PBIs (P1–P19 completos) y 4 hitos (Hito 1 a Hito 4, donde Hito 4 abarca P15–P19).
+
+> ⚠️ Posible contradicción con [[cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por]]: La Nota A sitúa el P19 (Cloud Run) en el **Hito 4** (último hito del sprint, P15–P19), implicando entrega al final (cierre 27/10). La Nota B afirma en su cronología que la **«primera entrega 12/10/2026» ya incluía P19 junto a Hitos 1-3 y P18**, lo que adelanta su finalización dos semanas y lo desvincula del Hito 4.

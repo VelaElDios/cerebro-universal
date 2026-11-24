@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "alcance"
-notas: 7
+notas: 6
 ---
 # alcance
 
@@ -10,8 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «alcance» (este archivo s
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados|Alcance coherente en toda la memoria (dos sprints cerrados)]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-durante-sprint-1-anadido-p19-cloud-run-por|Cambio de alcance durante Sprint 1: añadido P19 (Cloud Run) por créditos Google Cloud]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-alcance-de-red-social-a-juego-survivor-justificaci|Cambio de alcance: de red social a juego survivor (justificación)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in|Cambio de enfoque de red social a juego justificado en la introducción]] · ⚠️ propuesto
@@ -22,4 +21,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «alcance» (este archivo s
 
 ## Temas relacionados
 
-[[sprint]] · [[grada-colchonera]] · [[saas]] · [[tfg]] · [[memoria]] · [[latex]] · [[scrum]] · [[sprints]] · [[memoria-procesos]] · [[decision]] · [[estructura]] · [[reglas-javier]]
+[[sprint]] · [[grada-colchonera]] · [[saas]] · [[tfg]] · [[memoria]] · [[decision]] · [[estructura]] · [[entrega]] · [[latex]] · [[memoria-procesos]] · [[proceso]] · [[reglas-javier]]

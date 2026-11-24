@@ -18,3 +18,5 @@ Ejemplo probado en memoria-procesos (24/11/2026): fig:sec-partida, con 5 partici
 
 > Los diagramas (TikZ, pgf-umlsd y pgfplots) nunca se meten en \resizebox, adjustbox ni scale para que quepan: eso deja las letras por debajo de 7,5 pt y revisar_figuras.py lo rechaza (reglas 16 y 19 de memoria/reglas-tfg.md).
 > — `Javier`
+
+Relacionado: [[diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l]]

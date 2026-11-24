@@ -40,3 +40,5 @@ Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javie
 > — `../../memoria/reglas-tfg.md`
 
 Fusionada con: Límite de 6 participantes en diagramas de secuencia
+
+Relacionado: [[diagramas-de-secuencia-legibles-max-6-participantes-flechas]] · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]]

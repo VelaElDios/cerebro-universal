@@ -17,6 +17,6 @@ Cuando una figura (o subfiguras) queda sola en una página con poco texto, reduc
 > **Ninguna página con una sola imagen:** - capturas como mucho a `height=0.42\textheight`; - diagramas grandes con `max totalheight`; - figuras `[htbp]` con los parámetros de flotantes relajados, para que compartan página con el texto u otra figura.
 > — `memoria/reglas-tfg.md`
 
-Relacionado: [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]]
+Relacionado: [[figuras-ninguna-pagina-con-una-sola-imagen-limites-de-altura]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub]] · [[figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

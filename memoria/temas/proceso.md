@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «proceso» (este archivo s
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 
 ## Temas relacionados
 
-[[alcance]] · [[latex]] · [[memoria]] · [[sprint]] · [[tfg]] · [[entrega]] · [[memoria-procesos]] · [[scrum]] · [[sprints]]
+[[alcance]] · [[entrega]] · [[latex]] · [[memoria]] · [[memoria-procesos]] · [[reglas-javier]] · [[scrum]] · [[sprint]] · [[sprints]] · [[tfg]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "memoria"
-notas: 76
+notas: 74
 ---
 # memoria
 
@@ -27,7 +27,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - 🧪 [[memoria/conocimiento/recetas/estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm|Estructura de 8 capítulos para la memoria TFG (ESIIAB-UCLM)]]
 - 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Evitar fila huérfana al final en longtable (LaTeX)]]
 - 🧪 [[memoria/conocimiento/recetas/figuras-que-comparten-pagina-con-el-texto-parametros-de-flot|Figuras que comparten página con el texto (parámetros de flotantes)]]
-- 🧪 [[memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y|Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/figuras-sin-paginas-solas-ni-casi-vacias-limites-de-altura-y|Figuras sin páginas solas ni casi vacías: límites de altura y flotantes relajados]]
 - 🧪 [[memoria/conocimiento/recetas/flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de|Flechas reales en captions y texto: $\rightarrow$ en lugar de ->]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-superior-ancho-controlado-y-lon|Formato de tablas: alineación superior, ancho controlado y longtable sin filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-titulos-y-enlaces-en-la-memoria|Formato de títulos y enlaces en la memoria]]
@@ -45,9 +45,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint]]
+- ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq|Cada cifra del documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/cada-entrega-solo-lleva-lo-de-su-sprint-alcance-coherente|Cada entrega solo lleva lo de su sprint (alcance coherente)]]
 - ⚖️ [[memoria/conocimiento/decisiones/cambio-de-enfoque-de-red-social-a-juego-justificado-en-la-in|Cambio de enfoque de red social a juego justificado en la introducción]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
@@ -64,18 +63,17 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 - ⚖️ [[memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla|Portada oficial única y elementos fijos de la plantilla TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/portada-unica-oficial-del-tfg-elements-portada-tex|Portada única oficial del TFG (elements/portada.tex)]]
 - ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-en-lugar-de-listas-de-capturas-regla-13-javier|Prosa de TFG en lugar de listas de capturas (regla 13 Javier)]]
-- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar|Prosa de TFG obligatoria: nada de listas de capturas, agrupar con subfigure]]
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar|Prosa de TFG obligatoria: nada de listas de capturas, agrupar con subfigure]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1|Rutas de documentación tras reorganización del bundle (2026-11-19)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente|Sin figuras repetidas: usar \ref a la figura existente]]
 - ⚖️ [[memoria/conocimiento/decisiones/sin-paginas-casi-vacias-ni-secciones-sueltas-fundir-o-listar|Sin páginas casi vacías ni secciones sueltas (fundir o listar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4|Trazabilidad completa requisito → PBI → tarea → PR en anexo A4]] · ⚠️ propuesto
-- ⚖️ [[memoria/conocimiento/decisiones/una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t|Una sola portada oficial y elementos fijos de la plantilla TFG]]
 
 ## Conceptos
 
 - 💡 [[memoria/conocimiento/conceptos/anexo-de-uso-responsable-de-ia-obligatorio-en-la-memoria-tfg|Anexo de uso responsable de IA obligatorio en la memoria TFG]]
 - 💡 [[memoria/conocimiento/conceptos/capitulo-2-antecedentes-marcado-como-no-necesario-en-este-tf|Capítulo 2 (Antecedentes) marcado como no necesario en este TFG]]
-- 💡 [[memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r|Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos]] · ⚠️ propuesto
+- 💡 [[memoria/conocimiento/conceptos/estilo-visual-global-titulos-negros-en-negrita-enlaces-sin-r|Estilo visual global: títulos negros en negrita, enlaces sin recuadros, sin páginas en blanco entre capítulos]]
 - 💡 [[memoria/conocimiento/conceptos/glosario-tecnico-del-proyecto-22-terminos-definidos|Glosario técnico del proyecto (22 términos definidos)]]
 
 ## Datos
@@ -106,4 +104,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria» (este archivo s
 
 ## Temas relacionados
 
-[[tfg]] · [[latex]] · [[verificacion]] · [[memoria-procesos]] · [[figuras]] · [[tikz]] · [[trazabilidad]] · [[sprints]] · [[diagramas]] · [[plantilla]] · [[scrum]] · [[grada-colchonera]]
+[[tfg]] · [[latex]] · [[verificacion]] · [[figuras]] · [[tikz]] · [[trazabilidad]] · [[memoria-procesos]] · [[diagramas]] · [[sprints]] · [[plantilla]] · [[scrum]] · [[grada-colchonera]]
