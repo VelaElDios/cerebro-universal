@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «portada» (este archivo s
 
 ## Temas relacionados
 
-[[plantilla]] · [[tfg]] · [[latex]] · [[maquetacion]] · [[memoria]] · [[memoria-procesos]] · [[plantilla-tfg]] · [[elementos-fijos]]
+[[latex]] · [[memoria]] · [[plantilla]] · [[tfg]] · [[maquetacion]] · [[memoria-procesos]] · [[plantilla-tfg]] · [[elementos-fijos]]

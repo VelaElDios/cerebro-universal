@@ -659,5 +659,32 @@
  },
  "660fbd28c44c229dfc05414d210714f4": {
   "ok": true
+ },
+ "3b33f51eaa14837f2f6057cb73265590": {
+  "ok": true
+ },
+ "49bbce9c68de2ccf943beaf5a378eae6": {
+  "ok": true
+ },
+ "8dc916368427444edc0737385b3871d0": {
+  "ok": true
+ },
+ "9009cf7ef23d2e38e034ecef08379874": {
+  "ok": true
+ },
+ "4246e33ae2b372b446a60499d99bba29": {
+  "ok": false,
+  "problemas": [
+   "No se encuentra ningún diagrama llamado 'Figura A.2' en esta página, únicamente aparece una tabla («Tabla A.12: Evolución real del Sprint 2: PBIs pendientes según la fecha del último PR de cada uno.»)."
+  ]
+ },
+ "589d72254b8b7521351dd1965700984a": {
+  "ok": false,
+  "problemas": [
+   "La figura 4.7 no aparece en esta página del documento, por lo que no es posible revisar sus líneas, cajas o textos."
+  ]
+ },
+ "68f70558c78f06141d80e7c0e44a811e": {
+  "ok": true
  }
 }

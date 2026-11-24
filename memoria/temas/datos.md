@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "datos"
-notas: 6
+notas: 7
 ---
 # datos
 
@@ -17,6 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos|Cifras clave del proyecto contrastadas con fuentes (35 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (fusionada)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 
@@ -27,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[juego]] · [[metricas]] · [[lua]] · [[general]] · [[grada-colchonera]] · [[memoria]] · [[métricas]] · [[proyecto]] · [[pruebas]] · [[saas]]
+[[latex]] · [[memoria]] · [[verificacion]] · [[fuentes]] · [[juego]] · [[metricas]] · [[lua]] · [[general]] · [[grada-colchonera]] · [[métricas]] · [[proyecto]] · [[pruebas]]

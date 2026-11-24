@@ -1,13 +1,13 @@
 ---
 tipo: "receta"
 titulo: "Flechas reales en captions y texto: $\\rightarrow$ en lugar de ->"
-temas: ["latex", "memoria", "tfg"]
+temas: ["latex", "memoria", "tfg", "flechas", "tipografia"]
 claves: ["flechas", "rightarrow", "caption", "texto"]
-proyectos: []
-fuentes: ["../../memoria/reglas-tfg.md"]
+proyectos: ["memoria-procesos"]
+fuentes: ["../../memoria/reglas-tfg.md", "memoria/reglas-tfg.md regla 11"]
 confianza: "verificado"
 fecha: "2026-11-23"
-actualizado: "2026-11-23"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[tfg]]
@@ -20,3 +20,6 @@ Temas: [[latex]] · [[memoria]] · [[tfg]]
 > — `../../memoria/reglas-tfg.md`
 
 Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]]
+
+## Ampliación (2026-11-24, memoria-procesos)
+En TODO el documento (captions, texto, tablas, diagramas TikZ/pgf-umlsd): usar `$\rightarrow$` (modo matemático) para flechas simples. No usar `->` (dos caracteres ASCII) ni `-->` ni variantes. Aplicable también a flechas en diagramas de secuencia si se escriben etiquetas en LaTeX puro. Ejemplo: «RF-01 $\rightarrow$ P8 $\rightarrow$ T11,T12 $\rightarrow$ PR #13,#14».

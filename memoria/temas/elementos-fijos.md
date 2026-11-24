@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «elementos-fijos» (este a
 
 ## Temas relacionados
 
-[[plantilla]] · [[portada]] · [[tfg]]
+[[plantilla]] · [[portada]] · [[tfg]] · [[latex]] · [[memoria]]

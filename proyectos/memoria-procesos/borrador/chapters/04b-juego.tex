@@ -199,32 +199,34 @@ Los valores de la Tabla~\ref{tab:juego-sistemas} incluyen ya las 5 habilidades, 
 \section{Arquitectura del juego}
 \label{sec:juego-arquitectura}
 
-El juego se organiza en tres bloques separados: la simulación pura, que no toca el DOM ni el audio; la presentación (pantallas, renderizado, HUD y sonido); y el servidor, que valida las partidas y comparte con el cliente las reglas del club. Esa división es la que se dibuja en la Figura~\ref{fig:juego-arquitectura}.
-
 \begin{figure}[htbp]
 \centering
 \begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=6.5cm, align=center, minimum height=1.2cm, font=\footnotesize, inner sep=4pt},
+    node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=4.8cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
+    nodewide/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=6.5cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema}
 ]
-    % Bloques apilados: simulación, presentación y servidor
-    \node[node] (sim) {Simulación pura (sin DOM ni audio)\\\texttt{mundo.js}, \texttt{armas.js}, \texttt{combate.js},\\\texttt{jefes.js}, \texttt{oleadas.js},\\\texttt{terreno.js}, \texttt{mejoras.js}, \texttt{ultras.js}};
-    \node[node, below=1.2cm of sim] (pres) {Presentación\\\texttt{juego.js}, \texttt{render*.js},\\\texttt{sprites.js}, \texttt{hud.js}, \texttt{audio.js},\\\texttt{entrada.js}};
-    \node[node, below=1.2cm of pres] (srv) {Servidor\\\texttt{juegoService.js} y reglas compartidas\\\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}};
-    % Conexiones: eventos hacia la presentación y peticiones al servidor
-    \draw[arrow] (sim.south) -- node[right, font=\footnotesize] {eventos} (pres.north);
-    \draw[arrow] (pres.south) -- node[right, font=\footnotesize] {api.js} (srv.north);
-    % Reglas compartidas entre simulación y servidor, por el lado derecho
-    \draw[arrow, dashed] (sim.east) -- ++(0.8,0) |- (srv.east);
-    \node[font=\footnotesize, anchor=west] at ($(sim.east)+(0.9,-1.8)$) {reglas};
+    % Simulación
+    \node[node] (sim) {Simulación pura\\\texttt{mundo.js}, \texttt{armas.js},\\\texttt{combate.js}, \texttt{jefes.js},\\\texttt{oleadas.js}, \texttt{terreno.js},\\\texttt{mejoras.js}, \texttt{config.js}};
+    % Presentación
+    \node[nodewide, right=1.8cm of sim] (pres) {Presentación\\\texttt{juego.js}, \texttt{render.js}, \texttt{hud.js},\\\texttt{audio.js}, \texttt{musica.js},\\\texttt{sprites.js}, \texttt{club-ui.js},\\\texttt{fin-ui.js}, \texttt{entrada.js}};
+    % Servidor
+    \node[node, below=1.5cm of sim] (srv) {Servidor\\\texttt{juegoService.js},\\\texttt{club.js}, \texttt{config.js},\\\texttt{logros.js}};
+    % API
+    \node[node, right=1.8cm of srv] (api) {API\\\texttt{api.js} $\rightarrow$ /api/juego};
+    % Flechas
+    \draw[arrow] (sim.east) -- node[above, font=\footnotesize] {eventos} (pres.west);
+    \draw[arrow] (pres.south) -- node[left, font=\footnotesize] {HTTP+JSON} (api.north);
+    \draw[arrow] (api.west) -- node[above, font=\footnotesize] {valida} (srv.east);
+    \draw[arrow, dashed] (sim.south) -- node[left, font=\footnotesize] {reglas compartidas} (srv.north);
 \end{tikzpicture}
 \end{adjustbox}
-\caption{Arquitectura del juego: simulación pura, presentación y servidor con las reglas compartidas.}
+\caption{Arquitectura del juego: simulación, presentación y servidor.}
 \label{fig:juego-arquitectura}
 \end{figure}
 
-La separación en tres bloques es la que se ve en la Figura~\ref{fig:juego-arquitectura}: la simulación determinista (sin DOM ni audio) emite eventos que la presentación traduce a gráficos y sonido, y el servidor valida las partidas usando las mismas reglas (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) que el cliente.
+El juego se organiza en tres bloques separados: la simulación pura, que no toca el DOM ni el audio; la presentación (pantallas, renderizado, HUD y sonido); y el servidor, que valida las partidas y comparte con el cliente las reglas del club. Esa división es la que se ve en la Figura~\ref{fig:juego-arquitectura}: la simulación determinista (sin DOM ni audio) emite eventos que la presentación traduce a gráficos y sonido, y el servidor valida las partidas usando las mismas reglas (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) que el cliente.
 
 \subsection{Simulación determinista y eventos}
 \path{mundo.js} avanza con paso fijo de 1/60 s y generador aleatorio con semilla. Si el navegador va lento, se hacen varios pasos por fotograma (con tope); el resultado no depende de los FPS y las pruebas son reproducibles.

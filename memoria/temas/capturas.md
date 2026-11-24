@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "capturas"
-notas: 9
+notas: 10
 ---
 # capturas
 
@@ -17,6 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Datos
 
+- 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo-8-imagenes|Capturas de DoneTonic disponibles en el repo (8 imágenes)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/capturas-disponibles-por-carpeta-minimos-requeridos|Capturas disponibles por carpeta (mínimos requeridos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha|Inventario de capturas con trazabilidad a requisitos y fechas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
@@ -24,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Temas relacionados
 
-[[figuras]] · [[latex]] · [[trazabilidad]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[requisitos]] · [[donetonic]] · [[grada-colchonera]] · [[saas]] · [[subcaption]] · [[subfigure]]
+[[figuras]] · [[latex]] · [[memoria]] · [[donetonic]] · [[trazabilidad]] · [[tfg]] · [[maquetacion]] · [[requisitos]] · [[grada-colchonera]] · [[saas]] · [[subcaption]] · [[subfigure]]

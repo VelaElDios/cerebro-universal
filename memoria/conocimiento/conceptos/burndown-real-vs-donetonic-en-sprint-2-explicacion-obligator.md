@@ -1,13 +1,13 @@
 ---
 tipo: "concepto"
 titulo: "Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en anexo desarrollo"
-temas: ["donetonic", "metricas", "retrospectiva", "scrum", "burndown", "memoria-procesos", "sprint-2"]
+temas: ["donetonic", "metricas", "retrospectiva", "scrum", "burndown", "memoria-procesos", "sprint-2", "anexo"]
 claves: ["recta DoneTonic", "backlog registrado al cierre", "evolución real por PRs"]
 proyectos: ["memoria-procesos"]
-fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2", "repo:saas/docs/sprint-2.md y repo:saas/docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md (D-19)", "docs/sprint-2.md §Retrospectiva y docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md"]
+fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2", "repo:saas/docs/sprint-2.md y repo:saas/docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md (D-19)", "docs/sprint-2.md §Retrospectiva y docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md", "repo:saas/docs/sprint-2.md §Evolución, repo:saas/docs/decisiones.md D-19"]
 confianza: "propuesto"
 fecha: "2026-11-23"
-actualizado: "2026-11-23"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[donetonic]] · [[metricas]] · [[retrospectiva]] · [[scrum]]
@@ -46,5 +46,8 @@ En el anexo de desarrollo (a1-desarrollo.tex) se debe incluir obligatoriamente:
 4. Las capturas de DoneTonic del Sprint 2 (gráficas en recta y tablero) se muestran una sola vez en el anexo, con `\ref` desde otros capítulos.
 
 Relacionado: [[burndown-real-vs-burndown-de-donetonic-en-sprint-2]] · [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]] · [[registro-retroactivo-del-sprint-2-en-donetonic-y-efecto-en-g]]
+
+## Ampliación (2026-11-24, memoria-procesos)
+En Anexo A (Desarrollo), retrospectiva Sprint 2, DEBE explicarse: (1) Por qué las gráficas de DoneTonic del Sprint 2 salen en recta (backlog registrado al cierre con todos los PBIs ya en Hecho). (2) La evolución real reconstruida con fechas de fusión de PRs (Tabla evolución y Figura burndown-s2 con pgfplots). (3) Que el trabajo se concentró en 23/10 (PR #36), 24/10 (PRs #44–#52, 17 PBIs), 26/10 (PRs #53, #54, 9 PBIs), más arreglos 27/10 y 29/10. Esto cumple la regla del profesor: «explicar que las gráficas de DoneTonic del Sprint 2 salen en recta porque el backlog se registró al cerrar el sprint (29/10)».
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "overfull"
-notas: 2
+notas: 3
 ---
 # overfull
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «overfull» (este archivo 
 
 ## Recetas (cómo lo hacemos)
 
+- 🧪 [[memoria/conocimiento/recetas/corregir-overfull-hbox-en-longtable-con-urls-largas|Corregir overfull hbox en longtable con URLs largas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo-en-longtable|Cómo evitar overfull hbox con \texttt largo en longtable]] · ⚠️ propuesto
 
 ## Lecciones (errores ya resueltos)
@@ -17,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «overfull» (este archivo 
 
 ## Temas relacionados
 
-[[latex]] · [[texttt]] · [[longtable]]
+[[latex]] · [[texttt]] · [[longtable]] · [[tablas]]

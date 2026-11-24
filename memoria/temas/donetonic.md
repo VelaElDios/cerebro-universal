@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "donetonic"
-notas: 51
+notas: 52
 ---
 # donetonic
 
@@ -53,6 +53,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 - 📊 [[memoria/conocimiento/datos/backlog-completo-del-sprint-1-con-trazabilidad-a-releases|Backlog completo del Sprint 1 con trazabilidad a releases]]
 - 📊 [[memoria/conocimiento/datos/backlog-sprint-2-con-prs-fechas-de-fusion-y-estado-por-pbi|Backlog Sprint 2 con PRs, fechas de fusión y estado por PBI]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo|Capturas de DoneTonic disponibles en el repo]]
+- 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo-8-imagenes|Capturas de DoneTonic disponibles en el repo (8 imágenes)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/datos-del-burndown-sprint-1-pbis-pendientes-por-hito|Datos del burndown Sprint 1 (PBIs pendientes por hito)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/datos-del-burndown-sprint-2-pbis-pendientes-por-dia|Datos del burndown Sprint 2 (PBIs pendientes por día)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/esquema-de-progreso-guardado-en-servidor-migracion-003-tabla|Esquema de progreso guardado en servidor (migración 003, tablas y API)]] · ⚠️ propuesto
@@ -75,4 +76,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «donetonic» (este archivo
 
 ## Temas relacionados
 
-[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[metricas]] · [[memoria-procesos]] · [[trazabilidad]] · [[burndown]] · [[github-flow]] · [[pbi]] · [[tarea]]
+[[scrum]] · [[grada-colchonera]] · [[saas]] · [[sprint]] · [[git]] · [[metricas]] · [[memoria-procesos]] · [[trazabilidad]] · [[memoria]] · [[burndown]] · [[github-flow]] · [[pbi]]

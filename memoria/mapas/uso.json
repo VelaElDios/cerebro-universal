@@ -111,13 +111,13 @@
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 22
+  "usos": 23
  },
  "memoria/conocimiento/datos/inventario-de-diagramas-obligatorios-y-su-estado.md": {
   "bien": 6,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 23
+  "usos": 24
  },
  "memoria/conocimiento/datos/metricas-comparativas-sprint-1-vs-sprint-2.md": {
   "bien": 0,
@@ -176,8 +176,8 @@
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
   "bien": 8,
   "mal": 1,
-  "ultimo": "2026-11-23",
-  "usos": 31
+  "ultimo": "2026-11-24",
+  "usos": 32
  },
  "memoria/conocimiento/decisiones/elementos-de-plantilla-inmutables-no-se-quita-nada.md": {
   "bien": 0,
@@ -213,7 +213,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 9
+  "usos": 10
  },
  "memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente.md": {
   "bien": 0,
@@ -315,7 +315,7 @@
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-24",
-  "usos": 2
+  "usos": 3
  },
  "memoria/conocimiento/recetas/reglas-de-maquetacion-de-tablas-alineacion-anchos-longtable.md": {
   "bien": 0,

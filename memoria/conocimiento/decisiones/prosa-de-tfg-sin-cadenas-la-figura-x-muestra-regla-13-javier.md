@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)"
-temas: ["latex", "redaccion", "tfg"]
+temas: ["latex", "redaccion", "tfg", "maquetación"]
 claves: ["subfigure", "prosa", "manual de usuario", "capturas", "problema: El borrador tenía ~45 frases sueltas tipo «La figura X muestra…»", "una por captura", "lo que delata un trabajo poco profesional.", "solucion: Reescribir cada sección como prosa continua que explica el flujo de uso. Agrupar capturas relacionadas en una figura con `subfigure` (dos por fila", "`\\begin{subfigure}{0.48\\textwidth}`)", "con un caption general y uno por subfigura. Citar las figuras dentro de la explicación con `\\ref`."]
 proyectos: ["memoria-procesos"]
-fuentes: []
+fuentes: ["memoria/reglas-tfg.md regla 13"]
 confianza: "propuesto"
 fecha: "2026-11-24"
 actualizado: "2026-11-24"

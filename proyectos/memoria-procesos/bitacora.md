@@ -15853,3 +15853,90 @@ Corregir los tres diagramas problemáticos en 04-descripcion.tex (modelo-datos, 
 Sin tiempo para llamar a nvidia-revisor (mistralai/mistral-large-4-1t-a52b)
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-24 13:51 · Constructor (openrouter-grandes · nvidia/nemotron-3-ultra-550b-a55b:free)
+
+He abordado dos tareas críticas del revisor: (1) mover la figura `fig:juego-arquitectura` en `04b-juego.tex` para que aparezca antes de su primera referencia en la sección 4.1, y (2) asegurar que la cita a `fig:sec-google` esté presente en el párrafo explicativo del flujo OAuth en `04-descripcion.tex` (sección 4.5). Ambos cambios mejoran la coherencia y cumplen las reglas de maquetación de Javier.
+
+**Archivos:** `(no aplicado: no encuentro el texto: «\section{Concepto}
+\label{sec:juego-concepto}
+
+\textit{La Gr») chapters/04b-juego.tex`, `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ VERIFICACIÓN FALLIDA: 3 problema(s)
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Próximo paso: ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia y corregir todos los errores que reporte (etiquetas sin acentos, paréntesis en \mess, participantes no declarados, flechas que cruzan cajas). Luego verificar que el overfull hbox en `a4-trazabilidad.tex` desaparece tras recompilar (si persiste, reducir fuente o usar `\sloppy` local). Después, revisión visual de los 11 diagramas en PDF compilado (letras ≥ 7,5 pt, sin cruces, sin palabras partidas, codos correctos). Finalmente, revisión visual final del PDF página a página y re-ejecutar `comando_prueba` hasta verde total.
+
+## 2026-11-24 13:59 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Sprint 1: 29/09/2026–27/10/2026, 19 PBIs (P1–P19), 32 tareas (T1–T32) → repo:saas/docs/sprint-1.md §Backlog y estado, §Trazabilidad
+- Sprint 2: 23/10/2026–29/10/2026, 29 PBIs (P20–P48), 50 tareas (T33–T82) → repo:saas/docs/sprint-2.md §Backlog y estado, §Trazabilidad
+- Total: 48 PBIs, 82 tareas → suma de ambos sprints
+- RF: 13 (RF-01 a RF-13) → repo:saas/docs/requisitos.md §Requisitos funcionales Sprint 1
+- RJ: 20 (RJ-01 a RJ-20) → repo:saas/docs/requisitos.md §Requisitos funcionales juego
+- RNF: 12 (RNF-01 a RNF-12) → repo:saas/docs/requisitos.md §Requisitos no funcionales
+- Pruebas cierre Sprint 2: 276 (140 S1 + 136 juego) → repo:saas/docs/procesos.md §Pruebas por fichero, repo:saas/docs/sprint-2.md §Métricas
+- Pruebas tras Fase 7: 322 (+46) → repo:saas/docs/log.md 2026-11-03, repo:saas/docs/sprint-2.md §Métricas
+- Endpoints API: 23 → repo:saas/docs/arquitectura.md §API tabla, repo:saas/docs/sprint-2.md §Métricas
+- Migraciones SQL: 5 (001–005) → repo:saas/docs/arquitectura.md §Backend módulos, repo:saas/docs/sprint-2.md §Métricas
+- Código backend: ~2.300 líneas, frontend: ~1.150, CSS: ~950, juego: ~14.800, pruebas: ~5.050 → repo:saas/docs/sprint-2.md §Métricas
+- Dependencias producción: 6 → repo:saas/docs/sprint-2.md §Métricas
+- Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones (24+5), 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → repo:saas/docs/juego.md §Sistemas tabla, repo:saas/docs/sprint-2.md §Métricas
+- Capturas DoneTonic: 29/10/2026 con dos sprints cerrados → repo:saas/docs/sprint-1.md §Capturas, repo:saas/docs/sprint-2.md §Capturas
+- Burndown entrega Sprint 1: 16 PBIs (P1–P14, P18, P19) → repo:saas/docs/sprint-1.md §Evolución tabla
+- Backlog Sprint 2 registrado al cierre (29/10) → repo:saas/docs/sprint-2.md §Evolución, repo:saas/docs/decisiones.md D-19
+- Fase 7 PR #58 02/11/2026, arreglos PR #59 03/11/2026 → repo:saas/docs/log.md
+- Hito 4 PRs #37–#41 23/10/2026 → repo:saas/docs/sprint-1.md §Hito 4
+- PBI P19 (Cloud Run) añadido a mitad de Sprint 1 → repo:saas/docs/sprint-1.md §Cambio alcance, repo:saas/docs/decisiones.md D-16
+- OAuth 2.0 RFC 6749 citado en flujo Google → repo:saas/docs/arquitectura.md §Flujos, fuentes/bibliografia-extra.md
+- bcrypt citado en seguridad contraseñas → repo:saas/docs/arquitectura.md §Seguridad tabla, fuentes/bibliografia-extra.md
+- Vampire Survivors género survivor → repo:saas/docs/juego.md §Concepto, fuentes/bibliografia-extra.md
+- Resumen ≥150 palabras, Abstract ≥120 palabras → elements/preambulo.tex (comprobado visualmente en bitácora)
+- 35 figuras, 29 tablas, 18447 palabras → verificar.py output en bitácora
+- Trazabilidad completa P1–P48, T1–T82 en a4-trazabilidad.tex → chapters/a4-trazabilidad.tex tabla
+- Anexo desarrollo dos sprints mismo esquema → chapters/a1-desarrollo.tex estructura
+- fig:juego-arquitectura referenciada en 04b-juego.tex líneas 202 y 204 pero indefinida (LaTeX Warning) → Memoria.log
+- fig:modelo-datos letras 6.2 pt (mín 7.5) → revisar_maquetacion.py error reglas 16-18
+- fig:sec-confirmacion flecha discontinua cruza etiqueta 'verify token' → revisar_maquetacion.py error reglas 16-18
+- fig:burndown-s2 no encontrado en página 84, solo tabla → revisar_maquetacion.py error
+- Overfull hbox a4-trazabilidad.tex líneas 206-207 y 377-378 → log compilación
+- PDF contiene «??» por referencias rotas → verificar.py error
+
+Qué está bien: La memoria compila (98 páginas), verificar.py pasa en estructura/cifras/capturas/trazabilidad/Resumen/Abstract. La prosa es profesional sin cadenas «La figura X muestra…» en caps. 4 y 4b (subfiguras agrupadas). Hito 4 no aparece como pendiente. Anexo desarrollo tiene dos sprints con mismo esquema y explica recta Sprint 2. Trazabilidad completa en a4. Imágenes únicas con \ref en el resto.
+
+Qué falla (bloquea TERMINADO):
+1. **fig:juego-arquitectura** referenciada dos veces en 04b-juego.tex antes de su definición → referencia indefinida, «??» en PDF.
+2. **fig:modelo-datos** (diagrama ER) encogido: letras 6.2 pt < 7.5 pt mínimo (reglas 16-18).
+3. **fig:sec-confirmacion** (diagrama secuencia): flecha discontinua cruza etiqueta «verify token» (reglas 16-18).
+4. **fig:burndown-s2** referenciada en a1-desarrollo.tex pero no aparece en la página (flota o label incorrecto).
+5. **Overfull hbox** en a4-trazabilidad.tex (URLs largas en columna PR).
+6. Falta ejecutar `revisar_umlsd.py` en los 11 diagramas de secuencia y corregir sus errores.
+
+Correcciones directas del revisor (2 archivos):
+- `chapters/04b-juego.tex`: mover la figura `fig:juego-arquitectura` ANTES de su primera referencia (sección 4.1) y asegurar que no flote después.
+- `chapters/a4-trazabilidad.tex`: corregir overfull hbox añadiendo `\allowbreak` en URLs largas de la columna PR.
+
+El resto (diagramas TikZ/pgf-umlsd, fig:burndown-s2, revisar_umlsd.py, revisión visual final) son tareas para el constructor.
+
+**Correcciones del revisor:** `(cambio) chapters/04b-juego.tex`, `(cambio) chapters/a4-trazabilidad.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `revisar_umlsd.py` sobre los 11 diagramas de secuencia (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2) y corregir todos los errores que reporte (etiquetas con acentos, paréntesis en \mess, participantes no declarados, flechas que cruzan cajas, node distance).
+- Replantear `fig:modelo-datos` (04-descripcion.tex) para que las letras sean ≥7,5 pt: reducir columnas, usar cajas más anchas, evitar escalado excesivo, separar entidades.
+- Replantear `fig:sec-confirmacion` (04-descripcion.tex) para que la flecha discontinua no cruce la etiqueta «verify token»: usar codos (|-/-|) y separar nodos.
+- Corregir `fig:burndown-s2` en `a1-desarrollo.tex`: asegurar que el pgfplots figure con label `fig:burndown-s2` aparezca en la página y no flote; revisar que no haya conflicto con la tabla de evolución.
+- Verificar que overfull hbox en `a4-trazabilidad.tex` desaparece tras recompilar (ya se añadió \allowbreak en URLs; si persiste, reducir fuente local o usar \sloppy).
+- Revisión visual de los 11 diagramas en PDF compilado: letras ≥7,5 pt, sin cruces, sin palabras partidas, codos correctos (reglas 16-18).
+- Revisión visual final del PDF página a página (regla 15): ninguna página con una sola imagen, ninguna figura repetida, flechas con `$\rightarrow$`, todo citado con `\ref`, no hay secciones de 1–2 líneas, no hay párrafos repetidos entre capítulos.
+- Volver a ejecutar `comando_prueba` hasta verde total (compila, verificar.py OK, revisar_maquetacion.py OK).
+
+## 2026-11-24 13:59 · 🧠 Conocimiento guardado
+
+[[como-mover-una-figura-antes-de-su-primera-referencia-en-late]] · [[corregir-overfull-hbox-en-longtable-con-urls-largas]] · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos]] · [[agrupar-capturas-relacionadas-en-subfiguras-subcaption]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de]] · [[capturas-de-donetonic-disponibles-en-el-repo-8-imagenes]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]]

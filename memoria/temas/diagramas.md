@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "diagramas"
-notas: 16
+notas: 17
 ---
 # diagramas
 
@@ -23,6 +23,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 - ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m|Diagramas de secuencia pgf-umlsd: reglas para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir|Diagramas de secuencia: límite de 6 participantes (agrupar o partir)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista|Diagramas: ninguna línea/flecha atraviesa cajas, codos y distancia suficiente]]
 - ⚖️ [[memoria/conocimiento/decisiones/limites-y-calidad-de-diagramas-participantes-legibilidad-rou|Límites y calidad de diagramas (participantes, legibilidad, routing)]]
@@ -34,4 +35,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[pgfplots]] · [[verificacion]] · [[plantuml]] · [[diagramas-secuencia]] · [[memoria-procesos]] · [[secuencia]]
+[[latex]] · [[tikz]] · [[pgf-umlsd]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[pgfplots]] · [[verificacion]] · [[plantuml]] · [[diagramas-secuencia]] · [[memoria-procesos]] · [[maquetación]]

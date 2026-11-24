@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T13:08:44+01:00",
+ "generado": "2026-11-24T13:59:02+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -829,7 +829,8 @@
     "scrum",
     "burndown",
     "memoria-procesos",
-    "sprint-2"
+    "sprint-2",
+    "anexo"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1659,6 +1660,22 @@
    "ruta": "memoria/conocimiento/datos/campos-de-proyecto-json-y-su-proposito.md"
   },
   {
+   "id": "dato:capturas-de-donetonic-disponibles-en-el-repo-8-imagenes",
+   "tipo": "dato",
+   "titulo": "Capturas de DoneTonic disponibles en el repo (8 imágenes)",
+   "temas": [
+    "capturas",
+    "donetonic",
+    "evidencias",
+    "memoria"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo-8-imagenes.md"
+  },
+  {
    "id": "dato:capturas-de-donetonic-disponibles-en-el-repo",
    "tipo": "dato",
    "titulo": "Capturas de DoneTonic disponibles en el repo",
@@ -1743,6 +1760,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos.md"
+  },
+  {
+   "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
+   "tipo": "dato",
+   "titulo": "Cifras clave del proyecto contrastadas con fuentes (35 datos)",
+   "temas": [
+    "datos",
+    "memoria",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos.md"
   },
   {
    "id": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
@@ -3086,6 +3118,22 @@
    "ruta": "memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir.md"
   },
   {
+   "id": "decision:diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m",
+   "tipo": "decision",
+   "titulo": "Diagramas de secuencia pgf-umlsd: reglas para pasar revisar_maquetacion.py",
+   "temas": [
+    "diagramas",
+    "latex",
+    "maquetación",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m.md"
+  },
+  {
    "id": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
    "tipo": "decision",
    "titulo": "Diagramas: ninguna línea/flecha atraviesa cajas, codos y distancia suficiente",
@@ -3578,7 +3626,8 @@
    "temas": [
     "latex",
     "redaccion",
-    "tfg"
+    "tfg",
+    "maquetación"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3766,7 +3815,9 @@
     "elementos-fijos",
     "plantilla",
     "portada",
-    "tfg"
+    "tfg",
+    "latex",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3973,6 +4024,22 @@
    ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr.md"
+  },
+  {
+   "id": "receta:agrupar-capturas-relacionadas-en-subfiguras-subcaption",
+   "tipo": "receta",
+   "titulo": "Agrupar capturas relacionadas en subfiguras (subcaption)",
+   "temas": [
+    "figuras",
+    "latex",
+    "maquetación",
+    "subcaption"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/agrupar-capturas-relacionadas-en-subfiguras-subcaption.md"
   },
   {
    "id": "receta:api-del-juego-con-validacion-anti-trampas",
@@ -4756,6 +4823,21 @@
    "ruta": "memoria/conocimiento/recetas/como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg.md"
   },
   {
+   "id": "receta:como-mover-una-figura-antes-de-su-primera-referencia-en-late",
+   "tipo": "receta",
+   "titulo": "Cómo mover una figura antes de su primera referencia en LaTeX",
+   "temas": [
+    "figuras",
+    "latex",
+    "maquetación"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-mover-una-figura-antes-de-su-primera-referencia-en-late.md"
+  },
+  {
    "id": "receta:como-probar-la-configuracion-en-local-hito-4",
    "tipo": "receta",
    "titulo": "Cómo probar la configuración en local (Hito 4)",
@@ -4997,6 +5079,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l.md"
+  },
+  {
+   "id": "receta:corregir-overfull-hbox-en-longtable-con-urls-largas",
+   "tipo": "receta",
+   "titulo": "Corregir overfull hbox en longtable con URLs largas",
+   "temas": [
+    "latex",
+    "overfull",
+    "tablas"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/corregir-overfull-hbox-en-longtable-con-urls-largas.md"
   },
   {
    "id": "receta:creacion-del-primer-administrador-mediante-variables-de-ento",
@@ -5317,9 +5414,13 @@
    "temas": [
     "latex",
     "memoria",
-    "tfg"
+    "tfg",
+    "flechas",
+    "tipografia"
    ],
-   "proyectos": [],
+   "proyectos": [
+    "memoria-procesos"
+   ],
    "confianza": "verificado",
    "ruta": "memoria/conocimiento/recetas/flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de.md"
   },
@@ -6173,14 +6274,14 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 185,
+   "peso": 190,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 73,
+   "peso": 76,
    "ruta": "memoria/temas/memoria.md"
   },
   {
@@ -6243,7 +6344,7 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
@@ -6278,7 +6379,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 26,
+   "peso": 27,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -6299,7 +6400,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 32,
+   "peso": 33,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -6320,7 +6421,7 @@
    "id": "tema:datos",
    "tipo": "tema",
    "titulo": "datos",
-   "peso": 6,
+   "peso": 7,
    "ruta": "memoria/temas/datos.md"
   },
   {
@@ -6341,7 +6442,7 @@
    "id": "tema:overfull",
    "tipo": "tema",
    "titulo": "overfull",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/overfull.md"
   },
   {
@@ -6383,7 +6484,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 25,
+   "peso": 27,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6397,7 +6498,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -6565,7 +6666,7 @@
    "id": "tema:donetonic",
    "tipo": "tema",
    "titulo": "donetonic",
-   "peso": 51,
+   "peso": 52,
    "ruta": "memoria/temas/donetonic.md"
   },
   {
@@ -6623,6 +6724,13 @@
    "titulo": "sprint-2",
    "peso": 1,
    "ruta": "memoria/temas/sprint-2.md"
+  },
+  {
+   "id": "tema:anexo",
+   "tipo": "tema",
+   "titulo": "anexo",
+   "peso": 4,
+   "ruta": "memoria/temas/anexo.md"
   },
   {
    "id": "tema:auth",
@@ -6982,13 +7090,6 @@
    "ruta": "memoria/temas/rareza.md"
   },
   {
-   "id": "tema:anexo",
-   "tipo": "tema",
-   "titulo": "anexo",
-   "peso": 3,
-   "ruta": "memoria/temas/anexo.md"
-  },
-  {
    "id": "tema:gestión",
    "tipo": "tema",
    "titulo": "gestión",
@@ -7048,8 +7149,15 @@
    "id": "tema:capturas",
    "tipo": "tema",
    "titulo": "capturas",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/capturas.md"
+  },
+  {
+   "id": "tema:evidencias",
+   "tipo": "tema",
+   "titulo": "evidencias",
+   "peso": 1,
+   "ruta": "memoria/temas/evidencias.md"
   },
   {
    "id": "tema:inventario",
@@ -7237,7 +7345,7 @@
    "id": "tema:diagramas",
    "tipo": "tema",
    "titulo": "diagramas",
-   "peso": 16,
+   "peso": 17,
    "ruta": "memoria/temas/diagramas.md"
   },
   {
@@ -7391,7 +7499,7 @@
    "id": "tema:maquetación",
    "tipo": "tema",
    "titulo": "maquetación",
-   "peso": 6,
+   "peso": 10,
    "ruta": "memoria/temas/maquetación.md"
   },
   {
@@ -7916,7 +8024,7 @@
    "id": "tema:flechas",
    "tipo": "tema",
    "titulo": "flechas",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/flechas.md"
   },
   {
@@ -8037,6 +8145,13 @@
    "titulo": "json",
    "peso": 1,
    "ruta": "memoria/temas/json.md"
+  },
+  {
+   "id": "tema:tipografia",
+   "tipo": "tema",
+   "titulo": "tipografia",
+   "peso": 1,
+   "ruta": "memoria/temas/tipografia.md"
   },
   {
    "id": "tema:registro",
@@ -9556,6 +9671,11 @@
   {
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "tema:sprint-2",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:anexo",
    "tipo": "trata"
   },
   {
@@ -12354,6 +12474,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo-8-imagenes",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo-8-imagenes",
+   "a": "tema:donetonic",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo-8-imagenes",
+   "a": "tema:evidencias",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo-8-imagenes",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo-8-imagenes",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "dato:capturas-de-donetonic-disponibles-en-el-repo",
    "a": "tema:donetonic",
    "tipo": "trata"
@@ -12632,6 +12777,26 @@
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
    "a": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp",
    "tipo": "enlaza"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
+   "a": "tema:datos",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos",
@@ -17019,6 +17184,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m",
+   "a": "tema:diagramas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m",
+   "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -18515,6 +18705,11 @@
   },
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -19051,6 +19246,16 @@
   {
    "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
    "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
@@ -20242,6 +20447,31 @@
    "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr",
    "a": "receta:como-agrupar-capturas-con-subfigure-dos-por-fila",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-subcaption",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-subcaption",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-subcaption",
+   "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-subcaption",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:agrupar-capturas-relacionadas-en-subfiguras-subcaption",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:api-del-juego-con-validacion-anti-trampas",
@@ -22549,6 +22779,26 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-mover-una-figura-antes-de-su-primera-referencia-en-late",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-mover-una-figura-antes-de-su-primera-referencia-en-late",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-mover-una-figura-antes-de-su-primera-referencia-en-late",
+   "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-mover-una-figura-antes-de-su-primera-referencia-en-late",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "receta:como-probar-la-configuracion-en-local-hito-4",
    "a": "tema:correo",
    "tipo": "trata"
@@ -23337,6 +23587,26 @@
    "de": "receta:corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l",
    "a": "receta:limitar-altura-de-capturas-para-evitar-paginas-con-una-sola",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:corregir-overfull-hbox-en-longtable-con-urls-largas",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-overfull-hbox-en-longtable-con-urls-largas",
+   "a": "tema:overfull",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-overfull-hbox-en-longtable-con-urls-largas",
+   "a": "tema:tablas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:corregir-overfull-hbox-en-longtable-con-urls-largas",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:creacion-del-primer-administrador-mediante-variables-de-ento",
@@ -24302,6 +24572,21 @@
    "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
    "a": "tema:tfg",
    "tipo": "trata"
+  },
+  {
+   "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "a": "tema:flechas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "a": "tema:tipografia",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:flechas-reales-en-captions-y-texto-rightarrow-en-lugar-de",

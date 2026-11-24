@@ -1,13 +1,13 @@
 ---
 tipo: "decision"
 titulo: "Una sola portada oficial y elementos fijos de la plantilla TFG"
-temas: ["elementos-fijos", "plantilla", "portada", "tfg"]
+temas: ["elementos-fijos", "plantilla", "portada", "tfg", "latex", "memoria"]
 claves: ["elements/portada.tex", "elements/preambulo.tex", "segunda portada", "declaracion", "resumen", "abstract"]
 proyectos: ["memoria-procesos"]
-fuentes: ["../../memoria/reglas-tfg.md"]
+fuentes: ["../../memoria/reglas-tfg.md", "memoria/reglas-tfg.md regla 1"]
 confianza: "verificado"
 fecha: "2026-11-22"
-actualizado: "2026-11-22"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[elementos-fijos]] · [[plantilla]] · [[portada]] · [[tfg]]
@@ -26,5 +26,8 @@ Temas: [[elementos-fijos]] · [[plantilla]] · [[portada]] · [[tfg]]
 > — `../../memoria/reglas-tfg.md`
 
 Relacionado: [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[portada-unica-oficial-del-tfg-elements-portada-tex]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]]
+
+## Ampliación (2026-11-24, memoria-procesos)
+La memoria debe usar EXCLUSIVAMENTE la portada oficial de `elements/portada.tex`. En `elements/preambulo.tex` el bloque «Segunda portada» (textblock con logos, título, autor) DEBE ELIMINARSE. Lo que queda: configuración de página, declaración de autoría, Resumen (≥150 palabras), Abstract (≥120 palabras, mismo formato). Archivos protegidos: `elements/portada.tex`, `Memoria.tex`, `include/configuracion.tex`, `include/colores.tex`, `include/opciones.tex`, `include/extra.tex`, `figs/*`. Verificación: PDF compilado tiene exactamente una portada (la oficial), seguida de declaración, resumen, abstract, índices.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

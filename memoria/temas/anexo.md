@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "anexo"
-notas: 3
+notas: 4
 ---
 # anexo
 
@@ -17,8 +17,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «anexo» (este archivo se 
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator|Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en anexo desarrollo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/trazabilidad-completa-requisito-pbi-tarea-pr-en-anexo-a4-tra|Trazabilidad completa requisito → PBI → tarea → PR en anexo a4-trazabilidad.tex]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[longtable]] · [[trazabilidad]] · [[memoria]] · [[anexos]] · [[scrum]] · [[tfg]] · [[memoria-procesos]] · [[sprint]]
+[[scrum]] · [[memoria-procesos]] · [[longtable]] · [[trazabilidad]] · [[memoria]] · [[donetonic]] · [[metricas]] · [[retrospectiva]] · [[burndown]] · [[sprint-2]] · [[anexos]] · [[tfg]]
