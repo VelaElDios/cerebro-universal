@@ -113,8 +113,10 @@ entrega cuenta 16 (P1–P14, P18 y P19); 32 + 50 = 82 tareas; 276 pruebas.
   `prueba-tecnica/`. Las antiguas (`figs/capturas/app-*.png`, `figs/capturas/donetonic-*.png`) ya no
   valen. Verticales (móvil): `width=0.35\textwidth`; el resto, `width=0.9\textwidth` como máximo, y siempre
   `height=0.42\textheight,keepaspectratio` (regla 8: ninguna página con una sola imagen).
-- Diagramas de secuencia grandes: dentro de `\resizebox{\textwidth}{!}{...}` para que no se salgan, y si
-  ocupan casi una página, con `\begin{adjustbox}{max width=\textwidth,max totalheight=0.6\textheight}`.
+- Diagramas (TikZ y de secuencia): **nunca** dentro de `\resizebox`, `adjustbox` ni `scale`: encogen las letras
+  por debajo de 7,5 pt (reglas 16 y 19). Tienen que caber a tamaño real: en los de secuencia, separación pequeña
+  (`\newinst[1]` o `[2]`), nombres y mensajes cortos (2-3 palabras) y como mucho 6 participantes; si aun así
+  no cabe, se parte en dos diagramas.
 - **Cómo se escribe un diagrama de secuencia** (ejemplo compilado y probado con esta plantilla). El
   entorno es `sequencediagram` (en minúsculas; **no** existen `sequenceDiagram` ni un entorno `alt`: para alternativas, `sdblock`): participantes con
   `\newthread`/`\newinst`, llamadas anidadas con `call` (origen, mensaje, destino, respuesta), mensajes
@@ -127,7 +129,6 @@ entrega cuenta 16 (P1–P14, P18 y P19); 32 + 50 = 82 tareas; 276 pruebas.
 ```latex
 \begin{figure}[htbp]
 \centering
-\resizebox{\textwidth}{!}{%
 \begin{sequencediagram}
   \newthread{nav}{Navegador}
   \newinst[2]{api}{API (Express)}
@@ -142,7 +143,7 @@ entrega cuenta 16 (P1–P14, P18 y P19); 32 + 50 = 82 tareas; 276 pruebas.
   \begin{sdblock}{alt}{cuenta pendiente}
     \mess{api}{403 + enlace de reenvío}{nav}
   \end{sdblock}
-\end{sequencediagram}}
+\end{sequencediagram}
 \caption{Inicio de sesión local.}
 \label{fig:sec-login}
 \end{figure}
