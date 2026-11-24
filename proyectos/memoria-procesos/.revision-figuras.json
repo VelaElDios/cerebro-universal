@@ -831,5 +831,21 @@
   "problemas": [
    "La etiqueta de texto 'su mejor partida' está colocada exactamente encima de una línea vertical que sale de la caja 'users' hacia la caja 'juego_records'."
   ]
+ },
+ "be2778142edc2b0507d9c8aad6d58a20": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua que conecta la tabla 'session' con la tabla 'users' tiene encima la etiqueta 'userId', la cual cruza directamente la línea y afecta su claridad.",
+   "La línea horizontal que sale de la tabla 'users' hacia la derecha pasa justo debajo de la etiqueta 'su club', intersecando muy cerca de la misma."
+  ]
+ },
+ "c4ac7c405cae9507ceea743b736704bd": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua que conecta la caja 'session' con la caja 'users' atraviesa el texto 'userId'."
+  ]
+ },
+ "0b487d8804e02ec86f14f8fc139aeaba": {
+  "ok": true
  }
 }
