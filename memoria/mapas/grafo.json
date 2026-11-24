@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T01:19:31+01:00",
+ "generado": "2026-11-24T05:12:20+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -1719,7 +1719,8 @@
     "verificacion",
     "metricas",
     "trazabilidad",
-    "proyecto"
+    "proyecto",
+    "sprints"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -7038,7 +7039,7 @@
    "id": "tema:sprints",
    "tipo": "tema",
    "titulo": "sprints",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/sprints.md"
   },
   {
@@ -12522,6 +12523,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
    "a": "tema:proyecto",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos",
+   "a": "tema:sprints",
    "tipo": "trata"
   },
   {

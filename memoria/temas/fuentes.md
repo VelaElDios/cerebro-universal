@@ -31,4 +31,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Temas relacionados
 
-[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[memoria]] · [[metricas]] · [[test]] · [[trazabilidad]] · [[proyecto]] · [[datos]] · [[juego]] · [[verificar.py]] · [[grada-colchonera]]
+[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[memoria]] · [[metricas]] · [[test]] · [[trazabilidad]] · [[proyecto]] · [[sprints]] · [[datos]] · [[juego]] · [[verificar.py]]

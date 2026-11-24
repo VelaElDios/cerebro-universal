@@ -1,13 +1,13 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (31 datos)"
-temas: ["fuentes", "memoria", "verificacion", "metricas", "trazabilidad", "proyecto"]
+temas: ["fuentes", "memoria", "verificacion", "metricas", "trazabilidad", "proyecto", "sprints"]
 claves: ["19 PBIs", "29 PBIs", "82 tareas", "276 pruebas", "322 pruebas", "23 endpoints", "5 migraciones", "6 dependencias", "36 jugadores", "2 entrenadores", "29 armas", "16 pasivas", "29 combinaciones", "6 ultras", "16 equipos", "10 jefes", "5 ambientes", "26 selecciones", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["docs/sprint-1.md, docs/sprint-2.md, docs/juego.md, docs/arquitectura.md, docs/procesos.md, docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "sprint-1.md, sprint-2.md, arquitectura.md, decisiones.md, log.md, procesos.md, juego.md, requisitos.md"]
+fuentes: ["docs/sprint-1.md, docs/sprint-2.md, docs/juego.md, docs/arquitectura.md, docs/procesos.md, docs/log.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md, repo:saas/docs/juego.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "sprint-1.md, sprint-2.md, arquitectura.md, decisiones.md, log.md, procesos.md, juego.md, requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/procesos.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
-actualizado: "2026-11-23"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[fuentes]] · [[memoria]] · [[verificacion]]
@@ -108,5 +108,22 @@ relacionado: Inventario de diagramas obligatorios y su estado actualizado, Traza
 relacionado: Inventario de diagramas obligatorios y su estado actualizado, Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py
 
 Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]]
+
+## Ampliación (2026-11-24, memoria-procesos)
+|
+  - Sprint 1: 19 PBIs (P1–P19), 32 tareas (T1–T32). Burndown de entrega: 16 PBIs (P1–P14, P18, P19).
+  - Sprint 2: 29 PBIs (P20–P48), 50 tareas (T33–T82).
+  - Total: 48 PBIs, 82 tareas.
+  - Pruebas: 276 al cierre Sprint 2, 322 tras Fase 7.
+  - Endpoints API: 23.
+  - Migraciones SQL: 5.
+  - Líneas backend (src/): ~2.300.
+  - Líneas frontend (ui.js, api.js, ui/): ~1.150.
+  - Líneas CSS: ~950.
+  - Líneas juego (public/js/game/): ~14.800.
+  - Líneas pruebas: ~5.050.
+  - Dependencias producción: 6.
+  - Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
+relacionado: Métricas del proyecto (Tabla 5.3), Trazabilidad completa (Anexo B)
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

@@ -343,13 +343,9 @@ El registro es el flujo más largo de la aplicación, porque en él se decide si
         \mess{api}{409}{fe}
       \end{sdblock}
       \begin{sdblock}{else}{nuevo}
-        \begin{call}{srv}{hash}{srv}{hash}
+        \begin{call}{srv}{hash y crea}{srv}{usuario}
         \end{call}
-        \begin{call}{srv}{crea usuario}{srv}{usuario}
-        \end{call}
-        \begin{call}{srv}{firma token}{srv}{token}
-        \end{call}
-        \begin{call}{srv}{envia correo}{srv}{enviado}
+        \begin{call}{srv}{firma y envia}{srv}{enviado}
         \end{call}
         \mess{api}{201}{fe}
       \end{sdblock}

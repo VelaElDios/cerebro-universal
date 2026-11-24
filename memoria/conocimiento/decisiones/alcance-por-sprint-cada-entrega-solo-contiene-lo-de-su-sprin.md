@@ -7,7 +7,7 @@ proyectos: ["memoria-procesos"]
 fuentes: ["../../memoria/reglas-tfg.md", "memoria/reglas-tfg.md"]
 confianza: "verificado"
 fecha: "2026-11-21"
-actualizado: "2026-11-23"
+actualizado: "2026-11-24"
 ---
 
 Temas: [[latex]] · [[memoria]] · [[scrum]] · [[tfg]]
@@ -31,3 +31,11 @@ La memoria actual (versión 4) cubre los dos sprints completos porque es la entr
 - Ejemplo: Sprint 1 → sin capítulo de juego.
 - Título, Resumen, Abstract, Introducción, Conclusiones y Anexos deben reflejar exactamente el alcance del sprint actual.
 - No arrastrar contenido de sprints futuros ni mantener secciones obsoletas de sprints pasados.
+
+## Ampliación (2026-11-24, memoria-procesos)
+|
+  - Memoria del Sprint N: solo contenido de ese sprint.
+  - Ejemplo: Sprint 1 → sin capítulo de juego.
+  - Título, Resumen, Abstract, Introducción, Conclusiones y Anexos deben reflejar exactamente el alcance del sprint actual.
+  - No arrastrar contenido de sprints futuros ni mantener secciones obsoletas de sprints pasados.
+relacionado: Prosa de TFG sin listas de capturas (regla 13 Javier)
