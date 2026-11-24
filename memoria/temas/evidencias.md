@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «evidencias» (este archiv
 
 ## Temas relacionados
 
-[[capturas]] · [[donetonic]] · [[memoria]]
+[[capturas]] · [[donetonic]] · [[memoria]] · [[imagenes]]

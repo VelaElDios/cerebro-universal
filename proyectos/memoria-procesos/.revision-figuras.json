@@ -686,5 +686,39 @@
  },
  "68f70558c78f06141d80e7c0e44a811e": {
   "ok": true
+ },
+ "8a259c6c7f38feedd74a33f3b7795bb6": {
+  "ok": false,
+  "problemas": [
+   "La línea horizontal que sale de la tabla 'users' hacia la tabla 'juego_perfiles' atraviesa la etiqueta de relación 'su club'.",
+   "La línea vertical discontinua que sale de la tabla 'session' hacia la tabla 'users' atraviesa la etiqueta 'userId'."
+  ]
+ },
+ "4479c91d4d42011e10a8537677dde63f": {
+  "ok": false,
+  "problemas": [
+   "La línea de respuesta discontinua etiquetada como 'ok' desde Frontend hacia Usuario atraviesa la línea de vida principal del Usuario antes de llegar a ella.",
+   "La flecha 'POST register' cruza directamente la línea de vida del Frontend.",
+   "La flecha 'usuario' discontinua atraviesa la línea de vida de la API.",
+   "La flecha de respuesta '201' que sale del bloque 'else' cruza las líneas de vida de Frontend y API."
+  ]
+ },
+ "a48acecb704e2db8965ff1e2a1553706": {
+  "ok": true
+ },
+ "245e1e4f201b5853fe92fa2084d4c1be": {
+  "ok": true
+ },
+ "71f02e7b0e5e59c2f09072d1e0e89fa9": {
+  "ok": true
+ },
+ "18477ec8dcd45043935bafb291f29bfa": {
+  "ok": true
+ },
+ "9975d275a0c543c390e089708e683d98": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta 'iniciarPartida' que va desde la API hacia juegoService cruza por encima de la línea de vida de API y de la flecha discontinua de retorno 'partida'."
+  ]
  }
 }

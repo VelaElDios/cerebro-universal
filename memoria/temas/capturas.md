@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "capturas"
-notas: 10
+notas: 11
 ---
 # capturas
 
@@ -15,6 +15,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Evitar páginas con una sola imagen (Regla 8): capturas y diagramas en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas: agrupar capturas relacionadas con `subfigure` en LaTeX]]
 
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier|Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)]] · ⚠️ propuesto
+
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo-8-imagenes|Capturas de DoneTonic disponibles en el repo (8 imágenes)]] · ⚠️ propuesto
@@ -25,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Temas relacionados
 
-[[figuras]] · [[latex]] · [[memoria]] · [[donetonic]] · [[trazabilidad]] · [[tfg]] · [[maquetacion]] · [[requisitos]] · [[grada-colchonera]] · [[saas]] · [[subcaption]] · [[subfigure]]
+[[figuras]] · [[latex]] · [[memoria]] · [[tfg]] · [[donetonic]] · [[trazabilidad]] · [[maquetacion]] · [[requisitos]] · [[grada-colchonera]] · [[saas]] · [[redaccion]] · [[maquetación]]

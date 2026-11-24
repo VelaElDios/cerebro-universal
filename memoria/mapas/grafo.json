@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-24T13:59:02+01:00",
+ "generado": "2026-11-24T15:08:22+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -830,7 +830,8 @@
     "burndown",
     "memoria-procesos",
     "sprint-2",
-    "anexo"
+    "anexo",
+    "sprint2"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1667,7 +1668,8 @@
     "capturas",
     "donetonic",
     "evidencias",
-    "memoria"
+    "memoria",
+    "imagenes"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1768,7 +1770,10 @@
    "temas": [
     "datos",
     "memoria",
-    "verificacion"
+    "verificacion",
+    "metricas",
+    "sprints",
+    "trazabilidad"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3627,7 +3632,9 @@
     "latex",
     "redaccion",
     "tfg",
-    "maquetación"
+    "maquetación",
+    "capturas",
+    "figuras"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -6365,14 +6372,14 @@
    "id": "tema:metricas",
    "tipo": "tema",
    "titulo": "metricas",
-   "peso": 18,
+   "peso": 19,
    "ruta": "memoria/temas/metricas.md"
   },
   {
    "id": "tema:trazabilidad",
    "tipo": "tema",
    "titulo": "trazabilidad",
-   "peso": 20,
+   "peso": 21,
    "ruta": "memoria/temas/trazabilidad.md"
   },
   {
@@ -6484,7 +6491,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 27,
+   "peso": 28,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6701,7 +6708,7 @@
    "id": "tema:sprint2",
    "tipo": "tema",
    "titulo": "sprint2",
-   "peso": 2,
+   "peso": 3,
    "ruta": "memoria/temas/sprint2.md"
   },
   {
@@ -7149,7 +7156,7 @@
    "id": "tema:capturas",
    "tipo": "tema",
    "titulo": "capturas",
-   "peso": 10,
+   "peso": 11,
    "ruta": "memoria/temas/capturas.md"
   },
   {
@@ -7158,6 +7165,13 @@
    "titulo": "evidencias",
    "peso": 1,
    "ruta": "memoria/temas/evidencias.md"
+  },
+  {
+   "id": "tema:imagenes",
+   "tipo": "tema",
+   "titulo": "imagenes",
+   "peso": 1,
+   "ruta": "memoria/temas/imagenes.md"
   },
   {
    "id": "tema:inventario",
@@ -7205,7 +7219,7 @@
    "id": "tema:sprints",
    "tipo": "tema",
    "titulo": "sprints",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/sprints.md"
   },
   {
@@ -9676,6 +9690,11 @@
   {
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "tema:anexo",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:sprint2",
    "tipo": "trata"
   },
   {
@@ -12495,6 +12514,11 @@
   },
   {
    "de": "dato:capturas-de-donetonic-disponibles-en-el-repo-8-imagenes",
+   "a": "tema:imagenes",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:capturas-de-donetonic-disponibles-en-el-repo-8-imagenes",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -12791,6 +12815,21 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
    "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
+   "a": "tema:metricas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
+   "a": "tema:sprints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos",
+   "a": "tema:trazabilidad",
    "tipo": "trata"
   },
   {
@@ -18706,6 +18745,16 @@
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:maquetación",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:figuras",
    "tipo": "trata"
   },
   {

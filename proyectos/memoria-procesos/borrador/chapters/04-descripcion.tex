@@ -190,17 +190,16 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\scriptsize, text width=4.2cm, inner sep=4pt},
-    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\scriptsize, text width=5.8cm, inner sep=4pt},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=3.8cm, inner sep=4pt},
+    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=5.0cm, inner sep=4pt},
     pk/.style={font=\scriptsize\bfseries},
     uk/.style={font=\scriptsize\itshape},
     arrow/.style={-{Stealth[length=2mm]}, thick, color=tema},
     rel/.style={font=\tiny, inner sep=1pt}
 ]
-    % Layout compacto para caber en \textwidth
-    \node[entity] (session) at (-7.5,0) {
+    % Layout más compacto
+    \node[entity] (session) at (-5.0,0) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \texttt{sess JSON}\\
@@ -220,14 +219,14 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{apodo\_clave TEXT} \uk\\
         \texttt{avatar TEXT}
     };
-    \node[entity] (perfiles) at (8.0,0) {
+    \node[entity] (perfiles) at (5.5,0) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \texttt{datos JSONB}\\
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entitywide] (records) at (0,-7.5) {
+    \node[entitywide] (records) at (0,-6.5) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \texttt{alias TEXT}\\
@@ -239,11 +238,10 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{created\_at TIMESTAMPTZ}
     };
     % Flechas con codos para evitar cruces
-    \draw[arrow] (users.east) -- ++(0.5,0) |- (perfiles.west) node[above=2pt, rel, pos=0.25] {su club};
-    \draw[arrow] (users.south) -- ++(0,-0.5) -| (records.north) node[left=2pt, rel, pos=0.75] {su mejor partida};
-    \draw[arrow, dashed] (session.east) -- ++(0.5,0) |- (users.west) node[above=2pt, rel, pos=0.25] {userId};
+    \draw[arrow] (users.east) -- ++(0.3,0) |- (perfiles.west) node[above=2pt, rel, pos=0.25] {su club};
+    \draw[arrow] (users.south) -- ++(0,-0.3) -| (records.north) node[left=2pt, rel, pos=0.75] {su mejor partida};
+    \draw[arrow, dashed] (session.east) -- ++(0.3,0) |- (users.west) node[above=2pt, rel, pos=0.25] {userId};
 \end{tikzpicture}
-\end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}
 \end{figure}

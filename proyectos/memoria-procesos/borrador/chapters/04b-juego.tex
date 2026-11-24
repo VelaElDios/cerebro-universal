@@ -225,6 +225,7 @@ Los valores de la Tabla~\ref{tab:juego-sistemas} incluyen ya las 5 habilidades, 
 \caption{Arquitectura del juego: simulación, presentación y servidor.}
 \label{fig:juego-arquitectura}
 \end{figure}
+\FloatBarrier
 
 El juego se organiza en tres bloques separados: la simulación pura, que no toca el DOM ni el audio; la presentación (pantallas, renderizado, HUD y sonido); y el servidor, que valida las partidas y comparte con el cliente las reglas del club. Esa división es la que se ve en la Figura~\ref{fig:juego-arquitectura}: la simulación determinista (sin DOM ni audio) emite eventos que la presentación traduce a gráficos y sonido, y el servidor valida las partidas usando las mismas reglas (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) que el cliente.
 

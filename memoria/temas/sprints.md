@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sprints"
-notas: 11
+notas: 12
 ---
 # sprints
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 ## Datos
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos|Cifras clave del proyecto contrastadas con fuentes (31 datos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos|Cifras clave del proyecto contrastadas con fuentes (35 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos|Cifras clave del proyecto contrastadas con fuentes (38 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (fusionada)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas|Cifras clave del proyecto La Grada Colchonera contrastadas]] · ⚠️ propuesto
@@ -26,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 
 ## Temas relacionados
 
-[[memoria]] · [[trazabilidad]] · [[metricas]] · [[grada-colchonera]] · [[scrum]] · [[sprint]] · [[memoria-procesos]] · [[latex]] · [[tfg]] · [[saas]] · [[fuentes]] · [[verificacion]]
+[[memoria]] · [[trazabilidad]] · [[metricas]] · [[grada-colchonera]] · [[scrum]] · [[sprint]] · [[memoria-procesos]] · [[latex]] · [[tfg]] · [[verificacion]] · [[saas]] · [[fuentes]]

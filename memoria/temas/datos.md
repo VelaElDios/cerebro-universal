@@ -28,4 +28,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «datos» (este archivo se 
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[verificacion]] · [[fuentes]] · [[juego]] · [[metricas]] · [[lua]] · [[general]] · [[grada-colchonera]] · [[métricas]] · [[proyecto]] · [[pruebas]]
+[[metricas]] · [[latex]] · [[memoria]] · [[verificacion]] · [[sprints]] · [[trazabilidad]] · [[fuentes]] · [[juego]] · [[lua]] · [[general]] · [[grada-colchonera]] · [[métricas]]

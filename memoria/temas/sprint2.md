@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "sprint2"
-notas: 2
+notas: 3
 ---
 # sprint2
 
@@ -9,6 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint2» (este archivo s
 
 ## Conceptos
 
+- 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator|Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en anexo desarrollo]] · ⚠️ propuesto
 - 💡 [[memoria/conocimiento/conceptos/burndown-real-vs-burndown-de-donetonic-en-sprint-2|Burndown real vs. DoneTonic en Sprint 2 (backlog registrado al cerrar el sprint)]] · ⚠️ propuesto
 
 ## Datos
@@ -17,4 +18,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint2» (este archivo s
 
 ## Temas relacionados
 
-[[scrum]] · [[burndown]] · [[donetonic]] · [[graficas]] · [[metricas]] · [[métricas]] · [[sprint]] · [[fases]] · [[fechas]] · [[pbis]] · [[tareas]]
+[[scrum]] · [[burndown]] · [[donetonic]] · [[metricas]] · [[graficas]] · [[métricas]] · [[sprint]] · [[retrospectiva]] · [[memoria-procesos]] · [[sprint-2]] · [[anexo]] · [[fases]]
