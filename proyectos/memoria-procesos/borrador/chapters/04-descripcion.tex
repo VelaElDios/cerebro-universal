@@ -238,14 +238,11 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{created\_at TIMESTAMPTZ}
     };
     % Relaciones: flechas rectas de caja a caja, sin codos ni cruces
-    \draw[arrow, dashed] (session.east) -- (users.west);
-    \draw[arrow] (users.east) -- (perfiles.west);
+    \draw[arrow, dashed] (session.east) -- node[rel, above=2pt] {userId} (users.west);
+    \draw[arrow] (users.east) -- node[rel, above=2pt, align=center] {su\\club} (perfiles.west);
     \draw[arrow] (users.south) -- (records.north);
-    % Etiquetas de relación en zonas libres: encima de las flechas horizontales
-    % y a la izquierda de la flecha vertical, sin tocar cajas ni líneas
-    \node[rel, anchor=south] at (-3.25, 1.15) {userId};
-    \node[rel, align=center, anchor=south] at (3.1, 1.15) {su\\club};
-    \node[rel, align=center, anchor=east] at (-0.25, -2.4) {su mejor\\partida};
+    % Etiqueta de la relación vertical en zona libre, a la izquierda de la flecha
+    \node[rel, align=center, anchor=east] at (-1.6, -2.4) {su mejor\\partida};
 \end{tikzpicture}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}

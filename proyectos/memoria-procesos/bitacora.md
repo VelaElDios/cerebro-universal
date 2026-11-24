@@ -16189,3 +16189,45 @@ He corregido los dos fallos que bloqueaban la prueba. El diagrama `fig:modelo-da
 Sin tiempo para llamar a openrouter-grandes (nvidia/nemotron-3-ultra-550b-a55b:free)
 
 El paso del constructor queda en `borrador/` sin revisar. Prueba: ❌ falla. Se revisará en el próximo paso.
+
+## 2026-11-24 22:23 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Solo queda el fallo medido en el PDF: la etiqueta «su mejor partida» del diagrama fig:modelo-datos queda demasiado cerca de la flecha vertical users → juego_records. La desplazo a la izquierda para que no toque la línea ni el texto.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ \TU/lmtt/m/n/12 UnauthorizedError\TU/Carlito(0)/m/n/12 , \TU/lmtt/m/n/12 ForbiddenError\TU/Carlito(0)/m/n/12 , \TU/lmtt/m/n/12 AccountPendingError\TU/…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` (compilación + `verificar.py` + `revisar_maquetacion.py` + medición de figuras). Si sale todo en verde, hacer la revisión final y marcar la memoria como terminada; si aparece otro fallo medido, corregirlo sin tocar lo que ya pasa.
+
+## 2026-11-24 22:26 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- Compilación: OK (100 páginas, LuaLaTeX).
+- verificar.py: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, trazabilidad completa, cifras contrastadas).
+- revisar_maquetacion.py: ❌ falla en la Figura 3.2 (fig:modelo-datos, página 35 del PDF): la línea discontinua que conecta 'session' con 'users' pasa exactamente a través de la etiqueta 'userId' colocada justo encima, dificultando su lectura (reglas 16-18 de Javier).
+- Prosa sin cadenas «La figura X muestra…» en caps. 4 y 4b (subfiguras agrupadas).
+- Hito 4 descrito como completado, no pendiente.
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
+- Trazabilidad completa P1–P48/T1–T82 en a4.
+- Imágenes únicas con \ref en el resto.
+- Overfull hbox previos en a1-desarrollo.tex corregidos (no aparecen en la salida actual).
+
+Qué está bien: La memoria compila, verificar.py pasa, la prosa es profesional, las capturas están integradas en párrafos con subfiguras, no hay secciones de 1-2 líneas, el pipeline se describe una vez, las imágenes DoneTonic/producción aparecen una sola vez, Resumen/Abstract cumplen mínimos, trazabilidad completa.
+
+Qué falla (bloquea TERMINADO): En el diagrama entidad-relación (fig:modelo-datos) la etiqueta «userId» se superpone a la línea discontinua que une session con users. El script de maquetación detecta que la línea pasa por el texto, lo que incumple las reglas 16-18 (legibilidad de diagramas).
+
+Corrección directa: Cambiar la colocación de la etiqueta «userId» (y por coherencia también «su club») para que quede sobre la flecha con un pequeño desplazamiento vertical (midway, above=2pt), en lugar de coordenadas absolutas que quedan demasiado pegadas a la línea.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Aplicar el cambio en chapters/04-descripcion.tex (sustituir las líneas indicadas).
+- Ejecutar `comando_prueba` (compilación + verificar.py + revisar_maquetacion.py) para confirmar que el fallo del diagrama desaparece y todo pasa en verde.
+- Si la prueba pasa, hacer la revisión final página a página y marcar la memoria como terminada.

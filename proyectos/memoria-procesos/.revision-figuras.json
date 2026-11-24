@@ -803,5 +803,20 @@
  },
  "65e2621900feaa059f792ea3a574b625": {
   "ok": true
+ },
+ "7bdd0cdd0fbe9ae2608f338eab425437": {
+  "ok": true
+ },
+ "0a1c6e29040c6e01bd4c578b6fbabe26": {
+  "ok": false,
+  "problemas": [
+   "En el diagrama de entidad-relación (Figura 3.2), la línea discontinua que conecta 'session' con 'users' pasa exactamente a través de la etiqueta de texto 'userId' colocada justo encima de dicha línea, lo que puede dificultar su lectura."
+  ]
+ },
+ "214cb3a5a79da006ffae3143d5dbbe72": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta 'su club' situada sobre la flecha entre 'users' y 'juego_perfiles' intersecta visualmente con el borde de la tabla 'juego_perfiles'."
+  ]
  }
 }
