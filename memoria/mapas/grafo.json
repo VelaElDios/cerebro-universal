@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T00:30:00+01:00",
+ "generado": "2026-11-25T01:27:29+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -4391,6 +4391,22 @@
    "ruta": "memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu.md"
   },
   {
+   "id": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
+   "tipo": "receta",
+   "titulo": "Cómo corregir solapes de etiquetas en diagramas TikZ de entidad-relación",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti.md"
+  },
+  {
    "id": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
    "tipo": "receta",
    "titulo": "Cómo corregir warnings de pgf-umlsd en diagramas de secuencia",
@@ -6051,7 +6067,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 176,
+   "peso": 177,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6065,7 +6081,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 26,
+   "peso": 27,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -6177,14 +6193,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 23,
+   "peso": 24,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 28,
+   "peso": 29,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -21634,6 +21650,31 @@
    "de": "receta:como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu",
    "a": "receta:fundir-secciones-de-1-2-parrafos-regla-9-javier",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",

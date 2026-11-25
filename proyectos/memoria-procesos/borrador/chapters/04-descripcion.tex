@@ -236,12 +236,13 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    % Relación session -> users: flecha discontinua horizontal con etiqueta midway y above=10pt
-    \draw[arrow, dashed] (session.east) -- node[rel, midway, above=10pt] {userId} (users.west);
-    % Relación users -> perfiles: flecha horizontal con etiqueta midway, above=10pt, align=center
-    \draw[arrow] (users.east) -- node[rel, midway, above=10pt, align=center] {su\\club} (perfiles.west);
-    % Relación users -> records: flecha vertical con etiqueta anclada al trayecto (left=12pt, pos=0.5)
-    \draw[arrow] (users.south) -- node[rel, left=12pt, pos=0.5, align=center] {su mejor\\partida} (records.north);
+    % Relación session -> users: flecha discontinua horizontal. La etiqueta se aparta
+    % con yshift y ancla sur para que la línea no toque el texto (reglas 16-18).
+    \draw[arrow, dashed] (session.east) -- node[rel, midway, anchor=south, yshift=24pt] {userId} (users.west);
+    % Relación users -> perfiles: flecha horizontal con la misma separación vertical.
+    \draw[arrow] (users.east) -- node[rel, midway, anchor=south, yshift=24pt, align=center] {su\\club} (perfiles.west);
+    % Relación users -> records: flecha vertical con la etiqueta a la izquierda, anclada al trayecto.
+    \draw[arrow] (users.south) -- node[rel, anchor=east, xshift=-18pt, pos=0.5, align=center] {su mejor\\partida} (records.north);
 \end{tikzpicture}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}

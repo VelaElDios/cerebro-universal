@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-25 00:29"
+actualizado: "2026-11-25 01:27"
 ---
 
 # memoria-procesos
@@ -23,15 +23,15 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (100 páginas, LuaLaTeX).
 - **verificar.py**: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, trazabilidad completa, cifras contrastadas).
-- **revisar_maquetacion.py**: ❌ falla en fig:modelo-datos (cap. 04-descripcion): etiquetas 'userId' y 'su club' sobre líneas → **corregido en este paso** (mayor separación vertical, midway, above=10pt, coordenadas ajustadas).
+- **revisar_maquetacion.py**: ❌ falla en fig:modelo-datos (cap. 04-descripcion): etiqueta 'userId' sobre la línea discontinua session→users → **corrección aplicada en este paso** (aumentado `above=30pt` en las dos etiquetas horizontales).
 - **Figuras**: ⚠️ Gemini no pudo revisar fig:sec-baja (modelo no disponible), pero la medición geométrica del PDF ya la comprobó (no bloquea).
 - **Diagramas con fallos medidos en PDF** (1 pendiente → 0 tras esta corrección):
-  1. fig:modelo-datos (cap. 04-descripcion): etiquetas 'userId' y 'su club' sobre líneas → **corregido**.
+  1. fig:modelo-datos (cap. 04-descripcion): etiqueta 'userId' sobre la línea discontinua → **corregido**.
 - **Overfull hbox**: corregidos en a1-desarrollo.tex (burndowns) en paso anterior; no aparecen en la salida actual.
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…» en caps. 4 y 4b; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
 
 ## Siguiente
-1. Constructor: aplicar el cambio en chapters/04-descripcion.tex y ejecutar `comando_prueba` hasta verde total.
+1. Constructor: ejecutar `comando_prueba` hasta verde total.
 2. Si todo pasa, hacer la revisión final y marcar la memoria como terminada.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

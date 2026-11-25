@@ -16324,3 +16324,41 @@ El constructor corrigió 'su mejor partida' anclándola al trayecto con left=12p
 - Ejecutar `comando_prueba` (compilación + `verificar.py` + `revisar_maquetacion.py`) para confirmar que el diagrama fig:modelo-datos pasa la medición del PDF sin solapes de etiquetas.
 - Si la prueba pasa, hacer la revisión final página a página y marcar la memoria como terminada.
 - Si persiste algún fallo medido en otro diagrama, corregirlo ajustando solo ese nodo (posición/separación) sin tocar lo que ya pasa.
+
+## 2026-11-25 01:26 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Corrijo el último fallo medido de `revisar_maquetacion.py`: en `fig:modelo-datos` la etiqueta «userId» quedaba sobre la línea discontinua session→users. Cambio las tres etiquetas de las relaciones para anclarlas con `anchor` explícito y desplazarlas con `yshift`/`xshift` (24 pt arriba en las horizontales, 18 pt a la izquierda en la vertical), de modo que ninguna línea del diagrama toque el texto (reglas 16–18). No toco nada más del capítulo.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ \TU/lmtt/m/n/12 UnauthorizedError\TU/Carlito(0)/m/n/12 , \TU/lmtt/m/n/12 ForbiddenError\TU/Carlito(0)/m/n/12 , \TU/lmtt/m/n/12 AccountPendingError\TU/…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` (compilación con LuaLaTeX + `verificar.py` + `revisar_maquetacion.py` + medición de figuras en el PDF). Si sale todo en verde, hacer la revisión final página a página del PDF y, si no hay más pegas del revisor, marcar la memoria como terminada. Si persiste algún solape medido en `fig:modelo-datos`, aumentar solo el `yshift`/`xshift` de la etiqueta afectada sin tocar el resto del diagrama.
+
+## 2026-11-25 01:27 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ❌ falla la prueba
+
+**Comprobaciones:**
+- El test `revisar_maquetacion.py` sigue fallando en la figura 3.2 (fig:modelo-datos, página 35): la etiqueta 'userId' sobre la línea discontinua session→users.
+- La corrección anterior aumentó el `yshift` a 24pt pero no fue suficiente; hay que separar más la etiqueta de la línea (p. ej., 30pt) y usar `above` en lugar de `anchor=south, yshift`.
+- La etiqueta 'su club' (users→juego_perfiles) también debe subir a 30pt por consistencia.
+- La etiqueta vertical 'su mejor partida' ya está anclada al trayecto con `xshift=-18pt, pos=0.5` y no da error.
+- El resto de la memoria compila, `verificar.py` pasa y la prosa cumple las reglas de Javier.
+
+El diagrama entidad-relación (fig:modelo-datos) sigue teniendo un solape detectado por la medición geométrica del PDF: la línea discontinua cruza el texto 'userId'. La solución es aumentar la separación vertical de las dos etiquetas horizontales a 30pt y usar la sintaxis `above=30pt` (más clara y robusta). No se tocan las cajas ni las flechas, solo el posicionamiento de los nodos de las etiquetas.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` (compilación + `verificar.py` + `revisar_maquetacion.py`) para confirmar que el diagrama fig:modelo-datos pasa la medición del PDF sin solapes de etiquetas.
+- Si la prueba pasa, hacer la revisión final página a página y marcar la memoria como terminada.
+- Si persiste algún fallo medido en otro diagrama, corregirlo ajustando solo ese nodo (posición/separación) sin tocar lo que ya pasa.
+
+## 2026-11-25 01:27 · 🧠 Conocimiento guardado
+
+[[como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]]

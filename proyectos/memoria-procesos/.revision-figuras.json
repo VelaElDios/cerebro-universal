@@ -847,5 +847,11 @@
  },
  "0b487d8804e02ec86f14f8fc139aeaba": {
   "ok": true
+ },
+ "7761051dfc6dfa1e115cedc7930cd73e": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua que sale de la caja 'session' hacia la caja 'users' cruza por encima del texto 'userId'."
+  ]
  }
 }

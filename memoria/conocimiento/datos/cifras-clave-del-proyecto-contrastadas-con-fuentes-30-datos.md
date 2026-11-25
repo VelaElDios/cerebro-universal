@@ -4,10 +4,10 @@ titulo: "Cifras clave del proyecto contrastadas con fuentes (30 datos)"
 temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints", "36 jugadores", "10 jefes", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
-actualizado: "2026-11-24"
+actualizado: "2026-11-25"
 ---
 
 Temas: [[metricas]] · [[trazabilidad]] · [[verificacion]]
@@ -66,5 +66,8 @@ Todas las cifras del proyecto (PBIs, tareas, pruebas, endpoints, migraciones, l�
   - Migraciones: 5.
   - Código backend: ~2.300 líneas; juego: ~14.800 líneas; pruebas: ~5.050 líneas.
   - Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
+
+## Ampliación (2026-11-25, memoria-procesos)
+Estas cifras se han extraído literalmente de las fuentes del repositorio y se usan en la memoria para cumplir la regla de que todo número mayor que 20 aparezca en las fuentes. Los números pequeños (como 19, 16, 29, 50, 82, 5, 23) también se contrastan a mano.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
