@@ -26,6 +26,6 @@ problema: El borrador tenía ~45 frases sueltas tipo «La figura X muestra…» 
 solucion: Cada figura (incluidas las que agrupan subfiguras) debe tener al menos una `\ref` en la prosa que explica el flujo. Las subfiguras se citan con `\subref` o `\ref` dentro de la explicación.
 > — `memoria/reglas-tfg.md (regla 10, 13)` (cita sin comprobar)
 
-Relacionado: [[cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]]
+Relacionado: [[cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

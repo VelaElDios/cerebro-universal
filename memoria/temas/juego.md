@@ -26,7 +26,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «juego» (este archivo se 
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (38+ datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (fusionada)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/discrepancia-en-las-fuentes-24-armas-9-3-vs-29-armas-14-metr|Discrepancia en las fuentes: 24 armas (§9.3) vs 29 armas (§14 métricas)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
@@ -35,4 +35,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «juego» (este archivo se 
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[trazabilidad]] · [[metricas]] · [[memoria]] · [[fuentes]] · [[verificacion]] · [[memoria-procesos]] · [[pruebas]] · [[tfg]] · [[datos]] · [[sprints]]
+[[grada-colchonera]] · [[saas]] · [[trazabilidad]] · [[fuentes]] · [[memoria]] · [[metricas]] · [[requisitos]] · [[sprints]] · [[memoria-procesos]] · [[pruebas]] · [[tfg]] · [[verificacion]]

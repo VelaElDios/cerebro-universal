@@ -15,8 +15,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «despliegue» (este archiv
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (38+ datos)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[migraciones]] · [[ci-cd]] · [[cloud-run]] · [[github-actions]] · [[metricas]] · [[trazabilidad]] · [[verificacion]] · [[memoria-procesos]] · [[memoria]] · [[endpoints]]
+[[grada-colchonera]] · [[saas]] · [[migraciones]] · [[ci-cd]] · [[cloud-run]] · [[github-actions]] · [[cifras]] · [[endpoints]] · [[fuentes]] · [[juego]] · [[memoria]] · [[memoria-procesos]]

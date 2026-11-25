@@ -22,4 +22,4 @@ Temas: [[latex]] · [[memoria]] · [[python]] · [[tfg]]
 > Antes de marcar TERMINADO, el PDF se revisa página a página, y `revisar_maquetacion.py` debe salir en verde. Lo que no mide el script (que las tablas se lean bien y que el orden tenga sentido) lo comprueba el revisor.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[scripts-de-verificacion-automatica-en-el-repo]]
+Relacionado: [[reglas-de-maquetacion-de-javier-resumen-accionable]] · [[verificacion-automatica-de-diagramas-con-scripts-revisar-fig]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]] · [[scripts-de-verificacion-automatica-en-el-repo]] · [[comprobar-la-maquetacion-de-un-tfg-automaticamente]]

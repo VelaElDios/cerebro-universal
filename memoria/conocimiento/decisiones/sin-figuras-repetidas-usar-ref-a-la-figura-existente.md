@@ -17,7 +17,7 @@ Cada archivo de imagen se incluye una única vez en el documento. Para referenci
 > Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone `\ref` a la figura que ya existe.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]]
+Relacionado: [[una-imagen-en-un-solo-sitio-y-en-el-resto-una-referencia]] · [[como-centralizar-capturas-duplicadas-entre-capitulos-en-late]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]]
 
 ## Ampliación (2026-11-24, memoria-procesos)
 Ejemplo: La captura del correo de confirmación (fig:correo-confirmacion) se muestra solo en Capítulo 5 (Evaluación). En Capítulo 4 se escribe: «el correo de confirmación transaccional se recibió correctamente en un buzón de Gmail (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion})».

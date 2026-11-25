@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "redaccion"
-notas: 10
+notas: 9
 ---
 # redaccion
 
@@ -9,9 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «redaccion» (este archivo
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura|Cómo escribir prosa de TFG integrando capturas (sin «La figura X muestra…»)]]
 - 🧪 [[memoria/conocimiento/recetas/fundir-secciones-de-1-2-parrafos-regla-9-javier|Fundir secciones de 1-2 párrafos (regla 9 Javier)]]
-- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas: agrupar capturas relacionadas con `subfigure` en LaTeX]]
+- 🧪 [[memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura|Prosa de TFG integrando capturas con `subfigure` en LaTeX: reglas, plantillas y ejemplos]]
 - 🧪 [[memoria/conocimiento/recetas/reescribir-frases-la-figura-x-muestra-como-prosa-integrada|Reescribir frases «La figura X muestra…» como prosa integrada]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)

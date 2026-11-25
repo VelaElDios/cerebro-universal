@@ -22,6 +22,6 @@ Cuando `revisar_maquetacion.py` detecta solapes en un diagrama de secuencia con 
 > Las flechas discontinuas del bloque alt inferior ('403' y la respuesta desde el Servicio) cruzan por encima del texto o de los bordes internos del frame alt sin dejar espacio adecuado.; La línea horizontal punteada divisoria del bloque 'alt / ultimo admin' corta la zona visual de interacción de la API y el Servicio.
 > — `chapters/04-descripcion.tex (diagrama fig:sec-baja)` (cita sin comprobar)
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram]] · [[como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd]] · [[como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

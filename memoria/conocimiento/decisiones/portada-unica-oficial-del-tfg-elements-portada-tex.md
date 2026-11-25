@@ -17,7 +17,7 @@ La memoria debe usar exclusivamente la portada oficial definida en `elements/por
 > **Una sola portada: la oficial del TFG**, la de `elements/portada.tex` (escudo, Universidad de Castilla-La Mancha y Escuela Superior de Ingeniería Informática, tipo de trabajo, título, autor y fecha, todo centrado). `Memoria.tex` hace `\input{elements/portada}`.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]]
+Relacionado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]]
 
 ## Ampliación (2026-11-23, )
 - Usar exclusivamente `elements/portada.tex` como portada (contiene escudo UCLM/ESIIAB, tipo de trabajo, título, autor, fecha, todo centrado).

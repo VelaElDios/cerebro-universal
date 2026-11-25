@@ -9,7 +9,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetación» (este arch
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Agrupar capturas relacionadas en subfiguras con `subcaption` (LaTeX)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila) usando subcaption en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo|Cómo evitar overfull hbox con \texttt largo]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-rutas-y-diagramas|Cómo evitar overfull hbox en rutas y diagramas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-mover-una-figura-antes-de-su-primera-referencia-en-late|Cómo mover una figura antes de su primera referencia en LaTeX]] · ⚠️ propuesto
@@ -25,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetación» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[maquetacion]] · [[reglas-tfg]] · [[tfg]] · [[capturas]] · [[subfigure]] · [[memoria]] · [[duplicados]] · [[memoria-procesos]] · [[ref]] · [[reglas-javier]]
+[[latex]] · [[figuras]] · [[maquetacion]] · [[reglas-tfg]] · [[capturas]] · [[memoria-procesos]] · [[tfg]] · [[subfigure]] · [[memoria]] · [[duplicados]] · [[gestion-contenido]] · [[ref]]

@@ -17,6 +17,6 @@ Al agrupar capturas con \begin{subfigure}...\subcaption{...}\label{fig:x-a}...\l
 > ERROR: chapters/05-evaluacion.tex:137: la figura fig:prueba-tecnica-permitido no se cita en el texto (usa \ref{fig:prueba-tecnica-permitido})
 > — `resultado de verificar.py en este paso (comando_prueba)` (cita sin comprobar)
 
-Relacionado: [[como-se-agrupan-capturas-con-subfigure]] · [[agrupar-capturas-con-subfigure]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te]]
+Relacionado: [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[agrupar-capturas-con-subfigure]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

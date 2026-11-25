@@ -16,7 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-31-datos|Cifras clave del proyecto contrastadas con fuentes (31 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos|Cifras clave del proyecto contrastadas con fuentes (35 datos)]] · ⚠️ propuesto
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos|Cifras clave del proyecto contrastadas con fuentes (38 datos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (38+ datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp|Cifras clave del proyecto contrastadas con fuentes (fusionada)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas|Cifras clave del proyecto La Grada Colchonera contrastadas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad|Estado de completitud de sprints y trazabilidad]] · ⚠️ propuesto
@@ -26,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprints» (este archivo s
 
 ## Temas relacionados
 
-[[trazabilidad]] · [[memoria]] · [[metricas]] · [[grada-colchonera]] · [[scrum]] · [[verificacion]] · [[saas]] · [[sprint]] · [[memoria-procesos]] · [[latex]] · [[tfg]] · [[fuentes]]
+[[memoria]] · [[trazabilidad]] · [[grada-colchonera]] · [[metricas]] · [[scrum]] · [[memoria-procesos]] · [[tfg]] · [[verificacion]] · [[fuentes]] · [[juego]] · [[pruebas]] · [[saas]]

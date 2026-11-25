@@ -5,7 +5,7 @@ temas: ["diagramas", "latex", "memoria", "tfg", "tikz"]
 claves: ["6 participantes", "node distance", "text width", "resizebox", "pdflscape", "codos", "|-", "-|"]
 proyectos: []
 fuentes: ["../../memoria/reglas-tfg.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-18"
 actualizado: "2026-11-18"
 ---
@@ -18,3 +18,5 @@ Temas: [[diagramas]] · [[latex]] · [[memoria]] · [[tfg]] · [[tikz]]
 > — `../../memoria/reglas-tfg.md`
 
 Relacionado: [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]] · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]] · [[diagramas-de-secuencia-legibles-max-6-participantes-flechas]]
+
+> ⚠️ Posible contradicción con [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]]: La nota A exige tamaño de fuente ≥ 8-9 pt («letras del diagrama escalado ≥ 8-9 pt»), mientras que la nota B fija el mínimo en ≥ 7,5 pt («medir tamaño de fuente (debe ser ≥ 7.5 pt)»). Ambas hablan del mismo requisito (tamaño mínimo de letra en el PDF final) y dan cifras distintas.

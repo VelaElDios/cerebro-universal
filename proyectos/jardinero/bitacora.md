@@ -44,7 +44,7 @@ Lo que hace el jardinero en cada pasada.
 
 ## 2026-11-20 16:44 · 🌱 Pasada del jardinero
 
-- ✅ Citas comprobadas: 19 notas pasan a verificado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[como-anadir-en-longtables-para-evitar-filas-huerfanas]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]] · [[fundir-secciones-de-1-2-parrafos-regla-9-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[longtable-sin-fila-huerfana-al-final]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]]
+- ✅ Citas comprobadas: 19 notas pasan a verificado: [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[longtable-sin-fila-huerfana-al-final-regla-7-javier]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[agrupar-capturas-relacionadas-en-subfiguras-con-prosa-integr]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] · [[como-anadir-en-longtables-para-evitar-filas-huerfanas]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier]] · [[fundir-secciones-de-1-2-parrafos-regla-9-javier]] · [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] · [[longtable-sin-fila-huerfana-al-final]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas]]
 - 🔀 Notas repetidas fusionadas: 6
   - [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]] ← Fechas y estructura del Sprint 2 (6 fases + calidad, 29 PBIs, 50 tareas)
   - [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] ← Cómo agrupar capturas relacionadas con subfigure en LaTeX
@@ -63,7 +63,7 @@ Lo que hace el jardinero en cada pasada.
 
 ## 2026-11-21 17:43 · 🌱 Pasada del jardinero
 
-- ✅ Citas comprobadas: 3 notas pasan a verificado: [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]]
+- ✅ Citas comprobadas: 3 notas pasan a verificado: [[estructura-de-8-capitulos-para-la-memoria-tfg-esiiab-uclm]] · [[estructura-y-nomenclatura-de-ramas-por-hito-y-tarea-donetoni]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]]
 - 🔀 Notas repetidas fusionadas: 6
   - [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] ← Una sola portada oficial en elements/portada.tex
   - [[longtable-sin-fila-huerfana-al-final]] ← Que la última fila de una longtable no se quede sola en otra página
@@ -87,7 +87,7 @@ Lo que hace el jardinero en cada pasada.
   - [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] ← Referencia DoneTonic como herramienta de gestión ágil
   - [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] ← Cifras clave del proyecto verificadas en fuentes
   - [[formato-de-tablas-alineacion-tamanos-y-longtable]] ← Reglas de maquetación de tablas en LaTeX (alineación, anchos, longtable, código y rutas)
-  - [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] ← Prosa de TFG vs lista de capturas (regla 13 Javier)
+  - [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] ← Prosa de TFG vs lista de capturas (regla 13 Javier)
   - [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] ← Verificación obligatoria: revisar_maquetacion.py en verde + revisión página a página
   - [[limitar-altura-de-capturas-para-evitar-paginas-con-una-sola]] ← Corregir páginas con una sola imagen (Regla 8)
 - ⚠️ Contradicciones encontradas: 6
@@ -101,7 +101,7 @@ Lo que hace el jardinero en cada pasada.
 
 ## 2026-11-23 19:40 · 🌱 Pasada del jardinero
 
-- ✅ Citas comprobadas: 8 notas pasan a verificado: [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18) · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
+- ✅ Citas comprobadas: 8 notas pasan a verificado: [[referencia-donetonic-como-herramienta-de-gestion-agil-del-pr]] · [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] · Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18) · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py · [[legibilidad-de-diagramas-sin-cruces-sin-palabras-partidas-fl]] · [[revision-visual-final-pagina-a-pagina-regla-15-javier]] · [[validacion-final-del-pdf-antes-de-marcar-terminado]]
 - 🔀 Notas repetidas fusionadas: 6
   - [[reglas-de-figuras-tamano-flotantes-y-nada-de-paginas-solas]] ← Reglas de figuras y páginas (tamaños, flotantes, duplicados, flechas)
   - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Cómo agrupar capturas con subfigure
@@ -125,8 +125,8 @@ Lo que hace el jardinero en cada pasada.
   - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Cómo agrupar capturas relacionadas con subfigure (2 por fila)
   - [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] ← Inventario de diagramas obligatorios y su estado
   - [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] ← Una sola portada oficial y elementos fijos de la plantilla TFG
-  - [[como-se-agrupan-capturas-con-subfigure]] ← Agrupar capturas relacionadas en subfiguras (subcaption)
-  - [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] ← Imágenes repetidas — una sola aparición + \ref en el resto
+  - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Agrupar capturas relacionadas en subfiguras (subcaption)
+  - [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] ← Imágenes repetidas — una sola aparición + \ref en el resto
   - [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] ← Cada entrega solo lleva lo de su sprint (alcance coherente)
 - ⚠️ Contradicciones encontradas: 6
   - [[trazabilidad-requisito-pbi-tarea-pr-en-donetonic-y-github]] ↔ [[cifras-clave-del-proyecto-la-grada-colchonera-contrastadas]]: Nota A (en su advertencia ⚠️ sobre [[fases-del-sprint-2-y-prs-asociados]]) describe 6 fases para el Sprint 2 (Fase 1 a Fase 6). Nota B (en su Ampliación 2026-11-21) afirma explícitamente que el Sprint 2 tuvo **7 fases**.
@@ -136,3 +136,22 @@ Lo que hace el jardinero en cada pasada.
   - [[fechas-y-estructura-del-sprint-2-1-semana-29-pbis-50-tareas]] ↔ [[burndown-real-del-sprint-2-vs-graficas-donetonic-en-recta]]: Nota A afirma que el 27/10 (PR#55) se completó 1 PBI y el 29/10 (PR#56) 1 PBI; Nota B (tabla principal) dice que el 27/10 (PR#55) fue 0 PBIs (solo documentación) y el 29/10 (PR#56+docs) 2 PBIs, y su ampliación agrupa PR#55 y PR#56 el 29/10 con 2 PBIs, omitiendo el 27/10.
   - [[prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar]] ↔ [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]]: Nota B señala explícitamente que la carga del paquete `subcaption` está en `include/extra.tex` «según Nota A» y en `include/configuracion.tex` «según Nota B», contradiciéndose sobre la ubicación real. Además, Nota B describe dos estilos de referencia distintos (Opción A con sufijo de letra y Opción B con `subref` + «de la Figura»), presentándolos como provenientes de cada nota respectivamente.
 - 🔗 Enlaces nuevos entre notas parecidas: 138
+
+## 2026-11-25 21:20 · 🌱 Pasada del jardinero
+
+- ✅ Citas comprobadas: 4 notas pasan a verificado: [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar]] · [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]]
+- 🔀 Notas repetidas fusionadas: 6
+  - [[como-agrupar-capturas-con-subfigure-dos-por-fila]] ← Agrupar capturas relacionadas en subfiguras con `subcaption` (LaTeX)
+  - [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] ← Prosa de TFG sin listas de capturas: agrupar capturas relacionadas con `subfigure` en LaTeX
+  - [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] ← Cifras clave del proyecto contrastadas con fuentes (38 datos)
+  - [[como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d]] ← Cómo agrupar capturas relacionadas con subfigure en LaTeX
+  - [[cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico]] ← Imágenes repetidas: una sola aparición y \ref en el resto
+  - [[longtable-sin-fila-huerfana-al-final]] ← Tablas largas en longtable con última fila acompañada (\\*)
+- ⚠️ Contradicciones encontradas: 6
+  - [[diferencia-nomenclatura-tareas-hito-4-entre-donetonic-y-repo]] ↔ [[fechas-pbis-y-tareas-de-los-dos-sprints]]: La Nota A afirma que el Hito 4 tiene **6 tareas (T21–T26)** y que esas seis se marcaron hechas al cerrar el Sprint 1. La Nota B establece que el Hito 4 abarca **12 tareas (T21–T32)** dentro del Sprint 1.
+  - [[como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd]] ↔ [[diagramas-de-secuencia-legibles-max-6-participantes-flechas]]: La Nota A dice: «Nunca usar `resizebox`, `adjustbox` ni `scale`: encogen las letras por debajo de 7,5 pt». La Nota B dice: «`\resizebox` solo para reducciones menores; NO para forzar 9 columnas en ancho de página». Una prohíbe totalmente `resizebox`; la otra lo permite para reducciones menores.
+  - [[como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti]] ↔ [[como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl]]: La Nota A prohíbe explícitamente usar `resizebox`, `adjustbox` ni `scale` sobre el diagrama completo (reglas 16 y 19 de Javier). La Nota B recomienda usar `adjustbox{max width=\linewidth, max totalheight=0.6\textheight}` para escalar el diagrama. Ambas hablan del mismo tema (escalado global de diagramas TikZ ER) y dan instrucciones opuestas.
+  - [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] ↔ [[diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18]]: La Nota A permite `\resizebox` para «ajustes menores (pequeños encogimientos)»; la Nota B ordena «Quitar adjustbox/resizebox» y dice que no se arregla encogiendo el dibujo porque deja letras diminutas.
+  - [[rutas-de-documentacion-tras-reorganizacion-del-bundle-2026-1]] ↔ [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]]: La Nota A (19/11/2026) afirma que `documentacion-tecnica.md` **desaparece** y se mapea a `requisitos.md`/`arquitectura.md`; la Nota B cita `repo:saas/docs/documentacion-tecnica.md` como documento **fuente vigente** ("este documento") para volcar contenido a la memoria. Además, la Nota A lista ficheros LaTeX actualizados (`a4-trazabilidad.tex`, `a3-uso-ia.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex`) que no coinciden con la estructura de destinos de la Nota B (`capitulos/01-introduccion.tex`, `
+  - [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] ↔ [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]]: La nota A exige tamaño de fuente ≥ 8-9 pt («letras del diagrama escalado ≥ 8-9 pt»), mientras que la nota B fija el mínimo en ≥ 7,5 pt («medir tamaño de fuente (debe ser ≥ 7.5 pt)»). Ambas hablan del mismo requisito (tamaño mínimo de letra en el PDF final) y dan cifras distintas.
+- 🔗 Enlaces nuevos entre notas parecidas: 68

@@ -49,6 +49,6 @@ En el **Capítulo 3 (Propuesta)**, **Anexo A1 (Desarrollo)** y **cualquier otro 
 
 Fusionada con: Pipeline CI/CD descrito una sola vez en Cap 5 (regla 14 Javier)
 
-Relacionado: [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]]
+Relacionado: [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]] · [[reglas-de-maquetacion-de-javier-resumen-accionable]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

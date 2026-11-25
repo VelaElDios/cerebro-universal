@@ -20,4 +20,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «reglas-tfg» (este archiv
 
 ## Temas relacionados
 
-[[latex]] · [[maquetacion]] · [[maquetación]] · [[figuras]] · [[duplicados]] · [[memoria-procesos]] · [[ref]] · [[reglas-javier]] · [[diagramas]] · [[pgf-umlsd]] · [[memoria]] · [[adjustbox]]
+[[latex]] · [[maquetacion]] · [[maquetación]] · [[figuras]] · [[duplicados]] · [[gestion-contenido]] · [[memoria-procesos]] · [[ref]] · [[regla 10 javier]] · [[reglas-javier]] · [[diagramas]] · [[pgf-umlsd]]

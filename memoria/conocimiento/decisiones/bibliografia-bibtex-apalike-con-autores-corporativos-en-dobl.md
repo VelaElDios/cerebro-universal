@@ -22,7 +22,7 @@ En la memoria se usa BibTeX con estilo `apalike` (archivo `bib/ref.bib`). Reglas
 > @misc{express, author = {{Express}}, title = {Express, Node.js web application framework}, year = {s.f.}, howpublished = {\url{https://expressjs.com/}}}
 > — `bib/ref.bib`
 
-Relacionado: [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]]
+Relacionado: [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]] · [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]]
 
 ## Ampliación (2026-11-25, memoria-procesos)
 En BibTeX con estilo `apalike`, los autores que son organizaciones deben ir entre doble llave (`author = {{GitHub}}`) para que no se interprete la primera palabra como nombre y el resto como apellido. Todas las entradas deben llevar `year`; si la fuente no tiene fecha, usar `year = {s.f.}` (sin fecha). Esto evita citas como «[de Castilla-La Mancha, ]» o «[Neon, ]» sin año. Verificado en `bib/ref.bib` de la memoria.

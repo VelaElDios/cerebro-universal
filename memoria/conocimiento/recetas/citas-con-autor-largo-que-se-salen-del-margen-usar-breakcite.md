@@ -17,6 +17,6 @@ Cargar breakcites (después de hyperref), que deja partir las citas entre línea
 > Una cita con autor largo se sale del margen: breakcites. LaTeX mete cada cita en una caja que no se puede partir. Con autores largos («[Universidad de Castilla-La Mancha, 2026]») la cita no cabe al final de una línea y se sale del margen.
 > — `lecciones del cerebro (memoria-procesos)` (cita sin comprobar)
 
-Relacionado: [[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[como-evitar-overfull-hbox-con-texttt-largo]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]]
+Relacionado: [[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[como-evitar-overfull-hbox-con-texttt-largo]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

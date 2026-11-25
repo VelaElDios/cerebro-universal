@@ -21,4 +21,6 @@ problema: El borrador tenía una segunda portada con logos en elements/preambulo
 solucion: En elements/preambulo.tex, eliminar el bloque «Segunda portada» (los textblock con logos, título y autor). Dejar solo: configuración de página, declaración de autoría, Resumen (≥150 palabras) con Palabras clave, y Abstract en inglés (≥120 palabras) con Keywords, mismo formato que Resumen (\Large{\bft{Abstract}}).
 > — `memoria/reglas-tfg.md` (cita sin comprobar)
 
+Relacionado: [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[portada-unica-oficial-del-tfg-elements-portada-tex]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

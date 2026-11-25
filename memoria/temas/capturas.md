@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "capturas"
-notas: 12
+notas: 11
 ---
 # capturas
 
@@ -9,12 +9,11 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex|Cómo agrupar capturas relacionadas con subfigure en LaTeX]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila) usando subcaption en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi|Cómo referenciar capturas de pantalla en la memoria sin copiar archivos]]
 - 🧪 [[memoria/conocimiento/recetas/limitar-altura-de-capturas-para-evitar-paginas-con-una-sola|Evitar páginas con una sola imagen (Regla 8): capturas y diagramas en LaTeX]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas: agrupar capturas relacionadas con `subfigure` en LaTeX]]
+- 🧪 [[memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura|Prosa de TFG integrando capturas con `subfigure` en LaTeX: reglas, plantillas y ejemplos]]
 
 ## Decisiones (y por qué)
 
@@ -30,4 +29,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Temas relacionados
 
-[[figuras]] · [[latex]] · [[memoria]] · [[tfg]] · [[subfigure]] · [[donetonic]] · [[trazabilidad]] · [[maquetacion]] · [[subcaption]] · [[requisitos]] · [[grada-colchonera]] · [[saas]]
+[[figuras]] · [[latex]] · [[memoria]] · [[tfg]] · [[subfigure]] · [[donetonic]] · [[trazabilidad]] · [[maquetación]] · [[maquetacion]] · [[requisitos]] · [[grada-colchonera]] · [[saas]]

@@ -34,4 +34,8 @@ Cuando `revisar_maquetacion.py` detecta que una línea cruza el texto de una eti
 ## Ampliación (2026-11-25, memoria-procesos)
 1. Ejecutar `revisar_maquetacion.py` (o `comando_prueba`) para ver qué etiqueta y qué línea se solapan. 2. En el código TikZ del diagrama, localizar el `\draw` de la flecha y el `node` de la etiqueta. 3. Cambiar `anchor=south, yshift=<valor>` por `above=<valor_mayor>` (p. ej., 50pt). 4. Aplicar la misma separación a etiquetas homólogas en el mismo diagrama por consistencia. 5. Volver a ejecutar la prueba hasta que no haya solapes medidos. No usar `resizebox`, `adjustbox` ni `scale`: eso encoge las letras y no soluciona el solape geométrico.
 
+Relacionado: [[como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que]] · [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl]]: La Nota A prohíbe explícitamente usar `resizebox`, `adjustbox` ni `scale` sobre el diagrama completo (reglas 16 y 19 de Javier). La Nota B recomienda usar `adjustbox{max width=\linewidth, max totalheight=0.6\textheight}` para escalar el diagrama. Ambas hablan del mismo tema (escalado global de diagramas TikZ ER) y dan instrucciones opuestas.

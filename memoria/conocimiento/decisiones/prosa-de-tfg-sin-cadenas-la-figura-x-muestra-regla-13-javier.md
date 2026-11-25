@@ -14,7 +14,7 @@ Temas: [[latex]] · [[redaccion]] · [[tfg]]
 
 Aplicado en capítulos 04-descripcion (manual SaaS) y 04b-juego (manual juego). Cada grupo de capturas relacionadas forma una figura con subfiguras, y el texto explica qué hace el usuario y por qué la app responde, citando las subfiguras con \ref.
 
-Relacionado: [[como-se-agrupan-capturas-con-subfigure]] · [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]]
+Relacionado: [[como-agrupar-capturas-con-subfigure-dos-por-fila]] · [[sin-figuras-repetidas-usar-ref-a-la-figura-existente]] · [[prosa-de-tfg-sin-listas-de-capturas-regla-13-javier]] · [[cadenas-la-figura-x-muestra-prohibidas-prosa-integrada-con-s]] · [[reescribir-frases-la-figura-x-muestra-como-prosa-integrada]]
 
 ## Ampliación (2026-11-24, memoria-procesos)
 Aplicado en chapters/04-descripcion.tex (sección 6) y chapters/04b-juego.tex (sección 2). Cada grupo de capturas relacionadas forma una figura con subfiguras, y el texto explica la interacción usuario–aplicación.

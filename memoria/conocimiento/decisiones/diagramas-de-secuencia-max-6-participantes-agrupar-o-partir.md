@@ -5,7 +5,7 @@ temas: ["diagramas", "latex", "memoria", "plantuml", "tfg"]
 claves: ["diagrama secuencia", "6 participantes", "agrupar", "partir", "resizebox", "sequence diagram", "participantes", "6", "pdflscape"]
 proyectos: []
 fuentes: ["../../memoria/reglas-tfg.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-17"
 actualizado: "2026-11-23"
 ---
@@ -42,3 +42,5 @@ Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javie
 Fusionada con: Límite de 6 participantes en diagramas de secuencia
 
 Relacionado: [[diagramas-de-secuencia-legibles-max-6-participantes-flechas]] · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]]
+
+> ⚠️ Posible contradicción con [[diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18]]: La Nota A permite `\resizebox` para «ajustes menores (pequeños encogimientos)»; la Nota B ordena «Quitar adjustbox/resizebox» y dice que no se arregla encogiendo el dibujo porque deja letras diminutas.

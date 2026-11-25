@@ -23,3 +23,5 @@ solucion: Mapeo de rutas antiguas a nuevas: `documentacion-tecnica.md` → `requ
 Relacionado: [[como-actualizar-referencias-a-documentacion-tras-reorganizac]] · [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]] · [[como-referenciar-capturas-de-pantalla-en-la-memoria-sin-copi]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[como-mapear-este-documento-a-los-capitulos-de-la-memoria-tfg]]: La Nota A (19/11/2026) afirma que `documentacion-tecnica.md` **desaparece** y se mapea a `requisitos.md`/`arquitectura.md`; la Nota B cita `repo:saas/docs/documentacion-tecnica.md` como documento **fuente vigente** ("este documento") para volcar contenido a la memoria. Además, la Nota A lista ficheros LaTeX actualizados (`a4-trazabilidad.tex`, `a3-uso-ia.tex`, `05-evaluacion.tex`, `a1-desarrollo.tex`) que no coinciden con la estructura de destinos de la Nota B (`capitulos/01-introduccion.tex`, `

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "subfigure"
-notas: 7
+notas: 6
 ---
 # subfigure
 
@@ -9,11 +9,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subfigure» (este archivo
 
 ## Recetas (cómo lo hacemos)
 
-- 🧪 [[memoria/conocimiento/recetas/como-se-agrupan-capturas-con-subfigure|Agrupar capturas relacionadas en subfiguras con `subcaption` (LaTeX)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v|Cada \label de subfigura necesita su propio \ref en el texto (verificar.py lo exige)]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex|Cómo agrupar capturas relacionadas con subfigure en LaTeX]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila) usando subcaption en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure|Prosa de TFG sin listas de capturas: agrupar capturas relacionadas con `subfigure` en LaTeX]]
+- 🧪 [[memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura|Prosa de TFG integrando capturas con `subfigure` en LaTeX: reglas, plantillas y ejemplos]]
 
 ## Decisiones (y por qué)
 
@@ -25,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subfigure» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[subcaption]] · [[figuras]] · [[capturas]] · [[memoria]] · [[verificar]] · [[redaccion]] · [[tfg]] · [[maquetación]] · [[estilo]] · [[refs]] · [[maquetacion]]
+[[latex]] · [[subcaption]] · [[capturas]] · [[figuras]] · [[memoria]] · [[verificar]] · [[redaccion]] · [[tfg]] · [[maquetación]] · [[maquetacion]] · [[estilo]] · [[refs]]

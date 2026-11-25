@@ -30,4 +30,6 @@ Para que las tablas `longtable` no se salgan del margen (overfull hbox):
 ## Ampliación (2026-11-25, memoria-procesos)
 Para evitar overfull hbox en `longtable`: (1) Usar columnas `L{}`/`C{}`/`R{}` basadas en `p{}` (alineación superior) no `m{}`. (2) Sumar anchos de columna + 2\tabcolsep por separador ≤ \linewidth. (3) Usar `\small` al inicio de la tabla (`\AtBeginEnvironment{longtable}{\small}`). (4) En celdas con rutas/códigos largos, usar `\texttt{...}` con `\allowbreak` en puntos naturales. (5) En `pgfplots`, fijar `width=0.85\linewidth` (o menos) y `scale only axis` para que el área de dibujo no exceda el margen. (6) Reducir `text width` de nodos TikZ y `font=\footnotesize`/`\scriptsize` en etiquetas. Verificado en tablas de requisitos, herramientas, backlogs y gráficas burndown.
 
+Relacionado: [[como-evitar-overfull-hbox-en-tablas-anchas-con-longtable]] · [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth]] · [[como-evitar-overfull-hbox-en-rutas-y-diagramas]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

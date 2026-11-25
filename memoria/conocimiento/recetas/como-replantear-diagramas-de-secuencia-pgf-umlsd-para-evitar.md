@@ -73,6 +73,8 @@ Ejemplo corregido (registro):
 > Reglas 16-18: Figura 3.3 (fig:sec-registro), página 36 del PDF, chapters/04-descripcion.tex:335 (medido en el PDF): 2 solape(s) de cajas o textos: «usuario» con «HMAC», «usuario» con «firma».
 > — `memoria/chapters/04-descripcion.tex` (cita sin comprobar)
 
-Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier · Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py · Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18) · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]] · [[como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]]
+Relacionado: [[inventario-de-diagramas-obligatorios-y-su-estado-actualizado]] · Cómo corregir diagramas de secuencia pgf-umlsd para pasar reglas 16-18 de Javier · Cómo replantear diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py · Cómo corregir un diagrama de secuencia pgf-umlsd que falla en revisar_maquetacion.py (reglas 16-18) · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]] · [[como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l]] · [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]] · [[diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]]: La nota A exige tamaño de fuente ≥ 8-9 pt («letras del diagrama escalado ≥ 8-9 pt»), mientras que la nota B fija el mínimo en ≥ 7,5 pt («medir tamaño de fuente (debe ser ≥ 7.5 pt)»). Ambas hablan del mismo requisito (tamaño mínimo de letra en el PDF final) y dan cifras distintas.

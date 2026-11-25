@@ -17,7 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «requisitos» (este archiv
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos|Cifras clave del proyecto contrastadas con fuentes (38 datos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (38+ datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha|Inventario de capturas con trazabilidad a requisitos y fechas]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/requisitos-funcionales-del-juego-sprint-2-20-rj-con-trazabil|Requisitos funcionales del juego (Sprint 2) — 20 RJ con trazabilidad]] · ⚠️ propuesto
@@ -26,4 +26,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «requisitos» (este archiv
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[trazabilidad]] · [[sprint]] · [[donetonic]] · [[sprints]] · [[capturas]] · [[juego]] · [[memoria]] · [[tfg]] · [[scrum]] · [[metricas]]
+[[grada-colchonera]] · [[saas]] · [[trazabilidad]] · [[sprint]] · [[juego]] · [[memoria]] · [[tfg]] · [[donetonic]] · [[sprints]] · [[capturas]] · [[scrum]] · [[cifras]]

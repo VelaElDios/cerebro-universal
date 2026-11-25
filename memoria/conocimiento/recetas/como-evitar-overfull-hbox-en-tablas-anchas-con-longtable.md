@@ -25,6 +25,6 @@ Temas: [[latex]] · [[longtable]] · [[tablas]]
   4. Añadir `\setlength{\emergencystretch}{3em}` en preámbulo.
   5. `\AtBeginEnvironment{longtable}{\small}` para reducir tamaño de fuente.
 
-Relacionado: [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth]] · [[como-evitar-overfull-hbox-con-texttt-largo-en-longtable]] · [[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[corregir-overfull-hbox-en-longtable-con-urls-largas]]
+Relacionado: [[tablas-anchas-en-latex-usar-y-anchos-que-sumen-linewidth]] · [[como-evitar-overfull-hbox-con-texttt-largo-en-longtable]] · [[como-evitar-overfull-hbox-en-rutas-y-diagramas]] · [[corregir-overfull-hbox-en-longtable-con-urls-largas]] · [[como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

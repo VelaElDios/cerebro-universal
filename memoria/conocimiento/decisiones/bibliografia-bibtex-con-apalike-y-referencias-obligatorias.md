@@ -22,7 +22,7 @@ Temas: [[bibliografia]] · [[bibtex]] · [[latex]]
 > Bibliografía (bib/ref.bib, apalike): Scrum Guide, Express, Node.js, PostgreSQL, OAuth 2.0 (RFC 6749), bcrypt, GitHub Flow, GitHub Actions, Google Cloud Run, Vampire Survivors (género survivor) y el enunciado. Solo URLs que estén en las fuentes; todas con year ({s.f.} si no hay fecha); autores que son organizaciones con doble llave; todas citadas.
 > — `spec del proyecto, fuentes/bibliografia-extra.md` (cita sin comprobar)
 
-Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]]
+Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]] · [[bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl]]
 
 ## Ampliación (2026-11-23, memoria-procesos)
 Referencias obligatorias en bib/ref.bib:

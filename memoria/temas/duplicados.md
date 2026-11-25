@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «duplicados» (este archiv
 
 ## Temas relacionados
 
-[[figuras]] · [[latex]] · [[maquetacion]] · [[maquetación]] · [[memoria-procesos]] · [[ref]] · [[reglas-javier]] · [[reglas-tfg]]
+[[figuras]] · [[gestion-contenido]] · [[latex]] · [[maquetacion]] · [[maquetación]] · [[memoria-procesos]] · [[ref]] · [[regla 10 javier]] · [[reglas-javier]] · [[reglas-tfg]]

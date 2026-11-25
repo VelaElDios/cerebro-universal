@@ -54,4 +54,6 @@ Reglas obligatorias para diagramas de secuencia en esta memoria (plantilla ESIIA
 ## Ampliación (2026-11-25, memoria-procesos)
 El paquete `pgf-umlsd` provee el entorno `sequencediagram` (minúsculas). Participantes: `\newthread` (línea de vida con caja superior) y `\newinst[distancia]{id}{nombre}` (distancia opcional en cm). Llamadas anidadas: `\begin{call}{origen}{mensaje}{destino}{respuesta} ... \end{call}`. Mensajes simples: `\mess{origen}{mensaje}{destino}`. Bloques alternativos: `\begin{sdblock}{alt}{condición} ... \end{sdblock}`. Reglas: (1) Todos los participantes usados deben estar declarados. (2) En textos de `\mess`, `call`, `callself`, `\newinst`: nada de `#`, `_`, `&`, `%`, `$`, `{`, `}`, `\`, comandos LaTeX, paréntesis en `\mess`. (3) Máx. 6 participantes; si más, agrupar o partir diagrama. (4) Nunca `resizebox`/`adjustbox`/`scale`. `revisar_umlsd.py` valida todo esto antes de compilar.
 
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis]] · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]] · [[como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

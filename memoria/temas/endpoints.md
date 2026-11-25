@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «endpoints» (este archivo
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (38+ datos)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[metricas]] · [[trazabilidad]] · [[verificacion]] · [[memoria-procesos]] · [[memoria]] · [[grada-colchonera]] · [[despliegue]] · [[juego]] · [[migraciones]] · [[pbis]] · [[pruebas]] · [[tareas]]
+[[cifras]] · [[despliegue]] · [[fuentes]] · [[grada-colchonera]] · [[juego]] · [[memoria]] · [[memoria-procesos]] · [[metricas]] · [[migraciones]] · [[pbis]] · [[pruebas]] · [[requisitos]]

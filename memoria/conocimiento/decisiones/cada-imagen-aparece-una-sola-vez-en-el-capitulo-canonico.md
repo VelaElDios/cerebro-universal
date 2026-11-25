@@ -1,20 +1,20 @@
 ---
 tipo: "decision"
 titulo: "Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas"
-temas: ["duplicados", "figuras", "latex", "maquetacion", "maquetación", "memoria-procesos", "ref", "reglas-javier", "reglas-tfg"]
-claves: ["regla 10", "imágenes repetidas", "ref cruzadas", "imagen repetida", "\\ref", "una sola vez", "capturas duplicadas"]
+temas: ["duplicados", "figuras", "gestion-contenido", "latex", "maquetacion", "maquetación", "memoria-procesos", "ref", "regla 10 javier", "reglas-javier", "reglas-tfg"]
+claves: ["regla 10", "imágenes repetidas", "ref cruzadas", "imagen repetida", "\\ref", "una sola vez", "capturas duplicadas", "figura repetida", "ref cruzado", "DoneTonic", "produccion", "ref", "figura", "captura", "duplicado"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 10)"]
+fuentes: ["memoria/reglas-tfg.md", "memoria/reglas-tfg.md (regla 10)", "memoria/reglas-tfg.md regla 10 y spec versión 4"]
 confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-22"
+actualizado: "2026-11-25"
 ---
 
-Temas: [[duplicados]] · [[figuras]] · [[latex]] · [[maquetacion]] · [[maquetación]] · [[memoria-procesos]] · [[ref]] · [[reglas-javier]] · [[reglas-tfg]]
+Temas: [[duplicados]] · [[figuras]] · [[gestion-contenido]] · [[latex]] · [[maquetacion]] · [[maquetación]] · [[memoria-procesos]] · [[ref]] · [[regla 10 javier]] · [[reglas-javier]] · [[reglas-tfg]]
 
 # Una sola imagen por captura en toda la memoria (Regla 10 Javier)
 
-**Temas:** `[[latex]]` · `[[maquetacion]]` · `[[reglas-tfg]]` · `[[duplicados]]` · `[[figuras]]` · `[[ref]]` · `[[reglas-javier]]`
+**Temas:** `[[duplicados]]` · `[[figuras]]` · `[[latex]]` · `[[maquetacion]]` · `[[maquetación]]` · `[[memoria-procesos]]` · `[[ref]]` · `[[reglas-javier]]` · `[[reglas-tfg]]`
 
 ---
 
@@ -43,7 +43,7 @@ Cada archivo de imagen físico en `figs/capturas/` debe aparecer en `\includegra
 
 ## Ubicación canónica por captura (lista consolidada)
 
-| Captura (archivo / descripción) | Label canónico | Ubicación canónica (Nota A) | Ubicación canónica (Nota B, 2026-11-20) | Estado |
+| Captura (archivo / descripción) | Label canónico | Ubicación canónica (Nota A) | Ubicación canónica (Nota B, versión 4) | Estado |
 |--------------------------------|----------------|----------------------------|----------------------------------------|--------|
 | Tablero Sprint 1 (`01-tablero-sprint`) | `fig:donetonic-tablero` | **03-propuesta.tex** (cap. 3) | **cap. 3** | ✅ Coinciden |
 | Gráficas Sprint 1 (`02-graficas-sprint`) | `fig:donetonic-graficas-s1` | **a1-desarrollo.tex** (anexo A1) | **cap. 3** | ⚠️ **DISCREPANCIA** |
@@ -58,6 +58,22 @@ Cada archivo de imagen físico en `figs/capturas/` debe aparecer en `\includegra
 | Verificación producción (nuevo en Nota B) | `fig:produccion-verificacion` | — | **cap. 5** | Solo en Nota B |
 
 > **Nota:** El anexo Material (`a2-material.tex`) solo lista las figuras con `\ref`, no las incluye.
+
+---
+
+## Distribución canónica resumida (versión 4 / Nota B)
+- **Capturas DoneTonic Sprint 1** (tablero S1, gráficas S1, backlog) → solo en **cap:propuesta** (Capítulo 3)  
+  Figuras: `\ref{fig:donetonic-tablero}`, `\ref{fig:donetonic-graficas-s1}`, `\ref{fig:donetonic-backlog}`.
+- **Capturas DoneTonic Sprint 2** (tablero S2, gráficas S2, detalle PBI, tareas) → solo en **anx:desarrollo** (Anexo A)  
+  Figuras: `\ref{fig:donetonic-s2-tablero}`, `\ref{fig:donetonic-s2-graficas}`, `\ref{fig:donetonic-s2-detalle}`.
+- **Capturas producción** (correo, actions, google) → solo en **cap:evaluacion** (Capítulo 5)  
+  Figuras: `\ref{fig:correo-confirmacion}`, `\ref{fig:actions-verde}`, `\ref{fig:google-publicada}`.  
+  En Capítulo 4 (Descripción) se citan con `\ref{fig:actions-verde}`, etc.
+- **Capturas app/ y hito4/** → solo en **cap:descripcion** (Capítulo 4, sección «La aplicación»).
+- **Capturas juego/** → solo en **cap:juego** (Capítulo 4b, sección «Cómo se juega»).
+- **Capturas fase7/** → solo en **cap:juego** (Capítulo 4b) si se usan, **o en anexo** si son comparativas antes/después.
+- **Capturas prueba-tecnica/** → solo en **cap:evaluacion** (Capítulo 5)  
+  Figura: `\ref{fig:prueba-tecnica}`.
 
 ---
 
@@ -85,13 +101,25 @@ Cada archivo de imagen físico en `figs/capturas/` debe aparecer en `\includegra
 
 ---
 
-## Procedimiento de verificación
+## Verificación automática (Nota B)
+- `verificar.py` comprueba mínimos por carpeta.
+- `revisar_maquetacion.py` **no** detecta duplicados — el revisor debe confirmar visualmente en el PDF.
+
+---
+
+## Procedimiento de verificación manual
 ```bash
 # Buscar todas las inclusiones de imágenes en capítulos
 grep -r "includegraphics" chapters/
 ```
 - Cada archivo de imagen debe aparecer **una sola vez** en la salida.
 - Reemplazar el resto por `\ref{fig:etiqueta-original}`.
+
+---
+
+## Ejemplos de cita cruzada (Nota B)
+- En `04-descripcion.tex`: «El despliegue en Google Cloud Run se validó… (Figura~\ref{fig:correo-confirmacion}, Capítulo~\ref{cap:evaluacion})».
+- En texto: «el tablero del Sprint 1 (Figura~\ref{fig:donetonic-tablero})» en lugar de volver a incluir la imagen.
 
 ---
 
@@ -107,18 +135,25 @@ grep -r "includegraphics" chapters/
 
 > 10. **Sin figuras repetidas:** cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone `\ref` a la figura que ya existe.
 > — `memoria/reglas-tfg.md`
+
+Fusionada con: *Imágenes repetidas — una sola aparición + \ref en el resto*  
+Relacionado: `[[sin-figuras-repetidas-usar-ref-a-la-figura-existente]]`
+<<<CONTRADICCION>>
+1. **Gráficas Sprint 1 (`fig:donetonic-graficas-s1`)**: Nota A → Anexo A1; Nota B (v4) → Cap. 3.  
+2. **Backlog (`fig:donetonic-backlog`)**: Nota A → Anexo A1; Nota B (v4) → Cap. 3.  
+3. **Prueba técnica**: Nota A usa label `fig:prueba-tecnica-permitido`; Nota B usa `fig:prueba-tecnica` (ambos en Cap. 5).  
+4. **Capturas exclusivas de Nota B**: `fig:donetonic-s2-detalle` (Anexo A1) y `fig:produccion-verificacion` (Cap. 5) no aparecen en Nota A.  
+5. **Advertencia interna de Nota A invertida**: la nota A incluye un aviso que dice «Nota A sitúa Backlog en Cap. 3 y Nota B en Anexo A1», pero la tabla principal de Nota A sitúa Backlog en Anexo A1; el aviso está invertido respecto al contenido real de la nota.
+
+> 10. **Sin figuras repetidas:** cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone `\ref` a la figura que ya existe.
+> — `memoria/reglas-tfg.md`
 > Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone \ref a la figura que ya existe.
 > — `memoria/reglas-tfg.md`
+> **Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone \ref a la figura que ya existe.**  
+> — `memoria/reglas-tfg.md` (regla 10 y spec versión 4)
+> Sin figuras repetidas: cada imagen aparece una sola vez. Si hace falta en otro sitio, se pone \ref a la figura que ya existe.
+> — `memoria/reglas-tfg.md regla 10 y spec versión 4`
 
-
-> ⚠️ Posible contradicción al fusionar: 1. **Gráficas Sprint 1 (`fig:donetonic-graficas-s1`)**: Nota A → Anexo A1 (`a1-desarrollo.tex`); Nota B → Cap. 3.  
-2. **Backlog (`fig:donetonic-backlog`)**: Nota A → Anexo A1 (`a1-desarrollo.tex`); Nota B → Cap. 3.  
-3. **Prueba técnica**: Nota A usa label `fig:prueba-tecnica-permitido`; Nota B usa `fig:prueba-tecnica` (ambos en Cap. 5).  
-4. **Capturas exclusivas**: Nota B añade `fig:donetonic-s2-detalle` (Anexo A1) y `fig:produccion-verificacion` (Cap. 5) que no aparecen en Nota A.  
-5. **Advertencia interna de Nota A**: La propia Nota A incluye un aviso que dice «Nota A sitúa Backlog en Cap. 3 y Nota B en Anexo A1», pero la tabla principal de Nota A sitúa Backlog en Anexo A1; el aviso está invertido respecto al contenido real de la nota.
-
-Fusionada con: Una sola imagen por captura en toda la memoria (regla 10 Javier)
-
-Relacionado: [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]] · [[imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto]]
+Fusionada con: Imágenes repetidas: una sola aparición y \ref en el resto
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

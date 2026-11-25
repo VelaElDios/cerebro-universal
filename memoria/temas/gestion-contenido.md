@@ -9,8 +9,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «gestion-contenido» (este
 
 ## Decisiones (y por qué)
 
-- ⚖️ [[memoria/conocimiento/decisiones/imagenes-repetidas-una-sola-aparicion-y-ref-en-el-resto|Imágenes repetidas: una sola aparición y \ref en el resto]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/cada-imagen-aparece-una-sola-vez-en-el-capitulo-canonico|Una sola imagen por captura en toda la memoria (Regla 10 Javier) — fusión de notas]]
 
 ## Temas relacionados
 
-[[figuras]] · [[latex]] · [[maquetacion]] · [[regla 10 javier]]
+[[duplicados]] · [[figuras]] · [[latex]] · [[maquetacion]] · [[maquetación]] · [[memoria-procesos]] · [[ref]] · [[regla 10 javier]] · [[reglas-javier]] · [[reglas-tfg]]

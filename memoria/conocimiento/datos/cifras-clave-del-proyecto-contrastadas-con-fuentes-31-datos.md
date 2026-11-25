@@ -107,7 +107,7 @@ relacionado: Inventario de diagramas obligatorios y su estado actualizado, Traza
 31 cifras/hechos verificados contra las fuentes del repositorio en esta revisión (ver COMPROBACIONES). Cada uno mapea a una sección concreta de los documentos de `docs/`.
 relacionado: Inventario de diagramas obligatorios y su estado actualizado, Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py
 
-Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-38-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos]]
+Relacionado: [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-para-comp]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-35-datos]]
 
 ## Ampliación (2026-11-24, memoria-procesos)
 |

@@ -17,4 +17,6 @@ La memoria se considera terminada y aprobada solo cuando: (1) compila sin errore
 > El constructor confirmó que `comando_prueba` pasa en verde. No quedan cambios pendientes.
 > — `memoria/proyectos/memoria-procesos/bitacora.md` (cita sin comprobar)
 
+Relacionado: [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin]] · [[verificacion-final-revision-pagina-a-pagina-revisar-maquetac]]
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

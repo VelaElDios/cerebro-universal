@@ -17,7 +17,7 @@ Cada entrega (Sprint 1, 2, 3...) incluye únicamente el alcance de ese sprint. T
 > Cada entrega lleva solo lo de su sprint. Por ejemplo, la del Sprint 1 va sin el juego. El título, el Resumen, el Abstract, la Introducción, las Conclusiones y los anexos tienen que coincidir con ese alcance.
 > — `../../memoria/reglas-tfg.md`
 
-Relacionado: [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[prosa-de-tfg-sin-listas-de-capturas-agrupar-con-subfigure]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar]]
+Relacionado: [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[contenido-de-los-anexos-por-sprint-en-la-memoria-tfg]] · [[memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos]] · [[prosa-de-tfg-vs-lista-de-capturas]] · [[como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura]] · [[alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin]] · [[prosa-de-tfg-obligatoria-nada-de-listas-de-capturas-agrupar]] · [[alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados]]
 
 ## Ampliación (2026-11-24, memoria-procesos)
 |

@@ -13,8 +13,8 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «migraciones» (este archi
 
 ## Datos
 
-- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (38+ datos)]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[grada-colchonera]] · [[despliegue]] · [[metricas]] · [[trazabilidad]] · [[verificacion]] · [[memoria-procesos]] · [[memoria]] · [[endpoints]] · [[juego]] · [[pbis]] · [[pruebas]] · [[tareas]]
+[[despliegue]] · [[grada-colchonera]] · [[cifras]] · [[endpoints]] · [[fuentes]] · [[juego]] · [[memoria]] · [[memoria-procesos]] · [[metricas]] · [[pbis]] · [[pruebas]] · [[requisitos]]

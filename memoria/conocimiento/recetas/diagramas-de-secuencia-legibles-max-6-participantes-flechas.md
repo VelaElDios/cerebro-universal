@@ -5,7 +5,7 @@ temas: ["latex", "memoria", "pgf-umlsd", "tfg"]
 claves: ["sequence diagram", "participantes", "resizebox", "pdflscape", "node distance", "text width", "flechas", "codos"]
 proyectos: []
 fuentes: ["../../memoria/reglas-tfg.md"]
-confianza: "verificado"
+confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-23"
 ---
@@ -26,3 +26,5 @@ Temas: [[latex]] · [[memoria]] · [[pgf-umlsd]] · [[tfg]]
 > — `../../memoria/reglas-tfg.md`
 
 Relacionado: Diagramas de secuencia pgf-umlsd — sintaxis válida y errores comunes · [[numeros-en-diagramas-de-secuencia-deben-coincidir-con-la-esp]] · [[limites-y-calidad-de-diagramas-participantes-legibilidad-rou]] · [[diagramas-de-secuencia-max-6-participantes-agrupar-o-partir]] · [[diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m]]
+
+> ⚠️ Posible contradicción con [[como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd]]: La Nota A dice: «Nunca usar `resizebox`, `adjustbox` ni `scale`: encogen las letras por debajo de 7,5 pt». La Nota B dice: «`\resizebox` solo para reducciones menores; NO para forzar 9 columnas en ancho de página». Una prohíbe totalmente `resizebox`; la otra lo permite para reducciones menores.

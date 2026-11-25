@@ -20,3 +20,5 @@ Para diagramas ER en TikZ: (1) Usar `node distance` suficiente (vertical ≥2.5c
 Relacionado: [[como-evitar-cruces-en-diagramas-tikz-pgf-umlsd]] · [[diagramas-ninguna-linea-flecha-atraviesa-cajas-codos-y-dista]] · [[diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber]] · [[como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti]]: La Nota A prohíbe explícitamente usar `resizebox`, `adjustbox` ni `scale` sobre el diagrama completo (reglas 16 y 19 de Javier). La Nota B recomienda usar `adjustbox{max width=\linewidth, max totalheight=0.6\textheight}` para escalar el diagrama. Ambas hablan del mismo tema (escalado global de diagramas TikZ ER) y dan instrucciones opuestas.

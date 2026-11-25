@@ -30,7 +30,7 @@ solucion: Autores que son organizaciones → `author = {{Organización}}`. Todas
 ## Ampliación (2026-11-20, memoria-procesos)
 Aplicado en bib/ref.bib: express, githubflow, nodejs, postgresql, cloudrun, githubactions, donetonic tienen author = {{...}} y year = {s.f.}; rfc6749, bcrypt, vampiresurvivors tienen autores personales y year numérico; enunciado tiene author = {{Universidad de Castilla-La Mancha}} y year = {2026}.
 
-Relacionado: [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]]
+Relacionado: [[bibliografia-bibtex-con-autores-corporativos-en-doble-llave]] · [[bibtex-autores-corporativos-con-doble-llave-y-year-en-todas]] · [[bibliografia-gestionada-con-bibtex-en-la-memoria-tfg]] · [[bibliografia-bibtex-con-apalike-y-referencias-obligatorias]] · [[bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl]]
 
 ## Ampliación (2026-11-25, memoria-procesos)
 En `bib/ref.bib` todas las entradas siguen este patrón. Ejemplos: `@misc{express, author = {{Express}}, title = {Express, Node.js web application framework}, year = {s.f.}, howpublished = {\url{https://expressjs.com/}}}`; `@misc{scrumguide, author = {Schwaber, K. and Sutherland, J.}, title = {The Scrum Guide}, year = {2020}, howpublished = {\url{https://scrumguides.org/scrum-guide.html}}}`. Las referencias extra (RFC 6749, bcrypt, Vampire Survivors, DoneTonic) también están en `bib/ref.bib` con el mismo formato. El estilo en la memoria es `\bibliographystyle{apalike}` + `\bibliography{bib/ref}`.

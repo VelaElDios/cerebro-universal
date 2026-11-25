@@ -93,8 +93,10 @@ Dato 3 & Descripción 3 \\*
 - [[longtable-sin-fila-huerfana-al-final-regla-7-javier]]
 - [[longtable-sin-fila-huerfana-al-final]]
 - [[longtable-sin-fila-huerfana-al-final-regla-7-javier]]
-- [[tablas-largas-en-longtable-con-ultima-fila-acompanada]]
+- [[longtable-sin-fila-huerfana-al-final]]
 - [[como-anadir-en-longtables-para-evitar-filas-huerfanas]]
+
+Relacionado: [[como-evitar-paginas-casi-vacias-tras-una-longtable]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 

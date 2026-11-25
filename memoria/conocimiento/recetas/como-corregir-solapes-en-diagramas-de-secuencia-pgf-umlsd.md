@@ -17,6 +17,8 @@ Para evitar que las líneas divisorias de bloques `sdblock` (alternativas `alt`)
 > Espacio vertical para que la línea divisoria del bloque alt no corte la llamada anterior: \mess{vis}{ }{api} antes del sdblock.
 > — `memoria/proyectos/memoria-procesos/chapters/04-descripcion.tex (fig:sec-baja)` (cita sin comprobar)
 
-Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram]]
+Relacionado: [[diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram]] · [[como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co]] · [[como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar]] · [[como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l]]
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
+
+> ⚠️ Posible contradicción con [[diagramas-de-secuencia-legibles-max-6-participantes-flechas]]: La Nota A dice: «Nunca usar `resizebox`, `adjustbox` ni `scale`: encogen las letras por debajo de 7,5 pt». La Nota B dice: «`\resizebox` solo para reducciones menores; NO para forzar 9 columnas en ancho de página». Una prohíbe totalmente `resizebox`; la otra lo permite para reducciones menores.

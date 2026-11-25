@@ -19,7 +19,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l|Cómo evitar que diagramas de secuencia pgf-umlsd desborden la página]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar|Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-con-pgf-umlsd-reglas-de-sintaxis|Diagramas de secuencia con pgf-umlsd: reglas de sintaxis]] · ⚠️ propuesto
-- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-legibles-max-6-participantes-flechas|Diagramas de secuencia legibles: máx. 6 participantes, flechas caja-a-caja, sin palabras partidas]]
+- 🧪 [[memoria/conocimiento/recetas/diagramas-de-secuencia-legibles-max-6-participantes-flechas|Diagramas de secuencia legibles: máx. 6 participantes, flechas caja-a-caja, sin palabras partidas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/validacion-visual-de-diagramas-tikz-pgf-umlsd-en-pdf-reglas|Validación visual de diagramas TikZ/pgf-umlsd en PDF (reglas 16-18 Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/verificacion-visual-de-diagramas-tikz-y-pgf-umlsd-segun-regl|Verificación visual de diagramas TikZ y pgf-umlsd según reglas 16-18]] · ⚠️ propuesto
 

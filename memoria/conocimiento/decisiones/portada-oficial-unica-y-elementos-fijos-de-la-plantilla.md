@@ -37,7 +37,7 @@ La memoria debe usar **exclusivamente la portada oficial** definida en `elements
 
 **Verificación**: El PDF compilado debe tener exactamente una portada (la oficial), seguida de declaración, resumen, abstract, índices.
 
-Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[portada-unica-oficial-del-tfg-elements-portada-tex]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]]
+Relacionado: [[como-se-pone-la-portada-oficial-del-tfg-esiiab-uclm]] · [[paso-1-completado-preambulo-tex-ya-cumple-regla-1-una-sola-p]] · [[resumen-y-abstract-en-elements-preambulo-tex-con-formato-ofi]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[estructura-de-la-memoria-tfg-esiiab-uclm-plantilla-oficial]] · [[portada-unica-oficial-del-tfg-elements-portada-tex]] · [[portada-oficial-unica-y-elementos-fijos-de-la-plantilla]] · [[una-sola-portada-oficial-y-elementos-fijos-de-la-plantilla-t]]
 
 ---
 
