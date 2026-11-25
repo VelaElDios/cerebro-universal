@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 178
+notas: 182
 ---
 # latex
 
@@ -32,6 +32,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/corregir-overfull-hbox-en-longtable-con-urls-largas|Corregir overfull hbox en longtable con URLs largas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-actualizar-referencias-a-documentacion-tras-reorganizac|Cómo actualizar referencias a documentación tras reorganización del bundle]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex|Cómo agrupar capturas relacionadas con subfigure en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/como-centralizar-capturas-duplicadas-entre-capitulos-en-late|Cómo centralizar capturas duplicadas entre capítulos en LaTeX]] · ⚠️ propuesto
@@ -46,6 +47,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-cruces-en-diagramas-tikz-pgf-umlsd|Cómo evitar cruces en diagramas TikZ/pgf-umlsd]]
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo|Cómo evitar overfull hbox con \texttt largo]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo-en-longtable|Cómo evitar overfull hbox con \texttt largo en longtable]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando|Cómo evitar overfull hbox en longtable y pgfplots ajustando anchos de columna]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-rutas-y-diagramas|Cómo evitar overfull hbox en rutas y diagramas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-tablas-anchas-con-longtable|Cómo evitar overfull hbox en tablas anchas con longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
@@ -109,6 +111,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚖️ [[memoria/conocimiento/decisiones/cita-obligatoria-a-cada-figura-incluidas-subfiguras-en-el-te|Cita obligatoria a cada figura (incluidas subfiguras) en el texto]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram|Diagramas de secuencia con pgf-umlsd: entorno sequencediagram y reglas de sintaxis]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m|Diagramas de secuencia pgf-umlsd: reglas para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir|Diagramas de secuencia: límite de 6 participantes (agrupar o partir)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18|Diagramas pgf-umlsd sin escalar y legibles (reglas 16-18)]] · ⚠️ propuesto
@@ -173,6 +176,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚠️ [[memoria/lecciones/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan|Cómo corregir diagramas de secuencia pgf-umlsd que desbordan o tienen cruces]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e|Cómo evitar solapes de etiquetas en diagramas TikZ medidos en el PDF]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p|Cómo evitar solapes de etiquetas en diagramas TikZ medidos por revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]]
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "subcaption"
-notas: 8
+notas: 9
 ---
 # subcaption
 
@@ -14,6 +14,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subcaption» (este archiv
 - 🧪 [[memoria/conocimiento/recetas/arreglar-pagina-con-una-sola-imagen-regla-8-agrupando-en-sub|Arreglar «página con una sola imagen» (Regla 8) agrupando en subfigure o bajando height]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/cada-label-de-subfigura-necesita-su-propio-ref-en-el-texto-v|Cada \label de subfigura necesita su propio \ref en el texto (verificar.py lo exige)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-dos-por-fila|Cómo agrupar capturas relacionadas con subfigure (dos por fila)]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex|Cómo agrupar capturas relacionadas con subfigure en LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d|Cómo agrupar capturas relacionadas con subfigure en LaTeX para manuales de usuario]] · ⚠️ propuesto
 
 ## Decisiones (y por qué)
@@ -26,4 +27,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subcaption» (este archiv
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[subfigure]] · [[maquetacion]] · [[verificar]] · [[capturas]] · [[redaccion]] · [[tfg]] · [[refs]] · [[memoria-procesos]] · [[figura]] · [[maquetación]]
+[[latex]] · [[subfigure]] · [[figuras]] · [[maquetacion]] · [[capturas]] · [[verificar]] · [[redaccion]] · [[tfg]] · [[refs]] · [[memoria-procesos]] · [[manual-usuario]] · [[figura]]

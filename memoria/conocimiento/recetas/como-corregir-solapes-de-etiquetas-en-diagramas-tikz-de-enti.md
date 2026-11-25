@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Cómo corregir solapes de etiquetas en diagramas TikZ de entidad-relación"
-temas: ["latex", "maquetacion", "pgf-umlsd", "tikz"]
+temas: ["latex", "maquetacion", "pgf-umlsd", "tikz", "revisar_maquetacion.py"]
 claves: ["revisar_maquetacion.py", "fig:modelo-datos", "etiqueta userId", "línea discontinua", "above", "yshift"]
 proyectos: ["memoria-procesos"]
-fuentes: ["chapters/04-descripcion.tex"]
+fuentes: ["chapters/04-descripcion.tex", "bitácora 2026-11-25 (revisor nvidia-revisor)"]
 confianza: "propuesto"
 fecha: "2026-11-25"
 actualizado: "2026-11-25"
@@ -30,5 +30,8 @@ Cuando `revisar_maquetacion.py` detecta que una línea cruza el texto de una eti
    \draw[arrow] (users.east) -- node[rel, midway, above=50pt, align=center] {su\\club} (perfiles.west);
    ```
    La etiqueta vertical (`su mejor partida`) se ancla al trayecto con `anchor=east, xshift=-18pt, pos=0.5` y no da error.
+
+## Ampliación (2026-11-25, memoria-procesos)
+1. Ejecutar `revisar_maquetacion.py` (o `comando_prueba`) para ver qué etiqueta y qué línea se solapan. 2. En el código TikZ del diagrama, localizar el `\draw` de la flecha y el `node` de la etiqueta. 3. Cambiar `anchor=south, yshift=<valor>` por `above=<valor_mayor>` (p. ej., 50pt). 4. Aplicar la misma separación a etiquetas homólogas en el mismo diagrama por consistencia. 5. Volver a ejecutar la prueba hasta que no haya solapes medidos. No usar `resizebox`, `adjustbox` ni `scale`: eso encoge las letras y no soluciona el solape geométrico.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

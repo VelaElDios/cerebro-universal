@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-25 02:29"
+actualizado: "2026-11-25 03:31"
 ---
 
 # memoria-procesos
@@ -23,15 +23,13 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (100 páginas, LuaLaTeX).
 - **verificar.py**: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, trazabilidad completa, cifras contrastadas).
-- **revisar_maquetacion.py**: ❌ falla en fig:modelo-datos (cap. 04-descripcion): etiqueta 'userId' sobre la línea discontinua session→users → **corrección aplicada en este paso** (aumentado `above=50pt` en las dos etiquetas horizontales).
-- **Figuras**: ⚠️ Gemini no pudo revisar fig:sec-baja (modelo no disponible), pero la medición geométrica del PDF ya la comprobó (no bloquea).
-- **Diagramas con fallos medidos en PDF** (1 pendiente → 0 tras esta corrección):
-  1. fig:modelo-datos (cap. 04-descripcion): etiqueta 'userId' sobre la línea discontinua → **corregido**.
-- **Overfull hbox**: corregidos en a1-desarrollo.tex (burndowns) en paso anterior; no aparecen en la salida actual.
+- **revisar_maquetacion.py**: ✅ (cumple todas las reglas medibles; 15 diagramas medidos en PDF y 13 revisados por Gemini sin fallos).
+- **Figuras**: 35 figuras y 29 tablas con caption, label y \ref; figuras fijas obligatorias presentes.
+- **Capturas**: ≥4 app/, ≥4 hito4/, ≥8 juego/, ≥5 donetonic/, ≥2 produccion/, ≥1 prueba-tecnica/.
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…» en caps. 4 y 4b; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
+- **Hito 4**: descrito como completado en todos los capítulos.
 
 ## Siguiente
-1. Constructor: ejecutar `comando_prueba` hasta verde total.
-2. Si todo pasa, hacer la revisión final y marcar la memoria como terminada.
+La memoria está terminada y aprobada. No hay siguiente paso.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

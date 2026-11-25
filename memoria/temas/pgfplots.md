@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgfplots"
-notas: 9
+notas: 10
 ---
 # pgfplots
 
@@ -16,6 +16,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgfplots» (este archivo 
 
 - 🧪 [[memoria/conocimiento/recetas/burndown-real-con-pgfplots-fig-burndown-s1-y-fig-burndown-s2|Burndown real con pgfplots (fig:burndown-s1 y fig:burndown-s2)]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando|Cómo evitar overfull hbox en longtable y pgfplots ajustando anchos de columna]] · ⚠️ propuesto
 
 ## Conceptos
 

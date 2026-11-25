@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "migraciones"
-notas: 1
+notas: 2
 ---
 # migraciones
 
@@ -11,6 +11,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «migraciones» (este archi
 
 - 🧪 [[memoria/conocimiento/recetas/arranque-de-la-aplicacion-configuracion-migraciones-y-primer|Arranque de la aplicación: configuración, migraciones y primer administrador (bootstrap)]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[arranque]] · [[despliegue]] · [[grada-colchonera]] · [[saas]]
+[[grada-colchonera]] · [[despliegue]] · [[metricas]] · [[trazabilidad]] · [[verificacion]] · [[memoria-procesos]] · [[memoria]] · [[endpoints]] · [[juego]] · [[pbis]] · [[pruebas]] · [[tareas]]

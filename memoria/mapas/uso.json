@@ -6,10 +6,10 @@
   "usos": 1
  },
  "memoria/conocimiento/conceptos/burndown-real-vs-donetonic-en-sprint-2.md": {
-  "bien": 0,
+  "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-25",
-  "usos": 5
+  "usos": 6
  },
  "memoria/conocimiento/conceptos/definicion-de-hecho-dod-para-tareas-hitos-y-fases.md": {
   "bien": 0,
@@ -96,10 +96,10 @@
   "usos": 1
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
-  "bien": 3,
+  "bien": 4,
   "mal": 0,
   "ultimo": "2026-11-25",
-  "usos": 30
+  "usos": 31
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -210,10 +210,10 @@
   "usos": 6
  },
  "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md": {
-  "bien": 4,
+  "bien": 5,
   "mal": 2,
   "ultimo": "2026-11-25",
-  "usos": 61
+  "usos": 62
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
@@ -240,10 +240,10 @@
   "usos": 1
  },
  "memoria/conocimiento/recetas/checklist-final-antes-de-marcar-terminado-pdf-pagina-a-pagin.md": {
-  "bien": 0,
+  "bien": 1,
   "mal": 0,
   "ultimo": "2026-11-25",
-  "usos": 10
+  "usos": 11
  },
  "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md": {
   "bien": 0,

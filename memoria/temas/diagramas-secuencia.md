@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "diagramas-secuencia"
-notas: 5
+notas: 6
 ---
 # diagramas-secuencia
 
@@ -12,6 +12,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas-secuencia» (es
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-que-diagramas-de-secuencia-pgf-umlsd-desborden-l|Cómo evitar que diagramas de secuencia pgf-umlsd desborden la página]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar|Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación]] · ⚠️ propuesto
 
+## Decisiones (y por qué)
+
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram|Diagramas de secuencia con pgf-umlsd: entorno sequencediagram y reglas de sintaxis]] · ⚠️ propuesto
+
 ## Lecciones (errores ya resueltos)
 
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan|Cómo corregir diagramas de secuencia pgf-umlsd que desbordan o tienen cruces]] · ⚠️ propuesto
@@ -20,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas-secuencia» (es
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[maquetacion]]
+[[latex]] · [[pgf-umlsd]] · [[sequencediagram]] · [[maquetacion]]

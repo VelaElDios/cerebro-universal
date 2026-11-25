@@ -1,13 +1,13 @@
 ---
 tipo: "decision"
 titulo: "Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)"
-temas: ["latex", "redaccion", "tfg", "maquetación", "capturas", "figuras"]
+temas: ["latex", "redaccion", "tfg", "maquetación", "capturas", "figuras", "subfigure"]
 claves: ["subfigure", "prosa", "manual de usuario", "capturas", "problema: El borrador tenía ~45 frases sueltas tipo «La figura X muestra…»", "una por captura", "lo que delata un trabajo poco profesional.", "solucion: Reescribir cada sección como prosa continua que explica el flujo de uso. Agrupar capturas relacionadas en una figura con `subfigure` (dos por fila", "`\\begin{subfigure}{0.48\\textwidth}`)", "con un caption general y uno por subfigura. Citar las figuras dentro de la explicación con `\\ref`."]
 proyectos: ["memoria-procesos"]
 fuentes: ["memoria/reglas-tfg.md regla 13", "memoria/reglas-tfg.md"]
 confianza: "propuesto"
 fecha: "2026-11-24"
-actualizado: "2026-11-24"
+actualizado: "2026-11-25"
 ---
 
 Temas: [[latex]] · [[redaccion]] · [[tfg]]
@@ -18,5 +18,8 @@ Relacionado: [[como-se-agrupan-capturas-con-subfigure]] · [[sin-figuras-repetid
 
 ## Ampliación (2026-11-24, memoria-procesos)
 Aplicado en chapters/04-descripcion.tex (sección 6) y chapters/04b-juego.tex (sección 2). Cada grupo de capturas relacionadas forma una figura con subfiguras, y el texto explica la interacción usuario–aplicación.
+
+## Ampliación (2026-11-25, memoria-procesos)
+Aplicado en chapters/04-descripcion.tex (sección 6, manual SaaS) y chapters/04b-juego.tex (sección 2, manual juego). Cada grupo de capturas relacionadas forma una figura con subfiguras (`\begin{subfigure}{0.48\textwidth}`), y el texto explica la interacción usuario–aplicación citando las subfiguras con `\ref`. Se eliminaron ~45 frases sueltas tipo «La figura X muestra…» que había en el borrador anterior.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

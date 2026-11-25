@@ -1,13 +1,13 @@
 ---
 tipo: "dato"
 titulo: "Inventario de capturas de pantalla con trazabilidad a requisitos y fechas"
-temas: ["capturas", "donetonic", "grada-colchonera", "juego", "latex", "memoria", "produccion", "requisitos", "saas", "sprints", "tfg", "trazabilidad"]
+temas: ["capturas", "donetonic", "grada-colchonera", "juego", "latex", "memoria", "produccion", "requisitos", "saas", "sprints", "tfg", "trazabilidad", "hito4"]
 claves: ["capturas", "app", "hito4", "juego", "fase7", "donetonic", "produccion", "prueba-tecnica", "problema: Necesario saber qué capturas existen", "su fecha y a qué requisito/PBI pertenecen para colocarlas sin repetir.", "solucion: Consultar §16 de documentacion-tecnica.md y la lista de imágenes disponibles en el borrador.", "Hitos 1-3", "Hito 4", "producción", "DoneTonic", "prueba-técnica", "requisitos P7-P17 RJ-01-RJ-20"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16", "repo:saas/docs/capturas/README.md", "repo:saas/docs/documentacion-tecnica.md §16, repo:saas/@arbol"]
 confianza: "verificado"
 fecha: "2026-11-16"
-actualizado: "2026-11-24"
+actualizado: "2026-11-25"
 ---
 
 Temas: [[capturas]] · [[donetonic]] · [[grada-colchonera]] · [[juego]] · [[latex]] · [[memoria]] · [[produccion]] · [[requisitos]] · [[saas]] · [[sprints]] · [[tfg]] · [[trazabilidad]]
@@ -77,6 +77,9 @@ Relacionado: [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] ·
   | produccion/ | 3 | 23/10/2026 | Cap. 05-evaluacion (comprobación producción) |
   | prueba-tecnica/ | 2 | — | Cap. 05-evaluacion (prueba técnica) |
   Mínimos requeridos: 4 app/, 4 hito4/, 8 juego/, 5 donetonic/, 2 produccion/, 1 prueba-tecnica/.
+
+## Ampliación (2026-11-25, memoria-procesos)
+Estructura de carpetas y contenido (fechas de captura incluidas): app/ (13, 27/10/2026, Hitos 1-3), hito4/ (11, 27/10/2026, Google OAuth, email confirmation), juego/ (16, 29/10/2026, Sprint 2 completo), fase7/ (12, 29/10/2026, before/after sprites, menú nuevo), donetonic/ (8, 29/10/2026, tableros y gráficas), produccion/ (3, 23/10/2026, email real, Actions verde, Google publicado), prueba-tecnica/ (2, respuestas POST /api/prueba/dominio). Todas las capturas referencian requisito (PBI/RJ) para trazabilidad TFG.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 30
+notas: 32
 ---
 # maquetacion
 
@@ -17,6 +17,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 - 🧪 [[memoria/conocimiento/recetas/como-anadir-en-longtables-para-evitar-filas-huerfanas|Cómo añadir \\* en longtables para evitar filas huérfanas]]
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti|Cómo corregir solapes de etiquetas en diagramas TikZ de entidad-relación]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando|Cómo evitar overfull hbox en longtable y pgfplots ajustando anchos de columna]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-casi-vacias-tras-una-longtable|Cómo evitar páginas casi vacías tras una longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-paginas-con-una-sola-imagen-regla-8-de-javier|Cómo evitar páginas con una sola imagen (Regla 8 de Javier)]]
 - 🧪 [[memoria/conocimiento/recetas/como-replantear-diagramas-de-secuencia-pgf-umlsd-para-evitar|Cómo replantear diagramas de secuencia pgf-umlsd para evitar fallos de maquetación]] · ⚠️ propuesto
@@ -49,9 +50,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 - ⚠️ [[memoria/lecciones/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e|Cómo evitar solapes de etiquetas en diagramas TikZ medidos en el PDF]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p|Cómo evitar solapes de etiquetas en diagramas TikZ medidos por revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable|Evitar páginas casi vacías al final de anexos con longtable]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[pgf-umlsd]] · [[tfg]] · [[memoria-procesos]] · [[tikz]] · [[longtable]] · [[subcaption]] · [[pgfplots]] · [[memoria]] · [[maquetación]] · [[reglas-javier]]
+[[latex]] · [[figuras]] · [[pgf-umlsd]] · [[tikz]] · [[tfg]] · [[memoria-procesos]] · [[longtable]] · [[pgfplots]] · [[subcaption]] · [[memoria]] · [[maquetación]] · [[reglas-javier]]

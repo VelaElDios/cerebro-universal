@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T02:29:09+01:00",
+ "generado": "2026-11-25T03:31:42+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -35,7 +35,7 @@
    "id": "proyecto:memoria-procesos",
    "tipo": "proyecto",
    "titulo": "memoria-procesos",
-   "estado": "en-construccion",
+   "estado": "terminado",
    "temas": [
     "latex",
     "memoria",
@@ -199,6 +199,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan.md"
+  },
+  {
+   "id": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e",
+   "tipo": "leccion",
+   "titulo": "Cómo evitar solapes de etiquetas en diagramas TikZ medidos en el PDF",
+   "temas": [
+    "latex",
+    "tikz",
+    "pgf-umlsd",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e.md"
   },
   {
    "id": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p",
@@ -1737,7 +1753,14 @@
     "verificacion",
     "memoria-procesos",
     "memoria",
-    "grada-colchonera"
+    "grada-colchonera",
+    "despliegue",
+    "endpoints",
+    "juego",
+    "migraciones",
+    "pbis",
+    "pruebas",
+    "tareas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2166,7 +2189,8 @@
     "saas",
     "sprints",
     "tfg",
-    "trazabilidad"
+    "trazabilidad",
+    "hito4"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3059,6 +3083,22 @@
    "ruta": "memoria/conocimiento/decisiones/deshacer-el-paso-entero-si-rompe-la-compilacion.md"
   },
   {
+   "id": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "tipo": "decision",
+   "titulo": "Diagramas de secuencia con pgf-umlsd: entorno sequencediagram y reglas de sintaxis",
+   "temas": [
+    "diagramas-secuencia",
+    "latex",
+    "pgf-umlsd",
+    "sequencediagram"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram.md"
+  },
+  {
    "id": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "tipo": "decision",
    "titulo": "Diagramas de secuencia: límite de 6 participantes (agrupar o partir)",
@@ -3586,7 +3626,8 @@
     "tfg",
     "maquetación",
     "capturas",
-    "figuras"
+    "figuras",
+    "subfigure"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4302,6 +4343,23 @@
    "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-con-subfigure-en-latex-para-manuales-d.md"
   },
   {
+   "id": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "tipo": "receta",
+   "titulo": "Cómo agrupar capturas relacionadas con subfigure en LaTeX",
+   "temas": [
+    "capturas",
+    "latex",
+    "manual-usuario",
+    "subcaption",
+    "subfigure"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-agrupar-capturas-relacionadas-con-subfigure-en-latex.md"
+  },
+  {
    "id": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
    "tipo": "receta",
    "titulo": "Cómo añadir \\\\* en longtables para evitar filas huérfanas",
@@ -4415,7 +4473,8 @@
     "latex",
     "maquetacion",
     "pgf-umlsd",
-    "tikz"
+    "tikz",
+    "revisar_maquetacion.py"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4572,6 +4631,23 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-evitar-overfull-hbox-con-texttt-largo.md"
+  },
+  {
+   "id": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
+   "tipo": "receta",
+   "titulo": "Cómo evitar overfull hbox en longtable y pgfplots ajustando anchos de columna",
+   "temas": [
+    "latex",
+    "longtable",
+    "maquetacion",
+    "overfull",
+    "pgfplots"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando.md"
   },
   {
    "id": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",
@@ -6084,7 +6160,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 178,
+   "peso": 182,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6098,14 +6174,14 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 28,
+   "peso": 29,
    "ruta": "memoria/temas/tikz.md"
   },
   {
    "id": "tema:pgfplots",
    "tipo": "tema",
    "titulo": "pgfplots",
-   "peso": 9,
+   "peso": 10,
    "ruta": "memoria/temas/pgfplots.md"
   },
   {
@@ -6154,14 +6230,14 @@
    "id": "tema:subcaption",
    "tipo": "tema",
    "titulo": "subcaption",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/subcaption.md"
   },
   {
    "id": "tema:subfigure",
    "tipo": "tema",
    "titulo": "subfigure",
-   "peso": 5,
+   "peso": 7,
    "ruta": "memoria/temas/subfigure.md"
   },
   {
@@ -6210,21 +6286,21 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 25,
+   "peso": 27,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 30,
+   "peso": 32,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
    "id": "tema:diagramas-secuencia",
    "tipo": "tema",
    "titulo": "diagramas-secuencia",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/diagramas-secuencia.md"
   },
   {
@@ -6238,7 +6314,7 @@
    "id": "tema:longtable",
    "tipo": "tema",
    "titulo": "longtable",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/longtable.md"
   },
   {
@@ -6252,7 +6328,7 @@
    "id": "tema:overfull",
    "tipo": "tema",
    "titulo": "overfull",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/overfull.md"
   },
   {
@@ -6287,7 +6363,7 @@
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 4,
+   "peso": 5,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
@@ -6455,7 +6531,7 @@
    "id": "tema:juego",
    "tipo": "tema",
    "titulo": "juego",
-   "peso": 13,
+   "peso": 14,
    "ruta": "memoria/temas/juego.md"
   },
   {
@@ -6658,7 +6734,7 @@
    "id": "tema:pruebas",
    "tipo": "tema",
    "titulo": "pruebas",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/pruebas.md"
   },
   {
@@ -6959,7 +7035,7 @@
    "id": "tema:capturas",
    "tipo": "tema",
    "titulo": "capturas",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/capturas.md"
   },
   {
@@ -7003,6 +7079,41 @@
    "titulo": "data",
    "peso": 2,
    "ruta": "memoria/temas/data.md"
+  },
+  {
+   "id": "tema:despliegue",
+   "tipo": "tema",
+   "titulo": "despliegue",
+   "peso": 4,
+   "ruta": "memoria/temas/despliegue.md"
+  },
+  {
+   "id": "tema:endpoints",
+   "tipo": "tema",
+   "titulo": "endpoints",
+   "peso": 1,
+   "ruta": "memoria/temas/endpoints.md"
+  },
+  {
+   "id": "tema:migraciones",
+   "tipo": "tema",
+   "titulo": "migraciones",
+   "peso": 2,
+   "ruta": "memoria/temas/migraciones.md"
+  },
+  {
+   "id": "tema:pbis",
+   "tipo": "tema",
+   "titulo": "pbis",
+   "peso": 4,
+   "ruta": "memoria/temas/pbis.md"
+  },
+  {
+   "id": "tema:tareas",
+   "tipo": "tema",
+   "titulo": "tareas",
+   "peso": 6,
+   "ruta": "memoria/temas/tareas.md"
   },
   {
    "id": "tema:fuentes",
@@ -7117,25 +7228,11 @@
    "ruta": "memoria/temas/fechas.md"
   },
   {
-   "id": "tema:tareas",
-   "tipo": "tema",
-   "titulo": "tareas",
-   "peso": 5,
-   "ruta": "memoria/temas/tareas.md"
-  },
-  {
    "id": "tema:hito",
    "tipo": "tema",
    "titulo": "hito",
    "peso": 1,
    "ruta": "memoria/temas/hito.md"
-  },
-  {
-   "id": "tema:pbis",
-   "tipo": "tema",
-   "titulo": "pbis",
-   "peso": 3,
-   "ruta": "memoria/temas/pbis.md"
   },
   {
    "id": "tema:sprint1",
@@ -7157,6 +7254,13 @@
    "titulo": "produccion",
    "peso": 1,
    "ruta": "memoria/temas/produccion.md"
+  },
+  {
+   "id": "tema:hito4",
+   "tipo": "tema",
+   "titulo": "hito4",
+   "peso": 1,
+   "ruta": "memoria/temas/hito4.md"
   },
   {
    "id": "tema:diagramas",
@@ -7614,20 +7718,6 @@
    "ruta": "memoria/temas/arranque.md"
   },
   {
-   "id": "tema:despliegue",
-   "tipo": "tema",
-   "titulo": "despliegue",
-   "peso": 3,
-   "ruta": "memoria/temas/despliegue.md"
-  },
-  {
-   "id": "tema:migraciones",
-   "tipo": "tema",
-   "titulo": "migraciones",
-   "peso": 1,
-   "ruta": "memoria/temas/migraciones.md"
-  },
-  {
    "id": "tema:autores corporativos",
    "tipo": "tema",
    "titulo": "autores corporativos",
@@ -7680,7 +7770,7 @@
    "id": "tema:manual-usuario",
    "tipo": "tema",
    "titulo": "manual-usuario",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/manual-usuario.md"
   },
   {
@@ -7715,7 +7805,7 @@
    "id": "tema:revisar_maquetacion.py",
    "tipo": "tema",
    "titulo": "revisar_maquetacion.py",
-   "peso": 1,
+   "peso": 2,
    "ruta": "memoria/temas/revisar_maquetacion.py.md"
   },
   {
@@ -8395,6 +8485,31 @@
   },
   {
    "de": "leccion:como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e",
    "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
@@ -12580,6 +12695,41 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:despliegue",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:endpoints",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:juego",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:migraciones",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:pbis",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:pruebas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:tareas",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -14146,6 +14296,11 @@
   {
    "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
    "a": "tema:trazabilidad",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "a": "tema:hito4",
    "tipo": "trata"
   },
   {
@@ -17004,6 +17159,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "a": "tema:diagramas-secuencia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:diagramas-de-secuencia-max-6-participantes-agrupar-o-partir",
    "a": "tema:diagramas",
    "tipo": "trata"
@@ -18636,6 +18816,11 @@
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:subfigure",
    "tipo": "trata"
   },
   {
@@ -21419,6 +21604,41 @@
    "tipo": "enlaza"
   },
   {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:capturas",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:manual-usuario",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:subcaption",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "tipo": "enlaza"
+  },
+  {
    "de": "receta:como-anadir-en-longtables-para-evitar-filas-huerfanas",
    "a": "tema:latex",
    "tipo": "trata"
@@ -21716,6 +21936,11 @@
   {
    "de": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
    "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
+   "a": "tema:revisar_maquetacion.py",
    "tipo": "trata"
   },
   {
@@ -22152,6 +22377,36 @@
    "de": "receta:como-evitar-overfull-hbox-con-texttt-largo",
    "a": "receta:corregir-overfull-hbox-en-longtable-con-urls-largas",
    "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
+   "a": "tema:longtable",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
+   "a": "tema:overfull",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
+   "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
   },
   {
    "de": "receta:como-evitar-overfull-hbox-en-rutas-y-diagramas",

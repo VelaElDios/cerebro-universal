@@ -16412,3 +16412,67 @@ Corrección aplicada: aumento de `above=32pt` a `above=50pt` en las dos etiqueta
 ## 2026-11-25 02:29 · 🧠 Conocimiento guardado
 
 [[como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]]
+
+## 2026-11-25 03:27 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+El estado del borrador ya sale en verde (compilación OK, `verificar.py` OK, `revisar_maquetacion.py` OK y figuras sin fallos medidos), así que solo queda pulir estilo antes de la revisión final. Elimino de `elements/preambulo.tex` dos adornos prohibidos por la spec («exhaustivamente» en el Resumen y «thoroughly» en el Abstract), que están en la lista de palabras vetadas, sin tocar ningún dato, cifra ni estructura del documento.
+
+**Archivos:** `(cambio) elements/preambulo.tex`, `(cambio) elements/preambulo.tex`
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Con este cambio, `comando_prueba` debería seguir en verde (solo se quita una palabra del Resumen y otra del Abstract; no cambia ninguna cifra ni estructura). El siguiente paso es la revisión final página a página del PDF por el revisor y, si no pone más pegas y contrasta al menos 25 datos con las fuentes en COMPROBACIONES, marcar la memoria como TERMINADA. Si persistiera algún fallo medido en un diagrama, se corregiría solo el nodo afectado (posición/separación de la etiqueta), sin tocar el resto del dibujo.
+
+## 2026-11-25 03:31 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** aprobado · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- 19 PBIs en Sprint 1 (P1–P19) y 32 tareas (T1–T32) → repo:saas/docs/sprint-1.md tabla "Backlog y estado del Sprint 1" y tabla "Trazabilidad del Sprint 1"
+- 29 PBIs en Sprint 2 (P20–P48) y 50 tareas (T33–T82) → repo:saas/docs/sprint-2.md tabla "Backlog y estado del Sprint 2"
+- Fechas Sprint 1: 29/09/2026–27/10/2026; Sprint 2: 23/10/2026–29/10/2026 → repo:saas/docs/sprint-1.md y sprint-2.md encabezados
+- 13 RF (RF-01–RF-13), 20 RJ (RJ-01–RJ-20), 12 RNF (RNF-01–RNF-12) → repo:saas/docs/requisitos.md tablas de requisitos
+- 276 pruebas automáticas al cierre Sprint 2 (322 tras Fase 7) → repo:saas/docs/procesos.md tabla "Pruebas por fichero" (total 276) y repo:saas/docs/sprint-2.md métricas
+- 23 endpoints API, 5 migraciones SQL → repo:saas/docs/sprint-2.md tabla "Métricas del proyecto"
+- 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → repo:saas/docs/sprint-2.md tabla "Métricas del proyecto" y repo:saas/docs/juego.md tabla sistemas
+- Despliegue principal en Google Cloud Run (región europe-southwest1), Render alternativo → repo:saas/docs/procesos.md sección "Integración y despliegue continuos" y repo:saas/docs/decisiones.md D-10
+- Cambio de alcance P19 (Cloud Run) a mitad del Sprint 1 → repo:saas/docs/decisiones.md D-16 y repo:saas/docs/sprint-1.md "Cambio de alcance durante el sprint"
+- Backlog Sprint 2 registrado en DoneTonic al cerrar el sprint (29/10/2026) → repo:saas/docs/decisiones.md D-19 y repo:saas/docs/sprint-2.md "Evolución del Sprint 2"
+- Burndown real Sprint 2 reconstruido con fechas de PR: 23/10 (1), 24/10 (17), 26/10 (9), 29/10 (2) → repo:saas/docs/sprint-2.md tabla "Evolución del Sprint 2"
+- 8 capturas DoneTonic disponibles (01-tablero-sprint, 02-graficas-sprint, 03-backlog, 04-tablero-sprint2, 05-sprint2-tareas-hechas, 06-graficas-sprint2, 07-graficas-backlog, 08-pbi-detalle) → repo:saas/@arbol carpeta docs/capturas/donetonic/
+- 13 capturas app/, 11 hito4/, 16 juego/, 12 fase7/, 3 produccion/, 2 prueba-tecnica/ → repo:saas/@arbol y repo:saas/docs/capturas/README.md
+- Resumen ≥150 palabras (dos sprints + juego) y Abstract ≥120 palabras con Keywords → elements/preambulo.tex (comprobado por verificar.py)
+- Trazabilidad completa P1–P48 y T1–T82 en Anexo B (a4-trazabilidad.tex) → chapters/a4-trazabilidad.tex tabla longtable con 100+ filas
+- Figuras fijas obligatorias presentes: fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2 → chapters/04-descripcion.tex, 04b-juego.tex, 05-evaluacion.tex, a1-desarrollo.tex
+- Pipeline CI/CD descrito una sola vez (Capítulo 5, fig:pipeline) y referenciado en Capítulo 3 → chapters/03-propuesta.tex cita \ref{fig:pipeline} y chapters/05-evaluacion.tex lo define
+- Imágenes DoneTonic y producción aparecen una sola vez (Capítulo 3 y Anexo A) y se citan con \ref en el resto → chapters/03-propuesta.tex, chapters/04-descripcion.tex, chapters/05-evaluacion.tex, chapters/a1-desarrollo.tex
+- Prosa sin cadenas "La figura X muestra…" en Capítulos 4 y 4b: capturas agrupadas en subfiguras con explicación integrada → chapters/04-descripcion.tex §6 y chapters/04b-juego.tex §2
+- Bibliografía BibTeX apalike con autores corporativos en doble llave y year en todas las entradas → bib/ref.bib (express, githubflow, nodejs, postgresql, cloudrun, githubactions, scrumguide, enunciado, rfc6749, bcrypt, vampiresurvivors, donetonic)
+- 18396 palabras en capítulos y anexos (verificar.py) → salida de prueba "VERIFICACIÓN OK: 35 figuras, 29 tablas, 18396 palabras"
+- 35 figuras y 29 tablas con caption, label y \ref (verificar.py) → salida de prueba
+- revisar_maquetacion.py OK: sin páginas con una sola imagen, sin secciones de 1-2 líneas, tablas p{} + \small, diagramas sin solapes medidos en PDF (15 medidos, 13 revisados por Gemini) → salida de prueba "✅ Maquetación del TFG: cumple las reglas. ✅ Figuras: 15 diagramas medidos en el PDF y 13 revisados a ojo por Gemini, sin fallos."
+- Portada única oficial (elements/portada.tex); preambulo.tex sin segunda portada → Memoria.tex \input{elements/portada} y elements/preambulo.tex sin textblock de logos
+- Anexo desarrollo con dos sprints mismo esquema (planificación, desarrollo, revisión, retrospectiva) y explicación recta Sprint 2 → chapters/a1-desarrollo.tex §1 y §2
+- Hito 4 descrito como completado (no pendiente) en todos los capítulos → chapters/01-introduccion.tex, 03-propuesta.tex, 04-descripcion.tex, 05-evaluacion.tex, 06-conclusiones.tex
+
+La memoria compila sin errores (100 páginas), `verificar.py` pasa todas las comprobaciones estructurales y de contenido (35 figuras, 29 tablas, 18396 palabras, trazabilidad completa, cifras contrastadas), y `revisar_maquetacion.py` da verde total: ninguna página con una sola imagen, sin secciones de 1-2 líneas, tablas bien maquetadas, diagramas sin solapes medidos en el PDF (el último fallo en fig:modelo-datos se corrigió subiendo las etiquetas a `above=50pt`). La prosa es profesional: no quedan cadenas «La figura X muestra…» (capítulos 4 y 4b reescritos con subfiguras y explicación integrada), el pipeline se describe una vez y se referencia, las capturas de DoneTonic y producción aparecen una sola vez, Resumen y Abstract cumplen mínimos y formato, y el anexo de desarrollo tiene los dos sprints con el mismo esquema explicando la recta del Sprint 2. Todas las REGLAS OBLIGATORIAS DE JAVIER se cumplen. El constructor solo eliminó dos palabras vetadas («exhaustivamente» y «thoroughly») en el último paso, sin tocar datos ni estructura. La memoria está lista para entrega.
+
+**Correcciones del revisor:** `(cambio) elements/preambulo.tex`, `(cambio) elements/preambulo.tex`
+
+**Tareas para el constructor:**
+- Ninguna: la memoria está completa y pasa todas las pruebas.
+
+## 2026-11-25 03:31 · 🧠 Lección propuesta para la memoria
+
+[[como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-25 03:31 · 🧠 Conocimiento guardado
+
+[[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram]] · [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]] · [[como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando]]
+
+## 2026-11-25 03:31 · 🎉 Proyecto terminado
+
+El revisor da por cumplidos todos los criterios de la spec.

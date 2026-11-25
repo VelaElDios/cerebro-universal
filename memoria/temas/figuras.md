@@ -49,4 +49,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[maquetacion]] · [[memoria]] · [[capturas]] · [[maquetación]] · [[subcaption]] · [[redaccion]] · [[memoria-procesos]] · [[subfigure]] · [[reglas-tfg]] · [[grada-colchonera]]
+[[latex]] · [[tfg]] · [[maquetacion]] · [[memoria]] · [[capturas]] · [[maquetación]] · [[subcaption]] · [[redaccion]] · [[subfigure]] · [[memoria-procesos]] · [[reglas-tfg]] · [[grada-colchonera]]

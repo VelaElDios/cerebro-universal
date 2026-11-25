@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "despliegue"
-notas: 3
+notas: 4
 ---
 # despliegue
 
@@ -13,6 +13,10 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «despliegue» (este archiv
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-con-postgresql-17-real-docker|Pipeline CI/CD: GitHub Actions con PostgreSQL 17, Docker, Cloud Run, Render y compilación LaTeX]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/pipeline-ci-cd-github-actions-cloud-run-con-workload-identit|Pipeline CI/CD: GitHub Actions → Cloud Run con Workload Identity Federation (WIF) y despliegue alternativo en Render]]
 
+## Datos
+
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
+
 ## Temas relacionados
 
-[[grada-colchonera]] · [[saas]] · [[ci-cd]] · [[cloud-run]] · [[github-actions]] · [[arranque]] · [[migraciones]] · [[artifact-registry]] · [[wif]] · [[devops]] · [[docker]] · [[postgresql]]
+[[grada-colchonera]] · [[saas]] · [[migraciones]] · [[ci-cd]] · [[cloud-run]] · [[github-actions]] · [[metricas]] · [[trazabilidad]] · [[verificacion]] · [[memoria-procesos]] · [[memoria]] · [[endpoints]]

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "pgf-umlsd"
-notas: 25
+notas: 27
 ---
 # pgf-umlsd
 
@@ -24,6 +24,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
+- ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram|Diagramas de secuencia con pgf-umlsd: entorno sequencediagram y reglas de sintaxis]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-pgf-umlsd-reglas-para-pasar-revisar-m|Diagramas de secuencia pgf-umlsd: reglas para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-pgf-umlsd-sin-escalar-y-legibles-reglas-16-18|Diagramas pgf-umlsd sin escalar y legibles (reglas 16-18)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/los-diagramas-nunca-se-escalan-para-que-quepan|Los diagramas nunca se escalan para que quepan]]
@@ -40,6 +41,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan|Cómo corregir diagramas de secuencia pgf-umlsd que desbordan o tienen cruces]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-e|Cómo evitar solapes de etiquetas en diagramas TikZ medidos en el PDF]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p|Cómo evitar solapes de etiquetas en diagramas TikZ medidos por revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta|Diagramas de secuencia: máx. 6 participantes y etiquetas cortas]] · ⚠️ propuesto
@@ -49,4 +51,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «pgf-umlsd» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[tikz]] · [[diagramas]] · [[maquetacion]] · [[diagramas-secuencia]] · [[sequencediagram]] · [[memoria]] · [[secuencia]] · [[codigos estado]] · [[http]] · [[memoria-procesos]] · [[pgfplots]]
+[[latex]] · [[tikz]] · [[maquetacion]] · [[diagramas]] · [[diagramas-secuencia]] · [[sequencediagram]] · [[memoria]] · [[secuencia]] · [[codigos estado]] · [[http]] · [[memoria-procesos]] · [[pgfplots]]
