@@ -16476,3 +16476,13 @@ La memoria compila sin errores (100 páginas), `verificar.py` pasa todas las com
 ## 2026-11-25 03:31 · 🎉 Proyecto terminado
 
 El revisor da por cumplidos todos los criterios de la spec.
+
+
+## Revisión humana (Javier) · 2026-11-25 · últimos retoques ya aplicados
+
+Claude ha retocado tres cosas en el borrador y por eso la memoria vuelve a estar en construcción. Lo ha compilado y la prueba completa sale **verde** (100 páginas):
+- **Fig. 3.2 (modelo de datos):** rehecha. Las etiquetas «userId» y «su club» flotaban lejos de sus flechas, faltaba la flecha de users a juego_perfiles, la caja se salía 26 pt del margen y ponía «PKid». Ahora las tablas están alineadas, las flechas son rectas y cada etiqueta va encima de su flecha.
+- **Tabla de requisitos (04-descripcion) y tabla de herramientas (03-propuesta):** se salían unos 20 pt del margen. Columnas ajustadas y `\multirow{..}{=}` en vez de `{*}`.
+- **Fig. 3.5 (login):** más estrecha, ya no se sale del margen.
+
+**No toquéis nada más.** Ejecutad `comando_prueba` y, si sale verde, aprobad y marcad la memoria como **terminada** para que se actualice `final/`.
