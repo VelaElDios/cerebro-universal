@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tfg"
-notas: 72
+notas: 74
 ---
 # tfg
 
@@ -49,6 +49,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 - ⚖️ [[memoria/conocimiento/decisiones/alcance-coherente-en-toda-la-memoria-dos-sprints-cerrados|Alcance coherente en toda la memoria (dos sprints cerrados)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde|Aprobación final de memoria TFG tras prueba completa verde]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas|Contenido por sprint y prosa de TFG (no listas de capturas)]]
 - ⚖️ [[memoria/conocimiento/decisiones/dentro-de-cajas-no-se-parten-palabras-ni-rutas-text-width-ma|Dentro de cajas no se parten palabras ni rutas (text width, \\ manual, abreviar)]]
 - ⚖️ [[memoria/conocimiento/decisiones/diagramas-de-secuencia-max-6-participantes-agrupar-o-partir|Diagramas de secuencia: límite de 6 participantes (agrupar o partir)]]
@@ -82,6 +83,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 - 📊 [[memoria/conocimiento/datos/bibliografia-gestionada-con-bibtex-en-la-memoria-tfg|Bibliografía gestionada con BibTeX en la memoria TFG]]
 - 📊 [[memoria/conocimiento/datos/capturas-de-donetonic-disponibles-en-el-repo|Capturas de DoneTonic disponibles en el repo]]
+- 📊 [[memoria/conocimiento/datos/cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos|Cifras clave del proyecto contrastadas con fuentes (30 datos)]] · ⚠️ propuesto
 - 📊 [[memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis|Inventario de capturas de pantalla con trazabilidad a requisitos y fechas]]
 - 📊 [[memoria/conocimiento/datos/metadatos-del-proyecto-la-grada-colchonera|Metadatos del proyecto La Grada Colchonera]]
 - 📊 [[memoria/conocimiento/datos/scripts-de-verificacion-automatica-en-el-repo|Scripts de verificación automática en el repo]] · ⚠️ propuesto
@@ -99,4 +101,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tfg» (este archivo se ge
 
 ## Temas relacionados
 
-[[latex]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[redaccion]] · [[plantilla]] · [[saas]] · [[maquetacion]] · [[memoria-procesos]] · [[diagramas]] · [[verificacion]] · [[scrum]]
+[[latex]] · [[memoria]] · [[figuras]] · [[grada-colchonera]] · [[verificacion]] · [[redaccion]] · [[memoria-procesos]] · [[plantilla]] · [[saas]] · [[maquetacion]] · [[diagramas]] · [[scrum]]

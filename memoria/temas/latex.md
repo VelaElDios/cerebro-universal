@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 185
+notas: 187
 ---
 # latex
 
@@ -40,6 +40,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-que-no-c|Cómo corregir diagramas de secuencia pgf-umlsd para que no crucen cajas alt]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-paginas-casi-vacias-regla-9-al-final-de-capitu|Cómo corregir páginas casi vacías (Regla 9) al final de capítulos/anexos]]
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti|Cómo corregir solapes de etiquetas en diagramas TikZ de entidad-relación]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd|Cómo corregir solapes en diagramas de secuencia pgf-umlsd]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co|Cómo corregir solapes en diagramas de secuencia pgf-umlsd con bloques alt]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci|Cómo corregir warnings de pgf-umlsd en diagramas de secuencia]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-escribir-prosa-de-tfg-integrando-capturas-sin-la-figura|Cómo escribir prosa de TFG integrando capturas (sin «La figura X muestra…»)]]
@@ -104,6 +105,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 ## Decisiones (y por qué)
 
 - ⚖️ [[memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin|Alcance por sprint: cada entrega solo contiene lo de su sprint (alcance coherente)]]
+- ⚖️ [[memoria/conocimiento/decisiones/aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde|Aprobación final de memoria TFG tras prueba completa verde]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/arreglo-de-diagramas-segun-reglas-16-18-de-javier-feedback-1|Arreglo de diagramas según reglas 16-18 de Javier (feedback 17/11)]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl|Bibliografía BibTeX apalike con autores corporativos en doble llave]]
 - ⚖️ [[memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l|Bibliografía BibTeX apalike: autores corporativos con doble llave y year en todas las entradas]] · ⚠️ propuesto

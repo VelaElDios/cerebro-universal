@@ -16536,3 +16536,76 @@ La memoria compila, pasa la verificación de contenido y la maquetación general
 ## 2026-11-25 12:35 · 🧠 Conocimiento guardado
 
 [[como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram]] · [[bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl]] · [[como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]]
+
+## 2026-11-25 13:41 · Constructor (nvidia-constructor · minimaxai/minimax-m3.1-flash)
+
+No he modificado ningún archivo en este paso: la última ejecución de `comando_prueba` sale en verde (compilación con LuaLaTeX sin errores, `verificar.py` OK con 35 figuras, 29 tablas y 18374 palabras, y `revisar_maquetacion.py` conforme, incluidos los diagramas `fig:modelo-datos`, `fig:sec-login` y `fig:sec-baja`, que era el último fallo pendiente). La revisión humana de Javier del 25/11 pide expresamente no tocar nada más y marcar la memoria como terminada, así que este paso se limita a confirmar que el borrador cumple la spec y las reglas obligatorias y queda listo para entrega.
+
+**Archivos:** ninguno
+
+**Intentos:**
+- intento 1: ✅ pasa la prueba
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Aprobar la memoria y marcarla como terminada para que se actualice `final/`, sin introducir cambios adicionales; si el revisor señala algún punto concreto, atenderlo en un paso aparte y volver a ejecutar la prueba completa.
+
+## 2026-11-25 13:47 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** aprobado · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Sprint 1 fechas 29/09–27/10/2026 → sprint-1.md: «Del 29/09/2026 al 27/10/2026»
+- Sprint 1 PBIs 19 (P1–P19) → sprint-1.md: «19 PBIs (P1–P19)»
+- Sprint 1 tareas 32 (T1–T32) → sprint-1.md: «32 tareas (T1–T32)»
+- Sprint 2 fechas 23/10–29/10/2026 → sprint-2.md: «Del 23/10/2026 al 29/10/2026»
+- Sprint 2 PBIs 29 (P20–P48) → sprint-2.md: «29 PBIs (P20–P48)»
+- Sprint 2 tareas 50 (T33–T82) → sprint-2.md: «50 tareas (T33–T82)»
+- Total PBIs 48, tareas 82 → sprint-1.md + sprint-2.md suman 19+29=48, 32+50=82
+- Burndown entrega Sprint 1: 16 PBIs (P1–P14, P18, P19) → sprint-1.md tabla «Evolución del Sprint 1»
+- Pruebas al cierre Sprint 2: 276 → sprint-2.md: «276 (cuentas, API, base de datos y juego)»
+- Pruebas tras Fase 7: 322 → log.md: «La suite pasa a 322 pruebas»
+- Endpoints API: 23 → sprint-2.md métricas: «Endpoints expuestos en la API: 23»
+- Migraciones SQL: 5 → sprint-2.md métricas: «Migraciones SQL aplicadas: 5»
+- Líneas backend ~2300 → sprint-2.md métricas: «Líneas de código del backend (src/, con SQL) ~2.300»
+- Líneas frontend ~1150 → sprint-2.md métricas: «Líneas de interfaz web (ui.js, api.js, ui/) ~1.150»
+- Líneas CSS ~950 → sprint-2.md métricas: «Líneas de hojas de estilo CSS ~950»
+- Líneas juego ~14800 → sprint-2.md métricas: «Líneas del motor del juego (public/js/game/, 35 módulos) ~14.800»
+- Dependencias producción: 6 → sprint-2.md métricas: «Dependencias directas de producción: 6»
+- Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones → sprint-2.md métricas
+- RF-01 a RF-13 definidos → requisitos.md tabla «Requisitos funcionales del Sprint 1»
+- RJ-01 a RJ-20 definidos → requisitos.md tabla «Requisitos funcionales del juego (Sprint 2)»
+- RNF-01 a RNF-12 definidos → requisitos.md tabla «Requisitos no funcionales»
+- OAuth 2.0 RFC 6749 citado → bibliografia-extra.md clave rfc6749
+- bcrypt citado → bibliografia-extra.md clave bcrypt
+- Vampire Survivors citado → bibliografia-extra.md clave vampiresurvivors
+- DoneTonic citado → bibliografia-extra.md clave donetonic
+- URL despliegue Cloud Run → README.md y sprint-1.md: «https://la-grada-colchonera-1081564062572.europe-southwest1.run.app»
+- Repositorio GitHub → README.md: «https://github.com/VelaElDios/la-grada-colchonera-saas»
+- PRs y trazabilidad coinciden → sprint-1.md, sprint-2.md, a4-trazabilidad.tex tablas cruzadas
+- Resumen ≥150 palabras y Abstract ≥120 palabras → elements/preambulo.tex (comprobado visualmente en PDF)
+- 35 figuras, 29 tablas con caption, label, ref → verificar.py OK
+- Figuras fijas obligatorias presentes → verificar.py OK (fig:capas, fig:modelo-datos, fig:sec-registro, fig:sec-confirmacion, fig:sec-login, fig:sec-google, fig:sec-baja, fig:sec-partida, fig:sec-contratar, fig:pipeline, fig:burndown-s1, fig:burndown-s2)
+- Capturas mínimas por carpeta → verificar.py OK (≥4 app/, ≥4 hito4/, ≥8 juego/, ≥5 donetonic/, ≥2 produccion/, ≥1 prueba-tecnica/)
+- Sin cadenas «La figura X muestra…» sueltas en caps. 4 y 4b → revisor confirmó prosa con subfiguras
+- Imágenes no duplicadas → cada captura una sola vez, resto con \ref
+- Hito 4 completado en todos los capítulos → confirmado en 04-descripcion, 04b-juego, 05-evaluacion, 06-conclusiones, a1-desarrollo
+- Anexo A dos sprints mismo esquema + explicación recta Sprint 2 → a1-desarrollo.tex §Sprint 2 retrospectiva
+- Trazabilidad completa P1–P48, T1–T82 → a4-trazabilidad.tex tabla longtable
+- Bibliografía BibTeX apalike, autores corporativos con doble llave, year en todas → bib/ref.bib verificado
+- revisar_maquetacion.py verde total (incluye fig:sec-baja corregido) → salida prueba: «✅ Maquetación del TFG: cumple las reglas. ✅ Figuras: 15 diagramas medidos en el PDF y 13 revisados a ojo por Gemini, sin fallos.»
+
+La memoria compila sin errores (LuaLaTeX, 100 páginas), `verificar.py` pasa (estructura, cifras, trazabilidad, mínimos) y `revisar_maquetacion.py` pasa todas las reglas de Javier (incluyendo los tres diagramas de secuencia que antes fallaban). Se han cumplido todos los criterios de la spec versión 4: portada única oficial, prosa de TFG sin listas de capturas (caps. 4 y 4b reescritas con subfiguras), imágenes sin repetir, secciones con párrafos completos, coherencia entre capítulos, anexo de desarrollo con dos sprints mismo esquema y explicación de la recta del Sprint 2, trazabilidad completa, Resumen/Abstract correctos, bibliografía apalike con autores corporativos y year. El revisor humano (Javier) autorizó expresamente aprobar si la prueba sale verde. El constructor confirmó que `comando_prueba` pasa en verde. No quedan cambios pendientes.
+
+**Correcciones del revisor:** ninguna
+
+**Tareas para el constructor:**
+- Ninguna: la memoria está completa y pasa todas las pruebas.
+
+## 2026-11-25 13:47 · 🧠 Conocimiento guardado
+
+[[aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl]] · [[como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]] · [[diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram]]
+
+## 2026-11-25 13:47 · 🎉 Proyecto terminado
+
+El revisor da por cumplidos todos los criterios de la spec.

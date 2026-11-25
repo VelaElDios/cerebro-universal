@@ -32,4 +32,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «fuentes» (este archivo s
 
 ## Temas relacionados
 
-[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[metricas]] · [[memoria]] · [[trazabilidad]] · [[juego]] · [[test]] · [[grada-colchonera]] · [[pruebas]] · [[proyecto]] · [[sprints]]
+[[verificacion]] · [[memoria-procesos]] · [[numeros]] · [[metricas]] · [[memoria]] · [[trazabilidad]] · [[juego]] · [[test]] · [[grada-colchonera]] · [[pruebas]] · [[cifras]] · [[proyecto]]

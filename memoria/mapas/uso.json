@@ -102,10 +102,10 @@
   "usos": 1
  },
  "memoria/conocimiento/datos/inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis.md": {
-  "bien": 4,
+  "bien": 5,
   "mal": 0,
   "ultimo": "2026-11-25",
-  "usos": 32
+  "usos": 33
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -186,16 +186,16 @@
   "usos": 43
  },
  "memoria/conocimiento/decisiones/contenido-por-sprint-y-prosa-de-tfg-no-listas-de-capturas.md": {
-  "bien": 8,
+  "bien": 9,
   "mal": 1,
   "ultimo": "2026-11-25",
-  "usos": 35
+  "usos": 36
  },
  "memoria/conocimiento/decisiones/elementos-de-plantilla-inmutables-no-se-quita-nada.md": {
-  "bien": 0,
+  "bien": 1,
   "mal": 1,
-  "ultimo": "2026-11-23",
-  "usos": 9
+  "ultimo": "2026-11-25",
+  "usos": 10
  },
  "memoria/conocimiento/decisiones/la-memoria-tfg-se-entrega-en-pdf-con-marcadores-preferibleme.md": {
   "bien": 0,
@@ -216,10 +216,10 @@
   "usos": 6
  },
  "memoria/conocimiento/decisiones/portada-oficial-unica-y-elementos-fijos-de-la-plantilla.md": {
-  "bien": 5,
+  "bien": 6,
   "mal": 2,
   "ultimo": "2026-11-25",
-  "usos": 63
+  "usos": 64
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,

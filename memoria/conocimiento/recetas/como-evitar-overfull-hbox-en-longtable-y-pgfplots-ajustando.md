@@ -4,7 +4,7 @@ titulo: "Cómo evitar overfull hbox en longtable y pgfplots ajustando anchos de 
 temas: ["latex", "longtable", "maquetacion", "overfull", "pgfplots", "tablas"]
 claves: ["L{...}", "p{...}", "width=0.85\\linewidth", "scale only axis", "ylabel style", "xshift"]
 proyectos: ["memoria-procesos"]
-fuentes: ["chapters/a1-desarrollo.tex (burndowns) y chapters/04-descripcion.tex (tabla RF)", "chapters/04-descripcion.tex (tablas de requisitos) y chapters/03-propuesta.tex (tabla herramientas)"]
+fuentes: ["chapters/a1-desarrollo.tex (burndowns) y chapters/04-descripcion.tex (tabla RF)", "chapters/04-descripcion.tex (tablas de requisitos) y chapters/03-propuesta.tex (tabla herramientas)", "memoria/proyectos/memoria-procesos/include/extra.tex, chapters/03-propuesta.tex, chapters/a1-desarrollo.tex"]
 confianza: "propuesto"
 fecha: "2026-11-25"
 actualizado: "2026-11-25"
@@ -26,5 +26,8 @@ Para que las tablas `longtable` no se salgan del margen (overfull hbox):
 5. Añadir `\setlength{\emergencystretch}{3em}` en el preámbulo para dar tolerancia a la justificación.
 6. Si persiste overfull, reducir ligeramente los anchos de columna o abreviar encabezados.
 7. Comprobar en el log de LaTeX: «Overfull \hbox (XX pt too wide)».
+
+## Ampliación (2026-11-25, memoria-procesos)
+Para evitar overfull hbox en `longtable`: (1) Usar columnas `L{}`/`C{}`/`R{}` basadas en `p{}` (alineación superior) no `m{}`. (2) Sumar anchos de columna + 2\tabcolsep por separador ≤ \linewidth. (3) Usar `\small` al inicio de la tabla (`\AtBeginEnvironment{longtable}{\small}`). (4) En celdas con rutas/códigos largos, usar `\texttt{...}` con `\allowbreak` en puntos naturales. (5) En `pgfplots`, fijar `width=0.85\linewidth` (o menos) y `scale only axis` para que el área de dibujo no exceda el margen. (6) Reducir `text width` de nodos TikZ y `font=\footnotesize`/`\scriptsize` en etiquetas. Verificado en tablas de requisitos, herramientas, backlogs y gráficas burndown.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

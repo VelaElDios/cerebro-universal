@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tikz"
-notas: 32
+notas: 33
 ---
 # tikz
 
@@ -18,6 +18,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 - 🧪 [[memoria/conocimiento/recetas/con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel|Con babel en español, TikZ necesita \usetikzlibrary{babel}]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-diagramas-de-entidad-relacion-en-tikz-para-que|Cómo corregir diagramas de entidad-relación en TikZ para que no crucen cajas]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti|Cómo corregir solapes de etiquetas en diagramas TikZ de entidad-relación]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd|Cómo corregir solapes en diagramas de secuencia pgf-umlsd]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co|Cómo corregir solapes en diagramas de secuencia pgf-umlsd con bloques alt]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci|Cómo corregir warnings de pgf-umlsd en diagramas de secuencia]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-escribir-un-diagrama-de-entidad-relacion-en-tikz-legibl|Cómo escribir un diagrama de entidad-relación en TikZ legible]] · ⚠️ propuesto
@@ -59,4 +60,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tikz» (este archivo se g
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[memoria]] · [[pgfplots]] · [[maquetacion]] · [[tfg]] · [[lua]] · [[beamer]] · [[defensa]] · [[graficas]] · [[sus]]
+[[latex]] · [[pgf-umlsd]] · [[diagramas]] · [[memoria]] · [[maquetacion]] · [[pgfplots]] · [[tfg]] · [[lua]] · [[sequencediagram]] · [[beamer]] · [[defensa]] · [[graficas]]

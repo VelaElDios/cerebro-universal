@@ -14,4 +14,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «manual-usuario» (este ar
 
 ## Temas relacionados
 
-[[arquitectura]] · [[capitulo-4]] · [[memoria]] · [[requisitos]] · [[tfg]] · [[capturas]] · [[latex]] · [[subcaption]] · [[subfigure]] · [[figuras]]
+[[memoria]] · [[arquitectura]] · [[capitulo-4]] · [[requisitos]] · [[tfg]] · [[capturas]] · [[latex]] · [[subcaption]] · [[subfigure]] · [[figuras]]

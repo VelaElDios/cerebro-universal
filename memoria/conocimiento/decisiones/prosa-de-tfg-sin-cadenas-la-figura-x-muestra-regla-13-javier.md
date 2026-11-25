@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Prosa de TFG sin cadenas «La figura X muestra…» (regla 13 Javier)"
-temas: ["latex", "redaccion", "tfg", "maquetación", "capturas", "figuras", "subfigure"]
+temas: ["latex", "redaccion", "tfg", "maquetación", "capturas", "figuras", "subfigure", "estilo", "memoria"]
 claves: ["subfigure", "prosa", "manual de usuario", "capturas", "problema: El borrador tenía ~45 frases sueltas tipo «La figura X muestra…»", "una por captura", "lo que delata un trabajo poco profesional.", "solucion: Reescribir cada sección como prosa continua que explica el flujo de uso. Agrupar capturas relacionadas en una figura con `subfigure` (dos por fila", "`\\begin{subfigure}{0.48\\textwidth}`)", "con un caption general y uno por subfigura. Citar las figuras dentro de la explicación con `\\ref`."]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md regla 13", "memoria/reglas-tfg.md"]
+fuentes: ["memoria/reglas-tfg.md regla 13", "memoria/reglas-tfg.md", "../../memoria/reglas-tfg.md"]
 confianza: "propuesto"
 fecha: "2026-11-24"
 actualizado: "2026-11-25"
@@ -29,5 +29,8 @@ Para cumplir la regla 13 de Javier:
 - Agrupar capturas relacionadas (p. ej., formulario y su error) en una sola figura con `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`), con un caption general y uno por subfigura.
 - Citar la figura con `\ref{fig:...}` dentro de la prosa, no como frase aislada.
 - Ejemplo: «Al registrarse, el formulario valida el email y la contraseña en cliente (mínimo 8 caracteres) y muestra los errores en línea asociados a cada campo mediante `aria-describedby` (Figura~\ref{fig:app-inicio-registro}, subfigura~\ref{fig:app-registro}).»
+
+## Ampliación (2026-11-25, memoria-procesos)
+La regla 13 de Javier prohíbe las frases sueltas tipo «La figura X muestra…» por cada captura. En su lugar, se debe escribir prosa continua que explique la interacción del usuario con la aplicación, integrando las referencias a las figuras dentro de la explicación. Las capturas relacionadas (p. ej., formulario de registro y su validación) se agrupan en una sola figura con `subfigure`, con un caption general y subcaptions descriptivas. Esto se aplicó en los capítulos 4 (aplicación SaaS) y 4b (juego) de la memoria.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

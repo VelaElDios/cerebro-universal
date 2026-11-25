@@ -47,4 +47,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «memoria-procesos» (este 
 
 ## Temas relacionados
 
-[[latex]] · [[scrum]] · [[memoria]] · [[grada-colchonera]] · [[tfg]] · [[maquetacion]] · [[fuentes]] · [[verificacion]] · [[sprint]] · [[donetonic]] · [[saas]] · [[metricas]]
+[[latex]] · [[scrum]] · [[memoria]] · [[tfg]] · [[grada-colchonera]] · [[maquetacion]] · [[fuentes]] · [[verificacion]] · [[sprint]] · [[donetonic]] · [[saas]] · [[metricas]]

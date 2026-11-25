@@ -50,4 +50,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «figuras» (este archivo s
 
 ## Temas relacionados
 
-[[latex]] · [[tfg]] · [[maquetacion]] · [[capturas]] · [[memoria]] · [[subcaption]] · [[maquetación]] · [[subfigure]] · [[redaccion]] · [[memoria-procesos]] · [[reglas-tfg]] · [[grada-colchonera]]
+[[latex]] · [[tfg]] · [[memoria]] · [[maquetacion]] · [[capturas]] · [[subcaption]] · [[maquetación]] · [[subfigure]] · [[redaccion]] · [[memoria-procesos]] · [[estilo]] · [[reglas-tfg]]

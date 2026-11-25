@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "verificacion"
-notas: 26
+notas: 27
 ---
 # verificacion
 
@@ -20,6 +20,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Decisiones (y por qué)
 
+- ⚖️ [[memoria/conocimiento/decisiones/aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde|Aprobación final de memoria TFG tras prueba completa verde]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/cada-cifra-del-documento-sale-de-las-fuentes-tambien-las-peq|Cada cifra del documento sale de las fuentes, también las pequeñas]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/fuentes-faltantes-bloquean-verificacion-automatica-de-numero|Fuentes faltantes bloquean verificación automática de números]] · ⚠️ propuesto
 - ⚖️ [[memoria/conocimiento/decisiones/memoria-tfg-aprobada-tras-pasar-todos-los-tests-automaticos|Memoria TFG aprobada tras pasar todos los tests automáticos y revisión manual]] · ⚠️ propuesto
@@ -47,4 +48,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «verificacion» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[fuentes]] · [[memoria]] · [[metricas]] · [[trazabilidad]] · [[tfg]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[sprints]] · [[grada-colchonera]] · [[juego]]
+[[latex]] · [[memoria]] · [[fuentes]] · [[metricas]] · [[tfg]] · [[trazabilidad]] · [[memoria-procesos]] · [[numeros]] · [[test]] · [[sprints]] · [[grada-colchonera]] · [[juego]]

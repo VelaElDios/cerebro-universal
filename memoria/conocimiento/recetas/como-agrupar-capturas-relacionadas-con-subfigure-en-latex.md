@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Cómo agrupar capturas relacionadas con subfigure en LaTeX"
-temas: ["capturas", "latex", "manual-usuario", "subcaption", "subfigure", "figuras"]
+temas: ["capturas", "latex", "manual-usuario", "subcaption", "subfigure", "figuras", "memoria"]
 claves: ["subfigure", "0.48\\textwidth", "\\subcaption", "\\caption", "\\label", "fig:app-inicio-registro", "fig:juego-menu-vestuario"]
 proyectos: ["memoria-procesos"]
-fuentes: ["chapters/04-descripcion.tex, chapters/04b-juego.tex", "chapters/04-descripcion.tex (sección 6) y chapters/04b-juego.tex (sección 2)"]
+fuentes: ["chapters/04-descripcion.tex, chapters/04b-juego.tex", "chapters/04-descripcion.tex (sección 6) y chapters/04b-juego.tex (sección 2)", "memoria/proyectos/memoria-procesos/chapters/04-descripcion.tex"]
 confianza: "propuesto"
 fecha: "2026-11-25"
 actualizado: "2026-11-25"
@@ -29,5 +29,8 @@ Pasos para agrupar dos capturas relacionadas en una figura con `subfigure` (paqu
 6. Cerrar `\end{figure}`.
 7. En el texto, referirse a la figura general con `\ref{fig:etiqueta-general}` o a una subfigura con `\subref{fig:etiqueta1}` (requiere `subcaption`).
 8. Para capturas verticales (móvil) usar `width=0.35\textwidth`; para el resto `width=0.9\textwidth` máx., siempre con `height=0.42\textheight,keepaspectratio`.
+
+## Ampliación (2026-11-25, memoria-procesos)
+Para evitar listas de capturas sueltas, agrupar capturas relacionadas en una figura con `subfigure` (paquete `subcaption`). Cada subfigura usa `width=\linewidth` (o `0.48\textwidth` para dos por fila), `height=0.35\textheight,keepaspectratio` para móviles o `0.42\textheight` para escritorio. La figura principal tiene `\caption` general y `\label{fig:...}`; cada subfigura tiene `\subcaption` y `\label{fig:...}`. En el texto se cita la figura general o las subfiguras individuales con `\ref`.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

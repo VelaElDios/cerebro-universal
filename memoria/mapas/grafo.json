@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T12:35:58+01:00",
+ "generado": "2026-11-25T13:47:13+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -35,7 +35,7 @@
    "id": "proyecto:memoria-procesos",
    "tipo": "proyecto",
    "titulo": "memoria-procesos",
-   "estado": "en-construccion",
+   "estado": "terminado",
    "temas": [
     "latex",
     "memoria",
@@ -879,7 +879,8 @@
     "sprint-2",
     "anexo",
     "sprint2",
-    "sprint 2"
+    "sprint 2",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1777,7 +1778,9 @@
     "pbis",
     "pruebas",
     "tareas",
-    "fuentes"
+    "fuentes",
+    "cifras",
+    "tfg"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2759,6 +2762,23 @@
    "ruta": "memoria/conocimiento/decisiones/alcance-por-sprint-cada-entrega-solo-contiene-lo-de-su-sprin.md"
   },
   {
+   "id": "decision:aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde",
+   "tipo": "decision",
+   "titulo": "Aprobación final de memoria TFG tras prueba completa verde",
+   "temas": [
+    "ci",
+    "latex",
+    "memoria",
+    "tfg",
+    "verificacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/decisiones/aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde.md"
+  },
+  {
    "id": "decision:arquitectura-en-capas-con-inyeccion-de-dependencias-permitio",
    "tipo": "decision",
    "titulo": "Arquitectura en capas con inyección de dependencias permitió cambios sin tocar lógica",
@@ -2812,7 +2832,9 @@
    "temas": [
     "bibliografia",
     "bibtex",
-    "latex"
+    "latex",
+    "apalike",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3124,7 +3146,8 @@
     "latex",
     "pgf-umlsd",
     "sequencediagram",
-    "tikz"
+    "tikz",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -3661,7 +3684,9 @@
     "maquetación",
     "capturas",
     "figuras",
-    "subfigure"
+    "subfigure",
+    "estilo",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4386,7 +4411,8 @@
     "manual-usuario",
     "subcaption",
     "subfigure",
-    "figuras"
+    "figuras",
+    "memoria"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4531,6 +4557,23 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co.md"
+  },
+  {
+   "id": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd",
+   "tipo": "receta",
+   "titulo": "Cómo corregir solapes en diagramas de secuencia pgf-umlsd",
+   "temas": [
+    "latex",
+    "maquetacion",
+    "pgf-umlsd",
+    "sequencediagram",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd.md"
   },
   {
    "id": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
@@ -6211,21 +6254,21 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 185,
+   "peso": 187,
    "ruta": "memoria/temas/latex.md"
   },
   {
    "id": "tema:memoria",
    "tipo": "tema",
    "titulo": "memoria",
-   "peso": 74,
+   "peso": 80,
    "ruta": "memoria/temas/memoria.md"
   },
   {
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 32,
+   "peso": 33,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -6316,7 +6359,7 @@
    "id": "tema:verificacion",
    "tipo": "tema",
    "titulo": "verificacion",
-   "peso": 26,
+   "peso": 27,
    "ruta": "memoria/temas/verificacion.md"
   },
   {
@@ -6337,14 +6380,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 29,
+   "peso": 30,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 32,
+   "peso": 33,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -6393,7 +6436,7 @@
    "id": "tema:tfg",
    "tipo": "tema",
    "titulo": "tfg",
-   "peso": 72,
+   "peso": 74,
    "ruta": "memoria/temas/tfg.md"
   },
   {
@@ -6414,7 +6457,7 @@
    "id": "tema:sequencediagram",
    "tipo": "tema",
    "titulo": "sequencediagram",
-   "peso": 5,
+   "peso": 6,
    "ruta": "memoria/temas/sequencediagram.md"
   },
   {
@@ -6967,7 +7010,7 @@
    "id": "tema:estilo",
    "tipo": "tema",
    "titulo": "estilo",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/estilo.md"
   },
   {
@@ -7179,6 +7222,13 @@
    "titulo": "fuentes",
    "peso": 14,
    "ruta": "memoria/temas/fuentes.md"
+  },
+  {
+   "id": "tema:cifras",
+   "tipo": "tema",
+   "titulo": "cifras",
+   "peso": 2,
+   "ruta": "memoria/temas/cifras.md"
   },
   {
    "id": "tema:proyecto",
@@ -7461,10 +7511,17 @@
    "ruta": "memoria/temas/proceso.md"
   },
   {
+   "id": "tema:ci",
+   "tipo": "tema",
+   "titulo": "ci",
+   "peso": 3,
+   "ruta": "memoria/temas/ci.md"
+  },
+  {
    "id": "tema:apalike",
    "tipo": "tema",
    "titulo": "apalike",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/apalike.md"
   },
   {
@@ -7790,13 +7847,6 @@
    "ruta": "memoria/temas/anexo desarrollo.md"
   },
   {
-   "id": "tema:cifras",
-   "tipo": "tema",
-   "titulo": "cifras",
-   "peso": 1,
-   "ruta": "memoria/temas/cifras.md"
-  },
-  {
    "id": "tema:refs",
    "tipo": "tema",
    "titulo": "refs",
@@ -7851,13 +7901,6 @@
    "titulo": "trabajo-futuro",
    "peso": 1,
    "ruta": "memoria/temas/trabajo-futuro.md"
-  },
-  {
-   "id": "tema:ci",
-   "tipo": "tema",
-   "titulo": "ci",
-   "peso": 2,
-   "ruta": "memoria/temas/ci.md"
   },
   {
    "id": "tema:revisar_maquetacion.py",
@@ -9714,6 +9757,11 @@
   {
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "tema:sprint 2",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
@@ -12814,6 +12862,16 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
    "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:cifras",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:tfg",
    "tipo": "trata"
   },
   {
@@ -16167,6 +16225,36 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde",
+   "a": "tema:ci",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde",
+   "a": "tema:tfg",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde",
+   "a": "tema:verificacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:aprobacion-final-de-memoria-tfg-tras-prueba-completa-verde",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
    "de": "decision:arquitectura-en-capas-con-inyeccion-de-dependencias-permitio",
    "a": "tema:arquitectura",
    "tipo": "trata"
@@ -16319,6 +16407,16 @@
   {
    "de": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
    "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
+   "a": "tema:apalike",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
@@ -17299,6 +17397,11 @@
   {
    "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
    "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
@@ -18944,6 +19047,16 @@
   {
    "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
    "a": "tema:subfigure",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:estilo",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier",
+   "a": "tema:memoria",
    "tipo": "trata"
   },
   {
@@ -21758,6 +21871,11 @@
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -22098,6 +22216,41 @@
   },
   {
    "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co",
+   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "tipo": "enlaza"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd",
+   "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd",
    "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
    "tipo": "enlaza"
   },

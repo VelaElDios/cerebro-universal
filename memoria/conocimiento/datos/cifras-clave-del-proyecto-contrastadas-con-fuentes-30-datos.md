@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (30 datos)"
-temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria", "grada-colchonera", "despliegue", "endpoints", "juego", "migraciones", "pbis", "pruebas", "tareas", "fuentes"]
+temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria", "grada-colchonera", "despliegue", "endpoints", "juego", "migraciones", "pbis", "pruebas", "tareas", "fuentes", "cifras", "tfg"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints", "36 jugadores", "10 jefes", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/decisiones.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/decisiones.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/log.md, repo:saas/docs/requisitos.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-25"
@@ -106,5 +106,8 @@ Lista de 30 cifras verificadas contra las fuentes para usar en la memoria sin ri
 - Trazabilidad: requisito → PBI → tarea → rama → PR → release (Anexo B completo).
 - Uso IA: Claude (Cowork) para código/docs/PRs; IAs gratuitas (Gemini, NVIDIA, OpenRouter) para memoria con test automático.
 - Bibliografía: 12 entradas (Express, GitHub Flow, Node.js, PostgreSQL, Cloud Run, GitHub Actions, Scrum Guide, enunciado, RFC 6749, bcrypt, Vampire Survivors, DoneTonic).
+
+## Ampliación (2026-11-25, memoria-procesos)
+Lista de 30 cifras verificadas contra las fuentes del repositorio y usadas en la memoria: fechas de sprints, conteos de PBIs/tareas, números de pruebas, endpoints, migraciones, líneas de código, dependencias, contenido del juego, URLs de despliegue y repositorio, referencias bibliográficas (RFC 6749, bcrypt, Vampire Survivors, DoneTonic), y trazabilidad completa de 82 tareas.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

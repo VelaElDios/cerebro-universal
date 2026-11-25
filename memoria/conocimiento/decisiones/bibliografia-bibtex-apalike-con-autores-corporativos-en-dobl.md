@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Bibliografía BibTeX apalike con autores corporativos en doble llave"
-temas: ["bibliografia", "bibtex", "latex"]
+temas: ["bibliografia", "bibtex", "latex", "apalike", "memoria"]
 claves: ["apalike", "double braces", "corporate author", "year"]
 proyectos: ["memoria-procesos"]
-fuentes: ["bib/ref.bib"]
+fuentes: ["bib/ref.bib", "memoria/proyectos/memoria-procesos/bib/ref.bib"]
 confianza: "verificado"
 fecha: "2026-11-25"
 actualizado: "2026-11-25"
@@ -23,5 +23,8 @@ En la memoria se usa BibTeX con estilo `apalike` (archivo `bib/ref.bib`). Reglas
 > — `bib/ref.bib`
 
 Relacionado: [[bibliografia-bibtex-apalike-autores-corporativos-con-doble-l]]
+
+## Ampliación (2026-11-25, memoria-procesos)
+En BibTeX con estilo `apalike`, los autores que son organizaciones deben ir entre doble llave (`author = {{GitHub}}`) para que no se interprete la primera palabra como nombre y el resto como apellido. Todas las entradas deben llevar `year`; si la fuente no tiene fecha, usar `year = {s.f.}` (sin fecha). Esto evita citas como «[de Castilla-La Mancha, ]» o «[Neon, ]» sin año. Verificado en `bib/ref.bib` de la memoria.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

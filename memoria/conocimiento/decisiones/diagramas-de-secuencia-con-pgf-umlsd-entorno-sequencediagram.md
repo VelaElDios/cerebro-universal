@@ -1,10 +1,10 @@
 ---
 tipo: "decision"
 titulo: "Diagramas de secuencia con pgf-umlsd: entorno sequencediagram y reglas de sintaxis"
-temas: ["diagramas-secuencia", "latex", "pgf-umlsd", "sequencediagram", "tikz"]
+temas: ["diagramas-secuencia", "latex", "pgf-umlsd", "sequencediagram", "tikz", "memoria"]
 claves: ["sequencediagram", "newthread", "newinst", "call", "mess", "sdblock", "alt", "participante", "mensaje"]
 proyectos: ["memoria-procesos"]
-fuentes: ["memoria/reglas-tfg.md (ejemplo compilado y probado)", "memoria/reglas-tfg.md (ejemplo en spec)"]
+fuentes: ["memoria/reglas-tfg.md (ejemplo compilado y probado)", "memoria/reglas-tfg.md (ejemplo en spec)", "memoria/proyectos/memoria-procesos/chapters/04-descripcion.tex (fig:sec-login, fig:sec-baja, fig:sec-partida, fig:sec-contratar)"]
 confianza: "propuesto"
 fecha: "2026-11-25"
 actualizado: "2026-11-25"
@@ -50,5 +50,8 @@ Reglas obligatorias para diagramas de secuencia en esta memoria (plantilla ESIIA
 - Cada participante usado debe estar declarado con `\newthread`/`\newinst` en ese diagrama.
 - No usar `\resizebox`, `adjustbox` ni `scale`: el diagrama debe caber a tamaño real (letras ≥ 7,5 pt). Si no cabe: reducir participantes (máx. 6), agrupar (ej. «Vista + api.js» → «Frontend»), partir en dos diagramas, o usar `pdflscape` como último recurso.
 - `revisar_umlsd.py` comprueba sintaxis y participantes antes de compilar.
+
+## Ampliación (2026-11-25, memoria-procesos)
+El paquete `pgf-umlsd` provee el entorno `sequencediagram` (minúsculas). Participantes: `\newthread` (línea de vida con caja superior) y `\newinst[distancia]{id}{nombre}` (distancia opcional en cm). Llamadas anidadas: `\begin{call}{origen}{mensaje}{destino}{respuesta} ... \end{call}`. Mensajes simples: `\mess{origen}{mensaje}{destino}`. Bloques alternativos: `\begin{sdblock}{alt}{condición} ... \end{sdblock}`. Reglas: (1) Todos los participantes usados deben estar declarados. (2) En textos de `\mess`, `call`, `callself`, `\newinst`: nada de `#`, `_`, `&`, `%`, `$`, `{`, `}`, `\`, comandos LaTeX, paréntesis en `\mess`. (3) Máx. 6 participantes; si más, agrupar o partir diagrama. (4) Nunca `resizebox`/`adjustbox`/`scale`. `revisar_umlsd.py` valida todo esto antes de compilar.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

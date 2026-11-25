@@ -1,7 +1,7 @@
 ---
 tipo: "concepto"
 titulo: "Burndown real vs DoneTonic en Sprint 2 — explicación obligatoria en anexo desarrollo"
-temas: ["donetonic", "metricas", "retrospectiva", "scrum", "burndown", "memoria-procesos", "sprint-2", "anexo", "sprint2", "sprint 2"]
+temas: ["donetonic", "metricas", "retrospectiva", "scrum", "burndown", "memoria-procesos", "sprint-2", "anexo", "sprint2", "sprint 2", "memoria"]
 claves: ["recta DoneTonic", "backlog registrado al cierre", "evolución real por PRs"]
 proyectos: ["memoria-procesos"]
 fuentes: ["sprint-2.md § Retrospectiva y § Evolución del Sprint 2", "repo:saas/docs/sprint-2.md y repo:saas/docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md (D-19)", "docs/sprint-2.md §Retrospectiva y docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md", "repo:saas/docs/sprint-2.md §Evolución, repo:saas/docs/decisiones.md D-19", "repo:saas/docs/sprint-2.md, repo:saas/docs/decisiones.md D-19"]
@@ -58,5 +58,8 @@ En el Anexo A (a1-desarrollo.tex) se incluye la Figura fig:burndown-s2 (pgfplots
 
 ## Ampliación (2026-11-25, memoria-procesos)
 Regla: En el anexo de desarrollo (Anexo A) se debe explicar explícitamente por qué las gráficas de DoneTonic del Sprint 2 salen en recta. La causa es que el juego se programó del 23 al 26/10, antes de que el profesor fijara el contenido del Sprint 2, y el backlog se registró en DoneTonic al cerrar el sprint (29/10). Por tanto, DoneTonic marca todos los PBIs como hechos el 29/10. La evolución real se reconstruye con las fechas de fusión de los PR (Tabla de evolución y gráfico burndown real con pgfplots). Esto se hizo en el anexo actual (Figura~\ref{fig:burndown-s2} y Tabla~\ref{tab:evolucion-s2}) y se cita la captura de DoneTonic (Figura~\ref{fig:donetonic-s2-graficas}) mostrando la recta.
+
+## Ampliación (2026-11-25, memoria-procesos)
+En el anexo de desarrollo (a1-desarrollo.tex) se debe explicar explícitamente por qué las gráficas de DoneTonic del Sprint 2 salen en recta: el backlog se registró al cerrar el sprint (29/10/2026) con todos los PBIs ya en Hecho. La evolución real se reconstruye a partir de las fechas de fusión de los PR en main (Tabla y Figura burndown-s2). Esto cumple la regla del profesor: «Hay que explicar que las gráficas de DoneTonic del Sprint 2 salen en recta porque el backlog se registró al cerrar el sprint (29/10)».
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

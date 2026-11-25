@@ -81,6 +81,9 @@ Relacionado: [[inventario-de-capturas-con-trazabilidad-a-requisitos-y-fecha]] ·
 ## Ampliación (2026-11-25, memoria-procesos)
 Estructura de carpetas y contenido (fechas de captura incluidas): app/ (13, 27/10/2026, Hitos 1-3), hito4/ (11, 27/10/2026, Google OAuth, email confirmation), juego/ (16, 29/10/2026, Sprint 2 completo), fase7/ (12, 29/10/2026, before/after sprites, menú nuevo), donetonic/ (8, 29/10/2026, tableros y gráficas), produccion/ (3, 23/10/2026, email real, Actions verde, Google publicado), prueba-tecnica/ (2, respuestas POST /api/prueba/dominio). Todas las capturas referencian requisito (PBI/RJ) para trazabilidad TFG.
 
+## Ampliación (2026-11-25, memoria-procesos)
+Estructura de carpetas en `docs/capturas/` y `figs/capturas/`: app/ (13, 27/10), hito4/ (11, 27/10), juego/ (16, 29/10), fase7/ (12, 29/10), donetonic/ (8, 29/10), produccion/ (3, 23/10), prueba-tecnica/ (2). Cada captura referencia requisito (PBI/RJ) para trazabilidad TFG. En la memoria se usan las rutas `figs/capturas/<carpeta>/<archivo>` sin extensión.
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]
 <<<CONTRADICCION>>
 no

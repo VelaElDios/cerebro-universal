@@ -22,4 +22,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «anexo» (este archivo se 
 
 ## Temas relacionados
 
-[[scrum]] · [[memoria-procesos]] · [[longtable]] · [[trazabilidad]] · [[memoria]] · [[donetonic]] · [[metricas]] · [[retrospectiva]] · [[burndown]] · [[sprint-2]] · [[sprint2]] · [[sprint 2]]
+[[memoria]] · [[scrum]] · [[memoria-procesos]] · [[longtable]] · [[trazabilidad]] · [[donetonic]] · [[metricas]] · [[retrospectiva]] · [[burndown]] · [[sprint-2]] · [[sprint2]] · [[sprint 2]]

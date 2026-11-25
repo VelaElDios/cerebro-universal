@@ -25,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «subfigure» (este archivo
 
 ## Temas relacionados
 
-[[latex]] · [[subcaption]] · [[figuras]] · [[capturas]] · [[verificar]] · [[redaccion]] · [[tfg]] · [[maquetación]] · [[refs]] · [[maquetacion]] · [[manual-usuario]] · [[figura]]
+[[latex]] · [[subcaption]] · [[figuras]] · [[capturas]] · [[memoria]] · [[verificar]] · [[redaccion]] · [[tfg]] · [[maquetación]] · [[estilo]] · [[refs]] · [[maquetacion]]

@@ -25,4 +25,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetación» (este arch
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[maquetacion]] · [[reglas-tfg]] · [[tfg]] · [[capturas]] · [[subfigure]] · [[duplicados]] · [[memoria-procesos]] · [[ref]] · [[reglas-javier]] · [[diagramas]]
+[[latex]] · [[figuras]] · [[maquetacion]] · [[reglas-tfg]] · [[tfg]] · [[capturas]] · [[subfigure]] · [[memoria]] · [[duplicados]] · [[memoria-procesos]] · [[ref]] · [[reglas-javier]]
