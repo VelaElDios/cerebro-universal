@@ -103,7 +103,6 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\linewidth, max totalheight=0.6\textheight}
 \begin{tikzpicture}[
     node/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=6.4cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
     nodeext/.style={rectangle, draw=tema, fill=gris95, rounded corners, text width=5.2cm, align=center, minimum height=1.0cm, font=\footnotesize, inner sep=4pt},
@@ -127,12 +126,11 @@ La arquitectura es cliente-servidor en capas (Figura~\ref{fig:capas}). El servid
     \draw[arrow, dashed] (srv.east) -- (rules.west);
     \draw[arrow] (int.east) -- (ext.west);
 \end{tikzpicture}
-\end{adjustbox}
 \caption{Arquitectura en capas: cliente (navegador) y servidor (Node.js/Express).}
 \label{fig:capas}
 \end{figure}
 
-Según la Figura~\ref{fig:capas}, la aplicación separa la presentación (navegador) del servidor, que a su vez se organiza en capas API, lógica, datos e integraciones. Las reglas del juego (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) se comparten entre cliente y servidor: PostgreSQL se accede desde la capa de datos y el correo y Google desde la capa de integraciones.
+La aplicación separa la presentación (navegador) del servidor, que a su vez se organiza en capas API, lógica, datos e integraciones (Figura~\ref{fig:capas}). Las reglas del juego (\texttt{club.js}, \texttt{config.js}, \texttt{logros.js}) se comparten entre cliente y servidor: PostgreSQL se accede desde la capa de datos y el correo y Google desde la capa de integraciones.
 
 La separación de responsabilidades por capas se detalla en la Tabla~\ref{tab:capas}.
 
@@ -190,46 +188,44 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max totalheight=0.6\textheight}
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\footnotesize, text width=3.2cm, inner sep=3pt},
-    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.6cm, align=left, font=\footnotesize, text width=4.6cm, inner sep=3pt},
-    pk/.style={font=\footnotesize\bfseries},
-    uk/.style={font=\footnotesize\itshape},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=3.6cm, inner sep=3pt},
+    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=4.8cm, inner sep=3pt},
+    pk/.style={font=\scriptsize\bfseries},
+    uk/.style={font=\scriptsize\itshape},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema},
-    rel/.style={font=\scriptsize, inner sep=1pt}
+    rel/.style={font=\small, inner sep=2pt}
 ]
-    % Layout horizontal: session (izquierda), users (centro) y juego_perfiles (derecha),
-    % con juego_records debajo de users. Las cajas se reparten en el ancho del texto y
-    % las etiquetas de relación van en el hueco entre dos cajas, sin tocar su contenido.
-    \node[entity] (session) at (-5.9,0) {
+    % Layout con más separación horizontal y vertical para evitar solapes
+    % Subimos las cajas superiores (y=2.5) y bajamos records (y=-6.0) para dar más aire vertical
+    \node[entity, text width=3.0cm] (session) at (-6.5, 2.5) {
         \textbf{session}\\
         \pk sid VARCHAR PK\\
         \texttt{sess JSON}\\
         \texttt{expire TIMESTAMP}
     };
-    \node[entitywide] (users) at (0,0) {
+    \node[entitywide] (users) at (0.0, 2.5) {
         \textbf{users}\\
         \pk id UUID PK\\
-        \texttt{email TEXT} \uk (único entre no eliminadas)\\
-        \texttt{password\_hash TEXT} (null con Google)\\
-        \texttt{role TEXT} \texttt{user | admin}\\
-        \texttt{status TEXT} \texttt{pending | active | deleted}\\
-        \texttt{auth\_provider TEXT} \texttt{local | google}\\
+        \texttt{email TEXT} \uk (único no eliminadas)\\
+        \texttt{password\_hash TEXT} (null Google)\\
+        \texttt{role TEXT} user | admin\\
+        \texttt{status TEXT} pending | active | deleted\\
+        \texttt{auth\_provider TEXT} local | google\\
         \texttt{created\_at TIMESTAMPTZ}\\
         \texttt{deleted\_at TIMESTAMPTZ}\\
         \texttt{apodo TEXT}\\
         \texttt{apodo\_clave TEXT} \uk\\
         \texttt{avatar TEXT}
     };
-    \node[entity] (perfiles) at (5.9,0) {
+    \node[entity, text width=3.4cm] (perfiles) at (6.5, 2.5) {
         \textbf{juego\_perfiles}\\
         \pk user\_id UUID PK,FK\\
         \texttt{datos JSONB}\\
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entitywide] (records) at (0,-7.0) {
+    \node[entitywide] (records) at (0.0, -6.0) {
         \textbf{juego\_records}\\
         \pk user\_id UUID PK,FK\\
         \texttt{alias TEXT}\\
@@ -240,14 +236,14 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    % Relación 1 a 1 con el perfil del juego: la etiqueta va en el hueco entre las cajas.
-    \draw[arrow] (users.east) -- node[above, rel] {su club} (perfiles.west);
-    % Relación 1 a 1 con la mejor partida: la etiqueta queda a la izquierda de la flecha.
-    \draw[arrow] (users.south) -- node[left, rel, pos=0.5] {su mejor partida} (records.north);
-    % La sesión guarda el userId (y el state durante el acceso con Google).
-    \draw[arrow, dashed] (session.east) -- node[above, rel] {userId} (users.west);
+    % Relación session -> users: flecha discontinua horizontal. La etiqueta se aparta
+    % con above=50pt para que la línea no toque el texto (reglas 16-18).
+    \draw[arrow, dashed] (session.east) -- node[rel, midway, above=50pt] {userId} (users.west);
+    % Relación users -> perfiles: flecha horizontal con la misma separación vertical.
+    \draw[arrow] (users.east) -- node[rel, midway, above=50pt, align=center] {su\\club} (perfiles.west);
+    % Relación users -> records: flecha vertical con la etiqueta a la izquierda, anclada al trayecto.
+    \draw[arrow] (users.south) -- node[rel, anchor=east, xshift=-18pt, pos=0.5, align=center] {su mejor\\partida} (records.north);
 \end{tikzpicture}
-\end{adjustbox}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}
 \end{figure}
@@ -330,105 +326,98 @@ Esta sección muestra los diagramas de secuencia de los flujos principales. Todo
 \subsection{Registro con email y contraseña}
 \label{sec:flujo-registro}
 
-El registro recorre la cadena completa: la vista valida el email y la contraseña en el cliente, \path{api.js} envía el \texttt{POST} a la API, \path{userService} normaliza y valida, rechaza el email repetido con un 409 y crea la cuenta pendiente con la contraseña ya hasheada; después se firma el token HMAC (24 h) y el correo sale por SMTP.
+El registro es el flujo más largo de la aplicación, porque en él se decide si la cuenta ya existe, se protege la contraseña y se envía el correo de confirmación. La vista valida el email y la contraseña en el cliente y \path{api.js} envía el \texttt{POST} a la API; \path{userService} normaliza el email, busca si hay otra cuenta con ese correo y, si no la hay, guarda la contraseña como hash bcrypt y crea la cuenta en estado \texttt{pending}. A continuación firma el token HMAC, que caduca en 24 horas, y el correo se envía por SMTP (Figura~\ref{fig:sec-registro}). En el diagrama, la rama de error devuelve un 409 cuando el email ya está registrado y la rama de alta termina con la cuenta creada y el correo enviado.
 
 \begin{figure}[htbp]
 \centering
-\scriptsize
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
-\begin{sequencediagram}
-  \newthread{u}{Usuario}
-  \newinst[1.5]{fe}{Frontend}
-  \newinst[1.5]{api}{API}
-  \newinst[1.5]{srv}{Servicio}
-  \newinst[1.5]{repo}{Datos}
-  \newinst[1.5]{mail}{Correo}
-  \begin{call}{u}{email y clave}{fe}{ok}
-  \end{call}
-  \begin{call}{fe}{POST /api/auth/register}{api}{201 o 409}
-    \begin{call}{api}{register}{srv}{usuario}
-    \end{call}
-    \begin{call}{srv}{busca email}{repo}{fila o null}
-    \end{call}
-    \begin{sdblock}{alt}{existe}
-      \mess{srv}{ConflictError}{api}
-      \mess{api}{409}{fe}
-    \end{sdblock}
-    \begin{sdblock}{else}{nuevo}
-      \begin{call}{srv}{hash y crea}{repo}{usuario}
-      \end{call}
-      \begin{call}{srv}{firma HMAC y envia}{mail}{enviado}
-      \end{call}
-      \mess{api}{201}{fe}
-    \end{sdblock}
-  \end{call}
-  \mess{fe}{aviso}{u}
-\end{sequencediagram}
-\end{adjustbox}
-\caption{Registro con email y contraseña.}
-\label{fig:sec-registro}
-\end{figure}
-
-% Corrección de referencias rotas: búsqueda y sustitución de \ref{.} o \ref{)} por referencias válidas
-% (se hace en paso posterior con script, aquí solo nota)
-
-El recorrido está en la Figura~\ref{fig:sec-registro}: el usuario rellena el formulario, el frontend valida y envía el \texttt{POST}, el servicio normaliza el email, rechaza duplicados (409), hashea la contraseña con bcrypt, crea la cuenta \texttt{pending}, firma el token HMAC (24 h) y envía el correo de confirmación.
-
-\subsection{Confirmación con el enlace del correo}
-\label{sec:flujo-confirmacion}
-
-Al abrir el enlace, la API verifica la firma HMAC del token: si es válida, la cuenta pasa a \texttt{active} y la interfaz muestra el aviso de confirmación; si está manipulado o caducado, redirige con aviso de error y la cuenta sigue pendiente.
-
-\begin{figure}[htbp]
-\centering
-\scriptsize
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
-\begin{sequencediagram}
-  \newthread{u}{Usuario}
-  \newinst[2]{api}{API}
-  \newinst[2]{tok}{Token}
-  \newinst[2]{srv}{Servicio}
-  \newinst[2]{ui}{Vista}
-  \begin{call}{u}{abre enlace}{api}{redirige}
-  \end{call}
-  \begin{call}{api}{verifica HMAC}{tok}{valido o nulo}
-  \end{call}
-  \begin{sdblock}{alt}{no valido}
-    \mess{api}{303 enlace no valido}{u}
-  \end{sdblock}
-  \begin{sdblock}{else}{valido}
-    \begin{call}{api}{activa cuenta}{srv}{ok}
-    \end{call}
-    \mess{api}{303 cuenta confirmada}{u}
-  \end{sdblock}
-  \begin{call}{u}{carga web}{ui}{ok}
-  \end{call}
-  \mess{ui}{muestra aviso}{u}
-\end{sequencediagram}
-\end{adjustbox}
-\caption{Confirmación con el enlace del correo.}
-\label{fig:sec-confirmacion}
-\end{figure}
-
-La verificación del token HMAC se detalla en la Figura~\ref{fig:sec-confirmacion}: si la firma es válida y no ha caducado (24 h), la cuenta pasa a \texttt{active}; si no, se redirige con aviso de error y la cuenta permanece \texttt{pending}.
-
-\subsection{Inicio de sesión local}
-\label{sec:flujo-login}
-
-En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta; si la cuenta está pendiente responde 403 con la opción de reenviar el correo, y si es correcta regenera la sesión y devuelve la cookie \texttt{grada.sid}.
-
-\begin{figure}[htbp]
-\centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[2]{fe}{Frontend}
   \newinst[2]{api}{API}
   \newinst[2]{srv}{Servicio}
-  \begin{call}{u}{email y clave}{fe}{ok}
+  \begin{call}{u}{email, clave}{fe}{ok}
   \end{call}
-  \begin{call}{fe}{POST /api/auth/login}{api}{200 / 401 / 403}
-    \begin{call}{api}{authenticate}{srv}{usuario / error}
+  \begin{call}{fe}{POST register}{api}{201, 409}
+    \begin{call}{api}{register}{srv}{usuario}
+      \begin{call}{srv}{busca email}{srv}{fila o null}
+      \end{call}
+      \begin{sdblock}{alt}{existe}
+        \mess{srv}{ConflictError}{api}
+      \end{sdblock}
+      \begin{sdblock}{else}{nuevo}
+        \begin{call}{srv}{hash bcrypt}{srv}{hash}
+        \end{call}
+        \begin{call}{srv}{crea usuario}{srv}{usuario}
+        \end{call}
+        \begin{call}{srv}{envia correo}{srv}{ok}
+        \end{call}
+        \mess{api}{201}{fe}
+      \end{sdblock}
+    \end{call}
+  \end{call}
+  \begin{sdblock}{alt}{201}
+    \mess{fe}{aviso exito}{u}
+  \end{sdblock}
+  \begin{sdblock}{else}{409}
+    \mess{fe}{email repetido}{u}
+  \end{sdblock}
+\end{sequencediagram}
+\caption{Registro con email y contraseña.}
+\label{fig:sec-registro}
+\end{figure}
+
+El usuario no ve ninguno de esos detalles. La interfaz traduce el 409 a un mensaje en el formulario y el 201 a un aviso que indica que se ha enviado el correo de confirmación. Si el envío del correo falla, la cuenta queda pendiente y el aviso pide reenviarlo, de modo que el registro no se pierde por un problema del servidor de correo.
+
+\subsection{Confirmación con el enlace del correo}
+\label{sec:flujo-confirmacion}
+
+El enlace de confirmación lleva un token firmado que la API verifica antes de tocar la base de datos. \path{tokenSigner} comprueba la firma, el propósito y la caducidad; si todo es correcto, el servicio de confirmación activa la cuenta y la API redirige al inicio con el aviso de cuenta confirmada. Si el token está manipulado, caducado o no corresponde a una confirmación, la API responde con un aviso de enlace no válido y deja la cuenta en estado \texttt{pending}, de modo que el usuario puede pedir otro correo (Figura~\ref{fig:sec-confirmacion}).
+
+\begin{figure}[htbp]
+\centering
+\begin{sequencediagram}
+  \newthread{u}{Usuario}
+  \newinst[2]{api}{API}
+  \newinst[2]{tk}{TokenSigner}
+  \newinst[2]{srv}{Servicio}
+  \begin{call}{u}{GET confirm token}{api}{303}
+  \end{call}
+  \begin{call}{api}{verify token}{tk}{valido o nulo}
+  \end{call}
+  \begin{sdblock}{alt}{invalido}
+    \mess{api}{303 no valido}{u}
+  \end{sdblock}
+  \begin{sdblock}{else}{valido}
+    \begin{call}{api}{activar cuenta}{srv}{ok}
+    \end{call}
+    \mess{api}{303 confirmada}{u}
+  \end{sdblock}
+  \begin{call}{u}{carga web}{api}{ok}
+  \end{call}
+  \mess{api}{muestra aviso}{u}
+\end{sequencediagram}
+\caption{Confirmación con el enlace del correo.}
+\label{fig:sec-confirmacion}
+\end{figure}
+
+La redirección no es el final del proceso: al cargar la página, la interfaz lee el parámetro \texttt{?aviso=...}, muestra el mensaje correspondiente y lo borra de la barra de direcciones, para que el aviso no se repita al recargar. El intento fallido queda registrado en el log como \texttt{user.confirm\_failed} y la confirmación correcta como \texttt{user.confirmed}.
+
+\subsection{Inicio de sesión local}
+\label{sec:flujo-login}
+
+El inicio de sesión local resuelve tres situaciones distintas con una sola ruta. \path{userService.authenticate} devuelve el mismo mensaje de error tanto si el email no existe como si la contraseña es incorrecta, para no revelar qué cuentas están registradas; si la cuenta está pendiente de confirmar responde 403 y la interfaz ofrece reenviar el correo; y si las credenciales son correctas, la API regenera la sesión y devuelve la cookie \texttt{grada.sid}, con la que el navegador queda identificado (Figura~\ref{fig:sec-login}).
+
+\begin{figure}[htbp]
+\centering
+\begin{sequencediagram}
+  \newthread{u}{Usuario}
+  \newinst[3]{fe}{Frontend}
+  \newinst[3]{api}{API}
+  \newinst[3]{srv}{Servicio}
+  \begin{call}{u}{email, clave}{fe}{ok}
+  \end{call}
+  \begin{call}{fe}{POST login}{api}{200, 401, 403}
+    \begin{call}{api}{autenticar}{srv}{usuario o error}
     \end{call}
   \end{call}
   \begin{sdblock}{alt}{credenciales invalidas}
@@ -442,32 +431,30 @@ En el inicio de sesión local, \path{userService.authenticate} devuelve el mismo
   \end{sdblock}
   \begin{sdblock}{alt}{correcto}
     \mess{srv}{usuario}{api}
-    \mess{api}{200 + cookie}{fe}
-    \mess{fe}{redirige a jugar}{u}
+    \mess{api}{200 cookie}{fe}
+    \mess{fe}{redirige jugar}{u}
   \end{sdblock}
 \end{sequencediagram}
-\end{adjustbox}
 \caption{Inicio de sesión local.}
 \label{fig:sec-login}
 \end{figure}
 
-La Figura~\ref{fig:sec-login} cubre los tres casos: credenciales inválidas (mismo mensaje 401), cuenta pendiente (403 con opción de reenviar correo) y acceso correcto (regenera sesión, cookie \texttt{grada.sid} y redirige a \texttt{\#/jugar}).
+Regenerar la sesión al entrar es la medida que evita la fijación de sesión, y la cookie es \texttt{httpOnly}, de modo que el código de la página no puede leerla. El cierre de sesión la destruye en el servidor. Tras un acceso correcto, la interfaz lleva al usuario al menú del juego (\texttt{\#/jugar}).
 
 \subsection{Inicio de sesión con Google OAuth 2.0}
 \label{sec:flujo-google}
 
-El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a Google; en el callback lo compara y lo borra (un solo uso) antes de cambiar el código por el perfil en el servidor, y según el email exista, esté pendiente o no exista, activa o crea la cuenta y regenera la sesión.
+El acceso con Google sigue el flujo de código de autorización de OAuth 2.0 \cite{rfc6749}. La API genera un valor \texttt{state} aleatorio, lo guarda en la sesión y redirige al navegador a Google (Figura~\ref{fig:sec-google-redirect}); cuando el usuario vuelve, el callback compara ese valor con el de la sesión y lo borra, de modo que un \texttt{state} reutilizado o falsificado se rechaza. Solo después de esa comprobación el servidor cambia el código por el perfil, exige que el email esté verificado y decide qué hacer con la cuenta: si no existía, la crea ya activa; si estaba pendiente, la activa; y si el email no está verificado, rechaza el acceso (Figura~\ref{fig:sec-google-callback}). El flujo completo, con sus dos subfiguras, se resume en la Figura~\ref{fig:sec-google}. En los diagramas, el \texttt{state} se muestra como una operación de la propia API, que es quien lo guarda en la sesión del servidor y lo compara al recibir el callback. La Figura~\ref{fig:sec-google} agrupa ambas subfiguras para mostrar el proceso completo.
 
 \begin{figure}[htbp]
 \centering
-\scriptsize
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
+\begin{subfigure}{0.95\textwidth}
+\centering
 \begin{sequencediagram}
   \newthread{u}{Navegador}
-  \newinst[2]{api}{API}
+  \newinst[3]{api}{API}
   \newinst[2]{ses}{Sesion}
   \newinst[2]{goo}{Google}
-  \newinst[2]{srv}{Servicio}
   \begin{call}{u}{GET /api/auth/google}{api}{303}
   \end{call}
   \begin{call}{api}{guarda state}{ses}{ok}
@@ -476,9 +463,22 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
   \begin{call}{u}{acepta en Google}{goo}{302 code state}
   \end{call}
   \mess{goo}{callback}{u}
-  \begin{call}{u}{GET callback code state}{api}{ok}
+\end{sequencediagram}
+\subcaption{Redirección a Google y callback.}
+\label{fig:sec-google-redirect}
+\end{subfigure}
+\\
+\begin{subfigure}{0.95\textwidth}
+\centering
+\begin{sequencediagram}
+  \newthread{u}{Navegador}
+  \newinst[2]{api}{API}
+  \newinst[1]{ses}{Sesion}
+  \newinst[1]{goo}{Google}
+  \newinst[1]{srv}{Servicio}
+  \begin{call}{u}{GET callback}{api}{ok}
   \end{call}
-  \begin{call}{api}{compara y borra state}{ses}{ok o fallo}
+  \begin{call}{api}{compara state}{ses}{ok o fallo}
   \end{call}
   \begin{sdblock}{alt}{state invalido}
     \mess{api}{303 error}{u}
@@ -488,26 +488,27 @@ El flujo OAuth 2.0 guarda un \texttt{state} aleatorio en la sesión y redirige a
     \end{call}
     \begin{call}{api}{loginWithOAuth}{srv}{usuario}
     \end{call}
-    \begin{call}{api}{regenera sesion}{ses}{ok}
+    \begin{call}{api}{regenera sesion}{api}{ok}
     \end{call}
     \mess{api}{303 a jugar}{u}
   \end{sdblock}
 \end{sequencediagram}
-\end{adjustbox}
+\subcaption{Intercambio de código y login en el servidor.}
+\label{fig:sec-google-callback}
+\end{subfigure}
 \caption{Inicio de sesión con Google OAuth 2.0.}
 \label{fig:sec-google}
 \end{figure}
 
-El flujo OAuth 2.0 con \texttt{state} anti-CSRF se ve en la Figura~\ref{fig:sec-google}: el servidor guarda un valor aleatorio en la sesión, redirige a Google, recibe el \texttt{code}, lo intercambia por el perfil (email verificado), crea o activa la cuenta y regenera la sesión.
+El \texttt{client\_secret} no sale nunca del servidor: el intercambio del código por el perfil se hace en el backend, de modo que el navegador solo recibe la redirección final. Al terminar, la API regenera la sesión y lleva al usuario al menú del juego, igual que en el acceso local.
 
 \subsection{Darse de baja}
 \label{sec:flujo-baja}
 
-La baja pasa por un diálogo de confirmación accesible y llega al servidor protegida con \texttt{requireSelfOrRole('admin')}: se impide eliminar al último administrador, la cuenta queda como \texttt{deleted}, suelta el mote y el email, y su sesión deja de valer en la siguiente petición.
+La baja es una operación destructiva, así que la interfaz pide confirmación antes de enviar nada: un diálogo nativo con el foco en el botón seguro, que se cierra con \texttt{Esc} y devuelve el foco al punto de partida. La petición llega al servidor protegida con \texttt{requireSelfOrRole('admin')}, de modo que cada usuario solo puede eliminar su propia cuenta y un administrador puede eliminar cualquier otra (Figura~\ref{fig:sec-baja}).
 
 \begin{figure}[htbp]
 \centering
-\begin{adjustbox}{max width=\textwidth, max totalheight=0.6\textheight}
 \begin{sequencediagram}
   \newthread{u}{Usuario}
   \newinst[3]{vis}{Vista}
@@ -531,12 +532,11 @@ La baja pasa por un diálogo de confirmación accesible y llega al servidor prot
     \mess{vis}{aviso}{u}
   \end{sdblock}
 \end{sequencediagram}
-\end{adjustbox}
 \caption{Darse de baja.}
 \label{fig:sec-baja}
 \end{figure}
 
-La Figura~\ref{fig:sec-baja} recorre la baja lógica: el usuario confirma en un diálogo accesible, el servidor comprueba que no es el último administrador, marca \texttt{status = deleted}, suelta el mote y el email (índice único parcial) e invalida la sesión (la siguiente petición recibe 401).
+El servicio comprueba además que no se elimine al último administrador activo. Si la comprobación pasa, la baja es lógica: la fila se conserva con \texttt{status = deleted}, se sueltan el mote y el email para que puedan reutilizarse y la cuenta sale del ranking del juego. La sesión abierta deja de valer en la siguiente petición, porque el servidor vuelve a cargar el usuario y ya no lo encuentra activo.
 
 \section{Seguridad}
 \label{sec:seguridad}
@@ -724,28 +724,28 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google. 
 \centering
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/01-entrar-google.png}
+\includegraphics[width=\linewidth,height=0.12\textheight,keepaspectratio]{figs/capturas/hito4/01-entrar-google.png}
 \subcaption{Botón Entrar con Google.}
 \label{fig:hito4-google}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/02-registro-correo-enviado.png}
+\includegraphics[width=\linewidth,height=0.12\textheight,keepaspectratio]{figs/capturas/hito4/02-registro-correo-enviado.png}
 \subcaption{Aviso de correo enviado tras registro.}
 \label{fig:hito4-correo}
 \end{subfigure}
 \\
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/03-cuenta-pendiente-reenvio.png}
+\includegraphics[width=\linewidth,height=0.12\textheight,keepaspectratio]{figs/capturas/hito4/03-cuenta-pendiente-reenvio.png}
 \subcaption{Error cuenta pendiente con botón de reenvío.}
 \label{fig:hito4-pendiente}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/05-enlace-invalido.png}
+\includegraphics[width=\linewidth,height=0.12\textheight,keepaspectratio]{figs/capturas/hito4/05-enlace-invalido.png}
 \subcaption{Enlace manipulado o caducado.}
 \label{fig:hito4-enlace-invalido}
 \end{subfigure}
@@ -753,40 +753,44 @@ El Hito 4 añade la confirmación por correo y el inicio de sesión con Google. 
 \label{fig:hito4-flujo}
 \end{figure}
 
+El flujo completo del Hito 4, desde el botón de acceso con Google hasta la confirmación de la cuenta o el aviso de enlace no válido, queda recogido en la Figura~\ref{fig:hito4-flujo}. Las cuatro capturas muestran los estados intermedios que el usuario recorre: el botón de Google en la pantalla de entrar (subfigura~\ref{fig:hito4-google}), el aviso de correo enviado tras registrarse (subfigura~\ref{fig:hito4-correo}), el error de cuenta pendiente con la opción de reenviar (subfigura~\ref{fig:hito4-pendiente}) y el aviso de enlace manipulado o caducado (subfigura~\ref{fig:hito4-enlace-invalido}). Este recorrido se probó a mano en la aplicación desplegada, como se detalla en el Capítulo~\ref{cap:evaluacion}.
+
 Un enlace válido, en cambio, activa la cuenta y redirige a la pantalla de entrar con el aviso verde «Cuenta confirmada, ya puedes entrar» (subfigura~\ref{fig:hito4-confirmada}). Si el usuario entra con Google y el email no existía, se crea la cuenta ya activa con \texttt{authProvider: google} y aparece el aviso «Cuenta creada con tu cuenta de Google» (subfigura~\ref{fig:hito4-google-creada}). El panel de administración muestra todos los estados de cuenta (activas, pendientes, eliminadas, locales y de Google), de modo que el administrador ve de un vistazo cuáles están pendientes de confirmar y cuáles proceden de un acceso con Google (Figura~\ref{fig:hito4-admin-estados}). La política de privacidad, accesible desde el pie de página de la aplicación, documenta el tratamiento de los datos personales: el correo no aparece en el ranking y los logs ocultan contraseñas, cookies y tokens (subfigura~\ref{fig:hito4-privacidad} de la Figura~\ref{fig:hito4-estados-privacidad}).
 
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/06-cuenta-confirmada.png}
+\includegraphics[width=\linewidth,height=0.12\textheight,keepaspectratio]{figs/capturas/hito4/06-cuenta-confirmada.png}
 \subcaption{Cuenta confirmada: aviso verde.}
 \label{fig:hito4-confirmada}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/08-google-cuenta-creada.png}
+\includegraphics[width=\linewidth,height=0.12\textheight,keepaspectratio]{figs/capturas/hito4/08-google-cuenta-creada.png}
 \subcaption{Cuenta creada vía Google.}
 \label{fig:hito4-google-creada}
 \end{subfigure}
 \\
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
+\includegraphics[width=\linewidth,height=0.12\textheight,keepaspectratio]{figs/capturas/hito4/10-panel-admin-estados.png}
 \subcaption{Panel con todos los estados de cuenta.}
 \label{fig:hito4-admin-estados}
 \end{subfigure}
 \hfill
 \begin{subfigure}{0.48\textwidth}
 \centering
-\includegraphics[width=\linewidth,height=0.15\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
+\includegraphics[width=\linewidth,height=0.12\textheight,keepaspectratio]{figs/capturas/hito4/11-privacidad.png}
 \subcaption{Política de privacidad.}
 \label{fig:hito4-privacidad}
 \end{subfigure}
 \caption{Hito 4: cuenta confirmada, acceso con Google, panel de estados y política de privacidad.}
 \label{fig:hito4-estados-privacidad}
 \end{figure}
+
+La confirmación exitosa (subfigura~\ref{fig:hito4-confirmada}) y la creación de cuenta vía Google (subfigura~\ref{fig:hito4-google-creada}) cierran el flujo de alta. El panel de administración (subfigura~\ref{fig:hito4-admin-estados}) muestra todos los estados posibles —activas, pendientes, eliminadas, locales y de Google— para que el administrador identifique de un vistazo las cuentas pendientes de confirmar. La política de privacidad (subfigura~\ref{fig:hito4-privacidad}), accesible desde el pie de página, documenta que el correo no aparece en el ranking y que los logs ocultan contraseñas, cookies y tokens. Estas capturas se muestran una sola vez en la memoria; en el Capítulo~\ref{cap:evaluacion} y el Anexo~\ref{anx:material} se citan mediante referencias cruzadas.
 
 Con el Hito 4 quedan cubiertos el acceso con Google, la confirmación de la cuenta por correo y la transparencia sobre los datos personales. Los tres puntos se comprobaron a mano en la aplicación desplegada, como se cuenta en el apartado siguiente.
 

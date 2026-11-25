@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "latex"
-notas: 177
+notas: 178
 ---
 # latex
 
@@ -173,6 +173,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 - ⚠️ [[memoria/lecciones/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan|Cómo corregir diagramas de secuencia pgf-umlsd que desbordan o tienen cruces]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p|Cómo evitar solapes de etiquetas en diagramas TikZ medidos por revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber|Diagrama TikZ ancho: reducir text width y offsets para caber en \textwidth]]
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-pgf-umlsd-participantes-vacios-y-bloq|Diagramas de secuencia pgf-umlsd: participantes vacíos y bloques vacíos rompen la compilación]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/diagramas-de-secuencia-max-6-participantes-y-etiquetas-corta|Diagramas de secuencia: máx. 6 participantes y etiquetas cortas]] · ⚠️ propuesto
@@ -207,4 +208,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «latex» (este archivo se 
 
 ## Temas relacionados
 
-[[tfg]] · [[memoria]] · [[maquetacion]] · [[tikz]] · [[figuras]] · [[pgf-umlsd]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[memoria-procesos]] · [[tablas]] · [[sus]]
+[[tfg]] · [[memoria]] · [[maquetacion]] · [[tikz]] · [[pgf-umlsd]] · [[figuras]] · [[verificacion]] · [[diagramas]] · [[lua]] · [[memoria-procesos]] · [[tablas]] · [[sus]]

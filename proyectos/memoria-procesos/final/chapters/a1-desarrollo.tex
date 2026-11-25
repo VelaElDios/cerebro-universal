@@ -178,7 +178,9 @@ Cierre de la primera entrega (12/10/2026) & 16 & 0 \\*
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=0.95\linewidth,
+    % Ancho del eje menor para que la gráfica, la etiqueta del eje Y y las
+    % etiquetas del eje X quepan dentro del margen (sin overfull hbox)
+    width=0.85\linewidth,
     height=7cm,
     xlabel={Momento del sprint},
     ylabel={PBIs pendientes},
@@ -353,7 +355,9 @@ Inicio (23/10/2026) & 0 & 0 & 29 \\
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=0.95\linewidth,
+    % Ancho del eje menor para que la gráfica, la etiqueta del eje Y y las
+    % etiquetas del eje X quepan dentro del margen (sin overfull hbox)
+    width=0.85\linewidth,
     height=7cm,
     xlabel={Fecha},
     ylabel={PBIs pendientes},

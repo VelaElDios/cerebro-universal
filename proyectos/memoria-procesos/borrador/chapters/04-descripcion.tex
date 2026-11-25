@@ -237,10 +237,10 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{created\_at TIMESTAMPTZ}
     };
     % Relación session -> users: flecha discontinua horizontal. La etiqueta se aparta
-    % con yshift y ancla sur para que la línea no toque el texto (reglas 16-18).
-    \draw[arrow, dashed] (session.east) -- node[rel, midway, anchor=south, yshift=24pt] {userId} (users.west);
+    % con above=50pt para que la línea no toque el texto (reglas 16-18).
+    \draw[arrow, dashed] (session.east) -- node[rel, midway, above=50pt] {userId} (users.west);
     % Relación users -> perfiles: flecha horizontal con la misma separación vertical.
-    \draw[arrow] (users.east) -- node[rel, midway, anchor=south, yshift=24pt, align=center] {su\\club} (perfiles.west);
+    \draw[arrow] (users.east) -- node[rel, midway, above=50pt, align=center] {su\\club} (perfiles.west);
     % Relación users -> records: flecha vertical con la etiqueta a la izquierda, anclada al trayecto.
     \draw[arrow] (users.south) -- node[rel, anchor=east, xshift=-18pt, pos=0.5, align=center] {su mejor\\partida} (records.north);
 \end{tikzpicture}

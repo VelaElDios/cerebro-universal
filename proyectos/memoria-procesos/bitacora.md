@@ -16362,3 +16362,53 @@ El diagrama entidad-relación (fig:modelo-datos) sigue teniendo un solape detect
 ## 2026-11-25 01:27 · 🧠 Conocimiento guardado
 
 [[como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]]
+
+## 2026-11-25 02:26 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+Aplico la corrección que pide el revisor en `fig:modelo-datos` (`chapters/04-descripcion.tex`): cambio las dos etiquetas horizontales (`userId` en la línea discontinua session→users y `su club` en users→juego_perfiles) de `anchor=south, yshift=24pt` a `above=32pt`, de modo que la medición geométrica del PDF ya no detecte la línea cruzando el texto (reglas 16–18). No toco nada más del diagrama ni del capítulo.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ \TU/lmtt/m/n/12 UnauthorizedError\TU/Carlito(0)/m/n/12 , \TU/lmtt/m/n/12 ForbiddenError\TU/Carlito(0)/m/n/12 , \TU/lmtt/m/n/12 AccountPendingError\TU/…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` (compilación con LuaLaTeX + `verificar.py` + `revisar_maquetacion.py` + medición de figuras en el PDF) para confirmar que `fig:modelo-datos` ya no tiene solapes de etiquetas. Si todo sale en verde, hacer la revisión final página a página del PDF y, si el revisor no pone más pegas, marcar la memoria como terminada. Si persiste algún solape medido en ese diagrama, aumentar solo el `above` de la etiqueta afectada.
+
+## 2026-11-25 02:29 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Compilación: OK (100 páginas, LuaLaTeX, sin errores)
+- verificar.py: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, trazabilidad completa, cifras contrastadas)
+- revisar_maquetacion.py: ❌ falla en Figura 3.2 (fig:modelo-datos, página 35): la línea discontinua session→users cruza el texto de la etiqueta 'userId' (reglas 16-18)
+- Prosa sin cadenas «La figura X muestra…» en caps. 4 y 4b (subfiguras agrupadas)
+- Hito 4 descrito como completado, no pendiente
+- Anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2
+- Trazabilidad completa P1–P48/T1–T82 en a4
+- Imágenes únicas con \ref en el resto
+- Overfull hbox previos en a1-desarrollo.tex corregidos (no aparecen en la salida actual)
+
+Qué está bien: La memoria compila, verificar.py pasa, la prosa es profesional, las capturas están integradas en párrafos con subfiguras, no hay secciones de 1-2 líneas, el pipeline se describe una vez, las imágenes DoneTonic/producción aparecen una sola vez, Resumen/Abstract cumplen mínimos, trazabilidad completa.
+
+Qué falla (bloquea TERMINADO): En el diagrama entidad-relación (fig:modelo-datos) persiste un solape detectado por la medición geométrica del PDF: la línea discontinua cruza el texto 'userId'. La corrección anterior (`above=32pt`) no fue suficiente; hay que aumentar la separación vertical de la etiqueta sobre la línea discontinua (y por consistencia también la de 'su club') a un valor mayor, p. ej. `above=50pt`, para que la medición del PDF no detecte intersección. La etiqueta vertical 'su mejor partida' ya está anclada al trayecto con `xshift=-18pt, pos=0.5` y no da error.
+
+Corrección aplicada: aumento de `above=32pt` a `above=50pt` en las dos etiquetas horizontales del diagrama (session→users y users→juego_perfiles).
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` (compilación + `verificar.py` + `revisar_maquetacion.py`) para confirmar que el diagrama fig:modelo-datos pasa la medición del PDF sin solapes de etiquetas.
+- Si la prueba pasa, hacer la revisión final página a página y marcar la memoria como terminada.
+- Si persiste algún fallo medido en otro diagrama, corregirlo ajustando solo ese nodo (posición/separación) sin tocar lo que ya pasa.
+
+## 2026-11-25 02:29 · 🧠 Lección propuesta para la memoria
+
+[[como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-25 02:29 · 🧠 Conocimiento guardado
+
+[[como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]]

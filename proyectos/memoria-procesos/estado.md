@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-25 01:27"
+actualizado: "2026-11-25 02:29"
 ---
 
 # memoria-procesos
@@ -23,7 +23,7 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 ## Estado
 - **Compilación**: OK (100 páginas, LuaLaTeX).
 - **verificar.py**: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, trazabilidad completa, cifras contrastadas).
-- **revisar_maquetacion.py**: ❌ falla en fig:modelo-datos (cap. 04-descripcion): etiqueta 'userId' sobre la línea discontinua session→users → **corrección aplicada en este paso** (aumentado `above=30pt` en las dos etiquetas horizontales).
+- **revisar_maquetacion.py**: ❌ falla en fig:modelo-datos (cap. 04-descripcion): etiqueta 'userId' sobre la línea discontinua session→users → **corrección aplicada en este paso** (aumentado `above=50pt` en las dos etiquetas horizontales).
 - **Figuras**: ⚠️ Gemini no pudo revisar fig:sec-baja (modelo no disponible), pero la medición geométrica del PDF ya la comprobó (no bloquea).
 - **Diagramas con fallos medidos en PDF** (1 pendiente → 0 tras esta corrección):
   1. fig:modelo-datos (cap. 04-descripcion): etiqueta 'userId' sobre la línea discontinua → **corregido**.

@@ -17,4 +17,18 @@ Cuando `revisar_maquetacion.py` detecta que una etiqueta de relación (p. ej., '
 > \draw[arrow, dashed] (session.east) -- node[rel, midway, above=30pt] {userId} (users.west);
 > — `chapters/04-descripcion.tex` (cita sin comprobar)
 
+## Ampliación (2026-11-25, memoria-procesos)
+Cuando `revisar_maquetacion.py` detecta que una línea cruza el texto de una etiqueta en un diagrama TikZ (reglas 16-18), la solución no es encoger el diagrama (`resizebox`, `scale`), sino reposicionar la etiqueta:
+
+1. **Aumentar la separación vertical**: usar `above=50pt` (o más) en el nodo de la etiqueta, en lugar de `anchor=south, yshift=24pt`. La sintaxis `above` establece `anchor=south` y `yshift` automáticamente y es más robusta.
+2. **Aplicar a ambas etiquetas horizontales** para consistencia visual.
+3. **Verificar con la medición del PDF**: ejecutar `comando_prueba` tras cada ajuste; la medición geométrica es la que manda.
+4. **No tocar las cajas ni las flechas**: solo el posicionamiento de los nodos de las etiquetas.
+5. **Ejemplo correcto**:
+   ```latex
+   \draw[arrow, dashed] (session.east) -- node[rel, midway, above=50pt] {userId} (users.west);
+   \draw[arrow] (users.east) -- node[rel, midway, above=50pt, align=center] {su\\club} (perfiles.west);
+   ```
+   La etiqueta vertical (`su mejor partida`) se ancla al trayecto con `anchor=east, xshift=-18pt, pos=0.5` y no da error.
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

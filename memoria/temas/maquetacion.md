@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "maquetacion"
-notas: 29
+notas: 30
 ---
 # maquetacion
 
@@ -49,8 +49,9 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «maquetacion» (este archi
 
 - ⚠️ [[memoria/lecciones/corregir-etiquetas-de-eje-y-en-pgfplots-que-colisionan-con-l|Corregir etiquetas de eje Y en pgfplots que colisionan con la gráfica]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-para-pasar-re|Cómo corregir diagramas de secuencia pgf-umlsd para pasar revisar_maquetacion.py]] · ⚠️ propuesto
+- ⚠️ [[memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p|Cómo evitar solapes de etiquetas en diagramas TikZ medidos por revisar_maquetacion.py]] · ⚠️ propuesto
 - ⚠️ [[memoria/lecciones/evitar-paginas-casi-vacias-al-final-de-anexos-con-longtable|Evitar páginas casi vacías al final de anexos con longtable]] · ⚠️ propuesto
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[tfg]] · [[memoria-procesos]] · [[pgf-umlsd]] · [[tikz]] · [[longtable]] · [[subcaption]] · [[pgfplots]] · [[memoria]] · [[maquetación]] · [[reglas-javier]]
+[[latex]] · [[figuras]] · [[pgf-umlsd]] · [[tfg]] · [[memoria-procesos]] · [[tikz]] · [[longtable]] · [[subcaption]] · [[pgfplots]] · [[memoria]] · [[maquetación]] · [[reglas-javier]]

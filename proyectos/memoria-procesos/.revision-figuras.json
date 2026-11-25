@@ -853,5 +853,23 @@
   "problemas": [
    "La línea discontinua que sale de la caja 'session' hacia la caja 'users' cruza por encima del texto 'userId'."
   ]
+ },
+ "08a580b7461a6ade7f48cdfef6d36e86": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua que sale de la caja 'session' cruza por encima del texto de la etiqueta 'userId' antes de llegar a la caja 'users'."
+  ]
+ },
+ "df55b651f389630dc183ff5548aec503": {
+  "ok": true
+ },
+ "4559644828306e82ab5a8a58b1ce9ab5": {
+  "ok": true
+ },
+ "f7cf61db2923a3ebf4b1149dc2997be0": {
+  "ok": true
+ },
+ "ede37c56d3283b117025058861fca291": {
+  "ok": true
  }
 }

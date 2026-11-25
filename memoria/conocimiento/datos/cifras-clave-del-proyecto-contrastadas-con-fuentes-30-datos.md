@@ -1,7 +1,7 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (30 datos)"
-temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria"]
+temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria", "grada-colchonera"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints", "36 jugadores", "10 jefes", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
 fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md"]
@@ -69,5 +69,17 @@ Todas las cifras del proyecto (PBIs, tareas, pruebas, endpoints, migraciones, l�
 
 ## Ampliación (2026-11-25, memoria-procesos)
 Estas cifras se han extraído literalmente de las fuentes del repositorio y se usan en la memoria para cumplir la regla de que todo número mayor que 20 aparezca en las fuentes. Los números pequeños (como 19, 16, 29, 50, 82, 5, 23) también se contrastan a mano.
+
+## Ampliación (2026-11-25, memoria-procesos)
+- Sprint 1 (29/09–27/10/2026): 19 PBIs (P1–P19), 32 tareas (T1–T32). Burndown de entrega cuenta 16 PBIs (P1–P14, P18, P19).
+- Sprint 2 (23/10–29/10/2026): 29 PBIs (P20–P48), 50 tareas (T33–T82).
+- Total: 48 PBIs, 82 tareas, >50 PRs fusionados.
+- Pruebas automáticas: 276 en main al cerrar Sprint 2; 322 tras Fase 7 (46 nuevas).
+- API: 23 endpoints. Migraciones SQL: 5.
+- Código backend (src/): ~2.300 líneas. Interfaz web: ~1.150 líneas. CSS: ~950 líneas. Juego (public/js/game/): ~14.800 líneas (35 módulos). Pruebas: ~5.050 líneas.
+- Dependencias producción: 6.
+- Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
+- Despliegue: Cloud Run (principal), Render (alternativo). Base de datos: Neon (PostgreSQL, Frankfurt).
+- DoneTonic: espacio TFG, equipo Colchoneros. Capturas 29/10/2026 (dos sprints cerrados).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

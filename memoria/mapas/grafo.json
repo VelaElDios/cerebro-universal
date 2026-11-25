@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T01:28:47+01:00",
+ "generado": "2026-11-25T02:29:09+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -199,6 +199,22 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/lecciones/como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan.md"
+  },
+  {
+   "id": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p",
+   "tipo": "leccion",
+   "titulo": "Cómo evitar solapes de etiquetas en diagramas TikZ medidos por revisar_maquetacion.py",
+   "temas": [
+    "latex",
+    "tikz",
+    "pgf-umlsd",
+    "maquetacion"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p.md"
   },
   {
    "id": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
@@ -1720,7 +1736,8 @@
     "trazabilidad",
     "verificacion",
     "memoria-procesos",
-    "memoria"
+    "memoria",
+    "grada-colchonera"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -6067,7 +6084,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 177,
+   "peso": 178,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6081,7 +6098,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 27,
+   "peso": 28,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -6193,14 +6210,14 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 24,
+   "peso": 25,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
    "id": "tema:maquetacion",
    "tipo": "tema",
    "titulo": "maquetacion",
-   "peso": 29,
+   "peso": 30,
    "ruta": "memoria/temas/maquetacion.md"
   },
   {
@@ -6368,7 +6385,7 @@
    "id": "tema:grada-colchonera",
    "tipo": "tema",
    "titulo": "grada-colchonera",
-   "peso": 132,
+   "peso": 133,
    "ruta": "memoria/temas/grada-colchonera.md"
   },
   {
@@ -8378,6 +8395,31 @@
   },
   {
    "de": "leccion:como-corregir-diagramas-de-secuencia-pgf-umlsd-que-desbordan",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p",
+   "a": "tema:maquetacion",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p",
    "a": "proyecto:memoria-procesos",
    "tipo": "aprendido_en"
   },
@@ -12529,6 +12571,11 @@
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
    "a": "tema:memoria",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:grada-colchonera",
    "tipo": "trata"
   },
   {

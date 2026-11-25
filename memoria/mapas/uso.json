@@ -99,7 +99,7 @@
   "bien": 3,
   "mal": 0,
   "ultimo": "2026-11-25",
-  "usos": 29
+  "usos": 30
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -183,7 +183,7 @@
   "bien": 8,
   "mal": 1,
   "ultimo": "2026-11-25",
-  "usos": 34
+  "usos": 35
  },
  "memoria/conocimiento/decisiones/elementos-de-plantilla-inmutables-no-se-quita-nada.md": {
   "bien": 0,
@@ -213,13 +213,13 @@
   "bien": 4,
   "mal": 2,
   "ultimo": "2026-11-25",
-  "usos": 60
+  "usos": 61
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
   "mal": 0,
   "ultimo": "2026-11-25",
-  "usos": 13
+  "usos": 14
  },
  "memoria/conocimiento/decisiones/sin-figuras-repetidas-usar-ref-a-la-figura-existente.md": {
   "bien": 0,
