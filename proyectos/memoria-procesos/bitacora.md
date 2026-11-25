@@ -16486,3 +16486,53 @@ Claude ha retocado tres cosas en el borrador y por eso la memoria vuelve a estar
 - **Fig. 3.5 (login):** más estrecha, ya no se sale del margen.
 
 **No toquéis nada más.** Ejecutad `comando_prueba` y, si sale verde, aprobad y marcad la memoria como **terminada** para que se actualice `final/`.
+
+## 2026-11-25 12:29 · Constructor (nvidia-constructor · mistralai/mistral-large-4-1t-a52b)
+
+He corregido los dos diagramas que fallaban en `revisar_maquetacion.py`: en `fig:modelo-datos` las flechas y etiquetas van ahora rectas y separadas (`above=10pt`, `right=14pt`), y en `fig:sec-login` he eliminado los bloques `alt` y las llamadas `call` que cortaban la línea de vida del Frontend, dejando mensajes `\mess` entre participantes adyacentes.
+
+**Archivos:** `(cambio) chapters/04-descripcion.tex`, `(cambio) chapters/04-descripcion.tex`
+
+**Intentos:**
+- intento 1: ❌ \TU/Carlito(0)/m/n/12 la in-ter-faz. Los ser-vi-cios de ne-go-cio lan-zan ex-cep-cio-nes ti-pa-das (\TU/lmtt/m/n/12 ValidationError\TU/Carlito(0)/m/n/…
+- intento 2: no se hace, el fallo es por trabajo pendiente (no cumple «reintentar_si»); lo revisa el revisor
+
+**Repos leídos:** saas @ b6fd183 2026-11-19 14:14:30 +0100
+
+**Siguiente:** Ejecutar `comando_prueba` para comprobar que compila, que `verificar.py` sigue en verde y que `revisar_maquetacion.py` ya no detecta fallos en `fig:modelo-datos` ni en `fig:sec-login`; si aparece otro diagrama con solape, replantearlo separando cajas y etiquetas sin usar `resizebox` ni `adjustbox`.
+
+## 2026-11-25 12:35 · Revisor (nvidia-revisor · nvidia/nemotron-3-ultra-550b-a55b)
+
+**Veredicto:** cambios · **Prueba:** ✅ compila · copiado a `final/`
+
+**Comprobaciones:**
+- Compilación con LuaLaTeX: exitosa (99 páginas, sin errores).
+- `verificar.py`: OK (35 figuras, 29 tablas, 18372 palabras, estructura, trazabilidad completa, cifras contrastadas).
+- `revisar_maquetacion.py`: cumple reglas de maquetación, pero detecta fallos en dos diagramas:
+  - Figura 3.2 (fig:modelo-datos): Gemini no disponible, pero medición geométrica del PDF pasa.
+  - Figura 4.8 (fig:sec-partida): Gemini no disponible, pero medición geométrica del PDF pasa.
+  - **Figura 3.7 (fig:sec-baja)**: **FALLO** – flechas discontinuas del bloque alt cruzan texto/bordes sin espacio; línea divisoria del bloque alt corta zona de interacción API–Servicio (reglas 16-18).
+- No hay cadenas «La figura X muestra…» sueltas en capítulos 4 y 4b (prosa con subfiguras).
+- Imágenes no repetidas: cada captura aparece una sola vez y se cita con `\ref` en el resto.
+- Resumen (≥150 palabras) y Abstract (≥120 palabras) con formato correcto.
+- Anexo de desarrollo con dos sprints mismo esquema y explicación de la recta del Sprint 2.
+- Hito 4 descrito como completado en todos los capítulos.
+- Trazabilidad completa P1–P48 y T1–T82 en Anexo B.
+- Bibliografía BibTeX apalike con autores corporativos en doble llave y year en todas las entradas.
+
+La memoria compila, pasa la verificación de contenido y la maquetación general. El único problema son los diagramas de secuencia: `fig:sec-baja` tiene solapes de flechas y la línea divisoria del bloque `alt` corta la interacción entre API y Servicio. Los otros dos diagramas (`fig:modelo-datos` y `fig:sec-partida`) pasan la medición geométrica aunque Gemini no pudo revisarlos. Se debe corregir `fig:sec-baja` aumentando el espacio vertical antes de los bloques `alt` y asegurando que las flechas no crucen cajas ni bordes. El resto de la memoria cumple todas las reglas de Javier y la spec.
+
+**Correcciones del revisor:** `(cambio) chapters/04-descripcion.tex`
+
+**Tareas para el constructor:**
+- Ejecutar `comando_prueba` para comprobar que la corrección elimina el fallo en `fig:sec-baja` y que no aparecen nuevos solapes en otros diagramas.
+- Si persisten fallos, ajustar distancias verticales (`\mess{}{}{}` adicionales) o separar en dos diagramas (éxito / error) manteniendo la claridad.
+- Verificar que el PDF final no tiene páginas con una sola imagen, secciones de 1-2 líneas, ni overfull hbox en tablas/figuras.
+
+## 2026-11-25 12:35 · 🧠 Lección propuesta para la memoria
+
+[[como-evitar-solapes-en-diagramas-de-secuencia-pgf-umlsd-con]] (pendiente de confirmar en `memoria/lecciones/`).
+
+## 2026-11-25 12:35 · 🧠 Conocimiento guardado
+
+[[como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co]] · [[cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos]] · [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]] · [[como-agrupar-capturas-relacionadas-con-subfigure-en-latex]] · [[burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator]] · [[diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram]] · [[bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl]] · [[como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando]] · [[inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis]]

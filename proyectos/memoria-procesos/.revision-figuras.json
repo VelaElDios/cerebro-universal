@@ -871,5 +871,52 @@
  },
  "ede37c56d3283b117025058861fca291": {
   "ok": true
+ },
+ "6d661f21977811d0989be686e82b28ba": {
+  "ok": true
+ },
+ "5169d7d473c27f1653cb772304eba62f": {
+  "ok": false,
+  "problemas": [
+   "La etiqueta 'su mejor\npartida' está situada exactamente encima de la línea que conecta la tabla 'users' con la tabla 'juego_records', lo que puede dificultar ligeramente su lectura.",
+   "La línea discontinua que conecta 'session' con 'users' cruza verticalmente el texto 'userId' superponiéndolo."
+  ]
+ },
+ "3ff0501e7b1a7cde16e3da5dd0aad8c9": {
+  "ok": false,
+  "problemas": [
+   "La línea discontinua de respuesta 'ok' desde el Frontend hacia el Usuario atraviesa y corta la línea de vida del Frontend.",
+   "El bloque 'alt' superior con condición 'credenciales invalidas' intersecta y corta la línea de vida del Frontend.",
+   "Los bloques 'alt' centrales e inferiores también cruzan la línea de vida del Frontend.",
+   "La etiqueta de mensaje 'UnauthorizedError' pasa demasiado cerca o sobre la línea de división del bloque alt superior."
+  ]
+ },
+ "eb14a8de3dae421aec07d8f56bdaf63e": {
+  "ok": true
+ },
+ "eb9fb28ca30a7254ae011944c144605a": {
+  "ok": true
+ },
+ "477b0dfef1017355a3f9d3df4ee29594": {
+  "ok": false,
+  "problemas": [
+   "Las flechas discontinuas del bloque alt inferior ('403' y la respuesta desde el Servicio) cruzan por encima del texto o de los bordes internos del frame alt sin dejar espacio adecuado.",
+   "La línea horizontal punteada divisoria del bloque 'alt / ultimo admin' corta la zona visual de interacción de la API y el Servicio."
+  ]
+ },
+ "572bda37fe9aeb5bbfe906c6db882043": {
+  "ok": true
+ },
+ "9561f56ba0a5bf5f08627c4f93c95cc2": {
+  "ok": true
+ },
+ "153a49ad27193a355833d1472d152270": {
+  "ok": true
+ },
+ "6c5926102a6174b8e3d1c2592f97fbac": {
+  "ok": true
+ },
+ "651464feb6750754a18c6cbe485cf98f": {
+  "ok": true
  }
 }

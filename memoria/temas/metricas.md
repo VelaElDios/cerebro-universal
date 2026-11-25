@@ -40,4 +40,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «metricas» (este archivo 
 
 ## Temas relacionados
 
-[[trazabilidad]] · [[verificacion]] · [[scrum]] · [[sprints]] · [[grada-colchonera]] · [[saas]] · [[donetonic]] · [[sprint]] · [[memoria]] · [[burndown]] · [[métricas]] · [[memoria-procesos]]
+[[trazabilidad]] · [[verificacion]] · [[scrum]] · [[sprints]] · [[grada-colchonera]] · [[saas]] · [[donetonic]] · [[sprint]] · [[memoria]] · [[fuentes]] · [[burndown]] · [[métricas]]

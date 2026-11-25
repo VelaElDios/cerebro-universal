@@ -24,4 +24,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «diagramas-secuencia» (es
 
 ## Temas relacionados
 
-[[latex]] · [[pgf-umlsd]] · [[sequencediagram]] · [[maquetacion]]
+[[latex]] · [[pgf-umlsd]] · [[sequencediagram]] · [[tikz]] · [[maquetacion]]

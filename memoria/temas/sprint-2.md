@@ -13,4 +13,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «sprint-2» (este archivo 
 
 ## Temas relacionados
 
-[[donetonic]] · [[metricas]] · [[retrospectiva]] · [[scrum]] · [[burndown]] · [[memoria-procesos]] · [[anexo]] · [[sprint2]]
+[[donetonic]] · [[metricas]] · [[retrospectiva]] · [[scrum]] · [[burndown]] · [[memoria-procesos]] · [[anexo]] · [[sprint2]] · [[sprint 2]]

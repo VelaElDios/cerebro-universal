@@ -1,10 +1,10 @@
 ---
 tipo: "receta"
 titulo: "Cómo agrupar capturas relacionadas con subfigure en LaTeX"
-temas: ["capturas", "latex", "manual-usuario", "subcaption", "subfigure"]
+temas: ["capturas", "latex", "manual-usuario", "subcaption", "subfigure", "figuras"]
 claves: ["subfigure", "0.48\\textwidth", "\\subcaption", "\\caption", "\\label", "fig:app-inicio-registro", "fig:juego-menu-vestuario"]
 proyectos: ["memoria-procesos"]
-fuentes: ["chapters/04-descripcion.tex, chapters/04b-juego.tex"]
+fuentes: ["chapters/04-descripcion.tex, chapters/04b-juego.tex", "chapters/04-descripcion.tex (sección 6) y chapters/04b-juego.tex (sección 2)"]
 confianza: "propuesto"
 fecha: "2026-11-25"
 actualizado: "2026-11-25"
@@ -18,5 +18,16 @@ Para agrupar capturas relacionadas (p. ej., dos pantallas del mismo flujo): 1. U
 > — `chapters/04-descripcion.tex, chapters/04b-juego.tex` (cita sin comprobar)
 
 Relacionado: [[prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier]]
+
+## Ampliación (2026-11-25, memoria-procesos)
+Pasos para agrupar dos capturas relacionadas en una figura con `subfigure` (paquete `subcaption` ya cargado):
+1. Usar `\begin{figure}[htbp]\centering`.
+2. Primera subfigura: `\begin{subfigure}{0.48\textwidth}\centering\includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{ruta/imagen1}\subcaption{Texto descriptivo.}\label{fig:etiqueta1}\end{subfigure}`.
+3. Separador horizontal: `\hfill`.
+4. Segunda subfigura: `\begin{subfigure}{0.48\textwidth}\centering\includegraphics[width=\linewidth,height=0.35\textheight,keepaspectratio]{ruta/imagen2}\subcaption{Texto descriptivo.}\label{fig:etiqueta2}\end{subfigure}`.
+5. Caption general: `\caption{Texto que explica el conjunto.}\label{fig:etiqueta-general}`.
+6. Cerrar `\end{figure}`.
+7. En el texto, referirse a la figura general con `\ref{fig:etiqueta-general}` o a una subfigura con `\subref{fig:etiqueta1}` (requiere `subcaption`).
+8. Para capturas verticales (móvil) usar `width=0.35\textwidth`; para el resto `width=0.9\textwidth` máx., siempre con `height=0.42\textheight,keepaspectratio`.
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

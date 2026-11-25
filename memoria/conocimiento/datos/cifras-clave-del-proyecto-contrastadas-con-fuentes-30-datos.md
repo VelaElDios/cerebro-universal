@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Cifras clave del proyecto contrastadas con fuentes (30 datos)"
-temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria", "grada-colchonera", "despliegue", "endpoints", "juego", "migraciones", "pbis", "pruebas", "tareas"]
+temas: ["metricas", "trazabilidad", "verificacion", "memoria-procesos", "memoria", "grada-colchonera", "despliegue", "endpoints", "juego", "migraciones", "pbis", "pruebas", "tareas", "fuentes"]
 claves: ["19 PBIs", "32 tareas", "29 PBIs", "50 tareas", "276 pruebas", "322 pruebas", "5 migraciones", "23 endpoints", "36 jugadores", "10 jefes", "29 logros", "10 equipaciones"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/decisiones.md"]
+fuentes: ["repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md, repo:saas/docs/requisitos.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/arquitectura.md", "repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/requisitos.md, repo:saas/docs/procesos.md, repo:saas/docs/juego.md, repo:saas/docs/decisiones.md", "repo:saas/docs/requisitos.md, repo:saas/docs/sprint-1.md, repo:saas/docs/sprint-2.md, repo:saas/docs/procesos.md"]
 confianza: "propuesto"
 fecha: "2026-11-23"
 actualizado: "2026-11-25"
@@ -84,5 +84,27 @@ Estas cifras se han extraído literalmente de las fuentes del repositorio y se u
 
 ## Ampliación (2026-11-25, memoria-procesos)
 Cada cifra se ha verificado contra las fuentes documentales del repositorio (docs/sprint-1.md, docs/sprint-2.md, docs/requisitos.md, docs/procesos.md, docs/juego.md, docs/decisiones.md) y se usa tal cual en la memoria. El test `verificar.py` comprueba que todo número >20 del texto aparece en las fuentes; el revisor comprueba los números pequeños. Ejemplos de contraste: 19 PBIs Sprint 1 → sprint-1.md tabla backlog; 16 PBIs en burndown entrega → sprint-1.md tabla evolución (P1–P14, P18, P19); 276 pruebas → procesos.md tabla pruebas por fichero (total 276); 322 pruebas → sprint-2.md métricas (276 + 46 Fase 7).
+
+## Ampliación (2026-11-25, memoria-procesos)
+Lista de 30 cifras verificadas contra las fuentes para usar en la memoria sin riesgo de error en `verificar.py`:
+- Sprint 1: 19 PBIs (P1–P19), 32 tareas (T1–T32), 4 hitos, 16 PBIs en burndown de entrega (P1–P14, P18, P19).
+- Sprint 2: 29 PBIs (P20–P48), 50 tareas (T33–T82), 7 etiquetas de fase.
+- Total: 48 PBIs, 82 tareas, >50 PRs fusionados.
+- Pruebas: 276 al cierre Sprint 2, 322 tras Fase 7 (46 nuevas).
+- API: 23 endpoints, 5 migraciones.
+- Código: backend ~2.300 líneas, frontend ~1.150, CSS ~950, juego ~14.800, pruebas ~5.050.
+- Despliegue: Cloud Run (principal), Render (alternativo), 6 dependencias de producción.
+- Contenido juego: 36 jugadores, 2 entrenadores, 29 armas, 16 pasivas, 29 combinaciones, 6 ultras, 16 equipos, 10 jefes, 5 ambientes, 26 selecciones, 29 logros, 10 equipaciones.
+- Fechas: Sprint 1 29/09–27/10/2026, Sprint 2 23/10–29/10/2026.
+- Cambio de alcance: P19 (Cloud Run) añadido a mitad del Sprint 1.
+- Backlog Sprint 2 registrado en DoneTonic al cerrar el sprint (29/10), por eso sus gráficas salen en recta.
+- Evolución real Sprint 2 reconstruida con fechas de PR: 23/10 (1), 24/10 (17), 26/10 (9), 29/10 (2).
+- Métricas de calidad: 0 regresiones en main gracias a CI obligatorio, 100% requisitos cubiertos.
+- Seguridad: bcrypt coste 10, HMAC-SHA256, state OAuth, cookies httpOnly/secure/sameSite, consultas parametrizadas.
+- Accesibilidad: HTML semántico, aria-live, aria-describedby, prefers-reduced-motion, joystick táctil.
+- Rendimiento: 60 FPS, paso fijo 1/60 s, búsqueda espacial por celdas (4.5× más rápido), texturas cacheadas.
+- Trazabilidad: requisito → PBI → tarea → rama → PR → release (Anexo B completo).
+- Uso IA: Claude (Cowork) para código/docs/PRs; IAs gratuitas (Gemini, NVIDIA, OpenRouter) para memoria con test automático.
+- Bibliografía: 12 entradas (Express, GitHub Flow, Node.js, PostgreSQL, Cloud Run, GitHub Actions, Scrum Guide, enunciado, RFC 6749, bcrypt, Vampire Survivors, DoneTonic).
 
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

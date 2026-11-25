@@ -234,11 +234,11 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    \draw[arrow, dashed] ([yshift=-0.9cm]session.north east) -- node[rel, above] {userId}
-        ([yshift=-0.9cm]session.north east -| users.west);
-    \draw[arrow] ([yshift=-0.9cm]users.north east) -- node[rel, above] {su club}
-        ([yshift=-0.9cm]users.north east -| perfiles.west);
-    \draw[arrow] (users.south) -- node[rel, right=3pt] {su mejor\\partida} (records.north);
+    \draw[arrow, dashed] ([yshift=-1.0cm]session.north east) -- node[rel, above=10pt] {userId}
+        ([yshift=-1.0cm]users.north west);
+    \draw[arrow] ([yshift=-1.0cm]users.north east) -- node[rel, above=10pt] {su club}
+        ([yshift=-1.0cm]perfiles.north west);
+    \draw[arrow] (users.south) -- node[rel, right=14pt] {su mejor\\partida} (records.north);
 \end{tikzpicture}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}
@@ -410,26 +410,12 @@ El inicio de sesión local resuelve tres situaciones distintas con una sola ruta
   \newinst[2]{fe}{Frontend}
   \newinst[2]{api}{API}
   \newinst[3]{srv}{Servicio}
-  \begin{call}{u}{email, clave}{fe}{ok}
-  \end{call}
-  \begin{call}{fe}{POST login}{api}{200, 401, 403}
-    \begin{call}{api}{autenticar}{srv}{usuario o error}
-    \end{call}
-  \end{call}
-  \begin{sdblock}{alt}{credenciales invalidas}
-    \mess{srv}{UnauthorizedError}{api}
-    \mess{api}{401}{fe}
-  \end{sdblock}
-  \begin{sdblock}{alt}{cuenta pendiente}
-    \mess{srv}{AccountPendingError}{api}
-    \mess{api}{403}{fe}
-    \mess{fe}{boton reenviar}{u}
-  \end{sdblock}
-  \begin{sdblock}{alt}{correcto}
-    \mess{srv}{usuario}{api}
-    \mess{api}{200 cookie}{fe}
-    \mess{fe}{redirige jugar}{u}
-  \end{sdblock}
+  \mess{u}{email, clave}{fe}
+  \mess{fe}{POST login}{api}
+  \mess{api}{autenticar}{srv}
+  \mess{srv}{usuario o error}{api}
+  \mess{api}{200, 401 o 403}{fe}
+  \mess{fe}{aviso o redirige}{u}
 \end{sequencediagram}
 \caption{Inicio de sesión local.}
 \label{fig:sec-login}
@@ -518,6 +504,8 @@ La baja es una operación destructiva, así que la interfaz pide confirmación a
     \begin{call}{api}{deleteUser}{srv}{ok o error}
     \end{call}
   \end{call}
+  % Espacio vertical para que la línea divisoria del bloque alt no corte la llamada anterior
+  \mess{vis}{ }{api}
   \begin{sdblock}{alt}{ultimo admin}
     \mess{srv}{ForbiddenError}{api}
     \mess{api}{403}{vis}

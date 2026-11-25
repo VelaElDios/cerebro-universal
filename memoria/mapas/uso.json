@@ -65,6 +65,12 @@
   "ultimo": "2026-11-23",
   "usos": 1
  },
+ "memoria/conocimiento/datos/cifras-clave-del-proyecto-la-grada-colchonera-contrastadas-c.md": {
+  "bien": 0,
+  "mal": 0,
+  "ultimo": "2026-11-25",
+  "usos": 1
+ },
  "memoria/conocimiento/datos/estado-de-completitud-de-sprints-y-trazabilidad.md": {
   "bien": 0,
   "mal": 1,
@@ -99,7 +105,7 @@
   "bien": 4,
   "mal": 0,
   "ultimo": "2026-11-25",
-  "usos": 31
+  "usos": 32
  },
  "memoria/conocimiento/datos/inventario-de-capturas-donetonic-requeridas-y-disponibles.md": {
   "bien": 0,
@@ -213,7 +219,7 @@
   "bien": 5,
   "mal": 2,
   "ultimo": "2026-11-25",
-  "usos": 62
+  "usos": 63
  },
  "memoria/conocimiento/decisiones/prosa-de-tfg-sin-cadenas-la-figura-x-muestra-regla-13-javier.md": {
   "bien": 0,
@@ -272,8 +278,8 @@
  "memoria/conocimiento/recetas/contenido-de-los-anexos-por-sprint-en-la-memoria-tfg.md": {
   "bien": 4,
   "mal": 0,
-  "ultimo": "2026-11-22",
-  "usos": 14
+  "ultimo": "2026-11-25",
+  "usos": 15
  },
  "memoria/conocimiento/recetas/diagrama-tikz-ancho-reducir-text-width-y-offsets-para-caber.md": {
   "bien": 0,

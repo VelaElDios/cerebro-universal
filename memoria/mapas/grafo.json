@@ -1,5 +1,5 @@
 {
- "generado": "2026-11-25T11:17:40+01:00",
+ "generado": "2026-11-25T12:35:58+01:00",
  "nodos": [
   {
    "id": "proyecto:aprendizaje",
@@ -35,7 +35,7 @@
    "id": "proyecto:memoria-procesos",
    "tipo": "proyecto",
    "titulo": "memoria-procesos",
-   "estado": "terminado",
+   "estado": "en-construccion",
    "temas": [
     "latex",
     "memoria",
@@ -231,6 +231,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/lecciones/como-evitar-solapes-de-etiquetas-en-diagramas-tikz-medidos-p.md"
+  },
+  {
+   "id": "leccion:como-evitar-solapes-en-diagramas-de-secuencia-pgf-umlsd-con",
+   "tipo": "leccion",
+   "titulo": "Cómo evitar solapes en diagramas de secuencia pgf-umlsd con bloques alt",
+   "temas": [
+    "latex",
+    "tikz",
+    "pgf-umlsd"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/lecciones/como-evitar-solapes-en-diagramas-de-secuencia-pgf-umlsd-con.md"
   },
   {
    "id": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
@@ -863,7 +878,8 @@
     "memoria-procesos",
     "sprint-2",
     "anexo",
-    "sprint2"
+    "sprint2",
+    "sprint 2"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -1760,7 +1776,8 @@
     "migraciones",
     "pbis",
     "pruebas",
-    "tareas"
+    "tareas",
+    "fuentes"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2190,7 +2207,8 @@
     "sprints",
     "tfg",
     "trazabilidad",
-    "hito4"
+    "hito4",
+    "fechas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -2788,6 +2806,21 @@
    "ruta": "memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-autores-corporativos-con-doble-l.md"
   },
   {
+   "id": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
+   "tipo": "decision",
+   "titulo": "Bibliografía BibTeX apalike con autores corporativos en doble llave",
+   "temas": [
+    "bibliografia",
+    "bibtex",
+    "latex"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "verificado",
+   "ruta": "memoria/conocimiento/decisiones/bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl.md"
+  },
+  {
    "id": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
    "tipo": "decision",
    "titulo": "Bibliografía BibTeX con apalike y referencias obligatorias",
@@ -3090,7 +3123,8 @@
     "diagramas-secuencia",
     "latex",
     "pgf-umlsd",
-    "sequencediagram"
+    "sequencediagram",
+    "tikz"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4351,7 +4385,8 @@
     "latex",
     "manual-usuario",
     "subcaption",
-    "subfigure"
+    "subfigure",
+    "figuras"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -4481,6 +4516,21 @@
    ],
    "confianza": "propuesto",
    "ruta": "memoria/conocimiento/recetas/como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti.md"
+  },
+  {
+   "id": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co",
+   "tipo": "receta",
+   "titulo": "Cómo corregir solapes en diagramas de secuencia pgf-umlsd con bloques alt",
+   "temas": [
+    "latex",
+    "pgf-umlsd",
+    "tikz"
+   ],
+   "proyectos": [
+    "memoria-procesos"
+   ],
+   "confianza": "propuesto",
+   "ruta": "memoria/conocimiento/recetas/como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co.md"
   },
   {
    "id": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
@@ -4641,7 +4691,8 @@
     "longtable",
     "maquetacion",
     "overfull",
-    "pgfplots"
+    "pgfplots",
+    "tablas"
    ],
    "proyectos": [
     "memoria-procesos"
@@ -6160,7 +6211,7 @@
    "id": "tema:latex",
    "tipo": "tema",
    "titulo": "latex",
-   "peso": 182,
+   "peso": 185,
    "ruta": "memoria/temas/latex.md"
   },
   {
@@ -6174,7 +6225,7 @@
    "id": "tema:tikz",
    "tipo": "tema",
    "titulo": "tikz",
-   "peso": 29,
+   "peso": 32,
    "ruta": "memoria/temas/tikz.md"
   },
   {
@@ -6223,7 +6274,7 @@
    "id": "tema:bibtex",
    "tipo": "tema",
    "titulo": "bibtex",
-   "peso": 8,
+   "peso": 9,
    "ruta": "memoria/temas/bibtex.md"
   },
   {
@@ -6272,7 +6323,7 @@
    "id": "tema:bibliografia",
    "tipo": "tema",
    "titulo": "bibliografia",
-   "peso": 12,
+   "peso": 13,
    "ruta": "memoria/temas/bibliografia.md"
   },
   {
@@ -6286,7 +6337,7 @@
    "id": "tema:pgf-umlsd",
    "tipo": "tema",
    "titulo": "pgf-umlsd",
-   "peso": 27,
+   "peso": 29,
    "ruta": "memoria/temas/pgf-umlsd.md"
   },
   {
@@ -6370,7 +6421,7 @@
    "id": "tema:figuras",
    "tipo": "tema",
    "titulo": "figuras",
-   "peso": 25,
+   "peso": 26,
    "ruta": "memoria/temas/figuras.md"
   },
   {
@@ -6384,7 +6435,7 @@
    "id": "tema:tablas",
    "tipo": "tema",
    "titulo": "tablas",
-   "peso": 11,
+   "peso": 12,
    "ruta": "memoria/temas/tablas.md"
   },
   {
@@ -6617,6 +6668,13 @@
    "titulo": "anexo",
    "peso": 4,
    "ruta": "memoria/temas/anexo.md"
+  },
+  {
+   "id": "tema:sprint 2",
+   "tipo": "tema",
+   "titulo": "sprint 2",
+   "peso": 1,
+   "ruta": "memoria/temas/sprint 2.md"
   },
   {
    "id": "tema:auth",
@@ -7119,7 +7177,7 @@
    "id": "tema:fuentes",
    "tipo": "tema",
    "titulo": "fuentes",
-   "peso": 13,
+   "peso": 14,
    "ruta": "memoria/temas/fuentes.md"
   },
   {
@@ -7224,7 +7282,7 @@
    "id": "tema:fechas",
    "tipo": "tema",
    "titulo": "fechas",
-   "peso": 3,
+   "peso": 4,
    "ruta": "memoria/temas/fechas.md"
   },
   {
@@ -8539,6 +8597,26 @@
    "tipo": "aprendido_en"
   },
   {
+   "de": "leccion:como-evitar-solapes-en-diagramas-de-secuencia-pgf-umlsd-con",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-en-diagramas-de-secuencia-pgf-umlsd-con",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-en-diagramas-de-secuencia-pgf-umlsd-con",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "leccion:como-evitar-solapes-en-diagramas-de-secuencia-pgf-umlsd-con",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "aprendido_en"
+  },
+  {
    "de": "leccion:con-babel-en-espanol-tikz-necesita-usetikzlibrary-babel",
    "a": "tema:latex",
    "tipo": "trata"
@@ -9631,6 +9709,11 @@
   {
    "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
    "a": "tema:sprint2",
+   "tipo": "trata"
+  },
+  {
+   "de": "concepto:burndown-real-vs-donetonic-en-sprint-2-explicacion-obligator",
+   "a": "tema:sprint 2",
    "tipo": "trata"
   },
   {
@@ -12730,6 +12813,11 @@
   },
   {
    "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
+   "a": "tema:fuentes",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:cifras-clave-del-proyecto-contrastadas-con-fuentes-30-datos",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -14301,6 +14389,11 @@
   {
    "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
    "a": "tema:hito4",
+   "tipo": "trata"
+  },
+  {
+   "de": "dato:inventario-de-capturas-de-pantalla-con-trazabilidad-a-requis",
+   "a": "tema:fechas",
    "tipo": "trata"
   },
   {
@@ -16214,6 +16307,31 @@
    "tipo": "enlaza"
   },
   {
+   "de": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
+   "a": "tema:bibliografia",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
+   "a": "tema:bibtex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "decision:bibliografia-bibtex-apalike-con-autores-corporativos-en-dobl",
+   "a": "decision:bibliografia-bibtex-apalike-autores-corporativos-con-doble-l",
+   "tipo": "enlaza"
+  },
+  {
    "de": "decision:bibliografia-bibtex-con-apalike-y-referencias-obligatorias",
    "a": "tema:bibliografia",
    "tipo": "trata"
@@ -17176,6 +17294,11 @@
   {
    "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
    "a": "tema:sequencediagram",
+   "tipo": "trata"
+  },
+  {
+   "de": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "a": "tema:tikz",
    "tipo": "trata"
   },
   {
@@ -21630,6 +21753,11 @@
   },
   {
    "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
+   "a": "tema:figuras",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-agrupar-capturas-relacionadas-con-subfigure-en-latex",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
   },
@@ -21947,6 +22075,31 @@
    "de": "receta:como-corregir-solapes-de-etiquetas-en-diagramas-tikz-de-enti",
    "a": "proyecto:memoria-procesos",
    "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co",
+   "a": "tema:latex",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co",
+   "a": "tema:pgf-umlsd",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co",
+   "a": "tema:tikz",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co",
+   "a": "proyecto:memoria-procesos",
+   "tipo": "de_proyecto"
+  },
+  {
+   "de": "receta:como-corregir-solapes-en-diagramas-de-secuencia-pgf-umlsd-co",
+   "a": "decision:diagramas-de-secuencia-con-pgf-umlsd-entorno-sequencediagram",
+   "tipo": "enlaza"
   },
   {
    "de": "receta:como-corregir-warnings-de-pgf-umlsd-en-diagramas-de-secuenci",
@@ -22401,6 +22554,11 @@
   {
    "de": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
    "a": "tema:pgfplots",
+   "tipo": "trata"
+  },
+  {
+   "de": "receta:como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando",
+   "a": "tema:tablas",
    "tipo": "trata"
   },
   {

@@ -1,7 +1,7 @@
 ---
 tipo: "tema"
 titulo: "tablas"
-notas: 11
+notas: 12
 ---
 # tablas
 
@@ -10,6 +10,7 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 ## Recetas (cómo lo hacemos)
 
 - 🧪 [[memoria/conocimiento/recetas/corregir-overfull-hbox-en-longtable-con-urls-largas|Corregir overfull hbox en longtable con URLs largas]] · ⚠️ propuesto
+- 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-longtable-y-pgfplots-ajustando|Cómo evitar overfull hbox en longtable y pgfplots ajustando anchos de columna]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/como-evitar-overfull-hbox-en-tablas-anchas-con-longtable|Cómo evitar overfull hbox en tablas anchas con longtable]] · ⚠️ propuesto
 - 🧪 [[memoria/conocimiento/recetas/longtable-sin-fila-huerfana-al-final|Evitar fila huérfana al final en longtable (LaTeX)]]
 - 🧪 [[memoria/conocimiento/recetas/formato-de-tablas-alineacion-tamanos-y-longtable|Reglas de maquetación de tablas en LaTeX: alineación, anchos, longtable, código y rutas]] · ⚠️ propuesto
@@ -29,4 +30,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «tablas» (este archivo se
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[reglas-javier]] · [[memoria-procesos]] · [[overfull]]
+[[latex]] · [[longtable]] · [[memoria]] · [[tfg]] · [[maquetacion]] · [[overfull]] · [[reglas-javier]] · [[pgfplots]] · [[memoria-procesos]]

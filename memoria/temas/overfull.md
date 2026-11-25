@@ -19,4 +19,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «overfull» (este archivo 
 
 ## Temas relacionados
 
-[[latex]] · [[longtable]] · [[texttt]] · [[maquetacion]] · [[pgfplots]] · [[tablas]]
+[[latex]] · [[longtable]] · [[tablas]] · [[texttt]] · [[maquetacion]] · [[pgfplots]]

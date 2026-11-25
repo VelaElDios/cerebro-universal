@@ -22,4 +22,12 @@ Aplicado en chapters/04-descripcion.tex (sección 6) y chapters/04b-juego.tex (s
 ## Ampliación (2026-11-25, memoria-procesos)
 Aplicado en chapters/04-descripcion.tex (sección 6, manual SaaS) y chapters/04b-juego.tex (sección 2, manual juego). Cada grupo de capturas relacionadas forma una figura con subfiguras (`\begin{subfigure}{0.48\textwidth}`), y el texto explica la interacción usuario–aplicación citando las subfiguras con `\ref`. Se eliminaron ~45 frases sueltas tipo «La figura X muestra…» que había en el borrador anterior.
 
+## Ampliación (2026-11-25, memoria-procesos)
+Para cumplir la regla 13 de Javier:
+- No escribir nunca una frase que solo diga «La figura X muestra…».
+- Integrar la descripción de la captura en el párrafo que explica la acción del usuario y la respuesta del sistema.
+- Agrupar capturas relacionadas (p. ej., formulario y su error) en una sola figura con `subfigure` (dos por fila, `\begin{subfigure}{0.48\textwidth}`), con un caption general y uno por subfigura.
+- Citar la figura con `\ref{fig:...}` dentro de la prosa, no como frase aislada.
+- Ejemplo: «Al registrarse, el formulario valida el email y la contraseña en cliente (mínimo 8 caracteres) y muestra los errores en línea asociados a cada campo mediante `aria-describedby` (Figura~\ref{fig:app-inicio-registro}, subfigura~\ref{fig:app-registro}).»
+
 Origen: [[proyectos/memoria-procesos/estado|memoria-procesos]]

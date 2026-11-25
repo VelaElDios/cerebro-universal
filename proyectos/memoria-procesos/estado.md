@@ -2,7 +2,7 @@
 tipo: "proyecto"
 titulo: "memoria-procesos"
 temas: ["latex", "memoria", "tikz", "pgfplots"]
-actualizado: "2026-11-25 03:31"
+actualizado: "2026-11-25 12:35"
 ---
 
 # memoria-procesos
@@ -21,15 +21,15 @@ Memoria de PIS (curso 2026-2027) con la plantilla oficial TFG ESIIAB-UCLM. Proye
 - Cada cifra sale de las fuentes tal cual (19 PBIs Sprint 1 pero burndown de entrega cuenta 16; 276 pruebas al cierre Sprint 2, 322 tras Fase 7; 23 endpoints; 5 migraciones).
 
 ## Estado
-- **Compilación**: OK (100 páginas, LuaLaTeX).
-- **verificar.py**: ✅ (35 figuras, 29 tablas, 18396 palabras, estructura, trazabilidad completa, cifras contrastadas).
-- **revisar_maquetacion.py**: ✅ (cumple todas las reglas medibles; 15 diagramas medidos en PDF y 13 revisados por Gemini sin fallos).
+- **Compilación**: OK (99 páginas, LuaLaTeX).
+- **verificar.py**: ✅ (35 figuras, 29 tablas, 18372 palabras, estructura, trazabilidad completa, cifras contrastadas).
+- **revisar_maquetacion.py**: ⚠️ cumple reglas de maquetación pero **fallo en fig:sec-baja** (solape de flechas y línea divisoria en bloque alt). Los otros dos diagramas (fig:modelo-datos, fig:sec-partida) pasan medición geométrica.
 - **Figuras**: 35 figuras y 29 tablas con caption, label y \ref; figuras fijas obligatorias presentes.
 - **Capturas**: ≥4 app/, ≥4 hito4/, ≥8 juego/, ≥5 donetonic/, ≥2 produccion/, ≥1 prueba-tecnica/.
 - **Contenido**: 01, 03, 04, 04b, 05, 06 reescritos como prosa sin «La figura X muestra…» en caps. 4 y 4b; pipeline descrito una vez (cap. 05, fig:pipeline); imágenes DoneTonic/producción en un solo sitio; Resumen/Abstract OK; trazabilidad completa P1–P48/T1–T82 en a4; anexo desarrollo con dos sprints mismo esquema y explicación recta Sprint 2.
 - **Hito 4**: descrito como completado en todos los capítulos.
 
 ## Siguiente
-La memoria está terminada y aprobada. No hay siguiente paso.
+Corregir el diagrama `fig:sec-baja` (ya propuesto) y volver a ejecutar la prueba completa hasta que `revisar_maquetacion.py` dé verde total.
 
 Bitácora completa: [[proyectos/memoria-procesos/bitacora|bitácora]] · Spec: [[proyectos/memoria-procesos/spec|spec]]

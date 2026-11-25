@@ -30,4 +30,4 @@ Nodo del mapa del Cerebro con todo lo que se sabe de «capturas» (este archivo 
 
 ## Temas relacionados
 
-[[latex]] · [[figuras]] · [[memoria]] · [[tfg]] · [[subfigure]] · [[donetonic]] · [[trazabilidad]] · [[maquetacion]] · [[subcaption]] · [[requisitos]] · [[grada-colchonera]] · [[saas]]
+[[figuras]] · [[latex]] · [[memoria]] · [[tfg]] · [[subfigure]] · [[donetonic]] · [[trazabilidad]] · [[maquetacion]] · [[subcaption]] · [[requisitos]] · [[grada-colchonera]] · [[saas]]

@@ -1,10 +1,10 @@
 ---
 tipo: "dato"
 titulo: "Inventario de capturas de pantalla con trazabilidad a requisitos y fechas"
-temas: ["capturas", "donetonic", "grada-colchonera", "juego", "latex", "memoria", "produccion", "requisitos", "saas", "sprints", "tfg", "trazabilidad", "hito4"]
+temas: ["capturas", "donetonic", "grada-colchonera", "juego", "latex", "memoria", "produccion", "requisitos", "saas", "sprints", "tfg", "trazabilidad", "hito4", "fechas"]
 claves: ["capturas", "app", "hito4", "juego", "fase7", "donetonic", "produccion", "prueba-tecnica", "problema: Necesario saber qué capturas existen", "su fecha y a qué requisito/PBI pertenecen para colocarlas sin repetir.", "solucion: Consultar §16 de documentacion-tecnica.md y la lista de imágenes disponibles en el borrador.", "Hitos 1-3", "Hito 4", "producción", "DoneTonic", "prueba-técnica", "requisitos P7-P17 RJ-01-RJ-20"]
 proyectos: ["memoria-procesos"]
-fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16", "repo:saas/docs/capturas/README.md", "repo:saas/docs/documentacion-tecnica.md §16, repo:saas/@arbol"]
+fuentes: ["repo:saas/docs/documentacion-tecnica.md", "repo:saas/docs/documentacion-tecnica.md §16", "repo:saas/docs/capturas/README.md", "repo:saas/docs/documentacion-tecnica.md §16, repo:saas/@arbol", "repo:saas/@arbol (carpeta docs/capturas/) y repo:saas/docs/capturas/README.md"]
 confianza: "verificado"
 fecha: "2026-11-16"
 actualizado: "2026-11-25"

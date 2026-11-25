@@ -11,7 +11,7 @@ Esta sección presenta los requisitos funcionales y no funcionales del proyecto,
 
 La Tabla~\ref{tab:rf-sprint1} recoge los 13 requisitos funcionales del Sprint 1.
 
-\begin{longtable}{@{}L{0.7cm} L{2.3cm} L{0.5cm} L{0.6cm} L{7.8cm} L{2.2cm}@{}}
+\begin{longtable}{@{}L{0.7cm} L{2.3cm} L{0.9cm} L{0.6cm} L{6.6cm} L{2.2cm}@{}}
 \caption{Requisitos funcionales del Sprint 1.}\label{tab:rf-sprint1}\\
 \toprule
 \textbf{Id} & \textbf{Requisito} & \textbf{Hito} & \textbf{PBI} & \textbf{Dónde se cumple} & \textbf{Pruebas} \\ \midrule \endfirsthead
@@ -189,45 +189,43 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=3.6cm, inner sep=3pt},
-    entitywide/.style={rectangle, draw=tema, fill=gris95, rounded corners, minimum height=1.4cm, align=left, font=\scriptsize, text width=4.8cm, inner sep=3pt},
-    pk/.style={font=\scriptsize\bfseries},
-    uk/.style={font=\scriptsize\itshape},
+    entity/.style={rectangle, draw=tema, fill=gris95, rounded corners, align=left, font=\scriptsize,
+                   inner sep=4pt, anchor=north},
     arrow/.style={-{Stealth[length=2.5mm]}, thick, color=tema},
-    rel/.style={font=\small, inner sep=2pt}
+    rel/.style={font=\footnotesize, inner sep=2pt, align=center}
 ]
-    % Layout con más separación horizontal y vertical para evitar solapes
-    % Subimos las cajas superiores (y=2.5) y bajamos records (y=-6.0) para dar más aire vertical
-    \node[entity, text width=3.0cm] (session) at (-6.5, 2.5) {
+    % Las tres tablas de arriba alineadas por su borde superior; las flechas salen a la altura
+    % de la clave de cada tabla y van en línea recta, con la etiqueta encima de la flecha.
+    \node[entity, text width=2.9cm] (session) at (-5.6, 0) {
         \textbf{session}\\
-        \pk sid VARCHAR PK\\
+        \texttt{sid VARCHAR} PK\\
         \texttt{sess JSON}\\
         \texttt{expire TIMESTAMP}
     };
-    \node[entitywide] (users) at (0.0, 2.5) {
+    \node[entity, text width=5.0cm] (users) at (0, 0) {
         \textbf{users}\\
-        \pk id UUID PK\\
-        \texttt{email TEXT} \uk (único no eliminadas)\\
-        \texttt{password\_hash TEXT} (null Google)\\
+        \texttt{id UUID} PK\\
+        \texttt{email TEXT} UK (no eliminadas)\\
+        \texttt{password\_hash TEXT} (null con Google)\\
         \texttt{role TEXT} user | admin\\
         \texttt{status TEXT} pending | active | deleted\\
         \texttt{auth\_provider TEXT} local | google\\
         \texttt{created\_at TIMESTAMPTZ}\\
         \texttt{deleted\_at TIMESTAMPTZ}\\
         \texttt{apodo TEXT}\\
-        \texttt{apodo\_clave TEXT} \uk\\
+        \texttt{apodo\_clave TEXT} UK\\
         \texttt{avatar TEXT}
     };
-    \node[entity, text width=3.4cm] (perfiles) at (6.5, 2.5) {
+    \node[entity, text width=3.3cm] (perfiles) at (5.75, 0) {
         \textbf{juego\_perfiles}\\
-        \pk user\_id UUID PK,FK\\
+        \texttt{user\_id UUID} PK, FK\\
         \texttt{datos JSONB}\\
         \texttt{version INTEGER}\\
         \texttt{updated\_at TIMESTAMPTZ}
     };
-    \node[entitywide] (records) at (0.0, -6.0) {
+    \node[entity, text width=5.0cm] (records) at (0, -6.6) {
         \textbf{juego\_records}\\
-        \pk user\_id UUID PK,FK\\
+        \texttt{user\_id UUID} PK, FK\\
         \texttt{alias TEXT}\\
         \texttt{avatar TEXT}\\
         \texttt{tiempo INTEGER}\\
@@ -236,13 +234,11 @@ El modelo entidad-relación de la Figura~\ref{fig:modelo-datos} recoge las tabla
         \texttt{bajas INTEGER}\\
         \texttt{created\_at TIMESTAMPTZ}
     };
-    % Relación session -> users: flecha discontinua horizontal. La etiqueta se aparta
-    % con above=50pt para que la línea no toque el texto (reglas 16-18).
-    \draw[arrow, dashed] (session.east) -- node[rel, midway, above=50pt] {userId} (users.west);
-    % Relación users -> perfiles: flecha horizontal con la misma separación vertical.
-    \draw[arrow] (users.east) -- node[rel, midway, above=50pt, align=center] {su\\club} (perfiles.west);
-    % Relación users -> records: flecha vertical con la etiqueta a la izquierda, anclada al trayecto.
-    \draw[arrow] (users.south) -- node[rel, anchor=east, xshift=-18pt, pos=0.5, align=center] {su mejor\\partida} (records.north);
+    \draw[arrow, dashed] ([yshift=-1.0cm]session.north east) -- node[rel, above=10pt] {userId}
+        ([yshift=-1.0cm]users.north west);
+    \draw[arrow] ([yshift=-1.0cm]users.north east) -- node[rel, above=10pt] {su club}
+        ([yshift=-1.0cm]perfiles.north west);
+    \draw[arrow] (users.south) -- node[rel, right=14pt] {su mejor\\partida} (records.north);
 \end{tikzpicture}
 \caption{Modelo de datos entidad-relación: usuarios, sesiones y tablas del juego.}
 \label{fig:modelo-datos}
@@ -411,29 +407,15 @@ El inicio de sesión local resuelve tres situaciones distintas con una sola ruta
 \centering
 \begin{sequencediagram}
   \newthread{u}{Usuario}
-  \newinst[3]{fe}{Frontend}
-  \newinst[3]{api}{API}
+  \newinst[2]{fe}{Frontend}
+  \newinst[2]{api}{API}
   \newinst[3]{srv}{Servicio}
-  \begin{call}{u}{email, clave}{fe}{ok}
-  \end{call}
-  \begin{call}{fe}{POST login}{api}{200, 401, 403}
-    \begin{call}{api}{autenticar}{srv}{usuario o error}
-    \end{call}
-  \end{call}
-  \begin{sdblock}{alt}{credenciales invalidas}
-    \mess{srv}{UnauthorizedError}{api}
-    \mess{api}{401}{fe}
-  \end{sdblock}
-  \begin{sdblock}{alt}{cuenta pendiente}
-    \mess{srv}{AccountPendingError}{api}
-    \mess{api}{403}{fe}
-    \mess{fe}{boton reenviar}{u}
-  \end{sdblock}
-  \begin{sdblock}{alt}{correcto}
-    \mess{srv}{usuario}{api}
-    \mess{api}{200 cookie}{fe}
-    \mess{fe}{redirige jugar}{u}
-  \end{sdblock}
+  \mess{u}{email, clave}{fe}
+  \mess{fe}{POST login}{api}
+  \mess{api}{autenticar}{srv}
+  \mess{srv}{usuario o error}{api}
+  \mess{api}{200, 401 o 403}{fe}
+  \mess{fe}{aviso o redirige}{u}
 \end{sequencediagram}
 \caption{Inicio de sesión local.}
 \label{fig:sec-login}
@@ -522,6 +504,8 @@ La baja es una operación destructiva, así que la interfaz pide confirmación a
     \begin{call}{api}{deleteUser}{srv}{ok o error}
     \end{call}
   \end{call}
+  % Espacio vertical para que la línea divisoria del bloque alt no corte la llamada anterior
+  \mess{vis}{ }{api}
   \begin{sdblock}{alt}{ultimo admin}
     \mess{srv}{ForbiddenError}{api}
     \mess{api}{403}{vis}
